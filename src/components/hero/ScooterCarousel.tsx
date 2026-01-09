@@ -104,7 +104,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                   opacity,
                 }}
               >
-                <div className="relative w-80 h-80 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] flex items-center justify-center">
+                <div className="relative w-96 h-96 lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] flex items-center justify-center -ml-8 lg:-ml-16">
                   {/* Scooter Image */}
                   <img
                     src={imageSrc}
