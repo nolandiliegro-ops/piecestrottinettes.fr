@@ -15,6 +15,7 @@ import segwayNinebotMaxG2 from "@/assets/scooters/segway-ninebot-max-g2.png";
 import dualtronThunder from "@/assets/scooters/dualtron-thunder.png";
 import dualtronVictor from "@/assets/scooters/dualtron-victor.png";
 import kaaboMantisPro from "@/assets/scooters/kaabo-mantis-pro.png";
+import kaaboWolfWarrior from "@/assets/scooters/kaabo-wolf-warrior.png";
 
 // Image mapping for scooter models
 const scooterImages: Record<string, string> = {
@@ -28,6 +29,7 @@ const scooterImages: Record<string, string> = {
   "thunder": dualtronThunder,
   "victor": dualtronVictor,
   "mantis-pro": kaaboMantisPro,
+  "wolf-warrior": kaaboWolfWarrior,
 };
 
 interface ScooterCarouselProps {
