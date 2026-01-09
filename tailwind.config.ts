@@ -69,6 +69,10 @@ export default {
           dark: "hsl(var(--mineral-dark))",
           glow: "hsl(var(--mineral-glow))",
         },
+        garage: {
+          DEFAULT: "hsl(var(--garage))",
+          foreground: "hsl(var(--garage-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

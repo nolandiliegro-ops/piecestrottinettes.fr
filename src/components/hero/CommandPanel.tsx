@@ -1,4 +1,4 @@
-import { Search, Sparkles, Star } from "lucide-react";
+import { Search, Sparkles, Star, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Brand } from "@/data/scooterData";
@@ -102,11 +102,11 @@ const CommandPanel = ({
             </svg>
           </div>
 
-          {/* Mon Garage Button - Outline pill */}
+          {/* Mon Garage Button - Petrol Blue filled */}
           <Button
-            variant="outline"
-            className="rounded-full px-6 py-5 font-display text-lg tracking-wide border-2 border-foreground text-foreground hover:bg-foreground hover:text-background rotate-[2deg] hover:rotate-0 transition-all"
+            className="rounded-full px-6 py-5 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90 rotate-[2deg] hover:rotate-0 transition-all"
           >
+            <Home className="w-5 h-5" />
             Mon Garage
           </Button>
         </div>

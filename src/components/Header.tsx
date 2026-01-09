@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Menu } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -53,8 +53,9 @@ const Header = () => {
             </Button>
 
             <Button 
-              className="hidden sm:flex rounded-full px-6 font-display text-lg tracking-wide"
+              className="hidden sm:flex rounded-full px-6 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
             >
+              <Home className="w-4 h-4" />
               Mon Garage
             </Button>
 
@@ -83,7 +84,8 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button className="mt-2 rounded-full font-display text-lg tracking-wide">
+              <Button className="mt-2 rounded-full font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90">
+                <Home className="w-4 h-4" />
                 Mon Garage
               </Button>
             </div>

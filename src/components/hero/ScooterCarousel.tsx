@@ -1,8 +1,34 @@
-import { useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect } from "react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
+
+// Import scooter images
+import xiaomiMiPro2 from "@/assets/scooters/xiaomi-mi-pro-2.png";
+import xiaomiMiEssential from "@/assets/scooters/xiaomi-mi-essential.png";
+import xiaomiMi3 from "@/assets/scooters/xiaomi-mi-3.png";
+import ninebotG30Max from "@/assets/scooters/ninebot-g30-max.png";
+import ninebotF40 from "@/assets/scooters/ninebot-f40.png";
+import segwayP100s from "@/assets/scooters/segway-p100s.png";
+import segwayNinebotMaxG2 from "@/assets/scooters/segway-ninebot-max-g2.png";
+import dualtronThunder from "@/assets/scooters/dualtron-thunder.png";
+import dualtronVictor from "@/assets/scooters/dualtron-victor.png";
+import kaaboMantisPro from "@/assets/scooters/kaabo-mantis-pro.png";
+
+// Image mapping for scooter models
+const scooterImages: Record<string, string> = {
+  "mi-pro-2": xiaomiMiPro2,
+  "mi-essential": xiaomiMiEssential,
+  "mi-3": xiaomiMi3,
+  "g30-max": ninebotG30Max,
+  "f40": ninebotF40,
+  "p100s": segwayP100s,
+  "ninebot-max-g2": segwayNinebotMaxG2,
+  "thunder": dualtronThunder,
+  "victor": dualtronVictor,
+  "mantis-pro": kaaboMantisPro,
+};
 
 interface ScooterCarouselProps {
   models: ScooterModel[];
@@ -64,6 +90,9 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             const scale = isActive ? 1 : Math.max(0.6, 1 - distance * 0.15);
             const opacity = isActive ? 1 : Math.max(0.4, 1 - distance * 0.25);
 
+            // Get the image from our mapping, fallback to model.image
+            const imageSrc = scooterImages[model.id] || model.image;
+
             return (
               <div
                 key={model.id}
@@ -76,7 +105,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                 <div className="relative w-48 h-48 lg:w-64 lg:h-64 flex items-center justify-center">
                   {/* Scooter Image */}
                   <img
-                    src={model.image}
+                    src={imageSrc}
                     alt={`${model.brand} ${model.name}`}
                     className="w-full h-full object-contain drop-shadow-2xl"
                   />
@@ -139,11 +168,13 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             {activeModel.compatibleParts} pièces compatibles
           </p>
 
-          {/* CTA */}
+          {/* CTA - Specific to selected model */}
           <Button 
-            className="mt-4 rounded-full px-6 font-display text-lg tracking-wide gap-2"
+            variant="outline"
+            className="mt-4 rounded-full px-6 font-display text-lg tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
           >
-            Découvrir les pièces
+            VOIR LES {activeModel.compatibleParts} PIÈCES
+            <ArrowRight className="w-5 h-5" />
           </Button>
         </div>
       )}

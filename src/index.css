@@ -48,6 +48,10 @@
     --mineral-dark: 144 20% 55%;
     --mineral-glow: 144 30% 70%;
 
+    /* Garage color - Petrol Blue */
+    --garage: 210 50% 25%;
+    --garage-foreground: 0 0% 100%;
+
     /* Sidebar tokens */
     --sidebar-background: 30 14% 95%;
     --sidebar-foreground: 0 0% 10%;
@@ -93,6 +97,10 @@
     --mineral: 144 20% 65%;
     --mineral-dark: 144 20% 55%;
     --mineral-glow: 144 30% 70%;
+
+    /* Garage color - Petrol Blue (dark mode) */
+    --garage: 210 50% 45%;
+    --garage-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 30 14% 95%;
