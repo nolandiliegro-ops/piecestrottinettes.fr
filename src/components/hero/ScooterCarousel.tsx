@@ -104,7 +104,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                   opacity,
                 }}
               >
-                <div className="relative w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 flex items-center justify-center">
+                <div className="relative w-80 h-80 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] flex items-center justify-center">
                   {/* Scooter Image */}
                   <img
                     src={imageSrc}
@@ -119,7 +119,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex items-center justify-center gap-4 mt-6">
+      <div className="flex items-center justify-center gap-4 mt-2">
         <Button
           variant="outline"
           size="icon"
@@ -159,24 +159,24 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
 
       {/* Active Model Info */}
       {activeModel && (
-        <div className="mt-6 text-center animate-fade-in">
-          <p className="text-sm text-muted-foreground font-medium tracking-wide">
+        <div className="mt-2 text-center animate-fade-in">
+          <p className="text-xs text-muted-foreground font-medium tracking-wide">
             {activeModel.brand}
           </p>
-          <h3 className="font-display text-3xl lg:text-4xl text-foreground mt-1">
+          <h3 className="font-display text-2xl lg:text-3xl text-foreground">
             {activeModel.name}
           </h3>
-          <p className="text-primary font-medium mt-2">
+          <p className="text-primary font-medium text-sm">
             {activeModel.compatibleParts} pièces compatibles
           </p>
 
           {/* CTA - Specific to selected model */}
           <Button 
             variant="outline"
-            className="mt-4 rounded-full px-6 font-display text-lg tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+            className="mt-2 rounded-full px-4 py-2 font-display text-base tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
           >
             VOIR LES {activeModel.compatibleParts} PIÈCES
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4" />
           </Button>
         </div>
       )}
