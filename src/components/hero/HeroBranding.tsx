@@ -12,18 +12,41 @@ const HeroBranding = () => {
       {/* Giant Title Stack - Monumental Typography */}
       <div className="relative">
         <h1 className="font-display text-7xl sm:text-8xl lg:text-[10rem] xl:text-[12rem] leading-[0.80] tracking-[-0.02em]">
-          <span className="block text-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            ROULE
-          </span>
-          <span 
-            className="block text-primary animate-fade-in drop-shadow-[0_4px_0_rgba(0,0,0,0.1)]" 
-            style={{ animationDelay: "0.2s" }}
-          >
-            RÉPARE
-          </span>
-          <span className="block text-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            DURE
-          </span>
+          {/* ROULE avec ombre et label QUALITÉ */}
+          <div className="relative flex items-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <span className="absolute left-2 top-1 text-muted-foreground/15 -z-10 select-none">ROULE</span>
+            <span className="text-foreground">ROULE</span>
+            <span 
+              className="ml-3 lg:ml-4 text-[10px] lg:text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium"
+              style={{ writingMode: 'vertical-rl' }}
+            >
+              QUALITÉ
+            </span>
+          </div>
+          
+          {/* RÉPARE avec ombre et label PIÈCES */}
+          <div className="relative flex items-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <span className="absolute left-2 top-1 text-muted-foreground/15 -z-10 select-none">RÉPARE</span>
+            <span className="text-primary">RÉPARE</span>
+            <span 
+              className="ml-3 lg:ml-4 text-[10px] lg:text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium"
+              style={{ writingMode: 'vertical-rl' }}
+            >
+              PIÈCES
+            </span>
+          </div>
+          
+          {/* DURE avec ombre et label SERVICE */}
+          <div className="relative flex items-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <span className="absolute left-2 top-1 text-muted-foreground/15 -z-10 select-none">DURE</span>
+            <span className="text-foreground">DURE</span>
+            <span 
+              className="ml-3 lg:ml-4 text-[10px] lg:text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium"
+              style={{ writingMode: 'vertical-rl' }}
+            >
+              SERVICE
+            </span>
+          </div>
         </h1>
       </div>
 
