@@ -241,8 +241,8 @@ const Catalogue = () => {
         </DialogContent>
       </Dialog>
 
-      {/* Admin Floating Button - Dev Only */}
-      {import.meta.env.DEV && (
+      {/* Admin Floating Button - Temporarily visible for image generation */}
+      {true && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -9,7 +9,7 @@ const corsHeaders = {
 // Category prompts for macro-photography style images
 const categoryPrompts: Record<string, string> = {
   pneus: "Macro professional studio photography of a high-performance electric scooter tire showing deep tread patterns, cinematic lighting, carbon black and deep grey background, high contrast, luxury automotive style, 8k resolution",
-  "chambres-a-air": "Macro professional studio photography of a premium rubber inner tube with valve stem detail, cinematic lighting, carbon black background, luxury automotive style, 8k resolution",
+  "chambres-air": "Macro professional studio photography of a premium rubber inner tube with valve stem detail, cinematic lighting, carbon black background, luxury automotive style, 8k resolution",
   freinage: "Macro professional studio photography of a perforated stainless steel disc brake with a Mineral Green caliper, cinematic lighting, carbon black background, high contrast, luxury automotive style, 8k resolution",
   chargeurs: "Macro professional studio photography of a high-end electric scooter charger with LED indicator and premium cable, cinematic lighting, carbon black background, luxury automotive style, 8k resolution",
   batteries: "Macro professional studio photography of lithium battery cells with visible copper contacts and circuit board, cinematic lighting, carbon black background, luxury automotive style, 8k resolution",
