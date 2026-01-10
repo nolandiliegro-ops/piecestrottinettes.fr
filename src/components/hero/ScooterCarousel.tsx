@@ -5,6 +5,7 @@ import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedNumber from "@/components/ui/animated-number";
+import AddToGarageButton from "@/components/garage/AddToGarageButton";
 
 // Import scooter images
 import xiaomiMiPro2 from "@/assets/scooters/xiaomi-mi-pro-2.png";
@@ -121,6 +122,13 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                 }}
               >
                 <div className="relative w-96 h-96 lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] flex items-center justify-center -ml-8 lg:-ml-16">
+                  {/* Add to Garage Button */}
+                  <AddToGarageButton
+                    scooterId={model.id}
+                    scooterName={`${model.brand} ${model.name}`}
+                    className="absolute top-4 right-4 z-10"
+                  />
+                  
                   {/* Luxury Reveal Animation */}
                   <AnimatePresence mode="wait">
                     <motion.img
