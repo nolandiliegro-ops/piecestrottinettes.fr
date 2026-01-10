@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 export interface CompatiblePart {
   id: string;
   name: string;
+  slug: string;
   description: string | null;
   price: number | null;
   image_url: string | null;
@@ -147,6 +148,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
           parts (
             id,
             name,
+            slug,
             description,
             price,
             image_url,
@@ -173,6 +175,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
         .map((part) => ({
           id: part.id,
           name: part.name,
+          slug: part.slug,
           description: part.description,
           price: part.price,
           image_url: part.image_url,

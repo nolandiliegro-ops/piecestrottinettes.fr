@@ -146,9 +146,11 @@ export type Database = {
           image_url: string | null
           name: string
           price: number | null
+          slug: string
           stock_quantity: number | null
           technical_metadata: Json | null
           updated_at: string
+          youtube_video_id: string | null
         }
         Insert: {
           category_id?: string | null
@@ -159,9 +161,11 @@ export type Database = {
           image_url?: string | null
           name: string
           price?: number | null
+          slug: string
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string
+          youtube_video_id?: string | null
         }
         Update: {
           category_id?: string | null
@@ -172,9 +176,11 @@ export type Database = {
           image_url?: string | null
           name?: string
           price?: number | null
+          slug?: string
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string
+          youtube_video_id?: string | null
         }
         Relationships: [
           {

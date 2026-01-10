@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { cn } from "@/lib/utils";
 
 interface PartCardProps {
-  part: CompatiblePart;
+  part: CompatiblePart & { slug?: string };
   index: number;
   className?: string;
 }
@@ -44,7 +45,7 @@ const extractSpecs = (metadata: Record<string, unknown> | null): { torque?: stri
 const PartCard = ({ part, index, className }: PartCardProps) => {
   const specs = extractSpecs(part.technical_metadata);
 
-  return (
+  const cardContent = (
     <motion.div
       initial={{ opacity: 0, y: 20, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -55,7 +56,7 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       className={cn(
-        "group relative rounded-2xl p-5 transition-all duration-300",
+        "group relative rounded-2xl p-5 transition-all duration-300 cursor-pointer",
         "bg-white/40 backdrop-blur-md",
         "border border-white/20",
         "hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,181,161,0.3)]",
@@ -106,6 +107,17 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
       </div>
     </motion.div>
   );
+
+  // Wrap with Link if slug is available
+  if (part.slug) {
+    return (
+      <Link to={`/piece/${part.slug}`} className="block">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return cardContent;
 };
 
 export default PartCard;

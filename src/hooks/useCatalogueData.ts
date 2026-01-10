@@ -14,6 +14,7 @@ export const useAllParts = (categoryId: string | null) => {
         .select(`
           id,
           name,
+          slug,
           description,
           price,
           image_url,
