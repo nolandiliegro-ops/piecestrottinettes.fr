@@ -1,11 +1,15 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
 import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
 import CommandPanel from "./hero/CommandPanel";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  onActiveModelChange?: (slug: string | null, name: string | null) => void;
+}
+
+const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -53,6 +57,18 @@ const HeroSection = () => {
         model.brand.toLowerCase().includes(query)
     );
   }, [transformedModels, searchQuery]);
+
+  // Get active model and notify parent
+  const activeModel = filteredModels[activeIndex] || null;
+
+  useEffect(() => {
+    if (onActiveModelChange) {
+      onActiveModelChange(
+        activeModel?.id || null,
+        activeModel ? `${activeModel.brand} ${activeModel.name}` : null
+      );
+    }
+  }, [activeModel, onActiveModelChange]);
 
   // Reset active index when filters change
   const handleBrandSelect = (brandSlug: string | null) => {

@@ -2,6 +2,24 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useState, useEffect } from "react";
 
+// Type for part with category and technical metadata
+export interface CompatiblePart {
+  id: string;
+  name: string;
+  description: string | null;
+  price: number | null;
+  image_url: string | null;
+  difficulty_level: number | null;
+  stock_quantity: number | null;
+  technical_metadata: Record<string, unknown> | null;
+  category: {
+    id: string;
+    name: string;
+    icon: string | null;
+    slug: string;
+  } | null;
+}
+
 // Hook pour récupérer toutes les marques
 export const useBrands = () => {
   return useQuery({
@@ -102,5 +120,95 @@ export const useSearchScooters = (query: string) => {
       }));
     },
     enabled: debouncedQuery.length >= 2,
+  });
+};
+
+// Hook pour récupérer les pièces compatibles avec un modèle de trottinette
+export const useCompatibleParts = (scooterModelSlug: string | null, limit: number = 4) => {
+  return useQuery({
+    queryKey: ["compatible_parts", scooterModelSlug, limit],
+    queryFn: async (): Promise<CompatiblePart[]> => {
+      if (!scooterModelSlug) return [];
+
+      // First get the scooter model ID from slug
+      const { data: scooterModel, error: scooterError } = await supabase
+        .from("scooter_models")
+        .select("id")
+        .eq("slug", scooterModelSlug)
+        .single();
+
+      if (scooterError || !scooterModel) return [];
+
+      // Get compatible parts via part_compatibility junction table
+      const { data: compatibilityData, error: compatError } = await supabase
+        .from("part_compatibility")
+        .select(`
+          part_id,
+          parts (
+            id,
+            name,
+            description,
+            price,
+            image_url,
+            difficulty_level,
+            stock_quantity,
+            technical_metadata,
+            category:categories (
+              id,
+              name,
+              icon,
+              slug
+            )
+          )
+        `)
+        .eq("scooter_model_id", scooterModel.id)
+        .limit(limit);
+
+      if (compatError) throw compatError;
+
+      // Transform and filter the data
+      return (compatibilityData || [])
+        .map((item) => item.parts)
+        .filter((part): part is NonNullable<typeof part> => part !== null)
+        .map((part) => ({
+          id: part.id,
+          name: part.name,
+          description: part.description,
+          price: part.price,
+          image_url: part.image_url,
+          difficulty_level: part.difficulty_level,
+          stock_quantity: part.stock_quantity,
+          technical_metadata: part.technical_metadata as Record<string, unknown> | null,
+          category: part.category,
+        }));
+    },
+    enabled: !!scooterModelSlug,
+  });
+};
+
+// Hook pour compter le total de pièces compatibles
+export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
+  return useQuery({
+    queryKey: ["compatible_parts_count", scooterModelSlug],
+    queryFn: async (): Promise<number> => {
+      if (!scooterModelSlug) return 0;
+
+      const { data: scooterModel } = await supabase
+        .from("scooter_models")
+        .select("id")
+        .eq("slug", scooterModelSlug)
+        .single();
+
+      if (!scooterModel) return 0;
+
+      const { count, error } = await supabase
+        .from("part_compatibility")
+        .select("*", { count: "exact", head: true })
+        .eq("scooter_model_id", scooterModel.id);
+
+      if (error) return 0;
+      return count || 0;
+    },
+    enabled: !!scooterModelSlug,
   });
 };

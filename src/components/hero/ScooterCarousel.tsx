@@ -250,7 +250,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             <AnimatedNumber value={activeModel.compatibleParts} /> pièces compatibles
           </motion.p>
 
-          {/* CTA - Specific to selected model */}
+          {/* CTA - Specific to selected model with smooth scroll */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -258,6 +258,11 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
           >
             <Button 
               variant="outline"
+              onClick={() => {
+                document.getElementById('bento-discovery')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
               className="mt-2 rounded-full px-4 py-2 font-display text-base tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
             >
               VOIR LES {activeModel.compatibleParts} PIÈCES
