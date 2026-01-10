@@ -65,6 +65,16 @@ const HeroSection = () => {
     setActiveIndex(0);
   };
 
+  // Handle model selection from predictive search
+  const handleModelSelect = (modelSlug: string) => {
+    const index = filteredModels.findIndex((m) => m.id === modelSlug);
+    if (index !== -1) {
+      setActiveIndex(index);
+      setSelectedBrand(null); // Reset brand filter to show all
+      setSearchQuery(""); // Clear search
+    }
+  };
+
   return (
     <section className="h-screen pt-16 lg:pt-20 pb-4 flex items-center overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 h-full">
@@ -95,6 +105,7 @@ const HeroSection = () => {
               onBrandSelect={handleBrandSelect}
               searchQuery={searchQuery}
               onSearchChange={handleSearchChange}
+              onModelSelect={handleModelSelect}
             />
           </div>
         </div>

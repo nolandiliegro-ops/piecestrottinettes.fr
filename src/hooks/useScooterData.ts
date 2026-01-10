@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { useState, useEffect } from "react";
 
 // Hook pour récupérer toutes les marques
 export const useBrands = () => {
@@ -63,5 +64,43 @@ export const useCategories = () => {
       if (error) throw error;
       return data;
     },
+  });
+};
+
+// Hook pour recherche prédictive avec debounce
+export const useSearchScooters = (query: string) => {
+  const [debouncedQuery, setDebouncedQuery] = useState(query);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [query]);
+
+  return useQuery({
+    queryKey: ["search_scooters", debouncedQuery],
+    queryFn: async () => {
+      if (debouncedQuery.length < 2) return [];
+
+      const { data, error } = await supabase
+        .from("scooter_models")
+        .select(`
+          slug,
+          name,
+          brand:brands(name)
+        `)
+        .or(`name.ilike.%${debouncedQuery}%,brands.name.ilike.%${debouncedQuery}%`)
+        .limit(5);
+
+      if (error) throw error;
+      
+      return (data || []).map((item) => ({
+        slug: item.slug,
+        name: item.name,
+        brandName: item.brand?.name || "",
+      }));
+    },
+    enabled: debouncedQuery.length >= 2,
   });
 };

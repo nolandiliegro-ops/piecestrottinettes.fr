@@ -1,7 +1,10 @@
+import { useState, useRef, useEffect } from "react";
 import { Search, Sparkles, Star, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Brand } from "@/data/scooterData";
+import { useSearchScooters } from "@/hooks/useScooterData";
+import SearchDropdown from "./SearchDropdown";
 
 interface CommandPanelProps {
   brands: Brand[];
@@ -9,6 +12,7 @@ interface CommandPanelProps {
   onBrandSelect: (brandId: string | null) => void;
   searchQuery: string;
   onSearchChange: (query: string) => void;
+  onModelSelect?: (modelSlug: string) => void;
 }
 
 const CommandPanel = ({
@@ -17,7 +21,35 @@ const CommandPanel = ({
   onBrandSelect,
   searchQuery,
   onSearchChange,
+  onModelSelect,
 }: CommandPanelProps) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
+  
+  const { data: searchResults = [], isLoading } = useSearchScooters(searchQuery);
+
+  // Show dropdown when query is long enough and we have focus
+  useEffect(() => {
+    setShowDropdown(searchQuery.length >= 2);
+  }, [searchQuery]);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target as Node)) {
+        setShowDropdown(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleModelSelect = (slug: string) => {
+    setShowDropdown(false);
+    onSearchChange("");
+    onModelSelect?.(slug);
+  };
+
   return (
     <div className="flex flex-col justify-center h-full py-8 lg:py-0 space-y-8">
       {/* Section Title */}
@@ -30,8 +62,12 @@ const CommandPanel = ({
         </h2>
       </div>
 
-      {/* Search Bar */}
-      <div className="relative animate-fade-in" style={{ animationDelay: "0.1s" }}>
+      {/* Search Bar with Dropdown */}
+      <div 
+        ref={searchContainerRef}
+        className="relative animate-fade-in" 
+        style={{ animationDelay: "0.1s" }}
+      >
         <div className="glass rounded-2xl p-1">
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -40,10 +76,19 @@ const CommandPanel = ({
               placeholder="Modèle, marque..."
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
+              onFocus={() => searchQuery.length >= 2 && setShowDropdown(true)}
               className="pl-12 pr-4 py-6 text-base bg-transparent border-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground/60"
             />
           </div>
         </div>
+        
+        {/* Predictive Search Dropdown */}
+        <SearchDropdown
+          results={searchResults}
+          isVisible={showDropdown}
+          isLoading={isLoading}
+          onSelect={handleModelSelect}
+        />
       </div>
 
       {/* Brand Selection */}

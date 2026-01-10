@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
+import { motion, AnimatePresence } from "framer-motion";
+import AnimatedNumber from "@/components/ui/animated-number";
 
 // Import scooter images
 import xiaomiMiPro2 from "@/assets/scooters/xiaomi-mi-pro-2.png";
@@ -38,12 +40,27 @@ interface ScooterCarouselProps {
   onSelect: (index: number) => void;
 }
 
+// Parse spec value to number (e.g., "300W" -> 300)
+const parseSpecValue = (spec: string): number => {
+  return parseInt(spec.replace(/[^\d]/g, "")) || 0;
+};
+
 const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
     skipSnaps: false,
   });
+
+  const [prevActiveId, setPrevActiveId] = useState<string | null>(null);
+  const activeModel = models[activeIndex] || models[0];
+
+  // Track model changes for animation trigger
+  useEffect(() => {
+    if (activeModel && activeModel.id !== prevActiveId) {
+      setPrevActiveId(activeModel.id);
+    }
+  }, [activeModel, prevActiveId]);
 
   useEffect(() => {
     if (emblaApi) {
@@ -61,8 +78,6 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
 
   const scrollPrev = () => emblaApi?.scrollPrev();
   const scrollNext = () => emblaApi?.scrollNext();
-
-  const activeModel = models[activeIndex] || models[0];
 
   if (models.length === 0) {
     return (
@@ -98,19 +113,30 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             return (
               <div
                 key={model.id}
-                className="flex-shrink-0 w-full flex items-center justify-center px-4 transition-all duration-500"
+                className="flex-shrink-0 w-full flex items-center justify-center px-4"
                 style={{
                   transform: `scale(${scale})`,
                   opacity,
+                  transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                 }}
               >
                 <div className="relative w-96 h-96 lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] flex items-center justify-center -ml-8 lg:-ml-16">
-                  {/* Scooter Image */}
-                  <img
-                    src={imageSrc}
-                    alt={`${model.brand} ${model.name}`}
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                  {/* Luxury Reveal Animation */}
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={model.id}
+                      src={imageSrc}
+                      alt={`${model.brand} ${model.name}`}
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      transition={{ 
+                        duration: 0.4, 
+                        ease: [0.25, 0.46, 0.45, 0.94] // easeOutQuad
+                      }}
+                    />
+                  </AnimatePresence>
                 </div>
               </div>
             );
@@ -157,28 +183,88 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
         </Button>
       </div>
 
-      {/* Active Model Info */}
+      {/* Active Model Info with Animated Numbers */}
       {activeModel && (
-        <div className="mt-2 text-center animate-fade-in">
-          <p className="text-xs text-muted-foreground font-medium tracking-wide">
+        <motion.div 
+          key={activeModel.id}
+          className="mt-2 text-center"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.p 
+            className="text-xs text-muted-foreground font-medium tracking-wide"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+          >
             {activeModel.brand}
-          </p>
-          <h3 className="font-display text-2xl lg:text-3xl text-foreground">
+          </motion.p>
+          <motion.h3 
+            className="font-display text-2xl lg:text-3xl text-foreground"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+          >
             {activeModel.name}
-          </h3>
-          <p className="text-primary font-medium text-sm">
-            {activeModel.compatibleParts} pièces compatibles
-          </p>
+          </motion.h3>
+          
+          {/* Animated Specs */}
+          <motion.div 
+            className="flex items-center justify-center gap-4 mt-1 text-xs text-muted-foreground"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <span className="flex items-center gap-1">
+              <AnimatedNumber 
+                value={parseSpecValue(activeModel.specs.power)} 
+                suffix="W" 
+                className="font-medium text-foreground"
+              />
+            </span>
+            <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
+            <span className="flex items-center gap-1">
+              <AnimatedNumber 
+                value={parseSpecValue(activeModel.specs.maxSpeed)} 
+                suffix="km/h" 
+                className="font-medium text-foreground"
+              />
+            </span>
+            <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
+            <span className="flex items-center gap-1">
+              <AnimatedNumber 
+                value={parseSpecValue(activeModel.specs.range)} 
+                suffix="km" 
+                className="font-medium text-foreground"
+              />
+            </span>
+          </motion.div>
+
+          <motion.p 
+            className="text-primary font-medium text-sm mt-1"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.25 }}
+          >
+            <AnimatedNumber value={activeModel.compatibleParts} /> pièces compatibles
+          </motion.p>
 
           {/* CTA - Specific to selected model */}
-          <Button 
-            variant="outline"
-            className="mt-2 rounded-full px-4 py-2 font-display text-base tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
           >
-            VOIR LES {activeModel.compatibleParts} PIÈCES
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
+            <Button 
+              variant="outline"
+              className="mt-2 rounded-full px-4 py-2 font-display text-base tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+            >
+              VOIR LES {activeModel.compatibleParts} PIÈCES
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
