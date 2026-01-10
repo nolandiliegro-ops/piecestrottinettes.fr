@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         display: ["Bebas Neue", "sans-serif"],
         sans: ["Inter", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
