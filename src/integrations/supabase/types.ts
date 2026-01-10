@@ -68,6 +68,38 @@ export type Database = {
         }
         Relationships: []
       }
+      category_images: {
+        Row: {
+          category_id: string | null
+          created_at: string | null
+          id: string
+          image_url: string
+          prompt: string | null
+        }
+        Insert: {
+          category_id?: string | null
+          created_at?: string | null
+          id?: string
+          image_url: string
+          prompt?: string | null
+        }
+        Update: {
+          category_id?: string | null
+          created_at?: string | null
+          id?: string
+          image_url?: string
+          prompt?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "category_images_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: true
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       part_compatibility: {
         Row: {
           created_at: string

@@ -23,15 +23,15 @@ const DifficultyIndicator = ({
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <div className="flex items-center gap-0.5">
+      <div className="flex items-center gap-1">
         {[1, 2, 3, 4, 5].map((dot) => (
           <div
             key={dot}
             className={cn(
-              "w-1.5 h-1.5 rounded-full transition-colors",
+              "w-2 h-2 rounded-full transition-colors",
               dot <= safeLevel
-                ? "bg-mineral"
-                : "bg-muted-foreground/20"
+                ? "bg-mineral shadow-sm"
+                : "bg-carbon/20"
             )}
           />
         ))}
