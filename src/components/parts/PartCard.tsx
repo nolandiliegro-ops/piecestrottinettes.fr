@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Gauge } from "lucide-react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { cn } from "@/lib/utils";
 
 interface PartCardProps {
-  part: CompatiblePart & { slug?: string };
+  part: CompatiblePart & { slug?: string; torque_nm?: number | null };
   index: number;
   className?: string;
 }
@@ -44,6 +45,10 @@ const extractSpecs = (metadata: Record<string, unknown> | null): { torque?: stri
 
 const PartCard = ({ part, index, className }: PartCardProps) => {
   const specs = extractSpecs(part.technical_metadata);
+  
+  // Use torque_nm from part directly if available, otherwise from metadata
+  const torqueValue = part.torque_nm ?? (part.technical_metadata?.torque_nm as number | undefined);
+  const displayTorque = torqueValue ? `${torqueValue} Nm` : specs.torque;
 
   const cardContent = (
     <motion.div
@@ -60,50 +65,97 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
         "bg-white/40 backdrop-blur-md",
         "border border-white/20",
         "hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,181,161,0.3)]",
+        "hover:border-mineral/40",
         className
       )}
     >
-      {/* Image */}
-      <div className="aspect-square rounded-xl overflow-hidden bg-white/30 mb-4 flex items-center justify-center">
+      {/* Luxury Gradient Overlay */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+      {/* Image Container */}
+      <div className="relative aspect-square rounded-xl overflow-hidden bg-white/30 mb-4 flex items-center justify-center">
         {part.image_url ? (
           <img 
             src={part.image_url} 
             alt={part.name}
-            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
           />
         ) : (
           <div className="text-4xl opacity-30">🔧</div>
         )}
+        
+        {/* Hover Glow Effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-mineral/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Content */}
-      <div className="space-y-3">
+      <div className="relative space-y-3">
         {/* Name */}
-        <h4 className="font-display text-lg leading-tight text-carbon line-clamp-2">
+        <h4 className="font-display text-lg leading-tight text-carbon line-clamp-2 group-hover:text-mineral transition-colors duration-300">
           {part.name}
         </h4>
 
-        {/* Price - Mineral Green elegant */}
+        {/* Price - Luxury Typography */}
         {part.price !== null && (
-          <span className="block text-xl font-light text-mineral tracking-wide">
-            {part.price.toFixed(2)} <span className="text-sm opacity-70">€</span>
-          </span>
+          <div className="flex items-baseline gap-1">
+            <span className="text-2xl font-light text-mineral tracking-wide">
+              {part.price.toFixed(2)}
+            </span>
+            <span className="text-sm text-muted-foreground opacity-70">€</span>
+          </div>
         )}
 
-        {/* Technical Metadata Row */}
+        {/* Technical Specs Row - Enhanced with Torque Icon */}
         <div className="flex items-center justify-between pt-3 border-t border-white/20">
-          <span className="text-xs text-muted-foreground font-mono">
-            {specs.torque || "-- Nm"}
-          </span>
+          {/* Torque Display with Icon */}
+          <div className="flex items-center gap-2">
+            {displayTorque ? (
+              <>
+                <Gauge className="w-4 h-4 text-mineral" />
+                <span className="text-xs font-mono text-carbon font-medium">
+                  {displayTorque}
+                </span>
+              </>
+            ) : (
+              <span className="text-xs text-muted-foreground font-mono">
+                -- Nm
+              </span>
+            )}
+          </div>
+
+          {/* Difficulty Indicator */}
           <DifficultyIndicator level={part.difficulty_level} />
         </div>
 
-        {/* Stock indicator */}
+        {/* Stock Indicator - Luxury Badge */}
         {part.stock_quantity !== null && part.stock_quantity > 0 && (
-          <p className="text-xs text-mineral font-medium">
-            En stock ({part.stock_quantity})
-          </p>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: index * 0.1 + 0.2 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mineral/10 border border-mineral/20"
+          >
+            <div className="w-2 h-2 rounded-full bg-mineral animate-pulse" />
+            <span className="text-xs text-mineral font-medium">
+              En stock ({part.stock_quantity})
+            </span>
+          </motion.div>
         )}
+
+        {/* Out of Stock Badge */}
+        {part.stock_quantity !== null && part.stock_quantity === 0 && (
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50 border border-muted">
+            <div className="w-2 h-2 rounded-full bg-muted-foreground" />
+            <span className="text-xs text-muted-foreground font-medium">
+              Rupture de stock
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Luxury Corner Accent */}
+      <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-2xl pointer-events-none">
+        <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
     </motion.div>
   );
