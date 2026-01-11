@@ -133,7 +133,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                   transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                 }}
               >
-                <div className="relative w-full max-w-[450px] mx-auto h-[400px] flex items-center justify-center">
+                <div className="relative w-full max-w-[550px] mx-auto h-[550px] flex items-center justify-center">
                   {/* Add to Garage Button */}
                   <AddToGarageButton
                     scooterId={model.id}
