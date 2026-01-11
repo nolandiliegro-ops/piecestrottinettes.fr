@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, ArrowRight, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
-import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import AnimatedNumber from "@/components/ui/animated-number";
 import AddToGarageButton from "@/components/garage/AddToGarageButton";
 
@@ -54,24 +54,12 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
   });
 
   const [prevActiveId, setPrevActiveId] = useState<string | null>(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const activeModel = models[activeIndex] || models[0];
-
-  // Motion values for parallax and depth effects
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const rotateX = useTransform(mouseY, [-300, 300], [5, -5]);
-  const rotateY = useTransform(mouseX, [-300, 300], [-5, 5]);
 
   // Track model changes for animation trigger
   useEffect(() => {
     if (activeModel && activeModel.id !== prevActiveId) {
-      setIsTransitioning(true);
       setPrevActiveId(activeModel.id);
-      
-      // Reset transition state after animation
-      const timer = setTimeout(() => setIsTransitioning(false), 600);
-      return () => clearTimeout(timer);
     }
   }, [activeModel, prevActiveId]);
 
@@ -89,32 +77,17 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
     }
   }, [emblaApi, activeIndex]);
 
-  const scrollPrev = () => {
-    setIsTransitioning(true);
-    emblaApi?.scrollPrev();
-  };
-  
-  const scrollNext = () => {
-    setIsTransitioning(true);
-    emblaApi?.scrollNext();
-  };
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-    mouseX.set(x);
-    mouseY.set(y);
-  };
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
 
   if (models.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center h-full py-12">
         <div className="text-6xl mb-4">🔍</div>
-        <p className="text-lg text-greige/70 text-center">
+        <p className="text-lg text-muted-foreground text-center">
           Aucun modèle trouvé
         </p>
-        <p className="text-sm text-greige/50 text-center mt-2">
+        <p className="text-sm text-muted-foreground/70 text-center mt-2">
           Essayez une autre recherche
         </p>
       </div>
@@ -123,54 +96,29 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
 
   return (
     <div className="relative flex flex-col items-center justify-center h-full">
-      {/* Forza-style Racing Grid Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+      {/* Subtle background accent - no racing grid */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `
-              linear-gradient(0deg, transparent 24%, rgba(147,181,161,0.1) 25%, rgba(147,181,161,0.1) 26%, transparent 27%, transparent 74%, rgba(147,181,161,0.1) 75%, rgba(147,181,161,0.1) 76%, transparent 77%, transparent),
-              linear-gradient(90deg, transparent 24%, rgba(147,181,161,0.1) 25%, rgba(147,181,161,0.1) 26%, transparent 27%, transparent 74%, rgba(147,181,161,0.1) 75%, rgba(147,181,161,0.1) 76%, transparent 77%, transparent)
-            `,
-            backgroundSize: "50px 50px",
-            transform: "perspective(500px) rotateX(60deg)",
-            transformOrigin: "center bottom"
-          }}
+          className="absolute inset-0 bg-gradient-to-b from-mineral/20 via-transparent to-transparent"
         />
       </div>
 
-      {/* Spotlight Effect */}
-      <motion.div
+      {/* Soft spotlight effect */}
+      <div
         className="absolute inset-0 pointer-events-none"
-        animate={{
-          background: [
-            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(147,181,161,0.15) 0%, transparent 70%)",
-            "radial-gradient(ellipse 65% 45% at 50% 50%, rgba(147,181,161,0.2) 0%, transparent 70%)",
-            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(147,181,161,0.15) 0%, transparent 70%)",
-          ]
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut"
+        style={{
+          background: "radial-gradient(ellipse 50% 35% at 50% 50%, rgba(147,181,161,0.08) 0%, transparent 70%)"
         }}
       />
 
-      {/* Carousel Container with Parallax */}
-      <motion.div
-        className="relative w-full max-w-2xl overflow-hidden"
-        ref={emblaRef}
-        onMouseMove={handleMouseMove}
-        style={{
-          perspective: "1200px",
-        }}
-      >
+      {/* Carousel Container - Simple and elegant */}
+      <div className="relative w-full max-w-2xl overflow-hidden" ref={emblaRef}>
         <div className="flex items-center">
           {models.map((model, index) => {
             const isActive = index === activeIndex;
             const distance = Math.abs(index - activeIndex);
-            const scale = isActive ? 1 : Math.max(0.5, 1 - distance * 0.2);
-            const opacity = isActive ? 1 : Math.max(0.2, 1 - distance * 0.3);
+            const scale = isActive ? 1 : Math.max(0.7, 1 - distance * 0.15);
+            const opacity = isActive ? 1 : Math.max(0.3, 1 - distance * 0.25);
 
             // Get the image from our mapping, fallback to model.image
             const imageSrc = scooterImages[model.id] || model.image;
@@ -182,126 +130,78 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                 style={{
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: "transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.6s ease-out",
+                  transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                 }}
               >
-                <motion.div 
-                  className="relative w-full h-[500px] flex items-center justify-center"
-                  style={{
-                    rotateX: isActive ? rotateX : 0,
-                    rotateY: isActive ? rotateY : 0,
-                  }}
-                  transition={{ type: "spring", stiffness: 100, damping: 20 }}
-                >
+                <div className="relative w-full h-[500px] flex items-center justify-center">
                   {/* Add to Garage Button */}
                   <AddToGarageButton
                     scooterId={model.id}
                     scooterName={`${model.brand} ${model.name}`}
-                    className="absolute top-4 right-4 z-10 bg-mineral/20 backdrop-blur-md border-mineral/30 hover:bg-mineral/30"
+                    className="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm border-mineral/20 hover:bg-white hover:border-mineral/40"
                   />
                   
-                  {/* Gran Turismo-style Reveal Animation */}
+                  {/* Elegant Reveal Animation - Subtle */}
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={model.id}
                       className="relative w-full h-full"
                       initial={{ 
                         opacity: 0, 
-                        scale: 0.8,
-                        rotateY: -30,
-                        filter: "blur(10px)"
+                        scale: 0.95,
+                        y: 10
                       }}
                       animate={{ 
                         opacity: 1, 
                         scale: 1,
-                        rotateY: 0,
-                        filter: "blur(0px)"
+                        y: 0
                       }}
                       exit={{ 
                         opacity: 0, 
-                        scale: 0.8,
-                        rotateY: 30,
-                        filter: "blur(10px)"
+                        scale: 0.95,
+                        y: -10
                       }}
                       transition={{ 
-                        duration: 0.7, 
-                        ease: [0.34, 1.56, 0.64, 1] // easeOutBack
+                        duration: 0.5, 
+                        ease: [0.25, 0.46, 0.45, 0.94] // easeOutQuad
                       }}
                     >
-                      {/* Glow effect behind scooter */}
-                      <motion.div
-                        className="absolute inset-0 blur-3xl"
-                        animate={{
-                          background: [
-                            "radial-gradient(ellipse at center, rgba(147,181,161,0.3) 0%, transparent 60%)",
-                            "radial-gradient(ellipse at center, rgba(147,181,161,0.5) 0%, transparent 60%)",
-                            "radial-gradient(ellipse at center, rgba(147,181,161,0.3) 0%, transparent 60%)",
-                          ]
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut"
+                      {/* Subtle glow effect */}
+                      <div
+                        className="absolute inset-0 blur-2xl opacity-20"
+                        style={{
+                          background: "radial-gradient(ellipse at center, rgba(147,181,161,0.3) 0%, transparent 60%)"
                         }}
                       />
                       
                       <img
                         src={imageSrc}
                         alt={`${model.brand} ${model.name}`}
-                        className="relative w-full h-full object-contain drop-shadow-[0_20px_60px_rgba(147,181,161,0.4)]"
+                        className="relative w-full h-full object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
                       />
                     </motion.div>
                   </AnimatePresence>
-
-                  {/* Speed lines effect during transition */}
-                  {isTransitioning && isActive && (
-                    <motion.div
-                      className="absolute inset-0 pointer-events-none"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: [0, 0.3, 0] }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      {[...Array(8)].map((_, i) => (
-                        <motion.div
-                          key={i}
-                          className="absolute h-[2px] bg-gradient-to-r from-transparent via-mineral to-transparent"
-                          style={{
-                            top: `${20 + i * 10}%`,
-                            left: 0,
-                            right: 0,
-                          }}
-                          initial={{ x: "-100%", opacity: 0 }}
-                          animate={{ x: "100%", opacity: [0, 1, 0] }}
-                          transition={{
-                            duration: 0.5,
-                            delay: i * 0.05,
-                            ease: "easeOut"
-                          }}
-                        />
-                      ))}
-                    </motion.div>
-                  )}
-                </motion.div>
+                </div>
               </div>
             );
           })}
         </div>
-      </motion.div>
+      </div>
 
-      {/* Racing-style Navigation */}
+      {/* Refined Navigation */}
       <div className="flex items-center justify-center gap-6 mt-8">
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
           <Button
             variant="outline"
             size="icon"
             onClick={scrollPrev}
-            className="rounded-full w-12 h-12 bg-greige/10 border-mineral/30 hover:border-mineral hover:bg-mineral/20 backdrop-blur-md transition-all"
+            className="rounded-full w-11 h-11 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
           >
-            <ChevronLeft className="w-6 h-6 text-greige" />
+            <ChevronLeft className="w-5 h-5 text-carbon" />
           </Button>
         </motion.div>
 
-        {/* Racing Dots */}
+        {/* Elegant Dots */}
         <div className="flex items-center gap-2">
           {models.slice(0, Math.min(7, models.length)).map((_, index) => (
             <motion.button
@@ -309,129 +209,129 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
               onClick={() => onSelect(index)}
               className={`rounded-full transition-all ${
                 index === activeIndex 
-                  ? "w-8 h-3 bg-mineral shadow-[0_0_20px_rgba(147,181,161,0.6)]" 
-                  : "w-3 h-3 bg-greige/30 hover:bg-greige/50"
+                  ? "w-7 h-2.5 bg-mineral" 
+                  : "w-2.5 h-2.5 bg-muted-foreground/30 hover:bg-muted-foreground/50"
               }`}
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
             />
           ))}
           {models.length > 7 && (
-            <span className="text-xs text-greige/50 ml-2 font-mono">+{models.length - 7}</span>
+            <span className="text-xs text-muted-foreground ml-1">+{models.length - 7}</span>
           )}
         </div>
 
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
           <Button
             variant="outline"
             size="icon"
             onClick={scrollNext}
-            className="rounded-full w-12 h-12 bg-greige/10 border-mineral/30 hover:border-mineral hover:bg-mineral/20 backdrop-blur-md transition-all"
+            className="rounded-full w-11 h-11 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
           >
-            <ChevronRight className="w-6 h-6 text-greige" />
+            <ChevronRight className="w-5 h-5 text-carbon" />
           </Button>
         </motion.div>
       </div>
 
-      {/* Gran Turismo-style Info Panel */}
+      {/* Refined Info Panel - Clean and Professional */}
       {activeModel && (
         <motion.div 
           key={activeModel.id}
           className="mt-8 text-center"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.15 }}
         >
-          {/* Brand Badge */}
+          {/* Brand Badge - Subtle */}
           <motion.div
-            className="inline-block px-4 py-1 rounded-full bg-mineral/20 border border-mineral/30 backdrop-blur-md mb-3"
-            initial={{ scale: 0.8, opacity: 0 }}
+            className="inline-block px-4 py-1 rounded-full bg-white/70 border border-mineral/20 backdrop-blur-sm mb-3"
+            initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.2 }}
           >
-            <p className="text-xs text-greige font-medium tracking-widest uppercase">
+            <p className="text-xs text-muted-foreground font-medium tracking-wide uppercase">
               {activeModel.brand}
             </p>
           </motion.div>
 
-          {/* Model Name */}
+          {/* Model Name - Elegant */}
           <motion.h3 
-            className="font-display text-4xl lg:text-5xl text-greige mb-4 tracking-wide"
-            initial={{ opacity: 0, y: 10 }}
+            className="font-display text-3xl lg:text-4xl text-carbon mb-4 tracking-wide"
+            initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35 }}
+            transition={{ delay: 0.25 }}
           >
             {activeModel.name}
           </motion.h3>
           
-          {/* Performance Stats - Racing HUD Style */}
+          {/* Performance Stats - Clean Layout */}
           <motion.div 
             className="flex items-center justify-center gap-6 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.3 }}
           >
             {/* Power */}
             <div className="flex flex-col items-center">
               <div className="flex items-center gap-1 text-mineral">
-                <Zap className="w-4 h-4" />
+                <Zap className="w-3.5 h-3.5" />
                 <AnimatedNumber 
                   value={parseSpecValue(activeModel.specs.power)} 
-                  className="font-mono text-xl font-bold"
+                  className="font-mono text-lg font-semibold"
                 />
                 <span className="text-sm font-mono">W</span>
               </div>
-              <span className="text-xs text-greige/50 uppercase tracking-wide">Power</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Power</span>
             </div>
 
-            <div className="w-px h-8 bg-greige/20" />
+            <div className="w-px h-6 bg-border" />
 
             {/* Speed */}
             <div className="flex flex-col items-center">
               <div className="flex items-center gap-1 text-mineral">
                 <AnimatedNumber 
                   value={parseSpecValue(activeModel.specs.maxSpeed)} 
-                  className="font-mono text-xl font-bold"
+                  className="font-mono text-lg font-semibold"
                 />
                 <span className="text-sm font-mono">km/h</span>
               </div>
-              <span className="text-xs text-greige/50 uppercase tracking-wide">Top Speed</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Vitesse</span>
             </div>
 
-            <div className="w-px h-8 bg-greige/20" />
+            <div className="w-px h-6 bg-border" />
 
             {/* Range */}
             <div className="flex flex-col items-center">
               <div className="flex items-center gap-1 text-mineral">
                 <AnimatedNumber 
                   value={parseSpecValue(activeModel.specs.range)} 
-                  className="font-mono text-xl font-bold"
+                  className="font-mono text-lg font-semibold"
                 />
                 <span className="text-sm font-mono">km</span>
               </div>
-              <span className="text-xs text-greige/50 uppercase tracking-wide">Range</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Autonomie</span>
             </div>
           </motion.div>
 
-          {/* Compatible Parts Badge */}
+          {/* Compatible Parts Badge - Refined */}
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-greige/10 border border-greige/20 backdrop-blur-md mb-4"
-            initial={{ opacity: 0, scale: 0.9 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 border border-mineral/15 backdrop-blur-sm mb-4"
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.45 }}
+            transition={{ delay: 0.35 }}
           >
-            <span className="text-greige/70 text-sm">Pièces compatibles:</span>
+            <span className="text-muted-foreground text-sm">Pièces compatibles:</span>
             <AnimatedNumber 
               value={activeModel.compatibleParts} 
-              className="text-mineral font-bold text-lg"
+              className="text-mineral font-semibold text-base"
             />
           </motion.div>
 
-          {/* CTA Button - Forza Style */}
+          {/* CTA Button - Apple-style Clean */}
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.4 }}
           >
             <Button 
               onClick={() => {
@@ -439,10 +339,10 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                   behavior: 'smooth' 
                 });
               }}
-              className="rounded-full px-8 py-6 font-display text-lg tracking-widest gap-3 bg-mineral text-carbon hover:bg-mineral/90 hover:scale-105 transition-all shadow-[0_0_30px_rgba(147,181,161,0.4)] hover:shadow-[0_0_50px_rgba(147,181,161,0.6)]"
+              className="rounded-full px-7 py-5 font-display text-base tracking-wide gap-2 bg-mineral text-white hover:bg-mineral-dark transition-all shadow-sm hover:shadow-md"
             >
               EXPLORER LES PIÈCES
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </Button>
           </motion.div>
         </motion.div>

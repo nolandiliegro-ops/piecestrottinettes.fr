@@ -62,15 +62,15 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
       }}
       className={cn(
         "group relative rounded-2xl p-5 transition-all duration-300 cursor-pointer",
-        "bg-white/40 backdrop-blur-md",
-        "border border-white/20",
-        "hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,181,161,0.3)]",
+        "bg-white/70 backdrop-blur-sm",
+        "border border-mineral/10",
+        "hover:scale-[1.01] hover:shadow-lg",
         "hover:border-mineral/40",
         className
       )}
     >
-      {/* Luxury Gradient Overlay */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      {/* Subtle Gradient Overlay */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       {/* Image Container */}
       <div className="relative aspect-square rounded-xl overflow-hidden bg-white/30 mb-4 flex items-center justify-center">
@@ -84,8 +84,8 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
           <div className="text-4xl opacity-30">🔧</div>
         )}
         
-        {/* Hover Glow Effect */}
-        <div className="absolute inset-0 bg-gradient-to-t from-mineral/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {/* Subtle Hover Effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Content */}
@@ -153,9 +153,9 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
         )}
       </div>
 
-      {/* Luxury Corner Accent */}
+      {/* Subtle Corner Accent */}
       <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-2xl pointer-events-none">
-        <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-mineral/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
     </motion.div>
   );
