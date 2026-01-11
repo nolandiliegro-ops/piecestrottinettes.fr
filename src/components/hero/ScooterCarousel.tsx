@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
@@ -95,18 +95,30 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
   }
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-full -translate-x-12 lg:-translate-x-20">
-      {/* Arc Background */}
-      <div className="absolute inset-0 arc-gradient pointer-events-none" />
+    <div className="relative flex flex-col items-center justify-center h-full">
+      {/* Subtle background accent - no racing grid */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
+        <div 
+          className="absolute inset-0 bg-gradient-to-b from-mineral/20 via-transparent to-transparent"
+        />
+      </div>
 
-      {/* Carousel */}
-      <div className="relative w-full max-w-lg lg:max-w-xl overflow-hidden" ref={emblaRef}>
+      {/* Soft spotlight effect */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "radial-gradient(ellipse 50% 35% at 50% 50%, rgba(147,181,161,0.08) 0%, transparent 70%)"
+        }}
+      />
+
+      {/* Carousel Container - Simple and elegant */}
+      <div className="relative w-full max-w-2xl overflow-hidden" ref={emblaRef}>
         <div className="flex items-center">
           {models.map((model, index) => {
             const isActive = index === activeIndex;
             const distance = Math.abs(index - activeIndex);
-            const scale = isActive ? 1 : Math.max(0.6, 1 - distance * 0.15);
-            const opacity = isActive ? 1 : Math.max(0.4, 1 - distance * 0.25);
+            const scale = isActive ? 1 : Math.max(0.7, 1 - distance * 0.15);
+            const opacity = isActive ? 1 : Math.max(0.3, 1 - distance * 0.25);
 
             // Get the image from our mapping, fallback to model.image
             const imageSrc = scooterImages[model.id] || model.image;
@@ -114,36 +126,60 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             return (
               <div
                 key={model.id}
-                className="flex-shrink-0 w-full flex items-center justify-center px-4"
+                className="flex-shrink-0 w-full flex items-center justify-center px-8"
                 style={{
                   transform: `scale(${scale})`,
                   opacity,
                   transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                 }}
               >
-                <div className="relative w-96 h-96 lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] flex items-center justify-center -ml-8 lg:-ml-16">
+                <div className="relative w-full h-[500px] flex items-center justify-center">
                   {/* Add to Garage Button */}
                   <AddToGarageButton
                     scooterId={model.id}
                     scooterName={`${model.brand} ${model.name}`}
-                    className="absolute top-4 right-4 z-10"
+                    className="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm border-mineral/20 hover:bg-white hover:border-mineral/40"
                   />
                   
-                  {/* Luxury Reveal Animation */}
+                  {/* Elegant Reveal Animation - Subtle */}
                   <AnimatePresence mode="wait">
-                    <motion.img
+                    <motion.div
                       key={model.id}
-                      src={imageSrc}
-                      alt={`${model.brand} ${model.name}`}
-                      className="w-full h-full object-contain drop-shadow-2xl"
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.95 }}
+                      className="relative w-full h-full"
+                      initial={{ 
+                        opacity: 0, 
+                        scale: 0.95,
+                        y: 10
+                      }}
+                      animate={{ 
+                        opacity: 1, 
+                        scale: 1,
+                        y: 0
+                      }}
+                      exit={{ 
+                        opacity: 0, 
+                        scale: 0.95,
+                        y: -10
+                      }}
                       transition={{ 
-                        duration: 0.4, 
+                        duration: 0.5, 
                         ease: [0.25, 0.46, 0.45, 0.94] // easeOutQuad
                       }}
-                    />
+                    >
+                      {/* Subtle glow effect */}
+                      <div
+                        className="absolute inset-0 blur-2xl opacity-20"
+                        style={{
+                          background: "radial-gradient(ellipse at center, rgba(147,181,161,0.3) 0%, transparent 60%)"
+                        }}
+                      />
+                      
+                      <img
+                        src={imageSrc}
+                        alt={`${model.brand} ${model.name}`}
+                        className="relative w-full h-full object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+                      />
+                    </motion.div>
                   </AnimatePresence>
                 </div>
               </div>
@@ -152,128 +188,160 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <div className="flex items-center justify-center gap-4 mt-2">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={scrollPrev}
-          className="rounded-full w-10 h-10 border-foreground/20 hover:border-primary hover:bg-primary/10"
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </Button>
+      {/* Refined Navigation */}
+      <div className="flex items-center justify-center gap-6 mt-8">
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={scrollPrev}
+            className="rounded-full w-11 h-11 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
+          >
+            <ChevronLeft className="w-5 h-5 text-carbon" />
+          </Button>
+        </motion.div>
 
-        {/* Pagination Dots */}
+        {/* Elegant Dots */}
         <div className="flex items-center gap-2">
-          {models.slice(0, Math.min(5, models.length)).map((_, index) => (
-            <button
+          {models.slice(0, Math.min(7, models.length)).map((_, index) => (
+            <motion.button
               key={index}
               onClick={() => onSelect(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
+              className={`rounded-full transition-all ${
                 index === activeIndex 
-                  ? "w-6 bg-primary" 
-                  : "bg-foreground/20 hover:bg-foreground/40"
+                  ? "w-7 h-2.5 bg-mineral" 
+                  : "w-2.5 h-2.5 bg-muted-foreground/30 hover:bg-muted-foreground/50"
               }`}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
             />
           ))}
-          {models.length > 5 && (
-            <span className="text-xs text-muted-foreground ml-1">+{models.length - 5}</span>
+          {models.length > 7 && (
+            <span className="text-xs text-muted-foreground ml-1">+{models.length - 7}</span>
           )}
         </div>
 
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={scrollNext}
-          className="rounded-full w-10 h-10 border-foreground/20 hover:border-primary hover:bg-primary/10"
-        >
-          <ChevronRight className="w-5 h-5" />
-        </Button>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={scrollNext}
+            className="rounded-full w-11 h-11 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
+          >
+            <ChevronRight className="w-5 h-5 text-carbon" />
+          </Button>
+        </motion.div>
       </div>
 
-      {/* Active Model Info with Animated Numbers */}
+      {/* Refined Info Panel - Clean and Professional */}
       {activeModel && (
         <motion.div 
           key={activeModel.id}
-          className="mt-2 text-center"
+          className="mt-8 text-center"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.15 }}
         >
-          <motion.p 
-            className="text-xs text-muted-foreground font-medium tracking-wide"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
+          {/* Brand Badge - Subtle */}
+          <motion.div
+            className="inline-block px-4 py-1 rounded-full bg-white/70 border border-mineral/20 backdrop-blur-sm mb-3"
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
-            {activeModel.brand}
-          </motion.p>
+            <p className="text-xs text-muted-foreground font-medium tracking-wide uppercase">
+              {activeModel.brand}
+            </p>
+          </motion.div>
+
+          {/* Model Name - Elegant */}
           <motion.h3 
-            className="font-display text-2xl lg:text-3xl text-foreground"
+            className="font-display text-3xl lg:text-4xl text-carbon mb-4 tracking-wide"
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 }}
+            transition={{ delay: 0.25 }}
           >
             {activeModel.name}
           </motion.h3>
           
-          {/* Animated Specs */}
+          {/* Performance Stats - Clean Layout */}
           <motion.div 
-            className="flex items-center justify-center gap-4 mt-1 text-xs text-muted-foreground"
+            className="flex items-center justify-center gap-6 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <span className="flex items-center gap-1">
-              <AnimatedNumber 
-                value={parseSpecValue(activeModel.specs.power)} 
-                suffix="W" 
-                className="font-medium text-foreground"
-              />
-            </span>
-            <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
-            <span className="flex items-center gap-1">
-              <AnimatedNumber 
-                value={parseSpecValue(activeModel.specs.maxSpeed)} 
-                suffix="km/h" 
-                className="font-medium text-foreground"
-              />
-            </span>
-            <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
-            <span className="flex items-center gap-1">
-              <AnimatedNumber 
-                value={parseSpecValue(activeModel.specs.range)} 
-                suffix="km" 
-                className="font-medium text-foreground"
-              />
-            </span>
-          </motion.div>
-
-          <motion.p 
-            className="text-primary font-medium text-sm mt-1"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.25 }}
-          >
-            <AnimatedNumber value={activeModel.compatibleParts} /> pièces compatibles
-          </motion.p>
-
-          {/* CTA - Specific to selected model with smooth scroll */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
+            {/* Power */}
+            <div className="flex flex-col items-center">
+              <div className="flex items-center gap-1 text-mineral">
+                <Zap className="w-3.5 h-3.5" />
+                <AnimatedNumber 
+                  value={parseSpecValue(activeModel.specs.power)} 
+                  className="font-mono text-lg font-semibold"
+                />
+                <span className="text-sm font-mono">W</span>
+              </div>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Power</span>
+            </div>
+
+            <div className="w-px h-6 bg-border" />
+
+            {/* Speed */}
+            <div className="flex flex-col items-center">
+              <div className="flex items-center gap-1 text-mineral">
+                <AnimatedNumber 
+                  value={parseSpecValue(activeModel.specs.maxSpeed)} 
+                  className="font-mono text-lg font-semibold"
+                />
+                <span className="text-sm font-mono">km/h</span>
+              </div>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Vitesse</span>
+            </div>
+
+            <div className="w-px h-6 bg-border" />
+
+            {/* Range */}
+            <div className="flex flex-col items-center">
+              <div className="flex items-center gap-1 text-mineral">
+                <AnimatedNumber 
+                  value={parseSpecValue(activeModel.specs.range)} 
+                  className="font-mono text-lg font-semibold"
+                />
+                <span className="text-sm font-mono">km</span>
+              </div>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5">Autonomie</span>
+            </div>
+          </motion.div>
+
+          {/* Compatible Parts Badge - Refined */}
+          <motion.div
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 border border-mineral/15 backdrop-blur-sm mb-4"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.35 }}
+          >
+            <span className="text-muted-foreground text-sm">Pièces compatibles:</span>
+            <AnimatedNumber 
+              value={activeModel.compatibleParts} 
+              className="text-mineral font-semibold text-base"
+            />
+          </motion.div>
+
+          {/* CTA Button - Apple-style Clean */}
+          <motion.div
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
             <Button 
-              variant="outline"
               onClick={() => {
                 document.getElementById('bento-discovery')?.scrollIntoView({ 
                   behavior: 'smooth' 
                 });
               }}
-              className="mt-2 rounded-full px-4 py-2 font-display text-base tracking-wide gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+              className="rounded-full px-7 py-5 font-display text-base tracking-wide gap-2 bg-mineral text-white hover:bg-mineral-dark transition-all shadow-sm hover:shadow-md"
             >
-              VOIR LES {activeModel.compatibleParts} PIÈCES
+              EXPLORER LES PIÈCES
               <ArrowRight className="w-4 h-4" />
             </Button>
           </motion.div>
