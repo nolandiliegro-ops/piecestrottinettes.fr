@@ -112,7 +112,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
       />
 
       {/* Carousel Container - Simple and elegant */}
-      <div className="relative w-full max-w-2xl overflow-hidden" ref={emblaRef}>
+      <div className="relative w-full max-w-3xl overflow-hidden px-4" ref={emblaRef}>
         <div className="flex items-center">
           {models.map((model, index) => {
             const isActive = index === activeIndex;
@@ -126,14 +126,14 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             return (
               <div
                 key={model.id}
-                className="flex-shrink-0 w-full flex items-center justify-center px-8"
+                className="flex-shrink-0 w-full flex items-center justify-center px-4"
                 style={{
                   transform: `scale(${scale})`,
                   opacity,
                   transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                 }}
               >
-                <div className="relative w-full h-[500px] flex items-center justify-center">
+                <div className="relative w-full max-w-[450px] mx-auto h-[400px] flex items-center justify-center">
                   {/* Add to Garage Button */}
                   <AddToGarageButton
                     scooterId={model.id}

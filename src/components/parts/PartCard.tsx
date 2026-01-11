@@ -61,7 +61,7 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       className={cn(
-        "group relative rounded-2xl p-5 transition-all duration-300 cursor-pointer",
+        "group relative rounded-xl p-4 transition-all duration-300 cursor-pointer",
         "bg-white/70 backdrop-blur-sm",
         "border border-mineral/10",
         "hover:scale-[1.01] hover:shadow-lg",
@@ -72,8 +72,8 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
       {/* Subtle Gradient Overlay */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-      {/* Image Container */}
-      <div className="relative aspect-square rounded-xl overflow-hidden bg-white/30 mb-4 flex items-center justify-center">
+      {/* Image Container - Compact */}
+      <div className="relative aspect-square rounded-lg overflow-hidden bg-white/30 mb-3 flex items-center justify-center max-h-[180px]">
         {part.image_url ? (
           <img 
             src={part.image_url} 
@@ -89,9 +89,9 @@ const PartCard = ({ part, index, className }: PartCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative space-y-3">
+      <div className="relative space-y-2">
         {/* Name */}
-        <h4 className="font-display text-lg leading-tight text-carbon line-clamp-2 group-hover:text-mineral transition-colors duration-300">
+        <h4 className="font-display text-base leading-tight text-carbon line-clamp-2 group-hover:text-mineral transition-colors duration-300">
           {part.name}
         </h4>
 

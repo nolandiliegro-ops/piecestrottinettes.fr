@@ -62,8 +62,8 @@ const BentoDiscoverySection = ({
         )}
       </motion.div>
 
-      {/* Scrollable Parts Grid */}
-      <div className="flex-1 overflow-y-auto scrollbar-hide">
+      {/* Scrollable Parts Grid - Compact */}
+      <div className="flex-1 overflow-y-auto scrollbar-hide pr-2">
         {isLoading ? (
           <div className="grid grid-cols-1 gap-4">
             {[...Array(3)].map((_, i) => (
@@ -82,7 +82,7 @@ const BentoDiscoverySection = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 gap-4"
+              className="grid grid-cols-1 gap-3"
             >
               {parts.map((part, index) => (
                 <PartCard 
