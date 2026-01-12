@@ -46,7 +46,7 @@ const Header = () => {
             <img 
               src={logoImage}
               alt="piècestrottinettes.FR"
-              className="h-12 lg:h-14 w-auto object-contain"
+              className="h-32 lg:h-36 w-auto object-contain"
             />
           </Link>
 
