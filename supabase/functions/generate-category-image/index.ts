@@ -23,6 +23,72 @@ serve(async (req) => {
   }
 
   try {
+    // =============================================
+    // SECURITY: Verify authentication and admin role
+    // =============================================
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader?.startsWith("Bearer ")) {
+      console.error("Missing or invalid Authorization header");
+      return new Response(
+        JSON.stringify({ error: "Unauthorized - Authentication required" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    // Initialize Supabase clients
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
+    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+
+    // Create client with user's auth token for validation
+    const supabaseAuth = createClient(supabaseUrl, supabaseAnonKey, {
+      global: { headers: { Authorization: authHeader } },
+    });
+
+    // Verify user authentication
+    const { data: userData, error: userError } = await supabaseAuth.auth.getUser();
+
+    if (userError || !userData?.user) {
+      console.error("Failed to verify user:", userError);
+      return new Response(
+        JSON.stringify({ error: "Unauthorized - Invalid token" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    const userId = userData.user.id;
+    console.log(`Authenticated user: ${userId}`);
+
+    // Check if user has admin role using service role client (bypasses RLS)
+    const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+    const { data: roleData, error: roleError } = await supabaseAdmin
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", userId)
+      .eq("role", "admin")
+      .maybeSingle();
+
+    if (roleError) {
+      console.error("Error checking admin role:", roleError);
+      return new Response(
+        JSON.stringify({ error: "Failed to verify permissions" }),
+        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    if (!roleData) {
+      console.error(`User ${userId} attempted admin action without admin role`);
+      return new Response(
+        JSON.stringify({ error: "Forbidden - Admin access required" }),
+        { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    console.log(`Admin access verified for user: ${userId}`);
+
+    // =============================================
+    // Main logic: Generate category image
+    // =============================================
     const { categoryId, categorySlug } = await req.json();
 
     if (!categoryId || !categorySlug) {
@@ -49,7 +115,7 @@ serve(async (req) => {
       );
     }
 
-    console.log(`Generating image for category: ${categorySlug}`);
+    console.log(`Admin ${userId} generating image for category: ${categorySlug}`);
 
     // Create AbortController with 45s timeout for AI generation
     const controller = new AbortController();
@@ -123,18 +189,13 @@ serve(async (req) => {
       );
     }
 
-    // Initialize Supabase client with service role
-    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
-    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-    const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
     // Convert base64 to blob
     const base64Data = imageBase64.replace(/^data:image\/\w+;base64,/, "");
     const imageBytes = Uint8Array.from(atob(base64Data), (c) => c.charCodeAt(0));
 
-    // Upload to Supabase Storage
+    // Upload to Supabase Storage using service role client
     const fileName = `${categorySlug}-${Date.now()}.png`;
-    const { error: uploadError } = await supabase.storage
+    const { error: uploadError } = await supabaseAdmin.storage
       .from("category-images")
       .upload(fileName, imageBytes, {
         contentType: "image/png",
@@ -150,14 +211,14 @@ serve(async (req) => {
     }
 
     // Get public URL
-    const { data: urlData } = supabase.storage
+    const { data: urlData } = supabaseAdmin.storage
       .from("category-images")
       .getPublicUrl(fileName);
 
     const imageUrl = urlData.publicUrl;
 
     // Upsert into category_images table
-    const { error: dbError } = await supabase
+    const { error: dbError } = await supabaseAdmin
       .from("category_images")
       .upsert(
         {
@@ -176,7 +237,7 @@ serve(async (req) => {
       );
     }
 
-    console.log(`Successfully generated and saved image for ${categorySlug}: ${imageUrl}`);
+    console.log(`Admin ${userId} successfully generated image for ${categorySlug}: ${imageUrl}`);
 
     return new Response(
       JSON.stringify({ success: true, imageUrl }),
