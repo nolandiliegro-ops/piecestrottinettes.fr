@@ -84,7 +84,7 @@ const Garage = () => {
 
   if (authLoading) {
     return (
-      <div className="min-h-screen bg-[#2D2D2D] flex items-center justify-center">
+      <div className="min-h-screen bg-[#F5F3F0] flex items-center justify-center">
         <Loader2 className="w-8 h-8 animate-spin text-mineral" />
       </div>
     );
@@ -95,7 +95,7 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen bg-[#2D2D2D] flex flex-col overflow-hidden">
+    <div className="h-screen bg-[#F5F3F0] flex flex-col overflow-hidden">
       <Header />
       
       {/* Main Content - Zero Scroll Layout */}
@@ -110,10 +110,10 @@ const Garage = () => {
             className="flex items-center justify-between mb-4 shrink-0"
           >
             <div>
-              <h1 className="font-display text-2xl lg:text-3xl text-white tracking-wide">
+              <h1 className="font-display text-2xl lg:text-3xl text-[#1A1A1A] tracking-wide">
                 MON GARAGE
               </h1>
-              <p className="text-white/60 text-sm">
+              <p className="text-carbon/60 text-sm">
                 Bienvenue, <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
               </p>
             </div>
