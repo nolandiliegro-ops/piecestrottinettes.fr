@@ -60,7 +60,9 @@ export const useCompatibleParts = (scooterModelId?: string) => {
             image_url,
             stock_quantity,
             category:categories (
-              name
+              id,
+              name,
+              slug
             )
           `)
           .in('id', partIds)
@@ -71,6 +73,7 @@ export const useCompatibleParts = (scooterModelId?: string) => {
         }
 
         // Transform data to match expected structure
+        // Note: category comes back as an object with id, name, slug
         const transformedData = partsData?.map((item: any) => ({
           id: item.id,
           name: item.name,
@@ -78,7 +81,9 @@ export const useCompatibleParts = (scooterModelId?: string) => {
           image: item.image_url,
           stock_quantity: item.stock_quantity,
           category: {
-            name: item.category?.name || 'Autre',
+            name: typeof item.category === 'object' && item.category !== null 
+              ? item.category.name 
+              : 'Autre',
           },
         })) || [];
 
