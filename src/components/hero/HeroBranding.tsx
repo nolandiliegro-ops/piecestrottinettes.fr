@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 const HeroBranding = () => {
   return (
-    <div className="flex flex-col justify-center h-full">
+    <div className="flex flex-col justify-start h-full">
       {/* Subtitle */}
       <p className="text-xs tracking-[0.3em] text-muted-foreground font-medium mb-2 animate-fade-in">
         SPÉCIALISTE TROTTINETTES

@@ -51,7 +51,7 @@ const CommandPanel = ({
   };
 
   return (
-    <div className="flex flex-col justify-center h-full py-8 lg:py-0 space-y-8">
+    <div className="flex flex-col justify-start h-full space-y-6">
       {/* Section Title */}
       <div className="animate-fade-in">
         <p className="text-sm tracking-[0.2em] text-muted-foreground font-medium mb-2">
