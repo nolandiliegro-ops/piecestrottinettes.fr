@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Battery, Zap, Smartphone, Calendar } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Battery, Zap, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface GarageScooter {
@@ -9,16 +9,16 @@ interface GarageScooter {
     id: string;
     name: string;
     brand: string;
-    image?: string;
-      max_speed_kmh?: number;
-      max_range_km?: number;
-      power_w?: number;
-      model_variant?: string;
-      voltage?: number;
-      battery_ah?: number;
+    image_url?: string | null;
+    max_speed_kmh?: number | null;
+    range_km?: number | null;
+    power_watts?: number | null;
+    voltage?: number | null;
   };
-  nickname?: string;
+  nickname?: string | null;
   added_at: string;
+  is_owned?: boolean;
+  current_km?: number | null;
 }
 
 interface GarageScooterCarouselProps {
@@ -97,9 +97,9 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
 
                     {/* Scooter Image */}
                     <div className="relative aspect-square rounded-2xl overflow-hidden bg-greige/30">
-                      {model.image ? (
+                      {model.image_url ? (
                         <motion.img
-                          src={model.image}
+                          src={model.image_url}
                           alt={displayName}
                           className="w-full h-full object-contain p-8"
                           initial={{ scale: 0.8, opacity: 0 }}
@@ -140,30 +140,30 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
                       transition={{ duration: 0.5, delay: 0.4 }}
                       className="grid grid-cols-3 gap-4"
                     >
-                      {/* Model Variant */}
-                      {model.model_variant && (
-                        <div className="bg-greige/30 rounded-xl p-4 text-center">
-                          <Smartphone className="w-6 h-6 text-mineral mx-auto mb-2" />
-                          <p className="text-2xl font-bold text-carbon">{model.model_variant}</p>
-                          <p className="text-xs text-carbon/50 mt-1">Modèle</p>
-                        </div>
-                      )}
-
-                      {/* Voltage */}
-                      {model.voltage && (
+                      {/* Speed */}
+                      {model.max_speed_kmh && (
                         <div className="bg-greige/30 rounded-xl p-4 text-center">
                           <Zap className="w-6 h-6 text-mineral mx-auto mb-2" />
-                          <p className="text-2xl font-bold text-carbon">{model.voltage}V</p>
-                          <p className="text-xs text-carbon/50 mt-1">Voltage</p>
+                          <p className="text-2xl font-bold text-carbon">{model.max_speed_kmh}</p>
+                          <p className="text-xs text-carbon/50 mt-1">km/h</p>
                         </div>
                       )}
 
-                      {/* Battery Amperage */}
-                      {model.battery_ah && (
+                      {/* Range */}
+                      {model.range_km && (
                         <div className="bg-greige/30 rounded-xl p-4 text-center">
                           <Battery className="w-6 h-6 text-mineral mx-auto mb-2" />
-                          <p className="text-2xl font-bold text-carbon">{model.battery_ah}Ah</p>
-                          <p className="text-xs text-carbon/50 mt-1">Ampérage</p>
+                          <p className="text-2xl font-bold text-carbon">{model.range_km}</p>
+                          <p className="text-xs text-carbon/50 mt-1">km</p>
+                        </div>
+                      )}
+
+                      {/* Power */}
+                      {model.power_watts && (
+                        <div className="bg-greige/30 rounded-xl p-4 text-center">
+                          <Zap className="w-6 h-6 text-mineral mx-auto mb-2" />
+                          <p className="text-2xl font-bold text-carbon">{model.power_watts}</p>
+                          <p className="text-xs text-carbon/50 mt-1">W</p>
                         </div>
                       )}
                     </motion.div>

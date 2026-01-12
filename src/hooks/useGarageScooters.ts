@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
-import { useAuth } from './useAuth';
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuthContext } from "@/contexts/AuthContext";
 
 interface GarageScooter {
   id: string;
@@ -8,94 +8,77 @@ interface GarageScooter {
     id: string;
     name: string;
     brand: string;
-    image?: string;
-    max_speed_kmh?: number;
-    max_range_km?: number;
-    power_w?: number;
-    model_variant?: string;
-    voltage?: number;
-    battery_ah?: number;
+    image_url?: string | null;
+    max_speed_kmh?: number | null;
+    range_km?: number | null;
+    power_watts?: number | null;
+    voltage?: number | null;
   };
-  nickname?: string;
+  nickname?: string | null;
   added_at: string;
+  is_owned: boolean;
+  current_km: number | null;
 }
 
 export const useGarageScooters = () => {
-  const { user } = useAuth();
-  const [scooters, setScooters] = useState<GarageScooter[] | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+  const { user } = useAuthContext();
 
-  useEffect(() => {
-    const fetchGarageScooters = async () => {
-      if (!user) {
-        setScooters([]);
-        setLoading(false);
-        return;
-      }
+  const query = useQuery({
+    queryKey: ["user-garage", user?.id],
+    queryFn: async () => {
+      if (!user) return [];
 
-      try {
-        setLoading(true);
-        setError(null);
-
-        // Query user_garage table with scooter_models join
-        const { data, error: fetchError } = await supabase
-          .from('user_garage')
-          .select(`
+      const { data, error } = await supabase
+        .from("user_garage")
+        .select(`
+          id,
+          nickname,
+          added_at,
+          is_owned,
+          current_km,
+          scooter_model:scooter_models(
             id,
-            nickname,
-            added_at,
-            scooter_model:scooter_models (
-              id,
-              name,
-              brand,
-              image,
-              max_speed_kmh,
-              max_range_km,
-              power_w,
-              model_variant,
-              voltage,
-              battery_ah
-            )
-          `)
-          .eq('user_id', user.id)
-          .order('added_at', { ascending: false });
+            name,
+            slug,
+            image_url,
+            max_speed_kmh,
+            range_km,
+            power_watts,
+            voltage,
+            brand:brands(name)
+          )
+        `)
+        .eq("user_id", user.id)
+        .order("added_at", { ascending: false });
 
-        if (fetchError) {
-          throw fetchError;
-        }
+      if (error) throw error;
 
-        // Transform data to match expected structure
-        const transformedData = data?.map((item: any) => ({
-          id: item.id,
-          nickname: item.nickname,
-          added_at: item.added_at,
-          scooter_model: {
-            id: item.scooter_model.id,
-            name: item.scooter_model.name,
-            brand: item.scooter_model.brand,
-            image: item.scooter_model.image,
-            max_speed_kmh: item.scooter_model.max_speed_kmh,
-            max_range_km: item.scooter_model.max_range_km,
-            power_w: item.scooter_model.power_w,
-            model_variant: item.scooter_model.model_variant,
-            voltage: item.scooter_model.voltage,
-            battery_ah: item.scooter_model.battery_ah,
-          },
-        })) || [];
+      // Transform to flatten brand.name -> brand string
+      return (data || []).map((item: any) => ({
+        id: item.id,
+        nickname: item.nickname,
+        added_at: item.added_at,
+        is_owned: item.is_owned,
+        current_km: item.current_km,
+        scooter_model: {
+          id: item.scooter_model?.id,
+          name: item.scooter_model?.name,
+          brand: item.scooter_model?.brand?.name || "Unknown",
+          image_url: item.scooter_model?.image_url,
+          max_speed_kmh: item.scooter_model?.max_speed_kmh,
+          range_km: item.scooter_model?.range_km,
+          power_watts: item.scooter_model?.power_watts,
+          voltage: item.scooter_model?.voltage,
+        },
+      })) as GarageScooter[];
+    },
+    enabled: !!user,
+  });
 
-        setScooters(transformedData);
-      } catch (err) {
-        console.error('Error fetching garage scooters:', err);
-        setError(err instanceof Error ? err : new Error('Unknown error'));
-        setScooters([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchGarageScooters();
-  }, [user]);
-
-  return { scooters, loading, error };
+  return {
+    scooters: query.data || null,
+    loading: query.isLoading,
+    error: query.error,
+    refetch: query.refetch,
+  };
 };

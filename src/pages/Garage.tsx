@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import { Loader2 } from 'lucide-react';
@@ -21,11 +21,11 @@ const Garage = () => {
   );
 
   // Set initial selected scooter when scooters load
-  useState(() => {
+  useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
       setSelectedScooter(scooters[0]);
     }
-  });
+  }, [scooters, selectedScooter]);
 
   if (authLoading) {
     return (
