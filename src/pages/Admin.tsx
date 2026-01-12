@@ -1,28 +1,58 @@
 import { useState } from 'react';
-import { useAuth } from '@/hooks/useAuth';
+import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield } from 'lucide-react';
+import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX } from 'lucide-react';
 
 import PartsManager from '@/components/admin/PartsManager';
 import ScootersManager from '@/components/admin/ScootersManager';
 import CompatibilityManager from '@/components/admin/CompatibilityManager';
+import CategoriesManager from '@/components/admin/CategoriesManager';
+import BrandsManager from '@/components/admin/BrandsManager';
 
 const Admin = () => {
-  const { user, loading: authLoading } = useAuth();
+  const { user, isAdmin, loading } = useAdminRole();
   const [activeTab, setActiveTab] = useState('parts');
 
-  if (authLoading) {
+  if (loading) {
     return (
       <div className="min-h-screen bg-foreground flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+        <div className="flex flex-col items-center gap-4">
+          <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          <p className="text-background/60 text-sm">Vérification des accès...</p>
+        </div>
       </div>
     );
   }
 
   if (!user) {
     return <Navigate to="/login" replace />;
+  }
+
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen bg-foreground flex items-center justify-center">
+        <div className="flex flex-col items-center gap-6 text-center px-4">
+          <div className="w-20 h-20 rounded-full bg-destructive/20 flex items-center justify-center">
+            <ShieldX className="w-10 h-10 text-destructive" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-background mb-2">Accès Refusé</h1>
+            <p className="text-background/60 max-w-md">
+              Vous n'avez pas les permissions nécessaires pour accéder à cette page.
+              Seuls les administrateurs peuvent gérer le catalogue.
+            </p>
+          </div>
+          <Link to="/">
+            <Button className="bg-primary hover:bg-primary/90">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Retour à l'accueil
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -63,27 +93,41 @@ const Admin = () => {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="bg-background/10 border border-border/20 p-1 h-auto">
+          <TabsList className="bg-background/10 border border-border/20 p-1 h-auto flex-wrap">
             <TabsTrigger 
               value="parts" 
-              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-6 py-3 gap-2"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
             >
               <Wrench className="w-4 h-4" />
               Pièces
             </TabsTrigger>
             <TabsTrigger 
               value="scooters" 
-              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-6 py-3 gap-2"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
             >
               <Zap className="w-4 h-4" />
               Trottinettes
             </TabsTrigger>
             <TabsTrigger 
               value="compatibility" 
-              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-6 py-3 gap-2"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
             >
               <Link2 className="w-4 h-4" />
               Compatibilités
+            </TabsTrigger>
+            <TabsTrigger 
+              value="categories" 
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
+            >
+              <Tag className="w-4 h-4" />
+              Catégories
+            </TabsTrigger>
+            <TabsTrigger 
+              value="brands" 
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
+            >
+              <Building className="w-4 h-4" />
+              Marques
             </TabsTrigger>
           </TabsList>
 
@@ -96,7 +140,7 @@ const Admin = () => {
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-foreground">Gestion des Pièces</h2>
-                  <p className="text-sm text-muted-foreground">Modifier les prix, stocks et images</p>
+                  <p className="text-sm text-muted-foreground">Créer, modifier et supprimer les pièces</p>
                 </div>
               </div>
               <PartsManager />
@@ -112,7 +156,7 @@ const Admin = () => {
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-foreground">Gestion des Trottinettes</h2>
-                  <p className="text-sm text-muted-foreground">Modifier les specs techniques et images</p>
+                  <p className="text-sm text-muted-foreground">Créer, modifier et supprimer les modèles</p>
                 </div>
               </div>
               <ScootersManager />
@@ -132,6 +176,38 @@ const Admin = () => {
                 </div>
               </div>
               <CompatibilityManager />
+            </div>
+          </TabsContent>
+
+          {/* Categories Tab */}
+          <TabsContent value="categories" className="mt-6">
+            <div className="rounded-xl border border-border/20 bg-card p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Tag className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground">Gestion des Catégories</h2>
+                  <p className="text-sm text-muted-foreground">Organiser les catégories de pièces</p>
+                </div>
+              </div>
+              <CategoriesManager />
+            </div>
+          </TabsContent>
+
+          {/* Brands Tab */}
+          <TabsContent value="brands" className="mt-6">
+            <div className="rounded-xl border border-border/20 bg-card p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Building className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground">Gestion des Marques</h2>
+                  <p className="text-sm text-muted-foreground">Gérer les marques de trottinettes</p>
+                </div>
+              </div>
+              <BrandsManager />
             </div>
           </TabsContent>
         </Tabs>
