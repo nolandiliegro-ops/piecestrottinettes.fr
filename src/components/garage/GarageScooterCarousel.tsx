@@ -39,6 +39,7 @@ interface GarageScooterCarouselProps {
 const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   const handlePrevious = () => {
     const newIndex = currentIndex === 0 ? scooters.length - 1 : currentIndex - 1;
@@ -60,9 +61,10 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
     onScooterChange?.(scooters[index]);
   };
 
-  // Reset custom photo view when scooter changes externally
+  // Reset custom photo view and image error when scooter changes
   useEffect(() => {
     setShowCustomPhoto(false);
+    setImageError(false);
   }, [currentIndex]);
 
   if (!scooters || scooters.length === 0) {
@@ -151,7 +153,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
 
           {/* Scooter Image with Premium Shadow - 40% LARGER */}
           <AnimatePresence mode="wait">
-            {displayImage ? (
+            {displayImage && !imageError ? (
               <motion.img
                 key={showCustomPhoto ? 'custom' : 'official'}
                 src={displayImage}
@@ -162,6 +164,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
                 exit={{ opacity: 0, scale: 1.05 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 style={{ transform: 'scale(1.15)' }}
+                onError={() => setImageError(true)}
               />
             ) : (
               <ScooterPlaceholder />
