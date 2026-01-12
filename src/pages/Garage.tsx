@@ -95,7 +95,7 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen bg-[#2D2D2D] flex flex-col overflow-hidden">
+    <div className="h-screen bg-[#2D2D2D] flex flex-col overflow-hidden" style={{ backgroundImage: 'url(/garage-floor.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <Header />
       
       {/* Main Content - Zero Scroll Layout */}
