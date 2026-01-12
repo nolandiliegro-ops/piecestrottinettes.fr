@@ -266,16 +266,16 @@ const CompactProductsRow = ({
             className="flex-shrink-0 w-36 bg-white/80 border border-mineral/20 rounded-xl p-3 
                        hover:shadow-lg hover:border-mineral/40 transition-all cursor-pointer group"
           >
-            {/* Image with bright background */}
-            <div className="aspect-square rounded-lg bg-greige/50 overflow-hidden mb-2">
+            {/* Image - Luxury Studio Style */}
+            <div className="aspect-square rounded-lg bg-[#F9F8F6] overflow-hidden mb-2 flex items-center justify-center">
               {part.image ? (
                 <img
                   src={part.image}
                   alt={part.name}
-                  className="w-full h-full object-contain p-2 brightness-105 contrast-105"
+                  className="w-full h-full object-contain p-4"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-greige/30">
+                <div className="w-full h-full flex items-center justify-center">
                   <Package className="w-8 h-8 text-carbon/30" />
                 </div>
               )}
