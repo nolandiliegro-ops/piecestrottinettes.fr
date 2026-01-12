@@ -56,8 +56,7 @@ export const useGarageScooters = () => {
             amperage,
             youtube_video_id,
             compatible_parts_count,
-            brand:brands(name)
-          )
+            brand:brands(id, name, slug)
         `)
         .eq("user_id", user.id)
         .order("added_at", { ascending: false });
@@ -73,20 +72,23 @@ export const useGarageScooters = () => {
         current_km: item.current_km,
         custom_photo_url: item.custom_photo_url,
         last_maintenance_date: item.last_maintenance_date,
-        scooter_model: {
-          id: item.scooter_model?.id,
-          name: item.scooter_model?.name,
-          slug: item.scooter_model?.slug,
-          brand: item.scooter_model?.brand?.name || "Unknown",
-          image_url: item.scooter_model?.image_url,
-          max_speed_kmh: item.scooter_model?.max_speed_kmh,
-          range_km: item.scooter_model?.range_km,
-          power_watts: item.scooter_model?.power_watts,
-          voltage: item.scooter_model?.voltage,
-          amperage: item.scooter_model?.amperage,
-          youtube_video_id: item.scooter_model?.youtube_video_id,
-          compatible_parts_count: item.scooter_model?.compatible_parts_count,
-        },
+        scooter_model: item.scooter_model ? {
+          id: item.scooter_model.id,
+          name: item.scooter_model.name,
+          slug: item.scooter_model.slug,
+          // Handle brand - could be object {id, name, slug} or just {name}
+          brand: typeof item.scooter_model.brand === 'object' 
+            ? (item.scooter_model.brand?.name || 'Unknown')
+            : (item.scooter_model.brand || 'Unknown'),
+          image_url: item.scooter_model.image_url,
+          max_speed_kmh: item.scooter_model.max_speed_kmh,
+          range_km: item.scooter_model.range_km,
+          power_watts: item.scooter_model.power_watts,
+          voltage: item.scooter_model.voltage,
+          amperage: item.scooter_model.amperage,
+          youtube_video_id: item.scooter_model.youtube_video_id,
+          compatible_parts_count: item.scooter_model.compatible_parts_count,
+        } : null,
       })) as GarageScooter[];
     },
     enabled: !!user,
