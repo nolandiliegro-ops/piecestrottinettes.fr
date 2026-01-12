@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Euro, Trophy, Wrench, Calendar, Sparkles } from 'lucide-react';
+import { Euro, Trophy, Wrench, Calendar, Sparkles, CheckCircle, Zap, Coins } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -10,7 +10,8 @@ interface ExpertTrackingWidgetProps {
   garageItemId: string;
   scooterName: string;
   lastMaintenanceDate?: string | null;
-  userId?: string;
+  totalInvested: number;
+  machinePoints: number;
   className?: string;
 }
 
@@ -57,16 +58,17 @@ const ExpertTrackingWidget = ({
   garageItemId, 
   scooterName, 
   lastMaintenanceDate,
-  userId,
+  totalInvested,
+  machinePoints,
   className 
 }: ExpertTrackingWidgetProps) => {
   const [showConfetti, setShowConfetti] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
   const queryClient = useQueryClient();
   
-  // Mocked data for MVP
-  const totalInvested = 245;
-  const machinePoints = 125;
+  // Check if recently revised (within 30 days)
+  const isRecentlyRevised = lastMaintenanceDate && 
+    (new Date().getTime() - new Date(lastMaintenanceDate).getTime()) < 30 * 24 * 60 * 60 * 1000;
 
   const handleMarkMaintenance = async () => {
     if (isUpdating) return;
@@ -123,36 +125,52 @@ const ExpertTrackingWidget = ({
           </h3>
         </div>
 
-        {/* Stats Grid */}
+        {/* Stats Grid - Dynamic Values */}
         <div className="grid grid-cols-2 gap-2">
-          {/* Total Investi */}
-          <div className="bg-greige/40 rounded-lg p-2.5 text-center">
-            <Euro className="w-4 h-4 text-amber-600 mx-auto mb-0.5" />
-            <p className="text-lg font-bold text-[#1A1A1A]">{totalInvested}€</p>
-            <p className="text-[9px] text-carbon/50 uppercase tracking-wide">Total Investi</p>
-          </div>
+          {/* Total Investi - Dynamic */}
+          <motion.div 
+            key={`invested-${garageItemId}-${totalInvested}`}
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-2.5 border border-amber-100"
+          >
+            <div className="flex items-center gap-1.5 mb-1">
+              <Coins className="w-3 h-3 text-amber-600" />
+              <span className="text-[10px] text-amber-700 font-medium">Total Investi</span>
+            </div>
+            <div className="text-lg font-bold text-amber-900">{totalInvested}€</div>
+          </motion.div>
 
-          {/* Points Machine */}
-          <div className="bg-greige/40 rounded-lg p-2.5 text-center">
-            <Trophy className="w-4 h-4 text-mineral mx-auto mb-0.5" />
-            <p className="text-lg font-bold text-mineral">{machinePoints}</p>
-            <p className="text-[9px] text-carbon/50 uppercase tracking-wide">Points Cockpit</p>
-          </div>
+          {/* Machine Points - Dynamic */}
+          <motion.div 
+            key={`points-${garageItemId}-${machinePoints}`}
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.05 }}
+            className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-lg p-2.5 border border-emerald-100"
+          >
+            <div className="flex items-center gap-1.5 mb-1">
+              <Zap className="w-3 h-3 text-emerald-600" />
+              <span className="text-[10px] text-emerald-700 font-medium">Points Cockpit</span>
+            </div>
+            <div className="text-lg font-bold text-emerald-900">{machinePoints}</div>
+          </motion.div>
         </div>
 
-        {/* Last Maintenance Date */}
+        {/* Last Maintenance Date - Shown separately when not recently revised */}
         <AnimatePresence mode="wait">
-          {lastMaintenanceDate && (
+          {lastMaintenanceDate && !isRecentlyRevised && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="flex items-center justify-center gap-2 py-2 bg-emerald-50/60 rounded-lg"
+              className="flex items-center justify-center gap-2 py-2 bg-slate-50/60 rounded-lg"
             >
-              <Calendar className="w-3.5 h-3.5 text-emerald-600" />
+              <Calendar className="w-3.5 h-3.5 text-slate-500" />
               <div className="text-center">
                 <p className="text-[10px] text-carbon/50">Dernière révision</p>
-                <p className="text-xs font-semibold text-emerald-700">
+                <p className="text-xs font-semibold text-slate-600">
                   {formatDate(lastMaintenanceDate)}
                 </p>
               </div>
@@ -160,33 +178,55 @@ const ExpertTrackingWidget = ({
           )}
         </AnimatePresence>
 
-        {/* Mark as Revised Button */}
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={handleMarkMaintenance}
-          disabled={isUpdating}
-          className={cn(
-            "w-full py-2.5 px-4 rounded-xl font-semibold text-white text-sm",
-            "bg-[#93B5A1] hover:bg-[#7ea38f] transition-all duration-200",
-            "shadow-md hover:shadow-lg flex items-center justify-center gap-2",
-            "disabled:opacity-50 disabled:cursor-not-allowed"
-          )}
-        >
-          {isUpdating ? (
+        {/* Action Button - Intelligent State */}
+        <AnimatePresence mode="wait">
+          {isRecentlyRevised ? (
             <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+              key="revised-state"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="w-full py-2.5 rounded-xl bg-emerald-100 border border-emerald-300 
+                         text-emerald-700 text-center text-sm font-medium flex items-center justify-center gap-2"
             >
-              <Wrench className="w-4 h-4" />
+              <CheckCircle className="w-4 h-4" />
+              Révisée le {formatDate(lastMaintenanceDate!)}
             </motion.div>
           ) : (
-            <>
-              <Wrench className="w-4 h-4" />
-              Marquer comme Révisée
-            </>
+            <motion.button
+              key="action-button"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleMarkMaintenance}
+              disabled={isUpdating}
+              className={cn(
+                "w-full py-2.5 px-4 rounded-xl font-semibold text-white text-sm",
+                "bg-[#93B5A1] hover:bg-[#7ea38f] transition-all duration-200",
+                "shadow-md hover:shadow-lg flex items-center justify-center gap-2",
+                "disabled:opacity-50 disabled:cursor-not-allowed"
+              )}
+            >
+              {isUpdating ? (
+                <>
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                    className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full"
+                  />
+                  Mise à jour...
+                </>
+              ) : (
+                <>
+                  <Wrench className="w-4 h-4" />
+                  Marquer comme Révisée
+                </>
+              )}
+            </motion.button>
           )}
-        </motion.button>
+        </AnimatePresence>
       </div>
 
       {/* Confetti Effect */}

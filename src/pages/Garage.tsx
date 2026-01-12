@@ -37,6 +37,29 @@ const CompactPerformanceWidget = ({ points, displayName }: { points: number; dis
   );
 };
 
+// Calculate dynamic scooter stats based on specs
+const calculateScooterStats = (scooter: any) => {
+  if (!scooter?.scooter_model) {
+    return { totalInvested: 0, machinePoints: 0 };
+  }
+  
+  const model = scooter.scooter_model;
+  
+  // Points: Based on power + range + compatible parts
+  const powerPoints = Math.round((model.power_watts || 500) / 20);
+  const rangePoints = Math.round((model.range_km || 20) * 2);
+  const partsBonus = (model.compatible_parts_count || 0) * 3;
+  const machinePoints = powerPoints + rangePoints + partsBonus;
+  
+  // Investment: Estimated based on parts count and power tier
+  const avgPartPrice = 35;
+  const powerTier = model.power_watts ? (model.power_watts > 2000 ? 1.5 : model.power_watts > 1000 ? 1.2 : 1) : 1;
+  const estimatedParts = Math.round((model.compatible_parts_count || 5) * 0.3); // Assume 30% purchased
+  const totalInvested = Math.round(estimatedParts * avgPartPrice * powerTier);
+  
+  return { totalInvested, machinePoints };
+};
+
 const Garage = () => {
   const navigate = useNavigate();
   const { profile, loading: authLoading } = useAuth();
@@ -47,6 +70,9 @@ const Garage = () => {
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
   );
+
+  // Calculate dynamic stats for selected scooter
+  const scooterStats = calculateScooterStats(selectedScooter);
 
   // Set initial selected scooter when scooters load
   useEffect(() => {
@@ -135,12 +161,14 @@ const Garage = () => {
                 />
               )}
 
-              {/* Expert Tracking Widget - NEW */}
+              {/* Expert Tracking Widget - Dynamic Data */}
               {selectedScooter && (
                 <ExpertTrackingWidget
                   garageItemId={selectedScooter.id}
                   scooterName={scooterName}
                   lastMaintenanceDate={selectedScooter.last_maintenance_date}
+                  totalInvested={scooterStats.totalInvested}
+                  machinePoints={scooterStats.machinePoints}
                   className="shrink-0"
                 />
               )}
