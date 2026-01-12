@@ -32,9 +32,12 @@ export const scooterImages: Record<string, string> = {
 
 /**
  * Get the HD image for a scooter model by its slug.
- * Returns null if no matching image is found.
+ * Priority: database image_url > local mapping > null
  */
-export const getScooterImage = (slug: string | undefined | null): string | null => {
+export const getScooterImage = (slug: string | undefined | null, dbImageUrl?: string | null): string | null => {
+  // Priority 1: Use database image if available
+  if (dbImageUrl) return dbImageUrl;
+  // Priority 2: Use local mapping
   if (!slug) return null;
   return scooterImages[slug] || null;
 };
