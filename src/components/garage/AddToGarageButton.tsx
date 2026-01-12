@@ -17,15 +17,15 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 interface AddToGarageButtonProps {
-  scooterId: string;
+  scooterSlug: string;
   scooterName: string;
   className?: string;
 }
 
-const AddToGarageButton = ({ scooterId, scooterName, className }: AddToGarageButtonProps) => {
+const AddToGarageButton = ({ scooterSlug, scooterName, className }: AddToGarageButtonProps) => {
   const navigate = useNavigate();
   const { user } = useAuthContext();
-  const { inGarage, isOwned, garageItem } = useIsInGarage(scooterId);
+  const { inGarage, isOwned, garageItem } = useIsInGarage(scooterSlug);
   const addToGarage = useAddToGarage();
   const removeFromGarage = useRemoveFromGarage();
   const toggleOwned = useToggleOwned();
@@ -59,7 +59,7 @@ const AddToGarageButton = ({ scooterId, scooterName, className }: AddToGarageBut
 
   const handleDialogConfirm = (data: { nickname: string; currentKm: number }) => {
     addToGarage.mutate({ 
-      scooterId, 
+      scooterSlug, 
       isOwned: dialogMode === 'stable', 
       scooterName,
       nickname: data.nickname,

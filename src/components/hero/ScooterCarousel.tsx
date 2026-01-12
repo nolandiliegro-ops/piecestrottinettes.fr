@@ -136,7 +136,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                 <div className="relative w-full max-w-[620px] mx-auto h-[620px] flex items-center justify-center">
                   {/* Add to Garage Button */}
                   <AddToGarageButton
-                    scooterId={model.id}
+                    scooterSlug={model.id}
                     scooterName={`${model.brand} ${model.name}`}
                     className="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm border-mineral/20 hover:bg-white hover:border-mineral/40"
                   />

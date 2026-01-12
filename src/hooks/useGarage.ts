@@ -65,13 +65,14 @@ export const useUserGarage = () => {
   });
 };
 
-// Check if a scooter is in user's garage
-export const useIsInGarage = (scooterId: string) => {
+// Check if a scooter is in user's garage (by slug)
+export const useIsInGarage = (scooterSlug: string) => {
   const { data: garage } = useUserGarage();
   
   if (!garage) return { inGarage: false, isOwned: false, garageItem: null };
   
-  const garageItem = garage.find((item) => item.scooter_model_id === scooterId);
+  // Match by slug instead of UUID
+  const garageItem = garage.find((item) => item.scooter_model?.slug === scooterSlug);
   
   return {
     inGarage: !!garageItem,
@@ -80,20 +81,20 @@ export const useIsInGarage = (scooterId: string) => {
   };
 };
 
-// Add scooter to garage
+// Add scooter to garage (accepts slug, resolves to UUID)
 export const useAddToGarage = () => {
   const queryClient = useQueryClient();
   const { user, refreshProfile } = useAuthContext();
 
   return useMutation({
     mutationFn: async ({ 
-      scooterId, 
+      scooterSlug, 
       isOwned, 
       scooterName,
       nickname,
       currentKm
     }: { 
-      scooterId: string; 
+      scooterSlug: string; 
       isOwned: boolean; 
       scooterName: string;
       nickname?: string;
@@ -101,12 +102,22 @@ export const useAddToGarage = () => {
     }) => {
       if (!user) throw new Error("Not authenticated");
 
-      // Add to garage
+      // Resolve slug to UUID
+      const { data: scooterModel, error: lookupError } = await supabase
+        .from("scooter_models")
+        .select("id")
+        .eq("slug", scooterSlug)
+        .maybeSingle();
+
+      if (lookupError) throw lookupError;
+      if (!scooterModel) throw new Error(`Scooter model "${scooterSlug}" not found`);
+
+      // Add to garage with resolved UUID
       const { error: garageError } = await supabase
         .from("user_garage")
         .insert({
           user_id: user.id,
-          scooter_model_id: scooterId,
+          scooter_model_id: scooterModel.id,
           is_owned: isOwned,
           nickname: nickname || null,
           current_km: currentKm || null,
