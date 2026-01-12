@@ -1,18 +1,21 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@/components/ui/dialog';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle } from 'lucide-react';
+import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle, ArrowUpDown, Layers, ChevronUp, ChevronDown } from 'lucide-react';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
+import { cn } from '@/lib/utils';
 
 import type { Json } from '@/integrations/supabase/types';
 
@@ -35,12 +38,18 @@ interface Part {
   min_stock_alert: number | null;
   meta_title: string | null;
   meta_description: string | null;
+  created_at?: string;
 }
 
 interface Category {
   id: string;
   name: string;
+  parent_id: string | null;
 }
+
+type SortField = 'name' | 'price' | 'stock' | 'created_at';
+type SortDirection = 'asc' | 'desc';
+type GroupBy = 'none' | 'category' | 'stock_status';
 
 const slugify = (text: string) => {
   return text
@@ -63,6 +72,11 @@ const PartsManager = () => {
   const [deleting, setDeleting] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
+  
+  // Smart Toolbar state
+  const [sortField, setSortField] = useState<SortField>('name');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+  const [groupBy, setGroupBy] = useState<GroupBy>('none');
   
   // CSV Import state
   const [isImportOpen, setIsImportOpen] = useState(false);
@@ -115,7 +129,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('categories')
-        .select('id, name')
+        .select('id, name, parent_id')
         .order('name');
       if (error) throw error;
       setCategories(data || []);
@@ -128,7 +142,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -532,6 +546,120 @@ const PartsManager = () => {
 
   const lowStockCount = parts.filter(isLowStock).length;
 
+  // Sort logic
+  const sortedParts = useMemo(() => {
+    return [...filteredParts].sort((a, b) => {
+      let comparison = 0;
+      
+      switch (sortField) {
+        case 'name':
+          comparison = a.name.localeCompare(b.name, 'fr');
+          break;
+        case 'price':
+          comparison = (a.price ?? 0) - (b.price ?? 0);
+          break;
+        case 'stock':
+          comparison = (a.stock_quantity ?? 0) - (b.stock_quantity ?? 0);
+          break;
+        case 'created_at':
+          const dateA = a.created_at ? new Date(a.created_at).getTime() : 0;
+          const dateB = b.created_at ? new Date(b.created_at).getTime() : 0;
+          comparison = dateB - dateA;
+          break;
+      }
+      
+      return sortDirection === 'asc' ? comparison : -comparison;
+    });
+  }, [filteredParts, sortField, sortDirection]);
+
+  // Stock status helper
+  const getStockStatus = (part: Part): 'critical' | 'low' | 'normal' => {
+    const threshold = part.min_stock_alert ?? 5;
+    const stock = part.stock_quantity ?? 0;
+    if (stock === 0) return 'critical';
+    if (stock <= threshold) return 'low';
+    return 'normal';
+  };
+
+  // Get category display name with hierarchy
+  const getCategoryDisplayName = (part: Part): string => {
+    const cat = categories.find(c => c.id === part.category_id);
+    if (!cat) return 'Sans catégorie';
+    
+    const parentCat = cat.parent_id ? categories.find(c => c.id === cat.parent_id) : null;
+    return parentCat ? `${parentCat.name} › ${cat.name}` : cat.name;
+  };
+
+  // Grouping logic
+  const groupedParts = useMemo(() => {
+    if (groupBy === 'none') {
+      return { 'all': sortedParts };
+    }
+    
+    if (groupBy === 'category') {
+      const groups: Record<string, Part[]> = {};
+      
+      // First, organize by parent categories
+      const parentOrder: string[] = [];
+      
+      sortedParts.forEach(part => {
+        const groupName = getCategoryDisplayName(part);
+        
+        if (!groups[groupName]) {
+          groups[groupName] = [];
+          parentOrder.push(groupName);
+        }
+        groups[groupName].push(part);
+      });
+      
+      // Sort groups alphabetically
+      const sortedGroups: Record<string, Part[]> = {};
+      parentOrder.sort((a, b) => a.localeCompare(b, 'fr'));
+      parentOrder.forEach(key => {
+        sortedGroups[key] = groups[key];
+      });
+      
+      return sortedGroups;
+    }
+    
+    if (groupBy === 'stock_status') {
+      const critical = sortedParts.filter(p => getStockStatus(p) === 'critical');
+      const low = sortedParts.filter(p => getStockStatus(p) === 'low');
+      const normal = sortedParts.filter(p => getStockStatus(p) === 'normal');
+      
+      const result: Record<string, Part[]> = {};
+      if (critical.length > 0) result['🔴 Stock Critique (0)'] = critical;
+      if (low.length > 0) result['🟠 Stock Bas'] = low;
+      if (normal.length > 0) result['🟢 Stock Normal'] = normal;
+      
+      return result;
+    }
+    
+    return { 'all': sortedParts };
+  }, [sortedParts, groupBy, categories]);
+
+  // Sort label
+  const getSortLabel = () => {
+    const labels: Record<SortField, string> = {
+      name: 'Nom',
+      price: 'Prix',
+      stock: 'Stock',
+      created_at: 'Date'
+    };
+    const direction = sortDirection === 'asc' ? '↑' : '↓';
+    return `${labels[sortField]} ${direction}`;
+  };
+
+  // Grouping label
+  const getGroupLabel = () => {
+    const labels: Record<GroupBy, string> = {
+      none: 'Aucun',
+      category: 'Catégorie',
+      stock_status: 'Statut Stock'
+    };
+    return labels[groupBy];
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center py-12">
@@ -645,29 +773,155 @@ const PartsManager = () => {
 
   return (
     <div className="space-y-4">
-      {/* Toolbar */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto">
-          <div className="relative w-full sm:w-64">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input
-              placeholder="Rechercher par nom ou SKU..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9"
-            />
-          </div>
-          <Select value={categoryFilter} onValueChange={setCategoryFilter}>
-            <SelectTrigger className="w-full sm:w-48">
-              <SelectValue placeholder="Toutes catégories" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">Toutes catégories</SelectItem>
-              {categories.map((cat) => (
-                <SelectItem key={cat.id} value={cat.id}>{cat.name}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+      {/* Smart Toolbar */}
+      <div className="flex flex-wrap items-center gap-3 p-4 bg-muted/30 rounded-xl border border-border">
+        {/* Search */}
+        <div className="relative flex-1 min-w-[200px]">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+          <Input
+            placeholder="Recherche instantanée par nom ou SKU..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-9 pr-9 bg-background"
+          />
+          {searchQuery && (
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 p-0"
+              onClick={() => setSearchQuery('')}
+            >
+              <X className="w-4 h-4" />
+            </Button>
+          )}
+        </div>
+
+        {/* Category Filter */}
+        <Select value={categoryFilter} onValueChange={setCategoryFilter}>
+          <SelectTrigger className="w-[180px] bg-background">
+            <SelectValue placeholder="Toutes catégories" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">Toutes catégories</SelectItem>
+            {categories.map((cat) => {
+              const parent = cat.parent_id ? categories.find(c => c.id === cat.parent_id) : null;
+              return (
+                <SelectItem key={cat.id} value={cat.id}>
+                  {parent ? `${parent.name} › ${cat.name}` : cat.name}
+                </SelectItem>
+              );
+            })}
+          </SelectContent>
+        </Select>
+
+        {/* Sort Dropdown */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="gap-2 bg-background">
+              <ArrowUpDown className="w-4 h-4" />
+              <span className="hidden sm:inline">Trier:</span>
+              <span className="font-medium">{getSortLabel()}</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-48">
+            <DropdownMenuItem 
+              onClick={() => { setSortField('name'); setSortDirection('asc'); }}
+              className={cn(sortField === 'name' && sortDirection === 'asc' && 'bg-accent')}
+            >
+              <ChevronUp className="w-4 h-4 mr-2" /> Nom A → Z
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => { setSortField('name'); setSortDirection('desc'); }}
+              className={cn(sortField === 'name' && sortDirection === 'desc' && 'bg-accent')}
+            >
+              <ChevronDown className="w-4 h-4 mr-2" /> Nom Z → A
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem 
+              onClick={() => { setSortField('price'); setSortDirection('asc'); }}
+              className={cn(sortField === 'price' && sortDirection === 'asc' && 'bg-accent')}
+            >
+              <ChevronUp className="w-4 h-4 mr-2" /> Prix croissant
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => { setSortField('price'); setSortDirection('desc'); }}
+              className={cn(sortField === 'price' && sortDirection === 'desc' && 'bg-accent')}
+            >
+              <ChevronDown className="w-4 h-4 mr-2" /> Prix décroissant
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem 
+              onClick={() => { setSortField('stock'); setSortDirection('asc'); }}
+              className={cn(sortField === 'stock' && sortDirection === 'asc' && 'bg-accent')}
+            >
+              <ChevronUp className="w-4 h-4 mr-2" /> Stock croissant
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => { setSortField('stock'); setSortDirection('desc'); }}
+              className={cn(sortField === 'stock' && sortDirection === 'desc' && 'bg-accent')}
+            >
+              <ChevronDown className="w-4 h-4 mr-2" /> Stock décroissant
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem 
+              onClick={() => { setSortField('created_at'); setSortDirection('desc'); }}
+              className={cn(sortField === 'created_at' && sortDirection === 'desc' && 'bg-accent')}
+            >
+              <ChevronDown className="w-4 h-4 mr-2" /> Plus récents
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => { setSortField('created_at'); setSortDirection('asc'); }}
+              className={cn(sortField === 'created_at' && sortDirection === 'asc' && 'bg-accent')}
+            >
+              <ChevronUp className="w-4 h-4 mr-2" /> Plus anciens
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        {/* Group Dropdown */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className={cn("gap-2 bg-background", groupBy !== 'none' && "border-primary text-primary")}>
+              <Layers className="w-4 h-4" />
+              <span className="hidden sm:inline">Grouper:</span>
+              <span className="font-medium">{getGroupLabel()}</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem 
+              onClick={() => setGroupBy('none')}
+              className={cn(groupBy === 'none' && 'bg-accent')}
+            >
+              Aucun groupage
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem 
+              onClick={() => setGroupBy('category')}
+              className={cn(groupBy === 'category' && 'bg-accent')}
+            >
+              Par Catégorie
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => setGroupBy('stock_status')}
+              className={cn(groupBy === 'stock_status' && 'bg-accent')}
+            >
+              Par Statut de Stock
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      {/* Action Buttons Row */}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <span className="font-medium">{sortedParts.length} pièce(s)</span>
+          <span>• {parts.filter(p => !isPlaceholder(p.image_url)).length} avec image</span>
+          {lowStockCount > 0 && (
+            <span className="flex items-center gap-1 text-amber-600">
+              <AlertTriangle className="w-4 h-4" />
+              {lowStockCount} stock bas
+            </span>
+          )}
         </div>
         
         <div className="flex items-center gap-2">
@@ -783,100 +1037,132 @@ const PartsManager = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 text-sm text-muted-foreground">
-        <span>{filteredParts.length} pièce(s)</span>
-        <span>• {parts.filter(p => !isPlaceholder(p.image_url)).length} avec image</span>
-        {lowStockCount > 0 && (
-          <span className="flex items-center gap-1 text-amber-600">
-            <AlertTriangle className="w-4 h-4" />
-            {lowStockCount} stock bas
-          </span>
-        )}
-      </div>
-
-      {/* Table */}
-      <div className="rounded-lg border border-border overflow-hidden">
-        <Table>
-          <TableHeader>
-            <TableRow className="bg-foreground/5">
-              <TableHead className="w-16">Image</TableHead>
-              <TableHead>Nom</TableHead>
-              <TableHead className="w-24">SKU</TableHead>
-              <TableHead>Catégorie</TableHead>
-              <TableHead className="w-24">Prix</TableHead>
-              <TableHead className="w-20">Stock</TableHead>
-              <TableHead className="w-20">Difficulté</TableHead>
-              <TableHead className="w-32">Actions</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {filteredParts.map((part) => (
-              <TableRow key={part.id} className="hover:bg-primary/5">
-                <TableCell>
-                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center border border-border relative group">
-                    {part.image_url && !isPlaceholder(part.image_url) ? (
-                      <img src={part.image_url} alt={part.name} className="w-full h-full object-cover" />
-                    ) : (
-                      <ImageIcon className="w-4 h-4 text-muted-foreground" />
+      {/* Grouped Tables with Sticky Headers */}
+      <div className="space-y-6">
+        {Object.entries(groupedParts).map(([groupName, groupParts]) => (
+          groupParts.length > 0 && (
+            <div key={groupName} className="rounded-lg border border-border overflow-hidden">
+              {/* Sticky Group Header */}
+              {groupBy !== 'none' && (
+                <div className="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b py-3 px-4 flex items-center justify-between">
+                  <h3 className="font-semibold flex items-center gap-2 text-foreground">
+                    {groupBy === 'stock_status' && (
+                      <span className={cn(
+                        "w-3 h-3 rounded-full",
+                        groupName.includes('Critique') && "bg-red-500",
+                        groupName.includes('Bas') && "bg-amber-500",
+                        groupName.includes('Normal') && "bg-green-500"
+                      )} />
                     )}
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <Input
-                        type="file"
-                        accept="image/*"
-                        className="absolute inset-0 opacity-0 cursor-pointer"
-                        onChange={(e) => {
-                          const file = e.target.files?.[0];
-                          if (file) handleImageUpload(part.id, part.slug, file);
-                        }}
-                        disabled={uploading === part.id}
-                      />
-                      {uploading === part.id ? <Loader2 className="w-4 h-4 animate-spin text-white" /> : <Upload className="w-4 h-4 text-white" />}
-                    </div>
-                  </div>
-                </TableCell>
-                <TableCell className="font-medium">{part.name}</TableCell>
-                <TableCell className="text-muted-foreground text-xs font-mono">{part.sku || '-'}</TableCell>
-                <TableCell className="text-muted-foreground">{part.category?.name || '-'}</TableCell>
-                <TableCell>{part.price ? `${part.price}€` : '-'}</TableCell>
-                <TableCell>
-                  <span className={`flex items-center gap-1 ${isLowStock(part) ? 'text-amber-600' : 'text-primary'}`}>
-                    {isLowStock(part) && <AlertTriangle className="w-3 h-3" />}
-                    {part.stock_quantity ?? 0}
-                  </span>
-                </TableCell>
-                <TableCell>
-                  {part.difficulty_level ? (
-                    <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">{part.difficulty_level}/5</span>
-                  ) : '-'}
-                </TableCell>
-                <TableCell>
-                  <div className="flex items-center gap-1">
-                    <Button variant="ghost" size="icon" onClick={() => startEditing(part)} className="h-8 w-8">
-                      <Edit className="w-4 h-4" />
-                    </Button>
-                    <AlertDialog>
-                      <AlertDialogTrigger asChild>
-                        <Button variant="ghost" size="icon" className="h-8 w-8 text-destructive hover:text-destructive" disabled={deleting === part.id}>
-                          {deleting === part.id ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
-                        </Button>
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>Supprimer "{part.name}" ?</AlertDialogTitle>
-                          <AlertDialogDescription>Cette action supprimera la pièce, son image et toutes les compatibilités associées. Cette action est irréversible.</AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>Annuler</AlertDialogCancel>
-                          <AlertDialogAction onClick={() => deletePart(part)} className="bg-destructive hover:bg-destructive/90">Supprimer</AlertDialogAction>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
-                  </div>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+                    {groupName}
+                  </h3>
+                  <Badge variant="secondary" className="font-medium">
+                    {groupParts.length} article{groupParts.length > 1 ? 's' : ''}
+                  </Badge>
+                </div>
+              )}
+              
+              <Table>
+                <TableHeader>
+                  <TableRow className="bg-foreground/5">
+                    <TableHead className="w-16">Image</TableHead>
+                    <TableHead>Nom</TableHead>
+                    <TableHead className="w-24">SKU</TableHead>
+                    {groupBy !== 'category' && <TableHead>Catégorie</TableHead>}
+                    <TableHead className="w-24">Prix</TableHead>
+                    <TableHead className="w-20">Stock</TableHead>
+                    <TableHead className="w-20">Difficulté</TableHead>
+                    <TableHead className="w-32">Actions</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {groupParts.map((part) => (
+                    <TableRow key={part.id} className="hover:bg-primary/5">
+                      <TableCell>
+                        <div className="w-12 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center border border-border relative group">
+                          {part.image_url && !isPlaceholder(part.image_url) ? (
+                            <img src={part.image_url} alt={part.name} className="w-full h-full object-cover" />
+                          ) : (
+                            <ImageIcon className="w-4 h-4 text-muted-foreground" />
+                          )}
+                          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <Input
+                              type="file"
+                              accept="image/*"
+                              className="absolute inset-0 opacity-0 cursor-pointer"
+                              onChange={(e) => {
+                                const file = e.target.files?.[0];
+                                if (file) handleImageUpload(part.id, part.slug, file);
+                              }}
+                              disabled={uploading === part.id}
+                            />
+                            {uploading === part.id ? <Loader2 className="w-4 h-4 animate-spin text-white" /> : <Upload className="w-4 h-4 text-white" />}
+                          </div>
+                        </div>
+                      </TableCell>
+                      <TableCell className="font-medium">{part.name}</TableCell>
+                      <TableCell className="text-muted-foreground text-xs font-mono">{part.sku || '-'}</TableCell>
+                      {groupBy !== 'category' && (
+                        <TableCell className="text-muted-foreground">{part.category?.name || '-'}</TableCell>
+                      )}
+                      <TableCell>{part.price ? `${part.price}€` : '-'}</TableCell>
+                      <TableCell>
+                        <span className={cn(
+                          "flex items-center gap-1",
+                          getStockStatus(part) === 'critical' && "text-red-600",
+                          getStockStatus(part) === 'low' && "text-amber-600",
+                          getStockStatus(part) === 'normal' && "text-primary"
+                        )}>
+                          {getStockStatus(part) !== 'normal' && <AlertTriangle className="w-3 h-3" />}
+                          {part.stock_quantity ?? 0}
+                        </span>
+                      </TableCell>
+                      <TableCell>
+                        {part.difficulty_level ? (
+                          <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">{part.difficulty_level}/5</span>
+                        ) : '-'}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex items-center gap-1">
+                          <Button variant="ghost" size="icon" onClick={() => startEditing(part)} className="h-8 w-8">
+                            <Edit className="w-4 h-4" />
+                          </Button>
+                          <AlertDialog>
+                            <AlertDialogTrigger asChild>
+                              <Button variant="ghost" size="icon" className="h-8 w-8 text-destructive hover:text-destructive" disabled={deleting === part.id}>
+                                {deleting === part.id ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
+                              </Button>
+                            </AlertDialogTrigger>
+                            <AlertDialogContent>
+                              <AlertDialogHeader>
+                                <AlertDialogTitle>Supprimer "{part.name}" ?</AlertDialogTitle>
+                                <AlertDialogDescription>Cette action supprimera la pièce, son image et toutes les compatibilités associées. Cette action est irréversible.</AlertDialogDescription>
+                              </AlertDialogHeader>
+                              <AlertDialogFooter>
+                                <AlertDialogCancel>Annuler</AlertDialogCancel>
+                                <AlertDialogAction onClick={() => deletePart(part)} className="bg-destructive hover:bg-destructive/90">Supprimer</AlertDialogAction>
+                              </AlertDialogFooter>
+                            </AlertDialogContent>
+                          </AlertDialog>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          )
+        ))}
+        
+        {sortedParts.length === 0 && (
+          <div className="text-center py-12 text-muted-foreground">
+            <Package className="w-12 h-12 mx-auto mb-4 opacity-50" />
+            <p>Aucune pièce trouvée</p>
+            {searchQuery && (
+              <p className="text-sm mt-2">Essayez de modifier votre recherche</p>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Edit Dialog */}
