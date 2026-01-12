@@ -130,121 +130,105 @@ const MaintenanceLog = ({ selectedScooter, className }: MaintenanceLogProps) => 
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
       className={cn(
-        "bg-white/60 border border-mineral/20 rounded-2xl p-6",
+        "bg-white/60 border border-mineral/20 rounded-2xl p-4 flex flex-col",
         "hover:shadow-lg hover:border-mineral/30 transition-all duration-300",
         className
       )}
     >
-      {/* Header */}
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-12 h-12 rounded-xl bg-mineral/10 flex items-center justify-center">
-          <Wrench className="w-6 h-6 text-mineral" />
+      {/* Header - Compact */}
+      <div className="flex items-center gap-2 mb-3 shrink-0">
+        <div className="w-8 h-8 rounded-lg bg-mineral/10 flex items-center justify-center">
+          <Wrench className="w-4 h-4 text-mineral" />
         </div>
-        <div>
-          <h2 className="font-display text-xl text-carbon tracking-wide">
+        <div className="flex-1 min-w-0">
+          <h2 className="font-display text-sm text-carbon tracking-wide">
             MAINTENANCE
           </h2>
           <AnimatePresence mode="wait">
             <motion.p 
               key={modelName || 'default'}
-              initial={{ opacity: 0, y: -5 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 5 }}
-              transition={{ duration: 0.3 }}
-              className="text-xs text-carbon/50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="text-xs text-carbon/50 truncate"
             >
-              {modelName ? (
-                <>Spécifications pour <span className="text-mineral font-medium">{modelName}</span></>
-              ) : (
-                'Couples de serrage recommandés'
-              )}
+              {modelName ? modelName : 'Couples de serrage'}
             </motion.p>
           </AnimatePresence>
         </div>
       </div>
 
-      {/* Content */}
-      {!selectedScooter ? (
-        <div className="flex items-center justify-center py-8">
-          <div className="text-center">
-            <AlertCircle className="w-10 h-10 text-carbon/20 mx-auto mb-2" />
-            <p className="text-carbon/40 text-sm">
-              Ajoutez une trottinette pour voir les recommandations
+      {/* Content - Scrollable */}
+      <div className="flex-1 min-h-0 overflow-y-auto">
+        {!selectedScooter ? (
+          <div className="flex items-center justify-center py-6">
+            <div className="text-center">
+              <AlertCircle className="w-8 h-8 text-carbon/20 mx-auto mb-2" />
+              <p className="text-carbon/40 text-xs">
+                Ajoutez une trottinette
+              </p>
+            </div>
+          </div>
+        ) : (
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={slug}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="space-y-2"
+            >
+              {specs.map((item, index) => (
+                <motion.div
+                  key={`${slug}-${item.part}`}
+                  initial={{ opacity: 0, y: 5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2, delay: index * 0.05 }}
+                  className={cn(
+                    "group relative rounded-lg p-2.5 transition-all duration-300",
+                    "bg-greige/30 hover:bg-white/70",
+                    "border border-mineral/10 hover:border-mineral/30"
+                  )}
+                >
+                  {/* Compact Layout */}
+                  <div className="flex items-center gap-2">
+                    <span className="text-base">{item.icon || '⚙️'}</span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-medium text-carbon text-xs truncate">
+                        {item.part}
+                      </h3>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="font-display font-bold text-mineral text-sm">
+                        {item.torque}
+                      </span>
+                      <div
+                        className={cn(
+                          "w-1.5 h-1.5 rounded-full",
+                          item.priority === 'high' ? "bg-mineral" : 
+                          item.priority === 'medium' ? "bg-mineral/50" : "bg-mineral/30"
+                        )}
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        )}
+      </div>
+
+      {/* Footer Note - Compact */}
+      {selectedScooter && (
+        <div className="mt-2 pt-2 border-t border-mineral/10 shrink-0">
+          <div className="flex items-center gap-1">
+            <Info className="w-3 h-3 text-carbon/30 flex-shrink-0" />
+            <p className="text-[10px] text-carbon/40 truncate">
+              Vérifiez votre manuel
             </p>
           </div>
         </div>
-      ) : (
-        <AnimatePresence mode="wait">
-          <motion.div 
-            key={slug}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="space-y-3"
-          >
-            {specs.map((item, index) => (
-              <motion.div
-                key={`${slug}-${item.part}`}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.08 }}
-                className={cn(
-                  "group relative rounded-xl p-4 transition-all duration-300",
-                  "bg-greige/30 hover:bg-white/70",
-                  "border border-mineral/10 hover:border-mineral/30"
-                )}
-              >
-                {/* Priority Indicator */}
-                <div className="absolute top-3 right-3">
-                  <div
-                    className={cn(
-                      "w-2 h-2 rounded-full",
-                      item.priority === 'high' ? "bg-mineral" : 
-                      item.priority === 'medium' ? "bg-mineral/50" : "bg-mineral/30"
-                    )}
-                  />
-                </div>
-
-                {/* Part Name */}
-                <div className="mb-3">
-                  <h3 className="font-semibold text-carbon text-sm">
-                    {item.part}
-                  </h3>
-                </div>
-
-                {/* Torque Value */}
-                <div className="flex items-center gap-2">
-                  <span className="text-lg">{item.icon || '⚙️'}</span>
-                  <div className="flex-1">
-                    <div className="flex items-baseline gap-1">
-                      <span className="font-display font-bold text-mineral text-lg">
-                        {item.torque}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
-      )}
-
-      {/* Footer Note */}
-      {selectedScooter && (
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-6 pt-4 border-t border-mineral/10"
-        >
-          <div className="flex items-start gap-2">
-            <Info className="w-4 h-4 text-carbon/30 mt-0.5 flex-shrink-0" />
-            <p className="text-xs text-carbon/40">
-              Valeurs spécifiques au {modelName} • Vérifiez toujours votre manuel d'utilisation
-            </p>
-          </div>
-        </motion.div>
       )}
     </motion.div>
   );

@@ -218,6 +218,7 @@ export type Database = {
       }
       scooter_models: {
         Row: {
+          amperage: number | null
           brand_id: string
           compatible_parts_count: number | null
           created_at: string
@@ -230,8 +231,10 @@ export type Database = {
           slug: string
           tire_size: string | null
           voltage: number | null
+          youtube_video_id: string | null
         }
         Insert: {
+          amperage?: number | null
           brand_id: string
           compatible_parts_count?: number | null
           created_at?: string
@@ -244,8 +247,10 @@ export type Database = {
           slug: string
           tire_size?: string | null
           voltage?: number | null
+          youtube_video_id?: string | null
         }
         Update: {
+          amperage?: number | null
           brand_id?: string
           compatible_parts_count?: number | null
           created_at?: string
@@ -258,6 +263,7 @@ export type Database = {
           slug?: string
           tire_size?: string | null
           voltage?: number | null
+          youtube_video_id?: string | null
         }
         Relationships: [
           {
@@ -273,6 +279,7 @@ export type Database = {
         Row: {
           added_at: string | null
           current_km: number | null
+          custom_photo_url: string | null
           id: string
           is_owned: boolean | null
           next_maintenance_km: number | null
@@ -283,6 +290,7 @@ export type Database = {
         Insert: {
           added_at?: string | null
           current_km?: number | null
+          custom_photo_url?: string | null
           id?: string
           is_owned?: boolean | null
           next_maintenance_km?: number | null
@@ -293,6 +301,7 @@ export type Database = {
         Update: {
           added_at?: string | null
           current_km?: number | null
+          custom_photo_url?: string | null
           id?: string
           is_owned?: boolean | null
           next_maintenance_km?: number | null

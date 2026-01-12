@@ -14,12 +14,15 @@ interface GarageScooter {
     range_km?: number | null;
     power_watts?: number | null;
     voltage?: number | null;
+    amperage?: number | null;
+    youtube_video_id?: string | null;
     compatible_parts_count?: number | null;
   };
   nickname?: string | null;
   added_at: string;
   is_owned: boolean;
   current_km: number | null;
+  custom_photo_url?: string | null;
 }
 
 export const useGarageScooters = () => {
@@ -38,6 +41,7 @@ export const useGarageScooters = () => {
           added_at,
           is_owned,
           current_km,
+          custom_photo_url,
           scooter_model:scooter_models(
             id,
             name,
@@ -47,6 +51,8 @@ export const useGarageScooters = () => {
             range_km,
             power_watts,
             voltage,
+            amperage,
+            youtube_video_id,
             compatible_parts_count,
             brand:brands(name)
           )
@@ -63,6 +69,7 @@ export const useGarageScooters = () => {
         added_at: item.added_at,
         is_owned: item.is_owned,
         current_km: item.current_km,
+        custom_photo_url: item.custom_photo_url,
         scooter_model: {
           id: item.scooter_model?.id,
           name: item.scooter_model?.name,
@@ -73,6 +80,8 @@ export const useGarageScooters = () => {
           range_km: item.scooter_model?.range_km,
           power_watts: item.scooter_model?.power_watts,
           voltage: item.scooter_model?.voltage,
+          amperage: item.scooter_model?.amperage,
+          youtube_video_id: item.scooter_model?.youtube_video_id,
           compatible_parts_count: item.scooter_model?.compatible_parts_count,
         },
       })) as GarageScooter[];
