@@ -44,7 +44,10 @@ export type Database = {
           display_order: number | null
           icon: string | null
           id: string
+          meta_description: string | null
+          meta_title: string | null
           name: string
+          parent_id: string | null
           product_count: number | null
           slug: string
         }
@@ -53,7 +56,10 @@ export type Database = {
           display_order?: number | null
           icon?: string | null
           id?: string
+          meta_description?: string | null
+          meta_title?: string | null
           name: string
+          parent_id?: string | null
           product_count?: number | null
           slug: string
         }
@@ -62,11 +68,22 @@ export type Database = {
           display_order?: number | null
           icon?: string | null
           id?: string
+          meta_description?: string | null
+          meta_title?: string | null
           name?: string
+          parent_id?: string | null
           product_count?: number | null
           slug?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "categories_parent_id_fkey"
+            columns: ["parent_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       category_images: {
         Row: {
@@ -145,9 +162,13 @@ export type Database = {
           estimated_install_time_minutes: number | null
           id: string
           image_url: string | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
           name: string
           price: number | null
           required_tools: string[] | null
+          sku: string | null
           slug: string
           stock_quantity: number | null
           technical_metadata: Json | null
@@ -162,9 +183,13 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
           name: string
           price?: number | null
           required_tools?: string[] | null
+          sku?: string | null
           slug: string
           stock_quantity?: number | null
           technical_metadata?: Json | null
@@ -179,9 +204,13 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
           name?: string
           price?: number | null
           required_tools?: string[] | null
+          sku?: string | null
           slug?: string
           stock_quantity?: number | null
           technical_metadata?: Json | null

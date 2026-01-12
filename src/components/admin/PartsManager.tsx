@@ -9,9 +9,12 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
-import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle } from 'lucide-react';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
+
+import type { Json } from '@/integrations/supabase/types';
 
 interface Part {
   id: string;
@@ -27,6 +30,11 @@ interface Part {
   estimated_install_time_minutes: number | null;
   required_tools: string[] | null;
   youtube_video_id: string | null;
+  technical_metadata: Json | null;
+  sku: string | null;
+  min_stock_alert: number | null;
+  meta_title: string | null;
+  meta_description: string | null;
 }
 
 interface Category {
@@ -72,7 +80,12 @@ const PartsManager = () => {
     difficulty_level: '',
     estimated_install_time_minutes: '',
     required_tools: '',
-    youtube_video_id: ''
+    youtube_video_id: '',
+    sku: '',
+    min_stock_alert: '5',
+    meta_title: '',
+    meta_description: '',
+    technical_metadata: '{}'
   });
 
   const [editPart, setEditPart] = useState<Part | null>(null);
@@ -85,7 +98,12 @@ const PartsManager = () => {
     difficulty_level: '',
     estimated_install_time_minutes: '',
     required_tools: '',
-    youtube_video_id: ''
+    youtube_video_id: '',
+    sku: '',
+    min_stock_alert: '',
+    meta_title: '',
+    meta_description: '',
+    technical_metadata: '{}'
   });
 
   useEffect(() => {
@@ -110,7 +128,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -123,9 +141,24 @@ const PartsManager = () => {
     }
   };
 
+  const parseJsonSafe = (str: string): Json | null => {
+    try {
+      const parsed = JSON.parse(str);
+      return typeof parsed === 'object' && parsed !== null ? parsed as Json : null;
+    } catch {
+      return null;
+    }
+  };
+
   const createPart = async () => {
     if (!newPart.name.trim() || !newPart.category_id) {
       toast.error('Nom et catégorie requis');
+      return;
+    }
+
+    const technicalMetadata = parseJsonSafe(newPart.technical_metadata);
+    if (newPart.technical_metadata.trim() && newPart.technical_metadata !== '{}' && !technicalMetadata) {
+      toast.error('Format JSON invalide pour les specs techniques');
       return;
     }
 
@@ -144,20 +177,29 @@ const PartsManager = () => {
           difficulty_level: newPart.difficulty_level ? parseInt(newPart.difficulty_level) : null,
           estimated_install_time_minutes: newPart.estimated_install_time_minutes ? parseInt(newPart.estimated_install_time_minutes) : null,
           required_tools: newPart.required_tools ? newPart.required_tools.split(',').map(t => t.trim()).filter(Boolean) : null,
-          youtube_video_id: newPart.youtube_video_id.trim() || null
+          youtube_video_id: newPart.youtube_video_id.trim() || null,
+          sku: newPart.sku.trim() || null,
+          min_stock_alert: newPart.min_stock_alert ? parseInt(newPart.min_stock_alert) : 5,
+          meta_title: newPart.meta_title.trim() || null,
+          meta_description: newPart.meta_description.trim() || null,
+          technical_metadata: (technicalMetadata || {}) as Json
         })
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, category:categories(name)')
         .single();
 
       if (error) throw error;
 
       setParts(prev => [...prev, data]);
-      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '' });
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}' });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error creating part:', error);
-      toast.error('Erreur lors de la création');
+      if (error.code === '23505' && error.message?.includes('sku')) {
+        toast.error('Ce SKU existe déjà');
+      } else {
+        toast.error('Erreur lors de la création');
+      }
     } finally {
       setCreating(false);
     }
@@ -174,13 +216,24 @@ const PartsManager = () => {
       difficulty_level: part.difficulty_level?.toString() || '',
       estimated_install_time_minutes: part.estimated_install_time_minutes?.toString() || '',
       required_tools: part.required_tools?.join(', ') || '',
-      youtube_video_id: part.youtube_video_id || ''
+      youtube_video_id: part.youtube_video_id || '',
+      sku: part.sku || '',
+      min_stock_alert: part.min_stock_alert?.toString() || '5',
+      meta_title: part.meta_title || '',
+      meta_description: part.meta_description || '',
+      technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}'
     });
     setIsEditOpen(true);
   };
 
   const saveEdit = async () => {
     if (!editPart) return;
+
+    const technicalMetadata = parseJsonSafe(editValues.technical_metadata);
+    if (editValues.technical_metadata.trim() && editValues.technical_metadata !== '{}' && !technicalMetadata) {
+      toast.error('Format JSON invalide pour les specs techniques');
+      return;
+    }
 
     setSaving(true);
     try {
@@ -197,7 +250,12 @@ const PartsManager = () => {
           difficulty_level: editValues.difficulty_level ? parseInt(editValues.difficulty_level) : null,
           estimated_install_time_minutes: editValues.estimated_install_time_minutes ? parseInt(editValues.estimated_install_time_minutes) : null,
           required_tools: editValues.required_tools ? editValues.required_tools.split(',').map(t => t.trim()).filter(Boolean) : null,
-          youtube_video_id: editValues.youtube_video_id.trim() || null
+          youtube_video_id: editValues.youtube_video_id.trim() || null,
+          sku: editValues.sku.trim() || null,
+          min_stock_alert: editValues.min_stock_alert ? parseInt(editValues.min_stock_alert) : 5,
+          meta_title: editValues.meta_title.trim() || null,
+          meta_description: editValues.meta_description.trim() || null,
+          technical_metadata: (technicalMetadata || {}) as Json
         })
         .eq('id', editPart.id);
 
@@ -217,6 +275,11 @@ const PartsManager = () => {
               estimated_install_time_minutes: editValues.estimated_install_time_minutes ? parseInt(editValues.estimated_install_time_minutes) : null,
               required_tools: editValues.required_tools ? editValues.required_tools.split(',').map(t => t.trim()).filter(Boolean) : null,
               youtube_video_id: editValues.youtube_video_id.trim() || null,
+              sku: editValues.sku.trim() || null,
+              min_stock_alert: editValues.min_stock_alert ? parseInt(editValues.min_stock_alert) : 5,
+              meta_title: editValues.meta_title.trim() || null,
+              meta_description: editValues.meta_description.trim() || null,
+              technical_metadata: (technicalMetadata || {}) as Json,
               category: categories.find(c => c.id === editValues.category_id) ? { name: categories.find(c => c.id === editValues.category_id)!.name } : null
             }
           : p
@@ -225,9 +288,13 @@ const PartsManager = () => {
       setIsEditOpen(false);
       setEditPart(null);
       toast.success('Pièce modifiée avec succès');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error saving part:', error);
-      toast.error('Erreur lors de la sauvegarde');
+      if (error.code === '23505' && error.message?.includes('sku')) {
+        toast.error('Ce SKU existe déjà');
+      } else {
+        toast.error('Erreur lors de la sauvegarde');
+      }
     } finally {
       setSaving(false);
     }
@@ -236,10 +303,8 @@ const PartsManager = () => {
   const deletePart = async (part: Part) => {
     setDeleting(part.id);
     try {
-      // Delete compatibility entries first
       await supabase.from('part_compatibility').delete().eq('part_id', part.id);
 
-      // Delete image from storage if exists
       if (part.image_url && part.image_url.includes('part-images')) {
         const fileName = part.image_url.split('/').pop();
         if (fileName) {
@@ -247,7 +312,6 @@ const PartsManager = () => {
         }
       }
 
-      // Delete the part
       const { error } = await supabase.from('parts').delete().eq('id', part.id);
       if (error) throw error;
 
@@ -304,18 +368,22 @@ const PartsManager = () => {
   };
 
   const exportCSV = () => {
-    const headers = ['Nom', 'Slug', 'Catégorie', 'Prix', 'Stock', 'Difficulté', 'Temps Install', 'Outils', 'YouTube ID', 'Description'];
+    const headers = ['Nom', 'Slug', 'SKU', 'Catégorie', 'Prix', 'Stock', 'Alerte Stock', 'Difficulté', 'Temps Install', 'Outils', 'YouTube ID', 'Description', 'Meta Title', 'Meta Description'];
     const rows = parts.map(p => [
       p.name,
       p.slug,
+      p.sku || '',
       p.category?.name || '',
       p.price?.toString() || '',
       p.stock_quantity?.toString() || '',
+      p.min_stock_alert?.toString() || '5',
       p.difficulty_level?.toString() || '',
       p.estimated_install_time_minutes?.toString() || '',
       p.required_tools?.join('; ') || '',
       p.youtube_video_id || '',
-      p.description || ''
+      p.description || '',
+      p.meta_title || '',
+      p.meta_description || ''
     ]);
 
     const csv = [headers.join(','), ...rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(','))].join('\n');
@@ -344,11 +412,9 @@ const PartsManager = () => {
         const errors: string[] = [];
         let successCount = 0;
 
-        // Create a map of category names (lowercase) to IDs
         const categoryMap = new Map<string, string>();
         categories.forEach(cat => {
           categoryMap.set(cat.name.toLowerCase(), cat.id);
-          // Also add slug-like versions
           categoryMap.set(slugify(cat.name), cat.id);
         });
 
@@ -356,14 +422,12 @@ const PartsManager = () => {
           const row = rows[i];
           setImportProgress(Math.round(((i + 1) / rows.length) * 100));
 
-          // Get the name from various possible column names
           const name = row['Nom'] || row['nom'] || row['Name'] || row['name'] || '';
           if (!name.trim()) {
             errors.push(`Ligne ${i + 2}: Nom manquant`);
             continue;
           }
 
-          // Map category name to ID
           const categoryName = row['Catégorie'] || row['categorie'] || row['Category'] || row['category'] || '';
           let categoryId: string | null = null;
           
@@ -376,14 +440,17 @@ const PartsManager = () => {
             }
           }
 
-          // Parse other fields
           const priceStr = row['Prix'] || row['prix'] || row['Price'] || row['price'] || '';
           const stockStr = row['Stock'] || row['stock'] || row['Quantity'] || row['quantity'] || '';
+          const skuStr = row['SKU'] || row['sku'] || row['Sku'] || '';
+          const minStockStr = row['Alerte Stock'] || row['alerte_stock'] || row['Min Stock'] || row['min_stock'] || '';
           const difficultyStr = row['Difficulté'] || row['difficulte'] || row['Difficulty'] || row['difficulty'] || '';
           const installTimeStr = row['Temps Install'] || row['temps_install'] || row['Install Time'] || row['install_time'] || '';
           const toolsStr = row['Outils'] || row['outils'] || row['Tools'] || row['tools'] || '';
           const youtubeId = row['YouTube ID'] || row['youtube_id'] || row['Video ID'] || row['video_id'] || '';
           const description = row['Description'] || row['description'] || '';
+          const metaTitle = row['Meta Title'] || row['meta_title'] || '';
+          const metaDescription = row['Meta Description'] || row['meta_description'] || '';
 
           try {
             const slug = slugify(name);
@@ -395,16 +462,24 @@ const PartsManager = () => {
                 category_id: categoryId,
                 price: priceStr ? parseFloat(priceStr.replace(',', '.').replace('€', '').trim()) : null,
                 stock_quantity: stockStr ? parseInt(stockStr) : 0,
+                sku: skuStr.trim() || null,
+                min_stock_alert: minStockStr ? parseInt(minStockStr) : 5,
                 difficulty_level: difficultyStr ? parseInt(difficultyStr) : null,
                 estimated_install_time_minutes: installTimeStr ? parseInt(installTimeStr) : null,
                 required_tools: toolsStr ? toolsStr.split(/[;,]/).map(t => t.trim()).filter(Boolean) : null,
                 youtube_video_id: youtubeId.trim() || null,
-                description: description.trim() || null
+                description: description.trim() || null,
+                meta_title: metaTitle.trim() || null,
+                meta_description: metaDescription.trim() || null
               });
 
             if (error) {
               if (error.code === '23505') {
-                errors.push(`Ligne ${i + 2}: "${name}" existe déjà (slug: ${slug})`);
+                if (error.message?.includes('sku')) {
+                  errors.push(`Ligne ${i + 2}: SKU "${skuStr}" existe déjà`);
+                } else {
+                  errors.push(`Ligne ${i + 2}: "${name}" existe déjà (slug: ${slug})`);
+                }
               } else {
                 errors.push(`Ligne ${i + 2}: ${error.message}`);
               }
@@ -420,7 +495,7 @@ const PartsManager = () => {
         setImporting(false);
         
         if (successCount > 0) {
-          fetchParts(); // Refresh the list
+          fetchParts();
           toast.success(`${successCount} pièce(s) importée(s)`);
         }
         
@@ -434,7 +509,6 @@ const PartsManager = () => {
       }
     });
 
-    // Reset input
     if (csvInputRef.current) {
       csvInputRef.current.value = '';
     }
@@ -444,11 +518,19 @@ const PartsManager = () => {
     return !url || url.includes('placehold.co') || url.includes('placeholder');
   };
 
+  const isLowStock = (part: Part) => {
+    const threshold = part.min_stock_alert ?? 5;
+    return (part.stock_quantity ?? 0) <= threshold;
+  };
+
   const filteredParts = parts.filter(part => {
-    const matchesSearch = part.name.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = part.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          (part.sku?.toLowerCase().includes(searchQuery.toLowerCase()) ?? false);
     const matchesCategory = categoryFilter === 'all' || part.category_id === categoryFilter;
     return matchesSearch && matchesCategory;
   });
+
+  const lowStockCount = parts.filter(isLowStock).length;
 
   if (loading) {
     return (
@@ -458,6 +540,109 @@ const PartsManager = () => {
     );
   }
 
+  const renderFormFields = (values: typeof newPart, setValues: (v: typeof newPart) => void, isEdit = false) => (
+    <Tabs defaultValue="general" className="w-full">
+      <TabsList className="grid w-full grid-cols-4 mb-4">
+        <TabsTrigger value="general" className="text-xs gap-1"><Package className="w-3 h-3" /> Général</TabsTrigger>
+        <TabsTrigger value="install" className="text-xs gap-1"><Wrench className="w-3 h-3" /> Installation</TabsTrigger>
+        <TabsTrigger value="specs" className="text-xs gap-1"><Code className="w-3 h-3" /> Specs</TabsTrigger>
+        <TabsTrigger value="seo" className="text-xs gap-1"><Globe className="w-3 h-3" /> SEO</TabsTrigger>
+      </TabsList>
+
+      <TabsContent value="general" className="space-y-4">
+        <div className="space-y-2">
+          <Label>Nom *</Label>
+          <Input value={values.name} onChange={(e) => setValues({ ...values, name: e.target.value })} placeholder="Ex: Pneu 10 pouces" />
+          {values.name && <p className="text-xs text-muted-foreground">Slug: {slugify(values.name)}</p>}
+        </div>
+        <div className="space-y-2">
+          <Label>Catégorie *</Label>
+          <Select value={values.category_id} onValueChange={(v) => setValues({ ...values, category_id: v })}>
+            <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
+            <SelectContent>
+              {categories.map((cat) => (
+                <SelectItem key={cat.id} value={cat.id}>{cat.name}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label>SKU</Label>
+            <Input value={values.sku} onChange={(e) => setValues({ ...values, sku: e.target.value })} placeholder="REF-001" />
+          </div>
+          <div className="space-y-2">
+            <Label>Prix (€)</Label>
+            <Input type="number" value={values.price} onChange={(e) => setValues({ ...values, price: e.target.value })} placeholder="0.00" />
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label>Stock</Label>
+            <Input type="number" value={values.stock} onChange={(e) => setValues({ ...values, stock: e.target.value })} placeholder="0" />
+          </div>
+          <div className="space-y-2">
+            <Label>Alerte stock min</Label>
+            <Input type="number" value={values.min_stock_alert} onChange={(e) => setValues({ ...values, min_stock_alert: e.target.value })} placeholder="5" />
+          </div>
+        </div>
+        <div className="space-y-2">
+          <Label>Description</Label>
+          <Textarea value={values.description} onChange={(e) => setValues({ ...values, description: e.target.value })} placeholder="Description..." rows={3} />
+        </div>
+      </TabsContent>
+
+      <TabsContent value="install" className="space-y-4">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label>Difficulté (1-5)</Label>
+            <Input type="number" min="1" max="5" value={values.difficulty_level} onChange={(e) => setValues({ ...values, difficulty_level: e.target.value })} placeholder="1-5" />
+          </div>
+          <div className="space-y-2">
+            <Label>Temps install (min)</Label>
+            <Input type="number" value={values.estimated_install_time_minutes} onChange={(e) => setValues({ ...values, estimated_install_time_minutes: e.target.value })} placeholder="30" />
+          </div>
+        </div>
+        <div className="space-y-2">
+          <Label>Outils requis</Label>
+          <Input value={values.required_tools} onChange={(e) => setValues({ ...values, required_tools: e.target.value })} placeholder="Clé Allen, Tournevis..." />
+          <p className="text-xs text-muted-foreground">Séparer par des virgules</p>
+        </div>
+        <div className="space-y-2">
+          <Label>YouTube Video ID</Label>
+          <Input value={values.youtube_video_id} onChange={(e) => setValues({ ...values, youtube_video_id: e.target.value })} placeholder="dQw4w9WgXcQ" />
+        </div>
+      </TabsContent>
+
+      <TabsContent value="specs" className="space-y-4">
+        <div className="space-y-2">
+          <Label>Spécifications techniques (JSON)</Label>
+          <Textarea 
+            value={values.technical_metadata} 
+            onChange={(e) => setValues({ ...values, technical_metadata: e.target.value })} 
+            placeholder='{"poids": "250g", "dimensions": "10x5cm"}'
+            rows={8}
+            className="font-mono text-sm"
+          />
+          <p className="text-xs text-muted-foreground">Format JSON. Ex: {`{"poids": "250g", "couleur": "noir"}`}</p>
+        </div>
+      </TabsContent>
+
+      <TabsContent value="seo" className="space-y-4">
+        <div className="space-y-2">
+          <Label>Meta Title</Label>
+          <Input value={values.meta_title} onChange={(e) => setValues({ ...values, meta_title: e.target.value })} placeholder="Titre SEO" maxLength={60} />
+          <p className="text-xs text-muted-foreground">{values.meta_title.length}/60 caractères</p>
+        </div>
+        <div className="space-y-2">
+          <Label>Meta Description</Label>
+          <Textarea value={values.meta_description} onChange={(e) => setValues({ ...values, meta_description: e.target.value })} placeholder="Description pour les moteurs de recherche" rows={3} maxLength={160} />
+          <p className="text-xs text-muted-foreground">{values.meta_description.length}/160 caractères</p>
+        </div>
+      </TabsContent>
+    </Tabs>
+  );
+
   return (
     <div className="space-y-4">
       {/* Toolbar */}
@@ -466,7 +651,7 @@ const PartsManager = () => {
           <div className="relative w-full sm:w-64">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input
-              placeholder="Rechercher..."
+              placeholder="Rechercher par nom ou SKU..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-9"
@@ -507,11 +692,10 @@ const PartsManager = () => {
                 <div className="space-y-2">
                   <Label>Format attendu (colonnes)</Label>
                   <p className="text-xs text-muted-foreground">
-                    Nom*, Catégorie, Prix, Stock, Difficulté, Temps Install, Outils, YouTube ID, Description
+                    Nom*, SKU, Catégorie, Prix, Stock, Alerte Stock, Difficulté, Temps Install, Outils, YouTube ID, Description, Meta Title, Meta Description
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    * = obligatoire. Les catégories sont mappées par nom (ex: "Pneus", "Freins").
-                    Les slugs sont générés automatiquement.
+                    * = obligatoire. Les catégories sont mappées par nom. Les slugs sont générés automatiquement.
                   </p>
                 </div>
                 
@@ -519,18 +703,9 @@ const PartsManager = () => {
                   <div className="flex flex-col items-center justify-center border-2 border-dashed border-border rounded-lg p-8 hover:border-primary/50 transition-colors">
                     <FileUp className="w-10 h-10 text-muted-foreground mb-4" />
                     <p className="text-sm text-muted-foreground mb-4">Sélectionnez un fichier CSV</p>
-                    <input
-                      ref={csvInputRef}
-                      type="file"
-                      accept=".csv,text/csv"
-                      onChange={handleCSVImport}
-                      className="hidden"
-                      id="csv-import-input"
-                    />
+                    <input ref={csvInputRef} type="file" accept=".csv,text/csv" onChange={handleCSVImport} className="hidden" id="csv-import-input" />
                     <Button asChild variant="outline">
-                      <label htmlFor="csv-import-input" className="cursor-pointer">
-                        Parcourir...
-                      </label>
+                      <label htmlFor="csv-import-input" className="cursor-pointer">Parcourir...</label>
                     </Button>
                   </div>
                 )}
@@ -570,14 +745,7 @@ const PartsManager = () => {
                       </div>
                     )}
                     
-                    <Button 
-                      variant="outline" 
-                      className="w-full" 
-                      onClick={() => {
-                        setImportResults(null);
-                        setImportProgress(0);
-                      }}
-                    >
+                    <Button variant="outline" className="w-full" onClick={() => { setImportResults(null); setImportProgress(0); }}>
                       Importer un autre fichier
                     </Button>
                   </div>
@@ -597,66 +765,12 @@ const PartsManager = () => {
                 Nouvelle Pièce
               </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
+            <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
               <DialogHeader>
                 <DialogTitle>Créer une nouvelle pièce</DialogTitle>
               </DialogHeader>
-              <div className="space-y-4 py-4">
-                <div className="space-y-2">
-                  <Label>Nom *</Label>
-                  <Input
-                    value={newPart.name}
-                    onChange={(e) => setNewPart(prev => ({ ...prev, name: e.target.value }))}
-                    placeholder="Ex: Pneu 10 pouces"
-                  />
-                  {newPart.name && (
-                    <p className="text-xs text-muted-foreground">Slug: {slugify(newPart.name)}</p>
-                  )}
-                </div>
-                <div className="space-y-2">
-                  <Label>Catégorie *</Label>
-                  <Select value={newPart.category_id} onValueChange={(value) => setNewPart(prev => ({ ...prev, category_id: value }))}>
-                    <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
-                    <SelectContent>
-                      {categories.map((cat) => (
-                        <SelectItem key={cat.id} value={cat.id}>{cat.name}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label>Prix (€)</Label>
-                    <Input type="number" value={newPart.price} onChange={(e) => setNewPart(prev => ({ ...prev, price: e.target.value }))} placeholder="0.00" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Stock</Label>
-                    <Input type="number" value={newPart.stock} onChange={(e) => setNewPart(prev => ({ ...prev, stock: e.target.value }))} placeholder="0" />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label>Difficulté (1-5)</Label>
-                    <Input type="number" min="1" max="5" value={newPart.difficulty_level} onChange={(e) => setNewPart(prev => ({ ...prev, difficulty_level: e.target.value }))} placeholder="1-5" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Temps install (min)</Label>
-                    <Input type="number" value={newPart.estimated_install_time_minutes} onChange={(e) => setNewPart(prev => ({ ...prev, estimated_install_time_minutes: e.target.value }))} placeholder="30" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label>Outils requis</Label>
-                  <Input value={newPart.required_tools} onChange={(e) => setNewPart(prev => ({ ...prev, required_tools: e.target.value }))} placeholder="Clé Allen, Tournevis..." />
-                  <p className="text-xs text-muted-foreground">Séparer par des virgules</p>
-                </div>
-                <div className="space-y-2">
-                  <Label>YouTube Video ID</Label>
-                  <Input value={newPart.youtube_video_id} onChange={(e) => setNewPart(prev => ({ ...prev, youtube_video_id: e.target.value }))} placeholder="dQw4w9WgXcQ" />
-                </div>
-                <div className="space-y-2">
-                  <Label>Description</Label>
-                  <Textarea value={newPart.description} onChange={(e) => setNewPart(prev => ({ ...prev, description: e.target.value }))} placeholder="Description..." rows={3} />
-                </div>
+              <div className="py-4">
+                {renderFormFields(newPart, setNewPart)}
               </div>
               <DialogFooter>
                 <Button onClick={createPart} disabled={creating || !newPart.name.trim() || !newPart.category_id} className="w-full bg-primary hover:bg-primary/90">
@@ -669,9 +783,16 @@ const PartsManager = () => {
         </div>
       </div>
 
-      <p className="text-sm text-muted-foreground">
-        {filteredParts.length} pièce(s) • {parts.filter(p => !isPlaceholder(p.image_url)).length} avec image
-      </p>
+      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+        <span>{filteredParts.length} pièce(s)</span>
+        <span>• {parts.filter(p => !isPlaceholder(p.image_url)).length} avec image</span>
+        {lowStockCount > 0 && (
+          <span className="flex items-center gap-1 text-amber-600">
+            <AlertTriangle className="w-4 h-4" />
+            {lowStockCount} stock bas
+          </span>
+        )}
+      </div>
 
       {/* Table */}
       <div className="rounded-lg border border-border overflow-hidden">
@@ -680,11 +801,12 @@ const PartsManager = () => {
             <TableRow className="bg-foreground/5">
               <TableHead className="w-16">Image</TableHead>
               <TableHead>Nom</TableHead>
+              <TableHead className="w-24">SKU</TableHead>
               <TableHead>Catégorie</TableHead>
               <TableHead className="w-24">Prix</TableHead>
               <TableHead className="w-20">Stock</TableHead>
               <TableHead className="w-20">Difficulté</TableHead>
-              <TableHead className="w-40">Actions</TableHead>
+              <TableHead className="w-32">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -708,27 +830,23 @@ const PartsManager = () => {
                         }}
                         disabled={uploading === part.id}
                       />
-                      {uploading === part.id ? (
-                        <Loader2 className="w-4 h-4 animate-spin text-white" />
-                      ) : (
-                        <Upload className="w-4 h-4 text-white" />
-                      )}
+                      {uploading === part.id ? <Loader2 className="w-4 h-4 animate-spin text-white" /> : <Upload className="w-4 h-4 text-white" />}
                     </div>
                   </div>
                 </TableCell>
                 <TableCell className="font-medium">{part.name}</TableCell>
+                <TableCell className="text-muted-foreground text-xs font-mono">{part.sku || '-'}</TableCell>
                 <TableCell className="text-muted-foreground">{part.category?.name || '-'}</TableCell>
                 <TableCell>{part.price ? `${part.price}€` : '-'}</TableCell>
                 <TableCell>
-                  <span className={part.stock_quantity && part.stock_quantity > 0 ? 'text-primary' : 'text-destructive'}>
+                  <span className={`flex items-center gap-1 ${isLowStock(part) ? 'text-amber-600' : 'text-primary'}`}>
+                    {isLowStock(part) && <AlertTriangle className="w-3 h-3" />}
                     {part.stock_quantity ?? 0}
                   </span>
                 </TableCell>
                 <TableCell>
                   {part.difficulty_level ? (
-                    <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">
-                      {part.difficulty_level}/5
-                    </span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">{part.difficulty_level}/5</span>
                   ) : '-'}
                 </TableCell>
                 <TableCell>
@@ -745,15 +863,11 @@ const PartsManager = () => {
                       <AlertDialogContent>
                         <AlertDialogHeader>
                           <AlertDialogTitle>Supprimer "{part.name}" ?</AlertDialogTitle>
-                          <AlertDialogDescription>
-                            Cette action supprimera la pièce, son image et toutes les compatibilités associées. Cette action est irréversible.
-                          </AlertDialogDescription>
+                          <AlertDialogDescription>Cette action supprimera la pièce, son image et toutes les compatibilités associées. Cette action est irréversible.</AlertDialogDescription>
                         </AlertDialogHeader>
                         <AlertDialogFooter>
                           <AlertDialogCancel>Annuler</AlertDialogCancel>
-                          <AlertDialogAction onClick={() => deletePart(part)} className="bg-destructive hover:bg-destructive/90">
-                            Supprimer
-                          </AlertDialogAction>
+                          <AlertDialogAction onClick={() => deletePart(part)} className="bg-destructive hover:bg-destructive/90">Supprimer</AlertDialogAction>
                         </AlertDialogFooter>
                       </AlertDialogContent>
                     </AlertDialog>
@@ -767,59 +881,12 @@ const PartsManager = () => {
 
       {/* Edit Dialog */}
       <Dialog open={isEditOpen} onOpenChange={setIsEditOpen}>
-        <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
+        <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Modifier la pièce</DialogTitle>
           </DialogHeader>
-          <div className="space-y-4 py-4">
-            <div className="space-y-2">
-              <Label>Nom *</Label>
-              <Input value={editValues.name} onChange={(e) => setEditValues(prev => ({ ...prev, name: e.target.value }))} />
-              {editValues.name && <p className="text-xs text-muted-foreground">Slug: {slugify(editValues.name)}</p>}
-            </div>
-            <div className="space-y-2">
-              <Label>Catégorie</Label>
-              <Select value={editValues.category_id} onValueChange={(value) => setEditValues(prev => ({ ...prev, category_id: value }))}>
-                <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
-                <SelectContent>
-                  {categories.map((cat) => (
-                    <SelectItem key={cat.id} value={cat.id}>{cat.name}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label>Prix (€)</Label>
-                <Input type="number" value={editValues.price} onChange={(e) => setEditValues(prev => ({ ...prev, price: e.target.value }))} />
-              </div>
-              <div className="space-y-2">
-                <Label>Stock</Label>
-                <Input type="number" value={editValues.stock} onChange={(e) => setEditValues(prev => ({ ...prev, stock: e.target.value }))} />
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label>Difficulté (1-5)</Label>
-                <Input type="number" min="1" max="5" value={editValues.difficulty_level} onChange={(e) => setEditValues(prev => ({ ...prev, difficulty_level: e.target.value }))} />
-              </div>
-              <div className="space-y-2">
-                <Label>Temps install (min)</Label>
-                <Input type="number" value={editValues.estimated_install_time_minutes} onChange={(e) => setEditValues(prev => ({ ...prev, estimated_install_time_minutes: e.target.value }))} />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label>Outils requis</Label>
-              <Input value={editValues.required_tools} onChange={(e) => setEditValues(prev => ({ ...prev, required_tools: e.target.value }))} placeholder="Clé Allen, Tournevis..." />
-            </div>
-            <div className="space-y-2">
-              <Label>YouTube Video ID</Label>
-              <Input value={editValues.youtube_video_id} onChange={(e) => setEditValues(prev => ({ ...prev, youtube_video_id: e.target.value }))} />
-            </div>
-            <div className="space-y-2">
-              <Label>Description</Label>
-              <Textarea value={editValues.description} onChange={(e) => setEditValues(prev => ({ ...prev, description: e.target.value }))} rows={3} />
-            </div>
+          <div className="py-4">
+            {renderFormFields(editValues, setEditValues, true)}
           </div>
           <DialogFooter>
             <Button onClick={saveEdit} disabled={saving || !editValues.name.trim()} className="w-full bg-primary hover:bg-primary/90">
