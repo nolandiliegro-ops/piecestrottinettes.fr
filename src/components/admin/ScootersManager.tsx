@@ -3,7 +3,10 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Loader2, Upload, Check, X, Zap, Battery, Gauge, Save } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Label } from '@/components/ui/label';
+import { Loader2, Upload, Check, X, Zap, Battery, Gauge, Save, Plus } from 'lucide-react';
 import { toast } from 'sonner';
 import { getScooterImage } from '@/lib/scooterImageMapping';
 
@@ -18,10 +21,26 @@ interface Scooter {
   max_speed_kmh: number | null;
   range_km: number | null;
   brand: { name: string } | null;
+  brand_id?: string;
 }
+
+interface Brand {
+  id: string;
+  name: string;
+}
+
+const slugify = (text: string) => {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+};
 
 const ScootersManager = () => {
   const [scooters, setScooters] = useState<Scooter[]>([]);
+  const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState<string | null>(null);
   const [editingScooter, setEditingScooter] = useState<string | null>(null);
@@ -32,16 +51,41 @@ const ScootersManager = () => {
     max_speed_kmh: string;
     range_km: string;
   }>({ power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '' });
+  const [isCreateOpen, setIsCreateOpen] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [newScooter, setNewScooter] = useState({
+    name: '',
+    brand_id: '',
+    power_watts: '',
+    voltage: '',
+    amperage: '',
+    max_speed_kmh: '',
+    range_km: ''
+  });
 
   useEffect(() => {
     fetchScooters();
+    fetchBrands();
   }, []);
+
+  const fetchBrands = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('brands')
+        .select('id, name')
+        .order('name');
+      if (error) throw error;
+      setBrands(data || []);
+    } catch (error) {
+      console.error('Error fetching brands:', error);
+    }
+  };
 
   const fetchScooters = async () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, brand_id, brand:brands(name)')
         .order('name');
 
       if (error) throw error;
@@ -51,6 +95,44 @@ const ScootersManager = () => {
       toast.error('Erreur lors du chargement des trottinettes');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const createScooter = async () => {
+    if (!newScooter.name.trim() || !newScooter.brand_id) {
+      toast.error('Nom et marque requis');
+      return;
+    }
+
+    setCreating(true);
+    try {
+      const slug = slugify(newScooter.name);
+      const { data, error } = await supabase
+        .from('scooter_models')
+        .insert({
+          name: newScooter.name.trim(),
+          slug,
+          brand_id: newScooter.brand_id,
+          power_watts: newScooter.power_watts ? parseInt(newScooter.power_watts) : null,
+          voltage: newScooter.voltage ? parseInt(newScooter.voltage) : null,
+          amperage: newScooter.amperage ? parseInt(newScooter.amperage) : null,
+          max_speed_kmh: newScooter.max_speed_kmh ? parseInt(newScooter.max_speed_kmh) : null,
+          range_km: newScooter.range_km ? parseInt(newScooter.range_km) : null
+        })
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, brand_id, brand:brands(name)')
+        .single();
+
+      if (error) throw error;
+
+      setScooters(prev => [...prev, data]);
+      setNewScooter({ name: '', brand_id: '', power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '' });
+      setIsCreateOpen(false);
+      toast.success('Trottinette créée avec succès');
+    } catch (error) {
+      console.error('Error creating scooter:', error);
+      toast.error('Erreur lors de la création');
+    } finally {
+      setCreating(false);
     }
   };
 
@@ -163,6 +245,119 @@ const ScootersManager = () => {
         <p className="text-sm text-muted-foreground">
           {scooters.filter(s => s.image_url).length}/{scooters.length} trottinettes avec image DB
         </p>
+        <Dialog open={isCreateOpen} onOpenChange={setIsCreateOpen}>
+          <DialogTrigger asChild>
+            <Button className="bg-primary hover:bg-primary/90">
+              <Plus className="w-4 h-4 mr-2" />
+              Nouvelle Trottinette
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-lg">
+            <DialogHeader>
+              <DialogTitle>Créer une nouvelle trottinette</DialogTitle>
+            </DialogHeader>
+            <div className="space-y-4 py-4">
+              <div className="space-y-2">
+                <Label htmlFor="name">Nom du modèle *</Label>
+                <Input
+                  id="name"
+                  value={newScooter.name}
+                  onChange={(e) => setNewScooter(prev => ({ ...prev, name: e.target.value }))}
+                  placeholder="Ex: Dualtron Thunder 3"
+                />
+                {newScooter.name && (
+                  <p className="text-xs text-muted-foreground">
+                    Slug: {slugify(newScooter.name)}
+                  </p>
+                )}
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="brand">Marque *</Label>
+                <Select
+                  value={newScooter.brand_id}
+                  onValueChange={(value) => setNewScooter(prev => ({ ...prev, brand_id: value }))}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Sélectionner une marque" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {brands.map((brand) => (
+                      <SelectItem key={brand.id} value={brand.id}>
+                        {brand.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="power">Puissance (W)</Label>
+                  <Input
+                    id="power"
+                    type="number"
+                    value={newScooter.power_watts}
+                    onChange={(e) => setNewScooter(prev => ({ ...prev, power_watts: e.target.value }))}
+                    placeholder="5400"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="voltage">Voltage (V)</Label>
+                  <Input
+                    id="voltage"
+                    type="number"
+                    value={newScooter.voltage}
+                    onChange={(e) => setNewScooter(prev => ({ ...prev, voltage: e.target.value }))}
+                    placeholder="60"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="amperage">Ampérage (Ah)</Label>
+                  <Input
+                    id="amperage"
+                    type="number"
+                    value={newScooter.amperage}
+                    onChange={(e) => setNewScooter(prev => ({ ...prev, amperage: e.target.value }))}
+                    placeholder="35"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="speed">Vitesse (km/h)</Label>
+                  <Input
+                    id="speed"
+                    type="number"
+                    value={newScooter.max_speed_kmh}
+                    onChange={(e) => setNewScooter(prev => ({ ...prev, max_speed_kmh: e.target.value }))}
+                    placeholder="85"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="range">Autonomie (km)</Label>
+                  <Input
+                    id="range"
+                    type="number"
+                    value={newScooter.range_km}
+                    onChange={(e) => setNewScooter(prev => ({ ...prev, range_km: e.target.value }))}
+                    placeholder="120"
+                  />
+                </div>
+              </div>
+              <Button
+                onClick={createScooter}
+                disabled={creating || !newScooter.name.trim() || !newScooter.brand_id}
+                className="w-full bg-primary hover:bg-primary/90"
+              >
+                {creating ? (
+                  <Loader2 className="w-4 h-4 animate-spin mr-2" />
+                ) : (
+                  <Plus className="w-4 h-4 mr-2" />
+                )}
+                Créer la trottinette
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <div className="rounded-lg border border-border overflow-hidden">

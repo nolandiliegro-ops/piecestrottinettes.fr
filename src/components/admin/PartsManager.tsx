@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Loader2, Upload, Check, X, Image as ImageIcon, Save } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Label } from '@/components/ui/label';
+import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface Part {
@@ -14,24 +18,63 @@ interface Part {
   stock_quantity: number | null;
   image_url: string | null;
   category: { name: string } | null;
+  category_id?: string;
 }
+
+interface Category {
+  id: string;
+  name: string;
+}
+
+const slugify = (text: string) => {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+};
 
 const PartsManager = () => {
   const [parts, setParts] = useState<Part[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState<string | null>(null);
   const [editingPart, setEditingPart] = useState<string | null>(null);
   const [editValues, setEditValues] = useState<{ price: string; stock: string }>({ price: '', stock: '' });
+  const [isCreateOpen, setIsCreateOpen] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [newPart, setNewPart] = useState({
+    name: '',
+    category_id: '',
+    price: '',
+    stock: '',
+    description: ''
+  });
 
   useEffect(() => {
     fetchParts();
+    fetchCategories();
   }, []);
+
+  const fetchCategories = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('categories')
+        .select('id, name')
+        .order('name');
+      if (error) throw error;
+      setCategories(data || []);
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+    }
+  };
 
   const fetchParts = async () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, stock_quantity, image_url, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -41,6 +84,42 @@ const PartsManager = () => {
       toast.error('Erreur lors du chargement des pièces');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const createPart = async () => {
+    if (!newPart.name.trim() || !newPart.category_id) {
+      toast.error('Nom et catégorie requis');
+      return;
+    }
+
+    setCreating(true);
+    try {
+      const slug = slugify(newPart.name);
+      const { data, error } = await supabase
+        .from('parts')
+        .insert({
+          name: newPart.name.trim(),
+          slug,
+          category_id: newPart.category_id,
+          price: newPart.price ? parseFloat(newPart.price) : null,
+          stock_quantity: newPart.stock ? parseInt(newPart.stock) : 0,
+          description: newPart.description.trim() || null
+        })
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, category:categories(name)')
+        .single();
+
+      if (error) throw error;
+
+      setParts(prev => [...prev, data]);
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '' });
+      setIsCreateOpen(false);
+      toast.success('Pièce créée avec succès');
+    } catch (error) {
+      console.error('Error creating part:', error);
+      toast.error('Erreur lors de la création');
+    } finally {
+      setCreating(false);
     }
   };
 
@@ -138,6 +217,97 @@ const PartsManager = () => {
         <p className="text-sm text-muted-foreground">
           {parts.filter(p => !isPlaceholder(p.image_url)).length}/{parts.length} pièces avec image
         </p>
+        <Dialog open={isCreateOpen} onOpenChange={setIsCreateOpen}>
+          <DialogTrigger asChild>
+            <Button className="bg-primary hover:bg-primary/90">
+              <Plus className="w-4 h-4 mr-2" />
+              Nouvelle Pièce
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Créer une nouvelle pièce</DialogTitle>
+            </DialogHeader>
+            <div className="space-y-4 py-4">
+              <div className="space-y-2">
+                <Label htmlFor="name">Nom *</Label>
+                <Input
+                  id="name"
+                  value={newPart.name}
+                  onChange={(e) => setNewPart(prev => ({ ...prev, name: e.target.value }))}
+                  placeholder="Ex: Pneu 10 pouces"
+                />
+                {newPart.name && (
+                  <p className="text-xs text-muted-foreground">
+                    Slug: {slugify(newPart.name)}
+                  </p>
+                )}
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="category">Catégorie *</Label>
+                <Select
+                  value={newPart.category_id}
+                  onValueChange={(value) => setNewPart(prev => ({ ...prev, category_id: value }))}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Sélectionner une catégorie" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat.id} value={cat.id}>
+                        {cat.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="price">Prix (€)</Label>
+                  <Input
+                    id="price"
+                    type="number"
+                    value={newPart.price}
+                    onChange={(e) => setNewPart(prev => ({ ...prev, price: e.target.value }))}
+                    placeholder="0.00"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="stock">Stock</Label>
+                  <Input
+                    id="stock"
+                    type="number"
+                    value={newPart.stock}
+                    onChange={(e) => setNewPart(prev => ({ ...prev, stock: e.target.value }))}
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="description">Description</Label>
+                <Textarea
+                  id="description"
+                  value={newPart.description}
+                  onChange={(e) => setNewPart(prev => ({ ...prev, description: e.target.value }))}
+                  placeholder="Description de la pièce..."
+                  rows={3}
+                />
+              </div>
+              <Button
+                onClick={createPart}
+                disabled={creating || !newPart.name.trim() || !newPart.category_id}
+                className="w-full bg-primary hover:bg-primary/90"
+              >
+                {creating ? (
+                  <Loader2 className="w-4 h-4 animate-spin mr-2" />
+                ) : (
+                  <Plus className="w-4 h-4 mr-2" />
+                )}
+                Créer la pièce
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <div className="rounded-lg border border-border overflow-hidden">
