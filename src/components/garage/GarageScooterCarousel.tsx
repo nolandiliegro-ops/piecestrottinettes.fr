@@ -85,8 +85,8 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
   const model = currentScooter.scooter_model;
   const displayName = currentScooter.nickname || `${model.brand} ${model.name}`;
   
-  // Get HD image from mapping, fallback to DB image_url
-  const officialImage = getScooterImage(model.slug) || model.image_url;
+  // Get HD image: DB image_url first, then local mapping
+  const officialImage = getScooterImage(model.slug, model.image_url);
   const customPhoto = currentScooter.custom_photo_url;
   const displayImage = showCustomPhoto && customPhoto ? customPhoto : officialImage;
   const hasCustomPhoto = !!customPhoto;
