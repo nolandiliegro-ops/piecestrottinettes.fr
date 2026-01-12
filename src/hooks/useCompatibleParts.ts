@@ -73,19 +73,29 @@ export const useCompatibleParts = (scooterModelId?: string) => {
         }
 
         // Transform data to match expected structure
-        // Note: category comes back as an object with id, name, slug
-        const transformedData = partsData?.map((item: any) => ({
-          id: item.id,
-          name: item.name,
-          price: item.price,
-          image: item.image_url,
-          stock_quantity: item.stock_quantity,
-          category: {
-            name: typeof item.category === 'object' && item.category !== null 
-              ? item.category.name 
-              : 'Autre',
-          },
-        })) || [];
+        // Supabase returns category as an object {id, name, slug} - extract only name
+        const transformedData = partsData?.map((item: any) => {
+          // Handle category - could be object, array, or null
+          let categoryName = 'Autre';
+          if (item.category) {
+            if (Array.isArray(item.category) && item.category.length > 0) {
+              categoryName = item.category[0]?.name || 'Autre';
+            } else if (typeof item.category === 'object' && item.category.name) {
+              categoryName = item.category.name;
+            }
+          }
+          
+          return {
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            image: item.image_url,
+            stock_quantity: item.stock_quantity,
+            category: {
+              name: categoryName,
+            },
+          };
+        }) || [];
 
         setParts(transformedData);
       } catch (err) {

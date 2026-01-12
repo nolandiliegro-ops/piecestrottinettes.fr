@@ -168,22 +168,35 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
 
       if (compatError) throw compatError;
 
-      // Transform and filter the data
+      // Transform and filter the data - ensure category is properly extracted
       return (compatibilityData || [])
         .map((item) => item.parts)
         .filter((part): part is NonNullable<typeof part> => part !== null)
-        .map((part) => ({
-          id: part.id,
-          name: part.name,
-          slug: part.slug,
-          description: part.description,
-          price: part.price,
-          image_url: part.image_url,
-          difficulty_level: part.difficulty_level,
-          stock_quantity: part.stock_quantity,
-          technical_metadata: part.technical_metadata as Record<string, unknown> | null,
-          category: part.category,
-        }));
+        .map((part) => {
+          // Handle category - could be object, array, or null
+          let categoryData: CompatiblePart['category'] = null;
+          if (part.category) {
+            if (Array.isArray(part.category) && part.category.length > 0) {
+              const cat = part.category[0];
+              categoryData = { id: cat.id, name: cat.name, icon: cat.icon, slug: cat.slug };
+            } else if (typeof part.category === 'object' && 'id' in part.category) {
+              categoryData = part.category as CompatiblePart['category'];
+            }
+          }
+          
+          return {
+            id: part.id,
+            name: part.name,
+            slug: part.slug,
+            description: part.description,
+            price: part.price,
+            image_url: part.image_url,
+            difficulty_level: part.difficulty_level,
+            stock_quantity: part.stock_quantity,
+            technical_metadata: part.technical_metadata as Record<string, unknown> | null,
+            category: categoryData,
+          };
+        });
     },
     enabled: !!scooterModelSlug,
   });
