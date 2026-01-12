@@ -65,7 +65,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       }}
       className={cn(
         "group relative rounded-xl p-4 transition-all duration-300 cursor-pointer",
-        "bg-white/70 backdrop-blur-sm",
+        "bg-white/80 backdrop-blur-sm",
         "border border-mineral/10",
         "hover:scale-[1.01] hover:shadow-lg",
         "hover:border-mineral/40",
@@ -75,13 +75,13 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       {/* Subtle Gradient Overlay */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-      {/* Image Container - Compact */}
-      <div className="relative aspect-square rounded-lg overflow-hidden bg-white/30 mb-3 flex items-center justify-center max-h-[180px]">
+      {/* Image Container - Luxury Studio Style */}
+      <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">
         {part.image_url ? (
           <img 
             src={part.image_url} 
             alt={part.name}
-            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+            className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
           />
         ) : (
           <div className="text-4xl opacity-30">🔧</div>
