@@ -118,7 +118,7 @@ const Garage = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="sticky top-24"
               >
-                <MaintenanceLog scooters={scooters || []} />
+                <MaintenanceLog selectedScooter={selectedScooter} />
               </motion.div>
             </div>
 

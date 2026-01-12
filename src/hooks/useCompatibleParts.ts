@@ -6,6 +6,7 @@ interface Part {
   name: string;
   price: number;
   image?: string;
+  image_url?: string;
   stock_quantity: number;
   category: {
     name: string;
@@ -56,7 +57,7 @@ export const useCompatibleParts = (scooterModelId?: string) => {
             id,
             name,
             price,
-            image,
+            image_url,
             stock_quantity,
             category:categories (
               name
@@ -74,7 +75,7 @@ export const useCompatibleParts = (scooterModelId?: string) => {
           id: item.id,
           name: item.name,
           price: item.price,
-          image: item.image,
+          image: item.image_url,
           stock_quantity: item.stock_quantity,
           category: {
             name: item.category?.name || 'Autre',
