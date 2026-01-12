@@ -1,14 +1,36 @@
+import { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Award, Car, Heart } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
+import { motion } from 'framer-motion';
+import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
+import ProductsUsed from '@/components/garage/ProductsUsed';
+import MaintenanceLog from '@/components/garage/MaintenanceLog';
+import PerformanceWidget from '@/components/garage/PerformanceWidget';
+import { useGarageScooters } from '@/hooks/useGarageScooters';
+import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 
 const Garage = () => {
-  const { profile, loading } = useAuth();
+  const { profile, loading: authLoading } = useAuth();
+  const { scooters, loading: scootersLoading } = useGarageScooters();
+  const [selectedScooter, setSelectedScooter] = useState<any>(null);
+  
+  // Fetch compatible parts for selected scooter
+  const { parts, loading: partsLoading } = useCompatibleParts(
+    selectedScooter?.scooter_model?.id
+  );
 
-  if (loading) {
+  // Set initial selected scooter when scooters load
+  useState(() => {
+    if (scooters && scooters.length > 0 && !selectedScooter) {
+      setSelectedScooter(scooters[0]);
+    }
+  });
+
+  if (authLoading) {
     return (
       <div className="min-h-screen bg-greige flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-garage" />
+        <Loader2 className="w-8 h-8 animate-spin text-mineral" />
       </div>
     );
   }
@@ -19,85 +41,89 @@ const Garage = () => {
       
       <main className="pt-20 lg:pt-24 px-4 lg:px-8 pb-8">
         <div className="container mx-auto max-w-7xl">
+          
           {/* Welcome Header */}
-          <div className="mb-8">
-            <h1 className="font-display text-4xl lg:text-5xl text-carbon tracking-wide">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <h1 className="font-display text-4xl lg:text-5xl text-carbon tracking-wide mb-2">
               MON GARAGE
             </h1>
-            <p className="text-carbon/60 mt-2">
-              Bienvenue, {profile?.display_name || 'Rider'} !
+            <p className="text-carbon/60 text-lg">
+              Bienvenue, <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
             </p>
-          </div>
+          </motion.div>
 
-          {/* Bento Grid - 100vh layout */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[calc(100vh-200px)] min-h-[600px]">
+          {/* Performance Widget - Top */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="mb-8"
+          >
+            <PerformanceWidget 
+              points={profile?.performance_points || 0}
+              displayName={profile?.display_name || 'Rider'}
+            />
+          </motion.div>
+
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            {/* My Stable - Takes 2 columns on desktop */}
-            <div className="md:col-span-2 bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-6 flex flex-col">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-garage/10 flex items-center justify-center">
-                  <Car className="w-5 h-5 text-garage" />
-                </div>
-                <h2 className="font-display text-2xl text-carbon tracking-wide">MY STABLE</h2>
-              </div>
-              
-              <div className="flex-1 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-garage/10 mx-auto flex items-center justify-center mb-4">
-                    <Car className="w-10 h-10 text-garage/40" />
+            {/* Left Column: Carousel (2 columns) */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Scooter Carousel */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                {scootersLoading ? (
+                  <div className="flex items-center justify-center h-96 bg-white/40 rounded-2xl">
+                    <Loader2 className="w-8 h-8 animate-spin text-mineral" />
                   </div>
-                  <p className="text-carbon/60 font-medium">Aucun véhicule dans votre garage</p>
-                  <p className="text-carbon/40 text-sm mt-1">
-                    Ajoutez votre première trottinette depuis le catalogue
-                  </p>
-                </div>
-              </div>
+                ) : (
+                  <GarageScooterCarousel 
+                    scooters={scooters || []}
+                    onScooterChange={setSelectedScooter}
+                  />
+                )}
+              </motion.div>
+
+              {/* Products Used Section */}
+              {selectedScooter && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                  <ProductsUsed
+                    scooterId={selectedScooter.id}
+                    scooterName={selectedScooter.nickname || `${selectedScooter.scooter_model.brand} ${selectedScooter.scooter_model.name}`}
+                    parts={parts || []}
+                    loading={partsLoading}
+                  />
+                </motion.div>
+              )}
             </div>
 
-            {/* Performance Points */}
-            <div className="bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-6 flex flex-col">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center">
-                  <Award className="w-5 h-5 text-mineral" />
-                </div>
-                <h2 className="font-display text-2xl text-carbon tracking-wide">POINTS</h2>
-              </div>
-              
-              <div className="flex-1 flex flex-col items-center justify-center">
-                <p className="font-display text-6xl text-mineral">
-                  {profile?.performance_points || 0}
-                </p>
-                <p className="text-carbon/60 font-medium mt-2">Performance Points</p>
-                
-                <div className="mt-6 px-4 py-2 bg-mineral/10 rounded-full">
-                  <span className="text-mineral font-semibold text-sm">🥉 Bronze Rider</span>
-                </div>
-              </div>
-            </div>
-
-            {/* My Collection */}
-            <div className="md:col-span-3 bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-6 flex flex-col">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-garage/10 flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-garage" />
-                </div>
-                <h2 className="font-display text-2xl text-carbon tracking-wide">MY COLLECTION</h2>
-              </div>
-              
-              <div className="flex-1 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-garage/10 mx-auto flex items-center justify-center mb-4">
-                    <Heart className="w-8 h-8 text-garage/40" />
-                  </div>
-                  <p className="text-carbon/60 font-medium">Votre collection est vide</p>
-                  <p className="text-carbon/40 text-sm mt-1">
-                    Ajoutez des trottinettes à votre wishlist
-                  </p>
-                </div>
-              </div>
+            {/* Right Column: Maintenance (1 column) */}
+            <div className="lg:col-span-1">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="sticky top-24"
+              >
+                <MaintenanceLog scooters={scooters || []} />
+              </motion.div>
             </div>
 
           </div>
+
         </div>
       </main>
     </div>
