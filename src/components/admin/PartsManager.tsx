@@ -382,7 +382,7 @@ const PartsManager = () => {
   };
 
   const exportCSV = () => {
-    const headers = ['Nom', 'Slug', 'SKU', 'Catégorie', 'Prix', 'Stock', 'Alerte Stock', 'Difficulté', 'Temps Install', 'Outils', 'YouTube ID', 'Description', 'Meta Title', 'Meta Description'];
+    const headers = ['Nom', 'Slug', 'SKU', 'Catégorie', 'Prix', 'Stock', 'Alerte Stock', 'Difficulté', 'Temps Install', 'Outils', 'YouTube ID', 'Description', 'Meta Title', 'Meta Description', 'Image URL'];
     const rows = parts.map(p => [
       p.name,
       p.slug,
@@ -397,7 +397,8 @@ const PartsManager = () => {
       p.youtube_video_id || '',
       p.description || '',
       p.meta_title || '',
-      p.meta_description || ''
+      p.meta_description || '',
+      p.image_url || ''
     ]);
 
     const csv = [headers.join(','), ...rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(','))].join('\n');
