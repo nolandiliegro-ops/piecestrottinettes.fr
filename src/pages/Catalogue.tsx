@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Loader2, Sparkles } from "lucide-react";
+import { Search, Loader2, Sparkles, Filter } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import Header from "@/components/Header";
@@ -16,7 +17,7 @@ import {
   DialogDescription,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { useCategories } from "@/hooks/useScooterData";
+import { useCategories, useScooterModels } from "@/hooks/useScooterData";
 import { useAllParts } from "@/hooks/useCatalogueData";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
@@ -61,13 +62,29 @@ const EmptyState = ({ onClear }: { onClear: () => void }) => (
 );
 
 const Catalogue = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const queryClient = useQueryClient();
 
+  // Get scooter filter from URL params (e.g., ?scooter=uuid)
+  const scooterIdFilter = searchParams.get("scooter");
+  
   const { data: categories = [], isLoading: categoriesLoading } = useCategories();
   const { data: parts = [], isLoading: partsLoading } = useAllParts(activeCategory);
+  const { data: scooterModels = [] } = useScooterModels();
+  
+  // Find the scooter model name for display
+  const filteredScooterModel = scooterIdFilter 
+    ? scooterModels.find(m => m.id === scooterIdFilter)
+    : null;
+    
+  // Clear scooter filter
+  const clearScooterFilter = () => {
+    searchParams.delete("scooter");
+    setSearchParams(searchParams);
+  };
 
   const handleGenerateAllImages = async () => {
     setShowConfirmModal(false);
@@ -159,6 +176,27 @@ const Catalogue = () => {
           >
             {partsLoading ? "Chargement..." : `${parts.length} pièces disponibles`}
           </motion.div>
+
+          {/* Scooter Filter Banner */}
+          {filteredScooterModel && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
+              className="mt-4 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-mineral/10 border border-mineral/20"
+            >
+              <Filter className="w-4 h-4 text-mineral" />
+              <span className="text-carbon font-medium">
+                Pièces compatibles avec <span className="text-mineral font-semibold">{filteredScooterModel.name}</span>
+              </span>
+              <button
+                onClick={clearScooterFilter}
+                className="ml-2 px-3 py-1 rounded-full bg-white/60 hover:bg-white text-carbon/70 hover:text-carbon text-xs font-medium transition-all"
+              >
+                Effacer
+              </button>
+            </motion.div>
+          )}
         </section>
 
         {/* Category Bento Grid */}

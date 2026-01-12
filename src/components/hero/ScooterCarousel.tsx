@@ -8,33 +8,8 @@ import AnimatedNumber from "@/components/ui/animated-number";
 import FavoriteButton from "@/components/garage/FavoriteButton";
 import GarageButton from "@/components/garage/GarageButton";
 
-// Import scooter images
-import xiaomiMiPro2 from "@/assets/scooters/xiaomi-mi-pro-2.png";
-import xiaomiMiEssential from "@/assets/scooters/xiaomi-mi-essential.png";
-import xiaomiMi3 from "@/assets/scooters/xiaomi-mi-3.png";
-import ninebotG30Max from "@/assets/scooters/ninebot-g30-max.png";
-import ninebotF40 from "@/assets/scooters/ninebot-f40.png";
-import segwayP100s from "@/assets/scooters/segway-p100s.png";
-import segwayNinebotMaxG2 from "@/assets/scooters/segway-ninebot-max-g2.png";
-import dualtronThunder from "@/assets/scooters/dualtron-thunder.png";
-import dualtronVictor from "@/assets/scooters/dualtron-victor.png";
-import kaaboMantisPro from "@/assets/scooters/kaabo-mantis-pro.png";
-import kaaboWolfWarrior from "@/assets/scooters/kaabo-wolf-warrior.png";
-
-// Image mapping for scooter models
-const scooterImages: Record<string, string> = {
-  "mi-pro-2": xiaomiMiPro2,
-  "mi-essential": xiaomiMiEssential,
-  "mi-3": xiaomiMi3,
-  "g30-max": ninebotG30Max,
-  "f40": ninebotF40,
-  "p100s": segwayP100s,
-  "ninebot-max-g2": segwayNinebotMaxG2,
-  "thunder": dualtronThunder,
-  "victor": dualtronVictor,
-  "mantis-pro": kaaboMantisPro,
-  "wolf-warrior": kaaboWolfWarrior,
-};
+// Centralized image mapping
+import { scooterImages } from "@/lib/scooterImageMapping";
 
 interface ScooterCarouselProps {
   models: ScooterModel[];

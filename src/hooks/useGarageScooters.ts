@@ -7,12 +7,14 @@ interface GarageScooter {
   scooter_model: {
     id: string;
     name: string;
+    slug: string;
     brand: string;
     image_url?: string | null;
     max_speed_kmh?: number | null;
     range_km?: number | null;
     power_watts?: number | null;
     voltage?: number | null;
+    compatible_parts_count?: number | null;
   };
   nickname?: string | null;
   added_at: string;
@@ -45,6 +47,7 @@ export const useGarageScooters = () => {
             range_km,
             power_watts,
             voltage,
+            compatible_parts_count,
             brand:brands(name)
           )
         `)
@@ -63,12 +66,14 @@ export const useGarageScooters = () => {
         scooter_model: {
           id: item.scooter_model?.id,
           name: item.scooter_model?.name,
+          slug: item.scooter_model?.slug,
           brand: item.scooter_model?.brand?.name || "Unknown",
           image_url: item.scooter_model?.image_url,
           max_speed_kmh: item.scooter_model?.max_speed_kmh,
           range_km: item.scooter_model?.range_km,
           power_watts: item.scooter_model?.power_watts,
           voltage: item.scooter_model?.voltage,
+          compatible_parts_count: item.scooter_model?.compatible_parts_count,
         },
       })) as GarageScooter[];
     },
