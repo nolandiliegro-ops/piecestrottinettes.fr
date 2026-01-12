@@ -23,6 +23,7 @@ interface GarageScooter {
   is_owned: boolean;
   current_km: number | null;
   custom_photo_url?: string | null;
+  last_maintenance_date?: string | null;
 }
 
 export const useGarageScooters = () => {
@@ -42,6 +43,7 @@ export const useGarageScooters = () => {
           is_owned,
           current_km,
           custom_photo_url,
+          last_maintenance_date,
           scooter_model:scooter_models(
             id,
             name,
@@ -70,6 +72,7 @@ export const useGarageScooters = () => {
         is_owned: item.is_owned,
         current_km: item.current_km,
         custom_photo_url: item.custom_photo_url,
+        last_maintenance_date: item.last_maintenance_date,
         scooter_model: {
           id: item.scooter_model?.id,
           name: item.scooter_model?.name,

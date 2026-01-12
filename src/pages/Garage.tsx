@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Trophy, TrendingUp } from 'lucide-react';
+import { Loader2, Trophy, Package, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
 import MaintenanceLog from '@/components/garage/MaintenanceLog';
 import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
+import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import ProductsUsed from '@/components/garage/ProductsUsed';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
@@ -36,8 +38,9 @@ const CompactPerformanceWidget = ({ points, displayName }: { points: number; dis
 };
 
 const Garage = () => {
+  const navigate = useNavigate();
   const { profile, loading: authLoading } = useAuth();
-  const { scooters, loading: scootersLoading } = useGarageScooters();
+  const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
   
   // Fetch compatible parts for selected scooter
@@ -132,20 +135,22 @@ const Garage = () => {
                 />
               )}
 
-              {/* Maintenance Log - Scrollable */}
-              <div className="flex-1 min-h-0 overflow-y-auto">
-                <MaintenanceLog 
-                  selectedScooter={selectedScooter}
-                  className="h-full"
+              {/* Expert Tracking Widget - NEW */}
+              {selectedScooter && (
+                <ExpertTrackingWidget
+                  garageItemId={selectedScooter.id}
+                  scooterName={scooterName}
+                  lastMaintenanceDate={selectedScooter.last_maintenance_date}
+                  className="shrink-0"
                 />
-              </div>
+              )}
 
               {/* YouTube Video - Fixed Height */}
               {selectedScooter && (
                 <ScooterVideoSection
                   youtubeVideoId={selectedScooter.scooter_model.youtube_video_id}
                   scooterName={scooterName}
-                  className="shrink-0 h-36"
+                  className="shrink-0 flex-1 min-h-[120px]"
                 />
               )}
             </motion.div>
@@ -164,6 +169,7 @@ const Garage = () => {
                 scooterName={scooterName}
                 parts={parts || []}
                 loading={partsLoading}
+                onViewPart={(partId) => navigate(`/part/${partId}`)}
               />
             </motion.div>
           )}
@@ -187,16 +193,18 @@ const CompactProductsRow = ({
   scooterId, 
   scooterName, 
   parts, 
-  loading 
+  loading,
+  onViewPart
 }: { 
   scooterId: string; 
   scooterName: string; 
   parts: Part[]; 
   loading: boolean;
+  onViewPart: (partId: string) => void;
 }) => {
   if (loading) {
     return (
-      <div className="h-28 flex items-center justify-center bg-white/40 rounded-xl">
+      <div className="h-32 flex items-center justify-center bg-white/40 rounded-xl">
         <Loader2 className="w-6 h-6 animate-spin text-mineral" />
       </div>
     );
@@ -204,7 +212,7 @@ const CompactProductsRow = ({
 
   if (!parts || parts.length === 0) {
     return (
-      <div className="h-28 flex items-center justify-center bg-white/40 border border-mineral/20 rounded-xl">
+      <div className="h-32 flex items-center justify-center bg-white/40 border border-mineral/20 rounded-xl">
         <p className="text-carbon/40 text-sm">Aucune pièce compatible</p>
       </div>
     );
@@ -213,7 +221,7 @@ const CompactProductsRow = ({
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <h3 className="font-display text-sm text-carbon uppercase tracking-wide">
+        <h3 className="font-display text-sm text-[#1A1A1A] uppercase tracking-wide">
           Pièces compatibles
         </h3>
         <span className="text-xs text-carbon/50">{parts.length} disponibles</span>
@@ -226,26 +234,37 @@ const CompactProductsRow = ({
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.2, delay: index * 0.03 }}
-            className="flex-shrink-0 w-32 bg-white/60 border border-mineral/20 rounded-xl p-2 hover:shadow-md hover:border-mineral/40 transition-all cursor-pointer"
+            onClick={() => onViewPart(part.id)}
+            className="flex-shrink-0 w-36 bg-white/80 border border-mineral/20 rounded-xl p-3 
+                       hover:shadow-lg hover:border-mineral/40 transition-all cursor-pointer group"
           >
-            {/* Image */}
-            <div className="aspect-square rounded-lg bg-greige/30 overflow-hidden mb-2">
+            {/* Image with bright background */}
+            <div className="aspect-square rounded-lg bg-greige/50 overflow-hidden mb-2">
               {part.image ? (
                 <img
                   src={part.image}
                   alt={part.name}
-                  className="w-full h-full object-contain p-1"
+                  className="w-full h-full object-contain p-2 brightness-105 contrast-105"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center text-carbon/20 text-2xl">
-                  📦
+                <div className="w-full h-full flex items-center justify-center bg-greige/30">
+                  <Package className="w-8 h-8 text-carbon/30" />
                 </div>
               )}
             </div>
             
-            {/* Info */}
-            <p className="text-xs font-medium text-carbon line-clamp-1">{part.name}</p>
-            <p className="text-sm font-bold text-mineral">{part.price?.toFixed(0)}€</p>
+            {/* Info with Carbon Black text */}
+            <p className="text-xs font-medium text-[#1A1A1A] line-clamp-2 mb-1 min-h-[2rem]">
+              {part.name}
+            </p>
+            
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-bold text-mineral">{part.price?.toFixed(0)}€</p>
+              <span className="text-[10px] text-mineral font-medium flex items-center gap-0.5 
+                             opacity-0 group-hover:opacity-100 transition-opacity">
+                Voir <ArrowRight className="w-3 h-3" />
+              </span>
+            </div>
           </motion.div>
         ))}
       </div>

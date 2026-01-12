@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Youtube, ExternalLink } from 'lucide-react';
+import { Play, Youtube } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+// Demo fallback video - Kaabo maintenance tutorial
+const DEMO_VIDEO_ID = 'pD0e_L2tX_s';
 
 interface ScooterVideoSectionProps {
   youtubeVideoId?: string | null;
@@ -11,60 +14,53 @@ interface ScooterVideoSectionProps {
 
 const ScooterVideoSection = ({ youtubeVideoId, scooterName, className }: ScooterVideoSectionProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  
+  // Use demo video if no specific video available
+  const videoId = youtubeVideoId || DEMO_VIDEO_ID;
+  const isDemo = !youtubeVideoId;
 
-  const defaultSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(scooterName + ' review')}`;
-
-  // Reset playing state when scooter changes
-  const videoKey = youtubeVideoId || 'no-video';
-
-  if (!youtubeVideoId) {
-    return (
-      <div className={cn(
-        "bg-white/60 border border-mineral/20 rounded-xl p-4 h-full flex flex-col items-center justify-center",
-        className
-      )}>
-        <Youtube className="w-8 h-8 text-carbon/20 mb-2" />
-        <p className="text-xs text-carbon/40 text-center mb-2">Aucune vidéo</p>
-        <a
-          href={defaultSearchUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs text-mineral hover:text-mineral/80 transition-colors"
-        >
-          Rechercher <ExternalLink className="w-3 h-3" />
-        </a>
-      </div>
-    );
-  }
+  // Reset playing state when scooter/video changes
+  useEffect(() => {
+    setIsPlaying(false);
+  }, [youtubeVideoId, scooterName]);
 
   return (
     <div className={cn(
-      "bg-white/60 border border-mineral/20 rounded-xl overflow-hidden h-full",
+      "bg-white/60 border border-mineral/20 rounded-xl overflow-hidden h-full flex flex-col",
       className
     )}>
       {/* Header */}
-      <div className="px-3 py-2 border-b border-mineral/10 flex items-center gap-2">
-        <Youtube className="w-4 h-4 text-red-600" />
-        <span className="text-xs font-medium text-carbon">Vidéo</span>
+      <div className="px-3 py-1.5 border-b border-mineral/10 flex items-center justify-between shrink-0">
+        <div className="flex items-center gap-2">
+          <Youtube className="w-3.5 h-3.5 text-red-600" />
+          <span className="text-[11px] font-medium text-carbon">Studio</span>
+        </div>
+        
+        {/* Demo Badge */}
+        {isDemo && (
+          <span className="text-[9px] px-1.5 py-0.5 bg-amber-100 text-amber-700 rounded-full font-medium">
+            Démo
+          </span>
+        )}
       </div>
 
       {/* Video Container */}
-      <div className="relative aspect-video bg-carbon/5">
+      <div className="relative flex-1 min-h-0 bg-carbon/5">
         <AnimatePresence mode="wait">
           {isPlaying ? (
             <motion.iframe
-              key={`playing-${videoKey}`}
+              key={`playing-${videoId}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`}
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           ) : (
             <motion.div
-              key={`thumbnail-${videoKey}`}
+              key={`thumbnail-${videoId}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -73,14 +69,18 @@ const ScooterVideoSection = ({ youtubeVideoId, scooterName, className }: Scooter
             >
               {/* YouTube Thumbnail */}
               <img
-                src={`https://img.youtube.com/vi/${youtubeVideoId}/mqdefault.jpg`}
+                src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                 alt="Video thumbnail"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback to medium quality if maxres not available
+                  (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+                }}
               />
               {/* Play Button Overlay */}
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
-                  <Play className="w-6 h-6 text-white fill-white ml-0.5" />
+                <div className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <Play className="w-5 h-5 text-white fill-white ml-0.5" />
                 </div>
               </div>
             </motion.div>

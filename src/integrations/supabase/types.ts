@@ -282,6 +282,7 @@ export type Database = {
           custom_photo_url: string | null
           id: string
           is_owned: boolean | null
+          last_maintenance_date: string | null
           next_maintenance_km: number | null
           nickname: string | null
           scooter_model_id: string
@@ -293,6 +294,7 @@ export type Database = {
           custom_photo_url?: string | null
           id?: string
           is_owned?: boolean | null
+          last_maintenance_date?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
           scooter_model_id: string
@@ -304,6 +306,7 @@ export type Database = {
           custom_photo_url?: string | null
           id?: string
           is_owned?: boolean | null
+          last_maintenance_date?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
           scooter_model_id?: string
