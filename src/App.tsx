@@ -12,6 +12,7 @@ import Register from "./pages/Register";
 import Garage from "./pages/Garage";
 import Admin from "./pages/Admin";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,7 +32,9 @@ const App = () => (
             <Route path="/register" element={<Register />} />
             <Route path="/garage" element={
               <ProtectedRoute>
-                <Garage />
+                <GarageErrorBoundary>
+                  <Garage />
+                </GarageErrorBoundary>
               </ProtectedRoute>
             } />
             <Route path="/admin" element={

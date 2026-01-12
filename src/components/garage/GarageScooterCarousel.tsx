@@ -82,6 +82,24 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
   }
 
   const currentScooter = scooters[currentIndex];
+  
+  // Safety check: if scooter_model is null, show fallback
+  if (!currentScooter?.scooter_model) {
+    return (
+      <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
+        <div className="text-center">
+          <div className="w-16 h-16 rounded-full bg-amber-100 mx-auto flex items-center justify-center mb-3">
+            <span className="text-2xl">⚠️</span>
+          </div>
+          <p className="text-carbon/60 font-medium text-sm">Données indisponibles</p>
+          <p className="text-carbon/40 text-xs mt-1">
+            Le modèle de cette trottinette n'a pas pu être chargé
+          </p>
+        </div>
+      </div>
+    );
+  }
+  
   const model = currentScooter.scooter_model;
   const displayName = currentScooter.nickname || `${model.brand} ${model.name}`;
   

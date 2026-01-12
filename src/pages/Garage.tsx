@@ -89,7 +89,7 @@ const Garage = () => {
     );
   }
 
-  const scooterName = selectedScooter 
+  const scooterName = selectedScooter?.scooter_model 
     ? `${selectedScooter.scooter_model.brand} ${selectedScooter.scooter_model.name}`
     : '';
 
@@ -152,7 +152,7 @@ const Garage = () => {
               className="flex flex-col gap-3 min-h-0 overflow-hidden"
             >
               {/* Technical Specs */}
-              {selectedScooter && (
+              {selectedScooter?.scooter_model && (
                 <TechnicalSpecs
                   voltage={selectedScooter.scooter_model.voltage}
                   amperage={selectedScooter.scooter_model.amperage}
@@ -174,7 +174,7 @@ const Garage = () => {
               )}
 
               {/* YouTube Video - Fixed Height */}
-              {selectedScooter && (
+              {selectedScooter?.scooter_model && (
                 <ScooterVideoSection
                   youtubeVideoId={selectedScooter.scooter_model.youtube_video_id}
                   scooterName={scooterName}

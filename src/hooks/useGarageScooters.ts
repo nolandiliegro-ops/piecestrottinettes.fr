@@ -90,7 +90,9 @@ export const useGarageScooters = () => {
           youtube_video_id: item.scooter_model.youtube_video_id,
           compatible_parts_count: item.scooter_model.compatible_parts_count,
         } : null,
-      })) as GarageScooter[];
+      }))
+      // Filter out scooters with null scooter_model to prevent crashes
+      .filter((item: any) => item.scooter_model !== null) as GarageScooter[];
     },
     enabled: !!user,
   });
