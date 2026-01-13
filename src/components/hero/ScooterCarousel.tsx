@@ -91,6 +91,17 @@ const ScooterCarousel = ({
 
   return (
     <div className="relative flex items-center justify-center h-full w-full">
+      {/* Background Text Effect - TROTTINETTE - Studio depth effect */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none">
+        <span 
+          className="font-display text-[6rem] sm:text-[8rem] lg:text-[12rem] xl:text-[16rem] 
+                     text-muted-foreground/[0.03] tracking-[0.2em] whitespace-nowrap uppercase"
+          style={{ transform: 'translateY(-5%)' }}
+        >
+          TROTTINETTE
+        </span>
+      </div>
+
       {/* Subtle background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <div 
