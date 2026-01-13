@@ -149,15 +149,26 @@ const ScooterCarousel = ({
         </Button>
       </motion.div>
 
-      {/* Dashboard Specs Bar - Bottom Center */}
+      {/* Dashboard Specs Bar - Bottom Left (offset to avoid Scanner button) */}
       <motion.div 
         key={`specs-bar-${activeModel?.id}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute bottom-[12%] lg:bottom-[14%] left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-[12%] lg:bottom-[14%] left-[42%] lg:left-[45%] -translate-x-1/2 z-20"
       >
         <div className="flex items-center gap-4 lg:gap-6 bg-white/90 backdrop-blur-md border border-mineral/20 rounded-2xl px-4 lg:px-6 py-2.5 lg:py-3 shadow-xl">
+          {/* Model Name */}
+          <div className="flex items-center gap-1.5">
+            <Gauge className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
+            <span className="font-display text-lg lg:text-xl text-carbon uppercase tracking-tight">
+              {activeModel?.name || "—"}
+            </span>
+          </div>
+          
+          {/* Divider */}
+          <div className="h-6 lg:h-8 w-px bg-mineral/20" />
+          
           {/* Power */}
           <div className="flex items-center gap-1.5">
             <Zap className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
@@ -175,28 +186,13 @@ const ScooterCarousel = ({
           
           {/* Speed */}
           <div className="flex items-center gap-1.5">
-            <Gauge className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
+            <Battery className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
             <div className="flex items-baseline gap-0.5">
               <AnimatedNumber 
                 value={activeModel ? parseSpecValue(activeModel.specs?.maxSpeed || "0km/h") : 0}
                 className="font-display text-xl lg:text-2xl text-carbon"
               />
               <span className="text-xs text-muted-foreground font-medium">km/h</span>
-            </div>
-          </div>
-          
-          {/* Divider */}
-          <div className="h-6 lg:h-8 w-px bg-mineral/20" />
-          
-          {/* Range */}
-          <div className="flex items-center gap-1.5">
-            <Battery className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
-            <div className="flex items-baseline gap-0.5">
-              <AnimatedNumber 
-                value={activeModel ? parseSpecValue(activeModel.specs?.range || "0km") : 0}
-                className="font-display text-xl lg:text-2xl text-carbon"
-              />
-              <span className="text-xs text-muted-foreground font-medium">km</span>
             </div>
           </div>
           
