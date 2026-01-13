@@ -308,9 +308,9 @@ const ScooterCarousel = ({
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        {/* Navigation Dots */}
+        {/* Navigation Dots - Show max 7 dots, or less if fewer models */}
         <div className="flex items-center gap-1.5">
-          {models.slice(0, 7).map((_, index) => (
+          {Array.from({ length: Math.min(7, models.length) }).map((_, index) => (
             <button
               key={index}
               onClick={() => onSelect(index)}
@@ -324,12 +324,19 @@ const ScooterCarousel = ({
           ))}
         </div>
         
-        {/* Dynamic Counter */}
+        {/* Dynamic Counter - Only shows if more than 7 models */}
         {models.length > 7 && (
           <span className="text-sm text-muted-foreground font-medium ml-1">
             +{models.length - 7}
           </span>
         )}
+
+        {/* Total Badge - Elegant pill showing current filtered count */}
+        <div className="ml-2 px-2.5 py-1 rounded-full bg-mineral/10 border border-mineral/20 backdrop-blur-sm">
+          <span className="text-xs font-semibold text-mineral">
+            {models.length} modèle{models.length > 1 ? 's' : ''}
+          </span>
+        </div>
       </motion.div>
 
       {/* Watermark piecestrottinettes.fr */}
