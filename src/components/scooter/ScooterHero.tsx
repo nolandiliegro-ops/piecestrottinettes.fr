@@ -7,7 +7,8 @@ interface ScooterHeroProps {
 }
 
 const ScooterHero = ({ scooter }: ScooterHeroProps) => {
-  const displayImage = scooter.image_url || getScooterImage(scooter.slug);
+  // Priority: local HD assets > database URL > null
+  const displayImage = getScooterImage(scooter.slug, scooter.image_url);
 
   return (
     <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-gradient-to-b from-background via-background to-muted/30">

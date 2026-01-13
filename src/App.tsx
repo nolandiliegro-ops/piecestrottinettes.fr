@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import Catalogue from "./pages/Catalogue";
+import Scooters from "./pages/Scooters";
 import PartDetail from "./pages/PartDetail";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -28,6 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
+            <Route path="/trottinettes" element={<Scooters />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
             <Route path="/scooter/:slug" element={<ScooterDetail />} />
             <Route path="/login" element={<Login />} />
