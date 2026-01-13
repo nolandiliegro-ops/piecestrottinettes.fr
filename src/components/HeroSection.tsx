@@ -94,14 +94,16 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   return (
     <section className="hero-studio-bg relative py-4 lg:py-6 flex items-center overflow-hidden min-h-[480px] lg:min-h-[70vh] max-h-[80vh]">
       <div className="container mx-auto px-4 lg:px-8 h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-[30%_40%_30%] gap-4 lg:gap-4 items-start h-full">
-          {/* Left Column - Branding */}
-          <div className="order-2 lg:order-1">
+        {/* Strict 12-Column Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-center h-full">
+          
+          {/* LEFT (col-span-3) - Slogan ROULE RÉPARE DURE */}
+          <div className="order-2 lg:order-1 lg:col-span-3">
             <HeroBranding />
           </div>
 
-          {/* Center Column - Carousel */}
-          <div className="order-1 lg:order-2 h-full flex items-center">
+          {/* CENTER (col-span-6) - Scooter ONLY, no text below */}
+          <div className="order-1 lg:order-2 lg:col-span-6 h-full flex items-center justify-center">
             {isLoading ? (
               <ScooterCarouselSkeleton />
             ) : (
@@ -113,8 +115,8 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
             )}
           </div>
 
-          {/* Right Column - Command Panel */}
-          <div className="order-3">
+          {/* RIGHT (col-span-3) - Search + Brands + Model Info */}
+          <div className="order-3 lg:col-span-3">
             <CommandPanel
               brands={transformedBrands}
               selectedBrand={selectedBrand}
@@ -122,6 +124,11 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
               searchQuery={searchQuery}
               onSearchChange={handleSearchChange}
               onModelSelect={handleModelSelect}
+              activeModel={activeModel}
+              onNavigatePrev={() => setActiveIndex((prev) => (prev > 0 ? prev - 1 : filteredModels.length - 1))}
+              onNavigateNext={() => setActiveIndex((prev) => (prev < filteredModels.length - 1 ? prev + 1 : 0))}
+              totalModels={filteredModels.length}
+              currentIndex={activeIndex}
             />
           </div>
         </div>
