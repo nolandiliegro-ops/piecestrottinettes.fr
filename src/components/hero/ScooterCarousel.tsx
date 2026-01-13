@@ -170,7 +170,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
       </div>
 
       {/* Refined Navigation */}
-      <div className="flex items-center justify-center gap-6 mt-4">
+      <div className="flex items-center justify-center gap-6 mt-6">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
           <Button
             variant="outline"
@@ -218,7 +218,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
       {activeModel && (
         <motion.div 
           key={activeModel.id}
-          className="mt-4 text-center"
+          className="mt-6 text-center"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.15 }}

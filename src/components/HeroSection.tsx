@@ -93,7 +93,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
 
   return (
     <section 
-      className="py-4 lg:py-6 flex items-center overflow-visible min-h-[550px] lg:min-h-[90vh] max-h-[90vh]"
+      className="py-6 lg:py-10 flex items-center overflow-hidden min-h-[650px] lg:min-h-[85vh]"
       style={{
         backgroundImage: 'url(/garage-floor.png)',
         backgroundSize: 'cover',
@@ -103,7 +103,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
       <div className="container mx-auto px-4 lg:px-8 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-[30%_40%_30%] gap-4 lg:gap-6 items-start h-full">
           {/* Left Column - Branding */}
-          <div className="order-2 lg:order-1 min-h-[450px] lg:min-h-auto">
+          <div className="order-2 lg:order-1">
             <HeroBranding />
           </div>
 
@@ -121,7 +121,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
           </div>
 
           {/* Right Column - Command Panel */}
-          <div className="order-3 min-h-[450px] lg:min-h-auto">
+          <div className="order-3">
             <CommandPanel
               brands={transformedBrands}
               selectedBrand={selectedBrand}
