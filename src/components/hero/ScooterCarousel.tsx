@@ -143,10 +143,10 @@ const ScooterCarousel = ({
 
   return (
     <div className="relative flex items-center justify-center h-full w-full">
-      {/* Background Text Effect - TROTTINETTE - Studio depth effect */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none">
+      {/* Background Text Effect - TROTTINETTE - Hidden on mobile */}
+      <div className="absolute inset-0 hidden lg:flex items-center justify-center pointer-events-none overflow-hidden select-none">
         <span 
-          className="font-display text-[6rem] sm:text-[8rem] lg:text-[12rem] xl:text-[16rem] 
+          className="font-display text-[12rem] xl:text-[16rem] 
                      text-muted-foreground/[0.03] tracking-[0.2em] whitespace-nowrap uppercase"
           style={{ transform: 'translateY(-5%)' }}
         >
@@ -169,9 +169,9 @@ const ScooterCarousel = ({
         }}
       />
 
-      {/* Navigation Arrow LEFT - Closer to scooter */}
+      {/* Navigation Arrow LEFT - Hidden on mobile */}
       <motion.div 
-        className="absolute left-8 lg:left-12 xl:left-16 top-1/2 -translate-y-1/2 z-20"
+        className="absolute left-8 lg:left-12 xl:left-16 top-1/2 -translate-y-1/2 z-20 hidden lg:block"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -179,15 +179,15 @@ const ScooterCarousel = ({
           variant="outline"
           size="icon"
           onClick={scrollPrev}
-          className="rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+          className="rounded-full w-12 h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
         >
           <ChevronLeft className="w-5 h-5 text-carbon" />
         </Button>
       </motion.div>
 
-      {/* Navigation Arrow RIGHT - Closer to scooter */}
+      {/* Navigation Arrow RIGHT - Hidden on mobile */}
       <motion.div 
-        className="absolute right-8 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 z-20"
+        className="absolute right-8 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 z-20 hidden lg:block"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -195,7 +195,7 @@ const ScooterCarousel = ({
           variant="outline"
           size="icon"
           onClick={scrollNext}
-          className="rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+          className="rounded-full w-12 h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
         >
           <ChevronRight className="w-5 h-5 text-carbon" />
         </Button>
