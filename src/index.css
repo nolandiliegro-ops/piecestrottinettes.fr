@@ -180,4 +180,45 @@
     backdrop-filter: blur(12px);
     border: 1px solid hsl(var(--border) / 0.5);
   }
+
+  /* Studio Luxury Background - Professional Photo Studio with Reflective Floor */
+  .studio-luxury-bg {
+    background: 
+      /* Subtle top vignette */
+      radial-gradient(ellipse 100% 60% at 50% 0%, transparent 40%, hsl(0 0% 5% / 0.03) 100%),
+      /* Reflective floor gradient - bottom section */
+      linear-gradient(
+        to bottom,
+        hsl(var(--background)) 0%,
+        hsl(var(--background)) 50%,
+        hsl(30 10% 92%) 60%,
+        hsl(30 8% 88%) 75%,
+        hsl(0 0% 20% / 0.15) 90%,
+        hsl(0 0% 12% / 0.25) 100%
+      ),
+      /* Base */
+      hsl(var(--background));
+  }
+
+  /* Enhanced reflective floor effect with horizontal shine line */
+  .studio-floor-reflection {
+    position: relative;
+  }
+  
+  .studio-floor-reflection::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      hsl(0 0% 95% / 0.02) 20%,
+      hsl(0 0% 100% / 0.08) 50%,
+      hsl(0 0% 0% / 0.05) 100%
+    );
+    pointer-events: none;
+  }
 }
