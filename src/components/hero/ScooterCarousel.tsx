@@ -207,7 +207,7 @@ const ScooterCarousel = ({
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute top-[30%] lg:top-[26%] left-[15%] lg:left-[20%] -translate-y-1/2 z-30"
+        className="absolute top-[30%] lg:top-[26%] left-[38%] lg:left-[42%] -translate-y-1/2 z-30"
       >
         <div className="flex items-center gap-1.5 lg:gap-2 px-2 lg:px-3 py-1.5 lg:py-2 
                         bg-white/90 backdrop-blur-md rounded-lg border border-mineral/15 
