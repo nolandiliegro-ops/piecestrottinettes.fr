@@ -92,7 +92,14 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   };
 
   return (
-    <section className="py-8 lg:py-12 flex items-center overflow-hidden min-h-[700px] lg:min-h-[800px]">
+    <section 
+      className="py-8 lg:py-12 flex items-center overflow-hidden min-h-[700px] lg:min-h-[800px]"
+      style={{
+        backgroundImage: 'url(/garage-floor.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
       <div className="container mx-auto px-4 lg:px-8 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-[30%_40%_30%] gap-4 lg:gap-6 items-start h-full">
           {/* Left Column - Branding */}
