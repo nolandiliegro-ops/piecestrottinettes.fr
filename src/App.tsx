@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Garage from "./pages/Garage";
 import Admin from "./pages/Admin";
+import ScooterDetail from "./pages/ScooterDetail";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
+            <Route path="/scooter/:slug" element={<ScooterDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/garage" element={

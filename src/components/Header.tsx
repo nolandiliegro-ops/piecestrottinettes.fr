@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,12 +10,17 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useScootersGroupedByBrand } from "@/hooks/useScooterDetail";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, profile, signOut } = useAuth();
   const navigate = useNavigate();
+  const { data: scootersByBrand = [] } = useScootersGroupedByBrand();
 
   const navLinks = [
     { label: "Accueil", href: "/" },
@@ -61,6 +66,39 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            
+            {/* Trottinettes Dropdown Menu */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex items-center gap-1 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+                  Trottinettes
+                  <ChevronDown className="w-4 h-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center" className="w-56">
+                {scootersByBrand.map((brandGroup) => (
+                  <DropdownMenuSub key={brandGroup.brand.id}>
+                    <DropdownMenuSubTrigger className="font-medium">
+                      {brandGroup.brand.name}
+                    </DropdownMenuSubTrigger>
+                    <DropdownMenuSubContent className="w-48">
+                      {brandGroup.models.map((model) => (
+                        <DropdownMenuItem key={model.id} asChild>
+                          <Link to={`/scooter/${model.slug}`} className="cursor-pointer">
+                            {model.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuSubContent>
+                  </DropdownMenuSub>
+                ))}
+                {scootersByBrand.length === 0 && (
+                  <DropdownMenuItem disabled>
+                    Aucune trottinette
+                  </DropdownMenuItem>
+                )}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           {/* Actions */}
@@ -147,6 +185,28 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* Mobile Trottinettes Section */}
+              <div className="px-4 py-2">
+                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Trottinettes</p>
+                <div className="space-y-1">
+                  {scootersByBrand.slice(0, 5).map((brandGroup) => (
+                    <div key={brandGroup.brand.id}>
+                      <p className="text-xs font-medium text-foreground/70 py-1">{brandGroup.brand.name}</p>
+                      {brandGroup.models.slice(0, 3).map((model) => (
+                        <Link
+                          key={model.id}
+                          to={`/scooter/${model.slug}`}
+                          className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {model.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
               {user ? (
                 <>
                   <Link 

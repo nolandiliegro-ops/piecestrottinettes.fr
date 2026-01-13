@@ -7,7 +7,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search } from 'lucide-react';
+import { Textarea } from '@/components/ui/textarea';
+import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon } from 'lucide-react';
 import { toast } from 'sonner';
 import { getScooterImage } from '@/lib/scooterImageMapping';
 
@@ -23,6 +24,10 @@ interface Scooter {
   range_km: number | null;
   tire_size: string | null;
   youtube_video_id: string | null;
+  description: string | null;
+  meta_title: string | null;
+  meta_description: string | null;
+  affiliate_link: string | null;
   brand: { name: string } | null;
   brand_id: string;
 }
@@ -63,7 +68,11 @@ const ScootersManager = () => {
     max_speed_kmh: '',
     range_km: '',
     tire_size: '',
-    youtube_video_id: ''
+    youtube_video_id: '',
+    description: '',
+    meta_title: '',
+    meta_description: '',
+    affiliate_link: ''
   });
 
   const [editScooter, setEditScooter] = useState<Scooter | null>(null);
@@ -76,7 +85,11 @@ const ScootersManager = () => {
     max_speed_kmh: '',
     range_km: '',
     tire_size: '',
-    youtube_video_id: ''
+    youtube_video_id: '',
+    description: '',
+    meta_title: '',
+    meta_description: '',
+    affiliate_link: ''
   });
 
   useEffect(() => {
@@ -98,7 +111,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, brand_id, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, brand:brands(name)')
         .order('name');
 
       if (error) throw error;
@@ -132,15 +145,19 @@ const ScootersManager = () => {
           max_speed_kmh: newScooter.max_speed_kmh ? parseInt(newScooter.max_speed_kmh) : null,
           range_km: newScooter.range_km ? parseInt(newScooter.range_km) : null,
           tire_size: newScooter.tire_size.trim() || null,
-          youtube_video_id: newScooter.youtube_video_id.trim() || null
+          youtube_video_id: newScooter.youtube_video_id.trim() || null,
+          description: newScooter.description.trim() || null,
+          meta_title: newScooter.meta_title.trim() || null,
+          meta_description: newScooter.meta_description.trim() || null,
+          affiliate_link: newScooter.affiliate_link.trim() || null
         })
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, brand_id, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, brand:brands(name)')
         .single();
 
       if (error) throw error;
 
       setScooters(prev => [...prev, data]);
-      setNewScooter({ name: '', brand_id: '', power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '' });
+      setNewScooter({ name: '', brand_id: '', power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '', description: '', meta_title: '', meta_description: '', affiliate_link: '' });
       setIsCreateOpen(false);
       toast.success('Trottinette créée');
     } catch (error) {
@@ -162,7 +179,11 @@ const ScootersManager = () => {
       max_speed_kmh: scooter.max_speed_kmh?.toString() || '',
       range_km: scooter.range_km?.toString() || '',
       tire_size: scooter.tire_size || '',
-      youtube_video_id: scooter.youtube_video_id || ''
+      youtube_video_id: scooter.youtube_video_id || '',
+      description: scooter.description || '',
+      meta_title: scooter.meta_title || '',
+      meta_description: scooter.meta_description || '',
+      affiliate_link: scooter.affiliate_link || ''
     });
     setIsEditOpen(true);
   };
@@ -185,7 +206,11 @@ const ScootersManager = () => {
           max_speed_kmh: editValues.max_speed_kmh ? parseInt(editValues.max_speed_kmh) : null,
           range_km: editValues.range_km ? parseInt(editValues.range_km) : null,
           tire_size: editValues.tire_size.trim() || null,
-          youtube_video_id: editValues.youtube_video_id.trim() || null
+          youtube_video_id: editValues.youtube_video_id.trim() || null,
+          description: editValues.description.trim() || null,
+          meta_title: editValues.meta_title.trim() || null,
+          meta_description: editValues.meta_description.trim() || null,
+          affiliate_link: editValues.affiliate_link.trim() || null
         })
         .eq('id', editScooter.id);
 
@@ -205,6 +230,10 @@ const ScootersManager = () => {
               range_km: editValues.range_km ? parseInt(editValues.range_km) : null,
               tire_size: editValues.tire_size.trim() || null,
               youtube_video_id: editValues.youtube_video_id.trim() || null,
+              description: editValues.description.trim() || null,
+              meta_title: editValues.meta_title.trim() || null,
+              meta_description: editValues.meta_description.trim() || null,
+              affiliate_link: editValues.affiliate_link.trim() || null,
               brand: brands.find(b => b.id === editValues.brand_id) ? { name: brands.find(b => b.id === editValues.brand_id)!.name } : null
             }
           : s
@@ -295,7 +324,7 @@ const ScootersManager = () => {
   };
 
   const exportCSV = () => {
-    const headers = ['Nom', 'Slug', 'Marque', 'Puissance', 'Voltage', 'Ampérage', 'Vitesse Max', 'Autonomie', 'Pneus', 'YouTube ID'];
+    const headers = ['Nom', 'Slug', 'Marque', 'Puissance', 'Voltage', 'Ampérage', 'Vitesse Max', 'Autonomie', 'Pneus', 'YouTube ID', 'Description', 'Meta Title', 'Meta Description', 'Lien Affiliation'];
     const rows = scooters.map(s => [
       s.name,
       s.slug,
@@ -306,10 +335,14 @@ const ScootersManager = () => {
       s.max_speed_kmh?.toString() || '',
       s.range_km?.toString() || '',
       s.tire_size || '',
-      s.youtube_video_id || ''
+      s.youtube_video_id || '',
+      s.description || '',
+      s.meta_title || '',
+      s.meta_description || '',
+      s.affiliate_link || ''
     ]);
 
-    const csv = [headers.join(','), ...rows.map(r => r.map(c => `"${c}"`).join(','))].join('\n');
+    const csv = [headers.join(','), ...rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(','))].join('\n');
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');

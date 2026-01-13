@@ -253,13 +253,17 @@ export type Database = {
       }
       scooter_models: {
         Row: {
+          affiliate_link: string | null
           amperage: number | null
           brand_id: string
           compatible_parts_count: number | null
           created_at: string
+          description: string | null
           id: string
           image_url: string | null
           max_speed_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
           name: string
           power_watts: number | null
           range_km: number | null
@@ -269,13 +273,17 @@ export type Database = {
           youtube_video_id: string | null
         }
         Insert: {
+          affiliate_link?: string | null
           amperage?: number | null
           brand_id: string
           compatible_parts_count?: number | null
           created_at?: string
+          description?: string | null
           id?: string
           image_url?: string | null
           max_speed_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
           name: string
           power_watts?: number | null
           range_km?: number | null
@@ -285,13 +293,17 @@ export type Database = {
           youtube_video_id?: string | null
         }
         Update: {
+          affiliate_link?: string | null
           amperage?: number | null
           brand_id?: string
           compatible_parts_count?: number | null
           created_at?: string
+          description?: string | null
           id?: string
           image_url?: string | null
           max_speed_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
           name?: string
           power_watts?: number | null
           range_km?: number | null
