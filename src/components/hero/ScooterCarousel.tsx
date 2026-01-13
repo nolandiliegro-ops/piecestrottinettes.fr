@@ -201,15 +201,15 @@ const ScooterCarousel = ({
         </Button>
       </motion.div>
 
-      {/* Dashboard Specs Bar - Compact, positioned to not overlap buttons */}
+      {/* Dashboard Specs Bar - Elevated, frameless transparent style */}
       <motion.div 
         key={`specs-bar-${activeModel?.id}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute bottom-[8%] lg:bottom-[10%] left-1/2 -translate-x-1/2 z-30"
+        className="absolute bottom-[14%] lg:bottom-[16%] left-1/2 -translate-x-1/2 z-30"
       >
-        <div className="flex items-center gap-2 lg:gap-3 bg-white/95 backdrop-blur-md border border-mineral/20 rounded-xl px-3 lg:px-4 py-2 lg:py-2.5 shadow-lg">
+        <div className="flex items-center gap-3 lg:gap-4 px-4 lg:px-6 py-3 lg:py-3.5">
           
           {/* Voltage - INTERACTIVE */}
           <Popover open={voltageOpen} onOpenChange={setVoltageOpen}>
