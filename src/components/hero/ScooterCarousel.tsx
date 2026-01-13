@@ -201,139 +201,171 @@ const ScooterCarousel = ({
         </Button>
       </motion.div>
 
-      {/* Dashboard Specs Bar - Elevated, frameless transparent style */}
+      {/* FLOATING SPECS - Centre de l'image de la trottinette */}
       <motion.div 
-        key={`specs-bar-${activeModel?.id}`}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        key={`specs-floating-${activeModel?.id}`}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute bottom-[14%] lg:bottom-[16%] left-1/2 -translate-x-1/2 z-30"
+        className="absolute top-[42%] lg:top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
       >
-        <div className="flex items-center gap-3 lg:gap-4 px-4 lg:px-6 py-3 lg:py-3.5">
+        <div className="flex items-center gap-4 lg:gap-6 px-5 lg:px-8 py-4 lg:py-5 
+                        bg-white/90 backdrop-blur-md rounded-2xl border border-mineral/15 
+                        shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
           
-          {/* Voltage - INTERACTIVE */}
+          {/* Voltage avec label */}
           <Popover open={voltageOpen} onOpenChange={setVoltageOpen}>
             <PopoverTrigger asChild>
-              <button className="flex items-center gap-1 hover:bg-mineral/5 rounded-md px-1.5 py-0.5 transition-colors group cursor-pointer">
-                <CircuitBoard className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-amber-500" />
-                <div className="flex items-baseline gap-0.5">
+              <button className="flex flex-col items-center gap-1 hover:bg-mineral/5 rounded-lg px-2 py-1 transition-colors group cursor-pointer">
+                <span className="text-[9px] lg:text-[10px] text-muted-foreground uppercase tracking-wider font-medium">Volt</span>
+                <div className="flex items-center gap-1">
+                  <CircuitBoard className="w-4 h-4 lg:w-5 lg:h-5 text-amber-500" />
                   <AnimatedNumber 
                     value={displayVoltage}
-                    className="font-display text-base lg:text-lg text-carbon"
+                    className="font-display text-lg lg:text-xl text-carbon"
                   />
-                  <span className="text-[10px] text-muted-foreground font-medium">V</span>
+                  <span className="text-xs text-muted-foreground font-medium">V</span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground group-hover:text-carbon transition-colors" />
                 </div>
-                <ChevronDown className="w-2.5 h-2.5 text-muted-foreground group-hover:text-carbon transition-colors" />
               </button>
             </PopoverTrigger>
-          <PopoverContent className="w-24 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
-            <Command>
-              <CommandList>
-                {availableVoltages.map((v) => (
-                  <CommandItem
-                    key={v}
-                    onSelect={() => {
-                      setSelectedVoltage(v);
-                      setVoltageOpen(false);
-                    }}
-                    className={`cursor-pointer text-sm ${displayVoltage === v ? 'bg-mineral/10 font-semibold' : ''}`}
-                  >
-                    {v}V
-                  </CommandItem>
-                ))}
-              </CommandList>
-            </Command>
-          </PopoverContent>
-        </Popover>
-
-        {/* Divider */}
-        <div className="h-5 w-px bg-mineral/20" />
-
-        {/* Amperage - INTERACTIVE with dynamic filtering */}
-        <Popover open={amperageOpen} onOpenChange={setAmperageOpen}>
-          <PopoverTrigger asChild>
-            <button className="flex items-center gap-1 hover:bg-mineral/5 rounded-md px-1.5 py-0.5 transition-colors group cursor-pointer">
-              <BatteryCharging className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-green-500" />
-              <div className="flex items-baseline gap-0.5">
-                <AnimatedNumber 
-                  value={displayAmperage}
-                  className="font-display text-base lg:text-lg text-carbon"
-                />
-                <span className="text-[10px] text-muted-foreground font-medium">Ah</span>
-              </div>
-              <ChevronDown className="w-2.5 h-2.5 text-muted-foreground group-hover:text-carbon transition-colors" />
-            </button>
-          </PopoverTrigger>
-          <PopoverContent className="w-24 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
-            <Command>
-              <CommandList>
-                {availableAmperages.map((a) => (
-                  <CommandItem
-                    key={a}
-                    onSelect={() => {
-                      setSelectedAmperage(a);
-                      setAmperageOpen(false);
-                    }}
-                    className={`cursor-pointer text-sm ${displayAmperage === a ? 'bg-mineral/10 font-semibold' : ''}`}
-                  >
-                    {a}Ah
-                  </CommandItem>
-                ))}
-              </CommandList>
-            </Command>
-          </PopoverContent>
-        </Popover>
+            <PopoverContent className="w-24 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
+              <Command>
+                <CommandList>
+                  {availableVoltages.map((v) => (
+                    <CommandItem
+                      key={v}
+                      onSelect={() => {
+                        setSelectedVoltage(v);
+                        setVoltageOpen(false);
+                      }}
+                      className={`cursor-pointer text-sm ${displayVoltage === v ? 'bg-mineral/10 font-semibold' : ''}`}
+                    >
+                      {v}V
+                    </CommandItem>
+                  ))}
+                </CommandList>
+              </Command>
+            </PopoverContent>
+          </Popover>
 
           {/* Divider */}
-          <div className="h-5 w-px bg-mineral/20" />
+          <div className="h-10 w-px bg-mineral/20" />
 
-          {/* Wattage - FIXED (non-interactive) */}
-          <div className="flex items-center gap-1">
-            <Zap className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-yellow-500" />
-            <div className="flex items-baseline gap-0.5">
+          {/* Amperage avec label */}
+          <Popover open={amperageOpen} onOpenChange={setAmperageOpen}>
+            <PopoverTrigger asChild>
+              <button className="flex flex-col items-center gap-1 hover:bg-mineral/5 rounded-lg px-2 py-1 transition-colors group cursor-pointer">
+                <span className="text-[9px] lg:text-[10px] text-muted-foreground uppercase tracking-wider font-medium">Ah</span>
+                <div className="flex items-center gap-1">
+                  <BatteryCharging className="w-4 h-4 lg:w-5 lg:h-5 text-green-500" />
+                  <AnimatedNumber 
+                    value={displayAmperage}
+                    className="font-display text-lg lg:text-xl text-carbon"
+                  />
+                  <span className="text-xs text-muted-foreground font-medium">Ah</span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground group-hover:text-carbon transition-colors" />
+                </div>
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="w-24 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
+              <Command>
+                <CommandList>
+                  {availableAmperages.map((a) => (
+                    <CommandItem
+                      key={a}
+                      onSelect={() => {
+                        setSelectedAmperage(a);
+                        setAmperageOpen(false);
+                      }}
+                      className={`cursor-pointer text-sm ${displayAmperage === a ? 'bg-mineral/10 font-semibold' : ''}`}
+                    >
+                      {a}Ah
+                    </CommandItem>
+                  ))}
+                </CommandList>
+              </Command>
+            </PopoverContent>
+          </Popover>
+
+          {/* Divider */}
+          <div className="h-10 w-px bg-mineral/20" />
+
+          {/* Wattage avec label */}
+          <div className="flex flex-col items-center gap-1 px-2 py-1">
+            <span className="text-[9px] lg:text-[10px] text-muted-foreground uppercase tracking-wider font-medium">Watt</span>
+            <div className="flex items-center gap-1">
+              <Zap className="w-4 h-4 lg:w-5 lg:h-5 text-yellow-500" />
               <AnimatedNumber 
                 value={displayWattage}
-                className="font-display text-base lg:text-lg text-carbon"
+                className="font-display text-lg lg:text-xl text-carbon"
               />
-              <span className="text-[10px] text-muted-foreground font-medium">W</span>
+              <span className="text-xs text-muted-foreground font-medium">W</span>
             </div>
           </div>
         </div>
       </motion.div>
 
-      {/* Pagination Dots with Dynamic Counter */}
+      {/* BRIDGE BUTTON - Position de l'ancienne barre de specs (bas centre) */}
       <motion.div 
-        className="absolute bottom-[3%] lg:bottom-[4%] left-1/2 -translate-x-1/2 z-20 flex items-center gap-2"
+        className="absolute bottom-[12%] lg:bottom-[14%] left-1/2 -translate-x-1/2 z-40"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
+      >
+        <button
+          onClick={() => document.getElementById('compatible-parts')?.scrollIntoView({ behavior: 'smooth' })}
+          className="group relative flex items-center gap-3 lg:gap-4 
+                     px-8 py-4 lg:px-10 lg:py-5 
+                     bg-carbon text-greige 
+                     font-display text-base lg:text-xl tracking-wide
+                     rounded-full border border-white/10
+                     shadow-[0_8px_32px_rgba(28,28,28,0.4)]
+                     hover:shadow-[0_12px_48px_rgba(28,28,28,0.6)]
+                     hover:scale-105 active:scale-100
+                     transition-all duration-300"
+        >
+          {/* Glow Effect */}
+          <span className="absolute inset-0 rounded-full bg-gradient-to-r from-mineral/20 to-garage/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity" />
+          
+          <span className="relative z-10">DÉCOUVRIR LES PIÈCES</span>
+          <ChevronDown className="relative z-10 w-5 h-5 lg:w-6 lg:h-6 animate-bounce" />
+        </button>
+      </motion.div>
+
+      {/* Pagination Dots - PLUS IMPOSANTS avec Dynamic Counter */}
+      <motion.div 
+        className="absolute bottom-[2%] lg:bottom-[3%] left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 lg:gap-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.5 }}
       >
-        {/* Navigation Dots - Show max 7 dots, or less if fewer models */}
-        <div className="flex items-center gap-1.5">
+        {/* Navigation Dots - BIGGER - Show max 7 dots */}
+        <div className="flex items-center gap-2 lg:gap-3">
           {Array.from({ length: Math.min(7, models.length) }).map((_, index) => (
             <button
               key={index}
               onClick={() => onSelect(index)}
               className={cn(
-                "w-2 h-2 rounded-full transition-all duration-300",
+                "rounded-full transition-all duration-300",
                 index === activeIndex
-                  ? "w-6 bg-mineral"
-                  : "bg-mineral/30 hover:bg-mineral/50"
+                  ? "w-8 lg:w-10 h-3 lg:h-4 bg-mineral"
+                  : "w-3 h-3 lg:w-4 lg:h-4 bg-mineral/30 hover:bg-mineral/50"
               )}
             />
           ))}
         </div>
         
-        {/* Dynamic Counter - Only shows if more than 7 models */}
+        {/* Dynamic Counter - BIGGER & BOLDER */}
         {models.length > 7 && (
-          <span className="text-sm text-muted-foreground font-medium ml-1">
+          <span className="text-lg lg:text-xl font-bold text-carbon ml-1">
             +{models.length - 7}
           </span>
         )}
 
-        {/* Total Badge - Elegant pill showing current filtered count */}
-        <div className="ml-2 px-2.5 py-1 rounded-full bg-mineral/10 border border-mineral/20 backdrop-blur-sm">
-          <span className="text-xs font-semibold text-mineral">
+        {/* Total Badge - More Prominent */}
+        <div className="ml-3 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full bg-mineral/15 border border-mineral/25 backdrop-blur-sm">
+          <span className="text-sm lg:text-base font-bold text-mineral">
             {models.length} modèle{models.length > 1 ? 's' : ''}
           </span>
         </div>
