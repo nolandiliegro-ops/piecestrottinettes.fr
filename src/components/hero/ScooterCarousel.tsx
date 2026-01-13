@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, ArrowRight, Zap } from "lucide-react";
+import { ChevronLeft, ChevronRight, Zap, Gauge, Battery } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel } from "@/data/scooterData";
 import useEmblaCarousel from "embla-carousel-react";
@@ -158,10 +158,80 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                       <img
                         src={imageSrc}
                         alt={`${model.brand} ${model.name}`}
-                        className="relative w-full h-full object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+                        className="relative w-full h-[75%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
                       />
+                      
+                      {/* Mirror Reflection Effect */}
+                      <div className="absolute bottom-0 left-0 right-0 h-[25%] overflow-hidden pointer-events-none">
+                        <img
+                          src={imageSrc}
+                          alt=""
+                          className="w-full h-[300%] object-contain opacity-[0.15] blur-[1px]"
+                          style={{
+                            transform: 'scaleY(-1) translateY(67%)',
+                            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 80%)',
+                            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 80%)'
+                          }}
+                        />
+                      </div>
                     </motion.div>
                   </AnimatePresence>
+
+                  {/* Floating Spec Badges */}
+                  {isActive && (
+                    <>
+                      {/* Power Badge - Top Left */}
+                      <motion.div
+                        key={`power-${model.id}`}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
+                        className="absolute left-0 top-1/4 bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                      >
+                        <div className="flex items-center gap-1.5">
+                          <Zap className="w-4 h-4 text-mineral" />
+                          <span className="font-display text-lg text-carbon">
+                            {parseSpecValue(model.specs.power)}
+                          </span>
+                          <span className="text-xs text-muted-foreground font-medium">W</span>
+                        </div>
+                      </motion.div>
+
+                      {/* Speed Badge - Middle Right */}
+                      <motion.div
+                        key={`speed-${model.id}`}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
+                        className="absolute right-0 top-1/3 bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                      >
+                        <div className="flex items-center gap-1.5">
+                          <Gauge className="w-4 h-4 text-mineral" />
+                          <span className="font-display text-lg text-carbon">
+                            {parseSpecValue(model.specs.maxSpeed)}
+                          </span>
+                          <span className="text-xs text-muted-foreground font-medium">km/h</span>
+                        </div>
+                      </motion.div>
+
+                      {/* Range Badge - Bottom Center */}
+                      <motion.div
+                        key={`range-${model.id}`}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
+                        className="absolute left-1/2 -translate-x-1/2 bottom-4 bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                      >
+                        <div className="flex items-center gap-1.5">
+                          <Battery className="w-4 h-4 text-mineral" />
+                          <span className="font-display text-lg text-carbon">
+                            {parseSpecValue(model.specs.range)}
+                          </span>
+                          <span className="text-xs text-muted-foreground font-medium">km</span>
+                        </div>
+                      </motion.div>
+                    </>
+                  )}
                 </div>
               </div>
             );
@@ -245,54 +315,6 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             {activeModel.name}
           </motion.h3>
           
-          {/* Performance Stats - Clean Layout */}
-          <motion.div 
-            className="flex items-center justify-center gap-5 mb-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            {/* Power */}
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-1 text-mineral">
-                <Zap className="w-3.5 h-3.5" />
-                <AnimatedNumber 
-                  value={parseSpecValue(activeModel.specs.power)} 
-                  className="font-mono text-base font-semibold"
-                />
-                <span className="text-xs font-mono">W</span>
-              </div>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Power</span>
-            </div>
-
-            <div className="w-px h-5 bg-border" />
-
-            {/* Speed */}
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-1 text-mineral">
-                <AnimatedNumber 
-                  value={parseSpecValue(activeModel.specs.maxSpeed)} 
-                  className="font-mono text-base font-semibold"
-                />
-                <span className="text-xs font-mono">km/h</span>
-              </div>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Vitesse</span>
-            </div>
-
-            <div className="w-px h-5 bg-border" />
-
-            {/* Range */}
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-1 text-mineral">
-                <AnimatedNumber 
-                  value={parseSpecValue(activeModel.specs.range)} 
-                  className="font-mono text-base font-semibold"
-                />
-                <span className="text-xs font-mono">km</span>
-              </div>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Autonomie</span>
-            </div>
-          </motion.div>
 
           {/* Compatible Parts Badge - Refined */}
           <motion.div
