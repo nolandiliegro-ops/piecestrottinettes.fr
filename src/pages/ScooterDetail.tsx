@@ -90,7 +90,7 @@ const ScooterDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background studio-luxury-bg">
+    <div className="min-h-screen bg-background studio-luxury-bg watermark-brand">
       <Header />
       
       <main className="pt-16 lg:pt-20">

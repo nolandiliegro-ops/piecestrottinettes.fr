@@ -91,13 +91,6 @@ const ScooterCarousel = ({
 
   return (
     <div className="relative flex items-center justify-center h-full w-full">
-      {/* Watermark filigrane discret */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-        <span className="font-display text-[4rem] lg:text-[8rem] xl:text-[10rem] text-muted-foreground/[0.03] tracking-[0.15em] whitespace-nowrap select-none">
-          PIECESTROTTINETTES.FR
-        </span>
-      </div>
-
       {/* Subtle background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <div 

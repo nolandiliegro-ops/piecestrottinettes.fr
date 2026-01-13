@@ -96,7 +96,7 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg">
+    <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg watermark-brand">
       <Header />
       
       {/* Main Content - Zero Scroll Layout */}

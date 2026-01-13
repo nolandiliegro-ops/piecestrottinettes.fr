@@ -258,4 +258,27 @@
     );
     pointer-events: none;
   }
+
+  /* Premium Brand Watermark - Signature discrète */
+  .watermark-brand {
+    position: relative;
+  }
+
+  .watermark-brand::after {
+    content: 'PIECESTROTTINETTES.FR';
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 12vw, 10rem);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    opacity: 0.04;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
 }
