@@ -168,9 +168,9 @@ const ScooterCarousel = ({
         }}
       />
 
-      {/* Navigation Arrow LEFT - Outside carousel */}
+      {/* Navigation Arrow LEFT - Closer to scooter */}
       <motion.div 
-        className="absolute left-0 lg:-left-4 xl:-left-8 top-1/2 -translate-y-1/2 z-20"
+        className="absolute left-8 lg:left-12 xl:left-16 top-1/2 -translate-y-1/2 z-20"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -178,15 +178,15 @@ const ScooterCarousel = ({
           variant="outline"
           size="icon"
           onClick={scrollPrev}
-          className="rounded-full w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+          className="rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
         >
-          <ChevronLeft className="w-6 h-6 text-carbon" />
+          <ChevronLeft className="w-5 h-5 text-carbon" />
         </Button>
       </motion.div>
 
-      {/* Navigation Arrow RIGHT - Outside carousel */}
+      {/* Navigation Arrow RIGHT - Closer to scooter */}
       <motion.div 
-        className="absolute right-0 lg:-right-4 xl:-right-8 top-1/2 -translate-y-1/2 z-20"
+        className="absolute right-8 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 z-20"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -194,9 +194,9 @@ const ScooterCarousel = ({
           variant="outline"
           size="icon"
           onClick={scrollNext}
-          className="rounded-full w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+          className="rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
         >
-          <ChevronRight className="w-6 h-6 text-carbon" />
+          <ChevronRight className="w-5 h-5 text-carbon" />
         </Button>
       </motion.div>
 
