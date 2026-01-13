@@ -25,7 +25,7 @@ interface GarageScooter {
     compatible_parts_count?: number | null;
   };
   nickname?: string | null;
-  added_at: string;
+  added_at?: string | null;
   is_owned?: boolean;
   current_km?: number | null;
   custom_photo_url?: string | null;

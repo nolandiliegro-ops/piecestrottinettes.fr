@@ -12,6 +12,7 @@ import ScooterDescription from "@/components/scooter/ScooterDescription";
 import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import AffiliateButton from "@/components/scooter/AffiliateButton";
+import OtherScootersCarousel from "@/components/scooter/OtherScootersCarousel";
 
 const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -89,16 +90,16 @@ const ScooterDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background studio-luxury-bg">
       <Header />
       
       <main className="pt-16 lg:pt-20">
         {/* Back Navigation */}
         <div className="container mx-auto px-4 lg:px-8 pt-6">
-          <Link to="/">
+          <Link to="/trottinettes">
             <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-foreground">
               <ArrowLeft className="w-4 h-4" />
-              Retour
+              Toutes les trottinettes
             </Button>
           </Link>
         </div>
@@ -121,6 +122,9 @@ const ScooterDetail = () => {
           isLoading={isLoadingParts}
           scooterName={scooter.name}
         />
+
+        {/* Other Scooters Carousel */}
+        <OtherScootersCarousel currentScooterId={scooter.id} />
 
         {/* Affiliate CTA */}
         {scooter.affiliate_link && (
