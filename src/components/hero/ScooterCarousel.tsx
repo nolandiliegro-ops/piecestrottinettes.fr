@@ -207,11 +207,11 @@ const ScooterCarousel = ({
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute top-[42%] lg:top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
+        className="absolute top-[32%] lg:top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
       >
-        <div className="flex items-center gap-4 lg:gap-6 px-5 lg:px-8 py-4 lg:py-5 
-                        bg-white/90 backdrop-blur-md rounded-2xl border border-mineral/15 
-                        shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+        <div className="flex items-center gap-2 lg:gap-3 px-3 lg:px-4 py-2 lg:py-2.5 
+                        bg-white/90 backdrop-blur-md rounded-xl border border-mineral/15 
+                        shadow-[0_4px_16px_rgba(0,0,0,0.1)]">
           
           {/* Voltage avec label */}
           <Popover open={voltageOpen} onOpenChange={setVoltageOpen}>
