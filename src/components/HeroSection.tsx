@@ -1,6 +1,4 @@
 import { useState, useMemo, useEffect } from "react";
-import { ArrowDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
 import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
@@ -95,13 +93,6 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
     }
   };
 
-  const scrollToCompatibleParts = () => {
-    document.getElementById('compatible-parts')?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
   return (
     <section className="hero-studio-bg relative py-4 lg:py-6 flex flex-col overflow-hidden min-h-[480px] lg:min-h-[70vh] max-h-[85vh]">
       <div className="container mx-auto px-4 lg:px-8 flex-1">
@@ -143,17 +134,6 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
             />
           </div>
         </div>
-      </div>
-
-      {/* CTA Button - Centered below the grid */}
-      <div className="flex justify-center py-4 lg:py-6">
-        <Button 
-          onClick={scrollToCompatibleParts}
-          className="rounded-full px-8 py-6 font-display text-base lg:text-lg tracking-wide gap-3 bg-carbon text-greige hover:bg-carbon/90 shadow-lg hover:shadow-xl transition-all hover:scale-105"
-        >
-          DÉCOUVRIR LES PIÈCES
-          <ArrowDown className="w-5 h-5 animate-bounce" />
-        </Button>
       </div>
     </section>
   );
