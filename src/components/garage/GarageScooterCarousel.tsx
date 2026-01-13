@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { getScooterImage } from '@/lib/scooterImageMapping';
 import ScooterPlaceholder from './ScooterPlaceholder';
 import CustomPhotoButton from './CustomPhotoButton';
+import VerticalScooterThumbnails from './VerticalScooterThumbnails';
 
 interface GarageScooter {
   id: string;
@@ -112,7 +113,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
   const hasCustomPhoto = !!customPhoto;
 
   return (
-    <div className={cn("relative h-full flex flex-col", className)}>
+    <div className={cn("relative h-full flex gap-2", className)}>
       {/* Main Image Container - Takes up available space */}
       <div 
         className="relative flex-1 bg-[#3A3A3A] border border-white/10 rounded-2xl overflow-hidden shadow-xl"
@@ -226,23 +227,20 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
         )}
       </div>
 
-      {/* Dots Navigation */}
+      {/* Vertical Thumbnails */}
       {scooters.length > 1 && (
-        <div className="flex items-center justify-center gap-2 mt-3">
-          {scooters.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={cn(
-                "transition-all duration-300",
-                index === currentIndex
-                  ? "w-6 h-2 bg-mineral rounded-full"
-                  : "w-2 h-2 bg-mineral/30 rounded-full hover:bg-mineral/50"
-              )}
-              aria-label={`Aller à la trottinette ${index + 1}`}
-            />
-          ))}
-        </div>
+        <VerticalScooterThumbnails
+          scooters={scooters}
+          selectedScooterId={currentScooter.id}
+          onScooterSelect={(scooter) => {
+            const newIndex = scooters.findIndex(s => s.id === scooter.id);
+            if (newIndex !== -1) {
+              setCurrentIndex(newIndex);
+              setShowCustomPhoto(false);
+              onScooterChange?.(scooter);
+            }
+          }}
+        />
       )}
     </div>
   );

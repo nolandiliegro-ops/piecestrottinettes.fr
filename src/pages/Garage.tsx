@@ -186,18 +186,20 @@ const Garage = () => {
             </motion.div>
           </div>
 
-          {/* Bottom Row: Horizontal Showroom Carousel */}
-          {!scootersLoading && scooters && scooters.length > 0 && (
+          {/* Bottom Row: Compatible Parts */}
+          {selectedScooter && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
               className="mt-4 shrink-0"
             >
-              <HorizontalShowroomCarousel
-                scooters={scooters}
-                selectedScooterId={selectedScooter?.id || null}
-                onScooterSelect={setSelectedScooter}
+              <CompactProductsRow
+                scooterId={selectedScooter.id}
+                scooterName={scooterName}
+                parts={parts || []}
+                loading={partsLoading}
+                onViewPart={(partId) => navigate(`/part/${partId}`)}
               />
             </motion.div>
           )}
