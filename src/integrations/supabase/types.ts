@@ -251,6 +251,41 @@ export type Database = {
         }
         Relationships: []
       }
+      scooter_battery_configs: {
+        Row: {
+          amperage: number
+          created_at: string | null
+          id: string
+          is_default: boolean | null
+          scooter_model_id: string
+          voltage: number
+        }
+        Insert: {
+          amperage: number
+          created_at?: string | null
+          id?: string
+          is_default?: boolean | null
+          scooter_model_id: string
+          voltage: number
+        }
+        Update: {
+          amperage?: number
+          created_at?: string | null
+          id?: string
+          is_default?: boolean | null
+          scooter_model_id?: string
+          voltage?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scooter_battery_configs_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       scooter_models: {
         Row: {
           affiliate_link: string | null

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { ChevronLeft, ChevronRight, Zap, CircuitBoard, BatteryCharging, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScooterModel, voltageOptions, amperageOptions } from "@/data/scooterData";
@@ -9,6 +9,7 @@ import FavoriteButton from "@/components/garage/FavoriteButton";
 import GarageButton from "@/components/garage/GarageButton";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandItem, CommandList } from "@/components/ui/command";
+import { useBatteryConfigs, getAvailableVoltages, getAvailableAmperages, getDefaultConfig } from "@/hooks/useBatteryConfigs";
 
 // Centralized image mapping
 import { scooterImages } from "@/lib/scooterImageMapping";
@@ -51,9 +52,37 @@ const ScooterCarousel = ({
   
   const activeModel = models[activeIndex] || models[0];
   
-  // Computed display values
-  const displayVoltage = selectedVoltage ?? activeModel?.voltage ?? 36;
-  const displayAmperage = selectedAmperage ?? activeModel?.amperage ?? 12;
+  // Fetch battery configs from database for current model
+  const { data: batteryConfigs = [] } = useBatteryConfigs(activeModel?.id || null);
+  
+  // Get available options based on database configs
+  const availableVoltages = useMemo(() => {
+    if (batteryConfigs.length === 0) return voltageOptions;
+    return getAvailableVoltages(batteryConfigs);
+  }, [batteryConfigs]);
+  
+  const availableAmperages = useMemo(() => {
+    if (batteryConfigs.length === 0) return amperageOptions;
+    const voltage = selectedVoltage ?? activeModel?.voltage ?? availableVoltages[0] ?? 36;
+    return getAvailableAmperages(batteryConfigs, voltage);
+  }, [batteryConfigs, selectedVoltage, activeModel?.voltage, availableVoltages]);
+  
+  // Computed display values - use selected or model default or database default
+  const defaultConfig = useMemo(() => getDefaultConfig(batteryConfigs), [batteryConfigs]);
+  
+  const displayVoltage = selectedVoltage ?? defaultConfig?.voltage ?? activeModel?.voltage ?? 36;
+  const displayAmperage = useMemo(() => {
+    // If amperage is selected, use it if it's valid for current voltage
+    if (selectedAmperage && availableAmperages.includes(selectedAmperage)) {
+      return selectedAmperage;
+    }
+    // Otherwise use default or first available
+    if (defaultConfig && displayVoltage === defaultConfig.voltage) {
+      return defaultConfig.amperage;
+    }
+    return availableAmperages[0] ?? activeModel?.amperage ?? 12;
+  }, [selectedAmperage, availableAmperages, defaultConfig, displayVoltage, activeModel?.amperage]);
+  
   const displayWattage = activeModel ? parseSpecValue(activeModel.specs?.power || "0W") : 0;
 
   // Track model changes for animation trigger + reset selectors
@@ -65,6 +94,13 @@ const ScooterCarousel = ({
       setSelectedAmperage(null);
     }
   }, [activeModel, prevActiveId]);
+  
+  // When voltage changes, reset amperage if it's not valid for new voltage
+  useEffect(() => {
+    if (selectedVoltage && selectedAmperage && !availableAmperages.includes(selectedAmperage)) {
+      setSelectedAmperage(null);
+    }
+  }, [selectedVoltage, selectedAmperage, availableAmperages]);
 
   useEffect(() => {
     if (emblaApi) {
@@ -189,63 +225,63 @@ const ScooterCarousel = ({
                 <ChevronDown className="w-3 h-3 text-muted-foreground group-hover:text-carbon transition-colors" />
               </button>
             </PopoverTrigger>
-            <PopoverContent className="w-28 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
-              <Command>
-                <CommandList>
-                  {voltageOptions.map((v) => (
-                    <CommandItem
-                      key={v}
-                      onSelect={() => {
-                        setSelectedVoltage(v);
-                        setVoltageOpen(false);
-                      }}
-                      className={`cursor-pointer text-sm ${displayVoltage === v ? 'bg-mineral/10 font-semibold' : ''}`}
-                    >
-                      {v}V
-                    </CommandItem>
-                  ))}
-                </CommandList>
-              </Command>
-            </PopoverContent>
-          </Popover>
+          <PopoverContent className="w-28 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
+            <Command>
+              <CommandList>
+                {availableVoltages.map((v) => (
+                  <CommandItem
+                    key={v}
+                    onSelect={() => {
+                      setSelectedVoltage(v);
+                      setVoltageOpen(false);
+                    }}
+                    className={`cursor-pointer text-sm ${displayVoltage === v ? 'bg-mineral/10 font-semibold' : ''}`}
+                  >
+                    {v}V
+                  </CommandItem>
+                ))}
+              </CommandList>
+            </Command>
+          </PopoverContent>
+        </Popover>
 
-          {/* Divider */}
-          <div className="h-8 w-px bg-mineral/20" />
+        {/* Divider */}
+        <div className="h-8 w-px bg-mineral/20" />
 
-          {/* Amperage - INTERACTIVE */}
-          <Popover open={amperageOpen} onOpenChange={setAmperageOpen}>
-            <PopoverTrigger asChild>
-              <button className="flex items-center gap-1.5 hover:bg-mineral/5 rounded-lg px-2 py-1 transition-colors group cursor-pointer">
-                <BatteryCharging className="w-4 h-4 lg:w-5 lg:h-5 text-green-500" />
-                <div className="flex items-baseline gap-0.5">
-                  <AnimatedNumber 
-                    value={displayAmperage}
-                    className="font-display text-xl lg:text-2xl text-carbon"
-                  />
-                  <span className="text-xs text-muted-foreground font-medium">Ah</span>
-                </div>
-                <ChevronDown className="w-3 h-3 text-muted-foreground group-hover:text-carbon transition-colors" />
-              </button>
-            </PopoverTrigger>
-            <PopoverContent className="w-28 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
-              <Command>
-                <CommandList>
-                  {amperageOptions.map((a) => (
-                    <CommandItem
-                      key={a}
-                      onSelect={() => {
-                        setSelectedAmperage(a);
-                        setAmperageOpen(false);
-                      }}
-                      className={`cursor-pointer text-sm ${displayAmperage === a ? 'bg-mineral/10 font-semibold' : ''}`}
-                    >
-                      {a}Ah
-                    </CommandItem>
-                  ))}
-                </CommandList>
-              </Command>
-            </PopoverContent>
-          </Popover>
+        {/* Amperage - INTERACTIVE with dynamic filtering */}
+        <Popover open={amperageOpen} onOpenChange={setAmperageOpen}>
+          <PopoverTrigger asChild>
+            <button className="flex items-center gap-1.5 hover:bg-mineral/5 rounded-lg px-2 py-1 transition-colors group cursor-pointer">
+              <BatteryCharging className="w-4 h-4 lg:w-5 lg:h-5 text-green-500" />
+              <div className="flex items-baseline gap-0.5">
+                <AnimatedNumber 
+                  value={displayAmperage}
+                  className="font-display text-xl lg:text-2xl text-carbon"
+                />
+                <span className="text-xs text-muted-foreground font-medium">Ah</span>
+              </div>
+              <ChevronDown className="w-3 h-3 text-muted-foreground group-hover:text-carbon transition-colors" />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent className="w-28 p-1 bg-white border border-mineral/20 shadow-lg" align="center" sideOffset={8}>
+            <Command>
+              <CommandList>
+                {availableAmperages.map((a) => (
+                  <CommandItem
+                    key={a}
+                    onSelect={() => {
+                      setSelectedAmperage(a);
+                      setAmperageOpen(false);
+                    }}
+                    className={`cursor-pointer text-sm ${displayAmperage === a ? 'bg-mineral/10 font-semibold' : ''}`}
+                  >
+                    {a}Ah
+                  </CommandItem>
+                ))}
+              </CommandList>
+            </Command>
+          </PopoverContent>
+        </Popover>
 
           {/* Divider */}
           <div className="h-8 w-px bg-mineral/20" />
@@ -296,8 +332,8 @@ const ScooterCarousel = ({
                     transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                   }}
                 >
-                  {/* MASSIVE Scooter Container - Showroom Impact */}
-                  <div className="relative w-full max-w-[750px] lg:max-w-[850px] mx-auto h-[520px] lg:h-[620px] xl:h-[680px] flex items-center justify-center">
+                  {/* MASSIVE Scooter Container - Maximum Showroom Impact */}
+                  <div className="relative w-full max-w-[800px] lg:max-w-[950px] mx-auto h-[560px] lg:h-[680px] xl:h-[750px] flex items-center justify-center">
                     {/* Favorite & Garage Buttons */}
                     <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
                       <FavoriteButton
