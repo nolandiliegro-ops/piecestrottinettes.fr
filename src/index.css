@@ -48,6 +48,13 @@
     --mineral-dark: 144 20% 55%;
     --mineral-glow: 144 30% 70%;
 
+    /* Brand Colors */
+    --brand-dualtron: 43 100% 50%;
+    --brand-kaabo: 0 70% 50%;
+    --brand-xiaomi: 25 100% 50%;
+    --brand-ninebot: 207 90% 54%;
+    --brand-segway: 145 60% 40%;
+
     /* Garage color - Petrol Blue */
     --garage: 210 50% 25%;
     --garage-foreground: 0 0% 100%;

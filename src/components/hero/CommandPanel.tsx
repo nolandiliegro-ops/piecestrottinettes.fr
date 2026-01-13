@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Search, Sparkles, Star, Home, ChevronLeft, ChevronRight } from "lucide-react";
+import { Search, Sparkles, Home, Scan } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Brand, ScooterModel } from "@/data/scooterData";
@@ -22,6 +22,15 @@ interface CommandPanelProps {
   currentIndex?: number;
 }
 
+// Brand color mapping - synchronized with filters
+const brandColors: Record<string, { bg: string; text: string; border: string }> = {
+  dualtron: { bg: "bg-[hsl(43_100%_50%)]", text: "text-yellow-900", border: "border-yellow-500" },
+  kaabo: { bg: "bg-[hsl(0_70%_50%)]", text: "text-white", border: "border-red-500" },
+  xiaomi: { bg: "bg-[hsl(25_100%_50%)]", text: "text-white", border: "border-orange-500" },
+  ninebot: { bg: "bg-[hsl(207_90%_54%)]", text: "text-white", border: "border-blue-500" },
+  segway: { bg: "bg-[hsl(145_60%_40%)]", text: "text-white", border: "border-emerald-500" },
+};
+
 const CommandPanel = ({
   brands,
   selectedBrand,
@@ -30,10 +39,6 @@ const CommandPanel = ({
   onSearchChange,
   onModelSelect,
   activeModel,
-  onNavigatePrev,
-  onNavigateNext,
-  totalModels = 0,
-  currentIndex = 0,
 }: CommandPanelProps) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
@@ -62,6 +67,15 @@ const CommandPanel = ({
     onModelSelect?.(slug);
   };
 
+  // Get brand color based on active model's brand
+  const getBrandColorClasses = (brandId: string | undefined) => {
+    if (!brandId) return { bg: "bg-white/80", text: "text-carbon", border: "border-mineral/20" };
+    const colors = brandColors[brandId.toLowerCase()];
+    return colors || { bg: "bg-white/80", text: "text-carbon", border: "border-mineral/20" };
+  };
+
+  const activeBrandColors = getBrandColorClasses(activeModel?.brandId);
+
   return (
     <div className="flex flex-col justify-start h-full space-y-4">
       {/* FIRST: Active Model Info - Priority placement */}
@@ -73,14 +87,14 @@ const CommandPanel = ({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {/* Brand Badge */}
+          {/* Brand Badge with Dynamic Color */}
           <motion.div
-            className="inline-block px-3 py-1 rounded-full bg-white/80 border border-mineral/20 backdrop-blur-sm mb-2"
+            className={`inline-block px-3 py-1.5 rounded-full ${activeBrandColors.bg} ${activeBrandColors.text} backdrop-blur-sm mb-2 shadow-sm`}
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.1 }}
           >
-            <p className="text-xs text-muted-foreground font-medium tracking-wide uppercase">
+            <p className="text-xs font-bold tracking-wide uppercase">
               {activeModel.brand}
             </p>
           </motion.div>
@@ -108,36 +122,6 @@ const CommandPanel = ({
               className="text-mineral font-bold text-lg"
             />
           </motion.div>
-
-          {/* Navigation Arrows */}
-          <div className="flex items-center gap-3 mt-3">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={onNavigatePrev}
-                className="rounded-full w-9 h-9 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
-              >
-                <ChevronLeft className="w-4 h-4 text-carbon" />
-              </Button>
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={onNavigateNext}
-                className="rounded-full w-9 h-9 bg-white/80 border-mineral/20 hover:border-mineral/40 hover:bg-white backdrop-blur-sm transition-all"
-              >
-                <ChevronRight className="w-4 h-4 text-carbon" />
-              </Button>
-            </motion.div>
-
-            {/* Counter */}
-            <span className="text-sm text-muted-foreground ml-2">
-              {currentIndex + 1} / {totalModels}
-            </span>
-          </div>
         </motion.div>
       )}
 
@@ -183,7 +167,7 @@ const CommandPanel = ({
         />
       </div>
 
-      {/* Brand Selection */}
+      {/* Brand Selection with Dynamic Colors */}
       <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
         <p className="text-xs text-muted-foreground mb-2">Ou sélectionnez une marque</p>
         <div className="flex flex-wrap gap-1.5">
@@ -192,56 +176,72 @@ const CommandPanel = ({
             onClick={() => onBrandSelect(null)}
             className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
               selectedBrand === null
-                ? "bg-primary text-primary-foreground"
+                ? "bg-carbon text-greige"
                 : "bg-muted text-muted-foreground hover:bg-muted/80"
             }`}
           >
             Toutes
           </button>
-          {brands.map((brand) => (
-            <button
-              key={brand.id}
-              onClick={() => onBrandSelect(brand.id)}
-              className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
-                selectedBrand === brand.id
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:bg-muted/80"
-              }`}
-            >
-              {brand.name}
-            </button>
-          ))}
+          {brands.map((brand) => {
+            const brandColor = brandColors[brand.id.toLowerCase()];
+            const isSelected = selectedBrand === brand.id;
+            
+            return (
+              <button
+                key={brand.id}
+                onClick={() => onBrandSelect(brand.id)}
+                className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
+                  isSelected && brandColor
+                    ? `${brandColor.bg} ${brandColor.text}`
+                    : isSelected
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                }`}
+              >
+                {brand.name}
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Quick Access - Compact */}
+      {/* SCANNER Button - Premium Redesign with Glow */}
       <div className="animate-fade-in pt-2" style={{ animationDelay: "0.3s" }}>
-        <div className="flex items-center gap-2 mb-2">
-          <Star className="w-3 h-3 text-primary fill-primary" />
-          <p className="text-xs tracking-[0.15em] text-muted-foreground font-medium">
-            ACCÈS RAPIDE
-          </p>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2">
-          {/* Scanner Button */}
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          className="relative"
+        >
+          {/* Glow effect underneath */}
+          <div className="absolute -inset-1 bg-mineral/40 rounded-2xl blur-xl -z-10 opacity-70" />
+          
           <Button
-            size="sm"
-            className="rounded-full px-4 py-3 font-display text-sm tracking-wide gap-2 pulse-glow rotate-[-2deg] hover:rotate-0 transition-transform"
+            size="lg"
+            className="w-full rounded-2xl py-6 font-display text-base tracking-wider gap-3 
+                       bg-gradient-to-r from-mineral to-mineral-dark text-white 
+                       hover:from-mineral-dark hover:to-mineral 
+                       shadow-lg hover:shadow-xl transition-all border border-mineral-glow/30"
           >
-            <Sparkles className="w-3 h-3" />
-            Scanner
+            <div className="relative">
+              <Scan className="w-5 h-5" />
+              {/* Pulse animation overlay */}
+              <span className="absolute inset-0 rounded-full bg-white/40 animate-ping" />
+            </div>
+            <span>SCANNER MA TROTTINETTE</span>
+            <Sparkles className="w-4 h-4 opacity-70" />
           </Button>
-
-          {/* Mon Garage Button */}
-          <Button
-            size="sm"
-            className="rounded-full px-4 py-3 font-display text-sm tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90 rotate-[2deg] hover:rotate-0 transition-all"
-          >
-            <Home className="w-3 h-3" />
-            Mon Garage
-          </Button>
-        </div>
+        </motion.div>
+        
+        {/* Mon Garage - Secondary */}
+        <Button
+          variant="outline"
+          size="lg"
+          className="w-full mt-3 rounded-2xl py-5 font-display text-base tracking-wide gap-2 
+                     bg-garage/10 border-garage/30 text-garage hover:bg-garage hover:text-white transition-all"
+        >
+          <Home className="w-4 h-4" />
+          Mon Garage
+        </Button>
       </div>
     </div>
   );

@@ -111,7 +111,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
             <HeroBranding />
           </div>
 
-          {/* CENTER (col-span-6) - Scooter ONLY, no text below */}
+          {/* CENTER (col-span-6) - Scooter ONLY with navigation arrows flanking */}
           <div className="order-1 lg:order-2 lg:col-span-6 h-full flex items-center justify-center">
             {isLoading ? (
               <ScooterCarouselSkeleton />
@@ -120,11 +120,15 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
                 models={filteredModels}
                 activeIndex={activeIndex}
                 onSelect={setActiveIndex}
+                onNavigatePrev={() => setActiveIndex((prev) => (prev > 0 ? prev - 1 : filteredModels.length - 1))}
+                onNavigateNext={() => setActiveIndex((prev) => (prev < filteredModels.length - 1 ? prev + 1 : 0))}
+                totalModels={filteredModels.length}
+                currentIndex={activeIndex}
               />
             )}
           </div>
 
-          {/* RIGHT (col-span-3) - Model Info FIRST + Search + Brands */}
+          {/* RIGHT (col-span-3) - Model Info FIRST + Search + Brands (no arrows here) */}
           <div className="order-2 lg:order-3 lg:col-span-3">
             <CommandPanel
               brands={transformedBrands}
@@ -134,10 +138,6 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
               onSearchChange={handleSearchChange}
               onModelSelect={handleModelSelect}
               activeModel={activeModel}
-              onNavigatePrev={() => setActiveIndex((prev) => (prev > 0 ? prev - 1 : filteredModels.length - 1))}
-              onNavigateNext={() => setActiveIndex((prev) => (prev < filteredModels.length - 1 ? prev + 1 : 0))}
-              totalModels={filteredModels.length}
-              currentIndex={activeIndex}
             />
           </div>
         </div>

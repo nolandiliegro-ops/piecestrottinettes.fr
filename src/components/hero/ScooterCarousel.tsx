@@ -15,6 +15,10 @@ interface ScooterCarouselProps {
   models: ScooterModel[];
   activeIndex: number;
   onSelect: (index: number) => void;
+  onNavigatePrev?: () => void;
+  onNavigateNext?: () => void;
+  totalModels?: number;
+  currentIndex?: number;
 }
 
 // Parse spec value to number (e.g., "300W" -> 300)
@@ -22,7 +26,15 @@ const parseSpecValue = (spec: string): number => {
   return parseInt(spec.replace(/[^\d]/g, "")) || 0;
 };
 
-const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps) => {
+const ScooterCarousel = ({ 
+  models, 
+  activeIndex, 
+  onSelect,
+  onNavigatePrev,
+  onNavigateNext,
+  totalModels = 0,
+  currentIndex = 0,
+}: ScooterCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
@@ -53,8 +65,15 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
     }
   }, [emblaApi, activeIndex]);
 
-  const scrollPrev = () => emblaApi?.scrollPrev();
-  const scrollNext = () => emblaApi?.scrollNext();
+  const scrollPrev = () => {
+    emblaApi?.scrollPrev();
+    onNavigatePrev?.();
+  };
+  
+  const scrollNext = () => {
+    emblaApi?.scrollNext();
+    onNavigateNext?.();
+  };
 
   if (models.length === 0) {
     return (
@@ -72,7 +91,14 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
 
   return (
     <div className="relative flex items-center justify-center h-full w-full">
-      {/* Subtle background accent - no racing grid */}
+      {/* Watermark filigrane discret */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        <span className="font-display text-[4rem] lg:text-[8rem] xl:text-[10rem] text-muted-foreground/[0.03] tracking-[0.15em] whitespace-nowrap select-none">
+          PIECESTROTTINETTES.FR
+        </span>
+      </div>
+
+      {/* Subtle background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <div 
           className="absolute inset-0 bg-gradient-to-b from-mineral/20 via-transparent to-transparent"
@@ -87,10 +113,49 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
         }}
       />
 
-      {/* Main Layout: Carousel + Info Panel */}
-      <div className="relative flex items-center justify-center w-full h-full">
-        {/* Carousel Container - Much larger scooter */}
-        <div className="relative w-full max-w-4xl overflow-hidden px-4" ref={emblaRef}>
+      {/* Navigation Arrow LEFT - Outside carousel */}
+      <motion.div 
+        className="absolute left-0 lg:-left-4 xl:-left-8 top-1/2 -translate-y-1/2 z-20"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={scrollPrev}
+          className="rounded-full w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+        >
+          <ChevronLeft className="w-6 h-6 text-carbon" />
+        </Button>
+      </motion.div>
+
+      {/* Navigation Arrow RIGHT - Outside carousel */}
+      <motion.div 
+        className="absolute right-0 lg:-right-4 xl:-right-8 top-1/2 -translate-y-1/2 z-20"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={scrollNext}
+          className="rounded-full w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-sm border-mineral/20 hover:border-mineral hover:bg-white shadow-lg hover:shadow-xl transition-all"
+        >
+          <ChevronRight className="w-6 h-6 text-carbon" />
+        </Button>
+      </motion.div>
+
+      {/* Counter at bottom center */}
+      <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-20">
+        <span className="text-sm text-muted-foreground font-medium bg-white/80 px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm border border-mineral/10">
+          {currentIndex + 1} / {totalModels}
+        </span>
+      </div>
+
+      {/* Main Layout: Carousel */}
+      <div className="relative flex items-center justify-center w-full h-full px-16 lg:px-20">
+        {/* Carousel Container - BIGGER scooter */}
+        <div className="relative w-full max-w-5xl overflow-hidden" ref={emblaRef}>
           <div className="flex items-center">
             {models.map((model, index) => {
               const isActive = index === activeIndex;
@@ -112,7 +177,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                   }}
                 >
                   {/* MUCH BIGGER Scooter Container */}
-                  <div className="relative w-full max-w-[550px] mx-auto h-[450px] lg:h-[520px] flex items-center justify-center">
+                  <div className="relative w-full max-w-[650px] mx-auto h-[500px] lg:h-[580px] flex items-center justify-center">
                     {/* Favorite & Garage Buttons */}
                     <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
                       <FavoriteButton
@@ -161,17 +226,17 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                         <img
                           src={imageSrc}
                           alt={`${model.brand} ${model.name}`}
-                          className="relative w-full h-[75%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+                          className="relative w-full h-[78%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
                         />
                         
                         {/* Mirror Reflection Effect */}
-                        <div className="absolute bottom-0 left-0 right-0 h-[25%] overflow-hidden pointer-events-none">
+                        <div className="absolute bottom-0 left-0 right-0 h-[22%] overflow-hidden pointer-events-none">
                           <img
                             src={imageSrc}
                             alt=""
-                            className="w-full h-[300%] object-contain opacity-[0.15] blur-[1px]"
+                            className="w-full h-[355%] object-contain opacity-[0.15] blur-[1px]"
                             style={{
-                              transform: 'scaleY(-1) translateY(67%)',
+                              transform: 'scaleY(-1) translateY(72%)',
                               maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 80%)',
                               WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 80%)'
                             }}
@@ -189,7 +254,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                           initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
-                          className="absolute left-0 top-1/4 bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                          className="absolute left-4 top-[28%] bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
                         >
                           <div className="flex items-center gap-1.5">
                             <Zap className="w-4 h-4 text-mineral" />
@@ -206,7 +271,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                           initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-                          className="absolute right-0 top-1/3 bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                          className="absolute right-4 top-[35%] bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
                         >
                           <div className="flex items-center gap-1.5">
                             <Gauge className="w-4 h-4 text-mineral" />
@@ -217,13 +282,13 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
                           </div>
                         </motion.div>
 
-                        {/* Range Badge - Above reflection, not at bottom */}
+                        {/* Range Badge - Above reflection */}
                         <motion.div
                           key={`range-${model.id}`}
                           initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
-                          className="absolute left-1/2 -translate-x-1/2 bottom-[30%] bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
+                          className="absolute left-1/2 -translate-x-1/2 bottom-[28%] bg-white/90 backdrop-blur-sm border border-mineral/20 rounded-xl px-3 py-2 shadow-lg z-10"
                         >
                           <div className="flex items-center gap-1.5">
                             <Battery className="w-4 h-4 text-mineral" />
@@ -241,9 +306,7 @@ const ScooterCarousel = ({ models, activeIndex, onSelect }: ScooterCarouselProps
             })}
           </div>
         </div>
-
       </div>
-
     </div>
   );
 };
