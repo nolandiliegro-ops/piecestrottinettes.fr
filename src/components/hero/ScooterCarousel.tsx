@@ -155,7 +155,7 @@ const ScooterCarousel = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="absolute bottom-[6%] left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-[12%] lg:bottom-[14%] left-1/2 -translate-x-1/2 z-20"
       >
         <div className="flex items-center gap-4 lg:gap-6 bg-white/90 backdrop-blur-md border border-mineral/20 rounded-2xl px-4 lg:px-6 py-2.5 lg:py-3 shadow-xl">
           {/* Power */}
@@ -234,8 +234,8 @@ const ScooterCarousel = ({
                     transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                   }}
                 >
-                  {/* MUCH BIGGER Scooter Container */}
-                  <div className="relative w-full max-w-[650px] mx-auto h-[500px] lg:h-[580px] flex items-center justify-center">
+                  {/* MASSIVE Scooter Container - Showroom Impact */}
+                  <div className="relative w-full max-w-[750px] lg:max-w-[850px] mx-auto h-[520px] lg:h-[620px] xl:h-[680px] flex items-center justify-center">
                     {/* Favorite & Garage Buttons */}
                     <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
                       <FavoriteButton
@@ -284,7 +284,7 @@ const ScooterCarousel = ({
                         <img
                           src={imageSrc}
                           alt={`${model.brand} ${model.name}`}
-                          className="relative w-full h-[78%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+                          className="relative w-full h-[80%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
                         />
                         
                         {/* Mirror Reflection Effect */}

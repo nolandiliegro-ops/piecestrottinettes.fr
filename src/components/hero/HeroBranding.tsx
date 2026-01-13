@@ -51,17 +51,17 @@ const HeroBranding = () => {
         </h1>
       </div>
 
-      {/* Description - more compact */}
-      <p className="mt-3 lg:mt-4 text-sm text-muted-foreground max-w-sm animate-fade-in" style={{ animationDelay: "0.4s" }}>
+      {/* Description - LARGER for impact */}
+      <p className="mt-4 lg:mt-5 text-base lg:text-lg text-muted-foreground max-w-md animate-fade-in" style={{ animationDelay: "0.4s" }}>
         Trouvez les pièces détachées 100% compatibles avec votre trottinette électrique. Qualité garantie, expédition rapide.
       </p>
 
-      {/* Bouton Catalogue Produit */}
-      <div className="mt-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-        <Button asChild variant="outline" className="rounded-full gap-2 border-border/50 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
+      {/* Bouton Catalogue Premium - Large */}
+      <div className="mt-5 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+        <Button asChild variant="outline" size="lg" className="rounded-full gap-2.5 px-6 py-5 text-base font-medium border-mineral/40 hover:bg-mineral hover:text-white hover:border-mineral transition-all shadow-sm hover:shadow-md">
           <Link to="/catalogue">
-            <ShoppingBag className="w-4 h-4" />
-            Catalogue Produit
+            <ShoppingBag className="w-5 h-5" />
+            VOIR TOUT LE CATALOGUE
           </Link>
         </Button>
       </div>

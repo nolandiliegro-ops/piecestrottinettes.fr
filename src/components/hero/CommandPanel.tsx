@@ -99,9 +99,9 @@ const CommandPanel = ({
             </p>
           </motion.div>
 
-          {/* Model Name - Industrial Typography */}
+          {/* Model Name - MASSIVE Showroom Typography */}
           <motion.h3 
-            className="font-display text-4xl lg:text-5xl xl:text-6xl text-carbon mb-3 tracking-tighter leading-none uppercase"
+            className="font-display text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-carbon mb-3 tracking-tighter leading-none uppercase"
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
