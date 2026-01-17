@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, ShoppingBag, ArrowRight } from "lucide-react";
+import { ArrowLeft, ShoppingBag, ArrowRight, Gem } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/useCart";
@@ -109,6 +109,31 @@ const CartPage = () => {
                       </span>
                     </div>
                   </div>
+
+                  {/* Loyalty Points with Glow Animation */}
+                  {totals.loyaltyPoints > 0 && (
+                    <motion.div 
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="flex items-center justify-center gap-2 py-3 px-4 bg-mineral/10 rounded-xl relative overflow-hidden"
+                    >
+                      {/* Subtle glow effect */}
+                      <motion.div 
+                        className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/20 to-mineral/0"
+                        animate={{ x: ['-100%', '100%'] }}
+                        transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                      />
+                      <motion.div
+                        animate={{ scale: [1, 1.15, 1], opacity: [0.8, 1, 0.8] }}
+                        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                      >
+                        <Gem className="w-4 h-4 text-mineral drop-shadow-[0_0_6px_rgba(147,181,161,0.6)]" />
+                      </motion.div>
+                      <span className="relative z-10 text-sm font-medium text-mineral">
+                        Gagnez {totals.loyaltyPoints} points avec cette commande
+                      </span>
+                    </motion.div>
+                  )}
 
                   {/* CTA Button */}
                   <motion.div

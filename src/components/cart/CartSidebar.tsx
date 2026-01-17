@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { ShoppingBag, Edit3 } from "lucide-react";
+import { ShoppingBag, Edit3, Gem, Save } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -15,13 +16,33 @@ import EmptyCart from "./EmptyCart";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const CartSidebar = () => {
-  const { items, isOpen, setIsOpen, totals, clearCart } = useCart();
+  const { items, isOpen, setIsOpen, totals, clearCart, saveForLater } = useCart();
   const navigate = useNavigate();
   const isEmpty = items.length === 0;
 
   const handleCheckout = () => {
     setIsOpen(false);
     navigate('/checkout');
+  };
+
+  const handleTitleClick = () => {
+    setIsOpen(false);
+    navigate('/panier');
+  };
+
+  const handleSaveForLater = () => {
+    const success = saveForLater();
+    if (success) {
+      toast.success("Configuration sauvegardée", {
+        description: "Votre configuration a été sauvegardée dans votre garage.",
+        duration: 4000,
+      });
+    } else {
+      toast.error("Panier vide", {
+        description: "Le panier est vide, rien à sauvegarder.",
+        duration: 3000,
+      });
+    }
   };
 
   return (
@@ -38,7 +59,13 @@ const CartSidebar = () => {
                 <ShoppingBag className="w-5 h-5 text-mineral" />
               </div>
               <div>
-                <span className="font-display text-xl text-carbon tracking-wide">MON PANIER</span>
+                {/* Clickable Title with Hover Underline */}
+                <span 
+                  onClick={handleTitleClick}
+                  className="font-display text-xl text-carbon tracking-wide cursor-pointer hover:text-mineral transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-mineral after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                >
+                  MON PANIER
+                </span>
                 {!isEmpty && (
                   <span className="ml-2 text-sm font-normal text-muted-foreground">
                     ({totals.itemCount} article{totals.itemCount > 1 ? 's' : ''})
@@ -99,6 +126,44 @@ const CartSidebar = () => {
                 </div>
               </div>
 
+              {/* Loyalty Points with Glow Animation */}
+              {totals.loyaltyPoints > 0 && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex items-center justify-center gap-2 py-2.5 px-4 bg-mineral/10 rounded-xl relative overflow-hidden"
+                >
+                  {/* Subtle glow effect */}
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/20 to-mineral/0"
+                    animate={{ 
+                      x: ['-100%', '100%'],
+                    }}
+                    transition={{ 
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                  />
+                  <motion.div
+                    animate={{ 
+                      scale: [1, 1.15, 1],
+                      opacity: [0.8, 1, 0.8]
+                    }}
+                    transition={{ 
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <Gem className="w-4 h-4 text-mineral drop-shadow-[0_0_6px_rgba(147,181,161,0.6)]" />
+                  </motion.div>
+                  <span className="relative z-10 text-sm font-medium text-mineral">
+                    Gagnez {totals.loyaltyPoints} points avec cette commande
+                  </span>
+                </motion.div>
+              )}
+
               {/* CTA Button - Luxury Hover Effect */}
               <motion.div
                 whileHover={{ scale: 1.02 }}
@@ -116,6 +181,17 @@ const CartSidebar = () => {
                   <span className="relative z-10">COMMANDER</span>
                 </Button>
               </motion.div>
+
+              {/* Save for Later Button */}
+              <Button
+                variant="outline"
+                onClick={handleSaveForLater}
+                disabled={isEmpty}
+                className="w-full border-mineral/30 text-mineral hover:bg-mineral/10 hover:text-mineral font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <Save className="w-4 h-4 mr-2" />
+                Sauvegarder pour plus tard
+              </Button>
 
               {/* Modify Cart Link - Ghost Button Style */}
               <Link 

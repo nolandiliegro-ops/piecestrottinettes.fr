@@ -9,12 +9,14 @@ interface CartContextType {
   removeItem: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
+  saveForLater: () => boolean;
   totals: CartTotals;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 const CART_STORAGE_KEY = 'pt-cart';
+const SAVED_CONFIG_KEY = 'pt-saved-config';
 const TVA_RATE = 0.20; // 20% TVA
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
@@ -34,15 +36,17 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
   }, [items]);
 
-  // Calculate totals
+  // Calculate totals with loyalty points
   const totals = useMemo<CartTotals>(() => {
     const subtotalHT = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     const tva = subtotalHT * TVA_RATE;
+    const totalTTC = subtotalHT + tva;
     return {
       itemCount: items.reduce((sum, item) => sum + item.quantity, 0),
       subtotalHT,
       tva,
-      totalTTC: subtotalHT + tva,
+      totalTTC,
+      loyaltyPoints: Math.floor(totalTTC), // 1€ TTC = 1 point (arrondi inférieur)
     };
   }, [items]);
 
@@ -96,6 +100,15 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setItems([]);
   }, []);
 
+  // Save cart for later (returns false if cart is empty)
+  const saveForLater = useCallback((): boolean => {
+    if (items.length === 0) {
+      return false;
+    }
+    localStorage.setItem(SAVED_CONFIG_KEY, JSON.stringify(items));
+    return true;
+  }, [items]);
+
   const value: CartContextType = {
     items,
     isOpen,
@@ -104,6 +117,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     removeItem,
     updateQuantity,
     clearCart,
+    saveForLater,
     totals,
   };
 

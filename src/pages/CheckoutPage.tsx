@@ -304,17 +304,21 @@ const CheckoutPage = () => {
                         >
                           <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                           <span className="relative z-10 flex items-center justify-center gap-2">
-                            {isSubmitting ? (
-                              <span className="animate-pulse">VALIDATION...</span>
+                        {isSubmitting ? (
+                              <span className="animate-pulse">TRAITEMENT...</span>
                             ) : (
                               <>
                                 <Lock className="w-4 h-4" />
-                                VALIDER LA COMMANDE
+                                PROCÉDER AU PAIEMENT
                               </>
                             )}
                           </span>
                         </Button>
                       </motion.div>
+                      {/* Reassurance message */}
+                      <p className="text-xs text-center text-muted-foreground mt-3 italic font-light">
+                        Vous allez être redirigé vers notre interface de paiement sécurisée
+                      </p>
                     </div>
                   </form>
                 </Form>
@@ -383,16 +387,20 @@ const CheckoutPage = () => {
                       <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         {isSubmitting ? (
-                          <span className="animate-pulse">VALIDATION...</span>
+                          <span className="animate-pulse">TRAITEMENT...</span>
                         ) : (
                           <>
                             <Lock className="w-4 h-4" />
-                            VALIDER LA COMMANDE
+                            PROCÉDER AU PAIEMENT
                           </>
                         )}
                       </span>
                     </Button>
                   </motion.div>
+                  {/* Reassurance message */}
+                  <p className="text-xs text-center text-muted-foreground mt-3 italic font-light">
+                    Vous allez être redirigé vers notre interface de paiement sécurisée
+                  </p>
                 </div>
 
                 {/* Security badge */}

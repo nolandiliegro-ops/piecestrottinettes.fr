@@ -19,4 +19,5 @@ export interface CartTotals {
   subtotalHT: number;
   tva: number;
   totalTTC: number;
+  loyaltyPoints: number; // 1€ TTC = 1 point (arrondi inférieur)
 }
