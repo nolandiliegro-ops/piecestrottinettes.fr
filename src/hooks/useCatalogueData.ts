@@ -5,6 +5,7 @@ import { CompatiblePart } from "@/hooks/useScooterData";
 // Extended part type with category_id for filtering
 export interface CataloguePart extends CompatiblePart {
   category_id: string | null;
+  is_featured?: boolean;
 }
 
 /**
@@ -27,6 +28,7 @@ export const useAllParts = (categoryId: string | null) => {
           stock_quantity,
           technical_metadata,
           category_id,
+          is_featured,
           category:categories (
             id,
             name,

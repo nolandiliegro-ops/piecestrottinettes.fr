@@ -12,7 +12,8 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle, ArrowUpDown, Layers, ChevronUp, ChevronDown } from 'lucide-react';
+import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle, ArrowUpDown, Layers, ChevronUp, ChevronDown, Trophy } from 'lucide-react';
+import { Switch } from '@/components/ui/switch';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
 import { cn } from '@/lib/utils';
@@ -39,6 +40,7 @@ interface Part {
   meta_title: string | null;
   meta_description: string | null;
   created_at?: string;
+  is_featured?: boolean;
 }
 
 interface Category {
@@ -99,7 +101,8 @@ const PartsManager = () => {
     min_stock_alert: '5',
     meta_title: '',
     meta_description: '',
-    technical_metadata: '{}'
+    technical_metadata: '{}',
+    is_featured: false
   });
 
   const [editPart, setEditPart] = useState<Part | null>(null);
@@ -117,7 +120,8 @@ const PartsManager = () => {
     min_stock_alert: '',
     meta_title: '',
     meta_description: '',
-    technical_metadata: '{}'
+    technical_metadata: '{}',
+    is_featured: false
   });
 
   useEffect(() => {
@@ -142,7 +146,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -196,15 +200,16 @@ const PartsManager = () => {
           min_stock_alert: newPart.min_stock_alert ? parseInt(newPart.min_stock_alert) : 5,
           meta_title: newPart.meta_title.trim() || null,
           meta_description: newPart.meta_description.trim() || null,
-          technical_metadata: (technicalMetadata || {}) as Json
+          technical_metadata: (technicalMetadata || {}) as Json,
+          is_featured: newPart.is_featured
         })
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, category:categories(name)')
+        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
         .single();
 
       if (error) throw error;
 
       setParts(prev => [...prev, data]);
-      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}' });
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
     } catch (error: any) {
@@ -235,7 +240,8 @@ const PartsManager = () => {
       min_stock_alert: part.min_stock_alert?.toString() || '5',
       meta_title: part.meta_title || '',
       meta_description: part.meta_description || '',
-      technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}'
+      technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}',
+      is_featured: part.is_featured || false
     });
     setIsEditOpen(true);
   };
@@ -269,7 +275,8 @@ const PartsManager = () => {
           min_stock_alert: editValues.min_stock_alert ? parseInt(editValues.min_stock_alert) : 5,
           meta_title: editValues.meta_title.trim() || null,
           meta_description: editValues.meta_description.trim() || null,
-          technical_metadata: (technicalMetadata || {}) as Json
+          technical_metadata: (technicalMetadata || {}) as Json,
+          is_featured: editValues.is_featured
         })
         .eq('id', editPart.id);
 
@@ -294,6 +301,7 @@ const PartsManager = () => {
               meta_title: editValues.meta_title.trim() || null,
               meta_description: editValues.meta_description.trim() || null,
               technical_metadata: (technicalMetadata || {}) as Json,
+              is_featured: editValues.is_featured,
               category: categories.find(c => c.id === editValues.category_id) ? { name: categories.find(c => c.id === editValues.category_id)!.name } : null
             }
           : p
@@ -718,6 +726,24 @@ const PartsManager = () => {
         <div className="space-y-2">
           <Label>Description</Label>
           <Textarea value={values.description} onChange={(e) => setValues({ ...values, description: e.target.value })} placeholder="Description..." rows={3} />
+        </div>
+        
+        {/* Pépite du Chef Toggle - Luxury Design */}
+        <div className="flex items-center justify-between p-4 rounded-xl bg-mineral/5 border border-mineral/20 transition-all duration-300 hover:bg-mineral/10">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg bg-mineral/15 flex items-center justify-center">
+              <Trophy className="w-5 h-5 text-mineral" />
+            </div>
+            <div>
+              <Label className="text-carbon font-medium cursor-pointer">Pépite du Chef</Label>
+              <p className="text-xs text-muted-foreground">Marquer comme sélection premium</p>
+            </div>
+          </div>
+          <Switch
+            checked={values.is_featured}
+            onCheckedChange={(checked) => setValues({ ...values, is_featured: checked })}
+            className="data-[state=checked]:bg-mineral"
+          />
         </div>
       </TabsContent>
 

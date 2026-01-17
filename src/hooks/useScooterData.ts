@@ -13,6 +13,7 @@ export interface CompatiblePart {
   difficulty_level: number | null;
   stock_quantity: number | null;
   technical_metadata: Record<string, unknown> | null;
+  is_featured?: boolean;
   category: {
     id: string;
     name: string;

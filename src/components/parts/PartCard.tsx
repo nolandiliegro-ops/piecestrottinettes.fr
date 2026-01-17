@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Gauge, ShoppingCart } from "lucide-react";
+import { Gauge, ShoppingCart, Trophy } from "lucide-react";
 import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
@@ -10,7 +10,7 @@ import { formatPrice } from "@/lib/formatPrice";
 import { toast } from "sonner";
 
 interface PartCardProps {
-  part: CompatiblePart & { slug?: string; torque_nm?: number | null };
+  part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
   index: number;
   className?: string;
 }
@@ -124,6 +124,21 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
       {/* Image Container - Luxury Studio Style */}
       <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">
+        {/* SÉLECTION EXPERT Badge - Carbon Black Luxury */}
+        {part.is_featured && (
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.08 + 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="absolute top-3 left-3 z-10"
+          >
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-carbon text-white text-[10px] font-medium tracking-widest uppercase shadow-lg backdrop-blur-sm border border-white/10">
+              <Trophy className="w-3 h-3" />
+              <span>SÉLECTION EXPERT</span>
+            </div>
+          </motion.div>
+        )}
+
         {part.image_url ? (
           <img 
             src={part.image_url} 
