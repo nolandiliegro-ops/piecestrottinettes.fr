@@ -3,28 +3,67 @@ import { ShoppingCart, Check, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
+import { useCart } from "@/hooks/useCart";
+import { formatPrice } from "@/lib/formatPrice";
 
 interface PurchaseBlockProps {
+  id: string;
   name: string;
   price: number | null;
   stockQuantity: number | null;
   categoryName: string | null;
   categoryIcon: string | null;
+  imageUrl: string | null;
 }
 
 const PurchaseBlock = ({
+  id,
   name,
   price,
   stockQuantity,
   categoryName,
+  imageUrl,
 }: PurchaseBlockProps) => {
+  const { addItem, setIsOpen } = useCart();
   const isInStock = stockQuantity !== null && stockQuantity > 0;
 
   const handleAddToCart = () => {
-    toast.success("Produit ajouté au panier", {
-      description: name,
-      icon: <ShoppingCart className="w-4 h-4" />,
+    if (!isInStock || price === null) return;
+
+    addItem({
+      id,
+      name,
+      price,
+      image_url: imageUrl,
+      stock_quantity: stockQuantity || 0,
     });
+
+    // Premium toast with product image
+    toast.success(
+      <div className="flex items-center gap-3">
+        {imageUrl ? (
+          <img 
+            src={imageUrl} 
+            alt={name}
+            className="w-12 h-12 rounded-lg object-contain bg-greige p-1"
+          />
+        ) : (
+          <div className="w-12 h-12 rounded-lg bg-greige flex items-center justify-center text-xl">
+            🔧
+          </div>
+        )}
+        <div>
+          <p className="font-medium text-carbon">{name}</p>
+          <p className="text-sm text-muted-foreground">Ajouté au panier</p>
+        </div>
+      </div>,
+      {
+        action: {
+          label: "Voir le panier",
+          onClick: () => setIsOpen(true),
+        },
+      }
+    );
   };
 
   return (
@@ -55,9 +94,8 @@ const PurchaseBlock = ({
         {price !== null && (
           <div className="flex items-baseline gap-2">
             <span className="text-3xl md:text-4xl font-light text-mineral tracking-wide">
-              {price.toFixed(2)}
+              {formatPrice(price)}
             </span>
-            <span className="text-xl text-mineral/70">€</span>
           </div>
         )}
 

@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Gauge } from "lucide-react";
-import { forwardRef } from "react";
+import { Gauge, ShoppingCart } from "lucide-react";
+import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { cn } from "@/lib/utils";
+import { useCart } from "@/hooks/useCart";
+import { formatPrice } from "@/lib/formatPrice";
+import { toast } from "sonner";
 
 interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null };
@@ -46,11 +49,55 @@ const extractSpecs = (metadata: Record<string, unknown> | null): { torque?: stri
 
 const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   function PartCardInner({ part, index, className }, ref) {
+  const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
+  const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
   
   // Use torque_nm from part directly if available, otherwise from metadata
   const torqueValue = part.torque_nm ?? (part.technical_metadata?.torque_nm as number | undefined);
   const displayTorque = torqueValue ? `${torqueValue} Nm` : specs.torque;
+
+  // Quick-add to cart handler
+  const handleQuickAdd = (e: MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (isOutOfStock || part.price === null) return;
+
+    addItem({
+      id: part.id,
+      name: part.name,
+      price: part.price,
+      image_url: part.image_url,
+      stock_quantity: part.stock_quantity || 0,
+    });
+
+    toast.success(
+      <div className="flex items-center gap-3">
+        {part.image_url ? (
+          <img 
+            src={part.image_url} 
+            alt={part.name}
+            className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
+          />
+        ) : (
+          <div className="w-10 h-10 rounded-lg bg-greige flex items-center justify-center">
+            🔧
+          </div>
+        )}
+        <div>
+          <p className="font-medium text-carbon text-sm">{part.name}</p>
+          <p className="text-xs text-muted-foreground">Ajouté au panier</p>
+        </div>
+      </div>,
+      {
+        action: {
+          label: "Voir",
+          onClick: () => setIsOpen(true),
+        },
+      }
+    );
+  };
 
   const cardContent = (
     <motion.div
@@ -89,6 +136,26 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         
         {/* Subtle Hover Effect */}
         <div className="absolute inset-0 bg-gradient-to-t from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        {/* Quick-Add Button - Only show if in stock */}
+        {!isOutOfStock && part.price !== null && (
+          <button
+            onClick={handleQuickAdd}
+            className="absolute bottom-3 right-3 w-10 h-10 rounded-xl bg-carbon/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-carbon hover:scale-110 active:scale-95 shadow-lg"
+            title="Ajouter au panier"
+          >
+            <ShoppingCart className="w-4 h-4" />
+          </button>
+        )}
+
+        {/* Out of Stock Overlay */}
+        {isOutOfStock && (
+          <div className="absolute inset-0 bg-white/60 backdrop-blur-sm flex items-center justify-center">
+            <span className="px-3 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium">
+              Rupture de stock
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Content */}
@@ -101,10 +168,12 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         {/* Price - Luxury Typography */}
         {part.price !== null && (
           <div className="flex items-baseline gap-1">
-            <span className="text-2xl font-light text-mineral tracking-wide">
-              {part.price.toFixed(2)}
+            <span className={cn(
+              "text-2xl font-light tracking-wide",
+              isOutOfStock ? "text-muted-foreground" : "text-mineral"
+            )}>
+              {formatPrice(part.price)}
             </span>
-            <span className="text-sm text-muted-foreground opacity-70">€</span>
           </div>
         )}
 

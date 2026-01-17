@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
+import { useCart } from "@/hooks/useCart";
 import logoImage from "@/assets/logo-pt.png";
 import {
   DropdownMenu,
@@ -15,6 +16,7 @@ import {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, profile, signOut } = useAuth();
+  const { setIsOpen: openCart, totals } = useCart();
   const navigate = useNavigate();
 
   const navLinks = [
@@ -70,11 +72,18 @@ const Header = () => {
               <Search className="w-5 h-5" />
             </Button>
             
-            <Button variant="ghost" size="icon" className="relative text-foreground/80 hover:text-foreground">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={() => openCart(true)}
+              className="relative text-foreground/80 hover:text-foreground"
+            >
               <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-medium">
-                0
-              </span>
+              {totals.itemCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-mineral text-white text-xs flex items-center justify-center font-medium animate-scale-in">
+                  {totals.itemCount > 99 ? '99+' : totals.itemCount}
+                </span>
+              )}
             </Button>
 
             {user ? (

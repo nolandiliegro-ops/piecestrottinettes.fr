@@ -95,11 +95,13 @@ const PartDetail = () => {
             </div>
             <div className="col-span-1 row-span-1">
               <PurchaseBlock
+                id={part.id}
                 name={part.name}
                 price={part.price}
                 stockQuantity={part.stock_quantity}
                 categoryName={part.category?.name ?? null}
                 categoryIcon={part.category?.icon ?? null}
+                imageUrl={part.image_url}
               />
             </div>
 
@@ -151,11 +153,13 @@ const PartDetail = () => {
 
         {/* Purchase Block */}
         <PurchaseBlock
+          id={part.id}
           name={part.name}
           price={part.price}
           stockQuantity={part.stock_quantity}
           categoryName={part.category?.name ?? null}
           categoryIcon={part.category?.icon ?? null}
+          imageUrl={part.image_url}
         />
 
         {/* Installation Guide */}
