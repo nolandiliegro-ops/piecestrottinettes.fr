@@ -471,6 +471,53 @@ export type Database = {
           },
         ]
       }
+      tutorials: {
+        Row: {
+          created_at: string
+          description: string | null
+          difficulty: number
+          duration_minutes: number
+          id: string
+          scooter_model_id: string | null
+          slug: string
+          title: string
+          updated_at: string
+          youtube_video_id: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          difficulty?: number
+          duration_minutes?: number
+          id?: string
+          scooter_model_id?: string | null
+          slug: string
+          title: string
+          updated_at?: string
+          youtube_video_id: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          difficulty?: number
+          duration_minutes?: number
+          id?: string
+          scooter_model_id?: string | null
+          slug?: string
+          title?: string
+          updated_at?: string
+          youtube_video_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "tutorials_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_garage: {
         Row: {
           added_at: string | null

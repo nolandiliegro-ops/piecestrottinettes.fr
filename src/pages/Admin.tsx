@@ -3,7 +3,7 @@ import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package } from 'lucide-react';
+import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap } from 'lucide-react';
 
 import PartsManager from '@/components/admin/PartsManager';
 import ScootersManager from '@/components/admin/ScootersManager';
@@ -11,6 +11,7 @@ import CompatibilityManager from '@/components/admin/CompatibilityManager';
 import CategoriesManager from '@/components/admin/CategoriesManager';
 import BrandsManager from '@/components/admin/BrandsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
+import TutosManager from '@/components/admin/TutosManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -137,6 +138,13 @@ const Admin = () => {
               <Package className="w-4 h-4" />
               Commandes
             </TabsTrigger>
+            <TabsTrigger 
+              value="tutos" 
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
+            >
+              <GraduationCap className="w-4 h-4" />
+              Tutos
+            </TabsTrigger>
           </TabsList>
 
           {/* Parts Tab */}
@@ -232,6 +240,22 @@ const Admin = () => {
                 </div>
               </div>
               <OrdersManager />
+            </div>
+          </TabsContent>
+
+          {/* Tutos Tab */}
+          <TabsContent value="tutos" className="mt-6">
+            <div className="rounded-xl border border-border/20 bg-card p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-mineral/15 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-mineral" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground">Gestion des Tutoriels</h2>
+                  <p className="text-sm text-muted-foreground">Créer et gérer les vidéos Academy</p>
+                </div>
+              </div>
+              <TutosManager />
             </div>
           </TabsContent>
         </Tabs>
