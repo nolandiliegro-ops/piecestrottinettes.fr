@@ -17,6 +17,9 @@ import {
 } from "@/components/ui/form";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -35,6 +38,7 @@ type CheckoutFormData = z.infer<typeof checkoutSchema>;
 
 const CheckoutPage = () => {
   const { items, totals, clearCart } = useCart();
+  const { user } = useAuth();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const isEmpty = items.length === 0;
@@ -55,17 +59,63 @@ const CheckoutPage = () => {
   const onSubmit = async (data: CheckoutFormData) => {
     setIsSubmitting(true);
     
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    
-    // Generate order number
-    const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-    
-    // Clear cart BEFORE redirect
-    clearCart();
-    
-    // Navigate to success with order number
-    navigate('/order-success', { state: { orderNumber } });
+    try {
+      // Generate order number
+      const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+      
+      // 1. Create the order in database
+      const { data: order, error: orderError } = await supabase
+        .from('orders')
+        .insert({
+          order_number: orderNumber,
+          user_id: user?.id || null,
+          customer_first_name: data.firstName,
+          customer_last_name: data.lastName,
+          customer_email: data.email,
+          customer_phone: data.phone || null,
+          address: data.address,
+          postal_code: data.postalCode,
+          city: data.city,
+          subtotal_ht: totals.subtotalHT,
+          tva_amount: totals.tva,
+          total_ttc: totals.totalTTC,
+          loyalty_points_earned: totals.loyaltyPoints,
+          status: 'pending'
+        })
+        .select()
+        .single();
+      
+      if (orderError) throw orderError;
+      
+      // 2. Create order items
+      const orderItems = items.map(item => ({
+        order_id: order.id,
+        part_id: item.id,
+        part_name: item.name,
+        part_image_url: item.image_url,
+        unit_price: item.price,
+        quantity: item.quantity,
+        line_total: item.price * item.quantity
+      }));
+      
+      const { error: itemsError } = await supabase
+        .from('order_items')
+        .insert(orderItems);
+      
+      if (itemsError) throw itemsError;
+      
+      // 3. Clear cart and redirect with order number
+      clearCart();
+      navigate('/order-success', { state: { orderNumber } });
+      
+    } catch (error) {
+      console.error('Order error:', error);
+      toast.error('Erreur lors de la commande', {
+        description: 'Veuillez réessayer ou nous contacter.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Redirect if cart is empty

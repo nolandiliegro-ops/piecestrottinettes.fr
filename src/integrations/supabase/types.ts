@@ -117,6 +117,117 @@ export type Database = {
           },
         ]
       }
+      order_items: {
+        Row: {
+          created_at: string
+          id: string
+          line_total: number
+          order_id: string
+          part_id: string | null
+          part_image_url: string | null
+          part_name: string
+          quantity: number
+          unit_price: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          line_total: number
+          order_id: string
+          part_id?: string | null
+          part_image_url?: string | null
+          part_name: string
+          quantity: number
+          unit_price: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          line_total?: number
+          order_id?: string
+          part_id?: string | null
+          part_image_url?: string | null
+          part_name?: string
+          quantity?: number
+          unit_price?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "order_items_order_id_fkey"
+            columns: ["order_id"]
+            isOneToOne: false
+            referencedRelation: "orders"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "order_items_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      orders: {
+        Row: {
+          address: string
+          city: string
+          created_at: string
+          customer_email: string
+          customer_first_name: string
+          customer_last_name: string
+          customer_phone: string | null
+          id: string
+          loyalty_points_earned: number | null
+          order_number: string
+          postal_code: string
+          status: string
+          subtotal_ht: number
+          total_ttc: number
+          tva_amount: number
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          address: string
+          city: string
+          created_at?: string
+          customer_email: string
+          customer_first_name: string
+          customer_last_name: string
+          customer_phone?: string | null
+          id?: string
+          loyalty_points_earned?: number | null
+          order_number: string
+          postal_code: string
+          status?: string
+          subtotal_ht: number
+          total_ttc: number
+          tva_amount: number
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          address?: string
+          city?: string
+          created_at?: string
+          customer_email?: string
+          customer_first_name?: string
+          customer_last_name?: string
+          customer_phone?: string | null
+          id?: string
+          loyalty_points_earned?: number | null
+          order_number?: string
+          postal_code?: string
+          status?: string
+          subtotal_ht?: number
+          total_ttc?: number
+          tva_amount?: number
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       part_compatibility: {
         Row: {
           created_at: string
@@ -162,6 +273,7 @@ export type Database = {
           estimated_install_time_minutes: number | null
           id: string
           image_url: string | null
+          is_featured: boolean | null
           meta_description: string | null
           meta_title: string | null
           min_stock_alert: number | null
@@ -183,6 +295,7 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          is_featured?: boolean | null
           meta_description?: string | null
           meta_title?: string | null
           min_stock_alert?: number | null
@@ -204,6 +317,7 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          is_featured?: boolean | null
           meta_description?: string | null
           meta_title?: string | null
           min_stock_alert?: number | null

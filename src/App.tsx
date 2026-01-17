@@ -18,6 +18,7 @@ import ScooterDetail from "./pages/ScooterDetail";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
+import Pepites from "./pages/Pepites";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import NotFound from "./pages/NotFound";
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/trottinettes" element={<Scooters />} />
+            <Route path="/pepites" element={<Pepites />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
             <Route path="/scooter/:slug" element={<ScooterDetail />} />
             <Route path="/login" element={<Login />} />
