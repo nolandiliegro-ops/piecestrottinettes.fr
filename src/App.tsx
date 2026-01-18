@@ -6,8 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/hooks/useCart";
 import { ScooterProvider } from "@/contexts/ScooterContext";
+import { SpotlightProvider } from "@/contexts/SpotlightContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
+import SpotlightCommand from "@/components/search/SpotlightCommand";
 import Index from "./pages/Index";
 import Catalogue from "./pages/Catalogue";
 import Scooters from "./pages/Scooters";
@@ -33,12 +35,14 @@ const App = () => (
     <AuthProvider>
       <CartProvider>
         <ScooterProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <CartSidebar />
-            <MobileNav />
+          <SpotlightProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Sonner />
+              <SpotlightCommand />
+              <BrowserRouter>
+                <CartSidebar />
+                <MobileNav />
             <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
@@ -64,11 +68,12 @@ const App = () => (
                 <Admin />
               </ProtectedRoute>
             } />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </TooltipProvider>
+        </SpotlightProvider>
         </ScooterProvider>
       </CartProvider>
     </AuthProvider>
