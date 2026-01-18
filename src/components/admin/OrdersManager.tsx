@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { Package, Eye, Loader2, ShoppingBag } from "lucide-react";
+import { Package, Eye, Loader2, ShoppingBag, ChevronDown, CheckCircle, Filter } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { formatPrice } from "@/lib/formatPrice";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 import {
   Table,
   TableBody,
@@ -15,6 +16,15 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { toast } from "sonner";
 import OrderDetailSheet from "./OrderDetailSheet";
 
 type Order = {
@@ -35,34 +45,210 @@ type Order = {
   created_at: string;
 };
 
-const statusConfig: Record<string, { label: string; className: string }> = {
+// Status Configuration with LED Effect (15% opacity backgrounds)
+const statusConfig: Record<string, { 
+  label: string; 
+  bgClass: string; 
+  textClass: string;
+  dotColor: string;
+}> = {
   pending: { 
     label: "En attente", 
-    className: "bg-orange-500/20 text-orange-400 border-orange-500/30" 
+    bgClass: "bg-orange-500/15",
+    textClass: "text-orange-500",
+    dotColor: "bg-orange-500"
+  },
+  paid: { 
+    label: "Payé", 
+    bgClass: "bg-emerald-500/15",
+    textClass: "text-emerald-500",
+    dotColor: "bg-emerald-500"
   },
   processing: { 
     label: "En préparation", 
-    className: "bg-blue-500/20 text-blue-400 border-blue-500/30" 
+    bgClass: "bg-blue-500/15",
+    textClass: "text-blue-500",
+    dotColor: "bg-blue-500"
   },
   shipped: { 
     label: "Expédié", 
-    className: "bg-mineral/20 text-mineral border-mineral/30" 
+    bgClass: "bg-cyan-500/15",
+    textClass: "text-cyan-500",
+    dotColor: "bg-cyan-500"
   },
   delivered: { 
     label: "Livré", 
-    className: "bg-green-500/20 text-green-400 border-green-500/30" 
+    bgClass: "bg-green-500/15",
+    textClass: "text-green-500",
+    dotColor: "bg-green-500"
   },
   cancelled: { 
     label: "Annulé", 
-    className: "bg-red-500/20 text-red-400 border-red-500/30" 
+    bgClass: "bg-red-500/15",
+    textClass: "text-red-500",
+    dotColor: "bg-red-500"
   },
+};
+
+const statusOptions = Object.entries(statusConfig).map(([value, config]) => ({
+  value,
+  ...config,
+}));
+
+// Status Filter Bar Component
+const StatusFilterBar = ({ 
+  orders, 
+  activeFilter, 
+  onFilterChange 
+}: { 
+  orders: Order[] | undefined;
+  activeFilter: string | null;
+  onFilterChange: (filter: string | null) => void;
+}) => {
+  return (
+    <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2 scrollbar-hide">
+      <div className="flex items-center gap-2 text-muted-foreground mr-2">
+        <Filter className="w-4 h-4" />
+        <span className="text-xs font-medium uppercase tracking-wide">Filtrer</span>
+      </div>
+      
+      {/* All Orders Button */}
+      <button
+        onClick={() => onFilterChange(null)}
+        className={cn(
+          "px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap",
+          "border border-white/10 backdrop-blur-sm",
+          !activeFilter 
+            ? "bg-foreground text-background" 
+            : "bg-background/60 text-muted-foreground hover:bg-background/80"
+        )}
+      >
+        Toutes ({orders?.length || 0})
+      </button>
+
+      {/* Status Filter Buttons with LED Effect */}
+      {statusOptions.map((status) => {
+        const count = orders?.filter(o => o.status === status.value).length || 0;
+        const isActive = activeFilter === status.value;
+        
+        return (
+          <button
+            key={status.value}
+            onClick={() => onFilterChange(status.value)}
+            className={cn(
+              "px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap",
+              "border border-white/10",
+              isActive 
+                ? `${status.bgClass} ${status.textClass}` 
+                : "bg-background/60 text-muted-foreground hover:bg-background/80"
+            )}
+          >
+            <span className="flex items-center gap-2">
+              {isActive && <div className={cn("w-2 h-2 rounded-full", status.dotColor)} />}
+              {status.label} ({count})
+            </span>
+          </button>
+        );
+      })}
+    </div>
+  );
+};
+
+// Status Dropdown Component with Monaco Design
+const StatusDropdown = ({ 
+  order, 
+  onStatusChange, 
+  isUpdating 
+}: { 
+  order: Order;
+  onStatusChange: (orderId: string, newStatus: string) => void;
+  isUpdating: boolean;
+}) => {
+  const currentStatus = statusConfig[order.status] || statusConfig.pending;
+  
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild disabled={isUpdating}>
+        <motion.div
+          key={order.status}
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 500, damping: 30 }}
+        >
+          <Button
+            variant="ghost"
+            size="sm"
+            className={cn(
+              "gap-2 h-auto py-1.5 px-3 rounded-full",
+              "border border-white/10 backdrop-blur-sm",
+              currentStatus.bgClass,
+              currentStatus.textClass,
+              "hover:opacity-90 transition-all",
+              isUpdating && "opacity-50 cursor-wait"
+            )}
+          >
+            {isUpdating ? (
+              <Loader2 className="w-3 h-3 animate-spin" />
+            ) : (
+              <div className={cn("w-2 h-2 rounded-full", currentStatus.dotColor)} />
+            )}
+            <span className="text-xs font-medium">{currentStatus.label}</span>
+            <ChevronDown className="w-3 h-3 opacity-60" />
+          </Button>
+        </motion.div>
+      </DropdownMenuTrigger>
+      
+      <DropdownMenuContent 
+        align="start"
+        className="w-52 bg-background/95 backdrop-blur-xl border border-white/10 
+                   shadow-xl rounded-xl p-1 z-50"
+      >
+        <DropdownMenuLabel className="text-xs text-muted-foreground uppercase tracking-wide px-2">
+          Changer le statut
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator className="bg-border/50" />
+        
+        {statusOptions.map((status) => (
+          <DropdownMenuItem
+            key={status.value}
+            onClick={() => onStatusChange(order.id, status.value)}
+            className={cn(
+              "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer",
+              "transition-all hover:bg-muted/50",
+              order.status === status.value && "bg-muted/30"
+            )}
+          >
+            {/* LED Badge Preview */}
+            <div className={cn(
+              "flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium",
+              status.bgClass,
+              status.textClass,
+              "border border-current/20"
+            )}>
+              <div className={cn("w-1.5 h-1.5 rounded-full", status.dotColor)} />
+              {status.label}
+            </div>
+            
+            {/* Checkmark if current */}
+            {order.status === status.value && (
+              <CheckCircle className="w-4 h-4 text-primary ml-auto" />
+            )}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 };
 
 const OrdersManager = () => {
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [statusFilter, setStatusFilter] = useState<string | null>(null);
+  const [updatingOrderId, setUpdatingOrderId] = useState<string | null>(null);
+  
+  const queryClient = useQueryClient();
 
-  const { data: orders, isLoading, refetch } = useQuery({
+  const { data: orders, isLoading } = useQuery({
     queryKey: ['admin-orders'],
     queryFn: async () => {
       const { data, error } = await supabase
@@ -75,6 +261,64 @@ const OrdersManager = () => {
     }
   });
 
+  // Mutation with Optimistic Update
+  const updateStatusMutation = useMutation({
+    mutationFn: async ({ orderId, newStatus }: { orderId: string; newStatus: string }) => {
+      const { error } = await supabase
+        .from('orders')
+        .update({ status: newStatus })
+        .eq('id', orderId);
+      
+      if (error) throw error;
+      return { orderId, newStatus };
+    },
+    onMutate: async ({ orderId, newStatus }) => {
+      // Cancel outgoing queries
+      await queryClient.cancelQueries({ queryKey: ['admin-orders'] });
+      
+      // Snapshot previous value
+      const previousOrders = queryClient.getQueryData(['admin-orders']);
+      
+      // Optimistic update
+      queryClient.setQueryData(['admin-orders'], (old: Order[] | undefined) => 
+        old?.map(order => 
+          order.id === orderId ? { ...order, status: newStatus } : order
+        )
+      );
+      
+      return { previousOrders };
+    },
+    onSuccess: (_, variables) => {
+      // Invalidate both admin and user queries for immediate sync with /garage
+      queryClient.invalidateQueries({ queryKey: ['admin-orders'] });
+      queryClient.invalidateQueries({ queryKey: ['user-orders'] });
+      
+      const statusLabel = statusConfig[variables.newStatus]?.label || variables.newStatus;
+      toast.success(`Statut mis à jour : ${statusLabel}`);
+    },
+    onError: (error, _, context) => {
+      // Rollback on error
+      if (context?.previousOrders) {
+        queryClient.setQueryData(['admin-orders'], context.previousOrders);
+      }
+      toast.error("Erreur lors de la mise à jour du statut");
+      console.error("Status update error:", error);
+    },
+    onSettled: () => {
+      setUpdatingOrderId(null);
+    },
+  });
+
+  const handleStatusChange = (orderId: string, newStatus: string) => {
+    setUpdatingOrderId(orderId);
+    updateStatusMutation.mutate({ orderId, newStatus });
+  };
+
+  // Filter orders based on selected status
+  const filteredOrders = statusFilter 
+    ? orders?.filter(order => order.status === statusFilter)
+    : orders;
+
   const handleViewOrder = (order: Order) => {
     setSelectedOrder(order);
     setIsSheetOpen(true);
@@ -86,7 +330,8 @@ const OrdersManager = () => {
   };
 
   const handleStatusUpdate = () => {
-    refetch();
+    queryClient.invalidateQueries({ queryKey: ['admin-orders'] });
+    queryClient.invalidateQueries({ queryKey: ['user-orders'] });
   };
 
   if (isLoading) {
@@ -115,16 +360,32 @@ const OrdersManager = () => {
 
   return (
     <div className="space-y-4">
+      {/* Header with count */}
       <div className="flex items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          {orders.length} commande{orders.length > 1 ? 's' : ''}
+          {filteredOrders?.length || 0} commande{(filteredOrders?.length || 0) > 1 ? 's' : ''}
+          {statusFilter && (
+            <span className="ml-1">
+              · <span className={statusConfig[statusFilter]?.textClass}>
+                {statusConfig[statusFilter]?.label}
+              </span>
+            </span>
+          )}
         </p>
       </div>
 
-      <div className="rounded-xl border border-border/30 overflow-hidden">
+      {/* Status Filter Bar */}
+      <StatusFilterBar 
+        orders={orders}
+        activeFilter={statusFilter}
+        onFilterChange={setStatusFilter}
+      />
+
+      {/* Orders Table with Monaco borders */}
+      <div className="rounded-xl border border-white/10 overflow-hidden bg-background/60 backdrop-blur-md">
         <Table>
           <TableHeader>
-            <TableRow className="bg-muted/30 hover:bg-muted/30">
+            <TableRow className="bg-muted/30 hover:bg-muted/30 border-b border-white/5">
               <TableHead className="text-foreground font-semibold">N° Commande</TableHead>
               <TableHead className="text-foreground font-semibold">Client</TableHead>
               <TableHead className="text-foreground font-semibold hidden md:table-cell">Email</TableHead>
@@ -135,11 +396,16 @@ const OrdersManager = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {orders.map((order) => {
-              const status = statusConfig[order.status] || statusConfig.pending;
-              
-              return (
-                <TableRow key={order.id} className="hover:bg-muted/10">
+            <AnimatePresence mode="popLayout">
+              {filteredOrders?.map((order, index) => (
+                <motion.tr
+                  key={order.id}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.2, delay: index * 0.03 }}
+                  className="hover:bg-muted/10 border-b border-white/5"
+                >
                   <TableCell className="font-mono text-sm font-medium">
                     {order.order_number}
                   </TableCell>
@@ -158,12 +424,11 @@ const OrdersManager = () => {
                     {formatPrice(order.total_ttc)}
                   </TableCell>
                   <TableCell>
-                    <Badge 
-                      variant="outline" 
-                      className={`${status.className} border`}
-                    >
-                      {status.label}
-                    </Badge>
+                    <StatusDropdown 
+                      order={order}
+                      onStatusChange={handleStatusChange}
+                      isUpdating={updatingOrderId === order.id}
+                    />
                   </TableCell>
                   <TableCell className="text-center">
                     <Button
@@ -176,12 +441,33 @@ const OrdersManager = () => {
                       <span className="hidden sm:inline">Détails</span>
                     </Button>
                   </TableCell>
-                </TableRow>
-              );
-            })}
+                </motion.tr>
+              ))}
+            </AnimatePresence>
           </TableBody>
         </Table>
       </div>
+
+      {/* Empty filtered state */}
+      {filteredOrders?.length === 0 && orders.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-center py-12"
+        >
+          <p className="text-muted-foreground">
+            Aucune commande avec le statut "{statusConfig[statusFilter!]?.label}"
+          </p>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setStatusFilter(null)}
+            className="mt-2"
+          >
+            Voir toutes les commandes
+          </Button>
+        </motion.div>
+      )}
 
       {/* Order Detail Sheet */}
       <OrderDetailSheet
