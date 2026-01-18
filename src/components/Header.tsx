@@ -1,12 +1,16 @@
 import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useUserGarage } from "@/hooks/useGarage";
 import { useCompatiblePartsCount } from "@/hooks/useCompatiblePartsCount";
+import { useUnifiedSearch } from "@/hooks/useUnifiedSearch";
+import EliteSearchDropdown from "@/components/search/EliteSearchDropdown";
 import { cn } from "@/lib/utils";
 import logoImage from "@/assets/logo-pt.png";
 import {
@@ -18,16 +22,21 @@ import {
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const prevCountRef = useRef(0);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
   const { selectedScooter, setSelectedScooter, clearSelection, selectedBrandColors } = useSelectedScooter();
   const { data: garageScooters, isLoading: garageLoading } = useUserGarage();
   const { data: compatibleCount = 0 } = useCompatiblePartsCount(selectedScooter?.id);
+  const { data: searchResults, isLoading: searchLoading } = useUnifiedSearch(searchQuery);
   const navigate = useNavigate();
 
   // Shimmer animation when item count increases
@@ -39,6 +48,33 @@ const Header = () => {
     }
     prevCountRef.current = totals.itemCount;
   }, [totals.itemCount]);
+
+  // Focus search input when opened
+  useEffect(() => {
+    if (isSearchOpen && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [isSearchOpen]);
+
+  // Close search on click outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(e.target as Node)) {
+        setIsSearchOpen(false);
+        setSearchQuery("");
+      }
+    };
+
+    if (isSearchOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isSearchOpen]);
+
+  const handleCloseSearch = () => {
+    setIsSearchOpen(false);
+    setSearchQuery("");
+  };
 
   const navLinks = [
     { label: "Accueil", href: "/" },
@@ -303,9 +339,66 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground">
-              <Search className="w-5 h-5" />
-            </Button>
+            {/* Elite Expandable Search */}
+            <div ref={searchContainerRef} className="relative">
+              <AnimatePresence mode="wait">
+                {isSearchOpen ? (
+                  <motion.div
+                    key="search-input"
+                    initial={{ width: 40, opacity: 0 }}
+                    animate={{ width: 280, opacity: 1 }}
+                    exit={{ width: 40, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className="relative"
+                  >
+                    <Input
+                      ref={searchInputRef}
+                      type="text"
+                      placeholder="Rechercher..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full h-10 pl-10 pr-10 rounded-full 
+                                bg-white/95 backdrop-blur-xl border-[0.5px] border-mineral/20
+                                focus:border-mineral/40 focus:ring-2 focus:ring-mineral/10
+                                placeholder:text-carbon/40 text-sm"
+                    />
+                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mineral/60" />
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={handleCloseSearch}
+                      className="absolute right-1 top-1/2 -translate-y-1/2 w-8 h-8 hover:bg-mineral/10"
+                    >
+                      <X className="w-4 h-4 text-carbon/60" />
+                    </Button>
+                    
+                    {/* Search Dropdown */}
+                    <EliteSearchDropdown
+                      results={searchResults}
+                      isVisible={searchQuery.length >= 2}
+                      isLoading={searchLoading}
+                      onClose={handleCloseSearch}
+                    />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="search-button"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      onClick={() => setIsSearchOpen(true)}
+                      className="text-foreground/80 hover:text-foreground"
+                    >
+                      <Search className="w-5 h-5" />
+                    </Button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             
             <Button 
               variant="ghost" 

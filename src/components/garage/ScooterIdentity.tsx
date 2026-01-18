@@ -1,3 +1,6 @@
+import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Pencil, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ScooterIdentityProps {
@@ -7,6 +10,9 @@ interface ScooterIdentityProps {
   isOwned?: boolean;
   className?: string;
   variant?: 'mobile' | 'desktop';
+  editable?: boolean;
+  garageItemId?: string;
+  onNicknameChange?: (nickname: string) => void;
 }
 
 const ScooterIdentity = ({ 
@@ -15,9 +21,130 @@ const ScooterIdentity = ({
   nickname, 
   isOwned, 
   className, 
-  variant = 'mobile' 
+  variant = 'mobile',
+  editable = false,
+  garageItemId,
+  onNicknameChange
 }: ScooterIdentityProps) => {
-  
+  const [isEditing, setIsEditing] = useState(false);
+  const [editValue, setEditValue] = useState(nickname || '');
+  const [showSuccess, setShowSuccess] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Sync edit value when nickname changes
+  useEffect(() => {
+    setEditValue(nickname || '');
+  }, [nickname]);
+
+  // Focus input when entering edit mode
+  useEffect(() => {
+    if (isEditing && inputRef.current) {
+      inputRef.current.focus();
+      inputRef.current.select();
+    }
+  }, [isEditing]);
+
+  const handleSave = () => {
+    const trimmedValue = editValue.trim();
+    if (trimmedValue !== (nickname || '')) {
+      onNicknameChange?.(trimmedValue);
+      // Show success feedback
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 1500);
+    }
+    setIsEditing(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleSave();
+    } else if (e.key === 'Escape') {
+      setEditValue(nickname || '');
+      setIsEditing(false);
+    }
+  };
+
+  const NicknameDisplay = () => {
+    if (!editable) {
+      // Non-editable: simple display
+      return nickname ? (
+        <p className="text-sm text-mineral/70 italic font-light">
+          « {nickname} »
+        </p>
+      ) : null;
+    }
+
+    // Editable mode
+    return (
+      <div className="flex items-center justify-center gap-2">
+        <AnimatePresence mode="wait">
+          {isEditing ? (
+            <motion.div
+              key="input"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.15 }}
+              className="relative"
+            >
+              <input
+                ref={inputRef}
+                type="text"
+                value={editValue}
+                onChange={(e) => setEditValue(e.target.value)}
+                onBlur={handleSave}
+                onKeyDown={handleKeyDown}
+                placeholder="Donner un surnom..."
+                className="bg-transparent border-b border-mineral/30 focus:border-mineral 
+                          outline-none text-sm text-carbon/70 italic font-light 
+                          text-center min-w-[120px] max-w-[200px] py-1 px-2
+                          transition-colors duration-200"
+              />
+            </motion.div>
+          ) : (
+            <motion.button
+              key="display"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.15 }}
+              onClick={() => setIsEditing(true)}
+              className="group flex items-center gap-1.5 text-sm text-mineral/70 italic font-light 
+                        hover:text-mineral transition-colors cursor-pointer py-1"
+            >
+              {nickname ? (
+                <>
+                  <span>« {nickname} »</span>
+                  <Pencil className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </>
+              ) : (
+                <>
+                  <span className="text-mineral/40 not-italic">Ajouter un surnom</span>
+                  <Pencil className="w-3 h-3 opacity-50" />
+                </>
+              )}
+            </motion.button>
+          )}
+        </AnimatePresence>
+
+        {/* Success indicator */}
+        <AnimatePresence>
+          {showSuccess && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 0.2 }}
+              className="text-emerald-500"
+            >
+              <Check className="w-4 h-4" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  };
+
   if (variant === 'desktop') {
     // Desktop: Horizontal inline layout with backdrop
     return (
@@ -29,15 +156,17 @@ const ScooterIdentity = ({
         </span>
         
         {/* Model + Nickname Badge */}
-        <h2 className="font-display text-lg text-carbon bg-white/80 backdrop-blur-sm 
+        <div className="font-display text-lg text-carbon bg-white/80 backdrop-blur-sm 
                       px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20 flex items-center gap-2">
           <span className="font-bold">{modelName}</span>
-          {nickname && (
+          {editable ? (
+            <NicknameDisplay />
+          ) : nickname && (
             <span className="text-mineral/60 font-light text-sm italic">
               « {nickname} »
             </span>
           )}
-        </h2>
+        </div>
       </div>
     );
   }
@@ -59,12 +188,8 @@ const ScooterIdentity = ({
         {modelName}
       </h1>
       
-      {/* NICKNAME - Subtle distinct style with French quotes */}
-      {nickname && (
-        <p className="text-sm text-mineral/70 italic font-light">
-          « {nickname} »
-        </p>
-      )}
+      {/* NICKNAME - Editable or Display */}
+      <NicknameDisplay />
       
       {/* Owned Status Badge */}
       {isOwned && (

@@ -13,6 +13,7 @@ import ScooterIdentity from '@/components/garage/ScooterIdentity';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
+import { useUpdateNickname } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 
@@ -69,12 +70,20 @@ const Garage = () => {
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
+  const updateNickname = useUpdateNickname();
   
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
   );
 
   const scooterStats = calculateScooterStats(selectedScooter);
+
+  // Handle nickname change
+  const handleNicknameChange = (nickname: string) => {
+    if (selectedScooter?.id) {
+      updateNickname.mutate({ garageItemId: selectedScooter.id, nickname });
+    }
+  };
 
   useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
@@ -178,6 +187,9 @@ const Garage = () => {
                         nickname={selectedScooter.nickname}
                         isOwned={selectedScooter.is_owned}
                         variant="mobile"
+                        editable={true}
+                        garageItemId={selectedScooter.id}
+                        onNicknameChange={handleNicknameChange}
                       />
                     </motion.div>
                   )}
