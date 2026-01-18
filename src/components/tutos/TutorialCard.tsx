@@ -27,16 +27,18 @@ interface TutorialCardProps {
 
 const DifficultyBadge = ({ level }: { level: number }) => {
   const labels = ['Débutant', 'Facile', 'Intermédiaire', 'Avancé', 'Expert'];
+  // LED Effect: 15% opacity backgrounds with full color text
   const colors = [
-    'bg-green-100/90 text-green-700 border-green-200/50',
-    'bg-blue-100/90 text-blue-700 border-blue-200/50',
-    'bg-amber-100/90 text-amber-700 border-amber-200/50',
-    'bg-orange-100/90 text-orange-700 border-orange-200/50',
-    'bg-red-100/90 text-red-700 border-red-200/50'
+    'bg-emerald-500/15 text-emerald-600 border-emerald-500/20',
+    'bg-blue-500/15 text-blue-600 border-blue-500/20',
+    'bg-amber-500/15 text-amber-600 border-amber-500/20',
+    'bg-orange-500/15 text-orange-600 border-orange-500/20',
+    'bg-red-500/15 text-red-600 border-red-500/20'
   ];
 
   return (
-    <div className={`px-2.5 py-1 rounded-full text-xs font-medium backdrop-blur-sm border ${colors[level - 1]}`}>
+    <div className={`px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-sm 
+                     border-[0.5px] ${colors[level - 1]} shadow-sm`}>
       {labels[level - 1]}
     </div>
   );
@@ -54,8 +56,10 @@ const TutorialCard = ({ tutorial, index, onClick }: TutorialCardProps) => {
       onClick={onClick}
       className="group cursor-pointer"
     >
-        <div className="bg-white/60 backdrop-blur-md border border-carbon/10 rounded-2xl overflow-hidden 
-                      shadow-lg hover:shadow-2xl hover:shadow-mineral/10 transition-all duration-500">
+      {/* Monaco Design: 0.5px borders + Glassmorphism */}
+      <div className="bg-white/70 backdrop-blur-xl border-[0.5px] border-white/20 rounded-2xl overflow-hidden 
+                      shadow-lg hover:shadow-2xl hover:shadow-mineral/15 transition-all duration-500
+                      ring-1 ring-carbon/5">
         
         {/* Thumbnail */}
         <div className="relative aspect-video overflow-hidden">
@@ -99,7 +103,8 @@ const TutorialCard = ({ tutorial, index, onClick }: TutorialCardProps) => {
           {/* Scooter Model Tag */}
           {tutorial.scooter && (
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full 
-                            bg-mineral/15 text-mineral text-xs font-medium mb-3">
+                            bg-mineral/15 text-mineral text-xs font-semibold mb-3
+                            border-[0.5px] border-mineral/20">
               <Zap className="w-3 h-3" />
               {tutorial.scooter.brand?.name} {tutorial.scooter.name}
             </div>
