@@ -6,6 +6,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useUserGarage } from "@/hooks/useGarage";
+import { useCompatiblePartsCount } from "@/hooks/useCompatiblePartsCount";
 import { cn } from "@/lib/utils";
 import logoImage from "@/assets/logo-pt.png";
 import {
@@ -26,6 +27,7 @@ const Header = () => {
   const { setIsOpen: openCart, totals } = useCart();
   const { selectedScooter, setSelectedScooter, clearSelection, selectedBrandColors } = useSelectedScooter();
   const { data: garageScooters, isLoading: garageLoading } = useUserGarage();
+  const { data: compatibleCount = 0 } = useCompatiblePartsCount(selectedScooter?.id);
   const navigate = useNavigate();
 
   // Shimmer animation when item count increases
@@ -93,7 +95,39 @@ const Header = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
-            {/* Ma Trottinette Selector - Monaco Design with Dynamic Brand Colors */}
+            {/* Mobile Slim Selector - Ultra compact badge for mobile */}
+            {selectedScooter && (
+              <Link 
+                to="/garage"
+                className={cn(
+                  "flex md:hidden items-center gap-1.5 px-2.5 py-1.5 rounded-full",
+                  "bg-white/70 backdrop-blur-xl border-[0.5px]",
+                  "transition-all duration-300",
+                  selectedBrandColors.borderClass
+                )}
+                style={{ 
+                  boxShadow: `0 0 12px ${selectedBrandColors.glowColor}`,
+                }}
+              >
+                <Bike className={cn("w-3.5 h-3.5", selectedBrandColors.textClass)} />
+                <span className={cn(
+                  "text-xs font-medium max-w-[70px] truncate",
+                  selectedBrandColors.textClass
+                )}>
+                  {selectedScooter.name}
+                </span>
+                {compatibleCount > 0 && (
+                  <span 
+                    className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-white/60"
+                    style={{ color: selectedBrandColors.accent }}
+                  >
+                    ({compatibleCount})
+                  </span>
+                )}
+              </Link>
+            )}
+
+            {/* Ma Trottinette Selector - Monaco Design with Dynamic Brand Colors - Desktop */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 

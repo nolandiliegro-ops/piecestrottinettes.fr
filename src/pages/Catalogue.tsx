@@ -196,7 +196,7 @@ const Catalogue = () => {
   };
 
   return (
-    <div className="min-h-screen bg-greige">
+    <div className="min-h-screen bg-greige pb-24 md:pb-0">
       {/* Fixed Header */}
       <Header />
 

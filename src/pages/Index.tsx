@@ -28,7 +28,7 @@ const Index = () => {
       <Header />
       
       {/* Main Content - Vertical Layout */}
-      <main className="pt-16 lg:pt-20">
+      <main className="pt-16 lg:pt-20 pb-24 md:pb-0">
         {/* 1. Hero Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}

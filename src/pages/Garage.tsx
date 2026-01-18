@@ -90,7 +90,7 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg watermark-brand">
+    <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg watermark-brand pb-24 md:pb-0">
       <Header />
       
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">

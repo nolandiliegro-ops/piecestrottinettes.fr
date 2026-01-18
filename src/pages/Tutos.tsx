@@ -97,7 +97,7 @@ const Tutos = () => {
 
   return (
     <div 
-      className="min-h-screen bg-greige"
+      className="min-h-screen bg-greige pb-24 md:pb-0"
       style={{
         backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.4) 0%, transparent 60%)'
       }}

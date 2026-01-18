@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/hooks/useCart";
 import { ScooterProvider } from "@/contexts/ScooterContext";
 import CartSidebar from "@/components/cart/CartSidebar";
+import MobileNav from "@/components/navigation/MobileNav";
 import Index from "./pages/Index";
 import Catalogue from "./pages/Catalogue";
 import Scooters from "./pages/Scooters";
@@ -37,6 +38,7 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <CartSidebar />
+            <MobileNav />
             <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
