@@ -12,11 +12,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle, ArrowUpDown, Layers, ChevronUp, ChevronDown, Trophy } from 'lucide-react';
+import { Loader2, Upload, Check, X, Image as ImageIcon, Save, Plus, Trash2, Edit, Download, Search, FileUp, Package, Wrench, Code, Globe, AlertTriangle, ArrowUpDown, Layers, ChevronUp, ChevronDown, Trophy, Bike } from 'lucide-react';
 import { Switch } from '@/components/ui/switch';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
 import { cn } from '@/lib/utils';
+import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 
 import type { Json } from '@/integrations/supabase/types';
 
@@ -102,7 +103,8 @@ const PartsManager = () => {
     meta_title: '',
     meta_description: '',
     technical_metadata: '{}',
-    is_featured: false
+    is_featured: false,
+    compatibleScooterIds: [] as string[]
   });
 
   const [editPart, setEditPart] = useState<Part | null>(null);
@@ -121,7 +123,8 @@ const PartsManager = () => {
     meta_title: '',
     meta_description: '',
     technical_metadata: '{}',
-    is_featured: false
+    is_featured: false,
+    compatibleScooterIds: [] as string[]
   });
 
   useEffect(() => {
@@ -209,7 +212,7 @@ const PartsManager = () => {
       if (error) throw error;
 
       setParts(prev => [...prev, data]);
-      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false });
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, compatibleScooterIds: [] });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
     } catch (error: any) {
@@ -241,7 +244,8 @@ const PartsManager = () => {
       meta_title: part.meta_title || '',
       meta_description: part.meta_description || '',
       technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}',
-      is_featured: part.is_featured || false
+      is_featured: part.is_featured || false,
+      compatibleScooterIds: [] // Will be loaded by ScooterCompatibilitySelect component
     });
     setIsEditOpen(true);
   };
@@ -679,9 +683,10 @@ const PartsManager = () => {
 
   const renderFormFields = (values: typeof newPart, setValues: (v: typeof newPart) => void, isEdit = false) => (
     <Tabs defaultValue="general" className="w-full">
-      <TabsList className="grid w-full grid-cols-4 mb-4">
+      <TabsList className="grid w-full grid-cols-5 mb-4">
         <TabsTrigger value="general" className="text-xs gap-1"><Package className="w-3 h-3" /> Général</TabsTrigger>
-        <TabsTrigger value="install" className="text-xs gap-1"><Wrench className="w-3 h-3" /> Installation</TabsTrigger>
+        <TabsTrigger value="compat" className="text-xs gap-1"><Bike className="w-3 h-3" /> Compat</TabsTrigger>
+        <TabsTrigger value="install" className="text-xs gap-1"><Wrench className="w-3 h-3" /> Install</TabsTrigger>
         <TabsTrigger value="specs" className="text-xs gap-1"><Code className="w-3 h-3" /> Specs</TabsTrigger>
         <TabsTrigger value="seo" className="text-xs gap-1"><Globe className="w-3 h-3" /> SEO</TabsTrigger>
       </TabsList>
@@ -745,6 +750,14 @@ const PartsManager = () => {
             className="data-[state=checked]:bg-mineral"
           />
         </div>
+      </TabsContent>
+
+      <TabsContent value="compat" className="space-y-4">
+        <ScooterCompatibilitySelect
+          partId={isEdit ? editPart?.id : undefined}
+          selectedIds={values.compatibleScooterIds}
+          onChange={(ids) => setValues({ ...values, compatibleScooterIds: ids })}
+        />
       </TabsContent>
 
       <TabsContent value="install" className="space-y-4">

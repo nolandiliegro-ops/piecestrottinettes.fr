@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Gauge, ShoppingCart, Trophy } from "lucide-react";
+import { Gauge, ShoppingCart, Trophy, Check } from "lucide-react";
 import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
 import { toast } from "sonner";
+import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
 
 interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
@@ -52,6 +53,9 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
+  
+  // Compatibility check with selected scooter
+  const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
   
   // Use torque_nm from part directly if available, otherwise from metadata
   const torqueValue = part.torque_nm ?? (part.technical_metadata?.torque_nm as number | undefined);
@@ -121,6 +125,24 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
     >
       {/* Subtle Gradient Overlay */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+      {/* COMPATIBLE Badge - LED Effect */}
+      {selectedScooter && isCompatible && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: -10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: index * 0.05 }}
+          className="absolute top-3 right-3 z-20"
+        >
+          <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full 
+                          bg-mineral/15 text-mineral text-[10px] font-semibold 
+                          tracking-wide uppercase shadow-sm backdrop-blur-sm 
+                          border-[0.5px] border-mineral/20">
+            <Check className="w-3 h-3" />
+            <span>Compatible</span>
+          </div>
+        </motion.div>
+      )}
 
       {/* Image Container - Luxury Studio Style */}
       <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">

@@ -1,9 +1,10 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { cn } from "@/lib/utils";
 import logoImage from "@/assets/logo-pt.png";
 import {
@@ -12,7 +13,9 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +23,7 @@ const Header = () => {
   const prevCountRef = useRef(0);
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
+  const { selectedScooter, setSelectedScooter, clearSelection, allScooters, isLoading: scootersLoading } = useSelectedScooter();
   const navigate = useNavigate();
 
   // Shimmer animation when item count increases
@@ -80,7 +84,96 @@ const Header = () => {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-2 lg:gap-4">
+          <div className="flex items-center gap-2 lg:gap-3">
+            {/* Ma Trottinette Selector - Monaco Design */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  className={cn(
+                    "hidden md:flex items-center gap-2 rounded-full px-4 h-10",
+                    "bg-white/70 backdrop-blur-xl border-[0.5px] border-white/20",
+                    "hover:bg-white/90 hover:border-mineral/30 transition-all",
+                    selectedScooter && "border-mineral/40 bg-mineral/5"
+                  )}
+                >
+                  <Bike className={cn("w-4 h-4", selectedScooter ? "text-mineral" : "text-muted-foreground")} />
+                  <span className="text-sm font-medium max-w-[140px] truncate">
+                    {selectedScooter ? selectedScooter.name : "Ma Trottinette"}
+                  </span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                align="end" 
+                className="w-64 bg-white/95 backdrop-blur-xl border-[0.5px] border-white/20 shadow-2xl rounded-xl z-50"
+              >
+                <DropdownMenuLabel className="flex items-center justify-between text-xs uppercase tracking-wider text-muted-foreground">
+                  Ma Trottinette
+                  {selectedScooter && (
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="h-6 px-2 text-xs hover:text-destructive"
+                      onClick={(e) => { e.preventDefault(); clearSelection(); }}
+                    >
+                      <X className="w-3 h-3 mr-1" />
+                      Retirer
+                    </Button>
+                  )}
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <ScrollArea className="h-[280px]">
+                  {scootersLoading ? (
+                    <div className="flex items-center justify-center py-8 text-sm text-muted-foreground">
+                      Chargement...
+                    </div>
+                  ) : allScooters.length === 0 ? (
+                    <div className="flex items-center justify-center py-8 text-sm text-muted-foreground">
+                      Aucun modèle disponible
+                    </div>
+                  ) : (
+                    allScooters.map((scooter) => (
+                      <DropdownMenuItem
+                        key={scooter.id}
+                        onClick={() => setSelectedScooter({
+                          id: scooter.id,
+                          name: scooter.name,
+                          slug: scooter.slug,
+                          brandName: scooter.brandName,
+                          imageUrl: scooter.imageUrl,
+                        })}
+                        className={cn(
+                          "flex items-center gap-3 py-2.5 px-3 cursor-pointer",
+                          "hover:bg-mineral/5 transition-colors",
+                          selectedScooter?.id === scooter.id && "bg-mineral/10"
+                        )}
+                      >
+                        {scooter.imageUrl ? (
+                          <img 
+                            src={scooter.imageUrl} 
+                            alt={scooter.name}
+                            className="w-8 h-8 object-contain rounded bg-greige p-0.5"
+                          />
+                        ) : (
+                          <div className="w-8 h-8 rounded bg-greige flex items-center justify-center">
+                            <Bike className="w-4 h-4 text-muted-foreground" />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium truncate">{scooter.name}</p>
+                          <p className="text-xs text-muted-foreground">{scooter.brandName}</p>
+                        </div>
+                        {selectedScooter?.id === scooter.id && (
+                          <div className="w-2 h-2 rounded-full bg-mineral" />
+                        )}
+                      </DropdownMenuItem>
+                    ))
+                  )}
+                </ScrollArea>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground">
               <Search className="w-5 h-5" />
             </Button>
