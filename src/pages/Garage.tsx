@@ -3,15 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Loader2, Trophy, Package, ArrowRight, ShoppingBag } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
-import HorizontalShowroomCarousel from '@/components/garage/HorizontalShowroomCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
-import MaintenanceLog from '@/components/garage/MaintenanceLog';
 import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
-import ProductsUsed from '@/components/garage/ProductsUsed';
+import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
@@ -47,16 +45,14 @@ const calculateScooterStats = (scooter: any) => {
   
   const model = scooter.scooter_model;
   
-  // Points: Based on power + range + compatible parts
   const powerPoints = Math.round((model.power_watts || 500) / 20);
   const rangePoints = Math.round((model.range_km || 20) * 2);
   const partsBonus = (model.compatible_parts_count || 0) * 3;
   const machinePoints = powerPoints + rangePoints + partsBonus;
   
-  // Investment: Estimated based on parts count and power tier
   const avgPartPrice = 35;
   const powerTier = model.power_watts ? (model.power_watts > 2000 ? 1.5 : model.power_watts > 1000 ? 1.2 : 1) : 1;
-  const estimatedParts = Math.round((model.compatible_parts_count || 5) * 0.3); // Assume 30% purchased
+  const estimatedParts = Math.round((model.compatible_parts_count || 5) * 0.3);
   const totalInvested = Math.round(estimatedParts * avgPartPrice * powerTier);
   
   return { totalInvested, machinePoints };
@@ -64,19 +60,17 @@ const calculateScooterStats = (scooter: any) => {
 
 const Garage = () => {
   const navigate = useNavigate();
-  const { profile, loading: authLoading } = useAuth();
+  const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
+  const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
   
-  // Fetch compatible parts for selected scooter
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
   );
 
-  // Calculate dynamic stats for selected scooter
   const scooterStats = calculateScooterStats(selectedScooter);
 
-  // Set initial selected scooter when scooters load
   useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
       setSelectedScooter(scooters[0]);
@@ -85,7 +79,7 @@ const Garage = () => {
 
   if (authLoading) {
     return (
-      <div className="min-h-screen bg-[#F5F3F0] flex items-center justify-center">
+      <div className="min-h-screen bg-greige flex items-center justify-center">
         <Loader2 className="w-8 h-8 animate-spin text-mineral" />
       </div>
     );
@@ -99,113 +93,159 @@ const Garage = () => {
     <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg watermark-brand">
       <Header />
       
-      {/* Main Content - Zero Scroll Layout */}
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
         <div className="h-full flex flex-col max-w-7xl mx-auto">
           
-          {/* Header Row - Compact */}
+          {/* Header Row with Tabs */}
           <motion.div 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             className="flex items-center justify-between mb-4 shrink-0"
           >
-            <div>
-              <h1 className="font-display text-2xl lg:text-3xl text-[#1A1A1A] tracking-wide">
-                MON GARAGE
-              </h1>
-              <p className="text-carbon/60 text-sm">
-                Bienvenue, <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-              </p>
+            <div className="flex items-center gap-1">
+              {/* Tab: Mon Garage */}
+              <button
+                onClick={() => setActiveTab('garage')}
+                className={cn(
+                  "flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300",
+                  activeTab === 'garage' 
+                    ? "bg-carbon text-white" 
+                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                )}
+              >
+                <Package className="w-4 h-4" />
+                <span className="font-display text-sm tracking-wide">MON GARAGE</span>
+              </button>
+              
+              {/* Tab: Mes Commandes */}
+              <button
+                onClick={() => setActiveTab('orders')}
+                className={cn(
+                  "flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300",
+                  activeTab === 'orders' 
+                    ? "bg-carbon text-white" 
+                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                )}
+              >
+                <ShoppingBag className="w-4 h-4" />
+                <span className="font-display text-sm tracking-wide">MES COMMANDES</span>
+              </button>
             </div>
-            <CompactPerformanceWidget 
-              points={profile?.performance_points || 0}
-              displayName={profile?.display_name || 'Rider'}
-            />
+            
+            <div className="flex items-center gap-4">
+              <p className="text-carbon/60 text-sm hidden md:block">
+                <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
+              </p>
+              <CompactPerformanceWidget 
+                points={profile?.performance_points || 0}
+                displayName={profile?.display_name || 'Rider'}
+              />
+            </div>
           </motion.div>
 
-          {/* Main Bento Grid - Takes remaining space */}
-          <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
-            
-            {/* Left Column: Scooter Image (2/3 width) */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              className="lg:col-span-2 min-h-0"
-            >
-              {scootersLoading ? (
-                <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
-                  <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+          {/* Tab Content with Animation */}
+          <AnimatePresence mode="wait">
+            {activeTab === 'garage' ? (
+              <motion.div
+                key="garage"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ duration: 0.3 }}
+                className="flex-1 flex flex-col min-h-0"
+              >
+                {/* Main Bento Grid */}
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
+                  {/* Left Column: Scooter Image */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 }}
+                    className="lg:col-span-2 min-h-0"
+                  >
+                    {scootersLoading ? (
+                      <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
+                        <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+                      </div>
+                    ) : (
+                      <GarageScooterCarousel 
+                        scooters={scooters || []}
+                        onScooterChange={setSelectedScooter}
+                      />
+                    )}
+                  </motion.div>
+
+                  {/* Right Column: Stacked Info */}
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.2 }}
+                    className="flex flex-col gap-3 min-h-0 overflow-hidden"
+                  >
+                    {selectedScooter?.scooter_model && (
+                      <TechnicalSpecs
+                        voltage={selectedScooter.scooter_model.voltage}
+                        amperage={selectedScooter.scooter_model.amperage}
+                        power={selectedScooter.scooter_model.power_watts}
+                        className="shrink-0"
+                      />
+                    )}
+
+                    {selectedScooter && (
+                      <ExpertTrackingWidget
+                        garageItemId={selectedScooter.id}
+                        scooterName={scooterName}
+                        lastMaintenanceDate={selectedScooter.last_maintenance_date}
+                        totalInvested={scooterStats.totalInvested}
+                        machinePoints={scooterStats.machinePoints}
+                        className="shrink-0"
+                      />
+                    )}
+
+                    {selectedScooter?.scooter_model && (
+                      <ScooterVideoSection
+                        youtubeVideoId={selectedScooter.scooter_model.youtube_video_id}
+                        scooterName={scooterName}
+                        className="shrink-0 flex-1 min-h-[120px]"
+                      />
+                    )}
+                  </motion.div>
                 </div>
-              ) : (
-                <GarageScooterCarousel 
-                  scooters={scooters || []}
-                  onScooterChange={setSelectedScooter}
-                />
-              )}
-            </motion.div>
 
-            {/* Right Column: Stacked Info (1/3 width) */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-              className="flex flex-col gap-3 min-h-0 overflow-hidden"
-            >
-              {/* Technical Specs */}
-              {selectedScooter?.scooter_model && (
-                <TechnicalSpecs
-                  voltage={selectedScooter.scooter_model.voltage}
-                  amperage={selectedScooter.scooter_model.amperage}
-                  power={selectedScooter.scooter_model.power_watts}
-                  className="shrink-0"
-                />
-              )}
-
-              {/* Expert Tracking Widget - Dynamic Data */}
-              {selectedScooter && (
-                <ExpertTrackingWidget
-                  garageItemId={selectedScooter.id}
-                  scooterName={scooterName}
-                  lastMaintenanceDate={selectedScooter.last_maintenance_date}
-                  totalInvested={scooterStats.totalInvested}
-                  machinePoints={scooterStats.machinePoints}
-                  className="shrink-0"
-                />
-              )}
-
-              {/* YouTube Video - Fixed Height */}
-              {selectedScooter?.scooter_model && (
-                <ScooterVideoSection
-                  youtubeVideoId={selectedScooter.scooter_model.youtube_video_id}
-                  scooterName={scooterName}
-                  className="shrink-0 flex-1 min-h-[120px]"
-                />
-              )}
-            </motion.div>
-          </div>
-
-          {/* Bottom Row: Compatible Parts */}
-          {selectedScooter && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.3 }}
-              className="mt-4 shrink-0"
-            >
-              <CompactProductsRow
-                scooterId={selectedScooter.id}
-                scooterName={scooterName}
-                parts={parts || []}
-                loading={partsLoading}
-                onViewPart={(partId) => navigate(`/part/${partId}`)}
-              />
-            </motion.div>
-          )}
+                {/* Bottom Row: Compatible Parts */}
+                {selectedScooter && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                    className="mt-4 shrink-0"
+                  >
+                    <CompactProductsRow
+                      scooterId={selectedScooter.id}
+                      scooterName={scooterName}
+                      parts={parts || []}
+                      loading={partsLoading}
+                      onViewPart={(partId) => navigate(`/part/${partId}`)}
+                    />
+                  </motion.div>
+                )}
+              </motion.div>
+            ) : (
+              <motion.div
+                key="orders"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="flex-1 overflow-y-auto pb-8"
+              >
+                <OrderHistorySection userId={user?.id} />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
-        {/* Footer */}
         <Footer />
       </main>
     </div>
@@ -254,7 +294,7 @@ const CompactProductsRow = ({
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <h3 className="font-display text-sm text-[#1A1A1A] uppercase tracking-wide">
+        <h3 className="font-display text-sm text-carbon uppercase tracking-wide">
           Pièces compatibles
         </h3>
         <span className="text-xs text-carbon/50">{parts.length} disponibles</span>
@@ -271,8 +311,7 @@ const CompactProductsRow = ({
             className="flex-shrink-0 w-36 bg-white/80 border border-carbon/10 rounded-xl p-3 
                        hover:shadow-lg hover:border-mineral/40 transition-all cursor-pointer group"
           >
-            {/* Image - Luxury Studio Style */}
-            <div className="aspect-square rounded-lg bg-[#F9F8F6] overflow-hidden mb-2 flex items-center justify-center">
+            <div className="aspect-square rounded-lg bg-greige overflow-hidden mb-2 flex items-center justify-center">
               {part.image ? (
                 <img
                   src={part.image}
@@ -286,8 +325,7 @@ const CompactProductsRow = ({
               )}
             </div>
             
-            {/* Info with Carbon Black text */}
-            <p className="text-xs font-medium text-[#1A1A1A] line-clamp-2 mb-1 min-h-[2rem]">
+            <p className="text-xs font-medium text-carbon line-clamp-2 mb-1 min-h-[2rem]">
               {part.name}
             </p>
             
