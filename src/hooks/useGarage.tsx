@@ -254,3 +254,38 @@ export const useToggleOwned = () => {
     },
   });
 };
+
+// Update nickname for a garage item
+export const useUpdateNickname = () => {
+  const queryClient = useQueryClient();
+  const { user } = useAuthContext();
+
+  return useMutation({
+    mutationFn: async ({ 
+      garageItemId, 
+      nickname 
+    }: { 
+      garageItemId: string; 
+      nickname: string;
+    }) => {
+      if (!user) throw new Error("Not authenticated");
+
+      const { error } = await supabase
+        .from("user_garage")
+        .update({ nickname: nickname.trim() || null })
+        .eq("id", garageItemId)
+        .eq("user_id", user.id);
+
+      if (error) throw error;
+      return { nickname };
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["user-garage"] });
+      toast.success("Surnom enregistré", { duration: 2000 });
+    },
+    onError: (error) => {
+      console.error("Error updating nickname:", error);
+      toast.error("Erreur lors de la sauvegarde");
+    },
+  });
+};
