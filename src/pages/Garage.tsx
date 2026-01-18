@@ -14,25 +14,28 @@ import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 
-// Compact Performance Widget for header
+// Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
   const getLevel = (pts: number) => {
-    if (pts >= 1000) return { label: 'EXPERT', color: 'text-amber-500' };
-    if (pts >= 500) return { label: 'AVANCÉ', color: 'text-mineral' };
-    if (pts >= 100) return { label: 'INTER', color: 'text-blue-500' };
-    return { label: 'DÉBUT', color: 'text-slate-500' };
+    if (pts >= 1000) return { label: 'EXP', fullLabel: 'EXPERT', color: 'text-amber-500' };
+    if (pts >= 500) return { label: 'AVA', fullLabel: 'AVANCÉ', color: 'text-mineral' };
+    if (pts >= 100) return { label: 'INT', fullLabel: 'INTER', color: 'text-blue-500' };
+    return { label: 'DÉB', fullLabel: 'DÉBUT', color: 'text-slate-500' };
   };
   const level = getLevel(points);
 
   return (
-    <div className="flex items-center gap-3 px-4 py-2 bg-white/60 border border-mineral/20 rounded-full">
-      <Trophy className="w-4 h-4 text-mineral" />
-      <span className={cn("font-display font-bold text-lg", level.color)}>
+    <div className="flex items-center gap-1.5 md:gap-3 px-2.5 md:px-4 py-1.5 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full">
+      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral" />
+      <span className={cn("font-display font-bold text-sm md:text-lg", level.color)}>
         {points.toLocaleString('fr-FR')}
       </span>
-      <span className="text-xs text-carbon/50">pts</span>
-      <div className="w-px h-4 bg-mineral/20" />
-      <span className={cn("text-xs font-semibold", level.color)}>{level.label}</span>
+      <span className="hidden md:inline text-xs text-carbon/50">pts</span>
+      <div className="w-px h-3 md:h-4 bg-mineral/20" />
+      <span className={cn("text-[10px] md:text-xs font-semibold", level.color)}>
+        <span className="md:hidden">{level.label}</span>
+        <span className="hidden md:inline">{level.fullLabel}</span>
+      </span>
     </div>
   );
 };
@@ -96,45 +99,47 @@ const Garage = () => {
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
         <div className="h-full flex flex-col max-w-7xl mx-auto">
           
-          {/* Header Row with Tabs */}
+          {/* Header Row with Tabs - Stacks on mobile */}
           <motion.div 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="flex items-center justify-between mb-4 shrink-0"
+            className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-4 shrink-0"
           >
-            <div className="flex items-center gap-1">
+            {/* Tabs - Full width scroll on mobile */}
+            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-1 md:pb-0">
               {/* Tab: Mon Garage */}
               <button
                 onClick={() => setActiveTab('garage')}
                 className={cn(
-                  "flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300",
+                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
                   activeTab === 'garage' 
                     ? "bg-carbon text-white" 
                     : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
                 )}
               >
                 <Package className="w-4 h-4" />
-                <span className="font-display text-sm tracking-wide">MON GARAGE</span>
+                <span className="font-display text-xs md:text-sm tracking-wide">GARAGE</span>
               </button>
               
               {/* Tab: Mes Commandes */}
               <button
                 onClick={() => setActiveTab('orders')}
                 className={cn(
-                  "flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300",
+                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
                   activeTab === 'orders' 
                     ? "bg-carbon text-white" 
                     : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
                 )}
               >
                 <ShoppingBag className="w-4 h-4" />
-                <span className="font-display text-sm tracking-wide">MES COMMANDES</span>
+                <span className="font-display text-xs md:text-sm tracking-wide">COMMANDES</span>
               </button>
             </div>
             
-            <div className="flex items-center gap-4">
-              <p className="text-carbon/60 text-sm hidden md:block">
+            {/* User info - Compact on mobile */}
+            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4">
+              <p className="text-carbon/60 text-xs md:text-sm">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
               </p>
               <CompactPerformanceWidget 
@@ -153,7 +158,7 @@ const Garage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.3 }}
-                className="flex-1 flex flex-col min-h-0"
+                className="flex-1 flex flex-col overflow-y-auto md:overflow-visible md:min-h-0"
               >
                 {/* Main Bento Grid */}
                 <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
