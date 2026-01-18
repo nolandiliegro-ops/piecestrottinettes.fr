@@ -129,22 +129,22 @@ const CommandPanel = ({
         </h2>
       </div>
 
-      {/* Search Bar with Dropdown - Hidden on mobile */}
+      {/* Search Bar with Dropdown - Now visible on mobile */}
       <div 
         ref={searchContainerRef}
-        className="relative animate-fade-in hidden lg:block" 
+        className="relative animate-fade-in" 
         style={{ animationDelay: "0.1s" }}
       >
-        <div className="glass rounded-full p-1">
+        <div className="glass rounded-full p-0.5 md:p-1 border-[0.5px] border-white/30">
           <div className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+            <Search className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 text-muted-foreground" />
             <Input
               type="text"
-              placeholder="Modèle, marque..."
+              placeholder="Rechercher..."
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
               onFocus={() => searchQuery.length >= 2 && setShowDropdown(true)}
-              className="pl-12 pr-4 py-2.5 text-base bg-transparent border-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground/60 placeholder:tracking-wider"
+              className="pl-10 md:pl-12 pr-4 py-2 md:py-2.5 text-sm md:text-base bg-transparent border-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground/60 placeholder:tracking-wider min-h-[44px]"
             />
           </div>
         </div>
@@ -158,20 +158,20 @@ const CommandPanel = ({
         />
       </div>
 
-      {/* Brand Selection - Hidden on mobile */}
-      <div className="hidden lg:block animate-fade-in" style={{ animationDelay: "0.2s" }}>
-        <p className="text-xs text-muted-foreground mb-2">Ou sélectionnez une marque</p>
-        <div className="flex flex-wrap gap-1.5">
+      {/* Brand Selection - Horizontal scroll on mobile */}
+      <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <p className="text-xs text-muted-foreground mb-2 hidden md:block">Ou sélectionnez une marque</p>
+        <div className="flex gap-1.5 overflow-x-auto pb-2 md:flex-wrap md:overflow-visible scrollbar-none">
           {/* All Brands Option */}
           <button
             onClick={() => onBrandSelect(null)}
-            className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
+            className={`flex-shrink-0 px-2.5 py-1.5 md:py-1 rounded-full text-xs font-medium transition-all min-h-[36px] md:min-h-0 ${
               selectedBrand === null
                 ? "bg-carbon text-greige"
-                : "bg-muted text-muted-foreground hover:bg-muted/80"
+                : "bg-white/80 backdrop-blur-xl border-[0.5px] border-mineral/20 text-muted-foreground hover:bg-muted/80"
             }`}
           >
-            Toutes
+            Tous
           </button>
           {brands.map((brand) => {
             const brandColor = brandColors[brand.id.toLowerCase()];
@@ -181,12 +181,12 @@ const CommandPanel = ({
               <button
                 key={brand.id}
                 onClick={() => onBrandSelect(brand.id)}
-                className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
+                className={`flex-shrink-0 px-2.5 py-1.5 md:py-1 rounded-full text-xs font-medium transition-all min-h-[36px] md:min-h-0 ${
                   isSelected && brandColor
                     ? `${brandColor.bg} ${brandColor.text}`
                     : isSelected
                     ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    : "bg-white/80 backdrop-blur-xl border-[0.5px] border-mineral/20 text-muted-foreground hover:bg-muted/80"
                 }`}
               >
                 {brand.name}
