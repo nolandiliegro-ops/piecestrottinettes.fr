@@ -8,6 +8,7 @@ import ScooterPlaceholder from './ScooterPlaceholder';
 import CustomPhotoButton from './CustomPhotoButton';
 import VerticalScooterThumbnails from './VerticalScooterThumbnails';
 import ScooterIdentity from './ScooterIdentity';
+import { getBrandColors } from '@/contexts/ScooterContext';
 
 interface GarageScooter {
   id: string;
@@ -162,6 +163,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
             modelName={model.name}
             nickname={currentScooter.nickname}
             variant="desktop"
+            brandColors={getBrandColors(brandName)}
           />
         </div>
 

@@ -16,6 +16,7 @@ import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
+import { getBrandColors } from '@/contexts/ScooterContext';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
@@ -190,6 +191,7 @@ const Garage = () => {
                         editable={true}
                         garageItemId={selectedScooter.id}
                         onNicknameChange={handleNicknameChange}
+                        brandColors={getBrandColors(selectedScooter.scooter_model.brand)}
                       />
                     </motion.div>
                   )}
