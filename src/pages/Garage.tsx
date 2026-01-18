@@ -9,6 +9,7 @@ import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
 import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
 import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
+import ScooterIdentity from '@/components/garage/ScooterIdentity';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
@@ -164,17 +165,20 @@ const Garage = () => {
                 {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
                 <div className="flex flex-col gap-6 lg:hidden">
                   
-                  {/* Block 3: Title - Scooter Name */}
+                  {/* Block 3: Identity - Brand | Model | Nickname */}
                   {selectedScooter?.scooter_model && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.1 }}
-                      className="text-center"
                     >
-                      <h1 className="font-display text-xl font-bold text-carbon tracking-tight uppercase">
-                        {scooterName}
-                      </h1>
+                      <ScooterIdentity
+                        brandName={selectedScooter.scooter_model.brand}
+                        modelName={selectedScooter.scooter_model.name}
+                        nickname={selectedScooter.nickname}
+                        isOwned={selectedScooter.is_owned}
+                        variant="mobile"
+                      />
                     </motion.div>
                   )}
                   
@@ -280,7 +284,7 @@ const Garage = () => {
 
                     {selectedScooter?.scooter_model && (
                       <ScooterVideoSection
-                        youtubeVideoId={selectedScooter.scooter_model.youtube_video_id}
+                        scooterModelId={selectedScooter.scooter_model.id}
                         scooterName={scooterName}
                         className="shrink-0 flex-1 min-h-[120px]"
                       />

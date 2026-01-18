@@ -7,6 +7,7 @@ import { getScooterImage } from '@/lib/scooterImageMapping';
 import ScooterPlaceholder from './ScooterPlaceholder';
 import CustomPhotoButton from './CustomPhotoButton';
 import VerticalScooterThumbnails from './VerticalScooterThumbnails';
+import ScooterIdentity from './ScooterIdentity';
 
 interface GarageScooter {
   id: string;
@@ -147,18 +148,21 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
         }}
       >
         
-        {/* Brand Badge */}
-        <div className="absolute top-3 left-3 z-10 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full border-[0.5px] border-mineral/20 shadow-sm">
+        {/* Brand Badge - Mobile Only (desktop uses ScooterIdentity) */}
+        <div className="absolute top-3 left-3 z-10 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full border-[0.5px] border-mineral/20 shadow-sm md:hidden">
           <span className="text-xs font-semibold text-mineral uppercase tracking-wider">
             {brandName}
           </span>
         </div>
 
-        {/* Scooter Name Badge - DESKTOP ONLY */}
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 hidden md:block">
-          <h2 className="font-display text-lg text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20">
-            {displayName}
-          </h2>
+        {/* Desktop Identity Block - Replaces simple badge */}
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 hidden md:flex">
+          <ScooterIdentity
+            brandName={brandName}
+            modelName={model.name}
+            nickname={currentScooter.nickname}
+            variant="desktop"
+          />
         </div>
 
         {/* Studio Spotlight Container */}
@@ -231,18 +235,18 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
           </Link>
         </div>
 
-        {/* Navigation Arrows */}
+        {/* Navigation Arrows - z-30 to prevent overlap */}
         {scooters.length > 1 && (
           <>
             <button
               onClick={handlePrevious}
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-mineral/20 flex items-center justify-center hover:bg-white hover:border-mineral/40 transition-all duration-300 hover:scale-110"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-mineral/20 flex items-center justify-center hover:bg-white hover:border-mineral/40 transition-all duration-300 hover:scale-110"
             >
               <ChevronLeft className="w-5 h-5 text-carbon" />
             </button>
             <button
               onClick={handleNext}
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-mineral/20 flex items-center justify-center hover:bg-white hover:border-mineral/40 transition-all duration-300 hover:scale-110"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-mineral/20 flex items-center justify-center hover:bg-white hover:border-mineral/40 transition-all duration-300 hover:scale-110"
             >
               <ChevronRight className="w-5 h-5 text-carbon" />
             </button>
