@@ -7,6 +7,7 @@ import { Loader2, Trophy, Package, ArrowRight, ShoppingBag } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
+import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
 import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
@@ -158,10 +159,79 @@ const Garage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.3 }}
-                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden md:overflow-visible md:min-h-0 scrollbar-thin scrollbar-thumb-mineral/20"
+                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-mineral/20"
               >
-                {/* Main Bento Grid */}
-                <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-4 min-h-0 max-w-full">
+                {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
+                <div className="flex flex-col gap-6 lg:hidden">
+                  
+                  {/* Block 3: Title - Scooter Name */}
+                  {selectedScooter?.scooter_model && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.1 }}
+                      className="text-center"
+                    >
+                      <h1 className="font-display text-xl font-bold text-carbon tracking-tight uppercase">
+                        {scooterName}
+                      </h1>
+                    </motion.div>
+                  )}
+                  
+                  {/* Block 4: Hero - Scooter Image (Clean, no floating text) */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.15 }}
+                  >
+                    {scootersLoading ? (
+                      <div className="flex items-center justify-center h-64 bg-white/40 rounded-2xl">
+                        <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+                      </div>
+                    ) : (
+                      <GarageScooterCarousel 
+                        scooters={scooters || []}
+                        onScooterChange={setSelectedScooter}
+                        mobileCleanMode={true}
+                      />
+                    )}
+                  </motion.div>
+                  
+                  {/* Block 6: Diagnostic Strip */}
+                  {selectedScooter?.scooter_model && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.25 }}
+                    >
+                      <DiagnosticStrip
+                        voltage={selectedScooter.scooter_model.voltage}
+                        amperage={selectedScooter.scooter_model.amperage}
+                        power={selectedScooter.scooter_model.power_watts}
+                      />
+                    </motion.div>
+                  )}
+                  
+                  {/* Block 7: Inventory - Pièces Compatibles */}
+                  {selectedScooter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.3 }}
+                    >
+                      <CompactProductsRow
+                        scooterId={selectedScooter.id}
+                        scooterName={scooterName}
+                        parts={parts || []}
+                        loading={partsLoading}
+                        onViewPart={(partId) => navigate(`/part/${partId}`)}
+                      />
+                    </motion.div>
+                  )}
+                </div>
+
+                {/* ===== DESKTOP: Original Bento Grid ===== */}
+                <div className="hidden lg:grid lg:grid-cols-3 gap-4 min-h-0 max-w-full flex-1">
                   {/* Left Column: Scooter Image */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -218,13 +288,13 @@ const Garage = () => {
                   </motion.div>
                 </div>
 
-                {/* Bottom Row: Compatible Parts */}
+                {/* Desktop Bottom Row: Compatible Parts */}
                 {selectedScooter && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 }}
-                    className="mt-4 shrink-0"
+                    className="mt-4 shrink-0 hidden lg:block"
                   >
                     <CompactProductsRow
                       scooterId={selectedScooter.id}

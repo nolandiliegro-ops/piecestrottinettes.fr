@@ -35,9 +35,11 @@ interface GarageScooterCarouselProps {
   scooters: GarageScooter[];
   onScooterChange?: (scooter: GarageScooter) => void;
   className?: string;
+  /** Mobile clean mode: hide title inside carousel (shown externally as Block 3) */
+  mobileCleanMode?: boolean;
 }
 
-const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageScooterCarouselProps) => {
+const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -123,16 +125,21 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
   return (
     <div className={cn("relative h-full flex flex-col md:flex-row gap-2", className)}>
       
-      {/* Scooter Name - ABOVE image container on mobile */}
-      <div className="md:hidden text-center shrink-0">
-        <h2 className="font-display text-base text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20 inline-block">
-          {displayName}
-        </h2>
-      </div>
+      {/* Scooter Name - ABOVE image container on mobile (only when NOT in cleanMode) */}
+      {!mobileCleanMode && (
+        <div className="md:hidden text-center shrink-0">
+          <h2 className="font-display text-base text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20 inline-block">
+            {displayName}
+          </h2>
+        </div>
+      )}
 
       {/* Main Image Container */}
       <div 
-        className="relative flex-1 bg-[#3A3A3A] border-[0.5px] border-white/10 rounded-2xl overflow-hidden shadow-xl min-h-[250px] md:min-h-0"
+        className={cn(
+          "relative flex-1 bg-[#3A3A3A] border-[0.5px] border-white/10 rounded-2xl overflow-hidden shadow-xl",
+          mobileCleanMode ? "min-h-[260px]" : "min-h-[250px] md:min-h-0"
+        )}
         style={{ 
           backgroundImage: 'url(/garage-floor.png)', 
           backgroundSize: 'cover', 
