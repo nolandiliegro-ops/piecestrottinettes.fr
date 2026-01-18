@@ -60,58 +60,44 @@ const CheckoutPage = () => {
     setIsSubmitting(true);
     
     try {
-      // Generate order number
-      const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-      
-      // 1. Create the order in database
-      const { data: order, error: orderError } = await supabase
-        .from('orders')
-        .insert({
-          order_number: orderNumber,
-          user_id: user?.id || null,
-          customer_first_name: data.firstName,
-          customer_last_name: data.lastName,
-          customer_email: data.email,
-          customer_phone: data.phone || null,
+      // Call secure Edge Function for order creation
+      // Server validates all data, verifies prices against DB, calculates totals
+      const { data: result, error: fnError } = await supabase.functions.invoke('create-order', {
+        body: {
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          phone: data.phone || null,
           address: data.address,
-          postal_code: data.postalCode,
+          postalCode: data.postalCode,
           city: data.city,
-          subtotal_ht: totals.subtotalHT,
-          tva_amount: totals.tva,
-          total_ttc: totals.totalTTC,
-          loyalty_points_earned: totals.loyaltyPoints,
-          status: 'pending'
-        })
-        .select()
-        .single();
-      
-      if (orderError) throw orderError;
-      
-      // 2. Create order items
-      const orderItems = items.map(item => ({
-        order_id: order.id,
-        part_id: item.id,
-        part_name: item.name,
-        part_image_url: item.image_url,
-        unit_price: item.price,
-        quantity: item.quantity,
-        line_total: item.price * item.quantity
-      }));
-      
-      const { error: itemsError } = await supabase
-        .from('order_items')
-        .insert(orderItems);
-      
-      if (itemsError) throw itemsError;
-      
-      // 3. Clear cart and redirect with order number
+          items: items.map(item => ({
+            id: item.id,
+            name: item.name,
+            image_url: item.image_url,
+            price: item.price,
+            quantity: item.quantity,
+          })),
+        },
+      });
+
+      if (fnError) {
+        console.error('Edge function error:', fnError);
+        throw new Error(fnError.message || 'Erreur lors de la commande');
+      }
+
+      if (!result?.success) {
+        throw new Error(result?.error || 'Erreur lors de la commande');
+      }
+
+      // Clear cart and redirect with order number
       clearCart();
-      navigate('/order-success', { state: { orderNumber } });
+      navigate('/order-success', { state: { orderNumber: result.orderNumber } });
       
     } catch (error) {
       console.error('Order error:', error);
       toast.error('Erreur lors de la commande', {
-        description: 'Veuillez réessayer ou nous contacter.',
+        description: error instanceof Error ? error.message : 'Veuillez réessayer ou nous contacter.',
       });
     } finally {
       setIsSubmitting(false);
