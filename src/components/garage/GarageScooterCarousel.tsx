@@ -121,10 +121,18 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
   const hasCustomPhoto = !!customPhoto;
 
   return (
-    <div className={cn("relative h-full flex gap-2", className)}>
-      {/* Main Image Container - Takes up available space */}
+    <div className={cn("relative h-full flex flex-col md:flex-row gap-2", className)}>
+      
+      {/* Scooter Name - ABOVE image container on mobile */}
+      <div className="md:hidden text-center shrink-0">
+        <h2 className="font-display text-base text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20 inline-block">
+          {displayName}
+        </h2>
+      </div>
+
+      {/* Main Image Container */}
       <div 
-        className="relative flex-1 bg-[#3A3A3A] border border-white/10 rounded-2xl overflow-hidden shadow-xl"
+        className="relative flex-1 bg-[#3A3A3A] border-[0.5px] border-white/10 rounded-2xl overflow-hidden shadow-xl min-h-[250px] md:min-h-0"
         style={{ 
           backgroundImage: 'url(/garage-floor.png)', 
           backgroundSize: 'cover', 
@@ -133,15 +141,15 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
       >
         
         {/* Brand Badge */}
-        <div className="absolute top-3 left-3 z-10 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full border border-mineral/20 shadow-sm">
+        <div className="absolute top-3 left-3 z-10 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full border-[0.5px] border-mineral/20 shadow-sm">
           <span className="text-xs font-semibold text-mineral uppercase tracking-wider">
             {brandName}
           </span>
         </div>
 
-        {/* Scooter Name Badge */}
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10">
-          <h2 className="font-display text-lg text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border border-mineral/20">
+        {/* Scooter Name Badge - DESKTOP ONLY */}
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 hidden md:block">
+          <h2 className="font-display text-lg text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20">
             {displayName}
           </h2>
         </div>
@@ -156,12 +164,12 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
                 key={showCustomPhoto ? 'custom' : 'official'}
                 src={displayImage}
                 alt={displayName}
-                className="absolute inset-0 w-full h-full object-contain p-4 drop-shadow-[0_25px_50px_rgba(0,0,0,0.15)]"
+                className="absolute inset-0 w-full h-full object-contain p-4 md:p-8 drop-shadow-[0_25px_50px_rgba(0,0,0,0.15)]"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.05 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                style={{ transform: 'scale(1.15)' }}
+                style={{ transform: 'scale(1.05)' }}
                 onError={() => setImageError(true)}
               />
             ) : (
@@ -235,20 +243,58 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className }: GarageS
         )}
       </div>
 
-      {/* Vertical Thumbnails */}
+      {/* Vertical Thumbnails - DESKTOP ONLY */}
       {scooters.length > 1 && (
-        <VerticalScooterThumbnails
-          scooters={scooters}
-          selectedScooterId={currentScooter.id}
-          onScooterSelect={(scooter) => {
-            const newIndex = scooters.findIndex(s => s.id === scooter.id);
-            if (newIndex !== -1) {
-              setCurrentIndex(newIndex);
-              setShowCustomPhoto(false);
-              onScooterChange?.(scooter);
-            }
-          }}
-        />
+        <div className="hidden md:flex">
+          <VerticalScooterThumbnails
+            scooters={scooters}
+            selectedScooterId={currentScooter.id}
+            onScooterSelect={(scooter) => {
+              const newIndex = scooters.findIndex(s => s.id === scooter.id);
+              if (newIndex !== -1) {
+                setCurrentIndex(newIndex);
+                setShowCustomPhoto(false);
+                onScooterChange?.(scooter);
+              }
+            }}
+          />
+        </div>
+      )}
+      
+      {/* Horizontal Thumbnails - MOBILE ONLY */}
+      {scooters.length > 1 && (
+        <div className="flex md:hidden overflow-x-auto scrollbar-none gap-2 py-2 shrink-0">
+          {scooters.map((scooter, index) => {
+            const isSelected = scooter.id === currentScooter.id;
+            const scooterModel = scooter.scooter_model;
+            const image = getScooterImage(scooterModel.slug, scooterModel.image_url);
+
+            return (
+              <button
+                key={scooter.id}
+                onClick={() => handleDotClick(index)}
+                className={cn(
+                  "relative flex-shrink-0 w-16 h-14 rounded-lg overflow-hidden transition-all min-h-[44px]",
+                  "border-[0.5px] bg-white/60 backdrop-blur-sm",
+                  isSelected 
+                    ? "border-mineral shadow-md" 
+                    : "border-white/40 opacity-70"
+                )}
+              >
+                {image ? (
+                  <img src={image} alt={scooterModel.name} className="w-full h-full object-contain p-1" />
+                ) : (
+                  <span className="text-2xl flex items-center justify-center h-full">🛴</span>
+                )}
+                {scooterModel.voltage && (
+                  <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 text-[8px] px-1 py-0.5 bg-orange-100/90 text-orange-700 rounded">
+                    {scooterModel.voltage}V
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
       )}
     </div>
   );
