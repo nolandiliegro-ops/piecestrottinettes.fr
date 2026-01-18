@@ -39,8 +39,8 @@ const App = () => (
             <TooltipProvider>
               <Toaster />
               <Sonner />
-              <SpotlightCommand />
               <BrowserRouter>
+                <SpotlightCommand />
                 <CartSidebar />
                 <MobileNav />
             <Routes>
