@@ -116,7 +116,7 @@ const Header = () => {
                   "text-xs font-medium max-w-[70px] truncate",
                   selectedBrandColors.textClass
                 )}>
-                  {selectedScooter.name}
+                  {selectedScooter.nickname || selectedScooter.modelName || selectedScooter.name}
                 </span>
                 {compatibleCount > 0 && (
                   <span 
@@ -135,7 +135,7 @@ const Header = () => {
                 <Button 
                   variant="outline" 
                   className={cn(
-                    "hidden md:flex items-center gap-2 rounded-full px-4 h-10",
+                    "hidden md:flex items-center gap-2 rounded-full px-4 h-auto min-h-10 py-2",
                     "bg-white/70 backdrop-blur-xl border-[0.5px]",
                     "hover:bg-white/90 transition-all duration-300",
                     selectedScooter 
@@ -147,16 +147,44 @@ const Header = () => {
                   } : undefined}
                 >
                   <Bike className={cn(
-                    "w-4 h-4 transition-colors",
+                    "w-4 h-4 transition-colors flex-shrink-0",
                     selectedScooter ? selectedBrandColors.textClass : "text-muted-foreground"
                   )} />
-                  <span className={cn(
-                    "text-sm font-medium max-w-[140px] truncate transition-colors",
-                    selectedScooter && selectedBrandColors.textClass
-                  )}>
-                    {selectedScooter ? selectedScooter.name : "Ma Trottinette"}
-                  </span>
-                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
+                  
+                  {/* Premium 3-Line Display when scooter selected */}
+                  {selectedScooter ? (
+                    <div className="flex flex-col items-start leading-tight max-w-[160px]">
+                      {/* Line 1: MARQUE - micro-caps */}
+                      <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-medium">
+                        {selectedScooter.brandName}
+                      </span>
+                      {/* Line 2: Modèle - Bold with brand color */}
+                      <span className={cn(
+                        "text-sm font-bold truncate w-full",
+                        selectedBrandColors.textClass
+                      )}>
+                        {selectedScooter.modelName || selectedScooter.name}
+                      </span>
+                      {/* Line 3: « Surnom » - Italic with glow */}
+                      {selectedScooter.nickname && (
+                        <span 
+                          className="text-xs italic truncate w-full"
+                          style={{ 
+                            color: selectedBrandColors.accent,
+                            textShadow: `0 0 8px ${selectedBrandColors.glowColor}`
+                          }}
+                        >
+                          « {selectedScooter.nickname} »
+                        </span>
+                      )}
+                    </div>
+                  ) : (
+                    <span className="text-sm font-medium text-muted-foreground">
+                      Ma Trottinette
+                    </span>
+                  )}
+                  
+                  <ChevronDown className="w-3 h-3 text-muted-foreground flex-shrink-0" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent 
@@ -250,6 +278,10 @@ const Header = () => {
                             slug: scooterModel.slug,
                             brandName: brandName,
                             imageUrl: garageItem.custom_photo_url || scooterModel.image_url,
+                            // Enhanced fields for sync
+                            modelName: scooterModel.name,
+                            nickname: garageItem.nickname,
+                            garageItemId: garageItem.id,
                           })}
                           className={cn(
                             "flex items-center gap-3 py-3 px-3 cursor-pointer",

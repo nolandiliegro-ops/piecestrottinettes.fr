@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
@@ -16,7 +16,7 @@ import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
-import { getBrandColors } from '@/contexts/ScooterContext';
+import { getBrandColors, useSelectedScooter } from '@/contexts/ScooterContext';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
@@ -70,8 +70,12 @@ const Garage = () => {
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
+  const [carouselIndex, setCarouselIndex] = useState(0);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
   const updateNickname = useUpdateNickname();
+  
+  // Global scooter context for Header sync
+  const { selectedScooter: globalSelectedScooter, setSelectedScooter: setGlobalSelectedScooter } = useSelectedScooter();
   
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
@@ -86,11 +90,68 @@ const Garage = () => {
     }
   };
 
+  // Helper to get brand name safely
+  const safeBrandName = (brand: unknown): string => {
+    if (typeof brand === "string") return brand;
+    if (brand && typeof brand === "object" && "name" in (brand as any)) return (brand as any).name as string;
+    return "Unknown";
+  };
+
+  // Garage → Header sync: Update global context when carousel changes
+  const handleScooterChange = useCallback((scooter: any, index: number) => {
+    setSelectedScooter(scooter);
+    setCarouselIndex(index);
+    
+    // Sync to global Header context
+    if (scooter?.scooter_model) {
+      const brandName = safeBrandName(scooter.scooter_model.brand);
+      setGlobalSelectedScooter({
+        id: scooter.scooter_model.id,
+        name: scooter.nickname || scooter.scooter_model.name,
+        slug: scooter.scooter_model.slug || '',
+        brandName,
+        imageUrl: scooter.custom_photo_url || scooter.scooter_model.image_url,
+        modelName: scooter.scooter_model.name,
+        nickname: scooter.nickname,
+        garageItemId: scooter.id,
+      });
+    }
+  }, [setGlobalSelectedScooter]);
+
+  // Header → Garage sync: When global selection changes from Header dropdown
+  useEffect(() => {
+    if (!scooters || scooters.length === 0 || !globalSelectedScooter?.garageItemId) return;
+    
+    const targetIndex = scooters.findIndex(s => s.id === globalSelectedScooter.garageItemId);
+    if (targetIndex !== -1 && targetIndex !== carouselIndex) {
+      setCarouselIndex(targetIndex);
+      setSelectedScooter(scooters[targetIndex]);
+    }
+  }, [globalSelectedScooter?.garageItemId, scooters]);
+
+  // Initial selection when scooters load
   useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
-      setSelectedScooter(scooters[0]);
+      const initialScooter = scooters[0];
+      setSelectedScooter(initialScooter);
+      setCarouselIndex(0);
+      
+      // Also sync to global context on initial load
+      if (initialScooter?.scooter_model) {
+        const brandName = safeBrandName(initialScooter.scooter_model.brand);
+        setGlobalSelectedScooter({
+          id: initialScooter.scooter_model.id,
+          name: initialScooter.nickname || initialScooter.scooter_model.name,
+          slug: initialScooter.scooter_model.slug || '',
+          brandName,
+          imageUrl: initialScooter.custom_photo_url || initialScooter.scooter_model.image_url,
+          modelName: initialScooter.scooter_model.name,
+          nickname: initialScooter.nickname,
+          garageItemId: initialScooter.id,
+        });
+      }
     }
-  }, [scooters, selectedScooter]);
+  }, [scooters]);
 
   if (authLoading) {
     return (
@@ -209,7 +270,8 @@ const Garage = () => {
                     ) : (
                       <GarageScooterCarousel 
                         scooters={scooters || []}
-                        onScooterChange={setSelectedScooter}
+                        currentIndex={carouselIndex}
+                        onScooterChange={handleScooterChange}
                         mobileCleanMode={true}
                       />
                     )}
@@ -264,7 +326,8 @@ const Garage = () => {
                     ) : (
                       <GarageScooterCarousel 
                         scooters={scooters || []}
-                        onScooterChange={setSelectedScooter}
+                        currentIndex={carouselIndex}
+                        onScooterChange={handleScooterChange}
                       />
                     )}
                   </motion.div>
