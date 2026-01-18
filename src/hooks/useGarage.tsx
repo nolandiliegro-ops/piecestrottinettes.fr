@@ -4,7 +4,7 @@ import { useAuthContext } from "@/contexts/AuthContext";
 import { toast } from "sonner";
 import LuxurySuccessToast from "@/components/garage/LuxurySuccessToast";
 
-interface GarageItem {
+export interface GarageItem {
   id: string;
   user_id: string;
   scooter_model_id: string;
@@ -12,6 +12,7 @@ interface GarageItem {
   nickname: string | null;
   current_km: number | null;
   next_maintenance_km: number | null;
+  custom_photo_url: string | null;
   added_at: string;
   scooter_model?: {
     id: string;

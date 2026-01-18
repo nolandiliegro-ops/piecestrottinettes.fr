@@ -1,13 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
-import { useSelectedScooter } from '@/contexts/ScooterContext';
+import { useSelectedScooter, type BrandColorConfig } from '@/contexts/ScooterContext';
 
 /**
  * Hook to check if a part is compatible with the currently selected scooter.
- * Returns { isCompatible, isLoading } - only active when a scooter is selected.
+ * Returns { isCompatible, isLoading, selectedScooter, brandColors }
  */
 export const useIsCompatibleWithSelected = (partId: string | undefined) => {
-  const { selectedScooter } = useSelectedScooter();
+  const { selectedScooter, selectedBrandColors } = useSelectedScooter();
 
   const { data: isCompatible, isLoading } = useQuery({
     queryKey: ['part-compatibility-check', partId, selectedScooter?.id],
@@ -36,5 +36,6 @@ export const useIsCompatibleWithSelected = (partId: string | undefined) => {
     isCompatible: isCompatible ?? false,
     isLoading,
     selectedScooter,
+    brandColors: selectedBrandColors,
   };
 };

@@ -1,10 +1,11 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { useUserGarage } from "@/hooks/useGarage";
 import { cn } from "@/lib/utils";
 import logoImage from "@/assets/logo-pt.png";
 import {
@@ -23,7 +24,8 @@ const Header = () => {
   const prevCountRef = useRef(0);
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
-  const { selectedScooter, setSelectedScooter, clearSelection, allScooters, isLoading: scootersLoading } = useSelectedScooter();
+  const { selectedScooter, setSelectedScooter, clearSelection, selectedBrandColors } = useSelectedScooter();
+  const { data: garageScooters, isLoading: garageLoading } = useUserGarage();
   const navigate = useNavigate();
 
   // Shimmer animation when item count increases
@@ -54,8 +56,14 @@ const Header = () => {
 
   const handleSignOut = async () => {
     await signOut();
+    clearSelection(); // Clear selected scooter on logout
     navigate('/');
   };
+
+  // Check if user has scooters in garage
+  const hasGarageScooters = garageScooters && garageScooters.length > 0;
+  const showEmptyGarageCTA = user && !garageLoading && !hasGarageScooters;
+  const showLoginCTA = !user;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -85,20 +93,31 @@ const Header = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
-            {/* Ma Trottinette Selector - Monaco Design */}
+            {/* Ma Trottinette Selector - Monaco Design with Dynamic Brand Colors */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="outline" 
                   className={cn(
                     "hidden md:flex items-center gap-2 rounded-full px-4 h-10",
-                    "bg-white/70 backdrop-blur-xl border-[0.5px] border-white/20",
-                    "hover:bg-white/90 hover:border-mineral/30 transition-all",
-                    selectedScooter && "border-mineral/40 bg-mineral/5"
+                    "bg-white/70 backdrop-blur-xl border-[0.5px]",
+                    "hover:bg-white/90 transition-all duration-300",
+                    selectedScooter 
+                      ? [selectedBrandColors.borderClass, "border-[1.5px]"]
+                      : "border-white/20 hover:border-mineral/30"
                   )}
+                  style={selectedScooter ? {
+                    boxShadow: `0 0 16px ${selectedBrandColors.glowColor}`,
+                  } : undefined}
                 >
-                  <Bike className={cn("w-4 h-4", selectedScooter ? "text-mineral" : "text-muted-foreground")} />
-                  <span className="text-sm font-medium max-w-[140px] truncate">
+                  <Bike className={cn(
+                    "w-4 h-4 transition-colors",
+                    selectedScooter ? selectedBrandColors.textClass : "text-muted-foreground"
+                  )} />
+                  <span className={cn(
+                    "text-sm font-medium max-w-[140px] truncate transition-colors",
+                    selectedScooter && selectedBrandColors.textClass
+                  )}>
                     {selectedScooter ? selectedScooter.name : "Ma Trottinette"}
                   </span>
                   <ChevronDown className="w-3 h-3 text-muted-foreground" />
@@ -106,9 +125,9 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent 
                 align="end" 
-                className="w-64 bg-white/95 backdrop-blur-xl border-[0.5px] border-white/20 shadow-2xl rounded-xl z-50"
+                className="w-72 bg-white/95 backdrop-blur-xl border-[0.5px] border-white/20 shadow-2xl rounded-xl z-50"
               >
-                <DropdownMenuLabel className="flex items-center justify-between text-xs uppercase tracking-wider text-muted-foreground">
+                <DropdownMenuLabel className="flex items-center justify-between text-xs uppercase tracking-wider text-muted-foreground px-3 py-2">
                   Ma Trottinette
                   {selectedScooter && (
                     <Button 
@@ -123,54 +142,130 @@ const Header = () => {
                   )}
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <ScrollArea className="h-[280px]">
-                  {scootersLoading ? (
-                    <div className="flex items-center justify-center py-8 text-sm text-muted-foreground">
-                      Chargement...
+                
+                {/* Loading State */}
+                {garageLoading && (
+                  <div className="flex items-center justify-center py-8 text-sm text-muted-foreground">
+                    Chargement...
+                  </div>
+                )}
+
+                {/* Not Logged In - Premium CTA */}
+                {showLoginCTA && (
+                  <div className="flex flex-col items-center py-6 px-4 text-center">
+                    <div className="w-14 h-14 rounded-full bg-garage/10 flex items-center justify-center mb-4">
+                      <Bike className="w-7 h-7 text-garage" />
                     </div>
-                  ) : allScooters.length === 0 ? (
-                    <div className="flex items-center justify-center py-8 text-sm text-muted-foreground">
-                      Aucun modèle disponible
+                    <p className="text-sm font-medium text-carbon mb-1">
+                      Vérifiez la compatibilité
+                    </p>
+                    <p className="text-xs text-muted-foreground mb-5 max-w-[200px]">
+                      Connectez-vous et ajoutez votre machine pour voir les pièces compatibles
+                    </p>
+                    <Button 
+                      onClick={() => navigate('/login')}
+                      className="rounded-full bg-garage text-white px-6 hover:bg-garage/90 transition-all"
+                    >
+                      <LogIn className="w-4 h-4 mr-2" />
+                      Se connecter
+                    </Button>
+                  </div>
+                )}
+
+                {/* Logged In but Empty Garage - Premium CTA */}
+                {showEmptyGarageCTA && (
+                  <div className="flex flex-col items-center py-6 px-4 text-center">
+                    <div className="w-14 h-14 rounded-full bg-garage/10 flex items-center justify-center mb-4">
+                      <Plus className="w-7 h-7 text-garage" />
                     </div>
-                  ) : (
-                    allScooters.map((scooter) => (
-                      <DropdownMenuItem
-                        key={scooter.id}
-                        onClick={() => setSelectedScooter({
-                          id: scooter.id,
-                          name: scooter.name,
-                          slug: scooter.slug,
-                          brandName: scooter.brandName,
-                          imageUrl: scooter.imageUrl,
-                        })}
-                        className={cn(
-                          "flex items-center gap-3 py-2.5 px-3 cursor-pointer",
-                          "hover:bg-mineral/5 transition-colors",
-                          selectedScooter?.id === scooter.id && "bg-mineral/10"
-                        )}
-                      >
-                        {scooter.imageUrl ? (
-                          <img 
-                            src={scooter.imageUrl} 
-                            alt={scooter.name}
-                            className="w-8 h-8 object-contain rounded bg-greige p-0.5"
-                          />
-                        ) : (
-                          <div className="w-8 h-8 rounded bg-greige flex items-center justify-center">
-                            <Bike className="w-4 h-4 text-muted-foreground" />
+                    <p className="text-sm font-medium text-carbon mb-1">
+                      Aucune trottinette
+                    </p>
+                    <p className="text-xs text-muted-foreground mb-5 max-w-[200px]">
+                      Ajoutez votre machine pour vérifier la compatibilité des pièces
+                    </p>
+                    <Button 
+                      onClick={() => navigate('/garage')}
+                      className="rounded-full bg-garage text-white px-6 hover:bg-garage/90 transition-all"
+                    >
+                      <Plus className="w-4 h-4 mr-2" />
+                      Ajouter ma trottinette
+                    </Button>
+                  </div>
+                )}
+
+                {/* User has scooters in garage */}
+                {hasGarageScooters && (
+                  <ScrollArea className="h-[280px]">
+                    {garageScooters.map((garageItem) => {
+                      const scooterModel = garageItem.scooter_model;
+                      if (!scooterModel) return null;
+                      
+                      const brandName = typeof scooterModel.brand === 'object' && scooterModel.brand 
+                        ? scooterModel.brand.name 
+                        : 'Unknown';
+                      
+                      return (
+                        <DropdownMenuItem
+                          key={garageItem.id}
+                          onClick={() => setSelectedScooter({
+                            id: scooterModel.id,
+                            name: garageItem.nickname || scooterModel.name,
+                            slug: scooterModel.slug,
+                            brandName: brandName,
+                            imageUrl: garageItem.custom_photo_url || scooterModel.image_url,
+                          })}
+                          className={cn(
+                            "flex items-center gap-3 py-3 px-3 cursor-pointer",
+                            "hover:bg-mineral/5 transition-all duration-200",
+                            selectedScooter?.id === scooterModel.id && "bg-mineral/10"
+                          )}
+                        >
+                          {(garageItem.custom_photo_url || scooterModel.image_url) ? (
+                            <img 
+                              src={garageItem.custom_photo_url || scooterModel.image_url || ''} 
+                              alt={scooterModel.name}
+                              className="w-10 h-10 object-contain rounded-lg bg-greige p-0.5"
+                            />
+                          ) : (
+                            <div className="w-10 h-10 rounded-lg bg-greige flex items-center justify-center">
+                              <Bike className="w-5 h-5 text-muted-foreground" />
+                            </div>
+                          )}
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-medium truncate">
+                              {garageItem.nickname || scooterModel.name}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {brandName}
+                              {garageItem.is_owned && (
+                                <span className="ml-2 text-garage">• Mon écurie</span>
+                              )}
+                            </p>
                           </div>
-                        )}
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium truncate">{scooter.name}</p>
-                          <p className="text-xs text-muted-foreground">{scooter.brandName}</p>
-                        </div>
-                        {selectedScooter?.id === scooter.id && (
-                          <div className="w-2 h-2 rounded-full bg-mineral" />
-                        )}
-                      </DropdownMenuItem>
-                    ))
-                  )}
-                </ScrollArea>
+                          {selectedScooter?.id === scooterModel.id && (
+                            <div 
+                              className="w-2.5 h-2.5 rounded-full animate-pulse"
+                              style={{ backgroundColor: selectedBrandColors.accent }}
+                            />
+                          )}
+                        </DropdownMenuItem>
+                      );
+                    })}
+                    
+                    {/* Add more scooters link */}
+                    <DropdownMenuSeparator className="my-2" />
+                    <DropdownMenuItem
+                      onClick={() => navigate('/garage')}
+                      className="flex items-center gap-3 py-3 px-3 cursor-pointer text-garage hover:bg-garage/5"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-garage/10 flex items-center justify-center">
+                        <Plus className="w-5 h-5 text-garage" />
+                      </div>
+                      <span className="text-sm font-medium">Gérer mon garage</span>
+                    </DropdownMenuItem>
+                  </ScrollArea>
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
 

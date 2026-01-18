@@ -9,6 +9,7 @@ import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
 import { toast } from "sonner";
 import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 
 interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
@@ -56,6 +57,9 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   
   // Compatibility check with selected scooter
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
+  
+  // Get dynamic brand colors
+  const { selectedBrandColors } = useSelectedScooter();
   
   // Use torque_nm from part directly if available, otherwise from metadata
   const torqueValue = part.torque_nm ?? (part.technical_metadata?.torque_nm as number | undefined);
@@ -126,21 +130,63 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       {/* Subtle Gradient Overlay */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-      {/* COMPATIBLE Badge - LED Effect */}
+      {/* COMPATIBLE Badge - Dynamic Neon LED Effect */}
       {selectedScooter && isCompatible && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: -10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.05 }}
+          initial={{ opacity: 0, scale: 0.8, y: -10 }}
+          animate={{ 
+            opacity: 1, 
+            scale: 1, 
+            y: 0,
+          }}
+          transition={{ 
+            duration: 0.4, 
+            delay: index * 0.05,
+            ease: [0.25, 0.46, 0.45, 0.94]
+          }}
           className="absolute top-3 right-3 z-20"
+          style={{
+            filter: `drop-shadow(0 0 10px ${selectedBrandColors.glowColor})`,
+          }}
         >
-          <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full 
-                          bg-mineral/15 text-mineral text-[10px] font-semibold 
-                          tracking-wide uppercase shadow-sm backdrop-blur-sm 
-                          border-[0.5px] border-mineral/20">
-            <Check className="w-3 h-3" />
+          <motion.div 
+            animate={{ 
+              boxShadow: [
+                `0 0 8px ${selectedBrandColors.glowColor}`,
+                `0 0 16px ${selectedBrandColors.glowColor}`,
+                `0 0 8px ${selectedBrandColors.glowColor}`,
+              ]
+            }}
+            transition={{ 
+              duration: 2, 
+              repeat: Infinity, 
+              ease: "easeInOut" 
+            }}
+            className={cn(
+              "flex items-center gap-1.5 px-2.5 py-1.5 rounded-full",
+              "text-[10px] font-semibold tracking-wide uppercase",
+              "backdrop-blur-sm border-[0.5px]",
+              selectedBrandColors.bgClass,
+              selectedBrandColors.textClass,
+              selectedBrandColors.borderClass
+            )}
+          >
+            {/* Pulsing dot */}
+            <motion.div
+              animate={{ 
+                scale: [1, 1.3, 1],
+                opacity: [1, 0.7, 1]
+              }}
+              transition={{ 
+                duration: 1.5, 
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-2 h-2 rounded-full"
+              style={{ backgroundColor: selectedBrandColors.accent }}
+            />
             <span>Compatible</span>
-          </div>
+          </motion.div>
         </motion.div>
       )}
 
