@@ -25,14 +25,14 @@ const CompactPerformanceWidget = ({ points, displayName }: { points: number; dis
   const level = getLevel(points);
 
   return (
-    <div className="flex items-center gap-1.5 md:gap-3 px-2.5 md:px-4 py-1.5 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full">
-      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral" />
-      <span className={cn("font-display font-bold text-sm md:text-lg", level.color)}>
+    <div className="flex items-center gap-1 md:gap-3 px-2 md:px-4 py-1 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full max-w-full">
+      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral flex-shrink-0" />
+      <span className={cn("font-display font-bold text-xs md:text-lg truncate", level.color)}>
         {points.toLocaleString('fr-FR')}
       </span>
       <span className="hidden md:inline text-xs text-carbon/50">pts</span>
-      <div className="w-px h-3 md:h-4 bg-mineral/20" />
-      <span className={cn("text-[10px] md:text-xs font-semibold", level.color)}>
+      <div className="w-px h-3 md:h-4 bg-mineral/20 flex-shrink-0" />
+      <span className={cn("text-[9px] md:text-xs font-semibold flex-shrink-0", level.color)}>
         <span className="md:hidden">{level.label}</span>
         <span className="hidden md:inline">{level.fullLabel}</span>
       </span>
@@ -93,7 +93,7 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden studio-luxury-bg watermark-brand pb-24 md:pb-0">
+    <div className="h-screen flex flex-col overflow-hidden overflow-x-hidden studio-luxury-bg watermark-brand pb-24 md:pb-0">
       <Header />
       
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
@@ -137,9 +137,9 @@ const Garage = () => {
               </button>
             </div>
             
-            {/* User info - Compact on mobile */}
-            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4">
-              <p className="text-carbon/60 text-xs md:text-sm">
+            {/* User info - Ultra compact on mobile */}
+            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
+              <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
               </p>
               <CompactPerformanceWidget 
@@ -158,10 +158,10 @@ const Garage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.3 }}
-                className="flex-1 flex flex-col overflow-y-auto md:overflow-visible md:min-h-0"
+                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden md:overflow-visible md:min-h-0 scrollbar-thin scrollbar-thumb-mineral/20"
               >
                 {/* Main Bento Grid */}
-                <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-4 min-h-0 max-w-full">
                   {/* Left Column: Scooter Image */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
