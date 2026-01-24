@@ -143,17 +143,48 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       }
     );
 
-    // Déclencher la vérification initiale - onAuthStateChange recevra le résultat
-    // NE PAS appeler setLoading(false) ici, laisser onAuthStateChange gérer
+    // Déclencher la vérification initiale AVEC gestion d'erreur massive
     console.log('[Auth] 🔄 Triggering initial session check via getSession()...');
-    supabase.auth.getSession();
+    supabase.auth.getSession().then(({ data, error }) => {
+      if (error) {
+        console.error('[Auth] ========== 🔴 ERREUR CRITIQUE getSession() ==========');
+        console.error('[Auth] 🔴 Message:', error.message);
+        console.error('[Auth] 🔴 Status:', (error as any).status || 'N/A');
+        console.error('[Auth] 🔴 Name:', error.name);
+        console.error('[Auth] 🔴 Full error:', JSON.stringify(error, null, 2));
+        console.error('[Auth] 🔴 URL actuelle:', window.location.href);
+        console.error('[Auth] 🔴 Hash:', window.location.hash);
+        console.error('[Auth] 🔴 Search:', window.location.search);
+        console.error('[Auth] 🔴 Origin:', window.location.origin);
+        console.error('[Auth] ============================================');
+        
+        // Force loading false pour débloquer l'UI
+        if (isMounted) {
+          setLoading(false);
+        }
+      } else {
+        console.log('[Auth] ✅ getSession() réussi');
+        console.log('[Auth] Session exists:', !!data.session);
+        if (data.session?.user) {
+          console.log('[Auth] User email:', data.session.user.email);
+          console.log('[Auth] Provider:', data.session.user.app_metadata?.provider);
+        }
+      }
+    }).catch((e) => {
+      console.error('[Auth] ========== 🔴 EXCEPTION getSession() ==========');
+      console.error('[Auth] 🔴 Exception:', e);
+      console.error('[Auth] ============================================');
+      if (isMounted) {
+        setLoading(false);
+      }
+    });
 
     return () => {
       console.log('[Auth] 🧹 Cleanup - unsubscribing from auth state changes');
       isMounted = false;
       subscription.unsubscribe();
     };
-  }, []);
+  }, [queryClient]);
 
   const signIn = async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({

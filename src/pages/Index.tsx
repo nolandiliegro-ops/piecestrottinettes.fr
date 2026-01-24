@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -6,10 +6,15 @@ import HeroSection from "@/components/HeroSection";
 import CompatiblePartsSection from "@/components/CompatiblePartsSection";
 import FavoritesSection from "@/components/home/FavoritesSection";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
+import { useQueryClient } from "@tanstack/react-query";
+import { useAuth } from "@/hooks/useAuth";
 
 const Index = () => {
   const [activeModelSlug, setActiveModelSlug] = useState<string | null>(null);
   const [activeModelName, setActiveModelName] = useState<string | null>(null);
+  const queryClient = useQueryClient();
+  const { user } = useAuth();
+  const hasTriedRefetch = useRef(false);
 
   // 📊 TÉLÉMÉTRIE CATALOGUE - Debug showroom vide
   const { data: brands, isLoading: brandsLoading, error: brandsError } = useBrands();
@@ -23,8 +28,31 @@ const Index = () => {
       modelsLoading,
       brandsError: brandsError?.message || null,
       modelsError: modelsError?.message || null,
+      userConnected: !!user,
     });
-  }, [brands, models, brandsLoading, modelsLoading, brandsError, modelsError]);
+  }, [brands, models, brandsLoading, modelsLoading, brandsError, modelsError, user]);
+
+  // 🔄 AUTO-REFETCH si user connecté mais catalogue vide
+  useEffect(() => {
+    const brandsCount = brands?.length || 0;
+    const modelsCount = models?.length || 0;
+    
+    // Conditions: user connecté, chargement terminé, catalogue vide, pas encore essayé
+    if (user && !brandsLoading && !modelsLoading && !hasTriedRefetch.current) {
+      if (brandsCount === 0 || modelsCount === 0) {
+        console.warn('[Index] ⚠️ Catalogue vide malgré session valide');
+        console.warn('[Index] 🔄 Force refetch dans 500ms...');
+        hasTriedRefetch.current = true;
+        
+        setTimeout(() => {
+          console.log('[Index] 🔄 Exécution refetchQueries...');
+          queryClient.refetchQueries({ queryKey: ['brands'] });
+          queryClient.refetchQueries({ queryKey: ['scooter_models'] });
+          queryClient.refetchQueries({ queryKey: ['all_parts'] });
+        }, 500);
+      }
+    }
+  }, [user, brands, models, brandsLoading, modelsLoading, queryClient]);
 
   const handleActiveModelChange = useCallback((slug: string | null, name: string | null) => {
     setActiveModelSlug(slug);
