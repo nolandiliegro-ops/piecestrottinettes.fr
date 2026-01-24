@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw, AlertTriangle } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw, AlertTriangle, Trash2 } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -91,6 +91,34 @@ const Header = () => {
     toast.success('Rechargement en cours...');
     // Hard reload pour garantir un état propre
     setTimeout(() => window.location.reload(), 500);
+  };
+
+  // 🧹 NETTOYAGE COMPLET DU CACHE - Vide tout et recharge
+  const handleFullCacheClear = async () => {
+    console.log('🧹 FULL CACHE CLEAR: React Query + localStorage + sessionStorage + caches');
+    
+    // 1. Vider React Query
+    queryClient.clear();
+    
+    // 2. Vider tout le storage local
+    localStorage.clear();
+    sessionStorage.clear();
+    
+    // 3. Vider les caches ServiceWorker si présents
+    if ('caches' in window) {
+      try {
+        const cacheNames = await caches.keys();
+        await Promise.all(cacheNames.map(name => caches.delete(name)));
+        console.log('🧹 ServiceWorker caches cleared:', cacheNames.length);
+      } catch (e) {
+        console.warn('🧹 Could not clear SW caches:', e);
+      }
+    }
+    
+    toast.success('Cache nettoyé, rechargement...');
+    
+    // 4. Hard reload
+    setTimeout(() => window.location.reload(), 300);
   };
 
   // Check if user has scooters in garage
@@ -435,6 +463,14 @@ const Header = () => {
                     <RefreshCw className="w-4 h-4" />
                     Forcer le rechargement
                   </DropdownMenuItem>
+                  <DropdownMenuItem 
+                    onClick={handleFullCacheClear}
+                    className="flex items-center gap-2 cursor-pointer text-orange-600"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                    Nettoyage complet du cache
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
                   <DropdownMenuItem 
                     onClick={handleSignOut}
                     className="flex items-center gap-2 cursor-pointer text-garage"

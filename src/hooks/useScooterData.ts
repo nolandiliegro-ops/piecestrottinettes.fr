@@ -1,6 +1,17 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useState, useEffect } from "react";
+import { toast } from "sonner";
+
+// 🔧 Helper de timeout - Force une erreur si la requête dépasse le délai
+const withTimeout = <T>(promise: Promise<T>, ms: number, errorMessage: string): Promise<T> => {
+  return Promise.race([
+    promise,
+    new Promise<T>((_, reject) => 
+      setTimeout(() => reject(new Error(errorMessage)), ms)
+    )
+  ]);
+};
 
 // Type for part with category and technical metadata
 export interface CompatiblePart {
@@ -27,20 +38,49 @@ export const useBrands = () => {
   return useQuery({
     queryKey: ["brands"],
     queryFn: async () => {
-      const { data, error } = await supabase
-        .from("brands")
-        .select("*")
-        .order("name");
+      console.log('[useBrands] 🚀 Début requête...');
+      console.log('[useBrands] 🌐 Navigator online:', navigator.onLine);
+      console.log('[useBrands] 📍 Window focused:', document.hasFocus());
       
-      if (error) {
-        console.error('[useBrands] Erreur:', error);
+      const fetchBrands = async () => {
+        const { data, error } = await supabase
+          .from("brands")
+          .select("*")
+          .order("name");
+        
+        console.log('[useBrands] 📦 Réponse brute:', { dataLength: data?.length, error });
+        
+        if (error) {
+          console.error('[useBrands] 🔴 Erreur:', error);
+          throw error;
+        }
+        return data || [];
+      };
+      
+      try {
+        // Timeout après 5 secondes
+        const data = await withTimeout(
+          fetchBrands(), 
+          5000, 
+          'Timeout: La base de données ne répond pas après 5s'
+        );
+        
+        console.log('[useBrands] ✅ Succès:', data.length, 'marques');
+        return data;
+      } catch (error: any) {
+        // Log spécifique pour "message channel closed"
+        if (error?.message?.includes('channel') || error?.message?.includes('closed')) {
+          console.error('[useBrands] 🔴 CHANNEL ERROR - Possible extension blocking');
+          toast.error('Connexion interrompue. Désactivez vos extensions et réessayez.');
+        }
         throw error;
       }
-      console.log('[useBrands] ✅ Données récupérées:', data?.length || 0, 'marques');
-      return data;
     },
     staleTime: 0,
+    gcTime: 0, // Pas de cache
     refetchOnMount: 'always',
+    retry: 1,
+    retryDelay: 1000,
   });
 };
 
@@ -49,37 +89,64 @@ export const useScooterModels = (brandSlug?: string | null) => {
   return useQuery({
     queryKey: ["scooter_models", brandSlug],
     queryFn: async () => {
-      let query = supabase
-        .from("scooter_models")
-        .select(`
-          *,
-          brand:brands(id, name, slug)
-        `)
-        .order("name");
+      console.log('[useScooterModels] 🚀 Début requête... brandSlug:', brandSlug);
+      console.log('[useScooterModels] 🌐 Navigator online:', navigator.onLine);
+      
+      const fetchModels = async () => {
+        let query = supabase
+          .from("scooter_models")
+          .select(`
+            *,
+            brand:brands(id, name, slug)
+          `)
+          .order("name");
 
-      if (brandSlug) {
-        // Filtrer par slug de marque via la relation
-        const { data: brand } = await supabase
-          .from("brands")
-          .select("id")
-          .eq("slug", brandSlug)
-          .single();
+        if (brandSlug) {
+          const { data: brand } = await supabase
+            .from("brands")
+            .select("id")
+            .eq("slug", brandSlug)
+            .single();
 
-        if (brand) {
-          query = query.eq("brand_id", brand.id);
+          if (brand) {
+            query = query.eq("brand_id", brand.id);
+          }
         }
-      }
 
-      const { data, error } = await query;
-      if (error) {
-        console.error('[useScooterModels] Erreur:', error);
+        const { data, error } = await query;
+        
+        console.log('[useScooterModels] 📦 Réponse brute:', { dataLength: data?.length, error });
+        
+        if (error) {
+          console.error('[useScooterModels] 🔴 Erreur:', error);
+          throw error;
+        }
+        return data || [];
+      };
+      
+      try {
+        // Timeout après 5 secondes
+        const data = await withTimeout(
+          fetchModels(), 
+          5000, 
+          'Timeout: Les modèles ne répondent pas après 5s'
+        );
+        
+        console.log('[useScooterModels] ✅ Succès:', data.length, 'modèles');
+        return data;
+      } catch (error: any) {
+        if (error?.message?.includes('channel') || error?.message?.includes('closed')) {
+          console.error('[useScooterModels] 🔴 CHANNEL ERROR - Possible extension blocking');
+          toast.error('Connexion interrompue. Désactivez vos extensions.');
+        }
         throw error;
       }
-      console.log('[useScooterModels] ✅ Données récupérées:', data?.length || 0, 'modèles');
-      return data;
     },
     staleTime: 0,
+    gcTime: 0,
     refetchOnMount: 'always',
+    retry: 1,
+    retryDelay: 1000,
   });
 };
 
