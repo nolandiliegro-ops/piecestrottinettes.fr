@@ -1,10 +1,11 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw, AlertTriangle } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useUserGarage } from "@/hooks/useGarage";
@@ -65,6 +66,21 @@ const Header = () => {
     await signOut();
     clearSelection(); // Clear selected scooter on logout
     navigate('/');
+  };
+
+  // 🚨 DÉCONNEXION D'URGENCE - Utilise supabase directement, bypass le contexte
+  const handleEmergencySignOut = async () => {
+    console.log('🚨 EMERGENCY SIGN OUT - Bypassing AuthContext');
+    try {
+      await supabase.auth.signOut();
+      clearSelection();
+      toast.success('Déconnexion réussie');
+      window.location.href = '/'; // Hard redirect, pas de navigate
+    } catch (error) {
+      console.error('🚨 Emergency signout error:', error);
+      // Force redirect même si erreur
+      window.location.href = '/';
+    }
   };
 
   // 🚨 BOUTON DE SECOURS - Force le rechargement du catalogue + hard reload
@@ -425,6 +441,14 @@ const Header = () => {
                   >
                     <LogOut className="w-4 h-4" />
                     Déconnexion
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem 
+                    onClick={handleEmergencySignOut}
+                    className="flex items-center gap-2 cursor-pointer text-destructive font-medium"
+                  >
+                    <AlertTriangle className="w-4 h-4" />
+                    Déconnexion d'urgence
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

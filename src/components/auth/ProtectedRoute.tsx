@@ -98,9 +98,10 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
     return <Navigate to="/login" replace />;
   }
 
-  // Loading state - afficher le loader
-  if (loading) {
-    console.log('[ProtectedRoute] ⏳ En attente de la session...');
+  // Loading state - afficher le loader SEULEMENT si pas de user
+  // FIX CRITIQUE: Autoriser l'accès si user existe, même si loading = true (profil en cours)
+  if (loading && !user) {
+    console.log('[ProtectedRoute] ⏳ En attente de la session (user=null, loading=true)...');
     return (
       <div className="min-h-screen bg-greige flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">

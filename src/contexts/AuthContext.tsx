@@ -121,23 +121,31 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         setSession(session);
         setUser(session?.user ?? null);
         
-        // Charger le profil AVANT de passer loading à false
+        // Charger le profil avec try/catch - NON BLOQUANT
         if (session?.user) {
           console.log('[Auth] 📥 Chargement du profil...');
-          const profile = await fetchProfile(session.user.id);
-          if (isMounted) {
-            setProfile(profile);
-            console.log('[Auth] ✅ Profile chargé:', profile?.display_name || 'Aucun nom');
+          try {
+            const profile = await fetchProfile(session.user.id);
+            if (isMounted) {
+              setProfile(profile);
+              console.log('[Auth] ✅ Profile chargé:', profile?.display_name || 'Aucun nom');
+            }
+          } catch (profileError) {
+            console.error('[Auth] ⚠️ Erreur chargement profil (non bloquant):', profileError);
+            // On continue sans profil, ce n'est pas bloquant
+            if (isMounted) {
+              setProfile(null);
+            }
           }
         } else {
           setProfile(null);
           console.log('[Auth] 🔓 Aucune session, profil réinitialisé');
         }
         
-        // CRITIQUE: setLoading(false) SEULEMENT après tout le reste
+        // CRITIQUE: setLoading(false) TOUJOURS appelé, quoi qu'il arrive
         if (isMounted) {
           setLoading(false);
-          console.log('[Auth] ✅ Loading terminé, état 100% synchronisé');
+          console.log('[Auth] ✅ Loading terminé, état synchronisé');
           console.log('[Auth] Final state - user:', !!session?.user, 'loading: false');
         }
       }
