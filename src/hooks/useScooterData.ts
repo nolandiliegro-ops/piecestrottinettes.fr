@@ -13,6 +13,37 @@ const withTimeout = <T>(promise: Promise<T>, ms: number, errorMessage: string): 
   ]);
 };
 
+// 🔧 Détection Chrome + QUIC issues
+const isChrome = () => /Chrome/.test(navigator.userAgent) && !/Edg/.test(navigator.userAgent);
+
+// 🔧 Détection d'erreur de channel (extension/QUIC)
+const isChannelError = (error: any): boolean => {
+  const msg = error?.message?.toLowerCase() || '';
+  return msg.includes('channel') || msg.includes('closed') || msg.includes('quic') || msg.includes('network');
+};
+
+// 🔧 Reconnexion forcée à Supabase (reset du client)
+const forceSupabaseReconnect = async () => {
+  console.log('[Supabase] 🔄 Forcing reconnection...');
+  try {
+    // Refresh la session pour forcer une nouvelle connexion
+    await supabase.auth.refreshSession();
+    console.log('[Supabase] ✅ Reconnection successful');
+  } catch (e) {
+    console.warn('[Supabase] ⚠️ Reconnection attempt failed:', e);
+  }
+};
+
+// 🔧 Retry delay exponentiel avec jitter
+const getRetryDelay = (attemptIndex: number): number => {
+  const baseDelay = 1000;
+  const maxDelay = 8000;
+  const exponentialDelay = Math.min(baseDelay * Math.pow(2, attemptIndex), maxDelay);
+  // Ajoute un jitter de ±25% pour éviter les thundering herds
+  const jitter = exponentialDelay * (0.75 + Math.random() * 0.5);
+  return Math.round(jitter);
+};
+
 // Type for part with category and technical metadata
 export interface CompatiblePart {
   id: string;
@@ -39,8 +70,7 @@ export const useBrands = () => {
     queryKey: ["brands"],
     queryFn: async () => {
       console.log('[useBrands] 🚀 Début requête...');
-      console.log('[useBrands] 🌐 Navigator online:', navigator.onLine);
-      console.log('[useBrands] 📍 Window focused:', document.hasFocus());
+      console.log('[useBrands] 🌐 Online:', navigator.onLine, '| Chrome:', isChrome());
       
       const fetchBrands = async () => {
         const { data, error } = await supabase
@@ -48,17 +78,20 @@ export const useBrands = () => {
           .select("*")
           .order("name");
         
-        console.log('[useBrands] 📦 Réponse brute:', { dataLength: data?.length, error });
+        console.log('[useBrands] 📦 Réponse:', { dataLength: data?.length, error: error?.message });
         
         if (error) {
-          console.error('[useBrands] 🔴 Erreur:', error);
+          // Si erreur de channel sur Chrome, tente reconnexion
+          if (isChannelError(error) && isChrome()) {
+            console.warn('[useBrands] 🔴 Chrome QUIC/Channel error detected, forcing reconnect...');
+            await forceSupabaseReconnect();
+          }
           throw error;
         }
         return data || [];
       };
       
       try {
-        // Timeout après 5 secondes
         const data = await withTimeout(
           fetchBrands(), 
           5000, 
@@ -68,29 +101,29 @@ export const useBrands = () => {
         console.log('[useBrands] ✅ Succès:', data.length, 'marques');
         return data;
       } catch (error: any) {
-        // Log spécifique pour "message channel closed"
-        if (error?.message?.includes('channel') || error?.message?.includes('closed')) {
-          console.error('[useBrands] 🔴 CHANNEL ERROR - Possible extension blocking');
-          toast.error('Connexion interrompue. Désactivez vos extensions et réessayez.');
+        if (isChannelError(error)) {
+          console.error('[useBrands] 🔴 CHANNEL ERROR - Chrome/Extension issue');
+          toast.error('Connexion instable. Essayez de désactiver vos extensions ou utilisez Edge.');
+          // Force reconnexion pour les prochaines tentatives
+          await forceSupabaseReconnect();
         }
         throw error;
       }
     },
     staleTime: 0,
-    gcTime: 0, // Pas de cache
+    gcTime: 0,
     refetchOnMount: 'always',
-    retry: 1,
-    retryDelay: 1000,
+    retry: 3, // 3 tentatives
+    retryDelay: getRetryDelay,
   });
 };
 
-// Hook pour récupérer les modèles de trottinettes (avec filtrage optionnel par marque)
 export const useScooterModels = (brandSlug?: string | null) => {
   return useQuery({
     queryKey: ["scooter_models", brandSlug],
     queryFn: async () => {
       console.log('[useScooterModels] 🚀 Début requête... brandSlug:', brandSlug);
-      console.log('[useScooterModels] 🌐 Navigator online:', navigator.onLine);
+      console.log('[useScooterModels] 🌐 Online:', navigator.onLine, '| Chrome:', isChrome());
       
       const fetchModels = async () => {
         let query = supabase
@@ -115,17 +148,19 @@ export const useScooterModels = (brandSlug?: string | null) => {
 
         const { data, error } = await query;
         
-        console.log('[useScooterModels] 📦 Réponse brute:', { dataLength: data?.length, error });
+        console.log('[useScooterModels] 📦 Réponse:', { dataLength: data?.length, error: error?.message });
         
         if (error) {
-          console.error('[useScooterModels] 🔴 Erreur:', error);
+          if (isChannelError(error) && isChrome()) {
+            console.warn('[useScooterModels] 🔴 Chrome QUIC/Channel error, forcing reconnect...');
+            await forceSupabaseReconnect();
+          }
           throw error;
         }
         return data || [];
       };
       
       try {
-        // Timeout après 5 secondes
         const data = await withTimeout(
           fetchModels(), 
           5000, 
@@ -135,9 +170,10 @@ export const useScooterModels = (brandSlug?: string | null) => {
         console.log('[useScooterModels] ✅ Succès:', data.length, 'modèles');
         return data;
       } catch (error: any) {
-        if (error?.message?.includes('channel') || error?.message?.includes('closed')) {
-          console.error('[useScooterModels] 🔴 CHANNEL ERROR - Possible extension blocking');
-          toast.error('Connexion interrompue. Désactivez vos extensions.');
+        if (isChannelError(error)) {
+          console.error('[useScooterModels] 🔴 CHANNEL ERROR - Chrome/Extension issue');
+          toast.error('Connexion instable. Essayez Edge ou désactivez vos extensions.');
+          await forceSupabaseReconnect();
         }
         throw error;
       }
@@ -145,8 +181,8 @@ export const useScooterModels = (brandSlug?: string | null) => {
     staleTime: 0,
     gcTime: 0,
     refetchOnMount: 'always',
-    retry: 1,
-    retryDelay: 1000,
+    retry: 3,
+    retryDelay: getRetryDelay,
   });
 };
 
