@@ -81,13 +81,25 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         if (session?.user) {
           console.log('[Auth] User ID:', session.user.id);
           console.log('[Auth] User email:', session.user.email);
-          console.log('[Auth] Provider:', session.user.app_metadata?.provider);
+        console.log('[Auth] Provider:', session.user.app_metadata?.provider);
           
-          // Confirmation spécifique Google OAuth
+          // 🚀 HARD REDIRECT GOOGLE OAUTH - Contourne le router React
           if (event === 'SIGNED_IN' && session.user.app_metadata?.provider === 'google') {
             console.log('[Auth] ========== GOOGLE OAUTH SUCCESS ==========');
             console.log('[Auth] ✅ Connexion Google réussie pour:', session.user.email);
-            console.log('[Auth] User sera redirigé vers /garage par le router');
+            
+            // Garde anti-boucle: ne pas rediriger si déjà sur /garage
+            if (window.location.pathname !== '/garage') {
+              console.log('🚀 NAVIGATION FORCÉE VERS LE GARAGE ACTIVÉE');
+              console.log('[Auth] 🚀 Hard redirect vers /garage (bypass router)');
+              console.log('[Auth] Path actuel:', window.location.pathname);
+              
+              // HARD REDIRECT - Force le navigateur à recharger /garage
+              window.location.href = '/garage';
+              return; // Stop l'exécution pour éviter les mises à jour d'état orphelines
+            } else {
+              console.log('[Auth] ✅ Déjà sur /garage, pas de redirection nécessaire');
+            }
           }
         }
         
