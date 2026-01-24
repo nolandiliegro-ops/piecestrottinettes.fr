@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { User, Session } from '@supabase/supabase-js';
 import { supabase } from '@/integrations/supabase/client';
+import { useQueryClient } from '@tanstack/react-query';
 
 interface Profile {
   id: string;
@@ -41,6 +42,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [session, setSession] = useState<Session | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
   const fetchProfile = async (userId: string) => {
     const { data, error } = await supabase
@@ -82,6 +84,18 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           console.log('[Auth] User ID:', session.user.id);
           console.log('[Auth] User email:', session.user.email);
         console.log('[Auth] Provider:', session.user.app_metadata?.provider);
+          
+          // 🔄 INVALIDATION CACHE CATALOGUE - Force le refetch des données
+          if (event === 'SIGNED_IN') {
+            console.log('[Auth] 🔄 Invalidation du cache catalogue (auth changed)');
+            queryClient.invalidateQueries({ queryKey: ['brands'] });
+            queryClient.invalidateQueries({ queryKey: ['categories'] });
+            queryClient.invalidateQueries({ queryKey: ['scooter_models'] });
+            queryClient.invalidateQueries({ queryKey: ['all_parts'] });
+            queryClient.invalidateQueries({ queryKey: ['compatible_parts'] });
+            queryClient.invalidateQueries({ queryKey: ['parent-categories'] });
+            console.log('[Auth] ✅ Cache catalogue invalidé - refetch en cours');
+          }
           
           // 🚀 HARD REDIRECT GOOGLE OAUTH - Contourne le router React
           if (event === 'SIGNED_IN' && session.user.app_metadata?.provider === 'google') {

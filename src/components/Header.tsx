@@ -1,4 +1,6 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw } from "lucide-react";
+import { useQueryClient } from "@tanstack/react-query";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -23,6 +25,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const prevCountRef = useRef(0);
+  const queryClient = useQueryClient();
   
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
@@ -62,6 +65,14 @@ const Header = () => {
     await signOut();
     clearSelection(); // Clear selected scooter on logout
     navigate('/');
+  };
+
+  // 🚨 BOUTON DE SECOURS - Force le rechargement du catalogue
+  const handleForceRefresh = () => {
+    console.log('🚨 CATALOGUE FORCE REFRESH: clearing and invalidating cache');
+    queryClient.clear();
+    queryClient.invalidateQueries();
+    toast.success('Catalogue rechargé !');
   };
 
   // Check if user has scooters in garage
@@ -399,6 +410,13 @@ const Header = () => {
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
+                  <DropdownMenuItem 
+                    onClick={handleForceRefresh}
+                    className="flex items-center gap-2 cursor-pointer text-amber-600"
+                  >
+                    <RefreshCw className="w-4 h-4" />
+                    Forcer le rechargement
+                  </DropdownMenuItem>
                   <DropdownMenuItem 
                     onClick={handleSignOut}
                     className="flex items-center gap-2 cursor-pointer text-garage"

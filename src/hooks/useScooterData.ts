@@ -32,9 +32,15 @@ export const useBrands = () => {
         .select("*")
         .order("name");
       
-      if (error) throw error;
+      if (error) {
+        console.error('[useBrands] Erreur:', error);
+        throw error;
+      }
+      console.log('[useBrands] ✅ Données récupérées:', data?.length || 0, 'marques');
       return data;
     },
+    staleTime: 0,
+    refetchOnMount: 'always',
   });
 };
 
@@ -65,9 +71,15 @@ export const useScooterModels = (brandSlug?: string | null) => {
       }
 
       const { data, error } = await query;
-      if (error) throw error;
+      if (error) {
+        console.error('[useScooterModels] Erreur:', error);
+        throw error;
+      }
+      console.log('[useScooterModels] ✅ Données récupérées:', data?.length || 0, 'modèles');
       return data;
     },
+    staleTime: 0,
+    refetchOnMount: 'always',
   });
 };
 
@@ -91,9 +103,15 @@ export const useCategories = () => {
         .select("id, name, slug, icon, display_order, parent_id")
         .order("display_order");
       
-      if (error) throw error;
+      if (error) {
+        console.error('[useCategories] Erreur:', error);
+        throw error;
+      }
+      console.log('[useCategories] ✅ Données récupérées:', data?.length || 0, 'catégories');
       return data || [];
     },
+    staleTime: 0,
+    refetchOnMount: 'always',
   });
 };
 
