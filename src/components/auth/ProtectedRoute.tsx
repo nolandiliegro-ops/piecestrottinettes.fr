@@ -9,7 +9,14 @@ interface ProtectedRouteProps {
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   const { user, loading } = useAuth();
 
+  // === LOGS DE DÉTECTION ===
+  console.log('[ProtectedRoute] ========== CHECK ==========');
+  console.log('[ProtectedRoute] loading:', loading);
+  console.log('[ProtectedRoute] user:', !!user);
+  console.log('[ProtectedRoute] path:', window.location.pathname);
+
   if (loading) {
+    console.log('[ProtectedRoute] ⏳ En attente de la session...');
     return (
       <div className="min-h-screen bg-greige flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
@@ -21,9 +28,13 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   }
 
   if (!user) {
+    console.log('[ProtectedRoute] ⚠️ REDIRECTION FORCÉE vers /login');
+    console.log('[ProtectedRoute] Raison: user est null après loading=false');
+    console.log('[ProtectedRoute] Current path:', window.location.pathname);
     return <Navigate to="/login" replace />;
   }
 
+  console.log('[ProtectedRoute] ✅ Accès autorisé pour:', user.email);
   return <>{children}</>;
 };
 

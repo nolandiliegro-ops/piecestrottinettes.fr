@@ -39,9 +39,20 @@ const Register = () => {
 
   // Rediriger automatiquement si déjà connecté
   useEffect(() => {
-    if (!authLoading && user) {
-      console.log('[Register] ✅ Utilisateur déjà connecté, redirection vers /garage');
+    console.log('[Register] Guard check - authLoading:', authLoading, 'user:', !!user);
+    
+    // ATTENDRE que le loading soit terminé avant toute décision
+    if (authLoading) {
+      console.log('[Register] ⏳ En attente de la fin du chargement...');
+      return;
+    }
+    
+    if (user) {
+      console.log('[Register] ✅ User connecté, redirection vers /garage');
+      console.log('[Register] User email:', user.email);
       navigate('/garage', { replace: true });
+    } else {
+      console.log('[Register] 🔓 Aucun user, affichage du formulaire');
     }
   }, [user, authLoading, navigate]);
 

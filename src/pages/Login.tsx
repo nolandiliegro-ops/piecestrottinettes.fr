@@ -27,9 +27,20 @@ const Login = () => {
 
   // Rediriger automatiquement si déjà connecté
   useEffect(() => {
-    if (!authLoading && user) {
-      console.log('[Login] ✅ Utilisateur déjà connecté, redirection vers /garage');
+    console.log('[Login] Guard check - authLoading:', authLoading, 'user:', !!user);
+    
+    // ATTENDRE que le loading soit terminé avant toute décision
+    if (authLoading) {
+      console.log('[Login] ⏳ En attente de la fin du chargement...');
+      return;
+    }
+    
+    if (user) {
+      console.log('[Login] ✅ User connecté, redirection vers /garage');
+      console.log('[Login] User email:', user.email);
       navigate('/garage', { replace: true });
+    } else {
+      console.log('[Login] 🔓 Aucun user, affichage du formulaire');
     }
   }, [user, authLoading, navigate]);
 

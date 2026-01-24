@@ -57,9 +57,21 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   };
 
   useEffect(() => {
-    // Set up auth state listener FIRST
+    // Flag pour éviter les mises à jour après unmount
+    let isMounted = true;
+    
+    console.log('[Auth] ========== INITIALISATION ==========');
+    console.log('[Auth] Setting up onAuthStateChange listener...');
+    
+    // onAuthStateChange est la SOURCE DE VÉRITÉ UNIQUE
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       async (event, session) => {
+        // Éviter les mises à jour si le composant est démonté
+        if (!isMounted) {
+          console.log('[Auth] ⚠️ Component unmounted, skipping state update');
+          return;
+        }
+        
         // === LOGS DE DEBUG AUTH ===
         console.log('[Auth] ========== AUTH STATE CHANGE ==========');
         console.log('[Auth] Event:', event);
@@ -79,39 +91,42 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           }
         }
         
+        // Synchroniser session et user IMMÉDIATEMENT
         setSession(session);
         setUser(session?.user ?? null);
         
-        // Fetch profile BEFORE setting loading to false for proper sync
+        // Charger le profil AVANT de passer loading à false
         if (session?.user) {
+          console.log('[Auth] 📥 Chargement du profil...');
           const profile = await fetchProfile(session.user.id);
-          setProfile(profile);
-          console.log('[Auth] ✅ Profile chargé:', profile?.display_name || 'Aucun nom');
+          if (isMounted) {
+            setProfile(profile);
+            console.log('[Auth] ✅ Profile chargé:', profile?.display_name || 'Aucun nom');
+          }
         } else {
           setProfile(null);
+          console.log('[Auth] 🔓 Aucune session, profil réinitialisé');
         }
         
-        setLoading(false);
-        console.log('[Auth] ✅ Loading terminé, état synchronisé');
+        // CRITIQUE: setLoading(false) SEULEMENT après tout le reste
+        if (isMounted) {
+          setLoading(false);
+          console.log('[Auth] ✅ Loading terminé, état 100% synchronisé');
+          console.log('[Auth] Final state - user:', !!session?.user, 'loading: false');
+        }
       }
     );
 
-    // THEN check for existing session
-    supabase.auth.getSession().then(async ({ data: { session } }) => {
-      console.log('[Auth] Initial session check:', !!session);
-      setSession(session);
-      setUser(session?.user ?? null);
-      
-      if (session?.user) {
-        const profile = await fetchProfile(session.user.id);
-        setProfile(profile);
-        console.log('[Auth] Initial profile loaded:', profile?.display_name || 'Aucun nom');
-      }
-      
-      setLoading(false);
-    });
+    // Déclencher la vérification initiale - onAuthStateChange recevra le résultat
+    // NE PAS appeler setLoading(false) ici, laisser onAuthStateChange gérer
+    console.log('[Auth] 🔄 Triggering initial session check via getSession()...');
+    supabase.auth.getSession();
 
-    return () => subscription.unsubscribe();
+    return () => {
+      console.log('[Auth] 🧹 Cleanup - unsubscribing from auth state changes');
+      isMounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   const signIn = async (email: string, password: string) => {
