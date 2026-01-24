@@ -47,11 +47,13 @@ const getOAuthErrorFromUrl = (): { error: string; description: string } | null =
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   const { user, loading } = useAuth();
   const [oauthTimeout, setOauthTimeout] = useState(false);
+  
+  // === Détection OAuth (appelé à chaque render, pas dans un hook) ===
+  const oauthError = getOAuthErrorFromUrl();
+  const oauthInProgress = hasOAuthTokensInUrl();
 
   // === TIMEOUT DE SÉCURITÉ 10 SECONDES ===
   useEffect(() => {
-    const oauthInProgress = hasOAuthTokensInUrl();
-    
     if (oauthInProgress && !user && !loading) {
       console.log('[ProtectedRoute] ⏰ Démarrage timer timeout OAuth (10s)');
       
@@ -63,14 +65,38 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
       
       return () => clearTimeout(timer);
     }
-  }, [user, loading]);
+  }, [user, loading, oauthInProgress]);
 
-  // === LOGS DE DÉTECTION ===
-  console.log('[ProtectedRoute] ========== CHECK ==========');
-  console.log('[ProtectedRoute] loading:', loading);
-  console.log('[ProtectedRoute] user:', !!user);
-  console.log('[ProtectedRoute] path:', window.location.pathname);
-  console.log('[ProtectedRoute] hash:', window.location.hash ? '[TOKENS PRÉSENTS]' : '[vide]');
+  // Log de l'erreur OAuth au montage
+  useEffect(() => {
+    if (oauthError) {
+      console.error('[ProtectedRoute] 🔴 ========== ERREUR OAUTH DÉTECTÉE AU MONTAGE ==========');
+      console.error('[ProtectedRoute] Error:', oauthError.error);
+      console.error('[ProtectedRoute] Description:', oauthError.description);
+      console.error('[ProtectedRoute] URL complète:', window.location.href);
+    }
+  }, [oauthError]);
+
+  // === LOGS DE DIAGNOSTIC ===
+  console.log('🛡️ État ProtectedRoute:', {
+    user: !!user,
+    loading,
+    oauthError: !!oauthError,
+    oauthInProgress,
+    oauthTimeout,
+    path: window.location.pathname,
+    hash: window.location.hash ? '[TOKENS]' : '[vide]',
+    search: window.location.search ? '[PARAMS]' : '[vide]'
+  });
+
+  // === RENDU CONDITIONNEL (après tous les hooks) ===
+
+  // 🔴 CAS 1: ERREUR OAUTH → REDIRECTION IMMÉDIATE (avant loading check!)
+  if (oauthError) {
+    console.error('[ProtectedRoute] 🔴 REDIRECTION IMMÉDIATE vers /login (erreur OAuth)');
+    toast.error(`Échec de connexion: ${oauthError.description}`);
+    return <Navigate to="/login" replace />;
+  }
 
   // Loading state - afficher le loader
   if (loading) {
@@ -85,29 +111,16 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
     );
   }
 
-  // 🔴 CAS 1: TIMEOUT OAuth atteint
+  // 🔴 CAS 2: TIMEOUT OAuth atteint
   if (oauthTimeout) {
     console.error('[ProtectedRoute] 🔴 TIMEOUT - Redirection forcée vers /login');
     toast.error('La connexion a pris trop de temps. Veuillez réessayer.');
     return <Navigate to="/login" replace />;
   }
 
-  // 🛡️ GARDE ANTI-BOUCLE OAUTH
+  // 🛡️ GARDE ANTI-BOUCLE OAUTH (user=null)
   if (!user) {
-    // 🔴 CAS 2: Erreur OAuth explicite dans l'URL
-    const oauthError = getOAuthErrorFromUrl();
-    if (oauthError) {
-      console.error('[ProtectedRoute] 🔴 ========== ERREUR OAUTH DÉTECTÉE ==========');
-      console.error('[ProtectedRoute] Error:', oauthError.error);
-      console.error('[ProtectedRoute] Description:', oauthError.description);
-      console.error('[ProtectedRoute] URL complète:', window.location.href);
-      
-      toast.error(`Échec de connexion: ${oauthError.description}`);
-      return <Navigate to="/login" replace />;
-    }
-
     // 🔄 CAS 3: Tokens présents mais pas encore parsés → spinner temporaire
-    const oauthInProgress = hasOAuthTokensInUrl();
     if (oauthInProgress) {
       console.log('[ProtectedRoute] 🔄 Tokens OAuth détectés dans l\'URL');
       console.log('[ProtectedRoute] ⏳ Attente du parsing Supabase (max 10s)...');

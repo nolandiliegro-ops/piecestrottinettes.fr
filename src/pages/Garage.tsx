@@ -83,6 +83,17 @@ const Garage = () => {
 
   const scooterStats = calculateScooterStats(selectedScooter);
 
+  // 🏠 LOGS DE DIAGNOSTIC GARAGE
+  console.log('🏠 [Garage] État:', {
+    user: !!user,
+    userEmail: user?.email,
+    authLoading,
+    scootersLoading,
+    scootersCount: scooters?.length || 0,
+    profileLoaded: !!profile,
+    selectedScooter: selectedScooter?.scooter_model?.name || 'aucun'
+  });
+
   // Handle nickname change
   const handleNicknameChange = (nickname: string) => {
     if (selectedScooter?.id) {
