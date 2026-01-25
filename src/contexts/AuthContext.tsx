@@ -299,13 +299,34 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   };
 
   const resetPassword = async (email: string) => {
-    const redirectUrl = `${window.location.origin}/reset-password`;
-    
+    // IMPORTANT STABILITY:
+    // 1) Purge session best-effort BEFORE requesting a reset, to avoid polluted sessions (old OAuth tokens)
+    // 2) Use a canonical redirect URL via URL() to avoid malformed links
+    const redirectTo = new URL('/reset-password', window.location.origin).toString();
+
+    const withTimeout = async <T,>(p: Promise<T>, ms: number, label: string): Promise<T> => {
+      return await Promise.race([
+        p,
+        new Promise<T>((_, reject) =>
+          setTimeout(() => reject(new Error(`${label} (timeout ${ms}ms)`)), ms)
+        ),
+      ]);
+    };
+
+    try {
+      // Best effort: do not block on signOut if network is flaky.
+      // Use any-cast to support builds where the 'scope' option typing is absent.
+      const authAny = supabase.auth as any;
+      await withTimeout(authAny.signOut({ scope: 'global' }), 1500, 'signOut').catch(() => undefined);
+    } catch {
+      // Ignore - reset should still be attempted
+    }
+
     console.log('[Auth] 📧 Envoi email reset vers:', email);
-    console.log('[Auth] 📧 Redirect URL:', redirectUrl);
-    
+    console.log('[Auth] 📧 RedirectTo:', redirectTo);
+
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: redirectUrl,
+      redirectTo,
     });
     
     if (error) {

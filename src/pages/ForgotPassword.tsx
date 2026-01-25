@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
@@ -18,9 +18,30 @@ const ForgotPassword = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [cooldownRemaining, setCooldownRemaining] = useState<number>(0);
   
   const { resetPassword } = useAuth();
   const { toast } = useToast();
+
+  const getCooldownKey = (rawEmail: string) => `pw_reset_last_sent_at:${rawEmail.trim().toLowerCase()}`;
+
+  const getRemainingSeconds = (rawEmail: string) => {
+    const key = getCooldownKey(rawEmail);
+    const last = Number(localStorage.getItem(key) || '0');
+    const now = Date.now();
+    const diffMs = now - last;
+    const remainingMs = 60_000 - diffMs;
+    return remainingMs > 0 ? Math.ceil(remainingMs / 1000) : 0;
+  };
+
+  useEffect(() => {
+    // Keep the countdown accurate if the user changes email
+    const tick = () => setCooldownRemaining(getRemainingSeconds(email));
+    tick();
+    const id = window.setInterval(tick, 500);
+    return () => window.clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [email]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +51,18 @@ const ForgotPassword = () => {
     const result = emailSchema.safeParse({ email });
     if (!result.success) {
       setError(result.error.errors[0].message);
+      return;
+    }
+
+    // Anti-spam / anti-invalid-links: 60s cooldown per email
+    const remaining = getRemainingSeconds(email);
+    if (remaining > 0) {
+      setCooldownRemaining(remaining);
+      toast({
+        title: 'Patientez un instant',
+        description: `Vous pourrez redemander un lien dans ${remaining}s.`,
+        variant: 'destructive',
+      });
       return;
     }
 
@@ -52,6 +85,8 @@ const ForgotPassword = () => {
       }
 
       // Succès
+      localStorage.setItem(getCooldownKey(email), String(Date.now()));
+      setCooldownRemaining(60);
       setEmailSent(true);
       toast({
         title: "Email envoyé !",
@@ -153,10 +188,12 @@ const ForgotPassword = () => {
                 <Button
                   type="submit"
                   className="w-full bg-garage hover:bg-garage/90 text-garage-foreground font-display text-lg tracking-wide h-12"
-                  disabled={isLoading}
+                  disabled={isLoading || cooldownRemaining > 0}
                 >
                   {isLoading ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : cooldownRemaining > 0 ? (
+                    <span className="font-display tracking-wide">RÉESSAYER DANS {cooldownRemaining}s</span>
                   ) : (
                     <>
                       <Mail className="w-5 h-5 mr-2" />
