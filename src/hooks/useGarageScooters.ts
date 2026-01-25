@@ -28,6 +28,14 @@ interface GarageScooter {
 
 export const useGarageScooters = () => {
   const { user, session, loading: authLoading } = useAuthContext();
+  
+  // 🔍 DEBUG: Log auth state
+  console.log('[useGarageScooters] 🔍 Auth state:', { 
+    hasUser: !!user, 
+    userId: user?.id,
+    hasSession: !!session,
+    authLoading 
+  });
 
   const query = useQuery({
     queryKey: ["user-garage-scooters", user?.id],
@@ -103,10 +111,12 @@ export const useGarageScooters = () => {
       // Filter out scooters with null scooter_model to prevent crashes
       .filter((item: any) => item.scooter_model !== null) as GarageScooter[];
     },
-    // Only enable query when user AND session are ready, and auth is not loading
-    enabled: !!user && !!session && !authLoading,
+    // Enable query as soon as user exists (session check was too strict)
+    enabled: !!user,
     retry: 3,
     retryDelay: 1000,
+    staleTime: 30000, // 30 seconds
+    refetchOnMount: true,
   });
 
   return {
