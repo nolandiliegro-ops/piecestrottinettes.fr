@@ -15,8 +15,6 @@ import Catalogue from "./pages/Catalogue";
 import Scooters from "./pages/Scooters";
 import PartDetail from "./pages/PartDetail";
 import Login from "./pages/Login";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
 import Register from "./pages/Register";
 import Garage from "./pages/Garage";
 import Admin from "./pages/Admin";
@@ -41,8 +39,8 @@ const App = () => (
             <TooltipProvider>
               <Toaster />
               <Sonner />
+              <SpotlightCommand />
               <BrowserRouter>
-                <SpotlightCommand />
                 <CartSidebar />
                 <MobileNav />
             <Routes>
@@ -54,8 +52,6 @@ const App = () => (
             <Route path="/piece/:slug" element={<PartDetail />} />
             <Route path="/scooter/:slug" element={<ScooterDetail />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/register" element={<Register />} />
             <Route path="/panier" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />

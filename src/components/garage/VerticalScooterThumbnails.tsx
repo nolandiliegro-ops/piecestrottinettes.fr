@@ -20,8 +20,7 @@ interface GarageScooter {
 interface VerticalScooterThumbnailsProps {
   scooters: GarageScooter[];
   selectedScooterId: string | null;
-  /** Callback now includes the index for sync */
-  onScooterSelect: (scooter: GarageScooter, index: number) => void;
+  onScooterSelect: (scooter: GarageScooter) => void;
   className?: string;
 }
 
@@ -46,7 +45,7 @@ const VerticalScooterThumbnails = ({
         return (
           <motion.button
             key={scooter.id}
-            onClick={() => onScooterSelect(scooter, index)}
+            onClick={() => onScooterSelect(scooter)}
             className={cn(
               "relative w-24 h-20 rounded-lg overflow-hidden transition-all duration-300",
               "border-2 bg-white/60 backdrop-blur-sm",

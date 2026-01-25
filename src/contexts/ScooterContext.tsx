@@ -82,10 +82,6 @@ export interface SelectedScooter {
   slug: string;
   brandName: string;
   imageUrl?: string | null;
-  // Enhanced fields for sync
-  modelName?: string;
-  nickname?: string | null;
-  garageItemId?: string;
 }
 
 interface ScooterContextType {

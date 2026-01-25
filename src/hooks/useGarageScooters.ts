@@ -27,24 +27,12 @@ interface GarageScooter {
 }
 
 export const useGarageScooters = () => {
-  const { user, session, loading: authLoading } = useAuthContext();
-  
-  // 🔍 DEBUG: Log auth state
-  console.log('[useGarageScooters] 🔍 Auth state:', { 
-    hasUser: !!user, 
-    userId: user?.id,
-    hasSession: !!session,
-    authLoading 
-  });
+  const { user } = useAuthContext();
 
   const query = useQuery({
     queryKey: ["user-garage-scooters", user?.id],
     queryFn: async () => {
-      console.log('[useGarageScooters] 🔍 Fetching garage scooters...', { userId: user?.id });
-      if (!user) {
-        console.log('[useGarageScooters] ❌ No user, returning empty array');
-        return [];
-      }
+      if (!user) return [];
 
       const { data, error } = await supabase
         .from("user_garage")
@@ -74,12 +62,7 @@ export const useGarageScooters = () => {
         .eq("user_id", user.id)
         .order("added_at", { ascending: false });
 
-      if (error) {
-        console.error('[useGarageScooters] ❌ Error fetching scooters:', error);
-        throw error;
-      }
-      
-      console.log('[useGarageScooters] ✅ Fetched scooters:', data?.length || 0);
+      if (error) throw error;
 
       // Transform to flatten brand.name -> brand string
       return (data || []).map((item: any) => ({
@@ -111,12 +94,7 @@ export const useGarageScooters = () => {
       // Filter out scooters with null scooter_model to prevent crashes
       .filter((item: any) => item.scooter_model !== null) as GarageScooter[];
     },
-    // Enable query as soon as user exists (session check was too strict)
     enabled: !!user,
-    retry: 3,
-    retryDelay: 1000,
-    staleTime: 30000, // 30 seconds
-    refetchOnMount: true,
   });
 
   return {

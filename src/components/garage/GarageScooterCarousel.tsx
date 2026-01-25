@@ -2,14 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Wrench, ArrowRight, ImageIcon } from 'lucide-react';
-import { SafeImage } from '@/components/ui/SafeImage';
 import { cn } from '@/lib/utils';
 import { getScooterImage } from '@/lib/scooterImageMapping';
 import ScooterPlaceholder from './ScooterPlaceholder';
 import CustomPhotoButton from './CustomPhotoButton';
 import VerticalScooterThumbnails from './VerticalScooterThumbnails';
 import ScooterIdentity from './ScooterIdentity';
-import { getBrandColors } from '@/contexts/ScooterContext';
 
 interface GarageScooter {
   id: string;
@@ -36,61 +34,42 @@ interface GarageScooter {
 
 interface GarageScooterCarouselProps {
   scooters: GarageScooter[];
-  /** Controlled index from parent (for Header sync) */
-  currentIndex?: number;
-  /** Callback with scooter AND index */
-  onScooterChange?: (scooter: GarageScooter, index: number) => void;
+  onScooterChange?: (scooter: GarageScooter) => void;
   className?: string;
   /** Mobile clean mode: hide title inside carousel (shown externally as Block 3) */
   mobileCleanMode?: boolean;
 }
 
-const GarageScooterCarousel = ({ 
-  scooters, 
-  currentIndex: controlledIndex,
-  onScooterChange, 
-  className, 
-  mobileCleanMode = false 
-}: GarageScooterCarouselProps) => {
-  const [internalIndex, setInternalIndex] = useState(0);
+const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
   const [imageError, setImageError] = useState(false);
 
-  // Derive effective index: controlled from parent takes priority
-  const effectiveIndex = controlledIndex !== undefined ? controlledIndex : internalIndex;
-
-  // Sync internal index when controlled index changes
-  useEffect(() => {
-    if (controlledIndex !== undefined && controlledIndex !== internalIndex) {
-      setInternalIndex(controlledIndex);
-    }
-  }, [controlledIndex]);
-
   const handlePrevious = () => {
-    const newIndex = effectiveIndex === 0 ? scooters.length - 1 : effectiveIndex - 1;
-    setInternalIndex(newIndex);
+    const newIndex = currentIndex === 0 ? scooters.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
     setShowCustomPhoto(false);
-    onScooterChange?.(scooters[newIndex], newIndex);
+    onScooterChange?.(scooters[newIndex]);
   };
 
   const handleNext = () => {
-    const newIndex = effectiveIndex === scooters.length - 1 ? 0 : effectiveIndex + 1;
-    setInternalIndex(newIndex);
+    const newIndex = currentIndex === scooters.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
     setShowCustomPhoto(false);
-    onScooterChange?.(scooters[newIndex], newIndex);
+    onScooterChange?.(scooters[newIndex]);
   };
 
   const handleDotClick = (index: number) => {
-    setInternalIndex(index);
+    setCurrentIndex(index);
     setShowCustomPhoto(false);
-    onScooterChange?.(scooters[index], index);
+    onScooterChange?.(scooters[index]);
   };
 
   // Reset custom photo view and image error when scooter changes
   useEffect(() => {
     setShowCustomPhoto(false);
     setImageError(false);
-  }, [effectiveIndex]);
+  }, [currentIndex]);
 
   if (!scooters || scooters.length === 0) {
     return (
@@ -108,7 +87,7 @@ const GarageScooterCarousel = ({
     );
   }
 
-  const currentScooter = scooters[effectiveIndex];
+  const currentScooter = scooters[currentIndex];
   
   // Safety check: if scooter_model is null, show fallback
   if (!currentScooter?.scooter_model) {
@@ -183,7 +162,6 @@ const GarageScooterCarousel = ({
             modelName={model.name}
             nickname={currentScooter.nickname}
             variant="desktop"
-            brandColors={getBrandColors(brandName)}
           />
         </div>
 
@@ -282,10 +260,13 @@ const GarageScooterCarousel = ({
           <VerticalScooterThumbnails
             scooters={scooters}
             selectedScooterId={currentScooter.id}
-            onScooterSelect={(scooter, index) => {
-              setInternalIndex(index);
-              setShowCustomPhoto(false);
-              onScooterChange?.(scooter, index);
+            onScooterSelect={(scooter) => {
+              const newIndex = scooters.findIndex(s => s.id === scooter.id);
+              if (newIndex !== -1) {
+                setCurrentIndex(newIndex);
+                setShowCustomPhoto(false);
+                onScooterChange?.(scooter);
+              }
             }}
           />
         </div>
@@ -311,13 +292,11 @@ const GarageScooterCarousel = ({
                     : "border-white/40 opacity-70"
                 )}
               >
-                <SafeImage
-                  src={image}
-                  alt={scooterModel.name}
-                  className="w-full h-full object-contain p-1"
-                  containerClassName="w-full h-full"
-                  fallback={<span className="text-2xl flex items-center justify-center h-full">🛴</span>}
-                />
+                {image ? (
+                  <img src={image} alt={scooterModel.name} className="w-full h-full object-contain p-1" />
+                ) : (
+                  <span className="text-2xl flex items-center justify-center h-full">🛴</span>
+                )}
                 {scooterModel.voltage && (
                   <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 text-[8px] px-1 py-0.5 bg-orange-100/90 text-orange-700 rounded">
                     {scooterModel.voltage}V

@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Pencil, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { getBrandColors, BrandColorConfig } from '@/contexts/ScooterContext';
 
 interface ScooterIdentityProps {
   brandName: string;
@@ -14,7 +13,6 @@ interface ScooterIdentityProps {
   editable?: boolean;
   garageItemId?: string;
   onNicknameChange?: (nickname: string) => void;
-  brandColors?: BrandColorConfig;
 }
 
 const ScooterIdentity = ({ 
@@ -26,11 +24,8 @@ const ScooterIdentity = ({
   variant = 'mobile',
   editable = false,
   garageItemId,
-  onNicknameChange,
-  brandColors
+  onNicknameChange
 }: ScooterIdentityProps) => {
-  // Dynamic brand colors for nickname styling
-  const colors = brandColors || getBrandColors(brandName);
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(nickname || '');
   const [showSuccess, setShowSuccess] = useState(false);
@@ -71,18 +66,11 @@ const ScooterIdentity = ({
 
   const NicknameDisplay = () => {
     if (!editable) {
-      // Non-editable: dynamic brand color display with glow
+      // Non-editable: simple display
       return nickname ? (
-        <motion.p 
-          key={brandName}
-          initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className={cn("text-sm italic font-light", colors.textClass)}
-          style={{ textShadow: `0 0 12px ${colors.glowColor}` }}
-        >
+        <p className="text-sm text-mineral/70 italic font-light">
           « {nickname} »
-        </motion.p>
+        </p>
       ) : null;
     }
 
@@ -107,14 +95,10 @@ const ScooterIdentity = ({
                 onBlur={handleSave}
                 onKeyDown={handleKeyDown}
                 placeholder="Donner un surnom..."
-                className={cn(
-                  "bg-transparent outline-none text-sm italic font-light",
-                  "text-center min-w-[120px] max-w-[200px] py-1 px-2 transition-colors duration-200",
-                  "border-b focus:border-opacity-100",
-                  colors.textClass,
-                  colors.borderClass
-                )}
-                style={{ textShadow: `0 0 8px ${colors.glowColor}` }}
+                className="bg-transparent border-b border-mineral/30 focus:border-mineral 
+                          outline-none text-sm text-carbon/70 italic font-light 
+                          text-center min-w-[120px] max-w-[200px] py-1 px-2
+                          transition-colors duration-200"
               />
             </motion.div>
           ) : (
@@ -125,12 +109,8 @@ const ScooterIdentity = ({
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.15 }}
               onClick={() => setIsEditing(true)}
-              className={cn(
-                "group flex items-center gap-1.5 text-sm italic font-light cursor-pointer py-1",
-                "hover:opacity-80 transition-all",
-                nickname ? colors.textClass : "text-mineral/40"
-              )}
-              style={{ textShadow: nickname ? `0 0 8px ${colors.glowColor}` : 'none' }}
+              className="group flex items-center gap-1.5 text-sm text-mineral/70 italic font-light 
+                        hover:text-mineral transition-colors cursor-pointer py-1"
             >
               {nickname ? (
                 <>
@@ -139,7 +119,7 @@ const ScooterIdentity = ({
                 </>
               ) : (
                 <>
-                  <span className="not-italic">Ajouter un surnom</span>
+                  <span className="text-mineral/40 not-italic">Ajouter un surnom</span>
                   <Pencil className="w-3 h-3 opacity-50" />
                 </>
               )}
@@ -182,16 +162,9 @@ const ScooterIdentity = ({
           {editable ? (
             <NicknameDisplay />
           ) : nickname && (
-            <motion.span 
-              key={brandName}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className={cn("font-light text-sm italic", colors.textClass)}
-              style={{ textShadow: `0 0 8px ${colors.glowColor}` }}
-            >
+            <span className="text-mineral/60 font-light text-sm italic">
               « {nickname} »
-            </motion.span>
+            </span>
           )}
         </div>
       </div>

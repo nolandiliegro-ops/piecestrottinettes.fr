@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
@@ -21,40 +21,9 @@ const Login = () => {
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
   
-  const { signIn, signInWithGoogle, user, loading: authLoading } = useAuth();
+  const { signIn, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
-
-  // Rediriger automatiquement si déjà connecté
-  useEffect(() => {
-    console.log('[Login] Guard check - authLoading:', authLoading, 'user:', !!user);
-    
-    // ATTENDRE que le loading soit terminé avant toute décision
-    if (authLoading) {
-      console.log('[Login] ⏳ En attente de la fin du chargement...');
-      return;
-    }
-    
-    if (user) {
-      console.log('[Login] ✅ User connecté, redirection vers /garage');
-      console.log('[Login] User email:', user.email);
-      navigate('/garage', { replace: true });
-    } else {
-      console.log('[Login] 🔓 Aucun user, affichage du formulaire');
-    }
-  }, [user, authLoading, navigate]);
-
-  // Afficher un spinner pendant la vérification de session
-  if (authLoading) {
-    return (
-      <div className="min-h-screen bg-greige flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <Loader2 className="w-10 h-10 animate-spin text-garage" />
-          <p className="text-carbon/60 font-medium">Vérification de la session...</p>
-        </div>
-      </div>
-    );
-  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -95,38 +64,14 @@ const Login = () => {
   };
 
   const handleGoogleSignIn = async () => {
-    console.log('[Login] 🔵 Bouton Google cliqué');
-    console.log('[Login] Current URL:', window.location.href);
-    
     setIsGoogleLoading(true);
     const { error } = await signInWithGoogle();
     setIsGoogleLoading(false);
 
     if (error) {
-      console.error('[Login] ❌ Échec Google OAuth:', error);
-      
-      // Messages d'erreur localisés et informatifs
-      let errorTitle = "Erreur Google";
-      let errorMessage = error.message;
-      
-      if (error.message.includes('popup')) {
-        errorMessage = "Popup bloquée. Autorisez les popups pour ce site.";
-      } else if (error.message.includes('network')) {
-        errorMessage = "Erreur réseau. Vérifiez votre connexion.";
-      } else if (error.message.includes('redirect_uri_mismatch')) {
-        errorTitle = "Configuration incorrecte";
-        errorMessage = "Erreur de configuration OAuth. Contactez l'administrateur.";
-      } else if (error.message.includes('invalid_client')) {
-        errorTitle = "Configuration incorrecte";
-        errorMessage = "Identifiants Google invalides. Contactez l'administrateur.";
-      } else if (error.message.includes('access_denied')) {
-        errorTitle = "Accès refusé";
-        errorMessage = "Vous avez refusé l'accès ou votre compte n'est pas autorisé.";
-      }
-      
       toast({
-        title: errorTitle,
-        description: errorMessage,
+        title: "Erreur Google",
+        description: error.message,
         variant: "destructive",
       });
     }
@@ -241,14 +186,6 @@ const Login = () => {
                 {errors.password && (
                   <p className="text-sm text-destructive">{errors.password}</p>
                 )}
-                <div className="flex justify-end pt-1">
-                  <Link 
-                    to="/forgot-password"
-                    className="text-sm text-garage hover:text-garage/80 transition-colors"
-                  >
-                    Mot de passe oublié ?
-                  </Link>
-                </div>
               </div>
 
               <Button

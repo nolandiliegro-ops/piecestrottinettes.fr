@@ -1,11 +1,9 @@
 import { useState, useMemo, useEffect } from "react";
-import { RefreshCw } from "lucide-react";
 import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
 import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
 import CommandPanel from "./hero/CommandPanel";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
-import { Button } from "@/components/ui/button";
 
 interface HeroSectionProps {
   onActiveModelChange?: (slug: string | null, name: string | null) => void;
@@ -15,30 +13,12 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
-  const [loadingTooLong, setLoadingTooLong] = useState(false);
 
   // Fetch data from database
-  const { data: brands = [], isLoading: brandsLoading, error: brandsError } = useBrands();
-  const { data: scooterModels = [], isLoading: modelsLoading, error: modelsError } = useScooterModels(selectedBrand);
+  const { data: brands = [], isLoading: brandsLoading } = useBrands();
+  const { data: scooterModels = [], isLoading: modelsLoading } = useScooterModels(selectedBrand);
 
   const isLoading = brandsLoading || modelsLoading;
-  const hasError = brandsError || modelsError;
-
-  // ⏱️ Détection timeout 10 secondes - Affiche message si chargement trop long
-  useEffect(() => {
-    if (isLoading) {
-      const timer = setTimeout(() => {
-        setLoadingTooLong(true);
-      }, 10000); // 10 secondes
-      return () => clearTimeout(timer);
-    } else {
-      setLoadingTooLong(false);
-    }
-  }, [isLoading]);
-
-  const handleForceRefresh = () => {
-    window.location.reload();
-  };
 
   // Transform database models to the format expected by carousel
   const transformedModels = useMemo(() => {
@@ -137,27 +117,8 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
             />
           </div>
 
-          <div className="order-2 lg:order-2 lg:col-span-6 flex flex-col items-center justify-center gap-3">
-            {/* ⚠️ Message d'erreur ou timeout */}
-            {(loadingTooLong || hasError) && (
-              <div className="bg-destructive/10 border border-destructive/30 text-destructive rounded-lg px-4 py-3 flex flex-col sm:flex-row items-center gap-3 text-sm animate-fade-in">
-                <span className="text-center sm:text-left">
-                  {hasError 
-                    ? "Erreur de connexion à la base de données."
-                    : "Problème de connexion détecté."}
-                </span>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  onClick={handleForceRefresh}
-                  className="border-destructive/50 text-destructive hover:bg-destructive/10 gap-2"
-                >
-                  <RefreshCw className="w-4 h-4" />
-                  Rafraîchir
-                </Button>
-              </div>
-            )}
-            
+          {/* MOBILE ORDER 2: Scooter Carousel (Image, Specs, Dots, Bridge) */}
+          <div className="order-2 lg:order-2 lg:col-span-6 flex items-center justify-center">
             {isLoading ? (
               <ScooterCarouselSkeleton />
             ) : (

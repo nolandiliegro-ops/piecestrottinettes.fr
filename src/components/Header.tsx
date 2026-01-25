@@ -1,11 +1,8 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, RefreshCw, AlertTriangle, Trash2 } from "lucide-react";
-import { useQueryClient } from "@tanstack/react-query";
-import { toast } from "sonner";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import { supabase } from "@/integrations/supabase/client";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useUserGarage } from "@/hooks/useGarage";
@@ -26,7 +23,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const prevCountRef = useRef(0);
-  const queryClient = useQueryClient();
   
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
@@ -66,59 +62,6 @@ const Header = () => {
     await signOut();
     clearSelection(); // Clear selected scooter on logout
     navigate('/');
-  };
-
-  // 🚨 DÉCONNEXION D'URGENCE - Utilise supabase directement, bypass le contexte
-  const handleEmergencySignOut = async () => {
-    console.log('🚨 EMERGENCY SIGN OUT - Bypassing AuthContext');
-    try {
-      await supabase.auth.signOut();
-      clearSelection();
-      toast.success('Déconnexion réussie');
-      window.location.href = '/'; // Hard redirect, pas de navigate
-    } catch (error) {
-      console.error('🚨 Emergency signout error:', error);
-      // Force redirect même si erreur
-      window.location.href = '/';
-    }
-  };
-
-  // 🚨 BOUTON DE SECOURS - Force le rechargement du catalogue + hard reload
-  const handleForceRefresh = () => {
-    console.log('🚨 CATALOGUE FORCE REFRESH: clearing cache + hard reload');
-    queryClient.clear();
-    queryClient.invalidateQueries();
-    toast.success('Rechargement en cours...');
-    // Hard reload pour garantir un état propre
-    setTimeout(() => window.location.reload(), 500);
-  };
-
-  // 🧹 NETTOYAGE COMPLET DU CACHE - Vide tout et recharge
-  const handleFullCacheClear = async () => {
-    console.log('🧹 FULL CACHE CLEAR: React Query + localStorage + sessionStorage + caches');
-    
-    // 1. Vider React Query
-    queryClient.clear();
-    
-    // 2. Vider tout le storage local
-    localStorage.clear();
-    sessionStorage.clear();
-    
-    // 3. Vider les caches ServiceWorker si présents
-    if ('caches' in window) {
-      try {
-        const cacheNames = await caches.keys();
-        await Promise.all(cacheNames.map(name => caches.delete(name)));
-        console.log('🧹 ServiceWorker caches cleared:', cacheNames.length);
-      } catch (e) {
-        console.warn('🧹 Could not clear SW caches:', e);
-      }
-    }
-    
-    toast.success('Cache nettoyé, rechargement...');
-    
-    // 4. Hard reload
-    setTimeout(() => window.location.reload(), 300);
   };
 
   // Check if user has scooters in garage
@@ -173,7 +116,7 @@ const Header = () => {
                   "text-xs font-medium max-w-[70px] truncate",
                   selectedBrandColors.textClass
                 )}>
-                  {selectedScooter.nickname || selectedScooter.modelName || selectedScooter.name}
+                  {selectedScooter.name}
                 </span>
                 {compatibleCount > 0 && (
                   <span 
@@ -192,7 +135,7 @@ const Header = () => {
                 <Button 
                   variant="outline" 
                   className={cn(
-                    "hidden md:flex items-center gap-2 rounded-full px-4 h-auto min-h-10 py-2",
+                    "hidden md:flex items-center gap-2 rounded-full px-4 h-10",
                     "bg-white/70 backdrop-blur-xl border-[0.5px]",
                     "hover:bg-white/90 transition-all duration-300",
                     selectedScooter 
@@ -204,44 +147,16 @@ const Header = () => {
                   } : undefined}
                 >
                   <Bike className={cn(
-                    "w-4 h-4 transition-colors flex-shrink-0",
+                    "w-4 h-4 transition-colors",
                     selectedScooter ? selectedBrandColors.textClass : "text-muted-foreground"
                   )} />
-                  
-                  {/* Premium 3-Line Display when scooter selected */}
-                  {selectedScooter ? (
-                    <div className="flex flex-col items-start leading-tight max-w-[160px]">
-                      {/* Line 1: MARQUE - micro-caps */}
-                      <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-medium">
-                        {selectedScooter.brandName}
-                      </span>
-                      {/* Line 2: Modèle - Bold with brand color */}
-                      <span className={cn(
-                        "text-sm font-bold truncate w-full",
-                        selectedBrandColors.textClass
-                      )}>
-                        {selectedScooter.modelName || selectedScooter.name}
-                      </span>
-                      {/* Line 3: « Surnom » - Italic with glow */}
-                      {selectedScooter.nickname && (
-                        <span 
-                          className="text-xs italic truncate w-full"
-                          style={{ 
-                            color: selectedBrandColors.accent,
-                            textShadow: `0 0 8px ${selectedBrandColors.glowColor}`
-                          }}
-                        >
-                          « {selectedScooter.nickname} »
-                        </span>
-                      )}
-                    </div>
-                  ) : (
-                    <span className="text-sm font-medium text-muted-foreground">
-                      Ma Trottinette
-                    </span>
-                  )}
-                  
-                  <ChevronDown className="w-3 h-3 text-muted-foreground flex-shrink-0" />
+                  <span className={cn(
+                    "text-sm font-medium max-w-[140px] truncate transition-colors",
+                    selectedScooter && selectedBrandColors.textClass
+                  )}>
+                    {selectedScooter ? selectedScooter.name : "Ma Trottinette"}
+                  </span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent 
@@ -335,10 +250,6 @@ const Header = () => {
                             slug: scooterModel.slug,
                             brandName: brandName,
                             imageUrl: garageItem.custom_photo_url || scooterModel.image_url,
-                            // Enhanced fields for sync
-                            modelName: scooterModel.name,
-                            nickname: garageItem.nickname,
-                            garageItemId: garageItem.id,
                           })}
                           className={cn(
                             "flex items-center gap-3 py-3 px-3 cursor-pointer",
@@ -457,34 +368,11 @@ const Header = () => {
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem 
-                    onClick={handleForceRefresh}
-                    className="flex items-center gap-2 cursor-pointer text-amber-600"
-                  >
-                    <RefreshCw className="w-4 h-4" />
-                    Forcer le rechargement
-                  </DropdownMenuItem>
-                  <DropdownMenuItem 
-                    onClick={handleFullCacheClear}
-                    className="flex items-center gap-2 cursor-pointer text-orange-600"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                    Nettoyage complet du cache
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem 
                     onClick={handleSignOut}
                     className="flex items-center gap-2 cursor-pointer text-garage"
                   >
                     <LogOut className="w-4 h-4" />
                     Déconnexion
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem 
-                    onClick={handleEmergencySignOut}
-                    className="flex items-center gap-2 cursor-pointer text-destructive font-medium"
-                  >
-                    <AlertTriangle className="w-4 h-4" />
-                    Déconnexion d'urgence
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

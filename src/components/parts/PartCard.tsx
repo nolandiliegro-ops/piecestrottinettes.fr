@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Gauge, ShoppingCart, Trophy, Check } from "lucide-react";
-import { SafeImage } from "@/components/ui/SafeImage";
 import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import { CompatiblePart } from "@/hooks/useScooterData";
@@ -83,13 +82,17 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
     toast.success(
       <div className="flex items-center gap-3">
-        <SafeImage
-          src={part.image_url}
-          alt={part.name}
-          className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
-          containerClassName="w-10 h-10 rounded-lg bg-greige"
-          fallback={<span className="text-xl">🔧</span>}
-        />
+        {part.image_url ? (
+          <img 
+            src={part.image_url} 
+            alt={part.name}
+            className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
+          />
+        ) : (
+          <div className="w-10 h-10 rounded-lg bg-greige flex items-center justify-center">
+            🔧
+          </div>
+        )}
         <div>
           <p className="font-medium text-carbon text-sm">{part.name}</p>
           <p className="text-xs text-muted-foreground">Ajouté au panier</p>
@@ -204,13 +207,15 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           </motion.div>
         )}
 
-        <SafeImage
-          src={part.image_url}
-          alt={part.name}
-          className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
-          containerClassName="w-full h-full"
-          fallback={<div className="text-4xl opacity-30">🔧</div>}
-        />
+        {part.image_url ? (
+          <img 
+            src={part.image_url} 
+            alt={part.name}
+            className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+          />
+        ) : (
+          <div className="text-4xl opacity-30">🔧</div>
+        )}
         
         {/* Subtle Hover Effect */}
         <div className="absolute inset-0 bg-gradient-to-t from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

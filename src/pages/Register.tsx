@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
@@ -33,40 +33,9 @@ const Register = () => {
     confirmPassword?: string;
   }>({});
   
-  const { signUp, signInWithGoogle, user, loading: authLoading } = useAuth();
+  const { signUp, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
-
-  // Rediriger automatiquement si déjà connecté
-  useEffect(() => {
-    console.log('[Register] Guard check - authLoading:', authLoading, 'user:', !!user);
-    
-    // ATTENDRE que le loading soit terminé avant toute décision
-    if (authLoading) {
-      console.log('[Register] ⏳ En attente de la fin du chargement...');
-      return;
-    }
-    
-    if (user) {
-      console.log('[Register] ✅ User connecté, redirection vers /garage');
-      console.log('[Register] User email:', user.email);
-      navigate('/garage', { replace: true });
-    } else {
-      console.log('[Register] 🔓 Aucun user, affichage du formulaire');
-    }
-  }, [user, authLoading, navigate]);
-
-  // Afficher un spinner pendant la vérification de session
-  if (authLoading) {
-    return (
-      <div className="min-h-screen bg-greige flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <Loader2 className="w-10 h-10 animate-spin text-garage" />
-          <p className="text-carbon/60 font-medium">Vérification de la session...</p>
-        </div>
-      </div>
-    );
-  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -113,38 +82,14 @@ const Register = () => {
   };
 
   const handleGoogleSignIn = async () => {
-    console.log('[Register] 🔵 Bouton Google cliqué');
-    console.log('[Register] Current URL:', window.location.href);
-    
     setIsGoogleLoading(true);
     const { error } = await signInWithGoogle();
     setIsGoogleLoading(false);
 
     if (error) {
-      console.error('[Register] ❌ Échec Google OAuth:', error);
-      
-      // Messages d'erreur localisés et informatifs
-      let errorTitle = "Erreur Google";
-      let errorMessage = error.message;
-      
-      if (error.message.includes('popup')) {
-        errorMessage = "Popup bloquée. Autorisez les popups pour ce site.";
-      } else if (error.message.includes('network')) {
-        errorMessage = "Erreur réseau. Vérifiez votre connexion.";
-      } else if (error.message.includes('redirect_uri_mismatch')) {
-        errorTitle = "Configuration incorrecte";
-        errorMessage = "Erreur de configuration OAuth. Contactez l'administrateur.";
-      } else if (error.message.includes('invalid_client')) {
-        errorTitle = "Configuration incorrecte";
-        errorMessage = "Identifiants Google invalides. Contactez l'administrateur.";
-      } else if (error.message.includes('access_denied')) {
-        errorTitle = "Accès refusé";
-        errorMessage = "Vous avez refusé l'accès ou votre compte n'est pas autorisé.";
-      }
-      
       toast({
-        title: errorTitle,
-        description: errorMessage,
+        title: "Erreur Google",
+        description: error.message,
         variant: "destructive",
       });
     }
