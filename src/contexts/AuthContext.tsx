@@ -86,22 +86,20 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           console.log('[Auth] User email:', session.user.email);
         console.log('[Auth] Provider:', session.user.app_metadata?.provider);
           
-          // 🔄 NETTOYAGE COMPLET + INVALIDATION CACHE CATALOGUE - Se déclenche sur SIGNED_IN et INITIAL_SESSION
+          // 🔄 INVALIDATION CACHE CATALOGUE - Se déclenche sur SIGNED_IN et INITIAL_SESSION
           if ((event === 'SIGNED_IN' || event === 'INITIAL_SESSION') && session?.user) {
-            console.log(`[Auth] 🧹 FULL CACHE CLEAR avant chargement (event=${event})`);
+            console.log(`[Auth] 🔄 Invalidation catalogue (event=${event}, user=${session.user.email})`);
             
-            // CLEAR COMPLET du cache React Query pour éviter les états corrompus
-            queryClient.clear();
-            
-            // Ensuite invalider pour forcer le refetch
-            console.log(`[Auth] 🔄 Invalidation catalogue (user=${session.user.email})`);
+            // Invalider les queries pour forcer le refetch (sans clear() qui supprime tout)
             queryClient.invalidateQueries({ queryKey: ['brands'] });
             queryClient.invalidateQueries({ queryKey: ['categories'] });
             queryClient.invalidateQueries({ queryKey: ['scooter_models'] });
             queryClient.invalidateQueries({ queryKey: ['all_parts'] });
             queryClient.invalidateQueries({ queryKey: ['compatible_parts'] });
             queryClient.invalidateQueries({ queryKey: ['parent-categories'] });
-            console.log('[Auth] ✅ Cache nettoyé + invalidé - refetch forcé');
+            queryClient.invalidateQueries({ queryKey: ['user_scooters'] });
+            queryClient.invalidateQueries({ queryKey: ['garage'] });
+            console.log('[Auth] ✅ Cache invalidé - refetch forcé');
           }
           
           // 🚀 HARD REDIRECT GOOGLE OAUTH - Contourne le router React
