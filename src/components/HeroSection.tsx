@@ -102,30 +102,15 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
           
           {/* HOOK EN POLE POSITION - Mobile Only */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="order-1 lg:hidden text-center py-3"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="order-1 lg:hidden text-center py-4 px-4"
           >
-            {/* Lignes nobles avec symbole central */}
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <div className="h-px w-10 bg-gradient-to-r from-transparent via-mineral/40 to-mineral/40" />
-              <span className="text-mineral/50 text-[10px]">✦</span>
-              <div className="h-px w-10 bg-gradient-to-l from-transparent via-mineral/40 to-mineral/40" />
-            </div>
-            
-            {/* Hook Text */}
-            <p className="font-display uppercase tracking-[0.3em] text-[10px] text-mineral/80 leading-relaxed px-6">
+            <p className="font-display uppercase tracking-[0.15em] text-sm text-carbon/90 leading-snug">
               Ne perdez plus de temps<br />
-              avec des pièces incompatibles
+              <span className="text-mineral-dark font-bold">avec des pièces incompatibles</span>
             </p>
-            
-            {/* Ligne noble inférieure */}
-            <div className="flex items-center justify-center gap-3 mt-2">
-              <div className="h-px w-10 bg-gradient-to-r from-transparent via-mineral/40 to-mineral/40" />
-              <span className="text-mineral/50 text-[10px]">✦</span>
-              <div className="h-px w-10 bg-gradient-to-l from-transparent via-mineral/40 to-mineral/40" />
-            </div>
           </motion.div>
 
           {/* LEFT (col-span-3) - Slogan ROULE RÉPARE DURE - Desktop only */}
