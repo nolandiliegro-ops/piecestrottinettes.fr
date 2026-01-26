@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { motion } from "framer-motion";
 import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
 import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
@@ -94,18 +95,46 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   };
 
   return (
-    <section className="hero-studio-bg relative py-3 lg:py-6 pb-16 lg:pb-6 flex flex-col overflow-hidden lg:max-h-[85vh] lg:min-h-[70vh]">
+    <section className="hero-studio-bg relative py-2 lg:py-6 pb-16 lg:pb-6 flex flex-col overflow-hidden lg:max-h-[85vh] lg:min-h-[70vh]">
       <div className="container mx-auto px-4 lg:px-8 flex-1">
         {/* Mobile: Flex Column | Desktop: 12-Column Grid */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-6 lg:items-center h-full">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-2 lg:gap-6 lg:items-center h-full">
           
+          {/* HOOK EN POLE POSITION - Mobile Only */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="order-1 lg:hidden text-center py-3"
+          >
+            {/* Lignes nobles avec symbole central */}
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <div className="h-px w-10 bg-gradient-to-r from-transparent via-mineral/40 to-mineral/40" />
+              <span className="text-mineral/50 text-[10px]">✦</span>
+              <div className="h-px w-10 bg-gradient-to-l from-transparent via-mineral/40 to-mineral/40" />
+            </div>
+            
+            {/* Hook Text */}
+            <p className="font-display uppercase tracking-[0.3em] text-[10px] text-mineral/80 leading-relaxed px-6">
+              Ne perdez plus de temps<br />
+              avec des pièces incompatibles
+            </p>
+            
+            {/* Ligne noble inférieure */}
+            <div className="flex items-center justify-center gap-3 mt-2">
+              <div className="h-px w-10 bg-gradient-to-r from-transparent via-mineral/40 to-mineral/40" />
+              <span className="text-mineral/50 text-[10px]">✦</span>
+              <div className="h-px w-10 bg-gradient-to-l from-transparent via-mineral/40 to-mineral/40" />
+            </div>
+          </motion.div>
+
           {/* LEFT (col-span-3) - Slogan ROULE RÉPARE DURE - Desktop only */}
           <div className="hidden lg:flex lg:order-1 lg:col-span-3">
             <HeroBranding />
           </div>
 
-          {/* MOBILE ORDER 1: Model Info (Name, Brand, Parts count) */}
-          <div className="order-1 lg:order-3 lg:col-span-3">
+          {/* MOBILE ORDER 2: Model Info (Name, Brand, Parts count) */}
+          <div className="order-2 lg:order-3 lg:col-span-3">
             <CommandPanel
               brands={transformedBrands}
               selectedBrand={selectedBrand}
@@ -117,8 +146,8 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
             />
           </div>
 
-          {/* MOBILE ORDER 2: Scooter Carousel (Image, Specs, Dots, Bridge) */}
-          <div className="order-2 lg:order-2 lg:col-span-6 flex items-center justify-center">
+          {/* MOBILE ORDER 3: Scooter Carousel (Image, Specs, Dots, Bridge) */}
+          <div className="order-3 lg:order-2 lg:col-span-6 flex items-center justify-center">
             {isLoading ? (
               <ScooterCarouselSkeleton />
             ) : (

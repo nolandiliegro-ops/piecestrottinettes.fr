@@ -81,7 +81,7 @@ const CommandPanel = ({
   const activeBrandColors = getBrandColorClasses(activeModel?.brandId);
 
   return (
-    <div className="flex flex-col justify-start h-full space-y-3 lg:space-y-4">
+    <div className="flex flex-col justify-start h-full space-y-2 lg:space-y-4">
       {/* FIRST: Active Model Info - Priority placement */}
       {activeModel && (
         <motion.div 
@@ -105,7 +105,7 @@ const CommandPanel = ({
 
           {/* Model Name - Reduced on mobile */}
           <motion.h3 
-            className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-carbon mb-2 lg:mb-3 tracking-tighter leading-none uppercase"
+            className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-carbon mb-1 lg:mb-3 tracking-tighter leading-none uppercase"
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
