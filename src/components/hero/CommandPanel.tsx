@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Search, Scan, Home } from "lucide-react";
+import { Search, Scan, Home, Package, ArrowDown } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { Brand, ScooterModel } from "@/data/scooterData";
@@ -82,6 +82,40 @@ const CommandPanel = ({
 
   return (
     <div className="flex flex-col justify-start h-full space-y-3 lg:space-y-4">
+      
+      {/* MOBILE ONBOARDING MESSAGE - Explains the concept */}
+      <motion.div 
+        className="lg:hidden text-center px-2 mb-2"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          <span className="font-semibold text-carbon">1.</span> Identifiez votre trottinette ci-dessous
+          <br />
+          <span className="font-semibold text-carbon">2.</span> Découvrez les <span className="text-mineral font-medium">pièces compatibles</span>
+        </p>
+        
+        {/* OR - View All Parts Button */}
+        <div className="flex items-center justify-center gap-3 mt-3">
+          <div className="h-px w-12 bg-mineral/20" />
+          <span className="text-xs text-muted-foreground uppercase tracking-wider">ou</span>
+          <div className="h-px w-12 bg-mineral/20" />
+        </div>
+        
+        <motion.button
+          onClick={() => navigate('/catalogue')}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full 
+                     bg-mineral/10 border border-mineral/30 
+                     hover:bg-mineral/20 transition-all"
+        >
+          <Package className="w-4 h-4 text-mineral" />
+          <span className="text-sm font-medium text-mineral">Voir toutes les pièces</span>
+        </motion.button>
+      </motion.div>
+      
       {/* FIRST: Active Model Info - Priority placement */}
       {activeModel && (
         <motion.div 
