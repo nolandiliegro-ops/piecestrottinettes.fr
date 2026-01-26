@@ -42,13 +42,14 @@ const Index = () => {
         {/* 2. Expert Journey Section - Mobile Only */}
         <ExpertJourneySection />
 
-        {/* 3. Compatible Parts Section - avec padding-top pour le bridge */}
+        {/* 3. Compatible Parts Section - Scroll Reveal */}
         <motion.section
           id="compatible-parts"
           className="pt-8 lg:pt-16 pb-8 lg:pb-12 scroll-mt-20"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <CompatiblePartsSection 
             activeModelSlug={activeModelSlug}

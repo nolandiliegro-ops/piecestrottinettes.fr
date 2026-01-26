@@ -113,6 +113,8 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       initial={{ opacity: 0, y: 20, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -10, scale: 0.95 }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       transition={{
         duration: 0.4,
         delay: index * 0.08,
@@ -122,7 +124,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         "group relative rounded-xl p-5 transition-all duration-300 cursor-pointer",
         "bg-white/80 backdrop-blur-sm",
         "border border-carbon/10",
-        "hover:scale-[1.01] hover:shadow-lg",
+        "hover:shadow-xl",
         "hover:border-mineral/40",
         className
       )}

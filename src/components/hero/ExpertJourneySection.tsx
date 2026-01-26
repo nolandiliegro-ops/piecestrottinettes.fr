@@ -115,11 +115,12 @@ const ExpertJourneySection = () => {
           Scanner ma Trottinette
         </motion.button>
 
-        {/* CTA Secondary - Catalogue */}
+        {/* CTA Secondary - Catalogue avec Scroll Smooth */}
         <motion.button
           onClick={() => {
             triggerHaptic();
-            navigate('/catalogue');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => navigate('/catalogue'), 300);
           }}
           whileTap={{ scale: 0.98 }}
           className="w-full mt-3 py-2 text-sm text-mineral hover:text-carbon transition-colors underline-offset-4 hover:underline"

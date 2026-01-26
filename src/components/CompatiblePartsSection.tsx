@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, ShieldCheck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -21,7 +20,8 @@ const CompatiblePartsSection = ({
   const { data: totalCount = 0 } = useCompatiblePartsCount(activeModelSlug);
 
   const handleViewAll = () => {
-    navigate("/catalogue");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => navigate("/catalogue"), 300);
   };
 
   if (!activeModelSlug) {
@@ -47,19 +47,45 @@ const CompatiblePartsSection = ({
 
   return (
     <div className="container mx-auto px-4 lg:px-8">
-      {/* Header */}
+      {/* Header - Dynamic Call to Value */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
         className="text-center mb-8 lg:mb-12"
       >
-        <h2 className="font-display text-3xl lg:text-4xl text-carbon mb-2">
-          PIÈCES COMPATIBLES
-        </h2>
+        {/* Titre Dynamique avec Badge */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-3 mb-3">
+          <h2 className="font-display text-2xl lg:text-4xl text-carbon">
+            {totalCount > 0 ? (
+              <>
+                <span className="text-mineral">{totalCount}</span> PIÈCES CERTIFIÉES
+              </>
+            ) : (
+              "PIÈCES COMPATIBLES"
+            )}
+          </h2>
+          
+          {/* Badge 100% COMPATIBLE */}
+          {activeModelName && totalCount > 0 && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mineral/15 border border-mineral/30"
+            >
+              <ShieldCheck className="w-4 h-4 text-mineral" />
+              <span className="text-xs font-semibold text-mineral tracking-wide uppercase">
+                100% Compatible
+              </span>
+            </motion.div>
+          )}
+        </div>
+
+        {/* Sous-titre Personnalisé */}
         {activeModelName && (
-          <p className="text-sm lg:text-base text-muted-foreground">
-            Sélection pour votre <span className="text-mineral font-medium">{activeModelName}</span>
+          <p className="text-sm lg:text-base text-muted-foreground max-w-md mx-auto">
+            Pour votre <span className="text-mineral font-medium">{activeModelName}</span>
           </p>
         )}
       </motion.div>
