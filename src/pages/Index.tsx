@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import ExpertJourneySection from "@/components/hero/ExpertJourneySection";
 import CompatiblePartsSection from "@/components/CompatiblePartsSection";
 import FavoritesSection from "@/components/home/FavoritesSection";
 
@@ -38,16 +39,19 @@ const Index = () => {
           <HeroSection onActiveModelChange={handleActiveModelChange} />
         </motion.section>
 
-        {/* 2. Compatible Parts Section - avec padding-top pour le bridge */}
+        {/* 2. Expert Journey Section - Mobile Only */}
+        <ExpertJourneySection />
+
+        {/* 3. Compatible Parts Section - avec padding-top pour le bridge */}
         <motion.section
           id="compatible-parts"
-          className="pt-12 lg:pt-16 pb-8 lg:pb-12 scroll-mt-20"
+          className="pt-8 lg:pt-16 pb-8 lg:pb-12 scroll-mt-20"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
         >
           <CompatiblePartsSection 
-            activeModelSlug={activeModelSlug} 
+            activeModelSlug={activeModelSlug}
             activeModelName={activeModelName || undefined}
           />
         </motion.section>

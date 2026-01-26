@@ -94,7 +94,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   };
 
   return (
-    <section className="hero-studio-bg relative py-4 lg:py-6 flex flex-col overflow-hidden min-h-[auto] lg:min-h-[70vh] lg:max-h-[85vh]">
+    <section className="hero-studio-bg relative py-3 lg:py-6 flex flex-col overflow-hidden max-h-[45vh] lg:max-h-[85vh] lg:min-h-[70vh]">
       <div className="container mx-auto px-4 lg:px-8 flex-1">
         {/* Mobile: Flex Column | Desktop: 12-Column Grid */}
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-6 lg:items-center h-full">

@@ -196,31 +196,25 @@ const CommandPanel = ({
         </div>
       </div>
 
-      {/* SCANNER & GARAGE Buttons - Stacked full-width on mobile */}
-      <div className="animate-fade-in pt-2 lg:pt-4 flex flex-col w-full gap-2 lg:gap-0 lg:block" style={{ animationDelay: "0.3s" }}>
+      {/* SCANNER & GARAGE Buttons - Desktop Only (moved to ExpertJourneySection on mobile) */}
+      <div className="hidden lg:block animate-fade-in pt-4" style={{ animationDelay: "0.3s" }}>
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="flex items-center justify-center lg:justify-start gap-2 lg:gap-3 py-3 px-4 lg:px-0 
-                     w-full lg:w-auto
-                     bg-carbon lg:bg-transparent text-white lg:text-carbon
-                     rounded-full lg:rounded-none
-                     group cursor-pointer"
+          className="flex items-center justify-start gap-3 px-0 group cursor-pointer"
         >
-          {/* Scan icon */}
-          <Scan className="w-5 h-5 lg:w-8 lg:h-8 text-white lg:text-carbon group-hover:text-mineral transition-colors duration-300" />
-          <span className="font-display text-sm lg:text-xl text-white lg:text-carbon tracking-wide group-hover:text-mineral transition-colors duration-300 uppercase">
+          <Scan className="w-8 h-8 text-carbon group-hover:text-mineral transition-colors duration-300" />
+          <span className="font-display text-xl text-carbon tracking-wide group-hover:text-mineral transition-colors duration-300 uppercase">
             Scanner ma Trottinette
           </span>
         </motion.button>
         
-        {/* Mon Garage - Full width on mobile */}
+        {/* Mon Garage */}
         <motion.button
           onClick={() => navigate(user ? '/garage' : '/login')}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-0 lg:mt-4 flex items-center justify-center lg:justify-start gap-2 px-5 py-3 lg:py-2.5 rounded-full 
-                     w-full lg:w-auto
+          className="mt-4 flex items-center justify-start gap-2 px-5 py-2.5 rounded-full 
                      bg-garage/10 border border-garage/50 
                      hover:bg-garage hover:border-garage
                      active:bg-garage/80
@@ -233,7 +227,7 @@ const CommandPanel = ({
           ) : (
             <Home className="w-4 h-4 text-garage group-hover:text-white transition-colors" />
           )}
-          <span className="font-display text-sm lg:text-base tracking-wide text-garage group-hover:text-white transition-colors uppercase">
+          <span className="font-display text-base tracking-wide text-garage group-hover:text-white transition-colors uppercase">
             Mon Garage
           </span>
         </motion.button>
