@@ -402,8 +402,8 @@ const ScooterCarousel = ({
                     transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
                   }}
                 >
-                  {/* Scooter Container - Constrained height on mobile */}
-                  <div className="relative w-full max-w-[280px] lg:max-w-[950px] mx-auto h-[280px] lg:h-[680px] xl:h-[750px] flex items-center justify-center">
+                    {/* Scooter Container - Constrained height on mobile */}
+                    <div className="relative w-full max-w-[300px] lg:max-w-[950px] mx-auto h-[320px] lg:h-[680px] xl:h-[750px] flex items-center justify-center">
                     {/* Favorite & Garage Buttons */}
                     <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
                       <FavoriteButton
@@ -453,6 +453,10 @@ const ScooterCarousel = ({
                           src={imageSrc}
                           alt={`${model.brand} ${model.name}`}
                           className="relative w-full h-[80%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+                          style={{
+                            maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
+                            WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)'
+                          }}
                         />
                         
                         {/* Mirror Reflection Effect */}

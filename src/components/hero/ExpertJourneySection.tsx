@@ -50,7 +50,7 @@ const ExpertJourneySection = () => {
   };
 
   return (
-    <section className="lg:hidden px-4 py-6">
+    <section className="lg:hidden px-4 pt-0 pb-6 -mt-12 relative z-10">
       {/* Accroche UX */}
       <motion.p
         initial={{ opacity: 0, y: -10 }}
@@ -66,7 +66,7 @@ const ExpertJourneySection = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="bg-white/60 backdrop-blur-xl rounded-2xl p-4 border-[0.5px] border-mineral/10 shadow-sm"
+        className="bg-white/80 backdrop-blur-2xl rounded-3xl p-5 border-[0.5px] border-white/50 shadow-[0_-8px_30px_rgba(0,0,0,0.08),0_4px_20px_rgba(0,0,0,0.05)]"
       >
         {/* 3 Steps Grid */}
         <div className="grid grid-cols-3 gap-3 mb-5">
