@@ -1,323 +1,373 @@
 
-# Section "SHOP BY CATEGORY" - Organic Luxe Bento Grid
+# Carrousel Premium "Pièces Certifiées" - Showcase Ultra-Design
 
-## Resume
+## Résumé
 
-Creation d'une nouvelle section "SHOP BY CATEGORY" sur la homepage avec un design "Organic Luxe" en grille Bento asymetrique. Cette section permet une navigation rapide vers les categories de pieces avec un rendu visuel haut de gamme.
+Transformation de la section "Pièces Certifiées" en carrousel horizontal premium avec effet de profondeur, 5 produits visibles sur desktop, card centrale en focus (scale 1.1), navigation élégante, et synchronisation avec le Hero scooter selector.
 
 ---
 
-## Fichiers a Creer / Modifier
+## Fichiers à Créer / Modifier
 
 | Fichier | Action |
 |---------|--------|
-| `src/components/home/ShopByCategorySection.tsx` | CREER - Nouveau composant section |
-| `src/components/home/CategoryBentoCard.tsx` | CREER - Card individuelle avec glassmorphism |
-| `src/hooks/useCategoryPartsCount.ts` | CREER - Hook pour compter les pieces par categorie |
-| `src/pages/Index.tsx` | MODIFIER - Ajouter la section apres CompatiblePartsSection |
+| `src/components/carousel/PremiumCarousel.tsx` | CRÉER - Composant carrousel réutilisable |
+| `src/components/carousel/PremiumProductCard.tsx` | CRÉER - Card produit premium pour carrousel |
+| `src/components/CompatiblePartsSection.tsx` | MODIFIER - Intégrer le nouveau carrousel |
 
 ---
 
-## Architecture de la Section
+## Architecture du Carrousel
 
 ```text
-+----------------------------------------------------------+
-|                    SHOP BY CATEGORY                       |
-|           Trouvez rapidement ce dont vous avez besoin     |
-+----------------------------------------------------------+
-|                                                           |
-|  +-------------------+  +-----------+  +-----------+     |
-|  |                   |  |           |  |           |     |
-|  |   PNEUS & FREINS  |  |  MOTEURS  |  | BATTERIES |     |
-|  |     127 pieces    |  | 45 pieces |  | 32 pieces |     |
-|  |      (GRANDE)     |  |           |  |           |     |
-|  +-------------------+  +-----------+  +-----------+     |
-|                                                           |
-|  +-----------+  +-------------------+  +-----------+     |
-|  |           |  |                   |  |           |     |
-|  |CONTROLEURS|  |     LUMIERES      |  |ACCESSOIRES|     |
-|  | 28 pieces |  |     89 pieces     |  | 56 pieces |     |
-|  |           |  |      (GRANDE)     |  |           |     |
-|  +-----------+  +-------------------+  +-----------+     |
-|                                                           |
-+----------------------------------------------------------+
++------------------------------------------------------------------+
+|              7 PIÈCES CERTIFIÉES    [100% Compatible]             |
+|                  Pour votre Xiaomi Mi Pro 2                       |
++------------------------------------------------------------------+
+|                                                                    |
+|  [←]  [Card] [Card] [ CARD FOCUS ] [Card] [Card]  [→]            |
+|         0.9   0.95     1.1 scale    0.95   0.9                    |
+|                                                                    |
+|                    • • • ● • • •                                   |
++------------------------------------------------------------------+
 ```
 
 ---
 
-## 1. Hook useCategoryPartsCount.ts
+## 1. PremiumCarousel.tsx - Composant Réutilisable
 
-Hook pour recuperer le nombre de pieces par categorie depuis Supabase :
+Hook Embla avec configuration premium :
 
 ```typescript
-import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
+const [emblaRef, emblaApi] = useEmblaCarousel({
+  loop: true,
+  align: "center",
+  slidesToScroll: 1,
+  containScroll: false, // Allow partial slides
+  dragFree: false,
+});
+```
 
-interface CategoryWithCount {
-  id: string;
-  name: string;
-  slug: string;
-  icon: string | null;
-  parts_count: number;
+**Props Interface** :
+
+```typescript
+interface PremiumCarouselProps {
+  children: React.ReactNode;
+  itemsCount: number;
+  onSlideChange?: (index: number) => void;
+  autoPlay?: boolean;
+  autoPlayInterval?: number;
+  className?: string;
 }
+```
 
-export const useCategoryPartsCount = () => {
-  return useQuery({
-    queryKey: ["category-parts-count"],
-    queryFn: async (): Promise<CategoryWithCount[]> => {
-      // Get parent categories with part counts
-      const { data, error } = await supabase
-        .from("categories")
-        .select(`
-          id,
-          name,
-          slug,
-          icon,
-          parts:parts(count)
-        `)
-        .is("parent_id", null)
-        .order("display_order");
+**Responsive Configuration** :
 
-      if (error) throw error;
+| Breakpoint | Cards Visibles | Card Width |
+|------------|----------------|------------|
+| Desktop (lg) | 5 | 20% viewport |
+| Tablet (md) | 3 | 33% viewport |
+| Mobile | 1.5 | 70% viewport |
 
-      return (data || []).map((cat) => ({
-        id: cat.id,
-        name: cat.name,
-        slug: cat.slug,
-        icon: cat.icon,
-        parts_count: cat.parts?.[0]?.count || 0,
-      }));
-    },
-  });
+**Navigation Arrows** :
+
+- Position : Absolue, centrée verticalement
+- Style : Glassmorphism circulaire (50x50px)
+- Background : `rgba(255,255,255,0.95)` + `backdrop-blur-sm`
+- Border : `1px solid rgba(147,181,161,0.3)`
+- Hover : `scale(1.1)` + glow Mineral Green
+- Icons : ChevronLeft / ChevronRight (Lucide)
+
+**Pagination Dots** :
+
+- Position : Centré, sous le carrousel (mt-8)
+- Active : `w-8 h-2` pill shape, `bg-mineral`
+- Inactive : `w-2 h-2` circle, `bg-mineral/30`
+- Transition : `0.3s ease-out`
+
+---
+
+## 2. PremiumProductCard.tsx - Card Showcase
+
+**Dimensions et Position** :
+
+```typescript
+// Scale dynamique basé sur la position
+const getScale = (distanceFromCenter: number) => {
+  if (distanceFromCenter === 0) return 1.1;  // Focus card
+  if (distanceFromCenter === 1) return 0.95;
+  return 0.9;
+};
+
+// Opacity parallax
+const getOpacity = (distanceFromCenter: number) => {
+  if (distanceFromCenter === 0) return 1;
+  if (distanceFromCenter === 1) return 0.85;
+  return 0.7;
 };
 ```
 
----
-
-## 2. CategoryBentoCard.tsx
-
-Card individuelle avec effet glassmorphism et interactions premium :
-
-**Props** :
-- `category`: Objet categorie avec id, name, slug, icon
-- `partsCount`: Nombre de pieces
-- `isLarge`: Boolean pour cards plus grandes
-- `imageUrl`: URL de l'image de fond (optionnelle)
-- `index`: Position pour animation stagger
-
-**Structure JSX** :
+**Styles de la Card** :
 
 ```typescript
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, margin: "-50px" }}
-  transition={{ duration: 0.5, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+style={{
+  background: "rgba(255, 255, 255, 0.9)",
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: "1px solid rgba(147, 181, 161, 0.2)",
+  borderRadius: "20px",
+  padding: "24px",
+  boxShadow: "0 8px 32px rgba(26, 26, 26, 0.08)",
+}}
+```
+
+**Image Container** :
+
+```typescript
+<motion.div 
+  className="relative w-[200px] h-[200px] mx-auto"
+  whileHover={{ 
+    scale: 1.05, 
+    rotate: 2,
+    transition: { duration: 0.4, ease: "easeOut" }
+  }}
 >
-  <Link to={`/catalogue?category=${category.slug}`}>
-    <motion.div
-      whileHover={{ 
-        scale: 1.02, 
-        y: -8,
-        transition: { duration: 0.4, ease: "easeOut" }
-      }}
-      whileTap={{ scale: 0.98 }}
-      className={cn(
-        "relative overflow-hidden cursor-pointer",
-        "rounded-[24px] border border-white/30",
-        "transition-all duration-400 ease-out",
-        isLarge ? "col-span-2 aspect-[2/1]" : "aspect-square"
-      )}
-      style={{
-        boxShadow: "0 8px 32px rgba(26, 26, 26, 0.08)",
-      }}
-    >
-      {/* Background Image with zoom on hover */}
-      <motion.div 
-        className="absolute inset-0"
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        {imageUrl ? (
-          <img src={imageUrl} className="w-full h-full object-cover" />
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-carbon/80 to-carbon/60" />
-        )}
-      </motion.div>
-
-      {/* Glassmorphism Overlay */}
-      <div 
-        className="absolute inset-0 flex flex-col justify-end p-6"
-        style={{
-          background: "linear-gradient(to top, rgba(245,243,240,0.9) 0%, rgba(245,243,240,0.7) 40%, transparent 100%)",
-          backdropFilter: "blur(15px)",
-          WebkitBackdropFilter: "blur(15px)",
-        }}
-      >
-        {/* Icon */}
-        <div className="mb-3">
-          <IconComponent className="w-8 h-8 text-mineral" />
-        </div>
-
-        {/* Category Name */}
-        <h3 
-          className="font-display text-2xl lg:text-3xl text-carbon uppercase"
-          style={{ fontWeight: 800, letterSpacing: "-0.02em" }}
-        >
-          {category.name}
-        </h3>
-
-        {/* Parts Count */}
-        <p className="text-sm text-muted-foreground font-medium mt-1">
-          {partsCount} pieces
-        </p>
-      </div>
-
-      {/* Hover Glow Border */}
-      <div className="absolute inset-0 rounded-[24px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-        style={{ boxShadow: "inset 0 0 0 2px rgba(147,181,161,0.5), 0 0 30px rgba(147,181,161,0.3)" }}
-      />
-    </motion.div>
-  </Link>
+  <img 
+    src={product.image_url} 
+    alt={product.name}
+    className="w-full h-full object-contain"
+    style={{ background: "transparent" }}
+  />
 </motion.div>
 ```
 
----
+**Informations Produit** :
 
-## 3. ShopByCategorySection.tsx
+| Élément | Style |
+|---------|-------|
+| Nom | `font-weight: 600`, `font-size: 14px`, `line-clamp-2` |
+| Prix | `font-size: 20px`, `font-weight: 700`, `color: #93B5A1` |
+| Badge COMPATIBLE | Glassmorphism, Mineral Green, pulse animation |
+| Stock | Badge avec dot animé |
 
-Composant section complete avec grille Bento :
-
-**Mapping des Categories** :
-
-| Position | Categorie | Taille | Grid Classes |
-|----------|-----------|--------|--------------|
-| 1 | Pneus (+ Freins) | Grande | `col-span-2 row-span-1` |
-| 2 | Moteurs | Normal | `col-span-1` |
-| 3 | Batteries | Normal | `col-span-1` |
-| 4 | Controleurs | Normal | `col-span-1` |
-| 5 | Lumieres | Grande | `col-span-2 row-span-1` |
-| 6 | Accessoires | Normal | `col-span-1` |
-
-**Structure de la Grille** :
+**Interactions Hover** :
 
 ```typescript
-<section className="py-16 lg:py-24 bg-greige">
-  <div className="container mx-auto px-4">
-    {/* Header */}
-    <motion.div className="text-center mb-12">
-      <h2 
-        className="font-display text-4xl md:text-5xl lg:text-6xl text-carbon uppercase"
-        style={{ fontWeight: 800, letterSpacing: "-0.02em" }}
-      >
-        SHOP BY CATEGORY
-      </h2>
-      <p className="text-muted-foreground mt-4 font-light">
-        Trouvez rapidement ce dont vous avez besoin
-      </p>
-    </motion.div>
-
-    {/* Bento Grid - Desktop 4 colonnes, Tablet 2, Mobile 1 */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
-      {/* Ligne 1 */}
-      <CategoryBentoCard category="Pneus & Freins" isLarge index={0} />
-      <CategoryBentoCard category="Moteurs" index={1} />
-      <CategoryBentoCard category="Batteries" index={2} />
-      
-      {/* Ligne 2 */}
-      <CategoryBentoCard category="Controleurs" index={3} />
-      <CategoryBentoCard category="Lumieres" isLarge index={4} />
-      <CategoryBentoCard category="Accessoires" index={5} />
-    </div>
-  </div>
-</section>
-```
-
-**Grille CSS responsive** :
-
-```text
-Desktop (lg:grid-cols-4):
-[  Pneus & Freins (span 2)  ] [ Moteurs ] [ Batteries ]
-[ Controleurs ] [  Lumieres (span 2)   ] [ Accessoires ]
-
-Tablet (md:grid-cols-2):
-[ Pneus & Freins (span 2) ]
-[ Moteurs ] [ Batteries ]
-[ Controleurs ] [ Lumieres (span 2) ]
-[ Accessoires ]
-
-Mobile (grid-cols-1):
-Chaque card en pleine largeur
-```
-
----
-
-## 4. Modifications Index.tsx
-
-Ajouter la section apres CompatiblePartsSection (ligne 63) :
-
-```typescript
-import ShopByCategorySection from "@/components/home/ShopByCategorySection";
-
-// Dans le JSX, apres </motion.section> de compatible-parts (ligne 63)
-{/* 4. Shop By Category Section */}
-<motion.section
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+<motion.div
+  whileHover={{ 
+    y: -8,
+    boxShadow: "0 16px 48px rgba(147, 181, 161, 0.25)"
+  }}
+  transition={{ duration: 0.4, ease: "easeOut" }}
 >
-  <ShopByCategorySection />
-</motion.section>
 ```
 
 ---
 
-## Resume des Interactions
+## 3. Modifications CompatiblePartsSection.tsx
 
-| Element | Hover | Transition |
-|---------|-------|------------|
-| Card entiere | `translateY(-8px)` + `scale(1.02)` + glow Mineral | 0.4s ease-out |
-| Image de fond | `scale(1.1)` zoom subtil | 0.6s ease-out |
-| Border | Glow Mineral Green apparait | 0.3s |
-| Grid load | Stagger fade-in 0.1s entre cards | whileInView |
+**Avant** : Grid 4 colonnes avec PartCard
+
+**Après** : PremiumCarousel avec PremiumProductCard
+
+**Changements Clés** :
+
+1. Importer les nouveaux composants
+2. Remplacer le grid par le carrousel
+3. Garder le header existant (titre dynamique + badge)
+4. Augmenter le limit de pièces (8 → 12 pour le carousel)
+5. Ajouter AnimatePresence pour les transitions modèle
+
+**Code Structure** :
+
+```typescript
+{isLoading ? (
+  <CarouselSkeleton />
+) : parts.length > 0 ? (
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={activeModelSlug}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <PremiumCarousel itemsCount={parts.length}>
+        {parts.map((part, index) => (
+          <PremiumProductCard 
+            key={part.id}
+            part={part}
+            index={index}
+            isCenter={/* calculated */}
+          />
+        ))}
+      </PremiumCarousel>
+    </motion.div>
+  </AnimatePresence>
+) : (
+  <EmptyState />
+)}
+```
 
 ---
 
-## Couleurs et Styles
+## 4. Animations et Transitions
 
-| Element | Valeur |
+**Transition entre slides** :
+
+```typescript
+transition: {
+  duration: 0.6,
+  ease: [0.25, 0.46, 0.45, 0.94] // easeOutQuart
+}
+```
+
+**Effet Parallax** :
+
+- Cards éloignées du centre se déplacent légèrement plus lentement
+- Créé par le scale différentiel + opacity
+
+**Fade-in au chargement** :
+
+```typescript
+initial={{ opacity: 0, scale: 0.95 }}
+animate={{ opacity: 1, scale: 1 }}
+transition={{ 
+  duration: 0.5, 
+  delay: index * 0.1,
+  ease: "easeOut"
+}}
+```
+
+**Transition Modèle** (quand scooter change) :
+
+```typescript
+// AnimatePresence avec mode="wait"
+exit: { opacity: 0, x: -50 }
+enter: { opacity: 0, x: 50 }
+```
+
+---
+
+## 5. Responsive Breakpoints
+
+**Desktop (≥1024px)** :
+
+- 5 cards visibles
+- Card width : ~220px
+- Gap : 24px
+- Navigation arrows : visibles en permanence
+- Dots : 12 max visibles
+
+**Tablet (≥768px, <1024px)** :
+
+- 3 cards visibles
+- Card width : ~240px
+- Gap : 16px
+- Navigation arrows : visibles
+- Dots : 8 max visibles
+
+**Mobile (<768px)** :
+
+- 1.5 cards visibles (suggère swipe)
+- Card width : 70vw
+- Gap : 16px
+- Navigation arrows : cachés ou petits
+- Swipe enabled
+- Dots : 6 max visibles
+
+---
+
+## 6. Swipe Mobile
+
+Configuration Embla pour mobile :
+
+```typescript
+const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
+const emblaOptions = {
+  loop: true,
+  align: "center",
+  dragFree: isMobile, // Free drag on mobile
+  containScroll: isMobile ? "trimSnaps" : false,
+};
+```
+
+Touch events :
+
+- `touchstart`, `touchmove`, `touchend` natifs via Embla
+- Threshold minimal pour activer le swipe
+
+---
+
+## 7. CSS Classes Utilitaires
+
+Ajouter dans `index.css` :
+
+```css
+/* Premium Carousel Styles */
+.premium-carousel-container {
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.premium-card-focus {
+  z-index: 10;
+  filter: drop-shadow(0 12px 24px rgba(147, 181, 161, 0.2));
+}
+
+.premium-card-side {
+  filter: grayscale(10%);
+}
+
+/* Carousel Navigation */
+.carousel-nav-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-nav-btn:hover {
+  box-shadow: 0 8px 30px rgba(147, 181, 161, 0.4);
+}
+```
+
+---
+
+## Résumé des Interactions
+
+| Élément | Action | Animation |
+|---------|--------|-----------|
+| Card centrale | Focus | `scale(1.1)`, full opacity, z-index élevé |
+| Cards latérales | Background | `scale(0.9-0.95)`, opacity réduite |
+| Hover card | Lift | `translateY(-8px)` + glow Mineral |
+| Image hover | Zoom+Rotate | `scale(1.05)` + `rotate(2deg)` |
+| Navigation | Click | Slide 0.6s ease-out |
+| Swipe mobile | Drag | Native Embla avec momentum |
+| Changement modèle | Transition | Fade-out/Fade-in avec AnimatePresence |
+| Dots | Click | Jump to slide avec transition |
+
+---
+
+## Couleurs et Tokens
+
+| Élément | Valeur |
 |---------|--------|
-| Section background | `#F5F3F0` (Greige) |
-| Card glassmorphism | `rgba(245,243,240,0.85)` + `blur(15px)` |
-| Border | `1px solid rgba(255,255,255,0.3)` |
-| Border-radius | `24px` |
-| Titre font-weight | `800` |
-| Titre letter-spacing | `-0.02em` |
-| Texte principal | `#1A1A1A` (Carbon Black) |
-| Accent hover | `#93B5A1` (Mineral Green) |
-| Shadow | `0 8px 32px rgba(26,26,26,0.08)` |
-| Hover shadow | `0 0 30px rgba(147,181,161,0.3)` |
+| Card background | `rgba(255, 255, 255, 0.9)` |
+| Card blur | `blur(20px)` |
+| Card border | `1px solid rgba(147, 181, 161, 0.2)` |
+| Card radius | `20px` |
+| Card shadow | `0 8px 32px rgba(26, 26, 26, 0.08)` |
+| Focus shadow | `0 16px 48px rgba(147, 181, 161, 0.25)` |
+| Price color | `#93B5A1` (Mineral Green) |
+| Transition duration | `0.6s` |
+| Transition easing | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
 
 ---
 
-## Icons par Categorie
+## Résultat Attendu
 
-| Categorie | Icon Lucide |
-|-----------|-------------|
-| Pneus & Freins | `Disc` ou `Octagon` |
-| Moteurs | `Cog` |
-| Batteries | `Battery` |
-| Controleurs | `Cpu` |
-| Lumieres | `Lightbulb` |
-| Accessoires | `Backpack` |
-
----
-
-## Resultat Attendu
-
-1. **Grille organique** : Layout asymetrique avec 2 grandes cards et 4 normales
-2. **Effet glassmorphism** : Overlay subtil avec blur pour lisibilite
-3. **Animations fluides** : Stagger fade-in au scroll + lift effect au hover
-4. **Navigation directe** : Click redirige vers `/catalogue?category=slug`
-5. **Responsive** : 4 cols desktop, 2 cols tablet, 1 col mobile
+1. **Showcase Premium** : Cards avec effet de profondeur, focus central visible
+2. **Navigation fluide** : Flèches élégantes + dots + swipe mobile
+3. **Connexion Hero** : Mise à jour automatique quand le scooter change
+4. **Responsive parfait** : 5 → 3 → 1.5 cards selon la taille d'écran
+5. **Micro-interactions** : Lift, glow, zoom image au hover
+6. **Performance** : Embla Carousel optimisé, animations GPU-accelerated
