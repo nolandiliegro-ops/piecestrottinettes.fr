@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ShoppingBag, MapPin, User, CreditCard, Loader2, Truck, MessageSquare, Gem } from "lucide-react";
+import { X, ShoppingBag, MapPin, User, CreditCard, Loader2, Truck, MessageSquare, Gem, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -281,19 +281,25 @@ const OrderConfirmationModal = ({
                   <Button
                     onClick={handleConfirm}
                     disabled={isSubmitting}
-                    className="w-full h-11 bg-mineral hover:bg-mineral-dark text-white font-display tracking-wide rounded-xl"
+                    className="w-full h-12 bg-mineral hover:bg-mineral-dark text-white font-display tracking-wide rounded-xl"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center gap-2">
                         <Loader2 className="w-4 h-4 animate-spin" />
-                        TRAITEMENT...
+                        REDIRECTION...
                       </span>
                     ) : (
-                      "CONFIRMER"
+                      <span className="flex items-center gap-2">
+                        <Lock className="w-4 h-4" />
+                        PAYER MAINTENANT
+                      </span>
                     )}
                   </Button>
                 </motion.div>
               </div>
+              <p className="text-xs text-center text-muted-foreground mt-3">
+                🔒 Paiement sécurisé par Stripe
+              </p>
             </div>
           </motion.div>
         </motion.div>
