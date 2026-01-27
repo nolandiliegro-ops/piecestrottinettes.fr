@@ -332,6 +332,74 @@
   .filter-glow-active {
     box-shadow: 0 0 20px 4px rgba(147, 181, 161, 0.5);
   }
+
+  /* Gaming Showcase Styles */
+  .gaming-showcase-container {
+    perspective: 2000px;
+  }
+
+  /* Grille Néon Background */
+  .gaming-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(147, 181, 161, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(147, 181, 161, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: gridPulse 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+
+  /* Glow Pulsant sur Image */
+  .gaming-product-glow {
+    animation: productGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes productGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 20px rgba(147, 181, 161, 0.4));
+    }
+    50% {
+      filter: drop-shadow(0 0 40px rgba(147, 181, 161, 0.8));
+    }
+  }
+
+  /* Rayons Lumineux */
+  .gaming-light-rays {
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(
+      from 0deg at 50% 50%,
+      transparent 0deg,
+      rgba(147, 181, 161, 0.04) 10deg,
+      transparent 20deg,
+      transparent 90deg,
+      rgba(147, 181, 161, 0.04) 100deg,
+      transparent 110deg,
+      transparent 180deg,
+      rgba(147, 181, 161, 0.04) 190deg,
+      transparent 200deg,
+      transparent 270deg,
+      rgba(147, 181, 161, 0.04) 280deg,
+      transparent 290deg
+    );
+    animation: raysSpin 20s linear infinite;
+  }
+
+  @keyframes raysSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Navigation Arrows Glow */
+  .gaming-nav-btn:hover > div {
+    box-shadow: 0 0 40px rgba(147, 181, 161, 0.6), inset 0 0 30px rgba(147, 181, 161, 0.2);
+  }
 }
 
 /* Smooth scroll global */
