@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { User, Session } from '@supabase/supabase-js';
 import { supabase } from '@/integrations/supabase/client';
+import { setUserContext, clearUserContext } from '@/lib/sentry';
 
 interface Profile {
   id: string;
@@ -63,6 +64,16 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         setSession(session);
         setUser(session?.user ?? null);
         
+        // Track user in Sentry
+        if (session?.user) {
+          setUserContext({
+            id: session.user.id,
+            email: session.user.email,
+          });
+        } else {
+          clearUserContext();
+        }
+        
         // Defer profile fetch with setTimeout to prevent deadlock
         if (session?.user) {
           setTimeout(() => {
@@ -120,6 +131,9 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     setUser(null);
     setSession(null);
     setProfile(null);
+    
+    // Clear user context in Sentry
+    clearUserContext();
   };
 
   const signInWithGoogle = async () => {
