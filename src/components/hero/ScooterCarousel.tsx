@@ -345,9 +345,16 @@ const ScooterCarousel = ({
         variants={specsContainerVariants}
         className="relative lg:absolute mt-2 lg:mt-0 lg:top-[26%] lg:left-[52%] lg:-translate-y-1/2 z-30 order-3 lg:order-none"
       >
-        <div className="flex items-center justify-center gap-1.5 lg:gap-2.5 px-2 lg:px-3.5 py-1.5 lg:py-2.5 
-                        bg-white/90 backdrop-blur-md rounded-lg border border-mineral/15 
-                        shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
+        <div 
+          className="flex items-center justify-center gap-1.5 lg:gap-2.5 px-2 lg:px-3.5 py-1.5 lg:py-2.5 rounded-xl"
+          style={{
+            background: "rgba(255, 255, 255, 0.1)",
+            backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 8px 32px rgba(26, 26, 26, 0.1)",
+          }}
+        >
           
           {/* Voltage avec label - Animated */}
           <motion.div variants={specItemVariants}>
