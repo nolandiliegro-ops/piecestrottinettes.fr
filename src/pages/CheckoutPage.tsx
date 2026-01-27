@@ -114,8 +114,8 @@ const CheckoutPage = () => {
     setShowConfirmModal(true);
   };
 
-  // Actual order submission
-  const handleConfirmOrder = async () => {
+  // Actual order submission with delivery info
+  const handleConfirmOrder = async (deliveryMethod: string, deliveryPrice: number, recommendations: string) => {
     if (!pendingFormData) return;
     
     setIsSubmitting(true);
@@ -124,6 +124,10 @@ const CheckoutPage = () => {
     try {
       // Generate order number
       const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+      
+      // Calculate final totals with delivery
+      const finalTotalTTC = totals.totalTTC + deliveryPrice;
+      const finalLoyaltyPoints = Math.floor(finalTotalTTC);
       
       // 1. Create the order in database
       const { data: order, error: orderError } = await supabase
@@ -140,8 +144,8 @@ const CheckoutPage = () => {
           city: data.city,
           subtotal_ht: totals.subtotalHT,
           tva_amount: totals.tva,
-          total_ttc: totals.totalTTC,
-          loyalty_points_earned: totals.loyaltyPoints,
+          total_ttc: finalTotalTTC,
+          loyalty_points_earned: finalLoyaltyPoints,
           status: 'pending'
         })
         .select()
@@ -182,10 +186,18 @@ const CheckoutPage = () => {
         }
       );
       
-      // 4. Clear cart and redirect with order number
+      // 4. Clear cart and redirect with order details
       clearCart();
       setShowConfirmModal(false);
-      navigate('/order-success', { state: { orderNumber } });
+      navigate('/order-success', { 
+        state: { 
+          orderNumber,
+          deliveryMethod,
+          deliveryPrice,
+          recommendations,
+          totalTTC: finalTotalTTC
+        } 
+      });
       
     } catch (error) {
       console.error('Order error:', error);
