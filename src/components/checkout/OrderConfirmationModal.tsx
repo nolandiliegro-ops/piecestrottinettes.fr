@@ -76,23 +76,21 @@ const OrderConfirmationModal = ({
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          {/* Backdrop */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-carbon/60 backdrop-blur-sm z-50"
-            onClick={onClose}
-          />
-
-          {/* Modal - Fixed positioning with proper constraints */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 bg-carbon/60 backdrop-blur-sm"
+          onClick={onClose}
+        >
+          {/* Modal container */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-xl flex flex-col bg-white rounded-2xl shadow-2xl z-50 max-h-[calc(100vh-2rem)]"
+            className="relative w-full md:max-w-xl flex flex-col bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Header - Sticky */}
             <div className="shrink-0 bg-white/95 backdrop-blur-sm border-b border-greige/50 p-4 md:p-6 flex items-center justify-between rounded-t-2xl">
@@ -298,7 +296,7 @@ const OrderConfirmationModal = ({
               </div>
             </div>
           </motion.div>
-        </>
+        </motion.div>
       )}
     </AnimatePresence>
   );
