@@ -161,7 +161,7 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
 
   return (
     <Sheet open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <SheetContent className="w-full sm:max-w-lg bg-card border-border/30">
+      <SheetContent className="w-full sm:max-w-lg bg-card border-border/30 overflow-hidden">
         <SheetHeader className="pb-4 border-b border-border/20">
           <div className="flex items-center justify-between">
             <SheetTitle className="flex items-center gap-3">
@@ -179,8 +179,8 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
           </p>
         </SheetHeader>
 
-        <ScrollArea className="h-[calc(100vh-180px)]">
-          <div className="space-y-6 py-6 pr-4">
+        <ScrollArea className="h-[calc(100vh-180px)] w-full">
+          <div className="space-y-6 py-6 pr-6">
             {/* Status Selector */}
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Statut</label>
