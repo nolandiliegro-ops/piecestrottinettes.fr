@@ -23,6 +23,7 @@ interface ScooterCarouselProps {
   onNavigateNext?: () => void;
   totalModels?: number;
   currentIndex?: number;
+  autoPlayEnabled?: boolean;
 }
 
 // Animation variants for staggered specs - AMPLIFIED for dramatic effect
@@ -123,6 +124,7 @@ const ScooterCarousel = ({
   onNavigateNext,
   totalModels = 0,
   currentIndex = 0,
+  autoPlayEnabled = true,
 }: ScooterCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -192,9 +194,11 @@ const ScooterCarousel = ({
     onNavigateNext?.();
   }, [emblaApi, onNavigateNext]);
 
-  // Auto-play effect
+  // Auto-play effect - disabled when user scrolls down
   useEffect(() => {
-    if (isHovered || models.length <= 1) {
+    // Disable auto-play if: hovering, only one model, or scroll disabled
+    if (isHovered || models.length <= 1 || !autoPlayEnabled) {
+      setAutoPlayProgress(0);
       return;
     }
     
@@ -210,7 +214,7 @@ const ScooterCarousel = ({
     }, 50);
     
     return () => clearInterval(interval);
-  }, [isHovered, models.length, scrollNext, activeIndex]);
+  }, [isHovered, models.length, scrollNext, activeIndex, autoPlayEnabled]);
 
   // Track model changes for animation trigger + reset selectors
   useEffect(() => {
@@ -496,7 +500,7 @@ const ScooterCarousel = ({
         >
           <CircularProgress 
             duration={autoPlayDuration} 
-            isPaused={isHovered}
+            isPaused={isHovered || !autoPlayEnabled}
             progress={autoPlayProgress}
           />
         </motion.div>

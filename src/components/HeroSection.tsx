@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
@@ -14,6 +14,34 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
+  
+  // Auto-play control based on scroll position
+  const [autoPlayEnabled, setAutoPlayEnabled] = useState(true);
+
+  // Scroll detection effect with requestAnimationFrame throttle
+  useEffect(() => {
+    let ticking = false;
+    
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          
+          if (scrollY > 200 && autoPlayEnabled) {
+            setAutoPlayEnabled(false);
+          } else if (scrollY < 100 && !autoPlayEnabled) {
+            setAutoPlayEnabled(true);
+          }
+          
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [autoPlayEnabled]);
 
   // Fetch data from database
   const { data: brands = [], isLoading: brandsLoading } = useBrands();
@@ -144,6 +172,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
                 onNavigateNext={() => setActiveIndex((prev) => (prev < filteredModels.length - 1 ? prev + 1 : 0))}
                 totalModels={filteredModels.length}
                 currentIndex={activeIndex}
+                autoPlayEnabled={autoPlayEnabled}
               />
             )}
           </div>
