@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Lock, CreditCard, Package } from "lucide-react";
+import { ArrowLeft, Lock, CreditCard, Package, FileText, Loader2, CheckCircle } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -22,8 +23,9 @@ import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import OrderConfirmationModal from "@/components/checkout/OrderConfirmationModal";
 
-// Zod Validation Schema
+// Zod Validation Schema - Updated with CGV
 const checkoutSchema = z.object({
   firstName: z.string().trim().min(2, "Prénom requis (min 2 caractères)"),
   lastName: z.string().trim().min(2, "Nom requis (min 2 caractères)"),
@@ -32,6 +34,9 @@ const checkoutSchema = z.object({
   address: z.string().trim().min(5, "Adresse requise (min 5 caractères)"),
   postalCode: z.string().trim().regex(/^\d{5}$/, "Code postal invalide (5 chiffres)"),
   city: z.string().trim().min(2, "Ville requise (min 2 caractères)"),
+  acceptCGV: z.boolean().refine(val => val === true, {
+    message: "Vous devez accepter les conditions générales de vente",
+  }),
 });
 
 type CheckoutFormData = z.infer<typeof checkoutSchema>;
@@ -41,6 +46,8 @@ const CheckoutPage = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
+  const [pendingFormData, setPendingFormData] = useState<CheckoutFormData | null>(null);
   const isEmpty = items.length === 0;
 
   const form = useForm<CheckoutFormData>({
@@ -53,11 +60,66 @@ const CheckoutPage = () => {
       address: "",
       postalCode: "",
       city: "",
+      acceptCGV: false,
     },
   });
 
+  // Pre-fill form from user profile
+  useEffect(() => {
+    const prefillUserData = async () => {
+      if (!user) return;
+
+      // Pre-fill email from auth
+      form.setValue("email", user.email || "");
+
+      // Try to get display_name from profile
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("display_name")
+        .eq("id", user.id)
+        .single();
+
+      if (profile?.display_name) {
+        // Try to split display_name into first/last name
+        const nameParts = profile.display_name.trim().split(" ");
+        if (nameParts.length >= 2) {
+          form.setValue("firstName", nameParts[0]);
+          form.setValue("lastName", nameParts.slice(1).join(" "));
+        } else if (nameParts.length === 1) {
+          form.setValue("firstName", nameParts[0]);
+        }
+      }
+
+      // Check user metadata for name
+      const metadata = user.user_metadata;
+      if (metadata) {
+        if (metadata.full_name) {
+          const nameParts = metadata.full_name.trim().split(" ");
+          if (nameParts.length >= 2) {
+            form.setValue("firstName", nameParts[0]);
+            form.setValue("lastName", nameParts.slice(1).join(" "));
+          }
+        }
+        if (metadata.first_name) form.setValue("firstName", metadata.first_name);
+        if (metadata.last_name) form.setValue("lastName", metadata.last_name);
+      }
+    };
+
+    prefillUserData();
+  }, [user, form]);
+
+  // Open confirmation modal instead of direct submit
   const onSubmit = async (data: CheckoutFormData) => {
+    setPendingFormData(data);
+    setShowConfirmModal(true);
+  };
+
+  // Actual order submission
+  const handleConfirmOrder = async () => {
+    if (!pendingFormData) return;
+    
     setIsSubmitting(true);
+    const data = pendingFormData;
     
     try {
       // Generate order number
@@ -104,8 +166,25 @@ const CheckoutPage = () => {
       
       if (itemsError) throw itemsError;
       
-      // 3. Clear cart and redirect with order number
+      // 3. Show success toast with order number
+      toast.success(
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-mineral/20 flex items-center justify-center">
+            <CheckCircle className="w-5 h-5 text-mineral" />
+          </div>
+          <div>
+            <p className="font-display text-carbon tracking-wide">COMMANDE CONFIRMÉE</p>
+            <p className="text-sm text-muted-foreground">N° {orderNumber}</p>
+          </div>
+        </div>,
+        {
+          duration: 5000,
+        }
+      );
+      
+      // 4. Clear cart and redirect with order number
       clearCart();
+      setShowConfirmModal(false);
       navigate('/order-success', { state: { orderNumber } });
       
     } catch (error) {
@@ -145,6 +224,27 @@ const CheckoutPage = () => {
   return (
     <div className="min-h-screen bg-greige">
       <Header />
+      
+      {/* Confirmation Modal */}
+      {pendingFormData && (
+        <OrderConfirmationModal
+          isOpen={showConfirmModal}
+          onClose={() => setShowConfirmModal(false)}
+          onConfirm={handleConfirmOrder}
+          isSubmitting={isSubmitting}
+          formData={{
+            firstName: pendingFormData.firstName,
+            lastName: pendingFormData.lastName,
+            email: pendingFormData.email,
+            phone: pendingFormData.phone,
+            address: pendingFormData.address,
+            postalCode: pendingFormData.postalCode,
+            city: pendingFormData.city,
+          }}
+          items={items}
+          totals={totals}
+        />
+      )}
       
       <main className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -341,6 +441,40 @@ const CheckoutPage = () => {
                       </div>
                     </div>
 
+                    {/* CGV Checkbox */}
+                    <div className="border-t border-greige/50 pt-6">
+                      <FormField
+                        control={form.control}
+                        name="acceptCGV"
+                        render={({ field }) => (
+                          <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                            <FormControl>
+                              <Checkbox
+                                checked={field.value}
+                                onCheckedChange={field.onChange}
+                                className="mt-1 data-[state=checked]:bg-mineral data-[state=checked]:border-mineral"
+                              />
+                            </FormControl>
+                            <div className="space-y-1 leading-none">
+                              <FormLabel className="text-sm text-carbon cursor-pointer">
+                                J'accepte les{" "}
+                                <Link 
+                                  to="/cgv" 
+                                  target="_blank"
+                                  className="text-mineral hover:underline inline-flex items-center gap-1"
+                                >
+                                  <FileText className="w-3 h-3" />
+                                  conditions générales de vente
+                                </Link>
+                                {" "}*
+                              </FormLabel>
+                              <FormMessage />
+                            </div>
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
                     {/* Submit Button - Mobile */}
                     <div className="lg:hidden">
                       <motion.div
@@ -354,20 +488,14 @@ const CheckoutPage = () => {
                         >
                           <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                           <span className="relative z-10 flex items-center justify-center gap-2">
-                        {isSubmitting ? (
-                              <span className="animate-pulse">TRAITEMENT...</span>
-                            ) : (
-                              <>
-                                <Lock className="w-4 h-4" />
-                                PROCÉDER AU PAIEMENT
-                              </>
-                            )}
+                            <Lock className="w-4 h-4" />
+                            VÉRIFIER MA COMMANDE
                           </span>
                         </Button>
                       </motion.div>
                       {/* Reassurance message */}
                       <p className="text-xs text-center text-muted-foreground mt-3 italic font-light">
-                        Vous allez être redirigé vers notre interface de paiement sécurisée
+                        Vous pourrez vérifier votre commande avant validation
                       </p>
                     </div>
                   </form>
@@ -436,20 +564,14 @@ const CheckoutPage = () => {
                     >
                       <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <span className="relative z-10 flex items-center justify-center gap-2">
-                        {isSubmitting ? (
-                          <span className="animate-pulse">TRAITEMENT...</span>
-                        ) : (
-                          <>
-                            <Lock className="w-4 h-4" />
-                            PROCÉDER AU PAIEMENT
-                          </>
-                        )}
+                        <Lock className="w-4 h-4" />
+                        VÉRIFIER MA COMMANDE
                       </span>
                     </Button>
                   </motion.div>
                   {/* Reassurance message */}
                   <p className="text-xs text-center text-muted-foreground mt-3 italic font-light">
-                    Vous allez être redirigé vers notre interface de paiement sécurisée
+                    Vous pourrez vérifier votre commande avant validation
                   </p>
                 </div>
 
