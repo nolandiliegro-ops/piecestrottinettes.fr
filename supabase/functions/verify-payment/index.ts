@@ -59,7 +59,7 @@ serve(async (req) => {
     }
 
     // If already paid, return order details
-    if (order.status === "paid" || order.status === "pending") {
+    if (order.status === "paid") {
       console.log(`Order ${orderNumber} already processed with status: ${order.status}`);
       return new Response(
         JSON.stringify({
@@ -92,7 +92,7 @@ serve(async (req) => {
       const { error: updateError } = await supabase
         .from("orders")
         .update({
-          status: "pending", // pending means paid but not shipped
+          status: "paid",
           stripe_payment_intent_id: paymentIntent?.id || null,
           paid_at: new Date().toISOString(),
         })
@@ -147,7 +147,7 @@ serve(async (req) => {
           success: true,
           order: {
             orderNumber: order.order_number,
-            status: "pending",
+            status: "paid",
             totalTTC: order.total_ttc,
             customerEmail: order.customer_email,
             customerFirstName: order.customer_first_name,
