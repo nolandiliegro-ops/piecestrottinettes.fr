@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import ExpertJourneySection from "@/components/hero/ExpertJourneySection";
 import CompatiblePartsSection from "@/components/CompatiblePartsSection";
 import FavoritesSection from "@/components/home/FavoritesSection";
+import ShopByCategorySection from "@/components/home/ShopByCategorySection";
 
 const Index = () => {
   const [activeModelSlug, setActiveModelSlug] = useState<string | null>(null);
@@ -62,7 +63,17 @@ const Index = () => {
           />
         </motion.section>
 
-        {/* 4. Favorites Section - Last, only visible when logged in */}
+        {/* 4. Shop By Category Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+        >
+          <ShopByCategorySection />
+        </motion.section>
+
+        {/* 5. Favorites Section - Last, only visible when logged in */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
