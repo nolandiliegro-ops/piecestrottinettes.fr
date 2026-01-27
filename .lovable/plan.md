@@ -1,42 +1,50 @@
+# Intégration Stripe Checkout - piecestrottinettes.fr
 
+## Statut: ✅ IMPLÉMENTÉ
 
-# Correction du domaine email dans send-order-email
+## Résumé
 
-## Probleme identifie
+L'intégration Stripe Checkout a été mise en place pour sécuriser les paiements. Le flux est le suivant:
 
-La fonction Edge `send-order-email` utilise un domaine email incorrect :
-- **Actuel** : `noreply@piecesdetrot.fr`
-- **Requis** : `noreply@piecestrottinettes.fr`
+1. L'utilisateur remplit le formulaire checkout et valide
+2. Un modal de confirmation s'ouvre avec le récap + choix livraison
+3. Au clic "PAYER MAINTENANT", l'Edge Function `create-checkout-session` est appelée
+4. La commande est créée en base avec status `awaiting_payment`
+5. Redirection vers Stripe Checkout (page hébergée par Stripe)
+6. Après paiement, retour sur `/payment-success?session_id=xxx`
+7. L'Edge Function `verify-payment` vérifie le paiement et met à jour le status
+8. Email de confirmation envoyé
 
-Cela correspond a l'erreur vue dans les logs :
-> "The piecesdetrot.fr domain is not verified"
+## Fichiers Créés/Modifiés
 
-## Modification a effectuer
+### Edge Functions
+- `supabase/functions/create-checkout-session/index.ts` - Création session Stripe
+- `supabase/functions/verify-payment/index.ts` - Vérification paiement
 
-**Fichier** : `supabase/functions/send-order-email/index.ts`
+### Pages
+- `src/pages/PaymentSuccessPage.tsx` - Page de succès après paiement
 
-**Ligne 252** - Changer :
-```typescript
-from: "Pièces de Trot <noreply@piecesdetrot.fr>",
-```
+### Modifications
+- `src/pages/CheckoutPage.tsx` - Intégration appel Edge Function
+- `src/components/checkout/OrderConfirmationModal.tsx` - Bouton "PAYER MAINTENANT"
+- `src/App.tsx` - Route `/payment-success`
+- `supabase/config.toml` - Configuration Edge Functions
 
-**Par** :
-```typescript
-from: "Pièces de Trot <noreply@piecestrottinettes.fr>",
-```
+### Base de Données
+- Nouvelles colonnes sur `orders`:
+  - `stripe_session_id` (text)
+  - `stripe_payment_intent_id` (text)
+  - `paid_at` (timestamp)
 
-## Deploiement
+## Sécurité Anti-Fraude
 
-La fonction sera automatiquement redeployee par Lovable Cloud apres la modification du code. Aucune action manuelle n'est requise.
+- Les prix sont recalculés côté serveur (Edge Function)
+- Le stock est vérifié avant création de session
+- Le paiement est vérifié via l'API Stripe avant mise à jour du status
 
-## Prerequis cote Resend
+## Test
 
-Assurez-vous que le domaine `piecestrottinettes.fr` est bien verifie dans votre compte Resend :
-1. Allez sur https://resend.com/domains
-2. Verifiez que `piecestrottinettes.fr` apparait avec le statut "Verified"
-3. Si ce n'est pas le cas, ajoutez les enregistrements DNS requis
-
-## Test apres correction
-
-Une fois deploye, nous pourrons tester l'envoi d'un email de confirmation pour valider que tout fonctionne correctement.
-
+Pour tester en mode Stripe Test:
+1. Utiliser une carte de test: `4242 4242 4242 4242`
+2. Date d'expiration: n'importe quelle date future
+3. CVC: n'importe quel nombre à 3 chiffres

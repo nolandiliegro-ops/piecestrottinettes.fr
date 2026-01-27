@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Lock, CreditCard, Package, FileText, Loader2, CheckCircle } from "lucide-react";
+import { ArrowLeft, Lock, CreditCard, Package, FileText, Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -114,7 +114,7 @@ const CheckoutPage = () => {
     setShowConfirmModal(true);
   };
 
-  // Actual order submission with delivery info
+  // Actual order submission - now creates Stripe Checkout session
   const handleConfirmOrder = async (deliveryMethod: string, deliveryPrice: number, recommendations: string) => {
     if (!pendingFormData) return;
     
@@ -122,138 +122,59 @@ const CheckoutPage = () => {
     const data = pendingFormData;
     
     try {
-      // Generate order number
-      const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-      
-      // Calculate final totals with delivery
-      const finalTotalTTC = totals.totalTTC + deliveryPrice;
-      const finalLoyaltyPoints = Math.floor(finalTotalTTC);
-      
-      // 1. Create the order in database
-      const { data: order, error: orderError } = await supabase
-        .from('orders')
-        .insert({
-          order_number: orderNumber,
-          user_id: user?.id || null,
-          customer_first_name: data.firstName,
-          customer_last_name: data.lastName,
-          customer_email: data.email,
-          customer_phone: data.phone || null,
-          address: data.address,
-          postal_code: data.postalCode,
-          city: data.city,
-          subtotal_ht: totals.subtotalHT,
-          tva_amount: totals.tva,
-          total_ttc: finalTotalTTC,
-          loyalty_points_earned: finalLoyaltyPoints,
-          status: 'pending',
-          delivery_method: deliveryMethod,
-          delivery_price: deliveryPrice,
-          notes: recommendations || null
-        })
-        .select()
-        .single();
-      
-      if (orderError) throw orderError;
-      
-      // 2. Create order items
-      const orderItems = items.map(item => ({
-        order_id: order.id,
-        part_id: item.id,
-        part_name: item.name,
-        part_image_url: item.image_url,
-        unit_price: item.price,
+      // Prepare cart items for the edge function
+      const cartItems = items.map(item => ({
+        id: item.id,
         quantity: item.quantity,
-        line_total: item.price * item.quantity
       }));
-      
-      const { error: itemsError } = await supabase
-        .from('order_items')
-        .insert(orderItems);
-      
-      if (itemsError) throw itemsError;
-      
-      // 3. Show success toast with order number
-      toast.success(
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-mineral/20 flex items-center justify-center">
-            <CheckCircle className="w-5 h-5 text-mineral" />
-          </div>
-          <div>
-            <p className="font-display text-carbon tracking-wide">COMMANDE CONFIRMÉE</p>
-            <p className="text-sm text-muted-foreground">N° {orderNumber}</p>
-          </div>
-        </div>,
+
+      // Call create-checkout-session edge function
+      const { data: sessionData, error: sessionError } = await supabase.functions.invoke(
+        "create-checkout-session",
         {
-          duration: 5000,
+          body: {
+            items: cartItems,
+            customerInfo: {
+              firstName: data.firstName,
+              lastName: data.lastName,
+              email: data.email,
+              phone: data.phone || undefined,
+              address: data.address,
+              postalCode: data.postalCode,
+              city: data.city,
+            },
+            deliveryMethod,
+            notes: recommendations || undefined,
+          },
         }
       );
-      
-      // 4. Send confirmation email (non-blocking)
-      const emailPayload = {
-        orderNumber,
-        customerEmail: data.email,
-        customerName: `${data.firstName} ${data.lastName}`,
-        items: items.map(item => ({
-          name: item.name,
-          quantity: item.quantity,
-          price: item.price,
-          imageUrl: item.image_url
-        })),
-        totals: {
-          subtotalHT: totals.subtotalHT,
-          tva: totals.tva,
-          totalTTC: finalTotalTTC,
-          deliveryPrice
-        },
-        address: {
-          street: data.address,
-          postalCode: data.postalCode,
-          city: data.city
-        },
-        deliveryMethod
-      };
-      
-      // Fire and forget - don't await
-      fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-order-email`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`
-        },
-        body: JSON.stringify(emailPayload)
-      }).then(res => {
-        if (res.ok) {
-          console.log('Order confirmation email sent successfully');
-        } else {
-          console.error('Failed to send order confirmation email');
-        }
-      }).catch(err => {
-        console.error('Error sending order confirmation email:', err);
-      });
-      
-      // 5. Clear cart and redirect with order details
-      clearCart();
+
+      if (sessionError) {
+        throw new Error(sessionError.message || "Erreur lors de la création de la session de paiement");
+      }
+
+      if (!sessionData?.sessionUrl) {
+        throw new Error("URL de paiement non reçue");
+      }
+
+      // Close modal and redirect to Stripe Checkout
       setShowConfirmModal(false);
-      navigate('/order-success', { 
-        state: { 
-          orderNumber,
-          customerEmail: data.email,
-          customerFirstName: data.firstName,
-          customerLastName: data.lastName,
-          deliveryMethod,
-          deliveryPrice,
-          recommendations,
-          totalTTC: finalTotalTTC
-        } 
-      });
       
-    } catch (error) {
-      console.error('Order error:', error);
-      toast.error('Erreur lors de la commande', {
-        description: 'Veuillez réessayer ou nous contacter.',
+      // Show toast before redirect
+      toast.info("Redirection vers le paiement sécurisé...", {
+        duration: 2000,
       });
-    } finally {
+
+      // Small delay for toast visibility, then redirect
+      setTimeout(() => {
+        window.location.href = sessionData.sessionUrl;
+      }, 500);
+      
+    } catch (error: any) {
+      console.error('Checkout error:', error);
+      toast.error('Erreur lors du checkout', {
+        description: error.message || 'Veuillez réessayer ou nous contacter.',
+      });
       setIsSubmitting(false);
     }
   };

@@ -212,8 +212,11 @@ export type Database = {
           loyalty_points_earned: number | null
           notes: string | null
           order_number: string
+          paid_at: string | null
           postal_code: string
           status: string
+          stripe_payment_intent_id: string | null
+          stripe_session_id: string | null
           subtotal_ht: number
           total_ttc: number
           tva_amount: number
@@ -234,8 +237,11 @@ export type Database = {
           loyalty_points_earned?: number | null
           notes?: string | null
           order_number: string
+          paid_at?: string | null
           postal_code: string
           status?: string
+          stripe_payment_intent_id?: string | null
+          stripe_session_id?: string | null
           subtotal_ht: number
           total_ttc: number
           tva_amount: number
@@ -256,8 +262,11 @@ export type Database = {
           loyalty_points_earned?: number | null
           notes?: string | null
           order_number?: string
+          paid_at?: string | null
           postal_code?: string
           status?: string
+          stripe_payment_intent_id?: string | null
+          stripe_session_id?: string | null
           subtotal_ht?: number
           total_ttc?: number
           tva_amount?: number

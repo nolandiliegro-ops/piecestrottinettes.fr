@@ -22,6 +22,7 @@ import ScooterDetail from "./pages/ScooterDetail";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
+import PaymentSuccessPage from "./pages/PaymentSuccessPage";
 import Pepites from "./pages/Pepites";
 import Tutos from "./pages/Tutos";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
@@ -58,6 +59,7 @@ function App() {
             <Route path="/panier" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/order-success" element={<OrderSuccessPage />} />
+            <Route path="/payment-success" element={<PaymentSuccessPage />} />
             <Route path="/garage" element={
               <ProtectedRoute>
                 <GarageErrorBoundary>
