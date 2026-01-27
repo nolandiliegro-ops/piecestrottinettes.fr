@@ -249,7 +249,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.log(`Sending order confirmation email to ${data.customerEmail} for order ${data.orderNumber}`);
 
     const emailResponse = await resend.emails.send({
-      from: "Pièces de Trot <noreply@piecesdetrot.fr>",
+      from: "Pièces de Trot <noreply@piecestrottinettes.fr>",
       to: [data.customerEmail],
       subject: `Commande ${data.orderNumber} confirmée - Pièces de Trot`,
       html: generateEmailHTML(data),
