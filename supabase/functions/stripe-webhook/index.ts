@@ -91,7 +91,7 @@ serve(async (req) => {
     const { error: updateError } = await supabaseAdmin
       .from("orders")
       .update({
-        status: "pending",
+        status: "paid",
         stripe_payment_intent_id: session.payment_intent as string,
         paid_at: new Date().toISOString(),
       })
