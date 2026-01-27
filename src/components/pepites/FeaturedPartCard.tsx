@@ -62,21 +62,32 @@ const FeaturedPartCard = ({ part, index }: FeaturedPartCardProps) => {
             {/* Mineral Green Glow Overlay on Hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-mineral/30 via-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
-            {/* Expert Badge - Shimmer Effect */}
+            {/* Expert Badge - Glassmorphism + Shimmer Effect */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 + index * 0.1 }}
               className="absolute top-4 right-4"
             >
-              <div className="relative flex items-center gap-2 px-3 py-2 bg-mineral text-white rounded-xl overflow-hidden">
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+                className="relative flex items-center gap-2 px-3 py-2 text-white rounded-xl overflow-hidden"
+                style={{
+                  background: "rgba(147, 181, 161, 0.8)",
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  border: "1px solid rgba(255, 255, 255, 0.3)",
+                  boxShadow: "0 4px 16px rgba(147, 181, 161, 0.3)",
+                }}
+              >
                 {/* Shimmer effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
                 <Award className="w-4 h-4 relative z-10" />
                 <span className="text-xs font-semibold tracking-wide relative z-10">
                   COUP DE CŒUR
                 </span>
-              </div>
+              </motion.div>
             </motion.div>
             
             {/* Quick Add Button - Reveals on Hover */}
@@ -116,11 +127,16 @@ const FeaturedPartCard = ({ part, index }: FeaturedPartCardProps) => {
               </p>
             )}
             
-            {/* Price - Monumental */}
+            {/* Price - Monumental with hover */}
             <div className="flex items-baseline gap-2">
-              <span className="font-display text-4xl text-mineral tracking-wide">
+              <motion.span 
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+                className="font-display text-[2rem] text-mineral tracking-wide inline-block"
+                style={{ fontWeight: 600 }}
+              >
                 {formatPrice(part.price || 0)}
-              </span>
+              </motion.span>
               <span className="text-xs text-muted-foreground">TTC</span>
             </div>
           </div>

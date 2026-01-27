@@ -208,7 +208,11 @@ const Catalogue = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl text-carbon tracking-[0.2em] uppercase"
+            className="font-display text-5xl md:text-6xl lg:text-7xl text-carbon uppercase cursor-pointer title-underline-animated"
+            style={{
+              fontWeight: 700,
+              letterSpacing: "-0.01em",
+            }}
           >
             CATALOGUE
           </motion.h1>

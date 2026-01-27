@@ -160,19 +160,19 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
                 `0 0 8px ${selectedBrandColors.glowColor}`,
               ]
             }}
+            whileHover={{ scale: 1.05 }}
             transition={{ 
               duration: 2, 
               repeat: Infinity, 
               ease: "easeInOut" 
             }}
-            className={cn(
-              "flex items-center gap-1.5 px-2.5 py-1.5 rounded-full",
-              "text-[10px] font-semibold tracking-wide uppercase",
-              "backdrop-blur-sm border-[0.5px]",
-              selectedBrandColors.bgClass,
-              selectedBrandColors.textClass,
-              selectedBrandColors.borderClass
-            )}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-[10px] font-semibold tracking-wide uppercase text-white"
+            style={{
+              background: "rgba(147, 181, 161, 0.8)",
+              backdropFilter: "blur(10px)",
+              WebkitBackdropFilter: "blur(10px)",
+              border: "1px solid rgba(255, 255, 255, 0.3)",
+            }}
           >
             {/* Pulsing dot */}
             <motion.div
@@ -195,7 +195,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
       {/* Image Container - Luxury Studio Style */}
       <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">
-        {/* SÉLECTION EXPERT Badge - Carbon Black Luxury */}
+        {/* SÉLECTION EXPERT Badge - Glassmorphism Luxury */}
         {part.is_featured && (
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -203,10 +203,21 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
             transition={{ duration: 0.4, delay: index * 0.08 + 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="absolute top-3 left-3 z-10"
           >
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-carbon text-white text-[10px] font-medium tracking-widest uppercase shadow-lg backdrop-blur-sm border border-white/10">
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white text-[10px] font-medium tracking-widest uppercase"
+              style={{
+                background: "rgba(26, 26, 26, 0.85)",
+                backdropFilter: "blur(10px)",
+                WebkitBackdropFilter: "blur(10px)",
+                border: "1px solid rgba(255, 255, 255, 0.3)",
+                boxShadow: "0 4px 16px rgba(26, 26, 26, 0.2)",
+              }}
+            >
               <Trophy className="w-3 h-3" />
               <span>SÉLECTION EXPERT</span>
-            </div>
+            </motion.div>
           </motion.div>
         )}
 
@@ -268,12 +279,16 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         {/* Price - Luxury Typography */}
         {part.price !== null && (
           <div className="flex items-baseline gap-1">
-            <span className={cn(
-              "text-2xl font-light tracking-wide",
-              isOutOfStock ? "text-muted-foreground" : "text-mineral"
-            )}>
+            <motion.span 
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+              className={cn(
+                "text-[1.5rem] font-semibold tracking-wide inline-block",
+                isOutOfStock ? "text-muted-foreground" : "text-mineral"
+              )}
+            >
               {formatPrice(part.price)}
-            </span>
+            </motion.span>
           </div>
         )}
 

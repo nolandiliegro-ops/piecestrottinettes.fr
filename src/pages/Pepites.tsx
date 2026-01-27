@@ -70,7 +70,11 @@ const Pepites = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
-                className="font-display text-5xl md:text-7xl lg:text-8xl text-carbon tracking-[0.15em] mb-6"
+                className="font-display text-5xl md:text-7xl lg:text-8xl text-carbon mb-6 cursor-pointer title-underline-animated"
+                style={{
+                  fontWeight: 700,
+                  letterSpacing: "-0.01em",
+                }}
               >
                 LES PÉPITES
               </motion.h1>

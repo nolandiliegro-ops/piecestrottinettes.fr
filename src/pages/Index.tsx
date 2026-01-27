@@ -70,24 +70,35 @@ const Index = () => {
         <Footer />
       </main>
 
-      {/* Slogan - Smaller on mobile */}
+      {/* Slogan - Premium Typography */}
       <motion.div
         className="fixed bottom-4 lg:bottom-8 left-4 lg:left-8 z-50"
-        initial={{ opacity: 0, y: 10 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <div 
-          className="px-3 py-1.5 lg:px-5 lg:py-2.5 rounded-full font-display text-xs lg:text-base tracking-widest"
+          className="px-4 py-2 lg:px-6 lg:py-3 rounded-full font-display text-sm lg:text-lg"
           style={{
-            background: "rgba(255,255,255,0.85)",
-            backdropFilter: "blur(8px)",
-            border: "1px solid rgba(147,181,161,0.25)",
-            color: "#93B5A1",
-            boxShadow: "0 2px 12px rgba(147,181,161,0.15)"
+            background: "rgba(255,255,255,0.9)",
+            backdropFilter: "blur(12px)",
+            border: "1px solid rgba(147,181,161,0.3)",
+            boxShadow: "0 4px 20px rgba(147,181,161,0.2)",
+            fontWeight: 800,
+            letterSpacing: "-0.02em",
+            lineHeight: 0.9,
           }}
         >
-          ROULE RÉPARE DURE
+          <span
+            style={{
+              background: "linear-gradient(135deg, #1A1A1A 0%, #93B5A1 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            ROULE · RÉPARE · DURE
+          </span>
         </div>
       </motion.div>
     </div>
