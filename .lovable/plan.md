@@ -1,118 +1,113 @@
 
-# Correction du Mapping des Statuts de Paiement
+# Correction de l'Affichage des Prix dans OrderDetailSheet
 
-## Probleme Identifie
+## Problème Identifié
 
-Les Edge Functions `stripe-webhook` et `verify-payment` mettent le statut de commande a `"pending"` apres un paiement reussi. Cependant, dans l'interface admin, `"pending"` est affiche comme "En attente" (couleur orange), ce qui prete a confusion.
+Dans le panneau de détails de commande admin, les montants du récapitulatif financier (Sous-total HT, TVA, Livraison, Total TTC) sont tronqués et invisibles sans scroll horizontal. Les prix des articles s'affichent correctement, mais le récapitulatif financier en bas est coupé.
 
-La capture d'ecran montre que :
-- Le webhook retourne `processed: true` avec le bon `orderId`
-- La base de donnees confirme que la commande a bien `paid_at` rempli et `stripe_payment_intent_id` stocke
-- Mais l'admin affiche "En attente" au lieu de "Paye"
+## Causes du Problème
 
-## Cause Racine
+1. **ScrollArea avec padding asymétrique** : Le `pr-4` crée un espace qui pousse le contenu vers la gauche mais les montants à droite sont coupés par la scrollbar
+2. **Structure flex sans contrainte** : Les lignes `justify-between` n'ont pas de `min-w-0` pour empêcher le débordement
+3. **Montants sans `text-right` ou `shrink-0`** : Les spans des prix peuvent être compressés
 
-Incoherence entre :
-1. **Edge Functions** : utilisent `status: "pending"` pour signifier "paye, en attente d'expedition"
-2. **Admin UI** : interprete `"pending"` comme "En attente" (non paye) et attend `"paid"` pour afficher "Paye"
+## Solution
 
-## Solution Recommandee
+Restructurer le récapitulatif financier avec une meilleure gestion de la largeur et ajouter des contraintes pour éviter le débordement.
 
-Modifier les Edge Functions pour utiliser `status: "paid"` au lieu de `status: "pending"` apres un paiement reussi. C'est la solution la plus coherente car :
-- Elle respecte le mapping UI existant
-- Elle utilise un statut explicite (`paid`) pour indiquer le paiement
-- Le flux devient : `awaiting_payment` → `paid` → `processing` → `shipped` → `delivered`
+## Modifications à Apporter
 
-## Fichiers a Modifier
+### Fichier : `src/components/admin/OrderDetailSheet.tsx`
 
-### 1. Edge Function `stripe-webhook`
+**Changement 1 - ScrollArea (ligne 182)**
 
-**Fichier** : `supabase/functions/stripe-webhook/index.ts`
-
-**Modification** : Ligne 94
-
+Ajuster le padding pour éviter le conflit avec la scrollbar :
 ```typescript
 // AVANT
-status: "pending",
+<ScrollArea className="h-[calc(100vh-180px)] pr-4">
 
-// APRES  
-status: "paid",
+// APRÈS  
+<ScrollArea className="h-[calc(100vh-180px)]">
+  <div className="pr-4">
 ```
 
-### 2. Edge Function `verify-payment`
+**Changement 2 - Récapitulatif financier (lignes 352-385)**
 
-**Fichier** : `supabase/functions/verify-payment/index.ts`
-
-**Modifications** :
-
-Ligne 62 - Condition de verification :
+Restructurer avec des contraintes de largeur explicites :
 ```typescript
-// AVANT
-if (order.status === "paid" || order.status === "pending") {
-
-// APRES
-if (order.status === "paid") {
+// Wrapper du récapitulatif avec contrainte de largeur
+<div className="space-y-3 pt-4 border-t border-border/20 w-full">
+  
+  {/* Sous-total HT */}
+  <div className="flex justify-between items-center text-sm w-full">
+    <span className="text-muted-foreground flex-shrink-0">Sous-total HT</span>
+    <span className="text-foreground font-medium text-right flex-shrink-0">
+      {formatPrice(order.subtotal_ht)}
+    </span>
+  </div>
+  
+  {/* TVA */}
+  <div className="flex justify-between items-center text-sm w-full">
+    <span className="text-muted-foreground flex-shrink-0">TVA (20%)</span>
+    <span className="text-foreground font-medium text-right flex-shrink-0">
+      {formatPrice(order.tva_amount)}
+    </span>
+  </div>
+  
+  {/* Livraison - toujours afficher */}
+  <div className="flex justify-between items-center text-sm w-full">
+    <span className="text-muted-foreground flex-shrink-0">
+      Livraison {order.delivery_method ? `(${deliveryMethodConfig[order.delivery_method]?.label || order.delivery_method})` : ''}
+    </span>
+    <span className="text-foreground font-medium text-right flex-shrink-0">
+      {order.delivery_price && order.delivery_price > 0 
+        ? formatPrice(order.delivery_price) 
+        : order.delivery_price === 0 
+          ? <span className="text-green-500">Gratuit</span>
+          : '—'}
+    </span>
+  </div>
+  
+  {/* Séparateur */}
+  <div className="h-px bg-border/30 my-2" />
+  
+  {/* Total TTC - style premium */}
+  <div className="flex justify-between items-baseline w-full">
+    <span className="font-semibold text-foreground">Total TTC</span>
+    <span className="text-2xl font-bold text-primary">
+      {formatPrice(order.total_ttc)}
+    </span>
+  </div>
+</div>
 ```
 
-Ligne 95 - Mise a jour du statut :
-```typescript
-// AVANT
-status: "pending", // pending means paid but not shipped
+**Changement 3 - Affichage Livraison conditionnel amélioré**
 
-// APRES
-status: "paid", // Payment confirmed
+Toujours afficher la ligne "Livraison" dans le récapitulatif (même si 0€ ou non définie) pour une meilleure clarté, avec le type entre parenthèses si disponible.
+
+## Résultat Attendu
+
+Après correction, le panneau affichera clairement :
+
+```
+┌────────────────────────────────────────┐
+│ Sous-total HT                  27.00 € │
+│ TVA (20%)                       5.40 € │
+│ Livraison (Express 24-48h)      9.90 € │
+│ ────────────────────────────────────── │
+│ Total TTC                      42.30 € │
+└────────────────────────────────────────┘
 ```
 
-Ligne 150 - Reponse :
-```typescript
-// AVANT
-status: "pending",
+## Fichiers Impactés
 
-// APRES
-status: "paid",
-```
+| Fichier | Action |
+|---------|--------|
+| `src/components/admin/OrderDetailSheet.tsx` | Modifier structure ScrollArea et récapitulatif |
 
-### 3. Aucun Changement Necessaire
+## Validation
 
-- `OrdersManager.tsx` : Le mapping des statuts est deja correct
-- Base de donnees : Aucune migration necessaire
-
-## Flux Apres Correction
-
-```text
-awaiting_payment  ──(Stripe paye)──>  paid  ──(Admin)──>  processing  ──>  shipped  ──>  delivered
-      │                                 │
-      │                                 └── Affiche "Paye" (vert) dans l'admin
-      │
-      └── Affiche "En attente de paiement" (si on l'ajoute a l'UI)
-```
-
-## Verification
-
-Apres deploiement, la commande `PT-QDAO` passera automatiquement a "Paye" lors du prochain paiement test, ou on peut mettre a jour manuellement via l'admin.
-
-## Section Technique
-
-### Changements Exacts
-
-**stripe-webhook/index.ts ligne 93-97** :
-```typescript
-.update({
-  status: "paid",  // Changed from "pending"
-  stripe_payment_intent_id: session.payment_intent as string,
-  paid_at: new Date().toISOString(),
-})
-```
-
-**verify-payment/index.ts ligne 94-98** :
-```typescript
-.update({
-  status: "paid",  // Changed from "pending"
-  stripe_payment_intent_id: paymentIntent?.id || null,
-  paid_at: new Date().toISOString(),
-})
-```
-
-### Deploiement
-
-Les deux Edge Functions devront etre redeployees apres modification.
+1. Ouvrir le panneau de détails d'une commande
+2. Vérifier que tous les montants sont visibles sans scroll horizontal
+3. Vérifier sur mobile que le panneau est scrollable verticalement
+4. Confirmer que les prix s'affichent dans le format français (X.XX €)
