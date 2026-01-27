@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Gauge, ShoppingCart, Trophy, Check } from "lucide-react";
 import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
+import PartFavoriteButton from "./PartFavoriteButton";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
@@ -222,6 +223,13 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         {/* Subtle Hover Effect */}
         <div className="absolute inset-0 bg-gradient-to-t from-mineral/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
+        {/* Favorite Button - Top Right (when no compatibility badge) */}
+        {!selectedScooter && (
+          <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <PartFavoriteButton partId={part.id} partName={part.name} size="sm" />
+          </div>
+        )}
+
         {/* Quick-Add Button - Only show if in stock */}
         {!isOutOfStock && part.price !== null && (
           <button
@@ -231,6 +239,13 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           >
             <ShoppingCart className="w-4 h-4" />
           </button>
+        )}
+
+        {/* Favorite Button - Bottom Left (alternative position) */}
+        {selectedScooter && (
+          <div className="absolute bottom-3 left-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <PartFavoriteButton partId={part.id} partName={part.name} size="sm" />
+          </div>
         )}
 
         {/* Out of Stock Overlay */}
