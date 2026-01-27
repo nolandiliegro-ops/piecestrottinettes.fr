@@ -24,7 +24,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[hsl(30_10%_97%)] via-[hsl(30_10%_96%)] to-[hsl(30_14%_95%)] watermark-brand">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="min-h-screen bg-gradient-to-b from-[hsl(30_10%_97%)] via-[hsl(30_10%_96%)] to-[hsl(30_14%_95%)] watermark-brand"
+    >
       {/* Header - Fixed at top */}
       <Header />
       
@@ -101,7 +106,7 @@ const Index = () => {
           </span>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

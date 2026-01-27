@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 
@@ -56,15 +57,26 @@ const HeroBranding = () => {
         Trouvez les pièces détachées 100% compatibles avec votre trottinette électrique. Qualité garantie, expédition rapide.
       </p>
 
-      {/* Bouton Catalogue Premium - LARGE */}
-      <div className="mt-6 lg:mt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-        <Button asChild variant="outline" size="lg" className="rounded-full gap-3 px-8 py-6 text-lg font-semibold border-mineral/40 hover:bg-mineral hover:text-white hover:border-mineral transition-all shadow-md hover:shadow-lg">
+      {/* Bouton Catalogue Premium - LARGE avec micro-interactions */}
+      <motion.div 
+        className="mt-6 lg:mt-8 animate-fade-in" 
+        style={{ animationDelay: "0.5s" }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.98 }}
+        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+      >
+        <Button 
+          asChild 
+          variant="outline" 
+          size="lg" 
+          className="rounded-full gap-3 px-8 py-6 text-lg font-semibold border-mineral/40 hover:bg-mineral hover:text-white hover:border-mineral transition-all duration-300 shadow-md hover:shadow-[0_8px_30px_rgba(147,181,161,0.5)]"
+        >
           <Link to="/catalogue">
             <ShoppingBag className="w-5 h-5" />
             VOIR TOUT LE CATALOGUE
           </Link>
         </Button>
-      </div>
+      </motion.div>
     </div>
   );
 };

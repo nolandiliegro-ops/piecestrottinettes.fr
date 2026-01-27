@@ -114,19 +114,25 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       initial={{ opacity: 0, y: 20, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -10, scale: 0.95 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ 
+        scale: 1.02, 
+        y: -8,
+        transition: { duration: 0.4, ease: "easeOut" }
+      }}
       whileTap={{ scale: 0.98 }}
       transition={{
         duration: 0.4,
-        delay: index * 0.08,
+        delay: index * 0.1,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       className={cn(
-        "group relative rounded-xl p-5 transition-all duration-300 cursor-pointer",
-        "bg-white/80 backdrop-blur-sm",
-        "border border-carbon/10",
-        "hover:shadow-xl",
+        "group relative rounded-xl p-5 cursor-pointer",
+        "bg-[rgba(245,243,240,0.7)] backdrop-blur-[20px]",
+        "border border-white/20",
+        "shadow-[0_8px_32px_rgba(26,26,26,0.1)]",
+        "hover:shadow-[0_16px_48px_rgba(26,26,26,0.15)]",
         "hover:border-mineral/40",
+        "transition-all duration-400 ease-out",
         className
       )}
     >

@@ -41,12 +41,14 @@ const SubCategoryBar = ({
 
           {/* "Tous" button */}
           <motion.button
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3 }}
             onClick={() => onSubCategoryChange(null)}
             className={cn(
-              "px-4 py-2 rounded-full text-sm font-montserrat font-medium transition-all duration-200",
+              "px-4 py-2 rounded-full text-sm font-montserrat font-medium transition-all duration-300",
               activeSubCategory === null
-                ? "bg-mineral text-white shadow-md"
+                ? "bg-mineral text-white shadow-[0_0_16px_rgba(147,181,161,0.5)]"
                 : "bg-white/80 text-carbon hover:bg-white hover:shadow-sm border border-white/50"
             )}
           >
@@ -60,12 +62,13 @@ const SubCategoryBar = ({
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.05 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => onSubCategoryChange(subCat.id)}
               className={cn(
-                "px-4 py-2 rounded-full text-sm font-montserrat font-medium transition-all duration-200",
+                "px-4 py-2 rounded-full text-sm font-montserrat font-medium transition-all duration-300",
                 activeSubCategory === subCat.id
-                  ? "bg-mineral text-white shadow-md"
+                  ? "bg-mineral text-white shadow-[0_0_16px_rgba(147,181,161,0.5)]"
                   : "bg-white/80 text-carbon hover:bg-white hover:shadow-sm border border-white/50"
               )}
             >

@@ -60,12 +60,18 @@ const CategoryBentoGrid = ({
     <div className="flex flex-wrap justify-center gap-3">
       {/* "Toutes" button */}
       <motion.button
+        whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
+        transition={{ duration: 0.3 }}
         onClick={() => onCategoryChange(null)}
         className={cn(
           "relative w-24 md:w-28 lg:w-32 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0 border border-white/10",
+          "transition-all duration-300",
           activeCategory === null && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
         )}
+        style={activeCategory === null ? {
+          boxShadow: "0 0 20px 4px rgba(147, 181, 161, 0.5)"
+        } : {}}
       >
         {/* Background with hover zoom */}
         <motion.div 
@@ -107,12 +113,18 @@ const CategoryBentoGrid = ({
         return (
           <motion.button
             key={category.id}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.3 }}
             onClick={() => onCategoryChange(category.id)}
             className={cn(
               "relative w-24 md:w-28 lg:w-32 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0 border border-white/10",
+              "transition-all duration-300",
               isActive && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
             )}
+            style={isActive ? {
+              boxShadow: "0 0 20px 4px rgba(147, 181, 161, 0.5)"
+            } : {}}
           >
             {/* Image/Gradient with hover zoom - NOT the card */}
             <motion.div 

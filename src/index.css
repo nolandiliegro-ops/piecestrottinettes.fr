@@ -313,4 +313,28 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* CTA Glow Effect */
+  .cta-glow {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .cta-glow:hover {
+    box-shadow: 0 8px 30px rgba(147, 181, 161, 0.5);
+    transform: scale(1.05);
+  }
+
+  .cta-glow:active {
+    transform: scale(0.98);
+  }
+
+  /* Filter Glow Active */
+  .filter-glow-active {
+    box-shadow: 0 0 20px 4px rgba(147, 181, 161, 0.5);
+  }
+}
+
+/* Smooth scroll global */
+html {
+  scroll-behavior: smooth;
 }

@@ -139,12 +139,14 @@ const CompatiblePartsSection = ({
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
           className="mt-8 lg:mt-12 text-center"
         >
           <Button
             onClick={handleViewAll}
-            className="rounded-full px-8 py-6 font-display text-base tracking-wide gap-2 bg-carbon text-greige hover:bg-carbon/90 hover:scale-105 transition-all"
+            className="rounded-full px-8 py-6 font-display text-base tracking-wide gap-2 bg-carbon text-greige hover:bg-carbon/90 hover:shadow-[0_8px_30px_rgba(147,181,161,0.4)] transition-all duration-300"
           >
             VOIR LES {totalCount} PIÈCES
             <ArrowRight className="w-5 h-5" />
