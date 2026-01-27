@@ -179,8 +179,8 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
           </p>
         </SheetHeader>
 
-        <ScrollArea className="h-[calc(100vh-180px)] pr-4">
-          <div className="space-y-6 py-6">
+        <ScrollArea className="h-[calc(100vh-180px)]">
+          <div className="space-y-6 py-6 pr-4">
             {/* Status Selector */}
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Statut</label>
@@ -350,25 +350,35 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
             </div>
 
             {/* Order Summary */}
-            <div className="space-y-3 pt-4 border-t border-border/20">
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Sous-total HT</span>
-                <span className="text-foreground">{formatPrice(order.subtotal_ht)}</span>
+            <div className="space-y-3 pt-4 border-t border-border/20 w-full">
+              <div className="flex justify-between items-center text-sm w-full">
+                <span className="text-muted-foreground flex-shrink-0">Sous-total HT</span>
+                <span className="text-foreground font-medium text-right flex-shrink-0">
+                  {formatPrice(order.subtotal_ht)}
+                </span>
               </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">TVA (20%)</span>
-                <span className="text-foreground">{formatPrice(order.tva_amount)}</span>
+              <div className="flex justify-between items-center text-sm w-full">
+                <span className="text-muted-foreground flex-shrink-0">TVA (20%)</span>
+                <span className="text-foreground font-medium text-right flex-shrink-0">
+                  {formatPrice(order.tva_amount)}
+                </span>
               </div>
-              {order.delivery_price !== null && order.delivery_price > 0 && (
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Livraison</span>
-                  <span className="text-foreground">{formatPrice(order.delivery_price)}</span>
-                </div>
-              )}
-              <div className="h-px bg-border/20 my-2" />
-              <div className="flex justify-between items-baseline">
-                <span className="font-semibold text-foreground">Total TTC</span>
-                <span className="text-2xl font-bold text-primary">
+              <div className="flex justify-between items-center text-sm w-full">
+                <span className="text-muted-foreground flex-shrink-0">
+                  Livraison {order.delivery_method ? `(${deliveryMethodConfig[order.delivery_method]?.label || order.delivery_method})` : ''}
+                </span>
+                <span className="text-foreground font-medium text-right flex-shrink-0">
+                  {order.delivery_price && order.delivery_price > 0 
+                    ? formatPrice(order.delivery_price) 
+                    : order.delivery_price === 0 
+                      ? <span className="text-green-500">Gratuit</span>
+                      : '—'}
+                </span>
+              </div>
+              <div className="h-px bg-border/30 my-2" />
+              <div className="flex justify-between items-baseline w-full">
+                <span className="font-semibold text-foreground flex-shrink-0">Total TTC</span>
+                <span className="text-2xl font-bold text-primary flex-shrink-0">
                   {formatPrice(order.total_ttc)}
                 </span>
               </div>
