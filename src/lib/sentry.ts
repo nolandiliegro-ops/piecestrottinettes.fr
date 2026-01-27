@@ -145,13 +145,11 @@ export const addBreadcrumb = (
 };
 
 /**
- * Start a transaction for performance monitoring
+ * Start a span for performance monitoring
+ * Note: startTransaction was deprecated in Sentry v8+, use startSpan instead
  */
-export const startTransaction = (name: string, op: string) => {
-  return Sentry.startTransaction({
-    name,
-    op,
-  });
+export const startSpan = (name: string, op: string, callback: () => void) => {
+  return Sentry.startSpan({ name, op }, callback);
 };
 
 export default Sentry;
