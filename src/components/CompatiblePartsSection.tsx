@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Sparkles, ShieldCheck } from "lucide-react";
-import GamingShowcase from "./showcase/GamingShowcase";
+import GamingCarousel from "./showcase/GamingCarousel";
 import { useCompatibleParts, useCompatiblePartsCount } from "@/hooks/useScooterData";
 
 interface CompatiblePartsSectionProps {
@@ -74,8 +74,8 @@ const CompatiblePartsSection = ({
         </div>
       </motion.div>
 
-      {/* Gaming Showcase */}
-      <GamingShowcase 
+      {/* Gaming Carousel */}
+      <GamingCarousel 
         parts={parts}
         activeModelName={activeModelName}
         isLoading={isLoading}
