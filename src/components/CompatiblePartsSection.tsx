@@ -3,7 +3,8 @@ import { ArrowRight, Sparkles, ShieldCheck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import PartCard from "./parts/PartCard";
+import PremiumCarousel from "./carousel/PremiumCarousel";
+import PremiumProductCard from "./carousel/PremiumProductCard";
 import { useCompatibleParts, useCompatiblePartsCount } from "@/hooks/useScooterData";
 
 interface CompatiblePartsSectionProps {
@@ -11,12 +12,31 @@ interface CompatiblePartsSectionProps {
   activeModelName?: string;
 }
 
+const CarouselSkeleton = () => (
+  <div className="flex gap-4 lg:gap-6 justify-center overflow-hidden px-4">
+    {[...Array(5)].map((_, i) => (
+      <div 
+        key={i} 
+        className="flex-shrink-0 w-[70vw] md:w-[33%] lg:w-[20%] rounded-[20px] p-6"
+        style={{
+          background: "rgba(255, 255, 255, 0.5)",
+          backdropFilter: "blur(10px)",
+        }}
+      >
+        <Skeleton className="aspect-square rounded-xl mb-4" />
+        <Skeleton className="h-4 w-3/4 mb-2" />
+        <Skeleton className="h-6 w-1/2" />
+      </div>
+    ))}
+  </div>
+);
+
 const CompatiblePartsSection = ({ 
   activeModelSlug, 
   activeModelName 
 }: CompatiblePartsSectionProps) => {
   const navigate = useNavigate();
-  const { data: parts = [], isLoading } = useCompatibleParts(activeModelSlug, 8);
+  const { data: parts = [], isLoading } = useCompatibleParts(activeModelSlug, 12);
   const { data: totalCount = 0 } = useCompatiblePartsCount(activeModelSlug);
 
   const handleViewAll = () => {
@@ -90,35 +110,27 @@ const CompatiblePartsSection = ({
         )}
       </motion.div>
 
-      {/* Parts Grid - 4 columns on desktop */}
+      {/* Premium Carousel */}
       {isLoading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-          {[...Array(8)].map((_, i) => (
-            <div key={i} className="bg-white/40 rounded-xl p-4">
-              <Skeleton className="aspect-square rounded-lg mb-3" />
-              <Skeleton className="h-4 w-3/4 mb-2" />
-              <Skeleton className="h-3 w-1/2" />
-            </div>
-          ))}
-        </div>
+        <CarouselSkeleton />
       ) : parts.length > 0 ? (
         <AnimatePresence mode="wait">
           <motion.div
             key={activeModelSlug}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            {parts.map((part, index) => (
-              <PartCard 
-                key={part.id} 
-                part={part} 
-                index={index}
-                className="bg-white/70 hover:bg-white/90"
-              />
-            ))}
+            <PremiumCarousel itemsCount={parts.length}>
+              {parts.map((part, index) => (
+                <PremiumProductCard 
+                  key={part.id}
+                  part={part}
+                  index={index}
+                />
+              ))}
+            </PremiumCarousel>
           </motion.div>
         </AnimatePresence>
       ) : (
@@ -135,7 +147,7 @@ const CompatiblePartsSection = ({
       )}
 
       {/* View All Button */}
-      {totalCount > 8 && (
+      {totalCount > 12 && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
