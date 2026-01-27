@@ -2,3 +2,6 @@ project_id = "kqsxscjtlipregkrmucg"
 
 [functions.generate-category-image]
 verify_jwt = false
+
+[functions.send-order-email]
+verify_jwt = false

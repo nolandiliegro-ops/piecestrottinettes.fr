@@ -186,12 +186,58 @@ const CheckoutPage = () => {
         }
       );
       
-      // 4. Clear cart and redirect with order details
+      // 4. Send confirmation email (non-blocking)
+      const emailPayload = {
+        orderNumber,
+        customerEmail: data.email,
+        customerName: `${data.firstName} ${data.lastName}`,
+        items: items.map(item => ({
+          name: item.name,
+          quantity: item.quantity,
+          price: item.price,
+          imageUrl: item.image_url
+        })),
+        totals: {
+          subtotalHT: totals.subtotalHT,
+          tva: totals.tva,
+          totalTTC: finalTotalTTC,
+          deliveryPrice
+        },
+        address: {
+          street: data.address,
+          postalCode: data.postalCode,
+          city: data.city
+        },
+        deliveryMethod
+      };
+      
+      // Fire and forget - don't await
+      fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-order-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`
+        },
+        body: JSON.stringify(emailPayload)
+      }).then(res => {
+        if (res.ok) {
+          console.log('Order confirmation email sent successfully');
+        } else {
+          console.error('Failed to send order confirmation email');
+        }
+      }).catch(err => {
+        console.error('Error sending order confirmation email:', err);
+      });
+      
+      // 5. Clear cart and redirect with order details
       clearCart();
       setShowConfirmModal(false);
       navigate('/order-success', { 
         state: { 
           orderNumber,
+          customerEmail: data.email,
+          customerFirstName: data.firstName,
+          customerLastName: data.lastName,
           deliveryMethod,
           deliveryPrice,
           recommendations,

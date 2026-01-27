@@ -1,13 +1,39 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, Home, ShoppingBag } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useAuth } from "@/hooks/useAuth";
+import GuestAccountPrompt from "@/components/checkout/GuestAccountPrompt";
+import QuickSignupModal from "@/components/checkout/QuickSignupModal";
+
+interface LocationState {
+  orderNumber?: string;
+  customerEmail?: string;
+  customerFirstName?: string;
+  customerLastName?: string;
+  deliveryMethod?: string;
+  deliveryPrice?: number;
+  recommendations?: string;
+  totalTTC?: number;
+}
 
 const OrderSuccessPage = () => {
   const location = useLocation();
-  const orderNumber = location.state?.orderNumber || `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+  const { user } = useAuth();
+  const [showSignupModal, setShowSignupModal] = useState(false);
+  
+  // Get data from location state
+  const state = location.state as LocationState | null;
+  const orderNumber = state?.orderNumber || `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+  const customerEmail = state?.customerEmail || "";
+  const customerFirstName = state?.customerFirstName || "";
+  const customerLastName = state?.customerLastName || "";
+  
+  // Check if user is a guest (not logged in)
+  const isGuest = !user && customerEmail;
 
   // Slogan words for stagger animation
   const sloganWords = ["ROULE", "·", "RÉPARE", "·", "DURE"];
@@ -15,6 +41,16 @@ const OrderSuccessPage = () => {
   return (
     <div className="min-h-screen bg-greige">
       <Header />
+      
+      {/* Quick Signup Modal */}
+      <QuickSignupModal
+        isOpen={showSignupModal}
+        onClose={() => setShowSignupModal(false)}
+        email={customerEmail}
+        firstName={customerFirstName}
+        lastName={customerLastName}
+        orderNumber={orderNumber}
+      />
       
       <main className="pt-24 pb-16 px-4">
         <div className="max-w-3xl mx-auto text-center py-12 md:py-20">
@@ -133,11 +169,19 @@ const OrderSuccessPage = () => {
             className="h-px bg-gradient-to-r from-transparent via-mineral/40 to-transparent mb-12 max-w-md mx-auto"
           />
 
+          {/* Guest Account Prompt - Only show for guests with email */}
+          {isGuest && (
+            <GuestAccountPrompt
+              email={customerEmail}
+              onCreateAccount={() => setShowSignupModal(true)}
+            />
+          )}
+
           {/* Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.6, duration: 0.5 }}
+            transition={{ delay: isGuest ? 2.0 : 1.6, duration: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
