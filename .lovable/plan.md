@@ -1,9 +1,9 @@
 
-# Carrousel Premium "Pièces Certifiées" - Showcase Ultra-Design
+# GamingShowcase - Carrousel Spectaculaire Style Jeu Vidéo
 
 ## Résumé
 
-Transformation de la section "Pièces Certifiées" en carrousel horizontal premium avec effet de profondeur, 5 produits visibles sur desktop, card centrale en focus (scale 1.1), navigation élégante, et synchronisation avec le Hero scooter selector.
+Remplacement du carrousel Premium classique par un showcase immersif style jeu vidéo où chaque pièce devient LA STAR sur fond noir avec effets spectaculaires : spotlight radial, rotation 3D, glow pulsant, grille néon en arrière-plan, et navigation XXL futuriste.
 
 ---
 
@@ -11,199 +11,475 @@ Transformation de la section "Pièces Certifiées" en carrousel horizontal premi
 
 | Fichier | Action |
 |---------|--------|
-| `src/components/carousel/PremiumCarousel.tsx` | CRÉER - Composant carrousel réutilisable |
-| `src/components/carousel/PremiumProductCard.tsx` | CRÉER - Card produit premium pour carrousel |
-| `src/components/CompatiblePartsSection.tsx` | MODIFIER - Intégrer le nouveau carrousel |
+| `src/components/showcase/GamingShowcase.tsx` | CRÉER - Composant principal showcase |
+| `src/components/showcase/GamingProductCard.tsx` | CRÉER - Card produit spectaculaire plein écran |
+| `src/components/showcase/GamingThumbnails.tsx` | CRÉER - Miniatures navigation en bas |
+| `src/components/showcase/GamingStatBar.tsx` | CRÉER - Barre de stats style gaming |
+| `src/components/CompatiblePartsSection.tsx` | MODIFIER - Utiliser GamingShowcase |
+| `src/index.css` | MODIFIER - Ajouter styles gaming néon |
 
 ---
 
-## Architecture du Carrousel
+## Architecture du Showcase
 
 ```text
 +------------------------------------------------------------------+
-|              7 PIÈCES CERTIFIÉES    [100% Compatible]             |
-|                  Pour votre Xiaomi Mi Pro 2                       |
-+------------------------------------------------------------------+
+|                    FOND NOIR + GRILLE NÉON                        |
 |                                                                    |
-|  [←]  [Card] [Card] [ CARD FOCUS ] [Card] [Card]  [→]            |
-|         0.9   0.95     1.1 scale    0.95   0.9                    |
+|  [◀]                                                        [▶]   |
+|  XXL                     ★ IMAGE 500x500 ★                   XXL  |
+|                          SPOTLIGHT RADIAL                          |
+|                          GLOW PULSANT                              |
+|                          ROTATION 3D HOVER                         |
 |                                                                    |
-|                    • • • ● • • •                                   |
+|                    PNEU TUBELESS 10x2.5                           |
+|                        49.99 €  [GLOW]                            |
+|                                                                    |
+|     [████████████ QUALITÉ ████████████] 95%                       |
+|     [██████████ COMPATIBILITÉ ██████████] 100%                    |
+|     [████████ DURABILITÉ ████████] 85%                            |
+|                                                                    |
+|                   [ ACHETER MAINTENANT ]                          |
+|                                                                    |
+|           [○] [○] [●] [○] [○] [○] [○]                            |
+|           60x60 miniatures avec glow actif                         |
 +------------------------------------------------------------------+
 ```
 
 ---
 
-## 1. PremiumCarousel.tsx - Composant Réutilisable
-
-Hook Embla avec configuration premium :
-
-```typescript
-const [emblaRef, emblaApi] = useEmblaCarousel({
-  loop: true,
-  align: "center",
-  slidesToScroll: 1,
-  containScroll: false, // Allow partial slides
-  dragFree: false,
-});
-```
+## 1. GamingShowcase.tsx - Composant Principal
 
 **Props Interface** :
 
 ```typescript
-interface PremiumCarouselProps {
-  children: React.ReactNode;
-  itemsCount: number;
-  onSlideChange?: (index: number) => void;
-  autoPlay?: boolean;
-  autoPlayInterval?: number;
-  className?: string;
+interface GamingShowcaseProps {
+  parts: CompatiblePart[];
+  activeModelName?: string;
+  isLoading?: boolean;
 }
 ```
 
-**Responsive Configuration** :
+**Structure du Composant** :
 
-| Breakpoint | Cards Visibles | Card Width |
-|------------|----------------|------------|
-| Desktop (lg) | 5 | 20% viewport |
-| Tablet (md) | 3 | 33% viewport |
-| Mobile | 1.5 | 70% viewport |
+- Container plein largeur avec fond noir/gradient
+- Zone centrale pour le produit actif (un seul visible)
+- Flèches de navigation XXL (80x80px) style futuriste
+- Miniatures en bas (5 visibles, 60x60px)
+- Transition spectaculaire entre produits
 
-**Navigation Arrows** :
-
-- Position : Absolue, centrée verticalement
-- Style : Glassmorphism circulaire (50x50px)
-- Background : `rgba(255,255,255,0.95)` + `backdrop-blur-sm`
-- Border : `1px solid rgba(147,181,161,0.3)`
-- Hover : `scale(1.1)` + glow Mineral Green
-- Icons : ChevronLeft / ChevronRight (Lucide)
-
-**Pagination Dots** :
-
-- Position : Centré, sous le carrousel (mt-8)
-- Active : `w-8 h-2` pill shape, `bg-mineral`
-- Inactive : `w-2 h-2` circle, `bg-mineral/30`
-- Transition : `0.3s ease-out`
-
----
-
-## 2. PremiumProductCard.tsx - Card Showcase
-
-**Dimensions et Position** :
-
-```typescript
-// Scale dynamique basé sur la position
-const getScale = (distanceFromCenter: number) => {
-  if (distanceFromCenter === 0) return 1.1;  // Focus card
-  if (distanceFromCenter === 1) return 0.95;
-  return 0.9;
-};
-
-// Opacity parallax
-const getOpacity = (distanceFromCenter: number) => {
-  if (distanceFromCenter === 0) return 1;
-  if (distanceFromCenter === 1) return 0.85;
-  return 0.7;
-};
-```
-
-**Styles de la Card** :
+**Fond Spectaculaire** :
 
 ```typescript
 style={{
-  background: "rgba(255, 255, 255, 0.9)",
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: "1px solid rgba(147, 181, 161, 0.2)",
-  borderRadius: "20px",
-  padding: "24px",
-  boxShadow: "0 8px 32px rgba(26, 26, 26, 0.08)",
+  background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%)",
+  minHeight: "600px",
+  position: "relative",
+  overflow: "hidden",
 }}
 ```
 
-**Image Container** :
+**Grille Néon en Arrière-plan** :
 
-```typescript
-<motion.div 
-  className="relative w-[200px] h-[200px] mx-auto"
-  whileHover={{ 
-    scale: 1.05, 
-    rotate: 2,
-    transition: { duration: 0.4, ease: "easeOut" }
-  }}
->
-  <img 
-    src={product.image_url} 
-    alt={product.name}
-    className="w-full h-full object-contain"
-    style={{ background: "transparent" }}
-  />
-</motion.div>
-```
+```css
+.gaming-grid-bg {
+  background-image: 
+    linear-gradient(rgba(147, 181, 161, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 181, 161, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridPulse 4s ease-in-out infinite;
+}
 
-**Informations Produit** :
-
-| Élément | Style |
-|---------|-------|
-| Nom | `font-weight: 600`, `font-size: 14px`, `line-clamp-2` |
-| Prix | `font-size: 20px`, `font-weight: 700`, `color: #93B5A1` |
-| Badge COMPATIBLE | Glassmorphism, Mineral Green, pulse animation |
-| Stock | Badge avec dot animé |
-
-**Interactions Hover** :
-
-```typescript
-<motion.div
-  whileHover={{ 
-    y: -8,
-    boxShadow: "0 16px 48px rgba(147, 181, 161, 0.25)"
-  }}
-  transition={{ duration: 0.4, ease: "easeOut" }}
->
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
 ```
 
 ---
 
-## 3. Modifications CompatiblePartsSection.tsx
+## 2. GamingProductCard.tsx - Showcase Plein Écran
 
-**Avant** : Grid 4 colonnes avec PartCard
-
-**Après** : PremiumCarousel avec PremiumProductCard
-
-**Changements Clés** :
-
-1. Importer les nouveaux composants
-2. Remplacer le grid par le carrousel
-3. Garder le header existant (titre dynamique + badge)
-4. Augmenter le limit de pièces (8 → 12 pour le carousel)
-5. Ajouter AnimatePresence pour les transitions modèle
-
-**Code Structure** :
+**Image STAR - 500x500px** :
 
 ```typescript
+<motion.div
+  className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] mx-auto"
+  initial={{ scale: 0.8, opacity: 0 }}
+  animate={{ 
+    scale: 1, 
+    opacity: 1,
+    rotateY: [0, 2, 0, -2, 0], // Rotation subtile continue
+  }}
+  transition={{ 
+    scale: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+    rotateY: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+  }}
+  whileHover={{ 
+    rotateY: 15,
+    scale: 1.05,
+  }}
+>
+```
+
+**Spotlight Radial** :
+
+```typescript
+// Derrière l'image
+<div 
+  className="absolute inset-0 -z-10"
+  style={{
+    background: "radial-gradient(circle at 50% 50%, rgba(147, 181, 161, 0.3) 0%, rgba(147, 181, 161, 0.1) 30%, transparent 70%)",
+    filter: "blur(60px)",
+  }}
+/>
+```
+
+**Glow Pulsant** :
+
+```css
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(147, 181, 161, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(147, 181, 161, 0.8));
+  }
+}
+
+.gaming-product-glow {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+```
+
+**Animation d'Entrée "Legendary Item"** :
+
+```typescript
+// Flash blanc au changement de produit
+<motion.div
+  key={currentIndex}
+  initial={{ opacity: 1, scale: 1.5 }}
+  animate={{ opacity: 0, scale: 2 }}
+  transition={{ duration: 0.3 }}
+  className="absolute inset-0 bg-white/30 rounded-full pointer-events-none"
+/>
+```
+
+---
+
+## 3. Informations Style Gaming
+
+**Titre du Produit** :
+
+```typescript
+<motion.h2
+  className="text-white text-2xl md:text-3xl lg:text-4xl font-bold text-center uppercase tracking-wider"
+  style={{ 
+    textShadow: "0 0 20px rgba(255,255,255,0.3)",
+    fontWeight: 800,
+  }}
+>
+  {part.name}
+</motion.h2>
+```
+
+**Prix avec Glow** :
+
+```typescript
+<motion.div
+  className="text-4xl md:text-5xl lg:text-6xl font-black text-center"
+  style={{
+    color: "#93B5A1",
+    textShadow: "0 0 30px rgba(147, 181, 161, 0.6), 0 0 60px rgba(147, 181, 161, 0.3)",
+  }}
+  animate={{
+    textShadow: [
+      "0 0 30px rgba(147, 181, 161, 0.6)",
+      "0 0 50px rgba(147, 181, 161, 0.9)",
+      "0 0 30px rgba(147, 181, 161, 0.6)",
+    ]
+  }}
+  transition={{ duration: 2, repeat: Infinity }}
+>
+  {formatPrice(part.price)}
+</motion.div>
+```
+
+**Badge COMPATIBLE - Style Hexagonal Néon** :
+
+```typescript
+<div 
+  className="inline-flex items-center gap-2 px-4 py-2"
+  style={{
+    background: "rgba(147, 181, 161, 0.15)",
+    border: "1px solid rgba(147, 181, 161, 0.5)",
+    clipPath: "polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%)", // Hexagonal
+    boxShadow: "0 0 20px rgba(147, 181, 161, 0.3), inset 0 0 20px rgba(147, 181, 161, 0.1)",
+  }}
+>
+  <ShieldCheck className="w-5 h-5 text-mineral" />
+  <span className="text-mineral font-bold uppercase tracking-wider">
+    100% Compatible
+  </span>
+</div>
+```
+
+---
+
+## 4. GamingStatBar.tsx - Barres de Progression
+
+**Stats Affichées** :
+
+| Stat | Valeur | Description |
+|------|--------|-------------|
+| Qualité | 85-100% | Basé sur note ou par défaut |
+| Compatibilité | 100% | Toujours 100% car filtré |
+| Durabilité | 70-95% | Basé sur technical_metadata ou par défaut |
+
+**Style des Barres** :
+
+```typescript
+<div className="space-y-3 max-w-md mx-auto">
+  {stats.map((stat) => (
+    <div key={stat.name} className="flex items-center gap-4">
+      <span className="text-white/70 text-sm uppercase tracking-wider w-32">
+        {stat.name}
+      </span>
+      <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
+        <motion.div
+          className="h-full rounded-full"
+          style={{
+            background: "linear-gradient(90deg, #93B5A1 0%, #a8c5b3 100%)",
+            boxShadow: "0 0 10px rgba(147, 181, 161, 0.5)",
+          }}
+          initial={{ width: 0 }}
+          animate={{ width: `${stat.value}%` }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        />
+      </div>
+      <span className="text-mineral font-bold w-12 text-right">
+        {stat.value}%
+      </span>
+    </div>
+  ))}
+</div>
+```
+
+---
+
+## 5. Navigation Flèches XXL
+
+**Style Futuriste** :
+
+```typescript
+<motion.button
+  onClick={goToPrev}
+  className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <div 
+    className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center"
+    style={{
+      background: "rgba(147, 181, 161, 0.1)",
+      border: "2px solid rgba(147, 181, 161, 0.4)",
+      borderRadius: "50%",
+      boxShadow: "0 0 20px rgba(147, 181, 161, 0.2), inset 0 0 20px rgba(147, 181, 161, 0.1)",
+    }}
+  >
+    <ChevronLeft className="w-8 h-8 lg:w-10 lg:h-10 text-mineral" />
+  </div>
+</motion.button>
+```
+
+**Hover Effect** :
+
+```typescript
+whileHover={{
+  scale: 1.1,
+  boxShadow: "0 0 40px rgba(147, 181, 161, 0.6)",
+}}
+```
+
+---
+
+## 6. GamingThumbnails.tsx - Miniatures
+
+**Layout** :
+
+- 5 miniatures visibles (60x60px)
+- Centrées en bas
+- Scroll horizontal si plus de 5
+
+**Style Miniature Active vs Inactive** :
+
+```typescript
+// Inactive
+style={{
+  background: "rgba(255, 255, 255, 0.05)",
+  border: "1px solid rgba(255, 255, 255, 0.1)",
+  borderRadius: "8px",
+}}
+
+// Active
+style={{
+  background: "rgba(147, 181, 161, 0.2)",
+  border: "2px solid rgba(147, 181, 161, 0.8)",
+  borderRadius: "8px",
+  boxShadow: "0 0 20px rgba(147, 181, 161, 0.5)",
+}}
+```
+
+---
+
+## 7. Bouton ACHETER - Style Gaming
+
+```typescript
+<motion.button
+  className="px-8 py-4 font-bold text-lg uppercase tracking-wider"
+  style={{
+    background: "linear-gradient(135deg, #93B5A1 0%, #7da38d 100%)",
+    border: "none",
+    borderRadius: "8px",
+    color: "#0a0a0a",
+    boxShadow: "0 0 30px rgba(147, 181, 161, 0.4), 0 4px 20px rgba(0,0,0,0.3)",
+  }}
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0 0 50px rgba(147, 181, 161, 0.8), 0 8px 30px rgba(0,0,0,0.4)",
+  }}
+  whileTap={{ scale: 0.98 }}
+>
+  ACHETER MAINTENANT
+</motion.button>
+```
+
+---
+
+## 8. Animations de Transition
+
+**Changement de Produit** :
+
+```typescript
+<AnimatePresence mode="wait">
+  <motion.div
+    key={currentIndex}
+    initial={{ opacity: 0, scale: 0.8, x: direction > 0 ? 100 : -100 }}
+    animate={{ opacity: 1, scale: 1, x: 0 }}
+    exit={{ opacity: 0, scale: 0.8, x: direction > 0 ? -100 : 100 }}
+    transition={{ 
+      duration: 0.6, 
+      ease: [0.25, 0.46, 0.45, 0.94] 
+    }}
+  >
+    <GamingProductCard part={parts[currentIndex]} />
+  </motion.div>
+</AnimatePresence>
+```
+
+---
+
+## 9. CSS Gaming - index.css
+
+```css
+/* Gaming Showcase Styles */
+.gaming-showcase-container {
+  perspective: 2000px;
+}
+
+/* Grille Néon Background */
+.gaming-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(147, 181, 161, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 181, 161, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridPulse 4s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Glow Pulsant sur Image */
+.gaming-product-glow {
+  animation: productGlow 2s ease-in-out infinite;
+}
+
+@keyframes productGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(147, 181, 161, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(147, 181, 161, 0.8));
+  }
+}
+
+/* Rayons Lumineux */
+.gaming-light-rays {
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg,
+    rgba(147, 181, 161, 0.05) 10deg,
+    transparent 20deg,
+    transparent 90deg,
+    rgba(147, 181, 161, 0.05) 100deg,
+    transparent 110deg,
+    transparent 180deg,
+    rgba(147, 181, 161, 0.05) 190deg,
+    transparent 200deg,
+    transparent 270deg,
+    rgba(147, 181, 161, 0.05) 280deg,
+    transparent 290deg
+  );
+  animation: raysSpin 20s linear infinite;
+}
+
+@keyframes raysSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Navigation Arrows Glow */
+.gaming-nav-btn:hover {
+  box-shadow: 0 0 40px rgba(147, 181, 161, 0.6);
+}
+```
+
+---
+
+## 10. Responsive Breakpoints
+
+| Élément | Mobile | Tablet | Desktop |
+|---------|--------|--------|---------|
+| Image produit | 300x300px | 400x400px | 500x500px |
+| Titre | 24px | 28px | 36px |
+| Prix | 36px | 48px | 56px |
+| Flèches nav | 64x64px | 72x72px | 80x80px |
+| Miniatures | 50x50px | 55x55px | 60x60px |
+| Container height | 500px | 550px | 650px |
+
+---
+
+## 11. Modifications CompatiblePartsSection.tsx
+
+Remplacer le PremiumCarousel par GamingShowcase :
+
+```typescript
+import GamingShowcase from "./showcase/GamingShowcase";
+
+// Dans le JSX
 {isLoading ? (
-  <CarouselSkeleton />
+  <GamingShowcaseSkeleton />
 ) : parts.length > 0 ? (
-  <AnimatePresence mode="wait">
-    <motion.div
-      key={activeModelSlug}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.5 }}
-    >
-      <PremiumCarousel itemsCount={parts.length}>
-        {parts.map((part, index) => (
-          <PremiumProductCard 
-            key={part.id}
-            part={part}
-            index={index}
-            isCenter={/* calculated */}
-          />
-        ))}
-      </PremiumCarousel>
-    </motion.div>
-  </AnimatePresence>
+  <GamingShowcase 
+    parts={parts}
+    activeModelName={activeModelName}
+  />
 ) : (
   <EmptyState />
 )}
@@ -211,163 +487,25 @@ style={{
 
 ---
 
-## 4. Animations et Transitions
+## Résumé des Effets Visuels
 
-**Transition entre slides** :
-
-```typescript
-transition: {
-  duration: 0.6,
-  ease: [0.25, 0.46, 0.45, 0.94] // easeOutQuart
-}
-```
-
-**Effet Parallax** :
-
-- Cards éloignées du centre se déplacent légèrement plus lentement
-- Créé par le scale différentiel + opacity
-
-**Fade-in au chargement** :
-
-```typescript
-initial={{ opacity: 0, scale: 0.95 }}
-animate={{ opacity: 1, scale: 1 }}
-transition={{ 
-  duration: 0.5, 
-  delay: index * 0.1,
-  ease: "easeOut"
-}}
-```
-
-**Transition Modèle** (quand scooter change) :
-
-```typescript
-// AnimatePresence avec mode="wait"
-exit: { opacity: 0, x: -50 }
-enter: { opacity: 0, x: 50 }
-```
-
----
-
-## 5. Responsive Breakpoints
-
-**Desktop (≥1024px)** :
-
-- 5 cards visibles
-- Card width : ~220px
-- Gap : 24px
-- Navigation arrows : visibles en permanence
-- Dots : 12 max visibles
-
-**Tablet (≥768px, <1024px)** :
-
-- 3 cards visibles
-- Card width : ~240px
-- Gap : 16px
-- Navigation arrows : visibles
-- Dots : 8 max visibles
-
-**Mobile (<768px)** :
-
-- 1.5 cards visibles (suggère swipe)
-- Card width : 70vw
-- Gap : 16px
-- Navigation arrows : cachés ou petits
-- Swipe enabled
-- Dots : 6 max visibles
-
----
-
-## 6. Swipe Mobile
-
-Configuration Embla pour mobile :
-
-```typescript
-const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-
-const emblaOptions = {
-  loop: true,
-  align: "center",
-  dragFree: isMobile, // Free drag on mobile
-  containScroll: isMobile ? "trimSnaps" : false,
-};
-```
-
-Touch events :
-
-- `touchstart`, `touchmove`, `touchend` natifs via Embla
-- Threshold minimal pour activer le swipe
-
----
-
-## 7. CSS Classes Utilitaires
-
-Ajouter dans `index.css` :
-
-```css
-/* Premium Carousel Styles */
-.premium-carousel-container {
-  perspective: 1000px;
-  perspective-origin: center;
-}
-
-.premium-card-focus {
-  z-index: 10;
-  filter: drop-shadow(0 12px 24px rgba(147, 181, 161, 0.2));
-}
-
-.premium-card-side {
-  filter: grayscale(10%);
-}
-
-/* Carousel Navigation */
-.carousel-nav-btn {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.carousel-nav-btn:hover {
-  box-shadow: 0 8px 30px rgba(147, 181, 161, 0.4);
-}
-```
-
----
-
-## Résumé des Interactions
-
-| Élément | Action | Animation |
-|---------|--------|-----------|
-| Card centrale | Focus | `scale(1.1)`, full opacity, z-index élevé |
-| Cards latérales | Background | `scale(0.9-0.95)`, opacity réduite |
-| Hover card | Lift | `translateY(-8px)` + glow Mineral |
-| Image hover | Zoom+Rotate | `scale(1.05)` + `rotate(2deg)` |
-| Navigation | Click | Slide 0.6s ease-out |
-| Swipe mobile | Drag | Native Embla avec momentum |
-| Changement modèle | Transition | Fade-out/Fade-in avec AnimatePresence |
-| Dots | Click | Jump to slide avec transition |
-
----
-
-## Couleurs et Tokens
-
-| Élément | Valeur |
-|---------|--------|
-| Card background | `rgba(255, 255, 255, 0.9)` |
-| Card blur | `blur(20px)` |
-| Card border | `1px solid rgba(147, 181, 161, 0.2)` |
-| Card radius | `20px` |
-| Card shadow | `0 8px 32px rgba(26, 26, 26, 0.08)` |
-| Focus shadow | `0 16px 48px rgba(147, 181, 161, 0.25)` |
-| Price color | `#93B5A1` (Mineral Green) |
-| Transition duration | `0.6s` |
-| Transition easing | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
+| Effet | Animation | Durée |
+|-------|-----------|-------|
+| Grille néon background | Pulse opacity | 4s infinite |
+| Glow pulsant image | Drop-shadow pulse | 2s infinite |
+| Rotation subtile image | rotateY 2deg | 6s infinite |
+| Flash "Legendary" | White flash on change | 0.3s |
+| Rayons lumineux | Rotation lente | 20s infinite |
+| Prix glow | Text-shadow pulse | 2s infinite |
+| Transition produits | Slide + Scale | 0.6s |
 
 ---
 
 ## Résultat Attendu
 
-1. **Showcase Premium** : Cards avec effet de profondeur, focus central visible
-2. **Navigation fluide** : Flèches élégantes + dots + swipe mobile
-3. **Connexion Hero** : Mise à jour automatique quand le scooter change
-4. **Responsive parfait** : 5 → 3 → 1.5 cards selon la taille d'écran
-5. **Micro-interactions** : Lift, glow, zoom image au hover
-6. **Performance** : Embla Carousel optimisé, animations GPU-accelerated
+1. **Immersion totale** : Fond noir, grille néon, effets lumineux
+2. **Produit en STAR** : Image 500x500px avec spotlight et glow pulsant
+3. **UI Gaming** : Stats barres, badge hexagonal, bouton néon
+4. **Navigation futuriste** : Flèches XXL avec glow hover
+5. **Transitions spectaculaires** : Slide + flash + scale
+6. **Responsive parfait** : Adapté mobile avec tailles réduites
