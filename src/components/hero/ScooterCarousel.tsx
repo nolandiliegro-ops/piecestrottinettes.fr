@@ -25,14 +25,14 @@ interface ScooterCarouselProps {
   currentIndex?: number;
 }
 
-// Animation variants for staggered specs
+// Animation variants for staggered specs - AMPLIFIED for dramatic effect
 const specsContainerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.3,
+      staggerChildren: 0.2,  // 0.2s entre chaque - plus de décalage visible
+      delayChildren: 0.4,    // Délai initial plus long
     }
   }
 };
@@ -40,8 +40,8 @@ const specsContainerVariants = {
 const specItemVariants = {
   hidden: { 
     opacity: 0, 
-    x: 20,
-    scale: 0.95
+    x: 80,      // 80px au lieu de 20px - TRÈS visible
+    scale: 0.8  // Plus petit pour effet dramatique
   },
   visible: { 
     opacity: 1, 
@@ -49,16 +49,17 @@ const specItemVariants = {
     scale: 1,
     transition: {
       type: "spring" as const,
-      damping: 15,
-      stiffness: 200,
+      damping: 8,       // Moins amorti = plus de bounce
+      stiffness: 120,   // Moins rigide = bounce plus long
+      mass: 1.2,        // Plus lourd = rebond visible
     }
   }
 };
 
-// Premium transition config
+// Premium transition config - AMPLIFIED
 const premiumTransition = {
-  duration: 0.8,
-  ease: [0.16, 1, 0.3, 1] as [number, number, number, number], // Expo.out cubic-bezier
+  duration: 1,  // 1s au lieu de 0.8s
+  ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number], // easeOutQuart - plus fluide
 };
 
 // Circular Progress Component for auto-play
@@ -72,7 +73,7 @@ const CircularProgress = ({
   progress: number;
 }) => {
   return (
-    <div className="relative w-8 h-8 lg:w-10 lg:h-10">
+    <div className="relative w-10 h-10 lg:w-14 lg:h-14">
       <svg className="w-full h-full -rotate-90" viewBox="0 0 32 32">
         <circle
           cx="16" 
@@ -80,7 +81,7 @@ const CircularProgress = ({
           r="14"
           fill="none"
           stroke="hsl(var(--mineral) / 0.2)"
-          strokeWidth="2"
+          strokeWidth="3"
         />
         <motion.circle
           cx="16" 
@@ -88,18 +89,21 @@ const CircularProgress = ({
           r="14"
           fill="none"
           stroke="hsl(var(--mineral))"
-          strokeWidth="2"
+          strokeWidth="3"
           strokeLinecap="round"
           strokeDasharray={88} // 2 * PI * 14
           strokeDashoffset={88 - (progress * 88)}
-          style={{ transformOrigin: "center" }}
+          style={{ 
+            transformOrigin: "center",
+            filter: "drop-shadow(0 0 6px hsl(var(--mineral) / 0.8))"
+          }}
         />
       </svg>
       <div className="absolute inset-0 flex items-center justify-center">
         {isPaused ? (
-          <Play className="w-3 h-3 lg:w-4 lg:h-4 text-mineral" />
+          <Play className="w-4 h-4 lg:w-5 lg:h-5 text-mineral" />
         ) : (
-          <Pause className="w-3 h-3 lg:w-4 lg:h-4 text-mineral/50" />
+          <Pause className="w-4 h-4 lg:w-5 lg:h-5 text-mineral/60" />
         )}
       </div>
     </div>
@@ -285,11 +289,19 @@ const ScooterCarousel = ({
         }}
       />
 
-      {/* Navigation Arrow LEFT - Visible on all screens */}
+      {/* Navigation Arrow LEFT - Visible on all screens - AMPLIFIED */}
       <motion.div 
         className="absolute left-1 sm:left-4 lg:left-12 xl:left-16 top-1/2 -translate-y-1/2 z-20"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{ 
+          scale: 1.2, 
+          rotate: -5,
+          boxShadow: "0 8px 25px rgba(147,181,161,0.4)"
+        }}
+        whileTap={{ 
+          scale: 0.85,
+          rotate: 0
+        }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <Button
           variant="outline"
@@ -301,11 +313,19 @@ const ScooterCarousel = ({
         </Button>
       </motion.div>
 
-      {/* Navigation Arrow RIGHT - Visible on all screens */}
+      {/* Navigation Arrow RIGHT - Visible on all screens - AMPLIFIED */}
       <motion.div 
         className="absolute right-1 sm:right-4 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 z-20"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{ 
+          scale: 1.2, 
+          rotate: 5,
+          boxShadow: "0 8px 25px rgba(147,181,161,0.4)"
+        }}
+        whileTap={{ 
+          scale: 0.85,
+          rotate: 0
+        }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <Button
           variant="outline"
@@ -485,14 +505,20 @@ const ScooterCarousel = ({
                   setAutoPlayProgress(0);
                   onSelect(index);
                 }}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 0.85 }}
                 animate={{
+                  scale: isActive ? 1.1 : 1,
                   boxShadow: isActive 
-                    ? "0 0 20px hsl(var(--mineral) / 0.6)" 
+                    ? "0 0 30px 8px hsl(var(--mineral) / 0.7), 0 0 60px 16px hsl(var(--mineral) / 0.3)" 
                     : "0 0 0px transparent"
                 }}
-                transition={{ duration: 0.3 }}
+                transition={{ 
+                  duration: 0.3,
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 15
+                }}
                 className={cn(
                   "rounded-full transition-all duration-300",
                   isActive
@@ -573,8 +599,8 @@ const ScooterCarousel = ({
                         className="relative w-full h-full"
                         initial={{ 
                           opacity: 0, 
-                          scale: 0.95,
-                          x: slideDirection === 'right' ? 60 : -60
+                          scale: 0.9,                                    // 0.9 au lieu de 0.95 - plus dramatique
+                          x: slideDirection === 'right' ? 100 : -100    // 100px au lieu de 60px
                         }}
                         animate={{ 
                           opacity: 1, 
@@ -583,8 +609,8 @@ const ScooterCarousel = ({
                         }}
                         exit={{ 
                           opacity: 0, 
-                          scale: 0.95,
-                          x: slideDirection === 'right' ? -40 : 40
+                          scale: 0.9,
+                          x: slideDirection === 'right' ? -80 : 80      // 80px au lieu de 40px
                         }}
                         transition={premiumTransition}
                       >
@@ -599,7 +625,7 @@ const ScooterCarousel = ({
                           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                         />
                         
-                        {/* Image with parallax effect (slightly slower) */}
+                        {/* Image with AMPLIFIED parallax effect (slower = true parallax) */}
                         <motion.img
                           src={imageSrc}
                           alt={`${model.brand} ${model.name}`}
@@ -609,20 +635,23 @@ const ScooterCarousel = ({
                             WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)'
                           }}
                           initial={{ 
-                            x: slideDirection === 'right' ? 80 : -80,
-                            opacity: 0 
+                            x: slideDirection === 'right' ? 150 : -150,   // 150px au lieu de 80px
+                            opacity: 0,
+                            scale: 0.95
                           }}
                           animate={{ 
                             x: 0,
-                            opacity: 1 
+                            opacity: 1,
+                            scale: 1
                           }}
                           exit={{ 
-                            x: slideDirection === 'right' ? -50 : 50,
-                            opacity: 0 
+                            x: slideDirection === 'right' ? -100 : 100,   // 100px au lieu de 50px
+                            opacity: 0,
+                            scale: 0.95
                           }}
                           transition={{ 
-                            duration: 1, 
-                            ease: [0.16, 1, 0.3, 1] as [number, number, number, number] // Parallax: slower than container
+                            duration: 1.2,                                 // Plus lent = PARALLAX marqué
+                            ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number]
                           }}
                         />
                         
