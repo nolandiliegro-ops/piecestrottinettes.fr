@@ -1,367 +1,63 @@
 
 
-# Transformation du Carrousel en Hub E-commerce Interactif Premium
+# Quick View Modal Premium - Hub E-commerce Interactif
 
-## Diagnostic Confirme
+## Contexte Actuel
 
-### Bug 404 Identifie
-Le fichier `GamingCarouselCard.tsx` navigue vers `/pieces/${part.slug}` (ligne 61) mais la route definie dans `App.tsx` est `/piece/:slug` (ligne 55 - singulier).
-
-### Architecture Existante
-- Le carrousel utilise Embla avec `loop: true` et `align: center`
-- Les cartes ont deja des effets de profondeur (scale, opacity, blur)
-- Le hook `useCart` et `useFavorites` sont prets a l'emploi
-- Les animations CSS `floating-product-center` et `floating-product-image` existent
-
----
-
-## Vue d'Ensemble de l'Implementation
+Le composant `QuickViewModal.tsx` existe déjà mais nécessite plusieurs améliorations pour atteindre le niveau "Luxury UX" demandé :
 
 ```text
-ARCHITECTURE DES MODIFICATIONS
-
-src/components/showcase/
-├── GamingCarousel.tsx        [AMELIORATION MINEURE]
-│   └── Ajouter prop onCardClick pour centrer une carte
-│
-├── GamingCarouselCard.tsx    [REFACTORISATION MAJEURE]
-│   ├── Fix 404 : /pieces/ → /piece/
-│   ├── Hover Actions Bar (Favori, Apercu, Panier)
-│   ├── Bouton "Commander Direct" avec animation
-│   └── Integration QuickViewModal
-│
-└── QuickViewModal.tsx        [NOUVEAU FICHIER]
-    └── Modale luxe avec blur backdrop
+ETAT ACTUEL                          OBJECTIF
++---------------------------+        +----------------------------------+
+| Modal basique             |   -->  | Modal Premium avec :             |
+| - Backdrop blur 8px       |        | - Backdrop blur 12px + plus dark |
+| - Pas de description      |        | - Description technique          |
+| - Pas de badge compat.    |        | - Badge compatibilité dynamique  |
+| - Pas de touche ESC       |        | - Fermeture ESC                  |
+| - Clic image = navigation |        | - Clic image = Quick View        |
++---------------------------+        +----------------------------------+
 ```
 
 ---
 
-## Phase 1 : Correction du Bug 404
+## Modifications Requises
 
-### Fichier : `src/components/showcase/GamingCarouselCard.tsx`
+### 1. Fichier : `src/components/showcase/GamingCarouselCard.tsx`
 
-Ligne 61 - Modification simple :
+**Probleme actuel** : Le clic sur l'image declenche `handleClick()` qui navigue vers `/piece/{slug}`.
+
+**Solution** : Modifier le comportement du clic sur l'image pour ouvrir la Quick View au lieu de naviguer.
+
 ```typescript
-// AVANT (ligne 61)
-navigate(`/pieces/${part.slug}`);
+// AVANT (ligne 170)
+onClick={handleClick}
 
-// APRES
-navigate(`/piece/${part.slug}`);
+// APRES - Intercepter le clic image pour ouvrir Quick View
+const handleImageClick = (e: React.MouseEvent) => {
+  e.stopPropagation();
+  if (isCenter) {
+    setShowQuickView(true);
+  } else {
+    // Pour les cartes non-centrales, on pourrait scroller vers elles
+    // ou les laisser naviguer
+    handleClick();
+  }
+};
 ```
+
+**Nouveau handler pour container** : Le container principal ne doit plus naviguer directement sur clic.
 
 ---
 
-## Phase 2 : UX Interactive Premium
+### 2. Fichier : `src/components/showcase/QuickViewModal.tsx`
 
-### 2.1 Nouveaux Imports et States
+**Ameliorations a apporter** :
 
-Ajouter en haut du fichier :
-```typescript
-import { useState } from "react";
-import { Heart, Eye, ShoppingCart, Zap, Check, Loader2, Package } from "lucide-react";
-import { AnimatePresence } from "framer-motion";
-import { useCart } from "@/hooks/useCart";
-import { useFavorites } from "@/hooks/useFavorites";
-import { toast } from "sonner";
-```
+#### 2.1 Interface Part etendue
 
-Ajouter dans le composant :
-```typescript
-const [isHovered, setIsHovered] = useState(false);
-const [isOrdering, setIsOrdering] = useState(false);
-const [orderSuccess, setOrderSuccess] = useState(false);
-const [showQuickView, setShowQuickView] = useState(false);
-
-const { addItem, setIsOpen } = useCart();
-const { isFavorite, toggleFavorite } = useFavorites();
-```
-
-### 2.2 Conteneur avec Detection de Hover
-
-Modifier le conteneur principal :
-```typescript
-<motion.div
-  onMouseEnter={() => isCenter && setIsHovered(true)}
-  onMouseLeave={() => setIsHovered(false)}
-  // ... reste des props existantes
->
-```
-
-### 2.3 Barre d'Actions au Survol (Produit Central Uniquement)
-
-Structure visuelle :
-```text
-+-------------------------------------------------------+
-|                                                       |
-|                 [ IMAGE PRODUIT ]                     |
-|                                                       |
-|         +-------------------------------+             |
-|         |  [Heart]  [Eye]  [Cart]       |  ActionBar  |
-|         +-------------------------------+             |
-|                                                       |
-+-------------------------------------------------------+
-```
-
-Implementation de la barre :
-```typescript
-{/* Action Bar - Uniquement sur produit central au survol */}
-<AnimatePresence>
-  {isHovered && isCenter && (
-    <motion.div
-      initial={{ opacity: 0, y: 15, scale: 0.95 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: 10, scale: 0.95 }}
-      transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20"
-    >
-      <div 
-        className="flex items-center gap-3 px-4 py-2.5 rounded-2xl"
-        style={{
-          background: "rgba(255, 255, 255, 0.95)",
-          backdropFilter: "blur(20px)",
-          border: "1px solid rgba(147, 181, 161, 0.2)",
-          boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12)"
-        }}
-      >
-        {/* Bouton Favori */}
-        <motion.button
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={handleToggleFavorite}
-          className="w-10 h-10 rounded-xl flex items-center justify-center transition-colors"
-          style={{
-            background: isFavorite(part.id) 
-              ? "rgba(239, 68, 68, 0.1)" 
-              : "rgba(26, 26, 26, 0.05)"
-          }}
-          aria-label={isFavorite(part.id) ? "Retirer des favoris" : "Ajouter aux favoris"}
-        >
-          <Heart 
-            className={`w-5 h-5 transition-colors ${
-              isFavorite(part.id) 
-                ? "fill-red-500 text-red-500" 
-                : "text-carbon/60 hover:text-carbon"
-            }`} 
-          />
-        </motion.button>
-
-        {/* Bouton Apercu Rapide */}
-        <motion.button
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={handleQuickView}
-          className="w-10 h-10 rounded-xl flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
-          aria-label="Apercu rapide"
-        >
-          <Eye className="w-5 h-5 text-carbon/60 hover:text-carbon" />
-        </motion.button>
-
-        {/* Bouton Panier */}
-        <motion.button
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={handleAddToCart}
-          className="w-10 h-10 rounded-xl flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
-          aria-label="Ajouter au panier"
-        >
-          <ShoppingCart className="w-5 h-5 text-mineral" />
-        </motion.button>
-      </div>
-    </motion.div>
-  )}
-</AnimatePresence>
-```
-
-### 2.4 Bouton "Commander Direct" (Remplace le Prix au Hover)
-
-Logique de transformation :
-```text
-ETAT NORMAL                    ETAT HOVER
-+----------------+             +----------------------------+
-|   35.00 EUR    |     -->     |  [Zap] Commander Direct    |
-+----------------+             +----------------------------+
-                                       |
-                                       v (clic)
-                               +----------------------------+
-                               |    [Spinner Loading...]    |
-                               +----------------------------+
-                                       |
-                                       v (500ms)
-                               +----------------------------+
-                               |    [Check] Ajoute !        |
-                               +----------------------------+
-```
-
-Implementation :
-```typescript
-{/* Zone Prix / Bouton Commander */}
-<AnimatePresence mode="wait">
-  {isHovered && isCenter ? (
-    <motion.button
-      key="order-button"
-      initial={{ opacity: 0, scale: 0.9, y: 10 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.9, y: -5 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
-      onClick={handleDirectOrder}
-      disabled={isOrdering || part.price === null}
-      className="w-full py-3 px-6 rounded-xl font-semibold text-white transition-all duration-300"
-      style={{
-        background: orderSuccess 
-          ? "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)"
-          : "linear-gradient(135deg, hsl(var(--mineral)) 0%, hsl(var(--mineral-dark)) 100%)",
-        boxShadow: orderSuccess
-          ? "0 8px 24px rgba(34, 197, 94, 0.4)"
-          : "0 8px 24px rgba(147, 181, 161, 0.4)"
-      }}
-      aria-label="Commander directement"
-    >
-      {isOrdering ? (
-        <Loader2 className="w-5 h-5 animate-spin mx-auto" />
-      ) : orderSuccess ? (
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          className="flex items-center justify-center gap-2"
-        >
-          <Check className="w-5 h-5" />
-          <span>Ajoute !</span>
-        </motion.div>
-      ) : (
-        <span className="flex items-center justify-center gap-2">
-          <Zap className="w-4 h-4" />
-          <span>Commander Direct</span>
-        </span>
-      )}
-    </motion.button>
-  ) : (
-    <motion.span
-      key="price"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.2 }}
-      className="text-2xl md:text-3xl font-extrabold block"
-      style={{ color: "hsl(var(--mineral))" }}
-    >
-      {formatPrice(part.price || 0)}
-    </motion.span>
-  )}
-</AnimatePresence>
-```
-
-### 2.5 Handlers d'Actions
+Ajouter le champ `description` a l'interface Part :
 
 ```typescript
-// Ajout au panier avec toast visuel
-const handleAddToCart = (e: React.MouseEvent) => {
-  e.stopPropagation();
-  if (part.price === null) return;
-  
-  addItem({
-    id: part.id,
-    name: part.name,
-    price: part.price,
-    image_url: part.image_url,
-    stock_quantity: part.stock_quantity || 0,
-  });
-  
-  toast.success(
-    <div className="flex items-center gap-3">
-      {part.image_url && (
-        <img 
-          src={part.image_url} 
-          alt={part.name}
-          className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
-        />
-      )}
-      <div>
-        <p className="font-medium text-carbon text-sm">{part.name}</p>
-        <p className="text-xs text-muted-foreground">Ajoute au panier</p>
-      </div>
-    </div>,
-    { action: { label: "Voir", onClick: () => setIsOpen(true) } }
-  );
-};
-
-// Toggle favori
-const handleToggleFavorite = (e: React.MouseEvent) => {
-  e.stopPropagation();
-  toggleFavorite(part.id, part.name);
-};
-
-// Apercu rapide
-const handleQuickView = (e: React.MouseEvent) => {
-  e.stopPropagation();
-  setShowQuickView(true);
-};
-
-// Commande directe avec animation
-const handleDirectOrder = (e: React.MouseEvent) => {
-  e.stopPropagation();
-  if (isOrdering || part.price === null) return;
-  
-  setIsOrdering(true);
-  
-  setTimeout(() => {
-    addItem({
-      id: part.id,
-      name: part.name,
-      price: part.price!,
-      image_url: part.image_url,
-      stock_quantity: part.stock_quantity || 0,
-    });
-    
-    setIsOrdering(false);
-    setOrderSuccess(true);
-    
-    toast.success("Piece ajoutee au panier", {
-      action: { label: "Voir le panier", onClick: () => setIsOpen(true) }
-    });
-    
-    setTimeout(() => setOrderSuccess(false), 1500);
-  }, 500);
-};
-```
-
----
-
-## Phase 3 : Modale Quick View Premium
-
-### Nouveau Fichier : `src/components/showcase/QuickViewModal.tsx`
-
-Structure visuelle :
-```text
-+----------------------------------------------------------------+
-|                    BACKDROP BLUR (8px)                         |
-|  +----------------------------------------------------------+  |
-|  |                                                    [X]   |  |
-|  |  +---------------------+  +--------------------------+   |  |
-|  |  |                     |  |  NOM DU PRODUIT          |   |  |
-|  |  |    IMAGE PRODUIT    |  |                          |   |  |
-|  |  |      (Grande)       |  |  35.00 EUR               |   |  |
-|  |  |                     |  |                          |   |  |
-|  |  +---------------------+  |  Difficulte:  * * * . .  |   |  |
-|  |                           |  Stock: En stock (12)    |   |  |
-|  |                           |                          |   |  |
-|  |                           |  [  Ajouter au Panier ]  |   |  |
-|  |                           |                          |   |  |
-|  |                           |  Voir la fiche complete  |   |  |
-|  |                           +--------------------------+   |  |
-|  +----------------------------------------------------------+  |
-+----------------------------------------------------------------+
-```
-
-Implementation complete :
-```typescript
-import { motion, AnimatePresence } from "framer-motion";
-import { X, ShoppingCart, ExternalLink, Package } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import { formatPrice } from "@/lib/formatPrice";
-import { useCart } from "@/hooks/useCart";
-import DifficultyIndicator from "@/components/parts/DifficultyIndicator";
-import { toast } from "sonner";
-
 interface Part {
   id: string;
   name: string;
@@ -370,270 +66,305 @@ interface Part {
   image_url: string | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
+  description?: string | null;  // NOUVEAU
 }
+```
 
+#### 2.2 Props etendues pour compatibilite
+
+Ajouter la possibilite de recevoir les infos de compatibilite :
+
+```typescript
 interface QuickViewModalProps {
   part: Part;
   isOpen: boolean;
   onClose: () => void;
+  isCompatible?: boolean;           // NOUVEAU
+  selectedScooterName?: string;     // NOUVEAU
 }
-
-const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
-  const navigate = useNavigate();
-  const { addItem, setIsOpen } = useCart();
-  const isInStock = (part.stock_quantity ?? 0) > 0;
-
-  const handleAddToCart = () => {
-    if (part.price === null || !isInStock) return;
-    
-    addItem({
-      id: part.id,
-      name: part.name,
-      price: part.price,
-      image_url: part.image_url,
-      stock_quantity: part.stock_quantity || 0,
-    });
-    
-    toast.success("Piece ajoutee au panier", {
-      action: { label: "Voir", onClick: () => setIsOpen(true) }
-    });
-    
-    onClose();
-  };
-
-  const handleViewDetails = () => {
-    onClose();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    setTimeout(() => navigate(`/piece/${part.slug}`), 150);
-  };
-
-  return (
-    <AnimatePresence>
-      {isOpen && (
-        <>
-          {/* Backdrop avec blur */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            onClick={onClose}
-            className="fixed inset-0 z-50"
-            style={{
-              background: "rgba(26, 26, 26, 0.4)",
-              backdropFilter: "blur(8px)",
-              WebkitBackdropFilter: "blur(8px)",
-            }}
-          />
-          
-          {/* Modale */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
-          >
-            <div 
-              className="relative w-full max-w-3xl pointer-events-auto rounded-3xl overflow-hidden"
-              style={{
-                background: "rgba(250, 250, 248, 0.98)",
-                backdropFilter: "blur(20px)",
-                border: "1px solid rgba(255, 255, 255, 0.5)",
-                boxShadow: "0 32px 64px rgba(26, 26, 26, 0.2)"
-              }}
-              role="dialog"
-              aria-modal="true"
-            >
-              {/* Bouton Fermer */}
-              <motion.button
-                whileHover={{ scale: 1.1, rotate: 90 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={onClose}
-                className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
-                aria-label="Fermer"
-              >
-                <X className="w-5 h-5 text-carbon" />
-              </motion.button>
-
-              <div className="grid md:grid-cols-2 gap-0">
-                {/* Image Section */}
-                <div className="relative aspect-square bg-[#F9F8F6] flex items-center justify-center p-8">
-                  {part.image_url ? (
-                    <motion.img
-                      initial={{ scale: 0.9, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ delay: 0.1, duration: 0.4 }}
-                      src={part.image_url}
-                      alt={part.name}
-                      className="w-full h-full object-contain"
-                      style={{
-                        filter: "drop-shadow(0 20px 40px rgba(26, 26, 26, 0.15))"
-                      }}
-                    />
-                  ) : (
-                    <Package className="w-24 h-24 text-carbon/20" />
-                  )}
-                </div>
-
-                {/* Info Section */}
-                <div className="p-8 flex flex-col justify-center space-y-6">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.15, duration: 0.4 }}
-                  >
-                    <h2 className="text-2xl font-semibold text-carbon leading-tight mb-4">
-                      {part.name}
-                    </h2>
-                    
-                    <p 
-                      className="text-4xl font-extrabold"
-                      style={{ color: "hsl(var(--mineral))" }}
-                    >
-                      {part.price ? formatPrice(part.price) : "Prix sur demande"}
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.4 }}
-                    className="space-y-4"
-                  >
-                    {/* Difficulte */}
-                    <div className="flex items-center justify-between py-3 border-b border-carbon/10">
-                      <span className="text-sm text-carbon/60">Difficulte</span>
-                      <DifficultyIndicator 
-                        level={part.difficulty_level} 
-                        showLabel 
-                        variant="compact"
-                      />
-                    </div>
-
-                    {/* Stock */}
-                    <div className="flex items-center justify-between py-3 border-b border-carbon/10">
-                      <span className="text-sm text-carbon/60">Disponibilite</span>
-                      <div className="flex items-center gap-2">
-                        <div 
-                          className={`w-2 h-2 rounded-full ${
-                            isInStock ? "bg-green-500 animate-pulse" : "bg-red-500"
-                          }`}
-                        />
-                        <span className={`text-sm font-medium ${
-                          isInStock ? "text-green-600" : "text-red-600"
-                        }`}>
-                          {isInStock 
-                            ? `En stock (${part.stock_quantity})` 
-                            : "Rupture de stock"
-                          }
-                        </span>
-                      </div>
-                    </div>
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.25, duration: 0.4 }}
-                    className="space-y-3 pt-4"
-                  >
-                    {/* Bouton Ajouter au Panier */}
-                    <button
-                      onClick={handleAddToCart}
-                      disabled={!isInStock || part.price === null}
-                      className="w-full py-4 px-6 rounded-xl font-semibold text-white flex items-center justify-center gap-3 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                      style={{
-                        background: isInStock 
-                          ? "linear-gradient(135deg, hsl(var(--mineral)) 0%, hsl(var(--mineral-dark)) 100%)"
-                          : "#ccc",
-                        boxShadow: isInStock 
-                          ? "0 8px 24px rgba(147, 181, 161, 0.4)"
-                          : "none"
-                      }}
-                    >
-                      <ShoppingCart className="w-5 h-5" />
-                      <span>Ajouter au Panier</span>
-                    </button>
-
-                    {/* Lien vers fiche complete */}
-                    <button
-                      onClick={handleViewDetails}
-                      className="w-full py-3 text-center text-carbon/70 hover:text-mineral font-medium flex items-center justify-center gap-2 transition-colors"
-                    >
-                      <span>Voir la fiche complete</span>
-                      <ExternalLink className="w-4 h-4" />
-                    </button>
-                  </motion.div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </>
-      )}
-    </AnimatePresence>
-  );
-};
-
-export default QuickViewModal;
 ```
 
----
+#### 2.3 Backdrop ameliore
 
-## Phase 4 : Integration dans GamingCarouselCard
+Augmenter le blur et assombrir le fond :
 
-Ajouter l'import et le rendu de la modale :
 ```typescript
-import QuickViewModal from "./QuickViewModal";
+// AVANT
+background: "rgba(26, 26, 26, 0.4)",
+backdropFilter: "blur(8px)",
 
-// Dans le JSX, apres la fermeture du conteneur principal
-return (
-  <>
-    <motion.div /* ... contenu existant ... */ />
-    
-    {/* Quick View Modal */}
-    <QuickViewModal 
-      part={part}
-      isOpen={showQuickView}
-      onClose={() => setShowQuickView(false)}
-    />
-  </>
-);
+// APRES
+background: "rgba(0, 0, 0, 0.6)",
+backdropFilter: "blur(12px)",
+```
+
+#### 2.4 Fermeture avec touche ESC
+
+Ajouter un `useEffect` pour ecouter la touche Escape :
+
+```typescript
+useEffect(() => {
+  const handleEscape = (e: KeyboardEvent) => {
+    if (e.key === 'Escape' && isOpen) {
+      onClose();
+    }
+  };
+  
+  document.addEventListener('keydown', handleEscape);
+  return () => document.removeEventListener('keydown', handleEscape);
+}, [isOpen, onClose]);
+```
+
+#### 2.5 Section Description technique
+
+Ajouter entre le prix et la difficulte :
+
+```typescript
+{/* Description technique */}
+{part.description && (
+  <p className="text-sm text-carbon/70 leading-relaxed line-clamp-3">
+    {part.description}
+  </p>
+)}
+```
+
+#### 2.6 Badge de compatibilite
+
+Ajouter avant le CTA :
+
+```typescript
+{/* Badge Compatibilite */}
+{isCompatible && selectedScooterName && (
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.22, duration: 0.4 }}
+    className="flex items-center gap-2 px-4 py-3 rounded-xl"
+    style={{
+      background: "rgba(34, 197, 94, 0.1)",
+      border: "1px solid rgba(34, 197, 94, 0.2)",
+    }}
+  >
+    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+    <span className="text-sm font-medium text-green-700">
+      Compatible avec votre {selectedScooterName}
+    </span>
+  </motion.div>
+)}
+```
+
+#### 2.7 Largeur augmentee
+
+Passer de `max-w-3xl` (768px) a `max-w-4xl` (900px) :
+
+```typescript
+// AVANT
+className="relative w-full max-w-3xl pointer-events-auto rounded-3xl overflow-hidden"
+
+// APRES
+className="relative w-full max-w-4xl pointer-events-auto rounded-3xl overflow-hidden"
+```
+
+#### 2.8 Image plus grande
+
+Augmenter le padding et la taille de l'image :
+
+```typescript
+// AVANT
+<div className="relative aspect-square bg-greige flex items-center justify-center p-8">
+
+// APRES - Fond plus clair, padding ajuste
+<div 
+  className="relative aspect-square flex items-center justify-center p-10"
+  style={{ background: "#F9F9F7" }}
+>
+```
+
+#### 2.9 Responsive Mobile
+
+Ajouter des classes responsives pour le layout 1 colonne sur mobile :
+
+```typescript
+// AVANT
+<div className="grid md:grid-cols-2 gap-0">
+
+// APRES - Stack sur mobile, side-by-side sur desktop
+<div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+```
+
+Et ajuster le padding sur mobile :
+
+```typescript
+// AVANT
+<div className="p-8 flex flex-col justify-center space-y-6">
+
+// APRES
+<div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center space-y-5 md:space-y-6">
 ```
 
 ---
 
-## Resume des Fichiers
+### 3. Integration dans GamingCarouselCard
+
+Passer les props de compatibilite a la modal :
+
+```typescript
+// AVANT
+<QuickViewModal 
+  part={part}
+  isOpen={showQuickView}
+  onClose={() => setShowQuickView(false)}
+/>
+
+// APRES
+<QuickViewModal 
+  part={part}
+  isOpen={showQuickView}
+  onClose={() => setShowQuickView(false)}
+  isCompatible={isCompatible}
+  selectedScooterName={selectedScooter?.name}
+/>
+```
+
+---
+
+### 4. Enrichir l'interface Part dans GamingCarouselCard
+
+Ajouter `description` a l'interface Part dans `GamingCarouselCard.tsx` :
+
+```typescript
+interface Part {
+  id: string;
+  name: string;
+  slug: string;
+  price: number | null;
+  image_url: string | null;
+  stock_quantity: number | null;
+  difficulty_level: number | null;
+  description?: string | null;  // NOUVEAU
+}
+```
+
+---
+
+### 5. Enrichir l'interface Part dans GamingCarousel
+
+Meme modification dans `GamingCarousel.tsx` :
+
+```typescript
+interface Part {
+  id: string;
+  name: string;
+  slug: string;
+  price: number | null;
+  image_url: string | null;
+  stock_quantity: number | null;
+  difficulty_level: number | null;
+  description?: string | null;  // NOUVEAU
+}
+```
+
+---
+
+### 6. S'assurer que la description est chargee
+
+Verifier que le hook qui charge les parts inclut la description. Si les donnees sont chargees dans `CompatiblePartsSection.tsx`, s'assurer que la requete Supabase inclut le champ `description`.
+
+---
+
+## Structure Finale de la Modal
+
+```text
++------------------------------------------------------------------+
+|                    BACKDROP BLUR (12px)                          |
+|                    background: rgba(0,0,0,0.6)                   |
+|                                                                  |
+|  +------------------------------------------------------------+  |
+|  |                                                      [X]   |  |
+|  |                                                            |  |
+|  |  +------------------------+  +---------------------------+ |  |
+|  |  |                        |  |                           | |  |
+|  |  |                        |  |  NOM DU PRODUIT           | |  |
+|  |  |     IMAGE PRODUIT      |  |  (24px, font-semibold)    | |  |
+|  |  |     (Grande, HD)       |  |                           | |  |
+|  |  |                        |  |  35.00 EUR                | |  |
+|  |  |   fond: #F9F9F7        |  |  (32px, font-extrabold,   | |  |
+|  |  |                        |  |   couleur mineral)        | |  |
+|  |  |                        |  |                           | |  |
+|  |  +------------------------+  |  Description technique... | |  |
+|  |                              |  (14px, 3 lignes max)     | |  |
+|  |                              |                           | |  |
+|  |                              |  +----------------------+  | |  |
+|  |                              |  | [LED] Compatible     |  | |  |
+|  |                              |  | avec votre Ninebot   |  | |  |
+|  |                              |  +----------------------+  | |  |
+|  |                              |                           | |  |
+|  |                              |  Difficulte: [* * * . .]  | |  |
+|  |                              |  Stock: En stock (12)     | |  |
+|  |                              |                           | |  |
+|  |                              |  [AJOUTER AU PANIER]      | |  |
+|  |                              |  (btn pleine largeur)     | |  |
+|  |                              |                           | |  |
+|  |                              |  Voir la fiche complete   | |  |
+|  |                              +---------------------------+ |  |
+|  +------------------------------------------------------------+  |
+|                                                                  |
++------------------------------------------------------------------+
+```
+
+---
+
+## Flux d'Interaction Final
+
+```text
+UTILISATEUR SURVOLE LE CARROUSEL
+            |
+            v
+    +-------+-------+
+    |               |
+    v               v
+CLIC SUR        CLIC SUR
+L'IMAGE         L'ICONE OEIL
+    |               |
+    +-------+-------+
+            |
+            v
+    OUVERTURE QUICK VIEW MODAL
+            |
+    +-------+-------+-------+
+    |       |       |       |
+    v       v       v       v
+  CLIC    CLIC    CLIC    TOUCHE
+  PANIER  FICHE   BACKDROP  ESC
+    |       |       |       |
+    v       v       v       v
+  TOAST  NAVIGUE  FERME   FERME
+  +FERME  /piece/  MODAL   MODAL
+```
+
+---
+
+## Resume des Fichiers a Modifier
 
 | Fichier | Action | Description |
 |---------|--------|-------------|
-| `src/components/showcase/GamingCarouselCard.tsx` | MODIFIER | Correction 404 + Actions hover + Bouton Commander |
-| `src/components/showcase/QuickViewModal.tsx` | CREER | Modale apercu rapide avec blur backdrop |
-
----
-
-## Design Tokens Appliques
-
-| Element | Valeur |
-|---------|--------|
-| Fond modal | rgba(250, 250, 248, 0.98) - Blanc nacre |
-| Backdrop blur | 8px |
-| Border radius modaux | 24px (rounded-3xl) |
-| Ombre cartes | 0 8px 32px rgba(26, 26, 26, 0.12) |
-| Animation duree | 0.25s - 0.35s (ease-out) |
-| Couleur CTA | hsl(var(--mineral)) avec gradient |
+| `src/components/showcase/QuickViewModal.tsx` | MODIFIER | Ajouter description, badge compat, ESC, backdrop ameliore |
+| `src/components/showcase/GamingCarouselCard.tsx` | MODIFIER | Clic image = Quick View, passer props compat a modal |
+| `src/components/showcase/GamingCarousel.tsx` | MODIFIER | Ajouter description a interface Part |
 
 ---
 
 ## Checklist de Validation
 
-- Carrousel affiche toujours 3+ produits (gauche, centre, droite) via Embla loop
-- Produit central scale 1.6 avec effet breathing
-- Produits lateraux scale reduit avec blur progressif
-- Clic sur fleches navigue et centre la carte
-- Actions bar apparait uniquement sur produit central au hover
-- Bouton "Commander Direct" avec animation loading puis succes
-- Quick View Modal floute l'arriere-plan (blur 8px)
-- Navigation vers `/piece/{slug}` (plus de 404)
-- Tous les boutons ont des aria-labels
+- Clic sur la photo du produit central ouvre la modal (pas de redirection)
+- Clic sur l'icone oeil ouvre la modal
+- La modal affiche : nom, prix, description, badge compat, difficulte, stock
+- Le backdrop est floute (12px blur, fond noir 60%)
+- Les animations sont fluides (Framer Motion, 0.3s ease-out)
+- Le bouton "Ajouter au panier" affiche un toast et ferme la modal
+- Le lien "Voir la fiche complete" redirige vers /piece/{slug}
+- Le clic sur backdrop ou "X" ferme la modal
+- La touche ESC ferme la modal
+- Responsive : 1 colonne sur mobile, 2 colonnes sur desktop
+- Aucun lien 404 (tous les liens pointent vers /piece/)
 
