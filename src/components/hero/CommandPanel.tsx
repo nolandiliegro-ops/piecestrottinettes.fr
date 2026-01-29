@@ -92,10 +92,9 @@ const CommandPanel = ({
               </p>
             </motion.div>
 
-            {/* Model Name - NO DELAY for instant sync */}
+            {/* Model Name - Black/Carbon color */}
             <motion.h3 
-              className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 lg:mb-3 tracking-tighter leading-none uppercase"
-              style={{ color: activeBrandColors.accent }}
+              className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 lg:mb-3 tracking-tighter leading-none uppercase text-carbon"
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.15, delay: 0 }}
