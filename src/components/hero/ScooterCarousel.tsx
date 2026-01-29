@@ -176,20 +176,24 @@ const ScooterCarousel = ({
   
   const displayWattage = activeModel ? parseSpecValue(activeModel.specs?.power || "0W") : 0;
 
-  // Navigation handlers with direction tracking
+  // Navigation handlers with direction tracking - IMMEDIATE state update
   const scrollPrev = useCallback(() => {
+    const newIndex = activeIndex > 0 ? activeIndex - 1 : models.length - 1;
     setSlideDirection('left');
     setAutoPlayProgress(0);
+    onSelect(newIndex); // ⚡ IMMEDIATE state update BEFORE animation
     emblaApi?.scrollPrev();
     onNavigatePrev?.();
-  }, [emblaApi, onNavigatePrev]);
+  }, [emblaApi, onNavigatePrev, activeIndex, models.length, onSelect]);
   
   const scrollNext = useCallback(() => {
+    const newIndex = activeIndex < models.length - 1 ? activeIndex + 1 : 0;
     setSlideDirection('right');
     setAutoPlayProgress(0);
+    onSelect(newIndex); // ⚡ IMMEDIATE state update BEFORE animation
     emblaApi?.scrollNext();
     onNavigateNext?.();
-  }, [emblaApi, onNavigateNext]);
+  }, [emblaApi, onNavigateNext, activeIndex, models.length, onSelect]);
 
   // Auto-play effect - disabled when user scrolls down
   useEffect(() => {
@@ -230,22 +234,29 @@ const ScooterCarousel = ({
     }
   }, [selectedVoltage, selectedAmperage, availableAmperages]);
 
+  // Keep Embla events ONLY for drag/swipe gestures (not button navigation)
   useEffect(() => {
     if (!emblaApi) return;
-
-    const onSelectHandler = () => {
-      const selectedIndex = emblaApi.selectedScrollSnap();
-      onSelect(selectedIndex);
+    
+    let isDragging = false;
+    
+    const onPointerDown = () => { isDragging = true; };
+    const onSettle = () => { isDragging = false; };
+    const onSelectEvent = () => {
+      // Only update state if this was a drag gesture, not a button click
+      if (isDragging) {
+        onSelect(emblaApi.selectedScrollSnap());
+      }
     };
-
-    // Use 'settle' instead of 'select' to ensure loop transitions are complete
-    emblaApi.on("settle", onSelectHandler);
-    // Also listen to 'select' for immediate feedback
-    emblaApi.on("select", onSelectHandler);
-
+    
+    emblaApi.on("pointerDown", onPointerDown);
+    emblaApi.on("settle", onSettle);
+    emblaApi.on("select", onSelectEvent);
+    
     return () => {
-      emblaApi.off("settle", onSelectHandler);
-      emblaApi.off("select", onSelectHandler);
+      emblaApi.off("pointerDown", onPointerDown);
+      emblaApi.off("settle", onSettle);
+      emblaApi.off("select", onSelectEvent);
     };
   }, [emblaApi, onSelect]);
 

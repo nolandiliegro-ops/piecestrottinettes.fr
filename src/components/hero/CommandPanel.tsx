@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Brand, ScooterModel } from "@/data/scooterData";
 import { useSearchScooters } from "@/hooks/useScooterData";
 import SearchDropdown from "./SearchDropdown";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import AnimatedNumber from "@/components/ui/animated-number";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -82,39 +82,42 @@ const CommandPanel = ({
 
   return (
     <div className="flex flex-col justify-start h-full space-y-2 lg:space-y-4">
-      {/* FIRST: Active Model Info - Priority placement */}
-      {activeModel && (
-        <motion.div 
-          key={activeModel.id}
-          className="animate-fade-in text-center lg:text-left"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          {/* Brand Badge with Dynamic Color */}
-          <motion.div
-            className={`inline-block px-2.5 py-1 lg:px-3 lg:py-1.5 rounded-full ${activeBrandColors.bg} ${activeBrandColors.text} backdrop-blur-sm mb-2 shadow-sm`}
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0 }}
+      {/* FIRST: Active Model Info - Priority placement with synchronized transitions */}
+      <AnimatePresence mode="wait">
+        {activeModel && (
+          <motion.div 
+            key={activeModel.id}
+            className="text-center lg:text-left"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
           >
-            <p className="text-[10px] lg:text-xs font-bold tracking-wide uppercase">
-              {activeModel.brand}
-            </p>
+            {/* Brand Badge with Dynamic Color - NO DELAY */}
+            <motion.div
+              className={`inline-block px-2.5 py-1 lg:px-3 lg:py-1.5 rounded-full ${activeBrandColors.bg} ${activeBrandColors.text} backdrop-blur-sm mb-2 shadow-sm`}
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.15, delay: 0 }}
+            >
+              <p className="text-[10px] lg:text-xs font-bold tracking-wide uppercase">
+                {activeModel.brand}
+              </p>
+            </motion.div>
+
+            {/* Model Name - NO DELAY for instant sync */}
+            <motion.h3 
+              className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-carbon mb-1 lg:mb-3 tracking-tighter leading-none uppercase"
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.15, delay: 0 }}
+            >
+              {activeModel.name}
+            </motion.h3>
+
           </motion.div>
-
-          {/* Model Name - Reduced on mobile */}
-          <motion.h3 
-            className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-carbon mb-1 lg:mb-3 tracking-tighter leading-none uppercase"
-            initial={{ opacity: 0, y: 5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0 }}
-          >
-            {activeModel.name}
-          </motion.h3>
-
-        </motion.div>
-      )}
+        )}
+      </AnimatePresence>
 
       {/* Separator - Hidden on mobile for cleaner look */}
       <div className="hidden lg:block border-t border-mineral/10" />
