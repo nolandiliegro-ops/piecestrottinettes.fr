@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Package, ShieldCheck } from "lucide-react";
+import { Package, ShieldCheck, ShieldX } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { formatPrice } from "@/lib/formatPrice";
+import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
 
 interface Part {
   id: string;
@@ -26,6 +27,9 @@ const GamingCarouselCard = ({
   distanceFromCenter,
 }: GamingCarouselCardProps) => {
   const navigate = useNavigate();
+  
+  // Dynamic compatibility check with Header/Garage scooter
+  const { isCompatible, selectedScooter, brandColors } = useIsCompatibleWithSelected(part.id);
 
   // Scale based on distance - central product is HUGE (1.4)
   const getScale = () => {
@@ -137,21 +141,72 @@ const GamingCarouselCard = ({
           >
             {formatPrice(part.price || 0)}
           </span>
-          {/* Compatible Badge */}
-          <div className="flex justify-center pt-1">
-            <div 
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full"
-              style={{
-                background: "rgba(147, 181, 161, 0.15)",
-                border: "1px solid rgba(147, 181, 161, 0.4)",
-              }}
-            >
-              <ShieldCheck className="w-4 h-4 text-mineral" />
-              <span className="text-mineral text-sm font-bold uppercase tracking-wide">
-                Compatible
-              </span>
+          {/* Dynamic Compatibility Badge - Only when Garage scooter is selected */}
+          {selectedScooter && (
+            <div className="flex justify-center pt-1">
+              {isCompatible ? (
+                /* Green Compatible Badge with Brand LED Glow */
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1,
+                    boxShadow: [
+                      `0 0 8px ${brandColors.glowColor}`,
+                      `0 0 16px ${brandColors.glowColor}`,
+                      `0 0 8px ${brandColors.glowColor}`,
+                    ]
+                  }}
+                  transition={{ 
+                    opacity: { duration: 0.3 },
+                    scale: { duration: 0.3 },
+                    boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                  }}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-white text-sm font-bold uppercase tracking-wide"
+                  style={{
+                    background: "rgba(147, 181, 161, 0.85)",
+                    backdropFilter: "blur(10px)",
+                    WebkitBackdropFilter: "blur(10px)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                  }}
+                >
+                  {/* Pulsing dot with brand accent */}
+                  <motion.div
+                    animate={{ 
+                      scale: [1, 1.3, 1],
+                      opacity: [1, 0.7, 1]
+                    }}
+                    transition={{ 
+                      duration: 1.5, 
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className="w-2 h-2 rounded-full"
+                    style={{ backgroundColor: brandColors.accent }}
+                  />
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Compatible</span>
+                </motion.div>
+              ) : (
+                /* Red Non-Compatible Badge */
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-white text-sm font-bold uppercase tracking-wide"
+                  style={{
+                    background: "rgba(220, 38, 38, 0.85)",
+                    backdropFilter: "blur(10px)",
+                    WebkitBackdropFilter: "blur(10px)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                  }}
+                >
+                  <ShieldX className="w-4 h-4" />
+                  <span>Non Compatible</span>
+                </motion.div>
+              )}
             </div>
-          </div>
+          )}
         </motion.div>
       )}
     </motion.div>
