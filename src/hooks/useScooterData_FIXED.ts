@@ -87,9 +87,10 @@ export const useScooterModels = (brandSlug?: string | null) => {
       
       return data || [];
     },
-    // ⚡ Removed placeholderData for instant brand switching
-    // Data is now loaded once and filtered client-side
-    staleTime: 5 * 60 * 1000, // Cache for 5 minutes since we load all models
+    // ✅ Garder les données précédentes pendant le chargement pour éviter le flash
+    placeholderData: (previousData) => previousData,
+    // ✅ Réduire le stale time pour forcer le refresh
+    staleTime: 0,
   });
 };
 

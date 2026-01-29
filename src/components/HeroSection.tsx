@@ -43,9 +43,9 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [autoPlayEnabled]);
 
-  // Fetch data from database
+  // Fetch data from database - Load ALL models without filtering
   const { data: brands = [], isLoading: brandsLoading } = useBrands();
-  const { data: scooterModels = [], isLoading: modelsLoading } = useScooterModels(selectedBrand);
+  const { data: scooterModels = [], isLoading: modelsLoading } = useScooterModels(null); // ⚡ Always load ALL models
 
   const isLoading = brandsLoading || modelsLoading;
 
@@ -68,6 +68,12 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
     }));
   }, [scooterModels]);
 
+  // ⚡ Client-side brand filtering for instant response
+  const brandFilteredModels = useMemo(() => {
+    if (!selectedBrand) return transformedModels;
+    return transformedModels.filter((model) => model.brandId === selectedBrand);
+  }, [transformedModels, selectedBrand]);
+
   // Transform brands for CommandPanel
   const transformedBrands = useMemo(() => {
     return brands.map((brand) => ({
@@ -79,15 +85,15 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
 
   // Filter by search query (matches brand or model name)
   const filteredModels = useMemo(() => {
-    if (!searchQuery.trim()) return transformedModels;
+    if (!searchQuery.trim()) return brandFilteredModels;
 
     const query = searchQuery.toLowerCase().trim();
-    return transformedModels.filter(
+    return brandFilteredModels.filter(
       (model) =>
         model.name.toLowerCase().includes(query) ||
         model.brand.toLowerCase().includes(query)
     );
-  }, [transformedModels, searchQuery]);
+  }, [brandFilteredModels, searchQuery]);
 
   // Get active model and notify parent
   const activeModel = filteredModels[activeIndex] || null;
