@@ -59,7 +59,7 @@ const HeroBranding = () => {
 
       {/* Bouton Catalogue Premium - LARGE avec micro-interactions */}
       <motion.div 
-        className="mt-6 lg:mt-8 animate-fade-in" 
+        className="mt-4 lg:mt-5 animate-fade-in" 
         style={{ animationDelay: "0.5s" }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
