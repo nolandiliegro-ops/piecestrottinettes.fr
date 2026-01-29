@@ -54,10 +54,10 @@ const specItemVariants = {
   }
 };
 
-// Premium transition config - AMPLIFIED
+// Premium transition config - ULTRA FAST for instant sync
 const premiumTransition = {
-  duration: 0.3,  // Réduit à 0.3s pour transition rapide
-  ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number], // easeOutQuart - plus fluide
+  duration: 0.15,  // ⚡ 150ms pour synchronisation instantanée
+  ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
 };
 
 // Circular Progress Component for auto-play
@@ -260,6 +260,14 @@ const ScooterCarousel = ({
     };
   }, [emblaApi, onSelect]);
 
+  // ⚡ Force scroll to index 0 on mount (brand filter change triggers remount)
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.scrollTo(0, true); // instant, no animation
+    }
+  }, [emblaApi]);
+
+  // Sync Embla position with activeIndex from parent
   useEffect(() => {
     if (emblaApi && activeIndex !== emblaApi.selectedScrollSnap()) {
       emblaApi.scrollTo(activeIndex);
@@ -677,7 +685,7 @@ const ScooterCarousel = ({
                             scale: 0.95
                           }}
                           transition={{ 
-                            duration: 0.4,                                 // Réduit pour transition rapide
+                            duration: 0.2,                                 // ⚡ 200ms pour éliminer le ghosting
                             ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number]
                           }}
                         />
