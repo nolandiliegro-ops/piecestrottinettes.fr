@@ -84,7 +84,7 @@ const QuickViewModal = ({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={onClose}
-            className="fixed inset-0 z-50"
+            className="fixed inset-0 z-[9999]"
             style={{
               background: "rgba(0, 0, 0, 0.6)",
               backdropFilter: "blur(12px)",
@@ -98,7 +98,7 @@ const QuickViewModal = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
+            className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-none"
           >
             <div 
               className="relative w-full max-w-4xl pointer-events-auto rounded-3xl overflow-hidden"
