@@ -165,6 +165,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
               <ScooterCarouselSkeleton />
             ) : (
               <ScooterCarousel
+                key={`${selectedBrand}-${filteredModels.length}`}
                 models={filteredModels}
                 activeIndex={activeIndex}
                 onSelect={setActiveIndex}
