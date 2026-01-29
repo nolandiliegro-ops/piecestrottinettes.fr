@@ -7,7 +7,7 @@ import CommandPanel from "./hero/CommandPanel";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 
 interface HeroSectionProps {
-  onActiveModelChange?: (slug: string | null, name: string | null) => void;
+  onActiveModelChange?: (slug: string | null, name: string | null, brandSlug: string | null) => void;
 }
 
 const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
@@ -102,7 +102,8 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
     if (onActiveModelChange) {
       onActiveModelChange(
         activeModel?.id || null,
-        activeModel ? `${activeModel.brand} ${activeModel.name}` : null
+        activeModel ? `${activeModel.brand} ${activeModel.name}` : null,
+        activeModel?.brandId || null
       );
     }
   }, [activeModel, onActiveModelChange]);
