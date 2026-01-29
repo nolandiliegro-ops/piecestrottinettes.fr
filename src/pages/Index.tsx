@@ -11,10 +11,12 @@ import ShopByCategorySection from "@/components/home/ShopByCategorySection";
 const Index = () => {
   const [activeModelSlug, setActiveModelSlug] = useState<string | null>(null);
   const [activeModelName, setActiveModelName] = useState<string | null>(null);
+  const [activeBrandSlug, setActiveBrandSlug] = useState<string | null>(null);
 
-  const handleActiveModelChange = useCallback((slug: string | null, name: string | null) => {
+  const handleActiveModelChange = useCallback((slug: string | null, name: string | null, brandSlug: string | null) => {
     setActiveModelSlug(slug);
     setActiveModelName(name);
+    setActiveBrandSlug(brandSlug);
   }, []);
 
   const scrollToCompatibleParts = () => {
@@ -54,7 +56,7 @@ const Index = () => {
         {/* 3. Compatible Parts Section - Scroll Reveal */}
         <motion.section
           id="compatible-parts"
-          className="pt-4 lg:pt-8 pb-8 lg:pb-12 scroll-mt-20"
+          className="pt-2 lg:pt-4 pb-6 lg:pb-10 scroll-mt-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -63,6 +65,7 @@ const Index = () => {
           <CompatiblePartsSection 
             activeModelSlug={activeModelSlug}
             activeModelName={activeModelName || undefined}
+            activeBrandSlug={activeBrandSlug || undefined}
           />
         </motion.section>
 
