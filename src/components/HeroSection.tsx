@@ -8,9 +8,10 @@ import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 
 interface HeroSectionProps {
   onActiveModelChange?: (slug: string | null, name: string | null, brandSlug: string | null) => void;
+  compatiblePartsCount?: number;
 }
 
-const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
+const HeroSection = ({ onActiveModelChange, compatiblePartsCount }: HeroSectionProps) => {
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -181,6 +182,7 @@ const HeroSection = ({ onActiveModelChange }: HeroSectionProps) => {
                 totalModels={filteredModels.length}
                 currentIndex={activeIndex}
                 autoPlayEnabled={autoPlayEnabled}
+                compatiblePartsCount={compatiblePartsCount}
               />
             )}
           </div>

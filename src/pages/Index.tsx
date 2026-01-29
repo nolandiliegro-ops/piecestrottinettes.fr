@@ -7,11 +7,15 @@ import ExpertJourneySection from "@/components/hero/ExpertJourneySection";
 import CompatiblePartsSection from "@/components/CompatiblePartsSection";
 import FavoritesSection from "@/components/home/FavoritesSection";
 import ShopByCategorySection from "@/components/home/ShopByCategorySection";
+import { useCompatiblePartsCount } from "@/hooks/useScooterData";
 
 const Index = () => {
   const [activeModelSlug, setActiveModelSlug] = useState<string | null>(null);
   const [activeModelName, setActiveModelName] = useState<string | null>(null);
   const [activeBrandSlug, setActiveBrandSlug] = useState<string | null>(null);
+
+  // Centralized compatible parts count - single source of truth
+  const { data: compatiblePartsCount = 0 } = useCompatiblePartsCount(activeModelSlug);
 
   const handleActiveModelChange = useCallback((slug: string | null, name: string | null, brandSlug: string | null) => {
     setActiveModelSlug(slug);
@@ -47,7 +51,10 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <HeroSection onActiveModelChange={handleActiveModelChange} />
+          <HeroSection 
+            onActiveModelChange={handleActiveModelChange}
+            compatiblePartsCount={compatiblePartsCount}
+          />
         </motion.section>
 
         {/* 2. Expert Journey Section - Mobile Only */}
@@ -66,6 +73,7 @@ const Index = () => {
             activeModelSlug={activeModelSlug}
             activeModelName={activeModelName || undefined}
             activeBrandSlug={activeBrandSlug || undefined}
+            compatiblePartsCount={compatiblePartsCount}
           />
         </motion.section>
 

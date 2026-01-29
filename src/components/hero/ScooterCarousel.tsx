@@ -21,6 +21,7 @@ interface ScooterCarouselProps {
   totalModels?: number;
   currentIndex?: number;
   autoPlayEnabled?: boolean;
+  compatiblePartsCount?: number;
 }
 
 // Animation variants for staggered specs - NO DELAY for instant sync
@@ -122,6 +123,7 @@ const ScooterCarousel = ({
   totalModels = 0,
   currentIndex = 0,
   autoPlayEnabled = true,
+  compatiblePartsCount = 0,
 }: ScooterCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -503,7 +505,7 @@ const ScooterCarousel = ({
                      hover:bg-carbon hover:text-white
                      transition-all duration-300"
         >
-          <span>DÉCOUVRIR LES {activeModel?.compatibleParts || 0} PIÈCES</span>
+          <span>DÉCOUVRIR LES {compatiblePartsCount} PIÈCES</span>
           <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 animate-bounce" />
         </button>
       </motion.div>

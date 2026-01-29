@@ -9,15 +9,21 @@ interface CompatiblePartsSectionProps {
   activeModelSlug: string | null;
   activeModelName?: string;
   activeBrandSlug?: string;
+  compatiblePartsCount?: number;
 }
 
 const CompatiblePartsSection = ({ 
   activeModelSlug, 
   activeModelName,
-  activeBrandSlug
+  activeBrandSlug,
+  compatiblePartsCount
 }: CompatiblePartsSectionProps) => {
   const { data: parts = [], isLoading } = useCompatibleParts(activeModelSlug, 12);
-  const { data: totalCount = 0 } = useCompatiblePartsCount(activeModelSlug);
+  // Use prop if provided, otherwise fetch internally
+  const { data: fetchedCount = 0 } = useCompatiblePartsCount(
+    compatiblePartsCount === undefined ? activeModelSlug : null
+  );
+  const totalCount = compatiblePartsCount ?? fetchedCount;
   
   // Get brand-specific colors
   const brandColors = getBrandColors(activeBrandSlug);
