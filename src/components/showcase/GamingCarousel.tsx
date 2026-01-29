@@ -116,19 +116,17 @@ const GamingCarousel = ({ parts, activeModelName, isLoading }: GamingCarouselPro
       {/* Subtle Grid Background */}
       <div className="gaming-grid-bg-light" />
 
-      {/* Header with model name */}
+      {/* Header with model name - Compact inline badge */}
       {activeModelName && (
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center pt-10 pb-6 relative z-10"
+          className="flex items-center justify-center gap-3 pt-6 pb-4 relative z-10"
         >
-          <span className="text-carbon/50 text-sm uppercase tracking-widest">
-            Pour votre
-          </span>
-          <h3 className="text-carbon font-display text-xl md:text-2xl tracking-wide">
+          <span className="text-xs uppercase tracking-wider text-carbon/50">Pour votre</span>
+          <span className="px-4 py-1.5 rounded-full bg-mineral/10 border border-mineral/30 text-sm font-bold text-carbon">
             {activeModelName}
-          </h3>
+          </span>
         </motion.div>
       )}
 

@@ -69,7 +69,7 @@ const HeroBranding = () => {
           asChild 
           variant="outline" 
           size="lg" 
-          className="rounded-full gap-3 px-8 py-6 text-lg font-semibold border-mineral/40 hover:bg-mineral hover:text-white hover:border-mineral transition-all duration-300 shadow-md hover:shadow-[0_8px_30px_rgba(147,181,161,0.5)]"
+          className="rounded-full gap-3 px-6 lg:px-8 py-6 text-base lg:text-lg font-semibold border-mineral/40 hover:bg-mineral hover:text-white hover:border-mineral transition-all duration-300 shadow-md hover:shadow-[0_8px_30px_rgba(147,181,161,0.5)] whitespace-nowrap"
         >
           <Link to="/catalogue">
             <ShoppingBag className="w-5 h-5" />

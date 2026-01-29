@@ -29,7 +29,10 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="min-h-screen bg-gradient-to-b from-[hsl(30_10%_97%)] via-[hsl(30_10%_96%)] to-[hsl(30_14%_95%)] watermark-brand"
+      className="min-h-screen watermark-brand"
+      style={{
+        background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 50%, #F5F3F0 100%)"
+      }}
     >
       {/* Header - Fixed at top */}
       <Header />
@@ -51,7 +54,7 @@ const Index = () => {
         {/* 3. Compatible Parts Section - Scroll Reveal */}
         <motion.section
           id="compatible-parts"
-          className="pt-8 lg:pt-16 pb-8 lg:pb-12 scroll-mt-20"
+          className="pt-4 lg:pt-8 pb-8 lg:pb-12 scroll-mt-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
