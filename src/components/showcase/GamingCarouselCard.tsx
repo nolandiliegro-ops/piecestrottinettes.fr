@@ -60,9 +60,9 @@ const GamingCarouselCard = ({
 
   // Image size based on position
   const getImageSize = () => {
-    if (isCenter) return "500px";
-    if (distanceFromCenter === 1) return "380px";
-    return "320px";
+    if (isCenter) return "1000px";
+    if (distanceFromCenter === 1) return "760px";
+    return "640px";
   };
 
   return (
