@@ -32,8 +32,8 @@ const specsContainerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,  // 0.2s entre chaque - plus de décalage visible
-      delayChildren: 0.4,    // Délai initial plus long
+      staggerChildren: 0.05,  // Réduit à 0.05s pour transition rapide
+      delayChildren: 0.1,     // Réduit à 0.1s pour éviter le décalage
     }
   }
 };
@@ -59,7 +59,7 @@ const specItemVariants = {
 
 // Premium transition config - AMPLIFIED
 const premiumTransition = {
-  duration: 1,  // 1s au lieu de 0.8s
+  duration: 0.3,  // Réduit à 0.3s pour transition rapide
   ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number], // easeOutQuart - plus fluide
 };
 
@@ -641,7 +641,7 @@ const ScooterCarousel = ({
                           }}
                           initial={{ scale: 0.8 }}
                           animate={{ scale: 1 }}
-                          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
+                          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                         />
                         
                         {/* Image with AMPLIFIED parallax effect (slower = true parallax) */}
@@ -669,7 +669,7 @@ const ScooterCarousel = ({
                             scale: 0.95
                           }}
                           transition={{ 
-                            duration: 1.2,                                 // Plus lent = PARALLAX marqué
+                            duration: 0.4,                                 // Réduit pour transition rapide
                             ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number]
                           }}
                         />
