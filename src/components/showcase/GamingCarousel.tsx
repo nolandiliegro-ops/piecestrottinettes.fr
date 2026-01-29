@@ -177,15 +177,15 @@ const GamingCarousel = ({ parts, activeModelName, isLoading }: GamingCarouselPro
       </motion.button>
 
       {/* Carousel - overflow visible for edge-cut products */}
-      <div className="py-8 md:py-10 lg:py-12 px-5 md:px-10 lg:px-20 w-full">
+      <div className="py-8 md:py-10 lg:py-12 px-5 md:px-10 lg:px-20">
         <div 
-          className="overflow-visible mx-auto" 
+          className="overflow-visible" 
           ref={emblaRef}
           style={{
             clipPath: "inset(-100px 0)",
           }}
         >
-          <div className="flex gap-8 md:gap-10 lg:gap-12 items-center justify-center mx-auto">
+          <div className="flex gap-8 md:gap-10 lg:gap-12 items-center justify-center">
             {parts.map((part, index) => {
               const distanceFromCenter = Math.abs(index - selectedIndex);
               const wrappedDistance = Math.min(

@@ -27,10 +27,10 @@ const GamingCarouselCard = ({
 }: GamingCarouselCardProps) => {
   const navigate = useNavigate();
 
-  // Scale based on distance - central product is ENORMOUS (2.0)
+  // Scale based on distance - central product is HUGE (1.4)
   const getScale = () => {
-    if (isCenter) return 2.0;  // ÉNORME - produit central spectaculaire
-    if (distanceFromCenter === 1) return 1.1;  // Adjacents plus grands
+    if (isCenter) return 1.6;
+    if (distanceFromCenter === 1) return 1.0;
     if (distanceFromCenter === 2) return 0.9;
     return 0.85;
   };
@@ -58,11 +58,11 @@ const GamingCarouselCard = ({
     }, 150);
   };
 
-  // Image size based on position - MASSIVE sizes
+  // Image size based on position
   const getImageSize = () => {
-    if (isCenter) return "600px";      // ÉNORME - 600px × 2.0 = 1200px visuel
-    if (distanceFromCenter === 1) return "420px";  // Adjacents imposants
-    return "350px";                     // Éloignés
+    if (isCenter) return "500px";
+    if (distanceFromCenter === 1) return "380px";
+    return "320px";
   };
 
   return (
@@ -103,7 +103,7 @@ const GamingCarouselCard = ({
               maxWidth: getImageSize(),
               maxHeight: getImageSize(),
               filter: isCenter 
-                ? undefined // Animation CSS handles the intense glow
+                ? undefined // Animation CSS handles this
                 : `drop-shadow(0 15px 30px rgba(26, 26, 26, 0.12))`,
             }}
           />
@@ -120,71 +120,36 @@ const GamingCarouselCard = ({
         )}
       </motion.div>
 
-      {/* Product Info - Glassmorphism Card for center */}
+      {/* Product Info - Only for center card */}
       {isCenter && (
         <motion.div 
-          className="mt-10 text-center"
-          initial={{ opacity: 0, y: 20 }}
+          className="mt-8 text-center space-y-3"
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
+          transition={{ delay: 0.25, duration: 0.4 }}
         >
-          {/* Glassmorphism Card */}
-          <div 
-            className="inline-block px-8 py-6 rounded-2xl"
-            style={{
-              background: "rgba(255, 255, 255, 0.85)",
-              backdropFilter: "blur(20px)",
-              WebkitBackdropFilter: "blur(20px)",
-              border: "1px solid rgba(255, 255, 255, 0.5)",
-              boxShadow: "0 8px 32px rgba(26, 26, 26, 0.08), 0 0 0 1px rgba(147, 181, 161, 0.1)",
-            }}
+          <h3 className="text-carbon text-lg md:text-xl font-semibold line-clamp-2 px-4">
+            {part.name}
+          </h3>
+          <span 
+            className="text-2xl md:text-3xl font-extrabold block"
+            style={{ color: "hsl(var(--mineral))" }}
           >
-            {/* Product Name */}
-            <h3 className="text-carbon text-xl md:text-2xl font-bold line-clamp-2 mb-3">
-              {part.name}
-            </h3>
-            
-            {/* Price with Mineral accent */}
-            <span 
-              className="text-3xl md:text-4xl font-extrabold block mb-4"
-              style={{ color: "hsl(var(--mineral))" }}
+            {formatPrice(part.price || 0)}
+          </span>
+          {/* Compatible Badge */}
+          <div className="flex justify-center pt-1">
+            <div 
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full"
+              style={{
+                background: "rgba(147, 181, 161, 0.15)",
+                border: "1px solid rgba(147, 181, 161, 0.4)",
+              }}
             >
-              {formatPrice(part.price || 0)}
-            </span>
-            
-            {/* Technical Specs */}
-            {part.difficulty_level && (
-              <div className="flex justify-center gap-4 mb-4">
-                <div 
-                  className="flex items-center gap-2 px-3 py-1.5 rounded-full"
-                  style={{
-                    background: "rgba(147, 181, 161, 0.1)",
-                    border: "1px solid rgba(147, 181, 161, 0.2)",
-                  }}
-                >
-                  <span className="text-sm">🔧</span>
-                  <span className="text-carbon/70 text-sm font-medium">
-                    Difficulté: {part.difficulty_level}/4
-                  </span>
-                </div>
-              </div>
-            )}
-            
-            {/* Compatible Badge */}
-            <div className="flex justify-center">
-              <div 
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full"
-                style={{
-                  background: "linear-gradient(135deg, rgba(147, 181, 161, 0.2), rgba(147, 181, 161, 0.1))",
-                  border: "1px solid rgba(147, 181, 161, 0.5)",
-                  boxShadow: "0 0 20px rgba(147, 181, 161, 0.2)",
-                }}
-              >
-                <ShieldCheck className="w-5 h-5 text-mineral" />
-                <span className="text-mineral text-sm font-bold uppercase tracking-wider">
-                  100% Compatible
-                </span>
-              </div>
+              <ShieldCheck className="w-4 h-4 text-mineral" />
+              <span className="text-mineral text-sm font-bold uppercase tracking-wide">
+                Compatible
+              </span>
             </div>
           </div>
         </motion.div>

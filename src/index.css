@@ -379,7 +379,7 @@
     transform: scale(1) translateY(0);
   }
   50% {
-    transform: scale(1.025) translateY(-8px);  /* Plus de mouvement */
+    transform: scale(1.015) translateY(-4px);
   }
 }
 
@@ -391,13 +391,13 @@
 @keyframes centerProductGlow {
   0%, 100% {
     filter: 
-      drop-shadow(0 25px 50px rgba(26, 26, 26, 0.22)) 
-      drop-shadow(0 0 80px rgba(147, 181, 161, 0.45));
+      drop-shadow(0 25px 50px rgba(26, 26, 26, 0.18)) 
+      drop-shadow(0 0 60px rgba(147, 181, 161, 0.35));
   }
   50% {
     filter: 
-      drop-shadow(0 35px 70px rgba(26, 26, 26, 0.28)) 
-      drop-shadow(0 0 100px rgba(147, 181, 161, 0.6));  /* Glow intense */
+      drop-shadow(0 30px 60px rgba(26, 26, 26, 0.22)) 
+      drop-shadow(0 0 80px rgba(147, 181, 161, 0.5));
   }
 }
 

@@ -38,12 +38,12 @@ const CompatiblePartsSection = ({
 
   return (
     <div className="w-full">
-      {/* Header - Dynamic Call to Value - Transparent for uniform background */}
+      {/* Header - Dynamic Call to Value */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="text-center mb-0 px-4 md:px-10 lg:px-20 bg-transparent pt-8 lg:pt-12"
+        className="text-center mb-8 lg:mb-12 px-4 md:px-10 lg:px-20"
       >
         {/* Titre Dynamique avec Badge */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-3 mb-3">
