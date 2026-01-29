@@ -486,7 +486,7 @@ const ScooterCarousel = ({
 
       {/* BRIDGE BUTTON - Pill Style moderne */}
       <motion.div 
-        className="relative lg:absolute mt-2 lg:mt-0 lg:bottom-[16%] lg:left-1/2 lg:-translate-x-1/2 z-40 order-5 lg:order-none flex justify-center"
+        className="relative lg:absolute mt-2 lg:mt-0 lg:bottom-[20%] lg:left-1/2 lg:-translate-x-1/2 z-40 order-5 lg:order-none flex justify-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         whileHover={{ scale: 1.05, rotate: 2 }}
