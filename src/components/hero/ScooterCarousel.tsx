@@ -12,9 +12,6 @@ import { Command, CommandItem, CommandList } from "@/components/ui/command";
 import { useBatteryConfigs, getAvailableVoltages, getAvailableAmperages, getDefaultConfig } from "@/hooks/useBatteryConfigs";
 import { cn } from "@/lib/utils";
 
-// Centralized image mapping
-import { scooterImages } from "@/lib/scooterImageMapping";
-
 interface ScooterCarouselProps {
   models: ScooterModel[];
   activeIndex: number;
@@ -582,8 +579,8 @@ const ScooterCarousel = ({
               const scale = isActive ? 1 : Math.max(0.7, 1 - distance * 0.15);
               const opacity = isActive ? 1 : Math.max(0.3, 1 - distance * 0.25);
 
-              // Get the image from our mapping, fallback to model.image
-              const imageSrc = scooterImages[model.id] || model.image;
+              // Use image from Supabase database
+              const imageSrc = model.image;
 
               return (
                 <motion.div
