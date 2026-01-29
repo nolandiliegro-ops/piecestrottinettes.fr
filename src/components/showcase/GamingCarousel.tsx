@@ -12,6 +12,7 @@ interface Part {
   image_url: string | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
+  description?: string | null;
 }
 interface GamingCarouselProps {
   parts: Part[];

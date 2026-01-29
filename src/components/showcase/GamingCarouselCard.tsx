@@ -17,6 +17,7 @@ interface Part {
   image_url: string | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
+  description?: string | null;
 }
 
 interface GamingCarouselCardProps {
@@ -81,6 +82,16 @@ const GamingCarouselCard = ({
     setTimeout(() => {
       navigate(`/piece/${part.slug}`);
     }, 150);
+  };
+
+  // Image click opens Quick View for center card
+  const handleImageClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (isCenter) {
+      setShowQuickView(true);
+    } else {
+      handleClick();
+    }
   };
 
   // Add to cart with visual toast
@@ -184,12 +195,13 @@ const GamingCarouselCard = ({
             perspective: "1000px",
             transformStyle: "preserve-3d",
           }}
+          onClick={handleImageClick}
         >
           {part.image_url ? (
             <img
               src={part.image_url}
               alt={part.name}
-              className={`w-full h-auto object-contain mx-auto ${isCenter ? "floating-product-image" : ""}`}
+              className={`w-full h-auto object-contain mx-auto ${isCenter ? "floating-product-image cursor-pointer" : ""}`}
               style={{ 
                 maxWidth: getImageSize(),
                 maxHeight: getImageSize(),
@@ -398,6 +410,8 @@ const GamingCarouselCard = ({
         part={part}
         isOpen={showQuickView}
         onClose={() => setShowQuickView(false)}
+        isCompatible={isCompatible}
+        selectedScooterName={selectedScooter?.name}
       />
     </>
   );

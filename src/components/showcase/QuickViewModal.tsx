@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ShoppingCart, ExternalLink, Package } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -14,18 +15,39 @@ interface Part {
   image_url: string | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
+  description?: string | null;
 }
 
 interface QuickViewModalProps {
   part: Part;
   isOpen: boolean;
   onClose: () => void;
+  isCompatible?: boolean;
+  selectedScooterName?: string;
 }
 
-const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
+const QuickViewModal = ({ 
+  part, 
+  isOpen, 
+  onClose,
+  isCompatible,
+  selectedScooterName,
+}: QuickViewModalProps) => {
   const navigate = useNavigate();
   const { addItem, setIsOpen } = useCart();
   const isInStock = (part.stock_quantity ?? 0) > 0;
+
+  // ESC key handler
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, onClose]);
 
   const handleAddToCart = () => {
     if (part.price === null || !isInStock) return;
@@ -55,7 +77,7 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop avec blur */}
+          {/* Backdrop avec blur amélioré */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -64,9 +86,9 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
             onClick={onClose}
             className="fixed inset-0 z-50"
             style={{
-              background: "rgba(26, 26, 26, 0.4)",
-              backdropFilter: "blur(8px)",
-              WebkitBackdropFilter: "blur(8px)",
+              background: "rgba(0, 0, 0, 0.6)",
+              backdropFilter: "blur(12px)",
+              WebkitBackdropFilter: "blur(12px)",
             }}
           />
           
@@ -79,7 +101,7 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
             className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
           >
             <div 
-              className="relative w-full max-w-3xl pointer-events-auto rounded-3xl overflow-hidden"
+              className="relative w-full max-w-4xl pointer-events-auto rounded-3xl overflow-hidden"
               style={{
                 background: "rgba(250, 250, 248, 0.98)",
                 backdropFilter: "blur(20px)",
@@ -100,9 +122,12 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
                 <X className="w-5 h-5 text-carbon" />
               </motion.button>
 
-              <div className="grid md:grid-cols-2 gap-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                 {/* Image Section */}
-                <div className="relative aspect-square bg-greige flex items-center justify-center p-8">
+                <div 
+                  className="relative aspect-square flex items-center justify-center p-10"
+                  style={{ background: "#F9F9F7" }}
+                >
                   {part.image_url ? (
                     <motion.img
                       initial={{ scale: 0.9, opacity: 0 }}
@@ -121,7 +146,7 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
                 </div>
 
                 {/* Info Section */}
-                <div className="p-8 flex flex-col justify-center space-y-6">
+                <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center space-y-5 md:space-y-6">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -135,6 +160,37 @@ const QuickViewModal = ({ part, isOpen, onClose }: QuickViewModalProps) => {
                       {part.price ? formatPrice(part.price) : "Prix sur demande"}
                     </p>
                   </motion.div>
+
+                  {/* Description technique */}
+                  {part.description && (
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.18, duration: 0.4 }}
+                      className="text-sm text-carbon/70 leading-relaxed line-clamp-3"
+                    >
+                      {part.description}
+                    </motion.p>
+                  )}
+
+                  {/* Badge Compatibilité */}
+                  {isCompatible && selectedScooterName && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.22, duration: 0.4 }}
+                      className="flex items-center gap-2 px-4 py-3 rounded-xl"
+                      style={{
+                        background: "rgba(34, 197, 94, 0.1)",
+                        border: "1px solid rgba(34, 197, 94, 0.2)",
+                      }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                      <span className="text-sm font-medium text-green-700">
+                        Compatible avec votre {selectedScooterName}
+                      </span>
+                    </motion.div>
+                  )}
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
