@@ -2,7 +2,6 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { toast } from "sonner";
-import LuxurySuccessToast from "@/components/garage/LuxurySuccessToast";
 
 export interface GarageItem {
   id: string;
@@ -126,36 +125,20 @@ export const useAddToGarage = () => {
 
       if (garageError) throw garageError;
 
-      // Update performance points (+100 if nickname provided, otherwise +5/+10)
-      const pointsToAdd = nickname ? 100 : (isOwned ? 10 : 5);
-      
-      // Get current points and update
-      const { data: profile } = await supabase
-        .from("profiles")
-        .select("performance_points")
-        .eq("id", user.id)
-        .single();
+      // Note: XP attribution removed to prevent spam (add/remove trottinette exploit)
+      // XP is now only awarded for paid actions (purchases) or time-gated actions (maintenance)
 
-      await supabase
-        .from("profiles")
-        .update({ 
-          performance_points: (profile?.performance_points || 0) + pointsToAdd 
-        })
-        .eq("id", user.id);
-
-      return { isOwned, pointsToAdd, scooterName };
+      return { isOwned, scooterName };
     },
-    onSuccess: async ({ isOwned, pointsToAdd, scooterName }) => {
+    onSuccess: async ({ isOwned, scooterName }) => {
       queryClient.invalidateQueries({ queryKey: ["user-garage"] });
       await refreshProfile();
 
-      // Show luxury success toast
-      toast.custom(
-        (t) => <LuxurySuccessToast scooterName={scooterName} points={pointsToAdd} />,
-        {
-          duration: 5000,
-        }
-      );
+      // Show success toast (without XP mention)
+      toast.success(`${scooterName} ajoutée à votre garage !`, {
+        description: isOwned ? "Dans votre écurie" : "Dans votre collection",
+        duration: 4000,
+      });
     },
     onError: (error) => {
       console.error("Error adding to garage:", error);
