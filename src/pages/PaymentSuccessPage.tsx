@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { CheckCircle, Package, Mail, ArrowRight, Loader2, AlertCircle, Home, ShoppingBag } from "lucide-react";
@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
+import { useExperiencePoints } from "@/hooks/useExperiencePoints";
+import { useAuthContext } from "@/contexts/AuthContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -31,10 +33,13 @@ const PaymentSuccessPage = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { clearCart } = useCart();
+  const { user } = useAuthContext();
+  const { addPoints } = useExperiencePoints();
   
   const [isVerifying, setIsVerifying] = useState(true);
   const [order, setOrder] = useState<OrderDetails | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const xpAwardedRef = useRef(false);
 
   const sessionId = searchParams.get("session_id");
 
@@ -59,6 +64,12 @@ const PaymentSuccessPage = () => {
           setOrder(data.order);
           // Clear cart after successful payment verification
           clearCart();
+          
+          // Award +100 XP for purchase (only once per session)
+          if (user && !xpAwardedRef.current) {
+            xpAwardedRef.current = true;
+            addPoints({ pointsToAdd: 100, action: "Achat de pièce" });
+          }
         } else {
           setError(data.error || "Le paiement n'a pas été confirmé");
         }

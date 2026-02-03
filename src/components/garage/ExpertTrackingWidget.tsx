@@ -5,6 +5,8 @@ import { supabase } from '@/integrations/supabase/client';
 import { useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { useExperiencePoints } from '@/hooks/useExperiencePoints';
+import { useAuthContext } from '@/contexts/AuthContext';
 
 interface ExpertTrackingWidgetProps {
   garageItemId: string;
@@ -65,10 +67,17 @@ const ExpertTrackingWidget = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
   const queryClient = useQueryClient();
+  const { user } = useAuthContext();
+  const { addPoints } = useExperiencePoints();
   
   // Check if recently revised (within 30 days)
   const isRecentlyRevised = lastMaintenanceDate && 
     (new Date().getTime() - new Date(lastMaintenanceDate).getTime()) < 30 * 24 * 60 * 60 * 1000;
+  
+  // Calculate days since last maintenance for XP eligibility
+  const daysSinceLastMaintenance = lastMaintenanceDate 
+    ? Math.floor((Date.now() - new Date(lastMaintenanceDate).getTime()) / (1000 * 60 * 60 * 24))
+    : 999;
 
   const handleMarkMaintenance = async () => {
     if (isUpdating) return;
@@ -91,6 +100,11 @@ const ExpertTrackingWidget = ({
       toast.success('🎉 Révision enregistrée !', {
         description: `${scooterName} marquée comme révisée`
       });
+      
+      // Award +50 XP if last maintenance was more than 30 days ago (anti-spam)
+      if (user && daysSinceLastMaintenance >= 30) {
+        addPoints({ pointsToAdd: 50, action: "Révision enregistrée" });
+      }
       
       // Invalidate cache to refetch
       queryClient.invalidateQueries({ queryKey: ['user-garage'] });
