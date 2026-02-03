@@ -1,236 +1,166 @@
 
 
-# Corrections Critiques : Carrousel Intelligent + Quick View Modal
+# Correction des Bugs du Carrousel Gaming
 
-## Diagnostic des Problemes
+## Analyse des Bugs
 
-### Probleme 1 : Modal Coupee sur les Cotes
-**Cause identifiee** : La modal utilise `z-index: 50` ce qui peut etre insuffisant selon le contexte. Le positionnement est correct (`fixed inset-0 flex items-center justify-center`) mais le composant `QuickViewModal` est rendu **a l'interieur** de chaque `GamingCarouselCard`, ce qui peut causer des problemes de stacking context.
+### Bug #1 : Le bouton "Commander Direct" remplace le prix
 
-**Solution** : Remonter la modal au niveau du `GamingCarousel` et augmenter le z-index a 9999.
+**Localisation :** `GamingCarouselCard.tsx`, lignes 324-375
+
+**Cause :** Le code utilise une condition ternaire `isHovered ? <button> : <price>` qui affiche SOIT le prix, SOIT le bouton - jamais les deux ensemble.
+
+```typescript
+// Code actuel problématique (lignes 325-375)
+<AnimatePresence mode="wait">
+  {isHovered ? (
+    <motion.button key="order-button">Commander Direct</motion.button>
+  ) : (
+    <motion.span key="price">{formatPrice(part.price)}</motion.span>
+  )}
+</AnimatePresence>
+```
+
+**Impact UX :** L'utilisateur perd de vue le prix au moment crucial de la décision d'achat.
 
 ---
 
-### Probleme 2 : Navigation Unidirectionnelle
-**Cause identifiee** : Le code Embla semble correct avec `loop: true`, mais la configuration actuelle avec `containScroll: false` peut causer des comportements inattendus. Les fleches `scrollPrev` et `scrollNext` sont bien implementees.
+### Bug #2 : Le badge de catégorie s'affiche sur tous les produits
 
-**Verification** : Le probleme pourrait venir de l'interaction entre le scroll et le clic sur les cartes.
+**Localisation :** `GamingCarouselCard.tsx`, lignes 198-203
+
+**Cause identifiée :** La condition `isCenter` est correcte dans le code, mais le problème vient du fait que le badge est positionné en `absolute` avec `top-0` et `left-1/2`, ce qui le place en haut de la carte. Cependant, quand les cartes sont à différentes échelles (via `scale`), le positionnement absolu peut créer des chevauchements visuels ou le badge peut sembler appartenir à une autre carte.
+
+De plus, le calcul de `wrappedDistance` pour le loop infini peut créer des situations où plusieurs cartes ont temporairement `wrappedDistance === 0` pendant les transitions.
 
 ---
 
-### Probleme 3 : Clic sur Produit Lateral = Redirection (BUG CRITIQUE)
-**Cause identifiee dans GamingCarouselCard.tsx** :
-- Ligne 181 : `onClick={handleClick}` sur le container principal → navigue **toujours** vers `/piece/{slug}`
-- Ligne 88-95 : `handleImageClick` intercepte le clic sur l'image, mais le container parent capte aussi le clic
+## Solution Proposée
+
+### Fix #1 : Afficher le prix ET le bouton "Commander Direct"
+
+Restructurer la section pour :
+1. Afficher **toujours** le prix
+2. Faire **apparaître** le bouton en dessous au survol avec une animation
 
 ```text
-FLUX ACTUEL (BUGUE)
-+-----------------------------------+
-|  <motion.div onClick={handleClick}  |  ← Capte TOUS les clics
-|                                     |
-|    <motion.div onClick={handleImageClick}  |  ← Capte le clic image
-|                                     |
-+-----------------------------------+
+AVANT (hover)           APRÈS (hover)
++----------------+      +----------------+
+|                |      |    35.00 €     |  ← Prix toujours visible
+| Commander ⚡   |      +----------------+
+|                |      | Commander ⚡   |  ← Bouton apparaît en dessous
++----------------+      +----------------+
 ```
 
-Le `handleClick` du container parent est toujours execute car le `stopPropagation` dans `handleImageClick` ne l'empeche pas quand on clique ailleurs sur la carte.
+**Modifications à apporter :**
 
----
-
-## Architecture de la Solution
-
-```text
-AVANT                                    APRES
-+----------------------------------+     +----------------------------------+
-| GamingCarousel                   |     | GamingCarousel                   |
-|   +----------------------------+ |     |   +----------------------------+ |
-|   | GamingCarouselCard #1      | |     |   | GamingCarouselCard #1      | |
-|   |   <QuickViewModal />       | |     |   | (pas de modal ici)         | |
-|   +----------------------------+ |     |   +----------------------------+ |
-|   | GamingCarouselCard #2      | |     |   | GamingCarouselCard #2      | |
-|   |   <QuickViewModal />       | |     |   | (pas de modal ici)         | |
-|   +----------------------------+ |     |   +----------------------------+ |
-|                                  |     |   <QuickViewModal />            |
-|                                  |     |   (UNE seule modal partagee)    |
-+----------------------------------+     +----------------------------------+
-```
-
----
-
-## Modifications Fichier par Fichier
-
-### 1. `GamingCarousel.tsx` - Refactorisation Majeure
-
-#### 1.1 Ajouter un state pour la modal partagee
 ```typescript
-const [selectedPart, setSelectedPart] = useState<Part | null>(null);
-const [showQuickView, setShowQuickView] = useState(false);
-```
+// Remplacer les lignes 324-375 par :
 
-#### 1.2 Creer un handler pour le clic sur les cartes
-```typescript
-const handleCardClick = useCallback((index: number, part: Part) => {
-  if (index === selectedIndex) {
-    // Produit central : ouvre la modal
-    setSelectedPart(part);
-    setShowQuickView(true);
-  } else {
-    // Produit lateral : centre ce produit
-    emblaApi?.scrollTo(index);
-  }
-}, [emblaApi, selectedIndex]);
-```
-
-#### 1.3 Passer le handler aux cartes
-```typescript
-<GamingCarouselCard 
-  part={part} 
-  isCenter={wrappedDistance === 0} 
-  distanceFromCenter={wrappedDistance} 
-  index={index}
-  onCardClick={handleCardClick}  // NOUVEAU
-  onQuickView={() => {           // NOUVEAU
-    setSelectedPart(part);
-    setShowQuickView(true);
+{/* Prix - Toujours visible */}
+<motion.span
+  className="text-2xl md:text-3xl font-extrabold block text-mineral"
+  animate={{ 
+    scale: isHovered ? 0.9 : 1,  // Légère réduction au survol
+    y: isHovered ? -4 : 0        // Remonte légèrement
   }}
-/>
-```
+  transition={{ duration: 0.25, ease: "easeOut" }}
+>
+  {formatPrice(part.price || 0)}
+</motion.span>
 
-#### 1.4 Ajouter la modal partagee a la fin du composant
-```typescript
-{/* Quick View Modal - Une seule instance partagee */}
-{selectedPart && (
-  <QuickViewModal 
-    part={selectedPart}
-    isOpen={showQuickView}
-    onClose={() => {
-      setShowQuickView(false);
-      setSelectedPart(null);
-    }}
-  />
-)}
-```
-
----
-
-### 2. `GamingCarouselCard.tsx` - Simplification
-
-#### 2.1 Modifier l'interface des props
-```typescript
-interface GamingCarouselCardProps {
-  part: Part;
-  isCenter: boolean;
-  distanceFromCenter: number;
-  index: number;
-  onCardClick: (index: number, part: Part) => void;  // NOUVEAU
-  onQuickView: () => void;                           // NOUVEAU
-}
-```
-
-#### 2.2 Supprimer la modal interne
-Retirer completement l'import et le rendu de `QuickViewModal` dans ce composant.
-
-#### 2.3 Modifier le handler du container
-```typescript
-// AVANT
-onClick={handleClick}
-
-// APRES
-onClick={(e) => {
-  e.stopPropagation();
-  onCardClick(index, part);
-}}
-```
-
-#### 2.4 Modifier le handler de l'image
-```typescript
-const handleImageClick = (e: React.MouseEvent) => {
-  e.stopPropagation();
-  if (isCenter) {
-    onQuickView();
-  } else {
-    onCardClick(index, part);
-  }
-};
-```
-
-#### 2.5 Modifier le handler de l'icone oeil
-```typescript
-onClick={(e) => {
-  e.stopPropagation();
-  onQuickView();
-}}
+{/* Bouton Commander Direct - Apparaît au survol */}
+<AnimatePresence>
+  {isHovered && (
+    <motion.button
+      key="order-button"
+      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: 5, scale: 0.95 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+      onClick={handleDirectOrder}
+      disabled={isOrdering || part.price === null}
+      className={`w-full max-w-xs mx-auto py-3 px-6 rounded-xl font-semibold text-white mt-3 ...`}
+    >
+      {/* Contenu du bouton (Loader, Check, ou Zap + texte) */}
+    </motion.button>
+  )}
+</AnimatePresence>
 ```
 
 ---
 
-### 3. `QuickViewModal.tsx` - Amelioration du z-index
+### Fix #2 : Renforcer l'isolation du badge de catégorie
 
-#### 3.1 Augmenter le z-index
+Le badge est correctement conditionné par `isCenter`, mais pour éviter tout chevauchement visuel :
+
+1. **Ajouter `pointer-events-none`** sur les cartes non-centrales pour éviter tout artefact
+2. **Vérifier le z-index** pour s'assurer que le badge du produit central est toujours au-dessus
+3. **Ajouter une condition supplémentaire** pour exclure le rendu du badge pendant les transitions
+
+**Modifications à apporter :**
+
 ```typescript
-// AVANT (ligne 87)
-className="fixed inset-0 z-50"
-
-// APRES
-className="fixed inset-0 z-[9999]"
+// Ligne 198-203 - Renforcer la condition
+{/* Category Badge - Only on center product */}
+<AnimatePresence mode="wait">
+  {isCenter && part.category?.name && (
+    <CategoryBadge categoryName={part.category.name} />
+  )}
+</AnimatePresence>
 ```
 
-```typescript
-// AVANT (ligne 101)
-className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
+Le `mode="wait"` sur `AnimatePresence` assure que l'ancien badge disparaît complètement avant que le nouveau n'apparaisse.
 
-// APRES
-className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-none"
+**Dans CategoryBadge.tsx**, vérifier le z-index :
+```typescript
+className="absolute top-0 left-1/2 -translate-x-1/2 mt-4 z-50"  // z-50 au lieu de z-30
 ```
 
 ---
 
-## Flux d'Interaction Final
+## Résumé des Fichiers à Modifier
+
+| Fichier | Lignes | Action |
+|---------|--------|--------|
+| `GamingCarouselCard.tsx` | 198-203 | Ajouter `mode="wait"` à AnimatePresence |
+| `GamingCarouselCard.tsx` | 324-375 | Restructurer : prix toujours visible + bouton en dessous au survol |
+| `CategoryBadge.tsx` | 58 | Augmenter z-index à z-50 |
+
+---
+
+## Résultat Attendu
 
 ```text
-UTILISATEUR CLIQUE SUR LE CARROUSEL
-                |
-        +-------+-------+
-        |               |
-        v               v
-   PRODUIT           PRODUIT
-   LATERAL           CENTRAL
-        |               |
-        v               |
-  emblaApi.scrollTo     +-------+-------+
-  (centre ce produit)   |       |       |
-        |               v       v       v
-        |            PHOTO   OEIL    AUTRE
-        |               |       |       |
-        v               v       v       v
-   PRODUIT           MODAL   MODAL   MODAL
-   CENTRE              ↓       ↓       ↓
-                    (meme modal partagee)
+PRODUIT CENTRAL (APRÈS FIX)
++---------------------------+
+|    +---------------+      |
+|    | 🛞 PNEUS      |      |  ← Badge uniquement ici
+|    +---------------+      |
+|                           |
+|      [IMAGE PRODUIT]      |
+|                           |
+|   [❤️] [👁️] [🛒]          |  ← Action bar au survol
+|                           |
+|   PNEU PLEIN 8,5X2        |
+|                           |
+|      35.00 €              |  ← Prix TOUJOURS visible
+|   +-------------------+   |
+|   | ⚡ Commander      |   |  ← Apparaît SOUS le prix
+|   +-------------------+   |
+|                           |
+|   🟢 COMPATIBLE           |
++---------------------------+
 ```
-
----
-
-## Resume des Fichiers a Modifier
-
-| Fichier | Action | Description |
-|---------|--------|-------------|
-| `src/components/showcase/GamingCarousel.tsx` | MODIFIER | Ajouter state modal + handler clic intelligent + modal partagee |
-| `src/components/showcase/GamingCarouselCard.tsx` | MODIFIER | Supprimer modal interne + accepter callbacks + simplifier handlers |
-| `src/components/showcase/QuickViewModal.tsx` | MODIFIER | Augmenter z-index a 9999 |
 
 ---
 
 ## Checklist de Validation
 
-- Modal toujours centree a l'ecran (jamais coupee) grace au z-index 9999
-- Fleches gauche/droite fonctionnent dans les deux sens (deja OK)
-- Swipe tactile fonctionne (Embla gere nativement)
-- Clic sur produit lateral → Centre ce produit dans le carrousel
-- Clic sur produit central (photo/oeil/carte) → Ouvre la Quick View Modal
-- Clic sur "Ajouter au panier" (modal) → Toast + Ferme la modal
-- Clic sur "Voir la fiche complete" (modal) → Redirige vers /piece/slug
-- Clic sur backdrop/X/ESC → Ferme la modal
-- Produits lateraux semi-transparents (opacity 0.6-0.8)
-- Produit central mis en avant (scale 1.6, opacity 1)
-- Plus de redirection directe depuis les cartes du carrousel
+- [ ] Le prix reste visible au survol du produit central
+- [ ] Le bouton "Commander Direct" apparaît EN DESSOUS du prix
+- [ ] Le badge de catégorie s'affiche UNIQUEMENT sur le produit central
+- [ ] Les transitions sont fluides (0.25s)
+- [ ] Pas de chevauchement visuel entre les badges
+- [ ] L'animation du bouton est cohérente avec le reste du design
 
