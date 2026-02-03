@@ -203,7 +203,7 @@ const GamingCarousel = ({
           ref={emblaRef} 
           style={{ clipPath: "inset(-100px 0)" }}
         >
-          <div className="flex gap-8 md:gap-10 lg:gap-12 items-center justify-center">
+          <div className="flex gap-8 md:gap-10 lg:gap-12 items-center">
             {parts.map((part, index) => {
               const distanceFromCenter = Math.abs(index - selectedIndex);
               const wrappedDistance = Math.min(distanceFromCenter, parts.length - distanceFromCenter);
