@@ -26,6 +26,27 @@ interface QuickViewModalProps {
   selectedScooterName?: string;
 }
 
+// Staggered animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as const }
+  },
+};
+
 const QuickViewModal = ({ 
   part, 
   isOpen, 
@@ -123,9 +144,9 @@ const QuickViewModal = ({
               </motion.button>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                {/* Image Section */}
+                {/* Image Section - XXL Enhancement */}
                 <div 
-                  className="relative aspect-square flex items-center justify-center p-10"
+                  className="relative aspect-square min-h-[450px] lg:min-h-[500px] flex items-center justify-center p-10"
                   style={{ background: "#F9F9F7" }}
                 >
                   {part.image_url ? (
@@ -145,13 +166,15 @@ const QuickViewModal = ({
                   )}
                 </div>
 
-                {/* Info Section */}
-                <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center space-y-5 md:space-y-6">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.15, duration: 0.4 }}
-                  >
+                {/* Info Section - Staggered Animation Container */}
+                <motion.div 
+                  className="p-6 md:p-8 lg:p-10 flex flex-col justify-center space-y-5 md:space-y-6"
+                  variants={containerVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {/* Title + Price */}
+                  <motion.div variants={itemVariants}>
                     <h2 className="text-2xl font-semibold text-carbon leading-tight mb-4">
                       {part.name}
                     </h2>
@@ -164,9 +187,7 @@ const QuickViewModal = ({
                   {/* Description technique */}
                   {part.description && (
                     <motion.p
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.18, duration: 0.4 }}
+                      variants={itemVariants}
                       className="text-sm text-carbon/70 leading-relaxed line-clamp-3"
                     >
                       {part.description}
@@ -176,9 +197,7 @@ const QuickViewModal = ({
                   {/* Badge Compatibilité */}
                   {isCompatible && selectedScooterName && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.22, duration: 0.4 }}
+                      variants={itemVariants}
                       className="flex items-center gap-2 px-4 py-3 rounded-xl"
                       style={{
                         background: "rgba(34, 197, 94, 0.1)",
@@ -192,12 +211,8 @@ const QuickViewModal = ({
                     </motion.div>
                   )}
 
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.4 }}
-                    className="space-y-4"
-                  >
+                  {/* Difficulté + Stock */}
+                  <motion.div variants={itemVariants} className="space-y-4">
                     {/* Difficulté */}
                     <div className="flex items-center justify-between py-3 border-b border-carbon/10">
                       <span className="text-sm text-carbon/60">Difficulté</span>
@@ -229,12 +244,8 @@ const QuickViewModal = ({
                     </div>
                   </motion.div>
 
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.25, duration: 0.4 }}
-                    className="space-y-3 pt-4"
-                  >
+                  {/* Buttons */}
+                  <motion.div variants={itemVariants} className="space-y-3 pt-4">
                     {/* Bouton Ajouter au Panier */}
                     <button
                       onClick={handleAddToCart}
@@ -250,16 +261,16 @@ const QuickViewModal = ({
                       <span>Ajouter au Panier</span>
                     </button>
 
-                    {/* Lien vers fiche complète */}
+                    {/* Lien vers fiche complète - Polished Hover */}
                     <button
                       onClick={handleViewDetails}
-                      className="w-full py-3 text-center text-carbon/70 hover:text-mineral font-medium flex items-center justify-center gap-2 transition-colors"
+                      className="w-full py-3 text-center text-carbon/70 hover:text-mineral font-medium flex items-center justify-center gap-2 transition-all duration-200 group"
                     >
-                      <span>Voir la fiche complète</span>
-                      <ExternalLink className="w-4 h-4" />
+                      <span className="group-hover:underline underline-offset-4">Voir la fiche complète</span>
+                      <ExternalLink className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
                     </button>
                   </motion.div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
