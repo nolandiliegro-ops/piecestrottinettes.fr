@@ -6,6 +6,7 @@ import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected
 import { useCart } from "@/hooks/useCart";
 import { useFavorites } from "@/hooks/useFavorites";
 import { toast } from "sonner";
+import CategoryBadge from "./CategoryBadge";
 
 interface Part {
   id: string;
@@ -16,6 +17,12 @@ interface Part {
   stock_quantity: number | null;
   difficulty_level: number | null;
   description?: string | null;
+  category?: {
+    id: string;
+    name: string;
+    icon: string | null;
+    slug: string;
+  } | null;
 }
 
 interface GamingCarouselCardProps {
@@ -56,17 +63,25 @@ const GamingCarouselCard = ({
   // Opacity based on distance - more contrast
   const getOpacity = () => {
     if (isCenter) return 1;
-    if (distanceFromCenter === 1) return 0.8;
+    if (distanceFromCenter === 1) return 0.75;
     if (distanceFromCenter === 2) return 0.6;
     return 0.5;
   };
 
-  // Blur for depth effect
+  // Blur for depth effect - increased for premium feel
   const getBlur = () => {
     if (isCenter) return 0;
-    if (distanceFromCenter === 1) return 0.5;
-    if (distanceFromCenter === 2) return 0.8;
-    return 1;
+    if (distanceFromCenter === 1) return 1.5;
+    if (distanceFromCenter === 2) return 2;
+    return 2.5;
+  };
+
+  // Grayscale for desaturation effect on lateral products
+  const getGrayscale = () => {
+    if (isCenter) return 0;
+    if (distanceFromCenter === 1) return 0.3;
+    if (distanceFromCenter === 2) return 0.5;
+    return 0.5;
   };
 
   // Image size based on position
@@ -169,10 +184,10 @@ const GamingCarouselCard = ({
         opacity: getOpacity(), 
         y: 0,
         scale: getScale(),
-        filter: `blur(${getBlur()}px)`,
+        filter: `blur(${getBlur()}px) grayscale(${getGrayscale()})`,
       }}
       transition={{ 
-        duration: 0.6, 
+        duration: 0.4, 
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
       onClick={handleCardClick}
@@ -180,6 +195,12 @@ const GamingCarouselCard = ({
       onMouseLeave={() => setIsHovered(false)}
       className={`relative cursor-pointer ${isCenter ? "floating-product-center z-10" : ""}`}
     >
+      {/* Category Badge - Only on center product */}
+      <AnimatePresence>
+        {isCenter && part.category?.name && (
+          <CategoryBadge categoryName={part.category.name} />
+        )}
+      </AnimatePresence>
       {/* Floating Product Image */}
       <motion.div
         className="relative"
@@ -203,7 +224,7 @@ const GamingCarouselCard = ({
               maxWidth: getImageSize(),
               maxHeight: getImageSize(),
               filter: isCenter 
-                ? undefined
+                ? "drop-shadow(0 40px 60px rgba(26, 26, 26, 0.25))"
                 : `drop-shadow(0 15px 30px rgba(26, 26, 26, 0.12))`,
             }}
           />
