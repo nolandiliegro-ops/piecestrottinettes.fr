@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ShoppingCart, ExternalLink, Package } from "lucide-react";
+import { X, ShoppingCart, ExternalLink, Package, ShieldCheck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { formatPrice } from "@/lib/formatPrice";
 import { useCart } from "@/hooks/useCart";
 import DifficultyIndicator from "@/components/parts/DifficultyIndicator";
 import { toast } from "sonner";
+import { getBrandColors } from "@/contexts/ScooterContext";
 
 interface Part {
   id: string;
@@ -22,8 +23,12 @@ interface QuickViewModalProps {
   part: Part;
   isOpen: boolean;
   onClose: () => void;
+  // Garage scooter (verification mode)
   isCompatible?: boolean;
   selectedScooterName?: string;
+  // Hero scooter (discovery mode)
+  heroScooterName?: string;
+  heroBrandSlug?: string;
 }
 
 // Staggered animation variants
@@ -53,6 +58,8 @@ const QuickViewModal = ({
   onClose,
   isCompatible,
   selectedScooterName,
+  heroScooterName,
+  heroBrandSlug,
 }: QuickViewModalProps) => {
   const navigate = useNavigate();
   const { addItem, setIsOpen } = useCart();
@@ -143,10 +150,10 @@ const QuickViewModal = ({
                 <X className="w-5 h-5 text-carbon" />
               </motion.button>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                {/* Image Section - XXL Enhancement */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden">
+                {/* Image Section - Constrained */}
                 <div 
-                  className="relative aspect-square min-h-[450px] lg:min-h-[500px] flex items-center justify-center p-10"
+                  className="relative flex items-center justify-center p-8 md:p-10"
                   style={{ background: "#F9F9F7" }}
                 >
                   {part.image_url ? (
@@ -156,7 +163,7 @@ const QuickViewModal = ({
                       transition={{ delay: 0.1, duration: 0.4 }}
                       src={part.image_url}
                       alt={part.name}
-                      className="w-full h-full object-contain"
+                      className="w-full max-h-[400px] object-contain"
                       style={{
                         filter: "drop-shadow(0 20px 40px rgba(26, 26, 26, 0.15))"
                       }}
@@ -194,22 +201,52 @@ const QuickViewModal = ({
                     </motion.p>
                   )}
 
-                  {/* Badge Compatibilité */}
-                  {isCompatible && selectedScooterName && (
-                    <motion.div
-                      variants={itemVariants}
-                      className="flex items-center gap-2 px-4 py-3 rounded-xl"
-                      style={{
-                        background: "rgba(34, 197, 94, 0.1)",
-                        border: "1px solid rgba(34, 197, 94, 0.2)",
-                      }}
-                    >
-                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                      <span className="text-sm font-medium text-green-700">
-                        Compatible avec votre {selectedScooterName}
-                      </span>
-                    </motion.div>
-                  )}
+                  {/* Extra spacing before compatibility */}
+                  <div className="h-1" />
+
+                  {/* Double Compatibility Badges */}
+                  <motion.div variants={itemVariants} className="space-y-3">
+                    {/* PRIMARY BADGE - Hero Discovery Context */}
+                    {heroScooterName && (() => {
+                      const heroBrandColors = getBrandColors(heroBrandSlug);
+                      return (
+                        <div
+                          className="flex items-center gap-2.5 px-4 py-3 rounded-xl"
+                          style={{
+                            background: `${heroBrandColors.accent}15`,
+                            border: `1px solid ${heroBrandColors.accent}30`,
+                          }}
+                        >
+                          <ShieldCheck 
+                            className="w-4 h-4 flex-shrink-0" 
+                            style={{ color: heroBrandColors.accent }} 
+                          />
+                          <span 
+                            className="text-sm font-medium"
+                            style={{ color: heroBrandColors.accent }}
+                          >
+                            Certifié pour votre {heroScooterName}
+                          </span>
+                        </div>
+                      );
+                    })()}
+
+                    {/* SECONDARY BADGE - Garage Check Context */}
+                    {isCompatible && selectedScooterName && selectedScooterName !== heroScooterName && (
+                      <div
+                        className="flex items-center gap-2.5 px-4 py-3 rounded-xl"
+                        style={{
+                          background: "rgba(34, 197, 94, 0.1)",
+                          border: "1px solid rgba(34, 197, 94, 0.2)",
+                        }}
+                      >
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse flex-shrink-0" />
+                        <span className="text-sm font-medium text-green-700">
+                          Également compatible avec votre {selectedScooterName}
+                        </span>
+                      </div>
+                    )}
+                  </motion.div>
 
                   {/* Difficulté + Stock */}
                   <motion.div variants={itemVariants} className="space-y-4">

@@ -160,6 +160,7 @@ const CompatiblePartsSection = ({
       <GamingCarousel 
         parts={parts}
         activeModelName={activeModelName}
+        activeBrandSlug={activeBrandSlug}
         isLoading={isLoading}
       />
     </div>

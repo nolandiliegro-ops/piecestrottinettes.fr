@@ -27,6 +27,7 @@ interface Part {
 interface GamingCarouselProps {
   parts: Part[];
   activeModelName?: string;
+  activeBrandSlug?: string;
   isLoading?: boolean;
 }
 
@@ -57,6 +58,7 @@ const GamingCarouselSkeleton = () => (
 const GamingCarousel = ({
   parts,
   activeModelName,
+  activeBrandSlug,
   isLoading
 }: GamingCarouselProps) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -267,6 +269,8 @@ const GamingCarousel = ({
           onClose={handleCloseModal}
           isCompatible={isCompatible}
           selectedScooterName={selectedScooter?.name}
+          heroScooterName={activeModelName}
+          heroBrandSlug={activeBrandSlug}
         />
       )}
     </div>
