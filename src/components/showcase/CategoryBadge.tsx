@@ -55,7 +55,7 @@ const CategoryBadge = ({ categoryName }: CategoryBadgeProps) => {
         duration: 0.4,
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
-      className="absolute top-0 left-1/2 -translate-x-1/2 mt-4 z-30"
+      className="absolute top-0 left-1/2 -translate-x-1/2 mt-4 z-50"
     >
       <div 
         className="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/20 shadow-lg"
