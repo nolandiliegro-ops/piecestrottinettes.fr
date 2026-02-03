@@ -16,6 +16,12 @@ interface Part {
   stock_quantity: number | null;
   difficulty_level: number | null;
   description?: string | null;
+  category?: {
+    id: string;
+    name: string;
+    icon: string | null;
+    slug: string;
+  } | null;
 }
 
 interface GamingCarouselProps {
