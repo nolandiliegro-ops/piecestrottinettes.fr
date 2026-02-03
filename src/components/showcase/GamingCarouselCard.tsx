@@ -196,7 +196,7 @@ const GamingCarouselCard = ({
       className={`relative cursor-pointer ${isCenter ? "floating-product-center z-10" : ""}`}
     >
       {/* Category Badge - Only on center product */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isCenter && part.category?.name && (
           <CategoryBadge categoryName={part.category.name} />
         )}
@@ -321,18 +321,30 @@ const GamingCarouselCard = ({
             {part.name}
           </h3>
           
-          {/* Price / Commander Direct Button */}
-          <AnimatePresence mode="wait">
-            {isHovered ? (
+          {/* Prix - Toujours visible */}
+          <motion.span
+            className="text-2xl md:text-3xl font-extrabold block text-mineral"
+            animate={{ 
+              scale: isHovered ? 0.95 : 1,
+              y: isHovered ? -2 : 0
+            }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          >
+            {formatPrice(part.price || 0)}
+          </motion.span>
+
+          {/* Bouton Commander Direct - Apparaît au survol */}
+          <AnimatePresence>
+            {isHovered && (
               <motion.button
                 key="order-button"
-                initial={{ opacity: 0, scale: 0.9, y: 10 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9, y: -5 }}
+                initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 5, scale: 0.95 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
                 onClick={handleDirectOrder}
                 disabled={isOrdering || part.price === null}
-                className={`w-full max-w-xs mx-auto py-3 px-6 rounded-xl font-semibold text-white transition-all duration-300 ${
+                className={`w-full max-w-xs mx-auto py-3 px-6 rounded-xl font-semibold text-white mt-3 transition-all duration-300 ${
                   orderSuccess ? "bg-green-500" : "bg-mineral hover:bg-mineral-dark"
                 }`}
                 style={{
@@ -360,17 +372,6 @@ const GamingCarouselCard = ({
                   </span>
                 )}
               </motion.button>
-            ) : (
-              <motion.span
-                key="price"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="text-2xl md:text-3xl font-extrabold block text-mineral"
-              >
-                {formatPrice(part.price || 0)}
-              </motion.span>
             )}
           </AnimatePresence>
 
