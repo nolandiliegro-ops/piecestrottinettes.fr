@@ -39,12 +39,41 @@ interface GarageScooterCarouselProps {
   mobileCleanMode?: boolean;
 }
 
+// Animation variants for directional slide
+const slideVariants = {
+  enter: (direction: number) => ({
+    x: direction > 0 ? '100%' : '-100%',
+    opacity: 0,
+    scale: 0.95
+  }),
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+    scale: 1
+  },
+  exit: (direction: number) => ({
+    zIndex: 0,
+    x: direction < 0 ? '100%' : '-100%',
+    opacity: 0,
+    scale: 0.95
+  })
+};
+
+const slideTransition = {
+  x: { type: 'spring' as const, stiffness: 300, damping: 30 },
+  opacity: { duration: 0.2 },
+  scale: { duration: 0.3 }
+};
+
 const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<1 | -1>(1);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
   const [imageError, setImageError] = useState(false);
 
   const handlePrevious = () => {
+    setDirection(-1);
     const newIndex = currentIndex === 0 ? scooters.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
     setShowCustomPhoto(false);
@@ -52,6 +81,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
   };
 
   const handleNext = () => {
+    setDirection(1);
     const newIndex = currentIndex === scooters.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     setShowCustomPhoto(false);
@@ -59,6 +89,9 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
   };
 
   const handleDotClick = (index: number) => {
+    // Calculate optimal direction (shortest path)
+    const diff = index - currentIndex;
+    setDirection(diff >= 0 ? 1 : -1);
     setCurrentIndex(index);
     setShowCustomPhoto(false);
     onScooterChange?.(scooters[index]);
@@ -134,11 +167,11 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
         </div>
       )}
 
-      {/* Main Image Container */}
+      {/* Main Image Container - Fixed height for layout stability */}
       <div 
         className={cn(
           "relative flex-1 bg-[#3A3A3A] border-[0.5px] border-white/10 rounded-2xl overflow-hidden shadow-xl",
-          mobileCleanMode ? "min-h-[260px]" : "min-h-[250px] md:min-h-0"
+          mobileCleanMode ? "h-[300px] md:h-[400px]" : "h-[280px] md:h-[400px] lg:h-[450px]"
         )}
         style={{ 
           backgroundImage: 'url(/garage-floor.png)', 
@@ -167,19 +200,20 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
         {/* Studio Spotlight Container */}
         <div className="absolute inset-0">
 
-          {/* Scooter Image with Premium Shadow - 40% LARGER */}
-          <AnimatePresence mode="wait">
+          {/* Scooter Image with Directional Slide Animation */}
+          <AnimatePresence initial={false} custom={direction} mode="wait">
             {displayImage && !imageError ? (
               <motion.img
-                key={showCustomPhoto ? 'custom' : 'official'}
+                key={`${currentScooter.id}-${showCustomPhoto ? 'custom' : 'official'}`}
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={slideTransition}
                 src={displayImage}
                 alt={displayName}
                 className="absolute inset-0 w-full h-full object-contain p-4 md:p-8 drop-shadow-[0_25px_50px_rgba(0,0,0,0.15)]"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.05 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-                style={{ transform: 'scale(1.05)' }}
                 onError={() => setImageError(true)}
               />
             ) : (
