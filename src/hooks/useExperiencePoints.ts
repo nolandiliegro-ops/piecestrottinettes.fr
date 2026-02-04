@@ -2,6 +2,8 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { toast } from "sonner";
+import { createElement } from "react";
+import XPToast from "@/components/garage/XPToast";
 
 interface AddPointsParams {
   pointsToAdd: number;
@@ -15,15 +17,6 @@ interface AddPointsResponse {
   newTotal: number;
   action: string;
 }
-
-// XP Toast component defined inline to avoid JSX parsing issues
-const createXPToast = (points: number, action: string) => {
-  return toast.success(`+${points} XP`, {
-    description: action,
-    duration: 4000,
-    icon: "🏆",
-  });
-};
 
 export const useExperiencePoints = () => {
   const queryClient = useQueryClient();
@@ -51,8 +44,11 @@ export const useExperiencePoints = () => {
       queryClient.invalidateQueries({ queryKey: ["profile"] });
       await refreshProfile();
 
-      // Show XP toast with sonner
-      createXPToast(data.pointsAdded, data.action);
+      // Show premium animated XP toast using createElement to avoid JSX in .ts file
+      toast.custom(
+        () => createElement(XPToast, { points: data.pointsAdded, action: data.action }),
+        { duration: 4000 }
+      );
     },
     onError: (error) => {
       console.error("Error adding experience points:", error);
