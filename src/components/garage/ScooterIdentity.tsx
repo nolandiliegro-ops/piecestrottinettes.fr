@@ -148,7 +148,7 @@ const ScooterIdentity = ({
   if (variant === 'desktop') {
     // Desktop: Horizontal inline layout with backdrop
     return (
-      <div className={cn("flex flex-col items-center gap-1 ml-10", className)}>
+      <div className={cn("flex flex-col items-center gap-1 ml-[70px]", className)}>
         {/* Brand Tag */}
         <span className="px-2 py-0.5 bg-mineral/10 backdrop-blur-sm rounded-full text-[9px] font-semibold 
                         text-mineral uppercase tracking-[0.15em] border-[0.5px] border-mineral/20">
