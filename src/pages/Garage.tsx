@@ -16,16 +16,11 @@ import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
+import { getXPLevel } from '@/lib/xpLevels';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
-  const getLevel = (pts: number) => {
-    if (pts >= 1000) return { label: 'EXP', fullLabel: 'EXPERT', color: 'text-amber-500' };
-    if (pts >= 500) return { label: 'AVA', fullLabel: 'AVANCÉ', color: 'text-mineral' };
-    if (pts >= 100) return { label: 'INT', fullLabel: 'INTER', color: 'text-blue-500' };
-    return { label: 'DÉB', fullLabel: 'DÉBUT', color: 'text-slate-500' };
-  };
-  const level = getLevel(points);
+  const level = getXPLevel(points);
 
   return (
     <div className="flex items-center gap-1 md:gap-3 px-2 md:px-4 py-1 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full max-w-full">
@@ -33,11 +28,11 @@ const CompactPerformanceWidget = ({ points, displayName }: { points: number; dis
       <span className={cn("font-display font-bold text-xs md:text-lg truncate", level.color)}>
         {points.toLocaleString('fr-FR')}
       </span>
-      <span className="hidden md:inline text-xs text-carbon/50">pts</span>
+      <span className="hidden md:inline text-xs text-carbon/50">XP</span>
       <div className="w-px h-3 md:h-4 bg-mineral/20 flex-shrink-0" />
       <span className={cn("text-[9px] md:text-xs font-semibold flex-shrink-0", level.color)}>
-        <span className="md:hidden">{level.label}</span>
-        <span className="hidden md:inline">{level.fullLabel}</span>
+        <span className="md:hidden">LVL {level.level}</span>
+        <span className="hidden md:inline">{level.name}</span>
       </span>
     </div>
   );

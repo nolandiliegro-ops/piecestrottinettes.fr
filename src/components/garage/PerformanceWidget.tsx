@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
-import { Trophy, TrendingUp } from 'lucide-react';
+import { Trophy, TrendingUp, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { getXPLevel, getProgressToNextLevel } from '@/lib/xpLevels';
+import { Progress } from '@/components/ui/progress';
 
 interface PerformanceWidgetProps {
   points: number;
@@ -9,17 +11,8 @@ interface PerformanceWidgetProps {
 }
 
 const PerformanceWidget = ({ points, displayName, className }: PerformanceWidgetProps) => {
-  // Calculate performance level based on points
-  const getPerformanceLevel = (pts: number) => {
-    if (pts >= 1000) return { label: 'EXPERT', color: 'text-amber-500' };
-    if (pts >= 500) return { label: 'AVANCÉ', color: 'text-mineral' };
-    if (pts >= 100) return { label: 'INTERMÉDIAIRE', color: 'text-blue-500' };
-    return { label: 'DÉBUTANT', color: 'text-slate-500' };
-  };
-
-  const level = getPerformanceLevel(points);
-  const progressToNextLevel = Math.min((points % 500) / 5, 100);
-  const pointsToNext = 500 - (points % 500);
+  const level = getXPLevel(points);
+  const progress = getProgressToNextLevel(points);
 
   return (
     <motion.div
@@ -35,15 +28,24 @@ const PerformanceWidget = ({ points, displayName, className }: PerformanceWidget
       {/* Horizontal Layout */}
       <div className="flex items-center justify-between gap-6">
         
-        {/* Left: Icon and Title */}
+        {/* Left: Icon and Level Info */}
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 rounded-xl bg-mineral/10 flex items-center justify-center">
-            <Trophy className="w-7 h-7 text-mineral" />
-          </div>
+          <motion.div 
+            className={cn("w-14 h-14 rounded-xl flex items-center justify-center", level.bgColor)}
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Trophy className={cn("w-7 h-7", level.color)} />
+          </motion.div>
           <div>
-            <h2 className="font-display text-xl text-white tracking-wide">
-              PERFORMANCE
-            </h2>
+            <div className="flex items-center gap-2">
+              <span className={cn("font-display text-xl font-bold", level.color)}>
+                {level.name}
+              </span>
+              <span className="text-xs text-white/40 bg-white/10 px-2 py-0.5 rounded-full">
+                LVL {level.level}
+              </span>
+            </div>
             <p className="text-xs text-white/50 mt-1">
               {displayName}
             </p>
@@ -53,44 +55,58 @@ const PerformanceWidget = ({ points, displayName, className }: PerformanceWidget
         {/* Center: Points Display */}
         <div className="flex items-baseline gap-2">
           <motion.span
-            className={cn("font-display text-5xl font-bold", level.color)}
+            className={cn("font-display text-4xl md:text-5xl font-bold", level.color)}
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
             {points.toLocaleString('fr-FR')}
           </motion.span>
-          <span className="text-sm text-white/60">pts</span>
+          <span className="text-sm text-white/60">XP</span>
         </div>
 
-        {/* Right: Level Badge and Progress */}
-        <div className="flex flex-col items-end gap-3 min-w-[180px]">
-          <div className="px-4 py-2 rounded-full border-2 border-mineral/30 bg-white/50">
-            <span className={cn("font-display text-sm font-bold", level.color)}>
-              {level.label}
+        {/* Right: Progress Bar */}
+        <div className="flex flex-col items-end gap-3 min-w-[200px]">
+          {/* Progress Header */}
+          <div className="w-full flex items-center justify-between text-xs text-white/50">
+            <span className="flex items-center gap-1">
+              <Zap className="w-3 h-3 text-amber-400" />
+              Progression
+            </span>
+            <span className={cn("font-semibold", level.color)}>
+              {progress.percentage}%
             </span>
           </div>
           
-          {/* Progress Bar */}
-          <div className="w-full space-y-1">
-            <div className="flex items-center justify-between text-xs text-white/50">
-              <span>Progression</span>
-              <div className="flex items-center gap-1">
-                <TrendingUp className="w-3 h-3 text-mineral" />
-                <span className="text-mineral font-semibold">{Math.floor(progressToNextLevel)}%</span>
-              </div>
-            </div>
-            <div className="h-2 bg-greige/50 rounded-full overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${progressToNextLevel}%` }}
-                transition={{ duration: 1.5, delay: 0.6, ease: "easeOut" }}
-                className="h-full bg-mineral rounded-full"
-              />
-            </div>
-            <p className="text-xs text-white/40 text-right">
-              {pointsToNext} pts jusqu'au prochain niveau
-            </p>
+          {/* Animated Progress Bar */}
+          <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: `${progress.percentage}%` }}
+              transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
+              className={cn(
+                "h-full rounded-full",
+                level.level === 1 && "bg-slate-500",
+                level.level === 2 && "bg-blue-500",
+                level.level === 3 && "bg-mineral",
+                level.level === 4 && "bg-gradient-to-r from-amber-500 to-yellow-400"
+              )}
+            />
           </div>
+          
+          {/* Next Level Info */}
+          {progress.nextLevel ? (
+            <p className="text-xs text-white/40 text-right">
+              Plus que <span className="text-white/70 font-semibold">{progress.pointsToNext} XP</span> avant{' '}
+              <span className={cn("font-semibold", progress.nextLevel.color)}>
+                {progress.nextLevel.name}
+              </span>
+            </p>
+          ) : (
+            <p className="text-xs text-amber-400/80 text-right flex items-center gap-1">
+              <Trophy className="w-3 h-3" />
+              Niveau maximum atteint !
+            </p>
+          )}
         </div>
 
       </div>

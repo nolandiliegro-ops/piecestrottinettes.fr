@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,6 +9,7 @@ import { useUserGarage } from "@/hooks/useGarage";
 import { useCompatiblePartsCount } from "@/hooks/useCompatiblePartsCount";
 import { useSpotlight } from "@/contexts/SpotlightContext";
 import { cn } from "@/lib/utils";
+import { getXPLevel } from "@/lib/xpLevels";
 import logoImage from "@/assets/logo-pt.png";
 import {
   DropdownMenu,
@@ -342,40 +343,75 @@ const Header = () => {
             </Button>
 
             {user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    className="hidden sm:flex rounded-full px-4 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
+              <>
+                {/* XP Badge - Desktop Only */}
+                {profile && (
+                  <Link 
+                    to="/garage"
+                    className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-carbon/5 to-mineral/5 rounded-full border border-mineral/20 hover:border-mineral/40 transition-all"
                   >
-                    <div className="w-6 h-6 rounded-full bg-garage-foreground/20 flex items-center justify-center text-sm font-semibold">
-                      {profile?.display_name?.charAt(0).toUpperCase() || 'R'}
-                    </div>
-                    Mon Garage
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-48">
-                  <DropdownMenuItem asChild>
-                    <Link to="/garage" className="flex items-center gap-2 cursor-pointer">
-                      <Home className="w-4 h-4" />
+                    <Trophy className="w-3.5 h-3.5 text-amber-400" />
+                    <span className="text-sm font-bold text-carbon">
+                      {(profile.performance_points || 0).toLocaleString('fr-FR')}
+                    </span>
+                    <span className="text-[10px] text-carbon/50">XP</span>
+                    <div className="w-px h-3 bg-carbon/10" />
+                    <span className={cn("text-xs font-semibold", getXPLevel(profile.performance_points || 0).color)}>
+                      LVL {getXPLevel(profile.performance_points || 0).level}
+                    </span>
+                  </Link>
+                )}
+                
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button 
+                      className="hidden sm:flex rounded-full px-4 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
+                    >
+                      <div className="w-6 h-6 rounded-full bg-garage-foreground/20 flex items-center justify-center text-sm font-semibold">
+                        {profile?.display_name?.charAt(0).toUpperCase() || 'R'}
+                      </div>
                       Mon Garage
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <Link to="/garage" className="flex items-center gap-2 cursor-pointer">
-                      <User className="w-4 h-4" />
-                      {profile?.performance_points || 0} points
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem 
-                    onClick={handleSignOut}
-                    className="flex items-center gap-2 cursor-pointer text-garage"
-                  >
-                    <LogOut className="w-4 h-4" />
-                    Déconnexion
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-56">
+                    {/* XP Info in Dropdown */}
+                    {profile && (
+                      <>
+                        <DropdownMenuItem asChild>
+                          <Link to="/garage" className="flex items-center justify-between cursor-pointer py-3">
+                            <div className="flex items-center gap-2">
+                              <Trophy className="w-4 h-4 text-amber-500" />
+                              <span className="font-bold">{(profile.performance_points || 0).toLocaleString('fr-FR')} XP</span>
+                            </div>
+                            <span className={cn(
+                              "px-2 py-0.5 rounded-full text-xs font-semibold",
+                              getXPLevel(profile.performance_points || 0).bgColor,
+                              getXPLevel(profile.performance_points || 0).color
+                            )}>
+                              {getXPLevel(profile.performance_points || 0).name}
+                            </span>
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                      </>
+                    )}
+                    <DropdownMenuItem asChild>
+                      <Link to="/garage" className="flex items-center gap-2 cursor-pointer">
+                        <Home className="w-4 h-4" />
+                        Mon Garage
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem 
+                      onClick={handleSignOut}
+                      className="flex items-center gap-2 cursor-pointer text-garage"
+                    >
+                      <LogOut className="w-4 h-4" />
+                      Déconnexion
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </>
             ) : (
               <Button 
                 onClick={handleGarageClick}
