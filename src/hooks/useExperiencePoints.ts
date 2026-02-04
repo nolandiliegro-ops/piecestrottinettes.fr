@@ -3,7 +3,10 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { toast } from "sonner";
 import { createElement } from "react";
+import confetti from "canvas-confetti";
 import XPToast from "@/components/garage/XPToast";
+import LevelUpToast from "@/components/garage/LevelUpToast";
+import { getXPLevel } from "@/lib/xpLevels";
 
 interface AddPointsParams {
   pointsToAdd: number;
@@ -44,11 +47,48 @@ export const useExperiencePoints = () => {
       queryClient.invalidateQueries({ queryKey: ["profile"] });
       await refreshProfile();
 
-      // Show premium animated XP toast using createElement to avoid JSX in .ts file
-      toast.custom(
-        () => createElement(XPToast, { points: data.pointsAdded, action: data.action }),
-        { duration: 4000 }
-      );
+      // Calculate levels before/after
+      const previousLevel = getXPLevel(data.previousPoints);
+      const newLevel = getXPLevel(data.newTotal);
+
+      // Detect level-up
+      if (newLevel.level > previousLevel.level) {
+        // Trigger confetti celebration
+        confetti({
+          particleCount: 150,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ['#FFAB00', '#D50000', '#2962FF', '#00C853', '#FFD700'],
+        });
+
+        // Second burst for extra celebration
+        setTimeout(() => {
+          confetti({
+            particleCount: 100,
+            spread: 100,
+            origin: { y: 0.5, x: 0.3 },
+            colors: ['#FFAB00', '#FFD700', '#FFA500'],
+          });
+          confetti({
+            particleCount: 100,
+            spread: 100,
+            origin: { y: 0.5, x: 0.7 },
+            colors: ['#FFAB00', '#FFD700', '#FFA500'],
+          });
+        }, 250);
+
+        // Show special Level-Up toast
+        toast.custom(
+          () => createElement(LevelUpToast, { newLevel, previousLevel }),
+          { duration: 5000 }
+        );
+      } else {
+        // Show normal XP toast
+        toast.custom(
+          () => createElement(XPToast, { points: data.pointsAdded, action: data.action }),
+          { duration: 4000 }
+        );
+      }
     },
     onError: (error) => {
       console.error("Error adding experience points:", error);

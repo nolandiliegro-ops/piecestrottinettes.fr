@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-import { Trophy, TrendingUp, Zap } from 'lucide-react';
+import { TrendingUp, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { getXPLevel, getProgressToNextLevel } from '@/lib/xpLevels';
-import { Progress } from '@/components/ui/progress';
 
 interface PerformanceWidgetProps {
   points: number;
@@ -13,6 +12,9 @@ interface PerformanceWidgetProps {
 const PerformanceWidget = ({ points, displayName, className }: PerformanceWidgetProps) => {
   const level = getXPLevel(points);
   const progress = getProgressToNextLevel(points);
+  
+  // Get the Lucide icon component dynamically
+  const LevelIcon = level.LucideIcon;
 
   return (
     <motion.div
@@ -34,8 +36,11 @@ const PerformanceWidget = ({ points, displayName, className }: PerformanceWidget
             className={cn("w-14 h-14 rounded-xl flex items-center justify-center", level.bgColor)}
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            style={{
+              boxShadow: `0 0 20px ${level.glowColor}`,
+            }}
           >
-            <Trophy className={cn("w-7 h-7", level.color)} />
+            <LevelIcon className={cn("w-7 h-7", level.color)} />
           </motion.div>
           <div>
             <div className="flex items-center gap-2">
@@ -77,19 +82,13 @@ const PerformanceWidget = ({ points, displayName, className }: PerformanceWidget
             </span>
           </div>
           
-          {/* Animated Progress Bar */}
+          {/* Animated Progress Bar with level-specific color */}
           <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: `${progress.percentage}%` }}
               transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
-              className={cn(
-                "h-full rounded-full",
-                level.level === 1 && "bg-slate-500",
-                level.level === 2 && "bg-blue-500",
-                level.level === 3 && "bg-mineral",
-                level.level === 4 && "bg-gradient-to-r from-amber-500 to-yellow-400"
-              )}
+              className={cn("h-full rounded-full", level.progressColor)}
             />
           </div>
           
@@ -103,7 +102,7 @@ const PerformanceWidget = ({ points, displayName, className }: PerformanceWidget
             </p>
           ) : (
             <p className="text-xs text-amber-400/80 text-right flex items-center gap-1">
-              <Trophy className="w-3 h-3" />
+              <LevelIcon className="w-3 h-3" />
               Niveau maximum atteint !
             </p>
           )}
