@@ -1,6 +1,8 @@
 // Centralized XP Level System
 // Provides consistent level calculations across the app
 
+import { Wrench, Cog, Gauge, Trophy, type LucideIcon } from "lucide-react";
+
 export interface XPLevel {
   level: number;
   name: string;
@@ -10,6 +12,9 @@ export interface XPLevel {
   color: string;
   bgColor: string;
   icon: string;
+  progressColor: string;
+  glowColor: string;
+  LucideIcon: LucideIcon;
 }
 
 const XP_LEVELS: XPLevel[] = [
@@ -22,6 +27,9 @@ const XP_LEVELS: XPLevel[] = [
     color: "text-slate-500",
     bgColor: "bg-slate-500/10",
     icon: "🔧",
+    progressColor: "bg-slate-500",
+    glowColor: "rgba(100, 116, 139, 0.6)",
+    LucideIcon: Wrench,
   },
   {
     level: 2,
@@ -32,6 +40,9 @@ const XP_LEVELS: XPLevel[] = [
     color: "text-blue-500",
     bgColor: "bg-blue-500/10",
     icon: "⚙️",
+    progressColor: "bg-blue-500",
+    glowColor: "rgba(59, 130, 246, 0.6)",
+    LucideIcon: Cog,
   },
   {
     level: 3,
@@ -42,6 +53,9 @@ const XP_LEVELS: XPLevel[] = [
     color: "text-mineral",
     bgColor: "bg-mineral/10",
     icon: "🛠️",
+    progressColor: "bg-emerald-500",
+    glowColor: "rgba(16, 185, 129, 0.6)",
+    LucideIcon: Gauge,
   },
   {
     level: 4,
@@ -50,8 +64,11 @@ const XP_LEVELS: XPLevel[] = [
     minXP: 3001,
     maxXP: Infinity,
     color: "text-amber-500",
-    bgColor: "bg-amber-500/10",
+    bgColor: "bg-gradient-to-r from-amber-500/10 to-yellow-400/10",
     icon: "🏆",
+    progressColor: "bg-gradient-to-r from-amber-500 to-yellow-400",
+    glowColor: "rgba(245, 158, 11, 0.6)",
+    LucideIcon: Trophy,
   },
 ];
 
