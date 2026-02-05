@@ -185,3 +185,54 @@ export const useDeleteGarageModification = () => {
     },
   });
 };
+
+// Check if an order item has been marked as installed
+export const useIsOrderItemInstalled = (orderItemId: string | undefined) => {
+  return useQuery({
+    queryKey: ['order-item-installed', orderItemId],
+    queryFn: async () => {
+      if (!orderItemId) return null;
+      
+      const { data, error } = await supabase
+        .from('garage_modifications')
+        .select('id, installed_at, user_garage_id')
+        .eq('order_item_id', orderItemId)
+        .maybeSingle();
+      
+      if (error) throw error;
+      return data;
+    },
+    enabled: !!orderItemId,
+  });
+};
+
+// Check multiple order items at once (for orders page)
+export const useOrderItemsInstallationStatus = (orderItemIds: string[]) => {
+  return useQuery({
+    queryKey: ['order-items-installation-status', orderItemIds],
+    queryFn: async () => {
+      if (!orderItemIds.length) return {};
+      
+      const { data, error } = await supabase
+        .from('garage_modifications')
+        .select('id, installed_at, order_item_id')
+        .in('order_item_id', orderItemIds);
+      
+      if (error) throw error;
+      
+      // Create a map of order_item_id -> installation info
+      const statusMap: Record<string, { installed: boolean; installedAt: string }> = {};
+      data?.forEach(mod => {
+        if (mod.order_item_id) {
+          statusMap[mod.order_item_id] = {
+            installed: true,
+            installedAt: mod.installed_at,
+          };
+        }
+      });
+      
+      return statusMap;
+    },
+    enabled: orderItemIds.length > 0,
+  });
+};

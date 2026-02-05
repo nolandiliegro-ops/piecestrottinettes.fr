@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Package, ChevronDown, ShoppingBag, ArrowRight, Loader2 } from 'lucide-react';
+import { Package, ChevronDown, ShoppingBag, ArrowRight, Loader2, Wrench, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatPrice } from '@/lib/formatPrice';
 import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import { cn } from '@/lib/utils';
+import { useOrderItemsInstallationStatus } from '@/hooks/useGarageModifications';
+import MarkAsInstalledDialog from './MarkAsInstalledDialog';
 
 // LED Effect Status Configuration
 const statusConfig: Record<string, { 
@@ -61,19 +63,43 @@ const StatusBadge = ({ status }: { status: string }) => {
 };
 
 // Order Items Details (Expandable)
-const OrderItemsDetails = ({ orderId }: { orderId: string }) => {
+const OrderItemsDetails = ({ orderId, orderStatus }: { orderId: string; orderStatus: string }) => {
+  const [installDialogOpen, setInstallDialogOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<{
+    id: string;
+    part_id: string | null;
+    part_name: string;
+    part_image_url: string | null;
+  } | null>(null);
+
   const { data: items, isLoading } = useQuery({
     queryKey: ['order-items', orderId],
     queryFn: async () => {
       const { data, error } = await supabase
         .from('order_items')
-        .select('*')
+        .select('*, part:parts(difficulty_level, category:categories(name))')
         .eq('order_id', orderId);
       
       if (error) throw error;
       return data;
     },
   });
+
+  // Get installation status for all items
+  const orderItemIds = useMemo(() => 
+    items?.map(item => item.id) || [], 
+    [items]
+  );
+  
+  const { data: installationStatus = {} } = useOrderItemsInstallationStatus(orderItemIds);
+
+  // Only show "Mark as Installed" for delivered orders
+  const showInstallButton = orderStatus === 'delivered';
+
+  const handleOpenInstallDialog = (item: typeof selectedItem) => {
+    setSelectedItem(item);
+    setInstallDialogOpen(true);
+  };
 
   return (
     <motion.div
@@ -97,46 +123,84 @@ const OrderItemsDetails = ({ orderId }: { orderId: string }) => {
             <Loader2 className="w-5 h-5 animate-spin text-mineral" />
           </div>
         ) : (
-          <div className="space-y-2">
-            {items?.map((item, index) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
-                className="flex items-center gap-4 p-3 bg-greige/50 rounded-xl border border-carbon/5"
-              >
-                {/* Item Image */}
-                <div className="w-12 h-12 rounded-lg bg-white/80 overflow-hidden flex-shrink-0 border border-carbon/10">
-                  {item.part_image_url ? (
-                    <img 
-                      src={item.part_image_url}
-                      alt={item.part_name}
-                      className="w-full h-full object-contain p-1"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <Package className="w-4 h-4 text-carbon/30" />
+          <div className="space-y-3">
+            {items?.map((item, index) => {
+              const isInstalled = installationStatus[item.id]?.installed;
+              const installedAt = installationStatus[item.id]?.installedAt;
+              
+              return (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="p-3 bg-greige/50 rounded-xl border border-carbon/5"
+                >
+                  <div className="flex items-center gap-4">
+                    {/* Item Image */}
+                    <div className="w-12 h-12 rounded-lg bg-white/80 overflow-hidden flex-shrink-0 border border-carbon/10">
+                      {item.part_image_url ? (
+                        <img 
+                          src={item.part_image_url}
+                          alt={item.part_name}
+                          className="w-full h-full object-contain p-1"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <Package className="w-4 h-4 text-carbon/30" />
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Item Info */}
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-carbon text-sm truncate">
+                        {item.part_name}
+                      </p>
+                      <p className="text-xs text-carbon/50">
+                        {formatPrice(item.unit_price)} × {item.quantity}
+                      </p>
+                    </div>
+                    
+                    {/* Line Total */}
+                    <span className="font-bold text-mineral text-sm">
+                      {formatPrice(item.line_total)}
+                    </span>
+                  </div>
+
+                  {/* Installation Status / Button */}
+                  {showInstallButton && item.part_id && (
+                    <div className="mt-3 pt-3 border-t border-carbon/5">
+                      {isInstalled ? (
+                        <div className="flex items-center gap-2 text-xs text-emerald-600">
+                          <Check className="w-4 h-4" />
+                          <span>
+                            Installé le {format(new Date(installedAt!), "d MMMM yyyy", { locale: fr })}
+                          </span>
+                        </div>
+                      ) : (
+                        <motion.button
+                          whileHover={{ scale: 1.01 }}
+                          whileTap={{ scale: 0.99 }}
+                          onClick={() => handleOpenInstallDialog({
+                            id: item.id,
+                            part_id: item.part_id,
+                            part_name: item.part_name,
+                            part_image_url: item.part_image_url,
+                          })}
+                          className="w-full flex items-center justify-center gap-2 px-4 py-2.5
+                                   bg-mineral/10 hover:bg-mineral/20 text-mineral rounded-lg
+                                   text-xs font-medium transition-colors"
+                        >
+                          <Wrench className="w-4 h-4" />
+                          Marquer comme installé
+                        </motion.button>
+                      )}
                     </div>
                   )}
-                </div>
-                
-                {/* Item Info */}
-                <div className="flex-1 min-w-0">
-                  <p className="font-medium text-carbon text-sm truncate">
-                    {item.part_name}
-                  </p>
-                  <p className="text-xs text-carbon/50">
-                    {formatPrice(item.unit_price)} × {item.quantity}
-                  </p>
-                </div>
-                
-                {/* Line Total */}
-                <span className="font-bold text-mineral text-sm">
-                  {formatPrice(item.line_total)}
-                </span>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         )}
         
@@ -153,6 +217,20 @@ const OrderItemsDetails = ({ orderId }: { orderId: string }) => {
           </span>
         </div>
       </div>
+
+      {/* Mark as Installed Dialog */}
+      {selectedItem && selectedItem.part_id && (
+        <MarkAsInstalledDialog
+          open={installDialogOpen}
+          onOpenChange={setInstallDialogOpen}
+          partId={selectedItem.part_id}
+          partName={selectedItem.part_name}
+          partImage={selectedItem.part_image_url}
+          orderItemId={selectedItem.id}
+          categoryName={items?.find(i => i.id === selectedItem.id)?.part?.category?.name}
+          difficultyLevel={items?.find(i => i.id === selectedItem.id)?.part?.difficulty_level}
+        />
+      )}
     </motion.div>
   );
 };
@@ -232,7 +310,7 @@ const OrderCard = ({ order, index, isExpanded, onToggle }: OrderCardProps) => {
 
       {/* Expandable Details */}
       <AnimatePresence>
-        {isExpanded && <OrderItemsDetails orderId={order.id} />}
+        {isExpanded && <OrderItemsDetails orderId={order.id} orderStatus={order.status} />}
       </AnimatePresence>
     </motion.div>
   );

@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ShoppingCart, Check, AlertCircle } from "lucide-react";
+import { ShoppingCart, Check, AlertCircle, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
+import { useAuth } from "@/hooks/useAuth";
+import { useGarageScooters } from "@/hooks/useGarageScooters";
+import MarkAsInstalledDialog from "@/components/garage/MarkAsInstalledDialog";
 
 interface PurchaseBlockProps {
   id: string;
@@ -14,6 +18,7 @@ interface PurchaseBlockProps {
   categoryName: string | null;
   categoryIcon: string | null;
   imageUrl: string | null;
+  difficultyLevel?: number | null;
 }
 
 const PurchaseBlock = ({
@@ -23,9 +28,17 @@ const PurchaseBlock = ({
   stockQuantity,
   categoryName,
   imageUrl,
+  difficultyLevel,
 }: PurchaseBlockProps) => {
   const { addItem, setIsOpen } = useCart();
+  const { user } = useAuth();
+  const { scooters } = useGarageScooters();
+  const [installDialogOpen, setInstallDialogOpen] = useState(false);
+  
   const isInStock = stockQuantity !== null && stockQuantity > 0;
+  
+  // Show "Mark as installed" button if user is logged in and has at least 1 scooter
+  const canMarkAsInstalled = !!user && scooters && scooters.length > 0;
 
   const handleAddToCart = () => {
     if (!isInStock || price === null) return;
@@ -134,6 +147,40 @@ const PurchaseBlock = ({
           Ajouter au panier
         </Button>
       </motion.div>
+
+      {/* Secondary: Mark as Installed */}
+      {canMarkAsInstalled && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="mt-3"
+        >
+          <Button
+            onClick={() => setInstallDialogOpen(true)}
+            variant="outline"
+            className="w-full h-12 border-2 border-mineral text-mineral hover:bg-mineral/10 
+                     font-display text-sm uppercase tracking-wider rounded-xl
+                     transition-all duration-300"
+          >
+            <Wrench className="w-5 h-5 mr-2" />
+            J'ai installé cette pièce
+          </Button>
+        </motion.div>
+      )}
+
+      {/* Mark as Installed Dialog */}
+      <MarkAsInstalledDialog
+        open={installDialogOpen}
+        onOpenChange={setInstallDialogOpen}
+        partId={id}
+        partName={name}
+        partImage={imageUrl}
+        categoryName={categoryName}
+        difficultyLevel={difficultyLevel}
+      />
     </motion.div>
   );
 };
