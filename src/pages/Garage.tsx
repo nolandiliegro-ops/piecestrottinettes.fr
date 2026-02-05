@@ -246,13 +246,13 @@ const Garage = () => {
                 </div>
 
                 {/* ===== DESKTOP: Original Bento Grid ===== */}
-                <div className="hidden lg:grid lg:grid-cols-3 gap-4 min-h-0 max-w-full flex-1">
+                <div className="hidden lg:grid lg:grid-cols-3 gap-4 shrink-0">
                   {/* Left Column: Scooter Image */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
-                    className="lg:col-span-2 min-h-0"
+                    className="lg:col-span-2 min-h-[400px] max-h-[500px]"
                   >
                     {scootersLoading ? (
                       <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
@@ -309,7 +309,7 @@ const Garage = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 }}
-                    className="mt-4 shrink-0 hidden lg:block"
+                    className="mt-8 shrink-0 hidden lg:block pb-8"
                   >
                     <CompatiblePartsGrid
                       scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
