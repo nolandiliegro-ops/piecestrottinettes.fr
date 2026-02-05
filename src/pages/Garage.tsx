@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag } from 'lucide-react';
+import { Loader2, Trophy, Package, ShoppingBag, Plus } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
@@ -16,6 +16,7 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import CompatiblePartsGrid from '@/components/garage/CompatiblePartsGrid';
 import PersonalDescription from '@/components/garage/PersonalDescription';
 import GarageTimeline from '@/components/garage/GarageTimeline';
+import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
@@ -70,6 +71,7 @@ const Garage = () => {
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
+  const [quickAddOpen, setQuickAddOpen] = useState(false);
   const updateNickname = useUpdateNickname();
   const updatePersonalDescription = useUpdatePersonalDescription();
   
@@ -415,6 +417,32 @@ const Garage = () => {
           }}
         />
       )}
+
+      {/* Floating Action Button - Quick Add Modification */}
+      {activeTab === 'garage' && scooters && scooters.length > 0 && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setQuickAddOpen(true)}
+          className="fixed bottom-24 md:bottom-8 right-6 w-14 h-14 
+                   bg-mineral text-white rounded-full shadow-2xl 
+                   flex items-center justify-center z-40
+                   hover:bg-mineral/90 transition-colors
+                   hover:shadow-[0_0_30px_rgba(147,181,161,0.4)]"
+          title="Ajouter une modification"
+        >
+          <Plus className="w-6 h-6" />
+        </motion.button>
+      )}
+
+      {/* Quick Add Modification Dialog */}
+      <QuickAddModificationDialog
+        open={quickAddOpen}
+        onOpenChange={setQuickAddOpen}
+      />
     </div>
   );
 };

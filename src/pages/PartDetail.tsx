@@ -102,6 +102,7 @@ const PartDetail = () => {
                 categoryName={part.category?.name ?? null}
                 categoryIcon={part.category?.icon ?? null}
                 imageUrl={part.image_url}
+                difficultyLevel={part.difficulty_level}
               />
             </div>
 
@@ -160,6 +161,7 @@ const PartDetail = () => {
           categoryName={part.category?.name ?? null}
           categoryIcon={part.category?.icon ?? null}
           imageUrl={part.image_url}
+          difficultyLevel={part.difficulty_level}
         />
 
         {/* Installation Guide */}
