@@ -99,7 +99,7 @@ const CompatiblePartsGrid = ({
       </div>
 
       {/* Responsive Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {parts.slice(0, 6).map((part, index) => (
           <motion.div
             key={part.id}
