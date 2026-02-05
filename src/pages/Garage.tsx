@@ -15,6 +15,7 @@ import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import CompatiblePartsGrid from '@/components/garage/CompatiblePartsGrid';
 import PersonalDescription from '@/components/garage/PersonalDescription';
+import GarageTimeline from '@/components/garage/GarageTimeline';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
@@ -265,6 +266,17 @@ const Garage = () => {
                       />
                     </motion.div>
                   )}
+
+                  {/* Block 8: Modification Timeline - Mobile */}
+                  {selectedScooter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.35 }}
+                    >
+                      <GarageTimeline garageItemId={selectedScooter.id} />
+                    </motion.div>
+                  )}
                 </div>
 
                 {/* ===== DESKTOP: Original Bento Grid ===== */}
@@ -354,6 +366,18 @@ const Garage = () => {
                       parts={parts || []}
                       loading={partsLoading}
                     />
+                  </motion.div>
+                )}
+
+                {/* Desktop: Modification Timeline */}
+                {selectedScooter && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.4 }}
+                    className="mt-8 shrink-0 hidden lg:block pb-8"
+                  >
+                    <GarageTimeline garageItemId={selectedScooter.id} />
                   </motion.div>
                 )}
               </motion.div>

@@ -146,6 +146,64 @@ export type Database = {
           },
         ]
       }
+      garage_modifications: {
+        Row: {
+          created_at: string | null
+          difficulty_level: number | null
+          id: string
+          installed_at: string | null
+          notes: string | null
+          order_item_id: string | null
+          part_id: string
+          user_garage_id: string
+          xp_earned: number | null
+        }
+        Insert: {
+          created_at?: string | null
+          difficulty_level?: number | null
+          id?: string
+          installed_at?: string | null
+          notes?: string | null
+          order_item_id?: string | null
+          part_id: string
+          user_garage_id: string
+          xp_earned?: number | null
+        }
+        Update: {
+          created_at?: string | null
+          difficulty_level?: number | null
+          id?: string
+          installed_at?: string | null
+          notes?: string | null
+          order_item_id?: string | null
+          part_id?: string
+          user_garage_id?: string
+          xp_earned?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "garage_modifications_order_item_id_fkey"
+            columns: ["order_item_id"]
+            isOneToOne: false
+            referencedRelation: "order_items"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "garage_modifications_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "garage_modifications_user_garage_id_fkey"
+            columns: ["user_garage_id"]
+            isOneToOne: false
+            referencedRelation: "user_garage"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       order_items: {
         Row: {
           created_at: string
@@ -641,6 +699,14 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      calculate_modification_xp: {
+        Args: {
+          p_category_name: string
+          p_difficulty_level: number
+          p_is_first_in_category: boolean
+        }
+        Returns: number
+      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
