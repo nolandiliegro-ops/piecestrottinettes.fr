@@ -108,7 +108,7 @@ const Garage = () => {
       <Header />
       
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
-        <div className="h-full flex flex-col w-full">
+        <div className="h-full flex flex-col max-w-[1920px] mx-auto w-full">
           
           {/* Header Row with Tabs - Stacks on mobile */}
           <motion.div 
