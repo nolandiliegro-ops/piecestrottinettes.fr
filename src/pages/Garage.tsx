@@ -108,7 +108,7 @@ const Garage = () => {
       <Header />
       
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
-        <div className="h-full flex flex-col max-w-7xl mx-auto">
+        <div className="h-full flex flex-col w-full">
           
           {/* Header Row with Tabs - Stacks on mobile */}
           <motion.div 
@@ -169,7 +169,7 @@ const Garage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.3 }}
-                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-mineral/20"
+                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden scrollbar-hide"
               >
                 {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
                 <div className="flex flex-col gap-6 lg:hidden">
@@ -268,7 +268,7 @@ const Garage = () => {
                 </div>
 
                 {/* ===== DESKTOP: Original Bento Grid ===== */}
-                <div className="hidden lg:grid lg:grid-cols-3 gap-4 shrink-0">
+                <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-6 shrink-0">
                   {/* Left Column: Scooter Image */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
