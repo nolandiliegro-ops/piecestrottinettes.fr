@@ -3,15 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ArrowRight, ShoppingBag } from 'lucide-react';
+import { Loader2, Trophy, Package, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
 import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
 import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
 import ScooterIdentity from '@/components/garage/ScooterIdentity';
+import ScooterDescriptionModal from '@/components/garage/ScooterDescriptionModal';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
+import CompatiblePartsGrid from '@/components/garage/CompatiblePartsGrid';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
@@ -65,6 +67,7 @@ const Garage = () => {
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
+  const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const updateNickname = useUpdateNickname();
   
   const { parts, loading: partsLoading } = useCompatibleParts(
@@ -180,11 +183,13 @@ const Garage = () => {
                         brandName={selectedScooter.scooter_model.brand}
                         modelName={selectedScooter.scooter_model.name}
                         nickname={selectedScooter.nickname}
+                        description={selectedScooter.scooter_model.description}
                         isOwned={selectedScooter.is_owned}
                         variant="mobile"
                         editable={true}
                         garageItemId={selectedScooter.id}
                         onNicknameChange={handleNicknameChange}
+                        onReadMoreClick={() => setShowDescriptionModal(true)}
                       />
                     </motion.div>
                   )}
@@ -223,19 +228,18 @@ const Garage = () => {
                     </motion.div>
                   )}
                   
-                  {/* Block 7: Inventory - Pièces Compatibles */}
+                  {/* Block 7: Inventory - Pièces Compatibles Grid */}
                   {selectedScooter && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.3 }}
                     >
-                      <CompactProductsRow
-                        scooterId={selectedScooter.id}
+                      <CompatiblePartsGrid
+                        scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
                         scooterName={scooterName}
                         parts={parts || []}
                         loading={partsLoading}
-                        onViewPart={(partId) => navigate(`/part/${partId}`)}
                       />
                     </motion.div>
                   )}
@@ -299,7 +303,7 @@ const Garage = () => {
                   </motion.div>
                 </div>
 
-                {/* Desktop Bottom Row: Compatible Parts */}
+                {/* Desktop Bottom Row: Compatible Parts Grid */}
                 {selectedScooter && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -307,12 +311,11 @@ const Garage = () => {
                     transition={{ duration: 0.4, delay: 0.3 }}
                     className="mt-4 shrink-0 hidden lg:block"
                   >
-                    <CompactProductsRow
-                      scooterId={selectedScooter.id}
+                    <CompatiblePartsGrid
+                      scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
                       scooterName={scooterName}
                       parts={parts || []}
                       loading={partsLoading}
-                      onViewPart={(partId) => navigate(`/part/${partId}`)}
                     />
                   </motion.div>
                 )}
@@ -334,97 +337,23 @@ const Garage = () => {
 
         <Footer />
       </main>
-    </div>
-  );
-};
 
-// Compact horizontal products row
-interface Part {
-  id: string;
-  name: string;
-  price: number;
-  image?: string;
-  stock_quantity: number;
-  category: { name: string };
-}
-
-const CompactProductsRow = ({ 
-  scooterId, 
-  scooterName, 
-  parts, 
-  loading,
-  onViewPart
-}: { 
-  scooterId: string; 
-  scooterName: string; 
-  parts: Part[]; 
-  loading: boolean;
-  onViewPart: (partId: string) => void;
-}) => {
-  if (loading) {
-    return (
-      <div className="h-32 flex items-center justify-center bg-white/40 rounded-xl">
-        <Loader2 className="w-6 h-6 animate-spin text-mineral" />
-      </div>
-    );
-  }
-
-  if (!parts || parts.length === 0) {
-    return (
-      <div className="h-32 flex items-center justify-center bg-white/40 border border-mineral/20 rounded-xl">
-        <p className="text-carbon/40 text-sm">Aucune pièce compatible</p>
-      </div>
-    );
-  }
-
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between">
-        <h3 className="font-display text-sm text-carbon uppercase tracking-wide">
-          Pièces compatibles
-        </h3>
-        <span className="text-xs text-carbon/50">{parts.length} disponibles</span>
-      </div>
-      
-      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-mineral/20 scrollbar-track-transparent">
-        {parts.slice(0, 10).map((part, index) => (
-          <motion.div
-            key={part.id}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.2, delay: index * 0.03 }}
-            onClick={() => onViewPart(part.id)}
-            className="flex-shrink-0 w-36 bg-white/80 border border-carbon/10 rounded-xl p-3 
-                       hover:shadow-lg hover:border-mineral/40 transition-all cursor-pointer group"
-          >
-            <div className="aspect-square rounded-lg bg-greige overflow-hidden mb-2 flex items-center justify-center">
-              {part.image ? (
-                <img
-                  src={part.image}
-                  alt={part.name}
-                  className="w-full h-full object-contain p-4"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                  <Package className="w-8 h-8 text-carbon/30" />
-                </div>
-              )}
-            </div>
-            
-            <p className="text-xs font-medium text-carbon line-clamp-2 mb-1 min-h-[2rem]">
-              {part.name}
-            </p>
-            
-            <div className="flex items-center justify-between">
-              <p className="text-sm font-bold text-mineral">{part.price?.toFixed(0)}€</p>
-              <span className="text-[10px] text-mineral font-medium flex items-center gap-0.5 
-                             opacity-0 group-hover:opacity-100 transition-opacity">
-                Voir <ArrowRight className="w-3 h-3" />
-              </span>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+      {/* Scooter Description Modal */}
+      {selectedScooter?.scooter_model && (
+        <ScooterDescriptionModal
+          isOpen={showDescriptionModal}
+          onClose={() => setShowDescriptionModal(false)}
+          scooterName={selectedScooter.scooter_model.name}
+          brandName={selectedScooter.scooter_model.brand}
+          description={selectedScooter.scooter_model.description || ''}
+          specs={{
+            power_watts: selectedScooter.scooter_model.power_watts,
+            range_km: selectedScooter.scooter_model.range_km,
+            max_speed_kmh: selectedScooter.scooter_model.max_speed_kmh,
+            voltage: selectedScooter.scooter_model.voltage,
+          }}
+        />
+      )}
     </div>
   );
 };

@@ -17,6 +17,7 @@ interface GarageScooter {
     amperage?: number | null;
     youtube_video_id?: string | null;
     compatible_parts_count?: number | null;
+    description?: string | null;
   };
   nickname?: string | null;
   added_at: string;
@@ -56,6 +57,7 @@ export const useGarageScooters = () => {
             amperage,
             youtube_video_id,
             compatible_parts_count,
+            description,
             brand:brands(id, name, slug)
           )
         `)
@@ -89,6 +91,7 @@ export const useGarageScooters = () => {
           amperage: item.scooter_model.amperage,
           youtube_video_id: item.scooter_model.youtube_video_id,
           compatible_parts_count: item.scooter_model.compatible_parts_count,
+          description: item.scooter_model.description,
         } : null,
       }))
       // Filter out scooters with null scooter_model to prevent crashes
