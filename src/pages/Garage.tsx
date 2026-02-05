@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
 import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
-import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
 import ScooterIdentity from '@/components/garage/ScooterIdentity';
 import ScooterDescriptionModal from '@/components/garage/ScooterDescriptionModal';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
@@ -253,12 +252,23 @@ const Garage = () => {
                     </motion.div>
                   )}
                   
-                  {/* Block 7: Inventory - Pièces Compatibles Grid */}
+                  {/* Block 7: Modification Timeline - Mobile (BEFORE parts) */}
                   {selectedScooter && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.3 }}
+                    >
+                      <GarageTimeline garageItemId={selectedScooter.id} />
+                    </motion.div>
+                  )}
+                  
+                  {/* Block 8: Inventory - Pièces Compatibles Carousel */}
+                  {selectedScooter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.35 }}
                     >
                       <CompatiblePartsGrid
                         scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
@@ -266,17 +276,6 @@ const Garage = () => {
                         parts={parts || []}
                         loading={partsLoading}
                       />
-                    </motion.div>
-                  )}
-
-                  {/* Block 8: Modification Timeline - Mobile */}
-                  {selectedScooter && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.35 }}
-                    >
-                      <GarageTimeline garageItemId={selectedScooter.id} />
                     </motion.div>
                   )}
                 </div>
@@ -329,14 +328,6 @@ const Garage = () => {
                       />
                     )}
 
-                    {selectedScooter?.scooter_model && (
-                      <ScooterVideoSection
-                        scooterModelId={selectedScooter.scooter_model.id}
-                        scooterName={scooterName}
-                        className="shrink-0 flex-1 min-h-[120px]"
-                      />
-                    )}
-
                     {/* Personal Description - Desktop */}
                     {selectedScooter && (
                       <PersonalDescription
@@ -354,12 +345,24 @@ const Garage = () => {
                   </motion.div>
                 </div>
 
-                {/* Desktop Bottom Row: Compatible Parts Grid */}
+                {/* Desktop: Modification Timeline (BEFORE parts carousel) */}
                 {selectedScooter && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 }}
+                    className="mt-8 shrink-0 hidden lg:block"
+                  >
+                    <GarageTimeline garageItemId={selectedScooter.id} />
+                  </motion.div>
+                )}
+
+                {/* Desktop Bottom Row: Compatible Parts Carousel */}
+                {selectedScooter && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.4 }}
                     className="mt-8 shrink-0 hidden lg:block pb-8"
                   >
                     <CompatiblePartsGrid
@@ -368,18 +371,6 @@ const Garage = () => {
                       parts={parts || []}
                       loading={partsLoading}
                     />
-                  </motion.div>
-                )}
-
-                {/* Desktop: Modification Timeline */}
-                {selectedScooter && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.4 }}
-                    className="mt-8 shrink-0 hidden lg:block pb-8"
-                  >
-                    <GarageTimeline garageItemId={selectedScooter.id} />
                   </motion.div>
                 )}
               </motion.div>

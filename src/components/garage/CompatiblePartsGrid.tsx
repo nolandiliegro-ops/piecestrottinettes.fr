@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import { Package, ShoppingCart, ArrowRight, Loader2 } from "lucide-react";
+import { Package, ShoppingCart, ArrowRight, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 import DifficultyIndicator from "@/components/parts/DifficultyIndicator";
 import { cn } from "@/lib/utils";
 import { formatPrice } from "@/lib/formatPrice";
@@ -38,6 +38,15 @@ const CompatiblePartsGrid = ({
   const { addItem } = useCart();
   const [activeFilter, setActiveFilter] = useState("Tous");
   const [sortBy, setSortBy] = useState("default");
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    scrollRef.current?.scrollBy({ left: -300, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current?.scrollBy({ left: 300, behavior: 'smooth' });
+  };
 
   // Filtering and sorting logic
   const filteredParts = useMemo(() => {
@@ -173,96 +182,123 @@ const CompatiblePartsGrid = ({
         </select>
       </div>
 
-      {/* Responsive Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {filteredParts.slice(0, 6).map((part, index) => (
-          <motion.div
-            key={part.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            whileHover={{ 
-              scale: 1.03, 
-              y: -6,
-              transition: { type: "spring", stiffness: 400, damping: 25 }
-            }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ delay: index * 0.05, duration: 0.3 }}
-            onClick={() => handleViewPart(part)}
-            className={cn(
-              "group relative bg-white/80 backdrop-blur-sm border border-carbon/10 rounded-xl p-4",
-              "hover:shadow-2xl hover:border-mineral/40 transition-shadow cursor-pointer"
-            )}
-          >
-            {/* Stock Badge - Absolute position with colored borders */}
-            <div className={cn(
-              "absolute top-2 right-2 px-2 py-1 rounded-full text-[10px] font-bold",
-              "bg-white/95 backdrop-blur-sm shadow-md z-10 border-2",
-              part.stock_quantity > 10 
-                ? "text-emerald-600 border-emerald-500" 
-                : part.stock_quantity > 0
-                  ? "text-orange-600 border-orange-500"
-                  : "text-red-600 border-red-500"
-            )}>
-              {part.stock_quantity > 10 
-                ? "En stock" 
-                : part.stock_quantity > 0 
-                  ? `Stock: ${part.stock_quantity}` 
-                  : "Rupture"}
-            </div>
+      {/* Horizontal Carousel */}
+      <div className="relative group/carousel">
+        {/* Navigation Arrows - Desktop only */}
+        <button
+          onClick={scrollLeft}
+          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 
+                     w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full shadow-lg 
+                     items-center justify-center hover:bg-white transition-all
+                     opacity-0 group-hover/carousel:opacity-100 -translate-x-4
+                     hover:scale-110"
+        >
+          <ChevronLeft className="w-5 h-5 text-carbon" />
+        </button>
+        
+        <button
+          onClick={scrollRight}
+          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 
+                     w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full shadow-lg 
+                     items-center justify-center hover:bg-white transition-all
+                     opacity-0 group-hover/carousel:opacity-100 translate-x-4
+                     hover:scale-110"
+        >
+          <ChevronRight className="w-5 h-5 text-carbon" />
+        </button>
 
-            {/* Image */}
-            <div className="aspect-square rounded-lg bg-greige overflow-hidden mb-3">
-              {part.image ? (
-                <img 
-                  src={part.image} 
-                  alt={part.name} 
-                  className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300" 
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                  <Package className="w-10 h-10 text-carbon/20" />
+        {/* Scroll Container */}
+        <div 
+          ref={scrollRef}
+          className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide scroll-smooth px-1"
+        >
+          {filteredParts.map((part, index) => (
+            <motion.div
+              key={part.id}
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -6,
+                transition: { type: "spring", stiffness: 400, damping: 25 }
+              }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ delay: index * 0.05, duration: 0.3 }}
+              onClick={() => handleViewPart(part)}
+              className="flex-none w-[280px] snap-start cursor-pointer group relative bg-white/80 backdrop-blur-sm border border-carbon/10 rounded-xl p-4 hover:shadow-2xl hover:border-mineral/40 transition-shadow"
+            >
+              {/* Stock Badge */}
+              <div className={cn(
+                "absolute top-2 right-2 px-2 py-1 rounded-full text-[10px] font-bold",
+                "bg-white/95 backdrop-blur-sm shadow-md z-10 border-2",
+                part.stock_quantity > 10 
+                  ? "text-emerald-600 border-emerald-500" 
+                  : part.stock_quantity > 0
+                    ? "text-orange-600 border-orange-500"
+                    : "text-red-600 border-red-500"
+              )}>
+                {part.stock_quantity > 10 
+                  ? "En stock" 
+                  : part.stock_quantity > 0 
+                    ? `Stock: ${part.stock_quantity}` 
+                    : "Rupture"}
+              </div>
+
+              {/* Image */}
+              <div className="aspect-square rounded-lg bg-greige overflow-hidden mb-3">
+                {part.image ? (
+                  <img 
+                    src={part.image} 
+                    alt={part.name} 
+                    className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300" 
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Package className="w-10 h-10 text-carbon/20" />
+                  </div>
+                )}
+              </div>
+
+              {/* Category */}
+              <p className="text-[10px] text-mineral font-semibold uppercase tracking-wider mb-1">
+                {part.category.name}
+              </p>
+
+              {/* Name */}
+              <h4 className="font-medium text-carbon line-clamp-2 text-sm mb-2 min-h-[2.5rem]">
+                {part.name}
+              </h4>
+
+              {/* Price */}
+              <span className="text-lg font-bold text-mineral block mb-2">
+                {formatPrice(part.price)}
+              </span>
+
+              {/* Difficulty */}
+              {part.difficulty_level && (
+                <div className="flex items-center justify-between pt-2 border-t border-carbon/10">
+                  <span className="text-xs text-carbon/50">Installation</span>
+                  <DifficultyIndicator level={part.difficulty_level} variant="dots" />
                 </div>
               )}
-            </div>
 
-            {/* Category */}
-            <p className="text-[10px] text-mineral font-semibold uppercase tracking-wider mb-1">
-              {part.category.name}
-            </p>
-
-            {/* Name */}
-            <h4 className="font-medium text-carbon line-clamp-2 text-sm mb-2 min-h-[2.5rem]">
-              {part.name}
-            </h4>
-
-            {/* Price */}
-            <span className="text-lg font-bold text-mineral block mb-2">
-              {formatPrice(part.price)}
-            </span>
-
-            {/* Difficulty */}
-            {part.difficulty_level && (
-              <div className="flex items-center justify-between pt-2 border-t border-carbon/10">
-                <span className="text-xs text-carbon/50">Installation</span>
-                <DifficultyIndicator level={part.difficulty_level} variant="dots" />
-              </div>
-            )}
-
-            {/* Cart button on hover */}
-            <button 
-              onClick={(e) => handleAddToCart(e, part)}
-              className={cn(
-                "absolute bottom-3 right-3 w-9 h-9 rounded-full bg-mineral text-white",
-                "flex items-center justify-center opacity-0 group-hover:opacity-100",
-                "transition-all hover:scale-110 shadow-lg",
-                part.stock_quantity <= 0 && "bg-carbon/30 cursor-not-allowed"
-              )}
-              disabled={part.stock_quantity <= 0}
-            >
-              <ShoppingCart className="w-4 h-4" />
-            </button>
-          </motion.div>
-        ))}
+              {/* Cart button on hover */}
+              <button 
+                onClick={(e) => handleAddToCart(e, part)}
+                className={cn(
+                  "absolute bottom-3 right-3 w-9 h-9 rounded-full bg-mineral text-white",
+                  "flex items-center justify-center opacity-0 group-hover:opacity-100",
+                  "transition-all hover:scale-110 shadow-lg",
+                  part.stock_quantity <= 0 && "bg-carbon/30 cursor-not-allowed"
+                )}
+                disabled={part.stock_quantity <= 0}
+              >
+                <ShoppingCart className="w-4 h-4" />
+              </button>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Empty filtered state */}
