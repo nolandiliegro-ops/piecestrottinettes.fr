@@ -8,6 +8,8 @@ interface Part {
   image?: string;
   image_url?: string;
   stock_quantity: number;
+  difficulty_level?: number | null;
+  slug?: string | null;
   category: {
     name: string;
   };
@@ -59,6 +61,8 @@ export const useCompatibleParts = (scooterModelId?: string) => {
             price,
             image_url,
             stock_quantity,
+            difficulty_level,
+            slug,
             category:categories (
               id,
               name,
@@ -91,6 +95,8 @@ export const useCompatibleParts = (scooterModelId?: string) => {
             price: item.price,
             image: item.image_url,
             stock_quantity: item.stock_quantity,
+            difficulty_level: item.difficulty_level,
+            slug: item.slug,
             category: {
               name: categoryName,
             },

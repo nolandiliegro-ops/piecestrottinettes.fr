@@ -1,30 +1,34 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Pencil, Check } from 'lucide-react';
+import { Pencil, Check, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ScooterIdentityProps {
   brandName: string;
   modelName: string;
   nickname?: string | null;
+  description?: string | null;
   isOwned?: boolean;
   className?: string;
   variant?: 'mobile' | 'desktop';
   editable?: boolean;
   garageItemId?: string;
   onNicknameChange?: (nickname: string) => void;
+  onReadMoreClick?: () => void;
 }
 
 const ScooterIdentity = ({ 
   brandName, 
   modelName, 
   nickname, 
+  description,
   isOwned, 
   className, 
   variant = 'mobile',
   editable = false,
   garageItemId,
-  onNicknameChange
+  onNicknameChange,
+  onReadMoreClick
 }: ScooterIdentityProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(nickname || '');
@@ -190,6 +194,24 @@ const ScooterIdentity = ({
       
       {/* NICKNAME - Editable or Display */}
       <NicknameDisplay />
+
+      {/* DESCRIPTION - Short preview with Read More */}
+      {description && (
+        <div className="mt-3 px-4">
+          <p className="text-sm text-carbon/70 line-clamp-2 leading-relaxed">
+            {description}
+          </p>
+          {onReadMoreClick && (
+            <button
+              onClick={onReadMoreClick}
+              className="inline-flex items-center gap-1 mt-1.5 text-xs text-mineral hover:text-mineral/80 transition-colors"
+            >
+              <span>Lire la suite</span>
+              <ChevronRight className="w-3 h-3" />
+            </button>
+          )}
+        </div>
+      )}
       
       {/* Owned Status Badge */}
       {isOwned && (
