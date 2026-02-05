@@ -1,7 +1,7 @@
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import { Package, ShoppingCart, ArrowRight, Loader2 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import DifficultyIndicator from "@/components/parts/DifficultyIndicator";
 import { cn } from "@/lib/utils";
 import { formatPrice } from "@/lib/formatPrice";
@@ -26,6 +26,8 @@ interface CompatiblePartsGridProps {
   loading: boolean;
 }
 
+const categories = ["Tous", "Freinage", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
+
 const CompatiblePartsGrid = ({ 
   scooterId, 
   scooterName, 
@@ -34,6 +36,36 @@ const CompatiblePartsGrid = ({
 }: CompatiblePartsGridProps) => {
   const navigate = useNavigate();
   const { addItem } = useCart();
+  const [activeFilter, setActiveFilter] = useState("Tous");
+  const [sortBy, setSortBy] = useState("default");
+
+  // Filtering and sorting logic
+  const filteredParts = useMemo(() => {
+    let result = [...parts];
+    
+    // Filter by category
+    if (activeFilter !== "Tous") {
+      result = result.filter(part => part.category.name === activeFilter);
+    }
+    
+    // Sort
+    switch (sortBy) {
+      case "price-asc":
+        result.sort((a, b) => a.price - b.price);
+        break;
+      case "price-desc":
+        result.sort((a, b) => b.price - a.price);
+        break;
+      case "stock":
+        result.sort((a, b) => b.stock_quantity - a.stock_quantity);
+        break;
+      case "difficulty":
+        result.sort((a, b) => (a.difficulty_level || 0) - (b.difficulty_level || 0));
+        break;
+    }
+    
+    return result;
+  }, [parts, activeFilter, sortBy]);
 
   const handleAddToCart = (e: React.MouseEvent, part: Part) => {
     e.stopPropagation();
@@ -86,10 +118,14 @@ const CompatiblePartsGrid = ({
             Pièces compatibles
           </h3>
           <span className="px-2 py-0.5 bg-mineral/10 text-mineral text-xs font-semibold rounded-full">
-            {parts.length}
+            {filteredParts.length}
           </span>
         </div>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <motion.div 
+          whileHover={{ scale: 1.1 }} 
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400, damping: 20 }}
+        >
           <Link 
             to={`/catalogue?scooter=${scooterId}`}
             className="text-xs md:text-sm text-mineral hover:text-mineral/80 flex items-center gap-1.5 
@@ -101,35 +137,71 @@ const CompatiblePartsGrid = ({
         </motion.div>
       </div>
 
+      {/* Filter Bar */}
+      <div className="flex items-center gap-3 mb-4 flex-wrap">
+        <span className="text-xs font-semibold text-carbon/60 uppercase tracking-wide">Filtrer :</span>
+        <div className="flex items-center gap-2 flex-wrap">
+          {categories.map(cat => (
+            <motion.button
+              key={cat}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setActiveFilter(cat)}
+              className={cn(
+                "px-3 py-1.5 rounded-full text-xs font-medium transition-all",
+                activeFilter === cat
+                  ? "bg-mineral text-white shadow-md"
+                  : "bg-white/60 backdrop-blur-sm text-carbon/70 hover:bg-white/80 border border-carbon/10"
+              )}
+            >
+              {cat}
+            </motion.button>
+          ))}
+        </div>
+        <select
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value)}
+          className="ml-auto px-3 py-1.5 bg-white/60 backdrop-blur-sm rounded-lg text-xs 
+                     border-[0.5px] border-mineral/20 text-carbon/70
+                     focus:outline-none focus:ring-2 focus:ring-mineral/30 cursor-pointer"
+        >
+          <option value="default">Trier par</option>
+          <option value="price-asc">Prix croissant</option>
+          <option value="price-desc">Prix décroissant</option>
+          <option value="stock">Stock disponible</option>
+          <option value="difficulty">Difficulté</option>
+        </select>
+      </div>
+
       {/* Responsive Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {parts.slice(0, 6).map((part, index) => (
+        {filteredParts.slice(0, 6).map((part, index) => (
           <motion.div
             key={part.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ 
-              scale: 1.02, 
-              y: -4,
-              transition: { type: "spring", stiffness: 300, damping: 25 }
+              scale: 1.03, 
+              y: -6,
+              transition: { type: "spring", stiffness: 400, damping: 25 }
             }}
             whileTap={{ scale: 0.98 }}
             transition={{ delay: index * 0.05, duration: 0.3 }}
             onClick={() => handleViewPart(part)}
             className={cn(
               "group relative bg-white/80 backdrop-blur-sm border border-carbon/10 rounded-xl p-4",
-              "hover:shadow-xl hover:border-mineral/40 transition-shadow cursor-pointer"
+              "hover:shadow-2xl hover:border-mineral/40 transition-shadow cursor-pointer"
             )}
           >
-            {/* Stock Badge - Absolute position */}
+            {/* Stock Badge - Absolute position with colored borders */}
             <div className={cn(
-              "absolute top-2 right-2 px-2 py-1 rounded-full text-[10px] font-semibold",
-              "bg-white/90 backdrop-blur-sm border border-white/50 shadow-sm z-10",
+              "absolute top-2 right-2 px-2 py-1 rounded-full text-[10px] font-bold",
+              "bg-white/95 backdrop-blur-sm shadow-md z-10 border-2",
               part.stock_quantity > 10 
-                ? "text-emerald-600" 
+                ? "text-emerald-600 border-emerald-500" 
                 : part.stock_quantity > 0
-                  ? "text-amber-600"
-                  : "text-red-600"
+                  ? "text-orange-600 border-orange-500"
+                  : "text-red-600 border-red-500"
             )}>
               {part.stock_quantity > 10 
                 ? "En stock" 
@@ -192,6 +264,20 @@ const CompatiblePartsGrid = ({
           </motion.div>
         ))}
       </div>
+
+      {/* Empty filtered state */}
+      {filteredParts.length === 0 && parts.length > 0 && (
+        <div className="h-32 flex flex-col items-center justify-center bg-white/40 border border-mineral/20 rounded-xl gap-2">
+          <Package className="w-6 h-6 text-carbon/30" />
+          <p className="text-carbon/50 text-sm">Aucune pièce dans cette catégorie</p>
+          <button 
+            onClick={() => setActiveFilter("Tous")}
+            className="text-xs text-mineral hover:underline"
+          >
+            Réinitialiser le filtre
+          </button>
+        </div>
+      )}
     </div>
   );
 };
