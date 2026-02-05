@@ -14,8 +14,9 @@ import ScooterDescriptionModal from '@/components/garage/ScooterDescriptionModal
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import CompatiblePartsGrid from '@/components/garage/CompatiblePartsGrid';
+import PersonalDescription from '@/components/garage/PersonalDescription';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
-import { useUpdateNickname } from '@/hooks/useGarage';
+import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
@@ -69,6 +70,7 @@ const Garage = () => {
   const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const updateNickname = useUpdateNickname();
+  const updatePersonalDescription = useUpdatePersonalDescription();
   
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
@@ -193,6 +195,26 @@ const Garage = () => {
                       />
                     </motion.div>
                   )}
+
+                  {/* Personal Description - Mobile */}
+                  {selectedScooter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.15 }}
+                    >
+                      <PersonalDescription
+                        garageItemId={selectedScooter.id}
+                        initialDescription={selectedScooter.personal_description || null}
+                        onUpdate={async (description) => {
+                          await updatePersonalDescription.mutateAsync({
+                            garageItemId: selectedScooter.id,
+                            description,
+                          });
+                        }}
+                      />
+                    </motion.div>
+                  )}
                   
                   {/* Block 4: Hero - Scooter Image (Clean, no floating text) */}
                   <motion.div
@@ -298,6 +320,21 @@ const Garage = () => {
                         scooterModelId={selectedScooter.scooter_model.id}
                         scooterName={scooterName}
                         className="shrink-0 flex-1 min-h-[120px]"
+                      />
+                    )}
+
+                    {/* Personal Description - Desktop */}
+                    {selectedScooter && (
+                      <PersonalDescription
+                        garageItemId={selectedScooter.id}
+                        initialDescription={selectedScooter.personal_description || null}
+                        onUpdate={async (description) => {
+                          await updatePersonalDescription.mutateAsync({
+                            garageItemId: selectedScooter.id,
+                            description,
+                          });
+                        }}
+                        className="shrink-0"
                       />
                     )}
                   </motion.div>

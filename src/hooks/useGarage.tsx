@@ -272,3 +272,38 @@ export const useUpdateNickname = () => {
     },
   });
 };
+
+// Update personal description for a garage item
+export const useUpdatePersonalDescription = () => {
+  const queryClient = useQueryClient();
+  const { user } = useAuthContext();
+
+  return useMutation({
+    mutationFn: async ({ 
+      garageItemId, 
+      description 
+    }: { 
+      garageItemId: string; 
+      description: string;
+    }) => {
+      if (!user) throw new Error("Not authenticated");
+
+      const { error } = await supabase
+        .from("user_garage")
+        .update({ personal_description: description })
+        .eq("id", garageItemId)
+        .eq("user_id", user.id);
+
+      if (error) throw error;
+      return { description };
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["user-garage-scooters"] });
+      toast.success("Description enregistrée", { duration: 2000 });
+    },
+    onError: (error) => {
+      console.error("Error updating personal description:", error);
+      toast.error("Erreur lors de la sauvegarde");
+    },
+  });
+};

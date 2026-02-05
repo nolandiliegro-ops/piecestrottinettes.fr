@@ -575,6 +575,7 @@ export type Database = {
           last_maintenance_date: string | null
           next_maintenance_km: number | null
           nickname: string | null
+          personal_description: string | null
           scooter_model_id: string
           user_id: string
         }
@@ -587,6 +588,7 @@ export type Database = {
           last_maintenance_date?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
+          personal_description?: string | null
           scooter_model_id: string
           user_id: string
         }
@@ -599,6 +601,7 @@ export type Database = {
           last_maintenance_date?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
+          personal_description?: string | null
           scooter_model_id?: string
           user_id?: string
         }
