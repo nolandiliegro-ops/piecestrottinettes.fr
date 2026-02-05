@@ -89,13 +89,16 @@ const CompatiblePartsGrid = ({
             {parts.length}
           </span>
         </div>
-        <Link 
-          to={`/catalogue?scooter=${scooterId}`}
-          className="text-xs md:text-sm text-mineral hover:underline flex items-center gap-1"
-        >
-          Voir tout
-          <ArrowRight className="w-4 h-4" />
-        </Link>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link 
+            to={`/catalogue?scooter=${scooterId}`}
+            className="text-xs md:text-sm text-mineral hover:text-mineral/80 flex items-center gap-1.5 
+                       px-3 py-1.5 bg-mineral/10 hover:bg-mineral/15 rounded-full transition-colors"
+          >
+            Voir tout
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
       </div>
 
       {/* Responsive Grid */}
@@ -105,13 +108,36 @@ const CompatiblePartsGrid = ({
             key={part.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            whileHover={{ 
+              scale: 1.02, 
+              y: -4,
+              transition: { type: "spring", stiffness: 300, damping: 25 }
+            }}
+            whileTap={{ scale: 0.98 }}
             transition={{ delay: index * 0.05, duration: 0.3 }}
             onClick={() => handleViewPart(part)}
             className={cn(
               "group relative bg-white/80 backdrop-blur-sm border border-carbon/10 rounded-xl p-4",
-              "hover:shadow-lg hover:border-mineral/40 transition-all cursor-pointer"
+              "hover:shadow-xl hover:border-mineral/40 transition-shadow cursor-pointer"
             )}
           >
+            {/* Stock Badge - Absolute position */}
+            <div className={cn(
+              "absolute top-2 right-2 px-2 py-1 rounded-full text-[10px] font-semibold",
+              "bg-white/90 backdrop-blur-sm border border-white/50 shadow-sm z-10",
+              part.stock_quantity > 10 
+                ? "text-emerald-600" 
+                : part.stock_quantity > 0
+                  ? "text-amber-600"
+                  : "text-red-600"
+            )}>
+              {part.stock_quantity > 10 
+                ? "En stock" 
+                : part.stock_quantity > 0 
+                  ? `Stock: ${part.stock_quantity}` 
+                  : "Rupture"}
+            </div>
+
             {/* Image */}
             <div className="aspect-square rounded-lg bg-greige overflow-hidden mb-3">
               {part.image ? (
@@ -137,29 +163,10 @@ const CompatiblePartsGrid = ({
               {part.name}
             </h4>
 
-            {/* Price + Stock */}
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-lg font-bold text-mineral">
-                {formatPrice(part.price)}
-              </span>
-              <Badge 
-                variant="secondary"
-                className={cn(
-                  "text-[10px] border",
-                  part.stock_quantity > 10 
-                    ? "bg-emerald-100 text-emerald-700 border-emerald-200" 
-                    : part.stock_quantity > 0
-                      ? "bg-amber-100 text-amber-700 border-amber-200"
-                      : "bg-red-100 text-red-700 border-red-200"
-                )}
-              >
-                {part.stock_quantity > 10 
-                  ? "En stock" 
-                  : part.stock_quantity > 0 
-                    ? "Stock limité" 
-                    : "Rupture"}
-              </Badge>
-            </div>
+            {/* Price */}
+            <span className="text-lg font-bold text-mineral block mb-2">
+              {formatPrice(part.price)}
+            </span>
 
             {/* Difficulty */}
             {part.difficulty_level && (
