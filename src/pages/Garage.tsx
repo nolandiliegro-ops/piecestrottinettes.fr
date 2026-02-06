@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
 import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
+import ScooterVideoSection from '@/components/garage/ScooterVideoSection';
 import ScooterIdentity from '@/components/garage/ScooterIdentity';
 import ScooterDescriptionModal from '@/components/garage/ScooterDescriptionModal';
 import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
@@ -325,6 +326,15 @@ const Garage = () => {
                         totalInvested={scooterStats.totalInvested}
                         machinePoints={scooterStats.machinePoints}
                         className="shrink-0"
+                      />
+                    )}
+
+                    {/* ScooterVideoSection - Academy Link */}
+                    {selectedScooter?.scooter_model && (
+                      <ScooterVideoSection
+                        scooterModelId={selectedScooter.scooter_model.id}
+                        scooterName={scooterName}
+                        className="shrink-0 flex-1 min-h-[120px]"
                       />
                     )}
 
