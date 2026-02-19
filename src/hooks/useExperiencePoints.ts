@@ -31,7 +31,6 @@ export const useExperiencePoints = () => {
 
       const { data, error } = await supabase.functions.invoke("add-experience-points", {
         body: { 
-          userId: user.id, 
           pointsToAdd, 
           action 
         },
