@@ -6,12 +6,6 @@ const corsHeaders = {
     "authorization, x-client-info, apikey, content-type",
 };
 
-interface RequestBody {
-  userId: string;
-  pointsToAdd: number;
-  action?: string;
-}
-
 Deno.serve(async (req) => {
   // Handle CORS preflight
   if (req.method === "OPTIONS") {
@@ -19,17 +13,39 @@ Deno.serve(async (req) => {
   }
 
   try {
-    // Parse request body
-    const { userId, pointsToAdd, action } = (await req.json()) as RequestBody;
-
-    // Validate inputs
-    if (!userId) {
+    // ========== AUTHENTICATION ==========
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader?.startsWith("Bearer ")) {
       return new Response(
-        JSON.stringify({ error: "userId is required" }),
-        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
+    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+
+    // Verify the caller's JWT
+    const supabaseAuth = createClient(supabaseUrl, supabaseAnonKey, {
+      global: { headers: { Authorization: authHeader } },
+    });
+
+    const { data: { user }, error: authError } = await supabaseAuth.auth.getUser();
+    if (authError || !user) {
+      return new Response(
+        JSON.stringify({ error: "Invalid or expired token" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    // CRITICAL: Use the authenticated user's ID, ignore any userId from the body
+    const userId = user.id;
+
+    // Parse request body
+    const { pointsToAdd, action } = await req.json();
+
+    // Validate inputs
     if (typeof pointsToAdd !== "number" || pointsToAdd <= 0) {
       return new Response(
         JSON.stringify({ error: "pointsToAdd must be a positive number" }),
@@ -45,10 +61,7 @@ Deno.serve(async (req) => {
       );
     }
 
-    // Create Supabase client with service role key for admin operations
-    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
-    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-    
+    // Create admin client for the update
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
     // Get current performance points
