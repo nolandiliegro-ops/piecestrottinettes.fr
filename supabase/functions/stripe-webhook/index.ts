@@ -23,11 +23,24 @@ const formatPrice = (amount: number): string => {
   return amount.toFixed(2).replace(".", ",") + " €";
 };
 
+interface OrderLineItem {
+  part_name: string;
+  quantity: number;
+  unit_price: number;
+}
+
 const generateConfirmationHTML = (
   customerName: string,
   orderNumber: string,
-  totalTTC: number
+  totalTTC: number,
+  items: OrderLineItem[]
 ): string => {
+  const itemsHTML = items.map(item => `
+    <tr>
+      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;">${item.quantity} × ${item.part_name}</td>
+      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;text-align:right;white-space:nowrap;">${formatPrice(item.unit_price * item.quantity)}</td>
+    </tr>
+  `).join("");
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -72,6 +85,16 @@ const generateConfirmationHTML = (
                     <p style="margin:0;font-family:'Courier New',monospace;font-size:20px;color:#2C2C2C;font-weight:bold;">${formatPrice(totalTTC)}</p>
                   </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Items detail -->
+          <tr>
+            <td style="padding:0 32px 24px;">
+              <p style="margin:0 0 12px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Détail de votre commande</p>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                ${itemsHTML}
               </table>
             </td>
           </tr>
@@ -211,10 +234,16 @@ serve(async (req) => {
 
     console.log(`[WEBHOOK] Order ${orderId} marked as paid`);
 
-    // --- NEW: Send branded confirmation email via Resend ---
+    // --- Fetch order items for the email ---
+    const { data: emailItems } = await supabaseAdmin
+      .from("order_items")
+      .select("part_name, quantity, unit_price")
+      .eq("order_id", orderId);
+
+    // --- Send branded confirmation email via Resend ---
     try {
       const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
-      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc);
+      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, emailItems || []);
 
       const emailResult = await resend.emails.send({
         from: "piecestrottinettes.fr <contact@piecestrottinettes.fr>",
