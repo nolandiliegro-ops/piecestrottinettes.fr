@@ -27,6 +27,7 @@ interface OrderLineItem {
   part_name: string;
   quantity: number;
   unit_price: number;
+  image_url: string | null;
 }
 
 const generateConfirmationHTML = (
@@ -37,8 +38,11 @@ const generateConfirmationHTML = (
 ): string => {
   const itemsHTML = items.map(item => `
     <tr>
-      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;">${item.quantity} × ${item.part_name}</td>
-      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;text-align:right;white-space:nowrap;">${formatPrice(item.unit_price * item.quantity)}</td>
+      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;width:48px;vertical-align:middle;">
+        ${item.image_url ? `<img src="${item.image_url}" alt="${item.part_name}" width="44" height="44" style="border-radius:8px;object-fit:cover;display:block;" />` : `<div style="width:44px;height:44px;background:#f0ede9;border-radius:8px;"></div>`}
+      </td>
+      <td style="padding:10px 0 10px 12px;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;vertical-align:middle;">${item.quantity} × ${item.part_name}</td>
+      <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;text-align:right;white-space:nowrap;vertical-align:middle;">${formatPrice(item.unit_price * item.quantity)}</td>
     </tr>
   `).join("");
   return `<!DOCTYPE html>
@@ -237,13 +241,20 @@ serve(async (req) => {
     // --- Fetch order items for the email ---
     const { data: emailItems } = await supabaseAdmin
       .from("order_items")
-      .select("part_name, quantity, unit_price")
+      .select("part_name, quantity, unit_price, part_image_url")
       .eq("order_id", orderId);
+
+    const mappedItems: OrderLineItem[] = (emailItems || []).map((item: any) => ({
+      part_name: item.part_name,
+      quantity: item.quantity,
+      unit_price: item.unit_price,
+      image_url: item.part_image_url,
+    }));
 
     // --- Send branded confirmation email via Resend ---
     try {
       const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
-      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, emailItems || []);
+      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, mappedItems);
 
       const emailResult = await resend.emails.send({
         from: "piecestrottinettes.fr <contact@piecestrottinettes.fr>",
