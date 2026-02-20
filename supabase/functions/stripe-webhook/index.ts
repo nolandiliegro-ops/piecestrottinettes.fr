@@ -30,11 +30,22 @@ interface OrderLineItem {
   image_url: string | null;
 }
 
+interface OrderDetails {
+  subtotalHT: number;
+  tvaAmount: number;
+  deliveryPrice: number;
+  deliveryMethod: string;
+  address: string;
+  postalCode: string;
+  city: string;
+}
+
 const generateConfirmationHTML = (
   customerName: string,
   orderNumber: string,
   totalTTC: number,
-  items: OrderLineItem[]
+  items: OrderLineItem[],
+  details: OrderDetails
 ): string => {
   const itemsHTML = items.map(item => `
     <tr>
@@ -45,6 +56,9 @@ const generateConfirmationHTML = (
       <td style="padding:10px 0;border-bottom:1px solid #f0ede9;font-size:14px;color:#2C2C2C;text-align:right;white-space:nowrap;vertical-align:middle;">${formatPrice(item.unit_price * item.quantity)}</td>
     </tr>
   `).join("");
+
+  const deliveryLabel = details.deliveryMethod || "Standard";
+
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -75,7 +89,7 @@ const generateConfirmationHTML = (
             </td>
           </tr>
 
-          <!-- Order details -->
+          <!-- Order number + Total -->
           <tr>
             <td style="padding:8px 32px 24px;text-align:center;">
               <table role="presentation" cellspacing="0" cellpadding="0" style="margin:0 auto;background:rgba(147,181,161,0.08);border:1px solid rgba(147,181,161,0.25);border-radius:12px;">
@@ -126,6 +140,43 @@ const generateConfirmationHTML = (
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+
+          <!-- Separator -->
+          <tr><td style="padding:0 32px;"><div style="height:1px;background:linear-gradient(to right,transparent,#e8e4e0,transparent);"></div></td></tr>
+
+          <!-- Financial Details & Delivery -->
+          <tr>
+            <td style="padding:28px 32px;">
+              <p style="margin:0 0 16px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Détails financiers</p>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding:6px 0;font-size:14px;color:#555;">Sous-total HT</td>
+                  <td style="padding:6px 0;font-size:14px;color:#2C2C2C;text-align:right;font-weight:500;">${formatPrice(details.subtotalHT)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 0;font-size:14px;color:#555;">TVA (20%)</td>
+                  <td style="padding:6px 0;font-size:14px;color:#2C2C2C;text-align:right;font-weight:500;">${formatPrice(details.tvaAmount)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 0;font-size:14px;color:#555;">Livraison (${deliveryLabel})</td>
+                  <td style="padding:6px 0;font-size:14px;color:#2C2C2C;text-align:right;font-weight:500;">${details.deliveryPrice > 0 ? formatPrice(details.deliveryPrice) : "Gratuite"}</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding:12px 0 0;"><div style="height:1px;background:#f0ede9;"></div></td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0 0;font-size:16px;color:#2C2C2C;font-weight:700;">Total TTC</td>
+                  <td style="padding:12px 0 0;font-size:16px;color:#93B5A1;text-align:right;font-weight:700;">${formatPrice(totalTTC)}</td>
+                </tr>
+              </table>
+
+              <!-- Delivery address -->
+              <div style="margin-top:24px;padding:20px;background:rgba(147,181,161,0.06);border:1px solid rgba(147,181,161,0.15);border-radius:10px;">
+                <p style="margin:0 0 8px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Adresse de livraison</p>
+                <p style="margin:0;font-size:14px;color:#2C2C2C;line-height:1.6;">${details.address}<br>${details.postalCode} ${details.city}</p>
+              </div>
             </td>
           </tr>
 
@@ -251,10 +302,18 @@ serve(async (req) => {
       image_url: item.part_image_url,
     }));
 
-    // --- Send branded confirmation email via Resend ---
+    // --- Send unified confirmation email via Resend ---
     try {
       const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
-      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, mappedItems);
+      const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, mappedItems, {
+        subtotalHT: order.subtotal_ht,
+        tvaAmount: order.tva_amount,
+        deliveryPrice: order.delivery_price || 0,
+        deliveryMethod: order.delivery_method || "Standard",
+        address: order.address,
+        postalCode: order.postal_code,
+        city: order.city,
+      });
 
       const emailResult = await resend.emails.send({
         from: "piecestrottinettes.fr <contact@piecestrottinettes.fr>",
@@ -265,58 +324,6 @@ serve(async (req) => {
       console.log(`[WEBHOOK] Confirmation email sent to ${order.customer_email}:`, emailResult);
     } catch (emailErr) {
       console.error(`[WEBHOOK] Failed to send confirmation email:`, emailErr);
-    }
-
-    // --- EXISTING: Send detailed recap via send-order-email ---
-    try {
-      const { data: orderItems } = await supabaseAdmin
-        .from("order_items")
-        .select("*")
-        .eq("order_id", orderId);
-
-      const emailPayload = {
-        orderNumber: order.order_number,
-        customerEmail: order.customer_email,
-        customerName: `${order.customer_first_name} ${order.customer_last_name}`,
-        items: (orderItems || []).map((item: any) => ({
-          name: item.part_name,
-          quantity: item.quantity,
-          price: item.unit_price,
-          imageUrl: item.part_image_url,
-        })),
-        totals: {
-          subtotalHT: order.subtotal_ht,
-          tva: order.tva_amount,
-          totalTTC: order.total_ttc,
-          deliveryPrice: order.delivery_price || 0,
-        },
-        address: {
-          street: order.address,
-          postalCode: order.postal_code,
-          city: order.city,
-        },
-        deliveryMethod: order.delivery_method || "Standard",
-      };
-
-      const emailResponse = await fetch(
-        `${Deno.env.get("SUPABASE_URL")}/functions/v1/send-order-email`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${Deno.env.get("SUPABASE_ANON_KEY")}`,
-          },
-          body: JSON.stringify(emailPayload),
-        }
-      );
-
-      if (!emailResponse.ok) {
-        console.error(`[WEBHOOK] Recap email failed:`, await emailResponse.text());
-      } else {
-        console.log(`[WEBHOOK] Recap email sent for order ${orderId}`);
-      }
-    } catch (recapErr) {
-      console.error(`[WEBHOOK] Error sending recap email:`, recapErr);
     }
 
     return new Response(
