@@ -60,8 +60,8 @@ const GamingCarouselCard = ({
 
   const getOpacity = () => {
     if (isCenter) return 1;
-    if (distanceFromCenter === 1) return 0.85;
-    if (distanceFromCenter === 2) return 0.7;
+    if (distanceFromCenter === 1) return 0.9;
+    if (distanceFromCenter === 2) return 0.8;
     return 0.6;
   };
 
@@ -81,6 +81,7 @@ const GamingCarouselCard = ({
 
   const handleCardClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if ((e.target as HTMLElement).closest('button')) return;
     onCardClick(index, part);
   };
 
@@ -175,7 +176,6 @@ const GamingCarouselCard = ({
       onClick={handleCardClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ scale: isCenter ? undefined : 1.05 }}
       className={`relative cursor-pointer ${isCenter ? "z-10" : ""}`}
     >
       {/* Glassmorphism Card */}
@@ -188,7 +188,9 @@ const GamingCarouselCard = ({
           border: "1px solid rgba(26, 26, 26, 0.08)",
           boxShadow: isCenter 
             ? "0 20px 50px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.15)"
-            : "0 8px 24px rgba(26, 26, 26, 0.06)",
+            : isHovered
+              ? "0 16px 40px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.1)"
+              : "0 8px 24px rgba(26, 26, 26, 0.06)",
         }}
       >
         {/* Image Section */}

@@ -41,15 +41,15 @@ const GamingCarouselSkeleton = () => (
       minHeight: "600px"
     }}
   >
-    <div className="flex items-start gap-6 md:gap-8 pl-5 md:pl-10 lg:pl-20">
-      {[1, 0.9, 0.8, 0.7, 0.6].map((op, i) => (
+    <div className="flex items-center justify-center gap-6 md:gap-8 px-5 md:px-10 lg:px-20">
+      {[0.9, 1, 1.15, 1, 0.9].map((scale, i) => (
         <Skeleton 
           key={i} 
           className="rounded-3xl bg-white/30 flex-shrink-0" 
           style={{
-            width: "280px",
-            height: "380px",
-            opacity: op
+            width: scale >= 1.1 ? "320px" : scale === 1 ? "280px" : "260px",
+            height: scale >= 1.1 ? "420px" : "380px",
+            opacity: scale >= 1.1 ? 1 : scale === 1 ? 0.8 : 0.6
           }} 
         />
       ))}
@@ -70,9 +70,9 @@ const GamingCarousel = ({
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    align: "start",
+    align: "center",
     slidesToScroll: 1,
-    containScroll: "trimSnaps",
+    containScroll: false,
     skipSnaps: false
   });
 
@@ -263,7 +263,7 @@ const GamingCarousel = ({
               className="overflow-hidden" 
               ref={emblaRef}
             >
-              <div className="flex gap-6 md:gap-8 lg:gap-10 items-center pl-5 md:pl-10 lg:pl-20">
+              <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
                 {filteredParts.map((part, index) => {
                   const distanceFromCenter = Math.abs(index - selectedIndex);
                   const wrappedDistance = Math.min(distanceFromCenter, filteredParts.length - distanceFromCenter);
