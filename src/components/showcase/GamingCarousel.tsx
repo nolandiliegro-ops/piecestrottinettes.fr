@@ -1,6 +1,6 @@
-import { useState, useCallback, useEffect } from "react";
-import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight, Sparkles, RotateCcw } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import GamingCarouselCard from "./GamingCarouselCard";
@@ -31,23 +31,25 @@ interface GamingCarouselProps {
   isLoading?: boolean;
 }
 
+const CATEGORIES = ["Tous", "Freinage", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
+
 const GamingCarouselSkeleton = () => (
   <div 
     className="relative w-full py-16 md:py-20" 
     style={{
       background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%)",
-      minHeight: "800px"
+      minHeight: "600px"
     }}
   >
-    <div className="flex items-center justify-center gap-8 md:gap-10 lg:gap-12 px-5 md:px-10 lg:px-20">
-      {[0.85, 0.9, 1, 1.4, 1, 0.9, 0.85].map((scale, i) => (
+    <div className="flex items-center justify-center gap-6 md:gap-8 px-5 md:px-10 lg:px-20">
+      {[0.9, 1, 1.15, 1, 0.9].map((scale, i) => (
         <Skeleton 
           key={i} 
-          className="rounded-2xl bg-white/30 flex-shrink-0" 
+          className="rounded-3xl bg-white/30 flex-shrink-0" 
           style={{
-            width: scale === 1.4 ? "240px" : scale === 1 ? "200px" : scale === 0.9 ? "180px" : "160px",
-            height: scale === 1.4 ? "400px" : "320px",
-            opacity: scale === 1.4 ? 1 : scale === 1 ? 0.8 : scale === 0.9 ? 0.6 : 0.5
+            width: scale >= 1.1 ? "320px" : scale === 1 ? "280px" : "260px",
+            height: scale >= 1.1 ? "420px" : "380px",
+            opacity: scale >= 1.1 ? 1 : scale === 1 ? 0.8 : 0.6
           }} 
         />
       ))}
@@ -64,6 +66,7 @@ const GamingCarousel = ({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedPart, setSelectedPart] = useState<Part | null>(null);
   const [showQuickView, setShowQuickView] = useState(false);
+  const [activeCategory, setActiveCategory] = useState("Tous");
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -73,8 +76,21 @@ const GamingCarousel = ({
     skipSnaps: false
   });
 
-  // Get compatibility info for the selected part (for modal)
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(selectedPart?.id || "");
+
+  // Filter parts by category
+  const filteredParts = useMemo(() => {
+    if (activeCategory === "Tous") return parts;
+    return parts.filter(p => p.category?.name === activeCategory);
+  }, [parts, activeCategory]);
+
+  // Reset carousel on category change
+  const handleCategoryChange = useCallback((cat: string) => {
+    setActiveCategory(cat);
+    setSelectedIndex(0);
+    // Small delay to let the DOM update before scrolling
+    setTimeout(() => emblaApi?.scrollTo(0), 50);
+  }, [emblaApi]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -98,25 +114,27 @@ const GamingCarousel = ({
     };
   }, [emblaApi, onSelect]);
 
-  // Intelligent card click handler
+  // Re-init embla when filtered parts change
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.reInit();
+    }
+  }, [emblaApi, filteredParts]);
+
   const handleCardClick = useCallback((index: number, part: Part) => {
     if (index === selectedIndex) {
-      // Central product: open modal
       setSelectedPart(part);
       setShowQuickView(true);
     } else {
-      // Lateral product: center this product
       emblaApi?.scrollTo(index);
     }
   }, [emblaApi, selectedIndex]);
 
-  // Quick view handler (from eye icon)
   const handleQuickView = useCallback((part: Part) => {
     setSelectedPart(part);
     setShowQuickView(true);
   }, []);
 
-  // Close modal handler
   const handleCloseModal = useCallback(() => {
     setShowQuickView(false);
     setSelectedPart(null);
@@ -141,12 +159,11 @@ const GamingCarousel = ({
     );
   }
 
-  // Calculate dynamic width based on distance from center
   const getCardWidth = (distance: number) => {
-    if (distance === 0) return "480px"; // Central
-    if (distance === 1) return "400px"; // Adjacent
-    if (distance === 2) return "360px"; // Nearby
-    return "320px"; // Far
+    if (distance === 0) return "320px";
+    if (distance === 1) return "280px";
+    if (distance === 2) return "260px";
+    return "240px";
   };
 
   return (
@@ -154,112 +171,155 @@ const GamingCarousel = ({
       className="relative w-full gaming-carousel-container" 
       style={{
         background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%)",
-        minHeight: "800px"
+        minHeight: "600px"
       }}
     >
-      {/* Subtle Grid Background */}
       <div className="gaming-grid-bg-light" />
 
-      {/* Navigation Arrow Left */}
-      <motion.button 
-        onClick={scrollPrev} 
-        className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20" 
-        whileHover={{ scale: 1.1 }} 
-        whileTap={{ scale: 0.95 }} 
-        aria-label="Produit précédent"
-      >
-        <div 
-          className="nav-arrow-glass w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full transition-all duration-300" 
-          style={{
-            background: "rgba(255, 255, 255, 0.85)",
-            backdropFilter: "blur(16px)",
-            WebkitBackdropFilter: "blur(16px)",
-            border: "1px solid rgba(255, 255, 255, 0.4)",
-            boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.1)"
-          }}
-        >
-          <ChevronLeft className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-carbon" />
-        </div>
-      </motion.button>
-
-      {/* Navigation Arrow Right */}
-      <motion.button 
-        onClick={scrollNext} 
-        className="absolute right-4 md:right-8 lg:right-10 top-1/2 -translate-y-1/2 z-20" 
-        whileHover={{ scale: 1.1 }} 
-        whileTap={{ scale: 0.95 }} 
-        aria-label="Produit suivant"
-      >
-        <div 
-          className="nav-arrow-glass w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full transition-all duration-300" 
-          style={{
-            background: "rgba(255, 255, 255, 0.85)",
-            backdropFilter: "blur(16px)",
-            WebkitBackdropFilter: "blur(16px)",
-            border: "1px solid rgba(255, 255, 255, 0.4)",
-            boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.1)"
-          }}
-        >
-          <ChevronRight className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-carbon" />
-        </div>
-      </motion.button>
-
-      {/* Carousel */}
-      <div className="py-8 md:py-10 lg:py-12 px-5 md:px-10 lg:px-20">
-        <div 
-          className="overflow-visible" 
-          ref={emblaRef} 
-          style={{ clipPath: "inset(-100px 0)" }}
-        >
-          <div className="flex gap-8 md:gap-10 lg:gap-12 items-center">
-            {parts.map((part, index) => {
-              const distanceFromCenter = Math.abs(index - selectedIndex);
-              const wrappedDistance = Math.min(distanceFromCenter, parts.length - distanceFromCenter);
-              
-              return (
-                <div 
-                  key={part.id} 
-                  className="flex-shrink-0 transition-all duration-[600ms] ease-out" 
-                  style={{ width: getCardWidth(wrappedDistance) }}
-                >
-                  <GamingCarouselCard 
-                    part={part} 
-                    isCenter={wrappedDistance === 0} 
-                    distanceFromCenter={wrappedDistance} 
-                    index={index}
-                    onCardClick={handleCardClick}
-                    onQuickView={() => handleQuickView(part)}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Pagination Dots */}
-      <div className="flex justify-center gap-2 pb-10">
-        {parts.slice(0, Math.min(parts.length, 10)).map((_, index) => (
-          <button 
-            key={index} 
-            onClick={() => emblaApi?.scrollTo(index)} 
-            className={`transition-all duration-300 rounded-full ${
-              index === selectedIndex 
-                ? "w-8 h-2 bg-mineral shadow-[0_0_12px_rgba(147,181,161,0.6)]" 
-                : "w-2 h-2 bg-carbon/20 hover:bg-carbon/40"
-            }`} 
-            aria-label={`Aller au produit ${index + 1}`} 
-          />
+      {/* Category Filters */}
+      <div className="flex items-center justify-center gap-2 flex-wrap px-5 pt-8 pb-4">
+        {CATEGORIES.map((cat) => (
+          <motion.button
+            key={cat}
+            onClick={() => handleCategoryChange(cat)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              activeCategory === cat
+                ? "bg-mineral text-white shadow-[0_4px_16px_rgba(147,181,161,0.4)]"
+                : "text-carbon/70 hover:text-carbon"
+            }`}
+            style={activeCategory !== cat ? {
+              background: "rgba(255, 255, 255, 0.6)",
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
+              border: "1px solid rgba(26, 26, 26, 0.08)",
+            } : undefined}
+          >
+            {cat}
+          </motion.button>
         ))}
-        {parts.length > 10 && (
-          <span className="text-carbon/40 text-xs ml-2">+{parts.length - 10}</span>
-        )}
       </div>
 
-      {/* Counter */}
-      <div className="absolute bottom-4 right-6 text-carbon/30 text-sm font-mono">
-        {selectedIndex + 1} / {parts.length}
-      </div>
+      {/* Empty filtered state */}
+      {filteredParts.length === 0 && parts.length > 0 ? (
+        <div className="flex flex-col items-center justify-center py-20 gap-4">
+          <Sparkles className="w-12 h-12 text-mineral/40" />
+          <p className="text-carbon/50 text-base">Aucune pièce dans cette catégorie</p>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => handleCategoryChange("Tous")}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-mineral/10 text-mineral text-sm font-medium hover:bg-mineral/20 transition-colors"
+          >
+            <RotateCcw className="w-4 h-4" />
+            Réinitialiser
+          </motion.button>
+        </div>
+      ) : (
+        <>
+          {/* Navigation Arrow Left */}
+          <motion.button 
+            onClick={scrollPrev} 
+            className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20" 
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.95 }} 
+            aria-label="Produit précédent"
+          >
+            <div 
+              className="nav-arrow-glass w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center rounded-full transition-all duration-300" 
+              style={{
+                background: "rgba(255, 255, 255, 0.85)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid rgba(255, 255, 255, 0.4)",
+                boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.1)"
+              }}
+            >
+              <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-carbon" />
+            </div>
+          </motion.button>
+
+          {/* Navigation Arrow Right */}
+          <motion.button 
+            onClick={scrollNext} 
+            className="absolute right-4 md:right-8 lg:right-10 top-1/2 -translate-y-1/2 z-20" 
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.95 }} 
+            aria-label="Produit suivant"
+          >
+            <div 
+              className="nav-arrow-glass w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center rounded-full transition-all duration-300" 
+              style={{
+                background: "rgba(255, 255, 255, 0.85)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid rgba(255, 255, 255, 0.4)",
+                boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.1)"
+              }}
+            >
+              <ChevronRight className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-carbon" />
+            </div>
+          </motion.button>
+
+          {/* Carousel */}
+          <div className="py-6 md:py-8 lg:py-10 px-5 md:px-10 lg:px-20">
+            <div 
+              className="overflow-visible" 
+              ref={emblaRef} 
+              style={{ clipPath: "inset(-100px 0)" }}
+            >
+              <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
+                {filteredParts.map((part, index) => {
+                  const distanceFromCenter = Math.abs(index - selectedIndex);
+                  const wrappedDistance = Math.min(distanceFromCenter, filteredParts.length - distanceFromCenter);
+                  
+                  return (
+                    <div 
+                      key={part.id} 
+                      className="flex-shrink-0 transition-all duration-[600ms] ease-out" 
+                      style={{ width: getCardWidth(wrappedDistance) }}
+                    >
+                      <GamingCarouselCard 
+                        part={part} 
+                        isCenter={wrappedDistance === 0} 
+                        distanceFromCenter={wrappedDistance} 
+                        index={index}
+                        onCardClick={handleCardClick}
+                        onQuickView={() => handleQuickView(part)}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* Pagination Dots */}
+          <div className="flex justify-center gap-2 pb-8">
+            {filteredParts.slice(0, Math.min(filteredParts.length, 10)).map((_, index) => (
+              <button 
+                key={index} 
+                onClick={() => emblaApi?.scrollTo(index)} 
+                className={`transition-all duration-300 rounded-full ${
+                  index === selectedIndex 
+                    ? "w-8 h-2 bg-mineral shadow-[0_0_12px_rgba(147,181,161,0.6)]" 
+                    : "w-2 h-2 bg-carbon/20 hover:bg-carbon/40"
+                }`} 
+                aria-label={`Aller au produit ${index + 1}`} 
+              />
+            ))}
+            {filteredParts.length > 10 && (
+              <span className="text-carbon/40 text-xs ml-2">+{filteredParts.length - 10}</span>
+            )}
+          </div>
+
+          {/* Counter */}
+          <div className="absolute bottom-4 right-6 text-carbon/30 text-sm font-mono">
+            {selectedIndex + 1} / {filteredParts.length}
+          </div>
+        </>
+      )}
 
       {/* Shared Quick View Modal */}
       {selectedPart && (

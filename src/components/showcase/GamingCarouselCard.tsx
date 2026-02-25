@@ -42,62 +42,48 @@ const GamingCarouselCard = ({
   onCardClick,
   onQuickView,
 }: GamingCarouselCardProps) => {
-  // Interactive states
   const [isHovered, setIsHovered] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
   
-  // Hooks
   const { addItem, setIsOpen } = useCart();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isCompatible, selectedScooter, brandColors } = useIsCompatibleWithSelected(part.id);
 
-  // Scale based on distance - central product is HUGE (1.6)
+  // Adjusted scales — subtler zoom on center
   const getScale = () => {
-    if (isCenter) return 1.6;
+    if (isCenter) return 1.15;
     if (distanceFromCenter === 1) return 1.0;
-    if (distanceFromCenter === 2) return 0.9;
-    return 0.85;
+    if (distanceFromCenter === 2) return 0.95;
+    return 0.9;
   };
 
-  // Opacity based on distance - more contrast
   const getOpacity = () => {
     if (isCenter) return 1;
-    if (distanceFromCenter === 1) return 0.75;
-    if (distanceFromCenter === 2) return 0.6;
-    return 0.5;
+    if (distanceFromCenter === 1) return 0.85;
+    if (distanceFromCenter === 2) return 0.7;
+    return 0.6;
   };
 
-  // Blur for depth effect - increased for premium feel
   const getBlur = () => {
     if (isCenter) return 0;
-    if (distanceFromCenter === 1) return 1.5;
-    if (distanceFromCenter === 2) return 2;
-    return 2.5;
+    if (distanceFromCenter === 1) return 0.5;
+    if (distanceFromCenter === 2) return 1;
+    return 1.5;
   };
 
-  // Grayscale for desaturation effect on lateral products
   const getGrayscale = () => {
     if (isCenter) return 0;
-    if (distanceFromCenter === 1) return 0.3;
-    if (distanceFromCenter === 2) return 0.5;
-    return 0.5;
+    if (distanceFromCenter === 1) return 0.15;
+    if (distanceFromCenter === 2) return 0.3;
+    return 0.4;
   };
 
-  // Image size based on position
-  const getImageSize = () => {
-    if (isCenter) return "1000px";
-    if (distanceFromCenter === 1) return "760px";
-    return "640px";
-  };
-
-  // Handle card click - intelligent behavior
   const handleCardClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     onCardClick(index, part);
   };
 
-  // Image click opens Quick View for center card
   const handleImageClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (isCenter) {
@@ -107,7 +93,6 @@ const GamingCarouselCard = ({
     }
   };
 
-  // Add to cart with visual toast
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (part.price === null) return;
@@ -138,19 +123,16 @@ const GamingCarouselCard = ({
     );
   };
 
-  // Toggle favorite
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.stopPropagation();
     toggleFavorite(part.id, part.name);
   };
 
-  // Quick view from eye icon
   const handleQuickViewClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     onQuickView();
   };
 
-  // Direct order with animation
   const handleDirectOrder = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (isOrdering || part.price === null) return;
@@ -193,147 +175,159 @@ const GamingCarouselCard = ({
       onClick={handleCardClick}
       onMouseEnter={() => isCenter && setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative cursor-pointer ${isCenter ? "floating-product-center z-10" : ""}`}
+      className={`relative cursor-pointer ${isCenter ? "z-10" : ""}`}
     >
-      {/* Category Badge - Only on center product */}
-      <AnimatePresence mode="wait">
-        {isCenter && part.category?.name && (
-          <CategoryBadge categoryName={part.category.name} />
-        )}
-      </AnimatePresence>
-      {/* Floating Product Image */}
-      <motion.div
-        className="relative"
-        whileHover={{ 
-          rotateY: isCenter ? 5 : 3,
-          scale: 1.03,
+      {/* Glassmorphism Card */}
+      <div
+        className="rounded-3xl overflow-hidden transition-shadow duration-300"
+        style={{
+          background: "rgba(255, 255, 255, 0.6)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+          border: "1px solid rgba(26, 26, 26, 0.08)",
+          boxShadow: isCenter 
+            ? "0 20px 50px rgba(26, 26, 26, 0.12), 0 0 0 1px rgba(147, 181, 161, 0.15)"
+            : "0 8px 24px rgba(26, 26, 26, 0.06)",
         }}
-        transition={{ duration: 0.4 }}
-        style={{ 
-          perspective: "1000px",
-          transformStyle: "preserve-3d",
-        }}
-        onClick={handleImageClick}
       >
-        {part.image_url ? (
-          <img
-            src={part.image_url}
-            alt={part.name}
-            className={`w-full h-auto object-contain mx-auto ${isCenter ? "floating-product-image cursor-pointer" : ""}`}
-            style={{ 
-              maxWidth: getImageSize(),
-              maxHeight: getImageSize(),
-              filter: isCenter 
-                ? "drop-shadow(0 40px 60px rgba(26, 26, 26, 0.25))"
-                : `drop-shadow(0 15px 30px rgba(26, 26, 26, 0.12))`,
-            }}
-          />
-        ) : (
-          <div 
-            className="flex items-center justify-center rounded-2xl bg-white/30"
-            style={{
-              width: getImageSize(),
-              height: getImageSize(),
-            }}
-          >
-            <Package className="w-16 h-16 text-carbon/20" />
-          </div>
-        )}
-
-        {/* Action Bar - Only on center product when hovered */}
-        <AnimatePresence>
-          {isHovered && isCenter && (
-            <motion.div
-              initial={{ opacity: 0, y: 15, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10, scale: 0.95 }}
-              transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20"
-            >
-              <div 
-                className="flex items-center gap-3 px-4 py-2.5 rounded-2xl"
-                style={{
-                  background: "rgba(255, 255, 255, 0.95)",
-                  backdropFilter: "blur(20px)",
-                  WebkitBackdropFilter: "blur(20px)",
-                  border: "1px solid rgba(147, 181, 161, 0.2)",
-                  boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12)"
-                }}
-              >
-                {/* Favorite Button */}
-                <motion.button
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={handleToggleFavorite}
-                  className="w-10 h-10 rounded-xl flex items-center justify-center transition-colors"
-                  style={{
-                    background: isFavorite(part.id) 
-                      ? "rgba(239, 68, 68, 0.1)" 
-                      : "rgba(26, 26, 26, 0.05)"
-                  }}
-                  aria-label={isFavorite(part.id) ? "Retirer des favoris" : "Ajouter aux favoris"}
-                >
-                  <Heart 
-                    className={`w-5 h-5 transition-colors ${
-                      isFavorite(part.id) 
-                        ? "fill-red-500 text-red-500" 
-                        : "text-carbon/60 hover:text-carbon"
-                    }`} 
-                  />
-                </motion.button>
-
-                {/* Quick View Button */}
-                <motion.button
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={handleQuickViewClick}
-                  className="w-10 h-10 rounded-xl flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
-                  aria-label="Aperçu rapide"
-                >
-                  <Eye className="w-5 h-5 text-carbon/60 hover:text-carbon" />
-                </motion.button>
-
-                {/* Cart Button */}
-                <motion.button
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={handleAddToCart}
-                  className="w-10 h-10 rounded-xl flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
-                  aria-label="Ajouter au panier"
-                >
-                  <ShoppingCart className="w-5 h-5 text-mineral" />
-                </motion.button>
+        {/* Image Section */}
+        <div className="relative" onClick={handleImageClick}>
+          {/* Category Badge — center only */}
+          <AnimatePresence mode="wait">
+            {isCenter && part.category?.name && (
+              <div className="absolute top-3 left-3 z-30">
+                <CategoryBadge categoryName={part.category.name} />
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+            )}
+          </AnimatePresence>
 
-      {/* Product Info - Only for center card */}
-      {isCenter && (
-        <motion.div 
-          className="mt-8 text-center space-y-3"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.4 }}
-        >
-          <h3 className="text-carbon text-lg md:text-xl font-semibold line-clamp-2 px-4">
+          <div 
+            className="aspect-[3/4] flex items-center justify-center p-4"
+            style={{ background: "rgba(245, 243, 240, 0.5)" }}
+          >
+            {part.image_url ? (
+              <motion.img
+                src={part.image_url}
+                alt={part.name}
+                className="w-full h-full object-contain"
+                whileHover={{ scale: isCenter ? 1.05 : 1.02 }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  filter: "drop-shadow(0 12px 24px rgba(26, 26, 26, 0.15))",
+                }}
+              />
+            ) : (
+              <Package className="w-12 h-12 text-carbon/20" />
+            )}
+          </div>
+
+          {/* Action Bar — center + hovered only */}
+          <AnimatePresence>
+            {isHovered && isCenter && (
+              <motion.div
+                initial={{ opacity: 0, y: 15, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20"
+              >
+                <div 
+                  className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl"
+                  style={{
+                    background: "rgba(255, 255, 255, 0.95)",
+                    backdropFilter: "blur(20px)",
+                    WebkitBackdropFilter: "blur(20px)",
+                    border: "1px solid rgba(147, 181, 161, 0.2)",
+                    boxShadow: "0 8px 32px rgba(26, 26, 26, 0.12)"
+                  }}
+                >
+                  <motion.button
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={handleToggleFavorite}
+                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors"
+                    style={{
+                      background: isFavorite(part.id) 
+                        ? "rgba(239, 68, 68, 0.1)" 
+                        : "rgba(26, 26, 26, 0.05)"
+                    }}
+                    aria-label={isFavorite(part.id) ? "Retirer des favoris" : "Ajouter aux favoris"}
+                  >
+                    <Heart 
+                      className={`w-4 h-4 transition-colors ${
+                        isFavorite(part.id) 
+                          ? "fill-red-500 text-red-500" 
+                          : "text-carbon/60 hover:text-carbon"
+                      }`} 
+                    />
+                  </motion.button>
+
+                  <motion.button
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={handleQuickViewClick}
+                    className="w-9 h-9 rounded-xl flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
+                    aria-label="Aperçu rapide"
+                  >
+                    <Eye className="w-4 h-4 text-carbon/60 hover:text-carbon" />
+                  </motion.button>
+
+                  <motion.button
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={handleAddToCart}
+                    className="w-9 h-9 rounded-xl flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
+                    aria-label="Ajouter au panier"
+                  >
+                    <ShoppingCart className="w-4 h-4 text-mineral" />
+                  </motion.button>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Product Info — VISIBLE ON ALL CARDS */}
+        <div className="p-4 space-y-2">
+          {/* Category tiny label */}
+          {part.category?.name && (
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-mineral/70">
+              {part.category.name}
+            </p>
+          )}
+
+          <h3 className={`font-semibold line-clamp-2 text-carbon ${isCenter ? "text-base" : "text-sm"}`}>
             {part.name}
           </h3>
           
-          {/* Prix - Toujours visible */}
-          <motion.span
-            className="text-2xl md:text-3xl font-extrabold block text-mineral"
-            animate={{ 
-              scale: isHovered ? 0.95 : 1,
-              y: isHovered ? -2 : 0
-            }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-          >
-            {formatPrice(part.price || 0)}
-          </motion.span>
+          <div className="flex items-center justify-between">
+            <span className={`font-extrabold text-mineral ${isCenter ? "text-xl" : "text-lg"}`}>
+              {formatPrice(part.price || 0)}
+            </span>
 
-          {/* Bouton Commander Direct - Apparaît au survol */}
+            {/* Cart button — always visible */}
+            <motion.button
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={handleAddToCart}
+              className="w-9 h-9 rounded-full flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
+              aria-label="Ajouter au panier"
+            >
+              <ShoppingCart className="w-4 h-4 text-mineral" />
+            </motion.button>
+          </div>
+        </div>
+      </div>
+
+      {/* Center-only extras below the card */}
+      {isCenter && (
+        <motion.div 
+          className="mt-4 text-center space-y-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.3 }}
+        >
+          {/* Direct Order Button — hover only */}
           <AnimatePresence>
             {isHovered && (
               <motion.button
@@ -344,7 +338,7 @@ const GamingCarouselCard = ({
                 transition={{ duration: 0.25, ease: "easeOut" }}
                 onClick={handleDirectOrder}
                 disabled={isOrdering || part.price === null}
-                className={`w-full max-w-xs mx-auto py-3 px-6 rounded-xl font-semibold text-white mt-3 transition-all duration-300 ${
+                className={`w-full max-w-[240px] mx-auto py-2.5 px-5 rounded-xl font-semibold text-white text-sm transition-all duration-300 ${
                   orderSuccess ? "bg-green-500" : "bg-mineral hover:bg-mineral-dark"
                 }`}
                 style={{
@@ -355,19 +349,19 @@ const GamingCarouselCard = ({
                 aria-label="Commander directement"
               >
                 {isOrdering ? (
-                  <Loader2 className="w-5 h-5 animate-spin mx-auto" />
+                  <Loader2 className="w-4 h-4 animate-spin mx-auto" />
                 ) : orderSuccess ? (
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     className="flex items-center justify-center gap-2"
                   >
-                    <Check className="w-5 h-5" />
+                    <Check className="w-4 h-4" />
                     <span>Ajouté !</span>
                   </motion.div>
                 ) : (
                   <span className="flex items-center justify-center gap-2">
-                    <Zap className="w-4 h-4" />
+                    <Zap className="w-3.5 h-3.5" />
                     <span>Commander Direct</span>
                   </span>
                 )}
@@ -381,7 +375,7 @@ const GamingCarouselCard = ({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="flex flex-col items-center gap-2 pt-2"
+              className="flex flex-col items-center gap-1.5 pt-1"
             >
               <motion.div
                 animate={{ 
@@ -412,8 +406,8 @@ const GamingCarouselCard = ({
                 <span>Compatible</span>
               </motion.div>
               
-              <p className="text-xs text-muted-foreground/70 font-light italic leading-relaxed text-center max-w-[260px]">
-                Ce produit est également compatible avec votre{" "}
+              <p className="text-xs text-muted-foreground/70 font-light italic leading-relaxed text-center max-w-[220px]">
+                Compatible avec votre{" "}
                 <span className="font-medium text-foreground/80 not-italic">
                   {selectedScooter.name}
                 </span>
