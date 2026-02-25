@@ -1,49 +1,33 @@
 
 
-# Fix carrousel : virtual loop + suppression scrollbar + padding vertical
+# Simplification du carrousel — Zéro doublon, containScroll trimSnaps, fix clipping
 
-## Problemes actuels
+## Modifications sur `src/components/showcase/GamingCarousel.tsx`
 
-1. **Vide a gauche** : Embla `loop: true` ne duplique pas visuellement les slides quand il y en a trop peu pour remplir le viewport. Le premier produit reste donc seul a gauche avec du vide.
-2. **Scrollbar verticale** : le `overflow-y: visible` (ligne 264) + `overflow: visible` sur le parent (ligne 261) laissent le contenu scale deborder et creent une scrollbar sur la page.
-3. **Cartes toujours legerement coupees** : le padding vertical `py-12` n'est pas suffisant pour le scale 1.15.
+### 1. Suppression du virtual loop
+- Supprimer le `useMemo` de `displayParts` (lignes 79-85)
+- Remplacer toutes les références à `displayParts` par `filteredParts` dans le mapping des slides et le calcul de `wrappedDistance`
+- Remettre les keys à `part.id` (plus besoin de `-${index}` sans doublons)
+- Supprimer `const realIndex = index % filteredParts.length` dans `handleCardClick` (plus nécessaire)
 
-## Modifications — `src/components/showcase/GamingCarousel.tsx`
+### 2. Embla : loop false + containScroll trimSnaps
+- `loop: false` (au lieu de `shouldLoop`)
+- `containScroll: "trimSnaps"` (au lieu de `false`) — cela colle proprement aux bords en début/fin de liste, éliminant le vide à gauche
+- `align: "center"` reste inchangé
+- La variable `shouldLoop` peut être supprimée
 
-### 1. Virtual loop : doubler les slides si < 8
+### 3. Fix du clipping — padding généreux
+- Container du carousel (ligne 270) : passer de `py-20 md:py-20 lg:py-24` à `py-28` pour donner largement l'espace au scale 1.15x
+- Ajouter `min-h-[500px]` sur ce même container pour garantir la hauteur minimum
+- Garder `overflow-hidden` sur le container pour zéro scrollbar
 
-Apres le calcul de `filteredParts`, creer `displayParts` :
-```ts
-const displayParts = filteredParts.length > 0 && filteredParts.length < 8
-  ? [...filteredParts, ...filteredParts]
-  : filteredParts;
-```
+### 4. Flèches visibles seulement si > 3 produits
+- Changer la condition d'affichage des flèches de `filteredParts.length > 1` à `filteredParts.length > 3`
+- Les dots et le counter restent visibles dès `> 1`
 
-- Utiliser `displayParts` pour le mapping des slides (ligne 269)
-- Utiliser `displayParts.length` pour le calcul de `wrappedDistance`
-- `shouldLoop` reste `filteredParts.length > 1` (inchange)
-- Les dots de pagination et le counter restent bases sur `filteredParts` (pas `displayParts`) pour eviter de montrer les doublons a l'utilisateur
-- La `key` de chaque slide devient `${part.id}-${index}` (au lieu de `part.id` seul) car les IDs sont maintenant dupliques
-- Le `handleCardClick` utilise `index % filteredParts.length` pour retrouver la vraie part dans `filteredParts`
-
-### 2. Suppression de la scrollbar verticale
-
-- Sur le container parent (ligne 261, `py-12...`) : remplacer `style={{ overflow: "visible" }}` par `className="overflow-hidden"` pour empecher la scrollbar. Le overflow-hidden sur ce container ne coupe PAS les cartes car c'est le padding interne qui donne l'espace.
-- Sur le viewport Embla (ligne 263) : retirer `style={{ overflowY: "visible" }}`. Laisser le `overflow-hidden` standard d'Embla.
-- A la place, augmenter le padding vertical du container a `py-20 md:py-20 lg:py-24` pour que le scale 1.15 ait largement l'espace de respirer DANS le container, sans deborder.
-
-### 3. Container principal
-
-- Ajouter `overflow-hidden` sur le container principal (ligne 162, `relative w-full`) pour garantir zero scrollbar quoi qu'il arrive.
-
-## Ce qui ne change PAS
-
-- `GamingCarouselCard.tsx` — aucune modification
-- Config Embla : `align: "center"`, `loop: shouldLoop`, `containScroll: false`
-- QuickViewModal, filtres, fleches, dots
-- Le fix du clic lateral (closest button)
-
-## Fichier modifie
-
+### Fichier modifié
 - `src/components/showcase/GamingCarousel.tsx`
+
+### Aucun changement sur
+- `GamingCarouselCard.tsx`, `QuickViewModal`, filtres, interactions
 
