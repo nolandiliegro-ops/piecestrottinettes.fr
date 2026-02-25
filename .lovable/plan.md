@@ -1,54 +1,45 @@
 
 
-# Correction de l'alignement du carrousel — Start-aligned avec focus sur la première carte
+# Correction du carrousel — Retour alignement centré + Fix clic latéral
 
-## Probleme constate
+## Problème
 
-Avec `align: "center"`, Embla centre la carte selectionnee au milieu du viewport, ce qui laisse un grand vide a gauche au chargement. L'utilisateur veut que les produits remplissent l'espace des le depart, alignes a gauche avec un padding coherent.
+1. L'alignement `start` crée un vide disgracieux et un déséquilibre visuel
+2. Les boutons "Ajouter au panier" sur les cartes latérales ne fonctionnent pas car le `handleCardClick` parent intercepte le clic avant que `e.stopPropagation()` du bouton ne puisse agir (le `onClick` est sur le `motion.div` wrapper)
+
+## Analyse du bug de clic
+
+Le `handleCardClick` sur le `motion.div` parent (ligne 175) se déclenche AVANT les handlers enfants car l'événement remonte. Bien que `handleAddToCart` appelle `e.stopPropagation()`, le problème est que le `onClick` du parent sur `motion.div` capture l'événement au même niveau. La solution : sur les cartes non-centrales, le parent ne doit pas intercepter le clic si l'utilisateur a cliqué sur un élément interactif (bouton panier, etc.).
 
 ## Modifications
 
 ### 1. `src/components/showcase/GamingCarousel.tsx`
 
-**Config Embla :**
-- `align: "center"` → `align: "start"`
-- `containScroll: false` → `containScroll: "trimSnaps"` (evite les espaces vides en fin de scroll)
-- `loop: true` reste en place pour le scroll infini
+**Config Embla — retour à center :**
+- `align: "start"` → `align: "center"`
+- `containScroll: "trimSnaps"` → `containScroll: false` (nécessaire pour que `align: center` fonctionne correctement avec `loop: true`)
 
-**Padding du container de scroll :**
-- Le container Embla recoit `pl-5 md:pl-10 lg:pl-20` pour aligner le premier produit avec les marges du site (identique au padding horizontal existant du container parent)
+**Padding interne du flex container :**
+- Retirer le `pl-5 md:pl-10 lg:pl-20` du flex container intérieur (ligne 266) — plus nécessaire avec l'alignement centré
 
-**Suppression du `clipPath: "inset(-100px 0)"` :** plus necessaire avec l'alignement start + containScroll
-
-**Fleches de navigation :** restent positionnees en absolu (inchangees)
+**Skeleton — retour au style centré :**
+- Restaurer l'affichage symétrique des skeletons (centre plus gros que les côtés)
 
 ### 2. `src/components/showcase/GamingCarouselCard.tsx`
 
-**Logique de focus :**
-- La carte au `selectedIndex` (snap actif d'Embla, qui sera la carte la plus a gauche visible) conserve le scale 1.15, l'opacite 1 et le blur 0
-- Le hover sur n'importe quelle carte applique egalement un leger scale 1.05 pour le feedback visuel
-- La `isCenter` prop continue de fonctionner car c'est le parent qui calcule `distanceFromCenter` par rapport a `selectedIndex` — le changement d'align ne casse pas cette logique, seul le snap point change
+**Fix du clic latéral :**
+- Le `handleCardClick` parent (ligne 82) doit vérifier si le clic provient d'un élément interactif (bouton) avant d'appeler `onCardClick`. On ajoute une vérification : si `e.target` est à l'intérieur d'un `<button>`, on ne fait rien (le bouton gère son propre clic).
+- Concrètement : dans `handleCardClick`, ajouter `if ((e.target as HTMLElement).closest('button')) return;` avant l'appel à `onCardClick`
 
-**Pas de changement de props :** la carte recoit toujours `isCenter` et `distanceFromCenter` du parent, la semantique est juste "carte active" plutot que "carte au centre visuel"
+**Animation — carte latérale lisible et cliquable :**
+- Remonter l'opacité des cartes adjacentes : distance 1 → 0.9 (au lieu de 0.85), distance 2 → 0.8 (au lieu de 0.7)
+- Retirer le `whileHover={{ scale: isCenter ? undefined : 1.05 }}` sur le `motion.div` parent (ce scale entre en conflit avec le scale animé du `animate`). Le hover feedback viendra uniquement du boxShadow de la carte glassmorphism.
+- Ajouter un hover boxShadow plus fort sur les cartes latérales : quand `isHovered && !isCenter`, appliquer un boxShadow plus prononcé sur la div glassmorphism intérieure
 
-### 3. Ajustements visuels mineurs
+**Aucun changement sur :** les interactions internes (favoris, œil, panier) — ils ont déjà `e.stopPropagation()`
 
-- `getCardWidth` : toutes les cartes a **280px** (uniforme) car avec l'alignement start, les variations de largeur creent des sauts visuels
-- La carte active (`distance === 0`) garde son scale 1.15 qui la rend naturellement plus grande
-- Skeleton mis a jour avec les nouvelles dimensions uniformes
+## Fichiers modifiés
 
-## Ce qui ne change PAS
-
-- Structure Embla (loop, slidesToScroll)
-- QuickViewModal et ses interactions
-- Clic carte active → QuickViewModal
-- Clic carte non-active → scrollTo
-- Filtres par categorie
-- Bouton panier sur toutes les cartes
-- Design glassmorphism des cartes
-
-## Fichiers modifies
-
-- `src/components/showcase/GamingCarousel.tsx` — config Embla, padding, card widths
-- `src/components/showcase/GamingCarouselCard.tsx` — ajustement mineur du hover scale
+- `src/components/showcase/GamingCarousel.tsx` — config Embla center, retrait padding
+- `src/components/showcase/GamingCarouselCard.tsx` — fix clic parent, ajustement opacité/hover
 
