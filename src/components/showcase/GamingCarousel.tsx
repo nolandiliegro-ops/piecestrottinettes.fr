@@ -67,9 +67,17 @@ const GamingCarousel = ({
   const [selectedPart, setSelectedPart] = useState<Part | null>(null);
   const [showQuickView, setShowQuickView] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Tous");
+
+  // Filter parts by category (must be before embla init for shouldLoop)
+  const filteredParts = useMemo(() => {
+    if (activeCategory === "Tous") return parts;
+    return parts.filter(p => p.category?.name === activeCategory);
+  }, [parts, activeCategory]);
+  
+  const shouldLoop = filteredParts.length > 1;
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
+    loop: shouldLoop,
     align: "center",
     slidesToScroll: 1,
     containScroll: false,
@@ -77,12 +85,6 @@ const GamingCarousel = ({
   });
 
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(selectedPart?.id || "");
-
-  // Filter parts by category
-  const filteredParts = useMemo(() => {
-    if (activeCategory === "Tous") return parts;
-    return parts.filter(p => p.category?.name === activeCategory);
-  }, [parts, activeCategory]);
 
   // Reset carousel on category change
   const handleCategoryChange = useCallback((cat: string) => {
@@ -114,12 +116,7 @@ const GamingCarousel = ({
     };
   }, [emblaApi, onSelect]);
 
-  // Re-init embla when filtered parts change
-  useEffect(() => {
-    if (emblaApi) {
-      emblaApi.reInit();
-    }
-  }, [emblaApi, filteredParts]);
+  // Force re-mount handled by key prop on embla container
 
   const handleCardClick = useCallback((index: number, part: Part) => {
     if (index === selectedIndex) {
@@ -166,7 +163,6 @@ const GamingCarousel = ({
       className="relative w-full gaming-carousel-container" 
       style={{
         background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%)",
-        minHeight: "600px"
       }}
     >
       <div className="gaming-grid-bg-light" />
@@ -213,10 +209,11 @@ const GamingCarousel = ({
         </div>
       ) : (
         <>
-          {/* Navigation Arrow Left */}
+          {/* Navigation Arrows - hidden for single product */}
+          {filteredParts.length > 1 && (
           <motion.button 
             onClick={scrollPrev} 
-            className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20" 
+            className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20"
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.95 }} 
             aria-label="Produit précédent"
@@ -234,9 +231,11 @@ const GamingCarousel = ({
               <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-carbon" />
             </div>
           </motion.button>
+          )}
 
           {/* Navigation Arrow Right */}
-          <motion.button 
+          {filteredParts.length > 1 && (
+          <motion.button
             onClick={scrollNext} 
             className="absolute right-4 md:right-8 lg:right-10 top-1/2 -translate-y-1/2 z-20" 
             whileHover={{ scale: 1.1 }} 
@@ -256,12 +255,15 @@ const GamingCarousel = ({
               <ChevronRight className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-carbon" />
             </div>
           </motion.button>
+          )}
 
           {/* Carousel */}
-          <div className="py-6 md:py-8 lg:py-10 px-5 md:px-10 lg:px-20">
+          <div className="py-12 md:py-14 lg:py-16 px-5 md:px-10 lg:px-20" style={{ overflow: "visible" }}>
             <div 
-              className="overflow-hidden" 
+              className="overflow-hidden"
+              style={{ overflowY: "visible" }}
               ref={emblaRef}
+              key={`${activeCategory}-${filteredParts.length}`}
             >
               <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
                 {filteredParts.map((part, index) => {
@@ -289,7 +291,8 @@ const GamingCarousel = ({
             </div>
           </div>
 
-          {/* Pagination Dots */}
+          {/* Pagination Dots - hidden for single product */}
+          {filteredParts.length > 1 && (
           <div className="flex justify-center gap-2 pb-8">
             {filteredParts.slice(0, Math.min(filteredParts.length, 10)).map((_, index) => (
               <button 
@@ -307,11 +310,14 @@ const GamingCarousel = ({
               <span className="text-carbon/40 text-xs ml-2">+{filteredParts.length - 10}</span>
             )}
           </div>
+          )}
 
           {/* Counter */}
+          {filteredParts.length > 1 && (
           <div className="absolute bottom-4 right-6 text-carbon/30 text-sm font-mono">
             {selectedIndex + 1} / {filteredParts.length}
           </div>
+          )}
         </>
       )}
 
