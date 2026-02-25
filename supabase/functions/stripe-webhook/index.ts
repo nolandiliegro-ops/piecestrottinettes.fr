@@ -45,8 +45,10 @@ const generateConfirmationHTML = (
   orderNumber: string,
   totalTTC: number,
   items: OrderLineItem[],
-  details: OrderDetails
+  details: OrderDetails,
+  cockpitPoints: number
 ): string => {
+  const discountValue = (cockpitPoints * 0.05).toFixed(2).replace(".", ",");
   const itemsHTML = items.map(item => `
     <tr>
       <td style="padding:10px 0;border-bottom:1px solid #f0ede9;width:48px;vertical-align:middle;">
@@ -132,8 +134,8 @@ const generateConfirmationHTML = (
                           <div style="width:44px;height:44px;background:rgba(255,255,255,0.2);border-radius:10px;text-align:center;line-height:44px;font-size:22px;">⚡</div>
                         </td>
                         <td style="padding-left:16px;vertical-align:middle;">
-                          <p style="margin:0 0 4px;font-size:15px;color:#FFFFFF;font-weight:600;">Félicitations !</p>
-                          <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.9);line-height:1.5;">Cet achat vous a rapporté des <strong>XP</strong> et des <strong>Points Cockpit</strong> !</p>
+                          <p style="margin:0 0 4px;font-size:15px;color:#FFFFFF;font-weight:600;">Félicitations ! Cet achat vous a rapporté <strong>${cockpitPoints} Points Cockpit</strong> !</p>
+                          <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.85);line-height:1.5;">Ces points vous offrent une remise de <strong>${discountValue} €</strong> sur votre prochaine commande.</p>
                         </td>
                       </tr>
                     </table>
@@ -176,6 +178,17 @@ const generateConfirmationHTML = (
               <div style="margin-top:24px;padding:20px;background:rgba(147,181,161,0.06);border:1px solid rgba(147,181,161,0.15);border-radius:10px;">
                 <p style="margin:0 0 8px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Adresse de livraison</p>
                 <p style="margin:0;font-size:14px;color:#2C2C2C;line-height:1.6;">${details.address}<br>${details.postalCode} ${details.city}</p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Logistics / Next Step -->
+          <tr>
+            <td style="padding:0 32px 28px;">
+              <div style="background:rgba(44,44,44,0.04);border:1px solid rgba(44,44,44,0.1);border-radius:12px;padding:24px 28px;">
+                <p style="margin:0 0 10px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">📦 Étape suivante</p>
+                <p style="margin:0 0 20px;font-size:14px;color:#555;line-height:1.7;">Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée.</p>
+                <a href="https://piecestrottinettes.fr/garage" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
               </div>
             </td>
           </tr>
@@ -305,6 +318,7 @@ serve(async (req) => {
     // --- Send unified confirmation email via Resend ---
     try {
       const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
+      const cockpitPoints = order.loyalty_points_earned ?? Math.floor(order.total_ttc);
       const html = generateConfirmationHTML(customerName, order.order_number, order.total_ttc, mappedItems, {
         subtotalHT: order.subtotal_ht,
         tvaAmount: order.tva_amount,
@@ -313,7 +327,7 @@ serve(async (req) => {
         address: order.address,
         postalCode: order.postal_code,
         city: order.city,
-      });
+      }, cockpitPoints);
 
       const emailResult = await resend.emails.send({
         from: "piecestrottinettes.fr <contact@piecestrottinettes.fr>",
