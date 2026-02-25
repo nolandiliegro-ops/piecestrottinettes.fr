@@ -68,29 +68,35 @@ const GamingCarousel = ({
   const [showQuickView, setShowQuickView] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Tous");
 
-  // Filter parts by category (must be before embla init for shouldLoop)
+  // Filter parts by category (must be before embla init for startIndex)
   const filteredParts = useMemo(() => {
     if (activeCategory === "Tous") return parts;
     return parts.filter(p => p.category?.name === activeCategory);
   }, [parts, activeCategory]);
+
+  const startIdx = Math.floor(filteredParts.length / 2);
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "center",
     slidesToScroll: 1,
     containScroll: false,
-    skipSnaps: false
+    skipSnaps: false,
+    startIndex: startIdx,
   });
 
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(selectedPart?.id || "");
 
+  // Sync selectedIndex to middle when filteredParts changes
+  useEffect(() => {
+    setSelectedIndex(Math.floor(filteredParts.length / 2));
+  }, [filteredParts.length]);
+
   // Reset carousel on category change
   const handleCategoryChange = useCallback((cat: string) => {
     setActiveCategory(cat);
-    setSelectedIndex(0);
-    // Small delay to let the DOM update before scrolling
-    setTimeout(() => emblaApi?.scrollTo(0), 50);
-  }, [emblaApi]);
+    // startIndex will be reapplied via key-based re-mount
+  }, []);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -158,9 +164,10 @@ const GamingCarousel = ({
 
   return (
     <div 
-      className="relative w-full overflow-hidden gaming-carousel-container" 
+      className="relative w-full gaming-carousel-container" 
       style={{
         background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%)",
+        overflowX: 'hidden',
       }}
     >
       <div className="gaming-grid-bg-light" />
@@ -206,7 +213,14 @@ const GamingCarousel = ({
           </motion.button>
         </div>
       ) : (
-        <>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`carousel-${activeCategory}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
           {/* Navigation Arrows - hidden for single product */}
           {filteredParts.length > 1 && (
           <motion.button 
@@ -256,7 +270,7 @@ const GamingCarousel = ({
           )}
 
           {/* Carousel */}
-          <div className="py-32 px-5 md:px-10 lg:px-20 min-h-[500px]" style={{ overflow: 'clip' }}>
+          <div className="py-40 px-5 md:px-10 lg:px-20 min-h-[450px] md:min-h-[650px]" style={{ overflow: 'clip' }}>
             <div 
               className="overflow-visible"
               ref={emblaRef}
@@ -314,7 +328,8 @@ const GamingCarousel = ({
             {selectedIndex + 1} / {filteredParts.length}
           </div>
           )}
-        </>
+          </motion.div>
+        </AnimatePresence>
       )}
 
       {/* Shared Quick View Modal */}
