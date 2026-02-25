@@ -1,45 +1,37 @@
 
 
-# Correction du carrousel — Retour alignement centré + Fix clic latéral
+# Fix carrousel : symétrie loop, clipping des cartes, produit unique
 
-## Problème
+## Problèmes identifiés (screenshot)
 
-1. L'alignement `start` crée un vide disgracieux et un déséquilibre visuel
-2. Les boutons "Ajouter au panier" sur les cartes latérales ne fonctionnent pas car le `handleCardClick` parent intercepte le clic avant que `e.stopPropagation()` du bouton ne puisse agir (le `onClick` est sur le `motion.div` wrapper)
+1. **Vide à gauche** : `loop: true` est déjà configuré mais `containScroll: false` avec `align: "center"` ne suffit pas — Embla ne wrappe pas visuellement les derniers éléments à gauche du premier quand il n'y a pas assez de slides pour remplir le viewport. Le problème vient du fait que le nombre de slides est trop faible pour que le loop fonctionne visuellement.
+2. **Cartes coupées** : le `overflow-hidden` sur le viewport Embla (ligne 263) tronque le scale 1.15 de la carte centrale (badge catégorie coupé en haut, bas de carte coupé).
+3. **Produit unique** : avec `loop: true` et 1 seul slide, Embla peut avoir un comportement erratique.
 
-## Analyse du bug de clic
+## Modifications — `src/components/showcase/GamingCarousel.tsx`
 
-Le `handleCardClick` sur le `motion.div` parent (ligne 175) se déclenche AVANT les handlers enfants car l'événement remonte. Bien que `handleAddToCart` appelle `e.stopPropagation()`, le problème est que le `onClick` du parent sur `motion.div` capture l'événement au même niveau. La solution : sur les cartes non-centrales, le parent ne doit pas intercepter le clic si l'utilisateur a cliqué sur un élément interactif (bouton panier, etc.).
+### Fix 1 : Loop conditionnel
+- `loop` passe à `filteredParts.length > 1` au lieu de `true` statique. Cela résout le cas du produit unique ET permet au loop de fonctionner quand il y a plusieurs produits.
+- Comme Embla ne peut pas changer ses options dynamiquement, on force un re-mount du carrousel via une `key` dynamique sur le container Embla : `key={activeCategory + filteredParts.length}`. Cela force React à détruire/recréer l'instance Embla quand le filtre change.
 
-## Modifications
+### Fix 2 : Overflow visible pour le scale
+- Le div `overflow-hidden` (ref={emblaRef}, ligne 263) est obligatoire pour Embla sur l'axe X. On ne peut pas le retirer.
+- Solution : ajouter `overflow-y: visible` en style inline sur ce même div, et `overflow: visible` sur le container parent (py-6 div, ligne 261). Cela permet au scale 1.15 de déborder verticalement sans être coupé tout en gardant le masquage horizontal pour le scroll.
+- Augmenter le padding vertical du container : `py-12 md:py-14 lg:py-16` (au lieu de py-6/8/10) pour donner de l'espace au zoom.
 
-### 1. `src/components/showcase/GamingCarousel.tsx`
+### Fix 3 : Produit unique centré
+- Quand `filteredParts.length === 1`, masquer les flèches de navigation et les dots de pagination.
+- Le `align: "center"` garantit déjà que le produit unique sera centré.
 
-**Config Embla — retour à center :**
-- `align: "start"` → `align: "center"`
-- `containScroll: "trimSnaps"` → `containScroll: false` (nécessaire pour que `align: center` fonctionne correctement avec `loop: true`)
+### Fix 4 : minHeight ajustée
+- Passer le `minHeight` du container principal de `600px` à `auto` et laisser le padding vertical gérer l'espace. Cela évite les espaces vides inutiles quand il y a peu de produits.
 
-**Padding interne du flex container :**
-- Retirer le `pl-5 md:pl-10 lg:pl-20` du flex container intérieur (ligne 266) — plus nécessaire avec l'alignement centré
+## Fichier modifié
 
-**Skeleton — retour au style centré :**
-- Restaurer l'affichage symétrique des skeletons (centre plus gros que les côtés)
+- `src/components/showcase/GamingCarousel.tsx`
 
-### 2. `src/components/showcase/GamingCarouselCard.tsx`
+## Ce qui ne change PAS
 
-**Fix du clic latéral :**
-- Le `handleCardClick` parent (ligne 82) doit vérifier si le clic provient d'un élément interactif (bouton) avant d'appeler `onCardClick`. On ajoute une vérification : si `e.target` est à l'intérieur d'un `<button>`, on ne fait rien (le bouton gère son propre clic).
-- Concrètement : dans `handleCardClick`, ajouter `if ((e.target as HTMLElement).closest('button')) return;` avant l'appel à `onCardClick`
-
-**Animation — carte latérale lisible et cliquable :**
-- Remonter l'opacité des cartes adjacentes : distance 1 → 0.9 (au lieu de 0.85), distance 2 → 0.8 (au lieu de 0.7)
-- Retirer le `whileHover={{ scale: isCenter ? undefined : 1.05 }}` sur le `motion.div` parent (ce scale entre en conflit avec le scale animé du `animate`). Le hover feedback viendra uniquement du boxShadow de la carte glassmorphism.
-- Ajouter un hover boxShadow plus fort sur les cartes latérales : quand `isHovered && !isCenter`, appliquer un boxShadow plus prononcé sur la div glassmorphism intérieure
-
-**Aucun changement sur :** les interactions internes (favoris, œil, panier) — ils ont déjà `e.stopPropagation()`
-
-## Fichiers modifiés
-
-- `src/components/showcase/GamingCarousel.tsx` — config Embla center, retrait padding
-- `src/components/showcase/GamingCarouselCard.tsx` — fix clic parent, ajustement opacité/hover
+- `GamingCarouselCard.tsx` (aucune modification)
+- QuickViewModal, filtres, interactions, design glassmorphism
 
