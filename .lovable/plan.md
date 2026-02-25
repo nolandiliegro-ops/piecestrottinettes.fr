@@ -1,37 +1,49 @@
 
 
-# Fix carrousel : symétrie loop, clipping des cartes, produit unique
+# Fix carrousel : virtual loop + suppression scrollbar + padding vertical
 
-## Problèmes identifiés (screenshot)
+## Problemes actuels
 
-1. **Vide à gauche** : `loop: true` est déjà configuré mais `containScroll: false` avec `align: "center"` ne suffit pas — Embla ne wrappe pas visuellement les derniers éléments à gauche du premier quand il n'y a pas assez de slides pour remplir le viewport. Le problème vient du fait que le nombre de slides est trop faible pour que le loop fonctionne visuellement.
-2. **Cartes coupées** : le `overflow-hidden` sur le viewport Embla (ligne 263) tronque le scale 1.15 de la carte centrale (badge catégorie coupé en haut, bas de carte coupé).
-3. **Produit unique** : avec `loop: true` et 1 seul slide, Embla peut avoir un comportement erratique.
+1. **Vide a gauche** : Embla `loop: true` ne duplique pas visuellement les slides quand il y en a trop peu pour remplir le viewport. Le premier produit reste donc seul a gauche avec du vide.
+2. **Scrollbar verticale** : le `overflow-y: visible` (ligne 264) + `overflow: visible` sur le parent (ligne 261) laissent le contenu scale deborder et creent une scrollbar sur la page.
+3. **Cartes toujours legerement coupees** : le padding vertical `py-12` n'est pas suffisant pour le scale 1.15.
 
 ## Modifications — `src/components/showcase/GamingCarousel.tsx`
 
-### Fix 1 : Loop conditionnel
-- `loop` passe à `filteredParts.length > 1` au lieu de `true` statique. Cela résout le cas du produit unique ET permet au loop de fonctionner quand il y a plusieurs produits.
-- Comme Embla ne peut pas changer ses options dynamiquement, on force un re-mount du carrousel via une `key` dynamique sur le container Embla : `key={activeCategory + filteredParts.length}`. Cela force React à détruire/recréer l'instance Embla quand le filtre change.
+### 1. Virtual loop : doubler les slides si < 8
 
-### Fix 2 : Overflow visible pour le scale
-- Le div `overflow-hidden` (ref={emblaRef}, ligne 263) est obligatoire pour Embla sur l'axe X. On ne peut pas le retirer.
-- Solution : ajouter `overflow-y: visible` en style inline sur ce même div, et `overflow: visible` sur le container parent (py-6 div, ligne 261). Cela permet au scale 1.15 de déborder verticalement sans être coupé tout en gardant le masquage horizontal pour le scroll.
-- Augmenter le padding vertical du container : `py-12 md:py-14 lg:py-16` (au lieu de py-6/8/10) pour donner de l'espace au zoom.
+Apres le calcul de `filteredParts`, creer `displayParts` :
+```ts
+const displayParts = filteredParts.length > 0 && filteredParts.length < 8
+  ? [...filteredParts, ...filteredParts]
+  : filteredParts;
+```
 
-### Fix 3 : Produit unique centré
-- Quand `filteredParts.length === 1`, masquer les flèches de navigation et les dots de pagination.
-- Le `align: "center"` garantit déjà que le produit unique sera centré.
+- Utiliser `displayParts` pour le mapping des slides (ligne 269)
+- Utiliser `displayParts.length` pour le calcul de `wrappedDistance`
+- `shouldLoop` reste `filteredParts.length > 1` (inchange)
+- Les dots de pagination et le counter restent bases sur `filteredParts` (pas `displayParts`) pour eviter de montrer les doublons a l'utilisateur
+- La `key` de chaque slide devient `${part.id}-${index}` (au lieu de `part.id` seul) car les IDs sont maintenant dupliques
+- Le `handleCardClick` utilise `index % filteredParts.length` pour retrouver la vraie part dans `filteredParts`
 
-### Fix 4 : minHeight ajustée
-- Passer le `minHeight` du container principal de `600px` à `auto` et laisser le padding vertical gérer l'espace. Cela évite les espaces vides inutiles quand il y a peu de produits.
+### 2. Suppression de la scrollbar verticale
 
-## Fichier modifié
+- Sur le container parent (ligne 261, `py-12...`) : remplacer `style={{ overflow: "visible" }}` par `className="overflow-hidden"` pour empecher la scrollbar. Le overflow-hidden sur ce container ne coupe PAS les cartes car c'est le padding interne qui donne l'espace.
+- Sur le viewport Embla (ligne 263) : retirer `style={{ overflowY: "visible" }}`. Laisser le `overflow-hidden` standard d'Embla.
+- A la place, augmenter le padding vertical du container a `py-20 md:py-20 lg:py-24` pour que le scale 1.15 ait largement l'espace de respirer DANS le container, sans deborder.
 
-- `src/components/showcase/GamingCarousel.tsx`
+### 3. Container principal
+
+- Ajouter `overflow-hidden` sur le container principal (ligne 162, `relative w-full`) pour garantir zero scrollbar quoi qu'il arrive.
 
 ## Ce qui ne change PAS
 
-- `GamingCarouselCard.tsx` (aucune modification)
-- QuickViewModal, filtres, interactions, design glassmorphism
+- `GamingCarouselCard.tsx` — aucune modification
+- Config Embla : `align: "center"`, `loop: shouldLoop`, `containScroll: false`
+- QuickViewModal, filtres, fleches, dots
+- Le fix du clic lateral (closest button)
+
+## Fichier modifie
+
+- `src/components/showcase/GamingCarousel.tsx`
 
