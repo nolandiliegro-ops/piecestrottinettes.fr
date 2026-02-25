@@ -1,101 +1,94 @@
 
-# Amélioration du bandeau Gamification + Section Logistique
 
-## Analyse de la situation actuelle
+# Refonte des cartes du carrousel "Pièces Certifiées" + Filtres par catégorie
 
-La table `orders` contient déjà une colonne `loyalty_points_earned` qui stocke les Points Cockpit réels gagnés lors de la commande (règle : 1€ TTC = 1 point, arrondi inférieur). Cette valeur est déjà chargée via `select("*")` dans le webhook — elle est donc disponible immédiatement, sans aucune requête supplémentaire.
+## Résumé
 
-Si `loyalty_points_earned` est null (commande invitée ou ancienne), un calcul de fallback `Math.floor(total_ttc)` sera utilisé pour l'affichage dans l'email uniquement.
-
----
-
-## Modifications apportées à `supabase/functions/stripe-webhook/index.ts`
-
-### 1. Signature de `generateConfirmationHTML` — nouveau paramètre
-
-```typescript
-// Avant
-generateConfirmationHTML(customerName, orderNumber, totalTTC, items, details)
-
-// Après
-generateConfirmationHTML(customerName, orderNumber, totalTTC, items, details, cockpitPoints)
-```
-
-Le paramètre `cockpitPoints: number` sera calculé avant l'appel :
-
-```typescript
-const cockpitPoints = order.loyalty_points_earned ?? Math.floor(order.total_ttc);
-const discountValue = (cockpitPoints * 0.05).toFixed(2).replace(".", ",");
-```
+Transformer les cartes du carrousel Home pour adopter le style vertical épuré des "Pépites" (glassmorphism, badge catégorie, infos toujours visibles), ajouter des filtres par catégorie au-dessus, et adoucir l'animation de la carte centrale.
 
 ---
 
-### 2. Remplacement du bandeau Gamification (texte dynamique)
+## Fichiers modifiés
 
-**Avant (texte fixe) :**
-> "Cet achat vous a rapporté des **XP** et des **Points Cockpit** !"
+### 1. `src/components/showcase/GamingCarouselCard.tsx` — Refonte complète du design
 
-**Après (texte dynamique) :**
-> "Félicitations ! Cet achat vous a rapporté **[N] Points Cockpit** !"  
-> *(en plus petit)* "Ces points vous offrent une remise de **[N × 0,05] €** sur votre prochaine commande."
+**Ce qui change :**
+- Le design passe d'une "image flottante sans cadre" à une **carte verticale avec cadre glassmorphism** (style Pépites : `bg-white/60 backdrop-blur-md rounded-3xl border border-carbon/10`)
+- Structure interne : Image (aspect 3/4) → Badge catégorie (en haut à droite, glassmorphism mineral) → Nom + Prix + Bouton Panier en bas
+- **Nom, Prix et bouton "Ajouter au Panier" visibles sur TOUTES les cartes**, pas uniquement la centrale
+- Le badge `CategoryBadge` reste affiché uniquement sur la carte centrale (au-dessus de l'image)
+- La barre d'actions hover (favoris, œil, panier) reste uniquement sur la carte centrale
 
-Le style reste identique : bandeau vert `#93B5A1`, icône ⚡, texte blanc.
+**Animation ajustée :**
+- `getScale()` : centre = **1.15** (au lieu de 1.6), adjacent = 1.0, distance 2 = 0.95, loin = 0.9
+- `getOpacity()` : centre = 1, adjacent = 0.85, distance 2 = 0.7, loin = 0.6
+- `getBlur()` : réduit globalement (centre 0, adjacent 0.5, distance 2 1, loin 1.5)
+- `getGrayscale()` : réduit (centre 0, adjacent 0.15, distance 2 0.3, loin 0.4)
+- Suppression de `getImageSize()` — les tailles seront gérées par la largeur de la carte dans le parent
+
+**Infos visibles sur toutes les cartes :**
+- Nom (line-clamp-2, `text-sm` pour latérales, `text-base` pour centre)
+- Prix (mineral, `text-lg` pour latérales, `text-xl` pour centre)
+- Bouton panier rond (icône ShoppingCart) en bas à droite, toujours visible, style mineral
+
+**Carte centrale uniquement :**
+- Badge catégorie via `CategoryBadge` (comme actuellement)
+- Barre d'actions hover (favoris, œil, panier)
+- Bouton "Commander Direct" au survol
+- Badge de compatibilité
+
+### 2. `src/components/showcase/GamingCarousel.tsx` — Ajout des filtres + ajustement des dimensions
+
+**Filtres par catégorie (nouveau bloc HTML) :**
+- Ajout d'un state `activeCategory` (défaut: "Tous")
+- Liste de catégories identique au Garage : `["Tous", "Freinage", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"]`
+- Barre de boutons pills au-dessus du carrousel, style identique au Garage : `bg-mineral text-white` quand actif, `bg-white/60 backdrop-blur-sm border border-carbon/10` quand inactif
+- Animation `motion.button` avec `whileHover scale 1.05` et `whileTap scale 0.95`
+- Le filtrage est fait côté client via `useMemo` sur `parts` : filtre par `part.category?.name`
+- Quand le filtre change, le carrousel se remet à la position 0 via `emblaApi.scrollTo(0)`
+
+**Ajustement des dimensions des cartes :**
+- `getCardWidth()` : centre = **320px** (au lieu de 480px), adjacent = 280px, distance 2 = 260px, loin = 240px
+- `minHeight` du container réduit à **600px** (au lieu de 800px) pour s'adapter aux nouvelles proportions
+- Skeleton mis à jour avec les nouvelles dimensions
+
+**État vide filtré :**
+- Si `filteredParts.length === 0` mais `parts.length > 0`, afficher un message "Aucune pièce dans cette catégorie" avec un bouton "Réinitialiser" (comme dans le Garage)
+
+### 3. `src/components/CompatiblePartsSection.tsx` — Aucun changement structurel
+
+Ce composant passe déjà `parts`, `activeModelName`, `activeBrandSlug` et `isLoading` au `GamingCarousel`. Aucune modification nécessaire.
 
 ---
 
-### 3. Ajout de la section Logistique (nouveau bloc HTML)
+## Ce qui ne change PAS
 
-Positionnée **entre les Détails Financiers et le bouton CTA**, cette section comprend :
-
-- **Titre** : `📦 ÉTAPE SUIVANTE` (style label majuscule, gris clair)
-- **Texte** : "Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée."
-- **Bouton secondaire** : "Suivre ma commande" — style contour (bordure `#2C2C2C`, fond transparent, texte sombre), pointant vers `https://piecestrottinettes.fr/garage`
-
-Le bouton principal vert "Voir mon Garage" reste inchangé juste après.
+- Structure Embla Carousel (loop, align center, containScroll)
+- `QuickViewModal` et son architecture shared-instance
+- Le clic sur carte latérale → center cette carte (zero-friction logic)
+- Le clic sur carte centrale → ouvre QuickViewModal
+- Flèches de navigation gauche/droite
+- Pagination dots
+- Hook `useCompatibleParts` dans `useScooterData.ts`
 
 ---
 
-## Structure finale de l'email (dans l'ordre)
+## Structure visuelle d'une carte (nouveau design)
 
 ```text
-┌─────────────────────────────────────┐
-│  HEADER VERT #93B5A1               │
-│  PIECESTROTTINETTES.FR             │
-│  ROULE · RÉPARE · DURE             │
-├─────────────────────────────────────┤
-│  ✓ PAIEMENT CONFIRMÉ               │
-│  Merci [Prénom Nom] !              │
-├─────────────────────────────────────┤
-│  [Numéro Commande]  [Total TTC]    │
-├─────────────────────────────────────┤
-│  Détail des articles (avec images) │
-├─────────────────────────────────────┤
-│  ⚡ GAMIFICATION (dynamique)       │
-│  "Vous avez gagné N Points Cockpit"│
-│  "Remise de N×0,05 € disponible"  │
-├─────────────────────────────────────┤
-│  Détails financiers                │
-│  + Adresse de livraison            │
-├─────────────────────────────────────┤
-│  📦 ÉTAPE SUIVANTE                 │
-│  Texte suivi de commande           │
-│  [Suivre ma commande] (contour)    │
-├─────────────────────────────────────┤
-│  [Voir mon Garage] (vert)          │
-├─────────────────────────────────────┤
-│  FOOTER SOMBRE                     │
-└─────────────────────────────────────┘
+┌───────────────────────────┐
+│  ┌─────────────────────┐  │
+│  │                     │  │
+│  │   IMAGE (3/4)       │  │ ← bg-greige, object-contain
+│  │              [BADGE]│  │ ← CategoryBadge (centre only)
+│  │                     │  │
+│  └─────────────────────┘  │
+│                           │
+│  CATÉGORIE (tiny mineral) │
+│  NOM DU PRODUIT           │ ← line-clamp-2
+│  29,90 €          [🛒]   │ ← prix + bouton panier rond
+│                           │
+└───────────────────────────┘
+   glassmorphism card
 ```
 
----
-
-## Fichier modifié
-
-- `supabase/functions/stripe-webhook/index.ts` : mise à jour de `generateConfirmationHTML` (signature + deux blocs HTML) et de l'appel à cette fonction. Déploiement automatique.
-
-## Ce qui ne change pas
-
-- Aucune modification de la base de données
-- Aucune modification de la logique XP existante (`add-experience-points`)
-- Expéditeur : `contact@piecestrottinettes.fr`
-- Header vert `#93B5A1`, images des produits (44px), tous les blocs existants
