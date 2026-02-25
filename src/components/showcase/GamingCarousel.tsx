@@ -78,7 +78,7 @@ const GamingCarousel = ({
     loop: false,
     align: "center",
     slidesToScroll: 1,
-    containScroll: "trimSnaps",
+    containScroll: false,
     skipSnaps: false
   });
 
@@ -208,7 +208,7 @@ const GamingCarousel = ({
       ) : (
         <>
           {/* Navigation Arrows - hidden for single product */}
-          {filteredParts.length > 3 && (
+          {filteredParts.length > 1 && (
           <motion.button 
             onClick={scrollPrev}
             className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20"
@@ -232,7 +232,7 @@ const GamingCarousel = ({
           )}
 
           {/* Navigation Arrow Right */}
-          {filteredParts.length > 3 && (
+          {filteredParts.length > 1 && (
           <motion.button
             onClick={scrollNext}
             className="absolute right-4 md:right-8 lg:right-10 top-1/2 -translate-y-1/2 z-20" 
@@ -256,9 +256,9 @@ const GamingCarousel = ({
           )}
 
           {/* Carousel */}
-          <div className="py-28 px-5 md:px-10 lg:px-20 overflow-hidden min-h-[500px]">
+          <div className="py-32 px-5 md:px-10 lg:px-20 min-h-[500px]" style={{ overflow: 'clip' }}>
             <div 
-              className="overflow-hidden"
+              className="overflow-visible"
               ref={emblaRef}
               key={`${activeCategory}-${filteredParts.length}`}
             >
