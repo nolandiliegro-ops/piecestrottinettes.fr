@@ -1,101 +1,88 @@
 
-# Amélioration du bandeau Gamification + Section Logistique
 
-## Analyse de la situation actuelle
+# Refonte du Carrousel Home -- Style "Studio Garage"
 
-La table `orders` contient déjà une colonne `loyalty_points_earned` qui stocke les Points Cockpit réels gagnés lors de la commande (règle : 1€ TTC = 1 point, arrondi inférieur). Cette valeur est déjà chargée via `select("*")` dans le webhook — elle est donc disponible immédiatement, sans aucune requête supplémentaire.
+## Analyse de l'existant
 
-Si `loyalty_points_earned` est null (commande invitée ou ancienne), un calcul de fallback `Math.floor(total_ttc)` sera utilisé pour l'affichage dans l'email uniquement.
+Le carrousel actuel de la Home (`CompatiblePartsSection`) delegue l'affichage au `GamingCarousel` (Embla-based, centrage dynamique, scale 1.6x au centre). Les infos produit (prix, bouton panier) ne sont visibles que sur la carte centrale -- les cartes laterales sont floues/desaturees avec uniquement l'image.
 
----
+Le Garage utilise un composant distinct `CompatiblePartsGrid` (scroll horizontal natif, cartes 280px) avec filtres par categorie, tri, badges stock, bouton panier, indicateur difficulte -- exactement le niveau d'info demande.
 
-## Modifications apportées à `supabase/functions/stripe-webhook/index.ts`
+Les categories parentes en base sont : Pneus, Chambres a Air, Freinage, Chargeurs (4 seulement). Les filtres "Batteries" et "Accessoires" mentionnes dans le brief n'existent pas encore -- ils seront ajoutes dans la liste statique mais ne filtreront rien tant que ces categories ne sont pas creees en base. "Tous" montrera tout.
 
-### 1. Signature de `generateConfirmationHTML` — nouveau paramètre
+## Architecture proposee
+
+### Nouveau composant : `src/components/showcase/StudioProductCarousel.tsx`
+
+Un composant **reutilisable** qui fusionne le meilleur des deux mondes :
+
+- **Structure Embla** du GamingCarousel (loop, align center, navigation fleches glassmorphiques)
+- **Cartes "Full Info"** inspirees du Garage CompatiblePartsGrid (stock badge, categorie, nom, prix, bouton panier, difficulte)
+- **Barre de filtres** horizontale integree au-dessus du carrousel
+- **AnimatePresence** pour le filtrage fluide
+
+### Props du composant
 
 ```typescript
-// Avant
-generateConfirmationHTML(customerName, orderNumber, totalTTC, items, details)
-
-// Après
-generateConfirmationHTML(customerName, orderNumber, totalTTC, items, details, cockpitPoints)
+interface StudioProductCarouselProps {
+  parts: Part[];
+  activeModelName?: string;
+  activeBrandSlug?: string;
+  isLoading?: boolean;
+}
 ```
 
-Le paramètre `cockpitPoints: number` sera calculé avant l'appel :
+### Carte produit : `src/components/showcase/StudioCarouselCard.tsx`
 
-```typescript
-const cockpitPoints = order.loyalty_points_earned ?? Math.floor(order.total_ttc);
-const discountValue = (cockpitPoints * 0.05).toFixed(2).replace(".", ",");
-```
+Chaque carte affiche TOUTES les infos quel que soit son positionnement :
 
----
+- Badge stock (haut droite) -- glassmorphism avec bordure coloree (vert/orange/rouge)
+- Image produit sur fond `bg-white/60 backdrop-blur-md border-white/40`
+- Categorie (micro-caps uppercase tracking-wider)
+- Nom produit (font-medium, line-clamp-2)
+- Prix (font-bold text-mineral)
+- Bouton "Ajouter au panier" (icone ShoppingCart, toujours visible)
+- Indicateur difficulte (dots colores)
 
-### 2. Remplacement du bandeau Gamification (texte dynamique)
+**Focus dynamique** : la carte centrale a un `scale(1.08)` (plus subtil que 1.6x actuel), les laterales a `scale(0.95)` avec opacite 0.85. PAS de blur ni grayscale -- toutes les infos restent lisibles.
 
-**Avant (texte fixe) :**
-> "Cet achat vous a rapporté des **XP** et des **Points Cockpit** !"
+Le clic sur une carte laterale la centre (scrollTo). Le clic sur la carte centrale ouvre le QuickViewModal existant.
 
-**Après (texte dynamique) :**
-> "Félicitations ! Cet achat vous a rapporté **[N] Points Cockpit** !"  
-> *(en plus petit)* "Ces points vous offrent une remise de **[N × 0,05] €** sur votre prochaine commande."
+### Barre de filtres
 
-Le style reste identique : bandeau vert `#93B5A1`, icône ⚡, texte blanc.
-
----
-
-### 3. Ajout de la section Logistique (nouveau bloc HTML)
-
-Positionnée **entre les Détails Financiers et le bouton CTA**, cette section comprend :
-
-- **Titre** : `📦 ÉTAPE SUIVANTE` (style label majuscule, gris clair)
-- **Texte** : "Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée."
-- **Bouton secondaire** : "Suivre ma commande" — style contour (bordure `#2C2C2C`, fond transparent, texte sombre), pointant vers `https://piecestrottinettes.fr/garage`
-
-Le bouton principal vert "Voir mon Garage" reste inchangé juste après.
-
----
-
-## Structure finale de l'email (dans l'ordre)
+Composant inline dans `StudioProductCarousel` :
 
 ```text
-┌─────────────────────────────────────┐
-│  HEADER VERT #93B5A1               │
-│  PIECESTROTTINETTES.FR             │
-│  ROULE · RÉPARE · DURE             │
-├─────────────────────────────────────┤
-│  ✓ PAIEMENT CONFIRMÉ               │
-│  Merci [Prénom Nom] !              │
-├─────────────────────────────────────┤
-│  [Numéro Commande]  [Total TTC]    │
-├─────────────────────────────────────┤
-│  Détail des articles (avec images) │
-├─────────────────────────────────────┤
-│  ⚡ GAMIFICATION (dynamique)       │
-│  "Vous avez gagné N Points Cockpit"│
-│  "Remise de N×0,05 € disponible"  │
-├─────────────────────────────────────┤
-│  Détails financiers                │
-│  + Adresse de livraison            │
-├─────────────────────────────────────┤
-│  📦 ÉTAPE SUIVANTE                 │
-│  Texte suivi de commande           │
-│  [Suivre ma commande] (contour)    │
-├─────────────────────────────────────┤
-│  [Voir mon Garage] (vert)          │
-├─────────────────────────────────────┤
-│  FOOTER SOMBRE                     │
-└─────────────────────────────────────┘
+[Tous] [Freinage] [Pneus] [Chambres à Air] [Batteries] [Chargeurs] [Accessoires]
 ```
 
----
+- Style : pills arrondies, `bg-mineral text-white` quand actif, `bg-white/60 backdrop-blur-sm text-carbon/70` sinon
+- Filtrage client-side sur `part.category?.name`
+- AnimatePresence : quand on change de filtre, les cartes sortent en `opacity: 0, scale: 0.95` et entrent en `opacity: 1, scale: 1`
 
-## Fichier modifié
+### Integration dans la Home
 
-- `supabase/functions/stripe-webhook/index.ts` : mise à jour de `generateConfirmationHTML` (signature + deux blocs HTML) et de l'appel à cette fonction. Déploiement automatique.
+`CompatiblePartsSection.tsx` sera modifie pour utiliser `StudioProductCarousel` au lieu de `GamingCarousel`. Le header (compteur pieces, badge compatible, nom modele) reste identique.
+
+### Design System respecte
+
+- Fond : `#F5F3F0` (greige)
+- Cartes : glassmorphism `bg-white/60 backdrop-blur-md border border-white/40`
+- Typographie : uppercase tracking-wide pour les titres, font-display
+- Couleurs : Carbon `#1A1A1A`, Mineral `#93B5A1`
+- Hover : lift effect `y: -6, scale: 1.03` avec spring stiffness 400
+
+## Fichiers modifies / crees
+
+1. **CREER** `src/components/showcase/StudioCarouselCard.tsx` -- Carte produit "Full Info" glassmorphique
+2. **CREER** `src/components/showcase/StudioProductCarousel.tsx` -- Carrousel Embla + filtres + AnimatePresence
+3. **MODIFIER** `src/components/CompatiblePartsSection.tsx` -- Remplacer `GamingCarousel` par `StudioProductCarousel`
 
 ## Ce qui ne change pas
 
-- Aucune modification de la base de données
-- Aucune modification de la logique XP existante (`add-experience-points`)
-- Expéditeur : `contact@piecestrottinettes.fr`
-- Header vert `#93B5A1`, images des produits (44px), tous les blocs existants
+- `GamingCarousel` et `GamingCarouselCard` restent intacts (pas de suppression, peuvent etre reutilises ailleurs)
+- `QuickViewModal` reutilise tel quel
+- Hooks de donnees (`useCompatibleParts`, `useCompatiblePartsCount`) inchanges
+- Garage `CompatiblePartsGrid` inchange
+- Aucune modification de base de donnees
+
