@@ -74,21 +74,11 @@ const GamingCarousel = ({
     return parts.filter(p => p.category?.name === activeCategory);
   }, [parts, activeCategory]);
   
-  const shouldLoop = filteredParts.length > 1;
-
-  // Virtual loop: duplicate slides when too few to fill viewport
-  const displayParts = useMemo(() => {
-    if (filteredParts.length > 0 && filteredParts.length < 8) {
-      return [...filteredParts, ...filteredParts];
-    }
-    return filteredParts;
-  }, [filteredParts]);
-  
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: shouldLoop,
+    loop: false,
     align: "center",
     slidesToScroll: 1,
-    containScroll: false,
+    containScroll: "trimSnaps",
     skipSnaps: false
   });
 
@@ -127,14 +117,13 @@ const GamingCarousel = ({
   // Force re-mount handled by key prop on embla container
 
   const handleCardClick = useCallback((index: number, part: Part) => {
-    const realIndex = index % filteredParts.length;
     if (index === selectedIndex) {
       setSelectedPart(part);
       setShowQuickView(true);
     } else {
       emblaApi?.scrollTo(index);
     }
-  }, [emblaApi, selectedIndex, filteredParts.length]);
+  }, [emblaApi, selectedIndex]);
 
   const handleQuickView = useCallback((part: Part) => {
     setSelectedPart(part);
@@ -219,9 +208,9 @@ const GamingCarousel = ({
       ) : (
         <>
           {/* Navigation Arrows - hidden for single product */}
-          {filteredParts.length > 1 && (
+          {filteredParts.length > 3 && (
           <motion.button 
-            onClick={scrollPrev} 
+            onClick={scrollPrev}
             className="absolute left-4 md:left-8 lg:left-10 top-1/2 -translate-y-1/2 z-20"
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.95 }} 
@@ -243,9 +232,9 @@ const GamingCarousel = ({
           )}
 
           {/* Navigation Arrow Right */}
-          {filteredParts.length > 1 && (
+          {filteredParts.length > 3 && (
           <motion.button
-            onClick={scrollNext} 
+            onClick={scrollNext}
             className="absolute right-4 md:right-8 lg:right-10 top-1/2 -translate-y-1/2 z-20" 
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.95 }} 
@@ -267,27 +256,26 @@ const GamingCarousel = ({
           )}
 
           {/* Carousel */}
-          <div className="py-20 md:py-20 lg:py-24 px-5 md:px-10 lg:px-20 overflow-hidden">
+          <div className="py-28 px-5 md:px-10 lg:px-20 overflow-hidden min-h-[500px]">
             <div 
               className="overflow-hidden"
               ref={emblaRef}
               key={`${activeCategory}-${filteredParts.length}`}
             >
               <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
-                {displayParts.map((part, index) => {
+                {filteredParts.map((part, index) => {
                   const distanceFromCenter = Math.abs(index - selectedIndex);
-                  const wrappedDistance = Math.min(distanceFromCenter, displayParts.length - distanceFromCenter);
                   
                   return (
                     <div 
-                      key={`${part.id}-${index}`} 
+                      key={part.id}
                       className="flex-shrink-0 transition-all duration-[600ms] ease-out" 
                       style={{ width: getCardWidth() }}
                     >
                       <GamingCarouselCard 
                         part={part} 
-                        isCenter={wrappedDistance === 0} 
-                        distanceFromCenter={wrappedDistance} 
+                        isCenter={distanceFromCenter === 0} 
+                        distanceFromCenter={distanceFromCenter}
                         index={index}
                         onCardClick={handleCardClick}
                         onQuickView={() => handleQuickView(part)}
