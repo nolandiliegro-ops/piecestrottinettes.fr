@@ -75,6 +75,14 @@ const GamingCarousel = ({
   }, [parts, activeCategory]);
   
   const shouldLoop = filteredParts.length > 1;
+
+  // Virtual loop: duplicate slides when too few to fill viewport
+  const displayParts = useMemo(() => {
+    if (filteredParts.length > 0 && filteredParts.length < 8) {
+      return [...filteredParts, ...filteredParts];
+    }
+    return filteredParts;
+  }, [filteredParts]);
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: shouldLoop,
@@ -119,13 +127,14 @@ const GamingCarousel = ({
   // Force re-mount handled by key prop on embla container
 
   const handleCardClick = useCallback((index: number, part: Part) => {
+    const realIndex = index % filteredParts.length;
     if (index === selectedIndex) {
       setSelectedPart(part);
       setShowQuickView(true);
     } else {
       emblaApi?.scrollTo(index);
     }
-  }, [emblaApi, selectedIndex]);
+  }, [emblaApi, selectedIndex, filteredParts.length]);
 
   const handleQuickView = useCallback((part: Part) => {
     setSelectedPart(part);
@@ -160,7 +169,7 @@ const GamingCarousel = ({
 
   return (
     <div 
-      className="relative w-full gaming-carousel-container" 
+      className="relative w-full overflow-hidden gaming-carousel-container" 
       style={{
         background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%)",
       }}
@@ -258,21 +267,20 @@ const GamingCarousel = ({
           )}
 
           {/* Carousel */}
-          <div className="py-12 md:py-14 lg:py-16 px-5 md:px-10 lg:px-20" style={{ overflow: "visible" }}>
+          <div className="py-20 md:py-20 lg:py-24 px-5 md:px-10 lg:px-20 overflow-hidden">
             <div 
               className="overflow-hidden"
-              style={{ overflowY: "visible" }}
               ref={emblaRef}
               key={`${activeCategory}-${filteredParts.length}`}
             >
               <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
-                {filteredParts.map((part, index) => {
+                {displayParts.map((part, index) => {
                   const distanceFromCenter = Math.abs(index - selectedIndex);
-                  const wrappedDistance = Math.min(distanceFromCenter, filteredParts.length - distanceFromCenter);
+                  const wrappedDistance = Math.min(distanceFromCenter, displayParts.length - distanceFromCenter);
                   
                   return (
                     <div 
-                      key={part.id} 
+                      key={`${part.id}-${index}`} 
                       className="flex-shrink-0 transition-all duration-[600ms] ease-out" 
                       style={{ width: getCardWidth() }}
                     >
