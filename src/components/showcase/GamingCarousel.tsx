@@ -41,15 +41,15 @@ const GamingCarouselSkeleton = () => (
       minHeight: "600px"
     }}
   >
-    <div className="flex items-center justify-center gap-6 md:gap-8 px-5 md:px-10 lg:px-20">
-      {[0.9, 1, 1.15, 1, 0.9].map((scale, i) => (
+    <div className="flex items-start gap-6 md:gap-8 pl-5 md:pl-10 lg:pl-20">
+      {[1, 0.9, 0.8, 0.7, 0.6].map((op, i) => (
         <Skeleton 
           key={i} 
           className="rounded-3xl bg-white/30 flex-shrink-0" 
           style={{
-            width: scale >= 1.1 ? "320px" : scale === 1 ? "280px" : "260px",
-            height: scale >= 1.1 ? "420px" : "380px",
-            opacity: scale >= 1.1 ? 1 : scale === 1 ? 0.8 : 0.6
+            width: "280px",
+            height: "380px",
+            opacity: op
           }} 
         />
       ))}
@@ -70,9 +70,9 @@ const GamingCarousel = ({
   
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    align: "center",
+    align: "start",
     slidesToScroll: 1,
-    containScroll: false,
+    containScroll: "trimSnaps",
     skipSnaps: false
   });
 
@@ -159,12 +159,7 @@ const GamingCarousel = ({
     );
   }
 
-  const getCardWidth = (distance: number) => {
-    if (distance === 0) return "320px";
-    if (distance === 1) return "280px";
-    if (distance === 2) return "260px";
-    return "240px";
-  };
+  const getCardWidth = () => "280px";
 
   return (
     <div 
@@ -265,11 +260,10 @@ const GamingCarousel = ({
           {/* Carousel */}
           <div className="py-6 md:py-8 lg:py-10 px-5 md:px-10 lg:px-20">
             <div 
-              className="overflow-visible" 
-              ref={emblaRef} 
-              style={{ clipPath: "inset(-100px 0)" }}
+              className="overflow-hidden" 
+              ref={emblaRef}
             >
-              <div className="flex gap-6 md:gap-8 lg:gap-10 items-center">
+              <div className="flex gap-6 md:gap-8 lg:gap-10 items-center pl-5 md:pl-10 lg:pl-20">
                 {filteredParts.map((part, index) => {
                   const distanceFromCenter = Math.abs(index - selectedIndex);
                   const wrappedDistance = Math.min(distanceFromCenter, filteredParts.length - distanceFromCenter);
@@ -278,7 +272,7 @@ const GamingCarousel = ({
                     <div 
                       key={part.id} 
                       className="flex-shrink-0 transition-all duration-[600ms] ease-out" 
-                      style={{ width: getCardWidth(wrappedDistance) }}
+                      style={{ width: getCardWidth() }}
                     >
                       <GamingCarouselCard 
                         part={part} 
