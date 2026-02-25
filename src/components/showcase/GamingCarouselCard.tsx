@@ -173,8 +173,9 @@ const GamingCarouselCard = ({
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
       onClick={handleCardClick}
-      onMouseEnter={() => isCenter && setIsHovered(true)}
+      onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      whileHover={{ scale: isCenter ? undefined : 1.05 }}
       className={`relative cursor-pointer ${isCenter ? "z-10" : ""}`}
     >
       {/* Glassmorphism Card */}
