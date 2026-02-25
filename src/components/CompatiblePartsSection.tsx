@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Sparkles, ShieldCheck } from "lucide-react";
-import GamingCarousel from "./showcase/GamingCarousel";
+import StudioProductCarousel from "./showcase/StudioProductCarousel";
 import { useCompatibleParts, useCompatiblePartsCount } from "@/hooks/useScooterData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { cn } from "@/lib/utils";
@@ -157,7 +157,7 @@ const CompatiblePartsSection = ({
       </motion.div>
 
       {/* Gaming Carousel - Full Width */}
-      <GamingCarousel 
+      <StudioProductCarousel 
         parts={parts}
         activeModelName={activeModelName}
         activeBrandSlug={activeBrandSlug}
