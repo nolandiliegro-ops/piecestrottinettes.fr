@@ -1,33 +1,80 @@
+# Corrections finales du GamingCarousel — startIndex au centre, clipping, action bar, animation
+
+## Fichier modifie : `src/components/showcase/GamingCarousel.tsx`
+
+### 1. startIndex au milieu de la liste
+
+Ajouter le calcul du `startIndex` dans la config Embla et synchroniser `selectedIndex` :
+
+```ts
+const startIdx = Math.floor(filteredParts.length / 2);
+
+const [emblaRef, emblaApi] = useEmblaCarousel({
+  loop: false,
+  align: "center",
+  containScroll: false,
+  slidesToScroll: 1,
+  skipSnaps: false,
+  startIndex: startIdx,
+});
+```
+
+Ajouter un `useEffect` pour synchroniser `selectedIndex` quand `filteredParts` change :
+
+```ts
+useEffect(() => {
+  setSelectedIndex(Math.floor(filteredParts.length / 2));
+}, [filteredParts.length]);
+```
+
+Mettre a jour `handleCategoryChange` pour scroller vers le milieu de la nouvelle liste filtree (la `key` dynamique force deja le re-mount, donc le `startIndex` sera reapplique).
+
+### 2. Fix clipping & scrollbar
+
+- Container carousel (ligne 259) : changer `py-32 min-h-[500px]` en `py-40 min-h-[450px] md:min-h-[650px]`
+- Container parent (ligne 160-161) : remplacer `overflow-hidden` par `overflow-x-hidden` via style inline `overflowX: 'hidden'` pour bloquer la scrollbar horizontale tout en laissant Y libre
+- Viewport Embla (ligne 261) : garder `overflow-visible` pour que le zoom et les badges respirent
+
+### 3. Action bar : meilleur espacement
+
+Dans `GamingCarouselCard.tsx`, la barre flottante d'actions (coeur, oeil, panier) est a `bottom-4` — la remonter a `bottom-6` pour la separer du bouton "Commander Direct" qui apparait sous la carte. Cela evite le chevauchement.
+
+### 4. Animation fade-in sur changement de categorie
+
+Envelopper le contenu carousel dans un `motion.div` avec `AnimatePresence` et une `key` liee au filtre actif, pour creer un fade-in/fade-out fluide lors du changement de categorie :
+
+```tsx
+<AnimatePresence mode="wait">
+  <motion.div
+    key={`carousel-${activeCategory}`}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.3 }}
+  >
+    {/* carousel content */}
+  </motion.div>
+</AnimatePresence>
+```
+
+## Fichier modifie : `src/components/showcase/GamingCarouselCard.tsx`
+
+### Action bar repositionnement
+
+- Ligne 235 : changer `bottom-4` en `bottom-6` pour espacer la barre flottante du bouton "Commander Direct"
+
+## Resume des changements
 
 
-# Simplification du carrousel — Zéro doublon, containScroll trimSnaps, fix clipping
+| Fichier                  | Changement                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GamingCarousel.tsx`     | `startIndex: Math.floor(filteredParts.length / 2)`, useEffect sync selectedIndex, `py-40 min-h-[450px] md:min-h-[650px]`, `overflowX: 'hidden'` sur parent, AnimatePresence fade-in sur changement de categorie S'assurer que le `py-40` est bien appliqué sur le container qui a l'ID ou la ref embla pour que le clipping disparaisse totalement en haut et en bas. |
+| `GamingCarouselCard.tsx` | Action bar `bottom-4` → `bottom-6` Ajouter `nopin="nopin"` sur les balises `img` pour bloquer le bouton Pinterest.- Remonter la barre d'actions à `bottom-8` (au lieu de `bottom-6`) pour une séparation encore plus nette avec le bouton 'Commander Direct'.                                                                                                        |
 
-## Modifications sur `src/components/showcase/GamingCarousel.tsx`
 
-### 1. Suppression du virtual loop
-- Supprimer le `useMemo` de `displayParts` (lignes 79-85)
-- Remplacer toutes les références à `displayParts` par `filteredParts` dans le mapping des slides et le calcul de `wrappedDistance`
-- Remettre les keys à `part.id` (plus besoin de `-${index}` sans doublons)
-- Supprimer `const realIndex = index % filteredParts.length` dans `handleCardClick` (plus nécessaire)
+## Ce qui ne change pas
 
-### 2. Embla : loop false + containScroll trimSnaps
-- `loop: false` (au lieu de `shouldLoop`)
-- `containScroll: "trimSnaps"` (au lieu de `false`) — cela colle proprement aux bords en début/fin de liste, éliminant le vide à gauche
-- `align: "center"` reste inchangé
-- La variable `shouldLoop` peut être supprimée
-
-### 3. Fix du clipping — padding généreux
-- Container du carousel (ligne 270) : passer de `py-20 md:py-20 lg:py-24` à `py-28` pour donner largement l'espace au scale 1.15x
-- Ajouter `min-h-[500px]` sur ce même container pour garantir la hauteur minimum
-- Garder `overflow-hidden` sur le container pour zéro scrollbar
-
-### 4. Flèches visibles seulement si > 3 produits
-- Changer la condition d'affichage des flèches de `filteredParts.length > 1` à `filteredParts.length > 3`
-- Les dots et le counter restent visibles dès `> 1`
-
-### Fichier modifié
-- `src/components/showcase/GamingCarousel.tsx`
-
-### Aucun changement sur
-- `GamingCarouselCard.tsx`, `QuickViewModal`, filtres, interactions
-
+- Config Embla : `loop: false`, `align: "center"`, `containScroll: false`
+- Design glassmorphism, CategoryBadge, QuickViewModal
+- Logique clic lateral = centrer, clic central = modale
+- Dots et counter bases sur `filteredParts`                                                
