@@ -212,6 +212,8 @@ const GamingCarouselCard = ({
               <motion.img
                 src={part.image_url}
                 alt={part.name}
+                // @ts-ignore
+                nopin="nopin"
                 className="w-full h-full object-contain"
                 whileHover={{ scale: isCenter ? 1.05 : 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -232,7 +234,7 @@ const GamingCarouselCard = ({
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.95 }}
                 transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
               >
                 <div 
                   className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl"
