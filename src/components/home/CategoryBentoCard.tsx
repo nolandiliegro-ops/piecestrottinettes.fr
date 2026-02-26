@@ -29,7 +29,7 @@ interface CategoryBentoCardProps {
 // Icon mapping by slug
 const iconMap: Record<string, LucideIcon> = {
   pneus: Disc,
-  freinage: Disc,
+  "disques-plaquettes": Disc,
   moteurs: Cog,
   batteries: Battery,
   controleurs: Cpu,

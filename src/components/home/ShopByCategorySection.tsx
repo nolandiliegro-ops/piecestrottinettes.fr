@@ -9,7 +9,7 @@ const LARGE_CATEGORIES = ["pneus", "lumieres"];
 // Define the display order for the bento grid
 const CATEGORY_ORDER = [
   "pneus",      // Large - Row 1
-  "freinage",   // Row 1 (fallback if no pneus)
+  "disques-plaquettes",   // Row 1 (fallback if no pneus)
   "batteries",  // Row 1
   "chargeurs",  // Row 2
   "lumieres",   // Large - Row 2

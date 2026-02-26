@@ -15,7 +15,9 @@ interface CategoryConfig {
 }
 
 const categoryConfig: Record<string, CategoryConfig> = {
-  'Freinage': { icon: Disc, color: '#D50000' },
+  'Disques & Plaquettes': { icon: Disc, color: '#D50000' },
+  'Disques': { icon: Disc, color: '#D50000' },
+  'Plaquettes': { icon: Disc, color: '#D50000' },
   'Pneus': { icon: CircleDot, color: '#37474F' },
   'Chambres à Air': { icon: Circle, color: '#40C4FF' },
   'Chargeurs': { icon: PlugZap, color: '#2962FF' },
