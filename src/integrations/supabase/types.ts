@@ -470,6 +470,66 @@ export type Database = {
         }
         Relationships: []
       }
+      scan_validations: {
+        Row: {
+          ai_brand: string
+          ai_confidence: string | null
+          ai_model: string
+          corrected_model_id: string | null
+          corrected_text: string | null
+          created_at: string
+          id: string
+          image_url: string | null
+          is_validated: boolean | null
+          matched_model_id: string | null
+          user_id: string | null
+          validated_at: string | null
+        }
+        Insert: {
+          ai_brand: string
+          ai_confidence?: string | null
+          ai_model: string
+          corrected_model_id?: string | null
+          corrected_text?: string | null
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          is_validated?: boolean | null
+          matched_model_id?: string | null
+          user_id?: string | null
+          validated_at?: string | null
+        }
+        Update: {
+          ai_brand?: string
+          ai_confidence?: string | null
+          ai_model?: string
+          corrected_model_id?: string | null
+          corrected_text?: string | null
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          is_validated?: boolean | null
+          matched_model_id?: string | null
+          user_id?: string | null
+          validated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scan_validations_corrected_model_id_fkey"
+            columns: ["corrected_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "scan_validations_matched_model_id_fkey"
+            columns: ["matched_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       scooter_battery_configs: {
         Row: {
           amperage: number

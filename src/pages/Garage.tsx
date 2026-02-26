@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -66,6 +66,7 @@ const calculateScooterStats = (scooter: any) => {
 
 const Garage = () => {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
@@ -90,9 +91,23 @@ const Garage = () => {
 
   useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
-      setSelectedScooter(scooters[0]);
+      const scanModelSlug = searchParams.get("scan_model");
+      if (scanModelSlug) {
+        // Find the scooter matching the scan result
+        const match = scooters.find((s: any) => s.scooter_model?.slug === scanModelSlug);
+        if (match) {
+          setSelectedScooter(match);
+        } else {
+          setSelectedScooter(scooters[0]);
+        }
+        // Clean up the URL
+        searchParams.delete("scan_model");
+        setSearchParams(searchParams, { replace: true });
+      } else {
+        setSelectedScooter(scooters[0]);
+      }
     }
-  }, [scooters, selectedScooter]);
+  }, [scooters, selectedScooter, searchParams, setSearchParams]);
 
   if (authLoading) {
     return (
