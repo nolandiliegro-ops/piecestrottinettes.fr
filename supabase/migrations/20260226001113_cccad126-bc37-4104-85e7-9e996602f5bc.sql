@@ -1,0 +1,1 @@
+UPDATE categories SET name = 'Disques & Plaquettes', slug = 'disques-plaquettes' WHERE id = 'f12a97fe-e9af-40d0-934c-25afba8a97d9';
