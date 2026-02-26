@@ -31,7 +31,7 @@ interface GamingCarouselProps {
   isLoading?: boolean;
 }
 
-const CATEGORIES = ["Tous", "Freinage", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
+const CATEGORIES = ["Tous", "Disques & Plaquettes", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
 
 const GamingCarouselSkeleton = () => (
   <div 
@@ -71,6 +71,13 @@ const GamingCarousel = ({
   // Filter parts by category (must be before embla init for startIndex)
   const filteredParts = useMemo(() => {
     if (activeCategory === "Tous") return parts;
+    if (activeCategory === "Disques & Plaquettes") {
+      return parts.filter(p => 
+        p.category?.name === "Disques" || 
+        p.category?.name === "Plaquettes" || 
+        p.category?.name === "Disques & Plaquettes"
+      );
+    }
     return parts.filter(p => p.category?.name === activeCategory);
   }, [parts, activeCategory]);
 

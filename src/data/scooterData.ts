@@ -146,7 +146,7 @@ export const scooterModels: ScooterModel[] = [
 export const categories: Category[] = [
   { id: "pneus", name: "Pneus", productCount: 156, icon: "🔘" },
   { id: "chambres-air", name: "Chambres à Air", productCount: 89, icon: "⭕" },
-  { id: "freinage", name: "Freinage", productCount: 124, icon: "🛑" },
+  { id: "disques-plaquettes", name: "Disques & Plaquettes", productCount: 124, icon: "🛑" },
   { id: "chargeurs", name: "Chargeurs", productCount: 78, icon: "🔌" },
   { id: "batteries", name: "Batteries", productCount: 45, icon: "🔋" },
   { id: "accessoires", name: "Accessoires", productCount: 234, icon: "🎒" },

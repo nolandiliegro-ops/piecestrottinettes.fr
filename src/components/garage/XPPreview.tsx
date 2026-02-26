@@ -10,7 +10,7 @@ interface XPPreviewProps {
 // Category multipliers matching the RPC function
 const CATEGORY_MULTIPLIERS: Record<string, number> = {
   'Batteries': 2.0,
-  'Freinage': 1.5,
+  'Disques & Plaquettes': 1.5,
   'Pneus': 1.3,
   'Chambres à Air': 1.2,
 };

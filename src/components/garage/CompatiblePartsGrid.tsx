@@ -26,7 +26,7 @@ interface CompatiblePartsGridProps {
   loading: boolean;
 }
 
-const categories = ["Tous", "Freinage", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
+const categories = ["Tous", "Disques & Plaquettes", "Pneus", "Chambres à Air", "Batteries", "Chargeurs", "Accessoires"];
 
 const CompatiblePartsGrid = ({ 
   scooterId, 
@@ -54,7 +54,15 @@ const CompatiblePartsGrid = ({
     
     // Filter by category
     if (activeFilter !== "Tous") {
-      result = result.filter(part => part.category.name === activeFilter);
+      if (activeFilter === "Disques & Plaquettes") {
+        result = result.filter(part => 
+          part.category.name === "Disques" || 
+          part.category.name === "Plaquettes" || 
+          part.category.name === "Disques & Plaquettes"
+        );
+      } else {
+        result = result.filter(part => part.category.name === activeFilter);
+      }
     }
     
     // Sort

@@ -32,7 +32,7 @@ interface CategoryBentoGridProps {
 const iconMap: Record<string, LucideIcon> = {
   pneus: Disc,
   "chambres-air": CircleDot,
-  freinage: Octagon,
+  "disques-plaquettes": Octagon,
   chargeurs: Plug,
   batteries: Battery,
   accessoires: Backpack,
