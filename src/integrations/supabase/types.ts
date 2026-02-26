@@ -521,9 +521,11 @@ export type Database = {
           name: string
           power_watts: number | null
           range_km: number | null
+          search_terms: string | null
           slug: string
           tire_size: string | null
           voltage: number | null
+          year: number | null
           youtube_video_id: string | null
         }
         Insert: {
@@ -541,9 +543,11 @@ export type Database = {
           name: string
           power_watts?: number | null
           range_km?: number | null
+          search_terms?: string | null
           slug: string
           tire_size?: string | null
           voltage?: number | null
+          year?: number | null
           youtube_video_id?: string | null
         }
         Update: {
@@ -561,9 +565,11 @@ export type Database = {
           name?: string
           power_watts?: number | null
           range_km?: number | null
+          search_terms?: string | null
           slug?: string
           tire_size?: string | null
           voltage?: number | null
+          year?: number | null
           youtube_video_id?: string | null
         }
         Relationships: [
@@ -714,6 +720,8 @@ export type Database = {
         }
         Returns: boolean
       }
+      show_limit: { Args: never; Returns: number }
+      show_trgm: { Args: { "": string }; Returns: string[] }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
