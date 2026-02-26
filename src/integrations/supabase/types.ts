@@ -720,6 +720,16 @@ export type Database = {
         }
         Returns: boolean
       }
+      search_scooter_fuzzy: {
+        Args: { search_query: string }
+        Returns: {
+          brand_name: string
+          id: string
+          name: string
+          similarity: number
+          slug: string
+        }[]
+      }
       show_limit: { Args: never; Returns: number }
       show_trgm: { Args: { "": string }; Returns: string[] }
     }

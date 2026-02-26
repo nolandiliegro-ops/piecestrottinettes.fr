@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,8 +8,9 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon } from 'lucide-react';
+import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp } from 'lucide-react';
 import { toast } from 'sonner';
+import Papa from 'papaparse';
 
 interface Scooter {
   id: string;
@@ -27,6 +28,8 @@ interface Scooter {
   meta_title: string | null;
   meta_description: string | null;
   affiliate_link: string | null;
+  year: number | null;
+  search_terms: string | null;
   brand: { name: string } | null;
   brand_id: string;
 }
@@ -57,38 +60,28 @@ const ScootersManager = () => {
   const [deleting, setDeleting] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [brandFilter, setBrandFilter] = useState<string>('all');
+  const [importing, setImporting] = useState(false);
+  const csvInputRef = useRef<HTMLInputElement>(null);
+
+  // Quick Add state
+  const [quickName, setQuickName] = useState('');
+  const [quickBrandId, setQuickBrandId] = useState('');
+  const [quickYear, setQuickYear] = useState('');
+  const [quickAdding, setQuickAdding] = useState(false);
 
   const [newScooter, setNewScooter] = useState({
-    name: '',
-    brand_id: '',
-    power_watts: '',
-    voltage: '',
-    amperage: '',
-    max_speed_kmh: '',
-    range_km: '',
-    tire_size: '',
-    youtube_video_id: '',
-    description: '',
-    meta_title: '',
-    meta_description: '',
-    affiliate_link: ''
+    name: '', brand_id: '', power_watts: '', voltage: '', amperage: '',
+    max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '',
+    description: '', meta_title: '', meta_description: '', affiliate_link: '',
+    year: '', search_terms: ''
   });
 
   const [editScooter, setEditScooter] = useState<Scooter | null>(null);
   const [editValues, setEditValues] = useState({
-    name: '',
-    brand_id: '',
-    power_watts: '',
-    voltage: '',
-    amperage: '',
-    max_speed_kmh: '',
-    range_km: '',
-    tire_size: '',
-    youtube_video_id: '',
-    description: '',
-    meta_title: '',
-    meta_description: '',
-    affiliate_link: ''
+    name: '', brand_id: '', power_watts: '', voltage: '', amperage: '',
+    max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '',
+    description: '', meta_title: '', meta_description: '', affiliate_link: '',
+    year: '', search_terms: ''
   });
 
   useEffect(() => {
@@ -110,11 +103,10 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
         .order('name');
-
       if (error) throw error;
-      setScooters(data || []);
+      setScooters((data as any) || []);
     } catch (error) {
       console.error('Error fetching scooters:', error);
       toast.error('Erreur lors du chargement');
@@ -123,21 +115,137 @@ const ScootersManager = () => {
     }
   };
 
-  const createScooter = async () => {
-    if (!newScooter.name.trim() || !newScooter.brand_id) {
+  // ===== QUICK ADD =====
+  const quickAdd = async () => {
+    if (!quickName.trim() || !quickBrandId) {
       toast.error('Nom et marque requis');
       return;
     }
+    setQuickAdding(true);
+    try {
+      const slug = slugify(quickName);
+      const { data, error } = await supabase
+        .from('scooter_models')
+        .insert({
+          name: quickName.trim(), slug, brand_id: quickBrandId,
+          year: quickYear ? parseInt(quickYear) : null
+        })
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .single();
+      if (error) throw error;
+      setScooters(prev => [...prev, data as any]);
+      setQuickName(''); setQuickYear('');
+      toast.success(`${quickName} ajoutée !`);
+    } catch (error) {
+      console.error('Error quick adding:', error);
+      toast.error('Erreur lors de l\'ajout');
+    } finally {
+      setQuickAdding(false);
+    }
+  };
 
+  // ===== CSV IMPORT =====
+  const handleCSVImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImporting(true);
+
+    Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+      complete: async (results) => {
+        try {
+          const rows = results.data as Record<string, string>[];
+          let created = 0;
+          let brandsCreated = 0;
+          const brandMap = new Map(brands.map(b => [b.name.toLowerCase(), b.id]));
+
+          for (const row of rows) {
+            const name = (row['Nom'] || row['name'] || '').trim();
+            const brandName = (row['Marque'] || row['brand'] || '').trim();
+            if (!name || !brandName) continue;
+
+            // Find or create brand
+            let brandId = brandMap.get(brandName.toLowerCase());
+            if (!brandId) {
+              const { data: newBrand, error: brandErr } = await supabase
+                .from('brands')
+                .insert({ name: brandName, slug: slugify(brandName) })
+                .select('id, name')
+                .single();
+              if (brandErr) { console.error('Brand error:', brandErr); continue; }
+              brandId = newBrand.id;
+              brandMap.set(brandName.toLowerCase(), brandId);
+              brandsCreated++;
+            }
+
+            const slug = slugify(name);
+            const { error } = await supabase.from('scooter_models').insert({
+              name, slug, brand_id: brandId,
+              year: row['Annee'] || row['year'] ? parseInt(row['Annee'] || row['year']) : null,
+              power_watts: row['Puissance'] || row['power_watts'] ? parseInt(row['Puissance'] || row['power_watts']) : null,
+              voltage: row['Voltage'] || row['voltage'] ? parseInt(row['Voltage'] || row['voltage']) : null,
+              amperage: row['Amperage'] || row['amperage'] ? parseInt(row['Amperage'] || row['amperage']) : null,
+              max_speed_kmh: row['Vitesse Max'] || row['max_speed_kmh'] ? parseInt(row['Vitesse Max'] || row['max_speed_kmh']) : null,
+              range_km: row['Autonomie'] || row['range_km'] ? parseInt(row['Autonomie'] || row['range_km']) : null,
+              tire_size: (row['Pneus'] || row['tire_size'] || '').trim() || null,
+              search_terms: (row['Alias'] || row['search_terms'] || '').trim() || null,
+              description: (row['Description'] || row['description'] || '').trim() || null,
+            });
+            if (!error) created++;
+          }
+
+          toast.success(`${created} trottinette(s) importée(s)${brandsCreated > 0 ? `, ${brandsCreated} marque(s) créée(s)` : ''}`);
+          fetchScooters();
+          fetchBrands();
+        } catch (err) {
+          console.error('Import error:', err);
+          toast.error('Erreur lors de l\'import');
+        } finally {
+          setImporting(false);
+          if (csvInputRef.current) csvInputRef.current.value = '';
+        }
+      },
+      error: () => {
+        toast.error('Fichier CSV invalide');
+        setImporting(false);
+      }
+    });
+  };
+
+  // ===== DUPLICATE =====
+  const duplicateScooter = async (scooter: Scooter) => {
+    try {
+      const newName = `${scooter.name} (copie)`;
+      const slug = slugify(newName);
+      const { data, error } = await supabase
+        .from('scooter_models')
+        .insert({
+          name: newName, slug, brand_id: scooter.brand_id,
+          power_watts: scooter.power_watts, voltage: scooter.voltage, amperage: scooter.amperage,
+          max_speed_kmh: scooter.max_speed_kmh, range_km: scooter.range_km,
+          tire_size: scooter.tire_size, description: scooter.description,
+        })
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .single();
+      if (error) throw error;
+      setScooters(prev => [...prev, data as any]);
+      toast.success(`"${newName}" créée — modifiez les specs !`);
+    } catch (error) {
+      console.error('Error duplicating:', error);
+      toast.error('Erreur lors de la duplication');
+    }
+  };
+
+  const createScooter = async () => {
+    if (!newScooter.name.trim() || !newScooter.brand_id) { toast.error('Nom et marque requis'); return; }
     setCreating(true);
     try {
       const slug = slugify(newScooter.name);
       const { data, error } = await supabase
         .from('scooter_models')
         .insert({
-          name: newScooter.name.trim(),
-          slug,
-          brand_id: newScooter.brand_id,
+          name: newScooter.name.trim(), slug, brand_id: newScooter.brand_id,
           power_watts: newScooter.power_watts ? parseInt(newScooter.power_watts) : null,
           voltage: newScooter.voltage ? parseInt(newScooter.voltage) : null,
           amperage: newScooter.amperage ? parseInt(newScooter.amperage) : null,
@@ -148,57 +256,47 @@ const ScootersManager = () => {
           description: newScooter.description.trim() || null,
           meta_title: newScooter.meta_title.trim() || null,
           meta_description: newScooter.meta_description.trim() || null,
-          affiliate_link: newScooter.affiliate_link.trim() || null
+          affiliate_link: newScooter.affiliate_link.trim() || null,
+          year: newScooter.year ? parseInt(newScooter.year) : null,
+          search_terms: newScooter.search_terms.trim() || null,
         })
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
         .single();
-
       if (error) throw error;
-
-      setScooters(prev => [...prev, data]);
-      setNewScooter({ name: '', brand_id: '', power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '', description: '', meta_title: '', meta_description: '', affiliate_link: '' });
+      setScooters(prev => [...prev, data as any]);
+      setNewScooter({ name: '', brand_id: '', power_watts: '', voltage: '', amperage: '', max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '', description: '', meta_title: '', meta_description: '', affiliate_link: '', year: '', search_terms: '' });
       setIsCreateOpen(false);
       toast.success('Trottinette créée');
     } catch (error) {
       console.error('Error creating scooter:', error);
       toast.error('Erreur lors de la création');
-    } finally {
-      setCreating(false);
-    }
+    } finally { setCreating(false); }
   };
 
   const startEditing = (scooter: Scooter) => {
     setEditScooter(scooter);
     setEditValues({
-      name: scooter.name,
-      brand_id: scooter.brand_id,
-      power_watts: scooter.power_watts?.toString() || '',
-      voltage: scooter.voltage?.toString() || '',
-      amperage: scooter.amperage?.toString() || '',
-      max_speed_kmh: scooter.max_speed_kmh?.toString() || '',
-      range_km: scooter.range_km?.toString() || '',
-      tire_size: scooter.tire_size || '',
-      youtube_video_id: scooter.youtube_video_id || '',
-      description: scooter.description || '',
-      meta_title: scooter.meta_title || '',
-      meta_description: scooter.meta_description || '',
-      affiliate_link: scooter.affiliate_link || ''
+      name: scooter.name, brand_id: scooter.brand_id,
+      power_watts: scooter.power_watts?.toString() || '', voltage: scooter.voltage?.toString() || '',
+      amperage: scooter.amperage?.toString() || '', max_speed_kmh: scooter.max_speed_kmh?.toString() || '',
+      range_km: scooter.range_km?.toString() || '', tire_size: scooter.tire_size || '',
+      youtube_video_id: scooter.youtube_video_id || '', description: scooter.description || '',
+      meta_title: scooter.meta_title || '', meta_description: scooter.meta_description || '',
+      affiliate_link: scooter.affiliate_link || '', year: scooter.year?.toString() || '',
+      search_terms: scooter.search_terms || '',
     });
     setIsEditOpen(true);
   };
 
   const saveEdit = async () => {
     if (!editScooter) return;
-
     setSaving(true);
     try {
       const slug = slugify(editValues.name);
       const { error } = await supabase
         .from('scooter_models')
         .update({
-          name: editValues.name.trim(),
-          slug,
-          brand_id: editValues.brand_id,
+          name: editValues.name.trim(), slug, brand_id: editValues.brand_id,
           power_watts: editValues.power_watts ? parseInt(editValues.power_watts) : null,
           voltage: editValues.voltage ? parseInt(editValues.voltage) : null,
           amperage: editValues.amperage ? parseInt(editValues.amperage) : null,
@@ -209,138 +307,68 @@ const ScootersManager = () => {
           description: editValues.description.trim() || null,
           meta_title: editValues.meta_title.trim() || null,
           meta_description: editValues.meta_description.trim() || null,
-          affiliate_link: editValues.affiliate_link.trim() || null
+          affiliate_link: editValues.affiliate_link.trim() || null,
+          year: editValues.year ? parseInt(editValues.year) : null,
+          search_terms: editValues.search_terms.trim() || null,
         })
         .eq('id', editScooter.id);
-
       if (error) throw error;
-
-      setScooters(prev => prev.map(s => 
-        s.id === editScooter.id 
-          ? { 
-              ...s, 
-              name: editValues.name.trim(),
-              slug,
-              brand_id: editValues.brand_id,
-              power_watts: editValues.power_watts ? parseInt(editValues.power_watts) : null,
-              voltage: editValues.voltage ? parseInt(editValues.voltage) : null,
-              amperage: editValues.amperage ? parseInt(editValues.amperage) : null,
-              max_speed_kmh: editValues.max_speed_kmh ? parseInt(editValues.max_speed_kmh) : null,
-              range_km: editValues.range_km ? parseInt(editValues.range_km) : null,
-              tire_size: editValues.tire_size.trim() || null,
-              youtube_video_id: editValues.youtube_video_id.trim() || null,
-              description: editValues.description.trim() || null,
-              meta_title: editValues.meta_title.trim() || null,
-              meta_description: editValues.meta_description.trim() || null,
-              affiliate_link: editValues.affiliate_link.trim() || null,
-              brand: brands.find(b => b.id === editValues.brand_id) ? { name: brands.find(b => b.id === editValues.brand_id)!.name } : null
-            }
-          : s
-      ));
-
+      await fetchScooters();
       setIsEditOpen(false);
       setEditScooter(null);
       toast.success('Trottinette modifiée');
     } catch (error) {
       console.error('Error saving scooter:', error);
       toast.error('Erreur lors de la sauvegarde');
-    } finally {
-      setSaving(false);
-    }
+    } finally { setSaving(false); }
   };
 
   const deleteScooter = async (scooter: Scooter) => {
     setDeleting(scooter.id);
     try {
-      // Delete compatibility entries
       await supabase.from('part_compatibility').delete().eq('scooter_model_id', scooter.id);
-      
-      // Delete garage entries
       await supabase.from('user_garage').delete().eq('scooter_model_id', scooter.id);
-
-      // Delete image from storage if exists
       if (scooter.image_url && scooter.image_url.includes('scooter-photos')) {
         const fileName = scooter.image_url.split('/').pop();
-        if (fileName) {
-          await supabase.storage.from('scooter-photos').remove([fileName]);
-        }
+        if (fileName) await supabase.storage.from('scooter-photos').remove([fileName]);
       }
-
-      // Delete the scooter
       const { error } = await supabase.from('scooter_models').delete().eq('id', scooter.id);
       if (error) throw error;
-
       setScooters(prev => prev.filter(s => s.id !== scooter.id));
       toast.success('Trottinette supprimée');
     } catch (error) {
       console.error('Error deleting scooter:', error);
       toast.error('Erreur lors de la suppression');
-    } finally {
-      setDeleting(null);
-    }
+    } finally { setDeleting(null); }
   };
 
   const handleImageUpload = async (scooterId: string, scooterSlug: string, file: File) => {
-    if (!file.type.startsWith('image/')) {
-      toast.error('Veuillez sélectionner une image');
-      return;
-    }
-
+    if (!file.type.startsWith('image/')) { toast.error('Veuillez sélectionner une image'); return; }
     setUploading(scooterId);
-
     try {
       const fileExt = file.name.split('.').pop();
       const fileName = `${scooterSlug}-${Date.now()}.${fileExt}`;
-
-      const { error: uploadError } = await supabase.storage
-        .from('scooter-photos')
-        .upload(fileName, file, { upsert: true });
-
+      const { error: uploadError } = await supabase.storage.from('scooter-photos').upload(fileName, file, { upsert: true });
       if (uploadError) throw uploadError;
-
-      const { data: { publicUrl } } = supabase.storage
-        .from('scooter-photos')
-        .getPublicUrl(fileName);
-
-      const { error: updateError } = await supabase
-        .from('scooter_models')
-        .update({ image_url: publicUrl })
-        .eq('id', scooterId);
-
+      const { data: { publicUrl } } = supabase.storage.from('scooter-photos').getPublicUrl(fileName);
+      const { error: updateError } = await supabase.from('scooter_models').update({ image_url: publicUrl }).eq('id', scooterId);
       if (updateError) throw updateError;
-
-      setScooters(prev => prev.map(s => 
-        s.id === scooterId ? { ...s, image_url: publicUrl } : s
-      ));
-
+      setScooters(prev => prev.map(s => s.id === scooterId ? { ...s, image_url: publicUrl } : s));
       toast.success('Image mise à jour');
     } catch (error) {
       console.error('Error uploading image:', error);
       toast.error("Erreur lors de l'upload");
-    } finally {
-      setUploading(null);
-    }
+    } finally { setUploading(null); }
   };
 
   const exportCSV = () => {
-    const headers = ['Nom', 'Slug', 'Marque', 'Puissance', 'Voltage', 'Ampérage', 'Vitesse Max', 'Autonomie', 'Pneus', 'YouTube ID', 'Description', 'Meta Title', 'Meta Description', 'Lien Affiliation'];
+    const headers = ['Nom', 'Slug', 'Marque', 'Annee', 'Puissance', 'Voltage', 'Ampérage', 'Vitesse Max', 'Autonomie', 'Pneus', 'Alias', 'YouTube ID', 'Description'];
     const rows = scooters.map(s => [
-      s.name,
-      s.slug,
-      s.brand?.name || '',
-      s.power_watts?.toString() || '',
-      s.voltage?.toString() || '',
-      s.amperage?.toString() || '',
-      s.max_speed_kmh?.toString() || '',
-      s.range_km?.toString() || '',
-      s.tire_size || '',
-      s.youtube_video_id || '',
-      s.description || '',
-      s.meta_title || '',
-      s.meta_description || '',
-      s.affiliate_link || ''
+      s.name, s.slug, s.brand?.name || '', s.year?.toString() || '',
+      s.power_watts?.toString() || '', s.voltage?.toString() || '', s.amperage?.toString() || '',
+      s.max_speed_kmh?.toString() || '', s.range_km?.toString() || '', s.tire_size || '',
+      s.search_terms || '', s.youtube_video_id || '', s.description || '',
     ]);
-
     const csv = [headers.join(','), ...rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(','))].join('\n');
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
@@ -351,12 +379,11 @@ const ScootersManager = () => {
     toast.success('Export CSV téléchargé');
   };
 
-  const getDisplayImage = (scooter: Scooter) => {
-    return scooter.image_url || '/placeholder.svg';
-  };
+  const getDisplayImage = (scooter: Scooter) => scooter.image_url || '/placeholder.svg';
 
   const filteredScooters = scooters.filter(s => {
-    const matchesSearch = s.name.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (s.search_terms || '').toLowerCase().includes(searchQuery.toLowerCase());
     const matchesBrand = brandFilter === 'all' || s.brand_id === brandFilter;
     return matchesSearch && matchesBrand;
   });
@@ -371,6 +398,36 @@ const ScootersManager = () => {
 
   return (
     <div className="space-y-4">
+      {/* Quick Add Bar */}
+      <div className="flex flex-col sm:flex-row items-end gap-2 p-3 rounded-lg border border-dashed border-primary/30 bg-primary/5">
+        <div className="flex-1 w-full">
+          <Label className="text-xs text-muted-foreground mb-1 block">Ajout rapide</Label>
+          <Input
+            placeholder="Nom du modèle (ex: Thunder 3)"
+            value={quickName}
+            onChange={(e) => setQuickName(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && quickAdd()}
+          />
+        </div>
+        <Select value={quickBrandId} onValueChange={setQuickBrandId}>
+          <SelectTrigger className="w-full sm:w-40">
+            <SelectValue placeholder="Marque" />
+          </SelectTrigger>
+          <SelectContent>
+            {brands.map((brand) => (
+              <SelectItem key={brand.id} value={brand.id}>{brand.name}</SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        <Input
+          type="number" placeholder="Année" className="w-full sm:w-24"
+          value={quickYear} onChange={(e) => setQuickYear(e.target.value)}
+        />
+        <Button onClick={quickAdd} disabled={quickAdding || !quickName.trim() || !quickBrandId} size="icon" className="bg-primary hover:bg-primary/90 shrink-0">
+          {quickAdding ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+        </Button>
+      </div>
+
       {/* Toolbar */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto">
@@ -392,6 +449,12 @@ const ScootersManager = () => {
         </div>
         
         <div className="flex items-center gap-2">
+          {/* CSV Import */}
+          <input ref={csvInputRef} type="file" accept=".csv" className="hidden" onChange={handleCSVImport} />
+          <Button variant="outline" onClick={() => csvInputRef.current?.click()} disabled={importing} className="gap-2">
+            {importing ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileUp className="w-4 h-4" />}
+            Import CSV
+          </Button>
           <Button variant="outline" onClick={exportCSV} className="gap-2">
             <Download className="w-4 h-4" />
             Export CSV
@@ -413,16 +476,27 @@ const ScootersManager = () => {
                   <Input value={newScooter.name} onChange={(e) => setNewScooter(prev => ({ ...prev, name: e.target.value }))} placeholder="Ex: Dualtron Thunder 3" />
                   {newScooter.name && <p className="text-xs text-muted-foreground">Slug: {slugify(newScooter.name)}</p>}
                 </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label>Marque *</Label>
+                    <Select value={newScooter.brand_id} onValueChange={(value) => setNewScooter(prev => ({ ...prev, brand_id: value }))}>
+                      <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
+                      <SelectContent>
+                        {brands.map((brand) => (
+                          <SelectItem key={brand.id} value={brand.id}>{brand.name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Année</Label>
+                    <Input type="number" value={newScooter.year} onChange={(e) => setNewScooter(prev => ({ ...prev, year: e.target.value }))} placeholder="2024" />
+                  </div>
+                </div>
                 <div className="space-y-2">
-                  <Label>Marque *</Label>
-                  <Select value={newScooter.brand_id} onValueChange={(value) => setNewScooter(prev => ({ ...prev, brand_id: value }))}>
-                    <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
-                    <SelectContent>
-                      {brands.map((brand) => (
-                        <SelectItem key={brand.id} value={brand.id}>{brand.name}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <Label>Alias / Noms alternatifs</Label>
+                  <Input value={newScooter.search_terms} onChange={(e) => setNewScooter(prev => ({ ...prev, search_terms: e.target.value }))} placeholder="M365, Mi Scooter, etc." />
+                  <p className="text-xs text-muted-foreground">Séparez par des virgules pour le moteur de recherche</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -471,7 +545,7 @@ const ScootersManager = () => {
       </div>
 
       <p className="text-sm text-muted-foreground">
-        {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image DB
+        {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image
       </p>
 
       {/* Table */}
@@ -482,11 +556,10 @@ const ScootersManager = () => {
               <TableHead className="w-16">Image</TableHead>
               <TableHead>Modèle</TableHead>
               <TableHead>Marque</TableHead>
+              <TableHead className="w-16">Année</TableHead>
               <TableHead className="w-20"><Zap className="w-3 h-3 inline mr-1" />W</TableHead>
               <TableHead className="w-16"><Battery className="w-3 h-3 inline mr-1" />V</TableHead>
-              <TableHead className="w-16">Ah</TableHead>
               <TableHead className="w-20"><Gauge className="w-3 h-3 inline mr-1" />km/h</TableHead>
-              <TableHead className="w-16">km</TableHead>
               <TableHead className="w-32">Actions</TableHead>
             </TableRow>
           </TableHeader>
@@ -504,34 +577,35 @@ const ScootersManager = () => {
                       )}
                       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <Input
-                          type="file"
-                          accept="image/*"
+                          type="file" accept="image/*"
                           className="absolute inset-0 opacity-0 cursor-pointer"
-                          onChange={(e) => {
-                            const file = e.target.files?.[0];
-                            if (file) handleImageUpload(scooter.id, scooter.slug, file);
-                          }}
+                          onChange={(e) => { const file = e.target.files?.[0]; if (file) handleImageUpload(scooter.id, scooter.slug, file); }}
                           disabled={uploading === scooter.id}
                         />
-                        {uploading === scooter.id ? (
-                          <Loader2 className="w-4 h-4 animate-spin text-white" />
-                        ) : (
-                          <Upload className="w-4 h-4 text-white" />
-                        )}
+                        {uploading === scooter.id ? <Loader2 className="w-4 h-4 animate-spin text-white" /> : <Upload className="w-4 h-4 text-white" />}
                       </div>
                     </div>
                   </TableCell>
-                  <TableCell className="font-medium">{scooter.name}</TableCell>
+                  <TableCell>
+                    <div>
+                      <span className="font-medium">{scooter.name}</span>
+                      {scooter.search_terms && (
+                        <p className="text-xs text-muted-foreground truncate max-w-[150px]">{scooter.search_terms}</p>
+                      )}
+                    </div>
+                  </TableCell>
                   <TableCell className="text-muted-foreground">{scooter.brand?.name || '-'}</TableCell>
+                  <TableCell className="text-muted-foreground">{scooter.year || '-'}</TableCell>
                   <TableCell className="text-primary font-medium">{scooter.power_watts || '-'}</TableCell>
                   <TableCell>{scooter.voltage || '-'}</TableCell>
-                  <TableCell>{scooter.amperage || '-'}</TableCell>
                   <TableCell>{scooter.max_speed_kmh || '-'}</TableCell>
-                  <TableCell>{scooter.range_km || '-'}</TableCell>
                   <TableCell>
                     <div className="flex items-center gap-1">
-                      <Button variant="ghost" size="icon" onClick={() => startEditing(scooter)} className="h-8 w-8">
+                      <Button variant="ghost" size="icon" onClick={() => startEditing(scooter)} className="h-8 w-8" title="Modifier">
                         <Edit className="w-4 h-4" />
+                      </Button>
+                      <Button variant="ghost" size="icon" onClick={() => duplicateScooter(scooter)} className="h-8 w-8" title="Dupliquer">
+                        <Copy className="w-4 h-4" />
                       </Button>
                       <AlertDialog>
                         <AlertDialogTrigger asChild>
@@ -543,14 +617,12 @@ const ScootersManager = () => {
                           <AlertDialogHeader>
                             <AlertDialogTitle>Supprimer "{scooter.name}" ?</AlertDialogTitle>
                             <AlertDialogDescription>
-                              Cette action supprimera la trottinette, son image, toutes les compatibilités et les entrées de garage associées. Cette action est irréversible.
+                              Cette action supprimera la trottinette, son image, toutes les compatibilités et les entrées de garage associées.
                             </AlertDialogDescription>
                           </AlertDialogHeader>
                           <AlertDialogFooter>
                             <AlertDialogCancel>Annuler</AlertDialogCancel>
-                            <AlertDialogAction onClick={() => deleteScooter(scooter)} className="bg-destructive hover:bg-destructive/90">
-                              Supprimer
-                            </AlertDialogAction>
+                            <AlertDialogAction onClick={() => deleteScooter(scooter)} className="bg-destructive hover:bg-destructive/90">Supprimer</AlertDialogAction>
                           </AlertDialogFooter>
                         </AlertDialogContent>
                       </AlertDialog>
@@ -575,16 +647,26 @@ const ScootersManager = () => {
               <Input value={editValues.name} onChange={(e) => setEditValues(prev => ({ ...prev, name: e.target.value }))} />
               {editValues.name && <p className="text-xs text-muted-foreground">Slug: {slugify(editValues.name)}</p>}
             </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label>Marque *</Label>
+                <Select value={editValues.brand_id} onValueChange={(value) => setEditValues(prev => ({ ...prev, brand_id: value }))}>
+                  <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
+                  <SelectContent>
+                    {brands.map((brand) => (
+                      <SelectItem key={brand.id} value={brand.id}>{brand.name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label>Année</Label>
+                <Input type="number" value={editValues.year} onChange={(e) => setEditValues(prev => ({ ...prev, year: e.target.value }))} placeholder="2024" />
+              </div>
+            </div>
             <div className="space-y-2">
-              <Label>Marque *</Label>
-              <Select value={editValues.brand_id} onValueChange={(value) => setEditValues(prev => ({ ...prev, brand_id: value }))}>
-                <SelectTrigger><SelectValue placeholder="Sélectionner" /></SelectTrigger>
-                <SelectContent>
-                  {brands.map((brand) => (
-                    <SelectItem key={brand.id} value={brand.id}>{brand.name}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <Label>Alias / Noms alternatifs</Label>
+              <Input value={editValues.search_terms} onChange={(e) => setEditValues(prev => ({ ...prev, search_terms: e.target.value }))} placeholder="M365, Mi Scooter, etc." />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
