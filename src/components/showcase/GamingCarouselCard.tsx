@@ -180,7 +180,7 @@ const GamingCarouselCard = ({
     >
       {/* Glassmorphism Card */}
       <div
-        className="rounded-3xl overflow-hidden transition-shadow duration-300"
+        className="rounded-3xl overflow-visible transition-shadow duration-300"
         style={{
           background: "rgba(255, 255, 255, 0.6)",
           backdropFilter: "blur(16px)",
@@ -205,7 +205,7 @@ const GamingCarouselCard = ({
           </AnimatePresence>
 
           <div 
-            className="aspect-[3/4] flex items-center justify-center p-4"
+            className="aspect-[3/4] flex items-center justify-center p-4 overflow-hidden rounded-3xl"
             style={{ background: "rgba(245, 243, 240, 0.5)" }}
           >
             {part.image_url ? (
@@ -237,7 +237,7 @@ const GamingCarouselCard = ({
                 className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 shadow-xl rounded-2xl"
               >
                 <div 
-                  className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl"
+                  className="flex items-center gap-1.5 px-2.5 py-2 rounded-2xl"
                   style={{
                     background: "rgba(255, 255, 255, 0.95)",
                     backdropFilter: "blur(20px)",
@@ -250,7 +250,7 @@ const GamingCarouselCard = ({
                     whileHover={{ scale: 1.15 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={handleToggleFavorite}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center transition-colors"
                     style={{
                       background: isFavorite(part.id) 
                         ? "rgba(239, 68, 68, 0.1)" 
@@ -271,7 +271,7 @@ const GamingCarouselCard = ({
                     whileHover={{ scale: 1.15 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={handleQuickViewClick}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center bg-carbon/5 hover:bg-carbon/10 transition-colors"
                     aria-label="Aperçu rapide"
                   >
                     <Eye className="w-4 h-4 text-carbon/60 hover:text-carbon" />
@@ -281,7 +281,7 @@ const GamingCarouselCard = ({
                     whileHover={{ scale: 1.15 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={handleAddToCart}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center bg-mineral/10 hover:bg-mineral/20 transition-colors"
                     aria-label="Ajouter au panier"
                   >
                     <ShoppingCart className="w-4 h-4 text-mineral" />
