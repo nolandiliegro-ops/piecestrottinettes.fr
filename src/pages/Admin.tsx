@@ -3,7 +3,7 @@ import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap } from 'lucide-react';
+import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap, ScanLine } from 'lucide-react';
 
 import PartsManager from '@/components/admin/PartsManager';
 import ScootersManager from '@/components/admin/ScootersManager';
@@ -12,6 +12,7 @@ import CategoriesManager from '@/components/admin/CategoriesManager';
 import BrandsManager from '@/components/admin/BrandsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
 import TutosManager from '@/components/admin/TutosManager';
+import ScansManager from '@/components/admin/ScansManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -145,6 +146,13 @@ const Admin = () => {
               <GraduationCap className="w-4 h-4" />
               Tutos
             </TabsTrigger>
+            <TabsTrigger 
+              value="scans" 
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
+            >
+              <ScanLine className="w-4 h-4" />
+              Scans
+            </TabsTrigger>
           </TabsList>
 
           {/* Parts Tab */}
@@ -256,6 +264,22 @@ const Admin = () => {
                 </div>
               </div>
               <TutosManager />
+            </div>
+          </TabsContent>
+
+          {/* Scans Tab */}
+          <TabsContent value="scans" className="mt-6">
+            <div className="rounded-xl border border-border/20 bg-card p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <ScanLine className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground">Scan Trott — Dashboard HITL</h2>
+                  <p className="text-sm text-muted-foreground">Résultats des scans, confusions et modèles manquants</p>
+                </div>
+              </div>
+              <ScansManager />
             </div>
           </TabsContent>
         </Tabs>
