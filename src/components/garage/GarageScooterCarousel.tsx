@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Wrench, ArrowRight, ImageIcon } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Wrench, ArrowRight, ImageIcon, Camera } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import ScooterPlaceholder from './ScooterPlaceholder';
 import CustomPhotoButton from './CustomPhotoButton';
-import VerticalScooterThumbnails from './VerticalScooterThumbnails';
+import HorizontalScooterStrip from './HorizontalScooterStrip';
+import DeleteScooterButton from './DeleteScooterButton';
 import ScooterIdentity from './ScooterIdentity';
 
 interface GarageScooter {
@@ -34,12 +35,11 @@ interface GarageScooter {
 interface GarageScooterCarouselProps {
   scooters: GarageScooter[];
   onScooterChange?: (scooter: GarageScooter) => void;
+  onDelete?: () => void;
   className?: string;
-  /** Mobile clean mode: hide title inside carousel (shown externally as Block 3) */
   mobileCleanMode?: boolean;
 }
 
-// Animation variants for directional slide
 const slideVariants = {
   enter: (direction: number) => ({
     x: direction > 0 ? '100%' : '-100%',
@@ -66,7 +66,7 @@ const slideTransition = {
   scale: { duration: 0.3 }
 };
 
-const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
+const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
@@ -88,32 +88,37 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
     onScooterChange?.(scooters[newIndex]);
   };
 
-  const handleDotClick = (index: number) => {
-    // Calculate optimal direction (shortest path)
-    const diff = index - currentIndex;
-    setDirection(diff >= 0 ? 1 : -1);
-    setCurrentIndex(index);
-    setShowCustomPhoto(false);
-    onScooterChange?.(scooters[index]);
+  const handleStripSelect = (scooter: GarageScooter) => {
+    const newIndex = scooters.findIndex(s => s.id === scooter.id);
+    if (newIndex !== -1) {
+      setDirection(newIndex > currentIndex ? 1 : -1);
+      setCurrentIndex(newIndex);
+      setShowCustomPhoto(false);
+      onScooterChange?.(scooter);
+    }
   };
 
-  // Reset custom photo view and image error when scooter changes
   useEffect(() => {
     setShowCustomPhoto(false);
     setImageError(false);
   }, [currentIndex]);
 
+  // Reset index when scooters change (e.g. after delete)
+  useEffect(() => {
+    if (scooters.length > 0 && currentIndex >= scooters.length) {
+      setCurrentIndex(scooters.length - 1);
+    }
+  }, [scooters.length, currentIndex]);
+
   if (!scooters || scooters.length === 0) {
     return (
-      <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
+      <div className="flex items-center justify-center h-full bg-white/40 rounded-3xl">
         <div className="text-center">
           <div className="w-16 h-16 rounded-full bg-mineral/10 mx-auto flex items-center justify-center mb-3">
             <span className="text-3xl">🛴</span>
           </div>
           <p className="text-carbon/60 font-medium text-sm">Aucune trottinette</p>
-          <p className="text-carbon/40 text-xs mt-1">
-            Ajoutez-en une depuis l'accueil
-          </p>
+          <p className="text-carbon/40 text-xs mt-1">Ajoutez-en une depuis l'accueil</p>
         </div>
       </div>
     );
@@ -121,44 +126,36 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
 
   const currentScooter = scooters[currentIndex];
   
-  // Safety check: if scooter_model is null, show fallback
   if (!currentScooter?.scooter_model) {
     return (
-      <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
+      <div className="flex items-center justify-center h-full bg-white/40 rounded-3xl">
         <div className="text-center">
           <div className="w-16 h-16 rounded-full bg-amber-100 mx-auto flex items-center justify-center mb-3">
             <span className="text-2xl">⚠️</span>
           </div>
           <p className="text-carbon/60 font-medium text-sm">Données indisponibles</p>
-          <p className="text-carbon/40 text-xs mt-1">
-            Le modèle de cette trottinette n'a pas pu être chargé
-          </p>
         </div>
       </div>
     );
   }
   
   const model = currentScooter.scooter_model;
-
   const safeBrandName = (brand: unknown) => {
     if (typeof brand === "string") return brand;
     if (brand && typeof brand === "object" && "name" in (brand as any)) return (brand as any).name as string;
     return "Unknown";
   };
-
   const brandName = safeBrandName((model as any).brand);
   const displayName = currentScooter.nickname || `${brandName} ${model.name}`;
-  
-  // Get HD image from Supabase database
   const officialImage = model.image_url || '/placeholder.svg';
   const customPhoto = currentScooter.custom_photo_url;
   const displayImage = showCustomPhoto && customPhoto ? customPhoto : officialImage;
   const hasCustomPhoto = !!customPhoto;
 
   return (
-    <div className={cn("relative h-full flex flex-col md:flex-row gap-2", className)}>
+    <div className={cn("relative flex flex-col gap-3", className)}>
       
-      {/* Scooter Name - ABOVE image container on mobile (only when NOT in cleanMode) */}
+      {/* Scooter Name - ABOVE image on mobile (only when NOT in cleanMode) */}
       {!mobileCleanMode && (
         <div className="md:hidden text-center shrink-0">
           <h2 className="font-display text-base text-carbon bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border-[0.5px] border-mineral/20 inline-block">
@@ -167,27 +164,51 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
         </div>
       )}
 
-      {/* Main Image Container - Fixed height for layout stability */}
+      {/* HERO Image Container — Ultra-Premium */}
       <div 
         className={cn(
-          "relative flex-1 bg-[#3A3A3A] border-[0.5px] border-white/10 rounded-2xl overflow-hidden shadow-xl",
-          mobileCleanMode ? "h-[300px] md:h-[400px]" : "h-[280px] md:h-[400px] lg:h-[450px]"
+          "relative rounded-3xl overflow-hidden shadow-2xl border border-white/10",
+          mobileCleanMode ? "h-[360px] md:h-[500px]" : "h-[360px] md:h-[500px] lg:h-[550px]"
         )}
-        style={{ 
-          backgroundImage: 'url(/garage-floor.png)', 
-          backgroundSize: 'cover', 
-          backgroundPosition: 'center' 
+        style={{
+          background: 'radial-gradient(ellipse 120% 80% at 50% 40%, rgba(147,181,161,0.08) 0%, rgba(58,58,58,1) 60%)',
         }}
       >
-        
-        {/* Brand Badge - Mobile Only (desktop uses ScooterIdentity) */}
+        {/* Garage floor texture */}
+        <div 
+          className="absolute inset-0 opacity-15"
+          style={{
+            backgroundImage: 'url(/garage-floor.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+
+        {/* Studio Spotlight radial overlay */}
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 60%)',
+          }}
+        />
+
+        {/* Delete Button - Top Right */}
+        <div className="absolute top-3 right-3 z-20">
+          <DeleteScooterButton
+            garageItemId={currentScooter.id}
+            modelName={`${brandName} ${model.name}`}
+            onDeleted={onDelete}
+          />
+        </div>
+
+        {/* Brand Badge - Mobile Only */}
         <div className="absolute top-3 left-3 z-10 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full border-[0.5px] border-mineral/20 shadow-sm md:hidden">
           <span className="text-xs font-semibold text-mineral uppercase tracking-wider">
             {brandName}
           </span>
         </div>
 
-        {/* Desktop Identity Block - Replaces simple badge */}
+        {/* Desktop Identity Block */}
         <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 hidden md:flex">
           <ScooterIdentity
             brandName={brandName}
@@ -197,10 +218,8 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
           />
         </div>
 
-        {/* Studio Spotlight Container */}
+        {/* Scooter Image */}
         <div className="absolute inset-0">
-
-          {/* Scooter Image with Directional Slide Animation */}
           <AnimatePresence initial={false} custom={direction} mode="wait">
             {displayImage && !imageError ? (
               <motion.img
@@ -213,7 +232,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
                 transition={slideTransition}
                 src={displayImage}
                 alt={displayName}
-                className="absolute inset-0 w-full h-full object-contain p-4 md:p-8 drop-shadow-[0_25px_50px_rgba(0,0,0,0.15)]"
+                className="absolute inset-0 w-full h-full object-contain p-6 md:p-12 drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)]"
                 onError={() => setImageError(true)}
               />
             ) : (
@@ -221,23 +240,33 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
             )}
           </AnimatePresence>
 
-          {/* Floor Reflection/Shadow - Subtle */}
+          {/* Floor shadow */}
           <div 
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-16 pointer-events-none"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-20 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse 100% 100% at center, rgba(0,0,0,0.05) 0%, transparent 70%)"
+              background: "radial-gradient(ellipse 100% 100% at center, rgba(0,0,0,0.08) 0%, transparent 70%)"
             }}
           />
         </div>
 
-        {/* Photo Controls - Bottom Left */}
-        <div className="absolute bottom-3 left-3 z-10 flex items-center gap-2">
-          <CustomPhotoButton
-            garageItemId={currentScooter.id}
-            currentPhotoUrl={customPhoto}
-          />
-          
-          {hasCustomPhoto && (
+        {/* Upload Overlay — when no custom photo */}
+        {!hasCustomPhoto && (
+          <div className="absolute bottom-3 left-3 z-10">
+            <CustomPhotoButton
+              garageItemId={currentScooter.id}
+              currentPhotoUrl={customPhoto}
+              className="!px-4 !py-2.5 !text-sm !gap-2.5 !bg-white/90 !border-mineral/40 hover:!bg-white hover:!shadow-lg"
+            />
+          </div>
+        )}
+
+        {/* Photo Controls — when custom photo exists */}
+        {hasCustomPhoto && (
+          <div className="absolute bottom-3 left-3 z-10 flex items-center gap-2">
+            <CustomPhotoButton
+              garageItemId={currentScooter.id}
+              currentPhotoUrl={customPhoto}
+            />
             <button
               onClick={() => setShowCustomPhoto(!showCustomPhoto)}
               className={cn(
@@ -250,10 +279,10 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
               <ImageIcon className="w-4 h-4" />
               <span>{showCustomPhoto ? 'Officielle' : 'Ma photo'}</span>
             </button>
-          )}
-        </div>
+          </div>
+        )}
 
-        {/* Compatible Parts Link - Bottom Right */}
+        {/* Compatible Parts Link */}
         <div className="absolute bottom-3 right-3 z-10">
           <Link 
             to={`/catalogue?scooter=${model.id}`}
@@ -268,7 +297,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
           </Link>
         </div>
 
-        {/* Navigation Arrows - z-30 to prevent overlap */}
+        {/* Navigation Arrows */}
         {scooters.length > 1 && (
           <>
             <button
@@ -287,59 +316,12 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, className, mobileCle
         )}
       </div>
 
-      {/* Vertical Thumbnails - DESKTOP ONLY */}
-      {scooters.length > 1 && (
-        <div className="hidden md:flex">
-          <VerticalScooterThumbnails
-            scooters={scooters}
-            selectedScooterId={currentScooter.id}
-            onScooterSelect={(scooter) => {
-              const newIndex = scooters.findIndex(s => s.id === scooter.id);
-              if (newIndex !== -1) {
-                setCurrentIndex(newIndex);
-                setShowCustomPhoto(false);
-                onScooterChange?.(scooter);
-              }
-            }}
-          />
-        </div>
-      )}
-      
-      {/* Horizontal Thumbnails - MOBILE ONLY */}
-      {scooters.length > 1 && (
-        <div className="flex md:hidden overflow-x-auto scrollbar-none gap-2 py-2 shrink-0">
-          {scooters.map((scooter, index) => {
-            const isSelected = scooter.id === currentScooter.id;
-            const scooterModel = scooter.scooter_model;
-            const image = scooterModel.image_url || '/placeholder.svg';
-
-            return (
-              <button
-                key={scooter.id}
-                onClick={() => handleDotClick(index)}
-                className={cn(
-                  "relative flex-shrink-0 w-16 h-14 rounded-lg overflow-hidden transition-all min-h-[44px]",
-                  "border-[0.5px] bg-white/60 backdrop-blur-sm",
-                  isSelected 
-                    ? "border-mineral shadow-md" 
-                    : "border-white/40 opacity-70"
-                )}
-              >
-                {image ? (
-                  <img src={image} alt={scooterModel.name} className="w-full h-full object-contain p-1" />
-                ) : (
-                  <span className="text-2xl flex items-center justify-center h-full">🛴</span>
-                )}
-                {scooterModel.voltage && (
-                  <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 text-[8px] px-1 py-0.5 bg-orange-100/90 text-orange-700 rounded">
-                    {scooterModel.voltage}V
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      {/* Horizontal Scooter Strip — BELOW Hero */}
+      <HorizontalScooterStrip
+        scooters={scooters}
+        selectedScooterId={currentScooter.id}
+        onScooterSelect={handleStripSelect}
+      />
     </div>
   );
 };

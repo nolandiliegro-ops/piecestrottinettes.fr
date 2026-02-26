@@ -82,6 +82,13 @@ const Garage = () => {
 
   const scooterStats = calculateScooterStats(selectedScooter);
 
+  // Handle scooter deletion — select next or clear
+  const handleScooterDeleted = () => {
+    refetchScooters();
+    // After refetch, useEffect will pick the first available scooter
+    setSelectedScooter(null);
+  };
+
   // Handle nickname change
   const handleNicknameChange = (nickname: string) => {
     if (selectedScooter?.id) {
@@ -248,6 +255,7 @@ const Garage = () => {
                       <GarageScooterCarousel 
                         scooters={scooters || []}
                         onScooterChange={setSelectedScooter}
+                        onDelete={handleScooterDeleted}
                         mobileCleanMode={true}
                       />
                     )}
@@ -299,15 +307,15 @@ const Garage = () => {
                 {/* ===== DESKTOP: 3-Column Dashboard ===== */}
                 <div className="hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
                   
-                  {/* Column 1: Scooter Carousel + Identity + Description (4/12 = 33%) */}
+                  {/* Column 1: Scooter Carousel + Identity + Description (5/12 = 42%) */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
-                    className="col-span-4 flex flex-col gap-4"
+                    className="col-span-5 flex flex-col gap-4"
                   >
                     {/* Scooter Carousel */}
-                    <div className="min-h-[350px] max-h-[450px]">
+                    <div className="min-h-[450px] max-h-[600px]">
                       {scootersLoading ? (
                         <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
                           <Loader2 className="w-8 h-8 animate-spin text-mineral" />
@@ -316,6 +324,7 @@ const Garage = () => {
                         <GarageScooterCarousel 
                           scooters={scooters || []}
                           onScooterChange={setSelectedScooter}
+                          onDelete={handleScooterDeleted}
                         />
                       )}
                     </div>
@@ -351,12 +360,12 @@ const Garage = () => {
                     )}
                   </motion.div>
 
-                  {/* Column 2: Technical Stats + Expert Tracking (5/12 = 42%) */}
+                  {/* Column 2: Technical Stats + Expert Tracking (4/12 = 33%) */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
-                    className="col-span-5 flex flex-col gap-3"
+                    className="col-span-4 flex flex-col gap-3"
                   >
                     {selectedScooter?.scooter_model && (
                       <TechnicalSpecs
