@@ -17,3 +17,6 @@ verify_jwt = false
 
 [functions.add-experience-points]
 verify_jwt = false
+
+[functions.scan-trott]
+verify_jwt = false
