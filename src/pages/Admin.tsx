@@ -3,7 +3,7 @@ import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap, ScanLine } from 'lucide-react';
+import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap, ScanLine, Palette } from 'lucide-react';
 
 import PartsManager from '@/components/admin/PartsManager';
 import ScootersManager from '@/components/admin/ScootersManager';
@@ -13,6 +13,7 @@ import BrandsManager from '@/components/admin/BrandsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
 import TutosManager from '@/components/admin/TutosManager';
 import ScansManager from '@/components/admin/ScansManager';
+import CategoryDesignManager from '@/components/admin/CategoryDesignManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
