@@ -5,7 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Loader2, ImagePlus, Check, FolderOpen } from 'lucide-react';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Loader2, ImagePlus, Check, FolderOpen, Settings2, Grid3X3 } from 'lucide-react';
 import { toast } from 'sonner';
 import imageCompression from 'browser-image-compression';
 
@@ -19,6 +20,10 @@ interface CategoryCard {
   subtitle: string | null;
   alt_text: string | null;
   seo_name: string | null;
+  object_fit: string;
+  object_position: string;
+  col_span: number;
+  row_span: number;
 }
 
 const neonColors: Record<string, string> = {
@@ -114,6 +119,7 @@ const CategoryDesignManager = () => {
   const [subtitleEdits, setSubtitleEdits] = useState<Record<string, string>>({});
   const [altEdits, setAltEdits] = useState<Record<string, string>>({});
   const [seoEdits, setSeoEdits] = useState<Record<string, string>>({});
+  const [configPanelId, setConfigPanelId] = useState<string | null>(null);
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
 
   const { data: categories, isLoading } = useQuery({
@@ -128,12 +134,21 @@ const CategoryDesignManager = () => {
 
       const { data: images, error: imgError } = await supabase
         .from('category_images')
-        .select('category_id, image_url, subtitle, alt_text, seo_name');
+        .select('category_id, image_url, subtitle, alt_text, seo_name, object_fit, object_position, col_span, row_span');
       if (imgError) throw imgError;
 
-      const imageMap: Record<string, { url: string; subtitle: string | null; alt_text: string | null; seo_name: string | null }> = {};
+      const imageMap: Record<string, { url: string; subtitle: string | null; alt_text: string | null; seo_name: string | null; object_fit: string; object_position: string; col_span: number; row_span: number }> = {};
       images?.forEach((img: any) => {
-        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, subtitle: img.subtitle, alt_text: img.alt_text, seo_name: img.seo_name };
+        if (img.category_id) imageMap[img.category_id] = {
+          url: img.image_url,
+          subtitle: img.subtitle,
+          alt_text: img.alt_text,
+          seo_name: img.seo_name,
+          object_fit: img.object_fit || 'cover',
+          object_position: img.object_position || 'center',
+          col_span: img.col_span || 1,
+          row_span: img.row_span || 1,
+        };
       });
 
       return (cats || []).map((cat: any) => ({
@@ -146,9 +161,19 @@ const CategoryDesignManager = () => {
         subtitle: imageMap[cat.id]?.subtitle || null,
         alt_text: imageMap[cat.id]?.alt_text || null,
         seo_name: imageMap[cat.id]?.seo_name || null,
+        object_fit: imageMap[cat.id]?.object_fit || 'cover',
+        object_position: imageMap[cat.id]?.object_position || 'center',
+        col_span: imageMap[cat.id]?.col_span || 1,
+        row_span: imageMap[cat.id]?.row_span || 1,
       }));
     },
+    staleTime: 0,
   });
+
+  const invalidateAll = () => {
+    queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
+    queryClient.invalidateQueries({ queryKey: ['category-images'] });
+  };
 
   const handleUpload = async (categoryId: string, file: File, cat: CategoryCard) => {
     setUploadingId(categoryId);
@@ -162,10 +187,19 @@ const CategoryDesignManager = () => {
       if (uploadError) throw uploadError;
 
       const { data: urlData } = supabase.storage.from('category-images').getPublicUrl(path);
-      await upsertCategoryImage(categoryId, urlData.publicUrl);
+      // Cache-bust the URL
+      const freshUrl = `${urlData.publicUrl}?t=${Date.now()}`;
+      
+      // Optimistic update
+      queryClient.setQueryData(['admin-category-design'], (old: CategoryCard[] | undefined) =>
+        old?.map(c => c.id === categoryId ? { ...c, image_url: freshUrl } : c)
+      );
+
+      await upsertCategoryImage(categoryId, freshUrl);
       toast.success(`Image optimisée & renommée SEO`);
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
+      invalidateAll(); // Rollback optimistic on error
     } finally {
       setUploadingId(null);
     }
@@ -180,30 +214,34 @@ const CategoryDesignManager = () => {
       const { error } = await supabase.from('category_images').insert({ category_id: categoryId, image_url: imageUrl });
       if (error) throw error;
     }
-    queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
-    queryClient.invalidateQueries({ queryKey: ['category-images'] });
+    invalidateAll();
   };
 
   const handleLibrarySelect = async (url: string) => {
     if (!libraryForId) return;
+    const freshUrl = `${url}?t=${Date.now()}`;
+    // Optimistic
+    queryClient.setQueryData(['admin-category-design'], (old: CategoryCard[] | undefined) =>
+      old?.map(c => c.id === libraryForId ? { ...c, image_url: freshUrl } : c)
+    );
     try {
-      await upsertCategoryImage(libraryForId, url);
+      await upsertCategoryImage(libraryForId, freshUrl);
       toast.success('Image mise à jour depuis la bibliothèque');
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
+      invalidateAll();
     }
     setLibraryForId(null);
   };
 
-  const saveField = async (categoryId: string, field: 'subtitle' | 'alt_text' | 'seo_name', value: string) => {
+  const saveField = async (categoryId: string, field: string, value: string | number) => {
     try {
       const { error } = await supabase
         .from('category_images')
         .update({ [field]: value })
         .eq('category_id', categoryId);
       if (error) throw error;
-      queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
-      queryClient.invalidateQueries({ queryKey: ['category-images'] });
+      invalidateAll();
       toast.success('Enregistré');
       if (field === 'subtitle') setSubtitleEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
       if (field === 'alt_text') setAltEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
@@ -213,6 +251,14 @@ const CategoryDesignManager = () => {
     }
   };
 
+  const saveCardConfig = async (categoryId: string, field: string, value: string | number) => {
+    // Optimistic update
+    queryClient.setQueryData(['admin-category-design'], (old: CategoryCard[] | undefined) =>
+      old?.map(c => c.id === categoryId ? { ...c, [field]: value } : c)
+    );
+    await saveField(categoryId, field, value);
+  };
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
@@ -220,6 +266,8 @@ const CategoryDesignManager = () => {
       </div>
     );
   }
+
+  const configCat = categories?.find(c => c.id === configPanelId);
 
   return (
     <>
@@ -235,7 +283,7 @@ const CategoryDesignManager = () => {
               key={cat.id}
               className="group relative rounded-xl border border-border/30 bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              {/* ── Live Bento Preview (1:1 mirror of CategoryBentoCard) ── */}
+              {/* ── Live Bento Preview ── */}
               <div
                 className="relative aspect-[4/3] overflow-hidden rounded-t-xl"
                 style={{
@@ -246,10 +294,17 @@ const CategoryDesignManager = () => {
                   boxShadow: `0 0 15px ${neon}15, inset 0 1px 0 hsla(0,0%,100%,0.04)`,
                 }}
               >
-                {/* Image */}
                 <div className="absolute inset-0 overflow-hidden">
                   {cat.image_url ? (
-                    <img src={cat.image_url} alt={altEdits[cat.id] ?? cat.alt_text ?? cat.name} className="w-full h-full object-cover" />
+                    <img
+                      src={cat.image_url}
+                      alt={altEdits[cat.id] ?? cat.alt_text ?? cat.name}
+                      className="w-full h-full"
+                      style={{
+                        objectFit: cat.object_fit as any,
+                        objectPosition: cat.object_position,
+                      }}
+                    />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
                       <ImagePlus className="w-10 h-10" />
@@ -257,7 +312,6 @@ const CategoryDesignManager = () => {
                   )}
                 </div>
 
-                {/* Dark gradient overlay — exact match */}
                 <div
                   className="absolute inset-0"
                   style={{
@@ -265,11 +319,9 @@ const CategoryDesignManager = () => {
                   }}
                 />
 
-                {/* Neon accent lines — exact match */}
                 <div className="absolute top-0 left-0 w-12 h-[1px] z-10 rounded-br" style={{ background: neon }} />
                 <div className="absolute top-0 left-0 h-12 w-[1px] z-10 rounded-br" style={{ background: neon }} />
 
-                {/* Content overlay — exact match */}
                 <div className="absolute inset-x-0 bottom-0 p-4 z-10 flex flex-col justify-end">
                   <span
                     className="font-montserrat text-[10px] font-bold tracking-[0.2em] uppercase mb-1"
@@ -279,17 +331,12 @@ const CategoryDesignManager = () => {
                   </span>
                   <h4
                     className="font-display uppercase text-white text-lg"
-                    style={{
-                      fontWeight: 800,
-                      letterSpacing: '0.04em',
-                      textShadow: `0 0 20px ${neon}40`,
-                    }}
+                    style={{ fontWeight: 800, letterSpacing: '0.04em', textShadow: `0 0 20px ${neon}40` }}
                   >
                     {cat.name}
                   </h4>
                 </div>
 
-                {/* Upload overlay */}
                 {isUploading && (
                   <div className="absolute inset-0 bg-background/70 backdrop-blur-sm flex items-center justify-center z-20">
                     <Loader2 className="w-8 h-8 animate-spin text-primary" />
@@ -300,6 +347,14 @@ const CategoryDesignManager = () => {
                   {cat.parts_count} pièces
                 </Badge>
 
+                {/* Grid span badge */}
+                {(cat.col_span > 1 || cat.row_span > 1) && (
+                  <Badge className="absolute top-2 right-20 bg-primary/80 text-primary-foreground backdrop-blur-sm border-none text-[10px] z-10">
+                    <Grid3X3 className="w-3 h-3 mr-1" />
+                    {cat.col_span}×{cat.row_span}
+                  </Badge>
+                )}
+
                 {cat.image_url && (
                   <div className="absolute top-2 left-2 w-5 h-5 rounded-full flex items-center justify-center z-10" style={{ background: `${neon}CC` }}>
                     <Check className="w-3 h-3 text-white" />
@@ -309,12 +364,22 @@ const CategoryDesignManager = () => {
 
               {/* Card Body */}
               <div className="p-3 space-y-2">
-                <div className="flex items-center gap-2">
-                  {cat.icon && <span className="text-base">{cat.icon}</span>}
-                  <h3 className="font-semibold text-foreground text-sm truncate">{cat.name}</h3>
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 min-w-0">
+                    {cat.icon && <span className="text-base">{cat.icon}</span>}
+                    <h3 className="font-semibold text-foreground text-sm truncate">{cat.name}</h3>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-7 w-7 p-0 shrink-0"
+                    onClick={() => setConfigPanelId(cat.id)}
+                    title="Card Configuration"
+                  >
+                    <Settings2 className="w-3.5 h-3.5" />
+                  </Button>
                 </div>
 
-                {/* Subtitle input */}
                 <FieldRow
                   placeholder={defaultLabel}
                   value={subtitleEdits[cat.id] ?? cat.subtitle ?? ''}
@@ -324,7 +389,6 @@ const CategoryDesignManager = () => {
                   label="Sous-titre"
                 />
 
-                {/* SEO Name input */}
                 <FieldRow
                   placeholder="nom-seo-fichier"
                   value={seoEdits[cat.id] ?? cat.seo_name ?? ''}
@@ -334,7 +398,6 @@ const CategoryDesignManager = () => {
                   label="Nom SEO"
                 />
 
-                {/* Alt text input */}
                 <FieldRow
                   placeholder="Texte alternatif pour Google"
                   value={altEdits[cat.id] ?? cat.alt_text ?? ''}
@@ -368,6 +431,103 @@ const CategoryDesignManager = () => {
           );
         })}
       </div>
+
+      {/* ── Card Configuration Dialog ── */}
+      <Dialog open={!!configPanelId} onOpenChange={() => setConfigPanelId(null)}>
+        <DialogContent className="max-w-md" style={{ background: 'hsl(0 0% 8%)', border: '1px solid hsl(0 0% 15%)' }}>
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-foreground">
+              <Settings2 className="w-5 h-5" />
+              Card Configuration — {configCat?.name}
+            </DialogTitle>
+          </DialogHeader>
+          {configCat && (
+            <div className="space-y-4 pt-2">
+              {/* Object Fit */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Object Fit</label>
+                <Select
+                  value={configCat.object_fit}
+                  onValueChange={(v) => saveCardConfig(configCat.id, 'object_fit', v)}
+                >
+                  <SelectTrigger className="h-9 text-sm bg-background/50 border-border/40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="cover">Cover (remplit)</SelectItem>
+                    <SelectItem value="contain">Contain (entier)</SelectItem>
+                    <SelectItem value="fill">Fill (étire)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Object Position */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Image Position</label>
+                <Select
+                  value={configCat.object_position}
+                  onValueChange={(v) => saveCardConfig(configCat.id, 'object_position', v)}
+                >
+                  <SelectTrigger className="h-9 text-sm bg-background/50 border-border/40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="center">Center</SelectItem>
+                    <SelectItem value="top">Top</SelectItem>
+                    <SelectItem value="bottom">Bottom</SelectItem>
+                    <SelectItem value="left">Left</SelectItem>
+                    <SelectItem value="right">Right</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Column Span */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Column Span</label>
+                <Select
+                  value={String(configCat.col_span)}
+                  onValueChange={(v) => saveCardConfig(configCat.id, 'col_span', parseInt(v))}
+                >
+                  <SelectTrigger className="h-9 text-sm bg-background/50 border-border/40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1">1 colonne</SelectItem>
+                    <SelectItem value="2">2 colonnes (large)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Row Span */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Row Span</label>
+                <Select
+                  value={String(configCat.row_span)}
+                  onValueChange={(v) => saveCardConfig(configCat.id, 'row_span', parseInt(v))}
+                >
+                  <SelectTrigger className="h-9 text-sm bg-background/50 border-border/40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1">1 ligne</SelectItem>
+                    <SelectItem value="2">2 lignes (tall)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Preview badge */}
+              <div className="pt-2 border-t border-border/20">
+                <p className="text-xs text-muted-foreground">
+                  Disposition : <span className="font-mono text-foreground">{configCat.col_span}×{configCat.row_span}</span> · 
+                  Fit : <span className="font-mono text-foreground">{configCat.object_fit}</span> · 
+                  Pos : <span className="font-mono text-foreground">{configCat.object_position}</span>
+                </p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
       <LibraryModal open={!!libraryForId} onClose={() => setLibraryForId(null)} onSelect={handleLibrarySelect} />
     </>
   );

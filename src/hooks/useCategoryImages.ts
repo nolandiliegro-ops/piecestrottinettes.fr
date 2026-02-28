@@ -9,6 +9,10 @@ interface CategoryImage {
   subtitle: string | null;
   alt_text: string | null;
   seo_name: string | null;
+  object_fit: string;
+  object_position: string;
+  col_span: number;
+  row_span: number;
   created_at: string;
 }
 
@@ -16,6 +20,10 @@ export interface CategoryImageData {
   image_url: string;
   subtitle: string | null;
   alt_text: string | null;
+  object_fit: string;
+  object_position: string;
+  col_span: number;
+  row_span: number;
 }
 
 export const useCategoryImages = () => {
@@ -38,11 +46,16 @@ export const useCategoryImages = () => {
             image_url: img.image_url,
             subtitle: img.subtitle,
             alt_text: img.alt_text,
+            object_fit: img.object_fit || "cover",
+            object_position: img.object_position || "center",
+            col_span: img.col_span || 1,
+            row_span: img.row_span || 1,
           };
         }
       });
 
       return imageMap;
     },
+    staleTime: 0,
   });
 };
