@@ -24,6 +24,7 @@ interface Category {
 interface CategoryBentoCardProps {
   category: Category;
   partsCount: number;
+  isHero?: boolean;
   index: number;
 }
 
@@ -62,6 +63,7 @@ const racingLabels: Record<string, string> = {
 const CategoryBentoCard = ({
   category,
   partsCount,
+  isHero = false,
   index,
 }: CategoryBentoCardProps) => {
   const { data: categoryImages = {} } = useCategoryImages();
@@ -72,14 +74,8 @@ const CategoryBentoCard = ({
   const imageUrl = imgData?.image_url;
   const altText = imgData?.alt_text || category.name;
   const subtitle = imgData?.subtitle;
-  const objectFit = imgData?.object_fit || "cover";
-  const objectPosition = imgData?.object_position || "center";
-  const colSpan = imgData?.col_span || 1;
-  const rowSpan = imgData?.row_span || 1;
   const neon = neonColors[category.slug] || "#93B5A1";
   const racingLabel = subtitle || racingLabels[category.slug] || "PREMIUM";
-
-  const isHero = colSpan >= 2 && rowSpan >= 2;
 
   return (
     <motion.div
@@ -91,10 +87,7 @@ const CategoryBentoCard = ({
         delay: index * 0.1,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
-      className={cn(
-        colSpan >= 2 && "col-span-2",
-        rowSpan >= 2 && "row-span-2",
-      )}
+      className={cn(isHero && "col-span-2 row-span-2")}
     >
       <Link to={`/catalogue?category=${category.slug}`}>
         <motion.div
@@ -133,17 +126,14 @@ const CategoryBentoCard = ({
                 <img
                   src={imageUrl}
                   alt={altText}
-                  className="w-full h-full"
-                  style={{
-                    objectFit: objectFit as any,
-                    objectPosition,
-                  }}
+                  className="w-full h-full object-cover"
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent" />
               )}
             </motion.div>
 
+            {/* Dark overlay */}
             <div
               className="absolute inset-0"
               style={{

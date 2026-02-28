@@ -181,42 +181,30 @@ export type Database = {
         Row: {
           alt_text: string | null
           category_id: string | null
-          col_span: number
           created_at: string | null
           id: string
           image_url: string
-          object_fit: string
-          object_position: string
           prompt: string | null
-          row_span: number
           seo_name: string | null
           subtitle: string | null
         }
         Insert: {
           alt_text?: string | null
           category_id?: string | null
-          col_span?: number
           created_at?: string | null
           id?: string
           image_url: string
-          object_fit?: string
-          object_position?: string
           prompt?: string | null
-          row_span?: number
           seo_name?: string | null
           subtitle?: string | null
         }
         Update: {
           alt_text?: string | null
           category_id?: string | null
-          col_span?: number
           created_at?: string | null
           id?: string
           image_url?: string
-          object_fit?: string
-          object_position?: string
           prompt?: string | null
-          row_span?: number
           seo_name?: string | null
           subtitle?: string | null
         }
