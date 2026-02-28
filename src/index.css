@@ -514,6 +514,36 @@
   }
 }
 
+/* Admin Studio Theme */
+.admin-studio {
+  --admin-bg: 0 0% 10%;
+  --admin-card: 0 0% 10%;
+  --admin-card-glass: 0 0% 100%;
+  --admin-accent: 144 20% 65%;
+  --admin-text: 0 0% 95%;
+  --admin-text-muted: 0 0% 55%;
+  --admin-border: 0 0% 18%;
+}
+
+.admin-glass-card {
+  background: hsl(0 0% 100% / 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid hsl(0 0% 100% / 0.08);
+}
+
+.admin-glass-card-active {
+  background: hsl(0 0% 100% / 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid hsl(144 20% 65% / 0.3);
+  box-shadow: 0 0 15px hsl(144 20% 65% / 0.15);
+}
+
+.admin-skeleton {
+  background: linear-gradient(90deg, hsl(0 0% 15%) 25%, hsl(0 0% 20%) 50%, hsl(0 0% 15%) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
 /* Smooth scroll global */
 html {
   scroll-behavior: smooth;
