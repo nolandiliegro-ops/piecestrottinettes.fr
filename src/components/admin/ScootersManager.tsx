@@ -10,6 +10,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
 
@@ -59,6 +60,7 @@ const slugify = (text: string) => {
 };
 
 const ScootersManager = () => {
+  const navigate = useNavigate();
   const [scooters, setScooters] = useState<Scooter[]>([]);
   const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(true);
@@ -622,6 +624,9 @@ const ScootersManager = () => {
                   <TableCell>{scooter.max_speed_kmh || '-'}</TableCell>
                   <TableCell>
                     <div className="flex items-center gap-1">
+                      <Button variant="ghost" size="icon" onClick={() => navigate(`/admin/scooter/${scooter.id}/expert`)} className="h-8 w-8 text-primary hover:text-primary" title="Expert Studio">
+                        <Cpu className="w-4 h-4" />
+                      </Button>
                       <Button variant="ghost" size="icon" onClick={() => startEditing(scooter)} className="h-8 w-8" title="Modifier">
                         <Edit className="w-4 h-4" />
                       </Button>

@@ -29,6 +29,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
+import ExpertStudio from "./pages/ExpertStudio";
 
 const queryClient = new QueryClient();
 
@@ -75,6 +76,11 @@ function App() {
             <Route path="/admin" element={
               <ProtectedRoute>
                 <Admin />
+              </ProtectedRoute>
+            } />
+            <Route path="/admin/scooter/:id/expert" element={
+              <ProtectedRoute>
+                <ExpertStudio />
               </ProtectedRoute>
             } />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
