@@ -1,10 +1,13 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Home, ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check } from 'lucide-react';
+import { Home, ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check, FolderOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+import imageCompression from 'browser-image-compression';
 import { useSiteAssets, useUpsertSiteAsset, type SiteAsset } from '@/hooks/useSiteAssets';
 import CategoryDesignManager from './CategoryDesignManager';
 
@@ -14,23 +17,99 @@ const SECTION_CONFIG: Record<string, { icon: React.ReactNode; title: string; des
   garage: { icon: <Gauge className="w-5 h-5" />, title: 'Garage', description: 'Visuels du cockpit utilisateur' },
 };
 
-const AssetCard = ({ asset }: { asset: SiteAsset }) => {
+async function compressImage(file: File): Promise<File> {
+  return imageCompression(file, {
+    maxWidthOrHeight: 1200,
+    maxSizeMB: 0.5,
+    fileType: 'image/webp',
+    useWebWorker: true,
+  });
+}
+
+// ── Library Modal ──
+const LibraryModal = ({ open, onClose, onSelect, bucket }: { open: boolean; onClose: () => void; onSelect: (url: string) => void; bucket: string }) => {
+  const [files, setFiles] = useState<{ name: string; url: string }[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    setLoading(true);
+    supabase.storage.from(bucket).list('', { limit: 100, sortBy: { column: 'created_at', order: 'desc' } })
+      .then(({ data }) => {
+        // Also list subfolders
+        const promises = (data || []).filter(f => f.id === null || !f.metadata).map(folder =>
+          supabase.storage.from(bucket).list(folder.name, { limit: 50, sortBy: { column: 'created_at', order: 'desc' } })
+            .then(({ data: subFiles }) =>
+              (subFiles || []).filter(sf => sf.metadata).map(sf => ({
+                name: `${folder.name}/${sf.name}`,
+                url: supabase.storage.from(bucket).getPublicUrl(`${folder.name}/${sf.name}`).data.publicUrl,
+              }))
+            )
+        );
+        const directFiles = (data || []).filter(f => f.metadata).map(f => ({
+          name: f.name,
+          url: supabase.storage.from(bucket).getPublicUrl(f.name).data.publicUrl,
+        }));
+        Promise.all(promises).then(results => {
+          setFiles([...directFiles, ...results.flat()]);
+          setLoading(false);
+        });
+      });
+  }, [open, bucket]);
+
+  return (
+    <Dialog open={open} onOpenChange={onClose}>
+      <DialogContent className="max-w-2xl max-h-[70vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle>Bibliothèque — {bucket}</DialogTitle>
+        </DialogHeader>
+        {loading ? (
+          <div className="flex justify-center py-10"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>
+        ) : files.length === 0 ? (
+          <p className="text-muted-foreground text-sm py-6 text-center">Aucune image dans ce bucket.</p>
+        ) : (
+          <div className="grid grid-cols-3 gap-3">
+            {files.map((f) => (
+              <button
+                key={f.name}
+                onClick={() => { onSelect(f.url); onClose(); }}
+                className="group relative aspect-video rounded-lg overflow-hidden border border-border/30 hover:border-primary/60 transition-colors"
+              >
+                <img src={f.url} alt={f.name} className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <Check className="w-6 h-6 text-primary" />
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+// ── Asset Card ──
+const AssetCard = ({ asset, bucket = 'site-assets' }: { asset: SiteAsset; bucket?: string }) => {
   const [uploading, setUploading] = useState(false);
+  const [libraryOpen, setLibraryOpen] = useState(false);
+  const [subtitleValue, setSubtitleValue] = useState(asset.subtitle || '');
+  const [subtitleDirty, setSubtitleDirty] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
-  const { upsertAsset } = useUpsertSiteAsset();
+  const { upsertAsset, updateSubtitle } = useUpsertSiteAsset();
 
   const handleUpload = async (file: File) => {
     setUploading(true);
     try {
+      const compressed = await compressImage(file);
       const path = `${asset.asset_key}/${Date.now()}.webp`;
       const { error: uploadErr } = await supabase.storage
-        .from('site-assets')
-        .upload(path, file, { upsert: true, contentType: file.type });
+        .from(bucket)
+        .upload(path, compressed, { upsert: true, contentType: 'image/webp' });
       if (uploadErr) throw uploadErr;
 
-      const { data: urlData } = supabase.storage.from('site-assets').getPublicUrl(path);
+      const { data: urlData } = supabase.storage.from(bucket).getPublicUrl(path);
       await upsertAsset(asset.asset_key, urlData.publicUrl);
-      toast.success(`"${asset.label}" mis à jour`);
+      toast.success(`"${asset.label}" optimisé & mis à jour`);
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
     } finally {
@@ -38,58 +117,131 @@ const AssetCard = ({ asset }: { asset: SiteAsset }) => {
     }
   };
 
+  const handleLibrarySelect = async (url: string) => {
+    try {
+      await upsertAsset(asset.asset_key, url);
+      toast.success(`"${asset.label}" mis à jour depuis la bibliothèque`);
+    } catch (err: any) {
+      toast.error("Erreur : " + err.message);
+    }
+  };
+
+  const saveSubtitle = async () => {
+    try {
+      await updateSubtitle(asset.asset_key, subtitleValue);
+      setSubtitleDirty(false);
+      toast.success('Sous-titre enregistré');
+    } catch (err: any) {
+      toast.error("Erreur : " + err.message);
+    }
+  };
+
   return (
-    <div className="group relative rounded-xl border border-border/30 bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-      <div className="relative aspect-video bg-muted">
-        {asset.asset_url ? (
-          <img src={asset.asset_url} alt={asset.label} className="w-full h-full object-cover" />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
-            <ImagePlus className="w-10 h-10" />
+    <>
+      <div className="group relative rounded-xl border border-border/30 bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        {/* Live Preview — simulates bento rendering */}
+        <div className="relative aspect-video" style={{ background: 'rgba(26,26,30,0.95)' }}>
+          {asset.asset_url ? (
+            <img src={asset.asset_url} alt={asset.label} className="w-full h-full object-cover opacity-60" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
+              <ImagePlus className="w-10 h-10" />
+            </div>
+          )}
+          {/* Simulated overlay — dark gradient like real site */}
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)' }} />
+
+          {/* Simulated text overlay */}
+          <div className="absolute inset-x-0 bottom-0 p-4 z-10">
+            {subtitleValue && (
+              <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary/80 block mb-0.5">
+                {subtitleValue}
+              </span>
+            )}
+            <h4 className="text-white font-extrabold uppercase text-sm tracking-wider" style={{ textShadow: '0 0 15px rgba(147,181,161,0.4)' }}>
+              {asset.label}
+            </h4>
           </div>
-        )}
-        {uploading && (
-          <div className="absolute inset-0 bg-background/70 backdrop-blur-sm flex items-center justify-center z-10">
-            <Loader2 className="w-8 h-8 animate-spin text-primary" />
-          </div>
-        )}
-        {asset.asset_url && (
-          <div className="absolute top-2.5 left-2.5 w-5 h-5 rounded-full bg-primary/90 flex items-center justify-center">
-            <Check className="w-3 h-3 text-primary-foreground" />
-          </div>
-        )}
-      </div>
-      <div className="p-4 space-y-3">
-        <div>
-          <h3 className="font-semibold text-foreground text-sm">{asset.label}</h3>
-          <Badge variant="outline" className="mt-1 text-xs">{asset.asset_key}</Badge>
+
+          {uploading && (
+            <div className="absolute inset-0 bg-background/70 backdrop-blur-sm flex items-center justify-center z-20">
+              <Loader2 className="w-8 h-8 animate-spin text-primary" />
+            </div>
+          )}
+          {asset.asset_url && (
+            <div className="absolute top-2.5 left-2.5 w-5 h-5 rounded-full bg-primary/90 flex items-center justify-center z-10">
+              <Check className="w-3 h-3 text-primary-foreground" />
+            </div>
+          )}
         </div>
-        <input
-          type="file"
-          accept="image/*"
-          className="hidden"
-          ref={fileRef}
-          onChange={(e) => {
-            const f = e.target.files?.[0];
-            if (f) handleUpload(f);
-            e.target.value = '';
-          }}
-        />
-        <Button
-          variant="outline"
-          size="sm"
-          className="w-full text-xs"
-          disabled={uploading}
-          onClick={() => fileRef.current?.click()}
-        >
-          <ImagePlus className="w-3.5 h-3.5 mr-1.5" />
-          {asset.asset_url ? "Changer l'image" : "Ajouter une image"}
-        </Button>
+
+        {/* Card Body */}
+        <div className="p-4 space-y-3">
+          <div>
+            <h3 className="font-semibold text-foreground text-sm">{asset.label}</h3>
+            <Badge variant="outline" className="mt-1 text-xs">{asset.asset_key}</Badge>
+          </div>
+
+          {/* Subtitle input */}
+          <div className="flex gap-2">
+            <Input
+              placeholder="Sous-titre (ex: PERFORMANCE)"
+              value={subtitleValue}
+              onChange={(e) => { setSubtitleValue(e.target.value); setSubtitleDirty(true); }}
+              className="text-xs h-8"
+            />
+            {subtitleDirty && (
+              <Button size="sm" className="h-8 text-xs px-3" onClick={saveSubtitle}>
+                OK
+              </Button>
+            )}
+          </div>
+
+          <input
+            type="file"
+            accept="image/*"
+            className="hidden"
+            ref={fileRef}
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) handleUpload(f);
+              e.target.value = '';
+            }}
+          />
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex-1 text-xs"
+              disabled={uploading}
+              onClick={() => fileRef.current?.click()}
+            >
+              <ImagePlus className="w-3.5 h-3.5 mr-1.5" />
+              {asset.asset_url ? "Changer" : "Uploader"}
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-xs"
+              onClick={() => setLibraryOpen(true)}
+            >
+              <FolderOpen className="w-3.5 h-3.5 mr-1.5" />
+              Bibliothèque
+            </Button>
+          </div>
+        </div>
       </div>
-    </div>
+      <LibraryModal
+        open={libraryOpen}
+        onClose={() => setLibraryOpen(false)}
+        onSelect={handleLibrarySelect}
+        bucket={bucket}
+      />
+    </>
   );
 };
 
+// ── Section Grid ──
 const SectionGrid = ({ section }: { section: string }) => {
   const { data: assets, isLoading } = useSiteAssets(section);
 
@@ -121,6 +273,7 @@ const SectionGrid = ({ section }: { section: string }) => {
   );
 };
 
+// ── Main Hub ──
 const SiteDesignManager = () => {
   return (
     <Tabs defaultValue="accueil" className="space-y-6">

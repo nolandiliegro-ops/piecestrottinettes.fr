@@ -92,6 +92,7 @@ export type Database = {
           id: string
           image_url: string
           prompt: string | null
+          subtitle: string | null
         }
         Insert: {
           category_id?: string | null
@@ -99,6 +100,7 @@ export type Database = {
           id?: string
           image_url: string
           prompt?: string | null
+          subtitle?: string | null
         }
         Update: {
           category_id?: string | null
@@ -106,6 +108,7 @@ export type Database = {
           id?: string
           image_url?: string
           prompt?: string | null
+          subtitle?: string | null
         }
         Relationships: [
           {
@@ -650,6 +653,7 @@ export type Database = {
           id: string
           label: string
           section: string
+          subtitle: string | null
           updated_at: string
         }
         Insert: {
@@ -659,6 +663,7 @@ export type Database = {
           id?: string
           label?: string
           section?: string
+          subtitle?: string | null
           updated_at?: string
         }
         Update: {
@@ -668,6 +673,7 @@ export type Database = {
           id?: string
           label?: string
           section?: string
+          subtitle?: string | null
           updated_at?: string
         }
         Relationships: []

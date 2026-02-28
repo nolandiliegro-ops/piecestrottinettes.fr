@@ -7,6 +7,7 @@ export interface SiteAsset {
   asset_url: string;
   label: string;
   section: string;
+  subtitle: string;
   updated_at: string;
 }
 
@@ -46,12 +47,19 @@ export const useUpsertSiteAsset = () => {
       .from('site_assets')
       .update({ asset_url: newUrl })
       .eq('asset_key', assetKey);
-
     if (error) throw error;
-
     queryClient.invalidateQueries({ queryKey: ['site-assets'] });
     queryClient.invalidateQueries({ queryKey: ['site-asset', assetKey] });
   };
 
-  return { upsertAsset };
+  const updateSubtitle = async (assetKey: string, subtitle: string) => {
+    const { error } = await supabase
+      .from('site_assets')
+      .update({ subtitle })
+      .eq('asset_key', assetKey);
+    if (error) throw error;
+    queryClient.invalidateQueries({ queryKey: ['site-assets'] });
+  };
+
+  return { upsertAsset, updateSubtitle };
 };
