@@ -136,7 +136,7 @@ const CategoryBentoGrid = ({
               {categoryImage ? (
                 <img 
                   src={categoryImage} 
-                  alt={category.name}
+                  alt={typeof catImgData === 'string' ? category.name : (catImgData?.alt_text || category.name)}
                   className="w-full h-full object-cover"
                 />
               ) : (
