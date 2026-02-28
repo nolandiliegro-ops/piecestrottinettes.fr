@@ -8,6 +8,8 @@ export interface SiteAsset {
   label: string;
   section: string;
   subtitle: string;
+  alt_text: string;
+  seo_name: string;
   updated_at: string;
 }
 
@@ -27,14 +29,15 @@ export const useSiteAssets = (section?: string) => {
 export const useSiteAsset = (key: string) => {
   return useQuery({
     queryKey: ['site-asset', key],
-    queryFn: async (): Promise<string> => {
+    queryFn: async (): Promise<{ url: string; alt_text: string }> => {
       const { data, error } = await supabase
         .from('site_assets')
-        .select('asset_url')
+        .select('asset_url, alt_text')
         .eq('asset_key', key)
         .maybeSingle();
       if (error) throw error;
-      return (data as { asset_url: string } | null)?.asset_url || '';
+      const row = data as { asset_url: string; alt_text: string } | null;
+      return { url: row?.asset_url || '', alt_text: row?.alt_text || '' };
     },
   });
 };
@@ -61,5 +64,15 @@ export const useUpsertSiteAsset = () => {
     queryClient.invalidateQueries({ queryKey: ['site-assets'] });
   };
 
-  return { upsertAsset, updateSubtitle };
+  const updateSeoFields = async (assetKey: string, fields: { alt_text?: string; seo_name?: string }) => {
+    const { error } = await supabase
+      .from('site_assets')
+      .update(fields)
+      .eq('asset_key', assetKey);
+    if (error) throw error;
+    queryClient.invalidateQueries({ queryKey: ['site-assets'] });
+    queryClient.invalidateQueries({ queryKey: ['site-asset', assetKey] });
+  };
+
+  return { upsertAsset, updateSubtitle, updateSeoFields };
 };
