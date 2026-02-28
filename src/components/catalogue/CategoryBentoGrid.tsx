@@ -108,7 +108,8 @@ const CategoryBentoGrid = ({
       {categories.map((category) => {
         const IconComponent = iconMap[category.slug] || LayoutGrid;
         const isActive = activeCategory === category.id;
-        const categoryImage = categoryImages[category.id];
+        const catImgData = categoryImages[category.id];
+        const categoryImage = typeof catImgData === 'string' ? catImgData : catImgData?.image_url;
 
         return (
           <motion.button
