@@ -17,9 +17,10 @@ interface CategoryCard {
   parts_count: number;
   image_url: string | null;
   subtitle: string | null;
+  alt_text: string | null;
+  seo_name: string | null;
 }
 
-// Neon color mapping mirroring the bento cards
 const neonColors: Record<string, string> = {
   pneus: '#00BCD4',
   'disques-plaquettes': '#FF1744',
@@ -47,6 +48,11 @@ async function compressImage(file: File): Promise<File> {
     fileType: 'image/webp',
     useWebWorker: true,
   });
+}
+
+function buildSeoFileName(slug: string, seoName: string | null, label: string): string {
+  const name = seoName?.trim() || label.toLowerCase().replace(/[^a-z0-9]+/gi, '-').replace(/-+$/, '');
+  return `${slug}-${name}.webp`;
 }
 
 // ── Library Modal ──
@@ -106,6 +112,8 @@ const CategoryDesignManager = () => {
   const [uploadingId, setUploadingId] = useState<string | null>(null);
   const [libraryForId, setLibraryForId] = useState<string | null>(null);
   const [subtitleEdits, setSubtitleEdits] = useState<Record<string, string>>({});
+  const [altEdits, setAltEdits] = useState<Record<string, string>>({});
+  const [seoEdits, setSeoEdits] = useState<Record<string, string>>({});
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
 
   const { data: categories, isLoading } = useQuery({
@@ -120,12 +128,12 @@ const CategoryDesignManager = () => {
 
       const { data: images, error: imgError } = await supabase
         .from('category_images')
-        .select('category_id, image_url, subtitle');
+        .select('category_id, image_url, subtitle, alt_text, seo_name');
       if (imgError) throw imgError;
 
-      const imageMap: Record<string, { url: string; subtitle: string | null }> = {};
+      const imageMap: Record<string, { url: string; subtitle: string | null; alt_text: string | null; seo_name: string | null }> = {};
       images?.forEach((img: any) => {
-        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, subtitle: img.subtitle };
+        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, subtitle: img.subtitle, alt_text: img.alt_text, seo_name: img.seo_name };
       });
 
       return (cats || []).map((cat: any) => ({
@@ -136,15 +144,18 @@ const CategoryDesignManager = () => {
         parts_count: cat.parts?.[0]?.count || 0,
         image_url: imageMap[cat.id]?.url || null,
         subtitle: imageMap[cat.id]?.subtitle || null,
+        alt_text: imageMap[cat.id]?.alt_text || null,
+        seo_name: imageMap[cat.id]?.seo_name || null,
       }));
     },
   });
 
-  const handleUpload = async (categoryId: string, file: File) => {
+  const handleUpload = async (categoryId: string, file: File, cat: CategoryCard) => {
     setUploadingId(categoryId);
     try {
       const compressed = await compressImage(file);
-      const path = `${categoryId}/${Date.now()}.webp`;
+      const seoFileName = buildSeoFileName(cat.slug, seoEdits[cat.id] ?? cat.seo_name, cat.name);
+      const path = `${categoryId}/${seoFileName}`;
       const { error: uploadError } = await supabase.storage
         .from('category-images')
         .upload(path, compressed, { upsert: true, contentType: 'image/webp' });
@@ -152,7 +163,7 @@ const CategoryDesignManager = () => {
 
       const { data: urlData } = supabase.storage.from('category-images').getPublicUrl(path);
       await upsertCategoryImage(categoryId, urlData.publicUrl);
-      toast.success(`Image optimisée & mise à jour`);
+      toast.success(`Image optimisée & renommée SEO`);
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
     } finally {
@@ -161,9 +172,14 @@ const CategoryDesignManager = () => {
   };
 
   const upsertCategoryImage = async (categoryId: string, imageUrl: string) => {
-    await supabase.from('category_images').delete().eq('category_id', categoryId);
-    const { error } = await supabase.from('category_images').insert({ category_id: categoryId, image_url: imageUrl });
-    if (error) throw error;
+    const { data: existing } = await supabase.from('category_images').select('id').eq('category_id', categoryId).maybeSingle();
+    if (existing) {
+      const { error } = await supabase.from('category_images').update({ image_url: imageUrl }).eq('category_id', categoryId);
+      if (error) throw error;
+    } else {
+      const { error } = await supabase.from('category_images').insert({ category_id: categoryId, image_url: imageUrl });
+      if (error) throw error;
+    }
     queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
     queryClient.invalidateQueries({ queryKey: ['category-images'] });
   };
@@ -179,18 +195,19 @@ const CategoryDesignManager = () => {
     setLibraryForId(null);
   };
 
-  const saveSubtitle = async (categoryId: string) => {
-    const subtitle = subtitleEdits[categoryId];
-    if (subtitle === undefined) return;
+  const saveField = async (categoryId: string, field: 'subtitle' | 'alt_text' | 'seo_name', value: string) => {
     try {
       const { error } = await supabase
         .from('category_images')
-        .update({ subtitle })
+        .update({ [field]: value })
         .eq('category_id', categoryId);
       if (error) throw error;
       queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
-      toast.success('Sous-titre enregistré');
-      setSubtitleEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
+      queryClient.invalidateQueries({ queryKey: ['category-images'] });
+      toast.success('Enregistré');
+      if (field === 'subtitle') setSubtitleEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
+      if (field === 'alt_text') setAltEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
+      if (field === 'seo_name') setSeoEdits(prev => { const n = { ...prev }; delete n[categoryId]; return n; });
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
     }
@@ -218,29 +235,56 @@ const CategoryDesignManager = () => {
               key={cat.id}
               className="group relative rounded-xl border border-border/30 bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              {/* Live Bento Preview */}
-              <div className="relative aspect-video overflow-hidden" style={{ background: 'rgba(26,26,30,0.95)' }}>
-                {cat.image_url ? (
-                  <img src={cat.image_url} alt={cat.name} className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
-                    <ImagePlus className="w-10 h-10" />
-                  </div>
-                )}
+              {/* ── Live Bento Preview (1:1 mirror of CategoryBentoCard) ── */}
+              <div
+                className="relative aspect-[4/3] overflow-hidden rounded-t-xl"
+                style={{
+                  background: 'rgba(26,26,30,0.75)',
+                  backdropFilter: 'blur(12px)',
+                  WebkitBackdropFilter: 'blur(12px)',
+                  border: `0.5px solid ${neon}35`,
+                  boxShadow: `0 0 15px ${neon}15, inset 0 1px 0 hsla(0,0%,100%,0.04)`,
+                }}
+              >
+                {/* Image */}
+                <div className="absolute inset-0 overflow-hidden">
+                  {cat.image_url ? (
+                    <img src={cat.image_url} alt={altEdits[cat.id] ?? cat.alt_text ?? cat.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
+                      <ImagePlus className="w-10 h-10" />
+                    </div>
+                  )}
+                </div>
 
-                {/* Gradient overlay */}
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)' }} />
+                {/* Dark gradient overlay — exact match */}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: 'linear-gradient(to top, hsla(0,0%,0%,0.85) 0%, hsla(0,0%,0%,0.4) 50%, hsla(0,0%,0%,0.2) 100%)',
+                  }}
+                />
 
-                {/* Neon accent lines */}
-                <div className="absolute top-0 left-0 w-10 h-[1px] z-10" style={{ background: neon }} />
-                <div className="absolute top-0 left-0 h-10 w-[1px] z-10" style={{ background: neon }} />
+                {/* Neon accent lines — exact match */}
+                <div className="absolute top-0 left-0 w-12 h-[1px] z-10 rounded-br" style={{ background: neon }} />
+                <div className="absolute top-0 left-0 h-12 w-[1px] z-10 rounded-br" style={{ background: neon }} />
 
-                {/* Simulated bento text */}
-                <div className="absolute inset-x-0 bottom-0 p-3 z-10">
-                  <span className="text-[9px] font-bold tracking-[0.2em] uppercase block mb-0.5" style={{ color: `${neon}BB` }}>
+                {/* Content overlay — exact match */}
+                <div className="absolute inset-x-0 bottom-0 p-4 z-10 flex flex-col justify-end">
+                  <span
+                    className="font-montserrat text-[10px] font-bold tracking-[0.2em] uppercase mb-1"
+                    style={{ color: `${neon}BB` }}
+                  >
                     {displaySubtitle}
                   </span>
-                  <h4 className="text-white font-extrabold uppercase text-xs tracking-wider" style={{ textShadow: `0 0 15px ${neon}40` }}>
+                  <h4
+                    className="font-display uppercase text-white text-lg"
+                    style={{
+                      fontWeight: 800,
+                      letterSpacing: '0.04em',
+                      textShadow: `0 0 20px ${neon}40`,
+                    }}
+                  >
                     {cat.name}
                   </h4>
                 </div>
@@ -264,31 +308,48 @@ const CategoryDesignManager = () => {
               </div>
 
               {/* Card Body */}
-              <div className="p-3 space-y-2.5">
+              <div className="p-3 space-y-2">
                 <div className="flex items-center gap-2">
                   {cat.icon && <span className="text-base">{cat.icon}</span>}
                   <h3 className="font-semibold text-foreground text-sm truncate">{cat.name}</h3>
                 </div>
 
                 {/* Subtitle input */}
-                <div className="flex gap-1.5">
-                  <Input
-                    placeholder={defaultLabel}
-                    value={subtitleEdits[cat.id] ?? cat.subtitle ?? ''}
-                    onChange={(e) => setSubtitleEdits(prev => ({ ...prev, [cat.id]: e.target.value }))}
-                    className="text-xs h-7"
-                  />
-                  {subtitleEdits[cat.id] !== undefined && (
-                    <Button size="sm" className="h-7 text-xs px-2" onClick={() => saveSubtitle(cat.id)}>OK</Button>
-                  )}
-                </div>
+                <FieldRow
+                  placeholder={defaultLabel}
+                  value={subtitleEdits[cat.id] ?? cat.subtitle ?? ''}
+                  onChange={(v) => setSubtitleEdits(prev => ({ ...prev, [cat.id]: v }))}
+                  dirty={subtitleEdits[cat.id] !== undefined}
+                  onSave={() => saveField(cat.id, 'subtitle', subtitleEdits[cat.id]!)}
+                  label="Sous-titre"
+                />
+
+                {/* SEO Name input */}
+                <FieldRow
+                  placeholder="nom-seo-fichier"
+                  value={seoEdits[cat.id] ?? cat.seo_name ?? ''}
+                  onChange={(v) => setSeoEdits(prev => ({ ...prev, [cat.id]: v }))}
+                  dirty={seoEdits[cat.id] !== undefined}
+                  onSave={() => saveField(cat.id, 'seo_name', seoEdits[cat.id]!)}
+                  label="Nom SEO"
+                />
+
+                {/* Alt text input */}
+                <FieldRow
+                  placeholder="Texte alternatif pour Google"
+                  value={altEdits[cat.id] ?? cat.alt_text ?? ''}
+                  onChange={(v) => setAltEdits(prev => ({ ...prev, [cat.id]: v }))}
+                  dirty={altEdits[cat.id] !== undefined}
+                  onSave={() => saveField(cat.id, 'alt_text', altEdits[cat.id]!)}
+                  label="ALT"
+                />
 
                 <input
                   type="file"
                   accept="image/*"
                   className="hidden"
                   ref={(el) => { fileInputRefs.current[cat.id] = el; }}
-                  onChange={(e) => { const f = e.target.files?.[0]; if (f) handleUpload(cat.id, f); e.target.value = ''; }}
+                  onChange={(e) => { const f = e.target.files?.[0]; if (f) handleUpload(cat.id, f, cat); e.target.value = ''; }}
                 />
                 <div className="flex gap-1.5">
                   <Button variant="outline" size="sm" className="flex-1 text-xs h-7" disabled={isUploading}
@@ -311,5 +372,23 @@ const CategoryDesignManager = () => {
     </>
   );
 };
+
+// ── Reusable field row ──
+const FieldRow = ({ placeholder, value, onChange, dirty, onSave, label }: {
+  placeholder: string; value: string; onChange: (v: string) => void; dirty: boolean; onSave: () => void; label: string;
+}) => (
+  <div className="flex gap-1.5 items-center">
+    <span className="text-[10px] text-muted-foreground w-12 shrink-0 font-medium">{label}</span>
+    <Input
+      placeholder={placeholder}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className="text-xs h-7 flex-1"
+    />
+    {dirty && (
+      <Button size="sm" className="h-7 text-xs px-2" onClick={onSave}>OK</Button>
+    )}
+  </div>
+);
 
 export default CategoryDesignManager;

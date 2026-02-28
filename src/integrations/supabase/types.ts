@@ -87,27 +87,33 @@ export type Database = {
       }
       category_images: {
         Row: {
+          alt_text: string | null
           category_id: string | null
           created_at: string | null
           id: string
           image_url: string
           prompt: string | null
+          seo_name: string | null
           subtitle: string | null
         }
         Insert: {
+          alt_text?: string | null
           category_id?: string | null
           created_at?: string | null
           id?: string
           image_url: string
           prompt?: string | null
+          seo_name?: string | null
           subtitle?: string | null
         }
         Update: {
+          alt_text?: string | null
           category_id?: string | null
           created_at?: string | null
           id?: string
           image_url?: string
           prompt?: string | null
+          seo_name?: string | null
           subtitle?: string | null
         }
         Relationships: [
@@ -647,32 +653,38 @@ export type Database = {
       }
       site_assets: {
         Row: {
+          alt_text: string | null
           asset_key: string
           asset_url: string
           created_at: string
           id: string
           label: string
           section: string
+          seo_name: string | null
           subtitle: string | null
           updated_at: string
         }
         Insert: {
+          alt_text?: string | null
           asset_key: string
           asset_url?: string
           created_at?: string
           id?: string
           label?: string
           section?: string
+          seo_name?: string | null
           subtitle?: string | null
           updated_at?: string
         }
         Update: {
+          alt_text?: string | null
           asset_key?: string
           asset_url?: string
           created_at?: string
           id?: string
           label?: string
           section?: string
+          seo_name?: string | null
           subtitle?: string | null
           updated_at?: string
         }

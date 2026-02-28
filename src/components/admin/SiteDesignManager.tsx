@@ -26,6 +26,11 @@ async function compressImage(file: File): Promise<File> {
   });
 }
 
+function buildSeoFileName(assetKey: string, seoName: string | null, label: string): string {
+  const name = seoName?.trim() || label.toLowerCase().replace(/[^a-z0-9]+/gi, '-').replace(/-+$/, '');
+  return `${assetKey}-${name}.webp`;
+}
+
 // ── Library Modal ──
 const LibraryModal = ({ open, onClose, onSelect, bucket }: { open: boolean; onClose: () => void; onSelect: (url: string) => void; bucket: string }) => {
   const [files, setFiles] = useState<{ name: string; url: string }[]>([]);
@@ -36,7 +41,6 @@ const LibraryModal = ({ open, onClose, onSelect, bucket }: { open: boolean; onCl
     setLoading(true);
     supabase.storage.from(bucket).list('', { limit: 100, sortBy: { column: 'created_at', order: 'desc' } })
       .then(({ data }) => {
-        // Also list subfolders
         const promises = (data || []).filter(f => f.id === null || !f.metadata).map(folder =>
           supabase.storage.from(bucket).list(folder.name, { limit: 50, sortBy: { column: 'created_at', order: 'desc' } })
             .then(({ data: subFiles }) =>
@@ -88,20 +92,43 @@ const LibraryModal = ({ open, onClose, onSelect, bucket }: { open: boolean; onCl
   );
 };
 
+// ── Reusable field row ──
+const FieldRow = ({ placeholder, value, onChange, dirty, onSave, label }: {
+  placeholder: string; value: string; onChange: (v: string) => void; dirty: boolean; onSave: () => void; label: string;
+}) => (
+  <div className="flex gap-1.5 items-center">
+    <span className="text-[10px] text-muted-foreground w-12 shrink-0 font-medium">{label}</span>
+    <Input
+      placeholder={placeholder}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className="text-xs h-7 flex-1"
+    />
+    {dirty && (
+      <Button size="sm" className="h-7 text-xs px-2" onClick={onSave}>OK</Button>
+    )}
+  </div>
+);
+
 // ── Asset Card ──
 const AssetCard = ({ asset, bucket = 'site-assets' }: { asset: SiteAsset; bucket?: string }) => {
   const [uploading, setUploading] = useState(false);
   const [libraryOpen, setLibraryOpen] = useState(false);
   const [subtitleValue, setSubtitleValue] = useState(asset.subtitle || '');
   const [subtitleDirty, setSubtitleDirty] = useState(false);
+  const [altValue, setAltValue] = useState(asset.alt_text || '');
+  const [altDirty, setAltDirty] = useState(false);
+  const [seoValue, setSeoValue] = useState(asset.seo_name || '');
+  const [seoDirty, setSeoDirty] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
-  const { upsertAsset, updateSubtitle } = useUpsertSiteAsset();
+  const { upsertAsset, updateSubtitle, updateSeoFields } = useUpsertSiteAsset();
 
   const handleUpload = async (file: File) => {
     setUploading(true);
     try {
       const compressed = await compressImage(file);
-      const path = `${asset.asset_key}/${Date.now()}.webp`;
+      const seoFileName = buildSeoFileName(asset.asset_key, seoValue || asset.seo_name, asset.label);
+      const path = `${asset.asset_key}/${seoFileName}`;
       const { error: uploadErr } = await supabase.storage
         .from(bucket)
         .upload(path, compressed, { upsert: true, contentType: 'image/webp' });
@@ -109,7 +136,7 @@ const AssetCard = ({ asset, bucket = 'site-assets' }: { asset: SiteAsset; bucket
 
       const { data: urlData } = supabase.storage.from(bucket).getPublicUrl(path);
       await upsertAsset(asset.asset_key, urlData.publicUrl);
-      toast.success(`"${asset.label}" optimisé & mis à jour`);
+      toast.success(`"${asset.label}" optimisé & renommé SEO`);
     } catch (err: any) {
       toast.error("Erreur : " + err.message);
     } finally {
@@ -136,22 +163,40 @@ const AssetCard = ({ asset, bucket = 'site-assets' }: { asset: SiteAsset; bucket
     }
   };
 
+  const saveAlt = async () => {
+    try {
+      await updateSeoFields(asset.asset_key, { alt_text: altValue });
+      setAltDirty(false);
+      toast.success('Texte ALT enregistré');
+    } catch (err: any) {
+      toast.error("Erreur : " + err.message);
+    }
+  };
+
+  const saveSeo = async () => {
+    try {
+      await updateSeoFields(asset.asset_key, { seo_name: seoValue });
+      setSeoDirty(false);
+      toast.success('Nom SEO enregistré');
+    } catch (err: any) {
+      toast.error("Erreur : " + err.message);
+    }
+  };
+
   return (
     <>
       <div className="group relative rounded-xl border border-border/30 bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-        {/* Live Preview — simulates bento rendering */}
+        {/* Live Preview */}
         <div className="relative aspect-video" style={{ background: 'rgba(26,26,30,0.95)' }}>
           {asset.asset_url ? (
-            <img src={asset.asset_url} alt={asset.label} className="w-full h-full object-cover opacity-60" />
+            <img src={asset.asset_url} alt={altValue || asset.label} className="w-full h-full object-cover opacity-60" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-muted-foreground/40">
               <ImagePlus className="w-10 h-10" />
             </div>
           )}
-          {/* Simulated overlay — dark gradient like real site */}
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)' }} />
 
-          {/* Simulated text overlay */}
           <div className="absolute inset-x-0 bottom-0 p-4 z-10">
             {subtitleValue && (
               <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary/80 block mb-0.5">
@@ -176,26 +221,36 @@ const AssetCard = ({ asset, bucket = 'site-assets' }: { asset: SiteAsset; bucket
         </div>
 
         {/* Card Body */}
-        <div className="p-4 space-y-3">
+        <div className="p-4 space-y-2">
           <div>
             <h3 className="font-semibold text-foreground text-sm">{asset.label}</h3>
             <Badge variant="outline" className="mt-1 text-xs">{asset.asset_key}</Badge>
           </div>
 
-          {/* Subtitle input */}
-          <div className="flex gap-2">
-            <Input
-              placeholder="Sous-titre (ex: PERFORMANCE)"
-              value={subtitleValue}
-              onChange={(e) => { setSubtitleValue(e.target.value); setSubtitleDirty(true); }}
-              className="text-xs h-8"
-            />
-            {subtitleDirty && (
-              <Button size="sm" className="h-8 text-xs px-3" onClick={saveSubtitle}>
-                OK
-              </Button>
-            )}
-          </div>
+          <FieldRow
+            label="Sous-titre"
+            placeholder="Ex: PERFORMANCE"
+            value={subtitleValue}
+            onChange={(v) => { setSubtitleValue(v); setSubtitleDirty(true); }}
+            dirty={subtitleDirty}
+            onSave={saveSubtitle}
+          />
+          <FieldRow
+            label="Nom SEO"
+            placeholder="nom-seo-fichier"
+            value={seoValue}
+            onChange={(v) => { setSeoValue(v); setSeoDirty(true); }}
+            dirty={seoDirty}
+            onSave={saveSeo}
+          />
+          <FieldRow
+            label="ALT"
+            placeholder="Texte alternatif pour Google"
+            value={altValue}
+            onChange={(v) => { setAltValue(v); setAltDirty(true); }}
+            dirty={altDirty}
+            onSave={saveAlt}
+          />
 
           <input
             type="file"

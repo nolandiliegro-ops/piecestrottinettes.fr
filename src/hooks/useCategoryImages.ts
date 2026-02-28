@@ -6,7 +6,16 @@ interface CategoryImage {
   category_id: string;
   image_url: string;
   prompt: string | null;
+  subtitle: string | null;
+  alt_text: string | null;
+  seo_name: string | null;
   created_at: string;
+}
+
+export interface CategoryImageData {
+  image_url: string;
+  subtitle: string | null;
+  alt_text: string | null;
 }
 
 export const useCategoryImages = () => {
@@ -22,10 +31,15 @@ export const useCategoryImages = () => {
         return {};
       }
 
-      // Create a map of category_id -> image_url
-      const imageMap: Record<string, string> = {};
+      const imageMap: Record<string, CategoryImageData> = {};
       (data as CategoryImage[])?.forEach((img) => {
-        imageMap[img.category_id] = img.image_url;
+        if (img.category_id) {
+          imageMap[img.category_id] = {
+            image_url: img.image_url,
+            subtitle: img.subtitle,
+            alt_text: img.alt_text,
+          };
+        }
       });
 
       return imageMap;

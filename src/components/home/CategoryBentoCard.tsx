@@ -12,7 +12,7 @@ import {
   CircleDot,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useCategoryImages } from "@/hooks/useCategoryImages";
+import { useCategoryImages, type CategoryImageData } from "@/hooks/useCategoryImages";
 
 interface Category {
   id: string;
@@ -28,7 +28,6 @@ interface CategoryBentoCardProps {
   index: number;
 }
 
-// Icon mapping
 const iconMap: Record<string, LucideIcon> = {
   pneus: Disc,
   "disques-plaquettes": Disc,
@@ -41,7 +40,6 @@ const iconMap: Record<string, LucideIcon> = {
   accessoires: Backpack,
 };
 
-// Neon color mapping per category slug
 const neonColors: Record<string, string> = {
   pneus: "#00BCD4",
   "disques-plaquettes": "#FF1744",
@@ -52,7 +50,6 @@ const neonColors: Record<string, string> = {
   accessoires: "#FF9100",
 };
 
-// Racing sub-label per category
 const racingLabels: Record<string, string> = {
   pneus: "PERFORMANCE",
   "disques-plaquettes": "RACING",
@@ -73,9 +70,12 @@ const CategoryBentoCard = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const IconComponent = iconMap[category.slug] || Backpack;
-  const imageUrl = categoryImages[category.id];
+  const imgData = categoryImages[category.id] as CategoryImageData | undefined;
+  const imageUrl = imgData?.image_url;
+  const altText = imgData?.alt_text || category.name;
+  const subtitle = imgData?.subtitle;
   const neon = neonColors[category.slug] || "#93B5A1";
-  const racingLabel = racingLabels[category.slug] || "PREMIUM";
+  const racingLabel = subtitle || racingLabels[category.slug] || "PREMIUM";
 
   return (
     <motion.div
@@ -125,7 +125,7 @@ const CategoryBentoCard = ({
               {imageUrl ? (
                 <img
                   src={imageUrl}
-                  alt={category.name}
+                  alt={altText}
                   className="w-full h-full object-cover"
                 />
               ) : (
@@ -133,7 +133,7 @@ const CategoryBentoCard = ({
               )}
             </motion.div>
 
-            {/* Dark overlay for readability */}
+            {/* Dark overlay */}
             <div
               className="absolute inset-0"
               style={{
@@ -143,7 +143,7 @@ const CategoryBentoCard = ({
             />
           </div>
 
-          {/* Icon badge — top right */}
+          {/* Icon badge */}
           <div className="absolute top-3 right-3 lg:top-4 lg:right-4 z-10">
             <div
               className="w-9 h-9 lg:w-10 lg:h-10 rounded-full flex items-center justify-center"
@@ -160,9 +160,8 @@ const CategoryBentoCard = ({
             </div>
           </div>
 
-          {/* Content overlay — bottom */}
+          {/* Content overlay */}
           <div className="absolute inset-x-0 bottom-0 p-4 lg:p-5 z-10 flex flex-col justify-end">
-            {/* Racing sub-label */}
             <span
               className="font-montserrat text-[10px] lg:text-xs font-bold tracking-[0.2em] uppercase mb-1"
               style={{ color: `${neon}BB` }}
@@ -170,13 +169,10 @@ const CategoryBentoCard = ({
               {racingLabel}
             </span>
 
-            {/* Category name */}
             <h3
               className={cn(
                 "font-display uppercase text-white",
-                isHero
-                  ? "text-3xl lg:text-5xl"
-                  : "text-lg lg:text-xl"
+                isHero ? "text-3xl lg:text-5xl" : "text-lg lg:text-xl"
               )}
               style={{
                 fontWeight: 800,
@@ -187,7 +183,6 @@ const CategoryBentoCard = ({
               {category.name}
             </h3>
 
-            {/* Badge: count — fades in on hover */}
             <motion.div
               initial={false}
               animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 6 }}
@@ -207,7 +202,7 @@ const CategoryBentoCard = ({
             </motion.div>
           </div>
 
-          {/* Top-left neon accent line — subtle */}
+          {/* Neon accent lines */}
           <div
             className="absolute top-0 left-0 w-12 h-[1px] z-10 rounded-br"
             style={{ background: neon }}
