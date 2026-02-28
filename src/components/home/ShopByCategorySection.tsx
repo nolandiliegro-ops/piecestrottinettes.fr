@@ -3,72 +3,97 @@ import CategoryBentoCard from "./CategoryBentoCard";
 import { useCategoryPartsCount } from "@/hooks/useCategoryPartsCount";
 import { Skeleton } from "@/components/ui/skeleton";
 
-// Define which categories should be large (span 2 columns)
-const LARGE_CATEGORIES = ["pneus", "lumieres"];
+// Hero card slug
+const HERO_SLUG = "pneus";
 
-// Define the display order for the bento grid
+// Display order for the racing bento grid
 const CATEGORY_ORDER = [
-  "pneus",      // Large - Row 1
-  "disques-plaquettes",   // Row 1 (fallback if no pneus)
-  "batteries",  // Row 1
-  "chargeurs",  // Row 2
-  "lumieres",   // Large - Row 2
-  "accessoires" // Row 2
+  "pneus",              // Hero — col-span-2 row-span-2
+  "disques-plaquettes",
+  "chargeurs",
+  "chambres-air",
+  "batteries",
+  "accessoires",
 ];
 
 const ShopByCategorySection = () => {
   const { data: categories, isLoading } = useCategoryPartsCount();
 
-  // Sort categories according to our desired order
   const sortedCategories = categories?.sort((a, b) => {
     const indexA = CATEGORY_ORDER.indexOf(a.slug);
     const indexB = CATEGORY_ORDER.indexOf(b.slug);
-    // If not in order array, put at end
     if (indexA === -1) return 1;
     if (indexB === -1) return -1;
     return indexA - indexB;
   }) || [];
 
   return (
-    <section className="py-12 lg:py-20 bg-greige">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 lg:py-24 overflow-hidden">
+      {/* Dark carbon background */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 10%) 100%)",
+        }}
+      />
+
+      {/* Carbon fiber texture overlay */}
+      <div
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='6' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='3' height='3' fill='%23ffffff' fill-opacity='0.03'/%3E%3Crect x='3' y='3' width='3' height='3' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E")`,
+          backgroundSize: "6px 6px",
+        }}
+      />
+
+      {/* Neon grid overlay */}
+      <div className="gaming-grid-bg" />
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <motion.div 
-          className="text-center mb-10 lg:mb-14"
+        <motion.div
+          className="text-center mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <h2 
-            className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-carbon uppercase"
-            style={{ fontWeight: 800, letterSpacing: "-0.02em" }}
+          <h2
+            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white uppercase"
+            style={{
+              fontWeight: 800,
+              letterSpacing: "0.06em",
+              textShadow: "0 0 40px hsla(144, 20%, 65%, 0.3)",
+            }}
           >
             SHOP BY CATEGORY
           </h2>
-          <p className="text-muted-foreground mt-3 lg:mt-4 font-light text-sm lg:text-base">
-            Trouvez rapidement ce dont vous avez besoin
+          <p
+            className="mt-3 lg:mt-4 font-light text-sm lg:text-base"
+            style={{ color: "hsla(0, 0%, 100%, 0.5)" }}
+          >
+            Performance · Précision · Ingénierie
           </p>
         </motion.div>
 
-        {/* Bento Grid */}
+        {/* Racing Bento Grid */}
         {isLoading ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
-            {[...Array(6)].map((_, i) => (
-              <Skeleton 
-                key={i} 
-                className={`${i === 0 || i === 4 ? 'lg:col-span-2 aspect-[2/1]' : 'aspect-square'} rounded-[24px]`}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
+            {[...Array(5)].map((_, i) => (
+              <Skeleton
+                key={i}
+                className={`${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-[4/3]"} rounded-2xl bg-white/5`}
               />
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
             {sortedCategories.map((category, index) => (
               <CategoryBentoCard
                 key={category.id}
                 category={category}
                 partsCount={category.parts_count}
-                isLarge={LARGE_CATEGORIES.includes(category.slug)}
+                isHero={category.slug === HERO_SLUG}
                 index={index}
               />
             ))}
