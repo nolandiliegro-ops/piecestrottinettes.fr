@@ -13,7 +13,7 @@ import BrandsManager from '@/components/admin/BrandsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
 import TutosManager from '@/components/admin/TutosManager';
 import ScansManager from '@/components/admin/ScansManager';
-import CategoryDesignManager from '@/components/admin/CategoryDesignManager';
+import SiteDesignManager from '@/components/admin/SiteDesignManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -138,7 +138,7 @@ const Admin = () => {
               className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
             >
               <Palette className="w-4 h-4" />
-              Design Homepage
+              Design Site
             </TabsTrigger>
             <TabsTrigger 
               value="orders" 
@@ -251,11 +251,11 @@ const Admin = () => {
                   <Palette className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-foreground">Design Homepage</h2>
-                  <p className="text-sm text-muted-foreground">Gérer les visuels des catégories Bento</p>
+                  <h2 className="text-lg font-semibold text-foreground">Design Site</h2>
+                  <p className="text-sm text-muted-foreground">Gérer tous les visuels du site</p>
                 </div>
               </div>
-              <CategoryDesignManager />
+              <SiteDesignManager />
             </div>
           </TabsContent>
 

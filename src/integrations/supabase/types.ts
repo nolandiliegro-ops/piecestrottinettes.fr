@@ -642,6 +642,36 @@ export type Database = {
           },
         ]
       }
+      site_assets: {
+        Row: {
+          asset_key: string
+          asset_url: string
+          created_at: string
+          id: string
+          label: string
+          section: string
+          updated_at: string
+        }
+        Insert: {
+          asset_key: string
+          asset_url?: string
+          created_at?: string
+          id?: string
+          label?: string
+          section?: string
+          updated_at?: string
+        }
+        Update: {
+          asset_key?: string
+          asset_url?: string
+          created_at?: string
+          id?: string
+          label?: string
+          section?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       tutorials: {
         Row: {
           created_at: string
