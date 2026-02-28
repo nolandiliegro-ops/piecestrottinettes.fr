@@ -4,6 +4,7 @@ import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Loader2, Trophy, Package, ShoppingBag, Plus } from 'lucide-react';
+import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
 import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
@@ -248,8 +249,13 @@ const Garage = () => {
                     transition={{ duration: 0.4, delay: 0.15 }}
                   >
                     {scootersLoading ? (
-                      <div className="flex items-center justify-center h-64 bg-white/40 rounded-2xl">
-                        <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+                      <div className="space-y-4 p-4 bg-white/40 backdrop-blur-md rounded-2xl border border-mineral/10">
+                        <Skeleton className="w-full h-48 rounded-xl bg-mineral/5" />
+                        <div className="space-y-2 px-2">
+                          <Skeleton className="h-4 w-1/3 bg-mineral/5" />
+                          <Skeleton className="h-6 w-2/3 bg-mineral/5" />
+                          <Skeleton className="h-3 w-1/2 bg-mineral/5" />
+                        </div>
                       </div>
                     ) : (
                       <GarageScooterCarousel 
@@ -316,9 +322,14 @@ const Garage = () => {
                   >
                     {/* Scooter Carousel */}
                     <div className="min-h-[450px] max-h-[600px]">
-                      {scootersLoading ? (
-                        <div className="flex items-center justify-center h-full bg-white/40 rounded-2xl">
-                          <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+                    {scootersLoading ? (
+                        <div className="space-y-4 p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-mineral/10 h-full">
+                          <Skeleton className="w-full h-64 rounded-xl bg-mineral/5" />
+                          <div className="space-y-3 px-2">
+                            <Skeleton className="h-4 w-1/4 bg-mineral/5" />
+                            <Skeleton className="h-7 w-3/5 bg-mineral/5" />
+                            <Skeleton className="h-3 w-2/5 bg-mineral/5" />
+                          </div>
                         </div>
                       ) : (
                         <GarageScooterCarousel 

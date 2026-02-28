@@ -132,6 +132,7 @@ export const useAddToGarage = () => {
     },
     onSuccess: async ({ isOwned, scooterName }) => {
       queryClient.invalidateQueries({ queryKey: ["user-garage"] });
+      queryClient.invalidateQueries({ queryKey: ["user-garage-scooters"] });
       await refreshProfile();
 
       // Show success toast (without XP mention)
@@ -166,6 +167,7 @@ export const useRemoveFromGarage = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["user-garage"] });
+      queryClient.invalidateQueries({ queryKey: ["user-garage-scooters"] });
       toast("Véhicule retiré de votre garage", {
         description: "À bientôt !",
       });
@@ -221,6 +223,7 @@ export const useToggleOwned = () => {
     },
     onSuccess: async ({ newIsOwned }) => {
       queryClient.invalidateQueries({ queryKey: ["user-garage"] });
+      queryClient.invalidateQueries({ queryKey: ["user-garage-scooters"] });
       await refreshProfile();
 
       if (newIsOwned) {
@@ -264,6 +267,7 @@ export const useUpdateNickname = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["user-garage"] });
+      queryClient.invalidateQueries({ queryKey: ["user-garage-scooters"] });
       toast.success("Surnom enregistré", { duration: 2000 });
     },
     onError: (error) => {
