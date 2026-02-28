@@ -117,7 +117,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, brand:brands(name)')
         .order('name');
       if (error) throw error;
       setScooters((data as any) || []);
@@ -298,7 +298,9 @@ const ScootersManager = () => {
       meta_title: scooter.meta_title || '', meta_description: scooter.meta_description || '',
       affiliate_link: scooter.affiliate_link || '', year: scooter.year?.toString() || '',
       search_terms: scooter.search_terms || '',
+      technical_signature: (scooter.technical_signature as Record<string, any>) || {},
     });
+    setSigOpen(false);
     setIsEditOpen(true);
   };
 
@@ -307,6 +309,10 @@ const ScootersManager = () => {
     setSaving(true);
     try {
       const slug = slugify(editValues.name);
+      // Clean signature: remove empty values
+      const cleanSig = Object.fromEntries(
+        Object.entries(editValues.technical_signature).filter(([, v]) => v !== '' && v !== null && v !== undefined)
+      );
       const { error } = await supabase
         .from('scooter_models')
         .update({
@@ -324,7 +330,8 @@ const ScootersManager = () => {
           affiliate_link: editValues.affiliate_link.trim() || null,
           year: editValues.year ? parseInt(editValues.year) : null,
           search_terms: editValues.search_terms.trim() || null,
-        })
+          technical_signature: cleanSig,
+        } as any)
         .eq('id', editScooter.id);
       if (error) throw error;
       await fetchScooters();
