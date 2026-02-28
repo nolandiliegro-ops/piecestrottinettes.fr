@@ -101,6 +101,7 @@ export const useGarageScooters = () => {
       .filter((item: any) => item.scooter_model !== null) as GarageScooter[];
     },
     enabled: !!user,
+    staleTime: 0,
   });
 
   return {
