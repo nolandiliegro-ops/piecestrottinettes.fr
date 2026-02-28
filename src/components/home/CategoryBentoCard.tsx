@@ -106,11 +106,13 @@ const CategoryBentoCard = ({
             isHero ? "aspect-square" : "aspect-[4/3]"
           )}
           style={{
-            background: "linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 5%) 100%)",
-            border: `1px solid ${neon}40`,
+            background: "rgba(26,26,30,0.75)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            border: `0.5px solid ${neon}35`,
             boxShadow: isHovered
-              ? `0 0 30px ${neon}50, 0 0 60px ${neon}20, inset 0 1px 0 hsla(0,0%,100%,0.05)`
-              : `0 0 15px ${neon}25, inset 0 1px 0 hsla(0,0%,100%,0.05)`,
+              ? `0 0 30px ${neon}35, inset 0 1px 0 hsla(0,0%,100%,0.04)`
+              : `0 0 15px ${neon}15, inset 0 1px 0 hsla(0,0%,100%,0.04)`,
           }}
         >
           {/* Category image with zoom */}
@@ -205,13 +207,13 @@ const CategoryBentoCard = ({
             </motion.div>
           </div>
 
-          {/* Top-left neon accent line */}
+          {/* Top-left neon accent line — subtle */}
           <div
-            className="absolute top-0 left-0 w-16 h-[2px] z-10 rounded-br"
+            className="absolute top-0 left-0 w-12 h-[1px] z-10 rounded-br"
             style={{ background: neon }}
           />
           <div
-            className="absolute top-0 left-0 h-16 w-[2px] z-10 rounded-br"
+            className="absolute top-0 left-0 h-12 w-[1px] z-10 rounded-br"
             style={{ background: neon }}
           />
         </motion.div>
