@@ -29,17 +29,25 @@ const ShopByCategorySection = () => {
 
   return (
     <section className="relative py-16 lg:py-24 overflow-hidden">
-      {/* Dark carbon background */}
+      {/* Greige → Dark transition mask */}
       <div
-        className="absolute inset-0"
+        className="absolute top-0 left-0 right-0 h-[120px] z-20 pointer-events-none"
         style={{
-          background: "linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 10%) 100%)",
+          background: "linear-gradient(to bottom, hsl(30 14% 95%) 0%, transparent 100%)",
         }}
       />
 
-      {/* Carbon fiber texture overlay */}
+      {/* Anthracite background */}
       <div
-        className="absolute inset-0 opacity-30 pointer-events-none"
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, #1A1A1E 0%, #121215 100%)",
+        }}
+      />
+
+      {/* Carbon fiber texture overlay — barely suggested */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='6' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='3' height='3' fill='%23ffffff' fill-opacity='0.03'/%3E%3Crect x='3' y='3' width='3' height='3' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E")`,
           backgroundSize: "6px 6px",
@@ -59,11 +67,10 @@ const ShopByCategorySection = () => {
           transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <h2
-            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white uppercase"
+            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase bg-gradient-to-r from-[#C0C0C0] via-white to-[#A0A0A0] bg-clip-text text-transparent"
             style={{
               fontWeight: 800,
               letterSpacing: "0.06em",
-              textShadow: "0 0 40px hsla(144, 20%, 65%, 0.3)",
             }}
           >
             SHOP BY CATEGORY
