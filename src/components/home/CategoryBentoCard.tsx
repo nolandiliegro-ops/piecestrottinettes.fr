@@ -1,13 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
-  Disc, 
-  Cog, 
-  Battery, 
-  Cpu, 
-  Lightbulb, 
+import {
+  Disc,
+  Cog,
+  Battery,
+  Cpu,
+  Lightbulb,
   Backpack,
-  LucideIcon 
+  LucideIcon,
+  CircleDot,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCategoryImages } from "@/hooks/useCategoryImages";
@@ -22,14 +24,15 @@ interface Category {
 interface CategoryBentoCardProps {
   category: Category;
   partsCount: number;
-  isLarge?: boolean;
+  isHero?: boolean;
   index: number;
 }
 
-// Icon mapping by slug
+// Icon mapping
 const iconMap: Record<string, LucideIcon> = {
   pneus: Disc,
   "disques-plaquettes": Disc,
+  "chambres-air": CircleDot,
   moteurs: Cog,
   batteries: Battery,
   controleurs: Cpu,
@@ -38,101 +41,178 @@ const iconMap: Record<string, LucideIcon> = {
   accessoires: Backpack,
 };
 
-const CategoryBentoCard = ({ 
-  category, 
-  partsCount, 
-  isLarge = false, 
-  index 
+// Neon color mapping per category slug
+const neonColors: Record<string, string> = {
+  pneus: "#00BCD4",
+  "disques-plaquettes": "#FF1744",
+  "chambres-air": "#FFB300",
+  chargeurs: "#00E676",
+  batteries: "#7C4DFF",
+  lumieres: "#FFD600",
+  accessoires: "#FF9100",
+};
+
+// Racing sub-label per category
+const racingLabels: Record<string, string> = {
+  pneus: "PERFORMANCE",
+  "disques-plaquettes": "RACING",
+  "chambres-air": "ENDURANCE",
+  chargeurs: "HAUTE PRÉCISION",
+  batteries: "POWER",
+  lumieres: "VISIBILITÉ",
+  accessoires: "CUSTOM",
+};
+
+const CategoryBentoCard = ({
+  category,
+  partsCount,
+  isHero = false,
+  index,
 }: CategoryBentoCardProps) => {
   const { data: categoryImages = {} } = useCategoryImages();
+  const [isHovered, setIsHovered] = useState(false);
+
   const IconComponent = iconMap[category.slug] || Backpack;
   const imageUrl = categoryImages[category.id];
+  const neon = neonColors[category.slug] || "#93B5A1";
+  const racingLabel = racingLabels[category.slug] || "PREMIUM";
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ 
-        duration: 0.5, 
-        delay: index * 0.1, 
-        ease: [0.25, 0.46, 0.45, 0.94] 
+      transition={{
+        duration: 0.5,
+        delay: index * 0.1,
+        ease: [0.25, 0.46, 0.45, 0.94],
       }}
-      className={cn(
-        isLarge ? "lg:col-span-2" : "col-span-1"
-      )}
+      className={cn(isHero && "col-span-2 row-span-2")}
     >
       <Link to={`/catalogue?category=${category.slug}`}>
         <motion.div
-          whileHover={{ 
-            scale: 1.02, 
-            y: -8,
-            transition: { duration: 0.4, ease: "easeOut" }
+          whileHover={{
+            scale: 1.03,
+            y: -6,
+            transition: { duration: 0.4, ease: "easeOut" },
           }}
           whileTap={{ scale: 0.98 }}
+          onHoverStart={() => setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
           className={cn(
             "group relative overflow-hidden cursor-pointer",
-            "rounded-[24px] border border-white/30",
-            "transition-all duration-400 ease-out",
-            isLarge ? "aspect-[2/1]" : "aspect-square"
+            "rounded-2xl",
+            "transition-shadow duration-300",
+            isHero ? "aspect-square" : "aspect-[4/3]"
           )}
           style={{
-            boxShadow: "0 8px 32px rgba(26, 26, 26, 0.08)",
+            background: "linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 5%) 100%)",
+            border: `1px solid ${neon}40`,
+            boxShadow: isHovered
+              ? `0 0 30px ${neon}50, 0 0 60px ${neon}20, inset 0 1px 0 hsla(0,0%,100%,0.05)`
+              : `0 0 15px ${neon}25, inset 0 1px 0 hsla(0,0%,100%,0.05)`,
           }}
         >
-          {/* Background Image with zoom on hover */}
-          <div className="absolute inset-0 overflow-hidden rounded-[24px]">
-            <motion.div 
+          {/* Category image with zoom */}
+          <div className="absolute inset-0 overflow-hidden rounded-2xl">
+            <motion.div
               className="absolute inset-0 w-full h-full"
-              whileHover={{ scale: 1.1 }}
+              animate={{ scale: isHovered ? 1.08 : 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               {imageUrl ? (
-                <img 
-                  src={imageUrl} 
+                <img
+                  src={imageUrl}
                   alt={category.name}
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover"
                 />
               ) : (
-                <div className="w-full h-full bg-gradient-to-br from-carbon/80 to-carbon/60" />
+                <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent" />
               )}
             </motion.div>
+
+            {/* Dark overlay for readability */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, hsla(0,0%,0%,0.85) 0%, hsla(0,0%,0%,0.4) 50%, hsla(0,0%,0%,0.2) 100%)",
+              }}
+            />
           </div>
 
-          {/* Glassmorphism Overlay */}
-          <div 
-            className="absolute inset-0 flex flex-col justify-end p-5 lg:p-6"
-            style={{
-              background: "linear-gradient(to top, rgba(245,243,240,0.9) 0%, rgba(245,243,240,0.7) 40%, transparent 100%)",
-              backdropFilter: "blur(8px)",
-              WebkitBackdropFilter: "blur(8px)",
-            }}
-          >
-            {/* Icon */}
-            <div className="mb-2 lg:mb-3">
-              <IconComponent className="w-6 h-6 lg:w-8 lg:h-8 text-mineral" />
+          {/* Icon badge — top right */}
+          <div className="absolute top-3 right-3 lg:top-4 lg:right-4 z-10">
+            <div
+              className="w-9 h-9 lg:w-10 lg:h-10 rounded-full flex items-center justify-center"
+              style={{
+                background: "hsla(0,0%,0%,0.5)",
+                backdropFilter: "blur(8px)",
+                border: `1px solid ${neon}40`,
+              }}
+            >
+              <IconComponent
+                className="w-4 h-4 lg:w-5 lg:h-5"
+                style={{ color: neon }}
+              />
             </div>
+          </div>
 
-            {/* Category Name */}
-            <h3 
-              className="font-display text-xl lg:text-2xl xl:text-3xl text-carbon uppercase"
-              style={{ fontWeight: 800, letterSpacing: "-0.02em" }}
+          {/* Content overlay — bottom */}
+          <div className="absolute inset-x-0 bottom-0 p-4 lg:p-5 z-10 flex flex-col justify-end">
+            {/* Racing sub-label */}
+            <span
+              className="font-montserrat text-[10px] lg:text-xs font-bold tracking-[0.2em] uppercase mb-1"
+              style={{ color: `${neon}BB` }}
+            >
+              {racingLabel}
+            </span>
+
+            {/* Category name */}
+            <h3
+              className={cn(
+                "font-display uppercase text-white",
+                isHero
+                  ? "text-3xl lg:text-5xl"
+                  : "text-lg lg:text-xl"
+              )}
+              style={{
+                fontWeight: 800,
+                letterSpacing: "0.04em",
+                textShadow: `0 0 20px ${neon}40`,
+              }}
             >
               {category.name}
             </h3>
 
-            {/* Parts Count */}
-            <p className="text-xs lg:text-sm text-muted-foreground font-medium mt-1">
-              {partsCount} pièces
-            </p>
+            {/* Badge: count — fades in on hover */}
+            <motion.div
+              initial={false}
+              animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 6 }}
+              transition={{ duration: 0.25 }}
+              className="mt-2"
+            >
+              <span
+                className="inline-block px-2.5 py-1 rounded-md font-montserrat text-[10px] lg:text-xs font-bold uppercase tracking-widest"
+                style={{
+                  background: `${neon}15`,
+                  color: neon,
+                  border: `1px solid ${neon}30`,
+                }}
+              >
+                {partsCount} modèles en stock
+              </span>
+            </motion.div>
           </div>
 
-          {/* Hover Glow Border */}
-          <div 
-            className="absolute inset-0 rounded-[24px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-            style={{ 
-              boxShadow: "inset 0 0 0 2px rgba(147,181,161,0.5), 0 0 30px rgba(147,181,161,0.3)" 
-            }}
+          {/* Top-left neon accent line */}
+          <div
+            className="absolute top-0 left-0 w-16 h-[2px] z-10 rounded-br"
+            style={{ background: neon }}
+          />
+          <div
+            className="absolute top-0 left-0 h-16 w-[2px] z-10 rounded-br"
+            style={{ background: neon }}
           />
         </motion.div>
       </Link>
