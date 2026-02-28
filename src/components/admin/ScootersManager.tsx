@@ -91,8 +91,12 @@ const ScootersManager = () => {
     name: '', brand_id: '', power_watts: '', voltage: '', amperage: '',
     max_speed_kmh: '', range_km: '', tire_size: '', youtube_video_id: '',
     description: '', meta_title: '', meta_description: '', affiliate_link: '',
-    year: '', search_terms: ''
+    year: '', search_terms: '',
+    technical_signature: {} as Record<string, any>,
   });
+  const [sigOpen, setSigOpen] = useState(false);
+  const [customKey, setCustomKey] = useState('');
+  const [customValue, setCustomValue] = useState('');
 
   useEffect(() => {
     fetchScooters();
