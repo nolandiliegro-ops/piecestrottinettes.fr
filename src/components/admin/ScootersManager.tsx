@@ -8,7 +8,8 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
 
@@ -32,7 +33,16 @@ interface Scooter {
   search_terms: string | null;
   brand: { name: string } | null;
   brand_id: string;
+  technical_signature: Record<string, any> | null;
 }
+
+const SIGNATURE_DEFAULTS: { key: string; label: string; type: 'select' | 'number' | 'text'; options?: string[] }[] = [
+  { key: 'brake_type', label: 'Type de frein', type: 'select', options: ['disc', 'drum', 'eabs', 'none'] },
+  { key: 'motor_watts', label: 'Moteur (W)', type: 'number' },
+  { key: 'wheel_size', label: 'Taille roue', type: 'text' },
+  { key: 'folding_mechanism', label: 'Mécanisme pliage', type: 'select', options: ['lever_front', 'lever_rear', 'none'] },
+  { key: 'led_position', label: 'Position LEDs', type: 'select', options: ['front', 'rear', 'both', 'none'] },
+];
 
 interface Brand {
   id: string;
