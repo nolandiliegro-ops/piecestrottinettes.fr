@@ -3,7 +3,7 @@ import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap, ScanLine } from 'lucide-react';
+import { Loader2, ArrowLeft, Wrench, Zap, Link2, Shield, Tag, Building, ShieldX, Package, GraduationCap, ScanLine, Palette } from 'lucide-react';
 
 import PartsManager from '@/components/admin/PartsManager';
 import ScootersManager from '@/components/admin/ScootersManager';
@@ -13,6 +13,7 @@ import BrandsManager from '@/components/admin/BrandsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
 import TutosManager from '@/components/admin/TutosManager';
 import ScansManager from '@/components/admin/ScansManager';
+import CategoryDesignManager from '@/components/admin/CategoryDesignManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -133,6 +134,13 @@ const Admin = () => {
               Marques
             </TabsTrigger>
             <TabsTrigger 
+              value="design" 
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
+            >
+              <Palette className="w-4 h-4" />
+              Design Homepage
+            </TabsTrigger>
+            <TabsTrigger 
               value="orders" 
               className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 px-4 py-2 gap-2"
             >
@@ -232,6 +240,22 @@ const Admin = () => {
                 </div>
               </div>
               <BrandsManager />
+            </div>
+          </TabsContent>
+
+          {/* Design Homepage Tab */}
+          <TabsContent value="design" className="mt-6">
+            <div className="rounded-xl border border-border/20 bg-card p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Palette className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground">Design Homepage</h2>
+                  <p className="text-sm text-muted-foreground">Gérer les visuels des catégories Bento</p>
+                </div>
+              </div>
+              <CategoryDesignManager />
             </div>
           </TabsContent>
 
