@@ -1,8 +1,10 @@
 import { useRef, useState, useCallback, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
-import { Camera as CameraIcon, Loader2, Check, X } from 'lucide-react';
+import { Camera as CameraIcon, Loader2, Check, X, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
+import { useIsMobile } from '@/hooks/use-mobile';
+import CameraModal from './CameraModal';
 
 interface GhostFrameCameraProps {
   modelId: string;
@@ -11,19 +13,28 @@ interface GhostFrameCameraProps {
   onMergeMarkers: (markers: Record<string, any>) => void;
 }
 
+/**
+ * Expert capture camera component.
+ * - Desktop: inline camera with ghost frame overlay + file upload fallback
+ * - Mobile: fullscreen modal camera (isolates stream from layout issues) + file upload fallback
+ */
 const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMarkers }: GhostFrameCameraProps) => {
+  const isMobile = useIsMobile();
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [capturing, setCapturing] = useState(false);
   const [extracting, setExtracting] = useState(false);
   const [suggestedMarkers, setSuggestedMarkers] = useState<Record<string, any> | null>(null);
   const [cameraStatus, setCameraStatus] = useState<'idle' | 'initializing' | 'ready' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [mobileModalOpen, setMobileModalOpen] = useState(false);
 
-  // Start/stop camera when mission changes
+  // Desktop: start/stop camera when mission changes
   useEffect(() => {
+    if (isMobile) return; // Mobile uses modal
     if (!activeMission) {
       stopCamera();
       setCameraStatus('idle');
@@ -31,16 +42,19 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
     }
     startCamera();
     return () => stopCamera();
-  }, [activeMission]);
+  }, [activeMission, isMobile]);
+
+  // Mobile: open modal when mission is selected
+  useEffect(() => {
+    if (isMobile && activeMission) {
+      setMobileModalOpen(true);
+    }
+  }, [activeMission, isMobile]);
 
   const stopCamera = () => {
-    if (streamRef.current) {
-      streamRef.current.getTracks().forEach(t => t.stop());
-      streamRef.current = null;
-    }
-    if (videoRef.current) {
-      videoRef.current.srcObject = null;
-    }
+    streamRef.current?.getTracks().forEach(t => t.stop());
+    streamRef.current = null;
+    if (videoRef.current) videoRef.current.srcObject = null;
   };
 
   const startCamera = async () => {
@@ -53,66 +67,34 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
         video: { facingMode: 'environment' },
         audio: false,
       });
-
       streamRef.current = stream;
       const video = videoRef.current;
-      if (!video) {
-        setErrorMessage('Élément vidéo introuvable dans le DOM');
-        setCameraStatus('error');
-        return;
-      }
+      if (!video) { setErrorMessage('Élément vidéo introuvable'); setCameraStatus('error'); return; }
 
       video.srcObject = stream;
-
-      // Use onloadedmetadata for robust mobile playback
       video.onloadedmetadata = () => {
         video.play()
-          .then(() => {
-            console.log('✅ Camera playing');
-            setCameraStatus('ready');
-          })
-          .catch((e) => {
-            console.error('Play failed:', e);
-            setErrorMessage('Lecture vidéo bloquée: ' + e.message);
-            setCameraStatus('error');
-          });
+          .then(() => { console.log('✅ Camera playing'); setCameraStatus('ready'); })
+          .catch(e => { setErrorMessage('Lecture bloquée: ' + e.message); setCameraStatus('error'); });
       };
     } catch (err: any) {
-      console.error('Camera access error:', err);
       const msg =
-        err.name === 'NotAllowedError' ? 'Permission caméra refusée. Autorisez l\'accès dans les réglages.' :
-        err.name === 'NotFoundError' ? 'Aucune caméra détectée sur cet appareil.' :
+        err.name === 'NotAllowedError' ? "Permission caméra refusée. Autorisez l'accès dans les réglages." :
+        err.name === 'NotFoundError' ? 'Aucune caméra détectée.' :
         'Erreur caméra: ' + err.message;
       setErrorMessage(msg);
       setCameraStatus('error');
     }
   };
 
-  const getInstruction = () => {
-    if (!activeMission) return '';
-    return activeMission.type === 'circle'
-      ? 'Alignez les gravures techniques dans le cercle'
-      : "Cadrez l'étiquette technique dans le rectangle";
-  };
+  /** Core processing: upload image + extract markers via AI */
+  const processCapture = useCallback(async (blob: Blob, base64: string) => {
+    if (!activeMission) return;
+    setCapturing(false);
+    setExtracting(true);
 
-  const capturePhoto = useCallback(async () => {
-    const video = videoRef.current;
-    const canvas = canvasRef.current;
-    if (!video || !canvas || !activeMission) return;
-
-    setCapturing(true);
     try {
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) throw new Error('Canvas context unavailable');
-      ctx.drawImage(video, 0, 0);
-
-      const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
-      const base64 = dataUrl.split(',')[1];
-      const blob = await (await fetch(dataUrl)).blob();
       const fileName = `expert/${modelId}/${Date.now()}.jpg`;
-
       const { error: uploadErr } = await supabase.storage
         .from('scooter-photos')
         .upload(fileName, blob, { contentType: 'image/jpeg', upsert: true });
@@ -125,9 +107,6 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
         component_type: activeMission.key,
         image_url: publicUrl,
       });
-
-      setCapturing(false);
-      setExtracting(true);
 
       const { data: extractData, error: extractErr } = await supabase.functions.invoke('extract-markers', {
         body: { image_base64: base64, component_type: activeMission.key },
@@ -152,10 +131,52 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
     } catch (err) {
       console.error('Capture error:', err);
       toast.error('Erreur de capture');
-      setCapturing(false);
       setExtracting(false);
     }
   }, [activeMission, modelId, onCaptureComplete]);
+
+  /** Desktop: capture from inline video */
+  const captureDesktopPhoto = useCallback(async () => {
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+    if (!video || !canvas || !activeMission) return;
+
+    setCapturing(true);
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.drawImage(video, 0, 0);
+
+    const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+    const base64 = dataUrl.split(',')[1];
+    const blob = await (await fetch(dataUrl)).blob();
+    await processCapture(blob, base64);
+  }, [activeMission, processCapture]);
+
+  /** File upload handler (both desktop & mobile) */
+  const handleFileUpload = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !activeMission) return;
+    setCapturing(true);
+
+    const reader = new FileReader();
+    reader.onload = async () => {
+      const dataUrl = reader.result as string;
+      const base64 = dataUrl.split(',')[1];
+      const blob = await (await fetch(dataUrl)).blob();
+      await processCapture(blob, base64);
+    };
+    reader.readAsDataURL(file);
+    // Reset input so same file can be re-selected
+    e.target.value = '';
+  }, [activeMission, processCapture]);
+
+  /** Mobile modal capture callback */
+  const handleMobileCapture = useCallback(async (blob: Blob, base64: string) => {
+    setMobileModalOpen(false);
+    await processCapture(blob, base64);
+  }, [processCapture]);
 
   const handleMerge = () => {
     if (suggestedMarkers) {
@@ -170,60 +191,76 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
     onCaptureComplete();
   };
 
+  const getInstruction = () => {
+    if (!activeMission) return '';
+    return activeMission.type === 'circle'
+      ? 'Alignez les gravures techniques dans le cercle'
+      : "Cadrez l'étiquette technique dans le rectangle";
+  };
+
   return (
     <div className="h-full flex flex-col relative">
       <canvas ref={canvasRef} className="hidden" />
+      <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
 
-      {/* Camera container — block + relative + min-height to prevent 0-height collapse */}
+      {/* Mobile: fullscreen camera modal */}
+      {isMobile && activeMission && (
+        <CameraModal
+          open={mobileModalOpen}
+          missionLabel={activeMission.label}
+          missionType={activeMission.type}
+          onCapture={handleMobileCapture}
+          onClose={() => { setMobileModalOpen(false); onCaptureComplete(); }}
+        />
+      )}
+
+      {/* Camera / preview container */}
       <div
         className="flex-1 bg-black overflow-hidden"
-        style={{ display: 'block', position: 'relative', minHeight: '250px' }}
+        style={{ display: 'block', position: 'relative', minHeight: isMobile ? '50vh' : '250px' }}
       >
         {activeMission ? (
           <>
-            {/* Native video — always rendered so ref is available before stream assignment */}
-            <video
-              ref={videoRef}
-              autoPlay
-              playsInline
-              muted
-              style={{
-                display: 'block',
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-            />
+            {/* Desktop inline video — hidden on mobile since modal is used */}
+            {!isMobile && (
+              <video
+                ref={videoRef}
+                autoPlay
+                playsInline
+                muted
+                style={{ display: 'block', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            )}
 
-            {/* Initializing overlay */}
-            {cameraStatus === 'initializing' && (
+            {/* Desktop: initializing overlay */}
+            {!isMobile && cameraStatus === 'initializing' && (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10 bg-black">
                 <Loader2 className="w-8 h-8 text-[hsl(144,20%,65%)] animate-spin" />
                 <p className="text-white/60 text-sm">Initialisation caméra...</p>
               </div>
             )}
 
-            {/* Error overlay — shows error message on screen */}
-            {cameraStatus === 'error' && (
+            {/* Desktop: error overlay with file upload fallback */}
+            {!isMobile && cameraStatus === 'error' && (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10 bg-black px-6">
                 <CameraIcon className="w-10 h-10 text-red-400" />
                 <p className="text-red-400 text-sm text-center">{errorMessage}</p>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={startCamera}
-                  className="text-[hsl(144,20%,65%)] hover:bg-white/10 mt-2"
-                >
+                <Button variant="ghost" size="sm" onClick={startCamera} className="text-[hsl(144,20%,65%)] hover:bg-white/10 mt-2">
                   Réessayer
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="border-[hsl(144,20%,65%)]/40 text-[hsl(144,20%,65%)] hover:bg-[hsl(144,20%,65%)]/10 gap-2"
+                >
+                  <Upload className="w-4 h-4" /> Importer une photo
                 </Button>
               </div>
             )}
 
-            {/* Ghost Frame SVG overlay */}
-            {cameraStatus === 'ready' && (
+            {/* Desktop: ghost frame overlay */}
+            {!isMobile && cameraStatus === 'ready' && (
               <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-20">
                 <svg width="100%" height="100%" viewBox="0 0 400 400" className="max-w-[80%] max-h-[80%]">
                   {activeMission.type === 'circle' ? (
@@ -247,12 +284,31 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
               </div>
             )}
 
-            {/* Instruction text */}
-            {cameraStatus === 'ready' && (
+            {/* Desktop: instruction text */}
+            {!isMobile && cameraStatus === 'ready' && (
               <div className="absolute bottom-16 left-0 right-0 text-center z-20">
-                <p className="text-[hsl(144,20%,65%)] text-sm font-medium drop-shadow-lg px-4">
-                  {getInstruction()}
-                </p>
+                <p className="text-[hsl(144,20%,65%)] text-sm font-medium drop-shadow-lg px-4">{getInstruction()}</p>
+              </div>
+            )}
+
+            {/* Mobile: prompt to open modal or import */}
+            {isMobile && !mobileModalOpen && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10 px-6">
+                <CameraIcon className="w-12 h-12 text-[hsl(144,20%,65%)]/60" />
+                <p className="text-white/70 text-sm text-center font-medium">{activeMission.label}</p>
+                <Button
+                  onClick={() => setMobileModalOpen(true)}
+                  className="bg-[hsl(144,20%,65%)] hover:bg-[hsl(144,25%,55%)] text-white gap-2"
+                >
+                  <CameraIcon className="w-4 h-4" /> Ouvrir la caméra
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="border-[hsl(144,20%,65%)]/40 text-[hsl(144,20%,65%)] hover:bg-[hsl(144,20%,65%)]/10 gap-2"
+                >
+                  <Upload className="w-4 h-4" /> Importer une photo
+                </Button>
               </div>
             )}
           </>
@@ -275,7 +331,7 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
           </div>
         )}
 
-        {/* Suggested Markers overlay */}
+        {/* Suggested markers overlay */}
         {suggestedMarkers && (
           <div className="absolute inset-0 bg-[hsl(0,0%,10%)]/90 backdrop-blur-md flex flex-col items-center justify-center z-30 p-6">
             <p className="text-white font-display text-lg mb-4">Marqueurs Détectés</p>
@@ -291,7 +347,7 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
               <Button onClick={handleReject} variant="ghost" className="text-white/60 hover:text-white hover:bg-white/10 gap-2">
                 <X className="w-4 h-4" /> Ignorer
               </Button>
-              <Button onClick={handleMerge} className="bg-[hsl(144,20%,65%)] hover:bg-[hsl(144,20%,55%)] text-white gap-2">
+              <Button onClick={handleMerge} className="bg-[hsl(144,20%,65%)] hover:bg-[hsl(144,25%,55%)] text-white gap-2">
                 <Check className="w-4 h-4" /> Valider & Fusionner
               </Button>
             </div>
@@ -299,11 +355,19 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
         )}
       </div>
 
-      {/* Capture Button */}
-      {activeMission && cameraStatus === 'ready' && !extracting && !suggestedMarkers && (
-        <div className="p-3 flex justify-center bg-[hsl(0,0%,10%)]">
+      {/* Desktop: capture + upload buttons */}
+      {!isMobile && activeMission && cameraStatus === 'ready' && !extracting && !suggestedMarkers && (
+        <div className="p-3 flex items-center justify-center gap-4 bg-[hsl(0,0%,10%)]">
           <button
-            onClick={capturePhoto}
+            onClick={() => fileInputRef.current?.click()}
+            disabled={capturing}
+            className="w-10 h-10 rounded-xl border border-[hsl(144,20%,65%)]/40 bg-white/5 flex items-center justify-center text-[hsl(144,20%,65%)] hover:bg-[hsl(144,20%,65%)]/10 transition-colors disabled:opacity-50"
+            title="Importer une photo"
+          >
+            <Upload className="w-4 h-4" />
+          </button>
+          <button
+            onClick={captureDesktopPhoto}
             disabled={capturing}
             className="w-14 h-14 rounded-full border-4 border-[hsl(144,20%,65%)] bg-transparent hover:bg-[hsl(144,20%,65%)]/20 transition-all flex items-center justify-center disabled:opacity-50"
           >
@@ -313,6 +377,7 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
               <div className="w-10 h-10 rounded-full bg-[hsl(144,20%,65%)]" />
             )}
           </button>
+          <div className="w-10 h-10" /> {/* Spacer for symmetry */}
         </div>
       )}
     </div>
