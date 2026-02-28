@@ -218,6 +218,47 @@ export type Database = {
           },
         ]
       }
+      expert_captures: {
+        Row: {
+          ai_extracted_markers: Json | null
+          captured_by: string | null
+          component_type: string
+          created_at: string | null
+          id: string
+          image_url: string
+          model_id: string
+          technician_notes: string | null
+        }
+        Insert: {
+          ai_extracted_markers?: Json | null
+          captured_by?: string | null
+          component_type: string
+          created_at?: string | null
+          id?: string
+          image_url: string
+          model_id: string
+          technician_notes?: string | null
+        }
+        Update: {
+          ai_extracted_markers?: Json | null
+          captured_by?: string | null
+          component_type?: string
+          created_at?: string | null
+          id?: string
+          image_url?: string
+          model_id?: string
+          technician_notes?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "expert_captures_model_id_fkey"
+            columns: ["model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       favorites: {
         Row: {
           created_at: string | null

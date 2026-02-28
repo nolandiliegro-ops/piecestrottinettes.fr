@@ -20,3 +20,6 @@ verify_jwt = false
 
 [functions.scan-trott]
 verify_jwt = false
+
+[functions.extract-markers]
+verify_jwt = false
