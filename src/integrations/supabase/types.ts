@@ -14,6 +14,98 @@ export type Database = {
   }
   public: {
     Tables: {
+      ai_learning_logs: {
+        Row: {
+          confidence_score: number | null
+          confirmed_model_id: string | null
+          created_at: string | null
+          detected_markers: Json
+          id: string
+          image_url: string | null
+          promoted: boolean | null
+          promoted_at: string | null
+          scan_validation_id: string | null
+        }
+        Insert: {
+          confidence_score?: number | null
+          confirmed_model_id?: string | null
+          created_at?: string | null
+          detected_markers?: Json
+          id?: string
+          image_url?: string | null
+          promoted?: boolean | null
+          promoted_at?: string | null
+          scan_validation_id?: string | null
+        }
+        Update: {
+          confidence_score?: number | null
+          confirmed_model_id?: string | null
+          created_at?: string | null
+          detected_markers?: Json
+          id?: string
+          image_url?: string | null
+          promoted?: boolean | null
+          promoted_at?: string | null
+          scan_validation_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ai_learning_logs_confirmed_model_id_fkey"
+            columns: ["confirmed_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "ai_learning_logs_scan_validation_id_fkey"
+            columns: ["scan_validation_id"]
+            isOneToOne: false
+            referencedRelation: "scan_validations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      asset_requests: {
+        Row: {
+          component_type: string
+          created_at: string | null
+          id: string
+          instructions: string | null
+          model_id: string
+          priority_score: number | null
+          status: string
+          updated_at: string | null
+        }
+        Insert: {
+          component_type: string
+          created_at?: string | null
+          id?: string
+          instructions?: string | null
+          model_id: string
+          priority_score?: number | null
+          status?: string
+          updated_at?: string | null
+        }
+        Update: {
+          component_type?: string
+          created_at?: string | null
+          id?: string
+          instructions?: string | null
+          model_id?: string
+          priority_score?: number | null
+          status?: string
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "asset_requests_model_id_fkey"
+            columns: ["model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       brands: {
         Row: {
           created_at: string
@@ -592,6 +684,7 @@ export type Database = {
           range_km: number | null
           search_terms: string | null
           slug: string
+          technical_signature: Json | null
           tire_size: string | null
           voltage: number | null
           year: number | null
@@ -614,6 +707,7 @@ export type Database = {
           range_km?: number | null
           search_terms?: string | null
           slug: string
+          technical_signature?: Json | null
           tire_size?: string | null
           voltage?: number | null
           year?: number | null
@@ -636,6 +730,7 @@ export type Database = {
           range_km?: number | null
           search_terms?: string | null
           slug?: string
+          technical_signature?: Json | null
           tire_size?: string | null
           voltage?: number | null
           year?: number | null
