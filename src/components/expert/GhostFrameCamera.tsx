@@ -240,22 +240,24 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
               </div>
             )}
 
-            {/* Desktop: error overlay with file upload fallback */}
+            {/* Desktop: error overlay with prominent file upload fallback */}
             {!isMobile && cameraStatus === 'error' && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10 bg-black px-6">
-                <CameraIcon className="w-10 h-10 text-red-400" />
-                <p className="text-red-400 text-sm text-center">{errorMessage}</p>
-                <Button variant="ghost" size="sm" onClick={startCamera} className="text-[hsl(144,20%,65%)] hover:bg-white/10 mt-2">
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10 bg-black px-6">
+                <CameraIcon className="w-12 h-12 text-red-400/80" />
+                <p className="text-red-400 text-sm text-center max-w-xs">{errorMessage}</p>
+                <Button variant="ghost" size="sm" onClick={startCamera} className="text-white/50 hover:text-white hover:bg-white/10">
                   Réessayer
                 </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => fileInputRef.current?.click()}
-                  className="border-[hsl(144,20%,65%)]/40 text-[hsl(144,20%,65%)] hover:bg-[hsl(144,20%,65%)]/10 gap-2"
-                >
-                  <Upload className="w-4 h-4" /> Importer une photo
-                </Button>
+                <div className="w-full max-w-xs border-t border-white/10 pt-4 mt-1">
+                  <Button
+                    onClick={() => fileInputRef.current?.click()}
+                    disabled={capturing}
+                    className="w-full bg-[hsl(144,20%,65%)] hover:bg-[hsl(144,25%,55%)] text-white gap-3 h-12 text-sm font-display tracking-wider uppercase"
+                  >
+                    {capturing ? <Loader2 className="w-5 h-5 animate-spin" /> : <Upload className="w-5 h-5" />}
+                    {capturing ? 'Chargement...' : 'Importer une photo (Fallback)'}
+                  </Button>
+                </div>
               </div>
             )}
 
@@ -326,8 +328,8 @@ const GhostFrameCamera = ({ modelId, activeMission, onCaptureComplete, onMergeMa
               <div className="w-16 h-16 rounded-full border-2 border-[hsl(144,20%,65%)]/30 animate-ping absolute inset-0" />
               <Loader2 className="w-16 h-16 text-[hsl(144,20%,65%)] animate-spin" />
             </div>
-            <p className="text-[hsl(144,20%,65%)] text-lg font-display tracking-wider mt-4">Extraction ADN...</p>
-            <p className="text-white/40 text-xs mt-1">Analyse des marqueurs techniques</p>
+            <p className="text-[hsl(144,20%,65%)] text-lg font-display tracking-wider mt-4">Scan IA en cours...</p>
+            <p className="text-white/40 text-xs mt-1">Extraction des marqueurs techniques</p>
           </div>
         )}
 
