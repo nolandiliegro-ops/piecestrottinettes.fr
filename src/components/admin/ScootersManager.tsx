@@ -723,6 +723,117 @@ const ScootersManager = () => {
                 <Input value={editValues.youtube_video_id} onChange={(e) => setEditValues(prev => ({ ...prev, youtube_video_id: e.target.value }))} />
               </div>
             </div>
+
+            {/* Signature Technique (IA) — Lave Froide */}
+            <Collapsible open={sigOpen} onOpenChange={setSigOpen}>
+              <CollapsibleTrigger asChild>
+                <button className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-[#1A1A1A] border border-[#93B5A1]/30 text-white/90 hover:border-[#93B5A1]/60 transition-all group">
+                  <span className="flex items-center gap-2 text-sm font-medium">
+                    <Cpu className="w-4 h-4 text-[#93B5A1] drop-shadow-[0_0_6px_rgba(147,181,161,0.5)]" />
+                    Signature Technique (IA)
+                  </span>
+                  <ChevronDown className={`w-4 h-4 text-[#93B5A1] transition-transform ${sigOpen ? 'rotate-180' : ''}`} />
+                </button>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <div className="mt-2 p-4 rounded-xl bg-[#1A1A1A]/90 backdrop-blur-sm border border-[#93B5A1]/20 space-y-3">
+                  {/* Standard keys */}
+                  {SIGNATURE_DEFAULTS.map((field) => (
+                    <div key={field.key} className="flex items-center gap-3">
+                      <Label className="text-xs text-white/60 w-28 shrink-0">{field.label}</Label>
+                      {field.type === 'select' ? (
+                        <Select
+                          value={editValues.technical_signature[field.key] || ''}
+                          onValueChange={(v) => setEditValues(prev => ({
+                            ...prev,
+                            technical_signature: { ...prev.technical_signature, [field.key]: v }
+                          }))}
+                        >
+                          <SelectTrigger className="bg-white/5 border-white/10 text-white text-xs h-8">
+                            <SelectValue placeholder="—" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {field.options?.map(o => (
+                              <SelectItem key={o} value={o}>{o}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      ) : field.type === 'number' ? (
+                        <Input
+                          type="number" className="bg-white/5 border-white/10 text-white text-xs h-8"
+                          value={editValues.technical_signature[field.key] || ''}
+                          onChange={(e) => setEditValues(prev => ({
+                            ...prev,
+                            technical_signature: { ...prev.technical_signature, [field.key]: e.target.value ? Number(e.target.value) : '' }
+                          }))}
+                        />
+                      ) : (
+                        <Input
+                          className="bg-white/5 border-white/10 text-white text-xs h-8"
+                          value={editValues.technical_signature[field.key] || ''}
+                          onChange={(e) => setEditValues(prev => ({
+                            ...prev,
+                            technical_signature: { ...prev.technical_signature, [field.key]: e.target.value }
+                          }))}
+                        />
+                      )}
+                    </div>
+                  ))}
+
+                  {/* Custom keys */}
+                  {Object.entries(editValues.technical_signature)
+                    .filter(([k]) => !SIGNATURE_DEFAULTS.some(d => d.key === k))
+                    .map(([k, v]) => (
+                      <div key={k} className="flex items-center gap-2">
+                        <span className="text-xs text-[#93B5A1] font-mono w-28 shrink-0 truncate">{k}</span>
+                        <Input
+                          className="bg-white/5 border-white/10 text-white text-xs h-8 flex-1"
+                          value={String(v || '')}
+                          onChange={(e) => setEditValues(prev => ({
+                            ...prev,
+                            technical_signature: { ...prev.technical_signature, [k]: e.target.value }
+                          }))}
+                        />
+                        <Button
+                          variant="ghost" size="icon" className="h-7 w-7 text-destructive/70 hover:text-destructive"
+                          onClick={() => setEditValues(prev => {
+                            const sig = { ...prev.technical_signature };
+                            delete sig[k];
+                            return { ...prev, technical_signature: sig };
+                          })}
+                        >
+                          <Trash2 className="w-3 h-3" />
+                        </Button>
+                      </div>
+                    ))}
+
+                  {/* Add custom marker */}
+                  <div className="flex items-center gap-2 pt-2 border-t border-white/10">
+                    <Input
+                      placeholder="clé" className="bg-white/5 border-white/10 text-white text-xs h-8 w-28"
+                      value={customKey} onChange={(e) => setCustomKey(e.target.value)}
+                    />
+                    <Input
+                      placeholder="valeur" className="bg-white/5 border-white/10 text-white text-xs h-8 flex-1"
+                      value={customValue} onChange={(e) => setCustomValue(e.target.value)}
+                    />
+                    <Button
+                      size="sm" className="h-8 bg-[#93B5A1] hover:bg-[#7a9e89] text-white text-xs"
+                      disabled={!customKey.trim()}
+                      onClick={() => {
+                        setEditValues(prev => ({
+                          ...prev,
+                          technical_signature: { ...prev.technical_signature, [customKey.trim()]: customValue }
+                        }));
+                        setCustomKey(''); setCustomValue('');
+                      }}
+                    >
+                      <Plus className="w-3 h-3 mr-1" /> Ajouter
+                    </Button>
+                  </div>
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
           </div>
           <DialogFooter>
             <Button onClick={saveEdit} disabled={saving || !editValues.name.trim() || !editValues.brand_id} className="w-full bg-primary hover:bg-primary/90">
