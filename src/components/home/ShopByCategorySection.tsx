@@ -3,12 +3,9 @@ import CategoryBentoCard from "./CategoryBentoCard";
 import { useCategoryPartsCount } from "@/hooks/useCategoryPartsCount";
 import { Skeleton } from "@/components/ui/skeleton";
 
-// Hero card slug
-const HERO_SLUG = "pneus";
-
 // Display order for the racing bento grid
 const CATEGORY_ORDER = [
-  "pneus",              // Hero — col-span-2 row-span-2
+  "pneus",
   "disques-plaquettes",
   "chargeurs",
   "chambres-air",
@@ -45,7 +42,7 @@ const ShopByCategorySection = () => {
         }}
       />
 
-      {/* Carbon fiber texture overlay — barely suggested */}
+      {/* Carbon fiber texture overlay */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
@@ -54,11 +51,9 @@ const ShopByCategorySection = () => {
         }}
       />
 
-      {/* Neon grid overlay */}
       <div className="gaming-grid-bg" />
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Header */}
         <motion.div
           className="text-center mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -68,10 +63,7 @@ const ShopByCategorySection = () => {
         >
           <h2
             className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase bg-gradient-to-r from-[#C0C0C0] via-white to-[#A0A0A0] bg-clip-text text-transparent"
-            style={{
-              fontWeight: 800,
-              letterSpacing: "0.06em",
-            }}
+            style={{ fontWeight: 800, letterSpacing: "0.06em" }}
           >
             SHOP BY CATEGORY
           </h2>
@@ -83,7 +75,6 @@ const ShopByCategorySection = () => {
           </p>
         </motion.div>
 
-        {/* Racing Bento Grid */}
         {isLoading ? (
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
             {[...Array(5)].map((_, i) => (
@@ -94,13 +85,12 @@ const ShopByCategorySection = () => {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
             {sortedCategories.map((category, index) => (
               <CategoryBentoCard
                 key={category.id}
                 category={category}
                 partsCount={category.parts_count}
-                isHero={category.slug === HERO_SLUG}
                 index={index}
               />
             ))}
