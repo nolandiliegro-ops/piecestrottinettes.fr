@@ -151,7 +151,7 @@ const Tutos = () => {
             <span className="text-sm text-carbon/70">Filtrer par modèle :</span>
             
             <Select value={selectedScooter || 'all'} onValueChange={handleScooterChange}>
-              <SelectTrigger className="w-64 bg-white/60 border-mineral/20 focus:ring-mineral/30">
+              <SelectTrigger className="w-48 md:w-64 bg-white/60 border-mineral/20 focus:ring-mineral/30 text-sm">
                 <SelectValue placeholder="Tous les modèles" />
               </SelectTrigger>
               <SelectContent>

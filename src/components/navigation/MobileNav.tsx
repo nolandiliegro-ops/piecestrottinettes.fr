@@ -24,7 +24,7 @@ const MobileNav = () => {
   const navItems: NavItem[] = [
     { icon: Package, label: 'Pièces', path: '/catalogue' },
     { icon: Bike, label: 'Garage', path: '/garage' },
-    { icon: Search, label: 'Search', action: () => openSpotlight(), isSpotlight: true },
+    { icon: Search, label: 'Chercher', action: () => openSpotlight(), isSpotlight: true },
     { icon: Play, label: 'Tutos', path: '/tutos' },
     { icon: ShoppingBag, label: 'Panier', action: () => openCart(true) },
   ];
