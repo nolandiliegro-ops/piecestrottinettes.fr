@@ -1,25 +1,26 @@
 
-Plan validé après lecture du code : le composant `ScanTrottButton` n’est plus branché dans l’UI publique, mais il reste encore 2 entrées visiteur “scanner” visibles en dur.
 
-Fichiers où je vais intervenir avant build :
+# Deux points à traiter
 
-1. `src/components/hero/CommandPanel.tsx`
-- Supprimer le bouton desktop “Scanner ma Trottinette”
-- Retirer l’icône `Scan` si elle devient inutilisée
-- Conserver intact le reste du panel : recherche, marques, bouton “Mon Garage”
+## 1. Logo Header — ajustement taille
 
-2. `src/components/hero/ExpertJourneySection.tsx`
-- Supprimer le bouton mobile “Scanner ma Trottinette”
-- Nettoyer tout wording visible lié au scan dans cette section
-- Remplacer le texte `Scannez ou recherchez votre modèle` par une version 100% recherche
-- Remplacer aussi l’icône/étape si nécessaire pour qu’aucune référence au scan ne reste visible au visiteur
+Le logo est actuellement en `h-12 lg:h-14` (ligne 82 de Header.tsx). Ta demande : `h-8 sm:h-10 lg:h-12`.
 
-Constat important :
-- `src/components/scan/ScanTrottButton.tsx` restera intact
-- `supabase/functions/scan-trott/index.ts` restera intact
-- Les éléments admin liés au scanner ne seront pas touchés
-- Je n’ai pas identifié d’autre rendu public actif de “Scanner ma Trottinette” en dehors de ces 2 fichiers
+**Modification** : `src/components/Header.tsx` ligne 82
+```
+className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
+```
 
-Résultat attendu après implémentation :
-- Plus aucun bouton ni libellé “Scanner ma trott/trottinette” visible côté visiteur
-- Le moteur scan reste présent dans le code pour réactivation plus tard
+Un seul fichier, une seule ligne.
+
+## 2. Preview avec ancien cache — explication
+
+C'est **normal** et c'est un problème de cache navigateur + Service Worker PWA. Quand tu ouvres la preview via le lien direct avec le token, le navigateur peut servir une version en cache (surtout avec le Service Worker Workbox qu'on a configuré en `autoUpdate`).
+
+**Solutions immédiates** :
+- **Ctrl+Shift+R** (hard refresh) sur la preview
+- Ou ouvre les DevTools (F12) → onglet Application → Service Workers → coche "Update on reload" → recharge
+- Ou vide le cache : DevTools → Application → Storage → "Clear site data"
+
+Ça ne nécessite aucune modification de code. Les changements sont bien déployés, c'est juste le navigateur qui sert l'ancienne version cachée.
+
