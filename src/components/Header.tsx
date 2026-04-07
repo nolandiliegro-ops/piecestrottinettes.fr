@@ -79,7 +79,7 @@ const Header = () => {
             <img 
               src={logoImage}
               alt="piècestrottinettes.FR"
-              className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
+              className="h-14 sm:h-16 lg:h-20 -my-3 w-auto object-contain"
             />
           </Link>
 
