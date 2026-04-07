@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Scan, Wrench, Zap, ChevronDown } from "lucide-react";
+import { Search, Wrench, Zap, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const steps = [
   {
     number: "01",
-    icon: Scan,
-    title: "IDENTIFIEZ",
-    description: "Scannez ou recherchez votre modèle"
+    icon: Search,
+    title: "RECHERCHEZ",
+    description: "Trouvez votre modèle de trottinette"
   },
   {
     number: "02",
@@ -89,23 +89,7 @@ const ExpertJourneySection = () => {
           ))}
         </div>
 
-        {/* CTA Primary - Scanner */}
-        <motion.button
-          onClick={() => {
-            triggerHaptic();
-            // Scanner functionality - for now just visual
-          }}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.97 }}
-          animate={{ scale: [1, 1.01, 1] }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-          className="w-full py-4 bg-carbon text-white rounded-full font-display uppercase tracking-wide text-sm flex items-center justify-center gap-2 shadow-lg"
-        >
-          <Scan className="w-5 h-5" />
-          Scanner ma Trottinette
-        </motion.button>
-
-        {/* CTA Secondary - Catalogue avec Scroll Smooth */}
+        {/* CTA Primary - Catalogue */}
         <motion.button
           onClick={() => {
             triggerHaptic();
