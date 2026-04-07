@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
+import { Truck, Wrench, RotateCcw } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -59,6 +60,24 @@ const Index = () => {
 
         {/* 2. Expert Journey Section - Mobile Only */}
         <ExpertJourneySection />
+
+        {/* Trust Signals Bar */}
+        <div className="py-4 lg:py-6">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 lg:gap-12 py-4 px-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-white/30">
+              {[
+                { icon: Truck, label: "Expédition sous 24h" },
+                { icon: Wrench, label: "Mécanicien professionnel" },
+                { icon: RotateCcw, label: "Retours 14 jours" },
+              ].map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center gap-2.5">
+                  <Icon className="w-5 h-5 text-mineral flex-shrink-0" strokeWidth={1.5} />
+                  <span className="font-display text-xs uppercase tracking-wider text-carbon">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* 3. Compatible Parts Section - Scroll Reveal */}
         <motion.section

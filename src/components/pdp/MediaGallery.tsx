@@ -19,6 +19,8 @@ const MediaGallery = ({ imageUrl, productName }: MediaGalleryProps) => {
           <img
             src={imageUrl}
             alt={productName}
+            loading="lazy"
+            decoding="async"
             className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
           />
           {/* Subtle gradient overlay */}

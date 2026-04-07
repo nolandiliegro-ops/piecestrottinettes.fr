@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ShoppingCart, Check, AlertCircle, Wrench } from "lucide-react";
+import { ShoppingCart, Check, AlertCircle, Wrench, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
@@ -34,6 +34,7 @@ const PurchaseBlock = ({
   const { user } = useAuth();
   const { scooters } = useGarageScooters();
   const [installDialogOpen, setInstallDialogOpen] = useState(false);
+  const [isAdding, setIsAdding] = useState(false);
   
   const isInStock = stockQuantity !== null && stockQuantity > 0;
   
@@ -41,7 +42,8 @@ const PurchaseBlock = ({
   const canMarkAsInstalled = !!user && scooters && scooters.length > 0;
 
   const handleAddToCart = () => {
-    if (!isInStock || price === null) return;
+    if (!isInStock || price === null || isAdding) return;
+    setIsAdding(true);
 
     addItem({
       id,
@@ -77,6 +79,7 @@ const PurchaseBlock = ({
         },
       }
     );
+    setTimeout(() => setIsAdding(false), 800);
   };
 
   return (
@@ -140,11 +143,20 @@ const PurchaseBlock = ({
       >
         <Button
           onClick={handleAddToCart}
-          disabled={!isInStock}
+          disabled={!isInStock || isAdding}
           className="w-full h-14 bg-carbon hover:bg-carbon/90 text-white font-display text-lg uppercase tracking-widest rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(38,38,38,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <ShoppingCart className="w-5 h-5 mr-3" />
-          Ajouter au panier
+          {isAdding ? (
+            <>
+              <Loader2 className="w-5 h-5 mr-3 animate-spin" />
+              Ajout en cours...
+            </>
+          ) : (
+            <>
+              <ShoppingCart className="w-5 h-5 mr-3" />
+              Ajouter au panier
+            </>
+          )}
         </Button>
       </motion.div>
 

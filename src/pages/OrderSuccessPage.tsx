@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, Home, ShoppingBag } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -22,12 +22,13 @@ interface LocationState {
 
 const OrderSuccessPage = () => {
   const location = useLocation();
+  const [searchParams] = useSearchParams();
   const { user } = useAuth();
   const [showSignupModal, setShowSignupModal] = useState(false);
   
-  // Get data from location state
+  // Get data from location state or URL params
   const state = location.state as LocationState | null;
-  const orderNumber = state?.orderNumber || `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+  const orderNumber = state?.orderNumber || searchParams.get('order') || "Commande en cours de traitement";
   const customerEmail = state?.customerEmail || "";
   const customerFirstName = state?.customerFirstName || "";
   const customerLastName = state?.customerLastName || "";
