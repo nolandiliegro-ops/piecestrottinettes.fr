@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Search, Scan, Home } from "lucide-react";
+import { Search, Home } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { Brand, ScooterModel } from "@/data/scooterData";
@@ -185,20 +185,8 @@ const CommandPanel = ({
         </div>
       </div>
 
-      {/* SCANNER & GARAGE Buttons - Desktop Only (moved to ExpertJourneySection on mobile) */}
+      {/* GARAGE Button - Desktop Only */}
       <div className="hidden lg:block animate-fade-in pt-4" style={{ animationDelay: "0.3s" }}>
-        <motion.button
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="flex items-center justify-start gap-3 px-0 group cursor-pointer"
-        >
-          <Scan className="w-8 h-8 text-carbon group-hover:text-mineral transition-colors duration-300" />
-          <span className="font-display text-xl text-carbon tracking-wide group-hover:text-mineral transition-colors duration-300 uppercase">
-            Scanner ma Trottinette
-          </span>
-        </motion.button>
-        
-        {/* Mon Garage */}
         <motion.button
           onClick={() => navigate(user ? '/garage' : '/login')}
           whileHover={{ scale: 1.02 }}
