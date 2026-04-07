@@ -22,6 +22,7 @@ import { useCategories, useScooterModels } from "@/hooks/useScooterData";
 import { useAllParts } from "@/hooks/useCatalogueData";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
+import { useAdminRole } from "@/hooks/useAdminRole";
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -69,6 +70,7 @@ const Catalogue = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const queryClient = useQueryClient();
+  const { isAdmin } = useAdminRole();
 
   // Get scooter filter from URL params (e.g., ?scooter=uuid)
   const scooterIdFilter = searchParams.get("scooter");
@@ -354,7 +356,7 @@ const Catalogue = () => {
       </Dialog>
 
       {/* Admin Floating Button - Temporarily visible for image generation */}
-      {true && (
+      {isAdmin && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
