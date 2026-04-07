@@ -4,7 +4,7 @@ import HeroBranding from "./hero/HeroBranding";
 import ScooterCarousel from "./hero/ScooterCarousel";
 import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
 import CommandPanel from "./hero/CommandPanel";
-import ScanTrottButton from "./scan/ScanTrottButton";
+
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 
 interface HeroSectionProps {
@@ -166,10 +166,6 @@ const HeroSection = ({ onActiveModelChange, compatiblePartsCount }: HeroSectionP
               onModelSelect={handleModelSelect}
               activeModel={activeModel}
             />
-            {/* Scan Trott Button */}
-            <div className="flex justify-center mt-3">
-              <ScanTrottButton />
-            </div>
           </div>
 
           {/* MOBILE ORDER 3: Scooter Carousel (Image, Specs, Dots, Bridge) */}

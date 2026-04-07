@@ -26,9 +26,9 @@ export default defineConfig(({ mode }) => ({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MiB
       },
       manifest: {
-        short_name: "Admin Studio",
-        name: "PiècesTrottinettes Admin",
-        start_url: "/admin",
+        short_name: "PiècesTrott",
+        name: "Pièces Trottinettes",
+        start_url: "/",
         display: "standalone",
         background_color: "#1A1A1A",
         theme_color: "#93B5A1",
