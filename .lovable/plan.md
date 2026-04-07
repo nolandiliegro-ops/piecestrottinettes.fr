@@ -1,26 +1,54 @@
 
 
-# Deux points à traiter
+# Batch 3 — Conversion & Performance
 
-## 1. Logo Header — ajustement taille
+## Constat préalable
+Le bouton "Confirmer" dans `OrderConfirmationModal.tsx` a **déjà** `isSubmitting` + `disabled` + spinner `Loader2` avec texte "REDIRECTION..." (lignes 282-297). Rien à faire ici.
 
-Le logo est actuellement en `h-12 lg:h-14` (ligne 82 de Header.tsx). Ta demande : `h-8 sm:h-10 lg:h-12`.
+## 3.1 Feedback visuel ajout au panier — PurchaseBlock.tsx
 
-**Modification** : `src/components/Header.tsx` ligne 82
-```
-className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
-```
+**Fichier** : `src/components/pdp/PurchaseBlock.tsx`
 
-Un seul fichier, une seule ligne.
+Ajouter un état `isAdding` avec timer 800ms pour simuler le feedback :
+- `useState(false)` pour `isAdding`
+- Au clic : set `isAdding = true`, exécuter `addItem()`, afficher le toast, puis `setTimeout(() => setIsAdding(false), 800)`
+- Bouton : `disabled={!isInStock || isAdding}`, texte conditionnel avec `Loader2 animate-spin` + "AJOUT EN COURS..." quand `isAdding`
 
-## 2. Preview avec ancien cache — explication
+## 3.2 Corriger Math.random() — OrderSuccessPage.tsx
 
-C'est **normal** et c'est un problème de cache navigateur + Service Worker PWA. Quand tu ouvres la preview via le lien direct avec le token, le navigateur peut servir une version en cache (surtout avec le Service Worker Workbox qu'on a configuré en `autoUpdate`).
+**Fichier** : `src/pages/OrderSuccessPage.tsx`
 
-**Solutions immédiates** :
-- **Ctrl+Shift+R** (hard refresh) sur la preview
-- Ou ouvre les DevTools (F12) → onglet Application → Service Workers → coche "Update on reload" → recharge
-- Ou vide le cache : DevTools → Application → Storage → "Clear site data"
+Remplacer le fallback `PT-${Math.random()...}` (ligne 34) par :
+- Tenter de lire `searchParams.get('order')` depuis l'URL
+- Si absent et pas de `state.orderNumber` : afficher "Commande en cours de traitement" au lieu d'un faux numéro
 
-Ça ne nécessite aucune modification de code. Les changements sont bien déployés, c'est juste le navigateur qui sert l'ancienne version cachée.
+## 3.3 Lazy loading images
+
+**Fichiers** : `src/components/parts/PartCard.tsx`, `src/components/pdp/MediaGallery.tsx`, `src/components/catalogue/CategoryBentoGrid.tsx`
+
+Ajouter `loading="lazy" decoding="async"` sur toutes les balises `<img>` de ces 3 composants (5 images au total).
+
+## 3.4 Trust signals homepage
+
+**Fichier** : `src/pages/Index.tsx`
+
+Ajouter un composant inline entre le Hero et la section Compatible Parts :
+- Barre horizontale fond `bg-white/60 backdrop-blur`, bordure subtile
+- 3 éléments en flex row : `Truck` "Expédition sous 24h", `Wrench` "Mécanicien professionnel", `RotateCcw` "Retours 14 jours"
+- Icônes Lucide en `text-mineral`, texte en `text-carbon`, typographie `font-display text-xs uppercase tracking-wider`
+- Responsive : horizontal sur desktop, vertical stack sur mobile
+
+## Ordre d'exécution
+1. PurchaseBlock.tsx (spinner ajout panier)
+2. OrderSuccessPage.tsx (fix Math.random)
+3. PartCard + MediaGallery + CategoryBentoGrid (lazy loading)
+4. Index.tsx (trust signals)
+
+## Fichiers modifiés (6 au total)
+- `src/components/pdp/PurchaseBlock.tsx`
+- `src/pages/OrderSuccessPage.tsx`
+- `src/components/parts/PartCard.tsx`
+- `src/components/pdp/MediaGallery.tsx`
+- `src/components/catalogue/CategoryBentoGrid.tsx`
+- `src/pages/Index.tsx`
 
