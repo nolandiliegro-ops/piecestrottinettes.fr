@@ -1,45 +1,25 @@
-# Scan Trott v2 — Boucle HITL + Integration Garage Premium
 
-## Statut : ✅ IMPLÉMENTÉ
+Plan validé après lecture du code : le composant `ScanTrottButton` n’est plus branché dans l’UI publique, mais il reste encore 2 entrées visiteur “scanner” visibles en dur.
 
-### Ce qui a été fait
+Fichiers où je vais intervenir avant build :
 
-#### 1. Migration DB — `scan_validations`
-- Table `scan_validations` créée (id, user_id, image_url, ai_brand, ai_model, ai_confidence, matched_model_id, is_validated, corrected_model_id, corrected_text, validated_at)
-- RLS optimisé avec `(SELECT auth.uid())` pour performance
-- Index GIN trigram sur `scooter_models.name` et `scooter_models.search_terms`
-- Index sur `scan_validations` (user_id, is_validated, matched_model_id)
+1. `src/components/hero/CommandPanel.tsx`
+- Supprimer le bouton desktop “Scanner ma Trottinette”
+- Retirer l’icône `Scan` si elle devient inutilisée
+- Conserver intact le reste du panel : recherche, marques, bouton “Mon Garage”
 
-#### 2. Edge Function `scan-trott` v2
-- Prompt dynamique : requête les 10 confusions les plus fréquentes depuis `scan_validations` et les injecte dans le prompt système
-- Retourne `ai_brand` et `ai_model` dans tous les cas (match ou pas)
-- Gestion erreurs 429/402
+2. `src/components/hero/ExpertJourneySection.tsx`
+- Supprimer le bouton mobile “Scanner ma Trottinette”
+- Nettoyer tout wording visible lié au scan dans cette section
+- Remplacer le texte `Scannez ou recherchez votre modèle` par une version 100% recherche
+- Remplacer aussi l’icône/étape si nécessaire pour qu’aucune référence au scan ne reste visible au visiteur
 
-#### 3. Composant `ScanTrottButton` — Boucle HITL
-- Resize client Canvas (1200px max, JPEG 80%) pour détail Gemini
-- État `validating` au lieu de redirect auto
-- Upload photo validée dans bucket `scooter-photos/scans/{userId}/{timestamp}.jpg`
-- Insert dans `scan_validations` avec correction ou validation
-- Redirect vers `/garage?scan_model=SLUG`
+Constat important :
+- `src/components/scan/ScanTrottButton.tsx` restera intact
+- `supabase/functions/scan-trott/index.ts` restera intact
+- Les éléments admin liés au scanner ne seront pas touchés
+- Je n’ai pas identifié d’autre rendu public actif de “Scanner ma Trottinette” en dehors de ces 2 fichiers
 
-#### 4. `ScanValidationCard` — UI Glassmorphism
-- Carte glassmorphism (`bg-white/10 backdrop-blur-2xl border border-white/20`)
-- Badge confiance dynamique (vert/orange/rouge)
-- Animations spring Framer Motion (stiffness 260, damping 22)
-- Boutons : "C'est exact" / "Ce n'est pas le bon modèle" / "Signaler"
-
-#### 5. `ScooterSearchSelect` — Dropdown correction
-- Recherche ILIKE temps réel dans `scooter_models` + `brands`
-- Debounce 300ms
-- UI glassmorphism cohérente
-
-#### 6. Dashboard Admin `ScansManager`
-- Onglet "Scans" dans Admin.tsx
-- Compteurs : Total / Validés / Corrigés / En attente
-- Confusions fréquentes avec bouton "Enrichir"
-- Modèles les plus demandés (non référencés)
-- Tableau des scans récents avec photo, réponse IA, confiance, statut
-
-#### 7. Intégration Garage
-- Query param `?scan_model=SLUG` géré dans `Garage.tsx`
-- Sélection automatique du scooter correspondant dans le carousel
+Résultat attendu après implémentation :
+- Plus aucun bouton ni libellé “Scanner ma trott/trottinette” visible côté visiteur
+- Le moteur scan reste présent dans le code pour réactivation plus tard
