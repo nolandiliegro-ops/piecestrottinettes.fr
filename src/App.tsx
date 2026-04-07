@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,28 +11,37 @@ import { SpotlightProvider } from "@/contexts/SpotlightContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
-import Index from "./pages/Index";
-import Catalogue from "./pages/Catalogue";
-import Scooters from "./pages/Scooters";
-import PartDetail from "./pages/PartDetail";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Garage from "./pages/Garage";
-import Admin from "./pages/Admin";
-import ScooterDetail from "./pages/ScooterDetail";
-import CartPage from "./pages/CartPage";
-import CheckoutPage from "./pages/CheckoutPage";
-import OrderSuccessPage from "./pages/OrderSuccessPage";
-import PaymentSuccessPage from "./pages/PaymentSuccessPage";
-import Pepites from "./pages/Pepites";
-import Tutos from "./pages/Tutos";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
-import NotFound from "./pages/NotFound";
-import Profile from "./pages/Profile";
-import ExpertStudio from "./pages/ExpertStudio";
+
+// Lazy-loaded pages for code splitting
+const Index = lazy(() => import("./pages/Index"));
+const Catalogue = lazy(() => import("./pages/Catalogue"));
+const Scooters = lazy(() => import("./pages/Scooters"));
+const PartDetail = lazy(() => import("./pages/PartDetail"));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
+const Garage = lazy(() => import("./pages/Garage"));
+const Admin = lazy(() => import("./pages/Admin"));
+const ScooterDetail = lazy(() => import("./pages/ScooterDetail"));
+const CartPage = lazy(() => import("./pages/CartPage"));
+const CheckoutPage = lazy(() => import("./pages/CheckoutPage"));
+const OrderSuccessPage = lazy(() => import("./pages/OrderSuccessPage"));
+const PaymentSuccessPage = lazy(() => import("./pages/PaymentSuccessPage"));
+const Pepites = lazy(() => import("./pages/Pepites"));
+const Tutos = lazy(() => import("./pages/Tutos"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const Profile = lazy(() => import("./pages/Profile"));
+const ExpertStudio = lazy(() => import("./pages/ExpertStudio"));
 
 const queryClient = new QueryClient();
+
+// Minimal loading fallback
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 function App() {
   return (
@@ -47,6 +57,7 @@ function App() {
                 <SpotlightCommand />
                 <CartSidebar />
                 <MobileNav />
+            <Suspense fallback={<PageLoader />}>
             <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/catalogue" element={<Catalogue />} />
@@ -86,6 +97,7 @@ function App() {
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
+            </Suspense>
             </BrowserRouter>
           </TooltipProvider>
         </SpotlightProvider>
