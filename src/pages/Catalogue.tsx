@@ -70,6 +70,7 @@ const Catalogue = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const queryClient = useQueryClient();
+  const { isAdmin } = useAdminRole();
 
   // Get scooter filter from URL params (e.g., ?scooter=uuid)
   const scooterIdFilter = searchParams.get("scooter");
