@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import SEO from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
@@ -76,7 +77,28 @@ const PartDetail = () => {
         title={`${part.name} | Pièces Trottinettes`}
         description={part.description || `Achetez ${part.name} pour votre trottinette électrique. Pièce détachée compatible, livraison rapide.`}
         image={part.image_url || undefined}
+        canonical={`https://piecestrottinettes.fr/pieces/${slug}`}
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: part.name,
+            description: part.description || `${part.name} pour trottinette électrique`,
+            image: part.image_url || undefined,
+            offers: {
+              "@type": "Offer",
+              price: part.price ?? 0,
+              priceCurrency: "EUR",
+              availability: (part.stock_quantity ?? 0) > 0
+                ? "https://schema.org/InStock"
+                : "https://schema.org/OutOfStock",
+              url: `https://piecestrottinettes.fr/pieces/${slug}`,
+            },
+          })}
+        </script>
+      </Helmet>
       <Header />
 
       {/* DESKTOP/TABLET: 100vh Zero Scroll Bento Grid */}

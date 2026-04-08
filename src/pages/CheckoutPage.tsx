@@ -294,7 +294,7 @@ const CheckoutPage = () => {
                                 <Input 
                                   placeholder="Jean" 
                                   autoFocus
-                                  className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                  className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                   {...field} 
                                 />
                               </FormControl>
@@ -311,7 +311,7 @@ const CheckoutPage = () => {
                               <FormControl>
                                 <Input 
                                   placeholder="Dupont" 
-                                  className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                  className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                   {...field} 
                                 />
                               </FormControl>
@@ -334,7 +334,7 @@ const CheckoutPage = () => {
                               <Input 
                                 type="email"
                                 placeholder="jean@exemple.fr" 
-                                className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                 {...field} 
                               />
                             </FormControl>
@@ -352,7 +352,7 @@ const CheckoutPage = () => {
                               <Input 
                                 type="tel"
                                 placeholder="06 12 34 56 78" 
-                                className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                 {...field} 
                               />
                             </FormControl>
@@ -377,7 +377,7 @@ const CheckoutPage = () => {
                               <FormControl>
                                 <Input 
                                   placeholder="123 Rue de la Trottinette" 
-                                  className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                  className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                   {...field} 
                                 />
                               </FormControl>
@@ -385,7 +385,7 @@ const CheckoutPage = () => {
                             </FormItem>
                           )}
                         />
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <FormField
                             control={form.control}
                             name="postalCode"
@@ -396,7 +396,8 @@ const CheckoutPage = () => {
                                   <Input 
                                     placeholder="75001" 
                                     maxLength={5}
-                                    className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                    inputMode="numeric"
+                                    className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                     {...field} 
                                   />
                                 </FormControl>
@@ -413,7 +414,7 @@ const CheckoutPage = () => {
                                 <FormControl>
                                   <Input 
                                     placeholder="Paris" 
-                                    className="bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
+                                    className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 focus-visible:ring-mineral/20"
                                     {...field} 
                                   />
                                 </FormControl>
@@ -569,6 +570,23 @@ const CheckoutPage = () => {
           </div>
         </div>
       </main>
+
+      {/* Mobile Sticky Bottom Bar */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-xl border-t border-mineral/15 px-4 py-3 flex items-center justify-between">
+        <div>
+          <p className="text-xs text-muted-foreground">Total TTC</p>
+          <p className="font-display text-xl text-mineral tracking-wide">{formatPrice(totals.totalTTC)}</p>
+        </div>
+        <Button
+          type="button"
+          disabled={isSubmitting}
+          onClick={form.handleSubmit(onSubmit)}
+          className="h-12 px-6 bg-carbon text-white font-display tracking-widest rounded-xl"
+        >
+          <Lock className="w-4 h-4 mr-2" />
+          COMMANDER
+        </Button>
+      </div>
 
       <Footer />
     </div>
