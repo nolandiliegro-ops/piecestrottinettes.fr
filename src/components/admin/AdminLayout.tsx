@@ -87,7 +87,7 @@ const AdminLayout = ({ children, activeTab, onTabChange }: AdminLayoutProps) => 
                 onClick={() => onTabChange(item.id)}
                 className={cn(
                   "relative flex flex-col items-center justify-center",
-                  "min-w-[64px] min-h-[48px] px-3 py-2",
+                  "min-w-0 min-h-[48px] px-2 py-2",
                   "rounded-xl transition-all duration-200",
                   isActive && "bg-primary/10"
                 )}
