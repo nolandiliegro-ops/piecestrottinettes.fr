@@ -82,6 +82,15 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         } else {
           setProfile(null);
         }
+
+        // Handle post-login redirect (for Google OAuth)
+        if (event === 'SIGNED_IN') {
+          const returnTo = sessionStorage.getItem('returnTo');
+          if (returnTo) {
+            sessionStorage.removeItem('returnTo');
+            window.location.href = returnTo;
+          }
+        }
         
         setLoading(false);
       }

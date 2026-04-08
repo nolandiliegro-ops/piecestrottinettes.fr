@@ -18,10 +18,20 @@ const statusConfig: Record<string, {
   bgClass: string; 
   textClass: string;
 }> = {
+  awaiting_payment: { 
+    label: "En attente de paiement", 
+    bgClass: "bg-orange-500/15",
+    textClass: "text-orange-600"
+  },
   pending: { 
     label: "En attente", 
     bgClass: "bg-orange-500/15",
     textClass: "text-orange-600"
+  },
+  paid: { 
+    label: "Payé", 
+    bgClass: "bg-green-500/15",
+    textClass: "text-green-600"
   },
   processing: { 
     label: "En préparation", 
@@ -30,13 +40,13 @@ const statusConfig: Record<string, {
   },
   shipped: { 
     label: "Expédié", 
-    bgClass: "bg-mineral/15",
-    textClass: "text-mineral"
+    bgClass: "bg-purple-500/15",
+    textClass: "text-purple-600"
   },
   delivered: { 
     label: "Livré", 
-    bgClass: "bg-green-500/15",
-    textClass: "text-green-600"
+    bgClass: "bg-emerald-700/15",
+    textClass: "text-emerald-700"
   },
   cancelled: { 
     label: "Annulé", 
