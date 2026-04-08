@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,7 +23,10 @@ const Login = () => {
   
   const { signIn, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { toast } = useToast();
+
+  const returnTo = searchParams.get('returnTo') || '/garage';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,11 +63,12 @@ const Login = () => {
       title: "Connexion réussie",
       description: "Bienvenue dans votre garage !",
     });
-    navigate('/garage');
+    navigate(returnTo);
   };
 
   const handleGoogleSignIn = async () => {
     setIsGoogleLoading(true);
+    sessionStorage.setItem('returnTo', returnTo);
     const { error } = await signInWithGoogle();
     setIsGoogleLoading(false);
 

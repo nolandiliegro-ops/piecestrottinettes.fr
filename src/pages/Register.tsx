@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -35,7 +35,10 @@ const Register = () => {
   
   const { signUp, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { toast } = useToast();
+
+  const returnTo = searchParams.get('returnTo') || '/garage';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,11 +81,12 @@ const Register = () => {
       title: "Bienvenue ! 🎉",
       description: "Votre compte a été créé avec 100 points de bienvenue !",
     });
-    navigate('/garage');
+    navigate(returnTo);
   };
 
   const handleGoogleSignIn = async () => {
     setIsGoogleLoading(true);
+    sessionStorage.setItem('returnTo', returnTo);
     const { error } = await signInWithGoogle();
     setIsGoogleLoading(false);
 
