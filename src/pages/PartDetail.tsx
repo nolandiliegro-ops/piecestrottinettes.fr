@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
@@ -71,6 +72,11 @@ const PartDetail = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO
+        title={`${part.name} | Pièces Trottinettes`}
+        description={part.meta_description || `Achetez ${part.name} pour votre trottinette électrique. Pièce détachée compatible, livraison rapide.`}
+        image={part.image_url || undefined}
+      />
       <Header />
 
       {/* DESKTOP/TABLET: 100vh Zero Scroll Bento Grid */}

@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import SEO from "@/components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search } from "lucide-react";
 import Header from "@/components/Header";

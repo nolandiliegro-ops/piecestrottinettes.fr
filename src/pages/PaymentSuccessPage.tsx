@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import SEO from "@/components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { CheckCircle, Package, Mail, ArrowRight, Loader2, AlertCircle, Home, ShoppingBag } from "lucide-react";

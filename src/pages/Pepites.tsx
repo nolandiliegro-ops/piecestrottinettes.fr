@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { Trophy, Sparkles } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
