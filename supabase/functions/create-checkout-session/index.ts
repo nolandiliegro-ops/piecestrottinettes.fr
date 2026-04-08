@@ -169,13 +169,10 @@ serve(async (req) => {
         }
 
         // Increment usage
-        await supabase.rpc("increment_promo_usage", { p_code: promo.code }).catch(() => {
-          // Fallback: direct update
-          supabase
-            .from("promo_codes")
-            .update({ current_uses: (promo as any).current_uses + 1 })
-            .eq("code", promo.code);
-        });
+        await supabase
+          .from("promo_codes")
+          .update({ current_uses: (promo as any).current_uses + 1 })
+          .eq("code", promo.code);
       }
     }
 
