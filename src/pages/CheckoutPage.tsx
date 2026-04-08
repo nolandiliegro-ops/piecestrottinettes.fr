@@ -206,6 +206,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO title="Paiement" description="Finalisez votre commande" noindex />
       <Header />
       
       {/* Confirmation Modal */}

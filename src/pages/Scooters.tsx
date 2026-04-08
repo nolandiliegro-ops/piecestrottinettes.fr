@@ -67,6 +67,7 @@ const Scooters = () => {
 
   return (
     <div className="min-h-screen bg-greige pb-24 md:pb-0">
+      <SEO title="Trottinettes Électriques | Pièces Trottinettes" description="Découvrez toutes les trottinettes électriques compatibles avec nos pièces détachées. Xiaomi, Ninebot, Segway, Dualtron, Kaabo et plus." />
       {/* Fixed Header */}
       <Header />
 

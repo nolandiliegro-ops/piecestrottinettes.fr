@@ -55,6 +55,7 @@ const Admin = () => {
 
   return (
     <AdminLayout activeTab={activeTab} onTabChange={setActiveTab}>
+      <SEO title="Administration" description="Panneau d'administration" noindex />
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
       {activeTab === 'scanner' && <AdminScanner />}

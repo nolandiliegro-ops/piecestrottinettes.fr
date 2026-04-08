@@ -200,6 +200,7 @@ const Catalogue = () => {
 
   return (
     <div className="min-h-screen bg-greige pb-24 md:pb-0">
+      <SEO title="Catalogue Pièces Détachées | Pièces Trottinettes" description="Parcourez notre catalogue complet de pièces détachées pour trottinettes électriques. Filtrez par catégorie et trouvez la pièce compatible avec votre modèle." />
       {/* Fixed Header */}
       <Header />
 

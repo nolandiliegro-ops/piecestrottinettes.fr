@@ -151,6 +151,7 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO title="Mon Profil" description="Votre profil utilisateur" noindex />
       <Header />
       
       <main className="pt-24 pb-16 px-4">
