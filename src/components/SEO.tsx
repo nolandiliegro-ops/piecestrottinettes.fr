@@ -5,9 +5,10 @@ interface SEOProps {
   description: string;
   image?: string;
   noindex?: boolean;
+  canonical?: string;
 }
 
-const SEO = ({ title, description, image, noindex = false }: SEOProps) => (
+const SEO = ({ title, description, image, noindex = false, canonical }: SEOProps) => (
   <Helmet>
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -15,6 +16,7 @@ const SEO = ({ title, description, image, noindex = false }: SEOProps) => (
     <meta property="og:description" content={description} />
     {image && <meta property="og:image" content={image} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {canonical && <link rel="canonical" href={canonical} />}
   </Helmet>
 );
 

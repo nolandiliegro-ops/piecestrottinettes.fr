@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Home, ShoppingBag } from "lucide-react";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/hooks/useAuth";
@@ -41,6 +42,7 @@ const OrderSuccessPage = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO title="Commande confirmée | Pièces Trottinettes" description="Votre commande a été confirmée." noindex />
       <Header />
       
       {/* Quick Signup Modal */}
