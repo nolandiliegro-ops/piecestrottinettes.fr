@@ -65,8 +65,8 @@ const MentionsLegales = () => {
           <h2>Médiation</h2>
           <p>
             En cas de litige, le consommateur peut recourir gratuitement au service de médiation.
-            Médiateur : [Nom du médiateur ou de l'organisme]<br />
-            Site : [URL du médiateur]
+            Médiateur : CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice<br />
+            Site : <a href="https://www.cm2c.net" target="_blank" rel="noopener noreferrer">www.cm2c.net</a>
           </p>
         </article>
       </main>
