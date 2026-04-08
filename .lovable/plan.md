@@ -1,62 +1,52 @@
 
 
-# Batch 4 — SEO de base
+# Batch 5 — Lancement (Responsive + SEO)
 
-## Plan validé avec un ajustement
-
-Le plan est bon. Un point : `robots.txt` existe déjà (Allow only), il faut le **remplacer**, pas le créer.
-
-## Fichiers modifiés (10 au total)
+## Fichiers modifiés : 4 au total
 
 ### Ordre d'exécution
 
-**1. Installer react-helmet-async** — ajout dépendance + wrap `HelmetProvider` dans `src/main.tsx`
+**1. Responsive checkout mobile — `src/pages/CheckoutPage.tsx`**
 
-**2. Créer `src/components/SEO.tsx`** — composant réutilisable avec props `title`, `description`, `image?`, `noindex?`. Utilise `<Helmet>` pour injecter `<title>`, `meta description`, `og:title`, `og:description`, `og:image`, `robots`.
+Le checkout est déjà bien structuré (grid responsive, bouton mobile dédié). Corrections ciblées :
+- `grid-cols-2` sur code postal/ville : ajouter `grid-cols-1 sm:grid-cols-2` pour éviter les inputs trop étroits sur petit écran
+- Le récapitulatif (sticky sidebar) n'est pas visible sur mobile avant de scroller tout le formulaire — ajouter un mini résumé fixe en bas de l'écran mobile avec le total + bouton (barre fixe `fixed bottom-0`)
+- Inputs : ajouter `text-base` pour éviter le zoom iOS sur focus (iOS zoom quand font-size < 16px)
 
-**3. Pages publiques — ajouter SEO avec titres uniques :**
-- `src/pages/PartDetail.tsx` — titre dynamique : `{part.name} | Pièces Trottinettes`
-- `src/pages/Catalogue.tsx` — "Catalogue Pièces Détachées | Pièces Trottinettes"
-- `src/pages/Scooters.tsx` — "Trottinettes Électriques | Pièces Trottinettes"
-- `src/pages/Tutos.tsx` — "Tutoriels & Guides | Pièces Trottinettes"
-- `src/pages/Pepites.tsx` — "Les Pépites — Sélection Premium | Pièces Trottinettes"
+**2. Schema.org Product JSON-LD — `src/pages/PartDetail.tsx`**
 
-**4. Pages privées — ajouter SEO avec noindex :**
-- `src/pages/Admin.tsx` — noindex
-- `src/pages/Garage.tsx` — noindex
-- `src/pages/Profile.tsx` — noindex
-- `src/pages/CheckoutPage.tsx` — noindex
-- `src/pages/PaymentSuccessPage.tsx` — noindex
-
-**5. `public/robots.txt`** — remplacer le contenu existant par :
-```
-User-agent: *
-Allow: /
-Disallow: /admin
-Disallow: /garage
-Disallow: /profile
-Disallow: /checkout
-Disallow: /payment-success
-
-Sitemap: https://piecestrottinettes.fr/sitemap.xml
+Ajouter dans le `<Helmet>` un `<script type="application/ld+json">` avec :
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": part.name,
+  "description": part.description,
+  "image": part.image_url,
+  "offers": {
+    "@type": "Offer",
+    "price": part.price,
+    "priceCurrency": "EUR",
+    "availability": stock > 0 ? "InStock" : "OutOfStock",
+    "url": canonical URL
+  }
+}
 ```
 
-**6. `index.html`** — ajouter `og:locale` → `fr_FR` et `og:url` → `https://piecestrottinettes.fr`
+**3. Canonical URLs — `src/components/SEO.tsx`**
 
-## Résumé fichiers
+Ajouter une prop optionnelle `canonical?: string` au composant SEO. Quand fournie, injecter `<link rel="canonical" href={canonical} />`. L'ajouter sur PartDetail avec l'URL construite dynamiquement (`https://piecestrottinettes.fr/pieces/${slug}`).
+
+**4. Noindex OrderSuccessPage — `src/pages/OrderSuccessPage.tsx`**
+
+Importer SEO, ajouter `<SEO title="Commande confirmée" description="Votre commande a été confirmée." noindex />` en haut du JSX.
+
+## Résumé
 
 | # | Fichier | Action |
 |---|---------|--------|
-| 1 | `src/main.tsx` | Wrap HelmetProvider |
-| 2 | `src/components/SEO.tsx` | Créer |
-| 3 | `src/pages/PartDetail.tsx` | Ajouter SEO |
-| 4 | `src/pages/Catalogue.tsx` | Ajouter SEO |
-| 5 | `src/pages/Scooters.tsx` | Ajouter SEO |
-| 6 | `src/pages/Tutos.tsx` | Ajouter SEO |
-| 7 | `src/pages/Pepites.tsx` | Ajouter SEO |
-| 8 | `src/pages/Admin.tsx` + `Garage.tsx` + `Profile.tsx` + `CheckoutPage.tsx` + `PaymentSuccessPage.tsx` | Ajouter SEO noindex |
-| 9 | `public/robots.txt` | Remplacer |
-| 10 | `index.html` | Ajouter og:locale + og:url |
-
-**Total : 13 fichiers modifiés/créés**, exécutés dans cet ordre.
+| 1 | `src/pages/CheckoutPage.tsx` | Fix responsive mobile (inputs, sticky bottom bar, iOS zoom) |
+| 2 | `src/pages/PartDetail.tsx` | JSON-LD Product schema |
+| 3 | `src/components/SEO.tsx` | Ajouter prop `canonical` |
+| 4 | `src/pages/OrderSuccessPage.tsx` | Ajouter SEO noindex |
 
