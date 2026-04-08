@@ -168,11 +168,20 @@ serve(async (req) => {
           subtotalHT = Math.max(0, subtotalHT - promo.discount_value!);
         }
 
-        // Increment usage
-        await supabase
+        // Increment usage via SQL increment
+        await supabase.rpc("raw_sql", {}).catch(() => {});
+        // Direct increment
+        const { data: currentPromo } = await supabase
           .from("promo_codes")
-          .update({ current_uses: (promo as any).current_uses + 1 })
-          .eq("code", promo.code);
+          .select("current_uses")
+          .eq("code", promo.code)
+          .single();
+        if (currentPromo) {
+          await supabase
+            .from("promo_codes")
+            .update({ current_uses: (currentPromo.current_uses || 0) + 1 })
+            .eq("code", promo.code);
+        }
       }
     }
 
