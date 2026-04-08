@@ -1,6 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@4.1.2";
 import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -44,6 +45,25 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const { name, email, subject, message } = parsed.data;
+
+    // Sauvegarde en base via service role (bypass RLS)
+    try {
+      const supabaseAdmin = createClient(
+        Deno.env.get("SUPABASE_URL")!,
+        Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
+      );
+      const { error: insertError } = await supabaseAdmin
+        .from("contact_messages")
+        .insert({ name, email, subject, message });
+
+      if (insertError) {
+        console.error("Failed to insert contact message:", insertError);
+      } else {
+        console.log("Contact message saved to database");
+      }
+    } catch (dbErr) {
+      console.error("Database insert error (non-blocking):", dbErr);
+    }
 
     // 1. Notification au propriétaire
     await resend.emails.send({

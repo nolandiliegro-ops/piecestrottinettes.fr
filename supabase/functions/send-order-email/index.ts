@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "resend";
+import { Resend } from "npm:resend@4.1.2";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
@@ -232,8 +232,114 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
   `;
 };
 
+const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const timeStr = now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+
+  const itemsRows = data.items.map(item => `
+    <tr>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; font-size: 14px; color: #2C2C2C;">${item.name}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: center; font-size: 14px; color: #666;">x${item.quantity}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: right; font-size: 14px; color: #666;">${formatPrice(item.price)}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: right; font-size: 14px; font-weight: 600; color: #2C2C2C;">${formatPrice(item.price * item.quantity)}</td>
+    </tr>
+  `).join('');
+
+  return `
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"></head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" style="padding: 30px 20px;">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width: 600px; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0;">
+          
+          <tr>
+            <td style="background-color: #2C2C2C; padding: 24px 32px;">
+              <h1 style="margin: 0; color: #93B5A1; font-size: 18px; letter-spacing: 2px;">🛒 NOUVELLE COMMANDE</h1>
+              <p style="margin: 8px 0 0; color: #ccc; font-size: 13px;">${dateStr} à ${timeStr}</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 24px 32px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="font-size: 13px; color: #666;">Commande</td>
+                  <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 18px; color: #93B5A1; font-weight: bold;">#${data.orderNumber}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 0 32px;">
+              <div style="height: 1px; background-color: #e8e4e0;"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 24px 32px;">
+              <h3 style="margin: 0 0 12px; font-size: 13px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Client</h3>
+              <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6;">
+                <strong>${data.customerName}</strong><br>
+                ${data.customerEmail}<br>
+                ${data.address.street}<br>
+                ${data.address.postalCode} ${data.address.city}
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 0 32px;">
+              <div style="height: 1px; background-color: #e8e4e0;"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 24px 32px;">
+              <h3 style="margin: 0 0 12px; font-size: 13px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Articles commandés</h3>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e8e4e0; border-radius: 8px; overflow: hidden;">
+                <thead>
+                  <tr style="background-color: #FAFAF8;">
+                    <th style="padding: 8px 12px; text-align: left; font-size: 11px; color: #999; text-transform: uppercase;">Article</th>
+                    <th style="padding: 8px 12px; text-align: center; font-size: 11px; color: #999; text-transform: uppercase;">Qté</th>
+                    <th style="padding: 8px 12px; text-align: right; font-size: 11px; color: #999; text-transform: uppercase;">P.U.</th>
+                    <th style="padding: 8px 12px; text-align: right; font-size: 11px; color: #999; text-transform: uppercase;">Total</th>
+                  </tr>
+                </thead>
+                <tbody>${itemsRows}</tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 0 32px 24px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #2C2C2C; border-radius: 8px; padding: 16px;">
+                <tr>
+                  <td style="padding: 8px 16px; font-size: 14px; color: #ccc;">Livraison (${data.deliveryMethod})</td>
+                  <td style="padding: 8px 16px; text-align: right; font-size: 14px; color: #fff;">${data.totals.deliveryPrice === 0 ? 'Gratuit' : formatPrice(data.totals.deliveryPrice)}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 16px; font-size: 18px; color: #fff; font-weight: bold;">Total TTC</td>
+                  <td style="padding: 8px 16px; text-align: right; font-size: 22px; color: #93B5A1; font-weight: bold;">${formatPrice(data.totals.totalTTC)}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  `;
+};
+
 const handler = async (req: Request): Promise<Response> => {
-  // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -241,7 +347,6 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const data: OrderEmailRequest = await req.json();
 
-    // Validate required fields
     if (!data.orderNumber || !data.customerEmail || !data.customerName) {
       throw new Error("Missing required fields: orderNumber, customerEmail, or customerName");
     }
@@ -255,24 +360,31 @@ const handler = async (req: Request): Promise<Response> => {
       html: generateEmailHTML(data),
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Customer email sent successfully:", emailResponse);
+
+    // Notification vendeur — try/catch séparé pour ne pas bloquer la réponse
+    try {
+      const sellerResponse = await resend.emails.send({
+        from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
+        to: ["contact@piecestrottinettes.fr"],
+        subject: `[Nouvelle commande] #${data.orderNumber} — ${data.totals.totalTTC.toFixed(2)}€`,
+        html: generateSellerNotificationHTML(data),
+      });
+      console.log("Seller notification sent successfully:", sellerResponse);
+    } catch (sellerError) {
+      console.error("Failed to send seller notification (non-blocking):", sellerError);
+    }
 
     return new Response(JSON.stringify({ success: true, data: emailResponse }), {
       status: 200,
-      headers: {
-        "Content-Type": "application/json",
-        ...corsHeaders,
-      },
+      headers: { "Content-Type": "application/json", ...corsHeaders },
     });
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : "Unknown error";
     console.error("Error in send-order-email function:", error);
     return new Response(
       JSON.stringify({ success: false, error: errorMessage }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
+      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   }
 };
