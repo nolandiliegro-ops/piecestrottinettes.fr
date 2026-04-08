@@ -15,6 +15,22 @@ const CGV = () => {
           <h1 className="text-3xl md:text-4xl mb-8">Conditions Générales de Vente</h1>
           <p className="text-muted-foreground text-sm">Dernière mise à jour : 8 avril 2026</p>
 
+          {/* Identité du vendeur */}
+          <div className="bg-mineral/10 border border-mineral/20 rounded-xl p-6 my-8 not-prose">
+            <h2 className="font-display text-lg tracking-wide text-carbon mb-3">VENDEUR</h2>
+            <ul className="space-y-1 text-sm text-foreground/80">
+              <li><strong>Nom :</strong> DI LIEGRO Nolan Enzo</li>
+              <li><strong>Forme juridique :</strong> Entrepreneur individuel (micro-entreprise)</li>
+              <li><strong>Siège social :</strong> 258 Avenue de Toulon, 1er étage, 13010 Marseille, France</li>
+              <li><strong>SIRET :</strong> 801 164 542 00053</li>
+              <li><strong>Email :</strong>{" "}
+                <a href="mailto:contact@piecestrottinettes.fr" className="text-mineral hover:underline">
+                  contact@piecestrottinettes.fr
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <h2>Article 1 — Objet</h2>
           <p>
             Les présentes conditions générales de vente (CGV) régissent les ventes de pièces détachées
@@ -24,7 +40,9 @@ const CGV = () => {
 
           <h2>Article 2 — Prix</h2>
           <p>
-            Les prix sont indiqués en euros toutes taxes comprises (TTC). La TVA applicable est de 20%.
+            Les prix sont indiqués en euros, nets et TTC. Le vendeur n'est pas assujetti à la TVA
+            en application de l'article 293 B du Code général des impôts (franchise en base de TVA).
+            En conséquence, la TVA n'est pas applicable et aucune TVA ne sera facturée.
             Les prix peuvent être modifiés à tout moment, mais les produits sont facturés sur la base du
             tarif en vigueur au moment de la validation de la commande.
           </p>
@@ -84,6 +102,19 @@ const CGV = () => {
           <p>
             Les présentes CGV sont soumises au droit français. En cas de litige, les tribunaux compétents
             seront ceux du ressort du domicile du défendeur.
+          </p>
+
+          <h2>Article 11 — Médiation</h2>
+          <p>
+            Conformément aux articles L611-1 et R612-1 du Code de la consommation, en cas de litige
+            non résolu, le consommateur peut recourir gratuitement au service de médiation suivant :
+          </p>
+          <p>
+            <strong>CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice</strong><br />
+            Site internet :{" "}
+            <a href="https://www.cm2c.net" target="_blank" rel="noopener noreferrer">
+              www.cm2c.net
+            </a>
           </p>
         </article>
       </main>

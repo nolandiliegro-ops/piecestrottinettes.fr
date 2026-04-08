@@ -8,18 +8,40 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Send } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const payload = {
+      name: (formData.get("name") as string).trim(),
+      email: (formData.get("email") as string).trim(),
+      subject: (formData.get("subject") as string).trim(),
+      message: (formData.get("message") as string).trim(),
+    };
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: payload,
+      });
+
+      if (error) throw error;
+      if (data && !data.success) throw new Error(data.error || "Erreur inconnue");
+
       toast.success("Message envoyé ! Nous vous répondrons sous 48h.");
-      (e.target as HTMLFormElement).reset();
+      form.reset();
+    } catch (err) {
+      console.error("Contact form error:", err);
+      toast.error("Erreur lors de l'envoi. Veuillez réessayer ou nous écrire directement par email.");
+    } finally {
       setIsSubmitting(false);
-    }, 800);
+    }
   };
 
   return (
@@ -38,7 +60,6 @@ const Contact = () => {
             Une question sur une commande ou une pièce ? Écrivez-nous, nous répondons sous 48h.
           </p>
 
-          {/* Email direct */}
           <div className="flex items-center gap-3 bg-mineral/10 rounded-xl p-4 mb-10">
             <Mail className="w-5 h-5 text-mineral shrink-0" />
             <a
@@ -49,14 +70,15 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Formulaire */}
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-carbon">Nom *</Label>
                 <Input
                   id="name"
+                  name="name"
                   required
+                  maxLength={100}
                   placeholder="Jean Dupont"
                   className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
                 />
@@ -65,8 +87,10 @@ const Contact = () => {
                 <Label htmlFor="email" className="text-carbon">Email *</Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   required
+                  maxLength={255}
                   placeholder="jean@exemple.fr"
                   className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
                 />
@@ -77,7 +101,9 @@ const Contact = () => {
               <Label htmlFor="subject" className="text-carbon">Sujet *</Label>
               <Input
                 id="subject"
+                name="subject"
                 required
+                maxLength={200}
                 placeholder="Question sur ma commande #..."
                 className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
               />
@@ -87,7 +113,9 @@ const Contact = () => {
               <Label htmlFor="message" className="text-carbon">Message *</Label>
               <Textarea
                 id="message"
+                name="message"
                 required
+                maxLength={5000}
                 rows={6}
                 placeholder="Décrivez votre demande..."
                 className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 resize-none"
