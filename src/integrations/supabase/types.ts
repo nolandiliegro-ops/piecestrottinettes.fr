@@ -456,6 +456,7 @@ export type Database = {
           order_number: string
           paid_at: string | null
           postal_code: string
+          promo_code: string | null
           status: string
           stripe_payment_intent_id: string | null
           stripe_session_id: string | null
@@ -481,6 +482,7 @@ export type Database = {
           order_number: string
           paid_at?: string | null
           postal_code: string
+          promo_code?: string | null
           status?: string
           stripe_payment_intent_id?: string | null
           stripe_session_id?: string | null
@@ -506,6 +508,7 @@ export type Database = {
           order_number?: string
           paid_at?: string | null
           postal_code?: string
+          promo_code?: string | null
           status?: string
           stripe_payment_intent_id?: string | null
           stripe_session_id?: string | null
@@ -651,6 +654,42 @@ export type Database = {
           id?: string
           performance_points?: number | null
           updated_at?: string | null
+        }
+        Relationships: []
+      }
+      promo_codes: {
+        Row: {
+          active: boolean | null
+          code: string
+          created_at: string | null
+          current_uses: number | null
+          discount_type: string
+          discount_value: number
+          expires_at: string | null
+          id: string
+          max_uses: number | null
+        }
+        Insert: {
+          active?: boolean | null
+          code: string
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type: string
+          discount_value: number
+          expires_at?: string | null
+          id?: string
+          max_uses?: number | null
+        }
+        Update: {
+          active?: boolean | null
+          code?: string
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type?: string
+          discount_value?: number
+          expires_at?: string | null
+          id?: string
+          max_uses?: number | null
         }
         Relationships: []
       }
