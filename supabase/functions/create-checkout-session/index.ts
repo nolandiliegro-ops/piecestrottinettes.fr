@@ -7,13 +7,6 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
-// Delivery pricing (must match frontend)
-const DELIVERY_PRICES: Record<string, number> = {
-  standard: 4.90,
-  express: 9.90,
-  relay: 3.90,
-};
-
 const TVA_RATE = 0.20;
 
 interface CartItem {
@@ -36,74 +29,111 @@ interface CheckoutRequest {
   customerInfo: CustomerInfo;
   deliveryMethod: "standard" | "express" | "relay";
   notes?: string;
+  promoCode?: string;
+}
+
+// Default delivery pricing (used as fallback)
+const DEFAULT_DELIVERY_PRICES: Record<string, number> = {
+  standard: 4.90,
+  express: 9.90,
+  relay: 3.90,
+};
+
+interface PromoResult {
+  valid: boolean;
+  discount_type?: string;
+  discount_value?: number;
+  code?: string;
+}
+
+async function validatePromoCode(supabase: any, code: string): Promise<PromoResult> {
+  const { data, error } = await supabase
+    .from("promo_codes")
+    .select("*")
+    .eq("code", code.toUpperCase().trim())
+    .eq("active", true)
+    .single();
+
+  if (error || !data) return { valid: false };
+
+  // Check expiration
+  if (data.expires_at && new Date(data.expires_at) < new Date()) {
+    return { valid: false };
+  }
+
+  // Check max uses
+  if (data.max_uses !== null && data.current_uses >= data.max_uses) {
+    return { valid: false };
+  }
+
+  return {
+    valid: true,
+    discount_type: data.discount_type,
+    discount_value: data.discount_value,
+    code: data.code,
+  };
+}
+
+async function getFreeShippingThreshold(supabase: any): Promise<number | null> {
+  const { data } = await supabase
+    .from("site_assets")
+    .select("asset_url")
+    .eq("asset_key", "shipping_free_threshold")
+    .maybeSingle();
+
+  if (data?.asset_url) {
+    const val = parseFloat(data.asset_url);
+    if (!isNaN(val) && val > 0) return val;
+  }
+  return null;
 }
 
 serve(async (req) => {
-  // Handle CORS preflight
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
     const stripeKey = Deno.env.get("STRIPE_SECRET_KEY");
-    if (!stripeKey) {
-      throw new Error("STRIPE_SECRET_KEY is not configured");
-    }
+    if (!stripeKey) throw new Error("STRIPE_SECRET_KEY is not configured");
 
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-    
+
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
     const stripe = new Stripe(stripeKey, { apiVersion: "2023-10-16" });
 
-    // Parse request body
-    const { items, customerInfo, deliveryMethod, notes }: CheckoutRequest = await req.json();
+    const { items, customerInfo, deliveryMethod, notes, promoCode }: CheckoutRequest = await req.json();
 
-    if (!items || items.length === 0) {
-      throw new Error("Le panier est vide");
-    }
+    if (!items || items.length === 0) throw new Error("Le panier est vide");
 
-    // Validate delivery method
-    const deliveryPrice = DELIVERY_PRICES[deliveryMethod];
-    if (deliveryPrice === undefined) {
-      throw new Error("Mode de livraison invalide");
-    }
+    let deliveryPrice = DEFAULT_DELIVERY_PRICES[deliveryMethod];
+    if (deliveryPrice === undefined) throw new Error("Mode de livraison invalide");
 
-    // Fetch parts from database to validate prices (anti-fraud)
+    // Fetch parts from database
     const partIds = items.map(item => item.id);
     const { data: parts, error: partsError } = await supabase
       .from("parts")
       .select("id, name, price, stock_quantity, image_url")
       .in("id", partIds);
 
-    if (partsError) {
-      throw new Error(`Erreur lors de la récupération des produits: ${partsError.message}`);
-    }
+    if (partsError) throw new Error(`Erreur récupération produits: ${partsError.message}`);
+    if (!parts || parts.length !== items.length) throw new Error("Certains produits n'existent pas");
 
-    if (!parts || parts.length !== items.length) {
-      throw new Error("Certains produits n'existent pas");
-    }
-
-    // Validate stock and build line items
+    // Calculate subtotal and validate stock
     const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
     let subtotalHT = 0;
 
     for (const cartItem of items) {
       const part = parts.find(p => p.id === cartItem.id);
-      if (!part) {
-        throw new Error(`Produit introuvable: ${cartItem.id}`);
-      }
+      if (!part) throw new Error(`Produit introuvable: ${cartItem.id}`);
       if (part.stock_quantity !== null && part.stock_quantity < cartItem.quantity) {
         throw new Error(`Stock insuffisant pour ${part.name}`);
       }
-      if (!part.price) {
-        throw new Error(`Prix non défini pour ${part.name}`);
-      }
+      if (!part.price) throw new Error(`Prix non défini pour ${part.name}`);
 
       subtotalHT += part.price * cartItem.quantity;
 
-      // Create Stripe line item with price_data (dynamic pricing)
-      // IMPORTANT: Prices in DB are HT, we send TTC (including 20% VAT) to Stripe
       lineItems.push({
         price_data: {
           currency: "eur",
@@ -111,33 +141,66 @@ serve(async (req) => {
             name: part.name,
             images: part.image_url ? [part.image_url] : [],
           },
-          unit_amount: Math.round(part.price * (1 + TVA_RATE) * 100), // Price TTC in cents
+          unit_amount: Math.round(part.price * (1 + TVA_RATE) * 100),
         },
         quantity: cartItem.quantity,
       });
     }
 
-    // Add delivery as a line item
-    lineItems.push({
-      price_data: {
-        currency: "eur",
-        product_data: {
-          name: `Livraison ${deliveryMethod === "express" ? "Express" : deliveryMethod === "relay" ? "Point Relais" : "Standard"}`,
+    // Check free shipping threshold
+    const freeShippingThreshold = await getFreeShippingThreshold(supabase);
+    if (freeShippingThreshold !== null && subtotalHT >= freeShippingThreshold) {
+      deliveryPrice = 0;
+    }
+
+    // Validate promo code
+    let appliedPromoCode: string | null = null;
+    if (promoCode) {
+      const promo = await validatePromoCode(supabase, promoCode);
+      if (promo.valid) {
+        appliedPromoCode = promo.code!;
+        if (promo.discount_type === "shipping") {
+          deliveryPrice = 0;
+        } else if (promo.discount_type === "percent") {
+          const discount = subtotalHT * (promo.discount_value! / 100);
+          subtotalHT -= discount;
+        } else if (promo.discount_type === "fixed") {
+          subtotalHT = Math.max(0, subtotalHT - promo.discount_value!);
+        }
+
+        // Increment usage
+        await supabase.rpc("increment_promo_usage", { p_code: promo.code }).catch(() => {
+          // Fallback: direct update
+          supabase
+            .from("promo_codes")
+            .update({ current_uses: (promo as any).current_uses + 1 })
+            .eq("code", promo.code);
+        });
+      }
+    }
+
+    // Add delivery line item (even if 0€ to show it)
+    if (deliveryPrice > 0) {
+      lineItems.push({
+        price_data: {
+          currency: "eur",
+          product_data: {
+            name: `Livraison ${deliveryMethod === "express" ? "Express" : deliveryMethod === "relay" ? "Point Relais" : "Standard"}`,
+          },
+          unit_amount: Math.round(deliveryPrice * 100),
         },
-        unit_amount: Math.round(deliveryPrice * 100),
-      },
-      quantity: 1,
-    });
+        quantity: 1,
+      });
+    }
 
     // Calculate totals
     const tvaAmount = subtotalHT * TVA_RATE;
     const totalTTC = subtotalHT + tvaAmount + deliveryPrice;
     const loyaltyPoints = Math.floor(totalTTC);
 
-    // Generate order number
     const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
 
-    // Get user ID from auth header if present
+    // Get user ID
     let userId = null;
     const authHeader = req.headers.get("Authorization");
     if (authHeader) {
@@ -146,7 +209,7 @@ serve(async (req) => {
       userId = userData?.user?.id || null;
     }
 
-    // Create order with status "awaiting_payment"
+    // Create order
     const { data: order, error: orderError } = await supabase
       .from("orders")
       .insert({
@@ -167,13 +230,12 @@ serve(async (req) => {
         delivery_method: deliveryMethod,
         delivery_price: deliveryPrice,
         notes: notes || null,
+        promo_code: appliedPromoCode,
       })
       .select()
       .single();
 
-    if (orderError) {
-      throw new Error(`Erreur création commande: ${orderError.message}`);
-    }
+    if (orderError) throw new Error(`Erreur création commande: ${orderError.message}`);
 
     // Create order items
     const orderItems = items.map(cartItem => {
@@ -189,30 +251,20 @@ serve(async (req) => {
       };
     });
 
-    const { error: itemsError } = await supabase
-      .from("order_items")
-      .insert(orderItems);
-
+    const { error: itemsError } = await supabase.from("order_items").insert(orderItems);
     if (itemsError) {
-      // Rollback: delete the order
       await supabase.from("orders").delete().eq("id", order.id);
       throw new Error(`Erreur création articles: ${itemsError.message}`);
     }
 
-    // Check if Stripe customer exists
+    // Stripe customer
     let customerId: string | undefined;
-    const customers = await stripe.customers.list({ 
-      email: customerInfo.email, 
-      limit: 1 
-    });
-    
-    if (customers.data.length > 0) {
-      customerId = customers.data[0].id;
-    }
+    const customers = await stripe.customers.list({ email: customerInfo.email, limit: 1 });
+    if (customers.data.length > 0) customerId = customers.data[0].id;
 
-    // Create Stripe Checkout session
+    // Create Stripe session
     const origin = req.headers.get("origin") || "https://piecestrottinettes.fr";
-    
+
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       customer_email: customerId ? undefined : customerInfo.email,
@@ -220,15 +272,9 @@ serve(async (req) => {
       mode: "payment",
       success_url: `${origin}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/checkout?canceled=true`,
-      metadata: {
-        order_id: order.id,
-        order_number: orderNumber,
-      },
+      metadata: { order_id: order.id, order_number: orderNumber },
       payment_intent_data: {
-        metadata: {
-          order_id: order.id,
-          order_number: orderNumber,
-        },
+        metadata: { order_id: order.id, order_number: orderNumber },
       },
       locale: "fr",
       billing_address_collection: "required",
@@ -237,7 +283,6 @@ serve(async (req) => {
       },
     });
 
-    // Update order with Stripe session ID
     await supabase
       .from("orders")
       .update({ stripe_session_id: session.id })
@@ -246,14 +291,8 @@ serve(async (req) => {
     console.log(`Checkout session created: ${session.id} for order ${orderNumber}`);
 
     return new Response(
-      JSON.stringify({ 
-        sessionUrl: session.url,
-        orderNumber: orderNumber,
-      }),
-      {
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-        status: 200,
-      }
+      JSON.stringify({ sessionUrl: session.url, orderNumber }),
+      { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 200 }
     );
 
   } catch (error) {
@@ -261,10 +300,7 @@ serve(async (req) => {
     console.error("Checkout session error:", error);
     return new Response(
       JSON.stringify({ error: errorMessage }),
-      {
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-        status: 400,
-      }
+      { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 400 }
     );
   }
 });
