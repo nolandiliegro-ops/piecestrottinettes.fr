@@ -67,10 +67,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     // 1. Notification au propriétaire
     await resend.emails.send({
-      from: `${escapeHtml(name)} <noreply@piecestrottinettes.fr>`,
+      from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
       to: [SHOP_EMAIL],
       reply_to: email,
-      subject: `[Contact] ${subject}`,
+      subject: `[Contact] ${subject} — de ${escapeHtml(name)}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #2C2C2C;">Nouveau message de contact</h2>
@@ -80,9 +80,9 @@ const handler = async (req: Request): Promise<Response> => {
           <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
           <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
           <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
-          <p style="background: #f0f7ff; padding: 12px 16px; border-radius: 8px; color: #1a56db; font-weight: bold;">
-            📩 Répondre directement à cet email pour contacter le client.
-          </p>
+          <a href="mailto:${escapeHtml(email)}?subject=Re: ${encodeURIComponent(subject)}" style="display: inline-block; background: #1a56db; color: #ffffff; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 15px;">
+            📩 Cliquer ici pour répondre à ${escapeHtml(name)} (${escapeHtml(email)})
+          </a>
         </div>
       `,
     });
