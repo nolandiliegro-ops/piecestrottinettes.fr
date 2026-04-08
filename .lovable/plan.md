@@ -1,52 +1,48 @@
 
 
-# Batch 5 — Lancement (Responsive + SEO)
+# Batch 6 — Pages légales obligatoires
 
-## Fichiers modifiés : 4 au total
+## Fichiers modifiés : 6 au total
 
 ### Ordre d'exécution
 
-**1. Responsive checkout mobile — `src/pages/CheckoutPage.tsx`**
+**1. `src/pages/CGV.tsx`** — Créer la page Conditions Générales de Vente
+- Structure : Header + contenu statique avec sections (objet, prix, commande, livraison, rétractation 14 jours, garanties, responsabilité, données personnelles, droit applicable)
+- Composant SEO avec titre "Conditions Générales de Vente | Pièces Trottinettes"
+- Mise en page sobre : `prose` Tailwind, max-w-3xl centré, titres h2 pour chaque section
 
-Le checkout est déjà bien structuré (grid responsive, bouton mobile dédié). Corrections ciblées :
-- `grid-cols-2` sur code postal/ville : ajouter `grid-cols-1 sm:grid-cols-2` pour éviter les inputs trop étroits sur petit écran
-- Le récapitulatif (sticky sidebar) n'est pas visible sur mobile avant de scroller tout le formulaire — ajouter un mini résumé fixe en bas de l'écran mobile avec le total + bouton (barre fixe `fixed bottom-0`)
-- Inputs : ajouter `text-base` pour éviter le zoom iOS sur focus (iOS zoom quand font-size < 16px)
+**2. `src/pages/MentionsLegales.tsx`** — Créer la page Mentions Légales
+- Sections obligatoires : éditeur du site, hébergeur, propriété intellectuelle, RGPD/données personnelles, cookies
+- Composant SEO avec titre "Mentions Légales | Pièces Trottinettes"
+- Même mise en page que CGV
 
-**2. Schema.org Product JSON-LD — `src/pages/PartDetail.tsx`**
+**3. `src/pages/Contact.tsx`** — Créer la page Contact
+- Email de contact (contact@piecestrottinettes.fr) affiché clairement
+- Formulaire simple : nom, email, sujet, message — sans backend pour l'instant (juste un toast de confirmation)
+- Composant SEO avec titre "Contact | Pièces Trottinettes"
 
-Ajouter dans le `<Helmet>` un `<script type="application/ld+json">` avec :
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": part.name,
-  "description": part.description,
-  "image": part.image_url,
-  "offers": {
-    "@type": "Offer",
-    "price": part.price,
-    "priceCurrency": "EUR",
-    "availability": stock > 0 ? "InStock" : "OutOfStock",
-    "url": canonical URL
-  }
-}
-```
+**4. `src/App.tsx`** — Ajouter les 3 routes
+- `/cgv` → CGV
+- `/mentions-legales` → MentionsLegales
+- `/contact` → Contact
+- Lazy-loaded comme les autres pages
 
-**3. Canonical URLs — `src/components/SEO.tsx`**
+**5. `src/components/Footer.tsx`** — Ajouter les liens légaux
+- Nouvelle colonne "LÉGAL" dans le grid (passer à 5 colonnes desktop ou ajouter dans la colonne CONTACT)
+- Liens : CGV, Mentions Légales, Contact
+- Ajouter aussi les liens CGV et Mentions Légales dans la barre du bas (à côté du copyright)
 
-Ajouter une prop optionnelle `canonical?: string` au composant SEO. Quand fournie, injecter `<link rel="canonical" href={canonical} />`. L'ajouter sur PartDetail avec l'URL construite dynamiquement (`https://piecestrottinettes.fr/pieces/${slug}`).
-
-**4. Noindex OrderSuccessPage — `src/pages/OrderSuccessPage.tsx`**
-
-Importer SEO, ajouter `<SEO title="Commande confirmée" description="Votre commande a été confirmée." noindex />` en haut du JSX.
+**6. `src/pages/CheckoutPage.tsx`** — Ajouter la mention légale obligatoire
+- Sous le bouton de commande : "En passant commande, vous acceptez nos [CGV](/cgv)" avec lien cliquable
 
 ## Résumé
 
 | # | Fichier | Action |
 |---|---------|--------|
-| 1 | `src/pages/CheckoutPage.tsx` | Fix responsive mobile (inputs, sticky bottom bar, iOS zoom) |
-| 2 | `src/pages/PartDetail.tsx` | JSON-LD Product schema |
-| 3 | `src/components/SEO.tsx` | Ajouter prop `canonical` |
-| 4 | `src/pages/OrderSuccessPage.tsx` | Ajouter SEO noindex |
+| 1 | `src/pages/CGV.tsx` | Créer — Conditions Générales de Vente |
+| 2 | `src/pages/MentionsLegales.tsx` | Créer — Mentions Légales |
+| 3 | `src/pages/Contact.tsx` | Créer — Page contact avec formulaire |
+| 4 | `src/App.tsx` | Ajouter 3 routes lazy-loaded |
+| 5 | `src/components/Footer.tsx` | Ajouter liens légaux |
+| 6 | `src/pages/CheckoutPage.tsx` | Mention "J'accepte les CGV" |
 
