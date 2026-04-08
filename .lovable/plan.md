@@ -1,17 +1,39 @@
 
 
-# Plan — Mettre à jour STRIPE_WEBHOOK_SECRET
+# Batch 10 — 2 corrections
 
-## Contexte
-Le secret `STRIPE_WEBHOOK_SECRET` doit être mis à jour avec le signing secret LIVE du webhook Stripe (format `whsec_...`).
+## 1. Statuts de commande — `src/components/garage/OrderHistorySection.tsx`
 
-## Action
-Utiliser l'outil `add_secret` (disponible en mode implémentation) pour demander la saisie sécurisée de la nouvelle valeur du secret `STRIPE_WEBHOOK_SECRET`.
+Ajouter/compléter le `statusConfig` avec les 6 statuts :
+- `paid` → badge vert, label "Payé"
+- `awaiting_payment` → badge orange, label "En attente de paiement"
+- `processing` → badge bleu, label "En préparation"
+- `shipped` → badge violet, label "Expédié"
+- `delivered` → badge vert foncé, label "Livré"
+- `cancelled` → badge rouge, label "Annulé"
 
-## Étape unique
-1. Appeler l'outil d'ajout de secret avec le nom `STRIPE_WEBHOOK_SECRET` — cela ouvrira un formulaire sécurisé pour saisir la nouvelle valeur `whsec_...`
+## 2. Redirection post-connexion Google — 4 fichiers
 
-## Après mise à jour
-- Les fonctions backend `stripe-webhook` et `verify-payment` utiliseront automatiquement la nouvelle valeur
-- Aucun redéploiement nécessaire — les secrets sont injectés à l'exécution
+### `src/contexts/AuthContext.tsx`
+- Dans `onAuthStateChange`, quand `event === 'SIGNED_IN'` : lire `sessionStorage.getItem('returnTo')`, naviguer vers cette URL (ou `/garage` par défaut), puis `sessionStorage.removeItem('returnTo')`
+
+### `src/pages/Login.tsx`
+- Lire le query param `?returnTo=` depuis l'URL
+- Avant `signInWithGoogle()` : stocker le `returnTo` (query param ou page courante) dans `sessionStorage`
+- Après connexion email réussie : naviguer vers `returnTo` ou `/garage` par défaut
+- Supprimer le `navigate('/garage')` codé en dur
+
+### `src/pages/Register.tsx`
+- Même logique que Login.tsx : stocker `returnTo` dans sessionStorage avant Google OAuth, naviguer vers `returnTo` après inscription email
+
+### `src/components/auth/ProtectedRoute.tsx`
+- Changer `<Navigate to="/login" replace />` en `<Navigate to={`/login?returnTo=${location.pathname}`} replace />`
+- Importer `useLocation` depuis react-router-dom
+
+## Fichiers modifiés (résumé)
+1. `src/components/garage/OrderHistorySection.tsx` — badges statuts
+2. `src/contexts/AuthContext.tsx` — redirection post-OAuth
+3. `src/pages/Login.tsx` — returnTo logic
+4. `src/pages/Register.tsx` — returnTo logic
+5. `src/components/auth/ProtectedRoute.tsx` — passer returnTo dans redirect
 
