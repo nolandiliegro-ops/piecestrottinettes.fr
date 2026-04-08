@@ -168,9 +168,7 @@ serve(async (req) => {
           subtotalHT = Math.max(0, subtotalHT - promo.discount_value!);
         }
 
-        // Increment usage via SQL increment
-        await supabase.rpc("raw_sql", {}).catch(() => {});
-        // Direct increment
+        // Increment promo usage
         const { data: currentPromo } = await supabase
           .from("promo_codes")
           .select("current_uses")
