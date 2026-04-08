@@ -17,12 +17,12 @@ const MentionsLegales = () => {
           <h2>Éditeur du site</h2>
           <p>
             Le site piècestrottinettes.fr est édité par :<br />
-            <strong>[Nom / Raison sociale]</strong><br />
-            [Forme juridique — ex : SAS au capital de X €]<br />
-            Siège social : [Adresse]<br />
-            SIRET : [Numéro SIRET]<br />
-            Numéro de TVA intracommunautaire : [Numéro TVA]<br />
-            Directeur de la publication : [Nom du responsable]<br />
+            <strong>DI LIEGRO Nolan Enzo</strong><br />
+            Entrepreneur individuel (micro-entreprise)<br />
+            Siège social : 258 Avenue de Toulon, 1er étage, 13010 Marseille, France<br />
+            SIRET : 801 164 542 00053<br />
+            TVA : Non assujetti à la TVA (franchise en base, article 293 B du CGI)<br />
+            Directeur de la publication : Di Liegro Nolan Enzo<br />
             Contact : <a href="mailto:contact@piecestrottinettes.fr">contact@piecestrottinettes.fr</a>
           </p>
 
@@ -52,7 +52,7 @@ const MentionsLegales = () => {
             <a href="mailto:contact@piecestrottinettes.fr">contact@piecestrottinettes.fr</a>.
           </p>
           <p>
-            Responsable du traitement : [Nom du responsable]
+            Responsable du traitement : Di Liegro Nolan Enzo
           </p>
 
           <h2>Cookies</h2>
