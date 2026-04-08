@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare } from 'lucide-react';
+import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package } from 'lucide-react';
 import { useState } from 'react';
 import CompatibilityManager from './CompatibilityManager';
 import CategoriesManager from './CategoriesManager';
@@ -8,14 +8,12 @@ import OrdersManager from './OrdersManager';
 import TutosManager from './TutosManager';
 import ScansManager from './ScansManager';
 import SiteDesignManager from './SiteDesignManager';
-import ContactMessagesManager from './ContactMessagesManager';
 
 const AdminSettings = () => {
   const [tab, setTab] = useState('orders');
 
   const tabs = [
     { id: 'orders', label: 'Commandes', icon: Package },
-    { id: 'messages', label: 'Messages', icon: MessageSquare },
     { id: 'categories', label: 'Catégories', icon: Tag },
     { id: 'brands', label: 'Marques', icon: Building },
     { id: 'compatibility', label: 'Compat.', icon: Link2 },
@@ -44,7 +42,6 @@ const AdminSettings = () => {
         </TabsList>
 
         <TabsContent value="orders" className="mt-4"><OrdersManager /></TabsContent>
-        <TabsContent value="messages" className="mt-4"><ContactMessagesManager /></TabsContent>
         <TabsContent value="categories" className="mt-4"><CategoriesManager /></TabsContent>
         <TabsContent value="brands" className="mt-4"><BrandsManager /></TabsContent>
         <TabsContent value="compatibility" className="mt-4"><CompatibilityManager /></TabsContent>
