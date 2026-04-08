@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Home, ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check, FolderOpen } from 'lucide-react';
+import { Home, ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check, FolderOpen, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -328,38 +328,103 @@ const SectionGrid = ({ section }: { section: string }) => {
   );
 };
 
+// ── Shipping Config ──
+const ShippingConfig = () => {
+  const [threshold, setThreshold] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+
+  useEffect(() => {
+    supabase
+      .from('site_assets')
+      .select('asset_url')
+      .eq('asset_key', 'shipping_free_threshold')
+      .maybeSingle()
+      .then(({ data }) => {
+        if (data?.asset_url) setThreshold(data.asset_url);
+        setLoading(false);
+      });
+  }, []);
+
+  const handleSave = async () => {
+    setSaving(true);
+    const { error } = await supabase
+      .from('site_assets')
+      .update({ asset_url: threshold })
+      .eq('asset_key', 'shipping_free_threshold');
+    if (error) toast.error(error.message);
+    else toast.success('Seuil mis à jour');
+    setSaving(false);
+  };
+
+  if (loading) return <div className="flex justify-center py-6"><Loader2 className="w-5 h-5 animate-spin text-primary" /></div>;
+
+  return (
+    <div className="bg-card rounded-xl border border-border/30 p-5 space-y-3">
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+          <Truck className="w-5 h-5" />
+        </div>
+        <div>
+          <h4 className="font-semibold text-foreground text-sm">Seuil de livraison gratuite</h4>
+          <p className="text-xs text-muted-foreground">Livraison gratuite dès ce montant HT (€). Laisser vide ou 0 pour désactiver.</p>
+        </div>
+      </div>
+      <div className="flex gap-2 items-center">
+        <Input
+          type="number"
+          value={threshold}
+          onChange={(e) => setThreshold(e.target.value)}
+          placeholder="49"
+          className="w-32 text-sm"
+          min={0}
+          step={1}
+        />
+        <span className="text-sm text-muted-foreground">€</span>
+        <Button size="sm" onClick={handleSave} disabled={saving}>
+          {saving ? <Loader2 className="w-3.5 h-3.5 animate-spin mr-1" /> : null}
+          Enregistrer
+        </Button>
+      </div>
+    </div>
+  );
+};
+
 // ── Main Hub ──
 const SiteDesignManager = () => {
   return (
-    <Tabs defaultValue="accueil" className="space-y-6">
-      <TabsList className="bg-background/10 border border-border/20 p-1">
-        <TabsTrigger value="accueil" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
-          <Home className="w-4 h-4" /> Accueil
-        </TabsTrigger>
-        <TabsTrigger value="catalogue" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
-          <ShoppingBag className="w-4 h-4" /> Catalogue
-        </TabsTrigger>
-        <TabsTrigger value="produits" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
-          <Package className="w-4 h-4" /> Produits
-        </TabsTrigger>
-        <TabsTrigger value="garage" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
-          <Gauge className="w-4 h-4" /> Garage
-        </TabsTrigger>
-      </TabsList>
+    <div className="space-y-6">
+      <ShippingConfig />
+      <Tabs defaultValue="accueil" className="space-y-6">
+        <TabsList className="bg-background/10 border border-border/20 p-1">
+          <TabsTrigger value="accueil" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
+            <Home className="w-4 h-4" /> Accueil
+          </TabsTrigger>
+          <TabsTrigger value="catalogue" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
+            <ShoppingBag className="w-4 h-4" /> Catalogue
+          </TabsTrigger>
+          <TabsTrigger value="produits" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
+            <Package className="w-4 h-4" /> Produits
+          </TabsTrigger>
+          <TabsTrigger value="garage" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
+            <Gauge className="w-4 h-4" /> Garage
+          </TabsTrigger>
+        </TabsList>
 
-      <TabsContent value="accueil">
-        <CategoryDesignManager />
-      </TabsContent>
-      <TabsContent value="catalogue">
-        <SectionGrid section="catalogue" />
-      </TabsContent>
-      <TabsContent value="produits">
-        <SectionGrid section="produits" />
-      </TabsContent>
-      <TabsContent value="garage">
-        <SectionGrid section="garage" />
-      </TabsContent>
-    </Tabs>
+        <TabsContent value="accueil">
+          <CategoryDesignManager />
+        </TabsContent>
+        <TabsContent value="catalogue">
+          <SectionGrid section="catalogue" />
+        </TabsContent>
+        <TabsContent value="produits">
+          <SectionGrid section="produits" />
+        </TabsContent>
+        <TabsContent value="garage">
+          <SectionGrid section="garage" />
+        </TabsContent>
+      </Tabs>
+    </div>
   );
 };
 

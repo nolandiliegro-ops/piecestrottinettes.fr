@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare } from 'lucide-react';
+import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare, Ticket } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import CompatibilityManager from './CompatibilityManager';
@@ -10,6 +10,7 @@ import TutosManager from './TutosManager';
 import ScansManager from './ScansManager';
 import SiteDesignManager from './SiteDesignManager';
 import ContactMessagesManager from './ContactMessagesManager';
+import PromoCodesManager from './PromoCodesManager';
 
 const AdminSettings = () => {
   const [tab, setTab] = useState('orders');
@@ -33,6 +34,7 @@ const AdminSettings = () => {
     { id: 'brands', label: 'Marques', icon: Building },
     { id: 'compatibility', label: 'Compat.', icon: Link2 },
     { id: 'design', label: 'Design', icon: Palette },
+    { id: 'promos', label: 'Promos', icon: Ticket },
     { id: 'tutos', label: 'Tutos', icon: GraduationCap },
     { id: 'scans', label: 'Scans', icon: ScanLine },
   ];
@@ -67,6 +69,7 @@ const AdminSettings = () => {
         <TabsContent value="brands" className="mt-4"><BrandsManager /></TabsContent>
         <TabsContent value="compatibility" className="mt-4"><CompatibilityManager /></TabsContent>
         <TabsContent value="design" className="mt-4"><SiteDesignManager /></TabsContent>
+        <TabsContent value="promos" className="mt-4"><PromoCodesManager /></TabsContent>
         <TabsContent value="tutos" className="mt-4"><TutosManager /></TabsContent>
         <TabsContent value="scans" className="mt-4"><ScansManager /></TabsContent>
       </Tabs>
