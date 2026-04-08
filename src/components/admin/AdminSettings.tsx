@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package } from 'lucide-react';
-import { useState } from 'react';
+import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { supabase } from '@/integrations/supabase/client';
 import CompatibilityManager from './CompatibilityManager';
 import CategoriesManager from './CategoriesManager';
 import BrandsManager from './BrandsManager';
@@ -8,12 +9,26 @@ import OrdersManager from './OrdersManager';
 import TutosManager from './TutosManager';
 import ScansManager from './ScansManager';
 import SiteDesignManager from './SiteDesignManager';
+import ContactMessagesManager from './ContactMessagesManager';
 
 const AdminSettings = () => {
   const [tab, setTab] = useState('orders');
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  useEffect(() => {
+    const fetchUnread = async () => {
+      const { count } = await supabase
+        .from('contact_messages')
+        .select('id', { count: 'exact', head: true })
+        .eq('replied', false);
+      setUnreadCount(count ?? 0);
+    };
+    fetchUnread();
+  }, [tab]);
 
   const tabs = [
     { id: 'orders', label: 'Commandes', icon: Package },
+    { id: 'messages', label: 'Messages', icon: MessageSquare },
     { id: 'categories', label: 'Catégories', icon: Tag },
     { id: 'brands', label: 'Marques', icon: Building },
     { id: 'compatibility', label: 'Compat.', icon: Link2 },
@@ -32,16 +47,22 @@ const AdminSettings = () => {
               <TabsTrigger
                 key={t.id}
                 value={t.id}
-                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] px-3 py-2 gap-1.5 text-xs"
+                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] px-3 py-2 gap-1.5 text-xs relative"
               >
                 <Icon className="w-3.5 h-3.5" />
                 {t.label}
+                {t.id === 'messages' && unreadCount > 0 && (
+                  <span className="absolute -top-1 -right-1 min-w-[16px] h-4 px-1 flex items-center justify-center rounded-full bg-red-500 text-white text-[9px] font-bold leading-none">
+                    {unreadCount > 99 ? '99+' : unreadCount}
+                  </span>
+                )}
               </TabsTrigger>
             );
           })}
         </TabsList>
 
         <TabsContent value="orders" className="mt-4"><OrdersManager /></TabsContent>
+        <TabsContent value="messages" className="mt-4"><ContactMessagesManager /></TabsContent>
         <TabsContent value="categories" className="mt-4"><CategoriesManager /></TabsContent>
         <TabsContent value="brands" className="mt-4"><BrandsManager /></TabsContent>
         <TabsContent value="compatibility" className="mt-4"><CompatibilityManager /></TabsContent>
