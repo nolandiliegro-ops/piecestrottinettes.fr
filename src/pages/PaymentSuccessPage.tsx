@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import SEO from "@/components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { CheckCircle, Package, Mail, ArrowRight, Loader2, AlertCircle, Home, ShoppingBag } from "lucide-react";
@@ -149,6 +150,7 @@ const PaymentSuccessPage = () => {
   // Success state
   return (
     <div className="min-h-screen bg-greige flex flex-col">
+      <SEO title="Paiement Confirmé" description="Votre paiement a été confirmé" noindex />
       <Header />
       
       <main className="flex-1 py-8 md:py-16 px-4">

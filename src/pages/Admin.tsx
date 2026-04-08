@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SEO from '@/components/SEO';
 import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -54,6 +55,7 @@ const Admin = () => {
 
   return (
     <AdminLayout activeTab={activeTab} onTabChange={setActiveTab}>
+      <SEO title="Administration" description="Panneau d'administration" noindex />
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
       {activeTab === 'scanner' && <AdminScanner />}

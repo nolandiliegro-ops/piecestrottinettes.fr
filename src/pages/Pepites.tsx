@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { Trophy, Sparkles } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
@@ -29,6 +30,7 @@ const Pepites = () => {
         backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.4) 0%, transparent 60%)'
       }}
     >
+      <SEO title="Les Pépites — Sélection Premium | Pièces Trottinettes" description="Notre sélection exclusive de pièces premium pour trottinettes électriques. Choisies par nos experts pour leur qualité exceptionnelle." />
       <Header />
       
       <main className="pt-20">

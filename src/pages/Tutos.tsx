@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "@/components/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, Filter, X, Wrench } from "lucide-react";
@@ -102,6 +103,7 @@ const Tutos = () => {
         backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.4) 0%, transparent 60%)'
       }}
     >
+      <SEO title="Tutoriels & Guides | Pièces Trottinettes" description="Tutoriels vidéo et guides de réparation pour trottinettes électriques. Apprenez à installer vos pièces détachées étape par étape." />
       <Header />
       
       {/* Hero Section */}

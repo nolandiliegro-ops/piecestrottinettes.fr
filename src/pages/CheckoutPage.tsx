@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ArrowLeft, Lock, CreditCard, Package, FileText, Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -205,6 +206,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO title="Paiement" description="Finalisez votre commande" noindex />
       <Header />
       
       {/* Confirmation Modal */}
