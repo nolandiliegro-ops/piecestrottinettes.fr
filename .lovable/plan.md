@@ -1,48 +1,28 @@
 
 
-# Batch 6 — Pages légales obligatoires
+# Plan — Messages dans la navigation principale admin
 
-## Fichiers modifiés : 6 au total
+## Ce qui va etre modifie
 
-### Ordre d'exécution
+| # | Fichier | Modification |
+|---|---------|-------------|
+| 1 | `src/components/admin/AdminLayout.tsx` | Ajouter "Messages" (icone `MessageSquare`) dans `NAV_ITEMS` entre Scanner et Reglages. Ajouter un state pour le count des messages non lus via `supabase.from('contact_messages').select('id', { count: 'exact' }).eq('replied', false)`. Afficher un badge rouge sur l'icone Messages quand count > 0. |
+| 2 | `src/pages/Admin.tsx` | Ajouter l'import de `ContactMessagesManager` et le rendu conditionnel `{activeTab === 'messages' && <ContactMessagesManager />}`. |
+| 3 | `src/components/admin/AdminSettings.tsx` | Retirer l'onglet "Messages" et l'import de `ContactMessagesManager` puisqu'il sera au niveau principal. |
 
-**1. `src/pages/CGV.tsx`** — Créer la page Conditions Générales de Vente
-- Structure : Header + contenu statique avec sections (objet, prix, commande, livraison, rétractation 14 jours, garanties, responsabilité, données personnelles, droit applicable)
-- Composant SEO avec titre "Conditions Générales de Vente | Pièces Trottinettes"
-- Mise en page sobre : `prose` Tailwind, max-w-3xl centré, titres h2 pour chaque section
+## Details techniques
 
-**2. `src/pages/MentionsLegales.tsx`** — Créer la page Mentions Légales
-- Sections obligatoires : éditeur du site, hébergeur, propriété intellectuelle, RGPD/données personnelles, cookies
-- Composant SEO avec titre "Mentions Légales | Pièces Trottinettes"
-- Même mise en page que CGV
+**AdminLayout.tsx** :
+- Import `supabase`, `useEffect`, `useState`, `MessageSquare` de lucide
+- NAV_ITEMS : ajouter `{ id: 'messages', icon: MessageSquare, label: 'Messages' }` en position 4 (avant settings)
+- Fetch au mount : `const { count } = await supabase.from('contact_messages').select('id', { count: 'exact', head: true }).eq('replied', false)` — stocker dans un state `unreadCount`
+- Dans le bouton de navigation, si `item.id === 'messages' && unreadCount > 0`, afficher un `<span>` rouge absolu en haut a droite avec le nombre
 
-**3. `src/pages/Contact.tsx`** — Créer la page Contact
-- Email de contact (contact@piecestrottinettes.fr) affiché clairement
-- Formulaire simple : nom, email, sujet, message — sans backend pour l'instant (juste un toast de confirmation)
-- Composant SEO avec titre "Contact | Pièces Trottinettes"
+**Admin.tsx** :
+- Ajouter `import ContactMessagesManager from '@/components/admin/ContactMessagesManager'`
+- Ajouter `{activeTab === 'messages' && <ContactMessagesManager />}`
 
-**4. `src/App.tsx`** — Ajouter les 3 routes
-- `/cgv` → CGV
-- `/mentions-legales` → MentionsLegales
-- `/contact` → Contact
-- Lazy-loaded comme les autres pages
-
-**5. `src/components/Footer.tsx`** — Ajouter les liens légaux
-- Nouvelle colonne "LÉGAL" dans le grid (passer à 5 colonnes desktop ou ajouter dans la colonne CONTACT)
-- Liens : CGV, Mentions Légales, Contact
-- Ajouter aussi les liens CGV et Mentions Légales dans la barre du bas (à côté du copyright)
-
-**6. `src/pages/CheckoutPage.tsx`** — Ajouter la mention légale obligatoire
-- Sous le bouton de commande : "En passant commande, vous acceptez nos [CGV](/cgv)" avec lien cliquable
-
-## Résumé
-
-| # | Fichier | Action |
-|---|---------|--------|
-| 1 | `src/pages/CGV.tsx` | Créer — Conditions Générales de Vente |
-| 2 | `src/pages/MentionsLegales.tsx` | Créer — Mentions Légales |
-| 3 | `src/pages/Contact.tsx` | Créer — Page contact avec formulaire |
-| 4 | `src/App.tsx` | Ajouter 3 routes lazy-loaded |
-| 5 | `src/components/Footer.tsx` | Ajouter liens légaux |
-| 6 | `src/pages/CheckoutPage.tsx` | Mention "J'accepte les CGV" |
+**AdminSettings.tsx** :
+- Retirer `messages` du tableau `tabs` et le `TabsContent` correspondant
+- Retirer l'import de `ContactMessagesManager` et `MessageSquare`
 
