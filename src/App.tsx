@@ -33,6 +33,9 @@ const Tutos = lazy(() => import("./pages/Tutos"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Profile = lazy(() => import("./pages/Profile"));
 const ExpertStudio = lazy(() => import("./pages/ExpertStudio"));
+const CGV = lazy(() => import("./pages/CGV"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 const queryClient = new QueryClient();
 
@@ -94,6 +97,9 @@ function App() {
                 <ExpertStudio />
               </ProtectedRoute>
             } />
+            <Route path="/cgv" element={<CGV />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/contact" element={<Contact />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
