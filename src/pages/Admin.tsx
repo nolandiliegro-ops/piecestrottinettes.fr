@@ -8,6 +8,7 @@ import AdminLayout from '@/components/admin/AdminLayout';
 import AdminDashboard from '@/components/admin/AdminDashboard';
 import AdminInventory from '@/components/admin/AdminInventory';
 import AdminScanner from '@/components/admin/AdminScanner';
+import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 import AdminSettings from '@/components/admin/AdminSettings';
 
 const Admin = () => {
@@ -59,6 +60,7 @@ const Admin = () => {
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
       {activeTab === 'scanner' && <AdminScanner />}
+      {activeTab === 'messages' && <div className="p-4"><ContactMessagesManager /></div>}
       {activeTab === 'settings' && <AdminSettings />}
     </AdminLayout>
   );

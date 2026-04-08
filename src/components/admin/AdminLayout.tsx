@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboard, Package, ScanLine, Settings, ArrowLeft, Shield } from 'lucide-react';
+import { LayoutDashboard, Package, ScanLine, MessageSquare, Settings, ArrowLeft, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { supabase } from '@/integrations/supabase/client';
 
 interface AdminLayoutProps {
   children: React.ReactNode;
@@ -14,11 +15,24 @@ const NAV_ITEMS = [
   { id: 'dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { id: 'inventory', icon: Package, label: 'Inventaire' },
   { id: 'scanner', icon: ScanLine, label: 'Scanner' },
+  { id: 'messages', icon: MessageSquare, label: 'Messages' },
   { id: 'settings', icon: Settings, label: 'Réglages' },
 ];
 
 const AdminLayout = ({ children, activeTab, onTabChange }: AdminLayoutProps) => {
   const location = useLocation();
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  useEffect(() => {
+    const fetchUnread = async () => {
+      const { count } = await supabase
+        .from('contact_messages')
+        .select('id', { count: 'exact', head: true })
+        .eq('replied', false);
+      setUnreadCount(count ?? 0);
+    };
+    fetchUnread();
+  }, [activeTab]);
 
   return (
     <div className="admin-studio min-h-screen bg-[hsl(0_0%_10%)] text-[hsl(0_0%_95%)] flex flex-col">
@@ -78,12 +92,19 @@ const AdminLayout = ({ children, activeTab, onTabChange }: AdminLayoutProps) => 
                   isActive && "bg-primary/10"
                 )}
               >
-                <Icon 
-                  className={cn(
-                    "w-5 h-5 transition-colors duration-200",
-                    isActive ? "text-primary" : "text-[hsl(0_0%_55%)]"
+                <div className="relative">
+                  <Icon 
+                    className={cn(
+                      "w-5 h-5 transition-colors duration-200",
+                      isActive ? "text-primary" : "text-[hsl(0_0%_55%)]"
+                    )}
+                  />
+                  {item.id === 'messages' && unreadCount > 0 && (
+                    <span className="absolute -top-1.5 -right-1.5 min-w-[16px] h-4 px-1 flex items-center justify-center rounded-full bg-red-500 text-white text-[9px] font-bold leading-none">
+                      {unreadCount > 99 ? '99+' : unreadCount}
+                    </span>
                   )}
-                />
+                </div>
                 <span className={cn(
                   "text-[10px] font-medium mt-1 transition-colors duration-200",
                   isActive ? "text-primary" : "text-[hsl(0_0%_55%)]"
