@@ -74,7 +74,7 @@ const PartDetail = () => {
     <div className="min-h-screen bg-greige">
       <SEO
         title={`${part.name} | Pièces Trottinettes`}
-        description={part.meta_description || `Achetez ${part.name} pour votre trottinette électrique. Pièce détachée compatible, livraison rapide.`}
+        description={part.description || `Achetez ${part.name} pour votre trottinette électrique. Pièce détachée compatible, livraison rapide.`}
         image={part.image_url || undefined}
       />
       <Header />
