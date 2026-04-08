@@ -1,31 +1,44 @@
 
 
-# Plan — Messages visible sur desktop ET mobile
+# Plan — Modifier l'email de notification contact
 
-## Probleme
-- La nav desktop vient du tableau `tabs` dans `AdminSettings.tsx` — "Messages" n'y est pas
-- La bottom nav mobile vient de `NAV_ITEMS` dans `AdminLayout.tsx` — "Messages" y est deja mais il faut verifier que les 5 icones s'affichent correctement
+## Contexte
+Actuellement la notification est envoyee a `contact@piecestrottinettes.fr` (SHOP_EMAIL) avec `reply_to: email` (visiteur). Le user veut inverser : envoyer directement au visiteur avec `reply_to: contact@piecestrottinettes.fr`.
 
-## Modifications
+## Modification unique
 
-### 1. `src/components/admin/AdminSettings.tsx`
-- Ajouter `import { MessageSquare } from 'lucide-react'` et `import ContactMessagesManager from './ContactMessagesManager'`
-- Ajouter `import { useEffect, useState } from 'react'` et `import { supabase } from '@/integrations/supabase/client'`
-- Ajouter un state `unreadCount` avec fetch des messages non lus (`replied = false`)
-- Inserer dans le tableau `tabs` en 2eme position :
-  ```ts
-  { id: 'messages', label: 'Messages', icon: MessageSquare }
-  ```
-- Dans le `TabsTrigger` pour messages, afficher un badge rouge avec le count si > 0
-- Ajouter le `TabsContent` correspondant avec `<ContactMessagesManager />`
+**Fichier** : `supabase/functions/send-contact-email/index.ts`
 
-### 2. `src/components/admin/AdminLayout.tsx`
-- Verifier que les 5 items de la bottom nav s'affichent bien (ils sont deja la)
-- Ajuster le CSS si besoin : reduire `min-w-[64px]` a `min-w-0` et `px-3` a `px-2` pour que 5 icones tiennent sur petits ecrans
+Lignes 70-84 — changer le premier `resend.emails.send()` :
 
-### Fichiers touches
-| Fichier | Action |
-|---------|--------|
-| `src/components/admin/AdminSettings.tsx` | Ajouter onglet Messages + badge non lus + ContactMessagesManager |
-| `src/components/admin/AdminLayout.tsx` | Ajuster taille boutons bottom nav pour 5 items |
+```typescript
+await resend.emails.send({
+  from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
+  to: [email],
+  reply_to: SHOP_EMAIL,
+  subject: `[Contact] ${subject} — de ${escapeHtml(name)}`,
+  html: `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <h2 style="color: #2C2C2C;">Nouveau message de contact</h2>
+      <p><strong>Nom :</strong> ${escapeHtml(name)}</p>
+      <p><strong>Email :</strong> ${escapeHtml(email)}</p>
+      <p><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
+      <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
+      <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
+      <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
+      <p style="background: #f0f7ff; padding: 12px 16px; border-radius: 8px; color: #1a56db; font-weight: bold;">
+        📩 Répondre directement à cet email pour contacter le client.
+      </p>
+    </div>
+  `,
+});
+```
+
+Changements :
+- `to` passe de `[SHOP_EMAIL]` a `[email]` (visiteur)
+- `reply_to` passe de `email` a `SHOP_EMAIL` (`contact@piecestrottinettes.fr`)
+- `subject` inclut le nom du visiteur
+- Ajout d'un encart bleu visible "Repondre directement a cet email pour contacter le client"
+
+Apres modification, deployer la fonction avec `deploy_edge_functions`.
 
