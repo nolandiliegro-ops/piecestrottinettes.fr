@@ -68,9 +68,9 @@ const handler = async (req: Request): Promise<Response> => {
     // 1. Notification au propriétaire
     await resend.emails.send({
       from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
-      to: [SHOP_EMAIL],
-      reply_to: email,
-      subject: `[Contact] ${subject}`,
+      to: [email],
+      reply_to: SHOP_EMAIL,
+      subject: `[Contact] ${subject} — de ${escapeHtml(name)}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #2C2C2C;">Nouveau message de contact</h2>
@@ -79,6 +79,10 @@ const handler = async (req: Request): Promise<Response> => {
           <p><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
           <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
           <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
+          <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
+          <p style="background: #f0f7ff; padding: 12px 16px; border-radius: 8px; color: #1a56db; font-weight: bold;">
+            📩 Répondre directement à cet email pour contacter le client.
+          </p>
         </div>
       `,
     });
