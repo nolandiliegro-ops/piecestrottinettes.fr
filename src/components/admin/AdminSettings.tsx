@@ -44,6 +44,7 @@ const AdminSettings = () => {
         </TabsList>
 
         <TabsContent value="orders" className="mt-4"><OrdersManager /></TabsContent>
+        <TabsContent value="messages" className="mt-4"><ContactMessagesManager /></TabsContent>
         <TabsContent value="categories" className="mt-4"><CategoriesManager /></TabsContent>
         <TabsContent value="brands" className="mt-4"><BrandsManager /></TabsContent>
         <TabsContent value="compatibility" className="mt-4"><CompatibilityManager /></TabsContent>
