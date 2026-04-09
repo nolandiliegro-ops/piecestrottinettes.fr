@@ -9,6 +9,7 @@ export interface OrderMessage {
   user_id: string | null;
   sender_type: 'client' | 'admin';
   message: string;
+  image_url: string | null;
   read_at: string | null;
   created_at: string;
 }
