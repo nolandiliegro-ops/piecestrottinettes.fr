@@ -104,12 +104,18 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
   const fetchMessages = async () => {
     setLoading(true);
-    // Get ALL messages for this user_id (both client & admin)
-    const { data, error } = await supabase
+    let query = supabase
       .from('order_messages')
       .select('*')
-      .or(`user_id.eq.${thread.user_id}`)
-      .order('created_at', { ascending: true });
+      .eq('user_id', thread.user_id);
+    
+    if (thread.order_id) {
+      query = query.eq('order_id', thread.order_id);
+    } else {
+      query = query.is('order_id', null);
+    }
+    
+    const { data, error } = await query.order('created_at', { ascending: true });
     if (error) { console.error(error); setLoading(false); return; }
     setMessages((data || []) as OrderMsg[]);
     setLoading(false);
@@ -138,22 +144,23 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
         message: replyText.trim(),
         sender_type: 'admin',
         user_id: thread.user_id,
-        order_id: null,
+        order_id: thread.order_id || null,
       });
       if (error) throw error;
 
       // Send email notification to client
       if (thread.email) {
         try {
-          await supabase.functions.invoke('send-message-notification', {
-            body: {
-              recipient: 'client',
-              customerEmail: thread.email,
-              customerName: thread.display_name,
-              messageText: replyText.trim(),
-              conversationId: thread.user_id,
-            },
-          });
+           await supabase.functions.invoke('send-message-notification', {
+              body: {
+                recipient: 'client',
+                customerEmail: thread.email,
+                customerName: thread.display_name,
+                orderNumber: thread.order_number || undefined,
+                messageText: replyText.trim(),
+                conversationId: thread.order_id || thread.user_id,
+              },
+            });
         } catch (e) {
           console.error('Email notification failed:', e);
         }
