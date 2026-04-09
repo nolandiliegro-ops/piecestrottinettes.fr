@@ -444,7 +444,7 @@ export type Database = {
           created_at: string | null
           id: string
           message: string
-          order_id: string
+          order_id: string | null
           read_at: string | null
           sender_type: string
           user_id: string | null
@@ -453,7 +453,7 @@ export type Database = {
           created_at?: string | null
           id?: string
           message: string
-          order_id: string
+          order_id?: string | null
           read_at?: string | null
           sender_type: string
           user_id?: string | null
@@ -462,7 +462,7 @@ export type Database = {
           created_at?: string | null
           id?: string
           message?: string
-          order_id?: string
+          order_id?: string | null
           read_at?: string | null
           sender_type?: string
           user_id?: string | null
