@@ -462,6 +462,7 @@ export type Database = {
           stripe_session_id: string | null
           subtotal_ht: number
           total_ttc: number
+          tracking_number: string | null
           tva_amount: number
           updated_at: string
           user_id: string | null
@@ -488,6 +489,7 @@ export type Database = {
           stripe_session_id?: string | null
           subtotal_ht: number
           total_ttc: number
+          tracking_number?: string | null
           tva_amount: number
           updated_at?: string
           user_id?: string | null
@@ -514,6 +516,7 @@ export type Database = {
           stripe_session_id?: string | null
           subtotal_ht?: number
           total_ttc?: number
+          tracking_number?: string | null
           tva_amount?: number
           updated_at?: string
           user_id?: string | null
