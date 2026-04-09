@@ -1,76 +1,60 @@
 
 
-# Diagnostic et plan — Finalisation messagerie
+# Plan — 3 corrections finales messagerie
 
-## Diagnostic actuel
+## Diagnostic
 
-### Ce qui fonctionne
-- **Edge function `send-message-notification`** : 3 templates (client, admin, client-ack) avec header vert sauge, CTA vers `/garage?tab=messages` — OK
-- **Contact.tsx** : passe `user_id` si connecté — OK
-- **`send-contact-email`** : insert dans `order_messages` si `user_id` fourni — OK
-- **GarageMessages.tsx** : formulaire "Nouveau message" avec sujet + dropdown commandes — OK
-- **Realtime** : subscription sur `order_messages` — OK
+### Correction 1 — Sujets cohérents pour threading Gmail
+**Fichier : `supabase/functions/send-message-notification/index.ts`**
+- Actuellement les sujets sont différents selon le sens (client→admin vs admin→client), ce qui empêche Gmail de grouper les fils
+- Pas de headers `In-Reply-To` / `References` pour forcer le threading
+- **À faire** : utiliser un sujet stable par conversation (basé sur `orderNumber` ou "Question"), et ajouter `In-Reply-To` + `References` avec un Message-ID déterministe (ex: `<conv-{orderNumber}@piecestrottinettes.fr>`)
+- Nouveau champ optionnel `conversationId` dans l'interface (order_id ou user_id) pour générer le Message-ID
+- Sujets : `💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr` pour les deux sens, avec `Re:` préfixé pour les réponses admin
 
-### Problemes identifies
+### Correction 2 — Supprimer les doubles emails
+**Audit complet :**
+- `GarageMessages.tsx` : 2 appels `recipient: 'admin'` (lignes 68 et 281) — ✅ OK, pas de double (un pour NewMessageForm, un pour ChatView)
+- **Pas de `client-ack`** dans GarageMessages — déjà supprimé ✅
+- `Contact.tsx` : un seul appel à `send-contact-email` — ✅ pas de double
+- **`send-contact-email/index.ts`** : envoie **2 emails** (lignes 93-112 : notification admin + lignes 116-137 : accusé réception visiteur). L'accusé de réception est un email séparé qui double le flux. **À corriger** : supprimer l'accusé de réception (lignes 114-137) — le visiteur connecté voit son message dans le garage, le visiteur non connecté reçoit juste le toast. Si on veut garder un accusé pour les non-connectés, c'est acceptable, mais pour les connectés (`user_id` fourni), il faut le supprimer.
+- `ContactMessagesManager.tsx` (admin reply) : 1 appel `recipient: 'client'` — ✅ OK
+- `OrderDetailSheet.tsx` : 1 appel `recipient: 'client'` — ✅ OK, mais c'est un **autre point d'entrée** pour les réponses admin depuis la fiche commande
 
-1. **Admin Garage : pas de groupement par client**
-   - `ContactMessagesManager.tsx` affiche chaque message client comme une ligne séparée (ligne 260-317)
-   - Pas de vue conversation/thread — juste un expand avec le message unique + textarea réponse
-   - Le nom affiché est `customer_name` qui vient de `orders.customer_first_name` — les messages sans commande (direct) n'ont ni nom ni email (lignes 84-90 : `customer_email` et `customer_name` sont mappés uniquement si `order_id` existe)
-   - Pour les messages directs (order_id null), il faut fetcher le profil via `user_id` → `profiles.display_name` et l'email via `auth.users`
+### Correction 3 — Liens `/garage?tab=messages` partout
+- `stripe-webhook` : lignes 191 et 199 — ✅ déjà corrigé (`?tab=messages`)
+- `send-message-notification` : lignes 78 et 127 — ✅ déjà corrigé
+- `send-order-email` : **aucun lien garage** — rien à faire
+- `send-contact-email` : **aucun lien garage** — rien à faire
 
-2. **Double email quand le client envoie un message**
-   - `GarageMessages.tsx` envoie DEUX emails : `recipient: 'admin'` + `recipient: 'client-ack'` (lignes 67-93 dans NewMessageForm ET lignes 293-320 dans ChatView)
-   - Règle demandée : un seul email par message. L'accusé de réception est redondant puisque le client voit son message dans le garage
+## Fichiers modifiés (2 fichiers)
 
-3. **Lien garage dans emails de commande**
-   - `stripe-webhook/index.ts` : les liens pointent vers `/garage` sans `?tab=messages` (lignes 191, 199)
-   - `send-order-email` : aucun lien vers le garage
+### 1. `supabase/functions/send-message-notification/index.ts`
+- Ajouter champ `conversationId` (optionnel) dans l'interface pour identifier le fil
+- Générer un `Message-ID` déterministe : `<conv-{conversationId}@piecestrottinettes.fr>`
+- Ajouter headers `In-Reply-To` et `References` pointant vers ce Message-ID sur toutes les réponses
+- Sujets unifiés :
+  - Client envoie : `💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr` (ou `💬 [Question] ...` si pas de commande)
+  - Admin répond : `Re: 💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr`
+- Supprimer le template `client-ack` (plus utilisé nulle part)
 
-4. **Admin reply : pas de user_id sur le message**
-   - `ContactMessagesManager.tsx` ligne 126 : `user_id: null` quand admin répond — mais l'admin ne sait pas quel `user_id` associer au client. Il faut fetcher le `user_id` du client depuis ses messages existants
+### 2. `supabase/functions/send-contact-email/index.ts`
+- Supprimer l'accusé de réception au visiteur (lignes 114-137) quand `user_id` est fourni (connecté = voit dans garage)
+- Garder l'accusé uniquement pour les visiteurs non connectés (pas de `user_id`)
 
-5. **Admin : pas d'historique conversation**
-   - Quand on clique sur un message dans l'onglet Garage, on voit juste ce message — pas tout l'historique du fil
-
-## Plan de correction — 3 fichiers + 1 redéploiement
-
-### 1. `src/components/admin/ContactMessagesManager.tsx` — Refonte onglet Garage
-
-**Grouper par client** : fetcher TOUS les messages de `order_messages`, grouper par `user_id`. Chaque ligne = un client avec son nom, email, dernier message, nombre de messages non lus.
-
-**Résoudre le nom du client** :
-- Fetcher `profiles` pour obtenir `display_name` par `user_id`
-- Fetcher `auth.users` n'est pas possible côté client → utiliser `orders.customer_first_name + customer_last_name` si le client a des commandes, sinon `profiles.display_name`
-- Pour l'email : `orders.customer_email` ou fallback sur le profil
-
-**Vue conversation** : quand on clique sur un client, afficher TOUT l'historique (messages client ET admin) chronologiquement, style iMessage. Champ de réponse en bas.
-
-**Reply admin** : quand l'admin répond, insérer avec `user_id` du client (récupéré depuis les messages existants du fil) pour que le client voie la réponse dans son garage.
-
-### 2. `src/components/garage/GarageMessages.tsx` — Supprimer le double email
-
-- Dans `NewMessageForm.handleSend` : supprimer l'appel `recipient: 'client-ack'` (lignes 82-93). Garder uniquement `recipient: 'admin'`.
-- Dans `ChatView.handleSend` : supprimer l'appel `recipient: 'client-ack'` (lignes 308-320). Garder uniquement `recipient: 'admin'`.
-- Le client voit son message dans le garage — pas besoin d'accusé par email.
-
-### 3. `supabase/functions/stripe-webhook/index.ts` — Liens garage
-
-- Ligne 191 : remplacer `https://piecestrottinettes.fr/garage` par `https://piecestrottinettes.fr/garage?tab=messages`
-- Ligne 199 : idem
-
-### 4. Redéployer `send-message-notification`
-
-La fonction est déjà correcte (templates OK, CTA OK). Pas de modification nécessaire. Juste s'assurer qu'elle est déployée.
+### 3. Callers côté client (mise à jour des appels)
+- `GarageMessages.tsx` : ajouter `conversationId` dans les appels (order_id ou user_id)
+- `ContactMessagesManager.tsx` : ajouter `conversationId` dans l'appel admin reply
+- `OrderDetailSheet.tsx` : ajouter `conversationId` dans l'appel admin reply
 
 ## Ordre d'exécution
 
 ```text
-1. ContactMessagesManager — refonte groupement + conversation    (25 min)
-2. GarageMessages — supprimer double email                       (5 min)
-3. stripe-webhook — liens garage?tab=messages                    (2 min)
-4. Redéploiement edge functions                                  (2 min)
+1. send-message-notification — threading + sujets + supprimer client-ack    (15 min)
+2. send-contact-email — supprimer accusé si connecté                        (5 min)
+3. GarageMessages + ContactMessagesManager + OrderDetailSheet — conversationId  (5 min)
+4. Déployer les 2 edge functions                                            (2 min)
 ```
 
-**Total estimé : ~35 min**
+**Total estimé : ~25 min**
 
