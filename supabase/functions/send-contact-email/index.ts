@@ -14,6 +14,7 @@ const ContactSchema = z.object({
   email: z.string().trim().email().max(255),
   subject: z.string().trim().min(1).max(200),
   message: z.string().trim().min(1).max(5000),
+  user_id: z.string().uuid().optional(),
 });
 
 const SHOP_EMAIL = "contact@piecestrottinettes.fr";
@@ -44,14 +45,15 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const { name, email, subject, message } = parsed.data;
+    const { name, email, subject, message, user_id } = parsed.data;
 
-    // Sauvegarde en base via service role (bypass RLS)
+    const supabaseAdmin = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
+    );
+
+    // Sauvegarde en base contact_messages
     try {
-      const supabaseAdmin = createClient(
-        Deno.env.get("SUPABASE_URL")!,
-        Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
-      );
       const { error: insertError } = await supabaseAdmin
         .from("contact_messages")
         .insert({ name, email, subject, message });
@@ -63,6 +65,28 @@ const handler = async (req: Request): Promise<Response> => {
       }
     } catch (dbErr) {
       console.error("Database insert error (non-blocking):", dbErr);
+    }
+
+    // Si utilisateur connecté, insérer aussi dans order_messages pour le garage
+    if (user_id) {
+      try {
+        const { error: msgError } = await supabaseAdmin
+          .from("order_messages")
+          .insert({
+            user_id,
+            message: `[${subject}]\n${message}`,
+            sender_type: 'client',
+            order_id: null,
+          });
+
+        if (msgError) {
+          console.error("Failed to insert order_message:", msgError);
+        } else {
+          console.log("Message also saved to order_messages for garage visibility");
+        }
+      } catch (e) {
+        console.error("order_messages insert error (non-blocking):", e);
+      }
     }
 
     // 1. Notification au propriétaire
