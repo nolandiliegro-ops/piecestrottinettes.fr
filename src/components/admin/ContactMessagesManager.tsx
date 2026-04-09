@@ -28,6 +28,8 @@ interface OrderMsg {
 
 interface ClientThread {
   user_id: string;
+  order_id: string | null; // null = general question, string = order-specific
+  order_number: string | null;
   display_name: string;
   email: string;
   last_message: string;
