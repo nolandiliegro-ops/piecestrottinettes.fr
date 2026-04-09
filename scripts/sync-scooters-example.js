@@ -20,12 +20,14 @@ if (!SUPABASE_URL || !ADMIN_BULK_SECRET) {
 }
 
 // --- Données à envoyer (à adapter) ---
+// Champ image_url : URL d'une photo officielle du fabricant (vue 3/4 idéale)
 const payload = {
   brandName: "Xiaomi",
   scooters: [
     {
       name: "Mi Electric Scooter 4 Pro",
       slug: "xiaomi-mi-electric-scooter-4-pro",
+      image_url: "https://example.com/xiaomi-4-pro.png", // Photo officielle 3/4
       power_watts: 700,
       range_km: 55,
       max_speed_kmh: 25,
@@ -37,6 +39,7 @@ const payload = {
     {
       name: "Mi Electric Scooter 3",
       slug: "xiaomi-mi-electric-scooter-3",
+      image_url: "https://example.com/xiaomi-3.png", // Photo officielle 3/4
       power_watts: 600,
       range_km: 30,
       max_speed_kmh: 25,
@@ -70,6 +73,7 @@ async function main() {
   }
 
   console.log("✅ Résultat:", JSON.stringify(data, null, 2));
+  console.log("⏳ En attente de validation admin — les modèles sont en brouillon (published=false)");
 }
 
 main().catch((err) => {

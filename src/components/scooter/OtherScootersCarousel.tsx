@@ -20,7 +20,7 @@ const OtherScootersCarousel = ({ currentScooterId }: OtherScootersCarouselProps)
   const { data: allScooters, isLoading } = useScooterModels();
 
   // Filter out the current scooter
-  const otherScooters = allScooters?.filter((s) => s.id !== currentScooterId) || [];
+  const otherScooters = allScooters?.filter((s) => s.id !== currentScooterId && s.published !== false) || [];
 
   if (isLoading) {
     return (
