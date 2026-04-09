@@ -1,97 +1,76 @@
 
 
-# Plan de session — 4 points, ordre recommandé
+# Batch — Messagerie client intégrée dans /garage
 
-## État actuel (ce qui est déjà OK)
+## Migration SQL — Table `order_messages`
 
-- PWA `short_name` = "PiècesTrott" ✅ (pas "Admin Studio")
-- Bouton admin dans Catalogue = `{isAdmin && ...}` ✅ (déjà corrigé)
-- `robots.txt` existe déjà ✅
-- `loading="lazy"` déjà sur PartCard, MediaGallery, CategoryBentoGrid ✅
-- `noindex` déjà sur Admin, Garage, Profile, Checkout, PaymentSuccess, OrderSuccess ✅
-- SEO component avec meta dynamiques déjà utilisé sur Catalogue, Scooters, Pepites, Tutos ✅
-
-**Conclusion Point 3** : La plupart des "corrections techniques rapides" sont déjà en place. Seul le `og:image` expiré dans `index.html` reste à corriger.
-
----
-
-## Point 1 — Détail commande enrichi dans /garage (5 fichiers)
-
-Actuellement, le panneau expandable (`OrderItemsDetails`) affiche les articles mais manque : timeline de statut, adresse, mode de livraison, numéro de suivi, bouton contact.
-
-### Modifications
-1. **`src/components/garage/OrderHistorySection.tsx`**
-   - Enrichir le type `Order` pour inclure `address`, `postal_code`, `city`, `delivery_method`, `delivery_price`, `customer_first_name`, `customer_last_name`, `tracking_number` (nouveau champ)
-   - Modifier la query pour récupérer ces champs (déjà `select('*')` donc OK après migration)
-   - Ajouter dans `OrderItemsDetails` :
-     - **Timeline visuelle** horizontale des statuts (5 étapes avec points et lignes, étape active colorée)
-     - **Section adresse** avec icône MapPin
-     - **Mode de livraison** avec badge
-     - **Numéro de suivi** (si statut shipped/delivered) avec lien cliquable
-     - **Bouton "Contacter le support"** → lien vers `/contact?order={order_number}`
-   - Passer `order` complet au composant enfant (pas juste `orderId`)
-
-2. **`src/pages/Contact.tsx`** — Lire le query param `?order=` et pré-remplir le sujet avec le numéro de commande
-
----
-
-## Point 2 — Numéro de suivi expédition (4 fichiers + 1 migration)
-
-### Migration SQL
 ```sql
-ALTER TABLE public.orders ADD COLUMN tracking_number text;
+CREATE TABLE public.order_messages (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_id uuid NOT NULL REFERENCES public.orders(id) ON DELETE CASCADE,
+  user_id uuid REFERENCES auth.users(id) ON DELETE SET NULL,
+  sender_type text NOT NULL, -- 'client' ou 'admin'
+  message text NOT NULL,
+  read_at timestamptz,
+  created_at timestamptz DEFAULT now()
+);
+
+ALTER TABLE public.order_messages ENABLE ROW LEVEL SECURITY;
+
+-- Client: voir ses messages via orders.user_id
+CREATE POLICY "Users can view own order messages" ON public.order_messages
+  FOR SELECT TO authenticated
+  USING (EXISTS (
+    SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid()
+  ));
+
+-- Client: insérer des messages sur ses commandes
+CREATE POLICY "Users can insert own order messages" ON public.order_messages
+  FOR INSERT TO authenticated
+  WITH CHECK (
+    sender_type = 'client' AND user_id = auth.uid() AND
+    EXISTS (SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid())
+  );
+
+-- Client: marquer comme lu ses messages admin
+CREATE POLICY "Users can mark messages as read" ON public.order_messages
+  FOR UPDATE TO authenticated
+  USING (
+    sender_type = 'admin' AND
+    EXISTS (SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid())
+  );
+
+-- Admin full access
+CREATE POLICY "Admins full access on order_messages" ON public.order_messages
+  FOR ALL TO authenticated
+  USING (has_role(auth.uid(), 'admin'::app_role))
+  WITH CHECK (has_role(auth.uid(), 'admin'::app_role));
+
+-- Realtime
+ALTER PUBLICATION supabase_realtime ADD TABLE public.order_messages;
 ```
 
-### Modifications
-1. **Migration SQL** — ajouter colonne `tracking_number` sur `orders`
-2. **`src/components/admin/OrderDetailSheet.tsx`** — Ajouter un champ texte "Numéro de suivi" qui apparaît quand le statut passe à "shipped". Sauvegarder dans la colonne `tracking_number`
-3. **`src/components/admin/OrdersManager.tsx`** — Quand on change le statut vers "shipped", ouvrir un prompt ou afficher l'input pour le tracking number
-4. **`src/components/garage/OrderHistorySection.tsx`** — Afficher le tracking number côté client (fait dans Point 1)
-5. **Email automatique** : Modifier `send-order-email` ou créer une logique dans le webhook de changement de statut pour envoyer un email avec le numéro de suivi. Option simple : déclencher l'envoi depuis l'admin au moment de la saisie du tracking.
+## Fichiers créés/modifiés (7 fichiers + 1 migration + 1 edge function)
 
----
+### Ordre d'exécution
 
-## Point 3 — Corrections techniques (1 fichier)
+1. **Migration SQL** — table `order_messages` + RLS + realtime
+2. **`supabase/functions/send-message-notification/index.ts`** (nouveau) — Email via Resend quand l'admin envoie un message. Objet : "Nouveau message pour votre commande PT-XXXX". Corps : message + lien vers `/garage`.
+3. **`src/components/garage/GarageMessages.tsx`** (nouveau) — Onglet Messages côté client :
+   - Liste des conversations groupées par `order_id` avec dernier message, date, badge non lu
+   - Vue conversation : bulles chat (client droite, admin gauche), champ texte + bouton Envoyer
+   - Marquer `read_at` quand le client ouvre une conversation admin
+   - Realtime via `supabase.channel()` pour messages en temps réel
+4. **`src/pages/Garage.tsx`** — Ajouter 3ème onglet "MESSAGES" avec icône `MessageSquare`, badge rouge non lus, type `activeTab` étendu à `'garage' | 'orders' | 'messages'`
+5. **`src/components/admin/OrderDetailSheet.tsx`** — Ajouter section "Messages" en bas : fil de conversation + champ réponse. Quand l'admin envoie → insert `order_messages` + appel edge function `send-message-notification`
+6. **`src/hooks/useOrderMessages.ts`** (nouveau) — Hook partagé pour fetch messages par order_id, envoyer un message, compter non lus, avec abonnement realtime
 
-Seule correction restante :
-1. **`index.html`** — Remplacer les URLs `og:image` et `twitter:image` Google Storage expirées par une URL permanente (image dans le bucket `site-assets` ou URL stable)
+### Détails techniques
 
----
+- **Email notification** : Utilise Resend (déjà configuré avec `RESEND_API_KEY`), même pattern que `send-order-email`. Envoi uniquement quand `sender_type = 'admin'`.
+- **Badge non lus** : Query `order_messages` WHERE `sender_type = 'admin'` AND `read_at IS NULL` AND order appartient au user. Affiché sur l'onglet Messages.
+- **Realtime** : Subscription `postgres_changes` sur `order_messages` pour mise à jour instantanée des conversations.
+- **Chat UI** : Style minimaliste cohérent avec le design existant (bulles arrondies, timestamps discrets, input en bas).
 
-## Point 4 — SEO de base (2-3 fichiers + 1 edge function)
-
-### Ce qui est déjà fait
-- Meta tags dynamiques sur Catalogue, Scooters, Pepites, Tutos ✅
-- `noindex` sur Admin, Garage, Checkout, PaymentSuccess ✅
-
-### Ce qui reste
-1. **`supabase/functions/generate-sitemap/index.ts`** (nouveau) — Edge function qui génère un `sitemap.xml` dynamique avec :
-   - Pages statiques (`/`, `/catalogue`, `/scooters`, `/tutos`, `/pepites`, `/contact`, `/cgv`, `/mentions-legales`)
-   - Pages dynamiques : `/pieces/{slug}` (depuis `parts`), `/scooters/{slug}` (depuis `scooter_models`)
-   - Exclure pages privées
-
-2. **`public/robots.txt`** — Déjà OK, pointe vers `/sitemap.xml` ✅
-
----
-
-## Ordre recommandé
-
-```text
-Étape 1 : Migration tracking_number              (5 min)
-Étape 2 : Point 1+2 ensemble — OrderHistory      (45 min)
-          enrichi + tracking côté admin
-Étape 3 : Point 3 — og:image index.html          (5 min)  
-Étape 4 : Point 4 — Sitemap edge function        (20 min)
-```
-
-**Total estimé : ~1h15**
-
-### Fichiers créés/modifiés
-1. Migration SQL — `tracking_number` sur orders
-2. `src/components/garage/OrderHistorySection.tsx` — détail enrichi + timeline + tracking + bouton contact
-3. `src/components/admin/OrderDetailSheet.tsx` — champ tracking number
-4. `src/components/admin/OrdersManager.tsx` — prompt tracking au changement de statut
-5. `src/pages/Contact.tsx` — pré-remplissage numéro de commande
-6. `index.html` — og:image corrigé
-7. `supabase/functions/generate-sitemap/index.ts` (nouveau)
+### Estimation : ~1h
 
