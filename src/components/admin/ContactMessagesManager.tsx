@@ -22,6 +22,7 @@ interface OrderMsg {
   user_id: string | null;
   sender_type: string;
   message: string;
+  image_url: string | null;
   created_at: string;
   read_at: string | null;
 }

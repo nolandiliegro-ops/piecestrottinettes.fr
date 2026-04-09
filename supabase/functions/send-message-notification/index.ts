@@ -15,6 +15,7 @@ interface MessageNotificationRequest {
   orderNumber?: string;
   messageText: string;
   conversationId?: string;
+  imageUrl?: string;
 }
 
 function escapeHtml(str: string): string {
