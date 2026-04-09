@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
@@ -33,6 +33,8 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useOrderMessages, useSendMessage } from "@/hooks/useOrderMessages";
+import { Textarea } from "@/components/ui/textarea";
 
 type Order = {
   id: string;
@@ -450,6 +452,9 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
                 </div>
               )}
             </div>
+
+            {/* Messages Section */}
+            <AdminOrderChat orderId={order.id} customerEmail={order.customer_email} customerName={`${order.customer_first_name} ${order.customer_last_name}`} orderNumber={order.order_number} />
           </div>
         </ScrollArea>
       </SheetContent>
