@@ -127,6 +127,7 @@ export const useScootersGroupedByBrand = () => {
           slug,
           brand:brands(id, name, slug)
         `)
+        .eq("published", true)
         .order("name");
 
       if (error) throw error;

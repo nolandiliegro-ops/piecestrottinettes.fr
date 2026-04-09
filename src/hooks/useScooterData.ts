@@ -50,8 +50,9 @@ export const useScooterModels = (brandSlug?: string | null) => {
           *,
           brand:brands(id, name, slug)
         `)
+        .eq("published", true)
         .order("name")
-        .abortSignal(signal); // ✅ Ajouter le signal d'annulation
+        .abortSignal(signal);
 
       if (brandSlug) {
         // Filtrer par slug de marque via la relation
@@ -179,9 +180,10 @@ export const useSearchScooters = (query: string) => {
           name,
           brand:brands(name)
         `)
+        .eq("published", true)
         .or(`name.ilike.%${debouncedQuery}%,brands.name.ilike.%${debouncedQuery}%`)
         .limit(5)
-        .abortSignal(signal); // ✅ Ajouter le signal d'annulation
+        .abortSignal(signal);
 
       if (error) {
         if (error.code === 'PGRST301' || signal?.aborted) {

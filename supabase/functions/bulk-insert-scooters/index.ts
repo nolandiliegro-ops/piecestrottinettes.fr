@@ -109,6 +109,7 @@ Deno.serve(async (req) => {
         youtube_video_id: scooter.youtube_video_id || null,
         affiliate_link: scooter.affiliate_link || null,
         technical_signature: scooter.technical_signature || {},
+        published: false, // Bot imports always start as drafts
       };
 
       // Check if exists

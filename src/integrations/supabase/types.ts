@@ -847,6 +847,7 @@ export type Database = {
           meta_title: string | null
           name: string
           power_watts: number | null
+          published: boolean
           range_km: number | null
           search_terms: string | null
           slug: string
@@ -870,6 +871,7 @@ export type Database = {
           meta_title?: string | null
           name: string
           power_watts?: number | null
+          published?: boolean
           range_km?: number | null
           search_terms?: string | null
           slug: string
@@ -893,6 +895,7 @@ export type Database = {
           meta_title?: string | null
           name?: string
           power_watts?: number | null
+          published?: boolean
           range_km?: number | null
           search_terms?: string | null
           slug?: string
