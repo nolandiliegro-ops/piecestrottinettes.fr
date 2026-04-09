@@ -111,29 +111,31 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    // 2. Accusé de réception au visiteur
-    try {
-      await resend.emails.send({
-        from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
-        to: [email],
-        subject: "Votre message a bien été reçu — piecestrottinettes.fr",
-        html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-            <h2 style="color: #2C2C2C; font-family: Georgia, serif; letter-spacing: 2px;">
-              PIECESTROTTINETTES.FR
-            </h2>
-            <p>Bonjour ${escapeHtml(name)},</p>
-            <p>Nous avons bien reçu votre message concernant <strong>"${escapeHtml(subject)}"</strong>.</p>
-            <p>Notre équipe vous répondra sous 48h.</p>
-            <hr style="border: 1px solid #e8e4e0; margin: 24px 0;" />
-            <p style="color: #888; font-size: 12px;">
-              Ceci est un accusé de réception automatique. Merci de ne pas répondre à cet email.
-            </p>
-          </div>
-        `,
-      });
-    } catch (ackErr) {
-      console.warn("Acknowledgment email failed:", ackErr);
+    // 2. Accusé de réception au visiteur (uniquement si non connecté)
+    if (!user_id) {
+      try {
+        await resend.emails.send({
+          from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
+          to: [email],
+          subject: "Votre message a bien été reçu — piecestrottinettes.fr",
+          html: `
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+              <h2 style="color: #2C2C2C; font-family: Georgia, serif; letter-spacing: 2px;">
+                PIECESTROTTINETTES.FR
+              </h2>
+              <p>Bonjour ${escapeHtml(name)},</p>
+              <p>Nous avons bien reçu votre message concernant <strong>"${escapeHtml(subject)}"</strong>.</p>
+              <p>Notre équipe vous répondra sous 48h.</p>
+              <hr style="border: 1px solid #e8e4e0; margin: 24px 0;" />
+              <p style="color: #888; font-size: 12px;">
+                Ceci est un accusé de réception automatique. Merci de ne pas répondre à cet email.
+              </p>
+            </div>
+          `,
+        });
+      } catch (ackErr) {
+        console.warn("Acknowledgment email failed:", ackErr);
+      }
     }
 
     return new Response(JSON.stringify({ success: true }), {

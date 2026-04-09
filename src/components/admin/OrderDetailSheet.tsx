@@ -137,13 +137,14 @@ const AdminOrderChat = ({ orderId, customerEmail, customerName, orderNumber }: {
 
     // Send email notification to customer
     try {
-      const { supabase } = await import("@/integrations/supabase/client");
       await supabase.functions.invoke('send-message-notification', {
         body: {
+          recipient: 'client',
           customerEmail,
           customerName,
           orderNumber,
           messageText: text,
+          conversationId: orderId,
         },
       });
     } catch (err) {
