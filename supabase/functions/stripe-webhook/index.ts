@@ -302,19 +302,6 @@ serve(async (req) => {
 
     console.log(`[WEBHOOK] Order ${orderId} marked as paid`);
 
-    // --- Insert automatic welcome message ---
-    try {
-      await supabaseAdmin.from("order_messages").insert({
-        order_id: orderId,
-        sender_type: "admin",
-        user_id: null,
-        message: "Merci pour votre commande ! Nous avons bien reçu votre paiement et préparons votre colis. Vous recevrez votre numéro de suivi dès l'expédition. 🛵",
-      });
-      console.log(`[WEBHOOK] Auto welcome message inserted for order ${orderId}`);
-    } catch (msgErr) {
-      console.error(`[WEBHOOK] Failed to insert welcome message:`, msgErr);
-    }
-
     // --- Fetch order items for the email ---
     const { data: emailItems } = await supabaseAdmin
       .from("order_items")

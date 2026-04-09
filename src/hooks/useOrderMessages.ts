@@ -5,7 +5,7 @@ import { useAuth } from '@/hooks/useAuth';
 
 export interface OrderMessage {
   id: string;
-  order_id: string;
+  order_id: string | null;
   user_id: string | null;
   sender_type: 'client' | 'admin';
   message: string;
@@ -21,14 +21,25 @@ export interface ConversationSummary {
   unread_count: number;
 }
 
-// Fetch messages for a specific order
+// Fetch messages for a specific order (or direct messages when orderId is 'direct')
 export const useOrderMessages = (orderId: string | null) => {
+  const { user } = useAuth();
   const queryClient = useQueryClient();
 
   const { data: messages = [], isLoading } = useQuery({
     queryKey: ['order-messages', orderId],
     queryFn: async () => {
       if (!orderId) return [];
+      if (orderId === 'direct') {
+        const { data, error } = await supabase
+          .from('order_messages')
+          .select('*')
+          .is('order_id', null)
+          .eq('user_id', user?.id || '')
+          .order('created_at', { ascending: true });
+        if (error) throw error;
+        return (data || []).map(m => ({ ...m, sender_type: m.sender_type as 'client' | 'admin' })) as OrderMessage[];
+      }
       const { data, error } = await supabase
         .from('order_messages')
         .select('*')
@@ -40,16 +51,16 @@ export const useOrderMessages = (orderId: string | null) => {
     enabled: !!orderId,
   });
 
-  // Realtime subscription
   useEffect(() => {
     if (!orderId) return;
+    const filter = orderId === 'direct' ? undefined : `order_id=eq.${orderId}`;
     const channel = supabase
       .channel(`order-messages-${orderId}`)
       .on('postgres_changes', {
         event: 'INSERT',
         schema: 'public',
         table: 'order_messages',
-        filter: `order_id=eq.${orderId}`,
+        ...(filter ? { filter } : {}),
       }, () => {
         queryClient.invalidateQueries({ queryKey: ['order-messages', orderId] });
         queryClient.invalidateQueries({ queryKey: ['unread-messages-count'] });
@@ -67,12 +78,12 @@ export const useSendMessage = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async ({ orderId, message, senderType, userId }: {
-      orderId: string; message: string; senderType: 'client' | 'admin'; userId?: string;
+      orderId: string | null; message: string; senderType: 'client' | 'admin'; userId?: string;
     }) => {
       const { error } = await supabase
         .from('order_messages')
         .insert({
-          order_id: orderId,
+          order_id: orderId || null,
           message,
           sender_type: senderType,
           user_id: userId || null,
@@ -80,7 +91,7 @@ export const useSendMessage = () => {
       if (error) throw error;
     },
     onSuccess: (_, variables) => {
-      queryClient.invalidateQueries({ queryKey: ['order-messages', variables.orderId] });
+      queryClient.invalidateQueries({ queryKey: ['order-messages', variables.orderId || 'direct'] });
       queryClient.invalidateQueries({ queryKey: ['unread-messages-count'] });
       queryClient.invalidateQueries({ queryKey: ['order-conversations'] });
     },
@@ -92,6 +103,7 @@ export const useMarkMessagesAsRead = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async (orderId: string) => {
+      if (orderId === 'direct') return;
       const { error } = await supabase
         .from('order_messages')
         .update({ read_at: new Date().toISOString() })
@@ -127,7 +139,6 @@ export const useUnreadMessagesCount = () => {
     enabled: !!user?.id,
   });
 
-  // Realtime for global unread count
   useEffect(() => {
     if (!user?.id) return;
     const channel = supabase
@@ -155,45 +166,62 @@ export const useOrderConversations = () => {
     queryFn: async () => {
       if (!user?.id) return [];
 
-      // Get all orders with messages for this user
       const { data: orders, error: ordersError } = await supabase
         .from('orders')
         .select('id, order_number')
         .eq('user_id', user.id);
       if (ordersError) throw ordersError;
-      if (!orders || orders.length === 0) return [];
 
-      const orderIds = orders.map(o => o.id);
+      const orderIds = (orders || []).map(o => o.id);
 
-      // Get all messages for these orders
-      const { data: messages, error: msgError } = await supabase
+      // Fetch order-linked messages
+      let orderMessages: OrderMessage[] = [];
+      if (orderIds.length > 0) {
+        const { data, error } = await supabase
+          .from('order_messages')
+          .select('*')
+          .in('order_id', orderIds)
+          .order('created_at', { ascending: false });
+        if (error) throw error;
+        orderMessages = (data || []) as unknown as OrderMessage[];
+      }
+
+      // Fetch direct messages (order_id IS NULL)
+      const { data: directMsgs, error: directError } = await supabase
         .from('order_messages')
         .select('*')
-        .in('order_id', orderIds)
+        .is('order_id', null)
+        .eq('user_id', user.id)
         .order('created_at', { ascending: false });
-      if (msgError) throw msgError;
-      if (!messages || messages.length === 0) return [];
+      if (directError) throw directError;
 
-      // Cast messages
-      const typedMessages = messages as unknown as OrderMessage[];
+      const conversations: ConversationSummary[] = [];
 
-      // Group by order_id
-      const grouped = new Map<string, { msgs: OrderMessage[]; order: typeof orders[0] }>();
-      for (const order of orders) {
-        const orderMsgs = typedMessages.filter(m => m.order_id === order.id);
-        if (orderMsgs.length > 0) {
-          grouped.set(order.id, { msgs: orderMsgs, order });
+      // Group order messages
+      if (orders && orders.length > 0) {
+        for (const order of orders) {
+          const msgs = orderMessages.filter(m => m.order_id === order.id);
+          if (msgs.length > 0) {
+            const unread = msgs.filter(m => m.sender_type === 'admin' && !m.read_at).length;
+            conversations.push({
+              order_id: order.id,
+              order_number: order.order_number,
+              last_message: msgs[0].message,
+              last_message_at: msgs[0].created_at,
+              unread_count: unread,
+            });
+          }
         }
       }
 
-      const conversations: ConversationSummary[] = [];
-      for (const [orderId, { msgs, order }] of grouped) {
-        const unread = msgs.filter(m => m.sender_type === 'admin' && !m.read_at).length;
+      // Add direct messages as a single conversation
+      if (directMsgs && directMsgs.length > 0) {
+        const unread = directMsgs.filter((m: any) => m.sender_type === 'admin' && !m.read_at).length;
         conversations.push({
-          order_id: orderId,
-          order_number: order.order_number,
-          last_message: msgs[0].message,
-          last_message_at: msgs[0].created_at,
+          order_id: 'direct',
+          order_number: 'Message général',
+          last_message: directMsgs[0].message,
+          last_message_at: directMsgs[0].created_at,
           unread_count: unread,
         });
       }

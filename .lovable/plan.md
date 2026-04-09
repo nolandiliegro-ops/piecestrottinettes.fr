@@ -1,63 +1,76 @@
 
 
-# Plan — 4 corrections messagerie
+# Batch — Messagerie client intégrée dans /garage
 
-## Migration SQL
-
-`order_id` sur `order_messages` est NOT NULL. Pour permettre les messages sans commande, il faut le rendre nullable et ajuster les RLS :
+## Migration SQL — Table `order_messages`
 
 ```sql
-ALTER TABLE public.order_messages ALTER COLUMN order_id DROP NOT NULL;
+CREATE TABLE public.order_messages (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_id uuid NOT NULL REFERENCES public.orders(id) ON DELETE CASCADE,
+  user_id uuid REFERENCES auth.users(id) ON DELETE SET NULL,
+  sender_type text NOT NULL, -- 'client' ou 'admin'
+  message text NOT NULL,
+  read_at timestamptz,
+  created_at timestamptz DEFAULT now()
+);
 
--- Client: voir ses messages directs (sans order_id)
-CREATE POLICY "Users can view own direct messages" ON public.order_messages
+ALTER TABLE public.order_messages ENABLE ROW LEVEL SECURITY;
+
+-- Client: voir ses messages via orders.user_id
+CREATE POLICY "Users can view own order messages" ON public.order_messages
   FOR SELECT TO authenticated
-  USING (order_id IS NULL AND user_id = auth.uid());
+  USING (EXISTS (
+    SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid()
+  ));
 
--- Client: insérer des messages directs
-CREATE POLICY "Users can insert direct messages" ON public.order_messages
+-- Client: insérer des messages sur ses commandes
+CREATE POLICY "Users can insert own order messages" ON public.order_messages
   FOR INSERT TO authenticated
   WITH CHECK (
-    sender_type = 'client' AND user_id = auth.uid() AND order_id IS NULL
+    sender_type = 'client' AND user_id = auth.uid() AND
+    EXISTS (SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid())
   );
+
+-- Client: marquer comme lu ses messages admin
+CREATE POLICY "Users can mark messages as read" ON public.order_messages
+  FOR UPDATE TO authenticated
+  USING (
+    sender_type = 'admin' AND
+    EXISTS (SELECT 1 FROM orders WHERE orders.id = order_messages.order_id AND orders.user_id = auth.uid())
+  );
+
+-- Admin full access
+CREATE POLICY "Admins full access on order_messages" ON public.order_messages
+  FOR ALL TO authenticated
+  USING (has_role(auth.uid(), 'admin'::app_role))
+  WITH CHECK (has_role(auth.uid(), 'admin'::app_role));
+
+-- Realtime
+ALTER PUBLICATION supabase_realtime ADD TABLE public.order_messages;
 ```
 
-## Fichiers modifiés (5 fichiers + 1 migration + 1 edge function redéployée)
+## Fichiers créés/modifiés (7 fichiers + 1 migration + 1 edge function)
 
-### 1. `src/components/garage/GarageMessages.tsx`
-- Ajouter bouton "✉️ Envoyer un message" en haut qui toggle un formulaire inline
-- Formulaire : sujet (input texte), message (textarea), sélecteur de commande optionnel (dropdown avec les commandes du user)
-- L'envoi insère dans `order_messages` avec `order_id` null si pas de commande sélectionnée
-- Adapter `ConversationList` pour afficher aussi les conversations sans order (groupées par messages directs)
+### Ordre d'exécution
 
-### 2. `src/hooks/useOrderMessages.ts`
-- Adapter `useOrderConversations` pour inclure les messages avec `order_id IS NULL`
-- Adapter `useSendMessage` pour accepter `orderId` nullable
+1. **Migration SQL** — table `order_messages` + RLS + realtime
+2. **`supabase/functions/send-message-notification/index.ts`** (nouveau) — Email via Resend quand l'admin envoie un message. Objet : "Nouveau message pour votre commande PT-XXXX". Corps : message + lien vers `/garage`.
+3. **`src/components/garage/GarageMessages.tsx`** (nouveau) — Onglet Messages côté client :
+   - Liste des conversations groupées par `order_id` avec dernier message, date, badge non lu
+   - Vue conversation : bulles chat (client droite, admin gauche), champ texte + bouton Envoyer
+   - Marquer `read_at` quand le client ouvre une conversation admin
+   - Realtime via `supabase.channel()` pour messages en temps réel
+4. **`src/pages/Garage.tsx`** — Ajouter 3ème onglet "MESSAGES" avec icône `MessageSquare`, badge rouge non lus, type `activeTab` étendu à `'garage' | 'orders' | 'messages'`
+5. **`src/components/admin/OrderDetailSheet.tsx`** — Ajouter section "Messages" en bas : fil de conversation + champ réponse. Quand l'admin envoie → insert `order_messages` + appel edge function `send-message-notification`
+6. **`src/hooks/useOrderMessages.ts`** (nouveau) — Hook partagé pour fetch messages par order_id, envoyer un message, compter non lus, avec abonnement realtime
 
-### 3. `supabase/functions/send-message-notification/index.ts`
-- Refactorer pour supporter deux destinataires : `recipient: 'client' | 'admin'`
-- Template client (admin → client) : header vert sauge, titre "💬 Nouveau message de notre équipe", message complet dans bloc encadré, numéro de commande si applicable, bouton CTA "RÉPONDRE DANS MON GARAGE" → `https://piecestrottinettes.fr/garage?tab=messages`, footer
-- Template admin (client → admin) : envoi à `contact@piecestrottinettes.fr`, affiche nom client, email, numéro de commande si applicable, message complet
-- URL du CTA corrigée : `piecestrottinettes.fr` au lieu de `.lovable.app`
+### Détails techniques
 
-### 4. `src/components/garage/GarageMessages.tsx` (suite)
-- Quand le client envoie un message → appeler `send-message-notification` avec `recipient: 'admin'` + infos client
+- **Email notification** : Utilise Resend (déjà configuré avec `RESEND_API_KEY`), même pattern que `send-order-email`. Envoi uniquement quand `sender_type = 'admin'`.
+- **Badge non lus** : Query `order_messages` WHERE `sender_type = 'admin'` AND `read_at IS NULL` AND order appartient au user. Affiché sur l'onglet Messages.
+- **Realtime** : Subscription `postgres_changes` sur `order_messages` pour mise à jour instantanée des conversations.
+- **Chat UI** : Style minimaliste cohérent avec le design existant (bulles arrondies, timestamps discrets, input en bas).
 
-### 5. `src/components/admin/ContactMessagesManager.tsx`
-- Ajouter des onglets "Contact" / "Garage" avec Tabs
-- Onglet "Garage" : fetch `order_messages` WHERE `sender_type = 'client'` avec jointure sur `orders` pour `order_number`, `customer_email`, `customer_first_name`
-- Afficher : nom, email, numéro de commande, message, date
-- Bouton "Répondre" : input texte + envoi → insert `order_messages` sender_type='admin' + appel edge function `send-message-notification` recipient='client'
-
-## Ordre d'exécution
-
-```text
-1. Migration — order_id nullable + RLS            (5 min)
-2. Edge function — dual recipient + templates     (15 min)
-3. useOrderMessages — support nullable orderId    (10 min)
-4. GarageMessages — bouton nouveau message        (15 min)
-5. ContactMessagesManager — onglet Garage         (15 min)
-```
-
-**Total estimé : ~1h**
+### Estimation : ~1h
 
