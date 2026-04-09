@@ -1,36 +1,46 @@
 
 
-# Plan — 2 corrections messagerie
+# Plan — Upload d'images dans la messagerie
 
-## Fichiers à modifier (4 fichiers)
+## Diagnostic point 1 (client-ack messages généraux)
 
-### 1. `supabase/functions/send-message-notification/index.ts`
-- Rétablir le type `recipient: 'client-ack'` dans l'interface
-- Ajouter un template `client-ack` identique au template client mais avec le titre "✅ Votre message a bien été envoyé" au lieu de "💬 Nouveau message de notre équipe"
-- Le sujet email sera le même que les autres pour le threading Gmail
+Le code est déjà correct. Les logs confirment que le `client-ack` est bien envoyé pour tous les messages, y compris les généraux (`conversationId: user.id`). Aucune correction nécessaire.
 
-### 2. `supabase/functions/send-contact-email/index.ts`
-- Supprimer la condition `if (!user_id)` (ligne 115) : envoyer l'accusé de réception à TOUS les utilisateurs, connectés ou non
-- Remplacer le template HTML laid de l'accusé par un appel à `send-message-notification` avec `recipient: 'client-ack'` pour les utilisateurs connectés
-- Pour les non-connectés, utiliser le même beau template vert sauge inline (pas d'appel à l'edge function car pas de conversationId)
+## Nouvelle fonctionnalité : Upload d'images
 
-### 3. `src/components/garage/GarageMessages.tsx`
-- Dans `NewMessageForm.handleSend` : ajouter un appel `send-message-notification` avec `recipient: 'client-ack'` après la notification admin
-- Dans `ChatView.handleSend` : idem, ajouter l'accusé de réception client-ack
-- Les conversations sont déjà séparées par order_id (commande) vs null (direct) — **rien à changer** sur le point 2, la logique est déjà correcte dans `useOrderMessages.ts`
+### Migration SQL
+- Ajouter colonne `image_url text` nullable sur `order_messages`
+- Créer le bucket `order-messages-images` (public)
+- RLS sur le bucket : authenticated peut upload, public peut lire
 
-### 4. `src/components/admin/ContactMessagesManager.tsx`
-- Vérifier que l'onglet Garage affiche bien les 2 types : commandes (order_id non null) et messages directs (order_id null) séparément — actuellement le groupement se fait par `user_id`, ce qui fusionne les 2 types. **À corriger** : grouper par `user_id + order_id` pour créer des fils distincts par commande ET par message direct
+### Fichiers modifiés (4 fichiers)
 
-## Ordre d'exécution
+#### 1. `src/hooks/useOrderMessages.ts`
+- Ajouter `image_url` au type `OrderMessage`
+- Ajouter param `imageUrl` au `useSendMessage`
+
+#### 2. `src/components/garage/GarageMessages.tsx`
+- **ChatView** : ajouter bouton 📎 à côté du textarea, input file caché (accept image/*, max 5MB), upload vers `order-messages-images/{userId}/{timestamp}.ext`, passer l'URL dans l'insert, afficher les images dans les bulles (thumbnail cliquable qui ouvre en grand)
+- **NewMessageForm** : même bouton 📎 + preview de l'image avant envoi
+
+#### 3. `src/components/admin/ContactMessagesManager.tsx`
+- Dans `GarageConversationView`, afficher les images dans les bulles côté admin (même rendu que côté client)
+- Ajouter `image_url` au type `OrderMsg`
+
+#### 4. `supabase/functions/send-message-notification/index.ts`
+- Ajouter champ optionnel `imageUrl` dans l'interface
+- Dans les 3 templates (client, admin, client-ack), si `imageUrl` fourni, insérer une balise `<img>` cliquable sous le message texte
+
+### Ordre d'exécution
 
 ```text
-1. send-message-notification — ajouter template client-ack     (5 min)
-2. send-contact-email — accusé pour tous                       (5 min)
-3. GarageMessages — ajouter client-ack après envoi             (5 min)
-4. ContactMessagesManager — séparer fils par order_id          (10 min)
-5. Déployer edge functions                                     (2 min)
+1. Migration SQL (colonne + bucket + RLS)           (5 min)
+2. useOrderMessages — types + param imageUrl        (3 min)
+3. GarageMessages — bouton 📎 + upload + affichage  (15 min)
+4. ContactMessagesManager — affichage images admin  (5 min)
+5. send-message-notification — image dans email     (5 min)
+6. Déployer edge function                           (2 min)
 ```
 
-**Total estimé : ~25 min**
+**Total estimé : ~35 min**
 
