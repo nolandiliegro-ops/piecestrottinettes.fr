@@ -149,6 +149,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
               customerEmail: thread.email,
               customerName: thread.display_name,
               messageText: replyText.trim(),
+              conversationId: thread.user_id,
             },
           });
         } catch (e) {

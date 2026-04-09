@@ -72,6 +72,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
             customerName: profile?.display_name || user.email || 'Client',
             orderNumber: selectedOrder?.order_number || undefined,
             messageText: fullMessage,
+            conversationId: selectedOrderId || user.id,
           },
         });
       } catch (e) {
@@ -285,6 +286,7 @@ const ChatView = ({
           customerName: profile?.display_name || user.email || 'Client',
           orderNumber: orderId !== 'direct' ? orderNumber : undefined,
           messageText: text,
+          conversationId: orderId !== 'direct' ? orderId : user.id,
         },
       });
     } catch (e) {
