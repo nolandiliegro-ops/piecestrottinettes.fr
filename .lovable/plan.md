@@ -1,59 +1,35 @@
 
 
-# Plan — 3 corrections finales messagerie
+# Plan — 2 corrections messagerie
 
-## Diagnostic
-
-### Correction 1 — Sujets cohérents pour threading Gmail
-**Fichier : `supabase/functions/send-message-notification/index.ts`**
-- Actuellement les sujets sont différents selon le sens (client→admin vs admin→client), ce qui empêche Gmail de grouper les fils
-- Pas de headers `In-Reply-To` / `References` pour forcer le threading
-- **À faire** : utiliser un sujet stable par conversation (basé sur `orderNumber` ou "Question"), et ajouter `In-Reply-To` + `References` avec un Message-ID déterministe (ex: `<conv-{orderNumber}@piecestrottinettes.fr>`)
-- Nouveau champ optionnel `conversationId` dans l'interface (order_id ou user_id) pour générer le Message-ID
-- Sujets : `💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr` pour les deux sens, avec `Re:` préfixé pour les réponses admin
-
-### Correction 2 — Supprimer les doubles emails
-**Audit complet :**
-- `GarageMessages.tsx` : 2 appels `recipient: 'admin'` (lignes 68 et 281) — ✅ OK, pas de double (un pour NewMessageForm, un pour ChatView)
-- **Pas de `client-ack`** dans GarageMessages — déjà supprimé ✅
-- `Contact.tsx` : un seul appel à `send-contact-email` — ✅ pas de double
-- **`send-contact-email/index.ts`** : envoie **2 emails** (lignes 93-112 : notification admin + lignes 116-137 : accusé réception visiteur). L'accusé de réception est un email séparé qui double le flux. **À corriger** : supprimer l'accusé de réception (lignes 114-137) — le visiteur connecté voit son message dans le garage, le visiteur non connecté reçoit juste le toast. Si on veut garder un accusé pour les non-connectés, c'est acceptable, mais pour les connectés (`user_id` fourni), il faut le supprimer.
-- `ContactMessagesManager.tsx` (admin reply) : 1 appel `recipient: 'client'` — ✅ OK
-- `OrderDetailSheet.tsx` : 1 appel `recipient: 'client'` — ✅ OK, mais c'est un **autre point d'entrée** pour les réponses admin depuis la fiche commande
-
-### Correction 3 — Liens `/garage?tab=messages` partout
-- `stripe-webhook` : lignes 191 et 199 — ✅ déjà corrigé (`?tab=messages`)
-- `send-message-notification` : lignes 78 et 127 — ✅ déjà corrigé
-- `send-order-email` : **aucun lien garage** — rien à faire
-- `send-contact-email` : **aucun lien garage** — rien à faire
-
-## Fichiers modifiés (2 fichiers)
+## Fichiers à modifier (4 fichiers)
 
 ### 1. `supabase/functions/send-message-notification/index.ts`
-- Ajouter champ `conversationId` (optionnel) dans l'interface pour identifier le fil
-- Générer un `Message-ID` déterministe : `<conv-{conversationId}@piecestrottinettes.fr>`
-- Ajouter headers `In-Reply-To` et `References` pointant vers ce Message-ID sur toutes les réponses
-- Sujets unifiés :
-  - Client envoie : `💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr` (ou `💬 [Question] ...` si pas de commande)
-  - Admin répond : `Re: 💬 [PT-XXXX] Nouveau message — piecestrottinettes.fr`
-- Supprimer le template `client-ack` (plus utilisé nulle part)
+- Rétablir le type `recipient: 'client-ack'` dans l'interface
+- Ajouter un template `client-ack` identique au template client mais avec le titre "✅ Votre message a bien été envoyé" au lieu de "💬 Nouveau message de notre équipe"
+- Le sujet email sera le même que les autres pour le threading Gmail
 
 ### 2. `supabase/functions/send-contact-email/index.ts`
-- Supprimer l'accusé de réception au visiteur (lignes 114-137) quand `user_id` est fourni (connecté = voit dans garage)
-- Garder l'accusé uniquement pour les visiteurs non connectés (pas de `user_id`)
+- Supprimer la condition `if (!user_id)` (ligne 115) : envoyer l'accusé de réception à TOUS les utilisateurs, connectés ou non
+- Remplacer le template HTML laid de l'accusé par un appel à `send-message-notification` avec `recipient: 'client-ack'` pour les utilisateurs connectés
+- Pour les non-connectés, utiliser le même beau template vert sauge inline (pas d'appel à l'edge function car pas de conversationId)
 
-### 3. Callers côté client (mise à jour des appels)
-- `GarageMessages.tsx` : ajouter `conversationId` dans les appels (order_id ou user_id)
-- `ContactMessagesManager.tsx` : ajouter `conversationId` dans l'appel admin reply
-- `OrderDetailSheet.tsx` : ajouter `conversationId` dans l'appel admin reply
+### 3. `src/components/garage/GarageMessages.tsx`
+- Dans `NewMessageForm.handleSend` : ajouter un appel `send-message-notification` avec `recipient: 'client-ack'` après la notification admin
+- Dans `ChatView.handleSend` : idem, ajouter l'accusé de réception client-ack
+- Les conversations sont déjà séparées par order_id (commande) vs null (direct) — **rien à changer** sur le point 2, la logique est déjà correcte dans `useOrderMessages.ts`
+
+### 4. `src/components/admin/ContactMessagesManager.tsx`
+- Vérifier que l'onglet Garage affiche bien les 2 types : commandes (order_id non null) et messages directs (order_id null) séparément — actuellement le groupement se fait par `user_id`, ce qui fusionne les 2 types. **À corriger** : grouper par `user_id + order_id` pour créer des fils distincts par commande ET par message direct
 
 ## Ordre d'exécution
 
 ```text
-1. send-message-notification — threading + sujets + supprimer client-ack    (15 min)
-2. send-contact-email — supprimer accusé si connecté                        (5 min)
-3. GarageMessages + ContactMessagesManager + OrderDetailSheet — conversationId  (5 min)
-4. Déployer les 2 edge functions                                            (2 min)
+1. send-message-notification — ajouter template client-ack     (5 min)
+2. send-contact-email — accusé pour tous                       (5 min)
+3. GarageMessages — ajouter client-ack après envoi             (5 min)
+4. ContactMessagesManager — séparer fils par order_id          (10 min)
+5. Déployer edge functions                                     (2 min)
 ```
 
 **Total estimé : ~25 min**
