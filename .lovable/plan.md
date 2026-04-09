@@ -1,64 +1,40 @@
 
 
-# Plan — Système de validation des trottinettes importées
+# Plan — Amélioration des cartes PendingScootersManager
 
-## 1. Migration SQL
+## Fichier modifié
 
-Ajouter la colonne `published` à `scooter_models` :
+**`src/components/admin/PendingScootersManager.tsx`** — réécriture complète avec les 4 fonctionnalités.
 
-```sql
-ALTER TABLE public.scooter_models ADD COLUMN published boolean NOT NULL DEFAULT true;
-```
+## Changements
 
-Default `true` pour que les trottinettes existantes restent publiées. L'Edge Function forcera `published: false` pour les imports automatiques.
+### 1. Bouton "Tout publier"
+En haut, à côté du compteur : un bouton qui fait un `update published = true` sur tous les IDs en attente, avec confirmation AlertDialog.
 
-## 2. Edge Function `bulk-insert-scooters`
+### 2. Sources web sur chaque carte
+Lire `scooter.technical_signature?.sources` (tableau d'objets `{ url, label }` ou strings). Afficher comme liens cliquables sous les specs : "Voir sur mi.com", etc. Extraire le hostname pour le label si c'est juste une URL string.
 
-Modifier le fichier existant pour :
-- Forcer `published: false` dans chaque row upsertée (les imports bot arrivent toujours en brouillon)
-- Le champ `image_url` est déjà accepté dans l'interface — aucun changement nécessaire
+### 3. Bouton "Modifier image" inline
+Un petit bouton 🖼️ sur la carte qui toggle un input URL. On sauvegarde via `update image_url` sur le scooter. Preview instantanée.
 
-## 3. Requêtes publiques — Filtrer sur `published = true`
+### 4. Modale d'édition complète
+Bouton "Éditer" (icône Pencil) qui ouvre un Dialog avec tous les champs :
+- `image_url` (input + preview)
+- `name`, `year` (inputs)
+- `power_watts`, `voltage`, `max_speed_kmh`, `range_km`, `tire_size` (inputs number/text)
+- `description` (textarea)
+- `meta_title`, `meta_description` (inputs)
+- `search_terms` (input text, stocké comme string)
+- `youtube_video_id`, `affiliate_link` (inputs)
 
-Mettre à jour les fichiers qui requêtent `scooter_models` côté public pour ajouter `.eq('published', true)` :
-- `src/hooks/useScooterData.ts`
-- `src/hooks/useScooterDetail.ts`
-- `src/hooks/useUnifiedSearch.ts`
-- `src/components/hero/ScooterCarousel.tsx`
-- `src/components/scooter/OtherScootersCarousel.tsx`
-- La fonction DB `search_scooter_fuzzy` devra être mise à jour pour filtrer `published = true`
+Bouton "Enregistrer" → `update` sur `scooter_models` → invalidate queries → fermer modale.
 
-Les pages admin (ScootersManager, CompatibilityManager, AdminDashboard) ne filtrent PAS — elles voient tout.
+## Détails techniques
 
-## 4. Admin — Section "En attente de validation"
-
-Ajouter un nouvel onglet dans `AdminInventory.tsx` (à côté de Pièces/Trottinettes) : **"Bot Import"** avec un badge compteur.
-
-Créer un nouveau composant `src/components/admin/PendingScootersManager.tsx` qui affiche :
-- Les trottinettes avec `published = false` en carte (nom, marque, specs, image preview)
-- Badge "Bot" sur chaque carte
-- Bouton "Publier" → `UPDATE published = true`
-- Bouton "Supprimer" → `DELETE` (avec confirmation)
-- Compteur dans le badge de l'onglet
-
-## 5. Script local `scripts/sync-scooters-example.js`
-
-Mettre à jour pour :
-- Afficher "⏳ En attente de validation admin" après insertion réussie
-- Documenter le champ `image_url` dans l'exemple
-
-## Fichiers modifiés
-
-| Fichier | Action |
-|---------|--------|
-| Migration SQL | `ADD COLUMN published boolean DEFAULT true` + update `search_scooter_fuzzy` |
-| `supabase/functions/bulk-insert-scooters/index.ts` | Forcer `published: false` |
-| `src/components/admin/AdminInventory.tsx` | Ajouter onglet Bot Import |
-| `src/components/admin/PendingScootersManager.tsx` | Créer (liste brouillons + publish/delete) |
-| `src/hooks/useScooterData.ts` | Filtrer `published = true` |
-| `src/hooks/useScooterDetail.ts` | Filtrer `published = true` |
-| `src/hooks/useUnifiedSearch.ts` | Filtrer `published = true` |
-| `src/components/hero/ScooterCarousel.tsx` | Filtrer `published = true` |
-| `src/components/scooter/OtherScootersCarousel.tsx` | Filtrer `published = true` |
-| `scripts/sync-scooters-example.js` | Message post-insertion + doc image_url |
+- Un seul fichier modifié : `PendingScootersManager.tsx`
+- Composant interne `EditScooterDialog` pour la modale (state local avec `useState` pour chaque champ, initialisé depuis le scooter sélectionné)
+- Mutation `updateMutation` pour sauvegarder les modifications
+- Mutation `publishAllMutation` pour tout publier
+- `technical_signature` est typé `jsonb` — cast avec `as any` pour accéder à `.sources`
+- Imports additionnels : `Dialog*`, `Input`, `Textarea`, `Pencil`, `ExternalLink`, `ImageIcon`, `CheckCheck` depuis lucide
 
