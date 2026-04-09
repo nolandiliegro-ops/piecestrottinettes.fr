@@ -25,24 +25,74 @@ import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
-import { getXPLevel } from '@/lib/xpLevels';
+import { getXPLevel, getProgressToNextLevel } from '@/lib/xpLevels';
+import { supabase } from '@/integrations/supabase/client';
+import { useQuery } from '@tanstack/react-query';
 
-// Compact Performance Widget for header - Mobile optimized
-const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
+// Profile Identity Card
+const ProfileIdentityCard = ({ user, profile }: { user: any; profile: any }) => {
+  const points = profile?.performance_points || 0;
   const level = getXPLevel(points);
+  const progress = getProgressToNextLevel(points);
+  const displayName = profile?.display_name || 'Rider';
+  const initials = displayName.split(' ').map((w: string) => w[0]).join('').toUpperCase().slice(0, 2);
+  const LevelIcon = level.LucideIcon;
+
+  // Count orders
+  const { data: orderCount = 0 } = useQuery({
+    queryKey: ['garage-order-count', user?.id],
+    queryFn: async () => {
+      if (!user?.id) return 0;
+      const { count, error } = await supabase
+        .from('orders')
+        .select('*', { count: 'exact', head: true })
+        .eq('user_id', user.id);
+      if (error) return 0;
+      return count || 0;
+    },
+    enabled: !!user?.id,
+  });
 
   return (
-    <div className="flex items-center gap-1 md:gap-3 px-2 md:px-4 py-1 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full max-w-full">
-      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral flex-shrink-0" />
-      <span className={cn("font-display font-bold text-xs md:text-lg truncate", level.color)}>
-        {points.toLocaleString('fr-FR')}
-      </span>
-      <span className="hidden md:inline text-xs text-carbon/50">XP</span>
-      <div className="w-px h-3 md:h-4 bg-mineral/20 flex-shrink-0" />
-      <span className={cn("text-[9px] md:text-xs font-semibold flex-shrink-0", level.color)}>
-        <span className="md:hidden">LVL {level.level}</span>
-        <span className="hidden md:inline">{level.name}</span>
-      </span>
+    <div className="flex items-center gap-4 px-4 md:px-6 py-3 md:py-4 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-2xl">
+      {/* Avatar */}
+      <div className={cn(
+        "w-11 h-11 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white font-display font-bold text-sm md:text-lg flex-shrink-0",
+        level.level >= 4 ? "bg-gradient-to-br from-amber-500 to-yellow-400" :
+        level.level >= 3 ? "bg-mineral" :
+        level.level >= 2 ? "bg-blue-500" : "bg-slate-500"
+      )}>
+        {initials}
+      </div>
+
+      {/* Info */}
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-2 mb-1">
+          <span className="font-display font-bold text-sm md:text-base text-carbon truncate">{displayName}</span>
+          <span className={cn("inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] md:text-xs font-semibold", level.bgColor, level.color)}>
+            <LevelIcon className="w-3 h-3" />
+            {level.name}
+          </span>
+        </div>
+        {/* XP Progress */}
+        <div className="flex items-center gap-2">
+          <div className="flex-1 h-1.5 bg-carbon/5 rounded-full overflow-hidden max-w-[160px]">
+            <div 
+              className={cn("h-full rounded-full transition-all duration-500", level.progressColor)} 
+              style={{ width: `${progress.percentage}%` }}
+            />
+          </div>
+          <span className="text-[10px] md:text-xs text-carbon/50 font-medium flex-shrink-0">
+            {points.toLocaleString('fr-FR')} XP
+          </span>
+        </div>
+      </div>
+
+      {/* Order count */}
+      <div className="hidden md:flex flex-col items-center px-4 border-l border-mineral/10">
+        <span className="font-display font-bold text-lg text-carbon">{orderCount}</span>
+        <span className="text-[10px] text-carbon/50 uppercase tracking-wider">Commandes</span>
+      </div>
     </div>
   );
 };
@@ -198,15 +248,9 @@ const Garage = () => {
               </button>
             </div>
             
-            {/* User info - Ultra compact on mobile */}
-            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
-              <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
-                <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-              </p>
-              <CompactPerformanceWidget 
-                points={profile?.performance_points || 0}
-                displayName={profile?.display_name || 'Rider'}
-              />
+            {/* Profile Identity Card */}
+            <div className="flex items-center justify-end">
+              <ProfileIdentityCard user={user} profile={profile} />
             </div>
           </motion.div>
 
