@@ -9,96 +9,127 @@ const corsHeaders = {
 };
 
 interface MessageNotificationRequest {
-  recipient: 'client' | 'admin';
+  recipient: 'client' | 'admin' | 'client-ack';
   customerEmail: string;
   customerName: string;
   orderNumber?: string;
   messageText: string;
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+const generateHeader = (): string => `
+  <tr>
+    <td style="background: linear-gradient(135deg, #93B5A1 0%, #7DA08D 100%); padding: 32px; text-align: center;">
+      <h1 style="margin: 0; font-family: Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: 3px;">PIECESTROTTINETTES.FR</h1>
+      <p style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.9); letter-spacing: 2px;">ROULE · RÉPARE · DURE</p>
+    </td>
+  </tr>`;
+
+const generateFooter = (): string => `
+  <tr>
+    <td style="background-color: #2C2C2C; padding: 24px 32px; text-align: center;">
+      <p style="margin: 0; font-size: 12px; color: #888;">piecestrottinettes.fr — Votre expert en pièces détachées</p>
+    </td>
+  </tr>`;
+
+const wrapEmail = (content: string): string => `<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body style="margin: 0; padding: 0; background-color: #F5F3F0; font-family: 'Helvetica Neue', Arial, sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #F5F3F0;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+          ${content}
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
 const generateClientEmailHTML = (data: MessageNotificationRequest): string => {
   const orderBlock = data.orderNumber
     ? `<div style="display: inline-block; background-color: rgba(147,181,161,0.1); border: 1px solid rgba(147,181,161,0.3); border-radius: 8px; padding: 8px 16px; margin-bottom: 24px;">
         <span style="font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Commande</span>
-        <span style="font-family: 'Courier New', monospace; font-size: 16px; color: #93B5A1; font-weight: bold; margin-left: 8px;">${data.orderNumber}</span>
+        <span style="font-family: 'Courier New', monospace; font-size: 16px; color: #93B5A1; font-weight: bold; margin-left: 8px;">${escapeHtml(data.orderNumber)}</span>
       </div>`
     : '';
 
-  return `<!DOCTYPE html>
-<html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
-<body style="margin: 0; padding: 0; background-color: #F5F3F0; font-family: 'Helvetica Neue', Arial, sans-serif;">
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #F5F3F0;">
+  return wrapEmail(`
+    ${generateHeader()}
     <tr>
-      <td align="center" style="padding: 40px 20px;">
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-          <tr>
-            <td style="background: linear-gradient(135deg, #93B5A1 0%, #7DA08D 100%); padding: 32px; text-align: center;">
-              <h1 style="margin: 0; font-family: Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: 3px;">PIECESTROTTINETTES.FR</h1>
-              <p style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.9); letter-spacing: 2px;">ROULE · RÉPARE · DURE</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 40px 32px;">
-              <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">💬 Nouveau message de notre équipe</h2>
-              ${orderBlock}
-              <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
-              <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
-                <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${data.messageText}</p>
-              </div>
-              <div style="text-align: center;">
-                <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS MON GARAGE</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: #2C2C2C; padding: 24px 32px; text-align: center;">
-              <p style="margin: 0; font-size: 12px; color: #888;">piecestrottinettes.fr — Votre expert en pièces détachées</p>
-            </td>
-          </tr>
-        </table>
+      <td style="padding: 40px 32px;">
+        <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">💬 Nouveau message de notre équipe</h2>
+        ${orderBlock}
+        <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
+        <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
+          <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS MON GARAGE</a>
+        </div>
       </td>
     </tr>
-  </table>
-</body>
-</html>`;
+    ${generateFooter()}
+  `);
 };
 
 const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
   const orderBlock = data.orderNumber
-    ? `<p style="margin: 0 0 16px; font-size: 14px; color: #666;">Commande : <strong style="color: #93B5A1; font-family: 'Courier New', monospace;">${data.orderNumber}</strong></p>`
+    ? `<p style="margin: 0 0 16px; font-size: 14px; color: #666;">Commande : <strong style="color: #93B5A1; font-family: 'Courier New', monospace;">${escapeHtml(data.orderNumber)}</strong></p>`
     : '<p style="margin: 0 0 16px; font-size: 14px; color: #666;">Message général (pas de commande liée)</p>';
 
-  return `<!DOCTYPE html>
-<html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
-<body style="margin: 0; padding: 0; background-color: #F5F3F0; font-family: 'Helvetica Neue', Arial, sans-serif;">
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #F5F3F0;">
+  return wrapEmail(`
+    ${generateHeader()}
     <tr>
-      <td align="center" style="padding: 40px 20px;">
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-          <tr>
-            <td style="background: linear-gradient(135deg, #2C2C2C 0%, #444 100%); padding: 32px; text-align: center;">
-              <h1 style="margin: 0; font-family: Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: 3px;">NOUVEAU MESSAGE CLIENT</h1>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 40px 32px;">
-              <p style="margin: 0 0 8px; font-size: 14px; color: #2C2C2C;"><strong>Client :</strong> ${data.customerName}</p>
-              <p style="margin: 0 0 16px; font-size: 14px; color: #2C2C2C;"><strong>Email :</strong> <a href="mailto:${data.customerEmail}" style="color: #93B5A1;">${data.customerEmail}</a></p>
-              ${orderBlock}
-              <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
-              <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1;">
-                <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${data.messageText}</p>
-              </div>
-            </td>
-          </tr>
-        </table>
+      <td style="padding: 40px 32px;">
+        <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">💬 Nouveau message client</h2>
+        <p style="margin: 0 0 8px; font-size: 14px; color: #2C2C2C;"><strong>Client :</strong> ${escapeHtml(data.customerName)}</p>
+        <p style="margin: 0 0 16px; font-size: 14px; color: #2C2C2C;"><strong>Email :</strong> <a href="mailto:${escapeHtml(data.customerEmail)}" style="color: #93B5A1;">${escapeHtml(data.customerEmail)}</a></p>
+        ${orderBlock}
+        <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
+        <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
+          <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://piecestrottinettes.fr/admin" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
+        </div>
       </td>
     </tr>
-  </table>
-</body>
-</html>`;
+    ${generateFooter()}
+  `);
+};
+
+const generateClientAckEmailHTML = (data: MessageNotificationRequest): string => {
+  const firstName = data.customerName.split(' ')[0] || data.customerName;
+
+  return wrapEmail(`
+    ${generateHeader()}
+    <tr>
+      <td style="padding: 40px 32px;">
+        <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">✅ Votre message a bien été reçu</h2>
+        <p style="margin: 0 0 16px; font-size: 15px; color: #2C2C2C; line-height: 1.6;">
+          Bonjour ${escapeHtml(firstName)}, nous avons bien reçu votre message et vous répondrons sous 48h.
+        </p>
+        <p style="margin: 0 0 32px; font-size: 15px; color: #2C2C2C; line-height: 1.6;">
+          Vous recevrez une notification email et pourrez suivre la réponse directement dans votre garage.
+        </p>
+        <div style="text-align: center;">
+          <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">VOIR MON GARAGE</a>
+        </div>
+      </td>
+    </tr>
+    ${generateFooter()}
+  `);
 };
 
 const handler = async (req: Request): Promise<Response> => {
@@ -127,6 +158,16 @@ const handler = async (req: Request): Promise<Response> => {
         ? `💬 Nouveau message client — ${data.orderNumber}`
         : `💬 Nouveau message client — ${data.customerName}`;
       html = generateAdminEmailHTML(data);
+    } else if (recipient === 'client-ack') {
+      if (!data.customerEmail) {
+        return new Response(
+          JSON.stringify({ error: "Missing customerEmail for client-ack" }),
+          { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        );
+      }
+      to = data.customerEmail;
+      subject = '✅ Votre message a bien été reçu — piecestrottinettes.fr';
+      html = generateClientAckEmailHTML(data);
     } else {
       if (!data.customerEmail) {
         return new Response(

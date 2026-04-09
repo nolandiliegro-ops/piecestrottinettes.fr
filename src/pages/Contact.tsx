@@ -10,11 +10,13 @@ import { Label } from "@/components/ui/label";
 import { Mail, Send } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/hooks/useAuth";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchParams] = useSearchParams();
   const orderNumber = searchParams.get("order");
+  const { user } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,12 +24,17 @@ const Contact = () => {
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
-    const payload = {
+    const payload: Record<string, string> = {
       name: (formData.get("name") as string).trim(),
       email: (formData.get("email") as string).trim(),
       subject: (formData.get("subject") as string).trim(),
       message: (formData.get("message") as string).trim(),
     };
+
+    // Si connecté, passer le user_id pour synchro garage
+    if (user?.id) {
+      payload.user_id = user.id;
+    }
 
     try {
       const { data, error } = await supabase.functions.invoke("send-contact-email", {

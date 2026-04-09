@@ -20,7 +20,7 @@ import {
   type ConversationSummary,
 } from '@/hooks/useOrderMessages';
 
-// New Message Form
+// New Message Form — redesigned
 const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
   const { user } = useAuth();
   const { profile } = useProfile();
@@ -36,11 +36,15 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
       if (!user?.id) return [];
       const { data, error } = await supabase
         .from('orders')
-        .select('id, order_number')
+        .select('id, order_number, order_items(part_name)')
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
       if (error) throw error;
-      return data || [];
+      return (data || []).map((o: any) => ({
+        id: o.id,
+        order_number: o.order_number,
+        first_item: o.order_items?.[0]?.part_name || '',
+      }));
     },
     enabled: !!user?.id,
   });
@@ -57,10 +61,9 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         userId: user.id,
       });
 
-      // Get order number for the notification
       const selectedOrder = userOrders.find(o => o.id === selectedOrderId);
 
-      // Notify admin via edge function
+      // Notify admin
       try {
         await supabase.functions.invoke('send-message-notification', {
           body: {
@@ -75,7 +78,21 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         console.error('Failed to send admin notification:', e);
       }
 
-      toast.success('Message envoyé !');
+      // Send client acknowledgment email
+      try {
+        await supabase.functions.invoke('send-message-notification', {
+          body: {
+            recipient: 'client-ack',
+            customerEmail: user.email,
+            customerName: profile?.display_name || user.email || 'Client',
+            messageText: fullMessage,
+          },
+        });
+      } catch (e) {
+        console.error('Failed to send client ack:', e);
+      }
+
+      toast.success('Message envoyé ! Un accusé de réception vous a été envoyé par email.');
       onClose();
     } catch (e) {
       toast.error("Erreur lors de l'envoi");
@@ -89,31 +106,60 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
       initial={{ opacity: 0, height: 0 }}
       animate={{ opacity: 1, height: 'auto' }}
       exit={{ opacity: 0, height: 0 }}
-      className="bg-white/60 backdrop-blur-md border border-mineral/20 rounded-2xl p-4 mb-4 space-y-3"
+      className="bg-white/80 backdrop-blur-md border border-mineral/20 rounded-2xl p-5 mb-5 space-y-4"
     >
-      <Input
-        placeholder="Sujet (optionnel)"
-        value={subject}
-        onChange={(e) => setSubject(e.target.value)}
-        className="bg-white/80 border-carbon/10 rounded-xl text-sm"
-      />
-      <select
-        value={selectedOrderId}
-        onChange={(e) => setSelectedOrderId(e.target.value)}
-        className="w-full bg-white/80 border border-carbon/10 rounded-xl px-3 py-2 text-sm text-carbon focus:outline-none focus:border-mineral/40"
-      >
-        <option value="">Pas de commande liée</option>
-        {userOrders.map(o => (
-          <option key={o.id} value={o.id}>{o.order_number}</option>
-        ))}
-      </select>
-      <Textarea
-        placeholder="Votre message..."
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        className="bg-white/80 border-carbon/10 rounded-xl text-sm min-h-[80px]"
-      />
-      <div className="flex gap-2 justify-end">
+      {/* Header */}
+      <div className="flex items-center gap-3 pb-3 border-b border-carbon/5">
+        <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center">
+          <span className="text-lg">✉️</span>
+        </div>
+        <div>
+          <h3 className="font-display text-sm tracking-wide text-carbon">NOUS CONTACTER</h3>
+          <p className="text-xs text-carbon/50">Une question sur une commande ou un produit ?</p>
+        </div>
+      </div>
+
+      {/* Subject */}
+      <div className="space-y-1.5">
+        <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Sujet</label>
+        <Input
+          placeholder="Ex: Question sur ma commande..."
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          className="bg-white border-carbon/10 rounded-xl text-sm"
+        />
+      </div>
+
+      {/* Order selector */}
+      <div className="space-y-1.5">
+        <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Commande liée (optionnel)</label>
+        <select
+          value={selectedOrderId}
+          onChange={(e) => setSelectedOrderId(e.target.value)}
+          className="w-full bg-white border border-carbon/10 rounded-xl px-3 py-2.5 text-sm text-carbon focus:outline-none focus:border-mineral/40 transition-colors"
+        >
+          <option value="">Aucune commande</option>
+          {userOrders.map(o => (
+            <option key={o.id} value={o.id}>
+              {o.order_number}{o.first_item ? ` — ${o.first_item}` : ''}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Message */}
+      <div className="space-y-1.5">
+        <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Message</label>
+        <Textarea
+          placeholder="Décrivez votre demande..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className="bg-white border-carbon/10 rounded-xl text-sm min-h-[100px] resize-none"
+        />
+      </div>
+
+      {/* Actions */}
+      <div className="flex gap-2 justify-end pt-1">
         <Button variant="ghost" size="sm" onClick={onClose} className="rounded-xl text-carbon/50">
           Annuler
         </Button>
@@ -121,7 +167,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
           size="sm"
           onClick={handleSend}
           disabled={!message.trim() || sending}
-          className="rounded-xl bg-mineral hover:bg-mineral/90 text-white gap-1.5"
+          className="rounded-xl bg-mineral hover:bg-mineral/90 text-white gap-1.5 px-5"
         >
           {sending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
           Envoyer
@@ -258,6 +304,20 @@ const ChatView = ({
     } catch (e) {
       console.error('Failed to send admin notification:', e);
     }
+
+    // Send client acknowledgment
+    try {
+      await supabase.functions.invoke('send-message-notification', {
+        body: {
+          recipient: 'client-ack',
+          customerEmail: user.email,
+          customerName: profile?.display_name || user.email || 'Client',
+          messageText: text,
+        },
+      });
+    } catch (e) {
+      console.error('Failed to send client ack:', e);
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -390,7 +450,7 @@ const GarageMessages = () => {
                 size="sm"
               >
                 <Plus className="w-4 h-4" />
-                Envoyer un message
+                Nouveau message
               </Button>
             </div>
             <AnimatePresence>
