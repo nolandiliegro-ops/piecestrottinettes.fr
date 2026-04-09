@@ -35,7 +35,7 @@ export const useOrderMessages = (orderId: string | null) => {
         .eq('order_id', orderId)
         .order('created_at', { ascending: true });
       if (error) throw error;
-      return data as OrderMessage[];
+      return (data || []).map(m => ({ ...m, sender_type: m.sender_type as 'client' | 'admin' })) as OrderMessage[];
     },
     enabled: !!orderId,
   });
