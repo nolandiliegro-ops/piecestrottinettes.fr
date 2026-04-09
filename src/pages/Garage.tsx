@@ -248,15 +248,9 @@ const Garage = () => {
               </button>
             </div>
             
-            {/* User info - Ultra compact on mobile */}
-            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
-              <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
-                <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-              </p>
-              <CompactPerformanceWidget 
-                points={profile?.performance_points || 0}
-                displayName={profile?.display_name || 'Rider'}
-              />
+            {/* Profile Identity Card */}
+            <div className="flex items-center justify-end">
+              <ProfileIdentityCard user={user} profile={profile} />
             </div>
           </motion.div>
 
