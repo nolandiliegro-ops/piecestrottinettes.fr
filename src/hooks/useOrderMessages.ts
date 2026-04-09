@@ -174,10 +174,13 @@ export const useOrderConversations = () => {
       if (msgError) throw msgError;
       if (!messages || messages.length === 0) return [];
 
+      // Cast messages
+      const typedMessages = messages as unknown as OrderMessage[];
+
       // Group by order_id
       const grouped = new Map<string, { msgs: OrderMessage[]; order: typeof orders[0] }>();
       for (const order of orders) {
-        const orderMsgs = messages.filter(m => m.order_id === order.id);
+        const orderMsgs = typedMessages.filter(m => m.order_id === order.id);
         if (orderMsgs.length > 0) {
           grouped.set(order.id, { msgs: orderMsgs, order });
         }
