@@ -188,7 +188,7 @@ const generateConfirmationHTML = (
               <div style="background:rgba(44,44,44,0.04);border:1px solid rgba(44,44,44,0.1);border-radius:12px;padding:24px 28px;">
                 <p style="margin:0 0 10px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">📦 Étape suivante</p>
                 <p style="margin:0 0 20px;font-size:14px;color:#555;line-height:1.7;">Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée.</p>
-                <a href="https://piecestrottinettes.fr/garage" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
+                <a href="https://piecestrottinettes.fr/garage?tab=messages" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
               </div>
             </td>
           </tr>
@@ -196,7 +196,7 @@ const generateConfirmationHTML = (
           <!-- CTA Button -->
           <tr>
             <td style="padding:4px 32px 36px;text-align:center;">
-              <a href="https://piecestrottinettes.fr/garage" target="_blank" style="display:inline-block;background:#93B5A1;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:600;padding:16px 48px;border-radius:10px;letter-spacing:1px;">Voir mon Garage</a>
+              <a href="https://piecestrottinettes.fr/garage?tab=messages" target="_blank" style="display:inline-block;background:#93B5A1;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:600;padding:16px 48px;border-radius:10px;letter-spacing:1px;">Voir mon Garage</a>
             </td>
           </tr>
 
