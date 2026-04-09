@@ -78,8 +78,8 @@ export const useOrderMessages = (orderId: string | null) => {
 export const useSendMessage = () => {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async ({ orderId, message, senderType, userId }: {
-      orderId: string | null; message: string; senderType: 'client' | 'admin'; userId?: string;
+    mutationFn: async ({ orderId, message, senderType, userId, imageUrl }: {
+      orderId: string | null; message: string; senderType: 'client' | 'admin'; userId?: string; imageUrl?: string;
     }) => {
       const { error } = await supabase
         .from('order_messages')
@@ -88,7 +88,8 @@ export const useSendMessage = () => {
           message,
           sender_type: senderType,
           user_id: userId || null,
-        });
+          image_url: imageUrl || null,
+        } as any);
       if (error) throw error;
     },
     onSuccess: (_, variables) => {
