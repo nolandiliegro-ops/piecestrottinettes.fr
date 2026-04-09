@@ -1,46 +1,63 @@
 
 
-# Plan — 5 corrections messagerie
+# Plan — 4 corrections messagerie
 
-## Analyse
+## Migration SQL
 
-1. **Onglet Messages** : déjà toujours visible (aucune condition). Rien à changer.
-2. **Email notification** : le template HTML utilise `${data.messageText}` correctement. Le code admin envoie `messageText: text` (ligne 146). Le template semble correct — le problème pourrait venir d'un déploiement manquant. Je vais redéployer la fonction.
-3. **ContactMessagesManager** : ne lit que `contact_messages`, pas `order_messages`.
-4. **Message auto** : `stripe-webhook` ne crée aucun `order_messages` après paiement.
-5. **Profil client** : juste un petit widget discret, pas de carte identité.
+`order_id` sur `order_messages` est NOT NULL. Pour permettre les messages sans commande, il faut le rendre nullable et ajuster les RLS :
 
-## Fichiers modifiés (4 fichiers + 1 edge function redéployée)
+```sql
+ALTER TABLE public.order_messages ALTER COLUMN order_id DROP NOT NULL;
 
-### 1. `src/pages/Garage.tsx`
-- Remplacer le widget compact par une **carte profil** en haut de page : avatar avec initiales, nom complet, niveau XP (nom + icône + barre de progression), badge coloré, nombre de commandes (query `orders` count)
-- L'onglet Messages est déjà toujours visible — pas de changement
+-- Client: voir ses messages directs (sans order_id)
+CREATE POLICY "Users can view own direct messages" ON public.order_messages
+  FOR SELECT TO authenticated
+  USING (order_id IS NULL AND user_id = auth.uid());
 
-### 2. `src/components/admin/ContactMessagesManager.tsx`
-- Ajouter un second fetch sur `order_messages` (jointure manuelle avec `orders` pour récupérer `order_number`, `customer_email`, `customer_first_name`)
-- Fusionner les deux sources dans une liste unifiée, triée par date
-- Chaque message `order_messages` affiche le numéro de commande, le sender_type, et permet de répondre directement (insert + appel edge function)
-- Ajouter un filtre/onglet "Contact" / "Commandes" / "Tous"
+-- Client: insérer des messages directs
+CREATE POLICY "Users can insert direct messages" ON public.order_messages
+  FOR INSERT TO authenticated
+  WITH CHECK (
+    sender_type = 'client' AND user_id = auth.uid() AND order_id IS NULL
+  );
+```
 
-### 3. `supabase/functions/stripe-webhook/index.ts`
-- Après la mise à jour du statut en "paid" (ligne 303), insérer un message auto dans `order_messages` :
-  ```
-  sender_type: 'admin'
-  message: "Merci pour votre commande ! Nous avons bien reçu votre paiement et préparons votre colis. Vous recevrez votre numéro de suivi dès l'expédition. 🛵"
-  ```
-- Utiliser `supabaseAdmin` (service role, bypass RLS)
+## Fichiers modifiés (5 fichiers + 1 migration + 1 edge function redéployée)
 
-### 4. `supabase/functions/send-message-notification/index.ts`
-- Redéployer la fonction pour s'assurer que le template est à jour (le code semble correct mais pourrait ne pas avoir été déployé)
+### 1. `src/components/garage/GarageMessages.tsx`
+- Ajouter bouton "✉️ Envoyer un message" en haut qui toggle un formulaire inline
+- Formulaire : sujet (input texte), message (textarea), sélecteur de commande optionnel (dropdown avec les commandes du user)
+- L'envoi insère dans `order_messages` avec `order_id` null si pas de commande sélectionnée
+- Adapter `ConversationList` pour afficher aussi les conversations sans order (groupées par messages directs)
+
+### 2. `src/hooks/useOrderMessages.ts`
+- Adapter `useOrderConversations` pour inclure les messages avec `order_id IS NULL`
+- Adapter `useSendMessage` pour accepter `orderId` nullable
+
+### 3. `supabase/functions/send-message-notification/index.ts`
+- Refactorer pour supporter deux destinataires : `recipient: 'client' | 'admin'`
+- Template client (admin → client) : header vert sauge, titre "💬 Nouveau message de notre équipe", message complet dans bloc encadré, numéro de commande si applicable, bouton CTA "RÉPONDRE DANS MON GARAGE" → `https://piecestrottinettes.fr/garage?tab=messages`, footer
+- Template admin (client → admin) : envoi à `contact@piecestrottinettes.fr`, affiche nom client, email, numéro de commande si applicable, message complet
+- URL du CTA corrigée : `piecestrottinettes.fr` au lieu de `.lovable.app`
+
+### 4. `src/components/garage/GarageMessages.tsx` (suite)
+- Quand le client envoie un message → appeler `send-message-notification` avec `recipient: 'admin'` + infos client
+
+### 5. `src/components/admin/ContactMessagesManager.tsx`
+- Ajouter des onglets "Contact" / "Garage" avec Tabs
+- Onglet "Garage" : fetch `order_messages` WHERE `sender_type = 'client'` avec jointure sur `orders` pour `order_number`, `customer_email`, `customer_first_name`
+- Afficher : nom, email, numéro de commande, message, date
+- Bouton "Répondre" : input texte + envoi → insert `order_messages` sender_type='admin' + appel edge function `send-message-notification` recipient='client'
 
 ## Ordre d'exécution
 
 ```text
-1. stripe-webhook — message auto après paiement       (5 min)
-2. ContactMessagesManager — messages unifiés admin     (20 min)
-3. Garage.tsx — carte profil en haut                   (15 min)
-4. Redéployer send-message-notification                (2 min)
+1. Migration — order_id nullable + RLS            (5 min)
+2. Edge function — dual recipient + templates     (15 min)
+3. useOrderMessages — support nullable orderId    (10 min)
+4. GarageMessages — bouton nouveau message        (15 min)
+5. ContactMessagesManager — onglet Garage         (15 min)
 ```
 
-**Total estimé : ~45 min**
+**Total estimé : ~1h**
 
