@@ -1,72 +1,64 @@
 
 
-# Plan — Edge Function `bulk-insert-scooters`
+# Plan — Système de validation des trottinettes importées
 
-## Réponses à tes questions
+## 1. Migration SQL
 
-1. **Architecture** : Une Edge Function protégée par un secret API admin (pas de JWT utilisateur). Ton script local envoie un POST avec le secret dans un header, la fonction utilise `service_role` côté serveur pour bypasser le RLS.
+Ajouter la colonne `published` à `scooter_models` :
 
-2. **Edge Function** : Oui, je la crée ci-dessous.
-
-3. **Déploiement** : Tu n'as rien à faire — les Edge Functions Lovable se déploient automatiquement quand je les crée. Pas besoin de Supabase CLI.
-
-4. **Token Lovable** : Non, il n'existe pas de CLI Lovable pour déployer. Mais ce n'est pas nécessaire — je déploie pour toi.
-
-## Architecture finale
-
-```text
-Terminal local                    Lovable Cloud
-─────────────                    ─────────────
-node scripts/sync-scooters.js "Xiaomi"
-  │
-  ├─ POST /bulk-insert-scooters
-  │  Header: x-admin-secret: <ADMIN_BULK_SECRET>
-  │  Body: { scooters: [...], brandName: "Xiaomi" }
-  │
-  └──────────────────────────────► Edge Function
-                                    │
-                                    ├─ Vérifie x-admin-secret
-                                    ├─ Upsert brand (créer si inexistante)
-                                    ├─ Upsert scooter_models (par slug)
-                                    ├─ Upsert part_compatibility (optionnel)
-                                    └─ Retourne { inserted, updated, errors }
+```sql
+ALTER TABLE public.scooter_models ADD COLUMN published boolean NOT NULL DEFAULT true;
 ```
 
-## Ce que je fais
+Default `true` pour que les trottinettes existantes restent publiées. L'Edge Function forcera `published: false` pour les imports automatiques.
 
-### 1. Créer un secret `ADMIN_BULK_SECRET`
-Un mot de passe aléatoire que ton script envoie dans le header `x-admin-secret`. La fonction le vérifie côté serveur. Pas de JWT nécessaire.
+## 2. Edge Function `bulk-insert-scooters`
 
-### 2. Créer `supabase/functions/bulk-insert-scooters/index.ts`
-- Vérifie `x-admin-secret` contre le secret stocké
-- Accepte `{ brandName: string, scooters: Array<{ name, slug, specs... }> }`
-- Upsert la marque dans `brands` (ON CONFLICT slug)
-- Upsert chaque modèle dans `scooter_models` (ON CONFLICT slug)
-- Retourne un résumé `{ inserted: N, updated: N, errors: [...] }`
-- Utilise `SUPABASE_SERVICE_ROLE_KEY` pour bypasser le RLS
+Modifier le fichier existant pour :
+- Forcer `published: false` dans chaque row upsertée (les imports bot arrivent toujours en brouillon)
+- Le champ `image_url` est déjà accepté dans l'interface — aucun changement nécessaire
 
-### 3. Mettre à jour `supabase/config.toml`
-Ajouter `verify_jwt = false` pour cette fonction (l'auth est gérée par le secret custom).
+## 3. Requêtes publiques — Filtrer sur `published = true`
 
-### 4. Créer `scripts/sync-scooters-example.js`
-Un exemple de script local que tu adaptes — il fait le POST vers l'Edge Function avec ton secret.
+Mettre à jour les fichiers qui requêtent `scooter_models` côté public pour ajouter `.eq('published', true)` :
+- `src/hooks/useScooterData.ts`
+- `src/hooks/useScooterDetail.ts`
+- `src/hooks/useUnifiedSearch.ts`
+- `src/components/hero/ScooterCarousel.tsx`
+- `src/components/scooter/OtherScootersCarousel.tsx`
+- La fonction DB `search_scooter_fuzzy` devra être mise à jour pour filtrer `published = true`
 
-## Utilisation côté local
+Les pages admin (ScootersManager, CompatibilityManager, AdminDashboard) ne filtrent PAS — elles voient tout.
 
-```bash
-export ADMIN_BULK_SECRET="le-secret-que-tu-définis"
-export SUPABASE_URL="https://kqsxscjtlipregkrmucg.supabase.co"
-node scripts/sync-scooters.js "Xiaomi"
-```
+## 4. Admin — Section "En attente de validation"
 
-Le script prépare le JSON et fait un `fetch()` vers `${SUPABASE_URL}/functions/v1/bulk-insert-scooters`.
+Ajouter un nouvel onglet dans `AdminInventory.tsx` (à côté de Pièces/Trottinettes) : **"Bot Import"** avec un badge compteur.
 
-## Fichiers créés/modifiés
+Créer un nouveau composant `src/components/admin/PendingScootersManager.tsx` qui affiche :
+- Les trottinettes avec `published = false` en carte (nom, marque, specs, image preview)
+- Badge "Bot" sur chaque carte
+- Bouton "Publier" → `UPDATE published = true`
+- Bouton "Supprimer" → `DELETE` (avec confirmation)
+- Compteur dans le badge de l'onglet
+
+## 5. Script local `scripts/sync-scooters-example.js`
+
+Mettre à jour pour :
+- Afficher "⏳ En attente de validation admin" après insertion réussie
+- Documenter le champ `image_url` dans l'exemple
+
+## Fichiers modifiés
 
 | Fichier | Action |
 |---------|--------|
-| `supabase/functions/bulk-insert-scooters/index.ts` | Créer |
-| `supabase/config.toml` | Ajouter bloc function |
-| `scripts/sync-scooters-example.js` | Créer (exemple local) |
-| Secret `ADMIN_BULK_SECRET` | Demander à l'utilisateur de le définir |
+| Migration SQL | `ADD COLUMN published boolean DEFAULT true` + update `search_scooter_fuzzy` |
+| `supabase/functions/bulk-insert-scooters/index.ts` | Forcer `published: false` |
+| `src/components/admin/AdminInventory.tsx` | Ajouter onglet Bot Import |
+| `src/components/admin/PendingScootersManager.tsx` | Créer (liste brouillons + publish/delete) |
+| `src/hooks/useScooterData.ts` | Filtrer `published = true` |
+| `src/hooks/useScooterDetail.ts` | Filtrer `published = true` |
+| `src/hooks/useUnifiedSearch.ts` | Filtrer `published = true` |
+| `src/components/hero/ScooterCarousel.tsx` | Filtrer `published = true` |
+| `src/components/scooter/OtherScootersCarousel.tsx` | Filtrer `published = true` |
+| `scripts/sync-scooters-example.js` | Message post-insertion + doc image_url |
 
