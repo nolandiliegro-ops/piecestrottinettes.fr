@@ -78,21 +78,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         console.error('Failed to send admin notification:', e);
       }
 
-      // Send client acknowledgment email
-      try {
-        await supabase.functions.invoke('send-message-notification', {
-          body: {
-            recipient: 'client-ack',
-            customerEmail: user.email,
-            customerName: profile?.display_name || user.email || 'Client',
-            messageText: fullMessage,
-          },
-        });
-      } catch (e) {
-        console.error('Failed to send client ack:', e);
-      }
-
-      toast.success('Message envoyé ! Un accusé de réception vous a été envoyé par email.');
+      toast.success('Message envoyé !');
       onClose();
     } catch (e) {
       toast.error("Erreur lors de l'envoi");
@@ -305,19 +291,6 @@ const ChatView = ({
       console.error('Failed to send admin notification:', e);
     }
 
-    // Send client acknowledgment
-    try {
-      await supabase.functions.invoke('send-message-notification', {
-        body: {
-          recipient: 'client-ack',
-          customerEmail: user.email,
-          customerName: profile?.display_name || user.email || 'Client',
-          messageText: text,
-        },
-      });
-    } catch (e) {
-      console.error('Failed to send client ack:', e);
-    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
