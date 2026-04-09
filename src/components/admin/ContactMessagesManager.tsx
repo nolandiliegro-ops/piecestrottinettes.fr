@@ -190,7 +190,10 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
         </div>
         <div>
           <p className="text-sm font-medium text-[hsl(0_0%_90%)]">{thread.display_name}</p>
-          <p className="text-xs text-[hsl(0_0%_55%)]">{thread.email}</p>
+          <p className="text-xs text-[hsl(0_0%_55%)]">
+            {thread.order_number ? `📦 ${thread.order_number}` : '💬 Question générale'}
+            {thread.email ? ` · ${thread.email}` : ''}
+          </p>
         </div>
       </div>
 
@@ -334,22 +337,20 @@ const GarageTab = () => {
     <div className="space-y-2">
       {threads.map(t => (
         <div
-          key={t.user_id}
+          key={`${t.user_id}-${t.order_id || 'general'}`}
           onClick={() => setSelectedThread(t)}
           className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
         >
           <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
-            <User className="w-4 h-4 text-primary" />
+            {t.order_id ? <Package className="w-4 h-4 text-primary" /> : <MessageSquare className="w-4 h-4 text-primary" />}
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-0.5">
               <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{t.display_name}</span>
-              {t.email && (
-                <>
-                  <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
-                  <span className="text-xs text-[hsl(0_0%_55%)] truncate">{t.email}</span>
-                </>
-              )}
+              <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
+              <span className="text-xs text-primary/80 font-mono">
+                {t.order_number || 'Question générale'}
+              </span>
             </div>
             <p className="text-xs text-[hsl(0_0%_60%)] truncate">{t.last_message.substring(0, 80)}</p>
           </div>
