@@ -53,6 +53,7 @@ type Order = {
   delivery_method: string | null;
   delivery_price: number | null;
   notes: string | null;
+  tracking_number: string | null;
 };
 
 type OrderItem = {
@@ -109,6 +110,7 @@ const deliveryMethodConfig: Record<string, {
 const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetailSheetProps) => {
   const queryClient = useQueryClient();
   const [isUpdating, setIsUpdating] = useState(false);
+  const [trackingNumber, setTrackingNumber] = useState("");
 
   // Fetch order items
   const { data: orderItems, isLoading: itemsLoading } = useQuery({
@@ -132,21 +134,47 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
     mutationFn: async (newStatus: string) => {
       if (!order?.id) return;
       
+      const updateData: Record<string, any> = { status: newStatus };
+      // Save tracking number when shipping
+      if (newStatus === 'shipped' && trackingNumber.trim()) {
+        updateData.tracking_number = trackingNumber.trim();
+      }
+      
       const { error } = await supabase
         .from('orders')
-        .update({ status: newStatus })
+        .update(updateData)
         .eq('id', order.id);
       
       if (error) throw error;
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['admin-orders'] });
+      queryClient.invalidateQueries({ queryKey: ['user-orders'] });
       onStatusUpdate();
       toast.success("Statut mis à jour");
+      setTrackingNumber("");
     },
     onError: () => {
       toast.error("Erreur lors de la mise à jour");
     },
+  });
+
+  // Save tracking number independently
+  const saveTrackingMutation = useMutation({
+    mutationFn: async (tracking: string) => {
+      if (!order?.id) return;
+      const { error } = await supabase
+        .from('orders')
+        .update({ tracking_number: tracking.trim() || null })
+        .eq('id', order.id);
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['admin-orders'] });
+      queryClient.invalidateQueries({ queryKey: ['user-orders'] });
+      toast.success("Numéro de suivi enregistré");
+    },
+    onError: () => toast.error("Erreur lors de l'enregistrement"),
   });
 
   const handleStatusChange = async (newStatus: string) => {
@@ -272,6 +300,35 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
                     {order.delivery_price === 0 && (
                       <span className="text-green-500 font-medium">Gratuit</span>
                     )}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tracking Number */}
+            {(order.status === 'shipped' || order.status === 'delivered') && (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+                  <Truck className="w-4 h-4 text-primary" />
+                  Numéro de suivi
+                </div>
+                <div className="bg-muted/30 rounded-xl p-4">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="text"
+                      value={trackingNumber || order.tracking_number || ''}
+                      onChange={(e) => setTrackingNumber(e.target.value)}
+                      placeholder="Ex: 1Z999AA10123456784"
+                      className="flex-1 text-sm bg-background/50 border border-border/30 rounded-lg px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary"
+                    />
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      disabled={saveTrackingMutation.isPending}
+                      onClick={() => saveTrackingMutation.mutate(trackingNumber || order.tracking_number || '')}
+                    >
+                      {saveTrackingMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Sauver'}
+                    </Button>
                   </div>
                 </div>
               </div>

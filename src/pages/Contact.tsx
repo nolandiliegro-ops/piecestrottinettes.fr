@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,6 +13,8 @@ import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [searchParams] = useSearchParams();
+  const orderNumber = searchParams.get("order");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -104,6 +107,7 @@ const Contact = () => {
                 name="subject"
                 required
                 maxLength={200}
+                defaultValue={orderNumber ? `Question sur ma commande ${orderNumber}` : ''}
                 placeholder="Question sur ma commande #..."
                 className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
               />
