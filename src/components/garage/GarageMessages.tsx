@@ -292,20 +292,34 @@ const ChatView = ({
       userId: user.id,
     });
 
-    // Notify admin
+    // Notify admin + send client ack
+    const convId = orderId !== 'direct' ? orderId : user.id;
+    const customerName = profile?.display_name || user.email || 'Client';
     try {
-      await supabase.functions.invoke('send-message-notification', {
-        body: {
-          recipient: 'admin',
-          customerEmail: user.email,
-          customerName: profile?.display_name || user.email || 'Client',
-          orderNumber: orderId !== 'direct' ? orderNumber : undefined,
-          messageText: text,
-          conversationId: orderId !== 'direct' ? orderId : user.id,
-        },
-      });
+      await Promise.all([
+        supabase.functions.invoke('send-message-notification', {
+          body: {
+            recipient: 'admin',
+            customerEmail: user.email,
+            customerName,
+            orderNumber: orderId !== 'direct' ? orderNumber : undefined,
+            messageText: text,
+            conversationId: convId,
+          },
+        }),
+        supabase.functions.invoke('send-message-notification', {
+          body: {
+            recipient: 'client-ack',
+            customerEmail: user.email,
+            customerName,
+            orderNumber: orderId !== 'direct' ? orderNumber : undefined,
+            messageText: text,
+            conversationId: convId,
+          },
+        }),
+      ]);
     } catch (e) {
-      console.error('Failed to send admin notification:', e);
+      console.error('Failed to send notifications:', e);
     }
 
   };
