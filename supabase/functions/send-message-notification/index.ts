@@ -15,6 +15,7 @@ interface MessageNotificationRequest {
   orderNumber?: string;
   messageText: string;
   conversationId?: string;
+  imageUrl?: string;
 }
 
 function escapeHtml(str: string): string {
@@ -77,6 +78,16 @@ const wrapEmail = (content: string): string => `<!DOCTYPE html>
 </body>
 </html>`;
 
+const generateImageBlock = (imageUrl?: string): string => {
+  if (!imageUrl) return '';
+  return `
+    <div style="margin-top: 16px;">
+      <a href="${escapeHtml(imageUrl)}" target="_blank" style="display: inline-block;">
+        <img src="${escapeHtml(imageUrl)}" alt="Image jointe" style="max-width: 300px; max-height: 200px; border-radius: 8px; border: 1px solid #e0e0e0;" />
+      </a>
+    </div>`;
+};
+
 const generateClientEmailHTML = (data: MessageNotificationRequest): string => {
   return wrapEmail(`
     ${generateHeader()}
@@ -86,6 +97,7 @@ const generateClientEmailHTML = (data: MessageNotificationRequest): string => {
         <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
         <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
           <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+          ${generateImageBlock(data.imageUrl)}
         </div>
         <div style="text-align: center;">
           <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">VOIR MA MESSAGERIE</a>
@@ -106,6 +118,7 @@ const generateClientAckEmailHTML = (data: MessageNotificationRequest): string =>
         <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Votre message :</p>
         <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
           <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+          ${generateImageBlock(data.imageUrl)}
         </div>
         <div style="text-align: center;">
           <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">VOIR MA MESSAGERIE</a>
@@ -127,6 +140,7 @@ const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
         <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
         <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
           <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+          ${generateImageBlock(data.imageUrl)}
         </div>
         <div style="text-align: center;">
           <a href="https://piecestrottinettes.fr/admin" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, ArrowLeft, Send, Loader2, Package, ChevronRight, Mail, Plus } from 'lucide-react';
+import { MessageSquare, ArrowLeft, Send, Loader2, Package, ChevronRight, Mail, Plus, Paperclip, X, ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -18,9 +18,93 @@ import {
   useSendMessage,
   useMarkMessagesAsRead,
   type ConversationSummary,
+  type OrderMessage,
 } from '@/hooks/useOrderMessages';
 
-// New Message Form — redesigned
+const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
+
+const uploadMessageImage = async (file: File, userId: string): Promise<string> => {
+  if (file.size > MAX_IMAGE_SIZE) throw new Error('Image trop volumineuse (max 5 Mo)');
+  const ext = file.name.split('.').pop() || 'jpg';
+  const path = `${userId}/${Date.now()}.${ext}`;
+  const { error } = await supabase.storage.from('order-messages-images').upload(path, file);
+  if (error) throw error;
+  const { data: urlData } = supabase.storage.from('order-messages-images').getPublicUrl(path);
+  return urlData.publicUrl;
+};
+
+// Image preview in chat bubble
+const MessageImage = ({ url }: { url: string }) => {
+  const [fullscreen, setFullscreen] = useState(false);
+  return (
+    <>
+      <img
+        src={url}
+        alt="Image jointe"
+        onClick={() => setFullscreen(true)}
+        className="mt-2 rounded-lg max-w-[240px] max-h-[180px] object-cover cursor-pointer hover:opacity-90 transition-opacity border border-white/10"
+      />
+      {fullscreen && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4" onClick={() => setFullscreen(false)}>
+          <img src={url} alt="Image jointe" className="max-w-full max-h-full rounded-lg" />
+        </div>
+      )}
+    </>
+  );
+};
+
+// Attachment button + hidden file input
+const AttachButton = ({ onFileSelected, disabled }: { onFileSelected: (file: File) => void; disabled?: boolean }) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+  return (
+    <>
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon"
+        disabled={disabled}
+        onClick={() => inputRef.current?.click()}
+        className="w-11 h-11 rounded-xl text-carbon/40 hover:text-mineral hover:bg-mineral/10 shrink-0"
+      >
+        <Paperclip className="w-4 h-4" />
+      </Button>
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/jpeg,image/png,image/webp"
+        className="hidden"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) onFileSelected(f);
+          e.target.value = '';
+        }}
+      />
+    </>
+  );
+};
+
+// Image preview before sending
+const ImagePreview = ({ file, onRemove }: { file: File; onRemove: () => void }) => {
+  const [url, setUrl] = useState('');
+  useEffect(() => {
+    const u = URL.createObjectURL(file);
+    setUrl(u);
+    return () => URL.revokeObjectURL(u);
+  }, [file]);
+  return (
+    <div className="relative inline-block">
+      <img src={url} alt="Aperçu" className="w-20 h-20 object-cover rounded-xl border border-carbon/10" />
+      <button
+        onClick={onRemove}
+        className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-red-500 text-white flex items-center justify-center"
+      >
+        <X className="w-3 h-3" />
+      </button>
+    </div>
+  );
+};
+
+// New Message Form
 const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
   const { user } = useAuth();
   const { profile } = useProfile();
@@ -29,6 +113,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
   const [message, setMessage] = useState('');
   const [selectedOrderId, setSelectedOrderId] = useState<string>('');
   const [sending, setSending] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
 
   const { data: userOrders = [] } = useQuery({
     queryKey: ['user-orders-for-message', user?.id],
@@ -49,24 +134,36 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
     enabled: !!user?.id,
   });
 
+  const handleFileSelected = (file: File) => {
+    if (file.size > MAX_IMAGE_SIZE) {
+      toast.error('Image trop volumineuse (max 5 Mo)');
+      return;
+    }
+    setImageFile(file);
+  };
+
   const handleSend = async () => {
-    if (!message.trim() || !user?.id) return;
+    if ((!message.trim() && !imageFile) || !user?.id) return;
     setSending(true);
     try {
+      let imageUrl: string | undefined;
+      if (imageFile) {
+        imageUrl = await uploadMessageImage(imageFile, user.id);
+      }
+
       const fullMessage = subject.trim() ? `[${subject.trim()}]\n${message.trim()}` : message.trim();
       await sendMessage.mutateAsync({
         orderId: selectedOrderId || null,
-        message: fullMessage,
+        message: fullMessage || '📷 Image',
         senderType: 'client',
         userId: user.id,
+        imageUrl,
       });
 
       const selectedOrder = userOrders.find(o => o.id === selectedOrderId);
-
       const convId = selectedOrderId || user.id;
       const customerName = profile?.display_name || user.email || 'Client';
 
-      // Notify admin + send client ack in parallel
       try {
         await Promise.all([
           supabase.functions.invoke('send-message-notification', {
@@ -75,8 +172,9 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
               customerEmail: user.email,
               customerName,
               orderNumber: selectedOrder?.order_number || undefined,
-              messageText: fullMessage,
+              messageText: fullMessage || '📷 Image',
               conversationId: convId,
+              imageUrl,
             },
           }),
           supabase.functions.invoke('send-message-notification', {
@@ -85,8 +183,9 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
               customerEmail: user.email,
               customerName,
               orderNumber: selectedOrder?.order_number || undefined,
-              messageText: fullMessage,
+              messageText: fullMessage || '📷 Image',
               conversationId: convId,
+              imageUrl,
             },
           }),
         ]);
@@ -110,7 +209,6 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
       exit={{ opacity: 0, height: 0 }}
       className="bg-white/80 backdrop-blur-md border border-mineral/20 rounded-2xl p-5 mb-5 space-y-4"
     >
-      {/* Header */}
       <div className="flex items-center gap-3 pb-3 border-b border-carbon/5">
         <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center">
           <span className="text-lg">✉️</span>
@@ -121,7 +219,6 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         </div>
       </div>
 
-      {/* Subject */}
       <div className="space-y-1.5">
         <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Sujet</label>
         <Input
@@ -132,7 +229,6 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         />
       </div>
 
-      {/* Order selector */}
       <div className="space-y-1.5">
         <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Commande liée (optionnel)</label>
         <select
@@ -149,7 +245,6 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         </select>
       </div>
 
-      {/* Message */}
       <div className="space-y-1.5">
         <label className="text-xs font-medium text-carbon/70 uppercase tracking-wide">Message</label>
         <Textarea
@@ -160,15 +255,21 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
         />
       </div>
 
-      {/* Actions */}
+      {imageFile && (
+        <div className="pt-1">
+          <ImagePreview file={imageFile} onRemove={() => setImageFile(null)} />
+        </div>
+      )}
+
       <div className="flex gap-2 justify-end pt-1">
+        <AttachButton onFileSelected={handleFileSelected} disabled={sending} />
         <Button variant="ghost" size="sm" onClick={onClose} className="rounded-xl text-carbon/50">
           Annuler
         </Button>
         <Button
           size="sm"
           onClick={handleSend}
-          disabled={!message.trim() || sending}
+          disabled={(!message.trim() && !imageFile) || sending}
           className="rounded-xl bg-mineral hover:bg-mineral/90 text-white gap-1.5 px-5"
         >
           {sending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
@@ -269,6 +370,8 @@ const ChatView = ({
   const sendMessage = useSendMessage();
   const markAsRead = useMarkMessagesAsRead();
   const [input, setInput] = useState('');
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -281,47 +384,71 @@ const ChatView = ({
     }
   }, [messages]);
 
+  const handleFileSelected = (file: File) => {
+    if (file.size > MAX_IMAGE_SIZE) {
+      toast.error('Image trop volumineuse (max 5 Mo)');
+      return;
+    }
+    setImageFile(file);
+  };
+
   const handleSend = async () => {
-    if (!input.trim() || !user?.id) return;
+    if ((!input.trim() && !imageFile) || !user?.id) return;
     const text = input.trim();
     setInput('');
-    await sendMessage.mutateAsync({
-      orderId: orderId === 'direct' ? null : orderId,
-      message: text,
-      senderType: 'client',
-      userId: user.id,
-    });
+    setUploading(true);
 
-    // Notify admin + send client ack
-    const convId = orderId !== 'direct' ? orderId : user.id;
-    const customerName = profile?.display_name || user.email || 'Client';
     try {
-      await Promise.all([
-        supabase.functions.invoke('send-message-notification', {
-          body: {
-            recipient: 'admin',
-            customerEmail: user.email,
-            customerName,
-            orderNumber: orderId !== 'direct' ? orderNumber : undefined,
-            messageText: text,
-            conversationId: convId,
-          },
-        }),
-        supabase.functions.invoke('send-message-notification', {
-          body: {
-            recipient: 'client-ack',
-            customerEmail: user.email,
-            customerName,
-            orderNumber: orderId !== 'direct' ? orderNumber : undefined,
-            messageText: text,
-            conversationId: convId,
-          },
-        }),
-      ]);
-    } catch (e) {
-      console.error('Failed to send notifications:', e);
-    }
+      let imageUrl: string | undefined;
+      if (imageFile) {
+        imageUrl = await uploadMessageImage(imageFile, user.id);
+        setImageFile(null);
+      }
 
+      await sendMessage.mutateAsync({
+        orderId: orderId === 'direct' ? null : orderId,
+        message: text || '📷 Image',
+        senderType: 'client',
+        userId: user.id,
+        imageUrl,
+      });
+
+      const convId = orderId !== 'direct' ? orderId : user.id;
+      const customerName = profile?.display_name || user.email || 'Client';
+      try {
+        await Promise.all([
+          supabase.functions.invoke('send-message-notification', {
+            body: {
+              recipient: 'admin',
+              customerEmail: user.email,
+              customerName,
+              orderNumber: orderId !== 'direct' ? orderNumber : undefined,
+              messageText: text || '📷 Image',
+              conversationId: convId,
+              imageUrl,
+            },
+          }),
+          supabase.functions.invoke('send-message-notification', {
+            body: {
+              recipient: 'client-ack',
+              customerEmail: user.email,
+              customerName,
+              orderNumber: orderId !== 'direct' ? orderNumber : undefined,
+              messageText: text || '📷 Image',
+              conversationId: convId,
+              imageUrl,
+            },
+          }),
+        ]);
+      } catch (e) {
+        console.error('Failed to send notifications:', e);
+      }
+    } catch {
+      toast.error("Erreur lors de l'envoi");
+      setInput(text);
+    } finally {
+      setUploading(false);
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -370,7 +497,8 @@ const ChatView = ({
                     ? "bg-mineral text-white rounded-br-md"
                     : "bg-white/80 border border-carbon/10 text-carbon rounded-bl-md"
                 )}>
-                  <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
+                  {msg.message && <p className="text-sm whitespace-pre-wrap">{msg.message}</p>}
+                  {msg.image_url && <MessageImage url={msg.image_url} />}
                   <p className={cn(
                     "text-[10px] mt-1",
                     isClient ? "text-white/60" : "text-carbon/40"
@@ -385,7 +513,13 @@ const ChatView = ({
       </div>
 
       <div className="shrink-0 pt-3 border-t border-carbon/10">
+        {imageFile && (
+          <div className="mb-2">
+            <ImagePreview file={imageFile} onRemove={() => setImageFile(null)} />
+          </div>
+        )}
         <div className="flex items-end gap-2">
+          <AttachButton onFileSelected={handleFileSelected} disabled={uploading || sendMessage.isPending} />
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -396,11 +530,11 @@ const ChatView = ({
           />
           <Button
             size="icon"
-            disabled={!input.trim() || sendMessage.isPending}
+            disabled={(!input.trim() && !imageFile) || sendMessage.isPending || uploading}
             onClick={handleSend}
             className="w-11 h-11 rounded-xl bg-mineral hover:bg-mineral/90 text-white shrink-0"
           >
-            {sendMessage.isPending ? (
+            {(sendMessage.isPending || uploading) ? (
               <Loader2 className="w-4 h-4 animate-spin" />
             ) : (
               <Send className="w-4 h-4" />
