@@ -9,7 +9,7 @@ const corsHeaders = {
 };
 
 interface MessageNotificationRequest {
-  recipient: 'client' | 'admin';
+  recipient: 'client' | 'admin' | 'client-ack';
   customerEmail: string;
   customerName: string;
   orderNumber?: string;
@@ -96,6 +96,26 @@ const generateClientEmailHTML = (data: MessageNotificationRequest): string => {
   `);
 };
 
+const generateClientAckEmailHTML = (data: MessageNotificationRequest): string => {
+  return wrapEmail(`
+    ${generateHeader()}
+    <tr>
+      <td style="padding: 40px 32px;">
+        <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">✅ Votre message a bien été envoyé</h2>
+        <p style="margin: 0 0 16px; font-size: 15px; color: #555; line-height: 1.5;">Bonjour ${escapeHtml(data.customerName)}, nous avons bien reçu votre message. Notre équipe vous répondra sous 48h.</p>
+        <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Votre message :</p>
+        <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
+          <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(data.messageText)}</p>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://piecestrottinettes.fr/garage?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">VOIR MA MESSAGERIE</a>
+        </div>
+      </td>
+    </tr>
+    ${generateFooter()}
+  `);
+};
+
 const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
   return wrapEmail(`
     ${generateHeader()}
@@ -133,7 +153,8 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const isReply = recipient === 'client'; // admin replying = reply
+    // For threading: admin reply = isReply, client-ack = isReply (same thread as initial client message)
+    const isReply = recipient === 'client' || recipient === 'client-ack';
     const threadingHeaders = buildThreadingHeaders(data.conversationId, isReply);
     const subject = buildSubject(data.orderNumber, isReply);
 
@@ -143,6 +164,15 @@ const handler = async (req: Request): Promise<Response> => {
     if (recipient === 'admin') {
       to = 'contact@piecestrottinettes.fr';
       html = generateAdminEmailHTML(data);
+    } else if (recipient === 'client-ack') {
+      if (!data.customerEmail) {
+        return new Response(
+          JSON.stringify({ error: "Missing customerEmail for client-ack notification" }),
+          { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        );
+      }
+      to = data.customerEmail;
+      html = generateClientAckEmailHTML(data);
     } else {
       if (!data.customerEmail) {
         return new Response(

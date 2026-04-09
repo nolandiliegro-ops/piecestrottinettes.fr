@@ -28,6 +28,8 @@ interface OrderMsg {
 
 interface ClientThread {
   user_id: string;
+  order_id: string | null; // null = general question, string = order-specific
+  order_number: string | null;
   display_name: string;
   email: string;
   last_message: string;
@@ -102,12 +104,18 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
   const fetchMessages = async () => {
     setLoading(true);
-    // Get ALL messages for this user_id (both client & admin)
-    const { data, error } = await supabase
+    let query = supabase
       .from('order_messages')
       .select('*')
-      .or(`user_id.eq.${thread.user_id}`)
-      .order('created_at', { ascending: true });
+      .eq('user_id', thread.user_id);
+    
+    if (thread.order_id) {
+      query = query.eq('order_id', thread.order_id);
+    } else {
+      query = query.is('order_id', null);
+    }
+    
+    const { data, error } = await query.order('created_at', { ascending: true });
     if (error) { console.error(error); setLoading(false); return; }
     setMessages((data || []) as OrderMsg[]);
     setLoading(false);
@@ -136,22 +144,23 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
         message: replyText.trim(),
         sender_type: 'admin',
         user_id: thread.user_id,
-        order_id: null,
+        order_id: thread.order_id || null,
       });
       if (error) throw error;
 
       // Send email notification to client
       if (thread.email) {
         try {
-          await supabase.functions.invoke('send-message-notification', {
-            body: {
-              recipient: 'client',
-              customerEmail: thread.email,
-              customerName: thread.display_name,
-              messageText: replyText.trim(),
-              conversationId: thread.user_id,
-            },
-          });
+           await supabase.functions.invoke('send-message-notification', {
+              body: {
+                recipient: 'client',
+                customerEmail: thread.email,
+                customerName: thread.display_name,
+                orderNumber: thread.order_number || undefined,
+                messageText: replyText.trim(),
+                conversationId: thread.order_id || thread.user_id,
+              },
+            });
         } catch (e) {
           console.error('Email notification failed:', e);
         }
@@ -181,7 +190,10 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
         </div>
         <div>
           <p className="text-sm font-medium text-[hsl(0_0%_90%)]">{thread.display_name}</p>
-          <p className="text-xs text-[hsl(0_0%_55%)]">{thread.email}</p>
+          <p className="text-xs text-[hsl(0_0%_55%)]">
+            {thread.order_number ? `📦 ${thread.order_number}` : '💬 Question générale'}
+            {thread.email ? ` · ${thread.email}` : ''}
+          </p>
         </div>
       </div>
 
@@ -247,47 +259,55 @@ const GarageTab = () => {
     if (error) { console.error(error); setLoading(false); return; }
     if (!clientMsgs || clientMsgs.length === 0) { setThreads([]); setLoading(false); return; }
 
-    // 2. Group by user_id
+    // 2. Group by user_id + order_id (separate threads per order and general)
     const grouped = new Map<string, OrderMsg[]>();
     for (const m of clientMsgs) {
       if (!m.user_id) continue;
-      if (!grouped.has(m.user_id)) grouped.set(m.user_id, []);
-      grouped.get(m.user_id)!.push(m as OrderMsg);
+      const threadKey = `${m.user_id}__${m.order_id || 'general'}`;
+      if (!grouped.has(threadKey)) grouped.set(threadKey, []);
+      grouped.get(threadKey)!.push(m as OrderMsg);
     }
 
-    const userIds = [...grouped.keys()];
-    if (userIds.length === 0) { setThreads([]); setLoading(false); return; }
+    const threadKeys = [...grouped.keys()];
+    if (threadKeys.length === 0) { setThreads([]); setLoading(false); return; }
+
+    const userIds = [...new Set(threadKeys.map(k => k.split('__')[0]))];
+    const orderIds = [...new Set(
+      threadKeys.map(k => k.split('__')[1]).filter(id => id !== 'general')
+    )];
 
     // 3. Resolve names from profiles
     const { data: profiles } = await supabase.from('profiles').select('id, display_name').in('id', userIds);
     const profileMap = new Map((profiles || []).map(p => [p.id, p.display_name || '']));
 
-    // 4. Resolve names/emails from orders
+    // 4. Resolve names/emails from orders + order numbers
     const { data: orders } = await supabase
       .from('orders')
-      .select('user_id, customer_first_name, customer_last_name, customer_email')
+      .select('id, user_id, order_number, customer_first_name, customer_last_name, customer_email')
       .in('user_id', userIds);
-    const orderMap = new Map<string, { name: string; email: string }>();
+    const userInfoMap = new Map<string, { name: string; email: string }>();
+    const orderNumberMap = new Map<string, string>();
     for (const o of (orders || [])) {
-      if (o.user_id && !orderMap.has(o.user_id)) {
-        orderMap.set(o.user_id, { name: `${o.customer_first_name} ${o.customer_last_name}`, email: o.customer_email });
+      if (o.user_id && !userInfoMap.has(o.user_id)) {
+        userInfoMap.set(o.user_id, { name: `${o.customer_first_name} ${o.customer_last_name}`, email: o.customer_email });
       }
+      orderNumberMap.set(o.id, o.order_number);
     }
 
-    // 5. Count unread admin messages per user (messages from admin that client hasn't read)
-    // For admin view, "unread" = client messages not yet handled. We count client msgs with no admin reply after them.
-    // Simplification: just count total client messages
-
-    // 6. Build threads
-    const result: ClientThread[] = userIds.map(uid => {
-      const msgs = grouped.get(uid)!;
-      const orderInfo = orderMap.get(uid);
+    // 5. Build threads
+    const result: ClientThread[] = threadKeys.map(key => {
+      const [uid, oid] = key.split('__');
+      const msgs = grouped.get(key)!;
+      const userInfo = userInfoMap.get(uid);
       const profileName = profileMap.get(uid);
-      const displayName = orderInfo?.name || profileName || 'Client';
-      const email = orderInfo?.email || '';
+      const displayName = userInfo?.name || profileName || 'Client';
+      const email = userInfo?.email || '';
+      const isGeneral = oid === 'general';
 
       return {
         user_id: uid,
+        order_id: isGeneral ? null : oid,
+        order_number: isGeneral ? null : (orderNumberMap.get(oid) || null),
         display_name: displayName,
         email,
         last_message: msgs[0].message,
@@ -317,22 +337,20 @@ const GarageTab = () => {
     <div className="space-y-2">
       {threads.map(t => (
         <div
-          key={t.user_id}
+          key={`${t.user_id}-${t.order_id || 'general'}`}
           onClick={() => setSelectedThread(t)}
           className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
         >
           <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
-            <User className="w-4 h-4 text-primary" />
+            {t.order_id ? <Package className="w-4 h-4 text-primary" /> : <MessageSquare className="w-4 h-4 text-primary" />}
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-0.5">
               <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{t.display_name}</span>
-              {t.email && (
-                <>
-                  <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
-                  <span className="text-xs text-[hsl(0_0%_55%)] truncate">{t.email}</span>
-                </>
-              )}
+              <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
+              <span className="text-xs text-primary/80 font-mono">
+                {t.order_number || 'Question générale'}
+              </span>
             </div>
             <p className="text-xs text-[hsl(0_0%_60%)] truncate">{t.last_message.substring(0, 80)}</p>
           </div>
