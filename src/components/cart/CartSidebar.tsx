@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ShoppingBag, Edit3, Gem, Save } from "lucide-react";
+import { ShoppingBag, Edit3, Gem, Save, Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -19,8 +20,11 @@ const CartSidebar = () => {
   const { items, isOpen, setIsOpen, totals, clearCart, saveForLater } = useCart();
   const navigate = useNavigate();
   const isEmpty = items.length === 0;
+  const [isNavigating, setIsNavigating] = useState(false);
 
   const handleCheckout = () => {
+    if (isNavigating) return;
+    setIsNavigating(true);
     setIsOpen(false);
     navigate('/checkout');
   };
@@ -171,14 +175,18 @@ const CartSidebar = () => {
               >
                 <Button
                   onClick={handleCheckout}
-                  className="relative w-full h-14 bg-carbon text-white font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300"
+                  disabled={isNavigating}
+                  className="relative w-full h-14 bg-carbon text-white font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {/* Luxury Glow Effect on Hover */}
                   <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
                     boxShadow: 'inset 0 0 30px rgba(147, 181, 161, 0.3)'
                   }} />
-                  <span className="relative z-10">COMMANDER</span>
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    {isNavigating && <Loader2 className="w-4 h-4 animate-spin" />}
+                    COMMANDER
+                  </span>
                 </Button>
               </motion.div>
 

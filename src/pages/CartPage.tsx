@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ShoppingBag, ArrowRight, Gem } from "lucide-react";
+import { ArrowLeft, ShoppingBag, ArrowRight, Gem, Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/useCart";
@@ -13,6 +14,13 @@ const CartPage = () => {
   const { items, totals } = useCart();
   const navigate = useNavigate();
   const isEmpty = items.length === 0;
+  const [isNavigating, setIsNavigating] = useState(false);
+
+  const handleCheckout = () => {
+    if (isNavigating) return;
+    setIsNavigating(true);
+    navigate('/checkout');
+  };
 
   return (
     <div className="min-h-screen bg-greige">
@@ -141,13 +149,16 @@ const CartPage = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Button
-                      onClick={() => navigate('/checkout')}
-                      className="relative w-full h-14 bg-carbon text-white font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300"
+                      onClick={handleCheckout}
+                      disabled={isNavigating}
+                      className="relative w-full h-14 bg-carbon text-white font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
                     >
                       <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <span className="relative z-10 flex items-center justify-center gap-2">
-                        PASSER LA COMMANDE
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        {isNavigating
+                          ? <><Loader2 className="w-5 h-5 animate-spin" /> CHARGEMENT...</>
+                          : <><span>PASSER LA COMMANDE</span><ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></>
+                        }
                       </span>
                     </Button>
                   </motion.div>

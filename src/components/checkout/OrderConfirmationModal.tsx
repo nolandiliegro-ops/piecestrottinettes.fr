@@ -164,7 +164,7 @@ const OrderConfirmationModal = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 bg-carbon/60 backdrop-blur-sm"
-          onClick={onClose}
+          onClick={isSubmitting ? undefined : onClose}
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}

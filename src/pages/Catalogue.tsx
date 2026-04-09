@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import SEO from "@/components/SEO";
 import { useSearchParams } from "react-router-dom";
+import { useAdminRole } from "@/hooks/useAdminRole";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Loader2, Sparkles, Filter } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
@@ -65,6 +66,7 @@ const EmptyState = ({ onClear }: { onClear: () => void }) => (
 );
 
 const Catalogue = () => {
+  const { isAdmin } = useAdminRole();
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
