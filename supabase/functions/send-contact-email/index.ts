@@ -89,7 +89,7 @@ const handler = async (req: Request): Promise<Response> => {
       }
     }
 
-    // 1. Notification au propriétaire
+    // 1. Notification au propriétaire (admin)
     await resend.emails.send({
       from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
       to: [SHOP_EMAIL],
@@ -111,8 +111,32 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    // 2. Accusé de réception au visiteur (uniquement si non connecté)
-    if (!user_id) {
+    // 2. Accusé de réception — pour TOUS les utilisateurs
+    if (user_id) {
+      // Utilisateur connecté → appel à send-message-notification avec le beau template
+      try {
+        const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+        const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
+        
+        await fetch(`${supabaseUrl}/functions/v1/send-message-notification`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${supabaseAnonKey}`,
+          },
+          body: JSON.stringify({
+            recipient: 'client-ack',
+            customerEmail: email,
+            customerName: name,
+            messageText: `[${subject}]\n${message}`,
+            conversationId: user_id,
+          }),
+        });
+      } catch (ackErr) {
+        console.warn("Client-ack notification failed:", ackErr);
+      }
+    } else {
+      // Visiteur non connecté → accusé simple inline
       try {
         await resend.emails.send({
           from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
