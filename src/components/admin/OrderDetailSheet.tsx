@@ -109,6 +109,101 @@ const deliveryMethodConfig: Record<string, {
   },
 };
 
+// Admin Chat Component for order messages
+const AdminOrderChat = ({ orderId, customerEmail, customerName, orderNumber }: {
+  orderId: string; customerEmail: string; customerName: string; orderNumber: string;
+}) => {
+  const { messages, isLoading } = useOrderMessages(orderId);
+  const sendMessage = useSendMessage();
+  const [input, setInput] = useState("");
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  const handleSend = async () => {
+    if (!input.trim()) return;
+    const text = input.trim();
+    setInput("");
+    
+    await sendMessage.mutateAsync({
+      orderId,
+      message: text,
+      senderType: 'admin',
+    });
+
+    // Send email notification to customer
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase.functions.invoke('send-message-notification', {
+        body: {
+          customerEmail,
+          customerName,
+          orderNumber,
+          messageText: text,
+        },
+      });
+    } catch (err) {
+      console.error("Failed to send notification email:", err);
+    }
+  };
+
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+        <MessageSquare className="w-4 h-4 text-primary" />
+        Messages client
+      </div>
+      <div className="bg-muted/30 rounded-xl p-4 space-y-3">
+        <div ref={scrollRef} className="max-h-[250px] overflow-y-auto space-y-2 scrollbar-thin">
+          {isLoading ? (
+            <div className="flex justify-center py-4"><Loader2 className="w-4 h-4 animate-spin text-primary" /></div>
+          ) : messages.length === 0 ? (
+            <p className="text-xs text-muted-foreground text-center py-3">Aucun message. Envoyez le premier !</p>
+          ) : (
+            messages.map((msg) => {
+              const isAdmin = msg.sender_type === 'admin';
+              return (
+                <div key={msg.id} className={cn("flex", isAdmin ? "justify-end" : "justify-start")}>
+                  <div className={cn(
+                    "max-w-[80%] rounded-xl px-3 py-2 text-sm",
+                    isAdmin ? "bg-primary/15 text-foreground" : "bg-background border border-border/30 text-foreground"
+                  )}>
+                    <p className="whitespace-pre-wrap">{msg.message}</p>
+                    <p className="text-[10px] text-muted-foreground mt-1">
+                      {msg.sender_type === 'admin' ? 'Admin' : 'Client'} · {format(new Date(msg.created_at), "d MMM HH:mm", { locale: fr })}
+                    </p>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+        <div className="flex items-end gap-2 pt-2 border-t border-border/20">
+          <Textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
+            placeholder="Répondre au client..."
+            rows={2}
+            className="flex-1 resize-none text-sm min-h-[60px]"
+          />
+          <Button
+            size="sm"
+            disabled={!input.trim() || sendMessage.isPending}
+            onClick={handleSend}
+          >
+            {sendMessage.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Envoyer'}
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetailSheetProps) => {
   const queryClient = useQueryClient();
   const [isUpdating, setIsUpdating] = useState(false);
