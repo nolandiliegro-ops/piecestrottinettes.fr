@@ -1,46 +1,72 @@
 
 
-# Plan — Upload d'images dans la messagerie
+# Plan — Edge Function `bulk-insert-scooters`
 
-## Diagnostic point 1 (client-ack messages généraux)
+## Réponses à tes questions
 
-Le code est déjà correct. Les logs confirment que le `client-ack` est bien envoyé pour tous les messages, y compris les généraux (`conversationId: user.id`). Aucune correction nécessaire.
+1. **Architecture** : Une Edge Function protégée par un secret API admin (pas de JWT utilisateur). Ton script local envoie un POST avec le secret dans un header, la fonction utilise `service_role` côté serveur pour bypasser le RLS.
 
-## Nouvelle fonctionnalité : Upload d'images
+2. **Edge Function** : Oui, je la crée ci-dessous.
 
-### Migration SQL
-- Ajouter colonne `image_url text` nullable sur `order_messages`
-- Créer le bucket `order-messages-images` (public)
-- RLS sur le bucket : authenticated peut upload, public peut lire
+3. **Déploiement** : Tu n'as rien à faire — les Edge Functions Lovable se déploient automatiquement quand je les crée. Pas besoin de Supabase CLI.
 
-### Fichiers modifiés (4 fichiers)
+4. **Token Lovable** : Non, il n'existe pas de CLI Lovable pour déployer. Mais ce n'est pas nécessaire — je déploie pour toi.
 
-#### 1. `src/hooks/useOrderMessages.ts`
-- Ajouter `image_url` au type `OrderMessage`
-- Ajouter param `imageUrl` au `useSendMessage`
-
-#### 2. `src/components/garage/GarageMessages.tsx`
-- **ChatView** : ajouter bouton 📎 à côté du textarea, input file caché (accept image/*, max 5MB), upload vers `order-messages-images/{userId}/{timestamp}.ext`, passer l'URL dans l'insert, afficher les images dans les bulles (thumbnail cliquable qui ouvre en grand)
-- **NewMessageForm** : même bouton 📎 + preview de l'image avant envoi
-
-#### 3. `src/components/admin/ContactMessagesManager.tsx`
-- Dans `GarageConversationView`, afficher les images dans les bulles côté admin (même rendu que côté client)
-- Ajouter `image_url` au type `OrderMsg`
-
-#### 4. `supabase/functions/send-message-notification/index.ts`
-- Ajouter champ optionnel `imageUrl` dans l'interface
-- Dans les 3 templates (client, admin, client-ack), si `imageUrl` fourni, insérer une balise `<img>` cliquable sous le message texte
-
-### Ordre d'exécution
+## Architecture finale
 
 ```text
-1. Migration SQL (colonne + bucket + RLS)           (5 min)
-2. useOrderMessages — types + param imageUrl        (3 min)
-3. GarageMessages — bouton 📎 + upload + affichage  (15 min)
-4. ContactMessagesManager — affichage images admin  (5 min)
-5. send-message-notification — image dans email     (5 min)
-6. Déployer edge function                           (2 min)
+Terminal local                    Lovable Cloud
+─────────────                    ─────────────
+node scripts/sync-scooters.js "Xiaomi"
+  │
+  ├─ POST /bulk-insert-scooters
+  │  Header: x-admin-secret: <ADMIN_BULK_SECRET>
+  │  Body: { scooters: [...], brandName: "Xiaomi" }
+  │
+  └──────────────────────────────► Edge Function
+                                    │
+                                    ├─ Vérifie x-admin-secret
+                                    ├─ Upsert brand (créer si inexistante)
+                                    ├─ Upsert scooter_models (par slug)
+                                    ├─ Upsert part_compatibility (optionnel)
+                                    └─ Retourne { inserted, updated, errors }
 ```
 
-**Total estimé : ~35 min**
+## Ce que je fais
+
+### 1. Créer un secret `ADMIN_BULK_SECRET`
+Un mot de passe aléatoire que ton script envoie dans le header `x-admin-secret`. La fonction le vérifie côté serveur. Pas de JWT nécessaire.
+
+### 2. Créer `supabase/functions/bulk-insert-scooters/index.ts`
+- Vérifie `x-admin-secret` contre le secret stocké
+- Accepte `{ brandName: string, scooters: Array<{ name, slug, specs... }> }`
+- Upsert la marque dans `brands` (ON CONFLICT slug)
+- Upsert chaque modèle dans `scooter_models` (ON CONFLICT slug)
+- Retourne un résumé `{ inserted: N, updated: N, errors: [...] }`
+- Utilise `SUPABASE_SERVICE_ROLE_KEY` pour bypasser le RLS
+
+### 3. Mettre à jour `supabase/config.toml`
+Ajouter `verify_jwt = false` pour cette fonction (l'auth est gérée par le secret custom).
+
+### 4. Créer `scripts/sync-scooters-example.js`
+Un exemple de script local que tu adaptes — il fait le POST vers l'Edge Function avec ton secret.
+
+## Utilisation côté local
+
+```bash
+export ADMIN_BULK_SECRET="le-secret-que-tu-définis"
+export SUPABASE_URL="https://kqsxscjtlipregkrmucg.supabase.co"
+node scripts/sync-scooters.js "Xiaomi"
+```
+
+Le script prépare le JSON et fait un `fetch()` vers `${SUPABASE_URL}/functions/v1/bulk-insert-scooters`.
+
+## Fichiers créés/modifiés
+
+| Fichier | Action |
+|---------|--------|
+| `supabase/functions/bulk-insert-scooters/index.ts` | Créer |
+| `supabase/config.toml` | Ajouter bloc function |
+| `scripts/sync-scooters-example.js` | Créer (exemple local) |
+| Secret `ADMIN_BULK_SECRET` | Demander à l'utilisateur de le définir |
 
