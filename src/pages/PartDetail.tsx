@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
@@ -166,6 +166,31 @@ const PartDetail = () => {
         </div>
       </div>
 
+      {/* DESKTOP: Description section below bento grid */}
+      {part.description && part.description.trim() && (
+        <div className="hidden md:block px-6 lg:px-8 pb-8">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="rounded-2xl shadow-md bg-white/60 backdrop-blur-sm border border-white/40 p-6"
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="w-5 h-5 text-[#4A7C59] shrink-0" />
+                <h2 className="font-black text-carbon uppercase tracking-tight text-lg">
+                  Présentation
+                </h2>
+              </div>
+              <div
+                className="quill-content text-carbon/80 text-sm"
+                dangerouslySetInnerHTML={{ __html: part.description }}
+              />
+            </motion.div>
+          </div>
+        </div>
+      )}
+
       {/* MOBILE: Vertical Stack Scrollable */}
       <div className="md:hidden pt-20 pb-8 px-4 space-y-4">
         {/* Back button */}
@@ -193,6 +218,27 @@ const PartDetail = () => {
           imageUrl={part.image_url}
           difficultyLevel={part.difficulty_level}
         />
+
+        {/* Description - PRÉSENTATION */}
+        {part.description && part.description.trim() && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="rounded-2xl shadow-md bg-white/60 backdrop-blur-sm border border-white/40 p-5"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <FileText className="w-4 h-4 text-[#4A7C59] shrink-0" />
+              <h2 className="font-black text-carbon uppercase tracking-tight text-base">
+                Présentation
+              </h2>
+            </div>
+            <div
+              className="quill-content text-carbon/80 text-sm"
+              dangerouslySetInnerHTML={{ __html: part.description }}
+            />
+          </motion.div>
+        )}
 
         {/* Installation Guide */}
         <InstallationGuide
