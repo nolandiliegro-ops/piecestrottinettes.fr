@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
 import SEO from "@/components/SEO";
+import { useState, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useAdminRole } from "@/hooks/useAdminRole";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,7 +24,6 @@ import { useCategories, useScooterModels } from "@/hooks/useScooterData";
 import { useAllParts } from "@/hooks/useCatalogueData";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
-import { useAdminRole } from "@/hooks/useAdminRole";
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -73,7 +72,6 @@ const Catalogue = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const queryClient = useQueryClient();
-  const { isAdmin } = useAdminRole();
 
   // Get scooter filter from URL params (e.g., ?scooter=uuid)
   const scooterIdFilter = searchParams.get("scooter");
@@ -202,7 +200,11 @@ const Catalogue = () => {
 
   return (
     <div className="min-h-screen bg-greige pb-24 md:pb-0">
-      <SEO title="Catalogue Pièces Détachées | Pièces Trottinettes" description="Parcourez notre catalogue complet de pièces détachées pour trottinettes électriques. Filtrez par catégorie et trouvez la pièce compatible avec votre modèle." />
+      <SEO
+        title="Pièces Détachées Trottinette Électrique - Catalogue Complet"
+        description="Catalogue complet de pièces détachées pour trottinettes électriques. Xiaomi, Ninebot, Kaabo, Dualtron. Pneus, freins, batteries, chargeurs. Livraison rapide."
+        canonical="https://piecestrottinettes.fr/catalogue"
+      />
       {/* Fixed Header */}
       <Header />
 
@@ -359,7 +361,7 @@ const Catalogue = () => {
         </DialogContent>
       </Dialog>
 
-      {/* Admin Floating Button - Temporarily visible for image generation */}
+      {/* Admin Floating Button - Generate category images */}
       {isAdmin && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}

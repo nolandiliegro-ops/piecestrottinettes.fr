@@ -1,5 +1,5 @@
-import { useState } from "react";
 import SEO from "@/components/SEO";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, Filter, X, Wrench } from "lucide-react";
@@ -103,9 +103,13 @@ const Tutos = () => {
         backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.4) 0%, transparent 60%)'
       }}
     >
-      <SEO title="Tutoriels & Guides | Pièces Trottinettes" description="Tutoriels vidéo et guides de réparation pour trottinettes électriques. Apprenez à installer vos pièces détachées étape par étape." />
+      <SEO
+        title="Tutoriels Réparation Trottinette Électrique"
+        description="Guides et tutoriels pour réparer votre trottinette électrique vous-même. Changer un pneu, une chambre à air, des plaquettes de frein."
+        canonical="https://piecestrottinettes.fr/tutos"
+      />
       <Header />
-      
+
       {/* Hero Section */}
       <motion.section 
         initial={{ opacity: 0 }}
@@ -153,7 +157,7 @@ const Tutos = () => {
             <span className="text-sm text-carbon/70">Filtrer par modèle :</span>
             
             <Select value={selectedScooter || 'all'} onValueChange={handleScooterChange}>
-              <SelectTrigger className="w-48 md:w-64 bg-white/60 border-mineral/20 focus:ring-mineral/30 text-sm">
+              <SelectTrigger className="w-64 bg-white/60 border-mineral/20 focus:ring-mineral/30">
                 <SelectValue placeholder="Tous les modèles" />
               </SelectTrigger>
               <SelectContent>

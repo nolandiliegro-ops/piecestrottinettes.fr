@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Truck, Wrench, RotateCcw } from "lucide-react";
@@ -41,6 +42,11 @@ const Index = () => {
         background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 50%, #F5F3F0 100%)"
       }}
     >
+      <SEO
+        title="Pièces Détachées Trottinette Électrique | Expert Marseille"
+        description="Spécialiste pièces détachées trottinettes électriques. Xiaomi, Ninebot, Kaabo, Dualtron. Compatible garanti, livraison rapide. Steedy Trott Marseille."
+        canonical="https://piecestrottinettes.fr/"
+      />
       {/* Header - Fixed at top */}
       <Header />
       

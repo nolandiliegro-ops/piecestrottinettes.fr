@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
@@ -13,32 +12,13 @@ import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import AffiliateButton from "@/components/scooter/AffiliateButton";
 import OtherScootersCarousel from "@/components/scooter/OtherScootersCarousel";
+import SEO from "@/components/SEO";
 
 const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { data: scooter, isLoading, error } = useScooterBySlug(slug);
   const { data: compatibleParts = [], isLoading: isLoadingParts } = useScooterCompatibleParts(scooter?.id || null);
 
-  // Dynamic SEO Meta Tags
-  useEffect(() => {
-    if (scooter) {
-      document.title = scooter.meta_title || `${scooter.name} - Pièces Détachées | piècestrottinettes.FR`;
-      
-      // Update meta description
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute(
-          "content",
-          scooter.meta_description || `Découvrez toutes les pièces détachées compatibles avec la ${scooter.name}. Spécifications techniques, vidéos et guides d'installation.`
-        );
-      }
-    }
-
-    // Cleanup
-    return () => {
-      document.title = "piècestrottinettes.FR";
-    };
-  }, [scooter]);
 
   if (isLoading) {
     return (
@@ -89,8 +69,30 @@ const ScooterDetail = () => {
     );
   }
 
+  const scooterSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: scooter.name,
+    image: scooter.image_url,
+    description: scooter.description,
+    brand: { "@type": "Brand", name: scooter.brand?.name ?? "Pièces Trottinettes" },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: `https://piecestrottinettes.fr/scooter/${scooter.slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background studio-luxury-bg watermark-brand">
+      <SEO
+        title={`${scooter.name} - Pièces détachées et compatibilité`}
+        description={`Trouvez toutes les pièces compatibles avec la ${scooter.name}. Freins, pneus, batteries, chargeurs. Livraison rapide sur piecestrottinettes.fr`}
+        image={scooter.image_url ?? undefined}
+        canonical={`https://piecestrottinettes.fr/scooter/${scooter.slug}`}
+        schema={scooterSchema}
+      />
       <Header />
       
       <main className="pt-16 lg:pt-20">

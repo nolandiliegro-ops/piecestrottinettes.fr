@@ -1,5 +1,5 @@
+import SEO from "@/components/SEO";
 import { useState } from 'react';
-import SEO from '@/components/SEO';
 import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -8,7 +8,6 @@ import AdminLayout from '@/components/admin/AdminLayout';
 import AdminDashboard from '@/components/admin/AdminDashboard';
 import AdminInventory from '@/components/admin/AdminInventory';
 import AdminScanner from '@/components/admin/AdminScanner';
-import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 import AdminSettings from '@/components/admin/AdminSettings';
 
 const Admin = () => {
@@ -56,11 +55,10 @@ const Admin = () => {
 
   return (
     <AdminLayout activeTab={activeTab} onTabChange={setActiveTab}>
-      <SEO title="Administration" description="Panneau d'administration" noindex />
+      <SEO noindex title="Administration" description="Back-office Pièces Trottinettes" />
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
       {activeTab === 'scanner' && <AdminScanner />}
-      {activeTab === 'messages' && <div className="p-4"><ContactMessagesManager /></div>}
       {activeTab === 'settings' && <AdminSettings />}
     </AdminLayout>
   );

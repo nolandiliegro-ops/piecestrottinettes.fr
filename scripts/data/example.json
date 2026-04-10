@@ -1,0 +1,23 @@
+[
+  {
+    "brandName": "Xiaomi",
+    "scooters": [
+      {
+        "name": "Electric Scooter 4 Pro",
+        "slug": "xiaomi-electric-scooter-4-pro",
+        "year": 2023,
+        "power_watts": 700,
+        "voltage": 36,
+        "max_speed_kmh": 25,
+        "range_km": 55,
+        "tire_type": "pneumatique",
+        "tire_size": "10\"",
+        "description": "La trottinette Xiaomi Electric Scooter 4 Pro offre une autonomie de 55 km...",
+        "meta_title": "Xiaomi Electric Scooter 4 Pro — Pièces détachées",
+        "meta_description": "Trouvez toutes les pièces détachées pour votre Xiaomi Electric Scooter 4 Pro : pneus, freins, chargeurs.",
+        "search_terms": ["xiaomi 4 pro", "trottinette xiaomi pro", "pièces scooter 4 pro"],
+        "youtube_video_id": null
+      }
+    ]
+  }
+]

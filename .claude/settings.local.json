@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l \"orders\" /c/Users/User/piecestrottinettes.fr/supabase/migrations/*.sql)",
+      "Bash(xargs ls:*)",
+      "Bash(supabase functions:*)",
+      "Bash(npx supabase:*)",
+      "Bash(node scripts/sync-scooters.js \"Xiaomi\")",
+      "Bash(node scripts/sync-scooters.js \"Xiaomi\" --update)",
+      "Bash(node scripts/sync-scooters.js \"Ninebot\")",
+      "Bash(node scripts/sync-scooters.js \"Kaabo\")",
+      "Bash(node scripts/sync-scooters.js \"Dualtron\")",
+      "Bash(node scripts/sync-scooters.js --all --update)",
+      "Bash(node scripts/sync-scooters.js --file scripts/data/dualtron.json)",
+      "Bash(node scripts/sync-scooters.js --file scripts/data/dualtron-complet.json)",
+      "Bash(sed -n '198,205p' src/pages/Catalogue.tsx)",
+      "Bash(sed -n '65,72p' src/pages/Scooters.tsx)",
+      "Bash(sed -n '96,103p' src/pages/Tutos.tsx)",
+      "Bash(sed -n '23,30p' src/pages/Pepites.tsx)",
+      "Bash(sed -n '31,38p' src/pages/Index.tsx)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

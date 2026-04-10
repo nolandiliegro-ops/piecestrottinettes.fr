@@ -1,10 +1,9 @@
 import { useParams, Link } from "react-router-dom";
-import SEO from "@/components/SEO";
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
 import Header from "@/components/Header";
+import SEO from "@/components/SEO";
 import MediaGallery from "@/components/pdp/MediaGallery";
 import PurchaseBlock from "@/components/pdp/PurchaseBlock";
 import EngineeringLab from "@/components/pdp/EngineeringLab";
@@ -71,34 +70,37 @@ const PartDetail = () => {
     );
   }
 
+  const compatibleModels = scooters.map((s) => s.name).join(", ");
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: part.name,
+    image: part.image_url,
+    description: part.description,
+    sku: (part as any).sku,
+    brand: { "@type": "Brand", name: "Pièces Trottinettes" },
+    offers: {
+      "@type": "Offer",
+      price: (part.price * 1.2).toFixed(2),
+      priceCurrency: "EUR",
+      availability:
+        part.stock_quantity > 0
+          ? "https://schema.org/InStock"
+          : "https://schema.org/OutOfStock",
+      url: `https://piecestrottinettes.fr/piece/${part.slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-greige">
       <SEO
-        title={`${part.name} | Pièces Trottinettes`}
-        description={part.description || `Achetez ${part.name} pour votre trottinette électrique. Pièce détachée compatible, livraison rapide.`}
-        image={part.image_url || undefined}
-        canonical={`https://piecestrottinettes.fr/pieces/${slug}`}
+        title={`${part.name} - Pièce compatible trottinette électrique`}
+        description={`Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. ${part.description?.slice(0, 100) ?? ""}. Livraison rapide.`}
+        image={part.image_url ?? undefined}
+        canonical={`https://piecestrottinettes.fr/piece/${part.slug}`}
+        schema={productSchema}
       />
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: part.name,
-            description: part.description || `${part.name} pour trottinette électrique`,
-            image: part.image_url || undefined,
-            offers: {
-              "@type": "Offer",
-              price: part.price ?? 0,
-              priceCurrency: "EUR",
-              availability: (part.stock_quantity ?? 0) > 0
-                ? "https://schema.org/InStock"
-                : "https://schema.org/OutOfStock",
-              url: `https://piecestrottinettes.fr/pieces/${slug}`,
-            },
-          })}
-        </script>
-      </Helmet>
       <Header />
 
       {/* DESKTOP/TABLET: 100vh Zero Scroll Bento Grid */}
