@@ -22,7 +22,7 @@ const PartDetail = () => {
     part?.id ?? null
   );
   const { data: relatedParts = [], isLoading: relatedLoading } = useRelatedParts(
-    (part as any)?.category?.id ?? (part as any)?.categories?.id ?? null,
+    part?.category_id ?? null,
     part?.id ?? null
   );
 
