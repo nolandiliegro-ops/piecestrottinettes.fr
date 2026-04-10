@@ -55,3 +55,9 @@ Propriétaire : Nolan, Steedy Trott Marseille
 
 ## Marques à faire
 - Vsett, Inokim, Zero, Hiboy, Urbanglide
+
+## Sources fiables
+
+## Fournisseurs de Nolan
+- Pièces détachées : https://www.wattiz.fr (B2B, 2000+ refs)
+- Trottinettes : https://www.volt-corp.com
