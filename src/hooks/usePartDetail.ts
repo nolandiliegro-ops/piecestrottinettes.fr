@@ -95,6 +95,7 @@ export const useRelatedParts = (
         const { data, error } = await supabase
           .from("parts")
           .select("id, name, slug, price, image_url, stock_quantity")
+          .eq("published", true)
           .eq("category_id", categoryId!)
           .neq("id", currentPartId!)
           .in("id", ids)
