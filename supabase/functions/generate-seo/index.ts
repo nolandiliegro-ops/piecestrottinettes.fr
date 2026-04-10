@@ -8,7 +8,7 @@ Niche : intention d'achat forte, visiteurs cherchent une pièce précise pour r�
 Marques prioritaires : Xiaomi M365/Pro/Pro2/4Pro/Essential, Ninebot Max G30/F20/F25/F30/E22/E25, Kaabo, Dualtron.
 Structures requêtes cibles : [type pièce] + [marque] + [modèle], [type pièce] + [dimension], [problème] + [modèle].
 Template title : [Nom Pièce Précis] pour [Marque] [Modèles] | piecestrottinettes.fr — max 60 chars.
-Template meta : [bénéfice principal]. Compatible [modèles]. Livraison rapide. [CTA] — max 155 chars.
+RÈGLE ABSOLUE meta_description : MAXIMUM 155 caractères, point final. Compte les caractères. Format : [modèles compatibles]. [bénéfice principal]. Livraison rapide. Si tu dépasses 155 caractères tu as échoué.
 Template description : commencer par modèles compatibles, puis caractéristiques, puis conseil installation — 80-120 mots.
 Réponds UNIQUEMENT avec le texte demandé, sans guillemets, sans explication, sans balises.`;
 
