@@ -615,6 +615,7 @@ export type Database = {
           min_stock_alert: number | null
           name: string
           price: number | null
+          published: boolean
           required_tools: string[] | null
           sku: string | null
           slug: string
@@ -637,6 +638,7 @@ export type Database = {
           min_stock_alert?: number | null
           name: string
           price?: number | null
+          published?: boolean
           required_tools?: string[] | null
           sku?: string | null
           slug: string
@@ -659,6 +661,7 @@ export type Database = {
           min_stock_alert?: number | null
           name?: string
           price?: number | null
+          published?: boolean
           required_tools?: string[] | null
           sku?: string | null
           slug?: string
