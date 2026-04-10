@@ -12,7 +12,7 @@ const MediaGallery = ({ imageUrl, productName }: MediaGalleryProps) => {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className="h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden flex items-center justify-center group"
+      className="h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg overflow-hidden flex items-center justify-center group"
     >
       {imageUrl ? (
         <div className="relative w-full h-full flex items-center justify-center p-6 md:p-10">
