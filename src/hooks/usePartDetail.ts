@@ -74,10 +74,34 @@ export const usePartBySlug = (slug: string | undefined) => {
   });
 };
 
-export const useRelatedParts = (categoryId: string | null, currentPartId: string | null) => {
+export const useRelatedParts = (
+  categoryId: string | null,
+  currentPartId: string | null,
+  scooterModelId?: string | null
+) => {
   return useQuery({
-    queryKey: ["related-parts", categoryId, currentPartId],
+    queryKey: ["related-parts", categoryId, currentPartId, scooterModelId],
     queryFn: async () => {
+      if (scooterModelId) {
+        const { data: compatibleIds } = await supabase
+          .from("part_compatibility")
+          .select("part_id")
+          .eq("scooter_model_id", scooterModelId);
+
+        const ids = (compatibleIds || []).map((c) => c.part_id);
+        if (ids.length === 0) return [];
+
+        const { data, error } = await supabase
+          .from("parts")
+          .select("id, name, slug, price, image_url, stock_quantity")
+          .eq("category_id", categoryId!)
+          .neq("id", currentPartId!)
+          .in("id", ids)
+          .limit(4);
+        if (error) throw error;
+        return data ?? [];
+      }
+
       const { data, error } = await supabase
         .from("parts")
         .select("id, name, slug, price, image_url, stock_quantity")
