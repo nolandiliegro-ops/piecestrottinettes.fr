@@ -1,123 +1,78 @@
 
 
-# Complete Redesign — PartDetail Product Page
+# PartDetail Page — Clean Stacked Layout Redesign
 
-## Critical Bugs to Fix
+## Layout Structure
 
-### 1. Bento Grid Overlap (PRÉSENTATION vs PurchaseBlock)
-The current grid uses `grid-cols-4 grid-rows-[500px_280px]` — all 4 columns are equal width (25% each). The MediaGallery takes `col-span-2` (50%), but PurchaseBlock and PRÉSENTATION each get only 25%, which is too narrow for the PurchaseBlock content, causing visual overlap. Fix: switch Row 1 to a proper 3-column layout with explicit fractional widths: `grid-template-columns: 2fr 1fr 1fr`.
+```text
+┌──────────────────────────────────────────┐
+│ ← Retour au catalogue                   │
+├───────────────────────┬──────────────────┤
+│                       │  Category Badge  │
+│   MediaGallery        │  Product Name    │
+│   (60% - col-span-3)  │  Price TTC 4xl   │
+│   shadow-lg rounded   │  Stock status    │
+│                       │  AJOUTER button  │
+│                       │  J'AI INSTALLÉ   │
+├───────────────────────┴──────────────────┤
+│  Install  │  Lab  │  Compat  │  Workshop │
+│  min-h-200px each, green icons, equal h  │
+├──────────────────────────────────────────┤
+│  PRÉSENTATION — full width white card    │
+│  green left bar + green underline title  │
+│  text #374151, leading-[1.8]             │
+├──────────────────────────────────────────┤
+│  VIDÉO D'INSTALLATION (conditional)      │
+├──────────────────────────────────────────┤
+│  VOUS POURRIEZ AUSSI AVOIR BESOIN DE     │
+│  4-col grid, hover scale-105, green price│
+└──────────────────────────────────────────┘
+```
 
-### 2. Related Products Title Overlap
-The sections below the bento grid (`space-y-12`) sit in a sibling div without enough top margin. The title "VOUS POURRIEZ AUSSI AVOIR BESOIN DE" can visually collide with the last bento row. Fix: add `mt-12` to the below-bento container and use `max-w-7xl mx-auto` consistently.
-
-### 3. Related Products Prices
-Already correct in `RelatedProducts.tsx` (line 109: `formatPrice(part.price * 1.2)`). The `useRelatedParts` hook fetches `price` (HT from DB). The display uses `* 1.2` for TTC. If prices look wrong, it's because the DB stores HT values. This is actually correct — no code change needed here.
-
-### 4. Related Products Scooter Compatibility Filter
-Currently `useRelatedParts` only filters by `category_id`. Need to add an optional `scooterModelId` parameter — when a scooter is selected in `ScooterContext`, filter related parts through the `part_compatibility` join table.
-
----
+Mobile: same order, all stacked single-column with `space-y-6`.
 
 ## Files to Modify
 
-### File 1: `src/pages/PartDetail.tsx` — Full layout rewrite
+### 1. `src/pages/PartDetail.tsx` — Full rewrite
 
-**Desktop layout:**
-- Row 1: CSS Grid with `grid-template-columns: 2fr 1fr 1fr` and fixed height `500px`
-  - Col 1: MediaGallery (50% width)
-  - Col 2: PurchaseBlock (25%)
-  - Col 3: PRÉSENTATION card with green accent bar, scrollable overflow (25%) — or empty placeholder if no description
-- Row 2: 4 equal columns, auto height (~280px)
-  - InstallationGuide | EngineeringLab | CompatibilityMatrix | WorkshopSection
-- Below grid (full-width, natural scroll):
-  - VideoInstallation (conditional on `youtube_video_id`)
-  - RelatedProducts
+Replace the bento grid with a clean vertical stack:
 
-**Mobile layout:**
-- Keep vertical stack with `space-y-6`
-- Order: Back link → MediaGallery → PurchaseBlock → PRÉSENTATION → YouTube Video → InstallationGuide → EngineeringLab → CompatibilityMatrix → WorkshopSection → RelatedProducts
-- Remove `min-h-[300px]` wrapper around WorkshopSection
+- **Hero row**: `grid-cols-5` → MediaGallery `col-span-3` (60%) wrapped in `rounded-2xl shadow-lg` container, PurchaseBlock `col-span-2` (40%)
+- **No fixed heights** — natural content flow, no `h-[500px]`, no `overflow-hidden`
+- **4 tech cards**: `grid-cols-2 lg:grid-cols-4` with `min-h-[200px]` wrappers
+- **PRÉSENTATION**: Full-width section below tech cards with `border-l-4 border-l-[#4A7C59]`, title followed by `border-b-2 border-[#4A7C59] w-12 mb-6` green underline, text in `text-[#374151] leading-[1.8]`
+- **YouTube + Related Products**: Full-width sections below
+- **Section animations**: Each section uses `whileInView` with staggered `custom` index (0.1s delay per section)
+- All sections wrapped in `max-w-7xl mx-auto px-4 md:px-8` with `py-8` between them
 
-**Import `useSelectedScooter`** from ScooterContext to pass selected scooter ID to `useRelatedParts`.
+### 2. `src/components/pdp/RelatedProducts.tsx` — Card polish
 
-### File 2: `src/hooks/usePartDetail.ts` — Update `useRelatedParts`
+- Add `hover:scale-105 transition-transform duration-300` on each card Link
+- Product name: change `font-bold` → `font-semibold`
+- Price: change color from `text-[hsl(var(--mineral))]` → `text-[#4A7C59]`
+- Orange button: keep existing `bg-[#FF6600]`, already full width — add text "Ajouter" always visible (remove `hidden sm:inline`)
 
-Add optional `scooterModelId` parameter. When provided, use a two-step query:
-1. Get part IDs compatible with the selected scooter from `part_compatibility`
-2. Filter the category query to only include those part IDs
+### 3. `src/components/pdp/PurchaseBlock.tsx` — Premium polish
 
-```ts
-export const useRelatedParts = (
-  categoryId: string | null,
-  currentPartId: string | null,
-  scooterModelId?: string | null
-) => {
-  return useQuery({
-    queryKey: ["related-parts", categoryId, currentPartId, scooterModelId],
-    queryFn: async () => {
-      if (scooterModelId) {
-        // Get compatible part IDs first
-        const { data: compatibleIds } = await supabase
-          .from("part_compatibility")
-          .select("part_id")
-          .eq("scooter_model_id", scooterModelId);
-        
-        const ids = (compatibleIds || []).map(c => c.part_id);
-        if (ids.length === 0) return [];
-        
-        const { data, error } = await supabase
-          .from("parts")
-          .select("id, name, slug, price, image_url, stock_quantity")
-          .eq("category_id", categoryId!)
-          .neq("id", currentPartId!)
-          .in("id", ids)
-          .limit(4);
-        if (error) throw error;
-        return data ?? [];
-      }
-      
-      // Fallback: no scooter filter
-      const { data, error } = await supabase
-        .from("parts")
-        .select("id, name, slug, price, image_url, stock_quantity")
-        .eq("category_id", categoryId!)
-        .neq("id", currentPartId!)
-        .limit(4);
-      if (error) throw error;
-      return data ?? [];
-    },
-    enabled: !!categoryId && !!currentPartId,
-  });
-};
-```
+- Price display: change from `text-3xl md:text-4xl font-light` → `text-4xl font-black text-[#1A1A1A]`
+- Show TTC price: `formatPrice(price * 1.2)` instead of `formatPrice(price)`
+- Category badge: ensure green styling `bg-[#4A7C59]/10 text-[#4A7C59]`
+- Padding already `p-6 md:p-8` — confirmed OK
 
-### File 3: `src/components/pdp/RelatedProducts.tsx` — Minor polish
+### 4. `src/components/pdp/MediaGallery.tsx` — Shadow + cover
 
-- Already correct on price display (`part.price * 1.2`)
-- Already has orange CTA, cart icon, staggered animations
-- No major changes needed — just ensure `max-w-7xl mx-auto` wrapper is present
-
-### File 4: `src/components/pdp/VideoInstallation.tsx` — No changes needed
-
-Already implements the YouTube embed with proper styling.
-
----
+- Add `shadow-lg` to the outer container
+- Change image from `object-contain` → `object-contain` (keep contain for product photos — cover would crop them badly)
+- The parent in PartDetail wraps it with `shadow-lg rounded-2xl` for the drop shadow effect
 
 ## Design System Compliance
 
-All elements will use:
-- `bg-[hsl(var(--greige))]` background (#F5F0E8)
-- `border-l-4 border-l-[#4A7C59]` green accent on PRÉSENTATION
-- `bg-[#FF6600] hover:bg-[#E55C00]` orange CTA on related product cards
-- `font-black uppercase tracking-tight` for section titles
-- `rounded-2xl shadow-md bg-white/70 backdrop-blur-sm` for cards
-- `min-h-[44px]` on all interactive elements
-- `whileInView` framer-motion scroll reveals
-
-## Summary of Changes
-| File | Change |
-|------|--------|
-| `src/pages/PartDetail.tsx` | Fix grid to `2fr 1fr 1fr`, fix section spacing, pass scooter filter |
-| `src/hooks/usePartDetail.ts` | Add scooter compatibility filter to `useRelatedParts` |
-| `src/components/pdp/RelatedProducts.tsx` | Minor cleanup only |
+- Background: `#F5F0E8` on page container
+- Green accent: `#4A7C59` on badges, borders, price text, title underlines
+- Orange CTA: `#FF6600` / hover `#E55C00` on add-to-cart buttons
+- Text: `#1A1A1A` for titles, `#374151` for body
+- Titles: `font-black uppercase tracking-tight`
+- Cards: `rounded-2xl shadow-md bg-white/70 backdrop-blur-sm`
+- Touch targets: `min-h-[44px]` on all buttons
+- Animations: `whileInView` with 0.1s stagger delay between sections
 
