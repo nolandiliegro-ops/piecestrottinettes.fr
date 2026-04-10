@@ -21,7 +21,7 @@ const sectionVariants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.1, ease: [0.32, 0.72, 0, 1] },
+    transition: { duration: 0.5, delay: i * 0.1, ease: [0.32, 0.72, 0, 1] as [number, number, number, number] },
   }),
 };
 
