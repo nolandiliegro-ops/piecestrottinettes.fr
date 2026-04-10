@@ -95,7 +95,7 @@ const PurchaseBlock = ({
         {categoryName && (
           <Badge
             variant="secondary"
-            className="bg-mineral/10 text-mineral border-mineral/20 font-montserrat text-xs uppercase tracking-wider"
+            className="bg-[#4A7C59]/10 text-[#4A7C59] border-[#4A7C59]/20 font-montserrat text-xs uppercase tracking-wider"
           >
             {categoryName}
           </Badge>
@@ -109,8 +109,8 @@ const PurchaseBlock = ({
         {/* Price */}
         {price !== null && (
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl md:text-4xl font-light text-mineral tracking-wide">
-              {formatPrice(price)}
+            <span className="text-4xl font-black text-[#1A1A1A]">
+              {formatPrice(price * 1.2)}
             </span>
           </div>
         )}

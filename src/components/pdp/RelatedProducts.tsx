@@ -80,7 +80,7 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
           >
             <Link
               to={`/piece/${part.slug}`}
-              className="group block h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 overflow-hidden hover:shadow-xl transition-all duration-300"
+              className="group block h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               {/* Image */}
               <div className="aspect-square bg-[hsl(var(--muted))] overflow-hidden">
@@ -100,12 +100,12 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
 
               {/* Info */}
               <div className="p-4 flex flex-col gap-2">
-                <h3 className="font-bold text-[hsl(var(--carbon))] text-sm leading-tight line-clamp-2 min-h-[2.5rem]">
+                <h3 className="font-semibold text-[hsl(var(--carbon))] text-sm leading-tight line-clamp-2 min-h-[2.5rem]">
                   {part.name}
                 </h3>
 
                 {part.price != null && (
-                  <p className="font-black text-[hsl(var(--mineral))] text-lg">
+                  <p className="font-black text-[#4A7C59] text-lg">
                     {formatPrice(part.price * 1.2)}
                   </p>
                 )}
@@ -116,7 +116,7 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
                   className="mt-auto min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   <ShoppingCart className="w-4 h-4" />
-                  <span className="hidden sm:inline">Ajouter</span>
+                  <span>Ajouter</span>
                 </button>
               </div>
             </Link>
