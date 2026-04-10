@@ -1,54 +1,73 @@
 
 
-# Système de validation Bot Import pour les pièces
+# Deploy bulk-insert-parts Edge Function
 
-## Vue d'ensemble
-Reproduire le workflow de validation des trottinettes (`PendingScootersManager`) pour les pièces détachées, avec colonne `published`, filtrage des requêtes publiques, et nouvel onglet admin.
+## What needs to happen
 
-## Changements
+The `bulk-insert-parts` edge function doesn't exist in the codebase yet. It needs to be created (modeled after the working `bulk-insert-scooters` function) and deployed, along with the local sync script.
 
-### 1. Migration DB — Ajouter colonne `published` à `parts`
-```sql
-ALTER TABLE public.parts ADD COLUMN IF NOT EXISTS published boolean NOT NULL DEFAULT true;
+## Files to create
+
+### 1. `supabase/functions/bulk-insert-parts/index.ts` — New Edge Function
+
+Modeled on `bulk-insert-scooters`, adapted for the `parts` table:
+
+- **Auth**: `x-admin-secret` header checked against `ADMIN_BULK_SECRET`
+- **Client**: service_role to bypass RLS
+- **Input**: `{ categoryName, categorySlug?, parts: [...] }`
+- **Category handling**: Upsert category by slug (like brand upsert in scooters)
+- **Part upsert**: For each part, upsert into `parts` table on conflict `slug` with `published: false`
+- **Fields mapped**: `name`, `slug`, `price`, `image_url`, `description`, `stock_quantity`, `difficulty_level`, `sku`, `meta_title`, `meta_description`, `youtube_video_id`, `estimated_install_time_minutes`, `required_tools`, `technical_metadata`
+- **Response**: `{ success, category, results: { inserted, updated, errors } }`
+
+### 2. `supabase/config.toml` — Add function config
+
+Add `[functions.bulk-insert-parts]` with `verify_jwt = false` (same as bulk-insert-scooters).
+
+### 3. `scripts/sync-parts.js` — Local import script
+
+Clone of `sync-scooters.js` adapted for parts:
+- Reads JSON from `--file` argument
+- POSTs to `bulk-insert-parts` endpoint with `x-admin-secret` header
+- Logs inserted/updated/errors
+
+### 4. Deploy the function
+
+Use the deploy tool to push `bulk-insert-parts` to the server.
+
+### 5. Test the deployed function
+
+Curl the endpoint to verify it responds correctly.
+
+## JSON format for part imports
+
+```json
+{
+  "categoryName": "Pneus",
+  "categorySlug": "pneus",
+  "parts": [{
+    "name": "Pneu 10x2.5 Wattiz",
+    "slug": "pneu-10x2-5-wattiz",
+    "price": 15.00,
+    "stock_quantity": 0,
+    "difficulty_level": 2,
+    "description": "<p>Description HTML</p>",
+    "meta_title": "Pneu 10x2.5 | PiècesTrottinettes.fr",
+    "meta_description": "155 chars max",
+    "technical_metadata": {
+      "sources": ["https://example.com"]
+    }
+  }]
+}
 ```
-Défaut `true` pour ne pas casser les pièces existantes. Les imports bot mettront `published = false`.
 
-### 2. `src/components/admin/PendingPartsManager.tsx` — Nouveau composant
-Calqué sur `PendingScootersManager` (377 lignes). Fonctionnalités :
-- **Hook `usePendingParts`** : query `parts` WHERE `published = false`, join `category:categories(id, name)`
-- **Carte par pièce** : image preview, badge Bot violet, nom, catégorie, prix HT, specs (difficulté, stock)
-- **Sources web** : liens cliquables extraits de `technical_metadata.sources`
-- **Bouton image inline** : édition rapide de `image_url`
-- **Bouton Éditer** : modale complète avec tous les champs (nom, slug, prix, stock, description, category_id, difficulty_level, youtube_video_id, sku, meta_title, meta_description, image_url)
-- **Bouton Publier** : `update({ published: true })`
-- **Bouton Supprimer** : avec confirmation AlertDialog
-- **Bouton "Tout publier"** : publish all pending en un clic
-- Export du hook `usePendingParts` pour le badge compteur
+## Files summary
 
-### 3. `src/components/admin/AdminInventory.tsx` — Ajouter onglet
-Ajouter un 4ème onglet "Pièces Bot" avec :
-- Icône `Bot` + badge compteur violet (comme Bot Import)
-- Import de `PendingPartsManager` et `usePendingParts`
-
-### 4. Filtrer `published = true` sur les requêtes publiques
-Fichiers à modifier (ajout `.eq('published', true)`) :
-- `src/hooks/useCatalogueData.ts` — `useAllParts`
-- `src/hooks/usePartDetail.ts` — `usePartDetail` + `useRelatedParts`
-- `src/hooks/useCompatibleParts.ts` — query parts par IDs
-- `src/hooks/useUnifiedSearch.ts` — recherche globale parts
-- `src/components/garage/QuickAddModificationDialog.tsx` — recherche garage
-
-**NE PAS filtrer** dans les composants admin (`PartsManager`, `AdminDashboard`, `CompatibilityManager`, `AdminScanner`) qui doivent voir toutes les pièces.
-
-## Fichiers touchés
-| Fichier | Action |
-|---------|--------|
-| Migration SQL | Ajouter colonne `published` |
-| `src/components/admin/PendingPartsManager.tsx` | Nouveau composant |
-| `src/components/admin/AdminInventory.tsx` | Ajouter onglet "Pièces Bot" |
-| `src/hooks/useCatalogueData.ts` | Filtrer `published = true` |
-| `src/hooks/usePartDetail.ts` | Filtrer `published = true` |
-| `src/hooks/useCompatibleParts.ts` | Filtrer `published = true` |
-| `src/hooks/useUnifiedSearch.ts` | Filtrer `published = true` |
-| `src/components/garage/QuickAddModificationDialog.tsx` | Filtrer `published = true` |
+| File | Action |
+|------|--------|
+| `supabase/functions/bulk-insert-parts/index.ts` | Create |
+| `supabase/config.toml` | Add function config block |
+| `scripts/sync-parts.js` | Create |
+| Deploy `bulk-insert-parts` | Via deploy tool |
+| Test endpoint | Via curl tool |
 
