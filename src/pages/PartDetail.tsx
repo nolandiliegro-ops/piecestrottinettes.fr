@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
+import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/usePartDetail";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
 import MediaGallery from "@/components/pdp/MediaGallery";
@@ -10,6 +10,8 @@ import EngineeringLab from "@/components/pdp/EngineeringLab";
 import InstallationGuide from "@/components/pdp/InstallationGuide";
 import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
 import WorkshopSection from "@/components/pdp/WorkshopSection";
+import VideoInstallation from "@/components/pdp/VideoInstallation";
+import RelatedProducts from "@/components/pdp/RelatedProducts";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 
@@ -19,11 +21,15 @@ const PartDetail = () => {
   const { data: scooters = [], isLoading: scootersLoading } = useCompatibleScooters(
     part?.id ?? null
   );
+  const { data: relatedParts = [], isLoading: relatedLoading } = useRelatedParts(
+    (part as any)?.category?.id ?? (part as any)?.categories?.id ?? null,
+    part?.id ?? null
+  );
 
   // Loading state
   if (partLoading) {
     return (
-      <div className="min-h-screen bg-greige">
+      <div className="min-h-screen bg-[hsl(var(--greige))]">
         <Header />
         <div className="pt-20 px-4 md:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
@@ -44,7 +50,7 @@ const PartDetail = () => {
   // Error state
   if (error || !part) {
     return (
-      <div className="min-h-screen bg-greige">
+      <div className="min-h-screen bg-[hsl(var(--greige))]">
         <Header />
         <div className="pt-24 px-4 flex flex-col items-center justify-center">
           <motion.div
@@ -52,14 +58,14 @@ const PartDetail = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <h1 className="font-display text-4xl text-carbon mb-4">
+            <h1 className="font-display text-4xl text-[hsl(var(--carbon))] mb-4">
               Pièce introuvable
             </h1>
-            <p className="text-carbon/60 mb-8">
+            <p className="text-[hsl(var(--carbon))]/60 mb-8">
               Cette pièce n'existe pas ou a été retirée du catalogue.
             </p>
             <Link to="/catalogue">
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2 min-h-[44px]">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au catalogue
               </Button>
@@ -82,10 +88,10 @@ const PartDetail = () => {
     brand: { "@type": "Brand", name: "Pièces Trottinettes" },
     offers: {
       "@type": "Offer",
-      price: (part.price * 1.2).toFixed(2),
+      price: (part.price! * 1.2).toFixed(2),
       priceCurrency: "EUR",
       availability:
-        part.stock_quantity > 0
+        part.stock_quantity! > 0
           ? "https://schema.org/InStock"
           : "https://schema.org/OutOfStock",
       url: `https://piecestrottinettes.fr/piece/${part.slug}`,
@@ -93,7 +99,7 @@ const PartDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-greige">
+    <div className="min-h-screen bg-[hsl(var(--greige))]">
       <SEO
         title={`${part.name} - Pièce compatible trottinette électrique`}
         description={`Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. ${part.description?.slice(0, 100) ?? ""}. Livraison rapide.`}
@@ -103,22 +109,22 @@ const PartDetail = () => {
       />
       <Header />
 
-      {/* DESKTOP/TABLET: 100vh Zero Scroll Bento Grid */}
-      <div className="hidden md:flex flex-col h-screen pt-16">
+      {/* DESKTOP/TABLET */}
+      <div className="hidden md:block pt-16">
         {/* Back button */}
         <div className="px-6 lg:px-8 py-4">
           <Link
             to="/catalogue"
-            className="inline-flex items-center gap-2 text-carbon/60 hover:text-carbon transition-colors"
+            className="inline-flex items-center gap-2 text-[hsl(var(--carbon))]/60 hover:text-[hsl(var(--carbon))] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm font-medium">Retour au catalogue</span>
           </Link>
         </div>
 
-        {/* Bento Grid Container */}
-        <div className="flex-1 px-6 lg:px-8 pb-6 overflow-hidden">
-          <div className="h-full max-w-7xl mx-auto grid grid-cols-4 grid-rows-[1.6fr_1fr] gap-4 lg:gap-6">
+        {/* Bento Grid — natural height, scrollable */}
+        <div className="px-6 lg:px-8 pb-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-4 grid-rows-[500px_280px] gap-4 lg:gap-6">
             {/* Row 1 */}
             <div className="col-span-2 row-span-1">
               <MediaGallery imageUrl={part.image_url} productName={part.name} />
@@ -137,7 +143,7 @@ const PartDetail = () => {
             </div>
 
             {/* Description — PRÉSENTATION */}
-            {part.description && part.description.trim() && (
+            {part.description && part.description.trim() ? (
               <div className="col-span-1 row-span-1">
                 <motion.div
                   initial={{ opacity: 0, y: 24 }}
@@ -146,7 +152,7 @@ const PartDetail = () => {
                   transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
                   className="h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 overflow-y-auto border-l-4 border-l-[#4A7C59]"
                 >
-                  <h2 className="font-black text-carbon uppercase tracking-tight text-lg mb-4">
+                  <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-lg mb-4">
                     Présentation
                   </h2>
                   <div
@@ -155,9 +161,11 @@ const PartDetail = () => {
                   />
                 </motion.div>
               </div>
+            ) : (
+              <div className="col-span-1 row-span-1" />
             )}
 
-            {/* Row 2 - 4 columns */}
+            {/* Row 2 */}
             <div className="col-span-1 row-span-1">
               <InstallationGuide
                 difficultyLevel={part.difficulty_level}
@@ -185,20 +193,34 @@ const PartDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Sections below bento grid — scrollable */}
+        <div className="px-6 lg:px-8 space-y-12 pb-16">
+          {/* YouTube Video */}
+          {part.youtube_video_id && (
+            <VideoInstallation
+              youtubeVideoId={part.youtube_video_id}
+              productName={part.name}
+            />
+          )}
+
+          {/* Related Products */}
+          <RelatedProducts parts={relatedParts} isLoading={relatedLoading} />
+        </div>
       </div>
 
       {/* MOBILE: Vertical Stack Scrollable */}
-      <div className="md:hidden pt-20 pb-8 px-4 space-y-4">
+      <div className="md:hidden pt-20 pb-12 px-4 space-y-6">
         {/* Back button */}
         <Link
           to="/catalogue"
-          className="inline-flex items-center gap-2 text-carbon/60 hover:text-carbon transition-colors mb-2"
+          className="inline-flex items-center gap-2 text-[hsl(var(--carbon))]/60 hover:text-[hsl(var(--carbon))] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span className="text-sm font-medium">Retour au catalogue</span>
         </Link>
 
-        {/* Media Gallery - Square aspect on mobile */}
+        {/* Media Gallery */}
         <div className="aspect-square">
           <MediaGallery imageUrl={part.image_url} productName={part.name} />
         </div>
@@ -224,7 +246,7 @@ const PartDetail = () => {
             transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
             className="rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 border-l-4 border-l-[#4A7C59]"
           >
-            <h2 className="font-black text-carbon uppercase tracking-tight text-base mb-4">
+            <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-base mb-4">
               Présentation
             </h2>
             <div
@@ -232,6 +254,14 @@ const PartDetail = () => {
               dangerouslySetInnerHTML={{ __html: part.description }}
             />
           </motion.div>
+        )}
+
+        {/* YouTube Video */}
+        {part.youtube_video_id && (
+          <VideoInstallation
+            youtubeVideoId={part.youtube_video_id}
+            productName={part.name}
+          />
         )}
 
         {/* Installation Guide */}
@@ -250,13 +280,16 @@ const PartDetail = () => {
         {/* Compatibility Matrix */}
         <CompatibilityMatrix scooters={scooters} isLoading={scootersLoading} />
 
-        {/* Workshop Section */}
+        {/* Workshop */}
         <div className="min-h-[300px]">
           <WorkshopSection
             youtubeVideoId={part.youtube_video_id}
             productName={part.name}
           />
         </div>
+
+        {/* Related Products */}
+        <RelatedProducts parts={relatedParts} isLoading={relatedLoading} />
       </div>
     </div>
   );

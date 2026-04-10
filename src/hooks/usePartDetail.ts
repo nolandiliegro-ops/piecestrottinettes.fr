@@ -72,6 +72,23 @@ export const usePartBySlug = (slug: string | undefined) => {
   });
 };
 
+export const useRelatedParts = (categoryId: string | null, currentPartId: string | null) => {
+  return useQuery({
+    queryKey: ["related-parts", categoryId, currentPartId],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("parts")
+        .select("id, name, slug, price, image_url, stock_quantity")
+        .eq("category_id", categoryId!)
+        .neq("id", currentPartId!)
+        .limit(4);
+      if (error) throw error;
+      return data ?? [];
+    },
+    enabled: !!categoryId && !!currentPartId,
+  });
+};
+
 export const useCompatibleScooters = (partId: string | null) => {
   return useQuery({
     queryKey: ["compatible-scooters", partId],
