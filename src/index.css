@@ -553,16 +553,24 @@ html {
 .quill-content p {
   margin-bottom: 0.75rem;
   line-height: 1.7;
+  color: #1A1A1A;
 }
 
 .quill-content strong {
   font-weight: 700;
+  color: #0d0d0d;
 }
 
 .quill-content ul,
 .quill-content ol {
   padding-left: 1.5rem;
   margin-bottom: 0.75rem;
+  color: #1A1A1A;
+}
+
+.quill-content li {
+  margin-bottom: 0.25rem;
+  line-height: 1.7;
 }
 
 .quill-content ul {

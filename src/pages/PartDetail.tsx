@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, FileText } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters } from "@/hooks/usePartDetail";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
@@ -136,6 +136,27 @@ const PartDetail = () => {
               />
             </div>
 
+            {/* Description — PRÉSENTATION */}
+            {part.description && part.description.trim() && (
+              <div className="col-span-1 row-span-1">
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
+                  className="h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 overflow-y-auto border-l-4 border-l-[#4A7C59]"
+                >
+                  <h2 className="font-black text-carbon uppercase tracking-tight text-lg mb-4">
+                    Présentation
+                  </h2>
+                  <div
+                    className="quill-content text-[#1A1A1A] text-sm leading-[1.7]"
+                    dangerouslySetInnerHTML={{ __html: part.description }}
+                  />
+                </motion.div>
+              </div>
+            )}
+
             {/* Row 2 - 4 columns */}
             <div className="col-span-1 row-span-1">
               <InstallationGuide
@@ -166,31 +187,6 @@ const PartDetail = () => {
         </div>
       </div>
 
-      {/* DESKTOP: Description section below bento grid */}
-      {part.description && part.description.trim() && (
-        <div className="hidden md:block px-6 lg:px-8 pb-8">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              className="rounded-2xl shadow-md bg-white/60 backdrop-blur-sm border border-white/40 p-6"
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <FileText className="w-5 h-5 text-[#4A7C59] shrink-0" />
-                <h2 className="font-black text-carbon uppercase tracking-tight text-lg">
-                  Présentation
-                </h2>
-              </div>
-              <div
-                className="quill-content text-carbon/80 text-sm"
-                dangerouslySetInnerHTML={{ __html: part.description }}
-              />
-            </motion.div>
-          </div>
-        </div>
-      )}
-
       {/* MOBILE: Vertical Stack Scrollable */}
       <div className="md:hidden pt-20 pb-8 px-4 space-y-4">
         {/* Back button */}
@@ -219,22 +215,20 @@ const PartDetail = () => {
           difficultyLevel={part.difficulty_level}
         />
 
-        {/* Description - PRÉSENTATION */}
+        {/* Description — PRÉSENTATION */}
         {part.description && part.description.trim() && (
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="rounded-2xl shadow-md bg-white/60 backdrop-blur-sm border border-white/40 p-5"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
+            className="rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 border-l-4 border-l-[#4A7C59]"
           >
-            <div className="flex items-center gap-2 mb-3">
-              <FileText className="w-4 h-4 text-[#4A7C59] shrink-0" />
-              <h2 className="font-black text-carbon uppercase tracking-tight text-base">
-                Présentation
-              </h2>
-            </div>
+            <h2 className="font-black text-carbon uppercase tracking-tight text-base mb-4">
+              Présentation
+            </h2>
             <div
-              className="quill-content text-carbon/80 text-sm"
+              className="quill-content text-[#1A1A1A] text-sm leading-[1.7]"
               dangerouslySetInnerHTML={{ __html: part.description }}
             />
           </motion.div>
