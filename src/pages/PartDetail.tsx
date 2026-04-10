@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/usePartDetail";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
 import MediaGallery from "@/components/pdp/MediaGallery";
@@ -21,12 +22,13 @@ const PartDetail = () => {
   const { data: scooters = [], isLoading: scootersLoading } = useCompatibleScooters(
     part?.id ?? null
   );
+  const { selectedScooter } = useSelectedScooter();
   const { data: relatedParts = [], isLoading: relatedLoading } = useRelatedParts(
     part?.category_id ?? null,
-    part?.id ?? null
+    part?.id ?? null,
+    selectedScooter?.id ?? null
   );
 
-  // Loading state
   if (partLoading) {
     return (
       <div className="min-h-screen bg-[hsl(var(--greige))]">
@@ -35,11 +37,8 @@ const PartDetail = () => {
           <div className="max-w-7xl mx-auto">
             <Skeleton className="h-10 w-48 mb-6" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <Skeleton className="col-span-2 aspect-square md:aspect-auto md:h-[50vh] rounded-2xl" />
-              <Skeleton className="h-64 md:h-[50vh] rounded-2xl" />
-              <Skeleton className="h-48 rounded-2xl" />
-              <Skeleton className="h-48 rounded-2xl" />
-              <Skeleton className="h-48 rounded-2xl" />
+              <Skeleton className="col-span-2 aspect-square md:aspect-auto md:h-[500px] rounded-2xl" />
+              <Skeleton className="h-64 md:h-[500px] rounded-2xl" />
             </div>
           </div>
         </div>
@@ -47,7 +46,6 @@ const PartDetail = () => {
     );
   }
 
-  // Error state
   if (error || !part) {
     return (
       <div className="min-h-screen bg-[hsl(var(--greige))]">
@@ -109,10 +107,10 @@ const PartDetail = () => {
       />
       <Header />
 
-      {/* DESKTOP/TABLET */}
+      {/* ========== DESKTOP ========== */}
       <div className="hidden md:block pt-16">
         {/* Back button */}
-        <div className="px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
           <Link
             to="/catalogue"
             className="inline-flex items-center gap-2 text-[hsl(var(--carbon))]/60 hover:text-[hsl(var(--carbon))] transition-colors"
@@ -122,14 +120,13 @@ const PartDetail = () => {
           </Link>
         </div>
 
-        {/* Bento Grid — natural height, scrollable */}
-        <div className="px-6 lg:px-8 pb-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-4 grid-rows-[500px_280px] gap-4 lg:gap-6">
-            {/* Row 1 */}
-            <div className="col-span-2 row-span-1">
+        {/* Row 1: 2fr 1fr 1fr — MediaGallery | PurchaseBlock | PRÉSENTATION */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-4">
+          <div className="grid gap-4 lg:gap-6 h-[500px]" style={{ gridTemplateColumns: '2fr 1fr 1fr' }}>
+            <div className="min-w-0 h-full">
               <MediaGallery imageUrl={part.image_url} productName={part.name} />
             </div>
-            <div className="col-span-1 row-span-1">
+            <div className="min-w-0 h-full overflow-y-auto">
               <PurchaseBlock
                 id={part.id}
                 name={part.name}
@@ -141,77 +138,65 @@ const PartDetail = () => {
                 difficultyLevel={part.difficulty_level}
               />
             </div>
-
-            {/* Description — PRÉSENTATION */}
             {part.description && part.description.trim() ? (
-              <div className="col-span-1 row-span-1">
-                <motion.div
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
-                  className="h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 overflow-y-auto border-l-4 border-l-[#4A7C59]"
-                >
-                  <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-lg mb-4">
-                    Présentation
-                  </h2>
-                  <div
-                    className="quill-content text-[#1A1A1A] text-sm leading-[1.7]"
-                    dangerouslySetInnerHTML={{ __html: part.description }}
-                  />
-                </motion.div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
+                className="min-w-0 h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 overflow-y-auto border-l-4 border-l-[#4A7C59]"
+              >
+                <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-lg mb-4">
+                  Présentation
+                </h2>
+                <div
+                  className="quill-content text-[#1A1A1A] text-sm leading-[1.7]"
+                  dangerouslySetInnerHTML={{ __html: part.description }}
+                />
+              </motion.div>
             ) : (
-              <div className="col-span-1 row-span-1" />
+              <div />
             )}
-
-            {/* Row 2 */}
-            <div className="col-span-1 row-span-1">
-              <InstallationGuide
-                difficultyLevel={part.difficulty_level}
-                estimatedTime={part.estimated_install_time_minutes}
-                requiredTools={part.required_tools}
-              />
-            </div>
-            <div className="col-span-1 row-span-1">
-              <EngineeringLab
-                technicalMetadata={part.technical_metadata}
-                difficultyLevel={part.difficulty_level}
-              />
-            </div>
-            <div className="col-span-1 row-span-1">
-              <CompatibilityMatrix
-                scooters={scooters}
-                isLoading={scootersLoading}
-              />
-            </div>
-            <div className="col-span-1 row-span-1">
-              <WorkshopSection
-                youtubeVideoId={part.youtube_video_id}
-                productName={part.name}
-              />
-            </div>
           </div>
         </div>
 
-        {/* Sections below bento grid — scrollable */}
-        <div className="px-6 lg:px-8 space-y-12 pb-16">
-          {/* YouTube Video */}
+        {/* Row 2: 4 equal columns */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-6">
+          <div className="grid grid-cols-4 gap-4 lg:gap-6">
+            <InstallationGuide
+              difficultyLevel={part.difficulty_level}
+              estimatedTime={part.estimated_install_time_minutes}
+              requiredTools={part.required_tools}
+            />
+            <EngineeringLab
+              technicalMetadata={part.technical_metadata}
+              difficultyLevel={part.difficulty_level}
+            />
+            <CompatibilityMatrix
+              scooters={scooters}
+              isLoading={scootersLoading}
+            />
+            <WorkshopSection
+              youtubeVideoId={part.youtube_video_id}
+              productName={part.name}
+            />
+          </div>
+        </div>
+
+        {/* Full-width sections below */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-12 pt-6 pb-16">
           {part.youtube_video_id && (
             <VideoInstallation
               youtubeVideoId={part.youtube_video_id}
               productName={part.name}
             />
           )}
-
-          {/* Related Products */}
           <RelatedProducts parts={relatedParts} isLoading={relatedLoading} />
         </div>
       </div>
 
-      {/* MOBILE: Vertical Stack Scrollable */}
+      {/* ========== MOBILE ========== */}
       <div className="md:hidden pt-20 pb-12 px-4 space-y-6">
-        {/* Back button */}
         <Link
           to="/catalogue"
           className="inline-flex items-center gap-2 text-[hsl(var(--carbon))]/60 hover:text-[hsl(var(--carbon))] transition-colors"
@@ -220,12 +205,10 @@ const PartDetail = () => {
           <span className="text-sm font-medium">Retour au catalogue</span>
         </Link>
 
-        {/* Media Gallery */}
         <div className="aspect-square">
           <MediaGallery imageUrl={part.image_url} productName={part.name} />
         </div>
 
-        {/* Purchase Block */}
         <PurchaseBlock
           id={part.id}
           name={part.name}
@@ -237,7 +220,6 @@ const PartDetail = () => {
           difficultyLevel={part.difficulty_level}
         />
 
-        {/* Description — PRÉSENTATION */}
         {part.description && part.description.trim() && (
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -256,7 +238,6 @@ const PartDetail = () => {
           </motion.div>
         )}
 
-        {/* YouTube Video */}
         {part.youtube_video_id && (
           <VideoInstallation
             youtubeVideoId={part.youtube_video_id}
@@ -264,31 +245,24 @@ const PartDetail = () => {
           />
         )}
 
-        {/* Installation Guide */}
         <InstallationGuide
           difficultyLevel={part.difficulty_level}
           estimatedTime={part.estimated_install_time_minutes}
           requiredTools={part.required_tools}
         />
 
-        {/* Engineering Lab */}
         <EngineeringLab
           technicalMetadata={part.technical_metadata}
           difficultyLevel={part.difficulty_level}
         />
 
-        {/* Compatibility Matrix */}
         <CompatibilityMatrix scooters={scooters} isLoading={scootersLoading} />
 
-        {/* Workshop */}
-        <div className="min-h-[300px]">
-          <WorkshopSection
-            youtubeVideoId={part.youtube_video_id}
-            productName={part.name}
-          />
-        </div>
+        <WorkshopSection
+          youtubeVideoId={part.youtube_video_id}
+          productName={part.name}
+        />
 
-        {/* Related Products */}
         <RelatedProducts parts={relatedParts} isLoading={relatedLoading} />
       </div>
     </div>
