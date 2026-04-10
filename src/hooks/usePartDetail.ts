@@ -14,6 +14,7 @@ export interface PartDetail {
   technical_metadata: Record<string, unknown> | null;
   estimated_install_time_minutes: number | null;
   required_tools: string[] | null;
+  category_id: string | null;
   category: {
     name: string;
     slug: string;
@@ -51,6 +52,7 @@ export const usePartBySlug = (slug: string | undefined) => {
           technical_metadata,
           estimated_install_time_minutes,
           required_tools,
+          category_id,
           categories (
             name,
             slug,
