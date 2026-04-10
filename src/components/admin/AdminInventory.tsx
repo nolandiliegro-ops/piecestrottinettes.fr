@@ -5,10 +5,12 @@ import { Badge } from '@/components/ui/badge';
 import PartsManager from './PartsManager';
 import ScootersManager from './ScootersManager';
 import PendingScootersManager, { usePendingScooters } from './PendingScootersManager';
+import PendingPartsManager, { usePendingParts } from './PendingPartsManager';
 
 const AdminInventory = () => {
   const [tab, setTab] = useState('parts');
-  const { data: pending = [] } = usePendingScooters();
+  const { data: pendingScooters = [] } = usePendingScooters();
+  const { data: pendingParts = [] } = usePendingParts();
 
   return (
     <div className="p-4">
@@ -34,9 +36,21 @@ const AdminInventory = () => {
           >
             <Bot className="w-4 h-4" />
             Bot Import
-            {pending.length > 0 && (
+            {pendingScooters.length > 0 && (
               <Badge className="ml-1 bg-violet-600 text-white text-[10px] px-1.5 py-0 min-w-[18px] h-[18px] flex items-center justify-center">
-                {pending.length}
+                {pendingScooters.length}
+              </Badge>
+            )}
+          </TabsTrigger>
+          <TabsTrigger 
+            value="pending-parts"
+            className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] gap-2 relative"
+          >
+            <Bot className="w-4 h-4" />
+            Pièces Bot
+            {pendingParts.length > 0 && (
+              <Badge className="ml-1 bg-violet-600 text-white text-[10px] px-1.5 py-0 min-w-[18px] h-[18px] flex items-center justify-center">
+                {pendingParts.length}
               </Badge>
             )}
           </TabsTrigger>
@@ -50,6 +64,9 @@ const AdminInventory = () => {
         </TabsContent>
         <TabsContent value="pending" className="mt-4">
           <PendingScootersManager />
+        </TabsContent>
+        <TabsContent value="pending-parts" className="mt-4">
+          <PendingPartsManager />
         </TabsContent>
       </Tabs>
     </div>
