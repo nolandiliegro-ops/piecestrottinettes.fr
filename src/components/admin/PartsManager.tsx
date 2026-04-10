@@ -18,6 +18,8 @@ import { toast } from 'sonner';
 import Papa from 'papaparse';
 import { cn } from '@/lib/utils';
 import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
+import RichTextEditor from './RichTextEditor';
+import AIGenerateButton from './AIGenerateButton';
 
 import type { Json } from '@/integrations/supabase/types';
 
@@ -66,6 +68,7 @@ const slugify = (text: string) => {
 const PartsManager = () => {
   const [parts, setParts] = useState<Part[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [scooterModels, setScooterModels] = useState<{ id: string; name: string }[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState<string | null>(null);
   const [isCreateOpen, setIsCreateOpen] = useState(false);
@@ -130,6 +133,9 @@ const PartsManager = () => {
   useEffect(() => {
     fetchParts();
     fetchCategories();
+    supabase.from('scooter_models').select('id, name').order('name').then(({ data }) => {
+      if (data) setScooterModels(data);
+    });
   }, []);
 
   const fetchCategories = async () => {
@@ -729,8 +735,23 @@ const PartsManager = () => {
           </div>
         </div>
         <div className="space-y-2">
-          <Label>Description</Label>
-          <Textarea value={values.description} onChange={(e) => setValues({ ...values, description: e.target.value })} placeholder="Description..." rows={3} />
+          <div className="flex items-center justify-between">
+            <Label>Description</Label>
+            <AIGenerateButton
+              field="description"
+              context={{
+                name: values.name,
+                category: categories.find(c => c.id === values.category_id)?.name,
+                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
+              }}
+              onGenerated={(text) => setValues({ ...values, description: text })}
+            />
+          </div>
+          <RichTextEditor
+            value={values.description}
+            onChange={(val) => setValues({ ...values, description: val })}
+            placeholder="Description..."
+          />
         </div>
         
         {/* Pépite du Chef Toggle - Luxury Design */}
@@ -798,12 +819,34 @@ const PartsManager = () => {
 
       <TabsContent value="seo" className="space-y-4">
         <div className="space-y-2">
-          <Label>Meta Title</Label>
+          <div className="flex items-center justify-between">
+            <Label>Meta Title</Label>
+            <AIGenerateButton
+              field="meta_title"
+              context={{
+                name: values.name,
+                category: categories.find(c => c.id === values.category_id)?.name,
+                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
+              }}
+              onGenerated={(text) => setValues({ ...values, meta_title: text })}
+            />
+          </div>
           <Input value={values.meta_title} onChange={(e) => setValues({ ...values, meta_title: e.target.value })} placeholder="Titre SEO" maxLength={60} />
           <p className="text-xs text-muted-foreground">{values.meta_title.length}/60 caractères</p>
         </div>
         <div className="space-y-2">
-          <Label>Meta Description</Label>
+          <div className="flex items-center justify-between">
+            <Label>Meta Description</Label>
+            <AIGenerateButton
+              field="meta_description"
+              context={{
+                name: values.name,
+                category: categories.find(c => c.id === values.category_id)?.name,
+                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
+              }}
+              onGenerated={(text) => setValues({ ...values, meta_description: text })}
+            />
+          </div>
           <Textarea value={values.meta_description} onChange={(e) => setValues({ ...values, meta_description: e.target.value })} placeholder="Description pour les moteurs de recherche" rows={3} maxLength={160} />
           <p className="text-xs text-muted-foreground">{values.meta_description.length}/160 caractères</p>
         </div>

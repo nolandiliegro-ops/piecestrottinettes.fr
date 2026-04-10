@@ -10,6 +10,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
+import RichTextEditor from './RichTextEditor';
+import AIGenerateButton from './AIGenerateButton';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
@@ -555,6 +557,67 @@ const ScootersManager = () => {
                     <Input value={newScooter.youtube_video_id} onChange={(e) => setNewScooter(prev => ({ ...prev, youtube_video_id: e.target.value }))} placeholder="dQw4w9WgXcQ" />
                   </div>
                 </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <Label>Description</Label>
+                    <AIGenerateButton
+                      field="description"
+                      context={{
+                        name: newScooter.name,
+                        brand: brands.find(b => b.id === newScooter.brand_id)?.name,
+                        power_watts: newScooter.power_watts,
+                        voltage: newScooter.voltage,
+                        range_km: newScooter.range_km,
+                        tire_size: newScooter.tire_size,
+                        max_speed_kmh: newScooter.max_speed_kmh,
+                      }}
+                      onGenerated={(text) => setNewScooter(prev => ({ ...prev, description: text }))}
+                    />
+                  </div>
+                  <RichTextEditor
+                    value={newScooter.description}
+                    onChange={(val) => setNewScooter(prev => ({ ...prev, description: val }))}
+                    placeholder="Description de la trottinette..."
+                  />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <Label>Meta Title</Label>
+                    <AIGenerateButton
+                      field="meta_title"
+                      context={{
+                        name: newScooter.name,
+                        brand: brands.find(b => b.id === newScooter.brand_id)?.name,
+                        power_watts: newScooter.power_watts,
+                        voltage: newScooter.voltage,
+                        range_km: newScooter.range_km,
+                        max_speed_kmh: newScooter.max_speed_kmh,
+                      }}
+                      onGenerated={(text) => setNewScooter(prev => ({ ...prev, meta_title: text }))}
+                    />
+                  </div>
+                  <Input value={newScooter.meta_title} onChange={(e) => setNewScooter(prev => ({ ...prev, meta_title: e.target.value }))} placeholder="Titre SEO" maxLength={60} />
+                  <p className="text-xs text-muted-foreground">{newScooter.meta_title.length}/60 caractères</p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <Label>Meta Description</Label>
+                    <AIGenerateButton
+                      field="meta_description"
+                      context={{
+                        name: newScooter.name,
+                        brand: brands.find(b => b.id === newScooter.brand_id)?.name,
+                        power_watts: newScooter.power_watts,
+                        voltage: newScooter.voltage,
+                        range_km: newScooter.range_km,
+                        max_speed_kmh: newScooter.max_speed_kmh,
+                      }}
+                      onGenerated={(text) => setNewScooter(prev => ({ ...prev, meta_description: text }))}
+                    />
+                  </div>
+                  <Textarea value={newScooter.meta_description} onChange={(e) => setNewScooter(prev => ({ ...prev, meta_description: e.target.value }))} placeholder="Description SEO" rows={3} maxLength={160} />
+                  <p className="text-xs text-muted-foreground">{newScooter.meta_description.length}/160 caractères</p>
+                </div>
               </div>
               <DialogFooter>
                 <Button onClick={createScooter} disabled={creating || !newScooter.name.trim() || !newScooter.brand_id} className="w-full bg-primary hover:bg-primary/90">
@@ -727,6 +790,68 @@ const ScootersManager = () => {
                 <Label>YouTube ID</Label>
                 <Input value={editValues.youtube_video_id} onChange={(e) => setEditValues(prev => ({ ...prev, youtube_video_id: e.target.value }))} />
               </div>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Label>Description</Label>
+                <AIGenerateButton
+                  field="description"
+                  context={{
+                    name: editValues.name,
+                    brand: brands.find(b => b.id === editValues.brand_id)?.name,
+                    power_watts: editValues.power_watts,
+                    voltage: editValues.voltage,
+                    range_km: editValues.range_km,
+                    tire_size: editValues.tire_size,
+                    max_speed_kmh: editValues.max_speed_kmh,
+                  }}
+                  onGenerated={(text) => setEditValues(prev => ({ ...prev, description: text }))}
+                />
+              </div>
+              <RichTextEditor
+                value={editValues.description}
+                onChange={(val) => setEditValues(prev => ({ ...prev, description: val }))}
+                placeholder="Description de la trottinette..."
+              />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Label>Meta Title</Label>
+                <AIGenerateButton
+                  field="meta_title"
+                  context={{
+                    name: editValues.name,
+                    brand: brands.find(b => b.id === editValues.brand_id)?.name,
+                    power_watts: editValues.power_watts,
+                    voltage: editValues.voltage,
+                    range_km: editValues.range_km,
+                    max_speed_kmh: editValues.max_speed_kmh,
+                  }}
+                  onGenerated={(text) => setEditValues(prev => ({ ...prev, meta_title: text }))}
+                />
+              </div>
+              <Input value={editValues.meta_title} onChange={(e) => setEditValues(prev => ({ ...prev, meta_title: e.target.value }))} placeholder="Titre SEO" maxLength={60} />
+              <p className="text-xs text-muted-foreground">{editValues.meta_title.length}/60 caractères</p>
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Label>Meta Description</Label>
+                <AIGenerateButton
+                  field="meta_description"
+                  context={{
+                    name: editValues.name,
+                    brand: brands.find(b => b.id === editValues.brand_id)?.name,
+                    power_watts: editValues.power_watts,
+                    voltage: editValues.voltage,
+                    range_km: editValues.range_km,
+                    max_speed_kmh: editValues.max_speed_kmh,
+                  }}
+                  onGenerated={(text) => setEditValues(prev => ({ ...prev, meta_description: text }))}
+                />
+              </div>
+              <Textarea value={editValues.meta_description} onChange={(e) => setEditValues(prev => ({ ...prev, meta_description: e.target.value }))} placeholder="Description SEO" rows={3} maxLength={160} />
+              <p className="text-xs text-muted-foreground">{editValues.meta_description.length}/160 caractères</p>
             </div>
 
             {/* Signature Technique (IA) — Lave Froide */}
