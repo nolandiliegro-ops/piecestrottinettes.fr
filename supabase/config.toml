@@ -1,5 +1,8 @@
 project_id = "kqsxscjtlipregkrmucg"
 
+[functions.bulk-insert-parts]
+verify_jwt = false
+
 [functions.generate-category-image]
 verify_jwt = false
 
