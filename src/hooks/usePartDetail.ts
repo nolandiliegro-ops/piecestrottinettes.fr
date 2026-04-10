@@ -14,6 +14,7 @@ export interface PartDetail {
   technical_metadata: Record<string, unknown> | null;
   estimated_install_time_minutes: number | null;
   required_tools: string[] | null;
+  category_id: string | null;
   category: {
     name: string;
     slug: string;
@@ -51,6 +52,7 @@ export const usePartBySlug = (slug: string | undefined) => {
           technical_metadata,
           estimated_install_time_minutes,
           required_tools,
+          category_id,
           categories (
             name,
             slug,
@@ -69,6 +71,23 @@ export const usePartBySlug = (slug: string | undefined) => {
       } as PartDetail;
     },
     enabled: !!slug,
+  });
+};
+
+export const useRelatedParts = (categoryId: string | null, currentPartId: string | null) => {
+  return useQuery({
+    queryKey: ["related-parts", categoryId, currentPartId],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("parts")
+        .select("id, name, slug, price, image_url, stock_quantity")
+        .eq("category_id", categoryId!)
+        .neq("id", currentPartId!)
+        .limit(4);
+      if (error) throw error;
+      return data ?? [];
+    },
+    enabled: !!categoryId && !!currentPartId,
   });
 };
 
