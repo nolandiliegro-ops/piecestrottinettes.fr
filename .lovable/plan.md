@@ -1,78 +1,54 @@
 
 
-# PartDetail Page — Clean Stacked Layout Redesign
+# Système de validation Bot Import pour les pièces
 
-## Layout Structure
+## Vue d'ensemble
+Reproduire le workflow de validation des trottinettes (`PendingScootersManager`) pour les pièces détachées, avec colonne `published`, filtrage des requêtes publiques, et nouvel onglet admin.
 
-```text
-┌──────────────────────────────────────────┐
-│ ← Retour au catalogue                   │
-├───────────────────────┬──────────────────┤
-│                       │  Category Badge  │
-│   MediaGallery        │  Product Name    │
-│   (60% - col-span-3)  │  Price TTC 4xl   │
-│   shadow-lg rounded   │  Stock status    │
-│                       │  AJOUTER button  │
-│                       │  J'AI INSTALLÉ   │
-├───────────────────────┴──────────────────┤
-│  Install  │  Lab  │  Compat  │  Workshop │
-│  min-h-200px each, green icons, equal h  │
-├──────────────────────────────────────────┤
-│  PRÉSENTATION — full width white card    │
-│  green left bar + green underline title  │
-│  text #374151, leading-[1.8]             │
-├──────────────────────────────────────────┤
-│  VIDÉO D'INSTALLATION (conditional)      │
-├──────────────────────────────────────────┤
-│  VOUS POURRIEZ AUSSI AVOIR BESOIN DE     │
-│  4-col grid, hover scale-105, green price│
-└──────────────────────────────────────────┘
+## Changements
+
+### 1. Migration DB — Ajouter colonne `published` à `parts`
+```sql
+ALTER TABLE public.parts ADD COLUMN IF NOT EXISTS published boolean NOT NULL DEFAULT true;
 ```
+Défaut `true` pour ne pas casser les pièces existantes. Les imports bot mettront `published = false`.
 
-Mobile: same order, all stacked single-column with `space-y-6`.
+### 2. `src/components/admin/PendingPartsManager.tsx` — Nouveau composant
+Calqué sur `PendingScootersManager` (377 lignes). Fonctionnalités :
+- **Hook `usePendingParts`** : query `parts` WHERE `published = false`, join `category:categories(id, name)`
+- **Carte par pièce** : image preview, badge Bot violet, nom, catégorie, prix HT, specs (difficulté, stock)
+- **Sources web** : liens cliquables extraits de `technical_metadata.sources`
+- **Bouton image inline** : édition rapide de `image_url`
+- **Bouton Éditer** : modale complète avec tous les champs (nom, slug, prix, stock, description, category_id, difficulty_level, youtube_video_id, sku, meta_title, meta_description, image_url)
+- **Bouton Publier** : `update({ published: true })`
+- **Bouton Supprimer** : avec confirmation AlertDialog
+- **Bouton "Tout publier"** : publish all pending en un clic
+- Export du hook `usePendingParts` pour le badge compteur
 
-## Files to Modify
+### 3. `src/components/admin/AdminInventory.tsx` — Ajouter onglet
+Ajouter un 4ème onglet "Pièces Bot" avec :
+- Icône `Bot` + badge compteur violet (comme Bot Import)
+- Import de `PendingPartsManager` et `usePendingParts`
 
-### 1. `src/pages/PartDetail.tsx` — Full rewrite
+### 4. Filtrer `published = true` sur les requêtes publiques
+Fichiers à modifier (ajout `.eq('published', true)`) :
+- `src/hooks/useCatalogueData.ts` — `useAllParts`
+- `src/hooks/usePartDetail.ts` — `usePartDetail` + `useRelatedParts`
+- `src/hooks/useCompatibleParts.ts` — query parts par IDs
+- `src/hooks/useUnifiedSearch.ts` — recherche globale parts
+- `src/components/garage/QuickAddModificationDialog.tsx` — recherche garage
 
-Replace the bento grid with a clean vertical stack:
+**NE PAS filtrer** dans les composants admin (`PartsManager`, `AdminDashboard`, `CompatibilityManager`, `AdminScanner`) qui doivent voir toutes les pièces.
 
-- **Hero row**: `grid-cols-5` → MediaGallery `col-span-3` (60%) wrapped in `rounded-2xl shadow-lg` container, PurchaseBlock `col-span-2` (40%)
-- **No fixed heights** — natural content flow, no `h-[500px]`, no `overflow-hidden`
-- **4 tech cards**: `grid-cols-2 lg:grid-cols-4` with `min-h-[200px]` wrappers
-- **PRÉSENTATION**: Full-width section below tech cards with `border-l-4 border-l-[#4A7C59]`, title followed by `border-b-2 border-[#4A7C59] w-12 mb-6` green underline, text in `text-[#374151] leading-[1.8]`
-- **YouTube + Related Products**: Full-width sections below
-- **Section animations**: Each section uses `whileInView` with staggered `custom` index (0.1s delay per section)
-- All sections wrapped in `max-w-7xl mx-auto px-4 md:px-8` with `py-8` between them
-
-### 2. `src/components/pdp/RelatedProducts.tsx` — Card polish
-
-- Add `hover:scale-105 transition-transform duration-300` on each card Link
-- Product name: change `font-bold` → `font-semibold`
-- Price: change color from `text-[hsl(var(--mineral))]` → `text-[#4A7C59]`
-- Orange button: keep existing `bg-[#FF6600]`, already full width — add text "Ajouter" always visible (remove `hidden sm:inline`)
-
-### 3. `src/components/pdp/PurchaseBlock.tsx` — Premium polish
-
-- Price display: change from `text-3xl md:text-4xl font-light` → `text-4xl font-black text-[#1A1A1A]`
-- Show TTC price: `formatPrice(price * 1.2)` instead of `formatPrice(price)`
-- Category badge: ensure green styling `bg-[#4A7C59]/10 text-[#4A7C59]`
-- Padding already `p-6 md:p-8` — confirmed OK
-
-### 4. `src/components/pdp/MediaGallery.tsx` — Shadow + cover
-
-- Add `shadow-lg` to the outer container
-- Change image from `object-contain` → `object-contain` (keep contain for product photos — cover would crop them badly)
-- The parent in PartDetail wraps it with `shadow-lg rounded-2xl` for the drop shadow effect
-
-## Design System Compliance
-
-- Background: `#F5F0E8` on page container
-- Green accent: `#4A7C59` on badges, borders, price text, title underlines
-- Orange CTA: `#FF6600` / hover `#E55C00` on add-to-cart buttons
-- Text: `#1A1A1A` for titles, `#374151` for body
-- Titles: `font-black uppercase tracking-tight`
-- Cards: `rounded-2xl shadow-md bg-white/70 backdrop-blur-sm`
-- Touch targets: `min-h-[44px]` on all buttons
-- Animations: `whileInView` with 0.1s stagger delay between sections
+## Fichiers touchés
+| Fichier | Action |
+|---------|--------|
+| Migration SQL | Ajouter colonne `published` |
+| `src/components/admin/PendingPartsManager.tsx` | Nouveau composant |
+| `src/components/admin/AdminInventory.tsx` | Ajouter onglet "Pièces Bot" |
+| `src/hooks/useCatalogueData.ts` | Filtrer `published = true` |
+| `src/hooks/usePartDetail.ts` | Filtrer `published = true` |
+| `src/hooks/useCompatibleParts.ts` | Filtrer `published = true` |
+| `src/hooks/useUnifiedSearch.ts` | Filtrer `published = true` |
+| `src/components/garage/QuickAddModificationDialog.tsx` | Filtrer `published = true` |
 
