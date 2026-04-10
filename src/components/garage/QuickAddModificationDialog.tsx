@@ -49,6 +49,7 @@ const QuickAddModificationDialog = ({
       const { data, error } = await supabase
         .from('parts')
         .select('id, name, image_url, difficulty_level, category:categories(name)')
+        .eq('published', true)
         .ilike('name', `%${searchQuery}%`)
         .limit(10);
       
