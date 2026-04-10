@@ -36,6 +36,7 @@ export const useAllParts = (categoryId: string | null) => {
             slug
           )
         `)
+        .eq("published", true)
         .order("name");
 
       if (categoryId) {

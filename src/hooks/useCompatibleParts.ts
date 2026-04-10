@@ -69,6 +69,7 @@ export const useCompatibleParts = (scooterModelId?: string) => {
               slug
             )
           `)
+          .eq('published', true)
           .in('id', partIds)
           .order('name', { ascending: true });
 

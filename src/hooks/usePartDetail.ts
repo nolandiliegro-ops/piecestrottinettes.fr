@@ -61,6 +61,7 @@ export const usePartBySlug = (slug: string | undefined) => {
         `
         )
         .eq("slug", slug)
+        .eq("published", true)
         .single();
 
       if (error) throw error;
@@ -105,6 +106,7 @@ export const useRelatedParts = (
       const { data, error } = await supabase
         .from("parts")
         .select("id, name, slug, price, image_url, stock_quantity")
+        .eq("published", true)
         .eq("category_id", categoryId!)
         .neq("id", currentPartId!)
         .limit(4);

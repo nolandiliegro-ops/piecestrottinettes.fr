@@ -136,6 +136,7 @@ export const useUnifiedSearch = (query: string) => {
         ? supabase
             .from('parts')
             .select('slug, name, price, image_url, category:categories(name)')
+            .eq('published', true)
             .or(fuzzyPatterns.map(p => `name.ilike.${p}`).join(','))
             .limit(4)
         : null;
