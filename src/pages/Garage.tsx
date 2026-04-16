@@ -73,7 +73,7 @@ const Garage = () => {
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
-  const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
+  const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const updateNickname = useUpdateNickname();
