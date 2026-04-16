@@ -248,7 +248,8 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
           <Button
             variant="outline"
             size="sm"
-            onClick={() => navigate('/admin?tab=orders')}
+            title={`Voir la commande ${thread.order_number}`}
+            onClick={() => navigate(`/admin?tab=orders&order=${thread.order_number}`)}
             className="gap-1.5 border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:text-emerald-300 shrink-0"
           >
             <ExternalLink className="w-3.5 h-3.5" />

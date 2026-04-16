@@ -440,6 +440,17 @@ const ChatView = ({
         setImageFile(null);
       }
 
+      // Persist welcome message before first client message
+      if (messages.length === 0 && orderId !== 'direct' && orderNumber) {
+        try {
+          await supabase.functions.invoke('create-welcome-message', {
+            body: { orderId, orderNumber, userId: user.id },
+          });
+        } catch (err) {
+          console.warn('Welcome message skipped:', err);
+        }
+      }
+
       await sendMessage.mutateAsync({
         orderId: orderId === 'direct' ? null : orderId,
         message: text || '📷 Image',
