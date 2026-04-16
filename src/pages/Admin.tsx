@@ -60,6 +60,7 @@ const Admin = () => {
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
       {activeTab === 'scanner' && <AdminScanner />}
+      {activeTab === 'messages' && <ContactMessagesManager />}
       {activeTab === 'settings' && <AdminSettings />}
     </AdminLayout>
   );
