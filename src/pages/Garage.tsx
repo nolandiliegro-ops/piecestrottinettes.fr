@@ -197,6 +197,9 @@ const Garage = () => {
                 <MessageSquare className="w-4 h-4" />
                 <span className="font-display text-xs md:text-sm tracking-wide">MESSAGES</span>
               </button>
+            </div>
+
+            {/* User info - Ultra compact on mobile */}
             <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
               <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
