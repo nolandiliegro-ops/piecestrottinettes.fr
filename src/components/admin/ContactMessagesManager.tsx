@@ -263,7 +263,20 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
       {/* Reply */}
       <div className="shrink-0 pt-3 border-t border-[hsl(0_0%_18%)]">
+        {imageFile && (
+          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg p-1.5 pr-2">
+            <img src={URL.createObjectURL(imageFile)} alt="Preview" className="w-12 h-12 object-cover rounded" />
+            <span className="text-xs text-[hsl(0_0%_70%)] max-w-[140px] truncate">{imageFile.name}</span>
+            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_90%)]">
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
         <div className="flex gap-2 items-end">
+          <input ref={inputRef} type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
+          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] h-[60px]" title="Joindre une image">
+            <Paperclip className="w-4 h-4" />
+          </Button>
           <textarea
             value={replyText}
             onChange={(e) => setReplyText(e.target.value)}
@@ -272,8 +285,8 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
             className="flex-1 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg px-3 py-2 text-sm text-[hsl(0_0%_85%)] placeholder:text-[hsl(0_0%_40%)] focus:outline-none focus:border-primary/40 resize-none"
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleReply(); } }}
           />
-          <Button size="sm" disabled={!replyText.trim() || sending} onClick={handleReply} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
-            {sending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+          <Button size="sm" disabled={(!replyText.trim() && !imageFile) || sending || uploading} onClick={handleReply} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
+            {sending || uploading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
             Envoyer
           </Button>
         </div>
