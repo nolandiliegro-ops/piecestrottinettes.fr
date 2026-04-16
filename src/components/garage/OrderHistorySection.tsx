@@ -241,7 +241,7 @@ const OrderItemsDetails = ({ order }: { order: Order }) => {
           variant="outline"
           size="sm"
           className="w-full gap-2 text-carbon/70 border-carbon/10 hover:bg-mineral/5 hover:text-mineral"
-          onClick={() => navigate(`/contact?order=${order.order_number}`)}
+          onClick={() => navigate(`/garage?tab=messages&orderId=${order.id}&orderNumber=${order.order_number}`)}
         >
           <MessageSquare className="w-4 h-4" />
           Contacter le support

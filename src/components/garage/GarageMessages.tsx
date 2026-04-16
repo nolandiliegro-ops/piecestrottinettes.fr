@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, ArrowLeft, Send, Loader2, Package, ChevronRight, Mail, Plus, Paperclip, X, ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -551,6 +552,30 @@ const GarageMessages = () => {
   const { data: conversations = [], isLoading } = useOrderConversations();
   const [selectedConv, setSelectedConv] = useState<ConversationSummary | null>(null);
   const [showNewMessage, setShowNewMessage] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Auto-open conversation from deep link (?orderId=...&orderNumber=...)
+  useEffect(() => {
+    const orderId = searchParams.get('orderId');
+    const orderNumber = searchParams.get('orderNumber');
+    if (!orderId || !orderNumber) return;
+    if (isLoading) return;
+
+    const existing = conversations.find((c) => c.order_id === orderId);
+    if (existing) {
+      setSelectedConv(existing);
+    } else {
+      setSelectedConv({
+        order_id: orderId,
+        order_number: orderNumber,
+        last_message: '',
+        last_message_at: new Date().toISOString(),
+        unread_count: 0,
+      } as ConversationSummary);
+    }
+    // Clean URL while keeping the messages tab active
+    setSearchParams({ tab: 'messages' }, { replace: true });
+  }, [searchParams, conversations, isLoading, setSearchParams]);
 
   return (
     <div className="h-full flex flex-col">

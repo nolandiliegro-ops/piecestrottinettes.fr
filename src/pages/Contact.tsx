@@ -11,12 +11,14 @@ import { Mail, Send } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
+import { useProfile } from "@/hooks/useProfile";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchParams] = useSearchParams();
   const orderNumber = searchParams.get("order");
   const { user } = useAuth();
+  const { profile } = useProfile();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -85,10 +87,12 @@ const Contact = () => {
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-carbon">Nom *</Label>
                 <Input
+                  key={`name-${user?.id || 'guest'}`}
                   id="name"
                   name="name"
                   required
                   maxLength={100}
+                  defaultValue={profile?.display_name || ''}
                   placeholder="Jean Dupont"
                   className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
                 />
@@ -96,11 +100,13 @@ const Contact = () => {
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-carbon">Email *</Label>
                 <Input
+                  key={`email-${user?.id || 'guest'}`}
                   id="email"
                   name="email"
                   type="email"
                   required
                   maxLength={255}
+                  defaultValue={user?.email || ''}
                   placeholder="jean@exemple.fr"
                   className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
                 />
