@@ -183,9 +183,20 @@ const Garage = () => {
                 <ShoppingBag className="w-4 h-4" />
                 <span className="font-display text-xs md:text-sm tracking-wide">COMMANDES</span>
               </button>
-            </div>
-            
-            {/* User info - Ultra compact on mobile */}
+
+              {/* Tab: Messages */}
+              <button
+                onClick={() => setActiveTab('messages')}
+                className={cn(
+                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
+                  activeTab === 'messages'
+                    ? "bg-carbon text-white"
+                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                )}
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span className="font-display text-xs md:text-sm tracking-wide">MESSAGES</span>
+              </button>
             <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
               <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
