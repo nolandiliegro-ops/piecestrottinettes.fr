@@ -9,6 +9,7 @@ import AdminDashboard from '@/components/admin/AdminDashboard';
 import AdminInventory from '@/components/admin/AdminInventory';
 import AdminScanner from '@/components/admin/AdminScanner';
 import AdminSettings from '@/components/admin/AdminSettings';
+import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
