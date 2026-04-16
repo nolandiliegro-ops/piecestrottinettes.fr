@@ -390,6 +390,17 @@ const OrdersManager = () => {
         </p>
       </div>
 
+      {/* Search bar */}
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+        <Input
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Rechercher par n° commande, nom, email..."
+          className="pl-9 bg-background/60 border-white/10"
+        />
+      </div>
+
       {/* Status Filter Bar */}
       <StatusFilterBar 
         orders={orders}
