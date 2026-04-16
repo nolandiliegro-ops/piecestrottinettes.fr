@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag, Plus } from 'lucide-react';
+import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
@@ -20,6 +20,7 @@ import GarageTimeline from '@/components/garage/GarageTimeline';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import MediaSidebar from '@/components/garage/MediaSidebar';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
+import GarageMessages from '@/components/garage/GarageMessages';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
@@ -72,7 +73,7 @@ const Garage = () => {
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
   const [selectedScooter, setSelectedScooter] = useState<any>(null);
-  const [activeTab, setActiveTab] = useState<'garage' | 'orders'>('garage');
+  const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const updateNickname = useUpdateNickname();
@@ -97,6 +98,14 @@ const Garage = () => {
       updateNickname.mutate({ garageItemId: selectedScooter.id, nickname });
     }
   };
+
+  useEffect(() => {
+    if (searchParams.get('tab') === 'messages') {
+      setActiveTab('messages');
+      searchParams.delete('tab');
+      setSearchParams(searchParams, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
 
   useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
@@ -174,8 +183,22 @@ const Garage = () => {
                 <ShoppingBag className="w-4 h-4" />
                 <span className="font-display text-xs md:text-sm tracking-wide">COMMANDES</span>
               </button>
+
+              {/* Tab: Messages */}
+              <button
+                onClick={() => setActiveTab('messages')}
+                className={cn(
+                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
+                  activeTab === 'messages'
+                    ? "bg-carbon text-white"
+                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                )}
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span className="font-display text-xs md:text-sm tracking-wide">MESSAGES</span>
+              </button>
             </div>
-            
+
             {/* User info - Ultra compact on mobile */}
             <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
               <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
@@ -457,7 +480,7 @@ const Garage = () => {
                   </motion.div>
                 )}
               </motion.div>
-            ) : (
+            ) : activeTab === 'orders' ? (
               <motion.div
                 key="orders"
                 initial={{ opacity: 0, x: 20 }}
@@ -467,6 +490,17 @@ const Garage = () => {
                 className="flex-1 overflow-y-auto pb-8"
               >
                 <OrderHistorySection userId={user?.id} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="messages"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="flex-1 overflow-y-auto pb-8 px-4 md:px-6"
+              >
+                <GarageMessages />
               </motion.div>
             )}
           </AnimatePresence>
