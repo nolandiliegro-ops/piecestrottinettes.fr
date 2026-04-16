@@ -1,7 +1,7 @@
 import SEO from "@/components/SEO";
 import { useState } from 'react';
 import { useAdminRole } from '@/hooks/useAdminRole';
-import { Navigate, Link } from 'react-router-dom';
+import { Navigate, Link, useSearchParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Loader2, ArrowLeft, ShieldX } from 'lucide-react';
 import AdminLayout from '@/components/admin/AdminLayout';
@@ -13,7 +13,8 @@ import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [searchParams] = useSearchParams();
+  const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'dashboard');
 
   if (loading) {
     return (

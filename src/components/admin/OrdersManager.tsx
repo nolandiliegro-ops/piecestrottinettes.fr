@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { Package, Eye, Loader2, ShoppingBag, ChevronDown, CheckCircle, Filter } from "lucide-react";
+import { Package, Eye, Loader2, ShoppingBag, ChevronDown, CheckCircle, Filter, Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import { motion, AnimatePresence } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { formatPrice } from "@/lib/formatPrice";
@@ -245,10 +247,12 @@ const StatusDropdown = ({
 };
 
 const OrdersManager = () => {
+  const [searchParams] = useSearchParams();
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
   const [statusFilter, setStatusFilter] = useState<string | null>(null);
   const [updatingOrderId, setUpdatingOrderId] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('order') || '');
   
   const queryClient = useQueryClient();
 
@@ -318,10 +322,18 @@ const OrdersManager = () => {
     updateStatusMutation.mutate({ orderId, newStatus });
   };
 
-  // Filter orders based on selected status
-  const filteredOrders = statusFilter 
-    ? orders?.filter(order => order.status === statusFilter)
-    : orders;
+  // Filter orders based on selected status + search
+  const q = searchTerm.trim().toLowerCase();
+  const filteredOrders = orders?.filter(order => {
+    if (statusFilter && order.status !== statusFilter) return false;
+    if (!q) return true;
+    const fullName = `${order.customer_first_name} ${order.customer_last_name}`.toLowerCase();
+    return (
+      order.order_number.toLowerCase().includes(q) ||
+      fullName.includes(q) ||
+      order.customer_email.toLowerCase().includes(q)
+    );
+  });
 
   const handleViewOrder = (order: Order) => {
     setSelectedOrder(order);
