@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X } from 'lucide-react';
+import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X, ExternalLink } from 'lucide-react';
 import { toast } from 'sonner';
 
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
@@ -214,23 +215,46 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
   const formatTime = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col h-[500px]">
       {/* Header */}
       <div className="flex items-center gap-3 pb-3 border-b border-[hsl(0_0%_18%)] shrink-0">
-        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)]">
+        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0">
           <ArrowLeft className="w-4 h-4" />
         </Button>
-        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
           <User className="w-4 h-4 text-primary" />
         </div>
-        <div>
-          <p className="text-sm font-medium text-[hsl(0_0%_90%)]">{thread.display_name}</p>
-          <p className="text-xs text-[hsl(0_0%_55%)]">
-            {thread.order_number ? `📦 ${thread.order_number}` : '💬 Question générale'}
-            {thread.email ? ` · ${thread.email}` : ''}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap mb-0.5">
+            {thread.order_number ? (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[11px] font-mono font-bold">
+                📦 {thread.order_number}
+              </span>
+            ) : (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_70%)] border border-[hsl(0_0%_20%)] text-[11px] font-semibold">
+                💬 Question générale
+              </span>
+            )}
+          </div>
+          <p className="text-xs text-[hsl(0_0%_60%)] truncate">
+            <span className="font-medium text-[hsl(0_0%_85%)]">{thread.display_name}</span>
+            {thread.email ? <span className="text-[hsl(0_0%_50%)]"> · {thread.email}</span> : null}
           </p>
         </div>
+        {thread.order_number && (
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => navigate('/admin?tab=orders')}
+            className="gap-1.5 border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:text-emerald-300 shrink-0"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+            Voir la commande
+          </Button>
+        )}
       </div>
 
       {/* Messages */}

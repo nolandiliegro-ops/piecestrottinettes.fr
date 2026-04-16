@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
-import { format } from 'date-fns';
+import { format, formatDistanceToNow } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import { useAuth } from '@/hooks/useAuth';
 import { useProfile } from '@/hooks/useProfile';
@@ -315,42 +315,56 @@ const ConversationList = ({
 
   return (
     <div className="space-y-2">
-      {conversations.map((conv) => (
-        <motion.button
-          key={conv.order_id}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          onClick={() => onSelect(conv)}
-          className="w-full text-left p-4 bg-white/60 backdrop-blur-md border border-white/10 rounded-2xl hover:shadow-md transition-all group"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center shrink-0">
-              {conv.order_id === 'direct' ? (
-                <Mail className="w-5 h-5 text-mineral" />
-              ) : (
-                <Package className="w-5 h-5 text-mineral" />
-              )}
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2">
-                <span className="font-mono font-bold text-carbon text-sm">{conv.order_number}</span>
-                {conv.unread_count > 0 && (
-                  <span className="w-5 h-5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
-                    {conv.unread_count}
-                  </span>
+      {conversations.map((conv) => {
+        const isDirect = conv.order_id === 'direct';
+        const preview = (conv.last_message || '').length > 60
+          ? (conv.last_message || '').substring(0, 60) + '…'
+          : (conv.last_message || '');
+        return (
+          <motion.button
+            key={conv.order_id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            onClick={() => onSelect(conv)}
+            className="w-full text-left p-4 bg-white/60 backdrop-blur-md border border-white/10 rounded-2xl hover:shadow-md transition-all group"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center shrink-0">
+                {isDirect ? (
+                  <Mail className="w-5 h-5 text-mineral" />
+                ) : (
+                  <Package className="w-5 h-5 text-mineral" />
                 )}
               </div>
-              <p className="text-xs text-carbon/50 truncate mt-0.5">{conv.last_message}</p>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  {isDirect ? (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-carbon/10 text-carbon/70 text-[10px] font-semibold uppercase tracking-wide">
+                      Message général
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-mineral/15 text-mineral text-[10px] font-mono font-bold uppercase tracking-wide">
+                      {conv.order_number}
+                    </span>
+                  )}
+                  {conv.unread_count > 0 && (
+                    <span className="min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
+                      {conv.unread_count}
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-carbon/55 truncate mt-1">{preview || 'Nouvelle conversation'}</p>
+              </div>
+              <div className="flex flex-col items-end gap-1 shrink-0">
+                <span className="text-[10px] text-carbon/40">
+                  {formatDistanceToNow(new Date(conv.last_message_at), { locale: fr, addSuffix: true })}
+                </span>
+                <ChevronRight className="w-4 h-4 text-carbon/30 group-hover:text-mineral transition-colors" />
+              </div>
             </div>
-            <div className="flex flex-col items-end gap-1 shrink-0">
-              <span className="text-[10px] text-carbon/40">
-                {format(new Date(conv.last_message_at), "d MMM", { locale: fr })}
-              </span>
-              <ChevronRight className="w-4 h-4 text-carbon/30 group-hover:text-mineral transition-colors" />
-            </div>
-          </div>
-        </motion.button>
-      ))}
+          </motion.button>
+        );
+      })}
     </div>
   );
 };
@@ -373,6 +387,8 @@ const ChatView = ({
   const [input, setInput] = useState('');
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [showAdminReplyHint, setShowAdminReplyHint] = useState(false);
+  const lastAdminMsgIdRef = useRef<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -382,6 +398,24 @@ const ChatView = ({
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  // Detect new admin reply → show hint for 3s
+  useEffect(() => {
+    if (!messages || messages.length === 0) return;
+    const lastAdmin = [...messages].reverse().find((m) => m.sender_type === 'admin');
+    if (!lastAdmin) return;
+    if (lastAdminMsgIdRef.current === null) {
+      // initial mount — don't trigger
+      lastAdminMsgIdRef.current = lastAdmin.id;
+      return;
+    }
+    if (lastAdmin.id !== lastAdminMsgIdRef.current) {
+      lastAdminMsgIdRef.current = lastAdmin.id;
+      setShowAdminReplyHint(true);
+      const t = setTimeout(() => setShowAdminReplyHint(false), 3000);
+      return () => clearTimeout(t);
     }
   }, [messages]);
 
@@ -479,8 +513,31 @@ const ChatView = ({
             <Loader2 className="w-5 h-5 animate-spin text-mineral" />
           </div>
         ) : messages.length === 0 ? (
-          <div className="text-center py-8">
-            <p className="text-sm text-carbon/40">Aucun message. Envoyez le premier !</p>
+          <div className="flex flex-col items-center justify-center py-10 px-4 text-center">
+            <div className="w-16 h-16 rounded-full bg-[#4A7C59]/10 flex items-center justify-center mb-4">
+              <MessageSquare className="w-8 h-8 text-[#4A7C59]" />
+            </div>
+            <h3 className="font-display text-lg text-carbon tracking-wide mb-2">Démarrez la discussion</h3>
+            <p className="text-sm text-carbon/55 max-w-xs mb-3">
+              Décrivez votre problème ou envoyez une photo. On répond sous 24 h.
+            </p>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-carbon/5 text-carbon/60 text-[11px] font-medium">
+              🔒 Conversation privée
+            </span>
+            {orderId !== 'direct' && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="w-full mt-6 flex justify-start"
+              >
+                <div className="max-w-[80%] rounded-2xl rounded-bl-md px-4 py-2.5 bg-white/80 border border-carbon/10 text-carbon">
+                  <p className="text-sm whitespace-pre-wrap">
+                    Bonjour ! 👋 Je suis là pour vous aider avec votre commande <span className="font-mono font-bold">{orderNumber}</span>. Décrivez-moi votre problème, envoyez une photo si besoin — je vous réponds dans les plus brefs délais.
+                  </p>
+                  <p className="text-[10px] mt-1 text-carbon/40">Support · à l'instant</p>
+                </div>
+              </motion.div>
+            )}
           </div>
         ) : (
           messages.map((msg) => {
@@ -513,6 +570,21 @@ const ChatView = ({
         )}
       </div>
 
+      <AnimatePresence>
+        {showAdminReplyHint && (
+          <motion.div
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 6 }}
+            className="shrink-0 pb-2 flex justify-start"
+          >
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-mineral/15 text-mineral text-[11px] font-medium">
+              💬 Le support vient de répondre
+            </span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="shrink-0 pt-3 border-t border-carbon/10">
         {imageFile && (
           <div className="mb-2">
@@ -525,7 +597,7 @@ const ChatView = ({
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Votre message..."
+            placeholder="Ex : Mon frein avant grince depuis hier, voici une photo..."
             rows={1}
             className="flex-1 resize-none bg-white/60 border border-carbon/10 rounded-xl px-4 py-3 text-sm text-carbon placeholder:text-carbon/30 focus:outline-none focus:border-mineral/40 min-h-[44px] max-h-[120px]"
           />
