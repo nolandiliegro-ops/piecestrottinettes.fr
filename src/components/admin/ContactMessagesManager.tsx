@@ -3,8 +3,20 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User } from 'lucide-react';
+import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X } from 'lucide-react';
 import { toast } from 'sonner';
+
+const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
+
+const uploadMessageImage = async (file: File, userId: string): Promise<string> => {
+  if (file.size > MAX_IMAGE_SIZE) throw new Error('Image trop volumineuse (max 5MB)');
+  const ext = file.name.split('.').pop() || 'jpg';
+  const path = `admin/${userId}/${Date.now()}.${ext}`;
+  const { error } = await supabase.storage.from('order-messages-images').upload(path, file, { contentType: file.type, upsert: false });
+  if (error) throw error;
+  const { data } = supabase.storage.from('order-messages-images').getPublicUrl(path);
+  return data.publicUrl;
+};
 
 interface ContactMessage {
   id: string;
