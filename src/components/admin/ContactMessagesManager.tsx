@@ -3,8 +3,20 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User } from 'lucide-react';
+import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X } from 'lucide-react';
 import { toast } from 'sonner';
+
+const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
+
+const uploadMessageImage = async (file: File, userId: string): Promise<string> => {
+  if (file.size > MAX_IMAGE_SIZE) throw new Error('Image trop volumineuse (max 5MB)');
+  const ext = file.name.split('.').pop() || 'jpg';
+  const path = `admin/${userId}/${Date.now()}.${ext}`;
+  const { error } = await supabase.storage.from('order-messages-images').upload(path, file, { contentType: file.type, upsert: false });
+  if (error) throw error;
+  const { data } = supabase.storage.from('order-messages-images').getPublicUrl(path);
+  return data.publicUrl;
+};
 
 interface ContactMessage {
   id: string;
@@ -101,6 +113,9 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   const [loading, setLoading] = useState(true);
   const [replyText, setReplyText] = useState('');
   const [sending, setSending] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const fetchMessages = async () => {
@@ -138,14 +153,25 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   }, [thread.user_id]);
 
   const handleReply = async () => {
-    if (!replyText.trim()) return;
+    if (!replyText.trim() && !imageFile) return;
     setSending(true);
     try {
+      let imageUrl: string | null = null;
+      if (imageFile) {
+        setUploading(true);
+        try {
+          imageUrl = await uploadMessageImage(imageFile, thread.user_id);
+        } finally {
+          setUploading(false);
+        }
+      }
+      const msgText = replyText.trim() || '📷 Image';
       const { error } = await supabase.from('order_messages').insert({
-        message: replyText.trim(),
+        message: msgText,
         sender_type: 'admin',
         user_id: thread.user_id,
         order_id: thread.order_id || null,
+        image_url: imageUrl,
       });
       if (error) throw error;
 
@@ -158,7 +184,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
                 customerEmail: thread.email,
                 customerName: thread.display_name,
                 orderNumber: thread.order_number || undefined,
-                messageText: replyText.trim(),
+                messageText: msgText,
                 conversationId: thread.order_id || thread.user_id,
               },
             });
@@ -169,12 +195,21 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
       toast.success('Réponse envoyée');
       setReplyText('');
+      setImageFile(null);
+      if (inputRef.current) inputRef.current.value = '';
       fetchMessages();
-    } catch (e) {
-      toast.error("Erreur lors de l'envoi");
+    } catch (e: any) {
+      toast.error(e?.message || "Erreur lors de l'envoi");
     } finally {
       setSending(false);
     }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > MAX_IMAGE_SIZE) { toast.error('Image trop volumineuse (max 5MB)'); return; }
+    setImageFile(file);
   };
 
   const formatTime = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
@@ -228,7 +263,20 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
       {/* Reply */}
       <div className="shrink-0 pt-3 border-t border-[hsl(0_0%_18%)]">
+        {imageFile && (
+          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg p-1.5 pr-2">
+            <img src={URL.createObjectURL(imageFile)} alt="Preview" className="w-12 h-12 object-cover rounded" />
+            <span className="text-xs text-[hsl(0_0%_70%)] max-w-[140px] truncate">{imageFile.name}</span>
+            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_90%)]">
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
         <div className="flex gap-2 items-end">
+          <input ref={inputRef} type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
+          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] h-[60px]" title="Joindre une image">
+            <Paperclip className="w-4 h-4" />
+          </Button>
           <textarea
             value={replyText}
             onChange={(e) => setReplyText(e.target.value)}
@@ -237,8 +285,8 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
             className="flex-1 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg px-3 py-2 text-sm text-[hsl(0_0%_85%)] placeholder:text-[hsl(0_0%_40%)] focus:outline-none focus:border-primary/40 resize-none"
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleReply(); } }}
           />
-          <Button size="sm" disabled={!replyText.trim() || sending} onClick={handleReply} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
-            {sending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+          <Button size="sm" disabled={(!replyText.trim() && !imageFile) || sending || uploading} onClick={handleReply} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
+            {sending || uploading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
             Envoyer
           </Button>
         </div>
