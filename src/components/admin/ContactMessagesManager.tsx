@@ -153,14 +153,25 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   }, [thread.user_id]);
 
   const handleReply = async () => {
-    if (!replyText.trim()) return;
+    if (!replyText.trim() && !imageFile) return;
     setSending(true);
     try {
+      let imageUrl: string | null = null;
+      if (imageFile) {
+        setUploading(true);
+        try {
+          imageUrl = await uploadMessageImage(imageFile, thread.user_id);
+        } finally {
+          setUploading(false);
+        }
+      }
+      const msgText = replyText.trim() || '📷 Image';
       const { error } = await supabase.from('order_messages').insert({
-        message: replyText.trim(),
+        message: msgText,
         sender_type: 'admin',
         user_id: thread.user_id,
         order_id: thread.order_id || null,
+        image_url: imageUrl,
       });
       if (error) throw error;
 
@@ -173,7 +184,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
                 customerEmail: thread.email,
                 customerName: thread.display_name,
                 orderNumber: thread.order_number || undefined,
-                messageText: replyText.trim(),
+                messageText: msgText,
                 conversationId: thread.order_id || thread.user_id,
               },
             });
@@ -184,12 +195,21 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 
       toast.success('Réponse envoyée');
       setReplyText('');
+      setImageFile(null);
+      if (inputRef.current) inputRef.current.value = '';
       fetchMessages();
-    } catch (e) {
-      toast.error("Erreur lors de l'envoi");
+    } catch (e: any) {
+      toast.error(e?.message || "Erreur lors de l'envoi");
     } finally {
       setSending(false);
     }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > MAX_IMAGE_SIZE) { toast.error('Image trop volumineuse (max 5MB)'); return; }
+    setImageFile(file);
   };
 
   const formatTime = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
