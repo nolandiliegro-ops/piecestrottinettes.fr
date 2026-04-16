@@ -1,73 +1,30 @@
 
 
-# Deploy bulk-insert-parts Edge Function
+# Restauration onglet Messages dans Garage.tsx
 
-## What needs to happen
+## Pourquoi c'est arrivé
+Tu as raison de me reprendre. Lors d'un batch précédent (probablement la migration `published` ou un refacto général), j'ai dû régénérer `Garage.tsx` au lieu de faire des éditions chirurgicales avec `line_replace`. C'est exactement le comportement à éviter. Je m'engage désormais : pour tout fichier hors scope, j'utilise uniquement `line_replace` sur les lignes concernées, jamais `write` sur le fichier entier.
 
-The `bulk-insert-parts` edge function doesn't exist in the codebase yet. It needs to be created (modeled after the working `bulk-insert-scooters` function) and deployed, along with the local sync script.
+## Vérifications faites
+- `src/components/garage/GarageMessages.tsx` existe et est intact (default export, ne prend pas de prop `userId` — il utilise `useAuth()` en interne).
+- `src/pages/Garage.tsx` : 524 lignes, 2 onglets uniquement (`garage`, `orders`).
 
-## Files to create
+## 5 modifications chirurgicales (et rien d'autre)
 
-### 1. `supabase/functions/bulk-insert-parts/index.ts` — New Edge Function
+| # | Ligne(s) | Action |
+|---|---|---|
+| 1 | Ligne 7 | Ajouter `MessageSquare` à l'import lucide-react existant |
+| 2 | Après ligne 22 | Ajouter `import GarageMessages from '@/components/garage/GarageMessages';` |
+| 3 | Ligne 75 | Changer le type useState : `'garage' \| 'orders' \| 'messages'` |
+| 4 | useEffect ligne 101-119 | Ajouter au début la lecture de `searchParams.get('tab') === 'messages'` → `setActiveTab('messages')` (en respectant le pattern existant avec `searchParams.delete('tab')`) |
+| 5a | Après ligne 176 (après bouton COMMANDES) | Insérer le 3ème bouton MESSAGES (même structure que les autres, icône `MessageSquare`) |
+| 5b | Lignes 460-471 (bloc `else`) | Transformer en `activeTab === 'orders'` + ajouter un nouveau bloc `activeTab === 'messages'` qui rend `<GarageMessages />` (sans prop, le composant gère son auth lui-même) |
 
-Modeled on `bulk-insert-scooters`, adapted for the `parts` table:
+## Note importante sur le point 5
+`GarageMessages` est un default export qui n'accepte pas de prop `userId` (il utilise `useAuth()` en interne). Donc l'appel sera `<GarageMessages />` et non `<GarageMessages userId={user?.id} />` comme indiqué dans la demande — sinon TypeScript bloquera. Je documente ce micro-ajustement pour transparence.
 
-- **Auth**: `x-admin-secret` header checked against `ADMIN_BULK_SECRET`
-- **Client**: service_role to bypass RLS
-- **Input**: `{ categoryName, categorySlug?, parts: [...] }`
-- **Category handling**: Upsert category by slug (like brand upsert in scooters)
-- **Part upsert**: For each part, upsert into `parts` table on conflict `slug` with `published: false`
-- **Fields mapped**: `name`, `slug`, `price`, `image_url`, `description`, `stock_quantity`, `difficulty_level`, `sku`, `meta_title`, `meta_description`, `youtube_video_id`, `estimated_install_time_minutes`, `required_tools`, `technical_metadata`
-- **Response**: `{ success, category, results: { inserted, updated, errors } }`
-
-### 2. `supabase/config.toml` — Add function config
-
-Add `[functions.bulk-insert-parts]` with `verify_jwt = false` (same as bulk-insert-scooters).
-
-### 3. `scripts/sync-parts.js` — Local import script
-
-Clone of `sync-scooters.js` adapted for parts:
-- Reads JSON from `--file` argument
-- POSTs to `bulk-insert-parts` endpoint with `x-admin-secret` header
-- Logs inserted/updated/errors
-
-### 4. Deploy the function
-
-Use the deploy tool to push `bulk-insert-parts` to the server.
-
-### 5. Test the deployed function
-
-Curl the endpoint to verify it responds correctly.
-
-## JSON format for part imports
-
-```json
-{
-  "categoryName": "Pneus",
-  "categorySlug": "pneus",
-  "parts": [{
-    "name": "Pneu 10x2.5 Wattiz",
-    "slug": "pneu-10x2-5-wattiz",
-    "price": 15.00,
-    "stock_quantity": 0,
-    "difficulty_level": 2,
-    "description": "<p>Description HTML</p>",
-    "meta_title": "Pneu 10x2.5 | PiècesTrottinettes.fr",
-    "meta_description": "155 chars max",
-    "technical_metadata": {
-      "sources": ["https://example.com"]
-    }
-  }]
-}
-```
-
-## Files summary
-
-| File | Action |
-|------|--------|
-| `supabase/functions/bulk-insert-parts/index.ts` | Create |
-| `supabase/config.toml` | Add function config block |
-| `scripts/sync-parts.js` | Create |
-| Deploy `bulk-insert-parts` | Via deploy tool |
-| Test endpoint | Via curl tool |
+## Garanties
+- AUCUNE autre ligne de `Garage.tsx` ne sera touchée
+- AUCUN autre fichier ne sera modifié
+- Les 524 lignes existantes (mobile blocks, desktop grid, FAB, modals) restent strictement intactes
 
