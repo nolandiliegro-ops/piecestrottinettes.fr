@@ -480,7 +480,7 @@ const Garage = () => {
                   </motion.div>
                 )}
               </motion.div>
-            ) : (
+            ) : activeTab === 'orders' ? (
               <motion.div
                 key="orders"
                 initial={{ opacity: 0, x: 20 }}
@@ -490,6 +490,17 @@ const Garage = () => {
                 className="flex-1 overflow-y-auto pb-8"
               >
                 <OrderHistorySection userId={user?.id} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="messages"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="flex-1 overflow-y-auto pb-8 px-4 md:px-6"
+              >
+                <GarageMessages />
               </motion.div>
             )}
           </AnimatePresence>
