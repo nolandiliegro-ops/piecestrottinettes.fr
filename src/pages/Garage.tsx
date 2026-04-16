@@ -100,6 +100,14 @@ const Garage = () => {
   };
 
   useEffect(() => {
+    if (searchParams.get('tab') === 'messages') {
+      setActiveTab('messages');
+      searchParams.delete('tab');
+      setSearchParams(searchParams, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
+
+  useEffect(() => {
     if (scooters && scooters.length > 0 && !selectedScooter) {
       const scanModelSlug = searchParams.get("scan_model");
       if (scanModelSlug) {
