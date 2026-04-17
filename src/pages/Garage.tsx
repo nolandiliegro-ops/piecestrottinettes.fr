@@ -171,7 +171,7 @@ const Garage = () => {
                 )}
               >
                 <Package className="w-4 h-4 shrink-0" />
-                <span className="font-display tracking-wide">GARAGE</span>
+                <span className="font-medium">Garage</span>
               </button>
 
               {/* Tab: Mes Commandes */}
@@ -185,7 +185,7 @@ const Garage = () => {
                 )}
               >
                 <ShoppingBag className="w-4 h-4 shrink-0" />
-                <span className="font-display tracking-wide">COMMANDES</span>
+                <span className="font-medium">Commandes</span>
               </button>
 
               {/* Tab: Messages */}
@@ -199,7 +199,7 @@ const Garage = () => {
                 )}
               >
                 <MessageSquare className="w-4 h-4 shrink-0" />
-                <span className="font-display tracking-wide">MESSAGES</span>
+                <span className="font-medium">Messages</span>
                 {totalUnread > 0 && (
                   <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
                     {totalUnread > 9 ? '9+' : totalUnread}
