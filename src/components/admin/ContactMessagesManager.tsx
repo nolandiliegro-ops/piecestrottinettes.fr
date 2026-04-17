@@ -80,17 +80,17 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
   const fetchReplies = async () => {
     setLoading(true);
     // Fetch replies linked to this contact thread
-    const queries: Promise<any>[] = [
-      supabase.from('order_messages').select('*').eq('contact_message_id', contact.id).order('created_at', { ascending: true })
+    const promises: Promise<{ data: any[] | null }>[] = [
+      Promise.resolve(supabase.from('order_messages').select('*').eq('contact_message_id', contact.id).order('created_at', { ascending: true })) as any,
     ];
     if (matchedUserId) {
-      queries.push(
-        supabase.from('order_messages').select('*').eq('user_id', matchedUserId).is('order_id', null).is('contact_message_id', null).order('created_at', { ascending: true })
+      promises.push(
+        Promise.resolve(supabase.from('order_messages').select('*').eq('user_id', matchedUserId).is('order_id', null).is('contact_message_id', null).order('created_at', { ascending: true })) as any
       );
     }
-    const results = await Promise.all(queries);
+    const results = await Promise.all(promises);
     const all: OrderMsg[] = [];
-    for (const r of results) if (r.data) all.push(...(r.data as OrderMsg[]));
+    for (const r of results) if (r?.data) all.push(...(r.data as OrderMsg[]));
     // Dedup by id
     const seen = new Set<string>();
     const dedup = all.filter(m => { if (seen.has(m.id)) return false; seen.add(m.id); return true; });
