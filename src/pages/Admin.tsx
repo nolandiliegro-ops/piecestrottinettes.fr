@@ -17,6 +17,11 @@ const Admin = () => {
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'dashboard');
 
+  useEffect(() => {
+    const tab = searchParams.get('tab');
+    if (tab && tab !== activeTab) setActiveTab(tab);
+  }, [searchParams]);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-[hsl(0_0%_10%)] flex items-center justify-center">
