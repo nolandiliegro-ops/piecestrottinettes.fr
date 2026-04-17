@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X, ExternalLink } from 'lucide-react';
+import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X, ExternalLink, Lock } from 'lucide-react';
 import { toast } from 'sonner';
 
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
@@ -18,6 +18,8 @@ const uploadMessageImage = async (file: File, userId: string): Promise<string> =
   const { data } = supabase.storage.from('order-messages-images').getPublicUrl(path);
   return data.publicUrl;
 };
+
+type ConvStatus = 'pending' | 'replied' | 'closed';
 
 interface ContactMessage {
   id: string;
@@ -42,7 +44,7 @@ interface OrderMsg {
 
 interface ClientThread {
   user_id: string;
-  order_id: string | null; // null = general question, string = order-specific
+  order_id: string | null;
   order_number: string | null;
   display_name: string;
   email: string;
@@ -50,7 +52,14 @@ interface ClientThread {
   last_message_at: string;
   message_count: number;
   unread_count: number;
+  status: ConvStatus;
 }
+
+const STATUS_PILL: Record<ConvStatus, { label: string; cls: string }> = {
+  pending: { label: 'En attente', cls: 'bg-amber-500/20 text-amber-400 border-amber-500/30' },
+  replied: { label: 'Répondu', cls: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
+  closed: { label: 'Fermé', cls: 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_60%)] border-[hsl(0_0%_25%)]' },
+};
 
 // ─── Contact Tab ───
 const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRefresh: () => void }) => {
@@ -116,8 +125,22 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   const [sending, setSending] = useState(false);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [closing, setClosing] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+
+  const markClientMessagesRead = async () => {
+    let q = supabase
+      .from('order_messages')
+      .update({ read_at: new Date().toISOString() })
+      .eq('user_id', thread.user_id)
+      .eq('sender_type', 'client')
+      .is('read_at', null);
+    if (thread.order_id) q = q.eq('order_id', thread.order_id);
+    else q = q.is('order_id', null);
+    await q;
+  };
 
   const fetchMessages = async () => {
     setLoading(true);
@@ -125,17 +148,21 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
       .from('order_messages')
       .select('*')
       .eq('user_id', thread.user_id);
-    
+
     if (thread.order_id) {
       query = query.eq('order_id', thread.order_id);
     } else {
       query = query.is('order_id', null);
     }
-    
+
     const { data, error } = await query.order('created_at', { ascending: true });
     if (error) { console.error(error); setLoading(false); return; }
     setMessages((data || []) as OrderMsg[]);
     setLoading(false);
+
+    // Mark client messages as read on open
+    const hasUnread = (data || []).some(m => m.sender_type === 'client' && !m.read_at);
+    if (hasUnread) markClientMessagesRead();
   };
 
   useEffect(() => { fetchMessages(); }, [thread.user_id]);
@@ -176,7 +203,6 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
       });
       if (error) throw error;
 
-      // Send email notification to client
       if (thread.email) {
         try {
            await supabase.functions.invoke('send-message-notification', {
@@ -206,6 +232,28 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
     }
   };
 
+  const handleClose = async () => {
+    setClosing(true);
+    try {
+      const payload = {
+        user_id: thread.user_id,
+        order_id: thread.order_id,
+        status: 'closed' as const,
+        updated_at: new Date().toISOString(),
+      };
+      const { error } = await supabase
+        .from('conversation_status')
+        .upsert(payload, { onConflict: 'user_id,order_id' });
+      if (error) throw error;
+      toast.success('Conversation fermée');
+      onBack();
+    } catch (e: any) {
+      toast.error(e?.message || 'Erreur lors de la fermeture');
+    } finally {
+      setClosing(false);
+    }
+  };
+
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -214,8 +262,6 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   };
 
   const formatTime = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
-
-  const navigate = useNavigate();
 
   return (
     <div className="flex flex-col h-[500px]">
@@ -238,6 +284,9 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
                 💬 Question générale
               </span>
             )}
+            <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[11px] font-semibold ${STATUS_PILL[thread.status].cls}`}>
+              {STATUS_PILL[thread.status].label}
+            </span>
           </div>
           <p className="text-xs text-[hsl(0_0%_60%)] truncate">
             <span className="font-medium text-[hsl(0_0%_85%)]">{thread.display_name}</span>
@@ -254,6 +303,18 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
           >
             <ExternalLink className="w-3.5 h-3.5" />
             Voir la commande
+          </Button>
+        )}
+        {thread.status !== 'closed' && (
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={closing}
+            onClick={handleClose}
+            className="gap-1.5 border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0"
+          >
+            {closing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />}
+            Fermer
           </Button>
         )}
       </div>
@@ -325,11 +386,11 @@ const GarageTab = () => {
   const [threads, setThreads] = useState<ClientThread[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedThread, setSelectedThread] = useState<ClientThread | null>(null);
+  const [filter, setFilter] = useState<'all' | ConvStatus>('all');
 
   const fetchThreads = async () => {
     setLoading(true);
 
-    // 1. Get all client messages
     const { data: clientMsgs, error } = await supabase
       .from('order_messages')
       .select('*')
@@ -338,7 +399,6 @@ const GarageTab = () => {
     if (error) { console.error(error); setLoading(false); return; }
     if (!clientMsgs || clientMsgs.length === 0) { setThreads([]); setLoading(false); return; }
 
-    // 2. Group by user_id + order_id (separate threads per order and general)
     const grouped = new Map<string, OrderMsg[]>();
     for (const m of clientMsgs) {
       if (!m.user_id) continue;
@@ -351,15 +411,10 @@ const GarageTab = () => {
     if (threadKeys.length === 0) { setThreads([]); setLoading(false); return; }
 
     const userIds = [...new Set(threadKeys.map(k => k.split('__')[0]))];
-    const orderIds = [...new Set(
-      threadKeys.map(k => k.split('__')[1]).filter(id => id !== 'general')
-    )];
 
-    // 3. Resolve names from profiles
     const { data: profiles } = await supabase.from('profiles').select('id, display_name').in('id', userIds);
     const profileMap = new Map((profiles || []).map(p => [p.id, p.display_name || '']));
 
-    // 4. Resolve names/emails from orders + order numbers
     const { data: orders } = await supabase
       .from('orders')
       .select('id, user_id, order_number, customer_first_name, customer_last_name, customer_email')
@@ -373,7 +428,17 @@ const GarageTab = () => {
       orderNumberMap.set(o.id, o.order_number);
     }
 
-    // 5. Build threads
+    // Fetch conversation statuses
+    const { data: statuses } = await supabase
+      .from('conversation_status')
+      .select('user_id, order_id, status')
+      .in('user_id', userIds);
+    const statusMap = new Map<string, ConvStatus>();
+    for (const s of (statuses || [])) {
+      const key = `${s.user_id}__${s.order_id || 'general'}`;
+      statusMap.set(key, s.status as ConvStatus);
+    }
+
     const result: ClientThread[] = threadKeys.map(key => {
       const [uid, oid] = key.split('__');
       const msgs = grouped.get(key)!;
@@ -382,6 +447,7 @@ const GarageTab = () => {
       const displayName = userInfo?.name || profileName || 'Client';
       const email = userInfo?.email || '';
       const isGeneral = oid === 'general';
+      const status = statusMap.get(key) || 'pending';
 
       return {
         user_id: uid,
@@ -393,15 +459,34 @@ const GarageTab = () => {
         last_message_at: msgs[0].created_at,
         message_count: msgs.length,
         unread_count: msgs.filter(m => !m.read_at).length,
+        status,
       };
     });
 
-    result.sort((a, b) => new Date(b.last_message_at).getTime() - new Date(a.last_message_at).getTime());
+    // Sort: pending first, then by date desc
+    const statusOrder: Record<ConvStatus, number> = { pending: 0, replied: 1, closed: 2 };
+    result.sort((a, b) => {
+      const so = statusOrder[a.status] - statusOrder[b.status];
+      if (so !== 0) return so;
+      return new Date(b.last_message_at).getTime() - new Date(a.last_message_at).getTime();
+    });
     setThreads(result);
     setLoading(false);
   };
 
   useEffect(() => { fetchThreads(); }, []);
+
+  const counts = useMemo(() => ({
+    all: threads.length,
+    pending: threads.filter(t => t.status === 'pending').length,
+    replied: threads.filter(t => t.status === 'replied').length,
+    closed: threads.filter(t => t.status === 'closed').length,
+  }), [threads]);
+
+  const filteredThreads = useMemo(
+    () => filter === 'all' ? threads : threads.filter(t => t.status === filter),
+    [threads, filter]
+  );
 
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
@@ -410,40 +495,68 @@ const GarageTab = () => {
   }
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
-  if (threads.length === 0) return <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucun message garage.</div>;
+
+  const FilterBtn = ({ value, label, count, color }: { value: 'all' | ConvStatus; label: string; count: number; color?: string }) => (
+    <button
+      onClick={() => setFilter(value)}
+      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+        filter === value
+          ? 'bg-primary/20 text-primary border-primary/40'
+          : `bg-[hsl(0_0%_100%/0.04)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_65%)] hover:text-[hsl(0_0%_90%)] ${color || ''}`
+      }`}
+    >
+      {label} <span className="opacity-70">({count})</span>
+    </button>
+  );
 
   return (
-    <div className="space-y-2">
-      {threads.map(t => (
-        <div
-          key={`${t.user_id}-${t.order_id || 'general'}`}
-          onClick={() => setSelectedThread(t)}
-          className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
-        >
-          <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
-            {t.order_id ? <Package className="w-4 h-4 text-primary" /> : <MessageSquare className="w-4 h-4 text-primary" />}
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-0.5">
-              <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{t.display_name}</span>
-              <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
-              <span className="text-xs text-primary/80 font-mono">
-                {t.order_number || 'Question générale'}
-              </span>
+    <div className="space-y-3">
+      <div className="flex flex-wrap gap-2">
+        <FilterBtn value="all" label="Tous" count={counts.all} />
+        <FilterBtn value="pending" label="En attente" count={counts.pending} />
+        <FilterBtn value="replied" label="Répondus" count={counts.replied} />
+        <FilterBtn value="closed" label="Fermés" count={counts.closed} />
+      </div>
+
+      {filteredThreads.length === 0 ? (
+        <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucune conversation.</div>
+      ) : (
+        <div className="space-y-2">
+          {filteredThreads.map(t => (
+            <div
+              key={`${t.user_id}-${t.order_id || 'general'}`}
+              onClick={() => setSelectedThread(t)}
+              className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
+            >
+              <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
+                {t.order_id ? <Package className="w-4 h-4 text-primary" /> : <MessageSquare className="w-4 h-4 text-primary" />}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+                  <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{t.display_name}</span>
+                  <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
+                  <span className="text-xs text-primary/80 font-mono">
+                    {t.order_number || 'Question générale'}
+                  </span>
+                  <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[10px] font-semibold ${STATUS_PILL[t.status].cls}`}>
+                    {STATUS_PILL[t.status].label}
+                  </span>
+                </div>
+                <p className="text-xs text-[hsl(0_0%_60%)] truncate">{t.last_message.substring(0, 80)}</p>
+              </div>
+              <div className="flex flex-col items-end gap-1 shrink-0">
+                <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(t.last_message_at)}</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xs text-[hsl(0_0%_50%)]">{t.message_count} msg</span>
+                  {t.unread_count > 0 && (
+                    <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">{t.unread_count}</span>
+                  )}
+                </div>
+              </div>
             </div>
-            <p className="text-xs text-[hsl(0_0%_60%)] truncate">{t.last_message.substring(0, 80)}</p>
-          </div>
-          <div className="flex flex-col items-end gap-1 shrink-0">
-            <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(t.last_message_at)}</span>
-            <div className="flex items-center gap-1.5">
-              <span className="text-xs text-[hsl(0_0%_50%)]">{t.message_count} msg</span>
-              {t.unread_count > 0 && (
-                <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">{t.unread_count}</span>
-              )}
-            </div>
-          </div>
+          ))}
         </div>
-      ))}
+      )}
     </div>
   );
 };
