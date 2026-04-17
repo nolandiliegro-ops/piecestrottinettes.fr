@@ -720,7 +720,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 };
 
 // ─── Garage Tab ───
-const GarageTab = () => {
+const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: string | null; onSelectionChange?: (userId: string | null) => void } = {}) => {
   const [threads, setThreads] = useState<ClientThread[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedThread, setSelectedThread] = useState<ClientThread | null>(null);
