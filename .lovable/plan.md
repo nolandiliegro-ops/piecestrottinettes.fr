@@ -1,104 +1,73 @@
 
 
-## Diagnostic rapide
+## Diagnostic doublon
 
-**Sources de données disponibles** (vérifiées dans le schéma) :
-- `profiles` (id, display_name, performance_points, created_at) — un row par user inscrit
-- `orders` (user_id, customer_email, customer_first_name, customer_last_name, total_ttc, status, created_at) — inclut commandes guest (user_id NULL)
-- `user_garage` (user_id, scooter_model_id, nickname) → join `scooter_models` (name) + `brands`
-- `order_messages` (user_id, message, created_at, sender_type) — dernier message client/admin
-- `contact_messages` (email, name, matched_user_id, created_at) — pour clients arrivés via formulaire
+L'actuel `useClientsData` indexe par `user_id || email`. Pour un user inscrit qui a aussi commandé en guest avant inscription, on crée 2 entrées. **Fix** : indexer **uniquement par email** (lowercased + trim) comme clé canonique. `user_id` devient un attribut fusionnable.
 
-**Note** : pas d'accès direct à `auth.users` côté frontend. On utilise `profiles.created_at` comme proxy d'inscription. Pour les guests sans compte, on les identifie via `orders.customer_email` quand `user_id IS NULL`.
+## Plan d'exécution — refonte `ClientsManager.tsx` uniquement
 
-## Plan d'exécution
+### 1. Nouvelle stratégie de consolidation
+- **Clé unique** : `email.toLowerCase().trim()`
+- Sources fusionnées dans une `Map<email, Client>` :
+  - `profiles` → email récupéré via `orders.customer_email` matché sur `user_id`, OU via `contact_messages.email` matché sur `matched_user_id`
+  - `orders` → email direct (`customer_email`)
+  - `contact_messages` → email direct
+  - `user_garage` → rattaché via `user_id` → email
+  - `order_messages` → rattaché via `user_id` → email
+- Si un email a plusieurs `user_id` candidats (rare), garder le plus ancien (`profiles.created_at` min).
 
-### Étape 1 — Nouveau composant `src/components/admin/ClientsManager.tsx` (~400 lignes)
+### 2. Champs enrichis par client
+- `phone` (depuis `orders.customer_phone`, premier non-null)
+- `firstOrderDate` / `lastOrderDate` (min/max `orders.created_at`)
+- `avgCart` = `totalRevenue / orderCount` (0 si pas de commande)
+- `loyaltyTier` : 0 cmd → "Aucun", 1 → "Nouveau", 2-4 → "Régulier", 5+ → "VIP"
 
-**Structure** :
-- Header : titre + barre recherche (nom/email) + bouton "Exporter CSV"
-- Filtres pills : `Tous / Avec commandes / Sans commande / Actifs (90j) / Inactifs`
-- Table responsive (desktop) / cards (mobile) :
-  - Nom + Email
-  - Commandes (count) + CA Total (sum total_ttc, status='paid'+ statuts post)
-  - Garage (count scooters + nom du premier)
-  - Dernière activité (max de : last order, last message, last contact)
-  - Source (badge : Inscription / Garage / Commande / Contact / Guest)
-  - Statut pill (vert Actif / gris Inactif)
-- Click row → `ClientDetailSheet` (Sheet droit, pattern existant comme `OrderDetailSheet`)
+### 3. UI Table refonte
+- Colonnes : Nom · Email · Tél · Commandes · CA · Panier moy. · Fidélité · Dernière activité · Statut
+- En-têtes cliquables (sort asc/desc avec icône chevron) : nom, commandes, CA, activité
+- Pills filtres :
+  - Ligne 1 : Tous / Avec commandes / Sans commande / Actifs / Inactifs
+  - Ligne 2 : Tous fidélité / Nouveau / Régulier / VIP
 
-### Étape 2 — Hook de consolidation `useClientsData` (inline ou séparé)
+### 4. ClientDetailSheet v2 (panel latéral droit, ~50% largeur)
+- **Header** : avatar initiales (gradient sauge) + nom + email + tel + 2 badges (fidélité + source)
+- **Stats grid 4 cards** : Commandes, CA Total, Panier moyen, Messages
+- **Action principale** : bouton vert "Envoyer un message" (ouvre `SendMessageDialog`)
+- **Tabs `shadcn`** : Commandes / Messages / Garage
+  - Commandes : liste compacte (#, statut pill, total, date) → click = `setSearchParams({tab:'orders', orderId})`  
+  - Messages : 5 derniers (extrait + date + sender pill) → click = `navigate('/admin?tab=messages&garage=true&userId=X')`
+  - Garage : cartes scooters (nom + nickname + specs power/range)
 
-Stratégie : **plusieurs queries parallèles** + consolidation côté client (pas de RPC, plus simple et chirurgical).
+### 5. SendMessageDialog (sous-composant inline ~80 lignes)
+- Réutilise pattern existant de `ContactConversationView` (déjà dans `ContactMessagesManager.tsx`)
+- Champs : message (textarea) + paperclip upload `order-messages-images`
+- Sur envoi :
+  1. INSERT `order_messages` : `sender_type='admin'`, `order_id=null`, `user_id=clientUserId` (si existe), sinon contact_message_id du dernier contact
+  2. Invoke `send-message-notification` `{recipient:'client', customerEmail, customerName, messageText, imageUrl, userId}`
+  3. Toast succès + close
+- Note : si client n'a pas de `user_id` (jamais inscrit), désactiver le bouton avec tooltip "Client guest — pas de compte"
 
-```ts
-// 4 queries parallèles via TanStack Query
-1. profiles → tous les users inscrits
-2. orders → group manuel par user_id ET par customer_email (pour guests)
-3. user_garage + join scooter_models/brands
-4. order_messages → dernier message par user_id
-5. contact_messages → matched_user_id ou email
-```
+### 6. Export CSV enrichi
+Colonnes : `Nom;Email;Téléphone;Date inscription;Première commande;Dernière commande;Nb commandes;CA total;Panier moyen;Statut fidélité;Trottinettes;Dernière activité;Source;Statut`
+UTF-8 BOM + `;` séparateur (déjà en place).
 
-Consolidation : Map clé `user_id || email`, fusion des sources, calcul status (last activity > 90j = inactif), tri par dernière activité DESC.
+## Tables interrogées (lecture seule, RLS admin déjà OK)
+- `profiles`, `orders`, `user_garage`, `order_messages`, `contact_messages`, `scooter_models`, `brands`
 
-### Étape 3 — `ClientDetailSheet` (sous-composant inline)
-
-Sheet à droite avec sections :
-- En-tête identité : nom, email, badge source, performance_points
-- Stats : commandes / CA total / scooters garage / messages
-- Liste commandes (compacte, click → query param vers onglet Commandes)
-- Liste scooters garage (nom + nickname)
-- Derniers messages (3-5 derniers, click → deep-link vers Messages avec userId)
-
-### Étape 4 — Export CSV
-
-Fonction `exportToCSV()` :
-- Colonnes : Nom, Email, Date inscription, Nb commandes, CA total, Scooters, Dernière activité, Source, Statut
-- Encodage UTF-8 BOM + séparateur `;` pour Excel FR
-- Trigger via `Blob` + `URL.createObjectURL` + `<a download>`
-
-### Étape 5 — Intégration nav
-
-**`src/components/admin/AdminLayout.tsx`** :
-- Ajouter `{ id: 'clients', icon: Users, label: 'Clients' }` dans `NAV_ITEMS` entre Inventaire et Scanner (note : Commandes n'est pas dans la nav principale actuelle ; à placer entre Inventaire et Scanner pour ergonomie, ou Scanner et Messages selon preference)
-- Import `Users` depuis lucide-react
-
-**`src/pages/Admin.tsx`** :
-- Import `ClientsManager`
-- Ajouter `{activeTab === 'clients' && <ClientsManager />}`
+**Aucune migration SQL nécessaire** (toutes les colonnes existent : `customer_phone` sur `orders`, `contact_message_id` sur `order_messages`).
 
 ## Récap fichiers touchés
 
 | Fichier | Action |
 |---|---|
-| `src/components/admin/ClientsManager.tsx` | **Nouveau** (~400 lignes) avec table + sheet détail + export CSV |
-| `src/components/admin/AdminLayout.tsx` | +1 entrée `clients` dans `NAV_ITEMS` + import icône |
-| `src/pages/Admin.tsx` | +1 import + 1 ligne switch |
-
-## Tables interrogées (lecture seule)
-
-- `profiles` (SELECT all — RLS admin OK)
-- `orders` (SELECT all — RLS admin OK)
-- `user_garage` (SELECT all via admin role) — ⚠️ **vérifier RLS** : actuellement seul "users can view own garage" existe. **Action** : ajouter policy admin SELECT sur `user_garage` via migration légère.
-- `order_messages` (SELECT all — RLS admin OK)
-- `contact_messages` (SELECT all — RLS admin OK)
-- `scooter_models` + `brands` (public read OK)
-
-## Migration SQL nécessaire (1 policy)
-
-```sql
-CREATE POLICY "Admins can view all garages"
-ON public.user_garage FOR SELECT TO authenticated
-USING (has_role(auth.uid(), 'admin'::app_role));
-```
+| `src/components/admin/ClientsManager.tsx` | Refonte complète : nouvelle déduplication par email + tri + filtres fidélité + Sheet v2 avec tabs + SendMessageDialog inline + export enrichi |
+| `AdminLayout.tsx` | **Inchangé** |
+| `Admin.tsx` | **Inchangé** |
 
 ## Garanties
-
-- 0 modification des onglets existants (Dashboard, Inventaire, Scanner, Messages, Réglages)
-- 0 modification du flow Garage utilisateur
-- Read-only sur toutes les tables
-- Guests (user_id NULL) intégrés via email matching
-- Pattern UI cohérent (table + Sheet identique à `OrderDetailSheet`)
-- Performance : 5 queries TanStack parallèles, cache 60s
+- 0 doublon : un email = une fiche
+- 0 régression : nav admin et autres onglets non touchés
+- Pas de migration SQL
+- Réutilisation du pattern messaging existant (storage bucket + edge function `send-message-notification` déjà fonctionnelle)
+- Pas de réécriture de composants externes
 
