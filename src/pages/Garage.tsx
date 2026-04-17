@@ -185,7 +185,7 @@ const Garage = () => {
                 )}
               >
                 <ShoppingBag className="w-4 h-4 shrink-0" />
-                <span className="font-display tracking-wide">COMMANDES</span>
+                <span className="font-medium">Commandes</span>
               </button>
 
               {/* Tab: Messages */}
