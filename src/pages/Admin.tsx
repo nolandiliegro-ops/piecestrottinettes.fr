@@ -11,6 +11,7 @@ import AdminScanner from '@/components/admin/AdminScanner';
 import AdminSettings from '@/components/admin/AdminSettings';
 import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 import ClientsManager from '@/components/admin/ClientsManager';
+import OrdersManager from '@/components/admin/OrdersManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -66,6 +67,7 @@ const Admin = () => {
       <SEO noindex title="Administration" description="Back-office Pièces Trottinettes" />
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
+      {activeTab === 'orders' && <OrdersManager />}
       {activeTab === 'clients' && <ClientsManager />}
       {activeTab === 'scanner' && <AdminScanner />}
       {activeTab === 'messages' && <ContactMessagesManager />}
