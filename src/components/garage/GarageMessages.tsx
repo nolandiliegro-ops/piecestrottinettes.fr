@@ -334,8 +334,15 @@ const ConversationList = ({
           >
             <div className="p-5 flex items-center justify-between gap-4 flex-wrap md:flex-nowrap text-left">
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-12 h-12 rounded-xl bg-mineral/10 flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="w-6 h-6 text-mineral" />
+                <div className={cn(
+                  "w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0",
+                  isDirect ? "bg-carbon/10" : "bg-mineral/10"
+                )}>
+                  {isDirect ? (
+                    <MessageSquare className="w-6 h-6 text-carbon" />
+                  ) : (
+                    <Package className="w-6 h-6 text-mineral" />
+                  )}
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-mono text-lg font-bold text-carbon truncate">
