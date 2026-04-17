@@ -67,6 +67,7 @@ const Admin = () => {
       <SEO noindex title="Administration" description="Back-office Pièces Trottinettes" />
       {activeTab === 'dashboard' && <AdminDashboard />}
       {activeTab === 'inventory' && <AdminInventory />}
+      {activeTab === 'orders' && <OrdersManager />}
       {activeTab === 'clients' && <ClientsManager />}
       {activeTab === 'scanner' && <AdminScanner />}
       {activeTab === 'messages' && <ContactMessagesManager />}
