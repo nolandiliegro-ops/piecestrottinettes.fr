@@ -1,44 +1,84 @@
 
 
-# Plan : 2 améliorations messagerie
+`has_role(auth.uid(), 'admin'::app_role)` existe déjà et est largement utilisée dans toutes les policies RLS du projet (visible dans `<db-functions>` et dans toutes les policies admin existantes : `orders`, `parts`, `order_messages`, etc.). Elle s'appuie sur la table `user_roles` avec l'enum `app_role`. C'est la méthode officielle et sécurisée du projet — pas de changement à prévoir.
 
-## AMÉLIORATION 1 — Redesign liste conversations
+# Plan final confirmé
 
-**Fichier 1 : `src/hooks/useOrderMessages.ts`**
-- Ajouter `last_sender_type: 'client' | 'admin'` dans l'interface `ConversationSummary` (L17-23)
-- Dans `useOrderConversations` (L207-228), ajouter `last_sender_type: msgs[0].sender_type` (commandes) et `last_sender_type: directMsgs[0].sender_type` (direct)
+## Migration SQL (inchangée)
 
-**Fichier 2 : `src/components/garage/GarageMessages.tsx`** — uniquement `ConversationList` L316-369
-- Carte blanche `bg-white shadow-sm hover:shadow-lg rounded-2xl p-5` (au lieu de `bg-white/60 backdrop-blur-md`)
-- Badge order vert grand format à gauche : `px-3 py-1.5 rounded-lg bg-green-700 text-white text-sm font-mono font-bold` affichant `PT-XXXX`
-- Badge statut à droite du badge order :
-  - `last_sender_type === 'client'` → pill orange `bg-orange-100 text-orange-700` "En attente"
-  - `last_sender_type === 'admin'` → pill vert `bg-green-100 text-green-700` "Répondu"
-- Aperçu message gris `text-sm text-gray-500` sous le badge (60 chars max, déjà présent)
-- Date relative à droite (gardée)
-- Badge unread rouge (gardé)
-- Mobile : full-width naturel via `w-full`
+```sql
+-- 1. Policy admin pour marquer messages client comme lus
+CREATE POLICY "Admins can mark client messages as read"
+ON public.order_messages FOR UPDATE TO authenticated
+USING (has_role(auth.uid(), 'admin'::app_role) AND sender_type = 'client');
 
-## AMÉLIORATION 2 — Badge unread sur "Mon Garage" navbar
+-- 2. Table conversation_status
+CREATE TABLE public.conversation_status (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  order_id uuid,
+  status text NOT NULL DEFAULT 'pending'
+    CHECK (status IN ('pending','replied','closed')),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  UNIQUE(user_id, order_id)
+);
+ALTER TABLE public.conversation_status ENABLE ROW LEVEL SECURITY;
 
-**Fichier 3 : `src/components/Header.tsx`**
-- Importer `useOrderConversations` depuis `@/hooks/useOrderMessages`
-- Dans le composant : `const { data: convs = [] } = useOrderConversations();` puis `const totalUnread = user ? convs.reduce((s, c) => s + c.unread_count, 0) : 0;`
-- Sur le bouton "Mon Garage" desktop (DropdownMenuTrigger) ET mobile : wrapper `relative` + petit badge rouge `absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 text-white text-[10px] font-bold` affichant `totalUnread` si > 0 (ou point simple si > 9 → "9+")
-- Hook s'auto-désactive si `!user` (déjà géré par `enabled: !!user?.id`)
+CREATE POLICY "Admins full access" ON public.conversation_status
+  FOR ALL TO authenticated
+  USING (has_role(auth.uid(),'admin'::app_role))
+  WITH CHECK (has_role(auth.uid(),'admin'::app_role));
 
-**Onglet MESSAGES dans Garage** : déjà branché sur `useOrderConversations` selon mémoire — pas de modif nécessaire, juste vérification visuelle au test.
+CREATE POLICY "Users view own status" ON public.conversation_status
+  FOR SELECT TO authenticated USING (user_id = auth.uid());
 
-## Récapitulatif
+-- 3. Trigger auto-sync
+CREATE OR REPLACE FUNCTION public.sync_conversation_status()
+RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path=public AS $$
+BEGIN
+  INSERT INTO conversation_status(user_id, order_id, status, updated_at)
+  VALUES (NEW.user_id, NEW.order_id,
+    CASE WHEN NEW.sender_type='client' THEN 'pending' ELSE 'replied' END,
+    now())
+  ON CONFLICT (user_id, order_id) DO UPDATE
+    SET status = CASE
+      WHEN NEW.sender_type='client' THEN 'pending'
+      ELSE 'replied' END,
+    updated_at = now();
+  RETURN NEW;
+END $$;
 
-| Fichier | Modifications |
+CREATE TRIGGER trg_sync_conversation_status
+  AFTER INSERT ON public.order_messages
+  FOR EACH ROW WHEN (NEW.user_id IS NOT NULL)
+  EXECUTE FUNCTION public.sync_conversation_status();
+
+-- 4. Backfill historique
+INSERT INTO conversation_status(user_id, order_id, status, updated_at)
+SELECT DISTINCT ON (user_id, order_id)
+  user_id, order_id,
+  CASE WHEN sender_type='client' THEN 'pending' ELSE 'replied' END,
+  created_at
+FROM order_messages WHERE user_id IS NOT NULL
+ORDER BY user_id, order_id, created_at DESC, id
+ON CONFLICT DO NOTHING;
+```
+
+## Modifications `ContactMessagesManager.tsx`
+
+| Zone | Modification |
 |---|---|
-| `src/hooks/useOrderMessages.ts` | +1 champ interface, +2 lignes dans le mapping |
-| `src/components/garage/GarageMessages.tsx` | Refonte interne `ConversationList` L316-369 uniquement |
-| `src/components/Header.tsx` | +1 import, +2 lignes hook, +badge sur bouton Mon Garage (desktop + mobile) |
+| Interface `ClientThread` | +`status: 'pending'\|'replied'\|'closed'` |
+| `GarageTab.fetchThreads` | Fetch `conversation_status` après build threads, mapper sur chaque thread |
+| `GarageConversationView.fetchMessages` | Mark-as-read auto : update `read_at` sur messages client à l'ouverture |
+| `GarageTab` rendu | Filtres `Tous / En attente / Répondus / Fermés` avec compteurs + tri pending d'abord |
+| Card thread | Pill statut (orange/vert/gris) |
+| `GarageConversationView` header | Bouton "Fermer la conversation" → update status='closed' |
 
 ## Garanties
-- Aucune modif DB / RLS / Edge Function
-- `Garage.tsx`, `ChatView`, `useOrderMessages` (autres fonctions) intacts
-- Le hook `useOrderConversations` se désactive proprement si user déconnecté (badge invisible)
+- `has_role` confirmé fonctionnel (déjà utilisée partout)
+- Aucune modif `GarageMessages.tsx`, `Garage.tsx`, `useOrderMessages.ts`
+- Trigger DB = source de vérité, 0 risque de désync
+- Backfill préserve l'historique existant
+- Réouverture auto si client réécrit après `closed`
 
