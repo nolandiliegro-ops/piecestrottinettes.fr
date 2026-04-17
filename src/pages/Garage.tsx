@@ -171,7 +171,7 @@ const Garage = () => {
                 )}
               >
                 <Package className="w-4 h-4 shrink-0" />
-                <span className="font-display tracking-wide">GARAGE</span>
+                <span className="font-medium">Garage</span>
               </button>
 
               {/* Tab: Mes Commandes */}
