@@ -373,9 +373,19 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
 
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
+  // Sync selection from parent (deep-link)
+  useEffect(() => {
+    if (initialSelectedId !== undefined) setSelectedId(initialSelectedId);
+  }, [initialSelectedId]);
+
+  const setSelected = (id: string | null) => {
+    setSelectedId(id);
+    onSelectionChange?.(id);
+  };
+
   const selected = selectedId ? messages.find(m => m.id === selectedId) : null;
   if (selected) {
-    return <ContactConversationView contact={selected} onBack={() => { setSelectedId(null); onRefresh(); }} onRefresh={onRefresh} />;
+    return <ContactConversationView contact={selected} onBack={() => { setSelected(null); onRefresh(); }} onRefresh={onRefresh} />;
   }
 
   const FilterBtn = ({ value, label, count }: { value: 'all' | ConvStatus; label: string; count: number }) => (
