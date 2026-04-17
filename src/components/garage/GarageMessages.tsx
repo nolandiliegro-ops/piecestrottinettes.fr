@@ -176,6 +176,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
               messageText: fullMessage || '📷 Image',
               conversationId: convId,
               imageUrl,
+              userId: user.id,
             },
           }),
           supabase.functions.invoke('send-message-notification', {
