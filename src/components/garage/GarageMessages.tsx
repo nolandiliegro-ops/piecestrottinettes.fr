@@ -332,38 +332,40 @@ const ConversationList = ({
           >
             <div className="flex items-start gap-3">
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 flex-wrap mb-2">
-                  {isDirect ? (
-                    <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-gray-700 text-white text-sm font-semibold">
-                      <Mail className="w-3.5 h-3.5 mr-1.5" />
-                      Message général
-                    </span>
-                  ) : (
-                    <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-green-700 text-white text-sm font-mono font-bold">
-                      {conv.order_number}
-                    </span>
-                  )}
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="flex items-center gap-2 min-w-0">
+                    {isDirect ? (
+                      <span className="inline-flex items-center text-sm font-medium text-carbon/70">
+                        <Mail className="w-3.5 h-3.5 mr-1.5" />
+                        Message général
+                      </span>
+                    ) : (
+                      <span className="font-mono text-sm font-bold text-carbon truncate">
+                        {conv.order_number}
+                      </span>
+                    )}
+                    {conv.unread_count > 0 && (
+                      <span className="min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center animate-pulse">
+                        {conv.unread_count}
+                      </span>
+                    )}
+                  </div>
                   <span className={cn(
-                    "inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold",
+                    "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium shrink-0",
                     isPending
-                      ? "bg-orange-100 text-orange-700"
-                      : "bg-green-100 text-green-700"
+                      ? "bg-orange-500/15 text-orange-600"
+                      : "bg-green-500/15 text-green-600"
                   )}>
                     {isPending ? 'En attente' : 'Répondu'}
                   </span>
-                  {conv.unread_count > 0 && (
-                    <span className="min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
-                      {conv.unread_count}
-                    </span>
-                  )}
                 </div>
-                <p className="text-sm text-gray-500 truncate">{preview || 'Nouvelle conversation'}</p>
-              </div>
-              <div className="flex flex-col items-end gap-1 shrink-0">
-                <span className="text-[11px] text-gray-400 whitespace-nowrap">
-                  {formatDistanceToNow(new Date(conv.last_message_at), { locale: fr, addSuffix: true })}
-                </span>
-                <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-green-700 transition-colors" />
+                <p className="text-sm text-carbon/50 truncate">{preview || 'Nouvelle conversation'}</p>
+                <div className="flex items-center justify-between mt-2">
+                  <span className="text-[11px] text-carbon/40 whitespace-nowrap">
+                    {formatDistanceToNow(new Date(conv.last_message_at), { locale: fr, addSuffix: true })}
+                  </span>
+                  <ChevronRight className="w-4 h-4 text-carbon/30 group-hover:text-mineral transition-colors" />
+                </div>
               </div>
             </div>
           </motion.button>
