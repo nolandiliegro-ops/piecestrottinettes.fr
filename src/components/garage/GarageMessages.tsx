@@ -738,7 +738,7 @@ const GarageMessages = () => {
             <ConversationList
               conversations={conversations}
               isLoading={isLoading}
-              onSelect={setSelectedConv}
+              onSelect={handleSelectConversation}
             />
           </motion.div>
         )}
