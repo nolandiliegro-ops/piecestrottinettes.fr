@@ -8,6 +8,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useUserGarage } from "@/hooks/useGarage";
 import { useCompatiblePartsCount } from "@/hooks/useCompatiblePartsCount";
 import { useSpotlight } from "@/contexts/SpotlightContext";
+import { useOrderConversations } from "@/hooks/useOrderMessages";
 import { cn } from "@/lib/utils";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
 import logoImage from "@/assets/logo-pt.png";
@@ -31,6 +32,8 @@ const Header = () => {
   const { data: garageScooters, isLoading: garageLoading } = useUserGarage();
   const { data: compatibleCount = 0 } = useCompatiblePartsCount(selectedScooter?.id);
   const { openSpotlight } = useSpotlight();
+  const { data: convs = [] } = useOrderConversations();
+  const totalUnread = user ? convs.reduce((s, c) => s + c.unread_count, 0) : 0;
   const navigate = useNavigate();
 
   // Shimmer animation when item count increases
@@ -375,12 +378,17 @@ const Header = () => {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button 
-                      className="hidden sm:flex rounded-full px-4 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
+                      className="hidden sm:flex relative rounded-full px-4 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
                     >
                       <div className="w-6 h-6 rounded-full bg-garage-foreground/20 flex items-center justify-center text-sm font-semibold">
                         {profile?.display_name?.charAt(0).toUpperCase() || 'R'}
                       </div>
                       Mon Garage
+                      {totalUnread > 0 && (
+                        <span className="absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center border-2 border-background">
+                          {totalUnread > 9 ? '9+' : totalUnread}
+                        </span>
+                      )}
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="w-56">
@@ -467,11 +475,16 @@ const Header = () => {
                 <>
                   <Link 
                     to="/garage"
-                    className="mt-2 flex items-center justify-center gap-2 rounded-full py-3 font-display text-lg tracking-wide bg-garage text-garage-foreground"
+                    className="relative mt-2 flex items-center justify-center gap-2 rounded-full py-3 font-display text-lg tracking-wide bg-garage text-garage-foreground"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Home className="w-4 h-4" />
                     Mon Garage
+                    {totalUnread > 0 && (
+                      <span className="absolute top-2 right-4 min-w-5 h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
+                        {totalUnread > 9 ? '9+' : totalUnread}
+                      </span>
+                    )}
                   </Link>
                   <Button 
                     variant="ghost" 
