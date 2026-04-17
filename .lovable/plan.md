@@ -2,79 +2,94 @@
 
 ## Diagnostic
 
-**1. Garage.tsx (L162)** : `overflow-x-auto` sur le conteneur d'onglets → cause le scroll horizontal disgracieux. Les onglets sont en `flex-shrink-0` avec padding variable.
+**Garage.tsx (L162-209)** : déjà refait en segmented control 3 colonnes (✅ pas de scroll horizontal). **Aucune modif nécessaire** sur les onglets — sauf retirer `font-display tracking-wide` MAJUSCULES qui surcharge ; le style « simple » demandé.
 
-**2. GarageMessages.tsx ConversationList (L317-376)** : style "carte" avec ombres, bordures, espacement `space-y-3` — pas un style messagerie moderne. Manque avatars ronds, statuts en puces sur avatar, séparateurs fins.
-
-**3. Header messagerie (L695-708)** : Titre `font-display tracking-wide MAJUSCULES` + texte support basique. Pas le style iMessage demandé.
+**GarageMessages.tsx ConversationList (L326-380)** : actuellement style iMessage (avatars ronds + puces). À remplacer par style **carte commande** identique à `OrderHistorySection.OrderCard`.
 
 ## Plan d'exécution
 
-### A. `src/pages/Garage.tsx` — onglets fixes (L162-209)
+### A. `src/pages/Garage.tsx` — onglets (alléger)
+Remplacer `font-display tracking-wide` par `font-medium` sur les 3 `<span>` libellés (L174, L188, L202). Reste inchangé.
 
-Remplacer le bloc onglets actuel par un **layout grid 3 colonnes égales** dans un conteneur `bg-carbon/5 rounded-full p-1` (style segmented control iOS) :
-- Conteneur : `grid grid-cols-3 gap-1 w-full md:w-auto md:max-w-md bg-carbon/[0.04] rounded-full p-1`
-- Suppression de `overflow-x-auto`, `flex-shrink-0`
-- Chaque onglet : `flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]`
-- Actif : `bg-white text-carbon shadow-sm`
-- Inactif : `text-carbon/50 hover:text-carbon`
-- Icônes conservées, libellés visibles toujours, badge unread inchangé
+### B. `src/components/garage/GarageMessages.tsx` — ConversationList refonte (L326-380)
 
-### B. `src/components/garage/GarageMessages.tsx` — Header messagerie (L695-708)
+Copie exacte du pattern `OrderCard` :
 
-Nouveau header propre :
 ```tsx
-<div className="flex items-center justify-between mb-6 px-1">
-  <div>
-    <h2 className="text-2xl font-bold text-carbon tracking-tight">Messages</h2>
-    <p className="text-sm text-carbon/50 mt-0.5">
-      {conversations.length} conversation{conversations.length > 1 ? 's' : ''}
-    </p>
-  </div>
-  <Button onClick={...} className="rounded-full bg-carbon hover:bg-carbon/90 text-white gap-2 px-4 h-10 text-sm font-medium shadow-sm">
-    <Plus className="w-4 h-4" /> Nouveau
-  </Button>
+<div className="space-y-3">
+  {conversations.map((conv) => {
+    const isDirect = conv.order_id === 'direct';
+    const preview = (conv.last_message || 'Nouvelle conversation').slice(0, 60);
+    const isPending = conv.last_sender_type === 'client';
+    
+    // Status config aligné OrderHistorySection
+    const statusCfg = isPending
+      ? { label: 'En attente', bgClass: 'bg-orange-500/15', textClass: 'text-orange-600' }
+      : { label: 'Répondu', bgClass: 'bg-green-500/15', textClass: 'text-green-600' };
+    
+    return (
+      <motion.button
+        key={conv.order_id}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        onClick={() => onSelect(conv)}
+        className="w-full bg-white/60 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
+      >
+        <div className="p-5 flex items-center justify-between gap-4 flex-wrap md:flex-nowrap text-left">
+          <div className="flex items-center gap-4 min-w-0">
+            <div className="w-12 h-12 rounded-xl bg-mineral/10 flex items-center justify-center flex-shrink-0">
+              <MessageSquare className="w-6 h-6 text-mineral" />
+            </div>
+            <div className="min-w-0">
+              <h3 className="font-mono text-lg font-bold text-carbon truncate">
+                {isDirect ? 'Message général' : conv.order_number}
+              </h3>
+              <p className="text-sm text-carbon/50 truncate">{preview}</p>
+            </div>
+          </div>
+          
+          {/* Badge statut – style identique StatusBadge commande */}
+          <div className={cn(
+            "px-4 py-1.5 rounded-full border border-current/20",
+            statusCfg.bgClass, statusCfg.textClass
+          )}>
+            <span className="text-xs font-semibold tracking-wide uppercase">{statusCfg.label}</span>
+          </div>
+          
+          {/* Date + unread à droite */}
+          <div className="flex items-center gap-3 ml-auto">
+            <div className="text-right">
+              <p className="text-[10px] text-carbon/40 uppercase tracking-wide">Dernier msg</p>
+              <p className="text-sm font-medium text-carbon">
+                {format(new Date(conv.last_message_at), "d MMM", { locale: fr })}
+              </p>
+            </div>
+            {conv.unread_count > 0 && (
+              <span className="min-w-[22px] h-[22px] px-1.5 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse">
+                {conv.unread_count > 9 ? '9+' : conv.unread_count}
+              </span>
+            )}
+          </div>
+        </div>
+      </motion.button>
+    );
+  })}
 </div>
 ```
 
-### C. `src/components/garage/GarageMessages.tsx` — ConversationList refonte (L317-375)
-
-Style **iMessage/WhatsApp** :
-- Conteneur : `bg-white rounded-2xl overflow-hidden divide-y divide-gray-100`
-- Plus de `space-y-3`, plus de cartes individuelles avec ombres
-- Chaque ligne : `w-full text-left px-4 py-3.5 hover:bg-gray-50/80 transition-colors flex items-center gap-3`
-
-**Avatar rond (52px)** :
-- Gradient sauge : `bg-gradient-to-br from-mineral to-mineral-dark text-white`
-- Initiales : `PT` pour commande (depuis `order_number`) ou `M` pour Message général
-- `rounded-full w-13 h-13 flex items-center justify-center font-bold text-base relative shrink-0`
-
-**Indicateurs sur avatar** :
-- `unread_count > 0` → cercle rouge top-right : `absolute -top-0.5 -right-0.5 min-w-[20px] h-5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center border-2 border-white`
-- Statut "Répondu" (`!isPending`) → puce verte bottom-right : `absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-green-500 border-2 border-white`
-- Statut "En attente" (`isPending`) → puce orange animée pulse : même position, `bg-orange-500 animate-pulse`
-
-**Contenu central (flex-1 min-w-0)** :
-- Ligne 1 : badge PT-XXXX vert pill compact `inline-flex px-2 py-0.5 rounded-md bg-mineral/10 text-mineral text-[11px] font-mono font-semibold` + nom en gras `font-semibold text-carbon text-sm truncate` (ou "Message général" pour direct)
-- Ligne 2 : aperçu message `text-sm text-carbon/50 truncate mt-0.5`
-
-**Date à droite** (shrink-0) :
-- `text-[11px] text-carbon/40 whitespace-nowrap self-start mt-1`
-- Format court : `formatDistanceToNow` raccourci ou `format(date, 'HH:mm')` si aujourd'hui sinon `dd/MM`
-
-Suppression : badges textuels "Répondu/En attente" (remplacés par puces sur avatar), ChevronRight, bordures lourdes, ombres `shadow-sm/lg`.
+Suppressions : conteneur `bg-white rounded-2xl divide-y`, avatars ronds gradient, puces de statut sur avatar, `formatShortDate`.
 
 ## Fichiers touchés
 
 | Fichier | Action |
 |---|---|
-| `src/pages/Garage.tsx` | Refonte conteneur onglets L162-209 → grid 3 cols segmented control |
-| `src/components/garage/GarageMessages.tsx` | Refonte ConversationList L317-375 + Header L695-708 |
+| `src/pages/Garage.tsx` | Remplacer `font-display tracking-wide` → `font-medium` sur 3 libellés onglets |
+| `src/components/garage/GarageMessages.tsx` | Refonte L326-380 ConversationList → cartes style OrderCard |
 
 ## Garanties
-- 0 régression : `useOrderConversations`, `onSelect`, `unread_count`, `last_sender_type` réutilisés tels quels
-- Onglets toujours visibles, plus aucun scroll horizontal
-- Badge messages non lus + sync URL préservés
-- Aucune modif du ChatView, NewMessageForm, ou hooks
-- Mobile-first : segmented control 3 cols full width sous md, max-w-md auto au-dessus
+- Style carte 1:1 avec `OrderHistorySection.OrderCard` (mêmes classes : `bg-white/60`, `rounded-2xl`, `shadow-sm hover:shadow-lg`, padding `p-5`)
+- Badge statut identique au `StatusBadge` commandes (`px-4 py-1.5 rounded-full border border-current/20`, `bg-X/15 text-X-600`)
+- Numéro commande `font-mono text-lg font-bold text-carbon` (même que commandes)
+- Aperçu message tronqué 60 chars en gris clair sous le numéro
+- 0 régression : `useOrderConversations`, `onSelect`, badge unread préservés
 
