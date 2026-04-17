@@ -314,52 +314,55 @@ const ConversationList = ({
   }
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       {conversations.map((conv) => {
         const isDirect = conv.order_id === 'direct';
         const preview = (conv.last_message || '').length > 60
           ? (conv.last_message || '').substring(0, 60) + '…'
           : (conv.last_message || '');
+        const isPending = conv.last_sender_type === 'client';
         return (
           <motion.button
             key={conv.order_id}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             onClick={() => onSelect(conv)}
-            className="w-full text-left p-4 bg-white/60 backdrop-blur-md border border-white/10 rounded-2xl hover:shadow-md transition-all group"
+            className="w-full text-left p-5 bg-white shadow-sm hover:shadow-lg rounded-2xl border border-gray-100 transition-all group"
           >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-mineral/10 flex items-center justify-center shrink-0">
-                {isDirect ? (
-                  <Mail className="w-5 h-5 text-mineral" />
-                ) : (
-                  <Package className="w-5 h-5 text-mineral" />
-                )}
-              </div>
+            <div className="flex items-start gap-3">
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 flex-wrap">
+                <div className="flex items-center gap-2 flex-wrap mb-2">
                   {isDirect ? (
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-carbon/10 text-carbon/70 text-[10px] font-semibold uppercase tracking-wide">
+                    <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-gray-700 text-white text-sm font-semibold">
+                      <Mail className="w-3.5 h-3.5 mr-1.5" />
                       Message général
                     </span>
                   ) : (
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-mineral/15 text-mineral text-[10px] font-mono font-bold uppercase tracking-wide">
+                    <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-green-700 text-white text-sm font-mono font-bold">
                       {conv.order_number}
                     </span>
                   )}
+                  <span className={cn(
+                    "inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold",
+                    isPending
+                      ? "bg-orange-100 text-orange-700"
+                      : "bg-green-100 text-green-700"
+                  )}>
+                    {isPending ? 'En attente' : 'Répondu'}
+                  </span>
                   {conv.unread_count > 0 && (
                     <span className="min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
                       {conv.unread_count}
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-carbon/55 truncate mt-1">{preview || 'Nouvelle conversation'}</p>
+                <p className="text-sm text-gray-500 truncate">{preview || 'Nouvelle conversation'}</p>
               </div>
               <div className="flex flex-col items-end gap-1 shrink-0">
-                <span className="text-[10px] text-carbon/40">
+                <span className="text-[11px] text-gray-400 whitespace-nowrap">
                   {formatDistanceToNow(new Date(conv.last_message_at), { locale: fr, addSuffix: true })}
                 </span>
-                <ChevronRight className="w-4 h-4 text-carbon/30 group-hover:text-mineral transition-colors" />
+                <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-green-700 transition-colors" />
               </div>
             </div>
           </motion.button>

@@ -20,6 +20,7 @@ export interface ConversationSummary {
   last_message: string;
   last_message_at: string;
   unread_count: number;
+  last_sender_type: 'client' | 'admin';
 }
 
 // Fetch messages for a specific order (or direct messages when orderId is 'direct')
@@ -211,6 +212,7 @@ export const useOrderConversations = () => {
               last_message: msgs[0].message,
               last_message_at: msgs[0].created_at,
               unread_count: unread,
+              last_sender_type: msgs[0].sender_type,
             });
           }
         }
@@ -225,6 +227,7 @@ export const useOrderConversations = () => {
           last_message: directMsgs[0].message,
           last_message_at: directMsgs[0].created_at,
           unread_count: unread,
+          last_sender_type: (directMsgs[0] as any).sender_type,
         });
       }
 
