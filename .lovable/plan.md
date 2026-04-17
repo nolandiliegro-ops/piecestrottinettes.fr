@@ -1,86 +1,104 @@
 
 
-# Plan d'exécution étape par étape
+## Diagnostic rapide
 
-## Étape 1 — Migration SQL
-Ajouter sur `contact_messages` :
-- `status text NOT NULL DEFAULT 'pending' CHECK (status IN ('pending','replied','closed'))`
-- `matched_user_id uuid` (nullable, rempli si email matché à un compte)
-- `last_reply_at timestamptz` (pour tri et compteur côté UI)
+**Sources de données disponibles** (vérifiées dans le schéma) :
+- `profiles` (id, display_name, performance_points, created_at) — un row par user inscrit
+- `orders` (user_id, customer_email, customer_first_name, customer_last_name, total_ttc, status, created_at) — inclut commandes guest (user_id NULL)
+- `user_garage` (user_id, scooter_model_id, nickname) → join `scooter_models` (name) + `brands`
+- `order_messages` (user_id, message, created_at, sender_type) — dernier message client/admin
+- `contact_messages` (email, name, matched_user_id, created_at) — pour clients arrivés via formulaire
 
-Ajouter sur `order_messages` :
-- `contact_message_id uuid` (nullable, lie une réponse admin à un thread contact quand le client n'a pas de compte)
+**Note** : pas d'accès direct à `auth.users` côté frontend. On utilise `profiles.created_at` comme proxy d'inscription. Pour les guests sans compte, on les identifie via `orders.customer_email` quand `user_id IS NULL`.
 
-Index : `CREATE INDEX ON order_messages(contact_message_id)`.
+## Plan d'exécution
 
-RLS : policy admin existante couvre déjà la lecture/écriture sur les nouvelles colonnes.
+### Étape 1 — Nouveau composant `src/components/admin/ClientsManager.tsx` (~400 lignes)
 
-## Étape 2 — Refonte `ContactMessagesManager.tsx`
+**Structure** :
+- Header : titre + barre recherche (nom/email) + bouton "Exporter CSV"
+- Filtres pills : `Tous / Avec commandes / Sans commande / Actifs (90j) / Inactifs`
+- Table responsive (desktop) / cards (mobile) :
+  - Nom + Email
+  - Commandes (count) + CA Total (sum total_ttc, status='paid'+ statuts post)
+  - Garage (count scooters + nom du premier)
+  - Dernière activité (max de : last order, last message, last contact)
+  - Source (badge : Inscription / Garage / Commande / Contact / Guest)
+  - Statut pill (vert Actif / gris Inactif)
+- Click row → `ClientDetailSheet` (Sheet droit, pattern existant comme `OrderDetailSheet`)
 
-Structure du composant principal réorganisée mais surgicale (pas de réécriture totale, on garde les onglets `Garage` / `Contact` existants) :
+### Étape 2 — Hook de consolidation `useClientsData` (inline ou séparé)
 
-**A. `ContactTab` v2 (remplace L65-118)**
-- Header : 4 boutons filtres `Tous / En attente / Répondus / Fermés` avec compteurs dynamiques
-- Tri : `pending` d'abord, puis `replied`, puis `closed`, par `last_reply_at DESC` (fallback `created_at`)
-- Carte par message : avatar initiales + nom + email + sujet + extrait + pill statut (orange/vert/gris) + badge "X réponses" si applicable
-- Click carte → `setSelectedContactId(id)` → bascule en mode `ContactConversationView`
+Stratégie : **plusieurs queries parallèles** + consolidation côté client (pas de RPC, plus simple et chirurgical).
 
-**B. Nouveau composant `ContactConversationView`** (~200 lignes, dans le même fichier pour rester chirurgical)
-- Header sticky : back arrow + nom/email + pill statut + bouton "Fermer la conversation"
-- Zone messages :
-  - Bulle initiale (gauche, gris) : sujet en titre + body + timestamp
-  - Réponses admin issues de `order_messages` filtrées par :
-    - `user_id = matched_user_id` AND `order_id IS NULL` (si user matché)
-    - OU `contact_message_id = selectedContactId` (cas guest)
-- Zone reply (sticky bottom) :
-  - Bouton Paperclip → upload `order-messages-images` bucket (réutilise pattern existant GarageMessages)
-  - Textarea + bouton Envoyer
-- Logique d'envoi :
-  1. Tenter match : `SELECT id FROM auth.users WHERE email = contact.email` via une query indirecte (passer par profiles ou orders.customer_email pour récupérer `user_id`)
-  2. Insert dans `order_messages` :
-     - `sender_type='admin'`, `order_id=NULL`
-     - Si match : `user_id=<matched>`
-     - Si pas de match : `user_id=NULL` + `contact_message_id=<contact.id>`
-     - `image_url` si attachement
-  3. Update `contact_messages` : `status='replied'`, `matched_user_id=<si trouvé>`, `last_reply_at=now()`
-  4. Invoke `send-message-notification` avec `recipient='client'`, `customerEmail=contact.email`, `customerName=contact.name`, `messageText`, `imageUrl`, `conversationId=contact.id`
-  5. Toast succès + retour à la liste (ou stay)
-
-**C. Bouton "Fermer la conversation"**
-- Update `contact_messages.status = 'closed'`
-- Toast + invalidate query
-
-## Étape 3 — Edge function `send-message-notification`
-**Aucune modif fonctionnelle** — la signature actuelle gère déjà `recipient='client'` + `imageUrl` + `conversationId`. Le bouton CTA pointe déjà vers `/garage?tab=messages` (le client non inscrit sera redirigé vers login, comportement acceptable).
-
-## Étape 4 — Matching email → user_id
-Helper inline dans `ContactConversationView` :
 ```ts
-const { data } = await supabase
-  .from('orders')
-  .select('user_id')
-  .eq('customer_email', contact.email)
-  .not('user_id', 'is', null)
-  .limit(1)
-  .maybeSingle();
+// 4 queries parallèles via TanStack Query
+1. profiles → tous les users inscrits
+2. orders → group manuel par user_id ET par customer_email (pour guests)
+3. user_garage + join scooter_models/brands
+4. order_messages → dernier message par user_id
+5. contact_messages → matched_user_id ou email
 ```
-Fallback : pas de match → guest mode avec `contact_message_id`.
 
-## Récapitulatif fichiers touchés
+Consolidation : Map clé `user_id || email`, fusion des sources, calcul status (last activity > 90j = inactif), tri par dernière activité DESC.
+
+### Étape 3 — `ClientDetailSheet` (sous-composant inline)
+
+Sheet à droite avec sections :
+- En-tête identité : nom, email, badge source, performance_points
+- Stats : commandes / CA total / scooters garage / messages
+- Liste commandes (compacte, click → query param vers onglet Commandes)
+- Liste scooters garage (nom + nickname)
+- Derniers messages (3-5 derniers, click → deep-link vers Messages avec userId)
+
+### Étape 4 — Export CSV
+
+Fonction `exportToCSV()` :
+- Colonnes : Nom, Email, Date inscription, Nb commandes, CA total, Scooters, Dernière activité, Source, Statut
+- Encodage UTF-8 BOM + séparateur `;` pour Excel FR
+- Trigger via `Blob` + `URL.createObjectURL` + `<a download>`
+
+### Étape 5 — Intégration nav
+
+**`src/components/admin/AdminLayout.tsx`** :
+- Ajouter `{ id: 'clients', icon: Users, label: 'Clients' }` dans `NAV_ITEMS` entre Inventaire et Scanner (note : Commandes n'est pas dans la nav principale actuelle ; à placer entre Inventaire et Scanner pour ergonomie, ou Scanner et Messages selon preference)
+- Import `Users` depuis lucide-react
+
+**`src/pages/Admin.tsx`** :
+- Import `ClientsManager`
+- Ajouter `{activeTab === 'clients' && <ClientsManager />}`
+
+## Récap fichiers touchés
 
 | Fichier | Action |
 |---|---|
-| Migration SQL | +3 colonnes (`status`, `matched_user_id`, `last_reply_at` sur `contact_messages` ; `contact_message_id` sur `order_messages`) + index |
-| `ContactMessagesManager.tsx` | Refonte `ContactTab` + ajout `ContactConversationView` inline (~250 lignes ajoutées, ~50 supprimées) |
-| `send-message-notification/index.ts` | **Inchangé** |
-| `GarageMessages.tsx` / `Garage.tsx` / `useOrderMessages.ts` | **Non touchés** |
-| `GarageTab` / `GarageConversationView` | **Non touchés** |
+| `src/components/admin/ClientsManager.tsx` | **Nouveau** (~400 lignes) avec table + sheet détail + export CSV |
+| `src/components/admin/AdminLayout.tsx` | +1 entrée `clients` dans `NAV_ITEMS` + import icône |
+| `src/pages/Admin.tsx` | +1 import + 1 ligne switch |
+
+## Tables interrogées (lecture seule)
+
+- `profiles` (SELECT all — RLS admin OK)
+- `orders` (SELECT all — RLS admin OK)
+- `user_garage` (SELECT all via admin role) — ⚠️ **vérifier RLS** : actuellement seul "users can view own garage" existe. **Action** : ajouter policy admin SELECT sur `user_garage` via migration légère.
+- `order_messages` (SELECT all — RLS admin OK)
+- `contact_messages` (SELECT all — RLS admin OK)
+- `scooter_models` + `brands` (public read OK)
+
+## Migration SQL nécessaire (1 policy)
+
+```sql
+CREATE POLICY "Admins can view all garages"
+ON public.user_garage FOR SELECT TO authenticated
+USING (has_role(auth.uid(), 'admin'::app_role));
+```
 
 ## Garanties
-- Pattern UI 100% identique au flow Garage (cohérence visuelle)
-- Pas de table additionnelle (réutilise `order_messages` + colonne de liaison)
-- Guest mode supporté via `contact_message_id` (thread retrouvable sans `user_id`)
-- Match auto user → conversation visible aussi dans `/garage` du client si compte
-- Email envoyé dans tous les cas (CTA `/garage?tab=messages`)
-- Aucune régression Garage existant
+
+- 0 modification des onglets existants (Dashboard, Inventaire, Scanner, Messages, Réglages)
+- 0 modification du flow Garage utilisateur
+- Read-only sur toutes les tables
+- Guests (user_id NULL) intégrés via email matching
+- Pattern UI cohérent (table + Sheet identique à `OrderDetailSheet`)
+- Performance : 5 queries TanStack parallèles, cache 60s
 
