@@ -29,6 +29,9 @@ interface ContactMessage {
   message: string;
   created_at: string;
   replied: boolean;
+  status: ConvStatus;
+  matched_user_id: string | null;
+  last_reply_at: string | null;
 }
 
 interface OrderMsg {
