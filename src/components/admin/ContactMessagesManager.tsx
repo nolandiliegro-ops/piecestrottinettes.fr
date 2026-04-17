@@ -814,6 +814,13 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
 
   useEffect(() => { fetchThreads(); }, []);
 
+  // Deep-link: auto-open thread when initialUserId is provided
+  useEffect(() => {
+    if (!initialUserId || threads.length === 0) return;
+    const t = threads.find(th => th.user_id === initialUserId);
+    if (t) setSelectedThread(t);
+  }, [initialUserId, threads]);
+
   const counts = useMemo(() => ({
     all: threads.length,
     pending: threads.filter(t => t.status === 'pending').length,
@@ -829,7 +836,7 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
   if (selectedThread) {
-    return <GarageConversationView thread={selectedThread} onBack={() => { setSelectedThread(null); fetchThreads(); }} />;
+    return <GarageConversationView thread={selectedThread} onBack={() => { setSelectedThread(null); onSelectionChange?.(null); fetchThreads(); }} />;
   }
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
