@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link, useSearchParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
