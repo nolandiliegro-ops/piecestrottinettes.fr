@@ -235,27 +235,36 @@ export type Database = {
           created_at: string
           email: string
           id: string
+          last_reply_at: string | null
+          matched_user_id: string | null
           message: string
           name: string
           replied: boolean
+          status: string
           subject: string
         }
         Insert: {
           created_at?: string
           email: string
           id?: string
+          last_reply_at?: string | null
+          matched_user_id?: string | null
           message: string
           name: string
           replied?: boolean
+          status?: string
           subject: string
         }
         Update: {
           created_at?: string
           email?: string
           id?: string
+          last_reply_at?: string | null
+          matched_user_id?: string | null
           message?: string
           name?: string
           replied?: boolean
+          status?: string
           subject?: string
         }
         Relationships: []
@@ -465,6 +474,7 @@ export type Database = {
       }
       order_messages: {
         Row: {
+          contact_message_id: string | null
           created_at: string | null
           id: string
           image_url: string | null
@@ -475,6 +485,7 @@ export type Database = {
           user_id: string | null
         }
         Insert: {
+          contact_message_id?: string | null
           created_at?: string | null
           id?: string
           image_url?: string | null
@@ -485,6 +496,7 @@ export type Database = {
           user_id?: string | null
         }
         Update: {
+          contact_message_id?: string | null
           created_at?: string | null
           id?: string
           image_url?: string | null
