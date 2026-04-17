@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -325,8 +325,8 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
 };
 
 // ─── Contact Tab ───
-const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRefresh: () => void }) => {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange }: { messages: ContactMessage[]; onRefresh: () => void; initialSelectedId?: string | null; onSelectionChange?: (id: string | null) => void }) => {
+  const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId || null);
   const [filter, setFilter] = useState<'all' | ConvStatus>('all');
   const [replyCounts, setReplyCounts] = useState<Map<string, number>>(new Map());
 
@@ -373,9 +373,19 @@ const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRef
 
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
+  // Sync selection from parent (deep-link)
+  useEffect(() => {
+    if (initialSelectedId !== undefined) setSelectedId(initialSelectedId);
+  }, [initialSelectedId]);
+
+  const setSelected = (id: string | null) => {
+    setSelectedId(id);
+    onSelectionChange?.(id);
+  };
+
   const selected = selectedId ? messages.find(m => m.id === selectedId) : null;
   if (selected) {
-    return <ContactConversationView contact={selected} onBack={() => { setSelectedId(null); onRefresh(); }} onRefresh={onRefresh} />;
+    return <ContactConversationView contact={selected} onBack={() => { setSelected(null); onRefresh(); }} onRefresh={onRefresh} />;
   }
 
   const FilterBtn = ({ value, label, count }: { value: 'all' | ConvStatus; label: string; count: number }) => (
@@ -410,7 +420,7 @@ const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRef
             return (
               <div
                 key={msg.id}
-                onClick={() => setSelectedId(msg.id)}
+                onClick={() => setSelected(msg.id)}
                 className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
               >
                 <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
@@ -710,7 +720,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
 };
 
 // ─── Garage Tab ───
-const GarageTab = () => {
+const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: string | null; onSelectionChange?: (userId: string | null) => void } = {}) => {
   const [threads, setThreads] = useState<ClientThread[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedThread, setSelectedThread] = useState<ClientThread | null>(null);
@@ -804,6 +814,13 @@ const GarageTab = () => {
 
   useEffect(() => { fetchThreads(); }, []);
 
+  // Deep-link: auto-open thread when initialUserId is provided
+  useEffect(() => {
+    if (!initialUserId || threads.length === 0) return;
+    const t = threads.find(th => th.user_id === initialUserId);
+    if (t) setSelectedThread(t);
+  }, [initialUserId, threads]);
+
   const counts = useMemo(() => ({
     all: threads.length,
     pending: threads.filter(t => t.status === 'pending').length,
@@ -819,7 +836,7 @@ const GarageTab = () => {
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
   if (selectedThread) {
-    return <GarageConversationView thread={selectedThread} onBack={() => { setSelectedThread(null); fetchThreads(); }} />;
+    return <GarageConversationView thread={selectedThread} onBack={() => { setSelectedThread(null); onSelectionChange?.(null); fetchThreads(); }} />;
   }
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
@@ -853,7 +870,7 @@ const GarageTab = () => {
           {filteredThreads.map(t => (
             <div
               key={`${t.user_id}-${t.order_id || 'general'}`}
-              onClick={() => setSelectedThread(t)}
+              onClick={() => { setSelectedThread(t); onSelectionChange?.(t.user_id); }}
               className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
             >
               <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
@@ -893,6 +910,10 @@ const GarageTab = () => {
 const ContactMessagesManager = () => {
   const [contactMessages, setContactMessages] = useState<ContactMessage[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [activeSubTab, setActiveSubTab] = useState<'contact' | 'garage'>('contact');
+  const [contactDeepLinkId, setContactDeepLinkId] = useState<string | null>(null);
+  const [garageDeepLinkUserId, setGarageDeepLinkUserId] = useState<string | null>(null);
 
   const fetchContactMessages = async () => {
     setLoading(true);
@@ -902,6 +923,30 @@ const ContactMessagesManager = () => {
   };
 
   useEffect(() => { fetchContactMessages(); }, []);
+
+  // Deep-link from email CTA
+  useEffect(() => {
+    const contactId = searchParams.get('contactId');
+    const garage = searchParams.get('garage');
+    const userId = searchParams.get('userId');
+
+    if (contactId) {
+      setActiveSubTab('contact');
+      setContactDeepLinkId(contactId);
+    } else if (garage === 'true' && userId) {
+      setActiveSubTab('garage');
+      setGarageDeepLinkUserId(userId);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const clearDeepLinkParams = () => {
+    const next = new URLSearchParams(searchParams);
+    next.delete('contactId');
+    next.delete('garage');
+    next.delete('userId');
+    setSearchParams(next, { replace: true });
+  };
 
   if (loading) {
     return <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
@@ -916,7 +961,7 @@ const ContactMessagesManager = () => {
         </Button>
       </div>
 
-      <Tabs defaultValue="contact">
+      <Tabs value={activeSubTab} onValueChange={(v) => { setActiveSubTab(v as 'contact' | 'garage'); clearDeepLinkParams(); }}>
         <TabsList className="bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)]">
           <TabsTrigger value="contact" className="gap-1.5 data-[state=active]:bg-[hsl(0_0%_100%/0.1)] text-[hsl(0_0%_70%)]">
             <Mail className="w-3.5 h-3.5" /> Contact ({contactMessages.length})
@@ -927,10 +972,18 @@ const ContactMessagesManager = () => {
         </TabsList>
 
         <TabsContent value="contact">
-          <ContactTab messages={contactMessages} onRefresh={fetchContactMessages} />
+          <ContactTab
+            messages={contactMessages}
+            onRefresh={fetchContactMessages}
+            initialSelectedId={contactDeepLinkId}
+            onSelectionChange={(id) => { if (!id) { setContactDeepLinkId(null); clearDeepLinkParams(); } }}
+          />
         </TabsContent>
         <TabsContent value="garage">
-          <GarageTab />
+          <GarageTab
+            initialUserId={garageDeepLinkUserId}
+            onSelectionChange={(uid) => { if (!uid) { setGarageDeepLinkUserId(null); clearDeepLinkParams(); } }}
+          />
         </TabsContent>
       </Tabs>
     </div>

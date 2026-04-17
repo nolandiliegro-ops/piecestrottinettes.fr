@@ -16,6 +16,8 @@ interface MessageNotificationRequest {
   messageText: string;
   conversationId?: string;
   imageUrl?: string;
+  userId?: string;
+  contactId?: string;
 }
 
 function escapeHtml(str: string): string {
@@ -130,6 +132,12 @@ const generateClientAckEmailHTML = (data: MessageNotificationRequest): string =>
 };
 
 const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
+  const adminUrl = data.contactId
+    ? `https://piecestrottinettes.fr/admin?tab=messages&contactId=${data.contactId}`
+    : data.userId
+    ? `https://piecestrottinettes.fr/admin?tab=messages&garage=true&userId=${data.userId}`
+    : `https://piecestrottinettes.fr/admin?tab=messages`;
+
   return wrapEmail(`
     ${generateHeader()}
     <tr>
@@ -143,7 +151,7 @@ const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
           ${generateImageBlock(data.imageUrl)}
         </div>
         <div style="text-align: center;">
-          <a href="https://piecestrottinettes.fr/admin?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
+          <a href="${adminUrl}" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
         </div>
       </td>
     </tr>

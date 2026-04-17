@@ -176,6 +176,7 @@ const NewMessageForm = ({ onClose }: { onClose: () => void }) => {
               messageText: fullMessage || '📷 Image',
               conversationId: convId,
               imageUrl,
+              userId: user.id,
             },
           }),
           supabase.functions.invoke('send-message-notification', {
@@ -475,6 +476,7 @@ const ChatView = ({
               messageText: text || '📷 Image',
               conversationId: convId,
               imageUrl,
+              userId: user.id,
             },
           }),
           supabase.functions.invoke('send-message-notification', {
