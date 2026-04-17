@@ -260,6 +260,30 @@ export type Database = {
         }
         Relationships: []
       }
+      conversation_status: {
+        Row: {
+          id: string
+          order_id: string | null
+          status: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          order_id?: string | null
+          status?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          id?: string
+          order_id?: string | null
+          status?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       expert_captures: {
         Row: {
           ai_extracted_markers: Json | null
