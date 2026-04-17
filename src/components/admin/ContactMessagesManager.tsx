@@ -64,58 +64,383 @@ const STATUS_PILL: Record<ConvStatus, { label: string; cls: string }> = {
   closed: { label: 'Fermé', cls: 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_60%)] border-[hsl(0_0%_25%)]' },
 };
 
-// ─── Contact Tab ───
-const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRefresh: () => void }) => {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+// ─── Contact Conversation View ───
+const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: ContactMessage; onBack: () => void; onRefresh: () => void }) => {
+  const [replies, setReplies] = useState<OrderMsg[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [replyText, setReplyText] = useState('');
+  const [sending, setSending] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [closing, setClosing] = useState(false);
+  const [matchedUserId, setMatchedUserId] = useState<string | null>(contact.matched_user_id);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const toggleReplied = async (id: string, current: boolean) => {
-    const { error } = await supabase.from('contact_messages').update({ replied: !current }).eq('id', id);
-    if (error) { toast.error('Erreur'); return; }
-    onRefresh();
-    toast.success(!current ? 'Marqué comme répondu' : 'Marqué comme non répondu');
+  const fetchReplies = async () => {
+    setLoading(true);
+    // Fetch replies linked to this contact thread
+    const queries: Promise<any>[] = [
+      supabase.from('order_messages').select('*').eq('contact_message_id', contact.id).order('created_at', { ascending: true })
+    ];
+    if (matchedUserId) {
+      queries.push(
+        supabase.from('order_messages').select('*').eq('user_id', matchedUserId).is('order_id', null).is('contact_message_id', null).order('created_at', { ascending: true })
+      );
+    }
+    const results = await Promise.all(queries);
+    const all: OrderMsg[] = [];
+    for (const r of results) if (r.data) all.push(...(r.data as OrderMsg[]));
+    // Dedup by id
+    const seen = new Set<string>();
+    const dedup = all.filter(m => { if (seen.has(m.id)) return false; seen.add(m.id); return true; });
+    dedup.sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+    setReplies(dedup);
+    setLoading(false);
   };
 
-  const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  useEffect(() => { fetchReplies(); }, [contact.id, matchedUserId]);
 
-  if (messages.length === 0) return <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucun message de contact.</div>;
+  useEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+  }, [replies]);
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > MAX_IMAGE_SIZE) { toast.error('Image trop volumineuse (max 5MB)'); return; }
+    setImageFile(file);
+  };
+
+  const matchUser = async (): Promise<string | null> => {
+    if (matchedUserId) return matchedUserId;
+    const { data } = await supabase
+      .from('orders')
+      .select('user_id')
+      .eq('customer_email', contact.email)
+      .not('user_id', 'is', null)
+      .limit(1)
+      .maybeSingle();
+    return data?.user_id || null;
+  };
+
+  const handleSend = async () => {
+    if (!replyText.trim() && !imageFile) return;
+    setSending(true);
+    try {
+      let imageUrl: string | null = null;
+      if (imageFile) {
+        setUploading(true);
+        try {
+          // Use contact.id as folder for guest, or matched user_id if available
+          const folder = matchedUserId || contact.id;
+          imageUrl = await uploadMessageImage(imageFile, folder);
+        } finally {
+          setUploading(false);
+        }
+      }
+      const msgText = replyText.trim() || '📷 Image';
+      const matched = await matchUser();
+      if (matched && matched !== matchedUserId) setMatchedUserId(matched);
+
+      const { error: insertErr } = await supabase.from('order_messages').insert({
+        message: msgText,
+        sender_type: 'admin',
+        user_id: matched,
+        order_id: null,
+        image_url: imageUrl,
+        contact_message_id: contact.id,
+      } as any);
+      if (insertErr) throw insertErr;
+
+      const { error: updErr } = await supabase
+        .from('contact_messages')
+        .update({
+          status: 'replied',
+          replied: true,
+          matched_user_id: matched,
+          last_reply_at: new Date().toISOString(),
+        } as any)
+        .eq('id', contact.id);
+      if (updErr) console.warn(updErr);
+
+      try {
+        await supabase.functions.invoke('send-message-notification', {
+          body: {
+            recipient: 'client',
+            customerEmail: contact.email,
+            customerName: contact.name,
+            messageText: msgText,
+            conversationId: contact.id,
+            imageUrl: imageUrl || undefined,
+          },
+        });
+      } catch (e) {
+        console.error('Email notification failed:', e);
+      }
+
+      toast.success('Réponse envoyée au client');
+      setReplyText('');
+      setImageFile(null);
+      if (inputRef.current) inputRef.current.value = '';
+      fetchReplies();
+      onRefresh();
+    } catch (e: any) {
+      toast.error(e?.message || "Erreur lors de l'envoi");
+    } finally {
+      setSending(false);
+    }
+  };
+
+  const handleClose = async () => {
+    setClosing(true);
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .update({ status: 'closed', replied: true } as any)
+        .eq('id', contact.id);
+      if (error) throw error;
+      toast.success('Conversation fermée');
+      onRefresh();
+      onBack();
+    } catch (e: any) {
+      toast.error(e?.message || 'Erreur');
+    } finally {
+      setClosing(false);
+    }
+  };
+
+  const formatTime = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const initials = contact.name.split(' ').map(s => s[0]).filter(Boolean).slice(0, 2).join('').toUpperCase() || '?';
 
   return (
-    <div className="space-y-2">
-      {messages.map(msg => (
-        <div key={msg.id} className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg overflow-hidden">
-          <div className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors" onClick={() => setExpandedId(expandedId === msg.id ? null : msg.id)}>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{msg.name}</span>
-                <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
-                <span className="text-xs text-[hsl(0_0%_55%)] truncate">{msg.email}</span>
-              </div>
-              <span className="text-sm text-[hsl(0_0%_70%)] truncate">{msg.subject}</span>
-            </div>
-            <div className="flex items-center gap-2 flex-shrink-0">
-              <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(msg.created_at)}</span>
-              <Badge variant={msg.replied ? 'default' : 'secondary'} className={msg.replied ? 'bg-primary/20 text-primary border-primary/30 text-xs' : 'bg-amber-500/20 text-amber-400 border-amber-500/30 text-xs'}>
-                {msg.replied ? 'Répondu' : 'En attente'}
-              </Badge>
-            </div>
-          </div>
-          {expandedId === msg.id && (
-            <div className="px-4 pb-4 border-t border-[hsl(0_0%_18%)]">
-              <div className="pt-3 mb-3">
-                <p className="text-sm text-[hsl(0_0%_75%)] whitespace-pre-wrap leading-relaxed">{msg.message}</p>
-              </div>
-              <div className="flex gap-2">
-                <a href={`mailto:${msg.email}?subject=${encodeURIComponent('Re: ' + msg.subject)}&body=${encodeURIComponent(`Bonjour ${msg.name},\n\n`)}`} onClick={(e) => e.stopPropagation()}>
-                  <Button size="sm" className="gap-1.5 bg-primary hover:bg-primary/90"><Mail className="w-3.5 h-3.5" /> Répondre</Button>
-                </a>
-                <Button size="sm" variant="outline" className="gap-1.5 border-[hsl(0_0%_18%)] text-[hsl(0_0%_55%)]" onClick={(e) => { e.stopPropagation(); toggleReplied(msg.id, msg.replied); }}>
-                  {msg.replied ? <><Circle className="w-3.5 h-3.5" /> Non répondu</> : <><CheckCircle className="w-3.5 h-3.5" /> Marquer répondu</>}
-                </Button>
-              </div>
-            </div>
-          )}
+    <div className="flex flex-col h-[500px]">
+      {/* Header */}
+      <div className="flex items-center gap-3 pb-3 border-b border-[hsl(0_0%_18%)] shrink-0">
+        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0">
+          <ArrowLeft className="w-4 h-4" />
+        </Button>
+        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
+          {initials}
         </div>
-      ))}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap mb-0.5">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_70%)] border border-[hsl(0_0%_20%)] text-[11px] font-semibold">
+              📨 Contact
+            </span>
+            <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[11px] font-semibold ${STATUS_PILL[contact.status].cls}`}>
+              {STATUS_PILL[contact.status].label}
+            </span>
+            {matchedUserId && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 text-[10px] font-semibold">
+                ✓ Compte client lié
+              </span>
+            )}
+          </div>
+          <p className="text-xs text-[hsl(0_0%_60%)] truncate">
+            <span className="font-medium text-[hsl(0_0%_85%)]">{contact.name}</span>
+            <span className="text-[hsl(0_0%_50%)]"> · {contact.email}</span>
+          </p>
+        </div>
+        {contact.status !== 'closed' && (
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={closing}
+            onClick={handleClose}
+            className="gap-1.5 border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0"
+          >
+            {closing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />}
+            Fermer
+          </Button>
+        )}
+      </div>
+
+      {/* Messages */}
+      <div ref={scrollRef} className="flex-1 overflow-y-auto py-3 space-y-2 scrollbar-hide">
+        {/* Initial contact message */}
+        <div className="flex justify-start">
+          <div className="max-w-[80%] rounded-xl px-3.5 py-2.5 bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm">
+            <p className="text-[11px] uppercase tracking-wider text-[hsl(0_0%_55%)] font-semibold mb-1">{contact.subject}</p>
+            <p className="text-sm whitespace-pre-wrap">{contact.message}</p>
+            <p className="text-[10px] mt-1 text-[hsl(0_0%_45%)]">👤 {contact.name} · {formatTime(contact.created_at)}</p>
+          </div>
+        </div>
+        {loading ? (
+          <div className="flex justify-center py-4"><Loader2 className="w-5 h-5 animate-spin text-primary" /></div>
+        ) : (
+          replies.map(msg => {
+            const isAdmin = msg.sender_type === 'admin';
+            return (
+              <div key={msg.id} className={`flex ${isAdmin ? 'justify-end' : 'justify-start'}`}>
+                <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(0_0%_90%)] rounded-br-sm' : 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm'}`}>
+                  <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
+                  {msg.image_url && (
+                    <a href={msg.image_url} target="_blank" rel="noopener noreferrer" className="block mt-2">
+                      <img src={msg.image_url} alt="Image jointe" className="max-w-[240px] max-h-[180px] object-cover rounded-lg border border-[hsl(0_0%_20%)] hover:opacity-80 transition-opacity" />
+                    </a>
+                  )}
+                  <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(0_0%_45%)]'}`}>
+                    {isAdmin ? '🟢 Vous' : '👤 Client'} · {formatTime(msg.created_at)}
+                  </p>
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* Reply */}
+      <div className="shrink-0 pt-3 border-t border-[hsl(0_0%_18%)]">
+        {imageFile && (
+          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg p-1.5 pr-2">
+            <img src={URL.createObjectURL(imageFile)} alt="Preview" className="w-12 h-12 object-cover rounded" />
+            <span className="text-xs text-[hsl(0_0%_70%)] max-w-[140px] truncate">{imageFile.name}</span>
+            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_90%)]">
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
+        <div className="flex gap-2 items-end">
+          <input ref={inputRef} type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
+          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] h-[60px]" title="Joindre une image">
+            <Paperclip className="w-4 h-4" />
+          </Button>
+          <textarea
+            value={replyText}
+            onChange={(e) => setReplyText(e.target.value)}
+            placeholder="Répondre au client..."
+            rows={2}
+            className="flex-1 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg px-3 py-2 text-sm text-[hsl(0_0%_85%)] placeholder:text-[hsl(0_0%_40%)] focus:outline-none focus:border-primary/40 resize-none"
+            onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
+          />
+          <Button size="sm" disabled={(!replyText.trim() && !imageFile) || sending || uploading} onClick={handleSend} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
+            {sending || uploading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+            Envoyer
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ─── Contact Tab ───
+const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRefresh: () => void }) => {
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [filter, setFilter] = useState<'all' | ConvStatus>('all');
+  const [replyCounts, setReplyCounts] = useState<Map<string, number>>(new Map());
+
+  // Fetch reply counts per contact
+  useEffect(() => {
+    if (messages.length === 0) return;
+    (async () => {
+      const ids = messages.map(m => m.id);
+      const { data } = await supabase
+        .from('order_messages')
+        .select('contact_message_id')
+        .in('contact_message_id', ids);
+      const map = new Map<string, number>();
+      for (const r of (data || [])) {
+        const k = (r as any).contact_message_id as string;
+        map.set(k, (map.get(k) || 0) + 1);
+      }
+      setReplyCounts(map);
+    })();
+  }, [messages]);
+
+  const counts = useMemo(() => ({
+    all: messages.length,
+    pending: messages.filter(m => m.status === 'pending').length,
+    replied: messages.filter(m => m.status === 'replied').length,
+    closed: messages.filter(m => m.status === 'closed').length,
+  }), [messages]);
+
+  const sorted = useMemo(() => {
+    const statusOrder: Record<ConvStatus, number> = { pending: 0, replied: 1, closed: 2 };
+    return [...messages].sort((a, b) => {
+      const so = statusOrder[a.status] - statusOrder[b.status];
+      if (so !== 0) return so;
+      const ad = new Date(a.last_reply_at || a.created_at).getTime();
+      const bd = new Date(b.last_reply_at || b.created_at).getTime();
+      return bd - ad;
+    });
+  }, [messages]);
+
+  const filtered = useMemo(
+    () => filter === 'all' ? sorted : sorted.filter(m => m.status === filter),
+    [sorted, filter]
+  );
+
+  const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+
+  const selected = selectedId ? messages.find(m => m.id === selectedId) : null;
+  if (selected) {
+    return <ContactConversationView contact={selected} onBack={() => { setSelectedId(null); onRefresh(); }} onRefresh={onRefresh} />;
+  }
+
+  const FilterBtn = ({ value, label, count }: { value: 'all' | ConvStatus; label: string; count: number }) => (
+    <button
+      onClick={() => setFilter(value)}
+      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+        filter === value
+          ? 'bg-primary/20 text-primary border-primary/40'
+          : 'bg-[hsl(0_0%_100%/0.04)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_65%)] hover:text-[hsl(0_0%_90%)]'
+      }`}
+    >
+      {label} <span className="opacity-70">({count})</span>
+    </button>
+  );
+
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-wrap gap-2">
+        <FilterBtn value="all" label="Tous" count={counts.all} />
+        <FilterBtn value="pending" label="En attente" count={counts.pending} />
+        <FilterBtn value="replied" label="Répondus" count={counts.replied} />
+        <FilterBtn value="closed" label="Fermés" count={counts.closed} />
+      </div>
+
+      {filtered.length === 0 ? (
+        <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucun message.</div>
+      ) : (
+        <div className="space-y-2">
+          {filtered.map(msg => {
+            const initials = msg.name.split(' ').map(s => s[0]).filter(Boolean).slice(0, 2).join('').toUpperCase() || '?';
+            const replyCount = replyCounts.get(msg.id) || 0;
+            return (
+              <div
+                key={msg.id}
+                onClick={() => setSelectedId(msg.id)}
+                className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
+              >
+                <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
+                  {initials}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+                    <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{msg.name}</span>
+                    <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
+                    <span className="text-xs text-[hsl(0_0%_55%)] truncate">{msg.email}</span>
+                    <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[10px] font-semibold ${STATUS_PILL[msg.status].cls}`}>
+                      {STATUS_PILL[msg.status].label}
+                    </span>
+                    {replyCount > 0 && (
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/25 text-[10px] font-semibold">
+                        {replyCount} réponse{replyCount > 1 ? 's' : ''}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs text-[hsl(0_0%_70%)] truncate font-medium">{msg.subject}</p>
+                  <p className="text-xs text-[hsl(0_0%_55%)] truncate">{msg.message.substring(0, 80)}</p>
+                </div>
+                <div className="flex flex-col items-end gap-1 shrink-0">
+                  <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(msg.last_reply_at || msg.created_at)}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
