@@ -644,10 +644,28 @@ const ChatView = ({
 
 // Main Component
 const GarageMessages = () => {
+  const { user } = useAuth();
   const { data: conversations = [], isLoading } = useOrderConversations();
+  const markAsRead = useMarkMessagesAsRead();
   const [selectedConv, setSelectedConv] = useState<ConversationSummary | null>(null);
   const [showNewMessage, setShowNewMessage] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
+
+  const handleSelectConversation = (conv: ConversationSummary) => {
+    setSelectedConv(conv);
+    if (conv.order_id && conv.order_id !== 'direct') {
+      markAsRead.mutate(conv.order_id);
+    } else if (conv.order_id === 'direct' && user?.id) {
+      supabase
+        .from('order_messages')
+        .update({ read_at: new Date().toISOString() })
+        .is('order_id', null)
+        .eq('user_id', user.id)
+        .eq('sender_type', 'admin')
+        .is('read_at', null)
+        .then(() => {});
+    }
+  };
 
   // Auto-open conversation from deep link (?orderId=...&orderNumber=...)
   useEffect(() => {
@@ -658,9 +676,9 @@ const GarageMessages = () => {
 
     const existing = conversations.find((c) => c.order_id === orderId);
     if (existing) {
-      setSelectedConv(existing);
+      handleSelectConversation(existing);
     } else {
-      setSelectedConv({
+      handleSelectConversation({
         order_id: orderId,
         order_number: orderNumber,
         last_message: '',
@@ -720,7 +738,7 @@ const GarageMessages = () => {
             <ConversationList
               conversations={conversations}
               isLoading={isLoading}
-              onSelect={setSelectedConv}
+              onSelect={handleSelectConversation}
             />
           </motion.div>
         )}
