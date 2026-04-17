@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAdminRole } from '@/hooks/useAdminRole';
 import { Navigate, Link, useSearchParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -16,6 +16,11 @@ const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'dashboard');
+
+  useEffect(() => {
+    const tab = searchParams.get('tab');
+    if (tab && tab !== activeTab) setActiveTab(tab);
+  }, [searchParams]);
 
   if (loading) {
     return (

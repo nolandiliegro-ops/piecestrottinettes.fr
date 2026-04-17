@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
@@ -253,6 +253,11 @@ const OrdersManager = () => {
   const [statusFilter, setStatusFilter] = useState<string | null>(null);
   const [updatingOrderId, setUpdatingOrderId] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState(searchParams.get('order') || '');
+
+  useEffect(() => {
+    const order = searchParams.get('order');
+    if (order) setSearchTerm(order);
+  }, [searchParams]);
   
   const queryClient = useQueryClient();
 
