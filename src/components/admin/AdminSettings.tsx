@@ -19,9 +19,9 @@ const AdminSettings = () => {
   useEffect(() => {
     const fetchUnread = async () => {
       const { count } = await supabase
-        .from('contact_messages')
+        .from('conversation_status')
         .select('id', { count: 'exact', head: true })
-        .eq('replied', false);
+        .eq('status', 'pending');
       setUnreadCount(count ?? 0);
     };
     fetchUnread();

@@ -143,7 +143,7 @@ const generateAdminEmailHTML = (data: MessageNotificationRequest): string => {
           ${generateImageBlock(data.imageUrl)}
         </div>
         <div style="text-align: center;">
-          <a href="https://piecestrottinettes.fr/admin" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
+          <a href="https://piecestrottinettes.fr/admin?tab=messages" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
         </div>
       </td>
     </tr>
