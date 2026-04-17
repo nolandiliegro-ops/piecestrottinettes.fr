@@ -870,7 +870,7 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
           {filteredThreads.map(t => (
             <div
               key={`${t.user_id}-${t.order_id || 'general'}`}
-              onClick={() => setSelectedThread(t)}
+              onClick={() => { setSelectedThread(t); onSelectionChange?.(t.user_id); }}
               className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
             >
               <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
