@@ -22,6 +22,7 @@ import MediaSidebar from '@/components/garage/MediaSidebar';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import GarageMessages from '@/components/garage/GarageMessages';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
+import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
