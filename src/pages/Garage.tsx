@@ -158,48 +158,48 @@ const Garage = () => {
             transition={{ duration: 0.3 }}
             className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-4 shrink-0"
           >
-            {/* Tabs - Full width scroll on mobile */}
-            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-1 md:pb-0">
+            {/* Tabs - Segmented control iOS style, always 3 cols */}
+            <div className="grid grid-cols-3 gap-1 w-full md:w-auto md:max-w-md bg-carbon/[0.04] rounded-full p-1">
               {/* Tab: Mon Garage */}
               <button
                 onClick={() => setActiveTab('garage')}
                 className={cn(
-                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
-                  activeTab === 'garage' 
-                    ? "bg-carbon text-white" 
-                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
+                  activeTab === 'garage'
+                    ? "bg-white text-carbon shadow-sm"
+                    : "text-carbon/50 hover:text-carbon"
                 )}
               >
-                <Package className="w-4 h-4" />
-                <span className="font-display text-xs md:text-sm tracking-wide">GARAGE</span>
+                <Package className="w-4 h-4 shrink-0" />
+                <span className="font-display tracking-wide">GARAGE</span>
               </button>
-              
+
               {/* Tab: Mes Commandes */}
               <button
                 onClick={() => setActiveTab('orders')}
                 className={cn(
-                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
-                  activeTab === 'orders' 
-                    ? "bg-carbon text-white" 
-                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
+                  activeTab === 'orders'
+                    ? "bg-white text-carbon shadow-sm"
+                    : "text-carbon/50 hover:text-carbon"
                 )}
               >
-                <ShoppingBag className="w-4 h-4" />
-                <span className="font-display text-xs md:text-sm tracking-wide">COMMANDES</span>
+                <ShoppingBag className="w-4 h-4 shrink-0" />
+                <span className="font-display tracking-wide">COMMANDES</span>
               </button>
 
               {/* Tab: Messages */}
               <button
                 onClick={() => setActiveTab('messages')}
                 className={cn(
-                  "relative flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
+                  "relative flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
                   activeTab === 'messages'
-                    ? "bg-carbon text-white"
-                    : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
+                    ? "bg-white text-carbon shadow-sm"
+                    : "text-carbon/50 hover:text-carbon"
                 )}
               >
-                <MessageSquare className="w-4 h-4" />
-                <span className="font-display text-xs md:text-sm tracking-wide">MESSAGES</span>
+                <MessageSquare className="w-4 h-4 shrink-0" />
+                <span className="font-display tracking-wide">MESSAGES</span>
                 {totalUnread > 0 && (
                   <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
                     {totalUnread > 9 ? '9+' : totalUnread}

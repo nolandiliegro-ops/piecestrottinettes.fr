@@ -314,60 +314,65 @@ const ConversationList = ({
     );
   }
 
+  const formatShortDate = (date: Date) => {
+    const now = new Date();
+    const isToday = date.toDateString() === now.toDateString();
+    if (isToday) return format(date, 'HH:mm');
+    const diffDays = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+    if (diffDays < 7) return format(date, 'EEE', { locale: fr });
+    return format(date, 'dd/MM');
+  };
+
   return (
-    <div className="space-y-3">
+    <div className="bg-white rounded-2xl overflow-hidden divide-y divide-gray-100">
       {conversations.map((conv) => {
         const isDirect = conv.order_id === 'direct';
-        const preview = (conv.last_message || '').length > 60
-          ? (conv.last_message || '').substring(0, 60) + '…'
-          : (conv.last_message || '');
+        const preview = conv.last_message || 'Nouvelle conversation';
         const isPending = conv.last_sender_type === 'client';
+        const initials = isDirect ? 'M' : 'PT';
         return (
           <motion.button
             key={conv.order_id}
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             onClick={() => onSelect(conv)}
-            className="w-full text-left p-5 bg-white shadow-sm hover:shadow-lg rounded-2xl border border-gray-100 transition-all group"
+            className="w-full text-left px-4 py-3.5 hover:bg-gray-50/80 transition-colors flex items-center gap-3"
           >
-            <div className="flex items-start gap-3">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-2 min-w-0">
-                    {isDirect ? (
-                      <span className="inline-flex items-center text-sm font-medium text-carbon/70">
-                        <Mail className="w-3.5 h-3.5 mr-1.5" />
-                        Message général
-                      </span>
-                    ) : (
-                      <span className="font-mono text-sm font-bold text-carbon truncate">
-                        {conv.order_number}
-                      </span>
-                    )}
-                    {conv.unread_count > 0 && (
-                      <span className="min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center animate-pulse">
-                        {conv.unread_count}
-                      </span>
-                    )}
-                  </div>
-                  <span className={cn(
-                    "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium shrink-0",
-                    isPending
-                      ? "bg-orange-500/15 text-orange-600"
-                      : "bg-green-500/15 text-green-600"
-                  )}>
-                    {isPending ? 'En attente' : 'Répondu'}
-                  </span>
-                </div>
-                <p className="text-sm text-carbon/50 truncate">{preview || 'Nouvelle conversation'}</p>
-                <div className="flex items-center justify-between mt-2">
-                  <span className="text-[11px] text-carbon/40 whitespace-nowrap">
-                    {formatDistanceToNow(new Date(conv.last_message_at), { locale: fr, addSuffix: true })}
-                  </span>
-                  <ChevronRight className="w-4 h-4 text-carbon/30 group-hover:text-mineral transition-colors" />
-                </div>
+            {/* Avatar with status pips */}
+            <div className="relative shrink-0">
+              <div className="w-13 h-13 rounded-full bg-gradient-to-br from-mineral to-mineral-dark text-white flex items-center justify-center font-bold text-base" style={{ width: 52, height: 52 }}>
+                {initials}
               </div>
+              {conv.unread_count > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 min-w-[20px] h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center border-2 border-white">
+                  {conv.unread_count > 9 ? '9+' : conv.unread_count}
+                </span>
+              )}
+              <span className={cn(
+                "absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full border-2 border-white",
+                isPending ? "bg-orange-500 animate-pulse" : "bg-green-500"
+              )} />
             </div>
+
+            {/* Center content */}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 min-w-0">
+                {!isDirect && (
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-mineral/10 text-mineral text-[11px] font-mono font-semibold shrink-0">
+                    {conv.order_number}
+                  </span>
+                )}
+                <span className="font-semibold text-carbon text-sm truncate">
+                  {isDirect ? 'Message général' : 'Conversation'}
+                </span>
+              </div>
+              <p className="text-sm text-carbon/50 truncate mt-0.5">{preview}</p>
+            </div>
+
+            {/* Date */}
+            <span className="text-[11px] text-carbon/40 whitespace-nowrap self-start mt-1 shrink-0">
+              {formatShortDate(new Date(conv.last_message_at))}
+            </span>
           </motion.button>
         );
       })}
@@ -692,18 +697,19 @@ const GarageMessages = () => {
             exit={{ opacity: 0, x: 20 }}
             className="flex-1 overflow-y-auto"
           >
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-6 px-1">
               <div>
-                <h2 className="font-display text-xl text-carbon tracking-wide">MESSAGES</h2>
-                <p className="text-sm text-carbon/50">Vos conversations avec le support</p>
+                <h2 className="text-2xl font-bold text-carbon tracking-tight">Messages</h2>
+                <p className="text-sm text-carbon/50 mt-0.5">
+                  {conversations.length} conversation{conversations.length > 1 ? 's' : ''}
+                </p>
               </div>
               <Button
                 onClick={() => setShowNewMessage(!showNewMessage)}
-                className="rounded-xl bg-mineral hover:bg-mineral/90 text-white gap-1.5 text-sm"
-                size="sm"
+                className="rounded-full bg-carbon hover:bg-carbon/90 text-white gap-2 px-4 h-10 text-sm font-medium shadow-sm"
               >
                 <Plus className="w-4 h-4" />
-                Nouveau message
+                Nouveau
               </Button>
             </div>
             <AnimatePresence>
