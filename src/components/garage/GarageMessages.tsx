@@ -676,9 +676,9 @@ const GarageMessages = () => {
 
     const existing = conversations.find((c) => c.order_id === orderId);
     if (existing) {
-      setSelectedConv(existing);
+      handleSelectConversation(existing);
     } else {
-      setSelectedConv({
+      handleSelectConversation({
         order_id: orderId,
         order_number: orderNumber,
         last_message: '',
