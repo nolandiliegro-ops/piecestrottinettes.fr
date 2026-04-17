@@ -93,26 +93,56 @@ const handler = async (req: Request): Promise<Response> => {
       }
     }
 
-    // 1. Notification au propriétaire (admin)
+    // 1. Notification au propriétaire (admin) — template aligné sur send-message-notification
+    const adminCtaUrl = insertedContactId
+      ? `https://piecestrottinettes.fr/admin?tab=messages&contactId=${insertedContactId}`
+      : `https://piecestrottinettes.fr/admin?tab=messages`;
+
     await resend.emails.send({
       from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
       to: [SHOP_EMAIL],
       reply_to: email,
-      subject: `[Contact] ${subject} — de ${escapeHtml(name)}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #2C2C2C;">Nouveau message de contact</h2>
-          <p><strong>Nom :</strong> ${escapeHtml(name)}</p>
-          <p><strong>Email :</strong> ${escapeHtml(email)}</p>
-          <p><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
-          <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
-          <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
-          <hr style="border: 1px solid #e8e4e0; margin: 20px 0;" />
-          <a href="mailto:${escapeHtml(email)}?subject=Re: ${encodeURIComponent(subject)}" style="display: inline-block; background: #1a56db; color: #ffffff; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 15px;">
-            📩 Cliquer ici pour répondre à ${escapeHtml(name)} (${escapeHtml(email)})
-          </a>
-        </div>
-      `,
+      subject: `💬 [Contact] ${subject} — de ${escapeHtml(name)}`,
+      html: `<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body style="margin: 0; padding: 0; background-color: #F5F3F0; font-family: 'Helvetica Neue', Arial, sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #F5F3F0;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+          <tr>
+            <td style="background: linear-gradient(135deg, #93B5A1 0%, #7DA08D 100%); padding: 32px; text-align: center;">
+              <h1 style="margin: 0; font-family: Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: 3px;">PIECESTROTTINETTES.FR</h1>
+              <p style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.9); letter-spacing: 2px;">ROULE · RÉPARE · DURE</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 32px;">
+              <h2 style="margin: 0 0 20px; font-family: Georgia, serif; font-size: 22px; color: #2C2C2C;">📨 Nouveau message via le formulaire Contact</h2>
+              <p style="margin: 0 0 8px; font-size: 14px; color: #2C2C2C;"><strong>Nom :</strong> ${escapeHtml(name)}</p>
+              <p style="margin: 0 0 8px; font-size: 14px; color: #2C2C2C;"><strong>Email :</strong> <a href="mailto:${escapeHtml(email)}" style="color: #93B5A1;">${escapeHtml(email)}</a></p>
+              <p style="margin: 0 0 16px; font-size: 14px; color: #2C2C2C;"><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
+              <p style="margin: 0 0 8px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Message :</p>
+              <div style="background-color: #FAFAF8; border-radius: 12px; padding: 20px; border-left: 3px solid #93B5A1; margin-bottom: 32px;">
+                <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(message)}</p>
+              </div>
+              <div style="text-align: center;">
+                <a href="${adminCtaUrl}" style="display: inline-block; background-color: #93B5A1; color: #FFFFFF; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px;">RÉPONDRE DANS L'ADMIN</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #2C2C2C; padding: 24px 32px; text-align: center;">
+              <p style="margin: 0; font-size: 12px; color: #888;">piecestrottinettes.fr — Votre expert en pièces détachées</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`,
     });
 
     // 2. Accusé de réception — pour TOUS les utilisateurs
