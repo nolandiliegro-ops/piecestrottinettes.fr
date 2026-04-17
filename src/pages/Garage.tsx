@@ -22,6 +22,7 @@ import MediaSidebar from '@/components/garage/MediaSidebar';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import GarageMessages from '@/components/garage/GarageMessages';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
+import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
@@ -82,6 +83,9 @@ const Garage = () => {
   const { parts, loading: partsLoading } = useCompatibleParts(
     selectedScooter?.scooter_model?.id
   );
+
+  const { data: convs = [] } = useOrderConversations();
+  const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
 
   const scooterStats = calculateScooterStats(selectedScooter);
 
@@ -188,7 +192,7 @@ const Garage = () => {
               <button
                 onClick={() => setActiveTab('messages')}
                 className={cn(
-                  "flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
+                  "relative flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full transition-all duration-300 min-h-[44px] flex-shrink-0",
                   activeTab === 'messages'
                     ? "bg-carbon text-white"
                     : "text-carbon/50 hover:text-carbon hover:bg-carbon/5"
@@ -196,6 +200,11 @@ const Garage = () => {
               >
                 <MessageSquare className="w-4 h-4" />
                 <span className="font-display text-xs md:text-sm tracking-wide">MESSAGES</span>
+                {totalUnread > 0 && (
+                  <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
+                    {totalUnread > 9 ? '9+' : totalUnread}
+                  </span>
+                )}
               </button>
             </div>
 
