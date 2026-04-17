@@ -84,6 +84,9 @@ const Garage = () => {
     selectedScooter?.scooter_model?.id
   );
 
+  const { data: convs = [] } = useOrderConversations();
+  const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
+
   const scooterStats = calculateScooterStats(selectedScooter);
 
   // Handle scooter deletion — select next or clear
