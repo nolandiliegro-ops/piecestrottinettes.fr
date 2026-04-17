@@ -53,15 +53,19 @@ const handler = async (req: Request): Promise<Response> => {
     );
 
     // Sauvegarde en base contact_messages
+    let insertedContactId: string | null = null;
     try {
-      const { error: insertError } = await supabaseAdmin
+      const { data: inserted, error: insertError } = await supabaseAdmin
         .from("contact_messages")
-        .insert({ name, email, subject, message });
+        .insert({ name, email, subject, message })
+        .select("id")
+        .single();
 
       if (insertError) {
         console.error("Failed to insert contact message:", insertError);
       } else {
-        console.log("Contact message saved to database");
+        insertedContactId = inserted?.id || null;
+        console.log("Contact message saved to database", insertedContactId);
       }
     } catch (dbErr) {
       console.error("Database insert error (non-blocking):", dbErr);
