@@ -325,8 +325,8 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
 };
 
 // ─── Contact Tab ───
-const ContactTab = ({ messages, onRefresh }: { messages: ContactMessage[]; onRefresh: () => void }) => {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange }: { messages: ContactMessage[]; onRefresh: () => void; initialSelectedId?: string | null; onSelectionChange?: (id: string | null) => void }) => {
+  const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId || null);
   const [filter, setFilter] = useState<'all' | ConvStatus>('all');
   const [replyCounts, setReplyCounts] = useState<Map<string, number>>(new Map());
 
