@@ -385,7 +385,7 @@ const Header = () => {
                       </div>
                       Mon Garage
                       {totalUnread > 0 && (
-                        <span className="absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center border-2 border-background">
+                        <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
                           {totalUnread > 9 ? '9+' : totalUnread}
                         </span>
                       )}
