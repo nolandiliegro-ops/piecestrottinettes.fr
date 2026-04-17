@@ -910,6 +910,10 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
 const ContactMessagesManager = () => {
   const [contactMessages, setContactMessages] = useState<ContactMessage[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [activeSubTab, setActiveSubTab] = useState<'contact' | 'garage'>('contact');
+  const [contactDeepLinkId, setContactDeepLinkId] = useState<string | null>(null);
+  const [garageDeepLinkUserId, setGarageDeepLinkUserId] = useState<string | null>(null);
 
   const fetchContactMessages = async () => {
     setLoading(true);
@@ -919,6 +923,30 @@ const ContactMessagesManager = () => {
   };
 
   useEffect(() => { fetchContactMessages(); }, []);
+
+  // Deep-link from email CTA
+  useEffect(() => {
+    const contactId = searchParams.get('contactId');
+    const garage = searchParams.get('garage');
+    const userId = searchParams.get('userId');
+
+    if (contactId) {
+      setActiveSubTab('contact');
+      setContactDeepLinkId(contactId);
+    } else if (garage === 'true' && userId) {
+      setActiveSubTab('garage');
+      setGarageDeepLinkUserId(userId);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const clearDeepLinkParams = () => {
+    const next = new URLSearchParams(searchParams);
+    next.delete('contactId');
+    next.delete('garage');
+    next.delete('userId');
+    setSearchParams(next, { replace: true });
+  };
 
   if (loading) {
     return <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
@@ -933,7 +961,7 @@ const ContactMessagesManager = () => {
         </Button>
       </div>
 
-      <Tabs defaultValue="contact">
+      <Tabs value={activeSubTab} onValueChange={(v) => { setActiveSubTab(v as 'contact' | 'garage'); clearDeepLinkParams(); }}>
         <TabsList className="bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)]">
           <TabsTrigger value="contact" className="gap-1.5 data-[state=active]:bg-[hsl(0_0%_100%/0.1)] text-[hsl(0_0%_70%)]">
             <Mail className="w-3.5 h-3.5" /> Contact ({contactMessages.length})
@@ -944,10 +972,18 @@ const ContactMessagesManager = () => {
         </TabsList>
 
         <TabsContent value="contact">
-          <ContactTab messages={contactMessages} onRefresh={fetchContactMessages} />
+          <ContactTab
+            messages={contactMessages}
+            onRefresh={fetchContactMessages}
+            initialSelectedId={contactDeepLinkId}
+            onSelectionChange={(id) => { if (!id) { setContactDeepLinkId(null); clearDeepLinkParams(); } }}
+          />
         </TabsContent>
         <TabsContent value="garage">
-          <GarageTab />
+          <GarageTab
+            initialUserId={garageDeepLinkUserId}
+            onSelectionChange={(uid) => { if (!uid) { setGarageDeepLinkUserId(null); clearDeepLinkParams(); } }}
+          />
         </TabsContent>
       </Tabs>
     </div>
