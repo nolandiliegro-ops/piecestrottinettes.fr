@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboard, Package, ScanLine, MessageSquare, Settings, ArrowLeft, Shield } from 'lucide-react';
+import { LayoutDashboard, Package, Users, ScanLine, MessageSquare, Settings, ArrowLeft, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { supabase } from '@/integrations/supabase/client';
 
@@ -14,6 +14,7 @@ interface AdminLayoutProps {
 const NAV_ITEMS = [
   { id: 'dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { id: 'inventory', icon: Package, label: 'Inventaire' },
+  { id: 'clients', icon: Users, label: 'Clients' },
   { id: 'scanner', icon: ScanLine, label: 'Scanner' },
   { id: 'messages', icon: MessageSquare, label: 'Messages' },
   { id: 'settings', icon: Settings, label: 'Réglages' },
