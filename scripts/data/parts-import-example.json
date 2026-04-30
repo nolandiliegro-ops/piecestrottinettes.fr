@@ -1,40 +1,49 @@
 {
+  "categoryName": "Pneus",
+  "categorySlug": "pneus",
   "parts": [
     {
       "name": "Pneu 10 pouces tubeless Xiaomi M365",
       "slug": "pneu-10-pouces-tubeless-xiaomi-m365",
-      "category_id": "UUID_DE_LA_CATEGORIE_ICI",
       "price": 14.90,
       "stock_quantity": 50,
       "sku": "PNE-10-M365",
-      "description": "<p>Pneu <strong>10 pouces tubeless</strong> compatible Xiaomi M365, Pro, Pro2 et Essential. Gomme haute résistance, idéal pour un usage quotidien urbain. Installation sans chambre à air.</p>",
+      "description": "<p>Pneu <strong>10 pouces tubeless</strong> compatible Xiaomi M365, Pro, Pro2 et Essential.</p>",
       "image_url": null,
       "meta_title": "Pneu 10 Pouces Tubeless Xiaomi M365 | piecestrottinettes.fr",
-      "meta_description": "Pneu 10 pouces tubeless pour Xiaomi M365/Pro/Pro2. Haute durabilité, sans chambre à air. Livraison rapide depuis Marseille.",
-      "technical_metadata": {
-        "diametre": "10 pouces",
-        "type": "tubeless",
-        "largeur": "2.125"
+      "meta_description": "Pneu 10 pouces tubeless pour Xiaomi M365/Pro/Pro2.",
+      "technical_metadata": { "diametre": "10 pouces", "type": "tubeless", "largeur": "2.125" },
+      "is_featured": false,
+      "supplier": {
+        "name": "wattiz",
+        "sku": "WTZ-PNE-10",
+        "url": "https://wattiz.fr/pneu-10",
+        "buy_price_ht": 4.80,
+        "stock_supplier": 120,
+        "shipping_time_days": 2
       },
-      "is_featured": false
+      "compatibility_hints": { "tire_size": "10", "voltage": null }
     },
     {
-      "name": "Frein à disque 140mm universel",
-      "slug": "frein-disque-140mm-universel",
-      "category_id": "UUID_DE_LA_CATEGORIE_ICI",
-      "price": 22.50,
-      "stock_quantity": 30,
-      "sku": "FRE-140-UNI",
-      "description": "<p>Disque de frein <strong>140mm</strong> compatible avec la majorité des trottinettes électriques. Compatible Xiaomi, Ninebot, Kaabo et Dualtron.</p>",
-      "image_url": null,
-      "meta_title": "Disque Frein 140mm Trottinette Électrique | piecestrottinettes.fr",
-      "meta_description": "Disque de frein 140mm universel pour trottinettes électriques. Compatible Xiaomi, Ninebot, Kaabo. Livraison rapide.",
-      "technical_metadata": {
-        "diametre": "140mm",
-        "type": "disque",
-        "fixation": "6 trous"
-      },
-      "is_featured": false
+      "name": "Chargeur 52V 2A universel",
+      "slug": "chargeur-52v-2a-universel",
+      "price": 39.90,
+      "stock_quantity": 25,
+      "sku": "CHA-52V-2A",
+      "description": "<p>Chargeur compatible toutes trottinettes 52V.</p>",
+      "technical_metadata": { "voltage": "52V", "amperage": "2A" },
+      "supplier": { "name": "ewheel", "sku": "EW-CHG-52", "buy_price_ht": 14.50 },
+      "compatibility_hints": { "voltage": 52 }
+    },
+    {
+      "name": "Plaquettes de frein semi-métalliques",
+      "slug": "plaquettes-frein-semi-metallique",
+      "price": 12.00,
+      "stock_quantity": 80,
+      "sku": "PLA-SM",
+      "description": "<p>Plaquettes universelles. Pas de hint = pas de pré-suggestion auto.</p>",
+      "technical_metadata": { "type": "semi-metallique" },
+      "supplier": { "name": "voltcorp", "buy_price_ht": 3.20 }
     }
   ]
 }
