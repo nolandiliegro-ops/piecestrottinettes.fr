@@ -176,11 +176,17 @@ async function upsertSupplier(
   return true;
 }
 
-async function suggestCompatibilities(
+export interface PassAOutcome {
+  count: number;
+  scooterIds: Set<string>;
+}
+
+export async function suggestCompatibilities(
   supabase: SupabaseClient,
   partId: string,
   hints: CompatibilityHints,
-): Promise<number> {
+  excludeScooterIds?: Set<string>,
+): Promise<PassAOutcome> {
   const tire = hints.tire_size;
   const voltage = hints.voltage;
   let candidateIds = new Set<string>();
@@ -212,7 +218,6 @@ async function suggestCompatibilities(
     } else {
       const voltSet = new Set((data ?? []).map((r) => r.id as string));
       if (initialized) {
-        // intersection
         candidateIds = new Set([...candidateIds].filter((id) => voltSet.has(id)));
       } else {
         candidateIds = voltSet;
@@ -220,23 +225,37 @@ async function suggestCompatibilities(
     }
   }
 
-  if (candidateIds.size === 0) return 0;
+  // Exclusion (utile pour retrigger : ne pas re-créer les validated)
+  if (excludeScooterIds && excludeScooterIds.size > 0) {
+    candidateIds = new Set(
+      [...candidateIds].filter((id) => !excludeScooterIds.has(id)),
+    );
+  }
+
+  if (candidateIds.size === 0) {
+    return { count: 0, scooterIds: new Set() };
+  }
 
   const rows = Array.from(candidateIds).map((scooterId) => ({
     part_id: partId,
     scooter_model_id: scooterId,
     auto_suggested: true,
+    confidence_level: "high",
+    suggestion_reason: null as string | null,
   }));
 
   const { error: insertErr } = await supabase
     .from("part_compatibility")
-    .insert(rows);
+    .upsert(rows, {
+      onConflict: "part_id,scooter_model_id",
+      ignoreDuplicates: true,
+    });
 
   if (insertErr) {
     console.error(`[bulk-insert-parts] Erreur insert compatibilities ${partId}:`, insertErr.message);
-    return 0;
+    return { count: 0, scooterIds: new Set() };
   }
-  return rows.length;
+  return { count: rows.length, scooterIds: candidateIds };
 }
 
 // =====================================================================
