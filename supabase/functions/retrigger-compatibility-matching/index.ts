@@ -17,11 +17,11 @@ import {
   suggestCompatibilities,
   resolveCompatibilityHints,
   corsHeaders,
-} from "../bulk-insert-parts/index.ts";
+} from "../_shared/compatibility-helpers.ts";
 import {
   suggestCompatibilitiesAI,
   extractHintsFromTechnicalMetadata,
-} from "../bulk-insert-parts/ai_matcher.ts";
+} from "../_shared/ai_matcher.ts";
 
 interface PartTarget {
   id: string;
