@@ -7,7 +7,9 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Loader2, Check, Trash2, Bot, Pencil, ExternalLink, ImageIcon, CheckCheck, Package, Euro, Wrench } from 'lucide-react';
+import { Loader2, Check, Trash2, Bot, Pencil, ExternalLink, ImageIcon, CheckCheck, Package, Euro, Wrench, ChevronDown } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import PartSuppliersManager from './PartSuppliersManager';
 import { toast } from 'sonner';
 import {
   AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
@@ -392,6 +394,20 @@ const PendingPartsManager = () => {
                       </AlertDialogContent>
                     </AlertDialog>
                   </div>
+
+                  {/* Fournisseurs B2B (collapsible) */}
+                  <Collapsible>
+                    <CollapsibleTrigger className="w-full flex items-center justify-between gap-2 px-3 py-2 rounded-lg bg-[hsl(0_0%_9%)] border border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:bg-[hsl(0_0%_12%)] transition-colors text-xs group">
+                      <span className="flex items-center gap-1.5">
+                        <Package className="w-3 h-3 text-amber-400" />
+                        Fournisseurs B2B
+                      </span>
+                      <ChevronDown className="w-3 h-3 transition-transform group-data-[state=open]:rotate-180" />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="pt-2">
+                      <PartSuppliersManager partId={part.id} partPrice={part.price} />
+                    </CollapsibleContent>
+                  </Collapsible>
                 </div>
               </CardContent>
             </Card>
