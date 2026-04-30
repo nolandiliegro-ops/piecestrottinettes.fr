@@ -313,8 +313,15 @@ Deno.serve(async (req) => {
       updated: 0,
       suppliers_added: 0,
       compatibilities_suggested: 0,
+      compatibilities_suggested_ai: 0,
+      ai_calls: 0,
       errors: [],
     };
+
+    const anthropicKey = Deno.env.get("ANTHROPIC_API_KEY");
+    if (!anthropicKey) {
+      console.warn("[bulk-insert-parts] ANTHROPIC_API_KEY absente — Passe B IA désactivée");
+    }
 
     for (const part of parts) {
       try {
@@ -373,7 +380,10 @@ Deno.serve(async (req) => {
 
         const partId = partRow.id as string;
         let suppliersAddedThis = 0;
-        let suggestionsThis = 0;
+        let passACount = 0;
+        let passBCount = 0;
+        let aiDurationMs = 0;
+        let aiStatus = "skipped";
 
         if (wasNew) results.inserted++;
         else results.updated++;
@@ -391,7 +401,7 @@ Deno.serve(async (req) => {
           }
         }
 
-        // Suggestion compat UNIQUEMENT à la création
+        // Suggestions compat UNIQUEMENT à la création
         if (wasNew) {
           const { count } = await supabase
             .from("part_compatibility")
@@ -399,23 +409,55 @@ Deno.serve(async (req) => {
             .eq("part_id", partId);
 
           if ((count ?? 0) === 0) {
+            // Passe A — regex specs
             const hints = resolveCompatibilityHints(part);
+            let passAScooterIds = new Set<string>();
             if (hints) {
               try {
-                const n = await suggestCompatibilities(supabase, partId, hints);
-                suggestionsThis = n;
-                results.compatibilities_suggested += n;
+                const passA = await suggestCompatibilities(supabase, partId, hints);
+                passACount = passA.count;
+                passAScooterIds = passA.scooterIds;
+                results.compatibilities_suggested += passA.count;
               } catch (e) {
-                console.error(`[bulk-insert-parts] suggestion exception ${part.name}:`, e);
-                results.errors.push({ name: part.name, error: `compat: ${String(e)}` });
+                console.error(`[bulk-insert-parts] suggestion A exception ${part.name}:`, e);
+                results.errors.push({ name: part.name, error: `compat A: ${String(e)}` });
+              }
+            }
+
+            // Passe B — IA Claude (jamais bloquante)
+            if (anthropicKey) {
+              try {
+                const passB = await suggestCompatibilitiesAI(
+                  supabase,
+                  partId,
+                  {
+                    name: part.name,
+                    description: part.description ?? null,
+                    technical_metadata: part.technical_metadata ?? null,
+                  },
+                  passAScooterIds,
+                  anthropicKey,
+                );
+                passBCount = passB.count;
+                aiDurationMs = passB.durationMs;
+                aiStatus = passB.status;
+                results.compatibilities_suggested_ai += passB.count;
+                results.ai_calls += 1;
+              } catch (e) {
+                console.error(`[bulk-insert-parts] AI matcher exception ${part.name}:`, e);
+                aiStatus = "error";
               }
             }
           }
         }
 
         console.log(
-          `[bulk-insert-parts] ${wasNew ? "CREATED" : "UPDATED"} "${part.name}" — ` +
-          `suppliers_added=${suppliersAddedThis} compatibilities_suggested=${suggestionsThis}`,
+          `[bulk-insert-parts] PIECE "${part.name}" ` +
+          `${wasNew ? "CREATED" : "UPDATED"} ` +
+          `suppliers_added=${suppliersAddedThis} ` +
+          `passe_A_matched=${passACount} passe_B_matched=${passBCount} ` +
+          `total_unique=${passACount + passBCount} ` +
+          `api_call_time_ms=${aiDurationMs} ai_status=${aiStatus}`,
         );
       } catch (loopErr) {
         console.error(`[bulk-insert-parts] Exception part loop:`, loopErr);
