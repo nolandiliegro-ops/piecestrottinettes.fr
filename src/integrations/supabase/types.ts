@@ -603,24 +603,30 @@ export type Database = {
       part_compatibility: {
         Row: {
           auto_suggested: boolean
+          confidence_level: string
           created_at: string
           id: string
           part_id: string
           scooter_model_id: string
+          suggestion_reason: string | null
         }
         Insert: {
           auto_suggested?: boolean
+          confidence_level?: string
           created_at?: string
           id?: string
           part_id: string
           scooter_model_id: string
+          suggestion_reason?: string | null
         }
         Update: {
           auto_suggested?: boolean
+          confidence_level?: string
           created_at?: string
           id?: string
           part_id?: string
           scooter_model_id?: string
+          suggestion_reason?: string | null
         }
         Relationships: [
           {
