@@ -8,7 +8,7 @@ import {
   extractVoltageFromName,
   buildTireSizeRegex,
   resolveCompatibilityHints,
-} from "./index.ts";
+} from "../_shared/compatibility-helpers.ts";
 import {
   resolveModel,
   buildAIPrompt,
@@ -19,7 +19,7 @@ import {
   DEFAULT_MODEL,
   type AIMatchResult,
   type AIScooterRow,
-} from "./ai_matcher.ts";
+} from "../_shared/ai_matcher.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
 

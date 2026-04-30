@@ -1,10 +1,24 @@
-import { createClient, SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { suggestCompatibilitiesAI } from "./ai_matcher.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import type { SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
+import {
+  corsHeaders,
+  suggestCompatibilities,
+  resolveCompatibilityHints,
+  type CompatibilityHints,
+} from "../_shared/compatibility-helpers.ts";
+import { suggestCompatibilitiesAI } from "../_shared/ai_matcher.ts";
 
-export const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-admin-secret",
-};
+// Re-exports pour préserver la compat des consommateurs / tests historiques
+// qui pouvaient importer depuis ce fichier.
+export {
+  corsHeaders,
+  extractTireSizeFromName,
+  extractVoltageFromName,
+  buildTireSizeRegex,
+  resolveCompatibilityHints,
+  suggestCompatibilities,
+} from "../_shared/compatibility-helpers.ts";
+export type { CompatibilityHints, PassAOutcome } from "../_shared/compatibility-helpers.ts";
 
 const ALLOWED_SUPPLIERS = [
   "wattiz", "ewheel", "voltcorp", "bluewaycorp",
@@ -20,11 +34,6 @@ interface SupplierInput {
   stock_supplier?: number;
   shipping_time_days?: number;
   notes?: string;
-}
-
-interface CompatibilityHints {
-  tire_size?: string | null;
-  voltage?: number | null;
 }
 
 interface PartInput {
@@ -61,63 +70,6 @@ interface Results {
   compatibilities_suggested_ai: number;
   ai_calls: number;
   errors: { name: string; error: string }[];
-}
-
-// =====================================================================
-// PURE HELPERS — exportés pour les tests
-// =====================================================================
-
-/**
- * Extrait la dimension de pneu (en pouces) du nom d'une pièce.
- * "Pneu 10x2.50" → "10" ; "Chargeur 100V" → null.
- */
-export function extractTireSizeFromName(name: string): string | null {
-  const match = name.match(/(\d{1,2}(?:\.\d{1,2})?)\s*[x×]\s*\d/i);
-  return match ? match[1] : null;
-}
-
-/**
- * Extrait un voltage du nom d'une pièce.
- * "Chargeur 52V 2A" → 52 ; "Pneu 10x2.50" → null ; "12V" → null (hors plage).
- */
-export function extractVoltageFromName(name: string): number | null {
-  const match = name.match(/(\d{2,3})\s*(?:V|volts?)\b/i);
-  if (!match) return null;
-  const v = parseInt(match[1], 10);
-  if (v < 24 || v > 144) return null;
-  return v;
-}
-
-/**
- * Construit une regex POSIX qui matche la taille de pneu comme nombre complet.
- * "10" matche "10x", "10 pouces" mais PAS "100".
- */
-export function buildTireSizeRegex(size: string): string {
-  const esc = size.replace(/\./g, "\\.");
-  return `(^|[^0-9])${esc}([^0-9.]|$)`;
-}
-
-/**
- * Décide les hints de compat à utiliser : explicit > fallback regex > null.
- */
-export function resolveCompatibilityHints(
-  part: PartInput,
-): CompatibilityHints | null {
-  const explicit = part.compatibility_hints;
-  const hasExplicitTire = explicit?.tire_size != null && explicit.tire_size !== "";
-  const hasExplicitVoltage = explicit?.voltage != null;
-
-  if (hasExplicitTire || hasExplicitVoltage) {
-    return {
-      tire_size: hasExplicitTire ? String(explicit!.tire_size) : null,
-      voltage: hasExplicitVoltage ? Number(explicit!.voltage) : null,
-    };
-  }
-
-  const tire = extractTireSizeFromName(part.name);
-  const volt = extractVoltageFromName(part.name);
-  if (tire == null && volt == null) return null;
-  return { tire_size: tire, voltage: volt };
 }
 
 // =====================================================================
@@ -174,88 +126,6 @@ async function upsertSupplier(
     return false;
   }
   return true;
-}
-
-export interface PassAOutcome {
-  count: number;
-  scooterIds: Set<string>;
-}
-
-export async function suggestCompatibilities(
-  supabase: SupabaseClient,
-  partId: string,
-  hints: CompatibilityHints,
-  excludeScooterIds?: Set<string>,
-): Promise<PassAOutcome> {
-  const tire = hints.tire_size;
-  const voltage = hints.voltage;
-  let candidateIds = new Set<string>();
-  let initialized = false;
-
-  if (tire) {
-    const regex = buildTireSizeRegex(tire);
-    const { data, error } = await supabase
-      .from("scooter_models")
-      .select("id")
-      .eq("published", true)
-      .filter("tire_size", "~*", regex);
-    if (error) {
-      console.error(`[bulk-insert-parts] Erreur match tire_size:`, error.message);
-    } else {
-      for (const r of data ?? []) candidateIds.add(r.id as string);
-      initialized = true;
-    }
-  }
-
-  if (voltage != null) {
-    const { data, error } = await supabase
-      .from("scooter_models")
-      .select("id")
-      .eq("published", true)
-      .eq("voltage", voltage);
-    if (error) {
-      console.error(`[bulk-insert-parts] Erreur match voltage:`, error.message);
-    } else {
-      const voltSet = new Set((data ?? []).map((r) => r.id as string));
-      if (initialized) {
-        candidateIds = new Set([...candidateIds].filter((id) => voltSet.has(id)));
-      } else {
-        candidateIds = voltSet;
-      }
-    }
-  }
-
-  // Exclusion (utile pour retrigger : ne pas re-créer les validated)
-  if (excludeScooterIds && excludeScooterIds.size > 0) {
-    candidateIds = new Set(
-      [...candidateIds].filter((id) => !excludeScooterIds.has(id)),
-    );
-  }
-
-  if (candidateIds.size === 0) {
-    return { count: 0, scooterIds: new Set() };
-  }
-
-  const rows = Array.from(candidateIds).map((scooterId) => ({
-    part_id: partId,
-    scooter_model_id: scooterId,
-    auto_suggested: true,
-    confidence_level: "high",
-    suggestion_reason: null as string | null,
-  }));
-
-  const { error: insertErr } = await supabase
-    .from("part_compatibility")
-    .upsert(rows, {
-      onConflict: "part_id,scooter_model_id",
-      ignoreDuplicates: true,
-    });
-
-  if (insertErr) {
-    console.error(`[bulk-insert-parts] Erreur insert compatibilities ${partId}:`, insertErr.message);
-    return { count: 0, scooterIds: new Set() };
-  }
-  return { count: rows.length, scooterIds: candidateIds };
 }
 
 // =====================================================================
