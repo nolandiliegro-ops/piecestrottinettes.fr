@@ -41,9 +41,19 @@
       "price": 12.00,
       "stock_quantity": 80,
       "sku": "PLA-SM",
-      "description": "<p>Plaquettes universelles. Pas de hint = pas de pré-suggestion auto.</p>",
+      "description": "<p>Plaquettes universelles. Pas de hint = Passe A skip, Passe B (IA) tente quand même.</p>",
       "technical_metadata": { "type": "semi-metallique" },
       "supplier": { "name": "voltcorp", "buy_price_ht": 3.20 }
+    },
+    {
+      "name": "Garde-boue arrière fibre carbone Dualtron Thunder",
+      "slug": "garde-boue-dualtron-thunder",
+      "price": 49.90,
+      "stock_quantity": 15,
+      "sku": "GB-DT-THUNDER",
+      "description": "<p>Garde-boue spécifique Dualtron Thunder, fixation 4 vis M5. Pas de hint regex possible — la Passe B IA reconnaît 'Dualtron Thunder' sémantiquement.</p>",
+      "technical_metadata": { "matiere": "fibre de carbone", "fixation": "4 vis M5" },
+      "supplier": { "name": "dualtronstore", "buy_price_ht": 18.00 }
     }
   ]
 }

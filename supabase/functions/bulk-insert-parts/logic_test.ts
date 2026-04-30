@@ -1,4 +1,4 @@
-// Tests unitaires des helpers purs de bulk-insert-parts.
+// Tests unitaires des helpers purs de bulk-insert-parts + ai_matcher.
 import {
   assertEquals,
   assertStrictEquals,
@@ -9,6 +9,19 @@ import {
   buildTireSizeRegex,
   resolveCompatibilityHints,
 } from "./index.ts";
+import {
+  resolveModel,
+  buildAIPrompt,
+  parseAIResponse,
+  dedupeAgainstPassA,
+  extractHintsFromTechnicalMetadata,
+  withTimeout,
+  DEFAULT_MODEL,
+  type AIMatchResult,
+  type AIScooterRow,
+} from "./ai_matcher.ts";
+
+// ─── Helpers existants (Passe A) ────────────────────────────────────────────
 
 Deno.test("extractTireSizeFromName: pneu 10x2.50 → 10", () => {
   assertEquals(extractTireSizeFromName("Pneu 10x2.50 tubeless"), "10");
@@ -102,4 +115,190 @@ Deno.test("resolveCompatibilityHints: hints vides → fallback", () => {
     compatibility_hints: {},
   });
   assertEquals(hints?.tire_size, "10");
+});
+
+// ─── resolveModel ───────────────────────────────────────────────────────────
+
+Deno.test("resolveModel: env vide → DEFAULT_MODEL Sonnet 4.5", () => {
+  assertEquals(resolveModel(undefined), DEFAULT_MODEL);
+  assertEquals(resolveModel(""), DEFAULT_MODEL);
+  assertEquals(resolveModel("   "), DEFAULT_MODEL);
+});
+
+Deno.test("resolveModel: env claude-haiku-4-5 valide → utilisée", () => {
+  assertEquals(resolveModel("claude-haiku-4-5"), "claude-haiku-4-5");
+});
+
+Deno.test("resolveModel: env claude-opus-4 valide → utilisée", () => {
+  assertEquals(resolveModel("claude-opus-4-1"), "claude-opus-4-1");
+});
+
+Deno.test("resolveModel: env invalide gpt-4 → fallback Sonnet", () => {
+  assertEquals(resolveModel("gpt-4-turbo"), DEFAULT_MODEL);
+});
+
+Deno.test("resolveModel: env invalide random → fallback", () => {
+  assertEquals(resolveModel("totallyrandom"), DEFAULT_MODEL);
+});
+
+// ─── parseAIResponse ────────────────────────────────────────────────────────
+
+const validIds = new Set([
+  "11111111-1111-1111-1111-111111111111",
+  "22222222-2222-2222-2222-222222222222",
+]);
+
+Deno.test("parseAIResponse: JSON pur valide", () => {
+  const txt = JSON.stringify({
+    compatibilities: [
+      { scooter_id: "11111111-1111-1111-1111-111111111111", compatible: true, confidence: "high", reason: "ok" },
+    ],
+  });
+  const out = parseAIResponse(txt, validIds);
+  assertEquals(out.length, 1);
+  assertEquals(out[0].confidence, "high");
+});
+
+Deno.test("parseAIResponse: JSON entouré de markdown ```json ... ```", () => {
+  const txt = "Voici le résultat:\n```json\n" + JSON.stringify({
+    compatibilities: [
+      { scooter_id: "22222222-2222-2222-2222-222222222222", compatible: true, confidence: "medium", reason: "specs proches" },
+    ],
+  }) + "\n```";
+  const out = parseAIResponse(txt, validIds);
+  assertEquals(out.length, 1);
+  assertEquals(out[0].scooter_id, "22222222-2222-2222-2222-222222222222");
+});
+
+Deno.test("parseAIResponse: texte garbage → []", () => {
+  assertEquals(parseAIResponse("aucun JSON ici", validIds), []);
+  assertEquals(parseAIResponse("", validIds), []);
+});
+
+Deno.test("parseAIResponse: filtre confidence invalide", () => {
+  const txt = JSON.stringify({
+    compatibilities: [
+      { scooter_id: "11111111-1111-1111-1111-111111111111", compatible: true, confidence: "BAD", reason: "x" },
+    ],
+  });
+  assertEquals(parseAIResponse(txt, validIds), []);
+});
+
+Deno.test("parseAIResponse: filtre compatible=false", () => {
+  const txt = JSON.stringify({
+    compatibilities: [
+      { scooter_id: "11111111-1111-1111-1111-111111111111", compatible: false, confidence: "high", reason: "non" },
+    ],
+  });
+  assertEquals(parseAIResponse(txt, validIds), []);
+});
+
+Deno.test("parseAIResponse: anti-hallucination UUID inconnu", () => {
+  const txt = JSON.stringify({
+    compatibilities: [
+      { scooter_id: "00000000-0000-0000-0000-000000000000", compatible: true, confidence: "high", reason: "x" },
+      { scooter_id: "11111111-1111-1111-1111-111111111111", compatible: true, confidence: "low", reason: "y" },
+    ],
+  });
+  const out = parseAIResponse(txt, validIds);
+  assertEquals(out.length, 1);
+  assertEquals(out[0].scooter_id, "11111111-1111-1111-1111-111111111111");
+});
+
+Deno.test("parseAIResponse: tronque reason à 280 chars", () => {
+  const longReason = "x".repeat(500);
+  const txt = JSON.stringify({
+    compatibilities: [
+      { scooter_id: "11111111-1111-1111-1111-111111111111", compatible: true, confidence: "high", reason: longReason },
+    ],
+  });
+  const out = parseAIResponse(txt, validIds);
+  assertEquals(out[0].reason.length, 280);
+});
+
+// ─── dedupeAgainstPassA ─────────────────────────────────────────────────────
+
+Deno.test("dedupeAgainstPassA: retire les ids déjà dans Passe A", () => {
+  const ai: AIMatchResult[] = [
+    { scooter_id: "a", confidence: "high", reason: "" },
+    { scooter_id: "b", confidence: "medium", reason: "" },
+    { scooter_id: "c", confidence: "low", reason: "" },
+  ];
+  const passA = new Set(["a", "c"]);
+  const out = dedupeAgainstPassA(ai, passA);
+  assertEquals(out.length, 1);
+  assertEquals(out[0].scooter_id, "b");
+});
+
+Deno.test("dedupeAgainstPassA: garde tous si Passe A vide", () => {
+  const ai: AIMatchResult[] = [
+    { scooter_id: "a", confidence: "high", reason: "" },
+  ];
+  assertEquals(dedupeAgainstPassA(ai, new Set()).length, 1);
+});
+
+// ─── buildAIPrompt ──────────────────────────────────────────────────────────
+
+const sampleScooters: AIScooterRow[] = [
+  { id: "11111111-1111-1111-1111-111111111111", name: "M365", brand: "Xiaomi", tire_size: "8.5", voltage: 36, power_watts: 250, range_km: 30 },
+];
+
+Deno.test("buildAIPrompt: contient nom pièce et liste scooters JSON", () => {
+  const { system, user } = buildAIPrompt({
+    part: { name: "Pneu 10x2.50", description: "tubeless" },
+    scooters: sampleScooters,
+  });
+  assertEquals(system.includes("expert mécanique"), true);
+  assertEquals(user.includes("Pneu 10x2.50"), true);
+  assertEquals(user.includes("M365"), true);
+  assertEquals(user.includes("Xiaomi"), true);
+});
+
+Deno.test("buildAIPrompt: strip HTML de la description", () => {
+  const { user } = buildAIPrompt({
+    part: { name: "X", description: "<p>Texte <strong>gras</strong></p>" },
+    scooters: sampleScooters,
+  });
+  assertEquals(user.includes("<p>"), false);
+  assertEquals(user.includes("Texte gras"), true);
+});
+
+// ─── extractHintsFromTechnicalMetadata ──────────────────────────────────────
+
+Deno.test("extractHintsFromTechnicalMetadata: tire_size '10 pouces' → '10'", () => {
+  const h = extractHintsFromTechnicalMetadata({ diametre: "10 pouces" });
+  assertEquals(h.tire_size, "10");
+});
+
+Deno.test("extractHintsFromTechnicalMetadata: voltage '52V' string → 52 number", () => {
+  const h = extractHintsFromTechnicalMetadata({ voltage: "52V" });
+  assertEquals(h.voltage, 52);
+});
+
+Deno.test("extractHintsFromTechnicalMetadata: voltage hors plage → null", () => {
+  assertEquals(extractHintsFromTechnicalMetadata({ voltage: 12 }).voltage, null);
+  assertEquals(extractHintsFromTechnicalMetadata({ voltage: "200V" }).voltage, null);
+});
+
+Deno.test("extractHintsFromTechnicalMetadata: vide → null/null", () => {
+  assertEquals(extractHintsFromTechnicalMetadata(null), { tire_size: null, voltage: null });
+  assertEquals(extractHintsFromTechnicalMetadata({}), { tire_size: null, voltage: null });
+});
+
+// ─── withTimeout ────────────────────────────────────────────────────────────
+
+Deno.test("withTimeout: résout normalement avant timeout", async () => {
+  const r = await withTimeout(Promise.resolve("ok"), 100, () => "TIMEOUT");
+  assertEquals(r, "ok");
+});
+
+Deno.test("withTimeout: déclenche fallback après timeout", async () => {
+  const slow = new Promise<string>((resolve) => setTimeout(() => resolve("late"), 200));
+  const r = await withTimeout(slow, 50, () => "TIMEOUT");
+  assertEquals(r, "TIMEOUT");
+});
+
+Deno.test("withTimeout: fallback sur rejection", async () => {
+  const r = await withTimeout(Promise.reject(new Error("x")), 100, () => "FALLBACK");
+  assertEquals(r, "FALLBACK");
 });
