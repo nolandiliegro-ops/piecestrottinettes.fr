@@ -3,6 +3,9 @@
 .env.local
 .env.production
 
+# Scripts locaux
+scripts/sync.bat
+
 # Logs
 logs
 *.log
