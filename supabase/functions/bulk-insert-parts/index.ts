@@ -1,6 +1,7 @@
 import { createClient, SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { suggestCompatibilitiesAI } from "./ai_matcher.ts";
 
-const corsHeaders = {
+export const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-admin-secret",
 };
@@ -57,6 +58,8 @@ interface Results {
   updated: number;
   suppliers_added: number;
   compatibilities_suggested: number;
+  compatibilities_suggested_ai: number;
+  ai_calls: number;
   errors: { name: string; error: string }[];
 }
 
