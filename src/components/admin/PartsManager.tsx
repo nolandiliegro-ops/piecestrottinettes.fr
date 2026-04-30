@@ -20,6 +20,7 @@ import { cn } from '@/lib/utils';
 import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
+import PartSuppliersManager from './PartSuppliersManager';
 
 import type { Json } from '@/integrations/supabase/types';
 
@@ -689,12 +690,13 @@ const PartsManager = () => {
 
   const renderFormFields = (values: typeof newPart, setValues: (v: typeof newPart) => void, isEdit = false) => (
     <Tabs defaultValue="general" className="w-full">
-      <TabsList className="grid w-full grid-cols-5 mb-4">
+      <TabsList className={cn("grid w-full mb-4", isEdit ? "grid-cols-6" : "grid-cols-5")}>
         <TabsTrigger value="general" className="text-xs gap-1"><Package className="w-3 h-3" /> Général</TabsTrigger>
         <TabsTrigger value="compat" className="text-xs gap-1"><Bike className="w-3 h-3" /> Compat</TabsTrigger>
         <TabsTrigger value="install" className="text-xs gap-1"><Wrench className="w-3 h-3" /> Install</TabsTrigger>
         <TabsTrigger value="specs" className="text-xs gap-1"><Code className="w-3 h-3" /> Specs</TabsTrigger>
         <TabsTrigger value="seo" className="text-xs gap-1"><Globe className="w-3 h-3" /> SEO</TabsTrigger>
+        {isEdit && <TabsTrigger value="suppliers" className="text-xs gap-1"><Trophy className="w-3 h-3" /> B2B</TabsTrigger>}
       </TabsList>
 
       <TabsContent value="general" className="space-y-4">
@@ -851,6 +853,18 @@ const PartsManager = () => {
           <p className="text-xs text-muted-foreground">{values.meta_description.length}/160 caractères</p>
         </div>
       </TabsContent>
+
+      {isEdit && editPart && (
+        <TabsContent value="suppliers" className="space-y-4">
+          <div className="rounded-xl border border-border bg-muted/20 p-4">
+            <div className="mb-3">
+              <h4 className="text-sm font-semibold text-foreground">Fournisseurs B2B</h4>
+              <p className="text-xs text-muted-foreground">Données internes — jamais visibles côté client.</p>
+            </div>
+            <PartSuppliersManager partId={editPart.id} partPrice={editPart.price} />
+          </div>
+        </TabsContent>
+      )}
     </Tabs>
   );
 

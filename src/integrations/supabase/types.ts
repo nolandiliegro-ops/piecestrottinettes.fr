@@ -602,18 +602,21 @@ export type Database = {
       }
       part_compatibility: {
         Row: {
+          auto_suggested: boolean
           created_at: string
           id: string
           part_id: string
           scooter_model_id: string
         }
         Insert: {
+          auto_suggested?: boolean
           created_at?: string
           id?: string
           part_id: string
           scooter_model_id: string
         }
         Update: {
+          auto_suggested?: boolean
           created_at?: string
           id?: string
           part_id?: string
@@ -632,6 +635,59 @@ export type Database = {
             columns: ["scooter_model_id"]
             isOneToOne: false
             referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      part_suppliers: {
+        Row: {
+          buy_price_ht: number | null
+          created_at: string
+          id: string
+          is_primary: boolean
+          notes: string | null
+          part_id: string
+          shipping_time_days: number | null
+          stock_supplier: number | null
+          supplier_name: string
+          supplier_sku: string | null
+          supplier_url: string | null
+          updated_at: string
+        }
+        Insert: {
+          buy_price_ht?: number | null
+          created_at?: string
+          id?: string
+          is_primary?: boolean
+          notes?: string | null
+          part_id: string
+          shipping_time_days?: number | null
+          stock_supplier?: number | null
+          supplier_name: string
+          supplier_sku?: string | null
+          supplier_url?: string | null
+          updated_at?: string
+        }
+        Update: {
+          buy_price_ht?: number | null
+          created_at?: string
+          id?: string
+          is_primary?: boolean
+          notes?: string | null
+          part_id?: string
+          shipping_time_days?: number | null
+          stock_supplier?: number | null
+          supplier_name?: string
+          supplier_sku?: string | null
+          supplier_url?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "part_suppliers_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
             referencedColumns: ["id"]
           },
         ]
