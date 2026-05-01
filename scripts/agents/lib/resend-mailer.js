@@ -3,18 +3,20 @@
  * Envoyé à admin@ndl-agency.com via la passerelle Lovable.
  */
 
-const GATEWAY_URL = 'https://connector-gateway.lovable.dev/resend';
+const RESEND_API_URL = 'https://api.resend.com/emails';
 const ADMIN_EMAIL = 'admin@ndl-agency.com';
 
 export async function sendWatcherReport({ runId, stats, scooters, parts, errors, durationSec }) {
-  const lovableKey = process.env.LOVABLE_API_KEY;
   const resendKey = process.env.RESEND_API_KEY;
-  if (!lovableKey || !resendKey) {
-    console.warn('[mailer] LOVABLE_API_KEY ou RESEND_API_KEY manquant — email non envoyé');
+  if (!resendKey) {
+    console.warn('[mailer] RESEND_API_KEY manquant — email non envoyé');
     return { sent: false, reason: 'missing_keys' };
   }
 
-  const subject = `🦅 Le Veilleur — ${stats.scooters_inserted} trottinettes / ${stats.parts_inserted} pièces ajoutées`;
+  const totalNew = (stats.scooters_inserted || 0) + (stats.parts_inserted || 0);
+  const subject = totalNew > 0
+    ? `🦅 Le Veilleur — ${stats.scooters_inserted} trottinettes / ${stats.parts_inserted} pièces ajoutées`
+    : `🦅 Le Veilleur — RAS cette semaine (run #${String(runId).slice(0, 8)})`;
   const adminLink = 'https://piecestrottinettes.fr/admin?tab=bot-import';
 
   const html = `
