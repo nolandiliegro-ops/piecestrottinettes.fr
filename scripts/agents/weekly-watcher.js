@@ -243,14 +243,17 @@ async function processParts(since) {
   for (const supConf of CONFIG.parts_suppliers) {
     try {
       console.log(`[veilleur] → Fournisseur ${supConf.name}`);
-      const found = await searchNewParts({
-        supplier: supConf.name,
-        supplierUrl: supConf.url,
-        categories: supConf.categories,
-        since,
-        model: CONFIG.anthropic.model,
-        maxTokens: CONFIG.anthropic.max_tokens,
-      });
+      const found = await retryOn429(
+        () => searchNewParts({
+          supplier: supConf.name,
+          supplierUrl: supConf.url,
+          categories: supConf.categories,
+          since,
+          model: CONFIG.anthropic.model,
+          maxTokens: CONFIG.anthropic.max_tokens,
+        }),
+        `parts[${supConf.name}]`
+      );
       stats.parts_found += found.length;
       console.log(`[veilleur]   ${found.length} pièces trouvées`);
 
