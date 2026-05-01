@@ -1173,6 +1173,63 @@ export type Database = {
         }
         Relationships: []
       }
+      watcher_runs: {
+        Row: {
+          created_at: string
+          duration_seconds: number | null
+          error_log: string | null
+          errors_count: number
+          id: string
+          parts_found: number
+          parts_inserted: number
+          parts_skipped: number
+          run_date: string
+          scooters_found: number
+          scooters_inserted: number
+          scooters_skipped: number
+          status: string
+          summary: Json
+          triggered_by: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          duration_seconds?: number | null
+          error_log?: string | null
+          errors_count?: number
+          id?: string
+          parts_found?: number
+          parts_inserted?: number
+          parts_skipped?: number
+          run_date?: string
+          scooters_found?: number
+          scooters_inserted?: number
+          scooters_skipped?: number
+          status?: string
+          summary?: Json
+          triggered_by?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          duration_seconds?: number | null
+          error_log?: string | null
+          errors_count?: number
+          id?: string
+          parts_found?: number
+          parts_inserted?: number
+          parts_skipped?: number
+          run_date?: string
+          scooters_found?: number
+          scooters_inserted?: number
+          scooters_skipped?: number
+          status?: string
+          summary?: Json
+          triggered_by?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
