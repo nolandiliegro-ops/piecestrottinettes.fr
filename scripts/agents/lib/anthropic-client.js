@@ -123,7 +123,7 @@ async function callAnthropic({ system, userPrompt, tools, model, maxTokens, webS
         ...tools,
         { type: 'web_search_20250305', name: 'web_search', max_uses: webSearchMaxUses },
       ],
-      tool_choice: { type: 'tool', name: tools[0].name },
+      tool_choice: { type: 'any' },
       messages: [{ role: 'user', content: userPrompt }],
     }),
   });
