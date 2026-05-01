@@ -104,7 +104,7 @@ const TOOLS_PARTS = [{
   },
 }];
 
-async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
+async function callAnthropic({ system, userPrompt, tools, model, maxTokens, webSearchMaxUses = 8 }) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY manquant');
 
@@ -121,7 +121,7 @@ async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
       system,
       tools: [
         ...tools,
-        { type: 'web_search_20250305', name: 'web_search', max_uses: 8 },
+        { type: 'web_search_20250305', name: 'web_search', max_uses: webSearchMaxUses },
       ],
       tool_choice: { type: 'tool', name: tools[0].name },
       messages: [{ role: 'user', content: userPrompt }],
@@ -135,6 +135,9 @@ async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
   const data = await res.json();
   const toolUse = (data.content || []).find((c) => c.type === 'tool_use');
   if (!toolUse) throw new Error('Pas de tool_use dans la réponse Anthropic');
+  console.log(`[anthropic] tool_use input:`, JSON.stringify(toolUse.input, null, 2));
+  console.log(`[anthropic] usage:`, data.usage);
+  console.log(`[anthropic] web_search count:`, data.usage?.server_tool_use?.web_search_requests ?? data.usage?.web_search_requests_count ?? 'N/A');
   return toolUse.input;
 }
 
