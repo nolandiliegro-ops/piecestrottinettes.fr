@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Wrench, Bike, Bot } from 'lucide-react';
+import { Wrench, Bike, Bot, Bird } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import PartsManager from './PartsManager';
 import ScootersManager from './ScootersManager';
 import PendingScootersManager, { usePendingScooters } from './PendingScootersManager';
 import PendingPartsManager, { usePendingParts } from './PendingPartsManager';
+import WatcherControl from './WatcherControl';
 
 const AdminInventory = () => {
   const [tab, setTab] = useState('parts');
@@ -54,6 +55,13 @@ const AdminInventory = () => {
               </Badge>
             )}
           </TabsTrigger>
+          <TabsTrigger 
+            value="watcher"
+            className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] gap-2"
+          >
+            <Bird className="w-4 h-4" />
+            Le Veilleur
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="parts" className="mt-4">
@@ -67,6 +75,9 @@ const AdminInventory = () => {
         </TabsContent>
         <TabsContent value="pending-parts" className="mt-4">
           <PendingPartsManager />
+        </TabsContent>
+        <TabsContent value="watcher" className="mt-4">
+          <WatcherControl />
         </TabsContent>
       </Tabs>
     </div>

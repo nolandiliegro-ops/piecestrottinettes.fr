@@ -63,14 +63,53 @@ process.on('unhandledRejection', async (reason) => {
 });
 
 async function getSinceDate() {
+  // Priorité 1 : override env (WATCHER_SINCE_DAYS)
+  const envDays = parseInt(process.env.WATCHER_SINCE_DAYS || '', 10);
+  if (Number.isFinite(envDays) && envDays > 0) {
+    console.log(`[veilleur] since_days override (env) = ${envDays}`);
+    return new Date(Date.now() - envDays * 24 * 3600 * 1000).toISOString();
+  }
+  // Priorité 2 : config defaults.since_days
+  const cfgDays = CONFIG?.defaults?.since_days;
+  if (Number.isFinite(cfgDays) && cfgDays > 0) {
+    console.log(`[veilleur] since_days override (config) = ${cfgDays}`);
+    return new Date(Date.now() - cfgDays * 24 * 3600 * 1000).toISOString();
+  }
+  // Priorité 3 : last successful run
   try {
     const d = await getLastSuccessDate();
     if (d) return d;
   } catch (e) {
     console.warn('[veilleur] getSinceDate fallback:', e.message);
   }
-  // Fallback : 7 jours en arrière
+  // Fallback : 7 jours
   return new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
+}
+
+// Override min_score depuis env
+const ENV_MIN_SCORE = parseInt(process.env.WATCHER_MIN_SCORE || '', 10);
+if (Number.isFinite(ENV_MIN_SCORE) && ENV_MIN_SCORE >= 0) {
+  console.log(`[veilleur] min_score override (env) = ${ENV_MIN_SCORE}`);
+  CONFIG.scoring.min_score_to_insert = ENV_MIN_SCORE;
+}
+
+// Filtres marques / fournisseurs depuis env (CSV)
+function parseCsvEnv(name) {
+  const raw = (process.env[name] || '').trim();
+  if (!raw) return null;
+  return raw.split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+}
+const BRANDS_FILTER = parseCsvEnv('WATCHER_BRANDS_FILTER');
+const SUPPLIERS_FILTER = parseCsvEnv('WATCHER_SUPPLIERS_FILTER');
+if (BRANDS_FILTER) {
+  const before = CONFIG.scooter_brands.length;
+  CONFIG.scooter_brands = CONFIG.scooter_brands.filter(b => BRANDS_FILTER.includes(b.name.toLowerCase()));
+  console.log(`[veilleur] brands filter: ${before} → ${CONFIG.scooter_brands.length}`);
+}
+if (SUPPLIERS_FILTER) {
+  const before = CONFIG.parts_suppliers.length;
+  CONFIG.parts_suppliers = CONFIG.parts_suppliers.filter(s => SUPPLIERS_FILTER.includes(s.name.toLowerCase()));
+  console.log(`[veilleur] suppliers filter: ${before} → ${CONFIG.parts_suppliers.length}`);
 }
 
 async function startRun(triggeredBy) {

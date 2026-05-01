@@ -1,4 +1,9 @@
 {
+  "defaults": {
+    "since_days": 90,
+    "max_models_per_brand": 8,
+    "max_parts_per_supplier": 15
+  },
   "scooter_brands": [
     { "name": "Dualtron", "official_url": "https://dualtron.fr", "manufacturer_url": "https://minimotorsusa.com" },
     { "name": "Xiaomi", "official_url": "https://www.mi.com/fr/scooter" },
@@ -33,7 +38,7 @@
     { "name": "Mobilityurban", "url": "https://www.mobilityurban.fr" }
   ],
   "scoring": {
-    "min_score_to_insert": 60,
+    "min_score_to_insert": 30,
     "weights": {
       "has_price": 15,
       "has_official_url": 15,
