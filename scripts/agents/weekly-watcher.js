@@ -229,6 +229,8 @@ async function processScooters(since) {
     } catch (e) {
       errors.push(`scooters[${brandConf.name}]: ${e.message}`);
       console.error(`[veilleur]   ❌ ${brandConf.name}: ${e.message}`);
+    } finally {
+      await sleep(8000); // 8s entre chaque marque pour respecter rate limit Anthropic
     }
   }
 }
