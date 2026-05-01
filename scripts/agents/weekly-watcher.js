@@ -33,6 +33,22 @@ const CONFIG = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', '..', 'config', 'watcher-sources.json'), 'utf-8')
 );
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function retryOn429(fn, label) {
+  try {
+    return await fn();
+  } catch (e) {
+    const msg = e?.message || '';
+    if (msg.includes('429') || msg.includes('rate_limit')) {
+      console.warn(`[veilleur] 429 sur ${label}, retry dans 30s...`);
+      await sleep(30000);
+      return await fn();
+    }
+    throw e;
+  }
+}
+
 const startedAt = Date.now();
 const errors = [];
 const insertedScooters = [];
