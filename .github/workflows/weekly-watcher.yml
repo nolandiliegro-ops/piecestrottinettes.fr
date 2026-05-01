@@ -10,6 +10,26 @@ on:
         description: 'Raison du trigger manuel (optionnel)'
         required: false
         default: 'manual smoke test'
+      since_days:
+        description: 'Lookback en jours (override config). Vide = config defaults.'
+        required: false
+        default: ''
+      min_score:
+        description: 'Score minimum d''insertion (override config). Vide = config.'
+        required: false
+        default: ''
+      brands_filter:
+        description: 'CSV de marques à scanner (vide = toutes). Ex: Dualtron,Xiaomi'
+        required: false
+        default: ''
+      suppliers_filter:
+        description: 'CSV de fournisseurs à scanner (vide = tous). Ex: Wattiz,eWheel'
+        required: false
+        default: ''
+
+concurrency:
+  group: weekly-watcher
+  cancel-in-progress: false
 
 jobs:
   watch:
@@ -28,4 +48,8 @@ jobs:
           ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          WATCHER_SINCE_DAYS: ${{ github.event.inputs.since_days }}
+          WATCHER_MIN_SCORE: ${{ github.event.inputs.min_score }}
+          WATCHER_BRANDS_FILTER: ${{ github.event.inputs.brands_filter }}
+          WATCHER_SUPPLIERS_FILTER: ${{ github.event.inputs.suppliers_filter }}
         run: node scripts/agents/weekly-watcher.js
