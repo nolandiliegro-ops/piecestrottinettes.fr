@@ -16,9 +16,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  restSelect,
-  restInsert,
-  restUpdate,
+  getLastSuccessDate,
+  logRunStart,
+  logRunComplete,
+  logRunFail,
   fetchExistingSlugs,
   invokeEdgeFunction,
 } from './lib/supabase-rest.js';
@@ -63,11 +64,8 @@ process.on('unhandledRejection', async (reason) => {
 
 async function getSinceDate() {
   try {
-    const last = await restSelect(
-      'watcher_runs',
-      'select=run_date&status=eq.success&order=run_date.desc&limit=1'
-    );
-    if (last.length > 0) return last[0].run_date;
+    const d = await getLastSuccessDate();
+    if (d) return d;
   } catch (e) {
     console.warn('[veilleur] getSinceDate fallback:', e.message);
   }
@@ -76,29 +74,28 @@ async function getSinceDate() {
 }
 
 async function startRun(triggeredBy) {
-  const rows = await restInsert('watcher_runs', [{
-    status: 'running',
-    triggered_by: triggeredBy,
-    summary: {},
-  }]);
-  return rows[0].id;
+  return logRunStart(triggeredBy);
 }
 
 async function finalize(status, errorLog) {
   if (!runId) return;
   const duration = Math.round((Date.now() - startedAt) / 1000);
   stats.errors_count = errors.length;
-  await restUpdate('watcher_runs', runId, {
+  const patch = {
     status,
     duration_seconds: duration,
     ...stats,
-    error_log: errorLog ? String(errorLog).slice(0, 5000) : null,
     summary: {
       scooters: insertedScooters.slice(0, 50),
       parts: insertedParts.slice(0, 50),
       errors: errors.slice(0, 50),
     },
-  });
+  };
+  if (status === 'failed') {
+    await logRunFail(runId, errorLog, patch);
+  } else {
+    await logRunComplete(runId, { ...patch, error_log: errorLog ? String(errorLog).slice(0, 5000) : null });
+  }
 }
 
 async function processScooters(since) {
