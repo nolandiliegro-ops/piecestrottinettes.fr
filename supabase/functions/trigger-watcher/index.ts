@@ -26,11 +26,11 @@ Deno.serve(async (req) => {
       { global: { headers: { Authorization: authHeader } } }
     );
 
-    const token = authHeader.replace('Bearer ', '');
-    const { data: claims, error: claimsErr } = await supabase.auth.getClaims(token);
-    if (claimsErr || !claims?.claims?.sub) return json({ error: 'Unauthorized' }, 401);
+    const { data: userData, error: userErr } = await supabase.auth.getUser();
+    if (userErr || !userData?.user) return json({ error: 'Unauthorized' }, 401);
 
-    const userId = claims.claims.sub;
+    const userId = userData.user.id;
+    const userEmail = userData.user.email;
 
     // Vérifie role admin
     const admin = createClient(
@@ -50,7 +50,7 @@ Deno.serve(async (req) => {
 
     const body = await req.json().catch(() => ({}));
     const inputs: Record<string, string> = {
-      reason: `admin UI trigger by ${claims.claims.email || userId}`,
+      reason: `admin UI trigger by ${userEmail || userId}`,
       since_days: body.since_days != null ? String(body.since_days) : '',
       min_score: body.min_score != null ? String(body.min_score) : '',
       brands_filter: body.brands_filter || '',
