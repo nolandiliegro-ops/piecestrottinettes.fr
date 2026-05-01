@@ -1,0 +1,51 @@
+{
+  "scooter_brands": [
+    { "name": "Dualtron", "official_url": "https://dualtron.fr", "manufacturer_url": "https://minimotorsusa.com" },
+    { "name": "Xiaomi", "official_url": "https://www.mi.com/fr/scooter" },
+    { "name": "Ninebot", "official_url": "https://store.segway.com/segway-ninebot-electric-kickscooters" },
+    { "name": "Vsett", "official_url": "https://vsett.fr" },
+    { "name": "NAMI", "official_url": "https://nami-electric.com" },
+    { "name": "Kaabo", "official_url": "https://kaabo.fr" },
+    { "name": "Kugoo", "official_url": "https://kugookirin.com" },
+    { "name": "Inokim", "official_url": "https://inokim.com" },
+    { "name": "Apollo", "official_url": "https://apolloscooters.com" }
+  ],
+  "parts_suppliers": [
+    {
+      "name": "Wattiz",
+      "url": "https://www.wattiz.fr",
+      "categories": ["batteries", "pneus", "freins", "controleurs", "moteurs", "écrans", "accélérateurs"]
+    },
+    {
+      "name": "Volt-Corp",
+      "url": "https://www.volt-corp.com",
+      "categories": ["batteries", "pneus", "chambres à air", "freins", "suspension", "amortisseurs"]
+    },
+    {
+      "name": "eWheel",
+      "url": "https://www.ewheel.fr",
+      "categories": ["pneus", "chambres à air", "freins", "plaquettes", "disques", "écrans"]
+    }
+  ],
+  "competitor_pricing_sources": [
+    { "name": "Weebot", "url": "https://www.weebot.fr" },
+    { "name": "FastRide", "url": "https://www.fastride.fr" },
+    { "name": "Mobilityurban", "url": "https://www.mobilityurban.fr" }
+  ],
+  "scoring": {
+    "min_score_to_insert": 60,
+    "weights": {
+      "has_price": 15,
+      "has_official_url": 15,
+      "has_images": 20,
+      "has_full_specs": 30,
+      "has_marketing_description": 20
+    },
+    "full_specs_min_fields": 6
+  },
+  "anthropic": {
+    "model": "claude-sonnet-4-5-20250929",
+    "max_tokens": 8000,
+    "max_web_searches_per_call": 8
+  }
+}
