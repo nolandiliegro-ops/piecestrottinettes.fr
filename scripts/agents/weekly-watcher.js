@@ -316,6 +316,8 @@ async function processParts(since) {
     } catch (e) {
       errors.push(`parts[${supConf.name}]: ${e.message}`);
       console.error(`[veilleur]   ❌ ${supConf.name}: ${e.message}`);
+    } finally {
+      await sleep(8000); // 8s entre chaque fournisseur pour respecter rate limit Anthropic
     }
   }
 }
