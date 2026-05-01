@@ -64,12 +64,11 @@ export async function sendWatcherReport({ runId, stats, scooters, parts, errors,
   </div>
 </body></html>`;
 
-  const res = await fetch(`${GATEWAY_URL}/emails`, {
+  const res = await fetch(RESEND_API_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${lovableKey}`,
-      'X-Connection-Api-Key': resendKey,
+      'Authorization': `Bearer ${resendKey}`,
     },
     body: JSON.stringify({
       from: 'Le Veilleur <onboarding@resend.dev>',
