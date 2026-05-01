@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Authenticated users can insert order items" ON public.order_items;
