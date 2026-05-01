@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Play, RefreshCw, Eagle, Bird, ExternalLink } from 'lucide-react';
+import { Loader2, Play, RefreshCw, Bird, ExternalLink } from 'lucide-react';
 
 interface WatcherRun {
   id: string;
