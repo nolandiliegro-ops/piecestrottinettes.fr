@@ -71,7 +71,7 @@ export async function sendWatcherReport({ runId, stats, scooters, parts, errors,
       'Authorization': `Bearer ${resendKey}`,
     },
     body: JSON.stringify({
-      from: 'Le Veilleur <onboarding@resend.dev>',
+      from: 'Le Veilleur <veilleur@piecestrottinettes.fr>',
       to: [ADMIN_EMAIL],
       subject,
       html,
