@@ -33,6 +33,22 @@ const CONFIG = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', '..', 'config', 'watcher-sources.json'), 'utf-8')
 );
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function retryOn429(fn, label) {
+  try {
+    return await fn();
+  } catch (e) {
+    const msg = e?.message || '';
+    if (msg.includes('429') || msg.includes('rate_limit')) {
+      console.warn(`[veilleur] 429 sur ${label}, retry dans 30s...`);
+      await sleep(30000);
+      return await fn();
+    }
+    throw e;
+  }
+}
+
 const startedAt = Date.now();
 const errors = [];
 const insertedScooters = [];
@@ -145,13 +161,16 @@ async function processScooters(since) {
   for (const brandConf of CONFIG.scooter_brands) {
     try {
       console.log(`[veilleur] → Marque ${brandConf.name}`);
-      const found = await searchNewScooters({
-        brand: brandConf.name,
-        officialUrl: brandConf.official_url,
-        since,
-        model: CONFIG.anthropic.model,
-        maxTokens: CONFIG.anthropic.max_tokens,
-      });
+      const found = await retryOn429(
+        () => searchNewScooters({
+          brand: brandConf.name,
+          officialUrl: brandConf.official_url,
+          since,
+          model: CONFIG.anthropic.model,
+          maxTokens: CONFIG.anthropic.max_tokens,
+        }),
+        `scooters[${brandConf.name}]`
+      );
       stats.scooters_found += found.length;
       console.log(`[veilleur]   ${found.length} modèles trouvés`);
 
@@ -210,6 +229,8 @@ async function processScooters(since) {
     } catch (e) {
       errors.push(`scooters[${brandConf.name}]: ${e.message}`);
       console.error(`[veilleur]   ❌ ${brandConf.name}: ${e.message}`);
+    } finally {
+      await sleep(8000); // 8s entre chaque marque pour respecter rate limit Anthropic
     }
   }
 }
@@ -222,14 +243,17 @@ async function processParts(since) {
   for (const supConf of CONFIG.parts_suppliers) {
     try {
       console.log(`[veilleur] → Fournisseur ${supConf.name}`);
-      const found = await searchNewParts({
-        supplier: supConf.name,
-        supplierUrl: supConf.url,
-        categories: supConf.categories,
-        since,
-        model: CONFIG.anthropic.model,
-        maxTokens: CONFIG.anthropic.max_tokens,
-      });
+      const found = await retryOn429(
+        () => searchNewParts({
+          supplier: supConf.name,
+          supplierUrl: supConf.url,
+          categories: supConf.categories,
+          since,
+          model: CONFIG.anthropic.model,
+          maxTokens: CONFIG.anthropic.max_tokens,
+        }),
+        `parts[${supConf.name}]`
+      );
       stats.parts_found += found.length;
       console.log(`[veilleur]   ${found.length} pièces trouvées`);
 
@@ -292,6 +316,8 @@ async function processParts(since) {
     } catch (e) {
       errors.push(`parts[${supConf.name}]: ${e.message}`);
       console.error(`[veilleur]   ❌ ${supConf.name}: ${e.message}`);
+    } finally {
+      await sleep(8000); // 8s entre chaque fournisseur pour respecter rate limit Anthropic
     }
   }
 }
