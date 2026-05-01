@@ -161,13 +161,16 @@ async function processScooters(since) {
   for (const brandConf of CONFIG.scooter_brands) {
     try {
       console.log(`[veilleur] → Marque ${brandConf.name}`);
-      const found = await searchNewScooters({
-        brand: brandConf.name,
-        officialUrl: brandConf.official_url,
-        since,
-        model: CONFIG.anthropic.model,
-        maxTokens: CONFIG.anthropic.max_tokens,
-      });
+      const found = await retryOn429(
+        () => searchNewScooters({
+          brand: brandConf.name,
+          officialUrl: brandConf.official_url,
+          since,
+          model: CONFIG.anthropic.model,
+          maxTokens: CONFIG.anthropic.max_tokens,
+        }),
+        `scooters[${brandConf.name}]`
+      );
       stats.scooters_found += found.length;
       console.log(`[veilleur]   ${found.length} modèles trouvés`);
 
