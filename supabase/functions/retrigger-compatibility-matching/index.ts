@@ -283,6 +283,8 @@ Deno.serve(async (req) => {
       JSON.stringify({
         success: true,
         total_pieces_processed: results.length,
+        processed: results.length,
+        remaining: 0,
         total_new_suggestions,
         total_ai_calls,
         warnings,
