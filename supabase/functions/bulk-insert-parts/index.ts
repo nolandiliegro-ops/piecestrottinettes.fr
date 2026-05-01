@@ -60,6 +60,7 @@ interface RequestBody {
   categoryName: string;
   categorySlug?: string;
   parts: PartInput[];
+  skip_ai?: boolean;
 }
 
 interface Results {
@@ -150,6 +151,7 @@ Deno.serve(async (req) => {
 
     const body: RequestBody = await req.json();
     const { categoryName, categorySlug, parts } = body;
+    const skip_ai = body.skip_ai === true;
 
     if (!categoryName || !Array.isArray(parts) || parts.length === 0) {
       return new Response(
@@ -295,7 +297,7 @@ Deno.serve(async (req) => {
             }
 
             // Passe B — IA Claude (jamais bloquante)
-            if (anthropicKey) {
+            if (!skip_ai && anthropicKey) {
               try {
                 const passB = await suggestCompatibilitiesAI(
                   supabase,
@@ -317,6 +319,9 @@ Deno.serve(async (req) => {
                 console.error(`[bulk-insert-parts] AI matcher exception ${part.name}:`, e);
                 aiStatus = "error";
               }
+            } else if (skip_ai) {
+              console.log(`[bulk-insert-parts] skip_ai=true → Passe B IA désactivée pour ${part.name}`);
+              aiStatus = "skipped_by_flag";
             }
           }
         }
