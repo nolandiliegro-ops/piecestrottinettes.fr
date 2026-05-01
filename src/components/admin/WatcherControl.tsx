@@ -124,19 +124,19 @@ const WatcherControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div>
             <Label htmlFor="since_days" className="text-xs">Lookback (jours)</Label>
-            <Input id="since_days" type="number" min="1" value={sinceDays} onChange={e => setSinceDays(e.target.value)} placeholder="90" />
+            <Input id="since_days" type="number" min="1" value={sinceDays} onChange={e => setSinceDays(e.target.value)} placeholder="90" className="bg-white text-zinc-900 placeholder:text-zinc-400" />
           </div>
           <div>
             <Label htmlFor="min_score" className="text-xs">Score min (0-100)</Label>
-            <Input id="min_score" type="number" min="0" max="100" value={minScore} onChange={e => setMinScore(e.target.value)} placeholder="30" />
+            <Input id="min_score" type="number" min="0" max="100" value={minScore} onChange={e => setMinScore(e.target.value)} placeholder="30" className="bg-white text-zinc-900 placeholder:text-zinc-400" />
           </div>
           <div>
             <Label htmlFor="brands" className="text-xs">Marques (CSV, vide = toutes)</Label>
-            <Input id="brands" value={brands} onChange={e => setBrands(e.target.value)} placeholder="Dualtron,Xiaomi" />
+            <Input id="brands" value={brands} onChange={e => setBrands(e.target.value)} placeholder="Dualtron,Xiaomi" className="bg-white text-zinc-900 placeholder:text-zinc-400" />
           </div>
           <div>
             <Label htmlFor="suppliers" className="text-xs">Fournisseurs (CSV, vide = tous)</Label>
-            <Input id="suppliers" value={suppliers} onChange={e => setSuppliers(e.target.value)} placeholder="Wattiz,eWheel" />
+            <Input id="suppliers" value={suppliers} onChange={e => setSuppliers(e.target.value)} placeholder="Wattiz,eWheel" className="bg-white text-zinc-900 placeholder:text-zinc-400" />
           </div>
         </div>
         <div className="flex items-center gap-3">
@@ -144,7 +144,7 @@ const WatcherControl = () => {
             {triggering ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Play className="w-4 h-4 mr-2" />}
             Lancer la veille maintenant
           </Button>
-          <Button variant="outline" onClick={loadRuns} disabled={loadingRuns}>
+          <Button variant="outline" onClick={loadRuns} disabled={loadingRuns} className="bg-white text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900 border-zinc-300">
             <RefreshCw className={`w-4 h-4 mr-2 ${loadingRuns ? 'animate-spin' : ''}`} />
             Rafraîchir
           </Button>
