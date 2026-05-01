@@ -195,6 +195,7 @@ Vérifie chaque référence sur le site officiel. Marque les ruptures comme out_
     tools: TOOLS_PARTS,
     model,
     maxTokens,
+    webSearchMaxUses: 15,
   });
   return out.parts || [];
 }
