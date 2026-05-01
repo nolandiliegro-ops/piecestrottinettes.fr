@@ -7,20 +7,23 @@ const ANTHROPIC_URL = 'https://api.anthropic.com/v1/messages';
 
 const SYSTEM_SCOOTERS = `Tu es un expert en trottinettes électriques chargé de veiller le marché 2025-2026.
 
-RÈGLES STRICTES :
-- N'invente RIEN. Si tu ne trouves pas une donnée précise via web_search, retourne null pour ce champ.
-- Si un modèle existe déjà (sortie avant 2025), ne le retourne PAS.
+RÈGLES :
+- Tu peux retourner les modèles même avec informations partielles. Mets null pour les champs incertains mais retourne TOUJOURS le produit si son existence est plausible.
+- Privilégier les modèles 2024+, mais accepter aussi les modèles plus anciens s'ils sont toujours vendus / pertinents commercialement.
+- Retourne au minimum 3-5 modèles connus de la marque, même s'ils ne sont pas neufs.
 - Privilégie les sources officielles (site fabricant) puis les revendeurs reconnus.
-- Pour chaque modèle : cite l'URL source dans official_url.
+- Pour chaque modèle : cite l'URL source dans official_url quand tu la connais.
 - Réponds UNIQUEMENT en appelant le tool 'submit_scooters' avec un tableau JSON valide.`;
 
 const SYSTEM_PARTS = `Tu es un expert en pièces détachées trottinettes électriques.
 
-RÈGLES STRICTES :
-- N'invente RIEN. Vérifie chaque référence sur le site officiel du fournisseur.
+RÈGLES :
+- Tu peux retourner les pièces même avec informations partielles. Mets null pour les champs incertains mais retourne TOUJOURS la pièce si son existence est plausible.
+- Vérifie quand c'est possible chaque référence sur le site officiel du fournisseur.
 - Si une référence n'est plus en stock, marque stock_status='out_of_stock' mais inclus-la quand même.
-- Si elle est disponible, marque stock_status='available'.
-- Pour chaque pièce : nom exact, marque (ex: Wattiz, Hota, Minimotors), prix EUR TTC, URL produit.
+- Si elle est disponible, marque stock_status='available'. Si tu ne sais pas, mets 'unknown'.
+- Retourne au minimum 3-5 références connues du fournisseur, même si tu n'as pas tous les détails.
+- Pour chaque pièce : nom exact, marque (ex: Wattiz, Hota, Minimotors), prix EUR TTC, URL produit quand disponibles.
 - Réponds UNIQUEMENT en appelant le tool 'submit_parts' avec un tableau JSON valide.`;
 
 const TOOLS_SCOOTERS = [{
@@ -101,7 +104,7 @@ const TOOLS_PARTS = [{
   },
 }];
 
-async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
+async function callAnthropic({ system, userPrompt, tools, model, maxTokens, webSearchMaxUses = 8 }) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY manquant');
 
@@ -118,7 +121,7 @@ async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
       system,
       tools: [
         ...tools,
-        { type: 'web_search_20250305', name: 'web_search', max_uses: 8 },
+        { type: 'web_search_20250305', name: 'web_search', max_uses: webSearchMaxUses },
       ],
       tool_choice: { type: 'tool', name: tools[0].name },
       messages: [{ role: 'user', content: userPrompt }],
@@ -132,6 +135,9 @@ async function callAnthropic({ system, userPrompt, tools, model, maxTokens }) {
   const data = await res.json();
   const toolUse = (data.content || []).find((c) => c.type === 'tool_use');
   if (!toolUse) throw new Error('Pas de tool_use dans la réponse Anthropic');
+  console.log(`[anthropic] tool_use input:`, JSON.stringify(toolUse.input, null, 2));
+  console.log(`[anthropic] usage:`, data.usage);
+  console.log(`[anthropic] web_search count:`, data.usage?.server_tool_use?.web_search_requests ?? data.usage?.web_search_requests_count ?? 'N/A');
   return toolUse.input;
 }
 
@@ -189,6 +195,7 @@ Vérifie chaque référence sur le site officiel. Marque les ruptures comme out_
     tools: TOOLS_PARTS,
     model,
     maxTokens,
+    webSearchMaxUses: 15,
   });
   return out.parts || [];
 }
