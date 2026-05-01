@@ -1,0 +1,33 @@
+name: Le Veilleur — Veille hebdomadaire
+
+on:
+  schedule:
+    # Tous les dimanches à 21:00 UTC (22:00 Paris hiver, 23:00 Paris été)
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Raison du trigger manuel (optionnel)'
+        required: false
+        default: 'manual smoke test'
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Le Veilleur
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
+        run: node scripts/agents/weekly-watcher.js
