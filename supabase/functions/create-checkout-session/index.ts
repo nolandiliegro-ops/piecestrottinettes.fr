@@ -202,6 +202,21 @@ serve(async (req) => {
     const totalTTC = subtotalHT + tvaAmount + deliveryPrice;
     const loyaltyPoints = Math.floor(totalTTC);
 
+    // Stripe minimum charge guard (0.50 EUR). Triggered mainly when a promo
+    // reduces the cart below the threshold. Fail fast before creating the order.
+    if (totalTTC < 0.5) {
+      console.warn(
+        `[checkout] Aborted: totalTTC=${totalTTC.toFixed(2)}€ below Stripe minimum (0.50€). promoCode=${appliedPromoCode ?? "none"} subtotalHT=${subtotalHT.toFixed(2)} delivery=${deliveryPrice.toFixed(2)}`
+      );
+      return new Response(
+        JSON.stringify({
+          error: "AMOUNT_TOO_SMALL",
+          message: "Le montant après application du code promo est inférieur au minimum Stripe de 0,50 €. Ajoutez un produit ou retirez le code promo.",
+        }),
+        { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 400 }
+      );
+    }
+
     const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
 
     // Get user ID
