@@ -439,7 +439,17 @@ const OrdersManager = () => {
                   className="hover:bg-muted/10 border-b border-white/5"
                 >
                   <TableCell className="font-mono text-sm font-medium">
-                    {order.order_number}
+                    <div className="flex items-center gap-2">
+                      <span>{order.order_number}</span>
+                      {order.notes && (
+                        <span
+                          title={order.notes}
+                          className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/15 text-amber-600 text-[10px] font-semibold uppercase tracking-wide"
+                        >
+                          📝 Note
+                        </span>
+                      )}
+                    </div>
                   </TableCell>
                   <TableCell>
                     <span className="font-medium text-foreground">
