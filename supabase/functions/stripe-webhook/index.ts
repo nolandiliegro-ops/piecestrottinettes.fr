@@ -448,6 +448,39 @@ serve(async (req) => {
       console.error(`[WEBHOOK] Failed to send confirmation email:`, emailErr);
     }
 
+    // --- Send seller notification email (non-blocking) ---
+    try {
+      const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
+      const sellerHtml = generateSellerNotificationHTML(
+        order.order_number,
+        customerName,
+        order.customer_email,
+        order.customer_phone,
+        mappedItems,
+        {
+          subtotalHT: order.subtotal_ht,
+          tvaAmount: order.tva_amount,
+          deliveryPrice: order.delivery_price || 0,
+          deliveryMethod: order.delivery_method || "Standard",
+          address: order.address,
+          postalCode: order.postal_code,
+          city: order.city,
+        },
+        order.total_ttc,
+        order.notes ?? null,
+      );
+
+      const sellerResult = await resend.emails.send({
+        from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
+        to: ["contact@piecestrottinettes.fr"],
+        subject: `[Nouvelle commande] #${order.order_number} — ${Number(order.total_ttc).toFixed(2)}€`,
+        html: sellerHtml,
+      });
+      console.log(`[WEBHOOK] Seller notification sent:`, sellerResult);
+    } catch (sellerErr) {
+      console.error(`[WEBHOOK] Failed to send seller notification (non-blocking):`, sellerErr);
+    }
+
     return new Response(
       JSON.stringify({ received: true, processed: true, orderId }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
