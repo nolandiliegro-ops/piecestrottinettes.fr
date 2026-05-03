@@ -116,7 +116,7 @@ const CheckoutPage = () => {
   };
 
   // Actual order submission - now creates Stripe Checkout session
-  const handleConfirmOrder = async (deliveryMethod: string, deliveryPrice: number, recommendations: string) => {
+  const handleConfirmOrder = async (deliveryMethod: string, deliveryPrice: number, recommendations: string, promoCode?: string) => {
     if (!pendingFormData) return;
     
     setIsSubmitting(true);
