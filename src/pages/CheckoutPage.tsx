@@ -146,6 +146,7 @@ const CheckoutPage = () => {
             },
             deliveryMethod,
             notes: recommendations || undefined,
+            promoCode,
           },
         }
       );
