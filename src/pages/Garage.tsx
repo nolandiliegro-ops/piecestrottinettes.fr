@@ -104,8 +104,9 @@ const Garage = () => {
   };
 
   useEffect(() => {
-    if (searchParams.get('tab') === 'messages') {
-      setActiveTab('messages');
+    const tab = searchParams.get('tab');
+    if (tab === 'messages' || tab === 'orders' || tab === 'garage') {
+      setActiveTab(tab as 'garage' | 'orders' | 'messages');
       searchParams.delete('tab');
       setSearchParams(searchParams, { replace: true });
     }

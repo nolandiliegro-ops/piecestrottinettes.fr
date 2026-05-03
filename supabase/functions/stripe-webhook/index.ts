@@ -23,6 +23,112 @@ const formatPrice = (amount: number): string => {
   return amount.toFixed(2).replace(".", ",") + " €";
 };
 
+const escapeHtml = (input: unknown): string => {
+  const s = String(input ?? "");
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+};
+
+const generateSellerNotificationHTML = (
+  orderNumber: string,
+  customerName: string,
+  customerEmail: string,
+  customerPhone: string | null,
+  items: OrderLineItem[],
+  details: OrderDetails,
+  totalTTC: number,
+  notes: string | null
+): string => {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const timeStr = now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+  const itemsRows = items.map(item => `
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #e8e4e0;font-size:14px;color:#2C2C2C;">${escapeHtml(item.part_name)}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #e8e4e0;text-align:center;font-size:14px;color:#666;">x${item.quantity}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #e8e4e0;text-align:right;font-size:14px;color:#666;">${formatPrice(item.unit_price)}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #e8e4e0;text-align:right;font-size:14px;font-weight:600;color:#2C2C2C;">${formatPrice(item.unit_price * item.quantity)}</td>
+    </tr>
+  `).join('');
+
+  const notesBlock = notes && notes.trim().length > 0 ? `
+    <tr>
+      <td style="padding:0 32px 24px;">
+        <div style="background:#FFF8E1;border:2px solid #FFC107;border-radius:10px;padding:16px 20px;">
+          <p style="margin:0 0 8px;font-size:11px;color:#B8860B;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">📝 Recommandations client</p>
+          <p style="margin:0;font-size:14px;color:#2C2C2C;line-height:1.5;white-space:pre-wrap;">${escapeHtml(notes)}</p>
+        </div>
+      </td>
+    </tr>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"></head>
+<body style="margin:0;padding:0;background:#f4f4f4;font-family:Arial,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+    <tr><td align="center" style="padding:30px 20px;">
+      <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width:600px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e0e0e0;">
+        <tr><td style="background:#2C2C2C;padding:24px 32px;">
+          <h1 style="margin:0;color:#93B5A1;font-size:18px;letter-spacing:2px;">🛒 NOUVELLE COMMANDE</h1>
+          <p style="margin:8px 0 0;color:#ccc;font-size:13px;">${dateStr} à ${timeStr}</p>
+        </td></tr>
+        <tr><td style="padding:24px 32px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="font-size:13px;color:#666;">Commande</td>
+              <td style="text-align:right;font-family:'Courier New',monospace;font-size:18px;color:#93B5A1;font-weight:bold;">#${escapeHtml(orderNumber)}</td>
+            </tr>
+            <tr>
+              <td style="padding-top:8px;font-size:13px;color:#666;">Total TTC</td>
+              <td style="padding-top:8px;text-align:right;font-size:18px;color:#2C2C2C;font-weight:bold;">${formatPrice(totalTTC)}</td>
+            </tr>
+          </table>
+        </td></tr>
+        <tr><td style="padding:0 32px;"><div style="height:1px;background:#e8e4e0;"></div></td></tr>
+        <tr><td style="padding:24px 32px;">
+          <h3 style="margin:0 0 12px;font-size:13px;color:#666;text-transform:uppercase;letter-spacing:1px;">Client</h3>
+          <p style="margin:0;font-size:15px;color:#2C2C2C;line-height:1.6;">
+            <strong>${escapeHtml(customerName)}</strong><br>
+            ${escapeHtml(customerEmail)}${customerPhone ? `<br>${escapeHtml(customerPhone)}` : ''}<br>
+            ${escapeHtml(details.address)}<br>
+            ${escapeHtml(details.postalCode)} ${escapeHtml(details.city)}
+          </p>
+        </td></tr>
+        ${notesBlock}
+        <tr><td style="padding:0 32px;"><div style="height:1px;background:#e8e4e0;"></div></td></tr>
+        <tr><td style="padding:24px 32px;">
+          <h3 style="margin:0 0 12px;font-size:13px;color:#666;text-transform:uppercase;letter-spacing:1px;">Articles commandés</h3>
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #e8e4e0;border-radius:8px;overflow:hidden;">
+            <thead><tr style="background:#FAFAF8;">
+              <th style="padding:8px 12px;text-align:left;font-size:11px;color:#999;text-transform:uppercase;">Article</th>
+              <th style="padding:8px 12px;text-align:center;font-size:11px;color:#999;text-transform:uppercase;">Qté</th>
+              <th style="padding:8px 12px;text-align:right;font-size:11px;color:#999;text-transform:uppercase;">P.U.</th>
+              <th style="padding:8px 12px;text-align:right;font-size:11px;color:#999;text-transform:uppercase;">Total</th>
+            </tr></thead>
+            <tbody>${itemsRows}</tbody>
+          </table>
+        </td></tr>
+        <tr><td style="padding:0 32px 24px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#2C2C2C;border-radius:8px;padding:16px;">
+            <tr>
+              <td style="padding:8px 16px;font-size:14px;color:#ccc;">Livraison (${escapeHtml(details.deliveryMethod)})</td>
+              <td style="padding:8px 16px;text-align:right;font-size:14px;color:#fff;">${details.deliveryPrice === 0 ? 'Gratuit' : formatPrice(details.deliveryPrice)}</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 16px;font-size:18px;color:#fff;font-weight:bold;">Total TTC</td>
+              <td style="padding:8px 16px;text-align:right;font-size:22px;color:#93B5A1;font-weight:bold;">${formatPrice(totalTTC)}</td>
+            </tr>
+          </table>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</body></html>`;
+};
+
 interface OrderLineItem {
   part_name: string;
   quantity: number;
@@ -122,6 +228,7 @@ const generateConfirmationHTML = (
           <!-- Separator -->
           <tr><td style="padding:0 32px;"><div style="height:1px;background:linear-gradient(to right,transparent,#e8e4e0,transparent);"></div></td></tr>
 
+          ${cockpitPoints > 0 ? `
           <!-- XP / Gamification -->
           <tr>
             <td style="padding:28px 32px;">
@@ -147,6 +254,7 @@ const generateConfirmationHTML = (
 
           <!-- Separator -->
           <tr><td style="padding:0 32px;"><div style="height:1px;background:linear-gradient(to right,transparent,#e8e4e0,transparent);"></div></td></tr>
+          ` : ''}
 
           <!-- Financial Details & Delivery -->
           <tr>
@@ -188,7 +296,7 @@ const generateConfirmationHTML = (
               <div style="background:rgba(44,44,44,0.04);border:1px solid rgba(44,44,44,0.1);border-radius:12px;padding:24px 28px;">
                 <p style="margin:0 0 10px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">📦 Étape suivante</p>
                 <p style="margin:0 0 20px;font-size:14px;color:#555;line-height:1.7;">Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée.</p>
-                <a href="https://piecestrottinettes.fr/garage?tab=messages" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
+                <a href="https://piecestrottinettes.fr/garage?tab=orders" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
               </div>
             </td>
           </tr>
@@ -338,6 +446,39 @@ serve(async (req) => {
       console.log(`[WEBHOOK] Confirmation email sent to ${order.customer_email}:`, emailResult);
     } catch (emailErr) {
       console.error(`[WEBHOOK] Failed to send confirmation email:`, emailErr);
+    }
+
+    // --- Send seller notification email (non-blocking) ---
+    try {
+      const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
+      const sellerHtml = generateSellerNotificationHTML(
+        order.order_number,
+        customerName,
+        order.customer_email,
+        order.customer_phone,
+        mappedItems,
+        {
+          subtotalHT: order.subtotal_ht,
+          tvaAmount: order.tva_amount,
+          deliveryPrice: order.delivery_price || 0,
+          deliveryMethod: order.delivery_method || "Standard",
+          address: order.address,
+          postalCode: order.postal_code,
+          city: order.city,
+        },
+        order.total_ttc,
+        order.notes ?? null,
+      );
+
+      const sellerResult = await resend.emails.send({
+        from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
+        to: ["contact@piecestrottinettes.fr"],
+        subject: `[Nouvelle commande] #${order.order_number} — ${Number(order.total_ttc).toFixed(2)}€`,
+        html: sellerHtml,
+      });
+      console.log(`[WEBHOOK] Seller notification sent:`, sellerResult);
+    } catch (sellerErr) {
+      console.error(`[WEBHOOK] Failed to send seller notification (non-blocking):`, sellerErr);
     }
 
     return new Response(
