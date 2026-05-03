@@ -130,17 +130,23 @@ serve(async (req) => {
         deliveryMethod: order.delivery_method,
       };
 
-      // Fire and forget email
-      fetch(`${supabaseUrl}/functions/v1/send-order-email`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${Deno.env.get("SUPABASE_ANON_KEY")}`,
-        },
-        body: JSON.stringify(emailPayload),
-      }).catch(err => {
-        console.error("Failed to send confirmation email:", err);
-      });
+      // Fire and forget email (server-to-server, authenticated via shared internal secret)
+      const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET");
+      if (!internalSecret) {
+        console.error("INTERNAL_FUNCTION_SECRET not configured — confirmation email skipped");
+      } else {
+        fetch(`${supabaseUrl}/functions/v1/send-order-email`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${Deno.env.get("SUPABASE_ANON_KEY")}`,
+            "x-internal-secret": internalSecret,
+          },
+          body: JSON.stringify(emailPayload),
+        }).catch(err => {
+          console.error("Failed to send confirmation email:", err);
+        });
+      }
 
       return new Response(
         JSON.stringify({
