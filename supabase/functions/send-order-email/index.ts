@@ -249,7 +249,7 @@ const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
 
   const itemsRows = data.items.map(item => `
     <tr>
-      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; font-size: 14px; color: #2C2C2C;">${item.name}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; font-size: 14px; color: #2C2C2C;">${escapeHtml(item.name)}</td>
       <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: center; font-size: 14px; color: #666;">x${item.quantity}</td>
       <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: right; font-size: 14px; color: #666;">${formatPrice(item.price)}</td>
       <td style="padding: 10px 12px; border-bottom: 1px solid #e8e4e0; text-align: right; font-size: 14px; font-weight: 600; color: #2C2C2C;">${formatPrice(item.price * item.quantity)}</td>
@@ -278,7 +278,7 @@ const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td style="font-size: 13px; color: #666;">Commande</td>
-                  <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 18px; color: #93B5A1; font-weight: bold;">#${data.orderNumber}</td>
+                  <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 18px; color: #93B5A1; font-weight: bold;">#${escapeHtml(data.orderNumber)}</td>
                 </tr>
               </table>
             </td>
@@ -294,10 +294,10 @@ const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
             <td style="padding: 24px 32px;">
               <h3 style="margin: 0 0 12px; font-size: 13px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Client</h3>
               <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6;">
-                <strong>${data.customerName}</strong><br>
-                ${data.customerEmail}<br>
-                ${data.address.street}<br>
-                ${data.address.postalCode} ${data.address.city}
+                <strong>${escapeHtml(data.customerName)}</strong><br>
+                ${escapeHtml(data.customerEmail)}<br>
+                ${escapeHtml(data.address.street)}<br>
+                ${escapeHtml(data.address.postalCode)} ${escapeHtml(data.address.city)}
               </p>
             </td>
           </tr>
@@ -329,7 +329,7 @@ const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
             <td style="padding: 0 32px 24px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #2C2C2C; border-radius: 8px; padding: 16px;">
                 <tr>
-                  <td style="padding: 8px 16px; font-size: 14px; color: #ccc;">Livraison (${data.deliveryMethod})</td>
+                  <td style="padding: 8px 16px; font-size: 14px; color: #ccc;">Livraison (${escapeHtml(data.deliveryMethod)})</td>
                   <td style="padding: 8px 16px; text-align: right; font-size: 14px; color: #fff;">${data.totals.deliveryPrice === 0 ? 'Gratuit' : formatPrice(data.totals.deliveryPrice)}</td>
                 </tr>
                 <tr>
@@ -352,6 +352,24 @@ const generateSellerNotificationHTML = (data: OrderEmailRequest): string => {
 const handler = async (req: Request): Promise<Response> => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
+  }
+
+  // Server-to-server only: require shared internal secret
+  const expectedSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET");
+  if (!expectedSecret) {
+    console.error("INTERNAL_FUNCTION_SECRET is not configured");
+    return new Response(
+      JSON.stringify({ success: false, error: "Server misconfiguration" }),
+      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+    );
+  }
+  const providedSecret = req.headers.get("x-internal-secret");
+  if (providedSecret !== expectedSecret) {
+    console.warn("send-order-email: unauthorized call (missing or invalid x-internal-secret)");
+    return new Response(
+      JSON.stringify({ success: false, error: "Unauthorized" }),
+      { status: 401, headers: { "Content-Type": "application/json", ...corsHeaders } }
+    );
   }
 
   try {
