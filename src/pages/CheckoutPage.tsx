@@ -152,7 +152,27 @@ const CheckoutPage = () => {
       );
 
       if (sessionError) {
-        throw new Error(sessionError.message || "Erreur lors de la création de la session de paiement");
+        // Try to extract structured error body from edge function (e.g. AMOUNT_TOO_SMALL)
+        let errorCode: string | null = null;
+        let errorMessage: string | null = null;
+        try {
+          const ctx: any = (sessionError as any).context;
+          if (ctx && typeof ctx.json === 'function') {
+            const body = await ctx.json();
+            errorCode = body?.error ?? null;
+            errorMessage = body?.message ?? null;
+          }
+        } catch (_) { /* ignore parse failure */ }
+
+        if (errorCode === 'AMOUNT_TOO_SMALL') {
+          toast.error('Montant trop bas pour le paiement', {
+            description: errorMessage || 'Le montant après promo est inférieur au minimum de 0,50 €. Retirez le code ou ajoutez un produit.',
+          });
+          setIsSubmitting(false);
+          return;
+        }
+
+        throw new Error(errorMessage || sessionError.message || "Erreur lors de la création de la session de paiement");
       }
 
       if (!sessionData?.sessionUrl) {
