@@ -53,8 +53,8 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
     <tr>
       <td style="padding: 16px; border-bottom: 1px solid #e8e4e0;">
         <div style="display: flex; align-items: center; gap: 12px;">
-          ${item.imageUrl ? `<img src="${item.imageUrl}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;" />` : ''}
-          <span style="font-family: 'Helvetica Neue', sans-serif; color: #2C2C2C; font-size: 14px;">${item.name}</span>
+          ${item.imageUrl ? `<img src="${escapeHtml(item.imageUrl)}" alt="${escapeHtml(item.name)}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;" />` : ''}
+          <span style="font-family: 'Helvetica Neue', sans-serif; color: #2C2C2C; font-size: 14px;">${escapeHtml(item.name)}</span>
         </div>
       </td>
       <td style="padding: 16px; border-bottom: 1px solid #e8e4e0; text-align: center; color: #666; font-size: 14px;">
@@ -102,7 +102,7 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                 COMMANDE CONFIRMÉE
               </h2>
               <p style="margin: 0; color: #666; font-size: 15px;">
-                Merci ${data.customerName} pour votre confiance !
+                Merci ${escapeHtml(data.customerName)} pour votre confiance !
               </p>
             </td>
           </tr>
@@ -115,7 +115,7 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                   Numéro de commande
                 </p>
                 <p style="margin: 0; font-family: 'Courier New', monospace; font-size: 22px; color: #93B5A1; font-weight: bold; letter-spacing: 3px;">
-                  ${data.orderNumber}
+                  ${escapeHtml(data.orderNumber)}
                 </p>
               </div>
             </td>
@@ -177,7 +177,7 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                   <td style="padding: 8px 20px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td style="font-size: 14px; color: #666;">Livraison (${data.deliveryMethod})</td>
+                        <td style="font-size: 14px; color: #666;">Livraison (${escapeHtml(data.deliveryMethod)})</td>
                         <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 14px; color: #2C2C2C;">${data.totals.deliveryPrice === 0 ? 'Gratuit' : formatPrice(data.totals.deliveryPrice)}</td>
                       </tr>
                     </table>
@@ -210,9 +210,9 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                   Adresse de livraison
                 </h4>
                 <p style="margin: 0; font-size: 15px; color: #2C2C2C; line-height: 1.6;">
-                  ${data.customerName}<br>
-                  ${data.address.street}<br>
-                  ${data.address.postalCode} ${data.address.city}
+                  ${escapeHtml(data.customerName)}<br>
+                  ${escapeHtml(data.address.street)}<br>
+                  ${escapeHtml(data.address.postalCode)} ${escapeHtml(data.address.city)}
                 </p>
               </div>
             </td>
