@@ -148,7 +148,8 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden overflow-x-hidden studio-luxury-bg watermark-brand pb-24 md:pb-0">
+    <div className="relative h-screen flex flex-col overflow-hidden overflow-x-hidden pb-24 md:pb-0">
+      <GarageBackground />
       <SEO noindex title="Mon Garage" description="Gérez votre garage et vos trottinettes." />
       <Header />
       
