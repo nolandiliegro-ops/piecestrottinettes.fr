@@ -26,6 +26,8 @@ import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
+import GarageBackground from '@/components/garage/GarageBackground';
+import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
