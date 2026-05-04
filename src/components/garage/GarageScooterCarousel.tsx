@@ -245,7 +245,12 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
                 transition={slideTransition}
                 src={displayImage}
                 alt={displayName}
-                className="absolute inset-0 w-full h-full object-contain p-6 md:p-12 drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)]"
+                className={cn(
+                  "absolute inset-0 w-full h-full object-contain p-6 md:p-12",
+                  floating
+                    ? "drop-shadow-[0_40px_60px_rgba(0,0,0,0.55)]"
+                    : "drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)]"
+                )}
                 onError={() => setImageError(true)}
               />
             ) : (
