@@ -3,7 +3,7 @@ import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Plus, Bike, History, Wrench } from 'lucide-react';
+import { Loader2, Plus, Bike, Wallpaper } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
@@ -12,13 +12,16 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 import GarageTimeline from '@/components/garage/GarageTimeline';
-import CompatiblePartsRail from '@/components/garage/CompatiblePartsRail';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
+import ModificationsPreviewCard from '@/components/garage/ModificationsPreviewCard';
+import GarageBackground from '@/components/garage/GarageBackground';
+import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
+import PartCard from '@/components/parts/PartCard';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 // Phase A — Rooftop components (étapes 1-7)
-import RooftopBackground from '@/components/garage/RooftopBackground';
 import RiderProfileCard from '@/components/garage/RiderProfileCard';
 import ScooterPhotoCard from '@/components/garage/ScooterPhotoCard';
 import StatsRow from '@/components/garage/StatsRow';
