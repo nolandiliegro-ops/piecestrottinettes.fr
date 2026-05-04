@@ -3,7 +3,7 @@ import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Plus, Bike } from 'lucide-react';
+import { Loader2, Plus, Bike, History, Wrench } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
@@ -265,7 +265,7 @@ const GaragePreview = () => {
                       </div>
                     </div>
 
-                    {/* Suivi + bouton historique groupés */}
+                    {/* Suivi + action pills glassmorphism */}
                     <div className="order-4 lg:order-none flex flex-col gap-2">
                       <SuiviExpertCard
                         garageId={selectedGarageId}
@@ -274,20 +274,24 @@ const GaragePreview = () => {
                         amperage={model?.amperage}
                         powerWatts={model?.power_watts}
                       />
-                      <button
-                        onClick={() => setHistoryOpen(true)}
-                        className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1 transition-colors"
-                        aria-label="Voir l'historique des modifications"
-                      >
-                        Voir l'historique →
-                      </button>
-                      <button
-                        onClick={() => setPartsOpen(true)}
-                        className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1 transition-colors"
-                        aria-label="Voir les pièces compatibles avec cette trottinette"
-                      >
-                        Voir les pièces compatibles →
-                      </button>
+                      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2 sm:gap-3 mt-3">
+                        <button
+                          onClick={() => setHistoryOpen(true)}
+                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
+                          aria-label="Voir l'historique des modifications"
+                        >
+                          <History size={16} className="text-gray-700" />
+                          Historique
+                        </button>
+                        <button
+                          onClick={() => setPartsOpen(true)}
+                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
+                          aria-label="Voir les pièces compatibles avec cette trottinette"
+                        >
+                          <Wrench size={16} className="text-gray-700" />
+                          Pièces compatibles
+                        </button>
+                      </div>
                     </div>
                   </section>
 
