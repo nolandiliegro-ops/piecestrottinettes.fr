@@ -236,6 +236,7 @@ const Garage = () => {
                         onScooterChange={setSelectedScooter}
                         onDelete={handleScooterDeleted}
                         mobileCleanMode={true}
+                        floating
                       />
                     )}
                   </motion.div>
