@@ -79,6 +79,7 @@ const Garage = () => {
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
   const updateNickname = useUpdateNickname();
   const updatePersonalDescription = useUpdatePersonalDescription();
   
