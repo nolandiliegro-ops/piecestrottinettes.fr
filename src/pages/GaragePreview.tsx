@@ -12,6 +12,8 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 import GarageTimeline from '@/components/garage/GarageTimeline';
+import CompatiblePartsRail from '@/components/garage/CompatiblePartsRail';
+import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
 
@@ -47,6 +49,7 @@ const GaragePreview = () => {
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [partsOpen, setPartsOpen] = useState(false);
 
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
@@ -93,6 +96,9 @@ const GaragePreview = () => {
 
   const scooterCount = scooters?.length ?? 0;
   const selectedGarageId = selectedScooter?.id ?? null;
+  const { parts: compatibleParts, loading: compatiblePartsLoading } = useCompatibleParts(
+    selectedScooter?.scooter_model?.id
+  );
 
   const handlePrev = () => {
     if (!scooters || currentIndex <= 0) return;
@@ -275,6 +281,13 @@ const GaragePreview = () => {
                       >
                         Voir l'historique →
                       </button>
+                      <button
+                        onClick={() => setPartsOpen(true)}
+                        className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1 transition-colors"
+                        aria-label="Voir les pièces compatibles avec cette trottinette"
+                      >
+                        Voir les pièces compatibles →
+                      </button>
                     </div>
                   </section>
 
@@ -369,6 +382,23 @@ const GaragePreview = () => {
           {selectedGarageId && (
             <div className="mt-4">
               <GarageTimeline garageItemId={selectedGarageId} />
+            </div>
+          )}
+        </SheetContent>
+      </Sheet>
+
+      {/* Compatible Parts Sheet */}
+      <Sheet open={partsOpen} onOpenChange={setPartsOpen}>
+        <SheetContent side="right" className="w-full sm:max-w-xl overflow-y-auto">
+          <SheetHeader>
+            <SheetTitle>Pièces compatibles</SheetTitle>
+          </SheetHeader>
+          {selectedScooter?.scooter_model?.id && (
+            <div className="mt-4">
+              <CompatiblePartsRail
+                parts={compatibleParts ?? []}
+                loading={compatiblePartsLoading}
+              />
             </div>
           )}
         </SheetContent>
