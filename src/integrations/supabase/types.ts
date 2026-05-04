@@ -829,26 +829,35 @@ export type Database = {
       profiles: {
         Row: {
           active_theme_key: string | null
+          avatar_url: string | null
+          bio: string | null
           created_at: string | null
           display_name: string | null
           id: string
           performance_points: number | null
+          rider_location: string | null
           updated_at: string | null
         }
         Insert: {
           active_theme_key?: string | null
+          avatar_url?: string | null
+          bio?: string | null
           created_at?: string | null
           display_name?: string | null
           id: string
           performance_points?: number | null
+          rider_location?: string | null
           updated_at?: string | null
         }
         Update: {
           active_theme_key?: string | null
+          avatar_url?: string | null
+          bio?: string | null
           created_at?: string | null
           display_name?: string | null
           id?: string
           performance_points?: number | null
+          rider_location?: string | null
           updated_at?: string | null
         }
         Relationships: []
