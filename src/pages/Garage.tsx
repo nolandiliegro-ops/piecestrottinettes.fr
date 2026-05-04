@@ -592,6 +592,7 @@ const Garage = () => {
       />
 
       {/* Theme Picker Sheet */}
+      <RiderProfileEditDialog open={profileEditOpen} onOpenChange={setProfileEditOpen} />
       <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
