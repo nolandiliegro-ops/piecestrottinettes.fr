@@ -1,6 +1,6 @@
-import { MapPin, Trophy } from 'lucide-react';
+import { MapPin, Trophy, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { getXPLevel } from '@/lib/xpLevels';
+import { getXPLevel, getProgressToNextLevel } from '@/lib/xpLevels';
 import RiderAvatar from './RiderAvatar';
 
 interface RiderProfileCardProps {
@@ -11,8 +11,11 @@ interface RiderProfileCardProps {
     rider_location?: string | null;
     performance_points?: number | null;
   } | null;
-  variant?: 'mobile' | 'desktop';
+  variant?: 'mobile' | 'desktop' | 'rooftop';
   onAvatarClick?: () => void;
+  showXPBar?: boolean;
+  showPublicProfileLink?: boolean;
+  onPublicProfileClick?: () => void;
   className?: string;
 }
 
