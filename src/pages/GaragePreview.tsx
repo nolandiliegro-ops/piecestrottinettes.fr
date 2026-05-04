@@ -12,6 +12,8 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 import GarageTimeline from '@/components/garage/GarageTimeline';
+import CompatiblePartsRail from '@/components/garage/CompatiblePartsRail';
+import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
 
