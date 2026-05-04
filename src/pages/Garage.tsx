@@ -285,8 +285,17 @@ const Garage = () => {
                 </div>
 
                 {/* ===== DESKTOP: 3-Column Dashboard ===== */}
-                <div className="hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
-                  
+                <div className="relative hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
+
+                  {/* Rider Profile Card — desktop floating top-right */}
+                  <div className="absolute top-2 right-2 z-30">
+                    <RiderProfileCard
+                      profile={profile}
+                      variant="desktop"
+                      onAvatarClick={() => setProfileEditOpen(true)}
+                    />
+                  </div>
+
                   {/* Column 1: Scooter Carousel + Identity + Description (5/12 = 42%) */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -310,6 +319,7 @@ const Garage = () => {
                           scooters={scooters || []}
                           onScooterChange={setSelectedScooter}
                           onDelete={handleScooterDeleted}
+                          floating
                         />
                       )}
                     </div>
