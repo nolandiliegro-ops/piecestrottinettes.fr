@@ -218,6 +218,14 @@ const Garage = () => {
               <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
               </p>
+              <button
+                onClick={() => setThemePickerOpen(true)}
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 hover:bg-white/80 transition-colors flex-shrink-0"
+                title="Changer le fond"
+                aria-label="Changer le fond du garage"
+              >
+                <Wallpaper className="w-4 h-4 text-carbon/70" />
+              </button>
               <CompactPerformanceWidget 
                 points={profile?.performance_points || 0}
                 displayName={profile?.display_name || 'Rider'}
