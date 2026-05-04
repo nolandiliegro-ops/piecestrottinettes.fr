@@ -41,7 +41,7 @@ const GaragePreview = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading } = useGarageScooters();
-  const [selectedScooter, setSelectedScooter] = useState<any>(null);
+  const [selectedScooterId, setSelectedScooterId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
@@ -60,28 +60,47 @@ const GaragePreview = () => {
   }, [searchParams, setSearchParams]);
 
   useEffect(() => {
-    if (scooters && scooters.length > 0 && !selectedScooter) {
-      setSelectedScooter(scooters[0]);
+    if (!scooters?.length) {
+      if (selectedScooterId !== null) {
+        setSelectedScooterId(null);
+      }
+      return;
     }
-  }, [scooters, selectedScooter]);
+
+    const hasValidSelectedScooter = selectedScooterId
+      ? scooters.some((scooter) => scooter?.id === selectedScooterId)
+      : false;
+
+    if (!hasValidSelectedScooter) {
+      setSelectedScooterId(scooters[0]?.id ?? null);
+    }
+  }, [scooters, selectedScooterId]);
+
+  const selectedScooter = useMemo(() => {
+    if (!scooters?.length || !selectedScooterId) return null;
+
+    return scooters.find((scooter) => scooter?.id === selectedScooterId) ?? null;
+  }, [scooters, selectedScooterId]);
 
   // Multi-scooter navigation — index dérivé
   const currentIndex = useMemo(() => {
-    if (!scooters || !selectedScooter) return 0;
-    const idx = scooters.findIndex((s) => s.id === selectedScooter.id);
+    if (!scooters?.length || !selectedScooterId) return 0;
+
+    const idx = scooters.findIndex((scooter) => scooter?.id === selectedScooterId);
     return idx >= 0 ? idx : 0;
-  }, [scooters, selectedScooter]);
+  }, [scooters, selectedScooterId]);
 
   const scooterCount = scooters?.length ?? 0;
+  const selectedGarageId = selectedScooter?.id ?? null;
 
   const handlePrev = () => {
     if (!scooters || currentIndex <= 0) return;
-    setSelectedScooter(scooters[currentIndex - 1]);
+    setSelectedScooterId(scooters[currentIndex - 1]?.id ?? null);
   };
 
   const handleNext = () => {
     if (!scooters || currentIndex >= scooterCount - 1) return;
-    setSelectedScooter(scooters[currentIndex + 1]);
+    setSelectedScooterId(scooters[currentIndex + 1]?.id ?? null);
   };
 
   if (authLoading) {
@@ -184,7 +203,7 @@ const GaragePreview = () => {
                     </button>
                   </div>
                 </div>
-              ) : !selectedScooter || !selectedScooter.scooter_model ? (
+              ) : !selectedGarageId || !selectedScooter || !selectedScooter.scooter_model ? (
                 <div className="flex items-center justify-center min-h-[400px]">
                   <Loader2 className="w-8 h-8 animate-spin text-green-700" />
                 </div>
@@ -202,7 +221,7 @@ const GaragePreview = () => {
                   <aside className="order-5 lg:order-1 flex flex-col gap-4">
                     <ScooterPhotoCard garageItem={selectedScooter} />
                     <DescriptionCard
-                      garageId={selectedScooter.id}
+                      garageId={selectedGarageId}
                       initialDescription={selectedScooter.personal_description}
                     />
                   </aside>
@@ -242,7 +261,7 @@ const GaragePreview = () => {
                     {/* Suivi + bouton historique groupés */}
                     <div className="order-4 lg:order-none flex flex-col gap-2">
                       <SuiviExpertCard
-                        garageId={selectedScooter.id}
+                        garageId={selectedGarageId}
                         performancePoints={profile?.performance_points}
                         voltage={model?.voltage}
                         amperage={model?.amperage}
@@ -346,9 +365,9 @@ const GaragePreview = () => {
           <SheetHeader>
             <SheetTitle>Historique des modifications</SheetTitle>
           </SheetHeader>
-          {selectedScooter && (
+          {selectedGarageId && (
             <div className="mt-4">
-              <GarageTimeline garageItemId={selectedScooter.id} />
+              <GarageTimeline garageItemId={selectedGarageId} />
             </div>
           )}
         </SheetContent>
