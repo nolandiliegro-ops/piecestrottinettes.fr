@@ -52,7 +52,8 @@ const GaragePreview = () => {
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
-  const [partsOpen, setPartsOpen] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
@@ -125,7 +126,7 @@ const GaragePreview = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col overflow-x-hidden pb-24 md:pb-0">
-      <RooftopBackground />
+      <GarageBackground />
       <SEO noindex title="Mon Garage — Preview" description="Preview du nouveau layout garage Rooftop." />
       <Header />
 
@@ -219,6 +220,7 @@ const GaragePreview = () => {
                 </div>
               ) : (
                 /* === ROOFTOP LAYOUT === */
+                <>
                 <div
                   className="
                     flex flex-col gap-4
@@ -268,8 +270,8 @@ const GaragePreview = () => {
                       </div>
                     </div>
 
-                    {/* Suivi + action pills glassmorphism */}
-                    <div className="order-4 lg:order-none flex flex-col gap-2">
+                    {/* Suivi expert */}
+                    <div className="order-4 lg:order-none flex flex-col gap-3">
                       <SuiviExpertCard
                         garageId={selectedGarageId}
                         performancePoints={profile?.performance_points}
@@ -277,47 +279,50 @@ const GaragePreview = () => {
                         amperage={model?.amperage}
                         powerWatts={model?.power_watts}
                       />
-                      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2 sm:gap-3 mt-3">
-                        <button
-                          onClick={() => setHistoryOpen(true)}
-                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
-                          aria-label="Voir l'historique des modifications"
-                        >
-                          <History size={16} className="text-gray-700" />
-                          Historique
-                        </button>
-                        <button
-                          onClick={() => setPartsOpen(true)}
-                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
-                          aria-label="Voir les pièces compatibles avec cette trottinette"
-                        >
-                          <Wrench size={16} className="text-gray-700" />
-                          Pièces compatibles
-                        </button>
-                      </div>
+                      <ModificationsPreviewCard
+                        garageItemId={selectedGarageId}
+                        onOpenFullHistory={() => setHistoryOpen(true)}
+                        onAddModification={() => setQuickAddOpen(true)}
+                      />
                     </div>
                   </section>
 
                   {/* COLONNE DROITE — desktop col 3 / mobile order 1, 7, 8 */}
                   {/* RiderProfileCard mobile : order 1 */}
-                  <div className="order-1 lg:hidden">
+                  <div className="order-1 lg:hidden relative">
                     <RiderProfileCard
                       profile={profile}
                       variant="rooftop"
                       showXPBar
                       onAvatarClick={() => setProfileEditOpen(true)}
                     />
+                    <button
+                      onClick={() => setThemePickerOpen(true)}
+                      className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                      aria-label="Changer le wallpaper du garage"
+                      title="Changer le wallpaper"
+                    >
+                      <Wallpaper className="size-4 text-gray-700" />
+                    </button>
                   </div>
 
                   <aside className="order-7 lg:order-3 flex flex-col gap-4">
                     {/* RiderProfileCard desktop uniquement (mobile rendu en order-1 ci-dessus) */}
-                    <div className="hidden lg:block">
+                    <div className="hidden lg:block relative">
                       <RiderProfileCard
                         profile={profile}
                         variant="rooftop"
                         showXPBar
                         onAvatarClick={() => setProfileEditOpen(true)}
                       />
+                      <button
+                        onClick={() => setThemePickerOpen(true)}
+                        className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                        aria-label="Changer le wallpaper du garage"
+                        title="Changer le wallpaper"
+                      >
+                        <Wallpaper className="size-4 text-gray-700" />
+                      </button>
                     </div>
                     <Suspense
                       fallback={
