@@ -1,93 +1,62 @@
 import SEO from "@/components/SEO";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Plus } from 'lucide-react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Loader2, Plus, Bike, Wallpaper } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
-import TechnicalSpecs from '@/components/garage/TechnicalSpecs';
-import DiagnosticStrip from '@/components/garage/DiagnosticStrip';
-import ScooterIdentity from '@/components/garage/ScooterIdentity';
-import ScooterDescriptionModal from '@/components/garage/ScooterDescriptionModal';
-import ExpertTrackingWidget from '@/components/garage/ExpertTrackingWidget';
-import OrderHistorySection from '@/components/garage/OrderHistorySection';
-import CompatiblePartsGrid from '@/components/garage/CompatiblePartsGrid';
-import PersonalDescription from '@/components/garage/PersonalDescription';
-import GarageTimeline from '@/components/garage/GarageTimeline';
-import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
-import MediaSidebar from '@/components/garage/MediaSidebar';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
-import GarageMessages from '@/components/garage/GarageMessages';
-import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
+
+import OrderHistorySection from '@/components/garage/OrderHistorySection';
+import GarageMessages from '@/components/garage/GarageMessages';
+import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
+import GarageTimeline from '@/components/garage/GarageTimeline';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
+import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
+import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
+import ModificationsPreviewCard from '@/components/garage/ModificationsPreviewCard';
 import GarageBackground from '@/components/garage/GarageBackground';
 import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
-import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
-import RiderProfileCard from '@/components/garage/RiderProfileCard';
-import WallpaperFAB from '@/components/garage/WallpaperFAB';
-import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
+import PartCard from '@/components/parts/PartCard';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-// Calculate dynamic scooter stats based on specs
-const calculateScooterStats = (scooter: any) => {
-  if (!scooter?.scooter_model) {
-    return { totalInvested: 0, machinePoints: 0 };
-  }
-  
-  const model = scooter.scooter_model;
-  
-  const powerPoints = Math.round((model.power_watts || 500) / 20);
-  const rangePoints = Math.round((model.range_km || 20) * 2);
-  const partsBonus = (model.compatible_parts_count || 0) * 3;
-  const machinePoints = powerPoints + rangePoints + partsBonus;
-  
-  const avgPartPrice = 35;
-  const powerTier = model.power_watts ? (model.power_watts > 2000 ? 1.5 : model.power_watts > 1000 ? 1.2 : 1) : 1;
-  const estimatedParts = Math.round((model.compatible_parts_count || 5) * 0.3);
-  const totalInvested = Math.round(estimatedParts * avgPartPrice * powerTier);
-  
-  return { totalInvested, machinePoints };
-};
+// Phase A — Rooftop components (étapes 1-7)
+import RiderProfileCard from '@/components/garage/RiderProfileCard';
+import ScooterPhotoCard from '@/components/garage/ScooterPhotoCard';
+import StatsRow from '@/components/garage/StatsRow';
+import ScooterIdPill from '@/components/garage/ScooterIdPill';
+import HeroScooter from '@/components/garage/HeroScooter';
+import SuiviExpertCard from '@/components/garage/SuiviExpertCard';
+import ShareBuildCard from '@/components/garage/ShareBuildCard';
+import DescriptionCard from '@/components/garage/DescriptionCard';
+
+// Lazy mount — perf mobile (sous le fold)
+const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
+
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from '@/components/ui/sheet';
 
 const Garage = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { user, profile, loading: authLoading } = useAuth();
-  const { scooters, loading: scootersLoading, refetch: refetchScooters } = useGarageScooters();
-  const [selectedScooter, setSelectedScooter] = useState<any>(null);
+  const { scooters, loading: scootersLoading } = useGarageScooters();
+  const [selectedScooterId, setSelectedScooterId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
-  const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
-  const [themePickerOpen, setThemePickerOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
-  const updateNickname = useUpdateNickname();
-  const updatePersonalDescription = useUpdatePersonalDescription();
-  
-  const { parts, loading: partsLoading } = useCompatibleParts(
-    selectedScooter?.scooter_model?.id
-  );
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
-
-  const scooterStats = calculateScooterStats(selectedScooter);
-
-  // Handle scooter deletion — select next or clear
-  const handleScooterDeleted = () => {
-    refetchScooters();
-    // After refetch, useEffect will pick the first available scooter
-    setSelectedScooter(null);
-  };
-
-  // Handle nickname change
-  const handleNicknameChange = (nickname: string) => {
-    if (selectedScooter?.id) {
-      updateNickname.mutate({ garageItemId: selectedScooter.id, nickname });
-    }
-  };
 
   useEffect(() => {
     const tab = searchParams.get('tab');
@@ -99,424 +68,424 @@ const Garage = () => {
   }, [searchParams, setSearchParams]);
 
   useEffect(() => {
-    if (scooters && scooters.length > 0 && !selectedScooter) {
-      const scanModelSlug = searchParams.get("scan_model");
-      if (scanModelSlug) {
-        // Find the scooter matching the scan result
-        const match = scooters.find((s: any) => s.scooter_model?.slug === scanModelSlug);
-        if (match) {
-          setSelectedScooter(match);
-        } else {
-          setSelectedScooter(scooters[0]);
-        }
-        // Clean up the URL
-        searchParams.delete("scan_model");
-        setSearchParams(searchParams, { replace: true });
-      } else {
-        setSelectedScooter(scooters[0]);
+    if (!scooters?.length) {
+      if (selectedScooterId !== null) {
+        setSelectedScooterId(null);
       }
+      return;
     }
-  }, [scooters, selectedScooter, searchParams, setSearchParams]);
+
+    const hasValidSelectedScooter = selectedScooterId
+      ? scooters.some((scooter) => scooter?.id === selectedScooterId)
+      : false;
+
+    if (!hasValidSelectedScooter) {
+      setSelectedScooterId(scooters[0]?.id ?? null);
+    }
+  }, [scooters, selectedScooterId]);
+
+  const selectedScooter = useMemo(() => {
+    if (!scooters?.length || !selectedScooterId) return null;
+
+    return scooters.find((scooter) => scooter?.id === selectedScooterId) ?? null;
+  }, [scooters, selectedScooterId]);
+
+  // Multi-scooter navigation — index dérivé
+  const currentIndex = useMemo(() => {
+    if (!scooters?.length || !selectedScooterId) return 0;
+
+    const idx = scooters.findIndex((scooter) => scooter?.id === selectedScooterId);
+    return idx >= 0 ? idx : 0;
+  }, [scooters, selectedScooterId]);
+
+  const scooterCount = scooters?.length ?? 0;
+  const selectedGarageId = selectedScooter?.id ?? null;
+  const { parts: compatibleParts, loading: compatiblePartsLoading } = useCompatibleParts(
+    selectedScooter?.scooter_model?.id
+  );
+
+  const handlePrev = () => {
+    if (!scooters || currentIndex <= 0) return;
+    setSelectedScooterId(scooters[currentIndex - 1]?.id ?? null);
+  };
+
+  const handleNext = () => {
+    if (!scooters || currentIndex >= scooterCount - 1) return;
+    setSelectedScooterId(scooters[currentIndex + 1]?.id ?? null);
+  };
 
   if (authLoading) {
     return (
-      <div className="min-h-screen bg-greige flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-mineral" />
+      <div className="min-h-screen flex items-center justify-center bg-stone-300">
+        <Loader2 className="w-8 h-8 animate-spin text-gray-700" />
       </div>
     );
   }
 
-  const scooterName = selectedScooter?.scooter_model 
-    ? `${selectedScooter.scooter_model.brand} ${selectedScooter.scooter_model.name}`
-    : '';
+  const model = selectedScooter?.scooter_model;
 
   return (
-    <div className="relative h-screen flex flex-col overflow-hidden overflow-x-hidden pb-24 md:pb-0">
+    <div className="relative min-h-screen flex flex-col overflow-x-hidden pb-24 md:pb-0">
       <GarageBackground />
-      <SEO noindex title="Mon Garage" description="Gérez votre garage et vos trottinettes." />
+      <SEO
+        title="Mon Garage"
+        description="Ton cockpit personnel : suivi de maintenance, pièces compatibles, tutos et historique de modifications pour ta trottinette électrique."
+      />
       <Header />
-      
-      <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
-        <div className="h-full flex flex-col max-w-[1920px] mx-auto w-full">
-          
-          {/* Header — tabs only (avatar + XP moved to RiderProfileCard, wallpaper moved to FAB) */}
+
+      <main className="relative z-10 flex-1 pt-20 lg:pt-24 pb-4 flex flex-col">
+        <div className="px-4 lg:px-6 max-w-[1600px] mx-auto w-full">
           <GarageHeaderBar
             activeTab={activeTab}
             onTabChange={setActiveTab}
             totalUnread={totalUnread}
           />
-
-          {/* Tab Content with Animation */}
-          <AnimatePresence mode="wait">
-            {activeTab === 'garage' ? (
-              <motion.div
-                key="garage"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 20 }}
-                transition={{ duration: 0.3 }}
-                className="flex-1 flex flex-col overflow-y-auto overflow-x-hidden scrollbar-hide"
-              >
-                {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
-                <div className="flex flex-col gap-6 lg:hidden">
-
-                  {/* Rider Profile Card — mobile inline */}
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <RiderProfileCard
-                      profile={profile}
-                      variant="mobile"
-                      onAvatarClick={() => setProfileEditOpen(true)}
-                    />
-                  </motion.div>
-                  
-                  {/* Block 3: Identity - Brand | Model | Nickname */}
-                  {selectedScooter?.scooter_model && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 }}
-                    >
-                      <ScooterIdentity
-                        brandName={selectedScooter.scooter_model.brand}
-                        modelName={selectedScooter.scooter_model.name}
-                        nickname={selectedScooter.nickname}
-                        description={selectedScooter.scooter_model.description}
-                        isOwned={selectedScooter.is_owned}
-                        variant="mobile"
-                        editable={true}
-                        garageItemId={selectedScooter.id}
-                        onNicknameChange={handleNicknameChange}
-                        onReadMoreClick={() => setShowDescriptionModal(true)}
-                      />
-                    </motion.div>
-                  )}
-
-                  {/* Personal Description - Mobile */}
-                  {selectedScooter && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.15 }}
-                    >
-                      <PersonalDescription
-                        garageItemId={selectedScooter.id}
-                        initialDescription={selectedScooter.personal_description || null}
-                        onUpdate={async (description) => {
-                          await updatePersonalDescription.mutateAsync({
-                            garageItemId: selectedScooter.id,
-                            description,
-                          });
-                        }}
-                      />
-                    </motion.div>
-                  )}
-                  
-                  {/* Block 4: Hero - Scooter Image (Clean, no floating text) */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.98 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: 0.15 }}
-                  >
-                    {scootersLoading ? (
-                      <div className="space-y-4 p-4 bg-white/40 backdrop-blur-md rounded-2xl border border-mineral/10">
-                        <Skeleton className="w-full h-48 rounded-xl bg-mineral/5" />
-                        <div className="space-y-2 px-2">
-                          <Skeleton className="h-4 w-1/3 bg-mineral/5" />
-                          <Skeleton className="h-6 w-2/3 bg-mineral/5" />
-                          <Skeleton className="h-3 w-1/2 bg-mineral/5" />
-                        </div>
-                      </div>
-                    ) : (
-                      <GarageScooterCarousel 
-                        scooters={scooters || []}
-                        onScooterChange={setSelectedScooter}
-                        onDelete={handleScooterDeleted}
-                        mobileCleanMode={true}
-                        floating
-                      />
-                    )}
-                  </motion.div>
-                  
-                  {/* Block 6: Diagnostic Strip */}
-                  {selectedScooter?.scooter_model && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.25 }}
-                    >
-                      <DiagnosticStrip
-                        voltage={selectedScooter.scooter_model.voltage}
-                        amperage={selectedScooter.scooter_model.amperage}
-                        power={selectedScooter.scooter_model.power_watts}
-                      />
-                    </motion.div>
-                  )}
-                  
-                  {/* Block 7: Modification Timeline - Mobile (BEFORE parts) */}
-                  {selectedScooter && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.3 }}
-                    >
-                      <GarageTimeline garageItemId={selectedScooter.id} />
-                    </motion.div>
-                  )}
-                  
-                  {/* Block 8: Inventory - Pièces Compatibles Carousel */}
-                  {selectedScooter && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.35 }}
-                    >
-                      <CompatiblePartsGrid
-                        scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
-                        scooterName={scooterName}
-                        parts={parts || []}
-                        loading={partsLoading}
-                      />
-                    </motion.div>
-                  )}
-                </div>
-
-                {/* ===== DESKTOP: 3-Column Dashboard ===== */}
-                <div className="relative hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
-
-                  {/* Rider Profile Card — desktop floating top-right */}
-                  <div className="absolute top-2 right-2 z-30">
-                    <RiderProfileCard
-                      profile={profile}
-                      variant="desktop"
-                      onAvatarClick={() => setProfileEditOpen(true)}
-                    />
-                  </div>
-
-                  {/* Column 1: Scooter Carousel + Identity + Description (5/12 = 42%) */}
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.1 }}
-                    className="col-span-5 flex flex-col gap-4"
-                  >
-                    {/* Scooter Carousel */}
-                    <div className="min-h-[450px] max-h-[600px]">
-                    {scootersLoading ? (
-                        <div className="space-y-4 p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-mineral/10 h-full">
-                          <Skeleton className="w-full h-64 rounded-xl bg-mineral/5" />
-                          <div className="space-y-3 px-2">
-                            <Skeleton className="h-4 w-1/4 bg-mineral/5" />
-                            <Skeleton className="h-7 w-3/5 bg-mineral/5" />
-                            <Skeleton className="h-3 w-2/5 bg-mineral/5" />
-                          </div>
-                        </div>
-                      ) : (
-                        <GarageScooterCarousel 
-                          scooters={scooters || []}
-                          onScooterChange={setSelectedScooter}
-                          onDelete={handleScooterDeleted}
-                          floating
-                        />
-                      )}
-                    </div>
-                    
-                    {/* Identity under carousel */}
-                    {selectedScooter?.scooter_model && (
-                      <ScooterIdentity
-                        brandName={selectedScooter.scooter_model.brand}
-                        modelName={selectedScooter.scooter_model.name}
-                        nickname={selectedScooter.nickname}
-                        description={selectedScooter.scooter_model.description}
-                        isOwned={selectedScooter.is_owned}
-                        variant="desktop"
-                        editable={true}
-                        garageItemId={selectedScooter.id}
-                        onNicknameChange={handleNicknameChange}
-                        onReadMoreClick={() => setShowDescriptionModal(true)}
-                      />
-                    )}
-                    
-                    {/* Personal Description under identity */}
-                    {selectedScooter && (
-                      <PersonalDescription
-                        garageItemId={selectedScooter.id}
-                        initialDescription={selectedScooter.personal_description || null}
-                        onUpdate={async (description) => {
-                          await updatePersonalDescription.mutateAsync({
-                            garageItemId: selectedScooter.id,
-                            description,
-                          });
-                        }}
-                      />
-                    )}
-                  </motion.div>
-
-                  {/* Column 2: Technical Stats + Expert Tracking (4/12 = 33%) */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.2 }}
-                    className="col-span-4 flex flex-col gap-3"
-                  >
-                    {selectedScooter?.scooter_model && (
-                      <TechnicalSpecs
-                        voltage={selectedScooter.scooter_model.voltage}
-                        amperage={selectedScooter.scooter_model.amperage}
-                        power={selectedScooter.scooter_model.power_watts}
-                        className="shrink-0"
-                      />
-                    )}
-
-                    {selectedScooter && (
-                      <ExpertTrackingWidget
-                        garageItemId={selectedScooter.id}
-                        scooterName={scooterName}
-                        lastMaintenanceDate={selectedScooter.last_maintenance_date}
-                        totalInvested={scooterStats.totalInvested}
-                        machinePoints={scooterStats.machinePoints}
-                        className="shrink-0"
-                      />
-                    )}
-
-                    {/* Diagnostic Strip in column 2 */}
-                    {selectedScooter?.scooter_model && (
-                      <DiagnosticStrip
-                        voltage={selectedScooter.scooter_model.voltage}
-                        amperage={selectedScooter.scooter_model.amperage}
-                        power={selectedScooter.scooter_model.power_watts}
-                      />
-                    )}
-                  </motion.div>
-
-                  {/* Column 3: Media Sidebar (3/12 = 25%) - STICKY */}
-                  <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.3 }}
-                    className="col-span-3"
-                  >
-                    {selectedScooter?.scooter_model && (
-                      <MediaSidebar
-                        scooterModelId={selectedScooter.scooter_model.id}
-                        scooterName={scooterName}
-                        userId={user?.id}
-                        className="sticky top-24"
-                      />
-                    )}
-                  </motion.div>
-                </div>
-
-                {/* Desktop: Modification Timeline (full width, below grid) */}
-                {selectedScooter && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.35 }}
-                    className="mt-8 shrink-0 hidden lg:block"
-                  >
-                    <GarageTimeline garageItemId={selectedScooter.id} />
-                  </motion.div>
-                )}
-
-                {/* Desktop Bottom Row: Compatible Parts Carousel (full width) */}
-                {selectedScooter && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.4 }}
-                    className="mt-8 shrink-0 hidden lg:block pb-8"
-                  >
-                    <CompatiblePartsGrid
-                      scooterId={selectedScooter.scooter_model?.id || selectedScooter.id}
-                      scooterName={scooterName}
-                      parts={parts || []}
-                      loading={partsLoading}
-                    />
-                  </motion.div>
-                )}
-              </motion.div>
-            ) : activeTab === 'orders' ? (
-              <motion.div
-                key="orders"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-                className="flex-1 overflow-y-auto pb-8"
-              >
-                <OrderHistorySection userId={user?.id} />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="messages"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-                className="flex-1 overflow-y-auto pb-8 px-4 md:px-6"
-              >
-                <GarageMessages />
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
 
-        <Footer />
+        <AnimatePresence mode="wait">
+          {activeTab === 'garage' ? (
+            <motion.div
+              key="garage"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="flex-1 px-4 lg:px-6 max-w-[1600px] mx-auto w-full mt-4"
+            >
+              {/* === EMPTY / NOT AUTH STATES === */}
+              {!user ? (
+                <div className="flex flex-col items-center justify-center text-center py-20 max-w-md mx-auto">
+                  <div
+                    className="rounded-3xl p-8 bg-white/[0.42] backdrop-blur-2xl backdrop-saturate-150 border border-white/35"
+                    style={{
+                      boxShadow:
+                        '0 20px 50px -10px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6)',
+                    }}
+                  >
+                    <Bike className="w-16 h-16 text-gray-700 mx-auto mb-4" strokeWidth={1.5} />
+                    <h2 className="text-xl font-black uppercase tracking-tight text-gray-900 mb-2">
+                      Connecte-toi
+                    </h2>
+                    <p className="text-sm text-gray-700 mb-5">
+                      Accède à ton garage personnalisé.
+                    </p>
+                    <button
+                      onClick={() => navigate('/login')}
+                      className="w-full bg-green-700 hover:bg-green-800 text-white rounded-xl py-3 font-bold text-sm"
+                    >
+                      Se connecter
+                    </button>
+                  </div>
+                </div>
+              ) : scootersLoading ? (
+                <div className="flex items-center justify-center py-20">
+                  <Loader2 className="w-8 h-8 animate-spin text-gray-700" />
+                </div>
+              ) : scooterCount === 0 ? (
+                <div className="flex flex-col items-center justify-center text-center py-12 max-w-md mx-auto">
+                  <div
+                    className="w-full rounded-3xl p-8 bg-white/[0.42] backdrop-blur-2xl backdrop-saturate-150 border border-white/35"
+                    style={{
+                      boxShadow:
+                        '0 20px 50px -10px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6)',
+                    }}
+                  >
+                    <Bike className="w-16 h-16 text-gray-700 mx-auto mb-4" strokeWidth={1.5} />
+                    <h2 className="text-xl font-black uppercase tracking-tight text-gray-900 mb-2">
+                      Ton garage est vide
+                    </h2>
+                    <p className="text-sm text-gray-700 mb-5">
+                      Ajoute ta première trottinette pour débloquer ton cockpit personnalisé.
+                    </p>
+                    <ul className="text-sm text-gray-600 space-y-1 mb-6 text-left inline-block">
+                      <li>✓ Suivi de maintenance personnalisé</li>
+                      <li>✓ Pièces compatibles avec ton modèle</li>
+                      <li>✓ Tutos vidéo sur mesure</li>
+                      <li>✓ +50 XP à l'ajout de ta première photo</li>
+                    </ul>
+                    <button
+                      onClick={() => navigate('/trottinettes')}
+                      className="w-full bg-green-700 hover:bg-green-800 text-white rounded-xl py-3 font-bold text-sm"
+                    >
+                      Ajoute ta première trottinette
+                    </button>
+                  </div>
+                </div>
+              ) : !selectedGarageId || !selectedScooter || !selectedScooter.scooter_model ? (
+                <div className="flex items-center justify-center min-h-[400px]">
+                  <Loader2 className="w-8 h-8 animate-spin text-green-700" />
+                </div>
+              ) : (
+                /* === ROOFTOP LAYOUT === */
+                <>
+                <div
+                  className="
+                    flex flex-col gap-4
+                    md:max-w-2xl md:mx-auto
+                    lg:max-w-none lg:mx-0 lg:grid lg:grid-cols-[280px_minmax(0,1fr)_320px] lg:gap-6
+                    xl:gap-8
+                  "
+                >
+                  {/* COLONNE GAUCHE — desktop col 1 / mobile order 5-6 */}
+                  <aside className="order-5 lg:order-1 flex flex-col gap-4">
+                    <ScooterPhotoCard garageItem={selectedScooter} />
+                    <DescriptionCard
+                      garageId={selectedGarageId}
+                      initialDescription={selectedScooter.personal_description}
+                    />
+                  </aside>
+
+                  {/* COLONNE CENTRE — desktop col 2 */}
+                  {/* Mobile : order 2 (Hero), 3 (Stats), 4 (Suivi). Desktop : flow naturel Stats → Hero → Suivi */}
+                  <section className="contents lg:flex lg:flex-col lg:gap-6 lg:order-2 min-w-0">
+                    {/* StatsRow — desktop : top de la colonne centre. Mobile : order 3 (après Hero) */}
+                    <div className="order-3 lg:order-none">
+                      <StatsRow
+                        voltage={model?.voltage}
+                        amperage={model?.amperage}
+                        powerWatts={model?.power_watts}
+                      />
+                    </div>
+
+                    {/* HeroScooter + ScooterIdPill flottante (wrapper relative isolé) */}
+                    <div className="relative order-2 lg:order-none">
+                      <HeroScooter
+                        imageUrl={model?.image_url}
+                        modelName={model?.name}
+                        scooterCount={scooterCount}
+                        currentIndex={currentIndex}
+                        onPrev={handlePrev}
+                        onNext={handleNext}
+                      />
+                      <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 max-w-[90%] pointer-events-none">
+                        <ScooterIdPill
+                          brand={model?.brand}
+                          modelName={model?.name}
+                          year={null}
+                          nickname={selectedScooter.nickname}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Suivi expert */}
+                    <div className="order-4 lg:order-none flex flex-col gap-3">
+                      <SuiviExpertCard
+                        garageId={selectedGarageId}
+                        performancePoints={profile?.performance_points}
+                        lastMaintenanceDate={selectedScooter.last_maintenance_date}
+                      />
+                      <ModificationsPreviewCard
+                        garageItemId={selectedGarageId}
+                        onOpenFullHistory={() => setHistoryOpen(true)}
+                        onAddModification={() => setQuickAddOpen(true)}
+                      />
+                    </div>
+                  </section>
+
+                  {/* COLONNE DROITE — desktop col 3 / mobile order 1, 7, 8 */}
+                  {/* RiderProfileCard mobile : order 1 */}
+                  <div className="order-1 lg:hidden relative">
+                    <RiderProfileCard
+                      profile={profile}
+                      variant="rooftop"
+                      showXPBar
+                      onAvatarClick={() => setProfileEditOpen(true)}
+                    />
+                    <button
+                      onClick={() => setThemePickerOpen(true)}
+                      className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                      aria-label="Changer le wallpaper du garage"
+                      title="Changer le wallpaper"
+                    >
+                      <Wallpaper className="size-4 text-gray-700" />
+                    </button>
+                  </div>
+
+                  <aside className="order-7 lg:order-3 flex flex-col gap-4">
+                    {/* RiderProfileCard desktop uniquement (mobile rendu en order-1 ci-dessus) */}
+                    <div className="hidden lg:block relative">
+                      <RiderProfileCard
+                        profile={profile}
+                        variant="rooftop"
+                        showXPBar
+                        onAvatarClick={() => setProfileEditOpen(true)}
+                      />
+                      <button
+                        onClick={() => setThemePickerOpen(true)}
+                        className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                        aria-label="Changer le wallpaper du garage"
+                        title="Changer le wallpaper"
+                      >
+                        <Wallpaper className="size-4 text-gray-700" />
+                      </button>
+                    </div>
+                    <Suspense
+                      fallback={
+                        <div
+                          className="rounded-3xl p-5 bg-white/[0.42] backdrop-blur-2xl border border-white/35 h-[260px] animate-pulse"
+                        />
+                      }
+                    >
+                      <TutosCard scooterModelId={model?.id} />
+                    </Suspense>
+                    <ShareBuildCard />
+                  </aside>
+                </div>
+
+                {/* === SECTION PIÈCES COMPATIBLES — pleine largeur === */}
+                {selectedScooter?.scooter_model?.id && (
+                  <section className="mt-8 lg:mt-12">
+                    <div className="mb-5">
+                      <h2 className="text-xl lg:text-2xl font-black uppercase tracking-tight text-white drop-shadow-lg">
+                        Pièces compatibles avec ta {selectedScooter.scooter_model.brand}{' '}
+                        {selectedScooter.scooter_model.name}
+                      </h2>
+                      <p className="text-sm text-white/80 mt-1 drop-shadow">
+                        Sélection des meilleures pièces pour ton modèle
+                      </p>
+                    </div>
+
+                    {compatiblePartsLoading ? (
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        {[0, 1, 2, 3].map((i) => (
+                          <div
+                            key={i}
+                            className="aspect-[3/4] rounded-2xl bg-white/30 animate-pulse"
+                          />
+                        ))}
+                      </div>
+                    ) : !compatibleParts || compatibleParts.length === 0 ? (
+                      <div className="rounded-3xl p-8 bg-white/[0.42] backdrop-blur-xl border border-white/35 text-center">
+                        <p className="text-sm text-gray-700">
+                          Aucune pièce compatible disponible pour ce modèle pour le moment.
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
+                          <TabsList className="bg-white/[0.42] backdrop-blur-xl border border-white/35 mb-5 flex flex-wrap h-auto gap-1 p-1">
+                            <TabsTrigger value="all" className="text-xs uppercase font-bold tracking-wide">
+                              Toutes
+                            </TabsTrigger>
+                            {Array.from(new Set(compatibleParts.map((p) => p.category?.name).filter(Boolean) as string[])).map((catName) => (
+                              <TabsTrigger
+                                key={catName}
+                                value={catName}
+                                className="text-xs uppercase font-bold tracking-wide"
+                              >
+                                {catName}
+                              </TabsTrigger>
+                            ))}
+                          </TabsList>
+                        </Tabs>
+
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                          {compatibleParts
+                            .filter((p) => activeCategory === 'all' || p.category?.name === activeCategory)
+                            .slice(0, 12)
+                            .map((part, idx) => {
+                              const adapted = {
+                                id: part.id,
+                                name: part.name,
+                                slug: part.slug ?? '',
+                                description: null,
+                                price: part.price,
+                                image_url: (part as any).image ?? (part as any).image_url ?? null,
+                                difficulty_level: part.difficulty_level ?? null,
+                                stock_quantity: part.stock_quantity,
+                                technical_metadata: null,
+                                category: part.category
+                                  ? {
+                                      id: '',
+                                      name: part.category.name,
+                                      icon: null,
+                                      slug: '',
+                                    }
+                                  : null,
+                              };
+                              return <PartCard key={part.id} part={adapted as any} index={idx} />;
+                            })}
+                        </div>
+
+                        <div className="flex justify-center mt-6">
+                          <button
+                            onClick={() => navigate(`/catalogue?scooter=${selectedScooter.scooter_model.id}`)}
+                            className="bg-green-700 hover:bg-green-800 text-white rounded-xl px-6 py-3 font-bold text-sm flex items-center gap-2 transition-colors shadow-md hover:shadow-lg"
+                          >
+                            Voir toutes les pièces compatibles →
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </section>
+                )}
+                </>
+              )}
+            </motion.div>
+          ) : activeTab === 'orders' ? (
+            <motion.div
+              key="orders"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="flex-1 overflow-y-auto pb-8 px-4 md:px-6 max-w-[1600px] mx-auto w-full"
+            >
+              <OrderHistorySection userId={user?.id} />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="messages"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="flex-1 overflow-y-auto pb-8 px-4 md:px-6 max-w-[1600px] mx-auto w-full"
+            >
+              <GarageMessages />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </main>
 
-      {/* Scooter Description Modal */}
-      {selectedScooter?.scooter_model && (
-        <ScooterDescriptionModal
-          isOpen={showDescriptionModal}
-          onClose={() => setShowDescriptionModal(false)}
-          scooterName={selectedScooter.scooter_model.name}
-          brandName={selectedScooter.scooter_model.brand}
-          description={selectedScooter.scooter_model.description || ''}
-          specs={{
-            power_watts: selectedScooter.scooter_model.power_watts,
-            range_km: selectedScooter.scooter_model.range_km,
-            max_speed_kmh: selectedScooter.scooter_model.max_speed_kmh,
-            voltage: selectedScooter.scooter_model.voltage,
-          }}
-        />
-      )}
-
-      {/* Floating Action Button - Quick Add Modification */}
-      {activeTab === 'garage' && scooters && scooters.length > 0 && (
+      {/* Plus FAB */}
+      {activeTab === 'garage' && scooterCount > 0 && (
         <motion.button
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setQuickAddOpen(true)}
-          className="fixed bottom-24 md:bottom-8 right-6 w-14 h-14 
-                   bg-mineral text-white rounded-full shadow-2xl 
+          className="fixed bottom-24 md:bottom-8 right-6 w-14 h-14
+                   bg-green-700 text-white rounded-full shadow-2xl
                    flex items-center justify-center z-40
-                   hover:bg-mineral/90 transition-colors
-                   hover:shadow-[0_0_30px_rgba(147,181,161,0.4)]"
+                   hover:bg-green-800 transition-colors"
           title="Ajouter une modification"
         >
           <Plus className="w-6 h-6" />
         </motion.button>
       )}
 
-      {/* Wallpaper FAB — secondary, to the LEFT of Plus FAB */}
-      <WallpaperFAB onClick={() => setThemePickerOpen(true)} />
-
-      {/* Quick Add Modification Dialog */}
-      <QuickAddModificationDialog
-        open={quickAddOpen}
-        onOpenChange={setQuickAddOpen}
-      />
-
-      {/* Theme Picker Sheet */}
+      <QuickAddModificationDialog open={quickAddOpen} onOpenChange={setQuickAddOpen} />
       <RiderProfileEditDialog open={profileEditOpen} onOpenChange={setProfileEditOpen} />
+
+      {/* History Sheet — Timeline */}
+      <Sheet open={historyOpen} onOpenChange={setHistoryOpen}>
+        <SheetContent side="right" className="w-full sm:max-w-xl overflow-y-auto">
+          <SheetHeader>
+            <SheetTitle>Historique des modifications</SheetTitle>
+          </SheetHeader>
+          {selectedGarageId && (
+            <div className="mt-4">
+              <GarageTimeline garageItemId={selectedGarageId} />
+            </div>
+          )}
+        </SheetContent>
+      </Sheet>
+
       <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
+
+      <Footer />
     </div>
   );
 };
