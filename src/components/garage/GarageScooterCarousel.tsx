@@ -38,6 +38,7 @@ interface GarageScooterCarouselProps {
   onDelete?: () => void;
   className?: string;
   mobileCleanMode?: boolean;
+  floating?: boolean;
 }
 
 const slideVariants = {
@@ -66,7 +67,7 @@ const slideTransition = {
   scale: { duration: 0.3 }
 };
 
-const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
+const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className, mobileCleanMode = false, floating = false }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
@@ -167,30 +168,42 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
       {/* HERO Image Container — Ultra-Premium */}
       <div 
         className={cn(
-          "relative rounded-3xl overflow-hidden shadow-2xl border border-white/10",
+          "relative overflow-hidden",
+          floating
+            ? "rounded-none border-0 shadow-none bg-transparent"
+            : "rounded-3xl shadow-2xl border border-white/10",
           mobileCleanMode ? "h-[360px] md:h-[500px]" : "h-[360px] md:h-[500px] lg:h-[550px]"
         )}
-        style={{
-          background: 'radial-gradient(ellipse 120% 80% at 50% 40%, rgba(147,181,161,0.08) 0%, rgba(58,58,58,1) 60%)',
-        }}
+        style={
+          floating
+            ? undefined
+            : {
+                background:
+                  'radial-gradient(ellipse 120% 80% at 50% 40%, rgba(147,181,161,0.08) 0%, rgba(58,58,58,1) 60%)',
+              }
+        }
       >
         {/* Garage floor texture */}
-        <div 
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage: 'url(/garage-floor.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+        {!floating && (
+          <div 
+            className="absolute inset-0 opacity-15"
+            style={{
+              backgroundImage: 'url(/garage-floor.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        )}
 
         {/* Studio Spotlight radial overlay */}
-        <div 
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 60%)',
-          }}
-        />
+        {!floating && (
+          <div 
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 60%)',
+            }}
+          />
+        )}
 
         {/* Delete Button - Top Right */}
         <div className="absolute top-3 right-3 z-20">
@@ -232,7 +245,12 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
                 transition={slideTransition}
                 src={displayImage}
                 alt={displayName}
-                className="absolute inset-0 w-full h-full object-contain p-6 md:p-12 drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)]"
+                className={cn(
+                  "absolute inset-0 w-full h-full object-contain p-6 md:p-12",
+                  floating
+                    ? "drop-shadow-[0_40px_60px_rgba(0,0,0,0.55)]"
+                    : "drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)]"
+                )}
                 onError={() => setImageError(true)}
               />
             ) : (

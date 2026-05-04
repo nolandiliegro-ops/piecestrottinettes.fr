@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare, Wallpaper, UserPlus } from 'lucide-react';
+import { Loader2, Plus } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
@@ -24,32 +24,12 @@ import GarageMessages from '@/components/garage/GarageMessages';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
-import { cn } from '@/lib/utils';
-import { getXPLevel } from '@/lib/xpLevels';
 import GarageBackground from '@/components/garage/GarageBackground';
 import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
-import RiderAvatar from '@/components/garage/RiderAvatar';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
-
-// Compact Performance Widget for header - Mobile optimized
-const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
-  const level = getXPLevel(points);
-
-  return (
-    <div className="flex items-center gap-1 md:gap-3 px-2 md:px-4 py-1 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full max-w-full">
-      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral flex-shrink-0" />
-      <span className={cn("font-display font-bold text-xs md:text-lg truncate", level.color)}>
-        {points.toLocaleString('fr-FR')}
-      </span>
-      <span className="hidden md:inline text-xs text-carbon/50">XP</span>
-      <div className="w-px h-3 md:h-4 bg-mineral/20 flex-shrink-0" />
-      <span className={cn("text-[9px] md:text-xs font-semibold flex-shrink-0", level.color)}>
-        <span className="md:hidden">LVL {level.level}</span>
-        <span className="hidden md:inline">{level.name}</span>
-      </span>
-    </div>
-  );
-};
+import RiderProfileCard from '@/components/garage/RiderProfileCard';
+import WallpaperFAB from '@/components/garage/WallpaperFAB';
+import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 
 // Calculate dynamic scooter stats based on specs
 const calculateScooterStats = (scooter: any) => {
@@ -159,96 +139,12 @@ const Garage = () => {
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
         <div className="h-full flex flex-col max-w-[1920px] mx-auto w-full">
           
-          {/* Header Row with Tabs - Stacks on mobile */}
-          <motion.div 
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-4 shrink-0"
-          >
-            {/* Tabs - Segmented control iOS style, always 3 cols */}
-            <div className="grid grid-cols-3 gap-1 w-full md:w-auto md:max-w-md bg-carbon/[0.04] rounded-full p-1">
-              {/* Tab: Mon Garage */}
-              <button
-                onClick={() => setActiveTab('garage')}
-                className={cn(
-                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'garage'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <Package className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Garage</span>
-              </button>
-
-              {/* Tab: Mes Commandes */}
-              <button
-                onClick={() => setActiveTab('orders')}
-                className={cn(
-                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'orders'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <ShoppingBag className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Commandes</span>
-              </button>
-
-              {/* Tab: Messages */}
-              <button
-                onClick={() => setActiveTab('messages')}
-                className={cn(
-                  "relative flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'messages'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <MessageSquare className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Messages</span>
-                {totalUnread > 0 && (
-                  <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
-                    {totalUnread > 9 ? '9+' : totalUnread}
-                  </span>
-                )}
-              </button>
-            </div>
-
-            {/* User info - Ultra compact on mobile */}
-            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
-              <button
-                onClick={() => setProfileEditOpen(true)}
-                className="group flex items-center gap-2 min-w-0 hover:opacity-80 transition"
-                title="Modifier mon profil rider"
-                aria-label="Modifier mon profil rider"
-              >
-                {profile?.avatar_url ? (
-                  <RiderAvatar url={profile.avatar_url} name={profile?.display_name} size="sm" />
-                ) : (
-                  <span className="flex items-center gap-1 text-[10px] md:text-xs text-mineral/70 italic px-2 py-1 rounded-full bg-white/40 border border-mineral/20">
-                    <UserPlus className="w-3 h-3" /> Photo
-                  </span>
-                )}
-                <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
-                  <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-                </p>
-              </button>
-              <button
-                onClick={() => setThemePickerOpen(true)}
-                className="flex items-center justify-center w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 hover:bg-white/80 transition-colors flex-shrink-0"
-                title="Changer le fond"
-                aria-label="Changer le fond du garage"
-              >
-                <Wallpaper className="w-4 h-4 text-carbon/70" />
-              </button>
-              <CompactPerformanceWidget 
-                points={profile?.performance_points || 0}
-                displayName={profile?.display_name || 'Rider'}
-              />
-            </div>
-          </motion.div>
+          {/* Header — tabs only (avatar + XP moved to RiderProfileCard, wallpaper moved to FAB) */}
+          <GarageHeaderBar
+            activeTab={activeTab}
+            onTabChange={setActiveTab}
+            totalUnread={totalUnread}
+          />
 
           {/* Tab Content with Animation */}
           <AnimatePresence mode="wait">
@@ -263,6 +159,19 @@ const Garage = () => {
               >
                 {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
                 <div className="flex flex-col gap-6 lg:hidden">
+
+                  {/* Rider Profile Card — mobile inline */}
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <RiderProfileCard
+                      profile={profile}
+                      variant="mobile"
+                      onAvatarClick={() => setProfileEditOpen(true)}
+                    />
+                  </motion.div>
                   
                   {/* Block 3: Identity - Brand | Model | Nickname */}
                   {selectedScooter?.scooter_model && (
@@ -327,6 +236,7 @@ const Garage = () => {
                         onScooterChange={setSelectedScooter}
                         onDelete={handleScooterDeleted}
                         mobileCleanMode={true}
+                        floating
                       />
                     )}
                   </motion.div>
@@ -375,8 +285,17 @@ const Garage = () => {
                 </div>
 
                 {/* ===== DESKTOP: 3-Column Dashboard ===== */}
-                <div className="hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
-                  
+                <div className="relative hidden lg:grid lg:grid-cols-12 gap-6 shrink-0">
+
+                  {/* Rider Profile Card — desktop floating top-right */}
+                  <div className="absolute top-2 right-2 z-30">
+                    <RiderProfileCard
+                      profile={profile}
+                      variant="desktop"
+                      onAvatarClick={() => setProfileEditOpen(true)}
+                    />
+                  </div>
+
                   {/* Column 1: Scooter Carousel + Identity + Description (5/12 = 42%) */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -400,6 +319,7 @@ const Garage = () => {
                           scooters={scooters || []}
                           onScooterChange={setSelectedScooter}
                           onDelete={handleScooterDeleted}
+                          floating
                         />
                       )}
                     </div>
@@ -584,6 +504,9 @@ const Garage = () => {
           <Plus className="w-6 h-6" />
         </motion.button>
       )}
+
+      {/* Wallpaper FAB — secondary, to the LEFT of Plus FAB */}
+      <WallpaperFAB onClick={() => setThemePickerOpen(true)} />
 
       {/* Quick Add Modification Dialog */}
       <QuickAddModificationDialog

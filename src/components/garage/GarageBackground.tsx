@@ -6,6 +6,18 @@ const GarageBackground = () => {
   const [loaded, setLoaded] = useState(false);
   const [errored, setErrored] = useState(false);
 
+  // Adaptive overlay: lighter on already-dark themes, stronger on bright/beige ones.
+  const themeName = (theme?.name || '').toLowerCase();
+  const isAlreadyDark =
+    themeName.includes('loft') ||
+    themeName.includes('biblio') ||
+    themeName.includes('night') ||
+    themeName.includes('sombre');
+
+  const overlayClass = isAlreadyDark
+    ? 'bg-gradient-to-b from-black/10 via-black/15 to-black/25'
+    : 'bg-gradient-to-b from-black/25 via-black/35 to-black/55';
+
   return (
     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
       {/* Skeleton flou pendant chargement */}
@@ -30,8 +42,8 @@ const GarageBackground = () => {
           }`}
         />
       )}
-      {/* Overlay sombre pour lisibilité */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Adaptive overlay for legibility */}
+      <div className={`absolute inset-0 ${overlayClass}`} />
     </div>
   );
 };
