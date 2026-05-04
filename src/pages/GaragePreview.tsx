@@ -3,7 +3,7 @@ import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Plus, Bike } from 'lucide-react';
+import { Loader2, Plus, Bike, History, Wrench } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
