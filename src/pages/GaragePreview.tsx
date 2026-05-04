@@ -488,22 +488,7 @@ const GaragePreview = () => {
         </SheetContent>
       </Sheet>
 
-      {/* Compatible Parts Sheet */}
-      <Sheet open={partsOpen} onOpenChange={setPartsOpen}>
-        <SheetContent side="right" className="w-full sm:max-w-xl overflow-y-auto">
-          <SheetHeader>
-            <SheetTitle>Pièces compatibles</SheetTitle>
-          </SheetHeader>
-          {selectedScooter?.scooter_model?.id && (
-            <div className="mt-4">
-              <CompatiblePartsRail
-                parts={compatibleParts ?? []}
-                loading={compatiblePartsLoading}
-              />
-            </div>
-          )}
-        </SheetContent>
-      </Sheet>
+      <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
 };
