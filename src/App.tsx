@@ -22,7 +22,6 @@ const PartDetail = lazy(() => import("./pages/PartDetail"));
 const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
 const Garage = lazy(() => import("./pages/Garage"));
-const GaragePreview = lazy(() => import("./pages/GaragePreview"));
 const Admin = lazy(() => import("./pages/Admin"));
 const ScooterDetail = lazy(() => import("./pages/ScooterDetail"));
 const CartPage = lazy(() => import("./pages/CartPage"));
