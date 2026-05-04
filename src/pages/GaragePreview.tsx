@@ -203,10 +203,20 @@ const GaragePreview = () => {
                     />
                   </aside>
 
-                  {/* COLONNE CENTRE — desktop col 2 / mobile order 2-4 */}
-                  <section className="order-2 lg:order-2 flex flex-col gap-4 min-w-0">
-                    {/* HeroScooter avec ScooterIdPill flottante */}
-                    <div className="relative">
+                  {/* COLONNE CENTRE — desktop col 2 */}
+                  {/* Mobile : order 2 (Hero), 3 (Stats), 4 (Suivi). Desktop : flow naturel Stats → Hero → Suivi */}
+                  <section className="contents lg:flex lg:flex-col lg:gap-6 lg:order-2 min-w-0">
+                    {/* StatsRow — desktop : top de la colonne centre. Mobile : order 3 (après Hero) */}
+                    <div className="order-3 lg:order-none">
+                      <StatsRow
+                        voltage={model?.voltage}
+                        amperage={model?.amperage}
+                        powerWatts={model?.power_watts}
+                      />
+                    </div>
+
+                    {/* HeroScooter + ScooterIdPill flottante (wrapper relative isolé) */}
+                    <div className="relative order-2 lg:order-none">
                       <HeroScooter
                         imageUrl={model?.image_url}
                         modelName={model?.name}
@@ -215,7 +225,7 @@ const GaragePreview = () => {
                         onPrev={handlePrev}
                         onNext={handleNext}
                       />
-                      <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 max-w-[90%]">
+                      <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 max-w-[90%] pointer-events-none">
                         <ScooterIdPill
                           brand={model?.brand}
                           modelName={model?.name}
@@ -225,30 +235,23 @@ const GaragePreview = () => {
                       </div>
                     </div>
 
-                    {/* StatsRow — order 3 mobile (entre Hero et Suivi) */}
-                    <div className="order-3 lg:order-none lg:-mt-2">
-                      <StatsRow
+                    {/* Suivi + bouton historique groupés */}
+                    <div className="order-4 lg:order-none flex flex-col gap-2">
+                      <SuiviExpertCard
+                        garageId={selectedScooter.id}
+                        performancePoints={profile?.performance_points}
                         voltage={model?.voltage}
                         amperage={model?.amperage}
                         powerWatts={model?.power_watts}
                       />
+                      <button
+                        onClick={() => setHistoryOpen(true)}
+                        className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1 transition-colors"
+                        aria-label="Voir l'historique des modifications"
+                      >
+                        Voir l'historique →
+                      </button>
                     </div>
-
-                    <SuiviExpertCard
-                      garageId={selectedScooter.id}
-                      performancePoints={profile?.performance_points}
-                      voltage={model?.voltage}
-                      amperage={model?.amperage}
-                      powerWatts={model?.power_watts}
-                    />
-
-                    {/* Bouton historique discret */}
-                    <button
-                      onClick={() => setHistoryOpen(true)}
-                      className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1"
-                    >
-                      Voir l'historique →
-                    </button>
                   </section>
 
                   {/* COLONNE DROITE — desktop col 3 / mobile order 1, 7, 8 */}
