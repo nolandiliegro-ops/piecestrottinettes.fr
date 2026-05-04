@@ -3,7 +3,7 @@ import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
-import { Loader2, Plus, Bike, History, Wrench } from 'lucide-react';
+import { Loader2, Plus, Bike, Wallpaper } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
@@ -12,13 +12,16 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 import GarageTimeline from '@/components/garage/GarageTimeline';
-import CompatiblePartsRail from '@/components/garage/CompatiblePartsRail';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
+import ModificationsPreviewCard from '@/components/garage/ModificationsPreviewCard';
+import GarageBackground from '@/components/garage/GarageBackground';
+import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
+import PartCard from '@/components/parts/PartCard';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 // Phase A — Rooftop components (étapes 1-7)
-import RooftopBackground from '@/components/garage/RooftopBackground';
 import RiderProfileCard from '@/components/garage/RiderProfileCard';
 import ScooterPhotoCard from '@/components/garage/ScooterPhotoCard';
 import StatsRow from '@/components/garage/StatsRow';
@@ -49,7 +52,8 @@ const GaragePreview = () => {
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
-  const [partsOpen, setPartsOpen] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
@@ -122,7 +126,7 @@ const GaragePreview = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col overflow-x-hidden pb-24 md:pb-0">
-      <RooftopBackground />
+      <GarageBackground />
       <SEO noindex title="Mon Garage — Preview" description="Preview du nouveau layout garage Rooftop." />
       <Header />
 
@@ -216,6 +220,7 @@ const GaragePreview = () => {
                 </div>
               ) : (
                 /* === ROOFTOP LAYOUT === */
+                <>
                 <div
                   className="
                     flex flex-col gap-4
@@ -265,8 +270,8 @@ const GaragePreview = () => {
                       </div>
                     </div>
 
-                    {/* Suivi + action pills glassmorphism */}
-                    <div className="order-4 lg:order-none flex flex-col gap-2">
+                    {/* Suivi expert */}
+                    <div className="order-4 lg:order-none flex flex-col gap-3">
                       <SuiviExpertCard
                         garageId={selectedGarageId}
                         performancePoints={profile?.performance_points}
@@ -274,47 +279,50 @@ const GaragePreview = () => {
                         amperage={model?.amperage}
                         powerWatts={model?.power_watts}
                       />
-                      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2 sm:gap-3 mt-3">
-                        <button
-                          onClick={() => setHistoryOpen(true)}
-                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
-                          aria-label="Voir l'historique des modifications"
-                        >
-                          <History size={16} className="text-gray-700" />
-                          Historique
-                        </button>
-                        <button
-                          onClick={() => setPartsOpen(true)}
-                          className="flex items-center justify-center gap-2 flex-1 sm:flex-none sm:min-w-[180px] px-4 py-2.5 rounded-full bg-white/[0.42] backdrop-blur-xl backdrop-saturate-150 border border-white/40 shadow-md shadow-black/10 text-sm font-semibold text-gray-900 hover:bg-white/[0.55] hover:shadow-lg transition-all duration-200 cursor-pointer"
-                          aria-label="Voir les pièces compatibles avec cette trottinette"
-                        >
-                          <Wrench size={16} className="text-gray-700" />
-                          Pièces compatibles
-                        </button>
-                      </div>
+                      <ModificationsPreviewCard
+                        garageItemId={selectedGarageId}
+                        onOpenFullHistory={() => setHistoryOpen(true)}
+                        onAddModification={() => setQuickAddOpen(true)}
+                      />
                     </div>
                   </section>
 
                   {/* COLONNE DROITE — desktop col 3 / mobile order 1, 7, 8 */}
                   {/* RiderProfileCard mobile : order 1 */}
-                  <div className="order-1 lg:hidden">
+                  <div className="order-1 lg:hidden relative">
                     <RiderProfileCard
                       profile={profile}
                       variant="rooftop"
                       showXPBar
                       onAvatarClick={() => setProfileEditOpen(true)}
                     />
+                    <button
+                      onClick={() => setThemePickerOpen(true)}
+                      className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                      aria-label="Changer le wallpaper du garage"
+                      title="Changer le wallpaper"
+                    >
+                      <Wallpaper className="size-4 text-gray-700" />
+                    </button>
                   </div>
 
                   <aside className="order-7 lg:order-3 flex flex-col gap-4">
                     {/* RiderProfileCard desktop uniquement (mobile rendu en order-1 ci-dessus) */}
-                    <div className="hidden lg:block">
+                    <div className="hidden lg:block relative">
                       <RiderProfileCard
                         profile={profile}
                         variant="rooftop"
                         showXPBar
                         onAvatarClick={() => setProfileEditOpen(true)}
                       />
+                      <button
+                        onClick={() => setThemePickerOpen(true)}
+                        className="absolute top-2 right-2 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md shadow-black/10 flex items-center justify-center hover:bg-white/80 hover:shadow-lg transition-all duration-200"
+                        aria-label="Changer le wallpaper du garage"
+                        title="Changer le wallpaper"
+                      >
+                        <Wallpaper className="size-4 text-gray-700" />
+                      </button>
                     </div>
                     <Suspense
                       fallback={
@@ -328,6 +336,95 @@ const GaragePreview = () => {
                     <ShareBuildCard />
                   </aside>
                 </div>
+
+                {/* === SECTION PIÈCES COMPATIBLES — pleine largeur === */}
+                {selectedScooter?.scooter_model?.id && (
+                  <section className="mt-8 lg:mt-12">
+                    <div className="mb-5">
+                      <h2 className="text-xl lg:text-2xl font-black uppercase tracking-tight text-white drop-shadow-lg">
+                        Pièces compatibles avec ta {selectedScooter.scooter_model.brand}{' '}
+                        {selectedScooter.scooter_model.name}
+                      </h2>
+                      <p className="text-sm text-white/80 mt-1 drop-shadow">
+                        Sélection des meilleures pièces pour ton modèle
+                      </p>
+                    </div>
+
+                    {compatiblePartsLoading ? (
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        {[0, 1, 2, 3].map((i) => (
+                          <div
+                            key={i}
+                            className="aspect-[3/4] rounded-2xl bg-white/30 animate-pulse"
+                          />
+                        ))}
+                      </div>
+                    ) : !compatibleParts || compatibleParts.length === 0 ? (
+                      <div className="rounded-3xl p-8 bg-white/[0.42] backdrop-blur-xl border border-white/35 text-center">
+                        <p className="text-sm text-gray-700">
+                          Aucune pièce compatible disponible pour ce modèle pour le moment.
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
+                          <TabsList className="bg-white/[0.42] backdrop-blur-xl border border-white/35 mb-5 flex flex-wrap h-auto gap-1 p-1">
+                            <TabsTrigger value="all" className="text-xs uppercase font-bold tracking-wide">
+                              Toutes
+                            </TabsTrigger>
+                            {Array.from(new Set(compatibleParts.map((p) => p.category?.name).filter(Boolean) as string[])).map((catName) => (
+                              <TabsTrigger
+                                key={catName}
+                                value={catName}
+                                className="text-xs uppercase font-bold tracking-wide"
+                              >
+                                {catName}
+                              </TabsTrigger>
+                            ))}
+                          </TabsList>
+                        </Tabs>
+
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                          {compatibleParts
+                            .filter((p) => activeCategory === 'all' || p.category?.name === activeCategory)
+                            .slice(0, 12)
+                            .map((part, idx) => {
+                              const adapted = {
+                                id: part.id,
+                                name: part.name,
+                                slug: part.slug ?? '',
+                                description: null,
+                                price: part.price,
+                                image_url: (part as any).image ?? (part as any).image_url ?? null,
+                                difficulty_level: part.difficulty_level ?? null,
+                                stock_quantity: part.stock_quantity,
+                                technical_metadata: null,
+                                category: part.category
+                                  ? {
+                                      id: '',
+                                      name: part.category.name,
+                                      icon: null,
+                                      slug: '',
+                                    }
+                                  : null,
+                              };
+                              return <PartCard key={part.id} part={adapted as any} index={idx} />;
+                            })}
+                        </div>
+
+                        <div className="flex justify-center mt-6">
+                          <button
+                            onClick={() => navigate(`/catalogue?scooter=${selectedScooter.scooter_model.id}`)}
+                            className="bg-green-700 hover:bg-green-800 text-white rounded-xl px-6 py-3 font-bold text-sm flex items-center gap-2 transition-colors shadow-md hover:shadow-lg"
+                          >
+                            Voir toutes les pièces compatibles →
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </section>
+                )}
+                </>
               )}
             </motion.div>
           ) : activeTab === 'orders' ? (
@@ -391,22 +488,7 @@ const GaragePreview = () => {
         </SheetContent>
       </Sheet>
 
-      {/* Compatible Parts Sheet */}
-      <Sheet open={partsOpen} onOpenChange={setPartsOpen}>
-        <SheetContent side="right" className="w-full sm:max-w-xl overflow-y-auto">
-          <SheetHeader>
-            <SheetTitle>Pièces compatibles</SheetTitle>
-          </SheetHeader>
-          {selectedScooter?.scooter_model?.id && (
-            <div className="mt-4">
-              <CompatiblePartsRail
-                parts={compatibleParts ?? []}
-                loading={compatiblePartsLoading}
-              />
-            </div>
-          )}
-        </SheetContent>
-      </Sheet>
+      <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
 };
