@@ -275,9 +275,7 @@ const GaragePreview = () => {
                       <SuiviExpertCard
                         garageId={selectedGarageId}
                         performancePoints={profile?.performance_points}
-                        voltage={model?.voltage}
-                        amperage={model?.amperage}
-                        powerWatts={model?.power_watts}
+                        lastMaintenanceDate={selectedScooter.last_maintenance_date}
                       />
                       <ModificationsPreviewCard
                         garageItemId={selectedGarageId}
