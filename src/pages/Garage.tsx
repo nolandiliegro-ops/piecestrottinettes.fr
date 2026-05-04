@@ -159,6 +159,19 @@ const Garage = () => {
               >
                 {/* ===== MOBILE: 7 VERTICAL BLOCKS ===== */}
                 <div className="flex flex-col gap-6 lg:hidden">
+
+                  {/* Rider Profile Card — mobile inline */}
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <RiderProfileCard
+                      profile={profile}
+                      variant="mobile"
+                      onAvatarClick={() => setProfileEditOpen(true)}
+                    />
+                  </motion.div>
                   
                   {/* Block 3: Identity - Brand | Model | Nickname */}
                   {selectedScooter?.scooter_model && (
