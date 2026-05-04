@@ -573,6 +573,9 @@ const Garage = () => {
         open={quickAddOpen}
         onOpenChange={setQuickAddOpen}
       />
+
+      {/* Theme Picker Sheet */}
+      <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
 };
