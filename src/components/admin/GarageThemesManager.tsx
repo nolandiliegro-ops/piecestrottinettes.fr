@@ -105,32 +105,59 @@ const GarageThemesManager = () => {
 
   const handleFile = async (file: File) => {
     if (!file) return;
+    console.log('[GarageThemes] handleFile start', { name: file.name, size: file.size, type: file.type });
+
+    // Génère une key fallback si l'utilisateur n'a pas encore tapé de nom
+    const effectiveKey = form.key?.trim() || `theme-${Date.now()}`;
     if (!form.key) {
-      toast.error('Renseigne d\'abord le nom du fond');
-      return;
+      setForm((f) => ({ ...f, key: effectiveKey }));
+      setKeyTouched(true);
     }
+
     setUploading(true);
     try {
-      const compressed = await imageCompression(file, {
-        maxWidthOrHeight: 1920,
-        maxSizeMB: 1,
-        fileType: 'image/webp',
-        useWebWorker: true,
-      });
-      const path = `${form.key}-${Date.now()}.webp`;
+      let toUpload: Blob = file;
+      let contentType = file.type || 'image/webp';
+      try {
+        console.log('[GarageThemes] compressing...');
+        const compressed = await imageCompression(file, {
+          maxWidthOrHeight: 1920,
+          maxSizeMB: 1,
+          fileType: 'image/webp',
+          useWebWorker: true,
+        });
+        toUpload = compressed;
+        contentType = 'image/webp';
+        console.log('[GarageThemes] compressed', { size: compressed.size });
+      } catch (compErr: any) {
+        console.warn('[GarageThemes] compression failed, uploading original', compErr);
+        toast.warning('Compression impossible, upload de l\'original');
+      }
+
+      const ext = contentType === 'image/webp' ? 'webp'
+        : contentType === 'image/png' ? 'png' : 'jpg';
+      const path = `${effectiveKey}-${Date.now()}.${ext}`;
+      console.log('[GarageThemes] uploading to', path);
+
       const { error: upErr } = await supabase.storage
         .from('garage-themes')
-        .upload(path, compressed, {
+        .upload(path, toUpload, {
           cacheControl: '31536000',
           upsert: false,
-          contentType: 'image/webp',
+          contentType,
         });
-      if (upErr) throw upErr;
+      if (upErr) {
+        console.error('[GarageThemes] upload error', upErr);
+        throw upErr;
+      }
+
       const { data: pub } = supabase.storage.from('garage-themes').getPublicUrl(path);
+      console.log('[GarageThemes] public url', pub.publicUrl);
       setForm((f) => ({ ...f, image_url: pub.publicUrl }));
       toast.success('Image uploadée');
     } catch (e: any) {
-      toast.error(e.message ?? 'Erreur upload');
+      console.error('[GarageThemes] handleFile fatal', e);
+      toast.error(e?.message ?? 'Erreur upload');
     } finally {
       setUploading(false);
     }
