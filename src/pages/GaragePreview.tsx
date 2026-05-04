@@ -314,24 +314,22 @@ const GaragePreview = () => {
 
       {/* TODO étape 8 : retirer ce bloc de test */}
       {activeTab === 'garage' && (
-        <div className="px-4 lg:px-6 max-w-[1920px] mx-auto w-full pb-8">
-          <div className="mb-3 flex justify-center">
-            <span className="text-[10px] font-bold tracking-widest uppercase bg-amber-500/20 text-amber-200 border border-amber-400/30 px-3 py-1 rounded-full backdrop-blur-md">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-md">
+          <div className="mb-2 flex justify-center">
+            <span className="text-[10px] font-bold tracking-widest uppercase bg-amber-500/30 text-amber-100 border border-amber-400/40 px-3 py-1 rounded-full backdrop-blur-md">
               Étape 6 — Test SuiviExpertCard
             </span>
           </div>
           {selectedScooter ? (
-            <div className="max-w-md mx-auto">
-              <SuiviExpertCard
-                garageId={selectedScooter.id}
-                performancePoints={profile?.performance_points}
-                voltage={model?.voltage}
-                amperage={model?.amperage}
-                powerWatts={model?.power_watts}
-              />
-            </div>
+            <SuiviExpertCard
+              garageId={selectedScooter.id}
+              performancePoints={profile?.performance_points}
+              voltage={model?.voltage}
+              amperage={model?.amperage}
+              powerWatts={model?.power_watts}
+            />
           ) : (
-            <p className="text-center text-sm text-white/70">
+            <p className="text-center text-sm text-white/80 bg-black/40 backdrop-blur rounded-xl py-3 px-4">
               Pas de scooter dans le garage — impossible de tester SuiviExpertCard.
             </p>
           )}
