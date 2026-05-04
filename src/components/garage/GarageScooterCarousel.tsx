@@ -67,7 +67,7 @@ const slideTransition = {
   scale: { duration: 0.3 }
 };
 
-const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className, mobileCleanMode = false }: GarageScooterCarouselProps) => {
+const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className, mobileCleanMode = false, floating = false }: GarageScooterCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
   const [showCustomPhoto, setShowCustomPhoto] = useState(false);
