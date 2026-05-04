@@ -151,12 +151,14 @@ const handler = async (req: Request): Promise<Response> => {
       try {
         const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
         const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
-        
+        const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET") ?? "";
+
         await fetch(`${supabaseUrl}/functions/v1/send-message-notification`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${supabaseAnonKey}`,
+            'x-internal-secret': internalSecret,
           },
           body: JSON.stringify({
             recipient: 'client-ack',
