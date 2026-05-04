@@ -186,10 +186,10 @@ const GarageThemesManager = () => {
     if (!deleteTarget) return;
     try {
       if (usersUsingDeleted > 0) {
-        await supabase
+        await (supabase as any)
           .from('profiles')
-          .update({ active_theme_key: null } as any)
-          .eq('active_theme_key' as any, deleteTarget.key);
+          .update({ active_theme_key: null })
+          .eq('active_theme_key', deleteTarget.key);
       }
       // Storage cleanup si l'URL pointe vers le bucket
       const marker = '/garage-themes/';
