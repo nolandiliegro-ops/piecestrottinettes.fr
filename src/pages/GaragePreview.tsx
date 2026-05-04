@@ -96,6 +96,9 @@ const GaragePreview = () => {
 
   const scooterCount = scooters?.length ?? 0;
   const selectedGarageId = selectedScooter?.id ?? null;
+  const { parts: compatibleParts, loading: compatiblePartsLoading } = useCompatibleParts(
+    selectedScooter?.scooter_model?.id
+  );
 
   const handlePrev = () => {
     if (!scooters || currentIndex <= 0) return;
