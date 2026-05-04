@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare, Wallpaper, UserPlus } from 'lucide-react';
+import { Loader2, Plus } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
@@ -24,32 +24,12 @@ import GarageMessages from '@/components/garage/GarageMessages';
 import { useUpdateNickname, useUpdatePersonalDescription } from '@/hooks/useGarage';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
-import { cn } from '@/lib/utils';
-import { getXPLevel } from '@/lib/xpLevels';
 import GarageBackground from '@/components/garage/GarageBackground';
 import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
-import RiderAvatar from '@/components/garage/RiderAvatar';
 import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
-
-// Compact Performance Widget for header - Mobile optimized
-const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
-  const level = getXPLevel(points);
-
-  return (
-    <div className="flex items-center gap-1 md:gap-3 px-2 md:px-4 py-1 md:py-2 bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 rounded-full max-w-full">
-      <Trophy className="w-3 h-3 md:w-4 md:h-4 text-mineral flex-shrink-0" />
-      <span className={cn("font-display font-bold text-xs md:text-lg truncate", level.color)}>
-        {points.toLocaleString('fr-FR')}
-      </span>
-      <span className="hidden md:inline text-xs text-carbon/50">XP</span>
-      <div className="w-px h-3 md:h-4 bg-mineral/20 flex-shrink-0" />
-      <span className={cn("text-[9px] md:text-xs font-semibold flex-shrink-0", level.color)}>
-        <span className="md:hidden">LVL {level.level}</span>
-        <span className="hidden md:inline">{level.name}</span>
-      </span>
-    </div>
-  );
-};
+import RiderProfileCard from '@/components/garage/RiderProfileCard';
+import WallpaperFAB from '@/components/garage/WallpaperFAB';
+import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 
 // Calculate dynamic scooter stats based on specs
 const calculateScooterStats = (scooter: any) => {
