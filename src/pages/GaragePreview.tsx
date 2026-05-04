@@ -336,6 +336,95 @@ const GaragePreview = () => {
                     <ShareBuildCard />
                   </aside>
                 </div>
+
+                {/* === SECTION PIÈCES COMPATIBLES — pleine largeur === */}
+                {selectedScooter?.scooter_model?.id && (
+                  <section className="mt-8 lg:mt-12">
+                    <div className="mb-5">
+                      <h2 className="text-xl lg:text-2xl font-black uppercase tracking-tight text-white drop-shadow-lg">
+                        Pièces compatibles avec ta {selectedScooter.scooter_model.brand}{' '}
+                        {selectedScooter.scooter_model.name}
+                      </h2>
+                      <p className="text-sm text-white/80 mt-1 drop-shadow">
+                        Sélection des meilleures pièces pour ton modèle
+                      </p>
+                    </div>
+
+                    {compatiblePartsLoading ? (
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        {[0, 1, 2, 3].map((i) => (
+                          <div
+                            key={i}
+                            className="aspect-[3/4] rounded-2xl bg-white/30 animate-pulse"
+                          />
+                        ))}
+                      </div>
+                    ) : !compatibleParts || compatibleParts.length === 0 ? (
+                      <div className="rounded-3xl p-8 bg-white/[0.42] backdrop-blur-xl border border-white/35 text-center">
+                        <p className="text-sm text-gray-700">
+                          Aucune pièce compatible disponible pour ce modèle pour le moment.
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
+                          <TabsList className="bg-white/[0.42] backdrop-blur-xl border border-white/35 mb-5 flex flex-wrap h-auto gap-1 p-1">
+                            <TabsTrigger value="all" className="text-xs uppercase font-bold tracking-wide">
+                              Toutes
+                            </TabsTrigger>
+                            {Array.from(new Set(compatibleParts.map((p) => p.category?.name).filter(Boolean) as string[])).map((catName) => (
+                              <TabsTrigger
+                                key={catName}
+                                value={catName}
+                                className="text-xs uppercase font-bold tracking-wide"
+                              >
+                                {catName}
+                              </TabsTrigger>
+                            ))}
+                          </TabsList>
+                        </Tabs>
+
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                          {compatibleParts
+                            .filter((p) => activeCategory === 'all' || p.category?.name === activeCategory)
+                            .slice(0, 12)
+                            .map((part, idx) => {
+                              const adapted = {
+                                id: part.id,
+                                name: part.name,
+                                slug: part.slug ?? '',
+                                description: null,
+                                price: part.price,
+                                image_url: (part as any).image ?? (part as any).image_url ?? null,
+                                difficulty_level: part.difficulty_level ?? null,
+                                stock_quantity: part.stock_quantity,
+                                technical_metadata: null,
+                                category: part.category
+                                  ? {
+                                      id: '',
+                                      name: part.category.name,
+                                      icon: null,
+                                      slug: '',
+                                    }
+                                  : null,
+                              };
+                              return <PartCard key={part.id} part={adapted as any} index={idx} />;
+                            })}
+                        </div>
+
+                        <div className="flex justify-center mt-6">
+                          <button
+                            onClick={() => navigate(`/catalogue?scooter=${selectedScooter.scooter_model.id}`)}
+                            className="bg-green-700 hover:bg-green-800 text-white rounded-xl px-6 py-3 font-bold text-sm flex items-center gap-2 transition-colors shadow-md hover:shadow-lg"
+                          >
+                            Voir toutes les pièces compatibles →
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </section>
+                )}
+                </>
               )}
             </motion.div>
           ) : activeTab === 'orders' ? (
