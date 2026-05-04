@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare } from 'lucide-react';
+import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare, Wallpaper } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
@@ -26,6 +26,8 @@ import { useOrderConversations } from '@/hooks/useOrderMessages';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
+import GarageBackground from '@/components/garage/GarageBackground';
+import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
@@ -77,6 +79,7 @@ const Garage = () => {
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
   const updateNickname = useUpdateNickname();
   const updatePersonalDescription = useUpdatePersonalDescription();
   
@@ -145,7 +148,8 @@ const Garage = () => {
     : '';
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden overflow-x-hidden studio-luxury-bg watermark-brand pb-24 md:pb-0">
+    <div className="relative h-screen flex flex-col overflow-hidden overflow-x-hidden pb-24 md:pb-0">
+      <GarageBackground />
       <SEO noindex title="Mon Garage" description="Gérez votre garage et vos trottinettes." />
       <Header />
       
@@ -214,6 +218,14 @@ const Garage = () => {
               <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
                 <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
               </p>
+              <button
+                onClick={() => setThemePickerOpen(true)}
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 hover:bg-white/80 transition-colors flex-shrink-0"
+                title="Changer le fond"
+                aria-label="Changer le fond du garage"
+              >
+                <Wallpaper className="w-4 h-4 text-carbon/70" />
+              </button>
               <CompactPerformanceWidget 
                 points={profile?.performance_points || 0}
                 displayName={profile?.display_name || 'Rider'}
@@ -561,6 +573,9 @@ const Garage = () => {
         open={quickAddOpen}
         onOpenChange={setQuickAddOpen}
       />
+
+      {/* Theme Picker Sheet */}
+      <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
 };
