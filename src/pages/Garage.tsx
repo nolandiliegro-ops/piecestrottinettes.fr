@@ -505,6 +505,9 @@ const Garage = () => {
         </motion.button>
       )}
 
+      {/* Wallpaper FAB — secondary, to the LEFT of Plus FAB */}
+      <WallpaperFAB onClick={() => setThemePickerOpen(true)} />
+
       {/* Quick Add Modification Dialog */}
       <QuickAddModificationDialog
         open={quickAddOpen}
