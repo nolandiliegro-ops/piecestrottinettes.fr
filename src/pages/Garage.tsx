@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare, Wallpaper } from 'lucide-react';
+import { Loader2, Trophy, Package, ShoppingBag, Plus, MessageSquare, Wallpaper, UserPlus } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import GarageScooterCarousel from '@/components/garage/GarageScooterCarousel';
@@ -28,6 +28,8 @@ import { cn } from '@/lib/utils';
 import { getXPLevel } from '@/lib/xpLevels';
 import GarageBackground from '@/components/garage/GarageBackground';
 import ThemePickerSheet from '@/components/garage/ThemePickerSheet';
+import RiderAvatar from '@/components/garage/RiderAvatar';
+import RiderProfileEditDialog from '@/components/garage/RiderProfileEditDialog';
 
 // Compact Performance Widget for header - Mobile optimized
 const CompactPerformanceWidget = ({ points, displayName }: { points: number; displayName: string }) => {
@@ -80,6 +82,7 @@ const Garage = () => {
   const [showDescriptionModal, setShowDescriptionModal] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
+  const [profileEditOpen, setProfileEditOpen] = useState(false);
   const updateNickname = useUpdateNickname();
   const updatePersonalDescription = useUpdatePersonalDescription();
   
@@ -215,9 +218,23 @@ const Garage = () => {
 
             {/* User info - Ultra compact on mobile */}
             <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
-              <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
-                <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-              </p>
+              <button
+                onClick={() => setProfileEditOpen(true)}
+                className="group flex items-center gap-2 min-w-0 hover:opacity-80 transition"
+                title="Modifier mon profil rider"
+                aria-label="Modifier mon profil rider"
+              >
+                {profile?.avatar_url ? (
+                  <RiderAvatar url={profile.avatar_url} name={profile?.display_name} size="sm" />
+                ) : (
+                  <span className="flex items-center gap-1 text-[10px] md:text-xs text-mineral/70 italic px-2 py-1 rounded-full bg-white/40 border border-mineral/20">
+                    <UserPlus className="w-3 h-3" /> Photo
+                  </span>
+                )}
+                <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
+                  <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
+                </p>
+              </button>
               <button
                 onClick={() => setThemePickerOpen(true)}
                 className="flex items-center justify-center w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 hover:bg-white/80 transition-colors flex-shrink-0"
@@ -575,6 +592,7 @@ const Garage = () => {
       />
 
       {/* Theme Picker Sheet */}
+      <RiderProfileEditDialog open={profileEditOpen} onOpenChange={setProfileEditOpen} />
       <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
     </div>
   );
