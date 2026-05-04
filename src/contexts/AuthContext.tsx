@@ -7,6 +7,7 @@ interface Profile {
   id: string;
   display_name: string | null;
   performance_points: number;
+  active_theme_key: string | null;
   created_at: string;
   updated_at: string;
 }
