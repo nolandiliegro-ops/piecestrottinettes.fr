@@ -38,6 +38,7 @@ interface GarageScooterCarouselProps {
   onDelete?: () => void;
   className?: string;
   mobileCleanMode?: boolean;
+  floating?: boolean;
 }
 
 const slideVariants = {
