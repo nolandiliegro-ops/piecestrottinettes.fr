@@ -82,13 +82,6 @@ function App() {
                 </GarageErrorBoundary>
               </ProtectedRoute>
             } />
-            <Route path="/garage-preview" element={
-              <ProtectedRoute>
-                <GarageErrorBoundary>
-                  <GaragePreview />
-                </GarageErrorBoundary>
-              </ProtectedRoute>
-            } />
             <Route path="/profile" element={
               <ProtectedRoute>
                 <Profile />
