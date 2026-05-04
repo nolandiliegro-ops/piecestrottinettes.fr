@@ -168,30 +168,42 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
       {/* HERO Image Container — Ultra-Premium */}
       <div 
         className={cn(
-          "relative rounded-3xl overflow-hidden shadow-2xl border border-white/10",
+          "relative overflow-hidden",
+          floating
+            ? "rounded-none border-0 shadow-none bg-transparent"
+            : "rounded-3xl shadow-2xl border border-white/10",
           mobileCleanMode ? "h-[360px] md:h-[500px]" : "h-[360px] md:h-[500px] lg:h-[550px]"
         )}
-        style={{
-          background: 'radial-gradient(ellipse 120% 80% at 50% 40%, rgba(147,181,161,0.08) 0%, rgba(58,58,58,1) 60%)',
-        }}
+        style={
+          floating
+            ? undefined
+            : {
+                background:
+                  'radial-gradient(ellipse 120% 80% at 50% 40%, rgba(147,181,161,0.08) 0%, rgba(58,58,58,1) 60%)',
+              }
+        }
       >
         {/* Garage floor texture */}
-        <div 
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage: 'url(/garage-floor.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+        {!floating && (
+          <div 
+            className="absolute inset-0 opacity-15"
+            style={{
+              backgroundImage: 'url(/garage-floor.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        )}
 
         {/* Studio Spotlight radial overlay */}
-        <div 
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 60%)',
-          }}
-        />
+        {!floating && (
+          <div 
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 60%)',
+            }}
+          />
+        )}
 
         {/* Delete Button - Top Right */}
         <div className="absolute top-3 right-3 z-20">
