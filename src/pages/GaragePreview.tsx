@@ -278,6 +278,13 @@ const GaragePreview = () => {
                       >
                         Voir l'historique →
                       </button>
+                      <button
+                        onClick={() => setPartsOpen(true)}
+                        className="text-xs text-gray-700 underline hover:text-gray-900 self-center mt-1 transition-colors"
+                        aria-label="Voir les pièces compatibles avec cette trottinette"
+                      >
+                        Voir les pièces compatibles →
+                      </button>
                     </div>
                   </section>
 
