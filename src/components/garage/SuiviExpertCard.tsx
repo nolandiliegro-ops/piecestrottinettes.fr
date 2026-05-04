@@ -1,11 +1,4 @@
-import {
-  Wrench,
-  CircleDollarSign,
-  Zap,
-  Timer,
-  Activity,
-  Loader2,
-} from 'lucide-react';
+import { Wrench, CircleDollarSign, Zap, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUserTotalInvested } from '@/hooks/useUserStats';
 import { useUpdateLastMaintenance } from '@/hooks/useUpdateLastMaintenance';
