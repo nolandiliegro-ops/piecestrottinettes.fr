@@ -154,6 +154,10 @@ const GaragePreview = () => {
                 <div className="flex items-center justify-center py-20">
                   <Loader2 className="w-8 h-8 animate-spin text-gray-700" />
                 </div>
+              ) : !selectedScooter || !selectedScooter.scooter_model ? (
+                <div className="flex items-center justify-center min-h-[400px]">
+                  <Loader2 className="w-8 h-8 animate-spin text-green-700" />
+                </div>
               ) : scooterCount === 0 ? (
                 <div className="flex flex-col items-center justify-center text-center py-12 max-w-md mx-auto">
                   <div
