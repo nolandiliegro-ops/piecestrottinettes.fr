@@ -174,10 +174,10 @@ const GarageThemesManager = () => {
   };
 
   const askDelete = async (t: GarageTheme) => {
-    const { count } = await supabase
+    const { count } = await (supabase as any)
       .from('profiles')
       .select('id', { count: 'exact', head: true })
-      .eq('active_theme_key' as any, t.key);
+      .eq('active_theme_key', t.key);
     setUsersUsingDeleted(count ?? 0);
     setDeleteTarget(t);
   };
