@@ -76,58 +76,38 @@ const SuiviExpertCard = ({
       </div>
 
       {/* BOUTON MARQUER COMME RÉVISÉE */}
-      <button
-        type="button"
-        disabled={isPending}
-        aria-label={
-          isPending
-            ? 'Enregistrement de la révision en cours'
-            : 'Marquer la trottinette comme révisée'
-        }
-        aria-busy={isPending}
-        onClick={() => markRevised(garageId)}
-        className={cn(
-          'w-full bg-green-700 hover:bg-green-800',
-          'disabled:bg-green-700/60 disabled:cursor-not-allowed',
-          'text-white rounded-xl py-3.5',
-          'font-bold text-sm tracking-wide',
-          'flex items-center justify-center gap-2',
-          'transition-colors mb-4'
-        )}
-      >
-        {isPending ? (
-          <>
-            <Loader2 className="w-4 h-4 animate-spin" />
-            En cours...
-          </>
-        ) : (
-          <>
-            <Wrench className="w-4 h-4" />
-            Marquer comme révisée
-          </>
-        )}
-      </button>
-
-      {/* FOOTER MINI-STATS */}
-      <div className="flex items-center justify-around gap-2 rounded-full bg-white/40 px-4 py-2.5">
-        <div className="flex items-center gap-2 text-sm font-bold text-gray-900">
-          <div className="w-[22px] h-[22px] rounded-full bg-orange-600 grid place-items-center">
-            <Zap size={11} className="text-white" />
-          </div>
-          <span>{voltage ?? '—'} V</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm font-bold text-gray-900">
-          <div className="w-[22px] h-[22px] rounded-full bg-blue-500 grid place-items-center">
-            <Timer size={11} className="text-white" />
-          </div>
-          <span>{amperage ?? '—'} A</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm font-bold text-gray-900">
-          <div className="w-[22px] h-[22px] rounded-full bg-green-700 grid place-items-center">
-            <Activity size={11} className="text-white" />
-          </div>
-          <span>{powerWatts ?? '—'} W</span>
-        </div>
+      <div className="flex justify-center">
+        <button
+          type="button"
+          disabled={isPending}
+          aria-label={
+            isPending
+              ? 'Enregistrement de la révision en cours'
+              : 'Marquer la trottinette comme révisée'
+          }
+          aria-busy={isPending}
+          onClick={() => markRevised(garageId)}
+          className={cn(
+            'bg-green-700 hover:bg-green-800',
+            'disabled:bg-green-700/60 disabled:cursor-not-allowed',
+            'text-white rounded-xl px-6 py-2.5 max-w-xs w-full',
+            'font-bold text-sm tracking-wide',
+            'flex items-center justify-center gap-2',
+            'transition-colors'
+          )}
+        >
+          {isPending ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              En cours...
+            </>
+          ) : (
+            <>
+              <Wrench className="w-4 h-4" />
+              Marquer comme révisée
+            </>
+          )}
+        </button>
       </div>
     </div>
   );
