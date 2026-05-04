@@ -261,22 +261,12 @@ const GaragePreview = () => {
                         onNext={handleNext}
                       />
                       <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 max-w-[90%] pointer-events-none">
-                        {(() => {
-                          const brand = (model?.brand ?? '').trim();
-                          const name = (model?.name ?? '').trim();
-                          const dedup =
-                            brand.length > 0 &&
-                            name.toLowerCase().startsWith(brand.toLowerCase());
-                          const displayName = dedup || !brand ? name : `${brand} ${name}`;
-                          return (
-                            <ScooterIdPill
-                              brand={undefined}
-                              modelName={displayName}
-                              year={null}
-                              nickname={selectedScooter.nickname}
-                            />
-                          );
-                        })()}
+                        <ScooterIdPill
+                          brand={model?.brand}
+                          modelName={model?.name}
+                          year={null}
+                          nickname={selectedScooter.nickname}
+                        />
                       </div>
                     </div>
 
