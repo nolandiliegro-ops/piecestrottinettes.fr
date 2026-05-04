@@ -421,6 +421,54 @@ export type Database = {
           },
         ]
       }
+      garage_themes: {
+        Row: {
+          created_at: string
+          description: string | null
+          display_order: number
+          id: string
+          image_url: string
+          is_active: boolean
+          key: string
+          name: string
+          price_eur: number | null
+          required_xp: number
+          thumbnail_url: string | null
+          unlock_type: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          display_order?: number
+          id?: string
+          image_url: string
+          is_active?: boolean
+          key: string
+          name: string
+          price_eur?: number | null
+          required_xp?: number
+          thumbnail_url?: string | null
+          unlock_type?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          display_order?: number
+          id?: string
+          image_url?: string
+          is_active?: boolean
+          key?: string
+          name?: string
+          price_eur?: number | null
+          required_xp?: number
+          thumbnail_url?: string | null
+          unlock_type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       order_items: {
         Row: {
           created_at: string
@@ -780,6 +828,7 @@ export type Database = {
       }
       profiles: {
         Row: {
+          active_theme_key: string | null
           created_at: string | null
           display_name: string | null
           id: string
@@ -787,6 +836,7 @@ export type Database = {
           updated_at: string | null
         }
         Insert: {
+          active_theme_key?: string | null
           created_at?: string | null
           display_name?: string | null
           id: string
@@ -794,6 +844,7 @@ export type Database = {
           updated_at?: string | null
         }
         Update: {
+          active_theme_key?: string | null
           created_at?: string | null
           display_name?: string | null
           id?: string
