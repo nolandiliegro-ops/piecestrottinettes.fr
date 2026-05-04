@@ -48,6 +48,20 @@ const ScooterIdPill = ({ brand, modelName, year, nickname, className }: ScooterI
   if (hasNickname) ariaParts.push(`surnom ${nickname}`);
   const ariaLabel = ariaParts.join(' ');
 
+  // Collapse défensif des mots consécutifs dupliqués (case-insensitive).
+  // Couvre data-clean ("Dualtron" + "Dualtron City") ET data-polluée
+  // (name="Dualtron Dualtron City" avec brand vide ou identique).
+  const collapseDuplicateWords = (s: string) => {
+    const words = s.split(/\s+/).filter(Boolean);
+    return words
+      .filter((w, i) => i === 0 || w.toLowerCase() !== words[i - 1].toLowerCase())
+      .join(' ');
+  };
+
+  const rawTitle = hasBrandModel
+    ? collapseDuplicateWords(`${brand} ${modelName}`)
+    : (modelName?.trim() || brand?.trim() || 'TROTTINETTE');
+
   return (
     <div
       role="status"
@@ -55,7 +69,7 @@ const ScooterIdPill = ({ brand, modelName, year, nickname, className }: ScooterI
       className={cn(pillBase, className)}
     >
       <span className="font-black text-sm md:text-base tracking-tight text-gray-900 truncate">
-        {hasBrandModel ? `${brand} ${modelName}` : 'TROTTINETTE'}
+        {rawTitle}
         {hasYear && (
           <>
             {' '}

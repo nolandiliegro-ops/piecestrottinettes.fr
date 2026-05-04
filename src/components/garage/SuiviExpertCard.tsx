@@ -1,4 +1,8 @@
+import { useState } from 'react';
 import { Wrench, CircleDollarSign, Zap, Loader2 } from 'lucide-react';
+import { format, formatDistanceToNow } from 'date-fns';
+import { fr } from 'date-fns/locale';
+import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 import { useUserTotalInvested } from '@/hooks/useUserStats';
 import { useUpdateLastMaintenance } from '@/hooks/useUpdateLastMaintenance';
@@ -9,19 +13,38 @@ export type SuiviExpertCardProps = {
   voltage?: number | null;
   amperage?: number | null;
   powerWatts?: number | null;
+  lastMaintenanceDate?: string | null;
   className?: string;
 };
 
 const SuiviExpertCard = ({
   garageId,
   performancePoints,
-  voltage,
-  amperage,
-  powerWatts,
+  lastMaintenanceDate,
   className,
 }: SuiviExpertCardProps) => {
   const { totalInvested, isLoading } = useUserTotalInvested();
   const { mutate: markRevised, isPending } = useUpdateLastMaintenance();
+  const [justRevised, setJustRevised] = useState(false);
+
+  const handleRevise = () => {
+    markRevised(garageId, {
+      onSuccess: () => {
+        // Écrase le toast par défaut du hook ("Révision enregistrée") pour éviter le doublon
+        toast.dismiss();
+        toast.success(
+          `✅ Trottinette marquée comme révisée le ${format(new Date(), 'dd/MM/yyyy à HH:mm', { locale: fr })}`,
+          { id: 'revise-success' }
+        );
+        setJustRevised(true);
+        window.setTimeout(() => setJustRevised(false), 3000);
+      },
+    });
+  };
+
+  const lastRevisionLabel = lastMaintenanceDate
+    ? `Dernière révision : il y a ${formatDistanceToNow(new Date(lastMaintenanceDate), { locale: fr })}`
+    : 'Aucune révision enregistrée';
 
   return (
     <div
@@ -51,14 +74,17 @@ const SuiviExpertCard = ({
         <div className="bg-white/55 border border-white/60 rounded-2xl p-3.5 md:p-4">
           <div className="flex items-center gap-1.5 mb-1">
             <CircleDollarSign size={12} className="text-gray-500" />
-            <span className="text-[11px] font-semibold text-gray-500">
-              Total investi
+            <span className="text-[11px] font-semibold text-gray-500 leading-tight">
+              Total investi (toutes trottinettes)
             </span>
           </div>
           <div className="font-black text-2xl md:text-3xl tracking-tight text-gray-900 leading-none">
             {isLoading ? '—' : Math.round(totalInvested)}
             <span className="text-lg opacity-60 ml-0.5">€</span>
           </div>
+          <p className="text-[10px] italic text-gray-500 mt-1">
+            Détail par trottinette à venir
+          </p>
         </div>
 
         {/* POINTS COCKPIT */}
@@ -75,6 +101,11 @@ const SuiviExpertCard = ({
         </div>
       </div>
 
+      {/* DERNIÈRE RÉVISION */}
+      <p className="text-center text-xs text-gray-600 mb-3">
+        {lastRevisionLabel}
+      </p>
+
       {/* BOUTON MARQUER COMME RÉVISÉE */}
       <div className="flex justify-center">
         <button
@@ -86,7 +117,7 @@ const SuiviExpertCard = ({
               : 'Marquer la trottinette comme révisée'
           }
           aria-busy={isPending}
-          onClick={() => markRevised(garageId)}
+          onClick={handleRevise}
           className={cn(
             'bg-green-700 hover:bg-green-800',
             'disabled:bg-green-700/60 disabled:cursor-not-allowed',
@@ -101,6 +132,8 @@ const SuiviExpertCard = ({
               <Loader2 className="w-4 h-4 animate-spin" />
               En cours...
             </>
+          ) : justRevised ? (
+            <>✓ Révisée !</>
           ) : (
             <>
               <Wrench className="w-4 h-4" />
