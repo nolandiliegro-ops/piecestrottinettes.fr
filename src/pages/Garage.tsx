@@ -139,96 +139,12 @@ const Garage = () => {
       <main className="flex-1 pt-20 lg:pt-24 px-4 lg:px-6 pb-4 overflow-hidden">
         <div className="h-full flex flex-col max-w-[1920px] mx-auto w-full">
           
-          {/* Header Row with Tabs - Stacks on mobile */}
-          <motion.div 
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-4 shrink-0"
-          >
-            {/* Tabs - Segmented control iOS style, always 3 cols */}
-            <div className="grid grid-cols-3 gap-1 w-full md:w-auto md:max-w-md bg-carbon/[0.04] rounded-full p-1">
-              {/* Tab: Mon Garage */}
-              <button
-                onClick={() => setActiveTab('garage')}
-                className={cn(
-                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'garage'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <Package className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Garage</span>
-              </button>
-
-              {/* Tab: Mes Commandes */}
-              <button
-                onClick={() => setActiveTab('orders')}
-                className={cn(
-                  "flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'orders'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <ShoppingBag className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Commandes</span>
-              </button>
-
-              {/* Tab: Messages */}
-              <button
-                onClick={() => setActiveTab('messages')}
-                className={cn(
-                  "relative flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs md:text-sm transition-all min-h-[40px]",
-                  activeTab === 'messages'
-                    ? "bg-white text-carbon shadow-sm"
-                    : "text-carbon/50 hover:text-carbon"
-                )}
-              >
-                <MessageSquare className="w-4 h-4 shrink-0" />
-                <span className="font-medium">Messages</span>
-                {totalUnread > 0 && (
-                  <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
-                    {totalUnread > 9 ? '9+' : totalUnread}
-                  </span>
-                )}
-              </button>
-            </div>
-
-            {/* User info - Ultra compact on mobile */}
-            <div className="flex items-center justify-between md:justify-end gap-2 md:gap-4 min-w-0 max-w-full">
-              <button
-                onClick={() => setProfileEditOpen(true)}
-                className="group flex items-center gap-2 min-w-0 hover:opacity-80 transition"
-                title="Modifier mon profil rider"
-                aria-label="Modifier mon profil rider"
-              >
-                {profile?.avatar_url ? (
-                  <RiderAvatar url={profile.avatar_url} name={profile?.display_name} size="sm" />
-                ) : (
-                  <span className="flex items-center gap-1 text-[10px] md:text-xs text-mineral/70 italic px-2 py-1 rounded-full bg-white/40 border border-mineral/20">
-                    <UserPlus className="w-3 h-3" /> Photo
-                  </span>
-                )}
-                <p className="text-carbon/60 text-xs md:text-sm truncate min-w-0">
-                  <span className="text-mineral font-medium">{profile?.display_name || 'Rider'}</span>
-                </p>
-              </button>
-              <button
-                onClick={() => setThemePickerOpen(true)}
-                className="flex items-center justify-center w-9 h-9 rounded-full bg-white/60 backdrop-blur-xl border-[0.5px] border-mineral/20 hover:bg-white/80 transition-colors flex-shrink-0"
-                title="Changer le fond"
-                aria-label="Changer le fond du garage"
-              >
-                <Wallpaper className="w-4 h-4 text-carbon/70" />
-              </button>
-              <CompactPerformanceWidget 
-                points={profile?.performance_points || 0}
-                displayName={profile?.display_name || 'Rider'}
-              />
-            </div>
-          </motion.div>
+          {/* Header — tabs only (avatar + XP moved to RiderProfileCard, wallpaper moved to FAB) */}
+          <GarageHeaderBar
+            activeTab={activeTab}
+            onTabChange={setActiveTab}
+            totalUnread={totalUnread}
+          />
 
           {/* Tab Content with Animation */}
           <AnimatePresence mode="wait">
