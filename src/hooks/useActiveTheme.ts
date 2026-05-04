@@ -83,9 +83,9 @@ export const useActiveTheme = () => {
   const setTheme = useMutation({
     mutationFn: async (key: string) => {
       if (!user) throw new Error('Not authenticated');
-      const { error } = await supabase
+      const { error } = await (supabase as any)
         .from('profiles')
-        .update({ active_theme_key: key } as any)
+        .update({ active_theme_key: key })
         .eq('id', user.id);
       if (error) throw error;
     },
