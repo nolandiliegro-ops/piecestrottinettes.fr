@@ -21,6 +21,9 @@ import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
 import PartSuppliersManager from './PartSuppliersManager';
+import MultiPhotoGallery from './MultiPhotoGallery';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Images } from 'lucide-react';
 
 import type { Json } from '@/integrations/supabase/types';
 
