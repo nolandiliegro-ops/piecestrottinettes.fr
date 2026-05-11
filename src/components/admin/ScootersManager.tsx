@@ -966,6 +966,27 @@ const ScootersManager = () => {
                 </div>
               </CollapsibleContent>
             </Collapsible>
+
+            {editScooter && (
+              <Collapsible>
+                <CollapsibleTrigger asChild>
+                  <Button type="button" variant="outline" className="w-full justify-between">
+                    <span className="flex items-center gap-2">
+                      <Images className="w-4 h-4" />
+                      📸 Galerie multi-photos (nouveau)
+                    </span>
+                    <ChevronDown className="w-4 h-4" />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="pt-3">
+                  <MultiPhotoGallery
+                    entityType="scooter"
+                    entityId={editScooter.id}
+                    defaultAltBase={`${editScooter.brand?.name ?? ''} ${editScooter.name}`.trim()}
+                  />
+                </CollapsibleContent>
+              </Collapsible>
+            )}
           </div>
           <DialogFooter>
             <Button onClick={saveEdit} disabled={saving || !editValues.name.trim() || !editValues.brand_id} className="w-full bg-primary hover:bg-primary/90">
