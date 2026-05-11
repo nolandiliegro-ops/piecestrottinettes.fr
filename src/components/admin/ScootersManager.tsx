@@ -12,6 +12,8 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
+import MultiPhotoGallery from './MultiPhotoGallery';
+import { Images } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import Papa from 'papaparse';
