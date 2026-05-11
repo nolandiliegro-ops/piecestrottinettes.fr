@@ -755,6 +755,7 @@ export type Database = {
           estimated_install_time_minutes: number | null
           id: string
           image_url: string | null
+          images: Json
           is_featured: boolean | null
           meta_description: string | null
           meta_title: string | null
@@ -778,6 +779,7 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          images?: Json
           is_featured?: boolean | null
           meta_description?: string | null
           meta_title?: string | null
@@ -801,6 +803,7 @@ export type Database = {
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
+          images?: Json
           is_featured?: boolean | null
           meta_description?: string | null
           meta_title?: string | null
@@ -1003,6 +1006,7 @@ export type Database = {
           description: string | null
           id: string
           image_url: string | null
+          images: Json
           max_speed_kmh: number | null
           meta_description: string | null
           meta_title: string | null
@@ -1027,6 +1031,7 @@ export type Database = {
           description?: string | null
           id?: string
           image_url?: string | null
+          images?: Json
           max_speed_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
@@ -1051,6 +1056,7 @@ export type Database = {
           description?: string | null
           id?: string
           image_url?: string | null
+          images?: Json
           max_speed_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
