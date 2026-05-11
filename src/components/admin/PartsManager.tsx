@@ -21,6 +21,9 @@ import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
 import PartSuppliersManager from './PartSuppliersManager';
+import MultiPhotoGallery from './MultiPhotoGallery';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Images } from 'lucide-react';
 
 import type { Json } from '@/integrations/supabase/types';
 
@@ -773,6 +776,27 @@ const PartsManager = () => {
             className="data-[state=checked]:bg-mineral"
           />
         </div>
+
+        {isEdit && editPart && (
+          <Collapsible className="mt-2">
+            <CollapsibleTrigger asChild>
+              <Button type="button" variant="outline" className="w-full justify-between">
+                <span className="flex items-center gap-2">
+                  <Images className="w-4 h-4" />
+                  📸 Galerie multi-photos (nouveau)
+                </span>
+                <ChevronDown className="w-4 h-4" />
+              </Button>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="pt-3">
+              <MultiPhotoGallery
+                entityType="part"
+                entityId={editPart.id}
+                defaultAltBase={editPart.name}
+              />
+            </CollapsibleContent>
+          </Collapsible>
+        )}
       </TabsContent>
 
       <TabsContent value="compat" className="space-y-4">
