@@ -56,6 +56,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
+  const primaryImage = getPrimaryImage(part.images, part.image_url, "");
   
   // Compatibility check with selected scooter
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
