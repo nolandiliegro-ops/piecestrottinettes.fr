@@ -416,11 +416,40 @@ const ScootersManager = () => {
 
   const getDisplayImage = (scooter: Scooter) => scooter.image_url || '/placeholder.svg';
 
+  const togglePublished = async (scooter: Scooter) => {
+    const newValue = !scooter.published;
+    setTogglingPublish(scooter.id);
+    // Optimistic update
+    setScooters(prev => prev.map(s => s.id === scooter.id ? { ...s, published: newValue } : s));
+    try {
+      const { error } = await supabase
+        .from('scooter_models')
+        .update({ published: newValue })
+        .eq('id', scooter.id);
+      if (error) throw error;
+      toast.success(newValue ? `"${scooter.name}" publiée` : `"${scooter.name}" passée en brouillon`);
+    } catch (error) {
+      console.error('Error toggling published:', error);
+      // Rollback
+      setScooters(prev => prev.map(s => s.id === scooter.id ? { ...s, published: !newValue } : s));
+      toast.error('Erreur lors du changement de statut');
+    } finally {
+      setTogglingPublish(null);
+    }
+  };
+
+  const publishedCount = scooters.filter(s => s.published).length;
+  const draftCount = scooters.length - publishedCount;
+
   const filteredScooters = scooters.filter(s => {
     const matchesSearch = s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (s.search_terms || '').toLowerCase().includes(searchQuery.toLowerCase());
     const matchesBrand = brandFilter === 'all' || s.brand_id === brandFilter;
-    return matchesSearch && matchesBrand;
+    const matchesPublished =
+      publishedFilter === 'all' ||
+      (publishedFilter === 'published' && s.published) ||
+      (publishedFilter === 'draft' && !s.published);
+    return matchesSearch && matchesBrand && matchesPublished;
   });
 
   if (loading) {
