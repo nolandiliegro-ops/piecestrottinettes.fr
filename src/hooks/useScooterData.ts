@@ -10,6 +10,7 @@ export interface CompatiblePart {
   description: string | null;
   price: number | null;
   image_url: string | null;
+  images?: import("@/lib/entityImage").ImageEntry[] | null;
   difficulty_level: number | null;
   stock_quantity: number | null;
   technical_metadata: Record<string, unknown> | null;
