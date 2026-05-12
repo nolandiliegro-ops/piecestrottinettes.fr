@@ -15,6 +15,7 @@ import {
 import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription,
 } from '@/components/ui/dialog';
+import { getPrimaryImage, getAllImages } from '@/lib/entityImage';
 
 const usePendingScooters = () => {
   return useQuery({
@@ -50,6 +51,8 @@ type ScooterRow = any;
 const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRow; open: boolean; onOpenChange: (v: boolean) => void }) => {
   const qc = useQueryClient();
   const [form, setForm] = useState<Record<string, any>>({});
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  const allImportedImages = getAllImages(scooter?.images, null);
 
   useEffect(() => {
     if (scooter) {
@@ -110,10 +113,41 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
         </DialogHeader>
 
         <div className="space-y-4">
-          {/* Image preview */}
+          {/* Photos importées (multi-photo system) */}
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Image URL</label>
+            <label className="text-xs text-[hsl(0_0%_55%)]">
+              Photos importées{allImportedImages.length > 0 ? ` (${allImportedImages.length})` : ''}
+            </label>
+            {allImportedImages.length === 0 ? (
+              <div className="h-20 bg-[hsl(0_0%_8%)] rounded flex items-center justify-center text-xs text-[hsl(0_0%_40%)]">
+                Aucune photo importée
+              </div>
+            ) : (
+              <div className="grid grid-cols-4 gap-2">
+                {allImportedImages.map((img, i) => (
+                  <button
+                    type="button"
+                    key={i}
+                    onClick={() => setLightboxUrl(img.url)}
+                    className="relative h-20 bg-[hsl(0_0%_8%)] rounded overflow-hidden hover:ring-2 hover:ring-primary transition"
+                  >
+                    <img src={img.url} alt={img.alt || `photo ${i + 1}`} className="w-full h-full object-contain p-1" />
+                    {img.is_primary && (
+                      <Badge className="absolute top-1 left-1 bg-emerald-600 text-white text-[8px] px-1 py-0">
+                        Principal
+                      </Badge>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Image URL legacy */}
+          <div className="space-y-1">
+            <label className="text-xs text-[hsl(0_0%_55%)]">Image URL legacy (optionnel)</label>
             <Input value={form.image_url ?? ''} onChange={set('image_url')} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs" />
+            <p className="text-[10px] text-[hsl(0_0%_40%)]">Champ historique. Le système multi-photos ci-dessus est prioritaire.</p>
             {form.image_url && (
               <div className="h-32 bg-[hsl(0_0%_6%)] rounded flex items-center justify-center mt-1">
                 <img src={form.image_url} alt="preview" className="h-full object-contain p-2" />
@@ -162,6 +196,18 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
           </Button>
         </DialogFooter>
       </DialogContent>
+
+      {/* Lightbox */}
+      <Dialog open={!!lightboxUrl} onOpenChange={(v) => !v && setLightboxUrl(null)}>
+        <DialogContent className="bg-[hsl(0_0%_6%)] border-[hsl(0_0%_18%)] max-w-4xl p-2">
+          <DialogHeader className="sr-only">
+            <DialogTitle>Aperçu photo</DialogTitle>
+          </DialogHeader>
+          {lightboxUrl && (
+            <img src={lightboxUrl} alt="aperçu" className="w-full h-auto max-h-[80vh] object-contain" />
+          )}
+        </DialogContent>
+      </Dialog>
     </Dialog>
   );
 };
@@ -259,16 +305,24 @@ const PendingScootersManager = () => {
         {pending.map((scooter: any) => {
           const sources = getSources(scooter.technical_signature);
           const isEditingImage = imageEditId === scooter.id;
+          const cardImages = getAllImages(scooter.images, scooter.image_url);
+          const cardPrimary = getPrimaryImage(scooter.images, scooter.image_url, '');
 
           return (
             <Card key={scooter.id} className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)] overflow-hidden">
               <CardContent className="p-0">
                 {/* Image */}
                 <div className="relative h-40 bg-[hsl(0_0%_8%)] flex items-center justify-center">
-                  {scooter.image_url ? (
-                    <img src={scooter.image_url} alt={scooter.name} className="h-full w-full object-contain p-4" />
+                  {cardPrimary ? (
+                    <img src={cardPrimary} alt={scooter.name} className="h-full w-full object-contain p-4" />
                   ) : (
                     <div className="text-[hsl(0_0%_25%)] text-4xl">🛴</div>
+                  )}
+                  {cardImages.length > 1 && (
+                    <Badge className="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] gap-1 backdrop-blur">
+                      <ImageIcon className="w-2.5 h-2.5" />
+                      +{cardImages.length - 1} photo{cardImages.length > 2 ? 's' : ''}
+                    </Badge>
                   )}
                   <Badge className="absolute top-2 left-2 bg-violet-600/90 text-white text-[10px] gap-1">
                     <Bot className="w-3 h-3" />Bot
