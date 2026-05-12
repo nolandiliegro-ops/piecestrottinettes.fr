@@ -51,6 +51,8 @@ type ScooterRow = any;
 const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRow; open: boolean; onOpenChange: (v: boolean) => void }) => {
   const qc = useQueryClient();
   const [form, setForm] = useState<Record<string, any>>({});
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  const allImportedImages = getAllImages(scooter?.images, null);
 
   useEffect(() => {
     if (scooter) {
