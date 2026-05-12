@@ -6,6 +6,7 @@ import ScooterCarouselSkeleton from "./hero/ScooterCarouselSkeleton";
 import CommandPanel from "./hero/CommandPanel";
 
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
+import { getPrimaryImage } from "@/lib/entityImage";
 
 interface HeroSectionProps {
   onActiveModelChange?: (slug: string | null, name: string | null, brandSlug: string | null) => void;
@@ -58,7 +59,11 @@ const HeroSection = ({ onActiveModelChange, compatiblePartsCount }: HeroSectionP
       name: model.name,
       brandId: model.brand?.slug || "",
       brand: model.brand?.name || "",
-      image: model.image_url || "/placeholder.svg",
+      image: getPrimaryImage(
+        (model as { images?: unknown }).images,
+        model.image_url,
+        "/placeholder.svg"
+      ),
       compatibleParts: model.compatible_parts_count || 0,
       voltage: model.voltage || 36,
       amperage: model.amperage || 12,

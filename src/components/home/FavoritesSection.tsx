@@ -5,6 +5,7 @@ import { useAuthContext } from "@/contexts/AuthContext";
 import { useUserGarage } from "@/hooks/useGarage";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { getPrimaryImage } from "@/lib/entityImage";
 
 // Images are now loaded from Supabase database
 
@@ -63,7 +64,11 @@ const FavoritesSection = () => {
           const scooterModel = item.scooter_model;
           if (!scooterModel) return null;
 
-          const imageSrc = scooterModel.image_url || "/placeholder.svg";
+          const imageSrc = getPrimaryImage(
+            (scooterModel as { images?: unknown }).images,
+            scooterModel.image_url,
+            "/placeholder.svg"
+          );
 
           return (
             <motion.div
