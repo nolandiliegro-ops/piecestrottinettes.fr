@@ -82,11 +82,22 @@ Deno.serve(async (req) => {
     }
 
     // 2. Upsert scooter models
-    const results = { inserted: 0, updated: 0, errors: [] as { name: string; error: string }[] };
+    const results = {
+      inserted: 0,
+      updated: 0,
+      errors: [] as { name: string; error: string }[],
+      rows: [] as { name: string; slug: string; id: string | null; status: "inserted" | "updated" | "skipped" | "error" }[],
+    };
 
     for (const scooter of scooters) {
       if (!scooter.name || !scooter.slug) {
         results.errors.push({ name: scooter.name || "unknown", error: "name and slug are required" });
+        results.rows.push({
+          name: scooter.name || "unknown",
+          slug: scooter.slug || "",
+          id: null,
+          status: "skipped",
+        });
         continue;
       }
 
@@ -112,23 +123,43 @@ Deno.serve(async (req) => {
         published: false, // Bot imports always start as drafts
       };
 
-      // Check if exists
+      // Check if exists BEFORE upsert to determine inserted vs updated
       const { data: existing } = await supabase
         .from("scooter_models")
         .select("id")
         .eq("slug", scooter.slug)
         .maybeSingle();
 
-      const { error: upsertError } = await supabase
+      const { data: upserted, error: upsertError } = await supabase
         .from("scooter_models")
-        .upsert(row, { onConflict: "slug" });
+        .upsert(row, { onConflict: "slug" })
+        .select("id")
+        .single();
 
-      if (upsertError) {
-        results.errors.push({ name: scooter.name, error: upsertError.message });
+      if (upsertError || !upserted) {
+        results.errors.push({ name: scooter.name, error: upsertError?.message || "upsert returned no row" });
+        results.rows.push({
+          name: scooter.name,
+          slug: scooter.slug,
+          id: null,
+          status: "error",
+        });
       } else if (existing) {
         results.updated++;
+        results.rows.push({
+          name: scooter.name,
+          slug: scooter.slug,
+          id: upserted.id,
+          status: "updated",
+        });
       } else {
         results.inserted++;
+        results.rows.push({
+          name: scooter.name,
+          slug: scooter.slug,
+          id: upserted.id,
+          status: "inserted",
+        });
       }
     }
 
