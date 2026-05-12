@@ -41,6 +41,7 @@ interface Scooter {
   brand: { name: string } | null;
   brand_id: string;
   technical_signature: Record<string, any> | null;
+  published: boolean;
 }
 
 const SIGNATURE_DEFAULTS: { key: string; label: string; type: 'select' | 'number' | 'text'; options?: string[] }[] = [
