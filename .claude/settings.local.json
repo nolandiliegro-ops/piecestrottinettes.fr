@@ -23,7 +23,11 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(node scripts/sync-parts.js --file scripts/data/pneus-wattiz.json)"
+      "Bash(node scripts/sync-parts.js --file scripts/data/pneus-wattiz.json)",
+      "Bash(git fetch *)",
+      "Bash(git stash *)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)"
     ]
   }
 }

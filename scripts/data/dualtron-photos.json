@@ -1,0 +1,51 @@
+{
+  "brandName": "Dualtron",
+  "scooters": [
+    {
+      "slug": "dualtron-storm-ltd-2025",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2021/06/Dualtron-Storm-Limited-V2.jpg",
+        "https://dualtron-shop.com/wp-content/uploads/2021/06/new-dualtron-storm-limited-2023-Rear.jpg",
+        "https://dualtron-shop.com/wp-content/uploads/2021/06/new-dualtron-storm-limited-2023.jpg"
+      ]
+    },
+    {
+      "slug": "dualtron-x2",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-4.jpeg",
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-3.jpeg",
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-7.jpeg"
+      ]
+    },
+    {
+      "slug": "dualtron-storm",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/dualtron-storm-new-2023.webp"
+      ]
+    },
+    {
+      "slug": "dualtron-victor-2025",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2025/01/Dualtron-Victor-Limited-Front.jpg"
+      ]
+    },
+    {
+      "slug": "dualtron-thunder-2",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Thunder-2.jpg"
+      ]
+    },
+    {
+      "slug": "dualtron-thunder-2-2025",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Thunder-2.jpg"
+      ]
+    },
+    {
+      "slug": "dualtron-ultra",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2020/05/dualtron-ultra-2-new-edition.jpg"
+      ]
+    }
+  ]
+}
