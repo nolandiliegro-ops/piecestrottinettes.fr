@@ -99,25 +99,33 @@ Deno.serve(async (req) => {
 
     log('start', `query="${query}" min=${minResults} max=${maxResults}`);
 
-    const userPrompt = `Trouve ${maxResults} photos officielles haute qualité de ${query}.
+    const userPrompt = `Ta mission : trouve ${maxResults} URLs directes d'images pour ${query}.
 
-Critères stricts :
-- Vue de côté ou 3/4 du produit
-- Largeur minimum 600px
-- URLs DIRECTES vers fichiers image (.jpg, .jpeg, .png, .webp) — JAMAIS une page HTML
-- Sites publics fiables : Unsplash, Wikipedia/Wikimedia, sites e-commerce ouverts (weebot.fr, mobility-urban.fr, maxblinker.fr, gyroroue-shop.fr), Amazon, sites de marques officielles
-- EXCLURE : Pinterest, Instagram, Facebook, pages Google Images, URLs avec ?session= ou ?token=
+Procédure obligatoire, suis ces étapes une par une.
 
-Stratégie : utilise web_search pour trouver des pages produits, puis extrait les URLs <img src="..."> qui pointent vers des fichiers .jpg/.png/.webp directs (souvent dans /wp-content/uploads/, /media/, /cdn/, /images/).
+ÉTAPE 1 : Fais 1 à 3 web_search avec ces requêtes :
+- "${query}"
+- "${query} site:weebot.fr OR site:mobilityurban.fr OR site:maxblinker.fr OR site:fnac.com"
+- "${query} photo product"
 
-Si tu ne trouves pas ${maxResults} URLs valides, renvoie celles que tu as (même 1 seule).
-Si tu n'en trouves AUCUNE, renvoie {"urls":[]}.
+ÉTAPE 2 : Dans les résultats de recherche, identifie les snippets qui mentionnent des images. Les URLs d'images se reconnaissent à leur extension .jpg .jpeg .png .webp.
 
-IMPORTANT — Format de sortie :
-Ta réponse finale DOIT être EXACTEMENT et UNIQUEMENT ce JSON brut, sans backticks, sans markdown, sans aucun texte avant ni après :
-{"urls":["https://...","https://..."]}
+ÉTAPE 3 : Si tu ne trouves pas directement des URLs d'images dans les snippets, cherche des URLs de pages produits e-commerce qui contiennent /product/ /produit/ /shop/ /trottinette/. Ces pages contiennent généralement des images <img src="..."> dans leur HTML.
 
-Ne fais AUCUN commentaire, AUCUNE introduction, AUCUNE explication. Juste le JSON.`;
+ÉTAPE 4 : Pour chaque URL d'image trouvée, vérifie qu'elle :
+- commence par https://
+- se termine par .jpg .jpeg .png ou .webp (avant les paramètres ?)
+- n'est PAS un placeholder, une icône ou un logo (largeur attendue minimum 600px)
+- n'a PAS de paramètres d'authentification (?token= ou ?session=)
+
+ÉTAPE 5 : Si vraiment tu n'arrives pas à trouver ${maxResults} URLs d'images directes, c'est OK : retourne ce que tu as trouvé, même 1 ou 2. Tu peux aussi proposer des URLs Unsplash en dernier recours, type https://images.unsplash.com/photo-...
+
+FORMAT DE SORTIE OBLIGATOIRE :
+Ta réponse finale doit être EXACTEMENT ce JSON, sans backticks, sans markdown, sans texte autour :
+{"urls":["https://...","https://...","https://..."]}
+
+Si vraiment AUCUNE URL trouvée :
+{"urls":[]}`;
 
     // 1. Appel Claude API
     const claudeRes = await fetchWithTimeout(ANTHROPIC_URL, GLOBAL_TIMEOUT_MS, {
@@ -129,9 +137,9 @@ Ne fais AUCUN commentaire, AUCUNE introduction, AUCUNE explication. Juste le JSO
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-5',
-        max_tokens: 1024,
+        max_tokens: 2048,
         temperature: 0,
-        tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 3 }],
+        tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }],
         messages: [{ role: 'user', content: userPrompt }],
       }),
     });
