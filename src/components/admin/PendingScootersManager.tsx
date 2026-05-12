@@ -97,6 +97,31 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
     onError: () => toast.error('Erreur lors de la sauvegarde'),
   });
 
+  const setPrimaryMutation = useMutation({
+    mutationFn: async (targetUrl: string) => {
+      const current = Array.isArray(scooter?.images) ? scooter.images : [];
+      if (current.length === 0) return;
+      const target = current.find((i: any) => i.url === targetUrl);
+      if (!target) return;
+      const others = current.filter((i: any) => i.url !== targetUrl);
+      const reordered = [
+        { ...target, is_primary: true, position: 0 },
+        ...others.map((i: any, idx: number) => ({ ...i, is_primary: false, position: idx + 1 })),
+      ];
+      const { error } = await supabase
+        .from('scooter_models')
+        .update({ images: reordered })
+        .eq('id', scooter.id);
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['pending-scooters'] });
+      qc.invalidateQueries({ queryKey: ['scooter_models'] });
+      toast.success('Photo principale mise à jour');
+    },
+    onError: () => toast.error('Erreur mise à jour photo principale'),
+  });
+
   const field = (label: string, key: string, type = 'text') => (
     <div className="space-y-1">
       <label className="text-xs text-[hsl(0_0%_55%)]">{label}</label>
@@ -125,19 +150,33 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
             ) : (
               <div className="grid grid-cols-4 gap-2">
                 {allImportedImages.map((img, i) => (
-                  <button
-                    type="button"
+                  <div
                     key={i}
-                    onClick={() => setLightboxUrl(img.url)}
-                    className="relative h-20 bg-[hsl(0_0%_8%)] rounded overflow-hidden hover:ring-2 hover:ring-primary transition"
+                    className="relative group h-20 bg-[hsl(0_0%_8%)] rounded overflow-hidden hover:ring-2 hover:ring-primary transition"
                   >
-                    <img src={img.url} alt={img.alt || `photo ${i + 1}`} className="w-full h-full object-contain p-1" />
+                    <button
+                      type="button"
+                      onClick={() => setLightboxUrl(img.url)}
+                      className="block w-full h-full"
+                    >
+                      <img src={img.url} alt={img.alt || `photo ${i + 1}`} className="w-full h-full object-contain p-1" />
+                    </button>
                     {img.is_primary && (
                       <Badge className="absolute top-1 left-1 bg-emerald-600 text-white text-[8px] px-1 py-0">
                         Principal
                       </Badge>
                     )}
-                  </button>
+                    {!img.is_primary && (
+                      <button
+                        type="button"
+                        onClick={(e) => { e.stopPropagation(); setPrimaryMutation.mutate(img.url); }}
+                        disabled={setPrimaryMutation.isPending}
+                        className="absolute inset-x-1 bottom-1 opacity-0 group-hover:opacity-100 transition bg-black/80 hover:bg-primary text-white text-[9px] px-1.5 py-1 rounded backdrop-blur"
+                      >
+                        {setPrimaryMutation.isPending ? '...' : 'Définir principale'}
+                      </button>
+                    )}
+                  </div>
                 ))}
               </div>
             )}
@@ -219,8 +258,6 @@ const PendingScootersManager = () => {
   const [publishingId, setPublishingId] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [editingScooter, setEditingScooter] = useState<ScooterRow | null>(null);
-  const [imageEditId, setImageEditId] = useState<string | null>(null);
-  const [imageUrlDraft, setImageUrlDraft] = useState('');
 
   const publishMutation = useMutation({
     mutationFn: async (id: string) => {
@@ -252,14 +289,6 @@ const PendingScootersManager = () => {
     onError: () => toast.error('Erreur lors de la publication groupée'),
   });
 
-  const imageUpdateMutation = useMutation({
-    mutationFn: async ({ id, url }: { id: string; url: string }) => {
-      const { error } = await supabase.from('scooter_models').update({ image_url: url || null }).eq('id', id);
-      if (error) throw error;
-    },
-    onSuccess: () => { queryClient.invalidateQueries({ queryKey: ['pending-scooters'] }); toast.success('Image mise à jour'); setImageEditId(null); },
-    onError: () => toast.error("Erreur lors de la mise à jour de l'image"),
-  });
 
   if (isLoading) return <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-primary" /></div>;
 
@@ -304,7 +333,6 @@ const PendingScootersManager = () => {
       <div className="grid gap-4 sm:grid-cols-2">
         {pending.map((scooter: any) => {
           const sources = getSources(scooter.technical_signature);
-          const isEditingImage = imageEditId === scooter.id;
           const cardImages = getAllImages(scooter.images, scooter.image_url);
           const cardPrimary = getPrimaryImage(scooter.images, scooter.image_url, '');
 
@@ -327,31 +355,17 @@ const PendingScootersManager = () => {
                   <Badge className="absolute top-2 left-2 bg-violet-600/90 text-white text-[10px] gap-1">
                     <Bot className="w-3 h-3" />Bot
                   </Badge>
-                  {/* Quick image edit toggle */}
+                  {/* Open edit dialog */}
                   <Button
                     size="icon"
                     variant="ghost"
                     className="absolute top-2 right-2 h-7 w-7 bg-black/50 hover:bg-black/70 text-white"
-                    onClick={() => { setImageEditId(isEditingImage ? null : scooter.id); setImageUrlDraft(scooter.image_url || ''); }}
+                    onClick={() => setEditingScooter(scooter)}
+                    title="Éditer la fiche"
                   >
                     <ImageIcon className="w-3.5 h-3.5" />
                   </Button>
                 </div>
-
-                {/* Inline image URL editor */}
-                {isEditingImage && (
-                  <div className="flex gap-1.5 px-3 py-2 bg-[hsl(0_0%_9%)]">
-                    <Input
-                      value={imageUrlDraft}
-                      onChange={e => setImageUrlDraft(e.target.value)}
-                      placeholder="https://..."
-                      className="bg-[hsl(0_0%_6%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-7 text-xs flex-1"
-                    />
-                    <Button size="sm" className="h-7 px-2 bg-primary text-primary-foreground text-xs" onClick={() => imageUpdateMutation.mutate({ id: scooter.id, url: imageUrlDraft })}>
-                      {imageUpdateMutation.isPending ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
-                    </Button>
-                  </div>
-                )}
 
                 {/* Info */}
                 <div className="p-4 space-y-3">
