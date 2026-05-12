@@ -50,6 +50,7 @@ export const usePartBySlug = (slug: string | undefined) => {
           stock_quantity,
           difficulty_level,
           image_url,
+          images,
           youtube_video_id,
           technical_metadata,
           estimated_install_time_minutes,
