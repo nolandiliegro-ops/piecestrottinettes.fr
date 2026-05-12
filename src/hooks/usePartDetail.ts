@@ -72,7 +72,7 @@ export const usePartBySlug = (slug: string | undefined) => {
       return {
         ...data,
         category: data.categories,
-      } as PartDetail;
+      } as unknown as PartDetail;
     },
     enabled: !!slug,
   });
