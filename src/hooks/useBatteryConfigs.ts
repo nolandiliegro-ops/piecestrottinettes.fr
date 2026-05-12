@@ -18,6 +18,7 @@ export const useBatteryConfigs = (scooterSlug: string | null) => {
         .from('scooter_models')
         .select('id')
         .eq('slug', scooterSlug)
+        .eq('published', true)
         .maybeSingle();
       
       if (scooterError || !scooterData) {

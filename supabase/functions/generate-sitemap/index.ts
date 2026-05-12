@@ -31,7 +31,7 @@ Deno.serve(async (req) => {
     // Fetch parts and scooter models in parallel
     const [partsRes, scootersRes] = await Promise.all([
       supabase.from("parts").select("slug, updated_at"),
-      supabase.from("scooter_models").select("slug, created_at").order("created_at", { ascending: false }),
+      supabase.from("scooter_models").select("slug, created_at").eq("published", true).order("created_at", { ascending: false }),
     ]);
 
     const parts = partsRes.data || [];

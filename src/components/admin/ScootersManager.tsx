@@ -10,6 +10,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
+import { Switch } from '@/components/ui/switch';
+import { Badge } from '@/components/ui/badge';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
 import MultiPhotoGallery from './MultiPhotoGallery';
@@ -39,6 +41,7 @@ interface Scooter {
   brand: { name: string } | null;
   brand_id: string;
   technical_signature: Record<string, any> | null;
+  published: boolean;
 }
 
 const SIGNATURE_DEFAULTS: { key: string; label: string; type: 'select' | 'number' | 'text'; options?: string[] }[] = [
@@ -77,6 +80,8 @@ const ScootersManager = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [brandFilter, setBrandFilter] = useState<string>('all');
   const [importing, setImporting] = useState(false);
+  const [publishedFilter, setPublishedFilter] = useState<'all' | 'published' | 'draft'>('all');
+  const [togglingPublish, setTogglingPublish] = useState<string | null>(null);
   const csvInputRef = useRef<HTMLInputElement>(null);
 
   // Quick Add state
@@ -99,6 +104,7 @@ const ScootersManager = () => {
     description: '', meta_title: '', meta_description: '', affiliate_link: '',
     year: '', search_terms: '',
     technical_signature: {} as Record<string, any>,
+    published: false,
   });
   const [sigOpen, setSigOpen] = useState(false);
   const [customKey, setCustomKey] = useState('');
@@ -123,7 +129,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, brand:brands(name)')
         .order('name');
       if (error) throw error;
       setScooters((data as any) || []);
@@ -305,6 +311,7 @@ const ScootersManager = () => {
       affiliate_link: scooter.affiliate_link || '', year: scooter.year?.toString() || '',
       search_terms: scooter.search_terms || '',
       technical_signature: (scooter.technical_signature as Record<string, any>) || {},
+      published: !!scooter.published,
     });
     setSigOpen(false);
     setIsEditOpen(true);
@@ -337,6 +344,7 @@ const ScootersManager = () => {
           year: editValues.year ? parseInt(editValues.year) : null,
           search_terms: editValues.search_terms.trim() || null,
           technical_signature: cleanSig,
+          published: editValues.published,
         } as any)
         .eq('id', editScooter.id);
       if (error) throw error;
@@ -408,11 +416,40 @@ const ScootersManager = () => {
 
   const getDisplayImage = (scooter: Scooter) => scooter.image_url || '/placeholder.svg';
 
+  const togglePublished = async (scooter: Scooter) => {
+    const newValue = !scooter.published;
+    setTogglingPublish(scooter.id);
+    // Optimistic update
+    setScooters(prev => prev.map(s => s.id === scooter.id ? { ...s, published: newValue } : s));
+    try {
+      const { error } = await supabase
+        .from('scooter_models')
+        .update({ published: newValue })
+        .eq('id', scooter.id);
+      if (error) throw error;
+      toast.success(newValue ? `"${scooter.name}" publiée` : `"${scooter.name}" passée en brouillon`);
+    } catch (error) {
+      console.error('Error toggling published:', error);
+      // Rollback
+      setScooters(prev => prev.map(s => s.id === scooter.id ? { ...s, published: !newValue } : s));
+      toast.error('Erreur lors du changement de statut');
+    } finally {
+      setTogglingPublish(null);
+    }
+  };
+
+  const publishedCount = scooters.filter(s => s.published).length;
+  const draftCount = scooters.length - publishedCount;
+
   const filteredScooters = scooters.filter(s => {
     const matchesSearch = s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (s.search_terms || '').toLowerCase().includes(searchQuery.toLowerCase());
     const matchesBrand = brandFilter === 'all' || s.brand_id === brandFilter;
-    return matchesSearch && matchesBrand;
+    const matchesPublished =
+      publishedFilter === 'all' ||
+      (publishedFilter === 'published' && s.published) ||
+      (publishedFilter === 'draft' && !s.published);
+    return matchesSearch && matchesBrand && matchesPublished;
   });
 
   if (loading) {
@@ -632,6 +669,34 @@ const ScootersManager = () => {
         </div>
       </div>
 
+      {/* Published filter tabs */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <Button
+          variant={publishedFilter === 'all' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('all')}
+          className="gap-2"
+        >
+          Tous <Badge variant="secondary">{scooters.length}</Badge>
+        </Button>
+        <Button
+          variant={publishedFilter === 'published' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('published')}
+          className="gap-2"
+        >
+          Publiés <Badge variant="secondary" className="bg-green-600 text-white">{publishedCount}</Badge>
+        </Button>
+        <Button
+          variant={publishedFilter === 'draft' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('draft')}
+          className="gap-2"
+        >
+          Brouillons <Badge variant="secondary" className="bg-amber-600 text-white">{draftCount}</Badge>
+        </Button>
+      </div>
+
       <p className="text-sm text-muted-foreground">
         {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image
       </p>
@@ -644,6 +709,7 @@ const ScootersManager = () => {
               <TableHead className="w-16">Image</TableHead>
               <TableHead>Modèle</TableHead>
               <TableHead>Marque</TableHead>
+              <TableHead className="w-32">Statut</TableHead>
               <TableHead className="w-16">Année</TableHead>
               <TableHead className="w-20"><Zap className="w-3 h-3 inline mr-1" />W</TableHead>
               <TableHead className="w-16"><Battery className="w-3 h-3 inline mr-1" />V</TableHead>
@@ -683,6 +749,21 @@ const ScootersManager = () => {
                     </div>
                   </TableCell>
                   <TableCell className="text-muted-foreground">{scooter.brand?.name || '-'}</TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <Switch
+                        checked={!!scooter.published}
+                        onCheckedChange={() => togglePublished(scooter)}
+                        disabled={togglingPublish === scooter.id}
+                      />
+                      <Badge
+                        variant="secondary"
+                        className={scooter.published ? 'bg-green-600 text-white hover:bg-green-700' : 'bg-amber-600 text-white hover:bg-amber-700'}
+                      >
+                        {scooter.published ? 'PUBLIÉ' : 'BROUILLON'}
+                      </Badge>
+                    </div>
+                  </TableCell>
                   <TableCell className="text-muted-foreground">{scooter.year || '-'}</TableCell>
                   <TableCell className="text-primary font-medium">{scooter.power_watts || '-'}</TableCell>
                   <TableCell>{scooter.voltage || '-'}</TableCell>
@@ -792,6 +873,18 @@ const ScootersManager = () => {
                 <Label>YouTube ID</Label>
                 <Input value={editValues.youtube_video_id} onChange={(e) => setEditValues(prev => ({ ...prev, youtube_video_id: e.target.value }))} />
               </div>
+            </div>
+
+            {/* Published toggle */}
+            <div className="flex items-center justify-between p-4 border rounded-lg bg-muted/30">
+              <div>
+                <Label className="text-base">Publié sur le site</Label>
+                <p className="text-xs text-muted-foreground mt-1">Les visiteurs peuvent voir cette fiche</p>
+              </div>
+              <Switch
+                checked={editValues.published}
+                onCheckedChange={(v) => setEditValues(prev => ({ ...prev, published: v }))}
+              />
             </div>
 
             <div className="space-y-2">

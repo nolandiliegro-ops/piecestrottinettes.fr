@@ -161,6 +161,7 @@ Réponds UNIQUEMENT avec le JSON, rien d'autre.${confusionsBlock}`;
       const { data: ilikeResults } = await supabase
         .from("scooter_models")
         .select("id, name, slug, brand:brands(name)")
+        .eq("published", true)
         .or(`name.ilike.%${aiModel}%,search_terms.ilike.%${aiModel}%`)
         .limit(1);
 
