@@ -5,6 +5,7 @@ import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import PartFavoriteButton from "./PartFavoriteButton";
 import { CompatiblePart } from "@/hooks/useScooterData";
+import { getPrimaryImage } from "@/lib/entityImage";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
