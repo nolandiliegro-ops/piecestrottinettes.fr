@@ -24,6 +24,7 @@ export const useAllParts = (categoryId: string | null) => {
           description,
           price,
           image_url,
+          images,
           difficulty_level,
           stock_quantity,
           technical_metadata,
