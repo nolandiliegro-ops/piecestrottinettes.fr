@@ -99,6 +99,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
             slug,
             price,
             image_url,
+            images,
             stock_quantity,
             difficulty_level,
             technical_metadata,
