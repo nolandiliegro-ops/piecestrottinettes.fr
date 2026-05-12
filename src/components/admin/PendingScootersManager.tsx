@@ -113,10 +113,41 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
         </DialogHeader>
 
         <div className="space-y-4">
-          {/* Image preview */}
+          {/* Photos importées (multi-photo system) */}
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Image URL</label>
+            <label className="text-xs text-[hsl(0_0%_55%)]">
+              Photos importées{allImportedImages.length > 0 ? ` (${allImportedImages.length})` : ''}
+            </label>
+            {allImportedImages.length === 0 ? (
+              <div className="h-20 bg-[hsl(0_0%_8%)] rounded flex items-center justify-center text-xs text-[hsl(0_0%_40%)]">
+                Aucune photo importée
+              </div>
+            ) : (
+              <div className="grid grid-cols-4 gap-2">
+                {allImportedImages.map((img, i) => (
+                  <button
+                    type="button"
+                    key={i}
+                    onClick={() => setLightboxUrl(img.url)}
+                    className="relative h-20 bg-[hsl(0_0%_8%)] rounded overflow-hidden hover:ring-2 hover:ring-primary transition"
+                  >
+                    <img src={img.url} alt={img.alt || `photo ${i + 1}`} className="w-full h-full object-contain p-1" />
+                    {img.is_primary && (
+                      <Badge className="absolute top-1 left-1 bg-emerald-600 text-white text-[8px] px-1 py-0">
+                        Principal
+                      </Badge>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Image URL legacy */}
+          <div className="space-y-1">
+            <label className="text-xs text-[hsl(0_0%_55%)]">Image URL legacy (optionnel)</label>
             <Input value={form.image_url ?? ''} onChange={set('image_url')} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs" />
+            <p className="text-[10px] text-[hsl(0_0%_40%)]">Champ historique. Le système multi-photos ci-dessus est prioritaire.</p>
             {form.image_url && (
               <div className="h-32 bg-[hsl(0_0%_6%)] rounded flex items-center justify-center mt-1">
                 <img src={form.image_url} alt="preview" className="h-full object-contain p-2" />
