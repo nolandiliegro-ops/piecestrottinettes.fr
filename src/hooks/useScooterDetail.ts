@@ -59,6 +59,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
           name,
           slug,
           image_url,
+          images,
           power_watts,
           voltage,
           amperage,
