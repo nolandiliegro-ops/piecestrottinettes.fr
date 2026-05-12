@@ -104,6 +104,7 @@ const ScootersManager = () => {
     description: '', meta_title: '', meta_description: '', affiliate_link: '',
     year: '', search_terms: '',
     technical_signature: {} as Record<string, any>,
+    published: false,
   });
   const [sigOpen, setSigOpen] = useState(false);
   const [customKey, setCustomKey] = useState('');
