@@ -138,6 +138,7 @@ export const ScooterProvider = ({ children }: { children: ReactNode }) => {
             image_url,
             brand:brands(name)
           `)
+          .eq('published', true)
           .order('name');
 
         if (error) throw error;
