@@ -311,6 +311,7 @@ const ScootersManager = () => {
       affiliate_link: scooter.affiliate_link || '', year: scooter.year?.toString() || '',
       search_terms: scooter.search_terms || '',
       technical_signature: (scooter.technical_signature as Record<string, any>) || {},
+      published: !!scooter.published,
     });
     setSigOpen(false);
     setIsEditOpen(true);
