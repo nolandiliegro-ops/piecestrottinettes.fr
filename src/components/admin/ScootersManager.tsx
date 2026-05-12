@@ -749,6 +749,21 @@ const ScootersManager = () => {
                     </div>
                   </TableCell>
                   <TableCell className="text-muted-foreground">{scooter.brand?.name || '-'}</TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <Switch
+                        checked={!!scooter.published}
+                        onCheckedChange={() => togglePublished(scooter)}
+                        disabled={togglingPublish === scooter.id}
+                      />
+                      <Badge
+                        variant="secondary"
+                        className={scooter.published ? 'bg-green-600 text-white hover:bg-green-700' : 'bg-amber-600 text-white hover:bg-amber-700'}
+                      >
+                        {scooter.published ? 'PUBLIÉ' : 'BROUILLON'}
+                      </Badge>
+                    </div>
+                  </TableCell>
                   <TableCell className="text-muted-foreground">{scooter.year || '-'}</TableCell>
                   <TableCell className="text-primary font-medium">{scooter.power_watts || '-'}</TableCell>
                   <TableCell>{scooter.voltage || '-'}</TableCell>
