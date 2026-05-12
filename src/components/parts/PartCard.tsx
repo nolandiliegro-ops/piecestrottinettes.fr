@@ -79,15 +79,15 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       id: part.id,
       name: part.name,
       price: part.price,
-      image_url: part.image_url,
+      image_url: primaryImage || part.image_url,
       stock_quantity: part.stock_quantity || 0,
     });
 
     toast.success(
       <div className="flex items-center gap-3">
-        {part.image_url ? (
+        {primaryImage ? (
           <img 
-            src={part.image_url} 
+            src={primaryImage} 
             alt={part.name}
             className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
           />
