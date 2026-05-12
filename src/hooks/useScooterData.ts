@@ -284,6 +284,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
             description: part.description,
             price: part.price,
             image_url: part.image_url,
+            images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
             difficulty_level: part.difficulty_level,
             stock_quantity: part.stock_quantity,
             technical_metadata: part.technical_metadata as Record<string, unknown> | null,
