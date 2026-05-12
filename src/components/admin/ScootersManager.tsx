@@ -80,6 +80,8 @@ const ScootersManager = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [brandFilter, setBrandFilter] = useState<string>('all');
   const [importing, setImporting] = useState(false);
+  const [publishedFilter, setPublishedFilter] = useState<'all' | 'published' | 'draft'>('all');
+  const [togglingPublish, setTogglingPublish] = useState<string | null>(null);
   const csvInputRef = useRef<HTMLInputElement>(null);
 
   // Quick Add state
