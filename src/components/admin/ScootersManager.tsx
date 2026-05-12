@@ -875,6 +875,18 @@ const ScootersManager = () => {
               </div>
             </div>
 
+            {/* Published toggle */}
+            <div className="flex items-center justify-between p-4 border rounded-lg bg-muted/30">
+              <div>
+                <Label className="text-base">Publié sur le site</Label>
+                <p className="text-xs text-muted-foreground mt-1">Les visiteurs peuvent voir cette fiche</p>
+              </div>
+              <Switch
+                checked={editValues.published}
+                onCheckedChange={(v) => setEditValues(prev => ({ ...prev, published: v }))}
+              />
+            </div>
+
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label>Description</Label>
