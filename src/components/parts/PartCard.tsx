@@ -229,9 +229,9 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           </motion.div>
         )}
 
-        {part.image_url ? (
+        {primaryImage ? (
           <img 
-            src={part.image_url} 
+            src={primaryImage} 
             alt={part.name}
             loading="lazy"
             decoding="async"
