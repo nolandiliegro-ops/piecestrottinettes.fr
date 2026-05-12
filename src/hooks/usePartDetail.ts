@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import type { ImageEntry } from "@/lib/entityImage";
 
 export interface PartDetail {
   id: string;
@@ -10,6 +11,7 @@ export interface PartDetail {
   stock_quantity: number | null;
   difficulty_level: number | null;
   image_url: string | null;
+  images: ImageEntry[] | null;
   youtube_video_id: string | null;
   technical_metadata: Record<string, unknown> | null;
   estimated_install_time_minutes: number | null;
