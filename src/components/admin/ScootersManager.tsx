@@ -670,6 +670,35 @@ const ScootersManager = () => {
       </div>
 
       <p className="text-sm text-muted-foreground">
+      {/* Published filter tabs */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <Button
+          variant={publishedFilter === 'all' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('all')}
+          className="gap-2"
+        >
+          Tous <Badge variant="secondary">{scooters.length}</Badge>
+        </Button>
+        <Button
+          variant={publishedFilter === 'published' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('published')}
+          className="gap-2"
+        >
+          Publiés <Badge variant="secondary" className="bg-green-600 text-white">{publishedCount}</Badge>
+        </Button>
+        <Button
+          variant={publishedFilter === 'draft' ? 'default' : 'outline'}
+          size="sm"
+          onClick={() => setPublishedFilter('draft')}
+          className="gap-2"
+        >
+          Brouillons <Badge variant="secondary" className="bg-amber-600 text-white">{draftCount}</Badge>
+        </Button>
+      </div>
+
+      <p className="text-sm text-muted-foreground">
         {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image
       </p>
 
