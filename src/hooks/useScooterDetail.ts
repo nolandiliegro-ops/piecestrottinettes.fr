@@ -33,6 +33,7 @@ export interface ScooterCompatiblePart {
   slug: string;
   price: number | null;
   image_url: string | null;
+  images: ImageEntry[] | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
   technical_metadata: Record<string, unknown> | null;
