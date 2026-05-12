@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
-import { getPrimaryImage, type ImageEntry } from "@/lib/entityImage";
+import { getPrimaryImage } from "@/lib/entityImage";
 
 interface ScooterModel {
   id: string;
   name: string;
   slug: string;
   image_url: string | null;
-  images?: ImageEntry[] | null;
+  images?: unknown;
   compatible_parts_count: number | null;
   brand?: {
     id: string;
