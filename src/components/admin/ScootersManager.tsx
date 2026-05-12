@@ -10,6 +10,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
+import { Switch } from '@/components/ui/switch';
+import { Badge } from '@/components/ui/badge';
 import RichTextEditor from './RichTextEditor';
 import AIGenerateButton from './AIGenerateButton';
 import MultiPhotoGallery from './MultiPhotoGallery';
