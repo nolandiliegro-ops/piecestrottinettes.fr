@@ -113,7 +113,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
       // Flatten the response
       return (data || [])
         .map((item) => item.parts)
-        .filter(Boolean) as ScooterCompatiblePart[];
+        .filter(Boolean) as unknown as ScooterCompatiblePart[];
     },
     enabled: !!scooterId,
   });
