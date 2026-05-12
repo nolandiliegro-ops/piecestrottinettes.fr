@@ -709,6 +709,7 @@ const ScootersManager = () => {
               <TableHead className="w-16">Image</TableHead>
               <TableHead>Modèle</TableHead>
               <TableHead>Marque</TableHead>
+              <TableHead className="w-32">Statut</TableHead>
               <TableHead className="w-16">Année</TableHead>
               <TableHead className="w-20"><Zap className="w-3 h-3 inline mr-1" />W</TableHead>
               <TableHead className="w-16"><Battery className="w-3 h-3 inline mr-1" />V</TableHead>
