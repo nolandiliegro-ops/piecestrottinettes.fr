@@ -8,35 +8,67 @@ export type StatsRowProps = {
   className?: string;
 };
 
+type StatColor = {
+  rgb: string;
+  iconClass: string;
+};
+
+const COLORS: Record<'orange' | 'blue' | 'green', StatColor> = {
+  orange: { rgb: '255, 102, 0', iconClass: 'text-orange-300' },
+  blue: { rgb: '59, 130, 246', iconClass: 'text-blue-300' },
+  green: { rgb: '34, 197, 94', iconClass: 'text-emerald-300' },
+};
+
 type StatCardProps = {
   icon: LucideIcon;
   value: number | null | undefined;
   unit: 'VOLT' | 'AMP' | 'WATT';
-  gradient: string;
+  color: StatColor;
   ariaLabelFull: string;
   ariaLabelEmpty: string;
 };
 
-const StatCard = ({ icon: Icon, value, unit, gradient, ariaLabelFull, ariaLabelEmpty }: StatCardProps) => {
+const StatCard = ({ icon: Icon, value, unit, color, ariaLabelFull, ariaLabelEmpty }: StatCardProps) => {
   const isEmpty = value === null || value === undefined;
   const display = isEmpty ? '—' : value;
+  const { rgb, iconClass } = color;
 
   return (
     <div
       role="group"
       aria-label={isEmpty ? ariaLabelEmpty : ariaLabelFull}
-      className={cn(
-        'rounded-2xl p-4 md:p-5 text-white shadow-lg shadow-black/10 bg-gradient-to-br',
-        gradient
-      )}
+      className="stats-glass rounded-3xl p-4 md:p-5 relative overflow-hidden"
+      style={{
+        background:
+          'linear-gradient(135deg, rgba(0,0,0,0.15), rgba(0,0,0,0.05)), rgba(255,255,255,0.12)',
+        backdropFilter: 'blur(var(--stats-blur, 24px)) saturate(140%)',
+        WebkitBackdropFilter: 'blur(var(--stats-blur, 24px)) saturate(140%)',
+        border: '1px solid rgba(255,255,255,0.25)',
+        boxShadow:
+          '0 20px 50px -10px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+      }}
     >
-      <div className="w-8 h-8 rounded-full bg-white/25 grid place-items-center mb-3">
-        <Icon size={16} className="text-white" />
+      {/* Pastille icône — accent couleur */}
+      <div
+        className="w-8 h-8 rounded-full grid place-items-center mb-3"
+        style={{
+          background: `rgba(${rgb}, 0.20)`,
+          border: `1px solid rgba(${rgb}, 0.35)`,
+        }}
+      >
+        <Icon size={18} className={iconClass} />
       </div>
-      <p className="font-black text-3xl md:text-4xl leading-none tracking-tight">
+
+      {/* Chiffre principal — blanc + glow couleur subtil */}
+      <p
+        className="font-black text-3xl md:text-4xl leading-none tracking-tight text-white"
+        style={!isEmpty ? { textShadow: `0 0 24px rgba(${rgb}, 0.30)` } : undefined}
+      >
         {display}
       </p>
-      <p className="text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-85 mt-1">
+
+      {/* Label */}
+      <p className="text-[10px] md:text-xs font-semibold tracking-widest uppercase text-white/70 mt-1">
         {unit}
       </p>
     </div>
@@ -44,38 +76,50 @@ const StatCard = ({ icon: Icon, value, unit, gradient, ariaLabelFull, ariaLabelE
 };
 
 /**
- * StatsRow — 3 cartes statistiques (Volt / Amp / Watt) en gradient.
- * Composant statique pur, aucun appel data, aucune animation.
+ * StatsRow — 3 cartes statistiques (Volt / Amp / Watt) en glassmorphism premium.
+ * Aligné Phase A Rooftop Sunset : fond visible, accents couleur sur l'icône uniquement.
  * Empty state : "—" avec carte conservée (règle "zéro slot vide").
  */
 const StatsRow = ({ voltage, amperage, powerWatts, className }: StatsRowProps) => {
   return (
-    <div className={cn('grid grid-cols-3 gap-3 md:gap-4', className)}>
-      <StatCard
-        icon={Zap}
-        value={voltage}
-        unit="VOLT"
-        gradient="from-orange-500 to-orange-600"
-        ariaLabelFull={`Tension : ${voltage} volts`}
-        ariaLabelEmpty="Tension non renseignée"
-      />
-      <StatCard
-        icon={Timer}
-        value={amperage}
-        unit="AMP"
-        gradient="from-blue-400 to-blue-600"
-        ariaLabelFull={`Intensité : ${amperage} ampères`}
-        ariaLabelEmpty="Intensité non renseignée"
-      />
-      <StatCard
-        icon={Activity}
-        value={powerWatts}
-        unit="WATT"
-        gradient="from-green-500 to-green-600"
-        ariaLabelFull={`Puissance : ${powerWatts} watts`}
-        ariaLabelEmpty="Puissance non renseignée"
-      />
-    </div>
+    <>
+      <style>{`
+        @media (max-width: 767px) {
+          .stats-glass { --stats-blur: 12px; }
+        }
+        @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+          .stats-glass {
+            background: rgba(20, 20, 20, 0.55) !important;
+          }
+        }
+      `}</style>
+      <div className={cn('grid grid-cols-3 gap-3 md:gap-4', className)}>
+        <StatCard
+          icon={Zap}
+          value={voltage}
+          unit="VOLT"
+          color={COLORS.orange}
+          ariaLabelFull={`Tension : ${voltage} volts`}
+          ariaLabelEmpty="Tension non renseignée"
+        />
+        <StatCard
+          icon={Timer}
+          value={amperage}
+          unit="AMP"
+          color={COLORS.blue}
+          ariaLabelFull={`Intensité : ${amperage} ampères`}
+          ariaLabelEmpty="Intensité non renseignée"
+        />
+        <StatCard
+          icon={Activity}
+          value={powerWatts}
+          unit="WATT"
+          color={COLORS.green}
+          ariaLabelFull={`Puissance : ${powerWatts} watts`}
+          ariaLabelEmpty="Puissance non renseignée"
+        />
+      </div>
+    </>
   );
 };
 
