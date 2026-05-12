@@ -15,6 +15,7 @@ import {
 import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription,
 } from '@/components/ui/dialog';
+import { getPrimaryImage, getAllImages } from '@/lib/entityImage';
 
 const usePendingScooters = () => {
   return useQuery({
