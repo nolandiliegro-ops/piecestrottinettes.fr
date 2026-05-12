@@ -305,16 +305,24 @@ const PendingScootersManager = () => {
         {pending.map((scooter: any) => {
           const sources = getSources(scooter.technical_signature);
           const isEditingImage = imageEditId === scooter.id;
+          const cardImages = getAllImages(scooter.images, scooter.image_url);
+          const cardPrimary = getPrimaryImage(scooter.images, scooter.image_url, '');
 
           return (
             <Card key={scooter.id} className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)] overflow-hidden">
               <CardContent className="p-0">
                 {/* Image */}
                 <div className="relative h-40 bg-[hsl(0_0%_8%)] flex items-center justify-center">
-                  {scooter.image_url ? (
-                    <img src={scooter.image_url} alt={scooter.name} className="h-full w-full object-contain p-4" />
+                  {cardPrimary ? (
+                    <img src={cardPrimary} alt={scooter.name} className="h-full w-full object-contain p-4" />
                   ) : (
                     <div className="text-[hsl(0_0%_25%)] text-4xl">🛴</div>
+                  )}
+                  {cardImages.length > 1 && (
+                    <Badge className="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] gap-1 backdrop-blur">
+                      <ImageIcon className="w-2.5 h-2.5" />
+                      +{cardImages.length - 1} photo{cardImages.length > 2 ? 's' : ''}
+                    </Badge>
                   )}
                   <Badge className="absolute top-2 left-2 bg-violet-600/90 text-white text-[10px] gap-1">
                     <Bot className="w-3 h-3" />Bot
