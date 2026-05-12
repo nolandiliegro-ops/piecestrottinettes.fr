@@ -1,11 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import type { ImageEntry } from "@/lib/entityImage";
 
 export interface ScooterDetail {
   id: string;
   name: string;
   slug: string;
   image_url: string | null;
+  images: ImageEntry[] | null;
   power_watts: number | null;
   voltage: number | null;
   amperage: number | null;
