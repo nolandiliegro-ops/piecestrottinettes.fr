@@ -104,13 +104,20 @@ Deno.serve(async (req) => {
 Critères stricts :
 - Vue de côté ou 3/4 du produit
 - Largeur minimum 600px
-- URLs directes vers fichiers image (.jpg, .png, .webp) - JAMAIS de page HTML
-- Sites publics fiables : Unsplash, Wikipedia/Wikimedia, sites e-commerce ouverts (weebot.fr, mobility-urban.fr, maxblinker.fr, gyroroue-shop.fr), Amazon
-- EXCLURE absolument : Pinterest, Instagram, Facebook, Google Images directs (impossible à fetcher)
-- EXCLURE : URLs avec ?session=, ?token=, paramètres d'authentification
+- URLs DIRECTES vers fichiers image (.jpg, .jpeg, .png, .webp) — JAMAIS une page HTML
+- Sites publics fiables : Unsplash, Wikipedia/Wikimedia, sites e-commerce ouverts (weebot.fr, mobility-urban.fr, maxblinker.fr, gyroroue-shop.fr), Amazon, sites de marques officielles
+- EXCLURE : Pinterest, Instagram, Facebook, pages Google Images, URLs avec ?session= ou ?token=
 
-Réponds UNIQUEMENT avec un JSON valide ne contenant que ce format, sans aucun texte avant ou après :
-{ "urls": ["url1", "url2", "url3"] }`;
+Stratégie : utilise web_search pour trouver des pages produits, puis extrait les URLs <img src="..."> qui pointent vers des fichiers .jpg/.png/.webp directs (souvent dans /wp-content/uploads/, /media/, /cdn/, /images/).
+
+Si tu ne trouves pas ${maxResults} URLs valides, renvoie celles que tu as (même 1 seule).
+Si tu n'en trouves AUCUNE, renvoie {"urls":[]}.
+
+IMPORTANT — Format de sortie :
+Ta réponse finale DOIT être EXACTEMENT et UNIQUEMENT ce JSON brut, sans backticks, sans markdown, sans aucun texte avant ni après :
+{"urls":["https://...","https://..."]}
+
+Ne fais AUCUN commentaire, AUCUNE introduction, AUCUNE explication. Juste le JSON.`;
 
     // 1. Appel Claude API
     const claudeRes = await fetchWithTimeout(ANTHROPIC_URL, GLOBAL_TIMEOUT_MS, {
@@ -123,6 +130,7 @@ Réponds UNIQUEMENT avec un JSON valide ne contenant que ce format, sans aucun t
       body: JSON.stringify({
         model: 'claude-sonnet-4-5',
         max_tokens: 1024,
+        temperature: 0,
         tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 3 }],
         messages: [{ role: 'user', content: userPrompt }],
       }),
@@ -153,37 +161,72 @@ Réponds UNIQUEMENT avec un JSON valide ne contenant que ce format, sans aucun t
     log('claude_raw', JSON.stringify(claudeData).slice(0, 500));
     log('claude_usage', JSON.stringify(claudeData.usage ?? {}));
 
-    // 2. Extraire le DERNIER text block
-    const textBlocks = (claudeData.content ?? []).filter((c: { type: string }) => c.type === 'text');
+    // 2. Extraire TOUS les text blocks
+    const textBlocks: string[] = (claudeData.content ?? [])
+      .filter((c: { type: string; text?: string }) => c.type === 'text' && typeof c.text === 'string')
+      .map((c: { text: string }) => c.text);
+
     if (textBlocks.length === 0) {
       return new Response(
         JSON.stringify({ ok: false, error: 'parse_error', details: 'no text block in response' }),
         { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
       );
     }
-    const lastText: string = textBlocks[textBlocks.length - 1].text ?? '';
 
-    // 3. Parse JSON
-    const jsonMatch = lastText.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
-      log('parse_error', `no JSON found in: ${lastText.slice(0, 300)}`);
-      return new Response(
-        JSON.stringify({ ok: false, error: 'parse_error', details: 'no JSON in text block' }),
-        { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
-      );
+    textBlocks.forEach((t, i) => log('text_block_content', `#${i}: ${t.slice(0, 800)}`));
+
+    // 3. Parsing robuste : essayer plusieurs stratégies sur chaque bloc
+    function tryExtractUrls(text: string): string[] | null {
+      const md = text.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/i);
+      const obj = text.match(/\{[^{}]*"urls"[\s\S]*?\}/);
+      const arr = text.match(/\[\s*"https?:\/\/[\s\S]*?"\s*\]/);
+      const candidates: (string | null)[] = [
+        md?.[1] ?? null,
+        obj?.[0] ?? null,
+        arr?.[0] ? `{"urls":${arr[0]}}` : null,
+      ];
+      for (const candidate of candidates) {
+        if (!candidate) continue;
+        try {
+          const parsed = JSON.parse(candidate);
+          const urls = Array.isArray(parsed) ? parsed : parsed.urls;
+          if (Array.isArray(urls)) {
+            const clean = urls.filter(
+              (u): u is string => typeof u === 'string' && /^https?:\/\//.test(u),
+            );
+            if (clean.length > 0) return clean;
+          }
+        } catch { /* try next */ }
+      }
+      return null;
     }
-    let parsed: { urls?: string[] };
-    try {
-      parsed = JSON.parse(jsonMatch[0]);
-    } catch (e) {
-      return new Response(
-        JSON.stringify({ ok: false, error: 'parse_error', details: (e as Error).message }),
-        { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
-      );
+
+    let candidateUrls: string[] | null = null;
+    for (const t of textBlocks) {
+      candidateUrls = tryExtractUrls(t);
+      if (candidateUrls) break;
     }
-    const candidateUrls = (parsed.urls ?? [])
-      .filter((u): u is string => typeof u === 'string')
-      .slice(0, maxResults);
+
+    if (!candidateUrls) {
+      // Cas légitime : Claude a explicitement renvoyé {"urls":[]}
+      const emptySignal = textBlocks.some((t) => /"urls"\s*:\s*\[\s*\]/.test(t));
+      if (emptySignal) {
+        candidateUrls = [];
+      } else {
+        log('parse_error', `no JSON in any of ${textBlocks.length} blocks`);
+        return new Response(
+          JSON.stringify({
+            ok: false,
+            error: 'parse_error',
+            details: 'no parsable JSON in any text block',
+            raw_preview: textBlocks.map((t) => t.slice(0, 200)),
+          }),
+          { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+        );
+      }
+    }
+
+    candidateUrls = candidateUrls.slice(0, maxResults);
     log('candidates', `${candidateUrls.length} urls`, candidateUrls);
 
     // 4. Validation HEAD parallèle
