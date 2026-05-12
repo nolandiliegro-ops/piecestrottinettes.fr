@@ -77,7 +77,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
         .maybeSingle();
 
       if (error) throw error;
-      return data as ScooterDetail | null;
+      return data as unknown as ScooterDetail | null;
     },
     enabled: !!slug,
   });
