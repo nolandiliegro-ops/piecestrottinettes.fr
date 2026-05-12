@@ -74,6 +74,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
           brand:brands(id, name, slug, logo_url)
         `)
         .eq("slug", slug)
+        .eq("published", true)
         .maybeSingle();
 
       if (error) throw error;
