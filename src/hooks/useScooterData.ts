@@ -238,6 +238,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
             description,
             price,
             image_url,
+            images,
             difficulty_level,
             stock_quantity,
             technical_metadata,
