@@ -344,6 +344,7 @@ const ScootersManager = () => {
           year: editValues.year ? parseInt(editValues.year) : null,
           search_terms: editValues.search_terms.trim() || null,
           technical_signature: cleanSig,
+          published: editValues.published,
         } as any)
         .eq('id', editScooter.id);
       if (error) throw error;
