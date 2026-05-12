@@ -196,6 +196,18 @@ const EditScooterDialog = ({ scooter, open, onOpenChange }: { scooter: ScooterRo
           </Button>
         </DialogFooter>
       </DialogContent>
+
+      {/* Lightbox */}
+      <Dialog open={!!lightboxUrl} onOpenChange={(v) => !v && setLightboxUrl(null)}>
+        <DialogContent className="bg-[hsl(0_0%_6%)] border-[hsl(0_0%_18%)] max-w-4xl p-2">
+          <DialogHeader className="sr-only">
+            <DialogTitle>Aperçu photo</DialogTitle>
+          </DialogHeader>
+          {lightboxUrl && (
+            <img src={lightboxUrl} alt="aperçu" className="w-full h-auto max-h-[80vh] object-contain" />
+          )}
+        </DialogContent>
+      </Dialog>
     </Dialog>
   );
 };
