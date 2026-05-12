@@ -104,13 +104,20 @@ Deno.serve(async (req) => {
 Critères stricts :
 - Vue de côté ou 3/4 du produit
 - Largeur minimum 600px
-- URLs directes vers fichiers image (.jpg, .png, .webp) - JAMAIS de page HTML
-- Sites publics fiables : Unsplash, Wikipedia/Wikimedia, sites e-commerce ouverts (weebot.fr, mobility-urban.fr, maxblinker.fr, gyroroue-shop.fr), Amazon
-- EXCLURE absolument : Pinterest, Instagram, Facebook, Google Images directs (impossible à fetcher)
-- EXCLURE : URLs avec ?session=, ?token=, paramètres d'authentification
+- URLs DIRECTES vers fichiers image (.jpg, .jpeg, .png, .webp) — JAMAIS une page HTML
+- Sites publics fiables : Unsplash, Wikipedia/Wikimedia, sites e-commerce ouverts (weebot.fr, mobility-urban.fr, maxblinker.fr, gyroroue-shop.fr), Amazon, sites de marques officielles
+- EXCLURE : Pinterest, Instagram, Facebook, pages Google Images, URLs avec ?session= ou ?token=
 
-Réponds UNIQUEMENT avec un JSON valide ne contenant que ce format, sans aucun texte avant ou après :
-{ "urls": ["url1", "url2", "url3"] }`;
+Stratégie : utilise web_search pour trouver des pages produits, puis extrait les URLs <img src="..."> qui pointent vers des fichiers .jpg/.png/.webp directs (souvent dans /wp-content/uploads/, /media/, /cdn/, /images/).
+
+Si tu ne trouves pas ${maxResults} URLs valides, renvoie celles que tu as (même 1 seule).
+Si tu n'en trouves AUCUNE, renvoie {"urls":[]}.
+
+IMPORTANT — Format de sortie :
+Ta réponse finale DOIT être EXACTEMENT et UNIQUEMENT ce JSON brut, sans backticks, sans markdown, sans aucun texte avant ni après :
+{"urls":["https://...","https://..."]}
+
+Ne fais AUCUN commentaire, AUCUNE introduction, AUCUNE explication. Juste le JSON.`;
 
     // 1. Appel Claude API
     const claudeRes = await fetchWithTimeout(ANTHROPIC_URL, GLOBAL_TIMEOUT_MS, {
