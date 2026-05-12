@@ -1,11 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import type { ImageEntry } from "@/lib/entityImage";
 
 export interface ScooterDetail {
   id: string;
   name: string;
   slug: string;
   image_url: string | null;
+  images: ImageEntry[] | null;
   power_watts: number | null;
   voltage: number | null;
   amperage: number | null;
@@ -31,6 +33,7 @@ export interface ScooterCompatiblePart {
   slug: string;
   price: number | null;
   image_url: string | null;
+  images: ImageEntry[] | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
   technical_metadata: Record<string, unknown> | null;
@@ -56,6 +59,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
           name,
           slug,
           image_url,
+          images,
           power_watts,
           voltage,
           amperage,
@@ -73,7 +77,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
         .maybeSingle();
 
       if (error) throw error;
-      return data as ScooterDetail | null;
+      return data as unknown as ScooterDetail | null;
     },
     enabled: !!slug,
   });
@@ -95,6 +99,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
             slug,
             price,
             image_url,
+            images,
             stock_quantity,
             difficulty_level,
             technical_metadata,
@@ -108,7 +113,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
       // Flatten the response
       return (data || [])
         .map((item) => item.parts)
-        .filter(Boolean) as ScooterCompatiblePart[];
+        .filter(Boolean) as unknown as ScooterCompatiblePart[];
     },
     enabled: !!scooterId,
   });

@@ -24,6 +24,7 @@ export const useAllParts = (categoryId: string | null) => {
           description,
           price,
           image_url,
+          images,
           difficulty_level,
           stock_quantity,
           technical_metadata,
@@ -50,7 +51,8 @@ export const useAllParts = (categoryId: string | null) => {
       return (data || []).map((part) => ({
         ...part,
         technical_metadata: part.technical_metadata as Record<string, unknown> | null,
-      }));
+        images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
+      })) as CataloguePart[];
     },
   });
 };

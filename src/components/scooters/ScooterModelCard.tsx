@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
+import { getPrimaryImage } from "@/lib/entityImage";
 
 interface ScooterModel {
   id: string;
   name: string;
   slug: string;
   image_url: string | null;
+  images?: unknown;
   compatible_parts_count: number | null;
   brand?: {
     id: string;
@@ -21,7 +23,7 @@ interface ScooterModelCardProps {
 }
 
 const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
-  const displayImage = scooter.image_url || '/placeholder.svg';
+  const displayImage = getPrimaryImage(scooter.images, scooter.image_url, "/placeholder.svg");
 
   return (
     <motion.div

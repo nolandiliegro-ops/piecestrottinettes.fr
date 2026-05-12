@@ -10,6 +10,7 @@ export interface CompatiblePart {
   description: string | null;
   price: number | null;
   image_url: string | null;
+  images?: import("@/lib/entityImage").ImageEntry[] | null;
   difficulty_level: number | null;
   stock_quantity: number | null;
   technical_metadata: Record<string, unknown> | null;
@@ -237,6 +238,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
             description,
             price,
             image_url,
+            images,
             difficulty_level,
             stock_quantity,
             technical_metadata,
@@ -282,6 +284,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
             description: part.description,
             price: part.price,
             image_url: part.image_url,
+            images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
             difficulty_level: part.difficulty_level,
             stock_quantity: part.stock_quantity,
             technical_metadata: part.technical_metadata as Record<string, unknown> | null,

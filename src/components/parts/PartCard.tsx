@@ -5,6 +5,7 @@ import { forwardRef, MouseEvent } from "react";
 import DifficultyIndicator from "./DifficultyIndicator";
 import PartFavoriteButton from "./PartFavoriteButton";
 import { CompatiblePart } from "@/hooks/useScooterData";
+import { getPrimaryImage } from "@/lib/entityImage";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
@@ -55,6 +56,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
+  const primaryImage = getPrimaryImage(part.images, part.image_url, "");
   
   // Compatibility check with selected scooter
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
@@ -77,15 +79,15 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       id: part.id,
       name: part.name,
       price: part.price,
-      image_url: part.image_url,
+      image_url: primaryImage || part.image_url,
       stock_quantity: part.stock_quantity || 0,
     });
 
     toast.success(
       <div className="flex items-center gap-3">
-        {part.image_url ? (
+        {primaryImage ? (
           <img 
-            src={part.image_url} 
+            src={primaryImage} 
             alt={part.name}
             className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
           />
@@ -227,9 +229,9 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           </motion.div>
         )}
 
-        {part.image_url ? (
+        {primaryImage ? (
           <img 
-            src={part.image_url} 
+            src={primaryImage} 
             alt={part.name}
             loading="lazy"
             decoding="async"
