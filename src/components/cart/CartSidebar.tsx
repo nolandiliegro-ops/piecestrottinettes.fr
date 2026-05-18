@@ -176,12 +176,12 @@ const CartSidebar = () => {
                 <Button
                   onClick={handleCheckout}
                   disabled={isNavigating}
-                  className="relative w-full h-14 bg-carbon text-white font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="relative w-full h-14 bg-carbon text-white hover:bg-black font-display text-lg tracking-widest rounded-xl overflow-hidden group transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  {/* Luxury Glow Effect on Hover */}
-                  <span className="absolute inset-0 bg-gradient-to-r from-mineral/0 via-mineral/30 to-mineral/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Luxury Glow Effect on Hover — white shimmer */}
+                  <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/15 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                    boxShadow: 'inset 0 0 30px rgba(147, 181, 161, 0.3)'
+                    boxShadow: 'inset 0 0 30px rgba(255, 255, 255, 0.15)'
                   }} />
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     {isNavigating && <Loader2 className="w-4 h-4 animate-spin" />}
@@ -195,7 +195,7 @@ const CartSidebar = () => {
                 variant="outline"
                 onClick={handleSaveForLater}
                 disabled={isEmpty}
-                className="w-full border-mineral/30 text-mineral hover:bg-mineral/10 hover:text-mineral font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full font-medium disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Save className="w-4 h-4 mr-2" />
                 Sauvegarder pour plus tard

@@ -178,9 +178,9 @@ const ScooterCarousel = () => {
           </h2>
           <button
             onClick={() => navigate("/trottinettes")}
-            className="hidden sm:inline-flex items-center gap-1 text-sm font-semibold hover:underline"
+            className="hidden sm:inline-flex items-center gap-1 text-sm font-semibold underline decoration-1 underline-offset-4 hover:decoration-2"
             style={{
-              color: "#4A7C59",
+              color: "#1A1A1A",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
             }}
           >
@@ -328,14 +328,14 @@ const ScooterCarousel = () => {
                           aria-label={`Voir les pièces compatibles de ${s.name}`}
                           className="inline-flex items-center justify-center gap-1 min-h-[44px] px-2 rounded-lg text-white font-semibold text-sm transition-colors"
                           style={{
-                            backgroundColor: "#4A7C59",
+                            backgroundColor: "#1A1A1A",
                             fontFamily: "'Plus Jakarta Sans', sans-serif",
                           }}
                           onMouseEnter={(e) =>
-                            (e.currentTarget.style.backgroundColor = "#3A6449")
+                            (e.currentTarget.style.backgroundColor = "#000000")
                           }
                           onMouseLeave={(e) =>
-                            (e.currentTarget.style.backgroundColor = "#4A7C59")
+                            (e.currentTarget.style.backgroundColor = "#1A1A1A")
                           }
                         >
                           <span>Pièces</span>
@@ -359,17 +359,24 @@ const ScooterCarousel = () => {
                           style={{
                             backgroundColor: inGarage
                               ? "rgba(74,124,89,0.12)"
-                              : "#FF6600",
-                            color: inGarage ? "#4A7C59" : "white",
+                              : "#FFFFFF",
+                            color: inGarage ? "#4A7C59" : "#1A1A1A",
+                            border: inGarage
+                              ? "2px solid rgba(74,124,89,0.3)"
+                              : "2px solid #1A1A1A",
                             fontFamily: "'Plus Jakarta Sans', sans-serif",
                           }}
                           onMouseEnter={(e) => {
-                            if (!inGarage)
-                              e.currentTarget.style.backgroundColor = "#E55C00";
+                            if (!inGarage) {
+                              e.currentTarget.style.backgroundColor = "#1A1A1A";
+                              e.currentTarget.style.color = "white";
+                            }
                           }}
                           onMouseLeave={(e) => {
-                            if (!inGarage)
-                              e.currentTarget.style.backgroundColor = "#FF6600";
+                            if (!inGarage) {
+                              e.currentTarget.style.backgroundColor = "#FFFFFF";
+                              e.currentTarget.style.color = "#1A1A1A";
+                            }
                           }}
                         >
                           {inGarage ? (
@@ -453,7 +460,7 @@ const ScooterCarousel = () => {
               className="h-full rounded-full transition-[width] duration-200 ease-out"
               style={{
                 width: `${Math.max(8, Math.min(100, scrollState.progress * 100))}%`,
-                backgroundColor: "#4A7C59",
+                backgroundColor: "#1A1A1A",
               }}
             />
           </div>

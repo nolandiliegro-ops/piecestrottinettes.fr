@@ -554,12 +554,12 @@ const HeroSearchFirst = () => {
                     type="submit"
                     aria-label="Rechercher"
                     className="min-w-[56px] lg:min-w-[64px] min-h-[56px] lg:min-h-[64px] rounded-xl text-white flex items-center justify-center transition-colors shadow-md"
-                    style={{ backgroundColor: "#4A7C59" }}
+                    style={{ backgroundColor: "#1A1A1A" }}
                     onMouseEnter={(e) =>
-                      (e.currentTarget.style.backgroundColor = "#3A6449")
+                      (e.currentTarget.style.backgroundColor = "#000000")
                     }
                     onMouseLeave={(e) =>
-                      (e.currentTarget.style.backgroundColor = "#4A7C59")
+                      (e.currentTarget.style.backgroundColor = "#1A1A1A")
                     }
                   >
                     <ArrowRight
@@ -595,9 +595,9 @@ const HeroSearchFirst = () => {
                     <button
                       type="button"
                       onClick={() => navigate("/catalogue")}
-                      className="inline-flex items-center gap-1 text-sm font-semibold underline underline-offset-4"
+                      className="inline-flex items-center gap-1 text-sm font-semibold underline decoration-1 underline-offset-4 hover:decoration-2"
                       style={{
-                        color: "#4A7C59",
+                        color: "#1A1A1A",
                         fontFamily: "'Plus Jakarta Sans', sans-serif",
                       }}
                     >
@@ -641,9 +641,9 @@ const HeroSearchFirst = () => {
                               )}`
                             )
                           }
-                          className="text-xs lg:text-sm font-semibold inline-flex items-center gap-1 hover:underline"
+                          className="text-xs lg:text-sm font-semibold inline-flex items-center gap-1 underline decoration-1 underline-offset-4 hover:decoration-2"
                           style={{
-                            color: "#4A7C59",
+                            color: "#1A1A1A",
                             fontFamily: "'Plus Jakarta Sans', sans-serif",
                           }}
                         >
@@ -778,17 +778,17 @@ const HeroSearchFirst = () => {
                                     aria-label={`Voir les pièces de ${s.name}`}
                                     className="inline-flex items-center justify-center gap-1 min-h-[44px] px-3 rounded-lg text-white font-semibold text-sm transition-colors"
                                     style={{
-                                      backgroundColor: "#4A7C59",
+                                      backgroundColor: "#1A1A1A",
                                       fontFamily:
                                         "'Plus Jakarta Sans', sans-serif",
                                     }}
                                     onMouseEnter={(e) =>
                                       (e.currentTarget.style.backgroundColor =
-                                        "#3A6449")
+                                        "#000000")
                                     }
                                     onMouseLeave={(e) =>
                                       (e.currentTarget.style.backgroundColor =
-                                        "#4A7C59")
+                                        "#1A1A1A")
                                     }
                                   >
                                     Pièces
@@ -810,20 +810,27 @@ const HeroSearchFirst = () => {
                                     style={{
                                       backgroundColor: inGarage
                                         ? "rgba(74,124,89,0.12)"
-                                        : "#FF6600",
-                                      color: inGarage ? "#4A7C59" : "white",
+                                        : "#FFFFFF",
+                                      color: inGarage ? "#4A7C59" : "#1A1A1A",
+                                      border: inGarage
+                                        ? "2px solid rgba(74,124,89,0.3)"
+                                        : "2px solid #1A1A1A",
                                       fontFamily:
                                         "'Plus Jakarta Sans', sans-serif",
                                     }}
                                     onMouseEnter={(e) => {
-                                      if (!inGarage)
+                                      if (!inGarage) {
                                         e.currentTarget.style.backgroundColor =
-                                          "#E55C00";
+                                          "#1A1A1A";
+                                        e.currentTarget.style.color = "white";
+                                      }
                                     }}
                                     onMouseLeave={(e) => {
-                                      if (!inGarage)
+                                      if (!inGarage) {
                                         e.currentTarget.style.backgroundColor =
-                                          "#FF6600";
+                                          "#FFFFFF";
+                                        e.currentTarget.style.color = "#1A1A1A";
+                                      }
                                     }}
                                   >
                                     {inGarage ? (
@@ -1082,20 +1089,20 @@ const HeroSearchFirst = () => {
                         onClick={() =>
                           navigate(`/scooter/${selectedScooter.slug}`)
                         }
-                        className="mt-6 lg:mt-8 w-full inline-flex items-center justify-center gap-2 min-h-[52px] lg:min-h-[60px] px-5 rounded-xl text-white font-bold transition-colors"
+                        className="mt-6 lg:mt-8 w-full inline-flex items-center justify-center gap-2 min-h-[52px] lg:min-h-[60px] px-5 rounded-xl text-white font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
                         style={{
-                          backgroundColor: "#FF6600",
+                          backgroundColor: "#1A1A1A",
                           fontFamily: "'Anton', sans-serif",
                           letterSpacing: "0.04em",
                           fontSize: "16px",
                           textTransform: "uppercase",
-                          boxShadow: "0 8px 24px -6px rgba(255,102,0,0.55)",
+                          boxShadow: "0 8px 24px -6px rgba(0,0,0,0.35)",
                         }}
                         onMouseEnter={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#E55C00")
+                          (e.currentTarget.style.backgroundColor = "#000000")
                         }
                         onMouseLeave={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#FF6600")
+                          (e.currentTarget.style.backgroundColor = "#1A1A1A")
                         }
                       >
                         Voir toutes les {compatCount} pièces
@@ -1192,9 +1199,9 @@ const HeroSearchFirst = () => {
                     <button
                       type="button"
                       onClick={() => navigate("/catalogue")}
-                      className="inline-flex items-center gap-1 text-sm lg:text-base font-semibold underline underline-offset-4"
+                      className="inline-flex items-center gap-1 text-sm lg:text-base font-semibold underline decoration-1 underline-offset-4 hover:decoration-2"
                       style={{
-                        color: "#4A7C59",
+                        color: "#1A1A1A",
                         fontFamily: "'Plus Jakarta Sans', sans-serif",
                       }}
                     >
@@ -1221,17 +1228,11 @@ const HeroSearchFirst = () => {
                         onClick={() =>
                           navigate(`/scooter/${selectedScooter.slug}`)
                         }
-                        className="text-xs lg:text-sm font-semibold inline-flex items-center gap-1 hover:underline whitespace-nowrap"
+                        className="text-xs lg:text-sm font-semibold inline-flex items-center gap-1 underline decoration-1 underline-offset-4 hover:decoration-2 whitespace-nowrap"
                         style={{
-                          color: "#4A7C59",
+                          color: "#1A1A1A",
                           fontFamily: "'Plus Jakarta Sans', sans-serif",
                         }}
-                        onMouseEnter={(e) =>
-                          (e.currentTarget.style.color = "#3A6449")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.currentTarget.style.color = "#4A7C59")
-                        }
                       >
                         Voir tout ({compatCount})
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -1365,17 +1366,17 @@ const HeroSearchFirst = () => {
                                 onClick={(e) => handleAddPartToCart(part, e)}
                                 disabled={outOfStock}
                                 aria-label={`Ajouter ${part.name} au panier`}
-                                className="absolute bottom-3 right-3 w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-md"
-                                style={{ backgroundColor: "#FF6600" }}
+                                className="absolute bottom-3 right-3 w-10 h-10 rounded-full flex items-center justify-center text-white transition-all hover:scale-[1.05] active:scale-[0.95] disabled:opacity-40 disabled:cursor-not-allowed shadow-md"
+                                style={{ backgroundColor: "#1A1A1A" }}
                                 onMouseEnter={(e) => {
                                   if (!outOfStock)
                                     e.currentTarget.style.backgroundColor =
-                                      "#E55C00";
+                                      "#000000";
                                 }}
                                 onMouseLeave={(e) => {
                                   if (!outOfStock)
                                     e.currentTarget.style.backgroundColor =
-                                      "#FF6600";
+                                      "#1A1A1A";
                                 }}
                               >
                                 <Plus className="w-5 h-5" strokeWidth={2.5} />

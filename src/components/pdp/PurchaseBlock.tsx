@@ -144,7 +144,7 @@ const PurchaseBlock = ({
         <Button
           onClick={handleAddToCart}
           disabled={!isInStock || isAdding}
-          className="w-full h-14 bg-carbon hover:bg-carbon/90 text-white font-display text-lg uppercase tracking-widest rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(38,38,38,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-14 bg-carbon hover:bg-black text-white font-display text-lg uppercase tracking-widest rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,0,0,0.35)] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isAdding ? (
             <>
@@ -173,9 +173,7 @@ const PurchaseBlock = ({
           <Button
             onClick={() => setInstallDialogOpen(true)}
             variant="outline"
-            className="w-full h-12 border-2 border-mineral text-mineral hover:bg-mineral/10 
-                     font-display text-sm uppercase tracking-wider rounded-xl
-                     transition-all duration-300"
+            className="w-full h-12 font-display text-sm uppercase tracking-wider rounded-xl transition-all duration-300"
           >
             <Wrench className="w-5 h-5 mr-2" />
             J'ai installé cette pièce
