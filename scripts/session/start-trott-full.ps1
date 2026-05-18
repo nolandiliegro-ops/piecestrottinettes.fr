@@ -119,7 +119,14 @@ try {
 }
 
 Write-Host ""
-Write-Host "[>] Lancement de Claude Code..." -ForegroundColor Cyan
-Write-Host ""
+Write-Host "[>] Lancement de Claude Code dans une nouvelle fenetre..." -ForegroundColor Cyan
+try {
+    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$RepoPath'; claude"
+    Write-Host "[OK] Claude Code lance." -ForegroundColor Green
+} catch {
+    Write-Host "[ERREUR] Impossible de lancer Claude Code : $_" -ForegroundColor Red
+}
 
-claude
+Write-Host ""
+Write-Host "[OK] 2 terminaux ouverts. Fermeture du lanceur dans 3s..." -ForegroundColor Green
+Start-Sleep -Seconds 3

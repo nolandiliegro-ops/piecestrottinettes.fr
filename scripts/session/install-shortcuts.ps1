@@ -88,7 +88,7 @@ try {
     $WshShell = New-Object -ComObject WScript.Shell
     $shortcut = $WshShell.CreateShortcut($shortcutPath)
     $shortcut.TargetPath = "powershell.exe"
-    $shortcut.Arguments = '-NoExit -Command "start-trott"'
+    $shortcut.Arguments = '-NoExit -Command "start-trott-full"'
     $shortcut.WorkingDirectory = $RepoPath
     $shortcut.IconLocation = "powershell.exe,0"
     $shortcut.Description = "Steedy Dev - demarre une session sur piecestrottinettes.fr"
