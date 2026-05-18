@@ -108,6 +108,32 @@ $lastLocal = git log -1 HEAD --pretty=format:"%h  |  %an  |  %ar%n    %s"
 Write-Host "    $lastLocal" -ForegroundColor White
 Write-Host ""
 
+# --- Verification et liberation du port 8080 avant Vite ---
+Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
+$portConns = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue |
+             Where-Object { $_.State -eq 'Listen' }
+if (-not $portConns) {
+    Write-Host "[OK] Port 8080 libre" -ForegroundColor Green
+} else {
+    $pidList = $portConns | Select-Object -ExpandProperty OwningProcess | Sort-Object -Unique
+    Write-Host "[!] Port 8080 occupe par PID(s) $($pidList -join ', ') - liberation..." -ForegroundColor Yellow
+    foreach ($p in $pidList) {
+        if ($p -eq 0 -or $p -eq 4) { continue }
+        Stop-Process -Id $p -Force -ErrorAction SilentlyContinue
+    }
+    Start-Sleep -Seconds 1
+    $recheck = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue |
+               Where-Object { $_.State -eq 'Listen' }
+    if (-not $recheck) {
+        Write-Host "[OK] Port 8080 libere avec succes" -ForegroundColor Green
+    } else {
+        Write-Host "[ERREUR] Impossible de liberer le port 8080, ouvre Task Manager" -ForegroundColor Red
+        Start-Sleep -Seconds 5
+        exit 1
+    }
+}
+Write-Host ""
+
 # Lancer Vite dans une nouvelle fenetre
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
 Write-Host "[>] Lancement de Vite (npm run dev) dans une nouvelle fenetre..." -ForegroundColor Cyan

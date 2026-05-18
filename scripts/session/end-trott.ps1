@@ -34,6 +34,23 @@ function Write-Header {
 
 Write-Header
 
+# --- Arret propre du serveur Vite (port 8080) ---
+Write-Host "[i] Arret propre du serveur Vite (port 8080)..." -ForegroundColor Cyan
+$viteConns = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue |
+             Where-Object { $_.State -eq 'Listen' }
+if ($viteConns) {
+    $pidList = $viteConns | Select-Object -ExpandProperty OwningProcess | Sort-Object -Unique
+    foreach ($p in $pidList) {
+        if ($p -eq 0 -or $p -eq 4) { continue }
+        Stop-Process -Id $p -Force -ErrorAction SilentlyContinue
+    }
+    Start-Sleep -Seconds 1
+    Write-Host "[OK] Serveur Vite arrete proprement" -ForegroundColor Green
+} else {
+    Write-Host "[i] Aucun serveur Vite a arreter" -ForegroundColor DarkGray
+}
+Write-Host ""
+
 try {
     Set-Location -Path $RepoPath -ErrorAction Stop
 } catch {
