@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import { getBrandColors } from "@/contexts/ScooterContext";
 
 interface BrandWithCount {
   slug: string;
@@ -9,7 +9,16 @@ interface BrandWithCount {
   count: number;
 }
 
-const FEATURED_BRAND_SLUGS = ["dualtron", "kaabo", "ninebot", "kukirin", "segway"];
+const BRAND_CONFIG: Record<string, { color: string; tagline: string }> = {
+  dualtron: { color: "#FF6B35", tagline: "Performance" },
+  kaabo:    { color: "#1A1A1A", tagline: "Tout-terrain" },
+  segway:   { color: "#0066CC", tagline: "Urbain" },
+  xiaomi:   { color: "#FF6900", tagline: "Daily" },
+  kukirin:  { color: "#8B5CF6", tagline: "Gaming" },
+  ninebot:  { color: "#10B981", tagline: "Pliable" },
+};
+
+const FEATURED_BRAND_SLUGS = ["dualtron", "kaabo", "segway", "xiaomi", "kukirin", "ninebot"];
 
 const useBrandsWithCount = () =>
   useQuery({
@@ -29,17 +38,14 @@ const useBrandsWithCount = () =>
 
       const counts = new Map<string, number>();
       (models || []).forEach((m) => {
-        if (m.brand_id)
-          counts.set(m.brand_id, (counts.get(m.brand_id) || 0) + 1);
+        if (m.brand_id) counts.set(m.brand_id, (counts.get(m.brand_id) || 0) + 1);
       });
 
       return FEATURED_BRAND_SLUGS.map((slug) => {
         const brand = brands?.find((b) => b.slug === slug);
-        const displayName = brand?.name ||
-          slug.charAt(0).toUpperCase() + slug.slice(1);
         return {
           slug,
-          name: displayName,
+          name: brand?.name ?? slug.charAt(0).toUpperCase() + slug.slice(1),
           count: brand ? counts.get(brand.id) || 0 : 0,
         };
       });
@@ -52,91 +58,99 @@ const BrandGrid = () => {
   const { data: brands = [], isLoading } = useBrandsWithCount();
 
   return (
-    <section
-      className="px-4 py-10 lg:py-14"
-      style={{ backgroundColor: "#F5F0E8" }}
-    >
+    <section className="px-4 py-10 lg:py-14" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="mx-auto max-w-5xl">
-        <h2
-          className="text-3xl sm:text-4xl lg:text-5xl text-center mb-7 lg:mb-10"
-          style={{
-            fontFamily: "'Anton', sans-serif",
-            color: "#1A1A1A",
-            letterSpacing: "-0.01em",
-            textTransform: "uppercase",
-          }}
-        >
-          Choisis ta marque
-        </h2>
 
-        <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
+        {/* ── Header ── */}
+        <div className="flex items-end justify-between mb-7 lg:mb-10">
+          <div>
+            <p
+              className="text-[10px] font-bold uppercase tracking-[0.25em] mb-2"
+              style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            >
+              — OU EXPLORE PAR MARQUE
+            </p>
+            <h2
+              className="text-3xl lg:text-5xl leading-none tracking-tight uppercase"
+              style={{ fontFamily: "'Anton', sans-serif", color: "#1A1A1A" }}
+            >
+              Choisis ta marque
+            </h2>
+          </div>
+
+          <button
+            onClick={() => navigate("/catalogue")}
+            className="hidden lg:inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider underline underline-offset-4 hover:decoration-2 transition-all"
+            style={{ color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          >
+            Toutes les marques
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+        </div>
+
+        {/* ── Cards ── */}
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-3">
           {brands.map((brand) => {
-            const colors = getBrandColors(brand.slug);
+            const cfg = BRAND_CONFIG[brand.slug] ?? { color: "#6B7280", tagline: "" };
             return (
               <button
                 key={brand.slug}
                 onClick={() => navigate(`/catalogue?brand=${brand.slug}`)}
-                className="rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-200 p-4 lg:p-5 min-h-[88px] flex flex-col items-center justify-center border border-gray-100 hover:-translate-y-0.5"
-                style={{ minHeight: 88 }}
                 aria-label={`Voir les pièces ${brand.name}`}
+                className="group relative aspect-square rounded-2xl bg-white border border-black/10 p-4 flex flex-col justify-between overflow-hidden transition-all duration-200 hover:border-black hover:-translate-y-1 hover:shadow-xl text-left"
               >
-                <span className="inline-flex items-center gap-1.5">
+                {/* Cercle décoratif top-right */}
+                <div
+                  aria-hidden
+                  className="absolute top-0 right-0 w-16 h-16 rounded-full -mr-6 -mt-6 opacity-10 group-hover:opacity-20 transition-opacity duration-200"
+                  style={{ backgroundColor: cfg.color }}
+                />
+
+                {/* Pastille + tagline */}
+                <div className="relative z-10 flex items-center gap-1.5">
                   <span
-                    aria-hidden
-                    className="w-2 h-2 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: colors.accent }}
+                    className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: cfg.color }}
                   />
                   <span
-                    className="text-base lg:text-lg"
-                    style={{
-                      fontFamily: "'Anton', sans-serif",
-                      color: "#1A1A1A",
-                      letterSpacing: "0.02em",
-                      textTransform: "uppercase",
-                    }}
+                    className="text-[9px] font-bold uppercase tracking-wider"
+                    style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  >
+                    {cfg.tagline}
+                  </span>
+                </div>
+
+                {/* Nom marque + count */}
+                <div className="relative z-10">
+                  <p
+                    className="text-xl leading-none tracking-tight uppercase"
+                    style={{ fontFamily: "'Anton', sans-serif", color: "#1A1A1A" }}
                   >
                     {brand.name}
-                  </span>
-                </span>
-                <span
-                  className="text-xs lg:text-sm mt-1"
-                  style={{
-                    fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    color: "#6B7280",
-                  }}
-                >
-                  {isLoading
-                    ? "…"
-                    : `${brand.count} modèle${brand.count > 1 ? "s" : ""}`}
-                </span>
+                  </p>
+                  <p
+                    className="text-[11px] font-semibold mt-1"
+                    style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  >
+                    {isLoading
+                      ? "…"
+                      : `${brand.count} modèle${brand.count > 1 ? "s" : ""} dispo`}
+                  </p>
+                </div>
               </button>
             );
           })}
-
-          <button
-            onClick={() => navigate("/catalogue")}
-            className="rounded-2xl shadow-md hover:shadow-xl transition-all duration-200 p-4 lg:p-5 min-h-[88px] flex flex-col items-center justify-center text-white hover:-translate-y-0.5"
-            style={{ backgroundColor: "#000000", minHeight: 88 }}
-            aria-label="Voir toutes les marques"
-          >
-            <span
-              className="text-base lg:text-lg"
-              style={{
-                fontFamily: "'Anton', sans-serif",
-                letterSpacing: "0.02em",
-                textTransform: "uppercase",
-              }}
-            >
-              Autres
-            </span>
-            <span
-              className="text-xs lg:text-sm mt-1 text-white/70"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
-            >
-              Tout voir →
-            </span>
-          </button>
         </div>
+
+        {/* Mobile CTA */}
+        <button
+          onClick={() => navigate("/catalogue")}
+          className="mt-4 lg:hidden w-full py-3 rounded-lg text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-gray-900"
+          style={{ backgroundColor: "#000000", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+        >
+          Toutes les marques →
+        </button>
+
       </div>
     </section>
   );
