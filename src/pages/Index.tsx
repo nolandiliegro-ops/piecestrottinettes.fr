@@ -18,7 +18,7 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="min-h-screen"
+      className="min-h-screen relative overflow-hidden"
       style={{ backgroundColor: "#F5F0E8" }}
     >
       <SEO
@@ -27,9 +27,27 @@ const Index = () => {
         canonical="https://piecestrottinettes.fr/"
       />
 
+      <div
+        aria-hidden
+        className="absolute inset-x-0 top-[35%] pointer-events-none overflow-hidden z-0 select-none"
+      >
+        <span
+          className="block text-center whitespace-nowrap"
+          style={{
+            fontFamily: "'Anton', 'Plus Jakarta Sans', sans-serif",
+            fontSize: "clamp(80px, 12vw, 220px)",
+            fontWeight: 900,
+            letterSpacing: "-0.04em",
+            color: "rgba(26, 26, 26, 0.04)",
+          }}
+        >
+          PIECESTROTTINETTES
+        </span>
+      </div>
+
       <Header />
 
-      <main className="pt-16 lg:pt-20 pb-24 md:pb-0">
+      <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
         <HeroSearchFirst />
         <ExpertJourneySection />
         <BrandGrid />

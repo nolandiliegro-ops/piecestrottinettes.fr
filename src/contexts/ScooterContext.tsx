@@ -12,39 +12,46 @@ export interface BrandColorConfig {
 
 export const BRAND_COLORS: Record<string, BrandColorConfig> = {
   dualtron: {
-    accent: '#E63946',
-    bgClass: 'bg-[#E63946]/15',
-    textClass: 'text-[#E63946]',
-    borderClass: 'border-[#E63946]/30',
-    glowColor: 'rgba(230, 57, 70, 0.4)',
+    accent: '#DC2626',
+    bgClass: 'bg-[#DC2626]/15',
+    textClass: 'text-[#DC2626]',
+    borderClass: 'border-[#DC2626]/30',
+    glowColor: 'rgba(220, 38, 38, 0.4)',
   },
   ninebot: {
-    accent: '#10B981',
-    bgClass: 'bg-[#10B981]/15',
-    textClass: 'text-[#10B981]',
-    borderClass: 'border-[#10B981]/30',
-    glowColor: 'rgba(16, 185, 129, 0.4)',
+    accent: '#4A7C59',
+    bgClass: 'bg-[#4A7C59]/15',
+    textClass: 'text-[#4A7C59]',
+    borderClass: 'border-[#4A7C59]/30',
+    glowColor: 'rgba(74, 124, 89, 0.4)',
   },
   segway: {
-    accent: '#10B981',
-    bgClass: 'bg-[#10B981]/15',
-    textClass: 'text-[#10B981]',
-    borderClass: 'border-[#10B981]/30',
-    glowColor: 'rgba(16, 185, 129, 0.4)',
+    accent: '#1E3A8A',
+    bgClass: 'bg-[#1E3A8A]/15',
+    textClass: 'text-[#1E3A8A]',
+    borderClass: 'border-[#1E3A8A]/30',
+    glowColor: 'rgba(30, 58, 138, 0.4)',
   },
   xiaomi: {
-    accent: '#3B82F6',
-    bgClass: 'bg-[#3B82F6]/15',
-    textClass: 'text-[#3B82F6]',
-    borderClass: 'border-[#3B82F6]/30',
-    glowColor: 'rgba(59, 130, 246, 0.4)',
+    accent: '#0066CC',
+    bgClass: 'bg-[#0066CC]/15',
+    textClass: 'text-[#0066CC]',
+    borderClass: 'border-[#0066CC]/30',
+    glowColor: 'rgba(0, 102, 204, 0.4)',
   },
   kaabo: {
-    accent: '#F97316',
-    bgClass: 'bg-[#F97316]/15',
-    textClass: 'text-[#F97316]',
-    borderClass: 'border-[#F97316]/30',
-    glowColor: 'rgba(249, 115, 22, 0.4)',
+    accent: '#FF6600',
+    bgClass: 'bg-[#FF6600]/15',
+    textClass: 'text-[#FF6600]',
+    borderClass: 'border-[#FF6600]/30',
+    glowColor: 'rgba(255, 102, 0, 0.4)',
+  },
+  kukirin: {
+    accent: '#1A1A1A',
+    bgClass: 'bg-[#1A1A1A]/15',
+    textClass: 'text-[#1A1A1A]',
+    borderClass: 'border-[#1A1A1A]/30',
+    glowColor: 'rgba(26, 26, 26, 0.4)',
   },
 };
 
@@ -61,10 +68,10 @@ const DEFAULT_BRAND_COLOR: BrandColorConfig = {
 const normalizeBrandSlug = (brandName: string): string => {
   if (!brandName) return '';
   const lower = brandName.toLowerCase();
-  // Handle "Segway-Ninebot" or "Segway Ninebot" variations
-  if (lower.includes('segway') || lower.includes('ninebot')) {
-    return 'ninebot';
-  }
+  // "Segway-Ninebot" / "Segway Ninebot" → Segway prend la priorité
+  // (Segway et Ninebot ont désormais des couleurs distinctes)
+  if (lower.includes('segway')) return 'segway';
+  if (lower.includes('ninebot')) return 'ninebot';
   return lower.replace(/[^a-z0-9]/g, '');
 };
 

@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useAddToGarage, useUserGarage } from "@/hooks/useGarage";
 import FavoriteButton from "@/components/garage/FavoriteButton";
-import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { useSelectedScooter, getBrandColors } from "@/contexts/ScooterContext";
 
 interface PopularScooter {
   id: string;
@@ -72,8 +72,6 @@ const usePublishedPartsCount = () =>
     },
     staleTime: 5 * 60 * 1000,
   });
-
-const BADGES = ["Best-seller", "Populaire", "Nouveau"];
 
 const ScooterCarousel = () => {
   const navigate = useNavigate();
@@ -152,7 +150,7 @@ const ScooterCarousel = () => {
     const el = scrollRef.current;
     if (!el) return;
     const w = window.innerWidth;
-    const card = w >= 1024 ? 300 : w >= 768 ? 260 : 212;
+    const card = w >= 1024 ? 340 : w >= 768 ? 300 : 272;
     el.scrollBy({ left: dir * card * 2, behavior: "smooth" });
   };
 
@@ -196,7 +194,7 @@ const ScooterCarousel = () => {
             onClick={() => scrollByDir(-1)}
             aria-label="Précédent"
             disabled={!scrollState.canLeft}
-            className="hidden lg:flex absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
+            className="hidden lg:flex absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center bg-white shadow-md hover:shadow-xl transition-all duration-200 motion-safe:hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
             style={{ color: "#1A1A1A" }}
           >
             <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
@@ -206,7 +204,7 @@ const ScooterCarousel = () => {
             onClick={() => scrollByDir(1)}
             aria-label="Suivant"
             disabled={!scrollState.canRight}
-            className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
+            className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center bg-white shadow-md hover:shadow-xl transition-all duration-200 motion-safe:hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
             style={{ color: "#1A1A1A" }}
           >
             <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
@@ -228,42 +226,27 @@ const ScooterCarousel = () => {
                   return (
                     <div
                       key={`skeleton-${idx}`}
-                      className="flex-shrink-0 w-[200px] md:w-[240px] lg:w-[280px] rounded-2xl bg-white shadow-md p-4 animate-pulse"
-                      style={{ scrollSnapAlign: "start", minHeight: 280 }}
+                      className="flex-shrink-0 w-[260px] md:w-[280px] lg:w-[320px] rounded-2xl bg-white shadow-md p-4 animate-pulse"
+                      style={{ scrollSnapAlign: "start", minHeight: 460 }}
                     >
-                      <div className="h-32 bg-gray-200 rounded-xl mb-3" />
-                      <div className="h-4 bg-gray-200 rounded mb-2" />
+                      <div className="h-5 w-24 bg-gray-200 rounded-full mb-3" />
+                      <div className="h-[220px] lg:h-[280px] bg-gray-200 rounded-xl mb-3" />
+                      <div className="h-6 bg-gray-200 rounded mb-2" />
                       <div className="h-3 bg-gray-200 rounded w-2/3" />
                     </div>
                   );
                 }
                 const s = scooter as PopularScooter;
-                const badge = BADGES[idx] || null;
+                const brandColors = getBrandColors(s.brand_name);
+                const brandLabel = (s.brand_name || "").trim();
                 const inGarage = garageIds.has(s.id);
+                const partsCount = s.compatible_parts_count ?? 0;
                 return (
                   <div
                     key={s.id}
-                    className="relative flex-shrink-0 w-[200px] md:w-[240px] lg:w-[280px] rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col hover:-translate-y-0.5"
+                    className="relative flex-shrink-0 w-[260px] md:w-[280px] lg:w-[320px] rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col motion-safe:hover:-translate-y-0.5"
                     style={{ scrollSnapAlign: "start" }}
                   >
-                    {badge && (
-                      <span
-                        className="absolute top-3 left-3 z-10 px-2 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider"
-                        style={{
-                          backgroundColor:
-                            idx === 0
-                              ? "#FF6600"
-                              : idx === 1
-                              ? "#4A7C59"
-                              : "#1A1A1A",
-                          color: "white",
-                          fontFamily: "'Plus Jakarta Sans', sans-serif",
-                        }}
-                      >
-                        {badge}
-                      </span>
-                    )}
-
                     <div className="absolute top-3 right-3 z-10">
                       <FavoriteButton scooterSlug={s.slug} scooterName={s.name} />
                     </div>
@@ -274,10 +257,20 @@ const ScooterCarousel = () => {
                       aria-label={`Voir ${s.name}`}
                       className="block w-full text-left"
                     >
-                      <div
-                        className="h-36 md:h-40 lg:h-44 flex items-center justify-center p-4"
-                        style={{ backgroundColor: "#F5F0E8" }}
-                      >
+                      <div className="px-4 pt-4">
+                        {brandLabel && (
+                          <span
+                            className="inline-block rounded-full px-3 py-1 text-xs text-white font-bold uppercase tracking-wider"
+                            style={{
+                              backgroundColor: brandColors.accent,
+                              fontFamily: "'Plus Jakarta Sans', sans-serif",
+                            }}
+                          >
+                            {brandLabel}
+                          </span>
+                        )}
+                      </div>
+                      <div className="h-[220px] lg:h-[280px] flex items-center justify-center px-4 py-3">
                         {s.image_url ? (
                           <img
                             src={s.image_url}
@@ -287,7 +280,7 @@ const ScooterCarousel = () => {
                           />
                         ) : (
                           <Bike
-                            className="w-14 h-14 lg:w-16 lg:h-16"
+                            className="w-16 h-16 lg:w-20 lg:h-20"
                             style={{ color: "#6B7280" }}
                             strokeWidth={1.2}
                           />
@@ -295,26 +288,28 @@ const ScooterCarousel = () => {
                       </div>
                     </button>
 
-                    <div className="p-3 lg:p-4 flex flex-col flex-1">
+                    <div className="px-4 pb-4 flex flex-col flex-1">
                       <h3
-                        className="text-lg lg:text-xl mb-1 leading-tight"
+                        className="text-xl lg:text-2xl xl:text-3xl mb-1 leading-tight"
                         style={{
                           fontFamily: "'Anton', sans-serif",
                           color: "#1A1A1A",
-                          letterSpacing: "-0.005em",
+                          letterSpacing: "-0.02em",
                           textTransform: "uppercase",
                         }}
                       >
                         {s.name}
                       </h3>
                       <p
-                        className="text-xs lg:text-sm mb-3"
+                        className="text-sm mb-4"
                         style={{
                           color: "#6B7280",
                           fontFamily: "'Plus Jakarta Sans', sans-serif",
                         }}
                       >
-                        {s.brand_name || "—"}
+                        {partsCount > 0
+                          ? `${partsCount} pièce${partsCount > 1 ? "s" : ""} compatible${partsCount > 1 ? "s" : ""}`
+                          : "Pièces à venir"}
                         {s.year ? ` · ${s.year}` : ""}
                       </p>
 
@@ -401,12 +396,12 @@ const ScooterCarousel = () => {
             {/* Bypass catalogue card */}
             <button
               onClick={() => navigate("/catalogue")}
-              className="flex-shrink-0 w-[200px] md:w-[240px] lg:w-[280px] rounded-2xl p-5 flex flex-col items-center justify-center text-center hover:-translate-y-0.5 transition-all duration-200"
+              className="flex-shrink-0 w-[260px] md:w-[280px] lg:w-[320px] rounded-2xl p-5 flex flex-col items-center justify-center text-center motion-safe:hover:-translate-y-0.5 transition-all duration-200"
               style={{
                 scrollSnapAlign: "start",
                 backgroundColor: "transparent",
                 border: "2px dashed #1A1A1A",
-                minHeight: 280,
+                minHeight: 460,
               }}
               aria-label="Voir tout le catalogue"
             >
