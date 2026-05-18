@@ -1,159 +1,69 @@
 import SEO from "@/components/SEO";
-import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Truck, Wrench, RotateCcw } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
+import HeroSearchFirst from "@/components/home/HeroSearchFirst";
 import ExpertJourneySection from "@/components/hero/ExpertJourneySection";
-import CompatiblePartsSection from "@/components/CompatiblePartsSection";
-import FavoritesSection from "@/components/home/FavoritesSection";
+import BrandGrid from "@/components/home/BrandGrid";
+import GarageRiderCard from "@/components/home/GarageRiderCard";
+import Divider from "@/components/home/Divider";
+import ScooterCarousel from "@/components/home/ScooterCarousel";
 import ShopByCategorySection from "@/components/home/ShopByCategorySection";
-import { useCompatiblePartsCount } from "@/hooks/useScooterData";
+import FavoritesSection from "@/components/home/FavoritesSection";
+import TrustStrip from "@/components/home/TrustStrip";
 
 const Index = () => {
-  const [activeModelSlug, setActiveModelSlug] = useState<string | null>(null);
-  const [activeModelName, setActiveModelName] = useState<string | null>(null);
-  const [activeBrandSlug, setActiveBrandSlug] = useState<string | null>(null);
-
-  // Centralized compatible parts count - single source of truth
-  const { data: compatiblePartsCount = 0 } = useCompatiblePartsCount(activeModelSlug);
-
-  const handleActiveModelChange = useCallback((slug: string | null, name: string | null, brandSlug: string | null) => {
-    setActiveModelSlug(slug);
-    setActiveModelName(name);
-    setActiveBrandSlug(brandSlug);
-  }, []);
-
-  const scrollToCompatibleParts = () => {
-    document.getElementById('compatible-parts')?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="min-h-screen watermark-brand"
-      style={{
-        background: "linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 50%, #F5F3F0 100%)"
-      }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="min-h-screen"
+      style={{ backgroundColor: "#F5F0E8" }}
     >
       <SEO
-        title="Pièces Détachées Trottinette Électrique | Expert Marseille"
-        description="Spécialiste pièces détachées trottinettes électriques. Xiaomi, Ninebot, Kaabo, Dualtron. Compatible garanti, livraison rapide. Steedy Trott Marseille."
+        title="Pièces Trottinette Électrique | Trouve ta pièce compatible — piècestrottinettes.fr"
+        description="Plus jamais la mauvaise pièce. Sélectionne ton modèle (Dualtron, Kaabo, Ninebot, Kukirin, Segway) et achète des pièces 100% compatibles. Expédition 24h, méca pro."
         canonical="https://piecestrottinettes.fr/"
       />
-      {/* Header - Fixed at top */}
+
       <Header />
-      
-      {/* Main Content - Vertical Layout */}
+
       <main className="pt-16 lg:pt-20 pb-24 md:pb-0">
-        {/* 1. Hero Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <HeroSection 
-            onActiveModelChange={handleActiveModelChange}
-            compatiblePartsCount={compatiblePartsCount}
-          />
-        </motion.section>
-
-        {/* 2. Expert Journey Section - Mobile Only */}
+        <HeroSearchFirst />
         <ExpertJourneySection />
-
-        {/* Trust Signals Bar */}
-        <div className="py-4 lg:py-6">
-          <div className="max-w-5xl mx-auto px-4">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 lg:gap-12 py-4 px-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-white/30">
-              {[
-                { icon: Truck, label: "Expédition sous 24h" },
-                { icon: Wrench, label: "Mécanicien professionnel" },
-                { icon: RotateCcw, label: "Retours 14 jours" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2.5">
-                  <Icon className="w-5 h-5 text-mineral flex-shrink-0" strokeWidth={1.5} />
-                  <span className="font-display text-xs uppercase tracking-wider text-carbon">{label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* 3. Compatible Parts Section - Scroll Reveal */}
-        <motion.section
-          id="compatible-parts"
-          className="pt-2 lg:pt-4 pb-6 lg:pb-10 scroll-mt-20"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-        >
-          <CompatiblePartsSection 
-            activeModelSlug={activeModelSlug}
-            activeModelName={activeModelName || undefined}
-            activeBrandSlug={activeBrandSlug || undefined}
-            compatiblePartsCount={compatiblePartsCount}
-          />
-        </motion.section>
-
-        {/* 4. Shop By Category Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-        >
-          <ShopByCategorySection />
-        </motion.section>
-
-        {/* 5. Favorites Section - Last, only visible when logged in */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-        >
-          <FavoritesSection />
-        </motion.section>
-
-        {/* Footer */}
+        <BrandGrid />
+        <GarageRiderCard />
+        <Divider />
+        <ScooterCarousel />
+        <ShopByCategorySection />
+        <FavoritesSection />
+        <TrustStrip />
         <Footer />
       </main>
 
-      {/* Slogan - Premium Typography */}
       <motion.div
-        className="fixed bottom-4 lg:bottom-8 left-4 lg:left-8 z-50"
+        className="fixed bottom-4 lg:bottom-8 left-4 lg:left-8 z-40 pointer-events-none"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        <div 
-          className="px-4 py-2 lg:px-6 lg:py-3 rounded-full font-display text-sm lg:text-lg"
+        <div
+          className="px-4 py-2 lg:px-6 lg:py-3 rounded-full text-sm lg:text-lg"
           style={{
             background: "rgba(255,255,255,0.9)",
             backdropFilter: "blur(12px)",
-            border: "1px solid rgba(147,181,161,0.3)",
-            boxShadow: "0 4px 20px rgba(147,181,161,0.2)",
-            fontWeight: 800,
-            letterSpacing: "-0.02em",
-            lineHeight: 0.9,
+            border: "1px solid rgba(74,124,89,0.3)",
+            boxShadow: "0 4px 20px rgba(74,124,89,0.2)",
+            fontFamily: "'Anton', sans-serif",
+            fontWeight: 400,
+            letterSpacing: "0.04em",
+            lineHeight: 1,
+            color: "#1A1A1A",
+            textTransform: "uppercase",
           }}
         >
-          <span
-            style={{
-              background: "linear-gradient(135deg, #1A1A1A 0%, #93B5A1 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            ROULE · RÉPARE · DURE
-          </span>
+          Roule · Répare · Dure
         </div>
       </motion.div>
     </motion.div>

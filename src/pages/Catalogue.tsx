@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { useAdminRole } from "@/hooks/useAdminRole";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Loader2, Sparkles, Filter } from "lucide-react";
-import { useQueryClient } from "@tanstack/react-query";
+import { useQueryClient, useQuery } from "@tanstack/react-query";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import CategoryBentoGrid from "@/components/catalogue/CategoryBentoGrid";
@@ -75,7 +75,53 @@ const Catalogue = () => {
 
   // Get scooter filter from URL params (e.g., ?scooter=uuid)
   const scooterIdFilter = searchParams.get("scooter");
-  
+  // Home redirections — read but never mutate URL except via clear handlers
+  const searchQuery = searchParams.get("search")?.trim() || null;
+  const brandFilter = searchParams.get("brand") || null;
+
+  // Resolve brand slug → display name (for banner)
+  const { data: brandDisplayName } = useQuery({
+    queryKey: ["catalogue_brand_display", brandFilter],
+    queryFn: async () => {
+      if (!brandFilter) return null;
+      const { data } = await supabase
+        .from("brands")
+        .select("name")
+        .eq("slug", brandFilter)
+        .maybeSingle();
+      return data?.name || brandFilter;
+    },
+    enabled: !!brandFilter,
+    staleTime: 5 * 60 * 1000,
+  });
+
+  // Resolve brand → set of compatible part IDs (for client-side filter)
+  const { data: brandPartIds = null } = useQuery({
+    queryKey: ["catalogue_brand_part_ids", brandFilter],
+    queryFn: async (): Promise<Set<string>> => {
+      if (!brandFilter) return new Set();
+      const { data: brand } = await supabase
+        .from("brands")
+        .select("id")
+        .eq("slug", brandFilter)
+        .maybeSingle();
+      if (!brand) return new Set();
+      const { data: models } = await supabase
+        .from("scooter_models")
+        .select("id")
+        .eq("brand_id", brand.id)
+        .eq("published", true);
+      if (!models || models.length === 0) return new Set();
+      const { data: compat } = await supabase
+        .from("part_compatibility")
+        .select("part_id")
+        .in("scooter_model_id", models.map((m) => m.id));
+      return new Set((compat || []).map((c) => c.part_id as string));
+    },
+    enabled: !!brandFilter,
+    staleTime: 5 * 60 * 1000,
+  });
+
   const { data: categories = [], isLoading: categoriesLoading } = useCategories();
   const { data: scooterModels = [] } = useScooterModels();
 
@@ -118,13 +164,23 @@ const Catalogue = () => {
 
   // Filtrer manuellement si on a une catégorie parente avec sous-catégories
   const parts = useMemo(() => {
+    let filtered = allParts;
     if (activeCategory && subCategories.length > 0 && !activeSubCategory) {
-      // Récupérer les IDs de toutes les sous-catégories + la catégorie parente
       const validCategoryIds = new Set([activeCategory, ...subCategories.map(sc => sc.id)]);
-      return allParts.filter(p => p.category_id && validCategoryIds.has(p.category_id));
+      filtered = filtered.filter(p => p.category_id && validCategoryIds.has(p.category_id));
     }
-    return allParts;
-  }, [allParts, activeCategory, activeSubCategory, subCategories]);
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(p =>
+        p.name.toLowerCase().includes(q) ||
+        (p.description?.toLowerCase().includes(q) ?? false)
+      );
+    }
+    if (brandFilter && brandPartIds) {
+      filtered = filtered.filter(p => brandPartIds.has(p.id));
+    }
+    return filtered;
+  }, [allParts, activeCategory, activeSubCategory, subCategories, searchQuery, brandFilter, brandPartIds]);
 
   // Reset sous-catégorie quand on change de catégorie parente
   const handleCategoryChange = (categoryId: string | null) => {
@@ -140,6 +196,16 @@ const Catalogue = () => {
   // Clear scooter filter
   const clearScooterFilter = () => {
     searchParams.delete("scooter");
+    setSearchParams(searchParams);
+  };
+
+  const clearSearchFilter = () => {
+    searchParams.delete("search");
+    setSearchParams(searchParams);
+  };
+
+  const clearBrandFilter = () => {
+    searchParams.delete("brand");
     setSearchParams(searchParams);
   };
 
@@ -257,6 +323,46 @@ const Catalogue = () => {
               </span>
               <button
                 onClick={clearScooterFilter}
+                className="ml-2 px-3 py-1 rounded-full bg-white/60 hover:bg-white text-carbon/70 hover:text-carbon text-xs font-medium transition-all"
+              >
+                Effacer
+              </button>
+            </motion.div>
+          )}
+
+          {searchQuery && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="mt-3 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-mineral/10 border border-mineral/20 mx-1"
+            >
+              <Search className="w-4 h-4 text-mineral" />
+              <span className="text-carbon font-medium">
+                Recherche : <span className="text-mineral font-semibold">{searchQuery}</span>
+              </span>
+              <button
+                onClick={clearSearchFilter}
+                className="ml-2 px-3 py-1 rounded-full bg-white/60 hover:bg-white text-carbon/70 hover:text-carbon text-xs font-medium transition-all"
+              >
+                Effacer
+              </button>
+            </motion.div>
+          )}
+
+          {brandFilter && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="mt-3 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-mineral/10 border border-mineral/20 mx-1"
+            >
+              <Filter className="w-4 h-4 text-mineral" />
+              <span className="text-carbon font-medium">
+                Marque : <span className="text-mineral font-semibold">{brandDisplayName || brandFilter}</span>
+              </span>
+              <button
+                onClick={clearBrandFilter}
                 className="ml-2 px-3 py-1 rounded-full bg-white/60 hover:bg-white text-carbon/70 hover:text-carbon text-xs font-medium transition-all"
               >
                 Effacer

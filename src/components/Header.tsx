@@ -12,6 +12,7 @@ import { useOrderConversations } from "@/hooks/useOrderMessages";
 import { cn } from "@/lib/utils";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
 import logoImage from "@/assets/logo-pt.png";
+import GarageBadge from "@/components/GarageBadge";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -375,21 +376,20 @@ const Header = () => {
                   );
                 })()}
                 
+                {/* Mobile: direct nav to /garage */}
+                <GarageBadge
+                  onClick={() => navigate('/garage')}
+                  showNotification={totalUnread > 0}
+                  className="md:hidden"
+                />
+
+                {/* Desktop: badge triggers dropdown */}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button 
-                      className="hidden sm:flex relative rounded-full px-4 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
-                    >
-                      <div className="w-6 h-6 rounded-full bg-garage-foreground/20 flex items-center justify-center text-sm font-semibold">
-                        {profile?.display_name?.charAt(0).toUpperCase() || 'R'}
-                      </div>
-                      Mon Garage
-                      {totalUnread > 0 && (
-                        <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center animate-pulse border-2 border-background">
-                          {totalUnread > 9 ? '9+' : totalUnread}
-                        </span>
-                      )}
-                    </Button>
+                    <GarageBadge
+                      showNotification={totalUnread > 0}
+                      className="hidden md:inline-flex"
+                    />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="w-56">
                     {/* XP Info in Dropdown */}
@@ -436,13 +436,9 @@ const Header = () => {
                 </DropdownMenu>
               </>
             ) : (
-              <Button 
+              <GarageBadge
                 onClick={handleGarageClick}
-                className="hidden sm:flex rounded-full px-6 font-display text-lg tracking-wide gap-2 bg-garage text-garage-foreground hover:bg-garage/90"
-              >
-                <LogIn className="w-4 h-4" />
-                Mon Garage
-              </Button>
+              />
             )}
 
             {/* Mobile Menu Button */}

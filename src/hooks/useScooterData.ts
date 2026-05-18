@@ -299,6 +299,15 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
 };
 
 // Hook pour compter le total de pièces compatibles
+// Source de vérité business : compte uniquement les compatibilités dont
+// la pièce est publiée (cohérent avec /scooter/:slug et le panier).
+//
+// TODO [FUTURE]: ajouter triggers Postgres sur part_compatibility (INSERT/DELETE)
+// + parts.published (UPDATE) pour synchroniser automatiquement
+// scooter_models.compatible_parts_count. Voir Notion roadmap.
+// Quand la colonne cachée sera fiable, on pourra remplacer ce hook par
+// un simple SELECT compatible_parts_count FROM scooter_models pour économiser
+// un round-trip réseau par scooter affiché.
 export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
   return useQuery({
     queryKey: ["compatible_parts_count", scooterModelSlug],
@@ -309,16 +318,20 @@ export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
         .from("scooter_models")
         .select("id")
         .eq("slug", scooterModelSlug)
-        .abortSignal(signal) // ✅ Ajouter le signal d'annulation
+        .abortSignal(signal)
         .single();
 
       if (!scooterModel) return 0;
 
       const { count, error } = await supabase
         .from("part_compatibility")
-        .select("*", { count: "exact", head: true })
+        .select("part_id, parts!inner(id, published)", {
+          count: "exact",
+          head: true,
+        })
         .eq("scooter_model_id", scooterModel.id)
-        .abortSignal(signal); // ✅ Ajouter le signal d'annulation
+        .eq("parts.published", true)
+        .abortSignal(signal);
 
       if (error) {
         if (error.code === 'PGRST301' || signal?.aborted) {

@@ -6,6 +6,12 @@ verify_jwt = false
 [functions.retrigger-compatibility-matching]
 verify_jwt = false
 
+[functions.backfill-compatible-parts-count]
+verify_jwt = false
+
+[functions.audit-compat-counts]
+verify_jwt = false
+
 [functions.generate-category-image]
 verify_jwt = false
 
