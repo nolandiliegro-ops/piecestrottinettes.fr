@@ -91,6 +91,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
     queryFn: async () => {
       if (!scooterId) return [];
 
+      // Source de vérité "signal pur+sûr" : confidence_level IN ('validated', 'high')
       const { data, error } = await supabase
         .from("part_compatibility")
         .select(`
@@ -107,7 +108,8 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
             category:categories(id, name, icon, slug)
           )
         `)
-        .eq("scooter_model_id", scooterId);
+        .eq("scooter_model_id", scooterId)
+        .in("confidence_level", ["validated", "high"]);
 
       if (error) throw error;
 

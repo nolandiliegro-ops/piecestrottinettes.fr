@@ -3,8 +3,12 @@
 // =====================================================================
 // One-shot maintenance Edge Function : recalcule la colonne cachée
 // scooter_models.compatible_parts_count à partir de la source de vérité
-// = COUNT(DISTINCT part_id) dans part_compatibility, filtré sur les
-// pièces publiées (parts.published = true).
+// "signal pur+sûr" (Option A+ pragmatique) :
+//   COUNT(DISTINCT part_id) dans part_compatibility
+//   WHERE parts.published = true
+//     AND confidence_level IN ('validated', 'high')
+// 'validated' = curation manuelle admin ; 'high' = IA très sûre / specs match.
+// On exclut 'medium' et 'low' (suggestions douteuses) pour ne pas surcompter.
 //
 // La colonne cachée n'avait jamais été mise à jour depuis le seed initial
 // de janvier 2026. Voir Notion roadmap pour la mise en place future de
@@ -102,7 +106,8 @@ Deno.serve(async (req) => {
         .from("part_compatibility")
         .select("part_id, parts!inner(id, published)")
         .eq("scooter_model_id", sm.id)
-        .eq("parts.published", true);
+        .eq("parts.published", true)
+        .in("confidence_level", ["validated", "high"]);
 
       if (compatErr) {
         console.error(

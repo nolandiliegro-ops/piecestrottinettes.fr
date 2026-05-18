@@ -227,6 +227,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
       }
 
       // Get compatible parts via part_compatibility junction table
+      // Source de vérité "signal pur+sûr" : confidence_level IN ('validated', 'high')
       const { data: compatibilityData, error: compatError } = await supabase
         .from("part_compatibility")
         .select(`
@@ -251,6 +252,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
           )
         `)
         .eq("scooter_model_id", scooterModel.id)
+        .in("confidence_level", ["validated", "high"])
         .limit(limit)
         .abortSignal(signal); // ✅ Ajouter le signal d'annulation
 
@@ -299,8 +301,12 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
 };
 
 // Hook pour compter le total de pièces compatibles
-// Source de vérité business : compte uniquement les compatibilités dont
-// la pièce est publiée (cohérent avec /scooter/:slug et le panier).
+// Source de vérité business "signal pur+sûr" (Option A+ pragmatique) :
+//   confidence_level IN ('validated', 'high') AND parts.published = true
+// - 'validated' = curation manuelle admin (signal pur)
+// - 'high'      = IA très sûre / specs match (suggestion à haut score)
+// On exclut 'medium' et 'low' (suggestions IA douteuses) pour éviter le bruit
+// côté public, tout en gardant un volume affichable suffisant.
 //
 // TODO [FUTURE]: ajouter triggers Postgres sur part_compatibility (INSERT/DELETE)
 // + parts.published (UPDATE) pour synchroniser automatiquement
@@ -331,6 +337,7 @@ export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
         })
         .eq("scooter_model_id", scooterModel.id)
         .eq("parts.published", true)
+        .in("confidence_level", ["validated", "high"])
         .abortSignal(signal);
 
       if (error) {
