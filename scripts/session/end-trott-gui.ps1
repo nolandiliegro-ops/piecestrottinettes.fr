@@ -235,18 +235,30 @@ if ($customText -ne "") {
 # -----------------------------------------------------------------------
 
 try {
-    # 2>$null evite que PowerShell wrape les warnings stderr en NativeCommandError
-    git add . 2>$null | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "git add a echoue (code $LASTEXITCODE)" }
+    # Neutraliser ErrorActionPreference pour les commandes git natives :
+    # avec 'Stop', PowerShell transforme chaque ligne stderr (y compris warning: LF/CRLF)
+    # en NativeCommandError qui declenche le catch meme quand $LASTEXITCODE vaut 0.
+    $savedEAP = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
 
-    git commit -m "$commitMsg" 2>$null | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "git commit a echoue (code $LASTEXITCODE)" }
+    & git add . *>$null
+    if ($LASTEXITCODE -ne 0) {
+        $ErrorActionPreference = $savedEAP
+        throw "git add a echoue (code $LASTEXITCODE)"
+    }
 
-    # Pour push : capturer stderr dans un fichier temp pour pouvoir filtrer
-    # les warnings benins (LF/CRLF, etc.) des vraies erreurs (rejected, fatal)
+    & git commit -m "$commitMsg" *>$null
+    if ($LASTEXITCODE -ne 0) {
+        $ErrorActionPreference = $savedEAP
+        throw "git commit a echoue (code $LASTEXITCODE)"
+    }
+
+    # Pour push : capturer stderr dans fichier temp afin d'afficher la vraie raison si erreur
     $pushErrFile = [System.IO.Path]::GetTempFileName()
-    git push 2>$pushErrFile | Out-Null
+    & git push 2>$pushErrFile *>$null
     $pushExit = $LASTEXITCODE
+    $ErrorActionPreference = $savedEAP
+
     if ($pushExit -ne 0) {
         $rawErr  = Get-Content $pushErrFile -Raw -ErrorAction SilentlyContinue
         $realErr = ($rawErr -split "`n" |
@@ -256,8 +268,8 @@ try {
     }
     Remove-Item $pushErrFile -ErrorAction SilentlyContinue
 
-    $sha = git log -1 --pretty=format:"%h" 2>$null
-    $msg = git log -1 --pretty=format:"%s" 2>$null
+    $sha = & git log -1 --pretty=format:"%h" *>$null
+    $msg = & git log -1 --pretty=format:"%s" *>$null
 
     [System.Windows.Forms.MessageBox]::Show(
         "Push reussi !`n`nCommit : $sha`nMessage : $msg",
@@ -267,6 +279,7 @@ try {
     ) | Out-Null
 
 } catch {
+    $ErrorActionPreference = $savedEAP
     [System.Windows.Forms.MessageBox]::Show(
         "Erreur lors du push :`n`n$_",
         "Steedy Dev - Erreur",
