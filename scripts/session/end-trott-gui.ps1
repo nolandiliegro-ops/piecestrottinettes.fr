@@ -235,14 +235,26 @@ if ($customText -ne "") {
 # -----------------------------------------------------------------------
 
 try {
-    git add . 2>&1 | Out-Null
+    # 2>$null evite que PowerShell wrape les warnings stderr en NativeCommandError
+    git add . 2>$null | Out-Null
     if ($LASTEXITCODE -ne 0) { throw "git add a echoue (code $LASTEXITCODE)" }
 
-    git commit -m "$commitMsg" 2>&1 | Out-Null
+    git commit -m "$commitMsg" 2>$null | Out-Null
     if ($LASTEXITCODE -ne 0) { throw "git commit a echoue (code $LASTEXITCODE)" }
 
-    git push 2>&1 | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "git push a echoue (code $LASTEXITCODE).`n`nCause probable : un commit existe sur origin/main que tu n'as pas.`nFais sync-trott puis relance End Trott." }
+    # Pour push : capturer stderr dans un fichier temp pour pouvoir filtrer
+    # les warnings benins (LF/CRLF, etc.) des vraies erreurs (rejected, fatal)
+    $pushErrFile = [System.IO.Path]::GetTempFileName()
+    git push 2>$pushErrFile | Out-Null
+    $pushExit = $LASTEXITCODE
+    if ($pushExit -ne 0) {
+        $rawErr  = Get-Content $pushErrFile -Raw -ErrorAction SilentlyContinue
+        $realErr = ($rawErr -split "`n" |
+                    Where-Object { $_ -match '(error:|fatal:|rejected|conflict)' }) -join "`n"
+        $detail  = if ($realErr.Trim()) { "`n`n$($realErr.Trim())" } else { " (code $pushExit)" }
+        throw "git push a echoue.$detail`n`nCause probable : un commit existe sur origin/main que tu n'as pas.`nFais sync-trott puis relance End Trott."
+    }
+    Remove-Item $pushErrFile -ErrorAction SilentlyContinue
 
     $sha = git log -1 --pretty=format:"%h" 2>$null
     $msg = git log -1 --pretty=format:"%s" 2>$null
