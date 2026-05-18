@@ -79,7 +79,7 @@ function sync-trott { & "$SessionDir\sync-trott.ps1" }
     }
 }
 
-# 2. Icone bureau --------------------------------------------------------------
+# 2. Icone bureau "Steedy Dev" ------------------------------------------------
 Write-Host ""
 $desktopPath = [Environment]::GetFolderPath("Desktop")
 $shortcutPath = Join-Path $desktopPath "Steedy Dev.lnk"
@@ -96,10 +96,29 @@ try {
     Write-Host "[OK] Icone bureau creee :" -ForegroundColor Green
     Write-Host "     $shortcutPath" -ForegroundColor Gray
 } catch {
-    Write-Host "[ERREUR] Creation du raccourci bureau echouee : $_" -ForegroundColor Red
+    Write-Host "[ERREUR] Creation du raccourci Steedy Dev echouee : $_" -ForegroundColor Red
 }
 
-# 3. Recap final ---------------------------------------------------------------
+# 3. Icone bureau "End Trott" -------------------------------------------------
+$guiScriptPath  = Join-Path $SessionDir "end-trott-gui.ps1"
+$shortcutEndPath = Join-Path $desktopPath "End Trott.lnk"
+
+try {
+    $WshShell2 = New-Object -ComObject WScript.Shell
+    $shortcutEnd = $WshShell2.CreateShortcut($shortcutEndPath)
+    $shortcutEnd.TargetPath = "powershell.exe"
+    $shortcutEnd.Arguments = "-ExecutionPolicy Bypass -WindowStyle Hidden -File `"$guiScriptPath`""
+    $shortcutEnd.WorkingDirectory = $RepoPath
+    $shortcutEnd.IconLocation = "powershell.exe,0"
+    $shortcutEnd.Description = "Steedy Dev - termine la session avec une popup de commit"
+    $shortcutEnd.Save()
+    Write-Host "[OK] Icone bureau creee :" -ForegroundColor Green
+    Write-Host "     $shortcutEndPath" -ForegroundColor Gray
+} catch {
+    Write-Host "[ERREUR] Creation du raccourci End Trott echouee : $_" -ForegroundColor Red
+}
+
+# 4. Recap final ---------------------------------------------------------------
 Write-Host ""
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
 Write-Host ""
@@ -110,13 +129,17 @@ Write-Host "-> pull + Claude Code" -ForegroundColor Gray
 Write-Host "    start-trott-full      " -NoNewline -ForegroundColor Yellow
 Write-Host "-> pull + Vite + Claude Code" -ForegroundColor Gray
 Write-Host "    end-trott `"msg`"       " -NoNewline -ForegroundColor Yellow
-Write-Host "-> commit + push" -ForegroundColor Gray
+Write-Host "-> commit + push (terminal)" -ForegroundColor Gray
 Write-Host "    sync-trott            " -NoNewline -ForegroundColor Yellow
 Write-Host "-> git pull rapide" -ForegroundColor Gray
 Write-Host ""
-Write-Host "  Icone bureau : " -NoNewline -ForegroundColor Cyan
-Write-Host "Steedy Dev" -ForegroundColor Yellow -NoNewline
-Write-Host " (lance start-trott)" -ForegroundColor Gray
+Write-Host "  Icones bureau :" -ForegroundColor Cyan
+Write-Host "    " -NoNewline
+Write-Host "Steedy Dev  " -ForegroundColor Yellow -NoNewline
+Write-Host "-> demarre une session (start-trott)" -ForegroundColor Gray
+Write-Host "    " -NoNewline
+Write-Host "End Trott   " -ForegroundColor Yellow -NoNewline
+Write-Host "-> popup de fin de session (commit + push en 1 clic)" -ForegroundColor Gray
 Write-Host ""
 Write-Host "  Pour activer SANS redemarrer :" -ForegroundColor Cyan
 Write-Host "    . `$PROFILE" -ForegroundColor Yellow

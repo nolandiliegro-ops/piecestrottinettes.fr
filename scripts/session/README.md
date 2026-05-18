@@ -15,8 +15,33 @@ cd C:\Users\nolan\Documents\piecestrottinettes.fr\scripts\session
 
 Ce script :
 - Ajoute 4 fonctions globales à ton profil PowerShell (`$PROFILE`)
-- Crée une icône **Steedy Dev** sur le bureau qui lance `start-trott` directement
+- Crée deux icônes sur le bureau : **Steedy Dev** et **End Trott**
 - Est idempotent : tu peux le relancer sans rien casser
+
+---
+
+## Icônes bureau
+
+| Icône | Action |
+|-------|--------|
+| **Steedy Dev** | Lance `start-trott` dans une fenêtre PowerShell — pull + Claude Code |
+| **End Trott** | Ouvre une popup Windows native pour finir la session en 1 clic |
+
+### End Trott — 7 catégories prédéfinies
+
+| Catégorie | Message de commit généré |
+|-----------|--------------------------|
+| Modifications design / UI | `design: session du JJ/MM/AAAA HHhMM` |
+| Correction de bug | `fix: session du JJ/MM/AAAA HHhMM` |
+| Nouvelle fonctionnalité | `feat: session du JJ/MM/AAAA HHhMM` |
+| Audit / lecture / exploration | `chore: audit session du JJ/MM/AAAA HHhMM` |
+| Ajout de produits / contenu | `content: session du JJ/MM/AAAA HHhMM` |
+| Setup / config / automation | `chore: setup session du JJ/MM/AAAA HHhMM` |
+| Session de travail générale | `wip: session du JJ/MM/AAAA HHhMM` |
+
+Tu peux aussi écrire ton propre message dans le champ texte — il prend le dessus sur la catégorie cochée.
+
+> **Note** : tu peux toujours utiliser `end-trott "message"` dans le terminal si tu veux être précis sur le message.
 
 Après installation, redémarre PowerShell **ou** tape `. $PROFILE` pour activer les commandes immédiatement.
 

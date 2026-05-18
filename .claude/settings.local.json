@@ -27,7 +27,8 @@
       "Bash(git fetch *)",
       "Bash(git stash *)",
       "Bash(git pull *)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(supabase db *)"
     ]
   }
 }
