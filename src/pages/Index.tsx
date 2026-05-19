@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSearchFirst from "@/components/home/HeroSearchFirst";
-import ExpertJourneySection from "@/components/hero/ExpertJourneySection";
 import BrandGrid from "@/components/home/BrandGrid";
 import GarageRiderCard from "@/components/home/GarageRiderCard";
 import Divider from "@/components/home/Divider";
@@ -49,7 +48,6 @@ const Index = () => {
 
       <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
         <HeroSearchFirst />
-        <ExpertJourneySection />
         <BrandGrid />
         <GarageRiderCard />
         <Divider />
