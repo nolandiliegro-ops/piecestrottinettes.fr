@@ -1007,6 +1007,8 @@ export type Database = {
           id: string
           image_url: string | null
           images: Json
+          is_featured_home: boolean
+          is_top_moment: boolean
           max_speed_kmh: number | null
           meta_description: string | null
           meta_title: string | null
@@ -1032,6 +1034,8 @@ export type Database = {
           id?: string
           image_url?: string | null
           images?: Json
+          is_featured_home?: boolean
+          is_top_moment?: boolean
           max_speed_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
@@ -1057,6 +1061,8 @@ export type Database = {
           id?: string
           image_url?: string | null
           images?: Json
+          is_featured_home?: boolean
+          is_top_moment?: boolean
           max_speed_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
