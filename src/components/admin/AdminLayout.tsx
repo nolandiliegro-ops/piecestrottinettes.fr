@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboard, Package, Users, ScanLine, MessageSquare, Settings, ArrowLeft, Shield } from 'lucide-react';
+import { LayoutDashboard, Package, Users, ScanLine, MessageSquare, Settings, ArrowLeft, Shield, Palette } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { supabase } from '@/integrations/supabase/client';
 
@@ -17,6 +17,7 @@ const NAV_ITEMS = [
   { id: 'clients', icon: Users, label: 'Clients' },
   { id: 'scanner', icon: ScanLine, label: 'Scanner' },
   { id: 'messages', icon: MessageSquare, label: 'Messages' },
+  { id: 'brand', icon: Palette, label: 'Brand' },
   { id: 'settings', icon: Settings, label: 'Réglages' },
 ];
 
