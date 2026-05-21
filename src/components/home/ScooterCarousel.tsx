@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useAddToGarage, useUserGarage } from "@/hooks/useGarage";
 import FavoriteButton from "@/components/garage/FavoriteButton";
-import { useSelectedScooter, getBrandColors } from "@/contexts/ScooterContext";
+import { getBrandColors } from "@/contexts/ScooterContext";
 
 interface PopularScooter {
   id: string;
@@ -87,22 +87,12 @@ const ScooterCarousel = () => {
   const { user } = useAuth();
   const { data: garageItems = [] } = useUserGarage();
   const addToGarage = useAddToGarage();
-  const { setSelectedScooter } = useSelectedScooter();
   const { data: scooters = [], isLoading } = usePopularScooters();
   const { data: partsCount, isLoading: partsCountLoading } =
     usePublishedPartsCount();
 
-  const selectAndShowInHero = (s: PopularScooter) => {
-    setSelectedScooter({
-      id: s.id,
-      name: s.name,
-      slug: s.slug,
-      brandName: s.brand_name || "",
-      imageUrl: s.image_url,
-    });
-    // Bring the user back to the hero where the transformation happens
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // TODO M3: switch to /showroom/${slug} once the showroom page exists.
+  const goToScooter = (s: PopularScooter) => navigate(`/scooter/${s.slug}`);
 
   const garageIds = useMemo(
     () => new Set(garageItems.map((g) => g.scooter_model_id)),
@@ -327,7 +317,7 @@ const ScooterCarousel = () => {
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
-                            selectAndShowInHero(s);
+                            goToScooter(s);
                           }}
                           aria-label={`Voir les pièces compatibles de ${s.name}`}
                           className="inline-flex items-center justify-center gap-1 min-h-[44px] px-2 rounded-lg text-white font-semibold text-sm transition-colors"
