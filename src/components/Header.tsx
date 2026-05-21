@@ -36,6 +36,7 @@ const Header = () => {
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = user ? convs.reduce((s, c) => s + c.unread_count, 0) : 0;
   const navigate = useNavigate();
+  const logoMain = useBrandAsset("logo_main_light");
 
   // Shimmer animation when item count increases
   useEffect(() => {
