@@ -7,6 +7,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Mail, CheckCircle, Circle, RefreshCw, Loader2, Send, MessageSquare, Package, ArrowLeft, User, Paperclip, X, ExternalLink, Lock } from 'lucide-react';
 import { toast } from 'sonner';
 
+import { useSignedMessageImageUrl } from '@/lib/orderMessageImage';
+
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
 
 const uploadMessageImage = async (file: File, userId: string): Promise<string> => {
@@ -15,8 +17,18 @@ const uploadMessageImage = async (file: File, userId: string): Promise<string> =
   const path = `admin/${userId}/${Date.now()}.${ext}`;
   const { error } = await supabase.storage.from('order-messages-images').upload(path, file, { contentType: file.type, upsert: false });
   if (error) throw error;
-  const { data } = supabase.storage.from('order-messages-images').getPublicUrl(path);
-  return data.publicUrl;
+  // Store the storage path (not a public URL — bucket is private).
+  return path;
+};
+
+const SecureMessageImage = ({ stored }: { stored: string }) => {
+  const signed = useSignedMessageImageUrl(stored);
+  if (!signed) return null;
+  return (
+    <a href={signed} target="_blank" rel="noopener noreferrer" className="block mt-2">
+      <img src={signed} alt="Image jointe" className="max-w-[240px] max-h-[180px] object-cover rounded-lg border border-[hsl(0_0%_20%)] hover:opacity-80 transition-opacity" />
+    </a>
+  );
 };
 
 type ConvStatus = 'pending' | 'replied' | 'closed';
