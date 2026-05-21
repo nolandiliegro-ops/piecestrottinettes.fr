@@ -30,8 +30,8 @@ export default defineConfig(({ mode }) => ({
         name: "Pièces Trottinettes",
         start_url: "/",
         display: "standalone",
-        background_color: "#1A1A1A",
-        theme_color: "#93B5A1",
+        background_color: "#F5F0E8",
+        theme_color: "#F5F0E8",
         orientation: "portrait",
         icons: [
           {

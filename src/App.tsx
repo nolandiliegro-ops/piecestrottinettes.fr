@@ -13,6 +13,7 @@ import MobileNav from "@/components/navigation/MobileNav";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
+import BrandHelmet from "./components/BrandHelmet";
 
 // Lazy-loaded pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -54,6 +55,7 @@ function App() {
         <ScooterProvider>
           <SpotlightProvider>
             <TooltipProvider>
+              <BrandHelmet />
               <Toaster />
               <Sonner />
               <BrowserRouter>
