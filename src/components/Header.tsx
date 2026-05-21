@@ -84,7 +84,7 @@ const Header = () => {
             <img 
               src={logoMain.url}
               alt={logoMain.alt || "piècestrottinettes.FR"}
-              className="h-14 sm:h-16 lg:h-20 -my-3 w-auto object-contain"
+              className="h-28 sm:h-32 lg:h-36 -my-5 w-auto object-contain"
             />
           </Link>
 
