@@ -318,13 +318,13 @@ function SendMessageDialog({
     try {
       let imageUrl: string | null = null;
       if (imageFile) {
-        const fileName = `${Date.now()}-${imageFile.name}`;
+        const fileName = `admin/${Date.now()}-${imageFile.name}`;
         const { error: upErr } = await supabase.storage
           .from('order-messages-images')
           .upload(fileName, imageFile);
         if (upErr) throw upErr;
-        const { data: pub } = supabase.storage.from('order-messages-images').getPublicUrl(fileName);
-        imageUrl = pub.publicUrl;
+        // Store storage path (bucket is private; signed URLs are generated on read).
+        imageUrl = fileName;
       }
 
       const insertPayload: any = {
