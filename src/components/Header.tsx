@@ -11,7 +11,7 @@ import { useSpotlight } from "@/contexts/SpotlightContext";
 import { useOrderConversations } from "@/hooks/useOrderMessages";
 import { cn } from "@/lib/utils";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
-import logoImage from "@/assets/logo-pt.png";
+import { useBrandAsset } from "@/hooks/useBrandAssets";
 import GarageBadge from "@/components/GarageBadge";
 import {
   DropdownMenu,
@@ -81,8 +81,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center group hover:opacity-90 transition-opacity">
             <img 
-              src={logoImage}
-              alt="piècestrottinettes.FR"
+              src={logoMain.url}
+              alt={logoMain.alt || "piècestrottinettes.FR"}
               className="h-14 sm:h-16 lg:h-20 -my-3 w-auto object-contain"
             />
           </Link>
