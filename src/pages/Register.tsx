@@ -20,6 +20,7 @@ const registerSchema = z.object({
 });
 
 const Register = () => {
+  const logo = useBrandAsset('logo_main_light');
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
