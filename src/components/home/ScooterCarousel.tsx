@@ -91,8 +91,7 @@ const ScooterCarousel = () => {
   const { data: partsCount, isLoading: partsCountLoading } =
     usePublishedPartsCount();
 
-  // TODO M3: switch to /showroom/${slug} once the showroom page exists.
-  const goToScooter = (s: PopularScooter) => navigate(`/scooter/${s.slug}`);
+  const goToScooter = (s: PopularScooter) => navigate(`/showroom/${s.slug}`);
 
   const garageIds = useMemo(
     () => new Set(garageItems.map((g) => g.scooter_model_id)),
@@ -252,7 +251,7 @@ const ScooterCarousel = () => {
 
                     <button
                       type="button"
-                      onClick={() => navigate(`/scooter/${s.slug}`)}
+                      onClick={() => navigate(`/showroom/${s.slug}`)}
                       aria-label={`Voir ${s.name}`}
                       className="block w-full text-left"
                     >

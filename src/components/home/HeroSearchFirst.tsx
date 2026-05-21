@@ -23,8 +23,7 @@ const HeroSearchFirst = () => {
   const { scooters, total, isLoading } = useHeroScooters(debouncedQuery);
   const isSearching = debouncedQuery.length > 0;
 
-  // TODO M3: switch to /showroom/${slug} once the showroom page exists.
-  const handleSelect = (slug: string) => navigate(`/scooter/${slug}`);
+  const handleSelect = (slug: string) => navigate(`/showroom/${slug}`);
 
   const submitFreeText = () => {
     const q = query.trim();
