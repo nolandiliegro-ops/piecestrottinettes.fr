@@ -42,6 +42,8 @@ interface Scooter {
   brand_id: string;
   technical_signature: Record<string, any> | null;
   published: boolean;
+  is_top_moment: boolean;
+  is_featured_home: boolean;
 }
 
 const SIGNATURE_DEFAULTS: { key: string; label: string; type: 'select' | 'number' | 'text'; options?: string[] }[] = [
@@ -105,6 +107,8 @@ const ScootersManager = () => {
     year: '', search_terms: '',
     technical_signature: {} as Record<string, any>,
     published: false,
+    is_top_moment: false,
+    is_featured_home: false,
   });
   const [sigOpen, setSigOpen] = useState(false);
   const [customKey, setCustomKey] = useState('');
@@ -129,7 +133,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, is_top_moment, is_featured_home, brand:brands(name)')
         .order('name');
       if (error) throw error;
       setScooters((data as any) || []);
@@ -312,6 +316,8 @@ const ScootersManager = () => {
       search_terms: scooter.search_terms || '',
       technical_signature: (scooter.technical_signature as Record<string, any>) || {},
       published: !!scooter.published,
+      is_top_moment: !!scooter.is_top_moment,
+      is_featured_home: !!scooter.is_featured_home,
     });
     setSigOpen(false);
     setIsEditOpen(true);
@@ -345,6 +351,8 @@ const ScootersManager = () => {
           search_terms: editValues.search_terms.trim() || null,
           technical_signature: cleanSig,
           published: editValues.published,
+          is_top_moment: editValues.is_top_moment,
+          is_featured_home: editValues.is_featured_home,
         } as any)
         .eq('id', editScooter.id);
       if (error) throw error;
@@ -885,6 +893,40 @@ const ScootersManager = () => {
                 checked={editValues.published}
                 onCheckedChange={(v) => setEditValues(prev => ({ ...prev, published: v }))}
               />
+            </div>
+
+            {/* Mise en avant */}
+            <div className="space-y-3 p-4 border rounded-lg bg-muted/30">
+              <div className="flex items-center justify-between">
+                <div>
+                  <Label className="text-base">Top du moment</Label>
+                  <p className="text-xs text-muted-foreground mt-1">Mettre en avant dans le Top du moment du hero</p>
+                </div>
+                <Switch
+                  checked={editValues.is_top_moment}
+                  onCheckedChange={(v) => setEditValues(prev => ({ ...prev, is_top_moment: v }))}
+                />
+              </div>
+              <div className="flex items-center justify-between">
+                <div>
+                  <Label className="text-base">Les plus populaires</Label>
+                  <p className="text-xs text-muted-foreground mt-1">Afficher dans "Les plus populaires" en bas de la home</p>
+                </div>
+                <Switch
+                  checked={editValues.is_featured_home}
+                  onCheckedChange={(v) => setEditValues(prev => ({ ...prev, is_featured_home: v }))}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Lien d'affiliation partenaire (URL)</Label>
+                <Input
+                  type="url"
+                  value={editValues.affiliate_link}
+                  onChange={(e) => setEditValues(prev => ({ ...prev, affiliate_link: e.target.value }))}
+                  placeholder="https://partenaire.com/ref/..."
+                />
+                <p className="text-xs text-muted-foreground">Laisser vide si pas d'affiliation</p>
+              </div>
             </div>
 
             <div className="space-y-2">

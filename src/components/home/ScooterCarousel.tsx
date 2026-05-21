@@ -19,23 +19,32 @@ interface PopularScooter {
   brand_name: string | null;
 }
 
-// TODO: ajouter champ is_featured ou display_order dans scooter_models pour
-// curation manuelle des best-sellers. Pour l'instant, tri par created_at desc.
 const usePopularScooters = () =>
   useQuery({
     queryKey: ["popular_scooters_home"],
     queryFn: async (): Promise<PopularScooter[]> => {
-      const { data, error } = await supabase
-        .from("scooter_models")
-        .select(
-          `id, name, slug, image_url, year, compatible_parts_count,
-           brand:brands(name)`
-        )
-        .eq("published", true)
-        .order("created_at", { ascending: false })
-        .limit(8);
+      const SELECT = `id, name, slug, image_url, year, compatible_parts_count, brand:brands(name)`;
 
-      if (error) throw error;
+      const { data: featured, error: e1 } = await supabase
+        .from("scooter_models")
+        .select(SELECT)
+        .eq("published", true)
+        .eq("is_featured_home", true)
+        .order("created_at", { ascending: false });
+
+      if (e1) throw e1;
+
+      let data = featured;
+      if (!data || data.length === 0) {
+        const { data: fallback, error: e2 } = await supabase
+          .from("scooter_models")
+          .select(SELECT)
+          .eq("published", true)
+          .order("created_at", { ascending: false })
+          .limit(8);
+        if (e2) throw e2;
+        data = fallback;
+      }
 
       return (data || []).map((m) => {
         const brandRaw = (m as { brand?: unknown }).brand;
