@@ -22,6 +22,8 @@ import {
   type OrderMessage,
 } from '@/hooks/useOrderMessages';
 
+import { useSignedMessageImageUrl } from '@/lib/orderMessageImage';
+
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB
 
 const uploadMessageImage = async (file: File, userId: string): Promise<string> => {
@@ -30,24 +32,26 @@ const uploadMessageImage = async (file: File, userId: string): Promise<string> =
   const path = `${userId}/${Date.now()}.${ext}`;
   const { error } = await supabase.storage.from('order-messages-images').upload(path, file);
   if (error) throw error;
-  const { data: urlData } = supabase.storage.from('order-messages-images').getPublicUrl(path);
-  return urlData.publicUrl;
+  // Store the storage path (not a public URL — bucket is private).
+  return path;
 };
 
-// Image preview in chat bubble
+// Image preview in chat bubble (resolves private storage path to a signed URL)
 const MessageImage = ({ url }: { url: string }) => {
   const [fullscreen, setFullscreen] = useState(false);
+  const signed = useSignedMessageImageUrl(url);
+  if (!signed) return null;
   return (
     <>
       <img
-        src={url}
+        src={signed}
         alt="Image jointe"
         onClick={() => setFullscreen(true)}
         className="mt-2 rounded-lg max-w-[240px] max-h-[180px] object-cover cursor-pointer hover:opacity-90 transition-opacity border border-white/10"
       />
       {fullscreen && (
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4" onClick={() => setFullscreen(false)}>
-          <img src={url} alt="Image jointe" className="max-w-full max-h-full rounded-lg" />
+          <img src={signed} alt="Image jointe" className="max-w-full max-h-full rounded-lg" />
         </div>
       )}
     </>
