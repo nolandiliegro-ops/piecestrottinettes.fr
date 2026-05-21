@@ -12,6 +12,7 @@ import AdminSettings from '@/components/admin/AdminSettings';
 import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 import ClientsManager from '@/components/admin/ClientsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
+import BrandAssetsManager from '@/components/admin/BrandAssetsManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -71,6 +72,7 @@ const Admin = () => {
       {activeTab === 'clients' && <ClientsManager />}
       {activeTab === 'scanner' && <AdminScanner />}
       {activeTab === 'messages' && <ContactMessagesManager />}
+      {activeTab === 'brand' && <BrandAssetsManager />}
       {activeTab === 'settings' && <AdminSettings />}
     </AdminLayout>
   );

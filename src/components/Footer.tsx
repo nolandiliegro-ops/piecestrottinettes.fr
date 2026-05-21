@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
-import logoImage from "@/assets/logo-pt.png";
+import { useBrandAsset } from "@/hooks/useBrandAssets";
 
 const Footer = () => {
+  const logo = useBrandAsset("logo_main_light");
   return (
     <footer className="bg-carbon py-12 mt-auto">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Logo */}
         <div className="mb-8">
           <img 
-            src={logoImage}
-            alt="piècestrottinettes.FR"
+            src={logo.url}
+            alt={logo.alt || "piècestrottinettes.FR"}
             className="h-10 w-auto brightness-0 invert opacity-90"
           />
         </div>

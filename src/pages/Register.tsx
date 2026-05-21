@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Loader2, UserPlus, ArrowLeft, Gift } from 'lucide-react';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
-import logoImage from '@/assets/logo-pt.png';
+import { useBrandAsset } from '@/hooks/useBrandAssets';
 
 const registerSchema = z.object({
   displayName: z.string().trim().min(2, { message: "Nom minimum 2 caractères" }).max(50, { message: "Nom maximum 50 caractères" }),
@@ -20,6 +20,7 @@ const registerSchema = z.object({
 });
 
 const Register = () => {
+  const logo = useBrandAsset('logo_main_light');
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -118,8 +119,8 @@ const Register = () => {
           {/* Logo */}
           <div className="text-center mb-8">
             <img 
-              src={logoImage}
-              alt="piècestrottinettes.FR"
+              src={logo.url}
+              alt={logo.alt || "piècestrottinettes.FR"}
               className="h-14 w-auto mx-auto mb-6"
             />
             <h1 className="font-display text-4xl text-carbon tracking-wide">CRÉER UN COMPTE</h1>

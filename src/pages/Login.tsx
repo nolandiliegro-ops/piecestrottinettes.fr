@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Loader2, LogIn, ArrowLeft } from 'lucide-react';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
-import logoImage from '@/assets/logo-pt.png';
+import { useBrandAsset } from '@/hooks/useBrandAssets';
 
 const loginSchema = z.object({
   email: z.string().trim().email({ message: "Email invalide" }),
@@ -15,6 +15,7 @@ const loginSchema = z.object({
 });
 
 const Login = () => {
+  const logo = useBrandAsset('logo_main_light');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -100,8 +101,8 @@ const Login = () => {
           {/* Logo */}
           <div className="text-center mb-8">
             <img 
-              src={logoImage}
-              alt="piècestrottinettes.FR"
+              src={logo.url}
+              alt={logo.alt || "piècestrottinettes.FR"}
               className="h-14 w-auto mx-auto mb-6"
             />
             <h1 className="font-display text-4xl text-carbon tracking-wide">CONNEXION</h1>
