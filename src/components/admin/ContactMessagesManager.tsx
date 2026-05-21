@@ -287,11 +287,7 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
               <div key={msg.id} className={`flex ${isAdmin ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(0_0%_90%)] rounded-br-sm' : 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm'}`}>
                   <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
-                  {msg.image_url && (
-                    <a href={msg.image_url} target="_blank" rel="noopener noreferrer" className="block mt-2">
-                      <img src={msg.image_url} alt="Image jointe" className="max-w-[240px] max-h-[180px] object-cover rounded-lg border border-[hsl(0_0%_20%)] hover:opacity-80 transition-opacity" />
-                    </a>
-                  )}
+                  {msg.image_url && <SecureMessageImage stored={msg.image_url} />}
                   <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(0_0%_45%)]'}`}>
                     {isAdmin ? '🟢 Vous' : '👤 Client'} · {formatTime(msg.created_at)}
                   </p>
