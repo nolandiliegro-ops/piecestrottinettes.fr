@@ -17,7 +17,7 @@ const NAV_ITEMS = [
   { id: 'clients', icon: Users, label: 'Clients' },
   { id: 'scanner', icon: ScanLine, label: 'Scanner' },
   { id: 'messages', icon: MessageSquare, label: 'Messages' },
-  { id: 'brand', icon: Palette, label: 'Brand' },
+  { id: 'brand', icon: Palette, label: 'Identité Site' },
   { id: 'settings', icon: Settings, label: 'Réglages' },
 ];
 

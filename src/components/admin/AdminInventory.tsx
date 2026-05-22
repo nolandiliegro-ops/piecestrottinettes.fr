@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Wrench, Bike, Bot, Bird } from 'lucide-react';
+import { Wrench, Bike, Bot, Bird, Tag } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import PartsManager from './PartsManager';
 import ScootersManager from './ScootersManager';
+import BrandsManager from './BrandsManager';
 import PendingScootersManager, { usePendingScooters } from './PendingScootersManager';
 import PendingPartsManager, { usePendingParts } from './PendingPartsManager';
 import WatcherControl from './WatcherControl';
@@ -30,6 +31,13 @@ const AdminInventory = () => {
           >
             <Bike className="w-4 h-4" />
             Trottinettes
+          </TabsTrigger>
+          <TabsTrigger 
+            value="brands"
+            className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] gap-2"
+          >
+            <Tag className="w-4 h-4" />
+            Marques
           </TabsTrigger>
           <TabsTrigger 
             value="pending"
@@ -69,6 +77,9 @@ const AdminInventory = () => {
         </TabsContent>
         <TabsContent value="scooters" className="mt-4">
           <ScootersManager />
+        </TabsContent>
+        <TabsContent value="brands" className="mt-4">
+          <BrandsManager />
         </TabsContent>
         <TabsContent value="pending" className="mt-4">
           <PendingScootersManager />
