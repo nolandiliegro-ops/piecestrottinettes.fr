@@ -18,7 +18,9 @@ const BRAND_CONFIG: Record<string, { color: string; tagline: string }> = {
   ninebot:  { color: "#10B981", tagline: "Pliable" },
 };
 
-const FEATURED_BRAND_SLUGS = ["dualtron", "kaabo", "segway", "xiaomi", "kukirin", "ninebot"];
+// Marques affichées en home. Ne lister que des marques avec published=true en BDD,
+// sinon clic = 404 sur /marque/:slug. Ajouter kukirin quand publiée.
+const FEATURED_BRAND_SLUGS = ["dualtron", "kaabo", "segway", "xiaomi", "ninebot"];
 
 const useBrandsWithCount = () =>
   useQuery({
@@ -95,7 +97,7 @@ const BrandGrid = () => {
             return (
               <button
                 key={brand.slug}
-                onClick={() => navigate(`/catalogue?brand=${brand.slug}`)}
+                onClick={() => navigate(`/marque/${brand.slug}`)}
                 aria-label={`Voir les pièces ${brand.name}`}
                 className="group relative aspect-square rounded-2xl bg-white border border-black/10 p-4 flex flex-col justify-between overflow-hidden transition-all duration-200 hover:border-black hover:-translate-y-1 hover:shadow-xl text-left"
               >
