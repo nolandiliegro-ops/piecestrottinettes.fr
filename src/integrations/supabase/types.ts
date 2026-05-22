@@ -139,55 +139,88 @@ export type Database = {
       brands: {
         Row: {
           accent_color: string | null
+          articles: Json | null
+          awards: Json | null
+          cons: Json | null
           country: string | null
           created_at: string
           description: string | null
           display_order: number
-          expert_note: string | null
+          editorial_summary: string | null
+          editorial_verdict: string | null
+          faq: Json | null
           founded_year: number | null
+          gallery: Json | null
           hero_image_url: string | null
           id: string
+          last_verified_at: string | null
           logo_url: string | null
           name: string
+          pros: Json | null
           published: boolean
+          related_brand_slugs: Json | null
           slug: string
+          sources: Json | null
           tagline: string | null
+          videos: Json | null
           website_url: string | null
           youtube_video_id: string | null
         }
         Insert: {
           accent_color?: string | null
+          articles?: Json | null
+          awards?: Json | null
+          cons?: Json | null
           country?: string | null
           created_at?: string
           description?: string | null
           display_order?: number
-          expert_note?: string | null
+          editorial_summary?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
           founded_year?: number | null
+          gallery?: Json | null
           hero_image_url?: string | null
           id?: string
+          last_verified_at?: string | null
           logo_url?: string | null
           name: string
+          pros?: Json | null
           published?: boolean
+          related_brand_slugs?: Json | null
           slug: string
+          sources?: Json | null
           tagline?: string | null
+          videos?: Json | null
           website_url?: string | null
           youtube_video_id?: string | null
         }
         Update: {
           accent_color?: string | null
+          articles?: Json | null
+          awards?: Json | null
+          cons?: Json | null
           country?: string | null
           created_at?: string
           description?: string | null
           display_order?: number
-          expert_note?: string | null
+          editorial_summary?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
           founded_year?: number | null
+          gallery?: Json | null
           hero_image_url?: string | null
           id?: string
+          last_verified_at?: string | null
           logo_url?: string | null
           name?: string
+          pros?: Json | null
           published?: boolean
+          related_brand_slugs?: Json | null
           slug?: string
+          sources?: Json | null
           tagline?: string | null
+          videos?: Json | null
           website_url?: string | null
           youtube_video_id?: string | null
         }
