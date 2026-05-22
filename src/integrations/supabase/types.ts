@@ -138,25 +138,58 @@ export type Database = {
       }
       brands: {
         Row: {
+          accent_color: string | null
+          country: string | null
           created_at: string
+          description: string | null
+          display_order: number
+          expert_note: string | null
+          founded_year: number | null
+          hero_image_url: string | null
           id: string
           logo_url: string | null
           name: string
+          published: boolean
           slug: string
+          tagline: string | null
+          website_url: string | null
+          youtube_video_id: string | null
         }
         Insert: {
+          accent_color?: string | null
+          country?: string | null
           created_at?: string
+          description?: string | null
+          display_order?: number
+          expert_note?: string | null
+          founded_year?: number | null
+          hero_image_url?: string | null
           id?: string
           logo_url?: string | null
           name: string
+          published?: boolean
           slug: string
+          tagline?: string | null
+          website_url?: string | null
+          youtube_video_id?: string | null
         }
         Update: {
+          accent_color?: string | null
+          country?: string | null
           created_at?: string
+          description?: string | null
+          display_order?: number
+          expert_note?: string | null
+          founded_year?: number | null
+          hero_image_url?: string | null
           id?: string
           logo_url?: string | null
           name?: string
+          published?: boolean
           slug?: string
+          tagline?: string | null
+          website_url?: string | null
+          youtube_video_id?: string | null
         }
         Relationships: []
       }
