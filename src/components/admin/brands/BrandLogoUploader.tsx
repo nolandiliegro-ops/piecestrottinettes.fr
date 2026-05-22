@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Loader2, Upload, Image as ImageIcon, X } from "lucide-react";
 import { toast } from "sonner";
 
@@ -14,8 +13,11 @@ interface Props {
 }
 
 const BrandLogoUploader = ({ value, onChange, slug, variant, maxMB }: Props) => {
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [uploading, setUploading] = useState(false);
   const limit = maxMB ?? (variant === "logo" ? 2 : 5);
+
+  const openPicker = () => fileInputRef.current?.click();
 
   const handleFile = async (file: File) => {
     if (!file.type.startsWith("image/")) {
@@ -47,6 +49,7 @@ const BrandLogoUploader = ({ value, onChange, slug, variant, maxMB }: Props) => 
       toast.error("Erreur upload");
     } finally {
       setUploading(false);
+      if (fileInputRef.current) fileInputRef.current.value = "";
     }
   };
 
@@ -54,43 +57,69 @@ const BrandLogoUploader = ({ value, onChange, slug, variant, maxMB }: Props) => 
 
   return (
     <div className="space-y-2">
-      <div
-        className={`${aspect} relative rounded-lg border border-border bg-muted overflow-hidden flex items-center justify-center group`}
+      {/* Hidden native file input — opened via the explicit controls below */}
+      <input
+        ref={fileInputRef}
+        type="file"
+        accept="image/png,image/webp,image/svg+xml,image/jpeg"
+        className="hidden"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) handleFile(f);
+        }}
+      />
+
+      {/* Clickable preview tile */}
+      <button
+        type="button"
+        onClick={openPicker}
+        disabled={uploading}
+        aria-label={variant === "logo" ? "Téléverser un logo" : "Téléverser une image hero"}
+        className={`${aspect} relative rounded-lg border border-border bg-muted overflow-hidden flex items-center justify-center transition-colors hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-60 disabled:cursor-not-allowed`}
       >
         {value ? (
           <img src={value} alt="" className="w-full h-full object-contain p-1" />
         ) : (
           <ImageIcon className="w-6 h-6 text-muted-foreground" />
         )}
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-          <Input
-            type="file"
-            accept="image/png,image/webp,image/svg+xml,image/jpeg"
-            className="absolute inset-0 opacity-0 cursor-pointer"
-            disabled={uploading}
-            onChange={(e) => {
-              const f = e.target.files?.[0];
-              if (f) handleFile(f);
-            }}
-          />
-          {uploading ? (
+        {uploading && (
+          <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
             <Loader2 className="w-5 h-5 animate-spin text-white" />
-          ) : (
-            <Upload className="w-5 h-5 text-white" />
-          )}
-        </div>
-      </div>
-      {value && (
+          </div>
+        )}
+      </button>
+
+      {/* Explicit actions (visible, not hover-only) */}
+      <div className="flex items-center gap-2">
         <Button
           type="button"
-          variant="ghost"
+          variant="secondary"
           size="sm"
-          onClick={() => onChange(undefined)}
-          className="h-7 text-xs gap-1"
+          onClick={openPicker}
+          disabled={uploading}
+          className="min-h-[44px] text-xs gap-1.5"
         >
-          <X className="w-3 h-3" /> Retirer
+          {uploading ? (
+            <Loader2 className="w-3.5 h-3.5 animate-spin" />
+          ) : (
+            <Upload className="w-3.5 h-3.5" />
+          )}
+          {value ? "Changer" : "Téléverser"}
         </Button>
-      )}
+        {value && (
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            onClick={() => onChange(undefined)}
+            disabled={uploading}
+            className="min-h-[44px] text-xs gap-1"
+          >
+            <X className="w-3 h-3" /> Retirer
+          </Button>
+        )}
+      </div>
+
       <p className="text-[10px] text-muted-foreground">
         PNG / WEBP / SVG / JPG · max {limit}MB
       </p>

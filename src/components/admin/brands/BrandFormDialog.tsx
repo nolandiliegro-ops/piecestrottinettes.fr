@@ -334,13 +334,15 @@ const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }:
           </div>
 
           <div className="space-y-2">
-            <Label>YouTube Video ID</Label>
+            <Label>URL ou ID YouTube</Label>
             <Input
               value={values.youtube_video_id ?? ""}
               onChange={(e) => set("youtube_video_id", e.target.value || undefined)}
-              placeholder="dQw4w9WgXcQ"
-              maxLength={11}
+              placeholder="https://youtu.be/dQw4w9WgXcQ ou dQw4w9WgXcQ"
             />
+            <p className="text-[11px] text-muted-foreground">
+              Colle une URL YouTube complète, on extrait l'ID automatiquement
+            </p>
             {err("youtube_video_id")}
           </div>
 

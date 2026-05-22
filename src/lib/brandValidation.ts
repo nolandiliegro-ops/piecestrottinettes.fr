@@ -10,6 +10,15 @@ export const slugify = (text: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 
+// Accepts a full YouTube URL (watch?v=, youtu.be/, embed/, shorts/) or a bare 11-char ID.
+// Returns the 11-char video id, or undefined if none could be extracted.
+export const extractYouTubeId = (input: string): string | undefined => {
+  const s = input.trim();
+  if (/^[A-Za-z0-9_-]{11}$/.test(s)) return s;
+  const m = s.match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
+  return m?.[1];
+};
+
 const optionalUrl = z
   .string()
   .trim()
@@ -50,8 +59,8 @@ export const brandSchema = z.object({
   youtube_video_id: z
     .string()
     .trim()
-    .length(11, "ID YouTube = 11 caractères")
-    .regex(/^[A-Za-z0-9_-]{11}$/, "Format ID YouTube invalide")
+    .transform((v) => extractYouTubeId(v) ?? v)
+    .pipe(z.string().regex(/^[A-Za-z0-9_-]{11}$/, "URL ou ID YouTube invalide"))
     .optional()
     .or(z.literal("").transform(() => undefined)),
   accent_color: z
