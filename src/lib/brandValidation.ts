@@ -41,14 +41,10 @@ export const brandSchema = z.object({
   expert_note: optionalText(2000),
   country: optionalText(80),
   founded_year: z
-    .union([
-      z
-        .number()
-        .int()
-        .min(1900, "Min 1900")
-        .max(2026, "Max 2026"),
-      z.nan().transform(() => undefined),
-    ])
+    .number()
+    .int()
+    .min(1900, "Min 1900")
+    .max(2026, "Max 2026")
     .optional(),
   website_url: optionalUrl,
   youtube_video_id: z
