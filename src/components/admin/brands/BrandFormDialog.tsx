@@ -25,7 +25,7 @@ export interface BrandRow {
   hero_image_url: string | null;
   tagline: string | null;
   description: string | null;
-  expert_note: string | null;
+  editorial_verdict: string | null;
   country: string | null;
   founded_year: number | null;
   website_url: string | null;
@@ -50,7 +50,7 @@ const emptyValues: BrandFormValues = {
   hero_image_url: undefined,
   tagline: undefined,
   description: undefined,
-  expert_note: undefined,
+  editorial_verdict: undefined,
   country: undefined,
   founded_year: undefined,
   website_url: undefined,
@@ -69,7 +69,7 @@ const toForm = (b: BrandRow | null | undefined, suggestedOrder: number): BrandFo
     hero_image_url: b.hero_image_url ?? undefined,
     tagline: b.tagline ?? undefined,
     description: b.description ?? undefined,
-    expert_note: b.expert_note ?? undefined,
+    editorial_verdict: b.editorial_verdict ?? undefined,
     country: b.country ?? undefined,
     founded_year: b.founded_year ?? undefined,
     website_url: b.website_url ?? undefined,
@@ -134,7 +134,7 @@ const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }:
       hero_image_url: v.hero_image_url ?? null,
       tagline: v.tagline ?? null,
       description: v.description ?? null,
-      expert_note: v.expert_note ?? null,
+      editorial_verdict: v.editorial_verdict ?? null,
       country: v.country ?? null,
       founded_year: v.founded_year ?? null,
       website_url: v.website_url ?? null,
@@ -278,10 +278,10 @@ const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }:
             <Label>Note de l'expert</Label>
             <Textarea
               rows={3}
-              value={values.expert_note ?? ""}
-              onChange={(e) => set("expert_note", e.target.value || undefined)}
+              value={values.editorial_verdict ?? ""}
+              onChange={(e) => set("editorial_verdict", e.target.value || undefined)}
             />
-            {err("expert_note")}
+            {err("editorial_verdict")}
           </div>
 
           {/* Meta */}

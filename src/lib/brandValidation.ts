@@ -38,7 +38,7 @@ export const brandSchema = z.object({
   hero_image_url: optionalText(2048),
   tagline: optionalText(160),
   description: optionalText(2000),
-  expert_note: optionalText(2000),
+  editorial_verdict: optionalText(2000),
   country: optionalText(80),
   founded_year: z
     .number()
