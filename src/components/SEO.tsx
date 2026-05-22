@@ -7,9 +7,11 @@ interface SEOProps {
   canonical?: string;
   noindex?: boolean;
   schema?: object;
+  prevUrl?: string;
+  nextUrl?: string;
 }
 
-const SEO = ({ title, description, image, canonical, noindex = false, schema }: SEOProps) => {
+const SEO = ({ title, description, image, canonical, noindex = false, schema, prevUrl, nextUrl }: SEOProps) => {
   const fullTitle = `${title} | Pièces Trottinettes`;
   const url = canonical ?? (typeof window !== "undefined" ? window.location.href : "");
 
@@ -36,6 +38,10 @@ const SEO = ({ title, description, image, canonical, noindex = false, schema }: 
 
       {/* Canonical */}
       {canonical && <link rel="canonical" href={canonical} />}
+
+      {/* Pagination hints (brand cycle navigation) */}
+      {prevUrl && <link rel="prev" href={prevUrl} />}
+      {nextUrl && <link rel="next" href={nextUrl} />}
 
       {/* Schema.org JSON-LD */}
       {schema && (

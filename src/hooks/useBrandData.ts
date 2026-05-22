@@ -33,6 +33,13 @@ export interface BrandModel {
   power_watts: number | null;
 }
 
+// Lightweight item for previous/next brand navigation in the hero carousel.
+export interface BrandNavItem {
+  slug: string;
+  name: string;
+  accent_color: string | null;
+}
+
 const BRAND_COLUMNS =
   "id, name, slug, logo_url, hero_image_url, tagline, description, editorial_verdict, country, founded_year, website_url, youtube_video_id, accent_color, display_order, published";
 
@@ -129,4 +136,36 @@ export const useBrandData = (slug: string | undefined) => {
     isPartsLoading: partsLoading,
     isError: brandError,
   };
+};
+
+// Ordered list of published brands → previous/next neighbours for the hero carousel.
+// Stable query key (no slug) so the list is fetched once and reused across navigations.
+export const useBrandsNavigation = (currentSlug?: string) => {
+  const { data: ordered = [] } = useQuery({
+    queryKey: ["brands-nav"],
+    queryFn: async (): Promise<BrandNavItem[]> => {
+      const { data, error } = await supabase
+        .from("brands")
+        .select("slug, name, accent_color, display_order")
+        .eq("published", true)
+        .order("display_order", { ascending: true })
+        .order("name", { ascending: true });
+      if (error) throw error;
+      return (data as unknown as BrandNavItem[]) ?? [];
+    },
+    staleTime: 5 * 60 * 1000,
+  });
+
+  return useMemo(() => {
+    const empty = { prev: null as BrandNavItem | null, next: null as BrandNavItem | null };
+    if (!currentSlug || ordered.length < 2) return empty;
+    const i = ordered.findIndex((b) => b.slug === currentSlug);
+    if (i === -1) return empty;
+    const len = ordered.length;
+    // Loop modulo : with exactly 2 brands, prev === next === the other brand (spec).
+    return {
+      prev: ordered[(i - 1 + len) % len],
+      next: ordered[(i + 1) % len],
+    };
+  }, [ordered, currentSlug]);
 };

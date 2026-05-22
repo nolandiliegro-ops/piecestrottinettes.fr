@@ -3,7 +3,7 @@ import { Loader2 } from "lucide-react";
 import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
 import { BRAND_ASSETS_FALLBACK } from "@/config/brand";
-import { useBrandData } from "@/hooks/useBrandData";
+import { useBrandData, useBrandsNavigation } from "@/hooks/useBrandData";
 import { buildBrandJsonLd } from "@/lib/brandSchema";
 import BrandHeader from "@/components/brand/BrandHeader";
 import BrandHero from "@/components/brand/BrandHero";
@@ -24,6 +24,7 @@ const GRAIN_BG =
 const Brand = () => {
   const { slug } = useParams<{ slug: string }>();
   const { brand, models, topParts, isLoading } = useBrandData(slug);
+  const { prev, next } = useBrandsNavigation(slug);
 
   // Loading — until we know whether the (published) brand exists.
   if (isLoading) {
@@ -82,6 +83,8 @@ const Brand = () => {
   const seoTitle = `${brand.name} — Histoire, modèles & pièces`;
   const seoDescription = `Découvre l'univers ${brand.name}${brand.tagline ? ` : ${brand.tagline}` : ""}. ${models.length} modèle${models.length > 1 ? "s" : ""}, pièces détachées compatibles et l'avis expert Steedy Trott.`;
   const canonical = `https://piecestrottinettes.fr/marque/${brand.slug}`;
+  const prevUrl = prev ? `https://piecestrottinettes.fr/marque/${prev.slug}` : undefined;
+  const nextUrl = next ? `https://piecestrottinettes.fr/marque/${next.slug}` : undefined;
   const ogImage = brand.hero_image_url ?? brand.logo_url ?? BRAND_ASSETS_FALLBACK.og_image.url;
 
   const schema = buildBrandJsonLd({
@@ -95,7 +98,7 @@ const Brand = () => {
 
   return (
     <div className="min-h-[100dvh] flex flex-col relative" style={{ backgroundColor: "#F5F0E8" }}>
-      <SEO title={seoTitle} description={seoDescription} image={ogImage} canonical={canonical} schema={schema} />
+      <SEO title={seoTitle} description={seoDescription} image={ogImage} canonical={canonical} schema={schema} prevUrl={prevUrl} nextUrl={nextUrl} />
 
       {/* Film grain overlay — fixed, non-interactive (never on scrolling content). */}
       <div
@@ -107,7 +110,7 @@ const Brand = () => {
       <BrandHeader />
 
       <main className="flex-1">
-        <BrandHero brand={brand} modelCount={models.length} />
+        <BrandHero brand={brand} modelCount={models.length} prev={prev} next={next} />
 
         {/* USP first — expert note before the story (Nolan's editorial decision). */}
         {/* NOTE admin: si expert_note est vide, la section disparaît — pense à la remplir pour conserver l'USP. */}
