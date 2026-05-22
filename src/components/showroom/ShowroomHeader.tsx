@@ -4,6 +4,10 @@ import { ArrowLeft, Home } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
 
+const FONT = "'Plus Jakarta Sans', sans-serif";
+
+// Premium "curated showroom" header. Logo centered (absolute) + enlarged,
+// Retour (left) + Garage (right) flanking it. Transparent → frosted glass on scroll.
 const ShowroomHeader = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -36,14 +40,14 @@ const ShowroomHeader = () => {
       }}
     >
       <div className="mx-auto max-w-6xl px-4">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Retour */}
+        <div className="relative flex items-center justify-between h-20 md:h-24 lg:h-32">
+          {/* Retour (gauche) */}
           <button
             type="button"
             onClick={handleBack}
             aria-label="Retour"
-            className="inline-flex items-center gap-1.5 min-h-[44px] px-2 -ml-2 rounded-lg transition-colors"
-            style={{ color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            className="relative z-10 inline-flex items-center gap-1.5 min-h-[44px] px-2 -ml-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1A1A1A]"
+            style={{ color: "#1A1A1A", fontFamily: FONT }}
           >
             <ArrowLeft className="w-5 h-5" strokeWidth={2.5} />
             <span className="hidden sm:inline text-sm font-bold uppercase tracking-wider">
@@ -51,30 +55,31 @@ const ShowroomHeader = () => {
             </span>
           </button>
 
-          {/* Logo */}
+          {/* Logo — centré (absolute), agrandi */}
           <Link
             to="/"
             aria-label="Accueil piècestrottinettes"
-            className="flex items-center hover:opacity-90 transition-opacity"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 rounded-md hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1A1A1A]"
           >
             <img
               src={logo.url}
               alt={logo.alt}
-              className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+              loading="eager"
+              className="h-14 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
             />
           </Link>
 
-          {/* Mon Garage */}
+          {/* Mon Garage (droite) */}
           <button
             type="button"
             onClick={handleGarage}
             aria-label="Mon Garage"
-            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 rounded-full border transition-colors"
+            className="relative z-10 inline-flex items-center gap-1.5 min-h-[44px] px-3 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1A1A1A]"
             style={{
               color: "#1A1A1A",
               borderColor: "rgba(26,26,26,0.15)",
               backgroundColor: "rgba(255,255,255,0.6)",
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontFamily: FONT,
             }}
           >
             <Home className="w-4 h-4" strokeWidth={2.5} />
