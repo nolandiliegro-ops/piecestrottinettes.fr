@@ -12,7 +12,7 @@ export interface BrandData {
   hero_image_url: string | null;
   tagline: string | null;
   description: string | null;
-  expert_note: string | null;
+  editorial_verdict: string | null;
   country: string | null;
   founded_year: number | null;
   website_url: string | null;
@@ -34,7 +34,7 @@ export interface BrandModel {
 }
 
 const BRAND_COLUMNS =
-  "id, name, slug, logo_url, hero_image_url, tagline, description, expert_note, country, founded_year, website_url, youtube_video_id, accent_color, display_order, published";
+  "id, name, slug, logo_url, hero_image_url, tagline, description, editorial_verdict, country, founded_year, website_url, youtube_video_id, accent_color, display_order, published";
 
 // A. One published brand by slug.
 const useBrandBySlug = (slug?: string) =>

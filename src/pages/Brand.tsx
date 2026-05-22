@@ -111,8 +111,8 @@ const Brand = () => {
 
         {/* USP first — expert note before the story (Nolan's editorial decision). */}
         {/* NOTE admin: si expert_note est vide, la section disparaît — pense à la remplir pour conserver l'USP. */}
-        {brand.expert_note && (
-          <BrandExpertNote note={brand.expert_note} brandName={brand.name} accentColor={brand.accent_color} />
+        {brand.editorial_verdict && (
+          <BrandExpertNote note={brand.editorial_verdict} brandName={brand.name} accentColor={brand.accent_color} />
         )}
 
         {brand.description && <BrandStory description={brand.description} />}
