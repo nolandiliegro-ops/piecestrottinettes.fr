@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSearchFirst from "@/components/home/HeroSearchFirst";
-import BrandGrid from "@/components/home/BrandGrid";
+import BrandCarousel from "@/components/home/BrandCarousel";
 import GarageRiderCard from "@/components/home/GarageRiderCard";
 import Divider from "@/components/home/Divider";
 import ScooterCarousel from "@/components/home/ScooterCarousel";
@@ -48,7 +48,7 @@ const Index = () => {
 
       <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
         <HeroSearchFirst />
-        <BrandGrid />
+        <BrandCarousel />
         <GarageRiderCard />
         <Divider />
         <ScooterCarousel />

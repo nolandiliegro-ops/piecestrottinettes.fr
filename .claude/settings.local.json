@@ -29,7 +29,10 @@
       "Bash(git pull *)",
       "Bash(git checkout *)",
       "Bash(supabase db *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(npx tsc *)",
+      "Bash(Select-String -Pattern \"built in|error|Error|warn|BrandCard|BrandCarousel|brandAmbiance\" -Context 0,0)",
+      "Bash(curl -s 'https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/brands?select=slug,name,display_order,accent_color,published&order=display_order.asc' -H 'apikey: __TRACKED_VAR__' -H 'Authorization: Bearer __TRACKED_VAR__')"
     ]
   }
 }
