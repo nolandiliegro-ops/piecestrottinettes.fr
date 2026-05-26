@@ -10,7 +10,21 @@ interface Props {
   onActionClick: () => void;
   /** Pre-computed subtitle from caller. If omitted, falls back to the legacy derivation. */
   subtitle?: string;
+  /**
+   * Optional brand accent color (HEX). When provided, eyebrow + chevron +
+   * "Tout voir" button take this color. When undefined, fall back to the
+   * legacy palette (config: #D74F00, discovery: #4A7C59).
+   */
+  accentColor?: string;
 }
+
+// Hex → rgba helper for hover bg
+const hexToRgba = (hex: string, alpha: number): string => {
+  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
 
 const CompatibilityHeader = ({
   mode,
@@ -20,11 +34,13 @@ const CompatibilityHeader = ({
   onTitleClick,
   onActionClick,
   subtitle: customSubtitle,
+  accentColor,
 }: Props) => {
   const isConfig = mode === "config";
 
   const eyebrowText = isConfig ? "— COMPATIBLE AVEC TA TROTTI" : "— TOUT LE CATALOGUE";
-  const eyebrowColor = isConfig ? "#D74F00" : "#4A7C59";
+  const eyebrowColor = accentColor ?? (isConfig ? "#D74F00" : "#4A7C59");
+  const chevronColor = accentColor ?? "#1A1A1A";
 
   const titleText = isConfig ? scooterName ?? "Ma trotti" : "Tous les produits";
 
@@ -69,7 +85,7 @@ const CompatibilityHeader = ({
             <ChevronDown
               className="w-4 h-4 transition-transform group-hover:translate-y-0.5"
               strokeWidth={2.5}
-              style={{ color: "#1A1A1A" }}
+              style={{ color: chevronColor }}
             />
           </button>
         ) : (
@@ -100,7 +116,7 @@ const CompatibilityHeader = ({
       </div>
 
       {isConfig ? (
-        <ToutVoirButton onClick={onActionClick} />
+        <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
       ) : (
         <FiltrerMaTrottiButton onClick={onActionClick} />
       )}
@@ -146,9 +162,50 @@ const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
   );
 };
 
-const ToutVoirButton = ({ onClick }: { onClick: () => void }) => {
+const ToutVoirButton = ({
+  onClick,
+  accentColor,
+}: {
+  onClick: () => void;
+  accentColor?: string;
+}) => {
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState(false);
+
+  // Outlined brand-color variant when accentColor provided
+  if (accentColor) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => {
+          setHover(false);
+          setActive(false);
+        }}
+        onMouseDown={() => setActive(true)}
+        onMouseUp={() => setActive(false)}
+        className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
+        style={{
+          padding: "10px 18px",
+          borderRadius: 9999,
+          border: `1px solid ${accentColor}`,
+          backgroundColor: hover ? hexToRgba(accentColor, 0.08) : "transparent",
+          color: accentColor,
+          fontFamily: FONT,
+          fontWeight: 500,
+          fontSize: 13,
+          transition: "background-color 150ms, color 150ms, transform 90ms",
+          transform: active ? "scale(0.97)" : "scale(1)",
+        }}
+      >
+        <Eye size={14} strokeWidth={2.2} />
+        <span>Tout voir</span>
+      </button>
+    );
+  }
+
+  // Legacy solid black
   return (
     <button
       type="button"

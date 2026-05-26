@@ -1,14 +1,48 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import PartCardSlim from "./PartCardSlim";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
 
+const DEFAULT_RESET_COLOR = "#1A1A1A";
+
+const ResetButton = ({
+  onClick,
+  accentColor,
+}: {
+  onClick: () => void;
+  accentColor?: string;
+}) => {
+  const [hover, setHover] = useState(false);
+  const color = accentColor ?? DEFAULT_RESET_COLOR;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className="inline-flex items-center min-h-[44px] px-5 rounded-full transition-colors duration-150"
+      style={{
+        border: `1px solid ${hover ? color : "rgba(0,0,0,0.18)"}`,
+        backgroundColor: "transparent",
+        color,
+        fontFamily: "'Plus Jakarta Sans', sans-serif",
+        fontSize: 13,
+        fontWeight: 500,
+      }}
+    >
+      Réinitialiser les filtres
+    </button>
+  );
+};
+
 interface Props {
   parts: CompatiblePartRich[];
   onReset?: () => void;
+  /** Brand accent color (HEX) for the "Réinitialiser" button. Optional. */
+  accentColor?: string;
 }
 
-const PartsCarousel = ({ parts, onReset }: Props) => {
+const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
   // D3: duration proportional to count, min 40s
   const durationSeconds = useMemo(
     () => Math.max(40, parts.length * 1.5),
@@ -34,21 +68,7 @@ const PartsCarousel = ({ parts, onReset }: Props) => {
           Aucune pièce dans cette combinaison.
         </p>
         {onReset && (
-          <button
-            type="button"
-            onClick={onReset}
-            className="inline-flex items-center min-h-[44px] px-5 rounded-full transition-colors duration-150 hover:bg-[#1A1A1A] hover:text-white"
-            style={{
-              border: "1px solid #1A1A1A",
-              backgroundColor: "transparent",
-              color: "#1A1A1A",
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontSize: 13,
-              fontWeight: 500,
-            }}
-          >
-            Réinitialiser les filtres
-          </button>
+          <ResetButton onClick={onReset} accentColor={accentColor} />
         )}
       </motion.div>
     );

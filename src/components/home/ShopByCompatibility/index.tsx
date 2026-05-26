@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useHeaderScooterDropdown } from "@/contexts/HeaderScooterDropdownContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
+import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
 import CompatibilityHeader from "./CompatibilityHeader";
 import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
@@ -10,6 +11,9 @@ import BottomBanner from "./BottomBanner";
 const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { open: openHeaderDropdown } = useHeaderScooterDropdown();
+  const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
+  // Only propagate brand color when a known brand is active; undefined keeps legacy palette.
+  const accentColor = brandIsDefault ? undefined : brandColor;
 
   const [selectedCategories, setSelectedCategories] = useState<Set<string>>(
     () => new Set()
@@ -110,6 +114,7 @@ const ShopByCompatibility = () => {
             onTitleClick={handleTitleClick}
             onActionClick={handleActionClick}
             subtitle={subtitle}
+            accentColor={accentColor}
           />
 
           <div className="mb-4 lg:mb-5">
@@ -137,6 +142,7 @@ const ShopByCompatibility = () => {
             <PartsCarousel
               parts={data.filteredParts}
               onReset={handleResetFilters}
+              accentColor={accentColor}
             />
           )}
 

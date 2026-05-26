@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { getCategoryColor } from "@/lib/categoryColors";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
@@ -54,53 +55,78 @@ const PillButton = ({
   color: string;
   active: boolean;
   onClick: () => void;
-}) => (
-  <button
-    type="button"
-    role="checkbox"
-    aria-checked={active}
-    onClick={onClick}
-    className={cn(
-      "flex-shrink-0 inline-flex items-center gap-1.5 rounded-full transition-all duration-150",
-      "min-h-[44px] sm:min-h-[36px] px-[14px]",
-      active
-        ? "bg-[#1A1A1A] text-white"
-        : "bg-white text-[#1A1A1A] hover:border-[#1A1A1A]"
-    )}
-    style={{
-      scrollSnapAlign: "start",
-      fontFamily: "'Plus Jakarta Sans', sans-serif",
-      fontSize: 12,
-      fontWeight: 500,
-      border: active ? "0.5px solid #1A1A1A" : "0.5px solid rgba(0,0,0,0.12)",
-    }}
-  >
-    <span
-      aria-hidden
-      className="inline-block rounded-full flex-shrink-0"
+}) => {
+  const [hover, setHover] = useState(false);
+
+  const style: React.CSSProperties = active
+    ? {
+        backgroundColor: hover ? "#2A2A2A" : "#1A1A1A",
+        color: "#FFFFFF",
+        border: "1px solid #1A1A1A",
+        boxShadow: hover
+          ? "0 4px 16px rgba(0,0,0,0.16)"
+          : "0 4px 12px rgba(0,0,0,0.12)",
+      }
+    : {
+        backgroundColor: hover ? "#FAFAFA" : "#FFFFFF",
+        color: "#1A1A1A",
+        border: hover
+          ? "1px solid rgba(0,0,0,0.18)"
+          : "1px solid rgba(0,0,0,0.08)",
+        boxShadow: hover ? "0 2px 8px rgba(0,0,0,0.04)" : "none",
+        transform: hover ? "translateY(-1px)" : "translateY(0)",
+      };
+
+  return (
+    <button
+      type="button"
+      role="checkbox"
+      aria-checked={active}
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className={cn(
+        "flex-shrink-0 inline-flex items-center gap-1.5 rounded-full",
+        "min-h-[44px] sm:min-h-[40px]"
+      )}
       style={{
-        width: 6,
-        height: 6,
-        backgroundColor: color,
-        boxShadow: active ? `0 0 6px ${color}80` : "none",
-      }}
-    />
-    <span>{label}</span>
-    <span
-      className="inline-flex items-center justify-center"
-      style={{
-        fontSize: 10,
-        fontWeight: 700,
-        lineHeight: 1,
-        padding: "1px 6px",
-        borderRadius: 4,
-        backgroundColor: active ? "rgba(255,255,255,0.18)" : "rgba(0,0,0,0.06)",
-        color: active ? "#FFFFFF" : "#6B7280",
+        scrollSnapAlign: "start",
+        fontFamily: "'Plus Jakarta Sans', sans-serif",
+        fontSize: 13,
+        fontWeight: 500,
+        // Mobile padding 10x14 for touch comfort; desktop slightly more horizontal
+        padding: "10px 14px",
+        transition: "all 200ms ease-out",
+        ...style,
       }}
     >
-      {count}
-    </span>
-  </button>
-);
+      <span
+        aria-hidden
+        className="inline-block rounded-full flex-shrink-0"
+        style={{
+          width: 6,
+          height: 6,
+          backgroundColor: color,
+          boxShadow: active ? `0 0 6px ${color}80` : "none",
+        }}
+      />
+      <span>{label}</span>
+      <span
+        className="inline-flex items-center justify-center"
+        style={{
+          fontSize: 10,
+          fontWeight: 700,
+          lineHeight: 1,
+          padding: "1px 6px",
+          borderRadius: 4,
+          backgroundColor: active ? "rgba(255,255,255,0.18)" : "rgba(0,0,0,0.06)",
+          color: active ? "#FFFFFF" : "#6B7280",
+        }}
+      >
+        {count}
+      </span>
+    </button>
+  );
+};
 
 export default CategoryPills;
