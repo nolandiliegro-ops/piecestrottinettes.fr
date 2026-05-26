@@ -20,12 +20,12 @@ interface BrandCardProps {
 const logoBoxClass = (shape: LogoBoxShape): string => {
   switch (shape) {
     case "circle":
-      return "rounded-full p-1.5";
+      return "rounded-full p-1.5 lg:p-2 xl:p-2.5";
     case "square":
-      return "rounded-md p-1";
+      return "rounded-md p-1 lg:p-1.5 xl:p-2";
     case "rounded":
     default:
-      return "rounded-lg p-1";
+      return "rounded-lg p-1 lg:p-1.5 xl:p-2";
   }
 };
 
@@ -103,7 +103,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
       aria-label={cardAria}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
-      className={`group relative flex flex-col justify-end w-full aspect-[3/4] overflow-hidden p-3 ${HOVER_TRANSITION} motion-safe:lg:hover:-translate-y-1.5 motion-safe:lg:hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F0E8] focus-visible:ring-[#1A1A1A]`}
+      className={`group relative flex flex-col justify-end w-full aspect-[3/4] overflow-hidden p-3 lg:p-4 xl:p-5 ${HOVER_TRANSITION} motion-safe:lg:hover:-translate-y-1.5 motion-safe:lg:hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F0E8] focus-visible:ring-[#1A1A1A]`}
       style={containerStyle}
     >
       {/* Texture overlay */}
@@ -123,7 +123,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
         style={{
           fontFamily: ANTON,
           color: accent,
-          fontSize: "clamp(220px, 45vw, 340px)",
+          fontSize: "clamp(220px, 40vw, 380px)",
           fontWeight: 900,
           letterSpacing: "-0.05em",
           textTransform: "uppercase",
@@ -174,7 +174,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
       <div className="relative z-10 min-w-0">
         {/* Logo box */}
         <div
-          className={`flex items-center justify-center bg-white overflow-hidden w-8 h-8 lg:w-9 lg:h-9 mb-2 ${logoBoxClass(
+          className={`flex items-center justify-center bg-white overflow-hidden w-8 h-8 lg:w-11 lg:h-11 xl:w-[52px] xl:h-[52px] 2xl:w-14 2xl:h-14 mb-2 ${logoBoxClass(
             amb.logoBoxShape
           )}`}
           style={{
@@ -202,7 +202,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
         </div>
 
         <h3
-          className="text-[16px] lg:text-[18px] truncate"
+          className="text-[16px] lg:text-[22px] xl:text-[26px] 2xl:text-[30px] truncate"
           style={{
             fontFamily: ANTON,
             fontWeight: 900,
@@ -217,7 +217,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
 
         {brand.tagline && (
           <p
-            className="mt-1 italic text-[10px] leading-snug line-clamp-1"
+            className="mt-1 italic text-[10px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px] leading-snug line-clamp-1"
             style={{ color: taglineColor, fontFamily: FONT }}
           >
             {brand.tagline}
@@ -225,7 +225,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
         )}
 
         <span
-          className="block mt-1 text-[9px] font-semibold uppercase truncate"
+          className="block mt-1 text-[9px] lg:text-[10px] xl:text-[11px] 2xl:text-[12px] font-semibold uppercase truncate"
           style={{ color: metaColor, letterSpacing: "0.12em", fontFamily: FONT }}
         >
           {metaLabel}
