@@ -37,7 +37,11 @@ const BrandCarousel = () => {
     if (!el) return;
     const onResize = () => updateState();
     window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    el.addEventListener("scrollend", updateState);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      el.removeEventListener("scrollend", updateState);
+    };
   }, [brands.length]);
 
   const scrollByDir = (dir: 1 | -1) => {
@@ -150,7 +154,7 @@ const BrandCarousel = () => {
                 initial={reduce ? false : { opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.06 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.08 }}
               >
                 <BrandCard
                   brand={brand}

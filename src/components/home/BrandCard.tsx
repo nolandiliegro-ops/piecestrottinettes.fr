@@ -112,18 +112,18 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
       {/* Color-matched glow */}
       <div
         aria-hidden
-        className="absolute -top-10 -right-10 w-40 h-40 z-0 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+        className="absolute -top-16 -right-14 w-64 h-64 z-0 pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity duration-500"
         style={amb.glowStyle}
       />
 
       {/* Giant ghost letter */}
       <span
         aria-hidden
-        className="absolute -bottom-8 -right-3 z-[1] leading-[0.75] select-none pointer-events-none opacity-20"
+        className="absolute -bottom-16 -right-8 z-[1] leading-[0.75] select-none pointer-events-none opacity-[0.25] group-hover:opacity-[0.42] transition-opacity duration-300"
         style={{
           fontFamily: ANTON,
           color: accent,
-          fontSize: "clamp(140px, 30vw, 200px)",
+          fontSize: "clamp(220px, 45vw, 340px)",
           fontWeight: 900,
           letterSpacing: "-0.05em",
           textTransform: "uppercase",
@@ -178,7 +178,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
             amb.logoBoxShape
           )}`}
           style={{
-            boxShadow: "0 8px 22px rgba(0,0,0,0.4)",
+            boxShadow: `0 8px 22px rgba(0,0,0,0.45), 0 0 0 1px ${hexWithAlpha(accent, 0.18)}`,
             border: isLight ? `1px solid ${hexWithAlpha(accent, 0.3)}` : undefined,
           }}
         >
