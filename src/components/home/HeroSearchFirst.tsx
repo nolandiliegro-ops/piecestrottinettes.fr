@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Search as SearchIcon } from "lucide-react";
 import { useHeroScooters } from "@/hooks/useHeroScooters";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 import HeroCenterCarousel from "@/components/home/HeroCenterCarousel";
 import HeroMiniCards from "@/components/home/HeroMiniCards";
 
 const HeroSearchFirst = () => {
   const navigate = useNavigate();
   const prefersReducedMotion = useReducedMotion();
+  const { setSelectedScooter } = useSelectedScooter();
 
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
@@ -23,7 +25,19 @@ const HeroSearchFirst = () => {
   const { scooters, total, isLoading } = useHeroScooters(debouncedQuery);
   const isSearching = debouncedQuery.length > 0;
 
-  const handleSelect = (slug: string) => navigate(`/showroom/${slug}`);
+  const handleSelect = (slug: string) => {
+    const s = scooters.find((x) => x.slug === slug);
+    if (s) {
+      setSelectedScooter({
+        id: s.id,
+        name: s.name,
+        slug: s.slug,
+        brandName: s.brand_name ?? "Unknown",
+        imageUrl: s.image_url,
+      });
+    }
+    navigate(`/showroom/${slug}`);
+  };
 
   const submitFreeText = () => {
     const q = query.trim();
@@ -52,7 +66,7 @@ const HeroSearchFirst = () => {
   return (
     <section
       className="relative overflow-hidden px-4 pt-10 pb-12 lg:pt-20 lg:pb-20"
-      style={{ backgroundColor: "#F5F0E8" }}
+      style={{ backgroundColor: "#FAFAF8" }}
     >
       <style>{`
         @keyframes ptMeshMove {
@@ -64,7 +78,7 @@ const HeroSearchFirst = () => {
           50%      { opacity: 0.55; transform: scale(0.88); }
         }
         .pt-mesh {
-          background-color: #F5F0E8;
+          background-color: #FAFAF8;
           background-image:
             radial-gradient(45% 45% at 50% 50%, rgba(74,124,89,0.08), transparent 70%),
             radial-gradient(40% 40% at 50% 50%, rgba(255,102,0,0.06), transparent 70%),

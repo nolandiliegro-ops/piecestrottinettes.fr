@@ -106,7 +106,7 @@ const BrandCarousel = () => {
   const arrowsEnabled = brands.length > 4;
 
   return (
-    <section className="py-10 lg:py-14" style={{ backgroundColor: "#F5F0E8" }}>
+    <section className="py-10 lg:py-14" style={{ backgroundColor: "#FAFAF8" }}>
       <style>{`
         .pt-brand-carousel::-webkit-scrollbar { display: none; }
         .pt-brand-carousel { -ms-overflow-style: none; scrollbar-width: none; }

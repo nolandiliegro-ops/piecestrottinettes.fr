@@ -8,6 +8,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/hooks/useCart";
 import { ScooterProvider } from "@/contexts/ScooterContext";
 import { SpotlightProvider } from "@/contexts/SpotlightContext";
+import { HeaderScooterDropdownProvider } from "@/contexts/HeaderScooterDropdownContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
@@ -55,6 +56,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <ScooterProvider>
+          <HeaderScooterDropdownProvider>
           <SpotlightProvider>
             <TooltipProvider>
               <BrandHelmet />
@@ -113,6 +115,7 @@ function App() {
             </BrowserRouter>
           </TooltipProvider>
         </SpotlightProvider>
+          </HeaderScooterDropdownProvider>
         </ScooterProvider>
       </CartProvider>
     </AuthProvider>

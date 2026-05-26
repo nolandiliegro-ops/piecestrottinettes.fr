@@ -13,7 +13,7 @@ export const useCategoryPartsCount = () => {
   return useQuery({
     queryKey: ["category-parts-count"],
     queryFn: async (): Promise<CategoryWithCount[]> => {
-      // Get parent categories with part counts
+      // Get parent categories with part counts (published only)
       const { data, error } = await supabase
         .from("categories")
         .select(`
@@ -23,6 +23,7 @@ export const useCategoryPartsCount = () => {
           icon,
           parts:parts(count)
         `)
+        .eq("parts.published", true)
         .is("parent_id", null)
         .order("display_order");
 

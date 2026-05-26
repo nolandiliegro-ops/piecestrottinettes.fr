@@ -153,7 +153,7 @@ const ScooterCarousel = () => {
   };
 
   return (
-    <section className="py-10 lg:py-14" style={{ backgroundColor: "#F5F0E8" }}>
+    <section className="py-10 lg:py-14" style={{ backgroundColor: "#FAFAF8" }}>
       <style>{`
         .pt-carousel::-webkit-scrollbar { display: none; }
         .pt-carousel { -ms-overflow-style: none; scrollbar-width: none; }

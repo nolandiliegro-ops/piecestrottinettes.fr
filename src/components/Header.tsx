@@ -1,10 +1,11 @@
 import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { useHeaderScooterDropdownRegistration } from "@/contexts/HeaderScooterDropdownContext";
 import { useUserGarage } from "@/hooks/useGarage";
 import { useCompatiblePartsCount } from "@/hooks/useCompatiblePartsCount";
 import { useSpotlight } from "@/contexts/SpotlightContext";
@@ -25,7 +26,11 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isScooterDropdownOpen, setIsScooterDropdownOpen] = useState(false);
   const prevCountRef = useRef(0);
+
+  const openScooterDropdown = useCallback(() => setIsScooterDropdownOpen(true), []);
+  useHeaderScooterDropdownRegistration(openScooterDropdown);
   
   const { user, profile, signOut } = useAuth();
   const { setIsOpen: openCart, totals } = useCart();
@@ -136,7 +141,7 @@ const Header = () => {
             )}
 
             {/* Ma Trottinette Selector - Monaco Design with Dynamic Brand Colors - Desktop */}
-            <DropdownMenu>
+            <DropdownMenu open={isScooterDropdownOpen} onOpenChange={setIsScooterDropdownOpen}>
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="outline" 

@@ -67,7 +67,10 @@ const EmptyState = ({ onClear }: { onClear: () => void }) => (
 const Catalogue = () => {
   const { isAdmin } = useAdminRole();
   const [searchParams, setSearchParams] = useSearchParams();
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  // Read ?category=<slug> on first render so home pills can pre-filter the catalogue.
+  const [activeCategory, setActiveCategory] = useState<string | null>(
+    () => searchParams.get("category") || null
+  );
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);

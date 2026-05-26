@@ -1,0 +1,55 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+
+interface Props {
+  mode: "config" | "discovery";
+  scooterName: string | null;
+  brandName: string | null;
+  totalCount: number;
+  catalogueHref: string;
+}
+
+const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref }: Props) => {
+  const leftText =
+    mode === "config" && scooterName
+      ? `${totalCount} pièce${totalCount > 1 ? "s" : ""} compatible${totalCount > 1 ? "s" : ""} avec ta ${scooterName}.`
+      : `${totalCount} référence${totalCount > 1 ? "s" : ""} dans le catalogue. Sélectionne ta trotti pour filtrer.`;
+
+  const linkText =
+    mode === "config" && brandName
+      ? `Voir tout le catalogue ${brandName}`
+      : "Voir tout le catalogue";
+
+  return (
+    <div
+      className="mt-5 lg:mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 rounded-xl bg-white"
+      style={{
+        padding: "11px 14px",
+        border: "0.5px solid rgba(0,0,0,0.05)",
+      }}
+    >
+      <p
+        className="text-xs lg:text-[13px]"
+        style={{
+          color: "#1A1A1A",
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+        }}
+      >
+        {leftText}
+      </p>
+      <Link
+        to={catalogueHref}
+        className="inline-flex items-center gap-1 text-xs lg:text-[13px] font-semibold whitespace-nowrap min-h-[32px]"
+        style={{
+          color: "#4A7C59",
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+        }}
+      >
+        {linkText}
+        <ArrowRight className="w-3.5 h-3.5" strokeWidth={2.5} />
+      </Link>
+    </div>
+  );
+};
+
+export default BottomBanner;

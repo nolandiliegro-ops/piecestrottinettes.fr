@@ -10,7 +10,7 @@ const TrustStrip = () => {
   return (
     <section
       className="px-4 py-8 lg:py-12"
-      style={{ backgroundColor: "#F5F0E8" }}
+      style={{ backgroundColor: "#FAFAF8" }}
     >
       <div className="mx-auto max-w-3xl">
         <div className="rounded-2xl bg-white shadow-md grid grid-cols-3 divide-x divide-gray-100">

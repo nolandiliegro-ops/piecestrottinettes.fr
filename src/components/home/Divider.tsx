@@ -1,7 +1,7 @@
 const Divider = () => (
   <div
     className="px-4 py-2 lg:py-4"
-    style={{ backgroundColor: "#F5F0E8" }}
+    style={{ backgroundColor: "#FAFAF8" }}
     aria-hidden
   >
     <hr

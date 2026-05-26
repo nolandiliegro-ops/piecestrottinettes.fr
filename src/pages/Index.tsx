@@ -7,7 +7,7 @@ import BrandCarousel from "@/components/home/BrandCarousel";
 import GarageRiderCard from "@/components/home/GarageRiderCard";
 import Divider from "@/components/home/Divider";
 import ScooterCarousel from "@/components/home/ScooterCarousel";
-import ShopByCategorySection from "@/components/home/ShopByCategorySection";
+import ShopByCompatibility from "@/components/home/ShopByCompatibility";
 import FavoritesSection from "@/components/home/FavoritesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 
@@ -18,7 +18,7 @@ const Index = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="min-h-screen relative overflow-hidden"
-      style={{ backgroundColor: "#F5F0E8" }}
+      style={{ backgroundColor: "#FAFAF8" }}
     >
       <SEO
         title="Pièces Trottinette Électrique | Trouve ta pièce compatible — piècestrottinettes.fr"
@@ -48,11 +48,11 @@ const Index = () => {
 
       <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
         <HeroSearchFirst />
+        <ShopByCompatibility />
         <BrandCarousel />
         <GarageRiderCard />
         <Divider />
         <ScooterCarousel />
-        <ShopByCategorySection />
         <FavoritesSection />
         <TrustStrip />
         <Footer />
