@@ -6,6 +6,7 @@ import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
 import { useHomeBridge } from "@/hooks/useHomeBridge";
 import { useIsMobile } from "@/hooks/use-mobile";
 import CompatibilityHeader from "./CompatibilityHeader";
+import ModeToggle from "./ModeToggle";
 import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
 import BottomBanner from "./BottomBanner";
@@ -202,13 +203,20 @@ const ShopByCompatibility = () => {
               categoriesCount={data.availableCategories.length}
               onTitleClick={handleTitleClick}
               onActionClick={handleActionClick}
-              onChangeScooter={() => setSheetOpen(true)}
               subtitle={subtitle}
               accentColor={accentColor}
               titleFirstPart={titleFirstPart}
               titleSecondPart={titleSecondPart}
               titleAccentColor={titleAccentColor}
               modelFocalMode={modelFocalMode}
+            />
+
+            <ModeToggle
+              mode={compatHeaderMode}
+              accentColor={accentColor}
+              hasScooter={!!selectedScooter}
+              onSelectMyTrotti={handleTitleClick}
+              onShowAll={handleResetFilters}
             />
 
             <div className="mb-4 lg:mb-5">
