@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSearchFirst from "@/components/home/HeroSearchFirst";
 import BrandCarousel from "@/components/home/BrandCarousel";
-import GarageRiderCard from "@/components/home/GarageRiderCard";
+import GarageOfTheWeekSection from "@/components/home/GarageOfTheWeekSection";
 import Divider from "@/components/home/Divider";
 import ScooterCarousel from "@/components/home/ScooterCarousel";
 import ShopByCompatibility from "@/components/home/ShopByCompatibility";
@@ -34,7 +34,7 @@ const Index = () => {
         <HomeBridge />
         <ShopByCompatibility />
         <BrandCarousel />
-        <GarageRiderCard />
+        <GarageOfTheWeekSection />
         <Divider />
         <ScooterCarousel />
         <FavoritesSection />
