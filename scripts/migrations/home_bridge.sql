@@ -1,10 +1,13 @@
 -- =============================================
--- COPIE DE REFERENCE — voir supabase/migrations/20260527120000_home_bridge.sql
--- pour la migration reellement appliquee en BDD.
--- Ce fichier est ici pour lecture humaine + rollback eventuel.
+-- COPIE DE REFERENCE — lecture humaine uniquement.
+--
+-- Source de verite = supabase/migrations/20260527085518_e11748dd-6e9f-4665-baca-a67a31bfeb46.sql
+-- creee par Lovable. NE PAS modifier cette copie pour faire evoluer la BDD :
+-- modifier directement la migration Lovable canonique ci-dessus, ou en creer une nouvelle.
+--
+-- Cette copie reflete le SQL exact applique en BDD au 27/05/2026.
 -- =============================================
 
--- 1. Table
 CREATE TABLE public.home_bridge_settings (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   watermark_text text NOT NULL DEFAULT 'PIECESTROTTINETTES',
@@ -17,7 +20,10 @@ CREATE TABLE public.home_bridge_settings (
   updated_at timestamptz NOT NULL DEFAULT now()
 );
 
--- 2. Fonction trigger singleton
+GRANT SELECT ON public.home_bridge_settings TO anon;
+GRANT SELECT ON public.home_bridge_settings TO authenticated;
+GRANT ALL ON public.home_bridge_settings TO service_role;
+
 CREATE OR REPLACE FUNCTION public.enforce_single_home_bridge_row()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -28,23 +34,19 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql SET search_path = public;
 
--- 3. Seed AVANT trigger
 INSERT INTO public.home_bridge_settings
   (watermark_text, watermark_opacity, watermark_color_mode, is_enabled)
 VALUES
   ('PIECESTROTTINETTES', 5, 'auto', true);
 
--- 4. Trigger singleton
 CREATE TRIGGER trg_single_home_bridge
   BEFORE INSERT ON public.home_bridge_settings
   FOR EACH ROW EXECUTE FUNCTION public.enforce_single_home_bridge_row();
 
--- 5. Trigger updated_at
 CREATE TRIGGER update_home_bridge_settings_updated_at
   BEFORE UPDATE ON public.home_bridge_settings
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
--- 6. RLS
 ALTER TABLE public.home_bridge_settings ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "Public can read home_bridge_settings"
@@ -58,9 +60,3 @@ CREATE POLICY "Only admins can update home_bridge_settings"
   TO authenticated
   USING (public.has_role(auth.uid(), 'admin'))
   WITH CHECK (public.has_role(auth.uid(), 'admin'));
-
--- =============================================
--- ROLLBACK (si besoin) :
--- DROP TABLE public.home_bridge_settings CASCADE;
--- DROP FUNCTION public.enforce_single_home_bridge_row();
--- =============================================
