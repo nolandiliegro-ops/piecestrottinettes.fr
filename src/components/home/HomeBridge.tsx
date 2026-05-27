@@ -36,7 +36,7 @@ export const HomeBridgeView = ({ settings }: HomeBridgeViewProps) => {
     <section
       aria-hidden="true"
       className="relative w-full overflow-hidden select-none pointer-events-none h-[140px] sm:h-[180px]"
-      style={{ background: "#2A2A2A" }}
+      style={{ background: "#353535" }}
     >
       <motion.span
         initial={prefersReducedMotion ? false : { opacity: 0 }}
