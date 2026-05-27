@@ -36,7 +36,7 @@ export const HomeBridgeView = ({ settings }: HomeBridgeViewProps) => {
     <section
       aria-hidden="true"
       className="relative w-full overflow-hidden select-none pointer-events-none h-[140px] sm:h-[180px]"
-      style={{ background: "#353535" }}
+      style={{ background: "#3A3A3A" }}
     >
       <motion.span
         initial={prefersReducedMotion ? false : { opacity: 0 }}
@@ -56,6 +56,21 @@ export const HomeBridgeView = ({ settings }: HomeBridgeViewProps) => {
       >
         {settings.watermark_text}
       </motion.span>
+
+      {/* Fade transition depuis le fond beige #FAFAF8 vers le bloc dark */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 0,
+          height: "32px",
+          background: "linear-gradient(180deg, #FAFAF8 0%, transparent 100%)",
+          pointerEvents: "none",
+          zIndex: 10,
+        }}
+      />
     </section>
   );
 };

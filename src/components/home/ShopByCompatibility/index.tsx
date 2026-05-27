@@ -147,7 +147,7 @@ const ShopByCompatibility = () => {
     : "clamp(100px, 14vw, 150px)";
 
   return (
-    <section className="relative w-full" style={{ backgroundColor: "#353535" }}>
+    <section className="relative w-full" style={{ backgroundColor: "#3A3A3A" }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         <div
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
@@ -252,7 +252,7 @@ const ShopByCompatibility = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          height: "32px",
+          height: "80px",
           background: "linear-gradient(180deg, transparent 0%, #FAFAF8 100%)",
           pointerEvents: "none",
           zIndex: 10,
