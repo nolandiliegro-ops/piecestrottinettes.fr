@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
 import GarageBadge from "@/components/GarageBadge";
+import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,6 +37,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isScooterDropdownOpen, setIsScooterDropdownOpen] = useState(false);
+  const [scooterSheetOpen, setScooterSheetOpen] = useState(false);
   const prevCountRef = useRef(0);
 
   const openScooterDropdown = useCallback(() => setIsScooterDropdownOpen(true), []);
@@ -117,10 +119,12 @@ const Header = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
-            {/* Mobile Slim Selector — Minimal Anton model-only badge (D1) */}
-            {selectedScooter && (
-              <Link
-                to="/garage"
+            {/* Mobile Slim Selector — opens bottom Sheet (D4.2) */}
+            {selectedScooter ? (
+              <button
+                type="button"
+                onClick={() => setScooterSheetOpen(true)}
+                aria-label={`Changer de trottinette (actuelle : ${selectedScooter.name})`}
                 className="flex md:hidden items-center min-h-[44px]"
                 style={{
                   padding: "7px 12px",
@@ -144,7 +148,36 @@ const Header = () => {
                 >
                   {selectedScooter.name}
                 </span>
-              </Link>
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setScooterSheetOpen(true)}
+                aria-label="Choisir une trottinette"
+                className="flex md:hidden items-center min-h-[44px]"
+                style={{
+                  padding: "7px 12px",
+                  borderRadius: 8,
+                  border: "1px solid rgba(0,0,0,0.10)",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: 12,
+                    fontWeight: 500,
+                    lineHeight: 1,
+                    color: "#6B7280",
+                  }}
+                >
+                  Ma Trottinette
+                </span>
+                <ChevronDown
+                  style={{ width: 10, height: 10, marginLeft: 6, color: "#6B7280" }}
+                  strokeWidth={2.4}
+                />
+              </button>
             )}
 
             {/* Ma Trottinette Selector — Minimal badge (D1) - Desktop */}
@@ -563,6 +596,9 @@ const Header = () => {
           </nav>
         )}
       </div>
+
+      {/* Mobile scooter selector Sheet (D4.2) */}
+      <ScooterSelectorSheet open={scooterSheetOpen} onOpenChange={setScooterSheetOpen} />
     </header>
   );
 };

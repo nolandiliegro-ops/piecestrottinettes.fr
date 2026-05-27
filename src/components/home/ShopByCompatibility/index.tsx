@@ -3,18 +3,13 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useHeaderScooterDropdown } from "@/contexts/HeaderScooterDropdownContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
+import { useIsMobile } from "@/hooks/use-mobile";
 import CompatibilityHeader from "./CompatibilityHeader";
 import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
 import BottomBanner from "./BottomBanner";
-
-// Local hex→rgba helper for the dynamic gradient background.
-const hexToRgba = (hex: string, alpha: number): string => {
-  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
-  if (!m) return hex;
-  const n = parseInt(m[1], 16);
-  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
-};
+import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
+import { THEME, hexToRgba } from "@/lib/theme";
 
 const NEUTRAL_TITLE_ACCENT = "#4A7C59";
 
@@ -22,12 +17,14 @@ const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { open: openHeaderDropdown } = useHeaderScooterDropdown();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
+  const isMobile = useIsMobile();
   // Only propagate brand color when a known brand is active; undefined keeps legacy palette.
   const accentColor = brandIsDefault ? undefined : brandColor;
 
   const [selectedCategories, setSelectedCategories] = useState<Set<string>>(
     () => new Set()
   );
+  const [sheetOpen, setSheetOpen] = useState(false);
 
   const data = useShopByCategoryDataV2(selectedScooter?.id, selectedCategories);
 
@@ -66,17 +63,23 @@ const ShopByCompatibility = () => {
   }, [selectedScooter, clearSelection]);
 
   const handleTitleClick = useCallback(() => {
-    openHeaderDropdown();
-  }, [openHeaderDropdown]);
+    if (isMobile) {
+      setSheetOpen(true);
+    } else {
+      openHeaderDropdown();
+    }
+  }, [isMobile, openHeaderDropdown]);
 
   const handleActionClick = useCallback(() => {
     if (selectedScooter) {
       clearSelection();
       setSelectedCategories(new Set());
+    } else if (isMobile) {
+      setSheetOpen(true);
     } else {
       openHeaderDropdown();
     }
-  }, [selectedScooter, clearSelection, openHeaderDropdown]);
+  }, [selectedScooter, clearSelection, isMobile, openHeaderDropdown]);
 
   // Subtitle derivation (D8: pre-compute and pass to CompatibilityHeader)
   const subtitle = (() => {
@@ -128,8 +131,8 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // D3: Pure white in all modes (was gradient in trotti mode).
-  const backgroundStyle: React.CSSProperties = { backgroundColor: "#FFFFFF" };
+  // Beige capsule dans tous les modes (all / filtered-cats / trotti / trotti-cats).
+  const backgroundStyle: React.CSSProperties = { backgroundColor: THEME.bgCapsule };
 
   // D4: Dynamic filigrane behind everything.
   // In trotti mode, prefer the model name (e.g. "WOLF WARRIOR") over the brand.
@@ -145,7 +148,7 @@ const ShopByCompatibility = () => {
 
   return (
     <section className="relative w-full">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:py-14">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         <div
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
@@ -237,6 +240,9 @@ const ShopByCompatibility = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile scooter selector Sheet (D4.3) */}
+      <ScooterSelectorSheet open={sheetOpen} onOpenChange={setSheetOpen} />
     </section>
   );
 };
