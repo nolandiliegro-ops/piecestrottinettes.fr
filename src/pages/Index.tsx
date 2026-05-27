@@ -11,6 +11,7 @@ import ShopByCompatibility from "@/components/home/ShopByCompatibility";
 import FavoritesSection from "@/components/home/FavoritesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import HomeBridge from "@/components/home/HomeBridge";
+import SiteWatermark from "@/components/layout/SiteWatermark";
 
 const Index = () => {
   return (
@@ -21,6 +22,8 @@ const Index = () => {
       className="min-h-screen relative overflow-hidden"
       style={{ backgroundColor: "#FAFAF8" }}
     >
+      <SiteWatermark />
+
       <SEO
         title="Pièces Trottinette Électrique | Trouve ta pièce compatible — piècestrottinettes.fr"
         description="Plus jamais la mauvaise pièce. Sélectionne ton modèle (Dualtron, Kaabo, Ninebot, Kukirin, Segway) et achète des pièces 100% compatibles. Expédition 24h, méca pro."

@@ -17,6 +17,7 @@ function getWatermarkColor(mode: HomeBridgeColorMode, opacity: number) {
 
 /**
  * Variant primitif data-less : prend les settings en prop.
+ * Bande bicolore anthracite avec filigrane blanc.
  * Utilise par l'admin pour le preview live sans toucher au cache TanStack.
  */
 export const HomeBridgeView = ({ settings }: HomeBridgeViewProps) => {
@@ -24,21 +25,24 @@ export const HomeBridgeView = ({ settings }: HomeBridgeViewProps) => {
 
   if (!settings.is_enabled) return null;
 
+  // Force mode "light" (filigrane blanc sur fond anthracite).
+  // Opacity x2 capee a 15 pour visibilite correcte sur fond sombre.
   const color = getWatermarkColor(
-    settings.watermark_color_mode,
-    settings.watermark_opacity,
+    "light",
+    Math.min(settings.watermark_opacity * 2, 15),
   );
 
   return (
     <section
       aria-hidden="true"
-      className="relative w-full overflow-hidden select-none pointer-events-none h-[100px] sm:h-[120px]"
+      className="relative w-full overflow-hidden select-none pointer-events-none h-[140px] sm:h-[180px]"
+      style={{ background: "#2A2A2A" }}
     >
       <motion.span
         initial={prefersReducedMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="absolute block whitespace-nowrap text-[clamp(50px,16vw,110px)] sm:text-[clamp(80px,14vw,200px)]"
+        className="absolute block whitespace-nowrap text-[clamp(80px,14vw,200px)] sm:text-[clamp(100px,12vw,240px)]"
         style={{
           left: "-2vw",
           top: "50%",
