@@ -14,6 +14,12 @@ interface Props {
   part: CompatiblePartRich;
   index: number;
   variant?: "grid" | "carousel";
+  /**
+   * Brand accent color (HEX). When provided, the cat-label patch on the card
+   * uses this color (uniform with the rest of the module). When undefined,
+   * falls back to the per-category color from categoryColors.
+   */
+  brandColor?: string;
 }
 
 const SECU_SLUGS = new Set([
@@ -61,7 +67,7 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
-const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
+const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
   const { addItem, setIsOpen } = useCart();
   const { isFavorite, toggleFavorite, isToggling } = useFavorites();
   const img = getPrimaryImage(part.images, part.image_url, "");
@@ -72,8 +78,9 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
 
   const catSlug = part.category?.slug ?? null;
   const catName = part.category?.name ?? "";
-  const catColor = getCategoryColor(catSlug).color;
-  const catTextColor = getCategoryTextColor(catColor);
+  // D4: cat-label takes the brand color when a scooter is active, else per-category color
+  const patchColor = brandColor ?? getCategoryColor(catSlug).color;
+  const patchTextColor = brandColor ?? getCategoryTextColor(getCategoryColor(catSlug).color);
   const catShort = getShortLabel(catSlug, catName);
   const isCarousel = variant === "carousel";
 
@@ -96,10 +103,10 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
           <img
             src={img}
             alt={part.name}
-            className="w-10 h-10 rounded-lg object-contain bg-[#F5F0E8] p-1"
+            className="w-10 h-10 rounded-lg object-contain bg-[#F5F5F5] p-1"
           />
         ) : (
-          <div className="w-10 h-10 rounded-lg bg-[#F5F0E8] flex items-center justify-center">
+          <div className="w-10 h-10 rounded-lg bg-[#F5F5F5] flex items-center justify-center">
             🔧
           </div>
         )}
@@ -126,8 +133,8 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
   const cardContent = (
     <Link
       to={`/piece/${part.slug}`}
-      className="pt-slim-card group relative block rounded-2xl overflow-hidden bg-white transition-all duration-200 hover:-translate-y-[3px] hover:shadow-[0_8px_22px_rgba(0,0,0,0.08)]"
-      style={{ border: "0.5px solid rgba(0,0,0,0.05)" }}
+      className="pt-slim-card group relative block overflow-hidden bg-white transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
+      style={{ border: "0.5px solid rgba(0,0,0,0.05)", borderRadius: 8 }}
     >
       {/* Image */}
       <div
@@ -164,17 +171,18 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
         {/* Category color patch — top left */}
         {catSlug && catShort && (
           <div
-            className="absolute z-[3] inline-flex items-center gap-1 rounded-full"
+            className="absolute z-[3] inline-flex items-center gap-1"
             style={{
               top: 8,
               left: 8,
               padding: "3px 7px",
+              borderRadius: 4,
               backdropFilter: "blur(4px)",
               WebkitBackdropFilter: "blur(4px)",
-              backgroundColor: hexToRgba(catColor, 0.13),
-              border: `0.5px solid ${hexToRgba(catColor, 0.25)}`,
-              color: catTextColor,
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              backgroundColor: hexToRgba(patchColor, 0.13),
+              border: `0.5px solid ${hexToRgba(patchColor, 0.25)}`,
+              color: patchTextColor,
+              fontFamily: "'Inter', sans-serif",
               fontSize: 9,
               fontWeight: 600,
               letterSpacing: "0.05em",
@@ -185,7 +193,7 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
             <span
               aria-hidden
               className="inline-block rounded-full flex-shrink-0"
-              style={{ width: 6, height: 6, backgroundColor: catColor }}
+              style={{ width: 6, height: 6, backgroundColor: patchColor }}
             />
             {catShort}
           </div>
@@ -249,7 +257,7 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
                 color: badgeColors.color,
                 lineHeight: "13px",
                 height: 13,
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               {badge === "BEST" && "★ "}
@@ -261,7 +269,7 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
         <h4
           className="text-[12px] lg:text-[13px] leading-tight line-clamp-2 mb-1.5 transition-colors"
           style={{
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 500,
             color: "#1A1A1A",
             minHeight: "2.2em",
@@ -273,7 +281,7 @@ const PartCardSlim = ({ part, index, variant = "grid" }: Props) => {
         <div
           className="text-[14px] lg:text-[15px] mb-2.5"
           style={{
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 500,
             color: "#4A7C59",
           }}
@@ -337,7 +345,7 @@ const QuickAddButton = ({
     style={{
       backgroundColor: "#1A1A1A",
       color: "#FFFFFF",
-      fontFamily: "'Plus Jakarta Sans', sans-serif",
+      fontFamily: "'Inter', sans-serif",
       fontSize: 11,
       fontWeight: 500,
       padding: "8px 12px",

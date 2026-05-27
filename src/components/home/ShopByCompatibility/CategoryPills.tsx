@@ -7,9 +7,21 @@ interface Props {
   categories: CategoryGroupV2[];
   selectedSlugs: Set<string>;
   onToggle: (slug: string) => void;
+  /** Brand accent color (HEX). When provided, active pills take this color. */
+  accentColor?: string;
 }
 
-const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
+const FONT = "'Inter', sans-serif";
+const ACTIVE_DEFAULT = "#1A1A1A";
+
+const hexToRgba = (hex: string, alpha: number): string => {
+  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
+
+const CategoryPills = ({ categories, selectedSlugs, onToggle, accentColor }: Props) => {
   if (categories.length === 0) return null;
 
   return (
@@ -33,8 +45,9 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
             key={c.slug}
             label={c.name}
             count={c.count}
-            color={getCategoryColor(c.slug).color}
+            dotColor={getCategoryColor(c.slug).color}
             active={selectedSlugs.has(c.slug)}
+            activeColor={accentColor ?? ACTIVE_DEFAULT}
             onClick={() => onToggle(c.slug)}
           />
         ))}
@@ -46,33 +59,33 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
 const PillButton = ({
   label,
   count,
-  color,
+  dotColor,
   active,
+  activeColor,
   onClick,
 }: {
   label: string;
   count: number;
-  color: string;
+  dotColor: string;
   active: boolean;
+  activeColor: string;
   onClick: () => void;
 }) => {
   const [hover, setHover] = useState(false);
 
   const style: React.CSSProperties = active
     ? {
-        backgroundColor: hover ? "#2A2A2A" : "#1A1A1A",
+        backgroundColor: activeColor,
         color: "#FFFFFF",
-        border: "1px solid #1A1A1A",
-        boxShadow: hover
-          ? "0 4px 16px rgba(0,0,0,0.16)"
-          : "0 4px 12px rgba(0,0,0,0.12)",
+        border: `0.5px solid ${activeColor}`,
+        boxShadow: `0 2px 8px ${hexToRgba(activeColor, 0.2)}`,
       }
     : {
-        backgroundColor: hover ? "#FAFAFA" : "#FFFFFF",
+        backgroundColor: "#FFFFFF",
         color: "#1A1A1A",
         border: hover
-          ? "1px solid rgba(0,0,0,0.18)"
-          : "1px solid rgba(0,0,0,0.08)",
+          ? "0.5px solid rgba(0,0,0,0.18)"
+          : "0.5px solid rgba(0,0,0,0.10)",
         boxShadow: hover ? "0 2px 8px rgba(0,0,0,0.04)" : "none",
         transform: hover ? "translateY(-1px)" : "translateY(0)",
       };
@@ -86,16 +99,16 @@ const PillButton = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={cn(
-        "flex-shrink-0 inline-flex items-center gap-1.5 rounded-full",
-        "min-h-[44px] sm:min-h-[40px]"
+        "flex-shrink-0 inline-flex items-center gap-1.5",
+        "min-h-[44px] sm:min-h-[36px]"
       )}
       style={{
         scrollSnapAlign: "start",
-        fontFamily: "'Plus Jakarta Sans', sans-serif",
-        fontSize: 13,
+        fontFamily: FONT,
+        fontSize: 11.5,
         fontWeight: 500,
-        // Mobile padding 10x14 for touch comfort; desktop slightly more horizontal
-        padding: "10px 14px",
+        padding: "7px 13px",
+        borderRadius: 6,
         transition: "all 200ms ease-out",
         ...style,
       }}
@@ -106,8 +119,8 @@ const PillButton = ({
         style={{
           width: 6,
           height: 6,
-          backgroundColor: color,
-          boxShadow: active ? `0 0 6px ${color}80` : "none",
+          backgroundColor: dotColor,
+          boxShadow: active ? `0 0 6px ${hexToRgba(dotColor, 0.5)}` : "none",
         }}
       />
       <span>{label}</span>
@@ -117,9 +130,9 @@ const PillButton = ({
           fontSize: 10,
           fontWeight: 700,
           lineHeight: 1,
-          padding: "1px 6px",
-          borderRadius: 4,
-          backgroundColor: active ? "rgba(255,255,255,0.18)" : "rgba(0,0,0,0.06)",
+          padding: "1px 5px",
+          borderRadius: 3,
+          backgroundColor: active ? "rgba(255,255,255,0.20)" : "rgba(0,0,0,0.06)",
           color: active ? "#FFFFFF" : "#6B7280",
         }}
       >

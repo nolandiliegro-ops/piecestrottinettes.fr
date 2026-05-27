@@ -5,6 +5,13 @@ import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
 
 const DEFAULT_RESET_COLOR = "#1A1A1A";
 
+const hexToRgba = (hex: string, alpha: number): string => {
+  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
+
 const ResetButton = ({
   onClick,
   accentColor,
@@ -20,13 +27,15 @@ const ResetButton = ({
       onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="inline-flex items-center min-h-[44px] px-5 rounded-full transition-colors duration-150"
+      className="inline-flex items-center min-h-[44px] transition-colors duration-150"
       style={{
-        border: `1px solid ${hover ? color : "rgba(0,0,0,0.18)"}`,
-        backgroundColor: "transparent",
+        padding: "10px 18px",
+        borderRadius: 6,
+        border: `1px solid ${color}`,
+        backgroundColor: hover ? hexToRgba(color, 0.06) : "transparent",
         color,
-        fontFamily: "'Plus Jakarta Sans', sans-serif",
-        fontSize: 13,
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 11.5,
         fontWeight: 500,
       }}
     >
@@ -62,7 +71,7 @@ const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
           className="text-sm mb-4"
           style={{
             color: "#6B7280",
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           Aucune pièce dans cette combinaison.
@@ -160,7 +169,7 @@ const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
               key={`a-${p.id}`}
               className="pt-card-slot flex-shrink-0 w-[200px] sm:w-[220px]"
             >
-              <PartCardSlim part={p} index={i} variant="carousel" />
+              <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
             </div>
           ))}
           {/* Second copy for infinite loop */}
@@ -170,7 +179,7 @@ const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
               className="pt-card-slot flex-shrink-0 w-[200px] sm:w-[220px]"
               aria-hidden="true"
             >
-              <PartCardSlim part={p} index={i} variant="carousel" />
+              <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
             </div>
           ))}
         </div>

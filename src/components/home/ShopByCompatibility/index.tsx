@@ -8,6 +8,14 @@ import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
 import BottomBanner from "./BottomBanner";
 
+// Local hex→rgba helper for the dynamic gradient background.
+const hexToRgba = (hex: string, alpha: number): string => {
+  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
+
 const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { open: openHeaderDropdown } = useHeaderScooterDropdown();
@@ -96,14 +104,21 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
+  // D1: Dynamic gradient background tinted by brand color
+  const backgroundStyle: React.CSSProperties = brandIsDefault
+    ? { backgroundColor: "#FAFAFA" }
+    : {
+        background: `linear-gradient(180deg, ${hexToRgba(brandColor, 0.08)} 0%, ${hexToRgba(brandColor, 0.04)} 40%, #FAFAFA 100%)`,
+      };
+
   return (
     <section className="relative w-full">
       <div className="max-w-7xl mx-auto px-4 my-12 lg:my-16">
         <div
-          className="rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10"
+          className="rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
-            backgroundColor: "#F5F0E8",
-            border: "0.5px solid rgba(0,0,0,0.04)",
+            ...backgroundStyle,
+            border: "0.5px solid rgba(0,0,0,0.05)",
           }}
         >
           <CompatibilityHeader
@@ -122,6 +137,7 @@ const ShopByCompatibility = () => {
               categories={data.availableCategories}
               selectedSlugs={selectedCategories}
               onToggle={handleToggleCategory}
+              accentColor={accentColor}
             />
           </div>
 

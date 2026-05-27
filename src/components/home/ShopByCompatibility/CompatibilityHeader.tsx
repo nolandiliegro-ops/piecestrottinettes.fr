@@ -54,12 +54,14 @@ const CompatibilityHeader = ({
     <div className="flex items-start justify-between gap-3 mb-4 lg:mb-5">
       <div className="min-w-0">
         <p
-          className="text-[11px] uppercase mb-1.5"
+          className="mb-1.5"
           style={{
             color: eyebrowColor,
-            letterSpacing: "0.12em",
+            letterSpacing: "0.15em",
             fontWeight: 600,
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 10.5,
+            textTransform: "uppercase",
           }}
         >
           {eyebrowText}
@@ -73,10 +75,11 @@ const CompatibilityHeader = ({
             aria-label={`Changer de trottinette (actuel : ${titleText})`}
           >
             <span
-              className="text-[17px] sm:text-[19px] lg:text-[22px] uppercase tracking-tight"
+              className="text-[22px] sm:text-[24px] lg:text-[26px]"
               style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                fontWeight: 500,
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 800,
+                letterSpacing: "-0.025em",
                 color: "#1A1A1A",
               }}
             >
@@ -90,10 +93,11 @@ const CompatibilityHeader = ({
           </button>
         ) : (
           <h2
-            className="text-[17px] sm:text-[19px] lg:text-[22px] uppercase tracking-tight"
+            className="text-[22px] sm:text-[24px] lg:text-[26px]"
             style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontWeight: 500,
+              fontFamily: "'Inter', sans-serif",
+              fontWeight: 800,
+              letterSpacing: "-0.025em",
               color: "#1A1A1A",
               minHeight: "44px",
               display: "flex",
@@ -105,10 +109,12 @@ const CompatibilityHeader = ({
         )}
 
         <p
-          className="text-[11px] mt-1"
+          className="mt-1"
           style={{
             color: "#6B7280",
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 11,
+            fontWeight: 400,
           }}
         >
           {subtitle}
@@ -126,7 +132,16 @@ const CompatibilityHeader = ({
 
 /* ── Buttons ─────────────────────────────────────────────────────────────── */
 
-const FONT = "'Plus Jakarta Sans', sans-serif";
+const FONT = "'Inter', sans-serif";
+
+const BUTTON_BASE: React.CSSProperties = {
+  padding: "10px 18px",
+  borderRadius: 6,
+  fontFamily: FONT,
+  fontWeight: 500,
+  fontSize: 11.5,
+  transition: "background-color 150ms, color 150ms, border-color 150ms, transform 90ms",
+};
 
 const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
   const [hover, setHover] = useState(false);
@@ -144,15 +159,10 @@ const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
       onMouseUp={() => setActive(false)}
       className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
       style={{
-        padding: "10px 18px",
-        borderRadius: 9999,
+        ...BUTTON_BASE,
         border: "1px solid #1A1A1A",
-        backgroundColor: hover ? "#1A1A1A" : "transparent",
-        color: hover ? "#FFFFFF" : "#1A1A1A",
-        fontFamily: FONT,
-        fontWeight: 500,
-        fontSize: 13,
-        transition: "background-color 150ms, color 150ms, transform 90ms",
+        backgroundColor: hover ? "rgba(26,26,26,0.06)" : "transparent",
+        color: "#1A1A1A",
         transform: active ? "scale(0.97)" : "scale(1)",
       }}
     >
@@ -171,41 +181,8 @@ const ToutVoirButton = ({
 }) => {
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState(false);
+  const color = accentColor ?? "#1A1A1A";
 
-  // Outlined brand-color variant when accentColor provided
-  if (accentColor) {
-    return (
-      <button
-        type="button"
-        onClick={onClick}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => {
-          setHover(false);
-          setActive(false);
-        }}
-        onMouseDown={() => setActive(true)}
-        onMouseUp={() => setActive(false)}
-        className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
-        style={{
-          padding: "10px 18px",
-          borderRadius: 9999,
-          border: `1px solid ${accentColor}`,
-          backgroundColor: hover ? hexToRgba(accentColor, 0.08) : "transparent",
-          color: accentColor,
-          fontFamily: FONT,
-          fontWeight: 500,
-          fontSize: 13,
-          transition: "background-color 150ms, color 150ms, transform 90ms",
-          transform: active ? "scale(0.97)" : "scale(1)",
-        }}
-      >
-        <Eye size={14} strokeWidth={2.2} />
-        <span>Tout voir</span>
-      </button>
-    );
-  }
-
-  // Legacy solid black
   return (
     <button
       type="button"
@@ -219,14 +196,10 @@ const ToutVoirButton = ({
       onMouseUp={() => setActive(false)}
       className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
       style={{
-        padding: "10px 18px",
-        borderRadius: 9999,
-        backgroundColor: hover ? "#2A2A2A" : "#1A1A1A",
-        color: "#FFFFFF",
-        fontFamily: FONT,
-        fontWeight: 500,
-        fontSize: 13,
-        transition: "background-color 150ms, transform 90ms",
+        ...BUTTON_BASE,
+        border: `1px solid ${color}`,
+        backgroundColor: hover ? hexToRgba(color, 0.06) : "transparent",
+        color,
         transform: active ? "scale(0.97)" : "scale(1)",
       }}
     >
