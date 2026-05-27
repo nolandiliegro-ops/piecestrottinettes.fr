@@ -1,27 +1,62 @@
-Plan de migration pour la table `profiles` — profils publics.
 
-## Objectif
-Ajouter un mécanisme de visibilité publique sur les profils utilisateurs, et activer le profil `NOLAN2.0` en tant que profil public.
+## Partie 1 — Données BDD (via `supabase--insert`)
 
-## Étape 1 — Migration structurelle (outil `supabase--migration`)
+Trois `UPDATE` séquentiels sur `public.profiles` :
 
-Sur la table `profiles` :
-- **Ajouter** la colonne `is_public` (boolean, valeur par défaut `false`). C'est un interrupteur qui permet à l'utilisateur de rendre son profil visible publiquement.
-- **Autoriser** le rôle `anon` (visiteurs non-connectés) à lire la table `profiles`, nécessaire technique pour que les règles de sécurité (RLS) fonctionnent pour les visiteurs.
-- **Créer** une règle de sécurité `Public can read public profiles` :
-  - Visiteurs non-connectés (`anon`) et utilisateurs connectés (`authenticated`) peuvent consulter les profils **uniquement** si `is_public = true`.
-  - Les autres règles existantes restent inchangées (accès propre pour soi-même, accès total pour les admins).
+1. `display_name = 'STEEDY TROTT'` pour l'utilisateur dont l'email auth est `steedytrott@gmail.com` (sous-requête sur `auth.users`).
+2. `display_name = 'TUGA TROTT'` pour `team.tugatrott@gmail.com`.
+3. `is_public = true` pour les 3 profils : `NOLAN2.0`, `TUGA TROTT`, `STEEDY TROTT`.
 
-## Étape 2 — Mise à jour des données (outil `supabase--insert`)
+Une seule call `supabase--insert` regroupant les 3 statements.
 
-- Activer `is_public = true` sur le profil dont le `display_name` est `NOLAN2.0`.
+**Pas de migration de schéma** — `display_name` et `is_public` existent déjà.
 
-## Étape 3 — Fichiers de code
+---
 
-- **Aucun changement** dans le code source React/TypeScript.
-- `src/integrations/supabase/types.ts` est déjà patché manuellement côté repo (sera commit séparément) ; pas de modification ici.
+## Partie 2 — UI : champ "Nom de Rider" dans le modal profil
 
-## Impact
-- Zéro changement visuel immédiat.
-- Seul le profil `NOLAN2.0` devient accessible publiquement via l'API.
-- Préparation pour une future fonctionnalité d'affichage de profil public côté frontend.
+### Fichier modifié
+`src/components/garage/RiderProfileEditDialog.tsx` (uniquement)
+
+### Ajout d'un hook dans `src/hooks/useRiderProfile.ts`
+Nouvelle mutation `updateDisplayName` :
+- Vérifie unicité côté client via `supabase.from('profiles').select('id').eq('display_name', value).neq('id', user.id).maybeSingle()` → si match, throw `"Ce nom est déjà pris"`.
+- Update `profiles.display_name` + `updated_at` pour `id = user.id`.
+- Invalide le cache profil + `refreshProfile()`.
+
+### Modifications du dialog
+- Nouvel état `displayName` initialisé depuis `profile?.display_name`.
+- Champ `<Input>` placé **avant** le champ Bio, sous l'avatar.
+- Label : "Nom de Rider" + compteur `{displayName.length}/30` aligné à droite (même style que Bio/Location).
+- `maxLength={30}`.
+- Validation locale au `onChange` ou avant save :
+  - Trim non vide.
+  - Regex autorisée : `/^[a-zA-Z0-9 ._-]+$/` (lettres, chiffres, espace, point, underscore, tiret).
+  - Sinon affichage d'un message d'erreur inline rouge sous l'input + bouton Enregistrer désactivé.
+- `handleSave` :
+  - Si `displayName` a changé → `tasks.push(updateDisplayName.mutateAsync(displayName.trim()))`.
+  - L'erreur d'unicité remonte via le `toast.error` déjà câblé dans `useRiderProfile`.
+  - Si succès → fermeture du modal (comportement actuel préservé).
+
+### Cohérence
+- `AuthContext.Profile` contient déjà `display_name` → pas de changement de type.
+- `handle_new_user()` trigger BDD inchangé.
+
+---
+
+## Partie 3 — Hors-scope confirmé
+
+Aucune modif sur :
+- Edge Functions (`create-checkout-session`, `stripe-webhook`, `verify-payment`, `send-order-email`, etc.).
+- Pages `/garage` hors `RiderProfileEditDialog`.
+- Flux paiement, panier, auth, RLS.
+
+---
+
+## Ordre d'exécution en Build
+
+1. `supabase--insert` (3 UPDATE).
+2. Édition `src/hooks/useRiderProfile.ts` (ajout `updateDisplayName`).
+3. Édition `src/components/garage/RiderProfileEditDialog.tsx` (champ + validation + save).
+
+Valide pour passer en Build ?
