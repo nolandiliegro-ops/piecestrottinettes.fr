@@ -102,5 +102,5 @@ export const useRiderProfile = () => {
     onError: (e: any) => toast.error(e?.message ?? "Erreur suppression"),
   });
 
-  return { updateAvatar, updateBio, updateLocation, deleteAvatar };
+  return { updateAvatar, updateBio, updateLocation, updateDisplayName, deleteAvatar };
 };
