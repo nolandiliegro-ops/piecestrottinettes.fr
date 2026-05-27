@@ -78,7 +78,7 @@ export const useCompatiblePartsRich = (scooterModelId: string | null | undefined
         slug: p.slug,
         price: p.price,
         image_url: p.image_url,
-        images: (p.images as ImageEntry[] | null) ?? null,
+        images: (p.images as unknown as ImageEntry[] | null) ?? null,
         stock_quantity: p.stock_quantity,
         is_featured: p.is_featured,
         created_at: p.created_at,

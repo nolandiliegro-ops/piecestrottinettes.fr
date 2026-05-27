@@ -34,7 +34,7 @@ const GarageRiderCard = () => {
     : "CRÉER MON GARAGE →";
 
   return (
-    <section className="px-4 py-8 lg:py-12" style={{ backgroundColor: "#FAFAF8" }}>
+    <section className="px-4 py-10 lg:py-14" style={{ backgroundColor: "#FAFAF8" }}>
       <style>{`
         @keyframes garageShine {
           0% { background-position: -150% 50%; }
