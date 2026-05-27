@@ -1,198 +1,78 @@
-# Plan — Système Brand Assets centralisé
+# Plan — Home : espacements harmonisés & rythme visuel
 
-Mission : centraliser logo / favicon / OG image / watermark dans une table Supabase + bucket Storage, exposés via un hook React Query, gérables depuis une nouvelle page admin `/admin/brand`. Objectif final : changement de logo en 1 clic, site clonable sans toucher au code.
+## Constat
+Le squiggle orange pointe le vide entre la grille **TOP DU MOMENT** (`ScooterCarousel`) et la suite. En auditant `src/pages/Index.tsx`, chaque section gère son propre padding vertical de façon incohérente :
 
----
+| Section | Padding vertical actuel |
+|---|---|
+| `HeroSearchFirst` | (interne) |
+| `ShopByCompatibility` | `my-12 lg:my-16` (≈ 48/64px **chaque côté**) |
+| `BrandCarousel` | interne |
+| `GarageRiderCard` | interne |
+| `Divider` | `py-2 lg:py-4` |
+| `ScooterCarousel` | `py-10 lg:py-14` |
+| `FavoritesSection` | `py-8` (masquée si non connecté → **gros vide** entre Scooters et TrustStrip) |
+| `TrustStrip` | interne |
 
-## 1. État des lieux — usages logo hardcodés
+Deux problèmes :
+1. **Doublons de spacing** : `my-16` d'une section + `py-14` de la suivante = ~120px de vide.
+2. **Section conditionnelle vide** (`FavoritesSection` cachée pour les invités) qui ne compense pas.
 
-Imports actuels de `@/assets/logo-pt.png` à refactorer :
-- `src/components/Header.tsx` (ligne 14, 84)
-- `src/components/Footer.tsx` (ligne 2, 11)
-- `src/pages/Login.tsx` (ligne 10, 103)
-- `src/pages/Register.tsx` (ligne 10, 121)
+## Objectif
+Un rythme vertical **unique et cohérent** sur toute la home, façon éditorial premium (style Apple / Aesop) : transitions douces, respirations égales, alignement parfait des largeurs max.
 
-Autres assets brand :
-- `index.html` : `/favicon.png`, `/pwa-192x192.png` (apple-touch), `og:image` (URL Supabase site-assets), JSON-LD logo
-- `vite.config.ts` : manifest PWA (déjà OK : short_name "PiècesTrott", name "Pièces Trottinettes", start_url "/"). À ajuster : `theme_color` actuellement `#93B5A1` → demande `#1A1A1A`, `background_color` actuellement `#1A1A1A` → demande `#F5F0E8`. **À confirmer car incohérent avec le design system actuel.**
-- `public/` : favicon.png, favicon.ico, pwa-192x192.png, pwa-512x512.png
+## Changements proposés (UI uniquement, aucun changement de logique)
 
----
+### 1. Tokenisation du rythme vertical
+Créer une convention unique : chaque section utilise **`py-12 lg:py-20`** (sans `my-*`). Suppression des marges externes pour éviter le cumul.
 
-## 2. Infrastructure backend
+Fichiers touchés :
+- `src/components/home/ShopByCompatibility/index.tsx` → remplacer `my-12 lg:my-16` par `py-10 lg:py-16` sur le wrapper `<section>`.
+- `src/components/home/ScooterCarousel.tsx` → `py-10 lg:py-14` → `py-12 lg:py-16` (alignement).
+- `src/components/home/FavoritesSection.tsx` → `py-8` → `py-12 lg:py-16` ; ajouter `return null` propre quand vide (au lieu de section vide qui crée un trou).
+- `src/components/home/BrandCarousel.tsx`, `GarageRiderCard.tsx`, `TrustStrip.tsx`, `HeroSearchFirst.tsx` : harmoniser padding vertical à la même échelle (lecture rapide nécessaire avant édition).
 
-### 2.1 Migration SQL (table + RLS + seed)
+### 2. Divider redessiné
+`src/components/home/Divider.tsx` actuellement = simple trait gris.
+Le remplacer par un **espaceur typographique discret** : ornement central minimaliste (point central + filets fins de chaque côté, couleur `rgba(26,26,26,0.12)`), padding `py-6 lg:py-10`. Donne du souffle sans paraître vide.
 
-```sql
-CREATE TABLE public.brand_assets (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  asset_key text NOT NULL UNIQUE,
-  asset_url text NOT NULL DEFAULT '',
-  alt_text text,
-  description text,
-  updated_at timestamptz NOT NULL DEFAULT now(),
-  updated_by uuid
-);
-CREATE INDEX idx_brand_assets_key ON public.brand_assets(asset_key);
+### 3. Fond unifié
+Aujourd'hui : `Index` = `#FAFAF8`, `ScooterCarousel` = `#FAFAF8`, `ShopByCompatibility` = carte blanche `#FFFFFF` posée sur `#FAFAF8`. Garder ce pattern mais **standardiser le radius** des cartes section (`rounded-3xl`) et le `border` (`0.5px solid rgba(0,0,0,0.04)`) pour les sections qui utilisent une « carte » (ShopByCompatibility, GarageRiderCard).
 
-ALTER TABLE public.brand_assets ENABLE ROW LEVEL SECURITY;
+### 4. Largeur max cohérente
+Toutes les sections de contenu : `max-w-7xl mx-auto px-4 lg:px-8`. Vérifier que `BrandCarousel`, `ScooterCarousel`, `FavoritesSection`, `TrustStrip` respectent cette grille.
 
-CREATE POLICY "Public can read brand assets"
-  ON public.brand_assets FOR SELECT USING (true);
+### 5. Ordre des sections (optionnel — à valider)
+Ordre actuel : Hero → ShopByCompatibility → BrandCarousel → GarageRiderCard → Divider → ScooterCarousel → Favorites → Trust.
 
-CREATE POLICY "Admins can insert brand assets"
-  ON public.brand_assets FOR INSERT TO authenticated
-  WITH CHECK (has_role(auth.uid(), 'admin'));
+Proposition (plus narratif) :
+Hero → **ScooterCarousel** (top du moment, visuel fort) → **ShopByCompatibility** (conversion) → BrandCarousel → GarageRiderCard → Favorites → Divider → Trust.
 
-CREATE POLICY "Admins can update brand assets"
-  ON public.brand_assets FOR UPDATE TO authenticated
-  USING (has_role(auth.uid(), 'admin'));
+> Ce point est **optionnel** : si tu préfères ne pas toucher à l'ordre, je l'omets.
 
-CREATE POLICY "Admins can delete brand assets"
-  ON public.brand_assets FOR DELETE TO authenticated
-  USING (has_role(auth.uid(), 'admin'));
+### 6. Pastille fixe « Roule · Répare · Dure »
+Visible bottom-left dans le screenshot, parfois en superposition gênante sur les CTA. Ajouter `lg:bottom-6` pour la remonter légèrement et `opacity-90` pour l'adoucir. (Optionnel.)
 
-CREATE TRIGGER trg_brand_assets_updated_at
-  BEFORE UPDATE ON public.brand_assets
-  FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+## Périmètre exact
+**Frontend uniquement, présentation uniquement.** Aucune modification :
+- des hooks de données
+- des routes / logiques
+- des schémas Supabase
+- des composants admin
 
-INSERT INTO public.brand_assets (asset_key, description) VALUES
-  ('logo_main_light',    'Logo principal (fond clair) — Header desktop & mobile'),
-  ('logo_main_dark',     'Logo principal (fond sombre) — futur dark mode'),
-  ('logo_compact_light', 'Logo compact / icône sur fond clair'),
-  ('logo_compact_dark',  'Logo compact / icône sur fond sombre'),
-  ('favicon',            'Favicon 32x32 / 64x64'),
-  ('apple_touch_icon',   'Apple touch icon 180x180'),
-  ('og_image',           'Image Open Graph (1200x630) pour partages sociaux'),
-  ('watermark_product',  'Watermark appliqué sur photos produits')
-ON CONFLICT (asset_key) DO NOTHING;
-```
+## Fichiers modifiés (estimé)
+1. `src/components/home/ShopByCompatibility/index.tsx`
+2. `src/components/home/ScooterCarousel.tsx` (padding section uniquement)
+3. `src/components/home/FavoritesSection.tsx`
+4. `src/components/home/Divider.tsx` (refonte visuelle)
+5. `src/components/home/BrandCarousel.tsx` (padding)
+6. `src/components/home/GarageRiderCard.tsx` (padding)
+7. `src/components/home/TrustStrip.tsx` (padding)
+8. `src/pages/Index.tsx` (réordonnancement **si** option 5 validée, sinon non touché)
 
-### 2.2 Bucket Storage `brand-assets`
+Aucun fichier créé, aucun supprimé.
 
-```sql
-INSERT INTO storage.buckets (id, name, public)
-VALUES ('brand-assets', 'brand-assets', true)
-ON CONFLICT (id) DO NOTHING;
-
-CREATE POLICY "Public read brand-assets"
-  ON storage.objects FOR SELECT USING (bucket_id = 'brand-assets');
-
-CREATE POLICY "Admins upload brand-assets"
-  ON storage.objects FOR INSERT TO authenticated
-  WITH CHECK (bucket_id = 'brand-assets' AND has_role(auth.uid(), 'admin'));
-
-CREATE POLICY "Admins update brand-assets"
-  ON storage.objects FOR UPDATE TO authenticated
-  USING (bucket_id = 'brand-assets' AND has_role(auth.uid(), 'admin'));
-
-CREATE POLICY "Admins delete brand-assets"
-  ON storage.objects FOR DELETE TO authenticated
-  USING (bucket_id = 'brand-assets' AND has_role(auth.uid(), 'admin'));
-```
-
----
-
-## 3. Couche application
-
-### 3.1 `src/config/brand.ts` (fallback statique)
-
-Map `asset_key → URL statique` (logo-pt.png importé, /favicon.png, /pwa-192x192.png, og-image actuelle). Utilisé si la requête Supabase échoue.
-
-### 3.2 `src/hooks/useBrandAssets.ts`
-
-- `useBrandAssets()` : `useQuery` (`staleTime: 1h`, `gcTime: 24h`) → renvoie `Record<assetKey, { url, alt }>`.
-- `useBrandAsset(key)` : helper renvoyant l'URL d'un asset précis avec fallback automatique sur `BRAND_ASSETS_FALLBACK[key]`.
-- En cas d'erreur réseau ou ligne `asset_url` vide → fallback.
-
-### 3.3 Refactor composants
-
-- Header, Footer, Login, Register : remplacer `import logoImage` par `const logoUrl = useBrandAsset('logo_main_light')`. Dimensions / classes inchangées.
-- `src/components/SEO.tsx` : nouveau composant `<BrandHelmet />` monté dans `App.tsx` qui injecte via react-helmet-async :
-  - `<meta property="og:image" content={og_image}>`
-  - `<meta name="twitter:image" content={og_image}>`
-  - `<link rel="icon">` dynamique (favicon)
-  - `<link rel="apple-touch-icon">`
-- react-helmet-async : déjà utilisé dans le projet (`SEO.tsx`), pas d'install.
-
-### 3.4 PWA manifest (vite.config.ts + index.html)
-
-- Icônes PWA restent statiques (`/pwa-192x192.png`, `/pwa-512x512.png`) — limitation manifest.
-- Ajustements demandés : `theme_color: "#1A1A1A"`, `background_color: "#F5F0E8"`. **Question :** confirmer ces valeurs (actuellement inversées et `#93B5A1` pour theme). Sans réponse → on applique tel que demandé.
-- `index.html` : `apple-mobile-web-app-title` déjà à "PiècesTrott". À passer à "Pièces Trottinettes" si demandé (à confirmer).
-
----
-
-## 4. Page admin `/admin/brand`
-
-- Route protégée admin ajoutée à `Admin.tsx` (suit le pattern existant des managers).
-- Composant `src/components/admin/BrandAssetsManager.tsx` :
-  - Grille de cards, une par `asset_key`
-  - Preview de l'asset (image 200x100 avec fond damier pour transparence)
-  - Bouton "Remplacer" → input file → upload Storage `brand-assets/{asset_key}-{timestamp}.{ext}` → update `asset_url` + `updated_by = auth.uid()`
-  - Champ alt_text éditable
-  - Affichage `updated_at` relatif + email updated_by
-  - Invalidation cache `useBrandAssets` après save
-- Entrée sidebar admin "Brand Assets" (icône `Palette` ou `Image`).
-
----
-
-## 5. Fichiers — créés / modifiés
-
-**Créés (6) :**
-- `supabase/migrations/<ts>_brand_assets.sql`
-- `src/config/brand.ts`
-- `src/hooks/useBrandAssets.ts`
-- `src/components/admin/BrandAssetsManager.tsx`
-- `src/components/BrandHelmet.tsx`
-- `.lovable/plan.md` (ce plan)
-
-**Modifiés (7) :**
-- `src/components/Header.tsx`
-- `src/components/Footer.tsx`
-- `src/pages/Login.tsx`
-- `src/pages/Register.tsx`
-- `src/pages/Admin.tsx` (route + entry sidebar)
-- `src/App.tsx` (monter `<BrandHelmet />`)
-- `vite.config.ts` + `index.html` (manifest theme/background colors)
-
-**Non touchés (verrouillés) :** CheckoutPage, Edge Functions paiement, design tokens, watermark produit (out of scope).
-
----
-
-## 6. Plan de tests
-
-- Desktop 1440px : Header logo, Footer logo, Login, Register
-- Mobile 375px : Header (logo h-14), MobileNav inchangée
-- Admin : upload logo PNG transparent → preview maj → reload page client → nouveau logo visible
-- Réseau coupé : fallback `BRAND_ASSETS_FALLBACK` s'applique (test via DevTools offline)
-- PWA install (Chrome Android émulé) : nom "Pièces Trottinettes"
-- og:image : Facebook debugger sur URL de prod après deploy
-
----
-
-## 7. Rollback
-
-- Noter le commit hash avant Build.
-- Rollback SQL : `DROP TABLE public.brand_assets;` + `DELETE FROM storage.buckets WHERE id='brand-assets';` (les policies storage tombent avec le bucket via cascade des objets).
-- Rollback code : revert au commit hash.
-
----
-
-## 8. Estimation Build
-
-- Migration + bucket + seed : 1 message
-- Hook + fallback + refactor 4 composants : 1 message
-- BrandHelmet + App.tsx + manifest : 1 message
-- BrandAssetsManager + route admin : 1-2 messages
-- Upload initial logo + validation visuelle : 1 message
-
-**Total estimé : 5-6 messages Lovable.**
-
----
-
-## 9. Questions à valider avant Build
-
-1. Confirmer `theme_color: #1A1A1A` et `background_color: #F5F0E8` pour le manifest (actuellement `#93B5A1` / `#1A1A1A`).
-2. `apple-mobile-web-app-title` : laisser "PiècesTrott" (compact) ou passer à "Pièces Trottinettes" ?
-3. Pour le 1er upload du nouveau logo : tu l'uploades toi via l'admin après Build, ou tu me fournis le fichier maintenant pour que je l'intègre dans le même Build ?
+## Questions avant GO BUILD
+1. Tu valides l'**option 5 (réordonner les sections)** ou je garde l'ordre actuel ?
+2. Tu veux que je propose **3 directions visuelles rendues** (via design directions) pour le nouveau Divider et le rythme global avant d'implémenter, ou j'applique direct ?
+3. La pastille fixe « Roule · Répare · Dure » : je la garde telle quelle, je l'adoucis, ou je la supprime ?
