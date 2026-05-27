@@ -96,13 +96,24 @@ const ShopByCompatibility = () => {
 
   const compatHeaderMode = selectedScooter ? "config" : "discovery";
 
-  // D2: bicolor Anton title — first part (carbon) + second part (accent).
+  // D2: title parts. In trotti modes, when a model name is available,
+  // switch to the model-focal layout (line 1 small "Pour ta Brand",
+  // line 2 large "Model." in brand color).
   const brandName = selectedScooter?.brandName ?? "";
+  const modelName = selectedScooter?.name ?? ""; // SelectedScooter.name holds nickname || scooterModel.name
+  const hasModel = modelName.trim().length > 0 && modelName !== brandName;
+  const isTrottiMode = data.mode === "trotti" || data.mode === "trotti-cats";
+  const modelFocalMode = isTrottiMode && hasModel;
+
   const { titleFirstPart, titleSecondPart } = (() => {
     if (data.mode === "all") return { titleFirstPart: "Tous les", titleSecondPart: "produits." };
     if (data.mode === "filtered-cats")
       return { titleFirstPart: "Sélection", titleSecondPart: "sur mesure." };
     // trotti / trotti-cats
+    if (modelFocalMode) {
+      return { titleFirstPart: `Pour ta ${brandName}`, titleSecondPart: `${modelName}.` };
+    }
+    // Fallback when model name is missing/equals brand
     return { titleFirstPart: "Pour ta", titleSecondPart: `${brandName}.` };
   })();
   const titleAccentColor = brandIsDefault ? NEUTRAL_TITLE_ACCENT : brandColor;
@@ -117,17 +128,14 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // D4: Pure white in neutral mode (was #FAFAFA). Trotti mode keeps brand gradient.
-  const backgroundStyle: React.CSSProperties = brandIsDefault
-    ? { backgroundColor: "#FFFFFF" }
-    : {
-        background: `linear-gradient(180deg, ${hexToRgba(brandColor, 0.08)} 0%, ${hexToRgba(brandColor, 0.04)} 40%, #FFFFFF 100%)`,
-      };
+  // D3: Pure white in all modes (was gradient in trotti mode).
+  const backgroundStyle: React.CSSProperties = { backgroundColor: "#FFFFFF" };
 
-  // D3: Dynamic filigrane behind everything.
+  // D4: Dynamic filigrane behind everything.
+  // In trotti mode, prefer the model name (e.g. "WOLF WARRIOR") over the brand.
   const filigraneText = brandIsDefault
     ? "PIECESTROTTINETTES"
-    : brandName.toUpperCase();
+    : (hasModel ? modelName : brandName).toUpperCase();
   const filigraneColor = brandIsDefault
     ? "rgba(74,124,89,0.10)"
     : hexToRgba(brandColor, 0.13);
@@ -186,6 +194,7 @@ const ShopByCompatibility = () => {
               titleFirstPart={titleFirstPart}
               titleSecondPart={titleSecondPart}
               titleAccentColor={titleAccentColor}
+              modelFocalMode={modelFocalMode}
             />
 
             <div className="mb-4 lg:mb-5">

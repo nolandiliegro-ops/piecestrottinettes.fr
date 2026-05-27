@@ -11,17 +11,23 @@ interface Props {
   /** Pre-computed subtitle from caller. If omitted, falls back to the legacy derivation. */
   subtitle?: string;
   /**
-   * Optional brand accent color (HEX). When provided, eyebrow + chevron +
+   * Optional brand accent color (HEX). When provided, eyebrow +
    * "Tout voir" button take this color. When undefined, fall back to the
    * legacy palette (config: #D74F00, discovery: #4A7C59).
    */
   accentColor?: string;
-  /** Title first part (rendered in carbon). e.g. "Tous les", "Sélection", "Pour ta". */
+  /** Title first part — line 1. */
   titleFirstPart: string;
-  /** Title second part (rendered in titleAccentColor, includes the period). e.g. "produits.", "Dualtron.". */
+  /** Title second part (focal) — line 2, includes the period. */
   titleSecondPart: string;
   /** Accent color used for the second part of the bicolor title (HEX). */
   titleAccentColor: string;
+  /**
+   * When true, line 1 renders as a compact "context" line (22px) and
+   * line 2 as the focal model name (36px). When false/undefined, both
+   * lines render at clamp(32-44px).
+   */
+  modelFocalMode?: boolean;
 }
 
 // Hex → rgba helper for hover bg
@@ -32,9 +38,8 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
-const TITLE_FONT: React.CSSProperties = {
+const TITLE_FONT_BASE: React.CSSProperties = {
   fontFamily: "'Anton', 'Druk Wide', Impact, sans-serif",
-  fontSize: "clamp(32px, 4vw, 44px)",
   fontWeight: 400,
   letterSpacing: "-0.02em",
   lineHeight: 0.92,
@@ -53,6 +58,7 @@ const CompatibilityHeader = ({
   titleFirstPart,
   titleSecondPart,
   titleAccentColor,
+  modelFocalMode,
 }: Props) => {
   const isConfig = mode === "config";
 
@@ -69,6 +75,15 @@ const CompatibilityHeader = ({
   const titleAriaLabel = isConfig
     ? `Changer de trottinette (actuelle : ${scooterName ?? titleSecondPart})`
     : undefined;
+
+  // D2: per-line sizing. In modelFocalMode, line 1 is compact (22px) and
+  // line 2 is the focal (36px). Otherwise both lines share clamp(32-44px).
+  const firstLineFont: React.CSSProperties = modelFocalMode
+    ? { ...TITLE_FONT_BASE, fontSize: 22, color: "#1A1A1A" }
+    : { ...TITLE_FONT_BASE, fontSize: "clamp(32px, 4vw, 44px)", color: "#1A1A1A" };
+  const secondLineFont: React.CSSProperties = modelFocalMode
+    ? { ...TITLE_FONT_BASE, fontSize: 36, color: titleAccentColor }
+    : { ...TITLE_FONT_BASE, fontSize: "clamp(32px, 4vw, 44px)", color: titleAccentColor };
 
   return (
     <div className="flex items-start justify-between gap-3 mb-4 lg:mb-5">
@@ -94,13 +109,10 @@ const CompatibilityHeader = ({
             className="group inline-block text-left min-h-[44px] -my-1 py-1"
             aria-label={titleAriaLabel}
           >
-            <span style={{ ...TITLE_FONT, color: "#1A1A1A", display: "block" }}>
+            <span style={{ ...firstLineFont, display: "block" }}>
               {titleFirstPart}
             </span>
-            <span
-              className="inline-flex items-end gap-1.5"
-              style={{ ...TITLE_FONT, color: titleAccentColor }}
-            >
+            <span className="inline-flex items-end gap-1.5" style={secondLineFont}>
               <span>{titleSecondPart}</span>
               <ChevronDown
                 className="transition-transform group-hover:translate-y-0.5"
@@ -116,10 +128,10 @@ const CompatibilityHeader = ({
           </button>
         ) : (
           <h2 className="min-h-[44px]">
-            <span style={{ ...TITLE_FONT, color: "#1A1A1A", display: "block" }}>
+            <span style={{ ...firstLineFont, display: "block" }}>
               {titleFirstPart}
             </span>
-            <span style={{ ...TITLE_FONT, color: titleAccentColor, display: "block" }}>
+            <span style={{ ...secondLineFont, display: "block" }}>
               {titleSecondPart}
             </span>
           </h2>

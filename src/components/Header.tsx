@@ -23,6 +23,15 @@ import {
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from "@/components/ui/scroll-area";
+
+// Hex → rgba helper for the minimal scooter badge border/hover bg
+const hexToRgba = (hex: string, alpha: number): string => {
+  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -108,67 +117,111 @@ const Header = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
-            {/* Mobile Slim Selector - Ultra compact badge for mobile */}
+            {/* Mobile Slim Selector — Minimal Anton model-only badge (D1) */}
             {selectedScooter && (
-              <Link 
+              <Link
                 to="/garage"
-                className={cn(
-                  "flex md:hidden items-center gap-1.5 px-2.5 py-1.5 rounded-full",
-                  "bg-white/70 backdrop-blur-xl border-[0.5px]",
-                  "transition-all duration-300",
-                  selectedBrandColors.borderClass
-                )}
-                style={{ 
-                  boxShadow: `0 0 12px ${selectedBrandColors.glowColor}`,
+                className="flex md:hidden items-center min-h-[44px]"
+                style={{
+                  padding: "7px 12px",
+                  borderRadius: 8,
+                  border: `1px solid ${hexToRgba(selectedBrandColors.accent, 0.30)}`,
+                  backgroundColor: "transparent",
+                  maxWidth: 160,
                 }}
               >
-                <Bike className={cn("w-3.5 h-3.5", selectedBrandColors.textClass)} />
-                <span className={cn(
-                  "text-xs font-medium max-w-[70px] truncate",
-                  selectedBrandColors.textClass
-                )}>
+                <span
+                  className="truncate"
+                  style={{
+                    fontFamily: "'Anton', Impact, sans-serif",
+                    fontSize: 12,
+                    fontWeight: 400,
+                    letterSpacing: "-0.01em",
+                    textTransform: "uppercase",
+                    lineHeight: 1,
+                    color: selectedBrandColors.accent,
+                  }}
+                >
                   {selectedScooter.name}
                 </span>
-                {compatibleCount > 0 && (
-                  <span 
-                    className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-white/60"
-                    style={{ color: selectedBrandColors.accent }}
-                  >
-                    ({compatibleCount})
-                  </span>
-                )}
               </Link>
             )}
 
-            {/* Ma Trottinette Selector - Monaco Design with Dynamic Brand Colors - Desktop */}
+            {/* Ma Trottinette Selector — Minimal badge (D1) - Desktop */}
             <DropdownMenu open={isScooterDropdownOpen} onOpenChange={setIsScooterDropdownOpen}>
               <DropdownMenuTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  className={cn(
-                    "hidden md:flex items-center gap-2 rounded-full px-4 h-10",
-                    "bg-white/70 backdrop-blur-xl border-[0.5px]",
-                    "hover:bg-white/90 transition-all duration-300",
-                    selectedScooter 
-                      ? [selectedBrandColors.borderClass, "border-[1.5px]"]
-                      : "border-white/20 hover:border-mineral/30"
-                  )}
-                  style={selectedScooter ? {
-                    boxShadow: `0 0 16px ${selectedBrandColors.glowColor}`,
-                  } : undefined}
+                <button
+                  type="button"
+                  className="hidden md:inline-flex items-center min-h-[36px] transition-colors duration-150"
+                  style={
+                    selectedScooter
+                      ? {
+                          padding: "7px 12px",
+                          borderRadius: 8,
+                          border: `1px solid ${hexToRgba(selectedBrandColors.accent, 0.30)}`,
+                          backgroundColor: "transparent",
+                        }
+                      : {
+                          padding: "7px 12px",
+                          borderRadius: 8,
+                          border: "1px solid rgba(0,0,0,0.10)",
+                          backgroundColor: "transparent",
+                        }
+                  }
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = selectedScooter
+                      ? hexToRgba(selectedBrandColors.accent, 0.04)
+                      : "rgba(0,0,0,0.04)";
+                    if (selectedScooter) {
+                      e.currentTarget.style.borderColor = selectedBrandColors.accent;
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    if (selectedScooter) {
+                      e.currentTarget.style.borderColor = hexToRgba(selectedBrandColors.accent, 0.30);
+                    }
+                  }}
                 >
-                  <Bike className={cn(
-                    "w-4 h-4 transition-colors",
-                    selectedScooter ? selectedBrandColors.textClass : "text-muted-foreground"
-                  )} />
-                  <span className={cn(
-                    "text-sm font-medium max-w-[140px] truncate transition-colors",
-                    selectedScooter && selectedBrandColors.textClass
-                  )}>
-                    {selectedScooter ? selectedScooter.name : "Ma Trottinette"}
-                  </span>
-                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
-                </Button>
+                  {selectedScooter ? (
+                    <span
+                      className="truncate"
+                      style={{
+                        fontFamily: "'Anton', Impact, sans-serif",
+                        fontSize: 12,
+                        fontWeight: 400,
+                        letterSpacing: "-0.01em",
+                        textTransform: "uppercase",
+                        lineHeight: 1,
+                        color: selectedBrandColors.accent,
+                        maxWidth: 160,
+                      }}
+                    >
+                      {selectedScooter.name}
+                    </span>
+                  ) : (
+                    <span
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: 12,
+                        fontWeight: 500,
+                        lineHeight: 1,
+                        color: "#6B7280",
+                      }}
+                    >
+                      Ma Trottinette
+                    </span>
+                  )}
+                  <ChevronDown
+                    style={{
+                      width: 10,
+                      height: 10,
+                      marginLeft: 6,
+                      color: "#6B7280",
+                    }}
+                    strokeWidth={2.4}
+                  />
+                </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent 
                 align="end" 
