@@ -1,5 +1,4 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { Flame } from "lucide-react";
 
 const GarageWeekIntro = () => {
   const reduceMotion = useReducedMotion();
@@ -7,36 +6,43 @@ const GarageWeekIntro = () => {
   return (
     <div className="mx-auto max-w-[760px] text-center">
       <motion.div
-        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full mb-5 lg:mb-6"
+        className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full mb-5 lg:mb-6"
         style={{
           background:
-            "linear-gradient(135deg, rgba(255,102,0,0.14) 0%, rgba(255,102,0,0.06) 100%)",
-          border: "1px solid rgba(255,102,0,0.30)",
-          boxShadow: "0 4px 14px -4px rgba(255,102,0,0.20)",
+            "linear-gradient(135deg, rgba(74,124,89,0.14) 0%, rgba(74,124,89,0.06) 100%)",
+          border: "1px solid rgba(74,124,89,0.30)",
+          boxShadow: "0 4px 14px -4px rgba(74,124,89,0.20)",
         }}
         animate={
           reduceMotion
             ? undefined
             : {
                 boxShadow: [
-                  "0 4px 14px -4px rgba(255,102,0,0.20)",
-                  "0 4px 22px -4px rgba(255,102,0,0.40)",
-                  "0 4px 14px -4px rgba(255,102,0,0.20)",
+                  "0 4px 14px -4px rgba(74,124,89,0.20)",
+                  "0 4px 22px -4px rgba(74,124,89,0.40)",
+                  "0 4px 14px -4px rgba(74,124,89,0.20)",
                 ],
               }
         }
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Flame
-          className="w-3.5 h-3.5"
-          style={{ color: "#FF6600" }}
-          strokeWidth={2.4}
-          aria-hidden
-        />
+        <span className="relative inline-flex items-center justify-center" aria-hidden>
+          <span
+            className="absolute inline-flex h-2.5 w-2.5 rounded-full opacity-75 animate-ping"
+            style={{ backgroundColor: "#4A7C59" }}
+          />
+          <span
+            className="relative inline-flex h-2 w-2 rounded-full"
+            style={{
+              backgroundColor: "#4A7C59",
+              boxShadow: "0 0 8px rgba(74,124,89,0.7)",
+            }}
+          />
+        </span>
         <span
           className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase"
           style={{
-            color: "#FF6600",
+            color: "#2C5A3F",
             fontFamily: "'Plus Jakarta Sans', sans-serif",
           }}
         >
