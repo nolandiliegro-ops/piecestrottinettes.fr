@@ -16,6 +16,12 @@ interface Props {
    * legacy palette (config: #D74F00, discovery: #4A7C59).
    */
   accentColor?: string;
+  /** Title first part (rendered in carbon). e.g. "Tous les", "Sélection", "Pour ta". */
+  titleFirstPart: string;
+  /** Title second part (rendered in titleAccentColor, includes the period). e.g. "produits.", "Dualtron.". */
+  titleSecondPart: string;
+  /** Accent color used for the second part of the bicolor title (HEX). */
+  titleAccentColor: string;
 }
 
 // Hex → rgba helper for hover bg
@@ -24,6 +30,15 @@ const hexToRgba = (hex: string, alpha: number): string => {
   if (!m) return hex;
   const n = parseInt(m[1], 16);
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
+
+const TITLE_FONT: React.CSSProperties = {
+  fontFamily: "'Anton', 'Druk Wide', Impact, sans-serif",
+  fontSize: "clamp(32px, 4vw, 44px)",
+  fontWeight: 400,
+  letterSpacing: "-0.02em",
+  lineHeight: 0.92,
+  textTransform: "uppercase",
 };
 
 const CompatibilityHeader = ({
@@ -35,14 +50,15 @@ const CompatibilityHeader = ({
   onActionClick,
   subtitle: customSubtitle,
   accentColor,
+  titleFirstPart,
+  titleSecondPart,
+  titleAccentColor,
 }: Props) => {
   const isConfig = mode === "config";
 
   const eyebrowText = isConfig ? "— COMPATIBLE AVEC TA TROTTI" : "— TOUT LE CATALOGUE";
   const eyebrowColor = accentColor ?? (isConfig ? "#D74F00" : "#4A7C59");
-  const chevronColor = accentColor ?? "#1A1A1A";
-
-  const titleText = isConfig ? scooterName ?? "Ma trotti" : "Tous les produits";
+  const chevronColor = titleAccentColor;
 
   const subtitle =
     customSubtitle ??
@@ -50,11 +66,15 @@ const CompatibilityHeader = ({
       ? `${totalCount} pièce${totalCount > 1 ? "s" : ""} compatible${totalCount > 1 ? "s" : ""}`
       : `${totalCount} référence${totalCount > 1 ? "s" : ""} · ${categoriesCount} catégorie${categoriesCount > 1 ? "s" : ""}`);
 
+  const titleAriaLabel = isConfig
+    ? `Changer de trottinette (actuelle : ${scooterName ?? titleSecondPart})`
+    : undefined;
+
   return (
     <div className="flex items-start justify-between gap-3 mb-4 lg:mb-5">
       <div className="min-w-0">
         <p
-          className="mb-1.5"
+          className="mb-2"
           style={{
             color: eyebrowColor,
             letterSpacing: "0.15em",
@@ -71,45 +91,42 @@ const CompatibilityHeader = ({
           <button
             type="button"
             onClick={onTitleClick}
-            className="inline-flex items-center gap-1 group min-h-[44px] -my-2 py-2"
-            aria-label={`Changer de trottinette (actuel : ${titleText})`}
+            className="group inline-block text-left min-h-[44px] -my-1 py-1"
+            aria-label={titleAriaLabel}
           >
-            <span
-              className="text-[22px] sm:text-[24px] lg:text-[26px]"
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontWeight: 800,
-                letterSpacing: "-0.025em",
-                color: "#1A1A1A",
-              }}
-            >
-              {titleText}
+            <span style={{ ...TITLE_FONT, color: "#1A1A1A", display: "block" }}>
+              {titleFirstPart}
             </span>
-            <ChevronDown
-              className="w-4 h-4 transition-transform group-hover:translate-y-0.5"
-              strokeWidth={2.5}
-              style={{ color: chevronColor }}
-            />
+            <span
+              className="inline-flex items-end gap-1.5"
+              style={{ ...TITLE_FONT, color: titleAccentColor }}
+            >
+              <span>{titleSecondPart}</span>
+              <ChevronDown
+                className="transition-transform group-hover:translate-y-0.5"
+                style={{
+                  width: "0.55em",
+                  height: "0.55em",
+                  color: chevronColor,
+                  marginBottom: "0.18em",
+                }}
+                strokeWidth={2.5}
+              />
+            </span>
           </button>
         ) : (
-          <h2
-            className="text-[22px] sm:text-[24px] lg:text-[26px]"
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontWeight: 800,
-              letterSpacing: "-0.025em",
-              color: "#1A1A1A",
-              minHeight: "44px",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            {titleText}
+          <h2 className="min-h-[44px]">
+            <span style={{ ...TITLE_FONT, color: "#1A1A1A", display: "block" }}>
+              {titleFirstPart}
+            </span>
+            <span style={{ ...TITLE_FONT, color: titleAccentColor, display: "block" }}>
+              {titleSecondPart}
+            </span>
           </h2>
         )}
 
         <p
-          className="mt-1"
+          className="mt-2.5"
           style={{
             color: "#6B7280",
             fontFamily: "'Inter', sans-serif",

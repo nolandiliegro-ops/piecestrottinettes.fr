@@ -16,6 +16,8 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
+const NEUTRAL_TITLE_ACCENT = "#4A7C59";
+
 const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { open: openHeaderDropdown } = useHeaderScooterDropdown();
@@ -94,6 +96,17 @@ const ShopByCompatibility = () => {
 
   const compatHeaderMode = selectedScooter ? "config" : "discovery";
 
+  // D2: bicolor Anton title — first part (carbon) + second part (accent).
+  const brandName = selectedScooter?.brandName ?? "";
+  const { titleFirstPart, titleSecondPart } = (() => {
+    if (data.mode === "all") return { titleFirstPart: "Tous les", titleSecondPart: "produits." };
+    if (data.mode === "filtered-cats")
+      return { titleFirstPart: "Sélection", titleSecondPart: "sur mesure." };
+    // trotti / trotti-cats
+    return { titleFirstPart: "Pour ta", titleSecondPart: `${brandName}.` };
+  })();
+  const titleAccentColor = brandIsDefault ? NEUTRAL_TITLE_ACCENT : brandColor;
+
   // Bottom banner href: pass first selected category as fallback (until catalogue supports multi)
   const catalogueHref = (() => {
     const params = new URLSearchParams();
@@ -104,71 +117,115 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // D1: Dynamic gradient background tinted by brand color
+  // D4: Pure white in neutral mode (was #FAFAFA). Trotti mode keeps brand gradient.
   const backgroundStyle: React.CSSProperties = brandIsDefault
-    ? { backgroundColor: "#FAFAFA" }
+    ? { backgroundColor: "#FFFFFF" }
     : {
-        background: `linear-gradient(180deg, ${hexToRgba(brandColor, 0.08)} 0%, ${hexToRgba(brandColor, 0.04)} 40%, #FAFAFA 100%)`,
+        background: `linear-gradient(180deg, ${hexToRgba(brandColor, 0.08)} 0%, ${hexToRgba(brandColor, 0.04)} 40%, #FFFFFF 100%)`,
       };
+
+  // D3: Dynamic filigrane behind everything.
+  const filigraneText = brandIsDefault
+    ? "PIECESTROTTINETTES"
+    : brandName.toUpperCase();
+  const filigraneColor = brandIsDefault
+    ? "rgba(74,124,89,0.10)"
+    : hexToRgba(brandColor, 0.13);
+  const filigraneFontSize = brandIsDefault
+    ? "clamp(60px, 8vw, 80px)"
+    : "clamp(100px, 14vw, 150px)";
 
   return (
     <section className="relative w-full">
       <div className="max-w-7xl mx-auto px-4 my-12 lg:my-16">
         <div
-          className="rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
+          className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
             ...backgroundStyle,
-            border: "0.5px solid rgba(0,0,0,0.05)",
+            border: "0.5px solid rgba(0,0,0,0.04)",
           }}
         >
-          <CompatibilityHeader
-            mode={compatHeaderMode}
-            scooterName={selectedScooter?.name ?? null}
-            totalCount={data.totalCount}
-            categoriesCount={data.availableCategories.length}
-            onTitleClick={handleTitleClick}
-            onActionClick={handleActionClick}
-            subtitle={subtitle}
-            accentColor={accentColor}
-          />
-
-          <div className="mb-4 lg:mb-5">
-            <CategoryPills
-              categories={data.availableCategories}
-              selectedSlugs={selectedCategories}
-              onToggle={handleToggleCategory}
-              accentColor={accentColor}
-            />
-          </div>
-
-          {data.isLoading ? (
+          {/* D3: Filigrane — absolute, behind content, clipped by overflow-hidden */}
+          {filigraneText && (
             <div
-              className="flex gap-3.5 overflow-hidden"
-              style={{ height: 280 }}
               aria-hidden
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%) rotate(-3deg)",
+                fontFamily: "'Anton', Impact, sans-serif",
+                fontWeight: 400,
+                textTransform: "uppercase",
+                letterSpacing: "-0.04em",
+                lineHeight: 0.85,
+                whiteSpace: "nowrap",
+                pointerEvents: "none",
+                userSelect: "none",
+                zIndex: 0,
+                color: filigraneColor,
+                fontSize: filigraneFontSize,
+                transition: "color 400ms ease-out, font-size 400ms ease-out",
+              }}
             >
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="flex-shrink-0 w-[200px] sm:w-[220px] rounded-2xl bg-white/60 animate-pulse"
-                />
-              ))}
+              {filigraneText}
             </div>
-          ) : (
-            <PartsCarousel
-              parts={data.filteredParts}
-              onReset={handleResetFilters}
-              accentColor={accentColor}
-            />
           )}
 
-          <BottomBanner
-            mode={compatHeaderMode}
-            scooterName={selectedScooter?.name ?? null}
-            brandName={selectedScooter?.brandName ?? null}
-            totalCount={data.totalCount}
-            catalogueHref={catalogueHref}
-          />
+          {/* Content wrapper above filigrane */}
+          <div className="relative" style={{ zIndex: 1 }}>
+            <CompatibilityHeader
+              mode={compatHeaderMode}
+              scooterName={selectedScooter?.name ?? null}
+              totalCount={data.totalCount}
+              categoriesCount={data.availableCategories.length}
+              onTitleClick={handleTitleClick}
+              onActionClick={handleActionClick}
+              subtitle={subtitle}
+              accentColor={accentColor}
+              titleFirstPart={titleFirstPart}
+              titleSecondPart={titleSecondPart}
+              titleAccentColor={titleAccentColor}
+            />
+
+            <div className="mb-4 lg:mb-5">
+              <CategoryPills
+                categories={data.availableCategories}
+                selectedSlugs={selectedCategories}
+                onToggle={handleToggleCategory}
+                accentColor={accentColor}
+              />
+            </div>
+
+            {data.isLoading ? (
+              <div
+                className="flex gap-3.5 overflow-hidden"
+                style={{ height: 280 }}
+                aria-hidden
+              >
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 w-[200px] sm:w-[220px] rounded-2xl bg-white/60 animate-pulse"
+                  />
+                ))}
+              </div>
+            ) : (
+              <PartsCarousel
+                parts={data.filteredParts}
+                onReset={handleResetFilters}
+                accentColor={accentColor}
+              />
+            )}
+
+            <BottomBanner
+              mode={compatHeaderMode}
+              scooterName={selectedScooter?.name ?? null}
+              brandName={selectedScooter?.brandName ?? null}
+              totalCount={data.totalCount}
+              catalogueHref={catalogueHref}
+            />
+          </div>
         </div>
       </div>
     </section>
