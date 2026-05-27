@@ -162,7 +162,7 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
             <Button variant="outline" onClick={() => onOpenChange(false)} disabled={saving}>
               Annuler
             </Button>
-            <Button onClick={handleSave} disabled={saving}>
+            <Button onClick={handleSave} disabled={saving || !!nameError}>
               {saving && <Loader2 className="w-4 h-4 animate-spin" />}
               Enregistrer
             </Button>
