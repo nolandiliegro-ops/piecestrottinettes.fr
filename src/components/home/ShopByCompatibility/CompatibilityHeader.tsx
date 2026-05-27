@@ -13,6 +13,8 @@ interface Props {
   categoriesCount: number;
   onTitleClick: () => void;
   onActionClick: () => void;
+  /** Callback "Changer de trotti" : ouvre le ScooterSelectorSheet. */
+  onChangeScooter?: () => void;
   /** Pre-computed subtitle from caller. If omitted, falls back to the legacy derivation. */
   subtitle?: string;
   /**
@@ -60,6 +62,7 @@ const CompatibilityHeader = ({
   categoriesCount,
   onTitleClick,
   onActionClick,
+  onChangeScooter,
   subtitle: customSubtitle,
   accentColor,
   titleFirstPart,
@@ -160,23 +163,40 @@ const CompatibilityHeader = ({
 
       {isConfig ? (
         scooterImageUrl && scooterSlug && scooterName ? (
-          <Link
-            to={`/scooter/${scooterSlug}`}
-            aria-label={`Voir la fiche de ${scooterName}`}
-            className="block flex-shrink-0 transition-transform hover:scale-105"
-          >
-            <img
-              src={scooterImageUrl}
-              alt={scooterName}
-              loading="lazy"
-              decoding="async"
-              style={{
-                height: "clamp(120px, 18vw, 200px)",
-                width: "auto",
-                objectFit: "contain",
-              }}
-            />
-          </Link>
+          <div className="flex flex-col items-end gap-0 flex-shrink-0">
+            <Link
+              to={`/scooter/${scooterSlug}`}
+              aria-label={`Voir la fiche de ${scooterName}`}
+              className="block transition-transform hover:scale-105"
+            >
+              <img
+                src={scooterImageUrl}
+                alt={scooterName}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  height: "clamp(120px, 18vw, 200px)",
+                  width: "auto",
+                  objectFit: "contain",
+                }}
+              />
+            </Link>
+            {onChangeScooter && (
+              <button
+                onClick={onChangeScooter}
+                type="button"
+                className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium transition-colors"
+                style={{
+                  color: "rgba(255,255,255,0.55)",
+                  fontFamily: "'Inter', sans-serif",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.95)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+              >
+                ↻ Changer de trotti
+              </button>
+            )}
+          </div>
         ) : (
           <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
         )

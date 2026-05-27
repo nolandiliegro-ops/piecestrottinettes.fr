@@ -199,6 +199,7 @@ const ShopByCompatibility = () => {
               categoriesCount={data.availableCategories.length}
               onTitleClick={handleTitleClick}
               onActionClick={handleActionClick}
+              onChangeScooter={() => setSheetOpen(true)}
               subtitle={subtitle}
               accentColor={accentColor}
               titleFirstPart={titleFirstPart}
