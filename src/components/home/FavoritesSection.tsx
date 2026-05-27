@@ -22,7 +22,7 @@ const FavoritesSection = () => {
   // Show loading state
   if (isLoading) {
     return (
-      <section className="container mx-auto px-4 lg:px-8 py-8">
+      <section className="container mx-auto px-4 lg:px-8 py-10 lg:py-14">
         <div className="flex items-center gap-3 mb-6">
           <Heart className="w-5 h-5 text-mineral" />
           <h2 className="font-display text-xl text-carbon">Mes Favoris</h2>
@@ -40,7 +40,7 @@ const FavoritesSection = () => {
   if (favorites.length === 0) return null;
 
   return (
-    <section className="container mx-auto px-4 lg:px-8 py-8">
+    <section className="container mx-auto px-4 lg:px-8 py-10 lg:py-14">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-full bg-mineral/10">
