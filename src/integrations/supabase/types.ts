@@ -966,6 +966,7 @@ export type Database = {
           created_at: string | null
           display_name: string | null
           id: string
+          is_public: boolean
           performance_points: number | null
           rider_location: string | null
           updated_at: string | null
@@ -977,6 +978,7 @@ export type Database = {
           created_at?: string | null
           display_name?: string | null
           id: string
+          is_public?: boolean
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
@@ -988,6 +990,7 @@ export type Database = {
           created_at?: string | null
           display_name?: string | null
           id?: string
+          is_public?: boolean
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
