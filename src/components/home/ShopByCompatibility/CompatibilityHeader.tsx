@@ -1,9 +1,14 @@
 import { ChevronDown, Eye, Target } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   mode: "config" | "discovery";
   scooterName: string | null;
+  /** Scooter image URL (cutout). Si fourni avec scooterSlug, remplace ToutVoirButton en mode config. */
+  scooterImageUrl?: string | null;
+  /** Scooter slug pour la route /scooter/{slug}. */
+  scooterSlug?: string | null;
   totalCount: number;
   categoriesCount: number;
   onTitleClick: () => void;
@@ -49,6 +54,8 @@ const TITLE_FONT_BASE: React.CSSProperties = {
 const CompatibilityHeader = ({
   mode,
   scooterName,
+  scooterImageUrl,
+  scooterSlug,
   totalCount,
   categoriesCount,
   onTitleClick,
@@ -152,7 +159,27 @@ const CompatibilityHeader = ({
       </div>
 
       {isConfig ? (
-        <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
+        scooterImageUrl && scooterSlug && scooterName ? (
+          <Link
+            to={`/scooter/${scooterSlug}`}
+            aria-label={`Voir la fiche de ${scooterName}`}
+            className="block flex-shrink-0 transition-transform hover:scale-105"
+          >
+            <img
+              src={scooterImageUrl}
+              alt={scooterName}
+              loading="lazy"
+              decoding="async"
+              style={{
+                height: "clamp(80px, 12vw, 130px)",
+                width: "auto",
+                objectFit: "contain",
+              }}
+            />
+          </Link>
+        ) : (
+          <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
+        )
       ) : (
         <FiltrerMaTrottiButton onClick={onActionClick} />
       )}

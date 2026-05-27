@@ -131,8 +131,8 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // Dark capsule (glassmorphism subtil) dans tous les modes — fusion visuelle avec HomeBridge.
-  const backgroundStyle: React.CSSProperties = { backgroundColor: "rgba(255,255,255,0.04)" };
+  // Dark capsule (couleur unie #2A2A2A) — fusion visuelle avec HomeBridge.
+  const backgroundStyle: React.CSSProperties = { backgroundColor: "#2A2A2A" };
 
   // D4: Dynamic filigrane behind everything.
   // In trotti mode, prefer the model name (e.g. "WOLF WARRIOR") over the brand.
@@ -188,6 +188,8 @@ const ShopByCompatibility = () => {
             <CompatibilityHeader
               mode={compatHeaderMode}
               scooterName={selectedScooter?.name ?? null}
+              scooterImageUrl={selectedScooter?.imageUrl ?? null}
+              scooterSlug={selectedScooter?.slug ?? null}
               totalCount={data.totalCount}
               categoriesCount={data.availableCategories.length}
               onTitleClick={handleTitleClick}
