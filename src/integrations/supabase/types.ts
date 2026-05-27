@@ -568,6 +568,7 @@ export type Database = {
       home_bridge_settings: {
         Row: {
           created_at: string
+          dark_block_color: string
           id: string
           is_enabled: boolean
           updated_at: string
@@ -577,6 +578,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          dark_block_color?: string
           id?: string
           is_enabled?: boolean
           updated_at?: string
@@ -586,6 +588,7 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          dark_block_color?: string
           id?: string
           is_enabled?: boolean
           updated_at?: string
