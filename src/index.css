@@ -43,7 +43,20 @@
 
     /* Custom tokens */
     --carbon: 0 0% 10%;
-    --greige: 30 14% 95%;
+
+    /* Background app — décommente la variante à tester, commente les autres */
+    /* Option 1 — Beige crème pâle (legacy #F5F0E8 hardcodé) */
+    /* --greige: 30 14% 95%; */
+
+    /* Option 2 — ACTIF — Gris-beige doux #EBE7DE */
+    --greige: 38 24% 89%;
+
+    /* Option 3 — Gris-beige plus prononcé #E5E1D8 */
+    /* --greige: 35 19% 86%; */
+
+    /* Option 4 — Greige intermédiaire chaud #EDE9DF */
+    /* --greige: 40 23% 90%; */
+
     --mineral: 144 20% 65%;
     --mineral-dark: 144 20% 55%;
     --mineral-glow: 144 30% 70%;
