@@ -107,6 +107,25 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
               </div>
             </div>
 
+            {/* Nom de Rider */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-medium text-carbon/70 flex justify-between">
+                <span>Nom de Rider</span>
+                <span className="text-carbon/40">{displayName.length}/30</span>
+              </label>
+              <Input
+                value={displayName}
+                maxLength={30}
+                placeholder="Ex : NOLAN2.0"
+                onChange={(e) => setDisplayName(e.target.value)}
+                className="text-base"
+                aria-invalid={!!nameError}
+              />
+              {nameError && (
+                <p className="text-xs text-destructive">{nameError}</p>
+              )}
+            </div>
+
             {/* Bio */}
             <div className="space-y-1.5">
               <label className="text-xs font-medium text-carbon/70 flex justify-between">
