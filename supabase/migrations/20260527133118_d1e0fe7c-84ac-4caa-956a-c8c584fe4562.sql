@@ -1,0 +1,1 @@
+ALTER TABLE public.home_bridge_settings ADD COLUMN IF NOT EXISTS dark_block_color text NOT NULL DEFAULT '#3A3A3A';
