@@ -9,6 +9,7 @@ export type HomeBridgeSettings = {
   watermark_opacity: number;
   watermark_color_mode: HomeBridgeColorMode;
   is_enabled: boolean;
+  dark_block_color: string;
 };
 
 const QUERY_KEY = ["home_bridge_settings"] as const;

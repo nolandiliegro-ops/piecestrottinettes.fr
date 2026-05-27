@@ -3,6 +3,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useHeaderScooterDropdown } from "@/contexts/HeaderScooterDropdownContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
+import { useHomeBridge } from "@/hooks/useHomeBridge";
 import { useIsMobile } from "@/hooks/use-mobile";
 import CompatibilityHeader from "./CompatibilityHeader";
 import CategoryPills from "./CategoryPills";
@@ -17,6 +18,8 @@ const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { open: openHeaderDropdown } = useHeaderScooterDropdown();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
+  const { data: bridgeSettings } = useHomeBridge();
+  const darkBlockColor = bridgeSettings?.dark_block_color ?? "#3A3A3A";
   const isMobile = useIsMobile();
   // Only propagate brand color when a known brand is active; undefined keeps legacy palette.
   const accentColor = brandIsDefault ? undefined : brandColor;
@@ -152,7 +155,7 @@ const ShopByCompatibility = () => {
     : hexToRgba(brandColor, 0.25);
 
   return (
-    <section className="relative w-full" style={{ backgroundColor: "#3A3A3A" }}>
+    <section className="relative w-full" style={{ backgroundColor: darkBlockColor }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         <div
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"

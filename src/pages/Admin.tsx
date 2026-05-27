@@ -13,6 +13,7 @@ import ContactMessagesManager from '@/components/admin/ContactMessagesManager';
 import ClientsManager from '@/components/admin/ClientsManager';
 import OrdersManager from '@/components/admin/OrdersManager';
 import BrandAssetsManager from '@/components/admin/BrandAssetsManager';
+import HomeBridgeManager from '@/components/admin/HomeBridgeManager';
 
 const Admin = () => {
   const { user, isAdmin, loading } = useAdminRole();
@@ -73,6 +74,7 @@ const Admin = () => {
       {activeTab === 'scanner' && <AdminScanner />}
       {activeTab === 'messages' && <ContactMessagesManager />}
       {activeTab === 'brand' && <BrandAssetsManager />}
+      {activeTab === 'home-bridge' && <HomeBridgeManager />}
       {activeTab === 'settings' && <AdminSettings />}
     </AdminLayout>
   );
