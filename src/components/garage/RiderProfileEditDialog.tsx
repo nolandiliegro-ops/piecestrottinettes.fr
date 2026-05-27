@@ -16,7 +16,8 @@ interface Props {
 
 const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
   const { profile } = useAuth();
-  const { updateBio, updateLocation, deleteAvatar } = useRiderProfile();
+  const { updateBio, updateLocation, updateDisplayName, deleteAvatar } = useRiderProfile();
+  const [displayName, setDisplayName] = useState(profile?.display_name ?? "");
   const [bio, setBio] = useState(profile?.bio ?? "");
   const [location, setLocation] = useState(profile?.rider_location ?? "");
   const [uploadOpen, setUploadOpen] = useState(false);
@@ -24,19 +25,35 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
 
   useEffect(() => {
     if (open) {
+      setDisplayName(profile?.display_name ?? "");
       setBio(profile?.bio ?? "");
       setLocation(profile?.rider_location ?? "");
     }
-  }, [open, profile?.bio, profile?.rider_location]);
+  }, [open, profile?.display_name, profile?.bio, profile?.rider_location]);
+
+  const trimmedName = displayName.trim();
+  const nameRegex = /^[a-zA-Z0-9 ._-]+$/;
+  const nameError =
+    trimmedName.length === 0
+      ? "Le nom de rider est obligatoire"
+      : !nameRegex.test(trimmedName)
+      ? "Caractères autorisés : lettres, chiffres, espace, . _ -"
+      : null;
 
   const handleSave = async () => {
+    if (nameError) return;
     setSaving(true);
     try {
       const tasks: Promise<unknown>[] = [];
+      if ((profile?.display_name ?? "") !== trimmedName) {
+        tasks.push(updateDisplayName.mutateAsync(trimmedName));
+      }
       if ((profile?.bio ?? "") !== bio) tasks.push(updateBio.mutateAsync(bio));
       if ((profile?.rider_location ?? "") !== location) tasks.push(updateLocation.mutateAsync(location));
       await Promise.all(tasks);
       onOpenChange(false);
+    } catch {
+      // erreur déjà toastée dans le hook
     } finally {
       setSaving(false);
     }
