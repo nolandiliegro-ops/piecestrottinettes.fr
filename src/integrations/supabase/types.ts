@@ -565,6 +565,36 @@ export type Database = {
         }
         Relationships: []
       }
+      home_bridge_settings: {
+        Row: {
+          created_at: string
+          id: string
+          is_enabled: boolean
+          updated_at: string
+          watermark_color_mode: string
+          watermark_opacity: number
+          watermark_text: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          is_enabled?: boolean
+          updated_at?: string
+          watermark_color_mode?: string
+          watermark_opacity?: number
+          watermark_text?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          is_enabled?: boolean
+          updated_at?: string
+          watermark_color_mode?: string
+          watermark_opacity?: number
+          watermark_text?: string
+        }
+        Relationships: []
+      }
       order_items: {
         Row: {
           created_at: string
