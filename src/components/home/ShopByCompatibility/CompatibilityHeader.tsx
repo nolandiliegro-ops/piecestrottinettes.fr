@@ -160,23 +160,33 @@ const CompatibilityHeader = ({
 
       {isConfig ? (
         scooterImageUrl && scooterSlug && scooterName ? (
-          <Link
-            to={`/scooter/${scooterSlug}`}
-            aria-label={`Voir la fiche de ${scooterName}`}
-            className="block flex-shrink-0 transition-transform hover:scale-105"
+          <div
+            className="flex-shrink-0"
+            style={{
+              filter: accentColor
+                ? `drop-shadow(0 0 24px ${hexToRgba(accentColor, 0.35)})`
+                : undefined,
+            }}
           >
-            <img
-              src={scooterImageUrl}
-              alt={scooterName}
-              loading="lazy"
-              decoding="async"
-              style={{
-                height: "clamp(120px, 18vw, 200px)",
-                width: "auto",
-                objectFit: "contain",
-              }}
-            />
-          </Link>
+            <Link
+              to={`/scooter/${scooterSlug}`}
+              aria-label={`Voir la fiche de ${scooterName}`}
+              className="block transition-transform hover:scale-105"
+            >
+              <img
+                src={scooterImageUrl}
+                alt={scooterName}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  height: "clamp(120px, 18vw, 200px)",
+                  width: "auto",
+                  objectFit: "contain",
+                  filter: "drop-shadow(0 4px 16px rgba(255,255,255,0.15))",
+                }}
+              />
+            </Link>
+          </div>
         ) : (
           <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
         )

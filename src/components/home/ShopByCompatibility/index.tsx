@@ -153,7 +153,7 @@ const ShopByCompatibility = () => {
   // Border capsule : blanc subtil par defaut, couleur de marque sinon.
   const capsuleBorderColor = brandIsDefault
     ? "rgba(255,255,255,0.08)"
-    : hexToRgba(brandColor, 0.25);
+    : hexToRgba(brandColor, 0.40);
 
   return (
     <section className="relative w-full" style={{ backgroundColor: darkBlockColor }}>
@@ -215,7 +215,7 @@ const ShopByCompatibility = () => {
               mode={compatHeaderMode}
               accentColor={accentColor}
               hasScooter={!!selectedScooter}
-              onSelectMyTrotti={handleTitleClick}
+              onSelectMyTrotti={() => setSheetOpen(true)}
               onShowAll={handleResetFilters}
             />
 
