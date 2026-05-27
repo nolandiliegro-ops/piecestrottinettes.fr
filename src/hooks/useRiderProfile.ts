@@ -25,6 +25,35 @@ export const useRiderProfile = () => {
     onError: (e: any) => toast.error(e?.message ?? "Erreur avatar"),
   });
 
+  const updateDisplayName = useMutation({
+    mutationFn: async (displayName: string) => {
+      if (!user) throw new Error("Non authentifié");
+      const value = displayName?.trim();
+      if (!value) throw new Error("Le nom de rider ne peut pas être vide");
+      if (value.length > 30) throw new Error("Nom trop long (max 30)");
+      if (!/^[a-zA-Z0-9 ._-]+$/.test(value)) {
+        throw new Error("Caractères non autorisés (lettres, chiffres, espace, . _ - uniquement)");
+      }
+      // Unicité
+      const { data: existing, error: checkErr } = await supabase
+        .from("profiles")
+        .select("id")
+        .eq("display_name", value)
+        .neq("id", user.id)
+        .maybeSingle();
+      if (checkErr) throw checkErr;
+      if (existing) throw new Error("Ce nom est déjà pris");
+
+      const { error } = await supabase
+        .from("profiles")
+        .update({ display_name: value, updated_at: new Date().toISOString() })
+        .eq("id", user.id);
+      if (error) throw error;
+    },
+    onSuccess: invalidate,
+    onError: (e: any) => toast.error(e?.message ?? "Erreur nom de rider"),
+  });
+
   const updateBio = useMutation({
     mutationFn: async (bio: string | null) => {
       if (!user) throw new Error("Non authentifié");
@@ -73,5 +102,5 @@ export const useRiderProfile = () => {
     onError: (e: any) => toast.error(e?.message ?? "Erreur suppression"),
   });
 
-  return { updateAvatar, updateBio, updateLocation, deleteAvatar };
+  return { updateAvatar, updateBio, updateLocation, updateDisplayName, deleteAvatar };
 };
