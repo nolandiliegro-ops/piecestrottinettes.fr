@@ -131,8 +131,8 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // Beige capsule dans tous les modes (all / filtered-cats / trotti / trotti-cats).
-  const backgroundStyle: React.CSSProperties = { backgroundColor: THEME.bgCapsule };
+  // Dark capsule (glassmorphism subtil) dans tous les modes — fusion visuelle avec HomeBridge.
+  const backgroundStyle: React.CSSProperties = { backgroundColor: "rgba(255,255,255,0.04)" };
 
   // D4: Dynamic filigrane behind everything.
   // In trotti mode, prefer the model name (e.g. "WOLF WARRIOR") over the brand.
@@ -140,20 +140,20 @@ const ShopByCompatibility = () => {
     ? "PIECESTROTTINETTES"
     : (hasModel ? modelName : brandName).toUpperCase();
   const filigraneColor = brandIsDefault
-    ? "rgba(74,124,89,0.10)"
+    ? "rgba(255,255,255,0.10)"
     : hexToRgba(brandColor, 0.13);
   const filigraneFontSize = brandIsDefault
     ? "clamp(60px, 8vw, 80px)"
     : "clamp(100px, 14vw, 150px)";
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full" style={{ backgroundColor: "#2A2A2A" }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         <div
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
             ...backgroundStyle,
-            border: "0.5px solid rgba(0,0,0,0.04)",
+            border: "0.5px solid rgba(255,255,255,0.08)",
           }}
         >
           {/* D3: Filigrane — absolute, behind content, clipped by overflow-hidden */}

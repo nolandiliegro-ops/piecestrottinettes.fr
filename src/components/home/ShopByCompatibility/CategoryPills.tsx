@@ -12,7 +12,8 @@ interface Props {
 }
 
 const FONT = "'Inter', sans-serif";
-const ACTIVE_DEFAULT = "#1A1A1A";
+// Dark mode : orange par defaut pour visibilite sur fond dark.
+const ACTIVE_DEFAULT = "#FF6600";
 
 const hexToRgba = (hex: string, alpha: number): string => {
   const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
@@ -81,12 +82,12 @@ const PillButton = ({
         boxShadow: `0 2px 8px ${hexToRgba(activeColor, 0.2)}`,
       }
     : {
-        backgroundColor: "#FFFFFF",
-        color: "#1A1A1A",
+        backgroundColor: "rgba(255,255,255,0.06)",
+        color: "rgba(255,255,255,0.7)",
         border: hover
-          ? "0.5px solid rgba(0,0,0,0.18)"
-          : "0.5px solid rgba(0,0,0,0.10)",
-        boxShadow: hover ? "0 2px 8px rgba(0,0,0,0.04)" : "none",
+          ? "0.5px solid rgba(255,255,255,0.22)"
+          : "0.5px solid rgba(255,255,255,0.12)",
+        boxShadow: hover ? "0 2px 8px rgba(0,0,0,0.20)" : "none",
         transform: hover ? "translateY(-1px)" : "translateY(0)",
       };
 
@@ -132,8 +133,8 @@ const PillButton = ({
           lineHeight: 1,
           padding: "1px 5px",
           borderRadius: 3,
-          backgroundColor: active ? "rgba(255,255,255,0.20)" : "rgba(0,0,0,0.06)",
-          color: active ? "#FFFFFF" : "#6B7280",
+          backgroundColor: active ? "rgba(255,255,255,0.20)" : "rgba(255,255,255,0.10)",
+          color: active ? "#FFFFFF" : "rgba(255,255,255,0.55)",
         }}
       >
         {count}

@@ -22,16 +22,17 @@ const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref 
 
   return (
     <div
-      className="mt-5 lg:mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 rounded-xl bg-white"
+      className="mt-5 lg:mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 rounded-xl"
       style={{
         padding: "11px 14px",
-        border: "0.5px solid rgba(0,0,0,0.05)",
+        backgroundColor: "rgba(255,255,255,0.06)",
+        border: "0.5px solid rgba(255,255,255,0.12)",
       }}
     >
       <p
         className="text-xs lg:text-[13px]"
         style={{
-          color: "#1A1A1A",
+          color: "rgba(255,255,255,0.85)",
           fontFamily: "'Plus Jakarta Sans', sans-serif",
         }}
       >
@@ -41,7 +42,7 @@ const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref 
         to={catalogueHref}
         className="inline-flex items-center gap-1 text-xs lg:text-[13px] font-semibold whitespace-nowrap min-h-[32px]"
         style={{
-          color: "#4A7C59",
+          color: "#FFA559",
           fontFamily: "'Plus Jakarta Sans', sans-serif",
         }}
       >

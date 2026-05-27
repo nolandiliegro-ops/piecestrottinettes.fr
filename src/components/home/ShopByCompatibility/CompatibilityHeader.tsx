@@ -63,7 +63,8 @@ const CompatibilityHeader = ({
   const isConfig = mode === "config";
 
   const eyebrowText = isConfig ? "— COMPATIBLE AVEC TA TROTTI" : "— TOUT LE CATALOGUE";
-  const eyebrowColor = accentColor ?? (isConfig ? "#D74F00" : "#4A7C59");
+  // Dark mode : fallback orange #FF6600 en mode trotti (config) pour visibilite sur fond dark.
+  const eyebrowColor = accentColor ?? (isConfig ? "#FF6600" : "#4A7C59");
   const chevronColor = titleAccentColor;
 
   const subtitle =
@@ -79,8 +80,8 @@ const CompatibilityHeader = ({
   // D2: per-line sizing. In modelFocalMode, line 1 is compact (22px) and
   // line 2 is the focal (36px). Otherwise both lines share clamp(32-44px).
   const firstLineFont: React.CSSProperties = modelFocalMode
-    ? { ...TITLE_FONT_BASE, fontSize: 22, color: "#1A1A1A" }
-    : { ...TITLE_FONT_BASE, fontSize: "clamp(32px, 4vw, 44px)", color: "#1A1A1A" };
+    ? { ...TITLE_FONT_BASE, fontSize: 22, color: "#FFFFFF" }
+    : { ...TITLE_FONT_BASE, fontSize: "clamp(32px, 4vw, 44px)", color: "#FFFFFF" };
   const secondLineFont: React.CSSProperties = modelFocalMode
     ? { ...TITLE_FONT_BASE, fontSize: 36, color: titleAccentColor }
     : { ...TITLE_FONT_BASE, fontSize: "clamp(32px, 4vw, 44px)", color: titleAccentColor };
@@ -140,7 +141,7 @@ const CompatibilityHeader = ({
         <p
           className="mt-2.5"
           style={{
-            color: "#6B7280",
+            color: "rgba(255,255,255,0.55)",
             fontFamily: "'Inter', sans-serif",
             fontSize: 11,
             fontWeight: 400,
@@ -189,9 +190,9 @@ const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
       className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
       style={{
         ...BUTTON_BASE,
-        border: "1px solid #1A1A1A",
-        backgroundColor: hover ? "rgba(26,26,26,0.06)" : "transparent",
-        color: "#1A1A1A",
+        border: "1px solid rgba(255,255,255,0.2)",
+        backgroundColor: hover ? "rgba(255,255,255,0.06)" : "transparent",
+        color: "rgba(255,255,255,0.9)",
         transform: active ? "scale(0.97)" : "scale(1)",
       }}
     >
@@ -210,7 +211,10 @@ const ToutVoirButton = ({
 }) => {
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  const color = accentColor ?? "#1A1A1A";
+  // Dark mode : fallback blanc semi-transparent au lieu de noir.
+  const color = accentColor ?? "rgba(255,255,255,0.9)";
+  const borderColor = accentColor ?? "rgba(255,255,255,0.2)";
+  const hoverBg = accentColor ? hexToRgba(accentColor, 0.06) : "rgba(255,255,255,0.06)";
 
   return (
     <button
@@ -226,8 +230,8 @@ const ToutVoirButton = ({
       className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
       style={{
         ...BUTTON_BASE,
-        border: `1px solid ${color}`,
-        backgroundColor: hover ? hexToRgba(color, 0.06) : "transparent",
+        border: `1px solid ${borderColor}`,
+        backgroundColor: hover ? hoverBg : "transparent",
         color,
         transform: active ? "scale(0.97)" : "scale(1)",
       }}

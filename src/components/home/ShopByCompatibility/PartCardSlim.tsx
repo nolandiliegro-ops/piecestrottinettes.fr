@@ -133,8 +133,8 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
   const cardContent = (
     <Link
       to={`/piece/${part.slug}`}
-      className="pt-slim-card group relative block overflow-hidden bg-white transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
-      style={{ border: "0.5px solid rgba(0,0,0,0.05)", borderRadius: 8 }}
+      className="pt-slim-card group relative block overflow-hidden transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(255,255,255,0.10)]"
+      style={{ border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 8 }}
     >
       {/* Image */}
       <div
@@ -271,7 +271,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
           style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 500,
-            color: "#1A1A1A",
+            color: "rgba(255,255,255,0.92)",
             minHeight: "2.2em",
           }}
         >
@@ -393,6 +393,17 @@ const CardStyles = () => (
       animation: ptShine 4.5s ease-in-out infinite;
       pointer-events: none;
       z-index: 1;
+    }
+
+    .pt-slim-card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    @supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+      .pt-slim-card {
+        background: rgba(255,255,255,0.08);
+      }
     }
 
     .pt-slim-card:hover .pt-slim-img {
