@@ -11,6 +11,7 @@ import ShopByCompatibility from "@/components/home/ShopByCompatibility";
 import FavoritesSection from "@/components/home/FavoritesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import BrandManifestoBridge from "@/components/home/BrandManifestoBridge";
+import HomeBridge from "@/components/home/HomeBridge";
 
 const Index = () => {
   return (
@@ -27,24 +28,6 @@ const Index = () => {
         canonical="https://piecestrottinettes.fr/"
       />
 
-      <div
-        aria-hidden
-        className="absolute inset-x-0 top-[35%] pointer-events-none overflow-hidden z-0 select-none"
-      >
-        <span
-          className="block text-center whitespace-nowrap"
-          style={{
-            fontFamily: "'Anton', 'Plus Jakarta Sans', sans-serif",
-            fontSize: "clamp(80px, 12vw, 220px)",
-            fontWeight: 900,
-            letterSpacing: "-0.04em",
-            color: "rgba(26, 26, 26, 0.04)",
-          }}
-        >
-          PIECESTROTTINETTES
-        </span>
-      </div>
-
       <Header />
 
       <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
@@ -53,6 +36,7 @@ const Index = () => {
         <ShopByCompatibility />
         <BrandCarousel />
         <GarageRiderCard />
+        <HomeBridge />
         <Divider />
         <ScooterCarousel />
         <FavoritesSection />
