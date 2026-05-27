@@ -171,7 +171,7 @@ const CompatibilityHeader = ({
               loading="lazy"
               decoding="async"
               style={{
-                height: "clamp(80px, 12vw, 130px)",
+                height: "clamp(120px, 18vw, 200px)",
                 width: "auto",
                 objectFit: "contain",
               }}

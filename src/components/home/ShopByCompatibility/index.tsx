@@ -146,6 +146,11 @@ const ShopByCompatibility = () => {
     ? "clamp(60px, 8vw, 80px)"
     : "clamp(100px, 14vw, 150px)";
 
+  // Border capsule : blanc subtil par defaut, couleur de marque sinon.
+  const capsuleBorderColor = brandIsDefault
+    ? "rgba(255,255,255,0.08)"
+    : hexToRgba(brandColor, 0.25);
+
   return (
     <section className="relative w-full" style={{ backgroundColor: "#3A3A3A" }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
@@ -153,7 +158,7 @@ const ShopByCompatibility = () => {
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
             ...backgroundStyle,
-            border: "0.5px solid rgba(255,255,255,0.08)",
+            border: `0.5px solid ${capsuleBorderColor}`,
           }}
         >
           {/* D3: Filigrane — absolute, behind content, clipped by overflow-hidden */}
