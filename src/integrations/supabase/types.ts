@@ -389,6 +389,75 @@ export type Database = {
         }
         Relationships: []
       }
+      design_tokens: {
+        Row: {
+          category: string
+          created_at: string
+          description: string | null
+          display_order: number
+          id: string
+          key: string
+          label: string | null
+          type: string
+          updated_at: string
+          value: string
+        }
+        Insert: {
+          category: string
+          created_at?: string
+          description?: string | null
+          display_order?: number
+          id?: string
+          key: string
+          label?: string | null
+          type?: string
+          updated_at?: string
+          value: string
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          description?: string | null
+          display_order?: number
+          id?: string
+          key?: string
+          label?: string | null
+          type?: string
+          updated_at?: string
+          value?: string
+        }
+        Relationships: []
+      }
+      design_tokens_history: {
+        Row: {
+          action: string
+          changed_at: string
+          changed_by: string | null
+          id: string
+          new_value: string | null
+          old_value: string | null
+          token_key: string
+        }
+        Insert: {
+          action: string
+          changed_at?: string
+          changed_by?: string | null
+          id?: string
+          new_value?: string | null
+          old_value?: string | null
+          token_key: string
+        }
+        Update: {
+          action?: string
+          changed_at?: string
+          changed_by?: string | null
+          id?: string
+          new_value?: string | null
+          old_value?: string | null
+          token_key?: string
+        }
+        Relationships: []
+      }
       expert_captures: {
         Row: {
           ai_extracted_markers: Json | null
