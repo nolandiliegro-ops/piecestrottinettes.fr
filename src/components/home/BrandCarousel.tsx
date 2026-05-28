@@ -112,9 +112,9 @@ const BrandCarousel = () => {
         .pt-brand-carousel { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
 
-      <div className="mx-auto max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl">
+      <div className="mx-auto max-w-6xl">
         {/* ── Header ── */}
-        <div className="px-4 lg:px-0 flex items-end justify-between gap-4 mb-7 lg:mb-10">
+        <div className="px-4 flex items-end justify-between gap-4 mb-7 lg:mb-10">
           <div>
             <p
               className="text-[10px] font-bold uppercase tracking-[0.25em] mb-2"
@@ -189,7 +189,7 @@ const BrandCarousel = () => {
             onMouseUp={onMouseUpOrLeave}
             onMouseLeave={onMouseUpOrLeave}
             onClickCapture={onClickCapture}
-            className="pt-brand-carousel flex gap-3 overflow-x-auto pb-3 pl-4 lg:pl-0 pr-4 lg:pr-0"
+            className="pt-brand-carousel flex gap-3 overflow-x-auto pb-3 px-4"
             style={{
               scrollSnapType: "x mandatory",
               WebkitOverflowScrolling: "touch",
