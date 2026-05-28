@@ -61,6 +61,7 @@ function App() {
   return (
   <QueryClientProvider client={queryClient}>
     <DesignTokensBootstrap />
+    <DesignTokensPreviewBootstrap />
     <AuthProvider>
       <CartProvider>
         <ScooterProvider>
