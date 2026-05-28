@@ -417,31 +417,32 @@ export default function DesignGlobalManager() {
               {(history ?? []).map((h) => (
                 <div
                   key={h.id}
-                  className="flex items-center justify-between gap-3 text-xs py-2 border-b border-border last:border-0"
+                  className="flex items-center justify-between gap-3 text-xs py-2.5 border-b border-border/60 last:border-0"
                 >
                   <div className="flex items-center gap-2 min-w-0 flex-wrap">
                     <span className="text-muted-foreground shrink-0">
                       Il y a {formatDistanceToNow(new Date(h.changed_at), { locale: fr })}
                     </span>
+                    <span className="text-muted-foreground/60">·</span>
                     <span className="font-mono text-foreground truncate">{h.token_key}</span>
-                    <span className="text-muted-foreground">:</span>
+                    <span className="text-muted-foreground/60">·</span>
                     {h.old_value && (
-                      <span className="flex items-center gap-1">
+                      <span className="inline-flex items-center gap-1.5">
                         <span
-                          className="inline-block w-3 h-3 rounded-sm border border-border"
+                          className="inline-block w-3.5 h-3.5 rounded ring-1 ring-border/70 shadow-sm"
                           style={{ background: h.old_value }}
                         />
-                        <span className="font-mono">{h.old_value}</span>
+                        <span className="font-mono text-foreground/90">{h.old_value}</span>
                       </span>
                     )}
                     <span className="text-muted-foreground">→</span>
                     {h.new_value && (
-                      <span className="flex items-center gap-1">
+                      <span className="inline-flex items-center gap-1.5">
                         <span
-                          className="inline-block w-3 h-3 rounded-sm border border-border"
+                          className="inline-block w-3.5 h-3.5 rounded ring-1 ring-border/70 shadow-sm"
                           style={{ background: h.new_value }}
                         />
-                        <span className="font-mono">{h.new_value}</span>
+                        <span className="font-mono text-foreground">{h.new_value}</span>
                       </span>
                     )}
                   </div>
@@ -449,7 +450,7 @@ export default function DesignGlobalManager() {
                     <Button
                       size="sm"
                       variant="ghost"
-                      className="h-7 text-xs shrink-0"
+                      className="h-7 text-xs shrink-0 text-foreground hover:bg-muted"
                       onClick={() => restoreFromHistory(h)}
                     >
                       Restaurer
@@ -457,6 +458,7 @@ export default function DesignGlobalManager() {
                   )}
                 </div>
               ))}
+
             </div>
           </CollapsibleContent>
         </Collapsible>
