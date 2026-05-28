@@ -135,8 +135,8 @@ const ShopByCompatibility = () => {
     return qs ? `/catalogue?${qs}` : "/catalogue";
   })();
 
-  // Dark capsule (couleur unie #2A2A2A) — fusion visuelle avec HomeBridge.
-  const backgroundStyle: React.CSSProperties = { backgroundColor: "#2A2A2A" };
+  // Dark capsule — théméable via token CSS var(--token-module-background).
+  const backgroundStyle: React.CSSProperties = { backgroundColor: "var(--token-module-background, #2A2A2A)" };
 
   // D4: Dynamic filigrane behind everything.
   // In trotti mode, prefer the model name (e.g. "WOLF WARRIOR") over the brand.
