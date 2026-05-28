@@ -16,6 +16,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import BrandHelmet from "./components/BrandHelmet";
 import { useDesignTokens } from "@/hooks/useDesignTokens";
+import { DesignTokensPreviewBootstrap } from "@/hooks/useDesignTokensPreview";
 
 // Lazy-loaded pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -60,6 +61,7 @@ function App() {
   return (
   <QueryClientProvider client={queryClient}>
     <DesignTokensBootstrap />
+    <DesignTokensPreviewBootstrap />
     <AuthProvider>
       <CartProvider>
         <ScooterProvider>

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
@@ -8,7 +8,17 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Loader2, History, ChevronDown, RefreshCw } from 'lucide-react';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from '@/components/ui/alert-dialog';
+import { Loader2, History, ChevronDown, RefreshCw, AlertCircle } from 'lucide-react';
 import { ColorPickerInput } from './design-global/ColorPickerInput';
 
 interface DesignTokenRow {
@@ -29,7 +39,6 @@ interface HistoryRow {
   changed_at: string;
 }
 
-// V1 section layout — defines which tokens are editable and which are V2-disabled.
 type FieldSpec = {
   key: string;
   label: string;
@@ -56,8 +65,7 @@ const SECTIONS: { id: string; title: string; fields: FieldSpec[] }[] = [
         key: 'header.background',
         label: 'Fond Header',
         disabled: true,
-        disabledReason:
-          "Le fond du header utilise le système Tailwind HSL, théméable en V2",
+        disabledReason: "Le fond du header utilise le système Tailwind HSL, théméable en V2",
       },
     ],
   },
@@ -89,8 +97,18 @@ const PREVIEW_URL = '/';
 export default function DesignGlobalManager() {
   const qc = useQueryClient();
   const [localChanges, setLocalChanges] = useState<Record<string, string>>({});
-  const [iframeKey, setIframeKey] = useState(0);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [cancelDialogOpen, setCancelDialogOpen] = useState(false);
+
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const iframeReadyRef = useRef(false);
+  const pendingChangesRef = useRef<Record<string, string>>({});
+  const rafRef = useRef<number | null>(null);
+
+  // Keep ref in sync with state (used by handlers without re-binding)
+  useEffect(() => {
+    pendingChangesRef.current = localChanges;
+  }, [localChanges]);
 
   const { data: tokens, isLoading } = useQuery({
     queryKey: ['design_tokens_admin'],
@@ -127,6 +145,36 @@ export default function DesignGlobalManager() {
 
   const valueFor = (key: string) => localChanges[key] ?? publishedMap[key] ?? '#000000';
 
+  // --- POSTMESSAGE LIVE PREVIEW ---
+  const sendPreview = (next: Record<string, string>) => {
+    if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = null;
+      const win = iframeRef.current?.contentWindow;
+      if (!win || !iframeReadyRef.current) return;
+      try {
+        win.postMessage(
+          { type: 'design-tokens-preview', tokens: next },
+          window.location.origin
+        );
+      } catch {
+        /* noop */
+      }
+    });
+  };
+
+  const handleIframeLoad = () => {
+    iframeReadyRef.current = true;
+    // Flush current state on (re)load
+    sendPreview(pendingChangesRef.current);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
+
   const setValue = (key: string, next: string) => {
     setLocalChanges((prev) => {
       const cleaned = { ...prev };
@@ -135,6 +183,7 @@ export default function DesignGlobalManager() {
       } else {
         cleaned[key] = next;
       }
+      sendPreview(cleaned);
       return cleaned;
     });
   };
@@ -145,28 +194,84 @@ export default function DesignGlobalManager() {
     mutationFn: async () => {
       const entries = Object.entries(localChanges);
       const results = await Promise.all(
-        entries.map(([key, value]) =>
-          (supabase as any)
+        entries.map(async ([key, value]) => {
+          const res = await (supabase as any)
             .from('design_tokens')
             .update({ value, updated_at: new Date().toISOString() })
-            .eq('key', key)
-        )
+            .eq('key', key);
+          return { key, error: res.error };
+        })
       );
       const failed = results.filter((r) => r.error);
-      if (failed.length) throw new Error(failed[0].error.message);
+      const succeededKeys = results.filter((r) => !r.error).map((r) => r.key);
+      return { succeededKeys, failed };
     },
-    onSuccess: () => {
-      toast.success(`${pendingCount} token${pendingCount > 1 ? 's' : ''} publié${pendingCount > 1 ? 's' : ''}`);
-      setLocalChanges({});
+    onSuccess: ({ succeededKeys, failed }) => {
+      // Remove succeeded keys from localChanges, keep failed ones
+      setLocalChanges((prev) => {
+        const next = { ...prev };
+        for (const k of succeededKeys) delete next[k];
+        sendPreview(next);
+        return next;
+      });
+
+      if (failed.length === 0) {
+        toast.success(
+          `${succeededKeys.length} token${succeededKeys.length > 1 ? 's' : ''} publié${succeededKeys.length > 1 ? 's' : ''}`
+        );
+      } else {
+        toast.error(
+          `${failed.length}/${succeededKeys.length + failed.length} échec(s) : ${failed.map((f) => f.key).join(', ')}`
+        );
+      }
+
       qc.invalidateQueries({ queryKey: ['design_tokens_admin'] });
       qc.invalidateQueries({ queryKey: ['design_tokens_history'] });
       qc.invalidateQueries({ queryKey: ['design-tokens'] });
-      setIframeKey((k) => k + 1);
     },
     onError: (e: any) => {
       toast.error(e?.message ?? 'Erreur de publication');
     },
   });
+
+  const performCancel = () => {
+    setLocalChanges({});
+    sendPreview({});
+    setCancelDialogOpen(false);
+  };
+
+  const requestCancel = () => {
+    if (pendingCount === 0) return;
+    if (pendingCount > 3) {
+      setCancelDialogOpen(true);
+    } else {
+      performCancel();
+    }
+  };
+
+  const triggerPublish = () => {
+    if (pendingCount === 0 || publishMutation.isPending) return;
+    publishMutation.mutate();
+  };
+
+  // --- KEYBOARD SHORTCUTS ⌘S / Esc ---
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const isSave = (e.metaKey || e.ctrlKey) && (e.key === 's' || e.key === 'S');
+      if (isSave) {
+        e.preventDefault();
+        triggerPublish();
+        return;
+      }
+      if (e.key === 'Escape') {
+        if (cancelDialogOpen) return; // let dialog handle it
+        requestCancel();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingCount, publishMutation.isPending, cancelDialogOpen]);
 
   const restoreFromHistory = (h: HistoryRow) => {
     if (!h.old_value) return;
@@ -188,7 +293,7 @@ export default function DesignGlobalManager() {
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-foreground tracking-tight">DESIGN GLOBAL</h2>
         <p className="text-sm text-muted-foreground mt-1 max-w-2xl">
-          Modifie les couleurs des zones de ton site. Les changements s'appliquent en temps réel sans rebuild.
+          Modifie les couleurs des zones de ton site. Aperçu en temps réel — publie pour appliquer.
         </p>
       </div>
 
@@ -234,14 +339,15 @@ export default function DesignGlobalManager() {
           <div className="sticky top-4">
             <div className="rounded-2xl border border-border overflow-hidden bg-muted/20">
               <iframe
-                key={iframeKey}
+                ref={iframeRef}
+                onLoad={handleIframeLoad}
                 src={PREVIEW_URL}
                 title="Preview Home"
                 className="w-full h-[400px] lg:h-[600px] border-0"
               />
             </div>
             <p className="text-[11px] text-muted-foreground mt-2 flex items-center gap-1.5">
-              <RefreshCw className="w-3 h-3" /> Preview en temps réel — recharge auto après publication
+              <RefreshCw className="w-3 h-3" /> Preview en temps réel pendant l'édition
             </p>
           </div>
         </div>
@@ -313,43 +419,67 @@ export default function DesignGlobalManager() {
         </Collapsible>
       </div>
 
-      {/* Sticky publish bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur border-t border-border px-4 py-3">
+      {/* Sticky publish bar — bottom-[64px] mobile pour MobileNav, bottom-0 desktop */}
+      <div
+        className="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur border-t border-border px-4 md:px-6 py-2 md:py-3 bottom-[64px] md:bottom-0"
+        style={{ boxShadow: '0 -4px 20px rgba(0,0,0,0.08)' }}
+      >
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 text-sm min-w-0">
             {pendingCount > 0 ? (
               <>
-                <Badge variant="default" className="bg-orange-500 hover:bg-orange-500">
+                <Badge variant="default" className="bg-orange-500 hover:bg-orange-500 animate-pulse gap-1">
+                  <AlertCircle className="w-3 h-3" />
                   {pendingCount}
                 </Badge>
-                <span className="text-foreground">
+                <span className="text-foreground truncate">
                   changement{pendingCount > 1 ? 's' : ''} non publié{pendingCount > 1 ? 's' : ''}
                 </span>
               </>
             ) : (
-              <span className="text-muted-foreground">Aucun changement en attente</span>
+              <span className="text-muted-foreground">Aucune modification en attente</span>
             )}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="hidden md:inline text-[10px] text-muted-foreground mr-2">
+              ⌘S publier · Esc annuler
+            </span>
             <Button
               variant="outline"
               size="sm"
               disabled={pendingCount === 0 || publishMutation.isPending}
-              onClick={() => setLocalChanges({})}
+              onClick={requestCancel}
             >
               Annuler
             </Button>
             <Button
               size="sm"
               disabled={pendingCount === 0 || publishMutation.isPending}
-              onClick={() => publishMutation.mutate()}
+              onClick={triggerPublish}
+              className="bg-[#4A7C59] hover:bg-[#3A6449] text-white"
             >
               {publishMutation.isPending && <Loader2 className="w-3.5 h-3.5 animate-spin mr-1" />}
-              Publier
+              Publier{pendingCount > 0 ? ` (${pendingCount})` : ''}
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Cancel confirm dialog (>3 changements) */}
+      <AlertDialog open={cancelDialogOpen} onOpenChange={setCancelDialogOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Annuler {pendingCount} changements ?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Toutes les modifications en cours seront perdues. Cette action est irréversible.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Garder</AlertDialogCancel>
+            <AlertDialogAction onClick={performCancel}>Annuler les modifs</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
