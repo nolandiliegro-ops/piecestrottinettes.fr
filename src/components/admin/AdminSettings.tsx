@@ -11,6 +11,7 @@ import ScansManager from './ScansManager';
 import SiteDesignManager from './SiteDesignManager';
 import ContactMessagesManager from './ContactMessagesManager';
 import PromoCodesManager from './PromoCodesManager';
+import GarageThemesManager from './GarageThemesManager';
 import DesignGlobalManager from './DesignGlobalManager';
 import GarageThemesManager from './GarageThemesManager';
 
