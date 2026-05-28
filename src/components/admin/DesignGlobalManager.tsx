@@ -462,51 +462,8 @@ export default function DesignGlobalManager() {
         </Collapsible>
       </div>
 
-      {/* Sticky publish bar — bottom-[64px] mobile pour MobileNav, bottom-0 desktop */}
-      <div
-        className="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur border-t border-border px-4 md:px-6 py-2 md:py-3 bottom-[64px] md:bottom-0"
-        style={{ boxShadow: '0 -4px 20px rgba(0,0,0,0.08)' }}
-      >
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-sm min-w-0">
-            {pendingCount > 0 ? (
-              <>
-                <Badge variant="default" className="bg-orange-500 hover:bg-orange-500 animate-pulse gap-1">
-                  <AlertCircle className="w-3 h-3" />
-                  {pendingCount}
-                </Badge>
-                <span className="text-foreground truncate">
-                  changement{pendingCount > 1 ? 's' : ''} non publié{pendingCount > 1 ? 's' : ''}
-                </span>
-              </>
-            ) : (
-              <span className="text-muted-foreground">Aucune modification en attente</span>
-            )}
-          </div>
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="hidden md:inline text-[10px] text-muted-foreground mr-2">
-              ⌘S publier · Esc annuler
-            </span>
-            <Button
-              variant="outline"
-              size="sm"
-              disabled={pendingCount === 0 || publishMutation.isPending}
-              onClick={requestCancel}
-            >
-              Annuler
-            </Button>
-            <Button
-              size="sm"
-              disabled={pendingCount === 0 || publishMutation.isPending}
-              onClick={triggerPublish}
-              className="bg-[#4A7C59] hover:bg-[#3A6449] text-white"
-            >
-              {publishMutation.isPending && <Loader2 className="w-3.5 h-3.5 animate-spin mr-1" />}
-              Publier{pendingCount > 0 ? ` (${pendingCount})` : ''}
-            </Button>
-          </div>
-        </div>
-      </div>
+
+
 
       {/* Cancel confirm dialog (>3 changements) */}
       <AlertDialog open={cancelDialogOpen} onOpenChange={setCancelDialogOpen}>
