@@ -28,13 +28,13 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
           className="w-20 h-20 rounded-2xl flex items-center justify-center mb-5"
           style={{ backgroundColor: "rgba(26,26,26,0.06)" }}
         >
-          <Bike className="w-10 h-10" style={{ color: "#6B7280" }} strokeWidth={1.2} />
+          <Bike className="w-10 h-10" style={{ color: "var(--token-global-text-secondary, #6B7280)" }} strokeWidth={1.2} />
         </div>
         <p
           className="text-xl"
           style={{
             fontFamily: "'Anton', sans-serif",
-            color: "#1A1A1A",
+            color: "var(--token-global-text-primary, #1A1A1A)",
             textTransform: "uppercase",
             letterSpacing: "-0.01em",
           }}
@@ -43,7 +43,7 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
         </p>
         <p
           className="mt-2 text-sm"
-          style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
         >
           Essaie un autre modèle ou une autre marque.
         </p>
@@ -140,7 +140,7 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
               onClick={() => go(-1)}
               aria-label="Trottinette précédente"
               className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all border border-gray-100"
-              style={{ color: "#1A1A1A" }}
+              style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
             >
               <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
             </button>
@@ -149,7 +149,7 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
               onClick={() => go(1)}
               aria-label="Trottinette suivante"
               className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all border border-gray-100"
-              style={{ color: "#1A1A1A" }}
+              style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
             >
               <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
             </button>
@@ -172,7 +172,7 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
             className="text-4xl xl:text-5xl leading-none"
             style={{
               fontFamily: "'Anton', sans-serif",
-              color: "#1A1A1A",
+              color: "var(--token-global-text-primary, #1A1A1A)",
               letterSpacing: "-0.01em",
               textTransform: "uppercase",
             }}
@@ -182,7 +182,7 @@ const HeroCenterCarousel = ({ scooters, onSelect }: Props) => {
         </button>
         <p
           className="mt-3 text-sm font-semibold inline-flex items-center justify-center gap-2"
-          style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
         >
           <span>{spec(current.max_speed_kmh, "km/h")}</span>
           <span style={{ color: "rgba(26,26,26,0.25)" }}>·</span>

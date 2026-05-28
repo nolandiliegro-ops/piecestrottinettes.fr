@@ -106,7 +106,7 @@ const BrandCarousel = () => {
   const arrowsEnabled = brands.length > 4;
 
   return (
-    <section className="py-10 lg:py-14" style={{ backgroundColor: "#FAFAF8" }}>
+    <section className="py-10 lg:py-14" style={{ backgroundColor: "var(--token-global-background, #FAFAF8)" }}>
       <style>{`
         .pt-brand-carousel::-webkit-scrollbar { display: none; }
         .pt-brand-carousel { -ms-overflow-style: none; scrollbar-width: none; }
@@ -118,13 +118,13 @@ const BrandCarousel = () => {
           <div>
             <p
               className="text-[10px] font-bold uppercase tracking-[0.25em] mb-2"
-              style={{ color: "#6B7280", fontFamily: FONT }}
+              style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: FONT }}
             >
               — OU EXPLORE PAR MARQUE
             </p>
             <h2
               className="text-3xl lg:text-5xl leading-none tracking-tight uppercase"
-              style={{ fontFamily: "'Anton', sans-serif", color: "#1A1A1A" }}
+              style={{ fontFamily: "'Anton', sans-serif", color: "var(--token-global-text-primary, #1A1A1A)" }}
             >
               Choisis ta marque
             </h2>
@@ -154,7 +154,7 @@ const BrandCarousel = () => {
               type="button"
               onClick={() => scrollByDir(-1)}
               aria-label="Précédent"
-              className={`hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[#1A1A1A] hover:scale-110 transition-all duration-300 border border-gray-100 ${
+              className={`hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[var(--token-global-text-primary,#1A1A1A)] hover:scale-110 transition-all duration-300 border border-gray-100 ${
                 scrollState.canLeft
                   ? "opacity-0 group-hover/carousel:opacity-100 cursor-pointer"
                   : "opacity-0 cursor-not-allowed pointer-events-none"
@@ -170,7 +170,7 @@ const BrandCarousel = () => {
               type="button"
               onClick={() => scrollByDir(1)}
               aria-label="Suivant"
-              className={`hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[#1A1A1A] hover:scale-110 transition-all duration-300 border border-gray-100 ${
+              className={`hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[var(--token-global-text-primary,#1A1A1A)] hover:scale-110 transition-all duration-300 border border-gray-100 ${
                 scrollState.canRight
                   ? "opacity-0 group-hover/carousel:opacity-100 cursor-pointer"
                   : "opacity-0 cursor-not-allowed pointer-events-none"

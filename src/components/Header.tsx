@@ -168,13 +168,13 @@ const Header = () => {
                     fontSize: 12,
                     fontWeight: 500,
                     lineHeight: 1,
-                    color: "#6B7280",
+                    color: "var(--token-global-text-secondary, #6B7280)",
                   }}
                 >
                   Ma Trottinette
                 </span>
                 <ChevronDown
-                  style={{ width: 10, height: 10, marginLeft: 6, color: "#6B7280" }}
+                  style={{ width: 10, height: 10, marginLeft: 6, color: "var(--token-global-text-secondary, #6B7280)" }}
                   strokeWidth={2.4}
                 />
               </button>
@@ -239,7 +239,7 @@ const Header = () => {
                         fontSize: 12,
                         fontWeight: 500,
                         lineHeight: 1,
-                        color: "#6B7280",
+                        color: "var(--token-global-text-secondary, #6B7280)",
                       }}
                     >
                       Ma Trottinette
@@ -250,7 +250,7 @@ const Header = () => {
                       width: 10,
                       height: 10,
                       marginLeft: 6,
-                      color: "#6B7280",
+                      color: "var(--token-global-text-secondary, #6B7280)",
                     }}
                     strokeWidth={2.4}
                   />

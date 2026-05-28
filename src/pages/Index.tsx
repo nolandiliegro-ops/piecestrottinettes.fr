@@ -19,7 +19,7 @@ const Index = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="min-h-screen relative overflow-hidden"
-      style={{ backgroundColor: "#FAFAF8" }}
+      style={{ backgroundColor: "var(--token-global-background, #FAFAF8)" }}
     >
       <SEO
         title="Pièces Trottinette Électrique | Trouve ta pièce compatible — piècestrottinettes.fr"
@@ -59,7 +59,7 @@ const Index = () => {
             fontWeight: 400,
             letterSpacing: "0.04em",
             lineHeight: 1,
-            color: "#1A1A1A",
+            color: "var(--token-global-text-primary, #1A1A1A)",
             textTransform: "uppercase",
           }}
         >

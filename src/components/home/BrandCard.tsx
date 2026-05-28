@@ -52,7 +52,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
       : `Découvrir ${brand.name}`;
 
   // Contrast model flips for the single light pattern (soft-light).
-  const nameColor = isLight ? "#1A1A1A" : "#FFFFFF";
+  const nameColor = isLight ? "var(--token-global-text-primary, #1A1A1A)" : "#FFFFFF";
   const taglineColor = isLight ? "#525252" : "rgba(255,255,255,0.85)";
   const metaColor = isLight ? "#7C2D12" : "rgba(255,255,255,0.65)";
 
@@ -103,7 +103,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
       aria-label={cardAria}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
-      className={`group relative flex flex-col justify-end w-full aspect-[3/4] overflow-hidden p-3 lg:p-4 xl:p-5 ${HOVER_TRANSITION} motion-safe:lg:hover:-translate-y-1.5 motion-safe:lg:hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F0E8] focus-visible:ring-[#1A1A1A]`}
+      className={`group relative flex flex-col justify-end w-full aspect-[3/4] overflow-hidden p-3 lg:p-4 xl:p-5 ${HOVER_TRANSITION} motion-safe:lg:hover:-translate-y-1.5 motion-safe:lg:hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--token-brands-card-surround,#F5F0E8)] focus-visible:ring-[var(--token-global-text-primary,#1A1A1A)]`}
       style={containerStyle}
     >
       {/* Texture overlay */}
@@ -194,7 +194,7 @@ const BrandCard = ({ brand, isStar, isFavorite, onToggleFavorite }: BrandCardPro
             <span
               aria-hidden
               className="leading-none text-lg"
-              style={{ fontFamily: ANTON, color: "#1A1A1A" }}
+              style={{ fontFamily: ANTON, color: "var(--token-global-text-primary, #1A1A1A)" }}
             >
               {brand.name.charAt(0).toUpperCase()}
             </span>

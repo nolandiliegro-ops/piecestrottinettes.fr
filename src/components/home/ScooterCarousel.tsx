@@ -153,7 +153,7 @@ const ScooterCarousel = () => {
   };
 
   return (
-    <section className="py-10 lg:py-14" style={{ backgroundColor: "#FAFAF8" }}>
+    <section className="py-10 lg:py-14" style={{ backgroundColor: "var(--token-popular-section-background, #FAFAF8)" }}>
       <style>{`
         .pt-carousel::-webkit-scrollbar { display: none; }
         .pt-carousel { -ms-overflow-style: none; scrollbar-width: none; }
@@ -165,7 +165,7 @@ const ScooterCarousel = () => {
             className="text-3xl sm:text-4xl lg:text-5xl"
             style={{
               fontFamily: "'Anton', sans-serif",
-              color: "#1A1A1A",
+              color: "var(--token-global-text-primary, #1A1A1A)",
               letterSpacing: "-0.01em",
               textTransform: "uppercase",
             }}
@@ -176,7 +176,7 @@ const ScooterCarousel = () => {
             onClick={() => navigate("/trottinettes")}
             className="hidden sm:inline-flex items-center gap-1 text-sm font-semibold underline decoration-1 underline-offset-4 hover:decoration-2"
             style={{
-              color: "#1A1A1A",
+              color: "var(--token-global-text-primary, #1A1A1A)",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
             }}
           >
@@ -193,7 +193,7 @@ const ScooterCarousel = () => {
             aria-label="Précédent"
             disabled={!scrollState.canLeft}
             className="hidden lg:flex absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center bg-white shadow-md hover:shadow-xl transition-all duration-200 motion-safe:hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
-            style={{ color: "#1A1A1A" }}
+            style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
           >
             <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
           </button>
@@ -203,7 +203,7 @@ const ScooterCarousel = () => {
             aria-label="Suivant"
             disabled={!scrollState.canRight}
             className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center bg-white shadow-md hover:shadow-xl transition-all duration-200 motion-safe:hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed border border-gray-100"
-            style={{ color: "#1A1A1A" }}
+            style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
           >
             <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
           </button>
@@ -279,7 +279,7 @@ const ScooterCarousel = () => {
                         ) : (
                           <Bike
                             className="w-16 h-16 lg:w-20 lg:h-20"
-                            style={{ color: "#6B7280" }}
+                            style={{ color: "var(--token-global-text-secondary, #6B7280)" }}
                             strokeWidth={1.2}
                           />
                         )}
@@ -291,7 +291,7 @@ const ScooterCarousel = () => {
                         className="text-xl lg:text-2xl xl:text-3xl mb-1 leading-tight"
                         style={{
                           fontFamily: "'Anton', sans-serif",
-                          color: "#1A1A1A",
+                          color: "var(--token-global-text-primary, #1A1A1A)",
                           letterSpacing: "-0.02em",
                           textTransform: "uppercase",
                         }}
@@ -301,7 +301,7 @@ const ScooterCarousel = () => {
                       <p
                         className="text-sm mb-4"
                         style={{
-                          color: "#6B7280",
+                          color: "var(--token-global-text-secondary, #6B7280)",
                           fontFamily: "'Plus Jakarta Sans', sans-serif",
                         }}
                       >
@@ -352,11 +352,11 @@ const ScooterCarousel = () => {
                           style={{
                             backgroundColor: inGarage
                               ? "rgba(74,124,89,0.12)"
-                              : "#FFFFFF",
-                            color: inGarage ? "#4A7C59" : "#1A1A1A",
+                              : "var(--token-popular-card-background, #FFFFFF)",
+                            color: inGarage ? "#4A7C59" : "var(--token-global-text-primary, #1A1A1A)",
                             border: inGarage
                               ? "2px solid rgba(74,124,89,0.3)"
-                              : "2px solid #1A1A1A",
+                              : "2px solid var(--token-global-text-primary, #1A1A1A)",
                             fontFamily: "'Plus Jakarta Sans', sans-serif",
                           }}
                           onMouseEnter={(e) => {
@@ -367,8 +367,8 @@ const ScooterCarousel = () => {
                           }}
                           onMouseLeave={(e) => {
                             if (!inGarage) {
-                              e.currentTarget.style.backgroundColor = "#FFFFFF";
-                              e.currentTarget.style.color = "#1A1A1A";
+                              e.currentTarget.style.backgroundColor = "var(--token-popular-card-background, #FFFFFF)";
+                              e.currentTarget.style.color = "var(--token-global-text-primary, #1A1A1A)";
                             }
                           }}
                         >
@@ -398,7 +398,7 @@ const ScooterCarousel = () => {
               style={{
                 scrollSnapAlign: "start",
                 backgroundColor: "transparent",
-                border: "2px dashed #1A1A1A",
+                border: "2px dashed var(--token-global-text-primary, #1A1A1A)",
                 minHeight: 460,
               }}
               aria-label="Voir tout le catalogue"
@@ -413,7 +413,7 @@ const ScooterCarousel = () => {
                 className="text-xl lg:text-2xl mb-2"
                 style={{
                   fontFamily: "'Anton', sans-serif",
-                  color: "#1A1A1A",
+                  color: "var(--token-global-text-primary, #1A1A1A)",
                   letterSpacing: "-0.005em",
                   textTransform: "uppercase",
                 }}
@@ -423,7 +423,7 @@ const ScooterCarousel = () => {
               <p
                 className="text-xs lg:text-sm mb-4 max-w-[180px]"
                 style={{
-                  color: "#6B7280",
+                  color: "var(--token-global-text-secondary, #6B7280)",
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
                   lineHeight: 1.4,
                 }}

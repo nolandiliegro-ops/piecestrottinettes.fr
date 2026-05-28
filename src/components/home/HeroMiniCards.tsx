@@ -20,7 +20,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
 
       <h2
         className="px-1 mb-4 lg:mb-5 text-sm lg:text-base font-bold uppercase tracking-wider inline-flex items-center gap-2"
-        style={{ color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+        style={{ color: "var(--token-global-text-primary, #1A1A1A)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
       >
         {showStar && <Star className="w-4 h-4 fill-current" style={{ color: "#FF6600" }} />}
         {title}
@@ -58,7 +58,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
                 >
                   <div
                     className="relative aspect-square flex items-center justify-center p-3"
-                    style={{ backgroundColor: "#F5F0E8" }}
+                    style={{ backgroundColor: "var(--token-brands-card-surround, #F5F0E8)" }}
                   >
                     {s.brand_name && (
                       <span
@@ -76,7 +76,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
                         loading="lazy"
                       />
                     ) : (
-                      <Bike className="w-12 h-12" style={{ color: "#6B7280" }} strokeWidth={1.2} />
+                      <Bike className="w-12 h-12" style={{ color: "var(--token-global-text-secondary, #6B7280)" }} strokeWidth={1.2} />
                     )}
                   </div>
                   <div className="p-3">
@@ -84,7 +84,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
                       className="text-base leading-tight"
                       style={{
                         fontFamily: "'Anton', sans-serif",
-                        color: "#1A1A1A",
+                        color: "var(--token-global-text-primary, #1A1A1A)",
                         letterSpacing: "-0.005em",
                         textTransform: "uppercase",
                       }}
@@ -93,7 +93,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
                     </h3>
                     <p
                       className="mt-1 text-xs"
-                      style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                      style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                       {count} pièce{count > 1 ? "s" : ""}
                     </p>
@@ -105,7 +105,7 @@ const HeroMiniCards = ({ scooters, title, onSelect, isLoading, showStar }: Props
         {!isLoading && scooters.length === 0 && (
           <div
             className="w-full py-8 text-center text-sm"
-            style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             Aucune trottinette trouvée.
           </div>

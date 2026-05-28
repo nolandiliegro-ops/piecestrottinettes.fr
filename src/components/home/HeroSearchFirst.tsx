@@ -66,7 +66,7 @@ const HeroSearchFirst = () => {
   return (
     <section
       className="relative overflow-hidden px-4 pt-10 pb-12 lg:pt-20 lg:pb-20"
-      style={{ backgroundColor: "#FAFAF8" }}
+      style={{ backgroundColor: "var(--token-global-background, #FAFAF8)" }}
     >
       <style>{`
         @keyframes ptMeshMove {
@@ -78,7 +78,7 @@ const HeroSearchFirst = () => {
           50%      { opacity: 0.55; transform: scale(0.88); }
         }
         .pt-mesh {
-          background-color: #FAFAF8;
+          background-color: var(--token-global-background, #FAFAF8);
           background-image:
             radial-gradient(45% 45% at 50% 50%, rgba(74,124,89,0.08), transparent 70%),
             radial-gradient(40% 40% at 50% 50%, rgba(255,102,0,0.06), transparent 70%),
@@ -154,7 +154,7 @@ const HeroSearchFirst = () => {
               className="text-[44px] leading-[0.95] sm:text-6xl lg:text-7xl xl:text-8xl mb-5 lg:mb-7"
               style={{
                 fontFamily: "'Anton', sans-serif",
-                color: "#1A1A1A",
+                color: "var(--token-global-text-primary, #1A1A1A)",
                 letterSpacing: "-0.02em",
                 textTransform: "uppercase",
               }}
@@ -187,7 +187,7 @@ const HeroSearchFirst = () => {
               className="text-base sm:text-lg lg:text-xl mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0"
               style={{
                 fontFamily: "'Plus Jakarta Sans', sans-serif",
-                color: "#6B7280",
+                color: "var(--token-global-text-secondary, #6B7280)",
                 fontWeight: 500,
                 lineHeight: 1.5,
               }}
@@ -207,7 +207,7 @@ const HeroSearchFirst = () => {
                 <div className="relative flex-1">
                   <SearchIcon
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none"
-                    style={{ color: "#6B7280" }}
+                    style={{ color: "var(--token-global-text-secondary, #6B7280)" }}
                     strokeWidth={2}
                     aria-hidden
                   />
@@ -224,7 +224,7 @@ const HeroSearchFirst = () => {
                     className="w-full min-h-[56px] lg:min-h-[64px] pl-12 pr-5 lg:pr-6 rounded-xl border border-gray-300 bg-white text-base lg:text-lg focus:outline-none focus:ring-2 focus:border-transparent placeholder:text-gray-400 shadow-sm"
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      color: "#1A1A1A",
+                      color: "var(--token-global-text-primary, #1A1A1A)",
                       ["--tw-ring-color" as string]: "#4A7C59",
                     }}
                   />
@@ -246,13 +246,13 @@ const HeroSearchFirst = () => {
                 type="button"
                 onClick={() => navigate("/catalogue")}
                 className="mt-4 text-xs font-bold uppercase tracking-wider underline underline-offset-4 transition-colors"
-                style={{ color: "#6B7280", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                style={{ color: "var(--token-global-text-secondary, #6B7280)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "#1A1A1A";
+                  e.currentTarget.style.color = "var(--token-global-text-primary, #1A1A1A)";
                   e.currentTarget.style.textDecorationThickness = "2px";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "#6B7280";
+                  e.currentTarget.style.color = "var(--token-global-text-secondary, #6B7280)";
                   e.currentTarget.style.textDecorationThickness = "";
                 }}
               >
