@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare, Ticket, Wallpaper } from 'lucide-react';
+import { Link2, Tag, Building, Palette, GraduationCap, ScanLine, Package, MessageSquare, Ticket, Wallpaper, Paintbrush } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import CompatibilityManager from './CompatibilityManager';
@@ -12,6 +12,7 @@ import SiteDesignManager from './SiteDesignManager';
 import ContactMessagesManager from './ContactMessagesManager';
 import PromoCodesManager from './PromoCodesManager';
 import GarageThemesManager from './GarageThemesManager';
+import DesignGlobalManager from './DesignGlobalManager';
 
 const AdminSettings = () => {
   const [tab, setTab] = useState('orders');
@@ -34,7 +35,8 @@ const AdminSettings = () => {
     { id: 'categories', label: 'Catégories', icon: Tag },
     { id: 'brands', label: 'Marques', icon: Building },
     { id: 'compatibility', label: 'Compat.', icon: Link2 },
-    { id: 'design', label: 'Design', icon: Palette },
+    { id: 'design', label: 'Identité Site', icon: Palette },
+    { id: 'design-global', label: 'Design Global', icon: Paintbrush },
     { id: 'garage-themes', label: 'Fonds Garage', icon: Wallpaper },
     { id: 'promos', label: 'Promos', icon: Ticket },
     { id: 'tutos', label: 'Tutos', icon: GraduationCap },
@@ -71,6 +73,7 @@ const AdminSettings = () => {
         <TabsContent value="brands" className="mt-4"><BrandsManager /></TabsContent>
         <TabsContent value="compatibility" className="mt-4"><CompatibilityManager /></TabsContent>
         <TabsContent value="design" className="mt-4"><SiteDesignManager /></TabsContent>
+        <TabsContent value="design-global" className="mt-4"><DesignGlobalManager /></TabsContent>
         <TabsContent value="garage-themes" className="mt-4"><GarageThemesManager /></TabsContent>
         <TabsContent value="promos" className="mt-4"><PromoCodesManager /></TabsContent>
         <TabsContent value="tutos" className="mt-4"><TutosManager /></TabsContent>

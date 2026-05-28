@@ -1,10 +1,19 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Star, Clock, Eye, CalendarDays } from "lucide-react";
-import type { FeaturedRider } from "../GarageOfTheWeekSection";
+
+type FeaturedRider = {
+  name: string;
+  metrics: {
+    lastUpdate: string;
+    weekViews: string | number;
+    nextRiderIn: string;
+  };
+};
 
 type Props = {
   rider: FeaturedRider;
 };
+
 
 const GarageWeekHeader = ({ rider }: Props) => {
   const reduceMotion = useReducedMotion();
