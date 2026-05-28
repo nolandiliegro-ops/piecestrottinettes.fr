@@ -288,13 +288,56 @@ export default function DesignGlobalManager() {
   }
 
   return (
-    <div className="pb-32">
+    <div>
       {/* Header */}
-      <div className="mb-6">
+      <div className="mb-4">
         <h2 className="text-2xl font-bold text-foreground tracking-tight">DESIGN GLOBAL</h2>
         <p className="text-sm text-muted-foreground mt-1 max-w-2xl">
           Modifie les couleurs des zones de ton site. Aperçu en temps réel — publie pour appliquer.
         </p>
+      </div>
+
+      {/* Sticky action bar (TOP) — always visible while editing */}
+      <div className="sticky top-0 z-40 -mx-4 px-4 md:-mx-6 md:px-6 py-3 mb-6 bg-background/95 backdrop-blur border-b border-border">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-sm min-w-0">
+            {pendingCount > 0 ? (
+              <>
+                <Badge className="bg-orange-500 hover:bg-orange-500 animate-pulse gap-1 text-white">
+                  <AlertCircle className="w-3 h-3" />
+                  {pendingCount}
+                </Badge>
+                <span className="text-foreground truncate">
+                  changement{pendingCount > 1 ? 's' : ''} non publié{pendingCount > 1 ? 's' : ''}
+                </span>
+              </>
+            ) : (
+              <span className="text-muted-foreground">Aucune modification en attente</span>
+            )}
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="hidden md:inline text-[11px] text-muted-foreground/80 mr-2">
+              ⌘S publier · Esc annuler
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={pendingCount === 0 || publishMutation.isPending}
+              onClick={requestCancel}
+            >
+              Annuler
+            </Button>
+            <Button
+              size="sm"
+              disabled={pendingCount === 0 || publishMutation.isPending}
+              onClick={triggerPublish}
+              className="bg-[#4A7C59] hover:bg-[#3A6449] text-white"
+            >
+              {publishMutation.isPending && <Loader2 className="w-3.5 h-3.5 animate-spin mr-1" />}
+              Publier{pendingCount > 0 ? ` (${pendingCount})` : ''}
+            </Button>
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
