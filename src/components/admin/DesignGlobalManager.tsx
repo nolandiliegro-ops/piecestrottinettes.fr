@@ -90,6 +90,13 @@ const SECTIONS: { id: string; title: string; fields: FieldSpec[] }[] = [
       { key: 'popular.section-background', label: 'Fond section' },
     ],
   },
+  {
+    id: 'module',
+    title: 'MODULE COMPATIBILITÉ',
+    fields: [
+      { key: 'module.background', label: 'Fond intérieur module "Pour ta trotti"' },
+    ],
+  },
 ];
 
 const PREVIEW_URL = '/';
@@ -298,7 +305,7 @@ export default function DesignGlobalManager() {
       </div>
 
       {/* Sticky action bar (TOP) — always visible while editing */}
-      <div className="sticky top-0 z-40 -mx-4 px-4 md:-mx-6 md:px-6 py-3 mb-6 bg-background/95 backdrop-blur border-b border-border">
+      <div className="sticky top-0 z-40 -mx-4 px-4 md:-mx-6 md:px-6 py-3 mb-6 bg-card border-b border-border shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-sm min-w-0">
             {pendingCount > 0 ? (
@@ -423,16 +430,16 @@ export default function DesignGlobalManager() {
                     <span className="text-muted-foreground shrink-0">
                       Il y a {formatDistanceToNow(new Date(h.changed_at), { locale: fr })}
                     </span>
-                    <span className="text-muted-foreground/60">·</span>
+                    <span className="text-muted-foreground">·</span>
                     <span className="font-mono text-foreground truncate">{h.token_key}</span>
-                    <span className="text-muted-foreground/60">·</span>
+                    <span className="text-muted-foreground">·</span>
                     {h.old_value && (
                       <span className="inline-flex items-center gap-1.5">
                         <span
                           className="inline-block w-3.5 h-3.5 rounded ring-1 ring-border/70 shadow-sm"
                           style={{ background: h.old_value }}
                         />
-                        <span className="font-mono text-foreground/90">{h.old_value}</span>
+                        <span className="font-mono text-foreground">{h.old_value}</span>
                       </span>
                     )}
                     <span className="text-muted-foreground">→</span>

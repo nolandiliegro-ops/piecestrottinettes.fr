@@ -34,6 +34,7 @@ const VALID_KEYS = new Set<string>([
   'brands.card-surround',
   'popular.card-background',
   'popular.section-background',
+  'module.background',
 ]);
 
 const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/;
