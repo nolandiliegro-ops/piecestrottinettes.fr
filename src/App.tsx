@@ -15,6 +15,7 @@ import SpotlightCommand from "@/components/search/SpotlightCommand";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import BrandHelmet from "./components/BrandHelmet";
+import { useDesignTokens } from "@/hooks/useDesignTokens";
 
 // Lazy-loaded pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -50,9 +51,15 @@ const PageLoader = () => (
   </div>
 );
 
+function DesignTokensBootstrap() {
+  useDesignTokens();
+  return null;
+}
+
 function App() {
   return (
   <QueryClientProvider client={queryClient}>
+    <DesignTokensBootstrap />
     <AuthProvider>
       <CartProvider>
         <ScooterProvider>
