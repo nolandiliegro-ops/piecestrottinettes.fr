@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
-import { useHeaderScooterDropdown } from "@/contexts/HeaderScooterDropdownContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
 import { useHomeBridge } from "@/hooks/useHomeBridge";
-import { useIsMobile } from "@/hooks/use-mobile";
 import CompatibilityHeader from "./CompatibilityHeader";
 import ModeToggle from "./ModeToggle";
 import CategoryPills from "./CategoryPills";
@@ -17,11 +15,9 @@ const NEUTRAL_TITLE_ACCENT = "#4A7C59";
 
 const ShopByCompatibility = () => {
   const { selectedScooter, clearSelection } = useSelectedScooter();
-  const { open: openHeaderDropdown } = useHeaderScooterDropdown();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
   const { data: bridgeSettings } = useHomeBridge();
   const darkBlockColor = bridgeSettings?.dark_block_color ?? "#3A3A3A";
-  const isMobile = useIsMobile();
   // Only propagate brand color when a known brand is active; undefined keeps legacy palette.
   const accentColor = brandIsDefault ? undefined : brandColor;
 
@@ -67,23 +63,17 @@ const ShopByCompatibility = () => {
   }, [selectedScooter, clearSelection]);
 
   const handleTitleClick = useCallback(() => {
-    if (isMobile) {
-      setSheetOpen(true);
-    } else {
-      openHeaderDropdown();
-    }
-  }, [isMobile, openHeaderDropdown]);
+    setSheetOpen(true);
+  }, []);
 
   const handleActionClick = useCallback(() => {
     if (selectedScooter) {
       clearSelection();
       setSelectedCategories(new Set());
-    } else if (isMobile) {
-      setSheetOpen(true);
     } else {
-      openHeaderDropdown();
+      setSheetOpen(true);
     }
-  }, [selectedScooter, clearSelection, isMobile, openHeaderDropdown]);
+  }, [selectedScooter, clearSelection]);
 
   // Subtitle derivation (D8: pre-compute and pass to CompatibilityHeader)
   const subtitle = (() => {
