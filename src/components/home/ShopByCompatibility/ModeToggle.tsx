@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 
 interface Props {
   mode: "config" | "discovery";
-  /** Brand accent color (HEX). When provided, active button uses this color. */
-  accentColor?: string;
   hasScooter: boolean;
-  /** Called when user clicks "POUR MA TROTTI" without a scooter. */
+  /** Called when user clicks "POUR MA TROTTINETTE" without a scooter. */
   onSelectMyTrotti: () => void;
   /** Called when user clicks "TOUT LE CATALOGUE" while in config mode. */
   onShowAll: () => void;
 }
 
-const DEFAULT_ACTIVE_COLOR = "#FF6600";
+// Systeme couleur passe 2 : toggle actif = vert sauge, jamais orange.
+const ACTIVE_COLOR = "#4A7C59";
 
 const hexToRgba = (hex: string, alpha: number): string => {
   const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
@@ -23,12 +22,11 @@ const hexToRgba = (hex: string, alpha: number): string => {
 
 const ModeToggle = ({
   mode,
-  accentColor,
   hasScooter,
   onSelectMyTrotti,
   onShowAll,
 }: Props) => {
-  const activeColor = accentColor ?? DEFAULT_ACTIVE_COLOR;
+  const activeColor = ACTIVE_COLOR;
   const isConfig = mode === "config";
 
   const handleMyTrottiClick = () => {

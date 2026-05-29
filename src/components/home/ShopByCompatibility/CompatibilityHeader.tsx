@@ -1,4 +1,4 @@
-import { ChevronDown, Eye, Target } from "lucide-react";
+import { ChevronDown, Eye } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -190,9 +190,7 @@ const CompatibilityHeader = ({
         ) : (
           <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
         )
-      ) : (
-        <FiltrerMaTrottiButton onClick={onActionClick} />
-      )}
+      ) : null}
     </div>
   );
 };
@@ -208,35 +206,6 @@ const BUTTON_BASE: React.CSSProperties = {
   fontWeight: 500,
   fontSize: 11.5,
   transition: "background-color 150ms, color 150ms, border-color 150ms, transform 90ms",
-};
-
-const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
-  const [hover, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => {
-        setHover(false);
-        setActive(false);
-      }}
-      onMouseDown={() => setActive(true)}
-      onMouseUp={() => setActive(false)}
-      className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
-      style={{
-        ...BUTTON_BASE,
-        border: "1px solid rgba(255,255,255,0.2)",
-        backgroundColor: hover ? "rgba(255,255,255,0.06)" : "transparent",
-        color: "rgba(255,255,255,0.9)",
-        transform: active ? "scale(0.97)" : "scale(1)",
-      }}
-    >
-      <Target size={14} strokeWidth={2.2} />
-      <span>Filtrer ma trottinette</span>
-    </button>
-  );
 };
 
 const ToutVoirButton = ({

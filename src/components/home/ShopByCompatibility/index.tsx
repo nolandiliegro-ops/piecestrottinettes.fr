@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Search, X } from "lucide-react";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
@@ -14,7 +16,8 @@ import { THEME, hexToRgba } from "@/lib/theme";
 const NEUTRAL_TITLE_ACCENT = "#4A7C59";
 
 const ShopByCompatibility = () => {
-  const { selectedScooter, clearSelection } = useSelectedScooter();
+  const navigate = useNavigate();
+  const { selectedScooter, setSelectedScooter, clearSelection } = useSelectedScooter();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
   const { data: bridgeSettings } = useHomeBridge();
   const darkBlockColor = bridgeSettings?.dark_block_color ?? "#3A3A3A";
@@ -25,6 +28,13 @@ const ShopByCompatibility = () => {
     () => new Set()
   );
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [productQuery, setProductQuery] = useState("");
+
+  const handleProductSearch = useCallback(() => {
+    const q = productQuery.trim();
+    if (!q) return;
+    navigate(`/catalogue?search=${encodeURIComponent(q)}`);
+  }, [productQuery, navigate]);
 
   const data = useShopByCategoryDataV2(selectedScooter?.id, selectedCategories);
 
@@ -201,22 +211,115 @@ const ShopByCompatibility = () => {
               modelFocalMode={modelFocalMode}
             />
 
+            {/* Recherche produits — redirige vers le catalogue filtre (?search=) */}
+            <form
+              role="search"
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleProductSearch();
+              }}
+              className="mb-5 lg:mb-6"
+            >
+              <div
+                className="flex items-center gap-2 w-full"
+                style={{
+                  padding: "0 14px",
+                  minHeight: 52,
+                  borderRadius: 12,
+                  backgroundColor: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.08)",
+                  boxShadow: "0 2px 10px rgba(0,0,0,0.18)",
+                }}
+              >
+                <Search size={18} strokeWidth={2.2} style={{ color: THEME.textSecondary, flexShrink: 0 }} aria-hidden />
+                <input
+                  type="search"
+                  value={productQuery}
+                  onChange={(e) => setProductQuery(e.target.value)}
+                  placeholder="Cherche une pièce, une référence…"
+                  aria-label="Rechercher une pièce dans le catalogue"
+                  className="flex-1 bg-transparent outline-none"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: 14,
+                    color: THEME.carbon,
+                    minWidth: 0,
+                  }}
+                />
+                <button
+                  type="submit"
+                  aria-label="Rechercher"
+                  className="flex items-center justify-center flex-shrink-0 transition-colors duration-150"
+                  style={{
+                    minHeight: 40,
+                    minWidth: 40,
+                    borderRadius: 8,
+                    backgroundColor: THEME.accentSage,
+                    color: "#FFFFFF",
+                  }}
+                >
+                  <Search size={17} strokeWidth={2.5} />
+                </button>
+              </div>
+            </form>
+
             <ModeToggle
               mode={compatHeaderMode}
-              accentColor={accentColor}
               hasScooter={!!selectedScooter}
               onSelectMyTrotti={() => setSheetOpen(true)}
               onShowAll={handleResetFilters}
             />
+
+            {/* Indicateur modele actif — pill compact marque + modele + desélection */}
+            {selectedScooter && (
+              <div className="-mt-3 mb-6 lg:mb-8 flex items-center gap-2 flex-wrap">
+                <span
+                  className="inline-flex items-center gap-2"
+                  style={{
+                    padding: "6px 6px 6px 12px",
+                    borderRadius: 999,
+                    backgroundColor: "rgba(255,255,255,0.08)",
+                    border: `1px solid ${hexToRgba(accentColor ?? NEUTRAL_TITLE_ACCENT, 0.5)}`,
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: 11,
+                      fontWeight: 600,
+                      color: "rgba(255,255,255,0.95)",
+                      lineHeight: 1,
+                    }}
+                  >
+                    {selectedScooter.brandName ? `${selectedScooter.brandName} ` : ""}
+                    <span style={{ color: accentColor ?? NEUTRAL_TITLE_ACCENT }}>
+                      {selectedScooter.name}
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedScooter(null)}
+                    aria-label="Désélectionner ma trottinette"
+                    className="flex items-center justify-center transition-colors duration-150"
+                    style={{
+                      width: 22,
+                      height: 22,
+                      borderRadius: 999,
+                      backgroundColor: "rgba(255,255,255,0.12)",
+                      color: "rgba(255,255,255,0.85)",
+                    }}
+                  >
+                    <X size={13} strokeWidth={2.6} />
+                  </button>
+                </span>
+              </div>
+            )}
 
             <div className="mb-4 lg:mb-5">
               <CategoryPills
                 categories={data.availableCategories}
                 selectedSlugs={selectedCategories}
                 onToggle={handleToggleCategory}
-                accentColor={accentColor}
-                hasScooter={!!selectedScooter}
-                onSelectMyTrotti={() => setSheetOpen(true)}
               />
             </div>
 
