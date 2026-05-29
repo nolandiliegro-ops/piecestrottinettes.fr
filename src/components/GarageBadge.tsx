@@ -37,18 +37,29 @@ const GarageBadge = forwardRef<HTMLButtonElement, GarageBadgeProps>(
         }}
         {...rest}
       >
-        <span
-          className="flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold flex-shrink-0"
-          style={{
-            background: user
-              ? "linear-gradient(135deg, #4A7C59 0%, #3A6449 100%)"
-              : "rgba(255,255,255,0.08)",
-            color: "white",
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
-          }}
-        >
-          {initial}
-        </span>
+        {user && profile?.avatar_url ? (
+          <img
+            src={profile.avatar_url}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="w-7 h-7 rounded-full object-cover flex-shrink-0"
+            style={{ border: "1px solid rgba(74,124,89,0.5)" }}
+          />
+        ) : (
+          <span
+            className="flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold flex-shrink-0"
+            style={{
+              background: user
+                ? "linear-gradient(135deg, #4A7C59 0%, #3A6449 100%)"
+                : "rgba(255,255,255,0.08)",
+              color: "white",
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+            }}
+          >
+            {initial}
+          </span>
+        )}
 
         <span className="flex flex-col items-start leading-none gap-0.5">
           <span
