@@ -215,6 +215,8 @@ const ShopByCompatibility = () => {
                 selectedSlugs={selectedCategories}
                 onToggle={handleToggleCategory}
                 accentColor={accentColor}
+                hasScooter={!!selectedScooter}
+                onSelectMyTrotti={() => setSheetOpen(true)}
               />
             </div>
 
