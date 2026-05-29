@@ -1,8 +1,10 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Bike, Check, Heart, Home, Plus, Search, X } from "lucide-react";
+import { Bike, Check, Heart, Home, LogIn, Search, X } from "lucide-react";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
-import { useUserGarage, type GarageItem } from "@/hooks/useGarage";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { useUserGarage, useAddToGarage, useToggleOwned, type GarageItem } from "@/hooks/useGarage";
+import { useAuth } from "@/hooks/useAuth";
 import {
   useSelectedScooter,
   getBrandColors,
@@ -22,12 +24,40 @@ const normalize = (s: string): string =>
 
 type BadgeKind = "owned" | "fav" | null;
 
+/** Desktop = modal centré (≥1024px) ; mobile = bottom-sheet. */
+const useIsDesktop = (): boolean => {
+  const [isDesktop, setIsDesktop] = useState<boolean>(() =>
+    typeof window !== "undefined" ? window.matchMedia("(min-width: 1024px)").matches : false
+  );
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => setIsDesktop(mql.matches);
+    mql.addEventListener("change", onChange);
+    setIsDesktop(mql.matches);
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
+  return isDesktop;
+};
+
+/** État garage par model id : owned/fav + l'id de la ligne garage (pour toggle). */
+interface GarageState {
+  isOwned: boolean;
+  garageItemId: string;
+}
+
 const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
   const navigate = useNavigate();
+  const isDesktop = useIsDesktop();
+  const { user } = useAuth();
   const { selectedScooter, setSelectedScooter, clearSelection, allScooters } =
     useSelectedScooter();
   const { data: garageScooters, isLoading } = useUserGarage();
+  const addToGarage = useAddToGarage();
+  const toggleOwned = useToggleOwned();
+
+  // --- État (vit dans le PARENT, partagé entre Dialog et Sheet) ---
   const [query, setQuery] = useState("");
+  const [authPrompt, setAuthPrompt] = useState(false);
 
   const hasScooters = !!garageScooters && garageScooters.length > 0;
   const ownedItems = useMemo(
@@ -39,12 +69,12 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
     [garageScooters]
   );
 
-  // model id -> is_owned, to badge search results already saved in the garage
+  // model id -> { isOwned, garageItemId } : badge + toggle des résultats déjà sauvegardés
   const garageById = useMemo(() => {
-    const m = new Map<string, boolean>();
+    const m = new Map<string, GarageState>();
     for (const item of garageScooters ?? []) {
       const id = item.scooter_model?.id;
-      if (id) m.set(id, item.is_owned);
+      if (id) m.set(id, { isOwned: item.is_owned, garageItemId: item.id });
     }
     return m;
   }, [garageScooters]);
@@ -60,10 +90,14 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
   }, [isSearching, trimmed, allScooters]);
 
   const handleClose = (v: boolean) => {
-    if (!v) setQuery("");
+    if (!v) {
+      setQuery("");
+      setAuthPrompt(false);
+    }
     onOpenChange(v);
   };
 
+  // --- Sélection (filtrer) : SANS auth, ne ferme pas (confirmation via le CTA bénéfice) ---
   const handleSelectGarage = (item: GarageItem) => {
     const model = item.scooter_model;
     if (!model) return;
@@ -76,7 +110,6 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
       brandName,
       imageUrl: item.custom_photo_url || model.image_url,
     });
-    handleClose(false);
   };
 
   const handleSelectOption = (option: ScooterOption) => {
@@ -87,18 +120,91 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
       brandName: option.brandName,
       imageUrl: option.imageUrl,
     });
-    handleClose(false);
   };
 
-  const handleAddGarage = () => {
-    handleClose(false);
-    navigate("/garage");
+  // --- Ajout inline garage / favori : auth requise, reste ouvert, devient sélectionné ---
+  const handleAddInline = async (option: ScooterOption, isOwned: boolean) => {
+    if (!user) {
+      setAuthPrompt(true);
+      return;
+    }
+    const existing = garageById.get(option.id);
+    try {
+      if (existing) {
+        // Déjà dans le garage : on bascule écurie <-> favori si besoin
+        if (existing.isOwned !== isOwned) {
+          await toggleOwned.mutateAsync({
+            garageItemId: existing.garageItemId,
+            newIsOwned: isOwned,
+          });
+        }
+      } else {
+        await addToGarage.mutateAsync({
+          scooterSlug: option.slug,
+          isOwned,
+          scooterName: option.name,
+        });
+      }
+      // La trottinette devient la sélection active ; le sheet reste ouvert.
+      handleSelectOption(option);
+    } catch {
+      // Les hooks affichent déjà un toast d'erreur.
+    }
+  };
+
+  const handleConfirm = () => {
+    if (selectedScooter) handleClose(false);
   };
 
   const handleClear = () => {
     clearSelection();
     handleClose(false);
   };
+
+  const isMutating = addToGarage.isPending || toggleOwned.isPending;
+
+  const body = (
+    <SelectorBody
+      query={query}
+      onQueryChange={setQuery}
+      isSearching={isSearching}
+      trimmed={trimmed}
+      searchResults={searchResults}
+      garageById={garageById}
+      ownedItems={ownedItems}
+      favItems={favItems}
+      hasScooters={hasScooters}
+      isLoading={isLoading}
+      isLoggedIn={!!user}
+      authPrompt={authPrompt}
+      onDismissAuthPrompt={() => setAuthPrompt(false)}
+      onGoLogin={() => {
+        handleClose(false);
+        navigate("/login");
+      }}
+      selectedId={selectedScooter?.id ?? null}
+      hasSelection={!!selectedScooter}
+      isMutating={isMutating}
+      onSelectOption={handleSelectOption}
+      onSelectGarage={handleSelectGarage}
+      onAddInline={handleAddInline}
+      onConfirm={handleConfirm}
+      onClear={handleClear}
+    />
+  );
+
+  if (isDesktop) {
+    return (
+      <Dialog open={open} onOpenChange={handleClose}>
+        <DialogContent
+          className="p-0 gap-0 overflow-hidden border-0 rounded-2xl"
+          style={{ width: 460, maxWidth: "calc(100vw - 32px)", backgroundColor: THEME.bgWhite }}
+        >
+          <div className="max-h-[80vh] overflow-y-auto">{body}</div>
+        </DialogContent>
+      </Dialog>
+    );
+  }
 
   return (
     <Sheet open={open} onOpenChange={handleClose}>
@@ -107,274 +213,355 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
         className="p-0 rounded-t-2xl border-t-0 max-h-[85vh] overflow-y-auto"
         style={{ backgroundColor: THEME.bgWhite }}
       >
-        {/* Handle */}
-        <div className="flex justify-center pt-3 pb-2">
+        {/* Handle (mobile uniquement) */}
+        <div className="flex justify-center pt-3 pb-1">
           <div
             aria-hidden
-            style={{
-              width: 36,
-              height: 4,
-              borderRadius: 999,
-              backgroundColor: "rgba(0,0,0,0.15)",
-            }}
+            style={{ width: 36, height: 4, borderRadius: 999, backgroundColor: "rgba(0,0,0,0.15)" }}
           />
         </div>
-
-        {/* Header */}
-        <div className="px-5 pt-2 pb-3">
-          <h2
-            style={{
-              fontFamily: "'Anton', Impact, sans-serif",
-              fontWeight: 400,
-              fontSize: 16,
-              textTransform: "uppercase",
-              letterSpacing: "-0.01em",
-              color: THEME.carbon,
-              lineHeight: 1,
-            }}
-          >
-            Ma trottinette
-          </h2>
-          <p
-            className="mt-1.5"
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: 12,
-              color: THEME.textSecondary,
-              lineHeight: 1.3,
-            }}
-          >
-            Sélectionne pour filtrer les pièces compatibles
-          </p>
-        </div>
-
-        {/* Search */}
-        <div className="px-5 pb-3">
-          <div
-            className="flex items-center gap-2"
-            style={{
-              padding: "0 12px",
-              minHeight: 44,
-              borderRadius: 10,
-              border: `1px solid ${THEME.borderLight}`,
-              backgroundColor: THEME.bgCapsule,
-            }}
-          >
-            <Search size={16} strokeWidth={2.2} style={{ color: THEME.textSecondary, flexShrink: 0 }} />
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Rechercher un modèle (marque, nom)…"
-              className="flex-1 bg-transparent outline-none"
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
-                color: THEME.carbon,
-                minWidth: 0,
-              }}
-            />
-            {isSearching && (
-              <button
-                type="button"
-                onClick={() => setQuery("")}
-                aria-label="Effacer la recherche"
-                className="flex items-center justify-center flex-shrink-0"
-                style={{ width: 28, height: 28, color: THEME.textSecondary }}
-              >
-                <X size={15} strokeWidth={2.4} />
-              </button>
-            )}
-          </div>
-        </div>
-
-        {/* Body */}
-        <div className="px-5 pb-3">
-          {isSearching ? (
-            searchResults.length === 0 ? (
-              <div
-                className="text-center py-8"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: 13,
-                  color: THEME.textSecondary,
-                }}
-              >
-                Aucun modèle trouvé pour « {trimmed} ».
-              </div>
-            ) : (
-              <div className="flex flex-col gap-2">
-                {searchResults.map((option) => {
-                  const inGarage = garageById.has(option.id);
-                  const badge: BadgeKind = inGarage
-                    ? garageById.get(option.id)
-                      ? "owned"
-                      : "fav"
-                    : null;
-                  return (
-                    <ScooterRow
-                      key={option.id}
-                      brandName={option.brandName}
-                      modelName={option.name}
-                      thumb={option.imageUrl ?? null}
-                      active={selectedScooter?.id === option.id}
-                      accent={getBrandColors(option.brandName).accent}
-                      badge={badge}
-                      secondary={!inGarage}
-                      onClick={() => handleSelectOption(option)}
-                    />
-                  );
-                })}
-              </div>
-            )
-          ) : (
-            <>
-              {isLoading && (
-                <div
-                  className="text-center py-8"
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: 13,
-                    color: THEME.textSecondary,
-                  }}
-                >
-                  Chargement…
-                </div>
-              )}
-
-              {!isLoading && !hasScooters && (
-                <div
-                  className="text-center py-8"
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: 13,
-                    color: THEME.textSecondary,
-                    lineHeight: 1.5,
-                  }}
-                >
-                  Aucune trottinette sauvegardée. Utilise la recherche ci-dessus
-                  pour choisir un modèle.
-                </div>
-              )}
-
-              {!isLoading && ownedItems.length > 0 && (
-                <SectionLabel icon={<Home size={12} strokeWidth={2.4} />} label="Mon écurie" />
-              )}
-              {!isLoading && ownedItems.length > 0 && (
-                <div className="flex flex-col gap-2 mb-1">
-                  {ownedItems.map((item) => {
-                    const model = item.scooter_model!;
-                    const brandName =
-                      typeof model.brand === "object" && model.brand
-                        ? model.brand.name
-                        : "Unknown";
-                    return (
-                      <ScooterRow
-                        key={item.id}
-                        brandName={brandName}
-                        modelName={item.nickname || model.name}
-                        thumb={item.custom_photo_url || model.image_url}
-                        active={selectedScooter?.id === model.id}
-                        accent={getBrandColors(brandName).accent}
-                        badge="owned"
-                        onClick={() => handleSelectGarage(item)}
-                      />
-                    );
-                  })}
-                </div>
-              )}
-
-              {!isLoading && favItems.length > 0 && (
-                <SectionLabel
-                  icon={<Heart size={12} strokeWidth={2.4} />}
-                  label="Mes favoris"
-                />
-              )}
-              {!isLoading && favItems.length > 0 && (
-                <div className="flex flex-col gap-2">
-                  {favItems.map((item) => {
-                    const model = item.scooter_model!;
-                    const brandName =
-                      typeof model.brand === "object" && model.brand
-                        ? model.brand.name
-                        : "Unknown";
-                    return (
-                      <ScooterRow
-                        key={item.id}
-                        brandName={brandName}
-                        modelName={item.nickname || model.name}
-                        thumb={item.custom_photo_url || model.image_url}
-                        active={selectedScooter?.id === model.id}
-                        accent={getBrandColors(brandName).accent}
-                        badge="fav"
-                        onClick={() => handleSelectGarage(item)}
-                      />
-                    );
-                  })}
-                </div>
-              )}
-            </>
-          )}
-        </div>
-
-        {/* Separator */}
-        <div
-          aria-hidden
-          style={{
-            height: 1,
-            backgroundColor: THEME.borderSubtle,
-            margin: "0 20px",
-          }}
-        />
-
-        {/* Actions */}
-        <div className="px-5 py-4 flex flex-col gap-2">
-          <button
-            type="button"
-            onClick={handleAddGarage}
-            className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
-            style={{
-              minHeight: 48,
-              padding: "12px 16px",
-              borderRadius: 10,
-              border: `1px solid ${THEME.carbon}`,
-              backgroundColor: "transparent",
-              fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
-              fontWeight: 600,
-              color: THEME.carbon,
-            }}
-          >
-            <Plus size={16} strokeWidth={2.4} />
-            <span>Ajouter une trotti à mon garage</span>
-          </button>
-
-          {selectedScooter && (
-            <button
-              type="button"
-              onClick={handleClear}
-              className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
-              style={{
-                minHeight: 48,
-                padding: "12px 16px",
-                borderRadius: 10,
-                border: `1px solid ${hexToRgba(THEME.accentRed, 0.25)}`,
-                backgroundColor: "transparent",
-                fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
-                fontWeight: 600,
-                color: THEME.accentRed,
-              }}
-            >
-              <X size={16} strokeWidth={2.4} />
-              <span>Retirer la sélection (voir tout)</span>
-            </button>
-          )}
-        </div>
+        {body}
       </SheetContent>
     </Sheet>
   );
 };
+
+/* ── Corps partagé (présentationnel, état dans le parent) ──────────────────── */
+
+interface SelectorBodyProps {
+  query: string;
+  onQueryChange: (v: string) => void;
+  isSearching: boolean;
+  trimmed: string;
+  searchResults: ScooterOption[];
+  garageById: Map<string, GarageState>;
+  ownedItems: GarageItem[];
+  favItems: GarageItem[];
+  hasScooters: boolean;
+  isLoading: boolean;
+  isLoggedIn: boolean;
+  authPrompt: boolean;
+  onDismissAuthPrompt: () => void;
+  onGoLogin: () => void;
+  selectedId: string | null;
+  hasSelection: boolean;
+  isMutating: boolean;
+  onSelectOption: (o: ScooterOption) => void;
+  onSelectGarage: (i: GarageItem) => void;
+  onAddInline: (o: ScooterOption, isOwned: boolean) => void;
+  onConfirm: () => void;
+  onClear: () => void;
+}
+
+const optionFromGarage = (item: GarageItem): ScooterOption => {
+  const model = item.scooter_model!;
+  const brandName =
+    typeof model.brand === "object" && model.brand ? model.brand.name : "Unknown";
+  return {
+    id: model.id,
+    name: item.nickname || model.name,
+    slug: model.slug,
+    brandName,
+    imageUrl: item.custom_photo_url || model.image_url,
+  };
+};
+
+const SelectorBody = ({
+  query,
+  onQueryChange,
+  isSearching,
+  trimmed,
+  searchResults,
+  garageById,
+  ownedItems,
+  favItems,
+  hasScooters,
+  isLoading,
+  isLoggedIn,
+  authPrompt,
+  onDismissAuthPrompt,
+  onGoLogin,
+  selectedId,
+  hasSelection,
+  isMutating,
+  onSelectOption,
+  onSelectGarage,
+  onAddInline,
+  onConfirm,
+  onClear,
+}: SelectorBodyProps) => {
+  // Copy des 3 états : recherche / garage / accueil
+  const subtitle = isSearching
+    ? "Sélectionne un modèle, ajoute-le à ton garage ou à tes favoris"
+    : hasScooters
+      ? "Choisis dans ton garage ou cherche un autre modèle"
+      : "Cherche ton modèle pour filtrer les pièces compatibles";
+
+  return (
+    <div className="flex flex-col">
+      {/* Header */}
+      <div className="px-5 pt-3 pb-3">
+        <h2
+          style={{
+            fontFamily: "'Anton', Impact, sans-serif",
+            fontWeight: 400,
+            fontSize: 17,
+            textTransform: "uppercase",
+            letterSpacing: "-0.01em",
+            color: THEME.carbon,
+            lineHeight: 1,
+          }}
+        >
+          Ma trottinette
+        </h2>
+        <p
+          className="mt-1.5"
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 12,
+            color: THEME.textSecondary,
+            lineHeight: 1.3,
+          }}
+        >
+          {subtitle}
+        </p>
+      </div>
+
+      {/* Search */}
+      <div className="px-5 pb-3">
+        <div
+          className="flex items-center gap-2"
+          style={{
+            padding: "0 12px",
+            minHeight: 44,
+            borderRadius: 10,
+            border: `1px solid ${THEME.borderLight}`,
+            backgroundColor: THEME.bgCapsule,
+          }}
+        >
+          <Search size={16} strokeWidth={2.2} style={{ color: THEME.textSecondary, flexShrink: 0 }} />
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => onQueryChange(e.target.value)}
+            placeholder="Rechercher un modèle (marque, nom)…"
+            className="flex-1 bg-transparent outline-none"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: THEME.carbon, minWidth: 0 }}
+          />
+          {isSearching && (
+            <button
+              type="button"
+              onClick={() => onQueryChange("")}
+              aria-label="Effacer la recherche"
+              className="flex items-center justify-center flex-shrink-0"
+              style={{ width: 28, height: 28, color: THEME.textSecondary }}
+            >
+              <X size={15} strokeWidth={2.4} />
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Auth prompt inline (jamais de redirect qui perd le contexte) */}
+      {authPrompt && !isLoggedIn && (
+        <div className="px-5 pb-3">
+          <div
+            className="flex items-center gap-3"
+            style={{
+              padding: "10px 12px",
+              borderRadius: 10,
+              border: `1px solid ${hexToRgba(THEME.accentSage, 0.3)}`,
+              backgroundColor: hexToRgba(THEME.accentSage, 0.06),
+            }}
+          >
+            <p
+              className="flex-1"
+              style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: THEME.carbon, lineHeight: 1.35 }}
+            >
+              Connecte-toi pour sauvegarder ta trottinette dans ton garage.
+            </p>
+            <button
+              type="button"
+              onClick={onGoLogin}
+              className="flex items-center gap-1.5 flex-shrink-0"
+              style={{
+                minHeight: 36,
+                padding: "0 12px",
+                borderRadius: 8,
+                backgroundColor: THEME.accentSage,
+                color: "#FFFFFF",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 12,
+                fontWeight: 600,
+              }}
+            >
+              <LogIn size={14} strokeWidth={2.4} />
+              <span>Se connecter</span>
+            </button>
+            <button
+              type="button"
+              onClick={onDismissAuthPrompt}
+              aria-label="Fermer"
+              className="flex items-center justify-center flex-shrink-0"
+              style={{ width: 28, height: 28, color: THEME.textSecondary }}
+            >
+              <X size={14} strokeWidth={2.4} />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Body */}
+      <div className="px-5 pb-3">
+        {isSearching ? (
+          searchResults.length === 0 ? (
+            <EmptyHint>Aucun modèle trouvé pour « {trimmed} ».</EmptyHint>
+          ) : (
+            <CardGrid>
+              {searchResults.map((option) => {
+                const g = garageById.get(option.id);
+                const badge: BadgeKind = g ? (g.isOwned ? "owned" : "fav") : null;
+                return (
+                  <ScooterCard
+                    key={option.id}
+                    option={option}
+                    active={selectedId === option.id}
+                    badge={badge}
+                    isMutating={isMutating}
+                    onSelect={() => onSelectOption(option)}
+                    onAddGarage={() => onAddInline(option, true)}
+                    onAddFav={() => onAddInline(option, false)}
+                  />
+                );
+              })}
+            </CardGrid>
+          )
+        ) : (
+          <>
+            {isLoading && <EmptyHint>Chargement…</EmptyHint>}
+
+            {!isLoading && !hasScooters && (
+              <EmptyHint>
+                Aucune trottinette sauvegardée. Utilise la recherche ci-dessus pour choisir un modèle.
+              </EmptyHint>
+            )}
+
+            {!isLoading && ownedItems.length > 0 && (
+              <>
+                <SectionLabel icon={<Home size={12} strokeWidth={2.4} />} label="Mon écurie" />
+                <CardGrid>
+                  {ownedItems.map((item) => {
+                    const option = optionFromGarage(item);
+                    return (
+                      <ScooterCard
+                        key={item.id}
+                        option={option}
+                        active={selectedId === option.id}
+                        badge="owned"
+                        isMutating={isMutating}
+                        onSelect={() => onSelectGarage(item)}
+                        onAddGarage={() => onAddInline(option, true)}
+                        onAddFav={() => onAddInline(option, false)}
+                      />
+                    );
+                  })}
+                </CardGrid>
+              </>
+            )}
+
+            {!isLoading && favItems.length > 0 && (
+              <>
+                <SectionLabel icon={<Heart size={12} strokeWidth={2.4} />} label="Mes favoris" />
+                <CardGrid>
+                  {favItems.map((item) => {
+                    const option = optionFromGarage(item);
+                    return (
+                      <ScooterCard
+                        key={item.id}
+                        option={option}
+                        active={selectedId === option.id}
+                        badge="fav"
+                        isMutating={isMutating}
+                        onSelect={() => onSelectGarage(item)}
+                        onAddGarage={() => onAddInline(option, true)}
+                        onAddFav={() => onAddInline(option, false)}
+                      />
+                    );
+                  })}
+                </CardGrid>
+              </>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* Separator */}
+      <div aria-hidden style={{ height: 1, backgroundColor: THEME.borderSubtle, margin: "0 20px" }} />
+
+      {/* Actions */}
+      <div className="px-5 py-4 flex flex-col gap-2">
+        <button
+          type="button"
+          onClick={onConfirm}
+          disabled={!hasSelection}
+          className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
+          style={{
+            minHeight: 50,
+            padding: "12px 16px",
+            borderRadius: 12,
+            border: "none",
+            backgroundColor: hasSelection ? THEME.accentSage : "rgba(0,0,0,0.06)",
+            color: hasSelection ? "#FFFFFF" : THEME.textSecondary,
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 14,
+            fontWeight: 700,
+            cursor: hasSelection ? "pointer" : "default",
+          }}
+        >
+          <Check size={17} strokeWidth={2.6} />
+          <span>{hasSelection ? "Voir les pièces compatibles" : "Sélectionne une trottinette"}</span>
+        </button>
+
+        {hasSelection && (
+          <button
+            type="button"
+            onClick={onClear}
+            className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
+            style={{
+              minHeight: 44,
+              padding: "10px 16px",
+              borderRadius: 10,
+              border: `1px solid ${hexToRgba(THEME.accentRed, 0.25)}`,
+              backgroundColor: "transparent",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 13,
+              fontWeight: 600,
+              color: THEME.accentRed,
+            }}
+          >
+            <X size={16} strokeWidth={2.4} />
+            <span>Retirer la sélection (voir tout)</span>
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+/* ── Sous-composants ───────────────────────────────────────────────────────── */
+
+const CardGrid = ({ children }: { children: React.ReactNode }) => (
+  <div className="grid grid-cols-2 gap-2.5">{children}</div>
+);
+
+const EmptyHint = ({ children }: { children: React.ReactNode }) => (
+  <div
+    className="text-center py-8"
+    style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: THEME.textSecondary, lineHeight: 1.5 }}
+  >
+    {children}
+  </div>
+);
 
 const SectionLabel = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
   <div
@@ -393,95 +580,124 @@ const SectionLabel = ({ icon, label }: { icon: React.ReactNode; label: string })
   </div>
 );
 
-interface RowProps {
-  brandName: string;
-  modelName: string;
-  thumb: string | null;
+interface CardProps {
+  option: ScooterOption;
   active: boolean;
-  accent: string;
   badge: BadgeKind;
-  secondary?: boolean;
-  onClick: () => void;
+  isMutating: boolean;
+  onSelect: () => void;
+  onAddGarage: () => void;
+  onAddFav: () => void;
 }
 
-const ScooterRow = ({
-  brandName,
-  modelName,
-  thumb,
+const ScooterCard = ({
+  option,
   active,
-  accent,
   badge,
-  secondary = false,
-  onClick,
-}: RowProps) => {
+  isMutating,
+  onSelect,
+  onAddGarage,
+  onAddFav,
+}: CardProps) => {
+  const accent = getBrandColors(option.brandName).accent;
+
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="flex items-center gap-3 w-full text-left transition-all duration-150"
+    <div
+      role="button"
+      tabIndex={0}
+      aria-pressed={active}
+      onClick={onSelect}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect();
+        }
+      }}
+      className="relative flex flex-col text-left transition-all duration-150 cursor-pointer overflow-hidden"
       style={{
-        padding: "10px 12px",
-        borderRadius: 12,
-        minHeight: 64,
-        opacity: secondary && !active ? 0.85 : 1,
-        border: active
-          ? `1.5px solid ${accent}`
-          : `1px solid ${THEME.borderLight}`,
-        backgroundColor: active ? hexToRgba(accent, 0.04) : THEME.bgWhite,
+        borderRadius: 14,
+        minHeight: 168,
+        border: active ? `2px solid ${accent}` : `1px solid ${THEME.borderLight}`,
+        backgroundColor: active ? hexToRgba(accent, 0.05) : THEME.bgWhite,
+        boxShadow: active ? `0 4px 14px ${hexToRgba(accent, 0.18)}` : "none",
       }}
     >
-      {thumb ? (
-        <img
-          src={thumb}
-          alt={modelName}
-          style={{
-            width: 44,
-            height: 44,
-            borderRadius: 8,
-            objectFit: "contain",
-            backgroundColor: THEME.bgCapsule,
-            padding: 2,
-            flexShrink: 0,
-          }}
-        />
-      ) : (
+      {/* Badge écurie / favori */}
+      {badge && (
         <div
+          className="absolute top-2 right-2 flex items-center justify-center"
           style={{
-            width: 44,
-            height: 44,
-            borderRadius: 8,
-            backgroundColor: THEME.bgCapsule,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexShrink: 0,
+            width: 22,
+            height: 22,
+            borderRadius: 999,
+            backgroundColor: badge === "fav" ? hexToRgba(THEME.accentRed, 0.12) : hexToRgba(THEME.carbon, 0.06),
           }}
-          aria-hidden
         >
-          <Bike size={20} strokeWidth={2} style={{ color: THEME.textSecondary }} />
+          {badge === "owned" ? (
+            <Home size={12} strokeWidth={2.4} aria-label="Dans mon écurie" style={{ color: THEME.carbon }} />
+          ) : (
+            <Heart
+              size={12}
+              strokeWidth={2.4}
+              aria-label="Dans mes favoris"
+              style={{ color: THEME.accentRed, fill: THEME.accentRed }}
+            />
+          )}
         </div>
       )}
 
-      <div className="flex-1 min-w-0">
+      {/* Check état sélectionné */}
+      {active && (
+        <div
+          className="absolute top-2 left-2 flex items-center justify-center"
+          style={{ width: 22, height: 22, borderRadius: 999, backgroundColor: accent }}
+        >
+          <Check size={13} strokeWidth={3} style={{ color: "#FFFFFF" }} />
+        </div>
+      )}
+
+      {/* Vignette */}
+      <div
+        className="flex items-center justify-center"
+        style={{ height: 78, backgroundColor: THEME.bgCapsule, paddingTop: 8 }}
+      >
+        {option.imageUrl ? (
+          <img
+            src={option.imageUrl}
+            alt={option.name}
+            loading="lazy"
+            decoding="async"
+            style={{ height: 64, width: "auto", objectFit: "contain" }}
+          />
+        ) : (
+          <Bike size={28} strokeWidth={1.8} style={{ color: THEME.textSecondary }} aria-hidden />
+        )}
+      </div>
+
+      {/* Filet couleur de marque */}
+      <div aria-hidden style={{ height: 3, backgroundColor: accent }} />
+
+      {/* Infos */}
+      <div className="px-2.5 pt-2 pb-1 flex-1 min-w-0">
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 10,
+            fontSize: 9.5,
             fontWeight: 500,
             textTransform: "uppercase",
             letterSpacing: "0.06em",
             color: THEME.textSecondary,
             lineHeight: 1,
-            marginBottom: 4,
+            marginBottom: 3,
           }}
         >
-          {brandName}
+          {option.brandName}
         </p>
         <p
           className="truncate"
           style={{
             fontFamily: "'Anton', Impact, sans-serif",
-            fontSize: 14,
+            fontSize: 13,
             fontWeight: 400,
             textTransform: "uppercase",
             letterSpacing: "-0.01em",
@@ -489,32 +705,64 @@ const ScooterRow = ({
             lineHeight: 1.1,
           }}
         >
-          {modelName}
+          {option.name}
         </p>
       </div>
 
-      {badge === "owned" && (
-        <Home
-          size={15}
-          strokeWidth={2.2}
-          aria-label="Dans mon écurie"
-          style={{ color: THEME.textSecondary, flexShrink: 0 }}
+      {/* Actions secondaires : favori / garage (sans redirection) */}
+      <div className="flex border-t" style={{ borderColor: THEME.borderSubtle }}>
+        <CardAction
+          label="Favori"
+          icon={<Heart size={13} strokeWidth={2.3} style={{ color: badge === "fav" ? THEME.accentRed : THEME.textSecondary, fill: badge === "fav" ? THEME.accentRed : "transparent" }} />}
+          disabled={isMutating}
+          onClick={(e) => {
+            e.stopPropagation();
+            onAddFav();
+          }}
         />
-      )}
-      {badge === "fav" && (
-        <Heart
-          size={15}
-          strokeWidth={2.2}
-          aria-label="Dans mes favoris"
-          style={{ color: THEME.accentRed, fill: THEME.accentRed, flexShrink: 0 }}
+        <div aria-hidden style={{ width: 1, backgroundColor: THEME.borderSubtle }} />
+        <CardAction
+          label="Garage"
+          icon={<Home size={13} strokeWidth={2.3} style={{ color: badge === "owned" ? THEME.accentSage : THEME.textSecondary }} />}
+          disabled={isMutating}
+          onClick={(e) => {
+            e.stopPropagation();
+            onAddGarage();
+          }}
         />
-      )}
-
-      {active && (
-        <Check size={18} strokeWidth={2.5} style={{ color: accent, flexShrink: 0 }} />
-      )}
-    </button>
+      </div>
+    </div>
   );
 };
+
+const CardAction = ({
+  label,
+  icon,
+  disabled,
+  onClick,
+}: {
+  label: string;
+  icon: React.ReactNode;
+  disabled: boolean;
+  onClick: (e: React.MouseEvent) => void;
+}) => (
+  <button
+    type="button"
+    disabled={disabled}
+    onClick={onClick}
+    className="flex-1 inline-flex items-center justify-center gap-1 transition-colors duration-150"
+    style={{
+      minHeight: 36,
+      fontFamily: "'Inter', sans-serif",
+      fontSize: 11,
+      fontWeight: 600,
+      color: THEME.textSecondary,
+      opacity: disabled ? 0.5 : 1,
+    }}
+  >
+    {icon}
+    <span>{label}</span>
+  </button>
+);
 
 export default ScooterSelectorSheet;
