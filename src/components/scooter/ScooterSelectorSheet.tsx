@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Bike, Check, Heart, Home, LogIn, Search, X } from "lucide-react";
+import { Bike, Check, Flame, Heart, Home, LogIn, Search, X } from "lucide-react";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useUserGarage, useAddToGarage, useToggleOwned, type GarageItem } from "@/hooks/useGarage";
+import { useHeroScooters } from "@/hooks/useHeroScooters";
 import { useAuth } from "@/hooks/useAuth";
 import {
   useSelectedScooter,
@@ -69,6 +70,9 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
     [garageScooters]
   );
 
+  // "Les plus populaires" : reutilise la query curatee (is_top_moment), zero requete neuve.
+  const { scooters: popularScooters } = useHeroScooters("");
+
   // model id -> { isOwned, garageItemId } : badge + toggle des résultats déjà sauvegardés
   const garageById = useMemo(() => {
     const m = new Map<string, GarageState>();
@@ -78,6 +82,22 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
     }
     return m;
   }, [garageScooters]);
+
+  // Cartes populaires (hors modeles deja dans le garage), max 8.
+  const popularItems = useMemo<ScooterOption[]>(
+    () =>
+      popularScooters
+        .filter((s) => !garageById.has(s.id))
+        .slice(0, 8)
+        .map((s) => ({
+          id: s.id,
+          name: s.name,
+          slug: s.slug,
+          brandName: s.brand_name ?? "Unknown",
+          imageUrl: s.image_url,
+        })),
+    [popularScooters, garageById]
+  );
 
   const trimmed = query.trim();
   const isSearching = trimmed.length > 0;
@@ -173,6 +193,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
       garageById={garageById}
       ownedItems={ownedItems}
       favItems={favItems}
+      popularItems={popularItems}
       hasScooters={hasScooters}
       isLoading={isLoading}
       isLoggedIn={!!user}
@@ -237,6 +258,7 @@ interface SelectorBodyProps {
   garageById: Map<string, GarageState>;
   ownedItems: GarageItem[];
   favItems: GarageItem[];
+  popularItems: ScooterOption[];
   hasScooters: boolean;
   isLoading: boolean;
   isLoggedIn: boolean;
@@ -275,6 +297,7 @@ const SelectorBody = ({
   garageById,
   ownedItems,
   favItems,
+  popularItems,
   hasScooters,
   isLoading,
   isLoggedIn,
@@ -295,7 +318,7 @@ const SelectorBody = ({
     ? "Sélectionne un modèle, ajoute-le à ton garage ou à tes favoris"
     : hasScooters
       ? "Choisis dans ton garage ou cherche un autre modèle"
-      : "Cherche ton modèle pour filtrer les pièces compatibles";
+      : "Choisis un modèle populaire ou cherche le tien";
 
   return (
     <div className="flex flex-col">
@@ -440,12 +463,6 @@ const SelectorBody = ({
           <>
             {isLoading && <EmptyHint>Chargement…</EmptyHint>}
 
-            {!isLoading && !hasScooters && (
-              <EmptyHint>
-                Aucune trottinette sauvegardée. Utilise la recherche ci-dessus pour choisir un modèle.
-              </EmptyHint>
-            )}
-
             {!isLoading && ownedItems.length > 0 && (
               <>
                 <SectionLabel icon={<Home size={12} strokeWidth={2.4} />} label="Mon écurie" />
@@ -491,59 +508,79 @@ const SelectorBody = ({
                 </CardGrid>
               </>
             )}
+
+            {!isLoading && popularItems.length > 0 && (
+              <>
+                <SectionLabel icon={<Flame size={12} strokeWidth={2.4} />} label="Les plus populaires" />
+                <CardGrid>
+                  {popularItems.map((option) => (
+                    <ScooterCard
+                      key={option.id}
+                      option={option}
+                      active={selectedId === option.id}
+                      badge={null}
+                      isMutating={isMutating}
+                      onSelect={() => onSelectOption(option)}
+                      onAddGarage={() => onAddInline(option, true)}
+                      onAddFav={() => onAddInline(option, false)}
+                    />
+                  ))}
+                </CardGrid>
+              </>
+            )}
           </>
         )}
       </div>
 
-      {/* Separator */}
-      <div aria-hidden style={{ height: 1, backgroundColor: THEME.borderSubtle, margin: "0 20px" }} />
+      {/* Actions — affichees uniquement quand une trottinette est selectionnee
+          (jamais de bouton desactive, jamais de cul-de-sac) */}
+      {hasSelection && (
+        <>
+          <div aria-hidden style={{ height: 1, backgroundColor: THEME.borderSubtle, margin: "0 20px" }} />
+          <div className="px-5 py-4 flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={onConfirm}
+              className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
+              style={{
+                minHeight: 50,
+                padding: "12px 16px",
+                borderRadius: 12,
+                border: "none",
+                backgroundColor: THEME.accentSage,
+                color: "#FFFFFF",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 14,
+                fontWeight: 700,
+                cursor: "pointer",
+              }}
+            >
+              <Check size={17} strokeWidth={2.6} />
+              <span>Voir les pièces compatibles</span>
+            </button>
 
-      {/* Actions */}
-      <div className="px-5 py-4 flex flex-col gap-2">
-        <button
-          type="button"
-          onClick={onConfirm}
-          disabled={!hasSelection}
-          className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
-          style={{
-            minHeight: 50,
-            padding: "12px 16px",
-            borderRadius: 12,
-            border: "none",
-            backgroundColor: hasSelection ? THEME.accentSage : "rgba(0,0,0,0.06)",
-            color: hasSelection ? "#FFFFFF" : THEME.textSecondary,
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 14,
-            fontWeight: 700,
-            cursor: hasSelection ? "pointer" : "default",
-          }}
-        >
-          <Check size={17} strokeWidth={2.6} />
-          <span>{hasSelection ? "Voir les pièces compatibles" : "Sélectionne une trottinette"}</span>
-        </button>
-
-        {hasSelection && (
-          <button
-            type="button"
-            onClick={onClear}
-            className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
-            style={{
-              minHeight: 44,
-              padding: "10px 16px",
-              borderRadius: 10,
-              border: `1px solid ${hexToRgba(THEME.accentRed, 0.25)}`,
-              backgroundColor: "transparent",
-              fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
-              fontWeight: 600,
-              color: THEME.accentRed,
-            }}
-          >
-            <X size={16} strokeWidth={2.4} />
-            <span>Retirer la sélection (voir tout)</span>
-          </button>
-        )}
-      </div>
+            <button
+              type="button"
+              onClick={onClear}
+              className="flex items-center justify-center gap-2 w-full transition-colors duration-150"
+              style={{
+                minHeight: 44,
+                padding: "10px 16px",
+                borderRadius: 10,
+                border: `1px solid ${hexToRgba(THEME.accentRed, 0.25)}`,
+                backgroundColor: "transparent",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 13,
+                fontWeight: 600,
+                color: THEME.accentRed,
+              }}
+            >
+              <X size={16} strokeWidth={2.4} />
+              <span>Retirer la sélection (voir tout)</span>
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 };
