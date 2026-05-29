@@ -51,10 +51,10 @@ const ModeToggle = ({
         active={isConfig}
         activeColor={activeColor}
         onClick={handleMyTrottiClick}
-        ariaLabel="Afficher les pièces compatibles avec ma trotti"
+        ariaLabel="Afficher les pièces compatibles avec ma trottinette"
         icon={<Bike size={16} strokeWidth={2.5} />}
-        labelMobile="MA TROTTI"
-        labelDesktop="POUR MA TROTTI"
+        labelMobile="MA TROTTINETTE"
+        labelDesktop="POUR MA TROTTINETTE"
       />
       <ToggleButton
         active={!isConfig}

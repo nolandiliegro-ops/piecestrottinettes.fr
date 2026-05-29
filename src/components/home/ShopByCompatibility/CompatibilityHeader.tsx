@@ -69,7 +69,7 @@ const CompatibilityHeader = ({
 }: Props) => {
   const isConfig = mode === "config";
 
-  const eyebrowText = isConfig ? "— COMPATIBLE AVEC TA TROTTI" : "— TOUT LE CATALOGUE";
+  const eyebrowText = isConfig ? "— COMPATIBLE AVEC TA TROTTINETTE" : "— TOUT LE CATALOGUE";
   // Dark mode : fallback orange #FF6600 en mode trotti (config) pour visibilite sur fond dark.
   const eyebrowColor = accentColor ?? (isConfig ? "#FF6600" : "#4A7C59");
   const chevronColor = titleAccentColor;
@@ -234,7 +234,7 @@ const FiltrerMaTrottiButton = ({ onClick }: { onClick: () => void }) => {
       }}
     >
       <Target size={14} strokeWidth={2.2} />
-      <span>Filtrer ma trotti</span>
+      <span>Filtrer ma trottinette</span>
     </button>
   );
 };
