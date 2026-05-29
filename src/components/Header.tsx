@@ -233,16 +233,34 @@ const Header = () => {
                       {selectedScooter.name}
                     </span>
                   ) : (
-                    <span
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        fontSize: 12,
-                        fontWeight: 500,
-                        lineHeight: 1,
-                        color: "var(--token-global-text-secondary, #6B7280)",
-                      }}
-                    >
-                      Ma Trottinette
+                    <span className="inline-flex items-center gap-1.5">
+                      <span
+                        className="inline-flex items-center justify-center flex-shrink-0"
+                        style={{
+                          width: 22,
+                          height: 22,
+                          borderRadius: 6,
+                          backgroundColor: "rgba(0,0,0,0.06)",
+                        }}
+                      >
+                        <Bike
+                          size={14}
+                          strokeWidth={2.2}
+                          style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
+                          aria-hidden
+                        />
+                      </span>
+                      <span
+                        style={{
+                          fontFamily: "'Inter', sans-serif",
+                          fontSize: 12,
+                          fontWeight: 600,
+                          lineHeight: 1,
+                          color: "var(--token-global-text-primary, #1A1A1A)",
+                        }}
+                      >
+                        Ma trottinette
+                      </span>
                     </span>
                   )}
                   <ChevronDown
