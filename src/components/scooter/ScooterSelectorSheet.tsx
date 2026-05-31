@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Bike, Check, Flame, Heart, Home, LogIn, Search, X } from "lucide-react";
+import { ArrowRight, Bike, Check, Flame, Heart, Home, LogIn, Search, X } from "lucide-react";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useUserGarage, useAddToGarage, useToggleOwned, type GarageItem } from "@/hooks/useGarage";
@@ -16,6 +16,12 @@ import { THEME, hexToRgba } from "@/lib/theme";
 interface Props {
   open: boolean;
   onOpenChange: (v: boolean) => void;
+  /**
+   * Optionnel : appelé après confirmation d'une sélection (sheet fermé).
+   * Sert au module home pour scroller vers la grille produits.
+   * Non fourni par le Header global → aucun impact dessus.
+   */
+  onConfirmed?: () => void;
 }
 
 const DIACRITICS_RE = new RegExp("[\\u0300-\\u036f]", "g");
@@ -46,7 +52,7 @@ interface GarageState {
   garageItemId: string;
 }
 
-const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
+const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   const navigate = useNavigate();
   const isDesktop = useIsDesktop();
   const { user } = useAuth();
@@ -98,6 +104,14 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
         })),
     [popularScooters, garageById]
   );
+
+  // "Toutes les trottinettes" : liste complète du contexte, hors modèles déjà
+  // affichés au-dessus (garage toujours ; populaires seulement s'ils sont rendus).
+  const allItems = useMemo<ScooterOption[]>(() => {
+    const shown = new Set<string>(garageById.keys());
+    if (!hasScooters) for (const p of popularItems) shown.add(p.id);
+    return allScooters.filter((s) => !shown.has(s.id));
+  }, [allScooters, garageById, popularItems, hasScooters]);
 
   const trimmed = query.trim();
   const isSearching = trimmed.length > 0;
@@ -173,12 +187,21 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
   };
 
   const handleConfirm = () => {
-    if (selectedScooter) handleClose(false);
+    if (selectedScooter) {
+      handleClose(false);
+      onConfirmed?.();
+    }
   };
 
   const handleClear = () => {
     clearSelection();
     handleClose(false);
+  };
+
+  // "Showroom →" : seule action carte qui quitte la home (vers la fiche showroom).
+  const handleShowroom = (slug: string) => {
+    handleClose(false);
+    navigate(`/showroom/${slug}`);
   };
 
   const isMutating = addToGarage.isPending || toggleOwned.isPending;
@@ -194,6 +217,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
       ownedItems={ownedItems}
       favItems={favItems}
       popularItems={popularItems}
+      allItems={allItems}
       hasScooters={hasScooters}
       isLoading={isLoading}
       isLoggedIn={!!user}
@@ -209,6 +233,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange }: Props) => {
       onSelectOption={handleSelectOption}
       onSelectGarage={handleSelectGarage}
       onAddInline={handleAddInline}
+      onShowroom={handleShowroom}
       onConfirm={handleConfirm}
       onClear={handleClear}
     />
@@ -259,6 +284,7 @@ interface SelectorBodyProps {
   ownedItems: GarageItem[];
   favItems: GarageItem[];
   popularItems: ScooterOption[];
+  allItems: ScooterOption[];
   hasScooters: boolean;
   isLoading: boolean;
   isLoggedIn: boolean;
@@ -271,6 +297,7 @@ interface SelectorBodyProps {
   onSelectOption: (o: ScooterOption) => void;
   onSelectGarage: (i: GarageItem) => void;
   onAddInline: (o: ScooterOption, isOwned: boolean) => void;
+  onShowroom: (slug: string) => void;
   onConfirm: () => void;
   onClear: () => void;
 }
@@ -298,6 +325,7 @@ const SelectorBody = ({
   ownedItems,
   favItems,
   popularItems,
+  allItems,
   hasScooters,
   isLoading,
   isLoggedIn,
@@ -310,6 +338,7 @@ const SelectorBody = ({
   onSelectOption,
   onSelectGarage,
   onAddInline,
+  onShowroom,
   onConfirm,
   onClear,
 }: SelectorBodyProps) => {
@@ -454,6 +483,7 @@ const SelectorBody = ({
                     onSelect={() => onSelectOption(option)}
                     onAddGarage={() => onAddInline(option, true)}
                     onAddFav={() => onAddInline(option, false)}
+                    onShowroom={() => onShowroom(option.slug)}
                   />
                 );
               })}
@@ -479,6 +509,7 @@ const SelectorBody = ({
                         onSelect={() => onSelectGarage(item)}
                         onAddGarage={() => onAddInline(option, true)}
                         onAddFav={() => onAddInline(option, false)}
+                        onShowroom={() => onShowroom(option.slug)}
                       />
                     );
                   })}
@@ -502,6 +533,7 @@ const SelectorBody = ({
                         onSelect={() => onSelectGarage(item)}
                         onAddGarage={() => onAddInline(option, true)}
                         onAddFav={() => onAddInline(option, false)}
+                        onShowroom={() => onShowroom(option.slug)}
                       />
                     );
                   })}
@@ -509,7 +541,7 @@ const SelectorBody = ({
               </>
             )}
 
-            {!isLoading && popularItems.length > 0 && (
+            {!isLoading && !hasScooters && popularItems.length > 0 && (
               <>
                 <SectionLabel icon={<Flame size={12} strokeWidth={2.4} />} label="Les plus populaires" />
                 <CardGrid>
@@ -523,8 +555,34 @@ const SelectorBody = ({
                       onSelect={() => onSelectOption(option)}
                       onAddGarage={() => onAddInline(option, true)}
                       onAddFav={() => onAddInline(option, false)}
+                      onShowroom={() => onShowroom(option.slug)}
                     />
                   ))}
+                </CardGrid>
+              </>
+            )}
+
+            {!isLoading && allItems.length > 0 && (
+              <>
+                <SectionLabel icon={<Bike size={12} strokeWidth={2.4} />} label="Toutes les trottinettes" />
+                <CardGrid>
+                  {allItems.map((option) => {
+                    const g = garageById.get(option.id);
+                    const badge: BadgeKind = g ? (g.isOwned ? "owned" : "fav") : null;
+                    return (
+                      <ScooterCard
+                        key={option.id}
+                        option={option}
+                        active={selectedId === option.id}
+                        badge={badge}
+                        isMutating={isMutating}
+                        onSelect={() => onSelectOption(option)}
+                        onAddGarage={() => onAddInline(option, true)}
+                        onAddFav={() => onAddInline(option, false)}
+                        onShowroom={() => onShowroom(option.slug)}
+                      />
+                    );
+                  })}
                 </CardGrid>
               </>
             )}
@@ -588,7 +646,15 @@ const SelectorBody = ({
 /* ── Sous-composants ───────────────────────────────────────────────────────── */
 
 const CardGrid = ({ children }: { children: React.ReactNode }) => (
-  <div className="grid grid-cols-2 gap-2.5">{children}</div>
+  <>
+    <style>{`.pt-selector-row::-webkit-scrollbar{display:none}`}</style>
+    <div
+      className="pt-selector-row flex gap-2.5 overflow-x-auto pb-2 mb-1 -mx-1 px-1"
+      style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
+    >
+      {children}
+    </div>
+  </>
 );
 
 const EmptyHint = ({ children }: { children: React.ReactNode }) => (
@@ -625,6 +691,7 @@ interface CardProps {
   onSelect: () => void;
   onAddGarage: () => void;
   onAddFav: () => void;
+  onShowroom: () => void;
 }
 
 const ScooterCard = ({
@@ -635,6 +702,7 @@ const ScooterCard = ({
   onSelect,
   onAddGarage,
   onAddFav,
+  onShowroom,
 }: CardProps) => {
   const accent = getBrandColors(option.brandName).accent;
 
@@ -652,6 +720,9 @@ const ScooterCard = ({
       }}
       className="relative flex flex-col text-left transition-all duration-150 cursor-pointer overflow-hidden"
       style={{
+        flexShrink: 0,
+        width: 156,
+        scrollSnapAlign: "start",
         borderRadius: 14,
         minHeight: 168,
         border: active ? `2px solid ${accent}` : `1px solid ${THEME.borderLight}`,
@@ -768,6 +839,30 @@ const ScooterCard = ({
           }}
         />
       </div>
+
+      {/* Showroom → : seule action qui quitte la home (fiche showroom) */}
+      <button
+        type="button"
+        onClick={(e) => {
+          e.stopPropagation();
+          onShowroom();
+        }}
+        aria-label={`Voir le showroom de ${option.name}`}
+        className="flex items-center justify-center gap-1 border-t transition-colors duration-150"
+        style={{
+          minHeight: 34,
+          borderColor: THEME.borderSubtle,
+          fontFamily: "'Inter', sans-serif",
+          fontSize: 10.5,
+          fontWeight: 600,
+          letterSpacing: "0.04em",
+          textTransform: "uppercase",
+          color: THEME.textSecondary,
+        }}
+      >
+        <span>Showroom</span>
+        <ArrowRight size={12} strokeWidth={2.4} />
+      </button>
     </div>
   );
 };
