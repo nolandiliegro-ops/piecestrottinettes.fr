@@ -52,6 +52,7 @@ export default function BackgroundRemovalManager() {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [running, setRunning] = useState(false);
   const [progress, setProgress] = useState({ done: 0, total: 0 });
+  const [lightbox, setLightbox] = useState<{ url: string; label: string } | null>(null);
 
   const { data: parts = [], isLoading } = useQuery({
     queryKey: ['admin-parts-detourage'],
@@ -356,7 +357,10 @@ export default function BackgroundRemovalManager() {
                               </span>
                               <div className="flex items-center gap-2">
                                 <div className="text-center">
-                                  <div className="w-16 h-16 rounded-md overflow-hidden bg-gray-100">
+                                  <div
+                                    className="w-16 h-16 rounded-md overflow-hidden bg-gray-100 cursor-pointer hover:ring-2 hover:ring-[#4A7C59] transition-all"
+                                    onClick={() => status.beforeUrl && setLightbox({ url: status.beforeUrl, label: 'AVANT' })}
+                                  >
                                     {status.beforeUrl && (
                                       <img src={status.beforeUrl} alt="avant" className="w-full h-full object-cover" />
                                     )}
@@ -365,7 +369,10 @@ export default function BackgroundRemovalManager() {
                                 </div>
                                 <span className="text-gray-400">→</span>
                                 <div className="text-center">
-                                  <div className="w-16 h-16 rounded-md overflow-hidden bg-[#F5F0E8]">
+                                  <div
+                                    className="w-16 h-16 rounded-md overflow-hidden bg-[#F5F0E8] cursor-pointer hover:ring-2 hover:ring-[#4A7C59] transition-all"
+                                    onClick={() => status.afterUrl && setLightbox({ url: status.afterUrl, label: 'APRÈS' })}
+                                  >
                                     {status.afterUrl && (
                                       <img src={status.afterUrl} alt="après" className="w-full h-full object-contain" />
                                     )}
@@ -420,6 +427,26 @@ export default function BackgroundRemovalManager() {
               Confirmer et lancer
             </Button>
           </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Lightbox */}
+      <Dialog open={!!lightbox} onOpenChange={(open) => !open && setLightbox(null)}>
+        <DialogContent className="max-w-3xl p-2 sm:p-4">
+          <DialogHeader>
+            <DialogTitle className="text-center text-sm text-gray-500 font-normal">
+              {lightbox?.label}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="flex items-center justify-center min-h-[200px] bg-[#F5F0E8] rounded-lg overflow-hidden">
+            {lightbox?.url && (
+              <img
+                src={lightbox.url}
+                alt={lightbox.label}
+                className="max-w-full max-h-[70vh] object-contain"
+              />
+            )}
+          </div>
         </DialogContent>
       </Dialog>
     </div>
