@@ -52,6 +52,7 @@ export default function BackgroundRemovalManager() {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [running, setRunning] = useState(false);
   const [progress, setProgress] = useState({ done: 0, total: 0 });
+  const [lightbox, setLightbox] = useState<{ url: string; label: string } | null>(null);
 
   const { data: parts = [], isLoading } = useQuery({
     queryKey: ['admin-parts-detourage'],
