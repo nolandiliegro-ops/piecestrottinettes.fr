@@ -1,12 +1,11 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, X } from "lucide-react";
+import { Search } from "lucide-react";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
 import { useHomeBridge } from "@/hooks/useHomeBridge";
 import CompatibilityHeader from "./CompatibilityHeader";
-import ModeToggle from "./ModeToggle";
 import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
 import BottomBanner from "./BottomBanner";
@@ -17,7 +16,7 @@ const NEUTRAL_TITLE_ACCENT = "#4A7C59";
 
 const ShopByCompatibility = () => {
   const navigate = useNavigate();
-  const { selectedScooter, setSelectedScooter, clearSelection } = useSelectedScooter();
+  const { selectedScooter, clearSelection } = useSelectedScooter();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
   const { data: bridgeSettings } = useHomeBridge();
   const darkBlockColor = bridgeSettings?.dark_block_color ?? "#3A3A3A";
@@ -29,6 +28,15 @@ const ShopByCompatibility = () => {
   );
   const [sheetOpen, setSheetOpen] = useState(false);
   const [productQuery, setProductQuery] = useState("");
+
+  // Ancre de scroll : après confirmation d'une trottinette, on amène l'utilisateur
+  // sur la grille produits (le sheet vient de se fermer).
+  const productsRef = useRef<HTMLDivElement>(null);
+  const handleSheetConfirmed = useCallback(() => {
+    requestAnimationFrame(() => {
+      productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, []);
 
   const handleProductSearch = useCallback(() => {
     const q = productQuery.trim();
@@ -263,59 +271,7 @@ const ShopByCompatibility = () => {
               </div>
             </form>
 
-            <ModeToggle
-              mode={compatHeaderMode}
-              hasScooter={!!selectedScooter}
-              onSelectMyTrotti={() => setSheetOpen(true)}
-              onShowAll={handleResetFilters}
-            />
-
-            {/* Indicateur modele actif — pill compact marque + modele + desélection */}
-            {selectedScooter && (
-              <div className="-mt-3 mb-6 lg:mb-8 flex items-center gap-2 flex-wrap">
-                <span
-                  className="inline-flex items-center gap-2"
-                  style={{
-                    padding: "6px 6px 6px 12px",
-                    borderRadius: 999,
-                    backgroundColor: "rgba(255,255,255,0.08)",
-                    border: `1px solid ${hexToRgba(accentColor ?? NEUTRAL_TITLE_ACCENT, 0.5)}`,
-                  }}
-                >
-                  <span
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontSize: 11,
-                      fontWeight: 600,
-                      color: "rgba(255,255,255,0.95)",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {selectedScooter.brandName ? `${selectedScooter.brandName} ` : ""}
-                    <span style={{ color: accentColor ?? NEUTRAL_TITLE_ACCENT }}>
-                      {selectedScooter.name}
-                    </span>
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => setSelectedScooter(null)}
-                    aria-label="Désélectionner ma trottinette"
-                    className="flex items-center justify-center transition-colors duration-150"
-                    style={{
-                      width: 22,
-                      height: 22,
-                      borderRadius: 999,
-                      backgroundColor: "rgba(255,255,255,0.12)",
-                      color: "rgba(255,255,255,0.85)",
-                    }}
-                  >
-                    <X size={13} strokeWidth={2.6} />
-                  </button>
-                </span>
-              </div>
-            )}
-
-            <div className="mb-4 lg:mb-5">
+            <div ref={productsRef} className="scroll-mt-4 mb-4 lg:mb-5">
               <CategoryPills
                 categories={data.availableCategories}
                 selectedSlugs={selectedCategories}
@@ -356,7 +312,11 @@ const ShopByCompatibility = () => {
       </div>
 
       {/* Mobile scooter selector Sheet (D4.3) */}
-      <ScooterSelectorSheet open={sheetOpen} onOpenChange={setSheetOpen} />
+      <ScooterSelectorSheet
+        open={sheetOpen}
+        onOpenChange={setSheetOpen}
+        onConfirmed={handleSheetConfirmed}
+      />
 
       {/* Fade transition vers le fond beige #FAFAF8 de la page */}
       <div
