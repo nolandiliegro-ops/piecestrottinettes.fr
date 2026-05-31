@@ -200,6 +200,52 @@ const ShopByCompatibility = () => {
             </div>
           )}
 
+          {/* Hero décoratif : grande photo détourée du modèle sélectionné, ancrée
+              en HAUT À DROITE (à côté du bloc titre), dans la moitié haute du panneau.
+              Décorative uniquement (aria-hidden, pointer-events none), sous le contenu.
+              Masquée sur mobile pour préserver la lisibilité. */}
+          {selectedScooter?.imageUrl && (
+            <>
+              <img
+                src={selectedScooter.imageUrl}
+                alt=""
+                aria-hidden
+                loading="lazy"
+                decoding="async"
+                className="hidden sm:block"
+                style={{
+                  position: "absolute",
+                  top: "clamp(8px, 2vw, 28px)",
+                  right: "-1%",
+                  transform: "rotate(-4deg)",
+                  height: "clamp(260px, 34vw, 520px)",
+                  width: "auto",
+                  objectFit: "contain",
+                  opacity: 0.4,
+                  filter: "drop-shadow(0 18px 40px rgba(0,0,0,0.45))",
+                  pointerEvents: "none",
+                  userSelect: "none",
+                  zIndex: 0,
+                  transition: "opacity 400ms ease-out",
+                }}
+              />
+              {/* Halo sombre derrière le bloc titre (haut-gauche) pour garder le
+                  contraste du titre/sous-titre malgré l'opacité montée. */}
+              <div
+                aria-hidden
+                className="hidden sm:block"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  zIndex: 0,
+                  pointerEvents: "none",
+                  background:
+                    "radial-gradient(62% 52% at 22% 26%, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 70%)",
+                }}
+              />
+            </>
+          )}
+
           {/* Content wrapper above filigrane */}
           <div className="relative" style={{ zIndex: 1 }}>
             <CompatibilityHeader
