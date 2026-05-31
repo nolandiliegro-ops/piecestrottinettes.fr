@@ -357,7 +357,10 @@ export default function BackgroundRemovalManager() {
                               </span>
                               <div className="flex items-center gap-2">
                                 <div className="text-center">
-                                  <div className="w-16 h-16 rounded-md overflow-hidden bg-gray-100">
+                                  <div
+                                    className="w-16 h-16 rounded-md overflow-hidden bg-gray-100 cursor-pointer hover:ring-2 hover:ring-[#4A7C59] transition-all"
+                                    onClick={() => status.beforeUrl && setLightbox({ url: status.beforeUrl, label: 'AVANT' })}
+                                  >
                                     {status.beforeUrl && (
                                       <img src={status.beforeUrl} alt="avant" className="w-full h-full object-cover" />
                                     )}
@@ -366,7 +369,10 @@ export default function BackgroundRemovalManager() {
                                 </div>
                                 <span className="text-gray-400">→</span>
                                 <div className="text-center">
-                                  <div className="w-16 h-16 rounded-md overflow-hidden bg-[#F5F0E8]">
+                                  <div
+                                    className="w-16 h-16 rounded-md overflow-hidden bg-[#F5F0E8] cursor-pointer hover:ring-2 hover:ring-[#4A7C59] transition-all"
+                                    onClick={() => status.afterUrl && setLightbox({ url: status.afterUrl, label: 'APRÈS' })}
+                                  >
                                     {status.afterUrl && (
                                       <img src={status.afterUrl} alt="après" className="w-full h-full object-contain" />
                                     )}
