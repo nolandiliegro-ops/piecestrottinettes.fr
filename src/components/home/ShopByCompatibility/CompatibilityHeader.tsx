@@ -1,14 +1,12 @@
-import { ChevronDown, Eye } from "lucide-react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Bike, ChevronDown, X } from "lucide-react";
 
 interface Props {
   mode: "config" | "discovery";
   scooterName: string | null;
-  /** Scooter image URL (cutout). Si fourni avec scooterSlug, remplace ToutVoirButton en mode config. */
+  /** Marque du scooter actif — affichée dans le trigger (état rempli). */
+  brandName?: string | null;
+  /** Scooter image URL (cutout) — mini-photo du trigger en état rempli. */
   scooterImageUrl?: string | null;
-  /** Scooter slug pour la route /scooter/{slug}. */
-  scooterSlug?: string | null;
   totalCount: number;
   categoriesCount: number;
   onTitleClick: () => void;
@@ -54,8 +52,8 @@ const TITLE_FONT_BASE: React.CSSProperties = {
 const CompatibilityHeader = ({
   mode,
   scooterName,
+  brandName,
   scooterImageUrl,
-  scooterSlug,
   totalCount,
   categoriesCount,
   onTitleClick,
@@ -158,93 +156,165 @@ const CompatibilityHeader = ({
         </p>
       </div>
 
-      {isConfig ? (
-        scooterImageUrl && scooterSlug && scooterName ? (
-          <div
-            className="flex-shrink-0"
-            style={{
-              filter: accentColor
-                ? `drop-shadow(0 0 24px ${hexToRgba(accentColor, 0.35)})`
-                : undefined,
-            }}
-          >
-            <Link
-              to={`/scooter/${scooterSlug}`}
-              aria-label={`Voir la fiche de ${scooterName}`}
-              className="block transition-transform hover:scale-105"
-            >
-              <img
-                src={scooterImageUrl}
-                alt={scooterName}
-                loading="lazy"
-                decoding="async"
-                style={{
-                  height: "clamp(120px, 18vw, 200px)",
-                  width: "auto",
-                  objectFit: "contain",
-                  filter: "drop-shadow(0 4px 16px rgba(255,255,255,0.15))",
-                }}
-              />
-            </Link>
-          </div>
-        ) : (
-          <ToutVoirButton onClick={onActionClick} accentColor={accentColor} />
-        )
-      ) : null}
+      <ScooterTrigger
+        filled={isConfig && !!scooterName}
+        brandName={brandName ?? null}
+        scooterName={scooterName}
+        imageUrl={scooterImageUrl ?? null}
+        accentColor={accentColor}
+        onOpen={onTitleClick}
+        onClear={onActionClick}
+      />
     </div>
   );
 };
 
-/* ── Buttons ─────────────────────────────────────────────────────────────── */
+/* ── Trigger sélecteur (haut à droite) ───────────────────────────────────── */
 
-const FONT = "'Inter', sans-serif";
-
-const BUTTON_BASE: React.CSSProperties = {
-  padding: "10px 18px",
-  borderRadius: 6,
-  fontFamily: FONT,
-  fontWeight: 500,
-  fontSize: 11.5,
-  transition: "background-color 150ms, color 150ms, border-color 150ms, transform 90ms",
-};
-
-const ToutVoirButton = ({
-  onClick,
+const ScooterTrigger = ({
+  filled,
+  brandName,
+  scooterName,
+  imageUrl,
   accentColor,
+  onOpen,
+  onClear,
 }: {
-  onClick: () => void;
+  filled: boolean;
+  brandName: string | null;
+  scooterName: string | null;
+  imageUrl: string | null;
   accentColor?: string;
+  onOpen: () => void;
+  onClear: () => void;
 }) => {
-  const [hover, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-  // Dark mode : fallback blanc semi-transparent au lieu de noir.
-  const color = accentColor ?? "rgba(255,255,255,0.9)";
-  const borderColor = accentColor ?? "rgba(255,255,255,0.2)";
-  const hoverBg = accentColor ? hexToRgba(accentColor, 0.06) : "rgba(255,255,255,0.06)";
+  const accent = accentColor ?? "#4A7C59";
 
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => {
-        setHover(false);
-        setActive(false);
+    <div
+      role="button"
+      tabIndex={0}
+      onClick={onOpen}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onOpen();
+        }
       }}
-      onMouseDown={() => setActive(true)}
-      onMouseUp={() => setActive(false)}
-      className="flex-shrink-0 inline-flex items-center gap-1.5 min-h-[44px]"
+      aria-label={
+        filled ? `Changer de trottinette (actuelle : ${scooterName})` : "Choisis ta trottinette"
+      }
+      className="group flex-shrink-0 flex items-center gap-2.5 cursor-pointer transition-colors duration-150"
       style={{
-        ...BUTTON_BASE,
-        border: `1px solid ${borderColor}`,
-        backgroundColor: hover ? hoverBg : "transparent",
-        color,
-        transform: active ? "scale(0.97)" : "scale(1)",
+        minHeight: 48,
+        padding: filled ? "6px 8px" : "0 14px",
+        borderRadius: 14,
+        backgroundColor: "rgba(255,255,255,0.06)",
+        border: `1px solid ${filled ? hexToRgba(accent, 0.45) : "rgba(255,255,255,0.14)"}`,
       }}
     >
-      <Eye size={14} strokeWidth={2.2} />
-      <span>Tout voir</span>
-    </button>
+      {/* Vignette mini-photo / silhouette */}
+      <div
+        className="flex items-center justify-center flex-shrink-0"
+        style={{
+          width: 40,
+          height: 40,
+          borderRadius: 10,
+          backgroundColor: "rgba(255,255,255,0.08)",
+          overflow: "hidden",
+        }}
+      >
+        {filled && imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={scooterName ?? ""}
+            loading="lazy"
+            decoding="async"
+            style={{ width: 36, height: 36, objectFit: "contain" }}
+          />
+        ) : (
+          <Bike size={20} strokeWidth={2} style={{ color: "rgba(255,255,255,0.75)" }} aria-hidden />
+        )}
+      </div>
+
+      {/* Texte */}
+      <div className="min-w-0 flex flex-col" style={{ maxWidth: 150 }}>
+        {filled ? (
+          <>
+            {brandName && (
+              <span
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: 9.5,
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  color: "rgba(255,255,255,0.55)",
+                  lineHeight: 1.1,
+                }}
+              >
+                {brandName}
+              </span>
+            )}
+            <span
+              className="truncate"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 13,
+                fontWeight: 700,
+                color: "#FFFFFF",
+                lineHeight: 1.15,
+              }}
+            >
+              {scooterName}
+            </span>
+          </>
+        ) : (
+          <span
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 13,
+              fontWeight: 600,
+              color: "rgba(255,255,255,0.92)",
+              lineHeight: 1.2,
+            }}
+          >
+            Choisis ta trottinette
+          </span>
+        )}
+      </div>
+
+      {/* Chevron */}
+      <ChevronDown
+        size={18}
+        strokeWidth={2.4}
+        className="transition-transform group-hover:translate-y-0.5 flex-shrink-0"
+        style={{ color: filled ? accent : "rgba(255,255,255,0.7)" }}
+        aria-hidden
+      />
+
+      {/* ✕ — désélection (état rempli uniquement) */}
+      {filled && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClear();
+          }}
+          aria-label="Désélectionner ma trottinette"
+          className="flex items-center justify-center flex-shrink-0 transition-colors duration-150"
+          style={{
+            width: 28,
+            height: 28,
+            borderRadius: 999,
+            backgroundColor: "rgba(255,255,255,0.12)",
+            color: "rgba(255,255,255,0.85)",
+          }}
+        >
+          <X size={14} strokeWidth={2.6} />
+        </button>
+      )}
+    </div>
   );
 };
 

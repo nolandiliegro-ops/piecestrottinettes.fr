@@ -205,8 +205,8 @@ const ShopByCompatibility = () => {
             <CompatibilityHeader
               mode={compatHeaderMode}
               scooterName={selectedScooter?.name ?? null}
+              brandName={selectedScooter?.brandName ?? null}
               scooterImageUrl={selectedScooter?.imageUrl ?? null}
-              scooterSlug={selectedScooter?.slug ?? null}
               totalCount={data.totalCount}
               categoriesCount={data.availableCategories.length}
               onTitleClick={handleTitleClick}
