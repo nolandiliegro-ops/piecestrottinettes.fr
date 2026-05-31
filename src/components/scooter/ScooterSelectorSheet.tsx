@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Bike, Check, Flame, Heart, Home, LogIn, Search, X } from "lucide-react";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -64,7 +65,8 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
 
   // --- État (vit dans le PARENT, partagé entre Dialog et Sheet) ---
   const [query, setQuery] = useState("");
-  const [authPrompt, setAuthPrompt] = useState(false);
+  // id de la carte dont le popover "connecte-toi" est ouvert (null = aucun).
+  const [authPromptFor, setAuthPromptFor] = useState<string | null>(null);
 
   const hasScooters = !!garageScooters && garageScooters.length > 0;
   const ownedItems = useMemo(
@@ -126,7 +128,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   const handleClose = (v: boolean) => {
     if (!v) {
       setQuery("");
-      setAuthPrompt(false);
+      setAuthPromptFor(null);
     }
     onOpenChange(v);
   };
@@ -159,7 +161,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   // --- Ajout inline garage / favori : auth requise, reste ouvert, devient sélectionné ---
   const handleAddInline = async (option: ScooterOption, isOwned: boolean) => {
     if (!user) {
-      setAuthPrompt(true);
+      setAuthPromptFor(option.id);
       return;
     }
     const existing = garageById.get(option.id);
@@ -221,8 +223,8 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
       hasScooters={hasScooters}
       isLoading={isLoading}
       isLoggedIn={!!user}
-      authPrompt={authPrompt}
-      onDismissAuthPrompt={() => setAuthPrompt(false)}
+      authPromptFor={authPromptFor}
+      onDismissAuthPrompt={() => setAuthPromptFor(null)}
       onGoLogin={() => {
         handleClose(false);
         navigate("/login");
@@ -246,7 +248,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
           className="p-0 gap-0 overflow-hidden border-0 rounded-2xl"
           style={{ width: 460, maxWidth: "calc(100vw - 32px)", backgroundColor: THEME.bgWhite }}
         >
-          <div className="max-h-[80vh] overflow-y-auto">{body}</div>
+          {body}
         </DialogContent>
       </Dialog>
     );
@@ -256,7 +258,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
     <Sheet open={open} onOpenChange={handleClose}>
       <SheetContent
         side="bottom"
-        className="p-0 rounded-t-2xl border-t-0 max-h-[85vh] overflow-y-auto"
+        className="p-0 rounded-t-2xl border-t-0 max-h-[92vh] overflow-hidden"
         style={{ backgroundColor: THEME.bgWhite }}
       >
         {/* Handle (mobile uniquement) */}
@@ -288,7 +290,7 @@ interface SelectorBodyProps {
   hasScooters: boolean;
   isLoading: boolean;
   isLoggedIn: boolean;
-  authPrompt: boolean;
+  authPromptFor: string | null;
   onDismissAuthPrompt: () => void;
   onGoLogin: () => void;
   selectedId: string | null;
@@ -329,7 +331,7 @@ const SelectorBody = ({
   hasScooters,
   isLoading,
   isLoggedIn,
-  authPrompt,
+  authPromptFor,
   onDismissAuthPrompt,
   onGoLogin,
   selectedId,
@@ -348,6 +350,30 @@ const SelectorBody = ({
     : hasScooters
       ? "Choisis dans ton garage ou cherche un autre modèle"
       : "Choisis un modèle populaire ou cherche le tien";
+
+  // Fade haut/bas : indique qu'il reste du contenu à scroller dans la zone centrale.
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [fade, setFade] = useState({ top: false, bottom: false });
+  const updateFade = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setFade({
+      top: el.scrollTop > 4,
+      bottom: el.scrollTop + el.clientHeight < el.scrollHeight - 4,
+    });
+  }, []);
+  useEffect(() => {
+    updateFade();
+  }, [
+    updateFade,
+    isSearching,
+    isLoading,
+    searchResults.length,
+    ownedItems.length,
+    favItems.length,
+    popularItems.length,
+    allItems.length,
+  ]);
 
   return (
     <div className="flex flex-col">
@@ -414,57 +440,20 @@ const SelectorBody = ({
         </div>
       </div>
 
-      {/* Auth prompt inline (jamais de redirect qui perd le contexte) */}
-      {authPrompt && !isLoggedIn && (
-        <div className="px-5 pb-3">
-          <div
-            className="flex items-center gap-3"
-            style={{
-              padding: "10px 12px",
-              borderRadius: 10,
-              border: `1px solid ${hexToRgba(THEME.accentSage, 0.3)}`,
-              backgroundColor: hexToRgba(THEME.accentSage, 0.06),
-            }}
-          >
-            <p
-              className="flex-1"
-              style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: THEME.carbon, lineHeight: 1.35 }}
-            >
-              Connecte-toi pour sauvegarder ta trottinette dans ton garage.
-            </p>
-            <button
-              type="button"
-              onClick={onGoLogin}
-              className="flex items-center gap-1.5 flex-shrink-0"
-              style={{
-                minHeight: 36,
-                padding: "0 12px",
-                borderRadius: 8,
-                backgroundColor: THEME.accentSage,
-                color: "#FFFFFF",
-                fontFamily: "'Inter', sans-serif",
-                fontSize: 12,
-                fontWeight: 600,
-              }}
-            >
-              <LogIn size={14} strokeWidth={2.4} />
-              <span>Se connecter</span>
-            </button>
-            <button
-              type="button"
-              onClick={onDismissAuthPrompt}
-              aria-label="Fermer"
-              className="flex items-center justify-center flex-shrink-0"
-              style={{ width: 28, height: 28, color: THEME.textSecondary }}
-            >
-              <X size={14} strokeWidth={2.4} />
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Body */}
-      <div className="px-5 pb-3">
+      {/* Body — zone centrale scrollable (hauteur bornée, scroll vertical premium) */}
+      <div className="relative">
+        <style>{`
+          .pt-selector-scroll { scrollbar-width: thin; scrollbar-color: rgba(0,0,0,0.18) transparent; scroll-behavior: smooth; }
+          .pt-selector-scroll::-webkit-scrollbar { width: 6px; }
+          .pt-selector-scroll::-webkit-scrollbar-track { background: transparent; }
+          .pt-selector-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.18); border-radius: 999px; }
+          .pt-selector-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.30); }
+        `}</style>
+        <div
+          ref={scrollRef}
+          onScroll={updateFade}
+          className="pt-selector-scroll overflow-y-auto max-h-[60vh] lg:max-h-[420px] px-5 pb-3"
+        >
         {isSearching ? (
           searchResults.length === 0 ? (
             <EmptyHint>Aucun modèle trouvé pour « {trimmed} ».</EmptyHint>
@@ -484,6 +473,9 @@ const SelectorBody = ({
                     onAddGarage={() => onAddInline(option, true)}
                     onAddFav={() => onAddInline(option, false)}
                     onShowroom={() => onShowroom(option.slug)}
+                    showAuthPrompt={!isLoggedIn && authPromptFor === option.id}
+                    onGoLogin={onGoLogin}
+                    onDismissAuthPrompt={onDismissAuthPrompt}
                   />
                 );
               })}
@@ -510,6 +502,9 @@ const SelectorBody = ({
                         onAddGarage={() => onAddInline(option, true)}
                         onAddFav={() => onAddInline(option, false)}
                         onShowroom={() => onShowroom(option.slug)}
+                        showAuthPrompt={!isLoggedIn && authPromptFor === option.id}
+                        onGoLogin={onGoLogin}
+                        onDismissAuthPrompt={onDismissAuthPrompt}
                       />
                     );
                   })}
@@ -534,6 +529,9 @@ const SelectorBody = ({
                         onAddGarage={() => onAddInline(option, true)}
                         onAddFav={() => onAddInline(option, false)}
                         onShowroom={() => onShowroom(option.slug)}
+                        showAuthPrompt={!isLoggedIn && authPromptFor === option.id}
+                        onGoLogin={onGoLogin}
+                        onDismissAuthPrompt={onDismissAuthPrompt}
                       />
                     );
                   })}
@@ -556,6 +554,9 @@ const SelectorBody = ({
                       onAddGarage={() => onAddInline(option, true)}
                       onAddFav={() => onAddInline(option, false)}
                       onShowroom={() => onShowroom(option.slug)}
+                      showAuthPrompt={!isLoggedIn && authPromptFor === option.id}
+                      onGoLogin={onGoLogin}
+                      onDismissAuthPrompt={onDismissAuthPrompt}
                     />
                   ))}
                 </CardGrid>
@@ -580,6 +581,9 @@ const SelectorBody = ({
                         onAddGarage={() => onAddInline(option, true)}
                         onAddFav={() => onAddInline(option, false)}
                         onShowroom={() => onShowroom(option.slug)}
+                        showAuthPrompt={!isLoggedIn && authPromptFor === option.id}
+                        onGoLogin={onGoLogin}
+                        onDismissAuthPrompt={onDismissAuthPrompt}
                       />
                     );
                   })}
@@ -588,6 +592,28 @@ const SelectorBody = ({
             )}
           </>
         )}
+        </div>
+
+        {/* Fade haut — visible une fois scrollé */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute top-0 left-0 right-0 transition-opacity duration-200"
+          style={{
+            height: 22,
+            opacity: fade.top ? 1 : 0,
+            background: `linear-gradient(180deg, ${THEME.bgWhite} 0%, rgba(255,255,255,0) 100%)`,
+          }}
+        />
+        {/* Fade bas — signale qu'il reste du contenu dessous */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 right-0 transition-opacity duration-200"
+          style={{
+            height: 28,
+            opacity: fade.bottom ? 1 : 0,
+            background: `linear-gradient(0deg, ${THEME.bgWhite} 0%, rgba(255,255,255,0) 100%)`,
+          }}
+        />
       </div>
 
       {/* Actions — affichees uniquement quand une trottinette est selectionnee
@@ -646,15 +672,7 @@ const SelectorBody = ({
 /* ── Sous-composants ───────────────────────────────────────────────────────── */
 
 const CardGrid = ({ children }: { children: React.ReactNode }) => (
-  <>
-    <style>{`.pt-selector-row::-webkit-scrollbar{display:none}`}</style>
-    <div
-      className="pt-selector-row flex gap-2.5 overflow-x-auto pb-2 mb-1 -mx-1 px-1"
-      style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
-    >
-      {children}
-    </div>
-  </>
+  <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mb-1">{children}</div>
 );
 
 const EmptyHint = ({ children }: { children: React.ReactNode }) => (
@@ -692,6 +710,10 @@ interface CardProps {
   onAddGarage: () => void;
   onAddFav: () => void;
   onShowroom: () => void;
+  /** Popover "connecte-toi" ouvert pour CETTE carte (déconnecté). */
+  showAuthPrompt: boolean;
+  onGoLogin: () => void;
+  onDismissAuthPrompt: () => void;
 }
 
 const ScooterCard = ({
@@ -703,8 +725,18 @@ const ScooterCard = ({
   onAddGarage,
   onAddFav,
   onShowroom,
+  showAuthPrompt,
+  onGoLogin,
+  onDismissAuthPrompt,
 }: CardProps) => {
   const accent = getBrandColors(option.brandName).accent;
+
+  // Auto-fermeture du popover après quelques secondes.
+  useEffect(() => {
+    if (!showAuthPrompt) return;
+    const t = setTimeout(onDismissAuthPrompt, 4000);
+    return () => clearTimeout(t);
+  }, [showAuthPrompt, onDismissAuthPrompt]);
 
   return (
     <div
@@ -720,9 +752,6 @@ const ScooterCard = ({
       }}
       className="relative flex flex-col text-left transition-all duration-150 cursor-pointer overflow-hidden"
       style={{
-        flexShrink: 0,
-        width: 156,
-        scrollSnapAlign: "start",
         borderRadius: 14,
         minHeight: 168,
         border: active ? `2px solid ${accent}` : `1px solid ${THEME.borderLight}`,
@@ -821,6 +850,7 @@ const ScooterCard = ({
       <div className="flex border-t" style={{ borderColor: THEME.borderSubtle }}>
         <CardAction
           label="Favori"
+          active={badge === "fav"}
           icon={<Heart size={13} strokeWidth={2.3} style={{ color: badge === "fav" ? THEME.accentRed : THEME.textSecondary, fill: badge === "fav" ? THEME.accentRed : "transparent" }} />}
           disabled={isMutating}
           onClick={(e) => {
@@ -831,6 +861,7 @@ const ScooterCard = ({
         <div aria-hidden style={{ width: 1, backgroundColor: THEME.borderSubtle }} />
         <CardAction
           label="Garage"
+          active={badge === "owned"}
           icon={<Home size={13} strokeWidth={2.3} style={{ color: badge === "owned" ? THEME.accentSage : THEME.textSecondary }} />}
           disabled={isMutating}
           onClick={(e) => {
@@ -863,6 +894,73 @@ const ScooterCard = ({
         <span>Showroom</span>
         <ArrowRight size={12} strokeWidth={2.4} />
       </button>
+
+      {/* Popover contextuel "connecte-toi" — ancré sur la carte cliquée (déconnecté) */}
+      <AnimatePresence>
+        {showAuthPrompt && (
+          <motion.div
+            key="auth-pop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onDismissAuthPrompt();
+            }}
+            className="absolute inset-0 z-20 flex items-end"
+            style={{ backgroundColor: "rgba(255,255,255,0.82)", backdropFilter: "blur(2px)" }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 8, scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 420, damping: 28 }}
+              onClick={(e) => e.stopPropagation()}
+              className="m-2 flex flex-col gap-2 w-full"
+              style={{
+                padding: 10,
+                borderRadius: 12,
+                backgroundColor: "#FFFFFF",
+                border: `1px solid ${hexToRgba(THEME.accentSage, 0.35)}`,
+                boxShadow: "0 10px 28px rgba(0,0,0,0.20)",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: 11.5,
+                  fontWeight: 500,
+                  color: THEME.carbon,
+                  lineHeight: 1.3,
+                }}
+              >
+                Connecte-toi pour sauvegarder ta trottinette
+              </p>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onGoLogin();
+                }}
+                className="inline-flex items-center justify-center gap-1.5 w-full transition-transform duration-150 active:scale-95"
+                style={{
+                  minHeight: 44,
+                  borderRadius: 9,
+                  backgroundColor: THEME.accentSage,
+                  color: "#FFFFFF",
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: 12.5,
+                  fontWeight: 700,
+                }}
+              >
+                <LogIn size={15} strokeWidth={2.5} />
+                <span>Se connecter</span>
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
@@ -870,18 +968,22 @@ const ScooterCard = ({
 const CardAction = ({
   label,
   icon,
+  active,
   disabled,
   onClick,
 }: {
   label: string;
   icon: React.ReactNode;
+  /** Quand true : l'icône fait un "pop" (rejoué à chaque passage à true). */
+  active: boolean;
   disabled: boolean;
   onClick: (e: React.MouseEvent) => void;
 }) => (
-  <button
+  <motion.button
     type="button"
     disabled={disabled}
     onClick={onClick}
+    whileTap={{ scale: 0.88 }}
     className="flex-1 inline-flex items-center justify-center gap-1 transition-colors duration-150"
     style={{
       minHeight: 36,
@@ -892,9 +994,18 @@ const CardAction = ({
       opacity: disabled ? 0.5 : 1,
     }}
   >
-    {icon}
+    {/* key change (active flip) rejoue l'animation de pop */}
+    <motion.span
+      key={String(active)}
+      className="inline-flex"
+      initial={false}
+      animate={active ? { scale: [1, 1.3, 1] } : { scale: 1 }}
+      transition={{ duration: 0.28, ease: "easeOut" }}
+    >
+      {icon}
+    </motion.span>
     <span>{label}</span>
-  </button>
+  </motion.button>
 );
 
 export default ScooterSelectorSheet;
