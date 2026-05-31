@@ -429,6 +429,26 @@ export default function BackgroundRemovalManager() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      {/* Lightbox */}
+      <Dialog open={!!lightbox} onOpenChange={(open) => !open && setLightbox(null)}>
+        <DialogContent className="max-w-3xl p-2 sm:p-4">
+          <DialogHeader>
+            <DialogTitle className="text-center text-sm text-gray-500 font-normal">
+              {lightbox?.label}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="flex items-center justify-center min-h-[200px] bg-[#F5F0E8] rounded-lg overflow-hidden">
+            {lightbox?.url && (
+              <img
+                src={lightbox.url}
+                alt={lightbox.label}
+                className="max-w-full max-h-[70vh] object-contain"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
