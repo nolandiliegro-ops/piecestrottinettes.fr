@@ -6,7 +6,7 @@ import { useCart } from "@/hooks/useCart";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { formatPrice } from "@/lib/formatPrice";
-import { getCategoryColor, getCategoryTextColor, getShortLabel } from "@/lib/categoryColors";
+import { resolveCategoryColor, getCategoryTextColor, getShortLabel } from "@/lib/categoryColors";
 import { cn } from "@/lib/utils";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
 
@@ -78,9 +78,11 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
 
   const catSlug = part.category?.slug ?? null;
   const catName = part.category?.name ?? "";
-  // D4: cat-label takes the brand color when a scooter is active, else per-category color
-  const patchColor = brandColor ?? getCategoryColor(catSlug).color;
-  const patchTextColor = brandColor ?? getCategoryTextColor(getCategoryColor(catSlug).color);
+  // D4: cat-label takes the brand color when a scooter is active, else the unified
+  // category color (BDD via resolveCategoryColor, fallback mapping) — même source que les tuiles.
+  const resolvedCatColor = resolveCategoryColor(part.category?.color ?? null, catSlug);
+  const patchColor = brandColor ?? resolvedCatColor;
+  const patchTextColor = brandColor ?? getCategoryTextColor(resolvedCatColor);
   const catShort = getShortLabel(catSlug, catName);
   const isCarousel = variant === "carousel";
 
