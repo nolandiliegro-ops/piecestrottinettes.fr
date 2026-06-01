@@ -94,6 +94,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.set(key, { auto: false, confidence: 'validated', reason: null });
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Compatibilité ajoutée');
       } else if (meta.auto) {
         const { error } = await supabase
@@ -104,6 +105,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.set(key, { auto: false, confidence: 'validated', reason: meta.reason });
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Suggestion validée');
       } else {
         const { error } = await supabase
@@ -113,6 +115,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.delete(key);
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Compatibilité supprimée');
       }
     } catch (error) {
