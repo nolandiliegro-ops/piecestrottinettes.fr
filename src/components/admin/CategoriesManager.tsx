@@ -8,7 +8,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Loader2, Plus, Trash2, Edit, Save, Tag, FolderTree, Globe, GripVertical } from 'lucide-react';
+import { Loader2, Plus, Trash2, Edit, Save, Tag, FolderTree, Globe, GripVertical, Image as ImageIcon, Upload } from 'lucide-react';
 import { toast } from 'sonner';
 import {
   DndContext,
@@ -41,7 +41,12 @@ interface Category {
   parent_id: string | null;
   meta_title: string | null;
   meta_description: string | null;
+  color: string | null;
+  image_url: string | null;
 }
+
+// Presets alignés sur la palette du design system (cf. lib/categoryColors).
+const COLOR_PRESETS = ['#FF6600', '#DC2626', '#4A7C59', '#F59E0B', '#7C3AED', '#FACC15', '#6B7280', '#1A1A1A'];
 
 const slugify = (text: string) => {
   return text
@@ -176,6 +181,7 @@ const CategoriesManager = () => {
   const [saving, setSaving] = useState(false);
   const [deleting, setDeleting] = useState<string | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
 
   const [newCategory, setNewCategory] = useState({
     name: '',
@@ -183,7 +189,9 @@ const CategoriesManager = () => {
     display_order: '',
     parent_id: '',
     meta_title: '',
-    meta_description: ''
+    meta_description: '',
+    color: '',
+    image_url: ''
   });
 
   const [editCategory, setEditCategory] = useState<Category | null>(null);
@@ -193,7 +201,9 @@ const CategoriesManager = () => {
     display_order: '',
     parent_id: '',
     meta_title: '',
-    meta_description: ''
+    meta_description: '',
+    color: '',
+    image_url: ''
   });
 
   const sensors = useSensors(
@@ -256,7 +266,9 @@ const CategoriesManager = () => {
           display_order: newCategory.display_order ? parseInt(newCategory.display_order) : 0,
           parent_id: newCategory.parent_id || null,
           meta_title: newCategory.meta_title.trim() || null,
-          meta_description: newCategory.meta_description.trim() || null
+          meta_description: newCategory.meta_description.trim() || null,
+          color: newCategory.color.trim() || null,
+          image_url: newCategory.image_url.trim() || null
         })
         .select()
         .single();
@@ -264,7 +276,7 @@ const CategoriesManager = () => {
       if (error) throw error;
 
       setCategories(prev => [...prev, data].sort((a, b) => (a.display_order || 0) - (b.display_order || 0)));
-      setNewCategory({ name: '', icon: '', display_order: '', parent_id: '', meta_title: '', meta_description: '' });
+      setNewCategory({ name: '', icon: '', display_order: '', parent_id: '', meta_title: '', meta_description: '', color: '', image_url: '' });
       setIsCreateOpen(false);
       toast.success('Catégorie créée');
     } catch (error) {
@@ -283,7 +295,9 @@ const CategoriesManager = () => {
       display_order: category.display_order?.toString() || '',
       parent_id: category.parent_id || '',
       meta_title: category.meta_title || '',
-      meta_description: category.meta_description || ''
+      meta_description: category.meta_description || '',
+      color: category.color || '',
+      image_url: category.image_url || ''
     });
     setIsEditOpen(true);
   };
@@ -303,23 +317,27 @@ const CategoriesManager = () => {
           display_order: editValues.display_order ? parseInt(editValues.display_order) : 0,
           parent_id: editValues.parent_id || null,
           meta_title: editValues.meta_title.trim() || null,
-          meta_description: editValues.meta_description.trim() || null
+          meta_description: editValues.meta_description.trim() || null,
+          color: editValues.color.trim() || null,
+          image_url: editValues.image_url.trim() || null
         })
         .eq('id', editCategory.id);
 
       if (error) throw error;
 
-      setCategories(prev => prev.map(c => 
-        c.id === editCategory.id 
-          ? { 
-              ...c, 
+      setCategories(prev => prev.map(c =>
+        c.id === editCategory.id
+          ? {
+              ...c,
               name: editValues.name.trim(),
               slug,
               icon: editValues.icon.trim() || null,
               display_order: editValues.display_order ? parseInt(editValues.display_order) : 0,
               parent_id: editValues.parent_id || null,
               meta_title: editValues.meta_title.trim() || null,
-              meta_description: editValues.meta_description.trim() || null
+              meta_description: editValues.meta_description.trim() || null,
+              color: editValues.color.trim() || null,
+              image_url: editValues.image_url.trim() || null
             }
           : c
       ).sort((a, b) => (a.display_order || 0) - (b.display_order || 0)));
@@ -332,6 +350,37 @@ const CategoriesManager = () => {
       toast.error('Erreur lors de la sauvegarde');
     } finally {
       setSaving(false);
+    }
+  };
+
+  // Upload image vers le bucket category-images (sous-dossier tiles/), pattern aligné
+  // sur ScootersManager. Met à jour values.image_url ; persistance via create/save.
+  const uploadCategoryImage = async (
+    values: typeof newCategory,
+    setValues: (v: typeof newCategory) => void,
+    file: File
+  ) => {
+    if (!file.type.startsWith('image/')) {
+      toast.error('Veuillez sélectionner une image');
+      return;
+    }
+    setUploading(true);
+    try {
+      const baseSlug = slugify(values.name) || 'categorie';
+      const fileExt = file.name.split('.').pop();
+      const fileName = `tiles/${baseSlug}-${Date.now()}.${fileExt}`;
+      const { error: uploadError } = await supabase.storage
+        .from('category-images')
+        .upload(fileName, file, { upsert: true });
+      if (uploadError) throw uploadError;
+      const { data: { publicUrl } } = supabase.storage.from('category-images').getPublicUrl(fileName);
+      setValues({ ...values, image_url: publicUrl });
+      toast.success('Image téléversée');
+    } catch (error) {
+      console.error('Error uploading category image:', error);
+      toast.error("Erreur lors de l'upload");
+    } finally {
+      setUploading(false);
     }
   };
 
@@ -457,8 +506,9 @@ const CategoriesManager = () => {
 
   const renderFormFields = (values: typeof newCategory, setValues: (v: typeof newCategory) => void, excludeId?: string) => (
     <Tabs defaultValue="general" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 mb-4">
+      <TabsList className="grid w-full grid-cols-3 mb-4">
         <TabsTrigger value="general" className="gap-1"><FolderTree className="w-3 h-3" /> Général</TabsTrigger>
+        <TabsTrigger value="visuel" className="gap-1"><ImageIcon className="w-3 h-3" /> Visuel</TabsTrigger>
         <TabsTrigger value="seo" className="gap-1"><Globe className="w-3 h-3" /> SEO</TabsTrigger>
       </TabsList>
 
@@ -490,6 +540,72 @@ const CategoriesManager = () => {
             <Label>Ordre d'affichage</Label>
             <Input type="number" value={values.display_order} onChange={(e) => setValues({ ...values, display_order: e.target.value })} placeholder="0" />
           </div>
+        </div>
+      </TabsContent>
+
+      <TabsContent value="visuel" className="space-y-4">
+        <div className="space-y-2">
+          <Label>Couleur d'accent</Label>
+          <div className="flex items-center gap-2 flex-wrap">
+            {COLOR_PRESETS.map((c) => (
+              <button
+                key={c}
+                type="button"
+                onClick={() => setValues({ ...values, color: c })}
+                className={cn(
+                  "w-8 h-8 rounded-full border-2 transition-transform",
+                  values.color.toLowerCase() === c.toLowerCase() ? "border-foreground scale-110" : "border-transparent"
+                )}
+                style={{ backgroundColor: c }}
+                aria-label={`Couleur ${c}`}
+              />
+            ))}
+            <input
+              type="color"
+              value={values.color || '#6B7280'}
+              onChange={(e) => setValues({ ...values, color: e.target.value })}
+              className="w-8 h-8 rounded cursor-pointer border border-border bg-transparent p-0"
+              aria-label="Couleur personnalisée"
+            />
+            {values.color && (
+              <>
+                <span className="text-xs text-muted-foreground font-mono">{values.color}</span>
+                <Button type="button" variant="ghost" size="sm" onClick={() => setValues({ ...values, color: '' })}>
+                  Réinitialiser
+                </Button>
+              </>
+            )}
+          </div>
+          <p className="text-xs text-muted-foreground">Couleur de la tuile catégorie (hex). Optionnelle.</p>
+        </div>
+
+        <div className="space-y-2">
+          <Label>Image de la catégorie</Label>
+          {values.image_url ? (
+            <div className="flex items-center gap-3">
+              <img src={values.image_url} alt="" className="w-16 h-16 rounded-lg object-cover border border-border" />
+              <Button type="button" variant="outline" size="sm" onClick={() => setValues({ ...values, image_url: '' })}>
+                <Trash2 className="w-4 h-4 mr-1" /> Retirer
+              </Button>
+            </div>
+          ) : (
+            <label className="flex items-center justify-center gap-2 h-20 rounded-lg border-2 border-dashed border-border cursor-pointer hover:bg-muted/50 transition-colors">
+              {uploading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Upload className="w-5 h-5 text-muted-foreground" />}
+              <span className="text-sm text-muted-foreground">{uploading ? 'Téléversement…' : 'Choisir une image'}</span>
+              <input
+                type="file"
+                accept="image/*"
+                className="hidden"
+                disabled={uploading}
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  if (f) uploadCategoryImage(values, setValues, f);
+                  e.target.value = '';
+                }}
+              />
+            </label>
+          )}
+          <p className="text-xs text-muted-foreground">Stockée dans le bucket category-images. Optionnelle.</p>
         </div>
       </TabsContent>
 

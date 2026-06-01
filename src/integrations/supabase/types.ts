@@ -228,10 +228,12 @@ export type Database = {
       }
       categories: {
         Row: {
+          color: string | null
           created_at: string
           display_order: number | null
           icon: string | null
           id: string
+          image_url: string | null
           meta_description: string | null
           meta_title: string | null
           name: string
@@ -240,10 +242,12 @@ export type Database = {
           slug: string
         }
         Insert: {
+          color?: string | null
           created_at?: string
           display_order?: number | null
           icon?: string | null
           id?: string
+          image_url?: string | null
           meta_description?: string | null
           meta_title?: string | null
           name: string
@@ -252,10 +256,12 @@ export type Database = {
           slug: string
         }
         Update: {
+          color?: string | null
           created_at?: string
           display_order?: number | null
           icon?: string | null
           id?: string
+          image_url?: string | null
           meta_description?: string | null
           meta_title?: string | null
           name?: string
