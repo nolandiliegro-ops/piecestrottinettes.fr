@@ -154,6 +154,7 @@ const CompatibilityManager = () => {
       const { error } = await q;
       if (error) throw error;
       await fetchData();
+      invalidateCompatQueries();
       toast.success(`Validées (${level})`);
     } catch (e) { console.error(e); toast.error('Erreur validation batch'); }
     finally { setBulkSaving(false); }
@@ -167,6 +168,7 @@ const CompatibilityManager = () => {
         .eq('scooter_model_id', selectedScooter).eq('auto_suggested', true);
       if (error) throw error;
       await fetchData();
+      invalidateCompatQueries();
       toast.success('Toutes les suggestions rejetées');
     } catch (e) { console.error(e); toast.error('Erreur rejet'); }
     finally { setBulkSaving(false); }
