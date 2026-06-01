@@ -78,20 +78,21 @@ const CategoryTile = ({
         minHeight: 116,
         padding: "10px 8px 8px",
         borderRadius: 14,
-        // Variante D : fond très légèrement teinté (8%), bordure discrète.
+        // Variante D : fond très légèrement teinté (8%), bordure DISCRÈTE (pas de couleur vive
+        // sur tout le tour) — la couleur vive reste sur la barre du haut + le check.
         backgroundColor: active ? hexToRgba(accent, 0.08) : "rgba(255,255,255,0.06)",
         border: active
-          ? `1px solid ${hexToRgba(accent, 0.5)}`
+          ? `1px solid ${hexToRgba(accent, 0.35)}`
           : "1px solid rgba(255,255,255,0.12)",
         boxShadow: "none",
         transition: "background-color 180ms ease-out, border-color 180ms ease-out",
       }}
     >
-      {/* Variante D : barre de couleur pleine en haut */}
+      {/* Variante D : fine barre de couleur en haut (accent), sobre */}
       {active && (
         <span
           aria-hidden
-          style={{ position: "absolute", top: 0, left: 0, right: 0, height: 5, backgroundColor: accent }}
+          style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, backgroundColor: accent }}
         />
       )}
 
