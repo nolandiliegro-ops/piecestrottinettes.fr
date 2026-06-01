@@ -5,9 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle, ListFilter } from 'lucide-react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle, ListFilter, ImageIcon } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { getPrimaryImage, type ImageEntry } from '@/lib/entityImage';
 
 interface Scooter {
   id: string;
@@ -19,6 +21,8 @@ interface Scooter {
 interface Part {
   id: string;
   name: string;
+  image_url: string | null;
+  images: ImageEntry[] | null;
   category: { name: string } | null;
 }
 
@@ -44,6 +48,7 @@ const CompatibilityManager = () => {
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<FilterKey>('all');
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
 
   const invalidateCompatQueries = () => {
     queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
@@ -60,14 +65,14 @@ const CompatibilityManager = () => {
     try {
       const [scootersRes, partsRes, compatRes] = await Promise.all([
         supabase.from('scooter_models').select('id, name, slug, brand:brands(name)').order('name'),
-        supabase.from('parts').select('id, name, category:categories(name)').order('name'),
+        supabase.from('parts').select('id, name, image_url, images, category:categories(name)').order('name'),
         supabase.from('part_compatibility').select('part_id, scooter_model_id, auto_suggested, confidence_level, suggestion_reason'),
       ]);
       if (scootersRes.error) throw scootersRes.error;
       if (partsRes.error) throw partsRes.error;
       if (compatRes.error) throw compatRes.error;
       setScooters(scootersRes.data || []);
-      setParts(partsRes.data || []);
+      setParts(((partsRes.data || []) as unknown[]).map((p) => p as Part));
       const map = new Map<string, CompatMeta>();
       (compatRes.data || []).forEach((c: { part_id: string; scooter_model_id: string; auto_suggested: boolean; confidence_level: string; suggestion_reason: string | null }) => {
         const key = `${c.part_id}_${c.scooter_model_id}`;
@@ -508,6 +513,7 @@ const CompatibilityManager = () => {
                             const meta = metaByKey.get(key);
                             const isCompatible = !!meta;
                             const isAuto = !!meta?.auto;
+                            const primary = getPrimaryImage(part.images, part.image_url, '');
                             return (
                               <div key={part.id}
                                 className={cn('flex items-center gap-3 p-2 rounded-md transition-colors flex-wrap',
@@ -517,6 +523,20 @@ const CompatibilityManager = () => {
                                   onClick={() => !saving && toggleCompatibility(part.id, selectedScooter)}>
                                   <Checkbox checked={isCompatible} disabled={saving}
                                     className="data-[state=checked]:bg-primary data-[state=checked]:border-primary" />
+                                  <button
+                                    type="button"
+                                    onClick={(e) => { e.stopPropagation(); if (primary) setLightboxUrl(primary); }}
+                                    disabled={!primary}
+                                    aria-label={primary ? `Agrandir ${part.name}` : 'Pas de photo'}
+                                    className="h-11 w-11 shrink-0 rounded-lg overflow-hidden border flex items-center justify-center transition disabled:cursor-default"
+                                    style={{ backgroundColor: '#F5F0E8', borderColor: 'rgba(74,124,89,0.15)' }}
+                                  >
+                                    {primary ? (
+                                      <img src={primary} alt={part.name} loading="lazy" className="h-full w-full object-cover" />
+                                    ) : (
+                                      <ImageIcon className="h-5 w-5" style={{ color: '#6B7280' }} />
+                                    )}
+                                  </button>
                                   <span className={cn('text-sm truncate', isCompatible ? 'text-foreground font-medium' : 'text-muted-foreground')}>
                                     {part.name}
                                   </span>
@@ -559,6 +579,13 @@ const CompatibilityManager = () => {
           </div>
         </div>
       </div>
+      <Dialog open={!!lightboxUrl} onOpenChange={(o) => !o && setLightboxUrl(null)}>
+        <DialogContent className="max-w-3xl p-2" style={{ backgroundColor: '#F5F0E8' }}>
+          {lightboxUrl && (
+            <img src={lightboxUrl} alt="" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
+          )}
+        </DialogContent>
+      </Dialog>
     </TooltipProvider>
   );
 };
