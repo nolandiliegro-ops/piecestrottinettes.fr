@@ -20,6 +20,11 @@ import {
   type AIMatchResult,
   type AIScooterRow,
 } from "../_shared/ai_matcher.ts";
+import {
+  canonicalSlug,
+  normalizeName,
+  resolveCategoryMatch,
+} from "./index.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
 
@@ -301,4 +306,64 @@ Deno.test("withTimeout: déclenche fallback après timeout", async () => {
 Deno.test("withTimeout: fallback sur rejection", async () => {
   const r = await withTimeout(Promise.reject(new Error("x")), 100, () => "FALLBACK");
   assertEquals(r, "FALLBACK");
+});
+
+// ─── Résolution catégorie : match-ou-flag ───────────────────────────────────
+
+Deno.test("canonicalSlug: accents strippés comme l'UI (Chambres à air → chambres-a-air)", () => {
+  assertEquals(canonicalSlug("Chambres à air"), "chambres-a-air");
+});
+
+Deno.test("canonicalSlug: simple (Pneus → pneus)", () => {
+  assertEquals(canonicalSlug("Pneus"), "pneus");
+});
+
+Deno.test("canonicalSlug: ponctuation + accents (Câbles et durites → cables-et-durites)", () => {
+  assertEquals(canonicalSlug("Câbles et durites"), "cables-et-durites");
+});
+
+Deno.test("canonicalSlug: bords nettoyés (  Garde-boue !  → garde-boue)", () => {
+  assertEquals(canonicalSlug("  Garde-boue !  "), "garde-boue");
+});
+
+Deno.test("normalizeName: casse + accents + bords (Chambres à Air  → chambres a air)", () => {
+  assertEquals(normalizeName("Chambres à Air  "), "chambres a air");
+});
+
+Deno.test("normalizeName: conserve les espaces internes (Pneu plein → pneu plein)", () => {
+  assertEquals(normalizeName("Pneu plein"), "pneu plein");
+});
+
+const SAMPLE_CATEGORIES = [
+  { id: "id-cab", name: "Chambres à air", slug: "chambres-air" },
+  { id: "id-caa", name: "Chambres à Air", slug: "chambres-a-air" },
+  { id: "id-pneus", name: "Pneus", slug: "pneus" },
+];
+
+Deno.test("resolveCategoryMatch: 1 candidat → ok + id", () => {
+  const r = resolveCategoryMatch("Pneus", undefined, SAMPLE_CATEGORIES);
+  assertEquals(r, { status: "ok", id: "id-pneus" });
+});
+
+Deno.test("resolveCategoryMatch: match par nom insensible casse/accents", () => {
+  const r = resolveCategoryMatch("  PNEUS ", undefined, SAMPLE_CATEGORIES);
+  assertEquals(r, { status: "ok", id: "id-pneus" });
+});
+
+Deno.test("resolveCategoryMatch: 0 candidat → unknown", () => {
+  const r = resolveCategoryMatch("Batteries", undefined, SAMPLE_CATEGORIES);
+  assertEquals(r, { status: "unknown" });
+});
+
+Deno.test("resolveCategoryMatch: ≥2 candidats (doublon) → ambiguous + slugs triés", () => {
+  const r = resolveCategoryMatch("Chambres à air", undefined, SAMPLE_CATEGORIES);
+  assertEquals(r, {
+    status: "ambiguous",
+    slugs: ["chambres-a-air", "chambres-air"],
+  });
+});
+
+Deno.test("resolveCategoryMatch: categorySlug explicite matche par slug", () => {
+  const r = resolveCategoryMatch("Libellé différent", "pneus", SAMPLE_CATEGORIES);
+  assertEquals(r, { status: "ok", id: "id-pneus" });
 });

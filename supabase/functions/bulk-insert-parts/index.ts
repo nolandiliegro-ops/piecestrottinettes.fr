@@ -74,6 +74,80 @@ interface Results {
 }
 
 // =====================================================================
+// RÉSOLUTION CATÉGORIE — helpers purs (testables, sans I/O)
+// =====================================================================
+
+/**
+ * Slug canonique — COPIE EXACTE du slugify de src/components/admin/CategoriesManager.tsx.
+ * NFD + strip des diacritiques (à → a) pour produire le MÊME slug que l'UI admin.
+ * « Chambres à air » → "chambres-a-air".
+ */
+const DIACRITICS_RE = new RegExp("[\\u0300-\\u036f]", "g");
+
+export function canonicalSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(DIACRITICS_RE, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+/**
+ * Nom normalisé pour le matching insensible casse/accents/espaces de bord.
+ * « Chambres à Air  » → "chambres a air".
+ */
+export function normalizeName(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(DIACRITICS_RE, "")
+    .trim();
+}
+
+interface ExistingCategory {
+  id: string;
+  name: string;
+  slug: string;
+}
+
+export type CategoryMatchResult =
+  | { status: "ok"; id: string }
+  | { status: "unknown" }
+  | { status: "ambiguous"; slugs: string[] };
+
+/**
+ * Match-ou-flag : résout une catégorie d'import contre les catégories EXISTANTES,
+ * sans jamais en créer ni en deviner.
+ *  - 0 candidat  → { status: "unknown" }     (catégorie à créer dans l'admin)
+ *  - 1 candidat  → { status: "ok", id }
+ *  - ≥2 candidats → { status: "ambiguous", slugs } (doublon en base, à merger)
+ *
+ * Un candidat = ligne dont le slug égale le slug canonique OU dont le nom
+ * normalisé égale le nom normalisé recherché. Dédupliqué par id.
+ */
+export function resolveCategoryMatch(
+  categoryName: string,
+  categorySlug: string | undefined,
+  existing: ExistingCategory[],
+): CategoryMatchResult {
+  const slug = (categorySlug && categorySlug.trim()) || canonicalSlug(categoryName);
+  const normName = normalizeName(categoryName);
+
+  const byId = new Map<string, ExistingCategory>();
+  for (const c of existing) {
+    if (c.slug === slug || normalizeName(c.name) === normName) {
+      byId.set(c.id, c);
+    }
+  }
+
+  const candidates = [...byId.values()];
+  if (candidates.length === 0) return { status: "unknown" };
+  if (candidates.length === 1) return { status: "ok", id: candidates[0].id };
+  return { status: "ambiguous", slugs: candidates.map((c) => c.slug).sort() };
+}
+
+// =====================================================================
 // ÉTAPES MÉTIER
 // =====================================================================
 
@@ -133,7 +207,7 @@ async function upsertSupplier(
 // HANDLER
 // =====================================================================
 
-Deno.serve(async (req) => {
+const handler = async (req: Request): Promise<Response> => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
   }
@@ -165,19 +239,69 @@ Deno.serve(async (req) => {
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
     );
 
-    const slug = categorySlug ||
-      categoryName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-    const { data: category, error: catError } = await supabase
-      .from("categories")
-      .upsert({ name: categoryName, slug }, { onConflict: "slug" })
-      .select("id")
-      .single();
+    const slug = (categorySlug && categorySlug.trim()) || canonicalSlug(categoryName);
+    const autoCreate = Deno.env.get("BULK_AUTOCREATE_CATEGORIES") === "true";
 
-    if (catError || !category) {
-      return new Response(
-        JSON.stringify({ error: "Failed to upsert category", detail: catError?.message }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
+    let category: { id: string };
+
+    if (autoCreate) {
+      // FILET DE SECOURS (flag=true) : ancien comportement — upsert par slug,
+      // peut créer une catégorie. À n'activer que ponctuellement.
+      const { data: cat, error: catError } = await supabase
+        .from("categories")
+        .upsert({ name: categoryName, slug }, { onConflict: "slug" })
+        .select("id")
+        .single();
+
+      if (catError || !cat) {
+        return new Response(
+          JSON.stringify({ error: "Failed to upsert category", detail: catError?.message }),
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        );
+      }
+      category = cat;
+    } else {
+      // MODE PAR DÉFAUT (flag=false) : match-ou-flag. AUCUNE écriture dans categories.
+      const { data: existing, error: listError } = await supabase
+        .from("categories")
+        .select("id, name, slug");
+
+      if (listError || !existing) {
+        return new Response(
+          JSON.stringify({ error: "Failed to load categories", detail: listError?.message }),
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        );
+      }
+
+      const match = resolveCategoryMatch(categoryName, categorySlug, existing);
+
+      if (match.status === "unknown") {
+        return new Response(
+          JSON.stringify({
+            error: "Catégorie inconnue",
+            categoryName,
+            slug,
+            hint: "Créer la catégorie dans l'admin (CategoriesManager) avant import.",
+          }),
+          { status: 422, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        );
+      }
+
+      if (match.status === "ambiguous") {
+        return new Response(
+          JSON.stringify({
+            error: "Doublon en base",
+            categoryName,
+            duplicate_slugs: match.slugs,
+            hint:
+              `Doublon en base (${match.slugs.length} lignes : ${match.slugs.join(", ")}) ` +
+              `— à merger avant import.`,
+          }),
+          { status: 422, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        );
+      }
+
+      category = { id: match.id };
     }
 
     const results: Results = {
@@ -356,4 +480,10 @@ Deno.serve(async (req) => {
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
     );
   }
-});
+};
+
+// En production l'Edge Function démarre le serveur ; en test (import du module)
+// import.meta.main est false → pas de Deno.serve, le module reste importable.
+if (import.meta.main) {
+  Deno.serve(handler);
+}
