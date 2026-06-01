@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import PartCardSlim from "./PartCardSlim";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
 
@@ -51,12 +52,155 @@ interface Props {
   accentColor?: string;
 }
 
+/** Flèche de navigation desktop (masquée mobile, visible au survol). */
+const Arrow = ({
+  dir,
+  disabled,
+  onClick,
+}: {
+  dir: "left" | "right";
+  disabled: boolean;
+  onClick: () => void;
+}) => (
+  <button
+    type="button"
+    aria-label={dir === "left" ? "Précédent" : "Suivant"}
+    disabled={disabled}
+    onClick={onClick}
+    className={[
+      "hidden lg:flex absolute top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full items-center justify-center",
+      "bg-white shadow-md border border-black/5 text-[#1A1A1A]",
+      "opacity-0 group-hover:opacity-100 transition-opacity duration-200",
+      "disabled:opacity-0 disabled:cursor-default hover:scale-105 motion-safe:transition-transform",
+      dir === "left" ? "left-1" : "right-1",
+    ].join(" ")}
+  >
+    {dir === "left" ? (
+      <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
+    ) : (
+      <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
+    )}
+  </button>
+);
+
 const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
-  // D3: duration proportional to count, min 40s
-  const durationSeconds = useMemo(
-    () => Math.max(40, parts.length * 1.5),
-    [parts.length]
-  );
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [arrows, setArrows] = useState({ left: false, right: false });
+
+  // État de drag dans des refs (pas de re-render pendant le geste).
+  const drag = useRef({
+    active: false,
+    moved: false,
+    startX: 0,
+    startScroll: 0,
+    lastX: 0,
+    lastT: 0,
+    velocity: 0,
+    raf: 0,
+  });
+  const justDragged = useRef(false);
+
+  const updateArrows = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const max = el.scrollWidth - el.clientWidth;
+    setArrows({ left: el.scrollLeft > 4, right: el.scrollLeft < max - 4 });
+  }, []);
+
+  useEffect(() => {
+    updateArrows();
+  }, [updateArrows, parts.length]);
+
+  useEffect(() => {
+    const onResize = () => updateArrows();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [updateArrows]);
+
+  const stopMomentum = () => {
+    if (drag.current.raf) {
+      cancelAnimationFrame(drag.current.raf);
+      drag.current.raf = 0;
+    }
+  };
+
+  const momentum = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const d = drag.current;
+    d.velocity *= 0.95; // friction
+    el.scrollLeft -= d.velocity;
+    updateArrows();
+    if (Math.abs(d.velocity) > 0.5) {
+      d.raf = requestAnimationFrame(momentum);
+    } else {
+      d.raf = 0;
+    }
+  }, [updateArrows]);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType !== "mouse") return; // tactile = scroll natif
+    const el = scrollRef.current;
+    if (!el) return;
+    stopMomentum();
+    const d = drag.current;
+    d.active = true;
+    d.moved = false;
+    d.startX = e.clientX;
+    d.startScroll = el.scrollLeft;
+    d.lastX = e.clientX;
+    d.lastT = performance.now();
+    d.velocity = 0;
+    el.setPointerCapture?.(e.pointerId);
+    el.style.cursor = "grabbing";
+    el.style.userSelect = "none";
+  };
+
+  const onPointerMove = (e: React.PointerEvent) => {
+    const d = drag.current;
+    if (!d.active) return;
+    const el = scrollRef.current;
+    if (!el) return;
+    const dx = e.clientX - d.startX;
+    if (!d.moved && Math.abs(dx) < 5) return; // seuil clic vs drag
+    d.moved = true;
+    el.scrollLeft = d.startScroll - dx;
+    const now = performance.now();
+    const dt = now - d.lastT;
+    if (dt > 0) d.velocity = ((e.clientX - d.lastX) / dt) * 16; // px / frame
+    d.lastX = e.clientX;
+    d.lastT = now;
+    updateArrows();
+  };
+
+  const endDrag = (e: React.PointerEvent) => {
+    const d = drag.current;
+    if (!d.active) return;
+    d.active = false;
+    const el = scrollRef.current;
+    el?.releasePointerCapture?.(e.pointerId);
+    if (el) {
+      el.style.cursor = "grab";
+      el.style.userSelect = "";
+    }
+    if (d.moved) {
+      justDragged.current = true; // supprime le clic qui suit
+      setTimeout(() => {
+        justDragged.current = false;
+      }, 0);
+      if (Math.abs(d.velocity) > 0.5) {
+        d.raf = requestAnimationFrame(momentum);
+      }
+    }
+  };
+
+  // Annule la navigation du <Link> si un drag vient d'avoir lieu (phase capture).
+  const onClickCapture = (e: React.MouseEvent) => {
+    if (justDragged.current) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  };
 
   if (parts.length === 0) {
     return (
@@ -69,122 +213,49 @@ const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
       >
         <p
           className="text-sm mb-4"
-          style={{
-            color: "#6B7280",
-            fontFamily: "'Inter', sans-serif",
-          }}
+          style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif" }}
         >
           Aucune pièce dans cette combinaison.
         </p>
-        {onReset && (
-          <ResetButton onClick={onReset} accentColor={accentColor} />
-        )}
+        {onReset && <ResetButton onClick={onReset} accentColor={accentColor} />}
       </motion.div>
     );
   }
 
   return (
-    <>
+    <div className="relative group">
       <style>{`
-        @keyframes ptMarquee {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-
-        .pt-carousel-mask {
-          mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 3%,
-            black 97%,
-            transparent 100%
-          );
-          -webkit-mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 3%,
-            black 97%,
-            transparent 100%
-          );
-        }
-
-        /* Desktop: animated marquee */
-        .pt-carousel-track {
-          display: flex;
-          gap: 14px;
-          width: max-content;
-          animation: ptMarquee var(--pt-marquee-duration, 50s) linear infinite;
-          will-change: transform;
-        }
-        .pt-carousel-wrap:hover .pt-carousel-track {
-          animation-play-state: paused;
-        }
-
-        /* Mobile / coarse pointer: disable marquee, enable touch scroll-snap */
-        @media (pointer: coarse) {
-          .pt-carousel-wrap {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scroll-snap-type: x mandatory;
-            scrollbar-width: none;
-          }
-          .pt-carousel-wrap::-webkit-scrollbar {
-            display: none;
-          }
-          .pt-carousel-track {
-            animation: none !important;
-            width: max-content;
-          }
-          .pt-carousel-track > .pt-card-slot {
-            scroll-snap-align: start;
-          }
-          .pt-carousel-mask {
-            mask-image: none;
-            -webkit-mask-image: none;
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          .pt-carousel-track {
-            animation: none !important;
-          }
-        }
+        .pt-products-scroll::-webkit-scrollbar { display: none; }
+        .pt-products-scroll { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
 
+      <Arrow dir="left" disabled={!arrows.left} onClick={() => {
+        scrollRef.current?.scrollBy({ left: -(scrollRef.current.clientWidth * 0.9), behavior: "smooth" });
+      }} />
+      <Arrow dir="right" disabled={!arrows.right} onClick={() => {
+        scrollRef.current?.scrollBy({ left: scrollRef.current.clientWidth * 0.9, behavior: "smooth" });
+      }} />
+
       <div
-        className="pt-carousel-wrap pt-carousel-mask overflow-hidden"
-        aria-label="Carrousel produits"
+        ref={scrollRef}
+        className="pt-products-scroll flex gap-3.5 overflow-x-auto pb-3"
+        style={{ cursor: "grab", WebkitOverflowScrolling: "touch" }}
+        aria-label="Liste produits"
+        onScroll={updateArrows}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={endDrag}
+        onPointerLeave={endDrag}
+        onPointerCancel={endDrag}
+        onClickCapture={onClickCapture}
       >
-        <div
-          className="pt-carousel-track"
-          style={
-            {
-              "--pt-marquee-duration": `${durationSeconds}s`,
-            } as React.CSSProperties
-          }
-        >
-          {/* First copy */}
-          {parts.map((p, i) => (
-            <div
-              key={`a-${p.id}`}
-              className="pt-card-slot flex-shrink-0 w-[200px] sm:w-[220px]"
-            >
-              <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
-            </div>
-          ))}
-          {/* Second copy for infinite loop */}
-          {parts.map((p, i) => (
-            <div
-              key={`b-${p.id}`}
-              className="pt-card-slot flex-shrink-0 w-[200px] sm:w-[220px]"
-              aria-hidden="true"
-            >
-              <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
-            </div>
-          ))}
-        </div>
+        {parts.map((p, i) => (
+          <div key={p.id} className="flex-shrink-0 w-[200px] sm:w-[220px]">
+            <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
