@@ -21,7 +21,8 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { useCategories, useScooterModels } from "@/hooks/useScooterData";
-import { useAllParts } from "@/hooks/useCatalogueData";
+import { useAllParts, type CataloguePart } from "@/hooks/useCatalogueData";
+import { useProductSearch, type ProductSearchRow } from "@/hooks/useProductSearch";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 
@@ -63,6 +64,24 @@ const EmptyState = ({ onClear }: { onClear: () => void }) => (
     </Button>
   </motion.div>
 );
+
+// Mappe une ligne de recherche (RPC) vers la shape attendue par PartCard.
+// Les champs absents de la RPC (description, difficulty_level, technical_metadata) = null.
+const toCataloguePart = (p: ProductSearchRow): CataloguePart => ({
+  id: p.id,
+  name: p.name,
+  slug: p.slug,
+  description: null,
+  price: p.price,
+  image_url: p.image_url,
+  images: p.images,
+  difficulty_level: null,
+  stock_quantity: p.stock_quantity,
+  technical_metadata: null,
+  is_featured: p.is_featured ?? undefined,
+  category: p.category,
+  category_id: p.category?.id ?? null,
+});
 
 const Catalogue = () => {
   const { isAdmin } = useAdminRole();
@@ -165,25 +184,59 @@ const Catalogue = () => {
 
   const { data: allParts = [], isLoading: partsLoading } = useAllParts(effectiveCategoryFilter);
 
+  // Recherche full-text via RPC (pg_trgm) — pilote la grille uniquement quand ?search= est présent.
+  // Cumulable avec le scooter (?scooter=) et la catégorie/sous-catégorie active.
+  const searchCategoryIds = useMemo<string[] | null>(() => {
+    if (activeSubCategory) return [activeSubCategory];
+    if (activeCategory && subCategories.length > 0)
+      return [activeCategory, ...subCategories.map((sc) => sc.id)];
+    if (activeCategory) return [activeCategory];
+    return null;
+  }, [activeCategory, activeSubCategory, subCategories]);
+
+  const search = useProductSearch({
+    query: searchQuery ?? "",
+    scooterId: scooterIdFilter,
+    categoryIds: searchCategoryIds,
+    limit: 48,
+  });
+
+  const isSearch = !!searchQuery;
+  const displayLoading = isSearch
+    ? !search.isActive || search.isLoading || search.isFetching
+    : partsLoading;
+
+  // Mode recherche : exact / related séparés (option B), filtre marque appliqué côté client.
+  const searchExact = useMemo<CataloguePart[]>(() => {
+    let arr = search.exactParts.map(toCataloguePart);
+    if (brandFilter && brandPartIds) arr = arr.filter((p) => brandPartIds.has(p.id));
+    return arr;
+  }, [search.exactParts, brandFilter, brandPartIds]);
+
+  const searchRelated = useMemo<CataloguePart[]>(() => {
+    let arr = search.relatedParts.map(toCataloguePart);
+    if (brandFilter && brandPartIds) arr = arr.filter((p) => brandPartIds.has(p.id));
+    return arr;
+  }, [search.relatedParts, brandFilter, brandPartIds]);
+
   // Filtrer manuellement si on a une catégorie parente avec sous-catégories
-  const parts = useMemo(() => {
+  const parts = useMemo<CataloguePart[]>(() => {
+    // Mode recherche : la RPC filtre déjà published + catégories + scooter ;
+    // parts = exact puis related (déjà ordonné par la RPC) pour le compteur + l'état vide.
+    if (searchQuery) {
+      return [...searchExact, ...searchRelated];
+    }
+    // Chemin standard (inchangé) : useAllParts + filtres catégorie/marque client-side.
     let filtered = allParts;
     if (activeCategory && subCategories.length > 0 && !activeSubCategory) {
       const validCategoryIds = new Set([activeCategory, ...subCategories.map(sc => sc.id)]);
       filtered = filtered.filter(p => p.category_id && validCategoryIds.has(p.category_id));
     }
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      filtered = filtered.filter(p =>
-        p.name.toLowerCase().includes(q) ||
-        (p.description?.toLowerCase().includes(q) ?? false)
-      );
-    }
     if (brandFilter && brandPartIds) {
       filtered = filtered.filter(p => brandPartIds.has(p.id));
     }
     return filtered;
-  }, [allParts, activeCategory, activeSubCategory, subCategories, searchQuery, brandFilter, brandPartIds]);
+  }, [allParts, activeCategory, activeSubCategory, subCategories, searchQuery, searchExact, searchRelated, brandFilter, brandPartIds]);
 
   // Reset sous-catégorie quand on change de catégorie parente
   const handleCategoryChange = (categoryId: string | null) => {
@@ -309,7 +362,7 @@ const Catalogue = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-mineral font-montserrat font-semibold mt-2"
           >
-            {partsLoading ? "Chargement..." : `${parts.length} pièces disponibles`}
+            {displayLoading ? "Chargement..." : `${parts.length} pièces disponibles`}
           </motion.div>
 
           {/* Scooter Filter Banner */}
@@ -403,7 +456,7 @@ const Catalogue = () => {
         {/* Product Grid - visible above the fold */}
         <section className="container mx-auto px-4 py-6">
           <AnimatePresence mode="wait">
-            {partsLoading ? (
+            {displayLoading ? (
               <motion.div
                 key="skeleton"
                 initial={{ opacity: 0 }}
@@ -413,17 +466,59 @@ const Catalogue = () => {
                 <SkeletonGrid />
               </motion.div>
             ) : parts.length > 0 ? (
+              isSearch ? (
+                searchExact.length > 0 ? (
+                  // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
+                  <div
+                    key="search-exact"
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
+                  >
+                    {searchExact.map((part, index) => (
+                      <PartCard key={part.id} part={part} index={index} />
+                    ))}
+                  </div>
+                ) : (
+                  // 0 exact mais des proches -> suggestions, sans séparateur.
+                  <div key="search-related">
+                    <p className="mb-5 text-xs font-semibold uppercase tracking-wider text-gray-500">
+                      Aucun résultat exact, voici des suggestions
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
+                      {searchRelated.map((part, index) => (
+                        <PartCard key={part.id} part={part} index={index} />
+                      ))}
+                    </div>
+                  </div>
+                )
+              ) : (
+                <motion.div
+                  key={activeCategory || "all"}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.3 }}
+                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
+                >
+                  {parts.map((part, index) => (
+                    <PartCard key={part.id} part={part} index={index} />
+                  ))}
+                </motion.div>
+              )
+            ) : isSearch ? (
+              // Recherche sans aucun résultat -> message spécifique à la requête.
               <motion.div
-                key={activeCategory || "all"}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
+                key="search-empty"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="flex flex-col items-center justify-center py-20 text-center"
               >
-                {parts.map((part, index) => (
-                  <PartCard key={part.id} part={part} index={index} />
-                ))}
+                <div className="w-20 h-20 rounded-full bg-white/40 backdrop-blur-md flex items-center justify-center mb-6">
+                  <Search className="w-10 h-10 text-muted-foreground" />
+                </div>
+                <h3 className="font-display text-2xl text-carbon mb-2">AUCUNE PIÈCE TROUVÉE</h3>
+                <p className="text-muted-foreground">
+                  Aucune pièce trouvée pour «&nbsp;{searchQuery}&nbsp;»
+                </p>
               </motion.div>
             ) : (
               <EmptyState onClear={() => setActiveCategory(null)} />

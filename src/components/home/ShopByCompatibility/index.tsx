@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Search } from "lucide-react";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useShopByCategoryDataV2 } from "@/hooks/useShopByCategoryDataV2";
+import { useProductSearch } from "@/hooks/useProductSearch";
+import { useCategories } from "@/hooks/useScooterData";
 import { useScooterBrandColor } from "@/hooks/useScooterBrandColor";
 import { useHomeBridge } from "@/hooks/useHomeBridge";
 import CompatibilityHeader from "./CompatibilityHeader";
@@ -15,7 +16,6 @@ import { THEME, hexToRgba } from "@/lib/theme";
 const NEUTRAL_TITLE_ACCENT = "#4A7C59";
 
 const ShopByCompatibility = () => {
-  const navigate = useNavigate();
   const { selectedScooter, clearSelection } = useSelectedScooter();
   const { color: brandColor, isDefault: brandIsDefault } = useScooterBrandColor();
   const { data: bridgeSettings } = useHomeBridge();
@@ -38,13 +38,45 @@ const ShopByCompatibility = () => {
     });
   }, []);
 
-  const handleProductSearch = useCallback(() => {
-    const q = productQuery.trim();
-    if (!q) return;
-    navigate(`/catalogue?search=${encodeURIComponent(q)}`);
-  }, [productQuery, navigate]);
-
   const data = useShopByCategoryDataV2(selectedScooter?.id, selectedCategories);
+
+  // --- Recherche full-text live (RPC search_parts_fuzzy) ---
+  // Au repos (query < 2 car) : grille curated inchangée. En recherche : résultats RPC,
+  // cumulables avec le scooter sélectionné et les catégories cochées.
+  const isSearching = productQuery.trim().length >= 2;
+  const { data: allCats = [] } = useCategories();
+  const slugToId = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const c of allCats) m.set(c.slug, c.id);
+    return m;
+  }, [allCats]);
+  // Catégories cochées (slugs représentatifs) -> tous les UUID des groupes dédupliqués.
+  const selectedCategoryIds = useMemo<string[] | null>(() => {
+    if (selectedCategories.size === 0) return null;
+    const ids: string[] = [];
+    for (const group of data.availableCategories) {
+      if (selectedCategories.has(group.slug)) {
+        for (const s of group.slugs) {
+          const id = slugToId.get(s);
+          if (id) ids.push(id);
+        }
+      }
+    }
+    return ids.length > 0 ? ids : null;
+  }, [selectedCategories, data.availableCategories, slugToId]);
+
+  const search = useProductSearch({
+    query: productQuery,
+    scooterId: selectedScooter?.id ?? null,
+    categoryIds: selectedCategoryIds,
+    limit: 48,
+  });
+
+  // Au repos : grille curated inchangée. En recherche : résultats RPC.
+  const gridParts = isSearching ? search.parts : data.filteredParts;
+  const gridLoading = isSearching
+    ? !search.isActive || search.isLoading || search.isFetching
+    : data.isLoading;
 
   // Auto-cleanup: if a previously-selected category drops to count=0
   // (e.g. user activated a scooter that has no parts in it), remove it
@@ -265,13 +297,10 @@ const ShopByCompatibility = () => {
               modelFocalMode={modelFocalMode}
             />
 
-            {/* Recherche produits — redirige vers le catalogue filtre (?search=) */}
+            {/* Recherche produits — filtre la grille EN LIVE via la RPC (plus de redirect) */}
             <form
               role="search"
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleProductSearch();
-              }}
+              onSubmit={(e) => e.preventDefault()}
               className="mb-5 lg:mb-6"
             >
               <div
@@ -325,7 +354,7 @@ const ShopByCompatibility = () => {
               />
             </div>
 
-            {data.isLoading ? (
+            {gridLoading ? (
               <div
                 className="flex gap-3.5 overflow-hidden"
                 style={{ height: 280 }}
@@ -338,9 +367,42 @@ const ShopByCompatibility = () => {
                   />
                 ))}
               </div>
+            ) : isSearching ? (
+              search.exactParts.length > 0 ? (
+                // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
+                <PartsCarousel
+                  parts={search.exactParts}
+                  onReset={handleResetFilters}
+                  accentColor={accentColor}
+                  categoryFilterActive={selectedCategories.size > 0}
+                />
+              ) : search.relatedParts.length > 0 ? (
+                // 0 exact mais des proches -> suggestions, sans séparateur.
+                <>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                    Aucun résultat exact, voici des suggestions
+                  </p>
+                  <PartsCarousel
+                    parts={search.relatedParts}
+                    onReset={handleResetFilters}
+                    accentColor={accentColor}
+                    categoryFilterActive={selectedCategories.size > 0}
+                  />
+                </>
+              ) : (
+                // 0 exact ET 0 proche -> état vide clair.
+                <div
+                  className="flex flex-col items-center justify-center text-center"
+                  style={{ padding: "60px 16px" }}
+                >
+                  <p className="text-sm" style={{ color: "#9CA3AF", fontFamily: "'Inter', sans-serif" }}>
+                    Aucune pièce trouvée pour «&nbsp;{productQuery.trim()}&nbsp;»
+                  </p>
+                </div>
+              )
             ) : (
               <PartsCarousel
-                parts={data.filteredParts}
+                parts={gridParts}
                 onReset={handleResetFilters}
                 accentColor={accentColor}
                 categoryFilterActive={selectedCategories.size > 0}

@@ -98,7 +98,6 @@ RETURNS TABLE(
 LANGUAGE plpgsql STABLE
 SECURITY INVOKER
 SET search_path = public
-SET pg_trgm.word_similarity_threshold = 0.3
 AS $$
 DECLARE
   v_q text := public.f_unaccent(lower(trim(coalesce(q, ''))));
@@ -139,9 +138,9 @@ BEGIN
     AND (p_category_ids IS NULL OR p.category_id = ANY(p_category_ids))
     AND (
       v_q = ''
-      OR v_q <% p.search_document
+      OR word_similarity(v_q, p.search_document) >= 0.3
       OR p.search_document ILIKE '%'||v_q||'%'
-      OR v_q <% cp.compat_doc
+      OR word_similarity(v_q, cp.compat_doc) >= 0.3
     )
   ORDER BY rank DESC, p.is_featured DESC NULLS LAST, p.created_at DESC
   LIMIT p_limit OFFSET p_offset;

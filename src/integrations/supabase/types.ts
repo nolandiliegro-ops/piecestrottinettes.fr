@@ -1529,6 +1529,30 @@ export type Database = {
         }
         Returns: boolean
       }
+      search_parts_fuzzy: {
+        Args: {
+          q: string
+          p_scooter_id?: string | null
+          p_category_ids?: string[] | null
+          p_limit?: number
+          p_offset?: number
+        }
+        Returns: {
+          id: string
+          name: string
+          slug: string
+          price: number | null
+          image_url: string | null
+          images: Json
+          stock_quantity: number | null
+          is_featured: boolean | null
+          created_at: string
+          category_id: string | null
+          category: Json
+          rank: number
+          match_type: string
+        }[]
+      }
       search_scooter_fuzzy: {
         Args: { search_query: string }
         Returns: {
