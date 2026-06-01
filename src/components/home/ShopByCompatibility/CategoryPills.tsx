@@ -71,21 +71,30 @@ const CategoryTile = ({
       onClick={onClick}
       whileTap={{ scale: 0.92 }}
       transition={{ type: "spring", stiffness: 420, damping: 24 }}
-      className="relative flex-shrink-0 flex flex-col items-center text-center"
+      className="relative flex-shrink-0 flex flex-col items-center text-center overflow-hidden"
       style={{
         scrollSnapAlign: "start",
         width: 96,
         minHeight: 116,
         padding: "10px 8px 8px",
         borderRadius: 14,
-        backgroundColor: active ? hexToRgba(accent, 0.18) : "rgba(255,255,255,0.06)",
+        // Variante D : fond très légèrement teinté (8%), bordure discrète.
+        backgroundColor: active ? hexToRgba(accent, 0.08) : "rgba(255,255,255,0.06)",
         border: active
-          ? `2px solid ${accent}`
+          ? `1px solid ${hexToRgba(accent, 0.5)}`
           : "1px solid rgba(255,255,255,0.12)",
-        boxShadow: active ? `0 4px 16px ${hexToRgba(accent, 0.35)}` : "none",
-        transition: "background-color 180ms ease-out, border-color 180ms ease-out, box-shadow 180ms ease-out",
+        boxShadow: "none",
+        transition: "background-color 180ms ease-out, border-color 180ms ease-out",
       }}
     >
+      {/* Variante D : barre de couleur pleine en haut */}
+      {active && (
+        <span
+          aria-hidden
+          style={{ position: "absolute", top: 0, left: 0, right: 0, height: 5, backgroundColor: accent }}
+        />
+      )}
+
       {/* Check état sélectionné */}
       {active && (
         <span
