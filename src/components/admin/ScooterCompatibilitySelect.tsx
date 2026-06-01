@@ -27,6 +27,7 @@ interface ScooterCompatibilitySelectProps {
   selectedIds: string[];
   onChange: (ids: string[]) => void;
   disabled?: boolean;
+  readOnly?: boolean;
 }
 
 const ScooterCompatibilitySelect = ({
@@ -34,6 +35,7 @@ const ScooterCompatibilitySelect = ({
   selectedIds,
   onChange,
   disabled = false,
+  readOnly = false,
 }: ScooterCompatibilitySelectProps) => {
   const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(true);
