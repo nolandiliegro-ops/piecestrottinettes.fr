@@ -247,7 +247,7 @@ const ScooterCompatibilitySelect = ({
                         }
                       }}
                       onCheckedChange={() => toggleBrand(brand)}
-                      disabled={disabled}
+                      disabled={disabled || readOnly}
                       className="data-[state=checked]:bg-mineral data-[state=checked]:border-mineral"
                     />
                     <CollapsibleTrigger asChild>
