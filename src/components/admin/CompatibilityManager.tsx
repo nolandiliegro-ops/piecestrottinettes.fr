@@ -48,6 +48,7 @@ const CompatibilityManager = () => {
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<FilterKey>('all');
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
 
   const invalidateCompatQueries = () => {
     queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
