@@ -804,6 +804,7 @@ const PartsManager = () => {
           partId={isEdit ? editPart?.id : undefined}
           selectedIds={values.compatibleScooterIds}
           onChange={(ids) => setValues({ ...values, compatibleScooterIds: ids })}
+          readOnly
         />
       </TabsContent>
 
