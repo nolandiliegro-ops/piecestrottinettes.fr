@@ -16,7 +16,9 @@ interface CategoryCard {
   icon: string | null;
   parts_count: number;
   image_url: string | null;
-  subtitle: string | null;
+  // accent_label + neon_color : colonnes categories (Palier 0). alt_text/seo_name restent sur category_images.
+  accent_label: string | null;
+  neon_color: string | null;
   alt_text: string | null;
   seo_name: string | null;
 }
@@ -121,19 +123,19 @@ const CategoryDesignManager = () => {
     queryFn: async (): Promise<CategoryCard[]> => {
       const { data: cats, error: catsError } = await supabase
         .from('categories')
-        .select(`id, name, slug, icon, parts:parts(count)`)
+        .select(`id, name, slug, icon, accent_label, neon_color, parts:parts(count)`)
         .is('parent_id', null)
         .order('display_order');
       if (catsError) throw catsError;
 
       const { data: images, error: imgError } = await supabase
         .from('category_images')
-        .select('category_id, image_url, subtitle, alt_text, seo_name');
+        .select('category_id, image_url, alt_text, seo_name');
       if (imgError) throw imgError;
 
-      const imageMap: Record<string, { url: string; subtitle: string | null; alt_text: string | null; seo_name: string | null }> = {};
+      const imageMap: Record<string, { url: string; alt_text: string | null; seo_name: string | null }> = {};
       images?.forEach((img: any) => {
-        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, subtitle: img.subtitle, alt_text: img.alt_text, seo_name: img.seo_name };
+        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, alt_text: img.alt_text, seo_name: img.seo_name };
       });
 
       return (cats || []).map((cat: any) => ({
@@ -143,7 +145,8 @@ const CategoryDesignManager = () => {
         icon: cat.icon,
         parts_count: cat.parts?.[0]?.count || 0,
         image_url: imageMap[cat.id]?.url || null,
-        subtitle: imageMap[cat.id]?.subtitle || null,
+        accent_label: cat.accent_label || null,
+        neon_color: cat.neon_color || null,
         alt_text: imageMap[cat.id]?.alt_text || null,
         seo_name: imageMap[cat.id]?.seo_name || null,
       }));
@@ -197,10 +200,12 @@ const CategoryDesignManager = () => {
 
   const saveField = async (categoryId: string, field: 'subtitle' | 'alt_text' | 'seo_name', value: string) => {
     try {
-      const { error } = await supabase
-        .from('category_images')
-        .update({ [field]: value })
-        .eq('category_id', categoryId);
+      // Palier 0 : le sous-titre (label PERFORMANCE/RACING…) vit désormais sur
+      // categories.accent_label. alt_text/seo_name restent sur category_images.
+      const { error } =
+        field === 'subtitle'
+          ? await supabase.from('categories').update({ accent_label: value }).eq('id', categoryId)
+          : await supabase.from('category_images').update({ [field]: value }).eq('category_id', categoryId);
       if (error) throw error;
       queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
       queryClient.invalidateQueries({ queryKey: ['category-images'] });
@@ -226,9 +231,11 @@ const CategoryDesignManager = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {categories?.map((cat) => {
           const isUploading = uploadingId === cat.id;
-          const neon = neonColors[cat.slug] || '#93B5A1';
+          // Palier 0 : néon + label proviennent de categories (neon_color / accent_label),
+          // fallback legacy par slug uniquement si la colonne BDD est encore NULL.
+          const neon = cat.neon_color || neonColors[cat.slug] || '#93B5A1';
           const defaultLabel = racingLabels[cat.slug] || 'PREMIUM';
-          const displaySubtitle = subtitleEdits[cat.id] ?? cat.subtitle ?? defaultLabel;
+          const displaySubtitle = subtitleEdits[cat.id] ?? cat.accent_label ?? defaultLabel;
 
           return (
             <div
@@ -317,7 +324,7 @@ const CategoryDesignManager = () => {
                 {/* Subtitle input */}
                 <FieldRow
                   placeholder={defaultLabel}
-                  value={subtitleEdits[cat.id] ?? cat.subtitle ?? ''}
+                  value={subtitleEdits[cat.id] ?? cat.accent_label ?? ''}
                   onChange={(v) => setSubtitleEdits(prev => ({ ...prev, [cat.id]: v }))}
                   dirty={subtitleEdits[cat.id] !== undefined}
                   onSave={() => saveField(cat.id, 'subtitle', subtitleEdits[cat.id]!)}

@@ -1,17 +1,9 @@
 import { motion } from "framer-motion";
-import { 
-  LayoutGrid, 
-  Disc, 
-  CircleDot, 
-  Octagon, 
-  Plug, 
-  Battery, 
-  Backpack,
-  LucideIcon
-} from "lucide-react";
+import { LayoutGrid } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useCategoryImages } from "@/hooks/useCategoryImages";
+import { resolveCategoryIcon } from "@/lib/categoryIcons";
 
 interface Category {
   id: string;
@@ -19,6 +11,8 @@ interface Category {
   icon: string | null;
   slug: string;
   parent_id?: string | null;
+  // Nom du composant Lucide en BDD (Palier 0) ; fallback legacy par slug géré par le resolver.
+  lucide_icon?: string | null;
 }
 
 interface CategoryBentoGridProps {
@@ -27,16 +21,6 @@ interface CategoryBentoGridProps {
   onCategoryChange: (categoryId: string | null) => void;
   isLoading?: boolean;
 }
-
-// Mapping slug -> Lucide icon
-const iconMap: Record<string, LucideIcon> = {
-  pneus: Disc,
-  "chambres-air": CircleDot,
-  "disques-plaquettes": Octagon,
-  chargeurs: Plug,
-  batteries: Battery,
-  accessoires: Backpack,
-};
 
 const CategoryBentoGrid = ({
   categories,
@@ -106,7 +90,7 @@ const CategoryBentoGrid = ({
 
       {/* Category buttons */}
       {categories.map((category) => {
-        const IconComponent = iconMap[category.slug] || LayoutGrid;
+        const IconComponent = resolveCategoryIcon(category.lucide_icon, category.slug);
         const isActive = activeCategory === category.id;
         const catImgData = categoryImages[category.id];
         const categoryImage = typeof catImgData === 'string' ? catImgData : catImgData?.image_url;

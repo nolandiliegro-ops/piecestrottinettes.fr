@@ -1,3 +1,9 @@
+/**
+ * @deprecated Composant non monté (code mort) — aucun import en prod.
+ * Les maps neonColors/racingLabels/iconMap par slug sont conservées ici à titre
+ * historique uniquement. Source de vérité = colonnes categories.neon_color /
+ * accent_label / lucide_icon (Palier 0). À supprimer lors d'un cleanup dédié.
+ */
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

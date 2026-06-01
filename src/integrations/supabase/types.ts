@@ -228,43 +228,52 @@ export type Database = {
       }
       categories: {
         Row: {
+          accent_label: string | null
           color: string | null
           created_at: string
           display_order: number | null
           icon: string | null
           id: string
           image_url: string | null
+          lucide_icon: string | null
           meta_description: string | null
           meta_title: string | null
           name: string
+          neon_color: string | null
           parent_id: string | null
           product_count: number | null
           slug: string
         }
         Insert: {
+          accent_label?: string | null
           color?: string | null
           created_at?: string
           display_order?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
+          lucide_icon?: string | null
           meta_description?: string | null
           meta_title?: string | null
           name: string
+          neon_color?: string | null
           parent_id?: string | null
           product_count?: number | null
           slug: string
         }
         Update: {
+          accent_label?: string | null
           color?: string | null
           created_at?: string
           display_order?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
+          lucide_icon?: string | null
           meta_description?: string | null
           meta_title?: string | null
           name?: string
+          neon_color?: string | null
           parent_id?: string | null
           product_count?: number | null
           slug?: string

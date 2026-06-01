@@ -185,6 +185,7 @@ const CategoriesManager = () => {
 
   const [newCategory, setNewCategory] = useState({
     name: '',
+    slug: '',
     icon: '',
     display_order: '',
     parent_id: '',
@@ -197,6 +198,7 @@ const CategoriesManager = () => {
   const [editCategory, setEditCategory] = useState<Category | null>(null);
   const [editValues, setEditValues] = useState({
     name: '',
+    slug: '',
     icon: '',
     display_order: '',
     parent_id: '',
@@ -254,9 +256,15 @@ const CategoriesManager = () => {
       return;
     }
 
+    // Slug généré UNE FOIS à la création : champ slug explicite si fourni, sinon dérivé du nom.
+    const slug = slugify(newCategory.slug.trim() || newCategory.name);
+    if (categories.some(c => c.slug === slug)) {
+      toast.error(`Le slug "${slug}" existe déjà`);
+      return;
+    }
+
     setCreating(true);
     try {
-      const slug = slugify(newCategory.name);
       const { data, error } = await supabase
         .from('categories')
         .insert({
@@ -276,7 +284,7 @@ const CategoriesManager = () => {
       if (error) throw error;
 
       setCategories(prev => [...prev, data].sort((a, b) => (a.display_order || 0) - (b.display_order || 0)));
-      setNewCategory({ name: '', icon: '', display_order: '', parent_id: '', meta_title: '', meta_description: '', color: '', image_url: '' });
+      setNewCategory({ name: '', slug: '', icon: '', display_order: '', parent_id: '', meta_title: '', meta_description: '', color: '', image_url: '' });
       setIsCreateOpen(false);
       toast.success('Catégorie créée');
     } catch (error) {
@@ -291,6 +299,7 @@ const CategoriesManager = () => {
     setEditCategory(category);
     setEditValues({
       name: category.name,
+      slug: category.slug,
       icon: category.icon || '',
       display_order: category.display_order?.toString() || '',
       parent_id: category.parent_id || '',
@@ -305,9 +314,16 @@ const CategoriesManager = () => {
   const saveEdit = async () => {
     if (!editCategory) return;
 
+    // Slug STABLE au rename : on conserve le slug existant sauf si l'admin édite
+    // explicitement le champ slug. Jamais re-dérivé du nom (sinon casse les deep-links).
+    const slug = editValues.slug.trim() ? slugify(editValues.slug) : editCategory.slug;
+    if (slug !== editCategory.slug && categories.some(c => c.slug === slug && c.id !== editCategory.id)) {
+      toast.error(`Le slug "${slug}" existe déjà`);
+      return;
+    }
+
     setSaving(true);
     try {
-      const slug = slugify(editValues.name);
       const { error } = await supabase
         .from('categories')
         .update({
@@ -610,6 +626,16 @@ const CategoriesManager = () => {
       </TabsContent>
 
       <TabsContent value="seo" className="space-y-4">
+        <div className="space-y-2">
+          <Label>Slug (URL)</Label>
+          <Input
+            value={values.slug}
+            onChange={(e) => setValues({ ...values, slug: e.target.value })}
+            placeholder={values.name ? slugify(values.name) : 'ex: pneus'}
+          />
+          {values.slug && <p className="text-xs text-muted-foreground">Sera enregistré : {slugify(values.slug)}</p>}
+          <p className="text-xs text-amber-600">⚠️ Modifier le slug casse les liens existants vers cette catégorie (deep-links, partages).</p>
+        </div>
         <div className="space-y-2">
           <Label>Meta Title</Label>
           <Input value={values.meta_title} onChange={(e) => setValues({ ...values, meta_title: e.target.value })} placeholder="Titre SEO" maxLength={60} />

@@ -103,6 +103,12 @@ export interface Category {
   icon: string | null;
   display_order: number | null;
   parent_id: string | null;
+  // Attributs visuels découplés du slug (Palier 0). Optionnels : seul useCategories
+  // les sélectionne ; null pour les catégories non encore backfillées.
+  color?: string | null;
+  neon_color?: string | null;
+  accent_label?: string | null;
+  lucide_icon?: string | null;
 }
 
 // Hook pour récupérer les catégories
@@ -112,7 +118,7 @@ export const useCategories = () => {
     queryFn: async (): Promise<Category[]> => {
       const { data, error } = await supabase
         .from("categories")
-        .select("id, name, slug, icon, display_order, parent_id")
+        .select("id, name, slug, icon, display_order, parent_id, color, neon_color, accent_label, lucide_icon")
         .order("display_order");
       
       if (error) throw error;
