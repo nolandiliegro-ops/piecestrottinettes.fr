@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -30,6 +31,7 @@ interface CompatMeta {
 }
 
 const CompatibilityManager = () => {
+  const queryClient = useQueryClient();
   const [scooters, setScooters] = useState<Scooter[]>([]);
   const [parts, setParts] = useState<Part[]>([]);
   // Map "partId_scooterId" → meta
@@ -40,6 +42,14 @@ const CompatibilityManager = () => {
   const [retriggering, setRetriggering] = useState<string | null>(null);
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+
+  const invalidateCompatQueries = () => {
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts-rich'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts-count'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-scooters'] });
+    queryClient.invalidateQueries({ queryKey: ['related-parts'] });
+  };
 
   useEffect(() => { fetchData(); }, []);
 
@@ -84,6 +94,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.set(key, { auto: false, confidence: 'validated', reason: null });
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Compatibilité ajoutée');
       } else if (meta.auto) {
         const { error } = await supabase
@@ -94,6 +105,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.set(key, { auto: false, confidence: 'validated', reason: meta.reason });
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Suggestion validée');
       } else {
         const { error } = await supabase
@@ -103,6 +115,7 @@ const CompatibilityManager = () => {
         const next = new Map(metaByKey);
         next.delete(key);
         setMetaByKey(next);
+        invalidateCompatQueries();
         toast.success('Compatibilité supprimée');
       }
     } catch (error) {
@@ -123,6 +136,7 @@ const CompatibilityManager = () => {
       const next = new Map(metaByKey);
       next.delete(`${partId}_${scooterId}`);
       setMetaByKey(next);
+      invalidateCompatQueries();
       toast.success('Suggestion rejetée');
     } catch (error) {
       console.error(error); toast.error('Erreur');
@@ -140,6 +154,7 @@ const CompatibilityManager = () => {
       const { error } = await q;
       if (error) throw error;
       await fetchData();
+      invalidateCompatQueries();
       toast.success(`Validées (${level})`);
     } catch (e) { console.error(e); toast.error('Erreur validation batch'); }
     finally { setBulkSaving(false); }
@@ -153,6 +168,7 @@ const CompatibilityManager = () => {
         .eq('scooter_model_id', selectedScooter).eq('auto_suggested', true);
       if (error) throw error;
       await fetchData();
+      invalidateCompatQueries();
       toast.success('Toutes les suggestions rejetées');
     } catch (e) { console.error(e); toast.error('Erreur rejet'); }
     finally { setBulkSaving(false); }
@@ -172,6 +188,7 @@ const CompatibilityManager = () => {
         toast.success('Re-trigger terminé');
       }
       await fetchData();
+      invalidateCompatQueries();
     } catch (e) {
       console.error(e); toast.error('Erreur re-trigger IA');
     } finally { setRetriggering(null); }

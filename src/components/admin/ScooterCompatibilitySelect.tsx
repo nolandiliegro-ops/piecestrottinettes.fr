@@ -4,7 +4,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Badge } from '@/components/ui/badge';
-import { Loader2, Bike, ChevronDown, ChevronRight } from 'lucide-react';
+import { Loader2, Bike, ChevronDown, ChevronRight, Info } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
@@ -27,6 +27,7 @@ interface ScooterCompatibilitySelectProps {
   selectedIds: string[];
   onChange: (ids: string[]) => void;
   disabled?: boolean;
+  readOnly?: boolean;
 }
 
 const ScooterCompatibilitySelect = ({
@@ -34,6 +35,7 @@ const ScooterCompatibilitySelect = ({
   selectedIds,
   onChange,
   disabled = false,
+  readOnly = false,
 }: ScooterCompatibilitySelectProps) => {
   const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(true);
@@ -132,7 +134,7 @@ const ScooterCompatibilitySelect = ({
   }, [partId]);
 
   const toggleScooter = (scooterId: string) => {
-    if (disabled) return;
+    if (disabled || readOnly) return;
     
     const newIds = selectedIds.includes(scooterId)
       ? selectedIds.filter(id => id !== scooterId)
@@ -142,7 +144,7 @@ const ScooterCompatibilitySelect = ({
   };
 
   const toggleBrand = (brand: Brand) => {
-    if (disabled) return;
+    if (disabled || readOnly) return;
     
     const brandScooterIds = brand.scooters.map(s => s.id);
     const allSelected = brandScooterIds.every(id => selectedIds.includes(id));
@@ -184,6 +186,19 @@ const ScooterCompatibilitySelect = ({
 
   return (
     <div className="space-y-3">
+      {readOnly && (
+        <div
+          className="flex items-start gap-3 px-4 py-3 rounded-lg border bg-[#4A7C59]/8 border-[#4A7C59]/20"
+          role="note"
+        >
+          <Info className="w-4 h-4 mt-0.5 shrink-0 text-[#4A7C59]" />
+          <p className="text-xs leading-relaxed text-[#4A7C59]">
+            <span className="font-semibold">Lecture seule</span> — La compatibilité se gère depuis l'onglet
+            <span className="font-semibold"> Compat.</span> de l'admin (édition par modèle).
+          </p>
+        </div>
+      )}
+
       {/* Header with count */}
       <div className="flex items-center justify-between px-1">
         <Label className="text-sm font-medium flex items-center gap-2">
@@ -200,6 +215,7 @@ const ScooterCompatibilitySelect = ({
           {selectedIds.length} sélectionné{selectedIds.length > 1 ? 's' : ''}
         </Badge>
       </div>
+
 
       {/* Scrollable list */}
       <ScrollArea className="h-[280px] rounded-lg border border-border bg-background/50">
@@ -231,7 +247,7 @@ const ScooterCompatibilitySelect = ({
                         }
                       }}
                       onCheckedChange={() => toggleBrand(brand)}
-                      disabled={disabled}
+                      disabled={disabled || readOnly}
                       className="data-[state=checked]:bg-mineral data-[state=checked]:border-mineral"
                     />
                     <CollapsibleTrigger asChild>
@@ -264,14 +280,17 @@ const ScooterCompatibilitySelect = ({
                             key={scooter.id}
                             onClick={() => toggleScooter(scooter.id)}
                             className={cn(
-                              "flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-all",
-                              "hover:bg-muted/50",
-                              isSelected && "bg-mineral/10 hover:bg-mineral/15"
+                              "flex items-center gap-3 px-3 py-2 rounded-md transition-all",
+                              readOnly
+                                ? "cursor-default opacity-90"
+                                : "cursor-pointer hover:bg-muted/50",
+                              isSelected && !readOnly && "bg-mineral/10 hover:bg-mineral/15",
+                              isSelected && readOnly && "bg-mineral/10"
                             )}
                           >
                             <Checkbox
                               checked={isSelected}
-                              disabled={disabled}
+                              disabled={disabled || readOnly}
                               className="data-[state=checked]:bg-mineral data-[state=checked]:border-mineral"
                             />
                             {scooter.imageUrl ? (
@@ -304,7 +323,9 @@ const ScooterCompatibilitySelect = ({
       </ScrollArea>
 
       <p className="text-xs text-muted-foreground px-1">
-        Cliquez sur une marque pour sélectionner tous ses modèles.
+        {readOnly
+          ? "Modification désactivée dans cette modale."
+          : "Cliquez sur une marque pour sélectionner tous ses modèles."}
       </p>
     </div>
   );
