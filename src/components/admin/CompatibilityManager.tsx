@@ -64,7 +64,7 @@ const CompatibilityManager = () => {
     try {
       const [scootersRes, partsRes, compatRes] = await Promise.all([
         supabase.from('scooter_models').select('id, name, slug, brand:brands(name)').order('name'),
-        supabase.from('parts').select('id, name, category:categories(name)').order('name'),
+        supabase.from('parts').select('id, name, image_url, images, category:categories(name)').order('name'),
         supabase.from('part_compatibility').select('part_id, scooter_model_id, auto_suggested, confidence_level, suggestion_reason'),
       ]);
       if (scootersRes.error) throw scootersRes.error;
