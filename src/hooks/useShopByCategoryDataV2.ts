@@ -9,6 +9,8 @@ export interface CategoryMetaV2 {
   slug: string;
   icon: string | null;
   display_order: number | null;
+  color: string | null;
+  image_url: string | null;
 }
 
 export interface CategoryGroupV2 {
@@ -18,6 +20,8 @@ export interface CategoryGroupV2 {
   slugs: string[];     // ALL slugs in the dedup group (used for filtering parts)
   icon: string | null;
   display_order: number | null;
+  color: string | null;       // accent hex from DB (fallback géré côté UI)
+  image_url: string | null;   // illustration de la catégorie (bucket category-images)
   count: number;       // SUM across group, on the currently-scoped pool
 }
 
@@ -42,7 +46,7 @@ const useAllParentCategories = () =>
     queryFn: async () => {
       const { data, error } = await supabase
         .from("categories")
-        .select("id, name, slug, icon, display_order")
+        .select("id, name, slug, icon, display_order, color, image_url")
         .is("parent_id", null)
         .order("display_order", { ascending: true, nullsFirst: false })
         .order("name", { ascending: true });
@@ -53,6 +57,8 @@ const useAllParentCategories = () =>
         slug: c.slug,
         icon: c.icon,
         display_order: c.display_order,
+        color: c.color,
+        image_url: c.image_url,
       }));
     },
     staleTime: 5 * 60 * 1000,
@@ -150,6 +156,8 @@ const buildGroups = (
       slugs: list.map((c) => c.slug),
       icon: rep.icon,
       display_order: rep.display_order,
+      color: rep.color,
+      image_url: rep.image_url,
       count: summedCount,
     });
   }

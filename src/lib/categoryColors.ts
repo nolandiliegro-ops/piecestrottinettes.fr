@@ -33,6 +33,18 @@ export const getCategoryColor = (slug: string | null | undefined): CategoryColor
 };
 
 /**
+ * Couleur d'accent d'une catégorie : privilégie la valeur BDD (categories.color),
+ * sinon retombe sur le mapping hardcodé par slug.
+ */
+export const resolveCategoryColor = (
+  dbColor: string | null | undefined,
+  slug: string | null | undefined
+): string => {
+  const trimmed = dbColor?.trim();
+  return trimmed ? trimmed : getCategoryColor(slug).color;
+};
+
+/**
  * Returns the text color to use on a translucent patch background of this color.
  * For too-light hues (yellow), returns a dark variant to keep WCAG-readable contrast.
  */
