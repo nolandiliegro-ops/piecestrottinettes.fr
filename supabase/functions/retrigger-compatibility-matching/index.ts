@@ -223,9 +223,42 @@ Deno.serve(async (req) => {
   }
 
   try {
+    // Client service-role (écritures + check de rôle). Créé avant l'auth car
+    // utilisé par la voie JWT (has_role).
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
+    );
+
+    // Auth double :
+    //  - Voie 1 (script serveur) : header x-admin-secret == ADMIN_BULK_SECRET.
+    //  - Voie 2 (bouton navigateur) : JWT admin valide (has_role(uid,'admin')).
+    // verify_jwt reste false (config.toml) pour que la voie 1 sans JWT passe la gateway.
+    let authorized = false;
     const adminSecret = req.headers.get("x-admin-secret");
     const expectedSecret = Deno.env.get("ADMIN_BULK_SECRET");
-    if (!expectedSecret || adminSecret !== expectedSecret) {
+
+    if (expectedSecret && adminSecret === expectedSecret) {
+      authorized = true;
+    } else {
+      const token = (req.headers.get("Authorization") ?? "").replace(/^Bearer\s+/i, "").trim();
+      if (token) {
+        const authClient = createClient(
+          Deno.env.get("SUPABASE_URL")!,
+          Deno.env.get("SUPABASE_ANON_KEY")!,
+        );
+        const { data: { user }, error: authErr } = await authClient.auth.getUser(token);
+        if (!authErr && user) {
+          const { data: isAdmin } = await supabase.rpc("has_role", {
+            _user_id: user.id,
+            _role: "admin",
+          });
+          if (isAdmin === true) authorized = true;
+        }
+      }
+    }
+
+    if (!authorized) {
       return new Response(
         JSON.stringify({ error: "Unauthorized" }),
         { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } },
@@ -250,11 +283,6 @@ Deno.serve(async (req) => {
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
-
-    const supabase = createClient(
-      Deno.env.get("SUPABASE_URL")!,
-      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
-    );
 
     const { parts, warnings } = await resolveTargets(supabase, body);
     const anthropicKey = Deno.env.get("ANTHROPIC_API_KEY");
