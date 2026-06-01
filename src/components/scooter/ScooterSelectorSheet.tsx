@@ -487,7 +487,7 @@ const SelectorBody = ({
 
             {!isLoading && ownedItems.length > 0 && (
               <>
-                <SectionLabel icon={<Home size={12} strokeWidth={2.4} />} label="Mon écurie" />
+                <SectionLabel icon={<Home size={13} strokeWidth={2.4} />} label="Mon écurie" count={ownedItems.length} accent={THEME.accentSage} />
                 <CardGrid>
                   {ownedItems.map((item) => {
                     const option = optionFromGarage(item);
@@ -514,7 +514,7 @@ const SelectorBody = ({
 
             {!isLoading && favItems.length > 0 && (
               <>
-                <SectionLabel icon={<Heart size={12} strokeWidth={2.4} />} label="Mes favoris" />
+                <SectionLabel icon={<Heart size={13} strokeWidth={2.4} />} label="Mes favoris" count={favItems.length} accent={THEME.accentRed} />
                 <CardGrid>
                   {favItems.map((item) => {
                     const option = optionFromGarage(item);
@@ -541,7 +541,7 @@ const SelectorBody = ({
 
             {!isLoading && !hasScooters && popularItems.length > 0 && (
               <>
-                <SectionLabel icon={<Flame size={12} strokeWidth={2.4} />} label="Les plus populaires" />
+                <SectionLabel icon={<Flame size={13} strokeWidth={2.4} />} label="Les plus populaires" count={popularItems.length} accent="#F59E0B" />
                 <CardGrid>
                   {popularItems.map((option) => (
                     <ScooterCard
@@ -565,7 +565,7 @@ const SelectorBody = ({
 
             {!isLoading && allItems.length > 0 && (
               <>
-                <SectionLabel icon={<Bike size={12} strokeWidth={2.4} />} label="Toutes les trottinettes" />
+                <SectionLabel icon={<Bike size={13} strokeWidth={2.4} />} label="Toutes les trottinettes" count={allItems.length} accent={THEME.carbon} />
                 <CardGrid>
                   {allItems.map((option) => {
                     const g = garageById.get(option.id);
@@ -684,20 +684,52 @@ const EmptyHint = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const SectionLabel = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
-  <div
-    className="flex items-center gap-1.5 mt-1 mb-2"
-    style={{
-      fontFamily: "'Inter', sans-serif",
-      fontSize: 10,
-      fontWeight: 600,
-      textTransform: "uppercase",
-      letterSpacing: "0.06em",
-      color: THEME.textSecondary,
-    }}
-  >
-    <span style={{ color: THEME.textSecondary, display: "inline-flex" }}>{icon}</span>
-    {label}
+const SectionLabel = ({
+  icon,
+  label,
+  count,
+  accent,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  count: number;
+  accent: string;
+}) => (
+  <div className="flex items-center gap-2 mt-2 mb-2.5">
+    <span
+      className="flex items-center justify-center flex-shrink-0"
+      style={{
+        width: 24,
+        height: 24,
+        borderRadius: 999,
+        backgroundColor: hexToRgba(accent, 0.15),
+        color: accent,
+      }}
+    >
+      {icon}
+    </span>
+    <span
+      style={{
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 13,
+        fontWeight: 700,
+        color: THEME.carbon,
+        lineHeight: 1,
+      }}
+    >
+      {label}
+    </span>
+    <span
+      className="ml-auto"
+      style={{
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 11,
+        fontWeight: 500,
+        color: THEME.textSecondary,
+      }}
+    >
+      {count} trottinette{count > 1 ? "s" : ""}
+    </span>
   </div>
 );
 
