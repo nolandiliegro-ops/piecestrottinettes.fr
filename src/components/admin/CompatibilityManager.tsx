@@ -54,6 +54,7 @@ const CompatibilityManager = () => {
   };
 
   useEffect(() => { fetchData(); }, []);
+  useEffect(() => { setFilter('all'); }, [selectedScooter]);
 
   const fetchData = async () => {
     try {
