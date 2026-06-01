@@ -513,6 +513,7 @@ const CompatibilityManager = () => {
                             const meta = metaByKey.get(key);
                             const isCompatible = !!meta;
                             const isAuto = !!meta?.auto;
+                            const primary = getPrimaryImage(part.images, part.image_url, '');
                             return (
                               <div key={part.id}
                                 className={cn('flex items-center gap-3 p-2 rounded-md transition-colors flex-wrap',
@@ -522,6 +523,20 @@ const CompatibilityManager = () => {
                                   onClick={() => !saving && toggleCompatibility(part.id, selectedScooter)}>
                                   <Checkbox checked={isCompatible} disabled={saving}
                                     className="data-[state=checked]:bg-primary data-[state=checked]:border-primary" />
+                                  <button
+                                    type="button"
+                                    onClick={(e) => { e.stopPropagation(); if (primary) setLightboxUrl(primary); }}
+                                    disabled={!primary}
+                                    aria-label={primary ? `Agrandir ${part.name}` : 'Pas de photo'}
+                                    className="h-11 w-11 shrink-0 rounded-lg overflow-hidden border flex items-center justify-center transition disabled:cursor-default"
+                                    style={{ backgroundColor: '#F5F0E8', borderColor: 'rgba(74,124,89,0.15)' }}
+                                  >
+                                    {primary ? (
+                                      <img src={primary} alt={part.name} loading="lazy" className="h-full w-full object-cover" />
+                                    ) : (
+                                      <ImageIcon className="h-5 w-5" style={{ color: '#6B7280' }} />
+                                    )}
+                                  </button>
                                   <span className={cn('text-sm truncate', isCompatible ? 'text-foreground font-medium' : 'text-muted-foreground')}>
                                     {part.name}
                                   </span>
