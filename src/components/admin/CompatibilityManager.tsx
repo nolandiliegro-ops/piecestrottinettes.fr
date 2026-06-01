@@ -185,8 +185,10 @@ const CompatibilityManager = () => {
   const retriggerForPart = async (partId: string) => {
     setRetriggering(partId);
     try {
+      const { data: { session } } = await supabase.auth.getSession();
       const { data, error } = await supabase.functions.invoke('retrigger-compatibility-matching', {
         body: { part_ids: [partId] },
+        headers: session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : undefined,
       });
       if (error) throw error;
       const r = data?.results?.[0];

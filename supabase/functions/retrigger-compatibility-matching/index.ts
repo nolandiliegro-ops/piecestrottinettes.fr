@@ -23,6 +23,11 @@ import {
   extractHintsFromTechnicalMetadata,
 } from "../_shared/ai_matcher.ts";
 
+// Témoin de build : renvoyé dans CHAQUE réponse (succès + erreur) pour prouver
+// quelle version de la fonction tourne réellement après un redeploy.
+// Instrumentation de diagnostic — ne pas confondre avec une feature.
+const BUILD_TAG = "dual-auth-v2";
+
 interface PartTarget {
   id: string;
   name: string;
@@ -237,22 +242,32 @@ Deno.serve(async (req) => {
     let authorized = false;
     const adminSecret = req.headers.get("x-admin-secret");
     const expectedSecret = Deno.env.get("ADMIN_BULK_SECRET");
+    const authHeader = req.headers.get("Authorization");
+
+    // Diagnostic d'auth : UNIQUEMENT des booléens. Aucune valeur de
+    // secret/token n'est jamais stockée, loggée ni renvoyée.
+    const authDebug = {
+      hasAdminSecret: typeof adminSecret === "string" && adminSecret.length > 0,
+      hasAuthHeader: typeof authHeader === "string" && authHeader.length > 0,
+      tokenPresent: false,
+      getUserOk: false,
+      isAdmin: false,
+    };
 
     if (expectedSecret && adminSecret === expectedSecret) {
       authorized = true;
     } else {
-      const token = (req.headers.get("Authorization") ?? "").replace(/^Bearer\s+/i, "").trim();
+      const token = (authHeader ?? "").replace(/^Bearer\s+/i, "").trim();
+      authDebug.tokenPresent = token.length > 0;
       if (token) {
-        const authClient = createClient(
-          Deno.env.get("SUPABASE_URL")!,
-          Deno.env.get("SUPABASE_ANON_KEY")!,
-        );
-        const { data: { user }, error: authErr } = await authClient.auth.getUser(token);
+        const { data: { user }, error: authErr } = await supabase.auth.getUser(token);
         if (!authErr && user) {
+          authDebug.getUserOk = true;
           const { data: isAdmin } = await supabase.rpc("has_role", {
             _user_id: user.id,
             _role: "admin",
           });
+          authDebug.isAdmin = isAdmin === true;
           if (isAdmin === true) authorized = true;
         }
       }
@@ -260,7 +275,7 @@ Deno.serve(async (req) => {
 
     if (!authorized) {
       return new Response(
-        JSON.stringify({ error: "Unauthorized" }),
+        JSON.stringify({ error: "Unauthorized", build_tag: BUILD_TAG, auth_debug: authDebug }),
         { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
@@ -270,7 +285,7 @@ Deno.serve(async (req) => {
       body = await req.json();
     } catch {
       return new Response(
-        JSON.stringify({ error: "Invalid JSON body" }),
+        JSON.stringify({ error: "Invalid JSON body", build_tag: BUILD_TAG }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
@@ -279,7 +294,7 @@ Deno.serve(async (req) => {
     const hasSkus = Array.isArray(body.skus) && body.skus.length > 0;
     if (!hasIds && !hasSkus && body.all_unmatched !== true) {
       return new Response(
-        JSON.stringify({ error: "part_ids, skus or all_unmatched=true required" }),
+        JSON.stringify({ error: "part_ids, skus or all_unmatched=true required", build_tag: BUILD_TAG }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
@@ -315,6 +330,7 @@ Deno.serve(async (req) => {
     return new Response(
       JSON.stringify({
         success: true,
+        build_tag: BUILD_TAG,
         total_pieces_processed: results.length,
         processed: results.length,
         remaining: 0,
@@ -328,7 +344,7 @@ Deno.serve(async (req) => {
   } catch (err) {
     console.error("[retrigger-compat] Internal error:", err);
     return new Response(
-      JSON.stringify({ error: "Internal error", detail: String(err) }),
+      JSON.stringify({ error: "Internal error", build_tag: BUILD_TAG, detail: String(err) }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
     );
   }
