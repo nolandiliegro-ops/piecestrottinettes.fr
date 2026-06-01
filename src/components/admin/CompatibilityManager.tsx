@@ -71,7 +71,7 @@ const CompatibilityManager = () => {
       if (partsRes.error) throw partsRes.error;
       if (compatRes.error) throw compatRes.error;
       setScooters(scootersRes.data || []);
-      setParts(partsRes.data || []);
+      setParts(((partsRes.data || []) as unknown[]).map((p) => p as Part));
       const map = new Map<string, CompatMeta>();
       (compatRes.data || []).forEach((c: { part_id: string; scooter_model_id: string; auto_suggested: boolean; confidence_level: string; suggestion_reason: string | null }) => {
         const key = `${c.part_id}_${c.scooter_model_id}`;
