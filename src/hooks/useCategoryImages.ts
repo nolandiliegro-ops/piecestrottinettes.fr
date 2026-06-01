@@ -1,15 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-interface CategoryImage {
+// Palier 1 : categories est la SOURCE CANONIQUE de l'image + métadonnées visuelles.
+// Ce hook lit désormais categories (image_url / alt_text / accent_label) au lieu de
+// category_images (table conservée orpheline, drop au Palier 2). La forme de sortie
+// est inchangée (Record<categoryId, CategoryImageData>) pour ne pas casser les lecteurs.
+interface CategoryRow {
   id: string;
-  category_id: string;
-  image_url: string;
-  prompt: string | null;
-  subtitle: string | null;
+  image_url: string | null;
   alt_text: string | null;
-  seo_name: string | null;
-  created_at: string;
+  accent_label: string | null;
 }
 
 export interface CategoryImageData {
@@ -23,8 +23,8 @@ export const useCategoryImages = () => {
     queryKey: ["category-images"],
     queryFn: async () => {
       const { data, error } = await supabase
-        .from("category_images")
-        .select("*");
+        .from("categories")
+        .select("id, image_url, alt_text, accent_label");
 
       if (error) {
         console.error("Error fetching category images:", error);
@@ -32,12 +32,13 @@ export const useCategoryImages = () => {
       }
 
       const imageMap: Record<string, CategoryImageData> = {};
-      (data as CategoryImage[])?.forEach((img) => {
-        if (img.category_id) {
-          imageMap[img.category_id] = {
-            image_url: img.image_url,
-            subtitle: img.subtitle,
-            alt_text: img.alt_text,
+      (data as CategoryRow[])?.forEach((cat) => {
+        // Pas d'image → on n'indexe pas (les lecteurs gèrent l'état vide via fallback).
+        if (cat.id && cat.image_url) {
+          imageMap[cat.id] = {
+            image_url: cat.image_url,
+            subtitle: cat.accent_label,
+            alt_text: cat.alt_text,
           };
         }
       });

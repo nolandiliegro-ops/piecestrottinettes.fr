@@ -121,22 +121,13 @@ const CategoryDesignManager = () => {
   const { data: categories, isLoading } = useQuery({
     queryKey: ['admin-category-design'],
     queryFn: async (): Promise<CategoryCard[]> => {
+      // Palier 1 : image/alt/seo lus depuis categories (source canonique).
       const { data: cats, error: catsError } = await supabase
         .from('categories')
-        .select(`id, name, slug, icon, accent_label, neon_color, parts:parts(count)`)
+        .select(`id, name, slug, icon, accent_label, neon_color, image_url, alt_text, seo_name, parts:parts(count)`)
         .is('parent_id', null)
         .order('display_order');
       if (catsError) throw catsError;
-
-      const { data: images, error: imgError } = await supabase
-        .from('category_images')
-        .select('category_id, image_url, alt_text, seo_name');
-      if (imgError) throw imgError;
-
-      const imageMap: Record<string, { url: string; alt_text: string | null; seo_name: string | null }> = {};
-      images?.forEach((img: any) => {
-        if (img.category_id) imageMap[img.category_id] = { url: img.image_url, alt_text: img.alt_text, seo_name: img.seo_name };
-      });
 
       return (cats || []).map((cat: any) => ({
         id: cat.id,
@@ -144,11 +135,11 @@ const CategoryDesignManager = () => {
         slug: cat.slug,
         icon: cat.icon,
         parts_count: cat.parts?.[0]?.count || 0,
-        image_url: imageMap[cat.id]?.url || null,
+        image_url: cat.image_url || null,
         accent_label: cat.accent_label || null,
         neon_color: cat.neon_color || null,
-        alt_text: imageMap[cat.id]?.alt_text || null,
-        seo_name: imageMap[cat.id]?.seo_name || null,
+        alt_text: cat.alt_text || null,
+        seo_name: cat.seo_name || null,
       }));
     },
   });
@@ -175,14 +166,9 @@ const CategoryDesignManager = () => {
   };
 
   const upsertCategoryImage = async (categoryId: string, imageUrl: string) => {
-    const { data: existing } = await supabase.from('category_images').select('id').eq('category_id', categoryId).maybeSingle();
-    if (existing) {
-      const { error } = await supabase.from('category_images').update({ image_url: imageUrl }).eq('category_id', categoryId);
-      if (error) throw error;
-    } else {
-      const { error } = await supabase.from('category_images').insert({ category_id: categoryId, image_url: imageUrl });
-      if (error) throw error;
-    }
+    // Palier 1 : l'image est écrite sur categories (source canonique), plus sur category_images.
+    const { error } = await supabase.from('categories').update({ image_url: imageUrl }).eq('id', categoryId);
+    if (error) throw error;
     queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
     queryClient.invalidateQueries({ queryKey: ['category-images'] });
   };
@@ -200,12 +186,10 @@ const CategoryDesignManager = () => {
 
   const saveField = async (categoryId: string, field: 'subtitle' | 'alt_text' | 'seo_name', value: string) => {
     try {
-      // Palier 0 : le sous-titre (label PERFORMANCE/RACING…) vit désormais sur
-      // categories.accent_label. alt_text/seo_name restent sur category_images.
-      const { error } =
-        field === 'subtitle'
-          ? await supabase.from('categories').update({ accent_label: value }).eq('id', categoryId)
-          : await supabase.from('category_images').update({ [field]: value }).eq('category_id', categoryId);
+      // Palier 1 : tous les champs visuels vivent sur categories (source canonique).
+      // 'subtitle' (label PERFORMANCE/RACING…) → accent_label ; alt_text/seo_name → colonnes dédiées.
+      const column = field === 'subtitle' ? 'accent_label' : field;
+      const { error } = await supabase.from('categories').update({ [column]: value }).eq('id', categoryId);
       if (error) throw error;
       queryClient.invalidateQueries({ queryKey: ['admin-category-design'] });
       queryClient.invalidateQueries({ queryKey: ['category-images'] });
