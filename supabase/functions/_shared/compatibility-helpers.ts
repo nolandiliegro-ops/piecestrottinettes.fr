@@ -153,11 +153,15 @@ export async function suggestCompatibilities(
     return { count: 0, scooterIds: new Set() };
   }
 
+  // Confiance proportionnelle aux specs concordantes : les deux (tire ∩ voltage)
+  // → high ; une seule des deux → medium. Plus de "high" systématique.
+  const confidence = tire && voltage != null ? "high" : "medium";
+
   const rows = Array.from(candidateIds).map((scooterId) => ({
     part_id: partId,
     scooter_model_id: scooterId,
     auto_suggested: true,
-    confidence_level: "high",
+    confidence_level: confidence,
     suggestion_reason: null as string | null,
   }));
 
