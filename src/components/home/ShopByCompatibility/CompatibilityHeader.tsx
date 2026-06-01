@@ -1,4 +1,24 @@
-import { Bike, ChevronDown, X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
+
+// Silhouette de trottinette au trait (inline, plus soignée que l'icône lucide générique).
+const ScooterGlyph = ({ size = 22, color = "currentColor" }: { size?: number; color?: string }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth={1.5}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden
+  >
+    <circle cx="4.8" cy="17.6" r="2.3" />
+    <circle cx="19" cy="17.6" r="2.3" />
+    <path d="M7.1 17.6h8.4L17.9 6h-3.4" />
+    <path d="M2.6 17.6h2.2" />
+  </svg>
+);
 
 interface Props {
   mode: "config" | "discovery";
@@ -32,14 +52,6 @@ interface Props {
    */
   modelFocalMode?: boolean;
 }
-
-// Hex → rgba helper for hover bg
-const hexToRgba = (hex: string, alpha: number): string => {
-  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
-  if (!m) return hex;
-  const n = parseInt(m[1], 16);
-  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
-};
 
 const TITLE_FONT_BASE: React.CSSProperties = {
   fontFamily: "'Anton', 'Druk Wide', Impact, sans-serif",
@@ -206,11 +218,15 @@ const ScooterTrigger = ({
       }
       className="group flex-shrink-0 flex items-center gap-2.5 cursor-pointer transition-colors duration-150"
       style={{
-        minHeight: 48,
-        padding: filled ? "6px 8px" : "0 14px",
+        minHeight: 52,
+        padding: filled ? "6px 8px" : "8px 14px",
         borderRadius: 14,
-        backgroundColor: "rgba(255,255,255,0.06)",
-        border: `1px solid ${filled ? hexToRgba(accent, 0.45) : "rgba(255,255,255,0.14)"}`,
+        // Glassmorphism teinté vert sauge (Variante B), identique vide/rempli.
+        backgroundColor: "rgba(74,124,89,0.18)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
+        border: "1px solid rgba(95,163,119,0.4)",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15)",
       }}
     >
       {/* Vignette mini-photo / silhouette */}
@@ -233,7 +249,7 @@ const ScooterTrigger = ({
             style={{ width: 36, height: 36, objectFit: "contain" }}
           />
         ) : (
-          <Bike size={20} strokeWidth={2} style={{ color: "rgba(255,255,255,0.75)" }} aria-hidden />
+          <ScooterGlyph size={22} color="rgba(255,255,255,0.85)" />
         )}
       </div>
 
@@ -270,17 +286,31 @@ const ScooterTrigger = ({
             </span>
           </>
         ) : (
-          <span
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
-              fontWeight: 600,
-              color: "rgba(255,255,255,0.92)",
-              lineHeight: 1.2,
-            }}
-          >
-            Choisis ta trottinette
-          </span>
+          <>
+            <span
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 13,
+                fontWeight: 700,
+                color: "#FFFFFF",
+                lineHeight: 1.2,
+              }}
+            >
+              Choisis ta trottinette
+            </span>
+            <span
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 10.5,
+                fontWeight: 500,
+                color: "rgba(255,255,255,0.65)",
+                lineHeight: 1.2,
+                marginTop: 1,
+              }}
+            >
+              filtre les pièces compatibles
+            </span>
+          </>
         )}
       </div>
 
