@@ -323,7 +323,9 @@ const ScooterCompatibilitySelect = ({
       </ScrollArea>
 
       <p className="text-xs text-muted-foreground px-1">
-        Cliquez sur une marque pour sélectionner tous ses modèles.
+        {readOnly
+          ? "Modification désactivée dans cette modale."
+          : "Cliquez sur une marque pour sélectionner tous ses modèles."}
       </p>
     </div>
   );
