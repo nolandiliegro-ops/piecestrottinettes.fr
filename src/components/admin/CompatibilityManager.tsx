@@ -579,6 +579,13 @@ const CompatibilityManager = () => {
           </div>
         </div>
       </div>
+      <Dialog open={!!lightboxUrl} onOpenChange={(o) => !o && setLightboxUrl(null)}>
+        <DialogContent className="max-w-3xl p-2" style={{ backgroundColor: '#F5F0E8' }}>
+          {lightboxUrl && (
+            <img src={lightboxUrl} alt="" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
+          )}
+        </DialogContent>
+      </Dialog>
     </TooltipProvider>
   );
 };
