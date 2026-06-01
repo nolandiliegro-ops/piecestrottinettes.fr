@@ -280,14 +280,17 @@ const ScooterCompatibilitySelect = ({
                             key={scooter.id}
                             onClick={() => toggleScooter(scooter.id)}
                             className={cn(
-                              "flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-all",
-                              "hover:bg-muted/50",
-                              isSelected && "bg-mineral/10 hover:bg-mineral/15"
+                              "flex items-center gap-3 px-3 py-2 rounded-md transition-all",
+                              readOnly
+                                ? "cursor-default opacity-90"
+                                : "cursor-pointer hover:bg-muted/50",
+                              isSelected && !readOnly && "bg-mineral/10 hover:bg-mineral/15",
+                              isSelected && readOnly && "bg-mineral/10"
                             )}
                           >
                             <Checkbox
                               checked={isSelected}
-                              disabled={disabled}
+                              disabled={disabled || readOnly}
                               className="data-[state=checked]:bg-mineral data-[state=checked]:border-mineral"
                             />
                             {scooter.imageUrl ? (
