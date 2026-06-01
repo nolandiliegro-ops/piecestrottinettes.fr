@@ -231,6 +231,69 @@ const CompatibilityManager = () => {
     return n;
   };
 
+  const matchesFilter = (partId: string): boolean => {
+    if (!selectedScooter) return false;
+    const meta = metaByKey.get(`${partId}_${selectedScooter}`);
+    switch (filter) {
+      case 'all': return true;
+      case 'to_validate': return !!meta && meta.auto;
+      case 'high': return !!meta && meta.auto && meta.confidence === 'high';
+      case 'medium': return !!meta && meta.auto && meta.confidence === 'medium';
+      case 'low': return !!meta && meta.auto && meta.confidence === 'low';
+      case 'validated': return !!meta && !meta.auto;
+      default: return true;
+    }
+  };
+
+  const getVisiblePartIds = (): string[] => {
+    if (!selectedScooter) return [];
+    return parts.filter((p) => {
+      if (filter === 'all') {
+        const meta = metaByKey.get(`${p.id}_${selectedScooter}`);
+        return !!meta && meta.auto;
+      }
+      return matchesFilter(p.id);
+    }).map((p) => p.id);
+  };
+
+  const validateDisplayed = async () => {
+    if (!selectedScooter) return;
+    const ids = getVisiblePartIds();
+    if (ids.length === 0) return;
+    setBulkSaving(true);
+    try {
+      const { error } = await supabase.from('part_compatibility')
+        .update({ auto_suggested: false, confidence_level: 'validated' })
+        .in('part_id', ids)
+        .eq('scooter_model_id', selectedScooter)
+        .eq('auto_suggested', true);
+      if (error) throw error;
+      await fetchData();
+      invalidateCompatQueries();
+      toast.success(`${ids.length} compatibilité(s) validée(s)`);
+    } catch (e) { console.error(e); toast.error('Erreur validation'); }
+    finally { setBulkSaving(false); }
+  };
+
+  const rejectDisplayed = async () => {
+    if (!selectedScooter) return;
+    const ids = getVisiblePartIds();
+    if (ids.length === 0) return;
+    if (!window.confirm(`Rejeter ${ids.length} suggestion(s) ? Cette action est irréversible.`)) return;
+    setBulkSaving(true);
+    try {
+      const { error } = await supabase.from('part_compatibility').delete()
+        .in('part_id', ids)
+        .eq('scooter_model_id', selectedScooter)
+        .eq('auto_suggested', true);
+      if (error) throw error;
+      await fetchData();
+      invalidateCompatQueries();
+      toast.success(`${ids.length} suggestion(s) rejetée(s)`);
+    } catch (e) { console.error(e); toast.error('Erreur rejet'); }
+    finally { setBulkSaving(false); }
+  };
+
   if (loading) {
     return <div className="flex justify-center py-12"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>;
   }
@@ -239,6 +302,32 @@ const CompatibilityManager = () => {
   const sugCount = selectedScooter ? getCountByLevel(selectedScooter, 'auto') : 0;
   const highCount = selectedScooter ? getCountByLevel(selectedScooter, 'high') : 0;
   const medCount = selectedScooter ? getCountByLevel(selectedScooter, 'medium') : 0;
+  const lowCount = selectedScooter ? getCountByLevel(selectedScooter, 'low') : 0;
+  const validatedCount = selectedScooter
+    ? Array.from(metaByKey.entries()).filter(([k, m]) => k.endsWith(`_${selectedScooter}`) && !m.auto).length
+    : 0;
+
+  const visibleIds = selectedScooter ? getVisiblePartIds() : [];
+  const visibleCount = visibleIds.length;
+  const filterLabels: Record<FilterKey, string> = {
+    all: 'Tout',
+    to_validate: 'À valider',
+    high: 'Haute',
+    medium: 'Moyenne',
+    low: 'Basse',
+    validated: 'Validées',
+  };
+  const bulkDisabled = filter === 'all' || filter === 'validated' || visibleCount === 0 || bulkSaving;
+
+  const filterPills: { key: FilterKey; label: string; count: number }[] = [
+    { key: 'all', label: 'Tout', count: parts.length },
+    { key: 'to_validate', label: 'À valider', count: sugCount },
+    { key: 'high', label: 'Haute', count: highCount },
+    { key: 'medium', label: 'Moy', count: medCount },
+    { key: 'low', label: 'Basse', count: lowCount },
+    { key: 'validated', label: 'Validées', count: validatedCount },
+  ];
+
 
   const renderBadge = (meta: CompatMeta) => {
     const cfg: Record<Confidence, { label: string; className: string; icon: JSX.Element }> = {
