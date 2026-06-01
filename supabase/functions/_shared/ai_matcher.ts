@@ -23,6 +23,8 @@ export interface AIPartInput {
   name: string;
   description?: string | null;
   technical_metadata?: Record<string, unknown> | null;
+  /** Catégorie de la pièce (donnée existante) — oriente le raisonnement de l'IA. */
+  category?: string | null;
 }
 
 export interface AIMatchInput {
@@ -114,9 +116,12 @@ export function withTimeout<T>(
 /** Construit le prompt système + utilisateur. */
 export function buildAIPrompt(input: AIMatchInput): { system: string; user: string } {
   const system =
-    "Tu es expert mécanique trottinettes électriques. " +
-    "Tu identifies si une pièce est compatible avec des modèles de trottinettes en fonction de leurs specs. " +
-    "Tu réponds UNIQUEMENT en JSON valide, sans markdown, sans explication hors JSON.";
+    "Tu es un expert mécanique des trottinettes électriques. " +
+    "Ta mission : déterminer si UNE pièce est RÉELLEMENT compatible avec des modèles précis, " +
+    "uniquement sur preuve (specs concordantes ou modèle explicitement nommé). " +
+    "Tu es STRICT et CONSERVATEUR : dans le doute, tu n'inclus PAS le modèle. " +
+    "Mieux vaut omettre une compatibilité que d'en inventer une fausse. " +
+    "Tu réponds UNIQUEMENT en JSON valide, sans markdown ni texte hors JSON.";
 
   const part = input.part;
   const scootersJson = JSON.stringify(
@@ -132,24 +137,29 @@ export function buildAIPrompt(input: AIMatchInput): { system: string; user: stri
   );
 
   const user =
-    `PIÈCE À ANALYSER:\n` +
+    `PIÈCE À ANALYSER\n` +
+    `- Catégorie: ${part.category ?? "inconnue"}\n` +
     `- Nom: ${part.name}\n` +
     `- Description: ${(part.description ?? "").replace(/<[^>]+>/g, "").slice(0, 600)}\n` +
     `- Attributs techniques: ${JSON.stringify(part.technical_metadata ?? {})}\n\n` +
-    `TROTTINETTES DISPONIBLES (${input.scooters.length} modèles):\n` +
+    `SPEC DISCRIMINANTE À VÉRIFIER EN PRIORITÉ (selon la catégorie) :\n` +
+    `- Pneus / Chambres à air : la taille (tire_size) DOIT correspondre exactement. Taille différente = incompatible.\n` +
+    `- Plaquettes / Disques de frein : dépendent du SYSTÈME DE FREINAGE (étrier). Un frein hydraulique haut de gamme (ex. Magura MT) n'est PAS compatible avec un frein à disque mécanique standard. Sans preuve que le modèle utilise ce frein précis (frein/étrier nommé dans la pièce, ou modèle explicitement cité), NE PAS inclure.\n` +
+    `- Chargeurs : le voltage DOIT correspondre exactement ; le connecteur doit correspondre s'il est connu.\n` +
+    `- Autre : exige une concordance de specs explicite.\n\n` +
+    `TROTTINETTES DISPONIBLES (${input.scooters.length}) — specs connues (null = INCONNU : ne suppose rien) :\n` +
     `${scootersJson}\n\n` +
-    `TÂCHE: Identifie pour chaque trottinette si la pièce est compatible. ` +
-    `Renvoie UNIQUEMENT un JSON :\n` +
-    `{\n` +
-    `  "compatibilities": [\n` +
-    `    {"scooter_id": "uuid", "compatible": true, "confidence": "high"|"medium"|"low", "reason": "explication courte"}\n` +
-    `  ]\n` +
-    `}\n\n` +
-    `Règles:\n` +
-    `- high: explicitement mentionné dans le nom OU specs identiques\n` +
-    `- medium: probable selon specs (ex: même tire_size)\n` +
-    `- low: possible mais incertain\n` +
-    `- Ne renvoie que les compatibles (pas les non-compatibles)`;
+    `RÈGLES DE DÉCISION\n` +
+    `1. N'inclure un modèle QUE si tu as une preuve. Aucune preuve → ne pas l'inclure.\n` +
+    `2. Si la spec discriminante du modèle est null/inconnue, tu NE PEUX PAS prouver la compatibilité → ne pas l'inclure en high/medium.\n` +
+    `3. Confiance :\n` +
+    `   - "high" : spec discriminante IDENTIQUE et vérifiée, OU modèle explicitement nommé dans le nom/la description de la pièce.\n` +
+    `   - "medium" : forte présomption (ex. même tire_size pour un pneu) sans confirmation totale.\n` +
+    `   - "low" : indice faible / incertain.\n` +
+    `4. RÉALISME : une trottinette n'a typiquement qu'UN type de plaquette compatible, 1 à 2 tailles de chambre à air, quelques pneus. N'attribue pas "high" à 3 plaquettes différentes pour le même modèle — garde la plus probable.\n` +
+    `5. Ne renvoie QUE les modèles compatibles. N'invente pas d'UUID (utilise ceux fournis).\n\n` +
+    `FORMAT (JSON strict, rien d'autre) :\n` +
+    `{ "compatibilities": [ {"scooter_id": "uuid", "compatible": true, "confidence": "high"|"medium"|"low", "reason": "preuve courte et factuelle"} ] }`;
 
   return { system, user };
 }
@@ -388,8 +398,10 @@ export async function suggestCompatibilitiesAI(
     return { count: 0, durationMs: outcome.durationMs, status: outcome.status };
   }
 
-  // 3. Déduplication
-  const fresh = dedupeAgainstPassA(outcome.results, excludeScooterIds);
+  // 3. Déduplication + garde-fou : on n'insère PAS les "low" (bruit).
+  //    Seules les suggestions high/medium entrent en base (auto_suggested).
+  const fresh = dedupeAgainstPassA(outcome.results, excludeScooterIds)
+    .filter((r) => r.confidence !== "low");
   if (fresh.length === 0) {
     return { count: 0, durationMs: outcome.durationMs, status: "ok" };
   }
