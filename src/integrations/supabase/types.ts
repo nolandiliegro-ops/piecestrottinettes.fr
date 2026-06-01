@@ -968,6 +968,7 @@ export type Database = {
           price: number | null
           published: boolean
           required_tools: string[] | null
+          search_document: string | null
           sku: string | null
           slug: string
           stock_quantity: number | null
@@ -992,6 +993,7 @@ export type Database = {
           price?: number | null
           published?: boolean
           required_tools?: string[] | null
+          search_document?: string | null
           sku?: string | null
           slug: string
           stock_quantity?: number | null
@@ -1016,6 +1018,7 @@ export type Database = {
           price?: number | null
           published?: boolean
           required_tools?: string[] | null
+          search_document?: string | null
           sku?: string | null
           slug?: string
           stock_quantity?: number | null
@@ -1522,6 +1525,7 @@ export type Database = {
         }
         Returns: number
       }
+      f_unaccent: { Args: { "": string }; Returns: string }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
@@ -1529,28 +1533,39 @@ export type Database = {
         }
         Returns: boolean
       }
+      part_search_text: {
+        Args: {
+          p_description: string
+          p_meta_description: string
+          p_meta_title: string
+          p_name: string
+          p_sku: string
+          p_tech: Json
+        }
+        Returns: string
+      }
       search_parts_fuzzy: {
         Args: {
-          q: string
-          p_scooter_id?: string | null
-          p_category_ids?: string[] | null
+          p_category_ids?: string[]
           p_limit?: number
           p_offset?: number
+          p_scooter_id?: string
+          q: string
         }
         Returns: {
-          id: string
-          name: string
-          slug: string
-          price: number | null
-          image_url: string | null
-          images: Json
-          stock_quantity: number | null
-          is_featured: boolean | null
-          created_at: string
-          category_id: string | null
           category: Json
-          rank: number
+          category_id: string
+          created_at: string
+          id: string
+          image_url: string
+          images: Json
+          is_featured: boolean
           match_type: string
+          name: string
+          price: number
+          rank: number
+          slug: string
+          stock_quantity: number
         }[]
       }
       search_scooter_fuzzy: {
@@ -1565,6 +1580,7 @@ export type Database = {
       }
       show_limit: { Args: never; Returns: number }
       show_trgm: { Args: { "": string }; Returns: string[] }
+      unaccent: { Args: { "": string }; Returns: string }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
