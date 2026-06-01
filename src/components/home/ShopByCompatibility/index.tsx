@@ -343,6 +343,7 @@ const ShopByCompatibility = () => {
                 parts={data.filteredParts}
                 onReset={handleResetFilters}
                 accentColor={accentColor}
+                categoryFilterActive={selectedCategories.size > 0}
               />
             )}
 

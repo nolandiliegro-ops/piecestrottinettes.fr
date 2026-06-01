@@ -50,6 +50,8 @@ interface Props {
   onReset?: () => void;
   /** Brand accent color (HEX) for the "Réinitialiser" button. Optional. */
   accentColor?: string;
+  /** Filtre catégorie actif → fond des cartes teinté par catégorie. */
+  categoryFilterActive?: boolean;
 }
 
 /** Flèche de navigation desktop (masquée mobile, visible au survol). */
@@ -83,7 +85,7 @@ const Arrow = ({
   </button>
 );
 
-const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
+const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [arrows, setArrows] = useState({ left: false, right: false });
 
@@ -251,7 +253,7 @@ const PartsCarousel = ({ parts, onReset, accentColor }: Props) => {
       >
         {parts.map((p, i) => (
           <div key={p.id} className="flex-shrink-0 w-[200px] sm:w-[220px]">
-            <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} />
+            <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} categoryFilterActive={categoryFilterActive} />
           </div>
         ))}
       </div>

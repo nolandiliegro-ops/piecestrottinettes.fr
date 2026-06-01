@@ -20,6 +20,11 @@ interface Props {
    * falls back to the per-category color from categoryColors.
    */
   brandColor?: string;
+  /**
+   * Quand un filtre catégorie est actif, le fond de carte prend une teinte très
+   * légère (7%) de la couleur de la catégorie du produit. Sinon : fond normal.
+   */
+  categoryFilterActive?: boolean;
 }
 
 const SECU_SLUGS = new Set([
@@ -67,7 +72,7 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
-const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
+const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilterActive }: Props) => {
   const { addItem, setIsOpen } = useCart();
   const { isFavorite, toggleFavorite, isToggling } = useFavorites();
   const img = getPrimaryImage(part.images, part.image_url, "");
@@ -83,6 +88,8 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
   const resolvedCatColor = resolveCategoryColor(part.category?.color ?? null, catSlug);
   const patchColor = brandColor ?? resolvedCatColor;
   const patchTextColor = brandColor ?? getCategoryTextColor(resolvedCatColor);
+  // Filtre catégorie actif → fond de carte très légèrement teinté de la couleur catégorie.
+  const cardBg = categoryFilterActive ? hexToRgba(resolvedCatColor, 0.07) : undefined;
   const catShort = getShortLabel(catSlug, catName);
   const isCarousel = variant === "carousel";
 
@@ -136,7 +143,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor }: Props) => {
     <Link
       to={`/piece/${part.slug}`}
       className="pt-slim-card group relative block overflow-hidden transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(255,255,255,0.10)]"
-      style={{ border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 8 }}
+      style={{ border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 8, backgroundColor: cardBg }}
     >
       {/* Image */}
       <div
