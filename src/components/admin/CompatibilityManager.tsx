@@ -23,6 +23,7 @@ interface Part {
 }
 
 type Confidence = 'high' | 'medium' | 'low' | 'validated';
+type FilterKey = 'all' | 'to_validate' | 'high' | 'medium' | 'low' | 'validated';
 
 interface CompatMeta {
   auto: boolean;
