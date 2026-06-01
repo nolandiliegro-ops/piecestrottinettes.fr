@@ -186,6 +186,19 @@ const ScooterCompatibilitySelect = ({
 
   return (
     <div className="space-y-3">
+      {readOnly && (
+        <div
+          className="flex items-start gap-3 px-4 py-3 rounded-lg border bg-[#4A7C59]/8 border-[#4A7C59]/20"
+          role="note"
+        >
+          <Info className="w-4 h-4 mt-0.5 shrink-0 text-[#4A7C59]" />
+          <p className="text-xs leading-relaxed text-[#4A7C59]">
+            <span className="font-semibold">Lecture seule</span> — La compatibilité se gère depuis l'onglet
+            <span className="font-semibold"> Compat.</span> de l'admin (édition par modèle).
+          </p>
+        </div>
+      )}
+
       {/* Header with count */}
       <div className="flex items-center justify-between px-1">
         <Label className="text-sm font-medium flex items-center gap-2">
@@ -202,6 +215,7 @@ const ScooterCompatibilitySelect = ({
           {selectedIds.length} sélectionné{selectedIds.length > 1 ? 's' : ''}
         </Badge>
       </div>
+
 
       {/* Scrollable list */}
       <ScrollArea className="h-[280px] rounded-lg border border-border bg-background/50">
