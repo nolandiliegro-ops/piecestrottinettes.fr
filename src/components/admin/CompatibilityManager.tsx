@@ -188,6 +188,7 @@ const CompatibilityManager = () => {
         toast.success('Re-trigger terminé');
       }
       await fetchData();
+      invalidateCompatQueries();
     } catch (e) {
       console.error(e); toast.error('Erreur re-trigger IA');
     } finally { setRetriggering(null); }
