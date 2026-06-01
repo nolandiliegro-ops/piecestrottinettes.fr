@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle } from 'lucide-react';
+import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle, ListFilter } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 
@@ -23,6 +23,7 @@ interface Part {
 }
 
 type Confidence = 'high' | 'medium' | 'low' | 'validated';
+type FilterKey = 'all' | 'to_validate' | 'high' | 'medium' | 'low' | 'validated';
 
 interface CompatMeta {
   auto: boolean;
@@ -42,6 +43,7 @@ const CompatibilityManager = () => {
   const [retriggering, setRetriggering] = useState<string | null>(null);
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+  const [filter, setFilter] = useState<FilterKey>('all');
 
   const invalidateCompatQueries = () => {
     queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
@@ -52,6 +54,7 @@ const CompatibilityManager = () => {
   };
 
   useEffect(() => { fetchData(); }, []);
+  useEffect(() => { setFilter('all'); }, [selectedScooter]);
 
   const fetchData = async () => {
     try {
@@ -228,6 +231,69 @@ const CompatibilityManager = () => {
     return n;
   };
 
+  const matchesFilter = (partId: string): boolean => {
+    if (!selectedScooter) return false;
+    const meta = metaByKey.get(`${partId}_${selectedScooter}`);
+    switch (filter) {
+      case 'all': return true;
+      case 'to_validate': return !!meta && meta.auto;
+      case 'high': return !!meta && meta.auto && meta.confidence === 'high';
+      case 'medium': return !!meta && meta.auto && meta.confidence === 'medium';
+      case 'low': return !!meta && meta.auto && meta.confidence === 'low';
+      case 'validated': return !!meta && !meta.auto;
+      default: return true;
+    }
+  };
+
+  const getVisiblePartIds = (): string[] => {
+    if (!selectedScooter) return [];
+    return parts.filter((p) => {
+      if (filter === 'all') {
+        const meta = metaByKey.get(`${p.id}_${selectedScooter}`);
+        return !!meta && meta.auto;
+      }
+      return matchesFilter(p.id);
+    }).map((p) => p.id);
+  };
+
+  const validateDisplayed = async () => {
+    if (!selectedScooter) return;
+    const ids = getVisiblePartIds();
+    if (ids.length === 0) return;
+    setBulkSaving(true);
+    try {
+      const { error } = await supabase.from('part_compatibility')
+        .update({ auto_suggested: false, confidence_level: 'validated' })
+        .in('part_id', ids)
+        .eq('scooter_model_id', selectedScooter)
+        .eq('auto_suggested', true);
+      if (error) throw error;
+      await fetchData();
+      invalidateCompatQueries();
+      toast.success(`${ids.length} compatibilité(s) validée(s)`);
+    } catch (e) { console.error(e); toast.error('Erreur validation'); }
+    finally { setBulkSaving(false); }
+  };
+
+  const rejectDisplayed = async () => {
+    if (!selectedScooter) return;
+    const ids = getVisiblePartIds();
+    if (ids.length === 0) return;
+    if (!window.confirm(`Rejeter ${ids.length} suggestion(s) ? Cette action est irréversible.`)) return;
+    setBulkSaving(true);
+    try {
+      const { error } = await supabase.from('part_compatibility').delete()
+        .in('part_id', ids)
+        .eq('scooter_model_id', selectedScooter)
+        .eq('auto_suggested', true);
+      if (error) throw error;
+      await fetchData();
+      invalidateCompatQueries();
+      toast.success(`${ids.length} suggestion(s) rejetée(s)`);
+    } catch (e) { console.error(e); toast.error('Erreur rejet'); }
+    finally { setBulkSaving(false); }
+  };
+
   if (loading) {
     return <div className="flex justify-center py-12"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>;
   }
@@ -236,6 +302,32 @@ const CompatibilityManager = () => {
   const sugCount = selectedScooter ? getCountByLevel(selectedScooter, 'auto') : 0;
   const highCount = selectedScooter ? getCountByLevel(selectedScooter, 'high') : 0;
   const medCount = selectedScooter ? getCountByLevel(selectedScooter, 'medium') : 0;
+  const lowCount = selectedScooter ? getCountByLevel(selectedScooter, 'low') : 0;
+  const validatedCount = selectedScooter
+    ? Array.from(metaByKey.entries()).filter(([k, m]) => k.endsWith(`_${selectedScooter}`) && !m.auto).length
+    : 0;
+
+  const visibleIds = selectedScooter ? getVisiblePartIds() : [];
+  const visibleCount = visibleIds.length;
+  const filterLabels: Record<FilterKey, string> = {
+    all: 'Tout',
+    to_validate: 'À valider',
+    high: 'Haute',
+    medium: 'Moyenne',
+    low: 'Basse',
+    validated: 'Validées',
+  };
+  const bulkDisabled = filter === 'all' || filter === 'validated' || visibleCount === 0 || bulkSaving;
+
+  const filterPills: { key: FilterKey; label: string; count: number }[] = [
+    { key: 'all', label: 'Tout', count: parts.length },
+    { key: 'to_validate', label: 'À valider', count: sugCount },
+    { key: 'high', label: 'Haute', count: highCount },
+    { key: 'medium', label: 'Moy', count: medCount },
+    { key: 'low', label: 'Basse', count: lowCount },
+    { key: 'validated', label: 'Validées', count: validatedCount },
+  ];
+
 
   const renderBadge = (meta: CompatMeta) => {
     const cfg: Record<Confidence, { label: string; className: string; icon: JSX.Element }> = {
@@ -309,51 +401,109 @@ const CompatibilityManager = () => {
                 {selectedScooter ? <><Check className="w-4 h-4 text-primary" />Pièces compatibles</> :
                   <><Unlink className="w-4 h-4 text-muted-foreground" />Sélectionnez une trottinette</>}
               </h3>
-              {selectedScooter && sugCount > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  <Button size="sm" variant="outline" className="border-emerald-500/40 text-emerald-600 hover:bg-emerald-500/10 text-xs gap-1.5"
-                    onClick={() => validateBatch('all')} disabled={bulkSaving}>
-                    {bulkSaving ? <Loader2 className="w-3 h-3 animate-spin" /> : <CheckCheck className="w-3 h-3" />}
-                    Valider toutes ({sugCount})
-                  </Button>
-                  {highCount > 0 && (
-                    <Button size="sm" variant="outline" className="border-green-500/40 text-green-600 hover:bg-green-500/10 text-xs gap-1.5"
-                      onClick={() => validateBatch('high')} disabled={bulkSaving}>
-                      <Zap className="w-3 h-3" />Hautes ({highCount})
-                    </Button>
-                  )}
-                  {medCount > 0 && (
-                    <Button size="sm" variant="outline" className="border-amber-500/40 text-amber-600 hover:bg-amber-500/10 text-xs gap-1.5"
-                      onClick={() => validateBatch('medium')} disabled={bulkSaving}>
-                      <CircleDot className="w-3 h-3" />Moyennes ({medCount})
-                    </Button>
-                  )}
-                  <Button size="sm" variant="outline" className="border-destructive/40 text-destructive hover:bg-destructive/10 text-xs gap-1.5"
-                    onClick={rejectAllSuggestions} disabled={bulkSaving}>
-                    <X className="w-3 h-3" />Rejeter ({sugCount})
-                  </Button>
-                </div>
-              )}
             </div>
+
+            {selectedScooter && (
+              <>
+                {/* Zone A — Filtres (revue) */}
+                <div className="rounded-lg p-3 mb-3" style={{ backgroundColor: '#F5F0E8' }}>
+                  <div className="flex items-center gap-2 mb-2 text-xs font-medium" style={{ color: '#6B7280' }}>
+                    <ListFilter className="w-3.5 h-3.5" /> Filtres de revue
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {filterPills.map((p) => {
+                      const active = filter === p.key;
+                      return (
+                        <button
+                          key={p.key}
+                          onClick={() => setFilter(p.key)}
+                          className={cn(
+                            'inline-flex items-center gap-1.5 px-3 min-h-[44px] rounded-full text-xs font-semibold border transition-colors',
+                            active ? 'text-white border-transparent' : 'bg-white hover:bg-white/70'
+                          )}
+                          style={
+                            active
+                              ? { backgroundColor: '#4A7C59' }
+                              : { color: '#6B7280', borderColor: 'rgba(74,124,89,0.25)' }
+                          }
+                        >
+                          {p.label}
+                          <span
+                            className={cn(
+                              'inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full text-[10px] font-bold',
+                              active ? 'bg-white/25 text-white' : ''
+                            )}
+                            style={active ? undefined : { backgroundColor: 'rgba(74,124,89,0.12)', color: '#4A7C59' }}
+                          >
+                            {p.count}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Zone B — Actions de masse sur l'affichage courant */}
+                <div
+                  className="rounded-lg p-3 mb-4 border-t"
+                  style={{ backgroundColor: 'rgba(74,124,89,0.05)', borderColor: 'rgba(74,124,89,0.15)' }}
+                >
+                  <p className="text-xs mb-2" style={{ color: '#6B7280' }}>
+                    Affichage : <span className="font-semibold" style={{ color: '#4A7C59' }}>{filterLabels[filter]}</span> — {visibleCount} pièce{visibleCount > 1 ? 's' : ''}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={validateDisplayed}
+                      disabled={bulkDisabled}
+                      className="inline-flex items-center gap-2 px-4 min-h-[44px] rounded-lg text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
+                      style={{ backgroundColor: '#4A7C59' }}
+                    >
+                      {bulkSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <CheckCheck className="w-4 h-4" />}
+                      Valider tout l'affichage ({visibleCount})
+                    </button>
+                    <button
+                      onClick={rejectDisplayed}
+                      disabled={bulkDisabled}
+                      className="inline-flex items-center gap-2 px-4 min-h-[44px] rounded-lg text-sm font-semibold border-2 border-destructive text-destructive bg-white hover:bg-destructive/5 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
+                    >
+                      <X className="w-4 h-4" />
+                      Rejeter l'affichage ({visibleCount})
+                    </button>
+                  </div>
+                  {(filter === 'all' || filter === 'validated') && (
+                    <p className="text-[11px] mt-2" style={{ color: '#6B7280' }}>
+                      Sélectionnez un filtre de revue (À valider / Haute / Moyenne / Basse) pour activer les actions de masse.
+                    </p>
+                  )}
+                </div>
+              </>
+            )}
 
             {selectedScooter ? (
               <ScrollArea className="h-[500px]">
                 <div className="space-y-3">
-                  {Object.entries(partsByCategory).map(([category, categoryParts]) => (
+                  {Object.entries(partsByCategory).map(([category, categoryParts]) => {
+                    const filteredParts = categoryParts.filter((p) => matchesFilter(p.id));
+                    if (filter !== 'all' && filteredParts.length === 0) return null;
+                    const isOpen = filter !== 'all' || expandedCategories.has(category);
+                    const displayParts = filter === 'all' ? categoryParts : filteredParts;
+                    return (
                     <div key={category} className="border border-border rounded-lg overflow-hidden">
                       <button onClick={() => toggleCategory(category)}
                         className="w-full px-4 py-3 bg-muted/50 flex items-center justify-between hover:bg-muted transition-colors">
                         <span className="font-medium text-sm text-foreground">{category}</span>
                         <div className="flex items-center gap-2">
                           <span className="text-xs text-muted-foreground">
-                            {categoryParts.filter((p) => metaByKey.has(`${p.id}_${selectedScooter}`)).length}/{categoryParts.length}
+                            {filter === 'all'
+                              ? `${categoryParts.filter((p) => metaByKey.has(`${p.id}_${selectedScooter}`)).length}/${categoryParts.length}`
+                              : `${filteredParts.length} affichée${filteredParts.length > 1 ? 's' : ''}`}
                           </span>
-                          {expandedCategories.has(category) ? <ChevronDown className="w-4 h-4 text-muted-foreground" /> : <ChevronRight className="w-4 h-4 text-muted-foreground" />}
+                          {isOpen ? <ChevronDown className="w-4 h-4 text-muted-foreground" /> : <ChevronRight className="w-4 h-4 text-muted-foreground" />}
                         </div>
                       </button>
-                      {expandedCategories.has(category) && (
+                      {isOpen && (
                         <div className="p-3 space-y-2">
-                          {categoryParts.map((part) => {
+                          {displayParts.map((part) => {
                             const key = `${part.id}_${selectedScooter}`;
                             const meta = metaByKey.get(key);
                             const isCompatible = !!meta;
@@ -393,9 +543,11 @@ const CompatibilityManager = () => {
                         </div>
                       )}
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </ScrollArea>
+
             ) : (
               <div className="h-[500px] flex items-center justify-center text-muted-foreground">
                 <p className="text-center">
