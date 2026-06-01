@@ -5,9 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle, ListFilter } from 'lucide-react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, CheckCheck, Zap, RefreshCw, CircleDot, Circle, ListFilter, ImageIcon } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { getPrimaryImage, type ImageEntry } from '@/lib/entityImage';
 
 interface Scooter {
   id: string;
