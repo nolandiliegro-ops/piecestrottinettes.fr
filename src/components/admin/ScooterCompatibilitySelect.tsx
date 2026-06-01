@@ -134,7 +134,7 @@ const ScooterCompatibilitySelect = ({
   }, [partId]);
 
   const toggleScooter = (scooterId: string) => {
-    if (disabled) return;
+    if (disabled || readOnly) return;
     
     const newIds = selectedIds.includes(scooterId)
       ? selectedIds.filter(id => id !== scooterId)
@@ -144,7 +144,7 @@ const ScooterCompatibilitySelect = ({
   };
 
   const toggleBrand = (brand: Brand) => {
-    if (disabled) return;
+    if (disabled || readOnly) return;
     
     const brandScooterIds = brand.scooters.map(s => s.id);
     const allSelected = brandScooterIds.every(id => selectedIds.includes(id));
