@@ -136,6 +136,7 @@ const CompatibilityManager = () => {
       const next = new Map(metaByKey);
       next.delete(`${partId}_${scooterId}`);
       setMetaByKey(next);
+      invalidateCompatQueries();
       toast.success('Suggestion rejetée');
     } catch (error) {
       console.error(error); toast.error('Erreur');
