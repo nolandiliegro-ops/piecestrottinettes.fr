@@ -21,6 +21,8 @@ interface Scooter {
 interface Part {
   id: string;
   name: string;
+  image_url: string | null;
+  images: ImageEntry[] | null;
   category: { name: string } | null;
 }
 
