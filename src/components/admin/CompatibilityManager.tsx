@@ -31,6 +31,7 @@ interface CompatMeta {
 }
 
 const CompatibilityManager = () => {
+  const queryClient = useQueryClient();
   const [scooters, setScooters] = useState<Scooter[]>([]);
   const [parts, setParts] = useState<Part[]>([]);
   // Map "partId_scooterId" → meta
@@ -41,6 +42,14 @@ const CompatibilityManager = () => {
   const [retriggering, setRetriggering] = useState<string | null>(null);
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+
+  const invalidateCompatQueries = () => {
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts-rich'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-parts-count'] });
+    queryClient.invalidateQueries({ queryKey: ['compatible-scooters'] });
+    queryClient.invalidateQueries({ queryKey: ['related-parts'] });
+  };
 
   useEffect(() => { fetchData(); }, []);
 
