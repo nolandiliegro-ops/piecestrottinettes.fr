@@ -74,6 +74,7 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
       name: String(first.name ?? ""),
       slug: String(first.slug ?? ""),
       icon: (first.icon as string | null) ?? null,
+      color: (first.color as string | null) ?? null,
     };
   }
   if (typeof raw === "object") {
@@ -83,6 +84,7 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
       name: String(o.name ?? ""),
       slug: String(o.slug ?? ""),
       icon: (o.icon as string | null) ?? null,
+      color: (o.color as string | null) ?? null,
     };
   }
   return null;
@@ -101,7 +103,7 @@ const useAllPublishedParts = (enabled: boolean) =>
         .from("parts")
         .select(
           `id, name, slug, price, image_url, images, stock_quantity, is_featured,
-           created_at, category:categories(id, name, slug, icon)`
+           created_at, category:categories(id, name, slug, icon, color)`
         )
         .eq("published", true)
         .order("is_featured", { ascending: false })

@@ -17,6 +17,7 @@ export interface CompatiblePartRich {
     name: string;
     slug: string;
     icon: string | null;
+    color: string | null;
   } | null;
 }
 
@@ -30,6 +31,7 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
       name: String(first.name ?? ""),
       slug: String(first.slug ?? ""),
       icon: (first.icon as string | null) ?? null,
+      color: (first.color as string | null) ?? null,
     };
   }
   if (typeof raw === "object") {
@@ -39,6 +41,7 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
       name: String(o.name ?? ""),
       slug: String(o.slug ?? ""),
       icon: (o.icon as string | null) ?? null,
+      color: (o.color as string | null) ?? null,
     };
   }
   return null;
@@ -64,7 +67,7 @@ export const useCompatiblePartsRich = (scooterModelId: string | null | undefined
         .select(
           `id, name, slug, price, image_url, images, stock_quantity, is_featured,
            created_at,
-           category:categories(id, name, slug, icon)`
+           category:categories(id, name, slug, icon, color)`
         )
         .eq("published", true)
         .in("id", partIds)
