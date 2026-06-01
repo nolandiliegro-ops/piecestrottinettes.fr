@@ -30,6 +30,7 @@ interface PartTarget {
   sku: string | null;
   description: string | null;
   technical_metadata: Record<string, unknown> | null;
+  category: { name: string } | { name: string }[] | null;
 }
 
 interface PartResult {
@@ -56,7 +57,7 @@ async function resolveTargets(
   if (body.part_ids && body.part_ids.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata")
+      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)")
       .in("id", body.part_ids);
     if (error) throw new Error(`fetch by ids: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.id));
@@ -69,7 +70,7 @@ async function resolveTargets(
   if (body.skus && body.skus.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata")
+      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)")
       .in("sku", body.skus);
     if (error) throw new Error(`fetch by skus: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.sku));
@@ -83,7 +84,7 @@ async function resolveTargets(
     // Pièces sans aucune ligne dans part_compatibility
     const { data: allParts, error: pErr } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata");
+      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)");
     if (pErr) throw new Error(`fetch all parts: ${pErr.message}`);
 
     const { data: compats, error: cErr } = await supabase
@@ -176,6 +177,9 @@ async function processOnePart(
   if (anthropicKey) {
     try {
       const exclude = new Set([...validatedScooterIds, ...passAScooterIds]);
+      const categoryName = Array.isArray(part.category)
+        ? part.category[0]?.name ?? null
+        : part.category?.name ?? null;
       const passB = await suggestCompatibilitiesAI(
         supabase,
         part.id,
@@ -183,6 +187,7 @@ async function processOnePart(
           name: part.name,
           description: part.description,
           technical_metadata: part.technical_metadata,
+          category: categoryName,
         },
         exclude,
         anthropicKey,

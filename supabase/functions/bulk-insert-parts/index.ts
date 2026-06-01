@@ -306,6 +306,7 @@ Deno.serve(async (req) => {
                     name: part.name,
                     description: part.description ?? null,
                     technical_metadata: part.technical_metadata ?? null,
+                    category: categoryName,
                   },
                   passAScooterIds,
                   anthropicKey,
