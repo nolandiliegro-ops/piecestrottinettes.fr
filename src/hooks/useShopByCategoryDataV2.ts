@@ -9,6 +9,7 @@ export interface CategoryMetaV2 {
   slug: string;
   icon: string | null;
   display_order: number | null;
+  display_order_home: number | null;
   color: string | null;
   image_url: string | null;
 }
@@ -20,6 +21,7 @@ export interface CategoryGroupV2 {
   slugs: string[];     // ALL slugs in the dedup group (used for filtering parts)
   icon: string | null;
   display_order: number | null;
+  display_order_home: number | null;   // priorité de tri home (fallback display_order)
   color: string | null;       // accent hex from DB (fallback géré côté UI)
   image_url: string | null;   // illustration de la catégorie (bucket category-images)
   count: number;       // SUM across group, on the currently-scoped pool
@@ -46,8 +48,10 @@ const useAllParentCategories = () =>
     queryFn: async () => {
       const { data, error } = await supabase
         .from("categories")
-        .select("id, name, slug, icon, display_order, color, image_url")
+        .select("id, name, slug, icon, display_order, display_order_home, color, image_url")
         .is("parent_id", null)
+        .eq("show_on_home", true)
+        .order("display_order_home", { ascending: true, nullsFirst: false })
         .order("display_order", { ascending: true, nullsFirst: false })
         .order("name", { ascending: true });
       if (error) throw error;
@@ -57,6 +61,7 @@ const useAllParentCategories = () =>
         slug: c.slug,
         icon: c.icon,
         display_order: c.display_order,
+        display_order_home: c.display_order_home,
         color: c.color,
         image_url: c.image_url,
       }));
@@ -158,6 +163,7 @@ const buildGroups = (
       slugs: list.map((c) => c.slug),
       icon: rep.icon,
       display_order: rep.display_order,
+      display_order_home: rep.display_order_home,
       color: rep.color,
       image_url: rep.image_url,
       count: summedCount,
@@ -167,8 +173,9 @@ const buildGroups = (
   return groups
     .filter((g) => g.count > 0)
     .sort((a, b) => {
-      const ao = a.display_order ?? Number.POSITIVE_INFINITY;
-      const bo = b.display_order ?? Number.POSITIVE_INFINITY;
+      // Tri home : display_order_home prioritaire, fallback display_order si null.
+      const ao = a.display_order_home ?? a.display_order ?? Number.POSITIVE_INFINITY;
+      const bo = b.display_order_home ?? b.display_order ?? Number.POSITIVE_INFINITY;
       if (ao !== bo) return ao - bo;
       return a.name.localeCompare(b.name);
     });
