@@ -6,6 +6,7 @@ import DifficultyIndicator from "./DifficultyIndicator";
 import PartFavoriteButton from "./PartFavoriteButton";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { optimizedImage } from "@/lib/imageTransform";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
@@ -57,6 +58,8 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
   const primaryImage = getPrimaryImage(part.images, part.image_url, "");
+  // Image affichée (grille ~250px) servie en WebP redimensionné, ratio préservé, sans rognage.
+  const displayImage = optimizedImage(primaryImage, 400);
   
   // Compatibility check with selected scooter
   const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
@@ -87,7 +90,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       <div className="flex items-center gap-3">
         {primaryImage ? (
           <img 
-            src={primaryImage} 
+            src={displayImage}
             alt={part.name}
             className="w-10 h-10 rounded-lg object-contain bg-greige p-1"
           />
@@ -231,7 +234,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
         {primaryImage ? (
           <img 
-            src={primaryImage} 
+            src={displayImage}
             alt={part.name}
             loading="lazy"
             decoding="async"
