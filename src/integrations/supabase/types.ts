@@ -106,6 +106,117 @@ export type Database = {
           },
         ]
       }
+      backup_categories_20260601: {
+        Row: {
+          color: string | null
+          created_at: string | null
+          display_order: number | null
+          icon: string | null
+          id: string | null
+          image_url: string | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          parent_id: string | null
+          product_count: number | null
+          slug: string | null
+        }
+        Insert: {
+          color?: string | null
+          created_at?: string | null
+          display_order?: number | null
+          icon?: string | null
+          id?: string | null
+          image_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          parent_id?: string | null
+          product_count?: number | null
+          slug?: string | null
+        }
+        Update: {
+          color?: string | null
+          created_at?: string | null
+          display_order?: number | null
+          icon?: string | null
+          id?: string | null
+          image_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          parent_id?: string | null
+          product_count?: number | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      backup_category_images_20260602: {
+        Row: {
+          alt_text: string | null
+          category_id: string | null
+          col_span: number | null
+          created_at: string | null
+          id: string | null
+          image_url: string | null
+          object_fit: string | null
+          object_position: string | null
+          prompt: string | null
+          row_span: number | null
+          seo_name: string | null
+          subtitle: string | null
+        }
+        Insert: {
+          alt_text?: string | null
+          category_id?: string | null
+          col_span?: number | null
+          created_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          object_fit?: string | null
+          object_position?: string | null
+          prompt?: string | null
+          row_span?: number | null
+          seo_name?: string | null
+          subtitle?: string | null
+        }
+        Update: {
+          alt_text?: string | null
+          category_id?: string | null
+          col_span?: number | null
+          created_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          object_fit?: string | null
+          object_position?: string | null
+          prompt?: string | null
+          row_span?: number | null
+          seo_name?: string | null
+          subtitle?: string | null
+        }
+        Relationships: []
+      }
+      backup_parts_catmap_20260601: {
+        Row: {
+          category_id: string | null
+          id: string | null
+          name: string | null
+          slug: string | null
+        }
+        Insert: {
+          category_id?: string | null
+          id?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Update: {
+          category_id?: string | null
+          id?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       brand_assets: {
         Row: {
           alt_text: string | null
@@ -229,9 +340,11 @@ export type Database = {
       categories: {
         Row: {
           accent_label: string | null
+          alt_text: string | null
           color: string | null
           created_at: string
           display_order: number | null
+          display_order_home: number | null
           icon: string | null
           id: string
           image_url: string | null
@@ -242,13 +355,17 @@ export type Database = {
           neon_color: string | null
           parent_id: string | null
           product_count: number | null
+          seo_name: string | null
+          show_on_home: boolean
           slug: string
         }
         Insert: {
           accent_label?: string | null
+          alt_text?: string | null
           color?: string | null
           created_at?: string
           display_order?: number | null
+          display_order_home?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
@@ -259,13 +376,17 @@ export type Database = {
           neon_color?: string | null
           parent_id?: string | null
           product_count?: number | null
+          seo_name?: string | null
+          show_on_home?: boolean
           slug: string
         }
         Update: {
           accent_label?: string | null
+          alt_text?: string | null
           color?: string | null
           created_at?: string
           display_order?: number | null
+          display_order_home?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
@@ -276,6 +397,8 @@ export type Database = {
           neon_color?: string | null
           parent_id?: string | null
           product_count?: number | null
+          seo_name?: string | null
+          show_on_home?: boolean
           slug?: string
         }
         Relationships: [
