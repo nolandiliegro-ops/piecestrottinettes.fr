@@ -343,6 +343,7 @@ export type Database = {
           alt_text: string | null
           color: string | null
           created_at: string
+          description: string | null
           display_order: number | null
           display_order_home: number | null
           icon: string | null
@@ -364,6 +365,7 @@ export type Database = {
           alt_text?: string | null
           color?: string | null
           created_at?: string
+          description?: string | null
           display_order?: number | null
           display_order_home?: number | null
           icon?: string | null
@@ -385,6 +387,7 @@ export type Database = {
           alt_text?: string | null
           color?: string | null
           created_at?: string
+          description?: string | null
           display_order?: number | null
           display_order_home?: number | null
           icon?: string | null
