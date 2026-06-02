@@ -7,9 +7,10 @@ interface Props {
   brandName: string | null;
   totalCount: number;
   catalogueHref: string;
+  ctaLabel?: string | null;
 }
 
-const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref }: Props) => {
+const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref, ctaLabel }: Props) => {
   const leftText =
     mode === "config" && scooterName
       ? `${totalCount} pièce${totalCount > 1 ? "s" : ""} compatible${totalCount > 1 ? "s" : ""} avec ta ${scooterName}.`
@@ -46,7 +47,7 @@ const BottomBanner = ({ mode, scooterName, brandName, totalCount, catalogueHref 
           fontFamily: "'Plus Jakarta Sans', sans-serif",
         }}
       >
-        {linkText}
+        {ctaLabel || linkText}
         <ArrowRight className="w-3.5 h-3.5" strokeWidth={2.5} />
       </Link>
     </div>

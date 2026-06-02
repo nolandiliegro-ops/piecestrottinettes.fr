@@ -165,14 +165,25 @@ const ShopByCompatibility = () => {
   })();
   const titleAccentColor = brandIsDefault ? NEUTRAL_TITLE_ACCENT : brandColor;
 
-  // Bottom banner href: pass first selected category as fallback (until catalogue supports multi)
-  const catalogueHref = (() => {
+  // Routage intelligent du bouton "voir le catalogue" :
+  //  - 1 seule catégorie cochée → page dédiée /categorie/:slug (sans param scooter, non géré par cette page)
+  //  - 0 ou plusieurs → /catalogue (comportement actuel : category=premier + scooter éventuels)
+  const { catalogueHref, ctaLabel } = (() => {
+    const selectedSlugsArr = Array.from(selectedCategories);
+    if (selectedCategories.size === 1) {
+      const slug = selectedSlugsArr[0];
+      const group = data.availableCategories.find((g) => g.slug === slug);
+      return {
+        catalogueHref: `/categorie/${slug}`,
+        ctaLabel: group ? `Voir toutes les pièces ${group.name}` : null,
+      };
+    }
     const params = new URLSearchParams();
-    const firstCat = Array.from(selectedCategories)[0];
+    const firstCat = selectedSlugsArr[0];
     if (firstCat) params.set("category", firstCat);
     if (selectedScooter) params.set("scooter", selectedScooter.id);
     const qs = params.toString();
-    return qs ? `/catalogue?${qs}` : "/catalogue";
+    return { catalogueHref: qs ? `/catalogue?${qs}` : "/catalogue", ctaLabel: null as string | null };
   })();
 
   // Dark capsule — théméable via token CSS var(--token-module-background).
@@ -415,6 +426,7 @@ const ShopByCompatibility = () => {
               brandName={selectedScooter?.brandName ?? null}
               totalCount={data.totalCount}
               catalogueHref={catalogueHref}
+              ctaLabel={ctaLabel}
             />
           </div>
         </div>
