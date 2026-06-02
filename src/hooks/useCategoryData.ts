@@ -49,12 +49,15 @@ export const useCategoryData = (slug: string | undefined) => {
   // Pièces de la catégorie (réutilise le hook catalogue ; déjà triées par name).
   const { data: rawParts = [] } = useAllParts(category?.id ?? null);
 
-  // Tri DISPO-FIRST : stock > 0 (et null) d'abord, stock === 0 en dernier.
-  // Ordre conservé à l'intérieur de chaque groupe (partition stable).
+  // Tri DISPO-FIRST en 3 buckets concaténés (partition stable, ordre conservé dans chaque bucket) :
+  //   1. dispo (stock null || > 0) ET mis en avant (is_featured)
+  //   2. dispo ET non mis en avant
+  //   3. rupture (stock === 0)
   const parts = useMemo<CataloguePart[]>(() => {
-    const inStock = rawParts.filter((p) => p.stock_quantity === null || p.stock_quantity > 0);
+    const featured = rawParts.filter((p) => (p.stock_quantity === null || p.stock_quantity > 0) && p.is_featured);
+    const inStock = rawParts.filter((p) => (p.stock_quantity === null || p.stock_quantity > 0) && !p.is_featured);
     const outOfStock = rawParts.filter((p) => p.stock_quantity === 0);
-    return [...inStock, ...outOfStock];
+    return [...featured, ...inStock, ...outOfStock];
   }, [rawParts]);
 
   return {
