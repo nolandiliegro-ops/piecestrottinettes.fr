@@ -43,7 +43,9 @@ export interface CategoryWrite {
   seo_name: string | null;
 }
 
-export const ADMIN_CATEGORIES_KEY = ["admin-categories"] as const;
+// Clé UNIQUE : ne pas partager avec les queries ['admin-categories'] (select partiel)
+// d'AdminScanner / PendingPartsManager, sinon le cache est écrasé par des objets tronqués.
+export const ADMIN_CATEGORIES_KEY = ["admin-categories-full"] as const;
 
 // Keys publiques à rafraîchir après toute écriture (cohérence admin ↔ home ↔ catalogue).
 const RELATED_KEYS: ReadonlyArray<ReadonlyArray<string>> = [
