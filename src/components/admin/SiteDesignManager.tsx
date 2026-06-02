@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Home, ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check, FolderOpen, Truck } from 'lucide-react';
+import { ShoppingBag, Package, Gauge, Loader2, ImagePlus, Check, FolderOpen, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -9,7 +9,6 @@ import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 import imageCompression from 'browser-image-compression';
 import { useSiteAssets, useUpsertSiteAsset, type SiteAsset } from '@/hooks/useSiteAssets';
-import CategoryDesignManager from './CategoryDesignManager';
 
 const SECTION_CONFIG: Record<string, { icon: React.ReactNode; title: string; description: string }> = {
   catalogue: { icon: <ShoppingBag className="w-5 h-5" />, title: 'Catalogue', description: 'Gérez les visuels du catalogue' },
@@ -395,11 +394,8 @@ const SiteDesignManager = () => {
   return (
     <div className="space-y-6">
       <ShippingConfig />
-      <Tabs defaultValue="accueil" className="space-y-6">
+      <Tabs defaultValue="catalogue" className="space-y-6">
         <TabsList className="bg-background/10 border border-border/20 p-1">
-          <TabsTrigger value="accueil" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
-            <Home className="w-4 h-4" /> Accueil
-          </TabsTrigger>
           <TabsTrigger value="catalogue" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-background/70 gap-2 px-4 py-2">
             <ShoppingBag className="w-4 h-4" /> Catalogue
           </TabsTrigger>
@@ -411,9 +407,6 @@ const SiteDesignManager = () => {
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="accueil">
-          <CategoryDesignManager />
-        </TabsContent>
         <TabsContent value="catalogue">
           <SectionGrid section="catalogue" />
         </TabsContent>
