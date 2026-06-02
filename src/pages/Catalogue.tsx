@@ -291,7 +291,11 @@ const Catalogue = () => {
         toast.success(`${category.name}: Visual generated!`, { id: toastId, duration: 3000 });
         successCount++;
         
+        // Images catégories lues depuis `categories` (Palier 1) : invalider toutes les
+        // sources — catalogue (category-images), home (all-parent-categories), admin design.
         queryClient.invalidateQueries({ queryKey: ["category-images"] });
+        queryClient.invalidateQueries({ queryKey: ["all-parent-categories"] });
+        queryClient.invalidateQueries({ queryKey: ["admin-category-design"] });
         
       } catch (error: any) {
         const message = error?.message?.includes("429") 

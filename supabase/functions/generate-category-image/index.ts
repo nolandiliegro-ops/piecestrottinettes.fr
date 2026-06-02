@@ -217,17 +217,11 @@ serve(async (req) => {
 
     const imageUrl = urlData.publicUrl;
 
-    // Upsert into category_images table
+    // Write the generated image URL onto categories (canonical source, Palier 1).
     const { error: dbError } = await supabaseAdmin
-      .from("category_images")
-      .upsert(
-        {
-          category_id: categoryId,
-          image_url: imageUrl,
-          prompt: prompt,
-        },
-        { onConflict: "category_id" }
-      );
+      .from("categories")
+      .update({ image_url: imageUrl })
+      .eq("id", categoryId);
 
     if (dbError) {
       console.error("Database error:", dbError);
