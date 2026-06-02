@@ -411,59 +411,6 @@ export type Database = {
           },
         ]
       }
-      category_images: {
-        Row: {
-          alt_text: string | null
-          category_id: string | null
-          col_span: number
-          created_at: string | null
-          id: string
-          image_url: string
-          object_fit: string
-          object_position: string
-          prompt: string | null
-          row_span: number
-          seo_name: string | null
-          subtitle: string | null
-        }
-        Insert: {
-          alt_text?: string | null
-          category_id?: string | null
-          col_span?: number
-          created_at?: string | null
-          id?: string
-          image_url: string
-          object_fit?: string
-          object_position?: string
-          prompt?: string | null
-          row_span?: number
-          seo_name?: string | null
-          subtitle?: string | null
-        }
-        Update: {
-          alt_text?: string | null
-          category_id?: string | null
-          col_span?: number
-          created_at?: string | null
-          id?: string
-          image_url?: string
-          object_fit?: string
-          object_position?: string
-          prompt?: string | null
-          row_span?: number
-          seo_name?: string | null
-          subtitle?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "category_images_category_id_fkey"
-            columns: ["category_id"]
-            isOneToOne: true
-            referencedRelation: "categories"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
       contact_messages: {
         Row: {
           created_at: string
