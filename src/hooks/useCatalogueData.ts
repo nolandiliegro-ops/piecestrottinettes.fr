@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { CompatiblePart } from "@/hooks/useScooterData";
 
@@ -21,7 +21,6 @@ export const useAllParts = (categoryId: string | null) => {
           id,
           name,
           slug,
-          description,
           price,
           image_url,
           images,
@@ -50,9 +49,14 @@ export const useAllParts = (categoryId: string | null) => {
 
       return (data || []).map((part) => ({
         ...part,
+        // `description` non sélectionnée (inutile pour PartCard) — on conserve le type CataloguePart.
+        description: null,
         technical_metadata: part.technical_metadata as Record<string, unknown> | null,
         images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
       })) as CataloguePart[];
     },
+    staleTime: 5 * 60 * 1000,
+    gcTime: 30 * 60 * 1000,
+    placeholderData: keepPreviousData,
   });
 };

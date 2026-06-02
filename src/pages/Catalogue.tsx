@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import { useState, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useAdminRole } from "@/hooks/useAdminRole";
 import { motion, AnimatePresence } from "framer-motion";
@@ -182,7 +182,7 @@ const Catalogue = () => {
     return activeCategory;
   }, [activeCategory, activeSubCategory, subCategories]);
 
-  const { data: allParts = [], isLoading: partsLoading } = useAllParts(effectiveCategoryFilter);
+  const { data: allParts = [], isLoading: partsLoading, isPlaceholderData } = useAllParts(effectiveCategoryFilter);
 
   // Recherche full-text via RPC (pg_trgm) — pilote la grille uniquement quand ?search= est présent.
   // Cumulable avec le scooter (?scooter=) et la catégorie/sous-catégorie active.
@@ -205,6 +205,14 @@ const Catalogue = () => {
   const displayLoading = isSearch
     ? !search.isActive || search.isLoading || search.isFetching
     : partsLoading;
+  // Switch de catégorie : l'ancienne grille reste (keepPreviousData) + état visuel léger,
+  // jamais le SkeletonGrid (réservé au tout premier chargement via partsLoading/isLoading).
+  const isSwitching = !isSearch && isPlaceholderData;
+
+  // Pagination "Voir plus" côté client sur la grille standard (16 = 4 lignes en desktop 4 colonnes).
+  const [visibleCount, setVisibleCount] = useState(16);
+  // Reset au changement de catégorie / sous-catégorie / marque / recherche.
+  useEffect(() => setVisibleCount(16), [activeCategory, activeSubCategory, brandFilter, searchQuery]);
 
   // Mode recherche : exact / related séparés (option B), filtre marque appliqué côté client.
   const searchExact = useMemo<CataloguePart[]>(() => {
@@ -367,6 +375,7 @@ const Catalogue = () => {
             className="text-mineral font-montserrat font-semibold mt-2"
           >
             {displayLoading ? "Chargement..." : `${parts.length} pièces disponibles`}
+            {isSwitching && <Loader2 className="inline-block w-4 h-4 ml-2 animate-spin align-[-2px]" />}
           </motion.div>
 
           {/* Scooter Filter Banner */}
@@ -501,9 +510,12 @@ const Catalogue = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
-                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
+                  className={cn(
+                    "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7 transition-opacity duration-200",
+                    isSwitching && "opacity-60 pointer-events-none"
+                  )}
                 >
-                  {parts.map((part, index) => (
+                  {parts.slice(0, visibleCount).map((part, index) => (
                     <PartCard key={part.id} part={part} index={index} />
                   ))}
                 </motion.div>
@@ -528,6 +540,20 @@ const Catalogue = () => {
               <EmptyState onClear={() => setActiveCategory(null)} />
             )}
           </AnimatePresence>
+
+          {/* Pagination "Voir plus" — grille standard uniquement (hors recherche, hors chargement initial). */}
+          {!isSearch && !displayLoading && visibleCount < parts.length && (
+            <div className="mt-10 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((c) => c + 16)}
+                className="inline-flex items-center gap-2 min-h-[48px] px-8 rounded-xl border bg-white text-sm font-bold uppercase tracking-wider transition-transform hover:bg-[#1A1A1A]/[0.03] active:scale-[0.98]"
+                style={{ borderColor: "#1A1A1A", color: "#1A1A1A", transitionTimingFunction: "cubic-bezier(0.32,0.72,0,1)" }}
+              >
+                Voir plus ({parts.length - visibleCount} restantes)
+              </button>
+            </div>
+          )}
         </section>
       </main>
 
