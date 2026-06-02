@@ -80,6 +80,7 @@ const CategoryEditorPanel = ({ mode, category, allCategories, onClose, onCreated
   // Dépend de category?.id et non de la référence d'objet : on NE reseed PAS à chaque
   // refetch/invalidation, donc les éditions en cours ne sont pas écrasées.
   useEffect(() => {
+    console.log("[cat-editor] mode=", mode, "id=", category?.id, "name=", category?.name, "slug=", category?.slug);
     setDraft(seedDraft(category));
   }, [category?.id, mode]);
 
