@@ -10,6 +10,7 @@ import { useCategoryData } from "@/hooks/useCategoryData";
 import { resolveCategoryIcon } from "@/lib/categoryIcons";
 import { buildCategoryJsonLd } from "@/lib/categorySchema";
 import { optimizedImage } from "@/lib/imageTransform";
+import CategorySwitcher from "@/components/category/CategorySwitcher";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const HEAD = "'Anton', sans-serif";
@@ -176,6 +177,9 @@ const Categorie = () => {
               </h1>
             </motion.div>
           </div>
+
+          {/* Switcher : navigation horizontale vers les autres catégories */}
+          <CategorySwitcher currentSlug={category.slug} />
 
           {/* 3. Texte indexable */}
           <p className="mt-6 max-w-2xl text-base md:text-lg" style={{ fontFamily: FONT, color: "#1A1A1A", lineHeight: 1.6 }}>
