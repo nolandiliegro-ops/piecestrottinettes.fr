@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   AlertDialog,
@@ -75,6 +75,14 @@ const seedDraft = (category: AdminCategory | null): Draft => ({
 
 const CategoryEditorPanel = ({ mode, category, allCategories, onClose, onCreated }: CategoryEditorPanelProps) => {
   const [draft, setDraft] = useState<Draft>(() => seedDraft(category));
+
+  // Resynchro du draft au changement réel de catégorie (id) ou de mode (edit <-> create).
+  // Dépend de category?.id et non de la référence d'objet : on NE reseed PAS à chaque
+  // refetch/invalidation, donc les éditions en cours ne sont pas écrasées.
+  useEffect(() => {
+    setDraft(seedDraft(category));
+  }, [category?.id, mode]);
+
   const createMut = useCreateCategory();
   const updateMut = useUpdateCategory();
   const deleteMut = useDeleteCategory();
