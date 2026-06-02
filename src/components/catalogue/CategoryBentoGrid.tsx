@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { LayoutGrid } from "lucide-react";
+import { Link } from "react-router-dom";
+import { LayoutGrid, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useCategoryImages } from "@/hooks/useCategoryImages";
@@ -96,14 +97,14 @@ const CategoryBentoGrid = ({
         const categoryImage = typeof catImgData === 'string' ? catImgData : catImgData?.image_url;
 
         return (
+          <div key={category.id} className="relative w-24 md:w-28 lg:w-32 flex-shrink-0">
           <motion.button
-            key={category.id}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.3 }}
             onClick={() => onCategoryChange(category.id)}
             className={cn(
-              "relative w-24 md:w-28 lg:w-32 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0 border border-white/10",
+              "relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-white/10",
               "transition-all duration-300",
               isActive && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
             )}
@@ -153,6 +154,16 @@ const CategoryBentoGrid = ({
               </div>
             </div>
           </motion.button>
+            {/* Lien secondaire vers la page catégorie (frère du button, jamais enfant). */}
+            <Link
+              to={`/categorie/${category.slug}`}
+              aria-label={`Voir la page ${category.name}`}
+              onClick={(e) => e.stopPropagation()}
+              className="absolute top-1.5 right-1.5 z-20 flex items-center justify-center rounded-full p-1.5 bg-black/45 backdrop-blur-sm text-white hover:bg-black/65 transition-colors"
+            >
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         );
       })}
     </div>

@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
+import { useCategoryPartsCount } from "@/hooks/useCategoryPartsCount";
 
 const Footer = () => {
   const logo = useBrandAsset("logo_main_light");
+  // Catégories parentes ayant ≥1 pièce publiée (les vides sont noindex → on ne les maille pas).
+  const { data: categories = [] } = useCategoryPartsCount();
+  const liveCategories = categories.filter((c) => c.parts_count > 0);
   return (
     <footer className="bg-carbon py-12 mt-auto">
       <div className="container mx-auto px-4 lg:px-8">
@@ -26,9 +30,20 @@ const Footer = () => {
               <Link to="/catalogue" className="text-white/60 hover:text-white transition-colors text-sm">
                 Par Marque
               </Link>
-              <Link to="/catalogue" className="text-white/60 hover:text-white transition-colors text-sm">
-                Par Catégorie
-              </Link>
+              {liveCategories.length > 0 && (
+                <>
+                  <span className="text-white/40 text-xs uppercase tracking-wider mt-2">Catégories</span>
+                  {liveCategories.map((c) => (
+                    <Link
+                      key={c.id}
+                      to={`/categorie/${c.slug}`}
+                      className="text-white/60 hover:text-white transition-colors text-sm"
+                    >
+                      {c.name}
+                    </Link>
+                  ))}
+                </>
+              )}
             </nav>
           </div>
 

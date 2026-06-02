@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronRight } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/usePartDetail";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
@@ -107,7 +107,7 @@ const PartDetail = () => {
       <Header />
 
       <div className="pt-20 pb-16">
-        {/* Back link */}
+        {/* Breadcrumb (matche le BreadcrumbList JSON-LD) */}
         <motion.div
           variants={sectionVariants}
           initial="hidden"
@@ -115,13 +115,34 @@ const PartDetail = () => {
           custom={0}
           className="max-w-7xl mx-auto px-4 md:px-8 py-4"
         >
-          <Link
-            to="/catalogue"
-            className="inline-flex items-center gap-2 text-[hsl(var(--carbon))]/60 hover:text-[hsl(var(--carbon))] transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm font-medium">Retour au catalogue</span>
-          </Link>
+          <nav aria-label="Fil d'ariane">
+            <ol className="flex items-center gap-1.5 text-sm text-[hsl(var(--carbon))]/60">
+              <li>
+                <Link to="/" className="inline-flex items-center min-h-[44px] hover:text-[hsl(var(--carbon))] transition-colors">
+                  Accueil
+                </Link>
+              </li>
+              <ChevronRight className="w-4 h-4 shrink-0" aria-hidden />
+              <li>
+                <Link to="/catalogue" className="inline-flex items-center min-h-[44px] hover:text-[hsl(var(--carbon))] transition-colors">
+                  Catalogue
+                </Link>
+              </li>
+              {part.category?.slug && part.category?.name && (
+                <>
+                  <ChevronRight className="w-4 h-4 shrink-0" aria-hidden />
+                  <li className="min-w-0">
+                    <Link
+                      to={`/categorie/${part.category.slug}`}
+                      className="inline-flex items-center min-h-[44px] font-medium text-[hsl(var(--carbon))] hover:text-mineral transition-colors truncate"
+                    >
+                      {part.category.name}
+                    </Link>
+                  </li>
+                </>
+              )}
+            </ol>
+          </nav>
         </motion.div>
 
         {/* === SECTION 1: Hero — MediaGallery + PurchaseBlock === */}

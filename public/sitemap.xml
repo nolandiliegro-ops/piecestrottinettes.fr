@@ -28,6 +28,38 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Catégories -->
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/plaquettes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/disques</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/pneus-pleins</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/pneus</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/chambres-a-air</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/chargeurs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- DYNAMIC SLUGS TO BE ADDED -->
   <!-- Pièces : /piece/{slug} -->
   <!-- Scooters : /scooter/{slug} -->
