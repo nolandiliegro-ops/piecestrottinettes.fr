@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { optimizedImage } from "@/lib/imageTransform";
 import { formatPrice } from "@/lib/formatPrice";
 import { resolveCategoryColor, getCategoryTextColor, getShortLabel } from "@/lib/categoryColors";
 import { cn } from "@/lib/utils";
@@ -76,6 +77,8 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
   const { addItem, setIsOpen } = useCart();
   const { isFavorite, toggleFavorite, isToggling } = useFavorites();
   const img = getPrimaryImage(part.images, part.image_url, "");
+  // Image affichée servie en WebP redimensionné (carte + miniature toast).
+  const displayImg = optimizedImage(img, 400);
   const badge = pickBadge(part);
   const badgeColors = badgeStyle(badge);
   const isOut = part.stock_quantity === 0;
@@ -110,7 +113,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
       <div className="flex items-center gap-3">
         {img ? (
           <img
-            src={img}
+            src={displayImg}
             alt={part.name}
             className="w-10 h-10 rounded-lg object-contain bg-[#F5F5F5] p-1"
           />
@@ -152,7 +155,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
       >
         {img ? (
           <img
-            src={img}
+            src={displayImg}
             alt={part.name}
             loading="lazy"
             decoding="async"

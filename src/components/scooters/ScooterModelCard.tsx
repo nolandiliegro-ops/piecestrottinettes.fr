@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { optimizedImage } from "@/lib/imageTransform";
 
 interface ScooterModel {
   id: string;
@@ -39,7 +40,7 @@ const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
         <div className="relative aspect-square bg-gradient-to-br from-muted/30 to-muted/10 overflow-hidden">
           {displayImage ? (
             <motion.img
-              src={displayImage}
+              src={optimizedImage(displayImage, 400)}
               alt={scooter.name}
               className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
               whileHover={{ scale: 1.05 }}

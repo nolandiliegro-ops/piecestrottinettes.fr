@@ -6,6 +6,7 @@ import { useUserGarage } from "@/hooks/useGarage";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { optimizedImage } from "@/lib/imageTransform";
 
 // Images are now loaded from Supabase database
 
@@ -87,7 +88,7 @@ const FavoritesSection = () => {
                 {/* Image */}
                 <div className="relative w-full h-28 mb-3">
                   <img
-                    src={imageSrc}
+                    src={optimizedImage(imageSrc, 400)}
                     alt={scooterModel.name}
                     className="w-full h-full object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
                   />

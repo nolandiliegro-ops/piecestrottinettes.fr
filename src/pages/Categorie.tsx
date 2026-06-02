@@ -9,6 +9,7 @@ import PartCard from "@/components/parts/PartCard";
 import { useCategoryData } from "@/hooks/useCategoryData";
 import { resolveCategoryIcon } from "@/lib/categoryIcons";
 import { buildCategoryJsonLd } from "@/lib/categorySchema";
+import { optimizedImage } from "@/lib/imageTransform";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const HEAD = "'Anton', sans-serif";
@@ -126,7 +127,7 @@ const Categorie = () => {
             {/* Fond image .webp ou gradient carbon */}
             {category.image_url ? (
               <img
-                src={category.image_url}
+                src={optimizedImage(category.image_url, 1200)}
                 alt={category.alt_text || category.name}
                 loading="eager"
                 className="absolute inset-0 h-full w-full object-cover"

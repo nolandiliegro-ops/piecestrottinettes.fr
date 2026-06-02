@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ImageOff, ChevronLeft, ChevronRight } from "lucide-react";
 import { getAllImages, type ImageEntry } from "@/lib/entityImage";
+import { optimizedImage } from "@/lib/imageTransform";
 
 interface MediaGalleryProps {
   imageUrl: string | null;
@@ -30,7 +31,7 @@ const MediaGallery = ({ imageUrl, images, productName }: MediaGalleryProps) => {
           <AnimatePresence mode="wait">
             <motion.img
               key={current.url}
-              src={current.url}
+              src={optimizedImage(current.url, 900)}
               alt={current.alt || productName}
               loading="lazy"
               decoding="async"
@@ -86,7 +87,7 @@ const MediaGallery = ({ imageUrl, images, productName }: MediaGalleryProps) => {
               }`}
             >
               <img
-                src={img.url}
+                src={optimizedImage(img.url, 200)}
                 alt={img.alt || `${productName} ${idx + 1}`}
                 className="w-full h-full object-contain"
               />
