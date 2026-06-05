@@ -88,13 +88,6 @@ Deno.serve(async (req) => {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
   }
-  if (!REMOVEBG_API_KEY) {
-    return new Response(JSON.stringify({ error: 'REMOVEBG_API_KEY not configured' }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
-  }
-
   if (req.headers.get('x-admin-secret') !== ADMIN_SECRET) {
     return new Response(JSON.stringify({ error: 'Unauthorized' }), {
       status: 401,
@@ -113,11 +106,13 @@ Deno.serve(async (req) => {
       });
     }
 
-    const { entity_type, entity_id, source_urls, alt_base } = body as {
+    const { entity_type, entity_id, source_urls, alt_base, images_base64, reset } = body as {
       entity_type?: string;
       entity_id?: string;
       source_urls?: string[];
       alt_base?: string;
+      images_base64?: string[];
+      reset?: boolean;
     };
 
     if (!['scooter', 'part'].includes(entity_type ?? '')) {
@@ -132,6 +127,152 @@ Deno.serve(async (req) => {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
     }
+    // Sélection bucket/table/alt — mutualisée entre les deux modes.
+    const bucket = entity_type === 'scooter' ? 'scooter-photos' : 'part-images';
+    const table = entity_type === 'scooter' ? 'scooter_models' : 'parts';
+    const altBase = (alt_base ?? '').toString().slice(0, 100) || 'Image';
+
+    const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
+
+    // ===== DÉTECTION DE MODE =====
+    // images_base64 non-vide → NOUVEAU MODE "image déjà détourée" (pas de Remove.bg).
+    // Sinon → comportement LEGACY (source_urls + removeBackground), strictement inchangé.
+    const isPreCutMode = Array.isArray(images_base64) && images_base64.length > 0;
+
+    // ===== NOUVEAU MODE : image déjà détourée (base64) =====
+    if (isPreCutMode) {
+      const inputs = (images_base64 ?? []).slice(0, MAX_URLS);
+      const failed: FailedUrl[] = [];
+      const newImages: { url: string }[] = [];
+      const ts = Date.now();
+
+      log(
+        'start',
+        `mode=precut entity=${entity_type} id=${entity_id} imgs=${inputs.length} reset=${reset === true}`,
+      );
+
+      for (let i = 0; i < inputs.length; i++) {
+        try {
+          // 1. Décodage base64 → bytes. PAS de download, PAS de removeBackground().
+          let buf: Uint8Array;
+          try {
+            const bin = atob(inputs[i]);
+            buf = new Uint8Array(bin.length);
+            for (let k = 0; k < bin.length; k++) buf[k] = bin.charCodeAt(k);
+          } catch {
+            failed.push({ url: `base64[${i}]`, reason: 'invalid base64' });
+            continue;
+          }
+
+          // 2. Limite de taille (même borne que legacy, appliquée au Buffer décodé).
+          if (buf.byteLength > MAX_BYTES) {
+            failed.push({ url: `base64[${i}]`, reason: `size > 12MB (${buf.byteLength} bytes)` });
+            continue;
+          }
+
+          // 3. Upload Storage — même bucket/convention/contentType/upsert que legacy.
+          const path = `${entity_id}/${ts}_${i}.png`;
+          const { error: upErr } = await supabase.storage
+            .from(bucket)
+            .upload(path, buf, { contentType: 'image/png', upsert: true });
+          if (upErr) {
+            failed.push({ url: `base64[${i}]`, reason: `upload error: ${upErr.message}` });
+            continue;
+          }
+
+          // 4. Public URL.
+          const { data: pub } = supabase.storage.from(bucket).getPublicUrl(path);
+          newImages.push({ url: pub.publicUrl });
+          log(`base64[${i}]`, `OK -> ${pub.publicUrl}`);
+        } catch (e) {
+          const reason = (e as Error).message;
+          log(`base64[${i}]`, `ERROR ${reason}`);
+          failed.push({ url: `base64[${i}]`, reason });
+        }
+      }
+
+      // 5. Merge (APPEND ou RESET) + recalcul position/is_primary/alt sur le tableau FINAL.
+      //    GARDE-FOU anti-perte de données : on ne touche PAS la colonne images
+      //    si aucune nouvelle image n'a été uploadée (même esprit que legacy result.length > 0).
+      let finalImages: ProcessedImage[] = [];
+      if (newImages.length > 0) {
+        let base: { url: string }[] = [];
+        if (reset !== true) {
+          // APPEND : on récupère le tableau images actuel de l'entité.
+          const { data: row, error: selErr } = await supabase
+            .from(table)
+            .select('images')
+            .eq('id', entity_id)
+            .maybeSingle();
+          if (selErr) {
+            log('db', `select images failed: ${selErr.message}`);
+            return new Response(
+              JSON.stringify({
+                success: false,
+                error: `DB select failed: ${selErr.message}`,
+                processed_count: 0,
+                failed_count: failed.length,
+                failed_urls: failed,
+                images: [],
+              }),
+              { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+            );
+          }
+          base = Array.isArray(row?.images) ? row.images : [];
+        }
+
+        const merged = [...base, ...newImages];
+        finalImages = merged.map((img, idx) => ({
+          url: img.url,
+          position: idx,
+          is_primary: idx === 0,
+          alt: `${altBase} - vue ${idx + 1}`,
+        }));
+
+        const { error: dbErr } = await supabase
+          .from(table)
+          .update({ images: finalImages })
+          .eq('id', entity_id);
+        if (dbErr) {
+          log('db', `update failed: ${dbErr.message}`);
+          return new Response(
+            JSON.stringify({
+              success: false,
+              error: `DB update failed: ${dbErr.message}`,
+              processed_count: newImages.length,
+              failed_count: failed.length,
+              failed_urls: failed,
+              images: finalImages,
+            }),
+            { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+          );
+        }
+        log('db', `updated ${table}.images for ${entity_id} (${finalImages.length} total)`);
+      } else {
+        log('db', 'no successful image, table not updated (existing images preserved)');
+      }
+
+      return new Response(
+        JSON.stringify({
+          success: true,
+          processed_count: newImages.length,
+          failed_count: failed.length,
+          failed_urls: failed,
+          images: finalImages,
+        }),
+        { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+      );
+    }
+    // ===== FIN NOUVEAU MODE — tout ce qui suit est le chemin LEGACY inchangé =====
+
+    // Legacy nécessite Remove.bg : check déplacé ici (Option B) — n'impacte que ce mode.
+    if (!REMOVEBG_API_KEY) {
+      return new Response(JSON.stringify({ error: 'REMOVEBG_API_KEY not configured' }), {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+
     if (!Array.isArray(source_urls) || source_urls.length === 0) {
       return new Response(
         JSON.stringify({ error: 'source_urls must be non-empty array' }),
@@ -139,12 +280,7 @@ Deno.serve(async (req) => {
       );
     }
 
-    const bucket = entity_type === 'scooter' ? 'scooter-photos' : 'part-images';
-    const table = entity_type === 'scooter' ? 'scooter_models' : 'parts';
     const urls = source_urls.slice(0, MAX_URLS);
-    const altBase = (alt_base ?? '').toString().slice(0, 100) || 'Image';
-
-    const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
     const result: ProcessedImage[] = [];
     const failed: FailedUrl[] = [];
     const ts = Date.now();
