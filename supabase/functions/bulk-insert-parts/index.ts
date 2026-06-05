@@ -71,6 +71,7 @@ interface Results {
   compatibilities_suggested_ai: number;
   ai_calls: number;
   errors: { name: string; error: string }[];
+  rows: { name: string; slug: string; id: string | null; status: "inserted" | "updated" | "skipped" | "error" }[];
 }
 
 // =====================================================================
@@ -312,6 +313,7 @@ const handler = async (req: Request): Promise<Response> => {
       compatibilities_suggested_ai: 0,
       ai_calls: 0,
       errors: [],
+      rows: [],
     };
 
     const anthropicKey = Deno.env.get("ANTHROPIC_API_KEY");
@@ -323,6 +325,7 @@ const handler = async (req: Request): Promise<Response> => {
       try {
         if (!part.name || !part.slug) {
           results.errors.push({ name: part.name || "unknown", error: "name and slug are required" });
+          results.rows.push({ name: part.name || "unknown", slug: part.slug || "", id: null, status: "skipped" });
           continue;
         }
 
@@ -360,6 +363,7 @@ const handler = async (req: Request): Promise<Response> => {
 
         if (upsertError) {
           results.errors.push({ name: part.name, error: upsertError.message });
+          results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
           continue;
         }
 
@@ -371,6 +375,7 @@ const handler = async (req: Request): Promise<Response> => {
 
         if (selectErr || !partRow) {
           results.errors.push({ name: part.name, error: "Could not retrieve part id post-upsert" });
+          results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
           continue;
         }
 
@@ -383,6 +388,7 @@ const handler = async (req: Request): Promise<Response> => {
 
         if (wasNew) results.inserted++;
         else results.updated++;
+        results.rows.push({ name: part.name, slug: part.slug, id: partId, status: wasNew ? "inserted" : "updated" });
 
         if (part.supplier && part.supplier.name) {
           try {
@@ -462,6 +468,7 @@ const handler = async (req: Request): Promise<Response> => {
       } catch (loopErr) {
         console.error(`[bulk-insert-parts] Exception part loop:`, loopErr);
         results.errors.push({ name: part.name || "unknown", error: String(loopErr) });
+        results.rows.push({ name: part.name || "unknown", slug: part.slug || "", id: null, status: "error" });
       }
     }
 
