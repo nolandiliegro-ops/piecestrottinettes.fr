@@ -1,0 +1,22 @@
+{
+  "categoryName": "Accessoires divers",
+  "parts": [
+    {
+      "name": "Klaxon Test PT 108dB",
+      "slug": "test-piece-klaxon",
+      "price": 19.9,
+      "source_image_urls": [
+        "https://electriktrotters.com/18901-thickbox_default/klaxon-electrique-puissant-pour-trottinette-electrique.jpg"
+      ]
+    },
+    {
+      "name": "Sonnette Test PT",
+      "slug": "test-piece-sonnette",
+      "price": 12.5,
+      "source_image_urls": [
+        "https://electriktrotters.com/18415-thickbox_default/klaxon-electrique-puissant-pour-trottinette-electrique.jpg",
+        "https://electriktrotters.com/18902-thickbox_default/klaxon-electrique-puissant-pour-trottinette-electrique.jpg"
+      ]
+    }
+  ]
+}
