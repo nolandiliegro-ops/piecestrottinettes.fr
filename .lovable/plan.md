@@ -1,21 +1,14 @@
 ## Objectif
-Redéployer uniquement l'Edge Function `bulk-insert-parts`.
-
-## Fichiers concernés
-Aucun. Appel unique à `supabase--deploy_edge_functions(["bulk-insert-parts"])`.
+Redéployer uniquement l'Edge Function `process-images` (code à jour sur le repo, ajout du mode "image déjà détourée" en base64).
 
 ## Implémentation
-1. `supabase--deploy_edge_functions({ function_names: ["bulk-insert-parts"] })`
-2. Retour de l'horodatage UTC du déploiement.
-
-## Plan de test
-- Vérifier que le déploiement renvoie un succès.
-- Tu peux ensuite tester via ton script d'import habituel.
-
-## Plan de rollback
-- Redéployer la version précédente depuis l'historique Supabase si régression.
+1. `supabase--deploy_edge_functions({ function_names: ["process-images"] })`
+2. Retour du statut de déploiement.
 
 ## Périmètre exclu
-- Aucun changement code / BDD / secrets / RLS / autres fonctions.
+- Aucun changement code / BDD / secrets / RLS / config / autres edge functions / front.
+
+## Rollback
+- Redéployer la version précédente depuis l'historique Supabase si régression.
 
 Confirme pour lancer.
