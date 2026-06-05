@@ -5,6 +5,7 @@
 
 # Scripts locaux
 scripts/sync.bat
+scripts/_detoure-out.png
 
 # Logs
 logs

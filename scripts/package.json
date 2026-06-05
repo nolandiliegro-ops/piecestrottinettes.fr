@@ -1,0 +1,6 @@
+{
+  "name": "pt-scripts",
+  "private": true,
+  "type": "module",
+  "devDependencies": { "@imgly/background-removal-node": "1.4.5" }
+}
