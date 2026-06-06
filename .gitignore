@@ -6,6 +6,9 @@
 # Scripts locaux
 scripts/sync.bat
 scripts/_detoure-out.png
+scripts/test-precut-prod.mjs
+scripts/test-sb4-helper.mjs
+scripts/data/_test-sb4-import.json
 
 # Logs
 logs
