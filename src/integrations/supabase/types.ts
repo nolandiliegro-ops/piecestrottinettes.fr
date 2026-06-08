@@ -217,6 +217,84 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_parts_test_20260606: {
+        Row: {
+          category_id: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          estimated_install_time_minutes: number | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          category_id?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          estimated_install_time_minutes?: number | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          category_id?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          estimated_install_time_minutes?: number | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
       brand_assets: {
         Row: {
           alt_text: string | null
