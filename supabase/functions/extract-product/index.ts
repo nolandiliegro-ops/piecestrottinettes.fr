@@ -345,7 +345,7 @@ Réponds UNIQUEMENT en JSON valide avec ce schéma exact :
 {"name": string, "sku": string|null, "ean": string|null, "brand": string|null, "category_hint": string|null, "price": number|null, "currency": string|null, "specs": string, "compatibility": string[]}
 - price : le prix d'achat principal affiché (ignore prix barré / mensualités / Younited / "à partir de X€/mois").
 - specs : texte libre récapitulatif des caractéristiques techniques visibles.
-- compatibility : array des modèles de trottinettes explicitement compatibles, en texte court (ex: "Dualtron Thunder 3", "Xiaomi M365 Pro 2").
+- compatibility : array des modèles de trottinettes EXPLICITEMENT listés sur la page (section compatibilité/description). INTERDICTION ABSOLUE de déduire, supposer, ou compléter de mémoire. Si aucun modèle n'est explicitement écrit dans la page, renvoie []. Ne JAMAIS inférer des modèles à partir du nom du produit, de la marque, ou de connaissances générales.
 - category_hint : catégorie ou type de produit (ex: "Pneu", "Chargeur", "Batterie", "Trottinette électrique").`;
 
   const userMsg = `BASE déjà extraite :
