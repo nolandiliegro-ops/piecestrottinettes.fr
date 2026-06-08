@@ -168,6 +168,7 @@ function cleanHtmlForAI(html: string): string {
 }
 
 const IMG_BAD = /(logo|icon|sprite|placeholder|flag|pixel|blank|loader|favicon)/i;
+const IMG_PATH_BAD = /(\/assets\/|\/cdn\/shop\/t\/|\/themes\/|\/theme\/)/i;
 
 function absUrl(src: string, base: string): string | null {
   if (!src) return null;
@@ -178,6 +179,14 @@ function absUrl(src: string, base: string): string | null {
   } catch {
     return null;
   }
+}
+
+function isBadImageUrl(u: string): boolean {
+  if (IMG_BAD.test(u)) return true;
+  if (IMG_PATH_BAD.test(u)) return true;
+  const path = u.split("?")[0].toLowerCase();
+  if (path.endsWith(".svg")) return true;
+  return false;
 }
 
 function collectImages(opts: {
@@ -191,7 +200,7 @@ function collectImages(opts: {
   const push = (raw: string) => {
     const u = absUrl(raw, opts.base);
     if (!u) return;
-    if (IMG_BAD.test(u)) return;
+    if (isBadImageUrl(u)) return;
     if (seen.has(u)) return;
     seen.add(u);
     out.push(u);
@@ -205,6 +214,27 @@ function collectImages(opts: {
     }
   }
   return out.slice(0, 4);
+}
+
+function isValidEan13(s: string): boolean {
+  if (!/^\d{13}$/.test(s)) return false;
+  let sum = 0;
+  for (let i = 0; i < 12; i++) {
+    const d = s.charCodeAt(i) - 48;
+    sum += i % 2 === 0 ? d : d * 3;
+  }
+  const check = (10 - (sum % 10)) % 10;
+  return check === s.charCodeAt(12) - 48;
+}
+
+function findEanInText(text: string): string | null {
+  if (!text) return null;
+  const re = /\d{13}/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (isValidEan13(m[0])) return m[0];
+  }
+  return null;
 }
 
 function extractImgTags(html: string): string[] {
