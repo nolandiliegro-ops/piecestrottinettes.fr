@@ -1,0 +1,65 @@
+﻿Test extract-product - 06/08/2026 23:07:28
+
+========== https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html ==========
+{
+    "status":  "ok",
+    "name":  "Pneu 10x3.00-6 Cst Tubeless",
+    "sku":  "PN-58",
+    "ean":  "3760351013667",
+    "brand":  "CST",
+    "category_hint":  "Pneu",
+    "price":  null,
+    "currency":  "EUR",
+    "images":  [
+                   "https://www.wattiz.fr/101131-large_default/pneu-10x3-00-6-cst-tubeless.jpg",
+                   "https://www.wattiz.fr/101131-home_default_2x/pneu-10x3-00-6-cst-tubeless.jpg",
+                   "https://www.wattiz.fr/95783-home_default_2x/pneu-10x3-00-6-cst-tubeless.jpg",
+                   "https://www.wattiz.fr/109264-home_default_2x/pneu-10x3-00-6-cst-tubeless.jpg"
+               ],
+    "specs":  "Pneu 10x3.00, Type : Tubeless, Marque : CST, Pneu pour la route, 10 pouces, Taille : 9*23*15cm",
+    "compatibility":  [
+                          "Dualtron Victor",
+                          "Nami Klima"
+                      ],
+    "source_url":  "https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html"
+}
+
+========== https://volt-corp.com/shop/teverunfighterq52v13ah-trottinette-electrique-teverun-fighter-mini-q-52v-13ah-12028 ==========
+{
+    "status":  "blocked",
+    "name":  "",
+    "sku":  null,
+    "ean":  null,
+    "brand":  null,
+    "category_hint":  null,
+    "price":  null,
+    "currency":  null,
+    "images":  [
+
+               ],
+    "specs":  "",
+    "compatibility":  [
+
+                      ],
+    "source_url":  "https://volt-corp.com/shop/teverunfighterq52v13ah-trottinette-electrique-teverun-fighter-mini-q-52v-13ah-12028"
+}
+
+========== https://ewheel.es/fr/products/chargeurs-avec-connecteur-gx16 ==========
+{
+    "status":  "blocked",
+    "name":  "",
+    "sku":  null,
+    "ean":  null,
+    "brand":  null,
+    "category_hint":  null,
+    "price":  null,
+    "currency":  null,
+    "images":  [
+
+               ],
+    "specs":  "",
+    "compatibility":  [
+
+                      ],
+    "source_url":  "https://ewheel.es/fr/products/chargeurs-avec-connecteur-gx16"
+}
