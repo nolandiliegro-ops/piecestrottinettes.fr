@@ -168,6 +168,7 @@ function cleanHtmlForAI(html: string): string {
 }
 
 const IMG_BAD = /(logo|icon|sprite|placeholder|flag|pixel|blank|loader|favicon)/i;
+const IMG_PATH_BAD = /(\/assets\/|\/cdn\/shop\/t\/|\/themes\/|\/theme\/)/i;
 
 function absUrl(src: string, base: string): string | null {
   if (!src) return null;
@@ -178,6 +179,14 @@ function absUrl(src: string, base: string): string | null {
   } catch {
     return null;
   }
+}
+
+function isBadImageUrl(u: string): boolean {
+  if (IMG_BAD.test(u)) return true;
+  if (IMG_PATH_BAD.test(u)) return true;
+  const path = u.split("?")[0].toLowerCase();
+  if (path.endsWith(".svg")) return true;
+  return false;
 }
 
 function collectImages(opts: {
@@ -191,7 +200,7 @@ function collectImages(opts: {
   const push = (raw: string) => {
     const u = absUrl(raw, opts.base);
     if (!u) return;
-    if (IMG_BAD.test(u)) return;
+    if (isBadImageUrl(u)) return;
     if (seen.has(u)) return;
     seen.add(u);
     out.push(u);
@@ -205,6 +214,27 @@ function collectImages(opts: {
     }
   }
   return out.slice(0, 4);
+}
+
+function isValidEan13(s: string): boolean {
+  if (!/^\d{13}$/.test(s)) return false;
+  let sum = 0;
+  for (let i = 0; i < 12; i++) {
+    const d = s.charCodeAt(i) - 48;
+    sum += i % 2 === 0 ? d : d * 3;
+  }
+  const check = (10 - (sum % 10)) % 10;
+  return check === s.charCodeAt(12) - 48;
+}
+
+function findEanInText(text: string): string | null {
+  if (!text) return null;
+  const re = /\d{13}/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (isValidEan13(m[0])) return m[0];
+  }
+  return null;
 }
 
 function extractImgTags(html: string): string[] {
@@ -315,7 +345,7 @@ Réponds UNIQUEMENT en JSON valide avec ce schéma exact :
 {"name": string, "sku": string|null, "ean": string|null, "brand": string|null, "category_hint": string|null, "price": number|null, "currency": string|null, "specs": string, "compatibility": string[]}
 - price : le prix d'achat principal affiché (ignore prix barré / mensualités / Younited / "à partir de X€/mois").
 - specs : texte libre récapitulatif des caractéristiques techniques visibles.
-- compatibility : array des modèles de trottinettes explicitement compatibles, en texte court (ex: "Dualtron Thunder 3", "Xiaomi M365 Pro 2").
+- compatibility : array des modèles de trottinettes EXPLICITEMENT listés sur la page (section compatibilité/description). INTERDICTION ABSOLUE de déduire, supposer, ou compléter de mémoire. Si aucun modèle n'est explicitement écrit dans la page, renvoie []. Ne JAMAIS inférer des modèles à partir du nom du produit, de la marque, ou de connaissances générales.
 - category_hint : catégorie ou type de produit (ex: "Pneu", "Chargeur", "Batterie", "Trottinette électrique").`;
 
   const userMsg = `BASE déjà extraite :
@@ -465,7 +495,25 @@ Deno.serve(async (req) => {
     merged.currency = base.currency || ai.currency || detectCurrency(null, html);
     if (merged.currency) merged.currency = merged.currency.toUpperCase();
     merged.specs = (ai.specs || metaDesc || "").toString();
-    merged.compatibility = Array.isArray(ai.compatibility) ? ai.compatibility : [];
+
+    // FIX A — EAN fallback : URL puis HTML, première suite \d{13} avec checksum EAN-13 valide
+    if (!merged.ean) {
+      const fromUrl = findEanInText(url);
+      merged.ean = fromUrl || findEanInText(html) || null;
+    }
+
+    // FIX C — anti-hallucination compat : ne garder que les modèles littéralement présents dans le HTML (texte brut, casse insensible)
+    const plainText = html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .toLowerCase();
+    const aiCompat = Array.isArray(ai.compatibility) ? ai.compatibility : [];
+    merged.compatibility = aiCompat.filter((m) => {
+      const needle = String(m).trim().toLowerCase();
+      if (!needle) return false;
+      return plainText.includes(needle);
+    });
 
     // Images — strict order
     const jsonldImgs = extractImagesFromJsonLd(product);
