@@ -495,7 +495,25 @@ Deno.serve(async (req) => {
     merged.currency = base.currency || ai.currency || detectCurrency(null, html);
     if (merged.currency) merged.currency = merged.currency.toUpperCase();
     merged.specs = (ai.specs || metaDesc || "").toString();
-    merged.compatibility = Array.isArray(ai.compatibility) ? ai.compatibility : [];
+
+    // FIX A — EAN fallback : URL puis HTML, première suite \d{13} avec checksum EAN-13 valide
+    if (!merged.ean) {
+      const fromUrl = findEanInText(url);
+      merged.ean = fromUrl || findEanInText(html) || null;
+    }
+
+    // FIX C — anti-hallucination compat : ne garder que les modèles littéralement présents dans le HTML (texte brut, casse insensible)
+    const plainText = html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .toLowerCase();
+    const aiCompat = Array.isArray(ai.compatibility) ? ai.compatibility : [];
+    merged.compatibility = aiCompat.filter((m) => {
+      const needle = String(m).trim().toLowerCase();
+      if (!needle) return false;
+      return plainText.includes(needle);
+    });
 
     // Images — strict order
     const jsonldImgs = extractImagesFromJsonLd(product);
