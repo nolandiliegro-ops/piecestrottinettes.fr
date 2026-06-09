@@ -54,6 +54,9 @@ interface PartInput {
   is_featured?: boolean;
   supplier?: SupplierInput;
   compatibility_hints?: CompatibilityHints;
+  ean?: string;
+  characteristics?: string;
+  compatibility_source?: string;
 }
 
 interface RequestBody {
