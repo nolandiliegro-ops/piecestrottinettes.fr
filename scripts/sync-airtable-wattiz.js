@@ -48,6 +48,9 @@ const AIRTABLE_BASE_ID = ENV.AIRTABLE_BASE_ID || 'appCVWWSvCrOFSMpZ';
 const AIRTABLE_TABLE_ID = ENV.AIRTABLE_TABLE_ID || 'tblV3rukuKXNjvWVw'; // Pièces
 const SUPABASE_URL = ENV.SUPABASE_URL || ENV.VITE_SUPABASE_URL;
 const ADMIN_BULK_SECRET = ENV.ADMIN_BULK_SECRET;
+// Clé publishable (anon) — lecture seule de l'état image des pièces (Option b).
+// RLS "Public can read parts" USING(true) → lit toutes les pièces, y compris published:false.
+const SUPABASE_ANON = ENV.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 // Tables liées (résolution des record IDs → valeurs lisibles)
 const TABLE_CATEGORIES = 'tbl0VC6e7p0psD9mx';
@@ -328,6 +331,57 @@ async function processImages(entityId, sourceUrls, altBase, secret, url) {
   return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr, errors };
 }
 
+// ─── Lecture état image en base (Option b — lecture seule, clé publishable) ─────
+//
+// "A une image" : prédicat STRICTEMENT identique à getPrimaryImage du front
+// (src/lib/entityImage.ts) — images[] non vide dont [0].url est une string NON vide,
+// OU image_url NON vide. Toute divergence ferait re-détourer (ou skipper) à tort.
+
+function normalizeImages(images) {
+  // jsonb peut, dans de rares cas, être stocké comme string JSON (cf. trigger
+  // sync_part_image_url qui gère jsonb_typeof='string'). On reparse défensivement.
+  if (typeof images === 'string') {
+    try { return JSON.parse(images); } catch { return null; }
+  }
+  return images;
+}
+
+function partHasImage(row) {
+  const images = normalizeImages(row?.images);
+  if (
+    Array.isArray(images) && images.length > 0 &&
+    typeof images[0]?.url === 'string' && images[0].url !== ''
+  ) {
+    return true;
+  }
+  return typeof row?.image_url === 'string' && row.image_url !== '';
+}
+
+// Lit parts(slug, images, image_url) par lots de slugs → Map<slug, hasImage:boolean>.
+// Un slug absent de la Map = pièce inexistante en base. Lève en cas d'échec HTTP
+// (l'appelant retombe alors en inserted-only, prudent).
+async function fetchPartsImageState(slugs) {
+  const state = new Map();
+  if (!SUPABASE_ANON || slugs.length === 0) return state;
+  const CHUNK = 100;
+  for (let i = 0; i < slugs.length; i += CHUNK) {
+    const chunk = slugs.slice(i, i + CHUNK);
+    const u = new URL(`${SUPABASE_URL}/rest/v1/parts`);
+    u.searchParams.set('select', 'slug,images,image_url');
+    u.searchParams.set('slug', `in.(${chunk.map((s) => `"${s}"`).join(',')})`);
+    const res = await fetch(u.toString(), {
+      headers: { apikey: SUPABASE_ANON, Authorization: `Bearer ${SUPABASE_ANON}` },
+    });
+    if (!res.ok) {
+      throw new Error(`REST parts ${res.status}: ${(await res.text()).slice(0, 120)}`);
+    }
+    for (const row of await res.json()) {
+      state.set(row.slug, partHasImage(row));
+    }
+  }
+  return state;
+}
+
 async function bulkInsert(parts) {
   const url = `${SUPABASE_URL}/functions/v1/bulk-insert-parts`;
   const processImgUrl = `${SUPABASE_URL}/functions/v1/process-images`;
@@ -338,6 +392,20 @@ async function bulkInsert(parts) {
   let totalInserted = 0;
   let errors = 0;
   let imgOk = 0, imgErr = 0, imgSkip = 0;
+
+  // Garde-fou Option b : sans clé publishable, impossible de lire l'état image des
+  // "updated" → fallback inserted-only, avec un WARN bien visible (jamais silencieux).
+  const imageCheckEnabled = Boolean(SUPABASE_ANON);
+  if (!imageCheckEnabled) {
+    console.warn(
+      '\n╔══════════════════════════════════════════════════════════════════════╗' +
+      '\n║  ⚠️  VITE_SUPABASE_PUBLISHABLE_KEY absente du .env                     ║' +
+      '\n║  → Impossible de vérifier l\'image des pièces "updated".               ║' +
+      '\n║  → FALLBACK : seules les pièces "inserted" seront détourées.          ║' +
+      '\n║  → Les pièces déjà en base SANS image ne seront PAS re-détourées.     ║' +
+      '\n╚══════════════════════════════════════════════════════════════════════╝\n',
+    );
+  }
 
   for (const categoryName of categories) {
     const partsInCat = groups[categoryName];
@@ -372,7 +440,9 @@ async function bulkInsert(parts) {
       continue;
     }
 
-    // ── Détourage des Photos source (lignes "inserted" uniquement) ──────────────
+    // ── Détourage des Photos source ────────────────────────────────────────────
+    // Détoure si status==="inserted" OU (status==="updated" ET pas encore d'image en
+    // base). "pas d'image" = prédicat identique au front (partHasImage / getPrimaryImage).
     const rows = result.results?.rows;
     if (Array.isArray(rows)) {
       const urlsBySlug = new Map(
@@ -381,16 +451,39 @@ async function bulkInsert(parts) {
           .map((p) => [p.slug, p.source_image_urls]),
       );
 
+      // Slugs "updated" candidats (ont des photos source) → on lit leur état image en
+      // base pour ne re-détourer que celles qui n'ont pas encore d'image.
+      const updatedSlugs = rows
+        .filter((r) => r.status === 'updated' && urlsBySlug.has(r.slug))
+        .map((r) => r.slug);
+
+      let imgState = new Map(); // slug → bool (a déjà une image)
+      if (imageCheckEnabled && updatedSlugs.length > 0) {
+        try {
+          imgState = await fetchPartsImageState(updatedSlugs);
+        } catch (e) {
+          console.warn(
+            `\n   ⚠  Lecture images "updated" échouée (${categoryName}) : ${e.message}` +
+            `\n   ⚠  → fallback inserted-only pour cette catégorie (pas de re-détourage des updated).`,
+          );
+          // Prudence : tout marquer "a une image" → les updated sont skip.
+          imgState = new Map(updatedSlugs.map((s) => [s, true]));
+        }
+      }
+
       for (const r of rows) {
-        // Sémantique conservée : seules les créations se détourent (pas les maj).
-        if (r.status !== 'inserted') { imgSkip++; continue; }
+        const isInserted = r.status === 'inserted';
+        const isUpdatedNoImage =
+          imageCheckEnabled && r.status === 'updated' && imgState.get(r.slug) !== true;
+        if (!isInserted && !isUpdatedNoImage) { imgSkip++; continue; }
         const srcUrls = urlsBySlug.get(r.slug);
         if (!srcUrls) { imgSkip++; continue; }
         if (!r.id) {
           console.log(`   ⚠  Images ${r.slug} : UUID absent dans la réponse, skip`);
           imgSkip++; continue;
         }
-        process.stdout.write(`   🖼  Images ${r.slug} : traitement...`);
+        const tag = isInserted ? 'nouvelle' : 'updated sans image';
+        process.stdout.write(`   🖼  Images ${r.slug} (${tag}) : traitement...`);
         const imgResult = await processImages(r.id, srcUrls, r.name, ADMIN_BULK_SECRET, processImgUrl);
         if (imgResult.ok) {
           if (imgResult.failed > 0) {
@@ -436,6 +529,56 @@ function printDryRun(parts) {
   console.log('[sync] Dry-run terminé. Mettre DRY_RUN=false dans .env pour insérer + détourer.');
 }
 
+// Aperçu lecture seule (DRY_RUN) : prédit quelles pièces seraient détourées en run réel,
+// via le même état image que le run réel (fetchPartsImageState). Aucun POST.
+//   - slug absent de la base  → serait "inserted" → détoure
+//   - slug présent sans image → serait "updated"  → détoure
+//   - slug présent avec image → skip
+async function printDetourPreview(parts) {
+  console.log('\n[sync] === APERÇU DÉTOURAGE (lecture seule, aucun POST) ===');
+  if (!SUPABASE_ANON) {
+    console.warn(
+      '[sync] ⚠️  VITE_SUPABASE_PUBLISHABLE_KEY absente → aperçu indisponible.' +
+      '\n[sync] ⚠️  En run réel : fallback inserted-only (les updated sans image ne seraient PAS détourées).',
+    );
+    return;
+  }
+
+  const candidates = parts.filter(
+    (p) => Array.isArray(p.source_image_urls) && p.source_image_urls.length > 0,
+  );
+  if (candidates.length === 0) {
+    console.log('[sync] Aucune pièce avec photos source → rien à détourer.');
+    return;
+  }
+
+  const slugs = [...new Set(candidates.map((p) => p.slug))];
+  let state;
+  try {
+    state = await fetchPartsImageState(slugs);
+  } catch (e) {
+    console.warn(`[sync] ⚠️  Lecture images échouée : ${e.message} → aperçu indisponible.`);
+    return;
+  }
+
+  let willInsert = 0, willUpdateNoImg = 0, willSkip = 0;
+  for (const p of candidates) {
+    if (!state.has(p.slug)) {
+      willInsert++;
+      console.log(`  + ${p.slug} — nouvelle pièce → détoure`);
+    } else if (state.get(p.slug) !== true) {
+      willUpdateNoImg++;
+      console.log(`  ~ ${p.slug} — déjà en base, sans image → détoure`);
+    } else {
+      willSkip++;
+    }
+  }
+  console.log(
+    `\n[sync] Aperçu : ${willInsert} nouvelle(s) + ${willUpdateNoImg} updated sans image ` +
+    `= ${willInsert + willUpdateNoImg} à détourer · ${willSkip} déjà une image → skip.`,
+  );
+}
+
 (async () => {
   try {
     if (DRY_RUN) console.log('[sync] Mode DRY-RUN activé.');
@@ -464,6 +607,7 @@ function printDryRun(parts) {
 
     if (DRY_RUN) {
       printDryRun(parts);
+      await printDetourPreview(parts);
       return;
     }
 
