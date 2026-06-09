@@ -1113,9 +1113,12 @@ export type Database = {
       parts: {
         Row: {
           category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
           created_at: string
           description: string | null
           difficulty_level: number | null
+          ean: string | null
           estimated_install_time_minutes: number | null
           id: string
           image_url: string | null
@@ -1138,9 +1141,12 @@ export type Database = {
         }
         Insert: {
           category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
           created_at?: string
           description?: string | null
           difficulty_level?: number | null
+          ean?: string | null
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
@@ -1163,9 +1169,12 @@ export type Database = {
         }
         Update: {
           category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
           created_at?: string
           description?: string | null
           difficulty_level?: number | null
+          ean?: string | null
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null

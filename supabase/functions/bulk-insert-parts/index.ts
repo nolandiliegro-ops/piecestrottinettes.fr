@@ -54,6 +54,9 @@ interface PartInput {
   is_featured?: boolean;
   supplier?: SupplierInput;
   compatibility_hints?: CompatibilityHints;
+  ean?: string;
+  characteristics?: string;
+  compatibility_source?: string;
 }
 
 interface RequestBody {
@@ -347,6 +350,9 @@ const handler = async (req: Request): Promise<Response> => {
           technical_metadata: part.technical_metadata || {},
           is_featured: part.is_featured ?? false,
           published: false,
+          ean: part.ean ?? null,
+          characteristics: part.characteristics ?? null,
+          compatibility_source: part.compatibility_source ?? null,
         };
 
         const { data: existing } = await supabase
