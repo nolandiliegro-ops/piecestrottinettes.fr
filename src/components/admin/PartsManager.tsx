@@ -48,6 +48,7 @@ interface Part {
   meta_description: string | null;
   created_at?: string;
   is_featured?: boolean;
+  price_override?: boolean;
 }
 
 interface Category {
@@ -111,6 +112,7 @@ const PartsManager = () => {
     meta_description: '',
     technical_metadata: '{}',
     is_featured: false,
+    price_override: false,
     compatibleScooterIds: [] as string[]
   });
 
@@ -131,6 +133,7 @@ const PartsManager = () => {
     meta_description: '',
     technical_metadata: '{}',
     is_featured: false,
+    price_override: false,
     compatibleScooterIds: [] as string[]
   });
 
@@ -159,7 +162,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
+        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -214,15 +217,17 @@ const PartsManager = () => {
           meta_title: newPart.meta_title.trim() || null,
           meta_description: newPart.meta_description.trim() || null,
           technical_metadata: (technicalMetadata || {}) as Json,
-          is_featured: newPart.is_featured
+          is_featured: newPart.is_featured,
+          // Prix saisi à la création OU case cochée → verrouillé contre le sync Airtable.
+          price_override: newPart.price_override || !!newPart.price
         })
-        .select('id, name, slug, price, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
+        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
         .single();
 
       if (error) throw error;
 
       setParts(prev => [...prev, data]);
-      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, compatibleScooterIds: [] });
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, price_override: false, compatibleScooterIds: [] });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
     } catch (error: any) {
@@ -255,6 +260,7 @@ const PartsManager = () => {
       meta_description: part.meta_description || '',
       technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}',
       is_featured: part.is_featured || false,
+      price_override: part.price_override ?? false,
       compatibleScooterIds: [] // Will be loaded by ScooterCompatibilitySelect component
     });
     setIsEditOpen(true);
@@ -272,13 +278,18 @@ const PartsManager = () => {
     setSaving(true);
     try {
       const slug = slugify(editValues.name);
+      const newPrice = editValues.price ? parseFloat(editValues.price) : null;
+      // Verrou prix : case cochée OU prix modifié → price_override=true (le sync
+      // Airtable ne réécrasera jamais ce prix). Décocher la case rend la main à Airtable.
+      const priceOverride = editValues.price_override || newPrice !== (editPart.price ?? null);
       const { error } = await supabase
         .from('parts')
         .update({
           name: editValues.name.trim(),
           slug,
           category_id: editValues.category_id || null,
-          price: editValues.price ? parseFloat(editValues.price) : null,
+          price: newPrice,
+          price_override: priceOverride,
           stock_quantity: editValues.stock ? parseInt(editValues.stock) : 0,
           description: editValues.description.trim() || null,
           difficulty_level: editValues.difficulty_level ? parseInt(editValues.difficulty_level) : null,
@@ -303,7 +314,8 @@ const PartsManager = () => {
               name: editValues.name.trim(),
               slug,
               category_id: editValues.category_id || null,
-              price: editValues.price ? parseFloat(editValues.price) : null,
+              price: newPrice,
+              price_override: priceOverride,
               stock_quantity: editValues.stock ? parseInt(editValues.stock) : 0,
               description: editValues.description.trim() || null,
               difficulty_level: editValues.difficulty_level ? parseInt(editValues.difficulty_level) : null,
@@ -725,9 +737,19 @@ const PartsManager = () => {
             <Input value={values.sku} onChange={(e) => setValues({ ...values, sku: e.target.value })} placeholder="REF-001" />
           </div>
           <div className="space-y-2">
-            <Label>Prix (€)</Label>
+            <Label>Prix TTC (€)</Label>
             <Input type="number" value={values.price} onChange={(e) => setValues({ ...values, price: e.target.value })} placeholder="0.00" />
           </div>
+        </div>
+        <div className="flex items-center justify-between rounded-lg border border-gray-200 p-3">
+          <div className="space-y-0.5">
+            <Label>Prix piloté manuellement</Label>
+            <p className="text-xs text-muted-foreground">Le sync Airtable ne réécrasera jamais ce prix. Décocher pour rendre la main à Airtable.</p>
+          </div>
+          <Switch
+            checked={values.price_override}
+            onCheckedChange={(checked) => setValues({ ...values, price_override: checked })}
+          />
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">

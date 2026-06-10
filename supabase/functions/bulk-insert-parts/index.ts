@@ -357,11 +357,20 @@ const handler = async (req: Request): Promise<Response> => {
 
         const { data: existing } = await supabase
           .from("parts")
-          .select("id")
+          .select("id, price, price_override")
           .eq("slug", part.slug)
           .maybeSingle();
 
         const wasNew = !existing;
+
+        // Override admin prioritaire (logique "Option B", cf. images) : si la pièce
+        // existe et price_override=true, on NE réécrase PAS le prix depuis Airtable —
+        // on conserve la valeur en base. price_override n'est jamais inclus dans `row`,
+        // donc l'upsert laisse le flag intact (update) ou prend le DEFAULT false (insert) ;
+        // seul l'admin le pose.
+        if (existing?.price_override === true) {
+          row.price = existing.price;
+        }
 
         const { error: upsertError } = await supabase
           .from("parts")

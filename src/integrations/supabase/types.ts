@@ -1129,6 +1129,7 @@ export type Database = {
           min_stock_alert: number | null
           name: string
           price: number | null
+          price_override: boolean
           published: boolean
           required_tools: string[] | null
           search_document: string | null
@@ -1157,6 +1158,7 @@ export type Database = {
           min_stock_alert?: number | null
           name: string
           price?: number | null
+          price_override?: boolean
           published?: boolean
           required_tools?: string[] | null
           search_document?: string | null
@@ -1185,6 +1187,7 @@ export type Database = {
           min_stock_alert?: number | null
           name?: string
           price?: number | null
+          price_override?: boolean
           published?: boolean
           required_tools?: string[] | null
           search_document?: string | null

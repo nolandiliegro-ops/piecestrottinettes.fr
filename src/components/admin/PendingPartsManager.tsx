@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Switch } from '@/components/ui/switch';
 import { Loader2, Check, Trash2, Bot, Pencil, ExternalLink, ImageIcon, CheckCheck, Package, Euro, Wrench, ChevronDown } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import PartSuppliersManager from './PartSuppliersManager';
@@ -77,6 +78,7 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
         youtube_video_id: part.youtube_video_id || '',
         meta_title: part.meta_title || '',
         meta_description: part.meta_description || '',
+        price_override: part.price_override ?? false,
       });
     }
   }, [part]);
@@ -96,6 +98,11 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
         if (payload[k] === '') payload[k] = null;
       });
       if (payload.category_id === '') payload.category_id = null;
+      // Verrou prix : comparaison number vs number (payload.price vient d'un Input string).
+      // case cochée OU prix réellement modifié → price_override=true (jamais réécrasé par le sync Airtable).
+      const newPrice = (payload.price === null || payload.price === '' || payload.price === undefined) ? null : Number(payload.price);
+      payload.price = newPrice;
+      payload.price_override = !!form.price_override || newPrice !== (part.price ?? null);
       const { error } = await supabase.from('parts').update(payload).eq('id', part.id);
       if (error) throw error;
     },
@@ -140,9 +147,20 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
           </div>
 
           <div className="grid grid-cols-3 gap-3">
-            {field('Prix HT (€)', 'price', 'number')}
+            {field('Prix TTC (€)', 'price', 'number')}
             {field('Stock', 'stock_quantity', 'number')}
             {field('Difficulté (1-5)', 'difficulty_level', 'number')}
+          </div>
+
+          <div className="flex items-center justify-between rounded border border-[hsl(0_0%_20%)] p-2.5">
+            <div className="space-y-0.5">
+              <label className="text-xs text-[hsl(0_0%_75%)]">Prix piloté manuellement</label>
+              <p className="text-[10px] text-[hsl(0_0%_50%)]">Le sync Airtable ne réécrasera jamais ce prix.</p>
+            </div>
+            <Switch
+              checked={!!form.price_override}
+              onCheckedChange={(checked) => setForm(f => ({ ...f, price_override: checked }))}
+            />
           </div>
 
           <div className="space-y-1">
