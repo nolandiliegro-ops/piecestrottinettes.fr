@@ -51,6 +51,9 @@ const ADMIN_BULK_SECRET = ENV.ADMIN_BULK_SECRET;
 const EXTRACT_URL =
   ENV.EXTRACT_PRODUCT_URL ||
   'https://kqsxscjtlipregkrmucg.supabase.co/functions/v1/extract-product';
+const GENERATE_SEO_URL =
+  ENV.GENERATE_PART_SEO_URL ||
+  'https://kqsxscjtlipregkrmucg.supabase.co/functions/v1/generate-part-seo';
 
 // ─── Tables & champs (IDs Airtable, robustes aux renommages) ───────────────────
 const TABLE_LIAISON = 'tbl2NhTcgrEJSDjUl';
@@ -65,6 +68,11 @@ const F_PIECE_EAN = 'fldCdtbyVIh76jLT0';          // Pièces : EAN
 const F_PIECE_SPECS = 'fldwCu08OnHRBZz4Y';        // Pièces : Caractéristiques
 const F_PIECE_COMPAT = 'fldotemKZlLMUP8Um';       // Pièces : Compatibilité source
 const F_PIECE_PHOTOS = 'fldiB7HKuHL7CU8yp';       // Pièces : Photos source
+// Champs SEO rédigés par generate-part-seo (jamais le champ "Description" brut fldHEGORilfwqhpPA :
+// sync-airtable-wattiz pousse "Description SEO" → parts.description).
+const F_PIECE_DESC_SEO = 'fld4U8m1qArXwpprE';     // Pièces : Description SEO   → parts.description
+const F_PIECE_META_TITLE = 'fldUPz6QJlJubuWPV';   // Pièces : Meta title SEO   → parts.meta_title
+const F_PIECE_META_DESC = 'fldxkVuvjl1GfMsgE';    // Pièces : Meta description SEO → parts.meta_description
 
 const STATUT_EXTRAIT = 'Extrait';
 const STATUT_BLOQUE = 'Bloqué';
@@ -72,6 +80,8 @@ const STATUT_ERREUR = 'Erreur';
 
 const DELAY_BETWEEN_MS = 2500; // anti rate-limit entre pièces
 const BLOCKED_RETRY_PAUSE_MS = 10000; // pause avant le retry sur "blocked"
+const SEO_MAX_ATTEMPTS = 3;       // VOLET 1 : 3 tentatives generate-part-seo (1 + 2 retries)
+const SEO_RETRY_PAUSE_MS = 1500;  // pause entre tentatives SEO
 
 if (!AIRTABLE_API_KEY) { console.error('❌ AIRTABLE_API_KEY manquante dans .env'); process.exit(1); }
 if (!ADMIN_BULK_SECRET) { console.error('❌ ADMIN_BULK_SECRET manquante dans .env'); process.exit(1); }
@@ -155,6 +165,26 @@ async function callExtract(url) {
   return json;
 }
 
+// ─── generate-part-seo ───────────────────────────────────────────────────────────
+// Génère description (HTML) + meta_title + meta_description ORIGINAUX à partir des
+// specs vérifiées. Même auth (x-admin-secret) et même style fetch que callExtract.
+// Lève si status !== 'ok' → l'appelant traite l'échec en best-effort (specs gardées).
+async function callGenerateSeo(payload) {
+  const res = await fetch(GENERATE_SEO_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-admin-secret': ADMIN_BULK_SECRET },
+    body: JSON.stringify(payload),
+  });
+  const text = await res.text();
+  let json;
+  try { json = JSON.parse(text); }
+  catch { throw new Error(`SEO réponse non-JSON (HTTP ${res.status}): ${text.slice(0, 120)}`); }
+  if (json.status !== 'ok') {
+    throw new Error(`SEO status=${json.status ?? 'inconnu'}${json.message ? ` (${json.message})` : ''}`);
+  }
+  return json; // { status, description, meta_title, meta_description }
+}
+
 const firstLink = (v) => (Array.isArray(v) && v.length > 0 ? v[0] : null);
 const asArray = (v) => (Array.isArray(v) ? v : v == null ? [] : [v]);
 const joinList = (v) => asArray(v).map((x) => String(x).trim()).filter(Boolean).join(', ');
@@ -200,6 +230,7 @@ async function main() {
   console.log(`[enrich] ${todo.length} liaison(s) avec URL fournisseur.\n`);
 
   let ok = 0, blocked = 0, errored = 0, skipped = 0;
+  let seoOk = 0, seoFail = 0;
   const blockedUrls = [];
 
   for (const liaison of todo) {
@@ -247,8 +278,64 @@ async function main() {
         console.log(`   ❌ erreur${json.error ? ` — ${json.error}` : ''}`);
       }
 
+      // ─── Étape SEO (status ok uniquement) ───────────────────────────────────
+      // VOLET 1 : retry (SEO_MAX_ATTEMPTS) car generate-part-seo échoue parfois
+      // (validation_failed / parse_failed non déterministes) — même esprit que le
+      // retry "blocked" d'extract-product.
+      let seo = null;
+      if (json.status === 'ok') {
+        for (let attempt = 1; attempt <= SEO_MAX_ATTEMPTS; attempt++) {
+          try {
+            seo = await callGenerateSeo({
+              name: json.name,
+              specs: json.specs,
+              compatibility: json.compatibility,
+              ean: json.ean,
+              category_hint: json.category_hint,
+              brand: json.brand,
+            });
+            break; // succès → sortie de la boucle de retry
+          } catch (e) {
+            if (attempt < SEO_MAX_ATTEMPTS) {
+              console.log(`   ⏳ SEO tentative ${attempt}/${SEO_MAX_ATTEMPTS} KO (${e.message}) — retry dans ${SEO_RETRY_PAUSE_MS / 1000}s...`);
+              await sleep(SEO_RETRY_PAUSE_MS);
+            } else {
+              console.log(`   ⚠  SEO échec définitif après ${SEO_MAX_ATTEMPTS} tentatives — ${e.message}`);
+            }
+          }
+        }
+
+        if (seo) {
+          // Filet déterministe : la PDP a déjà son <h1> (nom de la pièce). On downgrade
+          // tout <h1>/</h1> résiduel en <h2> pour ne jamais écrire de H1 dual en base.
+          fields[F_PIECE_DESC_SEO] = String(seo.description ?? '').replace(/<(\/?)h1\b([^>]*)>/gi, '<$1h2$2>');
+          fields[F_PIECE_META_TITLE] = seo.meta_title ?? '';
+          fields[F_PIECE_META_DESC] = seo.meta_description ?? '';
+          seoOk++;
+          const mtLen = [...(seo.meta_title ?? '')].length;
+          const mdLen = [...(seo.meta_description ?? '')].length;
+          console.log(`   📝 SEO ok (meta_title=${mtLen}c, meta_description=${mdLen}c)`);
+        } else {
+          // VOLET 2 — garde-fou anti-"faux fini" : SEO KO après tous les essais.
+          // L'extraction (ean/specs/compat/photos) reste écrite, MAIS on NE marque PAS
+          // la pièce comme terminée : on force Re-extraire=true (override du false posé
+          // par buildFields) pour qu'un prochain run la reprenne automatiquement, au
+          // lieu de la laisser publiable avec un SEO vide.
+          seoFail++;
+          fields[F_PIECE_REEXTRAIRE] = true;
+          console.log(`   ⚠  SEO manquant → Re-extraire laissé coché (reprise auto au prochain run, extraction conservée)`);
+        }
+      }
+
       if (DRY_RUN) {
         console.log(`   [DRY] ${pieceId} ← ${JSON.stringify(fields)}`);
+        if (seo) {
+          console.log(`   [DRY] SEO meta_title    : ${seo.meta_title ?? ''}`);
+          console.log(`   [DRY] SEO meta_descript : ${seo.meta_description ?? ''}`);
+          const writtenDesc = String(fields[F_PIECE_DESC_SEO] ?? '');
+          const descPreview = writtenDesc.replace(/\s+/g, ' ').slice(0, 200);
+          console.log(`   [DRY] SEO description   : ${descPreview}${writtenDesc.length > 200 ? '…' : ''}`);
+        }
       } else {
         await patchPiece(pieceId, fields);
         console.log(`   💾 écrit sur ${pieceId}`);
@@ -268,6 +355,8 @@ async function main() {
   console.log(`🚫 bloquées  : ${blocked}`);
   console.log(`❌ erreurs   : ${errored}`);
   console.log(`⏭  skippées  : ${skipped}`);
+  console.log(`📝 SEO ok    : ${seoOk}`);
+  console.log(`⚠  SEO échec : ${seoFail}`);
   if (blockedUrls.length > 0) {
     console.log('\nURLs bloquées :');
     for (const u of blockedUrls) console.log(`  • ${u}`);
