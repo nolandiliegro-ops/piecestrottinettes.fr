@@ -1,6 +1,5 @@
-Redéployer l'edge function `bulk-insert-parts` pour activer le code du commit 48fda8a (pré-select lisant `price_override`).
+Redéployer l'Edge Function `generate-part-seo` (créée précédemment) pour activer la nouvelle version en production.
 
-Action unique :
-- `supabase--deploy_edge_functions(["bulk-insert-parts"])`
+Action unique : `supabase--deploy_edge_functions(["generate-part-seo"])`.
 
-Aucun fichier modifié, aucune migration. Je confirmerai la fin du redéploiement dès qu'il est terminé.
+Aucun fichier modifié, aucune migration, aucun effet sur les autres fonctions.
