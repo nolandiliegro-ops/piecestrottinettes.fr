@@ -16,6 +16,8 @@ UNICITÉ — colonne vertébrale obligatoire. Beaucoup de pièces se ressemblent
 
 STRUCTURE de la description (français, 150-220 mots, en HTML léger : <h2> et <p> uniquement) :
 
+RÈGLE STRUCTURE HTML (champ description) : N'utilise JAMAIS la balise <h1>. Le titre racine de la description DOIT être un <h2>. Hiérarchie autorisée et unique : <h2> pour les titres de section (présentation, compatibilité, caractéristiques, installation), <h3> pour les questions de la FAQ, <p> pour le texte, <ul>/<li> pour les listes. Toute balise <h1> est strictement interdite : la page produit possède déjà son propre <h1> (le nom de la pièce), un second <h1> casserait le SEO.
+
 - 1 phrase d'accroche : type de pièce + dimension exacte + 2-3 modèles compatibles phares.
 
 - <h2>Compatibilité</h2> : liste claire des modèles compatibles fournis.
