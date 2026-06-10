@@ -1,14 +1,6 @@
-## Objectif
-Redéployer `process-images` pour récupérer le commit 8e211b4 (mode base64 "image déjà détourée").
+Redéployer l'edge function `bulk-insert-parts` pour activer le code du commit 48fda8a (pré-select lisant `price_override`).
 
-## Action
-1. `supabase--deploy_edge_functions({ function_names: ["process-images"] })`
-2. Retour du statut.
+Action unique :
+- `supabase--deploy_edge_functions(["bulk-insert-parts"])`
 
-## Exclu
-Aucun changement code / BDD / secrets / RLS / config / autres functions / front.
-
-## Rollback
-Redéployer la version précédente depuis l'historique Supabase si régression.
-
-Confirme pour lancer.
+Aucun fichier modifié, aucune migration. Je confirmerai la fin du redéploiement dès qu'il est terminé.
