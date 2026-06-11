@@ -357,7 +357,7 @@ const handler = async (req: Request): Promise<Response> => {
 
         const { data: existing } = await supabase
           .from("parts")
-          .select("id, price, price_override")
+          .select("id, price, price_override, published, stock_quantity")
           .eq("slug", part.slug)
           .maybeSingle();
 
@@ -370,6 +370,16 @@ const handler = async (req: Request): Promise<Response> => {
         // seul l'admin le pose.
         if (existing?.price_override === true) {
           row.price = existing.price;
+        }
+
+        // Même principe pour published et stock_quantity : pilotés DANS l'app (admin),
+        // jamais par Airtable. Sur une pièce déjà en base, on conserve l'existant au lieu
+        // de l'écraser (sinon re-dépublication + stock remis à 0 à chaque sync).
+        // Nouvelle pièce (pas d'existing) : comportement initial conservé via le row
+        // (published:false, stock_quantity: part.stock_quantity ?? 0).
+        if (existing) {
+          row.published = existing.published;
+          row.stock_quantity = existing.stock_quantity;
         }
 
         const { error: upsertError } = await supabase
