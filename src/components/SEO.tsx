@@ -11,8 +11,25 @@ interface SEOProps {
   nextUrl?: string;
 }
 
+const SITE_BRAND = "Pièces Trottinettes";
+const MAX_TITLE = 60;
+
+// Retire un suffixe de branding déjà présent dans le titre fourni (site ou marque),
+// insensible casse/accents. Exige un séparateur ( | – — - ) + ancre de fin → non destructif.
+function stripBranding(raw: string): string {
+  return raw
+    .replace(/\s*[|–—-]\s*pi[eè]ces?\s+trottinettes?\s*$/i, "")  // | Pièces Trottinettes
+    .replace(/\s*[|–—-]\s*pi[eè]cestrottinettes\.fr\s*$/i, "")    // | piecestrottinettes.fr / — piècestrottinettes.fr
+    .trim();
+}
+
 const SEO = ({ title, description, image, canonical, noindex = false, schema, prevUrl, nextUrl }: SEOProps) => {
-  const fullTitle = `${title} | Pièces Trottinettes`;
+  // Le meta_title produit est déjà un titre complet/optimisé. On dédoublonne tout
+  // branding existant, puis on rajoute la marque UNE fois — seulement si on reste ≤ 60c
+  // (sinon Google tronque). Au-delà, on garde le titre nu.
+  const baseTitle = stripBranding(title);
+  const withBrand = `${baseTitle} | ${SITE_BRAND}`;
+  const fullTitle = withBrand.length <= MAX_TITLE ? withBrand : baseTitle;
   const url = canonical ?? (typeof window !== "undefined" ? window.location.href : "");
 
   return (
