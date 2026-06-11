@@ -539,20 +539,17 @@ const CheckoutPage = () => {
                 {/* Totals */}
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Sous-total HT</span>
+                    <span className="text-muted-foreground">Sous-total</span>
                     <span className="text-carbon">{formatPrice(totals.subtotalHT)}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">TVA (20%)</span>
-                    <span className="text-carbon">{formatPrice(totals.tva)}</span>
                   </div>
                   <div className="h-px bg-mineral/15 my-2" />
                   <div className="flex justify-between items-baseline">
-                    <span className="font-display text-lg text-carbon">TOTAL TTC</span>
+                    <span className="font-display text-lg text-carbon">TOTAL</span>
                     <span className="font-display text-3xl text-mineral tracking-wide">
                       {formatPrice(totals.totalTTC)}
                     </span>
                   </div>
+                  <p className="text-xs text-muted-foreground">TVA non applicable, art. 293 B du CGI</p>
                 </div>
 
                 {/* Submit Button - Desktop */}

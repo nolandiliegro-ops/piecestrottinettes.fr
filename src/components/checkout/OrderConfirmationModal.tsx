@@ -349,12 +349,8 @@ const OrderConfirmationModal = ({
               {/* Totals */}
               <div className="border-t border-greige/50 pt-4 space-y-1.5">
                 <div className="flex justify-between text-xs">
-                  <span className="text-muted-foreground">Sous-total HT</span>
+                  <span className="text-muted-foreground">Sous-total</span>
                   <span className="text-carbon">{formatPrice(totals.subtotalHT)}</span>
-                </div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-muted-foreground">TVA (20%)</span>
-                  <span className="text-carbon">{formatPrice(totals.tva)}</span>
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-muted-foreground">Livraison ({selectedDelivery.name})</span>
@@ -365,9 +361,10 @@ const OrderConfirmationModal = ({
                   </span>
                 </div>
                 <div className="flex justify-between items-baseline pt-2 border-t border-greige/50">
-                  <span className="font-display text-base text-carbon">TOTAL TTC</span>
+                  <span className="font-display text-base text-carbon">TOTAL</span>
                   <span className="font-display text-xl text-mineral tracking-wide">{formatPrice(finalTotalTTC)}</span>
                 </div>
+                <p className="text-xs text-muted-foreground text-right">TVA non applicable, art. 293 B du CGI</p>
                 <div className="flex items-center justify-end gap-2 text-xs text-mineral">
                   <Gem className="w-3.5 h-3.5" />
                   <span>+{finalLoyaltyPoints} points fidélité</span>

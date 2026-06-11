@@ -17,7 +17,6 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 const CART_STORAGE_KEY = 'pt-cart';
 const SAVED_CONFIG_KEY = 'pt-saved-config';
-const TVA_RATE = 0.20; // 20% TVA
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [items, setItems] = useState<CartItem[]>(() => {
@@ -39,8 +38,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   // Calculate totals with loyalty points
   const totals = useMemo<CartTotals>(() => {
     const subtotalHT = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const tva = subtotalHT * TVA_RATE;
-    const totalTTC = subtotalHT + tva;
+    const tva = 0; // Franchise en base de TVA (art. 293 B CGI) — aucune TVA facturée
+    const totalTTC = subtotalHT;
     return {
       itemCount: items.reduce((sum, item) => sum + item.quantity, 0),
       subtotalHT,

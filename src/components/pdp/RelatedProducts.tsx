@@ -106,7 +106,7 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
 
                 {part.price != null && (
                   <p className="font-black text-[#4A7C59] text-lg">
-                    {formatPrice(part.price * 1.2)}
+                    {formatPrice(part.price)}
                   </p>
                 )}
 

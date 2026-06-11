@@ -262,12 +262,8 @@ const generateConfirmationHTML = (
               <p style="margin:0 0 16px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Détails financiers</p>
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td style="padding:6px 0;font-size:14px;color:#555;">Sous-total HT</td>
+                  <td style="padding:6px 0;font-size:14px;color:#555;">Sous-total</td>
                   <td style="padding:6px 0;font-size:14px;color:#2C2C2C;text-align:right;font-weight:500;">${formatPrice(details.subtotalHT)}</td>
-                </tr>
-                <tr>
-                  <td style="padding:6px 0;font-size:14px;color:#555;">TVA (20%)</td>
-                  <td style="padding:6px 0;font-size:14px;color:#2C2C2C;text-align:right;font-weight:500;">${formatPrice(details.tvaAmount)}</td>
                 </tr>
                 <tr>
                   <td style="padding:6px 0;font-size:14px;color:#555;">Livraison (${deliveryLabel})</td>
@@ -277,8 +273,11 @@ const generateConfirmationHTML = (
                   <td colspan="2" style="padding:12px 0 0;"><div style="height:1px;background:#f0ede9;"></div></td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0 0;font-size:16px;color:#2C2C2C;font-weight:700;">Total TTC</td>
+                  <td style="padding:12px 0 0;font-size:16px;color:#2C2C2C;font-weight:700;">Total</td>
                   <td style="padding:12px 0 0;font-size:16px;color:#93B5A1;text-align:right;font-weight:700;">${formatPrice(totalTTC)}</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding:6px 0 0;font-size:11px;color:#999;">TVA non applicable, art. 293 B du CGI</td>
                 </tr>
               </table>
 

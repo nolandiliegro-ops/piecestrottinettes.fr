@@ -110,7 +110,7 @@ const PurchaseBlock = ({
         {price !== null && (
           <div className="flex items-baseline gap-2">
             <span className="text-4xl font-black text-[#1A1A1A]">
-              {formatPrice(price * 1.2)}
+              {formatPrice(price)}
             </span>
           </div>
         )}

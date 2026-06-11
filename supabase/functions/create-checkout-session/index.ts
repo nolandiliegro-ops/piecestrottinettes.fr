@@ -7,8 +7,6 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
-const TVA_RATE = 0.20;
-
 interface CartItem {
   id: string;
   quantity: number;
@@ -141,7 +139,7 @@ serve(async (req) => {
             name: part.name,
             images: part.image_url ? [part.image_url] : [],
           },
-          unit_amount: Math.round(part.price * (1 + TVA_RATE) * 100),
+          unit_amount: Math.round(part.price * 100),
         },
         quantity: cartItem.quantity,
       });
@@ -198,8 +196,8 @@ serve(async (req) => {
     }
 
     // Calculate totals
-    const tvaAmount = subtotalHT * TVA_RATE;
-    const totalTTC = subtotalHT + tvaAmount + deliveryPrice;
+    const tvaAmount = 0; // Franchise en base de TVA (art. 293 B CGI) — aucune TVA facturée
+    const totalTTC = subtotalHT + deliveryPrice;
     const loyaltyPoints = Math.floor(totalTTC);
 
     // Stripe minimum charge guard (0.50 EUR). Triggered mainly when a promo

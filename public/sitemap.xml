@@ -82,8 +82,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/categorie/pneus-pleins</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Pièces -->
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-6070-7-xiaomi-mi4-pro</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-route-10x270-65</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-magura-9c-metallique</loc>
     <lastmod>2026-06-01</lastmod>
@@ -97,8 +115,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x275-semi-offroad-urbanglide-e-cross-pro-max</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/chargeur-36-volt-42v-2a-standard-gx16</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -133,6 +163,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-jaune</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-n-1</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -151,14 +193,44 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9x30-55-kukirin-g2-pro-2024</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-ninebot-es1-es2-es3-es4</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/chambre-air-10x250-valve-90x90</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9065-65</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-8x25-vsett</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-8-5x2</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x25-dualtron-mini-pop-togo-gomme-tendre</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -175,6 +247,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-7060-75-ninebot-segway-zt3-pro</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/disque-de-frein-140mm-ondule</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -183,6 +261,18 @@
   <url>
     <loc>https://piecestrottinettes.fr/piece/chambre-air-classique-85x2-xiaomi-m365</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-kuickwheel-s1c-pro</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-rouge</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -199,6 +289,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-offroad-kugoo-m4-m4-pro</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/chargeur-48-volt-54-6v-2a-standard-gx16</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -211,8 +307,56 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-dualtron-mini-pop-togo</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x3-255x80</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-12-pouces-12x2125</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x60-zero-8-dualtron-raptor</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x270-65</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-zero-8-zero-9-inokim-light-1-2</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-jante-34-mm</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-10x3-00-6-cst-tubeless</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-jante-94-mm</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -255,6 +399,12 @@
   <url>
     <loc>https://piecestrottinettes.fr/piece/chambre-a-air-9065-65-11-pouces</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-pro</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -537,6 +687,66 @@
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-bleu</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-8x2-kugoo-200x50</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-ninebot-serie-f-xiaomi-mi4</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-65-ninebot-g30-max</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-pure-electric</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-14-pouces-14x2125</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x3-vsett-8-9-kukirin-g2-pro</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-jante-44-mm</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-fluo</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x90-hero-s8</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

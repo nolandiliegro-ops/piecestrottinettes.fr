@@ -101,7 +101,7 @@ const PartDetail = () => {
       ? {
           offers: {
             "@type": "Offer",
-            price: (part.price * 1.2).toFixed(2),
+            price: part.price.toFixed(2),
             priceCurrency: "EUR",
             priceValidUntil: `${new Date().getFullYear()}-12-31`,
             availability:

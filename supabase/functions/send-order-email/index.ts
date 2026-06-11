@@ -157,18 +157,8 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                   <td style="padding: 8px 20px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td style="font-size: 14px; color: #666;">Sous-total HT</td>
+                        <td style="font-size: 14px; color: #666;">Sous-total</td>
                         <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 14px; color: #2C2C2C;">${formatPrice(data.totals.subtotalHT)}</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 8px 20px;">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td style="font-size: 14px; color: #666;">TVA (20%)</td>
-                        <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 14px; color: #2C2C2C;">${formatPrice(data.totals.tva)}</td>
                       </tr>
                     </table>
                   </td>
@@ -192,8 +182,11 @@ const generateEmailHTML = (data: OrderEmailRequest): string => {
                   <td style="padding: 8px 20px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td style="font-size: 16px; color: #2C2C2C; font-weight: 600;">Total TTC</td>
+                        <td style="font-size: 16px; color: #2C2C2C; font-weight: 600;">Total</td>
                         <td style="text-align: right; font-family: 'Courier New', monospace; font-size: 20px; color: #93B5A1; font-weight: bold;">${formatPrice(data.totals.totalTTC)}</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="padding-top: 6px; font-size: 11px; color: #999;">TVA non applicable, art. 293 B du CGI</td>
                       </tr>
                     </table>
                   </td>
