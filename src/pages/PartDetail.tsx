@@ -5,6 +5,7 @@ import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/u
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
+import { sanitizeHtml } from "@/lib/sanitizeHtml";
 import MediaGallery from "@/components/pdp/MediaGallery";
 import PurchaseBlock from "@/components/pdp/PurchaseBlock";
 import EngineeringLab from "@/components/pdp/EngineeringLab";
@@ -98,8 +99,16 @@ const PartDetail = () => {
   return (
     <div className="min-h-screen bg-[hsl(var(--greige))]">
       <SEO
-        title={`${part.name} - Pièce compatible trottinette électrique`}
-        description={`Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. ${part.description?.slice(0, 100) ?? ""}. Livraison rapide.`}
+        title={
+          part.meta_title?.trim()
+            ? part.meta_title
+            : `${part.name} - Pièce compatible trottinette électrique`
+        }
+        description={
+          part.meta_description?.trim()
+            ? part.meta_description
+            : `Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`
+        }
         image={part.image_url ?? undefined}
         canonical={`https://piecestrottinettes.fr/piece/${part.slug}`}
         schema={productSchema}
@@ -225,8 +234,36 @@ const PartDetail = () => {
               <div className="border-b-2 border-[#4A7C59] w-12 mb-6" />
               <div
                 className="quill-content text-[#374151] text-base leading-[1.8]"
-                dangerouslySetInnerHTML={{ __html: part.description }}
+                dangerouslySetInnerHTML={{ __html: sanitizeHtml(part.description) }}
               />
+            </div>
+          </motion.section>
+        )}
+
+        {/* === SECTION 3b: Caractéristiques techniques === */}
+        {part.characteristics?.trim() && (
+          <motion.section
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            custom={3}
+            className="max-w-7xl mx-auto px-4 md:px-8 py-8"
+          >
+            <div className="rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 p-6 md:p-8 border-l-4 border-l-[#4A7C59]">
+              <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-xl mb-2">
+                Caractéristiques techniques
+              </h2>
+              <div className="border-b-2 border-[#4A7C59] w-12 mb-6" />
+              <ul className="list-disc pl-5 space-y-1 text-[#374151] text-base leading-[1.8]">
+                {part.characteristics
+                  .split(",")
+                  .map((s) => s.trim())
+                  .filter(Boolean)
+                  .map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+              </ul>
             </div>
           </motion.section>
         )}

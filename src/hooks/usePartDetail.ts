@@ -7,6 +7,10 @@ export interface PartDetail {
   name: string;
   slug: string;
   description: string | null;
+  meta_title: string | null;
+  meta_description: string | null;
+  characteristics: string | null;
+  sku: string | null;
   price: number | null;
   stock_quantity: number | null;
   difficulty_level: number | null;
@@ -46,6 +50,10 @@ export const usePartBySlug = (slug: string | undefined) => {
           name,
           slug,
           description,
+          meta_title,
+          meta_description,
+          characteristics,
+          sku,
           price,
           stock_quantity,
           difficulty_level,
