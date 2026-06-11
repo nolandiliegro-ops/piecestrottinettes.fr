@@ -13,3 +13,14 @@ export function sanitizeHtml(html: string): string {
   if (typeof html !== "string" || !html) return "";
   return DOMPurify.sanitize(html, { ALLOWED_TAGS, ALLOWED_ATTR });
 }
+
+/**
+ * Strip TOTAL des balises HTML → texte brut. Pour les contextes qui n'acceptent
+ * aucun markup (ex. description JSON-LD). Décode les entités via DOMPurify, puis
+ * normalise les espaces. Garde d'entrée : null/undefined/non-string → "".
+ */
+export function stripHtml(html: string | null | undefined): string {
+  if (typeof html !== "string" || !html) return "";
+  const text = DOMPurify.sanitize(html, { ALLOWED_TAGS: [], ALLOWED_ATTR: [] });
+  return text.replace(/\s+/g, " ").trim();
+}

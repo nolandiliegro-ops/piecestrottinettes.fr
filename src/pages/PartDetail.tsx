@@ -5,7 +5,8 @@ import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/u
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
-import { sanitizeHtml } from "@/lib/sanitizeHtml";
+import { sanitizeHtml, stripHtml } from "@/lib/sanitizeHtml";
+import { getPrimaryImage } from "@/lib/entityImage";
 import MediaGallery from "@/components/pdp/MediaGallery";
 import PurchaseBlock from "@/components/pdp/PurchaseBlock";
 import EngineeringLab from "@/components/pdp/EngineeringLab";
@@ -16,6 +17,8 @@ import VideoInstallation from "@/components/pdp/VideoInstallation";
 import RelatedProducts from "@/components/pdp/RelatedProducts";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
+
+const SITE_URL = "https://piecestrottinettes.fr";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 24 },
@@ -76,24 +79,60 @@ const PartDetail = () => {
 
   const compatibleModels = scooters.map((s) => s.name).join(", ");
 
+  const productUrl = `${SITE_URL}/piece/${part.slug}`;
+  // Image primaire en URL Storage ORIGINALE (convention JSON-LD) ; omise si vide.
+  const schemaImage = getPrimaryImage(part.images, part.image_url, "");
+  // Description texte brut : meta_description (déjà plain-text) sinon strip HTML de la description.
+  const schemaDescription = part.meta_description?.trim()
+    ? part.meta_description.trim()
+    : stripHtml(part.description);
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": productUrl,
+    url: productUrl,
     name: part.name,
-    image: part.image_url,
-    description: part.description,
-    sku: (part as any).sku,
+    ...(schemaImage ? { image: schemaImage } : {}),
+    ...(schemaDescription ? { description: schemaDescription } : {}),
+    ...(part.sku ? { sku: part.sku } : {}),
     brand: { "@type": "Brand", name: "Pièces Trottinettes" },
-    offers: {
-      "@type": "Offer",
-      price: (part.price! * 1.2).toFixed(2),
-      priceCurrency: "EUR",
-      availability:
-        part.stock_quantity! > 0
-          ? "https://schema.org/InStock"
-          : "https://schema.org/OutOfStock",
-      url: `https://piecestrottinettes.fr/piece/${part.slug}`,
-    },
+    ...(part.price != null
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: (part.price * 1.2).toFixed(2),
+            priceCurrency: "EUR",
+            priceValidUntil: `${new Date().getFullYear()}-12-31`,
+            availability:
+              part.stock_quantity != null && part.stock_quantity > 0
+                ? "https://schema.org/InStock"
+                : "https://schema.org/OutOfStock",
+            url: productUrl,
+          },
+        }
+      : {}),
+  };
+
+  // BreadcrumbList calqué sur le fil d'ariane HTML (Accueil → Catalogue → [Catégorie] → Produit).
+  const breadcrumbItems = [
+    { name: "Accueil", item: SITE_URL },
+    { name: "Catalogue", item: `${SITE_URL}/catalogue` },
+    ...(part.category?.slug && part.category?.name
+      ? [{ name: part.category.name, item: `${SITE_URL}/categorie/${part.category.slug}` }]
+      : []),
+    { name: part.name, item: productUrl },
+  ];
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map((b, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: b.name,
+      item: b.item,
+    })),
   };
 
   return (
@@ -110,8 +149,8 @@ const PartDetail = () => {
             : `Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`
         }
         image={part.image_url ?? undefined}
-        canonical={`https://piecestrottinettes.fr/piece/${part.slug}`}
-        schema={productSchema}
+        canonical={productUrl}
+        schema={[productSchema, breadcrumbSchema]}
       />
       <Header />
 
