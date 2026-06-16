@@ -22,7 +22,6 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { useSelectedScooter, getBrandColors } from "@/contexts/ScooterContext";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
@@ -153,7 +152,13 @@ interface Ripple {
 
 const QuickViewSheet = ({ open, onClose, part }: Props) => {
   const navigate = useNavigate();
-  const isMobile = useIsMobile();
+  // isMobile synchrone AU 1ER RENDU (évite le flash desktop→mobile sur iPhone).
+  // Local au composant pour ne pas modifier le hook partagé use-mobile.tsx.
+  const [isMobile, setIsMobile] = useState<boolean>(() =>
+    typeof window !== "undefined"
+      ? window.matchMedia("(max-width: 767px)").matches
+      : false
+  );
   const reduceMotion = useReducedMotion();
   const { addItem, setIsOpen } = useCart();
   const { selectedScooter } = useSelectedScooter();
@@ -177,6 +182,15 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
   useEffect(() => {
     if (open) setQty(1);
   }, [open, part?.id]);
+
+  // Garde isMobile à jour (rotation / resize), en parité avec use-mobile.tsx.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia("(max-width: 767px)");
+    const onChange = () => setIsMobile(mql.matches);
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
 
   if (!part) return null;
 
@@ -361,7 +375,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
               <motion.div
                 className="fixed inset-0 z-[100]"
                 style={{
-                  background: "rgba(14,14,14,0.5)",
+                  background: "rgba(14,14,14,0.62)",
                   backdropFilter: "blur(3px)",
                   WebkitBackdropFilter: "blur(3px)",
                   ...(isMobile ? { opacity: overlayOpacity } : {}),
@@ -430,8 +444,8 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
 
                   {/* Contenu scrollable + cascade */}
                   <motion.div
-                    className="overflow-y-auto overscroll-contain"
-                    style={{ padding: "6px 20px 8px", WebkitOverflowScrolling: "touch" }}
+                    className="flex-auto min-h-0 overflow-y-auto overscroll-contain"
+                    style={{ padding: "6px 20px 8px", WebkitOverflowScrolling: "touch", background: C.beige }}
                     variants={containerV}
                     initial="hidden"
                     animate="visible"
