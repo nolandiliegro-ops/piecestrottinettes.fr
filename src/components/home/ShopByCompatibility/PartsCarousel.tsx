@@ -93,6 +93,7 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Pr
   const drag = useRef({
     active: false,
     moved: false,
+    captured: false,
     startX: 0,
     startScroll: 0,
     lastX: 0,
@@ -153,7 +154,7 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Pr
     d.lastX = e.clientX;
     d.lastT = performance.now();
     d.velocity = 0;
-    el.setPointerCapture?.(e.pointerId);
+    d.captured = false;
     el.style.cursor = "grabbing";
     el.style.userSelect = "none";
   };
@@ -165,6 +166,14 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Pr
     if (!el) return;
     const dx = e.clientX - d.startX;
     if (!d.moved && Math.abs(dx) < 5) return; // seuil clic vs drag
+    if (!d.moved) {
+      // Drag réel confirmé (seuil franchi) : on capture le pointeur SEULEMENT
+      // maintenant. Capturer dès le pointerdown redirige le `click` vers ce
+      // conteneur (spec Pointer Events) et empêchait la navigation du <Link>
+      // sur un simple clic souris.
+      el.setPointerCapture?.(e.pointerId);
+      d.captured = true;
+    }
     d.moved = true;
     el.scrollLeft = d.startScroll - dx;
     const now = performance.now();
@@ -180,7 +189,10 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Pr
     if (!d.active) return;
     d.active = false;
     const el = scrollRef.current;
-    el?.releasePointerCapture?.(e.pointerId);
+    if (el && d.captured) {
+      el.releasePointerCapture?.(e.pointerId);
+      d.captured = false;
+    }
     if (el) {
       el.style.cursor = "grab";
       el.style.userSelect = "";
