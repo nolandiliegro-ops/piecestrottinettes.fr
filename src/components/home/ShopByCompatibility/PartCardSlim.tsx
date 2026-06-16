@@ -26,6 +26,14 @@ interface Props {
    * légère (7%) de la couleur de la catégorie du produit. Sinon : fond normal.
    */
   categoryFilterActive?: boolean;
+  /**
+   * Opt-in (module home uniquement) : si true, le clic sur la carte ouvre le
+   * quick-view au lieu de naviguer vers la fiche. Absent/false → comportement
+   * actuel intact (navigation /piece/:slug).
+   */
+  enableQuickView?: boolean;
+  /** Callback d'ouverture du quick-view, fourni par PartsCarousel. */
+  onQuickView?: (part: CompatiblePartRich) => void;
 }
 
 const SECU_SLUGS = new Set([
@@ -73,7 +81,7 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
-const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilterActive }: Props) => {
+const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilterActive, enableQuickView, onQuickView }: Props) => {
   const { addItem, setIsOpen } = useCart();
   const { isFavorite, toggleFavorite, isToggling } = useFavorites();
   const img = getPrimaryImage(part.images, part.image_url, "");
@@ -142,9 +150,18 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
     toggleFavorite(part.id, part.name);
   };
 
+  // Opt-in quick-view : intercepte le clic carte (addbtn/fav font déjà
+  // stopPropagation → ne déclenchent pas ce handler). Sinon : navigation Link.
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (!enableQuickView) return;
+    e.preventDefault();
+    onQuickView?.(part);
+  };
+
   const cardContent = (
     <Link
       to={`/piece/${part.slug}`}
+      onClick={handleCardClick}
       className="pt-slim-card group relative block overflow-hidden transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(255,255,255,0.10)]"
       style={{ border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 8, backgroundColor: cardBg }}
     >

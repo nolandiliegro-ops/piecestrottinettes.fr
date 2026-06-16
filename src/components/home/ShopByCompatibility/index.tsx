@@ -386,6 +386,7 @@ const ShopByCompatibility = () => {
                   onReset={handleResetFilters}
                   accentColor={accentColor}
                   categoryFilterActive={selectedCategories.size > 0}
+                  enableQuickView
                 />
               ) : search.relatedParts.length > 0 ? (
                 // 0 exact mais des proches -> suggestions, sans séparateur.
@@ -398,6 +399,7 @@ const ShopByCompatibility = () => {
                     onReset={handleResetFilters}
                     accentColor={accentColor}
                     categoryFilterActive={selectedCategories.size > 0}
+                    enableQuickView
                   />
                 </>
               ) : (
@@ -417,6 +419,7 @@ const ShopByCompatibility = () => {
                 onReset={handleResetFilters}
                 accentColor={accentColor}
                 categoryFilterActive={selectedCategories.size > 0}
+                enableQuickView
               />
             )}
 

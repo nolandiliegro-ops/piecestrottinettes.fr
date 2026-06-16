@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import PartCardSlim from "./PartCardSlim";
+import QuickViewSheet from "./QuickViewSheet";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
 
 const DEFAULT_RESET_COLOR = "#1A1A1A";
@@ -52,6 +53,8 @@ interface Props {
   accentColor?: string;
   /** Filtre catégorie actif → fond des cartes teinté par catégorie. */
   categoryFilterActive?: boolean;
+  /** Opt-in : active le quick-view au clic carte (module home uniquement). */
+  enableQuickView?: boolean;
 }
 
 /** Flèche de navigation desktop (masquée mobile, visible au survol). */
@@ -85,9 +88,18 @@ const Arrow = ({
   </button>
 );
 
-const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Props) => {
+const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive, enableQuickView }: Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [arrows, setArrows] = useState({ left: false, right: false });
+
+  // Quick-view (opt-in). L'ouverture passe par onQuickView ; la garde justDragged
+  // (onClickCapture) empêche déjà le clic — donc l'ouverture — après un drag.
+  const [qvOpen, setQvOpen] = useState(false);
+  const [qvPart, setQvPart] = useState<CompatiblePartRich | null>(null);
+  const handleQuickView = useCallback((p: CompatiblePartRich) => {
+    setQvPart(p);
+    setQvOpen(true);
+  }, []);
 
   // État de drag dans des refs (pas de re-render pendant le geste).
   const drag = useRef({
@@ -265,10 +277,22 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive }: Pr
       >
         {parts.map((p, i) => (
           <div key={p.id} className="flex-shrink-0 w-[200px] sm:w-[220px]">
-            <PartCardSlim part={p} index={i} variant="carousel" brandColor={accentColor} categoryFilterActive={categoryFilterActive} />
+            <PartCardSlim
+              part={p}
+              index={i}
+              variant="carousel"
+              brandColor={accentColor}
+              categoryFilterActive={categoryFilterActive}
+              enableQuickView={enableQuickView}
+              onQuickView={handleQuickView}
+            />
           </div>
         ))}
       </div>
+
+      {enableQuickView && (
+        <QuickViewSheet open={qvOpen} onClose={() => setQvOpen(false)} part={qvPart} />
+      )}
     </div>
   );
 };
