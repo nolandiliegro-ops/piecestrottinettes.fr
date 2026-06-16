@@ -354,9 +354,12 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
     },
   };
 
+  // outline-none : supprime le liseré bleu de focus que Radix pose sur le Content
+  // (cible focus programmatique tabindex=-1). Les contrôles internes gardent
+  // leur propre :focus-visible → accessibilité clavier préservée.
   const positioning = isMobile
-    ? "fixed inset-x-0 bottom-0 z-[110] mx-auto w-full max-w-[430px]"
-    : "fixed left-1/2 top-1/2 z-[110] w-[92%] max-w-[440px] -translate-x-1/2 -translate-y-1/2";
+    ? "fixed inset-x-0 bottom-0 z-[110] mx-auto w-full max-w-[430px] outline-none focus:outline-none focus-visible:outline-none"
+    : "fixed left-1/2 top-1/2 z-[110] w-[92%] max-w-[440px] -translate-x-1/2 -translate-y-1/2 outline-none focus:outline-none focus-visible:outline-none";
 
   const totalPrice = part.price != null ? part.price * qty : null;
 
