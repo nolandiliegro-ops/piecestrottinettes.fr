@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, ShoppingCart } from "lucide-react";
+import { Heart, ShoppingCart, Shield, Sparkles, Star } from "lucide-react";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
 import { useFavorites } from "@/hooks/useFavorites";
@@ -60,16 +60,17 @@ const pickBadge = (part: CompatiblePartRich): BadgeKind => {
   return null;
 };
 
-const badgeStyle = (kind: BadgeKind): { color: string; bg: string } => {
+// Couleur du stamp promo (tampon discret icône+texte, hors orange).
+const stampColor = (kind: BadgeKind): string => {
   switch (kind) {
     case "BEST":
-      return { color: "#1A1A1A", bg: "rgba(255,102,0,0.14)" };
+      return "#D4AF37"; // doré
     case "SÉCU":
-      return { color: "#FFFFFF", bg: "#D74F00" };
+      return "#9AA6B4"; // ardoise
     case "NOUVEAU":
-      return { color: "#FFFFFF", bg: "#4A7C59" };
+      return "#4A7C59"; // vert
     default:
-      return { color: "transparent", bg: "transparent" };
+      return "transparent";
   }
 };
 
@@ -88,7 +89,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
   // Image affichée servie en WebP redimensionné (carte + miniature toast).
   const displayImg = optimizedImage(img, 400);
   const badge = pickBadge(part);
-  const badgeColors = badgeStyle(badge);
+  const stampCol = stampColor(badge);
   const isOut = part.stock_quantity === 0;
   const isFav = isFavorite(part.id);
 
@@ -276,20 +277,23 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
 
       {/* Body */}
       <div className="px-3 pt-3 pb-3.5">
-        {/* Badge slot — fixed height for alignment */}
+        {/* Stamp promo — tampon discret icône+texte, hauteur fixe (alignement) */}
         <div className="flex items-center" style={{ height: 13, marginBottom: 6 }}>
           {badge && (
             <span
-              className="inline-flex items-center px-1.5 rounded-[4px] text-[9px] font-bold uppercase tracking-wider"
+              className="inline-flex items-center gap-1 text-[9px] lg:text-[10px] font-bold uppercase"
               style={{
-                backgroundColor: badgeColors.bg,
-                color: badgeColors.color,
+                color: stampCol,
+                letterSpacing: "0.06em",
                 lineHeight: "13px",
-                height: 13,
                 fontFamily: "'Inter', sans-serif",
               }}
             >
-              {badge === "BEST" && "★ "}
+              {badge === "BEST" && (
+                <Star size={11} strokeWidth={2.4} fill="currentColor" aria-hidden />
+              )}
+              {badge === "SÉCU" && <Shield size={11} strokeWidth={2.4} aria-hidden />}
+              {badge === "NOUVEAU" && <Sparkles size={11} strokeWidth={2.4} aria-hidden />}
               {badge}
             </span>
           )}
@@ -308,11 +312,14 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
         </h4>
 
         <div
-          className="text-[14px] lg:text-[15px] mb-2.5"
+          className="mb-2.5"
           style={{
-            fontFamily: "'Inter', sans-serif",
-            fontWeight: 500,
-            color: "#4A7C59",
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: 400,
+            fontSize: 28,
+            lineHeight: 1.05,
+            letterSpacing: "0.01em",
+            color: "#FFFFFF",
           }}
         >
           {part.price != null ? formatPrice(part.price) : "—"}
@@ -366,28 +373,20 @@ const QuickAddButton = ({
     aria-label={disabled ? "Indisponible" : "Ajouter au panier"}
     className={cn(
       "w-full inline-flex items-center justify-center gap-1.5 rounded-lg",
-      "transition-all duration-150 active:scale-[0.97]",
-      "opacity-100 translate-y-0",
-      "lg:opacity-0 lg:translate-y-1 lg:group-hover:opacity-100 lg:group-hover:translate-y-0",
-      disabled && "cursor-not-allowed lg:group-hover:opacity-40"
+      "border-[1.5px] transition-all duration-150",
+      disabled
+        ? "cursor-not-allowed border-white/10 bg-white/[0.06] text-white/40"
+        : "border-[#FF6600] bg-transparent text-[#FF6600] hover:bg-[#FF6600] hover:text-white active:bg-[#FF6600] active:text-white active:scale-[0.97]"
     )}
     style={{
-      backgroundColor: "#1A1A1A",
-      color: "#FFFFFF",
+      minHeight: 44,
+      padding: "10px 12px",
       fontFamily: "'Inter', sans-serif",
-      fontSize: 11,
-      fontWeight: 500,
-      padding: "8px 12px",
-      opacity: disabled ? 0.4 : undefined,
-    }}
-    onMouseEnter={(e) => {
-      if (!disabled) e.currentTarget.style.backgroundColor = "#2A2A2A";
-    }}
-    onMouseLeave={(e) => {
-      if (!disabled) e.currentTarget.style.backgroundColor = "#1A1A1A";
+      fontSize: 12,
+      fontWeight: 600,
     }}
   >
-    <ShoppingCart size={12} strokeWidth={2.2} />
+    <ShoppingCart size={14} strokeWidth={2.2} />
     <span>{disabled ? "Indisponible" : "Ajouter"}</span>
   </button>
 );
