@@ -19,11 +19,14 @@ import {
   Plus,
   Minus,
   ArrowRight,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter, getBrandColors } from "@/contexts/ScooterContext";
-import { getPrimaryImage } from "@/lib/entityImage";
+import { getPrimaryImage, getAllImages } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
 import { formatPrice } from "@/lib/formatPrice";
 import {
@@ -178,6 +181,34 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
     open && part ? part.slug : undefined
   );
 
+  // Galerie embla (swipe mobile + clic miniatures desktop).
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: false,
+    align: "center",
+    containScroll: "trimSnaps",
+  });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Synchronise l'index courant (swipe / flèches / miniatures).
+  useEffect(() => {
+    if (!emblaApi) return;
+    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+    emblaApi.on("select", onSelect);
+    onSelect();
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
+
+  // Re-init + retour à la 1ʳᵉ image à chaque (ré)ouverture / changement de pièce.
+  useEffect(() => {
+    if (open && emblaApi) {
+      emblaApi.reInit();
+      emblaApi.scrollTo(0, true);
+      setSelectedIndex(0);
+    }
+  }, [open, part?.id, emblaApi]);
+
   // Reset quantité à chaque (ré)ouverture / changement de pièce.
   useEffect(() => {
     if (open) setQty(1);
@@ -225,11 +256,9 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
       });
   const descText = detail?.description ? stripHtml(detail.description) : "";
 
-  // Miniatures depuis les images carte (si plusieurs).
-  const thumbs = (part.images ?? [])
-    .map((im) => (im?.url ? optimizedImage(im.url, 120) : ""))
-    .filter(Boolean)
-    .slice(0, 4);
+  // Galerie : toutes les images (triées primary→position) depuis les données carte.
+  const galleryImages = getAllImages(part.images, part.image_url);
+  const hasGallery = galleryImages.length > 1;
 
   const bump = (delta: number) =>
     setQty((q) => Math.min(maxQty, Math.max(1, q + delta)));
@@ -453,10 +482,10 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     initial="hidden"
                     animate="visible"
                   >
-                    {/* Hero image */}
+                    {/* Hero image / galerie */}
                     <motion.div
                       variants={itemV}
-                      className="relative flex items-center justify-center overflow-hidden"
+                      className="relative overflow-hidden"
                       style={{
                         borderRadius: 18,
                         marginTop: 6,
@@ -472,6 +501,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                           style={{
                             top: 12,
                             left: 12,
+                            zIndex: 3,
                             padding: "5px 10px",
                             borderRadius: 99,
                             backgroundColor: hexToRgba(catColor, 0.14),
@@ -493,19 +523,92 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                         </span>
                       )}
 
-                      {heroImg ? (
-                        <img
-                          src={heroImg}
-                          alt={part.name}
-                          className="object-contain"
-                          style={{
-                            maxWidth: "78%",
-                            maxHeight: "82%",
-                            filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
-                          }}
-                        />
+                      {hasGallery ? (
+                        <div className="absolute inset-0 overflow-hidden" ref={emblaRef}>
+                          <div className="flex h-full">
+                            {galleryImages.map((im, i) => (
+                              <div
+                                key={`${im.url}-${i}`}
+                                className="flex-[0_0_100%] h-full flex items-center justify-center select-none"
+                              >
+                                <img
+                                  src={optimizedImage(im.url, 800)}
+                                  alt={im.alt || `${part.name} — vue ${i + 1}`}
+                                  draggable={false}
+                                  className="object-contain pointer-events-none"
+                                  style={{
+                                    maxWidth: "78%",
+                                    maxHeight: "82%",
+                                    filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
+                                  }}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ) : heroImg ? (
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <img
+                            src={heroImg}
+                            alt={part.name}
+                            className="object-contain"
+                            style={{
+                              maxWidth: "78%",
+                              maxHeight: "82%",
+                              filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
+                            }}
+                          />
+                        </div>
                       ) : (
-                        <div className="text-6xl opacity-25">🔧</div>
+                        <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-25">
+                          🔧
+                        </div>
+                      )}
+
+                      {/* Flèches desktop (galerie multi-images) */}
+                      {hasGallery && !isMobile && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => emblaApi?.scrollPrev()}
+                            aria-label="Photo précédente"
+                            className="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center rounded-full transition-transform hover:scale-105"
+                            style={{ zIndex: 3, width: 34, height: 34, background: "rgba(255,255,255,0.92)", border: `1px solid ${C.line}`, color: C.ink }}
+                          >
+                            <ChevronLeft size={18} strokeWidth={2.4} />
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => emblaApi?.scrollNext()}
+                            aria-label="Photo suivante"
+                            className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center rounded-full transition-transform hover:scale-105"
+                            style={{ zIndex: 3, width: 34, height: 34, background: "rgba(255,255,255,0.92)", border: `1px solid ${C.line}`, color: C.ink }}
+                          >
+                            <ChevronRight size={18} strokeWidth={2.4} />
+                          </button>
+                        </>
+                      )}
+
+                      {/* Compteur d'images */}
+                      {hasGallery && (
+                        <div
+                          className="absolute flex items-center"
+                          style={{
+                            zIndex: 3,
+                            bottom: 10,
+                            right: 10,
+                            padding: "3px 9px",
+                            borderRadius: 99,
+                            background: "rgba(26,26,26,0.72)",
+                            color: "#fff",
+                            fontFamily: FONT,
+                            fontSize: 11,
+                            fontWeight: 600,
+                            fontVariantNumeric: "tabular-nums",
+                          }}
+                        >
+                          {selectedIndex + 1} / {galleryImages.length}
+                        </div>
                       )}
 
                       {isOut && (
@@ -520,25 +623,34 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                       )}
                     </motion.div>
 
-                    {/* Miniatures (si plusieurs images) */}
-                    {thumbs.length > 1 && (
+                    {/* Miniatures interactives synchronisées embla */}
+                    {hasGallery && (
                       <motion.div variants={itemV} className="flex gap-2" style={{ marginTop: 10 }}>
-                        {thumbs.map((t, i) => (
-                          <div
-                            key={i}
-                            className="flex items-center justify-center overflow-hidden"
+                        {galleryImages.map((im, i) => (
+                          <button
+                            type="button"
+                            key={`${im.url}-${i}`}
+                            onClick={() => emblaApi?.scrollTo(i)}
+                            aria-label={`Voir la photo ${i + 1}`}
+                            aria-current={i === selectedIndex}
+                            className="flex items-center justify-center overflow-hidden transition-all duration-150"
                             style={{
+                              flex: "0 0 auto",
                               width: 46,
                               height: 46,
                               borderRadius: 10,
                               background: "#fff",
-                              border: `1px solid ${i === 0 ? C.sage : C.line}`,
-                              boxShadow: i === 0 ? `0 0 0 2px ${hexToRgba(C.sage, 0.25)}` : "none",
-                              opacity: i === 0 ? 1 : 0.7,
+                              border: `1px solid ${i === selectedIndex ? C.sage : C.line}`,
+                              boxShadow: i === selectedIndex ? `0 0 0 2px ${hexToRgba(C.sage, 0.25)}` : "none",
+                              opacity: i === selectedIndex ? 1 : 0.65,
                             }}
                           >
-                            <img src={t} alt="" className="max-w-[80%] max-h-[80%] object-contain" />
-                          </div>
+                            <img
+                              src={optimizedImage(im.url, 200)}
+                              alt=""
+                              className="max-w-[80%] max-h-[80%] object-contain"
+                            />
+                          </button>
                         ))}
                       </motion.div>
                     )}
