@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   motion,
   AnimatePresence,
+  animate,
   useMotionValue,
   useTransform,
   useDragControls,
@@ -54,6 +55,12 @@ const C = {
 // PartCardSlim et tout le module en utilisant 'Inter'.
 const FONT = "'Inter', sans-serif";
 const SPRING = [0.22, 1, 0.36, 1] as const;
+
+const EMBLA_OPTIONS = {
+  loop: false,
+  align: "center" as const,
+  containScroll: "trimSnaps" as const,
+};
 
 const hexToRgba = (hex: string, alpha: number): string => {
   const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
@@ -139,6 +146,135 @@ const buildSpecChips = (
   return fb.slice(0, 4);
 };
 
+const ZOOM_FACTOR = 2;
+
+interface ZoomableImageProps {
+  src: string;
+  alt: string;
+  active: boolean;          // image actuellement visible (slide active / image unique)
+  zoomed: boolean;          // état zoom partagé par le sheet
+  onToggle: () => void;
+  isMobile: boolean;
+  reduceMotion: boolean;
+}
+
+/* Tap-to-zoom custom (clic desktop / double-tap mobile) + pan framer borné
+   aux limites réelles de l'image. Aucune dépendance externe. */
+const ZoomableImage = ({
+  src,
+  alt,
+  active,
+  zoomed,
+  onToggle,
+  isMobile,
+  reduceMotion,
+}: ZoomableImageProps) => {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
+  const panX = useMotionValue(0);
+  const panY = useMotionValue(0);
+  const scale = useMotionValue(1);
+  const draggedRef = useRef(false);
+  const lastTapRef = useRef(0);
+  const [bounds, setBounds] = useState({ x: 0, y: 0 });
+
+  const isZoomed = active && zoomed;
+
+  // Bornes du pan = débordement de l'image (×2) hors du cadre, jamais négatif.
+  // clientWidth/Height ignorent le transform → mesure stable même zoomé.
+  const measure = useCallback(() => {
+    const wrap = wrapRef.current;
+    const im = imgRef.current;
+    if (!wrap || !im) return;
+    const ox = Math.max(0, (im.clientWidth * ZOOM_FACTOR - wrap.clientWidth) / 2);
+    const oy = Math.max(0, (im.clientHeight * ZOOM_FACTOR - wrap.clientHeight) / 2);
+    setBounds({ x: ox, y: oy });
+  }, []);
+
+  // Anime le scale au toggle ; au dézoom, ramène le pan à 0.
+  useEffect(() => {
+    if (isZoomed) measure();
+    const dur = reduceMotion ? 0 : 0.28;
+    const ease = [0.22, 1, 0.36, 1] as const;
+    const ctrl = animate(scale, isZoomed ? ZOOM_FACTOR : 1, { duration: dur, ease });
+    let cx: ReturnType<typeof animate> | undefined;
+    let cy: ReturnType<typeof animate> | undefined;
+    if (!isZoomed) {
+      cx = animate(panX, 0, { duration: dur, ease });
+      cy = animate(panY, 0, { duration: dur, ease });
+    }
+    return () => {
+      ctrl.stop();
+      cx?.stop();
+      cy?.stop();
+    };
+  }, [isZoomed, reduceMotion, measure, scale, panX, panY]);
+
+  // Recalcule les bornes au resize tant qu'on est zoomé (rotation / responsive).
+  useEffect(() => {
+    if (!isZoomed) return;
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [isZoomed, measure]);
+
+  const handleClick = () => {
+    if (!active) return;
+    // Fin de pan → pas un tap : on absorbe le clic.
+    if (draggedRef.current) {
+      draggedRef.current = false;
+      return;
+    }
+    if (isMobile) {
+      const now = Date.now();
+      if (now - lastTapRef.current < 280) {
+        lastTapRef.current = 0;
+        onToggle();
+      } else {
+        lastTapRef.current = now;
+      }
+    } else {
+      onToggle();
+    }
+  };
+
+  return (
+    <motion.div
+      ref={wrapRef}
+      className="absolute inset-0 flex items-center justify-center"
+      style={{
+        x: panX,
+        y: panY,
+        scale,
+        cursor: !active ? "default" : isZoomed ? "grab" : "zoom-in",
+        touchAction: isZoomed ? "none" : undefined,
+        willChange: "transform",
+      }}
+      drag={isZoomed}
+      dragConstraints={{ left: -bounds.x, right: bounds.x, top: -bounds.y, bottom: bounds.y }}
+      dragElastic={0.12}
+      dragMomentum={false}
+      onDragStart={() => {
+        draggedRef.current = true;
+      }}
+      onClick={handleClick}
+    >
+      <img
+        ref={imgRef}
+        src={src}
+        alt={alt}
+        draggable={false}
+        onLoad={measure}
+        className="object-contain pointer-events-none"
+        style={{
+          maxWidth: "78%",
+          maxHeight: "82%",
+          filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
+        }}
+      />
+    </motion.div>
+  );
+};
+
 interface Props {
   open: boolean;
   onClose: () => void;
@@ -182,12 +318,9 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
   );
 
   // Galerie embla (swipe mobile + clic miniatures desktop).
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
-    align: "center",
-    containScroll: "trimSnaps",
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(EMBLA_OPTIONS);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [zoomed, setZoomed] = useState(false);
 
   // Synchronise l'index courant (swipe / flèches / miniatures).
   useEffect(() => {
@@ -213,6 +346,25 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
   useEffect(() => {
     if (open) setQty(1);
   }, [open, part?.id]);
+
+  // Reset zoom à la fermeture / au changement de pièce (rouvrir = 1x).
+  useEffect(() => {
+    setZoomed(false);
+  }, [open, part?.id]);
+
+  // Naviguer dans la galerie (miniatures / flèches) dézoome.
+  useEffect(() => {
+    setZoomed(false);
+  }, [selectedIndex]);
+
+  // Zoom actif → on coupe le swipe embla pour que le pan ne change pas de slide.
+  // Re-tap → watchDrag rétabli. scrollTo(idx) garde la slide courante.
+  useEffect(() => {
+    if (!emblaApi) return;
+    const idx = emblaApi.selectedScrollSnap();
+    emblaApi.reInit({ ...EMBLA_OPTIONS, watchDrag: !zoomed });
+    emblaApi.scrollTo(idx, true);
+  }, [zoomed, emblaApi]);
 
   // Garde isMobile à jour (rotation / resize), en parité avec use-mobile.tsx.
   useEffect(() => {
@@ -529,44 +681,39 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                             {galleryImages.map((im, i) => (
                               <div
                                 key={`${im.url}-${i}`}
-                                className="flex-[0_0_100%] h-full flex items-center justify-center select-none"
+                                className="relative flex-[0_0_100%] h-full select-none"
                               >
-                                <img
+                                <ZoomableImage
                                   src={optimizedImage(im.url, 800)}
                                   alt={im.alt || `${part.name} — vue ${i + 1}`}
-                                  draggable={false}
-                                  className="object-contain pointer-events-none"
-                                  style={{
-                                    maxWidth: "78%",
-                                    maxHeight: "82%",
-                                    filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
-                                  }}
+                                  active={i === selectedIndex}
+                                  zoomed={zoomed}
+                                  onToggle={() => setZoomed((z) => !z)}
+                                  isMobile={isMobile}
+                                  reduceMotion={!!reduceMotion}
                                 />
                               </div>
                             ))}
                           </div>
                         </div>
                       ) : heroImg ? (
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <img
-                            src={heroImg}
-                            alt={part.name}
-                            className="object-contain"
-                            style={{
-                              maxWidth: "78%",
-                              maxHeight: "82%",
-                              filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.18))",
-                            }}
-                          />
-                        </div>
+                        <ZoomableImage
+                          src={heroImg}
+                          alt={part.name}
+                          active
+                          zoomed={zoomed}
+                          onToggle={() => setZoomed((z) => !z)}
+                          isMobile={isMobile}
+                          reduceMotion={!!reduceMotion}
+                        />
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-25">
                           🔧
                         </div>
                       )}
 
-                      {/* Flèches desktop (galerie multi-images) */}
-                      {hasGallery && !isMobile && (
+                      {/* Flèches desktop (galerie multi-images) — masquées au zoom */}
+                      {hasGallery && !isMobile && !zoomed && (
                         <>
                           <button
                             type="button"
