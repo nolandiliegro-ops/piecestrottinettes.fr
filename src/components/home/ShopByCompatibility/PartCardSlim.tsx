@@ -376,7 +376,7 @@ const QuickAddButton = ({
       "border-[1.5px] transition-all duration-150",
       disabled
         ? "cursor-not-allowed border-white/10 bg-white/[0.06] text-white/40"
-        : "border-[#FF6600] bg-transparent text-[#FF6600] hover:bg-[#FF6600] hover:text-white active:bg-[#FF6600] active:text-white active:scale-[0.97]"
+        : "bg-[#FF6600] text-white border-[#FF6600] hover:bg-[#E85D00] hover:border-[#E85D00] active:scale-[0.97]"
     )}
     style={{
       minHeight: 44,
