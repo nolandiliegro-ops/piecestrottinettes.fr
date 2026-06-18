@@ -300,11 +300,11 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
         </div>
 
         <h4
-          className="text-[12px] lg:text-[13px] leading-tight line-clamp-2 mb-1.5 transition-colors"
+          className="text-[13px] lg:text-[14px] leading-tight line-clamp-2 mb-1.5 transition-colors"
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontWeight: 500,
-            color: "rgba(255,255,255,0.92)",
+            fontWeight: 600,
+            color: "rgba(255,255,255,0.97)",
             minHeight: "2.2em",
           }}
         >
