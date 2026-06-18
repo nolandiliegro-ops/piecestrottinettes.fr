@@ -8,16 +8,18 @@ export interface CategoryColorConfig {
 // at the data layer doesn't need to know the canonical color.
 export const CATEGORY_COLORS: Record<string, CategoryColorConfig> = {
   pneus: { color: "#FF6600", short: "Pneus" },
+  "pneus-pleins": { color: "#0E7490", short: "Pneu plein" },
   plaquettes: { color: "#DC2626", short: "Plaq" },
   "disques-plaquettes": { color: "#DC2626", short: "Plaq" },
   "chambres-air": { color: "#4A7C59", short: "Chambre" },
   "chambres-a-air": { color: "#4A7C59", short: "Chambre" },
   chargeurs: { color: "#F59E0B", short: "Charg" },
-  disques: { color: "#6B7280", short: "Disq" },
+  disques: { color: "#57534E", short: "Disq" },
   batteries: { color: "#7C3AED", short: "Batt" },
   eclairage: { color: "#FACC15", short: "Light" },
   guidon: { color: "#1A1A1A", short: "Guid" },
   accessoires: { color: "#6B7280", short: "Acc" },
+  "accessoires-divers": { color: "#475569", short: "Acc" },
 };
 
 const DEFAULT: CategoryColorConfig = { color: "#6B7280", short: "" };

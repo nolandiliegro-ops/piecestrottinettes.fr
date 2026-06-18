@@ -1,6 +1,6 @@
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { CompatiblePart } from "@/hooks/useScooterData";
+import { CompatiblePart, ProductAttribute } from "@/hooks/useScooterData";
 
 // Extended part type with category_id for filtering
 export interface CataloguePart extends CompatiblePart {
@@ -29,11 +29,13 @@ export const useAllParts = (categoryId: string | null) => {
           technical_metadata,
           category_id,
           is_featured,
+          attributes,
           category:categories (
             id,
             name,
             icon,
-            slug
+            slug,
+            color
           )
         `)
         .eq("published", true)
@@ -53,6 +55,7 @@ export const useAllParts = (categoryId: string | null) => {
         description: null,
         technical_metadata: part.technical_metadata as Record<string, unknown> | null,
         images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
+        attributes: (part.attributes as ProductAttribute[] | null) ?? null,
       })) as CataloguePart[];
     },
     staleTime: 5 * 60 * 1000,

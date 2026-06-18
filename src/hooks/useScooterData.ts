@@ -3,6 +3,12 @@ import { supabase } from "@/integrations/supabase/client";
 import { useState, useEffect } from "react";
 
 // Type for part with category and technical metadata
+export interface ProductAttribute {
+  label: string;
+  value: string;
+  unit?: string | null;
+}
+
 export interface CompatiblePart {
   id: string;
   name: string;
@@ -15,11 +21,13 @@ export interface CompatiblePart {
   stock_quantity: number | null;
   technical_metadata: Record<string, unknown> | null;
   is_featured?: boolean;
+  attributes?: ProductAttribute[] | null;
   category: {
     id: string;
     name: string;
     icon: string | null;
     slug: string;
+    color?: string | null;
   } | null;
 }
 
