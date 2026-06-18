@@ -25,7 +25,8 @@ import MultiPhotoGallery from './MultiPhotoGallery';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Images } from 'lucide-react';
 
-import type { Json } from '@/integrations/supabase/types';
+import type { Json, TablesInsert, TablesUpdate } from '@/integrations/supabase/types';
+import type { ProductAttribute } from '@/hooks/useScooterData';
 
 interface Part {
   id: string;
@@ -49,12 +50,14 @@ interface Part {
   created_at?: string;
   is_featured?: boolean;
   price_override?: boolean;
+  attributes: ProductAttribute[] | null;
 }
 
 interface Category {
   id: string;
   name: string;
   parent_id: string | null;
+  slug: string | null;
 }
 
 type SortField = 'name' | 'price' | 'stock' | 'created_at';
@@ -69,6 +72,20 @@ const slugify = (text: string) => {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 };
+
+const ATTRIBUTE_PRESETS: Record<string, string[]> = {
+  chargeurs: ['Voltage', 'Ampérage', 'Connecteur'],
+  pneus: ['Dimension', 'Type'],
+  'pneus-pleins': ['Dimension', 'Montage'],
+  'chambres-a-air': ['Dimension', 'Valve'],
+  'chambres-air': ['Dimension', 'Valve'],
+  plaquettes: ['Matière'],
+  'disques-plaquettes': ['Matière'],
+  disques: ['Diamètre'],
+  batteries: ['Voltage', 'Capacité'],
+  eclairage: ['Lumens', 'Alimentation'],
+};
+const DEFAULT_ATTRIBUTE_PRESETS = ['Dimension', 'Matière', 'Couleur'];
 
 const PartsManager = () => {
   const [parts, setParts] = useState<Part[]>([]);
@@ -113,7 +130,8 @@ const PartsManager = () => {
     technical_metadata: '{}',
     is_featured: false,
     price_override: false,
-    compatibleScooterIds: [] as string[]
+    compatibleScooterIds: [] as string[],
+    attributes: [] as { label: string; value: string; unit: string }[]
   });
 
   const [editPart, setEditPart] = useState<Part | null>(null);
@@ -134,7 +152,8 @@ const PartsManager = () => {
     technical_metadata: '{}',
     is_featured: false,
     price_override: false,
-    compatibleScooterIds: [] as string[]
+    compatibleScooterIds: [] as string[],
+    attributes: [] as { label: string; value: string; unit: string }[]
   });
 
   useEffect(() => {
@@ -149,7 +168,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('categories')
-        .select('id, name, parent_id')
+        .select('id, name, parent_id, slug')
         .order('name');
       if (error) throw error;
       setCategories(data || []);
@@ -162,11 +181,11 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
+        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
         .order('name');
 
       if (error) throw error;
-      setParts(data || []);
+      setParts((data ?? []) as unknown as Part[]);
     } catch (error) {
       console.error('Error fetching parts:', error);
       toast.error('Erreur lors du chargement des pièces');
@@ -199,6 +218,9 @@ const PartsManager = () => {
     setCreating(true);
     try {
       const slug = slugify(newPart.name);
+      const cleanAttributes = newPart.attributes
+        .map(a => ({ label: a.label.trim(), value: a.value.trim(), unit: a.unit.trim() || null }))
+        .filter(a => a.label && a.value);
       const { data, error } = await supabase
         .from('parts')
         .insert({
@@ -219,14 +241,15 @@ const PartsManager = () => {
           technical_metadata: (technicalMetadata || {}) as Json,
           is_featured: newPart.is_featured,
           // Prix saisi à la création OU case cochée → verrouillé contre le sync Airtable.
-          price_override: newPart.price_override || !!newPart.price
-        })
-        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
+          price_override: newPart.price_override || !!newPart.price,
+          attributes: (cleanAttributes.length ? cleanAttributes : null) as Json
+        } as TablesInsert<'parts'> & { attributes?: Json })
+        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
         .single();
 
       if (error) throw error;
 
-      setParts(prev => [...prev, data]);
+      setParts(prev => [...prev, data as unknown as Part]);
       setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, price_override: false, compatibleScooterIds: [] });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
@@ -261,7 +284,10 @@ const PartsManager = () => {
       technical_metadata: part.technical_metadata ? JSON.stringify(part.technical_metadata, null, 2) : '{}',
       is_featured: part.is_featured || false,
       price_override: part.price_override ?? false,
-      compatibleScooterIds: [] // Will be loaded by ScooterCompatibilitySelect component
+      compatibleScooterIds: [], // Will be loaded by ScooterCompatibilitySelect component
+      attributes: Array.isArray(part.attributes)
+        ? part.attributes.map(a => ({ label: a.label ?? '', value: a.value ?? '', unit: a.unit ?? '' }))
+        : [],
     });
     setIsEditOpen(true);
   };
@@ -282,6 +308,9 @@ const PartsManager = () => {
       // Verrou prix : case cochée OU prix modifié → price_override=true (le sync
       // Airtable ne réécrasera jamais ce prix). Décocher la case rend la main à Airtable.
       const priceOverride = editValues.price_override || newPrice !== (editPart.price ?? null);
+      const cleanAttributes = editValues.attributes
+        .map(a => ({ label: a.label.trim(), value: a.value.trim(), unit: a.unit.trim() || null }))
+        .filter(a => a.label && a.value);
       const { error } = await supabase
         .from('parts')
         .update({
@@ -301,8 +330,9 @@ const PartsManager = () => {
           meta_title: editValues.meta_title.trim() || null,
           meta_description: editValues.meta_description.trim() || null,
           technical_metadata: (technicalMetadata || {}) as Json,
-          is_featured: editValues.is_featured
-        })
+          is_featured: editValues.is_featured,
+          attributes: (cleanAttributes.length ? cleanAttributes : null) as Json
+        } as TablesUpdate<'parts'> & { attributes?: Json })
         .eq('id', editPart.id);
 
       if (error) throw error;
@@ -328,6 +358,7 @@ const PartsManager = () => {
               meta_description: editValues.meta_description.trim() || null,
               technical_metadata: (technicalMetadata || {}) as Json,
               is_featured: editValues.is_featured,
+              attributes: (cleanAttributes.length ? cleanAttributes : null) as ProductAttribute[] | null,
               category: categories.find(c => c.id === editValues.category_id) ? { name: categories.find(c => c.id === editValues.category_id)!.name } : null
             }
           : p
@@ -853,6 +884,73 @@ const PartsManager = () => {
       </TabsContent>
 
       <TabsContent value="specs" className="space-y-4">
+        {/* Attributs produit (affichés sur la carte) */}
+        <div className="space-y-2">
+          <Label>Attributs produit (affichés sur la carte)</Label>
+          <p className="text-xs text-muted-foreground">3 max recommandé — affichés sous le prix sur la carte.</p>
+
+          {/* Chips presets (selon la catégorie sélectionnée) */}
+          <div className="flex flex-wrap gap-1.5">
+            {(ATTRIBUTE_PRESETS[categories.find(c => c.id === values.category_id)?.slug ?? ''] ?? DEFAULT_ATTRIBUTE_PRESETS).map((preset) => (
+              <Button
+                key={preset}
+                type="button"
+                variant="outline"
+                size="sm"
+                className="h-7 text-xs"
+                onClick={() => setValues({ ...values, attributes: [...values.attributes, { label: preset, value: '', unit: '' }] })}
+              >
+                <Plus className="w-3 h-3 mr-1" />{preset}
+              </Button>
+            ))}
+          </div>
+
+          {/* Lignes d'attributs */}
+          <div className="space-y-2">
+            {values.attributes.map((attr, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <Input
+                  value={attr.label}
+                  onChange={(e) => setValues({ ...values, attributes: values.attributes.map((a, i) => i === idx ? { ...a, label: e.target.value } : a) })}
+                  placeholder="Libellé (ex: Voltage)"
+                  className="flex-1"
+                />
+                <Input
+                  value={attr.value}
+                  onChange={(e) => setValues({ ...values, attributes: values.attributes.map((a, i) => i === idx ? { ...a, value: e.target.value } : a) })}
+                  placeholder="Valeur (ex: 67.2)"
+                  className="flex-1"
+                />
+                <Input
+                  value={attr.unit}
+                  onChange={(e) => setValues({ ...values, attributes: values.attributes.map((a, i) => i === idx ? { ...a, unit: e.target.value } : a) })}
+                  placeholder="Unité"
+                  className="w-20"
+                />
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 text-destructive shrink-0"
+                  onClick={() => setValues({ ...values, attributes: values.attributes.filter((_, i) => i !== idx) })}
+                >
+                  <Trash2 className="w-4 h-4" />
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="w-full"
+            onClick={() => setValues({ ...values, attributes: [...values.attributes, { label: '', value: '', unit: '' }] })}
+          >
+            <Plus className="w-4 h-4 mr-1" /> Ajouter un attribut
+          </Button>
+        </div>
+
         <div className="space-y-2">
           <Label>Spécifications techniques (JSON)</Label>
           <Textarea 
