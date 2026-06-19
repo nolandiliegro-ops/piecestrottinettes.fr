@@ -355,18 +355,58 @@ const handler = async (req: Request): Promise<Response> => {
           compatibility_source: part.compatibility_source ?? null,
         };
 
-        const { data: existing } = await supabase
-          .from("parts")
-          .select("id, price, price_override, published, stock_quantity")
-          .eq("slug", part.slug)
-          .maybeSingle();
+        // ── Matching en cascade : SKU prioritaire, puis slug ───────────────────
+        // 1) sku non vide + ligne avec ce sku → UPDATE cette ligne (pièce renommée :
+        //    slug différent mais même Référence constructeur). parts.sku est UNIQUE
+        //    (parts_sku_key) : un INSERT avec un sku déjà pris échouerait, d'où le match.
+        // 2) sinon ligne avec le même slug     → UPDATE par slug (comportement historique).
+        // 3) sinon                              → INSERT.
+        // Pièces SANS sku : on saute l'étape 1 (sku UNIQUE autorise plusieurs NULL,
+        // donc aucune collision) → comportement strictement inchangé.
+        const sku = (part.sku ?? "").trim();
+        const selectCols = "id, slug, sku, price, price_override, published, stock_quantity";
+
+        let existing:
+          | { id: string; slug: string; sku: string | null; price: number | null;
+              price_override: boolean | null; published: boolean; stock_quantity: number }
+          | null = null;
+        let matchedBy: "sku" | "slug" | null = null;
+
+        if (sku) {
+          const { data: bySku } = await supabase
+            .from("parts").select(selectCols).eq("sku", sku).maybeSingle();
+          if (bySku) { existing = bySku; matchedBy = "sku"; }
+        }
+
+        if (!existing) {
+          const { data: bySlug } = await supabase
+            .from("parts").select(selectCols).eq("slug", part.slug).maybeSingle();
+          if (bySlug) { existing = bySlug; matchedBy = "slug"; }
+        }
 
         const wasNew = !existing;
+
+        // ── Garde-fou collision slug ───────────────────────────────────────────
+        // On va écrire slug = part.slug. Si une AUTRE ligne (id différent) le détient
+        // déjà, l'écriture violerait parts_slug_unique → erreur claire, aucune pièce
+        // écrasée (ne peut survenir que sur un match par sku qui change le slug).
+        if (existing && existing.slug !== part.slug) {
+          const { data: slugOwner } = await supabase
+            .from("parts").select("id, sku").eq("slug", part.slug).maybeSingle();
+          if (slugOwner && slugOwner.id !== existing.id) {
+            const msg =
+              `Collision slug : "${part.slug}" déjà utilisé par une autre pièce ` +
+              `(sku=${slugOwner.sku ?? "—"}, id=${slugOwner.id}). Pièce non écrasée.`;
+            results.errors.push({ name: part.name, error: msg });
+            results.rows.push({ name: part.name, slug: part.slug, id: existing.id, status: "error" });
+            continue;
+          }
+        }
 
         // Override admin prioritaire (logique "Option B", cf. images) : si la pièce
         // existe et price_override=true, on NE réécrase PAS le prix depuis Airtable —
         // on conserve la valeur en base. price_override n'est jamais inclus dans `row`,
-        // donc l'upsert laisse le flag intact (update) ou prend le DEFAULT false (insert) ;
+        // donc l'update laisse le flag intact ; à l'insert il prend le DEFAULT false ;
         // seul l'admin le pose.
         if (existing?.price_override === true) {
           row.price = existing.price;
@@ -382,29 +422,29 @@ const handler = async (req: Request): Promise<Response> => {
           row.stock_quantity = existing.stock_quantity;
         }
 
-        const { error: upsertError } = await supabase
-          .from("parts")
-          .upsert(row, { onConflict: "slug" });
-
-        if (upsertError) {
-          results.errors.push({ name: part.name, error: upsertError.message });
-          results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
-          continue;
+        // ── Écriture : UPDATE ciblé par id si match (le slug peut changer), sinon INSERT.
+        // On n'utilise plus upsert(onConflict:"slug") : sur un slug modifié il tenterait
+        // un INSERT et rebutterait sur parts_sku_key. L'UPDATE par id contourne ça.
+        let partId: string;
+        if (existing) {
+          const { error: updateError } = await supabase
+            .from("parts").update(row).eq("id", existing.id);
+          if (updateError) {
+            results.errors.push({ name: part.name, error: updateError.message });
+            results.rows.push({ name: part.name, slug: part.slug, id: existing.id, status: "error" });
+            continue;
+          }
+          partId = existing.id;
+        } else {
+          const { data: inserted, error: insertError } = await supabase
+            .from("parts").insert(row).select("id").maybeSingle();
+          if (insertError || !inserted) {
+            results.errors.push({ name: part.name, error: insertError?.message ?? "insert returned no row" });
+            results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
+            continue;
+          }
+          partId = inserted.id as string;
         }
-
-        const { data: partRow, error: selectErr } = await supabase
-          .from("parts")
-          .select("id")
-          .eq("slug", part.slug)
-          .maybeSingle();
-
-        if (selectErr || !partRow) {
-          results.errors.push({ name: part.name, error: "Could not retrieve part id post-upsert" });
-          results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
-          continue;
-        }
-
-        const partId = partRow.id as string;
         let suppliersAddedThis = 0;
         let passACount = 0;
         let passBCount = 0;
@@ -484,7 +524,7 @@ const handler = async (req: Request): Promise<Response> => {
 
         console.log(
           `[bulk-insert-parts] PIECE "${part.name}" ` +
-          `${wasNew ? "CREATED" : "UPDATED"} ` +
+          `${wasNew ? "CREATED" : "UPDATED"} matched_by=${matchedBy ?? "new"} ` +
           `suppliers_added=${suppliersAddedThis} ` +
           `passe_A_matched=${passACount} passe_B_matched=${passBCount} ` +
           `total_unique=${passACount + passBCount} ` +
