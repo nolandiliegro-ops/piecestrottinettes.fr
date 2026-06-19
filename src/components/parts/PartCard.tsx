@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ShoppingCart, Check, Star, Shield, Sparkles } from "lucide-react";
+import { ShoppingCart, Check, Star, Shield, Sparkles, Bell } from "lucide-react";
 import { forwardRef, MouseEvent, useId } from "react";
 import PartFavoriteButton from "./PartFavoriteButton";
 import { CompatiblePart } from "@/hooks/useScooterData";
@@ -89,6 +89,12 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   // Stamp ATELIER (BEST / SÉCU / NOUVEAU) — logique partagée. created_at absent du
   // type catalogue ⇒ NOUVEAU jamais déclenché ici (voulu).
   const badge = pickBadge(part);
+  // Couleur d'accent catégorie : valeur BDD (categories.color) sinon mapping slug.
+  // Garde undefined : sur le chemin scooter/Garage (useCompatibleParts), category n'a ni
+  // color ni attributs ⇒ resolveCategoryColor retombe proprement sur le slug.
+  const categoryColor = part.category
+    ? resolveCategoryColor(part.category.color, part.category.slug)
+    : null;
   // Prix splitté (entier gros + centimes + virgule FR), sans toucher au helper partagé formatPrice.
   const priceParts = part.price !== null
     ? (() => {
@@ -245,46 +251,87 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
       {/* Image Container - Luxury Studio Style */}
       <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">
-        {/* ATELIER stamp (BEST / SÉCU / NOUVEAU) — thème clair, via @/lib/partStamps */}
-        {badge && (
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.08 + 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="absolute top-3 left-3 z-10"
-          >
-            <span
-              className="inline-flex items-center gap-1 uppercase text-[9.5px] lg:text-[10px]"
+        {/* Pastilles top-left empilées : catégorie (glass, requise) + stamp ATELIER (conditionnel) */}
+        <div className="absolute top-3 left-3 z-10 flex flex-col items-start gap-1.5">
+          {/* Pastille catégorie GLASS — couleur réelle (BDD ou slug), lisible sur fond clair */}
+          {part.category?.name && categoryColor && (
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.08 + 0.12, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="inline-flex items-center uppercase text-[9.5px] lg:text-[10px]"
               style={{
-                padding: "4px 7px",
-                borderRadius: 6,
+                padding: "4px 8px",
+                borderRadius: 999,
                 fontFamily: "'Inter', sans-serif",
                 fontWeight: 800,
-                letterSpacing: "0.05em",
+                letterSpacing: "0.06em",
                 lineHeight: 1,
-                color: STAMP_META[badge].lightText,
-                backgroundColor: hexToRgba(STAMP_META[badge].full, 0.12),
-                border: `1px solid ${hexToRgba(STAMP_META[badge].full, 0.55)}`,
+                color: darkenForLight(categoryColor),
+                backgroundColor: hexToRgba(categoryColor, 0.14),
+                border: `1px solid ${hexToRgba(categoryColor, 0.4)}`,
+                backdropFilter: "blur(6px)",
+                WebkitBackdropFilter: "blur(6px)",
+              }}
+            >
+              {part.category.name}
+            </motion.span>
+          )}
+
+          {/* Stamp ATELIER — rendu cloné de PartCardSlim (home) : tampon plat icône + texte coloré
+              (couleurs via STAMP_META[badge].full = stampColor home), à la place du rendu glass. */}
+          {badge && (
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.08 + 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="inline-flex items-center gap-1 text-[9px] lg:text-[10px] font-bold uppercase"
+              style={{
+                color: STAMP_META[badge].full,
+                letterSpacing: "0.06em",
+                lineHeight: "13px",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               {badge === "BEST" && <Star size={11} strokeWidth={2.4} fill="currentColor" aria-hidden />}
               {badge === "SÉCU" && <Shield size={11} strokeWidth={2.4} aria-hidden />}
               {badge === "NOUVEAU" && <Sparkles size={11} strokeWidth={2.4} aria-hidden />}
-              {STAMP_META[badge].label}
-            </span>
-          </motion.div>
-        )}
+              {badge}
+            </motion.span>
+          )}
+        </div>
+
+        {/* Halo studio PERMANENT — lumière douce derrière le produit (amplifiée au hover) */}
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+          style={{
+            background:
+              "radial-gradient(58% 52% at 50% 42%, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0) 62%)",
+          }}
+        />
+
+        {/* Ombre portée "au sol" PERMANENTE — sous le produit, élargie/assombrie au hover */}
+        <div
+          aria-hidden
+          className="absolute left-1/2 bottom-4 -translate-x-1/2 w-1/2 h-3 rounded-[50%] bg-black/20 blur-md pointer-events-none transition-all duration-500 group-hover:w-[58%] group-hover:bottom-3 group-hover:bg-black/25"
+        />
 
         {primaryImage ? (
-          <img 
+          <img
             src={displayImage}
             alt={part.name}
             loading="lazy"
             decoding="async"
-            className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+            className={cn(
+              "relative z-[1] w-full h-full object-contain p-4 drop-shadow-[0_12px_16px_rgba(26,26,26,0.16)] transition-all duration-500 group-hover:scale-[1.08] group-hover:drop-shadow-[0_22px_26px_rgba(26,26,26,0.22)]",
+              // Rupture : photo "voilée/dormante" — devinée derrière un léger flou,
+              // désaturée partiellement et adoucie (pas de gris mort, pas d'overlay masquant).
+              isOutOfStock && "blur-[2px] grayscale-[60%] opacity-70"
+            )}
           />
         ) : (
-          <div className="text-4xl opacity-30">🔧</div>
+          <div className="relative z-[1] text-4xl opacity-30 drop-shadow-[0_10px_14px_rgba(26,26,26,0.14)]">🔧</div>
         )}
         
         {/* Subtle Hover Effect */}
@@ -304,10 +351,10 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           </div>
         )}
 
-        {/* Out of Stock Overlay */}
+        {/* Rupture : tag sobre posé en BAS de la photo voilée (évite la pastille catégorie en haut-gauche) */}
         {isOutOfStock && (
-          <div className="absolute inset-0 bg-white/60 backdrop-blur-sm flex items-center justify-center">
-            <span className="px-3 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium">
+          <div className="absolute bottom-3 left-0 right-0 z-[2] flex justify-center pointer-events-none">
+            <span className="rounded bg-white/75 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#1A1A1A]/80">
               Rupture de stock
             </span>
           </div>
@@ -316,72 +363,100 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
       {/* Content */}
       <div className="relative space-y-2">
-        {/* Name */}
-        {part.category?.name && (
-          <span
-            className="text-[10px] font-extrabold uppercase tracking-[0.08em] leading-none"
-            style={{ color: darkenForLight(resolveCategoryColor(null, part.category.slug)) }}
-          >
-            {part.category.name}
-          </span>
-        )}
+        {/* Titre (l'eyebrow catégorie est désormais une pastille glass sur l'image — Diff 1) */}
         <h4
-          className="text-[13px] lg:text-[14px] leading-tight line-clamp-2"
+          className="text-[13px] lg:text-[14px] leading-tight line-clamp-2 mb-1.5 transition-colors"
           style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 600,
-            color: "#5B6470",
-            marginBottom: 2,
+            color: "#1A1A1A",
             minHeight: "2.2em",
           }}
         >
           {part.name}
         </h4>
 
-        {/* Price - Split Typography (entier + centimes + virgule FR) */}
+        {/* Ligne prix + stock — prix Bebas split à GAUCHE, indicateur stock discret à DROITE */}
         {priceParts && (
-          <motion.div
-            whileHover={{ scale: 1.04 }}
-            transition={{ duration: 0.2 }}
-            className="inline-flex items-baseline"
-            style={{ fontFamily: "'Bebas Neue', sans-serif", color: "#1A1A1A", lineHeight: 0.9 }}
-          >
-            <span style={{ fontSize: 36, letterSpacing: "0.01em" }}>{priceParts.int}</span>
-            <span style={{ fontSize: 20 }}>,{priceParts.dec}</span>
-            <span style={{ fontSize: 18, marginLeft: 3 }}>€</span>
-          </motion.div>
+          <div className="flex items-baseline justify-between gap-2">
+            <motion.div
+              whileHover={{ scale: 1.04 }}
+              transition={{ duration: 0.2 }}
+              className="inline-flex items-baseline"
+              style={{ fontFamily: "'Bebas Neue', sans-serif", color: "#1A1A1A", lineHeight: 0.9 }}
+            >
+              <span style={{ fontSize: 36, letterSpacing: "0.01em" }}>{priceParts.int}</span>
+              <span style={{ fontSize: 20 }}>,{priceParts.dec}</span>
+              <span style={{ fontSize: 18, marginLeft: 3 }}>€</span>
+            </motion.div>
+
+            {/* Stock discret : point coloré + texte court. Rupture (0) → rien ici (géré au Diff 6). */}
+            {part.stock_quantity !== null && part.stock_quantity > 0 && (
+              <span
+                className="inline-flex items-center gap-1.5 shrink-0 text-xs font-medium"
+                style={{ color: part.stock_quantity <= 3 ? "#FF6600" : "#4A7C59" }}
+              >
+                <span
+                  className="w-1.5 h-1.5 rounded-full"
+                  style={{ backgroundColor: part.stock_quantity <= 3 ? "#FF6600" : "#4A7C59" }}
+                />
+                {part.stock_quantity <= 3 ? `Plus que ${part.stock_quantity}` : "En stock"}
+              </span>
+            )}
+          </div>
         )}
 
-        {/* Technical Specs Row - Difficulty only */}
-        <div className="flex items-center pt-3 border-t border-[#ECE7DD]">
-          {/* Difficulty Indicator */}
-          <DifficultyKey level={part.difficulty_level} />
+        {/* Ligne specs — GAUCHE : jusqu'à 3 chips attributs (Direction B). DROITE : clé difficulté.
+            Sans attributs (scooter/Garage, useCompatibleParts ne sélectionne pas `attributes`,
+            ou pièce non remplie) : la clé reste calée à droite via ml-auto, pas de trou béant. */}
+        <div className="flex items-center gap-2 pt-3 border-t border-[#ECE7DD]">
+          {part.attributes?.length ? (
+            <div className="flex items-center gap-1.5 min-w-0 overflow-hidden">
+              {part.attributes.slice(0, 3).map((attr, i) => (
+                <span
+                  key={`${attr.label}-${i}`}
+                  className="inline-flex items-baseline gap-1 rounded-md border border-[#E5DFD3] px-2 py-0.5 text-[10px] leading-none whitespace-nowrap"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  {attr.label && <span style={{ color: "#1A1A1A" }}>{attr.label}</span>}
+                  <span style={{ color: categoryColor ?? "#1A1A1A", fontWeight: 600 }}>{attr.value}</span>
+                  {attr.unit && <span style={{ color: "#1A1A1A" }}>{attr.unit}</span>}
+                </span>
+              ))}
+            </div>
+          ) : null}
+          <div className="ml-auto shrink-0">
+            <DifficultyKey level={part.difficulty_level} />
+          </div>
         </div>
 
-        {/* Stock Indicator - Luxury Badge */}
-        {part.stock_quantity !== null && part.stock_quantity > 0 && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: index * 0.1 + 0.2 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mineral/15 border border-mineral/20"
+        {/* CTA — rupture : bouton SECONDAIRE "Me prévenir du retour" (l'orange est réservé à l'achat).
+            Purement visuel pour l'instant ; la capture email sera câblée en SB4. */}
+        {isOutOfStock ? (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              // TODO [SB4] : ouvrir la capture email "alerte retour stock". Aucun effet data ici.
+              console.log("[PartCard] Me prévenir du retour (placeholder SB4)", part.id);
+            }}
+            className="mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#4A7C59]/10 hover:bg-[#4A7C59]/15 text-[#4A7C59] border border-[#4A7C59]/30 font-bold text-sm transition-all duration-200 active:scale-[0.97]"
           >
-            <div className="w-2 h-2 rounded-full bg-mineral animate-pulse" />
-            <span className="text-xs text-mineral font-medium">
-              {part.stock_quantity <= 3 ? `Plus que ${part.stock_quantity}` : "En stock"}
-            </span>
-          </motion.div>
+            <Bell className="w-4 h-4" />
+            <span>Me prévenir du retour</span>
+          </button>
+        ) : (
+          /* Quick-Add Button - ATELIER orange, toujours visible (canon RelatedProducts) */
+          <button
+            onClick={handleQuickAdd}
+            disabled={part.price === null}
+            className="mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            <ShoppingCart className="w-4 h-4" />
+            <span>{part.price === null ? "Indisponible" : "Ajouter"}</span>
+          </button>
         )}
-
-        {/* Quick-Add Button - ATELIER orange, toujours visible (canon RelatedProducts) */}
-        <button
-          onClick={handleQuickAdd}
-          disabled={isOutOfStock || part.price === null}
-          className="mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
-        >
-          <ShoppingCart className="w-4 h-4" />
-          <span>{isOutOfStock || part.price === null ? "Indisponible" : "Ajouter"}</span>
-        </button>
       </div>
 
       {/* Subtle Corner Accent */}
