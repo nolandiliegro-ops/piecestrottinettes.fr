@@ -114,7 +114,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   // Server-to-server only: require shared admin secret
-  const expectedSecret = Deno.env.get("ADMIN_BULK_SECRET");
+  const expectedSecret = Deno.env.get("STOCK_ALERTS_CRON_SECRET");
   if (!expectedSecret) {
     console.error("ADMIN_BULK_SECRET is not configured");
     return new Response(
