@@ -43,6 +43,14 @@ const ENV = loadEnv();
 // DRY_RUN par défaut TRUE (aligné sur enrich.js) : on n'écrit que si DRY_RUN="false".
 const DRY_RUN = String(ENV.DRY_RUN ?? 'true').toLowerCase() !== 'false';
 
+// Flag PONCTUEL de redétourage forcé des photos (chambres à air uniquement).
+// Défaut false → sync normal strictement inchangé. Quand true ET DRY_RUN=false :
+// passe IMAGE-ONLY qui ré-détoure @imgly les photos source Airtable et ÉCRASE l'image
+// en base — sans toucher prix/stock/published/SEO. À remettre false après usage.
+const FORCE_REDETOURE = String(ENV.FORCE_REDETOURE ?? 'false').toLowerCase() === 'true';
+// Catégorie ciblée (comparaison via slugify → robuste casse/accents).
+const FORCE_REDETOURE_CATEGORY_SLUG = 'chambres-a-air';
+
 const AIRTABLE_API_KEY = ENV.AIRTABLE_API_KEY;
 const AIRTABLE_BASE_ID = ENV.AIRTABLE_BASE_ID || 'appCVWWSvCrOFSMpZ';
 const AIRTABLE_TABLE_ID = ENV.AIRTABLE_TABLE_ID || 'tblV3rukuKXNjvWVw'; // Pièces
@@ -382,6 +390,26 @@ async function fetchPartsImageState(slugs) {
   return state;
 }
 
+// Lit parts(id, slug) par lots → Map<slug, id>. Le redétourage forcé a besoin de l'UUID
+// sans repasser par bulk-insert-parts. Lève en cas d'échec HTTP.
+async function fetchPartIdsBySlug(slugs) {
+  const map = new Map();
+  if (!SUPABASE_ANON || slugs.length === 0) return map;
+  const CHUNK = 100;
+  for (let i = 0; i < slugs.length; i += CHUNK) {
+    const chunk = slugs.slice(i, i + CHUNK);
+    const u = new URL(`${SUPABASE_URL}/rest/v1/parts`);
+    u.searchParams.set('select', 'id,slug');
+    u.searchParams.set('slug', `in.(${chunk.map((s) => `"${s}"`).join(',')})`);
+    const res = await fetch(u.toString(), {
+      headers: { apikey: SUPABASE_ANON, Authorization: `Bearer ${SUPABASE_ANON}` },
+    });
+    if (!res.ok) throw new Error(`REST parts ${res.status}: ${(await res.text()).slice(0, 120)}`);
+    for (const row of await res.json()) map.set(row.slug, row.id);
+  }
+  return map;
+}
+
 async function bulkInsert(parts) {
   const url = `${SUPABASE_URL}/functions/v1/bulk-insert-parts`;
   const processImgUrl = `${SUPABASE_URL}/functions/v1/process-images`;
@@ -505,6 +533,45 @@ async function bulkInsert(parts) {
   console.log(`[sync] ⚠️  Erreurs catégories: ${errors}`);
 }
 
+// ─── Redétourage forcé (FORCE_REDETOURE) — chambres à air, IMAGE UNIQUEMENT ──────
+// Pour chaque chambre avec photos source Airtable : détoure @imgly local et ÉCRASE
+// l'image en base (process-images reset:true). AUCUN upsert de pièce → prix, stock,
+// published, SEO, slug, ean strictement inchangés.
+async function forceRedetoureChambres(parts) {
+  const processImgUrl = `${SUPABASE_URL}/functions/v1/process-images`;
+  const targets = parts.filter(
+    (p) => slugify(p._categoryName) === FORCE_REDETOURE_CATEGORY_SLUG &&
+           Array.isArray(p.source_image_urls) && p.source_image_urls.length > 0,
+  );
+  console.log(`\n[force-redétoure] Chambres à air : ${targets.length} pièce(s) avec photos source.`);
+  if (targets.length === 0) { console.log('[force-redétoure] Rien à faire.'); return; }
+
+  let idBySlug;
+  try {
+    idBySlug = await fetchPartIdsBySlug(targets.map((p) => p.slug));
+  } catch (e) {
+    console.error(`[force-redétoure] ❌ Lecture des UUID échouée : ${e.message}. Abandon (rien écrit).`);
+    return;
+  }
+
+  let ok = 0, err = 0, skip = 0;
+  for (const p of targets) {
+    const id = idBySlug.get(p.slug);
+    if (!id) { console.log(`   ⚠  ${p.slug} : absente en base → skip`); skip++; continue; }
+    process.stdout.write(`   🖼  ${p.slug} (redétoure forcé) : traitement...`);
+    const r = await processImages(id, p.source_image_urls, p.name, ADMIN_BULK_SECRET, processImgUrl);
+    if (r.ok) {
+      process.stdout.write(` ✅ ${r.processed}/${p.source_image_urls.length} ok${r.failed ? `, ${r.failed} erreur(s)` : ''}\n`);
+      ok++;
+    } else {
+      process.stdout.write(` ⚠  0/${p.source_image_urls.length} — ${r.errors.join('; ') || 'aucune image traitée'}\n`);
+      err++;
+    }
+  }
+  console.log(`\n[force-redétoure] ✅ ${ok} ré-détourée(s), ${err} erreur(s), ${skip} skip.`);
+  console.log('[force-redétoure] Prix / stock / published / SEO : NON touchés (image uniquement).');
+}
+
 function printDryRun(parts) {
   // Groupement local SANS strip (on garde _photoPrincipale pour l'affichage).
   const groups = {};
@@ -579,6 +646,22 @@ async function printDetourPreview(parts) {
   );
 }
 
+// Aperçu (DRY_RUN + FORCE_REDETOURE) : liste les chambres dont l'image serait ÉCRASÉE.
+function printForceRedetourePreview(parts) {
+  console.log('\n[sync] === APERÇU REDÉTOURAGE FORCÉ (chambres, lecture seule, aucun POST) ===');
+  const inCat = parts.filter((p) => slugify(p._categoryName) === FORCE_REDETOURE_CATEGORY_SLUG);
+  const targets = inCat.filter((p) => Array.isArray(p.source_image_urls) && p.source_image_urls.length > 0);
+  const noPhoto = inCat.filter((p) => !Array.isArray(p.source_image_urls) || p.source_image_urls.length === 0);
+  for (const p of targets) {
+    console.log(`  ! ${p.slug} — ${p.source_image_urls.length} photo(s) source → image ÉCRASÉE`);
+  }
+  for (const p of noPhoto) console.log(`  · ${p.slug} — aucune photo source → inchangée`);
+  console.log(
+    `\n[sync] FORCE_REDETOURE : ${targets.length} chambre(s) seraient ré-détourée(s), ` +
+    `${noPhoto.length} sans photo source (inchangée). Prix/stock/published/SEO non touchés.`,
+  );
+}
+
 (async () => {
   try {
     if (DRY_RUN) console.log('[sync] Mode DRY-RUN activé.');
@@ -608,7 +691,13 @@ async function printDetourPreview(parts) {
     if (DRY_RUN) {
       printDryRun(parts);
       await printDetourPreview(parts);
+      if (FORCE_REDETOURE) printForceRedetourePreview(parts);
       return;
+    }
+
+    if (FORCE_REDETOURE) {
+      await forceRedetoureChambres(parts);
+      return;          // passe image-only : on NE lance PAS bulkInsert (pas de re-sync data)
     }
 
     await bulkInsert(parts);
