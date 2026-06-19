@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ShoppingCart, Check, Star, Shield, Sparkles, Bell } from "lucide-react";
+import { ShoppingCart, Check, Star, Shield, Sparkles } from "lucide-react";
 import { forwardRef, MouseEvent, useId } from "react";
 import PartFavoriteButton from "./PartFavoriteButton";
+import StockAlertInline from "./StockAlertInline";
 import { CompatiblePart } from "@/hooks/useScooterData";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
@@ -186,6 +187,17 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         className
       )}
     >
+      {/* Stretched link : navigation pleine carte via overlay cliquable SOUS les contrôles
+          (favori/CTA en z-10, badges en z-10/z-20). Évite d'imbriquer le form email dans un
+          <a> — cause du bug de navigation à l'autofill (SB4d). */}
+      {part.slug && (
+        <Link
+          to={`/piece/${part.slug}`}
+          aria-label={part.name}
+          className="absolute inset-0 z-[5] rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4A7C59]"
+        />
+      )}
+
       {/* Subtle Gradient Overlay */}
       <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
@@ -430,28 +442,16 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           </div>
         </div>
 
-        {/* CTA — rupture : bouton SECONDAIRE "Me prévenir du retour" (l'orange est réservé à l'achat).
-            Purement visuel pour l'instant ; la capture email sera câblée en SB4. */}
+        {/* CTA — rupture : capture email "alerte retour stock" (SB4d).
+            L'orange reste réservé à l'achat ; state local à StockAlertInline (par carte). */}
         {isOutOfStock ? (
-          <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              // TODO [SB4] : ouvrir la capture email "alerte retour stock". Aucun effet data ici.
-              console.log("[PartCard] Me prévenir du retour (placeholder SB4)", part.id);
-            }}
-            className="mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#4A7C59]/10 hover:bg-[#4A7C59]/15 text-[#4A7C59] border border-[#4A7C59]/30 font-bold text-sm transition-all duration-200 active:scale-[0.97]"
-          >
-            <Bell className="w-4 h-4" />
-            <span>Me prévenir du retour</span>
-          </button>
+          <StockAlertInline part={part} />
         ) : (
           /* Quick-Add Button - ATELIER orange, toujours visible (canon RelatedProducts) */
           <button
             onClick={handleQuickAdd}
             disabled={part.price === null}
-            className="mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
+            className="relative z-10 mt-3 min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
           >
             <ShoppingCart className="w-4 h-4" />
             <span>{part.price === null ? "Indisponible" : "Ajouter"}</span>
@@ -466,15 +466,8 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
     </motion.div>
   );
 
-  // Wrap with Link if slug is available
-  if (part.slug) {
-    return (
-      <Link to={`/piece/${part.slug}`} className="block">
-        {cardContent}
-      </Link>
-    );
-  }
-
+  // Navigation assurée par le stretched link DANS la carte (overlay <Link> ci-dessus),
+  // pour ne jamais imbriquer le form email (carte en rupture) dans un <a>.
   return cardContent;
   }
 );
