@@ -55,7 +55,7 @@ export const useAllParts = (categoryId: string | null) => {
         description: null,
         technical_metadata: part.technical_metadata as Record<string, unknown> | null,
         images: (part as { images?: unknown }).images as import("@/lib/entityImage").ImageEntry[] | null | undefined,
-        attributes: (part.attributes as ProductAttribute[] | null) ?? null,
+        attributes: (part.attributes as unknown as ProductAttribute[] | null) ?? null,
       })) as CataloguePart[];
     },
     staleTime: 5 * 60 * 1000,
