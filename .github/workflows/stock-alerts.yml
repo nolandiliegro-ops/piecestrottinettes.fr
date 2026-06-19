@@ -1,0 +1,26 @@
+name: Alertes retour en stock — horaire
+
+on:
+  schedule:
+    # Toutes les heures, à la minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: stock-alerts
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Appel process-stock-alerts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          STOCK_ALERTS_CRON_SECRET: ${{ secrets.STOCK_ALERTS_CRON_SECRET }}
+        run: |
+          curl -fsS -X POST "${SUPABASE_URL}/functions/v1/process-stock-alerts" \
+            -H "Content-Type: application/json" \
+            -H "x-admin-secret: ${STOCK_ALERTS_CRON_SECRET}" \
+            -d '{"dry_run":false}'
