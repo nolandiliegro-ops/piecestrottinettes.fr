@@ -250,7 +250,7 @@ const PartsManager = () => {
       if (error) throw error;
 
       setParts(prev => [...prev, data as unknown as Part]);
-      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, price_override: false, compatibleScooterIds: [] });
+      setNewPart({ name: '', category_id: '', price: '', stock: '', description: '', difficulty_level: '', estimated_install_time_minutes: '', required_tools: '', youtube_video_id: '', sku: '', min_stock_alert: '5', meta_title: '', meta_description: '', technical_metadata: '{}', is_featured: false, price_override: false, compatibleScooterIds: [], attributes: [] });
       setIsCreateOpen(false);
       toast.success('Pièce créée avec succès');
     } catch (error: any) {
