@@ -1349,6 +1349,7 @@ export type Database = {
       }
       parts: {
         Row: {
+          attributes: Json | null
           category_id: string | null
           characteristics: string | null
           compatibility_source: string | null
@@ -1378,6 +1379,7 @@ export type Database = {
           youtube_video_id: string | null
         }
         Insert: {
+          attributes?: Json | null
           category_id?: string | null
           characteristics?: string | null
           compatibility_source?: string | null
@@ -1407,6 +1409,7 @@ export type Database = {
           youtube_video_id?: string | null
         }
         Update: {
+          attributes?: Json | null
           category_id?: string | null
           characteristics?: string | null
           compatibility_source?: string | null
@@ -1745,6 +1748,41 @@ export type Database = {
           updated_at?: string
         }
         Relationships: []
+      }
+      stock_alerts: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          notified_at: string | null
+          part_id: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          notified_at?: string | null
+          part_id: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          notified_at?: string | null
+          part_id?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "stock_alerts_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       tutorials: {
         Row: {
