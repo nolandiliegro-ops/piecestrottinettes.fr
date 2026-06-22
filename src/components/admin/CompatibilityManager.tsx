@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
@@ -21,6 +21,7 @@ interface Scooter {
 interface Part {
   id: string;
   name: string;
+  sku: string | null;
   image_url: string | null;
   images: ImageEntry[] | null;
   category: { name: string } | null;
@@ -49,6 +50,9 @@ const CompatibilityManager = () => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<FilterKey>('all');
   const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  // SB2 — vue pièces non câblées (repliable, collapsed par défaut) + filtre catégorie
+  const [showUnmatched, setShowUnmatched] = useState(false);
+  const [unmatchedCat, setUnmatchedCat] = useState<string>('all');
 
   const invalidateCompatQueries = () => {
     queryClient.invalidateQueries({
@@ -69,7 +73,7 @@ const CompatibilityManager = () => {
     try {
       const [scootersRes, partsRes, compatRes] = await Promise.all([
         supabase.from('scooter_models').select('id, name, slug, brand:brands(name)').order('name'),
-        supabase.from('parts').select('id, name, image_url, images, category:categories(name)').order('name'),
+        supabase.from('parts').select('id, name, sku, image_url, images, category:categories(name)').order('name'),
         supabase.from('part_compatibility').select('part_id, scooter_model_id, auto_suggested, confidence_level, suggestion_reason'),
       ]);
       if (scootersRes.error) throw scootersRes.error;
@@ -305,11 +309,35 @@ const CompatibilityManager = () => {
     finally { setBulkSaving(false); }
   };
 
+  // SB2 — agrégats de câblage, 1 passe sur metaByKey, sans requête (hook AVANT l'early-return)
+  const { validatedParts, wiredParts, onlySuggested, unmatchedParts } = useMemo(() => {
+    const validated = new Set<string>();
+    const suggested = new Set<string>();
+    // clé metaByKey = `${part_id}_${scooter_model_id}` ; un UUID fait 36 char et ne contient pas de '_'
+    metaByKey.forEach((m, k) => {
+      const partId = k.slice(0, 36);
+      if (m.auto) suggested.add(partId);
+      else validated.add(partId);
+    });
+    const wired = new Set<string>([...validated, ...suggested]);
+    const onlySug = [...suggested].filter((id) => !validated.has(id));
+    const unmatched = parts.filter((p) => !wired.has(p.id));
+    return { validatedParts: validated, suggestedParts: suggested, wiredParts: wired, onlySuggested: onlySug, unmatchedParts: unmatched };
+  }, [metaByKey, parts]);
+
   if (loading) {
     return <div className="flex justify-center py-12"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>;
   }
 
   const partsByCategory = getPartsByCategory();
+  // SB2 — options + filtrage catégorie de la vue non câblées
+  const unmatchedCats = Array.from(
+    new Set(unmatchedParts.map((p) => p.category?.name || 'Autre'))
+  ).sort((a, b) => a.localeCompare(b));
+  const unmatchedFiltered = unmatchedCat === 'all'
+    ? unmatchedParts
+    : unmatchedParts.filter((p) => (p.category?.name || 'Autre') === unmatchedCat);
+  const wiredPct = parts.length > 0 ? Math.round((wiredParts.size / parts.length) * 100) : 0;
   const sugCount = selectedScooter ? getCountByLevel(selectedScooter, 'auto') : 0;
   const highCount = selectedScooter ? getCountByLevel(selectedScooter, 'high') : 0;
   const medCount = selectedScooter ? getCountByLevel(selectedScooter, 'medium') : 0;
@@ -364,6 +392,90 @@ const CompatibilityManager = () => {
 
   return (
     <TooltipProvider delayDuration={300}>
+      {/* SB2 — Synthèse de câblage (barre globale + pièces non câblées), pleine largeur avant la grille */}
+      <div className="space-y-4 mb-6">
+        {/* Barre de progression globale */}
+        <div className="rounded-lg border border-border bg-card p-4">
+          <div className="flex items-center justify-between gap-2 flex-wrap mb-2">
+            <h3 className="font-semibold text-foreground flex items-center gap-2">
+              <Link2 className="w-4 h-4" style={{ color: '#4A7C59' }} />
+              {wiredParts.size} / {parts.length} pièces câblées
+            </h3>
+            <span className="text-sm font-semibold" style={{ color: '#4A7C59' }}>{wiredPct}%</span>
+          </div>
+          <div className="h-2.5 w-full rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(74,124,89,0.12)' }}>
+            <div
+              className="h-full rounded-full transition-all duration-300"
+              style={{ width: `${wiredPct}%`, backgroundColor: '#4A7C59' }}
+            />
+          </div>
+          <p className="text-[11px] mt-2" style={{ color: '#6B7280' }}>
+            {validatedParts.size} validées · {onlySuggested.length} en attente de validation · {unmatchedParts.length} non câblées
+          </p>
+        </div>
+
+        {/* Vue pièces non câblées (informatif — l'action de matching par pièce sera le SB3) */}
+        <div className="rounded-lg border border-border bg-card">
+          <button
+            type="button"
+            onClick={() => setShowUnmatched((v) => !v)}
+            className="w-full px-4 py-3 flex items-center justify-between hover:bg-muted/50 transition-colors rounded-lg"
+          >
+            <span className="font-semibold text-foreground flex items-center gap-2">
+              <Unlink className="w-4 h-4" style={{ color: '#6B7280' }} />
+              Pièces non câblées ({unmatchedParts.length})
+            </span>
+            {showUnmatched ? <ChevronDown className="w-4 h-4 text-muted-foreground" /> : <ChevronRight className="w-4 h-4 text-muted-foreground" />}
+          </button>
+          {showUnmatched && (
+            <div className="px-4 pb-4">
+              <div className="flex items-center gap-2 mb-3 flex-wrap">
+                <label htmlFor="unmatched-cat" className="text-xs font-medium" style={{ color: '#6B7280' }}>Catégorie</label>
+                <select
+                  id="unmatched-cat"
+                  value={unmatchedCat}
+                  onChange={(e) => setUnmatchedCat(e.target.value)}
+                  className="text-sm rounded-lg border px-3 py-2 bg-white min-h-[44px]"
+                  style={{ borderColor: 'rgba(74,124,89,0.25)', color: '#4A7C59' }}
+                >
+                  <option value="all">Toutes ({unmatchedParts.length})</option>
+                  {unmatchedCats.map((c) => (
+                    <option key={c} value={c}>
+                      {c} ({unmatchedParts.filter((p) => (p.category?.name || 'Autre') === c).length})
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {unmatchedFiltered.length === 0 ? (
+                <p className="text-sm text-muted-foreground py-4 text-center">Aucune pièce non câblée dans cette catégorie 🎉</p>
+              ) : (
+                <ScrollArea className="h-[280px]">
+                  <ul className="space-y-1 pr-2">
+                    {unmatchedFiltered.map((p) => (
+                      <li
+                        key={p.id}
+                        className="flex items-center justify-between gap-3 px-3 py-2 rounded-md flex-wrap"
+                        style={{ backgroundColor: '#F5F0E8' }}
+                      >
+                        <span className="text-sm text-foreground min-w-0 truncate">{p.name}</span>
+                        <span className="flex items-center gap-2 shrink-0">
+                          {p.sku && (
+                            <span className="text-[11px] font-mono px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(74,124,89,0.1)', color: '#4A7C59' }}>
+                              {p.sku}
+                            </span>
+                          )}
+                          <span className="text-[11px]" style={{ color: '#6B7280' }}>{p.category?.name || 'Autre'}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Sidebar scooters */}
         <div className="lg:col-span-1">
