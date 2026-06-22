@@ -10,6 +10,7 @@ import { Loader2, Link2, Unlink, Check, ChevronDown, ChevronRight, Sparkles, X, 
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 import { getPrimaryImage, type ImageEntry } from '@/lib/entityImage';
+import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 
 interface Scooter {
   id: string;
@@ -47,6 +48,12 @@ const CompatibilityManager = () => {
   const [bulkSaving, setBulkSaving] = useState(false);
   const [retriggering, setRetriggering] = useState<string | null>(null);
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
+  // SB3 — axe de travail : 'scooter' = mode existant, 'part' = nouveau mode par pièce
+  const [axis, setAxis] = useState<'scooter' | 'part'>('scooter');
+  const [selectedPart, setSelectedPart] = useState<string | null>(null);
+  const [localSelected, setLocalSelected] = useState<string[]>([]);
+  // SB3 t2 — portée de la sidebar « par pièce » : non câblées (défaut) vs toutes
+  const [partScope, setPartScope] = useState<'unwired' | 'all'>('unwired');
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<FilterKey>('all');
   const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
@@ -68,6 +75,8 @@ const CompatibilityManager = () => {
 
   useEffect(() => { fetchData(); }, []);
   useEffect(() => { setFilter('all'); }, [selectedScooter]);
+  // SB3 — reset au changement d'axe pour éviter la contamination entre modes
+  useEffect(() => { setSelectedScooter(null); setSelectedPart(null); }, [axis]);
 
   const fetchData = async () => {
     try {
@@ -174,6 +183,45 @@ const CompatibilityManager = () => {
       toast.success(`Validées (${level})`);
     } catch (e) { console.error(e); toast.error('Erreur validation batch'); }
     finally { setBulkSaving(false); }
+  };
+
+  // SB3 t2 — validation batch « 1 pièce × N trottinettes » (calqué sur validateBatch)
+  const validatePartBatch = async (partId: string, scooterIds: string[]) => {
+    setBulkSaving(true);
+    try {
+      // 1. upsert des cochés → compat validées (INSERT des nouveaux, suggestions → validées)
+      if (scooterIds.length > 0) {
+        const { error: upErr } = await supabase.from('part_compatibility').upsert(
+          scooterIds.map((sid) => ({
+            part_id: partId,
+            scooter_model_id: sid,
+            auto_suggested: false,
+            confidence_level: 'validated',
+          })),
+          { onConflict: 'part_id,scooter_model_id' }
+        );
+        if (upErr) throw upErr;
+      }
+      // 2. delete des décochés, BORNÉ au validé (ne jamais détruire une suggestion IA non vue)
+      let del = supabase.from('part_compatibility').delete()
+        .eq('part_id', partId)
+        .eq('auto_suggested', false);
+      if (scooterIds.length > 0) {
+        del = del.not('scooter_model_id', 'in', '(' + scooterIds.map((s) => '"' + s + '"').join(',') + ')');
+      }
+      const { error: delErr } = await del;
+      if (delErr) throw delErr;
+
+      await fetchData();
+      invalidateCompatQueries();
+      const partName = parts.find((p) => p.id === partId)?.name ?? 'la pièce';
+      toast.success(`${scooterIds.length} trottinette${scooterIds.length > 1 ? 's' : ''} câblée${scooterIds.length > 1 ? 's' : ''} sur ${partName}`);
+    } catch (e) {
+      console.error(e);
+      toast.error('Erreur lors de la validation batch');
+    } finally {
+      setBulkSaving(false);
+    }
   };
 
   const rejectAllSuggestions = async () => {
@@ -325,6 +373,18 @@ const CompatibilityManager = () => {
     return { validatedParts: validated, suggestedParts: suggested, wiredParts: wired, onlySuggested: onlySug, unmatchedParts: unmatched };
   }, [metaByKey, parts]);
 
+  // SB3b — réindex par pièce (zéro requête) : tous les scooter_model_id existants de la pièce
+  // (validées + suggérées confondues). Clé = `${part_id}_${scooter_model_id}`, UUID = 36 char sans '_'.
+  const selectedIdsForPart = useMemo(() => {
+    if (!selectedPart) return [];
+    const ids: string[] = [];
+    metaByKey.forEach((_, k) => { if (k.slice(0, 36) === selectedPart) ids.push(k.slice(37)); });
+    return ids;
+  }, [metaByKey, selectedPart]);
+
+  // seed du panneau « par pièce » à chaque (re)calcul (changement de pièce ou refetch)
+  useEffect(() => { setLocalSelected(selectedIdsForPart); }, [selectedIdsForPart]);
+
   if (loading) {
     return <div className="flex justify-center py-12"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>;
   }
@@ -338,6 +398,14 @@ const CompatibilityManager = () => {
     ? unmatchedParts
     : unmatchedParts.filter((p) => (p.category?.name || 'Autre') === unmatchedCat);
   const wiredPct = parts.length > 0 ? Math.round((wiredParts.size / parts.length) * 100) : 0;
+  // SB3 t2 — source de la sidebar « par pièce » selon la portée (non câblées vs toutes)
+  const partScopeBase = partScope === 'all' ? parts : unmatchedParts;
+  const partScopeCats = Array.from(
+    new Set(partScopeBase.map((p) => p.category?.name || 'Autre'))
+  ).sort((a, b) => a.localeCompare(b));
+  const partScopeFiltered = unmatchedCat === 'all'
+    ? partScopeBase
+    : partScopeBase.filter((p) => (p.category?.name || 'Autre') === unmatchedCat);
   const sugCount = selectedScooter ? getCountByLevel(selectedScooter, 'auto') : 0;
   const highCount = selectedScooter ? getCountByLevel(selectedScooter, 'high') : 0;
   const medCount = selectedScooter ? getCountByLevel(selectedScooter, 'medium') : 0;
@@ -394,6 +462,21 @@ const CompatibilityManager = () => {
     <TooltipProvider delayDuration={300}>
       {/* SB2 — Synthèse de câblage (barre globale + pièces non câblées), pleine largeur avant la grille */}
       <div className="space-y-4 mb-6">
+        {/* SB3a — Toggle d'axe de travail */}
+        <div className="inline-flex rounded-lg border p-1" style={{ borderColor: 'rgba(74,124,89,0.25)', backgroundColor: '#F5F0E8' }}>
+          {([['scooter', 'Par trottinette'], ['part', 'Par pièce']] as const).map(([key, label]) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setAxis(key)}
+              className="px-4 min-h-[44px] rounded-md text-sm font-semibold transition-colors"
+              style={axis === key ? { backgroundColor: '#4A7C59', color: '#fff' } : { color: '#6B7280' }}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
         {/* Barre de progression globale */}
         <div className="rounded-lg border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-2 flex-wrap mb-2">
@@ -477,6 +560,8 @@ const CompatibilityManager = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {axis === 'scooter' && (
+          <>
         {/* Sidebar scooters */}
         <div className="lg:col-span-1">
           <div className="rounded-lg border border-border bg-card p-4">
@@ -696,6 +781,135 @@ const CompatibilityManager = () => {
             )}
           </div>
         </div>
+          </>
+        )}
+
+        {axis === 'part' && (
+          <>
+            {/* Sidebar pièces (mode par pièce) */}
+            <div className="lg:col-span-1">
+              <div className="rounded-lg border border-border bg-card p-4">
+                <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <ListFilter className="w-4 h-4 text-primary" />Sélectionner une pièce
+                </h3>
+                {/* SB3 t2 — portée : non câblées vs toutes */}
+                <div className="inline-flex rounded-lg border p-1 mb-3" style={{ borderColor: 'rgba(74,124,89,0.25)', backgroundColor: '#F5F0E8' }}>
+                  {([['unwired', 'Non câblées'], ['all', 'Toutes']] as const).map(([key, label]) => (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => { setPartScope(key); setUnmatchedCat('all'); }}
+                      className="px-3 min-h-[40px] rounded-md text-xs font-semibold transition-colors"
+                      style={partScope === key ? { backgroundColor: '#4A7C59', color: '#fff' } : { color: '#6B7280' }}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <select
+                  value={unmatchedCat}
+                  onChange={(e) => setUnmatchedCat(e.target.value)}
+                  className="w-full text-sm rounded-lg border px-3 py-2 bg-white min-h-[44px] mb-3"
+                  style={{ borderColor: 'rgba(74,124,89,0.25)', color: '#4A7C59' }}
+                >
+                  <option value="all">Toutes catégories ({partScopeBase.length})</option>
+                  {partScopeCats.map((c) => (
+                    <option key={c} value={c}>
+                      {c} ({partScopeBase.filter((p) => (p.category?.name || 'Autre') === c).length})
+                    </option>
+                  ))}
+                </select>
+                <ScrollArea className="h-[420px]">
+                  <div className="space-y-1">
+                    {partScopeFiltered.length === 0 ? (
+                      <p className="text-sm text-muted-foreground py-6 text-center">
+                        {partScope === 'unwired' ? 'Aucune pièce non câblée 🎉' : 'Aucune pièce'}
+                      </p>
+                    ) : (
+                      partScopeFiltered.map((part) => {
+                        const isWired = wiredParts.has(part.id);
+                        return (
+                          <button
+                            key={part.id}
+                            onClick={() => setSelectedPart(part.id)}
+                            className={cn(
+                              'w-full text-left px-3 py-2 rounded-md transition-colors flex items-center gap-2',
+                              selectedPart === part.id ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
+                            )}
+                          >
+                            <span
+                              className="w-1.5 h-1.5 rounded-full shrink-0"
+                              style={{ backgroundColor: isWired ? '#4A7C59' : 'rgba(107,114,128,0.4)' }}
+                              aria-hidden
+                            />
+                            <span className="min-w-0">
+                              <p className="font-medium text-sm truncate">{part.name}</p>
+                              <p className={cn('text-xs truncate', selectedPart === part.id ? 'text-primary-foreground/70' : 'text-muted-foreground')}>
+                                {part.sku || '—'} · {part.category?.name || 'Autre'}
+                              </p>
+                            </span>
+                          </button>
+                        );
+                      })
+                    )}
+                  </div>
+                </ScrollArea>
+              </div>
+            </div>
+
+            {/* Panneau par pièce */}
+            <div className="lg:col-span-2">
+              <div className="rounded-lg border border-border bg-card p-4">
+                <div className="flex items-center justify-between mb-4 gap-2 flex-wrap">
+                  <h3 className="font-semibold text-foreground flex items-center gap-2">
+                    {selectedPart ? (
+                      <><Check className="w-4 h-4 text-primary" />Trottinettes compatibles</>
+                    ) : (
+                      <><Unlink className="w-4 h-4 text-muted-foreground" />Sélectionnez une pièce</>
+                    )}
+                  </h3>
+                </div>
+
+                {selectedPart ? (
+                  <>
+                    {/* Zone B — validation batch (INERTE en tranche 1, écriture = tranche 2) */}
+                    <div
+                      className="rounded-lg p-3 mb-4 border-t"
+                      style={{ backgroundColor: 'rgba(74,124,89,0.05)', borderColor: 'rgba(74,124,89,0.15)' }}
+                    >
+                      <p className="text-xs mb-2" style={{ color: '#6B7280' }}>
+                        {localSelected.length} trottinette{localSelected.length > 1 ? 's' : ''} cochée{localSelected.length > 1 ? 's' : ''}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => selectedPart && validatePartBatch(selectedPart, localSelected)}
+                        disabled={bulkSaving}
+                        className="inline-flex items-center gap-2 px-4 min-h-[44px] rounded-lg text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
+                        style={{ backgroundColor: '#4A7C59' }}
+                      >
+                        {bulkSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <CheckCheck className="w-4 h-4" />}
+                        Valider ({localSelected.length} trottinette{localSelected.length > 1 ? 's' : ''})
+                      </button>
+                    </div>
+
+                    <ScooterCompatibilitySelect
+                      partId={undefined}
+                      selectedIds={localSelected}
+                      onChange={setLocalSelected}
+                    />
+                  </>
+                ) : (
+                  <div className="h-[500px] flex items-center justify-center text-muted-foreground">
+                    <p className="text-center">
+                      <Link2 className="w-8 h-8 mx-auto mb-2 opacity-50" />
+                      Cliquez sur une pièce pour gérer ses trottinettes compatibles
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </>
+        )}
       </div>
       <Dialog open={!!lightboxUrl} onOpenChange={(o) => !o && setLightboxUrl(null)}>
         <DialogContent className="max-w-3xl p-2" style={{ backgroundColor: '#F5F0E8' }}>

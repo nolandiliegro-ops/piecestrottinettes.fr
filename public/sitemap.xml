@@ -4,49 +4,49 @@
   <!-- Pages statiques -->
   <url>
     <loc>https://piecestrottinettes.fr/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/catalogue</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/trottinettes</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/pepites</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/tutos</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/contact</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/cgv</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/mentions-legales</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -97,20 +97,20 @@
 
   <!-- Pièces -->
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9065-65</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10-x-250-valve-0-x-90</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-180mm-entraxe-48mm-2-couleurs-noir</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-52v-58v-5a-prise-gx16</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-160mm-dualtron-thunder-ultra</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -121,20 +121,20 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-6070-7-xiaomi-mi4-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-hope-tech4-v4-ceramique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-valve-90x90-134mm-jante-zero</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-vert</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-kuickwheel-s1c-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-rca</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -145,20 +145,20 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9x30-55-kukirin-g2-pro-2024</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-bleu</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-draisienne-12x175-valve-70x45</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-kugoo-gbooster-11e</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-60v-672v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-valve-45x45</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -169,32 +169,44 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-pure-electric</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-vert</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-eroad</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-zero-8-9</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/cache-led-lateral-teverun-fighter-10</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-metal-fritte-haute-performance</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-route-10x270-65</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-72v-84v-1-10a-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -205,44 +217,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-renforce-10x2125-90x90</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-jaune</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-valve-0x90</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-9065-65-valve-droite</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-10-cst-citygrip</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-ninebot-es1-es2-es3-es4</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -253,50 +235,44 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-cst-4103504</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-draisienne</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-dc-5521mm</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-xlr</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-speedway-et-dualtron</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-sram-sr10000</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-8x25-vsett</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x30-7065-65-90x90-valve</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-offroad-kugoo-m4-m4-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-60v-67v-1-10a-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-10-cst-citygrip</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -307,44 +283,38 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-air-10x2-2125-valve-90x90</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-etrier-jak-5-laotie</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pack-chargeur-rapide-72v-84v-1-10a-adaptateur-lp-16</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-3a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-180mm-entraxe-44mm-2-couleurs-noir</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-draisienne</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-metalliques-speedway-et-dualtron</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-air-10x250-valve-droite</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-7060-75-ninebot-segway-zt3-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-magura-mt5-mt7-ceramique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -355,32 +325,38 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-rouge</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-eroad</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-xiaomi-m365</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-air-10x250-valve-90x90</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x275-semi-offroad-urbanglide-e-cross-pro-max</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-reglable-1-20-a-prise-xt90</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-air-10x2-2125-valve-droite-xiaomi-m365</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-hope-tech4-v4-metalliques</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-draisienne-12x175</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -391,26 +367,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-24v-294v-2a-connecteur-dc-5521mm</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-dualtron-mini-pop-togo</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-air-classique-85x2-xiaomi-m365</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-rapide-60v-67v-1-10a-adaptateurlp-16</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -421,44 +385,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-9065-65-11-pouces</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-zero-8-zero-9-inokim-light-1-2</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/cache-led-lateral-teverun-fighter-10</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-zoom-semi-metallique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-160mm-entraxe-44mm-2-couleurs-noir</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-speedtrott-rs8001600-02b</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -469,26 +421,26 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-avid-juicy-bb7</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-48v-546v-2a-adaptateur-gx16-lp16-3</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-vsett-8-9-z8-pro-140mm</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-jante-94-mm</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-metalliques-shimano-g03s</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-24v-294v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-60v-672v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -499,194 +451,158 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-speedway-mini4-pro-200x50-90x90</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-magura-9c</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-magura-mt5-mt7</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-52v-588v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambres-a-air-dualtron-mini-et-speedway-leger-85x2-reinforced</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-8x2-pouces-e-road-ciwo</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-9065-65-11-pouces</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x60-zero-8-dualtron-raptor</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x25-dualtron-mini-pop-togo-gomme-tendre</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-48v-546v-2a-adaptateur-gx16-lp16-3</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-draisienne-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-hope-tech4-v4-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-valve-droite-xiaomi-m365</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-nutt-4-pistons-thunder-3-nami-metalliques</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-hope-tech4-v4-metalliques</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-semi-metallique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-valve-0x90</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-classique-85x2-valve-90x90-dualtron-mini</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-pro</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-24v-294v-2a-connecteur-dc-5521mm</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-magura-9c-metallique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-nutt-ventilees-dualtron-thunder</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-2a-connecteur-lp16-3</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-xiaomi-mi4-pro-2nd-gen-53v-23a</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-reglable-1-20-a-prise-xt90</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-magura-9c-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-magura-mt5-mt7-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-nutt-ventilees-dualtron-thunder-metal-fritte-haute-resistance</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-diam-140mm-pour-z8-pro-vsett-8-9</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-24v-294v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-rapide-60v-67v-1-10a-adaptateurlp-16</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-speedway-et-dualtron</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-xiaomi-m365</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -697,230 +613,626 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-kugoo-gbooster-11e</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xtech-zoom-xiaomi-mi3</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x3-255x80</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-48v-546v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x22125-valve-45x45</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x275-semi-offroad-urbanglide-e-cross-pro-max</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-ceramique</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-bleu</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-48v-546v-2a-connecteur-rca</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-dualtron-mini-pop-togo</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-8x2-kugoo-200x50</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-hope-tech4-v4-semi-metalliques</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x25-dualtron-mini-pop-togo-gomme-tendre</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xtech-zoom-xiaomi-mi3</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-xlr</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-ceramique</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-2a-connecteur-lp16-3</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-metalliques-xtech-zoom</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-130mm-xiaomi-mi4-pro-5-trous-1st-generation</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-dualtron-mini-52v-7a-lp-16</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-xiaomi-mi4-pro-2nd-gen-53v-23a</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-52v-588v-3a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-60v-672v-2a-prise-iec-citycoco</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-8x2-e-road-ciwo</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-cst-410350-4</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-ninebot-serie-f-xiaomi-mi4</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-52v-588v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-magura-9c</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-63v-2a-inmotion-s1s1f</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-12-pouces-12x2125</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-ventilees-dualtron-thunder</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-65-ninebot-g30-max</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-interne-ninebot-max-g30</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-ninebot-segway-zt3-pro</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-14-pouces-14x2125</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-jante-34-mm</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x270-65</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-200x50-speedway-mini4-pro</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-jante-44-mm</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x3-vsett-8-9-kukirin-g2-pro</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-dc-5521mm</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-72v-84v-2a-connecteur-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-valve-coudee-90-jante-zero-134mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-60v-672v-2a-prise-iec-citycoco</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-52v-588v-3a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-dualtron-mini-valve-90x90</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-140mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-63v-2a-inmotion-s1s1f</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x250-valve-90x90</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x30-7065-65</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x3-255x80</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x250-valve-0x90</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-14-pouces-14x2125</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-ninebot-es1-es2-es3-es4</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-ninebot-serie-f-xiaomi-mi4</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-renforcee-dualtron-mini-speedway-leger</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-9065-65-valve-droite</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-jante-34-mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-valve-90x90</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x90-hero-s8</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-fluo</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-36v-42v-2a-connecteur-rca</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-85x2-xiaomi-m365</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://piecestrottinettes.fr/piece/chargeur-48v-546v-3a-gx16-3p</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10090-18-eride-pro-sr</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-3a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://piecestrottinettes.fr/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-tektro-dorado</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-65-ninebot-g30-max</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x2125-pure-electric</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-xtr-m9100</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10090-18-eride-pro-sr</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x50-jante-94-mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-metalliques</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-zoom-metal-fritte</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x270-65</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-metal-fritte-dyisland</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-hyaes-mx3-mx4-mx5</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x2125-renforcee-90x90</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-draisienne-12-pouces-12x2125</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquette-de-freins-magura-mt5-mt7-metalliques</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chambre-a-air-10x250-valve-droite</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-freins-140mm-entraxe-48mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-freins-semi-metal-dyisland</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-160mm-28mm-entraxe-48mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-160mm-entraxe-44mm-2-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-sram-avid-e7-e9</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-freins-145-mm-6-trous</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-shimano-semi-metallique-g03s</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-160mm-entraxe-48mm-2-couleurs-noir</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-zero-8-zero-9-inokim-light-1-2</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-160mm-28mm-entraxe-44mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/plaquettes-de-frein-sram-db1-db3-db5</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9065-65</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x3-vsett-8-9-kukirin-g2-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-160mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-6070-7-xiaomi-mi4-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-bleu</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-9x30-55-kukirin-g2-pro-2024</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-160mm-entraxe-48mm-2-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-140mm-5-trous-xiaomi-mi4</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-85x2-xiaomi-m365</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-135mm-5-trous</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-48v-546v-2a-connecteur-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-ninebot-segway-zt3-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-200x60-zero-8-dualtron-raptor</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-120mm-6-trous</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-10x250-kuickwheel-s1c-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-180mm</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-interne-ninebot-max-g30</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pneu-plein-7060-75-ninebot-segway-zt3-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-180mm-entraxe-44mm-2-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-flottant-180mm-entraxe-48mm-2-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-rouge</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-xiaomi-120mm-m365-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-48v-546v-3a-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-bleu</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-110mm-xiaomi-m365</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-72v-84v-1-10a-gx16-3p</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/pack-chargeur-48v-546v-2a-connecteur-rca</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/disque-de-frein-140mm-kukirin-g2-pro</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piecestrottinettes.fr/piece/chargeur-rapide-52v-58v-5a-prise-gx16</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
