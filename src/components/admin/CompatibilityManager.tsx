@@ -51,11 +51,15 @@ const CompatibilityManager = () => {
   const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
 
   const invalidateCompatQueries = () => {
-    queryClient.invalidateQueries({ queryKey: ['compatible-parts'] });
-    queryClient.invalidateQueries({ queryKey: ['compatible-parts-rich'] });
-    queryClient.invalidateQueries({ queryKey: ['compatible-parts-count'] });
-    queryClient.invalidateQueries({ queryKey: ['compatible-scooters'] });
-    queryClient.invalidateQueries({ queryKey: ['related-parts'] });
+    queryClient.invalidateQueries({
+      predicate: (query) => {
+        const root = query.queryKey[0];
+        if (typeof root !== 'string') return false;
+        return ['compatible', 'compatibility', 'related-parts'].some((frag) =>
+          root.includes(frag)
+        );
+      },
+    });
   };
 
   useEffect(() => { fetchData(); }, []);
