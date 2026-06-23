@@ -1,62 +1,25 @@
 import { motion } from "framer-motion";
 import { Zap, Battery, Gauge, Route, CircleDot, Ruler } from "lucide-react";
 import { ScooterDetail } from "@/hooks/useScooterDetail";
+import { getBrandColors } from "@/contexts/ScooterContext";
 
 interface ScooterSpecsProps {
   scooter: ScooterDetail;
 }
 
+const UNBOUNDED = "'Unbounded', sans-serif";
+
 const ScooterSpecs = ({ scooter }: ScooterSpecsProps) => {
+  const accent = getBrandColors(scooter.brand?.name).accent;
+
   const specs = [
-    {
-      icon: Zap,
-      label: "Puissance",
-      value: scooter.power_watts,
-      unit: "W",
-      gradient: "from-yellow-500/20 to-orange-500/20",
-      iconColor: "text-yellow-500",
-    },
-    {
-      icon: Battery,
-      label: "Voltage",
-      value: scooter.voltage,
-      unit: "V",
-      gradient: "from-blue-500/20 to-cyan-500/20",
-      iconColor: "text-blue-500",
-    },
-    {
-      icon: Ruler,
-      label: "Capacité",
-      value: scooter.amperage,
-      unit: "Ah",
-      gradient: "from-purple-500/20 to-pink-500/20",
-      iconColor: "text-purple-500",
-    },
-    {
-      icon: Gauge,
-      label: "Vitesse Max",
-      value: scooter.max_speed_kmh,
-      unit: "km/h",
-      gradient: "from-red-500/20 to-orange-500/20",
-      iconColor: "text-red-500",
-    },
-    {
-      icon: Route,
-      label: "Autonomie",
-      value: scooter.range_km,
-      unit: "km",
-      gradient: "from-green-500/20 to-emerald-500/20",
-      iconColor: "text-green-500",
-    },
-    {
-      icon: CircleDot,
-      label: "Taille Pneus",
-      value: scooter.tire_size,
-      unit: "",
-      gradient: "from-gray-500/20 to-slate-500/20",
-      iconColor: "text-gray-500",
-    },
-  ].filter((spec) => spec.value);
+    { icon: Zap, label: "Puissance", value: scooter.power_watts, unit: "W" },
+    { icon: Battery, label: "Voltage", value: scooter.voltage, unit: "V" },
+    { icon: Ruler, label: "Capacité", value: scooter.amperage, unit: "Ah" },
+    { icon: Gauge, label: "Vitesse Max", value: scooter.max_speed_kmh, unit: "km/h" },
+    { icon: Route, label: "Autonomie", value: scooter.range_km, unit: "km" },
+    { icon: CircleDot, label: "Taille Pneus", value: scooter.tire_size, unit: "" },
+  ].filter((spec) => spec.value != null && spec.value !== "");
 
   if (specs.length === 0) return null;
 
@@ -67,51 +30,68 @@ const ScooterSpecs = ({ scooter }: ScooterSpecsProps) => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl lg:text-4xl text-foreground mb-8"
+          className="text-3xl lg:text-4xl text-foreground mb-8 uppercase"
+          style={{ fontFamily: UNBOUNDED, fontWeight: 800, letterSpacing: "-0.02em" }}
         >
-          SPÉCIFICATIONS TECHNIQUES
+          Spécifications techniques
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {specs.map((spec, index) => (
-            <motion.div
-              key={spec.label}
-              initial={{ opacity: 0, y: 20, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group relative"
-            >
-              <div
-                className={`relative rounded-2xl border border-border bg-card p-6 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30`}
+        {/* Grille 2 (mobile) / 3 (desktop) — pas de scroll horizontal */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          {specs.map((spec, index) => {
+            const isNumeric = typeof spec.value === "number";
+            return (
+              <motion.div
+                key={spec.label}
+                initial={{ opacity: 0, y: 20, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.06 }}
+                className="relative rounded-2xl border border-[#ECE7DD] p-5 shadow-[0_6px_18px_-12px_rgba(26,26,26,0.25)]"
+                style={{ backgroundColor: "#F4F1EA" }}
               >
-                {/* Background gradient */}
+                {/* Icône dans carré teinté marque (seul rappel couleur marque) */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${spec.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
-                />
+                  className="w-11 h-11 rounded-xl flex items-center justify-center mb-3"
+                  style={{ backgroundColor: `${accent}1f` }}
+                >
+                  <spec.icon className="w-5 h-5" style={{ color: accent }} strokeWidth={2.2} />
+                </div>
 
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <spec.icon className={`w-6 h-6 ${spec.iconColor} mb-4`} />
+                {/* Label */}
+                <span className="block text-xs text-muted-foreground uppercase tracking-wider mb-1">
+                  {spec.label}
+                </span>
 
-                  {/* Value */}
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="font-display text-3xl lg:text-4xl text-foreground">
+                {/* Valeur : numérique = gros + unité petite ; texte long = plus petit, multi-lignes */}
+                {isNumeric ? (
+                  <div className="flex items-baseline gap-1">
+                    <span
+                      className="text-3xl lg:text-4xl text-foreground"
+                      style={{ fontFamily: UNBOUNDED, fontWeight: 900, letterSpacing: "-0.03em" }}
+                    >
                       {spec.value}
                     </span>
-                    {spec.unit && (
-                      <span className="text-sm text-muted-foreground">{spec.unit}</span>
-                    )}
+                    {spec.unit && <span className="text-sm text-muted-foreground">{spec.unit}</span>}
                   </div>
-
-                  {/* Label */}
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider">
-                    {spec.label}
+                ) : (
+                  <span
+                    className="block text-base lg:text-lg text-foreground leading-tight"
+                    style={{
+                      fontFamily: UNBOUNDED,
+                      fontWeight: 700,
+                      letterSpacing: "-0.01em",
+                      overflowWrap: "anywhere",
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    {spec.value}
+                    {spec.unit ? ` ${spec.unit}` : ""}
                   </span>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

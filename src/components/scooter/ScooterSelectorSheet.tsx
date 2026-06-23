@@ -200,10 +200,10 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
     handleClose(false);
   };
 
-  // "Showroom →" : seule action carte qui quitte la home (vers la fiche showroom).
+  // "Voir la fiche →" : seule action carte qui quitte la home (vers la fiche /scooter).
   const handleShowroom = (slug: string) => {
     handleClose(false);
-    navigate(`/showroom/${slug}`);
+    navigate(`/scooter/${slug}`);
   };
 
   const isMutating = addToGarage.isPending || toggleOwned.isPending;

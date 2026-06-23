@@ -1,138 +1,253 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
+import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
+import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { useScooterBySlug, useScooterCompatibleParts } from "@/hooks/useScooterDetail";
-import ScooterHero from "@/components/scooter/ScooterHero";
+import ShowroomHeader from "@/components/showroom/ShowroomHeader";
+import ShowroomHero from "@/components/showroom/ShowroomHero";
 import ScooterSpecs from "@/components/scooter/ScooterSpecs";
 import ScooterDescription from "@/components/scooter/ScooterDescription";
 import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
-import AffiliateButton from "@/components/scooter/AffiliateButton";
-import OtherScootersCarousel from "@/components/scooter/OtherScootersCarousel";
-import SEO from "@/components/SEO";
+import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
+import { useShowroomData } from "@/hooks/useShowroomData";
+import { getBrandColors } from "@/contexts/ScooterContext";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+
+const SITE = "https://piecestrottinettes.fr";
+const FONT = "'Plus Jakarta Sans', sans-serif";
 
 const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { data: scooter, isLoading, error } = useScooterBySlug(slug);
-  const { data: compatibleParts = [], isLoading: isLoadingParts } = useScooterCompatibleParts(scooter?.id || null);
+  const { scooter, allScooters, compatibleParts, prevSlug, nextSlug, isLoading, isPartsLoading } =
+    useShowroomData(slug);
 
-
+  // Loading
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main className="pt-20 flex items-center justify-center min-h-[60vh]">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex flex-col items-center gap-4"
-          >
-            <Loader2 className="w-12 h-12 animate-spin text-primary" />
-            <p className="text-muted-foreground">Chargement du modèle...</p>
-          </motion.div>
-        </main>
-        <Footer />
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "#F5F0E8" }}>
+        <div className="flex flex-col items-center gap-4">
+          <Loader2 className="w-10 h-10 animate-spin" style={{ color: "#4A7C59" }} />
+          <p style={{ color: "#6B7280", fontFamily: FONT }}>Chargement du modèle...</p>
+        </div>
       </div>
     );
   }
 
-  if (error || !scooter) {
+  // 404 — not found or not published
+  if (!scooter) {
     return (
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main className="pt-20 flex items-center justify-center min-h-[60vh]">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center px-4"
-          >
-            <span className="text-8xl mb-6 block">🛴</span>
-            <h1 className="font-display text-4xl text-foreground mb-4">
+      <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
+        <ShowroomHeader />
+        <main className="flex-1 flex items-center justify-center px-4 pt-20">
+          <div className="text-center">
+            <span className="text-7xl mb-6 block">🛴</span>
+            <h1
+              className="text-4xl mb-3"
+              style={{ fontFamily: "'Anton', sans-serif", color: "#1A1A1A", textTransform: "uppercase", letterSpacing: "-0.01em" }}
+            >
               Modèle introuvable
             </h1>
-            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-              Ce modèle de trottinette n'existe pas dans notre base de données.
+            <p className="mb-8 max-w-md mx-auto" style={{ color: "#6B7280", fontFamily: FONT }}>
+              Cette trottinette n'existe pas ou n'est plus disponible.
             </p>
-            <Link to="/">
-              <Button variant="outline" className="gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Retour à l'accueil
-              </Button>
+            <Link
+              to="/trottinettes"
+              className="inline-flex items-center gap-2 min-h-[48px] px-6 rounded-xl text-white text-sm font-semibold uppercase tracking-wider"
+              style={{ backgroundColor: "#1A1A1A", fontFamily: FONT }}
+            >
+              <ArrowLeft className="w-4 h-4" strokeWidth={2.5} />
+              Toutes les trottinettes
             </Link>
-          </motion.div>
+          </div>
         </main>
-        <Footer />
       </div>
     );
   }
 
-  const scooterSchema = {
+  const brandName = scooter.brand?.name ?? "";
+  const brand = getBrandColors(brandName);
+  const count = compatibleParts.length;
+
+  // Prix réel = prix des PIÈCES compatibles (le scooter n'a pas de prix).
+  const prices = compatibleParts.map((p) => p.price).filter((p): p is number => p != null && p > 0);
+  const lowPrice = prices.length > 0 ? Math.min(...prices) : null;
+
+  // Nav gamme (même marque) — liens simples sous le breadcrumb.
+  const sameBrandModels = allScooters.filter(
+    (s) => s.slug !== scooter.slug && brandName && s.brand_name === brandName
+  );
+
+  const seoTitle = `${scooter.name} — Pièces compatibles`;
+  const seoDescription = `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
+  const canonical = `${SITE}/scooter/${scooter.slug}`;
+
+  // JSON-LD Product + AggregateOffer (prix réel issu des pièces compatibles)
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: scooter.name,
-    image: scooter.image_url,
-    description: scooter.description,
-    brand: { "@type": "Brand", name: scooter.brand?.name ?? "Pièces Trottinettes" },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "EUR",
-      availability: "https://schema.org/InStock",
-      url: `https://piecestrottinettes.fr/scooter/${scooter.slug}`,
-    },
+    ...(scooter.image_url ? { image: scooter.image_url } : {}),
+    description: scooter.description || seoDescription,
+    sku: scooter.slug,
+    brand: { "@type": "Brand", name: brandName || "Pièces Trottinettes" },
+    ...(lowPrice != null
+      ? {
+          offers: {
+            "@type": "AggregateOffer",
+            priceCurrency: "EUR",
+            lowPrice,
+            offerCount: prices.length,
+            availability: "https://schema.org/InStock",
+            url: canonical,
+          },
+        }
+      : {}),
+  };
+
+  // JSON-LD BreadcrumbList
+  const breadcrumbItems = [
+    { name: "Accueil", item: `${SITE}/` },
+    { name: "Trottinettes", item: `${SITE}/trottinettes` },
+    ...(scooter.brand?.slug ? [{ name: brandName, item: `${SITE}/marque/${scooter.brand.slug}` }] : []),
+    { name: scooter.name, item: canonical },
+  ];
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map((b, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: b.name,
+      item: b.item,
+    })),
   };
 
   return (
-    <div className="min-h-screen bg-background studio-luxury-bg watermark-brand">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
       <SEO
-        title={`${scooter.name} - Pièces détachées et compatibilité`}
-        description={`Trouvez toutes les pièces compatibles avec la ${scooter.name}. Freins, pneus, batteries, chargeurs. Livraison rapide sur piecestrottinettes.fr`}
+        title={seoTitle}
+        description={seoDescription}
         image={scooter.image_url ?? undefined}
-        canonical={`https://piecestrottinettes.fr/scooter/${scooter.slug}`}
-        schema={scooterSchema}
+        canonical={canonical}
+        schema={[productSchema, breadcrumbSchema]}
       />
-      <Header />
-      
-      <main className="pt-16 lg:pt-20">
-        {/* Back Navigation */}
+      <ShowroomHeader />
+
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+        className="flex-1"
+      >
+        <ShowroomHero
+          scooter={scooter}
+          allScooters={allScooters}
+          prevSlug={prevSlug}
+          nextSlug={nextSlug}
+        />
+
+        {/* Breadcrumb + nav gamme (liens simples) */}
         <div className="container mx-auto px-4 lg:px-8 pt-6">
-          <Link to="/trottinettes">
-            <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-foreground">
-              <ArrowLeft className="w-4 h-4" />
-              Toutes les trottinettes
-            </Button>
-          </Link>
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Accueil</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/trottinettes">Trottinettes</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              {scooter.brand?.slug && (
+                <>
+                  <BreadcrumbSeparator />
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to={`/marque/${scooter.brand.slug}`}>{brandName}</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                </>
+              )}
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>{scooter.name}</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
+          {/* Nav gamme même marque — liens simples (Temps 1) */}
+          {sameBrandModels.length > 0 && (
+            <nav
+              aria-label={`Gamme ${brandName}`}
+              className="mt-4 flex items-center gap-2 overflow-x-auto pb-1"
+            >
+              <span
+                className="flex-shrink-0 text-xs font-bold uppercase tracking-wider"
+                style={{ color: brand.accent, fontFamily: FONT }}
+              >
+                Gamme {brandName}
+              </span>
+              <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "rgba(26,26,26,0.25)" }} />
+              {sameBrandModels.map((s) => (
+                <Link
+                  key={s.slug}
+                  to={`/scooter/${s.slug}`}
+                  className="flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors"
+                  style={{
+                    color: "#1A1A1A",
+                    backgroundColor: "rgba(255,255,255,0.7)",
+                    border: "1px solid rgba(26,26,26,0.08)",
+                    fontFamily: FONT,
+                  }}
+                >
+                  {s.name}
+                </Link>
+              ))}
+            </nav>
+          )}
         </div>
 
-        {/* Hero Section */}
-        <ScooterHero scooter={scooter} />
-
-        {/* Specs Grid */}
+        {/* Specs (tuiles couleur marque, Unbounded) */}
         <ScooterSpecs scooter={scooter} />
 
         {/* Description */}
-        <ScooterDescription description={scooter.description} />
+        <ScooterDescription description={scooter.description} accentColor={brand.accent} />
 
-        {/* YouTube Video */}
+        {/* Vidéo YouTube */}
         <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />
 
-        {/* Compatible Parts Grid - THE KEY ELEMENT */}
-        <CompatiblePartsGrid
-          parts={compatibleParts}
-          isLoading={isLoadingParts}
-          scooterName={scooter.name}
+        {/* Pièces compatibles (ancre scroll du bouton "Pièces") */}
+        <div id="showroom-parts" style={{ scrollMarginTop: "80px" }}>
+          <CompatiblePartsGrid
+            parts={compatibleParts}
+            isLoading={isPartsLoading}
+            scooterName={scooter.name}
+          />
+        </div>
+
+        {/* Autres modèles — segmented control 3 onglets */}
+        <RelatedScootersTabs
+          current={{
+            id: scooter.id,
+            brand_id: scooter.brand?.id ?? null,
+            brandName,
+            power_watts: scooter.power_watts,
+            max_speed_kmh: scooter.max_speed_kmh,
+            range_km: scooter.range_km,
+          }}
         />
-
-        {/* Other Scooters Carousel */}
-        <OtherScootersCarousel currentScooterId={scooter.id} />
-
-        {/* Affiliate CTA */}
-        {scooter.affiliate_link && (
-          <AffiliateButton affiliateLink={scooter.affiliate_link} scooterName={scooter.name} />
-        )}
-      </main>
+      </motion.main>
 
       <Footer />
     </div>

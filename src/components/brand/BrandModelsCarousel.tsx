@@ -15,7 +15,7 @@ interface Props {
 
 const spec = (v: number | null, suffix: string) => (v != null ? `${v}${suffix}` : null);
 
-// Horizontal native scroll-snap carousel of the brand's models → /showroom/:slug.
+// Horizontal native scroll-snap carousel of the brand's models → /scooter/:slug.
 // When the brand has no model yet, shows a soft "coming soon" banner instead.
 const BrandModelsCarousel = ({ models, brandName, accentColor }: Props) => {
   const navigate = useNavigate();
@@ -82,7 +82,7 @@ const BrandModelsCarousel = ({ models, brandName, accentColor }: Props) => {
                 <motion.button
                   key={m.id}
                   type="button"
-                  onClick={() => navigate(`/showroom/${m.slug}`)}
+                  onClick={() => navigate(`/scooter/${m.slug}`)}
                   aria-label={`Voir ${m.name}`}
                   whileHover={reduce ? undefined : { y: -4 }}
                   transition={{ duration: 0.3, ease: EASE }}

@@ -36,7 +36,7 @@ const HeroSearchFirst = () => {
         imageUrl: s.image_url,
       });
     }
-    navigate(`/showroom/${slug}`);
+    navigate(`/scooter/${slug}`);
   };
 
   const submitFreeText = () => {

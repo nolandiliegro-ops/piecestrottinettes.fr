@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { Heart, Home, Wrench, FileText, ExternalLink, Check } from "lucide-react";
+import { Heart, Home, Wrench, ExternalLink, Check } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import {
@@ -27,7 +27,7 @@ const ShowroomActionButtons = ({ slug, name, affiliateLink }: ShowroomActionButt
   const addToGarage = useAddToGarage();
   const removeFromGarage = useRemoveFromGarage();
 
-  const loginRedirect = () => navigate(`/login?returnTo=/showroom/${slug}`);
+  const loginRedirect = () => navigate(`/login?returnTo=/scooter/${slug}`);
   const isFavorite = inGarage && !isOwned;
   const busy = addToGarage.isPending || removeFromGarage.isPending;
 
@@ -112,35 +112,21 @@ const ShowroomActionButtons = ({ slug, name, affiliateLink }: ShowroomActionButt
           {inGarage ? "Ajouté" : "Garage"}
         </motion.button>
 
-        {/* Pièces */}
+        {/* Pièces compatibles — contrôle (vert sage, design system) */}
         <motion.button
           type="button"
           onClick={handleScrollToParts}
           aria-label="Voir les pièces compatibles"
           whileHover={reduceMotion ? undefined : { scale: 1.05 }}
           whileTap={reduceMotion ? undefined : { scale: 0.95 }}
-          className={`${BTN_BASE} col-span-2 lg:col-span-1`}
-          style={{ backgroundColor: "#1A1A1A", color: "#FFFFFF", fontFamily: FONT }}
+          className={`${BTN_BASE} ${affiliateLink ? "" : "col-span-2 lg:col-span-1"}`}
+          style={{ backgroundColor: "#4A7C59", color: "#FFFFFF", fontFamily: FONT }}
         >
           <Wrench className="w-4 h-4" strokeWidth={2.5} />
-          Pièces
+          Pièces compatibles
         </motion.button>
 
-        {/* Fiche complète (secondaire) */}
-        <motion.button
-          type="button"
-          onClick={() => navigate(`/scooter/${slug}`)}
-          aria-label={`Voir la fiche complète de ${name}`}
-          whileHover={reduceMotion ? undefined : { scale: 1.05 }}
-          whileTap={reduceMotion ? undefined : { scale: 0.95 }}
-          className={`${BTN_BASE} ${affiliateLink ? "" : "col-span-2 lg:col-span-1"}`}
-          style={{ backgroundColor: "#FFFFFF", border: "1px solid #1A1A1A", color: "#1A1A1A", fontFamily: FONT }}
-        >
-          <FileText className="w-4 h-4" strokeWidth={2.5} />
-          Fiche
-        </motion.button>
-
-        {/* Acheter chez partenaire (vert sauge) */}
+        {/* Acheter chez partenaire — achat (orange, design system) */}
         {affiliateLink && (
           <motion.a
             href={affiliateLink}
@@ -150,7 +136,7 @@ const ShowroomActionButtons = ({ slug, name, affiliateLink }: ShowroomActionButt
             whileHover={reduceMotion ? undefined : { scale: 1.05 }}
             whileTap={reduceMotion ? undefined : { scale: 0.95 }}
             className={`${BTN_BASE} col-span-2 lg:col-span-1`}
-            style={{ backgroundColor: "#4A7C59", color: "#FFFFFF", fontFamily: FONT }}
+            style={{ backgroundColor: "#FF6600", color: "#FFFFFF", fontFamily: FONT }}
           >
             <ExternalLink className="w-4 h-4" strokeWidth={2.5} />
             Acheter
