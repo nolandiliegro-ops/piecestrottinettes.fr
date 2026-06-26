@@ -12,6 +12,8 @@ export interface ScooterDetail {
   voltage: number | null;
   amperage: number | null;
   max_speed_kmh: number | null;
+  max_speed_private_kmh: number | null;
+  price_eur: number | null;
   range_km: number | null;
   tire_size: string | null;
   youtube_video_id: string | null;
@@ -64,6 +66,8 @@ export const useScooterBySlug = (slug: string | undefined) => {
           voltage,
           amperage,
           max_speed_kmh,
+          max_speed_private_kmh,
+          price_eur,
           range_km,
           tire_size,
           youtube_video_id,

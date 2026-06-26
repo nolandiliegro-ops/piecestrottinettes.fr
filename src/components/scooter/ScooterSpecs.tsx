@@ -12,11 +12,24 @@ const UNBOUNDED = "'Unbounded', sans-serif";
 const ScooterSpecs = ({ scooter }: ScooterSpecsProps) => {
   const accent = getBrandColors(scooter.brand?.name).accent;
 
+  // Vitesse terrain privé affichée seulement si renseignée ET > vitesse route.
+  const hasPrivate =
+    scooter.max_speed_private_kmh != null &&
+    scooter.max_speed_kmh != null &&
+    scooter.max_speed_private_kmh > scooter.max_speed_kmh;
+
+  const speedSpecs = hasPrivate
+    ? [
+        { icon: Gauge, label: "Vitesse (route)", value: scooter.max_speed_kmh, unit: "km/h" },
+        { icon: Gauge, label: "Vitesse (privé)", value: scooter.max_speed_private_kmh, unit: "km/h" },
+      ]
+    : [{ icon: Gauge, label: "Vitesse Max", value: scooter.max_speed_kmh, unit: "km/h" }];
+
   const specs = [
     { icon: Zap, label: "Puissance", value: scooter.power_watts, unit: "W" },
     { icon: Battery, label: "Voltage", value: scooter.voltage, unit: "V" },
     { icon: Ruler, label: "Capacité", value: scooter.amperage, unit: "Ah" },
-    { icon: Gauge, label: "Vitesse Max", value: scooter.max_speed_kmh, unit: "km/h" },
+    ...speedSpecs,
     { icon: Route, label: "Autonomie", value: scooter.range_km, unit: "km" },
     { icon: CircleDot, label: "Taille Pneus", value: scooter.tire_size, unit: "" },
   ].filter((spec) => spec.value != null && spec.value !== "");
