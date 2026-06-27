@@ -1,0 +1,11 @@
+{
+  "brandName": "Pure Electric",
+  "scooters": [
+    {
+      "slug": "pure-x-mclaren",
+      "source_image_urls": [
+        "https://pureelectric-scooters.com.au/cdn/shop/files/pure-scooter-chrome-pure-x-mclaren-chrome-72323927835000_15351e16-7fb4-4f24-9c6e-993515113bf5.jpg?v=1734480225"
+      ]
+    }
+  ]
+}

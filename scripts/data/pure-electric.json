@@ -1,0 +1,169 @@
+{
+  "brandName": "Pure Electric",
+  "brand": {
+    "tagline": "L'ingénierie britannique de la mobilité urbaine",
+    "description": "Trouvez toutes les pièces détachées Pure Electric pour votre trottinette électrique : pneus 10 pouces tubeless, chambres à air, plaquettes et disques de frein, freins tambour, batteries et chargeurs. Compatibilité vérifiée sur les gammes Air⁶ Suspension, Escape, Flex et Pure x McLaren. Pièces d'origine et équivalents, expédition rapide.",
+    "editorial_verdict": "Fondée à Bristol en 2018 par Adam Norris (père du pilote McLaren F1 Lando Norris), Pure Electric conçoit ses trottinettes en interne avec une obsession : la sécurité et le quotidien urbain. Résultat : des machines bridées 25 km/h, étanches IP65, montées sur de gros pneus 10\" tubeless increvables et un double freinage (tambour avant + KERS ou disque arrière). À l'atelier, ce sont des trottinettes saines à entretenir. Les pièces qui tournent le plus : pneus et chambres à air 10 pouces, plaquettes et disques sur les Ultra Max, et chargeurs. Une marque clean et fiable, idéale pour rouler sans prise de tête.",
+    "country": "Royaume-Uni",
+    "founded_year": 2018,
+    "accent_color": "#00B3A4",
+    "logo_url": "https://www.pureelectric.com/cdn/shop/files/PE_logo.svg?height=30&v=1773832651",
+    "hero_image_url": "https://www.pureelectric.com/cdn/shop/collections/Air5Pro__008_-_New_PA6_Stem_copy_1.png?v=1774447921",
+    "website_url": "https://www.pureelectric.com",
+    "display_order": 8,
+    "published": true
+  },
+  "scooters": [
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Air⁶ Suspension",
+      "slug": "pure-air-6-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-air-suspension-1244805503.jpg?v=1781713393"
+      ],
+      "power_watts": 924,
+      "max_speed_kmh": 25,
+      "range_km": 45,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Air⁶ Suspension | PiècesTrottinettes",
+      "meta_description": "Toutes les pièces détachées pour la Pure Air⁶ Suspension : pneus 10\" tubeless, chambres à air, plaquettes, frein tambour et chargeur. Compatibilité vérifiée.",
+      "description": "La Pure Air⁶ Suspension reprend la best-seller Air et lui ajoute la double suspension GlideMotion™ (fourche télescopique avant + amortisseurs jumelés arrière réglables) pour un confort net sur les pavés. Moteur jusqu'à 924 W (pic), autonomie annoncée jusqu'à 45 km, vitesse bridée à 25 km/h en France, montée jusqu'à 14 % de pente. Pneus 10\" tubeless, double freinage (tambour avant), étanchéité IP65, charge max 120 kg, application Pure pour le suivi et le verrouillage. Pièces les plus demandées : pneus et chambres à air 10 pouces, plaquettes et chargeur.",
+      "search_terms": "pure air 6, pure air6 suspension, air 6, pure air suspension, glidemotion"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Air⁶ Pro+ Suspension",
+      "slug": "pure-air-6-pro-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-air-pro-suspension-1244805481.jpg?v=1781712730"
+      ],
+      "power_watts": 1200,
+      "max_speed_kmh": 25,
+      "range_km": 75,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Air⁶ Pro+ Suspension | PiècesTrottinettes",
+      "meta_description": "Pièces détachées Pure Air⁶ Pro+ Suspension : pneus 10\" tubeless, chambres à air, plaquettes, freins et chargeur. Compatibilité vérifiée, expédition rapide.",
+      "description": "La Pure Air⁶ Pro+ Suspension monte en puissance avec un moteur jusqu'à 1200 W (pic) et une autonomie annoncée jusqu'à 75 km, tout en gardant la double suspension GlideMotion™ pour le confort. Vitesse bridée à 25 km/h en France, franchissement de pente jusqu'à 19 %. Pneus 10\" tubeless, double freinage, étanchéité IP65, charge max 120 kg, application Pure. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes, chargeur.",
+      "search_terms": "pure air 6 pro, air6 pro plus, pure air pro suspension, air 6 pro+"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Air⁶ Ultra Suspension",
+      "slug": "pure-air-6-ultra-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-air-ultra-suspension-1244805459.jpg?v=1781712072"
+      ],
+      "power_watts": 1200,
+      "max_speed_kmh": 25,
+      "range_km": 90,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Air⁶ Ultra Suspension | PiècesTrottinettes",
+      "meta_description": "Pièces détachées Pure Air⁶ Ultra Suspension : pneus 10\" tubeless, chambres à air, plaquettes, freins, chargeur. Compatibilité vérifiée, livraison rapide.",
+      "description": "La Pure Air⁶ Ultra Suspension offre la plus grande autonomie de la gamme Air⁶, annoncée jusqu'à 90 km, avec un moteur jusqu'à 1200 W (pic) et la double suspension GlideMotion™. Elle ajoute le système breveté de stabilisation de direction (Active Steering Stabilisation™) pour limiter le flottement du guidon. Vitesse bridée à 25 km/h en France, pente jusqu'à 23 %. Pneus 10\" tubeless, double freinage, IP65, charge max 120 kg, application Pure. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes, chargeur.",
+      "search_terms": "pure air 6 ultra, air6 ultra, pure air ultra suspension, air 6 ultra"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Air⁶ Ultra Max Suspension",
+      "slug": "pure-air-6-ultra-max-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-air-ultra-max-suspension-1244805436.jpg?v=1781711378"
+      ],
+      "power_watts": 1900,
+      "max_speed_kmh": 25,
+      "range_km": 90,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Air⁶ Ultra Max Suspension | PiècesTrott",
+      "meta_description": "Pièces détachées Pure Air⁶ Ultra Max Suspension : pneus 10\" tubeless, chambres à air, plaquettes, disque de frein, chargeur. Compatibilité vérifiée.",
+      "description": "La Pure Air⁶ Ultra Max Suspension est la plus puissante de la gamme Air⁶ : moteur jusqu'à 1900 W (pic), couple massif et franchissement de pente jusqu'à 36 %. Elle ajoute un frein à disque arrière en plus du tambour avant pour maîtriser la puissance, double suspension GlideMotion™, stabilisation de direction et autonomie annoncée jusqu'à 90 km. Vitesse bridée à 25 km/h en France. Pneus 10\" tubeless, IP65, charge max 120 kg, application Pure. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes ET disque de frein arrière, chargeur.",
+      "search_terms": "pure air 6 ultra max, air6 ultra max, pure air ultra max, air 6 ultra max"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Escape",
+      "slug": "pure-escape",
+      "source_image_urls": [],
+      "power_watts": 924,
+      "max_speed_kmh": 25,
+      "range_km": 44,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Escape | PiècesTrottinettes",
+      "meta_description": "Pièces détachées Pure Escape : pneus 10\" tubeless, chambres à air, plaquettes, frein tambour, batterie et chargeur. Compatibilité vérifiée, expédition rapide.",
+      "description": "La Pure Escape inaugure la position de conduite « Ultimate Riding Stance » pour un meilleur équilibre. Moteur 350 W nominal (jusqu'à 924 W en pic), autonomie annoncée jusqu'à 44 km, pente jusqu'à 14 %, vitesse bridée à 25 km/h en France. Freinage par tambour avant + système KERS régénératif arrière, éclairage avant 150 lumens, feu arrière + stop. Batterie lithium-ion 36V 10Ah, recharge complète en 6 h. Poids 19 kg, charge max 120 kg, pneus 10\" tubeless, IP65, stabilisation de direction Pure Control™. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes, frein tambour, chargeur.",
+      "search_terms": "pure escape, escape, pure electric escape, ultimate riding stance"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Escape Pro+ Suspension",
+      "slug": "pure-escape-pro-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-escape-pro-suspension-1227423828.jpg?v=1773683171"
+      ],
+      "power_watts": 1200,
+      "max_speed_kmh": 25,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Escape Pro+ Suspension | PiècesTrott",
+      "meta_description": "Pièces détachées Pure Escape Pro+ Suspension : pneus 10\" tubeless, chambres à air, plaquettes, freins et chargeur. Compatibilité vérifiée, livraison rapide.",
+      "description": "La Pure Escape Pro+ Suspension reprend l'Escape et y ajoute la double suspension GlideMotion™ et la stabilisation de direction (Active Steering Stabilisation™), sur un cadre acier renforcé avec guidon redessiné et pneus à crampons renforcés. Moteur jusqu'à 1200 W (pic), autonomie annoncée jusqu'à 60 km, pente jusqu'à 23 %, vitesse bridée à 25 km/h en France. Pneus 10\" tubeless, double freinage, IP65, charge max 120 kg, application Pure. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes, chargeur.",
+      "search_terms": "pure escape pro, escape pro plus, pure escape pro+ suspension, escape pro+"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Escape Ultra Max Suspension",
+      "slug": "pure-escape-ultra-max-suspension",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-escape-ultra-max-suspension-1244805387.jpg?v=1781709912"
+      ],
+      "power_watts": 1900,
+      "max_speed_kmh": 25,
+      "range_km": 75,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Escape Ultra Max Suspension | PiècesTrott",
+      "meta_description": "Pièces détachées Pure Escape Ultra Max Suspension : pneus 10\" tubeless, chambres à air, plaquettes, disque de frein, chargeur. Compatibilité vérifiée.",
+      "description": "La Pure Escape Ultra Max Suspension est la plus puissante des Escape : moteur jusqu'à 1900 W (pic), couple massif, franchissement de pente jusqu'à 36 %. Suspension GlideMotion™ renforcée et frein à disque arrière en plus du tambour avant pour garder la puissance sous contrôle. Batterie amovible (charge déportée et sécurité accrue), autonomie annoncée jusqu'à 75 km, vitesse bridée à 25 km/h en France. Pneus 10\" tubeless, IP65, charge max 120 kg, application Pure. Pièces récurrentes : pneus et chambres à air 10 pouces, plaquettes ET disque de frein arrière, chargeur.",
+      "search_terms": "pure escape ultra max, escape ultra max, pure escape ultra, escape ultra max suspension"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure Flex",
+      "slug": "pure-flex",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-flex-1238469009.jpg?v=1778803399"
+      ],
+      "power_watts": 924,
+      "max_speed_kmh": 25,
+      "range_km": 52,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure Flex | PiècesTrottinettes",
+      "meta_description": "Pièces détachées Pure Flex : pneus 10\" tubeless, chambres à air, frein tambour, e-frein et chargeur. Compatibilité vérifiée, expédition rapide.",
+      "description": "La Pure Flex est la trottinette la plus compacte de Pure : design pliable ultra-réduit, guidon réglable en hauteur, position de conduite avant pour un meilleur équilibre. Moteur jusqu'à 924 W (pic), autonomie annoncée jusqu'à 52 km, pente jusqu'à 19 %, vitesse bridée à 25 km/h en France. Poids contenu (16,2 kg), pneus 10\" tubeless anti-crevaison, double freinage (tambour avant + e-frein arrière), IP65, stabilisation de direction Pure Control™, indicateurs avant et arrière. Pièces récurrentes : pneus et chambres à air 10 pouces, frein tambour, chargeur.",
+      "search_terms": "pure flex, flex, pure advance flex, trottinette compacte pliable"
+    },
+    {
+      "brand": "Pure Electric",
+      "name": "Pure x McLaren",
+      "slug": "pure-x-mclaren",
+      "source_image_urls": [
+        "https://www.pureelectric.com/cdn/shop/files/pure-scooter-papaya-pure-x-mclaren-flex-1230822864.jpg?v=1775042471"
+      ],
+      "power_watts": 924,
+      "max_speed_kmh": 25,
+      "range_km": 62,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "meta_title": "Pièces Pure x McLaren | PiècesTrottinettes",
+      "meta_description": "Pièces détachées Pure x McLaren : pneus 10\" tubeless, chambres à air, frein tambour, e-frein et chargeur. Compatibilité vérifiée sur toutes les éditions.",
+      "description": "La Pure x McLaren est la série issue de la collaboration entre Pure Electric et l'écurie McLaren F1, déclinée en plusieurs livrées cosmétiques (Papaya, Black, Chrome, MCL38, MP4/4, Senna) sur une base technique commune de type Flex : mêmes pièces détachées d'une édition à l'autre. Position de conduite avant, guidon, repose-pieds et tube de direction pliables. Moteur jusqu'à 924 W (pic), autonomie annoncée jusqu'à 62 km, pente jusqu'à 19 %, vitesse bridée à 25 km/h en France. Pneus 10\" tubeless, double freinage (tambour avant + KERS arrière), IP65, stabilisation de direction, finition peinte 5 étapes. Pièces récurrentes : pneus et chambres à air 10 pouces, frein tambour, chargeur.",
+      "search_terms": "pure mclaren, pure x mclaren, mclaren flex, papaya, mcl38, mp4/4, senna"
+    }
+  ]
+}
