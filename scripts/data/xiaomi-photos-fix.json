@@ -1,0 +1,8 @@
+{
+  "brandName": "Xiaomi",
+  "scooters": [
+    { "slug": "xiaomi-electric-scooter-4", "source_image_urls": ["https://media.cdnws.com/_i/21277/5743/3371/45/trottinette-xiaomi-4-1.png", "https://media.cdnws.com/_i/21277/5742/3089/44/trottinette-xiaomi-4-e.png", "https://media.cdnws.com/_i/21277/5745/3775/47/trottinette-xiaomi-4-pliee.png"] },
+    { "slug": "xiaomi-electric-scooter-4-pro", "source_image_urls": ["https://media.cdnws.com/_i/21277/5241/1848/43/trottinette-xiaomi-pro4-jardin.png"] },
+    { "slug": "xiaomi-electric-scooter-4-ultra", "source_image_urls": ["https://media.cdnws.com/_i/21277/5729/2554/31/trottinette-xiaomi-ultra-4-etanche.png"] }
+  ]
+}

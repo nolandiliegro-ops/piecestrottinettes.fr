@@ -25,6 +25,7 @@ interface Part {
   sku: string | null;
   image_url: string | null;
   images: ImageEntry[] | null;
+  published: boolean | null;
   category: { name: string } | null;
 }
 
@@ -82,7 +83,7 @@ const CompatibilityManager = () => {
     try {
       const [scootersRes, partsRes, compatRes] = await Promise.all([
         supabase.from('scooter_models').select('id, name, slug, brand:brands(name)').order('name'),
-        supabase.from('parts').select('id, name, sku, image_url, images, category:categories(name)').order('name'),
+        supabase.from('parts').select('id, name, sku, image_url, images, published, category:categories(name)').order('name'),
         supabase.from('part_compatibility').select('part_id, scooter_model_id, auto_suggested, confidence_level, suggestion_reason'),
       ]);
       if (scootersRes.error) throw scootersRes.error;
@@ -369,7 +370,9 @@ const CompatibilityManager = () => {
     });
     const wired = new Set<string>([...validated, ...suggested]);
     const onlySug = [...suggested].filter((id) => !validated.has(id));
-    const unmatched = parts.filter((p) => !wired.has(p.id));
+    // B0 — ne considérer comme « non câblées » que les pièces publiées (les brouillons
+    // ne doivent pas entrer dans le matching IA par catégorie)
+    const unmatched = parts.filter((p) => !wired.has(p.id) && p.published === true);
     return { validatedParts: validated, suggestedParts: suggested, wiredParts: wired, onlySuggested: onlySug, unmatchedParts: unmatched };
   }, [metaByKey, parts]);
 
