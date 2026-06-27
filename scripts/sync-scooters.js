@@ -125,7 +125,7 @@ async function main() {
   const batches = Array.isArray(data) ? data : [data];
 
   for (const batch of batches) {
-    const { brandName, scooters, models } = batch;
+    const { brandName, brand, scooters, models } = batch;
     const items = scooters ?? models;
 
     if (!brandName || !Array.isArray(items) || items.length === 0) {
@@ -145,7 +145,7 @@ async function main() {
           'x-admin-secret': ADMIN_SECRET,
           'x-sync-secret': ADMIN_SECRET,
         },
-        body: JSON.stringify({ brandName, brand_name: brandName, scooters: items, models: items, forceUpdate: doUpdate }),
+        body: JSON.stringify({ brandName, brand_name: brandName, scooters: items, models: items, forceUpdate: doUpdate, ...(brand ? { brand } : {}) }),
       });
 
       const text = await res.text();
