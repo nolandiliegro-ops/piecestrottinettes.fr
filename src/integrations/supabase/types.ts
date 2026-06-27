@@ -196,6 +196,66 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_compat_doublons_20260627: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      backup_part_compat_20260623: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
       backup_partcompat_legacy_pp_20260610: {
         Row: {
           auto_suggested: boolean | null
@@ -528,6 +588,96 @@ export type Database = {
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      backup_scooter_doublons_20260627: {
+        Row: {
+          affiliate_link: string | null
+          amperage: number | null
+          brand_id: string | null
+          compatible_parts_count: number | null
+          created_at: string | null
+          description: string | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured_home: boolean | null
+          is_top_moment: boolean | null
+          max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          power_watts: number | null
+          price_eur: number | null
+          published: boolean | null
+          range_km: number | null
+          search_terms: string | null
+          slug: string | null
+          technical_signature: Json | null
+          tire_size: string | null
+          voltage: number | null
+          year: number | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brand_id?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_eur?: number | null
+          published?: boolean | null
+          range_km?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          technical_signature?: Json | null
+          tire_size?: string | null
+          voltage?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brand_id?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_eur?: number | null
+          published?: boolean | null
+          range_km?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          technical_signature?: Json | null
+          tire_size?: string | null
+          voltage?: number | null
+          year?: number | null
           youtube_video_id?: string | null
         }
         Relationships: []
@@ -1632,10 +1782,12 @@ export type Database = {
           is_featured_home: boolean
           is_top_moment: boolean
           max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
           meta_description: string | null
           meta_title: string | null
           name: string
           power_watts: number | null
+          price_eur: number | null
           published: boolean
           range_km: number | null
           search_terms: string | null
@@ -1659,10 +1811,12 @@ export type Database = {
           is_featured_home?: boolean
           is_top_moment?: boolean
           max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
           name: string
           power_watts?: number | null
+          price_eur?: number | null
           published?: boolean
           range_km?: number | null
           search_terms?: string | null
@@ -1686,10 +1840,12 @@ export type Database = {
           is_featured_home?: boolean
           is_top_moment?: boolean
           max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
           name?: string
           power_watts?: number | null
+          price_eur?: number | null
           published?: boolean
           range_km?: number | null
           search_terms?: string | null
