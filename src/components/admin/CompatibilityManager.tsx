@@ -48,6 +48,9 @@ const CompatibilityManager = () => {
   const [saving, setSaving] = useState(false);
   const [bulkSaving, setBulkSaving] = useState(false);
   const [retriggering, setRetriggering] = useState<string | null>(null);
+  // B1 — relance matching IA sur le 1er lot (≤35) des pièces publiées non câblées d'une catégorie
+  const [catRetriggering, setCatRetriggering] = useState(false);
+  const [catRetrigResult, setCatRetrigResult] = useState<{ processed: number; suggestions: number; errors: number } | null>(null);
   const [selectedScooter, setSelectedScooter] = useState<string | null>(null);
   // SB3 — axe de travail : 'scooter' = mode existant, 'part' = nouveau mode par pièce
   const [axis, setAxis] = useState<'scooter' | 'part'>('scooter');
@@ -259,6 +262,35 @@ const CompatibilityManager = () => {
     } catch (e) {
       console.error(e); toast.error('Erreur re-trigger IA');
     } finally { setRetriggering(null); }
+  };
+
+  // B1 — relance le matching IA sur UN seul lot de part_ids (clone de retriggerForPart, mode
+  // part_ids, auth JWT de session admin — jamais x-admin-secret). Pas de boucle ici (= B2).
+  const retriggerCategoryFirstLot = async (ids: string[]) => {
+    if (ids.length === 0) return;
+    setCatRetriggering(true);
+    setCatRetrigResult(null);
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const { data, error } = await supabase.functions.invoke('retrigger-compatibility-matching', {
+        body: { part_ids: ids },
+        headers: session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : undefined,
+      });
+      if (error) throw error;
+      const results: Array<{ passe_A_added?: number; passe_B_added?: number; ai_status?: string }> =
+        Array.isArray(data?.results) ? data.results : [];
+      const suggestions = results.reduce((s, r) => s + (r.passe_A_added ?? 0) + (r.passe_B_added ?? 0), 0);
+      const errors = results.filter((r) => r.ai_status === 'error').length;
+      setCatRetrigResult({ processed: results.length, suggestions, errors });
+      toast.success(`${results.length} pièce(s) traitée(s) · +${suggestions} suggestion(s) IA · ${errors} erreur(s)`);
+      await fetchData();
+      invalidateCompatQueries();
+    } catch (e) {
+      console.error(e);
+      toast.error('Erreur relance matching IA (catégorie)');
+    } finally {
+      setCatRetriggering(false);
+    }
   };
 
   const toggleCategory = (categoryName: string) => {
@@ -531,6 +563,27 @@ const CompatibilityManager = () => {
                     </option>
                   ))}
                 </select>
+              </div>
+              {/* B1 — relancer le matching IA sur le 1er lot (≤35) des pièces publiées non câblées de la catégorie */}
+              <div className="rounded-lg p-3 mb-3 border-t" style={{ backgroundColor: 'rgba(74,124,89,0.05)', borderColor: 'rgba(74,124,89,0.15)' }}>
+                <p className="text-xs mb-2" style={{ color: '#6B7280' }}>
+                  1er lot : <span className="font-semibold" style={{ color: '#4A7C59' }}>{Math.min(unmatchedFiltered.length, 35)}</span> / {unmatchedFiltered.length} pièce{unmatchedFiltered.length > 1 ? 's' : ''} non câblée{unmatchedFiltered.length > 1 ? 's' : ''}{unmatchedCat !== 'all' ? ` — ${unmatchedCat}` : ''}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => retriggerCategoryFirstLot(unmatchedFiltered.map((p) => p.id).slice(0, 35))}
+                  disabled={catRetriggering || unmatchedFiltered.length === 0}
+                  className="inline-flex items-center gap-2 px-4 min-h-[44px] rounded-lg text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
+                  style={{ backgroundColor: '#4A7C59' }}
+                >
+                  {catRetriggering ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
+                  Relancer matching IA (catégorie)
+                </button>
+                {catRetrigResult && (
+                  <p className="text-[11px] mt-2" style={{ color: '#6B7280' }}>
+                    Dernier lot : {catRetrigResult.processed} traitée{catRetrigResult.processed > 1 ? 's' : ''} · +{catRetrigResult.suggestions} suggestion{catRetrigResult.suggestions > 1 ? 's' : ''} IA · {catRetrigResult.errors} erreur{catRetrigResult.errors > 1 ? 's' : ''}
+                  </p>
+                )}
               </div>
               {unmatchedFiltered.length === 0 ? (
                 <p className="text-sm text-muted-foreground py-4 text-center">Aucune pièce non câblée dans cette catégorie 🎉</p>
