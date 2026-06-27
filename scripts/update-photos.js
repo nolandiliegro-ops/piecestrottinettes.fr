@@ -10,6 +10,7 @@
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { detoure } from './lib/detoure.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args      = process.argv.slice(2);
@@ -36,28 +37,59 @@ function loadEnv() {
   return env;
 }
 
-// ─── process-images helper ────────────────────────────────────────────────────
-
+// ─── process-images helper (détourage LOCAL @imgly + mode images_base64) ────────
+//
+// Pour chaque source_url : detoure(url) en local → Buffer PNG → base64 (sans
+// préfixe data:) → 1 POST process-images avec images_base64:[b64].
+// reset:true sur la 1ère image (repart d'un tableau vide), reset:false ensuite
+// (append). Une image qui échoue est comptée en erreur et la boucle continue.
+// Aucun fallback Remove.bg, aucun envoi de source_urls.
+//
+// Retour : { ok, processed:perImgOk, failed:perImgErr, errors:[...] }
+//   ok:true dès que perImgOk > 0 (succès partiel accepté).
+//   ok:false uniquement si perImgOk === 0 (aucune image passée).
 async function processImages(entityId, sourceUrls, altBase, secret, url) {
-  try {
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
-      body: JSON.stringify({
-        entity_type: 'scooter',
-        entity_id: entityId,
-        source_urls: sourceUrls,
-        alt_base: altBase,
-      }),
-    });
-    const text = await res.text();
-    let json;
-    try { json = JSON.parse(text); } catch { return { ok: false, error: `non-JSON: ${text.slice(0, 80)}` }; }
-    if (!res.ok) return { ok: false, error: json?.error ?? `HTTP ${res.status}` };
-    return { ok: true, processed: json.processed_count ?? 0, failed: json.failed_count ?? 0 };
-  } catch (e) {
-    return { ok: false, error: e.message };
+  let perImgOk = 0;
+  let perImgErr = 0;
+  const errors = [];
+
+  for (let i = 0; i < sourceUrls.length; i++) {
+    const srcUrl = sourceUrls[i];
+    try {
+      const buf = await detoure(srcUrl); // LOCAL @imgly, URL → Buffer PNG
+      const b64 = buf.toString('base64'); // sans préfixe data:
+
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
+        body: JSON.stringify({
+          entity_type: 'scooter',
+          entity_id: entityId,
+          images_base64: [b64],
+          alt_base: altBase,
+          reset: i === 0,
+        }),
+      });
+
+      const text = await res.text();
+      let json;
+      try { json = JSON.parse(text); }
+      catch { perImgErr++; errors.push(`img ${i}: non-JSON: ${text.slice(0, 80)}`); continue; }
+
+      if (!res.ok || json?.success !== true) {
+        perImgErr++;
+        errors.push(`img ${i}: ${json?.error ?? `HTTP ${res.status}`}`);
+        continue;
+      }
+      perImgOk++;
+    } catch (e) {
+      // detourage (URL morte, échec moteur) ou réseau : on logue et on continue
+      perImgErr++;
+      errors.push(`img ${i}: ${e.message}`);
+    }
   }
+
+  return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr, errors };
 }
 
 // ─── Résolution slug → id via Supabase REST ───────────────────────────────────
@@ -141,10 +173,14 @@ async function main() {
       const result = await processImages(row.id, source_image_urls, altBase, ADMIN_SECRET, PROCESS_IMG_URL);
 
       if (result.ok) {
-        process.stdout.write(` ✅ ${result.processed}/${source_image_urls.length} ok\n`);
+        if (result.failed > 0) {
+          process.stdout.write(` ✅ ${result.processed}/${source_image_urls.length} ok, ${result.failed} erreur(s)\n`);
+        } else {
+          process.stdout.write(` ✅ ${result.processed}/${source_image_urls.length} ok\n`);
+        }
         photoOk++;
       } else {
-        process.stdout.write(` ❌ ${result.error}\n`);
+        process.stdout.write(` ❌ 0/${source_image_urls.length} ok — ${result.errors.join('; ') || 'aucune image traitée'}\n`);
         photoErr++;
       }
     }
