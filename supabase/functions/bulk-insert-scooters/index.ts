@@ -25,10 +25,27 @@ interface ScooterInput {
   technical_signature?: Record<string, unknown>;
 }
 
+interface BrandInput {
+  tagline?: string;
+  description?: string;
+  editorial_verdict?: string;
+  editorial_summary?: string;
+  country?: string;
+  founded_year?: number;
+  accent_color?: string;
+  logo_url?: string;
+  hero_image_url?: string;
+  website_url?: string;
+  youtube_video_id?: string;
+  display_order?: number;
+  published?: boolean;
+}
+
 interface RequestBody {
   brandName: string;
   brandSlug?: string;
   brandLogoUrl?: string;
+  brand?: BrandInput;
   scooters: ScooterInput[];
 }
 
@@ -51,7 +68,7 @@ Deno.serve(async (req) => {
 
     // Parse body
     const body: RequestBody = await req.json();
-    const { brandName, brandSlug, brandLogoUrl, scooters } = body;
+    const { brandName, brandSlug, brandLogoUrl, brand: brandInput, scooters } = body;
 
     if (!brandName || !Array.isArray(scooters) || scooters.length === 0) {
       return new Response(
@@ -68,9 +85,35 @@ Deno.serve(async (req) => {
 
     // 1. Upsert brand
     const slug = brandSlug || brandName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+    // Base obligatoire : name + slug uniquement.
+    const brandUpsert: Record<string, unknown> = { name: brandName, slug };
+
+    // Habillage optionnel : on ne fusionne QUE les clés fournies (≠ undefined ET ≠ null),
+    // pour ne JAMAIS écraser une valeur posée à la main par un null (override-safe).
+    const b: BrandInput = brandInput ?? {};
+    const editableBrandKeys = [
+      "tagline", "description", "editorial_verdict", "editorial_summary",
+      "country", "founded_year", "accent_color", "hero_image_url",
+      "website_url", "youtube_video_id", "display_order",
+    ] as const;
+    for (const key of editableBrandKeys) {
+      const val = (b as Record<string, unknown>)[key];
+      if (val !== undefined && val !== null) brandUpsert[key] = val;
+    }
+
+    // logo_url : priorité bloc brand > top-level brandLogoUrl. N'écrit JAMAIS null
+    // (corrige le bug "logo_url: brandLogoUrl || null" qui écrasait à null en ré-import brut).
+    const resolvedLogo = b.logo_url ?? brandLogoUrl;
+    if (resolvedLogo != null) brandUpsert.logo_url = resolvedLogo;
+
+    // published : posé UNIQUEMENT si fourni dans le bloc brand. Sinon non touché
+    // (défaut DB false à la création, valeur existante préservée sinon).
+    if (b.published !== undefined && b.published !== null) brandUpsert.published = b.published;
+
     const { data: brand, error: brandError } = await supabase
       .from("brands")
-      .upsert({ name: brandName, slug, logo_url: brandLogoUrl || null }, { onConflict: "slug" })
+      .upsert(brandUpsert, { onConflict: "slug" })
       .select("id")
       .single();
 
