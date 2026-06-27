@@ -1,0 +1,7 @@
+{
+  "brandName": "Xiaomi",
+  "scooters": [
+    { "slug": "mi-3", "source_image_urls": ["https://media.cdnws.com/_i/21277/4966/716/70/trottinette-elctrique-xiaomi-3-test.jpeg"] },
+    { "slug": "mi-pro-2", "source_image_urls": ["https://media.cdnws.com/_i/21277/4081/3969/81/trottinette-electrique-xiaomi-pro-2.jpeg"] }
+  ]
+}

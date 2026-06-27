@@ -1,0 +1,7 @@
+{
+  "brandName": "Kaabo",
+  "scooters": [
+    { "slug": "mantis-pro", "source_image_urls": ["https://www.maxblinker.fr/16627-panda_thickbox_default/kaabo-mantis-10-pro-plus.jpg"] },
+    { "slug": "wolf-warrior", "source_image_urls": ["https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_Wolf_Warrior_11_pas_cher.jpg?v=1723629402"] }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "brandName": "Dualtron",
+  "scooters": [
+    {
+      "slug": "dualtron-city-2025",
+      "source_image_urls": [
+        "https://dualtron-shop.com/wp-content/uploads/2021/11/Dualtron-City-EY4.jpg",
+        "https://dualtron-shop.com/wp-content/uploads/2021/11/Dualtron-City-EY4-Profile.jpg",
+        "https://dualtron-shop.com/wp-content/uploads/2021/11/Dualtron-City-EY4-Front.jpg",
+        "https://dualtron-shop.com/wp-content/uploads/2021/11/Dualtron-City-EY4-Folded.jpg"
+      ]
+    }
+  ]
+}

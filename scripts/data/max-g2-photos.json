@@ -1,0 +1,11 @@
+{
+  "brandName": "Segway",
+  "scooters": [
+    {
+      "slug": "ninebot-max-g2",
+      "source_image_urls": [
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/522847539/4715410959.webp"
+      ]
+    }
+  ]
+}

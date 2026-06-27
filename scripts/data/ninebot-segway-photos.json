@@ -1,0 +1,8 @@
+{
+  "brandName": "Ninebot / Segway",
+  "scooters": [
+    { "slug": "f40", "source_image_urls": ["https://www.segwayfrance.com/wp-content/uploads/2022/12/ninebot-kickscooter-f40i-segway-france-00.png"] },
+    { "slug": "g30-max", "source_image_urls": ["https://media.cdnws.com/_i/21277/3621/222/22/trottinette-electrique-ninebot-max.png"] },
+    { "slug": "p100s", "source_image_urls": ["https://media.cdnws.com/_i/21277/5454/846/58/trottinette-segway-p100-se.jpeg"] }
+  ]
+}

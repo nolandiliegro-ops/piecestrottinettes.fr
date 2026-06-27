@@ -1,0 +1,13 @@
+{
+  "brandName": "Xiaomi",
+  "scooters": [
+    {
+      "slug": "mi-essential",
+      "source_image_urls": [
+        "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_scooter_essential_xiaomi_pas_cher.jpg",
+        "https://cdn.shopify.com/s/files/1/0968/8318/files/scooter_essential_xiaomi_pliable-118115.jpg",
+        "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_essential_xiaomi_3_modes-211186.jpg"
+      ]
+    }
+  ]
+}
