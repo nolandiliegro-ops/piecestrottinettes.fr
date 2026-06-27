@@ -1,0 +1,97 @@
+{
+  "brandName": "Inokim",
+  "scooters": [
+    {
+      "name": "Inokim OXO",
+      "slug": "inokim-oxo",
+      "power_watts": 2000,
+      "max_speed_kmh": 25,
+      "voltage": 60,
+      "amperage": 26,
+      "range_km": 110,
+      "weight_kg": 34,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "brake_type": "Freins à disque hydrauliques avant et arrière",
+      "suspension": "Double suspension ajustable OSAP",
+      "ip_rating": "IPX4",
+      "meta_title": "Inokim OXO - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inokim OXO : pneus et chambres à air 10\", plaquettes, chargeurs. Compatibilité vérifiée, livraison rapide. Trouvez votre pièce.",
+      "description": "L'Inokim OXO est le fer de lance bimoteur de la marque israélienne haut de gamme : 2×1000 W (2600 W en crête), batterie LG 60V 26 Ah, roues 10 pouces gonflées et double suspension ajustable OSAP. Bridée à 25 km/h sur voie publique (jusqu'à 65 km/h sur terrain privé), elle vise les riders exigeants en quête de puissance et de confort. Freinage par disques hydrauliques avant et arrière, châssis en aluminium aviation, certifiée IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles Inokim OXO : chambres à air et pneus 10 pouces, plaquettes de frein, et chargeurs.",
+      "search_terms": "inokim oxo, oxo 2026, inokim oxo bimoteur, pieces inokim oxo, trottinette inokim oxo",
+      "source_image_urls": [
+        "https://inokim.com/cdn/shop/files/carbon_01_d41db245-891a-4963-9d03-15ebaf02147a.jpg?v=1742141079",
+        "https://inokim.com/cdn/shop/files/carbon_red_03_1_819x_f0c43991-5dbe-4832-8f14-98e39d4223fd.webp?v=1728396485"
+      ]
+    },
+    {
+      "name": "Inokim OX",
+      "slug": "inokim-ox",
+      "power_watts": 1000,
+      "max_speed_kmh": 25,
+      "voltage": 60,
+      "amperage": 21,
+      "range_km": 96,
+      "weight_kg": 28,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "brake_type": "Tambour avant / disque arrière",
+      "suspension": "Double suspension ajustable mono-bras",
+      "ip_rating": "IPX4",
+      "meta_title": "Inokim OX - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inokim OX : pneus et chambres à air 10\", chargeurs compatibles. Compatibilité vérifiée, livraison rapide. Réparez votre OX.",
+      "description": "L'Inokim OX, primée Red Dot Design Award, embarque un moteur 1000 W, une batterie 60V 20,8 Ah (version Super) et des roues 10 pouces gonflées sur double suspension ajustable. Bridée à 25 km/h sur voie publique (jusqu'à 45 km/h sur terrain privé), elle combine autonomie (jusqu'à ~96 km), confort et finitions haut de gamme. Freinage tambour à l'avant et disque à l'arrière, châssis en aluminium aviation, certifiée IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles Inokim OX : chambres à air et pneus 10 pouces, et chargeurs.",
+      "search_terms": "inokim ox, inokim ox super, pieces inokim ox, trottinette inokim ox",
+      "source_image_urls": [
+        "https://inokim.com/cdn/shop/files/OX_1_2.png?v=1742149973",
+        "https://inokim.com/cdn/shop/files/ox_d66c4688-b7ac-4704-b16d-136c7b63b10e.png?v=1742154160"
+      ]
+    },
+    {
+      "name": "Inokim Light 2",
+      "slug": "inokim-light-2",
+      "power_watts": 350,
+      "max_speed_kmh": 25,
+      "voltage": 36,
+      "amperage": 13,
+      "range_km": 45,
+      "weight_kg": 14,
+      "max_load_kg": 100,
+      "tire_size": "8.5\"",
+      "brake_type": "Tambour avant et arrière + coupure moteur automatique",
+      "suspension": "Sans suspension",
+      "ip_rating": "IPX4",
+      "meta_title": "Inokim Light 2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inokim Light 2 : pneus et chambres à air 8,5\", chargeurs. Compatibilité vérifiée, livraison rapide. Réparez votre Light 2.",
+      "description": "L'Inokim Light 2 (Max 2025) est la citadine portable de la marque : moteur 36V 350 W, batterie 36V 12,8 Ah, roues 8,5 pouces gonflées, et seulement ~14 kg pour un pliage en quelques secondes. Bridée à 25 km/h, elle est idéale pour le dernier kilomètre et les transports en commun. Double frein tambour avant/arrière avec coupure moteur automatique, châssis en aluminium 6061 T6, certifiée IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles Inokim Light 2 : chambres à air et pneus 8,5 pouces, et chargeurs.",
+      "search_terms": "inokim light 2, inokim light 2 max, pieces inokim light, trottinette inokim light 2",
+      "source_image_urls": [
+        "https://inokim.com/cdn/shop/files/L_1_819x.png?v=1762970903",
+        "https://inokim.com/cdn/shop/files/light-product-green_822x.png?v=1762970903"
+      ]
+    },
+    {
+      "name": "Inokim Quick 4",
+      "slug": "inokim-quick-4",
+      "power_watts": 600,
+      "max_speed_kmh": 25,
+      "voltage": 48,
+      "amperage": 16,
+      "range_km": 70,
+      "weight_kg": 22,
+      "max_load_kg": 120,
+      "tire_size": "10\"",
+      "brake_type": "Tambour avant et arrière",
+      "suspension": "Double suspension ajustable",
+      "ip_rating": "IPX4",
+      "meta_title": "Inokim Quick 4 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inokim Quick 4 : pneus et chambres à air 10\", chargeurs. Compatibilité vérifiée, livraison rapide. Réparez votre Quick 4.",
+      "description": "L'Inokim Quick 4 se plie en 4 secondes grâce à son déverrouillage au pied : moteur 600 W, batterie 50,4V (13 Ah version Hero / 16 Ah version Super), roues 10 pouces gonflées, double suspension ajustable et deck extra-long pour plus de stabilité. Bridée à 25 km/h (jusqu'à 40 km/h sur terrain privé), elle marie portabilité et confort sur longue distance (jusqu'à ~70 km). Double frein tambour, châssis en aluminium aviation, certifiée IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles Inokim Quick 4 : chambres à air et pneus 10 pouces, et chargeurs.",
+      "search_terms": "inokim quick 4, inokim quick, quick 4 hero, quick 4 super, pieces inokim quick 4",
+      "source_image_urls": [
+        "https://inokim.com/cdn/shop/files/Q_1.png?v=1742157557",
+        "https://inokim.com/cdn/shop/files/qukck4_480x.png?v=1742157659"
+      ]
+    }
+  ]
+}
