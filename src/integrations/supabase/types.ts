@@ -256,6 +256,36 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_part_compat_20260627: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
       backup_partcompat_legacy_pp_20260610: {
         Row: {
           auto_suggested: boolean | null
@@ -589,6 +619,33 @@ export type Database = {
           technical_metadata?: Json | null
           updated_at?: string | null
           youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      backup_scooter_battery_configs_20260703: {
+        Row: {
+          amperage: number | null
+          created_at: string | null
+          id: string | null
+          is_default: boolean | null
+          scooter_model_id: string | null
+          voltage: number | null
+        }
+        Insert: {
+          amperage?: number | null
+          created_at?: string | null
+          id?: string | null
+          is_default?: boolean | null
+          scooter_model_id?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          amperage?: number | null
+          created_at?: string | null
+          id?: string | null
+          is_default?: boolean | null
+          scooter_model_id?: string | null
+          voltage?: number | null
         }
         Relationships: []
       }
@@ -1507,6 +1564,7 @@ export type Database = {
           description: string | null
           difficulty_level: number | null
           ean: string | null
+          electrical_specs: Json | null
           estimated_install_time_minutes: number | null
           id: string
           image_url: string | null
@@ -1537,6 +1595,7 @@ export type Database = {
           description?: string | null
           difficulty_level?: number | null
           ean?: string | null
+          electrical_specs?: Json | null
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
@@ -1567,6 +1626,7 @@ export type Database = {
           description?: string | null
           difficulty_level?: number | null
           ean?: string | null
+          electrical_specs?: Json | null
           estimated_install_time_minutes?: number | null
           id?: string
           image_url?: string | null
@@ -1752,10 +1812,10 @@ export type Database = {
           capacity_ah: number
           connector_type?: string | null
           created_at?: string | null
-          energy_wh?: never
+          energy_wh?: number | null
           id?: string
           is_default?: boolean | null
-          label?: never
+          label?: string | null
           scooter_model_id: string
           updated_at?: string
           voltage: number
@@ -1765,10 +1825,10 @@ export type Database = {
           capacity_ah?: number
           connector_type?: string | null
           created_at?: string | null
-          energy_wh?: never
+          energy_wh?: number | null
           id?: string
           is_default?: boolean | null
-          label?: never
+          label?: string | null
           scooter_model_id?: string
           updated_at?: string
           voltage?: number
