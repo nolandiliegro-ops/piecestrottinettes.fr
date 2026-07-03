@@ -57,6 +57,7 @@ interface PartInput {
   ean?: string;
   characteristics?: string;
   compatibility_source?: string;
+  electrical_specs?: Record<string, unknown> | null;
 }
 
 interface RequestBody {
@@ -353,6 +354,12 @@ const handler = async (req: Request): Promise<Response> => {
           ean: part.ean ?? null,
           characteristics: part.characteristics ?? null,
           compatibility_source: part.compatibility_source ?? null,
+          // Guard preserve : clé posée UNIQUEMENT si le payload la fournit.
+          // Absente → .update() ne touche pas la colonne (backfill préservé) ;
+          // à l'insert → DEFAULT (null). Miroir du guard du script sync.
+          ...(part.electrical_specs != null
+            ? { electrical_specs: part.electrical_specs }
+            : {}),
         };
 
         // ── Matching en cascade : SKU prioritaire, puis slug ───────────────────

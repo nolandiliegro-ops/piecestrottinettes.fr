@@ -123,6 +123,33 @@ function parsePhotosSource(value) {
     .filter((x) => /^https?:\/\//i.test(x));
 }
 
+// Extrait le libellé d'une option de select Airtable.
+// L'API REST v0 renvoie des STRINGS (single) / string[] (multiple) ; on tolère
+// aussi la forme objet {name} (défensif, ex. si un jour returnFieldsByFieldId
+// change le transport). Retourne toujours une string, ou null.
+function selectName(opt) {
+  if (opt == null) return null;
+  if (typeof opt === 'string') return opt;
+  if (typeof opt === 'object' && typeof opt.name === 'string') return opt.name;
+  return null;
+}
+
+// Construit l'objet electrical_specs pour parts.electrical_specs (jsonb) depuis
+// les champs Airtable "Voltages compatibles" (multipleSelects) + "Connecteur charge"
+// (singleSelect). Convention : { voltages:[int,...], connector:string|null }.
+//   - voltages : parseInt du libellé de chaque option ["72"] -> [72] (entiers, jamais strings).
+//   - GUARD : si aucun voltage exploitable -> retourne null (l'appelant N'AJOUTE PAS la clé,
+//     pour ne jamais écraser une valeur electrical_specs déjà présente en base).
+function buildElectricalSpecs(voltagesField, connectorField) {
+  const raw = Array.isArray(voltagesField) ? voltagesField : [];
+  const voltages = raw
+    .map(selectName)
+    .map((n) => parseInt(n, 10))
+    .filter((n) => Number.isFinite(n));
+  if (voltages.length === 0) return null;
+  return { voltages, connector: selectName(connectorField) };
+}
+
 // byFieldId=true → returnFieldsByFieldId : r.fields keyé par field ID (et non par nom).
 async function fetchTable(tableId, fields, byFieldId = false) {
   let allRecords = [];
@@ -262,6 +289,12 @@ function filterAndMap(records, lookups, enrichById) {
 
     const supplier = resolveSupplier(f['Liaisons fournisseurs'], lookups);
     if (supplier) part.supplier = supplier;
+
+    // Specs électriques (chargeurs/électrique) depuis "Voltages compatibles" + "Connecteur charge".
+    // GUARD anti-écrasement : clé ABSENTE si voltages vide (ne jamais pousser electrical_specs:null,
+    // qui écraserait une valeur déjà en base). Même esprit que le preserve conditionnel côté bulk-insert.
+    const electrical = buildElectricalSpecs(f['Voltages compatibles'], f['Connecteur charge']);
+    if (electrical) part.electrical_specs = electrical;
 
     filtered.push(part);
   }
@@ -584,11 +617,14 @@ function printDryRun(parts) {
     for (const p of partsInCat) {
       const sup = p.supplier ? `${p.supplier.name}${p.supplier.sku ? '/' + p.supplier.sku : ''}` : '—';
       const nbPhotos = Array.isArray(p.source_image_urls) ? p.source_image_urls.length : 0;
+      const elec = p.electrical_specs
+        ? `[${p.electrical_specs.voltages.join(',')}]${p.electrical_specs.connector ? ' ' + p.electrical_specs.connector : ''}`
+        : '—';
       console.log(
         `  • ${p.name} | sku=${p.sku} | price=${p.price} | stock=${p.stock_quantity} | ` +
         `ean=${p.ean ? 'oui' : 'non'} | specs=${p.characteristics ? 'oui' : 'non'} | ` +
         `compat=${p.compatibility_source ? 'oui' : 'non'} | photos_source=${nbPhotos} | ` +
-        `photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
+        `elec=${elec} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
       );
     }
   }
