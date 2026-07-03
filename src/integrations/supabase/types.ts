@@ -1736,26 +1736,41 @@ export type Database = {
       scooter_battery_configs: {
         Row: {
           amperage: number
+          capacity_ah: number
+          connector_type: string | null
           created_at: string | null
+          energy_wh: number | null
           id: string
           is_default: boolean | null
+          label: string | null
           scooter_model_id: string
+          updated_at: string
           voltage: number
         }
         Insert: {
           amperage: number
+          capacity_ah: number
+          connector_type?: string | null
           created_at?: string | null
+          energy_wh?: never
           id?: string
           is_default?: boolean | null
+          label?: never
           scooter_model_id: string
+          updated_at?: string
           voltage: number
         }
         Update: {
           amperage?: number
+          capacity_ah?: number
+          connector_type?: string | null
           created_at?: string | null
+          energy_wh?: never
           id?: string
           is_default?: boolean | null
+          label?: never
           scooter_model_id?: string
+          updated_at?: string
           voltage?: number
         }
         Relationships: [
