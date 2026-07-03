@@ -8,6 +8,7 @@ import {
   extractVoltageFromName,
   buildTireSizeRegex,
   resolveCompatibilityHints,
+  intersectPublishedConfigVoltages,
 } from "../_shared/compatibility-helpers.ts";
 import {
   resolveModel,
@@ -120,6 +121,125 @@ Deno.test("resolveCompatibilityHints: hints vides → fallback", () => {
     compatibility_hints: {},
   });
   assertEquals(hints?.tire_size, "10");
+});
+
+// ─── B1.4a — chemin électrique (electrical_specs.voltages) ──────────────────
+
+Deno.test("resolveCompatibilityHints: electrical_specs.voltages [72] → hints.voltages=[72]", () => {
+  const hints = resolveCompatibilityHints({
+    name: "Chargeur 72V",
+    slug: "chargeur-72v",
+    electrical_specs: { voltages: [72] },
+  });
+  assertEquals(hints?.voltages, [72]);
+});
+
+Deno.test("resolveCompatibilityHints: electrical_specs court-circuite extractVoltageFromName", () => {
+  // Le nom contient '84V' (tension de SORTIE charge) que le regex extrairait à
+  // 84 ; electrical_specs.voltages=[72] (nominal batterie) doit gagner et le
+  // voltage scalaire rester null → preuve que extractVoltageFromName est ignoré.
+  const hints = resolveCompatibilityHints({
+    name: "Chargeur 72V vers 84V sortie",
+    slug: "chargeur-72v-84v",
+    electrical_specs: { voltages: [72] },
+  });
+  assertEquals(hints?.voltages, [72]);
+  assertStrictEquals(hints?.voltage, null);
+});
+
+Deno.test("resolveCompatibilityHints: bi-voltage [60,72] préservé", () => {
+  const hints = resolveCompatibilityHints({
+    name: "Chargeur Dualtron",
+    slug: "chargeur-dualtron",
+    electrical_specs: { voltages: [60, 72] },
+  });
+  assertEquals(hints?.voltages, [60, 72]);
+  assertStrictEquals(hints?.voltage, null);
+});
+
+Deno.test("resolveCompatibilityHints: pièce sans electrical_specs → legacy STRICTEMENT inchangé", () => {
+  // Un pneu (pas de '72V' dans le nom) : aucun champ voltages ne doit apparaître,
+  // l'objet doit être identique au comportement pré-B1.4.
+  const hints = resolveCompatibilityHints({
+    name: "Pneu 10x2.50 tubeless",
+    slug: "pneu-10x250",
+  });
+  assertEquals(hints, { tire_size: "10", voltage: null });
+});
+
+Deno.test("resolveCompatibilityHints: electrical_specs.voltages vide → fallback legacy", () => {
+  // Tableau vide = pas de spec électrique exploitable → on retombe sur le regex.
+  const hints = resolveCompatibilityHints({
+    name: "Chargeur 52V 2A",
+    slug: "chargeur-52v",
+    electrical_specs: { voltages: [] },
+  });
+  assertEquals(hints, { tire_size: null, voltage: 52 });
+});
+
+// ─── B1.4b — intersection voltage électrique (helper pur) ───────────────────
+
+// Simule le pipeline DB : .in("voltage", voltages) côté scooter_battery_configs
+// PUIS intersection JS avec les scooter_models publiés. `allConfigs` = table
+// complète (non filtrée) ; `voltages` = electrical_specs.voltages de la pièce.
+function simulateElectricalMatch(
+  allConfigs: Array<{ scooter_model_id: string; voltage: number }>,
+  voltages: number[],
+  publishedModelIds: string[],
+): Set<string> {
+  const filtered = allConfigs.filter((c) => voltages.includes(c.voltage)); // = .in(voltage)
+  return intersectPublishedConfigVoltages(filtered, new Set(publishedModelIds));
+}
+
+// Jeu de configs : A=48V, B=60V, C=72V, D=84V (config de sortie hypothétique).
+const CONFIGS = [
+  { scooter_model_id: "A", voltage: 48 },
+  { scooter_model_id: "B", voltage: 60 },
+  { scooter_model_id: "C", voltage: 72 },
+  { scooter_model_id: "D", voltage: 84 },
+];
+const ALL_PUBLISHED = ["A", "B", "C", "D"];
+
+Deno.test("intersection: pièce 48V → seul A matché, jamais B/C (60/72)", () => {
+  const got = simulateElectricalMatch(CONFIGS, [48], ALL_PUBLISHED);
+  assertEquals([...got].sort(), ["A"]);
+});
+
+Deno.test("intersection: pièce 72V → C only, la config 84V n'est JAMAIS matchée", () => {
+  const got = simulateElectricalMatch(CONFIGS, [72], ALL_PUBLISHED);
+  assertEquals([...got].sort(), ["C"]);
+  assertEquals(got.has("D"), false); // 84 n'entre jamais dans le match (voltages=[72])
+});
+
+Deno.test("intersection: pièce bi-voltage [60,72] → matche B OU C", () => {
+  const got = simulateElectricalMatch(CONFIGS, [60, 72], ALL_PUBLISHED);
+  assertEquals([...got].sort(), ["B", "C"]);
+});
+
+Deno.test("intersection: config au bon voltage mais model NON publié → exclu", () => {
+  // A a une config 48V mais n'est pas dans la liste des publiés → aucun candidat.
+  const got = simulateElectricalMatch(CONFIGS, [48], ["B", "C", "D"]);
+  assertEquals(got.size, 0);
+});
+
+Deno.test("intersection: aucun config au voltage de la pièce → 0 candidat, pas d'erreur", () => {
+  const got = simulateElectricalMatch(CONFIGS, [24], ALL_PUBLISHED);
+  assertEquals(got.size, 0);
+});
+
+Deno.test("intersectPublishedConfigVoltages: dédupe un model à plusieurs configs matchées", () => {
+  // E a deux variantes (bi-voltage 60 ET 72) toutes deux dans le filtre → 1 seule fois.
+  const configs = [
+    { scooter_model_id: "E", voltage: 60 },
+    { scooter_model_id: "E", voltage: 72 },
+    { scooter_model_id: "F", voltage: 60 },
+  ];
+  const got = intersectPublishedConfigVoltages(configs, new Set(["E", "F"]));
+  assertEquals([...got].sort(), ["E", "F"]);
+});
+
+Deno.test("intersectPublishedConfigVoltages: configs vides → set vide", () => {
+  assertEquals(intersectPublishedConfigVoltages([], new Set(["A"])).size, 0);
 });
 
 // ─── resolveModel ───────────────────────────────────────────────────────────

@@ -21,6 +21,13 @@ export const corsHeaders = {
 export interface CompatibilityHints {
   tire_size?: string | null;
   voltage?: number | null;
+  /**
+   * Voltages structurés autoritatifs issus de parts.electrical_specs.voltages.
+   * Présent uniquement pour les pièces électriques taguées. Quand renseigné,
+   * il court-circuite le voltage scalaire (regex/technical_metadata) et sera
+   * matché par INTERSECTION contre scooter_battery_configs (B1.4b).
+   */
+  voltages?: number[] | null;
 }
 
 /** Forme minimale acceptée par resolveCompatibilityHints. */
@@ -30,6 +37,15 @@ export interface PartHintInput {
   description?: string;
   technical_metadata?: Record<string, unknown>;
   compatibility_hints?: CompatibilityHints;
+  /**
+   * Specs électriques structurées de la pièce (colonne parts.electrical_specs).
+   * Le voltage nominal batterie y vit dans `voltages` (jamais la tension de
+   * sortie charge). Le connecteur est ignoré en B1.4 (affinage → B1.6).
+   */
+  electrical_specs?: {
+    voltages?: number[];
+    connector?: string | null;
+  } | null;
 }
 
 export interface PassAOutcome {
@@ -77,6 +93,16 @@ export function buildTireSizeRegex(size: string): string {
 export function resolveCompatibilityHints(
   part: PartHintInput,
 ): CompatibilityHints | null {
+  // B1.4a — chemin électrique autoritatif. Si la pièce porte des voltages
+  // structurés (electrical_specs.voltages non vide), on les prend tels quels
+  // et on COURT-CIRCUITE extractVoltageFromName (le regex sur le nom, source
+  // du bug "72V ➡️ 84V"). Le voltage scalaire legacy reste null pour cette pièce.
+  const elecVoltages = part.electrical_specs?.voltages;
+  const hasElectrical = Array.isArray(elecVoltages) && elecVoltages.length > 0;
+  const electricalPatch = hasElectrical
+    ? { voltages: elecVoltages!.map(Number) }
+    : {};
+
   const explicit = part.compatibility_hints;
   const hasExplicitTire = explicit?.tire_size != null && explicit.tire_size !== "";
   const hasExplicitVoltage = explicit?.voltage != null;
@@ -85,13 +111,35 @@ export function resolveCompatibilityHints(
     return {
       tire_size: hasExplicitTire ? String(explicit!.tire_size) : null,
       voltage: hasExplicitVoltage ? Number(explicit!.voltage) : null,
+      ...electricalPatch,
     };
   }
 
   const tire = extractTireSizeFromName(part.name);
-  const volt = extractVoltageFromName(part.name);
-  if (tire == null && volt == null) return null;
-  return { tire_size: tire, voltage: volt };
+  // Voltage regex ignoré dès qu'on a des voltages structurés.
+  const volt = hasElectrical ? null : extractVoltageFromName(part.name);
+  if (tire == null && volt == null && !hasElectrical) return null;
+  return { tire_size: tire, voltage: volt, ...electricalPatch };
+}
+
+/**
+ * B1.4b — INTERSECTION voltage électrique (logique pure, testable).
+ * Prend les configs batterie déjà pré-filtrées par voltage (issues d'un
+ * .in("voltage", voltages)) et l'ensemble des scooter_model_id publiés, et
+ * retourne l'ensemble DÉDUPÉ des model_ids qui matchent ET sont publiés.
+ * Un même modèle peut avoir plusieurs configs au bon voltage → dédup via Set.
+ * Publication gérée en JS (pas d'embed !inner PostgREST — arbitrage B1.4).
+ */
+export function intersectPublishedConfigVoltages(
+  configs: Array<{ scooter_model_id: string; voltage: number }>,
+  publishedModelIds: Set<string>,
+): Set<string> {
+  const out = new Set<string>();
+  for (const c of configs) {
+    const id = c?.scooter_model_id;
+    if (id && publishedModelIds.has(id)) out.add(id);
+  }
+  return out;
 }
 
 // =====================================================================
@@ -106,6 +154,8 @@ export async function suggestCompatibilities(
 ): Promise<PassAOutcome> {
   const tire = hints.tire_size;
   const voltage = hints.voltage;
+  const voltages = hints.voltages;
+  const hasElectrical = Array.isArray(voltages) && voltages.length > 0;
   let candidateIds = new Set<string>();
   let initialized = false;
 
@@ -124,7 +174,43 @@ export async function suggestCompatibilities(
     }
   }
 
-  if (voltage != null) {
+  if (hasElectrical) {
+    // ─── Chemin ÉLECTRIQUE (B1.4b) : intersection d'ensembles ────────────────
+    // Une variante est compatible ssi son voltage ∈ electrical_specs.voltages.
+    // On tape scooter_battery_configs (vraies variantes, dont bi-voltage), PAS
+    // scooter_models.voltage (mono-valeur). Court-circuite la branche legacy.
+    const [cfgRes, pubRes] = await Promise.all([
+      supabase
+        .from("scooter_battery_configs")
+        .select("scooter_model_id, voltage")
+        .in("voltage", voltages!),
+      supabase
+        .from("scooter_models")
+        .select("id")
+        .eq("published", true),
+    ]);
+    if (cfgRes.error || pubRes.error) {
+      if (cfgRes.error) {
+        console.error(`[compat-helpers] Erreur fetch battery_configs:`, cfgRes.error.message);
+      }
+      if (pubRes.error) {
+        console.error(`[compat-helpers] Erreur fetch scooter_models publiés:`, pubRes.error.message);
+      }
+      // Fail-closed : en cas d'erreur, aucun candidat électrique n'est ajouté.
+    } else {
+      const publishedIds = new Set((pubRes.data ?? []).map((r) => r.id as string));
+      const electricalSet = intersectPublishedConfigVoltages(
+        (cfgRes.data ?? []) as Array<{ scooter_model_id: string; voltage: number }>,
+        publishedIds,
+      );
+      if (initialized) {
+        candidateIds = new Set([...candidateIds].filter((id) => electricalSet.has(id)));
+      } else {
+        candidateIds = electricalSet;
+      }
+    }
+  } else if (voltage != null) {
+    // ─── Chemin LEGACY scalaire (inchangé) : scooter_models.voltage ──────────
     const { data, error } = await supabase
       .from("scooter_models")
       .select("id")
@@ -153,9 +239,14 @@ export async function suggestCompatibilities(
     return { count: 0, scooterIds: new Set() };
   }
 
-  // Confiance proportionnelle aux specs concordantes : les deux (tire ∩ voltage)
-  // → high ; une seule des deux → medium. Plus de "high" systématique.
-  const confidence = tire && voltage != null ? "high" : "medium";
+  // Confiance : match électrique par intersection voltage (structuré, autoritatif)
+  // → "high" systématique (arbitrage B1.4). Sinon, chemin legacy : les deux specs
+  // (tire ∩ voltage) → high ; une seule → medium.
+  const confidence = hasElectrical
+    ? "high"
+    : tire && voltage != null
+    ? "high"
+    : "medium";
 
   const rows = Array.from(candidateIds).map((scooterId) => ({
     part_id: partId,

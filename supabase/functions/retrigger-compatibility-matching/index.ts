@@ -17,6 +17,7 @@ import {
   suggestCompatibilities,
   resolveCompatibilityHints,
   corsHeaders,
+  type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
 import {
   suggestCompatibilitiesAI,
@@ -35,6 +36,7 @@ interface PartTarget {
   sku: string | null;
   description: string | null;
   technical_metadata: Record<string, unknown> | null;
+  electrical_specs: { voltages?: number[]; connector?: string | null } | null;
   category: { name: string } | { name: string }[] | null;
 }
 
@@ -62,7 +64,7 @@ async function resolveTargets(
   if (body.part_ids && body.part_ids.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)")
       .in("id", body.part_ids);
     if (error) throw new Error(`fetch by ids: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.id));
@@ -75,7 +77,7 @@ async function resolveTargets(
   if (body.skus && body.skus.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)")
       .in("sku", body.skus);
     if (error) throw new Error(`fetch by skus: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.sku));
@@ -89,7 +91,7 @@ async function resolveTargets(
     // Pièces sans aucune ligne dans part_compatibility
     const { data: allParts, error: pErr } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, category:categories(name)");
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)");
     if (pErr) throw new Error(`fetch all parts: ${pErr.message}`);
 
     const { data: compats, error: cErr } = await supabase
@@ -146,16 +148,28 @@ async function processOnePart(
 
   // 3. Reconstruire les hints (technical_metadata d'abord, fallback regex via resolveCompatibilityHints)
   const metaHints = extractHintsFromTechnicalMetadata(part.technical_metadata);
-  let hints: { tire_size: string | null; voltage: number | null } | null = null;
+  let hints: CompatibilityHints | null = null;
   if (metaHints.tire_size || metaHints.voltage != null) {
-    hints = metaHints;
+    hints = { ...metaHints };
   } else {
     hints = resolveCompatibilityHints({
       name: part.name,
       slug: part.slug,
       description: part.description ?? undefined,
       technical_metadata: part.technical_metadata ?? undefined,
+      electrical_specs: part.electrical_specs ?? undefined,
     });
+  }
+
+  // electrical_specs est AUTORITATIF (B1.4). On peuple hints.voltages et on
+  // neutralise le voltage scalaire, y compris quand le chemin metaHints a été
+  // pris (chargeur avec technical_metadata.voltage) — sinon le moteur
+  // d'intersection B1.4b ne recevrait jamais les voltages structurés.
+  const elecVoltages = part.electrical_specs?.voltages;
+  if (Array.isArray(elecVoltages) && elecVoltages.length > 0) {
+    if (!hints) hints = { tire_size: null, voltage: null };
+    hints.voltages = elecVoltages.map(Number);
+    hints.voltage = null; // court-circuit du scalaire (regex/technical_metadata)
   }
 
   // 4. Passe A
