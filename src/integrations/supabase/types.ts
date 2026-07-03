@@ -1658,6 +1658,24 @@ export type Database = {
           },
         ]
       }
+      parts_backup_b1: {
+        Row: {
+          electrical_specs: Json | null
+          id: string | null
+          technical_metadata: Json | null
+        }
+        Insert: {
+          electrical_specs?: Json | null
+          id?: string | null
+          technical_metadata?: Json | null
+        }
+        Update: {
+          electrical_specs?: Json | null
+          id?: string | null
+          technical_metadata?: Json | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           active_theme_key: string | null
