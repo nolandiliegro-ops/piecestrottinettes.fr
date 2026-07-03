@@ -16,6 +16,7 @@ import { createClient, SupabaseClient } from "https://esm.sh/@supabase/supabase-
 import {
   suggestCompatibilities,
   resolveCompatibilityHints,
+  isElectricalPart,
   corsHeaders,
   type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
@@ -37,7 +38,7 @@ interface PartTarget {
   description: string | null;
   technical_metadata: Record<string, unknown> | null;
   electrical_specs: { voltages?: number[]; connector?: string | null } | null;
-  category: { name: string } | { name: string }[] | null;
+  category: { name: string; slug?: string } | { name: string; slug?: string }[] | null;
 }
 
 interface PartResult {
@@ -64,7 +65,7 @@ async function resolveTargets(
   if (body.part_ids && body.part_ids.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)")
       .in("id", body.part_ids);
     if (error) throw new Error(`fetch by ids: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.id));
@@ -77,7 +78,7 @@ async function resolveTargets(
   if (body.skus && body.skus.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)")
       .in("sku", body.skus);
     if (error) throw new Error(`fetch by skus: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.sku));
@@ -91,7 +92,7 @@ async function resolveTargets(
     // Pièces sans aucune ligne dans part_compatibility
     const { data: allParts, error: pErr } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name)");
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)");
     if (pErr) throw new Error(`fetch all parts: ${pErr.message}`);
 
     const { data: compats, error: cErr } = await supabase
@@ -190,15 +191,22 @@ async function processOnePart(
     }
   }
 
-  // 5. Passe B (toujours, même si Passe A a skippé)
+  // 5. Passe B (toujours, même si Passe A a skippé) — SAUF pièces électriques
   let passBCount = 0;
   let aiStatus = "skipped";
-  if (anthropicKey) {
+  const categoryName = Array.isArray(part.category)
+    ? part.category[0]?.name ?? null
+    : part.category?.name ?? null;
+  const categorySlug = Array.isArray(part.category)
+    ? part.category[0]?.slug ?? null
+    : part.category?.slug ?? null;
+
+  // B1.6 — skip Passe B IA sur l'élec : zéro fetch scooters, zéro appel Claude.
+  if (isElectricalPart({ categorySlug, electrical_specs: part.electrical_specs })) {
+    aiStatus = "skipped_electrical";
+  } else if (anthropicKey) {
     try {
       const exclude = new Set([...validatedScooterIds, ...passAScooterIds]);
-      const categoryName = Array.isArray(part.category)
-        ? part.category[0]?.name ?? null
-        : part.category?.name ?? null;
       const passB = await suggestCompatibilitiesAI(
         supabase,
         part.id,
@@ -207,6 +215,8 @@ async function processOnePart(
           description: part.description,
           technical_metadata: part.technical_metadata,
           category: categoryName,
+          categorySlug,
+          electrical_specs: part.electrical_specs,
         },
         exclude,
         anthropicKey,

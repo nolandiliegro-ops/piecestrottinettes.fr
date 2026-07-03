@@ -6,6 +6,7 @@
 // Les helpers purs sont testés dans logic_test.ts.
 
 import type { SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { isElectricalPart } from "./compatibility-helpers.ts";
 
 // ─── Types publics ──────────────────────────────────────────────────────────
 
@@ -25,6 +26,9 @@ export interface AIPartInput {
   technical_metadata?: Record<string, unknown> | null;
   /** Catégorie de la pièce (donnée existante) — oriente le raisonnement de l'IA. */
   category?: string | null;
+  /** B1.6 — signaux pour le garde défensif anti-Passe B sur l'élec (isElectricalPart). */
+  categorySlug?: string | null;
+  electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
 }
 
 export interface AIMatchInput {
@@ -352,6 +356,18 @@ export async function suggestCompatibilitiesAI(
   excludeScooterIds: Set<string>,
   apiKey: string,
 ): Promise<PassBOutcome> {
+  // B1.6 — garde défensif (ceinture-bretelles). Les call sites skippent déjà
+  // l'élec en amont ; ici on refuse toute Passe B AVANT le moindre fetch/appel
+  // Claude si les signaux élec sont présents, pour couvrir tout futur caller.
+  if (
+    isElectricalPart({
+      categorySlug: part.categorySlug,
+      electrical_specs: part.electrical_specs,
+    })
+  ) {
+    return { count: 0, durationMs: 0, status: "skipped" };
+  }
+
   // 1. Fetch scooters publiés avec leurs specs
   const { data: rawScooters, error: scootersErr } = await supabase
     .from("scooter_models")

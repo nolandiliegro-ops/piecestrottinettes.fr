@@ -9,6 +9,7 @@ import {
   buildTireSizeRegex,
   resolveCompatibilityHints,
   intersectPublishedConfigVoltages,
+  isElectricalPart,
 } from "../_shared/compatibility-helpers.ts";
 import {
   resolveModel,
@@ -240,6 +241,46 @@ Deno.test("intersectPublishedConfigVoltages: dédupe un model à plusieurs confi
 
 Deno.test("intersectPublishedConfigVoltages: configs vides → set vide", () => {
   assertEquals(intersectPublishedConfigVoltages([], new Set(["A"])).size, 0);
+});
+
+// ─── B1.6 — isElectricalPart (skip Passe B IA) ──────────────────────────────
+
+Deno.test("isElectricalPart: slug 'chargeurs' → true", () => {
+  assertEquals(isElectricalPart({ categorySlug: "chargeurs" }), true);
+});
+
+Deno.test("isElectricalPart: slug 'chargeurs' + electrical_specs vide → true (cas ZT3 Pro)", () => {
+  // Catégorie élec mais pas encore backfillée → capté par la catégorie seule.
+  assertEquals(isElectricalPart({ categorySlug: "chargeurs", electrical_specs: null }), true);
+  assertEquals(isElectricalPart({ categorySlug: "chargeurs", electrical_specs: { voltages: [] } }), true);
+});
+
+Deno.test("isElectricalPart: normalisation casse/espaces ('  Chargeurs ') → true", () => {
+  assertEquals(isElectricalPart({ categorySlug: "  Chargeurs " }), true);
+});
+
+Deno.test("isElectricalPart: 'pneus'/'plaquettes'/'disques' → false", () => {
+  assertEquals(isElectricalPart({ categorySlug: "pneus" }), false);
+  assertEquals(isElectricalPart({ categorySlug: "plaquettes" }), false);
+  assertEquals(isElectricalPart({ categorySlug: "disques" }), false);
+});
+
+Deno.test("isElectricalPart: pas de match par substring ('support-batterie' → false)", () => {
+  // Un accessoire méca dont le slug contiendrait un mot élec ne doit PAS être capté.
+  assertEquals(isElectricalPart({ categorySlug: "support-batterie" }), false);
+  assertEquals(isElectricalPart({ categorySlug: "chargeurs-support" }), false);
+});
+
+Deno.test("isElectricalPart: slug méca mais electrical_specs.voltages non vide → true", () => {
+  assertEquals(
+    isElectricalPart({ categorySlug: "cables", electrical_specs: { voltages: [72] } }),
+    true,
+  );
+});
+
+Deno.test("isElectricalPart: slug null + specs null → false", () => {
+  assertEquals(isElectricalPart({ categorySlug: null, electrical_specs: null }), false);
+  assertEquals(isElectricalPart({}), false);
 });
 
 // ─── resolveModel ───────────────────────────────────────────────────────────

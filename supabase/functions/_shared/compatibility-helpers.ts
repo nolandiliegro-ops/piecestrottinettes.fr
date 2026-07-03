@@ -142,6 +142,36 @@ export function intersectPublishedConfigVoltages(
   return out;
 }
 
+/**
+ * B1.6 — Catégories dont les pièces sont ÉLECTRIQUES et doivent être exclues
+ * de la Passe B IA (matchées uniquement par le moteur specs / intersection).
+ * Slugs normalisés (lowercase). Une seule aujourd'hui ; à étendre au fil des
+ * catégories élec (batteries, contrôleurs…) — pas de colonne DB pour l'instant.
+ */
+export const ELECTRICAL_CATEGORY_SLUGS = ["chargeurs"];
+
+/**
+ * B1.6 — Prédicat PUR : la pièce est-elle électrique (→ skip Passe B IA) ?
+ * Logique OR :
+ *   - son categorySlug ∈ ELECTRICAL_CATEGORY_SLUGS (égalité stricte normalisée,
+ *     JAMAIS includes → un accessoire "support-batterie" n'est pas capté), OU
+ *   - elle porte des voltages structurés (electrical_specs.voltages non vide).
+ * Le 1er signal couvre la famille même sans specs (cas ZT3 Pro élec non tagué) ;
+ * le 2nd rattrape une pièce élec mal catégorisée mais taguée.
+ */
+export function isElectricalPart(part: {
+  categorySlug?: string | null;
+  electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
+}): boolean {
+  const slug = part.categorySlug?.trim().toLowerCase();
+  if (slug && ELECTRICAL_CATEGORY_SLUGS.includes(slug)) return true;
+
+  const voltages = part.electrical_specs?.voltages;
+  if (Array.isArray(voltages) && voltages.length > 0) return true;
+
+  return false;
+}
+
 // =====================================================================
 // PASSE A — matching specs (effet DB)
 // =====================================================================

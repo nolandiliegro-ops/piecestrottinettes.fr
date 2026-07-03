@@ -4,6 +4,7 @@ import {
   corsHeaders,
   suggestCompatibilities,
   resolveCompatibilityHints,
+  isElectricalPart,
   type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
 import { suggestCompatibilitiesAI } from "../_shared/ai_matcher.ts";
@@ -498,8 +499,15 @@ const handler = async (req: Request): Promise<Response> => {
               }
             }
 
-            // Passe B — IA Claude (jamais bloquante)
-            if (!skip_ai && anthropicKey) {
+            // Passe B — IA Claude (jamais bloquante) — SAUF pièces électriques
+            const electricalSpecs = (part.electrical_specs ?? null) as
+              | { voltages?: number[]; connector?: string | null }
+              | null;
+            if (isElectricalPart({ categorySlug: slug, electrical_specs: electricalSpecs })) {
+              // B1.6 — skip Passe B IA sur l'élec : zéro fetch scooters, zéro appel Claude.
+              console.log(`[bulk-insert-parts] pièce électrique → Passe B IA skippée pour ${part.name}`);
+              aiStatus = "skipped_electrical";
+            } else if (!skip_ai && anthropicKey) {
               try {
                 const passB = await suggestCompatibilitiesAI(
                   supabase,
@@ -509,6 +517,8 @@ const handler = async (req: Request): Promise<Response> => {
                     description: part.description ?? null,
                     technical_metadata: part.technical_metadata ?? null,
                     category: categoryName,
+                    categorySlug: slug,
+                    electrical_specs: electricalSpecs,
                   },
                   passAScooterIds,
                   anthropicKey,
