@@ -17,6 +17,7 @@ import {
   suggestCompatibilities,
   resolveCompatibilityHints,
   isElectricalPart,
+  isTirePart,
   corsHeaders,
   type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
@@ -38,7 +39,10 @@ interface PartTarget {
   description: string | null;
   technical_metadata: Record<string, unknown> | null;
   electrical_specs: { voltages?: number[]; connector?: string | null } | null;
-  category: { name: string; slug?: string } | { name: string; slug?: string }[] | null;
+  category:
+    | { name: string; slug?: string; spec_type?: string }
+    | { name: string; slug?: string; spec_type?: string }[]
+    | null;
 }
 
 interface PartResult {
@@ -65,7 +69,7 @@ async function resolveTargets(
   if (body.part_ids && body.part_ids.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)")
       .in("id", body.part_ids);
     if (error) throw new Error(`fetch by ids: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.id));
@@ -78,7 +82,7 @@ async function resolveTargets(
   if (body.skus && body.skus.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)")
       .in("sku", body.skus);
     if (error) throw new Error(`fetch by skus: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.sku));
@@ -92,7 +96,7 @@ async function resolveTargets(
     // Pièces sans aucune ligne dans part_compatibility
     const { data: allParts, error: pErr } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug)");
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)");
     if (pErr) throw new Error(`fetch all parts: ${pErr.message}`);
 
     const { data: compats, error: cErr } = await supabase
@@ -200,10 +204,24 @@ async function processOnePart(
   const categorySlug = Array.isArray(part.category)
     ? part.category[0]?.slug ?? null
     : part.category?.slug ?? null;
+  const categorySpecType = Array.isArray(part.category)
+    ? part.category[0]?.spec_type ?? null
+    : part.category?.spec_type ?? null;
 
-  // B1.6 — skip Passe B IA sur l'élec : zéro fetch scooters, zéro appel Claude.
-  if (isElectricalPart({ categorySlug, electrical_specs: part.electrical_specs })) {
+  // B3 — routeur ternaire par famille (spec_type autoritaire) :
+  //   electrical → intersection voltage (Passe A) + skip IA
+  //   tire       → tire_size (Passe A) + skip IA
+  //   generic    → Passe B IA
+  if (
+    isElectricalPart({
+      specType: categorySpecType,
+      categorySlug,
+      electrical_specs: part.electrical_specs,
+    })
+  ) {
     aiStatus = "skipped_electrical";
+  } else if (isTirePart({ specType: categorySpecType })) {
+    aiStatus = "skipped_tire";
   } else if (anthropicKey) {
     try {
       const exclude = new Set([...validatedScooterIds, ...passAScooterIds]);
@@ -216,6 +234,7 @@ async function processOnePart(
           technical_metadata: part.technical_metadata,
           category: categoryName,
           categorySlug,
+          categorySpecType,
           electrical_specs: part.electrical_specs,
         },
         exclude,

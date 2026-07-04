@@ -143,33 +143,57 @@ export function intersectPublishedConfigVoltages(
 }
 
 /**
- * B1.6 — Catégories dont les pièces sont ÉLECTRIQUES et doivent être exclues
- * de la Passe B IA (matchées uniquement par le moteur specs / intersection).
- * Slugs normalisés (lowercase). Une seule aujourd'hui ; à étendre au fil des
- * catégories élec (batteries, contrôleurs…) — pas de colonne DB pour l'instant.
+ * B1.6 — Catégories dont les pièces sont ÉLECTRIQUES (fallback rétro-compat).
+ * Slugs normalisés (lowercase). Depuis B3, le signal autoritaire est
+ * categories.spec_type (cf. ELECTRICAL_SPEC_TYPES) ; ce slug ne sert plus que
+ * de dernier recours et sera retiré quand spec_type sera fiable partout.
  */
 export const ELECTRICAL_CATEGORY_SLUGS = ["chargeurs"];
 
 /**
- * B1.6 — Prédicat PUR : la pièce est-elle électrique (→ skip Passe B IA) ?
- * Logique OR :
- *   - son categorySlug ∈ ELECTRICAL_CATEGORY_SLUGS (égalité stricte normalisée,
- *     JAMAIS includes → un accessoire "support-batterie" n'est pas capté), OU
- *   - elle porte des voltages structurés (electrical_specs.voltages non vide).
- * Le 1er signal couvre la famille même sans specs (cas ZT3 Pro élec non tagué) ;
- * le 2nd rattrape une pièce élec mal catégorisée mais taguée.
+ * B3 — Types de specs (categories.spec_type) « électriques » : matchés par
+ * INTERSECTION voltage (Passe A) et exclus de la Passe B IA.
+ * charger / controller / battery UNIQUEMENT.
+ * `display` est VOLONTAIREMENT exclu : un afficheur se matche au connecteur/
+ * modèle, pas au voltage ; le mettre ici sur-matcherait toutes les trottinettes
+ * du même voltage (bruit). Il reste `generic` → IA (sa règle connecteur = bloc
+ * ultérieur). `tire` est géré à part par isTirePart (skip IA aussi).
+ */
+export const ELECTRICAL_SPEC_TYPES = ["charger", "controller", "battery"];
+
+/**
+ * B1.6/B3 — Prédicat PUR : la pièce est-elle électrique (→ intersection voltage
+ * + skip Passe B IA) ? Ordre d'AUTORITÉ :
+ *   1. specType ∈ ELECTRICAL_SPEC_TYPES (autoritaire — categories.spec_type)
+ *   2. electrical_specs.voltages non vide (pièce taguée mais spec_type absent)
+ *   3. categorySlug ∈ ELECTRICAL_CATEGORY_SLUGS (fallback rétro-compat ; égalité
+ *      stricte normalisée, JAMAIS includes → "support-batterie" non capté)
  */
 export function isElectricalPart(part: {
+  specType?: string | null;
   categorySlug?: string | null;
   electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
 }): boolean {
-  const slug = part.categorySlug?.trim().toLowerCase();
-  if (slug && ELECTRICAL_CATEGORY_SLUGS.includes(slug)) return true;
+  const specType = part.specType?.trim().toLowerCase();
+  if (specType && ELECTRICAL_SPEC_TYPES.includes(specType)) return true;
 
   const voltages = part.electrical_specs?.voltages;
   if (Array.isArray(voltages) && voltages.length > 0) return true;
 
+  const slug = part.categorySlug?.trim().toLowerCase();
+  if (slug && ELECTRICAL_CATEGORY_SLUGS.includes(slug)) return true;
+
   return false;
+}
+
+/**
+ * B3 — Prédicat PUR : la pièce est-elle un PNEU (→ règle tire_size seule en
+ * Passe A + skip Passe B IA) ? Basé sur categories.spec_type='tire', fiable via
+ * la migration 20260704030135. Pas de fallback slug volontairement (le matching
+ * tire_size de la Passe A reste, lui, piloté par le nom).
+ */
+export function isTirePart(part: { specType?: string | null }): boolean {
+  return part.specType?.trim().toLowerCase() === "tire";
 }
 
 // =====================================================================

@@ -10,6 +10,7 @@ import {
   resolveCompatibilityHints,
   intersectPublishedConfigVoltages,
   isElectricalPart,
+  isTirePart,
 } from "../_shared/compatibility-helpers.ts";
 import {
   resolveModel,
@@ -243,44 +244,85 @@ Deno.test("intersectPublishedConfigVoltages: configs vides → set vide", () => 
   assertEquals(intersectPublishedConfigVoltages([], new Set(["A"])).size, 0);
 });
 
-// ─── B1.6 — isElectricalPart (skip Passe B IA) ──────────────────────────────
+// ─── B1.6/B3 — isElectricalPart (spec_type autoritaire, skip Passe B IA) ──────
 
-Deno.test("isElectricalPart: slug 'chargeurs' → true", () => {
-  assertEquals(isElectricalPart({ categorySlug: "chargeurs" }), true);
+Deno.test("isElectricalPart: spec_type charger/controller/battery → true", () => {
+  assertEquals(isElectricalPart({ specType: "charger" }), true);
+  assertEquals(isElectricalPart({ specType: "controller" }), true);
+  assertEquals(isElectricalPart({ specType: "battery" }), true);
 });
 
-Deno.test("isElectricalPart: slug 'chargeurs' + electrical_specs vide → true (cas ZT3 Pro)", () => {
-  // Catégorie élec mais pas encore backfillée → capté par la catégorie seule.
+Deno.test("isElectricalPart: spec_type 'display' → false (routé generic/IA, pas voltage)", () => {
+  // Un afficheur se matche au connecteur/modèle, pas au voltage → hors bucket élec.
+  assertEquals(isElectricalPart({ specType: "display" }), false);
+});
+
+Deno.test("isElectricalPart: spec_type 'generic' → false", () => {
+  assertEquals(isElectricalPart({ specType: "generic" }), false);
+});
+
+Deno.test("isElectricalPart: spec_type normalisé casse/espaces ('  Charger ') → true", () => {
+  assertEquals(isElectricalPart({ specType: "  Charger " }), true);
+});
+
+Deno.test("isElectricalPart: fallback slug — spec_type absent + slug 'chargeurs' → true", () => {
+  assertEquals(isElectricalPart({ categorySlug: "chargeurs" }), true);
+  // ZT3 Pro : catégorie élec pas encore backfillée, specs vides → capté par le slug.
   assertEquals(isElectricalPart({ categorySlug: "chargeurs", electrical_specs: null }), true);
   assertEquals(isElectricalPart({ categorySlug: "chargeurs", electrical_specs: { voltages: [] } }), true);
 });
 
-Deno.test("isElectricalPart: normalisation casse/espaces ('  Chargeurs ') → true", () => {
-  assertEquals(isElectricalPart({ categorySlug: "  Chargeurs " }), true);
+Deno.test("isElectricalPart: spec_type 'generic' + slug 'chargeurs' → true (le fallback slug l'emporte)", () => {
+  // Décision B3 : le slug rétro-compat 'chargeurs' capte même si spec_type est resté
+  // à 'generic' (catégorie élec mal configurée) — conservateur, garde les chargeurs
+  // hors IA. En prod la migration met chargeurs à spec_type='charger' ; ce cas = filet.
+  assertEquals(isElectricalPart({ specType: "generic", categorySlug: "chargeurs" }), true);
 });
 
-Deno.test("isElectricalPart: 'pneus'/'plaquettes'/'disques' → false", () => {
+Deno.test("isElectricalPart: fallback voltages — slug méca + electrical_specs.voltages non vide → true", () => {
+  assertEquals(
+    isElectricalPart({ categorySlug: "cables", electrical_specs: { voltages: [72] } }),
+    true,
+  );
+  // spec_type 'generic' n'annule pas le signal voltages structurés.
+  assertEquals(
+    isElectricalPart({ specType: "generic", categorySlug: "cables", electrical_specs: { voltages: [72] } }),
+    true,
+  );
+});
+
+Deno.test("isElectricalPart: slugs méca 'pneus'/'plaquettes'/'disques' → false", () => {
   assertEquals(isElectricalPart({ categorySlug: "pneus" }), false);
   assertEquals(isElectricalPart({ categorySlug: "plaquettes" }), false);
   assertEquals(isElectricalPart({ categorySlug: "disques" }), false);
 });
 
-Deno.test("isElectricalPart: pas de match par substring ('support-batterie' → false)", () => {
+Deno.test("isElectricalPart: pas de match par substring ('support-batterie'/'chargeurs-support' → false)", () => {
   // Un accessoire méca dont le slug contiendrait un mot élec ne doit PAS être capté.
   assertEquals(isElectricalPart({ categorySlug: "support-batterie" }), false);
   assertEquals(isElectricalPart({ categorySlug: "chargeurs-support" }), false);
 });
 
-Deno.test("isElectricalPart: slug méca mais electrical_specs.voltages non vide → true", () => {
-  assertEquals(
-    isElectricalPart({ categorySlug: "cables", electrical_specs: { voltages: [72] } }),
-    true,
-  );
+Deno.test("isElectricalPart: tout absent (spec_type/slug/specs null) → false", () => {
+  assertEquals(isElectricalPart({ specType: null, categorySlug: null, electrical_specs: null }), false);
+  assertEquals(isElectricalPart({}), false);
 });
 
-Deno.test("isElectricalPart: slug null + specs null → false", () => {
-  assertEquals(isElectricalPart({ categorySlug: null, electrical_specs: null }), false);
-  assertEquals(isElectricalPart({}), false);
+// ─── B3 — isTirePart (spec_type='tire' → tire_size seule + skip Passe B IA) ───
+
+Deno.test("isTirePart: spec_type 'tire' → true", () => {
+  assertEquals(isTirePart({ specType: "tire" }), true);
+});
+
+Deno.test("isTirePart: spec_type normalisé casse/espaces ('  Tire ') → true", () => {
+  assertEquals(isTirePart({ specType: "  Tire " }), true);
+});
+
+Deno.test("isTirePart: charger/generic/null/absent → false", () => {
+  assertEquals(isTirePart({ specType: "charger" }), false);
+  assertEquals(isTirePart({ specType: "generic" }), false);
+  assertEquals(isTirePart({ specType: null }), false);
+  assertEquals(isTirePart({}), false);
 });
 
 // ─── resolveModel ───────────────────────────────────────────────────────────

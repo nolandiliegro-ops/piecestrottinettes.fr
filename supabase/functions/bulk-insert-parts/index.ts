@@ -5,6 +5,7 @@ import {
   suggestCompatibilities,
   resolveCompatibilityHints,
   isElectricalPart,
+  isTirePart,
   type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
 import { suggestCompatibilitiesAI } from "../_shared/ai_matcher.ts";
@@ -249,6 +250,8 @@ const handler = async (req: Request): Promise<Response> => {
     const autoCreate = Deno.env.get("BULK_AUTOCREATE_CATEGORIES") === "true";
 
     let category: { id: string };
+    // B3 — spec_type de la catégorie résolue (autoritaire pour le routeur famille).
+    let categorySpecType: string | null = null;
 
     if (autoCreate) {
       // FILET DE SECOURS (flag=true) : ancien comportement — upsert par slug,
@@ -256,7 +259,7 @@ const handler = async (req: Request): Promise<Response> => {
       const { data: cat, error: catError } = await supabase
         .from("categories")
         .upsert({ name: categoryName, slug }, { onConflict: "slug" })
-        .select("id")
+        .select("id, spec_type")
         .single();
 
       if (catError || !cat) {
@@ -265,12 +268,13 @@ const handler = async (req: Request): Promise<Response> => {
           { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
         );
       }
-      category = cat;
+      category = { id: cat.id };
+      categorySpecType = (cat as { spec_type?: string | null }).spec_type ?? null;
     } else {
       // MODE PAR DÉFAUT (flag=false) : match-ou-flag. AUCUNE écriture dans categories.
       const { data: existing, error: listError } = await supabase
         .from("categories")
-        .select("id, name, slug");
+        .select("id, name, slug, spec_type");
 
       if (listError || !existing) {
         return new Response(
@@ -308,6 +312,9 @@ const handler = async (req: Request): Promise<Response> => {
       }
 
       category = { id: match.id };
+      categorySpecType =
+        (existing as Array<{ id: string; spec_type?: string | null }>)
+          .find((c) => c.id === match.id)?.spec_type ?? null;
     }
 
     const results: Results = {
@@ -503,10 +510,20 @@ const handler = async (req: Request): Promise<Response> => {
             const electricalSpecs = (part.electrical_specs ?? null) as
               | { voltages?: number[]; connector?: string | null }
               | null;
-            if (isElectricalPart({ categorySlug: slug, electrical_specs: electricalSpecs })) {
-              // B1.6 — skip Passe B IA sur l'élec : zéro fetch scooters, zéro appel Claude.
+            if (
+              isElectricalPart({
+                specType: categorySpecType,
+                categorySlug: slug,
+                electrical_specs: electricalSpecs,
+              })
+            ) {
+              // B3 — famille électrique → intersection voltage (Passe A) + skip IA.
               console.log(`[bulk-insert-parts] pièce électrique → Passe B IA skippée pour ${part.name}`);
               aiStatus = "skipped_electrical";
+            } else if (isTirePart({ specType: categorySpecType })) {
+              // B3 — famille pneu → tire_size (Passe A) + skip IA.
+              console.log(`[bulk-insert-parts] pneu → Passe B IA skippée pour ${part.name}`);
+              aiStatus = "skipped_tire";
             } else if (!skip_ai && anthropicKey) {
               try {
                 const passB = await suggestCompatibilitiesAI(
@@ -518,6 +535,7 @@ const handler = async (req: Request): Promise<Response> => {
                     technical_metadata: part.technical_metadata ?? null,
                     category: categoryName,
                     categorySlug: slug,
+                    categorySpecType,
                     electrical_specs: electricalSpecs,
                   },
                   passAScooterIds,

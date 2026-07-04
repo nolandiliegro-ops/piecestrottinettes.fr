@@ -6,7 +6,7 @@
 // Les helpers purs sont testés dans logic_test.ts.
 
 import type { SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { isElectricalPart } from "./compatibility-helpers.ts";
+import { isElectricalPart, isTirePart } from "./compatibility-helpers.ts";
 
 // ─── Types publics ──────────────────────────────────────────────────────────
 
@@ -26,8 +26,10 @@ export interface AIPartInput {
   technical_metadata?: Record<string, unknown> | null;
   /** Catégorie de la pièce (donnée existante) — oriente le raisonnement de l'IA. */
   category?: string | null;
-  /** B1.6 — signaux pour le garde défensif anti-Passe B sur l'élec (isElectricalPart). */
+  /** B1.6/B3 — signaux pour le garde défensif anti-Passe B (isElectricalPart / isTirePart). */
   categorySlug?: string | null;
+  /** B3 — categories.spec_type (autoritaire) : charger/controller/battery → élec, tire → pneu. */
+  categorySpecType?: string | null;
   electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
 }
 
@@ -356,14 +358,17 @@ export async function suggestCompatibilitiesAI(
   excludeScooterIds: Set<string>,
   apiKey: string,
 ): Promise<PassBOutcome> {
-  // B1.6 — garde défensif (ceinture-bretelles). Les call sites skippent déjà
-  // l'élec en amont ; ici on refuse toute Passe B AVANT le moindre fetch/appel
-  // Claude si les signaux élec sont présents, pour couvrir tout futur caller.
+  // B1.6/B3 — garde défensif (ceinture-bretelles). Les call sites skippent déjà
+  // élec ET pneu en amont ; ici on refuse toute Passe B AVANT le moindre fetch/
+  // appel Claude si les signaux élec (spec_type/voltages/slug) OU pneu (spec_type)
+  // sont présents, pour couvrir tout futur caller.
   if (
     isElectricalPart({
+      specType: part.categorySpecType,
       categorySlug: part.categorySlug,
       electrical_specs: part.electrical_specs,
-    })
+    }) ||
+    isTirePart({ specType: part.categorySpecType })
   ) {
     return { count: 0, durationMs: 0, status: "skipped" };
   }
