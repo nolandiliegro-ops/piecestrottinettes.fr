@@ -55,7 +55,7 @@ const Tutos = () => {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, brand:brands(name)')
+        .select('id, name, slug, brand:brands!scooter_models_brand_id_fkey(name)')
         .order('name');
       
       if (error) throw error;
@@ -69,7 +69,7 @@ const Tutos = () => {
     queryFn: async () => {
       let query = supabase
         .from('tutorials')
-        .select('*, scooter:scooter_models(name, slug, brand:brands(name))')
+        .select('*, scooter:scooter_models(name, slug, brand:brands!scooter_models_brand_id_fkey(name))')
         .order('created_at', { ascending: false });
       
       if (selectedScooter) {

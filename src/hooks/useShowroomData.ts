@@ -24,7 +24,7 @@ const useAllShowroomScooters = () =>
         .from("scooter_models")
         .select(
           `id, name, slug, image_url, max_speed_kmh, range_km, power_watts,
-           brand:brands(name)`
+           brand:brands!scooter_models_brand_id_fkey(name)`
         )
         .eq("published", true)
         .order("created_at", { ascending: false });

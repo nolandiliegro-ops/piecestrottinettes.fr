@@ -143,7 +143,7 @@ export const ScooterProvider = ({ children }: { children: ReactNode }) => {
             name,
             slug,
             image_url,
-            brand:brands(name)
+            brand:brands!scooter_models_brand_id_fkey(name)
           `)
           .eq('published', true)
           .order('name');

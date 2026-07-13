@@ -133,7 +133,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, is_top_moment, is_featured_home, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, is_top_moment, is_featured_home, brand:brands!scooter_models_brand_id_fkey(name)')
         .order('name');
       if (error) throw error;
       setScooters((data as any) || []);
@@ -160,7 +160,7 @@ const ScootersManager = () => {
           name: quickName.trim(), slug, brand_id: quickBrandId,
           year: quickYear ? parseInt(quickYear) : null
         })
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands!scooter_models_brand_id_fkey(name)')
         .single();
       if (error) throw error;
       setScooters(prev => [...prev, data as any]);
@@ -256,7 +256,7 @@ const ScootersManager = () => {
           max_speed_kmh: scooter.max_speed_kmh, range_km: scooter.range_km,
           tire_size: scooter.tire_size, description: scooter.description,
         })
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands!scooter_models_brand_id_fkey(name)')
         .single();
       if (error) throw error;
       setScooters(prev => [...prev, data as any]);
@@ -290,7 +290,7 @@ const ScootersManager = () => {
           year: newScooter.year ? parseInt(newScooter.year) : null,
           search_terms: newScooter.search_terms.trim() || null,
         })
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, brand:brands!scooter_models_brand_id_fkey(name)')
         .single();
       if (error) throw error;
       setScooters(prev => [...prev, data as any]);

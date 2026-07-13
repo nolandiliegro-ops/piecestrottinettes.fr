@@ -57,7 +57,7 @@ export const useScooterModels = (brandSlug?: string | null) => {
         .from("scooter_models")
         .select(`
           *,
-          brand:brands(id, name, slug)
+          brand:brands!scooter_models_brand_id_fkey(id, name, slug)
         `)
         .eq("published", true)
         .order("name")
@@ -193,7 +193,7 @@ export const useSearchScooters = (query: string) => {
         .select(`
           slug,
           name,
-          brand:brands(name)
+          brand:brands!scooter_models_brand_id_fkey(name)
         `)
         .eq("published", true)
         .or(`name.ilike.%${debouncedQuery}%,brands.name.ilike.%${debouncedQuery}%`)

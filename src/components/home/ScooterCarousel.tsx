@@ -23,7 +23,7 @@ const usePopularScooters = () =>
   useQuery({
     queryKey: ["popular_scooters_home"],
     queryFn: async (): Promise<PopularScooter[]> => {
-      const SELECT = `id, name, slug, image_url, year, compatible_parts_count, brand:brands(name)`;
+      const SELECT = `id, name, slug, image_url, year, compatible_parts_count, brand:brands!scooter_models_brand_id_fkey(name)`;
 
       const { data: featured, error: e1 } = await supabase
         .from("scooter_models")

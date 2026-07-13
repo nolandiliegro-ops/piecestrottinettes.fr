@@ -112,7 +112,7 @@ function useClientsData() {
       const [profilesRes, ordersRes, garageRes, messagesRes, contactsRes] = await Promise.all([
         supabase.from('profiles').select('id, display_name, performance_points, created_at'),
         supabase.from('orders').select('id, order_number, user_id, customer_email, customer_first_name, customer_last_name, customer_phone, total_ttc, status, created_at').order('created_at', { ascending: false }),
-        supabase.from('user_garage').select('user_id, nickname, scooter_models(name, power_watts, range_km, brands(name))'),
+        supabase.from('user_garage').select('user_id, nickname, scooter_models(name, power_watts, range_km, brands!scooter_models_brand_id_fkey(name))'),
         supabase.from('order_messages').select('id, user_id, message, created_at, sender_type, contact_message_id').order('created_at', { ascending: false }).limit(3000),
         supabase.from('contact_messages').select('id, email, name, matched_user_id, created_at, message').order('created_at', { ascending: false }),
       ]);

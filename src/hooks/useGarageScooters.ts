@@ -60,7 +60,7 @@ export const useGarageScooters = () => {
             youtube_video_id,
             compatible_parts_count,
             description,
-            brand:brands(id, name, slug)
+            brand:brands!scooter_models_brand_id_fkey(id, name, slug)
           )
         `)
         .eq("user_id", user.id)

@@ -46,7 +46,7 @@ export const useRelatedScooters = () =>
         .select(
           `id, name, slug, image_url, images, brand_id, power_watts, max_speed_kmh, range_km,
            is_top_moment, is_featured_home, compatible_parts_count,
-           brand:brands(id, name, slug, logo_url)`
+           brand:brands!scooter_models_brand_id_fkey(id, name, slug, logo_url)`
         )
         .eq("published", true)
         .order("name");

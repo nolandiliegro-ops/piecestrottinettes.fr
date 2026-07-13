@@ -75,7 +75,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
           meta_title,
           meta_description,
           affiliate_link,
-          brand:brands(id, name, slug, logo_url)
+          brand:brands!scooter_models_brand_id_fkey(id, name, slug, logo_url)
         `)
         .eq("slug", slug)
         .eq("published", true)
@@ -137,7 +137,7 @@ export const useScootersGroupedByBrand = () => {
           id,
           name,
           slug,
-          brand:brands(id, name, slug)
+          brand:brands!scooter_models_brand_id_fkey(id, name, slug)
         `)
         .eq("published", true)
         .order("name");

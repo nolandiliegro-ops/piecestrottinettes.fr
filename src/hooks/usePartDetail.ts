@@ -141,7 +141,7 @@ export const useCompatibleScooters = (partId: string | null) => {
             id,
             name,
             slug,
-            brands (
+            brands!scooter_models_brand_id_fkey (
               name,
               logo_url
             )

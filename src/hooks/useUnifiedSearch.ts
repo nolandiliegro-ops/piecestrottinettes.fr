@@ -126,7 +126,7 @@ export const useUnifiedSearch = (query: string) => {
       const scooterQuery = shouldQueryScooters 
         ? supabase
             .from('scooter_models')
-            .select('slug, name, image_url, brand:brands(name)')
+            .select('slug, name, image_url, brand:brands!scooter_models_brand_id_fkey(name)')
             .eq('published', true)
             .or(fuzzyPatterns.map(p => `name.ilike.${p}`).join(','))
             .limit(4)

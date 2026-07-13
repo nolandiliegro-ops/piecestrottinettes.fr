@@ -23,7 +23,7 @@ const usePendingScooters = () => {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('*, brand:brands(id, name, slug)')
+        .select('*, brand:brands!scooter_models_brand_id_fkey(id, name, slug)')
         .eq('published', false)
         .order('created_at', { ascending: false });
       if (error) throw error;

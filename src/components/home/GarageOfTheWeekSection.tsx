@@ -147,7 +147,7 @@ const GarageOfTheWeekSection = () => {
           `id, user_id, scooter_model_id, nickname, custom_photo_url,
            scooter_models (
              id, slug, name, image_url, voltage, amperage, power_watts,
-             brand:brands(name)
+             brand:brands!scooter_models_brand_id_fkey(name)
            )`
         )
         .in("user_id", riderIds);

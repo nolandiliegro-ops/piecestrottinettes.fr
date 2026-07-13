@@ -52,7 +52,7 @@ export const useUserGarage = () => {
             max_speed_kmh,
             range_km,
             image_url,
-            brand:brands(id, name, slug)
+            brand:brands!scooter_models_brand_id_fkey(id, name, slug)
           )
         `)
         .eq("user_id", user.id)

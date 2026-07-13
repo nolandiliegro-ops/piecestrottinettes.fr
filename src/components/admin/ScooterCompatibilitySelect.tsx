@@ -52,7 +52,7 @@ const ScooterCompatibilitySelect = ({
             name,
             image_url,
             brand_id,
-            brand:brands(id, name)
+            brand:brands!scooter_models_brand_id_fkey(id, name)
           `)
           .order('name');
 

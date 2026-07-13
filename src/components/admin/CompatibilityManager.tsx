@@ -85,7 +85,7 @@ const CompatibilityManager = () => {
   const fetchData = async () => {
     try {
       const [scootersRes, partsRes, compatRes] = await Promise.all([
-        supabase.from('scooter_models').select('id, name, slug, brand:brands(name)').order('name'),
+        supabase.from('scooter_models').select('id, name, slug, brand:brands!scooter_models_brand_id_fkey(name)').order('name'),
         supabase.from('parts').select('id, name, sku, image_url, images, published, category:categories(name)').order('name'),
         supabase.from('part_compatibility').select('part_id, scooter_model_id, auto_suggested, confidence_level, suggestion_reason'),
       ]);

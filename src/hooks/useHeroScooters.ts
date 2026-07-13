@@ -38,7 +38,7 @@ const useAllPublishedScooters = () =>
         .select(
           `id, name, slug, image_url, year, compatible_parts_count,
            is_top_moment, max_speed_kmh, range_km, power_watts, search_terms,
-           created_at, brand:brands(name)`
+           created_at, brand:brands!scooter_models_brand_id_fkey(name)`
         )
         .eq("published", true)
         .order("created_at", { ascending: false });

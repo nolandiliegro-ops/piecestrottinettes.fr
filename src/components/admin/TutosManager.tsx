@@ -123,7 +123,7 @@ const TutosManager = () => {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('tutorials')
-        .select('*, scooter:scooter_models(name, brand:brands(name))')
+        .select('*, scooter:scooter_models(name, brand:brands!scooter_models_brand_id_fkey(name))')
         .order('created_at', { ascending: false });
       
       if (error) throw error;
@@ -137,7 +137,7 @@ const TutosManager = () => {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, brand:brands(name)')
+        .select('id, name, brand:brands!scooter_models_brand_id_fkey(name)')
         .order('name');
       
       if (error) throw error;

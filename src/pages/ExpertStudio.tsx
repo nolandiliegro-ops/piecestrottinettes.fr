@@ -32,7 +32,7 @@ const ExpertStudio = () => {
   const fetchModel = async () => {
     const { data, error } = await supabase
       .from('scooter_models')
-      .select('id, name, slug, image_url, technical_signature, brand:brands(name)')
+      .select('id, name, slug, image_url, technical_signature, brand:brands!scooter_models_brand_id_fkey(name)')
       .eq('id', id!)
       .single();
     if (error) {

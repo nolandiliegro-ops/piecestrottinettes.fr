@@ -29,7 +29,7 @@ const ScooterSearchSelect = ({ onSelect }: ScooterSearchSelectProps) => {
       try {
         const { data } = await supabase
           .from("scooter_models")
-          .select("id, name, brand:brands(name)")
+          .select("id, name, brand:brands!scooter_models_brand_id_fkey(name)")
           .eq("published", true)
           .or(`name.ilike.%${query}%,search_terms.ilike.%${query}%`)
           .limit(8);

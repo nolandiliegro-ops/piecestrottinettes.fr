@@ -48,7 +48,7 @@ export const useScooterModels = (brandSlug?: string | null) => {
         .from("scooter_models")
         .select(`
           *,
-          brand:brands(id, name, slug)
+          brand:brands!scooter_models_brand_id_fkey(id, name, slug)
         `)
         .order("name")
         .abortSignal(signal); // ✅ Ajouter le signal d'annulation
@@ -178,7 +178,7 @@ export const useSearchScooters = (query: string) => {
         .select(`
           slug,
           name,
-          brand:brands(name)
+          brand:brands!scooter_models_brand_id_fkey(name)
         `)
         .or(`name.ilike.%${debouncedQuery}%,brands.name.ilike.%${debouncedQuery}%`)
         .limit(5)
