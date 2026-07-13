@@ -71,6 +71,9 @@ export const brandSchema = z.object({
     .or(z.literal("").transform(() => undefined)),
   display_order: z.number().int().min(0).max(9999),
   published: z.boolean(),
+  score_comfort: z.number().int().min(0).max(100).nullable(),
+  score_budget: z.number().int().min(0).max(100).nullable(),
+  score_lightweight: z.number().int().min(0).max(100).nullable(),
 });
 
 export type BrandFormValues = z.infer<typeof brandSchema>;

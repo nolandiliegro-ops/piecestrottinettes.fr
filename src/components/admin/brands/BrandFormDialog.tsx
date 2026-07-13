@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Slider } from "@/components/ui/slider";
 import { Loader2, Save, AlertTriangle } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
@@ -33,6 +34,9 @@ export interface BrandRow {
   accent_color: string | null;
   display_order: number;
   published: boolean;
+  score_comfort: number | null;
+  score_budget: number | null;
+  score_lightweight: number | null;
 }
 
 interface Props {
@@ -58,6 +62,9 @@ const emptyValues: BrandFormValues = {
   accent_color: undefined,
   display_order: 0,
   published: false,
+  score_comfort: null,
+  score_budget: null,
+  score_lightweight: null,
 };
 
 const toForm = (b: BrandRow | null | undefined, suggestedOrder: number): BrandFormValues => {
@@ -77,7 +84,73 @@ const toForm = (b: BrandRow | null | undefined, suggestedOrder: number): BrandFo
     accent_color: b.accent_color ?? undefined,
     display_order: b.display_order ?? 0,
     published: !!b.published,
+    score_comfort: b.score_comfort ?? null,
+    score_budget: b.score_budget ?? null,
+    score_lightweight: b.score_lightweight ?? null,
   };
+};
+
+const clampScore = (n: number) => Math.min(100, Math.max(0, Math.round(n)));
+
+const EDITORIAL_SCORES: {
+  key: "score_comfort" | "score_budget" | "score_lightweight";
+  label: string;
+}[] = [
+  { key: "score_comfort", label: "Confort" },
+  { key: "score_budget", label: "Petit prix" },
+  { key: "score_lightweight", label: "Léger" },
+];
+
+const ScoreControl = ({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: number | null;
+  onChange: (v: number | null) => void;
+}) => {
+  const rated = value !== null;
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center justify-between gap-3 min-h-[44px]">
+        <Label>{label}</Label>
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-muted-foreground">Noté</span>
+          <Switch
+            checked={rated}
+            onCheckedChange={(on) => onChange(on ? value ?? 50 : null)}
+            aria-label={`Noter ${label}`}
+          />
+        </div>
+      </div>
+      {rated ? (
+        <div className="flex items-center gap-3 py-2">
+          <Slider
+            value={[value ?? 0]}
+            min={0}
+            max={100}
+            step={1}
+            onValueChange={([n]) => onChange(clampScore(n))}
+            className="flex-1"
+            aria-label={label}
+          />
+          <Input
+            type="number"
+            min={0}
+            max={100}
+            value={value ?? 0}
+            onChange={(e) =>
+              onChange(e.target.value === "" ? 0 : clampScore(parseInt(e.target.value, 10) || 0))
+            }
+            className="w-20 h-11"
+          />
+        </div>
+      ) : (
+        <p className="text-xs text-muted-foreground">Non noté</p>
+      )}
+    </div>
+  );
 };
 
 const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }: Props) => {
@@ -142,6 +215,9 @@ const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }:
       accent_color: v.accent_color ?? null,
       display_order: v.display_order,
       published: v.published,
+      score_comfort: v.score_comfort,
+      score_budget: v.score_budget,
+      score_lightweight: v.score_lightweight,
     };
     try {
       let saved: BrandRow;
@@ -363,6 +439,23 @@ const BrandFormDialog = ({ open, onOpenChange, brand, suggestedOrder, onSaved }:
               />
             </div>
             {err("accent_color")}
+          </div>
+
+          <div className="md:col-span-2 rounded-lg border border-border p-3 space-y-3">
+            <div>
+              <p className="text-sm font-medium">Scores éditoriaux (0-100)</p>
+              <p className="text-xs text-muted-foreground">
+                Laisser « Non noté » exclut la marque de ce filtre (≠ note 0).
+              </p>
+            </div>
+            {EDITORIAL_SCORES.map((s) => (
+              <ScoreControl
+                key={s.key}
+                label={s.label}
+                value={values[s.key]}
+                onChange={(v) => set(s.key, v)}
+              />
+            ))}
           </div>
 
           <div className="flex items-center justify-between md:col-span-2 rounded-lg border border-border p-3">
