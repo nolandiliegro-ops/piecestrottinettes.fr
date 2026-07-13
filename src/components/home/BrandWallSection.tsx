@@ -196,7 +196,7 @@ const BrandWallSection = ({ limited = true }: Props) => {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#3A6449")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4A7C59")}
             >
-              Voir les 50 marques
+              Voir toutes les marques
             </Link>
           </div>
         )}
