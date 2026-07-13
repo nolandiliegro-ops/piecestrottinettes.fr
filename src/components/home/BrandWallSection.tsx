@@ -16,6 +16,9 @@ const CHIPS = (Object.keys(AXIS_UI) as BrandAxis[]).map((key) => ({
   ...AXIS_UI[key],
 }));
 
+// Organic brands must reach this fraction of the axis top organic score to stay visible
+const AXIS_RELEVANCE_RATIO = 0.5;
+
 interface Props {
   /** When true (home preview), cap to 12 tiles and show the "voir toutes" CTA. */
   limited?: boolean;
@@ -52,8 +55,16 @@ const BrandWallSection = ({ limited = true }: Props) => {
       if (sc !== sa) return sc - sa;
       return a.b.name.localeCompare(c.b.name);
     };
+    // Sponsored: always shown, pinned on top, exempt from the relevance filter.
     const sponsored = rows.filter((r) => r.b.sponsored).sort(cmp);
-    const organic = rows.filter((r) => !r.b.sponsored).sort(cmp);
+    // Organic: kept only if scored and >= AXIS_RELEVANCE_RATIO of the top organic score.
+    const organicRows = rows.filter((r) => !r.b.sponsored);
+    const scoredOrganic = organicRows.filter((r) => r.score !== null);
+    const maxOrganic = scoredOrganic.length ? Math.max(...scoredOrganic.map((r) => r.score!)) : 0;
+    const threshold = maxOrganic * AXIS_RELEVANCE_RATIO;
+    const organic = organicRows
+      .filter((r) => r.score !== null && r.score >= threshold)
+      .sort(cmp);
     const merged = [...sponsored, ...organic];
     const capped = limited ? merged.slice(0, 12) : merged;
     const n1Id = organic.find((r) => r.score !== null)?.b.id ?? null;
@@ -148,6 +159,22 @@ const BrandWallSection = ({ limited = true }: Props) => {
               </button>
             );
           })}
+          {axis && (
+            <button
+              type="button"
+              onClick={() => setAxis(null)}
+              className="inline-flex items-center gap-2 h-11 px-5 rounded-full font-semibold transition-colors"
+              style={{
+                backgroundColor: "#4A7C59",
+                color: "#FFFFFF",
+                fontFamily: "'Sora', sans-serif",
+                fontSize: 15,
+              }}
+            >
+              <span aria-hidden>✕</span>
+              Toutes les marques
+            </button>
+          )}
         </div>
 
         {isLoading ? (
@@ -165,7 +192,9 @@ const BrandWallSection = ({ limited = true }: Props) => {
             className="text-center text-sm"
             style={{ color: "#6B7280", fontFamily: "'Sora',sans-serif" }}
           >
-            Aucune marque ne correspond à "{q}".
+            {axis && searched.length > 0
+              ? "Aucune marque ne se démarque sur ce critère."
+              : `Aucune marque ne correspond à "${q}".`}
           </p>
         ) : (
           <div className="grid" style={gridStyle}>
