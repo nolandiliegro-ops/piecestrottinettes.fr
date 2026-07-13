@@ -62,7 +62,7 @@ const BRAND_COLS =
   "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id, sponsored, score_comfort, score_budget, score_lightweight";
 
 const MODEL_COLS =
-  "id, brand_id, name, slug, image_url, images, score_performance, score_autonomy, score_perf_adj, score_auto_adj, score_offroad, score_offroad_adj";
+  "id, brand_id, name, slug, image_url, images, wheel_inches, score_performance, score_autonomy, score_perf_adj, score_auto_adj, score_offroad, score_offroad_adj";
 
 interface RawModel {
   id: string;
@@ -71,6 +71,7 @@ interface RawModel {
   slug: string;
   image_url: string | null;
   images: unknown;
+  wheel_inches: number | null;
   score_performance: number | null;
   score_autonomy: number | null;
   score_perf_adj: number | null;
@@ -117,6 +118,13 @@ export const isBrandLevelAxis = (axis: BrandAxis): boolean =>
 const clampScore = (v: number | null | undefined): number | null =>
   v === null || v === undefined ? null : Math.min(100, Math.max(0, v));
 
+// For brand-level axes, which model photo best embodies the axis (front-only proxy
+// on the numeric wheel_inches column). budget stays "representative" (no proxy).
+const BRAND_TIEBREAK: Partial<Record<BrandAxis, "min-wheel" | "max-wheel">> = {
+  lightweight: "min-wheel", // smallest wheel ~ lightest
+  comfort: "max-wheel",     // largest wheel ~ most comfortable
+};
+
 // Champion = brand model with the highest final score that HAS a photo.
 // Fallback to the showcase model when no scored-with-photo candidate exists.
 const pickChampion = (
@@ -129,12 +137,29 @@ const pickChampion = (
   const cfg = AXIS_CONFIG[axis];
 
   if (cfg.level === "brand") {
-    // Score from the brand row; a representative model still provides photo/name.
-    const rep =
+    // Score from the brand row; a representative model still provides the photo.
+    // lightweight/comfort: prefer the model whose wheel_inches best fits the axis;
+    // fall back to showcase -> first-with-photo -> first when no wheel data / ties.
+    const fallback =
       (showcaseId ? byId.get(showcaseId) : undefined) ??
       brandModels.find((m) => modelPhoto(m)) ??
       brandModels[0] ??
       null;
+    const mode = BRAND_TIEBREAK[axis];
+    let rep = fallback;
+    if (mode) {
+      const withWheel = brandModels
+        .filter((m) => modelPhoto(m) && m.wheel_inches !== null && m.wheel_inches > 0)
+        .map((m) => ({ m, w: m.wheel_inches as number }));
+      if (withWheel.length > 0) {
+        withWheel.sort((a, b) =>
+          mode === "min-wheel"
+            ? a.w - b.w || a.m.name.localeCompare(b.m.name)
+            : b.w - a.w || a.m.name.localeCompare(b.m.name)
+        );
+        rep = withWheel[0].m;
+      }
+    }
     if (!rep) return null;
     return {
       model_id: rep.id,
@@ -183,7 +208,8 @@ export const useBrandWall = () =>
       const { data: models, error: mErr } = await supabase
         .from("scooter_models")
         .select(MODEL_COLS)
-        .eq("published", true);
+        .eq("published", true)
+        .returns<RawModel[]>();
       if (mErr) throw mErr;
 
       const counts = new Map<string, number>();
