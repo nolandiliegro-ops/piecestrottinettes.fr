@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { AXIS_UI } from "@/hooks/useBrandWall";
+import { AXIS_UI, isBrandLevelAxis } from "@/hooks/useBrandWall";
 import type {
   BrandAxis,
   BrandWallItem,
@@ -450,8 +450,11 @@ const BrandTile = ({
                 fontWeight: 500,
               }}
             >
-              {axisIcon} Champion : {champion.name}
-              {champion.score !== null ? ` · ${champion.score}` : ""}
+              {axis && isBrandLevelAxis(axis)
+                ? `${axisLabel}${champion.score !== null ? ` : ${champion.score}` : ""}`
+                : `${axisIcon} Champion : ${champion.name}${
+                    champion.score !== null ? ` · ${champion.score}` : ""
+                  }`}
             </p>
           ) : (
             <p

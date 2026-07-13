@@ -13,13 +13,22 @@ export type EntryStyle =
   | "diag-br"
   | "diag-bl";
 
-export type BrandAxis = "performance" | "autonomy" | "offroad";
+export type BrandAxis =
+  | "performance"
+  | "autonomy"
+  | "offroad"
+  | "comfort"
+  | "budget"
+  | "lightweight";
 
 // Single source of truth for axis label + icon (reused by chips and tiles)
 export const AXIS_UI: Record<BrandAxis, { label: string; icon: string }> = {
   performance: { label: "Performance", icon: "⚡" },
   autonomy: { label: "Autonomie", icon: "🔋" },
   offroad: { label: "Tout-terrain", icon: "🏔️" },
+  comfort: { label: "Confort", icon: "🛋️" },
+  budget: { label: "Petit prix", icon: "💶" },
+  lightweight: { label: "Léger", icon: "🪶" },
 };
 
 export interface ChampionInfo {
@@ -46,15 +55,11 @@ export interface BrandWallItem {
   models_count: number;
   showcase_image_url: string | null;
   sponsored: boolean;
-  champions: {
-    performance: ChampionInfo | null;
-    autonomy: ChampionInfo | null;
-    offroad: ChampionInfo | null;
-  };
+  champions: Record<BrandAxis, ChampionInfo | null>;
 }
 
 const BRAND_COLS =
-  "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id, sponsored";
+  "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id, sponsored, score_comfort, score_budget, score_lightweight";
 
 const MODEL_COLS =
   "id, brand_id, name, slug, image_url, images, score_performance, score_autonomy, score_perf_adj, score_auto_adj, score_offroad, score_offroad_adj";
@@ -87,17 +92,30 @@ const finalScore = (
 const modelPhoto = (m: RawModel): string | null =>
   getPrimaryImage(m.images, m.image_url, "") || null;
 
-const AXIS_FIELDS: Record<
-  BrandAxis,
-  {
-    base: "score_performance" | "score_autonomy" | "score_offroad";
-    adj: "score_perf_adj" | "score_auto_adj" | "score_offroad_adj";
-  }
-> = {
-  performance: { base: "score_performance", adj: "score_perf_adj" },
-  autonomy: { base: "score_autonomy", adj: "score_auto_adj" },
-  offroad: { base: "score_offroad", adj: "score_offroad_adj" },
+type ModelScoreCol = "score_performance" | "score_autonomy" | "score_offroad";
+type ModelAdjCol = "score_perf_adj" | "score_auto_adj" | "score_offroad_adj";
+type BrandScoreCol = "score_comfort" | "score_budget" | "score_lightweight";
+
+type AxisConfig =
+  | { level: "model"; base: ModelScoreCol; adj: ModelAdjCol }
+  | { level: "brand"; col: BrandScoreCol };
+
+const AXIS_CONFIG: Record<BrandAxis, AxisConfig> = {
+  performance: { level: "model", base: "score_performance", adj: "score_perf_adj" },
+  autonomy: { level: "model", base: "score_autonomy", adj: "score_auto_adj" },
+  offroad: { level: "model", base: "score_offroad", adj: "score_offroad_adj" },
+  comfort: { level: "brand", col: "score_comfort" },
+  budget: { level: "brand", col: "score_budget" },
+  lightweight: { level: "brand", col: "score_lightweight" },
 };
+
+// True when the axis score comes from the brand row (editorial), not from a model
+export const isBrandLevelAxis = (axis: BrandAxis): boolean =>
+  AXIS_CONFIG[axis].level === "brand";
+
+// Editorial brand score: clamp 0-100; null stays null (not rated -> excluded from filter)
+const clampScore = (v: number | null | undefined): number | null =>
+  v === null || v === undefined ? null : Math.min(100, Math.max(0, v));
 
 // Champion = brand model with the highest final score that HAS a photo.
 // Fallback to the showcase model when no scored-with-photo candidate exists.
@@ -105,9 +123,28 @@ const pickChampion = (
   brandModels: RawModel[],
   axis: BrandAxis,
   showcaseId: string | null,
-  byId: Map<string, RawModel>
+  byId: Map<string, RawModel>,
+  brand: any
 ): ChampionInfo | null => {
-  const { base, adj } = AXIS_FIELDS[axis];
+  const cfg = AXIS_CONFIG[axis];
+
+  if (cfg.level === "brand") {
+    // Score from the brand row; a representative model still provides photo/name.
+    const rep =
+      (showcaseId ? byId.get(showcaseId) : undefined) ??
+      brandModels.find((m) => modelPhoto(m)) ??
+      brandModels[0] ??
+      null;
+    if (!rep) return null;
+    return {
+      model_id: rep.id,
+      name: rep.name,
+      image_url: modelPhoto(rep),
+      score: clampScore(brand[cfg.col]),
+    };
+  }
+
+  const { base, adj } = cfg;
 
   const scored = brandModels
     .filter((m) => modelPhoto(m))
@@ -186,11 +223,12 @@ export const useBrandWall = () =>
           models_count: counts.get(b.id) ?? 0,
           showcase_image_url: showcase,
           sponsored: !!b.sponsored,
-          champions: {
-            performance: pickChampion(brandModels, "performance", b.showcase_model_id, byId),
-            autonomy: pickChampion(brandModels, "autonomy", b.showcase_model_id, byId),
-            offroad: pickChampion(brandModels, "offroad", b.showcase_model_id, byId),
-          },
+          champions: Object.fromEntries(
+            (Object.keys(AXIS_UI) as BrandAxis[]).map((ax) => [
+              ax,
+              pickChampion(brandModels, ax, b.showcase_model_id, byId, b),
+            ])
+          ) as Record<BrandAxis, ChampionInfo | null>,
         };
       });
 

@@ -136,7 +136,7 @@ const BrandWallSection = ({ limited = true }: Props) => {
           </div>
         </div>
 
-        <div className="mb-6 md:mb-8 flex items-center justify-center gap-2">
+        <div className="mb-6 md:mb-8 flex flex-wrap items-center justify-center gap-2">
           {CHIPS.map((c) => {
             const on = axis === c.key;
             return (
