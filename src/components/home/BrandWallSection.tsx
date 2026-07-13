@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
-import { useBrandWall, type BrandAxis, type BrandWallItem } from "@/hooks/useBrandWall";
+import { useBrandWall, AXIS_UI, type BrandAxis, type BrandWallItem } from "@/hooks/useBrandWall";
 import { useIsMobile } from "@/hooks/use-mobile";
 import BrandTile from "./BrandTile";
 
@@ -11,10 +11,10 @@ const normalize = (s: string) =>
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
 
-const CHIPS: { key: BrandAxis; label: string; icon: string }[] = [
-  { key: "performance", label: "Performance", icon: "⚡" },
-  { key: "autonomy", label: "Autonomie", icon: "🔋" },
-];
+const CHIPS = (Object.keys(AXIS_UI) as BrandAxis[]).map((key) => ({
+  key,
+  ...AXIS_UI[key],
+}));
 
 interface Props {
   /** When true (home preview), cap to 12 tiles and show the "voir toutes" CTA. */

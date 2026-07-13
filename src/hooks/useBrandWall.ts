@@ -13,7 +13,14 @@ export type EntryStyle =
   | "diag-br"
   | "diag-bl";
 
-export type BrandAxis = "performance" | "autonomy";
+export type BrandAxis = "performance" | "autonomy" | "offroad";
+
+// Single source of truth for axis label + icon (reused by chips and tiles)
+export const AXIS_UI: Record<BrandAxis, { label: string; icon: string }> = {
+  performance: { label: "Performance", icon: "⚡" },
+  autonomy: { label: "Autonomie", icon: "🔋" },
+  offroad: { label: "Tout-terrain", icon: "🏔️" },
+};
 
 export interface ChampionInfo {
   model_id: string;
@@ -42,6 +49,7 @@ export interface BrandWallItem {
   champions: {
     performance: ChampionInfo | null;
     autonomy: ChampionInfo | null;
+    offroad: ChampionInfo | null;
   };
 }
 
@@ -49,7 +57,7 @@ const BRAND_COLS =
   "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id, sponsored";
 
 const MODEL_COLS =
-  "id, brand_id, name, slug, image_url, images, score_performance, score_autonomy, score_perf_adj, score_auto_adj";
+  "id, brand_id, name, slug, image_url, images, score_performance, score_autonomy, score_perf_adj, score_auto_adj, score_offroad, score_offroad_adj";
 
 interface RawModel {
   id: string;
@@ -62,6 +70,8 @@ interface RawModel {
   score_autonomy: number | null;
   score_perf_adj: number | null;
   score_auto_adj: number | null;
+  score_offroad: number | null;
+  score_offroad_adj: number | null;
 }
 
 // Final score = clamp(base + offset, 0, 100); null base means "not scored on this axis"
@@ -79,10 +89,14 @@ const modelPhoto = (m: RawModel): string | null =>
 
 const AXIS_FIELDS: Record<
   BrandAxis,
-  { base: "score_performance" | "score_autonomy"; adj: "score_perf_adj" | "score_auto_adj" }
+  {
+    base: "score_performance" | "score_autonomy" | "score_offroad";
+    adj: "score_perf_adj" | "score_auto_adj" | "score_offroad_adj";
+  }
 > = {
   performance: { base: "score_performance", adj: "score_perf_adj" },
   autonomy: { base: "score_autonomy", adj: "score_auto_adj" },
+  offroad: { base: "score_offroad", adj: "score_offroad_adj" },
 };
 
 // Champion = brand model with the highest final score that HAS a photo.
@@ -175,6 +189,7 @@ export const useBrandWall = () =>
           champions: {
             performance: pickChampion(brandModels, "performance", b.showcase_model_id, byId),
             autonomy: pickChampion(brandModels, "autonomy", b.showcase_model_id, byId),
+            offroad: pickChampion(brandModels, "offroad", b.showcase_model_id, byId),
           },
         };
       });

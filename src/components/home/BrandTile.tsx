@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { AXIS_UI } from "@/hooks/useBrandWall";
 import type {
   BrandAxis,
   BrandWallItem,
@@ -214,8 +215,8 @@ const BrandTile = ({
     : `translate(${preset.from.x}px, ${preset.from.y}px) rotate(${preset.from.r}deg)`;
   const showcaseOpacity = active ? 0.96 : 0;
 
-  const axisLabel = axis === "autonomy" ? "Autonomie" : "Performance";
-  const axisIcon = axis === "autonomy" ? "🔋" : "⚡";
+  const axisLabel = axis ? AXIS_UI[axis].label : "";
+  const axisIcon = axis ? AXIS_UI[axis].icon : "";
   const displayImage = axisActive
     ? champion?.image_url ?? brand.showcase_image_url
     : brand.showcase_image_url;
