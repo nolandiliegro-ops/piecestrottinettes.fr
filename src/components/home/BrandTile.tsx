@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import type { BrandWallItem, EntryStyle, TileSize, WatermarkPos } from "@/hooks/useBrandWall";
+import type {
+  BrandAxis,
+  BrandWallItem,
+  ChampionInfo,
+  EntryStyle,
+  TileSize,
+  WatermarkPos,
+} from "@/hooks/useBrandWall";
 
 const SAFE = "#4A7C59";
 
@@ -115,9 +122,21 @@ const usePrefersReducedMotion = () => {
 
 interface Props {
   brand: BrandWallItem;
+  axis?: BrandAxis | null;
+  champion?: ChampionInfo | null;
+  isNumberOne?: boolean;
+  isSponsored?: boolean;
+  forceBig?: boolean;
 }
 
-const BrandTile = ({ brand }: Props) => {
+const BrandTile = ({
+  brand,
+  axis = null,
+  champion = null,
+  isNumberOne = false,
+  isSponsored = false,
+  forceBig = false,
+}: Props) => {
   const isMobile = useIsMobile();
   const reduced = usePrefersReducedMotion();
   const [hover, setHover] = useState(false);
@@ -128,6 +147,10 @@ const BrandTile = ({ brand }: Props) => {
   const color = brand.signature_color || SAFE;
   const darkColor = useMemo(() => darkenHex(color, 0.82), [color]);
   const preset = PRESETS[brand.entry_style] ?? PRESETS["glide-right"];
+
+  const axisActive = axis !== null;
+  // In score mode: N1 stays big, everything else normal (no wide/tall/dense)
+  const effectiveSize: TileSize = forceBig ? "big" : axisActive ? "normal" : brand.tile_size;
 
   useEffect(() => {
     if (!isMobile || reduced) return;
@@ -148,7 +171,8 @@ const BrandTile = ({ brand }: Props) => {
     return () => io.disconnect();
   }, [isMobile, reduced]);
 
-  const active = reduced ? true : isMobile ? visible : hover;
+  // Score mode always reveals the champion showcase; hover still adds tilt/depth
+  const active = axisActive ? true : reduced ? true : isMobile ? visible : hover;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (isMobile || reduced) return;
@@ -162,26 +186,26 @@ const BrandTile = ({ brand }: Props) => {
     setTilt({ x: 0, y: 0 });
   };
 
-  const span = tileSpanStyle(brand.tile_size, isMobile);
+  const span = tileSpanStyle(effectiveSize, isMobile);
   const logoSize =
-    brand.tile_size === "big"
+    effectiveSize === "big"
       ? 92
-      : brand.tile_size === "wide" || brand.tile_size === "tall"
+      : effectiveSize === "wide" || effectiveSize === "tall"
         ? 66
         : 52;
   const scooterSize =
-    brand.tile_size === "big"
+    effectiveSize === "big"
       ? 260
-      : brand.tile_size === "wide"
+      : effectiveSize === "wide"
         ? 200
-        : brand.tile_size === "tall"
+        : effectiveSize === "tall"
           ? 170
           : 150;
 
   const nameSize =
-    brand.tile_size === "big"
+    effectiveSize === "big"
       ? "text-3xl md:text-4xl"
-      : brand.tile_size === "wide" || brand.tile_size === "tall"
+      : effectiveSize === "wide" || effectiveSize === "tall"
         ? "text-xl md:text-2xl"
         : "text-lg md:text-xl";
 
@@ -189,6 +213,12 @@ const BrandTile = ({ brand }: Props) => {
     ? `translate(${preset.to.x}px, ${preset.to.y}px) rotate(${preset.to.r}deg) translateZ(42px)`
     : `translate(${preset.from.x}px, ${preset.from.y}px) rotate(${preset.from.r}deg)`;
   const showcaseOpacity = active ? 0.96 : 0;
+
+  const axisLabel = axis === "autonomy" ? "Autonomie" : "Performance";
+  const axisIcon = axis === "autonomy" ? "🔋" : "⚡";
+  const displayImage = axisActive
+    ? champion?.image_url ?? brand.showcase_image_url
+    : brand.showcase_image_url;
 
   return (
     <Link
@@ -234,7 +264,7 @@ const BrandTile = ({ brand }: Props) => {
           }}
         />
 
-        <span aria-hidden style={watermarkStyle(brand.watermark_pos, brand.tile_size, hover)}>
+        <span aria-hidden style={watermarkStyle(brand.watermark_pos, effectiveSize, hover)}>
           {brand.name.charAt(0).toUpperCase()}
         </span>
       </div>
@@ -262,9 +292,9 @@ const BrandTile = ({ brand }: Props) => {
             filter: "drop-shadow(0 13px 21px rgba(0,0,0,0.5))",
           }}
         >
-          {brand.showcase_image_url ? (
+          {displayImage ? (
             <img
-              src={brand.showcase_image_url}
+              src={displayImage}
               alt=""
               loading="lazy"
               decoding="async"
@@ -276,7 +306,7 @@ const BrandTile = ({ brand }: Props) => {
         </div>
       </div>
 
-      {brand.is_star && (
+      {!axisActive && brand.is_star && (
         <span
           className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 uppercase"
           style={{
@@ -295,7 +325,7 @@ const BrandTile = ({ brand }: Props) => {
         </span>
       )}
 
-      {brand.youtube_video_id && (
+      {!axisActive && brand.youtube_video_id && (
         <span
           className="hidden sm:inline-flex absolute top-3 right-3 z-10 items-center gap-1"
           style={{
@@ -315,6 +345,45 @@ const BrandTile = ({ brand }: Props) => {
         </span>
       )}
 
+      {axisActive && isNumberOne && (
+        <span
+          className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 uppercase"
+          style={{
+            backgroundColor: "#FFB300",
+            color: "#1A1A1A",
+            padding: "4px 10px",
+            borderRadius: 999,
+            fontSize: 10,
+            letterSpacing: "0.14em",
+            fontWeight: 800,
+            fontFamily: "'Sora', sans-serif",
+            boxShadow: "0 4px 12px rgba(255,179,0,0.45)",
+          }}
+        >
+          N°1 {axisLabel}
+        </span>
+      )}
+
+      {axisActive && isSponsored && (
+        <span
+          className="absolute top-3 left-3 z-10 inline-flex items-center gap-1"
+          style={{
+            backgroundColor: "rgba(255,255,255,0.12)",
+            backdropFilter: "blur(8px)",
+            color: "#FFFFFF",
+            padding: "4px 10px",
+            borderRadius: 999,
+            fontSize: 10,
+            letterSpacing: "0.14em",
+            fontWeight: 700,
+            fontFamily: "'Sora', sans-serif",
+            border: "1px solid rgba(255,255,255,0.2)",
+          }}
+        >
+          Sponsorisé
+        </span>
+      )}
+
       <div
         className="relative z-10 h-full flex flex-col justify-between p-4 md:p-5"
         style={{ transform: "translateZ(30px)" }}
@@ -327,7 +396,7 @@ const BrandTile = ({ brand }: Props) => {
             padding: 8,
             transition: "box-shadow 300ms ease",
             boxShadow:
-              brand.tile_size === "big"
+              effectiveSize === "big"
                 ? hover
                   ? "0 0 0 6px rgba(255,255,255,0.18), 0 18px 40px -8px rgba(0,0,0,0.72)"
                   : "0 0 0 6px rgba(255,255,255,0.10), 0 14px 30px -8px rgba(0,0,0,0.6)"
@@ -371,17 +440,31 @@ const BrandTile = ({ brand }: Props) => {
           >
             {brand.name}
           </h3>
-          <p
-            className="mt-2 text-sm truncate"
-            style={{
-              fontFamily: "'Sora', sans-serif",
-              color: "rgba(255,255,255,0.75)",
-              fontWeight: 500,
-            }}
-          >
-            {brand.models_count} modèle{brand.models_count === 1 ? "" : "s"}
-            {brand.country ? ` · ${brand.country}` : ""}
-          </p>
+          {axisActive && champion ? (
+            <p
+              className="mt-2 text-sm truncate"
+              style={{
+                fontFamily: "'Sora', sans-serif",
+                color: "rgba(255,255,255,0.75)",
+                fontWeight: 500,
+              }}
+            >
+              {axisIcon} Champion : {champion.name}
+              {champion.score !== null ? ` · ${champion.score}` : ""}
+            </p>
+          ) : (
+            <p
+              className="mt-2 text-sm truncate"
+              style={{
+                fontFamily: "'Sora', sans-serif",
+                color: "rgba(255,255,255,0.75)",
+                fontWeight: 500,
+              }}
+            >
+              {brand.models_count} modèle{brand.models_count === 1 ? "" : "s"}
+              {brand.country ? ` · ${brand.country}` : ""}
+            </p>
+          )}
         </div>
       </div>
     </Link>

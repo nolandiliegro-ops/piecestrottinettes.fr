@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
-import { useBrandWall } from "@/hooks/useBrandWall";
+import { useBrandWall, type BrandAxis, type BrandWallItem } from "@/hooks/useBrandWall";
 import { useIsMobile } from "@/hooks/use-mobile";
 import BrandTile from "./BrandTile";
 
@@ -9,30 +9,62 @@ const normalize = (s: string) =>
   s
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/[̀-ͯ]/g, "");
+
+const CHIPS: { key: BrandAxis; label: string; icon: string }[] = [
+  { key: "performance", label: "Performance", icon: "⚡" },
+  { key: "autonomy", label: "Autonomie", icon: "🔋" },
+];
 
 interface Props {
   /** When true (home preview), cap to 12 tiles and show the "voir toutes" CTA. */
   limited?: boolean;
 }
 
+interface Row {
+  b: BrandWallItem;
+  isNumberOne: boolean;
+}
+
 const BrandWallSection = ({ limited = true }: Props) => {
   const { data, isLoading, error } = useBrandWall();
   const isMobile = useIsMobile();
   const [q, setQ] = useState("");
+  const [axis, setAxis] = useState<BrandAxis | null>(null);
 
-  const filtered = useMemo(() => {
+  const searched = useMemo(() => {
     const list = data ?? [];
     const nq = normalize(q.trim());
-    const matched = nq ? list.filter((b) => normalize(b.name).includes(nq)) : list;
-    return limited ? matched.slice(0, 12) : matched;
-  }, [data, q, limited]);
+    return nq ? list.filter((b) => normalize(b.name).includes(nq)) : list;
+  }, [data, q]);
+
+  // Inactive chip: current wall untouched. Active chip: sort by champion score,
+  // sponsored brands pinned on top (never mixed into the organic ranking).
+  const ordered: Row[] = useMemo(() => {
+    if (!axis) {
+      const base = limited ? searched.slice(0, 12) : searched;
+      return base.map((b) => ({ b, isNumberOne: false }));
+    }
+    const rows = searched.map((b) => ({ b, score: b.champions[axis]?.score ?? null }));
+    const cmp = (a: (typeof rows)[number], c: (typeof rows)[number]) => {
+      const sa = a.score ?? -1;
+      const sc = c.score ?? -1;
+      if (sc !== sa) return sc - sa;
+      return a.b.name.localeCompare(c.b.name);
+    };
+    const sponsored = rows.filter((r) => r.b.sponsored).sort(cmp);
+    const organic = rows.filter((r) => !r.b.sponsored).sort(cmp);
+    const merged = [...sponsored, ...organic];
+    const capped = limited ? merged.slice(0, 12) : merged;
+    const n1Id = organic.find((r) => r.score !== null)?.b.id ?? null;
+    return capped.map((r) => ({ b: r.b, isNumberOne: r.b.id === n1Id }));
+  }, [searched, axis, limited]);
 
   const gridStyle: React.CSSProperties = {
     gridTemplateColumns: isMobile ? "repeat(2,1fr)" : "repeat(4,1fr)",
     gridAutoRows: isMobile ? "140px" : "150px",
     gap: 13,
-    gridAutoFlow: "dense",
+    gridAutoFlow: axis ? "row" : "dense",
     perspective: "1300px",
   };
 
@@ -93,6 +125,31 @@ const BrandWallSection = ({ limited = true }: Props) => {
           </div>
         </div>
 
+        <div className="mb-6 md:mb-8 flex items-center justify-center gap-2">
+          {CHIPS.map((c) => {
+            const on = axis === c.key;
+            return (
+              <button
+                key={c.key}
+                type="button"
+                onClick={() => setAxis(on ? null : c.key)}
+                aria-pressed={on}
+                className="inline-flex items-center gap-2 h-11 px-5 rounded-full border font-semibold transition-colors"
+                style={{
+                  backgroundColor: on ? "#4A7C59" : "#FFFFFF",
+                  color: on ? "#FFFFFF" : "#1A1A1A",
+                  borderColor: on ? "#4A7C59" : "rgba(26,26,26,0.12)",
+                  fontFamily: "'Sora', sans-serif",
+                  fontSize: 15,
+                }}
+              >
+                <span aria-hidden>{c.icon}</span>
+                {c.label}
+              </button>
+            );
+          })}
+        </div>
+
         {isLoading ? (
           <div className="grid animate-pulse" style={gridStyle}>
             {Array.from({ length: 8 }).map((_, i) => (
@@ -103,7 +160,7 @@ const BrandWallSection = ({ limited = true }: Props) => {
           <p className="text-center text-sm" style={{ color: "#B91C1C" }}>
             Impossible de charger les marques.
           </p>
-        ) : filtered.length === 0 ? (
+        ) : ordered.length === 0 ? (
           <p
             className="text-center text-sm"
             style={{ color: "#6B7280", fontFamily: "'Sora',sans-serif" }}
@@ -112,8 +169,16 @@ const BrandWallSection = ({ limited = true }: Props) => {
           </p>
         ) : (
           <div className="grid" style={gridStyle}>
-            {filtered.map((b) => (
-              <BrandTile key={b.id} brand={b} />
+            {ordered.map(({ b, isNumberOne }) => (
+              <BrandTile
+                key={b.id}
+                brand={b}
+                axis={axis}
+                champion={axis ? b.champions[axis] : null}
+                isNumberOne={isNumberOne}
+                isSponsored={!!axis && b.sponsored}
+                forceBig={isNumberOne}
+              />
             ))}
           </div>
         )}

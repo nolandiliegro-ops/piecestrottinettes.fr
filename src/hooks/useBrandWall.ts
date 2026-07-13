@@ -13,6 +13,15 @@ export type EntryStyle =
   | "diag-br"
   | "diag-bl";
 
+export type BrandAxis = "performance" | "autonomy";
+
+export interface ChampionInfo {
+  model_id: string;
+  name: string;
+  image_url: string | null;
+  score: number | null;
+}
+
 export interface BrandWallItem {
   id: string;
   name: string;
@@ -29,10 +38,86 @@ export interface BrandWallItem {
   youtube_video_id: string | null;
   models_count: number;
   showcase_image_url: string | null;
+  sponsored: boolean;
+  champions: {
+    performance: ChampionInfo | null;
+    autonomy: ChampionInfo | null;
+  };
 }
 
 const BRAND_COLS =
-  "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id";
+  "id, name, slug, logo_url, country, display_order, signature_color, tile_size, watermark_pos, is_star, entry_style, showcase_model_id, youtube_video_id, sponsored";
+
+const MODEL_COLS =
+  "id, brand_id, name, slug, image_url, images, score_performance, score_autonomy, score_perf_adj, score_auto_adj";
+
+interface RawModel {
+  id: string;
+  brand_id: string | null;
+  name: string;
+  slug: string;
+  image_url: string | null;
+  images: unknown;
+  score_performance: number | null;
+  score_autonomy: number | null;
+  score_perf_adj: number | null;
+  score_auto_adj: number | null;
+}
+
+// Final score = clamp(base + offset, 0, 100); null base means "not scored on this axis"
+const finalScore = (
+  base: number | null | undefined,
+  offset: number | null | undefined
+): number | null => {
+  if (base === null || base === undefined) return null;
+  return Math.min(100, Math.max(0, base + (offset ?? 0)));
+};
+
+// A model is eligible as champion only if it has a resolvable photo
+const modelPhoto = (m: RawModel): string | null =>
+  getPrimaryImage(m.images, m.image_url, "") || null;
+
+const AXIS_FIELDS: Record<
+  BrandAxis,
+  { base: "score_performance" | "score_autonomy"; adj: "score_perf_adj" | "score_auto_adj" }
+> = {
+  performance: { base: "score_performance", adj: "score_perf_adj" },
+  autonomy: { base: "score_autonomy", adj: "score_auto_adj" },
+};
+
+// Champion = brand model with the highest final score that HAS a photo.
+// Fallback to the showcase model when no scored-with-photo candidate exists.
+const pickChampion = (
+  brandModels: RawModel[],
+  axis: BrandAxis,
+  showcaseId: string | null,
+  byId: Map<string, RawModel>
+): ChampionInfo | null => {
+  const { base, adj } = AXIS_FIELDS[axis];
+
+  const scored = brandModels
+    .filter((m) => modelPhoto(m))
+    .map((m) => ({ m, score: finalScore(m[base], m[adj]) }))
+    .filter((x): x is { m: RawModel; score: number } => x.score !== null);
+
+  if (scored.length > 0) {
+    scored.sort((a, b) => b.score - a.score || a.m.name.localeCompare(b.m.name));
+    const top = scored[0];
+    return { model_id: top.m.id, name: top.m.name, image_url: modelPhoto(top.m), score: top.score };
+  }
+
+  if (showcaseId && byId.has(showcaseId)) {
+    const sm = byId.get(showcaseId)!;
+    return {
+      model_id: sm.id,
+      name: sm.name,
+      image_url: modelPhoto(sm),
+      score: finalScore(sm[base], sm[adj]),
+    };
+  }
+
+  return null;
+};
 
 export const useBrandWall = () =>
   useQuery({
@@ -46,24 +131,30 @@ export const useBrandWall = () =>
 
       const { data: models, error: mErr } = await supabase
         .from("scooter_models")
-        .select("id, brand_id, image_url, images")
+        .select(MODEL_COLS)
         .eq("published", true);
       if (mErr) throw mErr;
 
       const counts = new Map<string, number>();
-      const byId = new Map<string, { image_url: string | null; images: unknown }>();
-      (models ?? []).forEach((m: any) => {
-        if (m.brand_id) counts.set(m.brand_id, (counts.get(m.brand_id) ?? 0) + 1);
-        byId.set(m.id, { image_url: m.image_url, images: m.images });
+      const byId = new Map<string, RawModel>();
+      const byBrand = new Map<string, RawModel[]>();
+      (models ?? []).forEach((raw: any) => {
+        const m = raw as RawModel;
+        byId.set(m.id, m);
+        if (m.brand_id) {
+          counts.set(m.brand_id, (counts.get(m.brand_id) ?? 0) + 1);
+          const arr = byBrand.get(m.brand_id) ?? [];
+          arr.push(m);
+          byBrand.set(m.brand_id, arr);
+        }
       });
 
       const items: BrandWallItem[] = (brands ?? []).map((b: any) => {
         let showcase: string | null = null;
         if (b.showcase_model_id && byId.has(b.showcase_model_id)) {
-          const m = byId.get(b.showcase_model_id)!;
-          const url = getPrimaryImage(m.images, m.image_url, "");
-          showcase = url || null;
+          showcase = modelPhoto(byId.get(b.showcase_model_id)!);
         }
+        const brandModels = byBrand.get(b.id) ?? [];
         return {
           id: b.id,
           name: b.name,
@@ -80,6 +171,11 @@ export const useBrandWall = () =>
           youtube_video_id: b.youtube_video_id,
           models_count: counts.get(b.id) ?? 0,
           showcase_image_url: showcase,
+          sponsored: !!b.sponsored,
+          champions: {
+            performance: pickChampion(brandModels, "performance", b.showcase_model_id, byId),
+            autonomy: pickChampion(brandModels, "autonomy", b.showcase_model_id, byId),
+          },
         };
       });
 
