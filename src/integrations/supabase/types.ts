@@ -151,6 +151,75 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_categories_20260704: {
+        Row: {
+          accent_label: string | null
+          alt_text: string | null
+          color: string | null
+          created_at: string | null
+          description: string | null
+          display_order: number | null
+          display_order_home: number | null
+          icon: string | null
+          id: string | null
+          image_url: string | null
+          lucide_icon: string | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          neon_color: string | null
+          parent_id: string | null
+          product_count: number | null
+          seo_name: string | null
+          show_on_home: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          accent_label?: string | null
+          alt_text?: string | null
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          display_order_home?: number | null
+          icon?: string | null
+          id?: string | null
+          image_url?: string | null
+          lucide_icon?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          neon_color?: string | null
+          parent_id?: string | null
+          product_count?: number | null
+          seo_name?: string | null
+          show_on_home?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          accent_label?: string | null
+          alt_text?: string | null
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          display_order_home?: number | null
+          icon?: string | null
+          id?: string | null
+          image_url?: string | null
+          lucide_icon?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          neon_color?: string | null
+          parent_id?: string | null
+          product_count?: number | null
+          seo_name?: string | null
+          show_on_home?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       backup_category_images_20260602: {
         Row: {
           alt_text: string | null
@@ -257,6 +326,36 @@ export type Database = {
         Relationships: []
       }
       backup_part_compat_20260627: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      backup_part_compatibility_chdupes_20260704: {
         Row: {
           auto_suggested: boolean | null
           confidence_level: string | null
@@ -649,6 +748,48 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_scooter_battery_configs_20260703_variantes: {
+        Row: {
+          amperage: number | null
+          capacity_ah: number | null
+          connector_type: string | null
+          created_at: string | null
+          energy_wh: number | null
+          id: string | null
+          is_default: boolean | null
+          label: string | null
+          scooter_model_id: string | null
+          updated_at: string | null
+          voltage: number | null
+        }
+        Insert: {
+          amperage?: number | null
+          capacity_ah?: number | null
+          connector_type?: string | null
+          created_at?: string | null
+          energy_wh?: number | null
+          id?: string | null
+          is_default?: boolean | null
+          label?: string | null
+          scooter_model_id?: string | null
+          updated_at?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          amperage?: number | null
+          capacity_ah?: number | null
+          connector_type?: string | null
+          created_at?: string | null
+          energy_wh?: number | null
+          id?: string | null
+          is_default?: boolean | null
+          label?: string | null
+          scooter_model_id?: string | null
+          updated_at?: string | null
+          voltage?: number | null
+        }
+        Relationships: []
+      }
       backup_scooter_doublons_20260627: {
         Row: {
           affiliate_link: string | null
@@ -781,21 +922,28 @@ export type Database = {
           display_order: number
           editorial_summary: string | null
           editorial_verdict: string | null
+          entry_style: string | null
           faq: Json | null
           founded_year: number | null
           gallery: Json | null
           hero_image_url: string | null
           id: string
+          is_star: boolean
           last_verified_at: string | null
           logo_url: string | null
           name: string
           pros: Json | null
           published: boolean
           related_brand_slugs: Json | null
+          showcase_model_id: string | null
+          signature_color: string | null
           slug: string
           sources: Json | null
+          sponsored: boolean
           tagline: string | null
+          tile_size: string | null
           videos: Json | null
+          watermark_pos: string | null
           website_url: string | null
           youtube_video_id: string | null
         }
@@ -810,21 +958,28 @@ export type Database = {
           display_order?: number
           editorial_summary?: string | null
           editorial_verdict?: string | null
+          entry_style?: string | null
           faq?: Json | null
           founded_year?: number | null
           gallery?: Json | null
           hero_image_url?: string | null
           id?: string
+          is_star?: boolean
           last_verified_at?: string | null
           logo_url?: string | null
           name: string
           pros?: Json | null
           published?: boolean
           related_brand_slugs?: Json | null
+          showcase_model_id?: string | null
+          signature_color?: string | null
           slug: string
           sources?: Json | null
+          sponsored?: boolean
           tagline?: string | null
+          tile_size?: string | null
           videos?: Json | null
+          watermark_pos?: string | null
           website_url?: string | null
           youtube_video_id?: string | null
         }
@@ -839,25 +994,40 @@ export type Database = {
           display_order?: number
           editorial_summary?: string | null
           editorial_verdict?: string | null
+          entry_style?: string | null
           faq?: Json | null
           founded_year?: number | null
           gallery?: Json | null
           hero_image_url?: string | null
           id?: string
+          is_star?: boolean
           last_verified_at?: string | null
           logo_url?: string | null
           name?: string
           pros?: Json | null
           published?: boolean
           related_brand_slugs?: Json | null
+          showcase_model_id?: string | null
+          signature_color?: string | null
           slug?: string
           sources?: Json | null
+          sponsored?: boolean
           tagline?: string | null
+          tile_size?: string | null
           videos?: Json | null
+          watermark_pos?: string | null
           website_url?: string | null
           youtube_video_id?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "brands_showcase_model_id_fkey"
+            columns: ["showcase_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       categories: {
         Row: {
@@ -881,6 +1051,7 @@ export type Database = {
           seo_name: string | null
           show_on_home: boolean
           slug: string
+          spec_type: string
         }
         Insert: {
           accent_label?: string | null
@@ -903,6 +1074,7 @@ export type Database = {
           seo_name?: string | null
           show_on_home?: boolean
           slug: string
+          spec_type?: string
         }
         Update: {
           accent_label?: string | null
@@ -925,6 +1097,7 @@ export type Database = {
           seo_name?: string | null
           show_on_home?: boolean
           slug?: string
+          spec_type?: string
         }
         Relationships: [
           {
