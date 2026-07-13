@@ -33,6 +33,7 @@ const BrandWallSection = ({ limited = true }: Props) => {
     gridAutoRows: isMobile ? "140px" : "150px",
     gap: 13,
     gridAutoFlow: "dense",
+    perspective: "1300px",
   };
 
   return (

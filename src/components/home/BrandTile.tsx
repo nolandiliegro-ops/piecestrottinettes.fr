@@ -26,33 +26,43 @@ const tileSpanStyle = (size: TileSize, isMobile: boolean): React.CSSProperties =
   return {};
 };
 
-const watermarkStyle = (pos: WatermarkPos, size: TileSize): React.CSSProperties => {
-  const fontSize =
-    size === "big" ? "260px" : size === "wide" || size === "tall" ? "190px" : "140px";
+const watermarkStyle = (
+  pos: WatermarkPos,
+  size: TileSize,
+  hover: boolean
+): React.CSSProperties => {
+  const big = size === "big";
   const base: React.CSSProperties = {
     position: "absolute",
     fontFamily: "'Unbounded', sans-serif",
     fontWeight: 900,
-    color: "rgba(255,255,255,0.10)",
+    color: hover ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.10)",
     lineHeight: 0.8,
     pointerEvents: "none",
     userSelect: "none",
-    fontSize,
     letterSpacing: "-0.05em",
     textTransform: "uppercase",
+    transition: "color 400ms ease",
+    transform: "translateZ(6px)",
   };
   switch (pos) {
     case "tl":
-      return { ...base, top: "-30px", left: "-10px" };
+      return { ...base, left: "-10px", top: "-18px", fontSize: big ? "240px" : "100px" };
     case "bl":
-      return { ...base, bottom: "-60px", left: "-10px" };
+      return { ...base, left: "-16px", bottom: "-34px", fontSize: big ? "240px" : "130px" };
     case "cc":
-      return { ...base, top: "50%", left: "50%", transform: "translate(-50%, -50%)" };
+      return {
+        ...base,
+        right: "8%",
+        top: "50%",
+        transform: "translateY(-50%) translateZ(6px)",
+        fontSize: big ? "240px" : "160px",
+      };
     case "br-big":
-      return { ...base, bottom: "-90px", right: "-30px", fontSize: "340px" };
+      return { ...base, right: "-24px", bottom: "-46px", fontSize: big ? "240px" : "210px" };
     case "tr":
     default:
-      return { ...base, top: "-30px", right: "-10px" };
+      return { ...base, right: "-14px", top: "-22px", fontSize: big ? "240px" : "120px" };
   }
 };
 
@@ -176,7 +186,7 @@ const BrandTile = ({ brand }: Props) => {
         : "text-lg md:text-xl";
 
   const showcaseTransform = active
-    ? `translate(${preset.to.x}px, ${preset.to.y}px) rotate(${preset.to.r}deg)`
+    ? `translate(${preset.to.x}px, ${preset.to.y}px) rotate(${preset.to.r}deg) translateZ(42px)`
     : `translate(${preset.from.x}px, ${preset.from.y}px) rotate(${preset.from.r}deg)`;
   const showcaseOpacity = active ? 0.96 : 0;
 
@@ -188,36 +198,55 @@ const BrandTile = ({ brand }: Props) => {
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
       aria-label={`Découvrir ${brand.name}`}
-      className="relative block overflow-hidden rounded-2xl group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+      className="relative block group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
       style={{
         ...span,
         background: `linear-gradient(155deg, ${color} 0%, ${darkColor} 100%)`,
+        borderRadius: 18,
         transformStyle: "preserve-3d",
         transform:
           reduced || isMobile
             ? undefined
-            : `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-        transition: "transform 300ms cubic-bezier(.28,1.4,.5,1), box-shadow 300ms ease",
+            : `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+        transition: "transform 140ms ease, box-shadow 300ms ease",
         boxShadow: hover
           ? `0 24px 60px ${color}55, 0 8px 20px rgba(0,0,0,0.25)`
           : "0 8px 20px rgba(0,0,0,0.18)",
+        zIndex: hover ? 30 : 1,
         minHeight: 140,
       }}
     >
       <div
         aria-hidden
-        className="absolute -top-16 -right-14 w-64 h-64 rounded-full pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
+        style={{ borderRadius: 18, overflow: "hidden" }}
+      >
+        <div
+          aria-hidden
+          className="absolute -top-16 -right-14 rounded-full"
+          style={{
+            width: 230,
+            height: 230,
+            background: color,
+            filter: "blur(55px)",
+            opacity: active ? 0.62 : 0,
+            transition: "opacity 400ms ease",
+          }}
+        />
+
+        <span aria-hidden style={watermarkStyle(brand.watermark_pos, brand.tile_size, hover)}>
+          {brand.name.charAt(0).toUpperCase()}
+        </span>
+      </div>
+
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background: color,
-          filter: "blur(60px)",
-          opacity: active ? 0.62 : 0,
-          transition: "opacity 400ms ease",
+          borderRadius: 18,
+          boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.06)",
         }}
       />
-
-      <span aria-hidden style={watermarkStyle(brand.watermark_pos, brand.tile_size)}>
-        {brand.name.charAt(0).toUpperCase()}
-      </span>
 
       <div
         aria-hidden
@@ -230,7 +259,7 @@ const BrandTile = ({ brand }: Props) => {
             transition: reduced
               ? "none"
               : `transform ${preset.duration}ms cubic-bezier(.28,1.4,.5,1), opacity ${preset.duration}ms ease`,
-            filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.35))",
+            filter: "drop-shadow(0 13px 21px rgba(0,0,0,0.5))",
           }}
         >
           {brand.showcase_image_url ? (
@@ -286,16 +315,22 @@ const BrandTile = ({ brand }: Props) => {
         </span>
       )}
 
-      <div className="relative z-10 h-full flex flex-col justify-between p-4 md:p-5">
+      <div
+        className="relative z-10 h-full flex flex-col justify-between p-4 md:p-5"
+        style={{ transform: "translateZ(30px)" }}
+      >
         <div
           className="flex items-center justify-center bg-white rounded-2xl overflow-hidden"
           style={{
             width: logoSize,
             height: logoSize,
             padding: 8,
+            transition: "box-shadow 300ms ease",
             boxShadow:
               brand.tile_size === "big"
-                ? "0 0 40px rgba(255,255,255,0.35), 0 6px 16px rgba(0,0,0,0.25)"
+                ? hover
+                  ? "0 0 0 6px rgba(255,255,255,0.18), 0 18px 40px -8px rgba(0,0,0,0.72)"
+                  : "0 0 0 6px rgba(255,255,255,0.10), 0 14px 30px -8px rgba(0,0,0,0.6)"
                 : "0 6px 16px rgba(0,0,0,0.25)",
           }}
         >
