@@ -151,6 +151,11 @@ const brandVerdict = (axis: BrandAxis, score: number | null): string | null => {
   return scale?.find((s) => score >= s.min)?.label ?? null;
 };
 
+// Session-only reveal memory (module scope): a tile stays "revealed" across unmount/
+// remount (e.g. axis filtering) without any parent re-render, and resets on full reload
+// (no persistence -> replayable). Keyed by brand id.
+const REVEALED = new Set<string>();
+
 interface Props {
   brand: BrandWallItem;
   axis?: BrandAxis | null;
@@ -171,7 +176,7 @@ const BrandTile = ({
   const isMobile = useIsMobile();
   const reduced = usePrefersReducedMotion();
   const [hover, setHover] = useState(false);
-  const [visible, setVisible] = useState(false);
+  const [revealed, setRevealed] = useState(() => REVEALED.has(brand.id));
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const wrapRef = useRef<HTMLAnchorElement>(null);
 
@@ -191,7 +196,8 @@ const BrandTile = ({
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            setVisible(true);
+            REVEALED.add(brand.id);
+            setRevealed(true);
             io.disconnect();
           }
         });
@@ -200,10 +206,11 @@ const BrandTile = ({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [isMobile, reduced]);
+  }, [isMobile, reduced, brand.id]);
 
-  // Score mode always reveals the champion showcase; hover still adds tilt/depth
-  const active = axisActive ? true : reduced ? true : isMobile ? visible : hover;
+  // Score mode always reveals the champion showcase; hover still adds tilt/depth.
+  // Default view: once revealed (desktop first hover OR mobile scroll-in) it STAYS.
+  const active = axisActive ? true : reduced ? true : revealed;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (isMobile || reduced) return;
@@ -268,7 +275,12 @@ const BrandTile = ({
     <Link
       ref={wrapRef}
       to={`/marque/${brand.slug}`}
-      onMouseEnter={() => !isMobile && !reduced && setHover(true)}
+      onMouseEnter={() => {
+        if (isMobile || reduced) return;
+        setHover(true);
+        REVEALED.add(brand.id);
+        setRevealed(true);
+      }}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
       aria-label={`Découvrir ${brand.name}`}
