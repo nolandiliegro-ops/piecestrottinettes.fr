@@ -935,6 +935,9 @@ export type Database = {
           pros: Json | null
           published: boolean
           related_brand_slugs: Json | null
+          score_budget: number | null
+          score_comfort: number | null
+          score_lightweight: number | null
           showcase_model_id: string | null
           signature_color: string | null
           slug: string
@@ -971,6 +974,9 @@ export type Database = {
           pros?: Json | null
           published?: boolean
           related_brand_slugs?: Json | null
+          score_budget?: number | null
+          score_comfort?: number | null
+          score_lightweight?: number | null
           showcase_model_id?: string | null
           signature_color?: string | null
           slug: string
@@ -1007,6 +1013,9 @@ export type Database = {
           pros?: Json | null
           published?: boolean
           related_brand_slugs?: Json | null
+          score_budget?: number | null
+          score_comfort?: number | null
+          score_lightweight?: number | null
           showcase_model_id?: string | null
           signature_color?: string | null
           slug?: string
@@ -2038,87 +2047,135 @@ export type Database = {
         Row: {
           affiliate_link: string | null
           amperage: number | null
+          brake_type: string | null
           brand_id: string
           compatible_parts_count: number | null
           created_at: string
           description: string | null
+          foldable: boolean | null
           id: string
           image_url: string | null
           images: Json
+          ip_rating: string | null
           is_featured_home: boolean
           is_top_moment: boolean
+          max_load_kg: number | null
           max_speed_kmh: number | null
           max_speed_private_kmh: number | null
           meta_description: string | null
           meta_title: string | null
           name: string
           power_watts: number | null
+          price_checked_at: string | null
           price_eur: number | null
+          price_source: string | null
           published: boolean
           range_km: number | null
+          score_auto_adj: number
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_offroad_adj: number
+          score_perf_adj: number
+          score_performance: number | null
           search_terms: string | null
           slug: string
+          suspension: string | null
           technical_signature: Json | null
           tire_size: string | null
           voltage: number | null
+          weight_kg: number | null
+          wheel_inches: number | null
+          wheel_size_inches: number | null
           year: number | null
           youtube_video_id: string | null
         }
         Insert: {
           affiliate_link?: string | null
           amperage?: number | null
+          brake_type?: string | null
           brand_id: string
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
+          foldable?: boolean | null
           id?: string
           image_url?: string | null
           images?: Json
+          ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
+          max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
           name: string
           power_watts?: number | null
+          price_checked_at?: string | null
           price_eur?: number | null
+          price_source?: string | null
           published?: boolean
           range_km?: number | null
+          score_auto_adj?: number
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number
+          score_perf_adj?: number
+          score_performance?: number | null
           search_terms?: string | null
           slug: string
+          suspension?: string | null
           technical_signature?: Json | null
           tire_size?: string | null
           voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
           year?: number | null
           youtube_video_id?: string | null
         }
         Update: {
           affiliate_link?: string | null
           amperage?: number | null
+          brake_type?: string | null
           brand_id?: string
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
+          foldable?: boolean | null
           id?: string
           image_url?: string | null
           images?: Json
+          ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
+          max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
           meta_description?: string | null
           meta_title?: string | null
           name?: string
           power_watts?: number | null
+          price_checked_at?: string | null
           price_eur?: number | null
+          price_source?: string | null
           published?: boolean
           range_km?: number | null
+          score_auto_adj?: number
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number
+          score_perf_adj?: number
+          score_performance?: number | null
           search_terms?: string | null
           slug?: string
+          suspension?: string | null
           technical_signature?: Json | null
           tire_size?: string | null
           voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
           year?: number | null
           youtube_video_id?: string | null
         }
