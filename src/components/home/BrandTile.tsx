@@ -121,6 +121,36 @@ const usePrefersReducedMotion = () => {
   return reduced;
 };
 
+// Public qualitative verdict for the 3 brand-level editorial axes (score 0-100).
+// Thresholds ordered high -> low; first matching floor wins. Raw score stays internal.
+const BRAND_VERDICT: Partial<Record<BrandAxis, { min: number; label: string }[]>> = {
+  budget: [
+    { min: 80, label: "imbattable" },
+    { min: 60, label: "très abordable" },
+    { min: 40, label: "abordable" },
+    { min: 0, label: "correct" },
+  ],
+  comfort: [
+    { min: 80, label: "exceptionnel" },
+    { min: 60, label: "très confortable" },
+    { min: 40, label: "confortable" },
+    { min: 0, label: "correct" },
+  ],
+  lightweight: [
+    { min: 80, label: "ultra léger" },
+    { min: 60, label: "léger" },
+    { min: 40, label: "plutôt léger" },
+    { min: 0, label: "correct" },
+  ],
+};
+
+// null score (not rated) -> null => render nothing. Unknown axis -> null.
+const brandVerdict = (axis: BrandAxis, score: number | null): string | null => {
+  if (score === null) return null;
+  const scale = BRAND_VERDICT[axis];
+  return scale?.find((s) => score >= s.min)?.label ?? null;
+};
+
 interface Props {
   brand: BrandWallItem;
   axis?: BrandAxis | null;
@@ -217,6 +247,19 @@ const BrandTile = ({
 
   const axisLabel = axis ? AXIS_UI[axis].label : "";
   const axisIcon = axis ? AXIS_UI[axis].icon : "";
+  // Axis-mode meta text. Brand-level -> "Notre avis : {verdict}" (null when unrated);
+  // model-level -> champion line, unchanged.
+  let axisMetaText: string | null = null;
+  if (axisActive && champion && axis) {
+    if (isBrandLevelAxis(axis)) {
+      const verdict = brandVerdict(axis, champion.score);
+      axisMetaText = verdict ? `Notre avis : ${verdict}` : null;
+    } else {
+      axisMetaText = `${axisIcon} Champion : ${champion.name}${
+        champion.score !== null ? ` · ${champion.score}` : ""
+      }`;
+    }
+  }
   const displayImage = axisActive
     ? champion?.image_url ?? brand.showcase_image_url
     : brand.showcase_image_url;
@@ -307,48 +350,54 @@ const BrandTile = ({
         </div>
       </div>
 
-      {!axisActive && brand.is_star && (
-        <span
-          className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 uppercase"
-          style={{
-            backgroundColor: "#FFB300",
-            color: "#1A1A1A",
-            padding: "4px 10px",
-            borderRadius: 999,
-            fontSize: 10,
-            letterSpacing: "0.14em",
-            fontWeight: 800,
-            fontFamily: "'Sora', sans-serif",
-            boxShadow: "0 4px 12px rgba(255,179,0,0.45)",
-          }}
+      {!axisActive && (brand.is_star || brand.youtube_video_id) && (
+        <div
+          className="absolute top-3 right-3 z-10 flex items-center gap-2"
+          style={{ transform: "translateZ(40px)" }}
         >
-          ★ Star
-        </span>
-      )}
-
-      {!axisActive && brand.youtube_video_id && (
-        <span
-          className="hidden sm:inline-flex absolute top-3 right-3 z-10 items-center gap-1"
-          style={{
-            backgroundColor: "rgba(255,255,255,0.12)",
-            backdropFilter: "blur(8px)",
-            color: "#FFFFFF",
-            padding: "4px 10px",
-            borderRadius: 999,
-            fontSize: 10,
-            letterSpacing: "0.14em",
-            fontWeight: 700,
-            fontFamily: "'Sora', sans-serif",
-            border: "1px solid rgba(255,255,255,0.2)",
-          }}
-        >
-          ◉ Vidéo
-        </span>
+          {brand.is_star && (
+            <span
+              className="inline-flex items-center gap-1 uppercase"
+              style={{
+                backgroundColor: "#FFB300",
+                color: "#1A1A1A",
+                padding: "4px 10px",
+                borderRadius: 999,
+                fontSize: 10,
+                letterSpacing: "0.14em",
+                fontWeight: 800,
+                fontFamily: "'Sora', sans-serif",
+                boxShadow: "0 4px 12px rgba(255,179,0,0.45)",
+              }}
+            >
+              ★ Star
+            </span>
+          )}
+          {brand.youtube_video_id && (
+            <span
+              className="hidden sm:inline-flex items-center gap-1"
+              style={{
+                backgroundColor: "rgba(255,255,255,0.12)",
+                backdropFilter: "blur(8px)",
+                color: "#FFFFFF",
+                padding: "4px 10px",
+                borderRadius: 999,
+                fontSize: 10,
+                letterSpacing: "0.14em",
+                fontWeight: 700,
+                fontFamily: "'Sora', sans-serif",
+                border: "1px solid rgba(255,255,255,0.2)",
+              }}
+            >
+              ◉ Vidéo
+            </span>
+          )}
+        </div>
       )}
 
       {axisActive && isNumberOne && (
         <span
-          className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 uppercase"
+          className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 uppercase"
           style={{
             backgroundColor: "#FFB300",
             color: "#1A1A1A",
@@ -359,6 +408,7 @@ const BrandTile = ({
             fontWeight: 800,
             fontFamily: "'Sora', sans-serif",
             boxShadow: "0 4px 12px rgba(255,179,0,0.45)",
+            transform: "translateZ(40px)",
           }}
         >
           N°1 {axisLabel}
@@ -442,20 +492,18 @@ const BrandTile = ({
             {brand.name}
           </h3>
           {axisActive && champion ? (
-            <p
-              className="mt-2 text-sm truncate"
-              style={{
-                fontFamily: "'Sora', sans-serif",
-                color: "rgba(255,255,255,0.75)",
-                fontWeight: 500,
-              }}
-            >
-              {axis && isBrandLevelAxis(axis)
-                ? `${axisLabel}${champion.score !== null ? ` : ${champion.score}` : ""}`
-                : `${axisIcon} Champion : ${champion.name}${
-                    champion.score !== null ? ` · ${champion.score}` : ""
-                  }`}
-            </p>
+            axisMetaText && (
+              <p
+                className="mt-2 text-sm truncate"
+                style={{
+                  fontFamily: "'Sora', sans-serif",
+                  color: "rgba(255,255,255,0.75)",
+                  fontWeight: 500,
+                }}
+              >
+                {axisMetaText}
+              </p>
+            )
           ) : (
             <p
               className="mt-2 text-sm truncate"
