@@ -44,6 +44,7 @@ const ExpertStudio = lazy(() => import("./pages/ExpertStudio"));
 const CGV = lazy(() => import("./pages/CGV"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 const Contact = lazy(() => import("./pages/Contact"));
+const OAuthConsent = lazy(() => import("./pages/OAuthConsent"));
 
 const queryClient = new QueryClient();
 
@@ -121,6 +122,7 @@ function App() {
             <Route path="/cgv" element={<CGV />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
