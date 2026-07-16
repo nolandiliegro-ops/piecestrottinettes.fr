@@ -229,9 +229,10 @@ Deno.serve(async (req) => {
           alt: `${altBase} - vue ${idx + 1}`,
         }));
 
+        const primaryUrl = (finalImages.find(im => im.is_primary) ?? finalImages[0])?.url ?? null;
         const { error: dbErr } = await supabase
           .from(table)
-          .update({ images: finalImages })
+          .update({ images: finalImages, image_url: primaryUrl })
           .eq('id', entity_id);
         if (dbErr) {
           log('db', `update failed: ${dbErr.message}`);
@@ -365,9 +366,10 @@ Deno.serve(async (req) => {
     // To append instead of replace, fetch current images first and merge.
     // Cleanup of orphaned storage files is out of scope for this function.
     if (result.length > 0) {
+      const primaryUrl = (result.find(im => im.is_primary) ?? result[0])?.url ?? null;
       const { error: dbErr } = await supabase
         .from(table)
-        .update({ images: result })
+        .update({ images: result, image_url: primaryUrl })
         .eq('id', entity_id);
       if (dbErr) {
         log('db', `update failed: ${dbErr.message}`);
