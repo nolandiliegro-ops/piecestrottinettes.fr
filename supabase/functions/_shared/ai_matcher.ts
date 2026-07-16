@@ -376,7 +376,7 @@ export async function suggestCompatibilitiesAI(
   // 1. Fetch scooters publiés avec leurs specs
   const { data: rawScooters, error: scootersErr } = await supabase
     .from("scooter_models")
-    .select("id, name, tire_size, voltage, power_watts, range_km, brand:brands(name)")
+    .select("id, name, tire_size, voltage, power_watts, range_km, brand:brands!scooter_models_brand_id_fkey(name)")
     .eq("published", true);
 
   if (scootersErr || !rawScooters) {

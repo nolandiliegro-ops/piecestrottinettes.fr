@@ -18,7 +18,7 @@ async function getKnownConfusions(supabase: any): Promise<string> {
   try {
     const { data } = await supabase
       .from("scan_validations")
-      .select("ai_brand, ai_model, corrected_model_id, scooter_models!scan_validations_corrected_model_id_fkey(name, brands(name))")
+      .select("ai_brand, ai_model, corrected_model_id, scooter_models!scan_validations_corrected_model_id_fkey(name, brands!scooter_models_brand_id_fkey(name))")
       .eq("is_validated", false)
       .not("corrected_model_id", "is", null)
       .order("created_at", { ascending: false })
@@ -160,7 +160,7 @@ Réponds UNIQUEMENT avec le JSON, rien d'autre.${confusionsBlock}`;
       // Fallback to ILIKE
       const { data: ilikeResults } = await supabase
         .from("scooter_models")
-        .select("id, name, slug, brand:brands(name)")
+        .select("id, name, slug, brand:brands!scooter_models_brand_id_fkey(name)")
         .eq("published", true)
         .or(`name.ilike.%${aiModel}%,search_terms.ilike.%${aiModel}%`)
         .limit(1);
