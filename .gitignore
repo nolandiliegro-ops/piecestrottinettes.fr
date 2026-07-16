@@ -10,6 +10,11 @@ scripts/test-precut-prod.mjs
 scripts/test-sb4-helper.mjs
 scripts/data/_test-sb4-import.json
 
+# Dumps dry-run du sourcing photo (jetables, generes par fetch-brand-photos.js).
+# On garde uniquement le registre sources.json.
+scripts/data/*.json
+!scripts/data/sources.json
+
 # Logs
 logs
 *.log

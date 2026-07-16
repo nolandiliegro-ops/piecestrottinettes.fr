@@ -10,7 +10,26 @@
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { execFileSync } from 'child_process';
 import { detoure } from './lib/detoure.js';
+
+// minimotors (Odoo) bloque node/undici au niveau WAF (403 sur l'endpoint image).
+// On pre-telecharge la source via curl (qui passe le WAF) puis on passe le Buffer
+// a detoure() — @imgly recoit des bytes et ne fait aucun fetch interne.
+const CURL_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
+// @imgly sniffe le format via le MIME : un Buffer brut => "Unsupported format".
+// On detecte le type par magic bytes et on renvoie un Blob type.
+function sniffMime(buf) {
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return 'image/jpeg';
+  if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) return 'image/png';
+  if (buf.slice(0, 4).toString('latin1') === 'RIFF' && buf.slice(8, 12).toString('latin1') === 'WEBP') return 'image/webp';
+  return 'image/jpeg'; // fallback raisonnable
+}
+function curlDownload(url) {
+  const buf = execFileSync('curl', ['-s', '-L', '-A', CURL_UA, url], { maxBuffer: 64 * 1024 * 1024 });
+  if (!buf || buf.length === 0) throw new Error('curl download vide/echec');
+  return new Blob([buf], { type: sniffMime(buf) });   // Blob type (pas Buffer brut) pour @imgly
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args      = process.argv.slice(2);
@@ -56,7 +75,8 @@ async function processImages(entityId, sourceUrls, altBase, secret, url) {
   for (let i = 0; i < sourceUrls.length; i++) {
     const srcUrl = sourceUrls[i];
     try {
-      const buf = await detoure(srcUrl); // LOCAL @imgly, URL → Buffer PNG
+      const srcBuf = curlDownload(srcUrl); // curl passe le WAF minimotors → Buffer source
+      const buf = await detoure(srcBuf);   // LOCAL @imgly détoure les bytes (aucun fetch interne)
       const b64 = buf.toString('base64'); // sans préfixe data:
 
       const res = await fetch(url, {
@@ -168,7 +188,15 @@ async function main() {
         photoSkip++; continue;
       }
 
-      const altBase = `${brandName} ${row.name}`;
+      // Evite le doublon de marque : le name BDD contient souvent deja la marque
+      // (ex. "Dualtron Achilleus 2025"). Si name commence par brandName (casse/espaces
+      // ignores), on garde name seul ; sinon on prefixe. Generique toutes marques.
+      const brandStr = String(brandName || '').trim();
+      const nameStr = String(row.name || '').trim();
+      const nb = brandStr.toLowerCase().replace(/\s+/g, ' ');
+      const nn = nameStr.toLowerCase().replace(/\s+/g, ' ');
+      const startsWithBrand = nb.length > 0 && (nn === nb || nn.startsWith(nb + ' '));
+      const altBase = startsWithBrand ? nameStr : `${brandStr} ${nameStr}`;
       process.stdout.write(`   🖼  ${slug} : traitement...`);
       const result = await processImages(row.id, source_image_urls, altBase, ADMIN_SECRET, PROCESS_IMG_URL);
 

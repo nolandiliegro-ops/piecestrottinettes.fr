@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "role": "Registre des sources photo par marque. Lu par scripts/fetch-brand-photos.js. Donnee, pas prose.",
+    "regle_dure": "Aucune source n'entre ici sans avoir ete OUVERTE. Modele absent du sitemap/liste -> le script ecrit 'ABSENT', jamais deviner un handle.",
+    "statuts": {
+      "prouve": "URLs ouvertes et conformes 3/4 par Nolan",
+      "a_confirmer": "source/pattern identifie, handles ou ID pas encore extraits/ouverts",
+      "inconnu": "aucune source revendeur trouvee a ce jour -> ne rien tenter",
+      "shooting_maison": "machine plus vendue nulle part -> photo maison, voie unique"
+    },
+    "plateformes": {
+      "odoo": "GET {base_url}/web/image/product.template/{ID}/image_1920 (ID = template_id extrait de la fiche/slug revendeur)",
+      "shopify": "GET {base_url}/products/{handle}.json -> product.images[].src ; lister via {base_url}/products.json?limit=250 pour matcher le handle",
+      "woocommerce": "images CDN sous wp-content/uploads/YYYY/MM/ (extraites du HTML/og:image de la fiche)",
+      "cdnws": "PrestaShop cdnws (mobilityurban) -> URLs image dans le HTML fiche",
+      "prestashop": "PrestaShop thickbox (maxblinker) -> URLs image dans le HTML fiche"
+    },
+    "date_creation": "2026-07-16"
+  },
+  "revendeurs": {
+    "minimotors": {
+      "base_url": "https://www.minimotors.fr",
+      "plateforme": "odoo",
+      "pattern": "/web/image/product.template/{ID}/image_1920",
+      "id_source": "template_id dans la fiche/slug revendeur",
+      "notes": "= VOLT CORP, fournisseur deja parse dans pt-stock-sync. Mail d'accord d'usage packshots a envoyer (securise Dualtron + Teverun).",
+      "bot_block": false
+    },
+    "weebot": {
+      "base_url": "https://www.wee-bot.com",
+      "plateforme": "shopify",
+      "product_type_filter": "Trottinettes",
+      "pattern": "/products/{handle}.json -> images[].src",
+      "id_source": "handle via /products.json?limit=250 (match par titre modele)",
+      "transform": "URLs CDN /cdn/shop/files/{nom_seo}.jpg?v=..&width=1200 -> COUPER ?v et &width (l'original detoure mieux). nom_seo = SEO Weebot, NON deductible du slug.",
+      "bot_block": false
+    },
+    "segwayfrance": {
+      "base_url": "https://www.segwayfrance.com",
+      "plateforme": "a_confirmer",
+      "pattern": "og:image de la fiche revendeur",
+      "id_source": "fiche revendeur",
+      "notes": "Valide skill 27/06 comme source revendeur propre. EVITER segway.com (home = collage lifestyle).",
+      "bot_block": false
+    },
+    "mobilityurban": {
+      "base_url": "https://www.mobilityurban.fr",
+      "plateforme": "cdnws",
+      "pattern": "URLs image cdnws dans le HTML fiche",
+      "id_source": "fiche revendeur",
+      "notes": "Source multi-marques validee skill 27/06.",
+      "bot_block": false
+    },
+    "maxblinker": {
+      "base_url": "https://www.maxblinker.fr",
+      "plateforme": "prestashop",
+      "pattern": "thickbox / URLs image dans le HTML fiche",
+      "id_source": "fiche revendeur",
+      "notes": "Source multi-marques validee skill 27/06.",
+      "bot_block": false
+    },
+    "dualtron-shop": {
+      "base_url": "https://www.dualtron-shop.com",
+      "plateforme": "woocommerce",
+      "pattern": "wp-content/uploads/YYYY/MM/",
+      "id_source": "fiche revendeur",
+      "notes": "BOT-BLOQUE web_fetch -> fallback endpoint .json ou Chrome de Nolan. Non retenu par defaut.",
+      "bot_block": true
+    },
+    "fastride": {
+      "base_url": "https://www.fastride.fr",
+      "plateforme": "a_confirmer",
+      "pattern": "a_confirmer",
+      "id_source": "fiche revendeur",
+      "notes": "BOT-BLOQUE web_fetch -> fallback endpoint .json ou Chrome. Non retenu par defaut.",
+      "bot_block": true
+    },
+    "kukirin-france": {
+      "base_url": "https://kukirin-france.com",
+      "plateforme": "shopify",
+      "product_type_filter": "Trottinette électrique",
+      "pattern": "/products/{handle}.json -> images[].src ; lister via /collections/all/products.json?limit=250 (SANS &page= qui declenche 503)",
+      "id_source": "handle via collections/all (match par titre modele)",
+      "notes": "Store officiel Kukirin (Shopify). WAF : node/undici ET curl -> 503 sur /products.json?limit=250&page=N ; seul /collections/all/products.json?limit=250 sans page passe via curl. 16 produits, 8 en 'Trottinette électrique'. adapterShopify actuel (undici + page) NE PASSE PAS.",
+      "bot_block": true
+    },
+    "kaabousa": {
+      "base_url": "https://kaabousa.com",
+      "plateforme": "shopify",
+      "product_type_filter": "Electric Scooter",
+      "pattern": "/products.json?limit=250&page=N -> product_type='Electric Scooter' (12 machines) ; le reste du store = pieces detachees avec le nom de modele detourne en product_type.",
+      "id_source": "handle/title via products.json (vendor='Kaabo USA')",
+      "notes": "Store CONSTRUCTEUR officiel (US, Shopify). WAF rate-limit : undici renvoie 503 par intermittence (comme kukirin) -> relancer le DRY-RUN si 0 produit. PIEGE MATCH : titres nus ('Mantis King GT', 'Warrior 11 Max') SANS prefixe marque -> le nom BDD prefixe 'Kaabo ...' ne matche pas le titre (matche parfois via le handle). Catalogue US rebrande : 'Wolf Warrior' -> 'Warrior', pas de 'Mantis Pro' (discontinue).",
+      "bot_block": true
+    }
+  },
+  "marques": {
+    "dualtron": {
+      "revendeur": "minimotors",
+      "revendeurs_fallback": [],
+      "statut": "prouve",
+      "preuve": "3/3 ouvertes et conformes 3/4 par Nolan le 16/07",
+      "date_verif": "2026-07-16",
+      "exemples_prouves": {
+        "dualtron-togo": "https://www.minimotors.fr/web/image/59955-bb9a5fc0/DUALTRON_TOGO_1.jpg",
+        "dualtron-achilleus-2025": "https://www.minimotors.fr/web/image/product.template/17138/image_1920",
+        "dualtron-forever": "https://www.minimotors.fr/web/image/product.template/11609/image_1920"
+      },
+      "notes": "Concerne les Dualtron VIVANTS (encore vendus par minimotors).",
+      "odoo_category_id": 7
+    },
+    "kukirin": {
+      "revendeur": "kukirin-france",
+      "revendeurs_fallback": [],
+      "statut": "a_confirmer",
+      "preuve": "store officiel Shopify, product_type 'Trottinette électrique' lu (8 trottinettes) ; 7 modeles BDD a matcher",
+      "date_verif": "2026-07-16",
+      "notes": "adapterShopify existant fetch via undici + /products.json?limit=250&page=N -> 503 sur ce host. A router via curl + endpoint sans page pour fonctionner."
+    },
+    "dualtron-discontinues": {
+      "revendeur": null,
+      "statut": "shooting_maison",
+      "preuve": "plus vendus par le distributeur (pieces only)",
+      "date_verif": "2026-07-16",
+      "modeles": [
+        "thunder-2",
+        "compact",
+        "eagle-pro",
+        "spider-2"
+      ],
+      "notes": "Voie unique = shooting maison. Client captif. Le script SKIP et log."
+    },
+    "xiaomi": {
+      "revendeur": "weebot",
+      "revendeurs_fallback": [],
+      "statut": "a_confirmer",
+      "preuve": "pattern CDN Shopify confirme, handles a extraire via /products.json",
+      "date_verif": "2026-07-16",
+      "notes": "INTERDIT source constructeur mi.com (og:image lifestyle + contamination prouvee 4-ultra/4-pro). Pattern i01.appmifile.com/.../main.png = MORT 404. 6 fiches Xiaomi portent une URL morte a corriger au reimport."
+    },
+    "ninebot": {
+      "revendeur": "weebot",
+      "revendeurs_fallback": [],
+      "statut": "a_confirmer",
+      "preuve": "Weebot vend du Ninebot (C2 Lite, C2 Segway, C2 Pro E) -> source connue, handles a extraire",
+      "date_verif": "2026-07-16",
+      "notes": "N'est plus une source inconnue. Croiser avec segwayfrance si manque."
+    },
+    "teverun": {
+      "revendeur": "minimotors",
+      "revendeurs_fallback": [
+        "weebot"
+      ],
+      "statut": "a_confirmer",
+      "preuve": "double source minimotors (odoo) + weebot (shopify), a ouvrir",
+      "date_verif": "2026-07-16",
+      "notes": "Odoo prioritaire (meme accord packshots que Dualtron).",
+      "odoo_category_id": 9
+    },
+    "segway": {
+      "revendeur": "segwayfrance",
+      "revendeurs_fallback": [
+        "mobilityurban"
+      ],
+      "statut": "a_confirmer",
+      "preuve": "revendeur valide skill 27/06, fiches a ouvrir",
+      "date_verif": "2026-07-16",
+      "notes": "EVITER segway.com (lifestyle)."
+    },
+    "kaabo": {
+      "revendeur": "kaabousa",
+      "revendeurs_fallback": [],
+      "statut": "a_confirmer",
+      "preuve": "store constructeur officiel kaabousa.com (Shopify) identifie le 16/07 ; product_type 'Electric Scooter' lu (12 machines). Volt-Corp ELIMINE (pieces only).",
+      "date_verif": "2026-07-16",
+      "notes": "Couverture des 4 slugs BDD FAIBLE : mantis-king-gt (VIDE) = seul vrai gain mais faux-ABSENT sous matcher actuel (titre nu sans prefixe marque, brand-strip requis). mantis-8 (VIDE) -> 'Mantis 8 Lite' (variante Lite, a valider). mantis-pro + wolf-warrior (FRAGILE) = ABSENT sur store officiel (discontinue / rebrande 'Warrior'). Piste alt FR : biospeed.fr (revendeur officiel), fastride.fr."
+    }
+  },
+  "interdits": [
+    "mi.com og:image (lifestyle + contamination 4-ultra sur 4-pro)",
+    "i01.appmifile.com/webfile/globalimg/products/m/{slug}/main.png (404 mort)",
+    "mi-com-product/fly-birds/{slug}/pc/ (bannieres lifestyle, pas packshots)",
+    "pages home constructeur (segway.com home = collage)"
+  ],
+  "transforms": [
+    "wee-bot CDN : retirer ?v=.. et &width=.. -> URL originale pleine resolution",
+    "toujours verifier l'extension exacte (.jpg/.jpeg/.webp) : mismatch = download echoue en silence"
+  ]
+}
