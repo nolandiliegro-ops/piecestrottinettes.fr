@@ -38,7 +38,7 @@ async function main() {
   }
 
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/scooter_models?select=slug,name,brand:brands(slug,name)&order=name.asc`,
+    `${SUPABASE_URL}/rest/v1/scooter_models?select=slug,name,brand:brands!scooter_models_brand_id_fkey(slug,name)&order=name.asc`,
     { headers: { 'apikey': ANON_KEY, 'Authorization': `Bearer ${ANON_KEY}` } }
   );
 
