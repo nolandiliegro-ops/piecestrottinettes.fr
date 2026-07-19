@@ -2,137 +2,178 @@
   "brandName": "Kukirin",
   "scooters": [
     {
-      "name": "Kukirin G4 Max",
-      "slug": "kukirin-g4-max",
-      "power_watts": 3200,
-      "range_km": 95,
-      "max_speed_kmh": 86,
-      "voltage": 60,
-      "amperage": 28,
-      "tire_size": "11 pouces",
-      "year": 2026,
-      "description": "Le Kukirin G4 Max est la trottinette électrique haut de gamme de la marque, conçue pour les riders exigeants. Avec son moteur double de 3200W, elle atteint 86 km/h en pointe et offre 95 km d'autonomie. Pneus tubeless 11 pouces tout-terrain. Suspensions avant/arrière hydrauliques. Cadre en alliage d'aluminium aérospatial. Système de freinage hydraulique double disque. Affichage couleur multifonction. Idéale pour usage urbain longue distance ET tout-terrain. Sur PiècesTrottinettes.fr : chambres à air 11 pouces tubeless, plaquettes de frein hydraulique, chargeurs 60V.",
-      "meta_title": "Kukirin G4 Max - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G4 Max : chambres à air 11\", plaquettes hydraulique, chargeurs 60V. Spécialiste trottinette Marseille.",
-      "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4-max-3200w-86-kmh-95-km-4487750.webp?v=1764467692",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4-max-3200w-86-kmh-95-km-4151134.webp?v=1766108403",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4-max-3200w-86-kmh-95-km-4104067.webp?v=1766108403"
-      ]
-    },
-    {
-      "name": "Kukirin G3 Pro",
-      "slug": "kukirin-g3-pro",
-      "power_watts": 2400,
-      "range_km": 80,
-      "max_speed_kmh": 65,
-      "voltage": 52,
-      "amperage": 23,
-      "tire_size": "10 pouces",
-      "year": 2026,
-      "description": "Le Kukirin G3 Pro est la trottinette électrique sportive performance de la marque. Moteur 2400W (double moteur), 65 km/h en pointe, 80 km d'autonomie. Pneus tubeless 10 pouces. Suspension complète avant et arrière. Cadre robuste en alliage. Freins à disque hydraulique. Affichage couleur. Parfaite pour rider urbain qui veut de la performance. Sur PiècesTrottinettes.fr : chambres à air 10 pouces, plaquettes hydrauliques, chargeurs 52V compatibles.",
-      "meta_title": "Kukirin G3 Pro - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G3 Pro : chambres à air 10\", plaquettes, chargeurs 52V. Trottinette Marseille.",
-      "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g3-pro_14.webp?v=1766456948",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g3-pro_5.jpg?v=1766456948",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g3-pro_4.jpg?v=1766456948"
-      ]
-    },
-    {
-      "name": "Kukirin G4 (2026)",
-      "slug": "kukirin-g4-2026",
-      "power_watts": 2000,
-      "range_km": 75,
-      "max_speed_kmh": 70,
-      "voltage": 60,
-      "amperage": 25,
-      "tire_size": "10 pouces",
-      "year": 2026,
-      "description": "Le Kukirin G4 (2026) est la nouvelle génération de la gamme G, alliant puissance et confort. Moteur 2000W, vitesse de pointe 70 km/h, autonomie 75 km. Pneus 10 pouces. Suspension complète. Cadre en alliage. Freins à disque hydraulique. Design moderne. Parfaite pour usage quotidien et trajets longue distance. Sur PiècesTrottinettes.fr : chambres à air 10 pouces, plaquettes hydrauliques, chargeurs 60V.",
-      "meta_title": "Kukirin G4 2026 - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G4 2026 : chambres 10\", plaquettes, chargeurs 60V. Marseille.",
-      "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4_8.png?v=1766456516",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4_2.png?v=1766456516",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g4_4.png?v=1766456516"
-      ]
-    },
-    {
-      "name": "Kukirin G2 Master",
       "slug": "kukirin-g2-master",
-      "power_watts": 2000,
-      "range_km": 70,
-      "max_speed_kmh": 60,
-      "voltage": 48,
-      "amperage": 20,
-      "tire_size": "10 pouces",
-      "year": 2025,
-      "description": "Le Kukirin G2 Master combine puissance et accessibilité. Double moteur 2000W, vitesse de pointe 60 km/h, autonomie 70 km. Pneus 10 pouces robustes. Suspension complète. Cadre durable. Freins à disque. Parfait pour les déplacements urbains et péri-urbains avec un bon rapport qualité-prix. Sur PiècesTrottinettes.fr : chambres à air 10 pouces, plaquettes de frein, chargeurs 48V.",
-      "meta_title": "Kukirin G2 Master - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G2 Master : chambres 10\", plaquettes, chargeurs 48V. Marseille.",
+      "image_url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_1.webp",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_1.webp",
+          "position": 0,
+          "is_primary": true
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_2.webp",
+          "position": 1,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_4.webp",
+          "position": 2,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_10.webp",
+          "position": 3,
+          "is_primary": false
+        }
+      ],
       "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7195984.jpg?v=1764467673",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7873284.webp?v=1764467614",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7092898.webp?v=1764467850"
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_2.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_4.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/eu-kukirin-g2-master-main-image_10.webp"
       ]
     },
     {
-      "name": "Kukirin G2 Ultra",
-      "slug": "kukirin-g2-ultra",
-      "power_watts": 1600,
-      "range_km": 55,
-      "max_speed_kmh": 55,
-      "voltage": 48,
-      "amperage": 18,
-      "tire_size": "10 pouces",
-      "year": 2025,
-      "description": "Le Kukirin G2 Ultra propose une expérience trottinette sportive sans compromis. Double moteur 2x800W, vitesse 55 km/h, autonomie 55 km. Pneus 10 pouces gonflables. Suspension. Freinage à disque mécanique. Compact et performant. Sur PiècesTrottinettes.fr : chambres à air 10 pouces, plaquettes, chargeurs 48V compatibles.",
-      "meta_title": "Kukirin G2 Ultra - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G2 Ultra : chambres 10\", plaquettes, chargeurs 48V. Marseille.",
-      "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g2-ultra-2800w-55-km-dautonomie-55-kmh-5500977.jpg?v=1764467789",
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g2-ultra-2800w-55-km-dautonomie-55-kmh-6168640.webp?v=1766454383",
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g2-ultra-2800w-55-km-dautonomie-55-kmh-9586588.webp?v=1766454383"
-      ]
-    },
-    {
-      "name": "Kukirin G2 Max (2026)",
       "slug": "kukirin-g2-max-2026",
-      "power_watts": 1000,
-      "range_km": 80,
-      "max_speed_kmh": 55,
-      "voltage": 48,
-      "amperage": 20,
-      "tire_size": "10 pouces",
-      "year": 2026,
-      "description": "Le Kukirin G2 Max (2026) est la trottinette urbaine longue autonomie. Moteur 1000W, vitesse 55 km/h, autonomie remarquable de 80 km. Pneus 10 pouces. Batterie 48V haute capacité. Idéale pour les trajets domicile-travail longue distance et les utilisations professionnelles. Excellent rapport qualité-prix-autonomie. Sur PiècesTrottinettes.fr : chambres à air 10 pouces, plaquettes de frein, chargeurs 48V.",
-      "meta_title": "Kukirin G2 Max 2026 - Pièces détachées | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G2 Max 2026 : chambres 10\", plaquettes, chargeurs 48V. Marseille.",
+      "image_url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_1.webp",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_1.webp",
+          "position": 0,
+          "is_primary": true
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_2.webp",
+          "position": 1,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_3.webp",
+          "position": 2,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_4.webp",
+          "position": 3,
+          "is_primary": false
+        }
+      ],
       "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3067628.webp?v=1764467643",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-8217091.webp?v=1764467645",
-        "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3000510.webp?v=1776583019"
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_2.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_3.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2max-main-image_4.webp"
       ]
     },
     {
-      "name": "Kukirin G3 Adventurers",
-      "slug": "kukirin-g3-adventurers",
-      "power_watts": 1200,
-      "range_km": 60,
-      "max_speed_kmh": 50,
-      "voltage": 48,
-      "amperage": 18,
-      "tire_size": "10 pouces tout-terrain",
-      "year": 2025,
-      "description": "Le Kukirin G3 Adventurers est la trottinette off-road de la marque. Moteur 1200W, vitesse 50 km/h, autonomie 60 km. Pneus 10 pouces crampons tout-terrain. Cadre monobloc renforcé. Suspension. Freinage à disque hydraulique. Conçue pour les sentiers, chemins et terrains difficiles. Sur PiècesTrottinettes.fr : chambres à air 10 pouces tout-terrain, plaquettes hydrauliques, chargeurs 48V.",
-      "meta_title": "Kukirin G3 Adventurers Off-Road | PiècesTrottinettes",
-      "meta_description": "Pièces Kukirin G3 Adventurers off-road : chambres 10\" TT, plaquettes hydraulique. Marseille.",
+      "slug": "kukirin-g2-ultra",
+      "image_url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_1.webp",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_1.webp",
+          "position": 0,
+          "is_primary": true
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_3.webp",
+          "position": 1,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_4.webp",
+          "position": 2,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_5.webp",
+          "position": 3,
+          "is_primary": false
+        }
+      ],
       "source_image_urls": [
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-2623978.webp?v=1764467608",
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8639952.webp?v=1764467608",
-        "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1580539.webp?v=1764467605"
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_3.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_4.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g2-ultra-main-image_5.webp"
+      ]
+    },
+    {
+      "slug": "kukirin-g3-pro",
+      "image_url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp",
+          "position": 0,
+          "is_primary": true
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/06_1.webp",
+          "position": 1,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/03_1.webp",
+          "position": 2,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/07_1.webp",
+          "position": 3,
+          "is_primary": false
+        }
+      ],
+      "source_image_urls": [
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/06_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/03_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/07_1.webp"
+      ]
+    },
+    {
+      "slug": "kukirin-g4-2026",
+      "image_url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_1.webp",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_1.webp",
+          "position": 0,
+          "is_primary": true
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_5.webp",
+          "position": 1,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_2.webp",
+          "position": 2,
+          "is_primary": false
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_7.webp",
+          "position": 3,
+          "is_primary": false
+        }
+      ],
+      "source_image_urls": [
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_1.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_5.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_2.webp",
+        "https://cdn.shopify.com/s/files/1/0618/7230/8311/files/kukirin-g4-main-image_7.webp"
       ]
     }
-  ]
+  ],
+  "_absent": [
+    {
+      "slug": "kukirin-g3-adventurers",
+      "statut": "ABSENT",
+      "raison": "0 matchs"
+    },
+    {
+      "slug": "kukirin-g4-max",
+      "statut": "ABSENT",
+      "raison": "0 matchs"
+    }
+  ],
+  "_source": "kukirin-france",
+  "_dry_run": true
 }
