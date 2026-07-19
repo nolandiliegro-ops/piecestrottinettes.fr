@@ -1,0 +1,6 @@
+{
+  "brandName": "Dualtron",
+  "scooters": [
+    { "slug": "thunder", "disc_diameter": 160, "disc_pcd": 48, "disc_holes": 6 }
+  ]
+}

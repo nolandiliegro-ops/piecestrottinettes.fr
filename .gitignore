@@ -14,6 +14,7 @@ scripts/data/_test-sb4-import.json
 # On garde uniquement le registre sources.json.
 scripts/data/*.json
 !scripts/data/sources.json
+!scripts/data/thunder-disc-example.json
 
 # Logs
 logs
