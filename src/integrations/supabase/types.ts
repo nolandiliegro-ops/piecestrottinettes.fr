@@ -14,6 +14,156 @@ export type Database = {
   }
   public: {
     Tables: {
+      _backup_caliper_20260718: {
+        Row: {
+          caliper_family: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          caliper_family?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          caliper_family?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_compteurs_20260718: {
+        Row: {
+          backup_at: string | null
+          compatible_parts_count: number | null
+          id: string | null
+          image_url: string | null
+          name: string | null
+          slug: string | null
+        }
+        Insert: {
+          backup_at?: string | null
+          compatible_parts_count?: number | null
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Update: {
+          backup_at?: string | null
+          compatible_parts_count?: number | null
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_partcompat_brake_20260718: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_partcompat_disc_20260719: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_partcompat_purge_20260718: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_victor_20260717: {
+        Row: {
+          ligne: Json | null
+          src: string | null
+        }
+        Insert: {
+          ligne?: Json | null
+          src?: string | null
+        }
+        Update: {
+          ligne?: Json | null
+          src?: string | null
+        }
+        Relationships: []
+      }
       ai_learning_logs: {
         Row: {
           confidence_score: number | null
@@ -546,6 +696,165 @@ export type Database = {
           },
         ]
       }
+      fitment_caliper_families: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_disc_diameters: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_disc_holes: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_disc_pcd: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_raw: {
+        Row: {
+          category: string
+          claim_type: string
+          dedup_key: string
+          ean13: string | null
+          geom: Json | null
+          geom_signature: string | null
+          id: string
+          model_slug: string | null
+          raw_model: string | null
+          raw_payload: Json | null
+          raw_title: string | null
+          scraped_at: string
+          source: string
+          source_url: string | null
+          supplier_sku: string | null
+        }
+        Insert: {
+          category: string
+          claim_type?: string
+          dedup_key: string
+          ean13?: string | null
+          geom?: Json | null
+          geom_signature?: string | null
+          id?: string
+          model_slug?: string | null
+          raw_model?: string | null
+          raw_payload?: Json | null
+          raw_title?: string | null
+          scraped_at?: string
+          source: string
+          source_url?: string | null
+          supplier_sku?: string | null
+        }
+        Update: {
+          category?: string
+          claim_type?: string
+          dedup_key?: string
+          ean13?: string | null
+          geom?: Json | null
+          geom_signature?: string | null
+          id?: string
+          model_slug?: string | null
+          raw_model?: string | null
+          raw_payload?: Json | null
+          raw_title?: string | null
+          scraped_at?: string
+          source?: string
+          source_url?: string | null
+          supplier_sku?: string | null
+        }
+        Relationships: []
+      }
+      fitment_rim_diameters: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_tire_sections: {
+        Row: {
+          code: string
+          note: string | null
+        }
+        Insert: {
+          code: string
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          note?: string | null
+        }
+        Relationships: []
+      }
       garage_modifications: {
         Row: {
           created_at: string | null
@@ -974,6 +1283,7 @@ export type Database = {
           ean: string | null
           electrical_specs: Json | null
           estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
           id: string
           image_url: string | null
           images: Json
@@ -1005,6 +1315,7 @@ export type Database = {
           ean?: string | null
           electrical_specs?: Json | null
           estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
           id?: string
           image_url?: string | null
           images?: Json
@@ -1036,6 +1347,7 @@ export type Database = {
           ean?: string | null
           electrical_specs?: Json | null
           estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
           id?: string
           image_url?: string | null
           images?: Json
@@ -1275,9 +1587,13 @@ export type Database = {
           amperage: number | null
           brake_type: string | null
           brand_id: string
+          caliper_family: string | null
           compatible_parts_count: number | null
           created_at: string
           description: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
           foldable: boolean | null
           id: string
           image_url: string | null
@@ -1297,6 +1613,7 @@ export type Database = {
           price_source: string | null
           published: boolean
           range_km: number | null
+          rim_diameter_code: string | null
           score_auto_adj: number
           score_autonomy: number | null
           score_offroad: number | null
@@ -1307,6 +1624,8 @@ export type Database = {
           slug: string
           suspension: string | null
           technical_signature: Json | null
+          tire_family: string | null
+          tire_section_code: string | null
           tire_size: string | null
           voltage: number | null
           weight_kg: number | null
@@ -1320,9 +1639,13 @@ export type Database = {
           amperage?: number | null
           brake_type?: string | null
           brand_id: string
+          caliper_family?: string | null
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
           foldable?: boolean | null
           id?: string
           image_url?: string | null
@@ -1342,6 +1665,7 @@ export type Database = {
           price_source?: string | null
           published?: boolean
           range_km?: number | null
+          rim_diameter_code?: string | null
           score_auto_adj?: number
           score_autonomy?: number | null
           score_offroad?: number | null
@@ -1352,6 +1676,8 @@ export type Database = {
           slug: string
           suspension?: string | null
           technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
           tire_size?: string | null
           voltage?: number | null
           weight_kg?: number | null
@@ -1365,9 +1691,13 @@ export type Database = {
           amperage?: number | null
           brake_type?: string | null
           brand_id?: string
+          caliper_family?: string | null
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
           foldable?: boolean | null
           id?: string
           image_url?: string | null
@@ -1387,6 +1717,7 @@ export type Database = {
           price_source?: string | null
           published?: boolean
           range_km?: number | null
+          rim_diameter_code?: string | null
           score_auto_adj?: number
           score_autonomy?: number | null
           score_offroad?: number | null
@@ -1397,6 +1728,8 @@ export type Database = {
           slug?: string
           suspension?: string | null
           technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
           tire_size?: string | null
           voltage?: number | null
           weight_kg?: number | null
@@ -1412,6 +1745,48 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "brands"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "scooter_models_caliper_family_fkey"
+            columns: ["caliper_family"]
+            isOneToOne: false
+            referencedRelation: "fitment_caliper_families"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_disc_diameter_code_fkey"
+            columns: ["disc_diameter_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_disc_diameters"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_disc_holes_code_fkey"
+            columns: ["disc_holes_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_disc_holes"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_disc_pcd_code_fkey"
+            columns: ["disc_pcd_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_disc_pcd"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_rim_diameter_code_fkey"
+            columns: ["rim_diameter_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_rim_diameters"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_tire_section_code_fkey"
+            columns: ["tire_section_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_tire_sections"
+            referencedColumns: ["code"]
           },
         ]
       }
@@ -1488,6 +1863,39 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      supplier_model_alias: {
+        Row: {
+          created_at: string
+          id: string
+          note: string | null
+          raw_model: string
+          scooter_model_slug: string | null
+          source: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          note?: string | null
+          raw_model: string
+          scooter_model_slug?: string | null
+          source: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          note?: string | null
+          raw_model?: string
+          scooter_model_slug?: string | null
+          source?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
       }
       tutorials: {
         Row: {
@@ -1666,7 +2074,15 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      v_fitment_corroboration: {
+        Row: {
+          geom_signature: string | null
+          model_slug: string | null
+          n_sources: number | null
+          sources: string[] | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       calculate_modification_xp: {
@@ -1685,6 +2101,21 @@ export type Database = {
         }
         Returns: boolean
       }
+      match_brake_compatibility: {
+        Args: never
+        Returns: {
+          inserted: number
+          promoted: number
+        }[]
+      }
+      match_disc_compatibility: {
+        Args: never
+        Returns: {
+          inserted: number
+          promoted: number
+        }[]
+      }
+      match_pneumatic_compatibility: { Args: never; Returns: number }
       part_search_text: {
         Args: {
           p_description: string
