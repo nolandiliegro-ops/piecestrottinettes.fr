@@ -6,16 +6,26 @@
  * Usage :
  *   node scripts/sync-scooters.js --file scripts/data/import.json
  *   node scripts/sync-scooters.js --file scripts/data/import.json --update
+ *   node scripts/sync-scooters.js --file scripts/data/import.json --allow-missing-keys
+ *
+ * Schéma d'entrée (contrat d'import — étape 2) : chaque scooter DOIT porter les
+ * 3 clés de montage frein, en entiers nus (→ scooter_models.disc_*_code) :
+ *   disc_diameter (Ø mm, ex. 160) · disc_pcd (entraxe mm, ex. 48) · disc_holes (nb trous, ex. 6)
+ * Sans elles, le run S'ARRÊTE avant tout appel réseau (insert comme --update).
+ * --allow-missing-keys transforme le refus en warning par scooter (cas assumés :
+ * frein tambour, specs introuvables).
  */
 
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
+import { findMissingBrakeKeys } from './lib/validate-brake-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args      = process.argv.slice(2);
 const doUpdate  = args.includes('--update');
+const allowMissingKeys = args.includes('--allow-missing-keys');
 
 const fileArgIdx = args.indexOf('--file');
 if (fileArgIdx === -1 || !args[fileArgIdx + 1]) {
@@ -123,6 +133,28 @@ async function main() {
 
   // Le fichier peut contenir un seul objet { brandName, scooters } ou un tableau de tels objets
   const batches = Array.isArray(data) ? data : [data];
+
+  // ── Validation BLOQUANTE des clés de montage frein ──────────────────────────
+  // Vaut pour le chemin insert ET --update (même boucle d'appels plus bas).
+  // Aucun POST ne part tant que la validation n'est pas passée (ou explicitement
+  // contournée par --allow-missing-keys).
+  const brakeFaults = findMissingBrakeKeys(batches);
+  if (brakeFaults.length > 0) {
+    if (allowMissingKeys) {
+      for (const f of brakeFaults) {
+        console.warn(`⚠  [${f.brandName}] ${f.ref} — clés frein manquantes (assumé) : ${f.missing.join(', ')}`);
+      }
+      console.warn(`⚠  ${brakeFaults.length} scooter(s) sans clés frein complètes — poursuite (--allow-missing-keys).\n`);
+    } else {
+      console.error('❌ Clés de montage frein manquantes (disc_diameter, disc_pcd, disc_holes — entiers requis) :');
+      for (const f of brakeFaults) {
+        console.error(`   ✗ [${f.brandName}] ${f.ref} → manque : ${f.missing.join(', ')}`);
+      }
+      console.error(`\n${brakeFaults.length} scooter(s) fautif(s). AUCUN appel envoyé.`);
+      console.error('Corrige le fichier, ou relance avec --allow-missing-keys (frein tambour / specs introuvables assumés).');
+      process.exit(1);
+    }
+  }
 
   for (const batch of batches) {
     const { brandName, brand, scooters, models } = batch;

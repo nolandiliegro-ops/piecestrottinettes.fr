@@ -6,7 +6,7 @@ const corsHeaders = {
 };
 
 interface ScooterInput {
-  name: string;
+  name?: string; // requis à l'INSERT uniquement (update partiel par slug possible sans name)
   slug: string;
   image_url?: string;
   power_watts?: number;
@@ -23,6 +23,11 @@ interface ScooterInput {
   youtube_video_id?: string;
   affiliate_link?: string;
   technical_signature?: Record<string, unknown>;
+  // Clés de montage frein (contrat d'import — étape 2). Entiers nus, mêmes
+  // unités que scooter_models.disc_*_code : Ø mm / entraxe mm / nb trous.
+  disc_diameter?: number;
+  disc_pcd?: number;
+  disc_holes?: number;
 }
 
 interface BrandInput {
@@ -133,76 +138,125 @@ Deno.serve(async (req) => {
     };
 
     for (const scooter of scooters) {
-      if (!scooter.name || !scooter.slug) {
-        results.errors.push({ name: scooter.name || "unknown", error: "name and slug are required" });
+      if (!scooter.slug) {
+        results.errors.push({ name: scooter.name || "unknown", error: "slug is required" });
         results.rows.push({
           name: scooter.name || "unknown",
-          slug: scooter.slug || "",
+          slug: "",
           id: null,
           status: "skipped",
         });
         continue;
       }
 
-      const row = {
-        brand_id: brand.id,
-        name: scooter.name,
-        slug: scooter.slug,
-        image_url: scooter.image_url || null,
-        power_watts: scooter.power_watts || null,
-        range_km: scooter.range_km || null,
-        max_speed_kmh: scooter.max_speed_kmh || null,
-        voltage: scooter.voltage || null,
-        amperage: scooter.amperage || null,
-        tire_size: scooter.tire_size || null,
-        year: scooter.year || null,
-        description: scooter.description || null,
-        meta_title: scooter.meta_title || null,
-        meta_description: scooter.meta_description || null,
-        search_terms: scooter.search_terms || null,
-        youtube_video_id: scooter.youtube_video_id || null,
-        affiliate_link: scooter.affiliate_link || null,
-        technical_signature: scooter.technical_signature || {},
-        published: false, // Bot imports always start as drafts
+      // Clés de montage frein — guard-preserve (même motif que electrical_specs
+      // dans bulk-insert-parts) : clé absente ou non entière → colonne
+      // disc_*_code JAMAIS touchée (pas d'écrasement par NULL).
+      const discPatch = {
+        ...(Number.isInteger(scooter.disc_diameter) ? { disc_diameter_code: scooter.disc_diameter } : {}),
+        ...(Number.isInteger(scooter.disc_pcd) ? { disc_pcd_code: scooter.disc_pcd } : {}),
+        ...(Number.isInteger(scooter.disc_holes) ? { disc_holes_code: scooter.disc_holes } : {}),
       };
 
-      // Check if exists BEFORE upsert to determine inserted vs updated
+      // Lookup AVANT écriture : détermine inserted vs updated ET le chemin.
       const { data: existing } = await supabase
         .from("scooter_models")
-        .select("id")
+        .select("id, name")
         .eq("slug", scooter.slug)
         .maybeSingle();
 
-      const { data: upserted, error: upsertError } = await supabase
-        .from("scooter_models")
-        .upsert(row, { onConflict: "slug" })
-        .select("id")
-        .single();
+      if (existing) {
+        // ── UPDATE PARTIEL : uniquement les clés fournies dans le payload. ──
+        // Un payload minimal { slug, disc_* } ne touche QUE les colonnes
+        // disc_*_code. published et brand_id ne sont JAMAIS inclus : le premier
+        // est piloté dans l'admin, le second ne change pas via un ré-import
+        // (l'ancien upsert re-draftait published:false et pouvait re-brander —
+        // les deux étaient des écrasements silencieux).
+        const partialRow: Record<string, unknown> = {
+          ...(scooter.name !== undefined ? { name: scooter.name } : {}),
+          ...(scooter.image_url !== undefined ? { image_url: scooter.image_url } : {}),
+          ...(scooter.power_watts !== undefined ? { power_watts: scooter.power_watts } : {}),
+          ...(scooter.range_km !== undefined ? { range_km: scooter.range_km } : {}),
+          ...(scooter.max_speed_kmh !== undefined ? { max_speed_kmh: scooter.max_speed_kmh } : {}),
+          ...(scooter.voltage !== undefined ? { voltage: scooter.voltage } : {}),
+          ...(scooter.amperage !== undefined ? { amperage: scooter.amperage } : {}),
+          ...(scooter.tire_size !== undefined ? { tire_size: scooter.tire_size } : {}),
+          ...(scooter.year !== undefined ? { year: scooter.year } : {}),
+          ...(scooter.description !== undefined ? { description: scooter.description } : {}),
+          ...(scooter.meta_title !== undefined ? { meta_title: scooter.meta_title } : {}),
+          ...(scooter.meta_description !== undefined ? { meta_description: scooter.meta_description } : {}),
+          ...(scooter.search_terms !== undefined ? { search_terms: scooter.search_terms } : {}),
+          ...(scooter.youtube_video_id !== undefined ? { youtube_video_id: scooter.youtube_video_id } : {}),
+          ...(scooter.affiliate_link !== undefined ? { affiliate_link: scooter.affiliate_link } : {}),
+          ...(scooter.technical_signature !== undefined ? { technical_signature: scooter.technical_signature } : {}),
+          ...discPatch,
+        };
 
-      if (upsertError || !upserted) {
-        results.errors.push({ name: scooter.name, error: upsertError?.message || "upsert returned no row" });
-        results.rows.push({
-          name: scooter.name,
-          slug: scooter.slug,
-          id: null,
-          status: "error",
-        });
-      } else if (existing) {
-        results.updated++;
-        results.rows.push({
-          name: scooter.name,
-          slug: scooter.slug,
-          id: upserted.id,
-          status: "updated",
-        });
+        const displayName = scooter.name ?? (existing.name as string) ?? scooter.slug;
+
+        // Payload sans aucune clé exploitable → no-op assumé (rien à écrire).
+        if (Object.keys(partialRow).length === 0) {
+          results.updated++;
+          results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
+          continue;
+        }
+
+        const { error: updateError } = await supabase
+          .from("scooter_models")
+          .update(partialRow)
+          .eq("id", existing.id);
+
+        if (updateError) {
+          results.errors.push({ name: displayName, error: updateError.message });
+          results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "error" });
+        } else {
+          results.updated++;
+          results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
+        }
       } else {
-        results.inserted++;
-        results.rows.push({
+        // ── INSERT : comportement historique conservé (défauts || null, draft). ──
+        if (!scooter.name) {
+          results.errors.push({ name: "unknown", error: `name is required to create a new scooter (slug=${scooter.slug})` });
+          results.rows.push({ name: "unknown", slug: scooter.slug, id: null, status: "skipped" });
+          continue;
+        }
+
+        const row = {
+          brand_id: brand.id,
           name: scooter.name,
           slug: scooter.slug,
-          id: upserted.id,
-          status: "inserted",
-        });
+          image_url: scooter.image_url || null,
+          power_watts: scooter.power_watts || null,
+          range_km: scooter.range_km || null,
+          max_speed_kmh: scooter.max_speed_kmh || null,
+          voltage: scooter.voltage || null,
+          amperage: scooter.amperage || null,
+          tire_size: scooter.tire_size || null,
+          year: scooter.year || null,
+          description: scooter.description || null,
+          meta_title: scooter.meta_title || null,
+          meta_description: scooter.meta_description || null,
+          search_terms: scooter.search_terms || null,
+          youtube_video_id: scooter.youtube_video_id || null,
+          affiliate_link: scooter.affiliate_link || null,
+          technical_signature: scooter.technical_signature || {},
+          published: false, // Bot imports always start as drafts
+          ...discPatch,
+        };
+
+        const { data: insertedRow, error: insertError } = await supabase
+          .from("scooter_models")
+          .insert(row)
+          .select("id")
+          .single();
+
+        if (insertError || !insertedRow) {
+          results.errors.push({ name: scooter.name, error: insertError?.message || "insert returned no row" });
+          results.rows.push({ name: scooter.name, slug: scooter.slug, id: null, status: "error" });
+        } else {
+          results.inserted++;
+          results.rows.push({ name: scooter.name, slug: scooter.slug, id: insertedRow.id, status: "inserted" });
+        }
       }
     }
 
