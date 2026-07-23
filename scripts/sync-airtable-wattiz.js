@@ -717,11 +717,12 @@ function printDryRun(parts) {
       const elec = p.electrical_specs
         ? `[${p.electrical_specs.voltages.join(',')}]${p.electrical_specs.connector ? ' ' + p.electrical_specs.connector : ''}`
         : '—';
+      const fit = p.fitment_specs ? JSON.stringify(p.fitment_specs) : '—';
       console.log(
         `  • ${p.name} | sku=${p.sku} | price=${p.price} | stock=${p.stock_quantity} | ` +
         `ean=${p.ean ? 'oui' : 'non'} | specs=${p.characteristics ? 'oui' : 'non'} | ` +
         `compat=${p.compatibility_source ? 'oui' : 'non'} | photos_source=${nbPhotos} | ` +
-        `elec=${elec} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
+        `elec=${elec} | fit=${fit} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
       );
     }
   }
