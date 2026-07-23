@@ -5,15 +5,25 @@
  *
  * Usage :
  *   node scripts/sync-parts.js --file scripts/data/pneus-wattiz.json
+ *   node scripts/sync-parts.js --file scripts/data/pneus-wattiz.json --allow-missing-keys
+ *
+ * Schéma d'entrée (contrat d'import — étape 3) : chaque pièce d'une catégorie
+ * « à montage » (chargeurs, pneus, chambres, pneus pleins, plaquettes, disques)
+ * DOIT porter ses clés de montage (parts.fitment_specs / electrical_specs.voltages,
+ * cf. scripts/lib/validate-part-keys.js). Sans elles, le run S'ARRÊTE avant tout
+ * appel réseau. --allow-missing-keys transforme le refus en warning par pièce
+ * (cas assumés : dims introuvables fournisseur).
  */
 
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
+import { findMissingPartKeys } from './lib/validate-part-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
+const allowMissingKeys = args.includes('--allow-missing-keys');
 
 const fileArgIdx = args.indexOf('--file');
 if (fileArgIdx === -1 || !args[fileArgIdx + 1]) {
@@ -114,6 +124,27 @@ async function main() {
   }
 
   const batches = Array.isArray(data) ? data : [data];
+
+  // ── Validation BLOQUANTE des clés de montage (contrat — étape 3) ────────────
+  // Aucun POST ne part tant que la validation n'est pas passée (ou explicitement
+  // contournée par --allow-missing-keys). Même motif que sync-scooters.js.
+  const partFaults = findMissingPartKeys(batches);
+  if (partFaults.length > 0) {
+    if (allowMissingKeys) {
+      for (const f of partFaults) {
+        console.warn(`⚠  [${f.categoryName}] ${f.ref} — clés de montage manquantes (assumé) : ${f.missing.join(', ')}`);
+      }
+      console.warn(`⚠  ${partFaults.length} pièce(s) sans clés de montage complètes — poursuite (--allow-missing-keys).\n`);
+    } else {
+      console.error('❌ Clés de montage manquantes (fitment_specs / electrical_specs — cf. scripts/lib/validate-part-keys.js) :');
+      for (const f of partFaults) {
+        console.error(`   ✗ [${f.categoryName}] ${f.ref} → manque : ${f.missing.join(', ')}`);
+      }
+      console.error(`\n${partFaults.length} pièce(s) fautive(s). AUCUN appel envoyé.`);
+      console.error('Corrige le fichier, ou relance avec --allow-missing-keys (dims introuvables assumées).');
+      process.exit(1);
+    }
+  }
 
   for (const batch of batches) {
     const { categoryName, parts } = batch;

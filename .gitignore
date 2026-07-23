@@ -15,6 +15,7 @@ scripts/data/_test-sb4-import.json
 scripts/data/*.json
 !scripts/data/sources.json
 !scripts/data/thunder-disc-example.json
+!scripts/data/disque-160-example.json
 
 # Logs
 logs

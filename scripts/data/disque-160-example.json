@@ -1,0 +1,41 @@
+[
+  {
+    "categoryName": "Disques",
+    "categorySlug": "disques",
+    "parts": [
+      {
+        "name": "Disque de frein 160mm 6 trous",
+        "slug": "disque-frein-160-6-trous-example",
+        "sku": "DSQ-160-6T-EX",
+        "price": 19.9,
+        "fitment_specs": {
+          "brake": {
+            "disc_diameter": [160],
+            "disc_pcd": [48],
+            "disc_holes": [6]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "categoryName": "Pneus gonflables",
+    "categorySlug": "pneus",
+    "parts": [
+      {
+        "name": "Pneu 10x2.125 tubeless",
+        "slug": "pneu-10x2125-tubeless-example",
+        "sku": "PNE-10X2125-EX",
+        "price": 14.9,
+        "compatibility_hints": { "tire_size": "10", "voltage": null },
+        "fitment_specs": {
+          "wheel": {
+            "type": "pneumatic",
+            "rim_diameter": ["10"],
+            "tire_width": ["2.125", "2.5"]
+          }
+        }
+      }
+    ]
+  }
+]

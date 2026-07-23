@@ -21,6 +21,7 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
+import { findMissingPartKeys } from './lib/validate-part-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -304,6 +305,34 @@ function filterAndMap(records, lookups, enrichById) {
     `Skip sans réf: ${skipped.missingFields} | Skip sans catégorie: ${skipped.noCategory}`,
   );
   return filtered;
+}
+
+// ─── Clés de montage (contrat — étape 3) : WARNING-ONLY sur ce chemin ──────────
+// Aucun champ Airtable ne porte encore les dims fitment → on signale la dette
+// sans jamais bloquer (un refus stopperait aussi les maj prix/stock). L'insert/
+// update part SANS la clé fitment_specs (guard-preserve → colonne intacte).
+// Bascule prévue vers un refus bloquant quand les champs Airtable existeront
+// (même lib, warn → exit). Tourne aussi en DRY_RUN (visibilité sans écriture).
+function warnMissingPartKeys(parts) {
+  const byCategory = new Map();
+  for (const p of parts) {
+    if (!byCategory.has(p._categoryName)) byCategory.set(p._categoryName, []);
+    byCategory.get(p._categoryName).push(p);
+  }
+  const batches = [...byCategory.entries()].map(([categoryName, catParts]) => ({
+    categoryName,
+    parts: catParts,
+  }));
+
+  const faults = findMissingPartKeys(batches);
+  if (faults.length === 0) return;
+  for (const f of faults) {
+    console.warn(`[sync] ⚠  [${f.categoryName}] ${f.ref} — clés de montage manquantes : ${f.missing.join(', ')}`);
+  }
+  console.warn(
+    `[sync] ⚠  ${faults.length} pièce(s) sans clés de montage (fitment_specs) — ` +
+    `champs Airtable à créer, aucun blocage (warning-only).`,
+  );
 }
 
 function groupByCategory(parts) {
@@ -723,6 +752,8 @@ function printForceRedetourePreview(parts) {
       console.log('[sync] Aucune pièce à insérer. Arrêt.');
       return;
     }
+
+    warnMissingPartKeys(parts);
 
     if (DRY_RUN) {
       printDryRun(parts);

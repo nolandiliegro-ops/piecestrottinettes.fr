@@ -60,6 +60,7 @@ interface PartInput {
   characteristics?: string;
   compatibility_source?: string;
   electrical_specs?: Record<string, unknown> | null;
+  fitment_specs?: Record<string, unknown> | null;
 }
 
 interface RequestBody {
@@ -367,6 +368,9 @@ const handler = async (req: Request): Promise<Response> => {
           // à l'insert → DEFAULT (null). Miroir du guard du script sync.
           ...(part.electrical_specs != null
             ? { electrical_specs: part.electrical_specs }
+            : {}),
+          ...(part.fitment_specs != null
+            ? { fitment_specs: part.fitment_specs }
             : {}),
         };
 
