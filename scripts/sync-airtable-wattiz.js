@@ -21,7 +21,11 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
-import { findMissingPartKeys } from './lib/validate-part-keys.js';
+import {
+  findMissingPartKeys,
+  canonicalCategorySlug,
+  REQUIRED_KEYS_BY_CATEGORY,
+} from './lib/validate-part-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -72,6 +76,16 @@ const F_PIECE_EAN = 'fldCdtbyVIh76jLT0';              // EAN
 const F_PIECE_CARACTERISTIQUES = 'fldwCu08OnHRBZz4Y'; // Caractéristiques
 const F_PIECE_COMPAT_SOURCE = 'fldotemKZlLMUP8Um';    // Compatibilité source
 const F_PIECE_PHOTOS_SOURCE = 'fldiB7HKuHL7CU8yp';    // Photos source
+
+// Clés de montage fitment_specs v2 (multipleSelects — codes alignés référentiels
+// Supabase fitment_*). Le champ "🔑 Source dims" (fldeCTa0pcxMfKOov) n'est JAMAIS
+// synchronisé (traçabilité Airtable uniquement).
+const F_PIECE_FIT_RIM_DIAMETERS = 'fld1YZXXwOpnc32OT';   // 🔑 Ø jante → rim_diameters
+const F_PIECE_FIT_TIRE_SECTIONS = 'fldqxzi9Be6PFUGHl';   // 🔑 Section pneu → tire_sections
+const F_PIECE_FIT_DISC_DIAMETERS = 'fldb7H2rgpcHS55iI';  // 🔑 Ø disque → brake_disc.diameters
+const F_PIECE_FIT_DISC_PCDS = 'fld4Uxfr2wNOMlvJ7';       // 🔑 Entraxe disque → brake_disc.pcds
+const F_PIECE_FIT_DISC_HOLES = 'fldtYaZymwBvOuMvb';      // 🔑 Trous disque → brake_disc.holes
+const F_PIECE_FIT_CALIPER = 'flde00F5A5d0lpFn3';         // 🔑 Étrier → brake_caliper
 
 // Whitelist fournisseurs acceptée par bulk-insert-parts (part_suppliers.supplier_name)
 const SUPPLIER_WHITELIST = [
@@ -149,6 +163,54 @@ function buildElectricalSpecs(voltagesField, connectorField) {
     .filter((n) => Number.isFinite(n));
   if (voltages.length === 0) return null;
   return { voltages, connector: selectName(connectorField) };
+}
+
+// multipleSelects Airtable → tableau de codes strings VERBATIM (aucun parsing,
+// aucun cast — les libellés d'options SONT les codes des référentiels fitment_*).
+// Champ vide/absent → [].
+function selectCodes(field) {
+  const raw = Array.isArray(field) ? field : [];
+  return raw.map(selectName).filter((s) => typeof s === 'string' && s.trim() !== '');
+}
+
+// Construit l'objet fitment_specs v2 pour parts.fitment_specs (jsonb) depuis les
+// champs 🔑 Airtable (lus par field ID). Même esprit que buildElectricalSpecs :
+//   - GUARD : si AUCUN champ 🔑 n'est rempli → retourne null (l'appelant N'AJOUTE
+//     PAS la clé → guard-preserve, ne jamais écraser une valeur déjà en base).
+//   - Jamais de clé vide : chaque clé n'est posée que si elle a ≥1 code.
+//   - tire_family n'a pas de champ Airtable : dérivé de la catégorie via le
+//     mapping de validate-part-keys.js (pneus/chambres → "pneumatic",
+//     pneus-pleins → "solid", autres → absent). N'est émis que si au moins un
+//     champ 🔑 est rempli (tire_family seul n'est pas une dim sourcée).
+function buildFitmentSpecs(enrich, categoryName) {
+  const rimDiameters = selectCodes(enrich[F_PIECE_FIT_RIM_DIAMETERS]);
+  const tireSections = selectCodes(enrich[F_PIECE_FIT_TIRE_SECTIONS]);
+  const discDiameters = selectCodes(enrich[F_PIECE_FIT_DISC_DIAMETERS]);
+  const discPcds = selectCodes(enrich[F_PIECE_FIT_DISC_PCDS]);
+  const discHoles = selectCodes(enrich[F_PIECE_FIT_DISC_HOLES]);
+  const brakeCaliper = selectCodes(enrich[F_PIECE_FIT_CALIPER]);
+
+  const hasAny =
+    rimDiameters.length || tireSections.length || discDiameters.length ||
+    discPcds.length || discHoles.length || brakeCaliper.length;
+  if (!hasAny) return null;
+
+  const rule = REQUIRED_KEYS_BY_CATEGORY[canonicalCategorySlug(categoryName)];
+  const tireFamily = rule?.kind === 'tire' ? rule.family : null;
+
+  const brakeDisc = {
+    ...(discDiameters.length ? { diameters: discDiameters } : {}),
+    ...(discPcds.length ? { pcds: discPcds } : {}),
+    ...(discHoles.length ? { holes: discHoles } : {}),
+  };
+
+  return {
+    ...(tireFamily ? { tire_family: tireFamily } : {}),
+    ...(rimDiameters.length ? { rim_diameters: rimDiameters } : {}),
+    ...(tireSections.length ? { tire_sections: tireSections } : {}),
+    ...(Object.keys(brakeDisc).length ? { brake_disc: brakeDisc } : {}),
+    ...(brakeCaliper.length ? { brake_caliper: brakeCaliper } : {}),
+  };
 }
 
 // byFieldId=true → returnFieldsByFieldId : r.fields keyé par field ID (et non par nom).
@@ -296,6 +358,12 @@ function filterAndMap(records, lookups, enrichById) {
     // qui écraserait une valeur déjà en base). Même esprit que le preserve conditionnel côté bulk-insert.
     const electrical = buildElectricalSpecs(f['Voltages compatibles'], f['Connecteur charge']);
     if (electrical) part.electrical_specs = electrical;
+
+    // Clés de montage fitment_specs v2 depuis les champs 🔑 (par field ID).
+    // GUARD anti-écrasement identique à electrical_specs : clé ABSENTE si aucun
+    // champ 🔑 rempli (ne jamais pousser fitment_specs:null ni un objet vide).
+    const fitment = buildFitmentSpecs(enrich, categoryName);
+    if (fitment) part.fitment_specs = fitment;
 
     filtered.push(part);
   }
@@ -741,7 +809,11 @@ function printForceRedetourePreview(parts) {
     const enrichById = new Map();
     for (const r of await fetchTable(
       AIRTABLE_TABLE_ID,
-      [F_PIECE_EAN, F_PIECE_CARACTERISTIQUES, F_PIECE_COMPAT_SOURCE, F_PIECE_PHOTOS_SOURCE],
+      [
+        F_PIECE_EAN, F_PIECE_CARACTERISTIQUES, F_PIECE_COMPAT_SOURCE, F_PIECE_PHOTOS_SOURCE,
+        F_PIECE_FIT_RIM_DIAMETERS, F_PIECE_FIT_TIRE_SECTIONS, F_PIECE_FIT_DISC_DIAMETERS,
+        F_PIECE_FIT_DISC_PCDS, F_PIECE_FIT_DISC_HOLES, F_PIECE_FIT_CALIPER,
+      ],
       true,
     )) {
       enrichById.set(r.id, r.fields);

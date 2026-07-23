@@ -1,17 +1,16 @@
 // scripts/lib/validate-part-keys.js
-// Validation des clés de montage du schéma d'import pièces (contrat — étape 3).
+// Validation des clés de montage du schéma d'import pièces (contrat — étape 3, schéma v2).
 // Module PUR (aucun I/O, aucun env) → testable isolément.
 // Miroir côté pièces de validate-brake-keys.js (étape 2, scooters).
 //
-// Une pièce d'une catégorie « à montage » doit porter parts.fitment_specs (jsonb)
-// avec les clés requises de sa catégorie. Tous les champs de valeurs sont des
-// TABLEAUX (ensembles acceptés), même à un seul élément. Noms alignés sur les
-// colonnes scooter (disc_diameter_code, rim_diameter_code…) sans le suffixe _code :
-//
-//   brake : disc_diameter [mm, entiers] · disc_pcd [mm, entiers] · disc_holes [entiers]
-//   wheel : type "pneumatic"|"solid" · rim_diameter [pouces, strings — codes
-//           fitment_rim_diameters] · tire_width [strings] (pneumatique)
-//           · rim_width_mm [mm, entiers] (plein)
+// Schéma v2 de parts.fitment_specs (jsonb) : STRINGS/CODES partout, alignés sur
+// les tables de référence Supabase fitment_* ; les tableaux sont des ensembles
+// de valeurs acceptées (même à 1 élément) :
+//   tire_family   : "pneumatic" | "solid" (scalaire)
+//   rim_diameters : [] codes fitment_rim_diameters (ex "6.5", "134mm")
+//   tire_sections : [] codes fitment_tire_sections (ex "90/65", "8.5x2", "8x4")
+//   brake_disc    : { diameters: [], pcds: [], holes: [] } codes fitment_disc_*
+//   brake_caliper : [] codes fitment_caliper_families (ex "nutt_4p", "zoom")
 //
 // Clé non sourcée = clé ABSENTE (jamais de valeur inventée). La validation refuse
 // aussi tout fitment_specs malformé, y compris hors catégories à clés requises.
@@ -19,17 +18,18 @@
 /** Clés requises par slug canonique de catégorie. Hors mapping → aucune clé requise. */
 export const REQUIRED_KEYS_BY_CATEGORY = {
   'chargeurs': { kind: 'electrical' },
-  'pneus': { kind: 'wheel', type: 'pneumatic' },
+  'pneus': { kind: 'tire', family: 'pneumatic' },
   // Alias : slug dérivé du NOM de la catégorie en base ("Pneus gonflables", slug "pneus").
   // Un batch peut porter le nom plutôt que le slug (resolveCategoryMatch accepte les deux).
-  'pneus-gonflables': { kind: 'wheel', type: 'pneumatic' },
-  'chambres-a-air': { kind: 'wheel', type: 'pneumatic' },
-  'pneus-pleins': { kind: 'wheel', type: 'solid' },
-  'plaquettes': { kind: 'brake' },
-  'disques': { kind: 'brake' },
+  'pneus-gonflables': { kind: 'tire', family: 'pneumatic' },
+  'chambres-a-air': { kind: 'tire', family: 'pneumatic' },
+  'pneus-pleins': { kind: 'tire', family: 'solid' },
+  'plaquettes': { kind: 'caliper' },
+  'disques': { kind: 'disc' },
 };
 
-export const BRAKE_KEYS = ['disc_diameter', 'disc_pcd', 'disc_holes'];
+export const BRAKE_DISC_KEYS = ['diameters', 'pcds', 'holes'];
+export const TIRE_FAMILIES = ['pneumatic', 'solid'];
 
 const DIACRITICS_RE = new RegExp('[\\u0300-\\u036f]', 'g');
 
@@ -47,6 +47,8 @@ const isIntArray = (v) => Array.isArray(v) && v.length > 0 && v.every(Number.isI
 const isStrArray = (v) =>
   Array.isArray(v) && v.length > 0 && v.every((x) => typeof x === 'string' && x.trim() !== '');
 
+const FITMENT_BLOCKS = ['tire_family', 'rim_diameters', 'tire_sections', 'brake_disc', 'brake_caliper'];
+
 /**
  * Fautes de FORME d'un fitment_specs fourni (indépendant de la catégorie).
  * Retour : liste de libellés "chemin (attendu)" — vide si conforme ou absent.
@@ -57,38 +59,34 @@ function fitmentShapeFaults(fs) {
   const faults = [];
 
   for (const block of Object.keys(fs)) {
-    if (block !== 'wheel' && block !== 'brake') faults.push(`fitment_specs.${block} (bloc inconnu)`);
+    if (!FITMENT_BLOCKS.includes(block)) faults.push(`fitment_specs.${block} (bloc inconnu)`);
   }
 
-  const brake = fs.brake;
-  if (brake != null) {
-    if (typeof brake !== 'object' || Array.isArray(brake)) {
-      faults.push('fitment_specs.brake (objet attendu)');
+  if (fs.tire_family !== undefined && !TIRE_FAMILIES.includes(fs.tire_family)) {
+    faults.push('tire_family ("pneumatic"|"solid" attendu)');
+  }
+  if (fs.rim_diameters !== undefined && !isStrArray(fs.rim_diameters)) {
+    faults.push('rim_diameters (tableau de codes strings attendu)');
+  }
+  if (fs.tire_sections !== undefined && !isStrArray(fs.tire_sections)) {
+    faults.push('tire_sections (tableau de codes strings attendu)');
+  }
+  if (fs.brake_caliper !== undefined && !isStrArray(fs.brake_caliper)) {
+    faults.push('brake_caliper (tableau de codes strings attendu)');
+  }
+
+  const disc = fs.brake_disc;
+  if (disc !== undefined) {
+    if (disc == null || typeof disc !== 'object' || Array.isArray(disc)) {
+      faults.push('brake_disc (objet attendu)');
     } else {
-      for (const k of BRAKE_KEYS) {
-        if (brake[k] !== undefined && !isIntArray(brake[k])) {
-          faults.push(`brake.${k} (tableau d'entiers attendu)`);
+      for (const k of Object.keys(disc)) {
+        if (!BRAKE_DISC_KEYS.includes(k)) faults.push(`brake_disc.${k} (clé inconnue)`);
+      }
+      for (const k of BRAKE_DISC_KEYS) {
+        if (disc[k] !== undefined && !isStrArray(disc[k])) {
+          faults.push(`brake_disc.${k} (tableau de codes strings attendu)`);
         }
-      }
-    }
-  }
-
-  const wheel = fs.wheel;
-  if (wheel != null) {
-    if (typeof wheel !== 'object' || Array.isArray(wheel)) {
-      faults.push('fitment_specs.wheel (objet attendu)');
-    } else {
-      if (wheel.type !== undefined && wheel.type !== 'pneumatic' && wheel.type !== 'solid') {
-        faults.push('wheel.type ("pneumatic"|"solid" attendu)');
-      }
-      if (wheel.rim_diameter !== undefined && !isStrArray(wheel.rim_diameter)) {
-        faults.push('wheel.rim_diameter (tableau de strings attendu)');
-      }
-      if (wheel.tire_width !== undefined && !isStrArray(wheel.tire_width)) {
-        faults.push('wheel.tire_width (tableau de strings attendu)');
-      }
-      if (wheel.rim_width_mm !== undefined && !isIntArray(wheel.rim_width_mm)) {
-        faults.push('wheel.rim_width_mm (tableau d\'entiers attendu)');
       }
     }
   }
@@ -108,19 +106,21 @@ function requiredKeyFaults(part, rule) {
   }
 
   const fs = part?.fitment_specs;
-  if (rule.kind === 'brake') {
-    const brake = fs?.brake;
-    return BRAKE_KEYS.filter((k) => !isIntArray(brake?.[k])).map((k) => `brake.${k}`);
+
+  if (rule.kind === 'tire') {
+    const missing = [];
+    if (fs?.tire_family !== rule.family) missing.push(`tire_family="${rule.family}"`);
+    if (!isStrArray(fs?.rim_diameters)) missing.push('rim_diameters');
+    if (!isStrArray(fs?.tire_sections)) missing.push('tire_sections');
+    return missing;
   }
 
-  if (rule.kind === 'wheel') {
-    const wheel = fs?.wheel;
-    const missing = [];
-    if (wheel?.type !== rule.type) missing.push(`wheel.type="${rule.type}"`);
-    if (!isStrArray(wheel?.rim_diameter)) missing.push('wheel.rim_diameter');
-    if (rule.type === 'pneumatic' && !isStrArray(wheel?.tire_width)) missing.push('wheel.tire_width');
-    if (rule.type === 'solid' && !isIntArray(wheel?.rim_width_mm)) missing.push('wheel.rim_width_mm');
-    return missing;
+  if (rule.kind === 'disc') {
+    return BRAKE_DISC_KEYS.filter((k) => !isStrArray(fs?.brake_disc?.[k])).map((k) => `brake_disc.${k}`);
+  }
+
+  if (rule.kind === 'caliper') {
+    return isStrArray(fs?.brake_caliper) ? [] : ['brake_caliper'];
   }
 
   return [];

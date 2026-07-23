@@ -9,10 +9,10 @@
         "sku": "DSQ-160-6T-EX",
         "price": 19.9,
         "fitment_specs": {
-          "brake": {
-            "disc_diameter": [160],
-            "disc_pcd": [48],
-            "disc_holes": [6]
+          "brake_disc": {
+            "diameters": ["160"],
+            "pcds": ["48"],
+            "holes": ["6"]
           }
         }
       }
@@ -23,17 +23,15 @@
     "categorySlug": "pneus",
     "parts": [
       {
-        "name": "Pneu 10x2.125 tubeless",
+        "name": "Pneu 10x2.75 semi off-road",
         "slug": "pneu-10x2125-tubeless-example",
         "sku": "PNE-10X2125-EX",
         "price": 14.9,
         "compatibility_hints": { "tire_size": "10", "voltage": null },
         "fitment_specs": {
-          "wheel": {
-            "type": "pneumatic",
-            "rim_diameter": ["10"],
-            "tire_width": ["2.125", "2.5"]
-          }
+          "tire_family": "pneumatic",
+          "rim_diameters": ["6.5"],
+          "tire_sections": ["10x2.75"]
         }
       }
     ]
