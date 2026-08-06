@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { resolveCategoryColor } from "@/lib/categoryColors";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 
 interface Props {
@@ -8,8 +9,37 @@ interface Props {
 }
 
 /**
- * Cartes catégories sombres : accent vert unique, photo produit centrée,
- * label bas et badge décompte. Multi-sélection cumulable.
+ * Convertit un HEX #RGB ou #RRGGBB en rgba().
+ * Fallback vert signature si le format est inattendu.
+ */
+const hexToRgba = (hex: string, alpha: number): string => {
+  const trimmed = hex.trim();
+  if (!trimmed.startsWith("#")) return `rgba(74, 124, 89, ${alpha})`;
+
+  let normalized = trimmed.slice(1);
+  if (normalized.length === 3) {
+    normalized = normalized
+      .split("")
+      .map((c) => c + c)
+      .join("");
+  }
+  if (normalized.length !== 6) return `rgba(74, 124, 89, ${alpha})`;
+
+  const r = parseInt(normalized.slice(0, 2), 16);
+  const g = parseInt(normalized.slice(2, 4), 16);
+  const b = parseInt(normalized.slice(4, 6), 16);
+
+  if (Number.isNaN(r) || Number.isNaN(g) || Number.isNaN(b)) {
+    return `rgba(74, 124, 89, ${alpha})`;
+  }
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+
+/**
+ * Cartes catégories sombres : couleur signature dynamique en actif,
+ * photo produit centrée, label bas et badge décompte.
+ * Multi-sélection cumulable.
  */
 const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   if (categories.length === 0) return null;
@@ -22,7 +52,7 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
       `}</style>
 
       <div
-        className="pt-chips-scroll flex gap-3 overflow-x-auto pb-4 pr-4 sm:grid sm:grid-cols-4 lg:grid-cols-7 sm:overflow-visible sm:pr-0"
+        className="pt-chips-scroll flex gap-3 overflow-x-auto pb-4 scrollbar-none sm:grid sm:grid-cols-4 lg:grid-cols-7 sm:overflow-visible"
         style={{ WebkitOverflowScrolling: "touch" }}
         role="group"
         aria-label="Filtrer par catégorie (multi-sélection)"
@@ -49,11 +79,13 @@ const CategoryCard = ({
   active: boolean;
   onClick: () => void;
 }) => {
+  const hexColor = resolveCategoryColor(group.color, group.slug);
+
   const base =
-    "relative h-24 sm:h-28 min-w-[110px] shrink-0 sm:min-w-0 rounded-2xl p-3 flex flex-col items-center justify-between transition-all cursor-pointer group";
+    "relative h-28 sm:h-32 min-w-[115px] shrink-0 sm:min-w-0 rounded-2xl p-3 flex flex-col items-center justify-between transition-all cursor-pointer group";
   const state = active
-    ? "bg-[#4A7C59]/20 border-2 border-[#4A7C59] shadow-[0_0_20px_rgba(74,124,89,0.3)] text-white"
-    : "bg-neutral-900/80 border border-white/10 hover:border-white/25";
+    ? "bg-neutral-900/95 text-white border-2"
+    : "bg-neutral-900/70 backdrop-blur-md border border-white/10 hover:border-white/25 hover:-translate-y-1";
 
   return (
     <motion.button
@@ -64,14 +96,22 @@ const CategoryCard = ({
       whileTap={{ scale: 0.96 }}
       transition={{ type: "spring", stiffness: 420, damping: 24 }}
       className={`${base} ${state}`}
+      style={
+        active
+          ? {
+              borderColor: hexColor,
+              boxShadow: `0 0 20px ${hexToRgba(hexColor, 0.35)}`,
+            }
+          : undefined
+      }
     >
       {/* Badge décompte */}
-      <span className="absolute top-2 right-2 bg-white/10 px-1.5 py-0.5 rounded-full text-[10px] text-white/70">
+      <span className="absolute top-2 right-2 bg-white/10 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-bold text-white/90">
         {group.count}
       </span>
 
       {/* Visuel produit */}
-      <span className="flex h-12 sm:h-14 w-full items-center justify-center pt-1">
+      <span className="flex h-14 sm:h-16 w-full items-center justify-center pt-1">
         {group.image_url ? (
           <img
             src={group.image_url}
@@ -79,10 +119,10 @@ const CategoryCard = ({
             aria-hidden
             loading="lazy"
             decoding="async"
-            className="h-12 sm:h-14 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform"
+            className="h-14 sm:h-16 w-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-200"
           />
         ) : group.icon ? (
-          <span className="text-2xl leading-none group-hover:scale-105 transition-transform">
+          <span className="text-3xl leading-none group-hover:scale-105 transition-transform duration-200">
             {group.icon}
           </span>
         ) : (
@@ -93,7 +133,7 @@ const CategoryCard = ({
       </span>
 
       {/* Label */}
-      <span className="w-full text-xs font-bold uppercase tracking-wider text-center text-white line-clamp-1">
+      <span className="w-full text-xs font-black uppercase tracking-wider text-center text-white line-clamp-1">
         {group.name}
       </span>
     </motion.button>
