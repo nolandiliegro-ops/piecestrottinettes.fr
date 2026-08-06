@@ -45,6 +45,8 @@ const CGV = lazy(() => import("./pages/CGV"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 const Contact = lazy(() => import("./pages/Contact"));
 const OAuthConsent = lazy(() => import("./pages/OAuthConsent"));
+const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
+
 
 const queryClient = new QueryClient();
 
