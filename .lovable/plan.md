@@ -1,72 +1,47 @@
-Refonte de la grille de catégories sur Catalogue et ajustement des espacements Landing
+Refonte des filtres de catégories — Home (bloc sombre) et Catalogue
 
 Objectif
-- Transformer le conteneur actuellement en `flex-wrap` du sélecteur de catégories sur `/catalogue` en une grille CSS responsive stricte.
-- Augmenter l'espacement vertical du bloc sombre "POUR TA KUKIRIN" sur la page d'accueil pour fluidifier la transition entre les sections beiges.
+- Remplacer les tuiles carrées blanches du bloc sombre "POUR TA ..." par des chips sombres (segmented pills), sans coche ni liseré coloré.
+- Réduire fortement la hauteur des cartes de catégories du Catalogue pour remonter les produits au-dessus de la ligne de flottaison.
 
 Fichiers concernés
-1. `src/components/catalogue/CategoryBentoGrid.tsx`
-2. `src/components/home/ShopByCompatibility/index.tsx`
+1. `src/components/home/ShopByCompatibility/CategoryPills.tsx` (refonte du rendu, API du composant inchangée)
+2. `src/components/catalogue/CategoryBentoGrid.tsx` (format des cartes)
 
-Analyse de l'existant
+Analyse de l'existant (vérifié)
+- `CategoryPills` reçoit `categories: CategoryGroupV2[]`, `selectedSlugs: Set<string>`, `onToggle(slug)`. Chaque groupe porte `name`, `slug`, `count`, `image_url`, `icon`, `color`. Il est rendu depuis `ShopByCompatibility/index.tsx` — aucun changement d'interface nécessaire, donc la logique multi-sélection et le calcul des compteurs restent intacts.
+- Rendu actuel : tuiles verticales 96×116px, fond blanc/teinté, bordure accent, barre de couleur en haut, pastille de coche, label + compteur. C'est ce visuel qui est supprimé.
+- `CategoryBentoGrid` (page `/catalogue`) : grille `grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4`, tuiles `aspect-[4/5]` avec image plein cadre, icône centrée, label en onglet bas-gauche, lien `ArrowUpRight` en absolu. Pas de badge de décompte dans ce composant aujourd'hui : les compteurs ne sont pas dans les props (`categories`, `activeCategory`, `onCategoryChange`, `isLoading`).
 
-`CategoryBentoGrid.tsx`
-- Conteneur actuel : `flex flex-wrap justify-center gap-3`.
-- Chaque tuile ("Toutes" + catégories) a une largeur fixe : `w-24 md:w-28 lg:w-32 aspect-[4/5]`.
-- L'image est animée en hover sur un `motion.div` interne.
-- Un lien secondaire `ArrowUpRight` est positionné en absolu dans chaque tuile.
-- 8 tuiles au total sont attendues : "Toutes", Plaquettes, Disques, Accessoires Divers, Pneus Gonflables, Pneus Pleins, Chambres à Air, Chargeurs.
+1. Home — Filter Chips sombres (`CategoryPills.tsx`)
 
-`ShopByCompatibility/index.tsx`
-- Le bloc sombre est le `section` racine qui a un padding vertical actuel de `py-8 lg:py-12` (ligne 211).
-- C'est le wrapper qui contient le titre "Pour ta KUKIRIN" et la recherche de pièces compatibles.
-- Sur `Index.tsx`, ce bloc est inséré entre `HeroSearchFirst` et `BrandWallSection`.
+Structure d'un chip (bouton, `role="checkbox"`, `aria-checked` conservés) :
+- Conteneur : scroll horizontal conservé (`flex gap-2 overflow-x-auto`, scrollbar masquée, snap), passage en `flex-wrap` à partir de `sm` pour éviter un scroll inutile sur desktop.
+- Inactif : `bg-neutral-800/70 border border-neutral-700/60 text-neutral-300 hover:bg-neutral-700/50 rounded-full px-4 py-2.5 flex items-center gap-2.5 transition-all`
+- Actif : `bg-[#4A7C59]/20 border border-[#4A7C59] text-white font-medium shadow-[0_0_12px_rgba(74,124,89,0.3)]`
+- Contenu : avatar rond 28×28 (image `image_url` en `object-cover`, sinon emoji `icon`, sinon initiale sur fond neutre) + nom (`text-sm`, `whitespace-nowrap`) + badge compteur `bg-neutral-900/80 px-2 py-0.5 rounded-full text-xs`.
+- Supprimés : barre d'accent supérieure, pastille de coche SVG, bordure teintée par couleur de marque, `resolveCategoryColor` (import retiré s'il devient inutile).
+- Conservé : `whileTap` léger, hauteur mini ≥ 44px pour le tactile.
 
-Plan de modification
+2. Catalogue — bandeaux compacts (`CategoryBentoGrid.tsx`)
 
-1. Grille de catégories (`CategoryBentoGrid.tsx`)
+- Tuiles passées de `aspect-[4/5]` à `h-16 sm:h-20 rounded-xl`, en gardant la grille `grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3`.
+- Nouvelle disposition en flux (plus d'image plein cadre) : miniature carrée à gauche (`h-full aspect-square`, `object-cover`, fallback icône Lucide via `resolveCategoryIcon` sur fond carbon), nom au centre (`text-sm font-semibold`, `line-clamp-2`), zone droite pour le lien `ArrowUpRight`.
+- Badge décompte à droite : les compteurs ne sont pas disponibles dans les props actuelles. Deux options — je retiens (a) par défaut :
+  (a) rendre le badge conditionnel via une prop optionnelle `counts?: Record<string, number>` non fournie pour l'instant : le slot est prêt, aucun chiffre affiché tant que la page ne le passe pas ;
+  (b) brancher `useCategoryPartsCount()` dans le composant pour afficher un vrai décompte (ajoute une requête, à valider).
+- État actif : fond `bg-mineral/15` + `border-mineral` + halo léger, au lieu du `ring` + `boxShadow` verts actuels (moins lourd sur un bandeau bas).
+- Skeleton aligné : même grille, `h-16 sm:h-20 rounded-xl`.
+- Le lien `ArrowUpRight` reste un frère du bouton (jamais imbriqué), positionné en absolu à droite, cellule parente `relative`.
 
-Remplacer le conteneur `flex flex-wrap justify-center gap-3` par une grille CSS responsive :
-```
-grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4
-```
-- Supprimer les largeurs fixes (`w-24 md:w-28 lg:w-32`) et la classe `aspect-[4/5]` des tuiles individuelles.
-- Remplacer par une hauteur/ratio cohérent en grid : par exemple `aspect-[4/5]` conservé au niveau de chaque cellule, ou une hauteur fixe `h-32 sm:h-36 lg:h-40` pour garantir l'alignement horizontal des lignes.
-- Supprimer `flex-shrink-0` devenu inutile.
-- Garder le bouton "Toutes" et les 7 catégories dans la même grille, sans conteneur intermédiaire séparé.
-- Maintenir le label en bas à gauche (onglet), l'icône centrée, le lien `ArrowUpRight` en haut à droite, et les états actifs (liseré + ombre).
-- Préserver l'animation hover et l'état de chargement skeleton.
-
-Résultat attendu : sur `lg`, 4 colonnes × 2 lignes = 8 cartes exactement, sans orpheline sur une 3ème ligne.
-
-2. Espacement Landing (`ShopByCompatibility/index.tsx`)
-
-Augmenter le padding vertical du conteneur principal (ligne 211) :
-- Avant : `py-8 lg:py-12`
-- Après : `py-16 lg:py-20`
-
-Vérification préalable : le conteneur interne (`max-w-7xl mx-auto px-4 lg:px-8 ...`) a déjà son propre padding. On ne modifie que le padding vertical du `section` racine, ce qui étend le bloc sombre sans toucher au padding horizontal ni à la capsule interne.
-
-Résultat attendu : une transition plus aérée entre le haut de page beige et le bloc sombre, puis entre le bloc sombre et la section suivante.
-
-Risques et mitigation
-
-- Régression sur l'affichage des images : en passant de flex à grid, le positionnement absolu des overlays et du lien reste identique. Les images en `object-cover` continueront de remplir la tuile.
-- Régression sur le skeleton : le skeleton de chargement actuellement en `flex` sera remplacé par la même grille (`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4`) pour préserver l'alignement.
-- Régression sur le lien secondaire : il reste positionné en absolu dans la cellule, mais il faut s'assurer que la cellule parente est bien `relative`.
-- Régression responsive : le breakpoint `sm` correspond à 640px et `lg` à 1024px. Sur mobile, 2 colonnes permettent d'afficher 4 lignes de 2 cartes.
-- Couleur beige : le plan mentionne #F5F0E8 mais le code utilise `var(--token-global-background, #FAFAF8)` ; on ne touche pas à la couleur de fond, seulement à l'espacement.
+Risques et vérifications
+- `ShopByCompatibility/index.tsx` n'est pas modifié : props et logique de filtrage inchangées, aucun risque sur les compteurs ou la sélection cumulée.
+- Contraste sur le bloc sombre : le vert `#4A7C59` sur fond `#2A2A2A` reste lisible ; le texte actif passe en blanc.
+- Catalogue : la baisse de hauteur supprime l'effet de zoom hover sur l'image plein cadre — remplacé par un simple hover de fond, plus adapté à un bandeau.
 
 Plan de test localhost
-
-1. Ouvrir `/catalogue`.
-2. Vérifier que les 8 tuiles s'affichent en 4 colonnes × 2 lignes sur desktop (largeur >= 1024px).
-3. Vérifier le responsive : 3 colonnes sur tablette (640-1023px), 2 colonnes sur mobile (<640px).
-4. Vérifier que le clic sur une catégorie active toujours le filtre et que le lien `ArrowUpRight` naviguera vers `/categorie/:slug`.
-5. Ouvrir `/` et vérifier que le bloc sombre "POUR TA KUKIRIN" a plus de marge verticale (`py-16 lg:py-20`).
-6. Vérifier que les transitions entre les sections beiges et le bloc sombre sont fluides.
-
-Synthèse des modifications
-
-- `src/components/catalogue/CategoryBentoGrid.tsx` : remplacer `flex-wrap` par une grille CSS responsive, supprimer les largeurs fixes, aligner les tuiles et le skeleton sur la même grille.
-- `src/components/home/ShopByCompatibility/index.tsx` : augmenter le padding vertical du `section` racine de `py-8 lg:py-12` à `py-16 lg:py-20`.
+1. `/` : chips sombres, aucun carré blanc, aucune coche ; sélection multiple cumulable ; compteurs corrects ; scroll horizontal mobile OK.
+2. `/` mobile 375px : chips sur une ligne scrollable, touch target ≥ 44px.
+3. `/catalogue` : 8 bandeaux compacts, produits visibles plus haut ; 4 colonnes ≥1024px, 3 en `sm`, 2 en mobile.
+4. Clic catégorie = filtre appliqué ; clic `ArrowUpRight` = navigation `/categorie/:slug`.
+5. Skeleton sans saut de layout.
