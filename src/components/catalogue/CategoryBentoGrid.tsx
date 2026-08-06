@@ -78,7 +78,7 @@ const CategoryBentoGrid = ({
         const count = counts?.[category.id];
 
         return (
-          <div key={category.id} className="relative">
+          <div key={category.id} className="relative group">
             <motion.button
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
