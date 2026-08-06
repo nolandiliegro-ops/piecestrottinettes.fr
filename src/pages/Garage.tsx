@@ -338,7 +338,27 @@ const Garage = () => {
                     >
                       <TutosCard scooterModelId={model?.id} />
                     </Suspense>
-                    <ShareBuildCard />
+                    {/* Carte Rider v7 — ouverture en lightbox plein écran */}
+                    <button
+                      type="button"
+                      onClick={() => setRiderCardOpen(true)}
+                      className="group relative w-full overflow-hidden rounded-3xl border border-white/40 bg-white/[0.42] p-5 text-left backdrop-blur-2xl shadow-lg shadow-black/10 transition-all duration-200 hover:bg-white/60 hover:shadow-xl"
+                    >
+                      <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/90 to-transparent" />
+                      <span className="flex items-center gap-3">
+                        <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-green-700 text-white shadow-md shadow-green-900/30 transition-transform duration-200 group-hover:scale-105">
+                          <CreditCard className="size-5" />
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block text-sm font-black uppercase tracking-tight text-gray-900">
+                            Ma Carte Collector
+                          </span>
+                          <span className="block text-xs text-gray-600">
+                            Partage ta carte
+                          </span>
+                        </span>
+                      </span>
+                    </button>
                   </aside>
                 </div>
 
