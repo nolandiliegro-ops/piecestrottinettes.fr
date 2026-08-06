@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
+import { resolveCategoryColor } from "@/lib/categoryColors";
 
 interface Props {
   categories: CategoryGroupV2[];
@@ -7,9 +8,21 @@ interface Props {
   onToggle: (slug: string) => void;
 }
 
+/** HEX -> rgba() (Tailwind ne peut pas interpoler une couleur dynamique). */
+const hexToRgba = (hex: string, alpha: number): string => {
+  const clean = hex.replace("#", "");
+  const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean;
+  const int = parseInt(full, 16);
+  if (Number.isNaN(int)) return `rgba(74,124,89,${alpha})`;
+  const r = (int >> 16) & 255;
+  const g = (int >> 8) & 255;
+  const b = int & 255;
+  return `rgba(${r},${g},${b},${alpha})`;
+};
+
 /**
- * Filter Chips sombres (segmented pills) : avatar rond + nom + badge décompte.
- * Multi-sélection cumulable, scroll horizontal mobile, wrap dès sm.
+ * Cartes glassmorphic 3D : photo produit centrée, label bas, badge décompte.
+ * Multi-sélection cumulable, scroll horizontal mobile, grille dès sm.
  */
 const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   if (categories.length === 0) return null;
@@ -22,13 +35,13 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
       `}</style>
 
       <div
-        className="pt-chips-scroll flex gap-2 overflow-x-auto pr-4 pb-1 sm:flex-wrap sm:overflow-visible sm:pr-0"
+        className="pt-chips-scroll flex gap-3 overflow-x-auto pb-4 pr-4 sm:grid sm:grid-cols-4 lg:grid-cols-7 sm:overflow-visible sm:pr-0"
         style={{ WebkitOverflowScrolling: "touch" }}
         role="group"
         aria-label="Filtrer par catégorie (multi-sélection)"
       >
         {categories.map((c) => (
-          <CategoryChip
+          <CategoryCard
             key={c.slug}
             group={c}
             active={selectedSlugs.has(c.slug)}
@@ -40,7 +53,7 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   );
 };
 
-const CategoryChip = ({
+const CategoryCard = ({
   group,
   active,
   onClick,
@@ -49,11 +62,13 @@ const CategoryChip = ({
   active: boolean;
   onClick: () => void;
 }) => {
+  const accent = resolveCategoryColor((group as { color?: string | null }).color, group.slug);
+
   const base =
-    "flex-shrink-0 h-11 rounded-full px-4 py-2.5 flex items-center gap-2.5 transition-all border";
+    "relative h-24 sm:h-28 min-w-[104px] shrink-0 sm:min-w-0 rounded-2xl bg-neutral-900/60 backdrop-blur-md border border-white/10 p-3 flex flex-col items-center justify-between transition-all cursor-pointer hover:-translate-y-1";
   const state = active
-    ? "bg-[#4A7C59]/20 border-[#4A7C59] text-white font-medium shadow-[0_0_12px_rgba(74,124,89,0.3)]"
-    : "bg-neutral-800/70 border-neutral-700/60 text-neutral-300 hover:bg-neutral-700/50";
+    ? "border-2 bg-neutral-900/90 text-white"
+    : "text-neutral-300 hover:border-white/20";
 
   return (
     <motion.button
@@ -64,9 +79,19 @@ const CategoryChip = ({
       whileTap={{ scale: 0.96 }}
       transition={{ type: "spring", stiffness: 420, damping: 24 }}
       className={`${base} ${state}`}
+      style={
+        active
+          ? { borderColor: accent, boxShadow: `0 0 20px ${hexToRgba(accent, 0.35)}` }
+          : undefined
+      }
     >
-      {/* Avatar rond 28x28 */}
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full bg-neutral-900/70">
+      {/* Badge décompte */}
+      <span className="absolute top-2 right-2 bg-white/10 backdrop-blur px-1.5 py-0.5 rounded-full text-[10px] text-white/80">
+        {group.count}
+      </span>
+
+      {/* Visuel produit */}
+      <span className="flex h-12 sm:h-14 w-full items-center justify-center pt-1">
         {group.image_url ? (
           <img
             src={group.image_url}
@@ -74,23 +99,20 @@ const CategoryChip = ({
             aria-hidden
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover"
+            className="h-12 sm:h-14 w-auto object-contain drop-shadow-md"
           />
         ) : group.icon ? (
-          <span className="text-sm leading-none">{group.icon}</span>
+          <span className="text-2xl leading-none">{group.icon}</span>
         ) : (
-          <span className="text-xs font-bold leading-none">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-bold text-white">
             {group.name.charAt(0).toUpperCase()}
           </span>
         )}
       </span>
 
-      {/* Nom */}
-      <span className="text-sm whitespace-nowrap">{group.name}</span>
-
-      {/* Badge décompte */}
-      <span className="bg-neutral-900/80 px-2 py-0.5 rounded-full text-xs text-neutral-300">
-        {group.count}
+      {/* Label */}
+      <span className="text-xs font-bold text-white uppercase tracking-wider text-center line-clamp-1 w-full">
+        {group.name}
       </span>
     </motion.button>
   );
