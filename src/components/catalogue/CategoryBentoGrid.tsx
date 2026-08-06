@@ -33,13 +33,14 @@ const CategoryBentoGrid = ({
 
   if (isLoading) {
     return (
-      <div className="flex flex-wrap justify-center gap-3">
-        {[...Array(7)].map((_, i) => (
-          <Skeleton key={i} className="w-24 md:w-28 lg:w-32 aspect-[4/5] rounded-2xl" />
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {[...Array(8)].map((_, i) => (
+          <Skeleton key={i} className="aspect-[4/5] rounded-2xl" />
         ))}
       </div>
     );
   }
+
 
   return (
     <div className="flex flex-wrap justify-center gap-3">
