@@ -53,6 +53,7 @@ const Garage = () => {
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [riderCardOpen, setRiderCardOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
