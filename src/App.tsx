@@ -93,7 +93,9 @@ function App() {
             <Route path="/marque/:slug" element={<Brand />} />
             <Route path="/marques" element={<Brands />} />
             <Route path="/categorie/:slug" element={<Categorie />} />
+            <Route path="/rider/:username" element={<RiderPublicCard />} />
             <Route path="/login" element={<Login />} />
+
             <Route path="/register" element={<Register />} />
             <Route path="/panier" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
