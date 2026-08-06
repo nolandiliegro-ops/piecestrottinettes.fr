@@ -34,6 +34,8 @@ import DescriptionCard from '@/components/garage/DescriptionCard';
 
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
+const RiderCard = lazy(() => import('@/components/garage/RiderCard'));
+
 
 import {
   Sheet,
@@ -218,7 +220,15 @@ const Garage = () => {
               ) : (
                 /* === ROOFTOP LAYOUT === */
                 <>
+                {/* Carte Rider v7 — vitrine partageable */}
+                <div className="flex justify-center mb-6">
+                  <Suspense fallback={<div className="h-[520px] w-[320px] rounded-2xl bg-white/20 animate-pulse" />}>
+                    <RiderCard mode="owner" />
+                  </Suspense>
+                </div>
+
                 <div
+
                   className="
                     flex flex-col gap-4
                     md:max-w-2xl md:mx-auto
