@@ -208,7 +208,7 @@ const ShopByCompatibility = () => {
 
   return (
     <section className="relative w-full" style={{ backgroundColor: darkBlockColor }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-20">
         <div
           className="relative overflow-hidden rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 transition-[background] duration-[400ms] ease-out"
           style={{
