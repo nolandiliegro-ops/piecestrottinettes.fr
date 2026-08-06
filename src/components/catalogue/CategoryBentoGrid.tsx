@@ -43,7 +43,7 @@ const CategoryBentoGrid = ({
 
 
   return (
-    <div className="flex flex-wrap justify-center gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* "Toutes" button */}
       <motion.button
         whileHover={{ scale: 1.05 }}
@@ -51,7 +51,7 @@ const CategoryBentoGrid = ({
         transition={{ duration: 0.3 }}
         onClick={() => onCategoryChange(null)}
         className={cn(
-          "relative w-24 md:w-28 lg:w-32 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0 border border-white/10",
+          "relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10",
           "transition-all duration-300",
           activeCategory === null && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
         )}
@@ -59,6 +59,7 @@ const CategoryBentoGrid = ({
           boxShadow: "0 0 20px 4px rgba(147, 181, 161, 0.5)"
         } : {}}
       >
+
         {/* Background with hover zoom */}
         <motion.div 
           className="absolute inset-0 bg-gradient-to-br from-carbon/90 to-carbon/60"
