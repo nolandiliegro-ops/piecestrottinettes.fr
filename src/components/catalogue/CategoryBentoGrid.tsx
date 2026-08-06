@@ -99,7 +99,7 @@ const CategoryBentoGrid = ({
         const categoryImage = typeof catImgData === 'string' ? catImgData : catImgData?.image_url;
 
         return (
-          <div key={category.id} className="relative w-24 md:w-28 lg:w-32 flex-shrink-0">
+          <div key={category.id} className="relative">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
