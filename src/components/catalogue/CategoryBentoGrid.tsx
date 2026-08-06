@@ -36,19 +36,19 @@ const CategoryBentoGrid = ({
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {[...Array(8)].map((_, i) => (
-          <Skeleton key={i} className="h-16 sm:h-20 rounded-xl" />
+          <Skeleton key={i} className="h-32 sm:h-36 rounded-2xl" />
         ))}
       </div>
     );
   }
 
   const cardBase =
-    "relative w-full h-16 sm:h-20 rounded-xl overflow-hidden border flex items-center text-left transition-all duration-300";
+    "relative w-full h-32 sm:h-36 rounded-2xl bg-white/80 backdrop-blur-sm border border-neutral-200/80 p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden group flex flex-col justify-between items-start text-left";
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* "Toutes" button */}
       <motion.button
         whileTap={{ scale: 0.98 }}
@@ -56,18 +56,14 @@ const CategoryBentoGrid = ({
         onClick={() => onCategoryChange(null)}
         className={cn(
           cardBase,
-          activeCategory === null
-            ? "bg-[#4A7C59]/15 border-[#4A7C59]"
-            : "bg-white border-black/10 hover:border-black/20"
+          activeCategory === null && "border-[#4A7C59] border-2 bg-[#4A7C59]/10"
         )}
       >
-        <span className="h-full aspect-square shrink-0 flex items-center justify-center bg-carbon rounded-l-xl">
-          <LayoutGrid className="w-5 h-5 sm:w-6 sm:h-6 text-white/85" />
+        <span className="flex h-20 w-full items-center justify-center">
+          <LayoutGrid className="h-10 w-10 text-neutral-800 group-hover:scale-105 transition-transform" />
         </span>
-        <span className="flex-1 min-w-0 px-3 pr-9">
-          <span className="block text-sm font-semibold line-clamp-2 text-foreground">
-            Toutes
-          </span>
+        <span className="text-sm font-black text-neutral-900 uppercase tracking-tight line-clamp-2">
+          Toutes
         </span>
       </motion.button>
 
@@ -87,33 +83,35 @@ const CategoryBentoGrid = ({
               onClick={() => onCategoryChange(category.id)}
               className={cn(
                 cardBase,
-                isActive
-                  ? "bg-[#4A7C59]/15 border-[#4A7C59]"
-                  : "bg-white border-black/10 hover:border-black/20"
+                isActive && "border-[#4A7C59] border-2 bg-[#4A7C59]/10"
               )}
             >
-              {/* Miniature à gauche */}
-              {categoryImage ? (
-                <img
-                  src={categoryImage}
-                  alt={typeof catImgData === "string" ? category.name : (catImgData?.alt_text || category.name)}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full aspect-square shrink-0 object-cover rounded-l-xl"
-                />
-              ) : (
-                <span className="h-full aspect-square shrink-0 flex items-center justify-center bg-carbon rounded-l-xl">
-                  <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white/85" />
-                </span>
-              )}
+              {/* Visuel produit détouré */}
+              <span className="flex h-20 w-full items-center justify-center">
+                {categoryImage ? (
+                  <img
+                    src={categoryImage}
+                    alt={
+                      typeof catImgData === "string"
+                        ? category.name
+                        : catImgData?.alt_text || category.name
+                    }
+                    loading="lazy"
+                    decoding="async"
+                    className="h-20 w-auto object-contain group-hover:scale-105 transition-transform"
+                  />
+                ) : (
+                  <IconComponent className="h-10 w-10 text-neutral-800 group-hover:scale-105 transition-transform" />
+                )}
+              </span>
 
-              {/* Nom au centre */}
-              <span className="flex-1 min-w-0 px-3 pr-9 flex items-center gap-2">
-                <span className="block text-sm font-semibold line-clamp-2 text-foreground">
+              {/* Label + décompte */}
+              <span className="flex items-center gap-2 min-w-0">
+                <span className="text-sm font-black text-neutral-900 uppercase tracking-tight line-clamp-2">
                   {category.name}
                 </span>
                 {typeof count === "number" && (
-                  <span className="shrink-0 bg-black/5 px-2 py-0.5 rounded-full text-xs text-foreground/70">
+                  <span className="shrink-0 bg-black/5 px-2 py-0.5 rounded-full text-xs font-medium text-neutral-700">
                     {count}
                   </span>
                 )}
@@ -125,7 +123,7 @@ const CategoryBentoGrid = ({
               to={`/categorie/${category.slug}`}
               aria-label={`Voir la page ${category.name}`}
               onClick={(e) => e.stopPropagation()}
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center rounded-full p-1.5 bg-black/10 text-carbon hover:bg-black/20 transition-colors"
+              className="absolute top-3 right-3 z-10 flex items-center justify-center bg-neutral-900 text-white p-1.5 rounded-full opacity-80 hover:opacity-100 group-hover:opacity-100 transition-opacity"
             >
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
