@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { resolveCategoryColor } from "@/lib/categoryColors";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 
 interface Props {
@@ -8,19 +7,9 @@ interface Props {
   onToggle: (slug: string) => void;
 }
 
-const FONT = "'Inter', sans-serif";
-
-const hexToRgba = (hex: string, alpha: number): string => {
-  const m = /^#?([0-9a-fA-F]{6})$/.exec(hex);
-  if (!m) return hex;
-  const n = parseInt(m[1], 16);
-  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
-};
-
 /**
- * Tuiles catégories "Style 4" (gamification) : image + label + compteur,
- * couleur d'accent issue de la BDD (fallback mapping). Multi-sélection cumulable,
- * scroll horizontal au débordement (swipe natif mobile).
+ * Filter Chips sombres (segmented pills) : avatar rond + nom + badge décompte.
+ * Multi-sélection cumulable, scroll horizontal mobile, wrap dès sm.
  */
 const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   if (categories.length === 0) return null;
@@ -28,21 +17,20 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   return (
     <>
       <style>{`
-        .pt-tiles-scroll::-webkit-scrollbar { display: none; }
-        .pt-tiles-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        .pt-chips-scroll::-webkit-scrollbar { display: none; }
+        .pt-chips-scroll { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
 
       <div
-        className="pt-tiles-scroll flex gap-2.5 overflow-x-auto pb-1 -mx-1 px-1"
-        style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch" }}
+        className="pt-chips-scroll flex gap-2 overflow-x-auto pr-4 pb-1 sm:flex-wrap sm:overflow-visible sm:pr-0"
+        style={{ WebkitOverflowScrolling: "touch" }}
         role="group"
         aria-label="Filtrer par catégorie (multi-sélection)"
       >
         {categories.map((c) => (
-          <CategoryTile
+          <CategoryChip
             key={c.slug}
             group={c}
-            accent={resolveCategoryColor(c.color, c.slug)}
             active={selectedSlugs.has(c.slug)}
             onClick={() => onToggle(c.slug)}
           />
@@ -52,76 +40,33 @@ const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   );
 };
 
-const CategoryTile = ({
+const CategoryChip = ({
   group,
-  accent,
   active,
   onClick,
 }: {
   group: CategoryGroupV2;
-  accent: string;
   active: boolean;
   onClick: () => void;
 }) => {
+  const base =
+    "flex-shrink-0 h-11 rounded-full px-4 py-2.5 flex items-center gap-2.5 transition-all border";
+  const state = active
+    ? "bg-[#4A7C59]/20 border-[#4A7C59] text-white font-medium shadow-[0_0_12px_rgba(74,124,89,0.3)]"
+    : "bg-neutral-800/70 border-neutral-700/60 text-neutral-300 hover:bg-neutral-700/50";
+
   return (
     <motion.button
       type="button"
       role="checkbox"
       aria-checked={active}
       onClick={onClick}
-      whileTap={{ scale: 0.92 }}
+      whileTap={{ scale: 0.96 }}
       transition={{ type: "spring", stiffness: 420, damping: 24 }}
-      className="relative flex-shrink-0 flex flex-col items-center text-center overflow-hidden"
-      style={{
-        scrollSnapAlign: "start",
-        width: 96,
-        minHeight: 116,
-        padding: "10px 8px 8px",
-        borderRadius: 14,
-        // Variante D : fond très légèrement teinté (8%), bordure DISCRÈTE (pas de couleur vive
-        // sur tout le tour) — la couleur vive reste sur la barre du haut + le check.
-        backgroundColor: active ? hexToRgba(accent, 0.08) : "rgba(255,255,255,0.06)",
-        border: active
-          ? `1px solid ${hexToRgba(accent, 0.35)}`
-          : "1px solid rgba(255,255,255,0.12)",
-        boxShadow: "none",
-        transition: "background-color 180ms ease-out, border-color 180ms ease-out",
-      }}
+      className={`${base} ${state}`}
     >
-      {/* Variante D : fine barre de couleur en haut (accent), sobre */}
-      {active && (
-        <span
-          aria-hidden
-          style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, backgroundColor: accent }}
-        />
-      )}
-
-      {/* Check état sélectionné */}
-      {active && (
-        <span
-          aria-hidden
-          className="absolute top-1.5 right-1.5 flex items-center justify-center"
-          style={{ width: 18, height: 18, borderRadius: 999, backgroundColor: accent }}
-        >
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none">
-            <path d="M5 13l4 4L19 7" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </span>
-      )}
-
-      {/* Vignette image / fallback icône */}
-      <span
-        className="flex items-center justify-center"
-        style={{
-          width: 56,
-          height: 56,
-          borderRadius: 12,
-          marginBottom: 7,
-          backgroundColor: group.image_url ? "rgba(255,255,255,0.92)" : hexToRgba(accent, 0.22),
-          overflow: "hidden",
-          flexShrink: 0,
-        }}
-      >
+      {/* Avatar rond 28x28 */}
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full bg-neutral-900/70">
         {group.image_url ? (
           <img
             src={group.image_url}
@@ -129,47 +74,22 @@ const CategoryTile = ({
             aria-hidden
             loading="lazy"
             decoding="async"
-            style={{ width: 48, height: 48, objectFit: "contain" }}
+            className="h-full w-full object-cover"
           />
         ) : group.icon ? (
-          <span style={{ fontSize: 26, lineHeight: 1 }}>{group.icon}</span>
+          <span className="text-sm leading-none">{group.icon}</span>
         ) : (
-          <span
-            aria-hidden
-            style={{ width: 14, height: 14, borderRadius: 999, backgroundColor: accent }}
-          />
+          <span className="text-xs font-bold leading-none">
+            {group.name.charAt(0).toUpperCase()}
+          </span>
         )}
       </span>
 
-      {/* Label */}
-      <span
-        className="line-clamp-2"
-        style={{
-          fontFamily: FONT,
-          fontSize: 11,
-          fontWeight: 600,
-          lineHeight: 1.15,
-          color: active ? "#FFFFFF" : "rgba(255,255,255,0.92)",
-          marginBottom: 4,
-        }}
-      >
-        {group.name}
-      </span>
+      {/* Nom */}
+      <span className="text-sm whitespace-nowrap">{group.name}</span>
 
-      {/* Compteur produits */}
-      <span
-        className="inline-flex items-center justify-center"
-        style={{
-          fontFamily: FONT,
-          fontSize: 10,
-          fontWeight: 700,
-          lineHeight: 1,
-          padding: "2px 7px",
-          borderRadius: 999,
-          backgroundColor: active ? accent : "rgba(255,255,255,0.14)",
-          color: active ? "#FFFFFF" : "rgba(255,255,255,0.7)",
-        }}
-      >
+      {/* Badge décompte */}
+      <span className="bg-neutral-900/80 px-2 py-0.5 rounded-full text-xs text-neutral-300">
         {group.count}
       </span>
     </motion.button>
