@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
-import { resolveCategoryColor } from "@/lib/categoryColors";
 
 interface Props {
   categories: CategoryGroupV2[];
@@ -8,21 +7,9 @@ interface Props {
   onToggle: (slug: string) => void;
 }
 
-/** HEX -> rgba() (Tailwind ne peut pas interpoler une couleur dynamique). */
-const hexToRgba = (hex: string, alpha: number): string => {
-  const clean = hex.replace("#", "");
-  const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean;
-  const int = parseInt(full, 16);
-  if (Number.isNaN(int)) return `rgba(74,124,89,${alpha})`;
-  const r = (int >> 16) & 255;
-  const g = (int >> 8) & 255;
-  const b = int & 255;
-  return `rgba(${r},${g},${b},${alpha})`;
-};
-
 /**
- * Cartes glassmorphic 3D : photo produit centrée, label bas, badge décompte.
- * Multi-sélection cumulable, scroll horizontal mobile, grille dès sm.
+ * Cartes catégories sombres : accent vert unique, photo produit centrée,
+ * label bas et badge décompte. Multi-sélection cumulable.
  */
 const CategoryPills = ({ categories, selectedSlugs, onToggle }: Props) => {
   if (categories.length === 0) return null;
@@ -62,13 +49,11 @@ const CategoryCard = ({
   active: boolean;
   onClick: () => void;
 }) => {
-  const accent = resolveCategoryColor((group as { color?: string | null }).color, group.slug);
-
   const base =
-    "relative h-24 sm:h-28 min-w-[104px] shrink-0 sm:min-w-0 rounded-2xl bg-neutral-900/60 backdrop-blur-md border border-white/10 p-3 flex flex-col items-center justify-between transition-all cursor-pointer hover:-translate-y-1";
+    "relative h-24 sm:h-28 min-w-[110px] shrink-0 sm:min-w-0 rounded-2xl p-3 flex flex-col items-center justify-between transition-all cursor-pointer group";
   const state = active
-    ? "border-2 bg-neutral-900/90 text-white"
-    : "text-neutral-300 hover:border-white/20";
+    ? "bg-[#4A7C59]/20 border-2 border-[#4A7C59] shadow-[0_0_20px_rgba(74,124,89,0.3)] text-white"
+    : "bg-neutral-900/80 border border-white/10 hover:border-white/25";
 
   return (
     <motion.button
@@ -79,14 +64,9 @@ const CategoryCard = ({
       whileTap={{ scale: 0.96 }}
       transition={{ type: "spring", stiffness: 420, damping: 24 }}
       className={`${base} ${state}`}
-      style={
-        active
-          ? { borderColor: accent, boxShadow: `0 0 20px ${hexToRgba(accent, 0.35)}` }
-          : undefined
-      }
     >
       {/* Badge décompte */}
-      <span className="absolute top-2 right-2 bg-white/10 backdrop-blur px-1.5 py-0.5 rounded-full text-[10px] text-white/80">
+      <span className="absolute top-2 right-2 bg-white/10 px-1.5 py-0.5 rounded-full text-[10px] text-white/70">
         {group.count}
       </span>
 
@@ -99,10 +79,12 @@ const CategoryCard = ({
             aria-hidden
             loading="lazy"
             decoding="async"
-            className="h-12 sm:h-14 w-auto object-contain drop-shadow-md"
+            className="h-12 sm:h-14 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform"
           />
         ) : group.icon ? (
-          <span className="text-2xl leading-none">{group.icon}</span>
+          <span className="text-2xl leading-none group-hover:scale-105 transition-transform">
+            {group.icon}
+          </span>
         ) : (
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-bold text-white">
             {group.name.charAt(0).toUpperCase()}
@@ -111,7 +93,7 @@ const CategoryCard = ({
       </span>
 
       {/* Label */}
-      <span className="text-xs font-bold text-white uppercase tracking-wider text-center line-clamp-1 w-full">
+      <span className="w-full text-xs font-bold uppercase tracking-wider text-center text-white line-clamp-1">
         {group.name}
       </span>
     </motion.button>
