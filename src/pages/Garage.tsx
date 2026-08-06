@@ -511,6 +511,12 @@ const Garage = () => {
 
       <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
 
+      {riderCardOpen && (
+        <Suspense fallback={null}>
+          <RiderCardLightbox open={riderCardOpen} onOpenChange={setRiderCardOpen} />
+        </Suspense>
+      )}
+
       <Footer />
     </div>
   );
