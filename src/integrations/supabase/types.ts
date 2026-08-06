@@ -1408,6 +1408,7 @@ export type Database = {
           performance_points: number | null
           rider_location: string | null
           updated_at: string | null
+          username: string | null
         }
         Insert: {
           active_theme_key?: string | null
@@ -1420,6 +1421,7 @@ export type Database = {
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
+          username?: string | null
         }
         Update: {
           active_theme_key?: string | null
@@ -1432,6 +1434,7 @@ export type Database = {
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
+          username?: string | null
         }
         Relationships: []
       }
@@ -1993,6 +1996,7 @@ export type Database = {
           next_maintenance_km: number | null
           nickname: string | null
           personal_description: string | null
+          photo_xp_claimed: boolean
           scooter_model_id: string
           user_id: string
         }
@@ -2008,6 +2012,7 @@ export type Database = {
           next_maintenance_km?: number | null
           nickname?: string | null
           personal_description?: string | null
+          photo_xp_claimed?: boolean
           scooter_model_id: string
           user_id: string
         }
@@ -2023,6 +2028,7 @@ export type Database = {
           next_maintenance_km?: number | null
           nickname?: string | null
           personal_description?: string | null
+          photo_xp_claimed?: boolean
           scooter_model_id?: string
           user_id?: string
         }
