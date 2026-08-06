@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Plus, Bike, Wallpaper } from 'lucide-react';
+import { Loader2, Plus, Bike, Wallpaper, CreditCard } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
@@ -29,12 +29,11 @@ import StatsRow from '@/components/garage/StatsRow';
 import ScooterIdPill from '@/components/garage/ScooterIdPill';
 import HeroScooter from '@/components/garage/HeroScooter';
 import SuiviExpertCard from '@/components/garage/SuiviExpertCard';
-import ShareBuildCard from '@/components/garage/ShareBuildCard';
 import DescriptionCard from '@/components/garage/DescriptionCard';
 
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
-const RiderCard = lazy(() => import('@/components/garage/RiderCard'));
+const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
 
 
 import {
@@ -54,6 +53,7 @@ const Garage = () => {
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [riderCardOpen, setRiderCardOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
@@ -220,12 +220,8 @@ const Garage = () => {
               ) : (
                 /* === ROOFTOP LAYOUT === */
                 <>
-                {/* Carte Rider v7 — vitrine partageable */}
-                <div className="flex justify-center mb-6">
-                  <Suspense fallback={<div className="h-[520px] w-[320px] rounded-2xl bg-white/20 animate-pulse" />}>
-                    <RiderCard mode="owner" />
-                  </Suspense>
-                </div>
+
+
 
                 <div
 
@@ -338,7 +334,27 @@ const Garage = () => {
                     >
                       <TutosCard scooterModelId={model?.id} />
                     </Suspense>
-                    <ShareBuildCard />
+                    {/* Carte Rider v7 — ouverture en lightbox plein écran */}
+                    <button
+                      type="button"
+                      onClick={() => setRiderCardOpen(true)}
+                      className="group relative w-full overflow-hidden rounded-3xl border border-white/40 bg-white/[0.42] p-5 text-left backdrop-blur-2xl shadow-lg shadow-black/10 transition-all duration-200 hover:bg-white/60 hover:shadow-xl"
+                    >
+                      <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/90 to-transparent" />
+                      <span className="flex items-center gap-3">
+                        <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-green-700 text-white shadow-md shadow-green-900/30 transition-transform duration-200 group-hover:scale-105">
+                          <CreditCard className="size-5" />
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block text-sm font-black uppercase tracking-tight text-gray-900">
+                            Ma Carte Collector
+                          </span>
+                          <span className="block text-xs text-gray-600">
+                            Partage ta carte
+                          </span>
+                        </span>
+                      </span>
+                    </button>
                   </aside>
                 </div>
 
@@ -494,6 +510,12 @@ const Garage = () => {
       </Sheet>
 
       <ThemePickerSheet open={themePickerOpen} onOpenChange={setThemePickerOpen} />
+
+      {riderCardOpen && (
+        <Suspense fallback={null}>
+          <RiderCardLightbox open={riderCardOpen} onOpenChange={setRiderCardOpen} />
+        </Suspense>
+      )}
 
       <Footer />
     </div>
