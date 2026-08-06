@@ -29,12 +29,11 @@ import StatsRow from '@/components/garage/StatsRow';
 import ScooterIdPill from '@/components/garage/ScooterIdPill';
 import HeroScooter from '@/components/garage/HeroScooter';
 import SuiviExpertCard from '@/components/garage/SuiviExpertCard';
-import ShareBuildCard from '@/components/garage/ShareBuildCard';
 import DescriptionCard from '@/components/garage/DescriptionCard';
 
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
-const RiderCard = lazy(() => import('@/components/garage/RiderCard'));
+const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
 
 
 import {
