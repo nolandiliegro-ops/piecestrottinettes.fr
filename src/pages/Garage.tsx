@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Loader2, Plus, Bike, Wallpaper } from 'lucide-react';
+import { Loader2, Plus, Bike, Wallpaper, CreditCard } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGarageScooters } from '@/hooks/useGarageScooters';
 import { useOrderConversations } from '@/hooks/useOrderMessages';
