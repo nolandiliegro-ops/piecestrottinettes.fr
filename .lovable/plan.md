@@ -1,41 +1,38 @@
-Refonte DA Premium : catégories Catalogue & filtres Home Dark
+Home Dark : restauration des couleurs signatures sur les cartes catégories
 
 Objectif
-- Catalogue : cartes plus hautes, fond ivoire, image 3D dominante avec ombre portée, texte nu (sans pastille), flèche qui n'apparaît qu'au survol.
-- Home (bloc sombre) : un seul accent vert — suppression totale des bordures néon par catégorie.
+Rendre à chaque carte catégorie sa couleur de marque (bordure + halo) lorsqu'elle est active, et remonter légèrement le gabarit des cartes glassmorphic.
 
-Fichiers concernés
-1. `src/components/catalogue/CategoryBentoGrid.tsx`
-2. `src/components/home/ShopByCompatibility/CategoryPills.tsx`
+Fichier concerné
+`src/components/home/ShopByCompatibility/CategoryPills.tsx` (seul fichier modifié)
 
-Etat actuel (vérifié)
-- `CategoryBentoGrid` : tuiles `h-32 sm:h-36 rounded-2xl bg-white/80`, image dans un `span` de hauteur fixe `h-20`, label + badge décompte inline, flèche `opacity-80` toujours visible. Props : `categories`, `activeCategory`, `onCategoryChange`, `isLoading`, `counts?`.
-- `CategoryPills` : cartes glass `h-24 sm:h-28`, accent dynamique par catégorie via `resolveCategoryColor(c.color, c.slug)` + helper local `hexToRgba` (bordure et halo colorés — c'est ce qui produit le rouge/violet/jaune).
+État actuel (vérifié)
+- Le composant n'utilise plus aucune couleur dynamique : accent vert unique `#4A7C59` codé en dur pour l'état actif.
+- Cartes : `h-24 sm:h-28 min-w-[110px]`, image `h-12 sm:h-14`, label `text-xs font-bold`, badge décompte `bg-white/10 px-1.5`.
+- `resolveCategoryColor(dbColor, slug)` existe dans `src/lib/categoryColors.ts` et retombe sur la palette par slug si `categories.color` est vide. `CategoryGroupV2` expose bien `color` et `slug`.
 
-1. Catalogue — cartes bento premium
-- Carte : `relative h-40 sm:h-44 rounded-3xl bg-[#FAFAF8] border border-neutral-200/60 p-5 shadow-sm hover:shadow-2xl hover:border-neutral-300 transition-all duration-300 group overflow-hidden flex flex-col justify-between`.
-- Visuel : image `h-24 sm:h-28 w-auto object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.15)] group-hover:scale-105 group-hover:-translate-y-1.5 transition-all duration-300`, centrée dans la zone haute, sans conteneur carré blanc autour. Fallback icône Lucide (`resolveCategoryIcon`) au même gabarit, même traitement de hover.
-- Zone texte basse, sans fond : nom en `text-base font-black text-neutral-900 uppercase tracking-tight` ; sous-titre décompte `text-xs font-semibold text-neutral-500 mt-0.5` affiché uniquement quand `counts?.[id]` est fourni (libellé « N pièces »).
-- Flèche : `absolute top-4 right-4 bg-neutral-900 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md`. Reste un `Link` frère du bouton, jamais imbriqué, avec `stopPropagation`. Pour rester atteignable au clavier/tactile, on ajoute `focus-visible:opacity-100`.
-- Etat actif conservé : `border-[#4A7C59] border-2 bg-[#4A7C59]/10`.
-- Carte « Toutes » : même gabarit `h-40 sm:h-44`, icône `LayoutGrid`, sans flèche.
-- Skeleton aligné : `h-40 sm:h-44 rounded-3xl`, grille `grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4`.
+Modifications
+1. Couleur dynamique
+- Réimporter `resolveCategoryColor` et l'appeler avec `(group.color, group.slug)`.
+- Helper local `hexToRgba(hex, alpha)` (support `#RGB` et `#RRGGBB`, fallback neutre si format inattendu) pour le halo.
+- Carte active : classes `bg-neutral-900/95 text-white border-2` + inline `style={{ borderColor: hex, boxShadow: '0 0 20px ' + hexToRgba(hex, 0.35) }}`. Aucun style inline sur les cartes inactives.
 
-2. Home Dark — accent vert unique
-- Suppression de l'import `resolveCategoryColor`, du helper `hexToRgba` et de tous les inline styles de couleur.
-- Carte inactive : `relative h-24 sm:h-28 min-w-[110px] rounded-2xl bg-neutral-900/80 border border-white/10 p-3 flex flex-col items-center justify-between hover:border-white/25 transition-all cursor-pointer group`.
-- Carte active : `bg-[#4A7C59]/20 border-2 border-[#4A7C59] shadow-[0_0_20px_rgba(74,124,89,0.3)] text-white`.
-- Image : `h-12 sm:h-14 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform` ; fallbacks emoji / initiale conservés au même gabarit.
-- Label : `text-xs font-bold uppercase tracking-wider text-center text-white line-clamp-1`.
-- Badge décompte : `absolute top-2 right-2 bg-white/10 px-1.5 py-0.5 rounded-full text-[10px] text-white/70`.
-- Conservés : conteneur scroll mobile / grille `sm:grid-cols-4 lg:grid-cols-7`, `role="checkbox"`, `aria-checked`, `whileTap`, props du composant inchangées.
+2. Gabarit
+- Conteneur inchangé : scroll horizontal mobile, `sm:grid sm:grid-cols-4 lg:grid-cols-7`, scrollbar masquée.
+- Carte inactive : `relative h-28 sm:h-32 min-w-[115px] rounded-2xl bg-neutral-900/70 backdrop-blur-md border border-white/10 p-3 flex flex-col items-center justify-between hover:border-white/25 hover:-translate-y-1 transition-all cursor-pointer group`.
+- Image : `h-14 sm:h-16 w-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-200`, zone visuelle passée à `h-14 sm:h-16`. Fallbacks emoji / initiale conservés au même gabarit.
+- Label : `text-xs font-black uppercase tracking-wider text-center text-white line-clamp-1`.
+- Badge décompte : `absolute top-2 right-2 bg-white/10 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-bold text-white/90`.
+
+3. Logique conservée
+Multi-sélection via `selectedSlugs` / `onToggle`, `role="checkbox"`, `aria-checked`, `whileTap`, props du composant et signature inchangées.
 
 Risques
-- Cartes catalogue plus hautes (+8/32 px) : les produits descendent légèrement, compromis assumé pour la lisibilité du visuel.
-- Flèche masquée par défaut : invisible sur mobile (pas de hover) — la navigation vers `/categorie/:slug` reste possible depuis le filtre et le focus clavier.
+- Cartes plus hautes (+16 px) : la section sombre gagne un peu de hauteur.
+- Certaines couleurs très sombres (ex. guidon `#1A1A1A`) donnent un halo peu visible sur fond noir — acceptable, l'état actif reste lisible via la bordure 2px et le fond plus opaque.
 
 Plan de test localhost
-1. `/catalogue` desktop : 4 colonnes, image 3D sans cadre blanc, ombre portée visible, hover = lift + flèche qui apparaît.
-2. `/catalogue` mobile 375 : 2 colonnes, texte non tronqué anormalement, filtre au tap.
-3. `/` : aucune bordure rouge/violette/jaune, seul le vert `#4A7C59` sur les cartes actives ; multi-sélection et compteurs intacts.
-4. Skeletons sans saut de layout ; catégories sans image en fallback icône.
+1. `/` desktop 1242 : 7 colonnes, cartes glass, halo coloré uniquement sur les cartes sélectionnées.
+2. Sélection multiple : plusieurs cartes actives simultanément, chacune avec sa propre couleur.
+3. Mobile 375 : scroll horizontal fluide, pas de troncature du label.
+4. Catégories sans image : fallback emoji / initiale au bon gabarit.
