@@ -34,6 +34,8 @@ import DescriptionCard from '@/components/garage/DescriptionCard';
 
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
+const RiderCard = lazy(() => import('@/components/garage/RiderCard'));
+
 
 import {
   Sheet,
