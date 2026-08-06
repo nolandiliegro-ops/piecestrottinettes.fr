@@ -1,44 +1,41 @@
-Refonte Design Premium & Glassmorphism des catégories (Home & Catalogue)
+Refonte DA Premium : catégories Catalogue & filtres Home Dark
 
 Objectif
-- Home (bloc sombre) : remplacer les mini-chips gris par des cartes glassmorphic 3D avec photo produit et accent de couleur par catégorie.
-- Catalogue : remplacer les bandeaux plats par des tuiles bento « float » premium avec photo détourée et flèche en pastille sombre.
+- Catalogue : cartes plus hautes, fond ivoire, image 3D dominante avec ombre portée, texte nu (sans pastille), flèche qui n'apparaît qu'au survol.
+- Home (bloc sombre) : un seul accent vert — suppression totale des bordures néon par catégorie.
 
 Fichiers concernés
-1. `src/components/home/ShopByCompatibility/CategoryPills.tsx` (rendu uniquement, props inchangées)
-2. `src/components/catalogue/CategoryBentoGrid.tsx` (rendu uniquement, props inchangées)
+1. `src/components/catalogue/CategoryBentoGrid.tsx`
+2. `src/components/home/ShopByCompatibility/CategoryPills.tsx`
 
-Analyse de l'existant (vérifié)
-- `CategoryPills` reçoit `categories: CategoryGroupV2[]`, `selectedSlugs: Set<string>`, `onToggle(slug)`. Chaque groupe porte `name`, `slug`, `count`, `image_url`, `icon`, `color`. Aucun changement d'interface : la multi-sélection et les compteurs restent intacts.
-- `resolveCategoryColor(dbColor, slug)` (`src/lib/categoryColors.ts`) renvoie un HEX : on passe `c.color` puis fallback slug. Pour l'ombre/le fond translucide, conversion HEX → RGB en inline style (Tailwind ne peut pas interpoler une valeur dynamique).
-- `CategoryBentoGrid` : props `categories`, `activeCategory`, `onCategoryChange`, `isLoading`, `counts?`. Images via `useCategoryImages()` (map par id, `image_url`/`alt_text`), fallback icône via `resolveCategoryIcon(lucide_icon, slug)`. Le `Link` `ArrowUpRight` est un frère du bouton (jamais imbriqué) — ce point est conservé.
+Etat actuel (vérifié)
+- `CategoryBentoGrid` : tuiles `h-32 sm:h-36 rounded-2xl bg-white/80`, image dans un `span` de hauteur fixe `h-20`, label + badge décompte inline, flèche `opacity-80` toujours visible. Props : `categories`, `activeCategory`, `onCategoryChange`, `isLoading`, `counts?`.
+- `CategoryPills` : cartes glass `h-24 sm:h-28`, accent dynamique par catégorie via `resolveCategoryColor(c.color, c.slug)` + helper local `hexToRgba` (bordure et halo colorés — c'est ce qui produit le rouge/violet/jaune).
 
-1. Home — cartes glassmorphic (`CategoryPills.tsx`)
-- Conteneur : `flex gap-3 overflow-x-auto pb-4` + scrollbar masquée (style local déjà présent), puis `sm:grid sm:grid-cols-4 lg:grid-cols-7 sm:overflow-visible`.
-- Carte inactive : `relative h-24 sm:h-28 rounded-2xl bg-neutral-900/60 backdrop-blur-md border border-white/10 p-3 flex flex-col items-center justify-between hover:border-white/20 hover:-translate-y-1 transition-all`, `min-w-[104px]` en mode scroll mobile.
-- Carte active : `border-2 bg-neutral-900/90` avec `borderColor` = accent et `boxShadow: 0 0 20px rgba(accent, 0.35)` en inline style, texte blanc.
-- Visuel interne : `image_url` en `h-12 sm:h-14 w-auto object-contain drop-shadow-md`. Sans image : emoji `icon` en `text-2xl`, sinon initiale du nom dans un cercle neutre — même gabarit de hauteur pour éviter tout saut de layout.
-- Label bas : `text-xs font-bold text-white uppercase tracking-wider text-center line-clamp-1`.
-- Badge décompte : pill translucide en absolu haut-droite (`absolute top-2 right-2 bg-white/10 backdrop-blur px-1.5 py-0.5 rounded-full text-[10px] text-white/80`).
-- Conservés : `role="checkbox"`, `aria-checked`, `whileTap`, touch target ≥ 44px (h-24 = 96px).
-- Supprimés : chips h-11, avatar rond 28px, badge inline sombre.
+1. Catalogue — cartes bento premium
+- Carte : `relative h-40 sm:h-44 rounded-3xl bg-[#FAFAF8] border border-neutral-200/60 p-5 shadow-sm hover:shadow-2xl hover:border-neutral-300 transition-all duration-300 group overflow-hidden flex flex-col justify-between`.
+- Visuel : image `h-24 sm:h-28 w-auto object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.15)] group-hover:scale-105 group-hover:-translate-y-1.5 transition-all duration-300`, centrée dans la zone haute, sans conteneur carré blanc autour. Fallback icône Lucide (`resolveCategoryIcon`) au même gabarit, même traitement de hover.
+- Zone texte basse, sans fond : nom en `text-base font-black text-neutral-900 uppercase tracking-tight` ; sous-titre décompte `text-xs font-semibold text-neutral-500 mt-0.5` affiché uniquement quand `counts?.[id]` est fourni (libellé « N pièces »).
+- Flèche : `absolute top-4 right-4 bg-neutral-900 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md`. Reste un `Link` frère du bouton, jamais imbriqué, avec `stopPropagation`. Pour rester atteignable au clavier/tactile, on ajoute `focus-visible:opacity-100`.
+- Etat actif conservé : `border-[#4A7C59] border-2 bg-[#4A7C59]/10`.
+- Carte « Toutes » : même gabarit `h-40 sm:h-44`, icône `LayoutGrid`, sans flèche.
+- Skeleton aligné : `h-40 sm:h-44 rounded-3xl`, grille `grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4`.
 
-2. Catalogue — tuiles bento float (`CategoryBentoGrid.tsx`)
-- Grille : `grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4` (skeletons alignés `h-32 sm:h-36 rounded-2xl`).
-- Tuile : `relative h-32 sm:h-36 rounded-2xl bg-white/80 backdrop-blur-sm border border-neutral-200/80 p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden group flex flex-col justify-between items-start`.
-- Visuel : photo `h-20 w-auto object-contain group-hover:scale-105 transition-transform`, centrée horizontalement dans la zone haute ; fallback icône Lucide même hauteur.
-- Label : `text-sm font-black text-neutral-900 uppercase tracking-tight line-clamp-2` en bas ; badge `counts?.[id]` conservé à côté du label quand fourni.
-- État actif : `border-[#4A7C59] border-2 bg-[#4A7C59]/10`.
-- Flèche : `Link` en absolu haut-droite, `bg-neutral-900 text-white p-1.5 rounded-full opacity-80 group-hover:opacity-100`, z-index au-dessus du bouton, `stopPropagation` conservé.
-- Carte « Toutes » : même gabarit, icône `LayoutGrid`, sans flèche.
+2. Home Dark — accent vert unique
+- Suppression de l'import `resolveCategoryColor`, du helper `hexToRgba` et de tous les inline styles de couleur.
+- Carte inactive : `relative h-24 sm:h-28 min-w-[110px] rounded-2xl bg-neutral-900/80 border border-white/10 p-3 flex flex-col items-center justify-between hover:border-white/25 transition-all cursor-pointer group`.
+- Carte active : `bg-[#4A7C59]/20 border-2 border-[#4A7C59] shadow-[0_0_20px_rgba(74,124,89,0.3)] text-white`.
+- Image : `h-12 sm:h-14 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform` ; fallbacks emoji / initiale conservés au même gabarit.
+- Label : `text-xs font-bold uppercase tracking-wider text-center text-white line-clamp-1`.
+- Badge décompte : `absolute top-2 right-2 bg-white/10 px-1.5 py-0.5 rounded-full text-[10px] text-white/70`.
+- Conservés : conteneur scroll mobile / grille `sm:grid-cols-4 lg:grid-cols-7`, `role="checkbox"`, `aria-checked`, `whileTap`, props du composant inchangées.
 
-Risques et vérifications
-- `overflow-hidden` sur la tuile + `hover:-translate-y-1` : la translation est sur la tuile elle-même, pas de clipping de l'ombre car l'ombre est portée par le même élément (pas de parent `overflow-hidden` ajouté).
-- Couleur dynamique : passer par inline style, jamais par classes Tailwind interpolées.
-- `ShopByCompatibility/index.tsx` non modifié → logique de filtrage et compteurs inchangés.
+Risques
+- Cartes catalogue plus hautes (+8/32 px) : les produits descendent légèrement, compromis assumé pour la lisibilité du visuel.
+- Flèche masquée par défaut : invisible sur mobile (pas de hover) — la navigation vers `/categorie/:slug` reste possible depuis le filtre et le focus clavier.
 
 Plan de test localhost
-1. `/` desktop 1280 : 7 colonnes de cartes glass, photo visible, active = bordure colorée + halo ; multi-sélection cumulable, compteurs corrects.
-2. `/` mobile 375 : scroll horizontal fluide, une carte partiellement visible, tap unique = toggle.
-3. `/catalogue` : 4 colonnes ≥1024, 3 en sm, 2 en mobile ; hover = lift + zoom photo ; clic tuile = filtre, clic flèche = `/categorie/:slug`.
-4. Skeletons sans saut de layout ; catégories sans image → fallback icône propre.
+1. `/catalogue` desktop : 4 colonnes, image 3D sans cadre blanc, ombre portée visible, hover = lift + flèche qui apparaît.
+2. `/catalogue` mobile 375 : 2 colonnes, texte non tronqué anormalement, filtre au tap.
+3. `/` : aucune bordure rouge/violette/jaune, seul le vert `#4A7C59` sur les cartes actives ; multi-sélection et compteurs intacts.
+4. Skeletons sans saut de layout ; catégories sans image en fallback icône.
