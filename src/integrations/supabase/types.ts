@@ -1944,14 +1944,52 @@ export type Database = {
           },
         ]
       }
+      user_card_likes: {
+        Row: {
+          card_owner_id: string | null
+          created_at: string | null
+          id: string
+          liker_user_id: string | null
+        }
+        Insert: {
+          card_owner_id?: string | null
+          created_at?: string | null
+          id?: string
+          liker_user_id?: string | null
+        }
+        Update: {
+          card_owner_id?: string | null
+          created_at?: string | null
+          id?: string
+          liker_user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_card_likes_card_owner_id_fkey"
+            columns: ["card_owner_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_card_likes_liker_user_id_fkey"
+            columns: ["liker_user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_garage: {
         Row: {
           added_at: string | null
           current_km: number | null
           custom_photo_url: string | null
           id: string
+          is_featured: boolean | null
           is_owned: boolean | null
           last_maintenance_date: string | null
+          mood: string | null
           next_maintenance_km: number | null
           nickname: string | null
           personal_description: string | null
@@ -1963,8 +2001,10 @@ export type Database = {
           current_km?: number | null
           custom_photo_url?: string | null
           id?: string
+          is_featured?: boolean | null
           is_owned?: boolean | null
           last_maintenance_date?: string | null
+          mood?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
           personal_description?: string | null
@@ -1976,8 +2016,10 @@ export type Database = {
           current_km?: number | null
           custom_photo_url?: string | null
           id?: string
+          is_featured?: boolean | null
           is_owned?: boolean | null
           last_maintenance_date?: string | null
+          mood?: string | null
           next_maintenance_km?: number | null
           nickname?: string | null
           personal_description?: string | null
@@ -2160,6 +2202,10 @@ export type Database = {
           similarity: number
           slug: string
         }[]
+      }
+      set_featured_scooter: {
+        Args: { p_scooter_id: string; p_user_id: string }
+        Returns: undefined
       }
       show_limit: { Args: never; Returns: number }
       show_trgm: { Args: { "": string }; Returns: string[] }
