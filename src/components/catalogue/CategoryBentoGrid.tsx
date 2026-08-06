@@ -21,6 +21,8 @@ interface CategoryBentoGridProps {
   activeCategory: string | null;
   onCategoryChange: (categoryId: string | null) => void;
   isLoading?: boolean;
+  /** Décomptes optionnels par id de catégorie ; badge masqué si absent. */
+  counts?: Record<string, number>;
 }
 
 const CategoryBentoGrid = ({
@@ -28,67 +30,45 @@ const CategoryBentoGrid = ({
   activeCategory,
   onCategoryChange,
   isLoading = false,
+  counts,
 }: CategoryBentoGridProps) => {
   const { data: categoryImages = {} } = useCategoryImages();
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {[...Array(8)].map((_, i) => (
-          <Skeleton key={i} className="aspect-[4/5] rounded-2xl" />
+          <Skeleton key={i} className="h-16 sm:h-20 rounded-xl" />
         ))}
       </div>
     );
   }
 
+  const cardBase =
+    "relative w-full h-16 sm:h-20 rounded-xl overflow-hidden border flex items-center text-left transition-all duration-300";
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
       {/* "Toutes" button */}
       <motion.button
-        whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.2 }}
         onClick={() => onCategoryChange(null)}
         className={cn(
-          "relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10",
-          "transition-all duration-300",
-          activeCategory === null && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
+          cardBase,
+          activeCategory === null
+            ? "bg-[#4A7C59]/15 border-[#4A7C59]"
+            : "bg-white border-black/10 hover:border-black/20"
         )}
-        style={activeCategory === null ? {
-          boxShadow: "0 0 20px 4px rgba(147, 181, 161, 0.5)"
-        } : {}}
       >
-
-        {/* Background with hover zoom */}
-        <motion.div 
-          className="absolute inset-0 bg-gradient-to-br from-carbon/90 to-carbon/60"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-        />
-        
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-        
-        {/* Icon centered */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <LayoutGrid className="w-10 h-10 md:w-12 md:h-12 text-white/80" />
-        </div>
-        
-        {/* Brand Label Tab - Bottom Left */}
-        <div className="absolute bottom-0 left-0 z-20">
-          <div className={cn(
-            "px-3 py-1.5 md:px-4 md:py-2 rounded-tr-xl",
-            activeCategory === null ? "bg-mineral" : "bg-white/95"
-          )}>
-            <span className={cn(
-              "font-montserrat font-bold text-xs md:text-sm uppercase tracking-wide",
-              activeCategory === null ? "text-white" : "text-carbon"
-            )}>
-              Toutes
-            </span>
-          </div>
-        </div>
+        <span className="h-full aspect-square shrink-0 flex items-center justify-center bg-carbon rounded-l-xl">
+          <LayoutGrid className="w-5 h-5 sm:w-6 sm:h-6 text-white/85" />
+        </span>
+        <span className="flex-1 min-w-0 px-3 pr-9">
+          <span className="block text-sm font-semibold line-clamp-2 text-foreground">
+            Toutes
+          </span>
+        </span>
       </motion.button>
 
       {/* Category buttons */}
@@ -96,72 +76,56 @@ const CategoryBentoGrid = ({
         const IconComponent = resolveCategoryIcon(category.lucide_icon, category.slug);
         const isActive = activeCategory === category.id;
         const catImgData = categoryImages[category.id];
-        const categoryImage = typeof catImgData === 'string' ? catImgData : catImgData?.image_url;
+        const categoryImage = typeof catImgData === "string" ? catImgData : catImgData?.image_url;
+        const count = counts?.[category.id];
 
         return (
           <div key={category.id} className="relative">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ duration: 0.3 }}
-            onClick={() => onCategoryChange(category.id)}
-            className={cn(
-              "relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-white/10",
-              "transition-all duration-300",
-              isActive && "ring-2 ring-mineral ring-offset-2 ring-offset-greige"
-            )}
-            style={isActive ? {
-              boxShadow: "0 0 20px 4px rgba(147, 181, 161, 0.5)"
-            } : {}}
-          >
-            {/* Image/Gradient with hover zoom - NOT the card */}
-            <motion.div 
-              className="absolute inset-0"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+            <motion.button
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => onCategoryChange(category.id)}
+              className={cn(
+                cardBase,
+                isActive
+                  ? "bg-[#4A7C59]/15 border-[#4A7C59]"
+                  : "bg-white border-black/10 hover:border-black/20"
+              )}
             >
+              {/* Miniature à gauche */}
               {categoryImage ? (
-                <img 
-                  src={categoryImage} 
-                  alt={typeof catImgData === 'string' ? category.name : (catImgData?.alt_text || category.name)}
+                <img
+                  src={categoryImage}
+                  alt={typeof catImgData === "string" ? category.name : (catImgData?.alt_text || category.name)}
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full object-cover"
+                  className="h-full aspect-square shrink-0 object-cover rounded-l-xl"
                 />
               ) : (
-                <div className="w-full h-full bg-gradient-to-br from-carbon/90 to-carbon/60" />
+                <span className="h-full aspect-square shrink-0 flex items-center justify-center bg-carbon rounded-l-xl">
+                  <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white/85" />
+                </span>
               )}
-            </motion.div>
-            
-            {/* Overlay gradient for readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-            
-            {/* Icon centered */}
-            <div className="absolute inset-0 flex items-center justify-center z-10">
-              <IconComponent className="w-10 h-10 md:w-12 md:h-12 text-white/80" />
-            </div>
-            
-            {/* Brand Label Tab - Bottom Left */}
-            <div className="absolute bottom-0 left-0 z-20">
-              <div className={cn(
-                "px-3 py-1.5 md:px-4 md:py-2 rounded-tr-xl",
-                isActive ? "bg-mineral" : "bg-white/95"
-              )}>
-                <span className={cn(
-                  "font-montserrat font-bold text-xs md:text-sm uppercase tracking-wide",
-                  isActive ? "text-white" : "text-carbon"
-                )}>
+
+              {/* Nom au centre */}
+              <span className="flex-1 min-w-0 px-3 pr-9 flex items-center gap-2">
+                <span className="block text-sm font-semibold line-clamp-2 text-foreground">
                   {category.name}
                 </span>
-              </div>
-            </div>
-          </motion.button>
+                {typeof count === "number" && (
+                  <span className="shrink-0 bg-black/5 px-2 py-0.5 rounded-full text-xs text-foreground/70">
+                    {count}
+                  </span>
+                )}
+              </span>
+            </motion.button>
+
             {/* Lien secondaire vers la page catégorie (frère du button, jamais enfant). */}
             <Link
               to={`/categorie/${category.slug}`}
               aria-label={`Voir la page ${category.name}`}
               onClick={(e) => e.stopPropagation()}
-              className="absolute top-1.5 right-1.5 z-20 flex items-center justify-center rounded-full p-1.5 bg-black/45 backdrop-blur-sm text-white hover:bg-black/65 transition-colors"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center rounded-full p-1.5 bg-black/10 text-carbon hover:bg-black/20 transition-colors"
             >
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
