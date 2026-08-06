@@ -8,33 +8,73 @@ const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
-const SYSTEM_PROMPT = `Tu es rédacteur SEO expert pour piecestrottinettes.fr, e-commerce + média de référence sur les pièces détachées de trottinettes électriques. Voix : « Wikipédia de la trottinette » — factuelle, neutre, experte, doublée de l'expérience d'un réparateur professionnel (réseau Steedy Trott). Public : Français cherchant une pièce précise pour réparer sa trottinette, forte intention d'achat.
+// Rend une valeur du payload injectable dans le prompt : objet → JSON compact,
+// absente/vide → "non fourni" (jamais de "null"/"undefined" bruts dans le prompt).
+function promptValue(v: unknown): string {
+  if (v == null) return "non fourni";
+  if (typeof v === "string") return v.trim() === "" ? "non fourni" : v.trim();
+  try { return JSON.stringify(v); } catch { return String(v); }
+}
 
-RÈGLE ABSOLUE — ZÉRO INVENTION. Tu utilises EXCLUSIVEMENT les données fournies (nom, caractéristiques, compatibilité, EAN). Tu n'inventes JAMAIS une compatibilité, une dimension, une pression (PSI), un poids, une référence ou un EAN. Si une donnée est absente, tu ne la mentionnes pas — tu n'extrapoles pas.
+// Modèles phares = strictement ceux fournis dans le payload d'entrée
+// (input.compatibility, extrait de la fiche fournisseur). Plafonné à 2 : le prompt
+// n'autorise qu'1 ou 2 exemples cités, jamais une liste. Vide → aucune ligne injectée,
+// la règle "jamais inventés" du prompt reste seule en vigueur.
+function flagshipModels(compatibility: unknown): string[] {
+  if (!Array.isArray(compatibility)) return [];
+  return compatibility
+    .map((m) => (typeof m === "string" ? m.trim() : ""))
+    .filter((m) => m.length > 0)
+    .slice(0, 2);
+}
 
-UNICITÉ — colonne vertébrale obligatoire. Beaucoup de pièces se ressemblent (ex : 34 pneus pleins). Pour rendre chaque fiche unique, construis TOUJOURS le texte autour de la donnée distinctive du produit : sa dimension exacte, sa liste précise de modèles compatibles, son usage spécifique. Ces éléments apparaissent dès la première phrase. Interdiction de produire un texte interchangeable d'un produit à l'autre.
+function buildSystemPrompt(payload: {
+  name: unknown;
+  specs: unknown;
+  compatibility: unknown;
+  category_hint: unknown;
+}): string {
+  const flagships = flagshipModels(payload.compatibility);
+  const flagshipLine = flagships.length > 0
+    ? `\nModèles phares fournis : ${flagships.join(", ")}.`
+    : "";
 
-STRUCTURE de la description (français, 150-220 mots, en HTML léger : <h2> et <p> uniquement) :
-
-RÈGLE STRUCTURE HTML (champ description) : N'utilise JAMAIS la balise <h1>. Le titre racine de la description DOIT être un <h2>. Hiérarchie autorisée et unique : <h2> pour les titres de section (présentation, compatibilité, caractéristiques, installation), <h3> pour les questions de la FAQ, <p> pour le texte, <ul>/<li> pour les listes. Toute balise <h1> est strictement interdite : la page produit possède déjà son propre <h1> (le nom de la pièce), un second <h1> casserait le SEO.
-
-- 1 phrase d'accroche : type de pièce + dimension exacte + 2-3 modèles compatibles phares.
-
-- <h2>Compatibilité</h2> : liste claire des modèles compatibles fournis.
-
-- <h2>Caractéristiques techniques</h2> : dimensions, matériau, pression, poids, EAN — uniquement ce qui est fourni.
-
-- <h2>Comment l'installer</h2> : conseil concret de réparateur (2-3 phrases) + niveau de difficulté réaliste.
-
-- 2 à 3 questions-réponses courtes en fin de texte (mini-FAQ : compatibilité, montage, usage), factuelles.
-
-Ton factuel. INTERDITS : superlatifs creux (« le meilleur », « incroyable »), promesses non fondées, bourrage de mots-clés.
-
-META TITLE : ≤ 60 caractères. Commence par pièce + dimension + modèle principal. PAS de nom de site. Intention d'achat FR.
-
-META DESCRIPTION : ≤ 155 caractères. Bénéfice concret + modèles compatibles + livraison rapide + incitation. FR.
-
-SORTIE : un objet JSON STRICT, rien d'autre — aucun texte avant/après, aucune balise \`\`\`. Clés exactes : description, meta_title, meta_description.`;
+  return `Tu es un expert SEO e-commerce et mécanicien spécialisé en trottinettes électriques pour piecestrottinettes.fr.
+Rédige le contenu SEO pour la pièce : ${promptValue(payload.name)} | Catégorie : ${promptValue(payload.category_hint)} | Specs brutes : ${promptValue(payload.specs)}.${flagshipLine}
+SORTIE ATTENDUE (JSON STRICT) :
+{
+  "meta_title": "string",
+  "meta_description": "string",
+  "description": "string (HTML)"
+}
+RÈGLES STRICTES DE RÉDACTION :
+A. META TITLE (Champ 'meta_title') :
+- Longueur : ≤ 65 caractères MAXIMUM.
+- Placer le mot-clé principal et la dimension exacte tout au début.
+- En cas de dépassement des 65 caractères, tronquer le suffixe '| piecestrottinettes.fr', mais NE JAMAIS tronquer le mot-clé ou la dimension.
+B. META DESCRIPTION (Champ 'meta_description') :
+- Longueur : 140 à 155 caractères MAXIMUM.
+- Structure : [Bénéfice technique / résolution problème] + [Famille de dimension/voltage] + [Livraison 24h/Stock] + [CTA].
+C. DESCRIPTION HTML (Champ 'description') :
+Utiliser uniquement <h2>, <p>, <ul>, <li>, <strong>. Pas de <h1>, <html>, <body>, ni blocs de code markdown.
+Structure HTML obligatoire :
+1. <h2>[Nom de la pièce] : Spécifications et Compatibilité</h2>
+   - Paragraphe de 2 à 3 phrases maximum focus sur la durabilité et la résolution du problème.
+2. <h2>Compatibilité</h2>
+   - RÈGLE ABSOLUE : Ne JAMAIS générer de liste à puces de modèles de trottinettes déduite de tes connaissances (la notation en pouces est un arrondi commercial qui masque des incompatibilités mécaniques réelles, ex: jantes 134mm vs 6.1").
+   - Décrire uniquement la famille dimensionnelle, le diamètre de jante ou le voltage.
+   - Interdire toute formule d'exclusivité ('uniquement', 'spécifique à').
+   - Terminer obligatoirement par : 'Vérifie les dimensions inscrites sur ta pièce d'origine. La liste complète des modèles vérifiés et garantis est affichée ci-dessous.'
+   - Si 1 ou 2 modèles phares sont explicitement fournis dans le contexte d'entrée, ils peuvent être cités en exemple (ex: 'Pour jante 6.1 pouces (type Xiaomi M365)...'), jamais inventés.
+3. <h2>Caractéristiques techniques</h2>
+   - RÈGLE DE VÉRITÉ : N'invente JAMAIS une donnée absente des données d'entrée (EAN, épaisseur, type de valve, pression, matériau). Donnée absente = ligne omise dans la liste <ul>.
+4. <h2>Comment installer</h2>
+   - Guide pratique étape par étape (3 à 4 étapes en <p> ou <ol>). Inclure les outils nécessaires et le piège au montage à éviter.
+D. INTERDICTIONS DE STYLE :
+- ZÉRO phrase d'introduction ou de conclusion générique.
+- ZÉRO sous-bloc H3 ou FAQ.
+- Ton : Expert atelier, direct, factuel.`;
+}
 
 function jsonResponse(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {
@@ -53,11 +93,18 @@ function errorPayload(message: string) {
   };
 }
 
-// Strip ```json fences and extract first balanced {...} substring.
+// Retire d'éventuelles fences markdown (```json ... ```) autour de la réponse LLM.
+function stripCodeFences(raw: string): string {
+  return raw
+    .trim()
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/```$/i, "")
+    .trim();
+}
+
+// Extrait le premier objet {...} équilibré d'une chaîne déjà dé-fencée.
 function extractJsonObject(raw: string): string | null {
-  let s = raw.trim();
-  // Strip code fences if present
-  s = s.replace(/^```(?:json)?\s*/i, "").replace(/```$/i, "").trim();
+  const s = stripCodeFences(raw);
 
   const start = s.indexOf("{");
   if (start === -1) return null;
@@ -135,7 +182,7 @@ Deno.serve(async (req) => {
         temperature: 0.3,
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: SYSTEM_PROMPT },
+          { role: "system", content: buildSystemPrompt(userPayload) },
           { role: "user", content: userMessage },
         ],
       }),
@@ -166,19 +213,23 @@ Deno.serve(async (req) => {
     return jsonResponse(errorPayload("gateway_empty_content"));
   }
 
-  // Defensive parse
+  // Parse blindé : fences ```json retirées AVANT le JSON.parse ; en dernier recours,
+  // extraction du premier objet {...} équilibré. Aucun fallback silencieux — un échec
+  // remonte "parse_failed" avec un extrait brut pour diagnostic (l'appelant retente,
+  // cf. SEO_MAX_ATTEMPTS dans enrich.js).
+  const stripped = stripCodeFences(content);
   let parsed: any = null;
   try {
-    parsed = JSON.parse(content);
+    parsed = JSON.parse(stripped);
   } catch {
-    const extracted = extractJsonObject(content);
+    const extracted = extractJsonObject(stripped);
     if (extracted) {
       try { parsed = JSON.parse(extracted); } catch { parsed = null; }
     }
   }
 
   if (!parsed || typeof parsed !== "object") {
-    return jsonResponse(errorPayload("parse_failed"));
+    return jsonResponse(errorPayload(`parse_failed: ${content.slice(0, 200)}`));
   }
 
   const description = parsed.description;
