@@ -9,7 +9,12 @@
       "WebFetch(domain:fr-fr.segway.com)",
       "WebFetch(domain:www.mi.com)",
       "WebFetch(domain:dualtron-store.com)",
-      "WebFetch(domain:dualtronusa.com)"
+      "WebFetch(domain:dualtronusa.com)",
+      "mcp__claude_ai_Airtable__list_tables_for_base",
+      "Bash(git rebase *)"
     ]
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true
   }
 }
