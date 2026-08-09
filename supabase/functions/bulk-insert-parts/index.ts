@@ -404,12 +404,13 @@ const handler = async (req: Request): Promise<Response> => {
         // Pièces SANS sku : on saute l'étape 1 (sku UNIQUE autorise plusieurs NULL,
         // donc aucune collision) → comportement strictement inchangé.
         const sku = (part.sku ?? "").trim();
-        const selectCols = "id, slug, sku, price, price_override, published, stock_quantity, slug_locked_at";
+        const selectCols = "id, slug, sku, price, price_override, published, stock_quantity, slug_locked_at, technical_metadata";
 
         let existing:
           | { id: string; slug: string; sku: string | null; price: number | null;
               price_override: boolean | null; published: boolean; stock_quantity: number;
-              slug_locked_at: string | null }
+              slug_locked_at: string | null;
+              technical_metadata: Record<string, unknown> | null }
           | null = null;
         let matchedBy: "sku" | "slug" | null = null;
 
@@ -482,6 +483,15 @@ const handler = async (req: Request): Promise<Response> => {
         if (existing) {
           row.published = existing.published;
           row.stock_quantity = existing.stock_quantity;
+          // Fusion technical_metadata : sac JSON partagé entre writers (airtable_id posé
+          // par sync-airtable, absent du payload de sync-parts). Merge shallow — les clés
+          // du payload gagnent, les clés existantes absentes du payload survivent. PAS un
+          // guard-preserve : le payload sync-airtable envoie toujours un bag partiel, la
+          // clé serait présente et l'écrasement total persisterait.
+          row.technical_metadata = {
+            ...(existing.technical_metadata ?? {}),
+            ...(part.technical_metadata ?? {}),
+          };
         }
 
         // ── Écriture : UPDATE ciblé par id si match (le slug peut changer), sinon INSERT.
