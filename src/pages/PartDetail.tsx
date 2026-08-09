@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/usePartDetail";
@@ -55,6 +55,12 @@ const PartDetail = () => {
         </div>
       </div>
     );
+  }
+
+  // Ancien slug : la piece existe sous un nouveau slug, on redirige sans empiler
+  // d'entree d'historique (l'URL d'origine est indexee, replace evite le retour piege).
+  if (part?.redirectTo) {
+    return <Navigate to={`/piece/${part.redirectTo}`} replace />;
   }
 
   if (error || !part) {

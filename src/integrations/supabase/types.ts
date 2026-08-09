@@ -1218,6 +1218,32 @@ export type Database = {
           },
         ]
       }
+      part_slug_aliases: {
+        Row: {
+          alias: string
+          created_at: string
+          part_id: string
+        }
+        Insert: {
+          alias: string
+          created_at?: string
+          part_id: string
+        }
+        Update: {
+          alias?: string
+          created_at?: string
+          part_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "part_slug_aliases_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       part_suppliers: {
         Row: {
           buy_price_ht: number | null

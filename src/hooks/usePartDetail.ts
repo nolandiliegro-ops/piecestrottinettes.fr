@@ -26,6 +26,8 @@ export interface PartDetail {
     slug: string;
     icon: string | null;
   } | null;
+  /** Present uniquement quand le slug demande est un ancien alias : slug actuel de la piece. */
+  redirectTo?: string;
 }
 
 export interface CompatibleScooter {
@@ -41,7 +43,7 @@ export interface CompatibleScooter {
 export const usePartBySlug = (slug: string | undefined) => {
   return useQuery({
     queryKey: ["part", slug],
-    queryFn: async (): Promise<PartDetail> => {
+    queryFn: async (): Promise<PartDetail | null> => {
       const { data, error } = await supabase
         .from("parts")
         .select(
@@ -73,14 +75,39 @@ export const usePartBySlug = (slug: string | undefined) => {
         )
         .eq("slug", slug)
         .eq("published", true)
-        .single();
+        .maybeSingle();
 
       if (error) throw error;
 
-      return {
-        ...data,
-        category: data.categories,
-      } as unknown as PartDetail;
+      if (data) {
+        return {
+          ...data,
+          category: data.categories,
+        } as unknown as PartDetail;
+      }
+
+      // Slug inconnu : peut-etre un ancien slug, conserve par part_slug_aliases
+      // (trigger trg_record_part_slug_alias au renommage d'une piece verrouillee).
+      const { data: alias } = await supabase
+        .from("part_slug_aliases")
+        .select("part_id")
+        .eq("alias", slug!)
+        .maybeSingle();
+
+      if (!alias) return null;
+
+      const { data: target } = await supabase
+        .from("parts")
+        .select("slug")
+        .eq("id", alias.part_id)
+        .maybeSingle();
+
+      // target.slug === slug rendrait <Navigate replace /> infini. Le trigger
+      // supprime pourtant l'alias egal au nouveau slug : on transforme une boucle
+      // theorique en 404.
+      if (!target || target.slug === slug) return null;
+
+      return { redirectTo: target.slug } as unknown as PartDetail;
     },
     enabled: !!slug,
   });
