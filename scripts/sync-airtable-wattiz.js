@@ -173,6 +173,10 @@ function selectCodes(field) {
   return raw.map(selectName).filter((s) => typeof s === 'string' && s.trim() !== '');
 }
 
+// Texte Airtable réellement rempli (une chaîne d'espaces compte comme vide).
+// Sert au guard anti-écrasement des 3 champs SEO dans filterAndMap.
+const nonEmptyText = (v) => typeof v === 'string' && v.trim() !== '';
+
 // Construit l'objet fitment_specs v2 pour parts.fitment_specs (jsonb) depuis les
 // champs 🔑 Airtable (lus par field ID). Même esprit que buildElectricalSpecs :
 //   - GUARD : si AUCUN champ 🔑 n'est rempli → retourne null (l'appelant N'AJOUTE
@@ -333,9 +337,6 @@ function filterAndMap(records, lookups, enrichById) {
       price: f['Prix affiché client TTC'] ?? null,
       stock_quantity: f['Stock Steedy'] ?? 0,
       image_url: null,
-      description: f['Description SEO'] || null,
-      meta_title: f['Meta title SEO'] || null,
-      meta_description: f['Meta description SEO'] || null,
       is_featured: f['Is featured (homepage)'] === true,
       ean,
       characteristics,
@@ -349,6 +350,14 @@ function filterAndMap(records, lookups, enrichById) {
         compatible_model_record_ids: compatibleModels,
       },
     };
+
+    // Champs SEO — GUARD anti-écrasement, même esprit que electrical_specs /
+    // fitment_specs ci-dessous : clé ABSENTE si le champ Airtable est vide, pour
+    // ne jamais pousser null par-dessus un SEO déjà en base (fiche live).
+    // Un SEO n'est donc écrasé que par un SEO réellement rédigé, jamais par du vide.
+    if (nonEmptyText(f['Description SEO'])) part.description = f['Description SEO'];
+    if (nonEmptyText(f['Meta title SEO'])) part.meta_title = f['Meta title SEO'];
+    if (nonEmptyText(f['Meta description SEO'])) part.meta_description = f['Meta description SEO'];
 
     const supplier = resolveSupplier(f['Liaisons fournisseurs'], lookups);
     if (supplier) part.supplier = supplier;

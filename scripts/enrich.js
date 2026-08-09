@@ -188,6 +188,7 @@ async function callGenerateSeo(payload) {
 const firstLink = (v) => (Array.isArray(v) && v.length > 0 ? v[0] : null);
 const asArray = (v) => (Array.isArray(v) ? v : v == null ? [] : [v]);
 const joinList = (v) => asArray(v).map((x) => String(x).trim()).filter(Boolean).join(', ');
+const nonEmpty = (v) => typeof v === 'string' && v.trim() !== '';
 
 // Construit les champs à écrire selon le status de la réponse extract-product.
 function buildFields(json) {
@@ -220,7 +221,14 @@ async function main() {
 
   console.log('[enrich] Lecture table Pièces...');
   const piecesById = new Map();
-  for (const r of await fetchTable(TABLE_PIECES, [F_PIECE_STATUT, F_PIECE_REEXTRAIRE])) {
+  for (const r of await fetchTable(TABLE_PIECES, [
+    F_PIECE_STATUT,
+    F_PIECE_REEXTRAIRE,
+    // Lus pour la garde "Set & Forget" (SEO existant préservé), jamais pour décider
+    // de l'extraction elle-même.
+    F_PIECE_DESC_SEO,
+    F_PIECE_META_TITLE,
+  ])) {
     piecesById.set(r.id, r.fields);
   }
   console.log(`[enrich] ${liaisons.length} liaisons, ${piecesById.size} pièces.`);
@@ -230,7 +238,7 @@ async function main() {
   console.log(`[enrich] ${todo.length} liaison(s) avec URL fournisseur.\n`);
 
   let ok = 0, blocked = 0, errored = 0, skipped = 0;
-  let seoOk = 0, seoFail = 0;
+  let seoOk = 0, seoFail = 0, seoKept = 0;
   const blockedUrls = [];
 
   for (const liaison of todo) {
@@ -282,8 +290,21 @@ async function main() {
       // VOLET 1 : retry (SEO_MAX_ATTEMPTS) car generate-part-seo échoue parfois
       // (validation_failed / parse_failed non déterministes) — même esprit que le
       // retry "blocked" d'extract-product.
+      // GARDE "Set & Forget" : si la pièce a DÉJÀ une "Description SEO" ET un
+      // "Meta title SEO" non vides, on ne régénère pas et on n'écrit aucun champ
+      // SEO — quel que soit l'état de Re-extraire. Seule l'extraction produit
+      // (EAN/specs/compat/photos) suit sa logique habituelle. Protège les fiches
+      // live, que sync-airtable-wattiz.js resynchronise ensuite vers Supabase.
+      const seoAlreadyWritten =
+        nonEmpty(piece[F_PIECE_DESC_SEO]) && nonEmpty(piece[F_PIECE_META_TITLE]);
+
       let seo = null;
-      if (json.status === 'ok') {
+      let seoPreserved = false;
+      if (json.status === 'ok' && seoAlreadyWritten) {
+        seoPreserved = true;
+        seoKept++;
+        console.log('   🔒 SEO existant préservé — skip');
+      } else if (json.status === 'ok') {
         for (let attempt = 1; attempt <= SEO_MAX_ATTEMPTS; attempt++) {
           try {
             seo = await callGenerateSeo({
@@ -329,6 +350,9 @@ async function main() {
 
       if (DRY_RUN) {
         console.log(`   [DRY] ${pieceId} ← ${JSON.stringify(fields)}`);
+        if (seoPreserved) {
+          console.log('   [DRY] SEO non régénéré, aucun champ SEO dans le PATCH.');
+        }
         if (seo) {
           console.log(`   [DRY] SEO meta_title    : ${seo.meta_title ?? ''}`);
           console.log(`   [DRY] SEO meta_descript : ${seo.meta_description ?? ''}`);
@@ -356,6 +380,7 @@ async function main() {
   console.log(`❌ erreurs   : ${errored}`);
   console.log(`⏭  skippées  : ${skipped}`);
   console.log(`📝 SEO ok    : ${seoOk}`);
+  console.log(`🔒 SEO gardé : ${seoKept} (existant préservé, non régénéré)`);
   console.log(`⚠  SEO échec : ${seoFail}`);
   if (blockedUrls.length > 0) {
     console.log('\nURLs bloquées :');
