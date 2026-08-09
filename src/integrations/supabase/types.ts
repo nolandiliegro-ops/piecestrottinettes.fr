@@ -1299,6 +1299,7 @@ export type Database = {
           search_document: string | null
           sku: string | null
           slug: string
+          slug_locked_at: string | null
           stock_quantity: number | null
           technical_metadata: Json | null
           updated_at: string
@@ -1331,6 +1332,7 @@ export type Database = {
           search_document?: string | null
           sku?: string | null
           slug: string
+          slug_locked_at?: string | null
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string
@@ -1363,6 +1365,7 @@ export type Database = {
           search_document?: string | null
           sku?: string | null
           slug?: string
+          slug_locked_at?: string | null
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string

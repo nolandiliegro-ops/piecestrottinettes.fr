@@ -103,6 +103,10 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
       const newPrice = (payload.price === null || payload.price === '' || payload.price === undefined) ? null : Number(payload.price);
       payload.price = newPrice;
       payload.price_override = !!form.price_override || newPrice !== (part.price ?? null);
+      // Gel du slug — cette liste ne montre que published=false, mais slug_locked_at est
+      // write-once : une pièce dépubliée y retombe en gardant son verrou. Son slug reste
+      // une URL déjà indexée, le champ Slug du formulaire ne doit pas la réécrire.
+      if (part.slug_locked_at != null) delete payload.slug;
       const { error } = await supabase.from('parts').update(payload).eq('id', part.id);
       if (error) throw error;
     },
@@ -114,10 +118,10 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
     onError: () => toast.error('Erreur lors de la sauvegarde'),
   });
 
-  const field = (label: string, key: string, type = 'text') => (
+  const field = (label: string, key: string, type = 'text', disabled = false) => (
     <div className="space-y-1">
       <label className="text-xs text-[hsl(0_0%_55%)]">{label}</label>
-      <Input type={type} value={form[key] ?? ''} onChange={set(key)} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs" />
+      <Input type={type} value={form[key] ?? ''} onChange={set(key)} disabled={disabled} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs disabled:opacity-50" />
     </div>
   );
 
@@ -143,7 +147,7 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
 
           <div className="grid grid-cols-2 gap-3">
             {field('Nom', 'name')}
-            {field('Slug', 'slug')}
+            {field(part.slug_locked_at ? 'Slug (gelé — URL indexée)' : 'Slug', 'slug', 'text', !!part.slug_locked_at)}
           </div>
 
           <div className="grid grid-cols-3 gap-3">

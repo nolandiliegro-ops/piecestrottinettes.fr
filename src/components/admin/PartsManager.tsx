@@ -32,6 +32,8 @@ interface Part {
   id: string;
   name: string;
   slug: string;
+  slug_locked_at?: string | null;
+  published?: boolean;
   price: number | null;
   stock_quantity: number | null;
   image_url: string | null;
@@ -181,7 +183,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
+        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
         .order('name');
 
       if (error) throw error;
@@ -244,7 +246,7 @@ const PartsManager = () => {
           price_override: newPart.price_override || !!newPart.price,
           attributes: (cleanAttributes.length ? cleanAttributes : null) as Json
         } as TablesInsert<'parts'> & { attributes?: Json })
-        .select('id, name, slug, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
+        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
         .single();
 
       if (error) throw error;
@@ -303,7 +305,14 @@ const PartsManager = () => {
 
     setSaving(true);
     try {
-      const slug = slugify(editValues.name);
+      // Gel du slug — même prédicat que bulk-insert-parts (published OU slug_locked_at,
+      // write-once posé par trigger au 1er passage à published=true). Le slug d'une pièce
+      // publiée EST une URL indexée (/piece/<slug>) : la recalculer sur un renommage
+      // produit un 404 et détruit le référencement acquis. Sous gel il n'est ni recalculé
+      // ni envoyé dans l'update — on garde celui en base.
+      // Libération = allow_overwrite, côté Edge Function uniquement : rien à faire ici.
+      const slugLocked = editPart.slug_locked_at != null || editPart.published === true;
+      const slug = slugLocked ? editPart.slug : slugify(editValues.name);
       const newPrice = editValues.price ? parseFloat(editValues.price) : null;
       // Verrou prix : case cochée OU prix modifié → price_override=true (le sync
       // Airtable ne réécrasera jamais ce prix). Décocher la case rend la main à Airtable.
@@ -315,7 +324,7 @@ const PartsManager = () => {
         .from('parts')
         .update({
           name: editValues.name.trim(),
-          slug,
+          ...(slugLocked ? {} : { slug }),
           category_id: editValues.category_id || null,
           price: newPrice,
           price_override: priceOverride,
@@ -749,7 +758,15 @@ const PartsManager = () => {
         <div className="space-y-2">
           <Label>Nom *</Label>
           <Input value={values.name} onChange={(e) => setValues({ ...values, name: e.target.value })} placeholder="Ex: Pneu 10 pouces" />
-          {values.name && <p className="text-xs text-muted-foreground">Slug: {slugify(values.name)}</p>}
+          {values.name && (
+            isEdit && editPart && (editPart.slug_locked_at != null || editPart.published === true) ? (
+              <p className="text-xs text-amber-600">
+                Slug gelé (URL indexée) : <span className="font-mono">{editPart.slug}</span> — renommer ne changera pas l'URL.
+              </p>
+            ) : (
+              <p className="text-xs text-muted-foreground">Slug: {slugify(values.name)}</p>
+            )
+          )}
         </div>
         <div className="space-y-2">
           <Label>Catégorie *</Label>
