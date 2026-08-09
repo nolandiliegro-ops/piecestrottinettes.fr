@@ -404,11 +404,12 @@ const handler = async (req: Request): Promise<Response> => {
         // Pièces SANS sku : on saute l'étape 1 (sku UNIQUE autorise plusieurs NULL,
         // donc aucune collision) → comportement strictement inchangé.
         const sku = (part.sku ?? "").trim();
-        const selectCols = "id, slug, sku, price, price_override, published, stock_quantity";
+        const selectCols = "id, slug, sku, price, price_override, published, stock_quantity, slug_locked_at";
 
         let existing:
           | { id: string; slug: string; sku: string | null; price: number | null;
-              price_override: boolean | null; published: boolean; stock_quantity: number }
+              price_override: boolean | null; published: boolean; stock_quantity: number;
+              slug_locked_at: string | null }
           | null = null;
         let matchedBy: "sku" | "slug" | null = null;
 
@@ -437,7 +438,11 @@ const handler = async (req: Request): Promise<Response> => {
         // Calculé ICI, avant le garde-fou collision : celui-ci doit raisonner sur le slug
         // réellement écrit. Le placer après comparerait contre un part.slug qu'on n'écrit
         // pas quand le gel s'applique → rejet à tort d'une pièce valide.
-        const freezeSlug = existing?.published === true && !allowsOverwrite(part, "slug");
+        // Gel si publiée OU si le slug a déjà été publié un jour (slug_locked_at,
+        // write-once posé par trigger) : ferme la fenêtre dépublication → republication.
+        const freezeSlug =
+          (existing?.published === true || existing?.slug_locked_at != null) &&
+          !allowsOverwrite(part, "slug");
         const effectiveSlug = freezeSlug ? existing!.slug : part.slug;
         row.slug = effectiveSlug;
 
