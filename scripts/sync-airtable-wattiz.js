@@ -53,6 +53,9 @@ const DRY_RUN = String(ENV.DRY_RUN ?? 'true').toLowerCase() !== 'false';
 // passe IMAGE-ONLY qui ré-détoure @imgly les photos source Airtable et ÉCRASE l'image
 // en base — sans toucher prix/stock/published/SEO. À remettre false après usage.
 const FORCE_REDETOURE = String(ENV.FORCE_REDETOURE ?? 'false').toLowerCase() === 'true';
+// Dump JSON complet du payload d'une pièce (par sku) pendant le dry-run — sert à
+// construire un one-shot allow_overwrite sans dupliquer le mapping. Inerte sans env.
+const DUMP_SKU = process.env.DUMP_SKU || ENV.DUMP_SKU || null;
 // Catégorie ciblée (comparaison via slugify → robuste casse/accents).
 const FORCE_REDETOURE_CATEGORY_SLUG = 'chambres-a-air';
 
@@ -733,6 +736,17 @@ function printDryRun(parts) {
         `compat=${p.compatibility_source ? 'oui' : 'non'} | photos_source=${nbPhotos} | ` +
         `elec=${elec} | fit=${fit} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
       );
+    }
+  }
+  if (DUMP_SKU) {
+    const hits = parts.filter((p) => p.sku === DUMP_SKU);
+    console.log(`\n[sync] === DUMP payload sku=${DUMP_SKU} (${hits.length} pièce(s)) ===`);
+    for (const p of hits) {
+      // Payload tel qu'envoyé à l'edge function : mêmes strips que groupByCategory.
+      const { _categoryName, _photoPrincipale, ...cleanPart } = p;
+      console.log(`--- BEGIN ${p.slug} (catégorie: ${_categoryName}) ---`);
+      console.log(JSON.stringify(cleanPart, null, 2));
+      console.log(`--- END ${p.slug} ---`);
     }
   }
   console.log('\n[sync] image_url sera null à l\'insert puis rempli par le détourage (process-images + trigger).');
