@@ -61,6 +61,9 @@ interface PartInput {
   compatibility_source?: string;
   electrical_specs?: Record<string, unknown> | null;
   fitment_specs?: Record<string, unknown> | null;
+  // Opt-in de réécriture des champs gelés sur une pièce publiée (cf. allowsOverwrite).
+  // Absent = rien n'est libéré. Extensible ("price", "images"…) sans nouveau flag.
+  allow_overwrite?: OverwritableField[];
 }
 
 interface RequestBody {
@@ -117,6 +120,24 @@ interface ExistingCategory {
   id: string;
   name: string;
   slug: string;
+}
+
+// ─── Convention d'override unique ──────────────────────────────────────────────
+// Règle générale : sur une pièce PUBLIÉE, certains champs sont gelés — ils portent
+// une valeur que l'app ou le SEO ont acquise et qu'un ré-import ne doit pas écraser.
+// On libère champ par champ, pièce par pièce, via part.allow_overwrite.
+// Une seule convention pour tous les champs gelables, plutôt qu'un flag ad hoc par cas.
+export type OverwritableField = "slug" | "seo";
+
+// true UNIQUEMENT si le champ est explicitement listé. Clé absente, valeur non
+// tableau, ou entrée non-string → false (pas de libération par accident).
+export function allowsOverwrite(
+  part: { allow_overwrite?: unknown },
+  field: OverwritableField,
+): boolean {
+  const list = part?.allow_overwrite;
+  if (!Array.isArray(list)) return false;
+  return list.some((f) => typeof f === "string" && f.trim() === field);
 }
 
 export type CategoryMatchResult =
@@ -405,19 +426,36 @@ const handler = async (req: Request): Promise<Response> => {
 
         const wasNew = !existing;
 
+        // ── Gel du slug des pièces publiées ────────────────────────────────────
+        // Le slug d'une pièce publiée EST une URL indexée (/piece/<slug>) : la changer
+        // produit un 404 et détruit le référencement acquis. Il est donc immuable par
+        // défaut, quel que soit le slug recalculé côté payload. Opt-in explicite via
+        // allow_overwrite pour le libérer (le commit qui écrit les alias de redirection
+        // viendra ensuite ; tant qu'il n'est pas là, préférer ne pas libérer).
+        // Pièce non publiée → comportement historique inchangé (le slug suit le nom).
+        //
+        // Calculé ICI, avant le garde-fou collision : celui-ci doit raisonner sur le slug
+        // réellement écrit. Le placer après comparerait contre un part.slug qu'on n'écrit
+        // pas quand le gel s'applique → rejet à tort d'une pièce valide.
+        const freezeSlug = existing?.published === true && !allowsOverwrite(part, "slug");
+        const effectiveSlug = freezeSlug ? existing!.slug : part.slug;
+        row.slug = effectiveSlug;
+
         // ── Garde-fou collision slug ───────────────────────────────────────────
-        // On va écrire slug = part.slug. Si une AUTRE ligne (id différent) le détient
+        // On va écrire slug = effectiveSlug. Si une AUTRE ligne (id différent) le détient
         // déjà, l'écriture violerait parts_slug_unique → erreur claire, aucune pièce
         // écrasée (ne peut survenir que sur un match par sku qui change le slug).
-        if (existing && existing.slug !== part.slug) {
+        // Sous gel, effectiveSlug === existing.slug : la condition est fausse et le
+        // garde-fou ne s'exécute pas — il n'y a plus de changement de slug à protéger.
+        if (existing && existing.slug !== effectiveSlug) {
           const { data: slugOwner } = await supabase
-            .from("parts").select("id, sku").eq("slug", part.slug).maybeSingle();
+            .from("parts").select("id, sku").eq("slug", effectiveSlug).maybeSingle();
           if (slugOwner && slugOwner.id !== existing.id) {
             const msg =
-              `Collision slug : "${part.slug}" déjà utilisé par une autre pièce ` +
+              `Collision slug : "${effectiveSlug}" déjà utilisé par une autre pièce ` +
               `(sku=${slugOwner.sku ?? "—"}, id=${slugOwner.id}). Pièce non écrasée.`;
             results.errors.push({ name: part.name, error: msg });
-            results.rows.push({ name: part.name, slug: part.slug, id: existing.id, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, id: existing.id, status: "error" });
             continue;
           }
         }
@@ -450,7 +488,7 @@ const handler = async (req: Request): Promise<Response> => {
             .from("parts").update(row).eq("id", existing.id);
           if (updateError) {
             results.errors.push({ name: part.name, error: updateError.message });
-            results.rows.push({ name: part.name, slug: part.slug, id: existing.id, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, id: existing.id, status: "error" });
             continue;
           }
           partId = existing.id;
@@ -459,7 +497,7 @@ const handler = async (req: Request): Promise<Response> => {
             .from("parts").insert(row).select("id").maybeSingle();
           if (insertError || !inserted) {
             results.errors.push({ name: part.name, error: insertError?.message ?? "insert returned no row" });
-            results.rows.push({ name: part.name, slug: part.slug, id: null, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, id: null, status: "error" });
             continue;
           }
           partId = inserted.id as string;
@@ -472,7 +510,11 @@ const handler = async (req: Request): Promise<Response> => {
 
         if (wasNew) results.inserted++;
         else results.updated++;
-        results.rows.push({ name: part.name, slug: part.slug, id: partId, status: wasNew ? "inserted" : "updated" });
+        // slug = celui RÉELLEMENT écrit (gel appliqué), pas celui proposé par le payload :
+        // l'appelant s'en sert pour relire l'état image en base (fetchPartsImageState).
+        // Renvoyer le slug du payload ferait porter la lecture sur une ligne inexistante
+        // → pièce vue "sans image" → ré-détourage à chaque run.
+        results.rows.push({ name: part.name, slug: effectiveSlug, id: partId, status: wasNew ? "inserted" : "updated" });
 
         if (part.supplier && part.supplier.name) {
           try {
