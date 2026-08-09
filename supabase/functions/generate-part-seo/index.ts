@@ -54,7 +54,7 @@ A. META TITLE (Champ 'meta_title') :
 - En cas de dépassement des 65 caractères, tronquer le suffixe '| piecestrottinettes.fr', mais NE JAMAIS tronquer le mot-clé ou la dimension.
 B. META DESCRIPTION (Champ 'meta_description') :
 - Longueur : 140 à 155 caractères MAXIMUM.
-- Structure : [Bénéfice technique / résolution problème] + [Famille de dimension/voltage] + [Livraison 24h/Stock] + [CTA].
+- Structure : [Bénéfice technique / résolution problème] + [Famille de dimension ou voltage] + 'Expédition 24h.' — vise 140 à 155 caractères, ne dépasse JAMAIS 155.
 C. DESCRIPTION HTML (Champ 'description') :
 Utiliser uniquement <h2>, <p>, <ul>, <li>, <strong>. Pas de <h1>, <html>, <body>, ni blocs de code markdown.
 Structure HTML obligatoire :
@@ -129,6 +129,186 @@ function extractJsonObject(raw: string): string | null {
   return null;
 }
 
+// ─── Garde-fous déterministes (longueurs + phrase canonique) ───────────────────
+
+const MAX_META_TITLE = 65;
+const MAX_META_DESCRIPTION = 155;
+
+// Suffixe de marque : seule troncature autorisée par la règle A. Espaces tolérés
+// autour du pipe, insensible à la casse, uniquement en fin de chaîne.
+const BRAND_SUFFIX_RE = /\s*\|\s*piecestrottinettes\.fr\s*$/i;
+
+// Phrase imposée par la règle C.2. Doit être reproduite mot pour mot.
+const CANONICAL_SENTENCE = "Vérifie les dimensions inscrites sur ta pièce d'origine";
+
+// Longueur en points de code — même compteur que enrich.js / backfill-seo.mjs
+// ([...s].length), sinon un emoji dans le nom fausserait la mesure.
+function len(s: string): number {
+  return [...s].length;
+}
+
+// Les LLM alternent apostrophe droite (') et typographique (’). On normalise ce
+// seul caractère avant comparaison : la phrase reste vérifiée mot pour mot
+// (accents et casse compris), on tolère juste la variante de glyphe.
+function normalizeApostrophes(s: string): string {
+  return s.replace(/[’ʼ‛′]/g, "'");
+}
+
+function hasCanonicalSentence(description: string): boolean {
+  return normalizeApostrophes(description).includes(
+    normalizeApostrophes(CANONICAL_SENTENCE),
+  );
+}
+
+// Post-traitement du meta_title : trim systématique ; au-delà de 65 caractères,
+// retrait du suffixe de marque. Jamais de troncature au milieu du texte — si le
+// titre dépasse encore, la validation le signale et déclenche la relance.
+function normalizeMetaTitle(raw: string): string {
+  const trimmed = raw.trim();
+  if (len(trimmed) <= MAX_META_TITLE) return trimmed;
+  const stripped = trimmed.replace(BRAND_SUFFIX_RE, "").trim();
+  return stripped.length > 0 ? stripped : trimmed;
+}
+
+// Retourne la liste des violations (vide = conforme).
+function collectViolations(
+  metaTitle: string,
+  metaDescription: string,
+  description: string,
+): string[] {
+  const violations: string[] = [];
+  if (len(metaTitle) > MAX_META_TITLE) {
+    violations.push(
+      `meta_title trop long : ${len(metaTitle)} caractères alors que le maximum est ${MAX_META_TITLE}. ` +
+        `Raccourcis le texte lui-même (le suffixe '| piecestrottinettes.fr' a déjà été retiré automatiquement), ` +
+        `sans jamais amputer le mot-clé principal ni la dimension.`,
+    );
+  }
+  if (len(metaDescription) > MAX_META_DESCRIPTION) {
+    violations.push(
+      `meta_description trop longue : ${len(metaDescription)} caractères alors que le maximum est ${MAX_META_DESCRIPTION}. ` +
+        `Réécris-la plus courte en gardant la structure imposée.`,
+    );
+  }
+  if (!hasCanonicalSentence(description)) {
+    violations.push(
+      `La phrase obligatoire "${CANONICAL_SENTENCE}" est absente de la description. ` +
+        `Elle doit figurer telle quelle dans la section <h2>Compatibilité</h2>, mot pour mot, ` +
+        `sans reformulation ni synonyme, suivie de "La liste complète des modèles vérifiés et garantis est affichée ci-dessous."`,
+    );
+  }
+  return violations;
+}
+
+function buildCorrectiveMessage(violations: string[]): string {
+  return (
+    "Ta réponse précédente est refusée. Violations relevées :\n" +
+    violations.map((v, i) => `${i + 1}. ${v}`).join("\n") +
+    "\n\nCorrige UNIQUEMENT ces points. Conserve le reste du contenu à l'identique : " +
+    "mêmes H2 dans le même ordre, mêmes données techniques, aucune donnée inventée, " +
+    "aucune liste de modèles de trottinettes.\n" +
+    "Réponds uniquement avec l'objet JSON complet, sans aucun texte ni balise autour."
+  );
+}
+
+// ─── Appel gateway (une tentative) ─────────────────────────────────────────────
+
+type GatewayMessage = { role: "system" | "user" | "assistant"; content: string };
+
+type AttemptResult =
+  | {
+    ok: true;
+    raw: string;
+    description: string;
+    meta_title: string;
+    meta_description: string;
+  }
+  | { ok: false; error: string };
+
+async function runAttempt(
+  messages: GatewayMessage[],
+  lovableKey: string,
+): Promise<AttemptResult> {
+  let gatewayRes: Response;
+  try {
+    gatewayRes = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${lovableKey}`,
+      },
+      body: JSON.stringify({
+        model: "google/gemini-2.5-flash",
+        temperature: 0.3,
+        response_format: { type: "json_object" },
+        messages,
+      }),
+    });
+  } catch (e) {
+    return { ok: false, error: `gateway_fetch_failed: ${String(e)}` };
+  }
+
+  if (!gatewayRes.ok) {
+    let msg: string;
+    if (gatewayRes.status === 429) msg = "rate_limited";
+    else if (gatewayRes.status === 402) msg = "credits_exhausted";
+    else msg = `gateway_error: ${gatewayRes.status}`;
+    // Consume body to avoid resource leak
+    try { await gatewayRes.text(); } catch { /* noop */ }
+    return { ok: false, error: msg };
+  }
+
+  let gatewayJson: any;
+  try {
+    gatewayJson = await gatewayRes.json();
+  } catch {
+    return { ok: false, error: "gateway_invalid_json" };
+  }
+
+  const content: string | undefined = gatewayJson?.choices?.[0]?.message?.content;
+  if (!content || typeof content !== "string") {
+    return { ok: false, error: "gateway_empty_content" };
+  }
+
+  // Parse blindé : fences ```json retirées AVANT le JSON.parse ; en dernier recours,
+  // extraction du premier objet {...} équilibré. Aucun fallback silencieux — un échec
+  // remonte "parse_failed" avec un extrait brut pour diagnostic (l'appelant retente,
+  // cf. SEO_MAX_ATTEMPTS dans enrich.js).
+  const stripped = stripCodeFences(content);
+  let parsed: any = null;
+  try {
+    parsed = JSON.parse(stripped);
+  } catch {
+    const extracted = extractJsonObject(stripped);
+    if (extracted) {
+      try { parsed = JSON.parse(extracted); } catch { parsed = null; }
+    }
+  }
+
+  if (!parsed || typeof parsed !== "object") {
+    return { ok: false, error: `parse_failed: ${content.slice(0, 200)}` };
+  }
+
+  const isNonEmptyString = (v: unknown): v is string =>
+    typeof v === "string" && v.trim().length > 0;
+
+  if (
+    !isNonEmptyString(parsed.description) ||
+    !isNonEmptyString(parsed.meta_title) ||
+    !isNonEmptyString(parsed.meta_description)
+  ) {
+    return { ok: false, error: "validation_failed" };
+  }
+
+  return {
+    ok: true,
+    raw: content,
+    description: parsed.description,
+    meta_title: parsed.meta_title,
+    meta_description: parsed.meta_description,
+  };
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -169,88 +349,58 @@ Deno.serve(async (req) => {
     JSON.stringify(userPayload) +
     "\n\nRéponds uniquement avec l'objet JSON, sans aucun texte ni balise autour.";
 
-  let gatewayRes: Response;
-  try {
-    gatewayRes = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${lovableKey}`,
-      },
-      body: JSON.stringify({
-        model: "google/gemini-2.5-flash",
-        temperature: 0.3,
-        response_format: { type: "json_object" },
-        messages: [
-          { role: "system", content: buildSystemPrompt(userPayload) },
-          { role: "user", content: userMessage },
-        ],
-      }),
-    });
-  } catch (e) {
-    return jsonResponse(errorPayload(`gateway_fetch_failed: ${String(e)}`));
-  }
+  const baseMessages: GatewayMessage[] = [
+    { role: "system", content: buildSystemPrompt(userPayload) },
+    { role: "user", content: userMessage },
+  ];
 
-  if (!gatewayRes.ok) {
-    let msg: string;
-    if (gatewayRes.status === 429) msg = "rate_limited";
-    else if (gatewayRes.status === 402) msg = "credits_exhausted";
-    else msg = `gateway_error: ${gatewayRes.status}`;
-    // Consume body to avoid resource leak
-    try { await gatewayRes.text(); } catch { /* noop */ }
-    return jsonResponse(errorPayload(msg));
-  }
+  const first = await runAttempt(baseMessages, lovableKey);
+  if (!first.ok) return jsonResponse(errorPayload(first.error));
 
-  let gatewayJson: any;
-  try {
-    gatewayJson = await gatewayRes.json();
-  } catch {
-    return jsonResponse(errorPayload("gateway_invalid_json"));
-  }
+  // Post-traitement déterministe AVANT validation : le strip du suffixe de marque
+  // peut à lui seul faire repasser le titre sous 65 et éviter une relance.
+  let chosen = first;
+  let metaTitle = normalizeMetaTitle(first.meta_title);
+  let violations = collectViolations(metaTitle, first.meta_description, first.description);
 
-  const content: string | undefined = gatewayJson?.choices?.[0]?.message?.content;
-  if (!content || typeof content !== "string") {
-    return jsonResponse(errorPayload("gateway_empty_content"));
-  }
-
-  // Parse blindé : fences ```json retirées AVANT le JSON.parse ; en dernier recours,
-  // extraction du premier objet {...} équilibré. Aucun fallback silencieux — un échec
-  // remonte "parse_failed" avec un extrait brut pour diagnostic (l'appelant retente,
-  // cf. SEO_MAX_ATTEMPTS dans enrich.js).
-  const stripped = stripCodeFences(content);
-  let parsed: any = null;
-  try {
-    parsed = JSON.parse(stripped);
-  } catch {
-    const extracted = extractJsonObject(stripped);
-    if (extracted) {
-      try { parsed = JSON.parse(extracted); } catch { parsed = null; }
+  // UNE seule relance corrective, uniquement si le premier jet viole une règle.
+  if (violations.length > 0) {
+    const second = await runAttempt(
+      [
+        ...baseMessages,
+        { role: "assistant", content: first.raw },
+        { role: "user", content: buildCorrectiveMessage(violations) },
+      ],
+      lovableKey,
+    );
+    // Une relance en erreur (réseau/parse) n'invalide pas le premier jet : on le
+    // conserve et il repartira avec ses warnings.
+    if (second.ok) {
+      const retryTitle = normalizeMetaTitle(second.meta_title);
+      const retryViolations = collectViolations(
+        retryTitle,
+        second.meta_description,
+        second.description,
+      );
+      // On ne garde la relance que si elle ne régresse pas.
+      if (retryViolations.length <= violations.length) {
+        chosen = second;
+        metaTitle = retryTitle;
+        violations = retryViolations;
+      }
     }
   }
 
-  if (!parsed || typeof parsed !== "object") {
-    return jsonResponse(errorPayload(`parse_failed: ${content.slice(0, 200)}`));
-  }
-
-  const description = parsed.description;
-  const meta_title = parsed.meta_title;
-  const meta_description = parsed.meta_description;
-
-  const isNonEmptyString = (v: unknown): v is string =>
-    typeof v === "string" && v.trim().length > 0;
-
-  if (
-    !isNonEmptyString(description) ||
-    !isNonEmptyString(meta_title) ||
-    !isNonEmptyString(meta_description)
-  ) {
-    return jsonResponse(errorPayload("validation_failed"));
-  }
-
-  return jsonResponse({
+  // Toujours status "ok" : les appelants (enrich.js, backfill-seo.mjs) écrivent sur
+  // ce seul critère. Les violations résiduelles remontent en "warnings" — clé
+  // additive, ignorée par les deux appelants qui ne lisent que les champs nommés.
+  const body: Record<string, unknown> = {
     status: "ok",
-    description,
-    meta_title,
-    meta_description,
-  });
+    description: chosen.description,
+    meta_title: metaTitle,
+    meta_description: chosen.meta_description,
+  };
+  if (violations.length > 0) body.warnings = violations;
+
+  return jsonResponse(body);
 });
