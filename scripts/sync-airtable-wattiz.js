@@ -152,6 +152,22 @@ function selectName(opt) {
   return null;
 }
 
+// Opt-in de réécriture des champs gelés, piloté depuis Airtable (multipleSelects
+// « 🔓 Autoriser réécriture »). Les libellés d'options sont le CONTRAT de
+// OverwritableField côté edge function ("slug", "seo") : on les passe TELS QUELS,
+// sans normaliser ni filtrer — c'est l'EF qui décide ce qu'elle reconnaît, et une
+// option inconnue y est simplement ignorée (allowsOverwrite ne libère que sur
+// correspondance exacte).
+//   - GUARD : retourne null si le champ est vide/absent, l'appelant N'AJOUTE PAS
+//     la clé → aucun opt-in par accident, comportement actuel strictement inchangé.
+function buildAllowOverwrite(field) {
+  const raw = Array.isArray(field) ? field : [];
+  const opts = raw
+    .map(selectName)
+    .filter((n) => typeof n === 'string' && n.trim() !== '');
+  return opts.length > 0 ? opts : null;
+}
+
 // Construit l'objet electrical_specs pour parts.electrical_specs (jsonb) depuis
 // les champs Airtable "Voltages compatibles" (multipleSelects) + "Connecteur charge"
 // (singleSelect). Convention : { voltages:[int,...], connector:string|null }.
@@ -361,6 +377,13 @@ function filterAndMap(records, lookups, enrichById) {
     if (nonEmptyText(f['Description SEO'])) part.description = f['Description SEO'];
     if (nonEmptyText(f['Meta title SEO'])) part.meta_title = f['Meta title SEO'];
     if (nonEmptyText(f['Meta description SEO'])) part.meta_description = f['Meta description SEO'];
+
+    // Opt-in de réécriture — GUARD identique aux champs SEO : clé ABSENTE si aucune
+    // option cochée. Le gel du slug (et tout futur champ gelable) reste donc actif
+    // par défaut ; il ne se libère que sur une case cochée à la main dans Airtable,
+    // pièce par pièce.
+    const allowOverwrite = buildAllowOverwrite(f['🔓 Autoriser réécriture']);
+    if (allowOverwrite) part.allow_overwrite = allowOverwrite;
 
     const supplier = resolveSupplier(f['Liaisons fournisseurs'], lookups);
     if (supplier) part.supplier = supplier;
@@ -730,11 +753,18 @@ function printDryRun(parts) {
         ? `[${p.electrical_specs.voltages.join(',')}]${p.electrical_specs.connector ? ' ' + p.electrical_specs.connector : ''}`
         : '—';
       const fit = p.fitment_specs ? JSON.stringify(p.fitment_specs) : '—';
+      // Segment affiché UNIQUEMENT si l'opt-in est posé : c'est une exception, elle
+      // doit sauter aux yeux dans la liste sans alourdir les ~190 autres lignes.
+      // C'est ce qui permet de valider un cobaye avant un run réel.
+      const unlock = p.allow_overwrite
+        ? ` | 🔓 allow_overwrite=[${p.allow_overwrite.join(',')}]`
+        : '';
       console.log(
         `  • ${p.name} | sku=${p.sku} | price=${p.price} | stock=${p.stock_quantity} | ` +
         `ean=${p.ean ? 'oui' : 'non'} | specs=${p.characteristics ? 'oui' : 'non'} | ` +
         `compat=${p.compatibility_source ? 'oui' : 'non'} | photos_source=${nbPhotos} | ` +
-        `elec=${elec} | fit=${fit} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | supplier=${sup}`,
+        `elec=${elec} | fit=${fit} | photo_principale=${p._photoPrincipale ? 'oui' : 'non'} | ` +
+        `supplier=${sup}${unlock}`,
       );
     }
   }
