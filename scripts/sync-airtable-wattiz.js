@@ -21,6 +21,7 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
+import { slugify } from './lib/slugify.js';
 import {
   findMissingPartKeys,
   canonicalCategorySlug,
@@ -99,23 +100,6 @@ const SUPPLIER_WHITELIST = [
 if (!AIRTABLE_API_KEY) { console.error('❌ AIRTABLE_API_KEY manquante'); process.exit(1); }
 if (!SUPABASE_URL) { console.error('❌ SUPABASE_URL manquante'); process.exit(1); }
 if (!DRY_RUN && !ADMIN_BULK_SECRET) { console.error('❌ ADMIN_BULK_SECRET manquante'); process.exit(1); }
-
-function slugify(str) {
-  if (!str) return '';
-  return str
-    .toLowerCase()
-    .replace(/[àáâãäå]/g, 'a')
-    .replace(/[èéêë]/g, 'e')
-    .replace(/[ìíîï]/g, 'i')
-    .replace(/[òóôõö]/g, 'o')
-    .replace(/[ùúûü]/g, 'u')
-    .replace(/ç/g, 'c')
-    .replace(/ñ/g, 'n')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
 
 // "volt-corp" → "voltcorp", "Wattiz" → "wattiz". Hors whitelist → "autre".
 function normalizeSupplier(parser) {
@@ -317,9 +301,10 @@ function resolveSupplier(liaisonIds, lookups) {
   return supplier;
 }
 
-function filterAndMap(records, lookups, enrichById) {
+function filterAndMap(records, lookups, enrichById, slugIndex) {
   const filtered = [];
   const skipped = { empty: 0, missingFields: 0, noCategory: 0 };
+  const resolved = { byAirtableId: 0, bySku: 0, fresh: 0, skuOnly: [] };
 
   for (const r of records) {
     const f = r.fields;
@@ -344,6 +329,23 @@ function filterAndMap(records, lookups, enrichById) {
     const compatibility_source = enrich[F_PIECE_COMPAT_SOURCE] || null;
     const source_image_urls = parsePhotosSource(enrich[F_PIECE_PHOTOS_SOURCE]);
 
+    // GARDE D'EXISTENCE : le slug d'une pièce déjà en base n'est jamais recalculé.
+    // Résolution dans l'ordre de la cascade de bulk-insert-parts (airtable_id → sku)
+    // pour proposer exactement le slug que l'EF conserverait de toute façon.
+    // Slugification (famille B, module canonique) réservée aux pièces nouvelles.
+    const sku = f['Référence constructeur'];
+    const dbSlugByAirtableId = slugIndex.byAirtableId.get(r.id);
+    const dbSlugBySku = dbSlugByAirtableId ? undefined : slugIndex.bySku.get(sku);
+    if (dbSlugByAirtableId) {
+      resolved.byAirtableId++;
+    } else if (dbSlugBySku) {
+      resolved.bySku++;
+      resolved.skuOnly.push({ sku, slug: dbSlugBySku, name: f['Name'] });
+    } else {
+      resolved.fresh++;
+    }
+    const effectiveSlug = dbSlugByAirtableId ?? dbSlugBySku ?? slugify(f['Name']);
+
     const part = {
       _categoryName: categoryName,
       // Photo principale (attachment Airtable) : affichage dry-run UNIQUEMENT,
@@ -351,8 +353,8 @@ function filterAndMap(records, lookups, enrichById) {
       // via process-images + trigger trg_sync_part_image_url.
       _photoPrincipale: firstAttachmentUrl(f['Photo principale']),
       name: f['Name'],
-      slug: slugify(f['Name']),
-      sku: f['Référence constructeur'],
+      slug: effectiveSlug,
+      sku,
       price: f['Prix affiché client TTC'] ?? null,
       stock_quantity: f['Stock Steedy'] ?? 0,
       image_url: null,
@@ -407,6 +409,13 @@ function filterAndMap(records, lookups, enrichById) {
     `[sync] Mappées: ${filtered.length} | Skip vides: ${skipped.empty} | ` +
     `Skip sans réf: ${skipped.missingFields} | Skip sans catégorie: ${skipped.noCategory}`,
   );
+  console.log(
+    `[sync] Slugs: ${resolved.byAirtableId} résolus par airtable_id | ` +
+    `${resolved.bySku} par sku | ${resolved.fresh} nouvelle(s) → slugify.`,
+  );
+  for (const p of resolved.skuOnly) {
+    console.log(`[sync]   ↳ sku seul : ${p.sku} → ${p.slug} (${p.name})`);
+  }
   return filtered;
 }
 
@@ -553,6 +562,46 @@ async function fetchPartsImageState(slugs) {
     }
   }
   return state;
+}
+
+// ─── GARDE D'EXISTENCE — index des slugs déjà en base ─────────────────────────
+// Lit TOUTES les parts (slug, sku, airtable_id) en deux index. Sert à ne JAMAIS
+// recalculer le slug d'une pièce qui existe déjà : le sync propose le slug de la
+// base tel quel, et ne slugifie que les pièces réellement nouvelles.
+//
+// Deux index, dans l'ordre de la cascade de bulk-insert-parts (airtable_id → sku) :
+// le fallback sku couvre les pièces entrées en base hors Airtable (import CSV,
+// admin) qui n'ont pas de technical_metadata.airtable_id mais dont le sku matche.
+// Sans lui, elles passeraient pour nouvelles et le payload proposerait un slug
+// recalculé — que l'EF n'appliquerait que sur une pièce non gelée, mais autant
+// ne pas le proposer du tout.
+//
+// Lève en cas d'échec HTTP : sans index, impossible de décider d'un slug.
+async function fetchExistingSlugIndex() {
+  const byAirtableId = new Map();
+  const bySku = new Map();
+  if (!SUPABASE_ANON) return { byAirtableId, bySku, available: false };
+
+  const PAGE = 1000;
+  for (let offset = 0; ; offset += PAGE) {
+    const u = new URL(`${SUPABASE_URL}/rest/v1/parts`);
+    u.searchParams.set('select', 'slug,sku,airtable_id:technical_metadata->>airtable_id');
+    u.searchParams.set('limit', String(PAGE));
+    u.searchParams.set('offset', String(offset));
+    const res = await fetch(u.toString(), {
+      headers: { apikey: SUPABASE_ANON, Authorization: `Bearer ${SUPABASE_ANON}` },
+    });
+    if (!res.ok) {
+      throw new Error(`REST parts ${res.status}: ${(await res.text()).slice(0, 120)}`);
+    }
+    const rows = await res.json();
+    for (const row of rows) {
+      if (row.airtable_id) byAirtableId.set(row.airtable_id, row.slug);
+      if (row.sku) bySku.set(row.sku, row.slug);
+    }
+    if (rows.length < PAGE) break;
+  }
+  return { byAirtableId, bySku, available: true };
 }
 
 // Lit parts(id, slug) par lots → Map<slug, id>. Le redétourage forcé a besoin de l'UUID
@@ -811,6 +860,36 @@ function printDryRun(parts) {
   console.log('[sync] Dry-run terminé. Mettre DRY_RUN=false dans .env pour insérer + détourer.');
 }
 
+// Contrôle final (DRY_RUN) : aucune pièce EXISTANTE ne doit voir son slug changer.
+// Re-dérive le slug DB depuis l'index, indépendamment de filterAndMap — c'est un
+// contrôle, pas un écho de la décision prise plus haut. Attendu : 0 divergence.
+function printSlugDivergence(parts, slugIndex) {
+  console.log('\n[sync] === CONTRÔLE SLUG (lecture seule) ===');
+  if (!slugIndex.available) {
+    console.warn('[sync] ⚠️  Index indisponible → contrôle impossible.');
+    return;
+  }
+
+  const diverging = [];
+  let existing = 0;
+  for (const p of parts) {
+    const dbSlug =
+      slugIndex.byAirtableId.get(p.technical_metadata?.airtable_id) ??
+      slugIndex.bySku.get(p.sku);
+    if (!dbSlug) continue;
+    existing++;
+    if (p.slug !== dbSlug) diverging.push({ sku: p.sku, payload: p.slug, db: dbSlug });
+  }
+
+  console.log(
+    `[sync] DIVERGENCES SLUG PAYLOAD↔DB : ${diverging.length}/${parts.length} ` +
+    `(${existing} pièce(s) existante(s), ${parts.length - existing} nouvelle(s))`,
+  );
+  for (const d of diverging) {
+    console.log(`[sync]   ✗ ${d.sku} : payload="${d.payload}" ≠ db="${d.db}"`);
+  }
+}
+
 // Aperçu lecture seule (DRY_RUN) : prédit quelles pièces seraient détourées en run réel,
 // via le même état image que le run réel (fetchPartsImageState). Aucun POST.
 //   - slug absent de la base  → serait "inserted" → détoure
@@ -901,7 +980,21 @@ function printForceRedetourePreview(parts) {
       enrichById.set(r.id, r.fields);
     }
 
-    const parts = filterAndMap(records, lookups, enrichById);
+    // Index des slugs déjà en base — lu AVANT le mapping (la garde d'existence
+    // en dépend pièce par pièce).
+    const slugIndex = await fetchExistingSlugIndex();
+    if (!slugIndex.available) {
+      console.warn(
+        '\n╔══════════════════════════════════════════════════════════════════════╗' +
+        '\n║  ⚠️  VITE_SUPABASE_PUBLISHABLE_KEY absente du .env                     ║' +
+        '\n║  → Garde d\'existence INACTIVE : le slug de CHAQUE pièce sera         ║' +
+        '\n║    recalculé et proposé dans le payload.                             ║' +
+        '\n║  → Seul le gel côté edge function protège encore les slugs en base.  ║' +
+        '\n╚══════════════════════════════════════════════════════════════════════╝\n',
+      );
+    }
+
+    const parts = filterAndMap(records, lookups, enrichById, slugIndex);
     if (parts.length === 0) {
       console.log('[sync] Aucune pièce à insérer. Arrêt.');
       return;
@@ -913,6 +1006,7 @@ function printForceRedetourePreview(parts) {
       printDryRun(parts);
       await printDetourPreview(parts);
       if (FORCE_REDETOURE) printForceRedetourePreview(parts);
+      printSlugDivergence(parts, slugIndex);
       return;
     }
 
