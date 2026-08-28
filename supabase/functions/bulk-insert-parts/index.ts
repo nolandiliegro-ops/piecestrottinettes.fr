@@ -164,6 +164,23 @@ export function extractAirtableId(part: { technical_metadata?: unknown }): strin
   return typeof v === "string" ? v.trim() : "";
 }
 
+// ─── Garde anti-null SEO ───────────────────────────────────────────────────────
+// Champs SEO gérés par omission : seule une string non vide entre dans row.
+// Le trim sert à DÉCIDER, pas à écrire — on pose la valeur brute du payload, pour
+// ne pas modifier un SEO existant au passage.
+const SEO_FIELDS = ["description", "meta_title", "meta_description"] as const;
+
+export function seoRowFields(
+  part: { description?: unknown; meta_title?: unknown; meta_description?: unknown },
+): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const f of SEO_FIELDS) {
+    const v = part?.[f];
+    if (typeof v === "string" && v.trim() !== "") out[f] = v;
+  }
+  return out;
+}
+
 export type CategoryMatchResult =
   | { status: "ok"; id: string }
   | { status: "unknown" }
@@ -405,12 +422,25 @@ const handler = async (req: Request): Promise<Response> => {
           // 0 sans images). Le jour où ça change, poser une garde-preserve ici, sur le
           // modèle de electrical_specs / fitment_specs plus bas.
           image_url: part.image_url || null,
-          description: part.description || null,
+          // ── SEO : garde anti-null par omission ───────────────────────────────
+          // Décision 28/08 : Airtable = source de vérité SEO. Garde anti-null par
+          // omission ci-dessous. "seo" dans OverwritableField est réservé et inerte
+          // — ne pas le câbler sans décision explicite.
+          //
+          // description / meta_title / meta_description : clé absente, null ou string
+          // vide → le champ n'entre PAS dans row. L'UPDATE ne touche alors pas la
+          // colonne (le SEO acquis en base survit) ; l'INSERT prend le DEFAULT (null),
+          // soit exactement ce que l'ancien `|| null` écrivait — chemin INSERT
+          // inchangé. Même pattern que electrical_specs / fitment_specs plus bas.
+          // Aucune lecture supplémentaire, selectCols inchangé.
+          //
+          // Rend enfin opérante la garde du script sync (c44911e), qui omet déjà la
+          // clé quand le champ Airtable est vide : elle ne servait à rien tant que
+          // l'EF réécrivait null par-dessus.
+          ...seoRowFields(part),
           stock_quantity: part.stock_quantity ?? 0,
           difficulty_level: part.difficulty_level ?? null,
           sku: part.sku || null,
-          meta_title: part.meta_title || null,
-          meta_description: part.meta_description || null,
           youtube_video_id: part.youtube_video_id || null,
           estimated_install_time_minutes: part.estimated_install_time_minutes ?? null,
           required_tools: part.required_tools || null,

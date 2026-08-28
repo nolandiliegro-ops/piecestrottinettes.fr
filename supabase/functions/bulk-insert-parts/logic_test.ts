@@ -28,6 +28,7 @@ import {
   normalizeName,
   resolveCategoryMatch,
   extractAirtableId,
+  seoRowFields,
 } from "./index.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
@@ -597,4 +598,51 @@ Deno.test("extractAirtableId: valeur vide, non-string ou bag partiel → ''", ()
   assertStrictEquals(extractAirtableId({ technical_metadata: { airtable_id: "   " } }), "");
   assertStrictEquals(extractAirtableId({ technical_metadata: { airtable_id: 42 } }), "");
   assertStrictEquals(extractAirtableId({ technical_metadata: null }), "");
+});
+
+// ─── seoRowFields (garde anti-null SEO, M6.1) ───────────────────────────────
+
+Deno.test("seoRowFields: clés SEO absentes → aucun champ dans row", () => {
+  // Chemin UPDATE : row sans ces clés ⇒ .update() ne touche pas les colonnes,
+  // le SEO acquis en base survit.
+  assertEquals(seoRowFields({}), {});
+  // Cas réel du payload sync quand les champs Airtable sont vides (c44911e) :
+  // les clés ne sont pas posées → undefined.
+  assertEquals(
+    seoRowFields({ description: undefined, meta_title: undefined, meta_description: undefined }),
+    {},
+  );
+});
+
+Deno.test("seoRowFields: strings non vides → écrites telles quelles (valeur brute)", () => {
+  // Le trim décide, il n'écrit pas : les espaces de bord sont conservés.
+  assertEquals(
+    seoRowFields({
+      description: "<h2>Pneu</h2>",
+      meta_title: " Pneu 10 pouces ",
+      meta_description: "Pneu 10x2.50 pour trottinette.",
+    }),
+    {
+      description: "<h2>Pneu</h2>",
+      meta_title: " Pneu 10 pouces ",
+      meta_description: "Pneu 10x2.50 pour trottinette.",
+    },
+  );
+});
+
+Deno.test("seoRowFields: string vide, espaces seuls, null ou non-string → champ omis", () => {
+  assertEquals(
+    seoRowFields({
+      description: "",
+      meta_title: "   ",
+      meta_description: null,
+    }),
+    {},
+  );
+  assertEquals(seoRowFields({ description: 42, meta_title: undefined }), {});
+  // Mixte : seul le champ réellement rempli entre dans row.
+  assertEquals(
+    seoRowFields({ description: "", meta_title: "Titre", meta_description: null }),
+    { meta_title: "Titre" },
+  );
 });
