@@ -15,6 +15,8 @@
 // Clé non sourcée = clé ABSENTE (jamais de valeur inventée). La validation refuse
 // aussi tout fitment_specs malformé, y compris hors catégories à clés requises.
 
+import { slugify } from './slugify.js';
+
 /** Clés requises par slug canonique de catégorie. Hors mapping → aucune clé requise. */
 export const REQUIRED_KEYS_BY_CATEGORY = {
   'chargeurs': { kind: 'electrical' },
@@ -31,17 +33,8 @@ export const REQUIRED_KEYS_BY_CATEGORY = {
 export const BRAKE_DISC_KEYS = ['diameters', 'pcds', 'holes'];
 export const TIRE_FAMILIES = ['pneumatic', 'solid'];
 
-const DIACRITICS_RE = new RegExp('[\\u0300-\\u036f]', 'g');
-
 /** Slug canonique — même logique NFD que canonicalSlug (bulk-insert-parts). */
-export function canonicalCategorySlug(text) {
-  return String(text ?? '')
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(DIACRITICS_RE, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-}
+export const canonicalCategorySlug = slugify;
 
 const isIntArray = (v) => Array.isArray(v) && v.length > 0 && v.every(Number.isInteger);
 const isStrArray = (v) =>

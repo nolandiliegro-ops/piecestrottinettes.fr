@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { slugify as generateSlug } from "../../../scripts/lib/slugify.js";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -88,16 +89,6 @@ const extractYoutubeId = (input: string): string => {
   }
   
   return input.trim();
-};
-
-// Generate slug from title
-const generateSlug = (title: string): string => {
-  return title
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
 };
 
 const difficultyLabels = ['Débutant', 'Facile', 'Intermédiaire', 'Avancé', 'Expert'];

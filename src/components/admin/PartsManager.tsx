@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { supabase } from '@/integrations/supabase/client';
+import { slugify } from '../../../scripts/lib/slugify.js';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -65,15 +66,6 @@ interface Category {
 type SortField = 'name' | 'price' | 'stock' | 'created_at';
 type SortDirection = 'asc' | 'desc';
 type GroupBy = 'none' | 'category' | 'stock_status';
-
-const slugify = (text: string) => {
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-};
 
 const ATTRIBUTE_PRESETS: Record<string, string[]> = {
   chargeurs: ['Voltage', 'Ampérage', 'Connecteur'],

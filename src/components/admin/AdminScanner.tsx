@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { supabase } from '@/integrations/supabase/client';
+import { slugify } from '../../../scripts/lib/slugify.js';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, Upload, X, ArrowRight, Save, Loader2, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,9 +13,6 @@ import { cn } from '@/lib/utils';
 import { useQuery } from '@tanstack/react-query';
 
 type WizardStep = 'photo' | 'details' | 'specs';
-
-const slugify = (text: string) =>
-  text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const AdminScanner = () => {
   const [step, setStep] = useState<WizardStep>('photo');

@@ -1,6 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import imageCompression from "browser-image-compression";
+import { slugify } from "../../scripts/lib/slugify.js";
 
 // Source unique d'édition des catégories (Palier 2, bloc B).
 // TOUTES les écritures pointent `categories` — `category_images` n'est plus touchée.
@@ -55,13 +56,9 @@ const RELATED_KEYS: ReadonlyArray<ReadonlyArray<string>> = [
   ["parent-categories"],     // useParentCategories
 ];
 
-export const slugify = (text: string): string =>
-  text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+// Ré-export : plusieurs composants (CategoryEditorPanel…) importent slugify
+// depuis ce hook. L'implémentation vit désormais dans scripts/lib/slugify.js.
+export { slugify };
 
 const SELECT_COLUMNS =
   "id, name, slug, icon, lucide_icon, display_order, display_order_home, show_on_home, " +

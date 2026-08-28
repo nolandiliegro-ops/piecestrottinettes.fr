@@ -1,14 +1,14 @@
 /**
  * Le Veilleur — Helpers (slug, normalisation).
+ *
+ * L'implémentation vit dans scripts/lib/slugify.js (module canonique du repo).
+ * Ici on ne fait qu'appliquer la troncature à 80 propre au veilleur.
  */
 
+import { slugify as canonicalSlugify } from '../../lib/slugify.js';
+
 export function slugify(str) {
-  return String(str || '')
-    .toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '')
-    .slice(0, 80);
+  return canonicalSlugify(str, { maxLength: 80 });
 }
 
 export function buildScooterSlug(brand, name, variant) {

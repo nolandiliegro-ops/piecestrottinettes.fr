@@ -1,14 +1,11 @@
 import { z } from "zod";
+import { slugify } from "../../scripts/lib/slugify.js";
 
 export const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-export const slugify = (text: string) =>
-  text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+// R\u00e9-export : BrandFormDialog et consorts importent slugify d'ici.
+// L'impl\u00e9mentation vit d\u00e9sormais dans scripts/lib/slugify.js.
+export { slugify };
 
 // Accepts a full YouTube URL (watch?v=, youtu.be/, embed/, shorts/) or a bare 11-char ID.
 // Returns the 11-char video id, or undefined if none could be extracted.
