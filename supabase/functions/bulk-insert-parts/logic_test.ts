@@ -27,6 +27,7 @@ import {
   canonicalSlug,
   normalizeName,
   resolveCategoryMatch,
+  extractAirtableId,
 } from "./index.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
@@ -569,4 +570,31 @@ Deno.test("resolveCategoryMatch: ≥2 candidats (doublon) → ambiguous + slugs 
 Deno.test("resolveCategoryMatch: categorySlug explicite matche par slug", () => {
   const r = resolveCategoryMatch("Libellé différent", "pneus", SAMPLE_CATEGORIES);
   assertEquals(r, { status: "ok", id: "id-pneus" });
+});
+
+// ─── extractAirtableId (cascade d'identité, M5 #2) ──────────────────────────
+
+Deno.test("extractAirtableId: bag sync-airtable complet → l'id", () => {
+  assertStrictEquals(
+    extractAirtableId({
+      technical_metadata: {
+        source: "airtable",
+        airtable_id: "recDCEOqfO5H9Obmr",
+        compatible_model_record_ids: [],
+      },
+    }),
+    "recDCEOqfO5H9Obmr",
+  );
+});
+
+Deno.test("extractAirtableId: payload sync-parts (aucun technical_metadata) → ''", () => {
+  // Cas de non-régression : la cascade historique sku → slug doit rester intacte.
+  assertStrictEquals(extractAirtableId({}), "");
+});
+
+Deno.test("extractAirtableId: valeur vide, non-string ou bag partiel → ''", () => {
+  assertStrictEquals(extractAirtableId({ technical_metadata: { source: "airtable" } }), "");
+  assertStrictEquals(extractAirtableId({ technical_metadata: { airtable_id: "   " } }), "");
+  assertStrictEquals(extractAirtableId({ technical_metadata: { airtable_id: 42 } }), "");
+  assertStrictEquals(extractAirtableId({ technical_metadata: null }), "");
 });

@@ -81,7 +81,16 @@ interface Results {
   compatibilities_suggested_ai: number;
   ai_calls: number;
   errors: { name: string; error: string }[];
-  rows: { name: string; slug: string; id: string | null; status: "inserted" | "updated" | "skipped" | "error" }[];
+  // matched_by : posé sur les seules lignes abouties (inserted/updated) — c'est la
+  // clé qui a résolu la pièce, ou "new" si aucune. Rend le matching observable dans
+  // la réponse HTTP au lieu des seuls logs de l'edge function.
+  rows: {
+    name: string;
+    slug: string;
+    id: string | null;
+    status: "inserted" | "updated" | "skipped" | "error";
+    matched_by?: MatchedBy | "new";
+  }[];
 }
 
 // =====================================================================
@@ -129,6 +138,9 @@ interface ExistingCategory {
 // Une seule convention pour tous les champs gelables, plutôt qu'un flag ad hoc par cas.
 export type OverwritableField = "slug" | "seo";
 
+// Clé qui a résolu la pièce existante, par ordre de priorité dans la cascade.
+export type MatchedBy = "airtable_id" | "sku" | "slug";
+
 // true UNIQUEMENT si le champ est explicitement listé. Clé absente, valeur non
 // tableau, ou entrée non-string → false (pas de libération par accident).
 export function allowsOverwrite(
@@ -138,6 +150,18 @@ export function allowsOverwrite(
   const list = part?.allow_overwrite;
   if (!Array.isArray(list)) return false;
   return list.some((f) => typeof f === "string" && f.trim() === field);
+}
+
+// Identifiant Airtable porté par le payload, "" si absent ou inexploitable.
+// Garde stricte, même esprit que allowsOverwrite : seule une string non vide compte.
+// Le payload de sync-parts.js n'a pas de technical_metadata du tout → "" → la
+// cascade historique (sku puis slug) s'applique inchangée. Renvoyer "" plutôt que
+// null évite qu'un .eq(..., "") parte vers PostgREST et matche les bags à clé vide.
+export function extractAirtableId(part: { technical_metadata?: unknown }): string {
+  const tm = part?.technical_metadata;
+  if (!tm || typeof tm !== "object") return "";
+  const v = (tm as Record<string, unknown>).airtable_id;
+  return typeof v === "string" ? v.trim() : "";
 }
 
 export type CategoryMatchResult =
@@ -395,14 +419,24 @@ const handler = async (req: Request): Promise<Response> => {
             : {}),
         };
 
-        // ── Matching en cascade : SKU prioritaire, puis slug ───────────────────
-        // 1) sku non vide + ligne avec ce sku → UPDATE cette ligne (pièce renommée :
+        // ── Matching en cascade : airtable_id, puis SKU, puis slug ─────────────
+        // 0) technical_metadata.airtable_id non vide + ligne portant le même
+        //    → UPDATE cette ligne. C'est la SEULE clé d'identité stable : le sku est
+        //    corrigeable côté Airtable et le slug suit le nom tant que la pièce n'est
+        //    pas publiée. Quand l'un des deux bouge sans que l'autre matche, la cascade
+        //    historique tombait à vide et INSÉRAIT un doublon, laissant la fiche live
+        //    et son SEO orphelins sur l'ancienne ligne. Passer airtable_id en tête
+        //    ferme ce trou. Unicité garantie par l'index partiel parts_airtable_id_unique.
+        // 1) sinon sku non vide + ligne avec ce sku → UPDATE cette ligne (pièce renommée :
         //    slug différent mais même Référence constructeur). parts.sku est UNIQUE
         //    (parts_sku_key) : un INSERT avec un sku déjà pris échouerait, d'où le match.
         // 2) sinon ligne avec le même slug     → UPDATE par slug (comportement historique).
         // 3) sinon                              → INSERT.
         // Pièces SANS sku : on saute l'étape 1 (sku UNIQUE autorise plusieurs NULL,
         // donc aucune collision) → comportement strictement inchangé.
+        // Pièces SANS airtable_id (tout le payload de sync-parts.js) : on saute
+        // l'étape 0 → cascade historique strictement inchangée.
+        const airtableId = extractAirtableId(part);
         const sku = (part.sku ?? "").trim();
         const selectCols = "id, slug, sku, price, price_override, published, stock_quantity, slug_locked_at, technical_metadata";
 
@@ -412,9 +446,34 @@ const handler = async (req: Request): Promise<Response> => {
               slug_locked_at: string | null;
               technical_metadata: Record<string, unknown> | null }
           | null = null;
-        let matchedBy: "sku" | "slug" | null = null;
+        let matchedBy: MatchedBy | null = null;
 
-        if (sku) {
+        // Chemin JSON PostgREST : "technical_metadata->>airtable_id", SANS quotes
+        // autour de la clé (contrairement au SQL ->>'airtable_id').
+        //
+        // `error` est lu ICI alors que les deux lookups suivants l'ignorent, et ce
+        // n'est pas une inconséquence : un filtre JSON mal formé renvoie un 400 avec
+        // data:null, ce qui ferait retomber la cascade sur le sku. Le POST répondrait
+        // updated:1, la pièce serait correctement mise à jour, et ce match par
+        // identité serait mort sans que rien ne le signale. Même chose si deux lignes
+        // partagent l'airtable_id (PGRST116 sur maybeSingle) — impossible une fois
+        // parts_airtable_id_unique posé, d'où l'ordre de déploiement index puis code.
+        // On journalise sans faire échouer la pièce : le repli sur sku/slug reste un
+        // comportement correct, seulement moins précis.
+        if (airtableId) {
+          const { data: byAirtable, error: airtableErr } = await supabase
+            .from("parts").select(selectCols)
+            .eq("technical_metadata->>airtable_id", airtableId).maybeSingle();
+          if (airtableErr) {
+            console.error(
+              `[bulk-insert-parts] lookup airtable_id KO (${airtableId}) — repli sur sku/slug :`,
+              airtableErr.message,
+            );
+          }
+          if (byAirtable) { existing = byAirtable; matchedBy = "airtable_id"; }
+        }
+
+        if (!existing && sku) {
           const { data: bySku } = await supabase
             .from("parts").select(selectCols).eq("sku", sku).maybeSingle();
           if (bySku) { existing = bySku; matchedBy = "sku"; }
@@ -450,7 +509,8 @@ const handler = async (req: Request): Promise<Response> => {
         // ── Garde-fou collision slug ───────────────────────────────────────────
         // On va écrire slug = effectiveSlug. Si une AUTRE ligne (id différent) le détient
         // déjà, l'écriture violerait parts_slug_unique → erreur claire, aucune pièce
-        // écrasée (ne peut survenir que sur un match par sku qui change le slug).
+        // écrasée (ne peut survenir que sur un match par airtable_id ou par sku qui
+        // change le slug — un match par slug écrit forcément le slug qu'il a trouvé).
         // Sous gel, effectiveSlug === existing.slug : la condition est fausse et le
         // garde-fou ne s'exécute pas — il n'y a plus de changement de slug à protéger.
         if (existing && existing.slug !== effectiveSlug) {
@@ -529,7 +589,13 @@ const handler = async (req: Request): Promise<Response> => {
         // l'appelant s'en sert pour relire l'état image en base (fetchPartsImageState).
         // Renvoyer le slug du payload ferait porter la lecture sur une ligne inexistante
         // → pièce vue "sans image" → ré-détourage à chaque run.
-        results.rows.push({ name: part.name, slug: effectiveSlug, id: partId, status: wasNew ? "inserted" : "updated" });
+        results.rows.push({
+          name: part.name,
+          slug: effectiveSlug,
+          id: partId,
+          status: wasNew ? "inserted" : "updated",
+          matched_by: matchedBy ?? "new",
+        });
 
         if (part.supplier && part.supplier.name) {
           try {
