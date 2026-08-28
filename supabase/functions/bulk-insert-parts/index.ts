@@ -392,6 +392,18 @@ const handler = async (req: Request): Promise<Response> => {
           name: part.name,
           slug: part.slug,
           price: part.price ?? null,
+          // image_url est une colonne DÉRIVÉE de parts.images, pas une colonne pilotable :
+          // le trigger trg_sync_part_image_url (migration 20260531200604) est BEFORE INSERT
+          // OR UPDATE OF images, image_url et réassigne NEW.image_url depuis l'entrée
+          // is_primary de NEW.images (à défaut la première par position). Notre UPDATE
+          // touchant image_url, il déclenche le trigger, qui écrase ce null par l'image
+          // réelle — images n'étant jamais dans row, elle garde sa valeur en base.
+          // C'est pour ça qu'un sync (qui envoie toujours image_url: null, l'image étant
+          // posée après coup par process-images) n'efface aucune photo.
+          // Angle mort : si images est NULL, non-array ou vide, le trigger ne touche à rien
+          // et ce null est écrit. Aucune pièce dans ce cas à ce jour (189 avec image_url,
+          // 0 sans images). Le jour où ça change, poser une garde-preserve ici, sur le
+          // modèle de electrical_specs / fitment_specs plus bas.
           image_url: part.image_url || null,
           description: part.description || null,
           stock_quantity: part.stock_quantity ?? 0,
