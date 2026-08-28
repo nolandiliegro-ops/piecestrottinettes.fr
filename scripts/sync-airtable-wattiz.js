@@ -638,11 +638,39 @@ async function bulkInsert(parts) {
     // base). "pas d'image" = prédicat identique au front (partHasImage / getPrimaryImage).
     const rows = result.results?.rows;
     if (Array.isArray(rows)) {
-      const urlsBySlug = new Map(
-        partsInCat
-          .filter((p) => Array.isArray(p.source_image_urls) && p.source_image_urls.length > 0)
-          .map((p) => [p.slug, p.source_image_urls]),
-      );
+      // ── Corrélation row ↔ pièce (dette #7) ─────────────────────────────────
+      // rows[].slug est le slug RÉELLEMENT écrit (effectiveSlug), qui diffère du
+      // slug du payload dès que le gel s'applique (pièce publiée / slug_locked_at).
+      // Indexer urlsBySlug sur p.slug ratait donc le lookup sur toute pièce gelée :
+      // la pièce était vue "sans photos source", jamais re-détourée, et l'aperçu
+      // annonçait un détourage que le run réel ne faisait pas.
+      //
+      // On corrèle par POSITION, pas par slug : bulk-insert-parts pousse exactement
+      // une entrée dans results.rows par pièce reçue, dans l'ordre, sur TOUS ses
+      // chemins (skipped, collision, erreur update/insert, succès, catch de boucle)
+      // — aucune sortie de boucle sans push. L'index est donc l'appariement fiable.
+      // Corréler par sku ou airtable_id serait plus explicite, mais results.rows[]
+      // ne porte aujourd'hui ni l'un ni l'autre (name, slug, id, status, matched_by).
+      //
+      // GARDE : si les longueurs divergent, l'invariant 1:1 est cassé (EF plus
+      // ancienne, réponse tronquée) → repli sur l'ancien appariement par slug du
+      // payload, qui reste correct pour toute pièce non gelée.
+      const aligned = rows.length === partsInCat.length;
+      if (!aligned) {
+        console.warn(
+          `\n   ⚠  rows(${rows.length}) ≠ pièces envoyées(${partsInCat.length}) pour ${categoryName}` +
+          `\n   ⚠  → appariement par slug du payload (les pièces au slug gelé ne seront pas re-détourées).`,
+        );
+      }
+
+      // Clé = slug RENVOYÉ par l'EF, pour que les lookups ci-dessous (qui itèrent
+      // sur rows) tombent juste, gel du slug ou non.
+      const urlsBySlug = new Map();
+      rows.forEach((r, i) => {
+        const p = aligned ? partsInCat[i] : partsInCat.find((x) => x.slug === r.slug);
+        if (!p || !Array.isArray(p.source_image_urls) || p.source_image_urls.length === 0) return;
+        urlsBySlug.set(r.slug, p.source_image_urls);
+      });
 
       // Slugs "updated" candidats (ont des photos source) → on lit leur état image en
       // base pour ne re-détourer que celles qui n'ont pas encore d'image.
