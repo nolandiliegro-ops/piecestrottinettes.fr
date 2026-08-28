@@ -8,6 +8,7 @@ import { Loader2, LogIn, ArrowLeft } from 'lucide-react';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useBrandAsset } from '@/hooks/useBrandAssets';
+import SEO from '@/components/SEO';
 
 const loginSchema = z.object({
   email: z.string().trim().email({ message: "Email invalide" }),
@@ -84,6 +85,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-greige flex flex-col">
+      <SEO noindex title="Connexion" description="Connectez-vous à votre compte Pièces Trottinettes." />
       {/* Back link */}
       <div className="p-6">
         <Link 

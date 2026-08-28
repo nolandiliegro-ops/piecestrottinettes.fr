@@ -7,6 +7,7 @@ import MissionEngine from '@/components/expert/MissionEngine';
 import GhostFrameCamera from '@/components/expert/GhostFrameCamera';
 import TechLogGallery from '@/components/expert/TechLogGallery';
 import { toast } from 'sonner';
+import SEO from '@/components/SEO';
 
 interface ScooterModel {
   id: string;
@@ -89,6 +90,7 @@ const ExpertStudio = () => {
 
   return (
     <div className="h-screen overflow-hidden bg-[hsl(30,14%,95%)] flex flex-col">
+      <SEO noindex title="Expert Studio" description="Atelier expert scooter (back-office)." />
       {/* Header */}
       <header className="flex items-center justify-between px-4 py-3 border-b border-[hsl(144,20%,65%)]/20 bg-[hsl(0,0%,10%)]/95 backdrop-blur-md">
         <div className="flex items-center gap-3">

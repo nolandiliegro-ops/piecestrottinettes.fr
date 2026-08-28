@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre statique : react-helmet-async REMPLACE nativement le <title>, aucun doublon.
+         La meta description, elle, est ajoutée en plus de la statique → elle vit
+         uniquement dans <SEO> (src/components/SEO.tsx), jamais ici. -->
     <title>Pièces Trottinettes | Spécialiste Pièces Détachées</title>
-    <meta name="description" content="Spécialiste des pièces détachées pour trottinettes électriques. Xiaomi, Ninebot, Segway, Dualtron, Kaabo. Trouvez les pièces compatibles avec votre modèle.">
     <meta name="author" content="Pièces Trottinettes" />
 
     <!-- Google Fonts: Bebas Neue + Anton (display) + Plus Jakarta Sans (body) -->
@@ -15,20 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
 
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="https://piecestrottinettes.fr" />
-    <meta property="og:title" content="Pièces Trottinettes | Spécialiste Pièces Détachées">
-    <meta property="og:description" content="Spécialiste des pièces détachées pour trottinettes électriques. Xiaomi, Ninebot, Segway, Dualtron, Kaabo. Trouvez les pièces compatibles avec votre modèle.">
+    <!-- Open Graph — filet pour scrapers sociaux sans JS UNIQUEMENT.
+         Tout ce que le composant SEO injecte par page a été retiré d'ici :
+         helmet AJOUTE ses balises au head sans remplacer les statiques (seul le
+         titre est remplacé nativement), et la générique passait en premier.
+         N'ajoute ici que ce que le composant SEO ne rend jamais. -->
+    <meta property="og:site_name" content="Pièces Trottinettes" />
     <meta property="og:image" content="https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/site-assets/og-image.png">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@piecestrottinettes" />
-    <meta name="twitter:title" content="Pièces Trottinettes | Spécialiste Pièces Détachées">
-    <meta name="twitter:description" content="Spécialiste des pièces détachées pour trottinettes électriques. Xiaomi, Ninebot, Segway, Dualtron, Kaabo. Trouvez les pièces compatibles avec votre modèle.">
-    <meta name="twitter:image" content="https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/site-assets/og-image.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">

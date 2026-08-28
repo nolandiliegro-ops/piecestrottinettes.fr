@@ -9,6 +9,7 @@ import CartItem from "@/components/cart/CartItem";
 import EmptyCart from "@/components/cart/EmptyCart";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const CartPage = () => {
   const { items, totals } = useCart();
@@ -24,8 +25,9 @@ const CartPage = () => {
 
   return (
     <div className="min-h-screen bg-greige">
+      <SEO noindex title="Panier" description="Votre panier de pièces détachées trottinette." />
       <Header />
-      
+
       <main className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Back Navigation */}

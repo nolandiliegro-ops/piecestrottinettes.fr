@@ -8,6 +8,7 @@ import { Loader2, UserPlus, ArrowLeft, Gift } from 'lucide-react';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useBrandAsset } from '@/hooks/useBrandAssets';
+import SEO from '@/components/SEO';
 
 const registerSchema = z.object({
   displayName: z.string().trim().min(2, { message: "Nom minimum 2 caractères" }).max(50, { message: "Nom maximum 50 caractères" }),
@@ -102,6 +103,7 @@ const Register = () => {
 
   return (
     <div className="min-h-screen bg-greige flex flex-col">
+      <SEO noindex title="Créer un compte" description="Créez votre compte Pièces Trottinettes." />
       {/* Back link */}
       <div className="p-6">
         <Link 
