@@ -95,7 +95,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
 // Hook to fetch ALL compatible parts for a scooter (no limit)
 export const useScooterCompatibleParts = (scooterId: string | null) => {
   return useQuery({
-    queryKey: ["scooter-compatible-parts-v3", scooterId],
+    queryKey: ["scooter-compatible-parts-v4", scooterId],
     queryFn: async () => {
       if (!scooterId) return [];
 
@@ -106,7 +106,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
         .select(`
           confidence_level,
           suggestion_reason,
-          parts (
+          parts!inner (
             id,
             name,
             slug,
@@ -116,10 +116,12 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
             stock_quantity,
             difficulty_level,
             technical_metadata,
+            published,
             category:categories(id, name, icon, slug)
           )
         `)
         .eq("scooter_model_id", scooterId)
+        .eq("parts.published", true)
         .in("confidence_level", ["validated", "high", "medium"]);
 
       if (error) throw error;

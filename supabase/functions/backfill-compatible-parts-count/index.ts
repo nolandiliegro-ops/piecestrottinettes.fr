@@ -2,13 +2,16 @@
 // backfill-compatible-parts-count
 // =====================================================================
 // One-shot maintenance Edge Function : recalcule la colonne cachée
-// scooter_models.compatible_parts_count à partir de la source de vérité
-// "signal pur+sûr" (Option A+ pragmatique) :
+// scooter_models.compatible_parts_count sur la règle AFFICHABLE du LOT 3
+// (✅ verified + 🟡 unverified — le même chiffre que la fiche trotte et le
+// compteur Header) :
 //   COUNT(DISTINCT part_id) dans part_compatibility
 //   WHERE parts.published = true
-//     AND confidence_level IN ('validated', 'high')
-// 'validated' = curation manuelle admin ; 'high' = IA très sûre / specs match.
-// On exclut 'medium' et 'low' (suggestions douteuses) pour ne pas surcompter.
+//     AND ( confidence_level IN ('validated', 'high')
+//        OR (confidence_level = 'medium' AND suggestion_reason LIKE 'fitment:partial%') )
+// Règle DUPLIQUÉE de src/lib/compatibilityStatus.ts (classifyCompat) — SOURCE
+// UNIQUE côté front, non importable depuis une EF Deno : toute évolution de la
+// classification se fait LÀ-BAS d'abord, puis se recopie ici.
 //
 // La colonne cachée n'avait jamais été mise à jour depuis le seed initial
 // de janvier 2026. Voir Notion roadmap pour la mise en place future de
@@ -39,6 +42,21 @@ interface ScooterRow {
 
 interface CompatRow {
   part_id: string;
+  confidence_level: string;
+  suggestion_reason: string | null;
+}
+
+// Copie de la branche "affichable" de classifyCompat (src/lib/compatibilityStatus.ts,
+// source unique) : verified ∪ unverified, c.-à-d. validated, high, ou medium
+// avec raison fitment:partial. Tenir en phase avec le front.
+function isDisplayable(row: CompatRow): boolean {
+  if (row.confidence_level === "validated" || row.confidence_level === "high") {
+    return true;
+  }
+  return (
+    row.confidence_level === "medium" &&
+    (row.suggestion_reason ?? "").startsWith("fitment:partial")
+  );
 }
 
 interface BackfillResult {
@@ -101,13 +119,14 @@ Deno.serve(async (req) => {
     const errors: { slug: string; error: string }[] = [];
 
     for (const sm of scooterList) {
-      // Fetch toutes les rows part_compatibility joined sur parts.published=true
+      // Fetch toutes les rows part_compatibility joined sur parts.published=true,
+      // élargi à medium PUIS filtré par isDisplayable (règle affichable LOT 3).
       const { data: compatRows, error: compatErr } = await supabase
         .from("part_compatibility")
-        .select("part_id, parts!inner(id, published)")
+        .select("part_id, confidence_level, suggestion_reason, parts!inner(id, published)")
         .eq("scooter_model_id", sm.id)
         .eq("parts.published", true)
-        .in("confidence_level", ["validated", "high"]);
+        .in("confidence_level", ["validated", "high", "medium"]);
 
       if (compatErr) {
         console.error(
@@ -120,7 +139,9 @@ Deno.serve(async (req) => {
 
       // DISTINCT côté JS pour matcher COUNT(DISTINCT part_id) du SQL
       const uniquePartIds = new Set(
-        (compatRows as CompatRow[] | null || []).map((r) => r.part_id),
+        (compatRows as CompatRow[] | null || [])
+          .filter(isDisplayable)
+          .map((r) => r.part_id),
       );
       const newCount = uniquePartIds.size;
       const oldCount = sm.compatible_parts_count ?? 0;
