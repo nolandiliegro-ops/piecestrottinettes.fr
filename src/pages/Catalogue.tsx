@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Loader2, Filter } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
+import { classifyCompat } from "@/lib/compatibilityStatus";
 import Header from "@/components/Header";
 import CategoryBentoGrid from "@/components/catalogue/CategoryBentoGrid";
 import SubCategoryBar from "@/components/catalogue/SubCategoryBar";
@@ -105,7 +106,7 @@ const Catalogue = () => {
 
   // Resolve brand → set of compatible part IDs (for client-side filter)
   const { data: brandPartIds = null } = useQuery({
-    queryKey: ["catalogue_brand_part_ids", brandFilter],
+    queryKey: ["catalogue_brand_part_ids-v3", brandFilter],
     queryFn: async (): Promise<Set<string>> => {
       if (!brandFilter) return new Set();
       const { data: brand } = await supabase
@@ -120,11 +121,16 @@ const Catalogue = () => {
         .eq("brand_id", brand.id)
         .eq("published", true);
       if (!models || models.length === 0) return new Set();
+      // LOT 3 : le filtre marque ne retient que le verified (règle unique).
       const { data: compat } = await supabase
         .from("part_compatibility")
-        .select("part_id")
+        .select("part_id, confidence_level, suggestion_reason")
         .in("scooter_model_id", models.map((m) => m.id));
-      return new Set((compat || []).map((c) => c.part_id as string));
+      return new Set(
+        (compat || [])
+          .filter((row) => classifyCompat(row) === "verified")
+          .map((c) => c.part_id as string),
+      );
     },
     enabled: !!brandFilter,
     staleTime: 5 * 60 * 1000,

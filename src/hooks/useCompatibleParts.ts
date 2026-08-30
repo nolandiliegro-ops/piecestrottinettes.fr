@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
+import { classifyCompat } from '@/lib/compatibilityStatus';
 
 interface Part {
   id: string;
@@ -32,25 +33,30 @@ export const useCompatibleParts = (scooterModelId?: string) => {
         setLoading(true);
         setError(null);
 
-        // Query part_compatibility table to get compatible parts for this scooter model
+        // LOT 3 : surface sans section 🟡 (Garage) → verified UNIQUEMENT,
+        // classé par la règle unique src/lib/compatibilityStatus.ts.
         const { data: compatibilityData, error: compatibilityError } = await supabase
           .from('part_compatibility')
-          .select('part_id')
+          .select('part_id, confidence_level, suggestion_reason')
           .eq('scooter_model_id', scooterModelId);
 
         if (compatibilityError) {
           throw compatibilityError;
         }
 
+        const verifiedRows = (compatibilityData || []).filter(
+          (row) => classifyCompat(row) === 'verified'
+        );
+
         // If no compatible parts found, return empty array
-        if (!compatibilityData || compatibilityData.length === 0) {
+        if (verifiedRows.length === 0) {
           setParts([]);
           setLoading(false);
           return;
         }
 
         // Extract part IDs
-        const partIds = compatibilityData.map(item => item.part_id);
+        const partIds = verifiedRows.map(item => item.part_id);
 
         // Fetch parts details with category information
         const { data: partsData, error: partsError } = await supabase

@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import type { ImageEntry } from "@/lib/entityImage";
+import { classifyCompat, type CompatStatus } from "@/lib/compatibilityStatus";
 
 export interface ScooterDetail {
   id: string;
@@ -45,6 +46,9 @@ export interface ScooterCompatiblePart {
     icon: string | null;
     slug: string;
   } | null;
+  /** Classification LOT 3 (règle unique src/lib/compatibilityStatus.ts). */
+  status: CompatStatus;
+  reason: string | null;
 }
 
 // Hook to fetch a scooter by its slug
@@ -91,14 +95,17 @@ export const useScooterBySlug = (slug: string | undefined) => {
 // Hook to fetch ALL compatible parts for a scooter (no limit)
 export const useScooterCompatibleParts = (scooterId: string | null) => {
   return useQuery({
-    queryKey: ["scooter-compatible-parts", scooterId],
+    queryKey: ["scooter-compatible-parts-v3", scooterId],
     queryFn: async () => {
       if (!scooterId) return [];
 
-      // Source de vérité "signal pur+sûr" : confidence_level IN ('validated', 'high')
+      // LOT 3 : on élargit à medium PUIS on ventile via la règle unique —
+      // classifyCompat décide ce qui sort (✅/🟡), jamais le .in() seul.
       const { data, error } = await supabase
         .from("part_compatibility")
         .select(`
+          confidence_level,
+          suggestion_reason,
           parts (
             id,
             name,
@@ -113,14 +120,22 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
           )
         `)
         .eq("scooter_model_id", scooterId)
-        .in("confidence_level", ["validated", "high"]);
+        .in("confidence_level", ["validated", "high", "medium"]);
 
       if (error) throw error;
 
-      // Flatten the response
       return (data || [])
-        .map((item) => item.parts)
-        .filter(Boolean) as unknown as ScooterCompatiblePart[];
+        .map((item) => {
+          if (!item.parts) return null;
+          const status = classifyCompat(item);
+          if (!status) return null; // masqué (medium non-partial, low)
+          return {
+            ...(item.parts as unknown as Omit<ScooterCompatiblePart, "status" | "reason">),
+            status,
+            reason: item.suggestion_reason,
+          };
+        })
+        .filter(Boolean) as ScooterCompatiblePart[];
     },
     enabled: !!scooterId,
   });

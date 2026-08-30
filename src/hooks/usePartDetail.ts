@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import type { ImageEntry } from "@/lib/entityImage";
+import { classifyCompat, type CompatStatus } from "@/lib/compatibilityStatus";
 
 export interface PartDetail {
   id: string;
@@ -38,6 +39,9 @@ export interface CompatibleScooter {
     name: string;
     logo_url: string | null;
   };
+  /** Classification LOT 3 (règle unique src/lib/compatibilityStatus.ts). */
+  status: CompatStatus;
+  reason: string | null;
 }
 
 export const usePartBySlug = (slug: string | undefined) => {
@@ -158,12 +162,14 @@ export const useRelatedParts = (
 
 export const useCompatibleScooters = (partId: string | null) => {
   return useQuery({
-    queryKey: ["compatible-scooters", partId],
+    queryKey: ["compatible-scooters-v3", partId],
     queryFn: async (): Promise<CompatibleScooter[]> => {
       const { data, error } = await supabase
         .from("part_compatibility")
         .select(
           `
+          confidence_level,
+          suggestion_reason,
           scooter_models (
             id,
             name,
@@ -187,14 +193,19 @@ export const useCompatibleScooters = (partId: string | null) => {
             slug: string;
             brands: { name: string; logo_url: string | null };
           };
-          
+
           if (!model) return null;
-          
+
+          const status = classifyCompat(item);
+          if (!status) return null; // masqué (low, medium non-partial)
+
           return {
             id: model.id,
             name: model.name,
             slug: model.slug,
             brand: model.brands,
+            status,
+            reason: item.suggestion_reason,
           };
         })
         .filter((item): item is CompatibleScooter => item !== null);

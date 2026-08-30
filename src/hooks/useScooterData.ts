@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useState, useEffect } from "react";
+import { classifyCompat } from "@/lib/compatibilityStatus";
 
 // Type for part with category and technical metadata
 export interface ProductAttribute {
@@ -220,7 +221,7 @@ export const useSearchScooters = (query: string) => {
 // 🔧 CORRECTION DU BUG : Hook pour récupérer les pièces compatibles avec AbortController
 export const useCompatibleParts = (scooterModelSlug: string | null, limit: number = 4) => {
   return useQuery({
-    queryKey: ["compatible_parts", scooterModelSlug, limit],
+    queryKey: ["compatible_parts-v3", scooterModelSlug, limit],
     queryFn: async ({ signal }): Promise<CompatiblePart[]> => {
       if (!scooterModelSlug) return [];
 
@@ -240,12 +241,14 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
         throw scooterError;
       }
 
-      // Get compatible parts via part_compatibility junction table
-      // Source de vérité "signal pur+sûr" : confidence_level IN ('validated', 'high')
+      // LOT 3 : surface sans section 🟡 → verified UNIQUEMENT (règle unique
+      // classifyCompat ; verified ⊆ validated∪high, le pré-filtre DB reste sûr).
       const { data: compatibilityData, error: compatError } = await supabase
         .from("part_compatibility")
         .select(`
           part_id,
+          confidence_level,
+          suggestion_reason,
           parts (
             id,
             name,
@@ -279,6 +282,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
 
       // Transform and filter the data - ensure category is properly extracted
       return (compatibilityData || [])
+        .filter((item) => classifyCompat(item) === "verified")
         .map((item) => item.parts)
         .filter((part): part is NonNullable<typeof part> => part !== null)
         .map((part) => {
@@ -330,7 +334,7 @@ export const useCompatibleParts = (scooterModelSlug: string | null, limit: numbe
 // un round-trip réseau par scooter affiché.
 export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
   return useQuery({
-    queryKey: ["compatible_parts_count", scooterModelSlug],
+    queryKey: ["compatible_parts_count-v3", scooterModelSlug],
     queryFn: async ({ signal }): Promise<number> => {
       if (!scooterModelSlug) return 0;
 
@@ -343,15 +347,15 @@ export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
 
       if (!scooterModel) return 0;
 
-      const { count, error } = await supabase
+      // LOT 3 : le compteur suit la MÊME règle que la fiche trotte — tout
+      // l'affichable (✅ verified + 🟡 unverified), classé client-side par la
+      // règle unique. Fetch minimal (2 colonnes), plus de head-count SQL.
+      const { data, error } = await supabase
         .from("part_compatibility")
-        .select("part_id, parts!inner(id, published)", {
-          count: "exact",
-          head: true,
-        })
+        .select("confidence_level, suggestion_reason, parts!inner(id, published)")
         .eq("scooter_model_id", scooterModel.id)
         .eq("parts.published", true)
-        .in("confidence_level", ["validated", "high"])
+        .in("confidence_level", ["validated", "high", "medium"])
         .abortSignal(signal);
 
       if (error) {
@@ -360,7 +364,7 @@ export const useCompatiblePartsCount = (scooterModelSlug: string | null) => {
         }
         return 0;
       }
-      return count || 0;
+      return (data || []).filter((row) => classifyCompat(row) !== null).length;
     },
     enabled: !!scooterModelSlug,
   });

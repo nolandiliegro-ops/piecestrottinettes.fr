@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Package, ArrowRight } from "lucide-react";
+import { Package, ArrowRight, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScooterCompatiblePart } from "@/hooks/useScooterDetail";
+import { unverifiedLabel } from "@/lib/compatibilityStatus";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import PartCard from "@/components/parts/PartCard";
@@ -13,6 +14,12 @@ interface CompatiblePartsGridProps {
 }
 
 const CompatiblePartsGrid = ({ parts, isLoading, scooterName }: CompatiblePartsGridProps) => {
+  // LOT 3 — ventilation via la règle unique (statut déjà posé par le hook) :
+  // ✅ verified en grille ; 🟡 unverified en SECTION SÉPARÉE sous la grille,
+  // libellé sous chaque card (jamais de badge) ; 🔵 zéro affichable → CTA contact.
+  const verified = parts.filter((p) => p.status === "verified");
+  const unverified = parts.filter((p) => p.status === "unverified");
+
   if (isLoading) {
     return (
       <section className="py-12 lg:py-16 bg-muted/30">
@@ -59,12 +66,37 @@ const CompatiblePartsGrid = ({ parts, isLoading, scooterName }: CompatiblePartsG
         </motion.div>
 
         {/* Parts Grid — PartCard catalogue (design unique site) */}
-        {parts.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
-            {parts.map((part, index) => (
-              <PartCard key={part.id} part={{ ...part, description: null }} index={index} />
-            ))}
-          </div>
+        {verified.length > 0 || unverified.length > 0 ? (
+          <>
+            {verified.length > 0 && (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
+                {verified.map((part, index) => (
+                  <PartCard key={part.id} part={{ ...part, description: null }} index={index} />
+                ))}
+              </div>
+            )}
+
+            {unverified.length > 0 && (
+              <div className="mt-10">
+                <div className="flex items-center gap-2 mb-4">
+                  <HelpCircle className="w-5 h-5 text-amber-600" />
+                  <h3 className="font-display text-xl text-foreground">
+                    À vérifier pour ta {scooterName}
+                  </h3>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
+                  {unverified.map((part, index) => (
+                    <div key={part.id}>
+                      <PartCard part={{ ...part, description: null }} index={index} />
+                      <p className="text-sm text-muted-foreground mt-2 px-1">
+                        {unverifiedLabel(part.reason)}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
@@ -73,17 +105,26 @@ const CompatiblePartsGrid = ({ parts, isLoading, scooterName }: CompatiblePartsG
           >
             <Package className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
             <h3 className="font-display text-2xl text-foreground mb-2">
-              Aucune pièce référencée
+              On te la trouve
             </h3>
             <p className="text-muted-foreground max-w-md mx-auto mb-6">
-              Nous n'avons pas encore de pièces compatibles pour ce modèle. Consultez notre catalogue complet.
+              Aucune pièce vérifiée pour ta {scooterName} pour l'instant — dis-nous
+              ce que tu cherches, on la trouve pour toi.
             </p>
-            <Link to="/catalogue">
-              <Button className="gap-2">
-                Explorer le catalogue
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center min-h-[44px] bg-green-700 hover:bg-green-800 text-white rounded-lg px-6 py-3 font-semibold text-sm transition-colors gap-2"
+              >
+                Demander une pièce
                 <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
+              </Link>
+              <Link to="/catalogue">
+                <Button variant="outline" className="gap-2 min-h-[44px]">
+                  Explorer le catalogue
+                </Button>
+              </Link>
+            </div>
           </motion.div>
         )}
       </div>

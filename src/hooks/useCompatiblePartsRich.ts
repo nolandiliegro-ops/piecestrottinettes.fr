@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import type { ImageEntry } from "@/lib/entityImage";
+import { classifyCompat } from "@/lib/compatibilityStatus";
 
 export interface CompatiblePartRich {
   id: string;
@@ -49,18 +50,20 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
 
 export const useCompatiblePartsRich = (scooterModelId: string | null | undefined) => {
   return useQuery<CompatiblePartRich[], Error>({
-    queryKey: ["compatible-parts-rich", scooterModelId],
+    queryKey: ["compatible-parts-rich-v3", scooterModelId],
     queryFn: async () => {
       if (!scooterModelId) return [];
 
+      // LOT 3 : surface sans section 🟡 (rails Home) → verified UNIQUEMENT.
       const { data: compat, error: compatErr } = await supabase
         .from("part_compatibility")
-        .select("part_id")
+        .select("part_id, confidence_level, suggestion_reason")
         .eq("scooter_model_id", scooterModelId);
       if (compatErr) throw compatErr;
-      if (!compat || compat.length === 0) return [];
+      const verifiedRows = (compat || []).filter((row) => classifyCompat(row) === "verified");
+      if (verifiedRows.length === 0) return [];
 
-      const partIds = compat.map((c) => c.part_id);
+      const partIds = verifiedRows.map((c) => c.part_id);
 
       const { data: parts, error: partsErr } = await supabase
         .from("parts")
