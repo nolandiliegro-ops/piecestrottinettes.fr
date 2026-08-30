@@ -56,6 +56,8 @@ export const STRICT_CATEGORIES = [
  * montage n'existe pas dans la donnée source, l'absence est documentée et voulue.
  */
 export const ALLOWED_MISSING_KEYS_SKUS = [
+  'PP-17', // draisienne 12/14 pouces — hors scope moteur compat (décision 24/07), VIDE volontaire
+  'PP-18', // draisienne 12/14 pouces — hors scope moteur compat (décision 24/07), VIDE volontaire
   'PP-26', // pneu plein — dimension source VIDE chez le fournisseur (justifié)
   'PP-34', // pneu plein — dimension source VIDE chez le fournisseur (justifié)
   'SP-57', // disque — codes fitment source VIDES chez le fournisseur (justifié)

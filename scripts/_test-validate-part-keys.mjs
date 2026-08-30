@@ -193,9 +193,9 @@ check(
   ['chargeurs', 'chambres-a-air', 'pneus', 'pneus-gonflables', 'pneus-pleins', 'disques'],
 );
 check(
-  'ALLOWED_MISSING_KEYS_SKUS : les 4 VIDE justifiés',
+  'ALLOWED_MISSING_KEYS_SKUS : les 6 VIDE justifiés (dont draisiennes hors scope)',
   ALLOWED_MISSING_KEYS_SKUS,
-  ['PP-26', 'PP-34', 'SP-57', 'SP-59'],
+  ['PP-17', 'PP-18', 'PP-26', 'PP-34', 'SP-57', 'SP-59'],
 );
 check(
   'faute avec sku : le sku est propagé (clé d\'exemption)',
