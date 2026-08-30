@@ -89,7 +89,12 @@ Deno.serve(async (req) => {
     );
 
     // 1. Upsert brand
-    const slug = brandSlug || brandName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    // NFD + strip diacritiques : même algo que le slugify canonique (scripts/lib/slugify.js).
+    // RegExp construite (pas littérale) : les diacritiques combinants sont invisibles dans le source.
+    const DIACRITICS_RE = new RegExp("[\\u0300-\\u036f]", "g");
+    const slug = brandSlug ||
+      brandName.toLowerCase().normalize("NFD").replace(DIACRITICS_RE, "")
+        .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
     // Base obligatoire : name + slug uniquement.
     const brandUpsert: Record<string, unknown> = { name: brandName, slug };

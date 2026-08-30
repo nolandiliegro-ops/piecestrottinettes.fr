@@ -87,6 +87,7 @@ interface Results {
   rows: {
     name: string;
     slug: string;
+    sku: string | null;
     id: string | null;
     status: "inserted" | "updated" | "skipped" | "error";
     matched_by?: MatchedBy | "new";
@@ -98,7 +99,8 @@ interface Results {
 // =====================================================================
 
 /**
- * Slug canonique — COPIE EXACTE du slugify de src/components/admin/CategoriesManager.tsx.
+ * Slug canonique — copie Deno du module canonique scripts/lib/slugify.js
+ * (les Edge Functions ne peuvent pas importer hors de supabase/functions/).
  * NFD + strip des diacritiques (à → a) pour produire le MÊME slug que l'UI admin.
  * « Chambres à air » → "chambres-a-air".
  */
@@ -400,7 +402,7 @@ const handler = async (req: Request): Promise<Response> => {
       try {
         if (!part.name || !part.slug) {
           results.errors.push({ name: part.name || "unknown", error: "name and slug are required" });
-          results.rows.push({ name: part.name || "unknown", slug: part.slug || "", id: null, status: "skipped" });
+          results.rows.push({ name: part.name || "unknown", slug: part.slug || "", sku: part.sku ?? null, id: null, status: "skipped" });
           continue;
         }
 
@@ -563,7 +565,7 @@ const handler = async (req: Request): Promise<Response> => {
               `Collision slug : "${effectiveSlug}" déjà utilisé par une autre pièce ` +
               `(sku=${slugOwner.sku ?? "—"}, id=${slugOwner.id}). Pièce non écrasée.`;
             results.errors.push({ name: part.name, error: msg });
-            results.rows.push({ name: part.name, slug: effectiveSlug, id: existing.id, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, sku: part.sku ?? null, id: existing.id, status: "error" });
             continue;
           }
         }
@@ -605,7 +607,7 @@ const handler = async (req: Request): Promise<Response> => {
             .from("parts").update(row).eq("id", existing.id);
           if (updateError) {
             results.errors.push({ name: part.name, error: updateError.message });
-            results.rows.push({ name: part.name, slug: effectiveSlug, id: existing.id, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, sku: part.sku ?? null, id: existing.id, status: "error" });
             continue;
           }
           partId = existing.id;
@@ -614,7 +616,7 @@ const handler = async (req: Request): Promise<Response> => {
             .from("parts").insert(row).select("id").maybeSingle();
           if (insertError || !inserted) {
             results.errors.push({ name: part.name, error: insertError?.message ?? "insert returned no row" });
-            results.rows.push({ name: part.name, slug: effectiveSlug, id: null, status: "error" });
+            results.rows.push({ name: part.name, slug: effectiveSlug, sku: part.sku ?? null, id: null, status: "error" });
             continue;
           }
           partId = inserted.id as string;
@@ -634,6 +636,7 @@ const handler = async (req: Request): Promise<Response> => {
         results.rows.push({
           name: part.name,
           slug: effectiveSlug,
+          sku: part.sku ?? null,
           id: partId,
           status: wasNew ? "inserted" : "updated",
           matched_by: matchedBy ?? "new",
@@ -737,7 +740,7 @@ const handler = async (req: Request): Promise<Response> => {
       } catch (loopErr) {
         console.error(`[bulk-insert-parts] Exception part loop:`, loopErr);
         results.errors.push({ name: part.name || "unknown", error: String(loopErr) });
-        results.rows.push({ name: part.name || "unknown", slug: part.slug || "", id: null, status: "error" });
+        results.rows.push({ name: part.name || "unknown", slug: part.slug || "", sku: part.sku ?? null, id: null, status: "error" });
       }
     }
 
