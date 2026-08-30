@@ -26,6 +26,8 @@ import {
   findMissingPartKeys,
   canonicalCategorySlug,
   REQUIRED_KEYS_BY_CATEGORY,
+  STRICT_CATEGORIES,
+  ALLOWED_MISSING_KEYS_SKUS,
 } from './lib/validate-part-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -419,12 +421,12 @@ function filterAndMap(records, lookups, enrichById, slugIndex) {
   return filtered;
 }
 
-// ─── Clés de montage (contrat — étape 3) : WARNING-ONLY sur ce chemin ──────────
-// Aucun champ Airtable ne porte encore les dims fitment → on signale la dette
-// sans jamais bloquer (un refus stopperait aussi les maj prix/stock). L'insert/
-// update part SANS la clé fitment_specs (guard-preserve → colonne intacte).
-// Bascule prévue vers un refus bloquant quand les champs Airtable existeront
-// (même lib, warn → exit). Tourne aussi en DRY_RUN (visibilité sans écriture).
+// ─── Clés de montage (contrat — étape 3) : warn→exit PAR CATÉGORIE ─────────────
+// Catégorie dans STRICT_CATEGORIES (clé câblée des deux côtés) → clés manquantes
+// = faute BLOQUANTE, sauf SKU exempté (ALLOWED_MISSING_KEYS_SKUS, VIDE justifié).
+// Hors allowlist → warning-only inchangé (un refus stopperait aussi les maj
+// prix/stock). Tourne aussi en DRY_RUN. Retourne les fautes bloquantes ; main()
+// exit(1) AVANT tout POST (bulkInsert) → zéro écriture.
 function warnMissingPartKeys(parts) {
   const byCategory = new Map();
   for (const p of parts) {
@@ -437,14 +439,26 @@ function warnMissingPartKeys(parts) {
   }));
 
   const faults = findMissingPartKeys(batches);
-  if (faults.length === 0) return;
+  if (faults.length === 0) return [];
+  const blocking = [];
   for (const f of faults) {
-    console.warn(`[sync] ⚠  [${f.categoryName}] ${f.ref} — clés de montage manquantes : ${f.missing.join(', ')}`);
+    const isStrict = STRICT_CATEGORIES.includes(canonicalCategorySlug(f.categoryName)) &&
+      !(f.sku && ALLOWED_MISSING_KEYS_SKUS.includes(f.sku));
+    if (isStrict) {
+      blocking.push(f);
+      console.error(
+        `[sync] ✖  [${f.categoryName}] ${f.ref}${f.sku ? ` (${f.sku})` : ''} — ` +
+        `clés de montage manquantes (catégorie STRICTE) : ${f.missing.join(', ')}`,
+      );
+    } else {
+      console.warn(`[sync] ⚠  [${f.categoryName}] ${f.ref} — clés de montage manquantes : ${f.missing.join(', ')}`);
+    }
   }
-  console.warn(
-    `[sync] ⚠  ${faults.length} pièce(s) sans clés de montage (fitment_specs) — ` +
-    `champs Airtable à créer, aucun blocage (warning-only).`,
-  );
+  const laxCount = faults.length - blocking.length;
+  if (laxCount > 0) {
+    console.warn(`[sync] ⚠  ${laxCount} pièce(s) sans clés de montage hors catégories strictes (warning-only).`);
+  }
+  return blocking;
 }
 
 function groupByCategory(parts) {
@@ -1000,7 +1014,14 @@ function printForceRedetourePreview(parts) {
       return;
     }
 
-    warnMissingPartKeys(parts);
+    const blockingFaults = warnMissingPartKeys(parts);
+    if (blockingFaults.length > 0) {
+      console.error(
+        `[sync] ✖  ${blockingFaults.length} pièce(s) en catégorie STRICTE sans clés de montage — ` +
+        `AUCUN appel envoyé. Corrige dans Airtable (ou exempte le SKU dans ALLOWED_MISSING_KEYS_SKUS) puis relance.`,
+      );
+      process.exit(1);
+    }
 
     if (DRY_RUN) {
       printDryRun(parts);

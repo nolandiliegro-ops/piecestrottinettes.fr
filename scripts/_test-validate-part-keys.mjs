@@ -6,7 +6,13 @@
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { findMissingPartKeys, canonicalCategorySlug } from './lib/validate-part-keys.js';
+import {
+  findMissingPartKeys,
+  canonicalCategorySlug,
+  REQUIRED_KEYS_BY_CATEGORY,
+  STRICT_CATEGORIES,
+  ALLOWED_MISSING_KEYS_SKUS,
+} from './lib/validate-part-keys.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -45,7 +51,7 @@ check(
 check(
   'disque sans fitment_specs : 3 fautes brake_disc',
   findMissingPartKeys([{ categoryName: 'Disques', parts: [{ slug: 'disque-nu' }] }]),
-  [{ categoryName: 'Disques', ref: 'disque-nu', missing: ['brake_disc.diameters', 'brake_disc.pcds', 'brake_disc.holes'] }],
+  [{ categoryName: 'Disques', ref: 'disque-nu', sku: null, missing: ['brake_disc.diameters', 'brake_disc.pcds', 'brake_disc.holes'] }],
 );
 check(
   'disque ensembles acceptés ["140","160"] : conforme',
@@ -61,7 +67,7 @@ check(
     categoryName: 'Disques',
     parts: [{ slug: 'disque-int', fitment_specs: { brake_disc: { diameters: [160], pcds: ['48'], holes: ['6'] } } }],
   }]),
-  [{ categoryName: 'Disques', ref: 'disque-int', missing: ['brake_disc.diameters', 'brake_disc.diameters (tableau de codes strings attendu)'] }],
+  [{ categoryName: 'Disques', ref: 'disque-int', sku: null, missing: ['brake_disc.diameters', 'brake_disc.diameters (tableau de codes strings attendu)'] }],
 );
 
 // ── Plaquettes : brake_caliper requis, géométrie disque NON requise ───────────
@@ -76,7 +82,7 @@ check(
 check(
   'plaquettes sans brake_caliper : faute',
   findMissingPartKeys([{ categoryName: 'Plaquettes', parts: [{ slug: 'plaq-nue' }] }]),
-  [{ categoryName: 'Plaquettes', ref: 'plaq-nue', missing: ['brake_caliper'] }],
+  [{ categoryName: 'Plaquettes', ref: 'plaq-nue', sku: null, missing: ['brake_caliper'] }],
 );
 check(
   'plaquettes multi-étriers ["nutt_4p","sram_avid"] : conforme',
@@ -100,7 +106,7 @@ check(
 check(
   'chambre à air sans dims : 3 fautes tire',
   findMissingPartKeys([{ categoryName: 'Chambres à Air', parts: [{ slug: 'chambre-10' }] }]),
-  [{ categoryName: 'Chambres à Air', ref: 'chambre-10', missing: ['tire_family="pneumatic"', 'rim_diameters', 'tire_sections'] }],
+  [{ categoryName: 'Chambres à Air', ref: 'chambre-10', sku: null, missing: ['tire_family="pneumatic"', 'rim_diameters', 'tire_sections'] }],
 );
 check(
   'chambre jante mm ("134mm") : conforme',
@@ -126,7 +132,7 @@ check(
     categoryName: 'Pneus pleins',
     parts: [{ slug: 'pnp-mauvaise-famille', fitment_specs: { tire_family: 'pneumatic', rim_diameters: ['6'], tire_sections: ['8x4'] } }],
   }]),
-  [{ categoryName: 'Pneus pleins', ref: 'pnp-mauvaise-famille', missing: ['tire_family="solid"'] }],
+  [{ categoryName: 'Pneus pleins', ref: 'pnp-mauvaise-famille', sku: null, missing: ['tire_family="solid"'] }],
 );
 check(
   'rim_width_mm (ancien schéma) : bloc inconnu refusé',
@@ -134,7 +140,7 @@ check(
     categoryName: 'Pneus pleins',
     parts: [{ slug: 'pnp-v1', fitment_specs: { tire_family: 'solid', rim_diameters: ['6'], tire_sections: ['8x4'], rim_width_mm: [36] } }],
   }]),
-  [{ categoryName: 'Pneus pleins', ref: 'pnp-v1', missing: ['fitment_specs.rim_width_mm (bloc inconnu)'] }],
+  [{ categoryName: 'Pneus pleins', ref: 'pnp-v1', sku: null, missing: ['fitment_specs.rim_width_mm (bloc inconnu)'] }],
 );
 
 // ── Électrique (chargeurs) — inchangé ─────────────────────────────────────────
@@ -146,7 +152,7 @@ check(
 check(
   'chargeur sans voltages : faute electrical',
   findMissingPartKeys([{ categoryName: 'Chargeurs', parts: [{ slug: 'chg-nu' }] }]),
-  [{ categoryName: 'Chargeurs', ref: 'chg-nu', missing: ['electrical_specs.voltages'] }],
+  [{ categoryName: 'Chargeurs', ref: 'chg-nu', sku: null, missing: ['electrical_specs.voltages'] }],
 );
 
 // ── Forme : ancien schéma v1 et blocs inconnus refusés partout ────────────────
@@ -156,7 +162,7 @@ check(
     categoryName: 'Accessoires divers',
     parts: [{ slug: 'acc-v1', fitment_specs: { wheel: { type: 'pneumatic', rim_diameter: ['10'] } } }],
   }]),
-  [{ categoryName: 'Accessoires divers', ref: 'acc-v1', missing: ['fitment_specs.wheel (bloc inconnu)'] }],
+  [{ categoryName: 'Accessoires divers', ref: 'acc-v1', sku: null, missing: ['fitment_specs.wheel (bloc inconnu)'] }],
 );
 check(
   'ancien bloc brake (v1) refusé',
@@ -164,7 +170,7 @@ check(
     categoryName: 'Accessoires divers',
     parts: [{ slug: 'acc-brake-v1', fitment_specs: { brake: { disc_diameter: [160] } } }],
   }]),
-  [{ categoryName: 'Accessoires divers', ref: 'acc-brake-v1', missing: ['fitment_specs.brake (bloc inconnu)'] }],
+  [{ categoryName: 'Accessoires divers', ref: 'acc-brake-v1', sku: null, missing: ['fitment_specs.brake (bloc inconnu)'] }],
 );
 check(
   'brake_disc avec clé inconnue : refusé',
@@ -172,12 +178,34 @@ check(
     categoryName: 'Disques',
     parts: [{ slug: 'disque-typo', fitment_specs: { brake_disc: { diameters: ['160'], pcds: ['48'], holes: ['6'], pcd: ['48'] } } }],
   }]),
-  [{ categoryName: 'Disques', ref: 'disque-typo', missing: ['brake_disc.pcd (clé inconnue)'] }],
+  [{ categoryName: 'Disques', ref: 'disque-typo', sku: null, missing: ['brake_disc.pcd (clé inconnue)'] }],
 );
 check(
   'batch par categorySlug (prioritaire sur categoryName)',
   findMissingPartKeys([{ categoryName: 'Nom Farfelu', categorySlug: 'disques', parts: [{ slug: 'd-1' }] }]),
-  [{ categoryName: 'Nom Farfelu', ref: 'd-1', missing: ['brake_disc.diameters', 'brake_disc.pcds', 'brake_disc.holes'] }],
+  [{ categoryName: 'Nom Farfelu', ref: 'd-1', sku: null, missing: ['brake_disc.diameters', 'brake_disc.pcds', 'brake_disc.holes'] }],
+);
+
+// ── Warn→exit par catégorie : constantes et propagation du sku ────────────────
+check(
+  'STRICT_CATEGORIES : allowlist actée (plaquettes exclue)',
+  STRICT_CATEGORIES,
+  ['chargeurs', 'chambres-a-air', 'pneus', 'pneus-gonflables', 'pneus-pleins', 'disques'],
+);
+check(
+  'ALLOWED_MISSING_KEYS_SKUS : les 4 VIDE justifiés',
+  ALLOWED_MISSING_KEYS_SKUS,
+  ['PP-26', 'PP-34', 'SP-57', 'SP-59'],
+);
+check(
+  'faute avec sku : le sku est propagé (clé d\'exemption)',
+  findMissingPartKeys([{ categoryName: 'Disques', parts: [{ slug: 'disque-sp57', sku: 'SP-57' }] }]),
+  [{ categoryName: 'Disques', ref: 'disque-sp57', sku: 'SP-57', missing: ['brake_disc.diameters', 'brake_disc.pcds', 'brake_disc.holes'] }],
+);
+check(
+  'toutes les catégories strictes ont une règle dans REQUIRED_KEYS_BY_CATEGORY',
+  STRICT_CATEGORIES.every((slug) => slug in REQUIRED_KEYS_BY_CATEGORY),
+  true,
 );
 
 // ── Fichier exemple de référence : doit passer la validation tel quel ─────────

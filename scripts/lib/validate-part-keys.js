@@ -33,6 +33,35 @@ export const REQUIRED_KEYS_BY_CATEGORY = {
 export const BRAKE_DISC_KEYS = ['diameters', 'pcds', 'holes'];
 export const TIRE_FAMILIES = ['pneumatic', 'solid'];
 
+/**
+ * Catégories STRICTES : clé de montage câblée des deux côtés (Airtable + colonnes
+ * fitment de scooter_models) → clés manquantes = refus BLOQUANT du sync (warn→exit).
+ * Même liste que KEY_WIRED_CATEGORIES (copie Deno, les EF ne peuvent pas importer
+ * scripts/lib/) dans supabase/functions/_shared/fitment_matcher.ts — tenir les
+ * deux en phase. 'plaquettes' volontairement absente (rejoindra après la séance
+ * magasin). 'pneus' = alias du slug BASE de la catégorie "Pneus gonflables"
+ * (cf. REQUIRED_KEYS_BY_CATEGORY), même catégorie que 'pneus-gonflables'.
+ */
+export const STRICT_CATEGORIES = [
+  'chargeurs',
+  'chambres-a-air',
+  'pneus',
+  'pneus-gonflables',
+  'pneus-pleins',
+  'disques',
+];
+
+/**
+ * SKU exemptés du blocage strict (warn seulement) : VIDE justifié — la clé de
+ * montage n'existe pas dans la donnée source, l'absence est documentée et voulue.
+ */
+export const ALLOWED_MISSING_KEYS_SKUS = [
+  'PP-26', // pneu plein — dimension source VIDE chez le fournisseur (justifié)
+  'PP-34', // pneu plein — dimension source VIDE chez le fournisseur (justifié)
+  'SP-57', // disque — codes fitment source VIDES chez le fournisseur (justifié)
+  'SP-59', // disque — codes fitment source VIDES chez le fournisseur (justifié)
+];
+
 /** Slug canonique — même logique NFD que canonicalSlug (bulk-insert-parts). */
 export const canonicalCategorySlug = slugify;
 
@@ -137,6 +166,7 @@ export function findMissingPartKeys(batches) {
         faults.push({
           categoryName: batch?.categoryName ?? '?',
           ref: p?.slug || p?.name || '(sans slug/name)',
+          sku: p?.sku ?? null,
           missing,
         });
       }
