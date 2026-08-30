@@ -9,6 +9,13 @@ import {
   type CompatibilityHints,
 } from "../_shared/compatibility-helpers.ts";
 import { suggestCompatibilitiesAI } from "../_shared/ai_matcher.ts";
+import {
+  KEY_WIRED_CATEGORIES,
+  fitmentKindForCategory,
+  isFitmentMatchable,
+  suggestCompatibilitiesFitment,
+  type FitmentSpecs,
+} from "../_shared/fitment_matcher.ts";
 
 // Re-exports pour préserver la compat des consommateurs / tests historiques
 // qui pouvaient importer depuis ce fichier.
@@ -79,6 +86,7 @@ interface Results {
   suppliers_added: number;
   compatibilities_suggested: number;
   compatibilities_suggested_ai: number;
+  compatibilities_suggested_fitment: number;
   ai_calls: number;
   errors: { name: string; error: string }[];
   // matched_by : posé sur les seules lignes abouties (inserted/updated) — c'est la
@@ -388,6 +396,7 @@ const handler = async (req: Request): Promise<Response> => {
       suppliers_added: 0,
       compatibilities_suggested: 0,
       compatibilities_suggested_ai: 0,
+      compatibilities_suggested_fitment: 0,
       ai_calls: 0,
       errors: [],
       rows: [],
@@ -662,7 +671,33 @@ const handler = async (req: Request): Promise<Response> => {
             .select("id", { count: "exact", head: true })
             .eq("part_id", partId);
 
-          if ((count ?? 0) === 0) {
+          if ((count ?? 0) === 0 && KEY_WIRED_CATEGORIES.includes(slug)) {
+            // ─── Moteur K — catégorie à clés câblées : matching déterministe ─────
+            // Règle dure : SANS clés minimales, AUCUN matching auto (ni regex ni
+            // IA) — la pièce reste à zéro suggestion (état 🔵 côté client).
+            const kRule = fitmentKindForCategory(slug);
+            const kPart = {
+              fitment_specs: (part.fitment_specs ?? null) as FitmentSpecs | null,
+              electrical_specs: (part.electrical_specs ?? null) as
+                | { voltages?: number[]; connector?: string | null }
+                | null,
+            };
+            if (kRule && isFitmentMatchable(kRule, kPart)) {
+              try {
+                const passK = await suggestCompatibilitiesFitment(supabase, partId, kPart, slug);
+                passACount = passK.count; // compteur log par pièce (passe unique ici)
+                results.compatibilities_suggested_fitment += passK.count;
+                aiStatus = `key_wired(high=${passK.highCount},partial=${passK.partialCount})`;
+              } catch (e) {
+                console.error(`[bulk-insert-parts] moteur K exception ${part.name}:`, e);
+                results.errors.push({ name: part.name, error: `compat K: ${String(e)}` });
+                aiStatus = "key_wired_error";
+              }
+            } else {
+              console.log(`[bulk-insert-parts] catégorie clé "${slug}" sans fitment matchable → zéro suggestion pour ${part.name}`);
+              aiStatus = "skipped_no_fitment";
+            }
+          } else if ((count ?? 0) === 0) {
             // Passe A — regex specs
             const hints = resolveCompatibilityHints(part);
             let passAScooterIds = new Set<string>();

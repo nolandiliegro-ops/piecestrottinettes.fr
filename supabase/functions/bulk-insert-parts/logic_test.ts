@@ -30,6 +30,13 @@ import {
   extractAirtableId,
   seoRowFields,
 } from "./index.ts";
+import {
+  KEY_WIRED_CATEGORIES,
+  fitmentKindForCategory,
+  isFitmentMatchable,
+  matchTireScooters,
+  matchDiscScooters,
+} from "../_shared/fitment_matcher.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
 
@@ -645,4 +652,77 @@ Deno.test("seoRowFields: string vide, espaces seuls, null ou non-string → cham
     seoRowFields({ description: "", meta_title: "Titre", meta_description: null }),
     { meta_title: "Titre" },
   );
+});
+
+// ─── Moteur K (fitment_matcher) ─────────────────────────────────────────────
+
+Deno.test("KEY_WIRED_CATEGORIES: allowlist actée, plaquettes exclue", () => {
+  assertEquals(KEY_WIRED_CATEGORIES, [
+    "chargeurs", "chambres-a-air", "pneus", "pneus-gonflables", "pneus-pleins", "disques",
+  ]);
+  assertEquals(KEY_WIRED_CATEGORIES.includes("plaquettes"), false);
+});
+
+Deno.test("fitmentKindForCategory: familles par slug", () => {
+  assertEquals(fitmentKindForCategory("chargeurs"), { kind: "electrical" });
+  assertEquals(fitmentKindForCategory("pneus"), { kind: "tire", family: "pneumatic" });
+  assertEquals(fitmentKindForCategory("chambres-a-air"), { kind: "tire", family: "pneumatic" });
+  assertEquals(fitmentKindForCategory("pneus-pleins"), { kind: "tire", family: "solid" });
+  assertEquals(fitmentKindForCategory("disques"), { kind: "disc" });
+  assertEquals(fitmentKindForCategory("plaquettes"), null);
+});
+
+Deno.test("isFitmentMatchable: règle dure — clés minimales", () => {
+  const tire = { kind: "tire" as const, family: "pneumatic" };
+  // Conforme : family + rim_diameters (sections optionnelles → cas partiel)
+  assertEquals(isFitmentMatchable(tire, { fitment_specs: { tire_family: "pneumatic", rim_diameters: ["10"] } }), true);
+  // Famille divergente ou absente → non matchable
+  assertEquals(isFitmentMatchable(tire, { fitment_specs: { tire_family: "solid", rim_diameters: ["10"] } }), false);
+  assertEquals(isFitmentMatchable(tire, { fitment_specs: { rim_diameters: ["10"] } }), false);
+  // Pièce nue → non matchable
+  assertEquals(isFitmentMatchable(tire, {}), false);
+  // Disque : les 3 ensembles exigés
+  const disc = { kind: "disc" as const };
+  assertEquals(isFitmentMatchable(disc, { fitment_specs: { brake_disc: { diameters: ["160"], pcds: ["48"], holes: ["6"] } } }), true);
+  assertEquals(isFitmentMatchable(disc, { fitment_specs: { brake_disc: { diameters: ["160"], pcds: ["48"] } } }), false);
+  // Électrique : voltages entiers non vides
+  const elec = { kind: "electrical" as const };
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52, 60] } }), true);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [] } }), false);
+});
+
+Deno.test("matchTireScooters: complet → high, section absente → partial, mismatch → rien", () => {
+  const scooters = [
+    { id: "s-full", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "90/65" },
+    { id: "s-null-section", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null },
+    { id: "s-wrong-section", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "8.5x2" },
+    { id: "s-wrong-rim", tire_family: "pneumatic", rim_diameter_code: "10", tire_section_code: "90/65" },
+    { id: "s-solid", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "90/65" },
+    { id: "s-null-family", tire_family: null, rim_diameter_code: "6.5", tire_section_code: "90/65" },
+  ];
+  const out = matchTireScooters({ family: "pneumatic", rimDiameters: ["6.5"], tireSections: ["90/65"] }, scooters);
+  assertEquals(out, [
+    { scooterId: "s-full", confidence: "high", reason: "fitment:pneumatic rim=6.5 section=90/65" },
+    { scooterId: "s-null-section", confidence: "medium", reason: "fitment:partial rim=6.5" },
+  ]);
+});
+
+Deno.test("matchTireScooters: pièce sans sections → tout en partial medium", () => {
+  const out = matchTireScooters(
+    { family: "solid", rimDiameters: ["6"], tireSections: null },
+    [{ id: "s1", tire_family: "solid", rim_diameter_code: "6", tire_section_code: "8x4" }],
+  );
+  assertEquals(out, [{ scooterId: "s1", confidence: "medium", reason: "fitment:partial rim=6" }]);
+});
+
+Deno.test("matchDiscScooters: triple match exigé, aucun partial", () => {
+  const scooters = [
+    { id: "d-ok", disc_diameter_code: "160", disc_pcd_code: "48", disc_holes_code: "6" },
+    { id: "d-wrong-pcd", disc_diameter_code: "160", disc_pcd_code: "44", disc_holes_code: "6" },
+    { id: "d-null-holes", disc_diameter_code: "160", disc_pcd_code: "48", disc_holes_code: null },
+  ];
+  const out = matchDiscScooters({ diameters: ["140", "160"], pcds: ["48"], holes: ["6"] }, scooters);
+  assertEquals(out, [
+    { scooterId: "d-ok", confidence: "high", reason: "fitment:disc d=160 pcd=48 holes=6" },
+  ]);
 });

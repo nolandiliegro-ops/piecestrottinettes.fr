@@ -221,11 +221,14 @@ export async function suggestCompatibilities(
       .eq("published", true)
       .filter("tire_size", "~*", regex);
     if (error) {
-      console.error(`[compat-helpers] Erreur match tire_size:`, error.message);
-    } else {
-      for (const r of data ?? []) candidateIds.add(r.id as string);
-      initialized = true;
+      // Fail-closed : une erreur ici laissait initialized=false → les branches
+      // suivantes prenaient le set complet SANS filtre pneu (matching élargi
+      // par une erreur transitoire). On abandonne la suggestion à la place.
+      console.error(`[compat-helpers] Erreur match tire_size (fail-closed):`, error.message);
+      return { count: 0, scooterIds: new Set() };
     }
+    for (const r of data ?? []) candidateIds.add(r.id as string);
+    initialized = true;
   }
 
   if (hasElectrical) {

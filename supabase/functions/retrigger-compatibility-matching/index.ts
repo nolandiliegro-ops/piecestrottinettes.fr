@@ -25,6 +25,13 @@ import {
   suggestCompatibilitiesAI,
   extractHintsFromTechnicalMetadata,
 } from "../_shared/ai_matcher.ts";
+import {
+  KEY_WIRED_CATEGORIES,
+  fitmentKindForCategory,
+  isFitmentMatchable,
+  suggestCompatibilitiesFitment,
+  type FitmentSpecs,
+} from "../_shared/fitment_matcher.ts";
 
 // Témoin de build : renvoyé dans CHAQUE réponse (succès + erreur) pour prouver
 // quelle version de la fonction tourne réellement après un redeploy.
@@ -39,6 +46,7 @@ interface PartTarget {
   description: string | null;
   technical_metadata: Record<string, unknown> | null;
   electrical_specs: { voltages?: number[]; connector?: string | null } | null;
+  fitment_specs: FitmentSpecs | null;
   category:
     | { name: string; slug?: string; spec_type?: string }
     | { name: string; slug?: string; spec_type?: string }[]
@@ -52,6 +60,7 @@ interface PartResult {
   auto_removed: number;
   passe_A_added: number;
   passe_B_added: number;
+  passe_K_added: number;
   ai_status: string;
 }
 
@@ -69,7 +78,7 @@ async function resolveTargets(
   if (body.part_ids && body.part_ids.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, fitment_specs, category:categories(name, slug, spec_type)")
       .in("id", body.part_ids);
     if (error) throw new Error(`fetch by ids: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.id));
@@ -82,7 +91,7 @@ async function resolveTargets(
   if (body.skus && body.skus.length > 0) {
     const { data, error } = await supabase
       .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)")
+      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, fitment_specs, category:categories(name, slug, spec_type)")
       .in("sku", body.skus);
     if (error) throw new Error(`fetch by skus: ${error.message}`);
     const found = new Set((data ?? []).map((p) => p.sku));
@@ -93,20 +102,37 @@ async function resolveTargets(
   }
 
   if (body.all_unmatched) {
-    // Pièces sans aucune ligne dans part_compatibility
-    const { data: allParts, error: pErr } = await supabase
-      .from("parts")
-      .select("id, name, slug, sku, description, technical_metadata, electrical_specs, category:categories(name, slug, spec_type)");
-    if (pErr) throw new Error(`fetch all parts: ${pErr.message}`);
+    // Pièces sans aucune ligne dans part_compatibility.
+    // Paginé : sans .range(), PostgREST tronque à 1000 lignes SILENCIEUSEMENT
+    // (parts tronquées = pièces oubliées ; compats tronquées = faux "unmatched").
+    const PAGE = 1000;
 
-    const { data: compats, error: cErr } = await supabase
-      .from("part_compatibility")
-      .select("part_id");
-    if (cErr) throw new Error(`fetch compats: ${cErr.message}`);
+    const allParts: PartTarget[] = [];
+    for (let from = 0; ; from += PAGE) {
+      const { data, error } = await supabase
+        .from("parts")
+        .select("id, name, slug, sku, description, technical_metadata, electrical_specs, fitment_specs, category:categories(name, slug, spec_type)")
+        .order("id")
+        .range(from, from + PAGE - 1);
+      if (error) throw new Error(`fetch all parts: ${error.message}`);
+      allParts.push(...((data ?? []) as PartTarget[]));
+      if (!data || data.length < PAGE) break;
+    }
 
-    const linked = new Set((compats ?? []).map((c) => c.part_id as string));
-    const unmatched = (allParts ?? []).filter((p) => !linked.has(p.id));
-    return { parts: unmatched as PartTarget[], warnings };
+    const linked = new Set<string>();
+    for (let from = 0; ; from += PAGE) {
+      const { data, error } = await supabase
+        .from("part_compatibility")
+        .select("part_id")
+        .order("id")
+        .range(from, from + PAGE - 1);
+      if (error) throw new Error(`fetch compats: ${error.message}`);
+      for (const c of data ?? []) linked.add(c.part_id as string);
+      if (!data || data.length < PAGE) break;
+    }
+
+    const unmatched = allParts.filter((p) => !linked.has(p.id));
+    return { parts: unmatched, warnings };
   }
 
   return { parts: [], warnings: ["no target selector provided"] };
@@ -149,6 +175,45 @@ async function processOnePart(
     } else {
       autoRemoved = count ?? autoRowIds.length;
     }
+  }
+
+  // 2bis. Moteur K — catégorie à clés câblées : matching déterministe, les
+  // passes A (regex) et B (IA) ne tournent PAS. Règle dure : sans clés
+  // minimales, zéro suggestion (le DELETE de l'étape 2 a déjà purgé l'auto).
+  const kSlug = (Array.isArray(part.category)
+    ? part.category[0]?.slug
+    : part.category?.slug)?.trim().toLowerCase() ?? null;
+  if (kSlug && KEY_WIRED_CATEGORIES.includes(kSlug)) {
+    const kRule = fitmentKindForCategory(kSlug);
+    const kPart = { fitment_specs: part.fitment_specs, electrical_specs: part.electrical_specs };
+    let kCount = 0;
+    let kStatus = "skipped_no_fitment";
+    if (kRule && isFitmentMatchable(kRule, kPart)) {
+      try {
+        const passK = await suggestCompatibilitiesFitment(
+          supabase, part.id, kPart, kSlug, validatedScooterIds,
+        );
+        kCount = passK.count;
+        kStatus = `key_wired(high=${passK.highCount},partial=${passK.partialCount})`;
+      } catch (e) {
+        console.error(`[retrigger-compat] moteur K exception ${part.name}:`, e);
+        kStatus = "key_wired_error";
+      }
+    }
+    console.log(
+      `[retrigger-compat] PIECE "${part.name}" (clé ${kSlug}) ` +
+      `validated_kept=${validatedScooterIds.size} auto_removed=${autoRemoved} passe_K=${kCount}`,
+    );
+    return {
+      part_id: part.id,
+      part_name: part.name,
+      validated_kept: validatedScooterIds.size,
+      auto_removed: autoRemoved,
+      passe_A_added: 0,
+      passe_B_added: 0,
+      passe_K_added: kCount,
+      ai_status: kStatus,
+    };
   }
 
   // 3. Reconstruire les hints (technical_metadata d'abord, fallback regex via resolveCompatibilityHints)
@@ -261,6 +326,7 @@ async function processOnePart(
     auto_removed: autoRemoved,
     passe_A_added: passACount,
     passe_B_added: passBCount,
+    passe_K_added: 0,
     ai_status: aiStatus,
   };
 }
@@ -362,12 +428,16 @@ Deno.serve(async (req) => {
           auto_removed: 0,
           passe_A_added: 0,
           passe_B_added: 0,
+          passe_K_added: 0,
           ai_status: "error",
         });
       }
     }
 
-    const total_new_suggestions = results.reduce((s, r) => s + r.passe_A_added + r.passe_B_added, 0);
+    const total_new_suggestions = results.reduce(
+      (s, r) => s + r.passe_A_added + r.passe_B_added + r.passe_K_added,
+      0,
+    );
     const total_ai_calls = results.filter((r) => r.ai_status === "ok" || r.ai_status === "error").length;
 
     return new Response(
