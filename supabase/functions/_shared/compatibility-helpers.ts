@@ -219,7 +219,9 @@ export async function suggestCompatibilities(
       .from("scooter_models")
       .select("id")
       .eq("published", true)
-      .filter("tire_size", "~*", regex);
+      // "imatch" = l'opérateur regex insensible à la casse de PostgREST ("~*"
+      // n'existe pas en query string → PGRST100, bug historique silencieux).
+      .filter("tire_size", "imatch", regex);
     if (error) {
       // Fail-closed : une erreur ici laissait initialized=false → les branches
       // suivantes prenaient le set complet SANS filtre pneu (matching élargi
