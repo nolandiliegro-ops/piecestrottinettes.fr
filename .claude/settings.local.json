@@ -11,7 +11,13 @@
       "WebFetch(domain:dualtron-store.com)",
       "WebFetch(domain:dualtronusa.com)",
       "mcp__claude_ai_Airtable__list_tables_for_base",
-      "Bash(git rebase *)"
+      "Bash(git rebase *)",
+      "Bash(DUMP_SKU=CA-05 node *)",
+      "Bash(deno --version)",
+      "Bash(deno test *)",
+      "Bash(deno check *)",
+      "Bash(git *)",
+      "Bash(node *)"
     ]
   },
   "enabledPlugins": {
