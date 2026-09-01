@@ -47,3 +47,4 @@ dist-ssr
 .vscode/*.bak
 .vscode/*.local
 scripts/session/
+.vscode/tasks.json
