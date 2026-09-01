@@ -47,7 +47,23 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const KEY_WIRED = ['chargeurs', 'chambres-a-air', 'pneus', 'pneus-gonflables', 'pneus-pleins', 'disques'];
 
-const cats = (await rest(`categories?select=id,slug&slug=in.(${KEY_WIRED.join(',')})`));
+// Ciblage optionnel : slugs passés en arguments. Sans argument → les 6 catégories
+// allowlist, comportement historique strictement inchangé. Un slug hors KEY_WIRED
+// est refusé AVANT tout appel réseau (aucune écriture, aucune lecture).
+const TARGETS = process.argv.slice(2);
+const unknown = TARGETS.filter((s) => !KEY_WIRED.includes(s));
+if (unknown.length > 0) {
+  console.error(`Catégorie(s) hors allowlist : ${unknown.join(', ')}`);
+  console.error(`Valeurs acceptées : ${KEY_WIRED.join(', ')}`);
+  process.exit(1);
+}
+const SELECTED = TARGETS.length > 0 ? TARGETS : KEY_WIRED;
+console.log(
+  `[scope] ${SELECTED.length}/${KEY_WIRED.length} catégorie(s) : ${SELECTED.join(', ')}` +
+  `${TARGETS.length > 0 ? ' (ciblage par argument)' : ' (défaut : allowlist complète)'}`,
+);
+
+const cats = (await rest(`categories?select=id,slug&slug=in.(${SELECTED.join(',')})`));
 if (cats.length === 0) throw new Error('Aucune catégorie allowlist trouvée');
 const slugById = Object.fromEntries(cats.map((c) => [c.id, c.slug]));
 console.log(`[cats] ${cats.map((c) => c.slug).join(', ')}`);
