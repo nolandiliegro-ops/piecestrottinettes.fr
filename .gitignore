@@ -41,3 +41,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# cockpit v6 : fichiers generes par machine, chemins absolus - ne pas versionner
+.vscode/dev-server.ps1
+.vscode/*.bak
+.vscode/*.local
+scripts/session/
