@@ -2,7 +2,151 @@
 // To take ownership, delete this banner line; the plugin then leaves the file alone.
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
+// src/lib/mcp/index.ts
+import { auth, defineMcp } from "npm:@lovable.dev/mcp-js@0.22.2";
+
+// src/lib/mcp/tools/search-parts.ts
+import { createClient } from "npm:@supabase/supabase-js@^2.90.1";
+import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.2";
+import { z } from "npm:zod@^3.25.76";
+var search_parts_default = defineTool({
+  name: "search_parts",
+  title: "Rechercher des pi\xE8ces",
+  description: "Recherche des pi\xE8ces d\xE9tach\xE9es dans le catalogue par nom, marque ou description. Retourne jusqu'\xE0 20 r\xE9sultats publi\xE9s avec prix TTC, stock et lien produit.",
+  inputSchema: {
+    query: z.string().trim().min(1).describe("Terme de recherche (nom, marque, mot-cl\xE9)."),
+    limit: z.number().int().min(1).max(20).optional().describe("Nombre max de r\xE9sultats (d\xE9faut 10).")
+  },
+  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+  handler: async ({ query, limit }) => {
+    const sb = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_PUBLISHABLE_KEY, {
+      auth: { persistSession: false, autoRefreshToken: false }
+    });
+    const { data, error } = await sb.from("parts").select("name, slug, brand, price_ht, stock_quantity, description").eq("published", true).or(`name.ilike.%${query}%,brand.ilike.%${query}%,description.ilike.%${query}%`).limit(limit ?? 10);
+    if (error) return { content: [{ type: "text", text: error.message }], isError: true };
+    const base = "https://piecestrottinettes.fr/piece/";
+    const rows = (data ?? []).map((p) => ({
+      name: p.name,
+      brand: p.brand,
+      price_ttc: p.price_ht ? Math.round(p.price_ht * 1.2 * 100) / 100 : null,
+      in_stock: (p.stock_quantity ?? 0) > 0,
+      url: `${base}${p.slug}`
+    }));
+    return {
+      content: [{ type: "text", text: JSON.stringify(rows, null, 2) }],
+      structuredContent: { results: rows }
+    };
+  }
+});
+
+// src/lib/mcp/tools/get-part.ts
+import { createClient as createClient2 } from "npm:@supabase/supabase-js@^2.90.1";
+import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.22.2";
+import { z as z2 } from "npm:zod@^3.25.76";
+var get_part_default = defineTool2({
+  name: "get_part",
+  title: "D\xE9tails d'une pi\xE8ce",
+  description: "Retourne les d\xE9tails complets d'une pi\xE8ce (par slug) : prix TTC, stock, description, marque.",
+  inputSchema: {
+    slug: z2.string().trim().min(1).describe("Slug de la pi\xE8ce, ex: 'batterie-dualtron-thunder-3'.")
+  },
+  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+  handler: async ({ slug }) => {
+    const sb = createClient2(process.env.SUPABASE_URL, process.env.SUPABASE_PUBLISHABLE_KEY, {
+      auth: { persistSession: false, autoRefreshToken: false }
+    });
+    const { data, error } = await sb.from("parts").select("name, slug, brand, price_ht, stock_quantity, description, images").eq("slug", slug).eq("published", true).maybeSingle();
+    if (error) return { content: [{ type: "text", text: error.message }], isError: true };
+    if (!data) return { content: [{ type: "text", text: "Pi\xE8ce introuvable." }], isError: true };
+    const part = {
+      name: data.name,
+      brand: data.brand,
+      price_ttc: data.price_ht ? Math.round(data.price_ht * 1.2 * 100) / 100 : null,
+      in_stock: (data.stock_quantity ?? 0) > 0,
+      stock_quantity: data.stock_quantity,
+      description: data.description,
+      url: `https://piecestrottinettes.fr/piece/${data.slug}`
+    };
+    return {
+      content: [{ type: "text", text: JSON.stringify(part, null, 2) }],
+      structuredContent: { part }
+    };
+  }
+});
+
+// src/lib/mcp/tools/list-my-orders.ts
+import { createClient as createClient3 } from "npm:@supabase/supabase-js@^2.90.1";
+import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.22.2";
+import { z as z3 } from "npm:zod@^3.25.76";
+function sbForUser(ctx) {
+  return createClient3(process.env.SUPABASE_URL, process.env.SUPABASE_PUBLISHABLE_KEY, {
+    global: { headers: { Authorization: `Bearer ${ctx.getToken()}` } },
+    auth: { persistSession: false, autoRefreshToken: false }
+  });
+}
+var list_my_orders_default = defineTool3({
+  name: "list_my_orders",
+  title: "Mes commandes",
+  description: "Liste les commandes de l'utilisateur connect\xE9 (les plus r\xE9centes en premier).",
+  inputSchema: {
+    limit: z3.number().int().min(1).max(50).optional().describe("Nombre max de commandes (d\xE9faut 10).")
+  },
+  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+  handler: async ({ limit }, ctx) => {
+    if (!ctx.isAuthenticated()) {
+      return { content: [{ type: "text", text: "Authentification requise." }], isError: true };
+    }
+    const { data, error } = await sbForUser(ctx).from("orders").select("id, status, total_ttc, created_at, tracking_number, tracking_carrier").eq("user_id", ctx.getUserId()).order("created_at", { ascending: false }).limit(limit ?? 10);
+    if (error) return { content: [{ type: "text", text: error.message }], isError: true };
+    return {
+      content: [{ type: "text", text: JSON.stringify(data, null, 2) }],
+      structuredContent: { orders: data ?? [] }
+    };
+  }
+});
+
+// src/lib/mcp/tools/list-my-garage.ts
+import { createClient as createClient4 } from "npm:@supabase/supabase-js@^2.90.1";
+import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.22.2";
+function sbForUser2(ctx) {
+  return createClient4(process.env.SUPABASE_URL, process.env.SUPABASE_PUBLISHABLE_KEY, {
+    global: { headers: { Authorization: `Bearer ${ctx.getToken()}` } },
+    auth: { persistSession: false, autoRefreshToken: false }
+  });
+}
+var list_my_garage_default = defineTool4({
+  name: "list_my_garage",
+  title: "Mon garage",
+  description: "Liste les trottinettes dans le garage de l'utilisateur connect\xE9.",
+  inputSchema: {},
+  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+  handler: async (_input, ctx) => {
+    if (!ctx.isAuthenticated()) {
+      return { content: [{ type: "text", text: "Authentification requise." }], isError: true };
+    }
+    const { data, error } = await sbForUser2(ctx).from("user_garage").select("id, nickname, purchase_date, scooter_models(name, slug, brand_id)").eq("user_id", ctx.getUserId());
+    if (error) return { content: [{ type: "text", text: error.message }], isError: true };
+    return {
+      content: [{ type: "text", text: JSON.stringify(data, null, 2) }],
+      structuredContent: { scooters: data ?? [] }
+    };
+  }
+});
+
+// src/lib/mcp/index.ts
+var projectRef = "kqsxscjtlipregkrmucg";
+var mcp_default = defineMcp({
+  name: "piecestrottinettes-mcp",
+  title: "Pi\xE8ces Trottinettes MCP",
+  version: "0.1.0",
+  instructions: "Outils Pi\xE8ces Trottinettes : rechercher des pi\xE8ces d\xE9tach\xE9es de trottinettes \xE9lectriques, consulter le catalogue, et pour l'utilisateur connect\xE9 ses commandes et son garage.",
+  auth: auth.oauth.issuer({
+    issuer: `https://${projectRef}.supabase.co/auth/v1`,
+    acceptedAudiences: "authenticated"
+  }),
+  tools: [search_parts_default, get_part_default, list_my_orders_default, list_my_garage_default]
+});
+
 // lovable-mcp-supabase-entry.ts
-import mcp from "npm:C:\\Users\\User\\piecestrottinettes.fr\\src\\lib\\mcp\\index.ts";
 import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.22.2/stacks/supabase";
-Deno.serve(createSupabaseHandler(mcp, { functionName: "mcp" }));
+Deno.serve(createSupabaseHandler(mcp_default, { functionName: "mcp" }));
