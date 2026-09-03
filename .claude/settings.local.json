@@ -17,7 +17,8 @@
       "Bash(deno test *)",
       "Bash(deno check *)",
       "Bash(git *)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "PowerShell(Get-ChildItem *)"
     ]
   },
   "enabledPlugins": {
