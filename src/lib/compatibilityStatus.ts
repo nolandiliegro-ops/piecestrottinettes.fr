@@ -31,9 +31,15 @@ export function classifyCompat(row: CompatRow): CompatStatus | null {
 
 /** Libellé du 🟡 — texte ≥14px à l'écran, jamais un badge ni un pourcentage. */
 export function unverifiedLabel(reason: string | null): string {
-  return reason?.startsWith("fitment:partial")
-    ? "Même diamètre, largeur non vérifiée — vérifie le flanc de ton pneu"
-    : "Suggestion automatique non vérifiée";
+  if (reason?.startsWith("fitment:partial")) {
+    return "Même diamètre, largeur non vérifiée — vérifie le flanc de ton pneu";
+  }
+  // M-A7a : raison sentinelle posée côté PDP quand isVerdictSafe() refuse le
+  // verdict auto (voltage hors barème, ou 84 V ambigu). Jamais écrite en base.
+  if (reason?.startsWith("voltage:")) {
+    return "Voltage de cette pièce à confirmer — on vérifie avant de l'affirmer";
+  }
+  return "Suggestion automatique non vérifiée";
 }
 
 /** Ventile une liste : les lignes masquées tombent. */

@@ -9,6 +9,7 @@ import { formatPrice } from "@/lib/formatPrice";
 import { useAuth } from "@/hooks/useAuth";
 import { useGarageScooters } from "@/hooks/useGarageScooters";
 import MarkAsInstalledDialog from "@/components/garage/MarkAsInstalledDialog";
+import { chargeVoltageOf, formatVolts } from "@/lib/batteryVoltage";
 
 interface PurchaseBlockProps {
   id: string;
@@ -19,6 +20,10 @@ interface PurchaseBlockProps {
   categoryIcon: string | null;
   imageUrl: string | null;
   difficultyLevel?: number | null;
+  /** parts.electrical_specs.voltages — nominal(s) du pack, jamais la sortie charge. */
+  voltages?: number[] | null;
+  /** categories.spec_type ('charger', 'battery', ...). */
+  specType?: string | null;
 }
 
 const PurchaseBlock = ({
@@ -29,6 +34,8 @@ const PurchaseBlock = ({
   categoryName,
   imageUrl,
   difficultyLevel,
+  voltages,
+  specType,
 }: PurchaseBlockProps) => {
   const { addItem, setIsOpen } = useCart();
   const { user } = useAuth();
@@ -37,6 +44,18 @@ const PurchaseBlock = ({
   const [isAdding, setIsAdding] = useState(false);
   
   const isInStock = stockQuantity !== null && stockQuantity > 0;
+
+  // M-A7a — pastille voltage. Ligne 1 : le nominal, la valeur qui matche le pack
+  // du client. Ligne 2 : la tension de fin de charge, uniquement sur un chargeur,
+  // un seul nominal, et une valeur réellement dérivable (le barème est la source
+  // unique, cf. src/lib/batteryVoltage.ts). Une batterie n'a pas de ligne 2.
+  // Sinon : ligne 1 seule, sans placeholder ni hauteur réservée.
+  const nominals = voltages && voltages.length > 0 ? voltages : null;
+  const singleNominal =
+    specType === "charger" && nominals !== null && nominals.length === 1
+      ? nominals[0]
+      : null;
+  const chargeVoltage = singleNominal === null ? null : chargeVoltageOf(singleNominal);
   
   // Show "Mark as installed" button if user is logged in and has at least 1 scooter
   const canMarkAsInstalled = !!user && scooters && scooters.length > 0;
@@ -99,6 +118,20 @@ const PurchaseBlock = ({
           >
             {categoryName}
           </Badge>
+        )}
+
+        {/* Pastille voltage — nominal + charge dérivée (M-A7a) */}
+        {nominals && (
+          <div className="inline-flex flex-col items-start rounded-xl border border-carbon/10 bg-carbon/5 px-3 py-2">
+            <span className="font-black text-base uppercase tracking-tight text-carbon leading-none">
+              Pour pack {nominals.join(" / ")} V
+            </span>
+            {chargeVoltage !== null && (
+              <span className="text-sm text-carbon/60 leading-none mt-1.5">
+                sortie {formatVolts(chargeVoltage)}
+              </span>
+            )}
+          </div>
         )}
 
         {/* Product name */}

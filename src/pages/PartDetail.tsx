@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import SEO from "@/components/SEO";
 import { sanitizeHtml, stripHtml } from "@/lib/sanitizeHtml";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { isVerdictSafe } from "@/lib/batteryVoltage";
 import MediaGallery from "@/components/pdp/MediaGallery";
 import PurchaseBlock from "@/components/pdp/PurchaseBlock";
 import EngineeringLab from "@/components/pdp/EngineeringLab";
@@ -84,6 +85,19 @@ const PartDetail = () => {
   }
 
   const compatibleModels = scooters.map((s) => s.name).join(", ");
+
+  // M-A7a — garde-fous #1/#2. Si le nominal de la pièce est hors barème ou vaut
+  // 84 (ambigu : sortie d'un pack 72 V vs pack 84 V nominal), aucune compat ne
+  // peut être affirmée : on dégrade tout en 🟡 « à vérifier », l'état neutre qui
+  // existe déjà, plutôt que d'afficher un ✅ que la donnée ne permet pas.
+  const voltages = part.electrical_specs?.voltages ?? null;
+  const compatScooters = isVerdictSafe(voltages)
+    ? scooters
+    : scooters.map((s) => ({
+        ...s,
+        status: "unverified" as const,
+        reason: "voltage:ambigu",
+      }));
 
   const productUrl = `${SITE_URL}/piece/${part.slug}`;
   // Image primaire en URL Storage ORIGINALE (convention JSON-LD) ; omise si vide.
@@ -222,6 +236,8 @@ const PartDetail = () => {
                 categoryIcon={part.category?.icon ?? null}
                 imageUrl={part.image_url}
                 difficultyLevel={part.difficulty_level}
+                voltages={voltages}
+                specType={part.category?.spec_type ?? null}
               />
             </div>
           </div>
@@ -251,7 +267,7 @@ const PartDetail = () => {
               />
             </div>
             <div className="min-h-[200px]">
-              <CompatibilityMatrix scooters={scooters} isLoading={scootersLoading} />
+              <CompatibilityMatrix scooters={compatScooters} isLoading={scootersLoading} />
             </div>
             <div className="min-h-[200px]">
               <WorkshopSection

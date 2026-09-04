@@ -19,6 +19,9 @@ export interface PartDetail {
   images: ImageEntry[] | null;
   youtube_video_id: string | null;
   technical_metadata: Record<string, unknown> | null;
+  /** Specs electriques structurees (M-A7a). Le nominal batterie vit dans
+   *  `voltages` — jamais la tension de sortie charge. */
+  electrical_specs: { voltages?: number[]; connector?: string | null } | null;
   estimated_install_time_minutes: number | null;
   required_tools: string[] | null;
   category_id: string | null;
@@ -26,6 +29,9 @@ export interface PartDetail {
     name: string;
     slug: string;
     icon: string | null;
+    /** 'charger' | 'battery' | 'tire' | ... — cle d'identification autoritative
+     *  (cf. isElectricalPart cote Edge Function). */
+    spec_type: string | null;
   } | null;
   /** Present uniquement quand le slug demande est un ancien alias : slug actuel de la piece. */
   redirectTo?: string;
@@ -67,13 +73,15 @@ export const usePartBySlug = (slug: string | undefined) => {
           images,
           youtube_video_id,
           technical_metadata,
+          electrical_specs,
           estimated_install_time_minutes,
           required_tools,
           category_id,
           categories (
             name,
             slug,
-            icon
+            icon,
+            spec_type
           )
         `
         )
