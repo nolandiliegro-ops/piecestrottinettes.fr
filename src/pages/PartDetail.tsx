@@ -266,12 +266,13 @@ const PartDetail = () => {
                 difficultyLevel={part.difficulty_level}
               />
             </div>
-            <div className="min-h-[200px]">
+            <div className="min-h-[200px] col-span-2 lg:col-span-1">
               <CompatibilityMatrix
                 scooters={compatScooters}
                 isLoading={scootersLoading}
                 partSlug={part.slug}
                 partName={part.name}
+                partId={part.id}
               />
             </div>
             <div className="min-h-[200px]">

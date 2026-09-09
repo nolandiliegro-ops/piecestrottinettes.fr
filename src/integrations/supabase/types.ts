@@ -1308,6 +1308,57 @@ export type Database = {
           },
         ]
       }
+      part_leads: {
+        Row: {
+          answered_at: string | null
+          created_at: string
+          email: string
+          id: string
+          modele_libre: string | null
+          part_id: string
+          scooter_model_id: string | null
+          status: string
+          user_id: string | null
+        }
+        Insert: {
+          answered_at?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          modele_libre?: string | null
+          part_id: string
+          scooter_model_id?: string | null
+          status?: string
+          user_id?: string | null
+        }
+        Update: {
+          answered_at?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          modele_libre?: string | null
+          part_id?: string
+          scooter_model_id?: string | null
+          status?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "part_leads_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "part_leads_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       part_slug_aliases: {
         Row: {
           alias: string

@@ -7,6 +7,7 @@ import { verifiedGroupLabel, unverifiedGroupLabel } from "@/lib/compatibilitySta
 import { scooterLabel, scooterLabelShort } from "@/lib/scooterLabel";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { Skeleton } from "@/components/ui/skeleton";
+import CompatLeadForm from "@/components/pdp/CompatLeadForm";
 
 interface CompatibilityMatrixProps {
   scooters: CompatibleScooter[];
@@ -14,6 +15,8 @@ interface CompatibilityMatrixProps {
   /** Slug + nom de la pièce : contextualisent le lien « on te la trouve ». */
   partSlug?: string;
   partName?: string;
+  /** Id de la pièce : formulaire de lead du bloc « on te la trouve ». */
+  partId?: string;
 }
 
 interface BrandGroup {
@@ -61,7 +64,7 @@ const CTA_SHINE =
   "transition-all duration-500 group-hover:left-[120%]";
 
 const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>(
-  function CompatibilityMatrixInner({ scooters, isLoading, partSlug, partName }, ref) {
+  function CompatibilityMatrixInner({ scooters, isLoading, partSlug, partName, partId }, ref) {
     // LOT 3 — ventilation via la règle unique (déjà classée par le hook) :
     // ✅ verified groupé par marque ; 🟡 unverified en SECTION SÉPARÉE avec la
     // raison écrite UNE FOIS (jamais un badge, jamais un %) ; 🔵 zéro affichable
@@ -311,20 +314,24 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
                 Pas encore référencée sur ton modèle. Dis-nous lequel, on vérifie et on
                 te répond sous 2 h.
               </p>
-              <Link
-                to={askUrl(
-                  partSlug,
-                  partName,
-                  selectedScooter
-                    ? `${selectedScooter.brandName} ${selectedScooter.name}`
-                    : undefined,
-                )}
-                className={`${CTA_CLASS} mt-5`}
-              >
-                <span aria-hidden className={CTA_SHINE} />
-                <span className="relative">Demander une vérification</span>
-                <ArrowRight className="relative w-4 h-4" />
-              </Link>
+              {partId ? (
+                <CompatLeadForm partId={partId} partName={partName} />
+              ) : (
+                <Link
+                  to={askUrl(
+                    partSlug,
+                    partName,
+                    selectedScooter
+                      ? `${selectedScooter.brandName} ${selectedScooter.name}`
+                      : undefined,
+                  )}
+                  className={`${CTA_CLASS} mt-5`}
+                >
+                  <span aria-hidden className={CTA_SHINE} />
+                  <span className="relative">Demander une vérification</span>
+                  <ArrowRight className="relative w-4 h-4" />
+                </Link>
+              )}
               <p className="text-sm text-carbon/50 mt-2">
                 On te répond même si la pièce ne va pas.
               </p>
