@@ -267,7 +267,12 @@ const PartDetail = () => {
               />
             </div>
             <div className="min-h-[200px]">
-              <CompatibilityMatrix scooters={compatScooters} isLoading={scootersLoading} />
+              <CompatibilityMatrix
+                scooters={compatScooters}
+                isLoading={scootersLoading}
+                partSlug={part.slug}
+                partName={part.name}
+              />
             </div>
             <div className="min-h-[200px]">
               <WorkshopSection

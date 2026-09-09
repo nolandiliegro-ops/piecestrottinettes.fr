@@ -42,6 +42,88 @@ export function unverifiedLabel(reason: string | null): string {
   return "Suggestion automatique non vérifiée";
 }
 
+// ---------------------------------------------------------------------------
+// LIBELLÉS DE GROUPE — une phrase pour un ENSEMBLE de lignes, jamais une par
+// ligne. Sur le chargeur 36 V, les 18 modèles viennent tous de la même clé
+// (`fitment:voltage=36`) : la raison se dit une fois, en tête de section.
+// Ces fonctions ne classent RIEN — classifyCompat reste la règle unique.
+// ---------------------------------------------------------------------------
+
+export type KeyFamily = "voltage" | "wheel" | "disc" | "caliper" | "partial";
+
+/** Famille de clé de montage portée par une raison moteur, sinon null. */
+export function reasonKeyFamily(reason: string | null): KeyFamily | null {
+  if (!reason) return null;
+  // Grammaire réelle relevée en base le 09/09 (436 lignes) :
+  //   fitment:voltage=36 · fitment:pneumatic rim=6.5 section=10x2.125
+  //   fitment:disc d=160 pcd=44 holes=6 · fitment_key:brake caliper=zoom
+  //   fitment_key:brake disc=160/48/6 · fitment_key:pneumatic rim=6.5 section=90/65
+  // On teste des PRÉFIXES : « disc d=… » et « brake caliper=… » ne se laissent
+  // pas découper par une capture générique.
+  const m = /^fitment(?:_key)?:\s*(.*)$/i.exec(reason);
+  if (!m) return null;
+  const rest = m[1].toLowerCase();
+  if (rest.startsWith("partial")) return "partial";
+  if (rest.startsWith("voltage")) return "voltage";
+  if (rest.startsWith("brake caliper") || rest.startsWith("caliper")) return "caliper";
+  if (rest.startsWith("brake disc") || rest.startsWith("disc")) return "disc";
+  if (
+    rest.startsWith("pneumatic rim") ||
+    rest.startsWith("solid rim") ||
+    rest.startsWith("rim")
+  ) {
+    return "wheel";
+  }
+  return null;
+}
+
+/**
+ * Phrase unique en tête de la section ✅. Si les lignes ne partagent pas la
+ * même clé, on ne bricole pas une raison composite : on reste factuel.
+ */
+export function verifiedGroupLabel(reasons: (string | null)[]): string {
+  // Une raison vide = validation humaine sans raison machine. Absence
+  // d'information, pas contradiction : elle ne doit pas effacer la clé des
+  // autres lignes. Mesuré le 09/09 sur le chargeur GX16 (17 voltage + 1 vide).
+  const families = new Set(reasons.filter((r) => r).map(reasonKeyFamily));
+  if (families.size === 1) {
+    switch ([...families][0]) {
+      case "voltage":
+        return "Vérifié sur le voltage — le chargeur correspond au pack de ces machines.";
+      case "wheel":
+        return "Vérifié sur la roue — diamètre de jante et section du pneu.";
+      case "disc":
+        return "Vérifié sur le disque — diamètre, entraxe et nombre de trous.";
+      case "caliper":
+        return "Vérifié sur la famille d'étrier de frein.";
+    }
+  }
+  return "Vérifié par nos ateliers.";
+}
+
+/**
+ * Phrase unique en tête de la section 🟡. Elle donne la RAISON du doute, jamais
+ * un pourcentage, et ne doit jamais ressembler à une validation.
+ */
+export function unverifiedGroupLabel(reasons: (string | null)[]): string {
+  // Une raison vide = validation humaine sans raison machine. Absence
+  // d'information, pas contradiction : elle ne doit pas effacer la clé des
+  // autres lignes. Mesuré le 09/09 sur le chargeur GX16 (17 voltage + 1 vide).
+  const families = new Set(reasons.filter((r) => r).map(reasonKeyFamily));
+  if (families.size === 1) {
+    switch ([...families][0]) {
+      case "partial":
+        return "Même diamètre de jante, largeur non vérifiée — vérifie la dimension inscrite sur le flanc de ton pneu.";
+      case "voltage":
+        return "Voltage à confirmer — on vérifie avant de l'affirmer.";
+    }
+  }
+  if (reasons.some((r) => r && !reasonKeyFamily(r))) {
+    return "Le modèle est cité par le fournisseur, mais la cote n'a pas encore été confirmée par nos ateliers.";
+  }
+  return "Compatibilité probable, pas encore confirmée par nos ateliers.";
+}
+
 /** Ventile une liste : les lignes masquées tombent. */
 export function partitionCompat<T extends CompatRow>(
   rows: T[],

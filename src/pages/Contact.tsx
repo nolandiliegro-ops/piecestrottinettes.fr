@@ -17,6 +17,16 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchParams] = useSearchParams();
   const orderNumber = searchParams.get("order");
+  // LOT 3 — le bloc « on te la trouve » d'une fiche pièce arrive ici avec sa
+  // pièce. Sujet et message pré-remplis : le client n'a plus qu'à confirmer.
+  const askedPartSlug = searchParams.get("piece");
+  const askedPartName = searchParams.get("nom");
+  const askedModel = searchParams.get("modele");
+  const askedPartLabel = askedPartName || askedPartSlug;
+  const compatSubject = askedPartLabel ? `Compatibilité — ${askedPartLabel}` : "";
+  const compatMessage = askedPartLabel
+    ? `Bonjour,\n\nJe voudrais savoir si « ${askedPartLabel} » va sur ma trottinette.\n\nMa trottinette : ${askedModel ?? ""}\n`
+    : "";
   const { user } = useAuth();
   const { profile } = useProfile();
 
@@ -120,7 +130,7 @@ const Contact = () => {
                 name="subject"
                 required
                 maxLength={200}
-                defaultValue={orderNumber ? `Question sur ma commande ${orderNumber}` : ''}
+                defaultValue={compatSubject || (orderNumber ? `Question sur ma commande ${orderNumber}` : '')}
                 placeholder="Question sur ma commande #..."
                 className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20"
               />
@@ -134,6 +144,7 @@ const Contact = () => {
                 required
                 maxLength={5000}
                 rows={6}
+                defaultValue={compatMessage}
                 placeholder="Décrivez votre demande..."
                 className="text-base bg-white/60 border-white/30 focus:border-mineral focus:ring-mineral/20 resize-none"
               />
