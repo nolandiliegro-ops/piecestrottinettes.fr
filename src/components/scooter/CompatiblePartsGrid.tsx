@@ -91,8 +91,8 @@ const CompatiblePartsGrid = ({
                   Cette trottinette ne passe pas en pneus pleins
                 </p>
                 <p className="text-sm text-muted-foreground leading-snug mt-1">
-                  Sa jante est prévue pour du gonflable. Contre les crevaisons, passe sur une
-                  chambre renforcée ou anti-crevaison.
+                  D'après notre atelier, un pneu plein n'est pas adapté à ce modèle. Contre les
+                  crevaisons, passe sur une chambre renforcée ou anti-crevaison.
                 </p>
               </div>
             </div>

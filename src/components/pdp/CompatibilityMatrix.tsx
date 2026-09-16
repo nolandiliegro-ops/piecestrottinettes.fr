@@ -111,7 +111,7 @@ function SolidBlockedNotice({
             Ta {scooterLabel(brandName, modelName)} ne passe pas en pneus pleins
           </p>
           <p className="text-sm text-carbon/60 leading-snug mt-1">
-            Sa jante est prévue pour du gonflable : un pneu plein ne s'y monte pas. Pour ne plus
+            D'après notre atelier, un pneu plein n'est pas adapté à ce modèle. Pour ne plus
             crever, passe sur une chambre renforcée ou anti-crevaison.
           </p>
         </div>
