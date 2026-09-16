@@ -93,9 +93,9 @@ const F_PIECE_FIT_DISC_PCDS = 'fld4Uxfr2wNOMlvJ7';       // 🔑 Entraxe disque 
 const F_PIECE_FIT_DISC_HOLES = 'fldtYaZymwBvOuMvb';      // 🔑 Trous disque → brake_disc.holes
 const F_PIECE_FIT_CALIPER = 'flde00F5A5d0lpFn3';         // 🔑 Étrier → brake_caliper
 // 🔑 Largeur jante → rim_widths (pneus pleins, codes fitment_rim_widths). Champ créé
-// côté Airtable après le LOT 4 : tant que la valeur est le placeholder, le script
-// REFUSE de tourner (exit 1 avant tout appel réseau, voir garde ci-dessous).
-const F_PIECE_FIT_RIM_WIDTHS = 'TODO_FIELD_ID';
+// côté Cowork le 17/09. La garde ci-dessous refuse de tourner (exit 1 avant tout
+// appel réseau) si cette constante n'est pas un field ID Airtable.
+const F_PIECE_FIT_RIM_WIDTHS = 'fld0mRZkgnBU1mTes';
 
 // Whitelist fournisseurs acceptée par bulk-insert-parts (part_suppliers.supplier_name)
 const SUPPLIER_WHITELIST = [

@@ -25,6 +25,11 @@
  *     candidate par construction, ne pas y poser 'no' (CHECK en base).
  * Garde anti-écrasement côté Edge Function : clé absente ou vide = colonne intacte en base ;
  * code hors référentiel = colonne sautée + warning nominatif (le modèle est quand même traité).
+ *
+ * Pour info — champs Airtable Modèle Trott (tblpIWFnBT8xVZOeg), créés le 17/09, qu'AUCUN script
+ * ne lit aujourd'hui (le contrat trotte reste ce JSON) : 🔑 Largeur jante fld0uqibKc7n6bVcd ·
+ * 🔑 Passe en plein fldEpGkLWd1WtTu2G · 🔑 Source conversion fldQePwSf2fkjVPCU (traçabilité, jamais
+ * synchronisé).
  */
 
 import { readFileSync } from 'fs';
