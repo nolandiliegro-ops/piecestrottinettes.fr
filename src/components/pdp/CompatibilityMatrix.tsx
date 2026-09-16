@@ -1,9 +1,15 @@
 import { forwardRef, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, Zap, HelpCircle, Search, ArrowRight } from "lucide-react";
+import { CheckCircle2, Zap, HelpCircle, Search, ArrowRight, Ban } from "lucide-react";
 import { Link } from "react-router-dom";
 import { CompatibleScooter } from "@/hooks/usePartDetail";
-import { verifiedGroupLabel, unverifiedGroupLabel } from "@/lib/compatibilityStatus";
+import { useScooterFitmentFlags } from "@/hooks/useScooterDetail";
+import { useCategories } from "@/hooks/useScooterData";
+import {
+  verifiedGroupLabel,
+  unverifiedGroupLabel,
+  solidConversionState,
+} from "@/lib/compatibilityStatus";
 import { scooterLabel, scooterLabelShort } from "@/lib/scooterLabel";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -17,6 +23,23 @@ interface CompatibilityMatrixProps {
   partName?: string;
   /** Id de la pièce : formulaire de lead du bloc « on te la trouve ». */
   partId?: string;
+  /** Slug de catégorie : l'état « ne passe pas en plein » ne concerne que pneus-pleins. */
+  categorySlug?: string | null;
+}
+
+const SOLID_CATEGORY = "pneus-pleins";
+const TUBES_CATEGORY = "chambres-a-air";
+
+/**
+ * Lien vers les chambres à air du catalogue. Catalogue.tsx lit `?category=`
+ * comme un ID de catégorie (comparé à c.id, l.158) et `?scooter=` comme un
+ * uuid de trotte (l.86, bannière l.248-249) : on résout l'id depuis le slug.
+ */
+export function tubesCatalogueUrl(categoryId: string | undefined, scooterId?: string): string {
+  if (!categoryId) return "/catalogue";
+  const p = new URLSearchParams({ category: categoryId });
+  if (scooterId) p.set("scooter", scooterId);
+  return `/catalogue?${p.toString()}`;
 }
 
 interface BrandGroup {
@@ -63,14 +86,66 @@ const CTA_SHINE =
   "bg-gradient-to-r from-transparent via-white/25 to-transparent " +
   "transition-all duration-500 group-hover:left-[120%]";
 
+/**
+ * 4ᵉ état (16/09), distinct du 🔵 : la trotte du garage est pneumatique et
+ * déclarée « ne passe pas en plein » (solid_conversion='no'). La réponse est
+ * connue → pas de formulaire de lead, on renvoie vers les chambres renforcées.
+ */
+function SolidBlockedNotice({
+  brandName,
+  modelName,
+  scooterId,
+  categoryId,
+}: {
+  brandName: string;
+  modelName: string;
+  scooterId: string;
+  categoryId: string | undefined;
+}) {
+  return (
+    <div className="rounded-xl border border-carbon/15 bg-carbon/[0.04] p-4 text-left">
+      <div className="flex items-start gap-2.5">
+        <Ban className="w-5 h-5 text-carbon flex-shrink-0 mt-0.5" />
+        <div>
+          <p className="text-sm font-bold text-carbon leading-snug">
+            Ta {scooterLabel(brandName, modelName)} ne passe pas en pneus pleins
+          </p>
+          <p className="text-sm text-carbon/60 leading-snug mt-1">
+            Sa jante est prévue pour du gonflable : un pneu plein ne s'y monte pas. Pour ne plus
+            crever, passe sur une chambre renforcée ou anti-crevaison.
+          </p>
+        </div>
+      </div>
+      <Link to={tubesCatalogueUrl(categoryId, scooterId)} className={`${CTA_CLASS} mt-4`}>
+        <span aria-hidden className={CTA_SHINE} />
+        <span className="relative">Voir les chambres anti-crevaison</span>
+        <ArrowRight className="relative w-4 h-4" />
+      </Link>
+    </div>
+  );
+}
+
 const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>(
-  function CompatibilityMatrixInner({ scooters, isLoading, partSlug, partName, partId }, ref) {
+  function CompatibilityMatrixInner(
+    { scooters, isLoading, partSlug, partName, partId, categorySlug },
+    ref,
+  ) {
     // LOT 3 — ventilation via la règle unique (déjà classée par le hook) :
     // ✅ verified groupé par marque ; 🟡 unverified en SECTION SÉPARÉE avec la
     // raison écrite UNE FOIS (jamais un badge, jamais un %) ; 🔵 zéro affichable
     // → « on te la trouve », avec la pièce passée au formulaire de contact.
     const { selectedScooter } = useSelectedScooter();
     const [query, setQuery] = useState("");
+
+    // Pneus pleins : l'état de la trotte du garage se lit sur scooter_models
+    // (aucune ligne compat n'existe pour une trotte 'no'). Requête ciblée,
+    // uniquement quand la catégorie est concernée.
+    const isSolidCategory = categorySlug === SOLID_CATEGORY;
+    const { data: flags } = useScooterFitmentFlags(isSolidCategory ? selectedScooter?.id : null);
+    const { data: categories = [] } = useCategories();
+    const tubesCategoryId = categories.find((c) => c.slug === TUBES_CATEGORY)?.id;
+    const solidBlocked =
+      isSolidCategory && !!selectedScooter && !!flags && solidConversionState(flags) === "blocked";
 
     const verified = useMemo(() => scooters.filter((s) => s.status === "verified"), [scooters]);
     const unverified = useMemo(() => scooters.filter((s) => s.status === "unverified"), [scooters]);
@@ -163,7 +238,15 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
                   </div>
                 </div>
               )}
-              {selectedScooter && !mine && (
+              {selectedScooter && !mine && solidBlocked && (
+                <SolidBlockedNotice
+                  brandName={selectedScooter.brandName}
+                  modelName={selectedScooter.name}
+                  scooterId={selectedScooter.id}
+                  categoryId={tubesCategoryId}
+                />
+              )}
+              {selectedScooter && !mine && !solidBlocked && (
                 <div className="rounded-xl border border-carbon/10 bg-carbon/[0.04] p-3">
                   <p className="text-sm font-semibold text-carbon leading-snug">
                     Pas encore vérifiée pour ta {selectedScooter.brandName}{" "}
@@ -303,6 +386,15 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
                   </div>
                 </div>
               )}
+            </div>
+          ) : solidBlocked && selectedScooter ? (
+            <div className="flex flex-col justify-center h-full py-2">
+              <SolidBlockedNotice
+                brandName={selectedScooter.brandName}
+                modelName={selectedScooter.name}
+                scooterId={selectedScooter.id}
+                categoryId={tubesCategoryId}
+              />
             </div>
           ) : (
             <div className="flex flex-col items-center justify-center h-full text-center py-6">

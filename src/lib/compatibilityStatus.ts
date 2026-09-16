@@ -29,10 +29,50 @@ export function classifyCompat(row: CompatRow): CompatStatus | null {
   return null;
 }
 
+// ---------------------------------------------------------------------------
+// PNEUS PLEINS — état de la TROTTE (décision 16/09). Une trotte pneumatique
+// peut passer en plein ('yes'), ne pas pouvoir ('no') ou on ne sait pas (NULL).
+// Aucune ligne part_compatibility n'existe pour une trotte 'no' : cet état se
+// lit sur scooter_models, jamais sur les lignes. classifyCompat ne change pas.
+// ---------------------------------------------------------------------------
+
+export type SolidConversionState = "blocked" | "unknown" | "ok";
+
+export function solidConversionState(s: {
+  tire_family: string | null | undefined;
+  solid_conversion: string | null | undefined;
+}): SolidConversionState {
+  if (s.tire_family === "solid" || s.solid_conversion === "yes") return "ok";
+  if (s.solid_conversion === "no") return "blocked";
+  return "unknown";
+}
+
+/**
+ * Clés manquantes nommées dans une raison « fitment:partial rim=… width=? section=? »
+ * (moteur K pneus pleins, 16/09). Une raison partial sans drapeau = ancienne
+ * grammaire pneumatique (section absente d'un côté).
+ */
+function partialMissing(reason: string | null): { width: boolean; section: boolean } {
+  if (!reason?.startsWith("fitment:partial")) return { width: false, section: false };
+  return { width: reason.includes(" width=?"), section: reason.includes(" section=?") };
+}
+
+const FLANK = "vérifie la dimension inscrite sur le flanc de ton pneu";
+
+function partialSentence(missing: { width: boolean; section: boolean }): string | null {
+  if (missing.width && missing.section) {
+    return `Même diamètre de jante — largeur de jante et section à confirmer, ${FLANK}.`;
+  }
+  if (missing.width) return "Même diamètre de jante — largeur de jante à confirmer.";
+  if (missing.section) return `Même diamètre de jante — section à confirmer, ${FLANK}.`;
+  return null;
+}
+
 /** Libellé du 🟡 — texte ≥14px à l'écran, jamais un badge ni un pourcentage. */
 export function unverifiedLabel(reason: string | null): string {
   if (reason?.startsWith("fitment:partial")) {
-    return "Même diamètre, largeur non vérifiée — vérifie le flanc de ton pneu";
+    return partialSentence(partialMissing(reason)) ??
+      "Même diamètre, largeur non vérifiée — vérifie le flanc de ton pneu";
   }
   // M-A7a : raison sentinelle posée côté PDP quand isVerdictSafe() refuse le
   // verdict auto (voltage hors barème, ou 84 V ambigu). Jamais écrite en base.
@@ -49,7 +89,7 @@ export function unverifiedLabel(reason: string | null): string {
 // Ces fonctions ne classent RIEN — classifyCompat reste la règle unique.
 // ---------------------------------------------------------------------------
 
-export type KeyFamily = "voltage" | "wheel" | "disc" | "caliper" | "partial";
+export type KeyFamily = "voltage" | "wheel" | "solid_wheel" | "disc" | "caliper" | "partial";
 
 /** Famille de clé de montage portée par une raison moteur, sinon null. */
 export function reasonKeyFamily(reason: string | null): KeyFamily | null {
@@ -67,13 +107,10 @@ export function reasonKeyFamily(reason: string | null): KeyFamily | null {
   if (rest.startsWith("voltage")) return "voltage";
   if (rest.startsWith("brake caliper") || rest.startsWith("caliper")) return "caliper";
   if (rest.startsWith("brake disc") || rest.startsWith("disc")) return "disc";
-  if (
-    rest.startsWith("pneumatic rim") ||
-    rest.startsWith("solid rim") ||
-    rest.startsWith("rim")
-  ) {
-    return "wheel";
-  }
+  // Pneu plein (16/09) : « fitment:solid rim=6.5 width=44mm section=10x2.50 »
+  // — la clé prouvée inclut la largeur de jante, le libellé doit le dire.
+  if (rest.startsWith("solid rim")) return "solid_wheel";
+  if (rest.startsWith("pneumatic rim") || rest.startsWith("rim")) return "wheel";
   return null;
 }
 
@@ -92,6 +129,8 @@ export function verifiedGroupLabel(reasons: (string | null)[]): string {
         return "Vérifié sur le voltage — le chargeur correspond au pack de ces machines.";
       case "wheel":
         return "Vérifié sur la roue — diamètre de jante et section du pneu.";
+      case "solid_wheel":
+        return "Vérifié sur la roue — diamètre et largeur de jante, section du pneu.";
       case "disc":
         return "Vérifié sur le disque — diamètre, entraxe et nombre de trous.";
       case "caliper":
@@ -112,8 +151,15 @@ export function unverifiedGroupLabel(reasons: (string | null)[]): string {
   const families = new Set(reasons.filter((r) => r).map(reasonKeyFamily));
   if (families.size === 1) {
     switch ([...families][0]) {
-      case "partial":
-        return "Même diamètre de jante, largeur non vérifiée — vérifie la dimension inscrite sur le flanc de ton pneu.";
+      case "partial": {
+        // Union des clés manquantes sur l'ensemble des lignes du groupe.
+        const missing = reasons.map(partialMissing).reduce(
+          (acc, m) => ({ width: acc.width || m.width, section: acc.section || m.section }),
+          { width: false, section: false },
+        );
+        return partialSentence(missing) ??
+          "Même diamètre de jante, largeur non vérifiée — vérifie la dimension inscrite sur le flanc de ton pneu.";
+      }
       case "voltage":
         return "Voltage à confirmer — on vérifie avant de l'affirmer.";
     }

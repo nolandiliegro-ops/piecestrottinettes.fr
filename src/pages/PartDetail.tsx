@@ -273,6 +273,7 @@ const PartDetail = () => {
                 partSlug={part.slug}
                 partName={part.name}
                 partId={part.id}
+                categorySlug={part.category?.slug ?? null}
               />
             </div>
             <div className="min-h-[200px]">

@@ -12,6 +12,7 @@ import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
+import { solidConversionState } from "@/lib/compatibilityStatus";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -233,6 +234,8 @@ const ScooterDetail = () => {
             parts={compatibleParts}
             isLoading={isPartsLoading}
             scooterName={scooter.name}
+            scooterId={scooter.id}
+            solidBlocked={solidConversionState(scooter) === "blocked"}
           />
         </div>
 

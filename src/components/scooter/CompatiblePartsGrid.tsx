@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
-import { Package, ArrowRight, HelpCircle } from "lucide-react";
+import { Package, ArrowRight, HelpCircle, Ban } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScooterCompatiblePart } from "@/hooks/useScooterDetail";
+import { useCategories } from "@/hooks/useScooterData";
 import { unverifiedLabel } from "@/lib/compatibilityStatus";
+import { tubesCatalogueUrl } from "@/components/pdp/CompatibilityMatrix";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import PartCard from "@/components/parts/PartCard";
@@ -11,14 +13,29 @@ interface CompatiblePartsGridProps {
   parts: ScooterCompatiblePart[];
   isLoading: boolean;
   scooterName: string;
+  /** Trotte pneumatique déclarée « ne passe pas en pneus pleins » (16/09). */
+  solidBlocked?: boolean;
+  scooterId?: string;
 }
 
-const CompatiblePartsGrid = ({ parts, isLoading, scooterName }: CompatiblePartsGridProps) => {
+const CompatiblePartsGrid = ({
+  parts,
+  isLoading,
+  scooterName,
+  solidBlocked = false,
+  scooterId,
+}: CompatiblePartsGridProps) => {
   // LOT 3 — ventilation via la règle unique (statut déjà posé par le hook) :
   // ✅ verified en grille ; 🟡 unverified en SECTION SÉPARÉE sous la grille,
   // libellé sous chaque card (jamais de badge) ; 🔵 zéro affichable → CTA contact.
   const verified = parts.filter((p) => p.status === "verified");
   const unverified = parts.filter((p) => p.status === "unverified");
+
+  // Encart « ne passe pas en pneus pleins » : hors grille, hors section 🟡,
+  // jamais un badge. Il explique l'absence de la catégorie et renvoie vers
+  // les chambres renforcées / anti-crevaison.
+  const { data: categories = [] } = useCategories();
+  const tubesCategoryId = categories.find((c) => c.slug === "chambres-a-air")?.id;
 
   if (isLoading) {
     return (
@@ -64,6 +81,30 @@ const CompatiblePartsGrid = ({ parts, isLoading, scooterName }: CompatiblePartsG
             </Button>
           </Link>
         </motion.div>
+
+        {solidBlocked && (
+          <div className="mb-8 rounded-2xl border border-border bg-card p-4 md:p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex items-start gap-3 flex-1">
+              <Ban className="w-5 h-5 text-foreground flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="text-base font-bold text-foreground leading-snug">
+                  Cette trottinette ne passe pas en pneus pleins
+                </p>
+                <p className="text-sm text-muted-foreground leading-snug mt-1">
+                  Sa jante est prévue pour du gonflable. Contre les crevaisons, passe sur une
+                  chambre renforcée ou anti-crevaison.
+                </p>
+              </div>
+            </div>
+            <Link
+              to={tubesCatalogueUrl(tubesCategoryId, scooterId)}
+              className="inline-flex items-center justify-center gap-2 min-h-[48px] px-5 rounded-xl bg-carbon text-white text-sm font-semibold hover:bg-black active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-carbon focus-visible:ring-offset-2"
+            >
+              Voir les chambres anti-crevaison
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        )}
 
         {/* Parts Grid — PartCard catalogue (design unique site) */}
         {verified.length > 0 || unverified.length > 0 ? (

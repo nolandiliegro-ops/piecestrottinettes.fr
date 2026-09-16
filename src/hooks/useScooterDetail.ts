@@ -22,6 +22,9 @@ export interface ScooterDetail {
   meta_title: string | null;
   meta_description: string | null;
   affiliate_link: string | null;
+  /** Clés pneus pleins (16/09) : 'pneumatic' | 'solid' ; 'yes' | 'no' | null. */
+  tire_family: string | null;
+  solid_conversion: string | null;
   brand: {
     id: string;
     name: string;
@@ -29,6 +32,30 @@ export interface ScooterDetail {
     logo_url: string | null;
   } | null;
 }
+
+/** Colonnes trotte nécessaires à solidConversionState (fiche pièce, trotte du garage). */
+export interface ScooterFitmentFlags {
+  tire_family: string | null;
+  solid_conversion: string | null;
+}
+
+// Un select ciblé : le ScooterContext ne remonte que id/name/slug/marque.
+export const useScooterFitmentFlags = (scooterId: string | null | undefined) => {
+  return useQuery({
+    queryKey: ["scooter-fitment-flags", scooterId],
+    queryFn: async (): Promise<ScooterFitmentFlags | null> => {
+      const { data, error } = await supabase
+        .from("scooter_models")
+        .select("tire_family, solid_conversion")
+        .eq("id", scooterId!)
+        .maybeSingle();
+      if (error) throw error;
+      return (data as unknown as ScooterFitmentFlags | null) ?? null;
+    },
+    enabled: !!scooterId,
+    staleTime: 5 * 60 * 1000,
+  });
+};
 
 export interface ScooterCompatiblePart {
   id: string;
@@ -79,6 +106,8 @@ export const useScooterBySlug = (slug: string | undefined) => {
           meta_title,
           meta_description,
           affiliate_link,
+          tire_family,
+          solid_conversion,
           brand:brands!scooter_models_brand_id_fkey(id, name, slug, logo_url)
         `)
         .eq("slug", slug)
