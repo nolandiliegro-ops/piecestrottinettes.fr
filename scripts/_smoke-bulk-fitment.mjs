@@ -3,11 +3,13 @@
 // montage, commit 342d1f7). Lovable n'expose aucun état de déploiement : ce script est
 // le seul instrument. Il a vocation à rester dans le repo.
 //
-// Principe : envoyer UN modèle existant avec tire_family hors référentiel.
-//   - réponse avec results.warnings [{ field:"tire_family", code:"ZZZ_TEST_INVALIDE" }]
-//     → nouveau code déployé, garde opérante en prod.
-//   - réponse sans clé warnings → ancienne version encore en prod.
-// Dans les deux cas scooter_models n'est PAS écrit (partialRow vide → no-op).
+// Principe : envoyer UN modèle existant avec 3 clés hors référentiel
+// (tire_family, solid_conversion, rim_width — LOT 2 du 17/09). L'EF renvoie un
+// warning par clé refusée, field = NOM DE COLONNE (fitmentCodeFields) :
+//   - warnings avec "solid_conversion" ET "rim_width_code" → LOT 2 DÉPLOYÉ ;
+//   - warnings avec "tire_family" seul → ANCIEN CODE (≥ 342d1f7, < lot 2) ;
+//   - aucune clé warnings → CODE < 342d1f7.
+// Dans tous les cas scooter_models n'est PAS écrit (partialRow vide → no-op).
 //
 // Écriture assumée et unique : l'upsert brands (name, slug) que l'EF fait avant toute
 // chose. name et slug sont lus en base et renvoyés VERBATIM (mêmes variables, jamais
@@ -49,6 +51,14 @@ const READ_HEADERS = { apikey: ANON, Authorization: `Bearer ${ANON}` };
 const FITMENT_COLS = [
   'tire_family', 'rim_diameter_code', 'tire_section_code', 'caliper_family',
   'disc_diameter_code', 'disc_pcd_code', 'disc_holes_code',
+  'rim_width_code', 'solid_conversion', // LOT 1 (16/09) — doivent rester NULL après le smoke
+];
+const INVALID = 'ZZZ_TEST_INVALIDE';
+// Clé payload → nom de colonne renvoyé dans results.warnings[].field par l'EF.
+const PROBES = [
+  ['tire_family', 'tire_family'],
+  ['solid_conversion', 'solid_conversion'],
+  ['rim_width', 'rim_width_code'],
 ];
 
 // ─── Lectures (clé anon, PostgREST) ────────────────────────────────────────────
@@ -118,12 +128,13 @@ const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   // ── Étape 2 : appel EF ──────────────────────────────────────────────────────
   // Même forme que scripts/sync-scooters.js : brandName à la RACINE du body (l'EF lit
   // body.brandName, pas scooter.brandName), forceUpdate pour le mode update.
+  const probe = { slug: before.slug, ...Object.fromEntries(PROBES.map(([key]) => [key, INVALID])) };
   const payload = {
     brandName,
     brand_name: brandName,
     brandSlug,
-    scooters: [{ slug: before.slug, tire_family: 'ZZZ_TEST_INVALIDE' }],
-    models: [{ slug: before.slug, tire_family: 'ZZZ_TEST_INVALIDE' }],
+    scooters: [probe],
+    models: [probe],
     forceUpdate: true,
   };
   console.log('\n[smoke] === ÉTAPE 2 — POST bulk-insert-scooters ===');
@@ -149,11 +160,18 @@ const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   const warnings = json?.results?.warnings;
   console.log('\n[smoke] === VERDICT DÉPLOIEMENT ===');
   if (Array.isArray(warnings)) {
-    const hit = warnings.some((w) => w?.field === 'tire_family' && w?.code === 'ZZZ_TEST_INVALIDE');
-    console.log(`  clé results.warnings PRÉSENTE (${warnings.length} entrée(s)) → NOUVEAU CODE DÉPLOYÉ`);
-    console.log(`  warning tire_family/ZZZ_TEST_INVALIDE : ${hit ? 'OUI — garde opérante en prod' : 'NON — warnings présent mais sans l\'entrée attendue, à examiner'}`);
+    const hit = (field) => warnings.some((w) => w?.field === field && w?.code === INVALID);
+    console.log(`  clé results.warnings PRÉSENTE (${warnings.length} entrée(s))`);
+    for (const [, field] of PROBES) console.log(`  warning ${field}/${INVALID} : ${hit(field) ? 'OUI' : 'NON'}`);
+    if (hit('solid_conversion') && hit('rim_width_code')) {
+      console.log('  → LOT 2 DÉPLOYÉ (solid_conversion + rim_width_code refusés par le référentiel)');
+    } else if (hit('tire_family')) {
+      console.log('  → ANCIEN CODE (≥ 342d1f7, < lot 2) : les 2 nouvelles clés sont ignorées en silence');
+    } else {
+      console.log('  → warnings présent mais sans les entrées attendues, à examiner');
+    }
   } else if (json && res.ok) {
-    console.log('  AUCUNE clé results.warnings → ANCIENNE VERSION encore en prod (342d1f7 non redéployé)');
+    console.log('  AUCUNE clé results.warnings → CODE < 342d1f7 (aucune garde de clés en prod)');
   } else {
     console.log('  Réponse non exploitable (HTTP non-2xx ou non-JSON) → verdict impossible');
   }
@@ -169,8 +187,10 @@ const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   const c2 = brandAfter && brandAfter.name === brandName && brandAfter.slug === brandSlug;
   console.log(`  2. brand ${brandId} : name=${JSON.stringify(brandAfter?.name)} slug=${JSON.stringify(brandAfter?.slug)} → ${c2 ? 'OK inchangé' : '✗ MODIFIÉ'}`);
   const c3 = same(pick(before), pick(after));
-  console.log(`  3. fitment ${SLUG}  : ${JSON.stringify(pick(after))} → ${c3 ? 'OK inchangé (7 colonnes)' : '✗ MODIFIÉ'}`);
+  console.log(`  3. fitment ${SLUG}  : ${JSON.stringify(pick(after))} → ${c3 ? `OK inchangé (${FITMENT_COLS.length} colonnes)` : '✗ MODIFIÉ'}`);
   if (!c3) console.log(`     avant : ${JSON.stringify(pick(before))}`);
+  const c4 = after?.rim_width_code == null && after?.solid_conversion == null;
+  console.log(`  4. rim_width_code / solid_conversion : ${JSON.stringify(after?.rim_width_code ?? null)} / ${JSON.stringify(after?.solid_conversion ?? null)} → ${c4 ? 'OK NULL' : '✗ ÉCRITES (la garde hors-vocab a laissé passer)'}`);
 
-  if (!(c1 && c2 && c3)) process.exit(2);
+  if (!(c1 && c2 && c3 && c4)) process.exit(2);
 })().catch((e) => { console.error('[smoke] ❌ Fatal :', e.message); process.exit(1); });
