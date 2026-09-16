@@ -19,6 +19,10 @@
  * verbatim (→ scooter_models.*) :
  *   rim_diameter ("6.5", "134mm" → rim_diameter_code) · tire_section ("90/65" → tire_section_code)
  *   caliper_family ("nutt_4p" → caliper_family) · tire_family ("pneumatic" | "solid" → tire_family)
+ *   rim_width ("44mm" → rim_width_code, référentiel fitment_rim_widths — largeur de jante, pneus pleins)
+ *   solid_conversion ('yes' | 'no' → solid_conversion) : la trotte, d'origine pneumatique, passe-t-elle
+ *     en pneus pleins ? Vide = inconnu (NULL), JAMAIS deviné. Une trotte tire_family='solid' est
+ *     candidate par construction, ne pas y poser 'no' (CHECK en base).
  * Garde anti-écrasement côté Edge Function : clé absente ou vide = colonne intacte en base ;
  * code hors référentiel = colonne sautée + warning nominatif (le modèle est quand même traité).
  */

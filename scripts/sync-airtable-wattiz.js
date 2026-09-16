@@ -92,6 +92,10 @@ const F_PIECE_FIT_DISC_DIAMETERS = 'fldb7H2rgpcHS55iI';  // 🔑 Ø disque → b
 const F_PIECE_FIT_DISC_PCDS = 'fld4Uxfr2wNOMlvJ7';       // 🔑 Entraxe disque → brake_disc.pcds
 const F_PIECE_FIT_DISC_HOLES = 'fldtYaZymwBvOuMvb';      // 🔑 Trous disque → brake_disc.holes
 const F_PIECE_FIT_CALIPER = 'flde00F5A5d0lpFn3';         // 🔑 Étrier → brake_caliper
+// 🔑 Largeur jante → rim_widths (pneus pleins, codes fitment_rim_widths). Champ créé
+// côté Airtable après le LOT 4 : tant que la valeur est le placeholder, le script
+// REFUSE de tourner (exit 1 avant tout appel réseau, voir garde ci-dessous).
+const F_PIECE_FIT_RIM_WIDTHS = 'TODO_FIELD_ID';
 
 // Whitelist fournisseurs acceptée par bulk-insert-parts (part_suppliers.supplier_name)
 const SUPPLIER_WHITELIST = [
@@ -99,6 +103,13 @@ const SUPPLIER_WHITELIST = [
   'dualtronstore', 'weebot', 'autre',
 ];
 
+if (!/^fld[A-Za-z0-9]{14}$/.test(F_PIECE_FIT_RIM_WIDTHS)) {
+  console.error(
+    `❌ F_PIECE_FIT_RIM_WIDTHS = "${F_PIECE_FIT_RIM_WIDTHS}" n'est pas un field ID Airtable. ` +
+    'Renseigne le fieldId du champ « 🔑 Largeur jante » (table Pièces) avant de lancer le sync.',
+  );
+  process.exit(1);
+}
 if (!AIRTABLE_API_KEY) { console.error('❌ AIRTABLE_API_KEY manquante'); process.exit(1); }
 if (!SUPABASE_URL) { console.error('❌ SUPABASE_URL manquante'); process.exit(1); }
 if (!DRY_RUN && !ADMIN_BULK_SECRET) { console.error('❌ ADMIN_BULK_SECRET manquante'); process.exit(1); }
@@ -193,6 +204,7 @@ const nonEmptyText = (v) => typeof v === 'string' && v.trim() !== '';
 //     champ 🔑 est rempli (tire_family seul n'est pas une dim sourcée).
 function buildFitmentSpecs(enrich, categoryName) {
   const rimDiameters = selectCodes(enrich[F_PIECE_FIT_RIM_DIAMETERS]);
+  const rimWidths = selectCodes(enrich[F_PIECE_FIT_RIM_WIDTHS]);
   const tireSections = selectCodes(enrich[F_PIECE_FIT_TIRE_SECTIONS]);
   const discDiameters = selectCodes(enrich[F_PIECE_FIT_DISC_DIAMETERS]);
   const discPcds = selectCodes(enrich[F_PIECE_FIT_DISC_PCDS]);
@@ -200,7 +212,7 @@ function buildFitmentSpecs(enrich, categoryName) {
   const brakeCaliper = selectCodes(enrich[F_PIECE_FIT_CALIPER]);
 
   const hasAny =
-    rimDiameters.length || tireSections.length || discDiameters.length ||
+    rimDiameters.length || rimWidths.length || tireSections.length || discDiameters.length ||
     discPcds.length || discHoles.length || brakeCaliper.length;
   if (!hasAny) return null;
 
@@ -216,6 +228,7 @@ function buildFitmentSpecs(enrich, categoryName) {
   return {
     ...(tireFamily ? { tire_family: tireFamily } : {}),
     ...(rimDiameters.length ? { rim_diameters: rimDiameters } : {}),
+    ...(rimWidths.length ? { rim_widths: rimWidths } : {}),
     ...(tireSections.length ? { tire_sections: tireSections } : {}),
     ...(Object.keys(brakeDisc).length ? { brake_disc: brakeDisc } : {}),
     ...(brakeCaliper.length ? { brake_caliper: brakeCaliper } : {}),
@@ -986,8 +999,8 @@ function printForceRedetourePreview(parts) {
       AIRTABLE_TABLE_ID,
       [
         F_PIECE_EAN, F_PIECE_CARACTERISTIQUES, F_PIECE_COMPAT_SOURCE, F_PIECE_PHOTOS_SOURCE,
-        F_PIECE_FIT_RIM_DIAMETERS, F_PIECE_FIT_TIRE_SECTIONS, F_PIECE_FIT_DISC_DIAMETERS,
-        F_PIECE_FIT_DISC_PCDS, F_PIECE_FIT_DISC_HOLES, F_PIECE_FIT_CALIPER,
+        F_PIECE_FIT_RIM_DIAMETERS, F_PIECE_FIT_RIM_WIDTHS, F_PIECE_FIT_TIRE_SECTIONS,
+        F_PIECE_FIT_DISC_DIAMETERS, F_PIECE_FIT_DISC_PCDS, F_PIECE_FIT_DISC_HOLES, F_PIECE_FIT_CALIPER,
       ],
       true,
     )) {

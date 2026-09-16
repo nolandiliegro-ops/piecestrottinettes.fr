@@ -127,6 +127,28 @@ check(
   [],
 );
 check(
+  'pneu plein avec rim_widths ["44mm"] (largeur optionnelle, 16/09) : conforme',
+  findMissingPartKeys([{
+    categoryName: 'Pneus pleins',
+    parts: [{ slug: 'pnp-44', fitment_specs: { tire_family: 'solid', rim_diameters: ['6.5'], rim_widths: ['44mm'], tire_sections: ['10x2.50'] } }],
+  }]),
+  [],
+);
+check(
+  'pneu plein avec rim_widths mal formé ("44mm" scalaire, puis [""]) : refusé',
+  findMissingPartKeys([{
+    categoryName: 'Pneus pleins',
+    parts: [
+      { slug: 'pnp-w-scalaire', fitment_specs: { tire_family: 'solid', rim_diameters: ['6.5'], rim_widths: '44mm', tire_sections: ['10x2.50'] } },
+      { slug: 'pnp-w-vide', fitment_specs: { tire_family: 'solid', rim_diameters: ['6.5'], rim_widths: [''], tire_sections: ['10x2.50'] } },
+    ],
+  }]),
+  [
+    { categoryName: 'Pneus pleins', ref: 'pnp-w-scalaire', sku: null, missing: ['rim_widths (tableau de codes strings attendu)'] },
+    { categoryName: 'Pneus pleins', ref: 'pnp-w-vide', sku: null, missing: ['rim_widths (tableau de codes strings attendu)'] },
+  ],
+);
+check(
   'pneu plein avec tire_family pneumatic : refusé',
   findMissingPartKeys([{
     categoryName: 'Pneus pleins',

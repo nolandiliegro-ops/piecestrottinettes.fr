@@ -930,6 +930,24 @@ export type Database = {
         }
         Relationships: []
       }
+      fitment_rim_widths: {
+        Row: {
+          code: string
+          label_client: string | null
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
       fitment_tire_sections: {
         Row: {
           code: string
@@ -1793,6 +1811,7 @@ export type Database = {
           published: boolean
           range_km: number | null
           rim_diameter_code: string | null
+          rim_width_code: string | null
           score_auto_adj: number
           score_autonomy: number | null
           score_offroad: number | null
@@ -1801,6 +1820,7 @@ export type Database = {
           score_performance: number | null
           search_terms: string | null
           slug: string
+          solid_conversion: string | null
           suspension: string | null
           technical_signature: Json | null
           tire_family: string | null
@@ -1845,6 +1865,7 @@ export type Database = {
           published?: boolean
           range_km?: number | null
           rim_diameter_code?: string | null
+          rim_width_code?: string | null
           score_auto_adj?: number
           score_autonomy?: number | null
           score_offroad?: number | null
@@ -1853,6 +1874,7 @@ export type Database = {
           score_performance?: number | null
           search_terms?: string | null
           slug: string
+          solid_conversion?: string | null
           suspension?: string | null
           technical_signature?: Json | null
           tire_family?: string | null
@@ -1897,6 +1919,7 @@ export type Database = {
           published?: boolean
           range_km?: number | null
           rim_diameter_code?: string | null
+          rim_width_code?: string | null
           score_auto_adj?: number
           score_autonomy?: number | null
           score_offroad?: number | null
@@ -1905,6 +1928,7 @@ export type Database = {
           score_performance?: number | null
           search_terms?: string | null
           slug?: string
+          solid_conversion?: string | null
           suspension?: string | null
           technical_signature?: Json | null
           tire_family?: string | null
@@ -1958,6 +1982,13 @@ export type Database = {
             columns: ["rim_diameter_code"]
             isOneToOne: false
             referencedRelation: "fitment_rim_diameters"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "scooter_models_rim_width_code_fkey"
+            columns: ["rim_width_code"]
+            isOneToOne: false
+            referencedRelation: "fitment_rim_widths"
             referencedColumns: ["code"]
           },
           {

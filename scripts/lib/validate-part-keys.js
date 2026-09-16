@@ -8,6 +8,7 @@
 // de valeurs acceptées (même à 1 élément) :
 //   tire_family   : "pneumatic" | "solid" (scalaire)
 //   rim_diameters : [] codes fitment_rim_diameters (ex "6.5", "134mm")
+//   rim_widths    : [] codes fitment_rim_widths (ex "44mm") — pneus pleins, OPTIONNEL
 //   tire_sections : [] codes fitment_tire_sections (ex "90/65", "8.5x2", "8x4")
 //   brake_disc    : { diameters: [], pcds: [], holes: [] } codes fitment_disc_*
 //   brake_caliper : [] codes fitment_caliper_families (ex "nutt_4p", "zoom")
@@ -71,7 +72,7 @@ const isIntArray = (v) => Array.isArray(v) && v.length > 0 && v.every(Number.isI
 const isStrArray = (v) =>
   Array.isArray(v) && v.length > 0 && v.every((x) => typeof x === 'string' && x.trim() !== '');
 
-const FITMENT_BLOCKS = ['tire_family', 'rim_diameters', 'tire_sections', 'brake_disc', 'brake_caliper'];
+const FITMENT_BLOCKS = ['tire_family', 'rim_diameters', 'rim_widths', 'tire_sections', 'brake_disc', 'brake_caliper'];
 
 /**
  * Fautes de FORME d'un fitment_specs fourni (indépendant de la catégorie).
@@ -91,6 +92,9 @@ function fitmentShapeFaults(fs) {
   }
   if (fs.rim_diameters !== undefined && !isStrArray(fs.rim_diameters)) {
     faults.push('rim_diameters (tableau de codes strings attendu)');
+  }
+  if (fs.rim_widths !== undefined && !isStrArray(fs.rim_widths)) {
+    faults.push('rim_widths (tableau de codes strings attendu)');
   }
   if (fs.tire_sections !== undefined && !isStrArray(fs.tire_sections)) {
     faults.push('tire_sections (tableau de codes strings attendu)');
