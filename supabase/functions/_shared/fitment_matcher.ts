@@ -11,10 +11,14 @@
 //     valide). Le DELETE du retrigger (auto=true non-validated) les couvre
 //     nativement → idempotence sans étendre son scope.
 //   - match complet → confidence 'high', suggestion_reason 'fitment:...'
-//   - SEUL cas partiel : Ø jante matche mais tire_sections absent côté pièce
-//     ou tire_section_code NULL côté trotte → 'medium', 'fitment:partial rim=…'
-//   - tire_family identique des deux côtés exigé pour TOUT match roue (high
-//     comme partial) ; published=true toujours exigé.
+//   - SEUL cas partiel : Ø jante matche mais une clé secondaire manque d'un
+//     côté → 'medium', raison 'fitment:partial rim=…' suivie de ' width=?' et/ou
+//     ' section=?' selon la clé manquante (pneumatique : section seule ;
+//     plein : largeur de jante ET section, décision 16/09).
+//   - pneumatique : tire_family identique des deux côtés exigé. Plein : trotte
+//     candidate ssi tire_family='solid' OU solid_conversion='yes' (une trotte
+//     pneumatique convertible) ; 'no' ou NULL → aucune ligne (🔵 côté client).
+//     published=true toujours exigé.
 //   - règle dure : pièce non "matchable" (clés minimales absentes) → AUCUNE
 //     suggestion (ni regex ni IA) — état 🔵 côté client.
 
@@ -39,6 +43,8 @@ export const KEY_WIRED_CATEGORIES = [
 export interface FitmentSpecs {
   tire_family?: string;
   rim_diameters?: string[];
+  /** Largeurs de jante acceptées (codes fitment_rim_widths) — pneus pleins. */
+  rim_widths?: string[];
   tire_sections?: string[];
   brake_disc?: { diameters?: string[]; pcds?: string[]; holes?: string[] };
   brake_caliper?: string[];
@@ -112,6 +118,10 @@ export interface TireScooterRow {
   tire_family: string | null;
   rim_diameter_code: string | null;
   tire_section_code: string | null;
+  /** Largeur de jante (code fitment_rim_widths) — lue pour les pneus pleins. */
+  rim_width_code?: string | null;
+  /** 'yes' | 'no' | null : une trotte pneumatique passe-t-elle en plein ? */
+  solid_conversion?: string | null;
 }
 
 export interface DiscScooterRow {
@@ -154,6 +164,46 @@ export function matchTireScooters(
         scooterId: s.id,
         confidence: "medium",
         reason: `fitment:partial rim=${s.rim_diameter_code}`,
+      });
+    }
+  }
+  return out;
+}
+
+/**
+ * Pneu plein (décision 16/09). Candidate ssi tire_family='solid' OU
+ * solid_conversion='yes' ('no' ou NULL sur une pneumatique → aucune ligne).
+ * Ø jante ∈ rim_diameters exigé. Largeur et section : clé DURE quand les deux
+ * côtés la portent (∉ → exclu). high ssi Ø + largeur + section concordent ;
+ * une clé absente d'un côté (ou des deux) → medium, raison précise par clé
+ * manquante : 'fitment:partial rim=<code>' + ' width=?' et/ou ' section=?'.
+ */
+export function matchSolidScooters(
+  spec: { rimDiameters: string[]; rimWidths?: string[] | null; tireSections?: string[] | null },
+  scooters: TireScooterRow[],
+): MatchedRow[] {
+  const out: MatchedRow[] = [];
+  const widths = isStrArray(spec.rimWidths) ? spec.rimWidths : null;
+  const sections = isStrArray(spec.tireSections) ? spec.tireSections : null;
+  for (const s of scooters) {
+    if (s.tire_family !== "solid" && s.solid_conversion !== "yes") continue;
+    if (!s.rim_diameter_code || !spec.rimDiameters.includes(s.rim_diameter_code)) continue;
+    const widthBoth = Boolean(widths && s.rim_width_code);
+    if (widthBoth && !widths!.includes(s.rim_width_code!)) continue;
+    const sectionBoth = Boolean(sections && s.tire_section_code);
+    if (sectionBoth && !sections!.includes(s.tire_section_code!)) continue;
+    if (widthBoth && sectionBoth) {
+      out.push({
+        scooterId: s.id,
+        confidence: "high",
+        reason: `fitment:solid rim=${s.rim_diameter_code} width=${s.rim_width_code} section=${s.tire_section_code}`,
+      });
+    } else {
+      const missing = (widthBoth ? "" : " width=?") + (sectionBoth ? "" : " section=?");
+      out.push({
+        scooterId: s.id,
+        confidence: "medium",
+        reason: `fitment:partial rim=${s.rim_diameter_code}${missing}`,
       });
     }
   }
@@ -230,17 +280,23 @@ export async function suggestCompatibilitiesFitment(
     const fs = part.fitment_specs!;
     const { data, error } = await supabase
       .from("scooter_models")
-      .select("id, tire_family, rim_diameter_code, tire_section_code")
+      .select("id, tire_family, rim_diameter_code, tire_section_code, rim_width_code, solid_conversion")
       .eq("published", true)
       .in("rim_diameter_code", fs.rim_diameters!);
     if (error) {
       console.error(`[fitment] Erreur fetch scooters (tire):`, error.message);
       return { ...EMPTY, scooterIds: new Set() };
     }
-    matched = matchTireScooters(
-      { family: rule.family!, rimDiameters: fs.rim_diameters!, tireSections: fs.tire_sections ?? null },
-      (data ?? []) as TireScooterRow[],
-    );
+    const rows = (data ?? []) as TireScooterRow[];
+    matched = rule.family === "solid"
+      ? matchSolidScooters(
+        { rimDiameters: fs.rim_diameters!, rimWidths: fs.rim_widths ?? null, tireSections: fs.tire_sections ?? null },
+        rows,
+      )
+      : matchTireScooters(
+        { family: rule.family!, rimDiameters: fs.rim_diameters!, tireSections: fs.tire_sections ?? null },
+        rows,
+      );
   } else {
     const d = part.fitment_specs!.brake_disc!;
     const { data, error } = await supabase

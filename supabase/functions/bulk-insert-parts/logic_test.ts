@@ -35,6 +35,7 @@ import {
   fitmentKindForCategory,
   isFitmentMatchable,
   matchTireScooters,
+  matchSolidScooters,
   matchDiscScooters,
 } from "../_shared/fitment_matcher.ts";
 
@@ -709,10 +710,84 @@ Deno.test("matchTireScooters: complet → high, section absente → partial, mis
 
 Deno.test("matchTireScooters: pièce sans sections → tout en partial medium", () => {
   const out = matchTireScooters(
-    { family: "solid", rimDiameters: ["6"], tireSections: null },
-    [{ id: "s1", tire_family: "solid", rim_diameter_code: "6", tire_section_code: "8x4" }],
+    { family: "pneumatic", rimDiameters: ["6"], tireSections: null },
+    [{ id: "s1", tire_family: "pneumatic", rim_diameter_code: "6", tire_section_code: "10x3.00" }],
   );
   assertEquals(out, [{ scooterId: "s1", confidence: "medium", reason: "fitment:partial rim=6" }]);
+});
+
+Deno.test("matchTireScooters (pneumatic) ignore largeur et solid_conversion", () => {
+  const out = matchTireScooters(
+    { family: "pneumatic", rimDiameters: ["6.5"], tireSections: ["90/65"] },
+    [
+      { id: "p-yes", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "90/65", rim_width_code: "44mm", solid_conversion: "yes" },
+      { id: "p-no", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "90/65", rim_width_code: null, solid_conversion: "no" },
+    ],
+  );
+  assertEquals(out.map((m) => [m.scooterId, m.confidence]), [["p-yes", "high"], ["p-no", "high"]]);
+});
+
+// ─── Pneus pleins (décision 16/09) ──────────────────────────────────────────
+
+Deno.test("matchSolidScooters: candidature — solid, conversion yes / no / NULL", () => {
+  const scooters = [
+    { id: "solid", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: null },
+    { id: "pneu-yes", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null, solid_conversion: "yes" },
+    { id: "pneu-no", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null, solid_conversion: "no" },
+    { id: "pneu-null", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null, solid_conversion: null },
+    { id: "null-family", tire_family: null, rim_diameter_code: "6.5", tire_section_code: null },
+    { id: "wrong-rim", tire_family: "solid", rim_diameter_code: "6", tire_section_code: null },
+  ];
+  const out = matchSolidScooters({ rimDiameters: ["6.5"] }, scooters);
+  assertEquals(out.map((m) => m.scooterId), ["solid", "pneu-yes"]);
+  // Aucune largeur ni section d'aucun côté → medium, les deux clés manquantes nommées.
+  for (const m of out) {
+    assertEquals(m.confidence, "medium");
+    assertEquals(m.reason, "fitment:partial rim=6.5 width=? section=?");
+  }
+});
+
+Deno.test("matchSolidScooters: largeur ∈ / ∉ / absente d'un côté / absente des deux", () => {
+  const spec = { rimDiameters: ["6.5"], rimWidths: ["44mm"], tireSections: ["10x2.50"] };
+  const scooters = [
+    { id: "full", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.50", rim_width_code: "44mm" },
+    { id: "wrong-width", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.50", rim_width_code: "34mm" },
+    { id: "no-width", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.50", rim_width_code: null },
+  ];
+  assertEquals(matchSolidScooters(spec, scooters), [
+    { scooterId: "full", confidence: "high", reason: "fitment:solid rim=6.5 width=44mm section=10x2.50" },
+    { scooterId: "no-width", confidence: "medium", reason: "fitment:partial rim=6.5 width=?" },
+  ]);
+  // Pièce sans largeur (PP-22) face à une trotte qui en porte une → medium, jamais high.
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [scooters[0]]),
+    [{ scooterId: "full", confidence: "medium", reason: "fitment:partial rim=6.5 width=?" }],
+  );
+  // Largeur absente des deux côtés → medium (littéral, décision Q3).
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [scooters[2]]),
+    [{ scooterId: "no-width", confidence: "medium", reason: "fitment:partial rim=6.5 width=?" }],
+  );
+});
+
+Deno.test("matchSolidScooters: section — ∉ exclu, absente d'un côté → section=?", () => {
+  const spec = { rimDiameters: ["6.5"], rimWidths: ["44mm"], tireSections: ["10x2.50"] };
+  const scooters = [
+    { id: "wrong-section", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.70", rim_width_code: "44mm" },
+    { id: "no-section", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: null, rim_width_code: "44mm" },
+    { id: "no-section-no-width", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: null, rim_width_code: null },
+  ];
+  assertEquals(matchSolidScooters(spec, scooters), [
+    { scooterId: "no-section", confidence: "medium", reason: "fitment:partial rim=6.5 section=?" },
+    { scooterId: "no-section-no-width", confidence: "medium", reason: "fitment:partial rim=6.5 width=? section=?" },
+  ]);
+  // Pièce sans sections, trotte complète → section=? seul (largeur concordante).
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"], rimWidths: ["44mm"] }, [
+      { id: "t", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.50", rim_width_code: "44mm" },
+    ]),
+    [{ scooterId: "t", confidence: "medium", reason: "fitment:partial rim=6.5 section=?" }],
+  );
 });
 
 Deno.test("matchDiscScooters: triple match exigé, aucun partial", () => {

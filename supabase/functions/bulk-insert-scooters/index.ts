@@ -31,9 +31,11 @@ interface ScooterInput {
   disc_pcd?: number | string;
   disc_holes?: number | string;
   rim_diameter?: string;
+  rim_width?: string; // largeur de jante (pneus pleins), codes fitment_rim_widths ("44mm")
   tire_section?: string;
   caliper_family?: string;
   tire_family?: string; // "pneumatic" | "solid" — text libre en base, ensemble en dur
+  solid_conversion?: string; // "yes" | "no" — CHECK en base, ensemble en dur ici
 }
 
 // ─── Clés de montage : garde-preserve + validation référentiel ─────────────────
@@ -44,18 +46,22 @@ interface ScooterInput {
 // rejet du modèle entier (la FK en base rejetterait TOUTES les colonnes d'un coup).
 export const FITMENT_KEYS = [
   ["rim_diameter", "rim_diameter_code", "fitment_rim_diameters"],
+  ["rim_width", "rim_width_code", "fitment_rim_widths"],
   ["tire_section", "tire_section_code", "fitment_tire_sections"],
   ["disc_diameter", "disc_diameter_code", "fitment_disc_diameters"],
   ["disc_pcd", "disc_pcd_code", "fitment_disc_pcd"],
   ["disc_holes", "disc_holes_code", "fitment_disc_holes"],
   ["caliper_family", "caliper_family", "fitment_caliper_families"],
   ["tire_family", "tire_family", "tire_family"],
+  ["solid_conversion", "solid_conversion", "solid_conversion"],
 ] as const;
 
 type FitmentKey = (typeof FITMENT_KEYS)[number][0];
 
 // tire_family : aucune table fitment_tire_families, aucun FK, aucun CHECK (audit 09/09).
 export const TIRE_FAMILIES: ReadonlySet<string> = new Set(["pneumatic", "solid"]);
+// solid_conversion : CHECK IN ('yes','no') en base (LOT 1, 16/09), pas de table → ensemble en dur.
+export const SOLID_CONVERSION: ReadonlySet<string> = new Set(["yes", "no"]);
 
 export type FitmentVocab = Record<string, ReadonlySet<string>>;
 export interface FitmentWarning { name: string; field: string; code: string }
@@ -78,12 +84,12 @@ export function fitmentCodeFields(
   return out;
 }
 
-// Charge les 6 référentiels fitment_* en Set<string>, une fois par requête.
+// Charge les 7 référentiels fitment_* en Set<string>, une fois par requête.
 // Lève si une lecture échoue → 500 par le catch global : jamais d'écriture sans référentiel.
 export async function loadFitmentVocab(supabase: SupabaseClient): Promise<FitmentVocab> {
-  const vocab: FitmentVocab = { tire_family: TIRE_FAMILIES };
+  const vocab: FitmentVocab = { tire_family: TIRE_FAMILIES, solid_conversion: SOLID_CONVERSION };
   for (const [, , ref] of FITMENT_KEYS) {
-    if (ref === "tire_family") continue;
+    if (ref in vocab) continue; // ensembles en dur, pas de table
     const { data, error } = await supabase.from(ref).select("code");
     if (error) throw new Error(`Référentiel ${ref} illisible : ${error.message}`);
     vocab[ref] = new Set((data ?? []).map((r: { code: string }) => r.code));
@@ -220,7 +226,7 @@ const handler = async (req: Request): Promise<Response> => {
         continue;
       }
 
-      // 7 clés de montage — guard-preserve + validation référentiel (voir
+      // 9 clés de montage — guard-preserve + validation référentiel (voir
       // fitmentCodeFields) : clé absente / vide / hors référentiel → colonne
       // JAMAIS touchée (pas d'écrasement par NULL, pas de code inconnu).
       const fitmentPatch = fitmentCodeFields(scooter, vocab, results.warnings);
