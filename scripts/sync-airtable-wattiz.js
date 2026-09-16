@@ -49,7 +49,9 @@ function loadEnv() {
 
 const ENV = loadEnv();
 // DRY_RUN par défaut TRUE (aligné sur enrich.js) : on n'écrit que si DRY_RUN="false".
-const DRY_RUN = String(ENV.DRY_RUN ?? 'true').toLowerCase() !== 'false';
+// Surchargeable en ligne de commande (DRY_RUN=false node scripts/sync-airtable-wattiz.js),
+// même précédence que DUMP_SKU : le .env n'a jamais besoin de porter false.
+const DRY_RUN = String(process.env.DRY_RUN ?? ENV.DRY_RUN ?? 'true').toLowerCase() !== 'false';
 
 // Flag PONCTUEL de redétourage forcé des photos (chambres à air uniquement).
 // Défaut false → sync normal strictement inchangé. Quand true ET DRY_RUN=false :
