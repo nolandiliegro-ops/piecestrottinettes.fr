@@ -50,6 +50,7 @@ const Garage = () => {
   const { scooters, loading: scootersLoading } = useGarageScooters();
   const [selectedScooterId, setSelectedScooterId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
+  const [autoOpenThread, setAutoOpenThread] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
@@ -61,9 +62,11 @@ const Garage = () => {
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
 
   useEffect(() => {
-    const tab = searchParams.get('tab');
+    const raw = searchParams.get('tab');
+    const tab = raw === 'commandes' ? 'orders' : raw;
     if (tab === 'messages' || tab === 'orders' || tab === 'garage') {
-      setActiveTab(tab as 'garage' | 'orders' | 'messages');
+      if (tab === 'messages' && !searchParams.get('orderId')) setAutoOpenThread(true);
+      setActiveTab(tab);
       searchParams.delete('tab');
       setSearchParams(searchParams, { replace: true });
     }
@@ -468,7 +471,7 @@ const Garage = () => {
               transition={{ duration: 0.3 }}
               className="flex-1 overflow-y-auto pb-8 px-4 md:px-6 max-w-[1600px] mx-auto w-full"
             >
-              <GarageMessages />
+              <GarageMessages autoOpenLatest={autoOpenThread} onAutoOpened={() => setAutoOpenThread(false)} />
             </motion.div>
           )}
         </AnimatePresence>

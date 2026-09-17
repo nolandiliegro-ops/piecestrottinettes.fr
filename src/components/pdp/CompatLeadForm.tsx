@@ -98,18 +98,20 @@ export default function CompatLeadForm({ partId, partName }: CompatLeadFormProps
     setSending(false);
     setDone(true);
 
-    // Notif atelier : fire-and-forget, jamais bloquante.
-    void supabase.functions
-      .invoke("send-contact-email", {
-        body: {
-          name: "Lead compatibilite",
-          email: email.trim(),
-          subject: `Compatibilite - ${partName ?? partId}`,
-          message: `Trottinette : ${modelLabel}\nEmail : ${email.trim()}`,
-          ...(user?.id ? { user_id: user.id } : {}),
-        },
-      })
-      .catch(() => {});
+    // Notif atelier : fire-and-forget, jamais bloquante. Pas de doublon si 23505.
+    if (!err) {
+      void supabase.functions
+        .invoke("send-contact-email", {
+          body: {
+            name: "Lead compatibilite",
+            email: email.trim(),
+            subject: `Compatibilite - ${partName ?? partId}`,
+            message: `Trottinette : ${modelLabel}\nEmail : ${email.trim()}`,
+            ...(user?.id ? { user_id: user.id } : {}),
+          },
+        })
+        .catch(() => {});
+    }
   };
 
   if (done) {
@@ -128,6 +130,15 @@ export default function CompatLeadForm({ partId, partName }: CompatLeadFormProps
             <span className="truncate">
               Pièces vérifiées · {scooterLabelShort(picked.brand, picked.name)}
             </span>
+            <ArrowRight className="w-4 h-4 flex-shrink-0" />
+          </Link>
+        )}
+        {user && (
+          <Link
+            to="/garage?tab=messages&orderId=direct&orderNumber=Message%20g%C3%A9n%C3%A9ral"
+            className="mt-2 w-full min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-carbon px-4 text-carbon text-sm font-semibold hover:bg-carbon/5 active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-carbon focus-visible:ring-offset-2"
+          >
+            <span>Suivre ma demande dans mon garage</span>
             <ArrowRight className="w-4 h-4 flex-shrink-0" />
           </Link>
         )}

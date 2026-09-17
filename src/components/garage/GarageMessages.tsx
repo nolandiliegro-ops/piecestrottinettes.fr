@@ -647,7 +647,7 @@ const ChatView = ({
 };
 
 // Main Component
-const GarageMessages = () => {
+const GarageMessages = ({ autoOpenLatest = false, onAutoOpened }: { autoOpenLatest?: boolean; onAutoOpened?: () => void }) => {
   const { user } = useAuth();
   const { data: conversations = [], isLoading } = useOrderConversations();
   const markAsRead = useMarkMessagesAsRead();
@@ -691,8 +691,15 @@ const GarageMessages = () => {
       } as ConversationSummary);
     }
     // Clean URL while keeping the messages tab active
-    setSearchParams({ tab: 'messages' }, { replace: true });
+    setSearchParams({}, { replace: true });
   }, [searchParams, conversations, isLoading, setSearchParams]);
+
+  // Auto-open latest thread when arriving via ?tab=messages (email / compat form)
+  useEffect(() => {
+    if (!autoOpenLatest || isLoading || selectedConv) return;
+    if (conversations[0]) handleSelectConversation(conversations[0]);
+    onAutoOpened?.();
+  }, [autoOpenLatest, isLoading, conversations, selectedConv]);
 
   return (
     <div className="h-full flex flex-col">
