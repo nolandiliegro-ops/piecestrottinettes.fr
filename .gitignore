@@ -47,4 +47,5 @@ dist-ssr
 .vscode/*.bak
 .vscode/*.local
 scripts/session/
+scripts/data/_preview/
 .vscode/tasks.json
