@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.mobilityurban.fr)",
+      "WebFetch(domain:www.kaabo.fr)",
+      "WebFetch(domain:kaabo.fr)",
+      "WebFetch(domain:www.wee-bot.com)",
+      "WebFetch(domain:store.segway.com)",
+      "WebFetch(domain:fr-fr.segway.com)",
+      "WebFetch(domain:www.mi.com)",
+      "WebFetch(domain:dualtron-store.com)",
+      "WebFetch(domain:dualtronusa.com)",
+      "mcp__claude_ai_Airtable__list_tables_for_base",
+      "Bash(DUMP_SKU=CA-05 node *)",
+      "Bash(deno --version)",
+      "Bash(deno test *)",
+      "Bash(deno check *)",
+      "Bash(git rebase *)"
+    ]
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true
+  }
+}
