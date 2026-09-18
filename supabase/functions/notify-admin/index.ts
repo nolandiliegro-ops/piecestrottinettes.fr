@@ -416,6 +416,36 @@ serve(async (req) => {
           },
         };
 
+        // Marqueur « client fidèle » : comptage des commandes payées antérieures
+        // avec le même email. Isolé et borné : en cas d'échec, la ligne est
+        // simplement omise, la notification part quand même.
+        let loyalCount = 0;
+        try {
+          const supabaseUrl = Deno.env.get("SUPABASE_URL");
+          const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+          if (supabaseUrl && serviceKey && data.customerEmail !== "inconnu") {
+            const sb = createClient(supabaseUrl, serviceKey);
+            const countQuery = sb
+              .from("orders")
+              .select("id", { count: "exact", head: true })
+              .eq("customer_email", data.customerEmail)
+              .in("status", ["paid", "processing", "shipped", "delivered"])
+              .neq("order_number", data.orderNumber);
+            const { count, error } = (await Promise.race([
+              countQuery,
+              new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 5000)),
+            ])) as { count: number | null; error: { message: string } | null };
+            if (error) {
+              console.error(`[notify-admin] Loyal count error: ${error.message}`);
+            } else {
+              loyalCount = count ?? 0;
+            }
+          }
+        } catch (e) {
+          console.error(`[notify-admin] Loyal count failed:`, e);
+        }
+        data.loyalCount = loyalCount;
+
         console.log(`[notify-admin] order_paid ${data.orderNumber} — ${data.totalTTC}€`);
 
         // Telegram + email en parallèle, chacun isolé : l'échec de l'un
