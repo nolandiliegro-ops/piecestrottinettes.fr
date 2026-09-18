@@ -255,6 +255,42 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Message notification sent:", emailResponse);
 
+    // Alerte Telegram vendeur — jamais bloquante, jamais propagée
+    if (recipient === 'admin') {
+      try {
+        const supabaseUrl = Deno.env.get("SUPABASE_URL");
+        const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY");
+        const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET") ?? "";
+        if (supabaseUrl && supabaseAnonKey) {
+          const res = await fetch(`${supabaseUrl}/functions/v1/notify-admin`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": `Bearer ${supabaseAnonKey}`,
+              "x-internal-secret": internalSecret,
+            },
+            body: JSON.stringify({
+              type: "new_message",
+              data: {
+                customerName: data.customerName,
+                customerEmail: data.customerEmail,
+                orderNumber: data.orderNumber || null,
+                messageText: data.messageText,
+                sentAt: new Date().toISOString(),
+              },
+            }),
+          });
+          if (!res.ok) {
+            console.error(`[send-message-notification] notify-admin ${res.status}: ${await res.text().catch(() => "")}`);
+          }
+        } else {
+          console.error("[send-message-notification] notify-admin skipped: env manquant");
+        }
+      } catch (notifyErr) {
+        console.error("[send-message-notification] notify-admin failed:", notifyErr);
+      }
+    }
+
     return new Response(
       JSON.stringify({ success: true, data: emailResponse }),
       { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }

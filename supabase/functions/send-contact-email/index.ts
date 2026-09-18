@@ -17,7 +17,7 @@ const ContactSchema = z.object({
   user_id: z.string().uuid().optional(),
 });
 
-const SHOP_EMAIL = "contact@piecestrottinettes.fr";
+const SHOP_EMAIL = Deno.env.get("ADMIN_NOTIFICATION_EMAIL") || "contact@piecestrottinettes.fr";
 
 function escapeHtml(str: string): string {
   return str
