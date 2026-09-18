@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@4.1.2";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // ============================================================================
 // notify-admin — alertes vendeur (Telegram + email)
@@ -67,6 +68,7 @@ interface OrderPaidData {
   paidAt?: string | null;
   notes?: string | null;
   address?: { street?: string; postalCode?: string; city?: string };
+  loyalCount?: number;
 }
 
 // ---------------------------------------------------------------------------
@@ -83,17 +85,48 @@ const sendTelegram = async (d: Required<OrderPaidData>): Promise<{ ok: boolean; 
     .map((it) => `• ${it.quantity}× ${escapeHtml(it.part_name || it.name || "Article")}`)
     .join("\n");
 
+  const customerLine =
+    `${escapeHtml(`${d.customerFirstName} ${d.customerLastName}`.trim() || "Client")} · ${escapeHtml(d.customerEmail)}`;
+
+  const extraLines: string[] = [];
+  if (d.customerPhone) extraLines.push(escapeHtml(d.customerPhone));
+  const addressLines: string[] = [];
+  if (d.address.street) addressLines.push(escapeHtml(d.address.street));
+  const cityLine = `${escapeHtml(d.address.postalCode)} ${escapeHtml(d.address.city)}`.trim();
+  if (cityLine) addressLines.push(cityLine);
+  extraLines.push(...addressLines);
+  if ((d.loyalCount ?? 0) > 0) {
+    extraLines.push(`🔁 Client fidèle (${d.loyalCount} commande${d.loyalCount! > 1 ? "s" : ""} passée${d.loyalCount! > 1 ? "s" : ""})`);
+  }
+
   const text = [
     `💰 <b>NOUVELLE VENTE</b>`,
     ``,
     `<b>${formatPriceFR(d.totalTTC)}</b>`,
     `Commande <code>${escapeHtml(d.orderNumber)}</code>`,
-    `${escapeHtml(`${d.customerFirstName} ${d.customerLastName}`.trim() || "Client")} · ${escapeHtml(d.customerEmail)}`,
+    customerLine,
+    ...extraLines,
     ``,
     itemsLines,
     ``,
     `<i>${formatDateParis(d.paidAt)}</i>`,
   ].join("\n");
+
+  // Boutons d'action (callback_data "s:<action>:<order_number>", ≤ 64 octets)
+  const mkCb = (action: string): string | null => {
+    const cb = `s:${action}:${d.orderNumber}`;
+    return new TextEncoder().encode(cb).length <= 64 ? cb : null;
+  };
+  const actionRow: Array<Record<string, unknown>> = [];
+  const cbProcessing = mkCb("processing");
+  const cbShipped = mkCb("shipped");
+  const cbCancelled = mkCb("cancelled");
+  if (cbProcessing) actionRow.push({ text: "🔧 En préparation", callback_data: cbProcessing });
+  if (cbShipped) actionRow.push({ text: "🚚 Expédié", callback_data: cbShipped });
+  if (cbCancelled) actionRow.push({ text: "❌ Annulé", callback_data: cbCancelled });
+
+  const urlRow = [{ text: "📦 Ouvrir la commande", url: "https://piecestrottinettes.fr/admin" }];
+  const inlineKeyboard = actionRow.length > 0 ? [urlRow, actionRow] : [urlRow];
 
   try {
     const controller = new AbortController();
@@ -106,11 +139,7 @@ const sendTelegram = async (d: Required<OrderPaidData>): Promise<{ ok: boolean; 
         text,
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        reply_markup: {
-          inline_keyboard: [[
-            { text: "📦 Ouvrir la commande", url: "https://piecestrottinettes.fr/admin" },
-          ]],
-        },
+        reply_markup: { inline_keyboard: inlineKeyboard },
       }),
       signal: controller.signal,
     });
@@ -385,7 +414,38 @@ serve(async (req) => {
             postalCode: raw.address?.postalCode ? String(raw.address.postalCode) : "",
             city: raw.address?.city ? String(raw.address.city) : "",
           },
+          loyalCount: 0,
         };
+
+        // Marqueur « client fidèle » : comptage des commandes payées antérieures
+        // avec le même email. Isolé et borné : en cas d'échec, la ligne est
+        // simplement omise, la notification part quand même.
+        let loyalCount = 0;
+        try {
+          const supabaseUrl = Deno.env.get("SUPABASE_URL");
+          const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+          if (supabaseUrl && serviceKey && data.customerEmail !== "inconnu") {
+            const sb = createClient(supabaseUrl, serviceKey);
+            const countQuery = sb
+              .from("orders")
+              .select("id", { count: "exact", head: true })
+              .eq("customer_email", data.customerEmail)
+              .in("status", ["paid", "processing", "shipped", "delivered"])
+              .neq("order_number", data.orderNumber);
+            const { count, error } = (await Promise.race([
+              countQuery,
+              new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 5000)),
+            ])) as { count: number | null; error: { message: string } | null };
+            if (error) {
+              console.error(`[notify-admin] Loyal count error: ${error.message}`);
+            } else {
+              loyalCount = count ?? 0;
+            }
+          }
+        } catch (e) {
+          console.error(`[notify-admin] Loyal count failed:`, e);
+        }
+        data.loyalCount = loyalCount;
 
         console.log(`[notify-admin] order_paid ${data.orderNumber} — ${data.totalTTC}€`);
 
