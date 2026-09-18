@@ -287,27 +287,32 @@ serve(async (req) => {
       );
     }
 
-    if (order.status !== "awaiting_payment") {
-      console.log(`[WEBHOOK] Order ${orderId} already processed (status: ${order.status})`);
-      return new Response(
-        JSON.stringify({ received: true, skipped: true, reason: "Already processed" }),
-        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-      );
-    }
-
-    const { error: updateError } = await supabaseAdmin
+    // Garde atomique anti-doublon : l'UPDATE ne matche que si la commande
+    // est encore "awaiting_payment". Si verify-payment (ou un retry Stripe)
+    // est passé en premier, 0 ligne n'est retournée → aucune notification.
+    const { data: updatedRows, error: updateError } = await supabaseAdmin
       .from("orders")
       .update({
         status: "paid",
         stripe_payment_intent_id: session.payment_intent as string,
         paid_at: new Date().toISOString(),
       })
-      .eq("id", orderId);
+      .eq("id", orderId)
+      .eq("status", "awaiting_payment")
+      .select("id");
 
     if (updateError) {
       console.error(`[WEBHOOK] Failed to update order ${orderId}:`, updateError);
       return new Response(
         JSON.stringify({ received: true, error: "Failed to update order" }),
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    if (!updatedRows || updatedRows.length === 0) {
+      console.log(`[WEBHOOK] Order ${orderId} already processed (status: ${order.status}) — notifications skipped`);
+      return new Response(
+        JSON.stringify({ received: true, skipped: true, reason: "Already processed" }),
         { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
