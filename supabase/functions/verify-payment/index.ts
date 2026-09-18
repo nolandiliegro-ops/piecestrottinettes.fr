@@ -88,19 +88,55 @@ serve(async (req) => {
     if (session.payment_status === "paid") {
       const paymentIntent = session.payment_intent as Stripe.PaymentIntent;
       
-      // Update order to paid status
-      const { error: updateError } = await supabase
+      // Garde atomique anti-doublon : l'UPDATE ne matche que si la commande
+      // est encore "awaiting_payment". Si le webhook Stripe est passé en
+      // premier, 0 ligne n'est retournée → on renvoie les détails de la
+      // commande SANS renvoyer les alertes vendeur/client.
+      const { data: updatedRows, error: updateError } = await supabase
         .from("orders")
         .update({
           status: "paid",
           stripe_payment_intent_id: paymentIntent?.id || null,
           paid_at: new Date().toISOString(),
         })
-        .eq("id", orderId);
+        .eq("id", orderId)
+        .eq("status", "awaiting_payment")
+        .select("id");
 
       if (updateError) {
         console.error(`Failed to update order ${orderId}:`, updateError);
         throw new Error("Failed to update order status");
+      }
+
+      if (!updatedRows || updatedRows.length === 0) {
+        console.log(`Order ${orderNumber} already processed by another path — returning details without notifications`);
+        const { data: freshOrder } = await supabase
+          .from("orders")
+          .select("*, order_items(*)")
+          .eq("id", orderId)
+          .single();
+
+        return new Response(
+          JSON.stringify({
+            success: true,
+            order: {
+              orderNumber: freshOrder?.order_number ?? order.order_number,
+              status: freshOrder?.status ?? order.status,
+              totalTTC: freshOrder?.total_ttc ?? order.total_ttc,
+              customerEmail: order.customer_email,
+              customerFirstName: order.customer_first_name,
+              customerLastName: order.customer_last_name,
+              deliveryMethod: order.delivery_method,
+              deliveryPrice: order.delivery_price,
+              items: freshOrder?.order_items ?? order.order_items,
+              paidAt: freshOrder?.paid_at ?? order.paid_at,
+            },
+          }),
+          {
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+            status: 200,
+          }
+        );
       }
 
       console.log(`Order ${orderNumber} marked as paid`);
