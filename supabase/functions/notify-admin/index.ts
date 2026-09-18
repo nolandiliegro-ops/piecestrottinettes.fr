@@ -68,6 +68,7 @@ interface OrderPaidData {
   paidAt?: string | null;
   notes?: string | null;
   address?: { street?: string; postalCode?: string; city?: string };
+  loyalCount?: number;
 }
 
 // ---------------------------------------------------------------------------
@@ -138,11 +139,7 @@ const sendTelegram = async (d: Required<OrderPaidData>): Promise<{ ok: boolean; 
         text,
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        reply_markup: {
-          inline_keyboard: [[
-            { text: "📦 Ouvrir la commande", url: "https://piecestrottinettes.fr/admin" },
-          ]],
-        },
+        reply_markup: { inline_keyboard: inlineKeyboard },
       }),
       signal: controller.signal,
     });
