@@ -414,6 +414,7 @@ serve(async (req) => {
             postalCode: raw.address?.postalCode ? String(raw.address.postalCode) : "",
             city: raw.address?.city ? String(raw.address.city) : "",
           },
+          loyalCount: 0,
         };
 
         // Marqueur « client fidèle » : comptage des commandes payées antérieures
