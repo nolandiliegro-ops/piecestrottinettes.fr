@@ -1,25 +1,36 @@
-# Carte Rider en modal lightbox
+# Durcissement des alertes vendeur avant test en production
 
-## Objectif
-La Carte Rider n'est plus posée au milieu du décor du garage. Elle s'ouvre en plein écran (lightbox sombre), agrandie et confortablement cliquable, depuis un bouton premium dans le garage.
+Audit terminé. Voici les corrections à appliquer, par ordre de priorité. Aucune n'a été appliquée : lecture seule respectée.
 
-## 1. Nouveau composant `RiderCardLightbox`
-- Fichier `src/components/garage/RiderCardLightbox.tsx`.
-- Dialog shadcn plein écran : overlay `bg-black/80 backdrop-blur-md`, contenu sans cadre blanc ni bordure, carte centrée verticalement et horizontalement.
-- La carte fait 300px de large en CSS natif : on l'agrandit avec un wrapper `transform: scale(...)` (environ 1.35 sur mobile selon la hauteur dispo, 1.6 sur desktop) avec `transform-origin: center`. Les clics restent fonctionnels (carrousel 34px, bouton flip, mods lisibles).
-- Bouton de fermeture discret : croix en haut à droite, style verre dépoli sombre, 44px de zone tactile. Clic sur le fond et touche Échap ferment aussi (comportement Dialog par défaut).
-- Le contenu reste monté en lazy/Suspense pour ne rien charger avant ouverture.
+## 1. Supprimer le risque de double alerte (bloquant)
 
-## 2. Bouton déclencheur dans le garage
-- Dans `src/pages/Garage.tsx`, on retire le bloc `<RiderCard mode="owner" />` centré au-dessus de la grille.
-- À sa place, dans le panneau latéral droit (là où se trouve aujourd'hui « Partager mon build »), un bouton premium : glassmorphism, bordure brillante, icône carte (Lucide), libellé « Ma Carte Collector », sous-texte court (nombre de likes / « Partage ta carte »).
-- Le clic ouvre le lightbox (état local `riderCardOpen`).
+Aujourd'hui les deux chemins (webhook Stripe et vérification au retour de paiement) lisent le statut, puis écrivent. Si les deux tournent en même temps, le vendeur reçoit deux alertes et deux emails client.
 
-## 3. Nettoyage des doublons
-- Suppression de l'affichage de `ShareBuildCard` (« Générer ma fiche » / « Partager mon build ») dans le garage : le partage et l'export PNG existent déjà dans la carte elle-même (`RiderCardSocial` + `html-to-image`).
-- Le fichier `ShareBuildCard.tsx` est supprimé s'il n'est utilisé nulle part ailleurs.
+Correction : passer à une écriture conditionnelle unique — la mise à jour vers « payée » ne cible que les commandes encore « en attente de paiement », et seul l'appel qui obtient réellement la ligne envoie les alertes. Celui qui arrive second ne fait rien.
+
+## 2. Supprimer le doublon d'email vendeur (bloquant)
+
+Le webhook envoie déjà son propre email vendeur (ancien système) EN PLUS de la nouvelle alerte. Deux emails par vente. Correction : retirer l'ancien bloc d'email vendeur du webhook et garder uniquement la nouvelle alerte centralisée.
+
+## 3. Bouton Telegram « Ouvrir la commande » (manquant)
+
+Il n'existe aucun bouton dans le message Telegram, et aucune page d'administration ne permet d'ouvrir une commande précise. Deux options :
+- créer une adresse d'administration par commande, puis ajouter le bouton ;
+- ou se contenter d'un bouton vers la liste des commandes.
+
+À trancher avec toi.
+
+## 4. Couleurs de l'email vendeur
+
+L'email actuel utilise la palette sombre/vert d'eau, pas la charte demandée (beige #F5F0E8, vert sauge #4A7C59, orange #FF6600). Correction : réaligner le gabarit sur ces trois couleurs, en gardant le tableau des articles.
+
+## 5. Adresse de réception
+
+L'email part vers `contact@piecestrottinettes.fr` par défaut. Si tu veux une autre adresse, elle sera configurable sans toucher au code.
 
 ## Détails techniques
-- `RiderCard.tsx` n'est pas modifié : l'export PNG capture toujours `captureRef`, et le `transform: scale` du wrapper parent n'affecte pas le rendu `html-to-image` (il lit le noeud et ses styles propres). Vérification visuelle après implémentation.
-- Aucune modification de base de données, de hook ou d'edge function.
-- Route publique `/rider/:username` inchangée (la carte y reste rendue en pleine page).
+
+- Garde atomique : `update(...).eq("id", orderId).eq("status", "awaiting_payment").select("id")` dans `stripe-webhook` et `verify-payment` ; envoi des notifications uniquement si une ligne est retournée.
+- Retrait de `generateSellerNotificationHTML` et de son envoi Resend dans `stripe-webhook` (lignes 490-521).
+- `notify-admin` : ajout de `reply_markup.inline_keyboard` si une URL cible est retenue ; refonte de `buildSellerEmailHtml` sur #F5F0E8 / #4A7C59 / #FF6600.
+- Aucun changement de schéma, aucune migration, aucun fichier front.
