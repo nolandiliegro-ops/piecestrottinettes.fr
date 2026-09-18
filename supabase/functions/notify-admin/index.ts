@@ -405,8 +405,31 @@ serve(async (req) => {
         });
       }
 
+      case "new_message": {
+        const raw = (payload.data ?? {}) as NewMessageData;
+        const data: NewMessageData = {
+          customerName: raw.customerName ? String(raw.customerName) : "",
+          customerEmail: raw.customerEmail ? String(raw.customerEmail) : "",
+          orderNumber: raw.orderNumber ? String(raw.orderNumber) : "",
+          messageText: raw.messageText ? String(raw.messageText) : "",
+          sentAt: raw.sentAt ?? new Date().toISOString(),
+        };
+
+        console.log(
+          `[notify-admin] new_message de ${data.customerEmail || "inconnu"}${data.orderNumber ? ` (commande ${data.orderNumber})` : ""}`,
+        );
+
+        const telegram = await sendTelegramNewMessage(data).catch((e) => ({
+          ok: false,
+          error: String(e),
+        }));
+        if (!telegram.ok) console.error(`[notify-admin] Telegram KO: ${telegram.error}`);
+
+        return json({ success: telegram.ok, channels: { telegram } });
+      }
+
       default:
-        // Type inconnu : extensible plus tard (messages clients, stock bas…)
+        // Type inconnu : extensible plus tard (stock bas…)
         console.log(`[notify-admin] Unknown type "${type}" — skipped`);
         return json({ skipped: true });
     }

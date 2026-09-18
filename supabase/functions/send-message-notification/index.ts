@@ -221,7 +221,7 @@ const handler = async (req: Request): Promise<Response> => {
     let html: string;
 
     if (recipient === 'admin') {
-      to = 'contact@piecestrottinettes.fr';
+      to = Deno.env.get("ADMIN_NOTIFICATION_EMAIL") || 'contact@piecestrottinettes.fr';
       html = generateAdminEmailHTML(data);
     } else if (recipient === 'client-ack') {
       if (!data.customerEmail) {
