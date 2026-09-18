@@ -209,6 +209,27 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_scooterphotos_20260917: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_scootkeys_20260908: {
         Row: {
           disc_diameter_code: string | null
@@ -233,6 +254,30 @@ export type Database = {
           id?: string | null
           image_url?: string | null
           slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_tirefamily_20260917: {
+        Row: {
+          created_at: string | null
+          id: string | null
+          image_url: string | null
+          slug: string | null
+          tire_family: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          slug?: string | null
+          tire_family?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          slug?: string | null
+          tire_family?: string | null
         }
         Relationships: []
       }
