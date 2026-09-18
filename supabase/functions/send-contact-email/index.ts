@@ -17,7 +17,7 @@ const ContactSchema = z.object({
   user_id: z.string().uuid().optional(),
 });
 
-const SHOP_EMAIL = "contact@piecestrottinettes.fr";
+const SHOP_EMAIL = Deno.env.get("ADMIN_NOTIFICATION_EMAIL") || "contact@piecestrottinettes.fr";
 
 function escapeHtml(str: string): string {
   return str
@@ -196,6 +196,40 @@ const handler = async (req: Request): Promise<Response> => {
       } catch (ackErr) {
         console.warn("Acknowledgment email failed:", ackErr);
       }
+    }
+
+    // 3. Alerte Telegram vendeur — jamais bloquante, jamais propagée
+    try {
+      const supabaseUrl = Deno.env.get("SUPABASE_URL");
+      const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY");
+      const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET") ?? "";
+      if (supabaseUrl && supabaseAnonKey) {
+        const res = await fetch(`${supabaseUrl}/functions/v1/notify-admin`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${supabaseAnonKey}`,
+            "x-internal-secret": internalSecret,
+          },
+          body: JSON.stringify({
+            type: "new_message",
+            data: {
+              customerName: name,
+              customerEmail: email,
+              orderNumber: null,
+              messageText: `[${subject}]\n${message}`,
+              sentAt: new Date().toISOString(),
+            },
+          }),
+        });
+        if (!res.ok) {
+          console.error(`[send-contact-email] notify-admin ${res.status}: ${await res.text().catch(() => "")}`);
+        }
+      } else {
+        console.error("[send-contact-email] notify-admin skipped: env manquant");
+      }
+    } catch (notifyErr) {
+      console.error("[send-contact-email] notify-admin failed:", notifyErr);
     }
 
     return new Response(JSON.stringify({ success: true }), {

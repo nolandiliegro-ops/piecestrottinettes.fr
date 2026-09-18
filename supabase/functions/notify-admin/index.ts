@@ -244,6 +244,81 @@ const sendSellerEmail = async (d: Required<OrderPaidData>): Promise<{ ok: boolea
 };
 
 // ---------------------------------------------------------------------------
+// new_message — Telegram uniquement (l'email existe déjà côté fonctions appelantes)
+// ---------------------------------------------------------------------------
+interface NewMessageData {
+  customerName?: string | null;
+  customerEmail?: string | null;
+  orderNumber?: string | null;
+  messageText?: string | null;
+  sentAt?: string | null;
+}
+
+const MESSAGE_MAX_LEN = 300;
+
+// Troncature AVANT échappement pour ne jamais couper une entité HTML
+const truncateMessage = (raw: string): string => {
+  const s = raw.trim();
+  if (s.length <= MESSAGE_MAX_LEN) return s;
+  return `${s.slice(0, MESSAGE_MAX_LEN)}…`;
+};
+
+const sendTelegramNewMessage = async (
+  d: NewMessageData,
+): Promise<{ ok: boolean; error?: string }> => {
+  const token = Deno.env.get("TELEGRAM_BOT_TOKEN");
+  const chatId = Deno.env.get("TELEGRAM_CHAT_ID");
+  if (!token || !chatId) {
+    return { ok: false, error: "TELEGRAM_BOT_TOKEN ou TELEGRAM_CHAT_ID manquant" };
+  }
+
+  const name = String(d.customerName ?? "").trim() || "Client";
+  const email = String(d.customerEmail ?? "").trim();
+  const orderNumber = String(d.orderNumber ?? "").trim();
+  const message = truncateMessage(String(d.messageText ?? ""));
+
+  const identity = email
+    ? `${escapeHtml(name)} · <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>`
+    : escapeHtml(name);
+
+  const lines: string[] = [`💬 <b>NOUVEAU MESSAGE</b>`, ``, identity];
+  // La ligne "Commande" n'apparaît que si le message est rattaché à une commande
+  if (orderNumber) {
+    lines.push(`Commande <code>${escapeHtml(orderNumber)}</code>`);
+  }
+  lines.push(``, `« ${escapeHtml(message)} »`, ``, `<i>${formatDateParis(d.sentAt)}</i>`);
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: lines.join("\n"),
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        reply_markup: {
+          inline_keyboard: [[
+            { text: "💬 Répondre dans l'admin", url: "https://piecestrottinettes.fr/admin" },
+          ]],
+        },
+      }),
+      signal: controller.signal,
+    });
+    clearTimeout(timeout);
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok || body?.ok === false) {
+      return { ok: false, error: `Telegram ${res.status}: ${JSON.stringify(body)}` };
+    }
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, error: err instanceof Error ? err.message : "Telegram fetch failed" };
+  }
+};
+
+// ---------------------------------------------------------------------------
 // Handler
 // ---------------------------------------------------------------------------
 serve(async (req) => {
@@ -330,8 +405,31 @@ serve(async (req) => {
         });
       }
 
+      case "new_message": {
+        const raw = (payload.data ?? {}) as NewMessageData;
+        const data: NewMessageData = {
+          customerName: raw.customerName ? String(raw.customerName) : "",
+          customerEmail: raw.customerEmail ? String(raw.customerEmail) : "",
+          orderNumber: raw.orderNumber ? String(raw.orderNumber) : "",
+          messageText: raw.messageText ? String(raw.messageText) : "",
+          sentAt: raw.sentAt ?? new Date().toISOString(),
+        };
+
+        console.log(
+          `[notify-admin] new_message de ${data.customerEmail || "inconnu"}${data.orderNumber ? ` (commande ${data.orderNumber})` : ""}`,
+        );
+
+        const telegram = await sendTelegramNewMessage(data).catch((e) => ({
+          ok: false,
+          error: String(e),
+        }));
+        if (!telegram.ok) console.error(`[notify-admin] Telegram KO: ${telegram.error}`);
+
+        return json({ success: telegram.ok, channels: { telegram } });
+      }
+
       default:
-        // Type inconnu : extensible plus tard (messages clients, stock bas…)
+        // Type inconnu : extensible plus tard (stock bas…)
         console.log(`[notify-admin] Unknown type "${type}" — skipped`);
         return json({ skipped: true });
     }
