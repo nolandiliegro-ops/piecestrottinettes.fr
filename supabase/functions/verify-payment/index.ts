@@ -130,6 +130,45 @@ serve(async (req) => {
         deliveryMethod: order.delivery_method,
       };
 
+      // Alerte vendeur centralisée : Telegram + email via notify-admin
+      // (filet de sécurité si le webhook Stripe n'a pas tourné).
+      // Fire-and-forget : ne bloque jamais la réponse au client.
+      try {
+        const notifySecret = Deno.env.get("INTERNAL_FUNCTION_SECRET");
+        if (notifySecret) {
+          fetch(`${supabaseUrl}/functions/v1/notify-admin`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-internal-secret": notifySecret,
+            },
+            body: JSON.stringify({
+              type: "order_paid",
+              data: {
+                orderNumber: order.order_number,
+                totalTTC: order.total_ttc,
+                customerFirstName: order.customer_first_name,
+                customerLastName: order.customer_last_name,
+                customerEmail: order.customer_email,
+                customerPhone: order.customer_phone ?? null,
+                deliveryMethod: order.delivery_method || "Standard",
+                deliveryPrice: order.delivery_price || 0,
+                items: order.order_items,
+                paidAt: new Date().toISOString(),
+                notes: order.notes ?? null,
+                address: {
+                  street: order.address,
+                  postalCode: order.postal_code,
+                  city: order.city,
+                },
+              },
+            }),
+          }).catch((err) => console.error("notify-admin call failed:", err));
+        }
+      } catch (notifyErr) {
+        console.error("notify-admin setup failed (non-blocking):", notifyErr);
+      }
+
       // Fire and forget email (server-to-server, authenticated via shared internal secret)
       const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET");
       if (!internalSecret) {
