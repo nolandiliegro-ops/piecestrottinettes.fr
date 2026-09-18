@@ -44,10 +44,11 @@ reply_markup: {
 - Sécurité, les deux contrôles :
   1. `X-Telegram-Bot-Api-Secret-Token` comparé en temps constant au nouveau secret `TELEGRAM_WEBHOOK_SECRET`. Absent ou faux → `401`, aucun traitement, aucun accès base.
   2. `callback_query.from.id` comparé à `TELEGRAM_CHAT_ID`. Différent → log + `200 { ignored: true }`, aucun traitement.
-- `answerCallbackQuery` envoyé immédiatement après validation (avant tout travail base) pour éteindre le spinner ; le texte du toast est ensuite mis à jour par un second `answerCallbackQuery` seulement si Telegram l'autorise, sinon l'information part dans `editMessageText`.
 - Réponse `200` systématique et rapide ; tout `update` sans `callback_query` (message texte, autre type) → `200 { skipped: true }`.
+- **`answerCallbackQuery` : UN SEUL appel.** L'update en base est exécuté d'abord (ordre de grandeur : centaine de millisecondes, très en deçà de la fenêtre Telegram), puis un unique `answerCallbackQuery` porte le résultat réel : « ✅ Commande passée en préparation » / « ⚠️ Déjà traité » / « ❌ Erreur » (et pour l'annulation, le libellé exact ci-dessous).
 - Toute exception catchée, `console.error`, réponse `200`. Jamais de `throw`.
 - Client base via `SUPABASE_SERVICE_ROLE_KEY` (contourne RLS, pas de changement de politique).
+- **AUCUN appel à l'API Stripe.** L'annulation reste un geste manuel.
 
 ### B. Boutons sur le message de vente (`notify-admin`, `order_paid`)
 Clavier à deux rangées :
@@ -68,13 +69,18 @@ Les trois valeurs existent déjà dans le mapping admin (Q1) — aucune valeur n
 - Après succès : `editMessageText` réécrit le message d'origine avec une ligne d'état ajoutée (`✅ Statut : Expédié · 18/09 09:42`) et un clavier réduit aux seules actions encore pertinentes (plus rien après `shipped` ou `cancelled`, hors le bouton URL). Si `editMessageText` échoue, on tente `editMessageReplyMarkup`, et l'échec des deux ne fait jamais échouer la réponse `200`.
 - Idempotence côté Telegram : un même `callback_query.id` rejoué ne peut pas changer deux fois le statut, puisque la garde atomique ne matche plus.
 
+### C-bis. Garde-fous annulation (statut `cancelled`)
+- Toast unique exact : `❌ Annulé en base — REMBOURSE sur Stripe`.
+- Message édité : ligne bien visible `⚠️ Remboursement Stripe à faire à la main`, et clavier remplacé par une rangée unique contenant le bouton URL `💳 Ouvrir Stripe` → `https://dashboard.stripe.com/payments` (en plus du bouton `📦 Ouvrir la commande` existant).
+- Aucun appel Stripe, nulle part. Le remboursement reste manuel.
+
 ### D. Enrichissement du message de vente (`notify-admin`, `order_paid`)
 - **Adresse de livraison** : ajoutée sur ses propres lignes (rue / code postal + ville), ainsi que le téléphone s'il existe. Les champs sont déjà transmis par les appelants (`address.street/postalCode/city`, lignes 383-387) — aucun appelant à modifier.
 - **Stock restant** : NON affiché. Q4 démontre qu'aucun décrément n'existe ; afficher une valeur serait mensonger.
 - **Marqueur « client déjà venu »** : `notify-admin` fait une requête de comptage `orders` sur `customer_email` avec `status` payé/traité, en excluant la commande en cours. Si ≥ 1 → ligne `🔁 Client fidèle (N commandes)`. Requête isolée, timeout court, échec → ligne simplement omise, la notification part quand même.
 
 ### Périmètre
-Fichiers touchés : `supabase/functions/telegram-webhook/index.ts` (nouveau), `supabase/functions/notify-admin/index.ts`, `supabase/config.toml` (une entrée). Nouveau secret : `TELEGRAM_WEBHOOK_SECRET` (généré côté serveur), puis enregistrement du webhook auprès de Telegram via `setWebhook` avec ce `secret_token`.
+Fichiers touchés : `supabase/functions/telegram-webhook/index.ts` (nouveau), `supabase/functions/notify-admin/index.ts`, `supabase/config.toml` (une entrée). Nouveau secret `TELEGRAM_WEBHOOK_SECRET` généré côté serveur (valeur jamais affichée), puis enregistrement du webhook auprès de Telegram via `setWebhook` avec ce `secret_token`.
 
 Aucune migration, aucune colonne, aucune valeur de statut nouvelle en base, aucun fichier front. `stripe-webhook`, `create-checkout-session`, `verify-payment`, `send-order-email`, `send-contact-email`, `send-message-notification` ne sont pas touchés.
 
