@@ -447,6 +447,46 @@ serve(async (req) => {
       console.error(`[WEBHOOK] Failed to send confirmation email:`, emailErr);
     }
 
+    // --- Alerte vendeur centralisée : Telegram + email via notify-admin ---
+    // Fire-and-forget : ne bloque jamais la réponse au webhook Stripe.
+    try {
+      const internalSecret = Deno.env.get("INTERNAL_FUNCTION_SECRET");
+      if (!internalSecret) {
+        console.error("[WEBHOOK] INTERNAL_FUNCTION_SECRET manquant — alerte notify-admin ignorée");
+      } else {
+        fetch(`${Deno.env.get("SUPABASE_URL")}/functions/v1/notify-admin`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-internal-secret": internalSecret,
+          },
+          body: JSON.stringify({
+            type: "order_paid",
+            data: {
+              orderNumber: order.order_number,
+              totalTTC: order.total_ttc,
+              customerFirstName: order.customer_first_name,
+              customerLastName: order.customer_last_name,
+              customerEmail: order.customer_email,
+              customerPhone: order.customer_phone ?? null,
+              deliveryMethod: order.delivery_method || "Standard",
+              deliveryPrice: order.delivery_price || 0,
+              items: mappedItems,
+              paidAt: new Date().toISOString(),
+              notes: order.notes ?? null,
+              address: {
+                street: order.address,
+                postalCode: order.postal_code,
+                city: order.city,
+              },
+            },
+          }),
+        }).catch((err) => console.error("[WEBHOOK] notify-admin call failed:", err));
+      }
+    } catch (notifyErr) {
+      console.error("[WEBHOOK] notify-admin setup failed (non-blocking):", notifyErr);
+    }
+
     // --- Send seller notification email (non-blocking) ---
     try {
       const customerName = `${order.customer_first_name} ${order.customer_last_name}`;
