@@ -106,6 +106,11 @@ const sendTelegram = async (d: Required<OrderPaidData>): Promise<{ ok: boolean; 
         text,
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        reply_markup: {
+          inline_keyboard: [[
+            { text: "📦 Ouvrir la commande", url: "https://piecestrottinettes.fr/admin" },
+          ]],
+        },
       }),
       signal: controller.signal,
     });
@@ -154,19 +159,19 @@ const buildSellerEmailHtml = (d: Required<OrderPaidData>): string => {
 
   return `<!DOCTYPE html>
 <html lang="fr"><head><meta charset="UTF-8"></head>
-<body style="margin:0;padding:0;background:#f4f4f4;font-family:Arial,sans-serif;">
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+<body style="margin:0;padding:0;background:#F5F0E8;font-family:Arial,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#F5F0E8;">
     <tr><td align="center" style="padding:30px 20px;">
       <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width:600px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e0e0e0;">
-        <tr><td style="background:#2C2C2C;padding:24px 32px;">
-          <h1 style="margin:0;color:#93B5A1;font-size:18px;letter-spacing:2px;">💰 NOUVELLE VENTE</h1>
-          <p style="margin:8px 0 0;color:#ccc;font-size:13px;">${formatDateParis(d.paidAt)}</p>
+        <tr><td style="background:#4A7C59;padding:24px 32px;">
+          <h1 style="margin:0;color:#FFFFFF;font-size:18px;letter-spacing:2px;">💰 NOUVELLE VENTE</h1>
+          <p style="margin:8px 0 0;color:rgba(255,255,255,0.85);font-size:13px;">${formatDateParis(d.paidAt)}</p>
         </td></tr>
         <tr><td style="padding:24px 32px;">
           <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td style="font-size:13px;color:#666;">Commande</td>
-              <td style="text-align:right;font-family:'Courier New',monospace;font-size:18px;color:#93B5A1;font-weight:bold;">#${escapeHtml(d.orderNumber)}</td>
+              <td style="text-align:right;font-family:'Courier New',monospace;font-size:18px;color:#FF6600;font-weight:bold;">#${escapeHtml(d.orderNumber)}</td>
             </tr>
             <tr>
               <td style="padding-top:8px;font-size:13px;color:#666;">Total</td>
@@ -180,7 +185,7 @@ const buildSellerEmailHtml = (d: Required<OrderPaidData>): string => {
         </td></tr>
         <tr><td style="padding:0 32px;"><div style="height:1px;background:#e8e4e0;"></div></td></tr>
         <tr><td style="padding:24px 32px;">
-          <h3 style="margin:0 0 12px;font-size:13px;color:#666;text-transform:uppercase;letter-spacing:1px;">Client</h3>
+          <h3 style="margin:0 0 12px;font-size:13px;color:#4A7C59;text-transform:uppercase;letter-spacing:1px;">Client</h3>
           <p style="margin:0;font-size:15px;color:#2C2C2C;line-height:1.6;">
             <strong>${escapeHtml(`${d.customerFirstName} ${d.customerLastName}`.trim())}</strong><br>
             ${escapeHtml(d.customerEmail)}${phoneLine}${addressBlock}
@@ -189,9 +194,9 @@ const buildSellerEmailHtml = (d: Required<OrderPaidData>): string => {
         ${notesBlock}
         <tr><td style="padding:0 32px;"><div style="height:1px;background:#e8e4e0;"></div></td></tr>
         <tr><td style="padding:24px 32px;">
-          <h3 style="margin:0 0 12px;font-size:13px;color:#666;text-transform:uppercase;letter-spacing:1px;">Articles commandés</h3>
+          <h3 style="margin:0 0 12px;font-size:13px;color:#4A7C59;text-transform:uppercase;letter-spacing:1px;">Articles commandés</h3>
           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #e8e4e0;border-radius:8px;overflow:hidden;">
-            <thead><tr style="background:#FAFAF8;">
+            <thead><tr style="background:#F5F0E8;">
               <th style="padding:8px 12px;text-align:left;font-size:11px;color:#999;text-transform:uppercase;">Article</th>
               <th style="padding:8px 12px;text-align:center;font-size:11px;color:#999;text-transform:uppercase;">Qté</th>
               <th style="padding:8px 12px;text-align:right;font-size:11px;color:#999;text-transform:uppercase;">P.U.</th>
@@ -201,10 +206,10 @@ const buildSellerEmailHtml = (d: Required<OrderPaidData>): string => {
           </table>
         </td></tr>
         <tr><td style="padding:0 32px 24px;">
-          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#2C2C2C;border-radius:8px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#4A7C59;border-radius:8px;">
             <tr>
               <td style="padding:16px;font-size:18px;color:#fff;font-weight:bold;">Total encaissé</td>
-              <td style="padding:16px;text-align:right;font-size:22px;color:#93B5A1;font-weight:bold;">${formatPriceFR(d.totalTTC)}</td>
+              <td style="padding:16px;text-align:right;font-size:22px;color:#FF6600;font-weight:bold;">${formatPriceFR(d.totalTTC)}</td>
             </tr>
           </table>
         </td></tr>
