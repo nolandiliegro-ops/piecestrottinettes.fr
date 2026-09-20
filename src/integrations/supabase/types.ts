@@ -92,6 +92,36 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_keys_20260918: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          rim_diameter_code: string | null
+          slug: string | null
+          tire_section_code: string | null
+          tire_size: string | null
+          wheel_inches: number | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          wheel_inches?: number | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          wheel_inches?: number | null
+        }
+        Relationships: []
+      }
       _backup_kukirin_20260908: {
         Row: {
           disc_diameter_code: string | null
@@ -206,6 +236,27 @@ export type Database = {
           part_id?: string | null
           scooter_model_id?: string | null
           suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_partkeys_20260918: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          sku: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          sku?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          sku?: string | null
         }
         Relationships: []
       }
