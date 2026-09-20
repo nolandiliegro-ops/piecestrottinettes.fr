@@ -150,19 +150,7 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
 
     // Référentiel catalogue en lecture seule : le job appelant n'a besoin
     // d'aucune credential Supabase. Jamais d'écriture sur ces deux tables.
-    const scooterModels = await fetchAllPages<{
-      slug: string;
-      name: string;
-      brand: { name: string } | null;
-      published: boolean;
-      tire_family: string | null;
-      rim_diameter_code: string | null;
-      tire_section_code: string | null;
-      caliper_family: string | null;
-      disc_diameter_code: string | null;
-      disc_pcd_code: string | null;
-      disc_holes_code: string | null;
-    }>(
+    const scooterModels = await fetchAllPages<Record<string, unknown>>(
       (from, to) =>
         supabase
           .from("scooter_models")
