@@ -202,7 +202,7 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       human_aliases: humanAliases,
       dedup_keys: dedupKeys,
       alias_pairs: aliasPairs,
-      scooter_models: scooterModels,
+      scooter_models: scooterModelsFlat,
       parts: parts,
       counts: {
         human_aliases: humanAliases.length,
