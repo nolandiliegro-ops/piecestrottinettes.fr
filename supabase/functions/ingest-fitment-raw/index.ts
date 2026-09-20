@@ -77,7 +77,10 @@ function sanitizePayload(
 // ─── Pagination générique par 1000, tout ou rien : lève en cas d'échec.
 // order() sur une clé stable pour une pagination fiable.
 async function fetchAllPages<T>(
-  queryFactory: (from: number, to: number) => Promise<{
+  queryFactory: (
+    from: number,
+    to: number,
+  ) => PromiseLike<{
     data: T[] | null;
     error: { message: string } | null;
   }>,
