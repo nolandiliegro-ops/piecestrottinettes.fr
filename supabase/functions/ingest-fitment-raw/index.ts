@@ -164,6 +164,22 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       "scooter_models",
     );
 
+    // Aplatissement de brand : le job appelant attend `brand: string | null`,
+    // pas un objet. brand_id ne doit jamais sortir dans la réponse.
+    const scooterModelsFlat = scooterModels.map((row) => {
+      const brandObj = row["brand"];
+      const brandName =
+        brandObj &&
+        typeof brandObj === "object" &&
+        !Array.isArray(brandObj) &&
+        typeof (brandObj as Record<string, unknown>)["name"] === "string" &&
+        ((brandObj as Record<string, unknown>)["name"] as string).trim() !== ""
+          ? ((brandObj as Record<string, unknown>)["name"] as string)
+          : null;
+      const { brand: _brand, brand_id: _brandId, ...rest } = row;
+      return { ...rest, brand: brandName };
+    });
+
     const parts = await fetchAllPages<{ id: string; fitment_specs: unknown }>(
       (from, to) =>
         supabase
@@ -186,13 +202,13 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       human_aliases: humanAliases,
       dedup_keys: dedupKeys,
       alias_pairs: aliasPairs,
-      scooter_models: scooterModels,
+      scooter_models: scooterModelsFlat,
       parts: parts,
       counts: {
         human_aliases: humanAliases.length,
         dedup_keys: dedupKeys.length,
         alias_pairs: aliasPairs.length,
-        scooter_models: scooterModels.length,
+        scooter_models: scooterModelsFlat.length,
         parts: parts.length,
       },
     });
