@@ -155,7 +155,7 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
         supabase
           .from("scooter_models")
           .select(
-            "slug, name, brand:brands(name), published, tire_family, rim_diameter_code, tire_section_code, caliper_family, disc_diameter_code, disc_pcd_code, disc_holes_code",
+            "slug, name, brand:brands!scooter_models_brand_id_fkey(name), published, tire_family, rim_diameter_code, tire_section_code, caliper_family, disc_diameter_code, disc_pcd_code, disc_holes_code",
           )
           .eq("published", true)
           .order("slug")
@@ -213,7 +213,7 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       },
     });
   } catch (err) {
-    const message = String(err);
+    const message = err instanceof Error ? err.message : String(err);
     const stageMatch = message.match(/^\[([^\]]+)\]/);
     return jsonResponse(500, {
       error: "Snapshot failed",
