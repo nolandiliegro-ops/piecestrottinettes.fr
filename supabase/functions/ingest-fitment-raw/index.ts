@@ -11,7 +11,7 @@ const corsHeaders = {
 // Un smoke-test externe (action "snapshot", lecture pure) doit pouvoir
 // distinguer cette version d'une version antérieure sans rien écrire en base.
 const ENGINE = "key-hunter-ingest";
-const CONTRACT = 1;
+const CONTRACT = 2;
 
 // Périmètre strict : UNIQUEMENT ces deux tables. Rien d'autre, jamais.
 const TABLE_FITMENT_RAW = "fitment_raw";
@@ -77,7 +77,10 @@ function sanitizePayload(
 // ─── Pagination générique par 1000, tout ou rien : lève en cas d'échec.
 // order() sur une clé stable pour une pagination fiable.
 async function fetchAllPages<T>(
-  queryFactory: (from: number, to: number) => Promise<{
+  queryFactory: (
+    from: number,
+    to: number,
+  ) => PromiseLike<{
     data: T[] | null;
     error: { message: string } | null;
   }>,
@@ -145,6 +148,35 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       "alias_pairs",
     );
 
+    // Référentiel catalogue en lecture seule : le job appelant n'a besoin
+    // d'aucune credential Supabase. Jamais d'écriture sur ces deux tables.
+    const scooterModels = await fetchAllPages<Record<string, unknown>>(
+      (from, to) =>
+        supabase
+          .from("scooter_models")
+          .select(
+            "slug, name, brand:brands(name), published, tire_family, rim_diameter_code, tire_section_code, caliper_family, disc_diameter_code, disc_pcd_code, disc_holes_code",
+          )
+          .eq("published", true)
+          .order("slug")
+          .range(from, to)
+          .then((r) => ({ data: r.data, error: r.error })),
+      "scooter_models",
+    );
+
+    const parts = await fetchAllPages<{ id: string; fitment_specs: unknown }>(
+      (from, to) =>
+        supabase
+          .from("parts")
+          .select("id, fitment_specs")
+          .eq("published", true)
+          .not("fitment_specs", "is", null)
+          .order("id")
+          .range(from, to)
+          .then((r) => ({ data: r.data, error: r.error })),
+      "parts",
+    );
+
     const dedupKeys = dedupRows.map((r) => r.dedup_key);
 
     return jsonResponse(200, {
@@ -154,10 +186,14 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
       human_aliases: humanAliases,
       dedup_keys: dedupKeys,
       alias_pairs: aliasPairs,
+      scooter_models: scooterModels,
+      parts: parts,
       counts: {
         human_aliases: humanAliases.length,
         dedup_keys: dedupKeys.length,
         alias_pairs: aliasPairs.length,
+        scooter_models: scooterModels.length,
+        parts: parts.length,
       },
     });
   } catch (err) {
