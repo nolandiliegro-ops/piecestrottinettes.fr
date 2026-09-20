@@ -59,3 +59,6 @@ verify_jwt = false
 
 [functions.telegram-webhook]
 verify_jwt = false
+
+[functions.ingest-fitment-raw]
+verify_jwt = false
