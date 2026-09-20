@@ -208,7 +208,7 @@ async function handleSnapshot(supabase: SupabaseClient): Promise<Response> {
         human_aliases: humanAliases.length,
         dedup_keys: dedupKeys.length,
         alias_pairs: aliasPairs.length,
-        scooter_models: scooterModels.length,
+        scooter_models: scooterModelsFlat.length,
         parts: parts.length,
       },
     });
