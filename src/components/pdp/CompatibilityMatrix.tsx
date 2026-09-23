@@ -9,6 +9,7 @@ import {
   verifiedGroupLabel,
   unverifiedGroupLabel,
   solidConversionState,
+  SOLID_CATEGORY,
 } from "@/lib/compatibilityStatus";
 import { scooterLabel, scooterLabelShort } from "@/lib/scooterLabel";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
@@ -27,7 +28,6 @@ interface CompatibilityMatrixProps {
   categorySlug?: string | null;
 }
 
-const SOLID_CATEGORY = "pneus-pleins";
 const TUBES_CATEGORY = "chambres-a-air";
 
 /**

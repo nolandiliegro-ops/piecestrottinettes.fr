@@ -1,7 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import type { ImageEntry } from "@/lib/entityImage";
-import { classifyCompat, type CompatStatus } from "@/lib/compatibilityStatus";
+import {
+  classifyCompat,
+  filterSolidTires,
+  solidConversionState,
+  type CompatStatus,
+  type FitmentPosition,
+} from "@/lib/compatibilityStatus";
 
 export interface ScooterDetail {
   id: string;
@@ -76,6 +82,10 @@ export interface ScooterCompatiblePart {
   /** Classification LOT 3 (règle unique src/lib/compatibilityStatus.ts). */
   status: CompatStatus;
   reason: string | null;
+  /** Position de montage portée par la ligne compat ; null = non renseignée. */
+  position: FitmentPosition | null;
+  /** Clés fitment de la pièce (jsonb) — lues pour la détection pneu plein. */
+  fitment_specs?: unknown;
 }
 
 // Hook to fetch a scooter by its slug
@@ -122,9 +132,15 @@ export const useScooterBySlug = (slug: string | undefined) => {
 };
 
 // Hook to fetch ALL compatible parts for a scooter (no limit)
-export const useScooterCompatibleParts = (scooterId: string | null) => {
+// `model` porte les clés pneus pleins de la TROTTE : sans lui, l'état vaut
+// "unknown" et les pneus pleins sont masqués (règle absolue, cf. filterSolidTires).
+export const useScooterCompatibleParts = (
+  scooterId: string | null,
+  model?: ScooterFitmentFlags | null,
+) => {
+  const solidState = solidConversionState(model ?? { tire_family: null, solid_conversion: null });
   return useQuery({
-    queryKey: ["scooter-compatible-parts-v4", scooterId],
+    queryKey: ["scooter-compatible-parts-v5", scooterId, solidState],
     queryFn: async () => {
       if (!scooterId) return [];
 
@@ -135,6 +151,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
         .select(`
           confidence_level,
           suggestion_reason,
+          position,
           parts!inner (
             id,
             name,
@@ -145,6 +162,7 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
             stock_quantity,
             difficulty_level,
             technical_metadata,
+            fitment_specs,
             published,
             category:categories(id, name, icon, slug)
           )
@@ -155,18 +173,25 @@ export const useScooterCompatibleParts = (scooterId: string | null) => {
 
       if (error) throw error;
 
-      return (data || [])
+      const parts = (data || [])
         .map((item) => {
           if (!item.parts) return null;
           const status = classifyCompat(item);
           if (!status) return null; // masqué (medium non-partial, low)
           return {
-            ...(item.parts as unknown as Omit<ScooterCompatiblePart, "status" | "reason">),
+            ...(item.parts as unknown as Omit<
+              ScooterCompatiblePart,
+              "status" | "reason" | "position"
+            >),
             status,
             reason: item.suggestion_reason,
+            position: (item.position ?? null) as FitmentPosition | null,
           };
         })
         .filter(Boolean) as ScooterCompatiblePart[];
+
+      // Pneus pleins : l'état se lit sur scooter_models, jamais sur les lignes.
+      return filterSolidTires(parts, model);
     },
     enabled: !!scooterId,
   });

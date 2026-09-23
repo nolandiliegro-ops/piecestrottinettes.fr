@@ -47,6 +47,52 @@ export function solidConversionState(s: {
   return "unknown";
 }
 
+/** Slug de la catégorie pneus pleins — source unique (hooks + CompatibilityMatrix). */
+export const SOLID_CATEGORY = "pneus-pleins";
+
+function fitmentTireFamily(specs: unknown): string | null {
+  if (specs && typeof specs === "object" && "tire_family" in specs) {
+    const v = (specs as { tire_family?: unknown }).tire_family;
+    return typeof v === "string" ? v : null;
+  }
+  return null;
+}
+
+/** Colonnes pièce nécessaires à la détection d'un pneu plein. */
+export interface SolidCandidate {
+  category: { slug: string | null } | null;
+  fitment_specs?: unknown;
+}
+
+/**
+ * Pneu plein = catégorie `pneus-pleins` OU clé fitment `tire_family='solid'`.
+ * Les DEUX, jamais une seule : 2 pièces de la catégorie ont fitment_specs NULL
+ * (un filtre qui ne lit que fitment_specs les laisserait passer), et une pièce
+ * peut porter la clé solid sans être rangée dans la catégorie.
+ */
+export function isSolidTirePart(part: SolidCandidate): boolean {
+  if (part.category?.slug === SOLID_CATEGORY) return true;
+  return fitmentTireFamily(part.fitment_specs) === "solid";
+}
+
+/**
+ * Masquage pneus pleins. On ne propose un plein QUE sur une trotte "ok" :
+ * 'no' et NULL se masquent tous les deux. Un modèle non renseigné (flags
+ * absents) vaut "unknown" → masqué : l'oubli d'un appelant retire des pièces,
+ * il n'en propose jamais une à tort.
+ */
+export function filterSolidTires<T extends SolidCandidate>(
+  parts: T[],
+  model: { tire_family: string | null | undefined; solid_conversion: string | null | undefined } | null | undefined,
+): T[] {
+  const state = solidConversionState(model ?? { tire_family: null, solid_conversion: null });
+  if (state === "ok") return parts;
+  return parts.filter((p) => !isSolidTirePart(p));
+}
+
+/** Position de montage portée par une ligne part_compatibility. */
+export type FitmentPosition = "avant" | "arriere" | "les_deux";
+
 /**
  * Clés manquantes nommées dans une raison « fitment:partial rim=… width=? section=? »
  * (moteur K pneus pleins, 16/09). Une raison partial sans drapeau = ancienne
@@ -168,18 +214,4 @@ export function unverifiedGroupLabel(reasons: (string | null)[]): string {
     return "Le modèle est cité par le fournisseur, mais la cote n'a pas encore été confirmée par nos ateliers.";
   }
   return "Compatibilité probable, pas encore confirmée par nos ateliers.";
-}
-
-/** Ventile une liste : les lignes masquées tombent. */
-export function partitionCompat<T extends CompatRow>(
-  rows: T[],
-): { verified: T[]; unverified: T[] } {
-  const verified: T[] = [];
-  const unverified: T[] = [];
-  for (const row of rows) {
-    const status = classifyCompat(row);
-    if (status === "verified") verified.push(row);
-    else if (status === "unverified") unverified.push(row);
-  }
-  return { verified, unverified };
 }

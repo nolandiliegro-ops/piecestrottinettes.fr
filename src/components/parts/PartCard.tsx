@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { pickBadge, STAMP_META, hexToRgba } from "@/lib/partStamps";
 import { resolveCategoryColor } from "@/lib/categoryColors";
+import type { FitmentPosition } from "@/lib/compatibilityStatus";
 import { toast } from "sonner";
 import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
@@ -19,7 +20,17 @@ interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
   index: number;
   className?: string;
+  /**
+   * Position de montage (fiche trotte uniquement). 'les_deux' et null ne
+   * portent AUCUN badge : on ne signale que ce qui restreint le montage.
+   */
+  position?: FitmentPosition | null;
 }
+
+const POSITION_LABEL: Partial<Record<FitmentPosition, string>> = {
+  avant: "AVANT",
+  arriere: "ARRIÈRE",
+};
 
 // Extract key specs from technical_metadata JSONB
 const extractSpecs = (metadata: Record<string, unknown> | null): { torque?: string; other?: string } => {
@@ -83,7 +94,7 @@ function DifficultyKey({ level }: { level: number | null }) {
 }
 
 const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
-  function PartCardInner({ part, index, className }, ref) {
+  function PartCardInner({ part, index, className, position }, ref) {
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
@@ -265,6 +276,32 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       <div className="relative aspect-square rounded-lg overflow-hidden bg-[#F9F8F6] mb-3 flex items-center justify-center">
         {/* Pastilles top-left empilées : catégorie (glass, requise) + stamp ATELIER (conditionnel) */}
         <div className="absolute top-3 left-3 z-10 flex flex-col items-start gap-1.5">
+          {/* Position de montage — carbon sur fond clair, 14px. Info décisive à
+              l'achat : elle passe AVANT la pastille catégorie. Non cliquable,
+              donc pas de cible tactile 44px (rien à toucher). */}
+          {position && POSITION_LABEL[position] && (
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.08 + 0.04, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="inline-flex items-center text-[14px] leading-none"
+              style={{
+                padding: "6px 10px",
+                borderRadius: 999,
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 800,
+                letterSpacing: "0.04em",
+                color: "#1A1A1A",
+                backgroundColor: "rgba(255,255,255,0.92)",
+                border: "1px solid rgba(26,26,26,0.25)",
+                backdropFilter: "blur(6px)",
+                WebkitBackdropFilter: "blur(6px)",
+              }}
+            >
+              {POSITION_LABEL[position]}
+            </motion.span>
+          )}
+
           {/* Pastille catégorie GLASS — couleur réelle (BDD ou slug), lisible sur fond clair */}
           {part.category?.name && categoryColor && (
             <motion.span

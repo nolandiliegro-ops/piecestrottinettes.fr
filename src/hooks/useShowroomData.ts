@@ -68,7 +68,12 @@ export const useShowroomData = (slug: string | undefined) => {
   const {
     data: compatibleParts = [],
     isLoading: partsLoading,
-  } = useScooterCompatibleParts(scooter?.id ?? null);
+  } = useScooterCompatibleParts(
+    scooter?.id ?? null,
+    // useScooterBySlug remonte déjà tire_family/solid_conversion : le masquage
+    // pneus pleins se fait sans requête supplémentaire.
+    scooter ? { tire_family: scooter.tire_family, solid_conversion: scooter.solid_conversion } : null,
+  );
 
   // Looping neighbours for the carousel arrows, based on created_at DESC order.
   const { prevSlug, nextSlug } = useMemo(() => {

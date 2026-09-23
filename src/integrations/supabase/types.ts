@@ -1384,6 +1384,7 @@ export type Database = {
           created_at: string
           id: string
           part_id: string
+          position: string | null
           scooter_model_id: string
           suggestion_reason: string | null
         }
@@ -1393,6 +1394,7 @@ export type Database = {
           created_at?: string
           id?: string
           part_id: string
+          position?: string | null
           scooter_model_id: string
           suggestion_reason?: string | null
         }
@@ -1402,6 +1404,7 @@ export type Database = {
           created_at?: string
           id?: string
           part_id?: string
+          position?: string | null
           scooter_model_id?: string
           suggestion_reason?: string | null
         }
