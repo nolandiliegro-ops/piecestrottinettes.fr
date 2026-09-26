@@ -12,7 +12,7 @@ export const initSentry = () => {
   // Only initialize in production
   if (import.meta.env.PROD) {
     Sentry.init({
-      dsn: import.meta.env.VITE_SENTRY_DSN,
+      dsn: import.meta.env.VITE_SENTRY_DSN || "https://a95c2a9b61ae061a282aa8ecfec6fff8@o4512153111625728.ingest.de.sentry.io/4512153178734672",
       
       // Set environment
       environment: import.meta.env.MODE,
@@ -27,10 +27,10 @@ export const initSentry = () => {
       ],
       
       // Performance Monitoring - Sample rate for transactions
-      tracesSampleRate: 1.0, // 100% in production, adjust based on traffic
+      tracesSampleRate: 0.1, // 100% in production, adjust based on traffic
       
       // Session Replay - Sample rate
-      replaysSessionSampleRate: 0.1, // 10% of sessions
+      replaysSessionSampleRate: 0, // 10% of sessions
       replaysOnErrorSampleRate: 1.0, // 100% of sessions with errors
       
       // Release tracking
