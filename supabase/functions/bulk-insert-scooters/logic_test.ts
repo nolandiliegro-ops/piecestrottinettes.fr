@@ -3,10 +3,13 @@
 import { assertEquals } from "https://deno.land/std@0.224.0/assert/mod.ts";
 import {
   fitmentCodeFields,
+  specFields,
+  missingForPublish,
   TIRE_FAMILIES,
   SOLID_CONVERSION,
   type FitmentVocab,
   type FitmentWarning,
+  type PublishCheckRow,
 } from "./index.ts";
 
 const COLUMNS = [
@@ -22,6 +25,8 @@ const vocab: FitmentVocab = {
   fitment_disc_pcd: new Set(["48"]),
   fitment_disc_holes: new Set(["6"]),
   fitment_caliper_families: new Set(["nutt_4p"]),
+  fitment_brake_types: new Set(["disc_hydraulic", "disc_mechanical", "drum"]),
+  fitment_rim_types: new Set(["monobloc", "demi_jante"]),
   tire_family: TIRE_FAMILIES,
   solid_conversion: SOLID_CONVERSION,
 };
@@ -121,4 +126,108 @@ Deno.test("5. solid_conversion 'oui' / 'YES' → sautée + warning ; rim_width h
   );
   assertEquals(out, { solid_conversion: "no" });
   assertEquals(warnings, [{ name: "compact", field: "rim_width_code", code: "34mm" }]);
+});
+
+// ─── Lot 2 : brake_type / rim_type + specFields ─────────────────────────────
+
+Deno.test("6. brake_type 'disc_hydraulic' au vocab → écrit ; 'disque' absent → warning", () => {
+  const warnings: FitmentWarning[] = [];
+  const ok = fitmentCodeFields({ slug: "t", brake_type: "disc_hydraulic", rim_type: "demi_jante" }, vocab, warnings);
+  assertEquals(ok, { brake_type: "disc_hydraulic", rim_type: "demi_jante" });
+  assertEquals(warnings, []);
+  const out = fitmentCodeFields({ slug: "t", brake_type: "disque" }, vocab, warnings);
+  assertEquals("brake_type" in out, false);
+  assertEquals(warnings, [{ name: "t", field: "brake_type", code: "disque" }]);
+});
+
+Deno.test("7. specFields : weight_kg 25.5 écrit ; -1 sauté + warning", () => {
+  const warnings: FitmentWarning[] = [];
+  assertEquals(specFields({ slug: "t", weight_kg: 25.5 }, warnings), { weight_kg: 25.5 });
+  assertEquals(warnings, []);
+  assertEquals(specFields({ slug: "t", weight_kg: -1 }, warnings), {});
+  assertEquals(warnings, [{ name: "t", field: "weight_kg", code: "-1" }]);
+});
+
+Deno.test("8. specFields : score_offroad 101 sauté + warning ; 0 et 100 acceptés", () => {
+  const warnings: FitmentWarning[] = [];
+  assertEquals(specFields({ slug: "t", score_offroad: 101 }, warnings), {});
+  assertEquals(warnings, [{ name: "t", field: "score_offroad", code: "101" }]);
+  assertEquals(specFields({ slug: "t", score_offroad: 0 }, []), { score_offroad: 0 });
+  assertEquals(specFields({ slug: "t", score_offroad: 100 }, []), { score_offroad: 100 });
+});
+
+Deno.test("9. specFields : foldable 'true' (string) sauté + warning ; true (boolean) écrit", () => {
+  const warnings: FitmentWarning[] = [];
+  assertEquals(specFields({ slug: "t", foldable: "true" }, warnings), {});
+  assertEquals(warnings, [{ name: "t", field: "foldable", code: "true" }]);
+  assertEquals(specFields({ slug: "t", foldable: false }, []), { foldable: false });
+});
+
+Deno.test("10. specFields : suspension '' absente sans warning ; clé absente absente ; texte trimé", () => {
+  const warnings: FitmentWarning[] = [];
+  assertEquals(specFields({ slug: "t", suspension: "", ip_rating: "   " }, warnings), {});
+  assertEquals(specFields({ slug: "t" }, warnings), {});
+  assertEquals(specFields({ slug: "t", suspension: null }, warnings), {});
+  assertEquals(warnings, []);
+  assertEquals(specFields({ slug: "t", suspension: " double ", ip_rating: "IPX5" }, []), {
+    suspension: "double",
+    ip_rating: "IPX5",
+  });
+});
+
+Deno.test("11. specFields : max_speed_private_kmh entier exigé, NaN / string rejetés", () => {
+  const warnings: FitmentWarning[] = [];
+  assertEquals(specFields({ slug: "t", max_speed_private_kmh: 70 }, warnings), { max_speed_private_kmh: 70 });
+  assertEquals(specFields({ slug: "t", max_speed_private_kmh: 70.5 }, warnings), {});
+  assertEquals(specFields({ slug: "t", wheel_inches: Number.NaN }, warnings), {});
+  assertEquals(specFields({ slug: "t", max_load_kg: "150" }, warnings), {});
+  assertEquals(warnings.map((w) => w.field), ["max_speed_private_kmh", "wheel_inches", "max_load_kg"]);
+  assertEquals(specFields({ slug: "t", wheel_inches: 8.5 }, []), { wheel_inches: 8.5 });
+});
+
+// ─── Lot 3 : missingForPublish ──────────────────────────────────────────────
+
+const complete: PublishCheckRow = {
+  images: [{ url: "a.png" }],
+  image_url: null,
+  meta_title: "Titre",
+  meta_description: "Desc",
+  brake_type: "disc_hydraulic",
+  disc_diameter_code: "160",
+  disc_pcd_code: "44",
+  disc_holes_code: "6",
+  score_performance: 80,
+  score_autonomy: 70,
+  score_offroad: 60,
+};
+
+Deno.test("12. missingForPublish : ligne complète disc_hydraulic → []", () => {
+  assertEquals(missingForPublish(complete), []);
+});
+
+Deno.test("13. missingForPublish : drum sans codes disque → []", () => {
+  assertEquals(
+    missingForPublish({
+      ...complete, brake_type: "drum", disc_diameter_code: null, disc_pcd_code: null, disc_holes_code: null,
+    }),
+    [],
+  );
+});
+
+Deno.test("14. missingForPublish : disc_mechanical sans disc_pcd_code → ['disc_pcd_code']", () => {
+  assertEquals(missingForPublish({ ...complete, brake_type: "disc_mechanical", disc_pcd_code: null }), ["disc_pcd_code"]);
+});
+
+Deno.test("15. missingForPublish : images [] et image_url null → contient 'photo' ; image_url seule suffit", () => {
+  assertEquals(missingForPublish({ ...complete, images: [], image_url: null }).includes("photo"), true);
+  assertEquals(missingForPublish({ ...complete, images: [], image_url: "https://x/y.png" }), []);
+});
+
+Deno.test("16. missingForPublish : score_offroad null → contient 'score_offroad' ; brake_type null → brake_type, pas de clés disque", () => {
+  assertEquals(missingForPublish({ ...complete, score_offroad: null }).includes("score_offroad"), true);
+  assertEquals(
+    missingForPublish({ ...complete, brake_type: null, disc_diameter_code: null }),
+    ["brake_type"],
+  );
+  assertEquals(missingForPublish({ ...complete, meta_title: "  " }), ["meta_title"]);
 });

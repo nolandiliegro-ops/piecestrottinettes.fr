@@ -36,6 +36,17 @@ interface ScooterInput {
   caliper_family?: string;
   tire_family?: string; // "pneumatic" | "solid" — text libre en base, ensemble en dur
   solid_conversion?: string; // "yes" | "no" — CHECK en base, ensemble en dur ici
+  brake_type?: string; // codes fitment_brake_types ("disc_hydraulic", "drum"…)
+  rim_type?: string; // codes fitment_rim_types ("monobloc", "demi_jante"…)
+  // Specs (lot 2) — validées par specFields : valeur invalide = colonne sautée + warning.
+  wheel_inches?: number;
+  max_speed_private_kmh?: number;
+  weight_kg?: number;
+  max_load_kg?: number;
+  suspension?: string;
+  ip_rating?: string;
+  foldable?: boolean;
+  score_offroad?: number;
 }
 
 // ─── Clés de montage : garde-preserve + validation référentiel ─────────────────
@@ -54,6 +65,8 @@ export const FITMENT_KEYS = [
   ["caliper_family", "caliper_family", "fitment_caliper_families"],
   ["tire_family", "tire_family", "tire_family"],
   ["solid_conversion", "solid_conversion", "solid_conversion"],
+  ["brake_type", "brake_type", "fitment_brake_types"],
+  ["rim_type", "rim_type", "fitment_rim_types"],
 ] as const;
 
 type FitmentKey = (typeof FITMENT_KEYS)[number][0];
@@ -84,7 +97,146 @@ export function fitmentCodeFields(
   return out;
 }
 
-// Charge les 7 référentiels fitment_* en Set<string>, une fois par requête.
+// ─── Specs (lot 2) : même garde que fitmentCodeFields ──────────────────────────
+// Clé absente / null (texte : vide ou espaces) → colonne jamais posée, sans warning.
+// Valeur fournie mais invalide → colonne sautée + warning, jamais de null écrit,
+// jamais de rejet du modèle entier.
+type SpecRule = "positive" | "positiveInt" | "score" | "text" | "boolean";
+export const SPEC_FIELDS: ReadonlyArray<readonly [string, SpecRule]> = [
+  ["wheel_inches", "positive"],
+  ["max_speed_private_kmh", "positiveInt"],
+  ["weight_kg", "positive"],
+  ["max_load_kg", "positive"],
+  ["suspension", "text"],
+  ["ip_rating", "text"],
+  ["foldable", "boolean"],
+  ["score_offroad", "score"],
+];
+
+export function specFields(
+  scooter: { name?: string; slug?: string } & Record<string, unknown>,
+  warnings: FitmentWarning[],
+): Record<string, number | string | boolean> {
+  const out: Record<string, number | string | boolean> = {};
+  const name = scooter.name ?? scooter.slug ?? "unknown";
+  for (const [field, rule] of SPEC_FIELDS) {
+    const v = scooter[field];
+    if (v === undefined || v === null) continue;
+    if (rule === "text") {
+      if (typeof v === "string") {
+        if (v.trim() !== "") out[field] = v.trim();
+        continue; // vide / espaces = non fourni, pas de warning
+      }
+    } else if (rule === "boolean") {
+      if (typeof v === "boolean") { out[field] = v; continue; }
+    } else if (typeof v === "number" && Number.isFinite(v)) {
+      const ok = rule === "positive" ? v > 0
+        : rule === "positiveInt" ? Number.isInteger(v) && v > 0
+        : Number.isInteger(v) && v >= 0 && v <= 100; // score
+      if (ok) { out[field] = v; continue; }
+    }
+    warnings.push({ name, field, code: String(v) });
+  }
+  return out;
+}
+
+// ─── Publication automatique (lot 3) ───────────────────────────────────────────
+export const PUBLISH_COLUMNS =
+  "published, images, image_url, meta_title, meta_description, brake_type, " +
+  "disc_diameter_code, disc_pcd_code, disc_holes_code, score_performance, score_autonomy, score_offroad";
+
+export interface PublishCheckRow {
+  images?: unknown;
+  image_url?: string | null;
+  meta_title?: string | null;
+  meta_description?: string | null;
+  brake_type?: string | null;
+  disc_diameter_code?: string | null;
+  disc_pcd_code?: string | null;
+  disc_holes_code?: string | null;
+  score_performance?: number | null;
+  score_autonomy?: number | null;
+  score_offroad?: number | null;
+}
+
+const isBlank = (v: unknown) => typeof v !== "string" || v.trim() === "";
+
+/** Manques qui empêchent la publication d'un modèle. [] = publiable. */
+export function missingForPublish(row: PublishCheckRow): string[] {
+  const missing: string[] = [];
+  const hasImages = Array.isArray(row.images) && row.images.length > 0;
+  if (!hasImages && isBlank(row.image_url)) missing.push("photo");
+  if (isBlank(row.meta_title)) missing.push("meta_title");
+  if (isBlank(row.meta_description)) missing.push("meta_description");
+  if (isBlank(row.brake_type)) {
+    missing.push("brake_type");
+  } else if (row.brake_type!.includes("disc")) {
+    // Tambour / EBS (pas de "disc") : aucune clé disque exigée.
+    for (const k of ["disc_diameter_code", "disc_pcd_code", "disc_holes_code"] as const) {
+      if (isBlank(row[k])) missing.push(k);
+    }
+  }
+  for (const k of ["score_performance", "score_autonomy", "score_offroad"] as const) {
+    if (row[k] === null || row[k] === undefined) missing.push(k);
+  }
+  return missing;
+}
+
+type ResultRow = {
+  name: string;
+  slug: string;
+  id: string | null;
+  status: "inserted" | "updated" | "published" | "skipped" | "error";
+  missing?: string[];
+};
+
+// Relit le modèle et le publie s'il est complet. Ne publie QUE ce modèle (jamais
+// la marque). Toute erreur va dans results.errors : jamais d'exception qui
+// arrête le lot. Un modèle déjà publié n'est ni relu en manques ni dépublié.
+async function publishIfCompleteRow(
+  supabase: SupabaseClient,
+  row: ResultRow,
+  results: { published: number; errors: { name: string; error: string }[] },
+): Promise<void> {
+  if (!row.id) return;
+  try {
+    const { data, error } = await supabase
+      .from("scooter_models")
+      .select(PUBLISH_COLUMNS)
+      .eq("id", row.id)
+      .maybeSingle();
+    if (error || !data) {
+      results.errors.push({ name: row.name, error: `publication : relecture impossible (${error?.message ?? "ligne introuvable"})` });
+      return;
+    }
+    const current = data as PublishCheckRow & { published?: boolean | null };
+    if (current.published === true) return;
+    const missing = missingForPublish(current);
+    if (missing.length > 0) {
+      row.missing = missing;
+      return;
+    }
+    // .eq("published", false) : aucune écriture si la ligne a changé entre-temps.
+    const { data: upd, error: updErr } = await supabase
+      .from("scooter_models")
+      .update({ published: true })
+      .eq("id", row.id)
+      .eq("published", false)
+      .select("id");
+    if (updErr) {
+      results.errors.push({ name: row.name, error: `publication : ${updErr.message}` });
+      return;
+    }
+    if (Array.isArray(upd) && upd.length === 1) {
+      results.published++;
+      row.status = "published";
+    }
+  } catch (e) {
+    results.errors.push({ name: row.name, error: `publication : ${e instanceof Error ? e.message : String(e)}` });
+  }
+}
+
+// Charge les 9 référentiels fitment_* en Set<string>, une fois par requête.
 // Lève si une lecture échoue → 500 par le catch global : jamais d'écriture sans référentiel.
 export async function loadFitmentVocab(supabase: SupabaseClient): Promise<FitmentVocab> {
   const vocab: FitmentVocab = { tire_family: TIRE_FAMILIES, solid_conversion: SOLID_CONVERSION };
@@ -119,6 +271,8 @@ interface RequestBody {
   brandLogoUrl?: string;
   brand?: BrandInput;
   scooters: ScooterInput[];
+  // true → après écriture réussie, publie chaque MODÈLE complet (jamais la marque).
+  publishIfComplete?: boolean;
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -141,6 +295,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Parse body
     const body: RequestBody = await req.json();
     const { brandName, brandSlug, brandLogoUrl, brand: brandInput, scooters } = body;
+    const doPublish = body.publishIfComplete === true;
 
     if (!brandName || !Array.isArray(scooters) || scooters.length === 0) {
       return new Response(
@@ -208,10 +363,16 @@ const handler = async (req: Request): Promise<Response> => {
     const results = {
       inserted: 0,
       updated: 0,
+      published: 0,
       errors: [] as { name: string; error: string }[],
-      // Codes de montage hors référentiel : colonne sautée, modèle quand même traité.
+      // Codes de montage hors référentiel / specs invalides : colonne sautée, modèle quand même traité.
       warnings: [] as FitmentWarning[],
-      rows: [] as { name: string; slug: string; id: string | null; status: "inserted" | "updated" | "skipped" | "error" }[],
+      rows: [] as ResultRow[],
+    };
+    // Enregistre la ligne de résultat d'une écriture RÉUSSIE puis, si demandé, tente la publication.
+    const succeeded = async (row: ResultRow) => {
+      results.rows.push(row);
+      if (doPublish) await publishIfCompleteRow(supabase, row, results);
     };
 
     for (const scooter of scooters) {
@@ -226,10 +387,12 @@ const handler = async (req: Request): Promise<Response> => {
         continue;
       }
 
-      // 9 clés de montage — guard-preserve + validation référentiel (voir
+      // 11 clés de montage — guard-preserve + validation référentiel (voir
       // fitmentCodeFields) : clé absente / vide / hors référentiel → colonne
       // JAMAIS touchée (pas d'écrasement par NULL, pas de code inconnu).
       const fitmentPatch = fitmentCodeFields(scooter, vocab, results.warnings);
+      // Specs (lot 2) : même garde, valeur invalide → colonne sautée + warning.
+      const specPatch = specFields(scooter as unknown as Record<string, unknown>, results.warnings);
 
       // Lookup AVANT écriture : détermine inserted vs updated ET le chemin.
       const { data: existing } = await supabase
@@ -263,14 +426,16 @@ const handler = async (req: Request): Promise<Response> => {
           ...(scooter.affiliate_link !== undefined ? { affiliate_link: scooter.affiliate_link } : {}),
           ...(scooter.technical_signature !== undefined ? { technical_signature: scooter.technical_signature } : {}),
           ...fitmentPatch,
+          ...specPatch,
         };
 
         const displayName = scooter.name ?? (existing.name as string) ?? scooter.slug;
 
         // Payload sans aucune clé exploitable → no-op assumé (rien à écrire).
+        // C'est le chemin du 2e appel { slug } + publishIfComplete de sync-scooters --publish.
         if (Object.keys(partialRow).length === 0) {
           results.updated++;
-          results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
+          await succeeded({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
           continue;
         }
 
@@ -284,7 +449,7 @@ const handler = async (req: Request): Promise<Response> => {
           results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "error" });
         } else {
           results.updated++;
-          results.rows.push({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
+          await succeeded({ name: displayName, slug: scooter.slug, id: existing.id, status: "updated" });
         }
       } else {
         // ── INSERT : comportement historique conservé (défauts || null, draft). ──
@@ -315,6 +480,7 @@ const handler = async (req: Request): Promise<Response> => {
           technical_signature: scooter.technical_signature || {},
           published: false, // Bot imports always start as drafts
           ...fitmentPatch,
+          ...specPatch,
         };
 
         const { data: insertedRow, error: insertError } = await supabase
@@ -328,7 +494,7 @@ const handler = async (req: Request): Promise<Response> => {
           results.rows.push({ name: scooter.name, slug: scooter.slug, id: null, status: "error" });
         } else {
           results.inserted++;
-          results.rows.push({ name: scooter.name, slug: scooter.slug, id: insertedRow.id, status: "inserted" });
+          await succeeded({ name: scooter.name, slug: scooter.slug, id: insertedRow.id, status: "inserted" });
         }
       }
     }

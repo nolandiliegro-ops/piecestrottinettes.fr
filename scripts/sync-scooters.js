@@ -7,6 +7,18 @@
  *   node scripts/sync-scooters.js --file scripts/data/import.json
  *   node scripts/sync-scooters.js --file scripts/data/import.json --update
  *   node scripts/sync-scooters.js --file scripts/data/import.json --allow-missing-keys
+ *   node scripts/sync-scooters.js --file scripts/data/import.json --publish
+ *
+ * --publish : après les images de chaque lot, 2e appel à l'Edge Function avec
+ * { slug } + publishIfComplete:true → chaque MODÈLE complet (photo, SEO, type de
+ * frein + clés disque si frein à disque, 3 scores) passe en ligne ; les autres
+ * restent brouillon avec la liste de leurs manques. La marque n'est jamais publiée
+ * par ce chemin. Si au moins 1 modèle est publié : relance du moteur de compat
+ * (retriggerKeyWired, scripts/_retrigger-by-category.mjs) en fin de run.
+ *
+ * Specs écrites (lot 2, valeur invalide = colonne sautée + warning) :
+ *   brake_type · rim_type (codes fitment_*) · wheel_inches · max_speed_private_kmh
+ *   weight_kg · max_load_kg · suspension · ip_rating · foldable · score_offroad
  *
  * Schéma d'entrée (contrat d'import — étape 2) : chaque scooter DOIT porter les
  * 3 clés de montage frein, en entiers nus (→ scooter_models.disc_*_code) :
@@ -37,15 +49,17 @@ import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
 import { findMissingBrakeKeys } from './lib/validate-brake-keys.js';
+import { retriggerKeyWired } from './_retrigger-by-category.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args      = process.argv.slice(2);
 const doUpdate  = args.includes('--update');
 const allowMissingKeys = args.includes('--allow-missing-keys');
+const doPublish = args.includes('--publish');
 
 const fileArgIdx = args.indexOf('--file');
 if (fileArgIdx === -1 || !args[fileArgIdx + 1]) {
-  console.error('Usage: node scripts/sync-scooters.js --file <chemin/vers/import.json> [--update]');
+  console.error('Usage: node scripts/sync-scooters.js --file <chemin/vers/import.json> [--update] [--allow-missing-keys] [--publish]');
   process.exit(1);
 }
 const filePath = resolve(process.cwd(), args[fileArgIdx + 1]);
@@ -120,6 +134,58 @@ async function processImages(entityId, sourceUrls, altBase, secret, url) {
   return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr, errors };
 }
 
+// ─── --publish : 2e appel { slug } + publishIfComplete ─────────────────────────
+// Ne cible que les modèles écrits avec succès au 1er appel (un slug en erreur
+// n'existe peut-être pas : le renvoyer seul déclencherait un INSERT sans name).
+// Jamais d'exit : un échec ici laisse les modèles en brouillon, rien d'autre.
+// Retour : nombre de modèles publiés.
+async function publishBatch(brandName, resultRows, edgeUrl, secret) {
+  const slugs = (Array.isArray(resultRows) ? resultRows : [])
+    .filter((r) => (r.status === 'inserted' || r.status === 'updated') && r.slug)
+    .map((r) => r.slug);
+  if (slugs.length === 0) {
+    console.log('   📣 Publication : aucun modèle écrit dans ce lot, rien à publier');
+    return 0;
+  }
+
+  let result;
+  try {
+    const res = await fetch(edgeUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
+      body: JSON.stringify({ brandName, scooters: slugs.map((slug) => ({ slug })), publishIfComplete: true }),
+    });
+    const text = await res.text();
+    try { result = JSON.parse(text); }
+    catch { console.log(`   ✗ Publication : réponse non-JSON (HTTP ${res.status}) : ${text.slice(0, 120)}`); return 0; }
+    if (!res.ok) {
+      console.log(`   ✗ Publication : erreur ${res.status} — ${result?.error ?? ''} ${result?.detail ?? ''}`.trimEnd());
+      return 0;
+    }
+  } catch (e) {
+    console.log(`   ✗ Publication : requête échouée — ${e.message}`);
+    return 0;
+  }
+
+  const rows = result?.results?.rows ?? [];
+  const bySlug = new Map((Array.isArray(rows) ? rows : []).map((r) => [r.slug, r]));
+  for (const slug of slugs) {
+    const r = bySlug.get(slug);
+    if (!r) console.log(`   ✗ ${slug} : absent de la réponse`);
+    else if (r.status === 'published') console.log(`   📣 ${slug} : publié`);
+    else if (Array.isArray(r.missing)) console.log(`   ⏸  ${slug} : reste brouillon : ${r.missing.join(', ')}`);
+    else if (r.status === 'error' || r.status === 'skipped') console.log(`   ✗ ${slug} : ${r.status}`);
+    else console.log(`   ·  ${slug} : déjà publié (inchangé)`);
+  }
+  const pubErrors = result?.results?.errors ?? [];
+  for (const e of Array.isArray(pubErrors) ? pubErrors : []) {
+    console.log(`   ✗ Publication ${e.name ?? ''} — ${e.error ?? e}`);
+  }
+  const published = Number(result?.results?.published) || 0;
+  console.log(`   → Publiés : ${published}/${slugs.length}`);
+  return published;
+}
+
 // ─── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -171,6 +237,8 @@ async function main() {
       process.exit(1);
     }
   }
+
+  let totalPublished = 0;
 
   for (const batch of batches) {
     const { brandName, brand, scooters, models } = batch;
@@ -229,12 +297,12 @@ async function main() {
       for (const e of errors) console.log(`   ✗ ${e.name ?? e} — ${e.error ?? ''}`);
     }
 
-    // Codes de montage hors référentiel : la colonne n'a PAS été écrite, le reste du modèle oui.
+    // Code hors référentiel ou spec invalide : la colonne n'a PAS été écrite, le reste du modèle oui.
     const warnings = result.results?.warnings ?? [];
     if (Array.isArray(warnings) && warnings.length > 0) {
       console.log('   Avertissements clés de montage :');
       for (const w of warnings) {
-        console.log(`   ⚠  ${w.name} — ${w.field}="${w.code}" absent du référentiel, colonne non écrite`);
+        console.log(`   ⚠  ${w.name} — ${w.field}="${w.code}" hors référentiel ou invalide, colonne non écrite`);
       }
     }
 
@@ -277,6 +345,24 @@ async function main() {
       if (urlsBySlug.size > 0) {
         console.log(`   → Images : ${imgOk} ok, ${imgErr} erreur(s), ${imgSkip} skip`);
       }
+    }
+
+    // ── Publication automatique (APRÈS les images : la photo compte) ──────────
+    if (doPublish) {
+      totalPublished += await publishBatch(brandName, resultRows, EDGE_URL, ADMIN_SECRET);
+    }
+  }
+
+  // ── Relance du moteur de compat si au moins 1 modèle vient de passer en ligne ─
+  if (doPublish && totalPublished > 0) {
+    console.log(`\n→ ${totalPublished} modèle(s) publié(s) : relance du moteur de compat…`);
+    try {
+      // Log réduit au périmètre, au nombre de pièces et au total (le détail par pièce est long).
+      const log = (m) => { if (/^\[(scope|parts)\]|^TOTAL/.test(m)) console.log(`   ${m.trim()}`); };
+      const { suggestions, errors } = await retriggerKeyWired({ log });
+      console.log(`   Compat : ${suggestions} nouvelles suggestions${errors > 0 ? ` (${errors} erreur(s))` : ''}`);
+    } catch (e) {
+      console.log(`   ✗ Compat : relance échouée — ${e.message}`);
     }
   }
 
