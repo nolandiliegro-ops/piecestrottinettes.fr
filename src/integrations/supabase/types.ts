@@ -65,6 +65,42 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_chambres_1025_jante6_20260929: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          sku: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_chambres_sections_20260929: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          sku: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
       _backup_compat_disques_vsett_20260929: {
         Row: {
           auto_suggested: boolean | null
@@ -887,6 +923,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_scores_20260929: {
+        Row: {
+          id: string | null
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_performance: number | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_performance?: number | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_performance?: number | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_solid_rimtype_20260922: {
         Row: {
           backup_at: string | null
@@ -989,6 +1049,27 @@ export type Database = {
         Update: {
           kind?: string | null
           row?: Json | null
+        }
+        Relationships: []
+      }
+      _backup_vsett9_jante_20260929: {
+        Row: {
+          id: string | null
+          kind: string | null
+          ref: string | null
+          val: Json | null
+        }
+        Insert: {
+          id?: string | null
+          kind?: string | null
+          ref?: string | null
+          val?: Json | null
+        }
+        Update: {
+          id?: string | null
+          kind?: string | null
+          ref?: string | null
+          val?: Json | null
         }
         Relationships: []
       }
