@@ -19,6 +19,10 @@
 //     candidate ssi tire_family='solid' OU solid_conversion='yes' (une trotte
 //     pneumatique convertible) ; 'no' ou NULL → aucune ligne (🔵 côté client).
 //     published=true toujours exigé.
+//   - pneu plein : rim_type dont fitment_rim_types.accepte_pneu_plein=false →
+//     exclu en amont (miroir du trigger appliquer_regles_exclusion_compat, évite
+//     l'échec du lot entier). rim_type NULL → pas d'exclusion (22/09). Erreur
+//     de lecture de fitment_rim_types → fail-closed, aucune suggestion.
 //   - règle dure : pièce non "matchable" (clés minimales absentes) → AUCUNE
 //     suggestion (ni regex ni IA) — état 🔵 côté client.
 
@@ -122,6 +126,8 @@ export interface TireScooterRow {
   rim_width_code?: string | null;
   /** 'yes' | 'no' | null : une trotte pneumatique passe-t-elle en plein ? */
   solid_conversion?: string | null;
+  /** Construction de jante (code fitment_rim_types) — lue pour les pneus pleins. */
+  rim_type?: string | null;
 }
 
 export interface DiscScooterRow {
@@ -177,16 +183,21 @@ export function matchTireScooters(
  * côtés la portent (∉ → exclu). high ssi Ø + largeur + section concordent ;
  * une clé absente d'un côté (ou des deux) → medium, raison précise par clé
  * manquante : 'fitment:partial rim=<code>' + ' width=?' et/ou ' section=?'.
+ * refusedRimTypes : codes rim_type qui refusent le plein (miroir du trigger
+ * appliquer_regles_exclusion_compat) → exclus. rim_type NULL jamais exclu.
+ * Absent → aucun filtre (comportement historique).
  */
 export function matchSolidScooters(
   spec: { rimDiameters: string[]; rimWidths?: string[] | null; tireSections?: string[] | null },
   scooters: TireScooterRow[],
+  refusedRimTypes?: Set<string> | null,
 ): MatchedRow[] {
   const out: MatchedRow[] = [];
   const widths = isStrArray(spec.rimWidths) ? spec.rimWidths : null;
   const sections = isStrArray(spec.tireSections) ? spec.tireSections : null;
   for (const s of scooters) {
     if (s.tire_family !== "solid" && s.solid_conversion !== "yes") continue;
+    if (s.rim_type != null && refusedRimTypes?.has(s.rim_type)) continue;
     if (!s.rim_diameter_code || !spec.rimDiameters.includes(s.rim_diameter_code)) continue;
     const widthBoth = Boolean(widths && s.rim_width_code);
     if (widthBoth && !widths!.includes(s.rim_width_code!)) continue;
@@ -280,7 +291,7 @@ export async function suggestCompatibilitiesFitment(
     const fs = part.fitment_specs!;
     const { data, error } = await supabase
       .from("scooter_models")
-      .select("id, tire_family, rim_diameter_code, tire_section_code, rim_width_code, solid_conversion")
+      .select("id, tire_family, rim_diameter_code, tire_section_code, rim_width_code, solid_conversion, rim_type")
       .eq("published", true)
       .in("rim_diameter_code", fs.rim_diameters!);
     if (error) {
@@ -288,15 +299,29 @@ export async function suggestCompatibilitiesFitment(
       return { ...EMPTY, scooterIds: new Set() };
     }
     const rows = (data ?? []) as TireScooterRow[];
-    matched = rule.family === "solid"
-      ? matchSolidScooters(
+    if (rule.family === "solid") {
+      // Une seule ligne refusée par le trigger fait échouer tout l'upsert de la
+      // pièce (après le DELETE du retrigger) → on filtre en amont, fail-closed.
+      const { data: rimTypes, error: rimErr } = await supabase
+        .from("fitment_rim_types")
+        .select("code")
+        .eq("accepte_pneu_plein", false);
+      if (rimErr) {
+        console.error(`[fitment] Erreur fetch fitment_rim_types (fail-closed):`, rimErr.message);
+        return { ...EMPTY, scooterIds: new Set() };
+      }
+      const refused = new Set((rimTypes ?? []).map((r) => r.code as string));
+      matched = matchSolidScooters(
         { rimDiameters: fs.rim_diameters!, rimWidths: fs.rim_widths ?? null, tireSections: fs.tire_sections ?? null },
         rows,
-      )
-      : matchTireScooters(
+        refused,
+      );
+    } else {
+      matched = matchTireScooters(
         { family: rule.family!, rimDiameters: fs.rim_diameters!, tireSections: fs.tire_sections ?? null },
         rows,
       );
+    }
   } else {
     const d = part.fitment_specs!.brake_disc!;
     const { data, error } = await supabase

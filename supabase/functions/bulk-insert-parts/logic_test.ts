@@ -790,6 +790,39 @@ Deno.test("matchSolidScooters: section — ∉ exclu, absente d'un côté → se
   );
 });
 
+// ─── Pneus pleins × rim_type (miroir du trigger demi-jante) ─────────────────
+
+const convertible = (rim_type: string | null) => ({
+  id: "conv", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null,
+  solid_conversion: "yes", rim_type,
+});
+const refusedDemi = new Set(["demi_jante"]);
+
+Deno.test("matchSolidScooters: rim_type demi_jante refusé → exclu", () => {
+  assertEquals(matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("demi_jante")], refusedDemi), []);
+});
+
+Deno.test("matchSolidScooters: rim_type monobloc non refusé → inclus", () => {
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("monobloc")], refusedDemi).map((m) => m.scooterId),
+    ["conv"],
+  );
+});
+
+Deno.test("matchSolidScooters: rim_type NULL → inclus (l'ignorance ne bloque pas)", () => {
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible(null)], refusedDemi).map((m) => m.scooterId),
+    ["conv"],
+  );
+});
+
+Deno.test("matchSolidScooters: sans 3e argument, demi_jante → inclus (rétro-compat)", () => {
+  assertEquals(
+    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("demi_jante")]),
+    [{ scooterId: "conv", confidence: "medium", reason: "fitment:partial rim=6.5 width=? section=?" }],
+  );
+});
+
 Deno.test("matchDiscScooters: triple match exigé, aucun partial", () => {
   const scooters = [
     { id: "d-ok", disc_diameter_code: "160", disc_pcd_code: "48", disc_holes_code: "6" },
