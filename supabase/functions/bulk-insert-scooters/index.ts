@@ -142,12 +142,13 @@ export function specFields(
 
 // ─── Publication automatique (lot 3) ───────────────────────────────────────────
 export const PUBLISH_COLUMNS =
-  "published, images, image_url, meta_title, meta_description, brake_type, " +
+  "published, images, image_url, weight_kg, meta_title, meta_description, brake_type, " +
   "disc_diameter_code, disc_pcd_code, disc_holes_code, score_performance, score_autonomy, score_offroad";
 
 export interface PublishCheckRow {
   images?: unknown;
   image_url?: string | null;
+  weight_kg?: number | null;
   meta_title?: string | null;
   meta_description?: string | null;
   brake_type?: string | null;
@@ -166,6 +167,11 @@ export function missingForPublish(row: PublishCheckRow): string[] {
   const missing: string[] = [];
   const hasImages = Array.isArray(row.images) && row.images.length > 0;
   if (!hasImages && isBlank(row.image_url)) missing.push("photo");
+  // Poids obligatoire (décision 28/09). Une chaîne numérique est acceptée au cas
+  // où la colonne numeric reviendrait sérialisée en texte.
+  const w: unknown = row.weight_kg;
+  const weight = typeof w === "number" ? w : typeof w === "string" && w.trim() !== "" ? Number(w) : Number.NaN;
+  if (!Number.isFinite(weight) || weight <= 0) missing.push("weight_kg");
   if (isBlank(row.meta_title)) missing.push("meta_title");
   if (isBlank(row.meta_description)) missing.push("meta_description");
   if (isBlank(row.brake_type)) {

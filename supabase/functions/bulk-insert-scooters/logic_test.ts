@@ -190,6 +190,7 @@ Deno.test("11. specFields : max_speed_private_kmh entier exigé, NaN / string re
 const complete: PublishCheckRow = {
   images: [{ url: "a.png" }],
   image_url: null,
+  weight_kg: 25,
   meta_title: "Titre",
   meta_description: "Desc",
   brake_type: "disc_hydraulic",
@@ -230,4 +231,12 @@ Deno.test("16. missingForPublish : score_offroad null → contient 'score_offroa
     ["brake_type"],
   );
   assertEquals(missingForPublish({ ...complete, meta_title: "  " }), ["meta_title"]);
+});
+
+Deno.test("17. missingForPublish : poids obligatoire — null / 0 → 'weight_kg' ; 25 → absent", () => {
+  assertEquals(missingForPublish({ ...complete, weight_kg: null }).includes("weight_kg"), true);
+  assertEquals(missingForPublish({ ...complete, weight_kg: 0 }).includes("weight_kg"), true);
+  assertEquals(missingForPublish({ ...complete, weight_kg: 25 }).includes("weight_kg"), false);
+  // Ordre : juste après "photo".
+  assertEquals(missingForPublish({ ...complete, images: [], weight_kg: undefined }), ["photo", "weight_kg"]);
 });

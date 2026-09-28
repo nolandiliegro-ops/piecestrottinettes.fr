@@ -10,7 +10,7 @@
  *   node scripts/sync-scooters.js --file scripts/data/import.json --publish
  *
  * --publish : après les images de chaque lot, 2e appel à l'Edge Function avec
- * { slug } + publishIfComplete:true → chaque MODÈLE complet (photo, SEO, type de
+ * { slug } + publishIfComplete:true → chaque MODÈLE complet (photo, poids, SEO, type de
  * frein + clés disque si frein à disque, 3 scores) passe en ligne ; les autres
  * restent brouillon avec la liste de leurs manques. La marque n'est jamais publiée
  * par ce chemin. Si au moins 1 modèle est publié : relance du moteur de compat
