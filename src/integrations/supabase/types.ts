@@ -746,6 +746,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_poids_20260929: {
+        Row: {
+          id: string | null
+          ip_rating: string | null
+          max_load_kg: number | null
+          slug: string | null
+          weight_kg: number | null
+        }
+        Insert: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Update: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
       _backup_position_maxg2_pp_20260928: {
         Row: {
           auto_suggested: boolean | null
