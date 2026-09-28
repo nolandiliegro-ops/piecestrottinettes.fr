@@ -37,6 +37,7 @@ import {
   matchTireScooters,
   matchSolidScooters,
   matchDiscScooters,
+  matchCaliperScooters,
 } from "../_shared/fitment_matcher.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
@@ -657,11 +658,11 @@ Deno.test("seoRowFields: string vide, espaces seuls, null ou non-string → cham
 
 // ─── Moteur K (fitment_matcher) ─────────────────────────────────────────────
 
-Deno.test("KEY_WIRED_CATEGORIES: allowlist actée, plaquettes exclue", () => {
+Deno.test("KEY_WIRED_CATEGORIES: allowlist actée, plaquettes incluse (28/09)", () => {
   assertEquals(KEY_WIRED_CATEGORIES, [
-    "chargeurs", "chambres-a-air", "pneus", "pneus-gonflables", "pneus-pleins", "disques",
+    "chargeurs", "chambres-a-air", "pneus", "pneus-gonflables", "pneus-pleins", "disques", "plaquettes",
   ]);
-  assertEquals(KEY_WIRED_CATEGORIES.includes("plaquettes"), false);
+  assertEquals(KEY_WIRED_CATEGORIES.includes("plaquettes"), true);
 });
 
 Deno.test("fitmentKindForCategory: familles par slug", () => {
@@ -670,7 +671,32 @@ Deno.test("fitmentKindForCategory: familles par slug", () => {
   assertEquals(fitmentKindForCategory("chambres-a-air"), { kind: "tire", family: "pneumatic" });
   assertEquals(fitmentKindForCategory("pneus-pleins"), { kind: "tire", family: "solid" });
   assertEquals(fitmentKindForCategory("disques"), { kind: "disc" });
-  assertEquals(fitmentKindForCategory("plaquettes"), null);
+  assertEquals(fitmentKindForCategory("plaquettes"), { kind: "caliper" });
+});
+
+Deno.test("isFitmentMatchable: caliper — brake_caliper non vide exigé", () => {
+  const caliper = { kind: "caliper" as const };
+  assertEquals(isFitmentMatchable(caliper, { fitment_specs: { brake_caliper: ["zoom"] } }), true);
+  assertEquals(isFitmentMatchable(caliper, { fitment_specs: { brake_caliper: [] } }), false);
+  assertEquals(isFitmentMatchable(caliper, { fitment_specs: {} }), false);
+});
+
+Deno.test("matchCaliperScooters: seule la famille d'étrier listée matche, NULL exclu", () => {
+  const scooters = [
+    { id: "t-zoom", caliper_family: "zoom" },
+    { id: "t-sram", caliper_family: "sram_avid" },
+    { id: "t-null", caliper_family: null },
+  ];
+  assertEquals(matchCaliperScooters(["zoom", "xiaomi_m365"], scooters), [
+    { scooterId: "t-zoom", confidence: "high", reason: "fitment:caliper=zoom" },
+  ]);
+});
+
+Deno.test("matchCaliperScooters: pièce multi-étriers → 1 ligne pour la trotte concordante", () => {
+  assertEquals(
+    matchCaliperScooters(["nutt_vented", "sram_avid"], [{ id: "t-sram", caliper_family: "sram_avid" }]),
+    [{ scooterId: "t-sram", confidence: "high", reason: "fitment:caliper=sram_avid" }],
+  );
 });
 
 Deno.test("isFitmentMatchable: règle dure — clés minimales", () => {

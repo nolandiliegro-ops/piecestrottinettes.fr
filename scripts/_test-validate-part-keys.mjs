@@ -210,14 +210,17 @@ check(
 
 // ── Warn→exit par catégorie : constantes et propagation du sku ────────────────
 check(
-  'STRICT_CATEGORIES : allowlist actée (plaquettes exclue)',
+  'STRICT_CATEGORIES : allowlist actée (plaquettes incluse 28/09)',
   STRICT_CATEGORIES,
-  ['chargeurs', 'chambres-a-air', 'pneus', 'pneus-gonflables', 'pneus-pleins', 'disques'],
+  ['chargeurs', 'chambres-a-air', 'pneus', 'pneus-gonflables', 'pneus-pleins', 'disques', 'plaquettes'],
 );
 check(
-  'ALLOWED_MISSING_KEYS_SKUS : les 6 VIDE justifiés (dont draisiennes hors scope)',
+  'ALLOWED_MISSING_KEYS_SKUS : les 16 VIDE justifiés (dont draisiennes hors scope)',
   ALLOWED_MISSING_KEYS_SKUS,
-  ['PP-17', 'PP-18', 'PP-26', 'PP-34', 'SP-57', 'SP-59'],
+  [
+    'PP-17', 'PP-18', 'PP-26', 'PP-34', 'SP-57', 'SP-59',
+    'PF-07', 'PF-25', 'PF-41', 'PF-91', 'PF-97', 'PF-98', 'PF-99', 'PF-100', 'PL-01', 'SP-58',
+  ],
 );
 check(
   'faute avec sku : le sku est propagé (clé d\'exemption)',

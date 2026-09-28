@@ -39,8 +39,8 @@ export const TIRE_FAMILIES = ['pneumatic', 'solid'];
  * fitment de scooter_models) → clés manquantes = refus BLOQUANT du sync (warn→exit).
  * Même liste que KEY_WIRED_CATEGORIES (copie Deno, les EF ne peuvent pas importer
  * scripts/lib/) dans supabase/functions/_shared/fitment_matcher.ts — tenir les
- * deux en phase. 'plaquettes' volontairement absente (rejoindra après la séance
- * magasin). 'pneus' = alias du slug BASE de la catégorie "Pneus gonflables"
+ * deux en phase. 'plaquettes' ajoutee le 28/09 (cle etrier brake_caliper <->
+ * caliper_family). 'pneus' = alias du slug BASE de la catégorie "Pneus gonflables"
  * (cf. REQUIRED_KEYS_BY_CATEGORY), même catégorie que 'pneus-gonflables'.
  */
 export const STRICT_CATEGORIES = [
@@ -50,6 +50,7 @@ export const STRICT_CATEGORIES = [
   'pneus-gonflables',
   'pneus-pleins',
   'disques',
+  'plaquettes',
 ];
 
 /**
@@ -63,6 +64,8 @@ export const ALLOWED_MISSING_KEYS_SKUS = [
   'PP-34', // pneu plein — dimension source VIDE chez le fournisseur (justifié)
   'SP-57', // disque — codes fitment source VIDES chez le fournisseur (justifié)
   'SP-59', // disque — codes fitment source VIDES chez le fournisseur (justifié)
+  // plaquette — forme d'etrier non sourcee (28/09), VIDE justifie
+  'PF-07', 'PF-25', 'PF-41', 'PF-91', 'PF-97', 'PF-98', 'PF-99', 'PF-100', 'PL-01', 'SP-58',
 ];
 
 /** Slug canonique — même logique NFD que canonicalSlug (bulk-insert-parts). */

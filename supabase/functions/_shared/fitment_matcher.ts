@@ -32,7 +32,7 @@ import { intersectPublishedConfigVoltages } from "./compatibility-helpers.ts";
 /**
  * Copie Deno de STRICT_CATEGORIES (scripts/lib/validate-part-keys.js) — les EF
  * ne peuvent pas importer hors de supabase/functions/. Tenir les deux en phase.
- * 'plaquettes' volontairement absente (rejoindra après la séance magasin).
+ * 'plaquettes' ajoutee le 28/09 (cle etrier brake_caliper <-> caliper_family).
  * 'pneus' = slug BASE de la catégorie "Pneus gonflables".
  */
 export const KEY_WIRED_CATEGORIES = [
@@ -42,6 +42,7 @@ export const KEY_WIRED_CATEGORIES = [
   "pneus-gonflables",
   "pneus-pleins",
   "disques",
+  "plaquettes",
 ];
 
 export interface FitmentSpecs {
@@ -59,7 +60,7 @@ export interface FitmentPartInput {
   electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
 }
 
-export type FitmentKind = "electrical" | "tire" | "disc";
+export type FitmentKind = "electrical" | "tire" | "disc" | "caliper";
 
 export interface FitmentOutcome {
   count: number;
@@ -86,6 +87,8 @@ export function fitmentKindForCategory(
       return { kind: "tire", family: "solid" };
     case "disques":
       return { kind: "disc" };
+    case "plaquettes":
+      return { kind: "caliper" };
     default:
       return null;
   }
@@ -112,6 +115,7 @@ export function isFitmentMatchable(
     const d = fs?.brake_disc;
     return isStrArray(d?.diameters) && isStrArray(d?.pcds) && isStrArray(d?.holes);
   }
+  if (rule.kind === "caliper") return isStrArray(fs?.brake_caliper);
   return false;
 }
 
@@ -135,6 +139,11 @@ export interface DiscScooterRow {
   disc_diameter_code: string | null;
   disc_pcd_code: string | null;
   disc_holes_code: string | null;
+}
+
+export interface CaliperScooterRow {
+  id: string;
+  caliper_family: string | null;
 }
 
 export interface MatchedRow {
@@ -240,6 +249,23 @@ export function matchDiscScooters(
   return out;
 }
 
+/** Plaquette : caliper_family trotte non-NULL et ∈ brake_caliper pièce. Pas de partial. */
+export function matchCaliperScooters(
+  calipers: string[],
+  scooters: CaliperScooterRow[],
+): MatchedRow[] {
+  const out: MatchedRow[] = [];
+  for (const s of scooters) {
+    if (!s.caliper_family || !calipers.includes(s.caliper_family)) continue;
+    out.push({
+      scooterId: s.id,
+      confidence: "high",
+      reason: `fitment:caliper=${s.caliper_family}`,
+    });
+  }
+  return out;
+}
+
 // ─── Moteur K (effet DB) ────────────────────────────────────────────────────
 
 const EMPTY: FitmentOutcome = { count: 0, highCount: 0, partialCount: 0, scooterIds: new Set() };
@@ -322,7 +348,7 @@ export async function suggestCompatibilitiesFitment(
         rows,
       );
     }
-  } else {
+  } else if (rule.kind === "disc") {
     const d = part.fitment_specs!.brake_disc!;
     const { data, error } = await supabase
       .from("scooter_models")
@@ -337,6 +363,18 @@ export async function suggestCompatibilitiesFitment(
       { diameters: d.diameters!, pcds: d.pcds!, holes: d.holes! },
       (data ?? []) as DiscScooterRow[],
     );
+  } else if (rule.kind === "caliper") {
+    const calipers = part.fitment_specs!.brake_caliper!;
+    const { data, error } = await supabase
+      .from("scooter_models")
+      .select("id, caliper_family")
+      .eq("published", true)
+      .in("caliper_family", calipers);
+    if (error) {
+      console.error(`[fitment] Erreur fetch scooters (caliper):`, error.message);
+      return { ...EMPTY, scooterIds: new Set() };
+    }
+    matched = matchCaliperScooters(calipers, (data ?? []) as CaliperScooterRow[]);
   }
 
   if (excludeScooterIds && excludeScooterIds.size > 0) {
