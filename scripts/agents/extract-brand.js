@@ -5,7 +5,7 @@
  * Une marque → le fichier d'import complet de sync-scooters.js, sans rien écrire en base.
  *   1. liste des modèles vendus en France (ou --models)
  *   2. par modèle : specs + poids + photos, puis clés de montage (2 appels Claude + web_search)
- *   3. relance Opus ciblée sur les seuls champs manquants (désactivable : --no-escalate)
+ *   3. relance Opus ciblée sur les seuls champs manquants — SEULEMENT avec --escalate (mode économe par défaut, 08/10)
  *   4. validation contre les référentiels fitment_* lus en base (lecture publique)
  *   5. sorties dans scripts/data/ (gitignoré) :
  *        <slug>.json          → modèles PRÊT uniquement, à passer à sync-scooters.js --publish
@@ -15,7 +15,7 @@
  * Usage :
  *   node scripts/agents/extract-brand.js --brand "Speedway"
  *   node scripts/agents/extract-brand.js --brand "Vsett" --models "9+,10+,11+" --out vsett-banc
- *   options : --max-models 3 · --model <id> · --escalate-model <id> · --no-escalate
+ *   options : --max-models 3 · --model <id> · --escalate (relance Opus, OPT-IN : coûte plus cher) · --escalate-model <id> · --max-searches 5
  *
  * .env (racine du dépôt) : ANTHROPIC_API_KEY, VITE_SUPABASE_URL, VITE_SUPABASE_PUBLISHABLE_KEY.
  * Aucun secret d'écriture n'est utilisé : ce script ne touche pas la base.
@@ -35,11 +35,12 @@ const ROOT = resolve(__dirname, '../..');
 const args = process.argv.slice(2);
 const opt = (name, def = null) => { const i = args.indexOf(`--${name}`); return i !== -1 && args[i + 1] ? args[i + 1] : def; };
 const BRAND = opt('brand');
-if (!BRAND) { console.error('Usage: node scripts/agents/extract-brand.js --brand "<Marque>" [--models "a,b"] [--max-models 3] [--out <nom>] [--no-escalate]'); process.exit(1); }
+if (!BRAND) { console.error('Usage: node scripts/agents/extract-brand.js --brand "<Marque>" [--models "a,b"] [--max-models 3] [--out <nom>] [--escalate] [--max-searches 5]'); process.exit(1); }
 const MODELS = opt('models') ? opt('models').split(',').map((m) => m.trim()).filter(Boolean) : null;
 const MAX_MODELS = Number(opt('max-models', '3'));
 const MODEL = opt('model', 'claude-sonnet-5-5');
-const ESCALATE_MODEL = args.includes('--no-escalate') ? null : opt('escalate-model', 'claude-opus-5-5');
+const ESCALATE_MODEL = args.includes('--escalate') ? opt('escalate-model', 'claude-opus-5-5') : null;
+const MAX_SEARCHES = Number(opt('max-searches', '5'));
 const OUT = slugify(opt('out', BRAND));
 
 // ─── .env ─────────────────────────────────────────────────────────────────────
@@ -97,7 +98,7 @@ async function ourPartTitles(brand) {
 // ─── Claude + web_search, sortie forcée par tool_use ──────────────────────────
 const usage = { input_tokens: 0, output_tokens: 0, web_searches: 0 };
 
-async function claude({ model, system, prompt, tool, maxSearches = 8 }) {
+async function claude({ model, system, prompt, tool, maxSearches = MAX_SEARCHES }) {
   const messages = [{ role: 'user', content: prompt }];
   for (let turn = 0; turn < 4; turn++) {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -217,7 +218,7 @@ async function extractModel(brand, model, vocab, titles) {
     console.log(`  ↻ ${model} : relance ${ESCALATE_MODEL} sur ${r.missing.join(', ')}`);
     const specMissing = r.missing.some((k) => ['weight_kg', 'source_image_urls'].includes(k));
     const keyMissing = r.missing.some((k) => !['weight_kg', 'source_image_urls'].includes(k));
-    const focus = `\nPRIORITÉ ABSOLUE, champs restés introuvables au premier passage : ${r.missing.join(', ')}. Cherche-les spécifiquement (au moins 3 requêtes dédiées à chacun).`;
+    const focus = `\nPRIORITÉ ABSOLUE, champs restés introuvables au premier passage : ${r.missing.join(', ')}. Cherche-les spécifiquement (plusieurs requêtes dédiées à chacun).`;
     if (specMissing) specs = { ...specs, ...pick(await claude({ model: ESCALATE_MODEL, system: SYSTEM, prompt: specsPrompt(brand, model) + focus, tool: TOOL_SPECS }), specs) };
     if (keyMissing) keys = { ...keys, ...pick(await claude({ model: ESCALATE_MODEL, system: SYSTEM, prompt: keysPrompt(brand, model, titles, vocab) + focus, tool: toolKeys(vocab) }), keys) };
     r = assembleScooter(brand, model, specs, keys, vocab);
@@ -245,7 +246,7 @@ async function main() {
 
   let models = MODELS;
   if (!models) {
-    const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: 5,
+    const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: Math.min(3, MAX_SEARCHES),
       prompt: `Liste les modèles de trottinettes électriques de la marque « ${BRAND} » actuellement vendus en France (revendeurs FR), du plus vendu au moins vendu. Un nom de modèle par entrée, sans la marque, sans variante de batterie.` });
     models = found.models.map((m) => m.name).slice(0, MAX_MODELS);
   }
