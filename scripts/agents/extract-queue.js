@@ -52,8 +52,9 @@ for (const it of batch) {
   if (!ok) {
     failed++;
     // Deux échecs de suite avec la même cause = panne générale (crédit, clé) : on arrête, on ne brûle pas la file
-    if (why && why === lastWhy) { console.log('Deux échecs identiques de suite : arrêt du run.'); break; }
-    lastWhy = why;
+    const sig = why.replace(/req_[A-Za-z0-9]+/g, '').replace(/[✖❌]\s*[^:]+:/g, '');
+    if (why && sig === lastWhy) { console.log('Deux échecs identiques de suite : arrêt du run.'); break; }
+    lastWhy = sig;
   } else lastWhy = null;
 }
 console.log(`Run terminé : ${attempted - failed}/${attempted} marques extraites (${batch.length - attempted} non tentées).`);
