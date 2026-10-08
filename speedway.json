@@ -1,0 +1,33 @@
+{
+  "brandName": "Speedway",
+  "scooters": [
+    {
+      "name": "Speedway Mini 4 Pro Lite",
+      "slug": "speedway-mini-4-pro-lite",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "year": 2019,
+      "max_speed_kmh": 25,
+      "weight_kg": 16,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "200x50 (8x2\")",
+      "foldable": true,
+      "wheel_inches": "8",
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263",
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4694519717.png"
+      ],
+      "brake_type": "drum",
+      "score_offroad": 23,
+      "description": "La Speedway Mini 4 Pro Lite de Minimotors est équipée d'un moteur de 350 W dans la roue arrière et d'une batterie 36 V 10 Ah pour environ 30 km d'autonomie. Elle roule sur des pneus 8 pouces (200x50) avec double suspension, frein à tambour arrière et frein électrique, pour un poids d'environ 16 kg ; sa vitesse est bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Speedway Mini 4 Pro Lite - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Speedway Mini 4 Pro Lite : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "speedway mini 4 pro lite, pieces speedway mini 4 pro lite, disque frein speedway mini 4 pro lite, plaquettes speedway mini 4 pro lite, pneu speedway mini 4 pro lite"
+    }
+  ]
+}

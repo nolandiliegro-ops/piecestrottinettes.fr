@@ -1,0 +1,538 @@
+{
+  "brandName": "Speedway",
+  "results": [
+    {
+      "scooter": {
+        "name": "Speedway Mini 4 Pro Lite",
+        "slug": "speedway-mini-4-pro-lite",
+        "voltage": 36,
+        "amperage": 10,
+        "power_watts": 350,
+        "max_speed_private_kmh": 30,
+        "range_km": 30,
+        "max_load_kg": 120,
+        "year": 2019,
+        "max_speed_kmh": 25,
+        "weight_kg": 16,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "200x50 (8x2\")",
+        "foldable": true,
+        "wheel_inches": "8",
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263",
+          "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4694519717.png"
+        ],
+        "brake_type": "drum",
+        "score_offroad": 23,
+        "description": "La Speedway Mini 4 Pro Lite de Minimotors est équipée d'un moteur de 350 W dans la roue arrière et d'une batterie 36 V 10 Ah pour environ 30 km d'autonomie. Elle roule sur des pneus 8 pouces (200x50) avec double suspension, frein à tambour arrière et frein électrique, pour un poids d'environ 16 kg ; sa vitesse est bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway Mini 4 Pro Lite - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway Mini 4 Pro Lite : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway mini 4 pro lite, pieces speedway mini 4 pro lite, disque frein speedway mini 4 pro lite, plaquettes speedway mini 4 pro lite, pneu speedway mini 4 pro lite"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+          "type": "revendeur",
+          "url2": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html"
+        },
+        "suspension": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16,
+            "source_url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "source_url_2": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-speedway-mini-4-pro-lite/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "source_url_2": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://samtrot.fr/trottinettes/208-975-speedway-mini-4-pro-lite-minimotors-trottinette-electrique.html",
+            "source_url_2": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "source_url_2": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "200x50 (8x2\")",
+            "source_url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+            "source_url_2": "https://www.quechoisir.org/comparatif-trottinettes-electriques-n86059/minimotors-speedway-mini-pro-lite-p244175/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+            "source_url_2": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro-lite",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2019,
+            "source_url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Speedway Mini 4 Pro Lite de Minimotors est équipée d'un moteur de 350 W dans la roue arrière et d'une batterie 36 V 10 Ah pour environ 30 km d'autonomie. Elle roule sur des pneus 8 pouces (200x50) avec double suspension, frein à tambour arrière et frein électrique, pour un poids d'environ 16 kg ; sa vitesse est bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro-lite",
+            "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+            "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263",
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4694519717.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro-lite",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Speedway 5",
+        "slug": "speedway-5",
+        "voltage": 60,
+        "amperage": 23.4,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 65,
+        "range_km": 70,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "suspension": "Double suspension pneumatique avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10x2,70-6,5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_5_pas_cher_1-364296.jpg?v=1754044223"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.70",
+        "caliper_family": "speedway_dualtron",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Speedway 5 de Minimotors est une trottinette électrique double moteur (2 x 1000 W) alimentée par une batterie 60V 23,4Ah. Elle repose sur des roues de 10 pouces (pneus 10x2,70-6,5) avec double suspension pneumatique, freins à disque avant et arrière plus frein électrique, et indice IP54. Elle est bridée à 25 km/h sur voie publique et peut atteindre 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway 5 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway 5 : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.70, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway 5, pieces speedway 5, disque frein speedway 5, plaquettes speedway 5, pneu speedway 5"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.imooving.com/trottinettes-electriques/594-trottinette-electrique-speedway-5-3701122100810.html",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5"
+        },
+        "suspension": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-SPEEDWAY-5-p414870405",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_5_pas_cher_1-364296.jpg?v=1754044223",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/produit/disque-de-frein-140mm",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "disc_holes": {
+          "url": "https://e-watts.fr/produit/disque-de-frein-140mm",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+          "type": "revendeur",
+          "url2": "https://alternative.bike/667-pneu-dualtron-3-et-speedway-5.html"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+          "type": "revendeur",
+          "url2": "https://alternative.bike/667-pneu-dualtron-3-et-speedway-5.html"
+        },
+        "caliper_family": {
+          "url": "https://www.out-fun.com/pieces-detachees-trottinettes-electriques/2520-plaquettes-de-freins-speedway-et-dualtron.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_pcd"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 23.4,
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_url_2": "https://www.glisseurbaine.com/speedway/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.imooving.com/trottinettes-electriques/594-trottinette-electrique-speedway-5-3701122100810.html",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://www.imooving.com/trottinettes-electriques/594-trottinette-electrique-speedway-5-3701122100810.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-SPEEDWAY-5-p414870405",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_url_2": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2,70-6,5",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+            "source_url_2": "https://youvelo.fr/103-pneu-chambre-a-air-trottinette-electrique-speedway",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension pneumatique avant et arrière",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_url_2": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-SPEEDWAY-5-p414870405",
+            "source_url_2": "https://trottinelec.fr/speedway-5-test-avis/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Speedway 5 de Minimotors est une trottinette électrique double moteur (2 x 1000 W) alimentée par une batterie 60V 23,4Ah. Elle repose sur des roues de 10 pouces (pneus 10x2,70-6,5) avec double suspension pneumatique, freins à disque avant et arrière plus frein électrique, et indice IP54. Elle est bridée à 25 km/h sur voie publique et peut atteindre 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "https://www.imooving.com/trottinettes-electriques/594-trottinette-electrique-speedway-5-3701122100810.html"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_5_pas_cher_1-364296.jpg?v=1754044223"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_url_2": "https://www.glisseurbaine.com/speedway/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-140mm",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-140mm",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "speedway_dualtron",
+            "source_url": "https://www.out-fun.com/pieces-detachees-trottinettes-electriques/2520-plaquettes-de-freins-speedway-et-dualtron.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Plaquettes-de-frein-pour-trottinette-electrique-speedway-4-5-p414870260",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.70",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+            "source_url_2": "https://alternative.bike/667-pneu-dualtron-3-et-speedway-5.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5",
+            "source_url_2": "https://alternative.bike/667-pneu-dualtron-3-et-speedway-5.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-5",
+            "source_url_2": "https://www.glisseurbaine.com/speedway/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
