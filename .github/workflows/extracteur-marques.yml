@@ -1,0 +1,76 @@
+name: Extracteur de marques — recherche de nuit
+
+# La nuit, on cherche ; le jour, on importe (décision de Nolan du 08/10/2026).
+# Produit les fichiers d'import + rapports de sources sur la branche « donnees-extraction ».
+# N'écrit RIEN en base, ne touche jamais main (pas de déploiement déclenché).
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/extraction-marques.json']   # modifier la file = lancer un run
+  schedule:
+    - cron: '0 1 * * *'                         # 01:00 UTC, actif seulement si nuit_active=true
+  workflow_dispatch:
+    inputs:
+      max:
+        description: 'Nombre max de marques pour ce run (vide = config)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extracteur-marques
+  cancel-in-progress: false
+
+jobs:
+  extraire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Garde de nuit
+        id: garde
+        run: |
+          ACTIVE=$(node -e "console.log(require('./config/extraction-marques.json').nuit_active===true)")
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$ACTIVE" != "true" ]; then
+            echo "Nuit désactivée (nuit_active=false) : rien à faire."; echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Préparer la branche de données
+        if: steps.garde.outputs.go == 'true'
+        run: |
+          git config --global user.name "extracteur-pt"
+          git config --global user.email "extracteur-pt@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin donnees-extraction >/dev/null; then
+            git fetch origin donnees-extraction
+            git worktree add ../data -B donnees-extraction origin/donnees-extraction
+          else
+            git worktree add --orphan -b donnees-extraction ../data
+          fi
+
+      - name: Extraire
+        if: steps.garde.outputs.go == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        run: |
+          MAX="${{ github.event.inputs.max }}"
+          node scripts/agents/extract-queue.js --data-dir ../data ${MAX:+--max $MAX}
+
+      - name: Publier les fichiers sur donnees-extraction
+        if: always() && steps.garde.outputs.go == 'true'
+        run: |
+          cd ../data
+          git add -- '*.json' '*.md' 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Aucun fichier nouveau."; exit 0; fi
+          git commit -m "extraction : run ${{ github.run_id }}"
+          git push origin donnees-extraction

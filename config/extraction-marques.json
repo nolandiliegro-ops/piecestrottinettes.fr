@@ -1,0 +1,257 @@
+{
+  "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
+  "nuit_active": false,
+  "max_marques_par_run": 1,
+  "file": [
+    {
+      "brand": "Vsett",
+      "models": [
+        "9+",
+        "10+",
+        "11+"
+      ],
+      "out": "vsett-banc",
+      "note": "banc d'essai : valeurs connues en base"
+    },
+    {
+      "brand": "Speedway",
+      "max_models": 2,
+      "out": "speedway",
+      "tier": "A"
+    },
+    {
+      "brand": "Urbanglide",
+      "max_models": 2,
+      "out": "urbanglide",
+      "tier": "A"
+    },
+    {
+      "brand": "E-Twow",
+      "max_models": 2,
+      "out": "e-twow",
+      "tier": "A"
+    },
+    {
+      "brand": "Kugoo",
+      "max_models": 2,
+      "out": "kugoo",
+      "tier": "A"
+    },
+    {
+      "brand": "Engwe",
+      "max_models": 2,
+      "out": "engwe",
+      "tier": "A"
+    },
+    {
+      "brand": "Nutt",
+      "max_models": 2,
+      "out": "nutt",
+      "tier": "A"
+    },
+    {
+      "brand": "Navee",
+      "max_models": 2,
+      "out": "navee",
+      "tier": "A"
+    },
+    {
+      "brand": "NIU",
+      "max_models": 2,
+      "out": "niu",
+      "tier": "A"
+    },
+    {
+      "brand": "Inmotion",
+      "max_models": 2,
+      "out": "inmotion",
+      "tier": "A"
+    },
+    {
+      "brand": "Teverun",
+      "max_models": 2,
+      "out": "teverun",
+      "tier": "A"
+    },
+    {
+      "brand": "Nami",
+      "max_models": 2,
+      "out": "nami",
+      "tier": "A"
+    },
+    {
+      "brand": "Kingsong",
+      "max_models": 2,
+      "out": "kingsong",
+      "tier": "A"
+    },
+    {
+      "brand": "Punk",
+      "max_models": 2,
+      "out": "punk",
+      "tier": "A"
+    },
+    {
+      "brand": "Micro",
+      "max_models": 2,
+      "out": "micro",
+      "tier": "A"
+    },
+    {
+      "brand": "Hikerboy",
+      "max_models": 2,
+      "out": "hikerboy",
+      "tier": "A"
+    },
+    {
+      "brand": "Wispeed",
+      "max_models": 2,
+      "out": "wispeed",
+      "tier": "B"
+    },
+    {
+      "brand": "Joyor",
+      "max_models": 2,
+      "out": "joyor",
+      "tier": "B"
+    },
+    {
+      "brand": "iScooter",
+      "max_models": 2,
+      "out": "iscooter",
+      "tier": "B"
+    },
+    {
+      "brand": "Hitway",
+      "max_models": 2,
+      "out": "hitway",
+      "tier": "B"
+    },
+    {
+      "brand": "Ducati",
+      "max_models": 2,
+      "out": "ducati",
+      "tier": "B"
+    },
+    {
+      "brand": "Aprilia",
+      "max_models": 2,
+      "out": "aprilia",
+      "tier": "B"
+    },
+    {
+      "brand": "Globber",
+      "max_models": 2,
+      "out": "globber",
+      "tier": "B"
+    },
+    {
+      "brand": "Oxelo",
+      "max_models": 2,
+      "out": "oxelo",
+      "tier": "B"
+    },
+    {
+      "brand": "Yeep.me",
+      "max_models": 2,
+      "out": "yeep-me",
+      "tier": "B"
+    },
+    {
+      "brand": "Zwheel",
+      "max_models": 2,
+      "out": "zwheel",
+      "tier": "B"
+    },
+    {
+      "brand": "Adrya",
+      "max_models": 2,
+      "out": "adrya",
+      "tier": "B"
+    },
+    {
+      "brand": "Weped",
+      "max_models": 2,
+      "out": "weped",
+      "tier": "B"
+    },
+    {
+      "brand": "Mercane",
+      "max_models": 2,
+      "out": "mercane",
+      "tier": "B"
+    },
+    {
+      "brand": "SoFlow",
+      "max_models": 2,
+      "out": "soflow",
+      "tier": "B"
+    },
+    {
+      "brand": "Smartgyro",
+      "max_models": 2,
+      "out": "smartgyro",
+      "tier": "B"
+    },
+    {
+      "brand": "Bronco",
+      "max_models": 2,
+      "out": "bronco",
+      "tier": "C"
+    },
+    {
+      "brand": "Langfeite",
+      "max_models": 2,
+      "out": "langfeite",
+      "tier": "C"
+    },
+    {
+      "brand": "Isinwheel",
+      "max_models": 2,
+      "out": "isinwheel",
+      "tier": "C"
+    },
+    {
+      "brand": "Hiboy",
+      "max_models": 2,
+      "out": "hiboy",
+      "tier": "C"
+    },
+    {
+      "brand": "Kuickwheel",
+      "max_models": 2,
+      "out": "kuickwheel",
+      "tier": "C"
+    },
+    {
+      "brand": "Halo Knight",
+      "max_models": 2,
+      "out": "halo-knight",
+      "tier": "C"
+    },
+    {
+      "brand": "Apollo",
+      "max_models": 2,
+      "out": "apollo",
+      "tier": "C"
+    },
+    {
+      "brand": "Laotie",
+      "max_models": 2,
+      "out": "laotie",
+      "tier": "C"
+    },
+    {
+      "brand": "Beaster",
+      "max_models": 2,
+      "out": "beaster",
+      "tier": "C"
+    },
+    {
+      "brand": "Jeep",
+      "max_models": 2,
+      "out": "jeep",
+      "tier": "C"
+    }
+  ]
+}

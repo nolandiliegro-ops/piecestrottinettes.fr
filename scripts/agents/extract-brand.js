@@ -17,7 +17,9 @@
  *   node scripts/agents/extract-brand.js --brand "Vsett" --models "9+,10+,11+" --out vsett-banc
  *   options : --max-models 3 · --model <id> · --escalate (relance Opus, OPT-IN : coûte plus cher) · --escalate-model <id> · --max-searches 5
  *
- * .env (racine du dépôt) : ANTHROPIC_API_KEY, VITE_SUPABASE_URL, VITE_SUPABASE_PUBLISHABLE_KEY.
+ * Variables : ANTHROPIC_API_KEY (.env local ou secret GitHub). URL + clé publishable Supabase :
+ *   .env si présentes, sinon relues dans src/integrations/supabase/client.ts (publiques par conception).
+ * --out-dir <dossier> : dossier de sortie (défaut scripts/data).
  * Aucun secret d'écriture n'est utilisé : ce script ne touche pas la base.
  */
 
@@ -42,12 +44,13 @@ const MODEL = opt('model', 'claude-sonnet-5-5');
 const ESCALATE_MODEL = args.includes('--escalate') ? opt('escalate-model', 'claude-opus-5-5') : null;
 const MAX_SEARCHES = Number(opt('max-searches', '5'));
 const OUT = slugify(opt('out', BRAND));
+const OUT_DIR = resolve(process.cwd(), opt('out-dir', resolve(ROOT, 'scripts/data')));
 
-// ─── .env ─────────────────────────────────────────────────────────────────────
+// ─── .env (optionnel : en CI les variables viennent des secrets) ──────────────
 function loadEnv() {
   let content;
   try { content = readFileSync(resolve(ROOT, '.env'), 'utf-8'); }
-  catch { console.error('❌ .env introuvable à la racine du dépôt'); process.exit(1); }
+  catch { return {}; }
   const env = {};
   for (const line of content.split('\n')) {
     const m = line.match(/^([^#=][^=]*)=["']?([^"'\r\n]*)["']?/);
@@ -55,9 +58,23 @@ function loadEnv() {
   }
   return env;
 }
+// URL et clé PUBLISHABLE du site : publiques par conception (déjà dans le front),
+// relues dans le client Supabase du dépôt si l'environnement ne les fournit pas.
+function publicSupabase() {
+  try {
+    const src = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
+    return {
+      url: src.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/)?.[1],
+      key: src.match(/VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"([^"]+)"/)?.[1],
+    };
+  } catch { return {}; }
+}
 const env = { ...loadEnv(), ...process.env };
+const pub = publicSupabase();
+env.VITE_SUPABASE_URL ||= env.SUPABASE_URL || pub.url;
+env.VITE_SUPABASE_PUBLISHABLE_KEY ||= pub.key;
 for (const k of ['ANTHROPIC_API_KEY', 'VITE_SUPABASE_URL', 'VITE_SUPABASE_PUBLISHABLE_KEY']) {
-  if (!env[k]) { console.error(`❌ ${k} absent du .env — arrêt avant tout appel`); process.exit(1); }
+  if (!env[k]) { console.error(`❌ ${k} absent (.env local ou secret CI) — arrêt avant tout appel`); process.exit(1); }
 }
 
 // ─── Lecture publique de la base (référentiels + nos titres de pièces) ────────
@@ -262,7 +279,7 @@ async function main() {
   const faults = findMissingBrakeKeys([{ brandName: BRAND, scooters: ready.filter((s) => !/^drum/.test(s.brake_type || '')) }]);
   if (faults.length) throw new Error(`Incohérence interne : modèle PRÊT sans clés disque ${JSON.stringify(faults)}`);
 
-  const dir = resolve(ROOT, 'scripts/data');
+  const dir = OUT_DIR;
   mkdirSync(dir, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
   writeFileSync(resolve(dir, `${OUT}.json`), JSON.stringify({ brandName: BRAND, scooters: ready }, null, 2));
