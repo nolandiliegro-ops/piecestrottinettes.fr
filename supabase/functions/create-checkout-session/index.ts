@@ -42,9 +42,13 @@ interface PromoResult {
   discount_type?: string;
   discount_value?: number;
   code?: string;
+  max_discount_eur?: number | null;
 }
 
-async function validatePromoCode(supabase: any, code: string): Promise<PromoResult> {
+// Catégories exclues des remises en pourcentage (marges trop faibles)
+const PERCENT_PROMO_EXCLUDED_CATEGORIES = ["trottinettes", "batteries"];
+
+async function validatePromoCode(supabase: any, code: string, userId: string | null): Promise<PromoResult> {
   const { data, error } = await supabase
     .from("promo_codes")
     .select("*")
@@ -59,9 +63,26 @@ async function validatePromoCode(supabase: any, code: string): Promise<PromoResu
     return { valid: false };
   }
 
-  // Check max uses
-  if (data.max_uses !== null && data.current_uses >= data.max_uses) {
+  // Code personnel : réservé à son propriétaire connecté
+  if (data.user_id && data.user_id !== userId) {
     return { valid: false };
+  }
+
+  // Pas avant la date d'ouverture de l'offre
+  if (data.valid_from && new Date(data.valid_from) > new Date()) {
+    return { valid: false };
+  }
+
+  // Max uses — compté sur les commandes PAYÉES (un panier abandonné ne brûle pas le code)
+  if (data.max_uses !== null) {
+    const { count } = await supabase
+      .from("orders")
+      .select("id", { count: "exact", head: true })
+      .eq("promo_code", data.code)
+      .eq("status", "paid");
+    if ((count ?? 0) >= data.max_uses) {
+      return { valid: false };
+    }
   }
 
   return {
@@ -69,6 +90,7 @@ async function validatePromoCode(supabase: any, code: string): Promise<PromoResu
     discount_type: data.discount_type,
     discount_value: data.discount_value,
     code: data.code,
+    max_discount_eur: data.max_discount_eur ?? null,
   };
 }
 
@@ -101,7 +123,24 @@ serve(async (req) => {
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
     const stripe = new Stripe(stripeKey, { apiVersion: "2023-10-16" });
 
+    // Boutique fermée tant que le secret SHOP_OPEN n'est pas "true"
+    if (Deno.env.get("SHOP_OPEN") !== "true") {
+      return new Response(
+        JSON.stringify({ error: "SHOP_CLOSED", message: "La boutique ouvre bientôt : les commandes ne sont pas encore ouvertes." }),
+        { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 403 }
+      );
+    }
+
     const { items, customerInfo, deliveryMethod, notes, promoCode }: CheckoutRequest = await req.json();
+
+    // Get user ID (nécessaire pour valider les codes personnels)
+    let userId: string | null = null;
+    const authHeader = req.headers.get("Authorization");
+    if (authHeader) {
+      const token = authHeader.replace("Bearer ", "");
+      const { data: userData } = await supabase.auth.getUser(token);
+      userId = userData?.user?.id || null;
+    }
 
     if (!items || items.length === 0) throw new Error("Le panier est vide");
 
@@ -112,7 +151,7 @@ serve(async (req) => {
     const partIds = items.map(item => item.id);
     const { data: parts, error: partsError } = await supabase
       .from("parts")
-      .select("id, name, price, stock_quantity, image_url")
+      .select("id, name, price, stock_quantity, image_url, categories(slug)")
       .in("id", partIds);
 
     if (partsError) throw new Error(`Erreur récupération produits: ${partsError.message}`);
@@ -121,6 +160,7 @@ serve(async (req) => {
     // Calculate subtotal and validate stock
     const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
     let subtotalHT = 0;
+    let percentEligibleHT = 0;
 
     for (const cartItem of items) {
       const part = parts.find(p => p.id === cartItem.id);
@@ -131,6 +171,10 @@ serve(async (req) => {
       if (!part.price) throw new Error(`Prix non défini pour ${part.name}`);
 
       subtotalHT += part.price * cartItem.quantity;
+      const catSlug = (part as any).categories?.slug ?? null;
+      if (!PERCENT_PROMO_EXCLUDED_CATEGORIES.includes(catSlug)) {
+        percentEligibleHT += part.price * cartItem.quantity;
+      }
 
       lineItems.push({
         price_data: {
@@ -153,18 +197,23 @@ serve(async (req) => {
 
     // Validate promo code
     let appliedPromoCode: string | null = null;
+    let productDiscount = 0; // montant (€) déduit des produits, transmis à Stripe
     if (promoCode) {
-      const promo = await validatePromoCode(supabase, promoCode);
+      const promo = await validatePromoCode(supabase, promoCode, userId);
       if (promo.valid) {
         appliedPromoCode = promo.code!;
         if (promo.discount_type === "shipping") {
           deliveryPrice = 0;
         } else if (promo.discount_type === "percent") {
-          const discount = subtotalHT * (promo.discount_value! / 100);
-          subtotalHT -= discount;
+          productDiscount = percentEligibleHT * (promo.discount_value! / 100);
+          if (promo.max_discount_eur != null) {
+            productDiscount = Math.min(productDiscount, Number(promo.max_discount_eur));
+          }
         } else if (promo.discount_type === "fixed") {
-          subtotalHT = Math.max(0, subtotalHT - promo.discount_value!);
+          productDiscount = Math.min(subtotalHT, promo.discount_value!);
         }
+        productDiscount = Math.round(productDiscount * 100) / 100;
+        subtotalHT = Math.max(0, subtotalHT - productDiscount);
 
         // Increment promo usage
         const { data: currentPromo } = await supabase
@@ -216,15 +265,6 @@ serve(async (req) => {
     }
 
     const orderNumber = `PT-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-
-    // Get user ID
-    let userId = null;
-    const authHeader = req.headers.get("Authorization");
-    if (authHeader) {
-      const token = authHeader.replace("Bearer ", "");
-      const { data: userData } = await supabase.auth.getUser(token);
-      userId = userData?.user?.id || null;
-    }
 
     // Create order
     const { data: order, error: orderError } = await supabase
@@ -282,7 +322,22 @@ serve(async (req) => {
     // Create Stripe session
     const origin = req.headers.get("origin") || "https://piecestrottinettes.fr";
 
+    // La remise doit arriver chez Stripe, sinon le client paie plein tarif
+    let stripeDiscounts: Stripe.Checkout.SessionCreateParams.Discount[] | undefined;
+    if (productDiscount > 0) {
+      const coupon = await stripe.coupons.create({
+        amount_off: Math.round(productDiscount * 100),
+        currency: "eur",
+        duration: "once",
+        max_redemptions: 1,
+        name: `Code ${appliedPromoCode}`,
+        metadata: { order_id: order.id, promo_code: appliedPromoCode ?? "" },
+      });
+      stripeDiscounts = [{ coupon: coupon.id }];
+    }
+
     const session = await stripe.checkout.sessions.create({
+      discounts: stripeDiscounts,
       customer: customerId,
       customer_email: customerId ? undefined : customerInfo.email,
       line_items: lineItems,
