@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback, ReactNode } from 'react';
 import { CartItem, CartTotals } from '@/types/cart';
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface CartContextType {
   items: CartItem[];
@@ -28,7 +29,15 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     }
   });
   
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpenState] = useState(false);
+  // Pré-lancement : le panier ne s'ouvre pas, on montre la pop-up à la place
+  const setIsOpen = useCallback((open: boolean) => {
+    if (open && !SHOP_OPEN) {
+      openPrelaunch();
+      return;
+    }
+    setIsOpenState(open);
+  }, []);
 
   // Sync to LocalStorage
   useEffect(() => {
@@ -51,6 +60,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   // Add item (merge if exists)
   const addItem = useCallback((newItem: Omit<CartItem, 'quantity'>) => {
+    // Pré-lancement : aucun ajout, on ouvre la pop-up carte Rider
+    if (!SHOP_OPEN) {
+      openPrelaunch();
+      return;
+    }
     setItems((currentItems) => {
       const existingIndex = currentItems.findIndex((item) => item.id === newItem.id);
       

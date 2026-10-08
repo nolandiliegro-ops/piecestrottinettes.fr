@@ -4,6 +4,8 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Checkbox } from '@/components/ui/checkbox';
+import { RIDER_LAUNCH_OFFER } from '@/config/launch';
 import { Loader2, UserPlus, ArrowLeft, Gift } from 'lucide-react';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
@@ -26,6 +28,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [marketingConsent, setMarketingConsent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [errors, setErrors] = useState<{ 
@@ -59,7 +62,7 @@ const Register = () => {
     }
 
     setIsLoading(true);
-    const { error } = await signUp(email, password, displayName);
+    const { error } = await signUp(email, password, displayName, marketingConsent);
     setIsLoading(false);
 
     if (error) {
@@ -258,6 +261,19 @@ const Register = () => {
                 {errors.confirmPassword && (
                   <p className="text-sm text-destructive">{errors.confirmPassword}</p>
                 )}
+              </div>
+
+              <div className="flex items-start gap-3 rounded-lg bg-white/50 p-3">
+                <Checkbox
+                  id="marketingConsent"
+                  checked={marketingConsent}
+                  onCheckedChange={(v) => setMarketingConsent(v === true)}
+                  disabled={isLoading || isGoogleLoading}
+                  className="mt-0.5 h-5 w-5"
+                />
+                <Label htmlFor="marketingConsent" className="text-[14px] font-normal leading-snug text-carbon cursor-pointer">
+                  Je veux recevoir l'email d'ouverture du shop avec mon code -{RIDER_LAUNCH_OFFER.percent}&nbsp;%, et les bons plans pièces. Désinscription en un clic.
+                </Label>
               </div>
 
               <Button

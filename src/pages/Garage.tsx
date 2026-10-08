@@ -12,6 +12,7 @@ import { useOrderConversations } from '@/hooks/useOrderMessages';
 import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
+import RiderLaunchCode from '@/components/launch/RiderLaunchCode';
 import GarageTimeline from '@/components/garage/GarageTimeline';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
@@ -309,6 +310,9 @@ const Garage = () => {
                       <Wallpaper className="size-4 text-gray-700" />
                     </button>
                   </div>
+                  <div className="order-1 lg:hidden">
+                    <RiderLaunchCode />
+                  </div>
 
                   <aside className="order-7 lg:order-3 flex flex-col gap-4">
                     {/* RiderProfileCard desktop uniquement (mobile rendu en order-1 ci-dessus) */}
@@ -327,6 +331,9 @@ const Garage = () => {
                       >
                         <Wallpaper className="size-4 text-gray-700" />
                       </button>
+                    </div>
+                    <div className="hidden lg:block">
+                      <RiderLaunchCode />
                     </div>
                     <Suspense
                       fallback={

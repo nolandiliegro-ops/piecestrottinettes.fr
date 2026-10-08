@@ -10,6 +10,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useGarageScooters } from "@/hooks/useGarageScooters";
 import MarkAsInstalledDialog from "@/components/garage/MarkAsInstalledDialog";
 import { chargeVoltageOf, formatVolts } from "@/lib/batteryVoltage";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface PurchaseBlockProps {
   id: string;
@@ -61,6 +62,7 @@ const PurchaseBlock = ({
   const canMarkAsInstalled = !!user && scooters && scooters.length > 0;
 
   const handleAddToCart = () => {
+    if (!SHOP_OPEN) { openPrelaunch(); return; }
     if (!isInStock || price === null || isAdding) return;
     setIsAdding(true);
 
@@ -187,7 +189,7 @@ const PurchaseBlock = ({
           ) : (
             <>
               <ShoppingCart className="w-5 h-5 mr-3" />
-              Ajouter au panier
+              {SHOP_OPEN ? 'Ajouter au panier' : 'Bientôt disponible'}
             </>
           )}
         </Button>

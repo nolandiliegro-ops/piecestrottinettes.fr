@@ -7,6 +7,7 @@ import { useCart } from "@/hooks/useCart";
 import DifficultyIndicator from "@/components/parts/DifficultyIndicator";
 import { toast } from "sonner";
 import { getBrandColors } from "@/contexts/ScooterContext";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface Part {
   id: string;
@@ -78,6 +79,7 @@ const QuickViewModal = ({
   }, [isOpen, onClose]);
 
   const handleAddToCart = () => {
+    if (!SHOP_OPEN) { openPrelaunch(); return; }
     if (part.price === null || !isInStock) return;
     
     addItem({

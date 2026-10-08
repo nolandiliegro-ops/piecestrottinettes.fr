@@ -39,6 +39,7 @@ import { cn } from "@/lib/utils";
 import { usePartBySlug } from "@/hooks/usePartDetail";
 import { stripHtml } from "@/lib/sanitizeHtml";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 /* ── Charte (alignée sur le module + mockup) ─────────────────────────────── */
 const C = {
@@ -428,6 +429,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
   };
 
   const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     if (!canBuy || part.price === null) return;
     spawnRipple(e);
 

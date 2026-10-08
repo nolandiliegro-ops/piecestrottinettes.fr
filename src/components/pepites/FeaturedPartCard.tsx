@@ -6,6 +6,7 @@ import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
 import { toast } from "sonner";
 import type { Tables } from "@/integrations/supabase/types";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface FeaturedPartCardProps {
   part: Tables<'parts'>;
@@ -16,6 +17,7 @@ const FeaturedPartCard = ({ part, index }: FeaturedPartCardProps) => {
   const { addItem } = useCart();
 
   const handleAddToCart = (e: React.MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.preventDefault();
     e.stopPropagation();
     

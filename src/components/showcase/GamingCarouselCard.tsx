@@ -7,6 +7,7 @@ import { useCart } from "@/hooks/useCart";
 import { useFavorites } from "@/hooks/useFavorites";
 import { toast } from "sonner";
 import CategoryBadge from "./CategoryBadge";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface Part {
   id: string;
@@ -95,6 +96,7 @@ const GamingCarouselCard = ({
   };
 
   const handleAddToCart = (e: React.MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.stopPropagation();
     if (part.price === null) return;
     
@@ -135,6 +137,7 @@ const GamingCarouselCard = ({
   };
 
   const handleDirectOrder = (e: React.MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.stopPropagation();
     if (isOrdering || part.price === null) return;
     

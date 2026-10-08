@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { formatPrice } from "@/lib/formatPrice";
 import { useCart } from "@/hooks/useCart";
 import { toast } from "sonner";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface Part {
   id: string;
@@ -85,6 +86,7 @@ const CompatiblePartsGrid = ({
   }, [parts, activeFilter, sortBy]);
 
   const handleAddToCart = (e: React.MouseEvent, part: Part) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.stopPropagation();
     if (part.stock_quantity <= 0) {
       toast.error("Ce produit est en rupture de stock");

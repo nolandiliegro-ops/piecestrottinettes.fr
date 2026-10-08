@@ -15,6 +15,7 @@ import type { FitmentPosition } from "@/lib/compatibilityStatus";
 import { toast } from "sonner";
 import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
@@ -130,6 +131,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
   // Quick-add to cart handler
   const handleQuickAdd = (e: MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.preventDefault();
     e.stopPropagation();
     

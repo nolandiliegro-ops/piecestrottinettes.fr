@@ -10,6 +10,7 @@ import { formatPrice } from "@/lib/formatPrice";
 import { resolveCategoryColor, getCategoryTextColor, getShortLabel } from "@/lib/categoryColors";
 import { cn } from "@/lib/utils";
 import type { CompatiblePartRich } from "@/hooks/useCompatiblePartsRich";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface Props {
   part: CompatiblePartRich;
@@ -106,6 +107,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
   const isCarousel = variant === "carousel";
 
   const handleQuickAdd = (e: React.MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.preventDefault();
     e.stopPropagation();
     if (isOut || part.price === null) return;

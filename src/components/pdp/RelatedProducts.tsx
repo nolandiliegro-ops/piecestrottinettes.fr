@@ -5,6 +5,7 @@ import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/lib/formatPrice";
 import { Skeleton } from "@/components/ui/skeleton";
 import { toast } from "sonner";
+import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
 interface RelatedPart {
   id: string;
@@ -39,6 +40,7 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
   if (!parts || parts.length === 0) return null;
 
   const handleAddToCart = (part: RelatedPart, e: React.MouseEvent) => {
+    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
     e.preventDefault();
     e.stopPropagation();
     if (!part.price || !part.stock_quantity || part.stock_quantity <= 0) return;

@@ -13,6 +13,8 @@ import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import PrelaunchModal from "./components/launch/PrelaunchModal";
+import ShopGate from "./components/launch/ShopGate";
 import GarageErrorBoundary from "./components/garage/GarageErrorBoundary";
 import BrandHelmet from "./components/BrandHelmet";
 import { useDesignTokens } from "@/hooks/useDesignTokens";
@@ -80,6 +82,7 @@ function App() {
                 <SpotlightCommand />
                 <CartSidebar />
                 <MobileNav />
+                <PrelaunchModal />
             <Suspense fallback={<PageLoader />}>
             <Routes>
             <Route path="/" element={<Index />} />
@@ -97,8 +100,8 @@ function App() {
             <Route path="/login" element={<Login />} />
 
             <Route path="/register" element={<Register />} />
-            <Route path="/panier" element={<CartPage />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/panier" element={<ShopGate><CartPage /></ShopGate>} />
+            <Route path="/checkout" element={<ShopGate><CheckoutPage /></ShopGate>} />
             <Route path="/order-success" element={<OrderSuccessPage />} />
             <Route path="/payment-success" element={<PaymentSuccessPage />} />
             <Route path="/garage" element={
