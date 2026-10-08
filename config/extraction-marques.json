@@ -1,7 +1,7 @@
 {
   "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
   "nuit_active": false,
-  "max_marques_par_run": 0,
+  "max_marques_par_run": 13,
   "file": [
     {
       "brand": "Vsett",

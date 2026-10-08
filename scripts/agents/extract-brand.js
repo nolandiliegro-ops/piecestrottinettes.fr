@@ -117,7 +117,7 @@ const usage = { input_tokens: 0, output_tokens: 0, web_searches: 0 };
 
 async function claude({ model, system, prompt, tool, maxSearches = MAX_SEARCHES }) {
   const messages = [{ role: 'user', content: prompt }];
-  for (let turn = 0; turn < 4; turn++) {
+  for (let turn = 0, retry = 0; turn < 4; turn++) {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
@@ -126,6 +126,13 @@ async function claude({ model, system, prompt, tool, maxSearches = MAX_SEARCHES 
         tools: [tool, { type: 'web_search_20250305', name: 'web_search', max_uses: maxSearches }],
       }),
     });
+    // Limite de débit / surcharge : on attend et on réessaie (3 fois max), sans compter le tour
+    if ([429, 500, 529].includes(res.status) && retry < 3) {
+      const wait = Math.min(120, Number(res.headers.get('retry-after')) || 30 * (retry + 1));
+      console.log(`  ⏳ API ${res.status} — nouvel essai dans ${wait}s`);
+      await new Promise((r) => setTimeout(r, wait * 1000));
+      retry++; turn--; continue;
+    }
     if (!res.ok) throw new Error(`Anthropic ${res.status}: ${(await res.text()).slice(0, 400)}`);
     const data = await res.json();
     usage.input_tokens += data.usage?.input_tokens || 0;
