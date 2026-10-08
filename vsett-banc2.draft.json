@@ -1,0 +1,777 @@
+{
+  "brandName": "Vsett",
+  "results": [
+    {
+      "scooter": {
+        "name": "Vsett 9+",
+        "slug": "vsett-9-plus",
+        "voltage": 48,
+        "amperage": 21,
+        "power_watts": 1300,
+        "max_speed_private_kmh": 53,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 27,
+        "suspension": "Avant et arrière à ressorts, réglables",
+        "ip_rating": "IP54",
+        "tire_size": "8.5 x 3 pouces, pneus gonflables (chambre à air) avant et arrière",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "134mm",
+        "tire_section": "8.5x3",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Vsett 9+ est une trottinette électrique double moteur (2 x 650 W brushless) alimentée par une batterie 48 V LG (jusqu'à 21 Ah / 1008 Wh pour la version Pro), avec des pneus gonflables de 8,5 pouces, des suspensions avant et arrière et des freins à disque avant et arrière associés à un frein électronique. Elle est bridée à 25 km/h en usage sur voie publique, sa vitesse maximale sur terrain privé atteignant environ 53 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 9+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 9+ : disque de frein 120 mm 6 trous, plaquettes, pneus 8.5x3, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 9+, pieces vsett 9+, disque frein vsett 9+, plaquettes vsett 9+, pneu vsett 9+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vsett.com/products/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://vsett.com/products/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vsettscooters.com/pages/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://vsettscooters.com/pages/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://vsett.com/products/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://scooter.guide/vsett-9-plus-dual-motor-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://vsettscooters.com/pages/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://scooter.guide/vsett-9-plus-dual-motor-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+          "type": "distributeur"
+        },
+        "brake_type": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/vsett-9-pls",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+          "type": "distributeur"
+        },
+        "disc_pcd": {
+          "url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+          "type": "distributeur"
+        },
+        "disc_holes": {
+          "url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://vsett-shop.com/product/vsett-9/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://swiss-distribution.com/produit/pneu-plein-pour-trottinettes-electriques-vsett-9/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://vsett.com/products/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 21,
+            "source_url": "https://vsett.com/products/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1300,
+            "source_url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 53,
+            "source_url": "https://vsettscooters.com/pages/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "source_type": "distributeur"
+          },
+          "weight_kg": {
+            "value": 27,
+            "source_url": "https://vsett.com/products/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://vsettscooters.com/pages/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "8.5 x 3 pouces, pneus gonflables (chambre à air) avant et arrière",
+            "source_url": "https://scooter.guide/vsett-9-plus-dual-motor-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "suspension": {
+            "value": "Avant et arrière à ressorts, réglables",
+            "source_url": "https://scooter.guide/vsett-9-plus-dual-motor-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://vsettscooters.com/pages/vsett-9-plus",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 9+ est une trottinette électrique double moteur (2 x 650 W brushless) alimentée par une batterie 48 V LG (jusqu'à 21 Ah / 1008 Wh pour la version Pro), avec des pneus gonflables de 8,5 pouces, des suspensions avant et arrière et des freins à disque avant et arrière associés à un frein électronique. Elle est bridée à 25 km/h en usage sur voie publique, sa vitesse maximale sur terrain privé atteignant environ 53 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_9_pro.html",
+            "https://www.gyro-phare.com/24-trottinette-bimoteur-vsett-9-48v-21ah-pro.html",
+            "https://store-vsett.fr/trottinettes-electriques/22-trottinette-electrique-vsett-9-plus-super-48-v-192-ah-3701522004893.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/vsett-9-pls",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_type": "distributeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_type": "distributeur"
+          },
+          "tire_section": {
+            "value": "8.5x3",
+            "source_url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "134mm",
+            "source_url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://vsett-shop.com/product/vsett-9/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://swiss-distribution.com/produit/pneu-plein-pour-trottinettes-electriques-vsett-9/",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 10+",
+        "slug": "vsett-10-plus",
+        "voltage": 60,
+        "amperage": 28,
+        "power_watts": 2800,
+        "max_speed_private_kmh": 80,
+        "range_km": 90,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 39,
+        "suspension": "Avant ressort + arrière hydraulique (réglable)",
+        "ip_rating": "IP54",
+        "tire_size": "10 x 3 pouces (pneumatique)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-PLUS-BIG-DISPLAY.jpeg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "caliper_family": "sram_avid",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Vsett 10+ est une trottinette électrique bi-moteur équipée de deux moteurs roue de 1400 W (2800 W au total) alimentés par une batterie 60 V de 20,8 à 28 Ah selon la version. Elle roule sur des pneus pneumatiques de 10 x 3 pouces, avec freins à disque hydrauliques avant et arrière plus frein moteur, suspensions avant et arrière, et une vitesse bridée à 25 km/h sur voie publique (jusqu'à 80 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 10+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 10+ : disque de frein 160 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 10+, pieces vsett 10+, disque frein vsett 10+, plaquettes vsett 10+, pneu vsett 10+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vsett-shop.com/product/vsett-10/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://vsett-shop.com/product/vsett-10/",
+          "type": "distributeur"
+        },
+        "suspension": {
+          "url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://vsettscooters.com/pages/vsett-10-plus",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-PLUS-BIG-DISPLAY.jpeg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://store-vsett.fr/trottinettes-electriques/24-trottinette-electrique-vsett-10-plus-lite-60-v-208-ah-3701522004879.html",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://vsett-shop.com/product/vsett-10/",
+          "type": "constructeur"
+        },
+        "disc_pcd": {
+          "url": "https://fastride.fr/fr/100-accessoire-vsett",
+          "type": "revendeur"
+        },
+        "disc_holes": {
+          "url": "https://fastride.fr/fr/100-accessoire-vsett",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://store-vsett.fr/pneu/1418-pneu-10-pour-trottinette-electrique-vsett-10-3701522005814.html",
+          "type": "distributeur"
+        },
+        "tire_section": {
+          "url": "https://store-vsett.fr/pneu/1418-pneu-10-pour-trottinette-electrique-vsett-10-3701522005814.html",
+          "type": "distributeur"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://vsett-shop.com/product/vsett-10/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 39,
+            "source_url": "https://vsett-shop.com/product/vsett-10/",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://vsett-shop.com/product/vsett-10/",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 28,
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2800,
+            "source_url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 80,
+            "source_url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 90,
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 3 pouces (pneumatique)",
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant ressort + arrière hydraulique (réglable)",
+            "source_url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://vsettscooters.com/pages/vsett-10-plus",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 10+ est une trottinette électrique bi-moteur équipée de deux moteurs roue de 1400 W (2800 W au total) alimentés par une batterie 60 V de 20,8 à 28 Ah selon la version. Elle roule sur des pneus pneumatiques de 10 x 3 pouces, avec freins à disque hydrauliques avant et arrière plus frein moteur, suspensions avant et arrière, et une vitesse bridée à 25 km/h sur voie publique (jusqu'à 80 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-10/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://vsett-shop.com/product/vsett-10/",
+            "https://www.glisseurbaine.com/1325-trottinette-bimoteur-vsett-10-60v-28ah-pro.html",
+            "https://www.trottnshop.com/produit/trottinette-electrique-vsett-10/"
+          ],
+          "_og_images": [
+            "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-PLUS-BIG-DISPLAY.jpeg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://store-vsett.fr/trottinettes-electriques/24-trottinette-electrique-vsett-10-plus-lite-60-v-208-ah-3701522004879.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://vsett-shop.com/product/vsett-10/",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/fr/100-accessoire-vsett",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://fastride.fr/fr/100-accessoire-vsett",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://store-vsett.fr/pneu/1418-pneu-10-pour-trottinette-electrique-vsett-10-3701522005814.html",
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://store-vsett.fr/pneu/1418-pneu-10-pour-trottinette-electrique-vsett-10-3701522005814.html",
+            "source_type": "distributeur"
+          },
+          "caliper_family": {
+            "value": "sram_avid",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://vsett-shop.com/product/vsett-10/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 11+",
+        "slug": "vsett-11-plus",
+        "voltage": 60,
+        "amperage": 42,
+        "power_watts": 3000,
+        "max_speed_private_kmh": 85,
+        "range_km": 150,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 61,
+        "suspension": "Ressort/fourche à l'avant et suspension hydraulique à l'arrière",
+        "ip_rating": "IP54",
+        "tire_size": "11 x 4 pouces (pneumatique avant et arrière)",
+        "foldable": true,
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueVSETT11_-Pietechnologie.png?v=1664374906"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Vsett 11+ est une trottinette électrique bimoteur (2 x 1500 W, soit 3000 W nominaux) alimentée par une batterie lithium-ion 60 V jusqu'à 42 Ah, avec une vitesse bridée à 25 km/h et jusqu'à 85 km/h sur terrain privé. Elle est équipée de pneus de 11 pouces, de freins à disque hydrauliques avant et arrière, d'une suspension avant à ressort et de suspensions hydrauliques à l'arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 11+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 11+ : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 11+, pieces vsett 11+, disque frein vsett 11+, plaquettes vsett 11+, pneu vsett 11+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-vsett-11",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://vsett-shop.com/product/vsett-11/",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://parts2ride.com/en-us/products/vsett-11",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "http://www.vsett.com/product/11.html",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.scooterpassion.be/fr/scooter-passion/5843-trottinette-electrique-vsett-11-42a.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueVSETT11_-Pietechnologie.png?v=1664374906",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.imooving.com/trottinettes-electriques/1650-vsett-11-trottinette-electrique-3701370800685.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://store-vsett.fr/frein/1437-set-complet-de-frein-hydraulique-pour-trottinette-electrique-vsett-11-3701522006866.html",
+          "type": "distributeur"
+        },
+        "disc_pcd": {
+          "url": "https://vsett.com.au/products/vsett-11-disc-rotor-160mm-1",
+          "type": "distributeur"
+        },
+        "disc_holes": {
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://fr.aliexpress.com/item/33024883399.html",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://fr.aliexpress.com/item/33024883399.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/vsett-11",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 60,
+            "source_url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 42,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 3000,
+            "source_url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 85,
+            "source_url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 61,
+            "source_url": "https://vsett-shop.com/product/vsett-11/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11 x 4 pouces (pneumatique avant et arrière)",
+            "source_url": "http://www.vsett.com/product/11.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Ressort/fourche à l'avant et suspension hydraulique à l'arrière",
+            "source_url": "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://parts2ride.com/en-us/products/vsett-11",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.scooterpassion.be/fr/scooter-passion/5843-trottinette-electrique-vsett-11-42a.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 11+ est une trottinette électrique bimoteur (2 x 1500 W, soit 3000 W nominaux) alimentée par une batterie lithium-ion 60 V jusqu'à 42 Ah, avec une vitesse bridée à 25 km/h et jusqu'à 85 km/h sur terrain privé. Elle est équipée de pneus de 11 pouces, de freins à disque hydrauliques avant et arrière, d'une suspension avant à ressort et de suspensions hydrauliques à l'arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://vtron.fr/collections/frontpage/products/trottinette-electrique-vsett-11",
+            "https://www.gyro-phare.com/123-trottinette-electrique-vsett-11.html",
+            "https://pietechnologie.com/products/trottinette-electrique-vsett-11"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueVSETT11_-Pietechnologie.png?v=1664374906"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.imooving.com/trottinettes-electriques/1650-vsett-11-trottinette-electrique-3701370800685.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://store-vsett.fr/frein/1437-set-complet-de-frein-hydraulique-pour-trottinette-electrique-vsett-11-3701522006866.html",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://vsett.com.au/products/vsett-11-disc-rotor-160mm-1",
+            "source_type": "distributeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://fr.aliexpress.com/item/33024883399.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fr.aliexpress.com/item/33024883399.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/vsett-11",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
