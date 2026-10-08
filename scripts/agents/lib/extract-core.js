@@ -1,0 +1,178 @@
+// scripts/agents/lib/extract-core.js
+// Cœur PUR de l'extracteur de marque (aucun I/O, aucun env) → testable isolément.
+// Transforme les champs extraits ({ value, source_url, source_type }) en scooter
+// au contrat d'import de sync-scooters.js, et rend un verdict PRÊT / MANQUE.
+//
+// Règles métier (skill pt-import-pipeline) :
+//  - toute valeur sans URL source est ÉCARTÉE (jamais d'invention) ;
+//  - poids net ; plusieurs batteries = le plus lourd (consigne donnée au modèle) ;
+//  - un poids venu d'un site de test n'est PAS écrit : il part en « à valider Nolan » ;
+//  - solid_conversion vide = inconnu, jamais deviné ;
+//  - codes de montage validés contre les référentiels fitment_* lus en base.
+
+import { slugify } from '../../lib/slugify.js';
+
+export const DISC_KEYS = ['disc_diameter', 'disc_pcd', 'disc_holes'];
+
+// Champ obligatoire pour qu'un modèle soit PRÊT (miroir de publishIfComplete).
+export const REQUIRED = ['weight_kg', 'brake_type', 'source_image_urls'];
+
+/** Valeur exploitable seulement si elle a une source http(s). */
+export function sourced(field) {
+  if (!field || field.value === null || field.value === undefined || field.value === '') return null;
+  const url = field.source_url;
+  if (typeof url !== 'string' || !/^https?:\/\//i.test(url)) return null;
+  return field;
+}
+
+function num(field) {
+  const f = sourced(field);
+  if (!f) return null;
+  const n = typeof f.value === 'number' ? f.value : Number(String(f.value).replace(',', '.'));
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function int(field) {
+  const n = num(field);
+  return n !== null && Number.isInteger(n) ? n : null;
+}
+
+function code(field, allowed) {
+  const f = sourced(field);
+  if (!f) return null;
+  const v = String(f.value).trim();
+  return allowed && allowed.length && !allowed.includes(v) ? null : v;
+}
+
+/** Freins sans disque (tambour pur, EBS + tambour) : clés disque non exigées. */
+export function needsDiscKeys(brakeType, vocab) {
+  if (!brakeType) return true;
+  const row = (vocab.brake_rows || []).find((r) => r.code === brakeType);
+  if (row) return row.has_disc !== false;
+  return !/^drum$|^drum_front_ebs_rear$/.test(brakeType);
+}
+
+/** Tout-terrain éditorial (aucune formule ne tient, cf. 28/09) : repère simple et explicite. */
+export function offroadScore({ wheel_inches, suspension, tire_section }) {
+  const w = Number(wheel_inches) || 0;
+  let s = w >= 11 ? 45 : w >= 10 ? 35 : w >= 9 ? 25 : 18;
+  if (suspension && /double|dual|av.*ar|front.*rear/i.test(String(suspension))) s += 5;
+  if (tire_section && /90\/65|100\/90|11x|10x3/i.test(String(tire_section))) s += 3;
+  return Math.min(s, 100);
+}
+
+export function buildSeo({ name, disc_diameter, disc_holes, tire_label, voltage }) {
+  const bits = [];
+  if (disc_diameter) bits.push(`disque de frein ${disc_diameter} mm${disc_holes ? ` ${disc_holes} trous` : ''}`);
+  bits.push('plaquettes');
+  if (tire_label) bits.push(`pneus ${tire_label}`);
+  if (voltage) bits.push(`chargeurs ${voltage}V`);
+  const low = name.toLowerCase();
+  return {
+    meta_title: `${name} - Pièces détachées | PiècesTrottinettes.fr`,
+    meta_description: `Pièces détachées ${name} : ${bits.join(', ')}. Compatibilité vérifiée, livraison rapide.`,
+    search_terms: [low, `pieces ${low}`, `disque frein ${low}`, `plaquettes ${low}`, `pneu ${low}`].join(', '),
+  };
+}
+
+/**
+ * Assemble un scooter au contrat d'import + son verdict.
+ * @param {string} brandName
+ * @param {object} specs  champs extraits (spec fields)
+ * @param {object} keys   champs extraits (mounting keys)
+ * @param {object} vocab  { brake, caliper, rim_type, rim_d, section, disc_d, pcd, holes, rim_w, brake_rows }
+ */
+export function assembleScooter(brandName, modelName, specs, keys, vocab) {
+  const name = modelName.toLowerCase().startsWith(brandName.toLowerCase()) ? modelName : `${brandName} ${modelName}`;
+  const s = { name, slug: slugify(name.replace(/\+/g, ' plus')) }; // « 10+ » → vsett-10-plus, convention des fiches publiées
+  const missing = [];
+  const toValidate = [];
+  const sources = {};
+
+  const put = (k, v, field) => {
+    if (v === null || v === undefined) return;
+    s[k] = v;
+    sources[k] = { url: field.source_url, type: field.source_type || 'inconnu' };
+  };
+
+  // Specs numériques
+  for (const k of ['voltage', 'amperage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'max_load_kg', 'year']) {
+    put(k, num(specs[k]), specs[k]);
+  }
+  s.max_speed_kmh = 25; // vitesse route légale FR, convention de toutes les fiches publiées
+
+  // Poids : site de test → à valider par Nolan, jamais écrit d'office
+  const w = num(specs.weight_kg);
+  if (w !== null) {
+    if (specs.weight_kg.source_type === 'site_test') toValidate.push({ key: 'weight_kg', value: w, url: specs.weight_kg.source_url });
+    else put('weight_kg', w, specs.weight_kg);
+  }
+
+  for (const k of ['suspension', 'ip_rating', 'tire_size']) {
+    const f = sourced(specs[k]);
+    if (f) put(k, String(f.value).trim(), f);
+  }
+  const fold = sourced(specs.foldable);
+  if (fold && typeof fold.value === 'boolean') put('foldable', fold.value, fold);
+  const wi = num(specs.wheel_inches);
+  if (wi !== null) put('wheel_inches', String(wi), specs.wheel_inches);
+
+  // Photos : 1 à 4 URLs directes d'image
+  const imgs = (Array.isArray(specs.image_urls) ? specs.image_urls : [])
+    .filter((u) => typeof u === 'string' && /^https?:\/\/.+\.(jpe?g|png|webp)(\?|$)/i.test(u))
+    .slice(0, 4);
+  if (imgs.length) { s.source_image_urls = imgs; sources.source_image_urls = { url: imgs[0], type: 'image' }; }
+
+  // Clés de montage
+  put('brake_type', code(keys.brake_type, vocab.brake), keys.brake_type);
+  put('disc_diameter', (() => { const n = int(keys.disc_diameter); return n !== null && (!vocab.disc_d?.length || vocab.disc_d.includes(String(n))) ? n : null; })(), keys.disc_diameter);
+  put('disc_pcd', (() => { const n = int(keys.disc_pcd); return n !== null && (!vocab.pcd?.length || vocab.pcd.includes(String(n))) ? n : null; })(), keys.disc_pcd);
+  put('disc_holes', (() => { const n = int(keys.disc_holes); return n !== null && (!vocab.holes?.length || vocab.holes.includes(String(n))) ? n : null; })(), keys.disc_holes);
+  put('rim_diameter', code(keys.rim_diameter, vocab.rim_d), keys.rim_diameter);
+  put('tire_section', code(keys.tire_section, vocab.section), keys.tire_section);
+  put('caliper_family', code(keys.caliper_family, vocab.caliper), keys.caliper_family);
+  put('rim_type', code(keys.rim_type, vocab.rim_type), keys.rim_type);
+  put('tire_family', code(keys.tire_family, ['pneumatic', 'solid']), keys.tire_family);
+  const sc = code(keys.solid_conversion, ['yes', 'no']);
+  if (sc && !(sc === 'no' && s.tire_family === 'solid')) put('solid_conversion', sc, keys.solid_conversion);
+
+  // Valeur trouvée mais hors référentiel : on la garde pour le rapport, pas pour l'import
+  const offVocab = [];
+  for (const [k, list] of [['rim_diameter', vocab.rim_d], ['tire_section', vocab.section], ['caliper_family', vocab.caliper], ['brake_type', vocab.brake]]) {
+    const f = sourced(keys[k]);
+    if (f && s[k] === undefined && list?.length) offVocab.push(`${k}=${f.value}`);
+  }
+
+  // Éditorial + SEO
+  s.score_offroad = offroadScore({ wheel_inches: s.wheel_inches, suspension: s.suspension, tire_section: s.tire_section });
+  const desc = sourced(specs.description_fr) ? String(specs.description_fr.value).trim() : (typeof specs.description_fr?.value === 'string' ? specs.description_fr.value.trim() : '');
+  if (desc) s.description = desc;
+  Object.assign(s, buildSeo({ name, disc_diameter: s.disc_diameter, disc_holes: s.disc_holes, tire_label: s.tire_section, voltage: s.voltage }));
+
+  // Verdict
+  for (const k of REQUIRED) if (s[k] === undefined) missing.push(k);
+  if (needsDiscKeys(s.brake_type, vocab)) for (const k of DISC_KEYS) if (s[k] === undefined) missing.push(k);
+
+  return { scooter: s, sources, missing, toValidate, offVocab, ready: missing.length === 0 && toValidate.length === 0 };
+}
+
+/** Rapport de sources lisible (markdown), un tableau par modèle. */
+export function sourcesReport(brandName, results, meta = {}) {
+  const lines = [`# Extraction ${brandName} — ${meta.date || ''}`, ''];
+  const ready = results.filter((r) => r.ready).length;
+  lines.push(`**${ready} PRÊT / ${results.length} modèles.** Modèle IA : ${meta.model || '?'}${meta.escalated ? ` · relance : ${meta.escalated}` : ''}.`, '');
+  if (meta.usage) lines.push(`Coût mesuré : ${meta.usage.input_tokens} tokens entrée, ${meta.usage.output_tokens} sortie, ${meta.usage.web_searches} recherches web.`, '');
+  for (const r of results) {
+    lines.push(`## ${r.scooter.name} — ${r.ready ? 'PRÊT' : 'MANQUE'}`);
+    if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
+    if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
+    if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);
+    lines.push('', '| Clé | Valeur | Type de source | Source |', '|---|---|---|---|');
+    for (const [k, src] of Object.entries(r.sources)) {
+      const v = Array.isArray(r.scooter[k]) ? `${r.scooter[k].length} photo(s)` : r.scooter[k];
+      lines.push(`| ${k} | ${v} | ${src.type} | ${src.url} |`);
+    }
+    lines.push('');
+  }
+  return lines.join('\n');
+}
