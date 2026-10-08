@@ -1,0 +1,38 @@
+{
+  "brandName": "Vsett",
+  "scooters": [
+    {
+      "name": "Vsett 10+",
+      "slug": "vsett-10-plus",
+      "voltage": 60,
+      "amperage": 28,
+      "power_watts": 2800,
+      "max_speed_private_kmh": 80,
+      "range_km": 90,
+      "max_load_kg": 130,
+      "max_speed_kmh": 25,
+      "weight_kg": 39,
+      "suspension": "Ressort à l'avant, hydraulique à l'arrière (réglable)",
+      "ip_rating": "IP54",
+      "tire_size": "10 x 3 pouces (pneumatique avec chambre à air)",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-PLUS-BIG-DISPLAY.jpeg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 145,
+      "disc_pcd": 44,
+      "disc_holes": 6,
+      "rim_diameter": "6",
+      "tire_section": "80/65",
+      "caliper_family": "sram_avid",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Vsett 10+ est une trottinette électrique bi-moteur de 2 x 1400 W (2800 W nominal), alimentée par une batterie 60 V (20,8 à 28 Ah selon la version Lite, Super ou Pro). Elle roule sur des pneus pneumatiques de 10 x 3 pouces, avec freins à disque hydrauliques avant et arrière, suspension à ressort à l'avant et hydraulique à l'arrière, et sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Vsett 10+ - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Vsett 10+ : disque de frein 145 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "vsett 10+, pieces vsett 10+, disque frein vsett 10+, plaquettes vsett 10+, pneu vsett 10+"
+    }
+  ]
+}
