@@ -770,6 +770,54 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_poids2_20260929: {
+        Row: {
+          id: string | null
+          ip_rating: string | null
+          max_load_kg: number | null
+          slug: string | null
+          weight_kg: number | null
+        }
+        Insert: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Update: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
+      _backup_poids3_20260929: {
+        Row: {
+          id: string | null
+          ip_rating: string | null
+          max_load_kg: number | null
+          slug: string | null
+          weight_kg: number | null
+        }
+        Insert: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Update: {
+          id?: string | null
+          ip_rating?: string | null
+          max_load_kg?: number | null
+          slug?: string | null
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
       _backup_position_maxg2_pp_20260928: {
         Row: {
           auto_suggested: boolean | null
@@ -2539,6 +2587,8 @@ export type Database = {
           display_name: string | null
           id: string
           is_public: boolean
+          marketing_consent: boolean
+          marketing_consent_at: string | null
           performance_points: number | null
           rider_location: string | null
           updated_at: string | null
@@ -2552,6 +2602,8 @@ export type Database = {
           display_name?: string | null
           id: string
           is_public?: boolean
+          marketing_consent?: boolean
+          marketing_consent_at?: string | null
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
@@ -2565,6 +2617,8 @@ export type Database = {
           display_name?: string | null
           id?: string
           is_public?: boolean
+          marketing_consent?: boolean
+          marketing_consent_at?: string | null
           performance_points?: number | null
           rider_location?: string | null
           updated_at?: string | null
@@ -2575,6 +2629,7 @@ export type Database = {
       promo_codes: {
         Row: {
           active: boolean | null
+          campaign: string | null
           code: string
           created_at: string | null
           current_uses: number | null
@@ -2582,10 +2637,14 @@ export type Database = {
           discount_value: number
           expires_at: string | null
           id: string
+          max_discount_eur: number | null
           max_uses: number | null
+          user_id: string | null
+          valid_from: string | null
         }
         Insert: {
           active?: boolean | null
+          campaign?: string | null
           code: string
           created_at?: string | null
           current_uses?: number | null
@@ -2593,10 +2652,14 @@ export type Database = {
           discount_value: number
           expires_at?: string | null
           id?: string
+          max_discount_eur?: number | null
           max_uses?: number | null
+          user_id?: string | null
+          valid_from?: string | null
         }
         Update: {
           active?: boolean | null
+          campaign?: string | null
           code?: string
           created_at?: string | null
           current_uses?: number | null
@@ -2604,6 +2667,45 @@ export type Database = {
           discount_value?: number
           expires_at?: string | null
           id?: string
+          max_discount_eur?: number | null
+          max_uses?: number | null
+          user_id?: string | null
+          valid_from?: string | null
+        }
+        Relationships: []
+      }
+      promo_codes_backup_20261008: {
+        Row: {
+          active: boolean | null
+          code: string | null
+          created_at: string | null
+          current_uses: number | null
+          discount_type: string | null
+          discount_value: number | null
+          expires_at: string | null
+          id: string | null
+          max_uses: number | null
+        }
+        Insert: {
+          active?: boolean | null
+          code?: string | null
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type?: string | null
+          discount_value?: number | null
+          expires_at?: string | null
+          id?: string | null
+          max_uses?: number | null
+        }
+        Update: {
+          active?: boolean | null
+          code?: string | null
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type?: string | null
+          discount_value?: number | null
+          expires_at?: string | null
+          id?: string | null
           max_uses?: number | null
         }
         Relationships: []
@@ -3410,6 +3512,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      issue_rider_launch_code: { Args: { p_user: string }; Returns: string }
       match_brake_compatibility: {
         Args: never
         Returns: {
