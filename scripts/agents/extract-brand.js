@@ -178,9 +178,10 @@ const TOOL_SPECS = {
       wheel_inches: F('number'), tire_size: F('string'), suspension: F('string'),
       ip_rating: F('string'), foldable: F('boolean'), year: F('number'),
       image_urls: { type: 'array', items: { type: 'string' }, description: '2 à 4 URLs DIRECTES de fichiers image (.jpg/.png/.webp) : photo produit seule sur fond neutre, fiche revendeur de préférence. Pas de collage marketing, pas de gros plan, pas de personne.' },
+      product_page_urls: { type: 'array', items: { type: 'string' }, description: '2 à 3 URLs de FICHES PRODUIT de revendeurs (une page = ce seul modèle), dont le script lira la photo principale (og:image).' },
       description_fr: F('string'),
     },
-    required: ['weight_kg', 'image_urls'],
+    required: ['weight_kg', 'image_urls', 'product_page_urls'],
   },
 };
 
@@ -209,7 +210,7 @@ function toolKeys(vocab) {
 const specsPrompt = (brand, model) => `Trottinette électrique « ${brand} ${model} ».
 Trouve, avec une URL source par valeur : tension (V), ampérage batterie (Ah), puissance totale moteur(s) (W), vitesse débridée/terrain privé (km/h), autonomie constructeur (km), POIDS NET (kg), charge max (kg), taille de roue (pouces), taille de pneu (texte), suspension, indice IP, pliable, année.
 POIDS : poids net du produit, jamais le poids emballé/brut. Plusieurs batteries ou versions : prends le poids le PLUS LOURD. Indique source_type=site_test si la valeur vient d'un site de test/comparatif.
-PHOTOS : 2 à 4 URLs directes d'images produit (og:image ou CDN de fiche revendeur).
+PHOTOS : 2 à 4 URLs directes d'images produit si tu les vois, ET surtout 2 à 3 URLs de fiches produit revendeur (product_page_urls) : le script y lira lui-même la photo principale.
 description_fr : 2 à 3 phrases factuelles en français (moteur, batterie, pneus, freins, vitesse bridée 25 km/h), terminées par « Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles. » ; source_url = la page principale utilisée.`;
 
 const keysPrompt = (brand, model, titles, vocab) => `Trottinette électrique « ${brand} ${model} ». Trouve ses CLÉS DE MONTAGE, une URL source par valeur :
@@ -223,22 +224,46 @@ Code exact absent des listes : value null (ne force jamais un code voisin).
 Nos propres titres de pièces mentionnant la marque (ils sont une source valable, source_url = https://piecestrottinettes.fr) :
 ${titles.length ? titles.map((t) => `- ${t}`).join('\n') : '- (aucun)'}`;
 
+
+// ─── Photos : og:image lue sur les fiches produit (méthode validée, skill pt-import-pipeline) ──
+async function ogImages(pages = []) {
+  const out = [];
+  for (const url of pages.filter((u) => typeof u === 'string' && /^https?:\/\//i.test(u)).slice(0, 3)) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; pt-extracteur/1.0)' }, signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const html = await res.text();
+      const m = html.match(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/i)
+        || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i);
+      if (m) out.push(new URL(m[1].replace(/&amp;/g, '&'), url).href);
+    } catch { /* page bloquée ou lente : on passe à la suivante */ }
+  }
+  return [...new Set(out)];
+}
+
 // ─── Orchestration ────────────────────────────────────────────────────────────
 async function extractModel(brand, model, vocab, titles) {
   console.log(`  → ${model} : specs…`);
   let specs = await claude({ model: MODEL, system: SYSTEM, prompt: specsPrompt(brand, model), tool: TOOL_SPECS });
   console.log(`  → ${model} : clés de montage…`);
+  specs._og_images = await ogImages(specs.product_page_urls);
+  console.log(`  → ${model} : ${specs._og_images.length} photo(s) relevée(s) sur les fiches produit`);
   let keys = await claude({ model: MODEL, system: SYSTEM, prompt: keysPrompt(brand, model, titles, vocab), tool: toolKeys(vocab) });
   let r = assembleScooter(brand, model, specs, keys, vocab);
+  r.raw = { specs, keys }; // conservé dans le brouillon pour diagnostic
 
   if (!r.ready && ESCALATE_MODEL && r.missing.length) {
     console.log(`  ↻ ${model} : relance ${ESCALATE_MODEL} sur ${r.missing.join(', ')}`);
     const specMissing = r.missing.some((k) => ['weight_kg', 'source_image_urls'].includes(k));
     const keyMissing = r.missing.some((k) => !['weight_kg', 'source_image_urls'].includes(k));
     const focus = `\nPRIORITÉ ABSOLUE, champs restés introuvables au premier passage : ${r.missing.join(', ')}. Cherche-les spécifiquement (plusieurs requêtes dédiées à chacun).`;
-    if (specMissing) specs = { ...specs, ...pick(await claude({ model: ESCALATE_MODEL, system: SYSTEM, prompt: specsPrompt(brand, model) + focus, tool: TOOL_SPECS }), specs) };
+    if (specMissing) {
+      specs = { ...specs, ...pick(await claude({ model: ESCALATE_MODEL, system: SYSTEM, prompt: specsPrompt(brand, model) + focus, tool: TOOL_SPECS }), specs) };
+      specs._og_images = [...new Set([...(specs._og_images || []), ...(await ogImages(specs.product_page_urls))])];
+    }
     if (keyMissing) keys = { ...keys, ...pick(await claude({ model: ESCALATE_MODEL, system: SYSTEM, prompt: keysPrompt(brand, model, titles, vocab) + focus, tool: toolKeys(vocab) }), keys) };
     r = assembleScooter(brand, model, specs, keys, vocab);
+    r.raw = { specs, keys };
   }
   return r;
 }

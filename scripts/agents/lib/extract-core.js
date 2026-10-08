@@ -117,11 +117,12 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   const wi = num(specs.wheel_inches);
   if (wi !== null) put('wheel_inches', String(wi), specs.wheel_inches);
 
-  // Photos : 1 à 4 URLs directes d'image
-  const imgs = (Array.isArray(specs.image_urls) ? specs.image_urls : [])
-    .filter((u) => typeof u === 'string' && /^https?:\/\/.+\.(jpe?g|png|webp)(\?|$)/i.test(u))
-    .slice(0, 4);
-  if (imgs.length) { s.source_image_urls = imgs; sources.source_image_urls = { url: imgs[0], type: 'image' }; }
+  // Photos : og:image relevées par le script sur les fiches produit (fiables) + URLs directes d'image du modèle
+  const og = (Array.isArray(specs._og_images) ? specs._og_images : []).filter((u) => typeof u === 'string' && /^https?:\/\//i.test(u));
+  const direct = (Array.isArray(specs.image_urls) ? specs.image_urls : [])
+    .filter((u) => typeof u === 'string' && /^https?:\/\/.+\.(jpe?g|png|webp)(\?|$)/i.test(u));
+  const imgs = [...new Set([...og, ...direct])].slice(0, 4);
+  if (imgs.length) { s.source_image_urls = imgs; sources.source_image_urls = { url: imgs[0], type: og.length ? 'og:image fiche produit' : 'image' }; }
 
   // Clés de montage
   put('brake_type', code(keys.brake_type, vocab.brake), keys.brake_type);
@@ -133,8 +134,11 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   put('caliper_family', code(keys.caliper_family, vocab.caliper), keys.caliper_family);
   put('rim_type', code(keys.rim_type, vocab.rim_type), keys.rim_type);
   put('tire_family', code(keys.tire_family, ['pneumatic', 'solid']), keys.tire_family);
+  // solid_conversion : JAMAIS importé automatiquement (banc du 08/10 : « yes » déduit d'une simple page de chambre à air).
+  // Proposé au rapport seulement ; c'est le savoir d'atelier de Nolan qui tranche.
+  const proposals = [];
   const sc = code(keys.solid_conversion, ['yes', 'no']);
-  if (sc && !(sc === 'no' && s.tire_family === 'solid')) put('solid_conversion', sc, keys.solid_conversion);
+  if (sc) proposals.push({ key: 'solid_conversion', value: sc, url: keys.solid_conversion.source_url });
 
   // Valeur trouvée mais hors référentiel : on la garde pour le rapport, pas pour l'import
   const offVocab = [];
@@ -153,7 +157,7 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   for (const k of REQUIRED) if (s[k] === undefined) missing.push(k);
   if (needsDiscKeys(s.brake_type, vocab)) for (const k of DISC_KEYS) if (s[k] === undefined) missing.push(k);
 
-  return { scooter: s, sources, missing, toValidate, offVocab, ready: missing.length === 0 && toValidate.length === 0 };
+  return { scooter: s, sources, missing, toValidate, offVocab, proposals, ready: missing.length === 0 && toValidate.length === 0 };
 }
 
 /** Rapport de sources lisible (markdown), un tableau par modèle. */
@@ -167,6 +171,7 @@ export function sourcesReport(brandName, results, meta = {}) {
     if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);
+    if (r.proposals?.length) lines.push(`- Proposé, NON importé (à trancher par Nolan) : ${r.proposals.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     lines.push('', '| Clé | Valeur | Type de source | Source |', '|---|---|---|---|');
     for (const [k, src] of Object.entries(r.sources)) {
       const v = Array.isArray(r.scooter[k]) ? `${r.scooter[k].length} photo(s)` : r.scooter[k];

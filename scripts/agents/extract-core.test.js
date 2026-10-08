@@ -72,3 +72,15 @@ test('rapport de sources : verdict et URLs', () => {
   assert.match(md, /1 PRÊT \/ 1 modèles/);
   assert.match(md, /\| disc_diameter \| 145 \| constructeur \| https:\/\/ex\.com\/p \|/);
 });
+
+test('photos : og:image de fiche produit acceptée même sans extension', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, image_urls: [], _og_images: ['https://cdn.shop.com/files/produit?v=123'] }, keysOk, vocab);
+  assert.deepEqual(r.scooter.source_image_urls, ['https://cdn.shop.com/files/produit?v=123']);
+  assert.equal(r.ready, true);
+});
+
+test('solid_conversion=yes : proposé au rapport, jamais importé', () => {
+  const r = assembleScooter('X', 'Y', specsOk, { ...keysOk, solid_conversion: S('yes') }, vocab);
+  assert.equal(r.scooter.solid_conversion, undefined);
+  assert.equal(r.proposals[0].value, 'yes');
+});
