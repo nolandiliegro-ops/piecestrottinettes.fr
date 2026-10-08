@@ -52,7 +52,8 @@ for (const it of batch) {
   if (!ok) {
     failed++;
     // Deux échecs de suite avec la même cause = panne générale (crédit, clé) : on arrête, on ne brûle pas la file
-    const sig = why.replace(/req_[A-Za-z0-9]+/g, '').replace(/[✖❌]\s*[^:]+:/g, '');
+    // Signature calculée sur la sortie COMPLÈTE, identifiants de requête et noms de modèle retirés
+    const sig = (r.stderr || '').replace(/req_[A-Za-z0-9]+/g, '').replace(/[✖❌]\s*[^:]+:/g, '').replace(/\s+/g, ' ').trim().slice(-200);
     if (why && sig === lastWhy) { console.log('Deux échecs identiques de suite : arrêt du run.'); break; }
     lastWhy = sig;
   } else lastWhy = null;
