@@ -24,6 +24,16 @@
       "note": "banc 2 : photos og:image + solid_conversion non importé"
     },
     {
+      "brand": "Vsett",
+      "models": [
+        "9+",
+        "10+",
+        "11+"
+      ],
+      "out": "vsett-banc3",
+      "note": "banc 3 : double source exigée sur disque/jante/pneu/poids"
+    },
+    {
       "brand": "Speedway",
       "max_models": 2,
       "out": "speedway",

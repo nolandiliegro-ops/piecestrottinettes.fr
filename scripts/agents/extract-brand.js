@@ -147,6 +147,7 @@ const F = (type, extra = {}) => ({
   properties: {
     value: { type: [type, 'null'], ...extra },
     source_url: { type: ['string', 'null'], description: 'URL exacte de la page qui donne cette valeur' },
+    source_url_2: { type: ['string', 'null'], description: 'DEUXIÈME page, sur un AUTRE site, qui donne la MÊME valeur (null si introuvable)' },
     source_type: { type: 'string', enum: ['constructeur', 'distributeur', 'revendeur', 'site_test', 'forum', 'inconnu'] },
   },
   required: ['value', 'source_url', 'source_type'],
@@ -154,7 +155,7 @@ const F = (type, extra = {}) => ({
 
 const SYSTEM = `Tu es l'extracteur de fiches techniques de piecestrottinettes.fr (pièces détachées de trottinettes électriques, marché français).
 RÈGLES ABSOLUES :
-- Chaque valeur vient avec l'URL EXACTE de la page qui la donne. Pas d'URL = value null. Ne JAMAIS déduire, arrondir ou deviner.
+- Chaque valeur vient avec l'URL EXACTE de la page qui la donne. Pas d'URL = value null. Ne JAMAIS déduire, arrondir ou deviner.\n- Disque (diamètre, entraxe, trous), jante, section de pneu et poids : donne DEUX sources sur deux sites DIFFÉRENTS qui affichent la même valeur (source_url + source_url_2). Si les sources se contredisent, prends la valeur de la fiche de PIÈCE DE RECHANGE « compatible <modèle> » (disque, pneu, chambre), jamais celle d'une page générale de trottinette.
 - La page doit correspondre au MÊME modèle, même année/génération, même taille de roue. Sinon : ignore-la.
 - Ordre de confiance des sources : constructeur > distributeur officiel > revendeur spécialisé > site de test > forum.
 - Contradiction entre sources : prends la majorité des sources indépendantes, préfère la fiche fournisseur de pièces pour une cote mécanique.

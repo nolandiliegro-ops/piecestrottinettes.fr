@@ -10,7 +10,7 @@ const vocab = {
   rim_d: ['6', '6.5', '134mm'], section: ['90/65', '10x3.00'],
   disc_d: ['120', '145', '160'], pcd: ['44', '48'], holes: ['5', '6'],
 };
-const S = (value, type = 'constructeur') => ({ value, source_url: 'https://ex.com/p', source_type: type });
+const S = (value, type = 'constructeur') => ({ value, source_url: 'https://ex.com/p', source_url_2: 'https://autre.fr/q', source_type: type });
 const specsOk = { weight_kg: S(35.5), voltage: S(60), wheel_inches: S(10), image_urls: ['https://cdn.ex.com/a.jpg'] };
 const keysOk = { brake_type: S('disc_hydraulic'), disc_diameter: S(145), disc_pcd: S(44), disc_holes: S(6), rim_diameter: S('6'), tire_section: S('10x3.00'), caliper_family: S('sram_avid') };
 
@@ -70,7 +70,7 @@ test('photo non directe (page HTML) → refusée', () => {
 test('rapport de sources : verdict et URLs', () => {
   const md = sourcesReport('Vsett', [assembleScooter('Vsett', '10+', specsOk, keysOk, vocab)], { date: '2026-10-08', model: 'm' });
   assert.match(md, /1 PRÊT \/ 1 modèles/);
-  assert.match(md, /\| disc_diameter \| 145 \| constructeur \| https:\/\/ex\.com\/p \|/);
+  assert.match(md, /\| disc_diameter \| 145 \| constructeur \| https:\/\/ex\.com\/p \| https:\/\/autre\.fr\/q \|/);
 });
 
 test('photos : og:image de fiche produit acceptée même sans extension', () => {
@@ -83,4 +83,21 @@ test('solid_conversion=yes : proposé au rapport, jamais importé', () => {
   const r = assembleScooter('X', 'Y', specsOk, { ...keysOk, solid_conversion: S('yes') }, vocab);
   assert.equal(r.scooter.solid_conversion, undefined);
   assert.equal(r.proposals[0].value, 'yes');
+});
+
+test('disque avec une seule source → non importé, listé « une seule source »', () => {
+  const r = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, disc_diameter: { ...S(160), source_url_2: null } }, vocab);
+  assert.equal(r.scooter.disc_diameter, undefined);
+  assert.ok(r.missing.includes('disc_diameter'));
+  assert.equal(r.unconfirmed[0].key, 'disc_diameter');
+});
+
+test('deux URLs du même site ne font pas deux sources', () => {
+  const r = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, rim_diameter: { ...S('6'), source_url_2: 'https://www.ex.com/autre-page' } }, vocab);
+  assert.equal(r.scooter.rim_diameter, undefined);
+});
+
+test('poids avec une seule source → manque (obligatoire pour publier)', () => {
+  const r = assembleScooter('Vsett', '10+', { ...specsOk, weight_kg: { ...S(39), source_url_2: null } }, keysOk, vocab);
+  assert.ok(r.missing.includes('weight_kg'));
 });

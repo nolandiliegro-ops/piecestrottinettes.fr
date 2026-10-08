@@ -17,6 +17,18 @@ export const DISC_KEYS = ['disc_diameter', 'disc_pcd', 'disc_holes'];
 // Champ obligatoire pour qu'un modèle soit PRÊT (miroir de publishIfComplete).
 export const REQUIRED = ['weight_kg', 'brake_type', 'source_image_urls'];
 
+// Clés qui font vendre une pièce : exigent DEUX sources sur deux sites différents (banc du 08/10 :
+// disque du Vsett 10+ trouvé 145 au 1er run, 160 au 2e — une source seule ne suffit pas).
+export const CORROBORATED = ['disc_diameter', 'disc_pcd', 'disc_holes', 'rim_diameter', 'tire_section', 'weight_kg'];
+
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return null; } };
+
+/** Vrai si la valeur a deux URLs sur deux domaines distincts (notre propre catalogue compte pour un). */
+export function corroborated(field) {
+  const a = host(field?.source_url), b = host(field?.source_url_2);
+  return Boolean(a && b && a !== b);
+}
+
 /** Valeur exploitable seulement si elle a une source http(s). */
 export function sourced(field) {
   if (!field || field.value === null || field.value === undefined || field.value === '') return null;
@@ -103,8 +115,10 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
 
   // Poids : site de test → à valider par Nolan, jamais écrit d'office
   const w = num(specs.weight_kg);
+  const unconfirmed = [];
   if (w !== null) {
     if (specs.weight_kg.source_type === 'site_test') toValidate.push({ key: 'weight_kg', value: w, url: specs.weight_kg.source_url });
+    else if (!corroborated(specs.weight_kg)) unconfirmed.push({ key: 'weight_kg', value: w, url: specs.weight_kg.source_url });
     else put('weight_kg', w, specs.weight_kg);
   }
 
@@ -134,6 +148,17 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   put('caliper_family', code(keys.caliper_family, vocab.caliper), keys.caliper_family);
   put('rim_type', code(keys.rim_type, vocab.rim_type), keys.rim_type);
   put('tire_family', code(keys.tire_family, ['pneumatic', 'solid']), keys.tire_family);
+
+  // Double source exigée sur les clés qui font vendre une pièce : sinon retirée, gardée « à trancher »
+  for (const k of CORROBORATED.filter((x) => x !== 'weight_kg')) {
+    if (s[k] !== undefined && !corroborated(keys[k])) {
+      unconfirmed.push({ key: k, value: s[k], url: keys[k].source_url });
+      delete s[k]; delete sources[k];
+    } else if (s[k] !== undefined) {
+      sources[k].url2 = keys[k].source_url_2;
+    }
+  }
+  if (s.weight_kg !== undefined) sources.weight_kg.url2 = specs.weight_kg.source_url_2;
   // solid_conversion : JAMAIS importé automatiquement (banc du 08/10 : « yes » déduit d'une simple page de chambre à air).
   // Proposé au rapport seulement ; c'est le savoir d'atelier de Nolan qui tranche.
   const proposals = [];
@@ -157,7 +182,7 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   for (const k of REQUIRED) if (s[k] === undefined) missing.push(k);
   if (needsDiscKeys(s.brake_type, vocab)) for (const k of DISC_KEYS) if (s[k] === undefined) missing.push(k);
 
-  return { scooter: s, sources, missing, toValidate, offVocab, proposals, ready: missing.length === 0 && toValidate.length === 0 };
+  return { scooter: s, sources, missing, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
 }
 
 /** Rapport de sources lisible (markdown), un tableau par modèle. */
@@ -171,11 +196,12 @@ export function sourcesReport(brandName, results, meta = {}) {
     if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);
+    if (r.unconfirmed?.length) lines.push(`- Une seule source, NON importé : ${r.unconfirmed.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.proposals?.length) lines.push(`- Proposé, NON importé (à trancher par Nolan) : ${r.proposals.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
-    lines.push('', '| Clé | Valeur | Type de source | Source |', '|---|---|---|---|');
+    lines.push('', '| Clé | Valeur | Type de source | Source | 2e source |', '|---|---|---|---|---|');
     for (const [k, src] of Object.entries(r.sources)) {
       const v = Array.isArray(r.scooter[k]) ? `${r.scooter[k].length} photo(s)` : r.scooter[k];
-      lines.push(`| ${k} | ${v} | ${src.type} | ${src.url} |`);
+      lines.push(`| ${k} | ${v} | ${src.type} | ${src.url} | ${src.url2 || ''} |`);
     }
     lines.push('');
   }
