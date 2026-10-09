@@ -1,8 +1,8 @@
 # Extraction Navee — 2026-10-09
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 345466 tokens entrée, 11780 sortie, 17 recherches web.
+Coût mesuré : 336644 tokens entrée, 2252 sortie, 16 recherches web.
 
 ## Navee GT5 Max — MANQUE
 - Manque : disc_diameter, disc_pcd, disc_holes
@@ -26,7 +26,7 @@ Coût mesuré : 345466 tokens entrée, 11780 sortie, 17 recherches web.
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max |  |
 
 ## Navee XT5 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+- Manque : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -43,4 +43,5 @@ Coût mesuré : 345466 tokens entrée, 11780 sortie, 17 recherches web.
 | wheel_inches | 12 | constructeur | https://www.naveetech.com/navee-xt5-pro/ |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
 | brake_type | disc_mechanical | revendeur | https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html |  |
+| disc_diameter | 130 | constructeur | https://www.naveetech.com/navee-xt5-pro/ | https://riderguide.com/reviews/navee-xt5-pro-tested-review/ |
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/xt5-pro |  |

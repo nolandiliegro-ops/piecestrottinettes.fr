@@ -1,8 +1,8 @@
 # Extraction Teverun — 2026-10-09
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 370341 tokens entrée, 15208 sortie, 18 recherches web.
+Coût mesuré : 323731 tokens entrée, 3093 sortie, 14 recherches web.
 
 ## Teverun Fighter Mini Pro V6 — MANQUE
 - Manque : disc_pcd, disc_holes

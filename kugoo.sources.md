@@ -1,11 +1,10 @@
 # Extraction Kugoo — 2026-10-09
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 347061 tokens entrée, 16577 sortie, 18 recherches web.
+Coût mesuré : 125847 tokens entrée, 3026 sortie, 9 recherches web.
 
-## Kugoo G2 — MANQUE
-- Manque : disc_pcd
+## Kugoo G2 — PRÊT
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -24,6 +23,7 @@ Coût mesuré : 347061 tokens entrée, 16577 sortie, 18 recherches web.
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
 | brake_type | disc_unknown_actuation | site_test | https://www.trotti-electrique.com/articles/G2-pro |  |
 | disc_diameter | 140 | revendeur | https://monsieurtrottinettes.be/fr/disque-de-frein/668-disque-de-frein-140mm-kugoo-g2-pro-5430003484913.html | https://voltnation.fr/fr/products/frein-a-disque-kugoo-g2-pro-original-oem-3593 |
+| disc_pcd | 44 | revendeur | https://www.xodbrakes.com/blogs/news/kukirin-g2-g4-xod-hydraulic-brake-upgrade-guide | https://www.wattiz.fr/fr/disques-de-frein/34095-disque-de-frein-140-mm-3760351012202.html |
 | disc_holes | 6 | revendeur | https://monsieurtrottinettes.be/fr/disque-de-frein/668-disque-de-frein-140mm-kugoo-g2-pro-5430003484913.html | https://voltnation.fr/fr/products/frein-a-disque-kugoo-g2-pro-original-oem-3593 |
 | rim_diameter | 6.5 | revendeur | https://www.wattiz.fr/fr/pneus-gonflables/26231-pneu-kugoo-g-booster-g2-pro-tubeless-3770018713144.html | https://electriktrotters.com/pneu-trottinette/4284-pneu-kugoo-g-boosterg2-pro-tubeless-hikerboy-3-roues-off-road.html |
 | caliper_family | togo_g2 | revendeur | https://www.out-fun.com/plaquettes-et-disques-de-freins/4317-plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad-3701665906146.html |  |

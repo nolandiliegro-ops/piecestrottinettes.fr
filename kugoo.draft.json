@@ -23,6 +23,7 @@
         ],
         "brake_type": "disc_unknown_actuation",
         "disc_diameter": 140,
+        "disc_pcd": 44,
         "disc_holes": 6,
         "rim_diameter": "6.5",
         "caliper_family": "togo_g2",
@@ -96,6 +97,11 @@
           "type": "revendeur",
           "url2": "https://voltnation.fr/fr/products/frein-a-disque-kugoo-g2-pro-original-oem-3593"
         },
+        "disc_pcd": {
+          "url": "https://www.xodbrakes.com/blogs/news/kukirin-g2-g4-xod-hydraulic-brake-upgrade-guide",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/fr/disques-de-frein/34095-disque-de-frein-140-mm-3760351012202.html"
+        },
         "disc_holes": {
           "url": "https://monsieurtrottinettes.be/fr/disque-de-frein/668-disque-de-frein-140mm-kugoo-g2-pro-5430003484913.html",
           "type": "revendeur",
@@ -115,14 +121,12 @@
           "type": "revendeur"
         }
       },
-      "missing": [
-        "disc_pcd"
-      ],
+      "missing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -231,9 +235,10 @@
             "source_type": "revendeur"
           },
           "disc_pcd": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": 44,
+            "source_url": "https://www.xodbrakes.com/blogs/news/kukirin-g2-g4-xod-hydraulic-brake-upgrade-guide",
+            "source_url_2": "https://www.wattiz.fr/fr/disques-de-frein/34095-disque-de-frein-140-mm-3760351012202.html",
+            "source_type": "revendeur"
           },
           "disc_holes": {
             "value": 6,
@@ -274,6 +279,17 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-09",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_mechanical",
+          "disc_diameter": 140,
+          "disc_pcd": 44,
+          "disc_holes": 6
         }
       }
     },
@@ -566,6 +582,17 @@
             "source_url_2": "https://trott-en-provence.fr/pneu-kukirin-g2-max/",
             "source_type": "revendeur"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-09",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_mechanical",
+          "disc_diameter": 140,
+          "disc_pcd": 44,
+          "disc_holes": 6
         }
       }
     }

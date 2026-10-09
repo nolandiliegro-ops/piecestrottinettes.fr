@@ -245,13 +245,11 @@
           "disc_pcd": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "disc_holes": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "caliper_family": {
@@ -290,6 +288,17 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-09",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_hydraulic",
+          "disc_diameter": 140,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     },
@@ -582,6 +591,17 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-09",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_hydraulic",
+          "disc_diameter": 140,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     }
