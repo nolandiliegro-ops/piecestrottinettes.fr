@@ -1,4 +1,506 @@
 {
   "brandName": "E-Twow",
-  "results": []
+  "results": [
+    {
+      "scooter": {
+        "name": "E-Twow GT SL",
+        "slug": "e-twow-gt-sl",
+        "voltage": 48,
+        "amperage": 7.8,
+        "power_watts": 700,
+        "max_speed_private_kmh": 40,
+        "range_km": 35,
+        "max_load_kg": 110,
+        "max_speed_kmh": 25,
+        "weight_kg": 13.2,
+        "suspension": "Avant et arrière (ressorts)",
+        "ip_rating": "IP54",
+        "tire_size": "8 pouces, pneus pleins (airless)",
+        "foldable": true,
+        "wheel_inches": "8",
+        "source_image_urls": [
+          "http://www.maisondelatrott.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146_ac3bb3fd-1c33-4127-9d40-8c41558e0125.webp?v=1757680811",
+          "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146.jpg?v=1772100731"
+        ],
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "L'E-Twow GT SL est une trottinette électrique pliable de 13,2 kg, équipée d'un moteur brushless de 700 W (crête) et d'une batterie lithium 48 V 7,8 Ah, avec des pneus pleins de 8 pouces, une suspension avant et arrière, un frein avant à récupération d'énergie (KERS) et un frein à tambour arrière. Elle est livrée bridée à 25 km/h, avec une vitesse débridable jusqu'à 40 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow GT SL - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow GT SL : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow gt sl, pieces e-twow gt sl, disque frein e-twow gt sl, plaquettes e-twow gt sl, pneu e-twow gt sl"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://shop.e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://shop.e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://shop.e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://shop.e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+          "type": "revendeur",
+          "url2": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html"
+        },
+        "suspension": {
+          "url": "https://www.gyro-phare.com/53-trottinette-electrique-e-twow-gt-sl.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://les-cyclistes-branches.com/produit/e-twow-gt-sl-trottinette-electrique/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.maisondelatrott.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146_ac3bb3fd-1c33-4127-9d40-8c41558e0125.webp?v=1757680811",
+          "type": "og:image fiche produit"
+        },
+        "tire_family": {
+          "url": "https://e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "brake_type",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://shop.e-twow.com/products/gt-sl",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://shop.e-twow.com/products/gt-sl",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 700,
+            "source_url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_url_2": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://shop.e-twow.com/products/gt-sl",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://shop.e-twow.com/products/gt-sl",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 13.2,
+            "source_url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_url_2": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 110,
+            "source_url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_url_2": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8 pouces, pneus pleins (airless)",
+            "source_url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (ressorts)",
+            "source_url": "https://www.gyro-phare.com/53-trottinette-electrique-e-twow-gt-sl.html",
+            "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sl-48v-78ah/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://les-cyclistes-branches.com/produit/e-twow-gt-sl-trottinette-electrique/",
+            "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sl-48v-78ah/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'E-Twow GT SL est une trottinette électrique pliable de 13,2 kg, équipée d'un moteur brushless de 700 W (crête) et d'une batterie lithium 48 V 7,8 Ah, avec des pneus pleins de 8 pouces, une suspension avant et arrière, un frein avant à récupération d'énergie (KERS) et un frein à tambour arrière. Elle est livrée bridée à 25 km/h, avec une vitesse débridable jusqu'à 40 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_url_2": "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html",
+            "https://over-watt.fr/products/trottinette-electrique-etwow-gt-sl"
+          ],
+          "_og_images": [
+            "http://www.maisondelatrott.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146_ac3bb3fd-1c33-4127-9d40-8c41558e0125.webp?v=1757680811",
+            "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146.jpg?v=1772100731"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://e-twow.com/products/gt-sl",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-GT-SL-Noir/a17025840/w-4",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "E-Twow GT Sport",
+        "slug": "e-twow-gt-sport",
+        "voltage": 48,
+        "amperage": 10.5,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 45,
+        "max_load_kg": 110,
+        "max_speed_kmh": 25,
+        "weight_kg": 13.5,
+        "suspension": "Avant et arrière à ressorts",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": "8",
+        "source_image_urls": [
+          "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/etwowgtsport48v10a-1.jpg",
+          "https://mecatronice.com/app/uploads/2025/08/ETWOW-GT-Sport-48V-105Ah-1.jpg"
+        ],
+        "rim_diameter": "5.5",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "L'E-Twow GT Sport est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (700 W en crête selon le constructeur) et d'une batterie 48 V 10,5 Ah (504 Wh). Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, un frein électrique à récupération à l'avant et un frein à tambour à l'arrière, pour un poids d'environ 13,5 kg. Sa vitesse est bridée à 25 km/h en usage routier et peut atteindre environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow GT Sport - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow GT Sport : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow gt sport, pieces e-twow gt sport, disque frein e-twow gt sport, plaquettes e-twow gt sport, pneu e-twow gt sport"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://les-cyclistes-branches.com/produit/e-twow-gts-trottinette-electrique/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.boulanger.com/ref/9000927743",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://mecatronice.com/produit/e-twow-gt-sport/",
+          "type": "revendeur",
+          "url2": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah"
+        },
+        "suspension": {
+          "url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://mecatronice.com/produit/e-twow-gt-sport/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/etwowgtsport48v10a-1.jpg",
+          "type": "og:image fiche produit"
+        },
+        "rim_diameter": {
+          "url": "https://www.out-fun.com/pieces-detachees-trottinettes-electriques/1263-pneu-plein-avant-plus-large-pour-e-twow-3770018713045.html",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/fr/pneus-plein/25921-pneu-plein-200x50-3770018713045.html"
+        },
+        "tire_family": {
+          "url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gt-sport-48v-10-5ah-noir/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "brake_type",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 13.5,
+            "source_url": "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "source_url_2": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.5,
+            "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+            "source_url_2": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+            "source_url_2": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://les-cyclistes-branches.com/produit/e-twow-gts-trottinette-electrique/",
+            "source_url_2": "https://www.boulanger.com/ref/9000927743",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 110,
+            "source_url": "https://www.boulanger.com/ref/9000927743",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-etwow-gt-sport-avec-batterie-48-v-105-ah-pneus-8-pouces-527350.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière à ressorts",
+            "source_url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-gt-sport",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sport-48v-105ah/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000927743",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'E-Twow GT Sport est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (700 W en crête selon le constructeur) et d'une batterie 48 V 10,5 Ah (504 Wh). Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, un frein électrique à récupération à l'avant et un frein à tambour à l'arrière, pour un poids d'environ 13,5 kg. Sa vitesse est bridée à 25 km/h en usage routier et peut atteindre environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "source_url_2": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah",
+            "https://mecatronice.com/produit/e-twow-gt-sport/",
+            "https://www.boulanger.com/ref/9000927743"
+          ],
+          "_og_images": [
+            "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/etwowgtsport48v10a-1.jpg",
+            "https://mecatronice.com/app/uploads/2025/08/ETWOW-GT-Sport-48V-105Ah-1.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "5.5",
+            "source_url": "https://www.out-fun.com/pieces-detachees-trottinettes-electriques/1263-pneu-plein-avant-plus-large-pour-e-twow-3770018713045.html",
+            "source_url_2": "https://www.wattiz.fr/fr/pneus-plein/25921-pneu-plein-200x50-3770018713045.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gt-sport-48v-10-5ah-noir/",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/etwow/e-twow-gts-premium",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
 }
