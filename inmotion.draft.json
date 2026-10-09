@@ -1,0 +1,532 @@
+{
+  "brandName": "Inmotion",
+  "results": [
+    {
+      "scooter": {
+        "name": "Inmotion S1F",
+        "slug": "inmotion-s1f",
+        "voltage": 54,
+        "amperage": 12.5,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 24,
+        "suspension": "Avant et arrière (double suspension à ressorts)",
+        "ip_rating": "IP55",
+        "tire_size": "10x2.50-6.5 tubeless",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://www.inmotion-france.fr/1983-large_default/inmotion-s1f-electric-scooter-54-v-125-ah.jpg"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "rim_diameter": "6.5",
+        "tire_section": "60/70",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Inmotion S1F est une trottinette électrique pliable équipée d'un moteur arrière de 500 W et d'une batterie lithium-ion 54 V 12,5 Ah (675 Wh), annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension avant/arrière, frein à tambour à l'avant et frein électronique à l'arrière. Sa vitesse est bridée à 25 km/h d'usine et peut atteindre 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Inmotion S1F - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Inmotion S1F : plaquettes, pneus 60/70, chargeurs 54V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "inmotion s1f, pieces inmotion s1f, disque frein inmotion s1f, plaquettes inmotion s1f, pneu inmotion s1f"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur",
+          "url2": "https://tecowheel.com/en/product/inmotion-s1f/"
+        },
+        "suspension": {
+          "url": "https://tecowheel.com/en/product/inmotion-s1f/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://tecowheel.com/en/product/inmotion-s1f/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://tecowheel.com/en/product/tubeless-tire-for-inmotion-s1f/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/inmotion_s1f.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.inmotion-france.fr/1983-large_default/inmotion-s1f-electric-scooter-54-v-125-ah.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-54-v-125-ah-3701522001700.html",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/fr/pieces-inmotion-s1f/721-pneu-ninebot-max-g30-inmotion-s1f-6070-65.html",
+          "type": "revendeur",
+          "url2": "https://blog.gyro-phare.com/produit/pneu-60-70-6-5-tubeless-avec-gel-pour-ninebot/"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/fr/pieces-inmotion-s1f/721-pneu-ninebot-max-g30-inmotion-s1f-6070-65.html",
+          "type": "revendeur",
+          "url2": "https://blog.gyro-phare.com/produit/pneu-60-70-6-5-tubeless-avec-gel-pour-ninebot/"
+        },
+        "tire_family": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-inmotion-s1f",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://tecowheel.com/en/product/inmotion-s1f/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 54,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-s1f",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 12.5,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-s1f",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/inmotion_s1f.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://tecowheel.com/en/product/inmotion-s1f/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/inmotion_s1f.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-inmotion-s1-f.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_url_2": "https://tecowheel.com/en/product/inmotion-s1f/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.50-6.5 tubeless",
+            "source_url": "https://tecowheel.com/en/product/tubeless-tire-for-inmotion-s1f/",
+            "source_url_2": "https://www.out-fun.com/pneus-et-chambres-a-air/3472-pneu-tubeless-10x25-65-65-ninebot-f-serie-inmotion-s1-3760351014411.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (double suspension à ressorts)",
+            "source_url": "https://tecowheel.com/en/product/inmotion-s1f/",
+            "source_url_2": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-54-v-125-ah-3701522001700.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://tecowheel.com/en/product/inmotion-s1f/",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-s1f/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/inmotion_s1f.html",
+            "source_url_2": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Inmotion S1F est une trottinette électrique pliable équipée d'un moteur arrière de 500 W et d'une batterie lithium-ion 54 V 12,5 Ah (675 Wh), annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension avant/arrière, frein à tambour à l'avant et frein électronique à l'arrière. Sa vitesse est bridée à 25 km/h d'usine et peut atteindre 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+            "https://www.imooving.com/trottinettes-electriques/343-inmotion-trottinette-electrique-adulte-3701107955527.html",
+            "https://tecowheel.com/en/product/inmotion-s1f/"
+          ],
+          "_og_images": [
+            "https://www.inmotion-france.fr/1983-large_default/inmotion-s1f-electric-scooter-54-v-125-ah.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-54-v-125-ah-3701522001700.html",
+            "source_url_2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-inmotion/pieces-detachees-inmotion-s1/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "60/70",
+            "source_url": "https://fastride.fr/fr/pieces-inmotion-s1f/721-pneu-ninebot-max-g30-inmotion-s1f-6070-65.html",
+            "source_url_2": "https://blog.gyro-phare.com/produit/pneu-60-70-6-5-tubeless-avec-gel-pour-ninebot/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fastride.fr/fr/pieces-inmotion-s1f/721-pneu-ninebot-max-g30-inmotion-s1f-6070-65.html",
+            "source_url_2": "https://blog.gyro-phare.com/produit/pneu-60-70-6-5-tubeless-avec-gel-pour-ninebot/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-inmotion-s1f",
+            "source_url_2": "https://fixmytrott.com/products/inmotion-s1f",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Inmotion Air Pro",
+        "slug": "inmotion-air-pro",
+        "voltage": 36,
+        "amperage": 12,
+        "power_watts": 400,
+        "max_speed_private_kmh": 35,
+        "range_km": 48,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 17.7,
+        "suspension": "Aucune",
+        "ip_rating": "IP55",
+        "tire_size": "10 pouces (avant pneumatique, arrière plein/tubeless)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg",
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_inmotion_air_pro_pas_cher-448814.jpg?v=1750677331"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_section": "10x2.125",
+        "score_offroad": 35,
+        "description": "L'Inmotion Air Pro embarque un moteur arrière de 400 W nominal (750 W en pointe) alimenté par une batterie 36 V 12 Ah (438 Wh) pour jusqu'à 48 km d'autonomie. Elle roule sur des roues de 10 pouces (pneu avant gonflable, pneu arrière plein) et freine avec un frein à tambour avant et un frein électronique arrière. Sa vitesse est bridée à 25 km/h en usage routier (35 km/h sur terrain privé) pour un poids de 17,7 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Inmotion Air Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Inmotion Air Pro : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "inmotion air pro, pieces inmotion air pro, disque frein inmotion air pro, plaquettes inmotion air pro, pneu inmotion air pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://inmotion-store.com/product/inmotion-air-pro/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://inmotion-store.com/product/inmotion-air-pro/",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://inmotion-store.com/product/inmotion-air-pro/"
+        },
+        "suspension": {
+          "url": "https://scooterhut.com.au/products/inmotion-air-pro-electric-scooter",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://inmotionworld.com/products/inmotion-air-pro-portable-folding-electric-scooter-for-adults",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://electrotraveller.com/electric-scooters/inmotion-air-pro/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.inmotion-france.fr/en/inmotion-air-pro-electric-scooter",
+          "type": "distributeur"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+          "type": "revendeur",
+          "url2": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [
+        "rim_diameter=6.5"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://e-watts.fr/produit/pneu-10x2-125-route"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17.7,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_url_2": "https://fixmytrott.com/products/inmotion-air-pro",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 12,
+            "source_url": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_url_2": "https://fixmytrott.com/products/inmotion-air-pro",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 400,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://fixmytrott.com/products/inmotion-air-pro",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 48,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/inmotion-air-pro",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://inmotionworld.com/products/inmotion-air-pro-portable-folding-electric-scooter-for-adults",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces (avant pneumatique, arrière plein/tubeless)",
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://scooterhut.com.au/products/inmotion-air-pro-electric-scooter",
+            "source_url_2": "https://freemoov.odoo.com/shop/im-air-pro-trottinette-electrique-inmotion-air-pro-741",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://inmotionworld.com/products/inmotion-air-pro-portable-folding-electric-scooter-for-adults",
+            "source_url_2": "https://inmotion-store.com/product/inmotion-air-pro/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electrotraveller.com/electric-scooters/inmotion-air-pro/",
+            "source_url_2": "https://glisseurbaine.com/3225-trottinette-electrique-inmotion-air-pro.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Inmotion Air Pro embarque un moteur arrière de 400 W nominal (750 W en pointe) alimenté par une batterie 36 V 12 Ah (438 Wh) pour jusqu'à 48 km d'autonomie. Elle roule sur des roues de 10 pouces (pneu avant gonflable, pneu arrière plein) et freine avec un frein à tambour avant et un frein électronique arrière. Sa vitesse est bridée à 25 km/h en usage routier (35 km/h sur terrain privé) pour un poids de 17,7 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://v3.inmotionworld.com/electric-scooter/airPro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://inmotion-store.com/product/inmotion-air-pro/",
+            "https://clicknwheel.com/nos-produits/nos-produits/trottinette-electrique-bordeaux/inmotion-air-pro/",
+            "https://www.wee-bot.com/products/trottinette-electrique-inmotion-air-pro"
+          ],
+          "_og_images": [
+            "https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg",
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_inmotion_air_pro_pas_cher-448814.jpg?v=1750677331"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.inmotion-france.fr/en/inmotion-air-pro-electric-scooter",
+            "source_url_2": "https://clicknwheel.com/nos-produits/nos-produits/trottinette-electrique-bordeaux/inmotion-air-pro/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_url_2": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "brandName": "Engwe",
+  "results": [
+    {
+      "scooter": {
+        "name": "Engwe Y600",
+        "slug": "engwe-y600",
+        "voltage": 48,
+        "amperage": 18.2,
+        "power_watts": 600,
+        "max_speed_private_kmh": 45,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 26.5,
+        "suspension": "Fourche à ressort à l'avant, suspension mécanique à l'arrière (+ suspension de selle)",
+        "ip_rating": "IPX5",
+        "tire_size": "10 x 4.0",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?crop=center&height=1200&v=1747923069&width=1200",
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/a37b564a-990a-47ae-9e85-bb2203457000/public"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Engwe Y600 est une trottinette électrique pliable avec selle, équipée d'un moteur de moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah pour jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus gonflables 10 x 4,0 pouces, avec freins à disque mécaniques avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Engwe Y600 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Engwe Y600 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "engwe y600, pieces engwe y600, disque frein engwe y600, plaquettes engwe y600, pneu engwe y600"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.rueducommerce.fr/p/m24107800044.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.rueducommerce.fr/p/m24107800044.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.pixmania.com/fr/fr/engwe-y600-182ah-trottinette-electrique-puissance-600w-batterie-48v182ah-pneus-10-pouces-autonomie-70km-noir-271921.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur",
+          "url2": "https://www.rueducommerce.fr/p/m24107800044.html"
+        },
+        "suspension": {
+          "url": "https://www.epower-techs.fr/products/trottinettes-electrique-engwe-y600",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.rueducommerce.fr/p/m24107800044.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?crop=center&height=1200&v=1747923069&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023",
+          "type": "site_test"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26.5,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349997434.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_url_2": "https://engwe.fr/shop/v%C3%A9los-%C3%A9lectriques/engwe-y600/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://camqo.fr/test-de-la-trottinette-electrique-pliable-engwe-y600-autonomie-et-performance-en-ville/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 4.0",
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Fourche à ressort à l'avant, suspension mécanique à l'arrière (+ suspension de selle)",
+            "source_url": "https://www.epower-techs.fr/products/trottinettes-electrique-engwe-y600",
+            "source_url_2": "https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_url_2": "https://www.pixmania.com/fr/fr/engwe-y600-182ah-trottinette-electrique-puissance-600w-batterie-48v182ah-pneus-10-pouces-autonomie-70km-noir-271921.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.pixmania.com/fr/fr/engwe-y600-182ah-trottinette-electrique-puissance-600w-batterie-48v182ah-pneus-10-pouces-autonomie-70km-noir-271921.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'Engwe Y600 est une trottinette électrique pliable avec selle, équipée d'un moteur de moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah pour jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus gonflables 10 x 4,0 pouces, avec freins à disque mécaniques avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800044.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fr.engwe.com/products/engwe-y600",
+            "https://www.rueducommerce.fr/p/m24107800044.html",
+            "https://www.pixmania.com/fr/fr/engwe-y600-182ah-trottinette-electrique-puissance-600w-batterie-48v182ah-pneus-10-pouces-autonomie-70km-noir-271921.html"
+          ],
+          "_og_images": [
+            "http://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?crop=center&height=1200&v=1747923069&width=1200",
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/a37b564a-990a-47ae-9e85-bb2203457000/public"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_url_2": "https://www.decathlon.fr/p/mp/y600-trottinette-electrique-pliable-48v-18ah-pneu-10-4-0-pouces/0c95386c-a3ab-42d0-b8a8-0ba427d94b04/c251",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Engwe Y600S",
+        "slug": "engwe-y600s",
+        "voltage": 48,
+        "amperage": 18.2,
+        "power_watts": 600,
+        "max_speed_private_kmh": 45,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 24,
+        "suspension": "Suspension intégrale (amortisseurs avant et arrière)",
+        "ip_rating": "IPX5",
+        "tire_size": "10x2.75",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
+        ],
+        "brake_type": "disc_mechanical",
+        "score_offroad": 40,
+        "description": "L'Engwe Y600S est une trottinette électrique pliable à selle équipée d'un moteur moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah offrant jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus de 10x2,75 pouces avec suspension intégrale et freins à disque mécaniques, et sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 45 km/h annoncés hors bridage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Engwe Y600S - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Engwe Y600S : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "engwe y600s, pieces engwe y600s, disque frein engwe y600s, plaquettes engwe y600s, pneu engwe y600s"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://evolt.si/en/products/electric-scooter-engwe-y600s",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/engwe-y600s-trottinette/f-1214801-aabwd63484.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur",
+          "url2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s"
+        },
+        "suspension": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921799",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.boulanger.com/ref/9000921799",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24,
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+            "source_url_2": "https://www.boulanger.com/ref/9000945817",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://evolt.si/en/products/electric-scooter-engwe-y600s",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/engwe-y600s-trottinette/f-1214801-aabwd63484.html",
+            "source_url_2": "https://evolt.si/en/products/electric-scooter-engwe-y600s",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+            "source_url_2": "https://evolt.si/en/products/electric-scooter-engwe-y600s",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://www.boulanger.com/ref/9000921799",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.75",
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension intégrale (amortisseurs avant et arrière)",
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_url_2": "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921799",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/engwe-y600s-trottinette/f-1214801-aabwd63484.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Engwe Y600S est une trottinette électrique pliable à selle équipée d'un moteur moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah offrant jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus de 10x2,75 pouces avec suspension intégrale et freins à disque mécaniques, et sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 45 km/h annoncés hors bridage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr.engwe.com/products/y600-mise-a-niveau",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921799",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/engwe-y600s-trottinette/f-1214801-aabwd63484.html",
+            "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.boulanger.com/ref/9000921799",
+            "source_url_2": "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

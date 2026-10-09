@@ -1,0 +1,518 @@
+{
+  "brandName": "Hikerboy",
+  "results": [
+    {
+      "scooter": {
+        "name": "Hikerboy Foxtrot Plus",
+        "slug": "hikerboy-foxtrot-plus",
+        "voltage": 48,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 45,
+        "max_load_kg": 130,
+        "max_speed_kmh": 25,
+        "weight_kg": 20,
+        "suspension": "Double suspension : fourche à l'avant et ressorts à l'arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces avec chambre à air (avant et arrière) ; certains revendeurs indiquent tubeless – section non communiquée",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/Foxtrot-yellow.png?v=1657543999",
+          "https://cycle-e-trott.com/wp-content/uploads/2024/02/TROTTINETTE-FOXTROT-PLUS-4.jpg"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Hikerboy Foxtrot Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium amovible 48 V 10,4 Ah. Elle roule sur des pneus de 10 pouces, avec double suspension, un frein à disque à l'arrière et un frein à tambour à l'avant. Sa vitesse est bridée à 25 km/h (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hikerboy Foxtrot Plus - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hikerboy Foxtrot Plus : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hikerboy foxtrot plus, pieces hikerboy foxtrot plus, disque frein hikerboy foxtrot plus, plaquettes hikerboy foxtrot plus, pneu hikerboy foxtrot plus"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://electrotraveller.com/electric-scooters/hikerboy-foxtrot-plus-grey/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur",
+          "url2": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-foxtrot-plus"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "tire_size": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://zetrottstore.com/hikerboy/2093-hikerboy-foxtrot-plus.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/Foxtrot-yellow.png?v=1657543999",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.hikerboyscooter.com/products/foxtrot-plus-swiss-edition",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 140,
+          "url": "https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://www.gyro-phare.com/7-trottinette-electrique-hikerboy-foxtrot.html",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://zetrottstore.com/hikerboy/2093-hikerboy-foxtrot-plus.html",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://zetrottstore.com/hikerboy/2093-hikerboy-foxtrot-plus.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://www.gyro-phare.com/7-trottinette-electrique-hikerboy-foxtrot.html",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://electrotraveller.com/electric-scooters/hikerboy-foxtrot-plus-grey/",
+            "source_url_2": "https://cycle-e-trott.com/produit/trottinette-electrique-foxtrot-plus/",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 20,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-foxtrot-plus",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 130,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://swiss-distribution.com/produit/hikerboy-foxtrot-plus-48v-10-4ah/",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://swiss-distribution.com/produit/hikerboy-foxtrot-plus-48v-10-4ah/",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "10 pouces avec chambre à air (avant et arrière) ; certains revendeurs indiquent tubeless – section non communiquée",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://www.green-street.fr/trottinettes-electriques/325-foxtrot.html",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Double suspension : fourche à l'avant et ressorts à l'arrière",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://blog.gyro-phare.com/produit/trottinette-electrique-hikerboy-foxtrot-plus/",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://www.gyro-phare.com/7-trottinette-electrique-hikerboy-foxtrot.html",
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://zetrottstore.com/hikerboy/2093-hikerboy-foxtrot-plus.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hikerboy Foxtrot Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium amovible 48 V 10,4 Ah. Elle roule sur des pneus de 10 pouces, avec double suspension, un frein à disque à l'arrière et un frein à tambour à l'avant. Sa vitesse est bridée à 25 km/h (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-foxtrot-plus",
+            "https://cycle-e-trott.com/produit/trottinette-electrique-foxtrot-plus/"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/Foxtrot-yellow.png?v=1657543999",
+            "https://cycle-e-trott.com/wp-content/uploads/2024/02/TROTTINETTE-FOXTROT-PLUS-4.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://www.hikerboyscooter.com/products/foxtrot-plus-swiss-edition",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
+            "source_url_2": "https://electrotraveller.com/fr/scooters-electriques/hikerboy-foxtrot-plus-gris/?v=08a4415e9d59",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hikerboy Curtis",
+        "slug": "hikerboy-curtis",
+        "voltage": 36,
+        "amperage": 10.4,
+        "power_watts": 350,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 15,
+        "suspension": "Avant (2 amortisseurs à ressorts)",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://www.out-fun.com/20084-thickbox_default/hikerboy-curtis-trottinette-electrique.jpg",
+          "http://www.maisondelatrott.fr/cdn/shop/files/g4.png?v=1751547849"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Hikerboy Curtis est une trottinette électrique urbaine équipée d'un moteur brushless de 350 W et d'une batterie lithium 36 V 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus de 10 pouces à chambre à air, avec suspension avant, frein à tambour à l'avant et frein à disque à l'arrière, clignotants avant/arrière et indice IPX5 ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hikerboy Curtis - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hikerboy Curtis : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hikerboy curtis, pieces hikerboy curtis, disque frein hikerboy curtis, plaquettes hikerboy curtis, pneu hikerboy curtis"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/actus/suspendue-tres-bien-equipee-et-abordable-cette-trottinette-electrique-peut-faire-mal-a-xiaomi/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur",
+          "url2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620"
+        },
+        "suspension": {
+          "url": "https://mrtrottinette.fr/product/hikerboy-curtis/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.out-fun.com/20084-thickbox_default/hikerboy-curtis-trottinette-electrique.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://hikerboyscooter.com/products/curtis",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://hikerboyscooter.com/products/curtis",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-1332",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant (2 amortisseurs à ressorts)",
+            "source_url": "https://mrtrottinette.fr/product/hikerboy-curtis/",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "source_url_2": "https://mrtrottinette.fr/product/hikerboy-curtis/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.cleanrider.com/actus/suspendue-tres-bien-equipee-et-abordable-cette-trottinette-electrique-peut-faire-mal-a-xiaomi/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Hikerboy Curtis est une trottinette électrique urbaine équipée d'un moteur brushless de 350 W et d'une batterie lithium 36 V 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus de 10 pouces à chambre à air, avec suspension avant, frein à tambour à l'avant et frein à disque à l'arrière, clignotants avant/arrière et indice IPX5 ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.carrefour.fr/p/trottinette-electrique-hikerboy-curtis-350w-10-4ah-7444857647620",
+            "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis"
+          ],
+          "_og_images": [
+            "https://www.out-fun.com/20084-thickbox_default/hikerboy-curtis-trottinette-electrique.jpg",
+            "http://www.maisondelatrott.fr/cdn/shop/files/g4.png?v=1751547849"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://hikerboyscooter.com/products/curtis",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4293-hikerboy-curtis-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://hikerboyscooter.com/products/curtis",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-1332",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

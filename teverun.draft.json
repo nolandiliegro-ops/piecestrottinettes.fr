@@ -1,0 +1,589 @@
+{
+  "brandName": "Teverun",
+  "results": [
+    {
+      "scooter": {
+        "name": "Teverun Fighter Mini Pro V6",
+        "slug": "teverun-fighter-mini-pro-v6",
+        "voltage": 60,
+        "amperage": 31.8,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 70,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 35.5,
+        "suspension": "Hydraulique réglable avant et arrière (KKE)",
+        "ip_rating": "IPX5",
+        "tire_size": "10x3.0 tubeless",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BTEVERUNMINIPROBOSCH60V31A2026_5D_20TROTTINETTE_20ELECTRIQUE_20TEVERUN_20FIGHTER_20MINI_20PRO_2060V_2031_2C8AH_202026-scaled.jpg",
+          "https://www.minimotors.fr/web/image/product.template/16265/image_1024?unique=6e89718",
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Teverun_fighter_mini_pro_2025.jpg?v=1755223144"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Teverun Fighter Mini Pro V6 (2026) est une trottinette électrique double moteur Bosch de 2×1000 W, alimentée par une batterie Samsung 60 V 31,8 Ah offrant jusqu'à 100 km d'autonomie. Elle repose sur des roues de 10 pouces avec pneus tubeless 10×3, des freins à disques hydrauliques avant et arrière et des suspensions hydrauliques réglables. Livrée bridée à 25 km/h pour la voie publique, elle peut atteindre 70 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter Mini Pro V6 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter Mini Pro V6 : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter mini pro v6, pieces teverun fighter mini pro v6, disque frein teverun fighter mini pro v6, plaquettes teverun fighter mini pro v6, pneu teverun fighter mini pro v6"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur",
+          "url2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265"
+        },
+        "suspension": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.wilsonebikes.com/products/teverun-fighter-mini-pro-2026-2-0-system",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BTEVERUNMINIPROBOSCH60V31A2026_5D_20TROTTINETTE_20ELECTRIQUE_20TEVERUN_20FIGHTER_20MINI_20PRO_2060V_2031_2C8AH_202026-scaled.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.gtsshop.fr/en/brake-disc/5835-brake-disc-140mm-teverun-fighter-mini-10-and-10.html",
+          "type": "revendeur",
+          "url2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59"
+        },
+        "rim_diameter": {
+          "url": "https://trott-en-provence.fr/pneu-trottinette-teverun-fighter-mini-pro/",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html"
+        },
+        "tire_section": {
+          "url": "https://trott-en-provence.fr/pneu-trottinette-teverun-fighter-mini-pro/",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html"
+        },
+        "caliper_family": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://leminirider.fr/trottinettes/8956-trottinette-electrique-teverun-fighter-mini-pro-v6.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35.5,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 31.8,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x3.0 tubeless",
+            "source_url": "https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique réglable avant et arrière (KKE)",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+            "source_url_2": "https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wilsonebikes.com/products/teverun-fighter-mini-pro-2026-2-0-system",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter Mini Pro V6 (2026) est une trottinette électrique double moteur Bosch de 2×1000 W, alimentée par une batterie Samsung 60 V 31,8 Ah offrant jusqu'à 100 km d'autonomie. Elle repose sur des roues de 10 pouces avec pneus tubeless 10×3, des freins à disques hydrauliques avant et arrière et des suspensions hydrauliques réglables. Livrée bridée à 25 km/h pour la voie publique, elle peut atteindre 70 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "source_url_2": "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+            "https://www.minimotors.fr/en/shop/teverunminiprobosch60v31a2026-trottinette-electrique-teverun-fighter-mini-pro-60v-318ah-moteur-bosch-2026-16265",
+            "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro"
+          ],
+          "_og_images": [
+            "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BTEVERUNMINIPROBOSCH60V31A2026_5D_20TROTTINETTE_20ELECTRIQUE_20TEVERUN_20FIGHTER_20MINI_20PRO_2060V_2031_2C8AH_202026-scaled.jpg",
+            "https://www.minimotors.fr/web/image/product.template/16265/image_1024?unique=6e89718",
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Teverun_fighter_mini_pro_2025.jpg?v=1755223144"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro",
+            "source_url_2": "https://leminirider.fr/trottinettes/8956-trottinette-electrique-teverun-fighter-mini-pro-v6.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.gtsshop.fr/en/brake-disc/5835-brake-disc-140mm-teverun-fighter-mini-10-and-10.html",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-teverun-fighter-mini-pro/",
+            "source_url_2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-teverun-fighter-mini-pro/",
+            "source_url_2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://leminirider.fr/trottinettes/8956-trottinette-electrique-teverun-fighter-mini-pro-v6.html",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Fighter Mini V6",
+        "slug": "teverun-fighter-mini-v6",
+        "voltage": 52,
+        "amperage": 30,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 60,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 35.5,
+        "suspension": "Hydraulique réglable avant et arrière",
+        "ip_rating": "IPX6",
+        "tire_size": "10x3.0 tubeless (CST)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg?v=1781287628",
+          "http://vepace.com/cdn/shop/files/teverun_fighter_mini_mini_eco_mini_pro_electric_scooter.jpg?v=1778046171"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "10x3.00",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 43,
+        "description": "La Teverun Fighter Mini V6 est une trottinette électrique double moteur Bosch de 2 × 1 000 W (jusqu'à 2 950 W en crête), alimentée par une batterie 52 V 30 Ah annoncée pour 100 km d'autonomie. Elle est équipée de pneus tubeless CST 10 × 3 pouces, de suspensions hydrauliques réglables et de freins à disque hydrauliques, pour 35,5 kg et une charge maximale de 120 kg. Sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 60 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter Mini V6 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter Mini V6 : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter mini v6, pieces teverun fighter mini v6, disque frein teverun fighter mini v6, plaquettes teverun fighter mini v6, pneu teverun fighter mini v6"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur",
+          "url2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59"
+        },
+        "suspension": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg?v=1781287628",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://electrikshop.fr/products/disque-de-frein-140mm-teverun-fighter-mini-space-blade-mini-ultra",
+          "type": "revendeur",
+          "url2": "https://www.gtsshop.fr/en/brake-disc/5835-brake-disc-140mm-teverun-fighter-mini-10-and-10.html"
+        },
+        "rim_diameter": {
+          "url": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html"
+        },
+        "caliper_family": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35.5,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x3.0 tubeless (CST)",
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_url_2": "https://www.ridelec.fr/details-decouvrez+la+trottinette+electrique+hautes+performances+teverun+fighter+mini+eco+v6+a+salon-de-provence+double+moteur+bosch+pneus+10+tubeless-47",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique réglable avant et arrière",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://vepace.com/products/teverun-fighter-mini-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter Mini V6 est une trottinette électrique double moteur Bosch de 2 × 1 000 W (jusqu'à 2 950 W en crête), alimentée par une batterie 52 V 30 Ah annoncée pour 100 km d'autonomie. Elle est équipée de pneus tubeless CST 10 × 3 pouces, de suspensions hydrauliques réglables et de freins à disque hydrauliques, pour 35,5 kg et une charge maximale de 120 kg. Sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 60 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "https://fastride.fr/fr/teverun/2828-trottinette-electrique-teverun-fighter-mini.html",
+            "https://vepace.com/products/teverun-fighter-mini-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg?v=1781287628",
+            "http://vepace.com/cdn/shop/files/teverun_fighter_mini_mini_eco_mini_pro_electric_scooter.jpg?v=1778046171"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_url_2": "https://ogctrotteshop.fr/teverun/49-teverun-fighter-mini.html",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://electrikshop.fr/products/disque-de-frein-140mm-teverun-fighter-mini-space-blade-mini-ultra",
+            "source_url_2": "https://www.gtsshop.fr/en/brake-disc/5835-brake-disc-140mm-teverun-fighter-mini-10-and-10.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html",
+            "source_url_2": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+            "source_url_2": "https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_url_2": "https://fr.aliexpress.com/item/1005008064484831.html",
+            "source_type": "site_test"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "brandName": "NIU",
+  "results": [
+    {
+      "scooter": {
+        "name": "NIU KQi3 Pro",
+        "slug": "niu-kqi3-pro",
+        "voltage": 48,
+        "amperage": 10.1,
+        "power_watts": 350,
+        "max_speed_private_kmh": 32,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.3,
+        "suspension": "Aucune",
+        "ip_rating": "IP54",
+        "tire_size": "9.5 x 2.5 pouces (241 x 64 mm), tubeless",
+        "foldable": true,
+        "wheel_inches": "9.5",
+        "source_image_urls": [
+          "http://shopeu.niu.com/cdn/shop/products/NiuKqi3ProElectricKickScooterBlack1_f52889f1-4495-4437-a217-3f6e8d9f193c.jpg?v=1763378637"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "disc_holes": 6,
+        "rim_diameter": "6.1",
+        "caliper_family": "xiaomi_mi4",
+        "tire_family": "pneumatic",
+        "score_offroad": 25,
+        "description": "La NIU KQi3 Pro est une trottinette électrique équipée d'un moteur arrière de 350 W nominaux (700 W en pointe) alimenté par une batterie de 48 V / 486 Wh, pour une autonomie annoncée de 50 km. Elle roule sur des pneus tubeless de 9,5 x 2,5 pouces, sans suspension, et freine grâce à deux freins à disque (avant et arrière) associés à un freinage régénératif ; sa vitesse est bridée à 25 km/h en usage routier en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "NIU KQi3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées NIU KQi3 Pro : disque de frein 120 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "niu kqi3 pro, pieces niu kqi3 pro, disque frein niu kqi3 pro, plaquettes niu kqi3 pro, pneu niu kqi3 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "power_watts": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur",
+          "url2": "https://jusst.com/products/niu-kqi3-pro-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://scooterrank.com/scooters/niu-kqi3-pro",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://shopeu.niu.com/cdn/shop/products/NiuKqi3ProElectricKickScooterBlack1_f52889f1-4495-4437-a217-3f6e8d9f193c.jpg?v=1763378637",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/pieces-detachees-niu-kqi3-sport/"
+        },
+        "disc_holes": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/Colorful-NIU-Electric-Scooter-Accessories/dp/B0CJQZG7NQ"
+        },
+        "rim_diameter": {
+          "url": "https://www.scooterworks.com/products/tire-niu-kqi3-pro",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/2-5-6-1-NIU-Electric-9-5x2-5-6-1-Cross-country/dp/B0CNGNF67R"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_pcd"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://trott-en-provence.fr/pneu-plein-niu-kqi3-sport-pro-max/"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.3,
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://jusst.com/products/niu-kqi3-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.1,
+            "source_url": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_url_2": "https://scooterrank.com/scooters/niu-kqi3-pro",
+            "source_type": "site_test"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 32,
+            "source_url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+            "source_url_2": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Niu-KQi3-Pro-700-W-Noir/a16835264/w-4?noodl=3738ae77&yah=933249&nin=481430",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://jusst.com/products/niu-kqi3-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9.5,
+            "source_url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+            "source_url_2": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "9.5 x 2.5 pouces (241 x 64 mm), tubeless",
+            "source_url": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+            "source_url_2": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://meilleure-innovation.com/niu-kqi3-pro-test-trottinette/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://niucanada.com/products/kqi3-pro-electric-scooter-adults",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://scooterrank.com/scooters/niu-kqi3-pro",
+            "source_url_2": "https://trottinette-electrique-adulte.fr/produit/trottinette-electrique-niu-kqi3-pro/",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La NIU KQi3 Pro est une trottinette électrique équipée d'un moteur arrière de 350 W nominaux (700 W en pointe) alimenté par une batterie de 48 V / 486 Wh, pour une autonomie annoncée de 50 km. Elle roule sur des pneus tubeless de 9,5 x 2,5 pouces, sans suspension, et freine grâce à deux freins à disque (avant et arrière) associés à un freinage régénératif ; sa vitesse est bridée à 25 km/h en usage routier en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "https://www.fnac.com/Trottinette-electrique-Niu-KQi3-Pro-700-W-Noir/a16835264/w-4?noodl=3738ae77&yah=933249&nin=481430",
+            "https://www.trottnshop.com/produit/niu-kqi3-pro/"
+          ],
+          "_og_images": [
+            "http://shopeu.niu.com/cdn/shop/products/NiuKqi3ProElectricKickScooterBlack1_f52889f1-4495-4437-a217-3f6e8d9f193c.jpg?v=1763378637"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.trottnshop.com/produit/niu-kqi3-pro/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+            "source_url_2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/pieces-detachees-niu-kqi3-sport/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+            "source_url_2": "https://www.amazon.com/Colorful-NIU-Electric-Scooter-Accessories/dp/B0CJQZG7NQ",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.1",
+            "source_url": "https://www.scooterworks.com/products/tire-niu-kqi3-pro",
+            "source_url_2": "https://www.amazon.com/2-5-6-1-NIU-Electric-9-5x2-5-6-1-Cross-country/dp/B0CNGNF67R",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "xiaomi_mi4",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": "https://mantes.ecolocomotion.com/pieces-detachees/7554-plaquettes-de-freins-niu-kqi2-kqi3-3760351015067",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.scooterworks.com/products/tire-niu-kqi3-pro",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://trott-en-provence.fr/pneu-plein-niu-kqi3-sport-pro-max/",
+            "source_url_2": "https://www.amazon.com/2-5-6-1-NIU-Electric-9-5x2-5-6-1-Cross-country/dp/B0CNGNF67R",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "NIU KQi Air",
+        "slug": "niu-kqi-air",
+        "voltage": 48,
+        "amperage": 9.4,
+        "power_watts": 350,
+        "max_speed_private_kmh": 32,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "weight_kg": 11.9,
+        "suspension": "Aucune",
+        "ip_rating": "IP55",
+        "tire_size": "9.5 x 2.3 pouces (241 x 58 mm), tubeless",
+        "foldable": true,
+        "wheel_inches": "9.5",
+        "source_image_urls": [
+          "http://shopeu.niu.com/cdn/shop/files/KQi_Air_Bundle_Scooter.jpg?v=1760438070",
+          "https://trotz-ride.shop/wp-content/uploads/2024/04/4_bbf8a405-ed79-474a-92a2-2c24cf9c4eb8_1024x1024.webp"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 25,
+        "description": "La NIU KQi Air est une trottinette électrique ultralégère à cadre en fibre de carbone (11,9 kg), équipée d'un moteur arrière de 350 W (700 W en pointe) et d'une batterie 48 V de 451,2 Wh annoncée pour jusqu'à 50 km d'autonomie. Elle roule sur des pneus tubeless de 9,5 pouces et freine grâce à un frein à disque avant associé à un frein régénératif, avec une vitesse bridée à 25 km/h en France (32 km/h maximum). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "NIU KQi Air - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées NIU KQi Air : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "niu kqi air, pieces niu kqi air, disque frein niu kqi air, plaquettes niu kqi air, pneu niu kqi air"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://eridehero.com/products/niu-kqi-air/",
+          "type": "site_test"
+        },
+        "power_watts": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://niucanada.com/pages/kqi-air-specifications-2025",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://niucanada.com/pages/kqi-air-specifications-2025",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.journaldugeek.com/2023/09/04/niu-lance-ses-trottinettes-electriques-ultralegere-les-kqi-air-x-et-kqi-air/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+          "type": "constructeur",
+          "url2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1"
+        },
+        "suspension": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+          "type": "distributeur"
+        },
+        "tire_size": {
+          "url": "https://niucanada.com/products/kqi-air-electric-kick-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://niucanada.com/products/kqi-air-electric-kick-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://shopeu.niu.com/cdn/shop/files/KQi_Air_Bundle_Scooter.jpg?v=1760438070",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://shopeu.niu.com/en-es/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://global.niu.com/fr/product/KQi-Air",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 11.9,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_url_2": "https://eridehero.com/products/niu-kqi-air/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 9.4,
+            "source_url": "https://eridehero.com/products/niu-kqi-air/",
+            "source_url_2": "https://riderguide.com/ridefinder/niu-kqi-air/",
+            "source_type": "site_test"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 32,
+            "source_url": "https://niucanada.com/pages/kqi-air-specifications-2025",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-air/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://niucanada.com/pages/kqi-air-specifications-2025",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9.5,
+            "source_url": "https://niucanada.com/products/kqi-air-electric-kick-scooter",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "9.5 x 2.3 pouces (241 x 58 mm), tubeless",
+            "source_url": "https://niucanada.com/products/kqi-air-electric-kick-scooter",
+            "source_url_2": "https://eridehero.com/niu-kqi-air-review/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_url_2": "https://niucanada.com/products/kqi-air-electric-kick-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_url_2": "https://riderguide.com/ridefinder/niu-kqi-air/",
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "source_url_2": "https://scooterrank.com/scooters/niu-kqi-air",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://www.journaldugeek.com/2023/09/04/niu-lance-ses-trottinettes-electriques-ultralegere-les-kqi-air-x-et-kqi-air/",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-air/",
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La NIU KQi Air est une trottinette électrique ultralégère à cadre en fibre de carbone (11,9 kg), équipée d'un moteur arrière de 350 W (700 W en pointe) et d'une batterie 48 V de 451,2 Wh annoncée pour jusqu'à 50 km d'autonomie. Elle roule sur des pneus tubeless de 9,5 pouces et freine grâce à un frein à disque avant associé à un frein régénératif, avec une vitesse bridée à 25 km/h en France (32 km/h maximum). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
+            "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "https://trotz-ride.shop/product/trottinette-niu-kqi-air/"
+          ],
+          "_og_images": [
+            "http://shopeu.niu.com/cdn/shop/files/KQi_Air_Bundle_Scooter.jpg?v=1760438070",
+            "https://trotz-ride.shop/wp-content/uploads/2024/04/4_bbf8a405-ed79-474a-92a2-2c24cf9c4eb8_1024x1024.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://shopeu.niu.com/en-es/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
+            "source_url_2": "https://electricscooterfinder.com/fr/scooter/niu-kqi-air",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://global.niu.com/fr/product/KQi-Air",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

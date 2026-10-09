@@ -30,3 +30,15 @@
 - 2026-10-08T22:06:47.855Z · Micro · ÉCHEC (code 1) · 0.0 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CfqXimNviJHuGsD8Uw3Cj"}
 - 2026-10-08T22:06:50.143Z · Hikerboy · ÉCHEC (code 1) · 0.0 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CfqXiw9oNYovLPkCE69fT"}
 - 2026-10-09T10:07:22.658Z · E-Twow · OK · 1.6 min
+- 2026-10-09T10:10:55.888Z · Kugoo · OK · 1.9 min
+- 2026-10-09T10:12:29.321Z · Engwe · OK · 1.6 min
+- 2026-10-09T10:12:35.694Z · Nutt · ÉCHEC (code 0) · 0.1 min · aucun modèle traité
+- 2026-10-09T10:14:12.187Z · Navee · OK · 1.6 min
+- 2026-10-09T10:15:43.445Z · NIU · OK · 1.5 min
+- 2026-10-09T10:17:11.913Z · Inmotion · OK · 1.5 min
+- 2026-10-09T10:19:02.312Z · Teverun · OK · 1.8 min
+- 2026-10-09T10:20:33.336Z · Nami · OK · 1.5 min
+- 2026-10-09T10:22:09.697Z · Kingsong · OK · 1.6 min
+- 2026-10-09T10:23:25.937Z · Punk · OK · 1.3 min
+- 2026-10-09T10:24:51.990Z · Micro · OK · 1.4 min
+- 2026-10-09T10:26:20.639Z · Hikerboy · OK · 1.5 min

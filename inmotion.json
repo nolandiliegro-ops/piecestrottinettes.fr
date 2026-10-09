@@ -1,0 +1,62 @@
+{
+  "brandName": "Inmotion",
+  "scooters": [
+    {
+      "name": "Inmotion S1F",
+      "slug": "inmotion-s1f",
+      "voltage": 54,
+      "amperage": 12.5,
+      "power_watts": 500,
+      "max_speed_private_kmh": 40,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "suspension": "Avant et arrière (double suspension à ressorts)",
+      "ip_rating": "IP55",
+      "tire_size": "10x2.50-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://www.inmotion-france.fr/1983-large_default/inmotion-s1f-electric-scooter-54-v-125-ah.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Inmotion S1F est une trottinette électrique pliable équipée d'un moteur arrière de 500 W et d'une batterie lithium-ion 54 V 12,5 Ah (675 Wh), annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension avant/arrière, frein à tambour à l'avant et frein électronique à l'arrière. Sa vitesse est bridée à 25 km/h d'usine et peut atteindre 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inmotion S1F - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inmotion S1F : plaquettes, pneus 60/70, chargeurs 54V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inmotion s1f, pieces inmotion s1f, disque frein inmotion s1f, plaquettes inmotion s1f, pneu inmotion s1f"
+    },
+    {
+      "name": "Inmotion Air Pro",
+      "slug": "inmotion-air-pro",
+      "voltage": 36,
+      "amperage": 12,
+      "power_watts": 400,
+      "max_speed_private_kmh": 35,
+      "range_km": 48,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 17.7,
+      "suspension": "Aucune",
+      "ip_rating": "IP55",
+      "tire_size": "10 pouces (avant pneumatique, arrière plein/tubeless)",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg",
+        "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_inmotion_air_pro_pas_cher-448814.jpg?v=1750677331"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_section": "10x2.125",
+      "score_offroad": 35,
+      "description": "L'Inmotion Air Pro embarque un moteur arrière de 400 W nominal (750 W en pointe) alimenté par une batterie 36 V 12 Ah (438 Wh) pour jusqu'à 48 km d'autonomie. Elle roule sur des roues de 10 pouces (pneu avant gonflable, pneu arrière plein) et freine avec un frein à tambour avant et un frein électronique arrière. Sa vitesse est bridée à 25 km/h en usage routier (35 km/h sur terrain privé) pour un poids de 17,7 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inmotion Air Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inmotion Air Pro : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inmotion air pro, pieces inmotion air pro, disque frein inmotion air pro, plaquettes inmotion air pro, pneu inmotion air pro"
+    }
+  ]
+}

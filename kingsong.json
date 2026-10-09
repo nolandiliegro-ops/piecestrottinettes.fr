@@ -1,0 +1,31 @@
+{
+  "brandName": "Kingsong",
+  "scooters": [
+    {
+      "name": "Kingsong E1",
+      "slug": "kingsong-e1",
+      "voltage": 37,
+      "amperage": 7.8,
+      "power_watts": 350,
+      "max_speed_private_kmh": 25,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.5,
+      "suspension": "Suspension avant (fourche à double cylindre)",
+      "tire_size": "8.5 pouces, pneumatique",
+      "foldable": true,
+      "wheel_inches": "8.5",
+      "source_image_urls": [
+        "https://www.green220.com/6916-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Kingsong E1 est une trottinette électrique urbaine pliable animée par un moteur de 350 W (550 W en pointe) et une batterie de 37 V 7,8 Ah offrant jusqu'à 25 km d'autonomie. Elle est équipée de pneus pneumatiques de 8,5 pouces, d'une suspension avant, d'un double freinage (tambour + E-ABS) et atteint 25 km/h, vitesse conforme à la limite de 25 km/h sur voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kingsong E1 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kingsong E1 : plaquettes, chargeurs 37V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kingsong e1, pieces kingsong e1, disque frein kingsong e1, plaquettes kingsong e1, pneu kingsong e1"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brandName": "Nami",
+  "scooters": [
+    {
+      "name": "Nami Burn-E 3",
+      "slug": "nami-burn-e-3",
+      "voltage": 72,
+      "amperage": 30,
+      "power_watts": 2000,
+      "max_speed_private_kmh": 72,
+      "range_km": 100,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 47,
+      "suspension": "Hydraulique KKE 165 mm réglable, avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "90/65-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": "11",
+      "source_image_urls": [
+        "https://ogctrotteshop.fr/325-large_default/nami-burn-e-3.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "disc_pcd": 44,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "caliper_family": "nutt_4p",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "La Nami Burn-E 3 embarque deux moteurs de 1000 W (2000 W nominaux) alimentés par une batterie 72 V 30 Ah, pour une autonomie annoncée d'environ 100 km. Elle repose sur des roues de 11 pouces avec pneus tubeless 90/65-6.5, des suspensions hydrauliques KKE de 165 mm et des freins hydrauliques à disques de 160 mm. Elle est vendue bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Nami Burn-E 3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Nami Burn-E 3 : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "nami burn-e 3, pieces nami burn-e 3, disque frein nami burn-e 3, plaquettes nami burn-e 3, pneu nami burn-e 3"
+    }
+  ]
+}

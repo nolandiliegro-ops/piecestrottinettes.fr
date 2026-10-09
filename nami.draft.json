@@ -1,0 +1,573 @@
+{
+  "brandName": "Nami",
+  "results": [
+    {
+      "scooter": {
+        "name": "Nami Burn-E 3",
+        "slug": "nami-burn-e-3",
+        "voltage": 72,
+        "amperage": 30,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 72,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 47,
+        "suspension": "Hydraulique KKE 165 mm réglable, avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "90/65-6.5 tubeless",
+        "foldable": true,
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "https://ogctrotteshop.fr/325-large_default/nami-burn-e-3.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "nutt_4p",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Nami Burn-E 3 embarque deux moteurs de 1000 W (2000 W nominaux) alimentés par une batterie 72 V 30 Ah, pour une autonomie annoncée d'environ 100 km. Elle repose sur des roues de 11 pouces avec pneus tubeless 90/65-6.5, des suspensions hydrauliques KKE de 165 mm et des freins hydrauliques à disques de 160 mm. Elle est vendue bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Burn-E 3 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Burn-E 3 : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami burn-e 3, pieces nami burn-e 3, disque frein nami burn-e 3, plaquettes nami burn-e 3, pneu nami burn-e 3"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+          "type": "revendeur",
+          "url2": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html"
+        },
+        "suspension": {
+          "url": "https://ogctrotteshop.fr/nami-electric/51-nami-burn-e-3.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://ogctrotteshop.fr/325-large_default/nami-burn-e-3.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://e-ride.fr/products/nami-burn-e-3",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+          "type": "revendeur",
+          "url2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e"
+        },
+        "disc_pcd": {
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+          "type": "revendeur",
+          "url2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e"
+        },
+        "disc_holes": {
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+          "type": "revendeur",
+          "url2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e"
+        },
+        "rim_diameter": {
+          "url": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Pneu-90-65-6-5-OffRoad-Tubeless-p485020019"
+        },
+        "tire_section": {
+          "url": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Pneu-90-65-6-5-OffRoad-Tubeless-p485020019"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.out-fun.com/trottinettes-electriques/3923-nami-burn-e-3-trottinette-electrique.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47,
+            "source_url": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_url_2": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+            "source_url_2": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 72,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": "https://ogctrotteshop.fr/nami-electric/51-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+            "source_url_2": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 tubeless",
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique KKE 165 mm réglable, avant et arrière",
+            "source_url": "https://ogctrotteshop.fr/nami-electric/51-nami-burn-e-3.html",
+            "source_url_2": "https://www.veloshop-obernai.com/products/burn-e3",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "source_url_2": "https://www.gyro-phare.com/90-trottinette-electrique-nami-burn-e-3.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Nami Burn-E 3 embarque deux moteurs de 1000 W (2000 W nominaux) alimentés par une batterie 72 V 30 Ah, pour une autonomie annoncée d'environ 100 km. Elle repose sur des roues de 11 pouces avec pneus tubeless 90/65-6.5, des suspensions hydrauliques KKE de 165 mm et des freins hydrauliques à disques de 160 mm. Elle est vendue bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-burn-e-3-72v-30ah.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.altermove.com/11834-trottinette-electrique-nami-burn-e-3.html",
+            "https://www.gyro-phare.com/90-trottinette-electrique-nami-burn-e-3.html",
+            "https://ogctrotteshop.fr/nami-electric/51-nami-burn-e-3.html"
+          ],
+          "_og_images": [
+            "https://ogctrotteshop.fr/325-large_default/nami-burn-e-3.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://e-ride.fr/products/nami-burn-e-3",
+            "source_url_2": "https://www.out-fun.com/trottinettes-electriques/3923-nami-burn-e-3-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_url_2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_url_2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_url_2": "https://scooterbros.com.au/collections/brakes/products/disc-brake-rotor-160mm-44-pcd-wave-suit-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Pneu-90-65-6-5-OffRoad-Tubeless-p485020019",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Pneu-90-65-6-5-OffRoad-Tubeless-p485020019",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "nutt_4p",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.out-fun.com/trottinettes-electriques/3923-nami-burn-e-3-trottinette-electrique.html",
+            "source_url_2": "https://e-ride.fr/products/nami-burn-e-3",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Nami Burn-E 3 Max",
+        "slug": "nami-burn-e-3-max",
+        "voltage": 72,
+        "amperage": 40,
+        "power_watts": 3000,
+        "max_speed_private_kmh": 100,
+        "range_km": 120,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 51,
+        "suspension": "Hydraulique à ressort KKE 165 mm, réglable (avant et arrière)",
+        "ip_rating": "IPX5",
+        "tire_size": "11\" tubeless 90/65-6.5",
+        "foldable": true,
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Nami_Burn_E3_Max_pas_cher-184122.jpg?v=1754054362",
+          "https://funtrott.fr/7574-large_default/nami-burn-e-3-max-72v40ah.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "nutt_4p",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Nami Burn-E 3 Max est une trottinette électrique double moteur 2 x 1500 W alimentée par une batterie 72V 40Ah (2880 Wh), annoncée jusqu'à 120 km d'autonomie. Elle roule sur des pneus tubeless 11 pouces (90/65-6.5), avec suspensions hydrauliques KKE de 165 mm et freins hydrauliques 4 pistons à disques de 160 mm. Elle est bridée à 25 km/h sur voie publique et débridable sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Burn-E 3 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Burn-E 3 Max : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami burn-e 3 max, pieces nami burn-e 3 max, disque frein nami burn-e 3 max, plaquettes nami burn-e 3 max, pneu nami burn-e 3 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+          "type": "revendeur",
+          "url2": "https://ogctrotteshop.fr/nami-electric/50-nami-burn-e-3-max.html"
+        },
+        "suspension": {
+          "url": "https://funtrott.fr/accueil/1891-nami-burn-e-3-max-72v40ah.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.gyro-phare.com/91-trottinette-electrique-nami-burn-e-3-max.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.mymobelity.be/en/ectric-scooter-nami-burn-e-3-max-72v-40ah.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Nami_Burn_E3_Max_pas_cher-184122.jpg?v=1754054362",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/nami-electric/2947-trottinette-electrique-nami-burn-e-3-max.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-ride.fr/products/nami-burn-e-3-max",
+          "type": "revendeur",
+          "url2": "https://flextrott.fr/shop/nami-burn-e-3-max"
+        },
+        "rim_diameter": {
+          "url": "https://biketrottstore.com/product/nami-burn-e-3-max/",
+          "type": "revendeur",
+          "url2": "https://www.mymobelity.be/fr/trottinette-electrique-nami-burn-e-3-max-72v-40ah.html"
+        },
+        "tire_section": {
+          "url": "https://biketrottstore.com/product/nami-burn-e-3-max/",
+          "type": "revendeur",
+          "url2": "https://www.mymobelity.be/fr/trottinette-electrique-nami-burn-e-3-max-72v-40ah.html"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.wyrdryds.com/products/nami-burn-e2-max-electric-scooter",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 51,
+            "source_url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+            "source_url_2": "https://ogctrotteshop.fr/nami-electric/50-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://funtrott.fr/accueil/1891-nami-burn-e-3-max-72v40ah.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 40,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://www.gyro-phare.com/91-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 3000,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://www.glisseurbaine.com/2806-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 100,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://fastride.fr/en/nami-electric/2947-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 120,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://www.glisseurbaine.com/2806-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+            "source_url_2": "https://www.mymobelity.be/en/ectric-scooter-nami-burn-e-3-max-72v-40ah.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://www.glisseurbaine.com/2806-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11\" tubeless 90/65-6.5",
+            "source_url": "https://www.mymobelity.be/en/ectric-scooter-nami-burn-e-3-max-72v-40ah.html",
+            "source_url_2": "https://parts2ride.com/en-us/products/nami-burn-e-3-max",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique à ressort KKE 165 mm, réglable (avant et arrière)",
+            "source_url": "https://funtrott.fr/accueil/1891-nami-burn-e-3-max-72v40ah.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.gyro-phare.com/91-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.trottir.com/product-page/nami-burn-e-3-max",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Nami Burn-E 3 Max est une trottinette électrique double moteur 2 x 1500 W alimentée par une batterie 72V 40Ah (2880 Wh), annoncée jusqu'à 120 km d'autonomie. Elle roule sur des pneus tubeless 11 pouces (90/65-6.5), avec suspensions hydrauliques KKE de 165 mm et freins hydrauliques 4 pistons à disques de 160 mm. Elle est bridée à 25 km/h sur voie publique et débridable sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "source_url_2": "https://funtrott.fr/accueil/1891-nami-burn-e-3-max-72v40ah.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-nami-burn-e-3-max",
+            "https://funtrott.fr/accueil/1891-nami-burn-e-3-max-72v40ah.html",
+            "https://www.gyro-phare.com/91-trottinette-electrique-nami-burn-e-3-max.html"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Nami_Burn_E3_Max_pas_cher-184122.jpg?v=1754054362",
+            "https://funtrott.fr/7574-large_default/nami-burn-e-3-max-72v40ah.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/en/nami-electric/2947-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_url_2": "https://biketrottstore.com/product/nami-burn-e-3-max/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://e-ride.fr/products/nami-burn-e-3-max",
+            "source_url_2": "https://flextrott.fr/shop/nami-burn-e-3-max",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://biketrottstore.com/product/nami-burn-e-3-max/",
+            "source_url_2": "https://www.mymobelity.be/fr/trottinette-electrique-nami-burn-e-3-max-72v-40ah.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://biketrottstore.com/product/nami-burn-e-3-max/",
+            "source_url_2": "https://www.mymobelity.be/fr/trottinette-electrique-nami-burn-e-3-max-72v-40ah.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "nutt_4p",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-max/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wyrdryds.com/products/nami-burn-e2-max-electric-scooter",
+            "source_url_2": "https://fastride.fr/en/nami-electric/2947-trottinette-electrique-nami-burn-e-3-max.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

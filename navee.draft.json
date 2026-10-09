@@ -1,0 +1,504 @@
+{
+  "brandName": "Navee",
+  "results": [
+    {
+      "scooter": {
+        "name": "Navee GT5 Max",
+        "slug": "navee-gt5-max",
+        "voltage": 46.8,
+        "amperage": 12.75,
+        "power_watts": 700,
+        "max_speed_private_kmh": 32,
+        "range_km": 90,
+        "max_load_kg": 130,
+        "max_speed_kmh": 25,
+        "weight_kg": 24.8,
+        "suspension": "Fourche avant + amortisseur arrière (cylindre)",
+        "ip_rating": "IPX5",
+        "tire_size": "10 pouces tubeless (section non communiquée)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://naveetech.fr/cdn/shop/files/Max_.382_11.webp?v=1779428147&width=2048",
+          "http://eu.naveetech.com/cdn/shop/files/Navee_GT5_Max.png?v=1780056013&width=2048"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Navee GT5 Max embarque un moteur arrière de 700 W nominaux (1 638 W en pic) alimenté par une batterie 46,8 V 12,75 Ah (596,7 Wh) pour jusqu'à 90 km d'autonomie constructeur. Elle roule sur des pneus tubeless de 10 pouces, avec fourche avant et amortisseur arrière, et un freinage triple (tambour avant, disque arrière, EABS), pour une vitesse bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Navee GT5 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Navee GT5 Max : plaquettes, chargeurs 46.8V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "navee gt5 max, pieces navee gt5 max, disque frein navee gt5 max, plaquettes navee gt5 max, pneu navee gt5 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.naveetech.com/navee-gt5-max/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.naveetech.com/navee-gt5-max/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur",
+          "url2": "https://www.naveetech.com/navee-gt5-max/"
+        },
+        "suspension": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.naveetech.com/navee-gt5-max/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.naveetech.com/navee-gt5-max/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://naveetech.fr/cdn/shop/files/Max_.382_11.webp?v=1779428147&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-max",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24.8,
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.naveetech.com/navee-gt5-max/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 12.75,
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 700,
+            "source_url": "https://www.naveetech.com/navee-gt5-max/",
+            "source_url_2": "https://www.lemonhardware.com/la-trottinette-navee-gt5-max-arrive-avec-des-caracteristiques-techniques-tres-prometteuses-18523/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 32,
+            "source_url": "https://www.naveetech.com/navee-gt5-max/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 90,
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 130,
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.naveetech.com/navee-gt5-max/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.naveetech.com/navee-gt5-max/",
+            "source_url_2": "https://www.bestbuy.com/product/navee-gt5-max-electric-scooter-55-9mi-max-range-25mph-max-speed-1638w-motor-front-fork-rear-damping-10-tires-black/J3R85T7RTL",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces tubeless (section non communiquée)",
+            "source_url": "https://www.naveetech.com/navee-gt5-max/",
+            "source_url_2": "https://www.bestbuy.com/product/navee-gt5-max-electric-scooter-55-9mi-max-range-25mph-max-speed-1638w-motor-front-fork-rear-damping-10-tires-black/J3R85T7RTL",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Fourche avant + amortisseur arrière (cylindre)",
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.naveetech.com/navee-gt5-max/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.naveetech.com/navee-gt5-max/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max",
+            "source_url_2": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Navee GT5 Max embarque un moteur arrière de 700 W nominaux (1 638 W en pic) alimenté par une batterie 46,8 V 12,75 Ah (596,7 Wh) pour jusqu'à 90 km d'autonomie constructeur. Elle roule sur des pneus tubeless de 10 pouces, avec fourche avant et amortisseur arrière, et un freinage triple (tambour avant, disque arrière, EABS), pour une vitesse bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+            "source_url_2": "https://www.naveetech.com/navee-gt5-max/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html",
+            "https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max",
+            "https://eu.naveetech.com/en-nordic/products/navee-gt5-max"
+          ],
+          "_og_images": [
+            "http://naveetech.fr/cdn/shop/files/Max_.382_11.webp?v=1779428147&width=2048",
+            "http://eu.naveetech.com/cdn/shop/files/Navee_GT5_Max.png?v=1780056013&width=2048"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-max",
+            "source_url_2": "https://www.journaldugeek.com/test/test-navee-gt5-max-des-caracteristiques-haut-de-gamme-pour-un-tarif-milieu-de-gamme/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Navee XT5 Pro",
+        "slug": "navee-xt5-pro",
+        "voltage": 46.8,
+        "amperage": 12.75,
+        "power_watts": 700,
+        "max_speed_private_kmh": 50,
+        "range_km": 75,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 34.8,
+        "suspension": "Avant et arrière, système Damping Arm (bras amortisseur à ressort)",
+        "ip_rating": "IPX6",
+        "foldable": true,
+        "wheel_inches": "12",
+        "source_image_urls": [
+          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Navee XT5 Pro est une trottinette électrique tout-terrain à moteur arrière de 700 W nominal (2200 W en pointe), alimentée par une batterie 46,8 V 12,75 Ah (596,7 Wh) pour jusqu'à 75 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 12 pouces, avec suspension avant et arrière Damping Arm et double frein à disque + frein électronique EABS. Sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Navee XT5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Navee XT5 Pro : plaquettes, chargeurs 46.8V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "navee xt5 pro, pieces navee xt5 pro, disque frein navee xt5 pro, plaquettes navee xt5 pro, pneu navee xt5 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.naveetech.com/navee-xt5-pro/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eu.naveetech.com/products/navee-xt5-pro",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.naveetech.com/navee-xt5-pro/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.naveetech.com/navee-xt5-pro/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://eu.naveetech.com/products/navee-xt5-pro",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://eu.naveetech.com/products/navee-xt5-pro",
+          "type": "constructeur",
+          "url2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html"
+        },
+        "suspension": {
+          "url": "https://www.naveetech.com/navee-xt5-pro/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.naveetech.com/navee-xt5-pro/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://naveetech.fr/en/products/xt5-pro",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 34.8,
+            "source_url": "https://eu.naveetech.com/products/navee-xt5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 12.75,
+            "source_url": "https://eu.naveetech.com/products/navee-xt5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 700,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_url_2": "https://www.ldlc.pro/fiche/PB00744342.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_url_2": "https://jtgeek.com/navee-xt5-pro-la-trottinette-electrique-tout-terrain-la-plus-puissante-de-lannee-debarque/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 75,
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://eu.naveetech.com/products/navee-xt5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 12,
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_url_2": "https://www.ldlc.pro/fiche/PB00744342.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière, système Damping Arm (bras amortisseur à ressort)",
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_url_2": "https://www.ldlc.pro/fiche/PB00744342.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_url_2": "https://www.ldlc.pro/fiche/PB00744342.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Pro-700-W-Noir/a21965019/w-4?tr=ae97da36a4&quizzi=708939&sn=ec67b3be",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Navee XT5 Pro est une trottinette électrique tout-terrain à moteur arrière de 700 W nominal (2200 W en pointe), alimentée par une batterie 46,8 V 12,75 Ah (596,7 Wh) pour jusqu'à 75 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 12 pouces, avec suspension avant et arrière Damping Arm et double frein à disque + frein électronique EABS. Sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.naveetech.com/navee-xt5-pro/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+            "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Pro-700-W-Noir/a21965019/w-4?tr=ae97da36a4&quizzi=708939&sn=ec67b3be",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-navee/f-1214801-aabur66944.html"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html",
+            "source_url_2": "https://www.jeuxvideo.com/high-tech/tests/test-2041746.htm",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://naveetech.fr/en/products/xt5-pro",
+            "source_url_2": "https://www.ldlc.pro/fiche/PB00744342.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
