@@ -1,0 +1,52 @@
+name: Passe disques — clés de frein manquantes
+
+# Relit les brouillons de donnees-extraction et ne cherche QUE les clés disque manquantes.
+# N'écrit RIEN en base, ne touche jamais main.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/passe-disques.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extracteur-marques   # même file que l'extracteur : jamais deux écritures concurrentes sur donnees-extraction
+  cancel-in-progress: false
+
+jobs:
+  disques:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Garde
+        id: garde
+        run: |
+          node -e "const c=require('./config/passe-disques.json');const o=require('fs').createWriteStream(process.env.GITHUB_OUTPUT,{flags:'a'});o.write('go='+(c.go===true&&c.max_brands>0)+'\n');o.write('args=--model '+c.model+' --max-searches '+c.max_searches+' --max-brands '+c.max_brands+(c.brands?' --brands '+c.brands.join(','):'')+'\n')"
+      - name: Branche de données
+        if: steps.garde.outputs.go == 'true'
+        run: |
+          git config --global user.name "extracteur-pt"
+          git config --global user.email "extracteur-pt@users.noreply.github.com"
+          git fetch origin donnees-extraction
+          git worktree add ../data -B donnees-extraction origin/donnees-extraction
+      - name: Passe disques
+        if: steps.garde.outputs.go == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        run: node scripts/agents/fill-discs.js --data-dir ../data ${{ steps.garde.outputs.args }}
+      - name: Publier
+        if: always() && steps.garde.outputs.go == 'true'
+        run: |
+          cd ../data
+          git add -- '*.json' '*.md' 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Aucun fichier nouveau."; exit 0; fi
+          git commit -m "passe disques : run ${{ github.run_id }}"
+          git push origin donnees-extraction
