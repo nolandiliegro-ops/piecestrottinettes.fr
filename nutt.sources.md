@@ -2,4 +2,4 @@
 
 **0 PRÊT / 0 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 20823 tokens entrée, 280 sortie, 2 recherches web.
+Coût mesuré : 23316 tokens entrée, 237 sortie, 2 recherches web.

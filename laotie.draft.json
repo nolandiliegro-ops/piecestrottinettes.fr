@@ -1,0 +1,554 @@
+{
+  "brandName": "Laotie",
+  "results": [
+    {
+      "scooter": {
+        "name": "Laotie Ti30",
+        "slug": "laotie-ti30",
+        "voltage": 60,
+        "amperage": 38.6,
+        "power_watts": 5600,
+        "max_speed_private_kmh": 85,
+        "range_km": 140,
+        "max_load_kg": 200,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "suspension": "Double suspension avant et arrière",
+        "tire_size": "11 pouces tubeless",
+        "foldable": true,
+        "wheel_inches": "11",
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Laotie Ti30 Landbreaker est une trottinette électrique pliable à double moteur (2 x 2800 W en pointe, soit 5600 W), alimentée par une batterie lithium 60 V 38,6 Ah en cellules 21700. Elle est équipée de pneus tubeless de 11 pouces, d'une double suspension et de freins à disque hydrauliques avec frein électronique ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 85 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Laotie Ti30 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Laotie Ti30 : disque de frein 140 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "laotie ti30, pieces laotie ti30, disque frein laotie ti30, plaquettes laotie ti30, pneu laotie ti30"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://couponporter.com/laotie-ti30-landbreaker-review/",
+          "type": "site_test"
+        },
+        "suspension": {
+          "url": "https://www.amazon.ca/LAOTIE-Ti30-Electric-Tubeless-Suspension/dp/B0BN6HPLQ8",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://usa.banggood.com/buy/brake-disc-laotie-ti30.html",
+          "type": "revendeur",
+          "url2": "https://monsieurtrottinettes.be/en/145-laotie-ti-30"
+        },
+        "rim_diameter": {
+          "url": "https://escootervision.eu/en-eu/products/laotie-ti30-es18-es18p-90-65-6-5-reifen-strassenreifen-11-zoll-tubeless",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/104-pneu-chambre-a-air-trottinette-electrique-zero"
+        },
+        "tire_section": {
+          "url": "https://escootervision.eu/en-eu/products/laotie-ti30-es18-es18p-90-65-6-5-reifen-strassenreifen-11-zoll-tubeless",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/104-pneu-chambre-a-air-trottinette-electrique-zero"
+        },
+        "caliper_family": {
+          "url": "https://youvelo.fr/vtt/774-plaquette-carbone-quaxar-laotie-ti30-es19-t30-sr10.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "source_image_urls",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.comebuy.cc/product/laotie-ti30/"
+          },
+          "amperage": {
+            "value": 38.6,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "power_watts": {
+            "value": 5600,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "max_speed_private_kmh": {
+            "value": 85,
+            "source_url": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.comebuy.cc/product/laotie-ti30/"
+          },
+          "range_km": {
+            "value": 140,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "max_load_kg": {
+            "value": 200,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "tire_size": {
+            "value": "11 pouces tubeless",
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.amazon.ca/LAOTIE-Ti30-Electric-Tubeless-Suspension/dp/B0BN6HPLQ8",
+            "source_type": "revendeur",
+            "source_url_2": "https://trottinelec.fr/laotie-ti30-test-avis/"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.amazon.ca/LAOTIE-Ti30-Electric-Tubeless-Suspension/dp/B0BN6HPLQ8"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://couponporter.com/laotie-ti30-landbreaker-review/",
+            "source_type": "site_test",
+            "source_url_2": null
+          },
+          "description_fr": {
+            "value": "La Laotie Ti30 Landbreaker est une trottinette électrique pliable à double moteur (2 x 2800 W en pointe, soit 5600 W), alimentée par une batterie lithium 60 V 38,6 Ah en cellules 21700. Elle est équipée de pneus tubeless de 11 pouces, d'une double suspension et de freins à disque hydrauliques avec frein électronique ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 85 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/",
+            "https://fideler-bike.fr/produit/laotie-ti30-landbreaker/",
+            "https://vosvelos.fr/produit/laotie-ti30-landbreaker/"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+            "source_url_2": "https://trottinelec.fr/laotie-ti30-test-avis/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://usa.banggood.com/buy/brake-disc-laotie-ti30.html",
+            "source_url_2": "https://monsieurtrottinettes.be/en/145-laotie-ti-30",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://youvelo.fr/vtt/774-plaquette-carbone-quaxar-laotie-ti30-es19-t30-sr10.html",
+            "source_url_2": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://escootervision.eu/en-eu/products/laotie-ti30-es18-es18p-90-65-6-5-reifen-strassenreifen-11-zoll-tubeless",
+            "source_url_2": "https://youvelo.fr/104-pneu-chambre-a-air-trottinette-electrique-zero",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://escootervision.eu/en-eu/products/laotie-ti30-es18-es18p-90-65-6-5-reifen-strassenreifen-11-zoll-tubeless",
+            "source_url_2": "https://youvelo.fr/104-pneu-chambre-a-air-trottinette-electrique-zero",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+            "source_url_2": "https://fideler-bike.fr/produit/laotie-ti30-landbreaker/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Laotie SR10",
+        "slug": "laotie-sr10",
+        "voltage": 60,
+        "amperage": 28.8,
+        "power_watts": 3600,
+        "max_speed_private_kmh": 70,
+        "range_km": 100,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "suspension": "Amortisseurs avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10x3.0 (80/65-6)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Laotie SR10 est une trottinette électrique pliable à double moteur de 1800 W (3600 W au total), alimentée par une batterie 60V 28,8Ah (cellules 21700) pour une autonomie annoncée jusqu'à 100 km. Elle roule sur des pneus de 10 pouces (10x3.0), avec des freins à disque hydrauliques et une suspension avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre environ 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Laotie SR10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Laotie SR10 : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "laotie sr10, pieces laotie sr10, disque frein laotie sr10, plaquettes laotie sr10, pneu laotie sr10"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://promotrott.com/sr10/",
+          "type": "site_test"
+        },
+        "amperage": {
+          "url": "https://promotrott.com/sr10/",
+          "type": "site_test"
+        },
+        "power_watts": {
+          "url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+          "type": "site_test"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://promotrott.com/sr10/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://www.techno-science.net/actualite/monstrueuse-trottinette-electrique-laotie-sr10-70km-3600w-fortement-remisee-grace-code-promo-E59700.html",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+          "type": "site_test"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://cyclesgr.com/product/laotie-sr10/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://fr-m.banggood.com/Zoom-Oil-Brake-Electric-Scooter-Rear-Brake-Power-Off-Control-For-LAOTIE-ES19-TI30-T30-SR10-ES40-Pro-TI40-Pro-p-1965909.html",
+          "type": "revendeur",
+          "url2": "https://promotrott.com/sr10/"
+        },
+        "rim_diameter": {
+          "url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus/2414-pneu-gonflable10x3-80-65-6-255x80-route-3770018713120.html"
+        },
+        "tire_section": {
+          "url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus/2414-pneu-gonflable10x3-80-65-6-255x80-route-3770018713120.html"
+        },
+        "caliper_family": {
+          "url": "https://youvelo.fr/vtt/774-plaquette-carbone-quaxar-laotie-ti30-es19-t30-sr10.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 41,
+          "url": "https://trottinelec.fr/laotie-sr10-test-avis/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 60,
+            "source_url": "https://promotrott.com/sr10/",
+            "source_url_2": "https://www.chinaplanets.com/laotie-sr10-14/",
+            "source_type": "site_test"
+          },
+          "amperage": {
+            "value": 28.8,
+            "source_url": "https://promotrott.com/sr10/",
+            "source_url_2": "https://www.chinaplanets.com/laotie-sr10-14/",
+            "source_type": "site_test"
+          },
+          "power_watts": {
+            "value": 3600,
+            "source_url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "site_test"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://promotrott.com/sr10/",
+            "source_url_2": "https://www.chinaplanets.com/laotie-sr10-14/",
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 41,
+            "source_url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "site_test"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+            "source_url_2": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://manuals.plus/laotie/sr10-electric-scooter-manual",
+            "source_url_2": "https://cyclesgr.com/product/laotie-sr10/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x3.0 (80/65-6)",
+            "source_url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+            "source_url_2": "https://weerda.fr/pieces-detachees-weerda/1796-Pneu-10-Pouces-10x3-6-CST-Trottinette-Electrique-Dualtron-New-Victor-Luxury-Spider-Kaabo-Mantis-Laotie-Mobygum-Zero-10X-Currus.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Amortisseurs avant et arrière",
+            "source_url": "https://www.techno-science.net/actualite/monstrueuse-trottinette-electrique-laotie-sr10-70km-3600w-fortement-remisee-grace-code-promo-E59700.html",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://cyclesgr.com/product/laotie-sr10/",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Laotie SR10 est une trottinette électrique pliable à double moteur de 1800 W (3600 W au total), alimentée par une batterie 60V 28,8Ah (cellules 21700) pour une autonomie annoncée jusqu'à 100 km. Elle roule sur des pneus de 10 pouces (10x3.0), avec des freins à disque hydrauliques et une suspension avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre environ 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://promotrott.com/sr10/",
+            "source_url_2": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_type": "site_test"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://cyclesgr.com/product/laotie-sr10/",
+            "https://fideler-bike.fr/produit/laotie-sr10-60v-28-8ah-21700-batterie-3600w/",
+            "https://www.laotie.zone/LAOTIE--SR10-60V-28_8Ah-21700-Battery-3600W-Dual-Foldable-Electric-Scooter-100km-Mileage-150kg-Max-Load-EU-Plug-p-1929186.html"
+          ],
+          "_og_images": [
+            "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://trottinelec.fr/laotie-sr10-test-avis/",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://fr-m.banggood.com/Zoom-Oil-Brake-Electric-Scooter-Rear-Brake-Power-Off-Control-For-LAOTIE-ES19-TI30-T30-SR10-ES40-Pro-TI40-Pro-p-1965909.html",
+            "source_url_2": "https://promotrott.com/sr10/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://youvelo.fr/vtt/774-plaquette-carbone-quaxar-laotie-ti30-es19-t30-sr10.html",
+            "source_url_2": "https://fr-m.banggood.com/Zoom-Oil-Brake-Electric-Scooter-Rear-Brake-Power-Off-Control-For-LAOTIE-ES19-TI30-T30-SR10-ES40-Pro-TI40-Pro-p-1965909.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+            "source_url_2": "https://www.out-fun.com/pneus/2414-pneu-gonflable10x3-80-65-6-255x80-route-3770018713120.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+            "source_url_2": "https://www.out-fun.com/pneus/2414-pneu-gonflable10x3-80-65-6-255x80-route-3770018713120.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-laotie-sr10/",
+            "source_url_2": "https://www.out-fun.com/pneus/2414-pneu-gonflable10x3-80-65-6-255x80-route-3770018713120.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

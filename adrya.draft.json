@@ -1,0 +1,493 @@
+{
+  "brandName": "Adrya",
+  "results": [
+    {
+      "scooter": {
+        "name": "Adrya TWAir",
+        "slug": "adrya-twair",
+        "voltage": 48,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 16,
+        "foldable": true,
+        "wheel_inches": "12",
+        "source_image_urls": [
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
+          "https://promovelofrance.com/2572-thickbox_default/trottinette-electrique-adrya-twair-12-pouces.jpg"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "caliper_family": "xtech_zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 45,
+        "description": "L'Adrya TWAir (version 2022) est une trottinette électrique pliable à grandes roues gonflables de 12 pouces, animée par un moteur brushless de 500 W en 48 V et une batterie lithium-ion 48 V 10,4 Ah (environ 480-499 Wh) annoncée jusqu'à 35/40 km d'autonomie. Elle dispose d'un double freinage à disque avant/arrière, de 3 modes de vitesse et d'une vitesse bridée à 25 km/h, pour un poids de 16 kg et une charge maximale de 100 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Adrya TWAir - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Adrya TWAir : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "adrya twair, pieces adrya twair, disque frein adrya twair, plaquettes adrya twair, pneu adrya twair"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+          "type": "revendeur",
+          "url2": "https://mapsychologie.com/adrya-twair-trottinette-electrique-12/"
+        },
+        "foldable": {
+          "url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-adrya-twair/",
+          "type": "revendeur"
+        },
+        "caliper_family": {
+          "url": "https://www.mobilityurban.fr/pieces-detachees/trottinette-adrya-1/etrier-de-frein-pour-trottinette-electrique-adrya-twair.html",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 160,
+          "url": "https://www.mobilityurban.fr/m/adrya-scooter/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16,
+            "source_url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_url_2": "https://mapsychologie.com/adrya-twair-trottinette-electrique-12/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_url_2": "https://mapsychologie.com/adrya-twair-trottinette-electrique-12/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 12,
+            "source_url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_url_2": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-adrya-twair/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'Adrya TWAir (version 2022) est une trottinette électrique pliable à grandes roues gonflables de 12 pouces, animée par un moteur brushless de 500 W en 48 V et une batterie lithium-ion 48 V 10,4 Ah (environ 480-499 Wh) annoncée jusqu'à 35/40 km d'autonomie. Elle dispose d'un double freinage à disque avant/arrière, de 3 modes de vitesse et d'une vitesse bridée à 25 km/h, pour un poids de 16 kg et une charge maximale de 100 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/",
+            "https://promovelofrance.com/catalogue/420-trottinette-electrique-adrya-twair-12-pouces.html"
+          ],
+          "_og_images": [
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
+            "https://promovelofrance.com/2572-thickbox_default/trottinette-electrique-adrya-twair-12-pouces.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-adrya-twair/",
+            "source_url_2": "https://mapsychologie.com/adrya-twair-trottinette-electrique-12/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.mobilityurban.fr/m/adrya-scooter/",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "xtech_zoom",
+            "source_url": "https://www.mobilityurban.fr/pieces-detachees/trottinette-adrya-1/etrier-de-frein-pour-trottinette-electrique-adrya-twair.html",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-adrya-twair/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Adrya Piton E20",
+        "slug": "adrya-piton-e20",
+        "voltage": 48,
+        "amperage": 24,
+        "power_watts": 1000,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "suspension": "Fourche avant RockShox 120 mm + amortisseur arrière RockShox Monarch",
+        "wheel_inches": "20",
+        "source_image_urls": [
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-4478/906/82/trottinette-electrique-piton-adrya-tout-terrain.jpeg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 180,
+        "score_offroad": 50,
+        "description": "L'Adrya Piton E20 est une trottinette électrique tout terrain conçue en Occitanie, équipée d'un moteur de 1000 W et d'une batterie amovible lithium-ion 48 V 24 Ah. Elle roule sur des roues de 20 pouces à pneus de type cross-country, avec fourche RockShox 120 mm, amortisseur arrière RockShox Monarch et freins à disque hydrauliques de 180 mm, pour une vitesse annoncée de 25 km/h et jusqu'à 30/40 km d'autonomie. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Adrya Piton E20 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Adrya Piton E20 : disque de frein 180 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "adrya piton e20, pieces adrya piton e20, disque frein adrya piton e20, plaquettes adrya piton e20, pneu adrya piton e20"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.cdnws.com/_i/21277/fb%7B630%7D-4478/906/82/trottinette-electrique-piton-adrya-tout-terrain.jpeg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+          "type": "distributeur",
+          "url2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "amperage": {
+            "value": 24,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "wheel_inches": {
+            "value": 20,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "suspension": {
+            "value": "Fourche avant RockShox 120 mm + amortisseur arrière RockShox Monarch",
+            "source_url": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Adrya Piton E20 est une trottinette électrique tout terrain conçue en Occitanie, équipée d'un moteur de 1000 W et d'une batterie amovible lithium-ion 48 V 24 Ah. Elle roule sur des roues de 20 pouces à pneus de type cross-country, avec fourche RockShox 120 mm, amortisseur arrière RockShox Monarch et freins à disque hydrauliques de 180 mm, pour une vitesse annoncée de 25 km/h et jusqu'à 30/40 km d'autonomie. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/",
+            "https://velo-boutique.com/index.php/product/trottinette-electrique-adrya-piton-e20-tout-terrain/"
+          ],
+          "_og_images": [
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-4478/906/82/trottinette-electrique-piton-adrya-tout-terrain.jpeg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 180,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-tout-terrain-piton-e20.html",
+            "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-adrya-piton-e20-tout-terrain/",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

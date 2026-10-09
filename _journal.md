@@ -42,3 +42,29 @@
 - 2026-10-09T10:23:25.937Z · Punk · OK · 1.3 min
 - 2026-10-09T10:24:51.990Z · Micro · OK · 1.4 min
 - 2026-10-09T10:26:20.639Z · Hikerboy · OK · 1.5 min
+- 2026-10-09T10:27:46.632Z · Nutt · ÉCHEC (code 0) · 0.1 min · aucun modèle traité
+- 2026-10-09T10:29:30.525Z · Wispeed · OK · 1.7 min
+- 2026-10-09T10:31:22.296Z · Joyor · OK · 1.9 min
+- 2026-10-09T10:32:58.051Z · iScooter · OK · 1.6 min
+- 2026-10-09T10:34:23.116Z · Hitway · OK · 1.4 min
+- 2026-10-09T10:35:53.107Z · Ducati · OK · 1.5 min
+- 2026-10-09T10:37:04.404Z · Aprilia · OK · 1.2 min
+- 2026-10-09T10:38:11.076Z · Globber · OK · 1.1 min
+- 2026-10-09T10:39:34.813Z · Oxelo · OK · 1.4 min
+- 2026-10-09T10:41:05.505Z · Yeep.me · OK · 1.5 min
+- 2026-10-09T10:42:28.472Z · Zwheel · OK · 1.4 min
+- 2026-10-09T10:43:45.454Z · Adrya · OK · 1.3 min
+- 2026-10-09T10:44:58.415Z · Weped · OK · 1.2 min
+- 2026-10-09T10:46:26.673Z · Mercane · OK · 1.5 min
+- 2026-10-09T10:48:25.780Z · SoFlow · OK · 2.0 min
+- 2026-10-09T10:50:03.782Z · Smartgyro · OK · 1.6 min
+- 2026-10-09T10:51:27.176Z · Bronco · OK · 1.4 min
+- 2026-10-09T10:52:52.993Z · Langfeite · OK · 1.4 min
+- 2026-10-09T10:54:47.669Z · Isinwheel · OK · 1.9 min
+- 2026-10-09T10:56:15.334Z · Hiboy · OK · 1.5 min
+- 2026-10-09T10:57:44.098Z · Kuickwheel · OK · 1.5 min
+- 2026-10-09T10:59:19.455Z · Halo Knight · OK · 1.6 min
+- 2026-10-09T11:00:48.620Z · Apollo · OK · 1.5 min
+- 2026-10-09T11:02:38.605Z · Laotie · OK · 1.8 min
+- 2026-10-09T11:04:13.029Z · Beaster · OK · 1.6 min
+- 2026-10-09T11:05:51.723Z · Jeep · OK · 1.6 min

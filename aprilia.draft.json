@@ -1,0 +1,490 @@
+{
+  "brandName": "Aprilia",
+  "results": [
+    {
+      "scooter": {
+        "name": "Aprilia eSR1",
+        "slug": "aprilia-esr1",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 350,
+        "range_km": 35,
+        "max_load_kg": 100,
+        "year": 2021,
+        "max_speed_kmh": 25,
+        "weight_kg": 15.5,
+        "ip_rating": "IPX4",
+        "tire_size": "10\" tubeless (section non communiquée)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "L'Aprilia eSR1 est une trottinette électrique pliable à cadre en alliage de magnésium, équipée d'un moteur brushless de 350 W dans la roue avant et d'une batterie amovible 36 V 7,8 Ah (280 Wh). Elle roule sur des pneus tubeless de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, pour 15,5 kg et une charge maximale de 100 kg. Elle est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Aprilia eSR1 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Aprilia eSR1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "aprilia esr1, pieces aprilia esr1, disque frein aprilia esr1, plaquettes aprilia esr1, pneu aprilia esr1"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/actus/esr1-premier-deux-roues-electrique-aprilia-est-une-vraie-surprise/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur",
+          "url2": "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5"
+        },
+        "ip_rating": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.rueducommerce.fr/p/r24060027939.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15.5,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html",
+            "source_url_2": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.e.leclerc/fp/aprilia-esr1-trottinette-electrique-25-km-h-noir-rouge-7-8-ah-8052870486509",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10\" tubeless (section non communiquée)",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.rueducommerce.fr/p/r24060027939.html",
+            "source_url_2": "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esr1",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2021,
+            "source_url": "https://www.cleanrider.com/actus/esr1-premier-deux-roues-electrique-aprilia-est-une-vraie-surprise/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Aprilia eSR1 est une trottinette électrique pliable à cadre en alliage de magnésium, équipée d'un moteur brushless de 350 W dans la roue avant et d'une batterie amovible 36 V 7,8 Ah (280 Wh). Elle roule sur des pneus tubeless de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, pour 15,5 kg et une charge maximale de 100 kg. Elle est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
+            "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/",
+            "source_url_2": "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esr1",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Aprilia eSR2",
+        "slug": "aprilia-esr2",
+        "voltage": 36,
+        "amperage": 8,
+        "power_watts": 350,
+        "range_km": 25,
+        "max_load_kg": 100,
+        "year": 2021,
+        "max_speed_kmh": 25,
+        "weight_kg": 16.5,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "drum_front_ebs_rear",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Aprilia eSR2 est une trottinette électrique pliable en aluminium équipée d'un moteur brushless de 350 W et d'une batterie 36 V 8 Ah (288 Wh) annoncée pour 25 km d'autonomie. Elle roule sur des pneus de 10 pouces, avec suspensions avant et arrière, frein à tambour à l'avant et frein électrique à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Aprilia eSR2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Aprilia eSR2 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "aprilia esr2, pieces aprilia esr2, disque frein aprilia esr2, plaquettes aprilia esr2, pneu aprilia esr2"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "year": {
+          "url": "https://www.amazon.fr/Aprilia-Trotinette-%C3%A9l%C3%A9ctrique-Suspension-dautonomie/dp/B099SDKXXC",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur",
+          "url2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2"
+        },
+        "suspension": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+          "type": "distributeur"
+        },
+        "brake_type": {
+          "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/",
+          "type": "distributeur"
+        },
+        "tire_section": {
+          "url": "https://monsieurtrottinettes.be/fr/pneus/502-pneu-10x2125-aprilia-esr2-7427255405610.html",
+          "type": "revendeur",
+          "url2": "https://escootervision.eu/fr-eu/products/aprilia-esr2-reifen-set-mit-schlauch-yuanxing-10x2-125"
+        },
+        "tire_family": {
+          "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://weerda.fr/pieces-detachees-weerda/1771-Pneu-Plein-Increvable-10-Pouces-10x2-125-UrbanGlide-Ride-100XS-100S-Aprilia-Esr2-Trottinette-Electrique.html"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16.5,
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_url_2": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 8,
+            "source_url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_url_2": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_url_2": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4?skedaddl=d&fiddlesti=jigs&ninco=w",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2021,
+            "source_url": "https://www.amazon.fr/Aprilia-Trotinette-%C3%A9l%C3%A9ctrique-Suspension-dautonomie/dp/B099SDKXXC",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'Aprilia eSR2 est une trottinette électrique pliable en aluminium équipée d'un moteur brushless de 350 W et d'une batterie 36 V 8 Ah (288 Wh) annoncée pour 25 km d'autonomie. Elle roule sur des pneus de 10 pouces, avec suspensions avant et arrière, frein à tambour à l'avant et frein électrique à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
+            "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4",
+            "https://www.amazon.fr/Aprilia-Trotinette-%C3%A9l%C3%A9ctrique-Suspension-dautonomie/dp/B099SDKXXC"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/4634-aprilia-esr2-scooter.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://monsieurtrottinettes.be/fr/pneus/502-pneu-10x2125-aprilia-esr2-7427255405610.html",
+            "source_url_2": "https://escootervision.eu/fr-eu/products/aprilia-esr2-reifen-set-mit-schlauch-yuanxing-10x2-125",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/4634-aprilia-esr2-scooter.html",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://weerda.fr/pieces-detachees-weerda/1771-Pneu-Plein-Increvable-10-Pouces-10x2-125-UrbanGlide-Ride-100XS-100S-Aprilia-Esr2-Trottinette-Electrique.html",
+            "source_url_2": "https://monsieurtrottinettes.be/fr/89-aprilia-esr2",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    }
+  ]
+}

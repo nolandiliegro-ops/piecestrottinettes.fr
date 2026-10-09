@@ -1,0 +1,573 @@
+{
+  "brandName": "Halo Knight",
+  "results": [
+    {
+      "scooter": {
+        "name": "Halo Knight T107 Pro",
+        "slug": "halo-knight-t107-pro",
+        "voltage": 60,
+        "amperage": 38.4,
+        "power_watts": 6000,
+        "max_speed_private_kmh": 95,
+        "range_km": 80,
+        "max_load_kg": 200,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "suspension": "Suspensions avant et arrière + amortisseur de direction",
+        "ip_rating": "IPX4",
+        "tire_size": "11 pouces tout-terrain (pneu gonflable CST)",
+        "foldable": true,
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "http://fr.gleeride.com/cdn/shop/files/HALOKNIGHT-T107Pro-Black-1_a203cbba-90a2-4a80-9f99-cb6b382978fd.jpg?crop=center&height=1200&v=1761014809&width=1200",
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/57d059c1-899b-4541-dac4-c6c918b96800/public",
+          "https://img.gkbcdn.com/p/2024-07-15/Halo-Knight-T107-Pro-Electric-Scooter-11---Off-road-Tire-10000506-0._w315_.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Halo Knight T107 Pro est une trottinette électrique pliable à double moteur 3000 W (6000 W au total) alimentée par une batterie 60 V 38,4 Ah, avec jusqu'à 80 km d'autonomie annoncée et une vitesse bridée à 25 km/h d'usine (jusqu'à 95 km/h sur terrain privé). Elle est équipée de pneus tout-terrain de 11 pouces, de suspensions avant et arrière, d'un amortisseur de direction et de freins hydrauliques doubles. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Halo Knight T107 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Halo Knight T107 Pro : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "halo knight t107 pro, pieces halo knight t107 pro, disque frein halo knight t107 pro, plaquettes halo knight t107 pro, pneu halo knight t107 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.techno-science.net/fr/bons-plans/1299-la-spectaculaire-trottinette-electrique-halo-knight-t107-pro-95-km-h-si-vous-etes-rapide-66498",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-halo-knight-t107-pro-pneu-toutterrain-11-pouces-3000w2-double-moteur-batterie-60v-384ah-autonomie-maximale-80km-354164.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://fr.gleeride.com/cdn/shop/files/HALOKNIGHT-T107Pro-Black-1_a203cbba-90a2-4a80-9f99-cb6b382978fd.jpg?crop=center&height=1200&v=1761014809&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.haloknights.com/en-us/products/brake-disc",
+          "type": "constructeur",
+          "url2": "https://promotrott.com/halo-knight-bg/"
+        },
+        "rim_diameter": {
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t107pro"
+        },
+        "tire_section": {
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t107pro"
+        },
+        "tire_family": {
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 48.9,
+          "url": "https://meilleuretrott.fr/trottinettes/halo-knight-t107-pro/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 48.9,
+            "source_url": "https://meilleuretrott.fr/trottinettes/halo-knight-t107-pro/",
+            "source_url_2": "https://ledepanneurtech.com/halo-knight-t107-pro-avis",
+            "source_type": "site_test"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+            "source_url_2": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 38.4,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-halo-knight-t107-pro-pneu-toutterrain-11-pouces-3000w2-double-moteur-batterie-60v-384ah-autonomie-maximale-80km-354164.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 6000,
+            "source_url": "https://www.techno-science.net/fr/bons-plans/1299-la-spectaculaire-trottinette-electrique-halo-knight-t107-pro-95-km-h-si-vous-etes-rapide-66498",
+            "source_url_2": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 95,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+            "source_url_2": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T107-Pro-Trottinette-electrique-11-pouces-95-km-h-38-4-Ah-3000-W-x-2-moteurs-10000506.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 200,
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-halo/f-1214801-aaapn47917.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 pouces tout-terrain (pneu gonflable CST)",
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://www.techno-science.net/fr/bons-plans/1299-la-spectaculaire-trottinette-electrique-halo-knight-t107-pro-95-km-h-si-vous-etes-rapide-66498",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspensions avant et arrière + amortisseur de direction",
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://www.techno-science.net/fr/bons-plans/1299-la-spectaculaire-trottinette-electrique-halo-knight-t107-pro-95-km-h-si-vous-etes-rapide-66498",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-halo-knight-t107-pro/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pixmania.com/fr/fr/trottinette-electrique-halo-knight-t107-pro-pneu-toutterrain-11-pouces-3000w2-double-moteur-batterie-60v-384ah-autonomie-maximale-80km-354164.html",
+            "source_url_2": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-halo/f-1214801-aadad83130.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Halo Knight T107 Pro est une trottinette électrique pliable à double moteur 3000 W (6000 W au total) alimentée par une batterie 60 V 38,4 Ah, avec jusqu'à 80 km d'autonomie annoncée et une vitesse bridée à 25 km/h d'usine (jusqu'à 95 km/h sur terrain privé). Elle est équipée de pneus tout-terrain de 11 pouces, de suspensions avant et arrière, d'un amortisseur de direction et de freins hydrauliques doubles. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "source_url_2": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fr.gleeride.com/products/halo-knight-t107-pro-11-trottinette-electrique-pliante-3000-w-2-doppelmotor-60v-38-4-ah-batterie",
+            "https://www.pixmania.com/fr/fr/trottinette-electrique-halo-knight-t107-pro-pneu-toutterrain-11-pouces-3000w2-double-moteur-batterie-60v-384ah-autonomie-maximale-80km-354164.html",
+            "https://fr.geekbuying.com/item/Halo-Knight-T107-Pro-Trottinette-electrique-11-pouces-95-km-h-38-4-Ah-3000-W-x-2-moteurs-10000506.html"
+          ],
+          "_og_images": [
+            "http://fr.gleeride.com/cdn/shop/files/HALOKNIGHT-T107Pro-Black-1_a203cbba-90a2-4a80-9f99-cb6b382978fd.jpg?crop=center&height=1200&v=1761014809&width=1200",
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/57d059c1-899b-4541-dac4-c6c918b96800/public",
+            "https://img.gkbcdn.com/p/2024-07-15/Halo-Knight-T107-Pro-Electric-Scooter-11---Off-road-Tire-10000506-0._w315_.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-electric-scooter-speed-style-and-performance-combined",
+            "source_url_2": "https://www.trottnshop.com/produit/halo-knight-t107-pro/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.haloknights.com/en-us/products/brake-disc",
+            "source_url_2": "https://promotrott.com/halo-knight-bg/",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t107pro",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t107pro",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": "https://fr.gleeride.com/blogs/news/questions-et-reponses-sur-halo-knight-t107-pro",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Halo Knight T108 Pro",
+        "slug": "halo-knight-t108-pro",
+        "voltage": 60,
+        "amperage": 38.4,
+        "power_watts": 6000,
+        "max_speed_private_kmh": 95,
+        "range_km": 80,
+        "max_load_kg": 150,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 46.5,
+        "suspension": "Suspension à ressorts avant et arrière, amortisseur de direction",
+        "ip_rating": "IP54",
+        "tire_size": "90/65-6.5",
+        "foldable": true,
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/cf6c22ef-3e91-40f1-dc7f-11a6bc038600/public"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Halo Knight T108 Pro (version 2025) est une trottinette électrique double moteur 2 x 3000 W sans balais (6000 W) alimentée par une batterie lithium 60 V 38,4 Ah, annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus pneumatiques de 11 pouces (90/65-6.5), avec freins hydrauliques avant et arrière et double suspension à ressorts ; la vitesse recommandée est de 25 km/h, la vitesse maximale constructeur sur terrain privé atteignant 95 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Halo Knight T108 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Halo Knight T108 Pro : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "halo knight t108 pro, pieces halo knight t108 pro, disque frein halo knight t108 pro, plaquettes halo knight t108 pro, pneu halo knight t108 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter-60v-6000w-38-4ah",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.geekbuying.com/item/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-530388.html",
+          "type": "revendeur",
+          "url2": "https://www.ebay.com/itm/127579371103"
+        },
+        "suspension": {
+          "url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.haloknights.com/fr/products/halo-knight-t108pro-scooter-electrique-60v-6000w-38-4ah",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [
+        "rim_diameter=6.5",
+        "tire_section=90/65"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 160,
+          "url": "https://www.haloknights.com/en-us/products/brake-disc"
+        },
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable"
+        },
+        {
+          "key": "tire_section",
+          "value": "90/65",
+          "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 46.5,
+            "source_url": "https://www.geekbuying.com/item/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-530388.html",
+            "source_url_2": "https://www.ebay.com/itm/127579371103",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 38.4,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 6000,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter-60v-6000w-38-4ah",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-halo-knight-t108-pro-11-pouces-3000-w-x-2-moteurs-60-v-384-ah-358077.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 95,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension à ressorts avant et arrière, amortisseur de direction",
+            "source_url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_url_2": "https://www.geekbuying.com/item/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-530388.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889934.html",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Halo Knight T108 Pro (version 2025) est une trottinette électrique double moteur 2 x 3000 W sans balais (6000 W) alimentée par une batterie lithium 60 V 38,4 Ah, annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus pneumatiques de 11 pouces (90/65-6.5), avec freins hydrauliques avant et arrière et double suspension à ressorts ; la vitesse recommandée est de 25 km/h, la vitesse maximale constructeur sur terrain privé atteignant 95 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fr.geekbuying.com/item/Halo-Knight-T108-Pro-Trottinette-electrique-version-2025-95-km-h-10003883.html",
+            "https://fr.shopping.rakuten.com/offer/buy/13545321872/halo-knight-t108-pro-version-2025-trottinette-electrique-moteur-2-x-3-000-w-batterie-60-v-38-4-ah-pneus-11-pouces-vitesse-maximale-95-km-h-autonomie-80-km.html",
+            "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-halo-knight-t108-pro-11-pouces-3000-w-x-2-moteurs-60-v-384-ah-358077.html"
+          ],
+          "_og_images": [
+            "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/cf6c22ef-3e91-40f1-dc7f-11a6bc038600/public"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.haloknights.com/fr/products/halo-knight-t108pro-scooter-electrique-60v-6000w-38-4ah",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25028362633.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.haloknights.com/en-us/products/brake-disc",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/halo-knight-t108-pro/f-1214801-aabtw02361.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

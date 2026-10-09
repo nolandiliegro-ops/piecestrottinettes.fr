@@ -1,0 +1,503 @@
+{
+  "brandName": "SoFlow",
+  "results": [
+    {
+      "scooter": {
+        "name": "SoFlow S05",
+        "slug": "soflow-s05",
+        "voltage": 48,
+        "amperage": 7.8,
+        "power_watts": 250,
+        "range_km": 30,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 17,
+        "suspension": "Avant",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": "9",
+        "source_image_urls": [
+          "http://fahrradhandel-dortmund.de/cdn/shop/files/89d62b400ae6d23920a4f187853cf91a.webp?v=1765616377"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 25,
+        "description": "La SoFlow S05 est une trottinette électrique pliable équipée d'un moteur de 250 W dans la roue arrière et d'une batterie lithium 48 V 7,8 Ah (374 Wh) annoncée pour environ 30 km d'autonomie. Elle roule sur des pneus pneumatiques de 9 pouces, avec un frein à tambour avant, un frein électronique arrière et une suspension avant. Sa vitesse est bridée à 25 km/h maximum en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "SoFlow S05 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées SoFlow S05 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "soflow s05, pieces soflow s05, disque frein soflow s05, plaquettes soflow s05, pneu soflow s05"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern",
+          "type": "revendeur",
+          "url2": "https://www.soflow.com/produkt/e-scooter-so-one-plus/"
+        },
+        "suspension": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/9000921841",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://fahrradhandel-dortmund.de/cdn/shop/files/89d62b400ae6d23920a4f187853cf91a.webp?v=1765616377",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.boulanger.com/ref/9000921838",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17,
+            "source_url": "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.soflow.com/produkt/e-scooter-so-one-plus/"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.pixmania.com/fr/fr/nos-marques/soflow.html"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+            "source_type": "revendeur",
+            "source_url_2": "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern"
+          },
+          "power_watts": {
+            "value": 250,
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant",
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.soflow.com/produkt/e-scooter-so-one-plus/"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La SoFlow S05 est une trottinette électrique pliable équipée d'un moteur de 250 W dans la roue arrière et d'une batterie lithium 48 V 7,8 Ah (374 Wh) annoncée pour environ 30 km d'autonomie. Elle roule sur des pneus pneumatiques de 9 pouces, avec un frein à tambour avant, un frein électronique arrière et une suspension avant. Sa vitesse est bridée à 25 km/h maximum en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.boulanger.com/ref/9000921841",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921841",
+            "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+            "https://fahrradhandel-dortmund.de/products/soflow-e-scooter-s05-so-one-7-8-ah-9-zoll-mit-blinkern"
+          ],
+          "_og_images": [
+            "http://fahrradhandel-dortmund.de/cdn/shop/files/89d62b400ae6d23920a4f187853cf91a.webp?v=1765616377"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.boulanger.com/ref/9000921838",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+            "source_url_2": "https://www.cdiscount.com/le-sport/r-soflow.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "SoFlow SO4 Pro",
+        "slug": "soflow-so4-pro",
+        "voltage": 48,
+        "amperage": 10.5,
+        "power_watts": 500,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "year": 2019,
+        "max_speed_kmh": 25,
+        "weight_kg": 17,
+        "ip_rating": "IPX6",
+        "tire_size": "10 x 2.125",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
+          "http://weltbild.ch/cdn/shop/files/Source.svg?v=1760554434"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La SoFlow SO4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W et d'une batterie lithium amovible 48 V / 10,5 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 10 pouces, avec freins à disque à l'avant et à l'arrière, et sa vitesse est bridée à 20 km/h dans sa version homologuée (25 km/h selon la réglementation locale). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "SoFlow SO4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées SoFlow SO4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "soflow so4 pro, pieces soflow so4 pro, disque frein soflow so4 pro, plaquettes soflow so4 pro, pneu soflow so4 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://electric-commuter.de/escooter/modell/15/soflow_so4pro",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+          "type": "revendeur",
+          "url2": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258"
+        },
+        "ip_rating": {
+          "url": "https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://kissmywheels.ch/pieces-detachees/chambre-a-air-10-pouces-trottinette-soflow-so4-pro-48v/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.galaxus.ch/fr/s3/product/soflow-so4-pro-20kmh-500w-trottinettes-electriques-13519217",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.daydeal.ch/fr/deal/scooter-electrique-soflow-so4-pro-6737",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17,
+            "source_url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_url_2": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_url_2": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.5,
+            "source_url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_url_2": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_url_2": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_url_2": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258",
+            "source_url_2": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.galaxus.ch/fr/s3/product/soflow-so4-pro-20kmh-500w-trottinettes-electriques-13519217",
+            "source_url_2": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 x 2.125",
+            "source_url": "https://kissmywheels.ch/pieces-detachees/chambre-a-air-10-pouces-trottinette-soflow-so4-pro-48v/",
+            "source_url_2": "https://escootervision.eu/en/products/soflow-s04-pro-gen2-reifen-10x2-125-zoll-57-152-v2",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual",
+            "source_url_2": "https://www.galaxus.ch/fr/s3/product/soflow-so4-pro-20kmh-500w-trottinettes-electriques-13519217",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "source_url_2": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2019,
+            "source_url": "https://electric-commuter.de/escooter/modell/15/soflow_so4pro",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La SoFlow SO4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W et d'une batterie lithium amovible 48 V / 10,5 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 10 pouces, avec freins à disque à l'avant et à l'arrière, et sa vitesse est bridée à 20 km/h dans sa version homologuée (25 km/h selon la réglementation locale). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+            "https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217",
+            "https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258"
+          ],
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
+            "http://weltbild.ch/cdn/shop/files/Source.svg?v=1760554434"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.daydeal.ch/fr/deal/scooter-electrique-soflow-so4-pro-6737",
+            "source_url_2": "https://www.berger-camping.com/item/soflow-so4-pro-folding-e-scooter-electric-scooter-with-road-approval-143165",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

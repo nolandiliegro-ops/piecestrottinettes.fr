@@ -1,0 +1,507 @@
+{
+  "brandName": "Wispeed",
+  "results": [
+    {
+      "scooter": {
+        "name": "Wispeed SUVPILOT 150R",
+        "slug": "wispeed-suvpilot-150r",
+        "voltage": 36,
+        "amperage": 15.6,
+        "power_watts": 500,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "suspension": "Double suspension avant et arrière, réglable",
+        "ip_rating": "IP65",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "drum",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Wispeed SUVPILOT 150R est une trottinette électrique tout-chemin équipée d'un moteur de 500 W nominal (800 W en pointe), d'une batterie 36 V / 15,6 Ah et d'une autonomie annoncée jusqu'à 60 km. Elle roule sur des pneus cross gonflables de 10 pouces avec chambre à air, double suspension avant/arrière réglable et freins à tambour, pour une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Wispeed SUVPILOT 150R - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Wispeed SUVPILOT 150R : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "wispeed suvpilot 150r, pieces wispeed suvpilot 150r, disque frein wispeed suvpilot 150r, plaquettes wispeed suvpilot 150r, pneu wispeed suvpilot 150r"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur",
+          "url2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9"
+        },
+        "suspension": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+            "source_url_2": "https://www.carrefour.fr/p/trottinette-electrique-suvpilot-150r-wispeed-3483070027400",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.boulanger.com/ref/1237602",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière, réglable",
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-suvpilot-150r-wispeed/p616536.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP65",
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Wispeed SUVPILOT 150R est une trottinette électrique tout-chemin équipée d'un moteur de 500 W nominal (800 W en pointe), d'une batterie 36 V / 15,6 Ah et d'une autonomie annoncée jusqu'à 60 km. Elle roule sur des pneus cross gonflables de 10 pouces avec chambre à air, double suspension avant/arrière réglable et freins à tambour, pour une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+            "https://www.boulanger.com/ref/1237602"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-suvpilot-150r-wispeed/p616536.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "source_url_2": "https://www.boulanger.com/ref/1237602",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Wispeed AIRO V10",
+        "slug": "wispeed-airo-v10",
+        "voltage": 36,
+        "amperage": 10.4,
+        "power_watts": 400,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 19.65,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IP65",
+        "tire_size": "10x2.125",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "rim_diameter": "6",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Wispeed AIRO V10 est une trottinette électrique pliable équipée d'un moteur avant de 400 W nominal (700 W en pointe) et d'une batterie 36 V / 10,4 Ah annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces (10x2.125), avec double suspension avant et arrière et frein à disque arrière, pour un poids de 19,65 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Wispeed AIRO V10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Wispeed AIRO V10 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "wispeed airo v10, pieces wispeed airo v10, disque frein wispeed airo v10, plaquettes wispeed airo v10, pneu wispeed airo v10"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://fixwheel.fr/products/wispeed-airo-v10",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur",
+          "url2": "https://fixwheel.fr/products/wispeed-airo-v10"
+        },
+        "suspension": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/"
+        },
+        "tire_section": {
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-wispeed-airo-v10/"
+        },
+        "tire_family": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+          },
+          "power_watts": {
+            "value": 400,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "weight_kg": {
+            "value": 19.65,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://fixwheel.fr/products/wispeed-airo-v10"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+          },
+          "tire_size": {
+            "value": "10x2.125",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_type": "revendeur",
+            "source_url_2": "https://trott-en-provence.fr/pneu-wispeed-airo-v10/"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+          },
+          "ip_rating": {
+            "value": "IP65",
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fixwheel.fr/products/wispeed-airo-v10",
+            "source_type": "revendeur",
+            "source_url_2": null
+          },
+          "description_fr": {
+            "value": "La Wispeed AIRO V10 est une trottinette électrique pliable équipée d'un moteur avant de 400 W nominal (700 W en pointe) et d'une batterie 36 V / 10,4 Ah annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces (10x2.125), avec double suspension avant et arrière et frein à disque arrière, pour un poids de 19,65 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/1227207",
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_url_2": "https://trott-en-provence.fr/pneu-wispeed-airo-v10/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_url_2": "https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+            "source_url_2": "https://www.boulanger.com/ref/1227207",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_url_2": "https://riderium.com/shop/pneu-plein-10x2125-wispeed-airo-v10",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    }
+  ]
+}

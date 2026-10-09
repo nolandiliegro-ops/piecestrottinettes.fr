@@ -1,0 +1,30 @@
+{
+  "brandName": "SoFlow",
+  "scooters": [
+    {
+      "name": "SoFlow S05",
+      "slug": "soflow-s05",
+      "voltage": 48,
+      "amperage": 7.8,
+      "power_watts": 250,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 17,
+      "suspension": "Avant",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": "9",
+      "source_image_urls": [
+        "http://fahrradhandel-dortmund.de/cdn/shop/files/89d62b400ae6d23920a4f187853cf91a.webp?v=1765616377"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 25,
+      "description": "La SoFlow S05 est une trottinette électrique pliable équipée d'un moteur de 250 W dans la roue arrière et d'une batterie lithium 48 V 7,8 Ah (374 Wh) annoncée pour environ 30 km d'autonomie. Elle roule sur des pneus pneumatiques de 9 pouces, avec un frein à tambour avant, un frein électronique arrière et une suspension avant. Sa vitesse est bridée à 25 km/h maximum en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "SoFlow S05 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées SoFlow S05 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "soflow s05, pieces soflow s05, disque frein soflow s05, plaquettes soflow s05, pneu soflow s05"
+    }
+  ]
+}

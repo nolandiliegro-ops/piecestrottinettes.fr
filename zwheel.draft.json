@@ -1,0 +1,495 @@
+{
+  "brandName": "Zwheel",
+  "results": [
+    {
+      "scooter": {
+        "name": "Zwheel ZCougar",
+        "slug": "zwheel-zcougar",
+        "voltage": 48,
+        "amperage": 10,
+        "power_watts": 800,
+        "range_km": 35,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 25.5,
+        "suspension": "Hydraulique DUO SHOCK avant et arrière",
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://monorimspain.com/cdn/shop/files/43-1.png?v=1784741646&width=1200",
+          "https://cache.tradeinn.com/web/web/inn.jpg"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Zwheel ZCougar est une trottinette électrique tout-terrain équipée d'un moteur de 800 W et d'une batterie 48 V 10 Ah pour une autonomie annoncée jusqu'à 35 km. Elle roule sur des pneus tubeless de 10 pouces avec suspension hydraulique DUO SHOCK avant et arrière, frein à disque et frein électronique à récupération d'énergie, et sa vitesse est bridée à 25 km/h en version homologuée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Zwheel ZCougar - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Zwheel ZCougar : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "zwheel zcougar, pieces zwheel zcougar, disque frein zwheel zcougar, plaquettes zwheel zcougar, pneu zwheel zcougar"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://rhyde.co/collections/outlet/products/zwheel-cougar",
+          "type": "revendeur",
+          "url2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app"
+        },
+        "suspension": {
+          "url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://monorimspain.com/cdn/shop/files/43-1.png?v=1784741646&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://patinetestore.com/producto/zwheel-zcougar-dgt/",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://amazon.es/ZWHEEL-ZCOUGAR-Patinete-El%C3%A9ctrico-Homologado/dp/B0CVNHQ8WW",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 140,
+          "url": "https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25.5,
+            "source_url": "https://rhyde.co/collections/outlet/products/zwheel-cougar",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://rhyde.co/collections/outlet/products/zwheel-cougar",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_url_2": "https://rhyde.co/fr/products/zwheel-cougar",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_url_2": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Hydraulique DUO SHOCK avant et arrière",
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Zwheel ZCougar est une trottinette électrique tout-terrain équipée d'un moteur de 800 W et d'une batterie 48 V 10 Ah pour une autonomie annoncée jusqu'à 35 km. Elle roule sur des pneus tubeless de 10 pouces avec suspension hydraulique DUO SHOCK avant et arrière, frein à disque et frein électronique à récupération d'énergie, et sa vitesse est bridée à 25 km/h en version homologuée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%89lectrique-pour-Adultes/dp/B0DKPG6BFP",
+            "source_url_2": "https://rhyde.co/collections/outlet/products/zwheel-cougar",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://rhyde.co/fr/products/zwheel-cougar",
+            "https://monorimspain.com/fr-fr/products/patinete-zwheel-zcougar-plus-con-app",
+            "https://www.tradeinn.com/dressinn/en/zwheel-zcougar-electric-scooter/140341893/p"
+          ],
+          "_og_images": [
+            "https://monorimspain.com/cdn/shop/files/43-1.png?v=1784741646&width=1200",
+            "https://cache.tradeinn.com/web/web/inn.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://patinetestore.com/producto/zwheel-zcougar-dgt/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://amazon.es/ZWHEEL-ZCOUGAR-Patinete-El%C3%A9ctrico-Homologado/dp/B0CVNHQ8WW",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Zwheel ZRino",
+        "slug": "zwheel-zrino",
+        "voltage": 48,
+        "amperage": 15,
+        "power_watts": 600,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 22.8,
+        "suspension": "Double suspension hydraulique avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces tubeless (sans chambre à air), profil large",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Zwheel ZRino est une trottinette électrique tout-terrain équipée d'un moteur arrière brushless de 600 W (1 200 W en pointe selon certains revendeurs) et d'une batterie HPB 48 V 15 Ah annoncée jusqu'à 50 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces à profil large, avec double suspension hydraulique, freins à disque avant et arrière et freinage régénératif, pour environ 22,8 kg. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Zwheel ZRino - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Zwheel ZRino : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "zwheel zrino, pieces zwheel zrino, disque frein zwheel zrino, plaquettes zwheel zrino, pneu zwheel zrino"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://zwheel.com/tienda/patinetes-electricos/zrino/zrino-duo/",
+          "type": "constructeur",
+          "url2": "https://afscooters.com/products/patinete-electrico-zheel-zrino"
+        },
+        "suspension": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.france-proshop.com/test-de-la-trottinette-electrique-zwheel-zrino-puissance-et-confort",
+          "type": "site_test"
+        },
+        "tire_size": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://aeropatin.com/patinetes-electricos/zwheel-zrino/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22.8,
+            "source_url": "https://zwheel.com/tienda/patinetes-electricos/zrino/zrino-duo/",
+            "source_url_2": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%A9lectrique-homologu%C3%A9e-Application/dp/B0CQMHJXCN",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%A9lectrique-homologu%C3%A9e-Application/dp/B0CQMHJXCN",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+            "source_url_2": "https://monorimspain.com/products/copia-de-patinete-zwheel-zrino-se-10ah-homologado-dgt",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://monorimspain.com/products/copia-de-patinete-zwheel-zrino-se-10ah-homologado-dgt",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://monorimspain.com/products/copia-de-patinete-zwheel-zrino-se-10ah-homologado-dgt",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 pouces tubeless (sans chambre à air), profil large",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://monorimspain.com/products/copia-de-patinete-zwheel-zrino-se-10ah-homologado-dgt",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension hydraulique avant et arrière",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.france-proshop.com/test-de-la-trottinette-electrique-zwheel-zrino-puissance-et-confort",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://aeropatin.com/patinetes-electricos/zwheel-zrino/",
+            "source_url_2": "https://afscooters.com/products/patinete-electrico-zheel-zrino",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Zwheel ZRino est une trottinette électrique tout-terrain équipée d'un moteur arrière brushless de 600 W (1 200 W en pointe selon certains revendeurs) et d'une batterie HPB 48 V 15 Ah annoncée jusqu'à 50 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces à profil large, avec double suspension hydraulique, freins à disque avant et arrière et freinage régénératif, pour environ 22,8 kg. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "https://www.amazon.fr/ZWHEEL-Trottinette-%C3%A9lectrique-homologu%C3%A9e-Application/dp/B0CQMHJXCN",
+            "https://afscooters.com/products/patinete-electrico-zheel-zrino"
+          ],
+          "_og_images": [
+            "http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://www.france-proshop.com/test-de-la-trottinette-electrique-zwheel-zrino-puissance-et-confort",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
+            "source_url_2": "https://www.france-proshop.com/test-de-la-trottinette-electrique-zwheel-zrino-puissance-et-confort",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

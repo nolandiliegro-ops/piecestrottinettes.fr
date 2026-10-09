@@ -1,0 +1,512 @@
+{
+  "brandName": "Kuickwheel",
+  "results": [
+    {
+      "scooter": {
+        "name": "Kuickwheel S1-C Pro",
+        "slug": "kuickwheel-s1-c-pro",
+        "voltage": 36,
+        "amperage": 13,
+        "power_watts": 500,
+        "max_speed_private_kmh": 38,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 22,
+        "suspension": "Double suspension avant (fourche)",
+        "ip_rating": "IPX7",
+        "tire_size": "10x2.5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_section": "10x2.50",
+        "score_offroad": 40,
+        "description": "La Kuickwheel S1-C Pro est une trottinette électrique pliable équipée d'un moteur brushless de 500 W (750 W en crête) et d'une batterie lithium-ion 36 V 13 Ah pour environ 50 km d'autonomie. Elle roule sur des pneus de 10 pouces (gonflable à l'avant, plein à l'arrière), avec double suspension avant, frein à tambour à l'avant et frein moteur à l'arrière, et est certifiée IPX7. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kuickwheel S1-C Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kuickwheel S1-C Pro : plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kuickwheel s1-c pro, pieces kuickwheel s1-c pro, disque frein kuickwheel s1-c pro, plaquettes kuickwheel s1-c pro, pneu kuickwheel s1-c pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kuickwheel/kuickwheel-s1c-pro/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+          "type": "revendeur",
+          "url2": "https://www.le-ranch.fr/product-page/kuickwheel-s1-c-pro"
+        },
+        "suspension": {
+          "url": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.gtsshop.fr/en/chambres-a-airs/4954-kuickwheel-s1-c-pro-v1-v2-inner-tube.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kuickwheel/kuickwheel-s1c-pro/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html",
+          "type": "revendeur",
+          "url2": "https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22,
+            "source_url": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_url_2": "https://www.le-ranch.fr/product-page/kuickwheel-s1-c-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/kuickwheel/kuickwheel-s1c-pro/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 38,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://movedifferent.lu/en/bikes-co/249-kuickwheel-s1-c-pro.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro",
+            "source_url_2": "https://movedifferent.lu/en/bikes-co/249-kuickwheel-s1-c-pro.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_url_2": "https://www.le-ranch.fr/product-page/kuickwheel-s1-c-pro",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2.5",
+            "source_url": "https://www.gtsshop.fr/en/chambres-a-airs/4954-kuickwheel-s1-c-pro-v1-v2-inner-tube.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/pneu-plein-arriere-Kuickwheel-s1-c-pro-v1-&-v2-p597783718",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant (fourche)",
+            "source_url": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro",
+            "source_url_2": "https://movedifferent.lu/en/bikes-co/249-kuickwheel-s1-c-pro.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX7",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.le-ranch.fr/product-page/kuickwheel-s1-c-pro",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kuickwheel/kuickwheel-s1c-pro/",
+            "source_url_2": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kuickwheel/kuickwheel-s1c-pro/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Kuickwheel S1-C Pro est une trottinette électrique pliable équipée d'un moteur brushless de 500 W (750 W en crête) et d'une batterie lithium-ion 36 V 13 Ah pour environ 50 km d'autonomie. Elle roule sur des pneus de 10 pouces (gonflable à l'avant, plein à l'arrière), avec double suspension avant, frein à tambour à l'avant et frein moteur à l'arrière, et est certifiée IPX7. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "https://drole2roue.com/trottinette-electrique/3627-kuickwheel-s1-c-pro.html"
+          ],
+          "_og_images": [
+            "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
+            "source_url_2": "https://www.glisseurbaine.com/1590-trottinette-electrique-etanche-kuickwheel-s1-c-pro-confort.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.50",
+            "source_url": "https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html",
+            "source_url_2": "https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2",
+            "source_type": "revendeur"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kuickwheel M16 Pro",
+        "slug": "kuickwheel-m16-pro",
+        "voltage": 36,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 25,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 18,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10x2.125",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+          "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kuickwheel M16 Pro est une trottinette électrique pliable dotée d'un moteur de 350 W nominaux (500 W maximum) alimenté par une batterie 36V 10,4Ah, pour une autonomie annoncée jusqu'à 40 km en mode éco. Elle roule sur des pneus de 10 pouces à chambre à air, avec un frein à disque arrière complété par un frein électrique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kuickwheel M16 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kuickwheel M16 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kuickwheel m16 pro, pieces kuickwheel m16 pro, disque frein kuickwheel m16 pro, plaquettes kuickwheel m16 pro, pneu kuickwheel m16 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vepace.com/products/kuickwheel-m16-pro-electric-scooter",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781"
+        },
+        "suspension": {
+          "url": "https://agde.zetrottstore.com/trottinette-electrique-agde/5567-kuickwheel-m16-pro-36v-104ah-2007241011411.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.out-fun.com/trottinettes-electriques/3953-kuickwheel-m16-pro-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.out-fun.com/trottinettes-electriques/3953-kuickwheel-m16-pro-trottinette-electrique.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_url_2": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://vepace.com/products/kuickwheel-m16-pro-electric-scooter",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2.125",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://agde.zetrottstore.com/trottinette-electrique-agde/5567-kuickwheel-m16-pro-36v-104ah-2007241011411.html",
+            "source_url_2": "https://www.trottnshop.com/produit/m16-pro-kuickwheel/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_url_2": "https://www.trottinette-online.com/fr/trottinette-electrique/477660-trottinette-electrique-m16-pro-36v-104ah-kuickwheel",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kuickwheel M16 Pro est une trottinette électrique pliable dotée d'un moteur de 350 W nominaux (500 W maximum) alimenté par une batterie 36V 10,4Ah, pour une autonomie annoncée jusqu'à 40 km en mode éco. Elle roule sur des pneus de 10 pouces à chambre à air, avec un frein à disque arrière complété par un frein électrique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+            "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781",
+            "https://www.trottinette-online.com/fr/trottinette-electrique/477660-trottinette-electrique-m16-pro-36v-104ah-kuickwheel"
+          ],
+          "_og_images": [
+            "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.out-fun.com/trottinettes-electriques/3953-kuickwheel-m16-pro-trottinette-electrique.html",
+            "source_url_2": "https://fixmytrott.com/products/kuickwheel-m16-pro-36v-10-4ah-2025-la-trottinette-electrique-compacte-et-performante",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.out-fun.com/trottinettes-electriques/3953-kuickwheel-m16-pro-trottinette-electrique.html",
+            "source_url_2": "https://fixmytrott.com/products/kuickwheel-m16-pro-36v-10-4ah-2025-la-trottinette-electrique-compacte-et-performante",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

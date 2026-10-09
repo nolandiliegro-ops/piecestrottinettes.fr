@@ -1,0 +1,283 @@
+{
+  "brandName": "Apollo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Apollo City Pro",
+        "slug": "apollo-city-pro",
+        "voltage": 48,
+        "amperage": 20,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 51,
+        "range_km": 69,
+        "max_load_kg": 120,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "suspension": "Triple ressort (avant et arrière)",
+        "ip_rating": "IP66",
+        "tire_size": "10x3.5 pouces (tubeless auto-réparant)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png",
+          "https://www.rideandglide.co.uk/wp-content/uploads/apollo-city-pro-2024.png"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.70",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo City Pro (génération 2023-2024) embarque deux moteurs de 500 W (1000 W nominaux au total) alimentés par une batterie 48 V 20 Ah, pour une vitesse maximale de 51 km/h sur terrain privé et jusqu'à 69 km d'autonomie annoncée. Elle roule sur des pneus tubeless auto-réparants de 10 pouces avec triple suspension à ressorts, freins à double tambour et freinage régénératif, avec un indice IP66 et un poids de 29,5 kg ; la vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo City Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo City Pro : plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo city pro, pieces apollo city pro, disque frein apollo city pro, plaquettes apollo city pro, pneu apollo city pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://apolloscooters.co/pages/tech-specs-apollo-city-2023-pro",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.rideandglide.co.uk/product/apollo-city-pro-2024/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.ca/products/apollo-city-24",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://apolloscooters.ca/products/apollo-city-city-pro-2023-drum-brake-assembly",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://kissmywheels.ch/pieces-detachees/pneu-apollo-city/",
+          "type": "revendeur",
+          "url2": "https://electricwheelsaustralia.com.au/Apollo-City-&-City-Pro-2023-Tyres-p641978260"
+        },
+        "tire_section": {
+          "url": "https://kissmywheels.ch/pieces-detachees/pneu-apollo-city/",
+          "type": "revendeur",
+          "url2": "https://electricwheelsaustralia.com.au/Apollo-City-&-City-Pro-2023-Tyres-p641978260"
+        },
+        "tire_family": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 29.5,
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29.5,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_type": "site_test",
+            "source_url_2": "https://electrek.co/2022/03/23/new-apollo-city-electric-scooter-has-single-or-dual-motors-full-suspension-32-mph-speed-never-flat-tires/"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "amperage": {
+            "value": 20,
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-apollo-city-2023-pro",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "max_speed_private_kmh": {
+            "value": 51,
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter"
+          },
+          "range_km": {
+            "value": 69,
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": null
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+            "source_type": "revendeur",
+            "source_url_2": "https://electrek.co/2022/03/23/new-apollo-city-electric-scooter-has-single-or-dual-motors-full-suspension-32-mph-speed-never-flat-tires/"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter"
+          },
+          "tire_size": {
+            "value": "10x3.5 pouces (tubeless auto-réparant)",
+            "source_url": "https://www.rideandglide.co.uk/product/apollo-city-pro-2024/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.autoevolution.com/news/apollo-s-new-city-e-scooter-boasts-indestructible-self-healing-tires-that-fear-no-nail-184754.html"
+          },
+          "suspension": {
+            "value": "Triple ressort (avant et arrière)",
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_type": "site_test",
+            "source_url_2": "https://www.autoevolution.com/news/apollo-s-new-city-e-scooter-boasts-indestructible-self-healing-tires-that-fear-no-nail-184754.html"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_type": "site_test",
+            "source_url_2": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide"
+          },
+          "description_fr": {
+            "value": "L'Apollo City Pro (génération 2023-2024) embarque deux moteurs de 500 W (1000 W nominaux au total) alimentés par une batterie 48 V 20 Ah, pour une vitesse maximale de 51 km/h sur terrain privé et jusqu'à 69 km d'autonomie annoncée. Elle roule sur des pneus tubeless auto-réparants de 10 pouces avec triple suspension à ressorts, freins à double tambour et freinage régénératif, avec un indice IP66 et un poids de 29,5 kg ; la vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.ca/products/apollo-city-24",
+            "source_type": "constructeur",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "https://kissmywheels.ch/en/escooter/apollo-city-pro/",
+            "https://www.rideandglide.co.uk/product/apollo-city-pro-2024/"
+          ],
+          "_og_images": [
+            "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png",
+            "https://www.rideandglide.co.uk/wp-content/uploads/apollo-city-pro-2024.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://apolloscooters.ca/products/apollo-city-city-pro-2023-drum-brake-assembly",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://boarddeckhq.com/apollo-city-pro/",
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.70",
+            "source_url": "https://kissmywheels.ch/pieces-detachees/pneu-apollo-city/",
+            "source_url_2": "https://electricwheelsaustralia.com.au/Apollo-City-&-City-Pro-2023-Tyres-p641978260",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://kissmywheels.ch/pieces-detachees/pneu-apollo-city/",
+            "source_url_2": "https://electricwheelsaustralia.com.au/Apollo-City-&-City-Pro-2023-Tyres-p641978260",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    }
+  ]
+}

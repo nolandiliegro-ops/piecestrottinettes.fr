@@ -1,0 +1,497 @@
+{
+  "brandName": "Mercane",
+  "results": [
+    {
+      "scooter": {
+        "name": "Mercane WideWheel Pro",
+        "slug": "mercane-widewheel-pro",
+        "voltage": 48,
+        "amperage": 15,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 40,
+        "range_km": 35,
+        "max_load_kg": 100,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 25,
+        "suspension": "Double suspension avant et arrière (ressorts)",
+        "ip_rating": "IP54",
+        "tire_size": "8\" x 3,9\" (8 pouces, 10 cm de large), pneus pleins remplis de mousse",
+        "foldable": true,
+        "wheel_inches": "8",
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "La Mercane WideWheel Pro (2020) embarque deux moteurs brushless de 500 W (1000 W au total) alimentés par une batterie lithium 48 V 15 Ah, pour une autonomie annoncée d'environ 35 km. Elle repose sur des pneus larges de 8 pouces (10 cm) remplis de mousse, une double suspension avant et arrière et un double freinage à disque de 120 mm ; la vitesse est bridée à 25 km/h et atteint 40 km/h débridée sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Mercane WideWheel Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Mercane WideWheel Pro : disque de frein 120 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "mercane widewheel pro, pieces mercane widewheel pro, disque frein mercane widewheel pro, plaquettes mercane widewheel pro, pneu mercane widewheel pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://scooter.guide/mercane-widewheel-pro-review/",
+          "type": "site_test"
+        },
+        "year": {
+          "url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://wamoov.fr/produit/mercane-widewheel-pro-trottinette-electrique-1000w/",
+          "type": "revendeur",
+          "url2": "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html"
+        },
+        "suspension": {
+          "url": "https://scooter.guide/mercane-widewheel-pro-review/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://scooter.guide/mercane-widewheel-pro-review/",
+          "type": "site_test"
+        },
+        "tire_size": {
+          "url": "https://www.driderescooters.com/products/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.e-wheels.fr/trotinette-electrique/mercane-widewheel-pro/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://scooter.guide/mercane-widewheel-pro-review/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/SPEDWHEL-Suitable-WideWheel-Electric-Replacement/dp/B09155TNDH"
+        },
+        "tire_family": {
+          "url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25,
+            "source_url": "https://wamoov.fr/produit/mercane-widewheel-pro-trottinette-electrique-1000w/",
+            "source_url_2": "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_url_2": "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://scooter.guide/mercane-widewheel-pro-review/",
+            "source_url_2": "https://www.driderescooters.com/products/mercane-wide-wheel-pro",
+            "source_type": "site_test"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://www.driderescooters.com/products/mercane-wide-wheel-pro",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8\" x 3,9\" (8 pouces, 10 cm de large), pneus pleins remplis de mousse",
+            "source_url": "https://www.driderescooters.com/products/mercane-wide-wheel-pro",
+            "source_url_2": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière (ressorts)",
+            "source_url": "https://scooter.guide/mercane-widewheel-pro-review/",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://scooter.guide/mercane-widewheel-pro-review/",
+            "source_url_2": "https://fluidfreeride.com/blogs/news/mecarne-widewheel-pro-review",
+            "source_type": "site_test"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.e-wheels.fr/trotinette-electrique/mercane-widewheel-pro/",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_url_2": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Mercane WideWheel Pro (2020) embarque deux moteurs brushless de 500 W (1000 W au total) alimentés par une batterie lithium 48 V 15 Ah, pour une autonomie annoncée d'environ 35 km. Elle repose sur des pneus larges de 8 pouces (10 cm) remplis de mousse, une double suspension avant et arrière et un double freinage à disque de 120 mm ; la vitesse est bridée à 25 km/h et atteint 40 km/h débridée sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "source_url_2": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+            "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://scooter.guide/mercane-widewheel-pro-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount",
+            "source_url_2": "https://www.amazon.com/SPEDWHEL-Suitable-WideWheel-Electric-Replacement/dp/B09155TNDH",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
+            "source_url_2": "https://www.avem.fr/2020/01/01/mercane-widewheel-pro-une-trottinette-electrique-a-2-moteurs-de-500-w/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Mercane Transboard",
+        "slug": "mercane-transboard",
+        "voltage": 48,
+        "amperage": 8.8,
+        "power_watts": 500,
+        "range_km": 30,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 18,
+        "suspension": "Double suspension avant à double triangulation (double wishbone)",
+        "tire_size": "Avant 10 pouces (chambre à air) x2, arrière 8 pouces",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://alternative.bike/2477-large_default/mercane-transboard.jpg"
+        ],
+        "score_offroad": 40,
+        "description": "La Mercane Transboard est une trottinette électrique à trois roues (deux roues avant gonflables de 10 pouces et une roue motrice arrière de 8 pouces) équipée d'un moteur moyeu de 500 W et d'une batterie LG 48 V 8,8 Ah (422 Wh) pour environ 30 km d'autonomie. Elle est bridée à 25 km/h, pèse 18 kg, supporte 100 kg et freine avec un frein moteur électrique et un frein à pied arrière, avec une double suspension avant. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Mercane Transboard - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Mercane Transboard : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "mercane transboard, pieces mercane transboard, disque frein mercane transboard, plaquettes mercane transboard, pneu mercane transboard"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur",
+          "url2": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434"
+        },
+        "suspension": {
+          "url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://alternative.bike/2477-large_default/mercane-transboard.jpg",
+          "type": "og:image fiche produit"
+        }
+      },
+      "missing": [
+        "brake_type",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18,
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 8.8,
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_url_2": "https://4prototypes.com/products/mercane-wheels-transboard/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://4prototypes.com/products/mercane-wheels-transboard/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_url_2": "https://4prototypes.com/products/mercane-wheels-transboard/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "Avant 10 pouces (chambre à air) x2, arrière 8 pouces",
+            "source_url": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+            "source_url_2": "https://alternative.bike/168-mercane-transboard.html",
+            "source_type": "site_test"
+          },
+          "suspension": {
+            "value": "Double suspension avant à double triangulation (double wishbone)",
+            "source_url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_url_2": "https://rideshark.com/transboard",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_url_2": "https://rideshark.com/transboard",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Mercane Transboard est une trottinette électrique à trois roues (deux roues avant gonflables de 10 pouces et une roue motrice arrière de 8 pouces) équipée d'un moteur moyeu de 500 W et d'une batterie LG 48 V 8,8 Ah (422 Wh) pour environ 30 km d'autonomie. Elle est bridée à 25 km/h, pèse 18 kg, supporte 100 kg et freine avec un frein moteur électrique et un frein à pied arrière, avec une double suspension avant. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://alternative.bike/168-mercane-transboard.html",
+            "source_url_2": "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434",
+            "https://alternative.bike/168-mercane-transboard.html",
+            "https://4prototypes.com/products/mercane-wheels-transboard/"
+          ],
+          "_og_images": [
+            "https://alternative.bike/2477-large_default/mercane-transboard.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

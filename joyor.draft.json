@@ -1,0 +1,570 @@
+{
+  "brandName": "Joyor",
+  "results": [
+    {
+      "scooter": {
+        "name": "Joyor S10-S-Z",
+        "slug": "joyor-s10-s-z",
+        "voltage": 60,
+        "amperage": 18,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 60,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 28.8,
+        "suspension": "Double avant et double arrière par bras oscillant",
+        "ip_rating": "IP54",
+        "tire_size": "80/65-6 (10x3.0)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/31e1e80f-30ff-408c-5481-476d9f0bcf00/public"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 120,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Joyor S10-S-Z est une trottinette électrique pliable à double moteur (2 x 1000 W) alimentée par une batterie 60 V 18 Ah, annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces avec chambre à air, double suspension avant et arrière et freins à disque hydrauliques. Sa vitesse est bridée à 25 km/h sur route (jusqu'à 60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Joyor S10-S-Z - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Joyor S10-S-Z : disque de frein 120 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "joyor s10-s-z, pieces joyor s10-s-z, disque frein joyor s10-s-z, plaquettes joyor s10-s-z, pneu joyor s10-s-z"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://joyorescooter.com/fr/blogs/news/joyor-s10-s-z-your-perfect-companion-for-autumn-rides",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://joyorprime.com/pages/joyor-s10-s-z",
+          "type": "constructeur",
+          "url2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html"
+        },
+        "suspension": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://joyorescooter.com/products/eujoyor-s10-s-z",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/31e1e80f-30ff-408c-5481-476d9f0bcf00/public",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+          "type": "constructeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-joyor-s10-sz/"
+        },
+        "disc_pcd": {
+          "url": "https://www.wattiz.fr/fr/s/117/joyor-s10s",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Disque-de-Frein-120-MM-6-Trous-p495113286"
+        },
+        "disc_holes": {
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+          "type": "constructeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-joyor-s10-sz/"
+        },
+        "rim_diameter": {
+          "url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+          "type": "revendeur",
+          "url2": "https://fr.aliexpress.com/item/1005011889548514.html"
+        },
+        "tire_section": {
+          "url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+          "type": "revendeur",
+          "url2": "https://fr.aliexpress.com/item/1005011889548514.html"
+        },
+        "tire_family": {
+          "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 28.8,
+            "source_url": "https://joyorprime.com/pages/joyor-s10-s-z",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-joyor-s10sz-10-2-moteurs-doubles-1000-w-batterie-60-v-18-ah-348966.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-joyor-s10sz-10-2-moteurs-doubles-1000-w-batterie-60-v-18-ah-348966.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-joyor/f-1214801-aablj55050.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-joyor/f-1214801-aablj55050.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://joyorescooter.com/fr/blogs/news/joyor-s10-s-z-your-perfect-companion-for-autumn-rides",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-joyor-s10sz-10-2-moteurs-doubles-1000-w-batterie-60-v-18-ah-348966.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "80/65-6 (10x3.0)",
+            "source_url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+            "source_url_2": "https://trott-en-provence.fr/pneu-plein-joyor-s10-s/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double avant et double arrière par bras oscillant",
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://joyorescooter.com/products/eujoyor-s10-s-z",
+            "source_url_2": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-joyor-s10sz-10-2-moteurs-doubles-1000-w-batterie-60-v-18-ah-348966.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Joyor S10-S-Z est une trottinette électrique pliable à double moteur (2 x 1000 W) alimentée par une batterie 60 V 18 Ah, annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces avec chambre à air, double suspension avant et arrière et freins à disque hydrauliques. Sa vitesse est bridée à 25 km/h sur route (jusqu'à 60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pixmania.com/fr/fr/trottinette-electrique-toutterrain-joyor-s10sz-10-2-moteurs-doubles-1000-w-batterie-60-v-18-ah-348966.html",
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+            "https://www.decathlon.fr/p/mp/trottinette-joyor-s10sz-noire-casque/78e015f7-3b15-4e36-9ccf-41011d2c8cc2/c1"
+          ],
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/31e1e80f-30ff-408c-5481-476d9f0bcf00/public"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://fr.geekbuying.com/item/JOYOR-S10-S-Z-Trottinette-electrique-60-V-18-Ah-2-x-1000-W-Moteur-10001516.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-joyor-s10-sz/",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.wattiz.fr/fr/s/117/joyor-s10s",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Disque-de-Frein-120-MM-6-Trous-p495113286",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-joyor-s10-sz/",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+            "source_url_2": "https://fr.aliexpress.com/item/1005011889548514.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://labashop.com/pneu-joyor-s10s-z-guide-complet/?v=82a9e4d26595",
+            "source_url_2": "https://fr.aliexpress.com/item/1005011889548514.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC348873486.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Joyor Y6-S",
+        "slug": "joyor-y6-s",
+        "voltage": 48,
+        "amperage": 18,
+        "power_watts": 500,
+        "max_speed_private_kmh": 45,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces, pneus pneumatiques (avant et arrière)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://joyor.com/cdn/shop/files/joyor-y6-s-main-image_4_3437cde8-1574-4985-a1a8-606d6f543e34.webp?v=1769155509"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Joyor Y6-S est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48 V 18 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces, avec double suspension avant/arrière et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h sur terrain privé, après déverrouillage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Joyor Y6-S - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Joyor Y6-S : disque de frein 120 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "joyor y6-s, pieces joyor y6-s, disque frein joyor y6-s, plaquettes joyor y6-s, pneu joyor y6-s"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://joyor.com/cdn/shop/files/joyor-y6-s-main-image_4_3437cde8-1574-4985-a1a8-606d6f543e34.webp?v=1769155509",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.e.leclerc/fp/joyor-y6-s-trottinette-electrique-adulte-pneu-10-pouces-batterie-48v-18ah-vitesse-25-km-h-freins-a-disque-mecaniques-design-pliable-0827325653878",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+          "type": "revendeur",
+          "url2": "https://joyorscooter.com/products/brake-disk-s-x-y"
+        },
+        "disc_pcd": {
+          "url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Disque-de-Frein-120-MM-6-Trous-p495113286"
+        },
+        "disc_holes": {
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+          "type": "constructeur",
+          "url2": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html"
+        },
+        "tire_family": {
+          "url": "https://joyorscooter.com/products/air-tyre-all-terrain-y5s-y6-s-y8-s-y10",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "toValidate": [],
+      "offVocab": [
+        "tire_section=10x2.50"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 26.85,
+          "url": "https://joyorescooter.com/collections/all-electric-scooter/products/ukjoyor-y6-s"
+        },
+        {
+          "key": "tire_section",
+          "value": "10x2.50",
+          "url": "https://joyorscooter.com/products/air-tyre-all-terrain-y5s-y6-s-y8-s-y10"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26.85,
+            "source_url": "https://joyorescooter.com/collections/all-electric-scooter/products/ukjoyor-y6-s",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://gtxrstore.com/en-us/products/gtxr-joyor-y6-s-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://gtxrstore.com/en-us/products/gtxr-joyor-y6-s-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces, pneus pneumatiques (avant et arrière)",
+            "source_url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_url_2": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Joyor Y6-S est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48 V 18 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces, avec double suspension avant/arrière et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h sur terrain privé, après déverrouillage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+            "source_url_2": "https://eu.joyorescooter.com/collections/all-e-scooters/products/eujoyor-y6-s",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://joyor.com/products/joyor-y6-s-electric-scooter",
+            "https://www.darty.com/nav/achat/ref/MC349293792.html",
+            "https://supertrottinette.com/fr/489-joyor-y6-s-500w-48v-18ah-7444854348377.html"
+          ],
+          "_og_images": [
+            "http://joyor.com/cdn/shop/files/joyor-y6-s-main-image_4_3437cde8-1574-4985-a1a8-606d6f543e34.webp?v=1769155509"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.e.leclerc/fp/joyor-y6-s-trottinette-electrique-adulte-pneu-10-pouces-batterie-48v-18ah-vitesse-25-km-h-freins-a-disque-mecaniques-design-pliable-0827325653878",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-pliable-joyor-y6s-10-moteur-500w-batterie-48v-18ah-348984.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_url_2": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Disque-de-Frein-120-MM-6-Trous-p495113286",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": "https://www.wattiz.fr/fr/disques-de-frein/34094-disque-de-frein-120-mm-6trous-3760351012196.html",
+            "source_type": "constructeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.50",
+            "source_url": "https://joyorscooter.com/products/air-tyre-all-terrain-y5s-y6-s-y8-s-y10",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://joyorscooter.com/products/air-tyre-all-terrain-y5s-y6-s-y8-s-y10",
+            "source_url_2": "https://joyorprime.com/collections/joyor-e-scooter-parts/products/joyor-y6-s-10-inch-off-road-tire-1-pack",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

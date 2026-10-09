@@ -1,0 +1,539 @@
+{
+  "brandName": "Smartgyro",
+  "results": [
+    {
+      "scooter": {
+        "name": "Smartgyro Speedway",
+        "slug": "smartgyro-speedway",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 800,
+        "max_speed_private_kmh": 45,
+        "range_km": 45,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 22,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/9edb17e5-4d05-4fb7-5c5e-92b19a42fe00/public"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.70",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Smartgyro Speedway embarque un moteur brushless de 800 W (48 V) et une batterie lithium de 13 Ah (13 000 mAh) pour une autonomie annoncée jusqu'à 45 km. Elle est équipée de roues pneumatiques tubeless de 10 pouces, d'une double suspension avant/arrière et de freins à disque, avec une vitesse bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Smartgyro Speedway - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Smartgyro Speedway : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "smartgyro speedway, pieces smartgyro speedway, disque frein smartgyro speedway, plaquettes smartgyro speedway, pneu smartgyro speedway"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://rhyde.co/products/smartgyro-speedway",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+          "type": "revendeur",
+          "url2": "https://rhyde.co/products/smartgyro-speedway"
+        },
+        "suspension": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/9edb17e5-4d05-4fb7-5c5e-92b19a42fe00/public",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+          "type": "revendeur",
+          "url2": "https://www.nziomarket.com/producto/disco-freno-smartgyro/"
+        },
+        "disc_pcd": {
+          "url": "https://patineteros.com/product/disco-de-freno-1400mm-rojo-para-smartgyro-6h-44mm/",
+          "type": "revendeur",
+          "url2": "https://emovedistribution.com/producto/disco-de-freno-6-agujeros-rojo-140mm-smartgyro-kugoo-y-similares-copia/"
+        },
+        "disc_holes": {
+          "url": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+          "type": "revendeur",
+          "url2": "https://www.nziomarket.com/producto/disco-freno-smartgyro/"
+        },
+        "rim_diameter": {
+          "url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+          "type": "revendeur",
+          "url2": "https://france-gyrotrot.com/products/pneu-10-2-70-6-5-255-70"
+        },
+        "tire_section": {
+          "url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+          "type": "revendeur",
+          "url2": "https://france-gyrotrot.com/products/pneu-10-2-70-6-5-255-70"
+        },
+        "tire_family": {
+          "url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22,
+            "source_url": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_url_2": "https://rhyde.co/products/smartgyro-speedway",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://rhyde.co/products/smartgyro-speedway",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://rhyde.co/products/smartgyro-speedway",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://rhyde.co/products/smartgyro-speedway",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Smartgyro Speedway embarque un moteur brushless de 800 W (48 V) et une batterie lithium de 13 Ah (13 000 mAh) pour une autonomie annoncée jusqu'à 45 km. Elle est équipée de roues pneumatiques tubeless de 10 pouces, d'une double suspension avant/arrière et de freins à disque, avec une vitesse bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/smartgyro-xtreme-speedway-trottinette-electrique-noir-bleu",
+            "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html"
+          ],
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/9edb17e5-4d05-4fb7-5c5e-92b19a42fe00/public"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+            "source_url_2": "https://www.nziomarket.com/producto/disco-freno-smartgyro/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://patineteros.com/product/disco-de-freno-1400mm-rojo-para-smartgyro-6h-44mm/",
+            "source_url_2": "https://emovedistribution.com/producto/disco-de-freno-6-agujeros-rojo-140mm-smartgyro-kugoo-y-similares-copia/",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+            "source_url_2": "https://www.nziomarket.com/producto/disco-freno-smartgyro/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.70",
+            "source_url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+            "source_url_2": "https://france-gyrotrot.com/products/pneu-10-2-70-6-5-255-70",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+            "source_url_2": "https://france-gyrotrot.com/products/pneu-10-2-70-6-5-255-70",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-renforc%C3%A9e/dp/B07RVNMZJH",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Smartgyro Speedway Pro",
+        "slug": "smartgyro-speedway-pro",
+        "voltage": 48,
+        "amperage": 15,
+        "power_watts": 800,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 25,
+        "suspension": "Double suspension avant et arrière",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://monorimspain.com/cdn/shop/files/patinete-electrico-smartgyro-speedway-pro-certificado_1.jpg?v=1708686375&width=1200"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Smartgyro Speedway Pro est une trottinette électrique pliable équipée d'un moteur brushless de 800 W nominal (pointe annoncée à 1 000 W) alimenté par une batterie lithium 48 V / 15 Ah pour jusqu'à 60 km d'autonomie annoncée. Elle roule sur des pneumatiques de 10 pouces avec double suspension avant et arrière, et dispose d'un double freinage à disque avec frein électrique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Smartgyro Speedway Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Smartgyro Speedway Pro : disque de frein 140 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "smartgyro speedway pro, pieces smartgyro speedway pro, disque frein smartgyro speedway pro, plaquettes smartgyro speedway pro, pneu smartgyro speedway pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-speedway-pro-certificado",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.amazon.es/smartGyro-Speedway-PRO-El%C3%A9ctrico-Suspensi%C3%B3n/dp/B08P253ZL8",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+          "type": "revendeur",
+          "url2": "https://www.dealburn.fr/reconditionne/smartgyro-speedway-pro-trottinette-electrique-de-1200-w-avec-3-vitesses-batterie-15-000-mah-48-v-double-suspension-renforcee-freins-a-disque-4-clignotants-scooter-mixte-adulte-noir/?token=30d0383c-5ec7-4d1b-94c2-dd938f20d741"
+        },
+        "suspension": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://monorimspain.com/cdn/shop/files/patinete-electrico-smartgyro-speedway-pro-certificado_1.jpg?v=1708686375&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://france-gyrotrot.com/products/copie-de-disque-de-frein-160-mm-6-trous-pour-trottinette-electrique",
+          "type": "revendeur",
+          "url2": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous"
+        },
+        "disc_holes": {
+          "url": "https://france-gyrotrot.com/products/copie-de-disque-de-frein-160-mm-6-trous-pour-trottinette-electrique",
+          "type": "revendeur",
+          "url2": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous"
+        },
+        "rim_diameter": {
+          "url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+          "type": "revendeur",
+          "url2": "https://www.dealburn.fr/reconditionne/smartgyro-speedway-pro-trottinette-electrique-de-1200-w-avec-3-vitesses-batterie-15-000-mah-48-v-double-suspension-renforcee-freins-a-disque-4-clignotants-scooter-mixte-adulte-noir/?token=30d0383c-5ec7-4d1b-94c2-dd938f20d741"
+        },
+        "tire_family": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_pcd"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25,
+            "source_url": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+            "source_url_2": "https://www.dealburn.fr/reconditionne/smartgyro-speedway-pro-trottinette-electrique-de-1200-w-avec-3-vitesses-batterie-15-000-mah-48-v-double-suspension-renforcee-freins-a-disque-4-clignotants-scooter-mixte-adulte-noir/?token=30d0383c-5ec7-4d1b-94c2-dd938f20d741",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-speedway-pro-certificado",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-speedway-pro-certificado",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://www.amazon.es/smartGyro-Speedway-PRO-El%C3%A9ctrico-Suspensi%C3%B3n/dp/B08P253ZL8",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Smartgyro Speedway Pro est une trottinette électrique pliable équipée d'un moteur brushless de 800 W nominal (pointe annoncée à 1 000 W) alimenté par une batterie lithium 48 V / 15 Ah pour jusqu'à 60 km d'autonomie annoncée. Elle roule sur des pneumatiques de 10 pouces avec double suspension avant et arrière, et dispose d'un double freinage à disque avec frein électrique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "https://www.amazon.fr/SMARTGYRO-Trottinette-%C3%A9lectrique-Suspension-Clignotants/dp/B08P253ZL8",
+            "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt"
+          ],
+          "_og_images": [
+            "https://monorimspain.com/cdn/shop/files/patinete-electrico-smartgyro-speedway-pro-certificado_1.jpg?v=1708686375&width=1200"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://france-gyrotrot.com/products/copie-de-disque-de-frein-160-mm-6-trous-pour-trottinette-electrique",
+            "source_url_2": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://france-gyrotrot.com/products/copie-de-disque-de-frein-160-mm-6-trous-pour-trottinette-electrique",
+            "source_url_2": "https://trottriders.fr/products/disque-frein-ewd002-140mm-6-trous",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M",
+            "source_url_2": "https://www.dealburn.fr/reconditionne/smartgyro-speedway-pro-trottinette-electrique-de-1200-w-avec-3-vitesses-batterie-15-000-mah-48-v-double-suspension-renforcee-freins-a-disque-4-clignotants-scooter-mixte-adulte-noir/?token=30d0383c-5ec7-4d1b-94c2-dd938f20d741",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-smartgyro-speedway-pro-avec-double-suspension-et-freins-a-disque-1000-w-homologuee-dgt",
+            "source_url_2": "https://monorimspain.com/fr-fr/products/patinete-smartgyro-speedway-pro-certificado-dgt",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

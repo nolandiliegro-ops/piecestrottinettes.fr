@@ -1,0 +1,376 @@
+{
+  "brandName": "Oxelo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Oxelo SD500E",
+        "slug": "oxelo-sd500e",
+        "max_speed_kmh": 25,
+        "source_image_urls": [
+          "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 18,
+        "meta_title": "Oxelo SD500E - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Oxelo SD500E : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "oxelo sd500e, pieces oxelo sd500e, disque frein oxelo sd500e, plaquettes oxelo sd500e, pneu oxelo sd500e"
+      },
+      "sources": {
+        "source_image_urls": {
+          "url": "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 120,
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://e-watts.fr/produit/disque-de-frein-120mm"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": "{\"value\": 16.2, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_type\": \"constructeur\"}\n<parameter name=\"voltage\">{\"value\": 36, \"source_url\": \"https://meilleuretrott.fr/trottinettes/decathlon-oxelo-sd500e/\", \"source_url_2\": null, \"source_type\": \"site_test\"}\n<parameter name=\"amperage\">{\"value\": 5.2, \"source_url\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_type\": \"constructeur\"}\n<parameter name=\"power_watts\">{\"value\": 350, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"max_speed_private_kmh\">{\"value\": null, \"source_url\": null, \"source_type\": \"inconnu\"}\n<parameter name=\"range_km\">{\"value\": 25, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"max_load_kg\">{\"value\": 100, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_type\": \"constructeur\"}\n<parameter name=\"wheel_inches\">{\"value\": 10, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"tire_size\">{\"value\": null, \"source_url\": null, \"source_type\": \"inconnu\"}\n<parameter name=\"suspension\">{\"value\": \"rigide (sans suspension)\", \"source_url\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": null, \"source_type\": \"constructeur\"}\n<parameter name=\"ip_rating\">{\"value\": \"IPX5\", \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"foldable\">{\"value\": true, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"year\">{\"value\": 2025, \"source_url\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_url_2\": null, \"source_type\": \"site_test\"}\n<parameter name=\"description_fr\">{\"value\": \"L'Oxelo SD500E est une trottinette électrique pliable équipée d'un moteur brushless de 350 W et d'une batterie lithium-ion de 5,2 Ah, avec une vitesse bridée à 25 km/h et jusqu'à 25 km d'autonomie en mode Éco. Elle roule sur des pneus tubeless de 10 pouces et freine grâce à un frein à disque arrière associé à un frein moteur à l'avant. Elle pèse 16,2 kg, supporte 100 kg et est certifiée IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.\", \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_type\": \"constructeur\"}\n<parameter name=\"image_urls\">[]",
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775",
+            "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775",
+            "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html"
+          ],
+          "_og_images": [
+            "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-sd500e/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-120mm",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-sd500e/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Oxelo MD500E",
+        "slug": "oxelo-md500e",
+        "voltage": 36,
+        "amperage": 10.4,
+        "power_watts": 350,
+        "range_km": 35,
+        "max_load_kg": 100,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 17,
+        "suspension": "Rigide (sans suspension, pneus tubeless 10\" pour l'amorti)",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "L'Oxelo MD500E est une trottinette électrique pliable équipée d'un moteur brushless de 350 W et d'une batterie de 374 Wh (10,4 Ah), pour une autonomie annoncée jusqu'à 35 km en mode Éco. Elle roule sur des pneus tubeless de 10 pouces, freine avec un frein à disque mécanique arrière associé à un frein moteur avant, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Oxelo MD500E - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Oxelo MD500E : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "oxelo md500e, pieces oxelo md500e, disque frein oxelo md500e, plaquettes oxelo md500e, pneu oxelo md500e"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+          "type": "site_test"
+        },
+        "amperage": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+          "type": "site_test"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-md500e/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur",
+          "url2": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-md500e/"
+        },
+        "suspension": {
+          "url": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 120,
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://e-watts.fr/produit/disque-de-frein-120mm"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17,
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-md500e/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-md500e/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+            "source_url_2": "https://www.notebookcheck.com/Decathlon-Sporthaendler-bringt-zwei-neue-guenstige-E-Scooter-auf-den-Markt.894648.0.html",
+            "source_type": "site_test"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Rigide (sans suspension, pneus tubeless 10\" pour l'amorti)",
+            "source_url": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+            "source_url_2": "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+            "source_url_2": "https://decathlon.gf/collections/homme/products/trottinette-electrique-decathlon-25km-h-md500e",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-md500e/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Oxelo MD500E est une trottinette électrique pliable équipée d'un moteur brushless de 350 W et d'une batterie de 374 Wh (10,4 Ah), pour une autonomie annoncée jusqu'à 35 km en mode Éco. Elle roule sur des pneus tubeless de 10 pouces, freine avec un frein à disque mécanique arrière associé à un frein moteur avant, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+            "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-120mm",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "source_url_2": "https://decathlon.gf/products/trottinette-electrique-decathlon-25km-h-md500e",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

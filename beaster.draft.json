@@ -1,0 +1,476 @@
+{
+  "brandName": "Beaster",
+  "results": [
+    {
+      "scooter": {
+        "name": "Beaster BS09",
+        "slug": "beaster-bs09",
+        "voltage": 36,
+        "amperage": 10,
+        "power_watts": 250,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 15,
+        "suspension": "Aucune",
+        "tire_size": "9 pouces (23 cm), pneus gonflables",
+        "foldable": true,
+        "wheel_inches": "9",
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 25,
+        "description": "La Beaster BS09 est une trottinette électrique pliable équipée d'un moteur de 250 W et d'une batterie intégrée 36 V 10 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 9 pouces, avec un frein à tambour à l'avant et un frein E-ABS à l'arrière, et sa vitesse est limitée à 25 km/h (3 modes : 15, 20 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Beaster BS09 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Beaster BS09 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "beaster bs09, pieces beaster bs09, disque frein beaster bs09, plaquettes beaster bs09, pneu beaster bs09"
+      },
+      "sources": {
+        "voltage": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur",
+          "url2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869"
+        },
+        "suspension": {
+          "url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 250,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_url_2": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "9 pouces (23 cm), pneus gonflables",
+            "source_url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_url_2": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Beaster BS09 est une trottinette électrique pliable équipée d'un moteur de 250 W et d'une batterie intégrée 36 V 10 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 9 pouces, avec un frein à tambour à l'avant et un frein E-ABS à l'arrière, et sa vitesse est limitée à 25 km/h (3 modes : 15, 20 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_url_2": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "https://krinona.lt/elektriniai-paspirtukai/14619-elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf",
+            "source_url_2": "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Beaster Diablo",
+        "slug": "beaster-diablo",
+        "voltage": 60,
+        "amperage": 20.8,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 60,
+        "range_km": 65,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "tire_size": "10 x 3 pouces (25,4 x 7,62 cm)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://www.erasportas.lt/image/cache/catalog/feed_55/2473703-01_BSDIABLOY-600x315.jpg",
+          "https://media.powersport.lt/8936162-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "score_offroad": 35,
+        "description": "La Beaster Diablo est une trottinette électrique tout-terrain équipée d'un moteur de 1000 W et d'une batterie lithium-ion 60 V 20,8 Ah, annoncée jusqu'à 65 km d'autonomie et 55-60 km/h en usage privé (vitesse bridée à 25 km/h sur voie publique). Elle repose sur des pneus de 10 pouces (10 x 3), des freins hydrauliques et un cadre en aluminium 6061 supportant 120 kg pour 30 kg à vide. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Beaster Diablo - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Beaster Diablo : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "beaster diablo, pieces beaster diablo, disque frein beaster diablo, plaquettes beaster diablo, pneu beaster diablo"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+          "type": "revendeur",
+          "url2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919"
+        },
+        "tire_size": {
+          "url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pigu.lt/lt/sportas-laisvalaikis-turizmas/dviraciai-rieduciai-riedlentes/elektriniai-paspirtukai/elektrinis-paspirtukas-beaster-scooter-diablo-1000-w?id=54575124",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pigu.lt/lt/sportas-laisvalaikis-turizmas/dviraciai-rieduciai-riedlentes/elektriniai-paspirtukai/elektrinis-paspirtukas-beaster-scooter-diablo-1000-w?id=54575124",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.erasportas.lt/image/cache/catalog/feed_55/2473703-01_BSDIABLOY-600x315.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+            "source_url_2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": "https://krinona.lt/elektriniai-paspirtukai/17361-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-208-ah.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 20.8,
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": "https://krinona.lt/elektriniai-paspirtukai/17361-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-208-ah.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+            "source_url_2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 65,
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://pigu.lt/lt/sportas-laisvalaikis-turizmas/dviraciai-rieduciai-riedlentes/elektriniai-paspirtukai/elektrinis-paspirtukas-beaster-scooter-diablo-1000-w?id=54575124",
+            "source_url_2": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 x 3 pouces (25,4 x 7,62 cm)",
+            "source_url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+            "source_url_2": "https://krinona.lt/elektriniai-paspirtukai/17361-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-208-ah.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pigu.lt/lt/sportas-laisvalaikis-turizmas/dviraciai-rieduciai-riedlentes/elektriniai-paspirtukai/elektrinis-paspirtukas-beaster-scooter-diablo-1000-w?id=54575124",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Beaster Diablo est une trottinette électrique tout-terrain équipée d'un moteur de 1000 W et d'une batterie lithium-ion 60 V 20,8 Ah, annoncée jusqu'à 65 km d'autonomie et 55-60 km/h en usage privé (vitesse bridée à 25 km/h sur voie publique). Elle repose sur des pneus de 10 pouces (10 x 3), des freins hydrauliques et un cadre en aluminium 6061 supportant 120 kg pour 30 kg à vide. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+            "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+            "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/"
+          ],
+          "_og_images": [
+            "https://www.erasportas.lt/image/cache/catalog/feed_55/2473703-01_BSDIABLOY-600x315.jpg",
+            "https://media.powersport.lt/8936162-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

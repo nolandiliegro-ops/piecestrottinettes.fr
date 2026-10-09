@@ -1,0 +1,33 @@
+{
+  "brandName": "Kuickwheel",
+  "scooters": [
+    {
+      "name": "Kuickwheel S1-C Pro",
+      "slug": "kuickwheel-s1-c-pro",
+      "voltage": 36,
+      "amperage": 13,
+      "power_watts": 500,
+      "max_speed_private_kmh": 38,
+      "range_km": 50,
+      "max_load_kg": 120,
+      "year": 2022,
+      "max_speed_kmh": 25,
+      "weight_kg": 22,
+      "suspension": "Double suspension avant (fourche)",
+      "ip_rating": "IPX7",
+      "tire_size": "10x2.5",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_section": "10x2.50",
+      "score_offroad": 40,
+      "description": "La Kuickwheel S1-C Pro est une trottinette électrique pliable équipée d'un moteur brushless de 500 W (750 W en crête) et d'une batterie lithium-ion 36 V 13 Ah pour environ 50 km d'autonomie. Elle roule sur des pneus de 10 pouces (gonflable à l'avant, plein à l'arrière), avec double suspension avant, frein à tambour à l'avant et frein moteur à l'arrière, et est certifiée IPX7. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kuickwheel S1-C Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kuickwheel S1-C Pro : plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kuickwheel s1-c pro, pieces kuickwheel s1-c pro, disque frein kuickwheel s1-c pro, plaquettes kuickwheel s1-c pro, pneu kuickwheel s1-c pro"
+    }
+  ]
+}

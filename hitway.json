@@ -1,0 +1,33 @@
+{
+  "brandName": "Hitway",
+  "scooters": [
+    {
+      "name": "Hitway H6",
+      "slug": "hitway-h6",
+      "voltage": 48,
+      "amperage": 15.6,
+      "power_watts": 500,
+      "max_speed_private_kmh": 45,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 23,
+      "suspension": "Double suspension avant et arrière (amortisseurs à ressort / bras oscillant)",
+      "ip_rating": "IP54",
+      "tire_size": "Pneu gonflable 8,5 pouces",
+      "foldable": true,
+      "wheel_inches": "8.5",
+      "source_image_urls": [
+        "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+        "http://moovrider.com/cdn/shop/files/91989360-hitway-h6-trottinette-lectrique-8-5pc_1.avif?crop=center&height=1200&v=1765995641&width=1200"
+      ],
+      "brake_type": "drum",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Hitway H6 est une trottinette électrique pliable équipée d'un moteur de 500 W (pic annoncé à 800 W), d'une batterie 48 V 15,6 Ah pour 60 à 70 km d'autonomie, de pneus gonflables de 8,5 pouces, d'une double suspension et de freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h sur route (modes 10, 15 et 25 km/h), avec un mode débridé annoncé à 45 km/h réservé aux terrains privés. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hitway H6 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hitway H6 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hitway h6, pieces hitway h6, disque frein hitway h6, plaquettes hitway h6, pneu hitway h6"
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "brandName": "Bronco",
+  "results": [
+    {
+      "scooter": {
+        "name": "Bronco Xtreme 11",
+        "slug": "bronco-xtreme-11",
+        "voltage": 72,
+        "amperage": 35,
+        "power_watts": 8400,
+        "max_speed_private_kmh": 109,
+        "range_km": 120,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 48,
+        "suspension": "Avant : Kindshock EXA/DNM 125 mm à ressort (2000 lbs) ; arrière : DNMAOY-36 165 mm à air réglable",
+        "wheel_inches": "11",
+        "source_image_urls": [
+          "https://www.scooterpassion.be/22103-large_default/trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.jpg",
+          "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-bronco-xtreme-sport-72v_4.jpg?v=1669301588"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_pcd": 48,
+        "disc_holes": 6,
+        "caliper_family": "nutt_vented",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Bronco Xtreme 11 est une trottinette électrique à double moteur brushless d'une puissance maximale de 8400 W, alimentée par une batterie 72 V 35 Ah (2520 Wh) et équipée de roues de 11 pouces CST, de suspensions avant et arrière et de freins hydrauliques NUTT avec disques de 160 mm. Elle est vendue avec une vitesse bridée à 25 km/h, pouvant atteindre 109 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Bronco Xtreme 11 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Bronco Xtreme 11 : disque de frein 160 mm 6 trous, plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "bronco xtreme 11, pieces bronco xtreme 11, disque frein bronco xtreme 11, plaquettes bronco xtreme 11, pneu bronco xtreme 11"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur",
+          "url2": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html"
+        },
+        "suspension": {
+          "url": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.scooterpassion.be/22103-large_default/trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://fastride.fr/en/131-extreme-11",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/disque-de-frein-160mm-renforce-3mm-entraxe-48mm-e-watts/"
+        },
+        "disc_pcd": {
+          "url": "https://e-watts.fr/produit/disque-de-frein-160mm-renforce-3mm-entraxe-48mm-e-watts/",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/sonken-engineering/4187-spacer-disque-de-frein-sonken-pour-dualtron-thunder-ultra-bronco.html"
+        },
+        "disc_holes": {
+          "url": "https://funtrott.fr/301-bronco",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/53-sonken-engineering"
+        },
+        "caliper_family": {
+          "url": "https://biospeed.fr/produit/plaquette-de-frein-ventilee-nutt/",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/en/131-extreme-11",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [
+        "rim_diameter=6.5",
+        "tire_section=90/65"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://fastride.fr/en/131-extreme-11"
+        },
+        {
+          "key": "tire_section",
+          "value": "90/65",
+          "url": "https://fastride.fr/en/131-extreme-11"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 48,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 35,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-bronco-xtrem-sport-72v",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 8400,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-bronco-xtrem-sport-72v",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 109,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 120,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-bronco-xtrem-sport-72v",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-bronco-xtrem-sport-72v",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant : Kindshock EXA/DNM 125 mm à ressort (2000 lbs) ; arrière : DNMAOY-36 165 mm à air réglable",
+            "source_url": "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Bronco Xtreme 11 est une trottinette électrique à double moteur brushless d'une puissance maximale de 8400 W, alimentée par une batterie 72 V 35 Ah (2520 Wh) et équipée de roues de 11 pouces CST, de suspensions avant et arrière et de freins hydrauliques NUTT avec disques de 160 mm. Elle est vendue avec une vitesse bridée à 25 km/h, pouvant atteindre 109 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://funtrott.fr/accueil/2143-occasion-trottinette-electrique-bronco-xtreme.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "https://www.scooterpassion.be/fr/scooter-passion/6887-trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.html",
+            "https://pietechnologie.com/products/trottinette-electrique-bronco-xtrem-sport-72v"
+          ],
+          "_og_images": [
+            "https://www.scooterpassion.be/22103-large_default/trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.jpg",
+            "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-bronco-xtreme-sport-72v_4.jpg?v=1669301588"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_url_2": "https://funtrott.fr/accueil/2143-occasion-trottinette-electrique-bronco-xtreme.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://fastride.fr/en/131-extreme-11",
+            "source_url_2": "https://e-watts.fr/produit/disque-de-frein-160mm-renforce-3mm-entraxe-48mm-e-watts/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 48,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-160mm-renforce-3mm-entraxe-48mm-e-watts/",
+            "source_url_2": "https://fastride.fr/en/sonken-engineering/4187-spacer-disque-de-frein-sonken-pour-dualtron-thunder-ultra-bronco.html",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://funtrott.fr/301-bronco",
+            "source_url_2": "https://fastride.fr/en/53-sonken-engineering",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://fastride.fr/en/131-extreme-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fastride.fr/en/131-extreme-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "nutt_vented",
+            "source_url": "https://biospeed.fr/produit/plaquette-de-frein-ventilee-nutt/",
+            "source_url_2": "https://fastride.fr/en/131-extreme-11",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/en/131-extreme-11",
+            "source_url_2": "https://www.e-moov-services.fr/accueil/664-bronco-xtreme11-v3-72v.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Bronco Vnom 11",
+        "slug": "bronco-vnom-11",
+        "voltage": 72,
+        "amperage": 50,
+        "power_watts": 8400,
+        "max_speed_private_kmh": 115,
+        "range_km": 110,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "suspension": "Suspension hydraulique réglable",
+        "tire_size": "11\" x 3.7\" tubeless",
+        "wheel_inches": "11",
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 48,
+        "description": "La Bronco Vnom 11 est une trottinette électrique double moteur (jusqu'à 8400 W en pointe) alimentée par une batterie 72 V 50 Ah, avec des pneus tubeless 11 pouces. Elle dispose de freins hydrauliques à disque avant et arrière complétés par un freinage électronique, d'une suspension hydraulique réglable et d'une vitesse bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Bronco Vnom 11 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Bronco Vnom 11 : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "bronco vnom 11, pieces bronco vnom 11, disque frein bronco vnom 11, plaquettes bronco vnom 11, pneu bronco vnom 11"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://fastride.fr/gb/vnom/1708-disque-renforce-160-vnom.html",
+          "type": "distributeur",
+          "url2": "https://funtrott.fr/301-bronco"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/en/79-bronco-vnom",
+          "type": "distributeur",
+          "url2": "https://esp81.com/products/pneu-cst-tubeless-90-65-6-5"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/en/79-bronco-vnom",
+          "type": "distributeur",
+          "url2": "https://esp81.com/products/pneu-cst-tubeless-90-65-6-5"
+        },
+        "tire_family": {
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "source_image_urls",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 53,
+          "url": "https://hypedrides.com.au/products/bronco-vnom-11"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://funtrott.fr/301-bronco"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 53,
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+            "source_url_2": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 50,
+            "source_url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+            "source_url_2": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 8400,
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": "https://funtrott.fr/accueil/2143-occasion-trottinette-electrique-bronco-xtreme.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 115,
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 110,
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": "https://funtrott.fr/accueil/2143-occasion-trottinette-electrique-bronco-xtreme.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+            "source_url_2": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11\" x 3.7\" tubeless",
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspension hydraulique réglable",
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Bronco Vnom 11 est une trottinette électrique double moteur (jusqu'à 8400 W en pointe) alimentée par une batterie 72 V 50 Ah, avec des pneus tubeless 11 pouces. Elle dispose de freins hydrauliques à disque avant et arrière complétés par un freinage électronique, d'une suspension hydraulique réglable et d'une vitesse bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.e-moov-services.fr/accueil/661-bronco-vnom-11-72v-50ah.html",
+            "https://zetrottstore-toulouse.com/trottinette-electrique-toulouse/2347-bronco-vnom-11-72v-50ah.html",
+            "https://hypedrides.com.au/products/bronco-vnom-11"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://fastride.fr/gb/vnom/1708-disque-renforce-160-vnom.html",
+            "source_url_2": "https://funtrott.fr/301-bronco",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://funtrott.fr/301-bronco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://hypedrides.com.au/products/bronco-vnom-11",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://fastride.fr/en/79-bronco-vnom",
+            "source_url_2": "https://esp81.com/products/pneu-cst-tubeless-90-65-6-5",
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fastride.fr/en/79-bronco-vnom",
+            "source_url_2": "https://esp81.com/products/pneu-cst-tubeless-90-65-6-5",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "brandName": "Hitway",
+  "results": [
+    {
+      "scooter": {
+        "name": "Hitway H9",
+        "slug": "hitway-h9",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 500,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 24.6,
+        "suspension": "Double suspension avant et arrière à ressorts",
+        "ip_rating": "IP54",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+          "http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "score_offroad": 40,
+        "description": "La Hitway H9 est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 800 W) et d'une batterie 48 V de 15,6 à 27 Ah selon la version. Elle roule sur des pneus de 10 pouces, avec double suspension avant et arrière et freins à disque avant et arrière, et propose trois modes de vitesse (10, 15 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hitway H9 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hitway H9 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hitway h9, pieces hitway h9, disque frein hitway h9, plaquettes hitway h9, pneu hitway h9"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://www.france-proshop.com/test-de-la-trottinette-electrique-hitway-h9-pro-puissance-et-praticite"
+        },
+        "suspension": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [
+        "rim_diameter=6.5",
+        "tire_section=10x2.70"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/"
+        },
+        {
+          "key": "tire_section",
+          "value": "10x2.70",
+          "url": "https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24.6,
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://www.france-proshop.com/test-de-la-trottinette-electrique-hitway-h9-pro-puissance-et-praticite",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://electricpower.ie/product/hitway-h9-h9-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière à ressorts",
+            "source_url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_url_2": "https://primaryelectrics.com/products/hitway-h9-48v-15-6ah-500w-e-scooter-ebsc820",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hitway H9 est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 800 W) et d'une batterie 48 V de 15,6 à 27 Ah selon la version. Elle roule sur des pneus de 10 pouces, avec double suspension avant et arrière et freins à disque avant et arrière, et propose trois modes de vitesse (10, 15 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "https://www.e.leclerc/fp/hitway-h9-trottinette-electrique-adultes-avec-10-pneus-800w-moteur-3-modes-de-vitesse-autonomie-70-110km-app-8775085075299",
+            "https://hitway.eu/products/h9-h9pro-folding-electric-scooter"
+          ],
+          "_og_images": [
+            "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+            "http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.70",
+            "source_url": "https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hitway H6",
+        "slug": "hitway-h6",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 500,
+        "max_speed_private_kmh": 45,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 23,
+        "suspension": "Double suspension avant et arrière (amortisseurs à ressort / bras oscillant)",
+        "ip_rating": "IP54",
+        "tire_size": "Pneu gonflable 8,5 pouces",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "source_image_urls": [
+          "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+          "http://moovrider.com/cdn/shop/files/91989360-hitway-h6-trottinette-lectrique-8-5pc_1.avif?crop=center&height=1200&v=1765995641&width=1200"
+        ],
+        "brake_type": "drum",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Hitway H6 est une trottinette électrique pliable équipée d'un moteur de 500 W (pic annoncé à 800 W), d'une batterie 48 V 15,6 Ah pour 60 à 70 km d'autonomie, de pneus gonflables de 8,5 pouces, d'une double suspension et de freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h sur route (modes 10, 15 et 25 km/h), avec un mode débridé annoncé à 45 km/h réservé aux terrains privés. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hitway H6 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hitway H6 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hitway h6, pieces hitway h6, disque frein hitway h6, plaquettes hitway h6, pneu hitway h6"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.auto-domo.fr/trottinette-electrique-hitway-h6-la-reference-du-confort-et-de-la-performance/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://de.hitway.eu/en/products/h6",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur",
+          "url2": "https://www.manualslib.fr/manual/942023/Hitway-H6.html"
+        },
+        "suspension": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 23,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.manualslib.fr/manual/942023/Hitway-H6.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://de.hitway.eu/en/products/h6",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.manualslib.fr/manual/942023/Hitway-H6.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.auto-domo.fr/trottinette-electrique-hitway-h6-la-reference-du-confort-et-de-la-performance/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://de.hitway.eu/en/products/h6",
+            "source_url_2": "https://www.amazon.fr/HITWAY-Trottinette-%C3%A9lectrique-gonflables-Suspension/dp/B0DG8JZDG3",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.manualslib.fr/manual/942023/Hitway-H6.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "Pneu gonflable 8,5 pouces",
+            "source_url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360",
+            "source_url_2": "https://www.fnac.com/mp47141163/Hitway-trottinette-electrique-pliable-avec-siege-amovible-pneu-10-pouces-800w-scooter-electrique-jusqu-a-45km-h-avec-Ecran-LCD-Avance/w-4",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière (amortisseurs à ressort / bras oscillant)",
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://de.hitway.eu/en/products/h6",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.carrefour.fr/p/hitway-trottinette-electrique-adulte-h6-3-5h-charge-rapide-batterie-48v15-6ah-pneus-gonflables-1200w-7469106159310",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_url_2": "https://www.fnac.com/mp47141163/Hitway-trottinette-electrique-pliable-avec-siege-amovible-pneu-10-pouces-800w-scooter-electrique-jusqu-a-45km-h-avec-Ecran-LCD-Avance/w-4",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hitway H6 est une trottinette électrique pliable équipée d'un moteur de 500 W (pic annoncé à 800 W), d'une batterie 48 V 15,6 Ah pour 60 à 70 km d'autonomie, de pneus gonflables de 8,5 pouces, d'une double suspension et de freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h sur route (modes 10, 15 et 25 km/h), avec un mode débridé annoncé à 45 km/h réservé aux terrains privés. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360",
+            "https://www.carrefour.fr/p/hitway-trottinette-electrique-adulte-h6-3-5h-charge-rapide-batterie-48v15-6ah-pneus-gonflables-1200w-7469106159310",
+            "https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway"
+          ],
+          "_og_images": [
+            "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+            "http://moovrider.com/cdn/shop/files/91989360-hitway-h6-trottinette-lectrique-8-5pc_1.avif?crop=center&height=1200&v=1765995641&width=1200"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway",
+            "source_url_2": "https://www.carrefour.fr/p/hitway-trottinette-electrique-adulte-h6-3-5h-charge-rapide-batterie-48v15-6ah-pneus-gonflables-1200w-7469106159310",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway",
+            "source_url_2": "https://www.carrefour.fr/p/hitway-trottinette-electrique-adulte-h6-3-5h-charge-rapide-batterie-48v15-6ah-pneus-gonflables-1200w-7469106159310",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
