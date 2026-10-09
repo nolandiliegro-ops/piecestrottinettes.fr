@@ -1,8 +1,12 @@
 {
   "_doc": "Passe disques : relance ciblée des seules clés de frein sur les modèles bloqués. Modifier ce fichier sur main = lancer un run. go=false : rien ne part.",
-  "go": false,
+  "go": true,
   "model": "claude-sonnet-5-5",
   "max_searches": 8,
-  "brands": null,
-  "max_brands": 0
+  "brands": [
+    "kugoo",
+    "navee",
+    "teverun"
+  ],
+  "max_brands": 3
 }
