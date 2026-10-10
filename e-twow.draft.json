@@ -6,6 +6,7 @@
         "name": "E-Twow GT SL",
         "slug": "e-twow-gt-sl",
         "voltage": 48,
+        "amperage": 7.8,
         "power_watts": 700,
         "max_speed_private_kmh": 40,
         "range_km": 35,
@@ -30,6 +31,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://shop.e-twow.com/products/gt-sl",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://shop.e-twow.com/products/gt-sl",
           "type": "constructeur"
         },
@@ -91,9 +96,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -255,6 +258,7 @@
         "name": "E-Twow GT Sport",
         "slug": "e-twow-gt-sport",
         "voltage": 48,
+        "amperage": 10.5,
         "power_watts": 500,
         "max_speed_private_kmh": 40,
         "range_km": 45,
@@ -279,6 +283,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
           "type": "constructeur"
         },
@@ -341,9 +349,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.5"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -507,6 +513,7 @@
         "name": "E-Twow Booster SE",
         "slug": "e-twow-booster-se",
         "voltage": 36,
+        "amperage": 7.8,
         "power_watts": 500,
         "max_speed_private_kmh": 30,
         "range_km": 30,
@@ -531,6 +538,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se",
           "type": "revendeur"
         },
@@ -592,9 +603,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -756,6 +765,7 @@
         "name": "E-Twow GT SE",
         "slug": "e-twow-gt-se",
         "voltage": 48,
+        "amperage": 10.5,
         "power_watts": 700,
         "max_speed_private_kmh": 40,
         "range_km": 50,
@@ -780,6 +790,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
           "type": "revendeur"
         },
@@ -845,9 +859,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.5"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

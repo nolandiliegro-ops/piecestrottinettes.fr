@@ -1,15 +1,15 @@
 # Extraction Punk — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 305109 tokens entrée, 9965 sortie, 15 recherches web.
 
 ## Punk Rider — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html |  |
+| amperage | 15.6 | revendeur | https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html |  |
 | power_watts | 600 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-punk-rider.html |  |
 | max_speed_private_kmh | 40 | revendeur | https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html |  |
 | range_km | 60 | revendeur | https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html |  |
@@ -24,11 +24,11 @@ Coût mesuré : 305109 tokens entrée, 9965 sortie, 15 recherches web.
 | tire_family | pneumatic | revendeur | https://www.glisseurbaine.com/4691-trottinette-electrique-punk-rider-single-moteur.html |  |
 
 ## Punk Rider Pro — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=18.2
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 52 | revendeur | https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html |  |
+| amperage | 18.2 | revendeur | https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html |  |
 | power_watts | 1200 | revendeur | https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html |  |
 | max_speed_private_kmh | 50 | revendeur | https://electrotraveller.com/electric-scooters/punk-rider-pro/?v=08a4415e9d59 |  |
 | range_km | 70 | constructeur | https://punkelectric.eu/products/punk-rider-pro-new |  |

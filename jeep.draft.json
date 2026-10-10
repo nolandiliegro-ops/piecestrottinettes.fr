@@ -6,6 +6,7 @@
         "name": "Jeep Adventurer",
         "slug": "jeep-adventurer",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 40,
         "max_load_kg": 100,
@@ -29,6 +30,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
           "type": "revendeur"
         },
@@ -100,9 +105,7 @@
       "discMissing": [
         "disc_pcd"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -271,6 +274,7 @@
         "name": "Jeep Urban Camou",
         "slug": "jeep-urban-camou",
         "voltage": 48,
+        "amperage": 9.6,
         "power_watts": 500,
         "range_km": 45,
         "max_load_kg": 100,
@@ -295,6 +299,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
           "type": "revendeur"
         },
@@ -370,9 +378,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=9.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

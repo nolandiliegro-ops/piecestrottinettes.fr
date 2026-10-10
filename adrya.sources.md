@@ -1,17 +1,17 @@
 # Extraction Adrya — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 336809 tokens entrée, 9231 sortie, 16 recherches web.
 
 ## Adrya TWAir — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=160 (https://www.mobilityurban.fr/m/adrya-scooter/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html |  |
+| amperage | 10.4 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html |  |
 | power_watts | 500 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html |  |
 | range_km | 40 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html |  |
 | max_load_kg | 100 | revendeur | https://bike-electrique.com/trottinette-electrique-adrya-twair-12-pouces/ |  |

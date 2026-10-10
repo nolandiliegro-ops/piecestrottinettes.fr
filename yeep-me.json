@@ -5,6 +5,7 @@
       "name": "Yeep.me 100a",
       "slug": "yeep-me-100a",
       "voltage": 36,
+      "amperage": 10.4,
       "power_watts": 500,
       "range_km": 40,
       "max_load_kg": 120,

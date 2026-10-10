@@ -5,6 +5,7 @@
       "name": "Micro X21",
       "slug": "micro-x21",
       "voltage": 36,
+      "amperage": 7.5,
       "power_watts": 500,
       "range_km": 30,
       "max_load_kg": 100,

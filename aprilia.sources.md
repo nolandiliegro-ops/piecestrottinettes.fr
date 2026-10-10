@@ -1,17 +1,17 @@
 # Extraction Aprilia — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 285665 tokens entrée, 10480 sortie, 15 recherches web.
 
 ## Aprilia eSR1 — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
+| amperage | 7.8 | revendeur | https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html |  |
 | power_watts | 350 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
 | range_km | 35 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
 | max_load_kg | 100 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |

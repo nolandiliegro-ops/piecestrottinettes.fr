@@ -130,6 +130,7 @@
         "name": "Oxelo MD500E",
         "slug": "oxelo-md500e",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 35,
         "max_load_kg": 100,
@@ -152,6 +153,10 @@
         "voltage": {
           "url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
           "type": "site_test"
+        },
+        "amperage": {
+          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "type": "constructeur"
         },
         "power_watts": {
           "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
@@ -207,9 +212,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

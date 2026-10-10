@@ -1,17 +1,17 @@
 # Extraction E-Twow — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 
 ## E-Twow GT SL — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://shop.e-twow.com/products/gt-sl |  |
+| amperage | 7.8 | constructeur | https://shop.e-twow.com/products/gt-sl |  |
 | power_watts | 700 | revendeur | https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl |  |
 | max_speed_private_kmh | 40 | constructeur | https://shop.e-twow.com/products/gt-sl |  |
 | range_km | 35 | constructeur | https://shop.e-twow.com/products/gt-sl |  |
@@ -27,12 +27,12 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 
 ## E-Twow GT Sport — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter |  |
+| amperage | 10.5 | constructeur | https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter |  |
 | power_watts | 500 | constructeur | https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter |  |
 | max_speed_private_kmh | 40 | revendeur | https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah |  |
 | range_km | 45 | revendeur | https://les-cyclistes-branches.com/produit/e-twow-gts-trottinette-electrique/ |  |
@@ -48,12 +48,12 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 
 ## E-Twow Booster SE — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se |  |
+| amperage | 7.8 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se |  |
 | power_watts | 500 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se |  |
 | max_speed_private_kmh | 30 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se |  |
 | range_km | 30 | revendeur | https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html |  |
@@ -69,12 +69,12 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 
 ## E-Twow GT SE — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
+| amperage | 10.5 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
 | power_watts | 700 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
 | max_speed_private_kmh | 40 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
 | range_km | 50 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |

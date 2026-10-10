@@ -6,6 +6,7 @@
         "name": "Wispeed SUVPILOT 150R",
         "slug": "wispeed-suvpilot-150r",
         "voltage": 36,
+        "amperage": 15.6,
         "power_watts": 500,
         "range_km": 60,
         "max_load_kg": 120,
@@ -25,6 +26,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
           "type": "constructeur"
         },
@@ -74,9 +79,7 @@
         "source_image_urls"
       ],
       "discMissing": [],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -233,6 +236,7 @@
         "name": "Wispeed AIRO V10",
         "slug": "wispeed-airo-v10",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 400,
         "range_km": 40,
         "max_load_kg": 120,
@@ -259,6 +263,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
         },
@@ -332,9 +340,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [

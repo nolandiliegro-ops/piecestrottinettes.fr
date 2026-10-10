@@ -1,12 +1,11 @@
 # Extraction Ducati — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 259628 tokens entrée, 12417 sortie, 16 recherches web.
 
 ## Ducati Pro-I Evo — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=120 (https://monsieurtrottinettes.be/fr/disque-de-frein/937-disque-de-frein-120-mm-ducati-pro-1-evo-plus.html)
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://youvelo.fr/vtt/947-pneu-plein-alveole-85-ducati-pro-1-evo-plus.html)
@@ -14,6 +13,7 @@ Coût mesuré : 259628 tokens entrée, 12417 sortie, 16 recherches web.
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ducati_trotipro1evocl.html |  |
+| amperage | 7.8 | revendeur | https://blog.gyro-phare.com/produit/trottinette-electrique-ducati-pro-i-evo/ |  |
 | power_watts | 350 | constructeur | https://www.ducati.com/gb/en/news/new-pro-i-evo-electric-scooter-with-integrated-app |  |
 | range_km | 25 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ducati_trotipro1evocl.html |  |
 | max_load_kg | 100 | constructeur | https://www.ducatiurbanemobility.fr/wp-content/uploads/2021/09/Ducati_Pro-I_evo_FR_fiche_technique_09_21.pdf |  |

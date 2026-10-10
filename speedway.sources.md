@@ -1,6 +1,6 @@
 # Extraction Speedway — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 
@@ -25,12 +25,12 @@ Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 | brake_type | drum | distributeur | https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf |  |
 
 ## Speedway 5 — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=23.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 60 | revendeur | https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html |  |
+| amperage | 23.4 | revendeur | https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html |  |
 | power_watts | 2000 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-5 |  |
 | max_speed_private_kmh | 65 | revendeur | https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html |  |
 | range_km | 70 | revendeur | https://www.glisseurbaine.com/379-trottinette-electrique-bimoteur-speedway-5-minimotors.html |  |

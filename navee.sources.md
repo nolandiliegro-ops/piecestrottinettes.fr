@@ -1,15 +1,16 @@
 # Extraction Navee — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 
 ## Navee GT5 Max — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8 · amperage=12.75
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 12.75 | constructeur | https://eu.naveetech.com/en-nordic/products/navee-gt5-max |  |
 | power_watts | 700 | constructeur | https://www.naveetech.com/navee-gt5-max/ |  |
 | max_speed_private_kmh | 32 | constructeur | https://www.naveetech.com/navee-gt5-max/ |  |
 | range_km | 90 | constructeur | https://eu.naveetech.com/en-nordic/products/navee-gt5-max |  |
@@ -25,11 +26,12 @@ Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max |  |
 
 ## Navee XT5 Pro — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8 · amperage=12.75
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 12.75 | constructeur | https://eu.naveetech.com/products/navee-xt5-pro |  |
 | power_watts | 700 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html |  |
 | max_speed_private_kmh | 50 | constructeur | https://www.naveetech.com/navee-xt5-pro/ |  |
 | range_km | 75 | constructeur | https://www.naveetech.com/navee-xt5-pro/ |  |
@@ -65,11 +67,12 @@ Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://www.naveetech.com/fr/navee-gt5-pro/ |  |
 
 ## Navee ST5 Pro — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8 · amperage=10.2
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 10.2 | constructeur | https://eu.naveetech.com/products/st5-pro |  |
 | power_watts | 600 | constructeur | https://naveetech.fr/en/products/st5-pro |  |
 | max_speed_private_kmh | 40 | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
 | range_km | 75 | constructeur | https://naveetech.fr/en/products/st5-pro |  |

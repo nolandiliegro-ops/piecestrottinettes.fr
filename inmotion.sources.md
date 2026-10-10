@@ -1,15 +1,15 @@
 # Extraction Inmotion — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 323754 tokens entrée, 12094 sortie, 17 recherches web.
 
 ## Inmotion S1F — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=12.5
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 54 | constructeur | https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html |  |
+| amperage | 12.5 | constructeur | https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html |  |
 | power_watts | 500 | constructeur | https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html |  |
 | max_speed_private_kmh | 40 | constructeur | https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html |  |
 | range_km | 80 | constructeur | https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html |  |
@@ -75,13 +75,13 @@ Coût mesuré : 323754 tokens entrée, 12094 sortie, 17 recherches web.
 
 ## Inmotion Air — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.5
 - Une seule source, NON importé : rim_diameter=6.5 (https://e-watts.fr/produit/pneu-10x2-125-route)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| amperage | 7.8 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
 | power_watts | 350 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
 | max_speed_private_kmh | 30 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
 | range_km | 35 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |

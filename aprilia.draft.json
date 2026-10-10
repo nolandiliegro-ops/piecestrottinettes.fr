@@ -6,6 +6,7 @@
         "name": "Aprilia eSR1",
         "slug": "aprilia-esr1",
         "voltage": 36,
+        "amperage": 7.8,
         "power_watts": 350,
         "range_km": 35,
         "max_load_kg": 100,
@@ -27,6 +28,10 @@
       "sources": {
         "voltage": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html",
           "type": "revendeur"
         },
         "power_watts": {
@@ -83,9 +88,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

@@ -6,6 +6,7 @@
         "name": "iScooter i9 Max",
         "slug": "iscooter-i9-max",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 35,
         "range_km": 40,
@@ -34,6 +35,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.iscooterglobal.com/pages/i9-max",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.iscooterglobal.com/pages/i9-max",
           "type": "constructeur"
         },
@@ -109,9 +114,7 @@
       "discMissing": [
         "disc_pcd"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -282,6 +285,7 @@
         "name": "iScooter i9Ultra",
         "slug": "iscooter-i9ultra",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 35,
         "range_km": 40,
@@ -309,6 +313,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter",
           "type": "constructeur"
         },
@@ -380,9 +388,7 @@
       "discMissing": [
         "disc_pcd"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

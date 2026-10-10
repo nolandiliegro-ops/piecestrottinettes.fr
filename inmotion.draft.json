@@ -6,6 +6,7 @@
         "name": "Inmotion S1F",
         "slug": "inmotion-s1f",
         "voltage": 54,
+        "amperage": 12.5,
         "power_watts": 500,
         "max_speed_private_kmh": 40,
         "range_km": 80,
@@ -32,6 +33,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-3701522001700.html",
           "type": "constructeur"
         },
@@ -101,9 +106,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=12.5"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -815,6 +818,7 @@
         "name": "Inmotion Air",
         "slug": "inmotion-air",
         "voltage": 36,
+        "amperage": 7.8,
         "power_watts": 350,
         "max_speed_private_kmh": 30,
         "range_km": 35,
@@ -836,6 +840,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
           "type": "constructeur"
         },
@@ -894,9 +902,7 @@
         "source_image_urls"
       ],
       "discMissing": [],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6.5"

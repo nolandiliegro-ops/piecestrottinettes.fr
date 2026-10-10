@@ -6,6 +6,7 @@
         "name": "Kugoo G2",
         "slug": "kugoo-g2",
         "voltage": 48,
+        "amperage": 15.6,
         "power_watts": 800,
         "max_speed_private_kmh": 45,
         "range_km": 55,
@@ -36,6 +37,10 @@
       "sources": {
         "voltage": {
           "url": "https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kukirin-officiel.com/products/kukirin-g2-foldable-electric-scooter-800w-motor-48v-15ah-battery-10-inch-tire-45km-h-max-speed-55km-range-touchscreen-display-disc-brake-7-light-system-black",
           "type": "constructeur"
         },
         "power_watts": {
@@ -118,9 +123,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -883,6 +886,7 @@
         "name": "Kugoo G2 Master",
         "slug": "kugoo-g2-master",
         "voltage": 52,
+        "amperage": 20.8,
         "power_watts": 2000,
         "max_speed_private_kmh": 60,
         "range_km": 70,
@@ -914,6 +918,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master",
           "type": "constructeur"
         },
@@ -999,9 +1007,7 @@
       "discMissing": [
         "disc_pcd"
       ],
-      "notInt": [
-        "amperage=20.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

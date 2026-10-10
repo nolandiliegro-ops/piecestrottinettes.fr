@@ -6,6 +6,7 @@
         "name": "Yeep.me 100a start",
         "slug": "yeep-me-100a-start",
         "voltage": 36,
+        "amperage": 7.8,
         "power_watts": 500,
         "range_km": 30,
         "max_load_kg": 120,
@@ -26,6 +27,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html",
           "type": "constructeur"
         },
@@ -83,9 +88,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -244,6 +247,7 @@
         "name": "Yeep.me 100a",
         "slug": "yeep-me-100a",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 120,
@@ -266,6 +270,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.e.leclerc/fp/trottinette-electrique-yeep-me-100a-10-500w-40km-clignotants-connectee-3700293221089",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.e.leclerc/fp/trottinette-electrique-yeep-me-100a-10-500w-40km-clignotants-connectee-3700293221089",
           "type": "revendeur"
         },
@@ -321,9 +329,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

@@ -4,6 +4,7 @@
     {
       "name": "Urbanglide Ride 85 Evo",
       "slug": "urbanglide-ride-85-evo",
+      "amperage": 7.8,
       "power_watts": 250,
       "range_km": 20,
       "max_load_kg": 100,
@@ -29,6 +30,7 @@
       "name": "Urbanglide eCross One",
       "slug": "urbanglide-ecross-one",
       "voltage": 48,
+      "amperage": 10.4,
       "power_watts": 600,
       "range_km": 50,
       "max_load_kg": 120,
@@ -55,6 +57,7 @@
     {
       "name": "Urbanglide 100 Evo",
       "slug": "urbanglide-100-evo",
+      "amperage": 10.4,
       "power_watts": 350,
       "range_km": 25,
       "max_load_kg": 100,

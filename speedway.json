@@ -33,6 +33,7 @@
       "name": "Speedway 5",
       "slug": "speedway-5",
       "voltage": 60,
+      "amperage": 23.4,
       "power_watts": 2000,
       "max_speed_private_kmh": 65,
       "range_km": 70,

@@ -6,6 +6,7 @@
         "name": "Punk Rider",
         "slug": "punk-rider",
         "voltage": 48,
+        "amperage": 15.6,
         "power_watts": 600,
         "max_speed_private_kmh": 40,
         "range_km": 60,
@@ -29,6 +30,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html",
           "type": "revendeur"
         },
@@ -84,9 +89,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -247,6 +250,7 @@
         "name": "Punk Rider Pro",
         "slug": "punk-rider-pro",
         "voltage": 52,
+        "amperage": 18.2,
         "power_watts": 1200,
         "max_speed_private_kmh": 50,
         "range_km": 70,
@@ -273,6 +277,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html",
           "type": "revendeur"
         },
@@ -336,9 +344,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=18.2"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

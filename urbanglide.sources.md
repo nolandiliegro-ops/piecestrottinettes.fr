@@ -1,17 +1,18 @@
 # Extraction Urbanglide — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 
 ## Urbanglide Ride 85 Evo — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6 · amperage=7.8
+- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
 - Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 7.8 | revendeur | https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-urbanglide-ride-85-evo-25-km-/-autonomie-20-km-92809060 |  |
 | power_watts | 250 | revendeur | https://www.boulanger.com/ref/1230668 |  |
 | range_km | 20 | revendeur | https://www.boulanger.com/ref/1230668 |  |
 | max_load_kg | 100 | revendeur | https://www.boulanger.com/ref/1230668 |  |
@@ -25,12 +26,12 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/85-evo/ |  |
 
 ## Urbanglide eCross One — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
+| amperage | 10.4 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | power_watts | 600 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | range_km | 50 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | max_load_kg | 120 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
@@ -45,11 +46,12 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | tire_family | pneumatic | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 
 ## Urbanglide 100 Evo — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6 · amperage=10.4
+- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 10.4 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 | power_watts | 350 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 | range_km | 25 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 | max_load_kg | 100 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
@@ -65,13 +67,14 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 
 ## Urbanglide 85 Evo — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6 · amperage=7.8
+- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
 - Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 7.8 | revendeur | https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268 |  |
 | power_watts | 250 | revendeur | https://www.boulanger.com/ref/1230668 |  |
 | max_speed_private_kmh | 25 | revendeur | https://www.darty.com/nav/achat/ref/MC355620111.html |  |
 | range_km | 20 | revendeur | https://www.boulanger.com/ref/1230668 |  |

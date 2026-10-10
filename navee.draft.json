@@ -5,6 +5,7 @@
       "scooter": {
         "name": "Navee GT5 Max",
         "slug": "navee-gt5-max",
+        "amperage": 12.75,
         "power_watts": 700,
         "max_speed_private_kmh": 32,
         "range_km": 90,
@@ -29,6 +30,10 @@
         "search_terms": "navee gt5 max, pieces navee gt5 max, disque frein navee gt5 max, plaquettes navee gt5 max, pneu navee gt5 max"
       },
       "sources": {
+        "amperage": {
+          "url": "https://eu.naveetech.com/en-nordic/products/navee-gt5-max",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://www.naveetech.com/navee-gt5-max/",
           "type": "constructeur"
@@ -90,8 +95,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=46.8",
-        "amperage=12.75"
+        "voltage=46.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -265,6 +269,7 @@
       "scooter": {
         "name": "Navee XT5 Pro",
         "slug": "navee-xt5-pro",
+        "amperage": 12.75,
         "power_watts": 700,
         "max_speed_private_kmh": 50,
         "range_km": 75,
@@ -288,6 +293,10 @@
         "search_terms": "navee xt5 pro, pieces navee xt5 pro, disque frein navee xt5 pro, plaquettes navee xt5 pro, pneu navee xt5 pro"
       },
       "sources": {
+        "amperage": {
+          "url": "https://eu.naveetech.com/products/navee-xt5-pro",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
           "type": "revendeur"
@@ -349,8 +358,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=46.8",
-        "amperage=12.75"
+        "voltage=46.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -770,6 +778,7 @@
       "scooter": {
         "name": "Navee ST5 Pro",
         "slug": "navee-st5-pro",
+        "amperage": 10.2,
         "power_watts": 600,
         "max_speed_private_kmh": 40,
         "range_km": 75,
@@ -793,6 +802,10 @@
         "search_terms": "navee st5 pro, pieces navee st5 pro, disque frein navee st5 pro, plaquettes navee st5 pro, pneu navee st5 pro"
       },
       "sources": {
+        "amperage": {
+          "url": "https://eu.naveetech.com/products/st5-pro",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://naveetech.fr/en/products/st5-pro",
           "type": "constructeur"
@@ -854,8 +867,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=46.8",
-        "amperage=10.2"
+        "voltage=46.8"
       ],
       "toValidate": [],
       "offVocab": [],

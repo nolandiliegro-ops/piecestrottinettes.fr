@@ -6,6 +6,7 @@
         "name": "Langfeite Coupé",
         "slug": "langfeite-coupe",
         "voltage": 48,
+        "amperage": 15.6,
         "power_watts": 1600,
         "max_speed_private_kmh": 55,
         "range_km": 45,
@@ -29,6 +30,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://langfeite.com/Products/coupe.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://langfeite.com/Products/coupe.html",
           "type": "constructeur"
         },
@@ -84,9 +89,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6",
@@ -262,6 +265,7 @@
         "name": "Langfeite GT2 Mini",
         "slug": "langfeite-gt2-mini",
         "voltage": 52,
+        "amperage": 18.2,
         "power_watts": 2400,
         "max_speed_private_kmh": 60,
         "range_km": 60,
@@ -287,6 +291,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://langfeite.com/Products/GT2mini.html",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://langfeite.com/Products/GT2mini.html",
           "type": "constructeur"
         },
@@ -350,9 +358,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=18.2"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

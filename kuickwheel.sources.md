@@ -1,6 +1,6 @@
 # Extraction Kuickwheel — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
 
@@ -26,12 +26,12 @@ Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
 | tire_section | 10x2.50 | revendeur | https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html | https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2 |
 
 ## Kuickwheel M16 Pro — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://lecyclenantais.fr/produit/kuickwheel-m16-pro/ |  |
+| amperage | 10.4 | revendeur | https://lecyclenantais.fr/produit/kuickwheel-m16-pro/ |  |
 | power_watts | 500 | revendeur | https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-KUICKWHEEL-M16-Pro-36V-10-4-Ah-p596658781 |  |
 | max_speed_private_kmh | 25 | revendeur | https://vepace.com/products/kuickwheel-m16-pro-electric-scooter |  |
 | range_km | 40 | revendeur | https://lecyclenantais.fr/produit/kuickwheel-m16-pro/ |  |

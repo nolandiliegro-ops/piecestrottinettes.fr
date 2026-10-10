@@ -6,6 +6,7 @@
         "name": "Hiboy S2 Pro",
         "slug": "hiboy-s2-pro",
         "voltage": 36,
+        "amperage": 11.6,
         "power_watts": 500,
         "max_speed_private_kmh": 30,
         "range_km": 40,
@@ -32,6 +33,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting",
           "type": "constructeur"
         },
@@ -95,9 +100,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=11.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6.1",

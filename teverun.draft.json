@@ -6,6 +6,7 @@
         "name": "Teverun Fighter Mini Pro V6",
         "slug": "teverun-fighter-mini-pro-v6",
         "voltage": 60,
+        "amperage": 31.8,
         "power_watts": 2000,
         "max_speed_private_kmh": 70,
         "range_km": 100,
@@ -37,6 +38,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026",
           "type": "revendeur"
         },
@@ -122,9 +127,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=31.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -611,6 +614,7 @@
         "name": "Teverun Fighter Mini",
         "slug": "teverun-fighter-mini",
         "voltage": 52,
+        "amperage": 20.8,
         "power_watts": 2000,
         "max_speed_private_kmh": 60,
         "range_km": 60,
@@ -639,6 +643,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter-mini-52v-208ah/",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter-mini-52v-208ah/",
           "type": "revendeur"
         },
@@ -720,9 +728,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=20.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

@@ -1,17 +1,17 @@
 # Extraction Laotie — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 409749 tokens entrée, 12794 sortie, 20 recherches web.
 
 ## Laotie Ti30 — MANQUE
 - Manque : weight_kg, source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=38.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 60 | constructeur | https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html |  |
+| amperage | 38.6 | constructeur | https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html |  |
 | power_watts | 5600 | constructeur | https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html |  |
 | max_speed_private_kmh | 85 | revendeur | https://www.destock-cycle.com/produit/laotie-ti30-landbreaker/ |  |
 | range_km | 140 | constructeur | https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html |  |
@@ -30,13 +30,13 @@ Coût mesuré : 409749 tokens entrée, 12794 sortie, 20 recherches web.
 
 ## Laotie SR10 — MANQUE
 - Manque : weight_kg
-- Valeur à virgule pour une colonne entière, NON importée : amperage=28.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - À valider par Nolan (site de test) : weight_kg=41 (https://trottinelec.fr/laotie-sr10-test-avis/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 60 | site_test | https://promotrott.com/sr10/ |  |
+| amperage | 28.8 | site_test | https://promotrott.com/sr10/ |  |
 | power_watts | 3600 | site_test | https://trottinelec.fr/laotie-sr10-test-avis/ |  |
 | max_speed_private_kmh | 70 | site_test | https://promotrott.com/sr10/ |  |
 | range_km | 100 | constructeur | https://manuals.plus/laotie/sr10-electric-scooter-manual |  |

@@ -5,6 +5,7 @@
       "name": "Inmotion S1F",
       "slug": "inmotion-s1f",
       "voltage": 54,
+      "amperage": 12.5,
       "power_watts": 500,
       "max_speed_private_kmh": 40,
       "range_km": 80,

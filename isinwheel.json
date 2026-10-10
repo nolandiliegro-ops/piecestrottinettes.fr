@@ -35,6 +35,7 @@
       "name": "Isinwheel S9 Pro",
       "slug": "isinwheel-s9-pro",
       "voltage": 36,
+      "amperage": 7.5,
       "power_watts": 350,
       "max_speed_private_kmh": 30,
       "range_km": 30,

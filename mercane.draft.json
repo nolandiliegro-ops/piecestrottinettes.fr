@@ -272,6 +272,7 @@
         "name": "Mercane Transboard",
         "slug": "mercane-transboard",
         "voltage": 48,
+        "amperage": 8.8,
         "power_watts": 500,
         "range_km": 30,
         "max_load_kg": 100,
@@ -292,6 +293,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://alternative.bike/168-mercane-transboard.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://alternative.bike/168-mercane-transboard.html",
           "type": "revendeur"
         },
@@ -341,9 +346,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=8.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

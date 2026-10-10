@@ -6,6 +6,7 @@
         "name": "Halo Knight T107 Pro",
         "slug": "halo-knight-t107-pro",
         "voltage": 60,
+        "amperage": 38.4,
         "power_watts": 6000,
         "max_speed_private_kmh": 95,
         "range_km": 80,
@@ -35,6 +36,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
           "type": "constructeur"
         },
@@ -113,9 +118,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=38.4"
-      ],
+      "notInt": [],
       "toValidate": [
         {
           "key": "weight_kg",
@@ -292,6 +295,7 @@
         "name": "Halo Knight T108 Pro",
         "slug": "halo-knight-t108-pro",
         "voltage": 60,
+        "amperage": 38.4,
         "power_watts": 6000,
         "max_speed_private_kmh": 95,
         "range_km": 80,
@@ -318,6 +322,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
           "type": "constructeur"
         },
@@ -385,9 +393,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=38.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6.5",

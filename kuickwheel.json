@@ -33,6 +33,7 @@
       "name": "Kuickwheel M16 Pro",
       "slug": "kuickwheel-m16-pro",
       "voltage": 36,
+      "amperage": 10.4,
       "power_watts": 500,
       "max_speed_private_kmh": 25,
       "range_km": 40,

@@ -5,6 +5,7 @@
       "name": "Adrya TWAir",
       "slug": "adrya-twair",
       "voltage": 48,
+      "amperage": 10.4,
       "power_watts": 500,
       "range_km": 40,
       "max_load_kg": 100,

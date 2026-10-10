@@ -1,16 +1,16 @@
 # Extraction Engwe — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 
 ## Engwe Y600 — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=18.2
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://fr.engwe.com/products/engwe-y600 |  |
+| amperage | 18.2 | constructeur | https://fr.engwe.com/products/engwe-y600 |  |
 | power_watts | 600 | revendeur | https://www.rueducommerce.fr/p/m24107800044.html |  |
 | max_speed_private_kmh | 45 | revendeur | https://www.rueducommerce.fr/p/m24107800044.html |  |
 | range_km | 70 | constructeur | https://fr.engwe.com/products/engwe-y600 |  |
@@ -27,12 +27,12 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | tire_family | pneumatic | site_test | https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023 |  |
 
 ## Engwe Y600S — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=18.2
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://fr.engwe.com/products/y600-mise-a-niveau |  |
+| amperage | 18.2 | revendeur | https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html |  |
 | power_watts | 600 | revendeur | https://evolt.si/en/products/electric-scooter-engwe-y600s |  |
 | max_speed_private_kmh | 45 | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/engwe-y600s-trottinette/f-1214801-aabwd63484.html |  |
 | range_km | 70 | constructeur | https://fr.engwe.com/products/y600-mise-a-niveau |  |
@@ -48,12 +48,12 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 
 ## Engwe Y1000 — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=22.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 52 | constructeur | https://engwe.com/products/e-scooter-for-adults-y1000 |  |
+| amperage | 22.5 | constructeur | https://engwe.com/products/e-scooter-for-adults-y1000 |  |
 | power_watts | 2400 | constructeur | https://engwe.com/products/e-scooter-for-adults-y1000 |  |
 | max_speed_private_kmh | 60 | constructeur | https://engwe-bikes-eu.com/products/e-scooter-for-adults-y1000 |  |
 | range_km | 100 | constructeur | https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/ |  |
@@ -72,12 +72,12 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | tire_family | solid | constructeur | https://engwe.com/fr/products/produits-e-scooter-pour-adultes-y1000 |  |
 
 ## Engwe Y700 — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=18.2
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y700 |  |
+| amperage | 18.2 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y700 |  |
 | power_watts | 1200 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y700 |  |
 | max_speed_private_kmh | 45 | constructeur | https://engwe-bikes-eu.com/products/e-scooter-for-adults-y700 |  |
 | range_km | 85 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y700 |  |

@@ -1,6 +1,6 @@
 # Extraction Oxelo — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 360246 tokens entrée, 11468 sortie, 20 recherches web.
 
@@ -17,13 +17,13 @@ Coût mesuré : 360246 tokens entrée, 11468 sortie, 20 recherches web.
 
 ## Oxelo MD500E — MANQUE
 - Manque : source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=120 (https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e) · disc_holes=6 (https://e-watts.fr/produit/disque-de-frein-120mm)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | site_test | https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/ |  |
+| amperage | 10.4 | constructeur | https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472 |  |
 | power_watts | 350 | constructeur | https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472 |  |
 | range_km | 35 | constructeur | https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472 |  |
 | max_load_kg | 100 | site_test | https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/ |  |

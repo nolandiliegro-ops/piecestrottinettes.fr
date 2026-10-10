@@ -1,17 +1,17 @@
 # Extraction NIU — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 
 ## NIU KQi3 Pro — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=10.1
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pneu-plein-niu-kqi3-sport-pro-max/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
+| amperage | 10.1 | site_test | https://eridehero.com/niu-kqi3-pro-electric-scooter-review/ |  |
 | power_watts | 350 | constructeur | https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
 | max_speed_private_kmh | 32 | constructeur | https://niucanada.com/products/kqi3-pro-electric-scooter-adults |  |
 | range_km | 50 | constructeur | https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
@@ -31,12 +31,12 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
 
 ## NIU KQi Air — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=9.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1 |  |
+| amperage | 9.4 | site_test | https://eridehero.com/products/niu-kqi-air/ |  |
 | power_watts | 350 | constructeur | https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version |  |
 | max_speed_private_kmh | 32 | constructeur | https://niucanada.com/pages/kqi-air-specifications-2025 |  |
 | range_km | 50 | constructeur | https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version |  |

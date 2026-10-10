@@ -1,16 +1,17 @@
 # Extraction Globber — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
 
 ## Globber E-MOTION 6 — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4 · amperage=2.9
+- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 2.9 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | power_watts | 80 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | max_speed_private_kmh | 10 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | range_km | 10 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
@@ -26,12 +27,13 @@ Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
 
 ## Globber E-MOTION 4 PLUS — MANQUE
 - Manque : weight_kg, brake_type, source_image_urls
-- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4 · amperage=2.6 · range_km=8.5
+- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4 · range_km=8.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : weight_kg=3.95 (https://www.globber.com/product/e-motion-4-plus/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| amperage | 2.6 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
 | power_watts | 80 | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |
 | max_speed_private_kmh | 10 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
 | max_load_kg | 50 | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |

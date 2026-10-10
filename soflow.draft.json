@@ -6,6 +6,7 @@
         "name": "SoFlow S05",
         "slug": "soflow-s05",
         "voltage": 48,
+        "amperage": 7.8,
         "power_watts": 250,
         "range_km": 30,
         "max_load_kg": 120,
@@ -28,6 +29,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
           "type": "revendeur"
         },
@@ -79,9 +84,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=7.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -248,6 +251,7 @@
         "name": "SoFlow SO4 Pro",
         "slug": "soflow-so4-pro",
         "voltage": 48,
+        "amperage": 10.5,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 120,
@@ -272,6 +276,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
           "type": "revendeur"
         },
@@ -331,9 +339,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.5"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

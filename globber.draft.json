@@ -5,6 +5,7 @@
       "scooter": {
         "name": "Globber E-MOTION 6",
         "slug": "globber-e-motion-6",
+        "amperage": 2.9,
         "power_watts": 80,
         "max_speed_private_kmh": 10,
         "range_km": 10,
@@ -27,6 +28,10 @@
         "search_terms": "globber e-motion 6, pieces globber e-motion 6, disque frein globber e-motion 6, plaquettes globber e-motion 6, pneu globber e-motion 6"
       },
       "sources": {
+        "amperage": {
+          "url": "https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf",
           "type": "constructeur"
@@ -86,8 +91,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=14.4",
-        "amperage=2.9"
+        "voltage=14.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -247,6 +251,7 @@
       "scooter": {
         "name": "Globber E-MOTION 4 PLUS",
         "slug": "globber-e-motion-4-plus",
+        "amperage": 2.6,
         "power_watts": 80,
         "max_speed_private_kmh": 10,
         "max_load_kg": 50,
@@ -260,6 +265,10 @@
         "search_terms": "globber e-motion 4 plus, pieces globber e-motion 4 plus, disque frein globber e-motion 4 plus, plaquettes globber e-motion 4 plus, pneu globber e-motion 4 plus"
       },
       "sources": {
+        "amperage": {
+          "url": "https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://www.globber.com/product/e-motion-4-plus/",
           "type": "constructeur"
@@ -293,7 +302,6 @@
       ],
       "notInt": [
         "voltage=14.4",
-        "amperage=2.6",
         "range_km=8.5"
       ],
       "toValidate": [],

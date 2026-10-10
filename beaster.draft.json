@@ -236,6 +236,7 @@
         "name": "Beaster Diablo",
         "slug": "beaster-diablo",
         "voltage": 60,
+        "amperage": 20.8,
         "power_watts": 1000,
         "max_speed_private_kmh": 60,
         "range_km": 65,
@@ -258,6 +259,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
           "type": "revendeur"
         },
@@ -309,9 +314,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=20.8"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

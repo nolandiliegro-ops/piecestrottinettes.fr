@@ -1,6 +1,6 @@
 # Extraction Mercane — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 314941 tokens entrée, 10077 sortie, 16 recherches web.
 
@@ -30,12 +30,12 @@ Coût mesuré : 314941 tokens entrée, 10077 sortie, 16 recherches web.
 
 ## Mercane Transboard — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=8.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://alternative.bike/168-mercane-transboard.html |  |
+| amperage | 8.8 | revendeur | https://alternative.bike/168-mercane-transboard.html |  |
 | power_watts | 500 | revendeur | https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434 |  |
 | range_km | 30 | revendeur | https://alternative.bike/168-mercane-transboard.html |  |
 | max_load_kg | 100 | revendeur | https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434 |  |

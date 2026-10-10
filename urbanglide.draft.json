@@ -5,6 +5,7 @@
       "scooter": {
         "name": "Urbanglide Ride 85 Evo",
         "slug": "urbanglide-ride-85-evo",
+        "amperage": 7.8,
         "power_watts": 250,
         "range_km": 20,
         "max_load_kg": 100,
@@ -27,6 +28,10 @@
         "search_terms": "urbanglide ride 85 evo, pieces urbanglide ride 85 evo, disque frein urbanglide ride 85 evo, plaquettes urbanglide ride 85 evo, pneu urbanglide ride 85 evo"
       },
       "sources": {
+        "amperage": {
+          "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-urbanglide-ride-85-evo-25-km-/-autonomie-20-km-92809060",
+          "type": "revendeur"
+        },
         "power_watts": {
           "url": "https://www.boulanger.com/ref/1230668",
           "type": "revendeur"
@@ -80,8 +85,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=21.6",
-        "amperage=7.8"
+        "voltage=21.6"
       ],
       "toValidate": [],
       "offVocab": [
@@ -258,6 +262,7 @@
         "name": "Urbanglide eCross One",
         "slug": "urbanglide-ecross-one",
         "voltage": 48,
+        "amperage": 10.4,
         "power_watts": 600,
         "range_km": 50,
         "max_load_kg": 120,
@@ -283,6 +288,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://fixwheel.fr/products/urbanglide-ecross-one-master",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://fixwheel.fr/products/urbanglide-ecross-one-master",
           "type": "revendeur"
         },
@@ -342,9 +351,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -504,6 +511,7 @@
       "scooter": {
         "name": "Urbanglide 100 Evo",
         "slug": "urbanglide-100-evo",
+        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 25,
         "max_load_kg": 100,
@@ -527,6 +535,10 @@
         "search_terms": "urbanglide 100 evo, pieces urbanglide 100 evo, disque frein urbanglide 100 evo, plaquettes urbanglide 100 evo, pneu urbanglide 100 evo"
       },
       "sources": {
+        "amperage": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
         "power_watts": {
           "url": "https://urbanglide.com/en/produit/100-evo/",
           "type": "constructeur"
@@ -584,8 +596,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=21.6",
-        "amperage=10.4"
+        "voltage=21.6"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -746,6 +757,7 @@
       "scooter": {
         "name": "Urbanglide 85 Evo",
         "slug": "urbanglide-85-evo",
+        "amperage": 7.8,
         "power_watts": 250,
         "max_speed_private_kmh": 25,
         "range_km": 20,
@@ -766,6 +778,10 @@
         "search_terms": "urbanglide 85 evo, pieces urbanglide 85 evo, disque frein urbanglide 85 evo, plaquettes urbanglide 85 evo, pneu urbanglide 85 evo"
       },
       "sources": {
+        "amperage": {
+          "url": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+          "type": "revendeur"
+        },
         "power_watts": {
           "url": "https://www.boulanger.com/ref/1230668",
           "type": "revendeur"
@@ -825,8 +841,7 @@
         "disc_holes"
       ],
       "notInt": [
-        "voltage=21.6",
-        "amperage=7.8"
+        "voltage=21.6"
       ],
       "toValidate": [],
       "offVocab": [

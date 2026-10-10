@@ -262,6 +262,7 @@
         "name": "Kuickwheel M16 Pro",
         "slug": "kuickwheel-m16-pro",
         "voltage": 36,
+        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 25,
         "range_km": 40,
@@ -287,6 +288,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
           "type": "revendeur"
         },
@@ -350,9 +355,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

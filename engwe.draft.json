@@ -6,6 +6,7 @@
         "name": "Engwe Y600",
         "slug": "engwe-y600",
         "voltage": 48,
+        "amperage": 18.2,
         "power_watts": 600,
         "max_speed_private_kmh": 45,
         "range_km": 70,
@@ -32,6 +33,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://fr.engwe.com/products/engwe-y600",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://fr.engwe.com/products/engwe-y600",
           "type": "constructeur"
         },
@@ -99,9 +104,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=18.2"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -273,6 +276,7 @@
         "name": "Engwe Y600S",
         "slug": "engwe-y600s",
         "voltage": 48,
+        "amperage": 18.2,
         "power_watts": 600,
         "max_speed_private_kmh": 45,
         "range_km": 70,
@@ -299,6 +303,10 @@
         "voltage": {
           "url": "https://fr.engwe.com/products/y600-mise-a-niveau",
           "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+          "type": "revendeur"
         },
         "power_watts": {
           "url": "https://evolt.si/en/products/electric-scooter-engwe-y600s",
@@ -356,9 +364,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=18.2"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -519,6 +525,7 @@
         "name": "Engwe Y1000",
         "slug": "engwe-y1000",
         "voltage": 52,
+        "amperage": 22.5,
         "power_watts": 2400,
         "max_speed_private_kmh": 60,
         "range_km": 100,
@@ -544,6 +551,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://engwe.com/products/e-scooter-for-adults-y1000",
           "type": "constructeur"
         },
@@ -623,9 +634,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=22.5"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -788,6 +797,7 @@
         "name": "Engwe Y700",
         "slug": "engwe-y700",
         "voltage": 48,
+        "amperage": 18.2,
         "power_watts": 1200,
         "max_speed_private_kmh": 45,
         "range_km": 85,
@@ -815,6 +825,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
           "type": "constructeur"
         },
@@ -891,9 +905,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=18.2"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

@@ -6,6 +6,7 @@
         "name": "Adrya TWAir",
         "slug": "adrya-twair",
         "voltage": 48,
+        "amperage": 10.4,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 100,
@@ -29,6 +30,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
+          "type": "revendeur"
+        },
+        "amperage": {
           "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
           "type": "revendeur"
         },
@@ -84,9 +89,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=10.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

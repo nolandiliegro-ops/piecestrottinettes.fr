@@ -1,17 +1,17 @@
 # Extraction Micro — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 302041 tokens entrée, 10813 sortie, 15 recherches web.
 
 ## Micro Merlin II — MANQUE
 - Manque : brake_type
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
+| amperage | 7.8 | revendeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 | power_watts | 500 | constructeur | https://www.micro-mobility.com/en/products/micro-merlin-ii |  |
 | max_speed_private_kmh | 25 | constructeur | https://www.micro-mobility.com/en/products/micro-merlin-ii |  |
 | range_km | 35 | constructeur | https://www.micro-mobility.com/en/products/micro-merlin-ii |  |
@@ -27,12 +27,12 @@ Coût mesuré : 302041 tokens entrée, 10813 sortie, 15 recherches web.
 | tire_family | solid | distributeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 
 ## Micro X21 — PRÊT
-- Valeur à virgule pour une colonne entière, NON importée : amperage=7.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | distributeur | https://boulanger.scene7.com/is/content/Boulanger/7630053544843_f_0 |  |
+| amperage | 7.5 | distributeur | https://boulanger.scene7.com/is/content/Boulanger/7630053544843_f_0 |  |
 | power_watts | 500 | constructeur | https://micro-mobility.fr/trottinette-electrique/1701-trottinette-electrique-micro-x21-7630053544843.html |  |
 | range_km | 30 | constructeur | https://micro-mobility.fr/trottinette-electrique/1701-trottinette-electrique-micro-x21-7630053544843.html |  |
 | max_load_kg | 100 | constructeur | https://micro-mobility.fr/trottinette-electrique/1701-trottinette-electrique-micro-x21-7630053544843.html |  |

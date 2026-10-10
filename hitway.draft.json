@@ -6,6 +6,7 @@
         "name": "Hitway H9",
         "slug": "hitway-h9",
         "voltage": 48,
+        "amperage": 15.6,
         "power_watts": 500,
         "range_km": 70,
         "max_load_kg": 120,
@@ -29,6 +30,10 @@
       "sources": {
         "voltage": {
           "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://b2b.hitway.us/product/hitway-h9-electric-scooter/",
           "type": "constructeur"
         },
         "power_watts": {
@@ -79,9 +84,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6.5",
@@ -263,6 +266,7 @@
         "name": "Hitway H6",
         "slug": "hitway-h6",
         "voltage": 48,
+        "amperage": 15.6,
         "power_watts": 500,
         "max_speed_private_kmh": 45,
         "range_km": 70,
@@ -288,6 +292,10 @@
       },
       "sources": {
         "voltage": {
+          "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
+          "type": "constructeur"
+        },
+        "amperage": {
           "url": "https://b2b.hitway.us/product/hitway-h6-electric-scooters/",
           "type": "constructeur"
         },
@@ -347,9 +355,7 @@
       },
       "missing": [],
       "discMissing": [],
-      "notInt": [
-        "amperage=15.6"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

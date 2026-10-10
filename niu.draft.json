@@ -6,6 +6,7 @@
         "name": "NIU KQi3 Pro",
         "slug": "niu-kqi3-pro",
         "voltage": 48,
+        "amperage": 10.1,
         "power_watts": 350,
         "max_speed_private_kmh": 32,
         "range_km": 50,
@@ -36,6 +37,10 @@
         "voltage": {
           "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
           "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
+          "type": "site_test"
         },
         "power_watts": {
           "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
@@ -114,9 +119,7 @@
       "discMissing": [
         "disc_pcd"
       ],
-      "notInt": [
-        "amperage=10.1"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [
@@ -292,6 +295,7 @@
         "name": "NIU KQi Air",
         "slug": "niu-kqi-air",
         "voltage": 48,
+        "amperage": 9.4,
         "power_watts": 350,
         "max_speed_private_kmh": 32,
         "range_km": 50,
@@ -320,6 +324,10 @@
         "voltage": {
           "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
           "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://eridehero.com/products/niu-kqi-air/",
+          "type": "site_test"
         },
         "power_watts": {
           "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
@@ -385,9 +393,7 @@
         "disc_pcd",
         "disc_holes"
       ],
-      "notInt": [
-        "amperage=9.4"
-      ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

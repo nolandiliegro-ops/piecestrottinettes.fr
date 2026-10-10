@@ -5,6 +5,7 @@
       "name": "Wispeed AIRO V10",
       "slug": "wispeed-airo-v10",
       "voltage": 36,
+      "amperage": 10.4,
       "power_watts": 400,
       "range_km": 40,
       "max_load_kg": 120,
