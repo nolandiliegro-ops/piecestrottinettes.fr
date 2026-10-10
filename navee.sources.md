@@ -1,8 +1,8 @@
 # Extraction Navee — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 429972 tokens entrée, 3304 sortie, 19 recherches web.
+Coût mesuré : 25297 tokens entrée, 357 sortie, 2 recherches web.
 
 ## Navee GT5 Max — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
@@ -25,8 +25,7 @@ Coût mesuré : 429972 tokens entrée, 3304 sortie, 19 recherches web.
 | brake_type | drum_front_disc_rear | constructeur | https://eu.naveetech.com/products/navee-gt5-max |  |
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max |  |
 
-## Navee XT5 Pro — MANQUE
-- Manque : source_image_urls
+## Navee XT5 Pro — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
@@ -42,6 +41,7 @@ Coût mesuré : 429972 tokens entrée, 3304 sortie, 19 recherches web.
 | ip_rating | IPX6 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html |  |
 | foldable | true | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html |  |
 | wheel_inches | 12 | constructeur | https://www.naveetech.com/navee-xt5-pro/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://media.ldlc.com/r1600/ld/products/00/06/35/03/LD0006350343.jpg |  |
 | brake_type | disc_mechanical | revendeur | https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html |  |
 | disc_diameter | 130 | constructeur | https://www.naveetech.com/navee-xt5-pro/ | https://riderguide.com/reviews/navee-xt5-pro-tested-review/ |
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/xt5-pro |  |

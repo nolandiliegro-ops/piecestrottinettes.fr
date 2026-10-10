@@ -289,6 +289,9 @@
         "ip_rating": "IPX6",
         "foldable": true,
         "wheel_inches": 12,
+        "source_image_urls": [
+          "https://media.ldlc.com/r1600/ld/products/00/06/35/03/LD0006350343.jpg"
+        ],
         "brake_type": "disc_mechanical",
         "disc_diameter": 130,
         "tire_family": "pneumatic",
@@ -340,6 +343,10 @@
           "url": "https://www.naveetech.com/navee-xt5-pro/",
           "type": "constructeur"
         },
+        "source_image_urls": {
+          "url": "https://media.ldlc.com/r1600/ld/products/00/06/35/03/LD0006350343.jpg",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html",
           "type": "revendeur"
@@ -354,9 +361,7 @@
           "type": "constructeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_pcd",
         "disc_holes"
@@ -368,7 +373,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -456,10 +461,14 @@
           "product_page_urls": [
             "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
             "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Pro-700-W-Noir/a21965019/w-4?tr=ae97da36a4&quizzi=708939&sn=ec67b3be",
-            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-navee/f-1214801-aabur66944.html"
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-navee/f-1214801-aabur66944.html",
+            "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Pro-700-W-Noir/a21965019/w-4",
+            "https://www.ldlc.com/en/product/PB00744342.html",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-navee/f-1214801-aabur66944.html"
           ],
           "_og_images": [
-            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "https://media.ldlc.com/r1600/ld/products/00/06/35/03/LD0006350343.jpg"
           ]
         },
         "keys": {
@@ -537,6 +546,17 @@
           "rim_diameter": null,
           "tire_family": "pneumatic"
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Pro-700-W-Noir/a21965019/w-4",
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html",
+          "https://www.ldlc.com/en/product/PB00744342.html",
+          "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-navee/f-1214801-aabur66944.html"
+        ],
+        "og": 2
       }
     },
     {

@@ -16,6 +16,9 @@
         "ip_rating": "IP65",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.wispeed.net/7866-large_default/trottinette-suvpilot-150-r.jpg"
+        ],
         "brake_type": "drum",
         "tire_family": "pneumatic",
         "score_offroad": 40,
@@ -66,6 +69,10 @@
           "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
           "type": "constructeur"
         },
+        "source_image_urls": {
+          "url": "https://www.wispeed.net/7866-large_default/trottinette-suvpilot-150-r.jpg",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
           "type": "constructeur"
@@ -75,16 +82,14 @@
           "type": "constructeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -171,9 +176,13 @@
           "product_page_urls": [
             "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
             "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
-            "https://www.boulanger.com/ref/1237602"
+            "https://www.boulanger.com/ref/1237602",
+            "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+            "https://www.carrefour.fr/p/trottinette-electrique-suvpilot-150r-wispeed-3483070027400"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://www.wispeed.net/7866-large_default/trottinette-suvpilot-150-r.jpg"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -229,6 +238,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-tout-chemin-60-km-10-suvpilot-150-r/_/R-p-b36e9fb8-7458-404f-8221-0943362405b9",
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html",
+          "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
+          "https://www.carrefour.fr/p/trottinette-electrique-suvpilot-150r-wispeed-3483070027400"
+        ],
+        "og": 1
       }
     },
     {
@@ -248,6 +268,10 @@
         "tire_size": "10x2.125",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0",
+          "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "rim_diameter": "6",
         "tire_section": "10x2.125",
@@ -308,6 +332,10 @@
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
         },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
@@ -327,9 +355,7 @@
           "type": "constructeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -346,7 +372,7 @@
         }
       ],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {
@@ -437,10 +463,14 @@
           "product_page_urls": [
             "https://www.boulanger.com/ref/1227207",
             "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html",
-            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html"
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v10-36-v/f-1214801-aaboa06061.html",
+            "https://www.fnac.com/Trottinette-electrique-Wispeed-Airo-V10-400-W-Noir/a21971757/w-4",
+            "https://www.wispeed.net/3350-trottinette-airo-v10.html"
           ],
           "_og_images": [
-            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0",
+            "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg"
           ]
         },
         "keys": {
@@ -500,6 +530,17 @@
             "source_type": "revendeur"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.boulanger.com/ref/1227207",
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html",
+          "https://www.fnac.com/Trottinette-electrique-Wispeed-Airo-V10-400-W-Noir/a21971757/w-4",
+          "https://www.wispeed.net/3350-trottinette-airo-v10.html"
+        ],
+        "og": 3
       }
     },
     {

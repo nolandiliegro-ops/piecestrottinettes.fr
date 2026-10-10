@@ -212,7 +212,11 @@
           "product_page_urls": [
             "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
             "https://www.carrefour.fr/p/trottinette-electrique-kukirin-g2-autonomie-55km-vitesse-max-45km-h-800w-48v-15ah-0365595817946",
-            "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette/f-1214801-aacoq18809.html"
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette/f-1214801-aacoq18809.html",
+            "https://www.darty.com/nav/achat/ref/MC346770636.html",
+            "https://www.trottnshop.com/produit/kugoo-g2-pro/",
+            "https://www.electro-auboncoin.com/produit/trottinette-electrique-tout-kugoo-g2-pro-pliant-sans-balais-moteur-800w-portee-max-50-km-hd-affichage-lcd-batterie-13ah-pneu-pneumat/",
+            "https://www.darty.com/nav/achat/ref/MC345122356.html"
           ],
           "_og_images": [
             "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
@@ -288,6 +292,17 @@
           "disc_pcd": 44,
           "disc_holes": 6
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.darty.com/nav/achat/ref/MC346770636.html",
+          "https://www.trottnshop.com/produit/kugoo-g2-pro/",
+          "https://www.electro-auboncoin.com/produit/trottinette-electrique-tout-kugoo-g2-pro-pliant-sans-balais-moteur-800w-portee-max-50-km-hd-affichage-lcd-batterie-13ah-pneu-pneumat/",
+          "https://www.darty.com/nav/achat/ref/MC345122356.html"
+        ],
+        "og": 1
       }
     },
     {

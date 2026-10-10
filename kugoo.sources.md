@@ -1,8 +1,8 @@
 # Extraction Kugoo — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
+Coût mesuré : 24797 tokens entrée, 577 sortie, 2 recherches web.
 
 ## Kugoo G2 — MANQUE
 - Manque : source_image_urls
