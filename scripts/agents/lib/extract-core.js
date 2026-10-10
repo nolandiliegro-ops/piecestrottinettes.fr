@@ -156,7 +156,11 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   const og = (Array.isArray(specs._og_images) ? specs._og_images : []).filter((u) => typeof u === 'string' && /^https?:\/\//i.test(u));
   const direct = (Array.isArray(specs.image_urls) ? specs.image_urls : [])
     .filter((u) => typeof u === 'string' && /^https?:\/\/.+\.(jpe?g|png|webp)(\?|$)/i.test(u));
-  const imgs = [...new Set([...og, ...direct])].slice(0, 4);
+  // 10/10 : un og:image de page générique peut être le logo du site (Cdiscount nLogo.png) → rejeté.
+  // Une image partagée par deux modèles est retirée ailleurs (reassemble --dedupe-images) ; ici : liste noire globale.
+  const banned = new Set(Array.isArray(specs._banned_images) ? specs._banned_images : []);
+  const LOGO = /(logo|favicon|icon|sprite|header|banner|placeholder)/i;
+  const imgs = [...new Set([...og, ...direct])].filter((u) => !LOGO.test(u.split('?')[0]) && !banned.has(u)).slice(0, 4);
   if (imgs.length) { s.source_image_urls = imgs; sources.source_image_urls = { url: imgs[0], type: og.length ? 'og:image fiche produit' : 'image' }; }
 
   // Clés de montage

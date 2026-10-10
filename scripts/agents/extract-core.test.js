@@ -173,3 +173,8 @@ test('10/10 : ampérage entier envoyé tel quel', () => {
   const r = assembleScooter('X', 'Y', { ...specsOk, amperage: S(13) }, keysOk, vocab);
   assert.equal(r.scooter.amperage, 13);
 });
+
+test('10/10 : un og:image qui est un logo de site est rejeté', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, image_urls: [], _og_images: ['https://i2.cdscdn.com/resources/RWD/header/nLogo.png', 'https://media.rdc.fr/p/abc.jpg'] }, keysOk, vocab);
+  assert.deepEqual(r.scooter.source_image_urls, ['https://media.rdc.fr/p/abc.jpg']);
+});
