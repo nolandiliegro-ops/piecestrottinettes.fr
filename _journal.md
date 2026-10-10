@@ -132,3 +132,5 @@
 - 2026-10-10T19:28:08.522Z · Ootd · OK · 1.4 min · 306829 in / 11139 out / 17 rech · +2 prêt (dont 1 sans clé roue) · cumul run 948983 tokens
 - 2026-10-10T19:29:26.501Z · Bogist · OK · 1.3 min · 274244 in / 9881 out / 16 rech · +1 prêt (dont 1 sans clé roue) · cumul run 1233108 tokens
 - 2026-10-10T19:30:35.036Z · Velity · OK · 1.1 min · 258762 in / 8579 out / 15 rech · +2 prêt (dont 2 sans clé roue) · cumul run 1500449 tokens
+- 2026-10-10T20:00:02.152Z · Beaster · PASSE PHOTOS · +1 prêt(s) sur 1 · 2 prêt(s) au total · 0.1 min · 15771 in / 427 out / 1 rech.
+- 2026-10-10T20:00:20.139Z · Mercane · PASSE PHOTOS · +0 prêt(s) sur 1 · 1 prêt(s) au total · 0.3 min · 15558 in / 323 out / 1 rech.

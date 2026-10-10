@@ -1,11 +1,13 @@
 # Extraction Beaster — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe photos claude-opus-5-5.
 
-Coût mesuré : 24424 tokens entrée, 563 sortie, 2 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-## Beaster BS09 — MANQUE
-- Manque : source_image_urls
+Coût mesuré : 15771 tokens entrée, 427 sortie, 1 recherches web.
+
+## Beaster BS09 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 9 pouces (23 cm), pneus gonflables », non exploitable seul)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -19,6 +21,7 @@ Coût mesuré : 24424 tokens entrée, 563 sortie, 2 recherches web.
 | tire_size | 9 pouces (23 cm), pneus gonflables | revendeur | https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/ |  |
 | foldable | true | revendeur | https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869 |  |
 | wheel_inches | 9 | constructeur | http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://images.morele.net/i1064/14076308_0_i1064.jpg |  |
 | brake_type | drum_front_ebs_rear | distributeur | http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf |  |
 | tire_family | pneumatic | revendeur | https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/ |  |
 

@@ -2,6 +2,31 @@
   "brandName": "Beaster",
   "scooters": [
     {
+      "name": "Beaster BS09",
+      "slug": "beaster-bs09",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 250,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 15,
+      "suspension": "Aucune",
+      "tire_size": "9 pouces (23 cm), pneus gonflables",
+      "foldable": true,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "https://images.morele.net/i1064/14076308_0_i1064.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 25,
+      "description": "La Beaster BS09 est une trottinette électrique pliable équipée d'un moteur de 250 W et d'une batterie intégrée 36 V 10 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 9 pouces, avec un frein à tambour à l'avant et un frein E-ABS à l'arrière, et sa vitesse est limitée à 25 km/h (3 modes : 15, 20 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Beaster BS09 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Beaster BS09 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "beaster bs09, pieces beaster bs09, disque frein beaster bs09, plaquettes beaster bs09, pneu beaster bs09"
+    },
+    {
       "name": "Beaster Diablo",
       "slug": "beaster-diablo",
       "voltage": 60,

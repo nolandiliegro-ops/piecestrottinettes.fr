@@ -1,13 +1,14 @@
 # Extraction Mercane — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-opus-5-5.
 
 ⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 34463 tokens entrée, 896 sortie, 3 recherches web.
+Coût mesuré : 15558 tokens entrée, 323 sortie, 1 recherches web.
 
 ## Mercane WideWheel Pro — MANQUE
 - Manque : source_image_urls
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8" x 3,9" (8 pouces, 10 cm de large), pneus pleins remplis de mousse », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Une seule source, NON importé : disc_holes=6 (https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount)
 
