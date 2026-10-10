@@ -300,7 +300,6 @@
         "foldable": true,
         "wheel_inches": 10,
         "source_image_urls": [
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
           "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
         ],
         "brake_type": "disc_mechanical",
@@ -363,7 +362,7 @@
           "type": "constructeur"
         },
         "source_image_urls": {
-          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "url": "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp",
           "type": "og:image fiche produit"
         },
         "brake_type": {

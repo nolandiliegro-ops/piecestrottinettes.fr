@@ -1,6 +1,6 @@
 # Extraction Ducati — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 343986 tokens entrée, 14731 sortie, 18 recherches web.
 

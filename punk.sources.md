@@ -1,10 +1,11 @@
 # Extraction Punk — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 305109 tokens entrée, 9965 sortie, 15 recherches web.
 
-## Punk Rider — PRÊT
+## Punk Rider — MANQUE
+- Manque : source_image_urls
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -19,7 +20,6 @@ Coût mesuré : 305109 tokens entrée, 9965 sortie, 15 recherches web.
 | ip_rating | IPX6 | revendeur | https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-punk-rider.html |  |
 | tire_size | 10x3 tubeless | revendeur | https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-punk-rider.html |  |
 | wheel_inches | 10 | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-punk-rider-simple-moteur |  |
-| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656 |  |
 | brake_type | drum | revendeur | https://www.glisseurbaine.com/4691-trottinette-electrique-punk-rider-single-moteur.html |  |
 | tire_family | pneumatic | revendeur | https://www.glisseurbaine.com/4691-trottinette-electrique-punk-rider-single-moteur.html |  |
 
@@ -40,6 +40,6 @@ Coût mesuré : 305109 tokens entrée, 9965 sortie, 15 recherches web.
 | tire_size | 10 x 3 pouces, tubeless auto-réparant | revendeur | https://electrotraveller.com/electric-scooters/punk-rider-pro/?v=08a4415e9d59 |  |
 | foldable | true | site_test | https://eridehero.com/punk-rider-pro-review/ |  |
 | wheel_inches | 10 | revendeur | https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538 |  |
 | brake_type | drum | revendeur | https://www.glisseurbaine.com/4692-trottinette-electrique-punk-rider-pro-double-moteur.html |  |
 | tire_family | pneumatic | revendeur | https://alternative.bike/862-punk-rider-pro.html |  |

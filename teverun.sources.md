@@ -1,6 +1,6 @@
 # Extraction Teverun — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 
@@ -22,7 +22,7 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | tire_size | 10x3.0 tubeless | revendeur | https://www.renovomotors.com/products/teverun-fighter-mini-2026-fighter-mini-pro-2026-electric-scooter |  |
 | foldable | true | revendeur | https://www.wilsonebikes.com/products/teverun-fighter-mini-pro-2026-2-0-system |  |
 | wheel_inches | 10 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
-| source_image_urls | 3 photo(s) | og:image fiche produit | https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BTEVERUNMINIPROBOSCH60V31A2026_5D_20TROTTINETTE_20ELECTRIQUE_20TEVERUN_20FIGHTER_20MINI_20PRO_2060V_2031_2C8AH_202026-scaled.jpg |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BTEVERUNMINIPROBOSCH60V31A2026_5D_20TROTTINETTE_20ELECTRIQUE_20TEVERUN_20FIGHTER_20MINI_20PRO_2060V_2031_2C8AH_202026-scaled.jpg |  |
 | brake_type | disc_hydraulic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro |  |
 | disc_diameter | 140 | revendeur | https://www.gtsshop.fr/en/brake-disc/5835-brake-disc-140mm-teverun-fighter-mini-10-and-10.html | https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59 |
 | rim_diameter | 6 | revendeur | https://trott-en-provence.fr/pneu-trottinette-teverun-fighter-mini-pro/ | https://fastride.fr/en/teverun-fighter-mini/1398-pneu-10x300-6-cst-tubeless-.html |
@@ -100,7 +100,7 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | tire_size | 10x3 tubeless | revendeur | https://www.gyro-phare.com/1627-trottinette-electrique-teverun-fighter-mini-pro-60v-25ah.html |  |
 | foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro |  |
 | wheel_inches | 10 | constructeur | https://www.teverun.fr/teverun-fighter-mini-pro/ |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Teverun_fighter_mini_pro_2025.jpg?v=1755223144 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.trottnscoot.com/wp-content/uploads/2024/05/trottinette_electrique_Teverun_fighter_mini_pro-300x300.webp |  |
 | brake_type | disc_hydraulic | constructeur | https://teverun.com/product/fighter-mini-pro/ |  |
 | disc_diameter | 140 | revendeur | https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-mini/ | https://pieces2trott.com/teverun-fighter-mini-disque-de-frein-140mm |
 | rim_diameter | 6 | constructeur | https://teverun-europe.com/fighter-mini/ | https://superscoots.ca/product/tuovt-80-65-6-tire/ |

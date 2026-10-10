@@ -289,9 +289,6 @@
         "ip_rating": "IPX6",
         "foldable": true,
         "wheel_inches": 12,
-        "source_image_urls": [
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
-        ],
         "brake_type": "disc_mechanical",
         "disc_diameter": 130,
         "tire_family": "pneumatic",
@@ -343,10 +340,6 @@
           "url": "https://www.naveetech.com/navee-xt5-pro/",
           "type": "constructeur"
         },
-        "source_image_urls": {
-          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
-          "type": "og:image fiche produit"
-        },
         "brake_type": {
           "url": "https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html",
           "type": "revendeur"
@@ -361,7 +354,9 @@
           "type": "constructeur"
         }
       },
-      "missing": [],
+      "missing": [
+        "source_image_urls"
+      ],
       "discMissing": [
         "disc_pcd",
         "disc_holes"
@@ -373,7 +368,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": true,
+      "ready": false,
       "raw": {
         "specs": {
           "weight_kg": {

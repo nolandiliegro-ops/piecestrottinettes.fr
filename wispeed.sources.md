@@ -1,6 +1,6 @@
 # Extraction Wispeed — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 286290 tokens entrée, 9682 sortie, 17 recherches web.
 
@@ -22,7 +22,8 @@ Coût mesuré : 286290 tokens entrée, 9682 sortie, 17 recherches web.
 | brake_type | drum | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 
-## Wispeed AIRO V10 — PRÊT
+## Wispeed AIRO V10 — MANQUE
+- Manque : source_image_urls
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
 
@@ -40,7 +41,6 @@ Coût mesuré : 286290 tokens entrée, 9682 sortie, 17 recherches web.
 | tire_size | 10x2.125 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 |  |
 | foldable | true | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 | wheel_inches | 10 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
-| source_image_urls | 1 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
 | brake_type | ebs_front_disc_rear | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 | rim_diameter | 6 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 | https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/ |
 | tire_section | 10x2.125 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 | https://trott-en-provence.fr/pneu-wispeed-airo-v10/ |

@@ -16,7 +16,6 @@
       "foldable": true,
       "wheel_inches": 10,
       "source_image_urls": [
-        "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
         "http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767"
       ],
       "brake_type": "disc_unknown_actuation",
@@ -43,7 +42,6 @@
       "foldable": true,
       "wheel_inches": 8.5,
       "source_image_urls": [
-        "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
         "http://moovrider.com/cdn/shop/files/91989360-hitway-h6-trottinette-lectrique-8-5pc_1.avif?crop=center&height=1200&v=1765995641&width=1200"
       ],
       "brake_type": "drum",

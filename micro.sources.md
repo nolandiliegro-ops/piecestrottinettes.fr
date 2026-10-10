@@ -1,6 +1,6 @@
 # Extraction Micro — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 315825 tokens entrée, 11302 sortie, 16 recherches web.
 

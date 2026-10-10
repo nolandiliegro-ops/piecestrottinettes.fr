@@ -1,6 +1,6 @@
 # Extraction Hiboy — 2026-10-10
 
-**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 248644 tokens entrée, 5252 sortie, 11 recherches web.
 

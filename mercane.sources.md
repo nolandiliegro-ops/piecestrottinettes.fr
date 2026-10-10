@@ -1,6 +1,6 @@
 # Extraction Mercane — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**0 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 23821 tokens entrée, 335 sortie, 2 recherches web.
 

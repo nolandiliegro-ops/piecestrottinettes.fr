@@ -248,9 +248,6 @@
         "tire_size": "10x2.125",
         "foldable": true,
         "wheel_inches": 10,
-        "source_image_urls": [
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
-        ],
         "brake_type": "ebs_front_disc_rear",
         "rim_diameter": "6",
         "tire_section": "10x2.125",
@@ -311,10 +308,6 @@
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
         },
-        "source_image_urls": {
-          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
-          "type": "og:image fiche produit"
-        },
         "brake_type": {
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
@@ -334,7 +327,9 @@
           "type": "constructeur"
         }
       },
-      "missing": [],
+      "missing": [
+        "source_image_urls"
+      ],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -351,7 +346,7 @@
         }
       ],
       "unconfirmed": [],
-      "ready": true,
+      "ready": false,
       "raw": {
         "specs": {
           "voltage": {

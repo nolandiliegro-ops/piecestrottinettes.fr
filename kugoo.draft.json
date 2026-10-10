@@ -18,9 +18,6 @@
         "tire_size": "10 pouces tubeless tout-terrain",
         "foldable": true,
         "wheel_inches": 10,
-        "source_image_urls": [
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
-        ],
         "brake_type": "disc_unknown_actuation",
         "disc_diameter": 140,
         "disc_pcd": 44,
@@ -84,10 +81,6 @@
           "url": "https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter",
           "type": "constructeur"
         },
-        "source_image_urls": {
-          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
-          "type": "og:image fiche produit"
-        },
         "brake_type": {
           "url": "https://www.trotti-electrique.com/articles/G2-pro",
           "type": "site_test"
@@ -121,14 +114,16 @@
           "type": "revendeur"
         }
       },
-      "missing": [],
+      "missing": [
+        "source_image_urls"
+      ],
       "discMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": true,
+      "ready": false,
       "raw": {
         "specs": {
           "weight_kg": {

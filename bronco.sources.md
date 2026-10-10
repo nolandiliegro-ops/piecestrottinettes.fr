@@ -1,6 +1,6 @@
 # Extraction Bronco — 2026-10-10
 
-**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 256555 tokens entrée, 4479 sortie, 12 recherches web.
 

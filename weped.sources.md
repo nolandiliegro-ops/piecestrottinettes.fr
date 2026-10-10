@@ -1,6 +1,6 @@
 # Extraction Weped — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 280342 tokens entrée, 10945 sortie, 18 recherches web.
 

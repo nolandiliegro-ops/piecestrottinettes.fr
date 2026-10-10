@@ -29,32 +29,6 @@
       "search_terms": "navee gt5 max, pieces navee gt5 max, disque frein navee gt5 max, plaquettes navee gt5 max, pneu navee gt5 max"
     },
     {
-      "name": "Navee XT5 Pro",
-      "slug": "navee-xt5-pro",
-      "amperage": 12.75,
-      "power_watts": 700,
-      "max_speed_private_kmh": 50,
-      "range_km": 75,
-      "max_load_kg": 150,
-      "max_speed_kmh": 25,
-      "weight_kg": 34.8,
-      "suspension": "Avant et arrière, système Damping Arm (bras amortisseur à ressort)",
-      "ip_rating": "IPX6",
-      "foldable": true,
-      "wheel_inches": 12,
-      "source_image_urls": [
-        "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
-      ],
-      "brake_type": "disc_mechanical",
-      "disc_diameter": 130,
-      "tire_family": "pneumatic",
-      "score_offroad": 50,
-      "description": "La Navee XT5 Pro est une trottinette électrique tout-terrain à moteur arrière de 700 W nominal (2200 W en pointe), alimentée par une batterie 46,8 V 12,75 Ah (596,7 Wh) pour jusqu'à 75 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 12 pouces, avec suspension avant et arrière Damping Arm et double frein à disque + frein électronique EABS. Sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
-      "meta_title": "Navee XT5 Pro - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Navee XT5 Pro : disque de frein 130 mm, plaquettes. Compatibilité vérifiée, livraison rapide.",
-      "search_terms": "navee xt5 pro, pieces navee xt5 pro, disque frein navee xt5 pro, plaquettes navee xt5 pro, pneu navee xt5 pro"
-    },
-    {
       "name": "Navee GT5 Pro",
       "slug": "navee-gt5-pro",
       "amperage": 12,

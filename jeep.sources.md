@@ -1,6 +1,6 @@
 # Extraction Jeep — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 48953 tokens entrée, 729 sortie, 4 recherches web.
 
@@ -46,7 +46,7 @@ Coût mesuré : 48953 tokens entrée, 729 sortie, 4 recherches web.
 | tire_size | 10x2.5-6.5 tubeless | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket |  |
 | foldable | true | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
 | wheel_inches | 10 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://www.electrodepot.fr/media/catalog/product/P967725.jpg |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://cdn.auchan.fr/media/7e79c6bc-a123-426f-8bb9-65c31cf87320_0x0/B2CD/?width=2048&height=2048&fit=pad |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.autobacs.fr/trottinette-electrique-jeep-2xe-urban-camou.html |  |
 | disc_diameter | 120 | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket | https://shop.happytec.it/fr/shop/ricambi-per-monopattini-elettrici/ricambi-per-tipo-monopattini-elettrici/freni-per-monopattino/dischi-per-monopattino/disco-freno-originale-di-ricambio-per-monopattino-ducati-pro-iii/ |
 | rim_diameter | 6.5 | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/jeep-ricambi-e-scooter/pneumatico-tubeless-originale-con-valvola-per-monopattino-jeep-2xe-adventurer-jeep-2xe-camou-off-road/ |

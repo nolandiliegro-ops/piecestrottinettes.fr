@@ -1,6 +1,6 @@
 # Extraction Hitway — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 
@@ -21,7 +21,7 @@ Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 | ip_rating | IP54 | constructeur | https://b2b.hitway.us/product/hitway-h9-electric-scooter/ |  |
 | foldable | true | constructeur | https://b2b.hitway.us/product/hitway-h9-electric-scooter/ |  |
 | wheel_inches | 10 | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767 |  |
 | brake_type | disc_unknown_actuation | constructeur | https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 
 ## Hitway H6 — PRÊT
@@ -40,6 +40,6 @@ Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 | tire_size | Pneu gonflable 8,5 pouces | revendeur | https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h6-trottinette-electrique-85pc-91989360 |  |
 | foldable | true | constructeur | https://b2b.hitway.us/product/hitway-h6-electric-scooters/ |  |
 | wheel_inches | 8.5 | constructeur | https://b2b.hitway.us/product/hitway-h6-electric-scooters/ |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://moovrider.com/cdn/shop/files/91989360-hitway-h6-trottinette-lectrique-8-5pc_1.avif?crop=center&height=1200&v=1765995641&width=1200 |  |
 | brake_type | drum | revendeur | https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway |  |
 | tire_family | pneumatic | revendeur | https://moovrider.com/products/hitway-h6-trottinette-electrique-hitway |  |

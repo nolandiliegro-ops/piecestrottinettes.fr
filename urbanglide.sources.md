@@ -1,6 +1,6 @@
 # Extraction Urbanglide — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 
@@ -21,7 +21,7 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | ip_rating | IPX5 | revendeur | https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-urbanglide-ride-85-evo-25-km-/-autonomie-20-km-92809060 |  |
 | foldable | true | revendeur | https://www.boulanger.com/ref/1230668 |  |
 | wheel_inches | 8.5 | revendeur | https://www.boulanger.com/ref/1230668 |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0 |  |
 | brake_type | disc_mechanical | distributeur | https://www.decathlon.fr/p/mp/urbanglide/urbanglide-85-evo-trottinette-electrique-pliable-pneus-8-5-frein-disque-arri/_/R-p-467d9358-8dbf-4f35-84d5-9838f0397779 |  |
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/85-evo/ |  |
 
@@ -41,7 +41,7 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | ip_rating | IPX5 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | foldable | true | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | wheel_inches | 10 | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
-| source_image_urls | 3 photo(s) | og:image fiche produit | http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737 |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737 |  |
 | brake_type | disc_unknown_actuation | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | tire_family | pneumatic | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 

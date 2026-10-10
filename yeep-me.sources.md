@@ -1,6 +1,6 @@
 # Extraction Yeep.me — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 67745 tokens entrée, 1210 sortie, 6 recherches web.
 

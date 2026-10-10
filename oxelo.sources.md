@@ -1,6 +1,6 @@
 # Extraction Oxelo — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 50610 tokens entrée, 467 sortie, 3 recherches web.
 

@@ -1,6 +1,6 @@
 # Extraction Halo Knight — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 281097 tokens entrée, 11886 sortie, 15 recherches web.
 

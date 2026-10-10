@@ -17,9 +17,6 @@
         "ip_rating": "IPX6",
         "tire_size": "10x3 tubeless",
         "wheel_inches": 10,
-        "source_image_urls": [
-          "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
-        ],
         "brake_type": "drum",
         "tire_family": "pneumatic",
         "score_offroad": 40,
@@ -74,10 +71,6 @@
           "url": "https://www.eleqtron.fr/products/trottinette-electrique-punk-rider-simple-moteur",
           "type": "revendeur"
         },
-        "source_image_urls": {
-          "url": "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656",
-          "type": "og:image fiche produit"
-        },
         "brake_type": {
           "url": "https://www.glisseurbaine.com/4691-trottinette-electrique-punk-rider-single-moteur.html",
           "type": "revendeur"
@@ -87,14 +80,16 @@
           "type": "revendeur"
         }
       },
-      "missing": [],
+      "missing": [
+        "source_image_urls"
+      ],
       "discMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": true,
+      "ready": false,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -264,8 +259,7 @@
         "foldable": true,
         "wheel_inches": 10,
         "source_image_urls": [
-          "https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538",
-          "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
+          "https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538"
         ],
         "brake_type": "drum",
         "tire_family": "pneumatic",

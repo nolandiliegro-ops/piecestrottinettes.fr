@@ -1,10 +1,11 @@
 # Extraction Kugoo — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 
-## Kugoo G2 — PRÊT
+## Kugoo G2 — MANQUE
+- Manque : source_image_urls
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -20,7 +21,6 @@ Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 | tire_size | 10 pouces tubeless tout-terrain | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
 | foldable | true | revendeur | https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4 |  |
 | wheel_inches | 10 | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
-| source_image_urls | 1 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
 | brake_type | disc_unknown_actuation | site_test | https://www.trotti-electrique.com/articles/G2-pro |  |
 | disc_diameter | 140 | revendeur | https://monsieurtrottinettes.be/fr/disque-de-frein/668-disque-de-frein-140mm-kugoo-g2-pro-5430003484913.html | https://voltnation.fr/fr/products/frein-a-disque-kugoo-g2-pro-original-oem-3593 |
 | disc_pcd | 44 | revendeur | https://www.xodbrakes.com/blogs/news/kukirin-g2-g4-xod-hydraulic-brake-upgrade-guide | https://www.wattiz.fr/fr/disques-de-frein/34095-disque-de-frein-140-mm-3760351012202.html |

@@ -18,7 +18,6 @@
         "foldable": true,
         "wheel_inches": 10,
         "source_image_urls": [
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
           "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
         ],
         "brake_type": "ebs_front_disc_rear",
@@ -76,7 +75,7 @@
           "type": "revendeur"
         },
         "source_image_urls": {
-          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "url": "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg",
           "type": "og:image fiche produit"
         },
         "brake_type": {
@@ -551,9 +550,6 @@
         "tire_size": "8,5 pouces à chambre à air (avant et arrière)",
         "foldable": true,
         "wheel_inches": 8.5,
-        "source_image_urls": [
-          "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
-        ],
         "brake_type": "ebs_front_disc_rear",
         "rim_diameter": "6.1",
         "tire_section": "8.5x2",
@@ -614,10 +610,6 @@
           "url": "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz",
           "type": "revendeur"
         },
-        "source_image_urls": {
-          "url": "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
-          "type": "og:image fiche produit"
-        },
         "brake_type": {
           "url": "https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811",
           "type": "revendeur"
@@ -637,7 +629,9 @@
           "type": "revendeur"
         }
       },
-      "missing": [],
+      "missing": [
+        "source_image_urls"
+      ],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -648,7 +642,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": true,
+      "ready": false,
       "raw": {
         "specs": {
           "weight_kg": {

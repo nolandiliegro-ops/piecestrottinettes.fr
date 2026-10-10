@@ -2,32 +2,6 @@
   "brandName": "Punk",
   "scooters": [
     {
-      "name": "Punk Rider",
-      "slug": "punk-rider",
-      "voltage": 48,
-      "amperage": 15.6,
-      "power_watts": 600,
-      "max_speed_private_kmh": 40,
-      "range_km": 60,
-      "max_load_kg": 120,
-      "max_speed_kmh": 25,
-      "weight_kg": 31,
-      "suspension": "Avant et arrière",
-      "ip_rating": "IPX6",
-      "tire_size": "10x3 tubeless",
-      "wheel_inches": 10,
-      "source_image_urls": [
-        "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
-      ],
-      "brake_type": "drum",
-      "tire_family": "pneumatic",
-      "score_offroad": 40,
-      "description": "La Punk Rider (version simple moteur) est équipée d'un moteur brushless de 600 W (1200 W en crête) alimenté par une batterie 48 V 15,6 Ah, avec une autonomie annoncée jusqu'à 60 km en mode ECO. Elle roule sur des pneus tubeless 10 pouces, dispose de suspensions avant et arrière et de freins à tambour avec frein électrique. Sa vitesse est bridée à 25 km/h, avec jusqu'à 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
-      "meta_title": "Punk Rider - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Punk Rider : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
-      "search_terms": "punk rider, pieces punk rider, disque frein punk rider, plaquettes punk rider, pneu punk rider"
-    },
-    {
       "name": "Punk Rider Pro",
       "slug": "punk-rider-pro",
       "voltage": 52,
@@ -45,8 +19,7 @@
       "foldable": true,
       "wheel_inches": 10,
       "source_image_urls": [
-        "https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538",
-        "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
+        "https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538"
       ],
       "brake_type": "drum",
       "tire_family": "pneumatic",

@@ -17,7 +17,6 @@
       "foldable": true,
       "wheel_inches": 10,
       "source_image_urls": [
-        "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
         "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
       ],
       "brake_type": "ebs_front_disc_rear",
@@ -54,35 +53,6 @@
       "meta_title": "Aprilia eSR2 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Aprilia eSR2 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "aprilia esr2, pieces aprilia esr2, disque frein aprilia esr2, plaquettes aprilia esr2, pneu aprilia esr2"
-    },
-    {
-      "name": "Aprilia eSRZ",
-      "slug": "aprilia-esrz",
-      "voltage": 36,
-      "amperage": 6,
-      "power_watts": 300,
-      "range_km": 20,
-      "max_load_kg": 100,
-      "year": 2023,
-      "max_speed_kmh": 25,
-      "weight_kg": 14,
-      "suspension": "Aucune",
-      "ip_rating": "IPX5",
-      "tire_size": "8,5 pouces à chambre à air (avant et arrière)",
-      "foldable": true,
-      "wheel_inches": 8.5,
-      "source_image_urls": [
-        "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
-      ],
-      "brake_type": "ebs_front_disc_rear",
-      "rim_diameter": "6.1",
-      "tire_section": "8.5x2",
-      "tire_family": "pneumatic",
-      "score_offroad": 18,
-      "description": "L'Aprilia eSRZ est une trottinette électrique pliable équipée d'un moteur brushless de 300 W (450 W en pointe) placé dans la roue avant et d'une batterie 36 V 6 Ah (216 Wh) offrant jusqu'à 20 km d'autonomie. Elle roule sur des pneus de 8,5 pouces à chambre à air, freine avec un frein électronique à l'avant et un frein à disque à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
-      "meta_title": "Aprilia eSRZ - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Aprilia eSRZ : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
-      "search_terms": "aprilia esrz, pieces aprilia esrz, disque frein aprilia esrz, plaquettes aprilia esrz, pneu aprilia esrz"
     },
     {
       "name": "Aprilia eSR2 Evo",

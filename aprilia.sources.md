@@ -1,6 +1,6 @@
 # Extraction Aprilia — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
 
@@ -20,7 +20,7 @@ Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
 | tire_size | 10" tubeless (section non communiquée) | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
 | foldable | true | revendeur | https://www.rueducommerce.fr/p/r24060027939.html |  |
 | wheel_inches | 10 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
-| source_image_urls | 2 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php |  |
 | tire_family | pneumatic | revendeur | https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/ |  |
 
@@ -45,7 +45,8 @@ Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
 | tire_section | 10x2.125 | revendeur | https://monsieurtrottinettes.be/fr/pneus/502-pneu-10x2125-aprilia-esr2-7427255405610.html | https://escootervision.eu/fr-eu/products/aprilia-esr2-reifen-set-mit-schlauch-yuanxing-10x2-125 |
 | tire_family | pneumatic | distributeur | https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/ |  |
 
-## Aprilia eSRZ — PRÊT
+## Aprilia eSRZ — MANQUE
+- Manque : source_image_urls
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -62,7 +63,6 @@ Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
 | tire_size | 8,5 pouces à chambre à air (avant et arrière) | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
 | foldable | true | revendeur | https://www.ravate.com/high-tech/mobilite-urbaine/mobilite-urbaine/trottinette-electrique/85393888-trottinette-electrique-aprilia-esrz-8052679454785.html |  |
 | wheel_inches | 8.5 | revendeur | https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz |  |
-| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.electrodepot.fr/media/catalog/product/P967725.jpg |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
 | rim_diameter | 6.1 | revendeur | https://monsieurtrottinettes.be/en/tires/797-85x2-tire-50-75-61-aprilia-esrz-7427251491860.html | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/camera-daria-85-pollici-originale-per-monopattino-aprilia-esrz/ |
 | tire_section | 8.5x2 | revendeur | https://monsieurtrottinettes.be/en/tires/797-85x2-tire-50-75-61-aprilia-esrz-7427251491860.html | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/pneumatico-originale-di-ricambio-per-monopattino-aprilia-esrz-per-ruota-85-pollici-8-1-2-x-2-50-75-6-1/ |

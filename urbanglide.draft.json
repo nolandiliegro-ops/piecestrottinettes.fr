@@ -16,8 +16,7 @@
         "foldable": true,
         "wheel_inches": 8.5,
         "source_image_urls": [
-          "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0",
-          "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg"
+          "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0"
         ],
         "brake_type": "disc_mechanical",
         "tire_family": "pneumatic",
@@ -275,8 +274,7 @@
         "wheel_inches": 10,
         "source_image_urls": [
           "http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737",
-          "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_0",
-          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_0"
         ],
         "brake_type": "disc_unknown_actuation",
         "tire_family": "pneumatic",
