@@ -5,7 +5,6 @@
       "name": "Beaster Diablo",
       "slug": "beaster-diablo",
       "voltage": 60,
-      "amperage": 20.8,
       "power_watts": 1000,
       "max_speed_private_kmh": 60,
       "range_km": 65,
@@ -14,7 +13,7 @@
       "weight_kg": 30,
       "tire_size": "10 x 3 pouces (25,4 x 7,62 cm)",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://www.erasportas.lt/image/cache/catalog/feed_55/2473703-01_BSDIABLOY-600x315.jpg",
         "https://media.powersport.lt/8936162-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg"

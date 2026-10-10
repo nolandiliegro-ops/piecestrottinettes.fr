@@ -1,6 +1,6 @@
 # Extraction Beaster — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 382940 tokens entrée, 10425 sortie, 18 recherches web.
 
@@ -23,12 +23,12 @@ Coût mesuré : 382940 tokens entrée, 10425 sortie, 18 recherches web.
 | tire_family | pneumatic | revendeur | https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/ |  |
 
 ## Beaster Diablo — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=20.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 60 | revendeur | https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/ |  |
-| amperage | 20.8 | revendeur | https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/ |  |
 | power_watts | 1000 | revendeur | https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/ |  |
 | max_speed_private_kmh | 60 | revendeur | https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah |  |
 | range_km | 65 | revendeur | https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/ |  |

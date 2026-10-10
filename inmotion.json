@@ -5,7 +5,6 @@
       "name": "Inmotion S1F",
       "slug": "inmotion-s1f",
       "voltage": 54,
-      "amperage": 12.5,
       "power_watts": 500,
       "max_speed_private_kmh": 40,
       "range_km": 80,
@@ -16,7 +15,7 @@
       "ip_rating": "IP55",
       "tire_size": "10x2.50-6.5 tubeless",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://www.inmotion-france.fr/1983-large_default/inmotion-s1f-electric-scooter-54-v-125-ah.jpg"
       ],
@@ -45,7 +44,7 @@
       "ip_rating": "IP55",
       "tire_size": "10 pouces (avant pneumatique, arrière plein/tubeless)",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg",
         "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_inmotion_air_pro_pas_cher-448814.jpg?v=1750677331"
@@ -74,7 +73,7 @@
       "ip_rating": "IPX6",
       "tire_size": "10x2.125-6.5",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://www.eleqtron.fr/cdn/shop/products/208.50.png?v=1669966078"
       ],

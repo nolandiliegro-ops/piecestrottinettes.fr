@@ -1,6 +1,6 @@
 # Extraction Isinwheel — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 375821 tokens entrée, 13579 sortie, 20 recherches web.
 
@@ -29,12 +29,12 @@ Coût mesuré : 375821 tokens entrée, 13579 sortie, 20 recherches web.
 | tire_family | pneumatic | constructeur | https://www.isinwheel.com/blogs/news/gt2-electric-scooter |  |
 
 ## Isinwheel S9 Pro — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=7.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://www.rueducommerce.fr/p/m25048562094.html |  |
-| amperage | 7.5 | revendeur | https://www.rueducommerce.fr/p/m25048562094.html |  |
 | power_watts | 350 | constructeur | https://www.isinwheel.com/pages/s9-pro-specification |  |
 | max_speed_private_kmh | 30 | constructeur | https://www.isinwheel.com/pages/s9-pro-specification |  |
 | range_km | 30 | constructeur | https://www.isinwheel.fr/products/s9pro-meilleur-trottinette-electrique-hors-route-30km-h |  |

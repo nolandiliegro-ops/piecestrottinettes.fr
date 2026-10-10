@@ -17,7 +17,7 @@
         "ip_rating": "IP54",
         "tire_size": "80/65-6 (10x3.0)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/31e1e80f-30ff-408c-5481-476d9f0bcf00/public"
         ],
@@ -123,6 +123,8 @@
         }
       },
       "missing": [],
+      "discMissing": [],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -298,7 +300,7 @@
         "ip_rating": "IP54",
         "tire_size": "10 pouces, pneus pneumatiques (avant et arrière)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://joyor.com/cdn/shop/files/joyor-y6-s-main-image_4_3437cde8-1574-4985-a1a8-606d6f543e34.webp?v=1769155509"
         ],
@@ -389,6 +391,8 @@
       "missing": [
         "weight_kg"
       ],
+      "discMissing": [],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "tire_section=10x2.50"

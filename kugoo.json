@@ -5,7 +5,6 @@
       "name": "Kugoo G2",
       "slug": "kugoo-g2",
       "voltage": 48,
-      "amperage": 15.6,
       "power_watts": 800,
       "max_speed_private_kmh": 45,
       "range_km": 55,
@@ -16,7 +15,7 @@
       "ip_rating": "IP54",
       "tire_size": "10 pouces tubeless tout-terrain",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
       ],
@@ -48,7 +47,7 @@
       "ip_rating": "IP54",
       "tire_size": "10 x 2.75 pouces",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://i-phonik.fr/15193-large_default/trottinette-electrique-kugoo-kukirin-g2-max-moteur-1000w-48v20ah-55-kmh-autonomie-80-km-pneus-10-double-amortisseurs.webp",
         "http://kugoo.eu/cdn/shop/files/G2_Max.jpg?v=1790761511&width=2048"
@@ -70,7 +69,6 @@
       "name": "Kugoo G2 Master",
       "slug": "kugoo-g2-master",
       "voltage": 52,
-      "amperage": 20.8,
       "power_watts": 2000,
       "max_speed_private_kmh": 60,
       "range_km": 70,
@@ -82,7 +80,7 @@
       "ip_rating": "IP54",
       "tire_size": "10\" tubeless (section non communiquée)",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://kugoo.eu/cdn/shop/files/G2_Master_7dac118b-8f92-4bf3-b53f-ba663ce86978.jpg?v=1789626344&width=2048",
         "http://img.staticdj.com/fb9ee91ef29b16ed78ce1a8809c51fa0.jpg",

@@ -6,7 +6,6 @@
         "name": "Hiboy S2 Pro",
         "slug": "hiboy-s2-pro",
         "voltage": 36,
-        "amperage": 11.6,
         "power_watts": 500,
         "max_speed_private_kmh": 30,
         "range_km": 40,
@@ -16,7 +15,7 @@
         "suspension": "Double suspension arrière",
         "ip_rating": "IPX4",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://www.hiboy.com/cdn/shop/files/1_4_58517d89-e631-4b53-9a96-914cae6f2f44.jpg?v=1735615061&width=2048",
           "http://electricrideco.com/cdn/shop/files/1_4_58517d89-e631-4b53-9a96-914cae6f2f44_1200x1200.webp?v=1790129364",
@@ -33,10 +32,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting",
           "type": "constructeur"
         },
@@ -99,6 +94,9 @@
       "discMissing": [
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=11.6"
       ],
       "toValidate": [],
       "offVocab": [
@@ -300,7 +298,7 @@
         "ip_rating": "IPX4",
         "tire_size": "6.5 pouces, pneus pleins (non gonflables)",
         "foldable": true,
-        "wheel_inches": "6.5",
+        "wheel_inches": 6.5,
         "source_image_urls": [
           "http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048"
         ],
@@ -382,6 +380,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

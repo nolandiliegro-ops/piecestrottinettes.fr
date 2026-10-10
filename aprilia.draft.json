@@ -6,7 +6,6 @@
         "name": "Aprilia eSR1",
         "slug": "aprilia-esr1",
         "voltage": 36,
-        "amperage": 7.8,
         "power_watts": 350,
         "range_km": 35,
         "max_load_kg": 100,
@@ -16,7 +15,7 @@
         "ip_rating": "IPX4",
         "tire_size": "10\" tubeless (section non communiquée)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "ebs_front_disc_rear",
         "tire_family": "pneumatic",
         "score_offroad": 35,
@@ -28,10 +27,6 @@
       "sources": {
         "voltage": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
-          "type": "revendeur"
-        },
-        "amperage": {
-          "url": "https://www.pixmania.com/fr/fr/aprilia-esr1-trottinette-electrique-25-kmh-noir-rouge-78-ah-165203.html",
           "type": "revendeur"
         },
         "power_watts": {
@@ -81,10 +76,15 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -253,7 +253,7 @@
         "suspension": "Avant et arrière",
         "ip_rating": "IPX4",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "drum_front_ebs_rear",
         "tire_section": "10x2.125",
         "tire_family": "pneumatic",
@@ -326,6 +326,8 @@
       "missing": [
         "source_image_urls"
       ],
+      "discMissing": [],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [

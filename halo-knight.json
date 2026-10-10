@@ -5,7 +5,6 @@
       "name": "Halo Knight T108 Pro",
       "slug": "halo-knight-t108-pro",
       "voltage": 60,
-      "amperage": 38.4,
       "power_watts": 6000,
       "max_speed_private_kmh": 95,
       "range_km": 80,
@@ -17,7 +16,7 @@
       "ip_rating": "IP54",
       "tire_size": "90/65-6.5",
       "foldable": true,
-      "wheel_inches": "11",
+      "wheel_inches": 11,
       "source_image_urls": [
         "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
         "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/cf6c22ef-3e91-40f1-dc7f-11a6bc038600/public"

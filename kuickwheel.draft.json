@@ -18,7 +18,7 @@
         "ip_rating": "IPX7",
         "tire_size": "10x2.5",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png"
         ],
@@ -100,6 +100,7 @@
       },
       "missing": [],
       "discMissing": [],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -261,7 +262,6 @@
         "name": "Kuickwheel M16 Pro",
         "slug": "kuickwheel-m16-pro",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 25,
         "range_km": 40,
@@ -272,7 +272,7 @@
         "ip_rating": "IPX5",
         "tire_size": "10x2.125",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
           "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg"
@@ -287,10 +287,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/",
           "type": "revendeur"
         },
@@ -353,6 +349,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

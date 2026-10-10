@@ -17,7 +17,7 @@
         "ip_rating": "IP66",
         "tire_size": "10x3.5 pouces (tubeless auto-réparant)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png",
           "https://www.rideandglide.co.uk/wp-content/uploads/apollo-city-pro-2024.png"
@@ -107,6 +107,8 @@
       "missing": [
         "weight_kg"
       ],
+      "discMissing": [],
+      "notInt": [],
       "toValidate": [
         {
           "key": "weight_kg",

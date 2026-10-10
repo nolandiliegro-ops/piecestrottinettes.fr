@@ -1,6 +1,6 @@
-# Extraction Joyor — 2026-10-09
+# Extraction Joyor — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 388998 tokens entrée, 14294 sortie, 18 recherches web.
 

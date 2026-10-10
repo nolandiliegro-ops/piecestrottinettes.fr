@@ -1,15 +1,15 @@
 # Extraction Kugoo — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 
 ## Kugoo G2 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
-| amperage | 15.6 | constructeur | https://www.kukirin-officiel.com/products/kukirin-g2-foldable-electric-scooter-800w-motor-48v-15ah-battery-10-inch-tire-45km-h-max-speed-55km-range-touchscreen-display-disc-brake-7-light-system-black |  |
 | power_watts | 800 | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
 | max_speed_private_kmh | 45 | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
 | range_km | 55 | constructeur | https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter |  |
@@ -83,12 +83,12 @@ Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 | tire_family | pneumatic | revendeur | https://www.trottnshop.com/produit/kugoo-g2-pro/ |  |
 
 ## Kugoo G2 Master — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=20.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 52 | constructeur | https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master |  |
-| amperage | 20.8 | constructeur | https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master |  |
 | power_watts | 2000 | constructeur | https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master |  |
 | max_speed_private_kmh | 60 | constructeur | https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master |  |
 | range_km | 70 | constructeur | https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master |  |

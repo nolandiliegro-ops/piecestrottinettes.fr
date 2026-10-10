@@ -18,7 +18,7 @@
         "ip_rating": "IP54",
         "tire_size": "8\" x 3,9\" (8 pouces, 10 cm de large), pneus pleins remplis de mousse",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "brake_type": "disc_mechanical",
         "disc_diameter": 120,
         "tire_family": "solid",
@@ -97,10 +97,13 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -269,7 +272,6 @@
         "name": "Mercane Transboard",
         "slug": "mercane-transboard",
         "voltage": 48,
-        "amperage": 8.8,
         "power_watts": 500,
         "range_km": 30,
         "max_load_kg": 100,
@@ -278,7 +280,7 @@
         "suspension": "Double suspension avant à double triangulation (double wishbone)",
         "tire_size": "Avant 10 pouces (chambre à air) x2, arrière 8 pouces",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://alternative.bike/2477-large_default/mercane-transboard.jpg"
         ],
@@ -290,10 +292,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://alternative.bike/168-mercane-transboard.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://alternative.bike/168-mercane-transboard.html",
           "type": "revendeur"
         },
@@ -336,10 +334,15 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=8.8"
       ],
       "toValidate": [],
       "offVocab": [],

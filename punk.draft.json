@@ -6,7 +6,6 @@
         "name": "Punk Rider",
         "slug": "punk-rider",
         "voltage": 48,
-        "amperage": 15.6,
         "power_watts": 600,
         "max_speed_private_kmh": 40,
         "range_km": 60,
@@ -16,7 +15,7 @@
         "suspension": "Avant et arrière",
         "ip_rating": "IPX6",
         "tire_size": "10x3 tubeless",
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
         ],
@@ -30,10 +29,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.gyro-phare.com/1652-trottinette-electrique-punk-rider-single-moteur.html",
           "type": "revendeur"
         },
@@ -88,6 +83,10 @@
         }
       },
       "missing": [],
+      "discMissing": [],
+      "notInt": [
+        "amperage=15.6"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -248,7 +247,6 @@
         "name": "Punk Rider Pro",
         "slug": "punk-rider-pro",
         "voltage": 52,
-        "amperage": 18.2,
         "power_watts": 1200,
         "max_speed_private_kmh": 50,
         "range_km": 70,
@@ -260,7 +258,7 @@
         "ip_rating": "IPX6",
         "tire_size": "10 x 3 pouces, tubeless auto-réparant",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://www.freemoov.com/web/image/product.template/1309/image_1024?unique=b039538",
           "http://www.eleqtron.fr/cdn/shop/files/trottinette-electrique-punk-rider-pro-double-moteur.png?v=1727686656"
@@ -275,10 +273,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.gyro-phare.com/1651-trottinette-electrique-punk-rider-pro-double-moteur.html",
           "type": "revendeur"
         },
@@ -341,6 +335,10 @@
         }
       },
       "missing": [],
+      "discMissing": [],
+      "notInt": [
+        "amperage=18.2"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

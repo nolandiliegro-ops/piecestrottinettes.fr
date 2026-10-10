@@ -15,7 +15,7 @@
       "suspension": "Avant : amortisseur à ressort simple (hydraulique réglable) ; arrière : double ressort",
       "tire_size": "11 pouces tubeless",
       "foldable": true,
-      "wheel_inches": "11",
+      "wheel_inches": 11,
       "source_image_urls": [
         "http://trotinetch.pt/cdn/shop/files/ba34c1df60a787a593a07043b6bbca24.jpg?crop=center&height=1200&v=1708702607&width=1200"
       ],

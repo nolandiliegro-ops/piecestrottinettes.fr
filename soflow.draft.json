@@ -6,7 +6,6 @@
         "name": "SoFlow S05",
         "slug": "soflow-s05",
         "voltage": 48,
-        "amperage": 7.8,
         "power_watts": 250,
         "range_km": 30,
         "max_load_kg": 120,
@@ -15,7 +14,7 @@
         "suspension": "Avant",
         "ip_rating": "IPX5",
         "foldable": true,
-        "wheel_inches": "9",
+        "wheel_inches": 9,
         "source_image_urls": [
           "http://fahrradhandel-dortmund.de/cdn/shop/files/89d62b400ae6d23920a4f187853cf91a.webp?v=1765616377"
         ],
@@ -29,10 +28,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966",
           "type": "revendeur"
         },
@@ -84,6 +79,9 @@
       },
       "missing": [],
       "discMissing": [],
+      "notInt": [
+        "amperage=7.8"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -250,7 +248,6 @@
         "name": "SoFlow SO4 Pro",
         "slug": "soflow-so4-pro",
         "voltage": 48,
-        "amperage": 10.5,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 120,
@@ -260,7 +257,7 @@
         "ip_rating": "IPX6",
         "tire_size": "10 x 2.125",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
           "http://weltbild.ch/cdn/shop/files/Source.svg?v=1760554434"
@@ -275,10 +272,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html",
           "type": "revendeur"
         },
@@ -337,6 +330,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.5"
       ],
       "toValidate": [],
       "offVocab": [],

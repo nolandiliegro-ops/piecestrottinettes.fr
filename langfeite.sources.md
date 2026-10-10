@@ -1,10 +1,11 @@
 # Extraction Langfeite — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 
 ## Langfeite Coupé — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6 · tire_section=9x3.0
 - Une seule source, NON importé : rim_diameter=6 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3) · tire_section=9x3.0 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3)
@@ -12,7 +13,6 @@ Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://langfeite.com/Products/coupe.html |  |
-| amperage | 15.6 | constructeur | https://langfeite.com/Products/coupe.html |  |
 | power_watts | 1600 | revendeur | https://www.minimotors.fr/shop/langfeitecoupedual48v15a-trottinette-electrique-langfeite-coupe-dual-48v-156a-12057 |  |
 | max_speed_private_kmh | 55 | constructeur | https://langfeite.com/Products/coupe.html |  |
 | range_km | 45 | constructeur | https://langfeite.com/ |  |
@@ -26,12 +26,12 @@ Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3 |  |
 
 ## Langfeite GT2 Mini — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=18.2
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 52 | constructeur | https://langfeite.com/Products/GT2mini.html |  |
-| amperage | 18.2 | constructeur | https://langfeite.com/Products/GT2mini.html |  |
 | power_watts | 2400 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-langfeite-gt2-mini |  |
 | max_speed_private_kmh | 60 | constructeur | https://langfeite.com/Products/GT2mini.html |  |
 | range_km | 60 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-langfeite-gt2-mini |  |

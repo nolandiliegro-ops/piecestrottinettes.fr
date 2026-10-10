@@ -1,6 +1,6 @@
-# Extraction Bronco — 2026-10-09
+# Extraction Bronco — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 285496 tokens entrée, 11293 sortie, 17 recherches web.
 
@@ -28,7 +28,8 @@ Coût mesuré : 285496 tokens entrée, 11293 sortie, 17 recherches web.
 | tire_family | pneumatic | revendeur | https://fastride.fr/en/131-extreme-11 |  |
 
 ## Bronco Vnom 11 — MANQUE
-- Manque : weight_kg, source_image_urls, disc_pcd, disc_holes
+- Manque : weight_kg, source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Une seule source, NON importé : weight_kg=53 (https://hypedrides.com.au/products/bronco-vnom-11) · disc_holes=6 (https://funtrott.fr/301-bronco)
 
 | Clé | Valeur | Type de source | Source | 2e source |

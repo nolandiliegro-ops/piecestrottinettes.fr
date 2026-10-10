@@ -31,11 +31,14 @@
         }
       },
       "missing": [
-        "weight_kg",
+        "weight_kg"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -127,7 +130,6 @@
         "name": "Oxelo MD500E",
         "slug": "oxelo-md500e",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 35,
         "max_load_kg": 100,
@@ -137,7 +139,7 @@
         "suspension": "Rigide (sans suspension, pneus tubeless 10\" pour l'amorti)",
         "ip_rating": "IPX5",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "ebs_front_disc_rear",
         "tire_family": "pneumatic",
         "score_offroad": 35,
@@ -150,10 +152,6 @@
         "voltage": {
           "url": "https://meilleuretrott.fr/trottinettes/decathlon-oxelo-md500e/",
           "type": "site_test"
-        },
-        "amperage": {
-          "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
-          "type": "constructeur"
         },
         "power_watts": {
           "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
@@ -202,10 +200,15 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

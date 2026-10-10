@@ -6,7 +6,6 @@
         "name": "Micro Merlin II",
         "slug": "micro-merlin-ii",
         "voltage": 36,
-        "amperage": 7.8,
         "power_watts": 500,
         "max_speed_private_kmh": 25,
         "range_km": 35,
@@ -18,7 +17,7 @@
         "ip_rating": "IP54",
         "tire_size": "200 mm (pneu plein caoutchouc anti-crevaison, Airless)",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg"
         ],
@@ -31,10 +30,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
           "type": "revendeur"
         },
@@ -99,6 +94,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -260,7 +258,6 @@
         "name": "Micro X21",
         "slug": "micro-x21",
         "voltage": 36,
-        "amperage": 7.5,
         "power_watts": 500,
         "range_km": 30,
         "max_load_kg": 100,
@@ -270,7 +267,7 @@
         "ip_rating": "IP54",
         "tire_size": "200 mm / 8\" (pneus alvéolés anti-crevaison)",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "https://micro-mobility.fr/10072-product_main_2x/trottinette-electrique-micro-x21.jpg",
           "https://www.trottnscoot.com/wp-content/uploads/2022/04/trottinette-electrique-micro-x21-500w-36v-300x300.webp"
@@ -285,10 +282,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053544843_f_0",
-          "type": "distributeur"
-        },
-        "amperage": {
           "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053544843_f_0",
           "type": "distributeur"
         },
@@ -347,6 +340,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.5"
       ],
       "toValidate": [],
       "offVocab": [],

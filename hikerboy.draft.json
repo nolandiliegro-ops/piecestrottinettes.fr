@@ -6,7 +6,6 @@
         "name": "Hikerboy Foxtrot Plus",
         "slug": "hikerboy-foxtrot-plus",
         "voltage": 48,
-        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 35,
         "range_km": 45,
@@ -17,7 +16,7 @@
         "ip_rating": "IP54",
         "tire_size": "10 pouces avec chambre à air (avant et arrière) ; certains revendeurs indiquent tubeless – section non communiquée",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://pietechnologie.com/cdn/shop/products/Foxtrot-yellow.png?v=1657543999",
           "https://cycle-e-trott.com/wp-content/uploads/2024/02/TROTTINETTE-FOXTROT-PLUS-4.jpg"
@@ -32,10 +31,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
-          "type": "distributeur"
-        },
-        "amperage": {
           "url": "https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot",
           "type": "distributeur"
         },
@@ -98,6 +93,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -273,7 +271,6 @@
         "name": "Hikerboy Curtis",
         "slug": "hikerboy-curtis",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 40,
         "max_load_kg": 100,
@@ -283,7 +280,7 @@
         "suspension": "Avant (2 amortisseurs à ressorts)",
         "ip_rating": "IPX5",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://www.out-fun.com/20084-thickbox_default/hikerboy-curtis-trottinette-electrique.jpg",
           "http://www.maisondelatrott.fr/cdn/shop/files/g4.png?v=1751547849"
@@ -298,10 +295,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications",
           "type": "constructeur"
         },
@@ -360,6 +353,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

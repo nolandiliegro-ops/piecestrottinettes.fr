@@ -6,7 +6,6 @@
         "name": "Wispeed SUVPILOT 150R",
         "slug": "wispeed-suvpilot-150r",
         "voltage": 36,
-        "amperage": 15.6,
         "power_watts": 500,
         "range_km": 60,
         "max_load_kg": 120,
@@ -15,7 +14,7 @@
         "suspension": "Double suspension avant et arrière, réglable",
         "ip_rating": "IP65",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "drum",
         "tire_family": "pneumatic",
         "score_offroad": 40,
@@ -26,10 +25,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html",
           "type": "constructeur"
         },
@@ -79,6 +74,9 @@
         "source_image_urls"
       ],
       "discMissing": [],
+      "notInt": [
+        "amperage=15.6"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -235,7 +233,6 @@
         "name": "Wispeed AIRO V10",
         "slug": "wispeed-airo-v10",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 400,
         "range_km": 40,
         "max_load_kg": 120,
@@ -246,7 +243,7 @@
         "ip_rating": "IP65",
         "tire_size": "10x2.125",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
         ],
@@ -262,10 +259,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html",
           "type": "constructeur"
         },
@@ -338,6 +331,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

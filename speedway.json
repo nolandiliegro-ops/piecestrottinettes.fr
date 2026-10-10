@@ -17,7 +17,7 @@
       "ip_rating": "IP54",
       "tire_size": "200x50 (8x2\")",
       "foldable": true,
-      "wheel_inches": "8",
+      "wheel_inches": 8,
       "source_image_urls": [
         "http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263",
         "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4694519717.png"
@@ -33,7 +33,6 @@
       "name": "Speedway 5",
       "slug": "speedway-5",
       "voltage": 60,
-      "amperage": 23.4,
       "power_watts": 2000,
       "max_speed_private_kmh": 65,
       "range_km": 70,
@@ -44,7 +43,7 @@
       "ip_rating": "IP54",
       "tire_size": "10x2,70-6,5",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_5_pas_cher_1-364296.jpg?v=1754044223"
       ],
@@ -76,7 +75,7 @@
       "ip_rating": "IP54",
       "tire_size": "8\" (chambre à air à l'avant, pneu plein à l'arrière)",
       "foldable": true,
-      "wheel_inches": "8",
+      "wheel_inches": 8,
       "source_image_urls": [
         "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772"
       ],

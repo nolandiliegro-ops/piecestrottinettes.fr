@@ -1,17 +1,17 @@
 # Extraction Hikerboy — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
 
 ## Hikerboy Foxtrot Plus — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=140 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428) · disc_holes=6 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
-| amperage | 10.4 | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 | power_watts | 500 | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 | max_speed_private_kmh | 35 | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 | range_km | 45 | revendeur | https://electrotraveller.com/electric-scooters/hikerboy-foxtrot-plus-grey/ |  |
@@ -27,12 +27,12 @@ Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
 | tire_family | pneumatic | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 
 ## Hikerboy Curtis — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://hikerboyscooter.com/fr/pages/curtis-product-specifications |  |
-| amperage | 10.4 | constructeur | https://hikerboyscooter.com/fr/pages/curtis-product-specifications |  |
 | power_watts | 350 | constructeur | https://hikerboyscooter.com/fr/pages/curtis-product-specifications |  |
 | range_km | 40 | constructeur | https://hikerboyscooter.com/fr/pages/curtis-product-specifications |  |
 | max_load_kg | 100 | constructeur | https://hikerboyscooter.com/fr/pages/curtis-product-specifications |  |

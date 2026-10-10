@@ -5,7 +5,6 @@
       "name": "Adrya TWAir",
       "slug": "adrya-twair",
       "voltage": 48,
-      "amperage": 10.4,
       "power_watts": 500,
       "range_km": 40,
       "max_load_kg": 100,
@@ -13,7 +12,7 @@
       "max_speed_kmh": 25,
       "weight_kg": 16,
       "foldable": true,
-      "wheel_inches": "12",
+      "wheel_inches": 12,
       "source_image_urls": [
         "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
         "https://promovelofrance.com/2572-thickbox_default/trottinette-electrique-adrya-twair-12-pouces.jpg"

@@ -6,7 +6,6 @@
         "name": "Yeep.me 100a start",
         "slug": "yeep-me-100a-start",
         "voltage": 36,
-        "amperage": 7.8,
         "power_watts": 500,
         "range_km": 30,
         "max_load_kg": 120,
@@ -16,7 +15,7 @@
         "ip_rating": "IPX6",
         "tire_size": "10'' x 2\"",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "ebs_front_disc_rear",
         "tire_family": "solid",
         "score_offroad": 35,
@@ -27,10 +26,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html",
           "type": "constructeur"
         },
@@ -87,6 +82,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -246,7 +244,6 @@
         "name": "Yeep.me 100a",
         "slug": "yeep-me-100a",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 120,
@@ -255,7 +252,7 @@
         "suspension": "Aucune (non équipée d'amortisseur)",
         "ip_rating": "IPX6",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://www.1fodiscount.com/ressources/site/img/product/trotinette-electrique-yeepme-100a-grisnoir_254036__480.webp"
         ],
@@ -269,10 +266,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.e.leclerc/fp/trottinette-electrique-yeep-me-100a-10-500w-40km-clignotants-connectee-3700293221089",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.e.leclerc/fp/trottinette-electrique-yeep-me-100a-10-500w-40km-clignotants-connectee-3700293221089",
           "type": "revendeur"
         },
@@ -327,6 +320,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

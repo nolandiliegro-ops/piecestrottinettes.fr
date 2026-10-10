@@ -1,16 +1,16 @@
 # Extraction Wispeed — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
 
 ## Wispeed SUVPILOT 150R — MANQUE
 - Manque : source_image_urls
+- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
-| amperage | 15.6 | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 | power_watts | 500 | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 | range_km | 60 | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 | max_load_kg | 120 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html |  |
@@ -23,13 +23,13 @@ Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 
 ## Wispeed AIRO V10 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
-| amperage | 10.4 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 | power_watts | 400 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 | range_km | 40 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 | max_load_kg | 120 | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |

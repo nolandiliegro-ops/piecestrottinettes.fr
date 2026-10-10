@@ -12,7 +12,7 @@
       "max_speed_kmh": 25,
       "weight_kg": 25.5,
       "suspension": "Hydraulique DUO SHOCK avant et arrière",
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://monorimspain.com/cdn/shop/files/43-1.png?v=1784741646&width=1200",
         "https://cache.tradeinn.com/web/web/inn.jpg"
@@ -39,7 +39,7 @@
       "ip_rating": "IP54",
       "tire_size": "10 pouces tubeless (sans chambre à air), profil large",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642"
       ],

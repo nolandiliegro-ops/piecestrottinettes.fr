@@ -1,16 +1,16 @@
 # Extraction Teverun — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 
 ## Teverun Fighter Mini Pro V6 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=31.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 60 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
-| amperage | 31.8 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
 | power_watts | 2000 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
 | max_speed_private_kmh | 70 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
 | range_km | 100 | revendeur | https://www.veloshop-obernai.com/products/teverun-fighter-mini-pro-60v-31-8ah-2026 |  |
@@ -58,12 +58,12 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini |  |
 
 ## Teverun Fighter Mini — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=20.8
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 52 | revendeur | https://biospeed.fr/produit/trottinette-electrique-teverun-fighter-mini-52v-208ah/ |  |
-| amperage | 20.8 | revendeur | https://biospeed.fr/produit/trottinette-electrique-teverun-fighter-mini-52v-208ah/ |  |
 | power_watts | 2000 | revendeur | https://biospeed.fr/produit/trottinette-electrique-teverun-fighter-mini-52v-208ah/ |  |
 | max_speed_private_kmh | 60 | revendeur | https://dualtron-store.com/index.php/produit/teverun-fighter-mini/ |  |
 | range_km | 60 | revendeur | https://dualtron-store.com/index.php/produit/teverun-fighter-mini/ |  |

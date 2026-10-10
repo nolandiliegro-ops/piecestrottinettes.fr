@@ -6,7 +6,6 @@
         "name": "iScooter i9 Max",
         "slug": "iscooter-i9-max",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 35,
         "range_km": 40,
@@ -18,7 +17,7 @@
         "ip_rating": "IP54",
         "tire_size": "10'' pneu plein nid d'abeille (section en mm non communiquée)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://www.neverwheelup.com/wp-content/uploads/2024/08/1000152558_x9.jpg",
           "http://wellbots.fr/cdn/shop/files/Captured_ecran2024-07-25a16.38.47.png?v=1721918335"
@@ -35,10 +34,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.iscooterglobal.com/pages/i9-max",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.iscooterglobal.com/pages/i9-max",
           "type": "constructeur"
         },
@@ -113,6 +108,9 @@
       "missing": [],
       "discMissing": [
         "disc_pcd"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -284,7 +282,6 @@
         "name": "iScooter i9Ultra",
         "slug": "iscooter-i9ultra",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 500,
         "max_speed_private_kmh": 35,
         "range_km": 40,
@@ -295,7 +292,7 @@
         "ip_rating": "IPX4",
         "tire_size": "10 pouces (25,4 cm), pneu plein nid d'abeille",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://www.iscooter.fr/cdn/shop/files/iScooteri9MaxElectricScooter_3.jpg?v=1767771997",
           "http://www.ihoverboard.fr/cdn/shop/files/iScooteri9MaxElectricScooter_3.jpg?v=1759996136"
@@ -312,10 +309,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter",
           "type": "constructeur"
         },
@@ -386,6 +379,9 @@
       "missing": [],
       "discMissing": [
         "disc_pcd"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

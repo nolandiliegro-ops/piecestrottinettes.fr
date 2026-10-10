@@ -1,15 +1,15 @@
 # Extraction SoFlow — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 
 ## SoFlow S05 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966 |  |
-| amperage | 7.8 | revendeur | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966 |  |
 | power_watts | 250 | revendeur | https://www.boulanger.com/ref/9000921841 |  |
 | range_km | 30 | revendeur | https://www.boulanger.com/ref/9000921841 |  |
 | max_load_kg | 120 | revendeur | https://www.boulanger.com/ref/9000921841 |  |
@@ -23,12 +23,12 @@ Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 | tire_family | pneumatic | revendeur | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966 |  |
 
 ## SoFlow SO4 Pro — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.5
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html |  |
-| amperage | 10.5 | revendeur | https://www.pixmania.com/fr/fr/soflow-so4-pro-20-kmh-noir-turquoise-105-ah-233910.html |  |
 | power_watts | 500 | revendeur | https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217 |  |
 | range_km | 40 | revendeur | https://www.galaxus.fr/fr/s3/product/soflow-so4-pro-20-kmh-40-km-500-w-trottinette-electrique-13519217 |  |
 | max_load_kg | 120 | revendeur | https://www.steg-electronics.ch/fr/product/soflow-so4-pro-7-8ah-27257258 |  |

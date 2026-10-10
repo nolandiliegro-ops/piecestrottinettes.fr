@@ -5,7 +5,6 @@
       "name": "Wispeed AIRO V10",
       "slug": "wispeed-airo-v10",
       "voltage": 36,
-      "amperage": 10.4,
       "power_watts": 400,
       "range_km": 40,
       "max_load_kg": 120,
@@ -16,7 +15,7 @@
       "ip_rating": "IP65",
       "tire_size": "10x2.125",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
       ],

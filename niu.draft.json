@@ -6,7 +6,6 @@
         "name": "NIU KQi3 Pro",
         "slug": "niu-kqi3-pro",
         "voltage": 48,
-        "amperage": 10.1,
         "power_watts": 350,
         "max_speed_private_kmh": 32,
         "range_km": 50,
@@ -17,7 +16,7 @@
         "ip_rating": "IP54",
         "tire_size": "9.5 x 2.5 pouces (241 x 64 mm), tubeless",
         "foldable": true,
-        "wheel_inches": "9.5",
+        "wheel_inches": 9.5,
         "source_image_urls": [
           "http://shopeu.niu.com/cdn/shop/products/NiuKqi3ProElectricKickScooterBlack1_f52889f1-4495-4437-a217-3f6e8d9f193c.jpg?v=1763378637"
         ],
@@ -37,10 +36,6 @@
         "voltage": {
           "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
           "type": "constructeur"
-        },
-        "amperage": {
-          "url": "https://eridehero.com/niu-kqi3-pro-electric-scooter-review/",
-          "type": "site_test"
         },
         "power_watts": {
           "url": "https://shopeu.niu.com/collections/electric-kick-scooter-fr-version/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version",
@@ -118,6 +113,9 @@
       "missing": [],
       "discMissing": [
         "disc_pcd"
+      ],
+      "notInt": [
+        "amperage=10.1"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -294,7 +292,6 @@
         "name": "NIU KQi Air",
         "slug": "niu-kqi-air",
         "voltage": 48,
-        "amperage": 9.4,
         "power_watts": 350,
         "max_speed_private_kmh": 32,
         "range_km": 50,
@@ -306,7 +303,7 @@
         "ip_rating": "IP55",
         "tire_size": "9.5 x 2.3 pouces (241 x 58 mm), tubeless",
         "foldable": true,
-        "wheel_inches": "9.5",
+        "wheel_inches": 9.5,
         "source_image_urls": [
           "http://shopeu.niu.com/cdn/shop/files/KQi_Air_Bundle_Scooter.jpg?v=1760438070",
           "https://trotz-ride.shop/wp-content/uploads/2024/04/4_bbf8a405-ed79-474a-92a2-2c24cf9c4eb8_1024x1024.webp"
@@ -323,10 +320,6 @@
         "voltage": {
           "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-niu-kqi-air-noir-cadre-en-fibre-de-carbone-leger/118fa464-24d4-4a60-b81d-45f1f375013e/c1",
           "type": "revendeur"
-        },
-        "amperage": {
-          "url": "https://eridehero.com/products/niu-kqi-air/",
-          "type": "site_test"
         },
         "power_watts": {
           "url": "https://shopeu.niu.com/products/niu-kqi-air-lightweight-electric-scooter-fr-version",
@@ -391,6 +384,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=9.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -565,7 +561,7 @@
         "ip_rating": "IP54",
         "tire_size": "9,5 x 2,5 pouces (tubeless)",
         "foldable": true,
-        "wheel_inches": "9.5",
+        "wheel_inches": 9.5,
         "source_image_urls": [
           "http://shopeu.niu.com/cdn/shop/products/1500_5.jpg?v=1763378677",
           "http://niucanada.com/cdn/shop/products/KQi3Max_SideLeft.jpg?v=1676332437"
@@ -668,6 +664,7 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [
@@ -854,7 +851,7 @@
         "ip_rating": "IP55",
         "tire_size": "10.5 x 2.5 pouces (267 x 64 mm), tubeless auto-réparant",
         "foldable": true,
-        "wheel_inches": "10.5",
+        "wheel_inches": 10.5,
         "source_image_urls": [
           "http://shopeu.niu.com/cdn/shop/files/K300-X.jpg?v=1763379076",
           "http://niucanada.com/cdn/shop/files/NIU_KQI300X_DUAL-SUSPENSION_ADULT_SCOOTER_CANADA_US_MODEL_TORONTO_MONTREAL_VANCOUVER_800_LEFT_BLACK.png?v=1772815542"
@@ -940,6 +937,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

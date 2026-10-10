@@ -6,7 +6,6 @@
         "name": "Adrya TWAir",
         "slug": "adrya-twair",
         "voltage": 48,
-        "amperage": 10.4,
         "power_watts": 500,
         "range_km": 40,
         "max_load_kg": 100,
@@ -14,7 +13,7 @@
         "max_speed_kmh": 25,
         "weight_kg": 16,
         "foldable": true,
-        "wheel_inches": "12",
+        "wheel_inches": 12,
         "source_image_urls": [
           "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
           "https://promovelofrance.com/2572-thickbox_default/trottinette-electrique-adrya-twair-12-pouces.jpg"
@@ -30,10 +29,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html",
           "type": "revendeur"
         },
@@ -88,6 +83,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -268,7 +266,7 @@
         "max_load_kg": 100,
         "max_speed_kmh": 25,
         "suspension": "Fourche avant RockShox 120 mm + amortisseur arrière RockShox Monarch",
-        "wheel_inches": "20",
+        "wheel_inches": 20,
         "source_image_urls": [
           "https://media.cdnws.com/_i/21277/fb%7B630%7D-4478/906/82/trottinette-electrique-piton-adrya-tout-terrain.jpeg"
         ],
@@ -330,6 +328,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

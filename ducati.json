@@ -14,7 +14,7 @@
       "weight_kg": 17.5,
       "ip_rating": "IPX4",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://media.rueducommerce.fr/r1200/rd/products/dec/dec9c0af7fe0e8c4c1ead294f2087626affe19ff.jpg"
       ],

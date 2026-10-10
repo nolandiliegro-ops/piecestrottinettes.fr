@@ -6,7 +6,6 @@
         "name": "Kugoo G2",
         "slug": "kugoo-g2",
         "voltage": 48,
-        "amperage": 15.6,
         "power_watts": 800,
         "max_speed_private_kmh": 45,
         "range_km": 55,
@@ -17,7 +16,7 @@
         "ip_rating": "IP54",
         "tire_size": "10 pouces tubeless tout-terrain",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
         ],
@@ -37,10 +36,6 @@
       "sources": {
         "voltage": {
           "url": "https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter",
-          "type": "constructeur"
-        },
-        "amperage": {
-          "url": "https://www.kukirin-officiel.com/products/kukirin-g2-foldable-electric-scooter-800w-motor-48v-15ah-battery-10-inch-tire-45km-h-max-speed-55km-range-touchscreen-display-disc-brake-7-light-system-black",
           "type": "constructeur"
         },
         "power_watts": {
@@ -123,6 +118,9 @@
       },
       "missing": [],
       "discMissing": [],
+      "notInt": [
+        "amperage=15.6"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -310,7 +308,7 @@
         "ip_rating": "IP54",
         "tire_size": "10 x 2.75 pouces",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://i-phonik.fr/15193-large_default/trottinette-electrique-kugoo-kukirin-g2-max-moteur-1000w-48v20ah-55-kmh-autonomie-80-km-pneus-10-double-amortisseurs.webp",
           "http://kugoo.eu/cdn/shop/files/G2_Max.jpg?v=1790761511&width=2048"
@@ -419,6 +417,7 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -613,7 +612,7 @@
         "ip_rating": "IP54",
         "tire_size": "10 pouces (pneumatique tout-terrain)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "disc_unknown_actuation",
         "disc_diameter": 140,
         "disc_pcd": 44,
@@ -711,6 +710,7 @@
         "source_image_urls"
       ],
       "discMissing": [],
+      "notInt": [],
       "toValidate": [
         {
           "key": "weight_kg",
@@ -883,7 +883,6 @@
         "name": "Kugoo G2 Master",
         "slug": "kugoo-g2-master",
         "voltage": 52,
-        "amperage": 20.8,
         "power_watts": 2000,
         "max_speed_private_kmh": 60,
         "range_km": 70,
@@ -895,7 +894,7 @@
         "ip_rating": "IP54",
         "tire_size": "10\" tubeless (section non communiquée)",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "http://kugoo.eu/cdn/shop/files/G2_Master_7dac118b-8f92-4bf3-b53f-ba663ce86978.jpg?v=1789626344&width=2048",
           "http://img.staticdj.com/fb9ee91ef29b16ed78ce1a8809c51fa0.jpg",
@@ -915,10 +914,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master",
           "type": "constructeur"
         },
@@ -1003,6 +998,9 @@
       "missing": [],
       "discMissing": [
         "disc_pcd"
+      ],
+      "notInt": [
+        "amperage=20.8"
       ],
       "toValidate": [],
       "offVocab": [],

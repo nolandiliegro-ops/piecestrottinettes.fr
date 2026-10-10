@@ -4,8 +4,6 @@
     {
       "name": "Urbanglide Ride 85 Evo",
       "slug": "urbanglide-ride-85-evo",
-      "voltage": 21.6,
-      "amperage": 7.8,
       "power_watts": 250,
       "range_km": 20,
       "max_load_kg": 100,
@@ -14,7 +12,7 @@
       "suspension": "Double suspension avant",
       "ip_rating": "IPX5",
       "foldable": true,
-      "wheel_inches": "8.5",
+      "wheel_inches": 8.5,
       "source_image_urls": [
         "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0",
         "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg"
@@ -24,14 +22,13 @@
       "score_offroad": 23,
       "description": "L'UrbanGlide Ride 85 EVO est une trottinette électrique pliable équipée d'un moteur avant de 250 W (300 W en pointe) alimenté par une batterie lithium 21,6 V / 7,8 Ah, pour une autonomie annoncée jusqu'à 20 km. Elle roule sur des pneus de 8,5 pouces à chambre à air, avec double suspension avant et un frein à disque arrière, pour un poids d'environ 15 kg. Sa vitesse est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
       "meta_title": "Urbanglide Ride 85 Evo - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Urbanglide Ride 85 Evo : plaquettes, chargeurs 21.6V. Compatibilité vérifiée, livraison rapide.",
+      "meta_description": "Pièces détachées Urbanglide Ride 85 Evo : plaquettes. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "urbanglide ride 85 evo, pieces urbanglide ride 85 evo, disque frein urbanglide ride 85 evo, plaquettes urbanglide ride 85 evo, pneu urbanglide ride 85 evo"
     },
     {
       "name": "Urbanglide eCross One",
       "slug": "urbanglide-ecross-one",
       "voltage": 48,
-      "amperage": 10.4,
       "power_watts": 600,
       "range_km": 50,
       "max_load_kg": 120,
@@ -41,7 +38,7 @@
       "suspension": "Avant et arrière",
       "ip_rating": "IPX5",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737",
         "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_0",
@@ -58,8 +55,6 @@
     {
       "name": "Urbanglide 100 Evo",
       "slug": "urbanglide-100-evo",
-      "voltage": 21.6,
-      "amperage": 10.4,
       "power_watts": 350,
       "range_km": 25,
       "max_load_kg": 100,
@@ -69,7 +64,7 @@
       "suspension": "Avant (fourche en H), pas de suspension arrière",
       "ip_rating": "IPX5",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg",
         "https://media.rueducommerce.fr/mktp/product/productImage/11/142/9efd7a485d684d72a8b23763bb29759a.webp"
@@ -79,7 +74,7 @@
       "score_offroad": 40,
       "description": "L'UrbanGlide Ride 100 EVO est une trottinette électrique pliable équipée d'un moteur avant brushless de 350 W (450 W max) alimenté par une batterie lithium 21,6 V / 10,4 Ah (environ 224 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus tout-terrain 10 pouces à chambre à air, avec un frein à disque arrière, un indice IPX5 et une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
       "meta_title": "Urbanglide 100 Evo - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Urbanglide 100 Evo : plaquettes, chargeurs 21.6V. Compatibilité vérifiée, livraison rapide.",
+      "meta_description": "Pièces détachées Urbanglide 100 Evo : plaquettes. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "urbanglide 100 evo, pieces urbanglide 100 evo, disque frein urbanglide 100 evo, plaquettes urbanglide 100 evo, pneu urbanglide 100 evo"
     }
   ]

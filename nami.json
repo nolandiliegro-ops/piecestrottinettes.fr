@@ -16,7 +16,7 @@
       "ip_rating": "IPX5",
       "tire_size": "90/65-6.5 tubeless",
       "foldable": true,
-      "wheel_inches": "11",
+      "wheel_inches": 11,
       "source_image_urls": [
         "https://ogctrotteshop.fr/325-large_default/nami-burn-e-3.jpg"
       ],
@@ -49,7 +49,7 @@
       "ip_rating": "IPX5",
       "tire_size": "11\" tubeless 90/65-6.5",
       "foldable": true,
-      "wheel_inches": "11",
+      "wheel_inches": 11,
       "source_image_urls": [
         "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Nami_Burn_E3_Max_pas_cher-184122.jpg?v=1754054362",
         "https://funtrott.fr/7574-large_default/nami-burn-e-3-max-72v40ah.jpg"

@@ -17,7 +17,7 @@
         "ip_rating": "IPX4",
         "tire_size": "11\" pneumatique tout-terrain",
         "foldable": true,
-        "wheel_inches": "11",
+        "wheel_inches": 11,
         "source_image_urls": [
           "http://wellbots.fr/cdn/shop/files/GT2A02V01_1_1800x1800_ee3b2654-315f-4a13-b10b-f919d812ec30.webp?v=1732096129"
         ],
@@ -115,6 +115,7 @@
         "disc_diameter",
         "disc_pcd"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -283,7 +284,6 @@
         "name": "Isinwheel S9 Pro",
         "slug": "isinwheel-s9-pro",
         "voltage": 36,
-        "amperage": 7.5,
         "power_watts": 350,
         "max_speed_private_kmh": 30,
         "range_km": 30,
@@ -294,7 +294,7 @@
         "ip_rating": "IP54",
         "tire_size": "8.5x2",
         "foldable": true,
-        "wheel_inches": "8.5",
+        "wheel_inches": 8.5,
         "source_image_urls": [
           "https://electrichouse.fr/734-large_default/trottinette-electrique-isinwheel-s9-pro.jpg"
         ],
@@ -308,10 +308,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.rueducommerce.fr/p/m25048562094.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.rueducommerce.fr/p/m25048562094.html",
           "type": "revendeur"
         },
@@ -374,6 +370,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.5"
       ],
       "toValidate": [],
       "offVocab": [],

@@ -6,7 +6,6 @@
         "name": "Kingsong E1",
         "slug": "kingsong-e1",
         "voltage": 37,
-        "amperage": 7.8,
         "power_watts": 350,
         "max_speed_private_kmh": 25,
         "range_km": 25,
@@ -16,7 +15,7 @@
         "suspension": "Suspension avant (fourche à double cylindre)",
         "tire_size": "8.5 pouces, pneumatique",
         "foldable": true,
-        "wheel_inches": "8.5",
+        "wheel_inches": 8.5,
         "source_image_urls": [
           "https://www.green220.com/6916-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg"
         ],
@@ -30,10 +29,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://kingsongeurope.com/product/kingsong-e1/",
-          "type": "distributeur"
-        },
-        "amperage": {
           "url": "https://kingsongeurope.com/product/kingsong-e1/",
           "type": "distributeur"
         },
@@ -89,6 +84,9 @@
       },
       "missing": [],
       "discMissing": [],
+      "notInt": [
+        "amperage=7.8"
+      ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -249,7 +247,6 @@
         "name": "Kingsong N14 Max",
         "slug": "kingsong-n14-max",
         "voltage": 48,
-        "amperage": 10.4,
         "power_watts": 600,
         "max_speed_private_kmh": 35,
         "range_km": 40,
@@ -258,7 +255,7 @@
         "weight_kg": 24,
         "suspension": "Avant et arrière",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://www.green220.com/5532-large_default/electric-scooter-kingsong-ks-n14-48-v-10-4-ah.jpg"
         ],
@@ -273,10 +270,6 @@
       "sources": {
         "voltage": {
           "url": "https://www.kingsong-store.com/fr/KSN14",
-          "type": "distributeur"
-        },
-        "amperage": {
-          "url": "https://www.green220.com/en/e-scooters/455-kingsong-ks-n14-max-3701522001427.html",
           "type": "distributeur"
         },
         "power_watts": {
@@ -330,6 +323,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],

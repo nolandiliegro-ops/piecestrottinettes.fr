@@ -1,16 +1,16 @@
 # Extraction iScooter — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
 
 ## iScooter i9 Max — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://www.iscooterglobal.com/pages/i9-max |  |
-| amperage | 10.4 | constructeur | https://www.iscooterglobal.com/pages/i9-max |  |
 | power_watts | 500 | constructeur | https://www.iscooterglobal.com/pages/i9-max |  |
 | max_speed_private_kmh | 35 | distributeur | https://www.iscootershop.fr/produit/iscooter-france-trottinette-electrique-i9max-500w |  |
 | range_km | 40 | distributeur | https://www.iscootershop.fr/produit/iscooter-france-trottinette-electrique-i9max-500w |  |
@@ -29,12 +29,12 @@ Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
 | tire_family | solid | constructeur | https://iscooter-eu.com/products/iscooter-i9-max-electric-scooter |  |
 
 ## iScooter i9Ultra — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | constructeur | https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter |  |
-| amperage | 10.4 | constructeur | https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter |  |
 | power_watts | 500 | constructeur | https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter |  |
 | max_speed_private_kmh | 35 | constructeur | https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter |  |
 | range_km | 40 | constructeur | https://www.iscooterglobal.eu/products/iscooter-i9max-electric-scooter |  |

@@ -14,7 +14,7 @@
         "max_speed_kmh": 25,
         "weight_kg": 48,
         "suspension": "Avant : Kindshock EXA/DNM 125 mm à ressort (2000 lbs) ; arrière : DNMAOY-36 165 mm à air réglable",
-        "wheel_inches": "11",
+        "wheel_inches": 11,
         "source_image_urls": [
           "https://www.scooterpassion.be/22103-large_default/trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.jpg",
           "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-bronco-xtreme-sport-72v_4.jpg?v=1669301588"
@@ -102,6 +102,8 @@
         }
       },
       "missing": [],
+      "discMissing": [],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [
         "rim_diameter=6.5",
@@ -289,7 +291,7 @@
         "max_speed_kmh": 25,
         "suspension": "Suspension hydraulique réglable",
         "tire_size": "11\" x 3.7\" tubeless",
-        "wheel_inches": "11",
+        "wheel_inches": 11,
         "brake_type": "disc_hydraulic",
         "disc_diameter": 160,
         "rim_diameter": "6.5",
@@ -364,10 +366,13 @@
       },
       "missing": [
         "weight_kg",
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

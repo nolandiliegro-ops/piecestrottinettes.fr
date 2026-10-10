@@ -5,7 +5,6 @@
       "name": "Micro X21",
       "slug": "micro-x21",
       "voltage": 36,
-      "amperage": 7.5,
       "power_watts": 500,
       "range_km": 30,
       "max_load_kg": 100,
@@ -15,7 +14,7 @@
       "ip_rating": "IP54",
       "tire_size": "200 mm / 8\" (pneus alvéolés anti-crevaison)",
       "foldable": true,
-      "wheel_inches": "8",
+      "wheel_inches": 8,
       "source_image_urls": [
         "https://micro-mobility.fr/10072-product_main_2x/trottinette-electrique-micro-x21.jpg",
         "https://www.trottnscoot.com/wp-content/uploads/2022/04/trottinette-electrique-micro-x21-500w-36v-300x300.webp"

@@ -1,15 +1,15 @@
 # Extraction Kingsong — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 301843 tokens entrée, 10879 sortie, 16 recherches web.
 
 ## Kingsong E1 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=7.8
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 37 | distributeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
-| amperage | 7.8 | distributeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
 | power_watts | 350 | revendeur | https://www.green220.com/en/e-scooters/1922-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html |  |
 | max_speed_private_kmh | 25 | distributeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
 | range_km | 25 | distributeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
@@ -24,12 +24,12 @@ Coût mesuré : 301843 tokens entrée, 10879 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
 
 ## Kingsong N14 Max — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | distributeur | https://www.kingsong-store.com/fr/KSN14 |  |
-| amperage | 10.4 | distributeur | https://www.green220.com/en/e-scooters/455-kingsong-ks-n14-max-3701522001427.html |  |
 | power_watts | 600 | distributeur | https://www.kingsong-store.com/fr/KSN14 |  |
 | max_speed_private_kmh | 35 | distributeur | https://www.kingsong-store.com/fr/KSN14 |  |
 | range_km | 40 | distributeur | https://www.kingsong-store.com/fr/KSN14 |  |

@@ -1,10 +1,11 @@
 # Extraction Hitway — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 
 ## Hitway H9 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.5 · tire_section=10x2.70
 - Une seule source, NON importé : rim_diameter=6.5 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/) · tire_section=10x2.70 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/)
@@ -12,7 +13,6 @@ Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
-| amperage | 15.6 | constructeur | https://b2b.hitway.us/product/hitway-h9-electric-scooter/ |  |
 | power_watts | 500 | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 | range_km | 70 | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 | max_load_kg | 120 | constructeur | https://b2b.hitway.us/product/hitway-h9-electric-scooter/ |  |
@@ -25,11 +25,11 @@ Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 | brake_type | disc_unknown_actuation | constructeur | https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 
 ## Hitway H6 — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : amperage=15.6
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | constructeur | https://b2b.hitway.us/product/hitway-h6-electric-scooters/ |  |
-| amperage | 15.6 | constructeur | https://b2b.hitway.us/product/hitway-h6-electric-scooters/ |  |
 | power_watts | 500 | constructeur | https://b2b.hitway.us/product/hitway-h6-electric-scooters/ |  |
 | max_speed_private_kmh | 45 | site_test | https://www.auto-domo.fr/trottinette-electrique-hitway-h6-la-reference-du-confort-et-de-la-performance/ |  |
 | range_km | 70 | constructeur | https://de.hitway.eu/en/products/h6 |  |

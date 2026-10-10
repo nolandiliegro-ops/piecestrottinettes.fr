@@ -5,7 +5,6 @@
       "name": "Engwe Y600",
       "slug": "engwe-y600",
       "voltage": 48,
-      "amperage": 18.2,
       "power_watts": 600,
       "max_speed_private_kmh": 45,
       "range_km": 70,
@@ -17,7 +16,7 @@
       "ip_rating": "IPX5",
       "tire_size": "10 x 4.0",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?crop=center&height=1200&v=1747923069&width=1200",
         "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/a37b564a-990a-47ae-9e85-bb2203457000/public"
@@ -34,7 +33,6 @@
       "name": "Engwe Y600S",
       "slug": "engwe-y600s",
       "voltage": 48,
-      "amperage": 18.2,
       "power_watts": 600,
       "max_speed_private_kmh": 45,
       "range_km": 70,
@@ -45,7 +43,7 @@
       "ip_rating": "IPX5",
       "tire_size": "10x2.75",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
         "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
@@ -61,7 +59,6 @@
       "name": "Engwe Y700",
       "slug": "engwe-y700",
       "voltage": 48,
-      "amperage": 18.2,
       "power_watts": 1200,
       "max_speed_private_kmh": 45,
       "range_km": 85,
@@ -73,7 +70,7 @@
       "ip_rating": "IPX5",
       "tire_size": "10 x 3,0\" (pneu urbain caoutchouc plein)",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "http://fr.engwe.com/cdn/shop/files/01_9ae09995-eb71-4681-8a48-dc482b36ab2f.jpg?crop=center&height=1200&v=1770274397&width=1200"
       ],

@@ -1,17 +1,18 @@
-# Extraction Jeep — 2026-10-09
+# Extraction Jeep — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
 
 ## Jeep Adventurer — MANQUE
-- Manque : source_image_urls, disc_pcd
+- Manque : source_image_urls
+- Valeur à virgule pour une colonne entière, NON importée : amperage=10.4
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Une seule source, NON importé : disc_pcd=44 (https://youvelo.fr/vtt/641-disque-120-mm-6-trous-entraxe-44mm.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 36 | revendeur | https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility |  |
-| amperage | 10.4 | revendeur | https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility |  |
 | power_watts | 350 | revendeur | https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370 |  |
 | range_km | 40 | revendeur | https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility |  |
 | max_load_kg | 100 | revendeur | https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility |  |
@@ -28,13 +29,14 @@ Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
 | tire_family | pneumatic | revendeur | https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370 |  |
 
 ## Jeep Urban Camou — MANQUE
-- Manque : source_image_urls, disc_pcd, disc_holes
+- Manque : source_image_urls
+- Valeur à virgule pour une colonne entière, NON importée : amperage=9.6
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Une seule source, NON importé : disc_holes=6 (https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
 | voltage | 48 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
-| amperage | 9.6 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
 | power_watts | 500 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
 | range_km | 45 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
 | max_load_kg | 100 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |

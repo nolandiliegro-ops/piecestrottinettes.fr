@@ -1,6 +1,6 @@
-# Extraction Apollo — 2026-10-09
+# Extraction Apollo — 2026-10-10
 
-**0 PRÊT / 1 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 1 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 214225 tokens entrée, 6792 sortie, 12 recherches web.
 

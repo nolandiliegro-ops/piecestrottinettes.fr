@@ -5,8 +5,6 @@
       "scooter": {
         "name": "Globber E-MOTION 6",
         "slug": "globber-e-motion-6",
-        "voltage": 14.4,
-        "amperage": 2.9,
         "power_watts": 80,
         "max_speed_private_kmh": 10,
         "range_km": 10,
@@ -17,7 +15,7 @@
         "ip_rating": "IPX4",
         "tire_size": "Avant 120 mm (largeur 36 mm) ; arrière 90 x 50 mm (roues pleines)",
         "foldable": false,
-        "wheel_inches": "4.7",
+        "wheel_inches": 4.7,
         "source_image_urls": [
           "https://www.globber.fr/7337-large_default/trottinette-%C3%A9lectrique-e-motion-6.jpg"
         ],
@@ -25,18 +23,10 @@
         "score_offroad": 18,
         "description": "La Globber E-MOTION 6 est une trottinette électrique pour enfants de 6 à 12 ans, équipée d'un moteur brushless de 80 W dans la roue arrière et d'une batterie lithium 14,4 V 2,9 Ah (environ 8 à 10 km d'autonomie). Elle dispose de deux roues avant lumineuses de 120 mm, d'une roue arrière de 90 mm, d'un double freinage (E-ABS et frein mécanique au pied) et de deux modes de vitesse limités à 6 et 10 km/h (non pliable, 4,9 kg, charge max 50 kg). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Globber E-MOTION 6 - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Globber E-MOTION 6 : plaquettes, chargeurs 14.4V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Globber E-MOTION 6 : plaquettes. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "globber e-motion 6, pieces globber e-motion 6, disque frein globber e-motion 6, plaquettes globber e-motion 6, pneu globber e-motion 6"
       },
       "sources": {
-        "voltage": {
-          "url": "https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf",
-          "type": "constructeur"
-        },
-        "amperage": {
-          "url": "https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf",
-          "type": "constructeur"
-        },
         "power_watts": {
           "url": "https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf",
           "type": "constructeur"
@@ -88,10 +78,16 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "voltage=14.4",
+        "amperage=2.9"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -251,11 +247,8 @@
       "scooter": {
         "name": "Globber E-MOTION 4 PLUS",
         "slug": "globber-e-motion-4-plus",
-        "voltage": 14.4,
-        "amperage": 2.6,
         "power_watts": 80,
         "max_speed_private_kmh": 10,
-        "range_km": 8.5,
         "max_load_kg": 50,
         "max_speed_kmh": 25,
         "tire_size": "Roues avant 125 mm (40 mm de large, PU), roue arrière 90 mm (50 mm de large, PU)",
@@ -263,27 +256,15 @@
         "score_offroad": 18,
         "description": "La Globber E-MOTION 4 PLUS est une trottinette électrique 3 roues pour enfants dès 6 ans, équipée d'un moteur brushless de 80 W dans la roue arrière et d'une batterie lithium 14,4 V (2,6 Ah selon la description constructeur) offrant 8,5 km d'autonomie. Elle dispose de roues avant lumineuses de 125 mm, d'une roue arrière de 90 mm, d'un frein E-ABS et d'un frein arrière mécanique, avec deux modes de vitesse limités à 6 et 10 km/h (pas de mode 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Globber E-MOTION 4 PLUS - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Globber E-MOTION 4 PLUS : plaquettes, chargeurs 14.4V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Globber E-MOTION 4 PLUS : plaquettes. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "globber e-motion 4 plus, pieces globber e-motion 4 plus, disque frein globber e-motion 4 plus, plaquettes globber e-motion 4 plus, pneu globber e-motion 4 plus"
       },
       "sources": {
-        "voltage": {
-          "url": "https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html",
-          "type": "constructeur"
-        },
-        "amperage": {
-          "url": "https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html",
-          "type": "constructeur"
-        },
         "power_watts": {
           "url": "https://www.globber.com/product/e-motion-4-plus/",
           "type": "constructeur"
         },
         "max_speed_private_kmh": {
-          "url": "https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html",
-          "type": "constructeur"
-        },
-        "range_km": {
           "url": "https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html",
           "type": "constructeur"
         },
@@ -303,10 +284,17 @@
       "missing": [
         "weight_kg",
         "brake_type",
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "voltage=14.4",
+        "amperage=2.6",
+        "range_km=8.5"
       ],
       "toValidate": [],
       "offVocab": [],

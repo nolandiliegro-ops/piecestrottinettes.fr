@@ -6,7 +6,6 @@
         "name": "Jeep Adventurer",
         "slug": "jeep-adventurer",
         "voltage": 36,
-        "amperage": 10.4,
         "power_watts": 350,
         "range_km": 40,
         "max_load_kg": 100,
@@ -15,7 +14,7 @@
         "suspension": "Avant et arrière",
         "ip_rating": "IPX4",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "ebs_front_disc_rear",
         "disc_diameter": 120,
         "disc_holes": 6,
@@ -30,10 +29,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
           "type": "revendeur"
         },
@@ -100,8 +95,13 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_pcd"
+      ],
+      "notInt": [
+        "amperage=10.4"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -271,7 +271,6 @@
         "name": "Jeep Urban Camou",
         "slug": "jeep-urban-camou",
         "voltage": 48,
-        "amperage": 9.6,
         "power_watts": 500,
         "range_km": 45,
         "max_load_kg": 100,
@@ -282,7 +281,7 @@
         "ip_rating": "IPX4",
         "tire_size": "10x2.5-6.5 tubeless",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "brake_type": "ebs_front_disc_rear",
         "disc_diameter": 120,
         "rim_diameter": "6.5",
@@ -296,10 +295,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
           "type": "revendeur"
         },
@@ -369,9 +364,14 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=9.6"
       ],
       "toValidate": [],
       "offVocab": [],

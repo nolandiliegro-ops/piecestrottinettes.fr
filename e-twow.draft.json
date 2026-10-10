@@ -6,7 +6,6 @@
         "name": "E-Twow GT SL",
         "slug": "e-twow-gt-sl",
         "voltage": 48,
-        "amperage": 7.8,
         "power_watts": 700,
         "max_speed_private_kmh": 40,
         "range_km": 35,
@@ -17,7 +16,7 @@
         "ip_rating": "IP54",
         "tire_size": "8 pouces, pneus pleins (airless)",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "http://www.maisondelatrott.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146_ac3bb3fd-1c33-4127-9d40-8c41558e0125.webp?v=1757680811",
           "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146.jpg?v=1772100731"
@@ -31,10 +30,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://shop.e-twow.com/products/gt-sl",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://shop.e-twow.com/products/gt-sl",
           "type": "constructeur"
         },
@@ -89,10 +84,15 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -255,7 +255,6 @@
         "name": "E-Twow GT Sport",
         "slug": "e-twow-gt-sport",
         "voltage": 48,
-        "amperage": 10.5,
         "power_watts": 500,
         "max_speed_private_kmh": 40,
         "range_km": 45,
@@ -265,7 +264,7 @@
         "suspension": "Avant et arrière à ressorts",
         "ip_rating": "IPX4",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/etwowgtsport48v10a-1.jpg",
           "https://mecatronice.com/app/uploads/2025/08/ETWOW-GT-Sport-48V-105Ah-1.jpg"
@@ -280,10 +279,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
           "type": "constructeur"
         },
@@ -339,10 +334,15 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.5"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -507,7 +507,6 @@
         "name": "E-Twow Booster SE",
         "slug": "e-twow-booster-se",
         "voltage": 36,
-        "amperage": 7.8,
         "power_watts": 500,
         "max_speed_private_kmh": 30,
         "range_km": 30,
@@ -518,7 +517,7 @@
         "suspension": "Avant et arrière",
         "ip_rating": "IPX5",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706",
           "https://full-mobility.com/wp-content/uploads/2023/03/1520-2.jpg"
@@ -532,10 +531,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se",
           "type": "revendeur"
         },
@@ -590,10 +585,15 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -756,7 +756,6 @@
         "name": "E-Twow GT SE",
         "slug": "e-twow-gt-se",
         "voltage": 48,
-        "amperage": 10.5,
         "power_watts": 700,
         "max_speed_private_kmh": 40,
         "range_km": 50,
@@ -768,7 +767,7 @@
         "ip_rating": "IPX4",
         "tire_size": "8 pouces, pneu plein increvable (airless)",
         "foldable": true,
-        "wheel_inches": "8",
+        "wheel_inches": 8,
         "source_image_urls": [
           "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_GT_SE_Pas_cher-317390.jpg?v=1750673409"
         ],
@@ -781,10 +780,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
-          "type": "revendeur"
-        },
-        "amperage": {
           "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
           "type": "revendeur"
         },
@@ -843,10 +838,15 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=10.5"
       ],
       "toValidate": [],
       "offVocab": [],

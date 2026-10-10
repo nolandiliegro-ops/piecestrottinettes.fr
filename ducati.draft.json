@@ -6,7 +6,6 @@
         "name": "Ducati Pro-I Evo",
         "slug": "ducati-pro-i-evo",
         "voltage": 36,
-        "amperage": 7.8,
         "power_watts": 350,
         "range_km": 25,
         "max_load_kg": 100,
@@ -16,7 +15,7 @@
         "ip_rating": "IP54",
         "tire_size": "8.5\" avec chambre à air",
         "foldable": true,
-        "wheel_inches": "8.5",
+        "wheel_inches": 8.5,
         "brake_type": "ebs_front_disc_rear",
         "rim_diameter": "6.1",
         "tire_section": "8.5x2",
@@ -31,10 +30,6 @@
         "voltage": {
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ducati_trotipro1evocl.html",
           "type": "distributeur"
-        },
-        "amperage": {
-          "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-ducati-pro-i-evo/",
-          "type": "revendeur"
         },
         "power_watts": {
           "url": "https://www.ducati.com/gb/en/news/new-pro-i-evo-electric-scooter-with-integrated-app",
@@ -99,6 +94,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=7.8"
       ],
       "toValidate": [],
       "offVocab": [],
@@ -285,7 +283,7 @@
         "weight_kg": 17.5,
         "ip_rating": "IPX4",
         "foldable": true,
-        "wheel_inches": "10",
+        "wheel_inches": 10,
         "source_image_urls": [
           "https://media.rueducommerce.fr/r1200/rd/products/dec/dec9c0af7fe0e8c4c1ead294f2087626affe19ff.jpg"
         ],
@@ -380,6 +378,7 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

@@ -15,7 +15,7 @@
       "suspension": "Double suspension avant et arrière",
       "ip_rating": "IPX4",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/9edb17e5-4d05-4fb7-5c5e-92b19a42fe00/public"
       ],
@@ -45,7 +45,7 @@
       "weight_kg": 25,
       "suspension": "Double suspension avant et arrière",
       "foldable": true,
-      "wheel_inches": "10",
+      "wheel_inches": 10,
       "source_image_urls": [
         "https://monorimspain.com/cdn/shop/files/patinete-electrico-smartgyro-speedway-pro-certificado_1.jpg?v=1708686375&width=1200"
       ],

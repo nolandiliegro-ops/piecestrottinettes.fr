@@ -1,16 +1,16 @@
-# Extraction Globber — 2026-10-09
+# Extraction Globber — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
 
 ## Globber E-MOTION 6 — MANQUE
-- Manque : brake_type, disc_diameter, disc_pcd, disc_holes
+- Manque : brake_type
+- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4 · amperage=2.9
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
-| voltage | 14.4 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
-| amperage | 2.9 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | power_watts | 80 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | max_speed_private_kmh | 10 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | range_km | 10 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
@@ -25,16 +25,15 @@ Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
 | tire_family | solid | distributeur | https://www.decathlon.be/fr/p/trottinette-electrique-enfant-globber-e-6/356105/m8891935 |  |
 
 ## Globber E-MOTION 4 PLUS — MANQUE
-- Manque : weight_kg, brake_type, source_image_urls, disc_diameter, disc_pcd, disc_holes
+- Manque : weight_kg, brake_type, source_image_urls
+- Valeur à virgule pour une colonne entière, NON importée : voltage=14.4 · amperage=2.6 · range_km=8.5
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : weight_kg=3.95 (https://www.globber.com/product/e-motion-4-plus/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
-| voltage | 14.4 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
-| amperage | 2.6 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
 | power_watts | 80 | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |
 | max_speed_private_kmh | 10 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
-| range_km | 8.5 | constructeur | https://www.globber.com/fr/electriques/363-one-k-e-motion-4-plus-4895224406181.html |  |
 | max_load_kg | 50 | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |
 | tire_size | Roues avant 125 mm (40 mm de large, PU), roue arrière 90 mm (50 mm de large, PU) | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |
 | foldable | false | constructeur | https://www.globber.com/product/e-motion-4-plus/ |  |

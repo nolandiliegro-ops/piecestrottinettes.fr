@@ -6,7 +6,6 @@
         "name": "Halo Knight T107 Pro",
         "slug": "halo-knight-t107-pro",
         "voltage": 60,
-        "amperage": 38.4,
         "power_watts": 6000,
         "max_speed_private_kmh": 95,
         "range_km": 80,
@@ -17,7 +16,7 @@
         "ip_rating": "IPX4",
         "tire_size": "11 pouces tout-terrain (pneu gonflable CST)",
         "foldable": true,
-        "wheel_inches": "11",
+        "wheel_inches": 11,
         "source_image_urls": [
           "http://fr.gleeride.com/cdn/shop/files/HALOKNIGHT-T107Pro-Black-1_a203cbba-90a2-4a80-9f99-cb6b382978fd.jpg?crop=center&height=1200&v=1761014809&width=1200",
           "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/57d059c1-899b-4541-dac4-c6c918b96800/public",
@@ -36,10 +35,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter",
           "type": "constructeur"
         },
@@ -117,6 +112,9 @@
       "discMissing": [
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=38.4"
       ],
       "toValidate": [
         {
@@ -294,7 +292,6 @@
         "name": "Halo Knight T108 Pro",
         "slug": "halo-knight-t108-pro",
         "voltage": 60,
-        "amperage": 38.4,
         "power_watts": 6000,
         "max_speed_private_kmh": 95,
         "range_km": 80,
@@ -306,7 +303,7 @@
         "ip_rating": "IP54",
         "tire_size": "90/65-6.5",
         "foldable": true,
-        "wheel_inches": "11",
+        "wheel_inches": 11,
         "source_image_urls": [
           "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
           "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/cf6c22ef-3e91-40f1-dc7f-11a6bc038600/public"
@@ -321,10 +318,6 @@
       },
       "sources": {
         "voltage": {
-          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
-          "type": "constructeur"
-        },
-        "amperage": {
           "url": "https://www.haloknights.com/en-us/products/halo-knight-t108pro-electric-scooter",
           "type": "constructeur"
         },
@@ -391,6 +384,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "notInt": [
+        "amperage=38.4"
       ],
       "toValidate": [],
       "offVocab": [
