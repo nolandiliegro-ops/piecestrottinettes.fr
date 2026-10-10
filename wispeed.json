@@ -29,6 +29,57 @@
       "meta_title": "Wispeed AIRO V10 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Wispeed AIRO V10 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "wispeed airo v10, pieces wispeed airo v10, disque frein wispeed airo v10, plaquettes wispeed airo v10, pneu wispeed airo v10"
+    },
+    {
+      "name": "Wispeed AIRO V16",
+      "slug": "wispeed-airo-v16",
+      "voltage": 36,
+      "amperage": 15.6,
+      "power_watts": 400,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 20.5,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IP65",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_section": "10x2.125",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Wispeed AIRO V16 est une trottinette électrique pliable équipée d'un moteur de 400 W nominal (700 W en pointe) et d'une batterie 36 V 15,6 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces, avec double suspension avant et arrière, frein à disque arrière, indice IP65 et une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Wispeed AIRO V16 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Wispeed AIRO V16 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "wispeed airo v16, pieces wispeed airo v16, disque frein wispeed airo v16, plaquettes wispeed airo v16, pneu wispeed airo v16"
+    },
+    {
+      "name": "Wispeed AIRO V6",
+      "slug": "wispeed-airo-v6",
+      "voltage": 36,
+      "amperage": 6,
+      "power_watts": 350,
+      "range_km": 20,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 15.5,
+      "suspension": "Avant",
+      "ip_rating": "IP65",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "La Wispeed AIRO V6 est une trottinette électrique pliable à moteur avant de 350 W nominaux (540 W en pointe), alimentée par une batterie 36 V 6 Ah pour jusqu'à 20 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces avec suspension avant, frein à disque arrière et frein électrique avant, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Wispeed AIRO V6 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Wispeed AIRO V6 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "wispeed airo v6, pieces wispeed airo v6, disque frein wispeed airo v6, plaquettes wispeed airo v6, pneu wispeed airo v6"
     }
   ]
 }

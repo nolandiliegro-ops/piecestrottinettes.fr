@@ -1,8 +1,8 @@
 # Extraction Hiboy — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 250214 tokens entrée, 11610 sortie, 14 recherches web.
+Coût mesuré : 248644 tokens entrée, 5252 sortie, 11 recherches web.
 
 ## Hiboy S2 Pro — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
@@ -48,3 +48,24 @@ Coût mesuré : 250214 tokens entrée, 11610 sortie, 14 recherches web.
 | wheel_inches | 6.5 | constructeur | https://hiboy.com/products/scooter-electrique-hiboy-s2-lite |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048 |  |
 | tire_family | solid | constructeur | https://www.hiboy.com/products/hiboy-s2-lite |  |
+
+## Hiboy MAX Pro — MANQUE
+- Manque : weight_kg
+- Une seule source, NON importé : weight_kg=25.3 (https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter)
+- Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://www.alphaproscooters.com/products/hiboy-max-pro-solid-tire)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| amperage | 14.5 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| power_watts | 500 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| range_km | 55 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| max_load_kg | 120 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| suspension | Avant et arrière | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| ip_rating | IPX4 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| tire_size | 11.0" x 2.75" (pneu tubeless gel, auto-réparant) | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult |  |
+| foldable | true | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| wheel_inches | 11 | constructeur | https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528 |  |
+| brake_type | drum | constructeur | https://www.hiboy.com/products/hiboy-max-pro-electric-scooter |  |
+| tire_family | pneumatic | constructeur | https://www.hiboy.com/products/hiboy-max-pro-electric-scooter |  |

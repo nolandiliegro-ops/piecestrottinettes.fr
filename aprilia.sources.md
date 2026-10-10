@@ -1,8 +1,8 @@
 # Extraction Aprilia — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 285665 tokens entrée, 10480 sortie, 15 recherches web.
+Coût mesuré : 306513 tokens entrée, 11167 sortie, 17 recherches web.
 
 ## Aprilia eSR1 — MANQUE
 - Manque : source_image_urls
@@ -44,3 +44,47 @@ Coût mesuré : 285665 tokens entrée, 10480 sortie, 15 recherches web.
 | brake_type | drum_front_ebs_rear | distributeur | https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/ |  |
 | tire_section | 10x2.125 | revendeur | https://monsieurtrottinettes.be/fr/pneus/502-pneu-10x2125-aprilia-esr2-7427255405610.html | https://escootervision.eu/fr-eu/products/aprilia-esr2-reifen-set-mit-schlauch-yuanxing-10x2-125 |
 | tire_family | pneumatic | distributeur | https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/ |  |
+
+## Aprilia eSRZ — MANQUE
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+| amperage | 6 | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+| power_watts | 300 | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+| range_km | 20 | revendeur | https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz |  |
+| max_load_kg | 100 | revendeur | https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz |  |
+| year | 2023 | site_test | https://www.cleanrider.com/catalogue/trottinette-electrique/aprilia/aprilia-esrz/ |  |
+| weight_kg | 14 | revendeur | https://www.pccomponentes.fr/scooter-electrique-aprilia-esrz | https://platum.com/fr/produits/trottinettes-electriques/aprilia-fr/esrz-safe-ride/ |
+| suspension | Aucune | revendeur | https://www.ravate.com/high-tech/mobilite-urbaine/mobilite-urbaine/trottinette-electrique/85393888-trottinette-electrique-aprilia-esrz-8052679454785.html |  |
+| ip_rating | IPX5 | revendeur | https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz |  |
+| tire_size | 8,5 pouces à chambre à air (avant et arrière) | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+| foldable | true | revendeur | https://www.ravate.com/high-tech/mobilite-urbaine/mobilite-urbaine/trottinette-electrique/85393888-trottinette-electrique-aprilia-esrz-8052679454785.html |  |
+| wheel_inches | 8.5 | revendeur | https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz |  |
+| brake_type | ebs_front_disc_rear | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+| rim_diameter | 6.1 | revendeur | https://monsieurtrottinettes.be/en/tires/797-85x2-tire-50-75-61-aprilia-esrz-7427251491860.html | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/camera-daria-85-pollici-originale-per-monopattino-aprilia-esrz/ |
+| tire_section | 8.5x2 | revendeur | https://monsieurtrottinettes.be/en/tires/797-85x2-tire-50-75-61-aprilia-esrz-7427251491860.html | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/pneumatico-originale-di-ricambio-per-monopattino-aprilia-esrz-per-ruota-85-pollici-8-1-2-x-2-50-75-6-1/ |
+| tire_family | pneumatic | revendeur | https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811 |  |
+
+## Aprilia eSR2 Evo — MANQUE
+- Manque : source_image_urls
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| amperage | 14.4 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| power_watts | 500 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| range_km | 50 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| max_load_kg | 100 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| year | 2022 | site_test | https://www.cleanrider.com/catalogue/trottinette-electrique/aprilia/aprilia-esr2-evo/ |  |
+| weight_kg | 18.5 | revendeur | https://needrive.fr/products/trottinette-electrique-aprilia-esr2-evo | https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/ |
+| suspension | Avant et arrière | revendeur | https://www.franmarche.com/product/trottinette-electrique-aprilia-esr2-evo-500w-25km-h/ |  |
+| ip_rating | IPX4 | revendeur | https://needrive.fr/products/trottinette-electrique-aprilia-esr2-evo |  |
+| foldable | true | revendeur | https://www.franmarche.com/product/trottinette-electrique-aprilia-esr2-evo-500w-25km-h/ |  |
+| wheel_inches | 10 | revendeur | https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085 |  |
+| brake_type | drum_front_ebs_rear | distributeur | https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/ |  |
+| rim_diameter | 6.5 | revendeur | https://trotetunshop.fr/products/pneu-10x2-125 | https://youvelo.fr/vtt/851-pneu-10x25-65-cst-ducati-pro-2-evo.html |
+| tire_section | 10x2.125 | revendeur | https://monsieurtrottinettes.be/fr/89-aprilia-esr2 | https://trotetunshop.fr/products/pneu-10x2-125 |
+| tire_family | pneumatic | distributeur | https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/ |  |

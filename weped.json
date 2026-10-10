@@ -26,6 +26,59 @@
       "meta_title": "Weped Fold 3 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Weped Fold 3 : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "weped fold 3, pieces weped fold 3, disque frein weped fold 3, plaquettes weped fold 3, pneu weped fold 3"
+    },
+    {
+      "name": "Weped SSGT",
+      "slug": "weped-ssgt",
+      "voltage": 60,
+      "amperage": 30,
+      "power_watts": 20000,
+      "max_speed_private_kmh": 95,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 35,
+      "suspension": "Avant hydraulique, arrière à ressort",
+      "tire_size": "Pneu go-kart 130 mm",
+      "foldable": true,
+      "source_image_urls": [
+        "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348"
+      ],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Weped SSGT est une trottinette électrique sportive à double moteur brushless de 20 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah et des contrôleurs Kelly 7218s. Elle repose sur des pneus go-kart de 130 mm, des freins hydrauliques (ou à tambour) et des suspensions avant et arrière ; sa vitesse atteint 85 à 95 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Weped SSGT - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Weped SSGT : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "weped ssgt, pieces weped ssgt, disque frein weped ssgt, plaquettes weped ssgt, pneu weped ssgt"
+    },
+    {
+      "name": "Weped SS-T",
+      "slug": "weped-ss-t",
+      "voltage": 72,
+      "amperage": 45,
+      "power_watts": 10000,
+      "max_speed_private_kmh": 110,
+      "range_km": 150,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 52,
+      "suspension": "Suspensions avant et arrière à air comprimé (série LDPS)",
+      "tire_size": "130/40-6,5 (tubeless)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+        "https://scooterpassion.itplace.com/14276-large_default/trottinette-electrique-weped-sst.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "rim_diameter": "6.5",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Weped SS-T est une trottinette électrique sportive à double moteur brushless (10 000 W annoncés selon Pie Technologie), alimentée par une batterie Samsung 72 V 45 Ah (3 240 Wh) pour jusqu'à 150 km d'autonomie annoncée. Elle roule sur des pneus tubeless larges de type kart, avec freins à disque hydrauliques et suspensions avant et arrière ; sa vitesse maximale atteint 110 km/h sur terrain privé, la vitesse bridée à 25 km/h étant requise sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Weped SS-T - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Weped SS-T : plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "weped ss-t, pieces weped ss-t, disque frein weped ss-t, plaquettes weped ss-t, pneu weped ss-t"
     }
   ]
 }

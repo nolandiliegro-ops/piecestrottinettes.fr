@@ -29,6 +29,34 @@
       "meta_title": "Ducati Pro-III - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Ducati Pro-III : disque de frein 120 mm 6 trous, plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "ducati pro-iii, pieces ducati pro-iii, disque frein ducati pro-iii, plaquettes ducati pro-iii, pneu ducati pro-iii"
+    },
+    {
+      "name": "Ducati Pro-II Evo",
+      "slug": "ducati-pro-ii-evo",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 350,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.7,
+      "suspension": "Suspension avant et arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "10\" tubeless (avant et arrière)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://fixwheel.fr/cdn/shop/files/PRO-IIEVO.png?v=1780498457"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Ducati Pro-II Evo est une trottinette électrique pliable à cadre en alliage de magnésium, équipée d'un moteur brushless de 350 W (515 W en crête) et d'une batterie 36 V 10,4 Ah (374 Wh) pour jusqu'à 40 km d'autonomie. Elle dispose de pneus tubeless de 10 pouces, d'une double suspension avant et arrière, d'un frein électronique avant et d'un frein à disque arrière, avec une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ducati Pro-II Evo - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ducati Pro-II Evo : plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ducati pro-ii evo, pieces ducati pro-ii evo, disque frein ducati pro-ii evo, plaquettes ducati pro-ii evo, pneu ducati pro-ii evo"
     }
   ]
 }

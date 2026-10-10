@@ -1,8 +1,8 @@
 # Extraction Adrya — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 336809 tokens entrée, 9231 sortie, 16 recherches web.
+Coût mesuré : 52880 tokens entrée, 432 sortie, 3 recherches web.
 
 ## Adrya TWAir — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes

@@ -29,6 +29,66 @@
       "meta_title": "Halo Knight T108 Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Halo Knight T108 Pro : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "halo knight t108 pro, pieces halo knight t108 pro, disque frein halo knight t108 pro, plaquettes halo knight t108 pro, pneu halo knight t108 pro"
+    },
+    {
+      "name": "Halo Knight T108",
+      "slug": "halo-knight-t108",
+      "voltage": 52,
+      "amperage": 28.8,
+      "power_watts": 2400,
+      "max_speed_private_kmh": 65,
+      "range_km": 58,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 35,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "10 pouces (pneus pneumatiques route)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://media.rueducommerce.fr/mktp/product/productImage/3/194/36a4e82822e84873bb39ae375ea3133d.webp"
+      ],
+      "brake_type": "disc_hydraulic",
+      "rim_diameter": "6",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Halo Knight T108 est une trottinette électrique pliable à double moteur 1200 W (2400 W au total), alimentée par une batterie 52 V 28,8 Ah pour environ 58 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces, avec suspensions avant et arrière et freins hydrauliques avant et arrière. Sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Halo Knight T108 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Halo Knight T108 : plaquettes, pneus 10x2.50, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "halo knight t108, pieces halo knight t108, disque frein halo knight t108, plaquettes halo knight t108, pneu halo knight t108"
+    },
+    {
+      "name": "Halo Knight T104",
+      "slug": "halo-knight-t104",
+      "voltage": 52,
+      "amperage": 21,
+      "power_watts": 2400,
+      "max_speed_private_kmh": 65,
+      "range_km": 45,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 29.7,
+      "suspension": "Ressorts avant et arrière",
+      "ip_rating": "IP54",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.haloknights.com/cdn/shop/files/T104_4.png?v=1766721339",
+        "https://img.gkbcdn.com/p/2024-07-15/Halo-Knight-T104-Electric-Scooter-10000522-0._w315_.jpg"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "rim_diameter": "6",
+      "tire_section": "80/65",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Halo Knight T104 (version améliorée) est une trottinette électrique à double moteur de 2 x 1200 W (2400 W de puissance crête), alimentée par une batterie 52V 21Ah pour une autonomie annoncée de 45 km. Elle repose sur des roues de 10 pouces, une suspension à ressorts avant et arrière et des freins à disque, pour un poids net d'environ 29,7 kg ; la vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors bridage, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Halo Knight T104 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Halo Knight T104 : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "halo knight t104, pieces halo knight t104, disque frein halo knight t104, plaquettes halo knight t104, pneu halo knight t104"
     }
   ]
 }

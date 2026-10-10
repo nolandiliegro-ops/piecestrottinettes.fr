@@ -430,6 +430,526 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Weped SSGT",
+        "slug": "weped-ssgt",
+        "voltage": 60,
+        "amperage": 30,
+        "power_watts": 20000,
+        "max_speed_private_kmh": 95,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 35,
+        "suspension": "Avant hydraulique, arrière à ressort",
+        "tire_size": "Pneu go-kart 130 mm",
+        "foldable": true,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Weped SSGT est une trottinette électrique sportive à double moteur brushless de 20 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah et des contrôleurs Kelly 7218s. Elle repose sur des pneus go-kart de 130 mm, des freins hydrauliques (ou à tambour) et des suspensions avant et arrière ; sa vitesse atteint 85 à 95 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped SSGT - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped SSGT : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped ssgt, pieces weped ssgt, disque frein weped ssgt, plaquettes weped ssgt, pneu weped ssgt"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur",
+          "url2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah"
+        },
+        "suspension": {
+          "url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35,
+            "source_url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 20000,
+            "source_url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 95,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_url_2": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_size": {
+            "value": "Pneu go-kart 130 mm",
+            "source_url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant hydraulique, arrière à ressort",
+            "source_url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped SSGT est une trottinette électrique sportive à double moteur brushless de 20 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah et des contrôleurs Kelly 7218s. Elle repose sur des pneus go-kart de 130 mm, des freins hydrauliques (ou à tambour) et des suspensions avant et arrière ; sa vitesse atteint 85 à 95 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+            "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+            "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Weped SS-T",
+        "slug": "weped-ss-t",
+        "voltage": 72,
+        "amperage": 45,
+        "power_watts": 10000,
+        "max_speed_private_kmh": 110,
+        "range_km": 150,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 52,
+        "suspension": "Suspensions avant et arrière à air comprimé (série LDPS)",
+        "tire_size": "130/40-6,5 (tubeless)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+          "https://scooterpassion.itplace.com/14276-large_default/trottinette-electrique-weped-sst.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "rim_diameter": "6.5",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Weped SS-T est une trottinette électrique sportive à double moteur brushless (10 000 W annoncés selon Pie Technologie), alimentée par une batterie Samsung 72 V 45 Ah (3 240 Wh) pour jusqu'à 150 km d'autonomie annoncée. Elle roule sur des pneus tubeless larges de type kart, avec freins à disque hydrauliques et suspensions avant et arrière ; sa vitesse maximale atteint 110 km/h sur terrain privé, la vitesse bridée à 25 km/h étant requise sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped SS-T - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped SS-T : plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped ss-t, pieces weped ss-t, disque frein weped ss-t, plaquettes weped ss-t, pneu weped ss-t"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur",
+          "url2": "https://zoomride.com/weped-sst-electric-scooter/"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 160,
+          "url": "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 52,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://zoomride.com/weped-sst-electric-scooter/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://www.wee-bot.com/products/batterie-72v-trottinette-electrique-ss-t-ss-r-weped",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 45,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://www.wee-bot.com/products/batterie-72v-trottinette-electrique-ss-t-ss-r-weped",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 10000,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 110,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://kit-moto.com/produit/trottinette-electrique-weeped-ss-t-weebot-x-weped-haut-de-gamme/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://kit-moto.com/produit/trottinette-electrique-weeped-ss-t-weebot-x-weped-haut-de-gamme/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://forum.madcharge.com/d/30-weped-sst-specifications",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "130/40-6,5 (tubeless)",
+            "source_url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspensions avant et arrière à air comprimé (série LDPS)",
+            "source_url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://scooter.guide/weped-sst-review/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped SS-T est une trottinette électrique sportive à double moteur brushless (10 000 W annoncés selon Pie Technologie), alimentée par une batterie Samsung 72 V 45 Ah (3 240 Wh) pour jusqu'à 150 km d'autonomie annoncée. Elle roule sur des pneus tubeless larges de type kart, avec freins à disque hydrauliques et suspensions avant et arrière ; sa vitesse maximale atteint 110 km/h sur terrain privé, la vitesse bridée à 25 km/h étant requise sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html",
+            "https://kit-moto.com/produit/trottinette-electrique-weeped-ss-t-weebot-x-weped-haut-de-gamme/"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+            "https://scooterpassion.itplace.com/14276-large_default/trottinette-electrique-weped-sst.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_url_2": "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+            "source_url_2": "https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

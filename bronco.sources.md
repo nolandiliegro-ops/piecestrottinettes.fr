@@ -1,8 +1,8 @@
 # Extraction Bronco — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 285496 tokens entrée, 11293 sortie, 17 recherches web.
+Coût mesuré : 256555 tokens entrée, 4479 sortie, 12 recherches web.
 
 ## Bronco Xtreme 11 — PRÊT
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.5 · tire_section=90/65
@@ -48,3 +48,13 @@ Coût mesuré : 285496 tokens entrée, 11293 sortie, 17 recherches web.
 | rim_diameter | 6.5 | distributeur | https://fastride.fr/en/79-bronco-vnom | https://esp81.com/products/pneu-cst-tubeless-90-65-6-5 |
 | tire_section | 90/65 | distributeur | https://fastride.fr/en/79-bronco-vnom | https://esp81.com/products/pneu-cst-tubeless-90-65-6-5 |
 | tire_family | pneumatic | distributeur | https://hypedrides.com.au/products/bronco-vnom-11 |  |
+
+## Bronco Vnom 10 — MANQUE
+- Manque : weight_kg, brake_type, source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 72 | revendeur | https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html |  |
+| amperage | 35 | revendeur | https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html |  |
+| wheel_inches | 10 | revendeur | https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html |  |

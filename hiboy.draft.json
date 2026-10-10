@@ -539,6 +539,264 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Hiboy MAX Pro",
+        "slug": "hiboy-max-pro",
+        "voltage": 48,
+        "amperage": 14.5,
+        "power_watts": 500,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "11.0\" x 2.75\" (pneu tubeless gel, auto-réparant)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528"
+        ],
+        "brake_type": "drum",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Hiboy MAX Pro (version européenne) est équipée d'un moteur Bosch de 500 W nominal et d'une batterie 48 V 14,5 Ah pour une autonomie annoncée de 55 km. Elle roule sur des pneus tubeless de 11 pouces à gel auto-réparant, avec suspensions avant et arrière, freins à tambour avant/arrière et frein électronique. Sa vitesse est bridée à 25 km/h pour la conformité européenne, et elle supporte jusqu'à 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hiboy MAX Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hiboy MAX Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hiboy max pro, pieces hiboy max pro, disque frein hiboy max pro, plaquettes hiboy max pro, pneu hiboy max pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://www.alphaproscooters.com/products/hiboy-max-pro-solid-tire"
+        }
+      ],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 25.3,
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25.3,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 14.5,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.openpr.com/news/4478976/hiboy-introduces-max-pro-electric-scooter-with-bosch-motor",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.openpr.com/news/4478976/hiboy-introduces-max-pro-electric-scooter-with-bosch-motor",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.openpr.com/news/4478976/hiboy-introduces-max-pro-electric-scooter-with-bosch-motor",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11.0\" x 2.75\" (pneu tubeless gel, auto-réparant)",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hiboy MAX Pro (version européenne) est équipée d'un moteur Bosch de 500 W nominal et d'une batterie 48 V 14,5 Ah pour une autonomie annoncée de 55 km. Elle roule sur des pneus tubeless de 11 pouces à gel auto-réparant, avec suspensions avant et arrière, freins à tambour avant/arrière et frein électronique. Sa vitesse est bridée à 25 km/h pour la conformité européenne, et elle supporte jusqu'à 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.openpr.com/news/4478976/hiboy-introduces-max-pro-electric-scooter-with-bosch-motor",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult"
+          ],
+          "_og_images": [
+            "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://centralscoot.com/products/hiboy-max-pro-1",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://hyperrides.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://www.alphaproscooters.com/products/hiboy-max-pro-solid-tire",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 1
+    }
+  }
 }

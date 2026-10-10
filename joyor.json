@@ -32,6 +32,33 @@
       "meta_title": "Joyor S10-S-Z - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Joyor S10-S-Z : disque de frein 120 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "joyor s10-s-z, pieces joyor s10-s-z, disque frein joyor s10-s-z, plaquettes joyor s10-s-z, pneu joyor s10-s-z"
+    },
+    {
+      "name": "Joyor T6",
+      "slug": "joyor-t6",
+      "voltage": 48,
+      "amperage": 18,
+      "power_watts": 600,
+      "max_speed_private_kmh": 48,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 25.6,
+      "suspension": "Suspension hydraulique à ressort avant et arrière",
+      "tire_size": "10x2.50-6",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://wellbots.fr/cdn/shop/files/1e657c4b44a0efbd83080d6105169066.webp?v=1762533768"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 120,
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Joyor T6 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W et d'une batterie 48 V 18 Ah, annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus pneumatiques tout-terrain de 10 pouces, avec double suspension hydraulique à ressort et freins à disque mécaniques avant et arrière. Sa vitesse est bridée à 25 km/h d'origine (jusqu'à 48 km/h une fois la limitation levée, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Joyor T6 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Joyor T6 : disque de frein 120 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "joyor t6, pieces joyor t6, disque frein joyor t6, plaquettes joyor t6, pneu joyor t6"
     }
   ]
 }

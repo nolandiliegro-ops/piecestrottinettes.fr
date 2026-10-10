@@ -573,6 +573,564 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Halo Knight T108",
+        "slug": "halo-knight-t108",
+        "voltage": 52,
+        "amperage": 28.8,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 65,
+        "range_km": 58,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 35,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces (pneus pneumatiques route)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://media.rueducommerce.fr/mktp/product/productImage/3/194/36a4e82822e84873bb39ae375ea3133d.webp"
+        ],
+        "brake_type": "disc_hydraulic",
+        "rim_diameter": "6",
+        "tire_section": "10x2.50",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Halo Knight T108 est une trottinette électrique pliable à double moteur 1200 W (2400 W au total), alimentée par une batterie 52 V 28,8 Ah pour environ 58 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces, avec suspensions avant et arrière et freins hydrauliques avant et arrière. Sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Halo Knight T108 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Halo Knight T108 : plaquettes, pneus 10x2.50, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "halo knight t108, pieces halo knight t108, disque frein halo knight t108, plaquettes halo knight t108, pneu halo knight t108"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/9000921814"
+        },
+        "suspension": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921814",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.rueducommerce.fr/mktp/product/productImage/3/194/36a4e82822e84873bb39ae375ea3133d.webp",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.haloknights.com/fr/products/tuovt-80-65-6-pneu-de-route-gonflable-pour-t104-t108",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108"
+        },
+        "tire_section": {
+          "url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/produit/chambre-a-air-renforcee-10x2-5-vsett-10-zero-10x-kaabo-mantis"
+        },
+        "tire_family": {
+          "url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 140,
+          "url": "https://www.haloknights.com/en-us/products/brake-disc"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.boulanger.com/ref/9000921814",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24073948006.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 28.8,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349039605.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.boulanger.com/ref/9000921814",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC349039605.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 58,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t108-review",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.boulanger.com/ref/9000921814",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.boulanger.com/ref/9000921814",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces (pneus pneumatiques route)",
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-halo/f-1214801-aaatg77211.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": "https://www.boulanger.com/ref/9000921814",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921814",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24073948006.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Halo Knight T108 est une trottinette électrique pliable à double moteur 1200 W (2400 W au total), alimentée par une batterie 52 V 28,8 Ah pour environ 58 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces, avec suspensions avant et arrière et freins hydrauliques avant et arrière. Sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921814",
+            "https://www.darty.com/nav/achat/ref/MC349039605.html",
+            "https://www.rueducommerce.fr/p/m24073948006.html"
+          ],
+          "_og_images": [
+            "https://media.rueducommerce.fr/mktp/product/productImage/3/194/36a4e82822e84873bb39ae375ea3133d.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T108-Electric-Scooter-10-inch-Road-Tires-521959.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.haloknights.com/en-us/products/brake-disc",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": "https://www.haloknights.com/en-us/products/brake-pads-for-halo-knight-scooters",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": "10x2.50",
+            "source_url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+            "source_url_2": "https://e-watts.fr/produit/chambre-a-air-renforcee-10x2-5-vsett-10-zero-10x-kaabo-mantis",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.haloknights.com/fr/products/tuovt-80-65-6-pneu-de-route-gonflable-pour-t104-t108",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.haloknights.com/fr/products/halo-knight-t108-scooter-electrique-52v-2000w-28-8ah",
+            "source_url_2": "https://www.fnac.com/mp53935113/Trottinette-Electrique-HALO-KNIGHT-T108-52V-28-8Ah-Double-Moteur-NoiretBleu/w-4",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Halo Knight T104",
+        "slug": "halo-knight-t104",
+        "voltage": 52,
+        "amperage": 21,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 65,
+        "range_km": 45,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 29.7,
+        "suspension": "Ressorts avant et arrière",
+        "ip_rating": "IP54",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.haloknights.com/cdn/shop/files/T104_4.png?v=1766721339",
+          "https://img.gkbcdn.com/p/2024-07-15/Halo-Knight-T104-Electric-Scooter-10000522-0._w315_.jpg"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Halo Knight T104 (version améliorée) est une trottinette électrique à double moteur de 2 x 1200 W (2400 W de puissance crête), alimentée par une batterie 52V 21Ah pour une autonomie annoncée de 45 km. Elle repose sur des roues de 10 pouces, une suspension à ressorts avant et arrière et des freins à disque, pour un poids net d'environ 29,7 kg ; la vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors bridage, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Halo Knight T104 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Halo Knight T104 : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "halo knight t104, pieces halo knight t104, disque frein halo knight t104, plaquettes halo knight t104, pneu halo knight t104"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.haloknights.com/fr/products/trottinette-electrique-t104?_pos=11&_sid=e27c21dfb&_ss=r",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.haloknights.com/it-eu/products/halo-knight-t104-52v-2000w-21ah-scooter-elettrico-doppio-motore-1",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://scooterrank.com/scooters/halo-knight-t104",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://scooterrank.com/scooters/halo-knight-t104"
+        },
+        "suspension": {
+          "url": "https://www.ebay.com/itm/127471840747",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.haloknights.com/it-eu/products/halo-knight-t104-52v-2000w-21ah-scooter-elettrico-doppio-motore-1",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.haloknights.com/cdn/shop/files/T104_4.png?v=1766721339",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.promorider.fr/product-page/halo-knight-t104",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.haloknights.com/en-us/products/brake-disc",
+          "type": "constructeur",
+          "url2": "https://promotrott.com/halo-knight-bg/"
+        },
+        "rim_diameter": {
+          "url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108"
+        },
+        "tire_section": {
+          "url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108"
+        },
+        "tire_family": {
+          "url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 21,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://www.ebay.com/itm/127471840747",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://www.ebay.com/itm/127471840747",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.haloknights.com/fr/products/trottinette-electrique-t104?_pos=11&_sid=e27c21dfb&_ss=r",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 29.7,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.haloknights.com/it-eu/products/halo-knight-t104-52v-2000w-21ah-scooter-elettrico-doppio-motore-1",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Ressorts avant et arrière",
+            "source_url": "https://www.ebay.com/itm/127471840747",
+            "source_url_2": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.haloknights.com/it-eu/products/halo-knight-t104-52v-2000w-21ah-scooter-elettrico-doppio-motore-1",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_url_2": "https://www.ebay.com/itm/127471840747",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://scooterrank.com/scooters/halo-knight-t104",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Halo Knight T104 (version améliorée) est une trottinette électrique à double moteur de 2 x 1200 W (2400 W de puissance crête), alimentée par une batterie 52V 21Ah pour une autonomie annoncée de 45 km. Elle repose sur des roues de 10 pouces, une suspension à ressorts avant et arrière et des freins à disque, pour un poids net d'environ 29,7 kg ; la vitesse est bridée à 25 km/h en usage routier (jusqu'à 65 km/h hors bridage, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.haloknights.com/en-us/products/t104-electric-scooter",
+            "https://fr.geekbuying.com/item/Halo-Knight-T104-Electric-Scooter-520845.html",
+            "https://www.trottnshop.com/produit/halo-knight-t104/"
+          ],
+          "_og_images": [
+            "http://www.haloknights.com/cdn/shop/files/T104_4.png?v=1766721339",
+            "https://img.gkbcdn.com/p/2024-07-15/Halo-Knight-T104-Electric-Scooter-10000522-0._w315_.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.promorider.fr/product-page/halo-knight-t104",
+            "source_url_2": "https://www.oolactive.com/blogs/buying-guides/faqs-on-the-halo-knight-t104-electric-scooter-worth-buying",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.haloknights.com/en-us/products/brake-disc",
+            "source_url_2": "https://promotrott.com/halo-knight-bg/",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t102-t102-pro-t104-t108",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.haloknights.com/en-us/products/tuovt-80-65-6-inflatable-road-tire-for-t102-t104-t108",
+            "source_url_2": "https://fr.geekbuying.com/item/Halo-Knight-T104-Trottinette-electrique-10000522.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

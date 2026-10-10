@@ -85,3 +85,16 @@
 - 2026-10-10T08:55:45.552Z · Teverun · AJOUT +2 · OK · 1.6 min
 - 2026-10-10T14:39:44.964Z · Engwe · PASSE PNEUS · +1 section(s) sur 2 · 0.3 min · 185275 in / 2203 out / 10 rech.
 - 2026-10-10T14:40:16.379Z · Navee · PASSE PNEUS · +0 section(s) sur 3 · 0.5 min · 429972 in / 3304 out / 19 rech.
+- 2026-10-10T15:23:21.894Z · Micro · AJOUT +2 · OK · 1.5 min · 315825 in / 11302 out / 16 rech · +0 prêt · cumul run 327127 tokens
+- 2026-10-10T15:24:45.088Z · Wispeed · AJOUT +2 · OK · 1.4 min · 286290 in / 9682 out / 17 rech · +2 prêt · cumul run 623099 tokens
+- 2026-10-10T15:26:39.995Z · Joyor · AJOUT +2 · OK · 1.9 min · 299307 in / 11786 out / 17 rech · +1 prêt · cumul run 934192 tokens
+- 2026-10-10T15:28:31.205Z · Ducati · AJOUT +2 · OK · 1.9 min · 343986 in / 14731 out / 18 rech · +1 prêt · cumul run 1292909 tokens
+- 2026-10-10T15:30:03.093Z · Yeep.me · AJOUT +2 · OK · 1.5 min · 231152 in / 11120 out / 15 rech · +0 prêt · cumul run 1535181 tokens
+- 2026-10-10T15:30:11.914Z · Adrya · AJOUT +2 · OK · 0.1 min · 52880 in / 432 out / 3 rech · +0 prêt · cumul run 1588493 tokens
+- 2026-10-10T15:31:35.323Z · Weped · AJOUT +2 · OK · 1.4 min · 280342 in / 10945 out / 18 rech · +2 prêt · cumul run 1879780 tokens
+- 2026-10-10T15:32:19.563Z · Bronco · AJOUT +2 · OK · 0.7 min · 256555 in / 4479 out / 12 rech · +0 prêt · cumul run 2140814 tokens
+- 2026-10-10T15:33:05.811Z · Hiboy · AJOUT +2 · OK · 0.8 min · 248644 in / 5252 out / 11 rech · +0 prêt · cumul run 2394710 tokens
+- 2026-10-10T15:34:46.211Z · Halo Knight · AJOUT +2 · OK · 1.7 min · 281097 in / 11886 out / 15 rech · +2 prêt · cumul run 2687693 tokens
+- 2026-10-10T15:34:56.843Z · Beaster · AJOUT +2 · OK · 0.2 min · 52366 in / 634 out / 3 rech · +0 prêt · cumul run 2740693 tokens
+- 2026-10-10T15:36:26.019Z · Aprilia · AJOUT +2 · OK · 1.5 min · 306513 in / 11167 out / 17 rech · +0 prêt · cumul run 3058373 tokens
+- 2026-10-10T15:36:26.019Z · ARRÊT : plafond 3000000 tokens atteint (3058373)

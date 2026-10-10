@@ -506,6 +506,503 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Micro Merlin",
+        "slug": "micro-merlin",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 500,
+        "max_speed_private_kmh": 33,
+        "range_km": 25,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 12,
+        "suspension": "Double suspension avant et arrière (ressorts)",
+        "ip_rating": "IP54",
+        "tire_size": "200 mm (8 pouces), pneus pleins anti-crevaison (Airless)",
+        "foldable": true,
+        "wheel_inches": 8,
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "La Micro Merlin est une trottinette électrique pliable équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium 36 V / 7,8 Ah, pour une autonomie annoncée de 25 km. Elle roule sur deux roues pleines anti-crevaison de 8 pouces (200 mm) avec suspensions avant et arrière, et freine avec un frein moteur, un frein tambour arrière et un frein au pied. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Micro Merlin - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Micro Merlin : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "micro merlin, pieces micro merlin, disque frein micro merlin, plaquettes micro merlin, pneu micro merlin"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://store.urban360.com/produit/micro-merlin-trottinette-electrique/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+          "type": "revendeur",
+          "url2": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316"
+        },
+        "suspension": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.micro-mobility.fr/img/cms/fiche%20nouvelle-micro-merlin%20.pdf",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "brake_type",
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 12,
+            "source_url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "source_url_2": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316"
+          ],
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_url_2": "https://alternative.bike/635-trottinette-electrique-micro-merlin.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_url_2": "https://alternative.bike/635-trottinette-electrique-micro-merlin.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/micro-merlin-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 33,
+            "source_url": "https://store.urban360.com/produit/micro-merlin-trottinette-electrique/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_url_2": "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-suisse-micro-merlin.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "200 mm (8 pouces), pneus pleins anti-crevaison (Airless)",
+            "source_url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "source_url_2": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière (ressorts)",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_url_2": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/micro-merlin-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Micro Merlin est une trottinette électrique pliable équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium 36 V / 7,8 Ah, pour une autonomie annoncée de 25 km. Elle roule sur deux roues pleines anti-crevaison de 8 pouces (200 mm) avec suspensions avant et arrière, et freine avec un frein moteur, un frein tambour arrière et un frein au pied. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+            "source_type": "revendeur"
+          },
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.micro-mobility.fr/img/cms/fiche%20nouvelle-micro-merlin%20.pdf",
+            "source_url_2": "https://alternative.bike/635-trottinette-electrique-micro-merlin.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Micro Explorer",
+        "slug": "micro-explorer",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 500,
+        "max_speed_private_kmh": 30,
+        "range_km": 30,
+        "max_load_kg": 100,
+        "year": 2021,
+        "max_speed_kmh": 25,
+        "weight_kg": 13.5,
+        "suspension": "Avant et arrière, réglables selon le poids du conducteur",
+        "ip_rating": "IP54",
+        "tire_size": "8 pouces / 200 mm (pneus pleins)",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "https://micro-mobility.newquest.fr/9311/trottinette-electrique-micro-explorer.jpg"
+        ],
+        "score_offroad": 23,
+        "description": "La Micro Explorer (EM0036) est équipée d'un moteur brushless de 500 W max. et d'une batterie lithium-ion à cellules LG de 36 V / 7,8 Ah (280 Wh), pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus pleins de 8 pouces (200 mm) avec suspensions avant et arrière réglables, freinage électrique régénératif, frein à main et frein au pied. Sa vitesse est bridée à 25 km/h en France (jusqu'à 30 km/h en débridé hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Micro Explorer - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Micro Explorer : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "micro explorer, pieces micro explorer, disque frein micro explorer, plaquettes micro explorer, pneu micro explorer"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://micro-mobility.newquest.fr/1465-trottinette-electrique-micro-explorer.html",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+          "type": "revendeur",
+          "url2": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0"
+        },
+        "suspension": {
+          "url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://micro-mobility.newquest.fr/9311/trottinette-electrique-micro-explorer.jpg",
+          "type": "image"
+        }
+      },
+      "missing": [
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 13.5,
+            "source_url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_url_2": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_url_2": "https://www.electro-habitat.com/habitat/trottinette/electrique/micro-mobility/micro-explorer",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_url_2": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://micro-mobility.newquest.fr/1465-trottinette-electrique-micro-explorer.html",
+            "source_url_2": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+            "source_url_2": "https://www.billy.be/products/micro-explorer-trottinette-electrique-adulte",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+            "source_url_2": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_url_2": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_url_2": "https://www.electro-habitat.com/habitat/trottinette/electrique/micro-mobility/micro-explorer",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8 pouces / 200 mm (pneus pleins)",
+            "source_url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_url_2": "https://www.micro-mobility.fr/1465-trottinette-electrique-micro-explorer.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière, réglables selon le poids du conducteur",
+            "source_url": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+            "source_url_2": "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0",
+            "source_url_2": "https://www.billy.be/products/micro-explorer-trottinette-electrique-adulte",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_url_2": "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2021,
+            "source_url": "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Micro Explorer (EM0036) est équipée d'un moteur brushless de 500 W max. et d'une batterie lithium-ion à cellules LG de 36 V / 7,8 Ah (280 Wh), pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus pleins de 8 pouces (200 mm) avec suspensions avant et arrière réglables, freinage électrique régénératif, frein à main et frein au pied. Sa vitesse est bridée à 25 km/h en France (jusqu'à 30 km/h en débridé hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://micro-mobility.newquest.fr/1465-trottinette-electrique-micro-explorer.html",
+            "source_url_2": "https://www.micro-mobility.com/en/news/swiss-pioneer-micro-presents-its-latest-e-scooter-flagship-the-micro-explorer",
+            "source_type": "distributeur"
+          },
+          "image_urls": [
+            "https://micro-mobility.newquest.fr/9311/trottinette-electrique-micro-explorer.jpg"
+          ],
+          "product_page_urls": [
+            "https://micro-mobility.newquest.fr/1465-trottinette-electrique-micro-explorer.html",
+            "https://www.galaxus.ch/en/s3/product/micro-explorer-20-kmh-30-km-500-w-e-scooters-standing-14654543",
+            "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

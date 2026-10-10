@@ -1,8 +1,8 @@
 # Extraction Beaster — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 382940 tokens entrée, 10425 sortie, 18 recherches web.
+Coût mesuré : 52366 tokens entrée, 634 sortie, 3 recherches web.
 
 ## Beaster BS09 — MANQUE
 - Manque : source_image_urls

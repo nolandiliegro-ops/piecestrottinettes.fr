@@ -1,8 +1,8 @@
 # Extraction Wispeed — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
+Coût mesuré : 286290 tokens entrée, 9682 sortie, 17 recherches web.
 
 ## Wispeed SUVPILOT 150R — MANQUE
 - Manque : source_image_urls
@@ -45,3 +45,45 @@ Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
 | rim_diameter | 6 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 | https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/ |
 | tire_section | 10x2.125 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 | https://trott-en-provence.fr/pneu-wispeed-airo-v10/ |
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
+
+## Wispeed AIRO V16 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : rim_diameter=6
+- Une seule source, NON importé : rim_diameter=6 (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
+- Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| amperage | 15.6 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| power_watts | 400 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| range_km | 60 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| max_load_kg | 120 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| weight_kg | 20.5 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v16_black.html |
+| suspension | Avant et arrière | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| ip_rating | IP65 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| foldable | true | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| wheel_inches | 10 | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg |  |
+| brake_type | ebs_front_disc_rear | constructeur | https://www.wispeed.net/fr/blog/freins-a-disque-ou-freins-a-tambour--n11 |  |
+| tire_section | 10x2.125 | revendeur | https://www.trottpneu.fr/collections/pneus-wispeed-c10 | https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-wipeed-airo-v10-v13-v16 |
+| tire_family | pneumatic | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
+
+## Wispeed AIRO V6 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| amperage | 6 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| power_watts | 350 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| range_km | 20 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| max_load_kg | 100 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| weight_kg | 15.5 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html | https://www.carrefour.fr/p/trottinette-electrique-airo-v6-wispeed-3483070027585 |
+| suspension | Avant | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| ip_rating | IP65 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| foldable | true | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| wheel_inches | 8.5 | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg |  |
+| brake_type | ebs_front_disc_rear | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |
+| tire_family | pneumatic | constructeur | https://www.wispeed.net/3349-trottinette-airo-v6.html |  |

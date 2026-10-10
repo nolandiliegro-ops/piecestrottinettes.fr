@@ -538,6 +538,193 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Bronco Vnom 10",
+        "slug": "bronco-vnom-10",
+        "voltage": 72,
+        "amperage": 35,
+        "max_speed_kmh": 25,
+        "wheel_inches": 10,
+        "score_offroad": 35,
+        "description": "La Bronco Vnom 10 (Vnom Fury 10 pouces) est une trottinette électrique à double moteur équipée d'une batterie 72 V 35 Ah Panasonic, d'un châssis tubulaire, de roues de 10 pouces et d'un amortisseur de direction. Elle est annoncée entre 85 et 95 km/h sur terrain privé et reste bridée à 25 km/h sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Bronco Vnom 10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Bronco Vnom 10 : plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "bronco vnom 10, pieces bronco vnom 10, disque frein bronco vnom 10, plaquettes bronco vnom 10, pneu bronco vnom 10"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "brake_type",
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.ricardo.ch/fr/a/trottinette-electrique-bronco-vnom-fury-1292955070/"
+          },
+          "amperage": {
+            "value": 35,
+            "source_url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.ricardo.ch/fr/a/trottinette-electrique-bronco-vnom-fury-1292955070/"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://city-ride.fr/trottinettes-electriques/bronco/"
+          },
+          "power_watts": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Bronco Vnom 10 (Vnom Fury 10 pouces) est une trottinette électrique à double moteur équipée d'une batterie 72 V 35 Ah Panasonic, d'un châssis tubulaire, de roues de 10 pouces et d'un amortisseur de direction. Elle est annoncée entre 85 et 95 km/h sur terrain privé et reste bridée à 25 km/h sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.ricardo.ch/fr/a/trottinette-electrique-bronco-vnom-fury-1292955070/"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.emoovservices.fr/2-accueil/669-bronco-vnom-fury-72v-35ah.html",
+            "https://www.e-moov-services.fr/accueil/669-bronco-vnom-fury-72v-35ah.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 1
+    }
+  }
 }

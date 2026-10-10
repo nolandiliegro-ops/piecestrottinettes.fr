@@ -569,6 +569,545 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Joyor S5-Z",
+        "slug": "joyor-s5-z",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 600,
+        "max_speed_private_kmh": 45,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 22.5,
+        "suspension": "Double suspension avant et arrière (bras oscillant)",
+        "tire_size": "10 x 3 pouces",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_unknown_actuation",
+        "tire_section": "10x3.00",
+        "tire_family": "pneumatic",
+        "score_offroad": 43,
+        "description": "La Joyor S5-Z est équipée d'un moteur sans balais de 600 W (810 W en pointe) alimenté par une batterie lithium 48 V 13 Ah, pour une autonomie annoncée jusqu'à 55 km. Elle roule sur des pneus pneumatiques de 10 x 3 pouces avec double suspension avant et arrière et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Joyor S5-Z - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Joyor S5-Z : plaquettes, pneus 10x3.00, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "joyor s5-z, pieces joyor s5-z, disque frein joyor s5-z, plaquettes joyor s5-z, pneu joyor s5-z"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.boulanger.com/ref/9000921736",
+          "type": "revendeur",
+          "url2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/joyor-s5-z-trottinette-electrique-pliable-mote/f-1214801-aablj55203.html"
+        },
+        "suspension": {
+          "url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.boulanger.com/ref/9000921736",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921736",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_section": {
+          "url": "https://joyorscooter.com/products/air-tire-off-road-s5-s10-s",
+          "type": "constructeur",
+          "url2": "https://www.oolactive.com/products/joyor-s5-z-electric-scooter"
+        },
+        "tire_family": {
+          "url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 120,
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22.5,
+            "source_url": "https://www.boulanger.com/ref/9000921736",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/joyor-s5-z-trottinette-electrique-pliable-mote/f-1214801-aablj55203.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_url_2": "https://www.boulanger.com/ref/9000921736",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_url_2": "https://www.boulanger.com/ref/9000921736",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/joyor-s5-z-trottinette-electrique-pliable-mote/f-1214801-aablj55203.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000921736",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000921736",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 3 pouces",
+            "source_url": "https://www.boulanger.com/ref/9000921736",
+            "source_url_2": "https://www.fnac.com/mp53241201/Trottinette-electrique-JOYOR-S5-Z-default-25-km-h-Noir/w-4",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière (bras oscillant)",
+            "source_url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_url_2": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921736",
+            "source_url_2": "https://www.fnac.com/mp53241201/Trottinette-electrique-JOYOR-S5-Z-default-25-km-h-Noir/w-4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Joyor S5-Z est équipée d'un moteur sans balais de 600 W (810 W en pointe) alimenté par une batterie lithium 48 V 13 Ah, pour une autonomie annoncée jusqu'à 55 km. Elle roule sur des pneus pneumatiques de 10 x 3 pouces avec double suspension avant et arrière et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "source_url_2": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://joyor.fr/fr/modele-s/49-trottinette-electrique-joyor-s5-z-600w-48v-13ah-7444855345344.html",
+            "https://www.boulanger.com/ref/9000921736",
+            "https://www.fnac.com/mp53241201/Trottinette-electrique-JOYOR-S5-Z-default-25-km-h-Noir/w-4"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://www.oolactive.com/products/joyor-s5-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://joyorscooter.com/products/air-tire-off-road-s5-s10-s",
+            "source_url_2": "https://www.oolactive.com/products/joyor-s5-z-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+            "source_url_2": "https://joyorscooter.us/products/joyor-s5-z-all-terrain-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Joyor T6",
+        "slug": "joyor-t6",
+        "voltage": 48,
+        "amperage": 18,
+        "power_watts": 600,
+        "max_speed_private_kmh": 48,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 25.6,
+        "suspension": "Suspension hydraulique à ressort avant et arrière",
+        "tire_size": "10x2.50-6",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://wellbots.fr/cdn/shop/files/1e657c4b44a0efbd83080d6105169066.webp?v=1762533768"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Joyor T6 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W et d'une batterie 48 V 18 Ah, annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus pneumatiques tout-terrain de 10 pouces, avec double suspension hydraulique à ressort et freins à disque mécaniques avant et arrière. Sa vitesse est bridée à 25 km/h d'origine (jusqu'à 48 km/h une fois la limitation levée, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Joyor T6 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Joyor T6 : disque de frein 120 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "joyor t6, pieces joyor t6, disque frein joyor t6, plaquettes joyor t6, pneu joyor t6"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/9000921748",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.boulanger.com/ref/9000921748",
+          "type": "revendeur",
+          "url2": "https://wellbots.fr/products/joyor-t6-trottinette-electrique"
+        },
+        "suspension": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-5-cst",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921748",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://wellbots.fr/cdn/shop/files/1e657c4b44a0efbd83080d6105169066.webp?v=1762533768",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+          "type": "constructeur",
+          "url2": "https://joyorprime.com/products/brake-pads-t-series"
+        },
+        "tire_family": {
+          "url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://joyorscooter.com/products/brake-disk-s-x-y"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25.6,
+            "source_url": "https://www.boulanger.com/ref/9000921748",
+            "source_url_2": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.boulanger.com/ref/9000921748",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://www.boulanger.com/ref/9000921748",
+            "source_url_2": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 48,
+            "source_url": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048688056.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.joyor-fr.com/products/joyor-t6-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.boulanger.com/ref/9000921748",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2.50-6",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-5-cst",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspension hydraulique à ressort avant et arrière",
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921748",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048688056.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Joyor T6 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W et d'une batterie 48 V 18 Ah, annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus pneumatiques tout-terrain de 10 pouces, avec double suspension hydraulique à ressort et freins à disque mécaniques avant et arrière. Sa vitesse est bridée à 25 km/h d'origine (jusqu'à 48 km/h une fois la limitation levée, sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "https://www.boulanger.com/ref/9000921748",
+            "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-joyor-t6-moteur-600-w-batterie-48-v-18-ah-pneus-10-pouces-48-kmh-70-km/p/F41597773"
+          ],
+          "_og_images": [
+            "http://wellbots.fr/cdn/shop/files/1e657c4b44a0efbd83080d6105169066.webp?v=1762533768"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://fr.gleeride.com/products/joyor-t6-10-commuter-electric-scooter-600w-motor-48v-18ah-battery",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": "https://joyorprime.com/products/brake-pads-t-series",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://joyorscooter.com/products/brake-disk-s-x-y",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://wellbots.fr/products/joyor-t6-trottinette-electrique",
+            "source_url_2": "https://www.e.leclerc/fp/trottinette-electrique-joyor-t6-adulte-pneus-tout-terrain-10-pouces-batterie-48v-18ah-autonomie-40-70km-design-pliable-0369763282901",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }
