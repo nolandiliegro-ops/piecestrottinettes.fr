@@ -172,7 +172,10 @@
           "product_page_urls": [
             "https://www.galaxus.fr/en/s3/product/beaster-el-scooter-bs09-scooters-21072869",
             "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
-            "https://krinona.lt/elektriniai-paspirtukai/14619-elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.html"
+            "https://krinona.lt/elektriniai-paspirtukai/14619-elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.html",
+            "https://www.galaxus.fr/fr/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+            "https://bigbox.fi/sahkoskootterit/1122707-sahkoskootteri-beaster-scooter-bs09-250-w-36-v-10-ah-musta-4772132008495.html",
+            "https://hobbyhall.fi/fi/urheilu-ja-vapaa-aika/pyorat-potkulaudat-rullaluistimet-ja-skeittilaudat/sahkopotkulaudat/sahkopotkulauta-beaster-scooter-bs09-250-w-36?id=98588"
           ],
           "_og_images": []
         },
@@ -229,6 +232,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.galaxus.fr/fr/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+          "https://krinona.lt/elektriniai-paspirtukai/14619-elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.html",
+          "https://bigbox.fi/sahkoskootterit/1122707-sahkoskootteri-beaster-scooter-bs09-250-w-36-v-10-ah-musta-4772132008495.html",
+          "https://hobbyhall.fi/fi/urheilu-ja-vapaa-aika/pyorat-potkulaudat-rullaluistimet-ja-skeittilaudat/sahkopotkulaudat/sahkopotkulauta-beaster-scooter-bs09-250-w-36?id=98588"
+        ],
+        "og": 0
       }
     },
     {

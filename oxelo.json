@@ -1,4 +1,31 @@
 {
   "brandName": "Oxelo",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Oxelo MD500E",
+      "slug": "oxelo-md500e",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 350,
+      "range_km": 35,
+      "max_load_kg": 100,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 17,
+      "suspension": "Rigide (sans suspension, pneus tubeless 10\" pour l'amorti)",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://decathlon.gf/cdn/shop/files/pic_6f43a8da-c375-4c02-9992-054c77955f8c.jpg?v=1791609025&width=1024"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "L'Oxelo MD500E est une trottinette électrique pliable équipée d'un moteur brushless de 350 W et d'une batterie de 374 Wh (10,4 Ah), pour une autonomie annoncée jusqu'à 35 km en mode Éco. Elle roule sur des pneus tubeless de 10 pouces, freine avec un frein à disque mécanique arrière associé à un frein moteur avant, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Oxelo MD500E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Oxelo MD500E : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "oxelo md500e, pieces oxelo md500e, disque frein oxelo md500e, plaquettes oxelo md500e, pneu oxelo md500e"
+    }
+  ]
 }

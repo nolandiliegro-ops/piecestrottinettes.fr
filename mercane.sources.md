@@ -1,8 +1,8 @@
 # Extraction Mercane — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**0 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 314941 tokens entrée, 10077 sortie, 16 recherches web.
+Coût mesuré : 23821 tokens entrée, 335 sortie, 2 recherches web.
 
 ## Mercane WideWheel Pro — MANQUE
 - Manque : source_image_urls

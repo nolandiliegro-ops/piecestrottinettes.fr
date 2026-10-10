@@ -17,6 +17,10 @@
         "tire_size": "10\" tubeless (section non communiquée)",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "tire_family": "pneumatic",
         "score_offroad": 35,
@@ -71,6 +75,10 @@
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
           "type": "revendeur"
         },
+        "source_image_urls": {
+          "url": "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
           "type": "revendeur"
@@ -80,9 +88,7 @@
           "type": "revendeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -93,7 +99,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -181,9 +187,14 @@
           "product_page_urls": [
             "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
             "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
-            "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php"
+            "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/aprilia-trottinette-electrique-pliable-adulte-es/f-1214801-apr8052870486509.html",
+            "https://www.rueducommerce.fr/p/r24060027939.html"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -239,6 +250,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
+          "https://www.cdiscount.com/le-sport/mobilite-urbaine/aprilia-trottinette-electrique-pliable-adulte-es/f-1214801-apr8052870486509.html",
+          "https://www.rueducommerce.fr/p/r24060027939.html"
+        ],
+        "og": 2
       }
     },
     {
@@ -257,6 +279,9 @@
         "ip_rating": "IPX4",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/f012dbb1-82fc-4ffe-63d0-c47de850a300/public"
+        ],
         "brake_type": "drum_front_ebs_rear",
         "tire_section": "10x2.125",
         "tire_family": "pneumatic",
@@ -312,6 +337,10 @@
           "url": "https://www.trax-distribution.fr/products/ap-mo-210002/",
           "type": "distributeur"
         },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/f012dbb1-82fc-4ffe-63d0-c47de850a300/public",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2/",
           "type": "distributeur"
@@ -326,9 +355,7 @@
           "type": "distributeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [],
       "notInt": [],
       "toValidate": [],
@@ -341,7 +368,7 @@
         }
       ],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -429,9 +456,14 @@
           "product_page_urls": [
             "https://www.u-techno.fr/p/trottinette-electrique/trotiapriliaesr2",
             "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4",
-            "https://www.amazon.fr/Aprilia-Trotinette-%C3%A9l%C3%A9ctrique-Suspension-dautonomie/dp/B099SDKXXC"
+            "https://www.amazon.fr/Aprilia-Trotinette-%C3%A9l%C3%A9ctrique-Suspension-dautonomie/dp/B099SDKXXC",
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_apresr2cl.html",
+            "https://www.feuvert.fr/trottinettes-electriques/aprilia-trottinette-electrique-esr2-aprilia/p614322.html",
+            "https://www.pixmania.com/fr/fr/aprilia-esr2-25-kmh-multicolore-232859.html"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/f012dbb1-82fc-4ffe-63d0-c47de850a300/public"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -489,6 +521,17 @@
             "source_type": "revendeur"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4",
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_apresr2cl.html",
+          "https://www.feuvert.fr/trottinettes-electriques/aprilia-trottinette-electrique-esr2-aprilia/p614322.html",
+          "https://www.pixmania.com/fr/fr/aprilia-esr2-25-kmh-multicolore-232859.html"
+        ],
+        "og": 1
       }
     },
     {
@@ -508,6 +551,9 @@
         "tire_size": "8,5 pouces à chambre à air (avant et arrière)",
         "foldable": true,
         "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "rim_diameter": "6.1",
         "tire_section": "8.5x2",
@@ -568,6 +614,10 @@
           "url": "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz",
           "type": "revendeur"
         },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811",
           "type": "revendeur"
@@ -587,9 +637,7 @@
           "type": "revendeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -600,7 +648,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -688,9 +736,14 @@
           "product_page_urls": [
             "https://www.zetrottstore.com/trottinette-electrique-grenoble/3266-aprilia-esrz-2078686694811",
             "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz",
-            "https://www.pccomponentes.fr/scooter-electrique-aprilia-esrz"
+            "https://www.pccomponentes.fr/scooter-electrique-aprilia-esrz",
+            "https://www.electrodepot.fr/trottinette-electrique-aprilia-esrz.html",
+            "https://microconcept.com/aprilia-trottinette-elec-aprilia-esrz-cadre-alu-magnesium-moteur-300w-brushless-pneu-8-5-220316.html",
+            "https://eclatvelo.fr/Produit/trottinette-electrique-aprilia-esrz-300w-25km/"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -754,6 +807,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.electrodepot.fr/trottinette-electrique-aprilia-esrz.html",
+          "https://www.mda-electromenager.com/fr/a/trottinette-electrique-aprilia-esrz",
+          "https://microconcept.com/aprilia-trottinette-elec-aprilia-esrz-cadre-alu-magnesium-moteur-300w-brushless-pneu-8-5-220316.html",
+          "https://eclatvelo.fr/Produit/trottinette-electrique-aprilia-esrz-300w-25km/"
+        ],
+        "og": 1
       }
     },
     {
@@ -772,6 +836,9 @@
         "ip_rating": "IPX4",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.franmarche.com/wp-content/uploads/2023/01/Trottinette-electrique-Aprilia-eSR2-EVO-500W-25km-h-Portee-Max-50km-Noir-1-600x600-1.jpg"
+        ],
         "brake_type": "drum_front_ebs_rear",
         "rim_diameter": "6.5",
         "tire_section": "10x2.125",
@@ -828,6 +895,10 @@
           "url": "https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085",
           "type": "revendeur"
         },
+        "source_image_urls": {
+          "url": "https://www.franmarche.com/wp-content/uploads/2023/01/Trottinette-electrique-Aprilia-eSR2-EVO-500W-25km-h-Portee-Max-50km-Noir-1-600x600-1.jpg",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/",
           "type": "distributeur"
@@ -847,16 +918,14 @@
           "type": "distributeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -944,9 +1013,13 @@
           "product_page_urls": [
             "https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/",
             "https://needrive.fr/products/trottinette-electrique-aprilia-esr2-evo",
-            "https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085"
+            "https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085",
+            "https://www.franmarche.com/product/trottinette-electrique-aprilia-esr2-evo-500w-25km-h/",
+            "https://www.amazon.fr/Aprilia-Scooter-autonomie-fl%C3%A8ches-directionnelles/dp/B0B2F2JDMW"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://www.franmarche.com/wp-content/uploads/2023/01/Trottinette-electrique-Aprilia-eSR2-EVO-500W-25km-h-Portee-Max-50km-Noir-1-600x600-1.jpg"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -1004,6 +1077,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.gyro-phare.com/produit/trottinette-electrique-aprilia-esr2-evo/",
+          "https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085",
+          "https://www.franmarche.com/product/trottinette-electrique-aprilia-esr2-evo-500w-25km-h/",
+          "https://www.amazon.fr/Aprilia-Scooter-autonomie-fl%C3%A8ches-directionnelles/dp/B0B2F2JDMW"
+        ],
+        "og": 1
       }
     }
   ],

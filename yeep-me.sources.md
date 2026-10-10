@@ -1,11 +1,10 @@
 # Extraction Yeep.me — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 231152 tokens entrée, 11120 sortie, 15 recherches web.
+Coût mesuré : 67745 tokens entrée, 1210 sortie, 6 recherches web.
 
-## Yeep.me 100a start — MANQUE
-- Manque : source_image_urls
+## Yeep.me 100a start — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -21,6 +20,7 @@ Coût mesuré : 231152 tokens entrée, 11120 sortie, 15 recherches web.
 | tire_size | 10'' x 2" | revendeur | https://www.pixmania.com/fr/fr/trottinette-electrique-yeepme-100a-start-10-500w-78ah-30km-garantie-5-ans-291453.html |  |
 | foldable | true | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 | wheel_inches | 10 | revendeur | https://www.boulanger.com/ref/9000680456 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://yeep.me/3808-thickbox_default/yeepme-100a-start.jpg |  |
 | brake_type | ebs_front_disc_rear | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 | tire_family | solid | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 

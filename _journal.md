@@ -98,3 +98,9 @@
 - 2026-10-10T15:34:56.843Z · Beaster · AJOUT +2 · OK · 0.2 min · 52366 in / 634 out / 3 rech · +0 prêt · cumul run 2740693 tokens
 - 2026-10-10T15:36:26.019Z · Aprilia · AJOUT +2 · OK · 1.5 min · 306513 in / 11167 out / 17 rech · +0 prêt · cumul run 3058373 tokens
 - 2026-10-10T15:36:26.019Z · ARRÊT : plafond 3000000 tokens atteint (3058373)
+- 2026-10-10T16:24:24.751Z · Aprilia · PASSE PHOTOS · +4 prêt(s) sur 4 · 4 prêt(s) au total · 0.6 min · 129161 in / 1683 out / 9 rech.
+- 2026-10-10T16:24:31.191Z · Beaster · PASSE PHOTOS · +0 prêt(s) sur 1 · 1 prêt(s) au total · 0.1 min · 24424 in / 563 out / 2 rech.
+- 2026-10-10T16:24:42.257Z · Jeep · PASSE PHOTOS · +2 prêt(s) sur 2 · 2 prêt(s) au total · 0.2 min · 48953 in / 729 out / 4 rech.
+- 2026-10-10T16:24:46.340Z · Mercane · PASSE PHOTOS · +0 prêt(s) sur 1 · 0 prêt(s) au total · 0.1 min · 23821 in / 335 out / 2 rech.
+- 2026-10-10T16:24:52.731Z · Oxelo · PASSE PHOTOS · +1 prêt(s) sur 1 · 1 prêt(s) au total · 0.1 min · 50610 in / 467 out / 3 rech.
+- 2026-10-10T16:25:27.319Z · Yeep.me · PASSE PHOTOS · +1 prêt(s) sur 3 · 2 prêt(s) au total · 0.6 min · 67745 in / 1210 out / 6 rech.

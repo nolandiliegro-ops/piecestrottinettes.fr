@@ -16,6 +16,9 @@
         "ip_rating": "IPX4",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://media.rueducommerce.fr/mktp/product/productImage/3/194/afd79f35079240fea3833c0b991a18fd.webp"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "disc_diameter": 120,
         "disc_holes": 6,
@@ -70,6 +73,10 @@
           "url": "https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370",
           "type": "revendeur"
         },
+        "source_image_urls": {
+          "url": "https://media.rueducommerce.fr/mktp/product/productImage/3/194/afd79f35079240fea3833c0b991a18fd.webp",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370",
           "type": "revendeur"
@@ -99,9 +106,7 @@
           "type": "revendeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_pcd"
       ],
@@ -116,7 +121,7 @@
           "url": "https://youvelo.fr/vtt/641-disque-120-mm-6-trous-entraxe-44mm.html"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -204,9 +209,14 @@
           "product_page_urls": [
             "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/jeep/trottinette-electrique-jeep--jeep-e-scooter-2xe-adventurer-with-turn-signals--60053646.php",
             "https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html",
-            "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility"
+            "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
+            "https://www.fnac.com/Trottinette-electrique-Jeep-Adventurer-Jad-350-W-Vert/a18380889/w-4",
+            "https://www.rueducommerce.fr/p/m24073948213.html",
+            "https://top-levelsports.com/product/trottinette-electrique-jeep-adventurer/"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://media.rueducommerce.fr/mktp/product/productImage/3/194/afd79f35079240fea3833c0b991a18fd.webp"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -267,6 +277,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.fnac.com/Trottinette-electrique-Jeep-Adventurer-Jad-350-W-Vert/a18380889/w-4",
+          "https://www.rueducommerce.fr/p/m24073948213.html",
+          "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
+          "https://top-levelsports.com/product/trottinette-electrique-jeep-adventurer/"
+        ],
+        "og": 1
       }
     },
     {
@@ -286,6 +307,10 @@
         "tire_size": "10x2.5-6.5 tubeless",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "https://cdn.auchan.fr/media/7e79c6bc-a123-426f-8bb9-65c31cf87320_0x0/B2CD/?width=2048&height=2048&fit=pad"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "disc_diameter": 120,
         "rim_diameter": "6.5",
@@ -347,6 +372,10 @@
           "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
           "type": "revendeur"
         },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.autobacs.fr/trottinette-electrique-jeep-2xe-urban-camou.html",
           "type": "revendeur"
@@ -371,9 +400,7 @@
           "type": "revendeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_pcd",
         "disc_holes"
@@ -389,7 +416,7 @@
           "url": "https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -478,9 +505,14 @@
           "product_page_urls": [
             "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
             "https://www.decathlon.fr/p/mp/jeep/trottinette-electrique-jeep-urban-camou/_/R-p-7b1b6394-f29d-4f4e-a982-af58cb7dd46f",
-            "https://www.autobacs.fr/trottinette-electrique-jeep-2xe-urban-camou.html"
+            "https://www.autobacs.fr/trottinette-electrique-jeep-2xe-urban-camou.html",
+            "https://www.electrodepot.fr/trottinette-electrique-jeep-2xe-urban-camou.html",
+            "https://www.auchan.fr/jeep-trottinette-electrique-2xe-urban-camou-10-pouces/pr-C1766440"
           ],
-          "_og_images": []
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+            "https://cdn.auchan.fr/media/7e79c6bc-a123-426f-8bb9-65c31cf87320_0x0/B2CD/?width=2048&height=2048&fit=pad"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -540,6 +572,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html",
+          "https://www.decathlon.fr/p/mp/jeep/trottinette-electrique-jeep-urban-camou/_/R-p-7b1b6394-f29d-4f4e-a982-af58cb7dd46f",
+          "https://www.electrodepot.fr/trottinette-electrique-jeep-2xe-urban-camou.html",
+          "https://www.auchan.fr/jeep-trottinette-electrique-2xe-urban-camou-10-pouces/pr-C1766440"
+        ],
+        "og": 2
       }
     }
   ]

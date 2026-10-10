@@ -141,6 +141,9 @@
         "ip_rating": "IPX5",
         "foldable": true,
         "wheel_inches": 10,
+        "source_image_urls": [
+          "http://decathlon.gf/cdn/shop/files/pic_6f43a8da-c375-4c02-9992-054c77955f8c.jpg?v=1791609025&width=1024"
+        ],
         "brake_type": "ebs_front_disc_rear",
         "tire_family": "pneumatic",
         "score_offroad": 35,
@@ -195,6 +198,10 @@
           "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
           "type": "constructeur"
         },
+        "source_image_urls": {
+          "url": "http://decathlon.gf/cdn/shop/files/pic_6f43a8da-c375-4c02-9992-054c77955f8c.jpg?v=1791609025&width=1024",
+          "type": "og:image fiche produit"
+        },
         "brake_type": {
           "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
           "type": "constructeur"
@@ -204,9 +211,7 @@
           "type": "constructeur"
         }
       },
-      "missing": [
-        "source_image_urls"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -228,7 +233,7 @@
           "url": "https://e-watts.fr/produit/disque-de-frein-120mm"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -316,9 +321,12 @@
           "product_page_urls": [
             "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
             "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
-            "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472"
+            "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+            "https://decathlon.gf/products/trottinette-electrique-decathlon-25km-h-md500e"
           ],
-          "_og_images": []
+          "_og_images": [
+            "http://decathlon.gf/cdn/shop/files/pic_6f43a8da-c375-4c02-9992-054c77955f8c.jpg?v=1791609025&width=1024"
+          ]
         },
         "keys": {
           "brake_type": {
@@ -376,6 +384,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "https://www.decathlon.be/fr/p/trottinette-electrique-decathlon-25km-h-md500e/355472/c382m8884183",
+          "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+          "https://decathlon.gf/products/trottinette-electrique-decathlon-25km-h-md500e"
+        ],
+        "og": 1
       }
     }
   ]

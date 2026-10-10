@@ -1,8 +1,8 @@
 # Extraction Beaster — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 52366 tokens entrée, 634 sortie, 3 recherches web.
+Coût mesuré : 24424 tokens entrée, 563 sortie, 2 recherches web.
 
 ## Beaster BS09 — MANQUE
 - Manque : source_image_urls

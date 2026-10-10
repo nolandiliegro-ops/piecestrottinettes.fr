@@ -205,7 +205,9 @@
           "product_page_urls": [
             "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
             "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/",
-            "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html"
+            "https://super-electro.com/fr/trottinettes-electriques/19092-trottinette-mercane-widewheel-pro-double-moteur-800w-48v-15ah-7444855333334.html",
+            "https://wamoov.fr/produit/mercane-widewheel-pro-trottinette-electrique-1000w/",
+            "https://en.ecosmartriders.com/products/mercane-widewheel-pro-dual"
           ],
           "_og_images": []
         },
@@ -265,6 +267,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "photo_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "pages": [
+          "https://wamoov.fr/produit/mercane-widewheel-pro-trottinette-electrique-1000w/",
+          "https://www.mobilityscoot.fr/page-d-articles/mercane-wide-wheel-pro",
+          "https://en.ecosmartriders.com/products/mercane-widewheel-pro-dual",
+          "https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/"
+        ],
+        "og": 0
       }
     },
     {

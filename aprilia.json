@@ -1,4 +1,116 @@
 {
   "brandName": "Aprilia",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Aprilia eSR1",
+      "slug": "aprilia-esr1",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 350,
+      "range_km": 35,
+      "max_load_kg": 100,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 15.5,
+      "ip_rating": "IPX4",
+      "tire_size": "10\" tubeless (section non communiquée)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+        "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "L'Aprilia eSR1 est une trottinette électrique pliable à cadre en alliage de magnésium, équipée d'un moteur brushless de 350 W dans la roue avant et d'une batterie amovible 36 V 7,8 Ah (280 Wh). Elle roule sur des pneus tubeless de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, pour 15,5 kg et une charge maximale de 100 kg. Elle est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Aprilia eSR1 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Aprilia eSR1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "aprilia esr1, pieces aprilia esr1, disque frein aprilia esr1, plaquettes aprilia esr1, pneu aprilia esr1"
+    },
+    {
+      "name": "Aprilia eSR2",
+      "slug": "aprilia-esr2",
+      "voltage": 36,
+      "amperage": 8,
+      "power_watts": 350,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.5,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/f012dbb1-82fc-4ffe-63d0-c47de850a300/public"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_section": "10x2.125",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Aprilia eSR2 est une trottinette électrique pliable en aluminium équipée d'un moteur brushless de 350 W et d'une batterie 36 V 8 Ah (288 Wh) annoncée pour 25 km d'autonomie. Elle roule sur des pneus de 10 pouces, avec suspensions avant et arrière, frein à tambour à l'avant et frein électrique à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Aprilia eSR2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Aprilia eSR2 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "aprilia esr2, pieces aprilia esr2, disque frein aprilia esr2, plaquettes aprilia esr2, pneu aprilia esr2"
+    },
+    {
+      "name": "Aprilia eSRZ",
+      "slug": "aprilia-esrz",
+      "voltage": 36,
+      "amperage": 6,
+      "power_watts": 300,
+      "range_km": 20,
+      "max_load_kg": 100,
+      "year": 2023,
+      "max_speed_kmh": 25,
+      "weight_kg": 14,
+      "suspension": "Aucune",
+      "ip_rating": "IPX5",
+      "tire_size": "8,5 pouces à chambre à air (avant et arrière)",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "rim_diameter": "6.1",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "L'Aprilia eSRZ est une trottinette électrique pliable équipée d'un moteur brushless de 300 W (450 W en pointe) placé dans la roue avant et d'une batterie 36 V 6 Ah (216 Wh) offrant jusqu'à 20 km d'autonomie. Elle roule sur des pneus de 8,5 pouces à chambre à air, freine avec un frein électronique à l'avant et un frein à disque à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Aprilia eSRZ - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Aprilia eSRZ : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "aprilia esrz, pieces aprilia esrz, disque frein aprilia esrz, plaquettes aprilia esrz, pneu aprilia esrz"
+    },
+    {
+      "name": "Aprilia eSR2 Evo",
+      "slug": "aprilia-esr2-evo",
+      "voltage": 48,
+      "amperage": 14.4,
+      "power_watts": 500,
+      "range_km": 50,
+      "max_load_kg": 100,
+      "year": 2022,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.5,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.franmarche.com/wp-content/uploads/2023/01/Trottinette-electrique-Aprilia-eSR2-EVO-500W-25km-h-Portee-Max-50km-Noir-1-600x600-1.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.125",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Aprilia eSR2 Evo est une trottinette électrique pliable animée par un moteur brushless de 500 W (pointe 700 W) alimenté par une batterie 48 V 14,4 Ah (691 Wh) pour une autonomie annoncée jusqu'à 50 km. Elle dispose de roues de 10 pouces à chambre à air, de suspensions avant et arrière, d'un frein à tambour avant et d'un frein électronique arrière avec KERS, et elle est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Aprilia eSR2 Evo - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Aprilia eSR2 Evo : plaquettes, pneus 10x2.125, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "aprilia esr2 evo, pieces aprilia esr2 evo, disque frein aprilia esr2 evo, plaquettes aprilia esr2 evo, pneu aprilia esr2 evo"
+    }
+  ]
 }

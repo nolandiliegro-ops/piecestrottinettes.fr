@@ -1,11 +1,10 @@
 # Extraction Jeep — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
 
-Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
+Coût mesuré : 48953 tokens entrée, 729 sortie, 4 recherches web.
 
-## Jeep Adventurer — MANQUE
-- Manque : source_image_urls
+## Jeep Adventurer — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Une seule source, NON importé : disc_pcd=44 (https://youvelo.fr/vtt/641-disque-120-mm-6-trous-entraxe-44mm.html)
 
@@ -21,6 +20,7 @@ Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
 | ip_rating | IPX4 | revendeur | https://www.notice-facile.com/en/manual/625782/jeep+2xe-adventurer |  |
 | foldable | true | revendeur | https://www.fnac.com/JEEP-2XE-ADVENTURER-WITH-TURN-SIGNALS/a17122930/w-4 |  |
 | wheel_inches | 10 | revendeur | https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://media.rueducommerce.fr/mktp/product/productImage/3/194/afd79f35079240fea3833c0b991a18fd.webp |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370 |  |
 | disc_diameter | 120 | revendeur | https://monsieurtrottinettes.be/en/brake-disc/509-brake-disc-120mm-jeep-2xe-adventurer-7427255405443.html | https://youvelo.fr/vtt/641-disque-120-mm-6-trous-entraxe-44mm.html |
 | disc_holes | 6 | revendeur | https://youvelo.fr/vtt/641-disque-120-mm-6-trous-entraxe-44mm.html | https://shop.happytec.it/fr/shop/ricambi-per-monopattini-elettrici/ricambi-per-tipo-monopattini-elettrici/freni-per-monopattino/dischi-per-monopattino/disco-freno-originale-di-ricambio-per-monopattino-ducati-pro-iii/ |
@@ -28,8 +28,7 @@ Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
 | tire_section | 10x2.50 | revendeur | https://e-watts.fr/produit/pneu-10x2-50-6-5-off-road/ | https://escootervision.eu/en/products/epf-2-e-scooter-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket |
 | tire_family | pneumatic | revendeur | https://www.feuvert.fr/trottinettes-electriques/jeep-trottinette-electrique-adventurer-jeep/p614947.html?jibber=lulla&wad=800355&fiddles=428370 |  |
 
-## Jeep Urban Camou — MANQUE
-- Manque : source_image_urls
+## Jeep Urban Camou — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Une seule source, NON importé : disc_holes=6 (https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket)
 
@@ -47,6 +46,7 @@ Coût mesuré : 284006 tokens entrée, 13771 sortie, 17 recherches web.
 | tire_size | 10x2.5-6.5 tubeless | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket |  |
 | foldable | true | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
 | wheel_inches | 10 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://www.electrodepot.fr/media/catalog/product/P967725.jpg |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.autobacs.fr/trottinette-electrique-jeep-2xe-urban-camou.html |  |
 | disc_diameter | 120 | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket | https://shop.happytec.it/fr/shop/ricambi-per-monopattini-elettrici/ricambi-per-tipo-monopattini-elettrici/freni-per-monopattino/dischi-per-monopattino/disco-freno-originale-di-ricambio-per-monopattino-ducati-pro-iii/ |
 | rim_diameter | 6.5 | revendeur | https://escootervision.eu/fr/products/jeep-2xe-urban-camou-off-road-reifen-tubeless-10x2-5-6-5-zoll-mit-ventil-aftermarket | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/jeep-ricambi-e-scooter/pneumatico-tubeless-originale-con-valvola-per-monopattino-jeep-2xe-adventurer-jeep-2xe-camou-off-road/ |

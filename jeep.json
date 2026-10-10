@@ -1,4 +1,65 @@
 {
   "brandName": "Jeep",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Jeep Adventurer",
+      "slug": "jeep-adventurer",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 350,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 19,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://media.rueducommerce.fr/mktp/product/productImage/3/194/afd79f35079240fea3833c0b991a18fd.webp"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "disc_diameter": 120,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Jeep Adventurer (2xe Adventurer) embarque un moteur brushless de 350 W (pointe à 515 W) et une batterie 36 V 10,4 Ah (374 Wh) pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus tubeless de 10 pouces avec suspensions avant et arrière, un frein avant électronique avec KERS et un frein à disque arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Jeep Adventurer - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Jeep Adventurer : disque de frein 120 mm 6 trous, plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "jeep adventurer, pieces jeep adventurer, disque frein jeep adventurer, plaquettes jeep adventurer, pneu jeep adventurer"
+    },
+    {
+      "name": "Jeep Urban Camou",
+      "slug": "jeep-urban-camou",
+      "voltage": 48,
+      "amperage": 9.6,
+      "power_watts": 500,
+      "range_km": 45,
+      "max_load_kg": 100,
+      "year": 2022,
+      "max_speed_kmh": 25,
+      "weight_kg": 19,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "10x2.5-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+        "https://cdn.auchan.fr/media/7e79c6bc-a123-426f-8bb9-65c31cf87320_0x0/B2CD/?width=2048&height=2048&fit=pad"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "disc_diameter": 120,
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Jeep Urban Camou est une trottinette électrique pliable à cadre en magnésium, équipée d'un moteur sans balais de 500 W (700 W en pointe) et d'une batterie 48 V 9,6 Ah (461 Wh) pour jusqu'à 45 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces avec suspensions avant et arrière, frein électronique à l'avant et frein à disque à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Jeep Urban Camou - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Jeep Urban Camou : disque de frein 120 mm, plaquettes, pneus 10x2.50, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "jeep urban camou, pieces jeep urban camou, disque frein jeep urban camou, plaquettes jeep urban camou, pneu jeep urban camou"
+    }
+  ]
 }

@@ -2,6 +2,32 @@
   "brandName": "Yeep.me",
   "scooters": [
     {
+      "name": "Yeep.me 100a start",
+      "slug": "yeep-me-100a-start",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 500,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 19,
+      "suspension": "Aucune",
+      "ip_rating": "IPX6",
+      "tire_size": "10'' x 2\"",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://yeep.me/3808-thickbox_default/yeepme-100a-start.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "solid",
+      "score_offroad": 35,
+      "description": "La Yeep.me 100a Start est une trottinette électrique pliable équipée d'un moteur 36 V de 500 W max, d'une batterie 7,8 Ah (280 Wh) annoncée pour jusqu'à 30 km d'autonomie, et de roues de 10 pouces avec pneus increvables. Elle dispose d'un freinage combiné (frein à disque arrière et frein électronique avant), d'une étanchéité IPX6, d'une charge maximale de 120 kg et d'une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Yeep.me 100a start - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Yeep.me 100a start : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "yeep.me 100a start, pieces yeep.me 100a start, disque frein yeep.me 100a start, plaquettes yeep.me 100a start, pneu yeep.me 100a start"
+    },
+    {
       "name": "Yeep.me 100a",
       "slug": "yeep-me-100a",
       "voltage": 36,
