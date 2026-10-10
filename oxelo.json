@@ -2,6 +2,21 @@
   "brandName": "Oxelo",
   "scooters": [
     {
+      "name": "Oxelo SD500E",
+      "slug": "oxelo-sd500e",
+      "max_speed_kmh": 25,
+      "weight_kg": 16.2,
+      "source_image_urls": [
+        "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "meta_title": "Oxelo SD500E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Oxelo SD500E : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "oxelo sd500e, pieces oxelo sd500e, disque frein oxelo sd500e, plaquettes oxelo sd500e, pneu oxelo sd500e"
+    },
+    {
       "name": "Oxelo MD500E",
       "slug": "oxelo-md500e",
       "voltage": 36,

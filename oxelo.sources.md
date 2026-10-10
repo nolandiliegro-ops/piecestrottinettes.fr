@@ -1,21 +1,25 @@
 # Extraction Oxelo — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
 Coût mesuré : 50610 tokens entrée, 467 sortie, 3 recherches web.
 
-## Oxelo SD500E — MANQUE
-- Manque : weight_kg
+## Oxelo SD500E — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=120 (https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e) · disc_holes=6 (https://e-watts.fr/produit/disque-de-frein-120mm)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
+| weight_kg | 16.2 | constructeur | https://www.decathlon.ma/p/353775-188611-trottinette-electrique-sd500-e.html | https://www.decathlon.ie/p/353775-2611032-electric-scooter-decathlon-sd500e-grey-green.html |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800 |  |
 | brake_type | ebs_front_disc_rear | constructeur | https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html |  |
 | tire_family | pneumatic | constructeur | https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html |  |
 
 ## Oxelo MD500E — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=120 (https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-btwin-md500e-sd500e) · disc_holes=6 (https://e-watts.fr/produit/disque-de-frein-120mm)
 

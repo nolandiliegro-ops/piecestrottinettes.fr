@@ -6,6 +6,7 @@
         "name": "Oxelo SD500E",
         "slug": "oxelo-sd500e",
         "max_speed_kmh": 25,
+        "weight_kg": 16.2,
         "source_image_urls": [
           "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800"
         ],
@@ -17,6 +18,11 @@
         "search_terms": "oxelo sd500e, pieces oxelo sd500e, disque frein oxelo sd500e, plaquettes oxelo sd500e, pneu oxelo sd500e"
       },
       "sources": {
+        "weight_kg": {
+          "url": "https://www.decathlon.ma/p/353775-188611-trottinette-electrique-sd500-e.html",
+          "type": "constructeur",
+          "url2": "https://www.decathlon.ie/p/353775-2611032-electric-scooter-decathlon-sd500e-grey-green.html"
+        },
         "source_image_urls": {
           "url": "https://contents.mediadecathlon.com/p3231849/k$4389abecba7a5f68e725d2c69cc102a9/trottinette-electrique-decathlon-sd500e-gris-vert.jpg?format=auto&quality=40&f=800x800",
           "type": "og:image fiche produit"
@@ -30,13 +36,15 @@
           "type": "constructeur"
         }
       },
-      "missing": [
-        "weight_kg"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -54,10 +62,16 @@
           "url": "https://e-watts.fr/produit/disque-de-frein-120mm"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
-          "weight_kg": "{\"value\": 16.2, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_type\": \"constructeur\"}\n<parameter name=\"voltage\">{\"value\": 36, \"source_url\": \"https://meilleuretrott.fr/trottinettes/decathlon-oxelo-sd500e/\", \"source_url_2\": null, \"source_type\": \"site_test\"}\n<parameter name=\"amperage\">{\"value\": 5.2, \"source_url\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_type\": \"constructeur\"}\n<parameter name=\"power_watts\">{\"value\": 350, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"max_speed_private_kmh\">{\"value\": null, \"source_url\": null, \"source_type\": \"inconnu\"}\n<parameter name=\"range_km\">{\"value\": 25, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"max_load_kg\">{\"value\": 100, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_type\": \"constructeur\"}\n<parameter name=\"wheel_inches\">{\"value\": 10, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"tire_size\">{\"value\": null, \"source_url\": null, \"source_type\": \"inconnu\"}\n<parameter name=\"suspension\">{\"value\": \"rigide (sans suspension)\", \"source_url\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_url_2\": null, \"source_type\": \"constructeur\"}\n<parameter name=\"ip_rating\">{\"value\": \"IPX5\", \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"foldable\">{\"value\": true, \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_url_2\": \"https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775\", \"source_type\": \"constructeur\"}\n<parameter name=\"year\">{\"value\": 2025, \"source_url\": \"https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/\", \"source_url_2\": null, \"source_type\": \"site_test\"}\n<parameter name=\"description_fr\">{\"value\": \"L'Oxelo SD500E est une trottinette électrique pliable équipée d'un moteur brushless de 350 W et d'une batterie lithium-ion de 5,2 Ah, avec une vitesse bridée à 25 km/h et jusqu'à 25 km d'autonomie en mode Éco. Elle roule sur des pneus tubeless de 10 pouces et freine grâce à un frein à disque arrière associé à un frein moteur à l'avant. Elle pèse 16,2 kg, supporte 100 kg et est certifiée IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.\", \"source_url\": \"https://www.decathlon.fr/p/trottinette-electrique-sd500-e/353775/c229m8873735\", \"source_type\": \"constructeur\"}\n<parameter name=\"image_urls\">[]",
+          "weight_kg": {
+            "value": 16.2,
+            "source_url": "https://www.decathlon.ma/p/353775-188611-trottinette-electrique-sd500-e.html",
+            "source_url_2": "https://www.decathlon.ie/p/353775-2611032-electric-scooter-decathlon-sd500e-grey-green.html",
+            "source_type": "constructeur",
+            "note": "ajout manuel Claude 10/10 (Perplexity)"
+          },
           "product_page_urls": [
             "https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775",
             "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775",
@@ -216,6 +230,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
