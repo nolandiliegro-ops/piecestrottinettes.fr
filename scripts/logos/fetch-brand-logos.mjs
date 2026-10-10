@@ -82,6 +82,12 @@ for (const [slug, domains] of Object.entries(cfg)) {
     }
     if (report[slug].icon && report[slug].logo) break;
   }
+  // Repli (10/10) : site qui bloque les robots → icône du domaine servie par Google (jusqu'à 256 px)
+  if (!report[slug].icon && !report[slug].logo) for (const d of domains) {
+    const u = `https://www.google.com/s2/favicons?domain=${d}&sz=256`;
+    const f = await download(u);
+    if (f && f.size && f.size.w >= 64) { writeFileSync(resolve(OUT, `${slug}-icon.${f.ext}`), f.buf); report[slug].icon = { url: u, ext: f.ext, png: f.size, bytes: f.bytes, repli: 'favicon Google' }; break; }
+  }
   console.log(`${slug.padEnd(14)} icône ${report[slug].icon ? '✅' : '—'}  logo ${report[slug].logo ? '✅' : '—'}  (${report[slug].tried.join(' | ')})`);
 }
 writeFileSync(resolve(OUT, '_rapport.json'), JSON.stringify(report, null, 2));
