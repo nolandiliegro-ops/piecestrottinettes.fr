@@ -155,10 +155,16 @@ test('10/10 : taille de roue envoyée en NOMBRE', () => {
   assert.strictEqual(r.scooter.wheel_inches, 10);
 });
 
-test('10/10 : ampérage à virgule non envoyé (colonne entière), signalé, modèle toujours prêt', () => {
+test('10/10 : ampérage à virgule envoyé exact (colonne passée en numeric)', () => {
   const r = assembleScooter('X', 'Y', { ...specsOk, amperage: S(23.4) }, keysOk, vocab);
-  assert.equal(r.scooter.amperage, undefined);
-  assert.deepEqual(r.notInt, ['amperage=23.4']);
+  assert.equal(r.scooter.amperage, 23.4);
+  assert.deepEqual(r.notInt, []);
+});
+
+test('10/10 : puissance à virgule non envoyée (colonne entière), signalée, modèle toujours prêt', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, power_watts: S(1200.5) }, keysOk, vocab);
+  assert.equal(r.scooter.power_watts, undefined);
+  assert.deepEqual(r.notInt, ['power_watts=1200.5']);
   assert.equal(r.ready, true);
   assert.match(sourcesReport('X', [r], {}), /Valeur à virgule/);
 });

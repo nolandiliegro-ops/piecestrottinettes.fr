@@ -125,7 +125,7 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   // Specs numériques
   // Colonnes ENTIÈRES en base (mesuré le 10/10 : amperage 23.4 a fait rejeter tout le modèle Speedway 5).
   // Une valeur à virgule n'est jamais arrondie : elle n'est pas envoyée et reste signalée au rapport.
-  const INT_COLS = ['voltage', 'amperage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'year'];
+  const INT_COLS = ['voltage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'year']; // amperage passé en numeric le 10/10
   const notInt = [];
   for (const k of ['voltage', 'amperage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'max_load_kg', 'year']) {
     const n = num(specs[k]);
