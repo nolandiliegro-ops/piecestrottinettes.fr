@@ -101,3 +101,30 @@ test('poids avec une seule source → manque (obligatoire pour publier)', () => 
   const r = assembleScooter('Vsett', '10+', { ...specsOk, weight_kg: { ...S(39), source_url_2: null } }, keysOk, vocab);
   assert.ok(r.missing.includes('weight_kg'));
 });
+
+test('entraxe une source : accepté si fiche disque du modèle exact + diamètre et trous doublés', () => {
+  const pcd = { value: 44, source_url: 'https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-kugoo-g2-max', source_url_2: null, source_type: 'revendeur' };
+  const r = assembleScooter('Kugoo', 'G2 Max', specsOk, { ...keysOk, disc_pcd: pcd }, vocab);
+  assert.equal(r.scooter.disc_pcd, 44);
+  assert.equal(r.ready, true);
+  assert.match(sourcesReport('Kugoo', [r], {}), /Entraxe 44 mm sur UNE source/);
+});
+
+test('entraxe une source : refusé si la page ne vise pas le modèle exact', () => {
+  const pcd = { value: 44, source_url: 'https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428', source_url_2: null, source_type: 'revendeur' };
+  const r = assembleScooter('Kugoo', 'G2 Max', specsOk, { ...keysOk, disc_pcd: pcd }, vocab);
+  assert.equal(r.scooter.disc_pcd, undefined);
+  assert.ok(r.missing.includes('disc_pcd'));
+});
+
+test('entraxe une source : refusé si le diamètre n\'a qu\'une source', () => {
+  const pcd = { value: 44, source_url: 'https://x.fr/disque-kugoo-g2-max', source_url_2: null, source_type: 'revendeur' };
+  const r = assembleScooter('Kugoo', 'G2 Max', specsOk, { ...keysOk, disc_pcd: pcd, disc_diameter: { ...S(145), source_url_2: null } }, vocab);
+  assert.equal(r.scooter.disc_pcd, undefined);
+});
+
+test('entraxe une source : « G2 » ne valide pas une page « G20 »', () => {
+  const pcd = { value: 44, source_url: 'https://x.fr/disque-frein-kugoo-g20', source_url_2: null, source_type: 'revendeur' };
+  const r = assembleScooter('Kugoo', 'G2', specsOk, { ...keysOk, disc_pcd: pcd }, vocab);
+  assert.equal(r.scooter.disc_pcd, undefined);
+});

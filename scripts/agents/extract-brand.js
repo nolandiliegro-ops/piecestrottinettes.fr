@@ -23,7 +23,7 @@
  * Aucun secret d'écriture n'est utilisé : ce script ne touche pas la base.
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { slugify } from '../lib/slugify.js';
@@ -45,6 +45,8 @@ const ESCALATE_MODEL = args.includes('--escalate') ? opt('escalate-model', 'clau
 const MAX_SEARCHES = Number(opt('max-searches', '5'));
 const OUT = slugify(opt('out', BRAND));
 const OUT_DIR = resolve(process.cwd(), opt('out-dir', resolve(ROOT, 'scripts/data')));
+// --add-models N : relit le brouillon existant et ajoute N modèles NON encore extraits (décision de Nolan, 09/10)
+const ADD = Number(opt('add-models', '0'));
 
 // ─── .env (optionnel : en CI les variables viennent des secrets) ──────────────
 function loadEnv() {
@@ -294,15 +296,25 @@ async function main() {
   const titles = await ourPartTitles(BRAND);
   console.log(`   référentiels chargés · ${titles.length} titre(s) de pièces maison mentionnant ${BRAND}`);
 
+  const norm = (x) => String(x).toLowerCase().replace(BRAND.toLowerCase(), '').replace(/[^a-z0-9+]+/g, '');
+  const draftPath = resolve(OUT_DIR, `${OUT}.draft.json`);
+  const previous = ADD && existsSync(draftPath) ? JSON.parse(readFileSync(draftPath, 'utf-8')) : null;
+  const known = new Set((previous?.results || []).map((r) => norm(r.scooter.name)));
   let models = MODELS;
-  if (!models) {
+  if (ADD) {
+    const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: Math.min(3, MAX_SEARCHES),
+      prompt: `Liste les modèles de trottinettes électriques de la marque « ${BRAND} » actuellement vendus en France (revendeurs FR), du plus vendu au moins vendu, 8 au maximum. Un nom de modèle par entrée, sans la marque, sans variante de batterie.` });
+    const seen = new Set(known);
+    models = found.models.map((m) => m.name).filter((n) => { const k = norm(n); if (!k || seen.has(k)) return false; seen.add(k); return true; }).slice(0, ADD);
+    console.log(`   ajout : ${known.size} déjà extraits, ${models.length} nouveau(x)`);
+  } else if (!models) {
     const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: Math.min(3, MAX_SEARCHES),
       prompt: `Liste les modèles de trottinettes électriques de la marque « ${BRAND} » actuellement vendus en France (revendeurs FR), du plus vendu au moins vendu. Un nom de modèle par entrée, sans la marque, sans variante de batterie.` });
     models = found.models.map((m) => m.name).slice(0, MAX_MODELS);
   }
   console.log(`   modèles : ${models.join(' · ')}`);
 
-  const results = [];
+  const results = [...(previous?.results || [])];
   for (const m of models) {
     try { results.push(await extractModel(BRAND, m, vocab, titles)); }
     catch (e) { console.error(`  ✖ ${m} : ${e.message}`); }
@@ -316,7 +328,8 @@ async function main() {
   mkdirSync(dir, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
   writeFileSync(resolve(dir, `${OUT}.json`), JSON.stringify({ brandName: BRAND, scooters: ready }, null, 2));
-  writeFileSync(resolve(dir, `${OUT}.draft.json`), JSON.stringify({ brandName: BRAND, results }, null, 2));
+  const ajout = ADD ? { ...(previous?.ajout || {}), [date]: { demandes: ADD, ajoutes: models.length } } : previous?.ajout;
+  writeFileSync(resolve(dir, `${OUT}.draft.json`), JSON.stringify({ brandName: BRAND, results, ...(ajout ? { ajout } : {}) }, null, 2));
   writeFileSync(resolve(dir, `${OUT}.sources.md`), sourcesReport(BRAND, results, { date, model: MODEL, escalated: ESCALATE_MODEL, usage }));
 
   const min = ((Date.now() - t0) / 60000).toFixed(1);
