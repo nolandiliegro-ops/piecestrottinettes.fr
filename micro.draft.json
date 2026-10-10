@@ -100,6 +100,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -254,6 +258,22 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque : frein tambour sur la roue arrière (levier type vélo) + frein moteur/électronique sur la roue avant (gâchette) + frein au pied à friction sur le garde-boue arrière. Aucun code brake_type ne correspond exactement (ni 'drum' AV+AR, ni 'fender_foot_ebs' sans tambour, ni 'drum_front_ebs_rear' qui est inversé), donc brake_type laissé à null. Pièce détachée constructeur 'Roues de frein à tambour' listée pour la Merlin II.",
+          "source_url": "https://www.micro-mobility.fr/472-merlin-ii",
+          "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-micro-merlin-ii/",
+          "source_type": "distributeur"
+        },
+        "found": {
+          "brake_type": null,
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
+        }
       }
     },
     {
@@ -348,6 +368,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -504,6 +528,17 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": null,
+        "found": {
+          "brake_type": "ebs_front_disc_rear",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     },
@@ -842,6 +877,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -947,8 +986,9 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "source_url": "https://www.greenweez.com/produit/trottinette-electrique-micro-explorer",
+            "source_url_2": "https://www.electro-habitat.com/habitat/trottinette/electrique/micro-mobility/micro-explorer",
+            "source_type": "revendeur"
           },
           "disc_diameter": {
             "value": null,
@@ -995,6 +1035,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque. Frein à tambour (type vélo, levier au guidon) sur la roue arrière + frein moteur régénératif sur la roue avant + frein au pied. Aucun code ne correspond (tambour ARRIÈRE + électronique AVANT, l'inverse de drum_front_ebs_rear), donc brake_type est laissé à null. Le constructeur vend des « roues de frein à tambour » (réf. 5721) pour ce modèle. Cleanrider indique à tort « freins à disque », contredit par le constructeur et les revendeurs.",
+          "source_url": "https://www.micro-mobility.fr/368-micro-explorer",
+          "source_url_2": "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036",
+          "source_type": "constructeur"
+        },
+        "found": {
+          "brake_type": null,
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     }

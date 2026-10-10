@@ -1,4 +1,31 @@
 {
   "brandName": "Globber",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Globber E-MOTION 6",
+      "slug": "globber-e-motion-6",
+      "amperage": 2.9,
+      "power_watts": 80,
+      "max_speed_private_kmh": 10,
+      "range_km": 10,
+      "max_load_kg": 50,
+      "max_speed_kmh": 25,
+      "weight_kg": 4.9,
+      "suspension": "rigide (aucune)",
+      "ip_rating": "IPX4",
+      "tire_size": "Avant 120 mm (largeur 36 mm) ; arrière 90 x 50 mm (roues pleines)",
+      "foldable": false,
+      "wheel_inches": 4.7,
+      "source_image_urls": [
+        "https://www.globber.fr/7337-large_default/trottinette-%C3%A9lectrique-e-motion-6.jpg"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Globber E-MOTION 6 est une trottinette électrique pour enfants de 6 à 12 ans, équipée d'un moteur brushless de 80 W dans la roue arrière et d'une batterie lithium 14,4 V 2,9 Ah (environ 8 à 10 km d'autonomie). Elle dispose de deux roues avant lumineuses de 120 mm, d'une roue arrière de 90 mm, d'un double freinage (E-ABS et frein mécanique au pied) et de deux modes de vitesse limités à 6 et 10 km/h (non pliable, 4,9 kg, charge max 50 kg). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Globber E-MOTION 6 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Globber E-MOTION 6 : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "globber e-motion 6, pieces globber e-motion 6, disque frein globber e-motion 6, plaquettes globber e-motion 6, pneu globber e-motion 6"
+    }
+  ]
 }

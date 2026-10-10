@@ -1,4 +1,33 @@
 {
   "brandName": "E-Twow",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "E-Twow Booster SE",
+      "slug": "e-twow-booster-se",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 500,
+      "max_speed_private_kmh": 30,
+      "range_km": 30,
+      "max_load_kg": 110,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 12.5,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706",
+        "https://full-mobility.com/wp-content/uploads/2023/03/1520-2.jpg"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "L'E-Twow Booster SE est une trottinette électrique pliable et ultra-légère, animée par un moteur brushless de 500 W et une batterie Li-ion 36 V 7,8 Ah offrant jusqu'à 30 km d'autonomie. Elle est équipée de pneus pleins de 8 pouces, de suspensions avant et arrière, d'un frein magnétique à l'avant avec récupération d'énergie KERS et d'un frein mécanique de secours à l'arrière (version tambour disponible). Vendue bridée à 25 km/h pour la voie publique, elle peut atteindre 30 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "E-Twow Booster SE - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées E-Twow Booster SE : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "e-twow booster se, pieces e-twow booster se, disque frein e-twow booster se, plaquettes e-twow booster se, pneu e-twow booster se"
+    }
+  ]
 }

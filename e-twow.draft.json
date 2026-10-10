@@ -96,6 +96,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -201,8 +205,9 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "source_url": "https://e-twow.com/products/gt-sl",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+            "source_type": "constructeur"
           },
           "disc_diameter": {
             "value": null,
@@ -250,6 +255,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque. Le GT SL a un frein régénératif/électromagnétique (KERS) à l'avant, un frein à tambour à l'arrière commandé au guidon, et un frein d'urgence au pied sur le garde-boue arrière. Aucun code de brake_type ne correspond (il n'existe pas de code « avant électronique + tambour arrière »), donc brake_type reste à null.",
+          "source_url": "https://e-twow.com/products/gt-sl",
+          "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
+          "source_type": "constructeur"
+        },
+        "found": {
+          "brake_type": null,
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     },
@@ -348,6 +369,9 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -506,6 +530,22 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque : frein électrique/régénératif KERS à l'avant + frein tambour à l'arrière (commandé par levier) + frein de secours à pied sur garde-boue arrière. Aucun code brake_type ne correspond exactement (EBS avant + tambour arrière) : brake_type laissé à null.",
+          "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
+          "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sport-48v-105ah/",
+          "source_type": "constructeur"
+        },
+        "found": {
+          "brake_type": null,
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
+        }
       }
     },
     {
@@ -529,6 +569,7 @@
           "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706",
           "https://full-mobility.com/wp-content/uploads/2023/03/1520-2.jpg"
         ],
+        "brake_type": "fender_foot_ebs",
         "tire_family": "solid",
         "score_offroad": 23,
         "description": "L'E-Twow Booster SE est une trottinette électrique pliable et ultra-légère, animée par un moteur brushless de 500 W et une batterie Li-ion 36 V 7,8 Ah offrant jusqu'à 30 km d'autonomie. Elle est équipée de pneus pleins de 8 pouces, de suspensions avant et arrière, d'un frein magnétique à l'avant avec récupération d'énergie KERS et d'un frein mécanique de secours à l'arrière (version tambour disponible). Vendue bridée à 25 km/h pour la voie publique, elle peut atteindre 30 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -590,25 +631,27 @@
           "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706",
           "type": "og:image fiche produit"
         },
+        "brake_type": {
+          "url": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+          "type": "revendeur"
+        },
         "tire_family": {
           "url": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
           "type": "revendeur"
         }
       },
-      "missing": [
-        "brake_type"
-      ],
-      "discMissing": [
-        "disc_diameter",
-        "disc_pcd",
-        "disc_holes"
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -707,9 +750,10 @@
         },
         "keys": {
           "brake_type": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "fender_foot_ebs",
+            "source_url": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/e-twow-s2-booster-es-black/",
+            "source_type": "revendeur"
           },
           "disc_diameter": {
             "value": null,
@@ -757,6 +801,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque : frein magnétique/électronique (EBS + KERS) à l'avant et frein mécanique de secours à l'arrière par appui du garde-boue sur le pneu. Note : Swiss Distribution (swiss-distribution.com) évoque un frein à tambour arrière sur une version ES 2022, et Lifty Electric parle de disques sans détail ; ces mentions contredisent les fiches revendeurs FR et le constructeur (frein arrière d'urgence mécanique).",
+          "source_url": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+          "source_url_2": "https://electrotraveller.com/electric-scooters/e-twow-s2-booster-es-black/",
+          "source_type": "revendeur"
+        },
+        "found": {
+          "brake_type": "fender_foot_ebs",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     },
@@ -858,6 +918,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -964,8 +1028,9 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "source_url": "https://www.etwow.net/en/e-twow-gt-se-sport-en",
+            "source_url_2": "https://full-mobility.com/produit/trottinette-electrique-e-twow-booster-gt-se-2021-bluetooth-48v-10-5-ah/",
+            "source_type": "constructeur"
           },
           "disc_diameter": {
             "value": null,
@@ -1013,6 +1078,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque. E-Twow GT SE : frein électromagnétique/régénératif KERS à l'avant + frein à tambour mécanique à l'arrière (80 mm, à la poignée) + frein de secours au pied sur le garde-boue arrière. Combinaison (EBS avant + tambour arrière) absente de la liste des codes brake_type, donc brake_type laissé à null : à trancher manuellement.",
+          "source_url": "https://www.etwow.net/en/e-twow-gt-se-sport-en",
+          "source_url_2": "https://www.wee-bot.com/products/frein-tambour-trottinette-electrique-etwow-gt",
+          "source_type": "constructeur"
+        },
+        "found": {
+          "brake_type": null,
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     }

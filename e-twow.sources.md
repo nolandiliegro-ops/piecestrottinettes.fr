@@ -1,11 +1,14 @@
 # Extraction E-Twow — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 142578 tokens entrée, 4959 sortie, 12 recherches web.
 
 ## E-Twow GT SL — MANQUE
 - Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 pouces, pneus pleins (airless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -27,6 +30,7 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 
 ## E-Twow GT Sport — MANQUE
 - Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -46,9 +50,8 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 | rim_diameter | 5.5 | revendeur | https://www.out-fun.com/pieces-detachees-trottinettes-electriques/1263-pneu-plein-avant-plus-large-pour-e-twow-3770018713045.html | https://www.wattiz.fr/fr/pneus-plein/25921-pneu-plein-200x50-3770018713045.html |
 | tire_family | solid | distributeur | https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gt-sport-48v-10-5ah-noir/ |  |
 
-## E-Twow Booster SE — MANQUE
-- Manque : brake_type
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+## E-Twow Booster SE — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -65,10 +68,12 @@ Coût mesuré : 251342 tokens entrée, 9898 sortie, 13 recherches web.
 | foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se |  |
 | wheel_inches | 8 | revendeur | https://www.wheels-moov.fr/product/__show/145/e-twow-booster-se |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706 |  |
+| brake_type | fender_foot_ebs | revendeur | https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html |  |
 | tire_family | solid | revendeur | https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html |  |
 
 ## E-Twow GT SE — MANQUE
 - Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 pouces, pneu plein increvable (airless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

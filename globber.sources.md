@@ -1,13 +1,14 @@
 # Extraction Globber — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-## Globber E-MOTION 6 — MANQUE
-- Manque : brake_type
+Coût mesuré : 34816 tokens entrée, 870 sortie, 3 recherches web.
+
+## Globber E-MOTION 6 — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=14.4
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « Avant 120 mm (largeur 36 mm) ; arrière 90 x 50 mm (roues pleines) », non exploitable seul)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -23,6 +24,7 @@ Coût mesuré : 188583 tokens entrée, 9421 sortie, 12 recherches web.
 | foldable | false | constructeur | https://www.globber.fr/electriques/486-trottinette-%C3%A9lectrique-e-motion-6-4895224408413.html |  |
 | wheel_inches | 4.7 | constructeur | https://www.globber.fr/img/cms/IM/IM_E6-12L_2303_print.pdf |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://www.globber.fr/7337-large_default/trottinette-%C3%A9lectrique-e-motion-6.jpg |  |
+| brake_type | fender_foot_ebs | constructeur | https://support.globber.com/docs/e-motion/e-motion-6/ |  |
 | tire_family | solid | distributeur | https://www.decathlon.be/fr/p/trottinette-electrique-enfant-globber-e-6/356105/m8891935 |  |
 
 ## Globber E-MOTION 4 PLUS — MANQUE

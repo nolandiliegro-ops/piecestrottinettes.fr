@@ -1,13 +1,15 @@
 # Extraction Hiboy — 2026-10-10
 
-**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 3 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 248644 tokens entrée, 5252 sortie, 11 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 113816 tokens entrée, 2251 sortie, 8 recherches web.
 
 ## Hiboy S2 Pro — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
-- Trouvé mais hors référentiel (non importé) : rim_diameter=6.1 · tire_section=10x2.125
-- Une seule source, NON importé : disc_holes=6 (https://www.monsterscooterparts.com/120mm-brake-disc-rotor-hiboy-s2-s2r.html) · rim_diameter=6.1 (https://www.amazon.com/GLDYTIMES-10x2-125-Puncture-Proof-Explosion-Proof-Replacement/dp/B0BZS6Y9ZJ) · tire_section=10x2.125 (https://www.amazon.com/10x2-125-Electric-Scooter-Replacement-Tubeless/dp/B0H33FBDY2)
+- Une seule source, NON importé : rim_diameter=6.1 (https://www.amazon.com/GLDYTIMES-10x2-125-Puncture-Proof-Explosion-Proof-Replacement/dp/B0BZS6Y9ZJ) · disc_holes=6 (https://www.monsterscooterparts.com/120mm-brake-disc-rotor-hiboy-s2-s2r.html) · tire_section=10x2.125 (https://www.amazon.com/10x2-125-Electric-Scooter-Replacement-Tubeless/dp/B0H33FBDY2)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -27,9 +29,8 @@ Coût mesuré : 248644 tokens entrée, 5252 sortie, 11 recherches web.
 | disc_diameter | 120 | revendeur | https://www.monsterscooterparts.com/120mm-brake-disc-rotor-hiboy-s2-s2r.html | https://www.scooterworks.com/products/brake-caliper-and-rotor-hiboy-s2-pro-ks4-ks4-pro-s2r |
 | tire_family | solid | constructeur | https://www.hiboy.ca/fr/products/hiboy-s2-pro-electric-scooter-bundle |  |
 
-## Hiboy S2 Lite — MANQUE
-- Manque : brake_type
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+## Hiboy S2 Lite — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 6.5 pouces, pneus pleins (non gonflables) », non exploitable seul)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -47,6 +48,7 @@ Coût mesuré : 248644 tokens entrée, 5252 sortie, 11 recherches web.
 | foldable | true | constructeur | https://hiboy.com/products/scooter-electrique-hiboy-s2-lite |  |
 | wheel_inches | 6.5 | constructeur | https://hiboy.com/products/scooter-electrique-hiboy-s2-lite |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048 |  |
+| brake_type | fender_foot_ebs | constructeur | https://hiboy.com/products/scooter-electrique-hiboy-s2-lite |  |
 | tire_family | solid | constructeur | https://www.hiboy.com/products/hiboy-s2-lite |  |
 
 ## Hiboy MAX Pro — MANQUE

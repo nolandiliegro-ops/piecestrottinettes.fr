@@ -100,23 +100,25 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [
-        "rim_diameter=6.1",
-        "tire_section=10x2.125"
-      ],
+      "offVocab": [],
       "proposals": [],
       "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.1",
+          "url": "https://www.amazon.com/GLDYTIMES-10x2-125-Puncture-Proof-Explosion-Proof-Replacement/dp/B0BZS6Y9ZJ",
+          "reason": "page de roue complète (fournit la jante)"
+        },
         {
           "key": "disc_holes",
           "value": 6,
           "url": "https://www.monsterscooterparts.com/120mm-brake-disc-rotor-hiboy-s2-s2r.html"
-        },
-        {
-          "key": "rim_diameter",
-          "value": "6.1",
-          "url": "https://www.amazon.com/GLDYTIMES-10x2-125-Puncture-Proof-Explosion-Proof-Replacement/dp/B0BZS6Y9ZJ"
         },
         {
           "key": "tire_section",
@@ -282,6 +284,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_unknown_actuation",
+          "disc_diameter": 120,
+          "disc_pcd": null,
+          "disc_holes": 6
+        }
       }
     },
     {
@@ -305,6 +318,7 @@
         "source_image_urls": [
           "http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048"
         ],
+        "brake_type": "fender_foot_ebs",
         "tire_family": "solid",
         "score_offroad": 18,
         "description": "La Hiboy S2 Lite est une trottinette électrique pliable en aluminium, équipée d'un moteur de 250 W (400 W en pointe) et d'une batterie 36 V 5 Ah offrant jusqu'à 10,6 miles (environ 17 km) d'autonomie. Elle roule sur des pneus pleins de 6,5 pouces sans suspension, avec un double freinage (frein électronique ABS et frein à pied arrière) et une vitesse maximale d'environ 21 km/h (13 mph) ; la vitesse est bridée à 25 km/h maximum en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -370,25 +384,27 @@
           "url": "http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048",
           "type": "og:image fiche produit"
         },
+        "brake_type": {
+          "url": "https://hiboy.com/products/scooter-electrique-hiboy-s2-lite",
+          "type": "constructeur"
+        },
         "tire_family": {
           "url": "https://www.hiboy.com/products/hiboy-s2-lite",
           "type": "constructeur"
         }
       },
-      "missing": [
-        "brake_type"
-      ],
-      "discMissing": [
-        "disc_diameter",
-        "disc_pcd",
-        "disc_holes"
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {
@@ -487,9 +503,10 @@
         },
         "keys": {
           "brake_type": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "fender_foot_ebs",
+            "source_url": "https://hiboy.com/products/scooter-electrique-hiboy-s2-lite",
+            "source_url_2": "https://scooter.guide/hiboy-lite-s2-electric-scooter-review/",
+            "source_type": "constructeur"
           },
           "disc_diameter": {
             "value": null,
@@ -537,6 +554,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque : frein électronique ABS (pouce) à l'avant + frein à pied sur le garde-boue arrière (« ABS E-brake and pedal brake » / « rear foot brake »).",
+          "source_url": "https://hiboy.com/products/scooter-electrique-hiboy-s2-lite",
+          "source_url_2": "https://scooter.guide/hiboy-lite-s2-electric-scooter-review/",
+          "source_type": "constructeur"
+        },
+        "found": {
+          "brake_type": "fender_foot_ebs",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     },

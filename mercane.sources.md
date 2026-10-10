@@ -1,8 +1,10 @@
 # Extraction Mercane — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 23821 tokens entrée, 335 sortie, 2 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 34463 tokens entrée, 896 sortie, 3 recherches web.
 
 ## Mercane WideWheel Pro — MANQUE
 - Manque : source_image_urls
@@ -28,9 +30,8 @@ Coût mesuré : 23821 tokens entrée, 335 sortie, 2 recherches web.
 | disc_diameter | 120 | revendeur | https://myscooterparts.com/products/mercane-wide-wheel-pro-brake-disc-120-mm-6-bolt-mount | https://www.amazon.com/SPEDWHEL-Suitable-WideWheel-Electric-Replacement/dp/B09155TNDH |
 | tire_family | solid | revendeur | https://wamoov.fr/produit/mercane-wide-wheel-pro-2020-trottinette-electrique-1000w/ |  |
 
-## Mercane Transboard — MANQUE
-- Manque : brake_type
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+## Mercane Transboard — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « Avant 10 pouces (chambre à air) x2, arrière 8 pouces », non exploitable seul)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -45,3 +46,4 @@ Coût mesuré : 23821 tokens entrée, 335 sortie, 2 recherches web.
 | foldable | true | revendeur | https://www.fr.fnac.be/Trottinette-electrique-Mercane-Transboard-Noir/a11482434 |  |
 | wheel_inches | 10 | revendeur | https://alternative.bike/168-mercane-transboard.html |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://alternative.bike/2477-large_default/mercane-transboard.jpg |  |
+| brake_type | fender_foot_ebs | revendeur | https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/ |  |

@@ -29,6 +29,34 @@
       "meta_title": "Hiboy S2 Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Hiboy S2 Pro : disque de frein 120 mm, plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "hiboy s2 pro, pieces hiboy s2 pro, disque frein hiboy s2 pro, plaquettes hiboy s2 pro, pneu hiboy s2 pro"
+    },
+    {
+      "name": "Hiboy S2 Lite",
+      "slug": "hiboy-s2-lite",
+      "voltage": 36,
+      "amperage": 5,
+      "power_watts": 250,
+      "max_speed_private_kmh": 21,
+      "range_km": 17,
+      "max_load_kg": 82,
+      "year": 2020,
+      "max_speed_kmh": 25,
+      "weight_kg": 9.9,
+      "suspension": "Aucune",
+      "ip_rating": "IPX4",
+      "tire_size": "6.5 pouces, pneus pleins (non gonflables)",
+      "foldable": true,
+      "wheel_inches": 6.5,
+      "source_image_urls": [
+        "http://www.hiboy.com/cdn/shop/files/S2_Lite-Pink-light_1.jpg?v=1774939901&width=2048"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Hiboy S2 Lite est une trottinette électrique pliable en aluminium, équipée d'un moteur de 250 W (400 W en pointe) et d'une batterie 36 V 5 Ah offrant jusqu'à 10,6 miles (environ 17 km) d'autonomie. Elle roule sur des pneus pleins de 6,5 pouces sans suspension, avec un double freinage (frein électronique ABS et frein à pied arrière) et une vitesse maximale d'environ 21 km/h (13 mph) ; la vitesse est bridée à 25 km/h maximum en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy S2 Lite - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy S2 Lite : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy s2 lite, pieces hiboy s2 lite, disque frein hiboy s2 lite, plaquettes hiboy s2 lite, pneu hiboy s2 lite"
     }
   ]
 }

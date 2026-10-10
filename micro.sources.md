@@ -1,11 +1,14 @@
 # Extraction Micro — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
 
-Coût mesuré : 315825 tokens entrée, 11302 sortie, 16 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 186885 tokens entrée, 3508 sortie, 12 recherches web.
 
 ## Micro Merlin II — MANQUE
 - Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 200 mm (pneu plein caoutchouc anti-crevaison, Airless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -27,6 +30,7 @@ Coût mesuré : 315825 tokens entrée, 11302 sortie, 16 recherches web.
 | tire_family | solid | distributeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 
 ## Micro X21 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 200 mm / 8" (pneus alvéolés anti-crevaison) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -68,6 +72,7 @@ Coût mesuré : 315825 tokens entrée, 11302 sortie, 16 recherches web.
 
 ## Micro Explorer — MANQUE
 - Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 pouces / 200 mm (pneus pleins) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

@@ -298,6 +298,7 @@
         "source_image_urls": [
           "https://alternative.bike/2477-large_default/mercane-transboard.jpg"
         ],
+        "brake_type": "fender_foot_ebs",
         "score_offroad": 40,
         "description": "La Mercane Transboard est une trottinette électrique à trois roues (deux roues avant gonflables de 10 pouces et une roue motrice arrière de 8 pouces) équipée d'un moteur moyeu de 500 W et d'une batterie LG 48 V 8,8 Ah (422 Wh) pour environ 30 km d'autonomie. Elle est bridée à 25 km/h, pèse 18 kg, supporte 100 kg et freine avec un frein moteur électrique et un frein à pied arrière, avec une double suspension avant. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Mercane Transboard - Pièces détachées | PiècesTrottinettes.fr",
@@ -349,22 +350,24 @@
         "source_image_urls": {
           "url": "https://alternative.bike/2477-large_default/mercane-transboard.jpg",
           "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+          "type": "revendeur"
         }
       },
-      "missing": [
-        "brake_type"
-      ],
-      "discMissing": [
-        "disc_diameter",
-        "disc_pcd",
-        "disc_holes"
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -460,9 +463,10 @@
         },
         "keys": {
           "brake_type": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "fender_foot_ebs",
+            "source_url": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+            "source_url_2": "https://levrevolution.com/2017/02/20/mercane-transboard-electric-scooter/",
+            "source_type": "revendeur"
           },
           "disc_diameter": {
             "value": null,
@@ -509,6 +513,22 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "no_disc": {
+          "value": "Pas de frein à disque : le Mercane Transboard (trottinette à 3 roues) a un frein au pied à l'arrière plus un frein moteur électronique. Aucune source ne mentionne un disque ou un tambour. Aucune fiche de disque de rechange Transboard n'existe. Les disques Mercane trouvés (120 mm WideWheel, 140 mm MX60) concernent d'autres modèles.",
+          "source_url": "https://gyronews.com/transboard-de-mercane-bientot-dispo-france-1254/",
+          "source_url_2": "https://levrevolution.com/2017/02/20/mercane-transboard-electric-scooter/",
+          "source_type": "revendeur"
+        },
+        "found": {
+          "brake_type": "fender_foot_ebs",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     }

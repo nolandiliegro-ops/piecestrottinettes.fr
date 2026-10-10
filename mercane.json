@@ -1,4 +1,29 @@
 {
   "brandName": "Mercane",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Mercane Transboard",
+      "slug": "mercane-transboard",
+      "voltage": 48,
+      "amperage": 8.8,
+      "power_watts": 500,
+      "range_km": 30,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 18,
+      "suspension": "Double suspension avant à double triangulation (double wishbone)",
+      "tire_size": "Avant 10 pouces (chambre à air) x2, arrière 8 pouces",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://alternative.bike/2477-large_default/mercane-transboard.jpg"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "score_offroad": 40,
+      "description": "La Mercane Transboard est une trottinette électrique à trois roues (deux roues avant gonflables de 10 pouces et une roue motrice arrière de 8 pouces) équipée d'un moteur moyeu de 500 W et d'une batterie LG 48 V 8,8 Ah (422 Wh) pour environ 30 km d'autonomie. Elle est bridée à 25 km/h, pèse 18 kg, supporte 100 kg et freine avec un frein moteur électrique et un frein à pied arrière, avec une double suspension avant. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Mercane Transboard - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Mercane Transboard : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "mercane transboard, pieces mercane transboard, disque frein mercane transboard, plaquettes mercane transboard, pneu mercane transboard"
+    }
+  ]
 }
