@@ -61,7 +61,7 @@ export function parseCompat(descriptionHtml) {
 async function main() {
   const products = [];
   for (let page = 1; page <= 40; page++) {
-    const j = await getJson(`${BASE}/products.json?limit=250&page=${page}`);
+    const j = await getJson(`${BASE}/fr/products.json?limit=250&page=${page}`);
     if (!j.products || j.products.length === 0) break;
     products.push(...j.products);
     await sleep(400);
@@ -69,6 +69,8 @@ async function main() {
   if (products.length === 0) throw new Error('0 produit lu : la liste eWheel a changé ou bloque — rien n\'est écrit.');
 
   const utiles = products.filter((p) => UTILE.test(p.title) && !HORS.test(p.title));
+  // Garde du 10/10 : sans /fr/, la liste sort en espagnol et 0 titre ne matche — un run vert vide.
+  if (utiles.length === 0) throw new Error(`0 produit utile sur ${products.length} : titres pas en français ? rien n'est écrit.`);
   const rows = [];
   for (const p of utiles) {
     let compat = [];
