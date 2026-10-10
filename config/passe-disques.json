@@ -1,6 +1,6 @@
 {
   "_doc": "Passes ciblées sur les brouillons : passe = disques (fill-discs.js), pneus (fill-tires.js) ou photos (fill-photos.js). Modifier ce fichier sur main = lancer un run. go=false : rien ne part.",
-  "go": true,
+  "go": false,
   "model": "claude-sonnet-5-5",
   "max_searches": 6,
   "brands": [
@@ -16,7 +16,7 @@
     "yeep-me",
     "zwheel"
   ],
-  "max_brands": 11,
+  "max_brands": 0,
   "plafond_tokens_run": 2500000,
   "passe": "pneus"
 }
