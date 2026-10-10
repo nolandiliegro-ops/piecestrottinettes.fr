@@ -26,6 +26,7 @@ const DATA = resolve(process.cwd(), opt('data-dir', 'extraction'));
 const MODEL = opt('model', 'claude-sonnet-5-5');
 const MAX_SEARCHES = Number(opt('max-searches', '8'));
 const MAX_BRANDS = Number(opt('max-brands', '999'));
+const CAP = Number(opt('plafond-tokens', '0')); // GARDE-FOU : sans plafond, rien ne part
 const ONLY = opt('brands') ? opt('brands').split(',').map((s) => s.trim()) : null;
 const BRAKE_KEYS = ['brake_type', 'disc_diameter', 'disc_pcd', 'disc_holes'];
 
@@ -126,6 +127,7 @@ Une valeur hors de ces listes : renvoie-la quand même avec sa source (elle sera
 const takeIfEmpty = (cur, nxt) => (!cur || !cur.source_url || cur.value === null) ? nxt : cur;
 
 async function main() {
+  if (!CAP) { console.log('--plafond-tokens absent : aucun run sans plafond. Arrêt.'); return; }
   const vocab = await loadVocab();
   const files = readdirSync(DATA).filter((f) => f.endsWith('.draft.json') && !f.startsWith('vsett-banc'))
     .filter((f) => !ONLY || ONLY.includes(f.replace('.draft.json', ''))).slice(0, MAX_BRANDS);
@@ -140,6 +142,7 @@ async function main() {
       const r = draft.results[i];
       if (r.ready || !r.missing.length || !r.missing.every((k) => BRAKE_KEYS.includes(k))) continue;
       if (r.disc_pass?.model === MODEL) continue; // déjà passé avec ce modèle IA : jamais de double dépense
+      if (usage.input_tokens + usage.output_tokens >= CAP) { console.log(`Plafond ${CAP} tokens atteint : arrêt.`); break; }
       tried++; touched++;
       try {
         const got = await claude({ system: SYSTEM, prompt: prompt(r.scooter.name, r.missing, vocab), tool: tool(vocab) });

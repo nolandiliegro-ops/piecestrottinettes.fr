@@ -1,7 +1,7 @@
 {
   "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
   "nuit_active": false,
-  "max_marques_par_run": 40,
+  "max_marques_par_run": 0,
   "file": [
     {
       "brand": "Vsett",
@@ -11,7 +11,8 @@
         "11+"
       ],
       "out": "vsett-banc",
-      "note": "banc d'essai : valeurs connues en base"
+      "note": "banc d'essai : valeurs connues en base",
+      "banc": true
     },
     {
       "brand": "Vsett",
@@ -21,7 +22,8 @@
         "11+"
       ],
       "out": "vsett-banc2",
-      "note": "banc 2 : photos og:image + solid_conversion non importé"
+      "note": "banc 2 : photos og:image + solid_conversion non importé",
+      "banc": true
     },
     {
       "brand": "Vsett",
@@ -31,7 +33,8 @@
         "11+"
       ],
       "out": "vsett-banc3",
-      "note": "banc 3 : double source exigée sur disque/jante/pneu/poids"
+      "note": "banc 3 : double source exigée sur disque/jante/pneu/poids",
+      "banc": true
     },
     {
       "brand": "Speedway",
@@ -274,5 +277,7 @@
       "tier": "C"
     }
   ],
-  "ajout_modeles": 2
+  "ajout_modeles": 0,
+  "plafond_tokens_run": 3000000,
+  "arret_apres_marques_sans_gain": 3
 }
