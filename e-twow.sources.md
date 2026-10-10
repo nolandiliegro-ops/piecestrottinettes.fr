@@ -1,15 +1,13 @@
 # Extraction E-Twow — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-opus-5-5.
+**4 PRÊT / 4 modèles.** Modèle IA : passe disques claude-opus-5-5 · réassemblé (règle entraxe 09/10).
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **4 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
 Coût mesuré : 81648 tokens entrée, 2622 sortie, 6 recherches web.
 
-## E-Twow GT SL — MANQUE
-- Manque : brake_type
+## E-Twow GT SL — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 pouces, pneus pleins (airless) », non exploitable seul)
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -26,12 +24,11 @@ Coût mesuré : 81648 tokens entrée, 2622 sortie, 6 recherches web.
 | foldable | true | revendeur | https://les-cyclistes-branches.com/produit/e-twow-gt-sl-trottinette-electrique/ |  |
 | wheel_inches | 8 | revendeur | https://www.glisseurbaine.com/2463-trottinette-electrique-e-twow-gt-sl.html |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | http://www.maisondelatrott.fr/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-103146_ac3bb3fd-1c33-4127-9d40-8c41558e0125.webp?v=1757680811 |  |
+| brake_type | ebs_front_drum_rear | constructeur | https://e-twow.com/fr/products/e-twow-gt-sport-edition-limitee |  |
 | tire_family | solid | constructeur | https://e-twow.com/products/gt-sl |  |
 
-## E-Twow GT Sport — MANQUE
-- Manque : brake_type
+## E-Twow GT Sport — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -47,6 +44,7 @@ Coût mesuré : 81648 tokens entrée, 2622 sortie, 6 recherches web.
 | foldable | true | constructeur | https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter |  |
 | wheel_inches | 8 | revendeur | https://www.veloshop-obernai.com/products/etwow-gt-sport-48v-10-5ah |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://www.veloshop-obernai.com/wp-content/uploads/2026/08/etwowgtsport48v10a-1.jpg |  |
+| brake_type | ebs_front_drum_rear | constructeur | https://e-twow.com/fr/products/e-twow-gt-sport-edition-limitee |  |
 | rim_diameter | 5.5 | revendeur | https://www.out-fun.com/pieces-detachees-trottinettes-electriques/1263-pneu-plein-avant-plus-large-pour-e-twow-3770018713045.html | https://www.wattiz.fr/fr/pneus-plein/25921-pneu-plein-200x50-3770018713045.html |
 | tire_family | solid | distributeur | https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gt-sport-48v-10-5ah-noir/ |  |
 
@@ -71,10 +69,8 @@ Coût mesuré : 81648 tokens entrée, 2622 sortie, 6 recherches web.
 | brake_type | fender_foot_ebs | revendeur | https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html |  |
 | tire_family | solid | revendeur | https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html |  |
 
-## E-Twow GT SE — MANQUE
-- Manque : brake_type
+## E-Twow GT SE — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 pouces, pneu plein increvable (airless) », non exploitable seul)
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -92,4 +88,5 @@ Coût mesuré : 81648 tokens entrée, 2622 sortie, 6 recherches web.
 | foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
 | wheel_inches | 8 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_GT_SE_Pas_cher-317390.jpg?v=1750673409 |  |
+| brake_type | ebs_front_drum_rear | constructeur | https://e-twow.com/fr/products/e-twow-gt-sport-edition-limitee |  |
 | tire_family | solid | revendeur | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/etwow/e-twow-gt-se |  |

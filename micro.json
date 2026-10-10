@@ -2,6 +2,34 @@
   "brandName": "Micro",
   "scooters": [
     {
+      "name": "Micro Merlin II",
+      "slug": "micro-merlin-ii",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 500,
+      "max_speed_private_kmh": 25,
+      "range_km": 35,
+      "max_load_kg": 100,
+      "year": 2023,
+      "max_speed_kmh": 25,
+      "weight_kg": 13,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "200 mm (pneu plein caoutchouc anti-crevaison, Airless)",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg"
+      ],
+      "brake_type": "ebs_front_drum_rear",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "La Micro Merlin II (4e génération, 2023) est équipée d'un moteur avant de 300 W nominaux (500 W max) alimenté par une batterie lithium-ion 36 V / 7,8 Ah (environ 280 Wh). Elle roule sur des roues de 200 mm à pneus pleins anti-crevaison, avec suspensions avant et arrière, frein à tambour arrière et frein moteur, pour une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Micro Merlin II - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Micro Merlin II : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "micro merlin ii, pieces micro merlin ii, disque frein micro merlin ii, plaquettes micro merlin ii, pneu micro merlin ii"
+    },
+    {
       "name": "Micro X21",
       "slug": "micro-x21",
       "voltage": 36,

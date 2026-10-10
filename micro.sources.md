@@ -1,15 +1,13 @@
 # Extraction Micro — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-opus-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : passe disques claude-opus-5-5 · réassemblé (règle entraxe 09/10).
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
 Coût mesuré : 153536 tokens entrée, 2974 sortie, 8 recherches web.
 
-## Micro Merlin II — MANQUE
-- Manque : brake_type
+## Micro Merlin II — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 200 mm (pneu plein caoutchouc anti-crevaison, Airless) », non exploitable seul)
-- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -27,6 +25,7 @@ Coût mesuré : 153536 tokens entrée, 2974 sortie, 8 recherches web.
 | foldable | true | constructeur | https://www.micro-mobility.com/en/products/micro-merlin-ii |  |
 | wheel_inches | 8 | revendeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg |  |
+| brake_type | ebs_front_drum_rear | constructeur | https://www.micro-mobility.fr/img/cms/ficheproduit-merlin2grey-02-A4%20(1).pdf |  |
 | tire_family | solid | distributeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 
 ## Micro X21 — PRÊT
@@ -52,6 +51,7 @@ Coût mesuré : 153536 tokens entrée, 2974 sortie, 8 recherches web.
 
 ## Micro Merlin — MANQUE
 - Manque : brake_type, source_image_urls
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 200 mm (8 pouces), pneus pleins anti-crevaison (Airless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

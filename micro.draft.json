@@ -22,6 +22,7 @@
         "source_image_urls": [
           "https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg"
         ],
+        "brake_type": "ebs_front_drum_rear",
         "tire_family": "solid",
         "score_offroad": 23,
         "description": "La Micro Merlin II (4e génération, 2023) est équipée d'un moteur avant de 300 W nominaux (500 W max) alimenté par une batterie lithium-ion 36 V / 7,8 Ah (environ 280 Wh). Elle roule sur des roues de 200 mm à pneus pleins anti-crevaison, avec suspensions avant et arrière, frein à tambour arrière et frein moteur, pour une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -87,19 +88,17 @@
           "url": "https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg",
           "type": "og:image fiche produit"
         },
+        "brake_type": {
+          "url": "https://www.micro-mobility.fr/img/cms/ficheproduit-merlin2grey-02-A4%20(1).pdf",
+          "type": "constructeur"
+        },
         "tire_family": {
           "url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
           "type": "distributeur"
         }
       },
-      "missing": [
-        "brake_type"
-      ],
-      "discMissing": [
-        "disc_diameter",
-        "disc_pcd",
-        "disc_holes"
-      ],
+      "missing": [],
+      "discMissing": [],
       "wheelMissing": [
         "rim_diameter",
         "tire_section"
@@ -109,7 +108,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -207,10 +206,11 @@
         },
         "keys": {
           "brake_type": {
-            "value": null,
-            "source_url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
-            "source_type": "revendeur",
-            "source_url_2": "https://www.mobilityurban.fr/amp/trottinette-electrique/legere-et-compacte/micro-merlin-ii-grise-et-noire.html"
+            "value": "ebs_front_drum_rear",
+            "source_url": "https://www.micro-mobility.fr/img/cms/ficheproduit-merlin2grey-02-A4%20(1).pdf",
+            "source_url_2": "https://www.micro-mobility.com/en/products/micro-merlin-ii",
+            "source_type": "constructeur",
+            "note": "ajout manuel Claude 10/10 (Perplexity), code créé le 10/10"
           },
           "disc_diameter": {
             "value": null,
@@ -633,6 +633,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
