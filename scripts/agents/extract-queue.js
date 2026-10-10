@@ -47,6 +47,8 @@ const BUDGET = Number(cfg.plafond_tokens_run || 0);
 const MAX_DRY = Number(cfg.arret_apres_marques_sans_gain || 3);
 if (!BUDGET) { console.log('plafond_tokens_run absent ou 0 : aucun run sans plafond. Arrêt.'); process.exit(0); }
 const readyCount = (it) => (draftOf(it)?.results || []).filter((r) => r.ready).length;
+// 10/10 : un PRÊT sans clé roue n'aura ni pneu ni chambre — compté au journal pour ne plus le découvrir en prod
+const noWheel = (it) => (draftOf(it)?.results || []).filter((r) => r.ready && r.wheelMissing?.length).length;
 const costOf = (it) => { try { const m = readFileSync(resolve(dataDir, `${it.out}.sources.md`), 'utf-8').match(/Coût mesuré : (\d+) tokens entrée, (\d+) sortie, (\d+) recherches/); return m ? { i: +m[1], o: +m[2], w: +m[3] } : null; } catch { return null; } };
 let spent = 0, dry = 0;
 let failed = 0;
@@ -70,7 +72,7 @@ for (const it of batch) {
   const gain = readyCount(it) - readyBefore;
   dry = gain > 0 ? 0 : dry + 1;
   appendFileSync(resolve(dataDir, '_journal.md'),
-    `- ${new Date().toISOString()} · ${it.brand}${ADD ? ` · AJOUT +${ADD}` : ''} · ${ok ? 'OK' : `ÉCHEC (code ${r.status})`} · ${((Date.now() - t0) / 60000).toFixed(1)} min${c ? ` · ${c.i} in / ${c.o} out / ${c.w} rech · +${gain} prêt · cumul run ${spent} tokens` : ''}${why}\n`);
+    `- ${new Date().toISOString()} · ${it.brand}${ADD ? ` · AJOUT +${ADD}` : ''} · ${ok ? 'OK' : `ÉCHEC (code ${r.status})`} · ${((Date.now() - t0) / 60000).toFixed(1)} min${c ? ` · ${c.i} in / ${c.o} out / ${c.w} rech · +${gain} prêt (dont ${noWheel(it)} sans clé roue) · cumul run ${spent} tokens` : ''}${why}\n`);
   if (spent >= BUDGET) { appendFileSync(resolve(dataDir, '_journal.md'), `- ${new Date().toISOString()} · ARRÊT : plafond ${BUDGET} tokens atteint (${spent})\n`); console.log('Plafond atteint : arrêt.'); break; }
   if (dry >= MAX_DRY) { appendFileSync(resolve(dataDir, '_journal.md'), `- ${new Date().toISOString()} · ARRÊT : ${dry} marques de suite sans modèle PRÊT gagné\n`); console.log('Rendement nul : arrêt.'); break; }
   if (!ok) {

@@ -19,6 +19,8 @@ export const REQUIRED = ['weight_kg', 'brake_type', 'source_image_urls'];
 
 // Clés qui font vendre une pièce : exigent DEUX sources sur deux sites différents (banc du 08/10 :
 // disque du Vsett 10+ trouvé 145 au 1er run, 160 au 2e — une source seule ne suffit pas).
+// Clés roue : sans les deux, le moteur ne relie AUCUN pneu ni chambre (match = Ø jante × section, jamais les pouces).
+export const WHEEL_KEYS = ['rim_diameter', 'tire_section'];
 export const CORROBORATED = ['disc_diameter', 'disc_pcd', 'disc_holes', 'rim_diameter', 'tire_section', 'weight_kg'];
 
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return null; } };
@@ -216,8 +218,11 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   // Les clés disque manquantes ne bloquent plus : elles vont dans discMissing (import --allow-missing-keys,
   // publication par SQL), et restent la cible de la passe disques.
   const discMissing = needsDiscKeys(s.brake_type, vocab) ? DISC_KEYS.filter((k) => s[k] === undefined) : [];
+  // 10/10 : 61 modèles sur 120 publiés sans AUCUN pneu ni chambre, en silence — la clé roue n'était exigée nulle part.
+  // Non bloquant (le modèle vend ses chargeurs), mais compté et affiché en tête de rapport : le silence n'est pas un succès.
+  const wheelMissing = WHEEL_KEYS.filter((k) => s[k] === undefined);
 
-  return { scooter: s, sources, missing, discMissing, notInt, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
+  return { scooter: s, sources, missing, discMissing, wheelMissing, notInt, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
 }
 
 /** Rapport de sources lisible (markdown), un tableau par modèle. */
@@ -225,11 +230,14 @@ export function sourcesReport(brandName, results, meta = {}) {
   const lines = [`# Extraction ${brandName} — ${meta.date || ''}`, ''];
   const ready = results.filter((r) => r.ready).length;
   lines.push(`**${ready} PRÊT / ${results.length} modèles.** Modèle IA : ${meta.model || '?'}${meta.escalated ? ` · relance : ${meta.escalated}` : ''}.`, '');
+  const noWheel = results.filter((r) => r.ready && r.wheelMissing?.length).length;
+  if (noWheel) lines.push(`⚠️ **${noWheel} PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.`, '');
   if (meta.usage) lines.push(`Coût mesuré : ${meta.usage.input_tokens} tokens entrée, ${meta.usage.output_tokens} sortie, ${meta.usage.web_searches} recherches web.`, '');
   for (const r of results) {
     lines.push(`## ${r.scooter.name} — ${r.ready ? 'PRÊT' : 'MANQUE'}`);
     if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
     if (r.notInt?.length) lines.push(`- Valeur à virgule pour une colonne entière, NON importée : ${r.notInt.join(' · ')}`);
+    if (r.wheelMissing?.length) lines.push(`- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : ${r.wheelMissing.join(', ')}${r.scooter.tire_size ? ` (texte relevé : « ${r.scooter.tire_size} », non exploitable seul)` : ''}`);
     if (r.discMissing?.length) lines.push(`- Publiable SANS disques (règle du 10/10) — inconnu : ${r.discMissing.join(', ')}`);
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);

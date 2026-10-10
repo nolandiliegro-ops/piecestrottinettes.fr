@@ -178,3 +178,16 @@ test('10/10 : un og:image qui est un logo de site est rejeté', () => {
   const r = assembleScooter('X', 'Y', { ...specsOk, image_urls: [], _og_images: ['https://i2.cdscdn.com/resources/RWD/header/nLogo.png', 'https://media.rdc.fr/p/abc.jpg'] }, keysOk, vocab);
   assert.deepEqual(r.scooter.source_image_urls, ['https://media.rdc.fr/p/abc.jpg']);
 });
+
+test('clé roue manquante → signalée, non bloquante, comptée en tête de rapport (10/10)', () => {
+  const { rim_diameter, tire_section, ...keysSansRoue } = keysOk;
+  const r = assembleScooter('Vsett', '10+', { ...specsOk, tire_size: S('10"') }, keysSansRoue, vocab);
+  assert.equal(r.ready, true);
+  assert.deepEqual(r.wheelMissing, ['rim_diameter', 'tire_section']);
+  const rep = sourcesReport('Vsett', [r]);
+  assert.ok(rep.includes('1 PRÊT sans clé roue'));
+  assert.ok(rep.includes('SANS CLÉ ROUE'));
+  const full = assembleScooter('Vsett', '10+', specsOk, keysOk, vocab);
+  assert.deepEqual(full.wheelMissing, []);
+  assert.ok(!sourcesReport('Vsett', [full]).includes('sans clé roue'));
+});

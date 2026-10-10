@@ -104,6 +104,8 @@ const SYSTEM = `Tu es l'extracteur de clés PNEU / JANTE de piecestrottinettes.f
 - Chaque valeur avec l'URL EXACTE de la page qui la donne, et une 2e page sur un AUTRE site qui affiche la même valeur. Sans URL : null. Ne jamais déduire ni arrondir.
 - Meilleures sources : fiches de PNEU ou CHAMBRE À AIR DE RECHANGE « compatible <modèle> » (revendeurs FR, Amazon, AliExpress, boutiques de pièces), puis fiche constructeur.
 - Notation ETRTO « 90/65-6.5 » : section 90/65, jante 6.5. « 10x2.50 » : section 10x2.50. Chambre « 50-134 » ou « 10x2.125 sur jante 6.5 » : jante en pouces ou en mm selon la fiche.
+- Le DIAMÈTRE DE JANTE se lit dans le SUFFIXE de la référence d'une pièce de rechange qui nomme le modèle : « 10x2.70-6.5 » → 6.5 · « 90/65-6.5 » → 6.5 · « 10x2.50-6 » → 6 · chambre « 50-134 » ou « diam 134mm » → 134mm. Les pouces seuls (« 10 pouces », « 10x2.125 » sans suffixe) ne donnent JAMAIS la jante : renvoie null plutôt que deviner.
+- Les fournisseurs de pièces (Wattiz, e-watts, trotnation, wee-bot, scooterpassion) titrent souvent « Pneu <taille>-<jante> <modèle> » : c'est la meilleure source. « Compatible avec … » listant 20 modèles = commercial, pas une source.
 - La page doit viser le MÊME modèle et la même génération (même taille de roue).
 - Réponds UNIQUEMENT en appelant l'outil.`;
 
@@ -144,8 +146,9 @@ async function main() {
     let touched = 0, gained = 0;
     for (let i = 0; i < (draft.results || []).length; i++) {
       const r = draft.results[i];
-      // Cible : modèle PRÊT sans section de pneu (c'est elle qui relie pneus et chambres)
-      if (!r.ready || r.scooter.tire_section) continue;
+      // Cible (corrigée le 10/10) : modèle PRÊT à qui il manque la section OU la jante. Le moteur exige les DEUX ;
+      // l'ancienne cible (section seule) ignorait 7 Pure à section connue mais jante vide.
+      if (!r.ready || (r.scooter.tire_section && r.scooter.rim_diameter)) continue;
       if (r.tire_pass?.model === MODEL) continue; // jamais deux fois avec le même modèle IA
       if (usage.input_tokens + usage.output_tokens >= CAP) { console.log(`Plafond ${CAP} tokens atteint : arrêt.`); break; }
       tried++; touched++;
@@ -158,7 +161,7 @@ async function main() {
         if (r.disc_pass) n.disc_pass = r.disc_pass;
         n.tire_pass = { model: MODEL, date: new Date().toISOString().slice(0, 10), found: Object.fromEntries(TIRE_KEYS.map((k) => [k, got[k]?.value ?? null])) };
         draft.results[i] = n;
-        const win = Boolean(n.scooter.tire_section);
+        const win = Boolean(n.scooter.tire_section && n.scooter.rim_diameter); // gain réel = clé roue fermée
         if (win) { gained++; gainedAll++; }
         console.log(`  ${win ? '✅' : '⚠️'} ${r.scooter.name} → section ${n.scooter.tire_section || 'non retenue'} · jante ${n.scooter.rim_diameter || 'non retenue'}`);
       } catch (e) { console.error(`  ✖ ${r.scooter.name} : ${e.message}`); }
