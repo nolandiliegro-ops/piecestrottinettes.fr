@@ -106,7 +106,9 @@
       ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=10x4.0"
+      ],
       "proposals": [],
       "unconfirmed": [],
       "ready": true,
@@ -239,16 +241,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "10x4.0",
+            "source_url": "https://fr.engwe.com/products/engwe-y600",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.decathlon.fr/p/mp/y600-trottinette-electrique-pliable-48v-18ah-pneu-10-4-0-pouces/0c95386c-a3ab-42d0-b8a8-0ba427d94b04/c251"
           },
           "rim_diameter": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "rim_type": {
             "value": null,
@@ -268,6 +270,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x4.0",
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -293,10 +304,12 @@
           "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
         ],
         "brake_type": "disc_mechanical",
+        "tire_section": "10x2.75",
+        "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "L'Engwe Y600S est une trottinette électrique pliable à selle équipée d'un moteur moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah offrant jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus de 10x2,75 pouces avec suspension intégrale et freins à disque mécaniques, et sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 45 km/h annoncés hors bridage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Engwe Y600S - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Engwe Y600S : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Engwe Y600S : plaquettes, pneus 10x2.75, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "engwe y600s, pieces engwe y600s, disque frein engwe y600s, plaquettes engwe y600s, pneu engwe y600s"
       },
       "sources": {
@@ -355,6 +368,15 @@
         },
         "brake_type": {
           "url": "https://www.boulanger.com/ref/9000921799",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/",
+          "type": "revendeur",
+          "url2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s"
+        },
+        "tire_family": {
+          "url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
           "type": "revendeur"
         }
       },
@@ -503,20 +525,31 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "10x2.75",
+            "source_url": "https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-engwe-y600s",
+            "source_type": "revendeur"
           },
           "tire_family": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "pneumatic",
+            "source_url": "https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html",
+            "source_url_2": "https://e-inthezone.com/en-us/blogs/news/engwe-y600-s-upgrade-review-a-beast-in-a-compact-frame-for-urban-and-off-road-riders",
+            "source_type": "revendeur"
           },
           "solid_conversion": {
             "value": null,
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.75",
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },

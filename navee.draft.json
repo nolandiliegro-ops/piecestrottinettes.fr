@@ -263,6 +263,15 @@
           "disc_pcd": null,
           "disc_holes": null
         }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -524,6 +533,15 @@
           "disc_pcd": null,
           "disc_holes": null
         }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -771,6 +789,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },

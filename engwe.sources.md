@@ -1,11 +1,12 @@
 # Extraction Engwe — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
+Coût mesuré : 185275 tokens entrée, 2203 sortie, 10 recherches web.
 
 ## Engwe Y600 — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=10x4.0
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -45,6 +46,8 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | wheel_inches | 10 | constructeur | https://fr.engwe.com/products/y600-mise-a-niveau |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://i2.cdscdn.com/resources/RWD/header/nLogo.png |  |
 | brake_type | disc_mechanical | revendeur | https://www.boulanger.com/ref/9000921799 |  |
+| tire_section | 10x2.75 | revendeur | https://myfatbike.fr/produit/engwe-y600s-trottinette-electrique-pliable-a-gros-pneus-de-10-pouces-couple-28-nm-autonomie-70-km-batterie-48v-18/ | https://www.evolt.eu/products/electric-scooter-engwe-y600s |
+| tire_family | pneumatic | revendeur | https://riedis-electric.com/en/scooters/2993-electric-scooter-engwe-y600s-10-.html |  |
 
 ## Engwe Y1000 — MANQUE
 - Manque : source_image_urls

@@ -1,8 +1,8 @@
 # Extraction Navee — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
+Coût mesuré : 429972 tokens entrée, 3304 sortie, 19 recherches web.
 
 ## Navee GT5 Max — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
