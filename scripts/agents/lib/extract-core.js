@@ -46,6 +46,21 @@ export function isSpareDiscPage(url, brandName, fullName) {
   return tokens.every((t) => words.includes(` ${t} `));
 }
 
+/**
+ * Exception de Nolan (10/10) : jante ou section sur UNE source si la page est une fiche de PNEU / CHAMBRE de
+ * rechange qui nomme le modèle exact ET porte la valeur dans sa référence (URL) : « pneu-10x2-70-6-5-speedway-5 ».
+ */
+export function isSpareTirePageFor(url, brandName, fullName, value) {
+  if (typeof url !== 'string' || value === undefined || value === null) return false;
+  const u = ` ${url.toLowerCase().replace(/[^a-z0-9]+/g, ' ')} `;
+  if (!/ (pneu|pneus|pneumatique|tire|tires|tyre|tyres|chambre|chambres|tube|tubes) /.test(u)) return false;
+  const model = fullName.toLowerCase().replace(brandName.toLowerCase(), '').replace(/\+/g, ' plus');
+  const tokens = model.split(/[^a-z0-9]+/).filter((t) => t.length >= 2 || /\d/.test(t));
+  if (!tokens.length || !tokens.every((t) => u.includes(` ${t} `))) return false;
+  const v = String(value).toLowerCase().replace(/mm$/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  return Boolean(v) && (u.includes(` ${v} `) || u.includes(` ${v}mm `));
+}
+
 /** Valeur exploitable seulement si elle a une source http(s). */
 export function sourced(field) {
   if (!field || field.value === null || field.value === undefined || field.value === '') return null;
@@ -184,6 +199,10 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
     && s.disc_holes !== undefined && corroborated(keys.disc_holes)
     && isSpareDiscPage(keys.disc_pcd.source_url, brandName, name);
   for (const k of CORROBORATED.filter((x) => x !== 'weight_kg')) {
+    if ((k === 'rim_diameter' || k === 'tire_section') && s[k] !== undefined && !corroborated(keys[k])
+      && isSpareTirePageFor(keys[k].source_url, brandName, name, s[k])) {
+      sources[k].url2 = null; sources[k].rule = '1 source (fiche pneu/chambre du modèle, valeur dans la référence) — règle du 10/10'; continue;
+    }
     if (k === 'disc_pcd' && pcdSingle) { sources.disc_pcd.url2 = null; sources.disc_pcd.rule = 'entraxe 1 source (fiche disque compatible)'; continue; }
     if (s[k] !== undefined && !corroborated(keys[k])) {
       unconfirmed.push({ key: k, value: s[k], url: keys[k].source_url });
@@ -243,6 +262,7 @@ export function sourcesReport(brandName, results, meta = {}) {
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);
     if (r.unconfirmed?.length) lines.push(`- Une seule source, NON importé : ${r.unconfirmed.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
+    for (const k of ['rim_diameter', 'tire_section']) if (r.sources?.[k]?.rule) lines.push(`- ${k} ${r.scooter[k]} sur UNE source (${r.sources[k].rule}) : ${r.sources[k].url}`);
     if (r.sources?.disc_pcd?.rule) lines.push(`- Entraxe ${r.scooter.disc_pcd} mm sur UNE source (règle du 09/10 : fiche disque compatible, diamètre + trous doublés) — à surveiller au premier retour SAV`);
     if (r.proposals?.length) lines.push(`- Proposé, NON importé (à trancher par Nolan) : ${r.proposals.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     lines.push('', '| Clé | Valeur | Type de source | Source | 2e source |', '|---|---|---|---|---|');

@@ -1,7 +1,7 @@
 // node --test scripts/agents/extract-core.test.js
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { assembleScooter, needsDiscKeys, sourcesReport } from './lib/extract-core.js';
+import { assembleScooter, needsDiscKeys, sourcesReport, isSpareTirePageFor } from './lib/extract-core.js';
 
 const vocab = {
   brake_rows: [{ code: 'disc_hydraulic', has_disc: true }, { code: 'drum', has_disc: false }],
@@ -190,4 +190,21 @@ test('clé roue manquante → signalée, non bloquante, comptée en tête de rap
   const full = assembleScooter('Vsett', '10+', specsOk, keysOk, vocab);
   assert.deepEqual(full.wheelMissing, []);
   assert.ok(!sourcesReport('Vsett', [full]).includes('sans clé roue'));
+});
+
+test('jante sur 1 source : acceptée seulement si fiche pneu/chambre du modèle exact avec la valeur dans la référence (10/10)', () => {
+  const one = (value, url) => ({ value, source_url: url, source_type: 'revendeur' });
+  const ok = 'https://www.wattiz.fr/pneu-10x3-00-6-vsett-10-plus.html';
+  assert.equal(isSpareTirePageFor(ok, 'Vsett', 'Vsett 10+', '6'), true);
+  assert.equal(isSpareTirePageFor(ok, 'Vsett', 'Vsett 10+', '6.5'), false); // valeur absente de la référence
+  assert.equal(isSpareTirePageFor('https://vsett.fr/vsett-10-plus-fiche', 'Vsett', 'Vsett 10+', '6'), false); // pas une pièce
+  assert.equal(isSpareTirePageFor('https://x.fr/chambre-air-50-134mm-vsett-9-plus', 'Vsett', 'Vsett 9+', '134mm'), true);
+  assert.equal(isSpareTirePageFor('https://x.fr/pneu-10x3-00-6-vsett-9-plus', 'Vsett', 'Vsett 10+', '6'), false); // autre modèle
+  const keys = { ...keysOk, rim_diameter: one('6', ok), tire_section: one('10x3.00', ok) };
+  const r = assembleScooter('Vsett', '10+', specsOk, keys, vocab);
+  assert.equal(r.scooter.rim_diameter, '6');
+  assert.equal(r.scooter.tire_section, '10x3.00');
+  assert.ok(sourcesReport('Vsett', [r]).includes('sur UNE source'));
+  const bad = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, rim_diameter: one('6', 'https://vsett.fr/vsett-10-plus') }, vocab);
+  assert.equal(bad.scooter.rim_diameter, undefined);
 });
