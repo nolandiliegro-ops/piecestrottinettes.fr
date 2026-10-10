@@ -1,10 +1,14 @@
 {
   "_doc": "Passes ciblées sur les brouillons : passe = disques (fill-discs.js), pneus (fill-tires.js) ou photos (fill-photos.js). Modifier ce fichier sur main = lancer un run. go=false : rien ne part.",
-  "go": false,
+  "go": true,
   "model": "claude-sonnet-5-5",
   "max_searches": 4,
-  "brands": null,
-  "max_brands": 0,
-  "plafond_tokens_run": 800000,
+  "brands": [
+    "kugoo",
+    "navee",
+    "wispeed"
+  ],
+  "max_brands": 3,
+  "plafond_tokens_run": 500000,
   "passe": "photos"
 }
