@@ -1,0 +1,12 @@
+{
+  "brandName": "Wispeed",
+  "scooters": [
+    {
+      "slug": "wispeed-airo-v10",
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0",
+        "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg"
+      ]
+    }
+  ]
+}
