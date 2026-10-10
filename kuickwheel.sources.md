@@ -1,8 +1,10 @@
 # Extraction Kuickwheel — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 186962 tokens entrée, 2792 sortie, 10 recherches web.
 
 ## Kuickwheel S1-C Pro — PRÊT
 
@@ -23,9 +25,12 @@ Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
 | wheel_inches | 10 | revendeur | https://www.volt-corp.com/product/kuickwheel-s1-c-pro/ |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png |  |
 | brake_type | drum_front_ebs_rear | revendeur | https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html |  |
+| rim_diameter | 6.5 | distributeur | https://www.wattiz.fr/fr/pneus-plein/115987-pneu-plein-10x250-quickwheel-3701665908003.html | https://paris02.zetrottstore.com/pneusroues/1647-pn20-pneu-plein-arriere-kuickwheel-10x250-2085172161399.html |
 | tire_section | 10x2.50 | revendeur | https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html | https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2 |
+| tire_family | pneumatic | revendeur | https://velo-city.fr/tous-nos-produits/trottinettes-electriques/kuickwheel-s1-c-pro/ |  |
 
 ## Kuickwheel M16 Pro — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10x2.125 », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

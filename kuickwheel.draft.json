@@ -23,7 +23,9 @@
           "https://drole2roue.com/modules/jk_opengraph/views/img/og-category.png"
         ],
         "brake_type": "drum_front_ebs_rear",
+        "rim_diameter": "6.5",
         "tire_section": "10x2.50",
+        "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "La Kuickwheel S1-C Pro est une trottinette électrique pliable équipée d'un moteur brushless de 500 W (750 W en crête) et d'une batterie lithium-ion 36 V 13 Ah pour environ 50 km d'autonomie. Elle roule sur des pneus de 10 pouces (gonflable à l'avant, plein à l'arrière), avec double suspension avant, frein à tambour à l'avant et frein moteur à l'arrière, et est certifiée IPX7. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Kuickwheel S1-C Pro - Pièces détachées | PiècesTrottinettes.fr",
@@ -92,14 +94,24 @@
           "url": "https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html",
           "type": "revendeur"
         },
+        "rim_diameter": {
+          "url": "https://www.wattiz.fr/fr/pneus-plein/115987-pneu-plein-10x250-quickwheel-3701665908003.html",
+          "type": "distributeur",
+          "url2": "https://paris02.zetrottstore.com/pneusroues/1647-pn20-pneu-plein-arriere-kuickwheel-10x250-2085172161399.html"
+        },
         "tire_section": {
           "url": "https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html",
           "type": "revendeur",
           "url2": "https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2"
+        },
+        "tire_family": {
+          "url": "https://velo-city.fr/tous-nos-produits/trottinettes-electriques/kuickwheel-s1-c-pro/",
+          "type": "revendeur"
         }
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -234,9 +246,10 @@
             "source_type": "inconnu"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://www.wattiz.fr/fr/pneus-plein/115987-pneu-plein-10x250-quickwheel-3701665908003.html",
+            "source_url_2": "https://paris02.zetrottstore.com/pneusroues/1647-pn20-pneu-plein-arriere-kuickwheel-10x250-2085172161399.html",
+            "source_type": "distributeur"
           },
           "tire_section": {
             "value": "10x2.50",
@@ -245,15 +258,25 @@
             "source_type": "revendeur"
           },
           "tire_family": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "pneumatic",
+            "source_url": "https://velo-city.fr/tous-nos-produits/trottinettes-electriques/kuickwheel-s1-c-pro/",
+            "source_url_2": "https://www.volt-corp.com/product/kuickwheel-s1-c-pro/",
+            "source_type": "revendeur"
           },
           "solid_conversion": {
             "value": null,
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.50",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -354,6 +377,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -509,6 +536,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     }

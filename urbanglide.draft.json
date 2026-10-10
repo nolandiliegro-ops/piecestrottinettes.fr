@@ -83,6 +83,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [
         "voltage=21.6"
       ],
@@ -232,8 +236,8 @@
           "rim_diameter": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "rim_type": {
             "value": null,
@@ -253,6 +257,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "8.5x2",
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -348,6 +361,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -503,6 +520,15 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -525,11 +551,13 @@
           "https://media.rueducommerce.fr/mktp/product/productImage/11/142/9efd7a485d684d72a8b23763bb29759a.webp"
         ],
         "brake_type": "disc_mechanical",
+        "rim_diameter": "6.1",
+        "tire_section": "10x2.125",
         "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "L'UrbanGlide Ride 100 EVO est une trottinette électrique pliable équipée d'un moteur avant brushless de 350 W (450 W max) alimenté par une batterie lithium 21,6 V / 10,4 Ah (environ 224 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus tout-terrain 10 pouces à chambre à air, avec un frein à disque arrière, un indice IPX5 et une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Urbanglide 100 Evo - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Urbanglide 100 Evo : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Urbanglide 100 Evo : plaquettes, pneus 10x2.125. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "urbanglide 100 evo, pieces urbanglide 100 evo, disque frein urbanglide 100 evo, plaquettes urbanglide 100 evo, pneu urbanglide 100 evo"
       },
       "sources": {
@@ -582,6 +610,16 @@
           "url": "https://www.decathlon.fr/p/mp/urbanglide/trottinette-electrique-adulte-100-evo-500w-jusqu-a-25-km/_/R-p-d381926c-3518-4f28-81db-8f7a9ec18f97",
           "type": "revendeur"
         },
+        "rim_diameter": {
+          "url": "https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747"
+        },
+        "tire_section": {
+          "url": "https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/",
+          "type": "revendeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747"
+        },
         "tire_family": {
           "url": "https://urbanglide.com/en/produit/100-evo/",
           "type": "constructeur"
@@ -593,6 +631,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [],
       "notInt": [
         "voltage=21.6"
       ],
@@ -739,15 +778,26 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "10x2.125",
+            "source_url": "https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.1",
+            "source_url": "https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.125",
+          "rim_diameter": "6.1",
+          "tire_family": "pneumatic"
         }
       }
     },

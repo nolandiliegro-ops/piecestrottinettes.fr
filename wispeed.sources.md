@@ -1,10 +1,13 @@
 # Extraction Wispeed — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5.
+**4 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 48133 tokens entrée, 737 sortie, 4 recherches web.
+⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 273239 tokens entrée, 2589 sortie, 16 recherches web.
 
 ## Wispeed SUVPILOT 150R — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -47,6 +50,7 @@ Coût mesuré : 48133 tokens entrée, 737 sortie, 4 recherches web.
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3350-trottinette-airo-v10.html |  |
 
 ## Wispeed AIRO V16 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6
 - Une seule source, NON importé : rim_diameter=6 (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
@@ -70,6 +74,7 @@ Coût mesuré : 48133 tokens entrée, 737 sortie, 4 recherches web.
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3352-trottinette-airo-v16.html |  |
 
 ## Wispeed AIRO V6 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

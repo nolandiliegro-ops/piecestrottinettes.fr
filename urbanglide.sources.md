@@ -1,11 +1,14 @@
 # Extraction Urbanglide — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 273071 tokens entrée, 3782 sortie, 15 recherches web.
 
 ## Urbanglide Ride 85 Evo — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=21.6
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
 - Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
@@ -26,6 +29,7 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/85-evo/ |  |
 
 ## Urbanglide eCross One — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -63,6 +67,8 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | wheel_inches | 10 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg |  |
 | brake_type | disc_mechanical | revendeur | https://www.decathlon.fr/p/mp/urbanglide/trottinette-electrique-adulte-100-evo-500w-jusqu-a-25-km/_/R-p-d381926c-3518-4f28-81db-8f7a9ec18f97 |  |
+| rim_diameter | 6.1 | revendeur | https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/ | https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747 |
+| tire_section | 10x2.125 | revendeur | https://trottwheelshop.com/produit/pneu-tubeless-10x2-125-6-1-urbanglide-100-evo-100-shark/ | https://www.urbanmoov.fr/boutique/Pneu-tubeless-10x2-125-6-1-Urbanglide-100-Evo-p766161747 |
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 
 ## Urbanglide 85 Evo — MANQUE

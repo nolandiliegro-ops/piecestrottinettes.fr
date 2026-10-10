@@ -1,10 +1,13 @@
 # Extraction Hikerboy — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 201606 tokens entrée, 1613 sortie, 12 recherches web.
 
 ## Hikerboy Foxtrot Plus — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10 pouces avec chambre à air (avant et arrière) ; certains revendeurs indiquent tubeless – section non communiquée », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=140 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428) · disc_holes=6 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428)
 
@@ -27,6 +30,7 @@ Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
 | tire_family | pneumatic | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 
 ## Hikerboy Curtis — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
