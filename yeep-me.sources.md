@@ -1,11 +1,12 @@
-# Extraction Yeep.me — 2026-10-09
+# Extraction Yeep.me — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 260960 tokens entrée, 10077 sortie, 16 recherches web.
 
 ## Yeep.me 100a start — MANQUE
-- Manque : source_image_urls, disc_diameter, disc_pcd, disc_holes
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -23,8 +24,8 @@ Coût mesuré : 260960 tokens entrée, 10077 sortie, 16 recherches web.
 | brake_type | ebs_front_disc_rear | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 | tire_family | solid | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 
-## Yeep.me 100a — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Yeep.me 100a — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

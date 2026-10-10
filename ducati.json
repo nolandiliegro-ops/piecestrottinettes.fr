@@ -1,4 +1,34 @@
 {
   "brandName": "Ducati",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Ducati Pro-III",
+      "slug": "ducati-pro-iii",
+      "voltage": 36,
+      "amperage": 13,
+      "power_watts": 350,
+      "range_km": 50,
+      "max_load_kg": 100,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 17.5,
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://media.rueducommerce.fr/r1200/rd/products/dec/dec9c0af7fe0e8c4c1ead294f2087626affe19ff.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 120,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Ducati Pro-III est une trottinette électrique pliable à cadre en magnésium, équipée d'un moteur brushless de 350 W (515 W en pointe) intégré à la roue arrière. Sa batterie 36 V 13 Ah (468 Wh) annonce jusqu'à 50 km d'autonomie, avec des roues de 10 pouces à pneus tubeless anti-crevaison, un double frein à disque (avant et arrière) et une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ducati Pro-III - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ducati Pro-III : disque de frein 120 mm 6 trous, plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ducati pro-iii, pieces ducati pro-iii, disque frein ducati pro-iii, plaquettes ducati pro-iii, pneu ducati pro-iii"
+    }
+  ]
 }

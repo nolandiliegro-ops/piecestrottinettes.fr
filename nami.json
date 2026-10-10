@@ -33,6 +33,38 @@
       "meta_title": "Nami Burn-E 3 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Nami Burn-E 3 : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "nami burn-e 3, pieces nami burn-e 3, disque frein nami burn-e 3, plaquettes nami burn-e 3, pneu nami burn-e 3"
+    },
+    {
+      "name": "Nami Burn-E 3 Max",
+      "slug": "nami-burn-e-3-max",
+      "voltage": 72,
+      "amperage": 40,
+      "power_watts": 3000,
+      "max_speed_private_kmh": 100,
+      "range_km": 120,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 51,
+      "suspension": "Hydraulique à ressort KKE 165 mm, réglable (avant et arrière)",
+      "ip_rating": "IPX5",
+      "tire_size": "11\" tubeless 90/65-6.5",
+      "foldable": true,
+      "wheel_inches": "11",
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Nami_Burn_E3_Max_pas_cher-184122.jpg?v=1754054362",
+        "https://funtrott.fr/7574-large_default/nami-burn-e-3-max-72v40ah.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "caliper_family": "nutt_4p",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "La Nami Burn-E 3 Max est une trottinette électrique double moteur 2 x 1500 W alimentée par une batterie 72V 40Ah (2880 Wh), annoncée jusqu'à 120 km d'autonomie. Elle roule sur des pneus tubeless 11 pouces (90/65-6.5), avec suspensions hydrauliques KKE de 165 mm et freins hydrauliques 4 pistons à disques de 160 mm. Elle est bridée à 25 km/h sur voie publique et débridable sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Nami Burn-E 3 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Nami Burn-E 3 Max : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "nami burn-e 3 max, pieces nami burn-e 3 max, disque frein nami burn-e 3 max, plaquettes nami burn-e 3 max, pneu nami burn-e 3 max"
     }
   ]
 }

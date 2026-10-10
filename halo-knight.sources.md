@@ -1,11 +1,12 @@
-# Extraction Halo Knight — 2026-10-09
+# Extraction Halo Knight — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 354252 tokens entrée, 12387 sortie, 17 recherches web.
 
 ## Halo Knight T107 Pro — MANQUE
-- Manque : weight_kg, disc_pcd, disc_holes
+- Manque : weight_kg
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - À valider par Nolan (site de test) : weight_kg=48.9 (https://meilleuretrott.fr/trottinettes/halo-knight-t107-pro/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -29,8 +30,8 @@ Coût mesuré : 354252 tokens entrée, 12387 sortie, 17 recherches web.
 | tire_section | 90/65 | constructeur | https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable | https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-halo-knight-t107pro |
 | tire_family | pneumatic | constructeur | https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable |  |
 
-## Halo Knight T108 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Halo Knight T108 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.5 · tire_section=90/65
 - Une seule source, NON importé : disc_diameter=160 (https://www.haloknights.com/en-us/products/brake-disc) · rim_diameter=6.5 (https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable) · tire_section=90/65 (https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable)
 

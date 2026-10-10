@@ -25,6 +25,33 @@
       "meta_title": "SoFlow S05 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées SoFlow S05 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "soflow s05, pieces soflow s05, disque frein soflow s05, plaquettes soflow s05, pneu soflow s05"
+    },
+    {
+      "name": "SoFlow SO4 Pro",
+      "slug": "soflow-so4-pro",
+      "voltage": 48,
+      "amperage": 10.5,
+      "power_watts": 500,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "year": 2019,
+      "max_speed_kmh": 25,
+      "weight_kg": 17,
+      "ip_rating": "IPX6",
+      "tire_size": "10 x 2.125",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
+        "http://weltbild.ch/cdn/shop/files/Source.svg?v=1760554434"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La SoFlow SO4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W et d'une batterie lithium amovible 48 V / 10,5 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 10 pouces, avec freins à disque à l'avant et à l'arrière, et sa vitesse est bridée à 20 km/h dans sa version homologuée (25 km/h selon la réglementation locale). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "SoFlow SO4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées SoFlow SO4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "soflow so4 pro, pieces soflow so4 pro, disque frein soflow so4 pro, plaquettes soflow so4 pro, pneu soflow so4 pro"
     }
   ]
 }

@@ -1,6 +1,6 @@
-# Extraction Kingsong — 2026-10-09
+# Extraction Kingsong — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 301843 tokens entrée, 10879 sortie, 16 recherches web.
 
@@ -23,8 +23,8 @@ Coût mesuré : 301843 tokens entrée, 10879 sortie, 16 recherches web.
 | brake_type | drum_front_ebs_rear | constructeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
 | tire_family | pneumatic | constructeur | https://kingsongeurope.com/product/kingsong-e1/ |  |
 
-## Kingsong N14 Max — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Kingsong N14 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

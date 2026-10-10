@@ -78,6 +78,7 @@
       "missing": [
         "source_image_urls"
       ],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -332,7 +333,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -347,7 +349,7 @@
         }
       ],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {

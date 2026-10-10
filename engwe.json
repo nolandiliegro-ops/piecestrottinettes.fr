@@ -1,4 +1,91 @@
 {
   "brandName": "Engwe",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Engwe Y600",
+      "slug": "engwe-y600",
+      "voltage": 48,
+      "amperage": 18.2,
+      "power_watts": 600,
+      "max_speed_private_kmh": 45,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 26.5,
+      "suspension": "Fourche à ressort à l'avant, suspension mécanique à l'arrière (+ suspension de selle)",
+      "ip_rating": "IPX5",
+      "tire_size": "10 x 4.0",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "http://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?crop=center&height=1200&v=1747923069&width=1200",
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/a37b564a-990a-47ae-9e85-bb2203457000/public"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Engwe Y600 est une trottinette électrique pliable avec selle, équipée d'un moteur de moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah pour jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus gonflables 10 x 4,0 pouces, avec freins à disque mécaniques avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Engwe Y600 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Engwe Y600 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "engwe y600, pieces engwe y600, disque frein engwe y600, plaquettes engwe y600, pneu engwe y600"
+    },
+    {
+      "name": "Engwe Y600S",
+      "slug": "engwe-y600s",
+      "voltage": 48,
+      "amperage": 18.2,
+      "power_watts": 600,
+      "max_speed_private_kmh": 45,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "suspension": "Suspension intégrale (amortisseurs avant et arrière)",
+      "ip_rating": "IPX5",
+      "tire_size": "10x2.75",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+        "https://myfatbike.fr/wp-content/uploads/2025/07/ENGWE_Y600S_Trotinette-electrique-2.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "score_offroad": 40,
+      "description": "L'Engwe Y600S est une trottinette électrique pliable à selle équipée d'un moteur moyeu arrière de 600 W (830 W en crête) et d'une batterie 48 V 18,2 Ah offrant jusqu'à 70 km d'autonomie en mode ECO. Elle roule sur des pneus de 10x2,75 pouces avec suspension intégrale et freins à disque mécaniques, et sa vitesse est bridée à 25 km/h en usage routier (jusqu'à 45 km/h annoncés hors bridage). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Engwe Y600S - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Engwe Y600S : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "engwe y600s, pieces engwe y600s, disque frein engwe y600s, plaquettes engwe y600s, pneu engwe y600s"
+    },
+    {
+      "name": "Engwe Y700",
+      "slug": "engwe-y700",
+      "voltage": 48,
+      "amperage": 18.2,
+      "power_watts": 1200,
+      "max_speed_private_kmh": 45,
+      "range_km": 85,
+      "max_load_kg": 120,
+      "year": 2026,
+      "max_speed_kmh": 25,
+      "weight_kg": 31.7,
+      "suspension": "Suspension à ressorts avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10 x 3,0\" (pneu urbain caoutchouc plein)",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "http://fr.engwe.com/cdn/shop/files/01_9ae09995-eb71-4681-8a48-dc482b36ab2f.jpg?crop=center&height=1200&v=1770274397&width=1200"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "tire_section": "10x3.00",
+      "tire_family": "solid",
+      "score_offroad": 43,
+      "description": "L'Engwe Y700 est une trottinette électrique pliable à moteur moyeu arrière sans balais (1200 W en crête, couple de 28 Nm) alimentée par une batterie lithium-ion 48 V 18,2 Ah pour jusqu'à 85 km d'autonomie annoncée. Elle roule sur des pneus pleins 10 x 3,0\" avec suspensions à ressorts avant et arrière et freins à disque mécaniques de 140 mm ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Engwe Y700 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Engwe Y700 : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "engwe y700, pieces engwe y700, disque frein engwe y700, plaquettes engwe y700, pneu engwe y700"
+    }
+  ]
 }

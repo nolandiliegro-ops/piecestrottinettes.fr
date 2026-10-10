@@ -1,4 +1,30 @@
 {
   "brandName": "Yeep.me",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Yeep.me 100a",
+      "slug": "yeep-me-100a",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 19.7,
+      "suspension": "Aucune (non équipée d'amortisseur)",
+      "ip_rating": "IPX6",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://www.1fodiscount.com/ressources/site/img/product/trotinette-electrique-yeepme-100a-grisnoir_254036__480.webp"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Yeep.me 100a est une trottinette électrique pliable équipée d'un moteur 36 V de 500 W max et d'une batterie 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des roues de 10 pouces avec pneus gonflables à chambre à air, freine avec un frein à disque arrière combiné à un frein électronique avant, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Yeep.me 100a - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Yeep.me 100a : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "yeep.me 100a, pieces yeep.me 100a, disque frein yeep.me 100a, plaquettes yeep.me 100a, pneu yeep.me 100a"
+    }
+  ]
 }

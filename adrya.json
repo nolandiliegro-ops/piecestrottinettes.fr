@@ -1,4 +1,31 @@
 {
   "brandName": "Adrya",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Adrya TWAir",
+      "slug": "adrya-twair",
+      "voltage": 48,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "year": 2022,
+      "max_speed_kmh": 25,
+      "weight_kg": 16,
+      "foldable": true,
+      "wheel_inches": "12",
+      "source_image_urls": [
+        "https://media.cdnws.com/_i/21277/fb%7B630%7D-5145/3796/46/trottinette-adrya-twair-48v-500w-noir.jpeg",
+        "https://promovelofrance.com/2572-thickbox_default/trottinette-electrique-adrya-twair-12-pouces.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "caliper_family": "xtech_zoom",
+      "tire_family": "pneumatic",
+      "score_offroad": 45,
+      "description": "L'Adrya TWAir (version 2022) est une trottinette électrique pliable à grandes roues gonflables de 12 pouces, animée par un moteur brushless de 500 W en 48 V et une batterie lithium-ion 48 V 10,4 Ah (environ 480-499 Wh) annoncée jusqu'à 35/40 km d'autonomie. Elle dispose d'un double freinage à disque avant/arrière, de 3 modes de vitesse et d'une vitesse bridée à 25 km/h, pour un poids de 16 kg et une charge maximale de 100 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Adrya TWAir - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Adrya TWAir : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "adrya twair, pieces adrya twair, disque frein adrya twair, plaquettes adrya twair, pneu adrya twair"
+    }
+  ]
 }

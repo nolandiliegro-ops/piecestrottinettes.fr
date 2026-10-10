@@ -78,7 +78,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -101,7 +102,7 @@
           "url": "https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -352,6 +353,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

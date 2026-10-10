@@ -93,7 +93,9 @@
         }
       },
       "missing": [
-        "source_image_urls",
+        "source_image_urls"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -374,14 +376,15 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

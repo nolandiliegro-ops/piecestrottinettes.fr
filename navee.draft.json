@@ -93,7 +93,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -102,7 +103,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -358,7 +359,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -366,7 +368,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -621,6 +623,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -868,7 +871,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -877,7 +881,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

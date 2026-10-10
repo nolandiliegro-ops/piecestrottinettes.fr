@@ -2,6 +2,31 @@
   "brandName": "Hitway",
   "scooters": [
     {
+      "name": "Hitway H9",
+      "slug": "hitway-h9",
+      "voltage": 48,
+      "amperage": 15.6,
+      "power_watts": 500,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 24.6,
+      "suspension": "Double suspension avant et arrière à ressorts",
+      "ip_rating": "IP54",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://cache.natureetdecouvertes.com/wwwStaticContent/ned/fb/images/Logo_ND.jpg",
+        "http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "score_offroad": 40,
+      "description": "La Hitway H9 est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 800 W) et d'une batterie 48 V de 15,6 à 27 Ah selon la version. Elle roule sur des pneus de 10 pouces, avec double suspension avant et arrière et freins à disque avant et arrière, et propose trois modes de vitesse (10, 15 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hitway H9 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hitway H9 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hitway h9, pieces hitway h9, disque frein hitway h9, plaquettes hitway h9, pneu hitway h9"
+    },
+    {
       "name": "Hitway H6",
       "slug": "hitway-h6",
       "voltage": 48,

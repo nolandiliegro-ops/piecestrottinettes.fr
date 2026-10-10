@@ -1,11 +1,11 @@
 # Extraction NIU — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 
-## NIU KQi3 Pro — MANQUE
-- Manque : disc_pcd
+## NIU KQi3 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pneu-plein-niu-kqi3-sport-pro-max/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -30,8 +30,8 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | caliper_family | xiaomi_mi4 | revendeur | https://piecestrottinettes.fr |  |
 | tire_family | pneumatic | constructeur | https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
 
-## NIU KQi Air — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## NIU KQi Air — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -52,8 +52,8 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | brake_type | disc_mechanical | constructeur | https://shopeu.niu.com/en-es/products/niu-kqi-air-lightweight-electric-scooter-fr-version |  |
 | tire_family | pneumatic | constructeur | https://global.niu.com/fr/product/KQi-Air |  |
 
-## NIU KQi3 Max — MANQUE
-- Manque : disc_pcd
+## NIU KQi3 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -78,8 +78,8 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | caliper_family | xiaomi_mi4 | revendeur | https://piecestrottinettes.fr |  |
 | tire_family | pneumatic | constructeur | https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-eu-version |  |
 
-## NIU KQi 300X — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## NIU KQi 300X — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

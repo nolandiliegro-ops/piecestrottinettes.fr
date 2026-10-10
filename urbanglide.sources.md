@@ -1,11 +1,11 @@
 # Extraction Urbanglide — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 
-## Urbanglide Ride 85 Evo — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Urbanglide Ride 85 Evo — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
 - Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
 
@@ -25,8 +25,8 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | brake_type | disc_mechanical | distributeur | https://www.decathlon.fr/p/mp/urbanglide/urbanglide-85-evo-trottinette-electrique-pliable-pneus-8-5-frein-disque-arri/_/R-p-467d9358-8dbf-4f35-84d5-9838f0397779 |  |
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/85-evo/ |  |
 
-## Urbanglide eCross One — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Urbanglide eCross One — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -45,8 +45,8 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | brake_type | disc_unknown_actuation | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | tire_family | pneumatic | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 
-## Urbanglide 100 Evo — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Urbanglide 100 Evo — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -66,7 +66,8 @@ Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
 
 ## Urbanglide 85 Evo — MANQUE
-- Manque : source_image_urls, disc_diameter, disc_pcd, disc_holes
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
 - Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
 

@@ -1,11 +1,11 @@
-# Extraction Zwheel — 2026-10-09
+# Extraction Zwheel — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 295023 tokens entrée, 11015 sortie, 18 recherches web.
 
-## Zwheel ZCougar — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Zwheel ZCougar — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=140 (https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -22,8 +22,8 @@ Coût mesuré : 295023 tokens entrée, 11015 sortie, 18 recherches web.
 | brake_type | disc_mechanical | revendeur | https://patinetestore.com/producto/zwheel-zcougar-dgt/ |  |
 | tire_family | pneumatic | revendeur | https://amazon.es/ZWHEEL-ZCOUGAR-Patinete-El%C3%A9ctrico-Homologado/dp/B0CVNHQ8WW |  |
 
-## Zwheel ZRino — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Zwheel ZRino — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

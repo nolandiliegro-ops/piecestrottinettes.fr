@@ -1,6 +1,6 @@
 # Extraction Inmotion — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 323754 tokens entrée, 12094 sortie, 17 recherches web.
 
@@ -48,8 +48,8 @@ Coût mesuré : 323754 tokens entrée, 12094 sortie, 17 recherches web.
 | brake_type | drum_front_ebs_rear | distributeur | https://www.inmotion-france.fr/en/inmotion-air-pro-electric-scooter |  |
 | tire_section | 10x2.125 | revendeur | https://e-watts.fr/produit/pneu-10x2-125-route | https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques |
 
-## Inmotion Climber — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Inmotion Climber — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=140 (https://www.inmotion-france.fr/en/spare-parts/677-brake-disc-for-inmotion-climber-3701522004336.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |

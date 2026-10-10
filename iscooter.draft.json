@@ -110,14 +110,15 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -382,14 +383,15 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

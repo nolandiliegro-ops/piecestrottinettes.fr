@@ -1,11 +1,11 @@
-# Extraction Isinwheel — 2026-10-09
+# Extraction Isinwheel — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 375821 tokens entrée, 13579 sortie, 20 recherches web.
 
-## Isinwheel GT2 — MANQUE
-- Manque : disc_diameter, disc_pcd
+## Isinwheel GT2 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -28,8 +28,8 @@ Coût mesuré : 375821 tokens entrée, 13579 sortie, 20 recherches web.
 | tire_section | 90/65 | revendeur | https://www.amazon.com/Felixstory-11-isinwheel-TIFGALOP-Electric/dp/B0D5LG3GX7 | https://www.ebay.com/itm/227071568818 |
 | tire_family | pneumatic | constructeur | https://www.isinwheel.com/blogs/news/gt2-electric-scooter |  |
 
-## Isinwheel S9 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Isinwheel S9 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

@@ -31,6 +31,34 @@
       "meta_title": "Smartgyro Speedway - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Smartgyro Speedway : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "smartgyro speedway, pieces smartgyro speedway, disque frein smartgyro speedway, plaquettes smartgyro speedway, pneu smartgyro speedway"
+    },
+    {
+      "name": "Smartgyro Speedway Pro",
+      "slug": "smartgyro-speedway-pro",
+      "voltage": 48,
+      "amperage": 15,
+      "power_watts": 800,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "year": 2020,
+      "max_speed_kmh": 25,
+      "weight_kg": 25,
+      "suspension": "Double suspension avant et arrière",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://monorimspain.com/cdn/shop/files/patinete-electrico-smartgyro-speedway-pro-certificado_1.jpg?v=1708686375&width=1200"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 140,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Smartgyro Speedway Pro est une trottinette électrique pliable équipée d'un moteur brushless de 800 W nominal (pointe annoncée à 1 000 W) alimenté par une batterie lithium 48 V / 15 Ah pour jusqu'à 60 km d'autonomie annoncée. Elle roule sur des pneumatiques de 10 pouces avec double suspension avant et arrière, et dispose d'un double freinage à disque avec frein électrique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Smartgyro Speedway Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Smartgyro Speedway Pro : disque de frein 140 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "smartgyro speedway pro, pieces smartgyro speedway pro, disque frein smartgyro speedway pro, plaquettes smartgyro speedway pro, pneu smartgyro speedway pro"
     }
   ]
 }

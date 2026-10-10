@@ -122,7 +122,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -130,7 +131,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -422,7 +423,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -436,7 +438,7 @@
           "url": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -719,7 +721,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -727,7 +730,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -992,7 +995,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -1006,7 +1010,7 @@
         }
       ],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

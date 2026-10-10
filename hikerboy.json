@@ -1,4 +1,60 @@
 {
   "brandName": "Hikerboy",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Hikerboy Foxtrot Plus",
+      "slug": "hikerboy-foxtrot-plus",
+      "voltage": 48,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "max_speed_private_kmh": 35,
+      "range_km": 45,
+      "max_load_kg": 130,
+      "max_speed_kmh": 25,
+      "weight_kg": 20,
+      "suspension": "Double suspension : fourche à l'avant et ressorts à l'arrière",
+      "ip_rating": "IP54",
+      "tire_size": "10 pouces avec chambre à air (avant et arrière) ; certains revendeurs indiquent tubeless – section non communiquée",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "http://pietechnologie.com/cdn/shop/products/Foxtrot-yellow.png?v=1657543999",
+        "https://cycle-e-trott.com/wp-content/uploads/2024/02/TROTTINETTE-FOXTROT-PLUS-4.jpg"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Hikerboy Foxtrot Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium amovible 48 V 10,4 Ah. Elle roule sur des pneus de 10 pouces, avec double suspension, un frein à disque à l'arrière et un frein à tambour à l'avant. Sa vitesse est bridée à 25 km/h (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hikerboy Foxtrot Plus - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hikerboy Foxtrot Plus : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hikerboy foxtrot plus, pieces hikerboy foxtrot plus, disque frein hikerboy foxtrot plus, plaquettes hikerboy foxtrot plus, pneu hikerboy foxtrot plus"
+    },
+    {
+      "name": "Hikerboy Curtis",
+      "slug": "hikerboy-curtis",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 350,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 15,
+      "suspension": "Avant (2 amortisseurs à ressorts)",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://www.out-fun.com/20084-thickbox_default/hikerboy-curtis-trottinette-electrique.jpg",
+        "http://www.maisondelatrott.fr/cdn/shop/files/g4.png?v=1751547849"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Hikerboy Curtis est une trottinette électrique urbaine équipée d'un moteur brushless de 350 W et d'une batterie lithium 36 V 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus de 10 pouces à chambre à air, avec suspension avant, frein à tambour à l'avant et frein à disque à l'arrière, clignotants avant/arrière et indice IPX5 ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hikerboy Curtis - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hikerboy Curtis : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hikerboy curtis, pieces hikerboy curtis, disque frein hikerboy curtis, plaquettes hikerboy curtis, pneu hikerboy curtis"
+    }
+  ]
 }

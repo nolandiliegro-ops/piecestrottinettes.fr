@@ -1,11 +1,11 @@
-# Extraction Weped — 2026-10-09
+# Extraction Weped — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 299613 tokens entrée, 9123 sortie, 16 recherches web.
 
-## Weped Fold 3 — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Weped Fold 3 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -25,7 +25,8 @@ Coût mesuré : 299613 tokens entrée, 9123 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://weped-usa.com/product/fold3/308/ |  |
 
 ## Weped Fold Mini 10 — MANQUE
-- Manque : weight_kg, brake_type, disc_diameter, disc_pcd, disc_holes
+- Manque : weight_kg, brake_type
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

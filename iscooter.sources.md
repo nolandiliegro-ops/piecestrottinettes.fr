@@ -1,11 +1,11 @@
-# Extraction iScooter — 2026-10-09
+# Extraction iScooter — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
 
-## iScooter i9 Max — MANQUE
-- Manque : disc_pcd
+## iScooter i9 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -28,8 +28,8 @@ Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
 | disc_holes | 5 | revendeur | https://fr.aliexpress.com/item/1005009615118040.html | https://www.amazon.fr/ziyany-Compatible-trottinettes-%C3%A9lectriques-iScooter/dp/B0G12ZNHLR |
 | tire_family | solid | constructeur | https://iscooter-eu.com/products/iscooter-i9-max-electric-scooter |  |
 
-## iScooter i9Ultra — MANQUE
-- Manque : disc_pcd
+## iScooter i9Ultra — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

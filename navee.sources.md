@@ -1,11 +1,11 @@
 # Extraction Navee — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 
-## Navee GT5 Max — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Navee GT5 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -25,8 +25,8 @@ Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 | brake_type | drum_front_disc_rear | constructeur | https://eu.naveetech.com/products/navee-gt5-max |  |
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/navee-trottinette-electrique-gt5-max |  |
 
-## Navee XT5 Pro — MANQUE
-- Manque : disc_pcd, disc_holes
+## Navee XT5 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -66,8 +66,8 @@ Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 | brake_type | drum_front_ebs_rear | constructeur | https://www.naveetech.com/fr/navee-gt5-pro/ |  |
 | tire_family | pneumatic | constructeur | https://www.naveetech.com/fr/navee-gt5-pro/ |  |
 
-## Navee ST5 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Navee ST5 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

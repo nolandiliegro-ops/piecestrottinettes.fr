@@ -28,6 +28,34 @@
       "meta_title": "Kuickwheel S1-C Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Kuickwheel S1-C Pro : plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "kuickwheel s1-c pro, pieces kuickwheel s1-c pro, disque frein kuickwheel s1-c pro, plaquettes kuickwheel s1-c pro, pneu kuickwheel s1-c pro"
+    },
+    {
+      "name": "Kuickwheel M16 Pro",
+      "slug": "kuickwheel-m16-pro",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "max_speed_private_kmh": 25,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 18,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10x2.125",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Kuickwheel M16 Pro est une trottinette électrique pliable dotée d'un moteur de 350 W nominaux (500 W maximum) alimenté par une batterie 36V 10,4Ah, pour une autonomie annoncée jusqu'à 40 km en mode éco. Elle roule sur des pneus de 10 pouces à chambre à air, avec un frein à disque arrière complété par un frein électrique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kuickwheel M16 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kuickwheel M16 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kuickwheel m16 pro, pieces kuickwheel m16 pro, disque frein kuickwheel m16 pro, plaquettes kuickwheel m16 pro, pneu kuickwheel m16 pro"
     }
   ]
 }

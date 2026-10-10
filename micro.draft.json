@@ -93,7 +93,9 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -340,7 +342,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -349,7 +352,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {

@@ -1,11 +1,11 @@
-# Extraction Hitway — 2026-10-09
+# Extraction Hitway — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 
-## Hitway H9 — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Hitway H9 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.5 · tire_section=10x2.70
 - Une seule source, NON importé : rim_diameter=6.5 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/) · tire_section=10x2.70 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/)
 

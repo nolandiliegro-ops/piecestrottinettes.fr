@@ -94,6 +94,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -370,14 +371,15 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {
@@ -627,6 +629,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -876,6 +879,7 @@
       "missing": [
         "source_image_urls"
       ],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],

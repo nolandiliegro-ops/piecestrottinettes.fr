@@ -1,11 +1,12 @@
-# Extraction Micro — 2026-10-09
+# Extraction Micro — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 302041 tokens entrée, 10813 sortie, 15 recherches web.
 
 ## Micro Merlin II — MANQUE
-- Manque : brake_type, disc_diameter, disc_pcd, disc_holes
+- Manque : brake_type
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -25,8 +26,8 @@ Coût mesuré : 302041 tokens entrée, 10813 sortie, 15 recherches web.
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://alternative.bike/3363-large_default/trottinette-electrique-micro-merlin-2.jpg |  |
 | tire_family | solid | distributeur | https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/ |  |
 
-## Micro X21 — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Micro X21 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

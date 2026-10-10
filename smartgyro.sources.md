@@ -1,6 +1,6 @@
-# Extraction Smartgyro — 2026-10-09
+# Extraction Smartgyro — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 287735 tokens entrée, 14260 sortie, 17 recherches web.
 
@@ -28,8 +28,8 @@ Coût mesuré : 287735 tokens entrée, 14260 sortie, 17 recherches web.
 | tire_section | 10x2.70 | revendeur | https://www.amazon.fr/ANSENI-10x2-70-6-5-trottinette-pneumatique-Trottinette/dp/B0C883C48M | https://france-gyrotrot.com/products/pneu-10-2-70-6-5-255-70 |
 | tire_family | pneumatic | revendeur | https://www.pixmania.com/fr/fr/smartgyro-speedway-v20-45-kmh-noir-bleu-13-ah-234148.html |  |
 
-## Smartgyro Speedway Pro — MANQUE
-- Manque : disc_pcd
+## Smartgyro Speedway Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

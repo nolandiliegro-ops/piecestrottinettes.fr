@@ -122,6 +122,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -414,7 +415,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
@@ -427,7 +429,7 @@
           "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -708,6 +710,7 @@
         "weight_kg",
         "source_image_urls"
       ],
+      "discMissing": [],
       "toValidate": [
         {
           "key": "weight_kg",
@@ -997,14 +1000,15 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd"
       ],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

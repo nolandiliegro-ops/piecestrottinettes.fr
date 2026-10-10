@@ -1,4 +1,59 @@
 {
   "brandName": "Langfeite",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Langfeite Coupé",
+      "slug": "langfeite-coupe",
+      "voltage": 48,
+      "amperage": 15.6,
+      "power_watts": 1600,
+      "max_speed_private_kmh": 55,
+      "range_km": 45,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 35,
+      "suspension": "Suspension hydraulique",
+      "foldable": true,
+      "wheel_inches": "9.5",
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_langfeite_coupe_pas_cher_1-962465.jpg?v=1754109679",
+        "https://www.minimotors.fr/web/image/product.template/12057/image_1024?unique=47a49da"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 25,
+      "description": "La Langfeite Coupé est une trottinette électrique pliable équipée de deux moteurs brushless de 800 W (1 600 W nominaux), alimentés par une batterie 48 V 15,6 Ah. Elle roule sur des pneus tubeless de 9,5 pouces, avec freinage à disques mécaniques avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 55 km/h débridée sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Langfeite Coupé - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Langfeite Coupé : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "langfeite coupé, pieces langfeite coupé, disque frein langfeite coupé, plaquettes langfeite coupé, pneu langfeite coupé"
+    },
+    {
+      "name": "Langfeite GT2 Mini",
+      "slug": "langfeite-gt2-mini",
+      "voltage": 52,
+      "amperage": 18.2,
+      "power_watts": 2400,
+      "max_speed_private_kmh": 60,
+      "range_km": 60,
+      "max_load_kg": 200,
+      "max_speed_kmh": 25,
+      "weight_kg": 33,
+      "suspension": "Hydraulique double (avant et arrière)",
+      "ip_rating": "IPX6",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_langfeite_GT2_Mini_pas_cher-233908.jpg?v=1754045747",
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/810897327/5536293672.png"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 140,
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Langfeite GT2 Mini est une trottinette électrique à double moteur de 2 x 1200 W (2400 W nominal), alimentée par une batterie 52V 18,2Ah pour une autonomie annoncée d'environ 60 km. Elle est équipée de pneus tubeless semi-off-road de 10 pouces, d'une double suspension hydraulique et d'un freinage hydraulique à 4 pistons ; sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 60 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Langfeite GT2 Mini - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Langfeite GT2 Mini : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "langfeite gt2 mini, pieces langfeite gt2 mini, disque frein langfeite gt2 mini, plaquettes langfeite gt2 mini, pneu langfeite gt2 mini"
+    }
+  ]
 }

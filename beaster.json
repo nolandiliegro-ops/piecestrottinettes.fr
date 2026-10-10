@@ -1,4 +1,30 @@
 {
   "brandName": "Beaster",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Beaster Diablo",
+      "slug": "beaster-diablo",
+      "voltage": 60,
+      "amperage": 20.8,
+      "power_watts": 1000,
+      "max_speed_private_kmh": 60,
+      "range_km": 65,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 30,
+      "tire_size": "10 x 3 pouces (25,4 x 7,62 cm)",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://www.erasportas.lt/image/cache/catalog/feed_55/2473703-01_BSDIABLOY-600x315.jpg",
+        "https://media.powersport.lt/8936162-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "score_offroad": 35,
+      "description": "La Beaster Diablo est une trottinette électrique tout-terrain équipée d'un moteur de 1000 W et d'une batterie lithium-ion 60 V 20,8 Ah, annoncée jusqu'à 65 km d'autonomie et 55-60 km/h en usage privé (vitesse bridée à 25 km/h sur voie publique). Elle repose sur des pneus de 10 pouces (10 x 3), des freins hydrauliques et un cadre en aluminium 6061 supportant 120 kg pour 30 kg à vide. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Beaster Diablo - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Beaster Diablo : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "beaster diablo, pieces beaster diablo, disque frein beaster diablo, plaquettes beaster diablo, pneu beaster diablo"
+    }
+  ]
 }

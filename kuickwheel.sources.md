@@ -1,6 +1,6 @@
-# Extraction Kuickwheel — 2026-10-09
+# Extraction Kuickwheel — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
 
@@ -25,8 +25,8 @@ Coût mesuré : 307738 tokens entrée, 11027 sortie, 16 recherches web.
 | brake_type | drum_front_ebs_rear | revendeur | https://fastride.fr/en/trottinettes-electriques/2909-trottinette-electrique-kuickwheel-s1-c-pro-3701122101336.html |  |
 | tire_section | 10x2.50 | revendeur | https://www.gtsshop.fr/en/pneus/4953-pneu-kuickwheel-s1-c-pro.html | https://electrikshop.fr/products/pneu-plein-arriere-10x2-5-kuickwheel-s1-c-pro-v1-v2 |
 
-## Kuickwheel M16 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Kuickwheel M16 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

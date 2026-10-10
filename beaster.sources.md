@@ -1,6 +1,6 @@
-# Extraction Beaster — 2026-10-09
+# Extraction Beaster — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 382940 tokens entrée, 10425 sortie, 18 recherches web.
 
@@ -22,8 +22,8 @@ Coût mesuré : 382940 tokens entrée, 10425 sortie, 18 recherches web.
 | brake_type | drum_front_ebs_rear | distributeur | http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BS08,%20BS09%20Elektrinis%20paspirtukas%20Beaster%20Scooter.pdf |  |
 | tire_family | pneumatic | revendeur | https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/ |  |
 
-## Beaster Diablo — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Beaster Diablo — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

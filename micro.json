@@ -1,4 +1,32 @@
 {
   "brandName": "Micro",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Micro X21",
+      "slug": "micro-x21",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 500,
+      "range_km": 30,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 14.3,
+      "suspension": "Non - roues alvéolées",
+      "ip_rating": "IP54",
+      "tire_size": "200 mm / 8\" (pneus alvéolés anti-crevaison)",
+      "foldable": true,
+      "wheel_inches": "8",
+      "source_image_urls": [
+        "https://micro-mobility.fr/10072-product_main_2x/trottinette-electrique-micro-x21.jpg",
+        "https://www.trottnscoot.com/wp-content/uploads/2022/04/trottinette-electrique-micro-x21-500w-36v-300x300.webp"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Micro X21 est une trottinette électrique pliable dotée d'un moteur de 350 W (500 W en crête) alimenté par une batterie lithium 36 V 7,5 Ah (270 Wh), pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des roues alvéolées anti-crevaison de 200 mm (8 pouces), freine avec un frein moteur et un frein à disque mécanique arrière, et sa vitesse est bridée à 25 km/h en mode Sport (Piéton 6 km/h, Éco 20 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Micro X21 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Micro X21 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "micro x21, pieces micro x21, disque frein micro x21, plaquettes micro x21, pneu micro x21"
+    }
+  ]
 }

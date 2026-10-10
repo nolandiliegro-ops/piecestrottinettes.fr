@@ -1,6 +1,6 @@
-# Extraction SoFlow — 2026-10-09
+# Extraction SoFlow — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 
@@ -22,8 +22,8 @@ Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 | brake_type | drum_front_ebs_rear | revendeur | https://www.boulanger.com/ref/9000921838 |  |
 | tire_family | pneumatic | revendeur | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966 |  |
 
-## SoFlow SO4 Pro — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## SoFlow SO4 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

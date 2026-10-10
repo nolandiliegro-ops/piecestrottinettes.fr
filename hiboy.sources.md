@@ -1,11 +1,11 @@
-# Extraction Hiboy — 2026-10-09
+# Extraction Hiboy — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 250214 tokens entrée, 11610 sortie, 14 recherches web.
 
-## Hiboy S2 Pro — MANQUE
-- Manque : disc_pcd, disc_holes
+## Hiboy S2 Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6.1 · tire_section=10x2.125
 - Une seule source, NON importé : disc_holes=6 (https://www.monsterscooterparts.com/120mm-brake-disc-rotor-hiboy-s2-s2r.html) · rim_diameter=6.1 (https://www.amazon.com/GLDYTIMES-10x2-125-Puncture-Proof-Explosion-Proof-Replacement/dp/B0BZS6Y9ZJ) · tire_section=10x2.125 (https://www.amazon.com/10x2-125-Electric-Scooter-Replacement-Tubeless/dp/B0H33FBDY2)
 
@@ -28,7 +28,8 @@ Coût mesuré : 250214 tokens entrée, 11610 sortie, 14 recherches web.
 | tire_family | solid | constructeur | https://www.hiboy.ca/fr/products/hiboy-s2-pro-electric-scooter-bundle |  |
 
 ## Hiboy S2 Lite — MANQUE
-- Manque : brake_type, disc_diameter, disc_pcd, disc_holes
+- Manque : brake_type
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

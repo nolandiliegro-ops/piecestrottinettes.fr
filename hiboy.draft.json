@@ -95,7 +95,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -122,7 +123,7 @@
           "url": "https://www.amazon.com/10x2-125-Electric-Scooter-Replacement-Tubeless/dp/B0H33FBDY2"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -374,7 +375,9 @@
         }
       },
       "missing": [
-        "brake_type",
+        "brake_type"
+      ],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"

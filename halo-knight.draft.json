@@ -112,7 +112,9 @@
         }
       },
       "missing": [
-        "weight_kg",
+        "weight_kg"
+      ],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -384,7 +386,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -412,7 +415,7 @@
           "url": "https://www.haloknights.com/fr/products/cst-90-65-6-5-pneu-de-route-gonflable"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

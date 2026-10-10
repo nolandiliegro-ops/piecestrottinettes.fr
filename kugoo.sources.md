@@ -1,6 +1,6 @@
 # Extraction Kugoo — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 
@@ -29,8 +29,8 @@ Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 | caliper_family | togo_g2 | revendeur | https://www.out-fun.com/plaquettes-et-disques-de-freins/4317-plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad-3701665906146.html |  |
 | tire_family | pneumatic | revendeur | https://eds-electro.fr/products/trottinette-electrique-kugoo-kugoo-g2-pro-800w-vitesse-maximale-50-km-h-max-50-km-rang-13ah-batterie-10-pneumatique-hd-lcd-display-dual-disc-brake-led-li |  |
 
-## Kugoo G2 Max — MANQUE
-- Manque : disc_pcd
+## Kugoo G2 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 - Une seule source, NON importé : disc_pcd=44 (https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -82,8 +82,8 @@ Coût mesuré : 271218 tokens entrée, 13086 sortie, 16 recherches web.
 | caliper_family | togo_g2 | revendeur | https://www.ldlc.com/fiche/PB00662019.html |  |
 | tire_family | pneumatic | revendeur | https://www.trottnshop.com/produit/kugoo-g2-pro/ |  |
 
-## Kugoo G2 Master — MANQUE
-- Manque : disc_pcd
+## Kugoo G2 Master — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

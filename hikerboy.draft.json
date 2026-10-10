@@ -93,7 +93,8 @@
           "type": "distributeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -113,7 +114,7 @@
           "url": "https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "voltage": {
@@ -354,7 +355,8 @@
           "type": "constructeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -363,7 +365,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

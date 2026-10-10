@@ -1,6 +1,6 @@
-# Extraction Nami — 2026-10-09
+# Extraction Nami — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 301821 tokens entrée, 13093 sortie, 17 recherches web.
 
@@ -30,8 +30,8 @@ Coût mesuré : 301821 tokens entrée, 13093 sortie, 17 recherches web.
 | caliper_family | nutt_4p | revendeur | https://piecestrottinettes.fr |  |
 | tire_family | pneumatic | revendeur | https://www.out-fun.com/trottinettes-electriques/3923-nami-burn-e-3-trottinette-electrique.html |  |
 
-## Nami Burn-E 3 Max — MANQUE
-- Manque : disc_pcd, disc_holes
+## Nami Burn-E 3 Max — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

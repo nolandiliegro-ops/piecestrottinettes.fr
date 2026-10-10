@@ -1,11 +1,11 @@
-# Extraction Langfeite — 2026-10-09
+# Extraction Langfeite — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 
-## Langfeite Coupé — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Langfeite Coupé — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Trouvé mais hors référentiel (non importé) : rim_diameter=6 · tire_section=9x3.0
 - Une seule source, NON importé : rim_diameter=6 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3) · tire_section=9x3.0 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3)
 
@@ -25,8 +25,8 @@ Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 | brake_type | disc_mechanical | constructeur | https://langfeite.com/Products/coupe.html |  |
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3 |  |
 
-## Langfeite GT2 Mini — MANQUE
-- Manque : disc_pcd, disc_holes
+## Langfeite GT2 Mini — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

@@ -83,7 +83,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -106,7 +107,7 @@
           "url": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -351,7 +352,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],
@@ -359,7 +361,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

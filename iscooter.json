@@ -1,4 +1,66 @@
 {
   "brandName": "iScooter",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "iScooter i9 Max",
+      "slug": "iscooter-i9-max",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "max_speed_private_kmh": 35,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.3,
+      "suspension": "Avant et arrière (doubles amortisseurs)",
+      "ip_rating": "IP54",
+      "tire_size": "10'' pneu plein nid d'abeille (section en mm non communiquée)",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://www.neverwheelup.com/wp-content/uploads/2024/08/1000152558_x9.jpg",
+        "http://wellbots.fr/cdn/shop/files/Captured_ecran2024-07-25a16.38.47.png?v=1721918335"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "disc_diameter": 110,
+      "disc_holes": 5,
+      "tire_family": "solid",
+      "score_offroad": 40,
+      "description": "L'iScooter i9 Max est une trottinette électrique pliable équipée d'un moteur de 500 W, d'une batterie 36 V 10,4 Ah et de pneus pleins nid d'abeille de 10 pouces, avec suspensions avant et arrière. Elle freine grâce à un frein électronique E-ABS associé à un frein à disque arrière, supporte 120 kg et est certifiée IP54. Sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 35 km/h annoncés sur terrain privé) pour une autonomie annoncée de 40 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "iScooter i9 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées iScooter i9 Max : disque de frein 110 mm 5 trous, plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "iscooter i9 max, pieces iscooter i9 max, disque frein iscooter i9 max, plaquettes iscooter i9 max, pneu iscooter i9 max"
+    },
+    {
+      "name": "iScooter i9Ultra",
+      "slug": "iscooter-i9ultra",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "max_speed_private_kmh": 35,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.3,
+      "suspension": "Double suspension avant (amortisseur à manchon) et arrière (ressort)",
+      "ip_rating": "IPX4",
+      "tire_size": "10 pouces (25,4 cm), pneu plein nid d'abeille",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "http://www.iscooter.fr/cdn/shop/files/iScooteri9MaxElectricScooter_3.jpg?v=1767771997",
+        "http://www.ihoverboard.fr/cdn/shop/files/iScooteri9MaxElectricScooter_3.jpg?v=1759996136"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "disc_diameter": 110,
+      "disc_holes": 5,
+      "tire_family": "solid",
+      "score_offroad": 40,
+      "description": "L'iScooter i9Ultra est une trottinette électrique pliable équipée d'un moteur avant de 500 W et d'une batterie 36 V 10,4 Ah (374,4 Wh) annoncée pour jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins nid d'abeille de 10 pouces, avec double suspension avant et arrière, frein électronique E-ABS à l'avant et frein à disque mécanique à l'arrière. Sa vitesse est bridée à 25 km/h par défaut (35 km/h une fois débridée, pour terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "iScooter i9Ultra - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées iScooter i9Ultra : disque de frein 110 mm 5 trous, plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "iscooter i9ultra, pieces iscooter i9ultra, disque frein iscooter i9ultra, plaquettes iscooter i9ultra, pneu iscooter i9ultra"
+    }
+  ]
 }

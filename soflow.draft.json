@@ -83,6 +83,7 @@
         }
       },
       "missing": [],
+      "discMissing": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
@@ -331,7 +332,8 @@
           "type": "revendeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -340,7 +342,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {

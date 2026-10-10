@@ -1,6 +1,6 @@
-# Extraction Wispeed — 2026-10-09
+# Extraction Wispeed — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
 
@@ -22,8 +22,8 @@ Coût mesuré : 319459 tokens entrée, 10143 sortie, 17 recherches web.
 | brake_type | drum | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 | tire_family | pneumatic | constructeur | https://www.wispeed.net/3354-trottinette-suvpilot-150-r.html |  |
 
-## Wispeed AIRO V10 — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Wispeed AIRO V10 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://www.trottpneu.fr/collections/pneus-wispeed-c10)
 
 | Clé | Valeur | Type de source | Source | 2e source |

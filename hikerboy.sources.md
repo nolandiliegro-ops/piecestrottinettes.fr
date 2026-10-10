@@ -1,11 +1,11 @@
-# Extraction Hikerboy — 2026-10-09
+# Extraction Hikerboy — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
 
-## Hikerboy Foxtrot Plus — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Hikerboy Foxtrot Plus — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=140 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428) · disc_holes=6 (https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -26,8 +26,8 @@ Coût mesuré : 397626 tokens entrée, 10813 sortie, 19 recherches web.
 | brake_type | drum_front_disc_rear | constructeur | https://www.hikerboyscooter.com/products/foxtrot-plus-swiss-edition |  |
 | tire_family | pneumatic | distributeur | https://pietechnologie.com/products/trottinette-electrique-hikerboy-foxtrot |  |
 
-## Hikerboy Curtis — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Hikerboy Curtis — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

@@ -1,4 +1,34 @@
 {
   "brandName": "Halo Knight",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Halo Knight T108 Pro",
+      "slug": "halo-knight-t108-pro",
+      "voltage": 60,
+      "amperage": 38.4,
+      "power_watts": 6000,
+      "max_speed_private_kmh": 95,
+      "range_km": 80,
+      "max_load_kg": 150,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 46.5,
+      "suspension": "Suspension à ressorts avant et arrière, amortisseur de direction",
+      "ip_rating": "IP54",
+      "tire_size": "90/65-6.5",
+      "foldable": true,
+      "wheel_inches": "11",
+      "source_image_urls": [
+        "https://img.gkbcdn.com/p/2025-10-22/Halo-Knight-T108-Pro-Electric-Scooter-2025-Version-Dual-Motor-95km-h-10003883-0._w315_.jpg",
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/cf6c22ef-3e91-40f1-dc7f-11a6bc038600/public"
+      ],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Halo Knight T108 Pro (version 2025) est une trottinette électrique double moteur 2 x 3000 W sans balais (6000 W) alimentée par une batterie lithium 60 V 38,4 Ah, annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus pneumatiques de 11 pouces (90/65-6.5), avec freins hydrauliques avant et arrière et double suspension à ressorts ; la vitesse recommandée est de 25 km/h, la vitesse maximale constructeur sur terrain privé atteignant 95 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Halo Knight T108 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Halo Knight T108 Pro : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "halo knight t108 pro, pieces halo knight t108 pro, disque frein halo knight t108 pro, plaquettes halo knight t108 pro, pneu halo knight t108 pro"
+    }
+  ]
 }

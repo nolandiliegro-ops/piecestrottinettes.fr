@@ -83,7 +83,8 @@
           "type": "distributeur"
         }
       },
-      "missing": [
+      "missing": [],
+      "discMissing": [
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
@@ -98,7 +99,7 @@
           "url": "https://www.mobilityurban.fr/m/adrya-scooter/"
         }
       ],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -323,7 +324,9 @@
         }
       },
       "missing": [
-        "weight_kg",
+        "weight_kg"
+      ],
+      "discMissing": [
         "disc_pcd",
         "disc_holes"
       ],

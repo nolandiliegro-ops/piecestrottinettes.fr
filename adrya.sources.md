@@ -1,11 +1,11 @@
-# Extraction Adrya — 2026-10-09
+# Extraction Adrya — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 336809 tokens entrée, 9231 sortie, 16 recherches web.
 
-## Adrya TWAir — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Adrya TWAir — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=160 (https://www.mobilityurban.fr/m/adrya-scooter/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -25,7 +25,8 @@ Coût mesuré : 336809 tokens entrée, 9231 sortie, 16 recherches web.
 | tire_family | pneumatic | distributeur | https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-twair-pneus-gonflables-12-pouces.html |  |
 
 ## Adrya Piton E20 — MANQUE
-- Manque : weight_kg, disc_pcd, disc_holes
+- Manque : weight_kg
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

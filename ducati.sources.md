@@ -1,11 +1,12 @@
-# Extraction Ducati — 2026-10-09
+# Extraction Ducati — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 259628 tokens entrée, 12417 sortie, 16 recherches web.
 
 ## Ducati Pro-I Evo — MANQUE
-- Manque : source_image_urls, disc_diameter, disc_pcd, disc_holes
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 - Une seule source, NON importé : disc_diameter=120 (https://monsieurtrottinettes.be/fr/disque-de-frein/937-disque-de-frein-120-mm-ducati-pro-1-evo-plus.html)
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://youvelo.fr/vtt/947-pneu-plein-alveole-85-ducati-pro-1-evo-plus.html)
 
@@ -27,8 +28,8 @@ Coût mesuré : 259628 tokens entrée, 12417 sortie, 16 recherches web.
 | tire_section | 8.5x2 | revendeur | https://monsieurtrottinettes.be/fr/chambres-a-air-/935-chambre-a-air-85x2-ducati-1-pro-evoplus.html | https://fixpart.fr/pieces-detachees-trottinette-electrique/ducati/pro-1-evo-black-dumo210001 |
 | tire_family | pneumatic | constructeur | https://www.ducatiurbanemobility.fr/wp-content/uploads/2021/09/Ducati_Pro-I_evo_FR_fiche_technique_09_21.pdf |  |
 
-## Ducati Pro-III — MANQUE
-- Manque : disc_pcd
+## Ducati Pro-III — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

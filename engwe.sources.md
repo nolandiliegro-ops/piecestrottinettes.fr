@@ -1,11 +1,11 @@
 # Extraction Engwe — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 
-## Engwe Y600 — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Engwe Y600 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -26,8 +26,8 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | brake_type | disc_mechanical | constructeur | https://fr.engwe.com/products/engwe-y600 |  |
 | tire_family | pneumatic | site_test | https://www.generation-nt.com/tests/test-trottinette-electrique-engwe-y600-avis-2053023 |  |
 
-## Engwe Y600S — MANQUE
-- Manque : disc_diameter, disc_pcd, disc_holes
+## Engwe Y600S — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -47,7 +47,8 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | brake_type | disc_mechanical | revendeur | https://www.boulanger.com/ref/9000921799 |  |
 
 ## Engwe Y1000 — MANQUE
-- Manque : source_image_urls, disc_pcd, disc_holes
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -70,8 +71,8 @@ Coût mesuré : 241727 tokens entrée, 11208 sortie, 15 recherches web.
 | tire_section | 10x3.00 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y1000 | https://www.boulanger.com/ref/9000946032 |
 | tire_family | solid | constructeur | https://engwe.com/fr/products/produits-e-scooter-pour-adultes-y1000 |  |
 
-## Engwe Y700 — MANQUE
-- Manque : disc_pcd, disc_holes
+## Engwe Y700 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

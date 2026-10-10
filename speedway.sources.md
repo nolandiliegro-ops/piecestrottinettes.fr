@@ -1,6 +1,6 @@
 # Extraction Speedway — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 
@@ -24,8 +24,8 @@ Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 | source_image_urls | 2 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263 |  |
 | brake_type | drum | distributeur | https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf |  |
 
-## Speedway 5 — MANQUE
-- Manque : disc_pcd
+## Speedway 5 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

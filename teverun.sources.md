@@ -1,11 +1,11 @@
 # Extraction Teverun — 2026-10-10
 
-**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
 
 Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 
-## Teverun Fighter Mini Pro V6 — MANQUE
-- Manque : disc_pcd, disc_holes
+## Teverun Fighter Mini Pro V6 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -30,8 +30,8 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | caliper_family | zoom | revendeur | https://electrotraveller.com/electric-scooters/teverun-fighter-mini-25ah/?v=08a4415e9d59 |  |
 | tire_family | pneumatic | revendeur | https://leminirider.fr/trottinettes/8956-trottinette-electrique-teverun-fighter-mini-pro-v6.html |  |
 
-## Teverun Fighter Mini V6 — MANQUE
-- Manque : disc_pcd, disc_holes
+## Teverun Fighter Mini V6 — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Une seule source, NON importé : disc_pcd=44 (https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -57,8 +57,8 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | caliper_family | zoom | site_test | https://electrotraveller.com/electric-scooters/teverun-fighter-mini-52v/?v=08a4415e9d59 |  |
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini |  |
 
-## Teverun Fighter Mini — MANQUE
-- Manque : disc_pcd, disc_holes
+## Teverun Fighter Mini — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -82,8 +82,8 @@ Coût mesuré : 286034 tokens entrée, 13082 sortie, 16 recherches web.
 | caliper_family | zoom | revendeur | https://voltee.co/products/plaquettes-de-freins-zoom |  |
 | tire_family | pneumatic | constructeur | https://teverun.com/product/fighter-mini-pro/ |  |
 
-## Teverun Fighter Mini Pro — MANQUE
-- Manque : disc_pcd, disc_holes
+## Teverun Fighter Mini Pro — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pneu-plein-teverun-fighter-mini-mini-pro/)
 
 | Clé | Valeur | Type de source | Source | 2e source |

@@ -1,4 +1,62 @@
 {
   "brandName": "Isinwheel",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Isinwheel GT2",
+      "slug": "isinwheel-gt2",
+      "voltage": 48,
+      "amperage": 15,
+      "power_watts": 800,
+      "max_speed_private_kmh": 45,
+      "range_km": 45,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 25,
+      "suspension": "Double suspension avant et arrière (4 amortisseurs)",
+      "ip_rating": "IPX4",
+      "tire_size": "11\" pneumatique tout-terrain",
+      "foldable": true,
+      "wheel_inches": "11",
+      "source_image_urls": [
+        "http://wellbots.fr/cdn/shop/files/GT2A02V01_1_1800x1800_ee3b2654-315f-4a13-b10b-f919d812ec30.webp?v=1732096129"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "L'Isinwheel GT2 est une trottinette électrique tout-terrain pliable équipée d'un moteur brushless de 800 W en roue arrière, d'une batterie 48 V 15 Ah (720 Wh) et de pneus pneumatiques de 11 pouces avec double suspension avant et arrière. Elle freine par disques avant et arrière avec freinage électronique, supporte 150 kg et est vendue bridée à 25 km/h (jusqu'à 45 km/h sur terrain privé en mode débridé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Isinwheel GT2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Isinwheel GT2 : plaquettes, pneus 90/65, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "isinwheel gt2, pieces isinwheel gt2, disque frein isinwheel gt2, plaquettes isinwheel gt2, pneu isinwheel gt2"
+    },
+    {
+      "name": "Isinwheel S9 Pro",
+      "slug": "isinwheel-s9-pro",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 30,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 13.5,
+      "suspension": "Aucune",
+      "ip_rating": "IP54",
+      "tire_size": "8.5x2",
+      "foldable": true,
+      "wheel_inches": "8.5",
+      "source_image_urls": [
+        "https://electrichouse.fr/734-large_default/trottinette-electrique-isinwheel-s9-pro.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "L'isinwheel S9 Pro est une trottinette électrique pliable équipée d'un moteur sans balais de 350 W et d'une batterie lithium 36 V 7,5 Ah annoncée pour environ 30 km d'autonomie. Elle roule sur des pneus de 8,5 pouces, freine grâce à un frein EABS électronique associé à un frein à disque arrière, et sa vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Isinwheel S9 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Isinwheel S9 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "isinwheel s9 pro, pieces isinwheel s9 pro, disque frein isinwheel s9 pro, plaquettes isinwheel s9 pro, pneu isinwheel s9 pro"
+    }
+  ]
 }
