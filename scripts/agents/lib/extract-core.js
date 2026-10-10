@@ -203,7 +203,8 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   const offVocab = [];
   for (const [k, list] of [['rim_diameter', vocab.rim_d], ['tire_section', vocab.section], ['caliper_family', vocab.caliper], ['brake_type', vocab.brake]]) {
     const f = sourced(keys[k]);
-    if (f && s[k] === undefined && list?.length) offVocab.push(`${k}=${f.value}`);
+    // 10/10 : une valeur retirée faute de 2e source n'est pas « hors référentiel » (faux libellé au rapport)
+    if (f && s[k] === undefined && list?.length && !unconfirmed.some((u) => u.key === k) && !list.includes(String(f.value))) offVocab.push(`${k}=${f.value}`);
   }
 
   // Éditorial + SEO
