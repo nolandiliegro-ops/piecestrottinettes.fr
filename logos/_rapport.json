@@ -1,87 +1,274 @@
 {
-  "ducati": {
+  "dyu": {
     "tried": [
-      "ducati.com → 403",
-      "ducatiurbanmobility.com → TypeError"
+      "dyu-bike.com → TypeError",
+      "dyuebike.com → TypeError",
+      "dyu.eu → 200"
     ],
     "icon": null,
     "logo": null
   },
-  "aprilia": {
+  "hiboy": {
     "tried": [
-      "aprilia.com → 403",
-      "aprilia-emobility.com → TypeError"
+      "hiboy.com → 200"
     ],
     "icon": {
-      "url": "https://www.google.com/s2/favicons?domain=aprilia.com&sz=256",
+      "url": "https://www.hiboy.com/cdn/shop/files/favion_e2851725-9759-4442-9447-f70d1bd2a467.png?v=1671176757&width=180",
+      "ext": "png",
+      "declared": 180,
+      "png": {
+        "w": 100,
+        "h": 100
+      },
+      "bytes": 1260
+    },
+    "logo": {
+      "url": "https://www.hiboy.com/cdn/shop/files/logo_dde88d6f-a8d4-4db5-85b9-b1f537debc58.png?v=1676565684&width=2234",
       "ext": "png",
       "png": {
-        "w": 196,
-        "h": 196
+        "w": 2234,
+        "h": 754
       },
-      "bytes": 2441,
-      "repli": "favicon Google"
+      "bytes": 38278
+    }
+  },
+  "ootd": {
+    "tried": [
+      "ootdscooter.com → TypeError",
+      "ootd-scooter.com → 200",
+      "ootd.eu → 403"
+    ],
+    "icon": {
+      "url": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:512,h:512,m",
+      "ext": "jpg",
+      "declared": 512,
+      "png": null,
+      "bytes": 5733
     },
     "logo": null
   },
-  "kugoo": {
+  "velity": {
     "tried": [
-      "kugoo.com → TypeError",
-      "kugoo.fr → 200",
-      "kugookirin.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://dovendi.b-cdn.net/src/assets/logo-dovendi.png",
-      "ext": "png",
-      "png": {
-        "w": 179,
-        "h": 38
-      },
-      "bytes": 5519
-    }
-  },
-  "kuickwheel": {
-    "tried": [
-      "kuickwheel.com → 403",
-      "kuickwheel.fr → TypeError"
+      "velity.fr → TypeError",
+      "velityscooter.com → TypeError",
+      "velity.com → 403"
     ],
     "icon": {
-      "url": "https://www.google.com/s2/favicons?domain=kuickwheel.com&sz=256",
+      "url": "https://www.google.com/s2/favicons?domain=velity.com&sz=256",
       "ext": "png",
       "png": {
         "w": 256,
         "h": 256
       },
-      "bytes": 3444,
+      "bytes": 2200,
       "repli": "favicon Google"
     },
     "logo": null
   },
-  "speedway": {
+  "micro": {
     "tried": [
-      "speedwayscooter.com → TypeError",
-      "speedway-scooter.com → TypeError",
-      "minimotorsusa.com → 200"
+      "micro-mobility.com → 200",
+      "micro-mobility.fr → 200"
+    ],
+    "icon": null,
+    "logo": {
+      "url": "https://www.micro-mobility.com/themes/frontend/public/own/img/logo-micromobility.svg",
+      "ext": "svg",
+      "png": null,
+      "bytes": 2784
+    }
+  },
+  "e-twow": {
+    "tried": [
+      "e-twow.com → 200",
+      "shop.e-twow.com → 200"
+    ],
+    "icon": null,
+    "logo": {
+      "url": "https://e-twow.com/cdn/shop/files/5941752459481_.pic.png?v=1752459555",
+      "ext": "png",
+      "png": {
+        "w": 1763,
+        "h": 369
+      },
+      "bytes": 98160
+    }
+  },
+  "globber": {
+    "tried": [
+      "globber.com → 200"
     ],
     "icon": {
-      "url": "https://dualtronusa.com/cdn/shop/files/favicon_white_bg_228x228.png?v=1775600932",
+      "url": "https://cdn.globber.com/content/2023/09/cropped-Favicon-192x192.png",
       "ext": "png",
-      "declared": 228,
+      "declared": 192,
       "png": {
-        "w": 150,
-        "h": 150
+        "w": 192,
+        "h": 192
       },
-      "bytes": 4179
+      "bytes": 7076
     },
     "logo": {
-      "url": "https://dualtronusa.com/cdn/shop/files/dualtron-usa-logo_preview_rev_1_1600x.png?v=1761684449",
+      "url": "https://cdn.globber.com/content/2022/12/logo.svg",
+      "ext": "svg",
+      "png": null,
+      "bytes": 1849
+    }
+  },
+  "mercane": {
+    "tried": [
+      "mercane.com → 200",
+      "mercanescooter.com → TypeError"
+    ],
+    "icon": {
+      "url": "https://www.google.com/s2/favicons?domain=mercane.com&sz=256",
       "ext": "png",
       "png": {
-        "w": 514,
-        "h": 86
+        "w": 180,
+        "h": 180
       },
-      "bytes": 13305
+      "bytes": 2323,
+      "repli": "favicon Google"
+    },
+    "logo": null
+  },
+  "beaster": {
+    "tried": [
+      "beasterscooter.com → 403",
+      "beaster.fr → TypeError"
+    ],
+    "icon": null,
+    "logo": null
+  },
+  "adrya": {
+    "tried": [
+      "adrya.fr → TypeError",
+      "adrya.com → TypeError"
+    ],
+    "icon": null,
+    "logo": null
+  },
+  "apollo": {
+    "tried": [
+      "apolloscooters.co → 200"
+    ],
+    "icon": {
+      "url": "https://apolloscooters.co/cdn/shop/files/AP11_-_Apollo_A_Logo_for_Favicon_1.png?v=1710165583&width=180",
+      "ext": "png",
+      "declared": 180,
+      "png": {
+        "w": 180,
+        "h": 180
+      },
+      "bytes": 3433
+    },
+    "logo": {
+      "url": "https://apolloscooters.co/cdn/shop/files/B2_inline_apollo_built_to_last_4000w_on-transparent.png?v=1779831951&width=4000",
+      "ext": "png",
+      "png": {
+        "w": 4000,
+        "h": 727
+      },
+      "bytes": 67448
     }
+  },
+  "laotie": {
+    "tried": [
+      "laotie.zone → 200",
+      "laotie.com → TypeError"
+    ],
+    "icon": {
+      "url": "https://www.laotie.zone/static/icons/pwa-192.png",
+      "ext": "png",
+      "declared": 192,
+      "png": {
+        "w": 192,
+        "h": 192
+      },
+      "bytes": 624
+    },
+    "logo": null
+  },
+  "bronco": {
+    "tried": [
+      "broncoscooters.com → TypeError",
+      "bronco.com.au → TypeError"
+    ],
+    "icon": {
+      "url": "https://www.google.com/s2/favicons?domain=bronco.com.au&sz=256",
+      "ext": "png",
+      "png": {
+        "w": 144,
+        "h": 144
+      },
+      "bytes": 7857,
+      "repli": "favicon Google"
+    },
+    "logo": null
+  },
+  "bogist": {
+    "tried": [
+      "bogist.com → 200"
+    ],
+    "icon": {
+      "url": "https://statrak.com/apple-touch-icon.png",
+      "ext": "png",
+      "declared": 180,
+      "png": {
+        "w": 180,
+        "h": 180
+      },
+      "bytes": 30451
+    },
+    "logo": {
+      "url": "https://statrak.com/assets/statrak-logo-roUQnF-L.png",
+      "ext": "png",
+      "png": {
+        "w": 1000,
+        "h": 214
+      },
+      "bytes": 147135
+    }
+  },
+  "olsson": {
+    "tried": [
+      "olssonandbrothers.com → 200"
+    ],
+    "icon": {
+      "url": "https://olssonandbrothers.es/wp-content/uploads/2023/12/cropped-olsson-web2-192x192.png",
+      "ext": "png",
+      "declared": 192,
+      "png": {
+        "w": 192,
+        "h": 192
+      },
+      "bytes": 4820
+    },
+    "logo": {
+      "url": "https://olssonandbrothers.es/wp-content/uploads/2023/12/olsson-web-logo2.png",
+      "ext": "png",
+      "png": {
+        "w": 800,
+        "h": 410
+      },
+      "bytes": 13870
+    }
+  },
+  "oxelo": {
+    "tried": [
+      "oxelo.com → TypeError",
+      "decathlon.fr → 403"
+    ],
+    "icon": {
+      "url": "https://www.google.com/s2/favicons?domain=decathlon.fr&sz=256",
+      "ext": "png",
+      "png": {
+        "w": 180,
+        "h": 180
+      },
+      "bytes": 1873,
+      "repli": "favicon Google"
+    },
+    "logo": null
   }
 }
