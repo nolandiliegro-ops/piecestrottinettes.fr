@@ -38,6 +38,8 @@ import {
   matchSolidScooters,
   matchDiscScooters,
   matchCaliperScooters,
+  matchChargerScooters,
+  chargerPlugs,
 } from "../_shared/fitment_matcher.ts";
 
 // ─── Helpers existants (Passe A) ────────────────────────────────────────────
@@ -712,10 +714,39 @@ Deno.test("isFitmentMatchable: règle dure — clés minimales", () => {
   const disc = { kind: "disc" as const };
   assertEquals(isFitmentMatchable(disc, { fitment_specs: { brake_disc: { diameters: ["160"], pcds: ["48"], holes: ["6"] } } }), true);
   assertEquals(isFitmentMatchable(disc, { fitment_specs: { brake_disc: { diameters: ["160"], pcds: ["48"] } } }), false);
-  // Électrique : voltages entiers non vides
+  // Électrique : voltages entiers non vides ET prise typée (décision 11/10/2026)
   const elec = { kind: "electrical" as const };
-  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52, 60] } }), true);
-  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [] } }), false);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52, 60], connector: "GX16-3" } }), true);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52, 60] } }), false);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52], connector: "  " } }), false);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [52], connectors: ["GX16-3", "LP16-3"] } }), true);
+  assertEquals(isFitmentMatchable(elec, { electrical_specs: { voltages: [], connector: "GX16-3" } }), false);
+});
+
+Deno.test("chargerPlugs: connectors[] prime sur connector, dédoublonné, vides ignorés", () => {
+  assertEquals(chargerPlugs({ electrical_specs: { connector: "GX16-3" } }), ["GX16-3"]);
+  assertEquals(chargerPlugs({ electrical_specs: { connector: "RCA", connectors: ["GX16-3", "LP16-3", "GX16-3", " "] } }), ["GX16-3", "LP16-3"]);
+  assertEquals(chargerPlugs({ electrical_specs: { connector: null } }), []);
+  assertEquals(chargerPlugs({}), []);
+});
+
+Deno.test("matchChargerScooters: voltage ET prise exigés ; prise inconnue → rien ; multi-prises", () => {
+  const volt = new Map([["dual", 60], ["gx", 60], ["lp", 60], ["unknown", 60], ["empty", 60]]);
+  const scooters = [
+    { id: "dual", charge_connectors: ["GX16-3", "LP16-3"] }, // Dualtron : série GX16 ou LP16
+    { id: "gx", charge_connectors: ["gx16-3"] },              // casse différente → match
+    { id: "lp", charge_connectors: ["LP16-3"] },
+    { id: "unknown", charge_connectors: null },               // prise inconnue → AUCUN chargeur
+    { id: "empty", charge_connectors: [] },
+    { id: "novolt", charge_connectors: ["GX16-3"] },          // pas au bon voltage → rien
+  ];
+  const gx = matchChargerScooters({ connectors: ["GX16-3"] }, volt, scooters).map((m) => m.scooterId).sort();
+  assertEquals(gx, ["dual", "gx"]);
+  const multi = matchChargerScooters({ connectors: ["GX16-3", "LP16-3"] }, volt, scooters).map((m) => m.scooterId).sort();
+  assertEquals(multi, ["dual", "gx", "lp"]);
+  const rows = matchChargerScooters({ connectors: ["LP16-3"] }, volt, scooters);
+  assertEquals(rows.map((m) => m.reason), ["fitment:voltage=60 connector=LP16-3", "fitment:voltage=60 connector=LP16-3"]);
+  assertEquals(rows.every((m) => m.confidence === "high"), true);
 });
 
 Deno.test("matchTireScooters: complet → high, section absente → partial, mismatch → rien", () => {

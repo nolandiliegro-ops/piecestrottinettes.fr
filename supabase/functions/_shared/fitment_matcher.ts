@@ -57,7 +57,17 @@ export interface FitmentSpecs {
 
 export interface FitmentPartInput {
   fitment_specs?: FitmentSpecs | null;
-  electrical_specs?: { voltages?: number[]; connector?: string | null } | null;
+  electrical_specs?: { voltages?: number[]; connector?: string | null; connectors?: string[] | null } | null;
+}
+
+/**
+ * Prises servies par un chargeur : `connectors` (chargeur multi-embouts, ou pack
+ * chargeur + adaptateur) sinon `connector` seul. Vide → chargeur non matchable.
+ */
+export function chargerPlugs(part: FitmentPartInput): string[] {
+  const e = part.electrical_specs;
+  const list = Array.isArray(e?.connectors) && e!.connectors!.length > 0 ? e!.connectors! : [e?.connector];
+  return [...new Set(list.filter((x): x is string => typeof x === "string" && x.trim() !== "").map((x) => x.trim()))];
 }
 
 export type FitmentKind = "electrical" | "tire" | "disc" | "caliper";
@@ -104,8 +114,10 @@ export function isFitmentMatchable(
   part: FitmentPartInput,
 ): boolean {
   if (rule.kind === "electrical") {
+    // Chargeur = voltage ET prise (décision Nolan 11/10/2026) : sans connecteur
+    // typé côté pièce, aucune suggestion — jamais un chargeur « au voltage seul ».
     const v = part.electrical_specs?.voltages;
-    return Array.isArray(v) && v.length > 0 && v.every(Number.isInteger);
+    return Array.isArray(v) && v.length > 0 && v.every(Number.isInteger) && chargerPlugs(part).length > 0;
   }
   const fs = part.fitment_specs;
   if (rule.kind === "tire") {
@@ -266,6 +278,40 @@ export function matchCaliperScooters(
   return out;
 }
 
+export interface ChargerScooterRow {
+  id: string;
+  /** Prises de charge du modèle (codes fitment_charge_connectors) ; plusieurs si la série varie. */
+  charge_connectors: string[] | null;
+}
+
+/**
+ * Chargeur (décision 11/10/2026) : le modèle doit (1) avoir une config batterie
+ * au voltage de la pièce — `voltageById` déjà filtré publiés — ET (2) porter au
+ * moins UNE des prises servies par la pièce (multi-embouts / pack adaptateur)
+ * dans `charge_connectors`. Prise du modèle inconnue → AUCUNE
+ * ligne (pas de « à vérifier »). Comparaison insensible à la casse/espaces.
+ */
+export function matchChargerScooters(
+  spec: { connectors: string[] },
+  voltageById: Map<string, number>,
+  scooters: ChargerScooterRow[],
+): MatchedRow[] {
+  const want = new Set(spec.connectors.map((c) => c.trim().toUpperCase()));
+  const out: MatchedRow[] = [];
+  for (const s of scooters) {
+    const v = voltageById.get(s.id);
+    if (v === undefined) continue;
+    const hit = (s.charge_connectors ?? []).map((x) => String(x).trim()).find((x) => want.has(x.toUpperCase()));
+    if (!hit) continue;
+    out.push({
+      scooterId: s.id,
+      confidence: "high",
+      reason: `fitment:voltage=${v} connector=${hit}`,
+    });
+  }
+  return out;
+}
+
 // ─── Moteur K (effet DB) ────────────────────────────────────────────────────
 
 const EMPTY: FitmentOutcome = { count: 0, highCount: 0, partialCount: 0, scooterIds: new Set() };
@@ -291,7 +337,7 @@ export async function suggestCompatibilitiesFitment(
         .from("scooter_battery_configs")
         .select("scooter_model_id, voltage")
         .in("voltage", voltages),
-      supabase.from("scooter_models").select("id").eq("published", true),
+      supabase.from("scooter_models").select("id, charge_connectors").eq("published", true),
     ]);
     if (cfgRes.error || pubRes.error) {
       // Fail-closed : erreur → aucune suggestion.
@@ -308,11 +354,11 @@ export async function suggestCompatibilitiesFitment(
         voltageById.set(c.scooter_model_id, c.voltage);
       }
     }
-    matched = [...ids].map((id) => ({
-      scooterId: id,
-      confidence: "high" as const,
-      reason: `fitment:voltage=${voltageById.get(id)}`,
-    }));
+    matched = matchChargerScooters(
+      { connectors: chargerPlugs(part) },
+      voltageById,
+      (pubRes.data ?? []) as ChargerScooterRow[],
+    );
   } else if (rule.kind === "tire") {
     const fs = part.fitment_specs!;
     const { data, error } = await supabase
