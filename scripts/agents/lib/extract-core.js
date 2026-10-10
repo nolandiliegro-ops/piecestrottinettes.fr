@@ -123,8 +123,14 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   };
 
   // Specs numériques
+  // Colonnes ENTIÈRES en base (mesuré le 10/10 : amperage 23.4 a fait rejeter tout le modèle Speedway 5).
+  // Une valeur à virgule n'est jamais arrondie : elle n'est pas envoyée et reste signalée au rapport.
+  const INT_COLS = ['voltage', 'amperage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'year'];
+  const notInt = [];
   for (const k of ['voltage', 'amperage', 'power_watts', 'max_speed_private_kmh', 'range_km', 'max_load_kg', 'year']) {
-    put(k, num(specs[k]), specs[k]);
+    const n = num(specs[k]);
+    if (n !== null && INT_COLS.includes(k) && !Number.isInteger(n)) { notInt.push(`${k}=${n}`); continue; }
+    put(k, n, specs[k]);
   }
   s.max_speed_kmh = 25; // vitesse route légale FR, convention de toutes les fiches publiées
 
@@ -144,7 +150,7 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   const fold = sourced(specs.foldable);
   if (fold && typeof fold.value === 'boolean') put('foldable', fold.value, fold);
   const wi = num(specs.wheel_inches);
-  if (wi !== null) put('wheel_inches', String(wi), specs.wheel_inches);
+  if (wi !== null) put('wheel_inches', wi, specs.wheel_inches); // NOMBRE : le serveur refuse le texte « 8 » (10/10)
 
   // Photos : og:image relevées par le script sur les fiches produit (fiables) + URLs directes d'image du modèle
   const og = (Array.isArray(specs._og_images) ? specs._og_images : []).filter((u) => typeof u === 'string' && /^https?:\/\//i.test(u));
@@ -207,7 +213,7 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   // publication par SQL), et restent la cible de la passe disques.
   const discMissing = needsDiscKeys(s.brake_type, vocab) ? DISC_KEYS.filter((k) => s[k] === undefined) : [];
 
-  return { scooter: s, sources, missing, discMissing, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
+  return { scooter: s, sources, missing, discMissing, notInt, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
 }
 
 /** Rapport de sources lisible (markdown), un tableau par modèle. */
@@ -219,6 +225,7 @@ export function sourcesReport(brandName, results, meta = {}) {
   for (const r of results) {
     lines.push(`## ${r.scooter.name} — ${r.ready ? 'PRÊT' : 'MANQUE'}`);
     if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
+    if (r.notInt?.length) lines.push(`- Valeur à virgule pour une colonne entière, NON importée : ${r.notInt.join(' · ')}`);
     if (r.discMissing?.length) lines.push(`- Publiable SANS disques (règle du 10/10) — inconnu : ${r.discMissing.join(', ')}`);
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);

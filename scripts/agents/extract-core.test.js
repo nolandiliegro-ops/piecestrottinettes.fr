@@ -149,3 +149,21 @@ test('frein sans disque (fender_foot_ebs) : aucune clé disque attendue', () => 
   assert.equal(r.ready, true);
   assert.deepEqual(r.discMissing, []);
 });
+
+test('10/10 : taille de roue envoyée en NOMBRE', () => {
+  const r = assembleScooter('X', 'Y', specsOk, keysOk, vocab);
+  assert.strictEqual(r.scooter.wheel_inches, 10);
+});
+
+test('10/10 : ampérage à virgule non envoyé (colonne entière), signalé, modèle toujours prêt', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, amperage: S(23.4) }, keysOk, vocab);
+  assert.equal(r.scooter.amperage, undefined);
+  assert.deepEqual(r.notInt, ['amperage=23.4']);
+  assert.equal(r.ready, true);
+  assert.match(sourcesReport('X', [r], {}), /Valeur à virgule/);
+});
+
+test('10/10 : ampérage entier envoyé tel quel', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, amperage: S(13) }, keysOk, vocab);
+  assert.equal(r.scooter.amperage, 13);
+});

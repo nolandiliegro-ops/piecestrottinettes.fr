@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * scripts/agents/reassemble.js — réapplique les règles d'extract-core aux brouillons existants, SANS appel IA (0 €).
- * Usage : node scripts/agents/reassemble.js --data-dir <dossier> --vocab <vocab.json> [--dry]
+ * Usage : node scripts/agents/reassemble.js --data-dir <dossier> --vocab <vocab.json> [--dry] [--force]
  * Le vocab vient d'une lecture des tables fitment_* (format de loadVocab). --dry : compte sans écrire.
  */
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
@@ -12,6 +12,7 @@ const args = process.argv.slice(2);
 const opt = (n, d = null) => { const i = args.indexOf(`--${n}`); return i !== -1 && args[i + 1] ? args[i + 1] : d; };
 const DATA = resolve(process.cwd(), opt('data-dir', 'extraction'));
 const DRY = args.includes('--dry');
+const FORCE = args.includes('--force'); // réécrit TOUS les fichiers (changement de format sans changement de verdict, ex. 10/10)
 const vocab = JSON.parse(readFileSync(resolve(process.cwd(), opt('vocab')), 'utf-8'));
 vocab.brake = vocab.brake_rows.map((r) => r.code);
 for (const k of ['brake', 'disc_d', 'pcd', 'holes']) if (!vocab[k]?.length) throw new Error(`vocab ${k} vide`);
@@ -30,7 +31,7 @@ for (const f of readdirSync(DATA).filter((x) => x.endsWith('.draft.json') && !x.
     if (n.ready !== r.ready) { touched = true; changed.push(`${n.scooter.name} : ${r.ready ? 'PRÊT' : 'MANQUE'} → ${n.ready ? 'PRÊT' : 'MANQUE'}`); }
     return n;
   });
-  if (!touched || DRY) continue;
+  if ((!touched && !FORCE) || DRY) continue;
   const prev = (() => { try { return JSON.parse(readFileSync(resolve(DATA, `${out}.json`), 'utf-8')); } catch { return {}; } })();
   writeFileSync(resolve(DATA, `${out}.json`), JSON.stringify({ ...prev, brandName: d.brandName, scooters: d.results.filter((r) => r.ready).map((r) => r.scooter) }, null, 2));
   writeFileSync(resolve(DATA, f), JSON.stringify(d, null, 2));
