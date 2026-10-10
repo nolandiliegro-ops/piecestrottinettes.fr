@@ -33,6 +33,36 @@
       "meta_title": "Vsett 10+ - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Vsett 10+ : disque de frein 145 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "vsett 10+, pieces vsett 10+, disque frein vsett 10+, plaquettes vsett 10+, pneu vsett 10+"
+    },
+    {
+      "name": "Vsett 8",
+      "slug": "vsett-8",
+      "voltage": 48,
+      "amperage": 15.6,
+      "power_watts": 600,
+      "max_speed_private_kmh": 45,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "suspension": "Ressorts avant et arrière (bras oscillant, ressorts hélicoïdaux)",
+      "ip_rating": "IP54",
+      "tire_size": "Avant 8,5x3 pouces (gonflable, chambre à air) / arrière 8x2 pouces (plein)",
+      "foldable": true,
+      "wheel_inches": "8.5",
+      "source_image_urls": [
+        "http://fixmytrott.com/cdn/shop/files/header_img_eda997df-1f40-4093-b83e-547e79dc68e2.jpg?v=1779203943"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "140mm",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Vsett 8 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W placé sur la roue arrière, alimenté par une batterie 48 V 15,6 Ah (ou 21 Ah selon la version). Elle roule sur un pneu gonflable de 8,5 pouces à l'avant et un pneu plein de 8 pouces à l'arrière, avec freins à tambour, frein électrique et suspensions avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique (45 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Vsett 8 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Vsett 8 : plaquettes, pneus 8.5x2, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "vsett 8, pieces vsett 8, disque frein vsett 8, plaquettes vsett 8, pneu vsett 8"
     }
   ]
 }

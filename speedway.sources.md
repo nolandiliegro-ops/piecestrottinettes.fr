@@ -1,8 +1,8 @@
-# Extraction Speedway — 2026-10-08
+# Extraction Speedway — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 281615 tokens entrée, 12750 sortie, 15 recherches web.
+Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 
 ## Speedway Mini 4 Pro Lite — PRÊT
 
@@ -49,3 +49,44 @@ Coût mesuré : 281615 tokens entrée, 12750 sortie, 15 recherches web.
 | tire_section | 10x2.70 | revendeur | https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron3-speedway5 | https://alternative.bike/667-pneu-dualtron-3-et-speedway-5.html |
 | caliper_family | speedway_dualtron | revendeur | https://www.out-fun.com/pieces-detachees-trottinettes-electriques/2520-plaquettes-de-freins-speedway-et-dualtron.html |  |
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-5 |  |
+
+## Speedway Mini 4 Pro — PRÊT
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro |  |
+| amperage | 13 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro |  |
+| power_watts | 500 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ |  |
+| max_speed_private_kmh | 40 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ |  |
+| range_km | 40 | revendeur | https://www.inrevolta.com/en/speedway-mini-4-pro.html |  |
+| max_load_kg | 120 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro |  |
+| weight_kg | 16 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ | https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro |
+| suspension | Avant hydraulique et arrière pneumatique | revendeur | https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/ |  |
+| ip_rating | IP54 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro |  |
+| tire_size | 8" (chambre à air à l'avant, pneu plein à l'arrière) | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ |  |
+| foldable | true | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ |  |
+| wheel_inches | 8 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772 |  |
+| brake_type | drum | distributeur | https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf |  |
+| rim_diameter | 4 | revendeur | https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html | https://trott2rue.fr/products/chambre-a-air-speedway-mini4-pro-200x50-90x90 |
+
+## Speedway Leger Lite — MANQUE
+- Manque : source_image_urls
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | revendeur | https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/ |  |
+| amperage | 10 | revendeur | https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/ |  |
+| power_watts | 500 | distributeur | https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123 |  |
+| max_speed_private_kmh | 35 | revendeur | http://minimotors.digf.fr/product/speedway-leger-lite/ |  |
+| range_km | 35 | distributeur | https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123 |  |
+| max_load_kg | 100 | distributeur | https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123 |  |
+| year | 2020 | revendeur | https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/ |  |
+| weight_kg | 20.6 | revendeur | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-minimotors-lite | http://e-trott.fr/produit/speedway-leger-lite/ |
+| suspension | Amortisseurs avant et arrière | revendeur | http://e-trott.fr/produit/speedway-leger-lite/ |  |
+| foldable | true | distributeur | https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123 |  |
+| wheel_inches | 8.5 | distributeur | https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123 |  |
+| brake_type | drum | distributeur | https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094 |  |
+| rim_diameter | 6.1 | revendeur | https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html | https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/ |
+| tire_section | 8.5x2 | revendeur | https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html | https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/ |
+| tire_family | pneumatic | distributeur | https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094 |  |

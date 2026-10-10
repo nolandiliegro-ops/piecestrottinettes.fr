@@ -533,6 +533,508 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Speedway Mini 4 Pro",
+        "slug": "speedway-mini-4-pro",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 16,
+        "suspension": "Avant hydraulique et arrière pneumatique",
+        "ip_rating": "IP54",
+        "tire_size": "8\" (chambre à air à l'avant, pneu plein à l'arrière)",
+        "foldable": true,
+        "wheel_inches": "8",
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "4",
+        "score_offroad": 23,
+        "description": "La Speedway Mini 4 Pro de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48V 13Ah. Elle roule sur des pneus de 8 pouces (chambre à air à l'avant, pneu plein à l'arrière), avec suspensions avant et arrière, un frein à tambour arrière et un frein électromagnétique. Elle est livrée bridée à 25 km/h, avec une vitesse maximale d'environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway Mini 4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway Mini 4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway mini 4 pro, pieces speedway mini 4 pro, disque frein speedway mini 4 pro, plaquettes speedway mini 4 pro, pneu speedway mini 4 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.inrevolta.com/en/speedway-mini-4-pro.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro"
+        },
+        "suspension": {
+          "url": "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html",
+          "type": "revendeur",
+          "url2": "https://trott2rue.fr/products/chambre-a-air-speedway-mini4-pro-200x50-90x90"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://www.ma-trottinette-electrique.fr/tout-savoir-sur-la-fiche-technique-de-la-speedway-mini-4-pro/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.inrevolta.com/en/speedway-mini-4-pro.html",
+            "source_url_2": "https://matrott.com/avis-complet-trottinette-speedway-mini-4-pro/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Mini-4-Pro-1360-W-Noir/a15159492/w-4?ni=67a2921ea6&snu=quir&kni=320080&mala=236304",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8\" (chambre à air à l'avant, pneu plein à l'arrière)",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant hydraulique et arrière pneumatique",
+            "source_url": "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/",
+            "source_url_2": "https://www.inrevolta.com/en/speedway-mini-4-pro.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_url_2": "https://www.inrevolta.com/en/speedway-mini-4-pro.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Speedway Mini 4 Pro de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48V 13Ah. Elle roule sur des pneus de 8 pouces (chambre à air à l'avant, pneu plein à l'arrière), avec suspensions avant et arrière, un frein à tambour arrière et un frein électromagnétique. Elle est livrée bridée à 25 km/h, avec une vitesse maximale d'environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://e-watts.fr/en/produit/trottinette-electrique-speedway-mini-4-pro/",
+            "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro",
+            "https://les-cyclistes-branches.com/produit/minimotors-speedway-mini-4-pro-trottinette-electrique/"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf",
+            "source_url_2": "https://www.clubic.com/test-produit/article-863454-1-test-speedway-mini-4-pro-rapide-endurante-neglige-securite.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "4",
+            "source_url": "https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html",
+            "source_url_2": "https://trott2rue.fr/products/chambre-a-air-speedway-mini4-pro-200x50-90x90",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Speedway Leger Lite",
+        "slug": "speedway-leger-lite",
+        "voltage": 36,
+        "amperage": 10,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 35,
+        "max_load_kg": 100,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.6,
+        "suspension": "Amortisseurs avant et arrière",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "brake_type": "drum",
+        "rim_diameter": "6.1",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Speedway Leger Lite de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless arrière de 500 W et d'une batterie lithium 36 V 10 Ah, pour une autonomie annoncée d'environ 35 km. Elle roule sur des pneus gonflables de 8,5 pouces avec suspensions avant et arrière, et freine grâce à un frein à tambour arrière associé à un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique (35 km/h annoncés sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway Leger Lite - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway Leger Lite : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway leger lite, pieces speedway leger lite, disque frein speedway leger lite, plaquettes speedway leger lite, pneu speedway leger lite"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "http://minimotors.digf.fr/product/speedway-leger-lite/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "distributeur"
+        },
+        "year": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-minimotors-lite",
+          "type": "revendeur",
+          "url2": "http://e-trott.fr/produit/speedway-leger-lite/"
+        },
+        "suspension": {
+          "url": "http://e-trott.fr/produit/speedway-leger-lite/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "distributeur"
+        },
+        "brake_type": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html",
+          "type": "revendeur",
+          "url2": "https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/"
+        },
+        "tire_section": {
+          "url": "https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html",
+          "type": "revendeur",
+          "url2": "https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/"
+        },
+        "tire_family": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.6,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-minimotors-lite",
+            "source_url_2": "http://e-trott.fr/produit/speedway-leger-lite/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique/1298-trottinette-electrique-speedway-leger.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique/1298-trottinette-electrique-speedway-leger.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "http://minimotors.digf.fr/product/speedway-leger-lite/",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "http://minimotors.digf.fr/product/speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "https://www.full-watt.fr/trottinette-electrique-speedway-marseille/",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "http://e-trott.fr/produit/speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Amortisseurs avant et arrière",
+            "source_url": "http://e-trott.fr/produit/speedway-leger-lite/",
+            "source_url_2": "https://www.full-watt.fr/trottinette-electrique-speedway-marseille/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-minimotors-lite",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Speedway Leger Lite de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless arrière de 500 W et d'une batterie lithium 36 V 10 Ah, pour une autonomie annoncée d'environ 35 km. Elle roule sur des pneus gonflables de 8,5 pouces avec suspensions avant et arrière, et freine grâce à un frein à tambour arrière associé à un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique (35 km/h annoncés sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "http://minimotors.digf.fr/product/speedway-leger-lite/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "http://e-trott.fr/produit/speedway-leger-lite/",
+            "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "http://e-trott.fr/produit/speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html",
+            "source_url_2": "https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.1",
+            "source_url": "https://www.wattiz.fr/fr/pneus-gonflables/26532-pneu-plein-xiaomi-rouge-3760351012851.html",
+            "source_url_2": "https://rouelibrebandol.fr/produit/pneu-85x2-dualtron-mini-speedway-leger-minimotors/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "http://e-trott.fr/produit/speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

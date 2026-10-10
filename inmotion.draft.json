@@ -527,6 +527,547 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Inmotion Climber",
+        "slug": "inmotion-climber",
+        "voltage": 36,
+        "amperage": 15,
+        "power_watts": 900,
+        "max_speed_private_kmh": 35,
+        "range_km": 55,
+        "max_load_kg": 140,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.8,
+        "suspension": "Aucune (confort assuré par les pneus gonflables de 10 pouces)",
+        "ip_rating": "IPX6",
+        "tire_size": "10x2.125-6.5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/products/208.50.png?v=1669966078"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "L'Inmotion Climber est une trottinette électrique pliable à double moteur (2 x 450 W) alimentée par une batterie Samsung 36 V / 15 Ah (533 Wh), annoncée jusqu'à 55 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces, avec un frein à disque à l'arrière et un frein électronique EBS à l'avant, pour un poids de 20,8 kg. Sa vitesse est bridée à 25 km/h en sortie d'usine (35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Inmotion Climber - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Inmotion Climber : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "inmotion climber, pieces inmotion climber, disque frein inmotion climber, plaquettes inmotion climber, pneu inmotion climber"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://fixmytrott.com/products/trottinette-electrique-inmotion-climber",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur"
+        },
+        "year": {
+          "url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur",
+          "url2": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html"
+        },
+        "suspension": {
+          "url": "https://swiss-distribution.com/produit/trottinette-electrique-inmotion-climber/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+          "type": "distributeur"
+        },
+        "tire_size": {
+          "url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/products/208.50.png?v=1669966078",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.inmotion-france.fr/en/climber",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-10x2-125-route"
+        },
+        "tire_section": {
+          "url": "https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-10x2-125-route"
+        },
+        "tire_family": {
+          "url": "https://inmotionworld.com/products/inmotion-climber",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 140,
+          "url": "https://www.inmotion-france.fr/en/spare-parts/677-brake-disc-for-inmotion-climber-3701522004336.html"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.8,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-inmotion-climber",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-inmotion-climber",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 900,
+            "source_url": "https://fixmytrott.com/products/trottinette-electrique-inmotion-climber",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-climber",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 140,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-inmotion-climber",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_url_2": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "10x2.125-6.5",
+            "source_url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune (confort assuré par les pneus gonflables de 10 pouces)",
+            "source_url": "https://swiss-distribution.com/produit/trottinette-electrique-inmotion-climber/",
+            "source_url_2": "https://fixmytrott.com/products/trottinette-electrique-inmotion-climber",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_url_2": "https://www.gyro-phare.com/65-trottinette-electrique-inmotion-climber.html",
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_url_2": "https://fixmytrott.com/products/trottinette-electrique-inmotion-climber",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_url_2": "https://swiss-distribution.com/produit/trottinette-electrique-inmotion-climber/",
+            "source_type": "distributeur"
+          },
+          "description_fr": {
+            "value": "L'Inmotion Climber est une trottinette électrique pliable à double moteur (2 x 450 W) alimentée par une batterie Samsung 36 V / 15 Ah (533 Wh), annoncée jusqu'à 55 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces, avec un frein à disque à l'arrière et un frein électronique EBS à l'avant, pour un poids de 20,8 kg. Sa vitesse est bridée à 25 km/h en sortie d'usine (35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+            "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "https://www.eleqtron.fr/products/trottinette-electrique-inmotion-climber"
+          ],
+          "_og_images": [
+            "http://www.eleqtron.fr/cdn/shop/products/208.50.png?v=1669966078"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.inmotion-france.fr/en/climber",
+            "source_url_2": "https://trott2rue.fr/products/inmotion-climber",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.inmotion-france.fr/en/spare-parts/677-brake-disc-for-inmotion-climber-3701522004336.html",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html",
+            "source_url_2": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html",
+            "source_url_2": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://inmotionworld.com/products/inmotion-climber",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Inmotion Air",
+        "slug": "inmotion-air",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 350,
+        "max_speed_private_kmh": 30,
+        "range_km": 35,
+        "max_load_kg": 120,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 15.8,
+        "ip_rating": "IP55",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "drum_front_ebs_rear",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "L'Inmotion Air est une trottinette électrique pliable équipée d'un moteur arrière de 350 W et d'une batterie lithium-ion 36 V / 7,8 Ah (280 Wh) pour jusqu'à 35 km d'autonomie. Elle roule sur des pneus de 10 pouces, avec un frein à tambour à l'avant et un frein électronique à l'arrière, et pèse 15,8 kg ; sa vitesse est bridée à 25 km/h en sortie d'usine (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Inmotion Air - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Inmotion Air : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "inmotion air, pieces inmotion air, disque frein inmotion air, plaquettes inmotion air, pneu inmotion air"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur",
+          "url2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html"
+        },
+        "ip_rating": {
+          "url": "https://www.myinmotion.com/inmotion-air-electric-scooter",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "distributeur"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+          "type": "revendeur",
+          "url2": "https://www.scooterpassion.be/fr/scooter-passion/7752-chambre-a-air-pneu-10-x-2125-trottinette-electrique-ninebot-d-et-f-inmotion-air-air-pro-climber-valve-ninebot.html"
+        },
+        "tire_family": {
+          "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [
+        "rim_diameter=6.5"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://e-watts.fr/produit/pneu-10x2-125-route"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15.8,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/inmotion/inmotion-air/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://www.myinmotion.com/inmotion-air-electric-scooter",
+            "source_url_2": "https://www.ai-rides.com/products/inmotion-air-10-inch-270wh-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/inmotion-air/",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'Inmotion Air est une trottinette électrique pliable équipée d'un moteur arrière de 350 W et d'une batterie lithium-ion 36 V / 7,8 Ah (280 Wh) pour jusqu'à 35 km d'autonomie. Elle roule sur des pneus de 10 pouces, avec un frein à tambour à l'avant et un frein électronique à l'arrière, et pèse 15,8 kg ; sa vitesse est bridée à 25 km/h en sortie d'usine (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html",
+            "https://www.altermove.com/12704-trottinette-electrique-inmotion-air.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/inmotion/inmotion-air/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/7752-chambre-a-air-pneu-10-x-2125-trottinette-electrique-ninebot-d-et-f-inmotion-air-air-pro-climber-valve-ninebot.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-125-route",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+            "source_url_2": "https://www.freemoov.com/shop/im-air-s-trottinette-electrique-inmotion-air-11",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

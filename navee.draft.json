@@ -527,6 +527,512 @@
           "disc_holes": null
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Navee GT5 Pro",
+        "slug": "navee-gt5-pro",
+        "voltage": 46.8,
+        "amperage": 12,
+        "power_watts": 600,
+        "max_speed_private_kmh": 32,
+        "range_km": 75,
+        "max_load_kg": 130,
+        "max_speed_kmh": 25,
+        "weight_kg": 24.9,
+        "suspension": "Fourche avant + amortisseur (vérin) arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10 pouces tubeless",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://media.materiel.net/r900/products/MN0006366598.jpg",
+          "https://media.ldlc.com/r1600/ld/products/00/06/35/10/LD0006351029.jpg"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Navee GT5 Pro est une trottinette électrique pliable équipée d'un moteur de 600 W nominaux (1 350 W en pointe) et d'une batterie intégrée de 46,8 V / 561,6 Wh annoncée jusqu'à 75 km d'autonomie à 15 km/h. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour à l'avant, un EABS à l'arrière et une suspension avant et arrière. Sa vitesse est bridée à 25 km/h en version France (modes 6 / 20 / 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Navee GT5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Navee GT5 Pro : plaquettes, chargeurs 46.8V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "navee gt5 pro, pieces navee gt5 pro, disque frein navee gt5 pro, plaquettes navee gt5 pro, pneu navee gt5 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.naveetech.com/navee-gt5-pro/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur",
+          "url2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4"
+        },
+        "suspension": {
+          "url": "https://www.naveetech.com/navee-gt5-pro/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://eu.naveetech.com/products/navee-gt5-pro",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.naveetech.com/navee-gt5-pro/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.naveetech.com/navee-gt5-pro/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.materiel.net/r900/products/MN0006366598.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.naveetech.com/fr/navee-gt5-pro/",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.naveetech.com/fr/navee-gt5-pro/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24.9,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 12,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 32,
+            "source_url": "https://www.naveetech.com/navee-gt5-pro/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 75,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 130,
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.ldlc.com/en/product/PB00744691.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.naveetech.com/navee-gt5-pro/",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces tubeless",
+            "source_url": "https://www.naveetech.com/navee-gt5-pro/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Fourche avant + amortisseur (vérin) arrière",
+            "source_url": "https://www.naveetech.com/navee-gt5-pro/",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4",
+            "source_url_2": "https://www.rueducommerce.fr/p/r26069676646.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Navee GT5 Pro est une trottinette électrique pliable équipée d'un moteur de 600 W nominaux (1 350 W en pointe) et d'une batterie intégrée de 46,8 V / 561,6 Wh annoncée jusqu'à 75 km d'autonomie à 15 km/h. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour à l'avant, un EABS à l'arrière et une suspension avant et arrière. Sa vitesse est bridée à 25 km/h en version France (modes 6 / 20 / 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://eu.naveetech.com/products/navee-gt5-pro",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.materiel.net/produit/202604210008.html",
+            "https://www.ldlc.com/en/product/PB00744691.html",
+            "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4"
+          ],
+          "_og_images": [
+            "https://media.materiel.net/r900/products/MN0006366598.jpg",
+            "https://media.ldlc.com/r1600/ld/products/00/06/35/10/LD0006351029.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.naveetech.com/fr/navee-gt5-pro/",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.naveetech.com/fr/navee-gt5-pro/",
+            "source_url_2": "https://www.materiel.net/produit/202604210008.html",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Navee ST5 Pro",
+        "slug": "navee-st5-pro",
+        "voltage": 46.8,
+        "amperage": 10.2,
+        "power_watts": 600,
+        "max_speed_private_kmh": 40,
+        "range_km": 75,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 24.8,
+        "suspension": "Avant et arrière : bras amortisseurs (Damping Arm)",
+        "ip_rating": "IPX6",
+        "tire_size": "10\" tubeless (section non communiquée)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://eu.naveetech.com/cdn/shop/files/20251219-1531481_1.webp?v=1780056013&width=2048"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Navee ST5 Pro est équipée d'un moteur de 600 W nominal (1350 W en pointe) alimenté par une batterie 46,8 V 10,2 Ah (477,36 Wh) pour jusqu'à 75 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière à bras amortisseurs et freinage à disques avant/arrière avec EABS ; sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Navee ST5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Navee ST5 Pro : plaquettes, chargeurs 46.8V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "navee st5 pro, pieces navee st5 pro, disque frein navee st5 pro, plaquettes navee st5 pro, pneu navee st5 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://eu.naveetech.com/products/st5-pro",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://eu.naveetech.com/products/st5-pro",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://naveetech.fr/en/products/st5-pro",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.naveetech.com/navee-st5-pro/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://naveetech.fr/en/products/st5-pro",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://eu.naveetech.com/products/st5-pro",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://naveetech.fr/en/products/st5-pro",
+          "type": "constructeur",
+          "url2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html"
+        },
+        "suspension": {
+          "url": "https://www.naveetech.com/navee-st5-pro/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.naveetech.com/navee-st5-pro/",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.naveetech.com/navee-st5-pro/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.naveetech.com/navee-st5-pro/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://eu.naveetech.com/cdn/shop/files/20251219-1531481_1.webp?v=1780056013&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://eu.naveetech.com/products/st5-pro",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.naveetech.com/fr/navee-st5-pro/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24.8,
+            "source_url": "https://naveetech.fr/en/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://eu.naveetech.com/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.2,
+            "source_url": "https://eu.naveetech.com/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://naveetech.fr/en/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://www.naveetech.com/navee-st5-pro/",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/navee-st5-pro/?v=08a4415e9d59",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 75,
+            "source_url": "https://naveetech.fr/en/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://eu.naveetech.com/products/st5-pro",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.naveetech.com/navee-st5-pro/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10\" tubeless (section non communiquée)",
+            "source_url": "https://www.naveetech.com/navee-st5-pro/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière : bras amortisseurs (Damping Arm)",
+            "source_url": "https://www.naveetech.com/navee-st5-pro/",
+            "source_url_2": "https://www.fnac.com/NAVEE-ST5-Pro/a22970551/w-4",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.naveetech.com/navee-st5-pro/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "source_url_2": "https://www.fnac.com/NAVEE-ST5-Pro/a22970551/w-4",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Navee ST5 Pro est équipée d'un moteur de 600 W nominal (1350 W en pointe) alimenté par une batterie 46,8 V 10,2 Ah (477,36 Wh) pour jusqu'à 75 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière à bras amortisseurs et freinage à disques avant/arrière avec EABS ; sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://naveetech.fr/en/products/st5-pro",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html",
+            "https://www.fnac.com/NAVEE-ST5-Pro/a22970551/w-4",
+            "https://eu.naveetech.com/products/st5-pro"
+          ],
+          "_og_images": [
+            "http://eu.naveetech.com/cdn/shop/files/20251219-1531481_1.webp?v=1780056013&width=2048"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://eu.naveetech.com/products/st5-pro",
+            "source_url_2": "https://electrotraveller.com/trottinettes-electriques/navee-st5-pro/?v=08a4415e9d59",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.naveetech.com/fr/navee-st5-pro/",
+            "source_url_2": "https://www.fnac.com/NAVEE-ST5-Pro/a22970551/w-4",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

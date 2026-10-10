@@ -1,8 +1,8 @@
-# Extraction Urbanglide — 2026-10-08
+# Extraction Urbanglide — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**0 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 302645 tokens entrée, 12614 sortie, 16 recherches web.
+Coût mesuré : 272988 tokens entrée, 11512 sortie, 16 recherches web.
 
 ## Urbanglide Ride 85 Evo — MANQUE
 - Manque : disc_diameter, disc_pcd, disc_holes
@@ -44,3 +44,45 @@ Coût mesuré : 302645 tokens entrée, 12614 sortie, 16 recherches web.
 | source_image_urls | 3 photo(s) | og:image fiche produit | http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737 |  |
 | brake_type | disc_unknown_actuation | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
 | tire_family | pneumatic | revendeur | https://fixwheel.fr/products/urbanglide-ecross-one-master |  |
+
+## Urbanglide 100 Evo — MANQUE
+- Manque : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 21.6 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| amperage | 10.4 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| power_watts | 350 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| range_km | 25 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| max_load_kg | 100 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| year | 2025 | revendeur | https://fixwheel.fr/products/urbanglide-ride-100-evo-master |  |
+| weight_kg | 16.3 | constructeur | https://urbanglide.com/en/produit/100-evo/ | https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html |
+| suspension | Avant (fourche en H), pas de suspension arrière | revendeur | https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html |  |
+| ip_rating | IPX5 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| foldable | true | revendeur | https://fixwheel.fr/products/urbanglide-ride-100-evo-master |  |
+| wheel_inches | 10 | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg |  |
+| brake_type | disc_mechanical | revendeur | https://www.decathlon.fr/p/mp/urbanglide/trottinette-electrique-adulte-100-evo-500w-jusqu-a-25-km/_/R-p-d381926c-3518-4f28-81db-8f7a9ec18f97 |  |
+| tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/100-evo/ |  |
+
+## Urbanglide 85 Evo — MANQUE
+- Manque : source_image_urls, disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=8.5x2
+- Une seule source, NON importé : tire_section=8.5x2 (https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 21.6 | revendeur | https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268 |  |
+| amperage | 7.8 | revendeur | https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268 |  |
+| power_watts | 250 | revendeur | https://www.boulanger.com/ref/1230668 |  |
+| max_speed_private_kmh | 25 | revendeur | https://www.darty.com/nav/achat/ref/MC355620111.html |  |
+| range_km | 20 | revendeur | https://www.boulanger.com/ref/1230668 |  |
+| max_load_kg | 100 | revendeur | https://www.boulanger.com/ref/1230668 |  |
+| weight_kg | 15 | revendeur | https://www.boulanger.com/ref/1230668 | https://www.amazon.fr/Trottinette-%C3%89lectrique-Adulte-UrbanGlide-Evo/dp/B0GTG41BRF |
+| suspension | Double suspension avant | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html |  |
+| ip_rating | IPX5 | revendeur | https://www.darty.com/nav/achat/ref/MC355620111.html |  |
+| tire_size | 8,5" (21,59 cm) pneu gonflable à chambre à air | revendeur | https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-ride-85-evo/ |  |
+| foldable | true | revendeur | https://www.boulanger.com/ref/1230668 |  |
+| wheel_inches | 8.5 | revendeur | https://www.boulanger.com/ref/1230668 |  |
+| brake_type | ebs_front_disc_rear | revendeur | https://www.pixmania.com/fr/fr/85-evo-trottinette-urbaine-autonomie-20-km-temps-de-charge-5h-certification-ipx5-513032.html |  |
+| tire_family | pneumatic | constructeur | https://urbanglide.com/en/produit/85-evo/ |  |

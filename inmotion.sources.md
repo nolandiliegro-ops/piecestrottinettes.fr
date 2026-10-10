@@ -1,8 +1,8 @@
-# Extraction Inmotion — 2026-10-09
+# Extraction Inmotion — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 293736 tokens entrée, 11382 sortie, 18 recherches web.
+Coût mesuré : 323754 tokens entrée, 12094 sortie, 17 recherches web.
 
 ## Inmotion S1F — PRÊT
 
@@ -47,3 +47,50 @@ Coût mesuré : 293736 tokens entrée, 11382 sortie, 18 recherches web.
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://clicknwheel.com/wp-content/uploads/2024/01/photo.jpeg |  |
 | brake_type | drum_front_ebs_rear | distributeur | https://www.inmotion-france.fr/en/inmotion-air-pro-electric-scooter |  |
 | tire_section | 10x2.125 | revendeur | https://e-watts.fr/produit/pneu-10x2-125-route | https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques |
+
+## Inmotion Climber — MANQUE
+- Manque : disc_diameter, disc_pcd, disc_holes
+- Une seule source, NON importé : disc_diameter=140 (https://www.inmotion-france.fr/en/spare-parts/677-brake-disc-for-inmotion-climber-3701522004336.html)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html |  |
+| amperage | 15 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html |  |
+| power_watts | 900 | revendeur | https://fixmytrott.com/products/trottinette-electrique-inmotion-climber |  |
+| max_speed_private_kmh | 35 | distributeur | https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html |  |
+| range_km | 55 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html |  |
+| max_load_kg | 140 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html |  |
+| year | 2025 | distributeur | https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html |  |
+| weight_kg | 20.8 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html | https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html |
+| suspension | Aucune (confort assuré par les pneus gonflables de 10 pouces) | revendeur | https://swiss-distribution.com/produit/trottinette-electrique-inmotion-climber/ |  |
+| ip_rating | IPX6 | distributeur | https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html |  |
+| tire_size | 10x2.125-6.5 | revendeur | https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques |  |
+| foldable | true | distributeur | https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html |  |
+| wheel_inches | 10 | distributeur | https://www.green220.fr/trottinettes-electriques/466-trottinette-electrique-inmotion-climber-36-v-15-ah-3701522001717.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.eleqtron.fr/cdn/shop/products/208.50.png?v=1669966078 |  |
+| brake_type | ebs_front_disc_rear | distributeur | https://www.inmotion-france.fr/en/climber |  |
+| rim_diameter | 6.5 | revendeur | https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html | https://e-watts.fr/produit/pneu-10x2-125-route |
+| tire_section | 10x2.125 | revendeur | https://www.scooterpassion.be/fr/scooter-passion/7751-pneu-102125-65-ninebot-f-series-sauf-f40-et-d-series-inmotion-climber.html | https://e-watts.fr/produit/pneu-10x2-125-route |
+| tire_family | pneumatic | constructeur | https://inmotionworld.com/products/inmotion-climber |  |
+
+## Inmotion Air — MANQUE
+- Manque : source_image_urls
+- Trouvé mais hors référentiel (non importé) : rim_diameter=6.5
+- Une seule source, NON importé : rim_diameter=6.5 (https://e-watts.fr/produit/pneu-10x2-125-route)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| amperage | 7.8 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| power_watts | 350 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| max_speed_private_kmh | 30 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| range_km | 35 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| max_load_kg | 120 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| year | 2022 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| weight_kg | 15.8 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html | https://www.gyro-phare.com/64-trottinette-electrique-inmotion-air.html |
+| ip_rating | IP55 | revendeur | https://www.myinmotion.com/inmotion-air-electric-scooter |  |
+| foldable | true | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| wheel_inches | 10 | constructeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| brake_type | drum_front_ebs_rear | distributeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |
+| tire_section | 10x2.125 | revendeur | https://e-watts.fr/produit/pneu-10x2-125-route | https://www.scooterpassion.be/fr/scooter-passion/7752-chambre-a-air-pneu-10-x-2125-trottinette-electrique-ninebot-d-et-f-inmotion-air-air-pro-climber-valve-ninebot.html |
+| tire_family | pneumatic | distributeur | https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html |  |

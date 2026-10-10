@@ -546,6 +546,558 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "NIU KQi3 Max",
+        "slug": "niu-kqi3-max",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 450,
+        "max_speed_private_kmh": 38,
+        "range_km": 65,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 21,
+        "suspension": "Aucune",
+        "ip_rating": "IP54",
+        "tire_size": "9,5 x 2,5 pouces (tubeless)",
+        "foldable": true,
+        "wheel_inches": "9.5",
+        "source_image_urls": [
+          "http://shopeu.niu.com/cdn/shop/products/1500_5.jpg?v=1763378677",
+          "http://niucanada.com/cdn/shop/products/KQi3Max_SideLeft.jpg?v=1676332437"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "disc_holes": 6,
+        "rim_diameter": "6.1",
+        "caliper_family": "xiaomi_mi4",
+        "tire_family": "pneumatic",
+        "score_offroad": 25,
+        "description": "La NIU KQi3 Max est équipée d'un moteur arrière de 450 W (900 W en pointe) alimenté par une batterie 48 V 13 Ah (608 Wh), pour une autonomie annoncée de 65 km. Elle roule sur des pneus tubeless auto-réparants de 9,5 x 2,5 pouces, sans suspension, et freine grâce à des disques avant et arrière associés à un frein régénératif. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "NIU KQi3 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées NIU KQi3 Max : disque de frein 120 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "niu kqi3 max, pieces niu kqi3 max, disque frein niu kqi3 max, plaquettes niu kqi3 max, pneu niu kqi3 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur",
+          "url2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/"
+        },
+        "suspension": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.wee-bot.com/products/pneu-tubeless-trottinette-electrique-niu-kqi3-et-kqi2",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "http://shopeu.niu.com/cdn/shop/products/1500_5.jpg?v=1763378677",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.fredzone.org/niu-kqi3-test-avis-et-presentation-de-la-trotinnette-electrique-rgf234/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+          "type": "revendeur",
+          "url2": "https://www.aliexpress.us/item/3256806497705515.html?gatewayAdapt=glo2usa4itemAdapt"
+        },
+        "disc_holes": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/Colorful-NIU-Electric-Scooter-Accessories/dp/B0CJQZG7NQ"
+        },
+        "rim_diameter": {
+          "url": "https://www.amazon.com/BABEJIA-9-5x2-5-6-1-Tubeless-Replacement-Compatible/dp/B0F62ZSXMP",
+          "type": "revendeur",
+          "url2": "https://ibspot.com/us/products/9-5x2-5-6-1-off-road-solid-tire-replacement-for-niu-kqi3-pro-max-sport-scooter-puncture-free-hassle-free-maintenance-anti-skid-shockproof-9-5-x-2-50-inch-tubeless-tire-3-color-1pc"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-eu-version",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_pcd"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 21,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://eridehero.com/niu-kqi3-max-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 450,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 38,
+            "source_url": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+            "source_url_2": "https://jusst.com/products/niu-kqi3-max-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 65,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9.5,
+            "source_url": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+            "source_url_2": "https://www.wee-bot.com/products/pneu-tubeless-trottinette-electrique-niu-kqi3-et-kqi2",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "9,5 x 2,5 pouces (tubeless)",
+            "source_url": "https://www.wee-bot.com/products/pneu-tubeless-trottinette-electrique-niu-kqi3-et-kqi2",
+            "source_url_2": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://eridehero.com/niu-kqi3-max-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_url_2": "https://www.amazon.fr/NIU-KQi3-Max-Trottinette-Increvables/dp/B0BD855NJG",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La NIU KQi3 Max est équipée d'un moteur arrière de 450 W (900 W en pointe) alimenté par une batterie 48 V 13 Ah (608 Wh), pour une autonomie annoncée de 65 km. Elle roule sur des pneus tubeless auto-réparants de 9,5 x 2,5 pouces, sans suspension, et freine grâce à des disques avant et arrière associés à un frein régénératif. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-fr-version",
+            "https://niucanada.com/products/kqi3-max-electric-scooter-adults",
+            "https://www.amazon.fr/NIU-KQi3-Max-Trottinette-Increvables/dp/B0BD855NJG"
+          ],
+          "_og_images": [
+            "http://shopeu.niu.com/cdn/shop/products/1500_5.jpg?v=1763378677",
+            "http://niucanada.com/cdn/shop/products/KQi3Max_SideLeft.jpg?v=1676332437"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.fredzone.org/niu-kqi3-test-avis-et-presentation-de-la-trotinnette-electrique-rgf234/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+            "source_url_2": "https://www.aliexpress.us/item/3256806497705515.html?gatewayAdapt=glo2usa4itemAdapt",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/700-brake-disc-120mm-niu-kqi3-sport-pro-max-5430003484869.html",
+            "source_url_2": "https://www.amazon.com/Colorful-NIU-Electric-Scooter-Accessories/dp/B0CJQZG7NQ",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "xiaomi_mi4",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.1",
+            "source_url": "https://www.amazon.com/BABEJIA-9-5x2-5-6-1-Tubeless-Replacement-Compatible/dp/B0F62ZSXMP",
+            "source_url_2": "https://ibspot.com/us/products/9-5x2-5-6-1-off-road-solid-tire-replacement-for-niu-kqi3-pro-max-sport-scooter-puncture-free-hassle-free-maintenance-anti-skid-shockproof-9-5-x-2-50-inch-tubeless-tire-3-color-1pc",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-eu-version",
+            "source_url_2": "https://riderguide.com/reviews/niu-kqi3-max-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/",
+            "source_url_2": "https://www.amazon.com/GLDYTIMES-9-5x2-5-Off-Road-Electric-Tubeless/dp/B0FSQBXRFP",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "NIU KQi 300X",
+        "slug": "niu-kqi-300x",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 500,
+        "max_speed_private_kmh": 38,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 22.1,
+        "suspension": "Fourche avant hydraulique double tube (course 45 mm), pas de suspension arrière",
+        "ip_rating": "IP55",
+        "tire_size": "10.5 x 2.5 pouces (267 x 64 mm), tubeless auto-réparant",
+        "foldable": true,
+        "wheel_inches": "10.5",
+        "source_image_urls": [
+          "http://shopeu.niu.com/cdn/shop/files/K300-X.jpg?v=1763379076",
+          "http://niucanada.com/cdn/shop/files/NIU_KQI300X_DUAL-SUSPENSION_ADULT_SCOOTER_CANADA_US_MODEL_TORONTO_MONTREAL_VANCOUVER_800_LEFT_BLACK.png?v=1772815542"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La NIU KQi 300X est équipée d'un moteur arrière de 500 W nominaux (1000 W en pointe) et d'une batterie 48 V 13 Ah (608 Wh) annoncée pour jusqu'à 60 km d'autonomie. Elle roule sur des pneus tubeless auto-réparants de 10,5 pouces avec fourche avant hydraulique, double frein à disque et freinage régénératif, et sa vitesse est bridée à 25 km/h en version française. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "NIU KQi 300X - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées NIU KQi 300X : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "niu kqi 300x, pieces niu kqi 300x, disque frein niu kqi 300x, plaquettes niu kqi 300x, pneu niu kqi 300x"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+          "type": "constructeur",
+          "url2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024"
+        },
+        "suspension": {
+          "url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://shop.niu.com/products/niu-kqi-300x-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://shopeu.niu.com/cdn/shop/files/K300-X.jpg?v=1763379076",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://riderguide.com/ridefinder/niu-kqi-300x/",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://global.niu.com/fr_be/product/kqi-300",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22.1,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 38,
+            "source_url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+            "source_url_2": "https://scooterrank.com/scooters/niu-kqi-300x",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10.5,
+            "source_url": "https://shop.niu.com/products/niu-kqi-300x-electric-scooter",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10.5 x 2.5 pouces (267 x 64 mm), tubeless auto-réparant",
+            "source_url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+            "source_url_2": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-at-version",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Fourche avant hydraulique double tube (course 45 mm), pas de suspension arrière",
+            "source_url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+            "source_url_2": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+            "source_url_2": "https://eridehero.com/niu-kqi-300x-review/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_url_2": "https://eridehero.com/niu-kqi-300x-review/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La NIU KQi 300X est équipée d'un moteur arrière de 500 W nominaux (1000 W en pointe) et d'une batterie 48 V 13 Ah (608 Wh) annoncée pour jusqu'à 60 km d'autonomie. Elle roule sur des pneus tubeless auto-réparants de 10,5 pouces avec fourche avant hydraulique, double frein à disque et freinage régénératif, et sa vitesse est bridée à 25 km/h en version française. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter-all-terrain-suspension-fr-version",
+            "https://www.pccomponentes.fr/trottinette-electrique-niu-kqi-300x-500w-max-1000w-gris-sideral-homologue-dgt-2024",
+            "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter"
+          ],
+          "_og_images": [
+            "http://shopeu.niu.com/cdn/shop/files/K300-X.jpg?v=1763379076",
+            "http://niucanada.com/cdn/shop/files/NIU_KQI300X_DUAL-SUSPENSION_ADULT_SCOOTER_CANADA_US_MODEL_TORONTO_MONTREAL_VANCOUVER_800_LEFT_BLACK.png?v=1772815542"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://riderguide.com/ridefinder/niu-kqi-300x/",
+            "source_url_2": "https://eridehero.com/products/niu-kqi-300x/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://global.niu.com/fr_be/product/kqi-300",
+            "source_url_2": "https://niucanada.com/products/niu-kqi-300x-suspension-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

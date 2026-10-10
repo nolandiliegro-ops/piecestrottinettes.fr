@@ -505,6 +505,511 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide 100 Evo",
+        "slug": "urbanglide-100-evo",
+        "voltage": 21.6,
+        "amperage": 10.4,
+        "power_watts": 350,
+        "range_km": 25,
+        "max_load_kg": 100,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 16.3,
+        "suspension": "Avant (fourche en H), pas de suspension arrière",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg",
+          "https://media.rueducommerce.fr/mktp/product/productImage/11/142/9efd7a485d684d72a8b23763bb29759a.webp"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'UrbanGlide Ride 100 EVO est une trottinette électrique pliable équipée d'un moteur avant brushless de 350 W (450 W max) alimenté par une batterie lithium 21,6 V / 10,4 Ah (environ 224 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus tout-terrain 10 pouces à chambre à air, avec un frein à disque arrière, un indice IPX5 et une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide 100 Evo - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide 100 Evo : plaquettes, chargeurs 21.6V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide 100 evo, pieces urbanglide 100 evo, disque frein urbanglide 100 evo, plaquettes urbanglide 100 evo, pneu urbanglide 100 evo"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://fixwheel.fr/products/urbanglide-ride-100-evo-master",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur",
+          "url2": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html"
+        },
+        "suspension": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://fixwheel.fr/products/urbanglide-ride-100-evo-master",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.decathlon.fr/p/mp/urbanglide/trottinette-electrique-adulte-100-evo-500w-jusqu-a-25-km/_/R-p-d381926c-3518-4f28-81db-8f7a9ec18f97",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://urbanglide.com/en/produit/100-evo/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16.3,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 21.6,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048682233.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048682233.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.boulanger.com/ref/1230662",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.boulanger.com/ref/1230662",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.boulanger.com/ref/1230662",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant (fourche en H), pas de suspension arrière",
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+            "source_url_2": "https://www.boulanger.com/ref/1230662",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048682233.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fixwheel.fr/products/urbanglide-ride-100-evo-master",
+            "source_url_2": "https://www.boulanger.com/ref/1230662",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fixwheel.fr/products/urbanglide-ride-100-evo-master",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'UrbanGlide Ride 100 EVO est une trottinette électrique pliable équipée d'un moteur avant brushless de 350 W (450 W max) alimenté par une batterie lithium 21,6 V / 10,4 Ah (environ 224 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus tout-terrain 10 pouces à chambre à air, avec un frein à disque arrière, un indice IPX5 et une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/1230662",
+            "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+            "https://www.rueducommerce.fr/p/m25048682233.html"
+          ],
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10006406.jpg",
+            "https://media.rueducommerce.fr/mktp/product/productImage/11/142/9efd7a485d684d72a8b23763bb29759a.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.decathlon.fr/p/mp/urbanglide/trottinette-electrique-adulte-100-evo-500w-jusqu-a-25-km/_/R-p-d381926c-3518-4f28-81db-8f7a9ec18f97",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://urbanglide.com/en/produit/100-evo/",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide 85 Evo",
+        "slug": "urbanglide-85-evo",
+        "voltage": 21.6,
+        "amperage": 7.8,
+        "power_watts": 250,
+        "max_speed_private_kmh": 25,
+        "range_km": 20,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 15,
+        "suspension": "Double suspension avant",
+        "ip_rating": "IPX5",
+        "tire_size": "8,5\" (21,59 cm) pneu gonflable à chambre à air",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "L'UrbanGlide Ride 85 EVO est une trottinette électrique pliable à moteur de 250 W (300 W en pointe), alimentée par une batterie lithium 21,6 V / 7,8 Ah pour jusqu'à 20 km d'autonomie. Elle est équipée de pneus gonflables de 8,5 pouces à chambre à air, d'une double suspension avant et d'un frein à disque arrière, avec une protection IPX5 et un poids de 15 kg ; la vitesse est limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide 85 Evo - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide 85 Evo : plaquettes, chargeurs 21.6V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide 85 evo, pieces urbanglide 85 evo, disque frein urbanglide 85 evo, plaquettes urbanglide 85 evo, pneu urbanglide 85 evo"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.darty.com/nav/achat/ref/MC355620111.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/Trottinette-%C3%89lectrique-Adulte-UrbanGlide-Evo/dp/B0GTG41BRF"
+        },
+        "suspension": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.darty.com/nav/achat/ref/MC355620111.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-ride-85-evo/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/1230668",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.pixmania.com/fr/fr/85-evo-trottinette-urbaine-autonomie-20-km-temps-de-charge-5h-certification-ipx5-513032.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://urbanglide.com/en/produit/85-evo/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls",
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [
+        "tire_section=8.5x2"
+      ],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "tire_section",
+          "value": "8.5x2",
+          "url": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.amazon.fr/Trottinette-%C3%89lectrique-Adulte-UrbanGlide-Evo/dp/B0GTG41BRF",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 21.6,
+            "source_url": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "source_url_2": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-ride-85-evo/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 250,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://www.darty.com/nav/achat/ref/MC355620111.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 20,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC355620111.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.amazon.fr/Trottinette-%C3%89lectrique-Adulte-UrbanGlide-Evo/dp/B0GTG41BRF",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8,5\" (21,59 cm) pneu gonflable à chambre à air",
+            "source_url": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-ride-85-evo/",
+            "source_url_2": "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html",
+            "source_url_2": "https://www.gpasplus.com/trottinettes/4888090-trottinette-electrique-urbanglide-85-evo-300-w-pneus-85-max-25-km-h-autonomie-jusqu-a-20-km-3700092678510.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.darty.com/nav/achat/ref/MC355620111.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique/f-1214801-aabaw93113.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_url_2": "https://www.gpasplus.com/trottinettes/4888090-trottinette-electrique-urbanglide-85-evo-300-w-pneus-85-max-25-km-h-autonomie-jusqu-a-20-km-3700092678510.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'UrbanGlide Ride 85 EVO est une trottinette électrique pliable à moteur de 250 W (300 W en pointe), alimentée par une batterie lithium 21,6 V / 7,8 Ah pour jusqu'à 20 km d'autonomie. Elle est équipée de pneus gonflables de 8,5 pouces à chambre à air, d'une double suspension avant et d'un frein à disque arrière, avec une protection IPX5 et un poids de 15 kg ; la vitesse est limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.boulanger.com/ref/1230668",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/1230668",
+            "https://www.decathlon.fr/p/mp/urbanglide/ride-85-trottinette-electrique-25-km-h-avec-frein-a-disque-et-autonomie-20-km/_/R-p-b0db3551-e880-4926-9364-64461d884268",
+            "https://www.darty.com/nav/achat/ref/MC355620111.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.pixmania.com/fr/fr/85-evo-trottinette-urbaine-autonomie-20-km-temps-de-charge-5h-certification-ipx5-513032.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-85-evo/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://urbanglide.com/en/produit/85-evo/",
+            "source_url_2": "https://www.boulanger.com/ref/1230668",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

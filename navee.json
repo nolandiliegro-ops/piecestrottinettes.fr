@@ -1,4 +1,33 @@
 {
   "brandName": "Navee",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Navee GT5 Pro",
+      "slug": "navee-gt5-pro",
+      "voltage": 46.8,
+      "amperage": 12,
+      "power_watts": 600,
+      "max_speed_private_kmh": 32,
+      "range_km": 75,
+      "max_load_kg": 130,
+      "max_speed_kmh": 25,
+      "weight_kg": 24.9,
+      "suspension": "Fourche avant + amortisseur (vérin) arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10 pouces tubeless",
+      "foldable": true,
+      "wheel_inches": "10",
+      "source_image_urls": [
+        "https://media.materiel.net/r900/products/MN0006366598.jpg",
+        "https://media.ldlc.com/r1600/ld/products/00/06/35/10/LD0006351029.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Navee GT5 Pro est une trottinette électrique pliable équipée d'un moteur de 600 W nominaux (1 350 W en pointe) et d'une batterie intégrée de 46,8 V / 561,6 Wh annoncée jusqu'à 75 km d'autonomie à 15 km/h. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour à l'avant, un EABS à l'arrière et une suspension avant et arrière. Sa vitesse est bridée à 25 km/h en version France (modes 6 / 20 / 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee GT5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee GT5 Pro : plaquettes, chargeurs 46.8V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee gt5 pro, pieces navee gt5 pro, disque frein navee gt5 pro, plaquettes navee gt5 pro, pneu navee gt5 pro"
+    }
+  ]
 }

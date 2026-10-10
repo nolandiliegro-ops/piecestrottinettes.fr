@@ -772,6 +772,556 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 9",
+        "slug": "vsett-9",
+        "voltage": 52,
+        "amperage": 17.5,
+        "power_watts": 650,
+        "max_speed_private_kmh": 45,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 25,
+        "suspension": "Avant et arrière (ressort à l'avant, amortisseur hydraulique à l'arrière)",
+        "ip_rating": "IP54",
+        "tire_size": "8.5 x 3 pouces (gonflable, chambre à air)",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "source_image_urls": [
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-4428/2985/32/trottinette-electrique-vsett-9-pouces.png"
+        ],
+        "brake_type": "disc_mechanical",
+        "rim_diameter": "134mm",
+        "tire_section": "8.5x3",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Vsett 9 est une trottinette électrique pliable équipée d'un moteur brushless de 650 W à l'arrière, alimenté par une batterie 52 V (13 à 17,5 Ah selon la version) et chaussée de pneus gonflables de 8.5 x 3 pouces. Elle dispose de freins à disque avant et arrière couplés à un frein moteur, d'amortisseurs avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 45 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 9 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 9 : plaquettes, pneus 8.5x3, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 9, pieces vsett 9, disque frein vsett 9, plaquettes vsett 9, pneu vsett 9"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://speedio.eu/vsett-9-9-electric-scooter",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.glisseurbaine.com/1533-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html"
+        },
+        "suspension": {
+          "url": "https://www.glisseurbaine.com/1533-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://vsett.com/products/vsett-9-plus",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.cdnws.com/_i/21277/fb%7B630%7D-4428/2985/32/trottinette-electrique-vsett-9-pouces.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://e-watts.fr/produit/etrier-de-frein-vsett-9/",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-plein-vsett-8-vsett-9"
+        },
+        "tire_section": {
+          "url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+          "type": "revendeur",
+          "url2": "https://www.amhma.fr/store/Pneu-TUOVT-8-5x3-pour-Vsett-8-Zero-8-&-9-Z-8-pro-p417068514"
+        },
+        "tire_family": {
+          "url": "https://vsett-shop.com/product/vsett-9/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://e-watts.fr/produit/pneu-plein-vsett-8-vsett-9"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25,
+            "source_url": "https://www.glisseurbaine.com/1533-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_url_2": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 17.5,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 650,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://speedio.eu/vsett-9-9-electric-scooter",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/vsett-9",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/vsett-9",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://speedio.eu/vsett-9-9-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://www.gyro-phare.com/127-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8.5 x 3 pouces (gonflable, chambre à air)",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "source_url_2": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (ressort à l'avant, amortisseur hydraulique à l'arrière)",
+            "source_url": "https://www.glisseurbaine.com/1533-trottinette-electrique-vsett-9-52-v-175-ah-super.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://vsett.com/products/vsett-9-plus",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-vsett-9",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 9 est une trottinette électrique pliable équipée d'un moteur brushless de 650 W à l'arrière, alimenté par une batterie 52 V (13 à 17,5 Ah selon la version) et chaussée de pneus gonflables de 8.5 x 3 pouces. Elle dispose de freins à disque avant et arrière couplés à un frein moteur, d'amortisseurs avant et arrière, et sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 45 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-vsett-9-650w-52v.html",
+            "https://www.trottnshop.com/produit/trottinette-electrique-vsett-9/",
+            "https://www.glisseurbaine.com/1533-trottinette-electrique-vsett-9-52-v-175-ah-super.html"
+          ],
+          "_og_images": [
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-4428/2985/32/trottinette-electrique-vsett-9-pouces.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://e-watts.fr/produit/etrier-de-frein-vsett-9/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x3",
+            "source_url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+            "source_url_2": "https://www.amhma.fr/store/Pneu-TUOVT-8-5x3-pour-Vsett-8-Zero-8-&-9-Z-8-pro-p417068514",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "134mm",
+            "source_url": "https://trott2rue.fr/products/pneu-8-5x3-0-z8-pro-vsett-8-et-9",
+            "source_url_2": "https://e-watts.fr/produit/pneu-plein-vsett-8-vsett-9",
+            "source_type": "revendeur"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://vsett-shop.com/product/vsett-9/",
+            "source_url_2": "https://fixmytrott.com/products/vsett-9",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://e-watts.fr/produit/pneu-plein-vsett-8-vsett-9",
+            "source_url_2": "https://swiss-distribution.com/produit/pneu-plein-pour-trottinettes-electriques-vsett-9/",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 8",
+        "slug": "vsett-8",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 600,
+        "max_speed_private_kmh": 45,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "year": 2021,
+        "max_speed_kmh": 25,
+        "weight_kg": 21,
+        "suspension": "Double suspension avant et arrière à ressorts",
+        "ip_rating": "IP54",
+        "tire_size": "Avant 8,5 x 3,0 (chambre à air) / Arrière 8 x 2 (pneu plein)",
+        "foldable": true,
+        "wheel_inches": "8.5",
+        "brake_type": "drum",
+        "rim_diameter": "140mm",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Vsett 8 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W sur la roue arrière et d'une batterie 48 V (15,6 Ah à 21 Ah selon la version), avec double suspension, frein à tambour arrière et frein électrique ABS. Elle roule sur un pneu avant gonflable de 8,5 x 3 pouces et un pneu arrière plein de 8 pouces ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 45 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 8 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 8 : plaquettes, pneus 8.5x2, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 8, pieces vsett 8, disque frein vsett 8, plaquettes vsett 8, pneu vsett 8"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.glisseurbaine.com/1322-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur",
+          "url2": "https://e-watts.fr/produit/trottinette-electrique-vsett-8-lite-super"
+        },
+        "suspension": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://vsett-shop.com/product/vsett-8/",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://vsettscooters.com/pages/vsett-8",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://kissmywheels.ch/Magasin/e-trott/vsett-8/",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://wattiz.fr/trottinette/chambre-a-air-85x3-0-z8-pro-vsett",
+          "type": "revendeur",
+          "url2": "https://turn-shop.fr/produit/chambre-a-air-85x2-140mm-z8-pro-vsett-8-vsett-9/"
+        },
+        "tire_section": {
+          "url": "https://wattiz.fr/trottinette/chambre-a-air-85x3-0-z8-pro-vsett",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/en/produit/chambre-a-air-zero-9-et-8-hota/"
+        },
+        "tire_family": {
+          "url": "https://kissmywheels.ch/Magasin/e-trott/vsett-8/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://pro-urbain.fr/products/pneu-plein-8-2-5-vsett"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 21,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-vsett-8-lite-super",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.gyro-phare.com/124-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.gyro-phare.com/124-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-8/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.glisseurbaine.com/1535-trottinette-electrique-vsett-8-48-v-21ah-super.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Vsett-8-Lite-15-6-AH-600-W-Vert-et-Noir/a15825419/w-4",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-8/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-8/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "Avant 8,5 x 3,0 (chambre à air) / Arrière 8 x 2 (pneu plein)",
+            "source_url": "https://vsett-shop.com/product/vsett-8/",
+            "source_url_2": "https://scooter.guide/vsett-8-electric-scooter-review/",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière à ressorts",
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-8/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://scooter.guide/vsett-8-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Vsett-8-Lite-15-6-AH-600-W-Vert-et-Noir/a15825419/w-4",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2021,
+            "source_url": "https://www.glisseurbaine.com/1322-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/vsett/vsett-8-trottinette-electrique-vsett",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Vsett 8 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W sur la roue arrière et d'une batterie 48 V (15,6 Ah à 21 Ah selon la version), avec double suspension, frein à tambour arrière et frein électrique ABS. Elle roule sur un pneu avant gonflable de 8,5 x 3 pouces et un pneu arrière plein de 8 pouces ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 45 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://vsettscooters.com/pages/vsett-8",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.gyro-phare.com/124-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+            "https://www.glisseurbaine.com/1535-trottinette-electrique-vsett-8-48-v-21ah-super.html",
+            "https://www.trottnshop.com/produit/trottinette-electrique-vsett-8/"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://kissmywheels.ch/Magasin/e-trott/vsett-8/",
+            "source_url_2": "https://store-vsett.fr/trottinettes-electriques/1438-trottinette-electrique-vsett-8-lite-48v-156-ah-3701522008204.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://wattiz.fr/trottinette/chambre-a-air-85x3-0-z8-pro-vsett",
+            "source_url_2": "https://e-watts.fr/en/produit/chambre-a-air-zero-9-et-8-hota/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "140mm",
+            "source_url": "https://wattiz.fr/trottinette/chambre-a-air-85x3-0-z8-pro-vsett",
+            "source_url_2": "https://turn-shop.fr/produit/chambre-a-air-85x2-140mm-z8-pro-vsett-8-vsett-9/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://kissmywheels.ch/Magasin/e-trott/vsett-8/",
+            "source_url_2": "https://store-vsett.fr/trottinettes-electriques/1438-trottinette-electrique-vsett-8-lite-48v-156-ah-3701522008204.html",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://pro-urbain.fr/products/pneu-plein-8-2-5-vsett",
+            "source_url_2": "https://e-watts.fr/produit/pneu-plein-vsett-8-vsett-9",
+            "source_type": "revendeur"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }

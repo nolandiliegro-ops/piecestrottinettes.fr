@@ -28,6 +28,33 @@
       "meta_title": "Speedway Mini 4 Pro Lite - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Speedway Mini 4 Pro Lite : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "speedway mini 4 pro lite, pieces speedway mini 4 pro lite, disque frein speedway mini 4 pro lite, plaquettes speedway mini 4 pro lite, pneu speedway mini 4 pro lite"
+    },
+    {
+      "name": "Speedway Mini 4 Pro",
+      "slug": "speedway-mini-4-pro",
+      "voltage": 48,
+      "amperage": 13,
+      "power_watts": 500,
+      "max_speed_private_kmh": 40,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 16,
+      "suspension": "Avant hydraulique et arrière pneumatique",
+      "ip_rating": "IP54",
+      "tire_size": "8\" (chambre à air à l'avant, pneu plein à l'arrière)",
+      "foldable": true,
+      "wheel_inches": "8",
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "4",
+      "score_offroad": 23,
+      "description": "La Speedway Mini 4 Pro de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48V 13Ah. Elle roule sur des pneus de 8 pouces (chambre à air à l'avant, pneu plein à l'arrière), avec suspensions avant et arrière, un frein à tambour arrière et un frein électromagnétique. Elle est livrée bridée à 25 km/h, avec une vitesse maximale d'environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Speedway Mini 4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Speedway Mini 4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "speedway mini 4 pro, pieces speedway mini 4 pro, disque frein speedway mini 4 pro, plaquettes speedway mini 4 pro, pneu speedway mini 4 pro"
     }
   ]
 }

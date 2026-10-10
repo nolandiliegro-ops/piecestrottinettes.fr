@@ -1,8 +1,8 @@
-# Extraction Navee — 2026-10-09
+# Extraction Navee — 2026-10-10
 
-**0 PRÊT / 2 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
+**1 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 336644 tokens entrée, 2252 sortie, 16 recherches web.
+Coût mesuré : 293264 tokens entrée, 9380 sortie, 16 recherches web.
 
 ## Navee GT5 Max — MANQUE
 - Manque : disc_diameter, disc_pcd, disc_holes
@@ -45,3 +45,44 @@ Coût mesuré : 336644 tokens entrée, 2252 sortie, 16 recherches web.
 | brake_type | disc_mechanical | revendeur | https://fastride.fr/en/navee/5240-trottinette-electrique-navee-xt5-pro.html |  |
 | disc_diameter | 130 | constructeur | https://www.naveetech.com/navee-xt5-pro/ | https://riderguide.com/reviews/navee-xt5-pro-tested-review/ |
 | tire_family | pneumatic | constructeur | https://naveetech.fr/en/products/xt5-pro |  |
+
+## Navee GT5 Pro — PRÊT
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 46.8 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| amperage | 12 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| power_watts | 600 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| max_speed_private_kmh | 32 | constructeur | https://www.naveetech.com/navee-gt5-pro/ |  |
+| range_km | 75 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| max_load_kg | 130 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| weight_kg | 24.9 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro | https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4 |
+| suspension | Fourche avant + amortisseur (vérin) arrière | constructeur | https://www.naveetech.com/navee-gt5-pro/ |  |
+| ip_rating | IPX5 | constructeur | https://eu.naveetech.com/products/navee-gt5-pro |  |
+| tire_size | 10 pouces tubeless | constructeur | https://www.naveetech.com/navee-gt5-pro/ |  |
+| foldable | true | revendeur | https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4 |  |
+| wheel_inches | 10 | constructeur | https://www.naveetech.com/navee-gt5-pro/ |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://media.materiel.net/r900/products/MN0006366598.jpg |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://www.naveetech.com/fr/navee-gt5-pro/ |  |
+| tire_family | pneumatic | constructeur | https://www.naveetech.com/fr/navee-gt5-pro/ |  |
+
+## Navee ST5 Pro — MANQUE
+- Manque : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 46.8 | constructeur | https://eu.naveetech.com/products/st5-pro |  |
+| amperage | 10.2 | constructeur | https://eu.naveetech.com/products/st5-pro |  |
+| power_watts | 600 | constructeur | https://naveetech.fr/en/products/st5-pro |  |
+| max_speed_private_kmh | 40 | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
+| range_km | 75 | constructeur | https://naveetech.fr/en/products/st5-pro |  |
+| max_load_kg | 150 | constructeur | https://eu.naveetech.com/products/st5-pro |  |
+| weight_kg | 24.8 | constructeur | https://naveetech.fr/en/products/st5-pro | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html |
+| suspension | Avant et arrière : bras amortisseurs (Damping Arm) | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
+| ip_rating | IPX6 | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
+| tire_size | 10" tubeless (section non communiquée) | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
+| foldable | true | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_st5pron.html |  |
+| wheel_inches | 10 | constructeur | https://www.naveetech.com/navee-st5-pro/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://eu.naveetech.com/cdn/shop/files/20251219-1531481_1.webp?v=1780056013&width=2048 |  |
+| brake_type | disc_unknown_actuation | constructeur | https://eu.naveetech.com/products/st5-pro |  |
+| tire_family | pneumatic | constructeur | https://www.naveetech.com/fr/navee-st5-pro/ |  |

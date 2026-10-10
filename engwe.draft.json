@@ -515,6 +515,552 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Engwe Y1000",
+        "slug": "engwe-y1000",
+        "voltage": 52,
+        "amperage": 22.5,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 60,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 36.1,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10 × 3.0\" (pneu tout-terrain en caoutchouc plein)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "10",
+        "tire_section": "10x3.00",
+        "tire_family": "solid",
+        "score_offroad": 43,
+        "description": "L'Engwe Y1000 est une trottinette électrique pliable à double moteur (2 × 1200 W, soit 2400 W en crête) alimentée par une batterie lithium-ion 52 V 22,5 Ah (1170 Wh) annoncée jusqu'à 100 km d'autonomie. Elle roule sur des pneus tout-terrain pleins de 10 × 3,0\", avec suspensions avant et arrière, freins à disque hydrauliques et indice de protection IPX5. Sa vitesse est bridée à 25 km/h sur voie publique, pour 36,1 kg et 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Engwe Y1000 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Engwe Y1000 : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "engwe y1000, pieces engwe y1000, disque frein engwe y1000, plaquettes engwe y1000, pneu engwe y1000"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://engwe-bikes-eu.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://versus.com/en/engwe-y1000",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/9000946032"
+        },
+        "suspension": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000946032",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur",
+          "url2": "https://www.ma-trottinette-electrique.com/test-trottinette-electrique-pliable-avec-batterie-52-v-225-ah-nfc-et-bluetooth-navigation-intelligente-autonomie-jusqua-100-km-freins-hydrauliques-systeme-de-suspension-tout-terrain-y1000"
+        },
+        "rim_diameter": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/9000946032"
+        },
+        "tire_section": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/9000946032"
+        },
+        "tire_family": {
+          "url": "https://engwe.com/fr/products/produits-e-scooter-pour-adultes-y1000",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 36.1,
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 22.5,
+            "source_url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-engwe-y1000-10-pouces-double-moteur-freins-hydrauliques-noire/p/V99122318",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://engwe-bikes-eu.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://versus.com/en/engwe-y1000",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-engwe-y1000-10-pouces-double-moteur-freins-hydrauliques-noire/p/V99122318",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 × 3.0\" (pneu tout-terrain en caoutchouc plein)",
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-engwe-y1000-10-pouces-double-moteur-freins-hydrauliques-noire/p/V99122318",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.decathlon.fr/p/mp/engwe/trottinette-electrique-engwe-y1000-avec-freins-hydrauliques-et-double-moteur/_/R-p-2bfadf9d-9e5b-4800-a384-8fc7b0b618e3",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000946032",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-adulte/f-1214801-aacqd16164.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://versus.com/en/engwe-y1000",
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Engwe Y1000 est une trottinette électrique pliable à double moteur (2 × 1200 W, soit 2400 W en crête) alimentée par une batterie lithium-ion 52 V 22,5 Ah (1170 Wh) annoncée jusqu'à 100 km d'autonomie. Elle roule sur des pneus tout-terrain pleins de 10 × 3,0\", avec suspensions avant et arrière, freins à disque hydrauliques et indice de protection IPX5. Sa vitesse est bridée à 25 km/h sur voie publique, pour 36,1 kg et 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr.engwe.eu/produit/scooter-%C3%A9lectrique-Engwe-Y1000/",
+            "source_url_2": "https://engwe.com/products/e-scooter-for-adults-y1000",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000946032",
+            "https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-engwe-y1000-10-pouces-double-moteur-freins-hydrauliques-noire/p/V99122318",
+            "https://www.decathlon.fr/p/mp/engwe/trottinette-electrique-engwe-y1000-avec-freins-hydrauliques-et-double-moteur/_/R-p-2bfadf9d-9e5b-4800-a384-8fc7b0b618e3"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.ma-trottinette-electrique.com/test-trottinette-electrique-pliable-avec-batterie-52-v-225-ah-nfc-et-bluetooth-navigation-intelligente-autonomie-jusqua-100-km-freins-hydrauliques-systeme-de-suspension-tout-terrain-y1000",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "10",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://engwe.com/fr/products/produits-e-scooter-pour-adultes-y1000",
+            "source_url_2": "https://www.boulanger.com/ref/9000946032",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Engwe Y700",
+        "slug": "engwe-y700",
+        "voltage": 48,
+        "amperage": 18.2,
+        "power_watts": 1200,
+        "max_speed_private_kmh": 45,
+        "range_km": 85,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 31.7,
+        "suspension": "Suspension à ressorts avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10 x 3,0\" (pneu urbain caoutchouc plein)",
+        "foldable": true,
+        "wheel_inches": "10",
+        "source_image_urls": [
+          "http://fr.engwe.com/cdn/shop/files/01_9ae09995-eb71-4681-8a48-dc482b36ab2f.jpg?crop=center&height=1200&v=1770274397&width=1200"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "tire_section": "10x3.00",
+        "tire_family": "solid",
+        "score_offroad": 43,
+        "description": "L'Engwe Y700 est une trottinette électrique pliable à moteur moyeu arrière sans balais (1200 W en crête, couple de 28 Nm) alimentée par une batterie lithium-ion 48 V 18,2 Ah pour jusqu'à 85 km d'autonomie annoncée. Elle roule sur des pneus pleins 10 x 3,0\" avec suspensions à ressorts avant et arrière et freins à disque mécaniques de 140 mm ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Engwe Y700 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Engwe Y700 : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "engwe y700, pieces engwe y700, disque frein engwe y700, plaquettes engwe y700, pneu engwe y700"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://engwe-bikes-eu.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-adulte-engwe-y700-autonomie-de-85-km-nouveaute-2026/d98ace3d-e000-4503-b17b-1471ec76f288/c1",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/9000946031"
+        },
+        "suspension": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://fr.engwe.com/cdn/shop/files/01_9ae09995-eb71-4681-8a48-dc482b36ab2f.jpg?crop=center&height=1200&v=1770274397&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur",
+          "url2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1"
+        },
+        "tire_section": {
+          "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+          "type": "constructeur",
+          "url2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1"
+        },
+        "tire_family": {
+          "url": "https://engwe.com/products/products-e-scooter-for-adults-y700/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 31.7,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-adulte-engwe-y700-autonomie-de-85-km-nouveaute-2026/d98ace3d-e000-4503-b17b-1471ec76f288/c1",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1200,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://engwe-bikes-eu.com/products/e-scooter-for-adults-y700",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 85,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 3,0\" (pneu urbain caoutchouc plein)",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension à ressorts avant et arrière",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-adulte-engwe-y700-autonomie-de-85-km-nouveaute-2026/d98ace3d-e000-4503-b17b-1471ec76f288/c1",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.boulanger.com/ref/9000946031",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-adulte-engwe-y700-autonomie-de-85-km-nouveaute-2026/d98ace3d-e000-4503-b17b-1471ec76f288/c1",
+            "source_url_2": "https://www.lelezard.com/communique-22140005.html",
+            "source_type": "distributeur"
+          },
+          "description_fr": {
+            "value": "L'Engwe Y700 est une trottinette électrique pliable à moteur moyeu arrière sans balais (1200 W en crête, couple de 28 Nm) alimentée par une batterie lithium-ion 48 V 18,2 Ah pour jusqu'à 85 km d'autonomie annoncée. Elle roule sur des pneus pleins 10 x 3,0\" avec suspensions à ressorts avant et arrière et freins à disque mécaniques de 140 mm ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000946031",
+            "https://www.decathlon.fr/p/mp/trottinette-electrique-adulte-engwe-y700-autonomie-de-85-km-nouveaute-2026/d98ace3d-e000-4503-b17b-1471ec76f288/c1",
+            "https://fr.engwe.com/products/e-scooter-for-adults-y700"
+          ],
+          "_og_images": [
+            "http://fr.engwe.com/cdn/shop/files/01_9ae09995-eb71-4681-8a48-dc482b36ab2f.jpg?crop=center&height=1200&v=1770274397&width=1200"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://fr.engwe.com/products/e-scooter-for-adults-y700",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://engwe.com/products/products-e-scooter-for-adults-y700/",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-engwe-y700-batterie-48-v-18-2-ah-deverrouillage-nfc/2a712f41-5513-4779-acf0-0fc6d444b392/c1",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-10": {
+      "demandes": 2,
+      "ajoutes": 2
+    }
+  }
 }
