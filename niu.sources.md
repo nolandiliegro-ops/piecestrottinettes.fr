@@ -1,11 +1,15 @@
 # Extraction NIU — 2026-10-10
 
-**4 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**4 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
+⚠️ **4 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 222743 tokens entrée, 4606 sortie, 17 recherches web.
 
 ## NIU KQi3 Pro — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 9.5 x 2.5 pouces (241 x 64 mm), tubeless », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
+- Trouvé mais hors référentiel (non importé) : tire_section=9.5x2.50
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pneu-plein-niu-kqi3-sport-pro-max/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -31,7 +35,10 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://shopeu.niu.com/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version |  |
 
 ## NIU KQi Air — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 9.5 x 2.3 pouces (241 x 58 mm), tubeless », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=9.5x2.3
+- Une seule source, NON importé : rim_diameter=6.1 (https://www.scooterworks.com/products/tire-niu-kqi-100p)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -53,7 +60,9 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://global.niu.com/fr/product/KQi-Air |  |
 
 ## NIU KQi3 Max — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 9,5 x 2,5 pouces (tubeless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
+- Trouvé mais hors référentiel (non importé) : tire_section=9.5x2.5
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-niu/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -79,7 +88,9 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | tire_family | pneumatic | constructeur | https://shopeu.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults-eu-version |  |
 
 ## NIU KQi 300X — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 10.5 x 2.5 pouces (267 x 64 mm), tubeless auto-réparant », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=10.5x2.50
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -98,4 +109,5 @@ Coût mesuré : 265827 tokens entrée, 12988 sortie, 16 recherches web.
 | wheel_inches | 10.5 | constructeur | https://shop.niu.com/products/niu-kqi-300x-electric-scooter |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | http://shopeu.niu.com/cdn/shop/files/K300-X.jpg?v=1763379076 |  |
 | brake_type | disc_mechanical | site_test | https://riderguide.com/ridefinder/niu-kqi-300x/ |  |
+| rim_diameter | 7 | revendeur | https://escootervision.eu/en/products/reifen-fur-niu-kqi-300x-300p-cst-10-5x2-5-7-tubeless-oem-ersatz | https://www.scooterworks.com/products/oem-cst-tubeless-escooter-tire-10-5-2-5-niu-kqi300p-h0701006 |
 | tire_family | pneumatic | constructeur | https://global.niu.com/fr_be/product/kqi-300 |  |

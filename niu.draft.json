@@ -119,9 +119,14 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "wheelMissing": [
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=9.5x2.50"
+      ],
       "proposals": [
         {
           "key": "solid_conversion",
@@ -258,10 +263,10 @@
             "source_type": "revendeur"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "9.5x2.50",
+            "source_url": "https://www.wee-bot.com/products/pneu-tubeless-trottinette-electrique-niu-kqi3-et-kqi2",
+            "source_url_2": "https://www.scooterworks.com/products/tire-niu-kqi3-pro",
+            "source_type": "revendeur"
           },
           "caliper_family": {
             "value": "xiaomi_mi4",
@@ -287,6 +292,15 @@
             "source_url_2": "https://www.amazon.com/2-5-6-1-NIU-Electric-9-5x2-5-6-1-Cross-country/dp/B0CNGNF67R",
             "source_type": "revendeur"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "9.5x2.50",
+          "rim_diameter": "6.1",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -393,11 +407,23 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=9.5x2.3"
+      ],
       "proposals": [],
-      "unconfirmed": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.1",
+          "url": "https://www.scooterworks.com/products/tire-niu-kqi-100p"
+        }
+      ],
       "ready": true,
       "raw": {
         "specs": {
@@ -523,14 +549,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "9.5x2.3",
+            "source_url": "https://niucanada.com/products/niu-95x23-tubeless-tire-kqi-air",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.scooterworks.com/products/tire-niu-kqi-100p"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.1",
+            "source_url": "https://www.scooterworks.com/products/tire-niu-kqi-100p",
+            "source_type": "revendeur",
+            "source_url_2": null
           },
           "rim_type": {
             "value": null,
@@ -548,6 +576,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "9.5x2.3",
+          "rim_diameter": "6.1",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -670,9 +707,14 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "wheelMissing": [
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=9.5x2.5"
+      ],
       "proposals": [
         {
           "key": "solid_conversion",
@@ -808,10 +850,10 @@
             "source_type": "revendeur"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "9.5x2.5",
+            "source_url": "https://www.wee-bot.com/products/pneu-tubeless-trottinette-electrique-niu-kqi3-et-kqi2",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.scooterworks.com/products/tire-niu-kqi3-pro-h0701001"
           },
           "rim_diameter": {
             "value": "6.1",
@@ -838,6 +880,15 @@
             "source_type": "revendeur"
           }
         }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "9.5x2.5",
+          "rim_diameter": "6.1",
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -863,6 +914,7 @@
           "http://niucanada.com/cdn/shop/files/NIU_KQI300X_DUAL-SUSPENSION_ADULT_SCOOTER_CANADA_US_MODEL_TORONTO_MONTREAL_VANCOUVER_800_LEFT_BLACK.png?v=1772815542"
         ],
         "brake_type": "disc_mechanical",
+        "rim_diameter": "7",
         "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "La NIU KQi 300X est équipée d'un moteur arrière de 500 W nominaux (1000 W en pointe) et d'une batterie 48 V 13 Ah (608 Wh) annoncée pour jusqu'à 60 km d'autonomie. Elle roule sur des pneus tubeless auto-réparants de 10,5 pouces avec fourche avant hydraulique, double frein à disque et freinage régénératif, et sa vitesse est bridée à 25 km/h en version française. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -932,6 +984,11 @@
           "url": "https://riderguide.com/ridefinder/niu-kqi-300x/",
           "type": "site_test"
         },
+        "rim_diameter": {
+          "url": "https://escootervision.eu/en/products/reifen-fur-niu-kqi-300x-300p-cst-10-5x2-5-7-tubeless-oem-ersatz",
+          "type": "revendeur",
+          "url2": "https://www.scooterworks.com/products/oem-cst-tubeless-escooter-tire-10-5-2-5-niu-kqi300p-h0701006"
+        },
         "tire_family": {
           "url": "https://global.niu.com/fr_be/product/kqi-300",
           "type": "constructeur"
@@ -943,9 +1000,14 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=10.5x2.50"
+      ],
       "proposals": [],
       "unconfirmed": [],
       "ready": true,
@@ -1073,14 +1135,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "10.5x2.50",
+            "source_url": "https://www.scooterworks.com/products/oem-cst-tubeless-escooter-tire-10-5-2-5-niu-kqi300p-h0701006",
+            "source_type": "revendeur",
+            "source_url_2": "https://escootervision.eu/en/products/reifen-fur-niu-kqi-300x-300p-cst-10-5x2-5-7-tubeless-oem-ersatz"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "7",
+            "source_url": "https://escootervision.eu/en/products/reifen-fur-niu-kqi-300x-300p-cst-10-5x2-5-7-tubeless-oem-ersatz",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.scooterworks.com/products/oem-cst-tubeless-escooter-tire-10-5-2-5-niu-kqi300p-h0701006"
           },
           "rim_type": {
             "value": null,
@@ -1098,6 +1162,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10.5x2.50",
+          "rim_diameter": "7",
+          "tire_family": "pneumatic"
         }
       }
     }

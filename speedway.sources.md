@@ -1,10 +1,14 @@
 # Extraction Speedway — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 86241 tokens entrée, 2638 sortie, 8 recherches web.
 
 ## Speedway Mini 4 Pro Lite — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter (texte relevé : « 200x50 (8x2") », non exploitable seul)
+- Trouvé mais hors référentiel (non importé) : rim_diameter=94mm
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -23,6 +27,8 @@ Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 | wheel_inches | 8 | revendeur | https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233 |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette__lectrique_Speedway_Mini_4_Pro_Lite__Pas_cher-916331.jpg?v=1754044263 |  |
 | brake_type | drum | distributeur | https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf |  |
+| tire_section | 8x2 | revendeur | https://www.wee-bot.com/products/pneu-avant-speedway-mini-4 | https://blog.gyro-phare.com/produit/pneu-plein-8x2-0-diametre-94mm-futecher-et-speedway-mini-4-pro/ |
+| tire_family | pneumatic | revendeur | https://fixwheel.fr/products/speedway-mini-4-pro-lite-master |  |
 
 ## Speedway 5 — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
@@ -69,6 +75,8 @@ Coût mesuré : 294885 tokens entrée, 12287 sortie, 15 recherches web.
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_mini_4_pro_pas_cher-778527.jpg?v=1734952772 |  |
 | brake_type | drum | distributeur | https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf |  |
 | rim_diameter | 4 | revendeur | https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html | https://trott2rue.fr/products/chambre-a-air-speedway-mini4-pro-200x50-90x90 |
+| tire_section | 8x2 | revendeur | https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro | https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html |
+| tire_family | pneumatic | revendeur | https://www.wee-bot.com/products/pneu-avant-speedway-mini-4 |  |
 
 ## Speedway Leger Lite — MANQUE
 - Manque : source_image_urls

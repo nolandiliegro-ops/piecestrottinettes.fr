@@ -1,8 +1,10 @@
 # Extraction Aprilia — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 200200 tokens entrée, 2767 sortie, 11 recherches web.
 
 ## Aprilia eSR1 — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
@@ -22,9 +24,13 @@ Coût mesuré : 129161 tokens entrée, 1683 sortie, 9 recherches web.
 | wheel_inches | 10 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg |  |
 | brake_type | ebs_front_disc_rear | revendeur | https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php |  |
+| rim_diameter | 6.5 | revendeur | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/ | https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1 |
+| tire_section | 10x2.50 | revendeur | https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/ | https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1 |
 | tire_family | pneumatic | revendeur | https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/ |  |
 
 ## Aprilia eSR2 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter
+- Une seule source, NON importé : rim_diameter=6.5 (https://trotetunshop.fr/products/pneu-10x2-125)
 - Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://weerda.fr/pieces-detachees-weerda/1771-Pneu-Plein-Increvable-10-Pouces-10x2-125-UrbanGlide-Ride-100XS-100S-Aprilia-Esr2-Trottinette-Electrique.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |

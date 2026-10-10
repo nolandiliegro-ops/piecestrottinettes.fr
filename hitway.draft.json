@@ -20,6 +20,7 @@
           "http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767"
         ],
         "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "La Hitway H9 est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 800 W) et d'une batterie 48 V de 15,6 à 27 Ah selon la version. Elle roule sur des pneus de 10 pouces, avec double suspension avant et arrière et freins à disque avant et arrière, et propose trois modes de vitesse (10, 15 et 25 km/h). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Hitway H9 - Pièces détachées | PiècesTrottinettes.fr",
@@ -75,6 +76,10 @@
         "brake_type": {
           "url": "https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter",
           "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+          "type": "constructeur"
         }
       },
       "missing": [],
@@ -83,12 +88,13 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [
-        "rim_diameter=6.5",
-        "tire_section=10x2.70"
-      ],
+      "offVocab": [],
       "proposals": [],
       "unconfirmed": [
         {
@@ -246,10 +252,10 @@
             "source_type": "inconnu"
           },
           "tire_family": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "pneumatic",
+            "source_url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/hitway-h9-trottinette-electrique-10pc-91989370"
           },
           "solid_conversion": {
             "value": null,
@@ -257,6 +263,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -353,6 +368,10 @@
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -488,13 +507,11 @@
           "tire_section": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "rim_diameter": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "rim_type": {
@@ -515,6 +532,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     }

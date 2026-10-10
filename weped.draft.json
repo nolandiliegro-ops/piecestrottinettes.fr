@@ -93,6 +93,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -243,6 +247,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -450,6 +463,7 @@
           "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348"
         ],
         "brake_type": "disc_hydraulic",
+        "rim_diameter": "6.5",
         "tire_family": "pneumatic",
         "score_offroad": 23,
         "description": "La Weped SSGT est une trottinette électrique sportive à double moteur brushless de 20 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah et des contrôleurs Kelly 7218s. Elle repose sur des pneus go-kart de 130 mm, des freins hydrauliques (ou à tambour) et des suspensions avant et arrière ; sa vitesse atteint 85 à 95 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -507,6 +521,11 @@
           "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
           "type": "distributeur"
         },
+        "rim_diameter": {
+          "url": "https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-pmt-stradale-130-40-65-radial-weped-ss-gt"
+        },
         "tire_family": {
           "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
           "type": "distributeur"
@@ -518,9 +537,14 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=130/40"
+      ],
       "proposals": [],
       "unconfirmed": [],
       "ready": true,
@@ -648,14 +672,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "130/40",
+            "source_url": "https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html",
+            "source_url_2": "https://e-watts.fr/produit/pneu-pmt-stradale-130-40-65-radial-weped-ss-gt",
+            "source_type": "revendeur"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html",
+            "source_url_2": "https://e-watts.fr/produit/pneu-pmt-stradale-130-40-65-radial-weped-ss-gt",
+            "source_type": "revendeur"
           },
           "rim_type": {
             "value": null,
@@ -673,6 +699,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "130/40",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -775,9 +810,14 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=130/40"
+      ],
       "proposals": [],
       "unconfirmed": [
         {
@@ -925,10 +965,10 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "130/40",
+            "source_url": "https://www.wee-bot.com/products/pneu-pmt-trottinette-electrique-weped",
+            "source_url_2": "https://e-watts.fr/produit/pneu-pmt-stradale-130-40-65-radial-weped-ss-gt",
+            "source_type": "revendeur"
           },
           "tire_family": {
             "value": "pneumatic",
@@ -942,6 +982,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "130/40",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     }

@@ -1,10 +1,13 @@
 # Extraction SoFlow — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 198849 tokens entrée, 2342 sortie, 11 recherches web.
 
 ## SoFlow S05 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -23,7 +26,9 @@ Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 | tire_family | pneumatic | revendeur | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-adulte-soflow-s05-9-48-v-78-ah-noire/p/E75985966 |  |
 
 ## SoFlow SO4 Pro — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter (texte relevé : « 10 x 2.125 », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Une seule source, NON importé : rim_diameter=6.5 (https://yourscooter.de/collections/so4-pro)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -40,4 +45,5 @@ Coût mesuré : 396254 tokens entrée, 13408 sortie, 20 recherches web.
 | wheel_inches | 10 | revendeur | https://www.galaxus.ch/fr/s3/product/soflow-so4-pro-20kmh-500w-trottinettes-electriques-13519217 |  |
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public |  |
 | brake_type | disc_mechanical | constructeur | https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual |  |
+| tire_section | 10x2.125 | revendeur | https://escootervision.eu/en/products/soflow-s04-pro-gen2-reifen-10x2-125-zoll-57-152-v2 | https://kissmywheels.ch/pieces-detachees/chambre-a-air-10-pouces-trottinette-soflow-so4-pro-48v/ |
 | tire_family | pneumatic | revendeur | https://www.daydeal.ch/fr/deal/scooter-electrique-soflow-so4-pro-6737 |  |

@@ -24,10 +24,12 @@
           "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4694519717.png"
         ],
         "brake_type": "drum",
+        "tire_section": "8x2",
+        "tire_family": "pneumatic",
         "score_offroad": 23,
         "description": "La Speedway Mini 4 Pro Lite de Minimotors est équipée d'un moteur de 350 W dans la roue arrière et d'une batterie 36 V 10 Ah pour environ 30 km d'autonomie. Elle roule sur des pneus 8 pouces (200x50) avec double suspension, frein à tambour arrière et frein électrique, pour un poids d'environ 16 kg ; sa vitesse est bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Speedway Mini 4 Pro Lite - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Speedway Mini 4 Pro Lite : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Speedway Mini 4 Pro Lite : plaquettes, pneus 8x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "speedway mini 4 pro lite, pieces speedway mini 4 pro lite, disque frein speedway mini 4 pro lite, plaquettes speedway mini 4 pro lite, pneu speedway mini 4 pro lite"
       },
       "sources": {
@@ -91,13 +93,27 @@
         "brake_type": {
           "url": "https://www.full-watt.fr/wp-content/uploads/2021/07/fullwatt-speedway-super-mini-4-pro-notice-manuel-utilisation.pdf",
           "type": "distributeur"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-avant-speedway-mini-4",
+          "type": "revendeur",
+          "url2": "https://blog.gyro-phare.com/produit/pneu-plein-8x2-0-diametre-94mm-futecher-et-speedway-mini-4-pro/"
+        },
+        "tire_family": {
+          "url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+          "type": "revendeur"
         }
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "rim_diameter=94mm"
+      ],
       "proposals": [],
       "unconfirmed": [],
       "ready": true,
@@ -225,14 +241,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "8x2",
+            "source_url": "https://www.wee-bot.com/products/pneu-avant-speedway-mini-4",
+            "source_url_2": "https://blog.gyro-phare.com/produit/pneu-plein-8x2-0-diametre-94mm-futecher-et-speedway-mini-4-pro/",
+            "source_type": "revendeur"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "94mm",
+            "source_url": "https://blog.gyro-phare.com/produit/pneu-speedway-pneu-speedway-mini4-pro-200x50-94-renforce/",
+            "source_url_2": "https://www.wattiz.fr/fr/s/645/speedway-mini-4-pro-lite",
+            "source_type": "revendeur"
           },
           "rim_type": {
             "value": null,
@@ -240,15 +258,25 @@
             "source_type": "inconnu"
           },
           "tire_family": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "pneumatic",
+            "source_url": "https://fixwheel.fr/products/speedway-mini-4-pro-lite-master",
+            "source_url_2": "https://dualtron-store.com/index.php/produit/chambre-a-air-classique-pour-speedway-min-4/",
+            "source_type": "revendeur"
           },
           "solid_conversion": {
             "value": null,
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "8x2",
+          "rim_diameter": "94mm",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -560,10 +588,12 @@
         ],
         "brake_type": "drum",
         "rim_diameter": "4",
+        "tire_section": "8x2",
+        "tire_family": "pneumatic",
         "score_offroad": 23,
         "description": "La Speedway Mini 4 Pro de Minimotors est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie 48V 13Ah. Elle roule sur des pneus de 8 pouces (chambre à air à l'avant, pneu plein à l'arrière), avec suspensions avant et arrière, un frein à tambour arrière et un frein électromagnétique. Elle est livrée bridée à 25 km/h, avec une vitesse maximale d'environ 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Speedway Mini 4 Pro - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Speedway Mini 4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Speedway Mini 4 Pro : plaquettes, pneus 8x2, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "speedway mini 4 pro, pieces speedway mini 4 pro, disque frein speedway mini 4 pro, plaquettes speedway mini 4 pro, pneu speedway mini 4 pro"
       },
       "sources": {
@@ -628,10 +658,20 @@
           "url": "https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html",
           "type": "revendeur",
           "url2": "https://trott2rue.fr/products/chambre-a-air-speedway-mini4-pro-200x50-90x90"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/pneu-avant-speedway-mini-4",
+          "type": "revendeur"
         }
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -771,20 +811,31 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "8x2",
+            "source_url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+            "source_url_2": "https://www.wattiz.fr/fr/chambres-a-air/26277-chambre-a-air-speedway-mini4-pro-200x50-90x90-3760351011175.html",
+            "source_type": "revendeur"
           },
           "tire_family": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/pneu-avant-speedway-mini-4",
+            "source_url_2": "https://escooternerds.com/speedway-mini-4-pro-review/",
+            "source_type": "revendeur"
           },
           "solid_conversion": {
             "value": null,
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "8x2",
+          "rim_diameter": "94mm",
+          "tire_family": "pneumatic"
         }
       }
     },

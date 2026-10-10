@@ -21,11 +21,13 @@
           "https://media.rueducommerce.fr/rd/products/90e/90e2fe5550971bbfe8979849e5009edc1f45195b.jpg"
         ],
         "brake_type": "ebs_front_disc_rear",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.50",
         "tire_family": "pneumatic",
         "score_offroad": 35,
         "description": "L'Aprilia eSR1 est une trottinette électrique pliable à cadre en alliage de magnésium, équipée d'un moteur brushless de 350 W dans la roue avant et d'une batterie amovible 36 V 7,8 Ah (280 Wh). Elle roule sur des pneus tubeless de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, pour 15,5 kg et une charge maximale de 100 kg. Elle est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Aprilia eSR1 - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Aprilia eSR1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Aprilia eSR1 : plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "aprilia esr1, pieces aprilia esr1, disque frein aprilia esr1, plaquettes aprilia esr1, pneu aprilia esr1"
       },
       "sources": {
@@ -82,6 +84,16 @@
           "url": "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/aprilia/trottinette-electrique-aprilia--aprilia-e-scooter-esr1--50757038.php",
           "type": "revendeur"
         },
+        "rim_diameter": {
+          "url": "https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/",
+          "type": "revendeur",
+          "url2": "https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1"
+        },
+        "tire_section": {
+          "url": "https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/",
+          "type": "revendeur",
+          "url2": "https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1"
+        },
         "tire_family": {
           "url": "https://blog.gyro-phare.com/produit/trottinette-electrique-aprilia-esr1/",
           "type": "revendeur"
@@ -93,6 +105,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -223,14 +236,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "10x2.50",
+            "source_url": "https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/",
+            "source_type": "revendeur",
+            "source_url_2": "https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/aprilia-ricambi-e-scooter/motore-originale-completo-di-pneumatico-per-aprilia-esr1/",
+            "source_type": "revendeur",
+            "source_url_2": "https://biciemonopattini.it/products/pneumatico-tubeless-10-2-5-pollici-per-monopattini-elettrici-ducati-pro-ii-pro-iii-aprilia-esr1"
           },
           "rim_type": {
             "value": null,
@@ -250,16 +265,14 @@
           }
         }
       },
-      "photo_pass": {
+      "tire_pass": {
         "model": "claude-sonnet-5-5",
         "date": "2026-10-10",
-        "pages": [
-          "https://www.decathlon.fr/p/mp/aprilia/trottinette-electrique-adulte-esr1-batterie-amovible-noir-et-rouge/_/R-p-5af3757a-9346-4db7-a870-0a524a0d86a5",
-          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_esr1.html",
-          "https://www.cdiscount.com/le-sport/mobilite-urbaine/aprilia-trottinette-electrique-pliable-adulte-es/f-1214801-apr8052870486509.html",
-          "https://www.rueducommerce.fr/p/r24060027939.html"
-        ],
-        "og": 2
+        "found": {
+          "tire_section": "10x2.50",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -356,6 +369,9 @@
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -366,7 +382,13 @@
           "url": "https://weerda.fr/pieces-detachees-weerda/1771-Pneu-Plein-Increvable-10-Pouces-10x2-125-UrbanGlide-Ride-100XS-100S-Aprilia-Esr2-Trottinette-Electrique.html"
         }
       ],
-      "unconfirmed": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://trotetunshop.fr/products/pneu-10x2-125"
+        }
+      ],
       "ready": true,
       "raw": {
         "specs": {
@@ -498,9 +520,10 @@
             "source_type": "revendeur"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://trotetunshop.fr/products/pneu-10x2-125",
+            "source_url_2": null,
+            "source_type": "revendeur"
           },
           "rim_type": {
             "value": null,
@@ -521,16 +544,14 @@
           }
         }
       },
-      "photo_pass": {
+      "tire_pass": {
         "model": "claude-sonnet-5-5",
         "date": "2026-10-10",
-        "pages": [
-          "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4",
-          "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_apresr2cl.html",
-          "https://www.feuvert.fr/trottinettes-electriques/aprilia-trottinette-electrique-esr2-aprilia/p614322.html",
-          "https://www.pixmania.com/fr/fr/aprilia-esr2-25-kmh-multicolore-232859.html"
-        ],
-        "og": 1
+        "found": {
+          "tire_section": "10x2.125",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
+        }
       }
     },
     {

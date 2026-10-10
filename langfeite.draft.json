@@ -89,12 +89,13 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [
-        "rim_diameter=6",
-        "tire_section=9x3.0"
-      ],
+      "offVocab": [],
       "proposals": [],
       "unconfirmed": [
         {
@@ -258,6 +259,15 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "9x3.0",
+          "rim_diameter": "6",
+          "tire_family": "pneumatic"
+        }
       }
     },
     {
@@ -358,11 +368,23 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
-      "offVocab": [],
+      "offVocab": [
+        "tire_section=90/55"
+      ],
       "proposals": [],
-      "unconfirmed": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=2"
+        }
+      ],
       "ready": true,
       "raw": {
         "specs": {
@@ -488,14 +510,16 @@
             "source_type": "inconnu"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=2",
+            "source_type": "revendeur",
+            "source_url_2": null
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "90/55",
+            "source_url": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=2",
+            "source_type": "revendeur",
+            "source_url_2": null
           },
           "rim_type": {
             "value": null,
@@ -513,6 +537,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "90/55",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     }

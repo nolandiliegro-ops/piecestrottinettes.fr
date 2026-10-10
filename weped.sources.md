@@ -1,10 +1,13 @@
 # Extraction Weped — 2026-10-10
 
-**3 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**3 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 280342 tokens entrée, 10945 sortie, 18 recherches web.
+⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 117193 tokens entrée, 2444 sortie, 12 recherches web.
 
 ## Weped Fold 3 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 11 pouces tubeless », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -36,7 +39,9 @@ Coût mesuré : 280342 tokens entrée, 10945 sortie, 18 recherches web.
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-sonic-x-electric-2.jpg |  |
 
 ## Weped SSGT — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « Pneu go-kart 130 mm », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=130/40
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -52,10 +57,13 @@ Coût mesuré : 280342 tokens entrée, 10945 sortie, 18 recherches web.
 | foldable | true | revendeur | https://pietechnologie.com/collections/trottinette-electrique-weped |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348 |  |
 | brake_type | disc_hydraulic | distributeur | https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html |  |
+| rim_diameter | 6.5 | revendeur | https://fastride.fr/en/pneus-pmt/951-pneu-pmt-weped-ss-et-gt-13040r65-stradale-radial.html | https://e-watts.fr/produit/pneu-pmt-stradale-130-40-65-radial-weped-ss-gt |
 | tire_family | pneumatic | distributeur | https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html |  |
 
 ## Weped SS-T — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 130/40-6,5 (tubeless) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=130/40
 - Une seule source, NON importé : disc_diameter=160 (https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html)
 
 | Clé | Valeur | Type de source | Source | 2e source |

@@ -1,12 +1,15 @@
 # Extraction Zwheel — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 295023 tokens entrée, 11015 sortie, 18 recherches web.
+⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 206723 tokens entrée, 2920 sortie, 12 recherches web.
 
 ## Zwheel ZCougar — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
-- Une seule source, NON importé : disc_diameter=140 (https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4)
+- Une seule source, NON importé : disc_diameter=140 (https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4) · rim_diameter=6.5 (https://isgsafety.com/producto/neumatico-tubeless-10x27-65/) · tire_section=10x2.70 (https://isgsafety.com/producto/neumatico-tubeless-10x27-65/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|
@@ -40,4 +43,6 @@ Coût mesuré : 295023 tokens entrée, 11015 sortie, 18 recherches web.
 | wheel_inches | 10 | revendeur | https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642 |  |
 | brake_type | disc_unknown_actuation | revendeur | https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge |  |
+| rim_diameter | 6.5 | revendeur | https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero | https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/ |
+| tire_section | 10x2.70 | revendeur | https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero | https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/ |
 | tire_family | pneumatic | revendeur | https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge |  |

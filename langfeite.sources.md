@@ -1,12 +1,14 @@
 # Extraction Langfeite — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 200746 tokens entrée, 2154 sortie, 11 recherches web.
 
 ## Langfeite Coupé — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
-- Trouvé mais hors référentiel (non importé) : rim_diameter=6 · tire_section=9x3.0
 - Une seule source, NON importé : rim_diameter=6 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3) · tire_section=9x3.0 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -26,7 +28,10 @@ Coût mesuré : 325649 tokens entrée, 11522 sortie, 18 recherches web.
 | tire_family | pneumatic | revendeur | https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3 |  |
 
 ## Langfeite GT2 Mini — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+- Trouvé mais hors référentiel (non importé) : tire_section=90/55
+- Une seule source, NON importé : rim_diameter=6.5 (https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=2)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

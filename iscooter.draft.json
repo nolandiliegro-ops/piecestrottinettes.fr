@@ -114,6 +114,10 @@
       "discMissing": [
         "disc_pcd"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -268,15 +272,22 @@
           "tire_section": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "rim_diameter": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "solid"
         }
       }
     },
@@ -387,6 +398,10 @@
       "missing": [],
       "discMissing": [
         "disc_pcd"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -544,6 +559,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "solid"
         }
       }
     }

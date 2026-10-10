@@ -79,6 +79,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -88,6 +92,16 @@
           "key": "disc_diameter",
           "value": 140,
           "url": "https://zwheel-shop.com/piezas-de-repuesto/210-disco-de-freno-140mm-t4"
+        },
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://isgsafety.com/producto/neumatico-tubeless-10x27-65/"
+        },
+        {
+          "key": "tire_section",
+          "value": "10x2.70",
+          "url": "https://isgsafety.com/producto/neumatico-tubeless-10x27-65/"
         }
       ],
       "ready": true,
@@ -212,14 +226,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "10x2.70",
+            "source_url": "https://isgsafety.com/producto/neumatico-tubeless-10x27-65/",
+            "source_type": "revendeur",
+            "source_url_2": null
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://isgsafety.com/producto/neumatico-tubeless-10x27-65/",
+            "source_type": "revendeur",
+            "source_url_2": null
           },
           "rim_type": {
             "value": null,
@@ -237,6 +253,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.70",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -260,11 +285,13 @@
           "http://afscooters.com/cdn/shop/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642"
         ],
         "brake_type": "disc_unknown_actuation",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.70",
         "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "La Zwheel ZRino est une trottinette électrique tout-terrain équipée d'un moteur arrière brushless de 600 W (1 200 W en pointe selon certains revendeurs) et d'une batterie HPB 48 V 15 Ah annoncée jusqu'à 50 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces à profil large, avec double suspension hydraulique, freins à disque avant et arrière et freinage régénératif, pour environ 22,8 kg. Sa vitesse est bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "Zwheel ZRino - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées Zwheel ZRino : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées Zwheel ZRino : plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "zwheel zrino, pieces zwheel zrino, disque frein zwheel zrino, plaquettes zwheel zrino, pneu zwheel zrino"
       },
       "sources": {
@@ -321,6 +348,16 @@
           "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
           "type": "revendeur"
         },
+        "rim_diameter": {
+          "url": "https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero",
+          "type": "revendeur",
+          "url2": "https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/"
+        },
+        "tire_section": {
+          "url": "https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero",
+          "type": "revendeur",
+          "url2": "https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/"
+        },
         "tire_family": {
           "url": "https://www.pccomponentes.fr/trottinette-electrique-zwheel-zrino-10-1200-w-noir-rouge",
           "type": "revendeur"
@@ -332,6 +369,7 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -469,16 +507,16 @@
             "source_type": "inconnu"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "6.5",
+            "source_url": "https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero",
+            "source_type": "revendeur",
+            "source_url_2": "https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "10x2.70",
+            "source_url": "https://afscooters.com/products/rueda-patinete-electrico-zwheel-delantero",
+            "source_type": "revendeur",
+            "source_url_2": "https://urbanmoverelectric.com/recambios-smartgyro/rueda-10x27-65-tubeless-premium-para-smartgyro-rockway-speedway-t4-zrino/"
           },
           "tire_family": {
             "value": "pneumatic",
@@ -492,6 +530,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.70",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     }

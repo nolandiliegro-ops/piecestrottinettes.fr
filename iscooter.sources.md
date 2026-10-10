@@ -1,10 +1,13 @@
 # Extraction iScooter — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 183132 tokens entrée, 1513 sortie, 10 recherches web.
 
 ## iScooter i9 Max — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10'' pneu plein nid d'abeille (section en mm non communiquée) », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -29,6 +32,7 @@ Coût mesuré : 326706 tokens entrée, 11486 sortie, 17 recherches web.
 | tire_family | solid | constructeur | https://iscooter-eu.com/products/iscooter-i9-max-electric-scooter |  |
 
 ## iScooter i9Ultra — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10 pouces (25,4 cm), pneu plein nid d'abeille », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
 
 | Clé | Valeur | Type de source | Source | 2e source |

@@ -1,12 +1,14 @@
 # Extraction Hitway — 2026-10-10
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5 · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10) · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 2 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 187096 tokens entrée, 1548 sortie, 10 recherches web.
 
 ## Hitway H9 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
-- Trouvé mais hors référentiel (non importé) : rim_diameter=6.5 · tire_section=10x2.70
 - Une seule source, NON importé : rim_diameter=6.5 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/) · tire_section=10x2.70 (https://www.franmarche.com/product/hitway-trottinette-electrique-noirbleu-pliable-10-800w-batterie-16-8ah-avec-ecran-lcd-app-control-ultra-portable/)
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -23,8 +25,10 @@ Coût mesuré : 308835 tokens entrée, 11000 sortie, 16 recherches web.
 | wheel_inches | 10 | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | http://hitway.eu/cdn/shop/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg?v=1757388767 |  |
 | brake_type | disc_unknown_actuation | constructeur | https://fr.hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
+| tire_family | pneumatic | constructeur | https://hitway.eu/products/h9-h9pro-folding-electric-scooter |  |
 
 ## Hitway H6 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « Pneu gonflable 8,5 pouces », non exploitable seul)
 
 | Clé | Valeur | Type de source | Source | 2e source |
 |---|---|---|---|---|

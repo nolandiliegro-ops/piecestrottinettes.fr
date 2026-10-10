@@ -84,6 +84,10 @@
       },
       "missing": [],
       "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -216,13 +220,11 @@
           "tire_section": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "rim_diameter": {
             "value": null,
             "source_url": null,
-            "source_url_2": null,
             "source_type": "inconnu"
           },
           "rim_type": {
@@ -243,6 +245,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
@@ -267,11 +278,12 @@
           "http://weltbild.ch/cdn/shop/files/Source.svg?v=1760554434"
         ],
         "brake_type": "disc_mechanical",
+        "tire_section": "10x2.125",
         "tire_family": "pneumatic",
         "score_offroad": 35,
         "description": "La SoFlow SO4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W et d'une batterie lithium amovible 48 V / 10,5 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus gonflables de 10 pouces, avec freins à disque à l'avant et à l'arrière, et sa vitesse est bridée à 20 km/h dans sa version homologuée (25 km/h selon la réglementation locale). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
         "meta_title": "SoFlow SO4 Pro - Pièces détachées | PiècesTrottinettes.fr",
-        "meta_description": "Pièces détachées SoFlow SO4 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "meta_description": "Pièces détachées SoFlow SO4 Pro : plaquettes, pneus 10x2.125, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
         "search_terms": "soflow so4 pro, pieces soflow so4 pro, disque frein soflow so4 pro, plaquettes soflow so4 pro, pneu soflow so4 pro"
       },
       "sources": {
@@ -328,6 +340,11 @@
           "url": "https://manuals.plus/fr/soflow/300-430-02-so4-pro-electric-scooter-manual",
           "type": "constructeur"
         },
+        "tire_section": {
+          "url": "https://escootervision.eu/en/products/soflow-s04-pro-gen2-reifen-10x2-125-zoll-57-152-v2",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/pieces-detachees/chambre-a-air-10-pouces-trottinette-soflow-so4-pro-48v/"
+        },
         "tire_family": {
           "url": "https://www.daydeal.ch/fr/deal/scooter-electrique-soflow-so4-pro-6737",
           "type": "revendeur"
@@ -339,11 +356,20 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
       "proposals": [],
-      "unconfirmed": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://yourscooter.de/collections/so4-pro"
+        }
+      ],
       "ready": true,
       "raw": {
         "specs": {
@@ -465,16 +491,16 @@
             "source_type": "inconnu"
           },
           "tire_section": {
-            "value": null,
-            "source_url": null,
-            "source_url_2": null,
-            "source_type": "inconnu"
+            "value": "10x2.125",
+            "source_url": "https://escootervision.eu/en/products/soflow-s04-pro-gen2-reifen-10x2-125-zoll-57-152-v2",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/chambre-a-air-10-pouces-trottinette-soflow-so4-pro-48v/",
+            "source_type": "revendeur"
           },
           "rim_diameter": {
-            "value": null,
-            "source_url": null,
+            "value": "6.5",
+            "source_url": "https://yourscooter.de/collections/so4-pro",
             "source_url_2": null,
-            "source_type": "inconnu"
+            "source_type": "revendeur"
           },
           "caliper_family": {
             "value": null,
@@ -500,6 +526,15 @@
             "source_url_2": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": "10x2.125",
+          "rim_diameter": "6.5",
+          "tire_family": "pneumatic"
         }
       }
     }

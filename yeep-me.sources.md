@@ -1,10 +1,13 @@
 # Extraction Yeep.me — 2026-10-10
 
-**2 PRÊT / 4 modèles.** Modèle IA : passe photos claude-sonnet-5-5 · réassemblé (règle entraxe 09/10).
+**2 PRÊT / 4 modèles.** Modèle IA : passe pneus claude-sonnet-5-5.
 
-Coût mesuré : 67745 tokens entrée, 1210 sortie, 6 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 174265 tokens entrée, 1648 sortie, 11 recherches web.
 
 ## Yeep.me 100a start — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10'' x 2" », non exploitable seul)
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |
@@ -25,6 +28,7 @@ Coût mesuré : 67745 tokens entrée, 1210 sortie, 6 recherches web.
 | tire_family | solid | constructeur | https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html |  |
 
 ## Yeep.me 100a — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
 | Clé | Valeur | Type de source | Source | 2e source |

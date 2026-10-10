@@ -93,6 +93,10 @@
         "disc_pcd",
         "disc_holes"
       ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
       "notInt": [],
       "toValidate": [],
       "offVocab": [],
@@ -249,16 +253,14 @@
           }
         }
       },
-      "photo_pass": {
+      "tire_pass": {
         "model": "claude-sonnet-5-5",
         "date": "2026-10-10",
-        "pages": [
-          "https://www.boulanger.com/ref/9000680456",
-          "https://www.decathlon.fr/p/mp/yeep-me/trottinette-electrique-yeep-me-100a-start-10-500w-30km-garantie-5-ans/_/R-p-32b15d35-5f99-4dfc-912c-61bee6f93177",
-          "https://www.darty.com/nav/achat/ref/MC350101484.html",
-          "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html"
-        ],
-        "og": 1
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "solid"
+        }
       }
     },
     {
@@ -347,6 +349,10 @@
         "disc_diameter",
         "disc_pcd",
         "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
       ],
       "notInt": [],
       "toValidate": [],
@@ -498,6 +504,15 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "tire_pass": {
+        "model": "claude-sonnet-5-5",
+        "date": "2026-10-10",
+        "found": {
+          "tire_section": null,
+          "rim_diameter": null,
+          "tire_family": "pneumatic"
         }
       }
     },
