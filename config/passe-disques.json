@@ -1,10 +1,17 @@
 {
-  "_doc": "Passes ciblées sur les brouillons : passe = disques (fill-discs.js) ou pneus (fill-tires.js). Modifier ce fichier sur main = lancer un run. go=false : rien ne part.",
-  "go": false,
+  "_doc": "Passes ciblées sur les brouillons : passe = disques (fill-discs.js), pneus (fill-tires.js) ou photos (fill-photos.js). Modifier ce fichier sur main = lancer un run. go=false : rien ne part.",
+  "go": true,
   "model": "claude-sonnet-5-5",
-  "max_searches": 8,
-  "brands": null,
-  "max_brands": 0,
-  "plafond_tokens_run": 600000,
-  "passe": "pneus"
+  "max_searches": 4,
+  "brands": [
+    "aprilia",
+    "yeep-me",
+    "jeep",
+    "beaster",
+    "oxelo",
+    "mercane"
+  ],
+  "max_brands": 6,
+  "plafond_tokens_run": 800000,
+  "passe": "photos"
 }
