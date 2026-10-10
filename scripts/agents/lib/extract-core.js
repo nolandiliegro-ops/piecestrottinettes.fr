@@ -191,6 +191,16 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
   put('rim_type', code(keys.rim_type, vocab.rim_type), keys.rim_type);
   put('tire_family', code(keys.tire_family, ['pneumatic', 'solid']), keys.tire_family);
 
+  // Filtre « Tire and Rim » (skill pt-compat-matching) : une ROUE complète (roue, rueda, ruota, wheel, moteur complet)
+  // FOURNIT la jante, elle ne la révèle pas. Une telle page ne compte jamais comme source de jante (10/10).
+  if (s.rim_diameter !== undefined && keys.rim_diameter) {
+    const WHEEL = /(^|[^a-z])(roue|roues|rueda|ruedas|ruota|ruote|wheel|wheels|motore|moteur|motor|hub)([^a-z]|$)/i;
+    const kept = [keys.rim_diameter.source_url, keys.rim_diameter.source_url_2].filter((u) => typeof u === 'string' && !WHEEL.test(u.replace(/[^a-zA-Z]+/g, ' ')));
+    if (kept.length < 2 && !(kept.length === 1 && isSpareTirePageFor(kept[0], brandName, name, s.rim_diameter))) {
+      unconfirmed.push({ key: 'rim_diameter', value: s.rim_diameter, url: keys.rim_diameter.source_url, reason: 'page de roue complète (fournit la jante)' });
+      delete s.rim_diameter; delete sources.rim_diameter;
+    }
+  }
   // Double source exigée sur les clés qui font vendre une pièce : sinon retirée, gardée « à trancher »
   // Exception ENTRAXE (décision de Nolan, 09/10) : une seule source acceptée si diamètre ET trous sont
   // doublement sourcés ET que la source est une fiche de disque de rechange visant le modèle exact.

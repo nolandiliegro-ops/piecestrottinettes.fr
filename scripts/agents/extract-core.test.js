@@ -208,3 +208,13 @@ test('jante sur 1 source : acceptée seulement si fiche pneu/chambre du modèle 
   const bad = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, rim_diameter: one('6', 'https://vsett.fr/vsett-10-plus') }, vocab);
   assert.equal(bad.scooter.rim_diameter, undefined);
 });
+
+test('filtre Tire and Rim : une page de roue complète ne compte jamais comme source de jante (10/10)', () => {
+  const two = (value, a, b) => ({ value, source_url: a, source_url_2: b, source_type: 'revendeur' });
+  const keys = { ...keysOk, rim_diameter: two('6.5', 'https://a.es/rueda-patinete-zwheel-delantero', 'https://b.es/rueda-10x27-65-tubeless-zrino') };
+  const r = assembleScooter('Vsett', '10+', specsOk, keys, vocab);
+  assert.equal(r.scooter.rim_diameter, undefined);
+  assert.ok(r.unconfirmed.some((u) => u.key === 'rim_diameter'));
+  const ok = assembleScooter('Vsett', '10+', specsOk, keysOk, vocab);
+  assert.equal(ok.scooter.rim_diameter, '6');
+});
