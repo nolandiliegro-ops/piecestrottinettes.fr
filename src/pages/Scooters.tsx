@@ -8,6 +8,10 @@ import ScooterModelCard from "@/components/scooters/ScooterModelCard";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
+import { getPrimaryImage } from "@/lib/entityImage";
+
+const normalize = (v: string) =>
+  v.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -53,11 +57,46 @@ const Scooters = () => {
   const { data: brands = [], isLoading: brandsLoading } = useBrands();
   const { data: allScooters = [], isLoading: scootersLoading } = useScooterModels();
 
-  // Filter scooters by active brand
+  const [query, setQuery] = useState("");
+  const nq = normalize(query.trim());
+
+  // Photo de couverture + nombre de modèles par marque, dérivés des modèles déjà chargés (0 requête en plus)
+  const { covers, counts } = useMemo(() => {
+    const covers: Record<string, string | undefined> = {};
+    const counts: Record<string, number> = {};
+    allScooters.forEach((s) => {
+      const slug = s.brand?.slug;
+      if (!slug) return;
+      counts[slug] = (counts[slug] ?? 0) + 1;
+      if (!covers[slug]) {
+        const img = getPrimaryImage(s.images, s.image_url, "");
+        if (img) covers[slug] = img;
+      }
+    });
+    return { covers, counts };
+  }, [allScooters]);
+
+  // Marques visibles : seulement celles qui ont au moins un modèle publié, filtrées par la recherche
+  const visibleBrands = useMemo(() => {
+    const withModels = brands.filter((b) => counts[b.slug]);
+    if (!nq) return withModels;
+    return withModels.filter(
+      (b) =>
+        normalize(b.name).includes(nq) ||
+        allScooters.some((s) => s.brand?.slug === b.slug && normalize(s.name).includes(nq))
+    );
+  }, [brands, counts, nq, allScooters]);
+
+  // Filtre modèles : marque active puis recherche (nom du modèle ou de la marque)
   const filteredScooters = useMemo(() => {
-    if (!activeBrand) return allScooters;
-    return allScooters.filter(scooter => scooter.brand?.slug === activeBrand);
-  }, [allScooters, activeBrand]);
+    let list = activeBrand ? allScooters.filter((s) => s.brand?.slug === activeBrand) : allScooters;
+    if (nq) {
+      list = list.filter(
+        (s) => normalize(s.name).includes(nq) || normalize(s.brand?.name ?? "").includes(nq)
+      );
+    }
+    return list;
+  }, [allScooters, activeBrand, nq]);
 
   // Get active brand name for display
   const activeBrandName = useMemo(() => {
@@ -109,11 +148,29 @@ const Scooters = () => {
 
         {/* Brand Bento Grid */}
         <section className="container mx-auto px-4 pb-6">
+          <div className="max-w-md mx-auto mb-5">
+            <label htmlFor="scooter-search" className="sr-only">
+              Rechercher une marque ou un modèle
+            </label>
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" aria-hidden />
+              <input
+                id="scooter-search"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Marque ou modèle (ex. Xiaomi, G30…)"
+                className="w-full h-12 pl-12 pr-4 rounded-lg border border-gray-300 bg-white text-base text-carbon outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+          </div>
           <BrandBentoGrid
-            brands={brands}
+            brands={visibleBrands}
             activeBrand={activeBrand}
             onBrandChange={setActiveBrand}
-            isLoading={brandsLoading}
+            isLoading={brandsLoading || scootersLoading}
+            covers={covers}
+            counts={counts}
           />
         </section>
 
@@ -143,7 +200,7 @@ const Scooters = () => {
                 ))}
               </motion.div>
             ) : (
-              <EmptyState onClear={() => setActiveBrand(null)} />
+              <EmptyState onClear={() => { setActiveBrand(null); setQuery(""); }} />
             )}
           </AnimatePresence>
         </section>

@@ -232,6 +232,12 @@ export const useBrandWall = () =>
           showcase = modelPhoto(byId.get(b.showcase_model_id)!);
         }
         const brandModels = byBrand.get(b.id) ?? [];
+        // Pas de modèle vitrine choisi (ou sans photo) : premier modèle publié qui a une photo,
+        // pour qu'aucune tuile marque ne reste sans visuel.
+        if (!showcase) {
+          const withPhoto = brandModels.find((m) => modelPhoto(m));
+          showcase = withPhoto ? modelPhoto(withPhoto) : null;
+        }
         return {
           id: b.id,
           name: b.name,

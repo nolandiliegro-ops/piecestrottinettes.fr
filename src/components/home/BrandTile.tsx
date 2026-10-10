@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { optimizedImage } from "@/lib/imageTransform";
 import { AXIS_UI, isBrandLevelAxis } from "@/hooks/useBrandWall";
 import type {
   BrandAxis,
@@ -350,7 +351,7 @@ const BrandTile = ({
         >
           {displayImage ? (
             <img
-              src={displayImage}
+              src={optimizedImage(displayImage, 480)}
               alt=""
               loading="lazy"
               decoding="async"

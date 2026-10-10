@@ -30,7 +30,7 @@ const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      transition={{ duration: 0.3, delay: Math.min(index, 8) * 0.04 }}
     >
       <Link
         to={`/scooter/${scooter.slug}`}
@@ -42,6 +42,8 @@ const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
             <motion.img
               src={optimizedImage(displayImage, 400)}
               alt={scooter.name}
+              loading={index < 8 ? "eager" : "lazy"}
+              decoding="async"
               className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
               whileHover={{ scale: 1.05 }}
             />
