@@ -1,479 +1,87 @@
 {
-  "aprilia": {
+  "ducati": {
     "tried": [
-      "aprilia-emobility.com → TypeError",
-      "aprilia.com → 403"
+      "ducati.com → 403",
+      "ducatiurbanmobility.com → TypeError"
     ],
     "icon": null,
     "logo": null
   },
-  "ducati": {
+  "aprilia": {
     "tried": [
-      "ducatiurbanemobility.fr → 200"
+      "aprilia.com → 403",
+      "aprilia-emobility.com → TypeError"
     ],
     "icon": {
-      "url": "https://static.wixstatic.com/media/03e1ee_94df0ddd739c434e8a335dd1842fe4f6%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/03e1ee_94df0ddd739c434e8a335dd1842fe4f6%7Emv2.png",
+      "url": "https://www.google.com/s2/favicons?domain=aprilia.com&sz=256",
       "ext": "png",
-      "declared": 192,
       "png": {
-        "w": 192,
-        "h": 192
+        "w": 196,
+        "h": 196
       },
-      "bytes": 42143
+      "bytes": 2441,
+      "repli": "favicon Google"
     },
-    "logo": {
-      "url": "https://static.wixstatic.com/media/03e1ee_a1569bf034cd40de847f1461ff820157~mv2.png/v1/fill/w_111,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Platum_orizzontale_colore_no_payoff.png",
-      "ext": "png",
-      "png": {
-        "w": 111,
-        "h": 45
-      },
-      "bytes": 5186
-    }
-  },
-  "engwe": {
-    "tried": [
-      "engwe-bikes.com → 200"
-    ],
-    "icon": {
-      "url": "https://us.engwe.com/cdn/shop/files/32X32.png?crop=center&height=180&v=1682499117&width=180",
-      "ext": "png",
-      "declared": 180,
-      "png": {
-        "w": 32,
-        "h": 32
-      },
-      "bytes": 1240
-    },
-    "logo": {
-      "url": "https://us.engwe.com/cdn/shop/files/logo_2x_1.png?v=1663148073&width=320",
-      "ext": "png",
-      "png": {
-        "w": 320,
-        "h": 78
-      },
-      "bytes": 11610
-    }
-  },
-  "halo-knight": {
-    "tried": [
-      "haloknights.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://www.haloknights.com/cdn/shop/files/0e44a1e857d737112dc14a2239bda79c_4d8ab2fa-1669-4fb2-882a-6fbb276fcb0f.png?v=1758942662&width=1920",
-      "ext": "png",
-      "png": {
-        "w": 1920,
-        "h": 1080
-      },
-      "bytes": 43403
-    }
-  },
-  "hikerboy": {
-    "tried": [
-      "hikerboyscooter.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://hikerboyscooter.com/cdn/shop/files/bold_H_weblogo_PNG_6c4c9713-15a5-415b-9787-b8f24d0e66ed.png?v=1786063240&width=380",
-      "ext": "png",
-      "png": {
-        "w": 380,
-        "h": 97
-      },
-      "bytes": 15058
-    }
-  },
-  "hitway": {
-    "tried": [
-      "hitway.eu → 200",
-      "hitway.us → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://hitway.eu/cdn/shop/files/HitWay__1.png?v=1689062402&width=600",
-      "ext": "png",
-      "png": {
-        "w": 280,
-        "h": 80
-      },
-      "bytes": 3108
-    }
-  },
-  "inmotion": {
-    "tried": [
-      "inmotionworld.com → 200",
-      "inmotion-france.fr → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://inmotionworld.com/cdn/shop/files/INMOTION-LOGO-20230626_1450758c-62f6-4510-b969-998e018686c6_2048x2048.png?v=1733913337",
-      "ext": "png",
-      "png": {
-        "w": 1562,
-        "h": 212
-      },
-      "bytes": 16644
-    }
-  },
-  "iscooter": {
-    "tried": [
-      "iscooterglobal.com → 200"
-    ],
-    "icon": {
-      "url": "https://www.iscooterglobal.com/cdn/shop/files/14_93164724-ca57-4d76-b5a8-f0dff3a15d4f.png?v=1787899922&width=180",
-      "ext": "png",
-      "declared": 180,
-      "png": {
-        "w": 180,
-        "h": 180
-      },
-      "bytes": 12288
-    },
-    "logo": {
-      "url": "https://www.iscooterglobal.com/cdn/shop/files/iScooter_06868593-6186-47e5-b50d-1f144770591f.png?v=1685436765&width=200",
-      "ext": "png",
-      "png": {
-        "w": 200,
-        "h": 41
-      },
-      "bytes": 5758
-    }
-  },
-  "isinwheel": {
-    "tried": [
-      "isinwheel.com → 200",
-      "isinwheel.fr → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://www.isinwheel.com/cdn/shop/files/20bc95811e70462bbfbd089f841c03fb.png?v=1764069889&width=200",
-      "ext": "png",
-      "png": {
-        "w": 200,
-        "h": 38
-      },
-      "bytes": 8985
-    }
-  },
-  "jeep": {
-    "tried": [
-      "jeep.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/global/header/logo-jeep.png",
-      "ext": "png",
-      "png": {
-        "w": 174,
-        "h": 69
-      },
-      "bytes": 2295
-    }
-  },
-  "joyor": {
-    "tried": [
-      "joyorscooter.com → 200",
-      "joyor.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://joyorscooter.com/cdn/shop/files/NUEVO_LOGO_HORI_300x300.png?v=1689755355",
-      "ext": "png",
-      "png": {
-        "w": 300,
-        "h": 86
-      },
-      "bytes": 4619
-    }
-  },
-  "kingsong": {
-    "tried": [
-      "kingsong.com → 200",
-      "kingsongeurope.com → 200"
-    ],
-    "icon": {
-      "url": "https://kingsongeurope.com/wp-content/uploads/2024/03/cropped-facebook-logo-192x192.jpg",
-      "ext": "jpg",
-      "declared": 192,
-      "png": null,
-      "bytes": 4270
-    },
-    "logo": {
-      "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/logo_png_450x.png?v=1750124731",
-      "ext": "png",
-      "png": {
-        "w": 450,
-        "h": 171
-      },
-      "bytes": 34078
-    }
+    "logo": null
   },
   "kugoo": {
     "tried": [
       "kugoo.com → TypeError",
+      "kugoo.fr → 200",
       "kugookirin.com → 200"
     ],
     "icon": null,
-    "logo": null
+    "logo": {
+      "url": "https://dovendi.b-cdn.net/src/assets/logo-dovendi.png",
+      "ext": "png",
+      "png": {
+        "w": 179,
+        "h": 38
+      },
+      "bytes": 5519
+    }
   },
   "kuickwheel": {
     "tried": [
       "kuickwheel.com → 403",
       "kuickwheel.fr → TypeError"
     ],
-    "icon": null,
+    "icon": {
+      "url": "https://www.google.com/s2/favicons?domain=kuickwheel.com&sz=256",
+      "ext": "png",
+      "png": {
+        "w": 256,
+        "h": 256
+      },
+      "bytes": 3444,
+      "repli": "favicon Google"
+    },
     "logo": null
-  },
-  "langfeite": {
-    "tried": [
-      "langfeite.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://langfeite.com/static/images/logo.svg",
-      "ext": "svg",
-      "png": null,
-      "bytes": 3406
-    }
-  },
-  "nami": {
-    "tried": [
-      "nami-electric.com → 200"
-    ],
-    "icon": {
-      "url": "https://preprod.nami-electric.com/wp-content/uploads/2025/07/Groupe-80.svg",
-      "ext": "svg",
-      "declared": 999,
-      "png": null,
-      "bytes": 1393
-    },
-    "logo": {
-      "url": "https://preprod.nami-electric.com/wp-content/uploads/2025/07/Logo.svg#143",
-      "ext": "svg",
-      "png": null,
-      "bytes": 5120
-    }
-  },
-  "navee": {
-    "tried": [
-      "naveetech.com → 200"
-    ],
-    "icon": {
-      "url": "https://www.naveetech.com/wp-content/uploads/2025/07/navee_logo_96_96.svg",
-      "ext": "svg",
-      "declared": 999,
-      "png": null,
-      "bytes": 1975
-    },
-    "logo": {
-      "url": "https://www.naveetech.com/wp-content/themes/sytech/assets/img/logo.png",
-      "ext": "webp",
-      "png": null,
-      "bytes": 1488
-    }
-  },
-  "niu": {
-    "tried": [
-      "niu.com → 200"
-    ],
-    "icon": {
-      "url": "https://global.niu.com/assets/icons/icon_512x512.png",
-      "ext": "png",
-      "declared": 180,
-      "png": {
-        "w": 512,
-        "h": 512
-      },
-      "bytes": 21126
-    },
-    "logo": {
-      "url": "https://global.niu.com/assets/images/niu-footer-logo.svg",
-      "ext": "svg",
-      "png": null,
-      "bytes": 6641
-    }
-  },
-  "punk": {
-    "tried": [
-      "punkelectric.eu → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://punkelectric.eu/cdn/shop/files/logo-punk.png?v=1772514476&width=600",
-      "ext": "png",
-      "png": {
-        "w": 89,
-        "h": 15
-      },
-      "bytes": 989
-    }
-  },
-  "smartgyro": {
-    "tried": [
-      "smartgyro.es → 200",
-      "smartgyro.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://smartgyro.com/hs-fs/hubfs/Download%20Files%20(dealers%20only)/Marketing/LOGO/Horizontal%20Logo/Color/SMARTGYRO%20H_LOGO%20RGB.png?width=525&height=128&name=SMARTGYRO%20H_LOGO%20RGB.png",
-      "ext": "png",
-      "png": {
-        "w": 525,
-        "h": 127
-      },
-      "bytes": 5766
-    }
-  },
-  "soflow": {
-    "tried": [
-      "soflow.com → 200"
-    ],
-    "icon": {
-      "url": "https://www.soflow.com/wp-content/themes/so-flow/assets/img/favicon/android-icon-192x192.png",
-      "ext": "png",
-      "declared": 192,
-      "png": {
-        "w": 192,
-        "h": 192
-      },
-      "bytes": 10010
-    },
-    "logo": {
-      "url": "https://www.soflow.com/wp-content/themes/so-flow/assets/img/logo-minimal.svg",
-      "ext": "svg",
-      "png": null,
-      "bytes": 1313
-    }
   },
   "speedway": {
     "tried": [
       "speedwayscooter.com → TypeError",
-      "minimotors.co.kr → 200"
+      "speedway-scooter.com → TypeError",
+      "minimotorsusa.com → 200"
     ],
     "icon": {
-      "url": "https://minimotors.co.kr/wp-content/uploads/2024/01/cropped-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2024-01-10-133047-192x192.png",
+      "url": "https://dualtronusa.com/cdn/shop/files/favicon_white_bg_228x228.png?v=1775600932",
       "ext": "png",
-      "declared": 192,
+      "declared": 228,
       "png": {
-        "w": 192,
-        "h": 192
+        "w": 150,
+        "h": 150
       },
-      "bytes": 6459
-    },
-    "logo": null
-  },
-  "teverun": {
-    "tried": [
-      "teverun.com → 403",
-      "teverun.fr → 200"
-    ],
-    "icon": {
-      "url": "https://www.teverun.fr/wp-content/uploads/2025/07/cropped-teverun-logo-150x150-1-192x192.png",
-      "ext": "png",
-      "declared": 192,
-      "png": {
-        "w": 192,
-        "h": 192
-      },
-      "bytes": 10342
+      "bytes": 4179
     },
     "logo": {
-      "url": "https://www.teverun.fr/wp-content/uploads/2023/12/teverun-1.png",
+      "url": "https://dualtronusa.com/cdn/shop/files/dualtron-usa-logo_preview_rev_1_1600x.png?v=1761684449",
       "ext": "png",
       "png": {
-        "w": 328,
-        "h": 80
+        "w": 514,
+        "h": 86
       },
-      "bytes": 5085
-    }
-  },
-  "urbanglide": {
-    "tried": [
-      "urbanglide.com → 200"
-    ],
-    "icon": {
-      "url": "https://urbanglide.com/wp-content/uploads/2023/12/cropped-Logo-Urbanglide_2023-rouge-G512x512px-192x192.png",
-      "ext": "png",
-      "declared": 192,
-      "png": {
-        "w": 192,
-        "h": 192
-      },
-      "bytes": 10170
-    },
-    "logo": {
-      "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2023/12/Logo-Urbanglide_2023-noir-rouge.png.webp",
-      "ext": "webp",
-      "png": null,
-      "bytes": 44388
-    }
-  },
-  "weped": {
-    "tried": [
-      "weped.fr → TypeError",
-      "weped-usa.com → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://weped-usa.com/web/upload/goodymall/en/main/logo.png",
-      "ext": "png",
-      "png": {
-        "w": 194,
-        "h": 45
-      },
-      "bytes": 4759
-    }
-  },
-  "wispeed": {
-    "tried": [
-      "wispeed.net → 200",
-      "wispeed.com → TypeError"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://www.wispeed.net/img/logo-1772716731.svg",
-      "ext": "svg",
-      "png": null,
-      "bytes": 7589
-    }
-  },
-  "yeep-me": {
-    "tried": [
-      "yeep.me → 200"
-    ],
-    "icon": null,
-    "logo": {
-      "url": "https://yeep.me/img/logo-1712751677.jpg",
-      "ext": "jpg",
-      "png": {
-        "w": 200,
-        "h": 37
-      },
-      "bytes": 1841
-    }
-  },
-  "zwheel": {
-    "tried": [
-      "zwheel.com → 200",
-      "zwheel-shop.com → 200"
-    ],
-    "icon": {
-      "url": "https://zwheel-shop.com/wp-content/uploads/2026/09/cropped-logo-favicon-ok-scaled-1-192x192.png",
-      "ext": "png",
-      "declared": 192,
-      "png": {
-        "w": 192,
-        "h": 192
-      },
-      "bytes": 9107
-    },
-    "logo": {
-      "url": "https://zwheel.com/optimized/shared/logo-128.webp",
-      "ext": "webp",
-      "png": null,
-      "bytes": 3900
+      "bytes": 13305
     }
   }
 }
