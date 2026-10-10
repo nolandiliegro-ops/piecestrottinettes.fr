@@ -1,0 +1,23 @@
+<svg id="Group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H19.375V17.48H0Z" transform="translate(0 0.02)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_5" data-name="Clip 5" d="M0,20.9H19.4V0H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <circle id="Oval" cx="17.5" cy="17.5" r="17.5" fill="#003f4b"/>
+  <g id="Group_6" data-name="Group 6" transform="translate(8 6)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 3.5)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H19.375V17.48H0Z" transform="translate(0 0.02)" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M15.416,0,14.262,3.322a6.4,6.4,0,1,1-9.15,0L3.959,0A9.692,9.692,0,1,0,15.416,0" transform="translate(0 0.02)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Clip_5-2" data-name="Clip 5" d="M0,20.9H19.4V0H0Z" fill="none"/>
+    <g id="Mask_Group_14" data-name="Mask Group 14" clip-path="url(#clip-path-2)">
+      <path id="Fill_4" data-name="Fill 4" d="M0,9.2H3.3V0H0Z" transform="translate(8)" fill="#479f9c"/>
+    </g>
+  </g>
+</svg>
