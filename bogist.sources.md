@@ -1,10 +1,10 @@
 # Extraction Bogist — 2026-10-10
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 2 modèles.** Modèle IA : passe disques claude-opus-5-5.
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 274244 tokens entrée, 9881 sortie, 16 recherches web.
+Coût mesuré : 218069 tokens entrée, 1756 sortie, 10 recherches web.
 
 ## Bogist M5 Pro — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
@@ -27,8 +27,7 @@ Coût mesuré : 274244 tokens entrée, 9881 sortie, 16 recherches web.
 | brake_type | disc_mechanical | site_test | https://www.techno-science.net/dossier/test-bogist-m5-pro-trottinette-electrique-voyager-avec-confort-D117.html |  |
 | tire_family | pneumatic | revendeur | https://www.rueducommerce.fr/p/m24107800046.html |  |
 
-## Bogist C1 Pro — MANQUE
-- Manque : brake_type
+## Bogist C1 Pro — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
 
@@ -46,4 +45,5 @@ Coût mesuré : 274244 tokens entrée, 9881 sortie, 16 recherches web.
 | foldable | true | distributeur | https://www.boulanger.com/ref/9000921802 |  |
 | wheel_inches | 10 | distributeur | https://www.boulanger.com/ref/9000921802 |  |
 | source_image_urls | 3 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0 |  |
+| brake_type | drum_front_disc_rear | revendeur | https://www.trottnscoot.com/produit/trottinette-electrique-bogist-c1-pro/ |  |
 | tire_family | pneumatic | revendeur | https://fr.geekbuying.com/item/BOGIST-C1-PRO-Folding-Electric-Scooter-500W-Motor-13Ah-Battery-Black-459094.html |  |

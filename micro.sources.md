@@ -1,10 +1,10 @@
 # Extraction Micro — 2026-10-10
 
-**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-sonnet-5-5.
+**1 PRÊT / 4 modèles.** Modèle IA : passe disques claude-opus-5-5.
 
 ⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 186885 tokens entrée, 3508 sortie, 12 recherches web.
+Coût mesuré : 153536 tokens entrée, 2974 sortie, 8 recherches web.
 
 ## Micro Merlin II — MANQUE
 - Manque : brake_type

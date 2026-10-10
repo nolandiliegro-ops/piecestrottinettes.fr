@@ -208,8 +208,9 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "source_url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.mobilityurban.fr/amp/trottinette-electrique/legere-et-compacte/micro-merlin-ii-grise-et-noire.html"
           },
           "disc_diameter": {
             "value": null,
@@ -260,13 +261,13 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": {
-          "value": "Pas de frein à disque : frein tambour sur la roue arrière (levier type vélo) + frein moteur/électronique sur la roue avant (gâchette) + frein au pied à friction sur le garde-boue arrière. Aucun code brake_type ne correspond exactement (ni 'drum' AV+AR, ni 'fender_foot_ebs' sans tambour, ni 'drum_front_ebs_rear' qui est inversé), donc brake_type laissé à null. Pièce détachée constructeur 'Roues de frein à tambour' listée pour la Merlin II.",
-          "source_url": "https://www.micro-mobility.fr/472-merlin-ii",
-          "source_url_2": "https://www.electro-auboncoin.com/produit/trottinette-electrique-micro-merlin-ii/",
-          "source_type": "distributeur"
+          "value": "Pas de frein à disque. Micro Merlin II = frein moteur électronique sur la roue AVANT (gâchette) + frein à TAMBOUR sur la roue ARRIÈRE (levier type vélo) + frein au pied sur garde-boue arrière (friction). Configuration 'EBS avant + tambour arrière + frein au pied' : aucun code de la liste ne correspond exactement (drum_front_ebs_rear est l'inverse ; fender_foot_ebs exclut le tambour) → brake_type laissé à null, à revoir manuellement (code possible à créer : ebs_front_drum_rear).",
+          "source_url": "https://www.intersport.fr/vert-trottinette_electrique_merlin_ii-micro-p-EM0087~0QJ/",
+          "source_type": "revendeur",
+          "source_url_2": "https://www.mobilityurban.fr/amp/trottinette-electrique/legere-et-compacte/micro-merlin-ii-grise-et-noire.html"
         },
         "found": {
           "brake_type": null,
@@ -485,17 +486,20 @@
           "disc_diameter": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_pcd": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_holes": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "caliper_family": {
             "value": null,
@@ -531,7 +535,7 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": null,
         "found": {
@@ -986,9 +990,8 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": "https://www.greenweez.com/produit/trottinette-electrique-micro-explorer",
-            "source_url_2": "https://www.electro-habitat.com/habitat/trottinette/electrique/micro-mobility/micro-explorer",
-            "source_type": "revendeur"
+            "source_url": null,
+            "source_type": "inconnu"
           },
           "disc_diameter": {
             "value": null,
@@ -1038,13 +1041,13 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": {
-          "value": "Pas de frein à disque. Frein à tambour (type vélo, levier au guidon) sur la roue arrière + frein moteur régénératif sur la roue avant + frein au pied. Aucun code ne correspond (tambour ARRIÈRE + électronique AVANT, l'inverse de drum_front_ebs_rear), donc brake_type est laissé à null. Le constructeur vend des « roues de frein à tambour » (réf. 5721) pour ce modèle. Cleanrider indique à tort « freins à disque », contredit par le constructeur et les revendeurs.",
-          "source_url": "https://www.micro-mobility.fr/368-micro-explorer",
-          "source_url_2": "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036",
-          "source_type": "constructeur"
+          "value": "Pas de frein à disque : tambour mécanique sur la roue ARRIÈRE (levier type vélo) + frein moteur électronique régénératif sur la roue AVANT + frein au pied sur le garde-boue arrière. Combinaison « EBS avant + tambour arrière » absente de l'enum (drum_front_ebs_rear est l'inverse) → brake_type laissé à null, à créer/valider manuellement. Pièce constructeur : « 5721 Roues de frein à tambour ». NB : cleanrider indique « freins à disque », contredit par le constructeur et les revendeurs.",
+          "source_url": "https://micro-mobility.newquest.fr/1465-trottinette-electrique-micro-explorer.html",
+          "source_type": "constructeur",
+          "source_url_2": "https://www.greenweez.com/produit/trottinette-electrique-micro-explorer"
         },
         "found": {
           "brake_type": null,

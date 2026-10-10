@@ -26,6 +26,34 @@
       "meta_title": "Bogist M5 Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Bogist M5 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "bogist m5 pro, pieces bogist m5 pro, disque frein bogist m5 pro, plaquettes bogist m5 pro, pneu bogist m5 pro"
+    },
+    {
+      "name": "Bogist C1 Pro",
+      "slug": "bogist-c1-pro",
+      "voltage": 48,
+      "amperage": 13,
+      "power_watts": 500,
+      "max_speed_private_kmh": 45,
+      "range_km": 45,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 23.21,
+      "suspension": "Triple amortisseur : roue avant, roue arrière et tige de selle",
+      "ip_rating": "IP64",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0",
+        "https://media.rueducommerce.fr/mktp/product/productImage/12/66/edb34c568fcb4b29898b8cc9ab37c1a9.webp",
+        "https://www.trottnscoot.com/wp-content/uploads/2022/08/bogist-c1-pro-296x300.jpg"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Bogist C1 Pro est une trottinette électrique pliable à selle amovible, équipée d'un moteur brushless de 500 W, d'une batterie lithium 48 V 13 Ah (autonomie annoncée jusqu'à 45 km) et de pneus de 10 pouces avec triple système d'amortissement. Elle dispose d'un double freinage à disque (avec frein électronique) et atteint 45 km/h en mode débridé, la vitesse étant bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Bogist C1 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Bogist C1 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "bogist c1 pro, pieces bogist c1 pro, disque frein bogist c1 pro, plaquettes bogist c1 pro, pneu bogist c1 pro"
     }
   ]
 }

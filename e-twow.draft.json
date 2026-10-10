@@ -206,8 +206,8 @@
           "brake_type": {
             "value": null,
             "source_url": "https://e-twow.com/products/gt-sl",
-            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
-            "source_type": "constructeur"
+            "source_type": "constructeur",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-gt-sl"
           },
           "disc_diameter": {
             "value": null,
@@ -258,13 +258,13 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": {
-          "value": "Pas de frein à disque. Le GT SL a un frein régénératif/électromagnétique (KERS) à l'avant, un frein à tambour à l'arrière commandé au guidon, et un frein d'urgence au pied sur le garde-boue arrière. Aucun code de brake_type ne correspond (il n'existe pas de code « avant électronique + tambour arrière »), donc brake_type reste à null.",
+          "value": "Pas de frein à disque : frein électronique régénératif (KERS) à l'AVANT + frein à tambour à l'ARRIÈRE + frein d'urgence au pied sur le garde-boue arrière. La combinaison « EBS avant + tambour arrière » ne correspond à aucun code de l'enum (drum_front_ebs_rear est l'inverse). brake_type laissé à null, à vérifier à la main.",
           "source_url": "https://e-twow.com/products/gt-sl",
-          "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-etwow-gt-sl",
-          "source_type": "constructeur"
+          "source_type": "constructeur",
+          "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-gt-sl"
         },
         "found": {
           "brake_type": null,
@@ -479,8 +479,9 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "source_url": "https://e-twow.com/products/e-twow-gt-sport-limited-edition",
+            "source_type": "constructeur",
+            "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sport-48v-105ah/"
           },
           "disc_diameter": {
             "value": null,
@@ -532,13 +533,13 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": {
-          "value": "Pas de frein à disque : frein électrique/régénératif KERS à l'avant + frein tambour à l'arrière (commandé par levier) + frein de secours à pied sur garde-boue arrière. Aucun code brake_type ne correspond exactement (EBS avant + tambour arrière) : brake_type laissé à null.",
-          "source_url": "https://e-twow.com/products/e-twow-s2-gt-line-gt-sl-gt-sport-electric-scooter",
-          "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sport-48v-105ah/",
-          "source_type": "constructeur"
+          "value": "Pas de frein à disque : électronique régénératif (KERS) à l'avant + tambour arrière + frein au pied sur le garde-boue arrière. Aucun code de la liste ne correspond (inverse de drum_front_ebs_rear), donc brake_type laissé à null.",
+          "source_url": "https://e-twow.com/products/e-twow-gt-sport-limited-edition",
+          "source_type": "constructeur",
+          "source_url_2": "https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-etwow-gt-sport-48v-105ah/"
         },
         "found": {
           "brake_type": null,
@@ -1028,9 +1029,8 @@
         "keys": {
           "brake_type": {
             "value": null,
-            "source_url": "https://www.etwow.net/en/e-twow-gt-se-sport-en",
-            "source_url_2": "https://full-mobility.com/produit/trottinette-electrique-e-twow-booster-gt-se-2021-bluetooth-48v-10-5-ah/",
-            "source_type": "constructeur"
+            "source_url": null,
+            "source_type": "inconnu"
           },
           "disc_diameter": {
             "value": null,
@@ -1081,13 +1081,13 @@
         }
       },
       "disc_pass": {
-        "model": "claude-sonnet-5-5",
+        "model": "claude-opus-5-5",
         "date": "2026-10-10",
         "no_disc": {
-          "value": "Pas de frein à disque. E-Twow GT SE : frein électromagnétique/régénératif KERS à l'avant + frein à tambour mécanique à l'arrière (80 mm, à la poignée) + frein de secours au pied sur le garde-boue arrière. Combinaison (EBS avant + tambour arrière) absente de la liste des codes brake_type, donc brake_type laissé à null : à trancher manuellement.",
-          "source_url": "https://www.etwow.net/en/e-twow-gt-se-sport-en",
-          "source_url_2": "https://www.wee-bot.com/products/frein-tambour-trottinette-electrique-etwow-gt",
-          "source_type": "constructeur"
+          "value": "Pas de frein à disque : frein électronique régénératif (KERS) à l'avant + frein à tambour à l'arrière (80 mm) + frein au pied sur le garde-boue. Combinaison « ebs_front_drum_rear » absente de la liste des codes (drum_front_ebs_rear est l'inverse) → brake_type laissé à null. Note : riderguide.com parle à tort d'un « rear disc brake », contredit par le constructeur et les revendeurs.",
+          "source_url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
+          "source_type": "revendeur",
+          "source_url_2": "https://e-twowusa.com/products/copy-of-2022-etwow-gt-sport-with-bluetooth-and-rear-drum-brake"
         },
         "found": {
           "brake_type": null,

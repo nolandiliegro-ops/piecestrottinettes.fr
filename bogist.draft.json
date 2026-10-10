@@ -205,17 +205,20 @@
           "disc_diameter": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_pcd": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_holes": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "caliper_family": {
             "value": null,
@@ -249,6 +252,17 @@
             "source_type": "inconnu"
           }
         }
+      },
+      "disc_pass": {
+        "model": "claude-opus-5-5",
+        "date": "2026-10-10",
+        "no_disc": null,
+        "found": {
+          "brake_type": "disc_mechanical",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
+        }
       }
     },
     {
@@ -272,6 +286,7 @@
           "https://media.rueducommerce.fr/mktp/product/productImage/12/66/edb34c568fcb4b29898b8cc9ab37c1a9.webp",
           "https://www.trottnscoot.com/wp-content/uploads/2022/08/bogist-c1-pro-296x300.jpg"
         ],
+        "brake_type": "drum_front_disc_rear",
         "tire_family": "pneumatic",
         "score_offroad": 40,
         "description": "La Bogist C1 Pro est une trottinette électrique pliable à selle amovible, équipée d'un moteur brushless de 500 W, d'une batterie lithium 48 V 13 Ah (autonomie annoncée jusqu'à 45 km) et de pneus de 10 pouces avec triple système d'amortissement. Elle dispose d'un double freinage à disque (avec frein électronique) et atteint 45 km/h en mode débridé, la vitesse étant bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
@@ -329,14 +344,16 @@
           "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0",
           "type": "og:image fiche produit"
         },
+        "brake_type": {
+          "url": "https://www.trottnscoot.com/produit/trottinette-electrique-bogist-c1-pro/",
+          "type": "revendeur"
+        },
         "tire_family": {
           "url": "https://fr.geekbuying.com/item/BOGIST-C1-PRO-Folding-Electric-Scooter-500W-Motor-13Ah-Battery-Black-459094.html",
           "type": "revendeur"
         }
       },
-      "missing": [
-        "brake_type"
-      ],
+      "missing": [],
       "discMissing": [
         "disc_diameter",
         "disc_pcd",
@@ -351,7 +368,7 @@
       "offVocab": [],
       "proposals": [],
       "unconfirmed": [],
-      "ready": false,
+      "ready": true,
       "raw": {
         "specs": {
           "weight_kg": {
@@ -449,24 +466,28 @@
         },
         "keys": {
           "brake_type": {
-            "value": null,
-            "source_url": null,
-            "source_type": "inconnu"
+            "value": "drum_front_disc_rear",
+            "source_url": "https://www.trottnscoot.com/produit/trottinette-electrique-bogist-c1-pro/",
+            "source_type": "revendeur",
+            "source_url_2": "https://icoolwheel.com/toutes-les-trottinettes-electriques/493-trottinette-electrique-bogist-pro-c1-600w-45-kmh.html"
           },
           "disc_diameter": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_pcd": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "disc_holes": {
             "value": null,
             "source_url": null,
-            "source_type": "inconnu"
+            "source_type": "inconnu",
+            "source_url_2": null
           },
           "caliper_family": {
             "value": null,
@@ -499,6 +520,17 @@
             "source_url": null,
             "source_type": "inconnu"
           }
+        }
+      },
+      "disc_pass": {
+        "model": "claude-opus-5-5",
+        "date": "2026-10-10",
+        "no_disc": null,
+        "found": {
+          "brake_type": "drum_front_disc_rear",
+          "disc_diameter": null,
+          "disc_pcd": null,
+          "disc_holes": null
         }
       }
     }
