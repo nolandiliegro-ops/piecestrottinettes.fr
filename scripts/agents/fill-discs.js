@@ -121,6 +121,7 @@ const tool = (v) => ({
 const prompt = (name, missing, v) => `Trottinette électrique « ${name} ». Clés manquantes : ${missing.join(', ')}.
 Fais plusieurs recherches DÉDIÉES, par exemple : « disque de frein ${name} », « disque ${name} 140mm 6 trous », « ${name} brake disc bolt », « ${name} disc rotor PCD ».
 - brake_type : code parmi ${v.brake.join(', ')}.
+  Repères : drum = tambour (AV et AR) · fender_foot_ebs = frein au pied sur le garde-boue arrière + frein électronique, SANS disque ni tambour (Micro, E-Twow, Globber) · drum_front_ebs_rear = tambour avant + électronique arrière.
 - disc_diameter (mm, connus : ${v.disc_d.join('/')}), disc_pcd = entraxe des vis de fixation (mm, connus : ${v.pcd.join('/')}), disc_holes (connus : ${v.holes.join('/')}).
 Une valeur hors de ces listes : renvoie-la quand même avec sa source (elle sera signalée, pas importée).`;
 
