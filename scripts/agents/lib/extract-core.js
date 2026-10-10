@@ -202,9 +202,12 @@ export function assembleScooter(brandName, modelName, specs, keys, vocab) {
 
   // Verdict
   for (const k of REQUIRED) if (s[k] === undefined) missing.push(k);
-  if (needsDiscKeys(s.brake_type, vocab)) for (const k of DISC_KEYS) if (s[k] === undefined) missing.push(k);
+  // Décision de Nolan (10/10) : un modèle complet SAUF les clés disque est publiable, sans disques proposés.
+  // Les clés disque manquantes ne bloquent plus : elles vont dans discMissing (import --allow-missing-keys,
+  // publication par SQL), et restent la cible de la passe disques.
+  const discMissing = needsDiscKeys(s.brake_type, vocab) ? DISC_KEYS.filter((k) => s[k] === undefined) : [];
 
-  return { scooter: s, sources, missing, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
+  return { scooter: s, sources, missing, discMissing, toValidate, offVocab, proposals, unconfirmed, ready: missing.length === 0 && toValidate.length === 0 };
 }
 
 /** Rapport de sources lisible (markdown), un tableau par modèle. */
@@ -216,6 +219,7 @@ export function sourcesReport(brandName, results, meta = {}) {
   for (const r of results) {
     lines.push(`## ${r.scooter.name} — ${r.ready ? 'PRÊT' : 'MANQUE'}`);
     if (r.missing.length) lines.push(`- Manque : ${r.missing.join(', ')}`);
+    if (r.discMissing?.length) lines.push(`- Publiable SANS disques (règle du 10/10) — inconnu : ${r.discMissing.join(', ')}`);
     if (r.toValidate.length) lines.push(`- À valider par Nolan (site de test) : ${r.toValidate.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);
     if (r.offVocab.length) lines.push(`- Trouvé mais hors référentiel (non importé) : ${r.offVocab.join(' · ')}`);
     if (r.unconfirmed?.length) lines.push(`- Une seule source, NON importé : ${r.unconfirmed.map((t) => `${t.key}=${t.value} (${t.url})`).join(' · ')}`);

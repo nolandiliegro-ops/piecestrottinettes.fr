@@ -140,7 +140,10 @@ async function main() {
     let touched = 0, gained = 0;
     for (let i = 0; i < (draft.results || []).length; i++) {
       const r = draft.results[i];
-      if (r.ready || !r.missing.length || !r.missing.every((k) => BRAKE_KEYS.includes(k))) continue;
+      // Cible : modèles dont il ne manque QUE des clés de frein (bloquants ou, depuis le 10/10, discMissing d'un PRÊT)
+      const need = [...(r.missing || []), ...(r.discMissing || [])];
+      if (!need.length || !need.every((k) => BRAKE_KEYS.includes(k))) continue;
+      r.missing = need;
       if (r.disc_pass?.model === MODEL) continue; // déjà passé avec ce modèle IA : jamais de double dépense
       if (usage.input_tokens + usage.output_tokens >= CAP) { console.log(`Plafond ${CAP} tokens atteint : arrêt.`); break; }
       tried++; touched++;

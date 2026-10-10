@@ -48,7 +48,8 @@ test('code hors référentiel → non importé, signalé', () => {
 
 test('disque inconnu (hors liste) → manque la clé', () => {
   const r = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, disc_diameter: S(203) }, vocab);
-  assert.ok(r.missing.includes('disc_diameter'));
+  assert.ok(r.discMissing.includes('disc_diameter'));
+  assert.equal(r.ready, true); // règle du 10/10 : publiable sans disques
 });
 
 test('frein tambour → clés disque non exigées', () => {
@@ -88,7 +89,7 @@ test('solid_conversion=yes : proposé au rapport, jamais importé', () => {
 test('disque avec une seule source → non importé, listé « une seule source »', () => {
   const r = assembleScooter('Vsett', '10+', specsOk, { ...keysOk, disc_diameter: { ...S(160), source_url_2: null } }, vocab);
   assert.equal(r.scooter.disc_diameter, undefined);
-  assert.ok(r.missing.includes('disc_diameter'));
+  assert.ok(r.discMissing.includes('disc_diameter'));
   assert.equal(r.unconfirmed[0].key, 'disc_diameter');
 });
 
@@ -114,7 +115,7 @@ test('entraxe une source : refusé si la page ne vise pas le modèle exact', () 
   const pcd = { value: 44, source_url: 'https://www.ecowaymobility.fr/shop/disque-de-frein-140mm-6-trous-4428', source_url_2: null, source_type: 'revendeur' };
   const r = assembleScooter('Kugoo', 'G2 Max', specsOk, { ...keysOk, disc_pcd: pcd }, vocab);
   assert.equal(r.scooter.disc_pcd, undefined);
-  assert.ok(r.missing.includes('disc_pcd'));
+  assert.ok(r.discMissing.includes('disc_pcd'));
 });
 
 test('entraxe une source : refusé si le diamètre n\'a qu\'une source', () => {
@@ -127,4 +128,24 @@ test('entraxe une source : « G2 » ne valide pas une page « G20 »', () => {
   const pcd = { value: 44, source_url: 'https://x.fr/disque-frein-kugoo-g20', source_url_2: null, source_type: 'revendeur' };
   const r = assembleScooter('Kugoo', 'G2', specsOk, { ...keysOk, disc_pcd: pcd }, vocab);
   assert.equal(r.scooter.disc_pcd, undefined);
+});
+
+test('règle du 10/10 : sans aucune clé disque, publiable et signalé', () => {
+  const r = assembleScooter('X', 'Y', specsOk, { brake_type: S('disc_hydraulic') }, vocab);
+  assert.equal(r.ready, true);
+  assert.deepEqual(r.discMissing, ['disc_diameter', 'disc_pcd', 'disc_holes']);
+  assert.match(sourcesReport('X', [r], {}), /Publiable SANS disques/);
+});
+
+test('règle du 10/10 : poids manquant bloque toujours', () => {
+  const r = assembleScooter('X', 'Y', { ...specsOk, weight_kg: undefined }, { brake_type: S('disc_hydraulic') }, vocab);
+  assert.equal(r.ready, false);
+  assert.ok(r.missing.includes('weight_kg'));
+});
+
+test('frein sans disque (fender_foot_ebs) : aucune clé disque attendue', () => {
+  const v = { ...vocab, brake_rows: [...vocab.brake_rows, { code: 'fender_foot_ebs', has_disc: false }], brake: [...vocab.brake, 'fender_foot_ebs'] };
+  const r = assembleScooter('Micro', 'Speed+', specsOk, { brake_type: S('fender_foot_ebs') }, v);
+  assert.equal(r.ready, true);
+  assert.deepEqual(r.discMissing, []);
 });

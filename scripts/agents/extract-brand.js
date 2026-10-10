@@ -321,7 +321,8 @@ async function main() {
   }
 
   const ready = results.filter((r) => r.ready).map((r) => r.scooter);
-  const faults = findMissingBrakeKeys([{ brandName: BRAND, scooters: ready.filter((s) => !/^drum/.test(s.brake_type || '')) }]);
+  // Règle du 10/10 : un PRÊT peut manquer de clés disque (discMissing) ; seuls ceux qui les déclarent complètes sont contrôlés
+  const faults = findMissingBrakeKeys([{ brandName: BRAND, scooters: results.filter((r) => r.ready && !r.discMissing?.length).map((r) => r.scooter).filter((s) => !/^drum/.test(s.brake_type || '')) }]);
   if (faults.length) throw new Error(`Incohérence interne : modèle PRÊT sans clés disque ${JSON.stringify(faults)}`);
 
   const dir = OUT_DIR;
