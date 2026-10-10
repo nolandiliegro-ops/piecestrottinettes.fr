@@ -210,7 +210,7 @@ async function main() {
     let photoOk = 0, photoErr = 0, photoSkip = 0;
 
     for (const scooter of scooters) {
-      const { slug, source_image_urls } = scooter;
+      const { slug, source_image_urls, id: entry_id, name: entry_name } = scooter;
 
       if (!slug) {
         console.log('   ⚠  entrée sans slug, skip');
@@ -222,7 +222,11 @@ async function main() {
         photoSkip++; continue;
       }
 
-      const row = await resolveScooterId(slug, SUPABASE_URL, ANON_KEY);
+      // 10/10 : la clé anon ne voit plus les brouillons (protection phase A). Si le fichier fournit
+      // l'id (relevé par Claude en base), on l'utilise directement ; sinon recherche anon (modèles publiés).
+      const row = (typeof entry_id === 'string' && /^[0-9a-f-]{36}$/i.test(entry_id))
+        ? { id: entry_id, name: entry_name || slug }
+        : await resolveScooterId(slug, SUPABASE_URL, ANON_KEY);
       if (!row) {
         console.log(`   ⚠  ${slug} : non trouvé en BDD, skip`);
         photoSkip++; continue;
