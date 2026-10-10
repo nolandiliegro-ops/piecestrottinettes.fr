@@ -1,0 +1,54 @@
+{
+  "brandName": "Velity",
+  "scooters": [
+    {
+      "name": "Velity 511-Ss",
+      "slug": "velity-511-ss",
+      "voltage": 72,
+      "amperage": 38,
+      "power_watts": 16800,
+      "max_speed_private_kmh": 140,
+      "range_km": 145,
+      "max_speed_kmh": 25,
+      "weight_kg": 47,
+      "suspension": "Suspensions à cartouche réglables (avant/arrière)",
+      "ip_rating": "IPX6",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://trotinetch.pt/cdn/shop/files/406797494_863197979123191_5618743708706283166_n.jpg?crop=center&height=1200&v=1708691656&width=1200"
+      ],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Velity 511-Ss est une hyper trottinette électrique à double motorisation d'une puissance maximale de 16 800 W, alimentée par une batterie 72 V 38 Ah annoncée pour 145 km d'autonomie maximale. Elle est équipée de pneus 11 pouces (VRM217 d'origine), de freins à disque hydrauliques et de suspensions à cartouche réglables, avec une protection IPX6. Sa vitesse est bridée à 25 km/h sur voie publique et atteint 140 km/h sur circuit privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Velity 511-Ss - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Velity 511-Ss : plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "velity 511-ss, pieces velity 511-ss, disque frein velity 511-ss, plaquettes velity 511-ss, pneu velity 511-ss"
+    },
+    {
+      "name": "Velity 511-Sx",
+      "slug": "velity-511-sx",
+      "amperage": 45,
+      "power_watts": 16800,
+      "max_speed_private_kmh": 150,
+      "range_km": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 47,
+      "suspension": "Suspensions à cartouche réglables (avant et arrière)",
+      "ip_rating": "IPX6",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://trotinetch.pt/cdn/shop/files/417549105_3207571489546753_198445083813945148_n.jpg?crop=center&height=1200&v=1708692171&width=1200"
+      ],
+      "brake_type": "disc_hydraulic",
+      "caliper_family": "magura_mt5_mt7",
+      "score_offroad": 50,
+      "description": "La Velity 511-Sx est une hyper trottinette électrique de compétition annoncée à 16 800 W de puissance maximale, avec une batterie 79,2 V 45 Ah et une vitesse maximale de 150 km/h sur circuit privé. Elle est équipée de pneus PMT de 11 pouces, de suspensions à cartouche réglables et de deux freins à disque hydrauliques Magura MT5e. Elle n'est pas conçue pour la voie publique (vitesse bridée 25 km/h non documentée par le revendeur). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Velity 511-Sx - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Velity 511-Sx : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "velity 511-sx, pieces velity 511-sx, disque frein velity 511-sx, plaquettes velity 511-sx, pneu velity 511-sx"
+    }
+  ]
+}

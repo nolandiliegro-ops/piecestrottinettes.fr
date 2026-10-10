@@ -1,0 +1,63 @@
+{
+  "brandName": "Ootd",
+  "scooters": [
+    {
+      "name": "Ootd T10",
+      "slug": "ootd-t10",
+      "voltage": 48,
+      "amperage": 18,
+      "power_watts": 900,
+      "max_speed_private_kmh": 50,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 28.1,
+      "suspension": "Amortisseurs à ressort avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "11\" tubeless hybride tout-terrain 90/65-6.5",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://evelostore.fr/cdn/shop/files/T10.426.jpg?v=1770809109"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La OOTD T10 est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (900 W en crête) et d'une batterie 48 V 13,5 Ah ou 18 Ah. Elle roule sur des pneus de 11 pouces, avec doubles amortisseurs à ressort et freins à disque avant et arrière, et sa vitesse est bridée à 25 km/h (jusqu'à 50 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ootd T10 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ootd T10 : disque de frein 140 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ootd t10, pieces ootd t10, disque frein ootd t10, plaquettes ootd t10, pneu ootd t10"
+    },
+    {
+      "name": "Ootd T10 Pro",
+      "slug": "ootd-t10-pro",
+      "voltage": 52,
+      "amperage": 23.4,
+      "power_watts": 2600,
+      "max_speed_private_kmh": 65,
+      "range_km": 70,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 40.5,
+      "suspension": "Double ressort avant (1200 lb) + ressort arrière (2200 lb)",
+      "ip_rating": "IP54",
+      "tire_size": "90/65-6.5 (tubeless hybride tout-terrain 11 pouces)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://voltrix.fr/wp-content/uploads/2026/05/T10-pro-avantt.webp"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 140,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "score_offroad": 53,
+      "description": "L'OOTD T10 Pro est une trottinette électrique pliable à double moteur (2 x 1300 W en pointe, 2600 W au total) alimentée par une batterie 52 V 23,4 Ah annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 11 pouces, avec suspensions avant et arrière et freins à disque hydrauliques. La vitesse est bridée à 25 km/h par défaut et peut atteindre 65 km/h en mode débridé sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ootd T10 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ootd T10 Pro : disque de frein 140 mm, plaquettes, pneus 90/65, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ootd t10 pro, pieces ootd t10 pro, disque frein ootd t10 pro, plaquettes ootd t10 pro, pneu ootd t10 pro"
+    }
+  ]
+}

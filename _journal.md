@@ -127,3 +127,8 @@
 - 2026-10-10T19:20:05.948Z · Hiboy · PASSE DISQUES · +2 prêt(s) sur 2 · 2 prêt(s) au total · 0.3 min · 113816 in / 2251 out / 8 rech.
 - 2026-10-10T19:20:13.025Z · Mercane · PASSE DISQUES · +1 prêt(s) sur 1 · 1 prêt(s) au total · 0.1 min · 34463 in / 896 out / 3 rech.
 - 2026-10-10T19:20:42.650Z · Micro · PASSE DISQUES · +1 prêt(s) sur 3 · 1 prêt(s) au total · 0.5 min · 186885 in / 3508 out / 12 rech.
+- 2026-10-10T19:25:16.833Z · Olsson & Brothers · OK · 1.3 min · 274193 in / 10419 out / 15 rech · +0 prêt (dont 0 sans clé roue) · cumul run 284612 tokens
+- 2026-10-10T19:26:44.647Z · DYU · OK · 1.5 min · 335011 in / 11392 out / 17 rech · +2 prêt (dont 2 sans clé roue) · cumul run 631015 tokens
+- 2026-10-10T19:28:08.522Z · Ootd · OK · 1.4 min · 306829 in / 11139 out / 17 rech · +2 prêt (dont 1 sans clé roue) · cumul run 948983 tokens
+- 2026-10-10T19:29:26.501Z · Bogist · OK · 1.3 min · 274244 in / 9881 out / 16 rech · +1 prêt (dont 1 sans clé roue) · cumul run 1233108 tokens
+- 2026-10-10T19:30:35.036Z · Velity · OK · 1.1 min · 258762 in / 8579 out / 15 rech · +2 prêt (dont 2 sans clé roue) · cumul run 1500449 tokens

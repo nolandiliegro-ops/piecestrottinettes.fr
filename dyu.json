@@ -1,0 +1,58 @@
+{
+  "brandName": "DYU",
+  "scooters": [
+    {
+      "name": "DYU D3F",
+      "slug": "dyu-d3f",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 250,
+      "range_km": 50,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 19,
+      "suspension": "Fourche rigide, sans amortisseur (ressorts sous la selle uniquement)",
+      "ip_rating": "IP54",
+      "tire_size": "14x2.125",
+      "foldable": true,
+      "wheel_inches": 14,
+      "source_image_urls": [
+        "http://dyucycle.com/cdn/shop/files/D3S.webp?v=1785146645",
+        "http://electroheads.com/cdn/shop/files/dyu-dyu-d3f-14-inch-mini-folding-electric-bike-30932404273265.webp?v=1701451245"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 160,
+      "tire_family": "pneumatic",
+      "score_offroad": 45,
+      "description": "Le DYU D3F est un engin électrique pliant à roues de 14 pouces, animé par un moteur de moyeu de 250 W (pic 500 W) et une batterie lithium-ion 36 V 10 Ah. Il est équipé de freins à disque à l'avant et à l'arrière, et sa vitesse est limitée à 25 km/h avec une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU D3F - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU D3F : disque de frein 160 mm, plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu d3f, pieces dyu d3f, disque frein dyu d3f, plaquettes dyu d3f, pneu dyu d3f"
+    },
+    {
+      "name": "DYU C4",
+      "slug": "dyu-c4",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 250,
+      "range_km": 42,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 20.7,
+      "suspension": "Aucune (rigide)",
+      "foldable": true,
+      "wheel_inches": 14,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/72b2a107-0941-4ef1-2f70-043d10c8e700/public"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_family": "pneumatic",
+      "score_offroad": 45,
+      "description": "La DYU C4 est une trottinette électrique pliable à selle réglable, équipée d'un moteur de 250 W (500 W en crête), d'une batterie 36 V 10 Ah annoncée pour environ 42 km d'autonomie et de pneus gonflables de 14 pouces. Elle dispose de freins à disque avant et arrière, d'un panier et d'une vitesse bridée à 25 km/h pour 20,7 kg sur la balance. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU C4 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU C4 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu c4, pieces dyu c4, disque frein dyu c4, plaquettes dyu c4, pneu dyu c4"
+    }
+  ]
+}

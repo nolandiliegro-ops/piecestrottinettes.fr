@@ -1,0 +1,31 @@
+{
+  "brandName": "Bogist",
+  "scooters": [
+    {
+      "name": "Bogist M5 Pro",
+      "slug": "bogist-m5-pro",
+      "voltage": 48,
+      "amperage": 11,
+      "power_watts": 500,
+      "max_speed_private_kmh": 40,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 25,
+      "suspension": "Fourche avant hydraulique + selle à ressort",
+      "ip_rating": "IP64",
+      "foldable": true,
+      "wheel_inches": 12,
+      "source_image_urls": [
+        "https://media.rueducommerce.fr/mktp/product/productImage/8/52/4ed9e81356634c9b99e7330aad97a2de.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 45,
+      "description": "La Bogist M5 Pro est une trottinette électrique avec siège équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 11 Ah, annoncée jusqu'à 40 km/h une fois débridée (25 km/h en configuration bridée) et jusqu'à 40 km d'autonomie. Elle roule sur des pneus pneumatiques de 12 pouces et dispose de freins à disque avant et arrière, d'un indice d'étanchéité IP64 et d'un poids d'environ 25 kg pour 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Bogist M5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Bogist M5 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "bogist m5 pro, pieces bogist m5 pro, disque frein bogist m5 pro, plaquettes bogist m5 pro, pneu bogist m5 pro"
+    }
+  ]
+}

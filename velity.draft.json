@@ -1,0 +1,496 @@
+{
+  "brandName": "Velity",
+  "results": [
+    {
+      "scooter": {
+        "name": "Velity 511-Ss",
+        "slug": "velity-511-ss",
+        "voltage": 72,
+        "amperage": 38,
+        "power_watts": 16800,
+        "max_speed_private_kmh": 140,
+        "range_km": 145,
+        "max_speed_kmh": 25,
+        "weight_kg": 47,
+        "suspension": "Suspensions à cartouche réglables (avant/arrière)",
+        "ip_rating": "IPX6",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://trotinetch.pt/cdn/shop/files/406797494_863197979123191_5618743708706283166_n.jpg?crop=center&height=1200&v=1708691656&width=1200"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Velity 511-Ss est une hyper trottinette électrique à double motorisation d'une puissance maximale de 16 800 W, alimentée par une batterie 72 V 38 Ah annoncée pour 145 km d'autonomie maximale. Elle est équipée de pneus 11 pouces (VRM217 d'origine), de freins à disque hydrauliques et de suspensions à cartouche réglables, avec une protection IPX6. Sa vitesse est bridée à 25 km/h sur voie publique et atteint 140 km/h sur circuit privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Velity 511-Ss - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Velity 511-Ss : plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "velity 511-ss, pieces velity 511-ss, disque frein velity 511-ss, plaquettes velity 511-ss, pneu velity 511-ss"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur",
+          "url2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html"
+        },
+        "suspension": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://trotinetch.pt/cdn/shop/files/406797494_863197979123191_5618743708706283166_n.jpg?crop=center&height=1200&v=1708691656&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 38,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 16800,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 140,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 145,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspensions à cartouche réglables (avant/arrière)",
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Velity 511-Ss est une hyper trottinette électrique à double motorisation d'une puissance maximale de 16 800 W, alimentée par une batterie 72 V 38 Ah annoncée pour 145 km d'autonomie maximale. Elle est équipée de pneus 11 pouces (VRM217 d'origine), de freins à disque hydrauliques et de suspensions à cartouche réglables, avec une protection IPX6. Sa vitesse est bridée à 25 km/h sur voie publique et atteint 140 km/h sur circuit privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "https://www.gtsshop.fr/en/electric-scooters/5723-velity-511-ss-electric-scooter.html",
+            "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah"
+          ],
+          "_og_images": [
+            "http://trotinetch.pt/cdn/shop/files/406797494_863197979123191_5618743708706283166_n.jpg?crop=center&height=1200&v=1708691656&width=1200"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-ss-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Velity 511-Sx",
+        "slug": "velity-511-sx",
+        "amperage": 45,
+        "power_watts": 16800,
+        "max_speed_private_kmh": 150,
+        "range_km": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 47,
+        "suspension": "Suspensions à cartouche réglables (avant et arrière)",
+        "ip_rating": "IPX6",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://trotinetch.pt/cdn/shop/files/417549105_3207571489546753_198445083813945148_n.jpg?crop=center&height=1200&v=1708692171&width=1200"
+        ],
+        "brake_type": "disc_hydraulic",
+        "caliper_family": "magura_mt5_mt7",
+        "score_offroad": 50,
+        "description": "La Velity 511-Sx est une hyper trottinette électrique de compétition annoncée à 16 800 W de puissance maximale, avec une batterie 79,2 V 45 Ah et une vitesse maximale de 150 km/h sur circuit privé. Elle est équipée de pneus PMT de 11 pouces, de suspensions à cartouche réglables et de deux freins à disque hydrauliques Magura MT5e. Elle n'est pas conçue pour la voie publique (vitesse bridée 25 km/h non documentée par le revendeur). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Velity 511-Sx - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Velity 511-Sx : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "velity 511-sx, pieces velity 511-sx, disque frein velity 511-sx, plaquettes velity 511-sx, pneu velity 511-sx"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur",
+          "url2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah"
+        },
+        "suspension": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://trotinetch.pt/cdn/shop/files/417549105_3207571489546753_198445083813945148_n.jpg?crop=center&height=1200&v=1708692171&width=1200",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "distributeur"
+        },
+        "caliper_family": {
+          "url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [
+        "voltage=79.2"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah"
+          ],
+          "voltage": {
+            "value": 79.2,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 45,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 16800,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 150,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspensions à cartouche réglables (avant et arrière)",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Velity 511-Sx est une hyper trottinette électrique de compétition annoncée à 16 800 W de puissance maximale, avec une batterie 79,2 V 45 Ah et une vitesse maximale de 150 km/h sur circuit privé. Elle est équipée de pneus PMT de 11 pouces, de suspensions à cartouche réglables et de deux freins à disque hydrauliques Magura MT5e. Elle n'est pas conçue pour la voie publique (vitesse bridée 25 km/h non documentée par le revendeur). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_type": "revendeur"
+          },
+          "_og_images": [
+            "http://trotinetch.pt/cdn/shop/files/417549105_3207571489546753_198445083813945148_n.jpg?crop=center&height=1200&v=1708692171&width=1200"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "distributeur"
+          },
+          "caliper_family": {
+            "value": "magura_mt5_mt7",
+            "source_url": "https://fastride.fr/en/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html",
+            "source_url_2": "https://trotinetch.pt/en/products/velity-511-sx-72v-38ah",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

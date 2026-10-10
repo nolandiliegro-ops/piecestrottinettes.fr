@@ -1,0 +1,506 @@
+{
+  "brandName": "Bogist",
+  "results": [
+    {
+      "scooter": {
+        "name": "Bogist M5 Pro",
+        "slug": "bogist-m5-pro",
+        "voltage": 48,
+        "amperage": 11,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 25,
+        "suspension": "Fourche avant hydraulique + selle à ressort",
+        "ip_rating": "IP64",
+        "foldable": true,
+        "wheel_inches": 12,
+        "source_image_urls": [
+          "https://media.rueducommerce.fr/mktp/product/productImage/8/52/4ed9e81356634c9b99e7330aad97a2de.webp"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 45,
+        "description": "La Bogist M5 Pro est une trottinette électrique avec siège équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 11 Ah, annoncée jusqu'à 40 km/h une fois débridée (25 km/h en configuration bridée) et jusqu'à 40 km d'autonomie. Elle roule sur des pneus pneumatiques de 12 pouces et dispose de freins à disque avant et arrière, d'un indice d'étanchéité IP64 et d'un poids d'environ 25 kg pour 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Bogist M5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Bogist M5 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "bogist m5 pro, pieces bogist m5 pro, disque frein bogist m5 pro, plaquettes bogist m5 pro, pneu bogist m5 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur",
+          "url2": "https://buy-escooter.com/products/bogist-m5-pro-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://bogistshop.com/blogs/blogs/discover-the-ultimate-urban-commuting-tool-bogist-m5-pro-in-depth-review-experience",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.rueducommerce.fr/p/m24107800046.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.rueducommerce.fr/mktp/product/productImage/8/52/4ed9e81356634c9b99e7330aad97a2de.webp",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.techno-science.net/dossier/test-bogist-m5-pro-trottinette-electrique-voyager-avec-confort-D117.html",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://www.rueducommerce.fr/p/m24107800046.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://buy-escooter.com/products/bogist-m5-pro-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 11,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800046.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.techno-science.net/dossier/test-bogist-m5-pro-trottinette-electrique-voyager-avec-confort-D117.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 12,
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24107800046.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Fourche avant hydraulique + selle à ressort",
+            "source_url": "https://bogistshop.com/blogs/blogs/discover-the-ultimate-urban-commuting-tool-bogist-m5-pro-in-depth-review-experience",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP64",
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.rueducommerce.fr/p/m24107800046.html",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Bogist M5 Pro est une trottinette électrique avec siège équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 11 Ah, annoncée jusqu'à 40 km/h une fois débridée (25 km/h en configuration bridée) et jusqu'à 40 km d'autonomie. Elle roule sur des pneus pneumatiques de 12 pouces et dispose de freins à disque avant et arrière, d'un indice d'étanchéité IP64 et d'un poids d'environ 25 kg pour 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.trottnshop.com/produit/bogist-m5-pro/",
+            "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "https://www.rueducommerce.fr/p/m24107800046.html"
+          ],
+          "_og_images": [
+            "https://media.rueducommerce.fr/mktp/product/productImage/8/52/4ed9e81356634c9b99e7330aad97a2de.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.techno-science.net/dossier/test-bogist-m5-pro-trottinette-electrique-voyager-avec-confort-D117.html",
+            "source_url_2": "https://fr.chinaplanet.sk/recenzia-bogist-m5-pro/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.rueducommerce.fr/p/m24107800046.html",
+            "source_url_2": "https://www.thomas-trottinettes.com/produit/trottinette-electrique-bogist-m5-pro/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Bogist C1 Pro",
+        "slug": "bogist-c1-pro",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 500,
+        "max_speed_private_kmh": 45,
+        "range_km": 45,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 23.21,
+        "suspension": "Triple amortisseur : roue avant, roue arrière et tige de selle",
+        "ip_rating": "IP64",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0",
+          "https://media.rueducommerce.fr/mktp/product/productImage/12/66/edb34c568fcb4b29898b8cc9ab37c1a9.webp",
+          "https://www.trottnscoot.com/wp-content/uploads/2022/08/bogist-c1-pro-296x300.jpg"
+        ],
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Bogist C1 Pro est une trottinette électrique pliable à selle amovible, équipée d'un moteur brushless de 500 W, d'une batterie lithium 48 V 13 Ah (autonomie annoncée jusqu'à 45 km) et de pneus de 10 pouces avec triple système d'amortissement. Elle dispose d'un double freinage à disque (avec frein électronique) et atteint 45 km/h en mode débridé, la vitesse étant bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Bogist C1 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Bogist C1 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "bogist c1 pro, pieces bogist c1 pro, disque frein bogist c1 pro, plaquettes bogist c1 pro, pneu bogist c1 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+          "type": "revendeur",
+          "url2": "https://alloybike.co.uk/products/bogist-c1-pro-folding-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://bogistshop.com/products/bogist-c1-pro-electric-scooter-500w-48v-13ah-40km-shockproof-and-stab-proof-with-seat-give-away-bag-lock-and-smartphone-holder-1",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/9000921802",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
+        "tire_family": {
+          "url": "https://fr.geekbuying.com/item/BOGIST-C1-PRO-Folding-Electric-Scooter-500W-Motor-13Ah-Battery-Black-459094.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 23.21,
+            "source_url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+            "source_url_2": "https://alloybike.co.uk/products/bogist-c1-pro-folding-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889930.html",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889930.html",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889930.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+            "source_url_2": "https://meilleurtest.fr/fiche-bogist-c1-pro/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://bogistshop.com/products/bogist-c1-pro-electric-scooter-500w-48v-13ah-40km-shockproof-and-stab-proof-with-seat-give-away-bag-lock-and-smartphone-holder-1",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://trottinettepro.com/fr/554-trottinette-electrique-bogist-c1-pro-48v-600w-7444855751756.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Triple amortisseur : roue avant, roue arrière et tige de selle",
+            "source_url": "https://bogistshop.com/products/bogist-c1-pro-electric-scooter-500w-48v-13ah-40km-shockproof-and-stab-proof-with-seat-give-away-bag-lock-and-smartphone-holder-1",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889930.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP64",
+            "source_url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie",
+            "source_url_2": "https://trottinettepro.com/fr/554-trottinette-electrique-bogist-c1-pro-48v-600w-7444855751756.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25078889930.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Bogist C1 Pro est une trottinette électrique pliable à selle amovible, équipée d'un moteur brushless de 500 W, d'une batterie lithium 48 V 13 Ah (autonomie annoncée jusqu'à 45 km) et de pneus de 10 pouces avec triple système d'amortissement. Elle dispose d'un double freinage à disque (avec frein électronique) et atteint 45 km/h en mode débridé, la vitesse étant bridée à 25 km/h en usage routier. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.boulanger.com/ref/9000921802",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921802",
+            "https://www.rueducommerce.fr/p/m25078889930.html",
+            "https://www.trottnscoot.com/produit/trottinette-electrique-bogist-c1-pro/"
+          ],
+          "_og_images": [
+            "https://boulanger.scene7.com/is/image/Boulanger/9331187241490_h_f_l_0",
+            "https://media.rueducommerce.fr/mktp/product/productImage/12/66/edb34c568fcb4b29898b8cc9ab37c1a9.webp",
+            "https://www.trottnscoot.com/wp-content/uploads/2022/08/bogist-c1-pro-296x300.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fr.geekbuying.com/item/BOGIST-C1-PRO-Folding-Electric-Scooter-500W-Motor-13Ah-Battery-Black-459094.html",
+            "source_url_2": "https://www.but.fr/produits/0739719852463/C1-Pro-Nouvelle-Trottinette-Electrique-Pliante-Pneu-10-Pouces.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

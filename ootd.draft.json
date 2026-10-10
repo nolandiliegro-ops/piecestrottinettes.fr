@@ -1,0 +1,560 @@
+{
+  "brandName": "Ootd",
+  "results": [
+    {
+      "scooter": {
+        "name": "Ootd T10",
+        "slug": "ootd-t10",
+        "voltage": 48,
+        "amperage": 18,
+        "power_watts": 900,
+        "max_speed_private_kmh": 50,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 28.1,
+        "suspension": "Amortisseurs à ressort avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "11\" tubeless hybride tout-terrain 90/65-6.5",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://evelostore.fr/cdn/shop/files/T10.426.jpg?v=1770809109"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La OOTD T10 est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (900 W en crête) et d'une batterie 48 V 13,5 Ah ou 18 Ah. Elle roule sur des pneus de 11 pouces, avec doubles amortisseurs à ressort et freins à disque avant et arrière, et sa vitesse est bridée à 25 km/h (jusqu'à 50 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Ootd T10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Ootd T10 : disque de frein 140 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "ootd t10, pieces ootd t10, disque frein ootd t10, plaquettes ootd t10, pneu ootd t10"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.boulanger.com/ref/9000921757",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.boulanger.com/ref/9000921757",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-t10-elektroroller-48v/f-1214801-aabjp14754.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.boulanger.com/ref/9000921757",
+          "type": "distributeur",
+          "url2": "https://www.e.leclerc/fp/ootd-t10-18ah-trottinette-electrique-pliable-autonomie-80km-pneu-11-pouces-0999385981199"
+        },
+        "suspension": {
+          "url": "https://www.fnac.com/mp52400862/Trottinette-electrique-OOTD-T10-moteur-500-W-batterie-48-V-13-5-Ah-pneus-11-pouces-vitesse-maximale-50-km-h-autonomie-45-km/w-4?treas=th&sta=630188&qu=1e58d47695a6",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://ootd.se/en/products/ootd-t10-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921757",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://o-otd.com/products/ootd-t10-e-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://evelostore.fr/cdn/shop/files/T10.426.jpg?v=1770809109",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur",
+          "url2": "https://www.rueducommerce.fr/p/m25048652697.html"
+        },
+        "tire_family": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "reason": "page de roue complète (fournit la jante)"
+        },
+        {
+          "key": "tire_section",
+          "value": "90/65",
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 28.1,
+            "source_url": "https://www.boulanger.com/ref/9000921757",
+            "source_url_2": "https://www.e.leclerc/fp/ootd-t10-18ah-trottinette-electrique-pliable-autonomie-80km-pneu-11-pouces-0999385981199",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000921757",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://www.boulanger.com/ref/9000921757",
+            "source_url_2": "https://trott-en-provence.fr/trottinette-electrique-ootd-t10/",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 900,
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": "https://ootd.se/en/products/ootd-t10-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": "https://www.fnac.com/mp52562818/Trottinette-electrique-pliable-OOTD-T10-moteur-Peak-900-W-batterie-48-V-13-5-Ah-pneu-pneumatique-11-pouces-double-frein-a-disque-charge-120-kg-suspension-complete-vitesse-maximale-50-km-h/w-4",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://www.boulanger.com/ref/9000921757",
+            "source_url_2": "https://www.oolactive.com/products/ootd-t10-electric-scooter-18ah",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000921757",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000921757",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11\" tubeless hybride tout-terrain 90/65-6.5",
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Amortisseurs à ressort avant et arrière",
+            "source_url": "https://www.fnac.com/mp52400862/Trottinette-electrique-OOTD-T10-moteur-500-W-batterie-48-V-13-5-Ah-pneus-11-pouces-vitesse-maximale-50-km-h-autonomie-45-km/w-4?treas=th&sta=630188&qu=1e58d47695a6",
+            "source_url_2": "https://www.oolactive.com/products/ootd-t10-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://ootd.se/en/products/ootd-t10-electric-scooter",
+            "source_url_2": "https://www.oolactive.com/products/ootd-t10-electric-scooter-18ah",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921757",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-t10-trottinette/f-1214801-aabxe92820.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-t10-elektroroller-48v/f-1214801-aabjp14754.html",
+            "source_url_2": "https://www.123comparer.fr/trottinettes-electriques/8y4uocjs8y3ukc3i8r5dg.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La OOTD T10 est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (900 W en crête) et d'une batterie 48 V 13,5 Ah ou 18 Ah. Elle roule sur des pneus de 11 pouces, avec doubles amortisseurs à ressort et freins à disque avant et arrière, et sa vitesse est bridée à 25 km/h (jusqu'à 50 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://o-otd.com/products/ootd-t10-e-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921757",
+            "https://evelostore.fr/products/trottinette-electrique-ootd-t10",
+            "https://www.e.leclerc/fp/ootd-t10-18ah-trottinette-electrique-pliable-autonomie-80km-pneu-11-pouces-0999385981199"
+          ],
+          "_og_images": [
+            "http://evelostore.fr/cdn/shop/files/T10.426.jpg?v=1770809109"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://le-velo-urbain.com/est-avis-trottinette-electrique-ootd-t10/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25048652697.html",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-ootd-t10/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Ootd T10 Pro",
+        "slug": "ootd-t10-pro",
+        "voltage": 52,
+        "amperage": 23.4,
+        "power_watts": 2600,
+        "max_speed_private_kmh": 65,
+        "range_km": 70,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 40.5,
+        "suspension": "Double ressort avant (1200 lb) + ressort arrière (2200 lb)",
+        "ip_rating": "IP54",
+        "tire_size": "90/65-6.5 (tubeless hybride tout-terrain 11 pouces)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://voltrix.fr/wp-content/uploads/2026/05/T10-pro-avantt.webp"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "score_offroad": 53,
+        "description": "L'OOTD T10 Pro est une trottinette électrique pliable à double moteur (2 x 1300 W en pointe, 2600 W au total) alimentée par une batterie 52 V 23,4 Ah annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 11 pouces, avec suspensions avant et arrière et freins à disque hydrauliques. La vitesse est bridée à 25 km/h par défaut et peut atteindre 65 km/h en mode débridé sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Ootd T10 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Ootd T10 Pro : disque de frein 140 mm, plaquettes, pneus 90/65, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "ootd t10 pro, pieces ootd t10 pro, disque frein ootd t10 pro, plaquettes ootd t10 pro, pneu ootd t10 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.gleeride.com/products/ootd-t10-pro-11-trottinette-electrique-tout-terrain-moteur-2600w-52v-23-4ah-batterie",
+          "type": "revendeur",
+          "url2": "https://www.boulanger.com/ref/9000930723"
+        },
+        "suspension": {
+          "url": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-t10-pro/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000930723",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/9000930723",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "https://voltrix.fr/wp-content/uploads/2026/05/T10-pro-avantt.webp",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur",
+          "url2": "https://helpmytrott.fr/p/ootd-t10-pro"
+        },
+        "rim_diameter": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur",
+          "url2": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/"
+        },
+        "tire_section": {
+          "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+          "type": "constructeur",
+          "url2": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 52,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 23.4,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2600,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-t10-pro/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 40.5,
+            "source_url": "https://fr.gleeride.com/products/ootd-t10-pro-11-trottinette-electrique-tout-terrain-moteur-2600w-52v-23-4ah-batterie",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://helpmytrott.fr/p/ootd-t10-pro",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.boulanger.com/ref/9000930723",
+            "source_url_2": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (tubeless hybride tout-terrain 11 pouces)",
+            "source_url": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+            "source_url_2": "https://xvelogo.com/pages/guide-ootd-t10-pro-france",
+            "source_type": "site_test"
+          },
+          "suspension": {
+            "value": "Double ressort avant (1200 lb) + ressort arrière (2200 lb)",
+            "source_url": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+            "source_url_2": "https://helpmytrott.fr/p/ootd-t10-pro",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-t10-pro/",
+            "source_url_2": "https://helpmytrott.fr/p/ootd-t10-pro",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000930723",
+            "source_url_2": "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-t10-pro/",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'OOTD T10 Pro est une trottinette électrique pliable à double moteur (2 x 1300 W en pointe, 2600 W au total) alimentée par une batterie 52 V 23,4 Ah annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 11 pouces, avec suspensions avant et arrière et freins à disque hydrauliques. La vitesse est bridée à 25 km/h par défaut et peut atteindre 65 km/h en mode débridé sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000930723",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-t10-pro-trottinette/f-1214801-aacvk19647.html",
+            "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-t10-pro/"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "https://voltrix.fr/wp-content/uploads/2026/05/T10-pro-avantt.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://www.boulanger.com/ref/9000930723",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://helpmytrott.fr/p/ootd-t10-pro",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+            "source_url_2": "https://trottinetteelectrique.pro/ootd/ootd-t10-pro-avis/",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

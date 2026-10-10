@@ -1,0 +1,463 @@
+{
+  "brandName": "Olsson & Brothers",
+  "results": [
+    {
+      "scooter": {
+        "name": "Olsson & Brothers Fresh",
+        "slug": "olsson-brothers-fresh",
+        "amperage": 6,
+        "power_watts": 500,
+        "range_km": 25,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://www.tradeinn.com/f/14034/140341852/olsson-fresh-neon-8.5-dgt-electric-scooter.webp"
+        ],
+        "score_offroad": 18,
+        "description": "L'Olsson & Brothers Fresh est une trottinette électrique pliable à moteur de 350 W nominal (500 W max), alimentée par une batterie lithium de 6 Ah (6000 mAh) pour jusqu'à 25 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces, avec un double freinage (frein électrique ABS + frein à disque), des feux LED avant et arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Olsson & Brothers Fresh - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Olsson & Brothers Fresh : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "olsson & brothers fresh, pieces olsson & brothers fresh, disque frein olsson & brothers fresh, plaquettes olsson & brothers fresh, pneu olsson & brothers fresh"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.tradeinn.com/f/14034/140341852/olsson-fresh-neon-8.5-dgt-electric-scooter.webp",
+          "type": "og:image fiche produit"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 12,
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 12,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "amperage": {
+            "value": 6,
+            "source_url": "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+            "source_url_2": "https://www.tradeinn.com/dressinn/en/olsson-fresh-neon-8.5-dgt-electric-scooter/140341852/p",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+            "source_url_2": "https://www.deporvillage.fr/trottinette-electrique-olsson-and-brothers-fresh-8-5-350w-rouge-gris",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+            "source_url_2": "https://www.tradeinn.com/dressinn/en/olsson-fresh-neon-8.5-dgt-electric-scooter/140341852/p",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-fresh-wild-red",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+            "source_url_2": "https://www.tradeinn.com/dressinn/en/olsson-fresh-neon-8.5-dgt-electric-scooter/140341852/p",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/02/Manual-FRESH-2024.pdf",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'Olsson & Brothers Fresh est une trottinette électrique pliable à moteur de 350 W nominal (500 W max), alimentée par une batterie lithium de 6 Ah (6000 mAh) pour jusqu'à 25 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces, avec un double freinage (frein électrique ABS + frein à disque), des feux LED avant et arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/patinete-electrique-olsson-and-brothers-fresh-wild-red-300w-autonomie-25km-roues-85-rouge",
+            "https://www.deporvillage.fr/trottinette-electrique-olsson-and-brothers-fresh-8-5-350w-rouge-gris",
+            "https://www.tradeinn.com/dressinn/en/olsson-fresh-neon-8.5-dgt-electric-scooter/140341852/p"
+          ],
+          "_og_images": [
+            "https://www.tradeinn.com/f/14034/140341852/olsson-fresh-neon-8.5-dgt-electric-scooter.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Olsson & Brothers Fresh Slim",
+        "slug": "olsson-brothers-fresh-slim",
+        "voltage": 36,
+        "amperage": 5.2,
+        "power_watts": 500,
+        "range_km": 18,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 12,
+        "suspension": "Semi rigide",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "tire_family": "pneumatic",
+        "score_offroad": 18,
+        "description": "L'Olsson & Brothers Fresh Slim est équipée d'un moteur de 500 W maximum (250 W nominal) alimenté par une batterie lithium 36 V de 5 200 mAh, pour jusqu'à 18 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces, freine avec un frein électrique et un frein à disque mécanique, et sa vitesse est bridée à 25 km/h pour 12 kg sur la balance. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Olsson & Brothers Fresh Slim - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Olsson & Brothers Fresh Slim : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "olsson & brothers fresh slim, pieces olsson & brothers fresh slim, disque frein olsson & brothers fresh slim, plaquettes olsson & brothers fresh slim, pneu olsson & brothers fresh slim"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.manualslib.com/manual/3484761/Olsson-And-Brothers-Fresh-Slim.html",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+          "type": "constructeur",
+          "url2": "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524"
+        },
+        "suspension": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://olssonandbrothers.es/productos/fresh-slim/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "brake_type",
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 12,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+            "source_url_2": "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+            "source_url_2": "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 5.2,
+            "source_url": "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524",
+            "source_url_2": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 18,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.manualslib.com/manual/3484761/Olsson-And-Brothers-Fresh-Slim.html",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Semi rigide",
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_url_2": "https://olssonandbrothers.es/wp-content/uploads/2024/05/FRESH-SLIM-con-VMP.pdf",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Olsson & Brothers Fresh Slim est équipée d'un moteur de 500 W maximum (250 W nominal) alimenté par une batterie lithium 36 V de 5 200 mAh, pour jusqu'à 18 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces, freine avec un frein électrique et un frein à disque mécanique, et sa vitesse est bridée à 25 km/h pour 12 kg sur la balance. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.decathlon.fr/p/mp/trottinette-electrique-olsson-slim-dgt-2026-500w-18-km-d-autonomie-12-kg/62592168-996c-4552-9940-85a470b206fb/c7",
+            "https://www.e.leclerc/fp/trottinette-electrique-olsson-fresh-slim-moteur-de-250w-36v-nominale-batterie-5200-mah-18-km-d-autonomie-led-roues-gonflables-de-8-5-8445488112524",
+            "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://olssonandbrothers.es/productos/fresh-slim/",
+            "source_url_2": "https://www.pccomponentes.fr/trottinette-electrique-olsson-and-brothers-vitesse-maximale-de-25-km-h-autonomie-de-18-km-moteur-de-500-w-ecran-lcd-led-de-85-pouces",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
