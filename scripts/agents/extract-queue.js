@@ -34,7 +34,10 @@ const ADD = Number(cfg.ajout_modeles || 0);
 const draftOf = (it) => { try { return JSON.parse(readFileSync(resolve(dataDir, `${it.out}.draft.json`), 'utf-8')); } catch { return null; } };
 const addDone = (it) => { const d = draftOf(it); return !d || !(d.results || []).length || Boolean(d.ajout); };
 // GARDE-FOU 1 : les bancs de test ne sont jamais des marques (acté 10/10 : 3 ajouts payés sur les bancs Vsett)
-const todo = (cfg.file || []).filter((it) => !it.banc && !/banc/.test(it.out)).filter((it) => (ADD ? !addDone(it) : !done(it)));
+// Filtre optionnel (10/10) : « seulement » = liste ordonnée de slugs ; l'ordre de la liste fixe l'ordre de passage.
+const ONLY = Array.isArray(cfg.seulement) && cfg.seulement.length ? cfg.seulement : null;
+const base = (cfg.file || []).filter((it) => !it.banc && !/banc/.test(it.out)).filter((it) => (ADD ? !addDone(it) : !done(it)));
+const todo = ONLY ? ONLY.map((o) => base.find((it) => it.out === o)).filter(Boolean) : base;
 const batch = todo.slice(0, Math.max(0, max));
 console.log(`File : ${cfg.file.length} marques · déjà faites : ${cfg.file.length - todo.length} · ce run : ${batch.map((b) => b.brand).join(', ') || 'rien'}`);
 
