@@ -47,6 +47,87 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_amperage_20261010: {
+        Row: {
+          amperage: number | null
+          id: string | null
+          saved_at: string | null
+        }
+        Insert: {
+          amperage?: number | null
+          id?: string | null
+          saved_at?: string | null
+        }
+        Update: {
+          amperage?: number | null
+          id?: string | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brands_lot4_20261010: {
+        Row: {
+          id: string | null
+          logo_url: string | null
+          published: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brands_lot5_20261010b: {
+        Row: {
+          id: string | null
+          logo_url: string | null
+          published: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brands_publish_20261010: {
+        Row: {
+          id: string | null
+          name: string | null
+          published: boolean | null
+          saved_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          name?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          name?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
       _backup_caliper_20260718: {
         Row: {
           caliper_family: string | null
@@ -98,6 +179,51 @@ export type Database = {
           fitment_specs?: Json | null
           id?: string | null
           sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_charge_conn_20261011: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cle_roue_20261010: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          rim_diameter_code: string | null
+          slug: string | null
+          tire_family: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_family?: string | null
+          tire_section_code?: string | null
         }
         Relationships: []
       }
@@ -356,6 +482,48 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_ewheel_lot1_20261011: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          sku: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_ewheel_lot2_20261011: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          sku: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       _backup_images_audit_20260929: {
         Row: {
           id: string | null
@@ -434,6 +602,276 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_logos_20261010: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_logos_marques_20261010: {
+        Row: {
+          id: string | null
+          logo_url: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          logo_url?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          logo_url?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_lot3_20261010: {
+        Row: {
+          id: string | null
+          kind: string | null
+          published: boolean | null
+        }
+        Insert: {
+          id?: string | null
+          kind?: string | null
+          published?: boolean | null
+        }
+        Update: {
+          id?: string | null
+          kind?: string | null
+          published?: boolean | null
+        }
+        Relationships: []
+      }
+      _backup_lot4_20261010: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          published: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_lot5_20261010: {
+        Row: {
+          id: string | null
+          kind: string | null
+          published: boolean | null
+        }
+        Insert: {
+          id?: string | null
+          kind?: string | null
+          published?: boolean | null
+        }
+        Update: {
+          id?: string | null
+          kind?: string | null
+          published?: boolean | null
+        }
+        Relationships: []
+      }
+      _backup_lot5b_20261010: {
+        Row: {
+          affiliate_link: string | null
+          amperage: number | null
+          brake_type: string | null
+          brand_id: string | null
+          caliper_family: string | null
+          compatible_parts_count: number | null
+          created_at: string | null
+          description: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          foldable: boolean | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          ip_rating: string | null
+          is_featured_home: boolean | null
+          is_top_moment: boolean | null
+          max_load_kg: number | null
+          max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          power_watts: number | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+          published: boolean | null
+          range_km: number | null
+          rim_diameter_code: string | null
+          rim_type: string | null
+          rim_width_code: string | null
+          score_auto_adj: number | null
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_offroad_adj: number | null
+          score_perf_adj: number | null
+          score_performance: number | null
+          search_terms: string | null
+          slug: string | null
+          solid_conversion: string | null
+          suspension: string | null
+          technical_signature: Json | null
+          tire_family: string | null
+          tire_section_code: string | null
+          tire_size: string | null
+          voltage: number | null
+          weight_kg: number | null
+          wheel_inches: number | null
+          wheel_size_inches: number | null
+          year: number | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
       _backup_nutt_vented_20260929: {
         Row: {
           id: string | null
@@ -452,6 +890,24 @@ export type Database = {
           kind?: string | null
           ref?: string | null
           val?: Json | null
+        }
+        Relationships: []
+      }
+      _backup_ootd_tirefam_20261011: {
+        Row: {
+          id: string | null
+          slug: string | null
+          tire_family: string | null
+        }
+        Insert: {
+          id?: string | null
+          slug?: string | null
+          tire_family?: string | null
+        }
+        Update: {
+          id?: string | null
+          slug?: string | null
+          tire_family?: string | null
         }
         Relationships: []
       }
@@ -881,6 +1337,195 @@ export type Database = {
           position?: string | null
           scooter_model_id?: string | null
           suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_publish_sans_disque_20261010: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_republish_20261010: {
+        Row: {
+          affiliate_link: string | null
+          amperage: number | null
+          brake_type: string | null
+          brand_id: string | null
+          caliper_family: string | null
+          compatible_parts_count: number | null
+          created_at: string | null
+          description: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          foldable: boolean | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          ip_rating: string | null
+          is_featured_home: boolean | null
+          is_top_moment: boolean | null
+          max_load_kg: number | null
+          max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          power_watts: number | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+          published: boolean | null
+          range_km: number | null
+          rim_diameter_code: string | null
+          rim_type: string | null
+          rim_width_code: string | null
+          score_auto_adj: number | null
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_offroad_adj: number | null
+          score_perf_adj: number | null
+          score_performance: number | null
+          search_terms: string | null
+          slug: string | null
+          solid_conversion: string | null
+          suspension: string | null
+          technical_signature: Json | null
+          tire_family: string | null
+          tire_section_code: string | null
+          tire_size: string | null
+          voltage: number | null
+          weight_kg: number | null
+          wheel_inches: number | null
+          wheel_size_inches: number | null
+          year: number | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
         }
         Relationships: []
       }
@@ -1715,6 +2360,24 @@ export type Database = {
         Update: {
           code?: string
           label_client?: string | null
+          note?: string | null
+        }
+        Relationships: []
+      }
+      fitment_charge_connectors: {
+        Row: {
+          code: string
+          label_client: string
+          note: string | null
+        }
+        Insert: {
+          code: string
+          label_client: string
+          note?: string | null
+        }
+        Update: {
+          code?: string
+          label_client?: string
           note?: string | null
         }
         Relationships: []
@@ -2833,6 +3496,7 @@ export type Database = {
           brake_type: string | null
           brand_id: string
           caliper_family: string | null
+          charge_connectors: string[] | null
           compatible_parts_count: number | null
           created_at: string
           description: string | null
@@ -2888,6 +3552,7 @@ export type Database = {
           brake_type?: string | null
           brand_id: string
           caliper_family?: string | null
+          charge_connectors?: string[] | null
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
@@ -2943,6 +3608,7 @@ export type Database = {
           brake_type?: string | null
           brand_id?: string
           caliper_family?: string | null
+          charge_connectors?: string[] | null
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
