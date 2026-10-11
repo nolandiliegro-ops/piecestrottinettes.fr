@@ -356,10 +356,9 @@
   "plafond_tokens_run": 2000000,
   "arret_apres_marques_sans_gain": 3,
   "seulement": [
-    "olsson",
-    "dyu",
-    "ootd",
-    "bogist",
-    "velity"
+    "apollo-2",
+    "cecotec",
+    "globber-2",
+    "bronco-2"
   ]
 }
