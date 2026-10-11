@@ -1,7 +1,7 @@
 {
   "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
   "nuit_active": false,
-  "max_marques_par_run": 4,
+  "max_marques_par_run": 2,
   "file": [
     {
       "brand": "Vsett",
@@ -350,15 +350,35 @@
       "out": "bronco-2",
       "tier": "R",
       "note": "11/10 : 2e passe, Vnom 11 manquait poids/photo — ne pas confondre avec Vnom Xtreme 11"
+    },
+    {
+      "brand": "Apollo",
+      "models": [
+        "Air",
+        "Explore",
+        "Ghost"
+      ],
+      "out": "apollo-3",
+      "tier": "R",
+      "note": "11/10 : 3e passe, il faut 1 modèle Apollo de plus avec clés frein complètes (Phantom 2.0 : diamètre disque introuvable). Préférer un frein tambour ou un disque dont diamètre ET trous sont publiés."
+    },
+    {
+      "brand": "Cecotec",
+      "models": [
+        "Bongo Serie A Advance Connected",
+        "Bongo Serie D20 XL",
+        "Bongo Serie S Max"
+      ],
+      "out": "cecotec-2",
+      "tier": "R",
+      "note": "11/10 : 2e passe, D30 XL : diamètre disque arrière introuvable. Disque Bongo série A = 120 mm 6 trous (ewheel + garagetrott)."
     }
   ],
   "ajout_modeles": 0,
   "plafond_tokens_run": 2000000,
   "arret_apres_marques_sans_gain": 3,
   "seulement": [
-    "apollo-2",
-    "cecotec",
-    "globber-2",
-    "bronco-2"
+    "apollo-3",
+    "cecotec-2"
   ]
 }
