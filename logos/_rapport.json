@@ -145,7 +145,16 @@
       "adrya.fr → TypeError",
       "adrya.com → TypeError"
     ],
-    "icon": null,
+    "icon": {
+      "url": "https://www.google.com/s2/favicons?domain=adrya.com&sz=256",
+      "ext": "png",
+      "png": {
+        "w": 128,
+        "h": 128
+      },
+      "bytes": 10865,
+      "repli": "favicon Google"
+    },
     "logo": null
   },
   "apollo": {
@@ -268,6 +277,24 @@
       },
       "bytes": 1873,
       "repli": "favicon Google"
+    },
+    "logo": null
+  },
+  "cecotec": {
+    "tried": [
+      "cecotec.es → 200",
+      "cecotec.fr → TypeError",
+      "storececotec.com → 200"
+    ],
+    "icon": {
+      "url": "https://cecotec.es/android-chrome-256x256.png",
+      "ext": "png",
+      "declared": 256,
+      "png": {
+        "w": 256,
+        "h": 256
+      },
+      "bytes": 16569
     },
     "logo": null
   }
