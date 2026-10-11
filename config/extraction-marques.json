@@ -1,7 +1,7 @@
 {
   "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
   "nuit_active": false,
-  "max_marques_par_run": 5,
+  "max_marques_par_run": 4,
   "file": [
     {
       "brand": "Vsett",
@@ -310,6 +310,46 @@
       "out": "velity",
       "tier": "R",
       "note": "réserve 10/10 vers 50 marques"
+    },
+    {
+      "brand": "Apollo",
+      "models": [
+        "City Pro",
+        "Phantom 2.0"
+      ],
+      "out": "apollo-2",
+      "tier": "R",
+      "note": "11/10 : 2e passe ciblée, City Pro manquait le poids (apolloscooters.co publie les poids)"
+    },
+    {
+      "brand": "Cecotec",
+      "models": [
+        "Bongo Serie D30 XL Connected",
+        "Bongo Serie A Advance Connected"
+      ],
+      "out": "cecotec",
+      "tier": "R",
+      "note": "11/10 : nouvelle marque FR grande distribution pour atteindre 50"
+    },
+    {
+      "brand": "Globber",
+      "models": [
+        "E-Motion 6",
+        "E-Motion 4 Plus"
+      ],
+      "out": "globber-2",
+      "tier": "R",
+      "note": "11/10 : 2e passe, E-Motion 4 Plus manquait poids/frein/photo"
+    },
+    {
+      "brand": "Bronco",
+      "models": [
+        "Xtreme 11",
+        "Vnom 11"
+      ],
+      "out": "bronco-2",
+      "tier": "R",
+      "note": "11/10 : 2e passe, Vnom 11 manquait poids/photo — ne pas confondre avec Vnom Xtreme 11"
     }
   ],
   "ajout_modeles": 0,

@@ -1,0 +1,71 @@
+{
+ "brandName": "Laotie",
+ "scooters": [
+  {
+   "name": "Laotie Ti30",
+   "slug": "laotie-ti30",
+   "voltage": 60,
+   "amperage": 38.6,
+   "power_watts": 5600,
+   "max_speed_private_kmh": 85,
+   "range_km": 140,
+   "max_load_kg": 200,
+   "year": 2020,
+   "max_speed_kmh": 25,
+   "suspension": "Double suspension avant et arrière",
+   "tire_size": "11 pouces tubeless",
+   "foldable": true,
+   "wheel_inches": 11,
+   "brake_type": "disc_hydraulic",
+   "disc_diameter": 140,
+   "rim_diameter": "6.5",
+   "tire_section": "90/65",
+   "caliper_family": "zoom",
+   "tire_family": "pneumatic",
+   "score_offroad": 53,
+   "description": "La Laotie Ti30 Landbreaker est une trottinette électrique pliable à double moteur (2 x 2800 W en pointe, soit 5600 W), alimentée par une batterie lithium 60 V 38,6 Ah en cellules 21700. Elle est équipée de pneus tubeless de 11 pouces, d'une double suspension et de freins à disque hydrauliques avec frein électronique ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 85 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+   "meta_title": "Laotie Ti30 - Pièces détachées | PiècesTrottinettes.fr",
+   "meta_description": "Pièces détachées Laotie Ti30 : disque de frein 140 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+   "search_terms": "laotie ti30, pieces laotie ti30, disque frein laotie ti30, plaquettes laotie ti30, pneu laotie ti30",
+   "weight_kg": 41,
+   "source_image_urls": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//89/4C/33860186-4ecb-4a02-8a1d-00af123fe214.jpg"
+   ],
+   "disc_pcd": 44,
+   "disc_holes": 6
+  },
+  {
+   "name": "Laotie SR10",
+   "slug": "laotie-sr10",
+   "voltage": 60,
+   "amperage": 28.8,
+   "power_watts": 3600,
+   "max_speed_private_kmh": 70,
+   "range_km": 100,
+   "max_load_kg": 150,
+   "max_speed_kmh": 25,
+   "suspension": "Amortisseurs avant et arrière",
+   "ip_rating": "IP54",
+   "tire_size": "10x3.0 (80/65-6)",
+   "foldable": true,
+   "wheel_inches": 10,
+   "source_image_urls": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png"
+   ],
+   "brake_type": "disc_hydraulic",
+   "disc_diameter": 140,
+   "rim_diameter": "6",
+   "tire_section": "80/65",
+   "caliper_family": "zoom",
+   "tire_family": "pneumatic",
+   "score_offroad": 40,
+   "description": "La Laotie SR10 est une trottinette électrique pliable à double moteur de 1800 W (3600 W au total), alimentée par une batterie 60V 28,8Ah (cellules 21700) pour une autonomie annoncée jusqu'à 100 km. Elle roule sur des pneus de 10 pouces (10x3.0), avec des freins à disque hydrauliques et une suspension avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre environ 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+   "meta_title": "Laotie SR10 - Pièces détachées | PiècesTrottinettes.fr",
+   "meta_description": "Pièces détachées Laotie SR10 : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+   "search_terms": "laotie sr10, pieces laotie sr10, disque frein laotie sr10, plaquettes laotie sr10, pneu laotie sr10",
+   "weight_kg": 40,
+   "disc_pcd": 44,
+   "disc_holes": 6
+  }
+ ]
+}
