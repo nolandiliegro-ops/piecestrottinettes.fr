@@ -1,0 +1,63 @@
+{
+ "brandName": "Apollo",
+ "scooters": [
+  {
+   "name": "Apollo City Pro",
+   "slug": "apollo-city-pro",
+   "voltage": 48,
+   "amperage": 20,
+   "power_watts": 1000,
+   "range_km": 70,
+   "max_load_kg": 120,
+   "year": 2023,
+   "max_speed_kmh": 25,
+   "suspension": "Triple ressort (1 ressort avant, 2 ressorts arrière)",
+   "ip_rating": "IP66",
+   "tire_size": "10 x 2.7 pouces (tubeless auto-réparant)",
+   "foldable": true,
+   "wheel_inches": 10,
+   "source_image_urls": [
+    "http://www.electrickicks.com.au/cdn/shop/files/ApolloCityPro2023_1.png?v=1698064814",
+    "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png"
+   ],
+   "brake_type": "drum",
+   "rim_diameter": "6.5",
+   "tire_section": "10x2.70",
+   "tire_family": "pneumatic",
+   "score_offroad": 40,
+   "description": "L'Apollo City Pro (version 2023) est une trottinette électrique à double moteur de 2 x 500 W (1 000 W au total), alimentée par une batterie 48 V 20 Ah (960 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless auto-réparants de 10 pouces, avec une triple suspension à ressorts, un freinage à double tambour associé à un frein régénératif, et une protection IP66. Sa vitesse maximale de 51 km/h est bridée à 25 km/h pour un usage sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+   "meta_title": "Apollo City Pro - Pièces détachées | PiècesTrottinettes.fr",
+   "meta_description": "Pièces détachées Apollo City Pro : plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+   "search_terms": "apollo city pro, pieces apollo city pro, disque frein apollo city pro, plaquettes apollo city pro, pneu apollo city pro",
+   "weight_kg": 29.5
+  },
+  {
+   "name": "Apollo Phantom 2.0",
+   "slug": "apollo-phantom-2-0",
+   "voltage": 52,
+   "amperage": 27,
+   "power_watts": 3500,
+   "max_speed_private_kmh": 70,
+   "range_km": 80,
+   "max_load_kg": 150,
+   "max_speed_kmh": 25,
+   "weight_kg": 46.3,
+   "suspension": "Double ressorts (avant et arrière)",
+   "ip_rating": "IP66",
+   "tire_size": "11 x 4 pouces (11x4\"), tubeless hybride auto-réparant PunctureGuard",
+   "foldable": true,
+   "wheel_inches": 11,
+   "source_image_urls": [
+    "http://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2048",
+    "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+   ],
+   "brake_type": "disc_unknown_actuation",
+   "tire_family": "pneumatic",
+   "score_offroad": 50,
+   "description": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur (2 x 1 750 W de pointe, soit 3 500 W) alimentée par une batterie 52 V 27 Ah, pour une autonomie annoncée jusqu'à 80 km et une vitesse maximale de 70 km/h sur terrain privé (bridée à 25 km/h en mode Eco/réglementaire). Elle repose sur des pneus tubeless auto-réparants de 11 x 4 pouces, une double suspension à ressorts et des freins à disque avec freinage régénératif, avec une certification IP66. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+   "meta_title": "Apollo Phantom 2.0 - Pièces détachées | PiècesTrottinettes.fr",
+   "meta_description": "Pièces détachées Apollo Phantom 2.0 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+   "search_terms": "apollo phantom 2.0, pieces apollo phantom 2.0, disque frein apollo phantom 2.0, plaquettes apollo phantom 2.0, pneu apollo phantom 2.0"
+  }
+ ]
+}

@@ -1,18 +1,74 @@
 {
-  "dyu": ["dyu-bike.com", "dyuebike.com", "dyu.eu"],
-  "hiboy": ["hiboy.com", "hiboy.eu"],
-  "ootd": ["ootdscooter.com", "ootd-scooter.com", "ootd.eu"],
-  "velity": ["velity.fr", "velityscooter.com", "velity.com"],
-  "micro": ["micro-mobility.com", "micro-mobility.fr"],
-  "e-twow": ["e-twow.com", "shop.e-twow.com"],
-  "globber": ["globber.com", "globber.fr"],
-  "mercane": ["mercane.com", "mercanescooter.com"],
-  "beaster": ["beasterscooter.com", "beaster.fr"],
-  "adrya": ["adrya.fr", "adrya.com"],
-  "apollo": ["apolloscooters.co", "apolloscooters.ca"],
-  "laotie": ["laotie.zone", "laotie.com"],
-  "bronco": ["broncoscooters.com", "bronco.com.au"],
-  "bogist": ["bogist.com", "bogist.fr"],
-  "olsson": ["olssonandbrothers.com", "olsson-brothers.com"],
-  "oxelo": ["oxelo.com", "decathlon.fr"]
+  "dyu": [
+    "dyu-bike.com",
+    "dyuebike.com",
+    "dyu.eu"
+  ],
+  "hiboy": [
+    "hiboy.com",
+    "hiboy.eu"
+  ],
+  "ootd": [
+    "ootdscooter.com",
+    "ootd-scooter.com",
+    "ootd.eu"
+  ],
+  "velity": [
+    "velity.fr",
+    "velityscooter.com",
+    "velity.com"
+  ],
+  "micro": [
+    "micro-mobility.com",
+    "micro-mobility.fr"
+  ],
+  "e-twow": [
+    "e-twow.com",
+    "shop.e-twow.com"
+  ],
+  "globber": [
+    "globber.com",
+    "globber.fr"
+  ],
+  "mercane": [
+    "mercane.com",
+    "mercanescooter.com"
+  ],
+  "beaster": [
+    "beasterscooter.com",
+    "beaster.fr"
+  ],
+  "adrya": [
+    "adrya.fr",
+    "adrya.com"
+  ],
+  "apollo": [
+    "apolloscooters.co",
+    "apolloscooters.ca"
+  ],
+  "laotie": [
+    "laotie.zone",
+    "laotie.com"
+  ],
+  "bronco": [
+    "broncoscooters.com",
+    "bronco.com.au"
+  ],
+  "bogist": [
+    "bogist.com",
+    "bogist.fr"
+  ],
+  "olsson": [
+    "olssonandbrothers.com",
+    "olsson-brothers.com"
+  ],
+  "oxelo": [
+    "oxelo.com",
+    "decathlon.fr"
+  ],
+  "cecotec": [
+    "cecotec.es",
+    "cecotec.fr",
+    "storececotec.com"
+  ]
 }
