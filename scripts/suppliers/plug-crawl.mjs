@@ -90,6 +90,7 @@ async function wooSearch(base, term, source) {
     const url = `${base}/wp-json/wc/store/v1/products?search=${encodeURIComponent(term)}&per_page=100&page=${page}`;
     const res = await fetch(url, { headers: UA });
     if (!res.ok) { if (page === 1) throw new Error(`${source} ${term} : HTTP ${res.status}`); break; }
+    if (!(res.headers.get('content-type') || '').includes('json')) { if (page === 1) throw new Error(`${source} : pas du JSON`); break; }
     const arr = await res.json();
     if (!Array.isArray(arr) || arr.length === 0) break;
     for (const p of arr) {
@@ -114,6 +115,7 @@ async function shopifyAll(base, source) {
   for (let page = 1; page <= 40; page++) {
     const res = await fetch(`${base}/products.json?limit=250&page=${page}`, { headers: UA });
     if (!res.ok) { if (page === 1) throw new Error(`${source} : HTTP ${res.status}`); break; }
+    if (!(res.headers.get('content-type') || '').includes('json')) { if (page === 1) throw new Error(`${source} : pas du JSON`); break; }
     const j = await res.json();
     if (!j.products || j.products.length === 0) break;
     for (const p of j.products) {
@@ -133,9 +135,20 @@ async function shopifyAll(base, source) {
 }
 
 // Liste des boutiques : une source qui échoue est NOTÉE, jamais bloquante (sauf si TOUTES échouent).
+const TERMS = ['chargeur', 'port de charge', 'adaptateur chargeur', 'disque', 'plaquette', 'pneu', 'chambre a air', 'etrier', 'charger', 'brake', 'tyre', 'tire'];
+// Boutiques : 'auto' = on essaie Shopify puis WooCommerce ; une boutique sans API publique est notée et sautée.
+// Registre des sources (11/10/2026) — garder celles qui répondent, noter les autres dans le résumé.
 export const SOURCES = [
-  { id: 'e-watts', type: 'woo', base: 'https://e-watts.fr', terms: ['chargeur', 'port de charge', 'adaptateur chargeur', 'disque', 'plaquette', 'pneu', 'chambre a air', 'etrier'] },
+  { id: 'e-watts', type: 'woo', base: 'https://e-watts.fr', terms: TERMS },
   { id: 'ewheel', type: 'shopify', base: 'https://ewheel.es/fr' },
+  ...[
+    ['steedytrott', 'https://steedytrott.com'], ['trottipieces', 'https://trottipieces.fr'], ['garagetrott', 'https://garagetrott.fr'],
+    ['voltitrott', 'https://voltitrott.com'], ['help-my-trott', 'https://www.help-my-trott.com'], ['piecetrott', 'https://piecetrott.com'],
+    ['trottwheelshop', 'https://trottwheelshop.fr'], ['evolt', 'https://www.evolt.eu'], ['voltride', 'https://voltride.com'],
+    ['veloshop-obernai', 'https://www.veloshop-obernai.com'], ['luckyster', 'https://www.luckyster.fr'], ['ezbikes', 'https://ezbikes.ie'],
+    ['dualtron-shop', 'https://dualtron-shop.com'], ['goemotion', 'https://goemotion.eu'], ['mrtrottinette', 'https://mrtrottinette.fr'],
+    ['solution-trottinette', 'https://solution-trottinette.fr'], ['escootparts', 'https://escootparts.com'], ['wegoboard', 'https://wegoboard.com'],
+  ].map(([id, base]) => ({ id, type: 'auto', base, terms: TERMS })),
 ];
 
 const RELEVANT = /chargeur|charger|cargador|port de charge|prise de charge|charging port|adaptat|disque|disc|plaquette|pad|pneu|tire|tyre|chambre|tube|[ée]trier|caliper/i;
@@ -146,15 +159,21 @@ async function main() {
   for (const s of SOURCES) {
     try {
       let got = [];
-      if (s.type === 'woo') for (const t of s.terms) { got.push(...(await wooSearch(s.base, t, s.id))); await sleep(500); }
-      else got = await shopifyAll(s.base, s.id);
+      let mode = s.type;
+      if (mode === 'auto') {
+        try { got = await shopifyAll(s.base, s.id); mode = 'shopify'; }
+        catch { mode = 'woo'; }
+      }
+      if (mode === 'woo') for (const t of s.terms) { try { got.push(...(await wooSearch(s.base, t, s.id))); } catch (e) { if (got.length === 0 && t === s.terms[0]) throw new Error(`ni Shopify ni Woo (${e.message})`); } await sleep(500); }
+      else if (mode === 'shopify' && s.type !== 'auto') got = await shopifyAll(s.base, s.id);
+      s.mode = mode;
       const seen = new Set();
       const kept = got.filter((r) => RELEVANT.test(r.title + ' ' + r.cats) && !seen.has(r.url + r.title) && seen.add(r.url + r.title));
       for (const r of kept) {
         const kind = detectKind(r.title);
         rows.push({ ...r, kind, plug: ['chargeur', 'port', 'adaptateur'].includes(kind) ? plugFor(kind, r.title, r.desc) : null, voltage_out: kind === 'chargeur' ? detectVoltageOut(r.title) : null, disc: kind === 'disque' ? detectDisc(`${r.title} ${r.desc}`) : null });
       }
-      report.push(`- ${s.id} : ${got.length} lus · ${kept.length} pertinents`);
+      report.push(`- ${s.id} (${s.mode}) : ${got.length} lus · ${kept.length} pertinents`);
     } catch (e) {
       report.push(`- ${s.id} : ÉCHEC ${e.message}`);
     }
