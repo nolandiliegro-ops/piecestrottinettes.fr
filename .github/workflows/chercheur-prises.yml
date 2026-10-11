@@ -1,0 +1,48 @@
+name: Chercheur de prises — catalogues concurrents
+
+# Lit les catalogues PUBLICS (WooCommerce Store API, Shopify products.json) des boutiques
+# concurrentes et extrait chargeurs / ports de charge / adaptateurs avec leur prise.
+# Dépose fournisseurs/prises/ sur la branche donnees-extraction. Aucun secret, aucune
+# écriture en base, ne touche jamais main.
+
+on:
+  schedule:
+    - cron: '41 3 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/suppliers/plug-crawl.mjs'
+      - '.github/workflows/chercheur-prises.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extracteur-marques
+  cancel-in-progress: false
+
+jobs:
+  prises:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Branche de données
+        run: |
+          git config --global user.name "extracteur-pt"
+          git config --global user.email "extracteur-pt@users.noreply.github.com"
+          git fetch origin donnees-extraction
+          git worktree add ../data -B donnees-extraction origin/donnees-extraction
+      - name: Lecture des catalogues
+        run: node scripts/suppliers/plug-crawl.mjs --out ../data/fournisseurs/prises
+      - name: Publier
+        run: |
+          cd ../data
+          git add -- fournisseurs/prises
+          if git diff --cached --quiet; then echo "Inchangé."; exit 0; fi
+          git commit -m "prises : lecture run ${{ github.run_id }}"
+          git push origin donnees-extraction
