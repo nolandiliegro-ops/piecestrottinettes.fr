@@ -1,0 +1,31 @@
+{
+  "brandName": "Cecotec",
+  "scooters": [
+    {
+      "name": "Cecotec Bongo Serie D30 XL Connected",
+      "slug": "cecotec-bongo-serie-d30-xl-connected",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 350,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.5,
+      "suspension": "Aucune",
+      "ip_rating": "IPX4",
+      "tire_size": "10x2.125",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_khqvxa_1.png"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Cecotec Bongo D30 XL Connected est équipée d'un moteur de 350 W nominal (pointe à 700 W) alimenté par une batterie 36 V 7,5 Ah (270 Wh) pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus gonflables de 10 pouces avec chambre à air, freine grâce à un frein électrique avant et un frein à disque arrière, et se connecte à une application mobile ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Cecotec Bongo Serie D30 XL Connected - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Cecotec Bongo Serie D30 XL Connected : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "cecotec bongo serie d30 xl connected, pieces cecotec bongo serie d30 xl connected, disque frein cecotec bongo serie d30 xl connected, plaquettes cecotec bongo serie d30 xl connected, pneu cecotec bongo serie d30 xl connected"
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "brandName": "Apollo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Apollo City Pro",
+        "slug": "apollo-city-pro",
+        "voltage": 48,
+        "amperage": 20,
+        "power_watts": 1000,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "suspension": "Triple ressort (1 ressort avant, 2 ressorts arrière)",
+        "ip_rating": "IP66",
+        "tire_size": "10 x 2.7 pouces (tubeless auto-réparant)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.electrickicks.com.au/cdn/shop/files/ApolloCityPro2023_1.png?v=1698064814",
+          "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.70",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo City Pro (version 2023) est une trottinette électrique à double moteur de 2 x 500 W (1 000 W au total), alimentée par une batterie 48 V 20 Ah (960 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless auto-réparants de 10 pouces, avec une triple suspension à ressorts, un freinage à double tambour associé à un frein régénératif, et une protection IP66. Sa vitesse maximale de 51 km/h est bridée à 25 km/h pour un usage sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo City Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo City Pro : plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo city pro, pieces apollo city pro, disque frein apollo city pro, plaquettes apollo city pro, pneu apollo city pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "year": {
+          "url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "tire_size": {
+          "url": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.electrickicks.com.au/cdn/shop/files/ApolloCityPro2023_1.png?v=1698064814",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://apolloscooters.ca/products/apollo-city-city-pro-2023-drum-brake-assembly",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+          "type": "revendeur",
+          "url2": "https://rideelectric.com.au/products/apollo-city-pro-tyres"
+        },
+        "tire_section": {
+          "url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+          "type": "revendeur",
+          "url2": "https://alienrides.com/products/apollo-tubeless-tire-with-anti-puncture-glue-for-city-city-pro-2022-2023"
+        },
+        "tire_family": {
+          "url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [
+        "max_speed_private_kmh=51.5"
+      ],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 29.5,
+          "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://rideelectric.com.au/products/apollo-city-pro-tyres"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29.5,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+            "source_type": "site_test"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+            "source_type": "site_test"
+          },
+          "amperage": {
+            "value": 20,
+            "source_url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+            "source_url_2": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "site_test"
+          },
+          "max_speed_private_kmh": {
+            "value": 51.5,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 2.7 pouces (tubeless auto-réparant)",
+            "source_url": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "suspension": {
+            "value": "Triple ressort (1 ressort avant, 2 ressorts arrière)",
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://apolloscooters.au/products/apollo-city",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+            "source_type": "site_test"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide",
+            "source_url_2": "https://freshlycharged.com/reviews/227/apollo-city-2023-review",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'Apollo City Pro (version 2023) est une trottinette électrique à double moteur de 2 x 500 W (1 000 W au total), alimentée par une batterie 48 V 20 Ah (960 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless auto-réparants de 10 pouces, avec une triple suspension à ressorts, un freinage à double tambour associé à un frein régénératif, et une protection IP66. Sa vitesse maximale de 51 km/h est bridée à 25 km/h pour un usage sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "site_test"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+            "https://kissmywheels.ch/en/escooter/apollo-city-pro/"
+          ],
+          "_og_images": [
+            "http://www.electrickicks.com.au/cdn/shop/files/ApolloCityPro2023_1.png?v=1698064814",
+            "https://kissmywheels.ch/wp-content/uploads/2024/07/Apollo-City_24022022_4.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://apolloscooters.ca/products/apollo-city-city-pro-2023-drum-brake-assembly",
+            "source_url_2": "https://rhyde.co/fr/products/apollo-city-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.70",
+            "source_url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+            "source_url_2": "https://alienrides.com/products/apollo-tubeless-tire-with-anti-puncture-glue-for-city-city-pro-2022-2023",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+            "source_url_2": "https://rideelectric.com.au/products/apollo-city-pro-tyres",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/outer-tire-apollo-city/",
+            "source_url_2": "https://support.apolloscooters.co/en/Which-type-of-tires-do-your-scooters-use-8220",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://rideelectric.com.au/products/apollo-city-pro-tyres",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Apollo Phantom 2.0",
+        "slug": "apollo-phantom-2-0",
+        "voltage": 52,
+        "amperage": 27,
+        "power_watts": 3500,
+        "max_speed_private_kmh": 70,
+        "range_km": 80,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 46.3,
+        "suspension": "Double ressorts (avant et arrière)",
+        "ip_rating": "IP66",
+        "tire_size": "11 x 4 pouces (11x4\"), tubeless hybride auto-réparant PunctureGuard",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2048",
+          "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur (2 x 1 750 W de pointe, soit 3 500 W) alimentée par une batterie 52 V 27 Ah, pour une autonomie annoncée jusqu'à 80 km et une vitesse maximale de 70 km/h sur terrain privé (bridée à 25 km/h en mode Eco/réglementaire). Elle repose sur des pneus tubeless auto-réparants de 11 x 4 pouces, une double suspension à ressorts et des freins à disque avec freinage régénératif, avec une certification IP66. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Phantom 2.0 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Phantom 2.0 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo phantom 2.0, pieces apollo phantom 2.0, disque frein apollo phantom 2.0, plaquettes apollo phantom 2.0, pneu apollo phantom 2.0"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-phantom-2-0-legends-are-made-they-aren-t-born",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+          "type": "revendeur",
+          "url2": "https://scooterrank.com/scooters/apollo-phantom-2-0"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://apolloscooters.co/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://support.apolloscooters.co/en-US/apollo-scooter-tires-tubeless-self-healing-and-what-that-means-for-you-6597534",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 46.3,
+            "source_url": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_url_2": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 27,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 3500,
+            "source_url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-phantom-2-0-legends-are-made-they-aren-t-born",
+            "source_url_2": "https://promechbc.com/product/apollo-phantom-2-0-52v/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 x 4 pouces (11x4\"), tubeless hybride auto-réparant PunctureGuard",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double ressorts (avant et arrière)",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur (2 x 1 750 W de pointe, soit 3 500 W) alimentée par une batterie 52 V 27 Ah, pour une autonomie annoncée jusqu'à 80 km et une vitesse maximale de 70 km/h sur terrain privé (bridée à 25 km/h en mode Eco/réglementaire). Elle repose sur des pneus tubeless auto-réparants de 11 x 4 pouces, une double suspension à ressorts et des freins à disque avec freinage régénératif, avec une certification IP66. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://apolloscooters.co/products/apollo-phantom-2-0",
+            "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719"
+          ],
+          "_og_images": [
+            "http://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2048",
+            "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://apolloscooters.co/products/apollo-phantom-2-0",
+            "source_type": "constructeur",
+            "source_url_2": null
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://support.apolloscooters.co/en-US/apollo-scooter-tires-tubeless-self-healing-and-what-that-means-for-you-6597534",
+            "source_type": "constructeur",
+            "source_url_2": null
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          }
+        }
+      }
+    }
+  ]
+}

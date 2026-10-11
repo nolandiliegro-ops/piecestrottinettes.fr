@@ -137,3 +137,7 @@
 - 2026-10-10T20:01:41.064Z · Bogist · PASSE DISQUES · +2 prêt(s) sur 2 · 2 prêt(s) au total · 0.5 min · 218069 in / 1756 out / 10 rech.
 - 2026-10-10T20:02:09.778Z · E-Twow · PASSE DISQUES · +0 prêt(s) sur 3 · 1 prêt(s) au total · 0.5 min · 81648 in / 2622 out / 6 rech.
 - 2026-10-10T20:03:01.404Z · Micro · PASSE DISQUES · +1 prêt(s) sur 3 · 1 prêt(s) au total · 0.9 min · 153536 in / 2974 out / 8 rech.
+- 2026-10-11T01:34:43.194Z · Apollo · OK · 1.3 min · 241952 in / 10304 out / 13 rech · +1 prêt (dont 1 sans clé roue) · cumul run 252256 tokens
+- 2026-10-11T01:36:12.270Z · Cecotec · OK · 1.5 min · 314052 in / 12073 out / 17 rech · +1 prêt (dont 1 sans clé roue) · cumul run 578381 tokens
+- 2026-10-11T01:37:16.990Z · Globber · ÉCHEC (code 1) · 1.1 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Globber","ref":"globber-e-motion-6","missing":["disc_diameter","disc_pcd","disc_holes"]},{"brandName":"Globber","ref":"globber-e-motion-4-plus","missing":["disc_diameter","disc_pcd","disc_holes"]}]
+- 2026-10-11T01:38:29.639Z · Bronco · OK · 1.2 min · 270011 in / 10147 out / 15 rech · +1 prêt (dont 0 sans clé roue) · cumul run 858539 tokens

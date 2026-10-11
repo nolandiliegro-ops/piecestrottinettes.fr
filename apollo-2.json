@@ -1,0 +1,33 @@
+{
+  "brandName": "Apollo",
+  "scooters": [
+    {
+      "name": "Apollo Phantom 2.0",
+      "slug": "apollo-phantom-2-0",
+      "voltage": 52,
+      "amperage": 27,
+      "power_watts": 3500,
+      "max_speed_private_kmh": 70,
+      "range_km": 80,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 46.3,
+      "suspension": "Double ressorts (avant et arrière)",
+      "ip_rating": "IP66",
+      "tire_size": "11 x 4 pouces (11x4\"), tubeless hybride auto-réparant PunctureGuard",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2048",
+        "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur (2 x 1 750 W de pointe, soit 3 500 W) alimentée par une batterie 52 V 27 Ah, pour une autonomie annoncée jusqu'à 80 km et une vitesse maximale de 70 km/h sur terrain privé (bridée à 25 km/h en mode Eco/réglementaire). Elle repose sur des pneus tubeless auto-réparants de 11 x 4 pouces, une double suspension à ressorts et des freins à disque avec freinage régénératif, avec une certification IP66. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Apollo Phantom 2.0 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Apollo Phantom 2.0 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "apollo phantom 2.0, pieces apollo phantom 2.0, disque frein apollo phantom 2.0, plaquettes apollo phantom 2.0, pneu apollo phantom 2.0"
+    }
+  ]
+}

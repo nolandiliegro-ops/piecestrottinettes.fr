@@ -1,0 +1,35 @@
+{
+  "brandName": "Bronco",
+  "scooters": [
+    {
+      "name": "Bronco Xtreme 11",
+      "slug": "bronco-xtreme-11",
+      "voltage": 72,
+      "amperage": 35,
+      "power_watts": 8400,
+      "max_speed_private_kmh": 109,
+      "range_km": 120,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 48,
+      "suspension": "Avant : 125 mm Kindshock EXA/DNM 2000 lbs à ressort ; arrière : 165 mm DNMAOY-36 à air réglable",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://www.scooterpassion.be/22103-large_default/trottinette-electrique-bronco-11-extrem-v3-lcd-couleur.jpg",
+        "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-bronco-xtreme-sport-72v_4.jpg?v=1669301588"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "La Bronco Xtreme 11 est une trottinette électrique à double moteur BLDC de 8400 W max au total, alimentée par une batterie 72 V 35 Ah (2520 Wh) et annoncée pour 120 km d'autonomie en mode éco. Elle est équipée de roues de 11 pouces CST, de freins hydrauliques NUTT à disques de 160 mm et de suspensions avant et arrière ; sa vitesse est bridée à 25 km/h, jusqu'à 109 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Bronco Xtreme 11 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Bronco Xtreme 11 : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "bronco xtreme 11, pieces bronco xtreme 11, disque frein bronco xtreme 11, plaquettes bronco xtreme 11, pneu bronco xtreme 11"
+    }
+  ]
+}
