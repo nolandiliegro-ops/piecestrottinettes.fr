@@ -38,11 +38,15 @@ jobs:
           git fetch origin donnees-extraction
           git worktree add ../data -B donnees-extraction origin/donnees-extraction
       - name: Lecture des catalogues
-        run: node scripts/suppliers/plug-crawl.mjs --out ../data/fournisseurs/prises
+        run: |
+          node scripts/suppliers/plug-crawl.mjs --out ../data/fournisseurs/prises 2>&1 | tee /tmp/prises.log
+          echo "::notice title=prises-log::$(tr '\n' ' ' < /tmp/prises.log | cut -c1-900)"
+          ls -la ../data/fournisseurs/prises || echo "::warning title=prises::dossier absent"
       - name: Publier
         run: |
           cd ../data
           git add -- fournisseurs/prises
-          if git diff --cached --quiet; then echo "Inchangé."; exit 0; fi
+          echo "::notice title=prises-git::$(git status --short | tr '\n' ' ' | cut -c1-500)"
+          if git diff --cached --quiet; then echo "::warning title=prises::rien a publier"; exit 0; fi
           git commit -m "prises : lecture run ${{ github.run_id }}"
           git push origin donnees-extraction
