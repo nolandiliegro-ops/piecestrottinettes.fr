@@ -53,6 +53,15 @@ export function plugFor(kind, title, desc) {
   return detectPlug(title) || detectPlug(desc);
 }
 
+// Disque : diamètre (mm), nombre de trous de fixation, entraxe (PCD) si écrit.
+export function detectDisc(text) {
+  const t = String(text || '');
+  const d = t.match(/(\d{3})\s?mm/i) || t.match(/[ØΦø]\s?(\d{3})/);
+  const h = t.match(/(\d)\s?(trous|holes|vis|fixations)/i);
+  const pcd = t.match(/(?:entraxe|pcd)\D{0,6}(\d{2,3}(?:[.,]\d)?)/i);
+  return { diameter: d ? Number(d[1]) : null, holes: h ? Number(h[1]) : null, pcd: pcd ? Number(pcd[1].replace(',', '.')) : null };
+}
+
 // Tension de SORTIE du chargeur (54.6V, 42V, 67.2V…) ; la nominale se déduit ensuite.
 export function detectVoltageOut(text) {
   const vs = [...String(text || '').matchAll(/(\d{2}(?:[.,]\d)?)\s?v\b/gi)].map((m) => parseFloat(m[1].replace(',', '.')));
@@ -62,6 +71,11 @@ export function detectVoltageOut(text) {
 
 export function detectKind(text) {
   const t = String(text || '').toLowerCase();
+  if (/disque|\bdisc\b|rotor/.test(t)) return 'disque';
+  if (/plaquette|brake pad/.test(t)) return 'plaquette';
+  if (/[ée]trier|caliper/.test(t)) return 'etrier';
+  if (/chambre\s+[àa]\s+air|inner tube/.test(t)) return 'chambre';
+  if (/pneu|tire|tyre/.test(t)) return 'pneu';
   if (/port\s+de\s+charge|prise\s+de\s+charge|charging\s+port|charge\s+port/.test(t)) return 'port';
   if (/adaptat|embout|convertisseur/.test(t)) return 'adaptateur';
   if (/chargeur|charger|cargador/.test(t)) return 'chargeur';
@@ -120,11 +134,11 @@ async function shopifyAll(base, source) {
 
 // Liste des boutiques : une source qui échoue est NOTÉE, jamais bloquante (sauf si TOUTES échouent).
 export const SOURCES = [
-  { id: 'e-watts', type: 'woo', base: 'https://e-watts.fr', terms: ['chargeur', 'port de charge', 'adaptateur chargeur'] },
+  { id: 'e-watts', type: 'woo', base: 'https://e-watts.fr', terms: ['chargeur', 'port de charge', 'adaptateur chargeur', 'disque', 'plaquette', 'pneu', 'chambre a air', 'etrier'] },
   { id: 'ewheel', type: 'shopify', base: 'https://ewheel.es/fr' },
 ];
 
-const RELEVANT = /chargeur|charger|cargador|port de charge|prise de charge|charging port|adaptat/i;
+const RELEVANT = /chargeur|charger|cargador|port de charge|prise de charge|charging port|adaptat|disque|disc|plaquette|pad|pneu|tire|tyre|chambre|tube|[ée]trier|caliper/i;
 
 async function main() {
   const rows = [];
@@ -138,7 +152,7 @@ async function main() {
       const kept = got.filter((r) => RELEVANT.test(r.title + ' ' + r.cats) && !seen.has(r.url + r.title) && seen.add(r.url + r.title));
       for (const r of kept) {
         const kind = detectKind(r.title);
-        rows.push({ ...r, kind, plug: plugFor(kind, r.title, r.desc), voltage_out: detectVoltageOut(r.title) });
+        rows.push({ ...r, kind, plug: ['chargeur', 'port', 'adaptateur'].includes(kind) ? plugFor(kind, r.title, r.desc) : null, voltage_out: kind === 'chargeur' ? detectVoltageOut(r.title) : null, disc: kind === 'disque' ? detectDisc(`${r.title} ${r.desc}`) : null });
       }
       report.push(`- ${s.id} : ${got.length} lus · ${kept.length} pertinents`);
     } catch (e) {
@@ -151,7 +165,7 @@ async function main() {
   writeFileSync(resolve(OUT, 'prises-brut.json'), JSON.stringify(rows, null, 1));
   writeFileSync(resolve(OUT, 'prises-resume.md'),
     `# Chercheur de prises — ${new Date().toISOString().slice(0, 10)}\n\n${report.join('\n')}\n\n- Lignes : ${rows.length}\n- Avec prise détectée : ${withPlug}\n` +
-    `- Par type : ${['chargeur', 'port', 'adaptateur'].map((k) => `${k} ${rows.filter((r) => r.kind === k).length}`).join(' · ')}\n`);
+    `- Par type : ${['chargeur', 'port', 'adaptateur', 'disque', 'plaquette', 'etrier', 'pneu', 'chambre'].map((k) => `${k} ${rows.filter((r) => r.kind === k).length}`).join(' · ')}\n`);
   console.log(`[prises] ${rows.length} lignes · ${withPlug} avec prise\n${report.join('\n')}`);
 }
 

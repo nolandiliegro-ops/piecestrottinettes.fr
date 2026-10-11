@@ -41,9 +41,6 @@ jobs:
         run: |
           node scripts/suppliers/plug-crawl.mjs --out ../data/fournisseurs/prises 2>&1 | tee /tmp/prises.log
           echo "::notice title=prises-log::$(tr '\n' ' ' < /tmp/prises.log | cut -c1-900)"
-          echo "::notice title=prises-ls::$(ls -la ../data/fournisseurs/prises 2>&1 | tr '\n' ' ')"
-          echo "::notice title=prises-ignored::$(git -C ../data status --porcelain --ignored 2>&1 | tr '\n' ' ' | cut -c1-500)"
-          echo "::notice title=prises-checkignore::$(git -C ../data check-ignore -v fournisseurs/prises/prises-resume.md 2>&1)"
       - name: Publier
         run: |
           cd ../data
