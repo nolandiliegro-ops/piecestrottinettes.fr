@@ -1,0 +1,35 @@
+{
+  "brandName": "Cecotec",
+  "scooters": [
+    {
+      "name": "Cecotec Bongo Serie A Advance Connected",
+      "slug": "cecotec-bongo-serie-a-advance-connected",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 700,
+      "range_km": 35,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 14,
+      "ip_rating": "IP54",
+      "tire_size": "8,5\" tubeless (anti-éclatement)",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://www.lacasadelelectrodomestico.com/public/storage/producto/175589/cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected-0175589.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "disc_diameter": 120,
+      "disc_holes": 6,
+      "rim_diameter": "134mm",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "La Cecotec Bongo Serie A Advance Connected est une trottinette électrique pliable dotée d'un moteur de 350 W nominal (700 W max) et d'une batterie amovible 36 V 7 800 mAh annoncée pour 35 km d'autonomie. Elle roule sur des pneus tubeless de 8,5 pouces anti-éclatement et dispose d'un triple système de freinage (disque, électrique et frein manuel arrière), avec une vitesse bridée à 25 km/h et une application smartphone. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Cecotec Bongo Serie A Advance Connected - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Cecotec Bongo Serie A Advance Connected : disque de frein 120 mm 6 trous, plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "cecotec bongo serie a advance connected, pieces cecotec bongo serie a advance connected, disque frein cecotec bongo serie a advance connected, plaquettes cecotec bongo serie a advance connected, pneu cecotec bongo serie a advance connected",
+      "disc_pcd": 44
+    }
+  ]
+}
