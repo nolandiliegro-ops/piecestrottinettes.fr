@@ -1,0 +1,65 @@
+{
+  "brandName": "Apollo",
+  "scooters": [
+    {
+      "name": "Apollo Explore",
+      "slug": "apollo-explore",
+      "voltage": 52,
+      "amperage": 18.2,
+      "power_watts": 1000,
+      "max_speed_private_kmh": 50,
+      "range_km": 55,
+      "max_load_kg": 120,
+      "year": 2020,
+      "max_speed_kmh": 25,
+      "weight_kg": 23,
+      "suspension": "Ressort à l'avant, double suspension hydraulique à l'arrière",
+      "ip_rating": "IP54",
+      "tire_size": "10 pouces, pneumatique (avec chambre à air) – section non précisée",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.electrickicks.com.au/cdn/shop/products/apollo-explore-electric-scooter-2021.jpg?v=1686744298",
+        "https://www.vitasalus.net/media/catalog/product/cache/1/small_image/200x200/9df78eab33525d08d6e5fb8d27136e95/l/i/lid_o-ring_3_1_1_2.jpg"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Apollo Explore (version d'origine, 2020/2021) embarque un moteur arrière de 1000 W (1400 W de pointe) alimenté par une batterie 52 V 18,2 Ah (946 Wh) à cellules Dynavolt, pour une autonomie annoncée d'environ 55 km et une vitesse de pointe d'environ 50 km/h hors voie publique (bridée à 25 km/h en usage routier). Elle roule sur des pneus pneumatiques de 10 pouces, avec suspension à ressort à l'avant et hydraulique double à l'arrière, freins à disque avant et arrière plus frein régénératif, pour 23 kg et une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Apollo Explore - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Apollo Explore : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "apollo explore, pieces apollo explore, disque frein apollo explore, plaquettes apollo explore, pneu apollo explore"
+    },
+    {
+      "name": "Apollo Ghost",
+      "slug": "apollo-ghost",
+      "voltage": 52,
+      "amperage": 18.2,
+      "power_watts": 1600,
+      "max_speed_private_kmh": 55,
+      "range_km": 62,
+      "max_load_kg": 135,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 29,
+      "suspension": "Double suspension à ressorts réglables (avant et arrière)",
+      "ip_rating": "IP54",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.electrickicks.com.au/cdn/shop/products/apollo-ghost-electric-scooter.jpg?v=1686744417",
+        "https://iscoot.com.au/cdn/shop/files/iScoot_Apollo_Ghost_1_1200x1200.png?v=1777623336",
+        "https://cdn.shopify.com/s/files/1/0098/6736/2359/files/BeyondPEV-Social-Sharing-Image.jpg?v=1773073621"
+      ],
+      "brake_type": "disc_mechanical",
+      "rim_diameter": "6",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Apollo Ghost est une trottinette électrique double moteur (2 x 800 W, 1 600 W nominaux) alimentée par une batterie 52 V 18,2 Ah (environ 946 Wh) pour une autonomie annoncée jusqu'à 62 km. Elle roule sur des pneus pneumatiques de 10 pouces, avec double suspension à ressorts et freinage par disques mécaniques avant et arrière plus frein régénératif ; sa vitesse maximale est d'environ 55 km/h hors bridage, et elle est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Apollo Ghost - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Apollo Ghost : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "apollo ghost, pieces apollo ghost, disque frein apollo ghost, plaquettes apollo ghost, pneu apollo ghost"
+    }
+  ]
+}

@@ -141,3 +141,5 @@
 - 2026-10-11T01:36:12.270Z · Cecotec · OK · 1.5 min · 314052 in / 12073 out / 17 rech · +1 prêt (dont 1 sans clé roue) · cumul run 578381 tokens
 - 2026-10-11T01:37:16.990Z · Globber · ÉCHEC (code 1) · 1.1 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Globber","ref":"globber-e-motion-6","missing":["disc_diameter","disc_pcd","disc_holes"]},{"brandName":"Globber","ref":"globber-e-motion-4-plus","missing":["disc_diameter","disc_pcd","disc_holes"]}]
 - 2026-10-11T01:38:29.639Z · Bronco · OK · 1.2 min · 270011 in / 10147 out / 15 rech · +1 prêt (dont 0 sans clé roue) · cumul run 858539 tokens
+- 2026-10-11T02:12:29.255Z · Apollo · OK · 2.2 min · 485812 in / 17183 out / 27 rech · +2 prêt (dont 2 sans clé roue) · cumul run 502995 tokens
+- 2026-10-11T02:14:38.931Z · Cecotec · OK · 2.2 min · 464646 in / 17689 out / 23 rech · +3 prêt (dont 2 sans clé roue) · cumul run 985330 tokens

@@ -1,0 +1,804 @@
+{
+  "brandName": "Apollo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Apollo Air",
+        "slug": "apollo-air",
+        "voltage": 36,
+        "amperage": 15,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 54,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "suspension": "Fourche avant double (ressorts), pas de suspension arrière",
+        "ip_rating": "IP66",
+        "tire_size": "10 pouces, tubeless auto-réparant (avant et arrière)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo Air (génération 2023-2024) est une trottinette électrique pliable équipée d'un moteur arrière de 500 W (pointe 800-900 W), d'une batterie 36 V 15 Ah (540 Wh) et de pneus tubeless auto-réparants de 10 pouces. Elle freine avec un frein à tambour avant et un freinage régénératif, dispose d'une fourche avant à double suspension, d'une protection IP66 et d'une vitesse bridée à 25 km/h (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Air - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Air : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo air, pieces apollo air, disque frein apollo air, plaquettes apollo air, pneu apollo air"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.co/products/apollo-air",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.co/products/apollo-air",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://apolloscooters.co/products/apollo-air",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.bestbuy.ca/fr-ca/produit/trottinette-electrique-air-d-apollo-moteur-de-500-w-autonomie-de-54-km-vitesse-maximale-de-35-km-h-gris-cosmique/17701443",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "source_image_urls"
+      ],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 18.6,
+          "url": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18.6,
+            "source_url": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://apolloscooters.co/products/apollo-air",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://apolloscooters.co/products/apollo-air",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://apolloscooters.co/products/apollo-air",
+            "source_url_2": "https://www.bestbuy.ca/fr-ca/produit/trottinette-electrique-air-d-apollo-moteur-de-500-w-autonomie-de-54-km-vitesse-maximale-de-35-km-h-gris-cosmique/17701443",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://www.bestbuy.ca/fr-ca/produit/trottinette-electrique-air-d-apollo-moteur-de-500-w-autonomie-de-54-km-vitesse-maximale-de-35-km-h-gris-cosmique/17701443",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 54,
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_url_2": "https://promechbc.com/product/apollo-air-2023/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces, tubeless auto-réparant (avant et arrière)",
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Fourche avant double (ressorts), pas de suspension arrière",
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.bestbuy.ca/fr-ca/produit/trottinette-electrique-air-d-apollo-moteur-de-500-w-autonomie-de-54-km-vitesse-maximale-de-35-km-h-gris-cosmique/17701443",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'Apollo Air (génération 2023-2024) est une trottinette électrique pliable équipée d'un moteur arrière de 500 W (pointe 800-900 W), d'une batterie 36 V 15 Ah (540 Wh) et de pneus tubeless auto-réparants de 10 pouces. Elle freine avec un frein à tambour avant et un freinage régénératif, dispose d'une fourche avant à double suspension, d'une protection IP66 et d'une vitesse bridée à 25 km/h (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.ca/fr/products/apollo-air-fr",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "https://www.bestbuy.ca/fr-ca/produit/trottinette-electrique-air-d-apollo-moteur-de-500-w-autonomie-de-54-km-vitesse-maximale-de-35-km-h-gris-cosmique/17701443",
+            "https://apolloscooters.ca/fr/products/apollo-air-fr"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+            "source_url_2": "https://turbokids.ca/en/products/apollo-air-2024-trottinette-electrique-36-volts-15ah-500-watts-800-peak",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+            "source_url_2": "https://apolloscooters.ca/fr/blogs/nouvelles/le-guide-ultime-des-essentiels-du-scooter-dete",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Apollo Explore",
+        "slug": "apollo-explore",
+        "voltage": 52,
+        "amperage": 18.2,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 50,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 23,
+        "suspension": "Ressort à l'avant, double suspension hydraulique à l'arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces, pneumatique (avec chambre à air) – section non précisée",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.electrickicks.com.au/cdn/shop/products/apollo-explore-electric-scooter-2021.jpg?v=1686744298",
+          "https://www.vitasalus.net/media/catalog/product/cache/1/small_image/200x200/9df78eab33525d08d6e5fb8d27136e95/l/i/lid_o-ring_3_1_1_2.jpg"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo Explore (version d'origine, 2020/2021) embarque un moteur arrière de 1000 W (1400 W de pointe) alimenté par une batterie 52 V 18,2 Ah (946 Wh) à cellules Dynavolt, pour une autonomie annoncée d'environ 55 km et une vitesse de pointe d'environ 50 km/h hors voie publique (bridée à 25 km/h en usage routier). Elle roule sur des pneus pneumatiques de 10 pouces, avec suspension à ressort à l'avant et hydraulique double à l'arrière, freins à disque avant et arrière plus frein régénératif, pour 23 kg et une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Explore - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Explore : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo explore, pieces apollo explore, disque frein apollo explore, plaquettes apollo explore, pneu apollo explore"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://versus.com/en/apollo-explore",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur",
+          "url2": "https://fluidfreeride.com/blogs/news/apollo-explore-review"
+        },
+        "suspension": {
+          "url": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.electrickicks.com.au/cdn/shop/products/apollo-explore-electric-scooter-2021.jpg?v=1686744298",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://beyondpev.com/products/apollo-brake-disc",
+          "type": "revendeur",
+          "url2": "https://revrides.com/products/disc-brake-rotor"
+        },
+        "tire_family": {
+          "url": "https://scooter.guide/apollo-explore-review/",
+          "type": "site_test"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 23,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://fluidfreeride.com/blogs/news/apollo-explore-review",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 pouces, pneumatique (avec chambre à air) – section non précisée",
+            "source_url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "suspension": {
+            "value": "Ressort à l'avant, double suspension hydraulique à l'arrière",
+            "source_url": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://fluidfreeride.com/blogs/news/apollo-explore-review",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://versus.com/en/apollo-explore",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Apollo Explore (version d'origine, 2020/2021) embarque un moteur arrière de 1000 W (1400 W de pointe) alimenté par une batterie 52 V 18,2 Ah (946 Wh) à cellules Dynavolt, pour une autonomie annoncée d'environ 55 km et une vitesse de pointe d'environ 50 km/h hors voie publique (bridée à 25 km/h en usage routier). Elle roule sur des pneus pneumatiques de 10 pouces, avec suspension à ressort à l'avant et hydraulique double à l'arrière, freins à disque avant et arrière plus frein régénératif, pour 23 kg et une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "source_url_2": "https://electrek.co/2020/06/26/apollo-explore-32-mph-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.electrickicks.com.au/products/apollo-explore-electric-scooter",
+            "https://www.vitasalus.net/apollo-explore",
+            "https://rhyde.co/fr/collections/all-vehicles/products/apollo-explore"
+          ],
+          "_og_images": [
+            "http://www.electrickicks.com.au/cdn/shop/products/apollo-explore-electric-scooter-2021.jpg?v=1686744298",
+            "https://www.vitasalus.net/media/catalog/product/cache/1/small_image/200x200/9df78eab33525d08d6e5fb8d27136e95/l/i/lid_o-ring_3_1_1_2.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://beyondpev.com/products/apollo-brake-disc",
+            "source_url_2": "https://revrides.com/products/disc-brake-rotor",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://scooter.guide/apollo-explore-review/",
+            "source_url_2": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/",
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Apollo Ghost",
+        "slug": "apollo-ghost",
+        "voltage": 52,
+        "amperage": 18.2,
+        "power_watts": 1600,
+        "max_speed_private_kmh": 55,
+        "range_km": 62,
+        "max_load_kg": 135,
+        "year": 2021,
+        "max_speed_kmh": 25,
+        "weight_kg": 29,
+        "suspension": "Double suspension à ressorts réglables (avant et arrière)",
+        "ip_rating": "IP54",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.electrickicks.com.au/cdn/shop/products/apollo-ghost-electric-scooter.jpg?v=1686744417",
+          "https://iscoot.com.au/cdn/shop/files/iScoot_Apollo_Ghost_1_1200x1200.png?v=1777623336",
+          "https://cdn.shopify.com/s/files/1/0098/6736/2359/files/BeyondPEV-Social-Sharing-Image.jpg?v=1773073621"
+        ],
+        "brake_type": "disc_mechanical",
+        "rim_diameter": "6",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo Ghost est une trottinette électrique double moteur (2 x 800 W, 1 600 W nominaux) alimentée par une batterie 52 V 18,2 Ah (environ 946 Wh) pour une autonomie annoncée jusqu'à 62 km. Elle roule sur des pneus pneumatiques de 10 pouces, avec double suspension à ressorts et freinage par disques mécaniques avant et arrière plus frein régénératif ; sa vitesse maximale est d'environ 55 km/h hors bridage, et elle est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Ghost - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Ghost : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo ghost, pieces apollo ghost, disque frein apollo ghost, plaquettes apollo ghost, pneu apollo ghost"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+          "type": "site_test"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur",
+          "url2": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://eridehero.com/apollo-ghost-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "foldable": {
+          "url": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.electrickicks.com.au/cdn/shop/products/apollo-ghost-electric-scooter.jpg?v=1686744417",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+          "type": "site_test"
+        },
+        "rim_diameter": {
+          "url": "https://us.amazon.com/clp/B0FH2KM3Y8",
+          "type": "revendeur",
+          "url2": "https://www.ebay.de/itm/364839008316"
+        },
+        "tire_family": {
+          "url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+          "type": "site_test"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "tire_section",
+          "value": "80/65",
+          "url": "https://www.amazon.com/Tubeless-Scooter-Thickened-Electric-Replacement/dp/B0DB1QRRX9"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://beyondpev.com/products/apollo-ghost-hydraulic-brake",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1600,
+            "source_url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_url_2": "https://beyondpev.com/products/apollo-ghost-hydraulic-brake",
+            "source_type": "site_test"
+          },
+          "max_speed_private_kmh": {
+            "value": 55,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://scooter.guide/apollo-ghost-electric-scooter-review/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 62,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 135,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+            "source_url_2": "https://iscoot.com.au/products/apollo-ghost-electric-scooter-pre-order",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension à ressorts réglables (avant et arrière)",
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_url_2": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://eridehero.com/apollo-ghost-electric-scooter-review/",
+            "source_url_2": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+            "source_type": "site_test"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+            "source_url_2": "https://eridehero.com/apollo-ghost-electric-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2021,
+            "source_url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Apollo Ghost est une trottinette électrique double moteur (2 x 800 W, 1 600 W nominaux) alimentée par une batterie 52 V 18,2 Ah (environ 946 Wh) pour une autonomie annoncée jusqu'à 62 km. Elle roule sur des pneus pneumatiques de 10 pouces, avec double suspension à ressorts et freinage par disques mécaniques avant et arrière plus frein régénératif ; sa vitesse maximale est d'environ 55 km/h hors bridage, et elle est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.co/pages/tech-specs-ghost-2022",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.electrickicks.com.au/products/apollo-ghost-electric-scooter",
+            "https://iscoot.com.au/products/apollo-ghost-electric-scooter-pre-order",
+            "https://beyondpev.com/products/apollo-ghost-hydraulic-brake"
+          ],
+          "_og_images": [
+            "http://www.electrickicks.com.au/cdn/shop/products/apollo-ghost-electric-scooter.jpg?v=1686744417",
+            "https://iscoot.com.au/cdn/shop/files/iScoot_Apollo_Ghost_1_1200x1200.png?v=1777623336",
+            "https://cdn.shopify.com/s/files/1/0098/6736/2359/files/BeyondPEV-Social-Sharing-Image.jpg?v=1773073621"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_url_2": "https://www.mobilite-douce.fr/trottinette-electrique/tests-avis/apollo-ghost/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://www.amazon.com/Tubeless-Scooter-Thickened-Electric-Replacement/dp/B0DB1QRRX9",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://us.amazon.com/clp/B0FH2KM3Y8",
+            "source_url_2": "https://www.ebay.de/itm/364839008316",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://electrek.co/2021/01/25/apollo-ghost-review-testing-a-34-mph-electric-scooter-with-better-suspension-than-my-first-car/",
+            "source_url_2": "https://scooter.guide/apollo-ghost-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

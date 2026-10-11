@@ -1,0 +1,824 @@
+{
+  "brandName": "Cecotec",
+  "results": [
+    {
+      "scooter": {
+        "name": "Cecotec Bongo Serie A Advance Connected",
+        "slug": "cecotec-bongo-serie-a-advance-connected",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 700,
+        "range_km": 35,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 14,
+        "ip_rating": "IP54",
+        "tire_size": "8,5\" tubeless (anti-éclatement)",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://www.lacasadelelectrodomestico.com/public/storage/producto/175589/cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected-0175589.jpg"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "disc_diameter": 120,
+        "disc_holes": 6,
+        "rim_diameter": "134mm",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 18,
+        "description": "La Cecotec Bongo Serie A Advance Connected est une trottinette électrique pliable dotée d'un moteur de 350 W nominal (700 W max) et d'une batterie amovible 36 V 7 800 mAh annoncée pour 35 km d'autonomie. Elle roule sur des pneus tubeless de 8,5 pouces anti-éclatement et dispose d'un triple système de freinage (disque, électrique et frein manuel arrière), avec une vitesse bridée à 25 km/h et une application smartphone. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Cecotec Bongo Serie A Advance Connected - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Cecotec Bongo Serie A Advance Connected : disque de frein 120 mm 6 trous, plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "cecotec bongo serie a advance connected, pieces cecotec bongo serie a advance connected, disque frein cecotec bongo serie a advance connected, plaquettes cecotec bongo serie a advance connected, pneu cecotec bongo serie a advance connected"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://accesoriospatineteelectrico.com/analisis-opiniones-ofertas/cecotec-bongo-serie-a-advance-connected/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur",
+          "url2": "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/"
+        },
+        "ip_rating": {
+          "url": "https://www.manualslib.com/manual/2093337/Cecotec-Bongo-A-Advance-Connected-Series.html",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.lacasadelelectrodomestico.com/public/storage/producto/175589/cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected-0175589.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.e-comparador.com/ficha-tecnica-patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://ewheel.es/products/disco-de-freno-120mm-6h-plata-para-cecotec-outsider-bongo-serie-a",
+          "type": "revendeur",
+          "url2": "https://www.ommvi.com/recambios-accesorios-patinetes-electricos/frenos/disco-freno-120mm-cecotec/"
+        },
+        "disc_holes": {
+          "url": "https://ewheel.es/products/disco-de-freno-120mm-6h-plata-para-cecotec-outsider-bongo-serie-a",
+          "type": "revendeur",
+          "url2": "https://www.ommvi.com/recambios-accesorios-patinetes-electricos/frenos/disco-freno-120mm-cecotec/"
+        },
+        "rim_diameter": {
+          "url": "https://monorimspain.com/products/copia-de-neumatico-70-65-6-5-para-segway-ninebot-mini-minipro-ninebot-s-s-pro",
+          "type": "revendeur",
+          "url2": "https://france-gyrotrot.com/products/chambre-a-air-pour-trottinette-electrique-amalibay-8-5-x-2"
+        },
+        "tire_section": {
+          "url": "https://monorimspain.com/products/copia-de-neumatico-70-65-6-5-para-segway-ninebot-mini-minipro-ninebot-s-s-pro",
+          "type": "revendeur",
+          "url2": "https://france-gyrotrot.com/products/chambre-a-air-pour-trottinette-electrique-amalibay-8-5-x-2"
+        },
+        "tire_family": {
+          "url": "https://www.pccomponentes.com/cecotec-bongo-serie-a-advance-connected-patinete-electrico",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 14,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://www.milar.es/patinete-electrico-cecotec-bongo-serie-a-advance-connected-35-km.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://www.manualslib.com/manual/2093337/Cecotec-Bongo-A-Advance-Connected-Series.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 700,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://www.milar.es/patinete-electrico-cecotec-bongo-serie-a-advance-connected-35-km.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://accesoriospatineteelectrico.com/analisis-opiniones-ofertas/cecotec-bongo-serie-a-advance-connected/",
+            "source_url_2": "https://www.paroledevelo.com/trottinettes-electriques-cecotec-series-bongo-avis-prix/",
+            "source_type": "site_test"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://www.milar.es/patinete-electrico-cecotec-bongo-serie-a-advance-connected-35-km.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8,5\" tubeless (anti-éclatement)",
+            "source_url": "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+            "source_url_2": "https://www.cdiscount.com/le-sport/skate-shop/cecotec-trottinette-electrique-bongo-serie-a-advan/f-1213002-cec8435484070287.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.manualslib.com/manual/2093337/Cecotec-Bongo-A-Advance-Connected-Series.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_url_2": "https://www.milar.es/patinete-electrico-cecotec-bongo-serie-a-advance-connected-35-km.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Cecotec Bongo Serie A Advance Connected est une trottinette électrique pliable dotée d'un moteur de 350 W nominal (700 W max) et d'une batterie amovible 36 V 7 800 mAh annoncée pour 35 km d'autonomie. Elle roule sur des pneus tubeless de 8,5 pouces anti-éclatement et dispose d'un triple système de freinage (disque, électrique et frein manuel arrière), avec une vitesse bridée à 25 km/h et une application smartphone. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.milar.es/patinete-electrico-cecotec-bongo-serie-a-advance-connected-35-km.html",
+            "https://rodando.es/tienda/patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+            "https://www.lacasadelelectrodomestico.com/Articulo~x~Cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected~IDArticulo~175589.html"
+          ],
+          "_og_images": [
+            "https://www.lacasadelelectrodomestico.com/public/storage/producto/175589/cecotec-07028-patinete-electrico-bongo-serie-a-advance-connected-0175589.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.e-comparador.com/ficha-tecnica-patinete-electrico-cecotec-bongo-serie-a-advance-connected/",
+            "source_url_2": "https://www.paroledevelo.com/trottinettes-electriques-cecotec-series-bongo-avis-prix/",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://ewheel.es/products/disco-de-freno-120mm-6h-plata-para-cecotec-outsider-bongo-serie-a",
+            "source_url_2": "https://www.ommvi.com/recambios-accesorios-patinetes-electricos/frenos/disco-freno-120mm-cecotec/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://ewheel.es/products/disco-de-freno-120mm-6h-plata-para-cecotec-outsider-bongo-serie-a",
+            "source_url_2": "https://www.ommvi.com/recambios-accesorios-patinetes-electricos/frenos/disco-freno-120mm-cecotec/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://monorimspain.com/products/copia-de-neumatico-70-65-6-5-para-segway-ninebot-mini-minipro-ninebot-s-s-pro",
+            "source_url_2": "https://france-gyrotrot.com/products/chambre-a-air-pour-trottinette-electrique-amalibay-8-5-x-2",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "134mm",
+            "source_url": "https://monorimspain.com/products/copia-de-neumatico-70-65-6-5-para-segway-ninebot-mini-minipro-ninebot-s-s-pro",
+            "source_url_2": "https://france-gyrotrot.com/products/chambre-a-air-pour-trottinette-electrique-amalibay-8-5-x-2",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.pccomponentes.com/cecotec-bongo-serie-a-advance-connected-patinete-electrico",
+            "source_url_2": "https://www.nziomarket.com/producto/neumatico-tubeless-cecotec-bongo-serie-a/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Cecotec Bongo Serie D20 XL",
+        "slug": "cecotec-bongo-serie-d20-xl",
+        "voltage": 36,
+        "amperage": 5,
+        "power_watts": 300,
+        "range_km": 20,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 16,
+        "suspension": "Aucune (rigide)",
+        "ip_rating": "IPX4",
+        "tire_size": "10\" gonflable",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_lnqnon_1.png",
+          "https://cdn.blazimg.com/300/product/c/e/cecotec_07356_gris-noir_1.webp"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Cecotec Bongo D20 XL Connected est équipée d'un moteur de 300 W nominaux (630 W en pointe) alimenté par une batterie 36 V 5 Ah (180 Wh) pour une autonomie annoncée d'environ 20 km. Elle roule sur des pneus gonflables de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, et sa vitesse est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Cecotec Bongo Serie D20 XL - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Cecotec Bongo Serie D20 XL : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "cecotec bongo serie d20 xl, pieces cecotec bongo serie d20 xl, disque frein cecotec bongo serie d20 xl, plaquettes cecotec bongo serie d20 xl, pneu cecotec bongo serie d20 xl"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+          "type": "revendeur",
+          "url2": "https://planetoutlet.es/tienda/movilidad/patinetes_electricos/patinetes-cecotec/cecotec-patinete-electrico-homologado-con-app-bongo-d20-xl-connected-potencia-maxima-de-630w-autonomia-de-hasta-20km-ruedas-d"
+        },
+        "suspension": {
+          "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://planetoutlet.es/tienda/movilidad/patinetes_electricos/patinetes-cecotec/cecotec-patinete-electrico-homologado-con-app-bongo-d20-xl-connected-potencia-maxima-de-630w-autonomia-de-hasta-20km-ruedas-d",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://modetechmaison.com/product/trottinette-electrique-bongo-d20-xl-connected-650w-cecotec-07356/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_lnqnon_1.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16,
+            "source_url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_url_2": "https://planetoutlet.es/tienda/movilidad/patinetes_electricos/patinetes-cecotec/cecotec-patinete-electrico-homologado-con-app-bongo-d20-xl-connected-potencia-maxima-de-630w-autonomia-de-hasta-20km-ruedas-d",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_url_2": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 5,
+            "source_url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_url_2": "https://fichas.escotr.com/en/details-cecotec-bongo-d20-xl-connected-01KR6SHJKZ6H19S2BKZ343VC0S",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 300,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "source_url_2": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 20,
+            "source_url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_url_2": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_url_2": "https://www.amazon.es/Cecotec-El%C3%A9ctrico-Homologado-Connected-Pendientes/dp/B0BQ1DYW4W",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "source_url_2": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10\" gonflable",
+            "source_url": "https://planetoutlet.es/tienda/movilidad/patinetes_electricos/patinetes-cecotec/cecotec-patinete-electrico-homologado-con-app-bongo-d20-xl-connected-potencia-maxima-de-630w-autonomia-de-hasta-20km-ruedas-d",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune (rigide)",
+            "source_url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_url_2": "https://www.amazon.es/Cecotec-El%C3%A9ctrico-Homologado-Connected-Pendientes/dp/B0BQ1DYW4W",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_url_2": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://modetechmaison.com/product/trottinette-electrique-bongo-d20-xl-connected-650w-cecotec-07356/",
+            "source_url_2": "https://fichas.escotr.com/en/details-cecotec-bongo-d20-xl-connected-01KR6SHJKZ6H19S2BKZ343VC0S",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Cecotec Bongo D20 XL Connected est équipée d'un moteur de 300 W nominaux (630 W en pointe) alimenté par une batterie 36 V 5 Ah (180 Wh) pour une autonomie annoncée d'environ 20 km. Elle roule sur des pneus gonflables de 10 pouces, avec un frein électrique à l'avant et un frein à disque à l'arrière, et sa vitesse est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected",
+            "https://sneakids.com/07356-electric-scooter-cecotec-bongo-d20-xl-dark-grey-one-size"
+          ],
+          "_og_images": [
+            "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_lnqnon_1.png",
+            "https://cdn.blazimg.com/300/product/c/e/cecotec_07356_gris-noir_1.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_url_2": "https://www.pccomponentes.fr/cecotec-bongo-d20-xl-trottinette-electrique-connectee-10-630w-homologue-dgt-noir",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected",
+            "source_url_2": "https://electyum.com/patinetes-electricos/bongo-d20-xl-connected/",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Cecotec Bongo Serie S Max",
+        "slug": "cecotec-bongo-serie-s-max",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 750,
+        "range_km": 30,
+        "max_load_kg": 100,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 13,
+        "suspension": "Suspension arrière",
+        "tire_size": "10\" tubeless",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://media.cecotec.cloud/07304/bongo-serie-s-max-infinity_ivnjrd_1.png"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 120,
+        "tire_section": "60/70",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Cecotec Bongo Série S+ Max Infinity est une trottinette électrique à propulsion arrière, dotée d'un moteur de 350 W nominal (750 W max), d'une batterie 36 V / 7800 mAh et d'une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus tubeless de 10\", avec suspension arrière, frein à disque et e-ABS à freinage régénératif, et sa vitesse est bridée à 25 km/h en mode Sport. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Cecotec Bongo Serie S Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Cecotec Bongo Serie S Max : disque de frein 120 mm, plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "cecotec bongo serie s max, pieces cecotec bongo serie s max, disque frein cecotec bongo serie s max, plaquettes cecotec bongo serie s max, pneu cecotec bongo serie s max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+          "type": "revendeur",
+          "url2": "https://maisonex.fr/produit/cecotec-trottinette-electrique-homologuee-bongo-serie-s-max-infinity-unlimited-750-w-et-36v-traction-arriere-autonomie-30-40-km-2/"
+        },
+        "suspension": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.cecotec.cloud/07304/bongo-serie-s-max-infinity_ivnjrd_1.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/",
+          "type": "revendeur",
+          "url2": "https://iscooting.com/en/product/brake-disc-for-cecotec-outsider-bongo-a-series-120mm/"
+        },
+        "tire_section": {
+          "url": "https://emovedistribution.com/producto/rueda-cubierta-tubeless-10x-2-50-6-560-70-6-5-offroad-suniik/",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/pieces-detachees-par-marques/pieces-ninebot/pneu-tubeless-kugoo-g2-pro/"
+        },
+        "tire_family": {
+          "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://emovedistribution.com/producto/rueda-cubierta-tubeless-10x-2-50-6-560-70-6-5-offroad-suniik/",
+          "reason": "page de roue complète (fournit la jante)"
+        },
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 13,
+            "source_url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_url_2": "https://maisonex.fr/produit/cecotec-trottinette-electrique-homologuee-bongo-serie-s-max-infinity-unlimited-750-w-et-36v-traction-arriere-autonomie-30-40-km-2/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.fnac.com/mp49549530/Cecotec-Trottinette-electrique-Sportive-Bongo-Serie-S-Max-Infinity-Roues-tubeless-de-10-Une-Puissance-maximale-de-750-W-et-jusqu-a-30-km-d-autonomie/w-4?qu=883584&ballyh=169610&ma=437268",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 750,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.fnac.com/mp49549530/Cecotec-Trottinette-electrique-Sportive-Bongo-Serie-S-Max-Infinity-Roues-tubeless-de-10-Une-Puissance-maximale-de-750-W-et-jusqu-a-30-km-d-autonomie/w-4?qu=883584&ballyh=169610&ma=437268",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_url_2": "https://maisonex.fr/produit/cecotec-trottinette-electrique-homologuee-bongo-serie-s-max-infinity-unlimited-750-w-et-36v-traction-arriere-autonomie-30-40-km-2/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10\" tubeless",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension arrière",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+            "source_url_2": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Cecotec Bongo Série S+ Max Infinity est une trottinette électrique à propulsion arrière, dotée d'un moteur de 350 W nominal (750 W max), d'une batterie 36 V / 7800 mAh et d'une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus tubeless de 10\", avec suspension arrière, frein à disque et e-ABS à freinage régénératif, et sa vitesse est bridée à 25 km/h en mode Sport. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-cecotec-07304-750-w-25-km-h/f-1214801-cec8435484073042.html",
+            "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP"
+          ],
+          "_og_images": [
+            "https://media.cecotec.cloud/07304/bongo-serie-s-max-infinity_ivnjrd_1.png",
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.amazon.fr/Cecotec-Trottinette-%C3%89lectrique-Infinity-Propulsion/dp/B0D8FC38QP",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/",
+            "source_url_2": "https://iscooting.com/en/product/brake-disc-for-cecotec-outsider-bongo-a-series-120mm/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://emovedistribution.com/producto/disco-de-freno-para-cecotec-outsider-bongo-serie-a-120mm/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "60/70",
+            "source_url": "https://emovedistribution.com/producto/rueda-cubierta-tubeless-10x-2-50-6-560-70-6-5-offroad-suniik/",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/pieces-detachees-par-marques/pieces-ninebot/pneu-tubeless-kugoo-g2-pro/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://emovedistribution.com/producto/rueda-cubierta-tubeless-10x-2-50-6-560-70-6-5-offroad-suniik/",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/pieces-detachees-par-marques/pieces-ninebot/pneu-tubeless-kugoo-g2-pro/",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-s-max-infinity",
+            "source_url_2": "https://www.fnac.com/mp49549530/Cecotec-Trottinette-electrique-Sportive-Bongo-Serie-S-Max-Infinity-Roues-tubeless-de-10-Une-Puissance-maximale-de-750-W-et-jusqu-a-30-km-d-autonomie/w-4?qu=883584&ballyh=169610&ma=437268",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
