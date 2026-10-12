@@ -1516,7 +1516,7 @@
   "title": "Pneu plein off-road 250×64",
   "handle": "pneu-plein-off-road-250-64",
   "price_public": "27.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764440243_1.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764440243_2.jpg",
@@ -1817,7 +1817,7 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764443336_2.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764443336_3.jpg"
   ],
-  "compat": null
+  "compat": []
  },
  {
   "sku": "EWF032-IU",
@@ -1830,7 +1830,7 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764438080_2.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764438080_3.jpg"
   ],
-  "compat": null
+  "compat": []
  },
  {
   "sku": "EWF262-IU",
