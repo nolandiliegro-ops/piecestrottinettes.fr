@@ -111,7 +111,7 @@ async function main() {
   if (!env.ANTHROPIC_API_KEY || !SB_URL || !SB_KEY) { console.error('❌ ANTHROPIC_API_KEY / Supabase public absents — arrêt avant tout appel'); process.exit(1); }
   const codes = await rest('fitment_charge_connectors?select=code,label_client,note&order=code');
   if (codes.length < 10) throw new Error(`Référentiel prises lu avec ${codes.length} lignes — arrêt.`);
-  const rows = await rest('scooter_models?select=slug,name,voltage,charge_connectors,published,brands(name),scooter_battery_configs(voltage,is_default)&published=eq.true&charge_connectors=is.null&order=slug');
+  const rows = await rest('scooter_models?select=slug,name,voltage,charge_connectors,published,brands!scooter_models_brand_id_fkey(name),scooter_battery_configs!scooter_battery_configs_scooter_model_id_fkey(voltage,is_default)&published=eq.true&charge_connectors=is.null&order=slug');
   if (!rows.length) { console.log('::error title=fill-plugs::0 modèle lu (lecture refusée ou filtre) — arrêt.'); process.exit(1); }
   const models = rows.map((r) => ({
     slug: r.slug, name: r.name.replace(new RegExp(`^${(r.brands?.name || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s+`, 'i'), ''),
