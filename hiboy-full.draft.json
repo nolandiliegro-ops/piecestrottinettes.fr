@@ -1,0 +1,546 @@
+{
+  "brandName": "Hiboy",
+  "results": [
+    {
+      "scooter": {
+        "name": "Hiboy MAX Pro",
+        "slug": "hiboy-max-pro",
+        "voltage": 48,
+        "amperage": 14.5,
+        "power_watts": 500,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "11 x 2.75 pouces (tubeless, gel anti-crevaison)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528",
+          "https://www.ullers.com/cdn/shop/files/MAX_PRO_15.png?v=1747925142&width=1200",
+          "http://electricrideco.com/cdn/shop/files/111_0556db6d-dbb9-4da5-b407-b65cc7058e54_1_1200x1200.jpg?v=1706157157"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Hiboy MAX Pro (version européenne) est une trottinette électrique pliable équipée d'un moteur Bosch de 500 W, d'une batterie 48 V 14,5 Ah et de pneus tubeless de 11 pouces à gel anti-crevaison, avec suspensions avant et arrière. Le freinage associe frein à tambour avant et arrière et frein électronique ; la vitesse est bridée à 25 km/h pour une autonomie annoncée de 55 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hiboy MAX Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hiboy MAX Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hiboy max pro, pieces hiboy max pro, disque frein hiboy max pro, plaquettes hiboy max pro, pneu hiboy max pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.hiboy.ca/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [
+        "max_speed_private_kmh=35.4"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://www.alphaproscooters.com/products/hiboy-max-pro-solid-tire"
+        }
+      ],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 25.3,
+          "url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25.3,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 14.5,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.bestbuy.com/product/hiboy-max-pro-electric-scooter-650w-peak-motor-22-mph-46-6-miles-long-range-foldable-commuter-electric-scooter-black/J3Q5QLYHQG/sku/6680901",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35.4,
+            "source_url": "https://www.hiboy.ca/collections/high-performace-escooter",
+            "source_url_2": "https://sportvl.ca/en/products/hiboy-max-pro-electric-scooter-650w-32km-h",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 x 2.75 pouces (tubeless, gel anti-crevaison)",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hiboy MAX Pro (version européenne) est une trottinette électrique pliable équipée d'un moteur Bosch de 500 W, d'une batterie 48 V 14,5 Ah et de pneus tubeless de 11 pouces à gel anti-crevaison, avec suspensions avant et arrière. Le freinage associe frein à tambour avant et arrière et frein électronique ; la vitesse est bridée à 25 km/h pour une autonomie annoncée de 55 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter-for-heavy-adult",
+            "source_url_2": "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.hiboy.eu/products/hiboy-max-pro-electric-scooter",
+            "https://www.ullers.com/products/hiboy-max-pro-e-scooter",
+            "https://electricrideco.com/products/hiboy-max-pro-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.hiboy.eu/cdn/shop/files/exec-5def050e-0b75-45e8-9935-e7e2f51e9407.png?v=1787736528",
+            "https://www.ullers.com/cdn/shop/files/MAX_PRO_15.png?v=1747925142&width=1200",
+            "http://electricrideco.com/cdn/shop/files/111_0556db6d-dbb9-4da5-b407-b65cc7058e54_1_1200x1200.jpg?v=1706157157"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.hiboy.ca/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.ullers.com/products/hiboy-max-pro-e-scooter",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+            "source_url_2": "https://www.amazon.com/Hiboy-MAX-Pro-Pneumatic-Suspension/dp/B0BZCP67SD",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://www.alphaproscooters.com/products/hiboy-max-pro-solid-tire",
+            "source_url_2": "https://www.ebay.com/itm/326921034937",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hiboy Titan Pro",
+        "slug": "hiboy-titan-pro",
+        "voltage": 48,
+        "amperage": 36,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 50,
+        "range_km": 129,
+        "max_load_kg": 150,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 47,
+        "suspension": "Avant et arrière (double suspension)",
+        "ip_rating": "IPX4 (trottinette) / IPX5 (batterie)",
+        "tire_size": "10\" pneus tubeless remplis de gel (gel-filled tubeless)",
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://electricrideco.com/cdn/shop/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe_1200x1200.webp?v=1780545095"
+        ],
+        "brake_type": "disc_mechanical",
+        "rim_diameter": "6.5",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Hiboy Titan Pro (version 2026) est une trottinette électrique tout-terrain à double moteur (2 x 750 W nominaux, 2400 W de puissance crête cumulée), alimentée par une batterie 48 V 36 Ah donnant jusqu'à 129 km d'autonomie annoncée. Elle roule sur des pneus tubeless 10 pouces remplis de gel, avec freins hydrauliques avant et arrière et double suspension ; la vitesse maximale constructeur est de 50 km/h sur terrain privé, la circulation sur voie publique en France imposant 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hiboy Titan Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hiboy Titan Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hiboy titan pro, pieces hiboy titan pro, disque frein hiboy titan pro, plaquettes hiboy titan pro, pneu hiboy titan pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026"
+        },
+        "suspension": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://electricrideco.com/cdn/shop/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe_1200x1200.webp?v=1780545095",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://scooter.guide/hiboy-titan-pro-electric-scooter-review/",
+          "type": "site_test"
+        },
+        "rim_diameter": {
+          "url": "https://www.amazon.com/GLDYTIMES-10x2-75-6-5-10x2-70-6-5-Alpha-Hiboy-Max3-Evercross/dp/B0CL9TYZ1L",
+          "type": "revendeur",
+          "url2": "https://www.fruugo.us/10x275270-65-vacuum-tire-7065-65-electric-tires-scooter-10-inch-off-road-tire/p-376624980-814729494?language=en"
+        },
+        "tire_family": {
+          "url": "https://scooter.guide/hiboy-titan-pro-electric-scooter-review/",
+          "type": "site_test"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_diameter",
+          "value": 140,
+          "url": "https://www.fnac.com/mp46813024/Trottinette-electrique-HiBoy-Titan-Pro-Noir-1200W-2-48V-17-5Ah-60-65km-Range-MAX/w-4"
+        },
+        {
+          "key": "tire_section",
+          "value": "70/65",
+          "url": "https://www.amazon.com/GLDYTIMES-10x2-75-6-5-10x2-70-6-5-Alpha-Hiboy-Max3-Evercross/dp/B0CL9TYZ1L"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47,
+            "source_url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://electricrideco.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 36,
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://turbokids.ca/products/hiboy-titan-pro-trottinette-electrique-48-volts-36ah-2x750-watts-2400-crete",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_url_2": "https://urbanebike.ca/product/hiboy-titan-pro/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_url_2": "https://urbanebike.ca/product/hiboy-titan-pro/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 129,
+            "source_url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_url_2": "https://urbanebike.ca/product/hiboy-titan-pro/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://turbokids.ca/products/hiboy-titan-pro-trottinette-electrique-48-volts-36ah-2x750-watts-2400-crete",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10\" pneus tubeless remplis de gel (gel-filled tubeless)",
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://turbokids.ca/products/hiboy-titan-pro-trottinette-electrique-48-volts-36ah-2x750-watts-2400-crete",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (double suspension)",
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://electricrideco.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4 (trottinette) / IPX5 (batterie)",
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://turbokids.ca/products/hiboy-titan-pro-trottinette-electrique-48-volts-36ah-2x750-watts-2400-crete",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_url_2": "https://electricrideco.com/products/hiboy-titan-pro-electric-scooter-2026",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "La Hiboy Titan Pro (version 2026) est une trottinette électrique tout-terrain à double moteur (2 x 750 W nominaux, 2400 W de puissance crête cumulée), alimentée par une batterie 48 V 36 Ah donnant jusqu'à 129 km d'autonomie annoncée. Elle roule sur des pneus tubeless 10 pouces remplis de gel, avec freins hydrauliques avant et arrière et double suspension ; la vitesse maximale constructeur est de 50 km/h sur terrain privé, la circulation sur voie publique en France imposant 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.hiboy.ca/products/hiboy-titan-pro-electric-scooter",
+            "https://urbanebike.ca/product/hiboy-titan-pro/",
+            "https://electricrideco.com/products/hiboy-titan-pro-electric-scooter-2026"
+          ],
+          "_og_images": [
+            "https://cdn.shopify.com/s/files/1/0729/5195/5765/files/logo_db0bfc44-d6b0-408c-a885-2b61dd5d1975.png?v=1681977773",
+            "http://electricrideco.com/cdn/shop/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe_1200x1200.webp?v=1780545095"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://scooter.guide/hiboy-titan-pro-electric-scooter-review/",
+            "source_url_2": "https://www.fnac.com/mp46813024/Trottinette-electrique-HiBoy-Titan-Pro-Noir-1200W-2-48V-17-5Ah-60-65km-Range-MAX/w-4",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.fnac.com/mp46813024/Trottinette-electrique-HiBoy-Titan-Pro-Noir-1200W-2-48V-17-5Ah-60-65km-Range-MAX/w-4",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://scooter.guide/hiboy-titan-pro-electric-scooter-review/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "70/65",
+            "source_url": "https://www.amazon.com/GLDYTIMES-10x2-75-6-5-10x2-70-6-5-Alpha-Hiboy-Max3-Evercross/dp/B0CL9TYZ1L",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.amazon.com/GLDYTIMES-10x2-75-6-5-10x2-70-6-5-Alpha-Hiboy-Max3-Evercross/dp/B0CL9TYZ1L",
+            "source_url_2": "https://www.fruugo.us/10x275270-65-vacuum-tire-7065-65-electric-tires-scooter-10-inch-off-road-tire/p-376624980-814729494?language=en",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    }
+  ]
+}

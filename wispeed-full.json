@@ -1,0 +1,32 @@
+{
+  "brandName": "Wispeed",
+  "scooters": [
+    {
+      "name": "Wispeed SUVPILOT 480",
+      "slug": "wispeed-suvpilot-480",
+      "voltage": 48,
+      "amperage": 18,
+      "power_watts": 900,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 32,
+      "suspension": "Double suspension avant et arrière, réglable",
+      "ip_rating": "IP65",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.75",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Wispeed SUVPILOT 480 est une trottinette électrique tout-terrain dotée d'un moteur de 500 W nominal (900 W max) et d'une batterie 48 V / 18 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus cross gonflables de 10 pouces avec double suspension avant et arrière réglable, et freine par disques avant et arrière complétés d'un frein électronique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Wispeed SUVPILOT 480 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Wispeed SUVPILOT 480 : plaquettes, pneus 10x2.75, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "wispeed suvpilot 480, pieces wispeed suvpilot 480, disque frein wispeed suvpilot 480, plaquettes wispeed suvpilot 480, pneu wispeed suvpilot 480"
+    }
+  ]
+}

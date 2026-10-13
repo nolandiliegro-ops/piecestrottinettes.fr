@@ -158,3 +158,19 @@
 - 2026-10-13T04:20:32.661Z · Teverun · OK · 4.9 min · 812221 in / 36411 out / 44 rech · +4 prêt (dont 0 sans clé roue) · cumul run 3978865 tokens
 - 2026-10-13T04:23:41.022Z · Inokim · OK · 3.1 min · 797742 in / 24778 out / 38 rech · +4 prêt (dont 3 sans clé roue) · cumul run 4801385 tokens
 - 2026-10-13T04:27:46.090Z · NIU · OK · 4.1 min · 750095 in / 33815 out / 38 rech · +6 prêt (dont 6 sans clé roue) · cumul run 5585295 tokens
+- 2026-10-13T04:29:20.625Z · Navee · OK · 1.3 min · 275662 in / 9989 out / 16 rech · +2 prêt (dont 2 sans clé roue) · cumul run 285651 tokens
+- 2026-10-13T04:31:38.051Z · Zero · OK · 2.3 min · 421935 in / 11464 out / 20 rech · +2 prêt (dont 2 sans clé roue) · cumul run 719050 tokens
+- 2026-10-13T04:33:07.695Z · Inmotion · OK · 1.5 min · 315316 in / 11794 out / 17 rech · +1 prêt (dont 0 sans clé roue) · cumul run 1046160 tokens
+- 2026-10-13T04:35:17.528Z · Speedway · OK · 2.2 min · 347777 in / 14612 out / 16 rech · +0 prêt (dont 0 sans clé roue) · cumul run 1408549 tokens
+- 2026-10-13T04:36:42.081Z · Wispeed · OK · 1.4 min · 308542 in / 11057 out / 17 rech · +1 prêt (dont 0 sans clé roue) · cumul run 1728148 tokens
+- 2026-10-13T04:38:15.895Z · Urbanglide · OK · 1.6 min · 279517 in / 12088 out / 16 rech · +2 prêt (dont 2 sans clé roue) · cumul run 2019753 tokens
+- 2026-10-13T04:39:06.465Z · E-Twow · OK · 0.8 min · 133148 in / 5680 out / 8 rech · +1 prêt (dont 1 sans clé roue) · cumul run 2158581 tokens
+- 2026-10-13T04:40:41.020Z · Engwe · OK · 1.6 min · 326582 in / 12524 out / 16 rech · +1 prêt (dont 1 sans clé roue) · cumul run 2497687 tokens
+- 2026-10-13T04:42:31.492Z · Kugoo · OK · 1.8 min · 396191 in / 14503 out / 20 rech · +1 prêt (dont 1 sans clé roue) · cumul run 2908381 tokens
+- 2026-10-13T04:44:23.222Z · Hiboy · OK · 1.9 min · 412040 in / 13814 out / 20 rech · +1 prêt (dont 1 sans clé roue) · cumul run 3334235 tokens
+- 2026-10-13T04:45:45.665Z · iScooter · OK · 1.4 min · 275522 in / 11088 out / 16 rech · +2 prêt (dont 1 sans clé roue) · cumul run 3620845 tokens
+- 2026-10-13T04:47:54.623Z · Joyor · OK · 2.1 min · 339091 in / 13603 out / 19 rech · +2 prêt (dont 1 sans clé roue) · cumul run 3973539 tokens
+- 2026-10-13T04:49:14.797Z · Weped · OK · 1.3 min · 388206 in / 9343 out / 18 rech · +0 prêt (dont 0 sans clé roue) · cumul run 4371088 tokens
+- 2026-10-13T04:51:07.653Z · Nami · OK · 1.9 min · 319919 in / 15139 out / 18 rech · +2 prêt (dont 0 sans clé roue) · cumul run 4706146 tokens
+- 2026-10-13T04:52:32.124Z · Apollo · OK · 1.4 min · 300938 in / 10601 out / 16 rech · +2 prêt (dont 2 sans clé roue) · cumul run 5017685 tokens
+- 2026-10-13T04:52:32.124Z · ARRÊT : plafond 5000000 tokens atteint (5017685)

@@ -1,0 +1,489 @@
+{
+  "brandName": "Weped",
+  "results": [
+    {
+      "scooter": {
+        "name": "Weped Fold 3 Pro",
+        "slug": "weped-fold-3-pro",
+        "amperage": 50,
+        "max_speed_private_kmh": 90,
+        "range_km": 150,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "suspension": "Avant : amortisseur hydraulique à huile (Sonic) ; arrière : double ressort",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://www.speedwayridersnyc.com/wp-content/uploads/2024/08/90175a5805b1e0b0e7b06e77357813cb.jpg",
+          "https://cafe24img.poxo.com/weped/web/product/big/202412/4466deb5ea59a1e4fc0349f0110a5ae7.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Weped Fold 3 Pro est une trottinette électrique pliante à double moteur hub, alimentée par une batterie amovible Samsung SDI 21700 50E de 67,2 V (jusqu'à 50 Ah) et chaussée de pneus tubeless de 11 pouces. Elle est équipée de freins hydrauliques 4 pistons à l'avant et à l'arrière avec frein électronique, d'une suspension avant hydraulique Sonic et d'une suspension arrière à double ressort ; la vitesse annoncée est d'environ 90 km/h sur terrain privé (modèle non bridé, à limiter à 25 km/h pour la voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped Fold 3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped Fold 3 Pro : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped fold 3 pro, pieces weped fold 3 pro, disque frein weped fold 3 pro, plaquettes weped fold 3 pro, pneu weped fold 3 pro"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://weped-usa.com/product/fold3-pro/359/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://weped-usa.com/product/fold3-pro/359/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://weped-usa.com/product/fold3-pro/359/",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://weped-usa.com/product/fold3-pro/359/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://weped-usa.com/product/fold3-pro/359/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2024/08/90175a5805b1e0b0e7b06e77357813cb.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [
+        "voltage=67.2"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 52,
+          "url": "https://weped-usa.com/product/fold3-pro/359/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 52,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 67.2,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 50,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "max_speed_private_kmh": {
+            "value": 90,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant : amortisseur hydraulique à huile (Sonic) ; arrière : double ressort",
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "source_url_2": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Weped Fold 3 Pro est une trottinette électrique pliante à double moteur hub, alimentée par une batterie amovible Samsung SDI 21700 50E de 67,2 V (jusqu'à 50 Ah) et chaussée de pneus tubeless de 11 pouces. Elle est équipée de freins hydrauliques 4 pistons à l'avant et à l'arrière avec frein électronique, d'une suspension avant hydraulique Sonic et d'une suspension arrière à double ressort ; la vitesse annoncée est d'environ 90 km/h sur terrain privé (modèle non bridé, à limiter à 25 km/h pour la voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://weped-usa.com/product/fold3-pro/359/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "https://weped-usa.com/product/fold3-pro/359/"
+          ],
+          "_og_images": [
+            "https://www.speedwayridersnyc.com/wp-content/uploads/2024/08/90175a5805b1e0b0e7b06e77357813cb.jpg",
+            "https://cafe24img.poxo.com/weped/web/product/big/202412/4466deb5ea59a1e4fc0349f0110a5ae7.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/en/weped/4440-trottinette-electrique-weped-fold-3-pro-2025.html",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/weped-fold-3-pro-electric-scooter/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Weped Fold Mini 10",
+        "slug": "weped-fold-mini-10",
+        "amperage": 30,
+        "power_watts": 3600,
+        "max_speed_private_kmh": 70,
+        "range_km": 100,
+        "max_speed_kmh": 25,
+        "suspension": "Ressorts avant et arrière (réglables par changement des ressorts)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Weped Fold Mini 10 est une trottinette électrique pliable à deux moteurs d'environ 3600 W au total, alimentée par une batterie 67,2 V 30 Ah (cellules Samsung 21700 50E) pour une autonomie annoncée de 100 km. Elle est équipée de pneus tubeless de 10 pouces, de suspensions à ressorts et de freins à disques de 160 mm avec étriers hydrauliques 4 pistons ; sa vitesse est bridée à 25 km/h sur voie publique, jusqu'à 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped Fold Mini 10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped Fold Mini 10 : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped fold mini 10, pieces weped fold mini 10, disque frein weped fold mini 10, plaquettes weped fold mini 10, pneu weped fold mini 10"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [
+        "voltage=67.2"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 34,
+          "url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 34,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 67.2,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 3600,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Ressorts avant et arrière (réglables par changement des ressorts)",
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped Fold Mini 10 est une trottinette électrique pliable à deux moteurs d'environ 3600 W au total, alimentée par une batterie 67,2 V 30 Ah (cellules Samsung 21700 50E) pour une autonomie annoncée de 100 km. Elle est équipée de pneus tubeless de 10 pouces, de suspensions à ressorts et de freins à disques de 160 mm avec étriers hydrauliques 4 pistons ; sa vitesse est bridée à 25 km/h sur voie publique, jusqu'à 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/fr/weped/2797-trottinette-electrique-weped-fold-mini-10.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

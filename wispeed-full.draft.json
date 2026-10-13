@@ -1,0 +1,517 @@
+{
+  "brandName": "Wispeed",
+  "results": [
+    {
+      "scooter": {
+        "name": "Wispeed SUVPILOT 480",
+        "slug": "wispeed-suvpilot-480",
+        "voltage": 48,
+        "amperage": 18,
+        "power_watts": 900,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 32,
+        "suspension": "Double suspension avant et arrière, réglable",
+        "ip_rating": "IP65",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.75",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Wispeed SUVPILOT 480 est une trottinette électrique tout-terrain dotée d'un moteur de 500 W nominal (900 W max) et d'une batterie 48 V / 18 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus cross gonflables de 10 pouces avec double suspension avant et arrière réglable, et freine par disques avant et arrière complétés d'un frein électronique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Wispeed SUVPILOT 480 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Wispeed SUVPILOT 480 : plaquettes, pneus 10x2.75, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "wispeed suvpilot 480, pieces wispeed suvpilot 480, disque frein wispeed suvpilot 480, plaquettes wispeed suvpilot 480, pneu wispeed suvpilot 480"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-suvpilot-480/f-1214801-auc1733359352796.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://www.manualslib.fr/manual/883903/Wispeed-Suvpilot-480.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+          "type": "constructeur",
+          "url2": "https://www.electrodepot.fr/trottinette-electrique-wispeed-suvpilot-480.html"
+        },
+        "suspension": {
+          "url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/1215373",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/1215373",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-75-6-5-off-road-tubeless",
+          "type": "revendeur",
+          "url2": "https://www.trotnation.com/products/pneu-tubeless-10x2-75-6-5-off-road-kukirin-urbanglide-wispeed"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-10x2-75-6-5-off-road-tubeless",
+          "type": "revendeur",
+          "url2": "https://www.trotnation.com/products/pneu-tubeless-10x2-75-6-5-off-road-kukirin-urbanglide-wispeed"
+        },
+        "tire_family": {
+          "url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 32,
+            "source_url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-wispeed-suvpilot-480.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_suvpilot_480_k.html",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-suvpilot-480/f-1214801-auc1733359352796.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 900,
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_suvpilot_480_k.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://www.manualslib.fr/manual/883903/Wispeed-Suvpilot-480.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+            "source_url_2": "https://www.manualslib.fr/manual/883903/Wispeed-Suvpilot-480.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.boulanger.com/ref/1215373",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière, réglable",
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_url_2": "https://www.boulanger.com/ref/1215373",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP65",
+            "source_url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/1215373",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Wispeed-OFFROAD-SUVPILOT-480-18AH-48V-CROSS-kaki/a20886350/w-4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Wispeed SUVPILOT 480 est une trottinette électrique tout-terrain dotée d'un moteur de 500 W nominal (900 W max) et d'une batterie 48 V / 18 Ah annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus cross gonflables de 10 pouces avec double suspension avant et arrière réglable, et freine par disques avant et arrière complétés d'un frein électronique. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/1215373",
+            "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "https://www.electrodepot.fr/trottinette-electrique-wispeed-suvpilot-480.html"
+          ],
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/P967725.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.wispeed.net/en/wispeed/3135-trottinette-suvpilot-150.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.75",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-75-6-5-off-road-tubeless",
+            "source_url_2": "https://www.trotnation.com/products/pneu-tubeless-10x2-75-6-5-off-road-kukirin-urbanglide-wispeed",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/produit/pneu-10x2-75-6-5-off-road-tubeless",
+            "source_url_2": "https://www.trotnation.com/products/pneu-tubeless-10x2-75-6-5-off-road-kukirin-urbanglide-wispeed",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/wispeed-trottinette-electrique-suvpilot-480-wispeed/p615612.html",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_suvpilot_480_k.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Wispeed AIRO V13",
+        "slug": "wispeed-airo-v13",
+        "voltage": 36,
+        "amperage": 13,
+        "power_watts": 400,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.1,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IP65",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_unknown_actuation",
+        "rim_diameter": "6",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Wispeed AIRO V13 est une trottinette électrique pliable dotée d'un moteur de 400 W nominal (700 W en pointe), d'une batterie lithium-ion 36 V / 13 Ah et d'une autonomie annoncée jusqu'à 50 km. Elle roule sur des roues gonflables de 10 pouces avec double suspension avant et arrière, un frein arrière à disque, des clignotants intégrés, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Wispeed AIRO V13 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Wispeed AIRO V13 : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "wispeed airo v13, pieces wispeed airo v13, disque frein wispeed airo v13, plaquettes wispeed airo v13, pneu wispeed airo v13"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+          "type": "constructeur",
+          "url2": "https://www.boulanger.com/ref/1227177"
+        },
+        "suspension": {
+          "url": "https://www.boulanger.com/ref/1227177",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/1227177",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.boulanger.com/ref/1227177",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/"
+        },
+        "tire_section": {
+          "url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-wipeed-airo-v10-v13-v16"
+        },
+        "tire_family": {
+          "url": "https://www.boulanger.com/ref/1227177",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.1,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.boulanger.com/ref/1227177",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 400,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.boulanger.com/ref/1227177",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.boulanger.com/ref/1227177",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.wispeed.net/img/cms/AIRO/AIRO%20V13/UM%20AIRO%20V13%20V02TB%20-%20FR.pdf",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_url_2": "https://www.boulanger.com/ref/1227177",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.boulanger.com/ref/1227177",
+            "source_url_2": "https://trottinette-electrique-adulte.fr/produit/avis-trottinette-electrique-wispeed-airo-v13/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP65",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_url_2": "https://www.amazon.fr/Wispeed-Trottinette-%C3%89lectrique-Clignotants-Suspensions/dp/B0FJYNT1XG",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/1227177",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Wispeed AIRO V13 est une trottinette électrique pliable dotée d'un moteur de 400 W nominal (700 W en pointe), d'une batterie lithium-ion 36 V / 13 Ah et d'une autonomie annoncée jusqu'à 50 km. Elle roule sur des roues gonflables de 10 pouces avec double suspension avant et arrière, un frein arrière à disque, des clignotants intégrés, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "https://www.boulanger.com/ref/1227177",
+            "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-50-km-10-confort-renforce-airo-v13/_/R-p-bebda197-8b4d-4ef8-9b4e-b734f5e07cc6"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.boulanger.com/ref/1227177",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-airo-v13-36-v/f-1214801-wis3483070027615.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.boulanger.com/ref/1227177",
+            "source_url_2": "https://www.decathlon.fr/p/mp/wispeed/unisexe-trottinette-electrique-50-km-10-confort-renforce-airo-v13/_/R-p-bebda197-8b4d-4ef8-9b4e-b734f5e07cc6",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-wipeed-airo-v10-v13-v16",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.trottpneu.fr/collections/pneus-wispeed-c10",
+            "source_url_2": "https://trott-en-provence.fr/chambre-a-air-wispeed-airo-v10/",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    }
+  ]
+}

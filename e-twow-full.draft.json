@@ -1,0 +1,267 @@
+{
+  "brandName": "E-Twow",
+  "results": [
+    {
+      "scooter": {
+        "name": "E-Twow Booster V",
+        "slug": "e-twow-booster-v",
+        "voltage": 36,
+        "amperage": 10.5,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 11.3,
+        "suspension": "Suspension avant et arrière à ressorts",
+        "ip_rating": "IP54",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_V_Pas_cher-283657.jpg?v=1750672928",
+          "https://alternative.bike/2507-large_default/trottinette-e-twow-booster-v.jpg",
+          "https://les-cyclistes-branches.com/wp-content/uploads/2018/03/E-TWOW-BOOSTER-S-PLUS-PREMIUM-2020-scaled.jpg"
+        ],
+        "brake_type": "fender_foot_ebs",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "L'E-Twow Booster V est une trottinette électrique ultra-légère et pliable, équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium 36 V 10,5 Ah (378 Wh). Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, freine avec un frein électromagnétique à récupération d'énergie (KERS) à l'avant et un frein mécanique sur le garde-boue arrière. Sa vitesse est bridée à 25 km/h sur voie publique et atteint environ 35 km/h sur terrain privé, pour une autonomie annoncée jusqu'à 40 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow Booster V - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow Booster V : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow booster v, pieces e-twow booster v, disque frein e-twow booster v, plaquettes e-twow booster v, pneu e-twow booster v"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.etwow.net/en/scooters-en/booster-v-105ah",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/e-twow-booster-v-powero-city-facelift-2020",
+          "type": "revendeur",
+          "url2": "https://www.madcharge.com/product/e-twow-booster-v-ae/"
+        },
+        "suspension": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_V_Pas_cher-283657.jpg?v=1750672928",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.e-twow.fr/e-twow-booster-v.html",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 11.3,
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/e-twow-booster-v-powero-city-facelift-2020",
+            "source_url_2": "https://www.madcharge.com/product/e-twow-booster-v-ae/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_url_2": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.5,
+            "source_url": "https://www.etwow.net/en/scooters-en/booster-v-105ah",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-booster-v-powero-city-facelift-2020",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_url_2": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-booster-v-powero-city-facelift-2020",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://www.mymobelity.be/en/electric-scooter-e-twow-booster-v.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_url_2": "https://www.madcharge.com/product/e-twow-booster-v-ae/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension avant et arrière à ressorts",
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-e-twow-booster-v.html",
+            "source_url_2": "https://scooter.guide/e-twow-booster-v-scooter-review/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_url_2": "https://www.trotti-electrique.com/articles/etwow-booster-V-evolution",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://journal-trottinette.com/trottinette-electrique-e-twow-booster-v/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-e-twow-booster-v.html",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/e-twow-booster-v-powero-city-facelift-2020",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'E-Twow Booster V est une trottinette électrique ultra-légère et pliable, équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium 36 V 10,5 Ah (378 Wh). Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, freine avec un frein électromagnétique à récupération d'énergie (KERS) à l'avant et un frein mécanique sur le garde-boue arrière. Sa vitesse est bridée à 25 km/h sur voie publique et atteint environ 35 km/h sur terrain privé, pour une autonomie annoncée jusqu'à 40 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+            "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "https://les-cyclistes-branches.com/produit/e-twow-booster-v-premium-trottinette-electrique/"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_V_Pas_cher-283657.jpg?v=1750672928",
+            "https://alternative.bike/2507-large_default/trottinette-e-twow-booster-v.jpg",
+            "https://les-cyclistes-branches.com/wp-content/uploads/2018/03/E-TWOW-BOOSTER-S-PLUS-PREMIUM-2020-scaled.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "fender_foot_ebs",
+            "source_url": "https://www.e-twow.fr/e-twow-booster-v.html",
+            "source_url_2": "https://journal-trottinette.com/trottinette-electrique-e-twow-booster-v/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+            "source_url_2": "https://journal-trottinette.com/trottinette-electrique-e-twow-booster-v/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

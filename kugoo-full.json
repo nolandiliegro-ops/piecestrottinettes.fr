@@ -1,0 +1,34 @@
+{
+  "brandName": "Kugoo",
+  "scooters": [
+    {
+      "name": "Kugoo G2",
+      "slug": "kugoo-g2",
+      "voltage": 48,
+      "amperage": 15,
+      "power_watts": 800,
+      "max_speed_private_kmh": 45,
+      "range_km": 55,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 26,
+      "suspension": "Amortisseurs à ressorts avant et arrière",
+      "ip_rating": "IP54",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.kukirin-scooter.com/cdn/shop/files/G2-Pre-Order_499e0cbd-1596-46b3-8820-28660d2b7b7f.jpg?v=1789631353"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 140,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Kugoo (Kukirin) G2 est une trottinette électrique pliable tout-terrain équipée d'un moteur moyeu arrière de 800 W, d'une batterie 48 V 15 Ah et de pneus de 10 pouces tubeless. Elle dispose de freins à disque avant et arrière, d'amortisseurs à ressorts sur les deux roues et d'une vitesse de pointe de 45 km/h sur terrain privé, pour une autonomie annoncée jusqu'à 55 km (vitesse bridée à 25 km/h sur voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kugoo G2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kugoo G2 : disque de frein 140 mm 6 trous, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kugoo g2, pieces kugoo g2, disque frein kugoo g2, plaquettes kugoo g2, pneu kugoo g2"
+    }
+  ]
+}

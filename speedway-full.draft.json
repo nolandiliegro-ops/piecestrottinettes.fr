@@ -1,0 +1,500 @@
+{
+  "brandName": "Speedway",
+  "results": [
+    {
+      "scooter": {
+        "name": "Speedway Leger Lite",
+        "slug": "speedway-leger-lite",
+        "voltage": 36,
+        "amperage": 10,
+        "power_watts": 350,
+        "max_speed_private_kmh": 35,
+        "range_km": 35,
+        "max_load_kg": 120,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.6,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "brake_type": "drum",
+        "rim_diameter": "140mm",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Speedway Leger Lite (Minimotors) est une trottinette électrique pliable équipée d'un moteur brushless arrière de 350 W et d'une batterie lithium-ion 36 V 10 Ah annoncée pour 35 km d'autonomie. Elle roule sur deux pneus gonflables de 8,5 pouces avec suspensions avant et arrière, et freine grâce à un frein à tambour arrière associé à un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique (35 km/h annoncés sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway Leger Lite - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway Leger Lite : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway leger lite, pieces speedway leger lite, disque frein speedway leger lite, plaquettes speedway leger lite, pneu speedway leger lite"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur",
+          "url2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html"
+        },
+        "suspension": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+          "type": "distributeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.glisseurbaine.com/3003-chambre-a-air-85x2-renforcee-dualtron-mini-et-speedway-leger.html",
+          "type": "revendeur",
+          "url2": "https://miscooter.fr/products/chambres-a-air-dualtron-mini-et-speedway-leger-8-5x2-renforcee"
+        },
+        "tire_section": {
+          "url": "https://www.wattiz.fr/fr/chambres-a-air/26274-chambre-a-air-85x2-renforcee-dualtron-mini-et-leger-3760351011243.html",
+          "type": "revendeur",
+          "url2": "https://miscooter.fr/products/chambres-a-air-dualtron-mini-et-speedway-leger-8-5x2-renforcee"
+        },
+        "tire_family": {
+          "url": "https://funtrott.fr/trottinette-electrique/1298-trottinette-electrique-speedway-leger.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.6,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Leger-Lite-500-W-36V-Noir/a14144337/w-4?bl=j&ragamuff=oddba&doo=648123",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-minimotors-lite",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "description_fr": {
+            "value": "La Speedway Leger Lite (Minimotors) est une trottinette électrique pliable équipée d'un moteur brushless arrière de 350 W et d'une batterie lithium-ion 36 V 10 Ah annoncée pour 35 km d'autonomie. Elle roule sur deux pneus gonflables de 8,5 pouces avec suspensions avant et arrière, et freine grâce à un frein à tambour arrière associé à un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique (35 km/h annoncés sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.gtsshop.fr/fr/trottinettes-electriques/4200-trottinette-electrique-speedway-leger-lite.html",
+            "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "https://trottishop.fr/products/trottinette-electrique-speedway-leger-36v"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-leger-lite/p/mp-500158094",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique/1298-trottinette-electrique-speedway-leger.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://www.wattiz.fr/fr/chambres-a-air/26274-chambre-a-air-85x2-renforcee-dualtron-mini-et-leger-3760351011243.html",
+            "source_url_2": "https://miscooter.fr/products/chambres-a-air-dualtron-mini-et-speedway-leger-8-5x2-renforcee",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "140mm",
+            "source_url": "https://www.glisseurbaine.com/3003-chambre-a-air-85x2-renforcee-dualtron-mini-et-speedway-leger.html",
+            "source_url_2": "https://miscooter.fr/products/chambres-a-air-dualtron-mini-et-speedway-leger-8-5x2-renforcee",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://funtrott.fr/trottinette-electrique/1298-trottinette-electrique-speedway-leger.html",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-speedway-leger-lite/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Speedway Super Mini 4 Pro",
+        "slug": "speedway-super-mini-4-pro",
+        "voltage": 48,
+        "amperage": 16,
+        "power_watts": 500,
+        "max_speed_private_kmh": 45,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 17,
+        "suspension": "Suspension hydraulique avant + suspension pneumatique arrière",
+        "foldable": true,
+        "wheel_inches": 8,
+        "brake_type": "drum",
+        "tire_section": "8x2",
+        "score_offroad": 23,
+        "description": "La Speedway Super Mini 4 Pro de Minimotors embarque un moteur brushless de 500 W (pointes jusqu'à 1300 W) alimenté par une batterie 48 V 16 Ah, pour une autonomie annoncée d'environ 50 km. Elle dispose d'un pneu avant à chambre à air et d'un pneu arrière plein de 8 pouces, d'un frein à tambour arrière associé à un frein électrique, et d'une suspension hydraulique à l'avant et pneumatique à l'arrière. Elle est vendue bridée à 25 km/h sur la voie publique (jusqu'à 45 km/h débridée sur terrain privé uniquement). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Speedway Super Mini 4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Speedway Super Mini 4 Pro : plaquettes, pneus 8x2, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "speedway super mini 4 pro, pieces speedway super mini 4 pro, disque frein speedway super mini 4 pro, plaquettes speedway super mini 4 pro, pneu speedway super mini 4 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.cdiscount.com/auto/mobilite-urbaine-zero-emission/trottinette-electrique-speedway-super-mini-4-pro-4/f-1335501-min3701015508129.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur",
+          "url2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884"
+        },
+        "suspension": {
+          "url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.trottnshop.com/produit/speedway-super-mini-4-pro/",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+          "type": "revendeur",
+          "url2": "https://ehuastore.fr/pneu-8-pouces-200x50-trottinette-lectrique-p0129-p0129.html"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.cdiscount.com/auto/mobilite-urbaine-zero-emission/trottinette-electrique-speedway-super-mini-4-pro-4/f-1335501-min3701015508129.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 16,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.cdiscount.com/auto/mobilite-urbaine-zero-emission/trottinette-electrique-speedway-super-mini-4-pro-4/f-1335501-min3701015508129.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.cdiscount.com/auto/mobilite-urbaine-zero-emission/trottinette-electrique-speedway-super-mini-4-pro-4/f-1335501-min3701015508129.html",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/minimotors-speedway-super-mini-4-pro-trottinette-electrique-copie/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension hydraulique avant + suspension pneumatique arrière",
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+            "source_url_2": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-speedway-mini-4-pro-8-pouces.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Speedway Super Mini 4 Pro de Minimotors embarque un moteur brushless de 500 W (pointes jusqu'à 1300 W) alimenté par une batterie 48 V 16 Ah, pour une autonomie annoncée d'environ 50 km. Elle dispose d'un pneu avant à chambre à air et d'un pneu arrière plein de 8 pouces, d'un frein à tambour arrière associé à un frein électrique, et d'une suspension hydraulique à l'avant et pneumatique à l'arrière. Elle est vendue bridée à 25 km/h sur la voie publique (jusqu'à 45 km/h débridée sur terrain privé uniquement). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "source_url_2": "https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pie-technologie.myshopify.com/products/speedway-super-mini-4-pro",
+            "https://www.laposte.fr/boutique/trottinette-electrique-speedway-super-mini-4-pro-48v-16ah-noire-vitesse-bridee-25kmh/p/mp-500157884",
+            "https://www.cdiscount.com/auto/mobilite-urbaine-zero-emission/trottinette-electrique-speedway-super-mini-4-pro-4/f-1335501-min3701015508129.html"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.trottnshop.com/produit/speedway-super-mini-4-pro/",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/minimotors-speedway-super-mini-4-pro-trottinette-electrique-copie/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8x2",
+            "source_url": "https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro",
+            "source_url_2": "https://ehuastore.fr/pneu-8-pouces-200x50-trottinette-lectrique-p0129-p0129.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "brandName": "Apollo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Apollo Phantom 2.0",
+        "slug": "apollo-phantom-2-0",
+        "voltage": 52,
+        "amperage": 27,
+        "power_watts": 3500,
+        "max_speed_private_kmh": 70,
+        "range_km": 80,
+        "max_load_kg": 149.7,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 46.3,
+        "suspension": "Double ressort (avant et arrière)",
+        "ip_rating": "IP66",
+        "tire_size": "11 x 4 pouces (tubeless auto-réparant PunctureGuard)",
+        "foldable": false,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://apolloscooters.ca/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1781350529&width=2048",
+          "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur de 1 750 W (3 500 W de puissance crête cumulée), alimentée par une batterie 52V 27Ah d'environ 1 400 Wh pour une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless auto-réparants de 11 x 4 pouces, d'une suspension à double ressort et de freins à double disque avec freinage régénératif, avec une vitesse de pointe constructeur de 70 km/h sur terrain privé (bridée à 25 km/h sur voie publique en France). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Phantom 2.0 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Phantom 2.0 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo phantom 2.0, pieces apollo phantom 2.0, disque frein apollo phantom 2.0, plaquettes apollo phantom 2.0, pneu apollo phantom 2.0"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-phantom-2-0-legends-are-made-they-aren-t-born",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+          "type": "site_test"
+        },
+        "year": {
+          "url": "https://electricscooterguide.com/apollo-phantom-2-0-review-best-electric-scooter-of-2025/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+          "type": "revendeur",
+          "url2": "https://scooterrank.com/scooters/apollo-phantom-2-0"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://apolloscooters.ca/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1781350529&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.plare.fr/la-nouvelle-trottinette-electrique-apollo-phantom-2-0-ultra-rapide-est-enfin-disponible-vitesse-et-innovation-au-rendez-vous/",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://apolloscooters.co/products/apollo-phantom-2-0",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 46.3,
+            "source_url": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_url_2": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-phantom-2-0-legends-are-made-they-aren-t-born",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 27,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://electricscooterguide.com/the-apollo-phantom-2-0-is-not-for-everyone/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 3500,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-phantom-2-0-52v",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 149.7,
+            "source_url": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 x 4 pouces (tubeless auto-réparant PunctureGuard)",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double ressort (avant et arrière)",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://electricscooterguide.com/apollo-phantom-2-0-review-best-electric-scooter-of-2025/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": false,
+            "source_url": "https://scooterrank.com/scooters/apollo-phantom-2-0",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://electricscooterguide.com/apollo-phantom-2-0-review-best-electric-scooter-of-2025/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur de 1 750 W (3 500 W de puissance crête cumulée), alimentée par une batterie 52V 27Ah d'environ 1 400 Wh pour une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless auto-réparants de 11 x 4 pouces, d'une suspension à double ressort et de freins à double disque avec freinage régénératif, avec une vitesse de pointe constructeur de 70 km/h sur terrain privé (bridée à 25 km/h sur voie publique en France). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "source_url_2": "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://apolloscooters.ca/products/apollo-phantom-2-0",
+            "https://turbokids.ca/products/apollo-phantom-2-0-trottinette-electrique-52-volts-27ah-2x1750-watts",
+            "https://www.ecraft-shop.de/en/produkt/apollo-phantom-2.0/sw10719"
+          ],
+          "_og_images": [
+            "http://apolloscooters.ca/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1781350529&width=2048",
+            "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.plare.fr/la-nouvelle-trottinette-electrique-apollo-phantom-2-0-ultra-rapide-est-enfin-disponible-vitesse-et-innovation-au-rendez-vous/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://apolloscooters.co/products/apollo-phantom-2-0",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Apollo Explore 2.0",
+        "slug": "apollo-explore-2-0",
+        "voltage": 48,
+        "amperage": 13.5,
+        "power_watts": 1650,
+        "max_speed_private_kmh": 40,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 27.2,
+        "suspension": "Triple ressort (1 à l'avant, 2 à l'arrière)",
+        "ip_rating": "IP66",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://apolloscooters.ca/cdn/shop/files/ApolloExplore_PC10__Website_Standard_3.png?v=1781533387&width=2048",
+          "https://promechbc.com/cdn/shop/files/Apollo-explore-2.0-1.jpg?v=1770543992",
+          "https://cdn.shopify.com/s/files/1/0675/3864/9158/files/imageye___-_imgi_7_Apollo_Explore_PC10__Website_Standard_3_b995ba28-f543-4205-942f-fda63e57a65d.png?v=1784602026"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Apollo Explore 2.0 est une trottinette électrique à moteur unique de 1650 W en pic, alimentée par une batterie 48 V 13,5 Ah (648 Wh) offrant jusqu'à 60 km d'autonomie en mode Eco. Elle roule sur des pneus tubeless auto-réparants de 10 pouces, avec une suspension à triple ressort, un frein à tambour avant et un freinage régénératif ; sa vitesse maximale constructeur est de 40 km/h (bridée à 25 km/h pour la voie publique en France). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Apollo Explore 2.0 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Apollo Explore 2.0 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "apollo explore 2.0, pieces apollo explore 2.0, disque frein apollo explore 2.0, plaquettes apollo explore 2.0, pneu apollo explore 2.0"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+          "type": "revendeur",
+          "url2": "https://scooterrank.com/scooters/apollo-explore-2-0"
+        },
+        "suspension": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://apolloscooters.ca/cdn/shop/files/ApolloExplore_PC10__Website_Standard_3.png?v=1781533387&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://apolloscooters.co/products/apollo-explore-2-0",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://apolloscooters.co/products/apollo-explore-2-0",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 27.2,
+            "source_url": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_url_2": "https://scooterrank.com/scooters/apollo-explore-2-0",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13.5,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1650,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Triple ressort (1 à l'avant, 2 à l'arrière)",
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP66",
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://apolloscooters.co/blogs/news/apollo-scooters-launches-the-apollo-explore-2-0",
+            "source_url_2": "https://stormrides.nz/products/apollo-explore",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'Apollo Explore 2.0 est une trottinette électrique à moteur unique de 1650 W en pic, alimentée par une batterie 48 V 13,5 Ah (648 Wh) offrant jusqu'à 60 km d'autonomie en mode Eco. Elle roule sur des pneus tubeless auto-réparants de 10 pouces, avec une suspension à triple ressort, un frein à tambour avant et un freinage régénératif ; sa vitesse maximale constructeur est de 40 km/h (bridée à 25 km/h pour la voie publique en France). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "source_url_2": "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://apolloscooters.ca/products/apollo-explore-2-0",
+            "https://promechbc.com/products/apollo-explore-2-0-smooth-powerful-ready-to-roll",
+            "https://ezwheelusa.com/products/apollo-explore-2-0"
+          ],
+          "_og_images": [
+            "http://apolloscooters.ca/cdn/shop/files/ApolloExplore_PC10__Website_Standard_3.png?v=1781533387&width=2048",
+            "https://promechbc.com/cdn/shop/files/Apollo-explore-2.0-1.jpg?v=1770543992",
+            "https://cdn.shopify.com/s/files/1/0675/3864/9158/files/imageye___-_imgi_7_Apollo_Explore_PC10__Website_Standard_3_b995ba28-f543-4205-942f-fda63e57a65d.png?v=1784602026"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://apolloscooters.co/products/apollo-explore-2-0",
+            "source_url_2": "https://ezwheelusa.com/products/apollo-explore-2-0",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://apolloscooters.co/products/apollo-explore-2-0",
+            "source_url_2": "https://ezwheelusa.com/products/apollo-explore-2-0",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

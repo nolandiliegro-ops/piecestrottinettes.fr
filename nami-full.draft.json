@@ -1,0 +1,597 @@
+{
+  "brandName": "Nami",
+  "results": [
+    {
+      "scooter": {
+        "name": "Nami Burn-E",
+        "slug": "nami-burn-e",
+        "voltage": 72,
+        "amperage": 32,
+        "power_watts": 3000,
+        "max_speed_private_kmh": 100,
+        "range_km": 150,
+        "max_load_kg": 150,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 47,
+        "suspension": "Hydraulique réglable avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "11\" tubeless CST 90/65-6.5",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/namiburne1.png?v=1669309298"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "nutt_4p",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Nami Burn-E est une trottinette électrique double motorisation de 2 x 1500 W (3000 W nominaux), alimentée par une batterie 72 V 32 Ah et annoncée jusqu'à 150 km d'autonomie. Elle repose sur des roues de 11 pouces à pneus tubeless, des suspensions hydrauliques réglables et des freins hydrauliques à disques de 160 mm, pour un poids d'environ 47 kg. Elle est vendue bridée à 25 km/h pour la voie publique (jusqu'à 100 km/h débridée sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Burn-E - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Burn-E : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami burn-e, pieces nami burn-e, disque frein nami burn-e, plaquettes nami burn-e, pneu nami burn-e"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+          "type": "site_test"
+        },
+        "max_load_kg": {
+          "url": "https://tecowheel.com/en/product/nami-burn-e-max/",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur",
+          "url2": "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e"
+        },
+        "suspension": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://tecowheel.com/en/product/nami-burn-e-max/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/nami-burn-e",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/namiburne1.png?v=1669309298",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://nami-electric.com/produit/burn-e/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://zetrottstore-toulouse.com/pieces-detachees/2525-disque-de-frein-160-mm-pour-nami-burn-e-blast-2071629690253.html"
+        },
+        "disc_holes": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://funtrott.fr/295-dualtron"
+        },
+        "rim_diameter": {
+          "url": "https://nami-electric.com/en/produit/road-tire/",
+          "type": "constructeur",
+          "url2": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html"
+        },
+        "tire_section": {
+          "url": "https://nami-electric.com/en/produit/road-tire/",
+          "type": "constructeur",
+          "url2": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://nami-electric.com/produit/burn-e/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47,
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 32,
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 3000,
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 100,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/nami-burn-e",
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e",
+            "source_type": "site_test"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://tecowheel.com/en/product/nami-burn-e-max/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://www.glisseurbaine.com/1775-trottinette-electrique-nami-burn-e.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11\" tubeless CST 90/65-6.5",
+            "source_url": "https://tecowheel.com/en/product/nami-burn-e-max/",
+            "source_url_2": "https://www.e-scooteruaehub.com/products/nami-burn-e2-max-72v-32ah-adult-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique réglable avant et arrière",
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/nami-burn-e",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_url_2": "https://www.glisseurbaine.com/1775-trottinette-electrique-nami-burn-e.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/nami-burn-e",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Nami Burn-E est une trottinette électrique double motorisation de 2 x 1500 W (3000 W nominaux), alimentée par une batterie 72 V 32 Ah et annoncée jusqu'à 150 km d'autonomie. Elle repose sur des roues de 11 pouces à pneus tubeless, des suspensions hydrauliques réglables et des freins hydrauliques à disques de 160 mm, pour un poids d'environ 47 kg. Elle est vendue bridée à 25 km/h pour la voie publique (jusqu'à 100 km/h débridée sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://all-modique.com/product/trottinette-electrique-nami-burn-e/",
+            "https://pietechnologie.com/products/trottinette-electrique-viper-nami-burn-e",
+            "https://www.glisseurbaine.com/1775-trottinette-electrique-nami-burn-e.html"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/namiburne1.png?v=1669309298"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://nami-electric.com/produit/burn-e/",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-nami-burn-e/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+            "source_url_2": "https://zetrottstore-toulouse.com/pieces-detachees/2525-disque-de-frein-160-mm-pour-nami-burn-e-blast-2071629690253.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+            "source_url_2": "https://funtrott.fr/295-dualtron",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://nami-electric.com/en/produit/road-tire/",
+            "source_url_2": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+            "source_type": "constructeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://nami-electric.com/en/produit/road-tire/",
+            "source_url_2": "https://www.gyro-phare.com/1099-pneu-tubeless-90-65-65-pour-dualtron-thunder-storm-nami-burn-e.html",
+            "source_type": "constructeur"
+          },
+          "caliper_family": {
+            "value": "nutt_4p",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/plaquettes-de-frein-trottinette-electrique/plaquettes-de-frein-nami-burn-e-4-pistons",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://nami-electric.com/produit/burn-e/",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-nami-burn-e/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Nami Klima",
+        "slug": "nami-klima",
+        "voltage": 60,
+        "amperage": 25,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 65,
+        "range_km": 65,
+        "max_load_kg": 120,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "weight_kg": 38,
+        "suspension": "Hydraulique avant et arrière, réglable",
+        "ip_rating": "IP55",
+        "tire_size": "10x3 tubeless (CST)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535.jpg?v=1750674340",
+          "http://www.eleqtron.fr/cdn/shop/products/nami-klima_1.jpg?v=1678807242",
+          "https://funtrott.fr/7575-large_default/nami-klima.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "rim_diameter": "6",
+        "tire_section": "10x3.00",
+        "tire_family": "pneumatic",
+        "score_offroad": 43,
+        "description": "La Nami Klima embarque deux moteurs de 1000 W (2000 W nominal) alimentés par une batterie 60V 25Ah, pour une autonomie annoncée de 65 km et une vitesse de pointe de 65 km/h sur terrain privé. Elle est équipée de pneus tubeless CST 10 pouces, de suspensions hydrauliques réglables avant et arrière et de freins à disque full hydrauliques à deux pistons. Elle est livrée bridée à 25 km/h conformément à la réglementation. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Klima - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Klima : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami klima, pieces nami klima, disque frein nami klima, plaquettes nami klima, pneu nami klima"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://bikescootercity.com.au/products/nami-klima-electric-scooter-2023-model",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+          "type": "revendeur",
+          "url2": "https://bikescootercity.com.au/products/nami-klima-electric-scooter-2023-model"
+        },
+        "suspension": {
+          "url": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://nami-electric.ca/products/nami-klima",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/nami-klima",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535.jpg?v=1750674340",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://nami-electric.com/produit/klima/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/746-brake-disc-140mm-nami-klima-8435764423628.html",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "disc_pcd": {
+          "url": "https://fastride.fr/fr/109-accessoires-nami-electric",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "rim_diameter": {
+          "url": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+          "type": "revendeur",
+          "url2": "https://weerda.fr/pieces-detachees-weerda/1796-Pneu-10-Pouces-10x3-6-CST-Trottinette-Electrique-Dualtron-New-Victor-Luxury-Spider-Kaabo-Mantis-Laotie-Mobygum-Zero-10X-Currus.html"
+        },
+        "tire_section": {
+          "url": "https://www.gyro-phare.com/2596-pneu-10x300-6-cst-tubeless-dualtron-victor-nami-klima.html",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html"
+        },
+        "tire_family": {
+          "url": "https://nami-electric.com/produit/klima/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 38,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://bikescootercity.com.au/products/nami-klima-electric-scooter-2023-model",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 25,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://funtrott.fr/accueil/1889-nami-klima.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://funtrott.fr/accueil/1889-nami-klima.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://fastride.fr/fr/nami-electric/2944-trottinette-electrique-nami-klima-klima-max-v2.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 65,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://funtrott.fr/accueil/1889-nami-klima.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "source_url_2": "https://fastride.fr/fr/nami-electric/2944-trottinette-electrique-nami-klima-klima-max-v2.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x3 tubeless (CST)",
+            "source_url": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+            "source_url_2": "https://bikescootercity.com.au/products/nami-klima-electric-scooter-2023-model",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique avant et arrière, réglable",
+            "source_url": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP55",
+            "source_url": "https://nami-electric.ca/products/nami-klima",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/nami-klima",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/nami-klima",
+            "source_url_2": "https://www.electricscooterinsider.com/electric-scooters/reviews/nami-klima-review/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://bikescootercity.com.au/products/nami-klima-electric-scooter-2023-model",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Nami Klima embarque deux moteurs de 1000 W (2000 W nominal) alimentés par une batterie 60V 25Ah, pour une autonomie annoncée de 65 km et une vitesse de pointe de 65 km/h sur terrain privé. Elle est équipée de pneus tubeless CST 10 pouces, de suspensions hydrauliques réglables avant et arrière et de freins à disque full hydrauliques à deux pistons. Elle est livrée bridée à 25 km/h conformément à la réglementation. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.glisseurbaine.com/3109-nami-klima-25ah-klima-25ah.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+            "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+            "https://funtrott.fr/accueil/1889-nami-klima.html"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535.jpg?v=1750674340",
+            "http://www.eleqtron.fr/cdn/shop/products/nami-klima_1.jpg?v=1678807242",
+            "https://funtrott.fr/7575-large_default/nami-klima.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://nami-electric.com/produit/klima/",
+            "source_url_2": "https://www.out-fun.com/trottinettes-electriques/3483-nami-klima-25ah-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/746-brake-disc-140mm-nami-klima-8435764423628.html",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/fr/109-accessoires-nami-electric",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://www.gyro-phare.com/2596-pneu-10x300-6-cst-tubeless-dualtron-victor-nami-klima.html",
+            "source_url_2": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.out-fun.com/pneus/3162-pneu-tubeless-10x3-6-cst-dualtron-victor-nami-klima-teverun-mini-3760351013667.html",
+            "source_url_2": "https://weerda.fr/pieces-detachees-weerda/1796-Pneu-10-Pouces-10x3-6-CST-Trottinette-Electrique-Dualtron-New-Victor-Luxury-Spider-Kaabo-Mantis-Laotie-Mobygum-Zero-10X-Currus.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://nami-electric.com/produit/klima/",
+            "source_url_2": "https://www.out-fun.com/trottinettes-electriques/3483-nami-klima-25ah-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

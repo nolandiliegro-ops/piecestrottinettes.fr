@@ -1,0 +1,32 @@
+{
+  "brandName": "Engwe",
+  "scooters": [
+    {
+      "name": "Engwe Y400",
+      "slug": "engwe-y400",
+      "voltage": 48,
+      "amperage": 13.5,
+      "power_watts": 500,
+      "max_speed_private_kmh": 45,
+      "range_km": 50,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 24.6,
+      "suspension": "Double suspension : fourche avant en C + amortisseur arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10 x 2,75 pouces (pneus tubeless)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://engwe-bikes-eu.com/cdn/shop/files/4_a1150c70-626d-4d0c-ab0a-4e2f9698efdf.jpg?crop=center&height=1200&v=1770108876&width=1200"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Engwe Y400 est une trottinette électrique pliable équipée d'un moteur de 500 W (830 W en pointe) et d'une batterie 48 V 13,5 Ah, pour une autonomie annoncée jusqu'à 50 km. Elle roule sur des pneus de 10 pouces, avec double suspension (fourche avant et amortisseur arrière) et freins à disque mécaniques avant et arrière. Elle est bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Engwe Y400 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Engwe Y400 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "engwe y400, pieces engwe y400, disque frein engwe y400, plaquettes engwe y400, pneu engwe y400"
+    }
+  ]
+}

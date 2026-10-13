@@ -1,0 +1,65 @@
+{
+  "brandName": "iScooter",
+  "scooters": [
+    {
+      "name": "iScooter iX3",
+      "slug": "iscooter-ix3",
+      "voltage": 48,
+      "amperage": 10,
+      "power_watts": 800,
+      "max_speed_private_kmh": 40,
+      "range_km": 40,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 23.25,
+      "suspension": "Double suspension avant et arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "10 pouces (25,4 cm), pneu pneumatique tout-terrain",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.ihoverboard.fr/cdn/shop/files/iX3newelectricscooter_28890803-a4e4-4566-8c0a-22445d33bd2b.jpg?v=1758005407",
+        "https://media.rueducommerce.fr/mktp/product/productImage/12/66/3a1e4811b10849baa1ded0324d01f92e.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.75",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'iScooter iX3 est une trottinette électrique pliable équipée d'un moteur arrière brushless de 800 W et d'une batterie 48 V 10 Ah, annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus tout-terrain de 10 pouces, avec double suspension avant/arrière et freins à disque avec frein électronique ; sa vitesse maximale constructeur est de 40 km/h hors voie publique, et elle est bridée à 25 km/h pour un usage routier en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "iScooter iX3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées iScooter iX3 : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.75, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "iscooter ix3, pieces iscooter ix3, disque frein iscooter ix3, plaquettes iscooter ix3, pneu iscooter ix3"
+    },
+    {
+      "name": "iScooter i10",
+      "slug": "iscooter-i10",
+      "voltage": 36,
+      "amperage": 15,
+      "power_watts": 650,
+      "max_speed_private_kmh": 40,
+      "range_km": 45,
+      "max_load_kg": 120,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 20,
+      "suspension": "Avant et arrière (doubles amortisseurs)",
+      "ip_rating": "IP54",
+      "tire_size": "10x2.50 (60/70-6.5)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/86b04629-0f2f-46ee-5801-03ccf513f800/public"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La iScooter i10 est une trottinette électrique pliable équipée d'un moteur arrière de 650 W et d'une batterie 36 V 15 Ah annoncée pour 40 à 45 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces avec suspensions avant et arrière, un frein avant à tambour/électronique et un frein à disque arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 40 km/h une fois débridée). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "iScooter i10 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées iScooter i10 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "iscooter i10, pieces iscooter i10, disque frein iscooter i10, plaquettes iscooter i10, pneu iscooter i10"
+    }
+  ]
+}

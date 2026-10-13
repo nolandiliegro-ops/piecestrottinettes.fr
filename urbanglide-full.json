@@ -1,0 +1,56 @@
+{
+  "brandName": "Urbanglide",
+  "scooters": [
+    {
+      "name": "Urbanglide 85 Evo",
+      "slug": "urbanglide-85-evo",
+      "amperage": 7.8,
+      "power_watts": 250,
+      "range_km": 20,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 15,
+      "suspension": "Double suspension avant",
+      "ip_rating": "IPX5",
+      "tire_size": "8 1/2 x 2 (8,5\" à chambre à air)",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://media.rueducommerce.fr/mktp/product/productImage/11/142/1203ecd74a724e6fa965f343aac6edc0.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "L'UrbanGlide 85 EVO est une trottinette électrique pliable équipée d'un moteur avant de 250 W (300 W en pointe), d'une batterie 21,6 V / 7,8 Ah pour jusqu'à 20 km d'autonomie et de pneus gonflables 8,5 pouces à chambre à air. Elle dispose d'une double suspension avant, d'un frein à disque arrière, d'une protection IPX5 et d'une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Urbanglide 85 Evo - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Urbanglide 85 Evo : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "urbanglide 85 evo, pieces urbanglide 85 evo, disque frein urbanglide 85 evo, plaquettes urbanglide 85 evo, pneu urbanglide 85 evo"
+    },
+    {
+      "name": "Urbanglide Ecross Go",
+      "slug": "urbanglide-ecross-go",
+      "voltage": 48,
+      "amperage": 10.4,
+      "power_watts": 600,
+      "range_km": 50,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 22,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P10017641.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Urbanglide Ecross Go est une trottinette électrique tout-terrain pliable dotée d'un moteur arrière de 600 W nominal (jusqu'à 1 200 W en crête) et d'une batterie lithium 48 V / 10,4 Ah (499 Wh) annoncée pour 50 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière et freins à disque avant et arrière, pour un poids de 22 kg. Sa vitesse est bridée à 25 km/h conformément à la réglementation française. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Urbanglide Ecross Go - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Urbanglide Ecross Go : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "urbanglide ecross go, pieces urbanglide ecross go, disque frein urbanglide ecross go, plaquettes urbanglide ecross go, pneu urbanglide ecross go"
+    }
+  ]
+}

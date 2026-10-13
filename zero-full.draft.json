@@ -1,0 +1,533 @@
+{
+  "brandName": "Zero",
+  "results": [
+    {
+      "scooter": {
+        "name": "Zero 8X",
+        "slug": "zero-8x",
+        "voltage": 52,
+        "amperage": 26,
+        "power_watts": 1600,
+        "max_speed_private_kmh": 55,
+        "range_km": 110,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 35,
+        "suspension": "Suspensions hydrauliques à ressort avant et arrière",
+        "tire_size": "8 x 3,5 pouces (pneus pleins)",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "https://www.trottnscoot.com/wp-content/uploads/2020/03/zero-8x-300x300.jpg"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "caliper_family": "sram_avid",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "La Zero 8X est une trottinette électrique double moteur (2 x 800 W, soit 1600 W) alimentée par une batterie lithium-ion LG 52 V en version 18 Ah ou 26 Ah. Elle repose sur des pneus pleins de 8 x 3,5 pouces, une double suspension hydraulique à ressort et des freins à disque à l'avant et à l'arrière. Elle est livrée bridée à 25 km/h (55 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Zero 8X - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Zero 8X : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "zero 8x, pieces zero 8x, disque frein zero 8x, plaquettes zero 8x, pneu zero 8x"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.trottnscoot.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur",
+          "url2": "https://www.inrevolta.com/en/zero-8x.html"
+        },
+        "suspension": {
+          "url": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://hover-store.fr/boutique/etrottinette/e-trottinette-tout-terrain/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.trottnscoot.com/wp-content/uploads/2020/03/zero-8x-300x300.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wee-bot.com/products/disque-frein-140mm-diametre",
+          "type": "revendeur",
+          "url2": "https://www.scooterpassion.be/fr/scooter-passion/4028-disque-de-frein-origine-o-140mm-original-zero-kingsongkaabo.html"
+        },
+        "caliper_family": {
+          "url": "https://www.urbanmoov.fr/boutique/Plaquettes-de-frein-a-disque-dualtron-zero-kaabo-p414870259",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.inrevolta.com/en/zero-8x.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://www.wee-bot.com/products/disque-frein-140mm-diametre"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 26,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1600,
+            "source_url": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/non-classe/zero-8x",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 55,
+            "source_url": "https://www.trottnscoot.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 110,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8 x 3,5 pouces (pneus pleins)",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-zero-8x/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspensions hydrauliques à ressort avant et arrière",
+            "source_url": "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html",
+            "source_url_2": "https://power-zero.com/fr/shop/trottinettes/1292-trottinette-electrique-zero-8x-batterie-52v-18a.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://hover-store.fr/boutique/etrottinette/e-trottinette-tout-terrain/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/non-classe/zero-8x",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Zero 8X est une trottinette électrique double moteur (2 x 800 W, soit 1600 W) alimentée par une batterie lithium-ion LG 52 V en version 18 Ah ou 26 Ah. Elle repose sur des pneus pleins de 8 x 3,5 pouces, une double suspension hydraulique à ressort et des freins à disque à l'avant et à l'arrière. Elle est livrée bridée à 25 km/h (55 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-zero-8x/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "https://www.trottnscoot.com/produit/trottinette-electrique-zero-8x/",
+            "https://zetrottstore.com/zero/338-zero-8x-52v-18ah-2085369147601.html"
+          ],
+          "_og_images": [
+            "https://www.trottnscoot.com/wp-content/uploads/2020/03/zero-8x-300x300.jpg",
+            "https://zetrottstore.com/zero/index_assets/images/spaceman-banner.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_url_2": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.wee-bot.com/products/disque-frein-140mm-diametre",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/4028-disque-de-frein-origine-o-140mm-original-zero-kingsongkaabo.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.wee-bot.com/products/disque-frein-140mm-diametre",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "sram_avid",
+            "source_url": "https://www.urbanmoov.fr/boutique/Plaquettes-de-frein-a-disque-dualtron-zero-kaabo-p414870259",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.inrevolta.com/en/zero-8x.html",
+            "source_url_2": "https://www.trottnshop.com/produit/trottinette-electrique-zero-8x/",
+            "source_type": "distributeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Zero 10",
+        "slug": "zero-10",
+        "voltage": 52,
+        "amperage": 18,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 50,
+        "range_km": 60,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 24,
+        "tire_size": "10x2.5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2019/07/Z10-single-motor_1200x777.png"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_section": "10x2.50",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Zero 10 est une trottinette électrique monomoteur brushless de 1000 W, alimentée par une batterie lithium-ion 52V 18Ah (936 Wh) et annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces et freine grâce à des freins à disque avant et arrière associés à un freinage électrique ; elle est livrée bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Zero 10 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Zero 10 : plaquettes, pneus 10x2.50, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "zero 10, pieces zero 10, disque frein zero 10, plaquettes zero 10, pneu zero 10"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur",
+          "url2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur"
+        },
+        "tire_size": {
+          "url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2019/07/Z10-single-motor_1200x777.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/fr/40-zero-10-10x"
+        },
+        "tire_family": {
+          "url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 24,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2.5",
+            "source_url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+            "source_url_2": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Zero 10 est une trottinette électrique monomoteur brushless de 1000 W, alimentée par une batterie lithium-ion 52V 18Ah (936 Wh) et annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces et freine grâce à des freins à disque avant et arrière associés à un freinage électrique ; elle est livrée bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://vtron.fr/products/trottinette-electrique-zero-10",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/zero-10-monomoteur"
+          ],
+          "_og_images": [
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2019/07/Z10-single-motor_1200x777.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.50",
+            "source_url": "https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques",
+            "source_url_2": "https://fastride.fr/fr/40-zero-10-10x",
+            "source_type": "revendeur"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/",
+            "source_url_2": "https://www.super-volt.fr/accessoires-trottinettes-zero/8737-chambre-a-air-pour-pneu-10-pouces-pour-trottinette-z10-et-z10x.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
