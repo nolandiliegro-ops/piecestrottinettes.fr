@@ -1,0 +1,58 @@
+{
+  "brandName": "Navee",
+  "scooters": [
+    {
+      "name": "Navee N65i II",
+      "slug": "navee-n65i-ii",
+      "amperage": 10.2,
+      "power_watts": 600,
+      "range_km": 70,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 23.6,
+      "suspension": "Double fourche à ressorts à l'avant (avant uniquement)",
+      "ip_rating": "IPX5",
+      "tire_size": "10,5\" x 80 mm tubeless",
+      "foldable": true,
+      "wheel_inches": 10.5,
+      "source_image_urls": [
+        "https://points-ecomobilite.fr/wp-content/uploads/2026/07/Trottinette-electrique-Navee-N65i-II_4.jpg",
+        "http://eu.naveetech.com/cdn/shop/files/10_2.webp?v=1780056021&width=2048"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Navee N65i II embarque un moteur de 600 W nominaux (1350 W en crête) et une batterie de 46,8 V / 477 Wh annoncée jusqu'à 70 km d'autonomie, avec une vitesse bridée à 25 km/h. Elle est équipée de pneus tubeless de 10,5 pouces (80 mm), d'une double fourche avant à ressorts et d'un triple freinage (tambour avant, disque arrière, EABS), pour une charge maximale de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee N65i II - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee N65i II : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee n65i ii, pieces navee n65i ii, disque frein navee n65i ii, plaquettes navee n65i ii, pneu navee n65i ii"
+    },
+    {
+      "name": "Navee ST3 Pro",
+      "slug": "navee-st3-pro",
+      "voltage": 48,
+      "amperage": 12.75,
+      "power_watts": 600,
+      "max_speed_private_kmh": 40,
+      "range_km": 75,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 25.3,
+      "suspension": "Bras amortisseur (Damping Arm) avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10\" tubeless auto-réparant",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://media.materiel.net/r900/products/MN0006253687.jpg"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Navee ST3 Pro est une trottinette électrique à moteur arrière de 600 W nominal (1350 W en crête), alimentée par une batterie 48 V 12,75 Ah (596,7 Wh) pour une autonomie annoncée jusqu'à 75 km. Elle est équipée de pneus tubeless auto-réparants de 10 pouces, d'une suspension à bras amortisseurs avant et arrière, d'un frein à tambour avant, d'un frein à disque arrière avec EABS, et d'une vitesse bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee ST3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee ST3 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee st3 pro, pieces navee st3 pro, disque frein navee st3 pro, plaquettes navee st3 pro, pneu navee st3 pro"
+    }
+  ]
+}

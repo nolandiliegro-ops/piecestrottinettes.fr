@@ -1,0 +1,39 @@
+{
+  "brandName": "Inmotion",
+  "scooters": [
+    {
+      "name": "Inmotion RS",
+      "slug": "inmotion-rs",
+      "voltage": 72,
+      "amperage": 40,
+      "power_watts": 4000,
+      "max_speed_private_kmh": 110,
+      "range_km": 160,
+      "max_load_kg": 150,
+      "year": 2023,
+      "max_speed_kmh": 25,
+      "weight_kg": 58,
+      "suspension": "Hydraulique avant et arrière, réglable (11 niveaux d'amortissement, 4 hauteurs de caisse)",
+      "ip_rating": "IPX6",
+      "tire_size": "11 x 3,5 pouces tubeless",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://inmotionworld.com/cdn/shop/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png?v=1790575155"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "caliper_family": "zoom",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "L'Inmotion RS est une trottinette électrique haute performance équipée de deux moteurs de 2000 W (4000 W nominaux, 8400 W en crête) alimentés par une batterie 72 V 40 Ah (2880 Wh). Elle repose sur des pneus tubeless de 11 x 3,5 pouces, des suspensions hydrauliques avant et arrière réglables et des freins à disque hydrauliques de 160 mm avec freinage régénératif. Elle est bridée à 25 km/h en usage normal et peut atteindre jusqu'à 110 km/h sur terrain privé selon le constructeur. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inmotion RS - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inmotion RS : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inmotion rs, pieces inmotion rs, disque frein inmotion rs, plaquettes inmotion rs, pneu inmotion rs",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    }
+  ]
+}

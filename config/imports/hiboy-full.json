@@ -1,0 +1,33 @@
+{
+  "brandName": "Hiboy",
+  "scooters": [
+    {
+      "name": "Hiboy Titan Pro",
+      "slug": "hiboy-titan-pro",
+      "voltage": 48,
+      "amperage": 36,
+      "power_watts": 2400,
+      "max_speed_private_kmh": 50,
+      "range_km": 129,
+      "max_load_kg": 150,
+      "year": 2026,
+      "max_speed_kmh": 25,
+      "weight_kg": 47,
+      "suspension": "Avant et arrière (double suspension)",
+      "ip_rating": "IPX4 (trottinette) / IPX5 (batterie)",
+      "tire_size": "10\" pneus tubeless remplis de gel (gel-filled tubeless)",
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://electricrideco.com/cdn/shop/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe_1200x1200.webp?v=1780545095"
+      ],
+      "brake_type": "disc_mechanical",
+      "rim_diameter": "6.5",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Hiboy Titan Pro (version 2026) est une trottinette électrique tout-terrain à double moteur (2 x 750 W nominaux, 2400 W de puissance crête cumulée), alimentée par une batterie 48 V 36 Ah donnant jusqu'à 129 km d'autonomie annoncée. Elle roule sur des pneus tubeless 10 pouces remplis de gel, avec freins hydrauliques avant et arrière et double suspension ; la vitesse maximale constructeur est de 50 km/h sur terrain privé, la circulation sur voie publique en France imposant 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy Titan Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy Titan Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy titan pro, pieces hiboy titan pro, disque frein hiboy titan pro, plaquettes hiboy titan pro, pneu hiboy titan pro"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "brandName": "Zero",
+  "scooters": [
+    {
+      "name": "Zero 8X",
+      "slug": "zero-8x",
+      "voltage": 52,
+      "amperage": 26,
+      "power_watts": 1600,
+      "max_speed_private_kmh": 55,
+      "range_km": 110,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 35,
+      "suspension": "Suspensions hydrauliques à ressort avant et arrière",
+      "tire_size": "8 x 3,5 pouces (pneus pleins)",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://www.trottnscoot.com/wp-content/uploads/2020/03/zero-8x-300x300.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 140,
+      "caliper_family": "sram_avid",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "La Zero 8X est une trottinette électrique double moteur (2 x 800 W, soit 1600 W) alimentée par une batterie lithium-ion LG 52 V en version 18 Ah ou 26 Ah. Elle repose sur des pneus pleins de 8 x 3,5 pouces, une double suspension hydraulique à ressort et des freins à disque à l'avant et à l'arrière. Elle est livrée bridée à 25 km/h (55 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Zero 8X - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Zero 8X : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "zero 8x, pieces zero 8x, disque frein zero 8x, plaquettes zero 8x, pneu zero 8x",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    },
+    {
+      "name": "Zero 10",
+      "slug": "zero-10",
+      "voltage": 52,
+      "amperage": 18,
+      "power_watts": 1000,
+      "max_speed_private_kmh": 50,
+      "range_km": 60,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "tire_size": "10x2.5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.gyroroue-shop.fr/wp-content/uploads/2019/07/Z10-single-motor_1200x777.png"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Zero 10 est une trottinette électrique monomoteur brushless de 1000 W, alimentée par une batterie lithium-ion 52V 18Ah (936 Wh) et annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces et freine grâce à des freins à disque avant et arrière associés à un freinage électrique ; elle est livrée bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Zero 10 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Zero 10 : plaquettes, pneus 10x2.50, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "zero 10, pieces zero 10, disque frein zero 10, plaquettes zero 10, pneu zero 10"
+    }
+  ]
+}
