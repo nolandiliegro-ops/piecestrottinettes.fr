@@ -300,6 +300,12 @@ async function main() {
   const draftPath = resolve(OUT_DIR, `${OUT}.draft.json`);
   const previous = ADD && existsSync(draftPath) ? JSON.parse(readFileSync(draftPath, 'utf-8')) : null;
   const known = new Set((previous?.results || []).map((r) => norm(r.scooter.name)));
+  // 13/10 : ne jamais payer un modèle déjà au catalogue (publié) — dédoublonnage contre la base, lecture publique.
+  try {
+    const inBase = await rest(`scooter_models?select=name,brands!scooter_models_brand_id_fkey!inner(name)&published=eq.true&brands.name=ilike.${encodeURIComponent(BRAND)}`);
+    for (const r of inBase) known.add(norm(r.name));
+    console.log(`   catalogue : ${inBase.length} modèle(s) déjà publiés pour ${BRAND} (exclus)`);
+  } catch (e) { console.warn(`   ⚠️ dédoublonnage base impossible : ${e.message}`); }
   let models = MODELS;
   if (ADD) {
     const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: Math.min(3, MAX_SEARCHES),
@@ -310,7 +316,11 @@ async function main() {
   } else if (!models) {
     const found = await claude({ model: MODEL, system: SYSTEM, tool: TOOL_MODELS, maxSearches: Math.min(3, MAX_SEARCHES),
       prompt: `Liste les modèles de trottinettes électriques de la marque « ${BRAND} » actuellement vendus en France (revendeurs FR), du plus vendu au moins vendu. Un nom de modèle par entrée, sans la marque, sans variante de batterie.` });
-    models = found.models.map((m) => m.name).slice(0, MAX_MODELS);
+    models = found.models.map((m) => m.name).filter((n) => !known.has(norm(n))).slice(0, MAX_MODELS);
+  } else {
+    const before = models.length;
+    models = models.filter((n) => !known.has(norm(n)));
+    if (models.length < before) console.log(`   ${before - models.length} modèle(s) demandé(s) déjà au catalogue : ignorés`);
   }
   console.log(`   modèles : ${models.join(' · ')}`);
 
