@@ -522,6 +522,1067 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide eCross Duo",
+        "slug": "urbanglide-ecross-duo",
+        "voltage": 48,
+        "amperage": 12.5,
+        "power_watts": 1600,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 26.4,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.connexion.fr/static/img/fb/default_share.png"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Urbanglide eCross Duo est une trottinette électrique tout-terrain à double moteur (2 x 800 W) animée par une batterie 48 V 12,5 Ah (600 Wh) annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière et double frein à disque, pour une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide eCross Duo - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide eCross Duo : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide ecross duo, pieces urbanglide ecross duo, disque frein urbanglide ecross duo, plaquettes urbanglide ecross duo, pneu urbanglide ecross duo"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://fixwheel.fr/en/products/urbanglide-ecross-duo-master",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur",
+          "url2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-ecross-duo/f-1214801-urb1745881804203.html"
+        },
+        "suspension": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.connexion.fr/static/img/fb/default_share.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-urban-glide-ecross-duo-deux-moteurs-zero-coup-de-coeur/",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26.4,
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-ecross-duo/f-1214801-urb1745881804203.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_url_2": "https://fixwheel.fr/en/products/urbanglide-ecross-duo-master",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 12.5,
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-ecross-duo/f-1214801-urb1745881804203.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1600,
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-e-cross-duo/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_url_2": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-e-cross-duo/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-e-cross-duo/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://fixwheel.fr/en/products/urbanglide-ecross-duo-master",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_url_2": "https://www.journaldugeek.com/test/test-trottinette-electrique-urban-glide-ecross-duo-deux-moteurs-zero-coup-de-coeur/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "source_url_2": "https://fixwheel.fr/en/products/urbanglide-ecross-duo-master",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://fixwheel.fr/en/products/urbanglide-ecross-duo-master",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'Urbanglide eCross Duo est une trottinette électrique tout-terrain à double moteur (2 x 800 W) animée par une batterie 48 V 12,5 Ah (600 Wh) annoncée jusqu'à 60 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière et double frein à disque, pour une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-121910.html",
+            "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-e-cross-duo/",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-ecross-duo/f-1214801-urb1745881804203.html"
+          ],
+          "_og_images": [
+            "https://www.connexion.fr/static/img/fb/default_share.png",
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.journaldugeek.com/test/test-trottinette-electrique-urban-glide-ecross-duo-deux-moteurs-zero-coup-de-coeur/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://urbanglide.com/en/produit/e-cross-duo/",
+            "source_url_2": "https://www.boulanger.com/ref/1222190",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide eCross Pro 2",
+        "slug": "urbanglide-ecross-pro-2",
+        "voltage": 48,
+        "amperage": 12.5,
+        "power_watts": 600,
+        "range_km": 50,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 23,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10x2.70-6.5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/3700092657157_h_f_l_0"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.75",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Urbanglide eCross Pro 2 est une trottinette électrique tout-terrain à moteur arrière de 600 W nominal (800 W en pointe), alimentée par une batterie 48 V / 12,5 Ah pour une autonomie annoncée de 50 km. Elle roule sur des pneus de 10 pouces, dispose d'une suspension avant et arrière et de freins à disque, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide eCross Pro 2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide eCross Pro 2 : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.75, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide ecross pro 2, pieces urbanglide ecross pro 2, disque frein urbanglide ecross pro 2, plaquettes urbanglide ecross pro 2, pneu urbanglide ecross pro 2"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur",
+          "url2": "https://www.boulanger.com/ref/1204886"
+        },
+        "suspension": {
+          "url": "https://www.boulanger.com/ref/1204886",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092657157_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://urbanglide.com/wp-content/uploads/2024/08/Manual-ECROSS-PRO-II-FR-EN-ES-PT-dgccrf.pdf",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html"
+        },
+        "disc_pcd": {
+          "url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html"
+        },
+        "disc_holes": {
+          "url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-e-cross-pro-2/"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-e-cross-pro-2/"
+        },
+        "tire_family": {
+          "url": "https://urbanglide.com/en/produit/e-cross-pro-2/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-eCross-Pro-2-600-W-Noir/a20821790/w-4",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 12.5,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://trott-electrique.fr/test-avis-trottinette-electrique/urbanglide-ecross-pro-2/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 600,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 23,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://trott-electrique.fr/test-avis-trottinette-electrique/urbanglide-ecross-pro-2/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x2.70-6.5",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+            "source_url_2": "https://trottriders.fr/collections/urbanglide-e-cross-pro-2",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.boulanger.com/ref/1204886",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-eCross-Pro-2-600-W-Noir/a20821790/w-4",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Urbanglide eCross Pro 2 est une trottinette électrique tout-terrain à moteur arrière de 600 W nominal (800 W en pointe), alimentée par une batterie 48 V / 12,5 Ah pour une autonomie annoncée de 50 km. Elle roule sur des pneus de 10 pouces, dispose d'une suspension avant et arrière et de freins à disque, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_url_2": "https://www.boulanger.com/ref/1204886",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "https://www.boulanger.com/ref/1204886",
+            "https://www.fnac.com/Trottinette-electrique-Urbanglide-eCross-Pro-2-600-W-Noir/a20821790/w-4"
+          ],
+          "_og_images": [
+            "https://boulanger.scene7.com/is/image/Boulanger/3700092657157_h_f_l_0"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://urbanglide.com/wp-content/uploads/2024/08/Manual-ECROSS-PRO-II-FR-EN-ES-PT-dgccrf.pdf",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+            "source_url_2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+            "source_url_2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+            "source_url_2": "https://youvelo.fr/vtt/860-disque-frein-140-mm-urbanglide-e-cross-pro.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.75",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+            "source_url_2": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-e-cross-pro-2/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-urbanglide-e-cross-pro",
+            "source_url_2": "https://trott-en-provence.fr/pneu-trottinette-urbanglide-e-cross-pro-2/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://urbanglide.com/en/produit/e-cross-pro-2/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide Urbanride 100XS",
+        "slug": "urbanglide-urbanride-100xs",
+        "voltage": 36,
+        "amperage": 7.5,
+        "power_watts": 350,
+        "range_km": 30,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 15,
+        "suspension": "Arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "https://boulanger.scene7.com/is/image/Boulanger/3700092617069_h_f_l_0",
+          "https://media.rueducommerce.fr/rd/products/b6b/b6b7bc3ed904c55227b74c551cfd291193616908.jpg"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_section": "10x2.125",
+        "tire_family": "solid",
+        "score_offroad": 35,
+        "description": "L'Urbanglide Ride 100XS est une trottinette électrique pliable équipée d'un moteur de 350 W placé dans la roue avant et d'une batterie 36 V 7,5 Ah annoncée pour jusqu'à 30 km d'autonomie. Elle roule sur des pneus pleins (increvables) de 10 pouces, avec suspension arrière et frein à disque, pour un poids de 15 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide Urbanride 100XS - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide Urbanride 100XS : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide urbanride 100xs, pieces urbanglide urbanride 100xs, disque frein urbanglide urbanride 100xs, plaquettes urbanglide urbanride 100xs, pneu urbanglide urbanride 100xs"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/9000400758",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.boulanger.com/ref/9000400758",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur",
+          "url2": "https://www.boulanger.com/ref/9000400758"
+        },
+        "suspension": {
+          "url": "https://www.boulanger.com/ref/9000400758",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000400758",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-100S-100XS-.pdf",
+          "type": "constructeur"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-plein-10x2-125-pour-trottinette-electrique-urbanglide-ride-100xs-et-ride-100s",
+          "type": "revendeur",
+          "url2": "https://www.planetecomobility.com/pieces-detachees--17/pneu-trottinette--70/--1/pneu-plein-10-x-2125-urban-glide-ride-100xs-ride-100s-pempn10--PNEU+PLEIN+10+X+2.125+PEMPN10.aspx"
+        },
+        "tire_family": {
+          "url": "https://www.trottnshop.com/produit/urbanglide-ride-100/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 15,
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://www.boulanger.com/ref/9000400758",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://alizessport.com/produit/urbanglide-ride100xs-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.5,
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023241.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.boulanger.com/ref/9000400758",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.boulanger.com/ref/9000400758",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023241.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://www.boulanger.com/ref/9000400758",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Arrière",
+            "source_url": "https://www.boulanger.com/ref/9000400758",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir/a15213307/w-4",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000400758",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir/a15213307/w-4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Urbanglide Ride 100XS est une trottinette électrique pliable équipée d'un moteur de 350 W placé dans la roue avant et d'une batterie 36 V 7,5 Ah annoncée pour jusqu'à 30 km d'autonomie. Elle roule sur des pneus pleins (increvables) de 10 pouces, avec suspension arrière et frein à disque, pour un poids de 15 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+            "https://www.boulanger.com/ref/9000400758",
+            "https://www.rueducommerce.fr/p/r24060023241.html"
+          ],
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/P967725.jpg",
+            "https://boulanger.scene7.com/is/image/Boulanger/3700092617069_h_f_l_0",
+            "https://media.rueducommerce.fr/rd/products/b6b/b6b7bc3ed904c55227b74c551cfd291193616908.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-100S-100XS-.pdf",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.wee-bot.com/products/pneu-plein-10x2-125-pour-trottinette-electrique-urbanglide-ride-100xs-et-ride-100s",
+            "source_url_2": "https://www.planetecomobility.com/pieces-detachees--17/pneu-trottinette--70/--1/pneu-plein-10-x-2125-urban-glide-ride-100xs-ride-100s-pempn10--PNEU+PLEIN+10+X+2.125+PEMPN10.aspx",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.trottnshop.com/produit/urbanglide-ride-100/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023241.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Urbanglide Urbanride 85+",
+        "slug": "urbanglide-urbanride-85-plus",
+        "voltage": 36,
+        "amperage": 7.5,
+        "power_watts": 350,
+        "range_km": 30,
+        "max_load_kg": 100,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 12.9,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://media.rueducommerce.fr/rd/products/dc7/dc7f303ab04956706b098502d9d5e99ce65b6ff8.png",
+          "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "L'UrbanGlide Ride 85+ est une trottinette électrique pliable animée par un moteur avant de 350 W, alimentée par une batterie 36 V / 7,5 Ah (270 Wh) pour jusqu'à 30 km d'autonomie. Elle roule sur des roues de 8,5 pouces avec double suspension avant/arrière, un frein électronique avant et un frein moteur, et pèse 12,9 kg pour une charge maximale de 100 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Urbanglide Urbanride 85+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Urbanglide Urbanride 85+ : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "urbanglide urbanride 85+, pieces urbanglide urbanride 85+, disque frein urbanglide urbanride 85+, plaquettes urbanglide urbanride 85+, pneu urbanglide urbanride 85+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://urbanglide.com/wp-content/uploads/2022/05/MANUEL-URBANGLIDE-85.pdf",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur",
+          "url2": "https://www.rueducommerce.fr/p/r24060023238.html"
+        },
+        "suspension": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4?blub=468775&pidd=h&qu=7acb3759",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://urbanglide.com/en/produit/ride-85/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.rueducommerce.fr/rd/products/dc7/dc7f303ab04956706b098502d9d5e99ce65b6ff8.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.cdiscount.com/auto/r-plaquettes+de+frein+trottinette+electrique+urbanglide.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/chambre-a-air-trottinette-electrique",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 12.9,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 7.5,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4?blub=468775&pidd=h&qu=7acb3759",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4?blub=468775&pidd=h&qu=7acb3759",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4?blub=468775&pidd=h&qu=7acb3759",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_url_2": "https://www.rueducommerce.fr/p/r24060023238.html",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://urbanglide.com/wp-content/uploads/2022/05/MANUEL-URBANGLIDE-85.pdf",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/urbanglide/urbanglide-urbanride-85/",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "L'UrbanGlide Ride 85+ est une trottinette électrique pliable animée par un moteur avant de 350 W, alimentée par une batterie 36 V / 7,5 Ah (270 Wh) pour jusqu'à 30 km d'autonomie. Elle roule sur des roues de 8,5 pouces avec double suspension avant/arrière, un frein électronique avant et un frein moteur, et pèse 12,9 kg pour une charge maximale de 100 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://urbanglide.com/en/produit/ride-85/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4?blub=468775&pidd=h&qu=7acb3759",
+            "https://www.rueducommerce.fr/p/r24060023238.html",
+            "https://urbanglide.com/en/produit/ride-85/"
+          ],
+          "_og_images": [
+            "https://media.rueducommerce.fr/rd/products/dc7/dc7f303ab04956706b098502d9d5e99ce65b6ff8.png",
+            "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.cdiscount.com/auto/r-plaquettes+de+frein+trottinette+electrique+urbanglide.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/chambre-a-air-trottinette-electrique",
+            "source_url_2": "https://ledenicheur.fr/s/urbanglide-85/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 4
+    }
+  }
 }

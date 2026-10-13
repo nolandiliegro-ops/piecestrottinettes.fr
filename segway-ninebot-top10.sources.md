@@ -1,10 +1,10 @@
 # Extraction Segway-Ninebot — 2026-10-13
 
-**7 PRÊT / 10 modèles.** Modèle IA : claude-sonnet-5-5.
+**11 PRÊT / 14 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **4 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **5 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 1483209 tokens entrée, 56592 sortie, 75 recherches web.
+Coût mesuré : 661482 tokens entrée, 24513 sortie, 34 recherches web.
 
 ## Segway-Ninebot GT2 — PRÊT
 - Valeur à virgule pour une colonne entière, NON importée : voltage=50.4
@@ -247,3 +247,100 @@ Coût mesuré : 1483209 tokens entrée, 56592 sortie, 75 recherches web.
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://media.ldlc.com/r1600/ld/products/00/05/09/17/LD0005091716_2.jpg |  |
 | brake_type | fender_foot_ebs | site_test | https://www.tomsguide.fr/test-ninebot-es2-que-vaut-la-nouvelle-trottinette-de-segway/ |  |
 | tire_family | solid | constructeur | https://www.segwayfrance.com/grand-public/kickscooter-es1-es2/ |  |
+
+## Segway-Ninebot E3 Pro E — PRÊT
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html |  |
+| amperage | 10.2 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_pro_e.html |  |
+| power_watts | 800 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_pro_e.html |  |
+| max_speed_private_kmh | 25 | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html |  |
+| range_km | 55 | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html |  |
+| max_load_kg | 100 | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html |  |
+| year | 2025 | revendeur | https://fixwheel.fr/en/products/ninebot-e3-pro-e-1 |  |
+| weight_kg | 17.9 | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_pro_e.html |
+| suspension | Avant et arrière, amortisseurs à élastomère | distributeur | https://www.decathlon.fr/p/trottinette-electrique-segway-ninebot-e3-pro-e/377700/c3m8985240 |  |
+| ip_rating | IPX5 (IPX7 pour la batterie) | distributeur | https://www.decathlon.fr/p/trottinette-electrique-segway-ninebot-e3-pro-e/377700/c3m8985240 |  |
+| tire_size | 10" tubeless – avant 60/70-6.5, arrière 60/65-6.9 | distributeur | https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661 |  |
+| foldable | true | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_pro_e.html |  |
+| wheel_inches | 10 | distributeur | https://www.decathlon.fr/p/trottinette-electrique-segway-ninebot-e3-pro-e/377700/c3m8985240 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/719628545/4725933138.png |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://shop.segway.com/fr_fr/ninebot-e3-pro-e.html |  |
+| rim_diameter | 6.5 | distributeur | https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661 | https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-ninebot-e3-e-e3-pro-e/ |
+| tire_section | 60/70 | distributeur | https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661 | https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-ninebot-e3-e-e3-pro-e/ |
+| tire_family | pneumatic | constructeur | https://be-fr.segway.com/products/e3-pro-e |  |
+
+## Segway-Ninebot F3 Pro E — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+- Une seule source, NON importé : disc_holes=6 (https://www.amazon.com/clp/B0F47ZF48V)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 10.1 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-f3-pro-e-ninebot-by-segway |  |
+| power_watts | 1200 | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+| max_speed_private_kmh | 25 | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+| range_km | 70 | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+| max_load_kg | 120 | constructeur | https://shop.segway.com/fr_fr/ninebot-f3-pro-e.html |  |
+| year | 2025 | site_test | https://eonergie.fr/electromobilite/autres-mobilites-electriques/ninebot-f3-pro-e-trottinette-electrique-parfaite/ |  |
+| weight_kg | 19.3 | revendeur | https://fastride.fr/fr/segway-ninebot/4540-trottinette-electrique-segway-ninebot-f3-pro-e.html | https://www.wee-bot.com/products/trottinette-electrique-f3-pro-e-ninebot-by-segway |
+| suspension | Suspension hydraulique à l'avant et bras oscillant à l'arrière | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+| ip_rating | IPX6 (batterie IPX7) | revendeur | https://fastride.fr/fr/segway-ninebot/4540-trottinette-electrique-segway-ninebot-f3-pro-e.html |  |
+| tire_size | Avant 60/70-6.5, arrière 60/65-6.9 (10 pouces, tubeless autocicatrisant) | constructeur | https://www.segwayfrance.com/boutique/Pneu-Avant-Tubeless-Ninebot-F3-F3-Pro-Gel-Auto-cicatrisant-p789767313 |  |
+| foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-f3-pro-e-ninebot-by-segway |  |
+| wheel_inches | 10 | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_F3_Pro_E_Ninebot_by_Segway_pas_cher-637252.jpg?v=1754109631 |  |
+| brake_type | disc_mechanical | site_test | https://www.cleanrider.com/essais/trottinette-electrique/ninebot-f3-pro-e-by-segway-la-trottinette-electrique-qui-approche-la-perfection/ |  |
+| disc_diameter | 120 | constructeur | https://www.segwayfrance.com/boutique/Pieces-detachees-Serie-F3-F3-Pro-c190333518 | https://www.amazon.com/clp/B0F47ZF48V |
+| rim_diameter | 6.5 | constructeur | https://www.segwayfrance.com/boutique/Pneu-dorigine-a-Gel-60-70-6-5-avant-pour-Ninebot-F3-F3-Pro-p789767313 | https://trott-en-provence.fr/pneu-ninebot-f3-e-f3-pro-e/ |
+| tire_section | 60/70 | constructeur | https://www.segwayfrance.com/boutique/Pneu-dorigine-a-Gel-60-70-6-5-avant-pour-Ninebot-F3-F3-Pro-p789767313 | https://trott-en-provence.fr/pneu-ninebot-f3-e-f3-pro-e/ |
+| tire_family | pneumatic | constructeur | https://www.segwayfrance.com/ninebot-f3-pro-e/ |  |
+
+## Segway-Ninebot F3 E — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 60/70-6.5 (10 pouces tubeless autocicatrisant) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 10.2 | constructeur | https://ninebot.com.sg/product/e-scooter-f3/ |  |
+| power_watts | 1000 | constructeur | https://www.segwayfrance.com/ninebot-f3-e/ |  |
+| range_km | 70 | constructeur | https://www.segwayfrance.com/boutique/Ninebot-F3-E-p719635328 |  |
+| max_load_kg | 120 | constructeur | https://ninebot.com.sg/product/e-scooter-f3/ |  |
+| year | 2025 | constructeur | https://www.segwayfrance.com/decouvrez-les-nouvelles-trottinettes-electriques-ninebot-f3-e-et-f3-pro-e/ |  |
+| weight_kg | 18.6 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_f3_e.html | https://fastride.fr/en/segway-ninebot/4628-trottinette-electrique-segway-ninebot-f3-e.html |
+| suspension | Hydraulique à l'avant + élastomère à l'arrière | constructeur | https://ninebot.com.sg/product/e-scooter-f3/ |  |
+| ip_rating | IPX6 | constructeur | https://www.segwayfrance.com/ninebot-f3-e/ |  |
+| tire_size | 60/70-6.5 (10 pouces tubeless autocicatrisant) | constructeur | https://www.segwayfrance.com/boutique/Pneu-Avant-Tubeless-Ninebot-F3-F3-Pro-Gel-Auto-cicatrisant-p789767313 |  |
+| foldable | true | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_f3_e.html |  |
+| wheel_inches | 10 | constructeur | https://www.segwayfrance.com/ninebot-f3-e/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/719635328/4726011183.webp |  |
+| brake_type | disc_mechanical | site_test | https://www.jeuxvideo.com/high-tech/tests/test-1984969.htm |  |
+| tire_family | pneumatic | constructeur | https://www.segwayfrance.com/ninebot-f3-e/ |  |
+
+## Segway-Ninebot ZT3 Pro E — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+- Une seule source, NON importé : disc_holes=6 (https://escootervision.eu/en/products/segway-ninebot-zt3-pro-bremsscheibe-120mm-6-loch-mit-schrauben)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 12.75 | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_zt3_pro_e.html |  |
+| power_watts | 1600 | constructeur | https://www.segwayfrance.com/segway-zt3-pro-e/ |  |
+| max_speed_private_kmh | 40 | revendeur | https://fastride.fr/fr/segway-ninebot/4145-trottinette-electrique-segway-ekickscooter-zt3-pro-e.html |  |
+| range_km | 70 | constructeur | https://www.segwayfrance.com/segway-zt3-pro-e/ |  |
+| max_load_kg | 120 | constructeur | https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html |  |
+| year | 2024 | constructeur | https://www.segway.com/explore/news/list-press-release/2024/9/segway-introduces-zt3-pro-all-terrain-electric-scooter.html |  |
+| weight_kg | 29.7 | revendeur | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/zt3-pro | https://fastride.fr/fr/segway-ninebot/4145-trottinette-electrique-segway-ekickscooter-zt3-pro-e.html |
+| suspension | Double suspension télescopique à l'avant et suspension à ressort à l'arrière | constructeur | https://www.segwayfrance.com/boutique/Segway-eKickScooter-ZT3-Pro-E-p693145799 |  |
+| ip_rating | IPX5 | revendeur | https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html |  |
+| tire_size | 70/60-7.5 (11 pouces, tubeless tout-terrain) | constructeur | https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133 |  |
+| foldable | true | revendeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_zt3_pro_e.html |  |
+| wheel_inches | 11 | constructeur | https://www.segwayfrance.com/segway-zt3-pro-e/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/693145799/4739316532.png |  |
+| brake_type | disc_mechanical | site_test | https://www.journaldugeek.com/test/essai-de-la-trottinette-electrique-segway-ninebot-zt3-pro-e-un-engin-qui-en-donne-presque-trop/ |  |
+| disc_diameter | 120 | constructeur | https://www.segwayfrance.com/boutique/Pieces-detachees-ZT3-Pro-c179000846 | https://escootervision.eu/en/products/segway-ninebot-zt3-pro-bremsscheibe-120mm-6-loch-mit-schrauben |
+| rim_diameter | 7.5 | constructeur | https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133 | https://www.urbanmoov.fr/boutique/Pneu-ZT3-ZT3-Pro-p722752941 |
+| tire_section | 70/60 | constructeur | https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133 | https://www.urbanmoov.fr/boutique/Pneu-ZT3-ZT3-Pro-p722752941 |
+| tire_family | pneumatic | constructeur | https://www.segwayfrance.com/segway-zt3-pro-e/ |  |

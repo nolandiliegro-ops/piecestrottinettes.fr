@@ -528,6 +528,278 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Zero 8",
+        "slug": "zero-8",
+        "voltage": 36,
+        "amperage": 10,
+        "power_watts": 350,
+        "max_speed_private_kmh": 30,
+        "range_km": 30,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 17,
+        "suspension": "Avant à ressort, arrière hydraulique",
+        "tire_size": "Avant 8,5\" gonflable (chambre à air) / arrière 8\" plein",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueZero8-36V10Ah-PIETECHNOLOGIE-min.png?v=1665652659",
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2019/06/zero8.png"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "134mm",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Zero 8 (Z8) est une trottinette électrique urbaine pliable, équipée d'un moteur brushless 350 W et d'une batterie 36 V 10 Ah (autonomie annoncée d'environ 30 km). Elle roule sur un pneu gonflable 8,5\" à l'avant et un pneu plein 8\" à l'arrière, avec suspension à ressort à l'avant, suspension hydraulique à l'arrière, frein à tambour arrière et frein électromagnétique. Elle est livrée bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Zero 8 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Zero 8 : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "zero 8, pieces zero 8, disque frein zero 8, plaquettes zero 8, pneu zero 8"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+          "type": "revendeur",
+          "url2": "https://pole-scoot.fr/gamme/power-zero/zero8/"
+        },
+        "suspension": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-8",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://power-zero.com/fr/shop/trottinettes/1517-trottinette-electrique-zero-8-36V10A.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueZero8-36V10Ah-PIETECHNOLOGIE-min.png?v=1665652659",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett",
+          "type": "revendeur",
+          "url2": "https://airlab-industrie.com/fr/pieces-detachees/442-chambre-a-air-85-x-250-134-tier-pour-trottinettes-electriques-grace-zero-8-9-zero8-zero9-t8-t9.html"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett",
+          "type": "revendeur",
+          "url2": "https://wattiz.fr/fr/pneus/25839-pneu-zero-8-1-2x2-pouces-50-134-3770018713038.html"
+        },
+        "tire_family": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_url_2": "https://pole-scoot.fr/gamme/power-zero/zero8/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://1001trottinettes.fr/product/zero-8-36v-10ah-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_url_2": "https://www.greenweez.com/zero-trottinette-electrique-urbaine-8-36v-10ah-vitesse-25km-h-p139007",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://power-zero.com/fr/shop/trottinettes/1517-trottinette-electrique-zero-8-36V10A.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-8",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "Avant 8,5\" gonflable (chambre à air) / arrière 8\" plein",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://1001trottinettes.fr/product/zero-8-36v-10ah-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant à ressort, arrière hydraulique",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-8",
+            "source_url_2": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Zero 8 (Z8) est une trottinette électrique urbaine pliable, équipée d'un moteur brushless 350 W et d'une batterie 36 V 10 Ah (autonomie annoncée d'environ 30 km). Elle roule sur un pneu gonflable 8,5\" à l'avant et un pneu plein 8\" à l'arrière, avec suspension à ressort à l'avant, suspension hydraulique à l'arrière, frein à tambour arrière et frein électromagnétique. Elle est livrée bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "https://1001trottinettes.fr/product/zero-8-36v-10ah-trottinette-electrique/",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-8"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueZero8-36V10Ah-PIETECHNOLOGIE-min.png?v=1665652659",
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2019/06/zero8.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett",
+            "source_url_2": "https://wattiz.fr/fr/pneus/25839-pneu-zero-8-1-2x2-pouces-50-134-3770018713038.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "134mm",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett",
+            "source_url_2": "https://airlab-industrie.com/fr/pieces-detachees/442-chambre-a-air-85-x-250-134-tier-pour-trottinettes-electriques-grace-zero-8-9-zero8-zero9-t8-t9.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces",
+            "source_url_2": "https://e-watts.fr/en/produit/trottinette-electrique-zero-8/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 1
+    }
+  }
 }

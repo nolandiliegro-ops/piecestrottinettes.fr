@@ -28,6 +28,60 @@
       "meta_title": "Hiboy Titan Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Hiboy Titan Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "hiboy titan pro, pieces hiboy titan pro, disque frein hiboy titan pro, plaquettes hiboy titan pro, pneu hiboy titan pro"
+    },
+    {
+      "name": "Hiboy S2 MAX",
+      "slug": "hiboy-s2-max",
+      "voltage": 48,
+      "amperage": 11.6,
+      "power_watts": 500,
+      "range_km": 64,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.8,
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.hiboy.com/cdn/shop/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg?v=1744107171&width=2048",
+        "http://electricrideco.com/cdn/shop/products/electricscooter-12_1200x1200.jpg?v=1675834577"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Hiboy S2 MAX est une trottinette électrique pliable équipée d'un moteur de 500 W (650 W en pointe) et d'une batterie 48 V 11,6 Ah annoncée pour jusqu'à 64 km d'autonomie. Elle roule sur des pneus de 10 pouces et combine un frein à tambour avec un freinage électrique régénératif ; sa vitesse maximale constructeur est d'environ 30 km/h, bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy S2 MAX - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy S2 MAX : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy s2 max, pieces hiboy s2 max, disque frein hiboy s2 max, plaquettes hiboy s2 max, pneu hiboy s2 max"
+    },
+    {
+      "name": "Hiboy KS4 Pro",
+      "slug": "hiboy-ks4-pro",
+      "voltage": 36,
+      "amperage": 11.6,
+      "power_watts": 500,
+      "max_speed_private_kmh": 30,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.4,
+      "suspension": "Suspension arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "10 pouces, pneus pleins alvéolés (honeycomb), sans chambre à air",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.hiboy.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756&width=2048",
+        "http://electricrideco.com/cdn/shop/products/5_b88ded65-a37d-4209-a225-a8cc8bcf0cf0_1200x1200.jpg?v=1675752383",
+        "http://www.wilsonebikes.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1788693606"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "solid",
+      "score_offroad": 35,
+      "description": "La Hiboy KS4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 750 W) et d'une batterie 36 V 11,6 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus pleins alvéolés de 10 pouces avec suspension arrière, et freine grâce à un frein à disque arrière associé à un frein électronique EABS avant. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy KS4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy KS4 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy ks4 pro, pieces hiboy ks4 pro, disque frein hiboy ks4 pro, plaquettes hiboy ks4 pro, pneu hiboy ks4 pro"
     }
   ]
 }

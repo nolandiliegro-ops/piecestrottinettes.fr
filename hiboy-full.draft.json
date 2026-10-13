@@ -541,6 +541,515 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Hiboy S2 MAX",
+        "slug": "hiboy-s2-max",
+        "voltage": 48,
+        "amperage": 11.6,
+        "power_watts": 500,
+        "range_km": 64,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 18.8,
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.hiboy.com/cdn/shop/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg?v=1744107171&width=2048",
+          "http://electricrideco.com/cdn/shop/products/electricscooter-12_1200x1200.jpg?v=1675834577"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Hiboy S2 MAX est une trottinette électrique pliable équipée d'un moteur de 500 W (650 W en pointe) et d'une batterie 48 V 11,6 Ah annoncée pour jusqu'à 64 km d'autonomie. Elle roule sur des pneus de 10 pouces et combine un frein à tambour avec un freinage électrique régénératif ; sa vitesse maximale constructeur est d'environ 30 km/h, bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hiboy S2 MAX - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hiboy S2 MAX : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hiboy s2 max, pieces hiboy s2 max, disque frein hiboy s2 max, plaquettes hiboy s2 max, pneu hiboy s2 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter"
+        },
+        "ip_rating": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.hiboy.com/cdn/shop/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg?v=1744107171&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.amazon.com/stores/page/0A8B11F7-EEBE-4A5F-947E-2023CB1694C5/",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [
+        "max_speed_private_kmh=30.5"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18.8,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 11.6,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30.5,
+            "source_url": "https://www.hiboy.ca/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 64,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter-with-cable-lock",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://www.hiboy.ca/products/hiboy-s2-max-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hiboy S2 MAX est une trottinette électrique pliable équipée d'un moteur de 500 W (650 W en pointe) et d'une batterie 48 V 11,6 Ah annoncée pour jusqu'à 64 km d'autonomie. Elle roule sur des pneus de 10 pouces et combine un frein à tambour avec un freinage électrique régénératif ; sa vitesse maximale constructeur est d'environ 30 km/h, bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "https://www.hiboy.ca/products/hiboy-s2-max-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.hiboy.com/cdn/shop/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg?v=1744107171&width=2048",
+            "http://electricrideco.com/cdn/shop/products/electricscooter-12_1200x1200.jpg?v=1675834577",
+            "https://cdn.shopify.com/s/files/1/0729/5195/5765/files/logo_db0bfc44-d6b0-408c-a885-2b61dd5d1975.png?v=1681977773"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://www.amazon.com/stores/page/0A8B11F7-EEBE-4A5F-947E-2023CB1694C5/",
+            "source_url_2": "https://urbanelectrica.com/products/hiboy-s2-max",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-s2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hiboy KS4 Pro",
+        "slug": "hiboy-ks4-pro",
+        "voltage": 36,
+        "amperage": 11.6,
+        "power_watts": 500,
+        "max_speed_private_kmh": 30,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 18.4,
+        "suspension": "Suspension arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "10 pouces, pneus pleins alvéolés (honeycomb), sans chambre à air",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.hiboy.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756&width=2048",
+          "http://electricrideco.com/cdn/shop/products/5_b88ded65-a37d-4209-a225-a8cc8bcf0cf0_1200x1200.jpg?v=1675752383",
+          "http://www.wilsonebikes.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1788693606"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "solid",
+        "score_offroad": 35,
+        "description": "La Hiboy KS4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 750 W) et d'une batterie 36 V 11,6 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus pleins alvéolés de 10 pouces avec suspension arrière, et freine grâce à un frein à disque arrière associé à un frein électronique EABS avant. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hiboy KS4 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hiboy KS4 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hiboy ks4 pro, pieces hiboy ks4 pro, disque frein hiboy ks4 pro, plaquettes hiboy ks4 pro, pneu hiboy ks4 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://www.speedwayridersnyc.com/shop/hiboy-ks4-pro-premium-electric-scooter/"
+        },
+        "suspension": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-refurbished-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.hiboy.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18.4,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/hiboy-ks4-pro-premium-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 11.6,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://www.wilsonebikes.com/products/hiboy-ks4-pro-premium-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://www.wilsonebikes.com/products/hiboy-ks4-pro-premium-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://alienrides.com/products/hiboy-ks4-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces, pneus pleins alvéolés (honeycomb), sans chambre à air",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://igaboise.com/products/hiboy-ks4",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension arrière",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://igaboise.com/products/hiboy-ks4",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://manuals.plus/hiboy/ks4-pro-electric-scooter-manual",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-refurbished-electric-scooter",
+            "source_url_2": "https://electricrideco.com/products/hiboy-ks4-pro-36v-11-6ah-500w-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hiboy KS4 Pro est une trottinette électrique pliable équipée d'un moteur de 500 W (pointe 750 W) et d'une batterie 36 V 11,6 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus pleins alvéolés de 10 pouces avec suspension arrière, et freine grâce à un frein à disque arrière associé à un frein électronique EABS avant. Sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "https://electricrideco.com/products/hiboy-ks4-pro-36v-11-6ah-500w-electric-scooter",
+            "https://www.wilsonebikes.com/products/hiboy-ks4-pro-premium-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.hiboy.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756&width=2048",
+            "http://electricrideco.com/cdn/shop/products/5_b88ded65-a37d-4209-a225-a8cc8bcf0cf0_1200x1200.jpg?v=1675752383",
+            "http://www.wilsonebikes.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1788693606"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://www.wilsonebikes.com/products/hiboy-ks4-pro-premium-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/hiboy-ks4-pro-premium-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 2
+    }
+  }
 }

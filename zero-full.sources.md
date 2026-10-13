@@ -1,10 +1,10 @@
 # Extraction Zero — 2026-10-13
 
-**2 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**3 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
 
 ⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 421935 tokens entrée, 11464 sortie, 20 recherches web.
+Coût mesuré : 128155 tokens entrée, 5298 sortie, 8 recherches web.
 
 ## Zero 8X — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 x 3,5 pouces (pneus pleins) », non exploitable seul)
@@ -50,3 +50,24 @@ Coût mesuré : 421935 tokens entrée, 11464 sortie, 20 recherches web.
 | brake_type | disc_unknown_actuation | revendeur | https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/ |  |
 | tire_section | 10x2.50 | revendeur | https://www.scooterpassion.be/fr/2517-pneus-et-chambres-a-air-10-pour-trottinettes-electriques | https://fastride.fr/fr/40-zero-10-10x |
 | tire_family | pneumatic | revendeur | https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-zero/ |  |
+
+## Zero 8 — PRÊT
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| amperage | 10 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| power_watts | 350 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| max_speed_private_kmh | 30 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| range_km | 30 | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| max_load_kg | 120 | revendeur | https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces |  |
+| weight_kg | 17 | revendeur | https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces | https://pole-scoot.fr/gamme/power-zero/zero8/ |
+| suspension | Avant à ressort, arrière hydraulique | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| tire_size | Avant 8,5" gonflable (chambre à air) / arrière 8" plein | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| foldable | true | revendeur | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-8 |  |
+| wheel_inches | 8 | revendeur | https://power-zero.com/fr/shop/trottinettes/1517-trottinette-electrique-zero-8-36V10A.html |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueZero8-36V10Ah-PIETECHNOLOGIE-min.png?v=1665652659 |  |
+| brake_type | drum | revendeur | https://e-watts.fr/en/produit/trottinette-electrique-zero-8/ |  |
+| rim_diameter | 134mm | revendeur | https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett | https://airlab-industrie.com/fr/pieces-detachees/442-chambre-a-air-85-x-250-134-tier-pour-trottinettes-electriques-grace-zero-8-9-zero8-zero9-t8-t9.html |
+| tire_section | 8.5x2 | revendeur | https://www.wee-bot.com/products/pneu-trottinette-electrique-zero-inokim-weebot-vsett | https://wattiz.fr/fr/pneus/25839-pneu-zero-8-1-2x2-pouces-50-134-3770018713038.html |
+| tire_family | pneumatic | revendeur | https://pietechnologie.com/products/trottinette-electrique-zero-8-pouces |  |

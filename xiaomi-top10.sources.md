@@ -1,10 +1,10 @@
 # Extraction Xiaomi — 2026-10-13
 
-**6 PRÊT / 7 modèles.** Modèle IA : claude-sonnet-5-5.
+**10 PRÊT / 11 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **7 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 1191472 tokens entrée, 40619 sortie, 57 recherches web.
+Coût mesuré : 672201 tokens entrée, 20154 sortie, 32 recherches web.
 
 ## Xiaomi Electric Scooter 5 — PRÊT
 
@@ -169,3 +169,85 @@ Coût mesuré : 1191472 tokens entrée, 40619 sortie, 57 recherches web.
 | tire_section | 8.5x2 | revendeur | https://moovmoov.fr/collections/pneu-chambre-a-air-trottinette-xiaomi-m365 | https://www.glisseurbaine.com/359-chambre-a-air-xiaomi-m365.html |
 | caliper_family | xiaomi_m365 | revendeur | https://www.glisseurbaine.com/1657-plaquettes-de-frein-pour-xiaomi-m365.html |  |
 | tire_family | pneumatic | site_test | https://latrottinetteelectrique.com/xiaomi-m365/ |  |
+
+## Xiaomi Electric Scooter 6 Pro — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | site_test | https://fixwheel.fr/en/blogs/infos/xiaomi-electric-scooter-6-pro |  |
+| amperage | 10 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| power_watts | 1000 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| range_km | 70 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| max_load_kg | 120 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| year | 2026 | revendeur | https://www.mediamarkt.be/fr/product/_xiaomi-trottinette-electrique-6-pro-2219054.html |  |
+| weight_kg | 27.3 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ | https://www.guerin-bike.com/trottinette-electrique/xiaomi-electric-scooter-6-pro |
+| suspension | Avant et arrière | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/ |  |
+| ip_rating | IPX5 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| foldable | true | revendeur | https://www.pixmania.com/fr/fr/electric-scooter-6-pro-25kmh-400-w-468-wh-noir-546926.html |  |
+| wheel_inches | 12 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/specs/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/6932554477349_h_f_l_0 |  |
+| brake_type | disc_mechanical | site_test | https://www.cleanrider.com/essais/trottinette-electrique/test-avis-xiaomi-electric-scooter-6-pro-cette-trottinette-a-roues-de-12-pouces-changent-elles-vraiment-tout/ |  |
+
+## Xiaomi Electric Scooter 6 Lite — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : voltage=21.6
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 10 | constructeur | https://www.mi.com/ae-en/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| power_watts | 300 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| max_speed_private_kmh | 25 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| range_km | 25 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/ |  |
+| max_load_kg | 100 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| year | 2026 | site_test | https://www.gizmochina.com/2026/01/21/xiaomi-electric-scooter-6-lite-specs-price/ |  |
+| weight_kg | 18.1 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ | https://www.fnac.com/Trottinette-electrique-Xiaomi-Electric-Scooter-6-Lite-300-W-Noir/a22613665/w-4 |
+| suspension | Suspension avant à double ressort (course 25 mm) | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/ |  |
+| ip_rating | IPX4 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| foldable | true | revendeur | https://www.fnac.com/Trottinette-electrique-Xiaomi-Electric-Scooter-6-Lite-300-W-Noir/a22613665/w-4 |  |
+| wheel_inches | 10 | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/specs/ |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/6932554477738_h_f_l_0 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/ |  |
+| tire_family | pneumatic | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/ |  |
+
+## Xiaomi Electric Scooter 6 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
+- Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://trott-en-provence.fr/pneu-plein-xiaomi-scooter-6/)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 10 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| power_watts | 400 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| range_km | 45 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| max_load_kg | 120 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| weight_kg | 26.3 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot6n.html |
+| suspension | Avant à double ressort (30 mm) et arrière à ressort simple | constructeur | https://www.mi.com/global/product/xiaomi-electric-scooter-6/ |  |
+| ip_rating | IPX5 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| foldable | true | revendeur | https://www.boulanger.com/ref/1235218 |  |
+| wheel_inches | 12 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/6932554477752_h_f_l_0 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+| tire_family | pneumatic | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6/specs/ |  |
+
+## Xiaomi Electric Scooter 6 Ultra — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : voltage=46.8
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 12 x 3 pouces (pneu tout-terrain tubeless) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| amperage | 12.5 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| power_watts | 1200 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| range_km | 75 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| max_load_kg | 140 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| year | 2026 | site_test | https://www.notebookcheck.net/Xiaomi-confirms-new-Electric-Scooter-6-Ultra-launching-globally-soon.1232758.0.html |  |
+| weight_kg | 33.7 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ | https://www.turbovs.com/review/xiaomi-electric-scooter-6-ultra-245460 |
+| suspension | Double suspension à bras oscillant (avant et arrière, élastomère) | constructeur | https://www.mi.com/ma-fr/product/xiaomi-electric-scooter-6-ultra/ |  |
+| ip_rating | IPX6 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| tire_size | 12 x 3 pouces (pneu tout-terrain tubeless) | revendeur | https://voltride.com/xiaomi-scooter-6-ultra/ |  |
+| foldable | true | revendeur | https://www.boulanger.com/ref/1235214 |  |
+| wheel_inches | 12 | constructeur | https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/ |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/6932554465735_h_f_l_0 |  |
+| brake_type | disc_mechanical | site_test | https://www.journaldugeek.com/test/test-de-la-trottinette-electrique-xiaomi-6-ultra-la-su7-urbaine-saveur-tapis-volant/ |  |
+| tire_family | pneumatic | distributeur | https://www.boulanger.com/ref/1235214 |  |

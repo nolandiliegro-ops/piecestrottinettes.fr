@@ -592,6 +592,1160 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Nami Stellar",
+        "slug": "nami-stellar",
+        "voltage": 52,
+        "amperage": 15.6,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 45,
+        "range_km": 50,
+        "max_load_kg": 110,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 26.5,
+        "suspension": "Ressorts avant et arrière (réglables)",
+        "ip_rating": "IPX5",
+        "tire_size": "9x2.50-6 tubeless",
+        "foldable": true,
+        "wheel_inches": 9,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_stellar_pas_cher.jpg?v=1727466347",
+          "https://www.trottnscoot.com/wp-content/uploads/2024/05/trottinette_electrique_nami_stellar-300x300.webp"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "2.50",
+        "tire_family": "pneumatic",
+        "score_offroad": 30,
+        "description": "La Nami Stellar est une trottinette électrique pliable équipée d'un moteur de 1000 W et d'une batterie 52 V 15,6 Ah (environ 811 Wh) pour une autonomie annoncée jusqu'à 50 km. Elle roule sur des pneus tubeless de 9 pouces, avec suspensions à ressort avant et arrière et freins à disque Logan à câble de 140 mm ; elle est vendue bridée à 25 km/h, pour 26,5 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Stellar - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Stellar : disque de frein 140 mm, plaquettes, pneus 2.50, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami stellar, pieces nami stellar, disque frein nami stellar, plaquettes nami stellar, pneu nami stellar"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://nami-electric.com/produit/stellar/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://nami-electric.ca/products/nami-stellar",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://nami-electric.ca/products/nami-stellar",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://nami-electric.ca/products/nami-stellar",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+          "type": "revendeur",
+          "url2": "https://ghersonwheels.com/produit/nami-stellar/"
+        },
+        "suspension": {
+          "url": "https://nami-electric.com/produit/stellar/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-stellar",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://nami-electric.com/produit/stellar/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_stellar_pas_cher.jpg?v=1727466347",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/nami-electric/3481-trottinette-electrique-nami-stellar.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.trotnation.com/products/nami-stellar",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/1576-nami-stellar.html"
+        },
+        "rim_diameter": {
+          "url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+          "type": "revendeur",
+          "url2": "https://bikescootercity.com.au/products/9x2-5-6-inch-tubeless-road-tyre-to-suit-nami-stellar"
+        },
+        "tire_section": {
+          "url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+          "type": "revendeur",
+          "url2": "https://bikescootercity.com.au/products/9x2-5-6-inch-tubeless-road-tyre-to-suit-nami-stellar"
+        },
+        "tire_family": {
+          "url": "https://nami-electric.com/produit/stellar/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26.5,
+            "source_url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+            "source_url_2": "https://ghersonwheels.com/produit/nami-stellar/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-stellar",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+            "source_url_2": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://nami-electric.com/produit/stellar/",
+            "source_url_2": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://nami-electric.ca/products/nami-stellar",
+            "source_url_2": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 50,
+            "source_url": "https://nami-electric.ca/products/nami-stellar",
+            "source_url_2": "https://fastride.fr/en/nami-electric/3481-trottinette-electrique-nami-stellar.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 110,
+            "source_url": "https://nami-electric.ca/products/nami-stellar",
+            "source_url_2": "https://ghersonwheels.com/produit/nami-stellar/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "https://nami-electric.com/produit/stellar/",
+            "source_url_2": "https://fastride.fr/en/nami-electric/3481-trottinette-electrique-nami-stellar.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "9x2.50-6 tubeless",
+            "source_url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+            "source_url_2": "https://www.glisseurbaine.com/4747-pneu-9x250-6-nami-stellar-tubeless.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Ressorts avant et arrière (réglables)",
+            "source_url": "https://nami-electric.com/produit/stellar/",
+            "source_url_2": "https://www.trottir.com/product-page/nami-stellar",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-stellar",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-nami-stellar/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+            "source_url_2": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_url_2": "https://www.gyro-phare.com/1576-trottinette-electrique-nami-stellar-2024-ip65.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Nami Stellar est une trottinette électrique pliable équipée d'un moteur de 1000 W et d'une batterie 52 V 15,6 Ah (environ 811 Wh) pour une autonomie annoncée jusqu'à 50 km. Elle roule sur des pneus tubeless de 9 pouces, avec suspensions à ressort avant et arrière et freins à disque Logan à câble de 140 mm ; elle est vendue bridée à 25 km/h, pour 26,5 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://ghersonwheels.com/produit/nami-stellar/",
+            "source_url_2": "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-nami-stellar",
+            "https://www.glisseurbaine.com/3226-nami-stellar.html",
+            "https://www.trottnscoot.com/produit/trottinette-electrique-nami-stellar/"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_stellar_pas_cher.jpg?v=1727466347",
+            "https://www.trottnscoot.com/wp-content/uploads/2024/05/trottinette_electrique_nami_stellar-300x300.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://fastride.fr/en/nami-electric/3481-trottinette-electrique-nami-stellar.html",
+            "source_url_2": "https://www.scooterpassion.be/fr/scooter-passion/8420-trottinette-electrique-nami-stellar-1000w-156a.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.trotnation.com/products/nami-stellar",
+            "source_url_2": "https://www.gyro-phare.com/1576-nami-stellar.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "2.50",
+            "source_url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+            "source_url_2": "https://bikescootercity.com.au/products/9x2-5-6-inch-tubeless-road-tyre-to-suit-nami-stellar",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.urbanmoov.fr/boutique/Pneu-9x2-50-6-Nami-Stellar-Tubeless-p717346624",
+            "source_url_2": "https://bikescootercity.com.au/products/9x2-5-6-inch-tubeless-road-tyre-to-suit-nami-stellar",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://nami-electric.com/produit/stellar/",
+            "source_url_2": "https://www.trotnation.com/products/nami-stellar",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Nami Superstellar",
+        "slug": "nami-superstellar",
+        "voltage": 52,
+        "amperage": 25,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 60,
+        "range_km": 75,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "suspension": "Ressorts avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "9x2.5 tubeless",
+        "foldable": true,
+        "wheel_inches": 9,
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/files/nami-superstellar.png?v=1712239642",
+          "http://files/nami-super-stellar-4.png"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "tire_family": "pneumatic",
+        "score_offroad": 30,
+        "description": "La Nami Superstellar est une trottinette électrique double moteur (2 x 1000 W) alimentée par une batterie 52V 25Ah (1277 Wh) pour une autonomie annoncée jusqu'à 75 km. Elle repose sur des pneus tubeless de 9 pouces, des suspensions à ressorts avant et arrière et des freins à disque hydrauliques Logan ; elle est bridée à 25 km/h sur voie publique (jusqu'à environ 60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Superstellar - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Superstellar : disque de frein 140 mm, plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami superstellar, pieces nami superstellar, disque frein nami superstellar, plaquettes nami superstellar, pneu nami superstellar"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.gyro-phare.com/1606-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+          "type": "revendeur",
+          "url2": "https://www.eleqtron.fr/products/trottinette-electrique-nami-super-stellar"
+        },
+        "suspension": {
+          "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.wilsonebikes.com/products/nami-super-stellar-electric-scooter",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.gyro-phare.com/1606-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/files/nami-superstellar.png?v=1712239642",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://nami-electric.com/produit/super-stellar/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.ride-concept.fr/trottinette-electrique-nami-superstellar/",
+          "type": "revendeur",
+          "url2": "https://ghersonwheels.com/produit/nami-super-stellar/"
+        },
+        "tire_family": {
+          "url": "https://nami-electric.com/produit/super-stellar/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-nami-super-stellar",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 25,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.mymobelity.be/en/electric-scooter-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 75,
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-nami-superstellar",
+            "source_url_2": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "9x2.5 tubeless",
+            "source_url": "https://www.wilsonebikes.com/products/nami-super-stellar-electric-scooter",
+            "source_url_2": "https://www.ezbike.ca/products/nami-super-stellar-e-scooter",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Ressorts avant et arrière",
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_url_2": "https://www.trotnation.com/products/nami-super-stellar",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_url_2": "https://www.trotnation.com/products/nami-super-stellar",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.gyro-phare.com/1606-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+            "source_url_2": "https://www.glisseurbaine.com/3266-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.gyro-phare.com/1606-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+            "source_url_2": "https://www.glisseurbaine.com/3266-trottinette-electrique-nami-superstellar-2024-ipx5.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Nami Superstellar est une trottinette électrique double moteur (2 x 1000 W) alimentée par une batterie 52V 25Ah (1277 Wh) pour une autonomie annoncée jusqu'à 75 km. Elle repose sur des pneus tubeless de 9 pouces, des suspensions à ressorts avant et arrière et des freins à disque hydrauliques Logan ; elle est bridée à 25 km/h sur voie publique (jusqu'à environ 60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "https://www.eleqtron.fr/products/trottinette-electrique-nami-super-stellar",
+            "https://www.trotnation.com/products/nami-super-stellar"
+          ],
+          "_og_images": [
+            "http://www.eleqtron.fr/cdn/shop/files/nami-superstellar.png?v=1712239642",
+            "http://files/nami-super-stellar-4.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://nami-electric.com/produit/super-stellar/",
+            "source_url_2": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.ride-concept.fr/trottinette-electrique-nami-superstellar/",
+            "source_url_2": "https://ghersonwheels.com/produit/nami-super-stellar/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://nami-electric.com/produit/super-stellar/",
+            "source_url_2": "https://www.trotnation.com/products/nami-super-stellar",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Nami Klima Max",
+        "slug": "nami-klima-max",
+        "voltage": 60,
+        "amperage": 30,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 65,
+        "range_km": 85,
+        "max_load_kg": 110,
+        "max_speed_kmh": 25,
+        "suspension": "Hydraulique KKE avant et arrière 150 mm, réglage du rebond",
+        "ip_rating": "IPX5",
+        "tire_size": "10x3 pouces CST tubeless",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://funtrott.fr/7576-large_default/nami-klima-max-60v30ah.jpg",
+          "http://www.eleqtron.fr/cdn/shop/products/nami-klima_1_835100f0-4c1d-49ba-bf5c-8408c6406e47.jpg?v=1678807331"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "10x3.00",
+        "tire_family": "pneumatic",
+        "score_offroad": 43,
+        "description": "La Nami Klima Max est une trottinette électrique à double moteur 2 x 1000 W alimentée par une batterie 60V 30Ah, annoncée jusqu'à 85 km d'autonomie. Elle est équipée de pneus CST tubeless 10 pouces, de suspensions hydrauliques KKE réglables et de freins hydrauliques Logan à 2 pistons. Elle est livrée bridée à 25 km/h, et peut atteindre 65 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Klima Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Klima Max : disque de frein 140 mm 6 trous, plaquettes, pneus 10x3.00, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami klima max, pieces nami klima max, disque frein nami klima max, plaquettes nami klima max, pneu nami klima max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.glisseurbaine.com/3107-nami-klima-max-30ah.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://nami-electric.com/produit/klima-max/",
+          "type": "constructeur"
+        },
+        "suspension": {
+          "url": "https://www.trottir.com/product-page/nami-klima-max",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.trottir.com/product-page/nami-klima-max",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.glisseurbaine.com/3107-nami-klima-max-30ah.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://nami-electric.com/produit/klima-max/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://funtrott.fr/7576-large_default/nami-klima-max-60v30ah.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/trottinettes-electriques-fastride/5047-trottinette-electrique-nami-klima-max-by-fastride.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://pro.nami-electric.com/en/shop/spare-parts-klima-15/na0111-140-mm-brake-disc-klima-stellar-1629",
+          "type": "constructeur",
+          "url2": "https://www.urbanmoov.fr/boutique/Klima-c182249523"
+        },
+        "disc_pcd": {
+          "url": "https://escootnow.com.au/products/rotor-140mm-wave",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/fr/109-accessoires-nami-electric"
+        },
+        "disc_holes": {
+          "url": "https://escootnow.com.au/products/rotor-140mm-wave",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/produit/pneu-10x3-tubeless-avec-gel-anti-crevaison",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-10x3-tubeless-avec-gel-anti-crevaison",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html"
+        },
+        "tire_family": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/nami-klima",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 38.3,
+          "url": "https://nami-electric.com/produit/klima-max/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 38.3,
+            "source_url": "https://nami-electric.com/produit/klima-max/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+            "source_url_2": "https://www.glisseurbaine.com/3107-nami-klima-max-30ah.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+            "source_url_2": "https://www.gyro-phare.com/14-nami-klima-max-30ah.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+            "source_url_2": "https://www.mymobelity.be/fr/trottinette-electrique-nami-klima-max-60v-30ah.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.glisseurbaine.com/3107-nami-klima-max-30ah.html",
+            "source_url_2": "https://www.trotnation.com/products/nami-klima-max",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 85,
+            "source_url": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 110,
+            "source_url": "https://nami-electric.com/produit/klima-max/",
+            "source_url_2": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max",
+            "source_url_2": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x3 pouces CST tubeless",
+            "source_url": "https://www.glisseurbaine.com/3107-nami-klima-max-30ah.html",
+            "source_url_2": "https://www.gyro-phare.com/14-nami-klima-max-30ah.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique KKE avant et arrière 150 mm, réglage du rebond",
+            "source_url": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_url_2": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_url_2": "https://cadjeemobility.re/products/nami-klima-max",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://nami-electric.com/produit/klima-max/",
+            "source_url_2": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Nami Klima Max est une trottinette électrique à double moteur 2 x 1000 W alimentée par une batterie 60V 30Ah, annoncée jusqu'à 85 km d'autonomie. Elle est équipée de pneus CST tubeless 10 pouces, de suspensions hydrauliques KKE réglables et de freins hydrauliques Logan à 2 pistons. Elle est livrée bridée à 25 km/h, et peut atteindre 65 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.trottir.com/product-page/nami-klima-max",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.trottir.com/product-page/nami-klima-max",
+            "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html",
+            "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima-max"
+          ],
+          "_og_images": [
+            "https://funtrott.fr/7576-large_default/nami-klima-max-60v30ah.jpg",
+            "http://www.eleqtron.fr/cdn/shop/products/nami-klima_1_835100f0-4c1d-49ba-bf5c-8408c6406e47.jpg?v=1678807331"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/fr/trottinettes-electriques-fastride/5047-trottinette-electrique-nami-klima-max-by-fastride.html",
+            "source_url_2": "https://www.veloshop-obernai.com/products/klima-max",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://pro.nami-electric.com/en/shop/spare-parts-klima-15/na0111-140-mm-brake-disc-klima-stellar-1629",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Klima-c182249523",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://escootnow.com.au/products/rotor-140mm-wave",
+            "source_url_2": "https://fastride.fr/fr/109-accessoires-nami-electric",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://escootnow.com.au/products/rotor-140mm-wave",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://e-watts.fr/produit/pneu-10x3-tubeless-avec-gel-anti-crevaison",
+            "source_url_2": "https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://e-watts.fr/produit/pneu-10x3-tubeless-avec-gel-anti-crevaison",
+            "source_url_2": "https://www.wattiz.fr/fr/pneus-gonflables/53595-pneu-10x3-00-6-cst-tubeless-3760351013667.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/nami-klima",
+            "source_url_2": "https://www.veloshop-obernai.com/products/klima-max",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Nami Blast",
+        "slug": "nami-blast",
+        "voltage": 60,
+        "amperage": 28,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 65,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 48,
+        "suspension": "Hydraulique KKE avant et arrière, réglage du rebond",
+        "ip_rating": "IPX5",
+        "tire_size": "90/65-6.5 tubeless (11\")",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/products/nami-blast.png?v=1678806242",
+          "https://e-ride.fr/wp-content/uploads/2026/08/eride-trottinette-electrique-ville-nuit-hero.webp"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_pcd": 44,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Nami Blast est une trottinette électrique à deux moteurs de 1000 W alimentés par une batterie 60V 28Ah, avec une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless 11 pouces (90/65-6.5), de suspensions hydrauliques KKE avant et arrière et de freins à disques hydrauliques Logan. Livrée bridée à 25 km/h pour la voie publique, elle atteint 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Nami Blast - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Nami Blast : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "nami blast, pieces nami blast, disque frein nami blast, plaquettes nami blast, pneu nami blast"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-nami-blast",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+          "type": "revendeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/nami-blast"
+        },
+        "suspension": {
+          "url": "https://nami-electric.com/en/produit/blast/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://e-ride.fr/products/nami-blast",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://nami-electric.com/en/produit/blast/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://nami-electric.com/en/produit/blast/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://nami-electric.com/en/produit/blast/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/products/nami-blast.png?v=1678806242",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/nami-blast",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-ride.fr/products/disque-de-frein-burn-e-et-blast",
+          "type": "distributeur",
+          "url2": "https://zetrottstore-toulouse.com/pieces-detachees/2525-disque-de-frein-160-mm-pour-nami-burn-e-blast-2071629690253.html"
+        },
+        "disc_pcd": {
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/produit/disque-nami-vsett/"
+        },
+        "rim_diameter": {
+          "url": "https://blog.gyro-phare.com/produit/pneu-dualtron-thunder/",
+          "type": "revendeur",
+          "url2": "https://www.trottpneu.fr/products/pneu-90-65-6-5-tubeless"
+        },
+        "tire_section": {
+          "url": "https://blog.gyro-phare.com/produit/pneu-dualtron-thunder/",
+          "type": "revendeur",
+          "url2": "https://www.trottpneu.fr/products/pneu-90-65-6-5-tubeless"
+        },
+        "tire_family": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/nami-blast",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 48,
+            "source_url": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/nami-blast",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://www.mymobelity.be/en/electric-scooter-nami-blast-60v-28ah.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 28,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://www.glisseurbaine.com/2572-nami-blast.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://zetrottstore-toulouse.com/nami-electric/2676-nami-blast-60v-28ah-2084661661143.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://www.glisseurbaine.com/2572-nami-blast.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://www.glisseurbaine.com/2572-nami-blast.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_url_2": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://nami-electric.com/en/produit/blast/",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 tubeless (11\")",
+            "source_url": "https://nami-electric.com/en/produit/blast/",
+            "source_url_2": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Hydraulique KKE avant et arrière, réglage du rebond",
+            "source_url": "https://nami-electric.com/en/produit/blast/",
+            "source_url_2": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://e-ride.fr/products/nami-blast",
+            "source_url_2": "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://nami-electric.com/en/produit/blast/",
+            "source_url_2": "https://e-ride.fr/products/nami-blast",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-nami-blast",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Nami Blast est une trottinette électrique à deux moteurs de 1000 W alimentés par une batterie 60V 28Ah, avec une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless 11 pouces (90/65-6.5), de suspensions hydrauliques KKE avant et arrière et de freins à disques hydrauliques Logan. Livrée bridée à 25 km/h pour la voie publique, elle atteint 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast",
+            "https://e-ride.fr/products/nami-blast",
+            "https://www.mobilitix.fr/fr/nami/10006680-nami-blast-trottinette-electrique-2100003978207.html"
+          ],
+          "_og_images": [
+            "http://www.eleqtron.fr/cdn/shop/products/nami-blast.png?v=1678806242",
+            "https://e-ride.fr/wp-content/uploads/2026/08/eride-trottinette-electrique-ville-nuit-hero.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/nami-blast",
+            "source_url_2": "https://fastride.fr/fr/nami/2948-trottinette-electrique-nami-blast.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://e-ride.fr/products/disque-de-frein-burn-e-et-blast",
+            "source_url_2": "https://zetrottstore-toulouse.com/pieces-detachees/2525-disque-de-frein-160-mm-pour-nami-burn-e-blast-2071629690253.html",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_url_2": "https://www.gyro-phare.com/produit/disque-nami-vsett/",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://blog.gyro-phare.com/produit/pneu-dualtron-thunder/",
+            "source_url_2": "https://www.trottpneu.fr/products/pneu-90-65-6-5-tubeless",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://blog.gyro-phare.com/produit/pneu-dualtron-thunder/",
+            "source_url_2": "https://www.trottpneu.fr/products/pneu-90-65-6-5-tubeless",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/nami-blast",
+            "source_url_2": "https://e-ride.fr/products/nami-blast",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 4
+    }
+  }
 }

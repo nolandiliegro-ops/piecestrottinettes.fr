@@ -1,8 +1,8 @@
 # Extraction Speedway — 2026-10-13
 
-**0 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**1 PRÊT / 3 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 347777 tokens entrée, 14612 sortie, 16 recherches web.
+Coût mesuré : 165005 tokens entrée, 5770 sortie, 9 recherches web.
 
 ## Speedway Leger Lite — MANQUE
 - Manque : source_image_urls
@@ -44,3 +44,25 @@ Coût mesuré : 347777 tokens entrée, 14612 sortie, 16 recherches web.
 | wheel_inches | 8 | revendeur | https://www.velo-on-line.fr/trottinette/trottinette-electrique/4264-speedway-super-mini-4-pro.html |  |
 | brake_type | drum | revendeur | https://www.trottnshop.com/produit/speedway-super-mini-4-pro/ |  |
 | tire_section | 8x2 | revendeur | https://www.wee-bot.com/products/pneu-plein-speedway-mini-4-pro | https://ehuastore.fr/pneu-8-pouces-200x50-trottinette-lectrique-p0129-p0129.html |
+
+## Speedway Leger — PRÊT
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| amperage | 15.6 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| power_watts | 500 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| max_speed_private_kmh | 45 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| range_km | 55 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| max_load_kg | 120 | revendeur | https://alternative.bike/679-trottinette-electrique-speedway-leger.html |  |
+| weight_kg | 20.6 | revendeur | https://pietechnologie.com/products/speedway-leger-lg | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/speedway-leger-16-ah |
+| suspension | Avant et arrière | revendeur | https://www.glisseurbaine.com/495-trottinette-electrique-speedway-leger.html |  |
+| ip_rating | IP54 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-leger |  |
+| tire_size | 8,5x2 | revendeur | https://www.wee-bot.com/products/pneu-renforce-dualtron-mini |  |
+| foldable | true | revendeur | https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-speedway-leger-noir.html |  |
+| wheel_inches | 8.5 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-leger |  |
+| source_image_urls | 3 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_speedway_leger_pas_cher-365678.jpg?v=1734952770 |  |
+| brake_type | drum | distributeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-leger |  |
+| rim_diameter | 6.1 | revendeur | https://www.wattiz.fr/fr/pneus/26532-pneu-plein-xiaomi-rouge-3760351012851.html | https://paris02.zetrottstore.com/pneusroues/2634-pn09-pneu-85-x-2-dualtron-mini-et-speedway-leger-2049040945740.html |
+| tire_section | 8.5x2 | revendeur | https://www.wee-bot.com/products/pneu-renforce-dualtron-mini | https://www.wattiz.fr/fr/pneus/26532-pneu-plein-xiaomi-rouge-3760351012851.html |
+| tire_family | pneumatic | distributeur | https://www.wee-bot.com/products/trottinette-electrique-speedway-leger |  |

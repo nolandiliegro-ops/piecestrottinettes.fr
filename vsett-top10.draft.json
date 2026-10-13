@@ -1118,6 +1118,830 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 10 Apex",
+        "slug": "vsett-10-apex",
+        "voltage": 60,
+        "amperage": 25.6,
+        "power_watts": 3000,
+        "max_speed_private_kmh": 80,
+        "range_km": 110,
+        "max_load_kg": 130,
+        "max_speed_kmh": 25,
+        "weight_kg": 36,
+        "suspension": "Suspensions avant et arrière hydrauliques réglables",
+        "ip_rating": "IP54",
+        "tire_size": "10 x 3 pouces (pneumatiques)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/files/1708431970VSETT10APEX1000x1000-05.webp?v=1709584857"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 145,
+        "rim_diameter": "6",
+        "tire_section": "10x3.00",
+        "tire_family": "pneumatic",
+        "score_offroad": 43,
+        "description": "La Vsett 10 Apex est une trottinette électrique double moteur (2 x 1500 W) avec batterie amovible 60 V 20,8 Ah ou 25,6 Ah, pneus de 10 x 3 pouces, freins à disque hydrauliques 4 pistons avant et arrière et suspensions réglables. Elle est bridée à 25 km/h sur route et peut atteindre 80 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 10 Apex - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 10 Apex : disque de frein 145 mm, plaquettes, pneus 10x3.00, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 10 apex, pieces vsett 10 apex, disque frein vsett 10 apex, plaquettes vsett 10 apex, pneu vsett 10 apex"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur",
+          "url2": "https://fixmytrott.com/products/vsett-10-apex-60v"
+        },
+        "suspension": {
+          "url": "https://promechbc.com/product/vsett-10-apex/",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fixmytrott.com/products/vsett-10-apex-60v",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-10-apex",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/files/1708431970VSETT10APEX1000x1000-05.webp?v=1709584857",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://turbokids.ca/en/products/vsett-10-apex-trottinette-electrique-60-volts-25-6ah-2x1500-watts",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/e-trott/vsett-apex-10-debridee/"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/fr/vsett-apex-10/4501-controleur-vsett-10-apex.html"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/pieces-detachees/pneu-tubeless-pour-vsett-10-apex/"
+        },
+        "tire_family": {
+          "url": "https://vsett-shop.com/product/vsett-10-apex/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 36,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fixmytrott.com/products/vsett-10-apex-60v",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fixmytrott.com/products/vsett-10-apex-60v",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 25.6,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 3000,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 80,
+            "source_url": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_url_2": "https://electriktrotters.com/trottinette-electrique-adulte/4758-vsett-10-apex-trottinette-electrique-a-batterie-amovible.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 110,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 130,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "10 x 3 pouces (pneumatiques)",
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://fixmytrott.com/products/vsett-10-apex-60v",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Suspensions avant et arrière hydrauliques réglables",
+            "source_url": "https://promechbc.com/product/vsett-10-apex/",
+            "source_url_2": "https://electriktrotters.com/trottinette-electrique-adulte/4758-vsett-10-apex-trottinette-electrique-a-batterie-amovible.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://fixmytrott.com/products/vsett-10-apex-60v",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/vsett-10-apex/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-10-apex",
+            "source_url_2": "https://turbokids.ca/en/products/vsett-10-apex-trottinette-electrique-60-volts-25-6ah-2x1500-watts",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 10 Apex est une trottinette électrique double moteur (2 x 1500 W) avec batterie amovible 60 V 20,8 Ah ou 25,6 Ah, pneus de 10 x 3 pouces, freins à disque hydrauliques 4 pistons avant et arrière et suspensions réglables. Elle est bridée à 25 km/h sur route et peut atteindre 80 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html",
+            "https://fixmytrott.com/products/vsett-10-apex-60v",
+            "https://www.eleqtron.fr/products/trottinette-electrique-vsett-10-apex"
+          ],
+          "_og_images": [
+            "http://fixmytrott.com/cdn/shop/files/header_img_eda997df-1f40-4093-b83e-547e79dc68e2.jpg?v=1779203943",
+            "http://www.eleqtron.fr/cdn/shop/files/1708431970VSETT10APEX1000x1000-05.webp?v=1709584857"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://tecowheel.com/en/product/vsett-10-apex-2/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 145,
+            "source_url": "https://turbokids.ca/en/products/vsett-10-apex-trottinette-electrique-60-volts-25-6ah-2x1500-watts",
+            "source_url_2": "https://kissmywheels.ch/e-trott/vsett-apex-10-debridee/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x3.00",
+            "source_url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pneu-tubeless-pour-vsett-10-apex/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://e-watts.fr/produit/pneu-route-cst-10x3",
+            "source_url_2": "https://fastride.fr/fr/vsett-apex-10/4501-controleur-vsett-10-apex.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://vsett-shop.com/product/vsett-10-apex/",
+            "source_url_2": "https://tecowheel.com/en/product/vsett-10-apex-2/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 9 Apex",
+        "slug": "vsett-9-apex",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 1400,
+        "max_speed_private_kmh": 50,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "suspension": "Avant et arrière à ressorts (SpringR)",
+        "ip_rating": "IP54",
+        "tire_size": "8.5 x 3 pouces (pneumatique, chambre à air)",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/files/1_5.png?v=1709583934",
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2024/04/vsett-9-apex-48v-156ah-batterie-amovible-.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_section": "8.5x3",
+        "tire_family": "pneumatic",
+        "score_offroad": 23,
+        "description": "La Vsett 9 Apex est équipée de deux moteurs brushless de 700 W chacun et d'une batterie amovible 48 V 15,6 Ah (option 19,2 Ah). Elle roule sur des pneus pneumatiques 8,5 x 3 pouces avec suspensions avant et arrière à ressorts, et freine grâce à des freins à disque hydrauliques avec assistance électronique. Sa vitesse est bridée à 25 km/h sur voie publique, et peut atteindre environ 50 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 9 Apex - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 9 Apex : plaquettes, pneus 8.5x3, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 9 apex, pieces vsett 9 apex, disque frein vsett 9 apex, plaquettes vsett 9 apex, pneu vsett 9 apex"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://vsett-shop.com/product/vsett-9-apex/",
+          "type": "constructeur",
+          "url2": "https://www.ecraft-shop.de/en/produkt/vsett-9-apex-25kmh/sw10553.1"
+        },
+        "suspension": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://vsett-shop.com/product/vsett-9-apex/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/files/1_5.png?v=1709583934",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+          "type": "revendeur",
+          "url2": "https://www.green220.fr/trottinettes-electriques/1920-trottinette-electrique-vsett-apex-9-48-v-192-ah-3701522012843.html"
+        },
+        "tire_family": {
+          "url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://vsett-shop.com/product/vsett-9-apex/",
+            "source_url_2": "https://www.ecraft-shop.de/en/produkt/vsett-9-apex-25kmh/sw10553.1",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/vsett/vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1400,
+            "source_url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_url_2": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_url_2": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8.5 x 3 pouces (pneumatique, chambre à air)",
+            "source_url": "https://vsett-shop.com/product/vsett-9-apex/",
+            "source_url_2": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière à ressorts (SpringR)",
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "source_url_2": "https://vsett-shop.com/product/vsett-9-apex/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/vsett-9-apex-15-ah/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1",
+            "source_url_2": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Vsett 9 Apex est équipée de deux moteurs brushless de 700 W chacun et d'une batterie amovible 48 V 15,6 Ah (option 19,2 Ah). Elle roule sur des pneus pneumatiques 8,5 x 3 pouces avec suspensions avant et arrière à ressorts, et freine grâce à des freins à disque hydrauliques avec assistance électronique. Sa vitesse est bridée à 25 km/h sur voie publique, et peut atteindre environ 50 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html",
+            "https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/vsett/vsett-9-apex"
+          ],
+          "_og_images": [
+            "http://www.eleqtron.fr/cdn/shop/files/1_5.png?v=1709583934",
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2024/04/vsett-9-apex-48v-156ah-batterie-amovible-.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+            "source_url_2": "https://trott2rue.fr/collections/vsett/products/vsett-9-apex",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x3",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1920-trottinette-electrique-vsett-apex-9-48-v-192-ah-3701522012843.html",
+            "source_type": "revendeur"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-vsett-9-apex",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1920-trottinette-electrique-vsett-apex-9-48-v-192-ah-3701522012843.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Vsett 8 Apex",
+        "slug": "vsett-8-apex",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 1200,
+        "max_speed_private_kmh": 40,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 28,
+        "suspension": "Avant et arrière, ressort + polyuréthane",
+        "ip_rating": "IPX6",
+        "tire_size": "8.5\" pneus pleins (diamètre ext. 21,5 cm, largeur 6,1 cm)",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "http://www.eleqtron.fr/cdn/shop/files/1708421734VSETT8APEX-04.webp?v=1709584191"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "La Vsett 8 Apex est une trottinette électrique pliable équipée de deux moteurs de 600 W chacun et d'une batterie amovible 48 V 15,6 Ah (ou 19,2 Ah selon version). Elle roule sur des pneus pleins de 8,5 pouces avec suspensions avant et arrière et freins à disque AV/AR assistés par un frein électronique, pour un poids d'environ 28 kg. Elle est bridée à 25 km/h en usage routier et atteint 40 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Vsett 8 Apex - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Vsett 8 Apex : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "vsett 8 apex, pieces vsett 8 apex, disque frein vsett 8 apex, plaquettes vsett 8 apex, pneu vsett 8 apex"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html"
+        },
+        "suspension": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/e-scooter-tires/solid-tire-vsett-8-apex/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.eleqtron.fr/cdn/shop/files/1708421734VSETT8APEX-04.webp?v=1709584191",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 28,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1200,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8.5\" pneus pleins (diamètre ext. 21,5 cm, largeur 6,1 cm)",
+            "source_url": "https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/e-scooter-tires/solid-tire-vsett-8-apex/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière, ressort + polyuréthane",
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.glisseurbaine.com/4706-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_url_2": "https://www.glisseurbaine.com/4706-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/",
+            "source_url_2": "https://fixmytrott.com/products/vsett-8-apex-48v",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Vsett 8 Apex est une trottinette électrique pliable équipée de deux moteurs de 600 W chacun et d'une batterie amovible 48 V 15,6 Ah (ou 19,2 Ah selon version). Elle roule sur des pneus pleins de 8,5 pouces avec suspensions avant et arrière et freins à disque AV/AR assistés par un frein électronique, pour un poids d'environ 28 kg. Elle est bridée à 25 km/h en usage routier et atteint 40 km/h sur terrain privé une fois débridée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html",
+            "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex"
+          ],
+          "_og_images": [
+            "http://www.eleqtron.fr/cdn/shop/files/1708421734VSETT8APEX-04.webp?v=1709584191"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_url_2": "https://www.freemoov.com/shop/category/trottinette-electrique-vsett-113",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex",
+            "source_url_2": "https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 3
+    }
+  }
 }

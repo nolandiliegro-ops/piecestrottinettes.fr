@@ -1334,6 +1334,285 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Inokim Light 2 Max",
+        "slug": "inokim-light-2-max",
+        "voltage": 36,
+        "amperage": 12.8,
+        "power_watts": 350,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 14,
+        "suspension": "Aucune",
+        "ip_rating": "IPX4",
+        "tire_size": "8.5x2.0-5.5",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://alternative.bike/3312-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-5962/1135/66/inokiml-light-max.png"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "5.5",
+        "tire_section": "8.5x2",
+        "tire_family": "pneumatic",
+        "score_offroad": 18,
+        "description": "L'Inokim Light 2 Max est une trottinette électrique pliable en aluminium, animée par un moteur brushless arrière de 350 W et une batterie lithium-ion 36 V 12,8 Ah. Elle roule sur des pneus de 8,5 pouces (avant gonflable), est équipée de deux freins à tambour et d'un éclairage LED avant/arrière, avec une vitesse bridée à 25 km/h en usage public (jusqu'à 35 km/h hors réglementation) et jusqu'à 40 km d'autonomie annoncée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Inokim Light 2 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Inokim Light 2 Max : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "inokim light 2 max, pieces inokim light 2 max, disque frein inokim light 2 max, plaquettes inokim light 2 max, pneu inokim light 2 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://inokim.com/products/light-2",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://inokim.com/products/light-2",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur",
+          "url2": "https://www.smartwheel.ca/inokim-light-2-max-490wh-electric-foldable-scooter/"
+        },
+        "suspension": {
+          "url": "https://inokim.com/products/light-2",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.trottnscoot.com/produit/trottinette-electrique-inokim-light-2-max/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://alternative.bike/3312-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html"
+        },
+        "tire_section": {
+          "url": "https://www.amazon.ca/ZAITUO-Honeycomb-8-5-inch-Replacement-Electric/dp/B0CDW6P9ZW",
+          "type": "revendeur",
+          "url2": "https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/"
+        },
+        "tire_family": {
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 14,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.smartwheel.ca/inokim-light-2-max-490wh-electric-foldable-scooter/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-inokim-light-2-max.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 12.8,
+            "source_url": "https://inokim.com/products/light-2",
+            "source_url_2": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://inokim.com/products/light-2",
+            "source_url_2": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://leclaireur.fnac.com/article/cp62182-les-4-trottinettes-electriques-qui-font-la-reputation-dinokim/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://trottinetteroute.com/product/trottinette-electrique-inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://trottinetteroute.com/product/trottinette-electrique-inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8.5x2.0-5.5",
+            "source_url": "https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html",
+            "source_url_2": "https://rouelibrebandol.fr/produit/pneu-cst-8-5-x-2-0-5-5-pour-inokim-light-2-tubetype/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://inokim.com/products/light-2",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.trottnscoot.com/produit/trottinette-electrique-inokim-light-2-max/",
+            "source_url_2": "https://glegmobilites.com/produit/inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://trottinetteroute.com/product/trottinette-electrique-inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Inokim Light 2 Max est une trottinette électrique pliable en aluminium, animée par un moteur brushless arrière de 350 W et une batterie lithium-ion 36 V 12,8 Ah. Elle roule sur des pneus de 8,5 pouces (avant gonflable), est équipée de deux freins à tambour et d'un éclairage LED avant/arrière, avec une vitesse bridée à 25 km/h en usage public (jusqu'à 35 km/h hors réglementation) et jusqu'à 40 km d'autonomie annoncée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-inokim-light-2-max.html",
+            "https://trottinetteroute.com/product/trottinette-electrique-inokim-light-2-max/"
+          ],
+          "_og_images": [
+            "https://alternative.bike/3312-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-5962/1135/66/inokiml-light-max.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.trottnshop.com/produit/inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8.5x2",
+            "source_url": "https://www.amazon.ca/ZAITUO-Honeycomb-8-5-inch-Replacement-Electric/dp/B0CDW6P9ZW",
+            "source_url_2": "https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "5.5",
+            "source_url": "https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/",
+            "source_url_2": "https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.trottnshop.com/produit/inokim-light-2-max/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html",
+            "source_url_2": "https://www.amazon.ca/ZAITUO-Honeycomb-8-5-inch-Replacement-Electric/dp/B0CDW6P9ZW",
+            "source_type": "revendeur"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 1
+    }
+  }
 }

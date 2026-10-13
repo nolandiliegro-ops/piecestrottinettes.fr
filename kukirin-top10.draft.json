@@ -1672,6 +1672,853 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Kukirin G2",
+        "slug": "kukirin-g2",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 800,
+        "max_speed_private_kmh": 45,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 26,
+        "suspension": "Amortisseurs à ressort avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10x2.75-6.5 (tubeless)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kukirin G2 (version 2026) est une trottinette électrique pliable équipée d'un moteur moyeu arrière de 800 W (1 200 W en pointe) et d'une batterie 48 V 15,6 Ah annoncée pour 55 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces avec suspensions à ressort avant et arrière, freins à disque avant et arrière avec frein électronique, et atteint 45 km/h sur terrain privé (version bridée à 25 km/h pour la voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kukirin G2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kukirin G2 : disque de frein 140 mm, plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kukirin g2, pieces kukirin g2, disque frein kukirin g2, plaquettes kukirin g2, pneu kukirin g2"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.scooter-lab.com/scooterlab_en/trottinette-electrique-kukirin-g2",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+          "type": "revendeur",
+          "url2": "https://kukirin-france.com/products/kukirin-g2-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://www.rueducommerce.fr/p/m24073946176.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://fr.kukirin-escooter.com/products/kukirin-g2-rear-vacuum-tires",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://fr.kukirin-escooter.com/products/kukirin-g2-disc-brake-1-pc",
+          "type": "constructeur",
+          "url2": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        "tire_family": {
+          "url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/",
+          "reason": "page de roue complète (fournit la jante)"
+        },
+        {
+          "key": "disc_holes",
+          "value": 6,
+          "url": "https://youvelo.fr/132-disque-frein-trottinette-electrique"
+        },
+        {
+          "key": "tire_section",
+          "value": "10x2.75",
+          "url": "https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26,
+            "source_url": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "source_url_2": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_url_2": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_url_2": "https://www.scooter-lab.com/scooterlab_en/trottinette-electrique-kukirin-g2",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.scooter-lab.com/scooterlab_en/trottinette-electrique-kukirin-g2",
+            "source_url_2": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC353036969.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24073946176.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.75-6.5 (tubeless)",
+            "source_url": "https://fr.kukirin-escooter.com/products/kukirin-g2-rear-vacuum-tires",
+            "source_url_2": "https://monsieurtrottinettes.be/en/tubeless-tires/1086-tire-kukirin-g2.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Amortisseurs à ressort avant et arrière",
+            "source_url": "https://www.rueducommerce.fr/p/m24073946176.html",
+            "source_url_2": "https://www.kukirin-scooter.com/fr/products/kukirin-g2-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_url_2": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kukirin G2 (version 2026) est une trottinette électrique pliable équipée d'un moteur moyeu arrière de 800 W (1 200 W en pointe) et d'une batterie 48 V 15,6 Ah annoncée pour 55 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces avec suspensions à ressort avant et arrière, freins à disque avant et arrière avec frein électronique, et atteint 45 km/h sur terrain privé (version bridée à 25 km/h pour la voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html",
+            "https://www.darty.com/nav/achat/ref/MC350591019.html"
+          ],
+          "_og_images": [
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC350591019.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://fr.kukirin-escooter.com/products/kukirin-g2-disc-brake-1-pc",
+            "source_url_2": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://youvelo.fr/132-disque-frein-trottinette-electrique",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.75",
+            "source_url": "https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://kukirin-france.com/products/kukirin-g2-electric-scooter",
+            "source_url_2": "https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kukirin G2 Max",
+        "slug": "kukirin-g2-max",
+        "voltage": 48,
+        "amperage": 20.8,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 55,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 31.7,
+        "suspension": "Amortisseurs à ressort avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "255×80 mm (10 pouces, pneumatique tout-terrain)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "caliper_family": "togo_g2",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kukirin G2 Max est une trottinette électrique tout-terrain pliable équipée d'un moteur brushless de 1000 W (1200 W en pointe) et d'une batterie 48 V 20,8 Ah annoncée pour environ 70 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces (255×80 mm) avec suspensions à ressort avant et arrière, double frein à disque et frein électronique, pour une vitesse maximale de 55 km/h sur terrain privé, bridable à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kukirin G2 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kukirin G2 Max : disque de frein 140 mm 6 trous, plaquettes, pneus 80/65, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kukirin g2 max, pieces kukirin g2 max, disque frein kukirin g2 max, plaquettes kukirin g2 max, pneu kukirin g2 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+          "type": "revendeur",
+          "url2": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://kukirin-us.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://kukirin-us.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://trottinetteexpress.fr/products/plaquette-de-frein-pour-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-max-g2-pro/"
+        },
+        "disc_pcd": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K"
+        },
+        "disc_holes": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K"
+        },
+        "rim_diameter": {
+          "url": "https://trott-en-provence.fr/pneu-kukirin-g2-max/",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2"
+        },
+        "tire_section": {
+          "url": "https://trott-en-provence.fr/pneu-kukirin-g2-max/",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://planetenumerique.com/test-et-avis/tests-maison-et-plein-air/test-kukirin-g2-max-la-trottinette-electrique-des-champs-a-qui-on-refuse-la,5533.html",
+          "type": "site_test"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 31.7,
+            "source_url": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_url_2": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.pccomponentes.fr/kukirin-g2-max-trottinette-electrique-pliante-10-1000w-noir",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 20.8,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.pccomponentes.fr/kukirin-g2-max-trottinette-electrique-pliante-10-1000w-noir",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 55,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.pccomponentes.fr/kukirin-g2-max-trottinette-electrique-pliante-10-1000w-noir",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.pccomponentes.fr/kukirin-g2-max-trottinette-electrique-pliante-10-1000w-noir",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.watt-scoot.com/produit/trottinette-electrique-kukirin-g2-max-1000w/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "255×80 mm (10 pouces, pneumatique tout-terrain)",
+            "source_url": "https://kukirin-us.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.watt-scoot.com/produit/trottinette-electrique-kukirin-g2-max-1000w/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Amortisseurs à ressort avant et arrière",
+            "source_url": "https://kukirin-us.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.watt-scoot.com/produit/trottinette-electrique-kukirin-g2-max-1000w/",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_url_2": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee",
+            "source_url_2": "https://www.alibaba.com/product-detail/Kukirin-G2-Max-Long-Range-Electric_1601269099346.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kukirin G2 Max est une trottinette électrique tout-terrain pliable équipée d'un moteur brushless de 1000 W (1200 W en pointe) et d'une batterie 48 V 20,8 Ah annoncée pour environ 70 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces (255×80 mm) avec suspensions à ressort avant et arrière, double frein à disque et frein électronique, pour une vitesse maximale de 55 km/h sur terrain privé, bridable à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.pccomponentes.fr/kukirin-g2-max-trottinette-electrique-pliante-10-1000w-noir",
+            "https://www.watt-scoot.com/produit/trottinette-electrique-kukirin-g2-max-1000w/",
+            "https://www.darty.com/nav/achat/ref/MC347593920.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://trottinetteexpress.fr/products/plaquette-de-frein-pour-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+            "source_url_2": "https://fr.kukirin-escooter.com/collections/kukirin-g2-max-parts",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-max-g2-pro/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+            "source_url_2": "https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html",
+            "source_url_2": "https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "togo_g2",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": "https://trottinetteexpress.fr/products/plaquette-de-frein-pour-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://trott-en-provence.fr/pneu-kukirin-g2-max/",
+            "source_url_2": "https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://trott-en-provence.fr/pneu-kukirin-g2-max/",
+            "source_url_2": "https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://planetenumerique.com/test-et-avis/tests-maison-et-plein-air/test-kukirin-g2-max-la-trottinette-electrique-des-champs-a-qui-on-refuse-la,5533.html",
+            "source_url_2": "https://fr.kukirin-escooter.com/collections/parts",
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kukirin M4 Max",
+        "slug": "kukirin-m4-max",
+        "voltage": 48,
+        "amperage": 18.2,
+        "power_watts": 800,
+        "max_speed_private_kmh": 45,
+        "range_km": 64,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 24,
+        "suspension": "Avant et arrière (fourche avant double, amortisseurs arrière à ressorts)",
+        "ip_rating": "IP54",
+        "tire_size": "10 pouces tubeless (section non confirmée)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/9331187241018_h_f_l_0"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kukirin M4 Max est une trottinette électrique pliable équipée d'un moteur brushless de 800 W (pic 1000 W) et d'une batterie lithium 18650 de 48 V 18,2 Ah, annoncée jusqu'à 64 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension, freins à disque avant et arrière et frein électronique ; sa vitesse maximale est de 45 km/h, bridable à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kukirin M4 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kukirin M4 Max : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kukirin m4 max, pieces kukirin m4 max, disque frein kukirin m4 max, plaquettes kukirin m4 max, pneu kukirin m4 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://vepace.com/products/kukirin-m4-max-electric-scooter-new-model-2025",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+          "type": "revendeur",
+          "url2": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v"
+        },
+        "suspension": {
+          "url": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.boulanger.com/ref/9000952326",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/9000921770",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boulanger.com/ref/9000952326",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187241018_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://vepace.com/products/kukirin-m4-max-electric-scooter-new-model-2025",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v",
+            "source_url_2": "https://www.fnac.com/mp52658083/Trottinette-electrique-pliable-Kukirin-M4-Max-Moteur-800W-Batterie-48V-18-2Ah-Double-freins-a-disque-Pneus-10-Autonomie-65-km-Charge-120-kg-Vitesse-max-45-km-h/w-4",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 64,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 24,
+            "source_url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_url_2": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://www.boulanger.com/ref/9000952326",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.boulanger.com/ref/9000952326",
+            "source_url_2": "https://www.e.leclerc/fp/trottinette-electrique-kukirin-m4-max-moteur-800w-batterie-48v18-2ah-pneus-de-10-pouces-freins-disque-argent-9345750722057",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 pouces tubeless (section non confirmée)",
+            "source_url": "https://www.boulanger.com/ref/9000952326",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (fourche avant double, amortisseurs arrière à ressorts)",
+            "source_url": "https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v",
+            "source_url_2": "https://www.boulanger.com/ref/9000921770",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+            "source_url_2": "https://www.boulanger.com/ref/9000921770",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/9000921770",
+            "source_url_2": "https://www.fnac.com/mp52658083/Trottinette-electrique-pliable-Kukirin-M4-Max-Moteur-800W-Batterie-48V-18-2Ah-Double-freins-a-disque-Pneus-10-Autonomie-65-km-Charge-120-kg-Vitesse-max-45-km-h/w-4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://vepace.com/products/kukirin-m4-max-electric-scooter-new-model-2025",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-kukirin/f-1214801-aachq75332.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kukirin M4 Max est une trottinette électrique pliable équipée d'un moteur brushless de 800 W (pic 1000 W) et d'une batterie lithium 18650 de 48 V 18,2 Ah, annoncée jusqu'à 64 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension, freins à disque avant et arrière et frein électronique ; sa vitesse maximale est de 45 km/h, bridable à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921770",
+            "https://www.fnac.com/mp52658083/Trottinette-electrique-pliable-Kukirin-M4-Max-Moteur-800W-Batterie-48V-18-2Ah-Double-freins-a-disque-Pneus-10-Autonomie-65-km-Charge-120-kg-Vitesse-max-45-km-h/w-4",
+            "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/"
+          ],
+          "_og_images": [
+            "https://boulanger.scene7.com/is/image/Boulanger/9331187241018_h_f_l_0"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_url_2": "https://kukirin-france.com/products/kukirin-m4-max-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/",
+            "source_url_2": "https://www.ma-trottinette-electrique.com/test-m4-max-trottinette-electrique-pour-adulte-10-pouces-64-km-dautonomie-double-suspension-fourche-avant-pneus-sans-chambre-a-air-lumiere-led-doubles-freins-a-disque-pliable-pour-ville",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 3
+    }
+  }
 }

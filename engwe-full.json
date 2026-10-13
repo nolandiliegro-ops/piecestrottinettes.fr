@@ -27,6 +27,35 @@
       "meta_title": "Engwe Y400 - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Engwe Y400 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "engwe y400, pieces engwe y400, disque frein engwe y400, plaquettes engwe y400, pneu engwe y400"
+    },
+    {
+      "name": "Engwe Y10",
+      "slug": "engwe-y10",
+      "voltage": 36,
+      "amperage": 13,
+      "power_watts": 350,
+      "max_speed_private_kmh": 32,
+      "range_km": 65,
+      "max_load_kg": 120,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 17.2,
+      "suspension": "Aucune (pneus larges 10x3.0 pour l'amortissement)",
+      "ip_rating": "IPX4",
+      "tire_size": "10x3.0",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/3bb71f7b-b965-464e-a727-de3b04c6ca00/public",
+        "https://img.gkbcdn.com/p/2024-07-16/ENGWE-Y10-Electric-Scooter-350W-Motor-13Ah-Battery-10000555-0._w315_.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "L'Engwe Y10 est une trottinette électrique pliable équipée d'un moteur de 350 W (15 Nm de couple) et d'une batterie 36 V 13 Ah annoncée jusqu'à 65 km d'autonomie. Elle roule sur des pneus larges 10x3.0 pouces, avec un frein à tambour et un E-ABS, pour un poids de 17,2 kg ; la vitesse est bridée à 25 km/h (32 km/h débloquée sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Engwe Y10 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Engwe Y10 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "engwe y10, pieces engwe y10, disque frein engwe y10, plaquettes engwe y10, pneu engwe y10"
     }
   ]
 }

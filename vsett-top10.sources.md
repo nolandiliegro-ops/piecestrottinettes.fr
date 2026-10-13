@@ -1,10 +1,10 @@
 # Extraction Vsett — 2026-10-13
 
-**2 PRÊT / 4 modèles.** Modèle IA : claude-sonnet-5-5.
+**5 PRÊT / 7 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 670256 tokens entrée, 28499 sortie, 33 recherches web.
+Coût mesuré : 409807 tokens entrée, 18200 sortie, 23 recherches web.
 
 ## Vsett 8 — PRÊT
 
@@ -103,3 +103,73 @@ Coût mesuré : 670256 tokens entrée, 28499 sortie, 33 recherches web.
 | disc_holes | 6 | revendeur | https://www.out-fun.com/plaquettes-et-disques-de-freins/2938-disque-de-frein-160-mm-largeur-19-mm-entraxe-44-mm.html | https://fastride.fr/fr/100-accessoire-vsett |
 | caliper_family | sram_avid | revendeur | https://piecestrottinettes.fr |  |
 | tire_family | pneumatic | revendeur | https://ulys.green/products/vsett-11-pro-42ah |  |
+
+## Vsett 10 Apex — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 60 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| amperage | 25.6 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| power_watts | 3000 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| max_speed_private_kmh | 80 | revendeur | https://fastride.fr/en/vsett-apex/3844-trottinette-electrique-vsett-10-apex.html |  |
+| range_km | 110 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| max_load_kg | 130 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| weight_kg | 36 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ | https://fixmytrott.com/products/vsett-10-apex-60v |
+| suspension | Suspensions avant et arrière hydrauliques réglables | revendeur | https://promechbc.com/product/vsett-10-apex/ |  |
+| ip_rating | IP54 | revendeur | https://fixmytrott.com/products/vsett-10-apex-60v |  |
+| tire_size | 10 x 3 pouces (pneumatiques) | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| foldable | true | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-10-apex |  |
+| wheel_inches | 10 | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.eleqtron.fr/cdn/shop/files/1708431970VSETT10APEX1000x1000-05.webp?v=1709584857 |  |
+| brake_type | disc_hydraulic | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+| disc_diameter | 145 | revendeur | https://turbokids.ca/en/products/vsett-10-apex-trottinette-electrique-60-volts-25-6ah-2x1500-watts | https://kissmywheels.ch/e-trott/vsett-apex-10-debridee/ |
+| rim_diameter | 6 | revendeur | https://e-watts.fr/produit/pneu-route-cst-10x3 | https://fastride.fr/fr/vsett-apex-10/4501-controleur-vsett-10-apex.html |
+| tire_section | 10x3.00 | revendeur | https://e-watts.fr/produit/pneu-route-cst-10x3 | https://kissmywheels.ch/pieces-detachees/pneu-tubeless-pour-vsett-10-apex/ |
+| tire_family | pneumatic | distributeur | https://vsett-shop.com/product/vsett-10-apex/ |  |
+
+## Vsett 9 Apex — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter (texte relevé : « 8.5 x 3 pouces (pneumatique, chambre à air) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html |  |
+| amperage | 15.6 | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex |  |
+| power_watts | 1400 | revendeur | https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html |  |
+| max_speed_private_kmh | 50 | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex |  |
+| range_km | 40 | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex |  |
+| max_load_kg | 120 | revendeur | https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html |  |
+| weight_kg | 30 | constructeur | https://vsett-shop.com/product/vsett-9-apex/ | https://www.ecraft-shop.de/en/produkt/vsett-9-apex-25kmh/sw10553.1 |
+| suspension | Avant et arrière à ressorts (SpringR) | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-9-apex |  |
+| ip_rating | IP54 | revendeur | https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1 |  |
+| tire_size | 8.5 x 3 pouces (pneumatique, chambre à air) | constructeur | https://vsett-shop.com/product/vsett-9-apex/ |  |
+| foldable | true | revendeur | https://www.e-craft.at/en/produkt/vsett-9-apex/sw10480.1 |  |
+| wheel_inches | 8.5 | revendeur | https://fastride.fr/fr/vsett-apex/3673-trottinette-electrique-vsett-9-apex.html |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://www.eleqtron.fr/cdn/shop/files/1_5.png?v=1709583934 |  |
+| brake_type | disc_hydraulic | revendeur | https://www.evolt.eu/products/electric-scooter-vsett-9-apex |  |
+| tire_section | 8.5x3 | revendeur | https://www.evolt.eu/products/electric-scooter-vsett-9-apex | https://www.green220.fr/trottinettes-electriques/1920-trottinette-electrique-vsett-apex-9-48-v-192-ah-3701522012843.html |
+| tire_family | pneumatic | revendeur | https://www.evolt.eu/products/electric-scooter-vsett-9-apex |  |
+
+## Vsett 8 Apex — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8.5" pneus pleins (diamètre ext. 21,5 cm, largeur 6,1 cm) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| amperage | 15.6 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| power_watts | 1200 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| max_speed_private_kmh | 40 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| range_km | 55 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| max_load_kg | 120 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| year | 2025 | revendeur | https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/ |  |
+| weight_kg | 28 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html | https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html |
+| suspension | Avant et arrière, ressort + polyuréthane | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| ip_rating | IPX6 | revendeur | https://www.gyro-phare.com/1640-trottinette-electrique-vsett-8-apex-48-v-156-ah-dual-motor.html |  |
+| tire_size | 8.5" pneus pleins (diamètre ext. 21,5 cm, largeur 6,1 cm) | revendeur | https://kissmywheels.ch/en/spare-parts/spare-parts-for-e-scooter/e-scooter-tires/solid-tire-vsett-8-apex/ |  |
+| foldable | true | revendeur | https://www.ewheels.ch/fr-ch/trottinette-electrique/vsett-8-apex/ |  |
+| wheel_inches | 8.5 | revendeur | https://fastride.fr/en/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.eleqtron.fr/cdn/shop/files/1708421734VSETT8APEX-04.webp?v=1709584191 |  |
+| brake_type | disc_mechanical | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex |  |
+| tire_family | solid | revendeur | https://www.eleqtron.fr/products/trottinette-electrique-vsett-8-apex |  |

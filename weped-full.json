@@ -1,4 +1,58 @@
 {
   "brandName": "Weped",
-  "scooters": []
+  "scooters": [
+    {
+      "name": "Weped Fold 11",
+      "slug": "weped-fold-11",
+      "voltage": 60,
+      "amperage": 30,
+      "power_watts": 12000,
+      "max_speed_private_kmh": 90,
+      "range_km": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 39,
+      "suspension": "Ressort",
+      "tire_size": "11 pouces tubeless",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://pietechnologie.com/cdn/shop/products/fold11.jpg?v=1632923311",
+        "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+      ],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 45,
+      "description": "La Weped Fold 11 est une trottinette électrique sportive à double moteur Dual Hub de 12 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah (autonomie annoncée de 100 km) et pesant environ 39 kg. Elle est équipée de pneus tubeless de 11 pouces, de freins hydrauliques à disque + frein électrique et d'une suspension à ressort ; sa vitesse est bridée à 25 km/h (jusqu'à 90 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Weped Fold 11 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Weped Fold 11 : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "weped fold 11, pieces weped fold 11, disque frein weped fold 11, plaquettes weped fold 11, pneu weped fold 11"
+    },
+    {
+      "name": "Weped GTS",
+      "slug": "weped-gts",
+      "voltage": 60,
+      "amperage": 30,
+      "power_watts": 10000,
+      "max_speed_private_kmh": 95,
+      "range_km": 100,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 35,
+      "suspension": "Suspensions avant et arrière",
+      "tire_size": "11 pouces tubeless type kart (largeur 130 mm)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+        "https://www.gyroroue-shop.fr/wp-content/uploads/2020/04/WEPED-GT-50E.png"
+      ],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Weped GTS est une trottinette électrique sportive sud-coréenne à deux moteurs brushless (10 000 W annoncés), alimentée par une batterie Samsung 60 V 30 Ah (1800 Wh) pour environ 100 km d'autonomie en mode éco et jusqu'à 95 km/h sur terrain privé. Elle roule sur de larges pneus tubeless 11 pouces de type kart, avec freins à disque hydrauliques avant/arrière, suspensions avant et arrière, et pèse 35 kg pour une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Weped GTS - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Weped GTS : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "weped gts, pieces weped gts, disque frein weped gts, plaquettes weped gts, pneu weped gts"
+    }
+  ]
 }

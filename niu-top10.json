@@ -173,6 +173,64 @@
       "meta_title": "NIU KQi Air X - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées NIU KQi Air X : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "niu kqi air x, pieces niu kqi air x, disque frein niu kqi air x, plaquettes niu kqi air x, pneu niu kqi air x"
+    },
+    {
+      "name": "NIU KQi 200P",
+      "slug": "niu-kqi-200p",
+      "voltage": 48,
+      "amperage": 7.8,
+      "power_watts": 350,
+      "range_km": 54,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 19.7,
+      "suspension": "Fourche avant à double tube avec ressort (course 32 mm)",
+      "ip_rating": "IPX5",
+      "tire_size": "10 x 2.3",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://shopeu.niu.com/cdn/shop/files/KQi-200P_Basic-Render_Gray_Front-45.jpg?v=1763378878",
+        "http://shop.niu.com/cdn/shop/files/EU_K200P.jpg?v=1766985443"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "10",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La NIU KQi 200P est une trottinette électrique urbaine équipée d'un moteur de 350 W (700 W en pointe) dans la roue arrière, alimenté par une batterie 48 V 7,8 Ah (365 Wh) pour jusqu'à 54 km d'autonomie annoncée. Elle roule sur des pneus tubeless de 10 pouces (10 x 2,3) avec fourche avant suspendue, frein à tambour à l'avant et freinage régénératif, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "NIU KQi 200P - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées NIU KQi 200P : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "niu kqi 200p, pieces niu kqi 200p, disque frein niu kqi 200p, plaquettes niu kqi 200p, pneu niu kqi 200p"
+    },
+    {
+      "name": "NIU KQi1 Sport",
+      "slug": "niu-kqi1-sport",
+      "voltage": 48,
+      "power_watts": 250,
+      "max_speed_private_kmh": 25,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "year": 2023,
+      "max_speed_kmh": 25,
+      "weight_kg": 14.6,
+      "suspension": "Aucune",
+      "ip_rating": "IP54",
+      "tire_size": "9,0 x 2,3 pouces (229 x 60 mm), pneumatique avec chambre à air",
+      "foldable": false,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "http://shopeu.niu.com/cdn/shop/files/K1Progray-2.webp?v=1773625850",
+        "https://cache.tradeinn.com/web/web/inn.jpg",
+        "http://shopeu.niu.com/cdn/shop/files/K1Progray-5.webp?v=1773625863"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 25,
+      "description": "La NIU KQi1 Sport est une trottinette électrique d'entrée de gamme équipée d'un moteur arrière de 250 W (450 W en pointe) alimenté par une batterie de 243 Wh en 48 V, pour une autonomie annoncée de 25 km et une vitesse bridée à 25 km/h. Elle roule sur des pneus à chambre à air de 9,0 x 2,3 pouces, sans suspension, avec un frein à tambour à l'avant et un freinage régénératif à l'arrière, pour 14,6 kg avec batterie. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "NIU KQi1 Sport - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées NIU KQi1 Sport : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "niu kqi1 sport, pieces niu kqi1 sport, disque frein niu kqi1 sport, plaquettes niu kqi1 sport, pneu niu kqi1 sport"
     }
   ]
 }

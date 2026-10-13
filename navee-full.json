@@ -54,6 +54,88 @@
       "meta_title": "Navee ST3 Pro - Pièces détachées | PiècesTrottinettes.fr",
       "meta_description": "Pièces détachées Navee ST3 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
       "search_terms": "navee st3 pro, pieces navee st3 pro, disque frein navee st3 pro, plaquettes navee st3 pro, pneu navee st3 pro"
+    },
+    {
+      "name": "Navee ST5 Max",
+      "slug": "navee-st5-max",
+      "amperage": 12.75,
+      "power_watts": 700,
+      "max_speed_private_kmh": 40,
+      "range_km": 90,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 25.4,
+      "suspension": "Avant et arrière, bras d'amortissement (Damping Arm)",
+      "ip_rating": "IPX6",
+      "tire_size": "10\" tubeless auto-obturant",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/8885022070208_h_f_l_0"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Navee ST5 Max est équipée d'un moteur de 700 W (1650 W en pointe) alimenté par une batterie 46,8 V / 12,75 Ah (596,7 Wh) pour jusqu'à 90 km d'autonomie. Elle roule sur des pneus tubeless auto-obturants de 10 pouces, avec suspensions avant et arrière, freins à disque avant/arrière et EABS, et sa vitesse est bridée à 25 km/h en version France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee ST5 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee ST5 Max : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee st5 max, pieces navee st5 max, disque frein navee st5 max, plaquettes navee st5 max, pneu navee st5 max"
+    },
+    {
+      "name": "Navee K100 Pro",
+      "slug": "navee-k100-pro",
+      "amperage": 2.55,
+      "power_watts": 130,
+      "max_speed_private_kmh": 16,
+      "range_km": 11,
+      "max_load_kg": 50,
+      "max_speed_kmh": 25,
+      "weight_kg": 9,
+      "suspension": "Aucune (rigide)",
+      "ip_rating": "IPX4",
+      "tire_size": "7\" pneus creux intérieurs (increvables)",
+      "foldable": true,
+      "wheel_inches": 7,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/ac99e9d0-a893-48b0-ab3c-ef1656ba3500/public"
+      ],
+      "brake_type": "ebs_front_drum_rear",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Navee K100 Pro est une trottinette électrique pour enfants de 6 à 14 ans, équipée d'un moteur de 130 W (160 W max) et d'une batterie de 21,6 V 55 Wh offrant jusqu'à 11 km d'autonomie. Elle roule sur des pneus creux increvables de 7 pouces, freine par tambour arrière, affiche un indice IPX4 et se plie facilement (9 kg). Sa vitesse est limitée à 16 km/h (modes 6/12/16 km/h via l'application). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee K100 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee K100 Pro : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee k100 pro, pieces navee k100 pro, disque frein navee k100 pro, plaquettes navee k100 pro, pneu navee k100 pro"
+    },
+    {
+      "name": "Navee GT3 Max",
+      "slug": "navee-gt3-max",
+      "voltage": 48,
+      "amperage": 12.75,
+      "power_watts": 1000,
+      "max_speed_private_kmh": 32,
+      "range_km": 75,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 23,
+      "suspension": "Avant : double fourche ; arrière : double cylindre amortisseur",
+      "ip_rating": "IPX5",
+      "tire_size": "10\" tubeless",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Navee_GT3_max_pas_cher_4c93a688-8d46-4cef-bf06-2f31927b071c.png?v=1750634699",
+        "https://boulanger.scene7.com/is/image/Boulanger/6975293672309_h_f_l_0",
+        "https://points-ecomobilite.fr/wp-content/uploads/2025/11/Navee-GT3-Max.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Navee GT3 Max embarque un moteur arrière de 400 W nominal (1000 W en crête) alimenté par une batterie 48 V 12,75 Ah (596,7 Wh) pour une autonomie annoncée jusqu'à 75 km. Elle est équipée de pneus tubeless de 10 pouces, d'une double suspension (fourche avant et cylindre arrière) et d'un freinage par tambour avant et E-ABS arrière ; sa vitesse est bridée à 25 km/h sur voie publique (32 km/h débridée sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Navee GT3 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Navee GT3 Max : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "navee gt3 max, pieces navee gt3 max, disque frein navee gt3 max, plaquettes navee gt3 max, pneu navee gt3 max"
     }
   ]
 }

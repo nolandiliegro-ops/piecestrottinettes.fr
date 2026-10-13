@@ -484,6 +484,1021 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Weped Fold 11",
+        "slug": "weped-fold-11",
+        "voltage": 60,
+        "amperage": 30,
+        "power_watts": 12000,
+        "max_speed_private_kmh": 90,
+        "range_km": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 39,
+        "suspension": "Ressort",
+        "tire_size": "11 pouces tubeless",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/fold11.jpg?v=1632923311",
+          "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 45,
+        "description": "La Weped Fold 11 est une trottinette électrique sportive à double moteur Dual Hub de 12 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah (autonomie annoncée de 100 km) et pesant environ 39 kg. Elle est équipée de pneus tubeless de 11 pouces, de freins hydrauliques à disque + frein électrique et d'une suspension à ressort ; sa vitesse est bridée à 25 km/h (jusqu'à 90 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped Fold 11 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped Fold 11 : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped fold 11, pieces weped fold 11, disque frein weped fold 11, plaquettes weped fold 11, pneu weped fold 11"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur",
+          "url2": "https://forum.madcharge.com/d/26-weped-fold-11-specifications"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-1200w-30ah-60v",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/fold11.jpg?v=1632923311",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah-60v",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah-60v",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 39,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://forum.madcharge.com/d/26-weped-fold-11-specifications",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 12000,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 90,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11 pouces tubeless",
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Ressort",
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-1200w-30ah-60v",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped Fold 11 est une trottinette électrique sportive à double moteur Dual Hub de 12 000 W, alimentée par une batterie Samsung 21700 de 60 V 30 Ah (autonomie annoncée de 100 km) et pesant environ 39 kg. Elle est équipée de pneus tubeless de 11 pouces, de freins hydrauliques à disque + frein électrique et d'une suspension à ressort ; sa vitesse est bridée à 25 km/h (jusqu'à 90 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+            "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "https://pietechnologie.com/products/weped-fold-11-1200w-30ah-60v"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/fold11.jpg?v=1632923311",
+            "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah-60v",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah-60v",
+            "source_url_2": "https://www.easymove.fr/accueil/287-currus-nf-10-black-label.html",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Weped GTS",
+        "slug": "weped-gts",
+        "voltage": 60,
+        "amperage": 30,
+        "power_watts": 10000,
+        "max_speed_private_kmh": 95,
+        "range_km": 100,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 35,
+        "suspension": "Suspensions avant et arrière",
+        "tire_size": "11 pouces tubeless type kart (largeur 130 mm)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2020/04/WEPED-GT-50E.png"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Weped GTS est une trottinette électrique sportive sud-coréenne à deux moteurs brushless (10 000 W annoncés), alimentée par une batterie Samsung 60 V 30 Ah (1800 Wh) pour environ 100 km d'autonomie en mode éco et jusqu'à 95 km/h sur terrain privé. Elle roule sur de larges pneus tubeless 11 pouces de type kart, avec freins à disque hydrauliques avant/arrière, suspensions avant et arrière, et pèse 35 kg pour une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped GTS - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped GTS : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped gts, pieces weped gts, disque frein weped gts, plaquettes weped gts, pneu weped gts"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur",
+          "url2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 10000,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 95,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 100,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11 pouces tubeless type kart (largeur 130 mm)",
+            "source_url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspensions avant et arrière",
+            "source_url": "https://pietechnologie.com/fr-eu/collections/trottinette-electrique-weped",
+            "source_url_2": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped GTS est une trottinette électrique sportive sud-coréenne à deux moteurs brushless (10 000 W annoncés), alimentée par une batterie Samsung 60 V 30 Ah (1800 Wh) pour environ 100 km d'autonomie en mode éco et jusqu'à 95 km/h sur terrain privé. Elle roule sur de larges pneus tubeless 11 pouces de type kart, avec freins à disque hydrauliques avant/arrière, suspensions avant et arrière, et pèse 35 kg pour une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "https://www.glisseurbaine.com/weped/655-trottinette-electrique-weped-gts-frein-magura.html"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2020/04/WEPED-GT-50E.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.glisseurbaine.com/weped/655-trottinette-electrique-weped-gts-frein-magura-3700707305251.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Weped FS",
+        "slug": "weped-fs",
+        "voltage": 72,
+        "amperage": 50,
+        "power_watts": 30000,
+        "max_speed_private_kmh": 130,
+        "range_km": 130,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "suspension": "Suspension arrière à ressort",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedFS-PIETECHNOLOGIE-min.png?v=1665502409",
+          "http://pie-technologie.myshopify.com/cdn/shop/products/TrottinetteelectriqueWepedFS-PIETECHNOLOGIE-min.png?v=1665502409"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "tire_family": "pneumatic",
+        "score_offroad": 45,
+        "description": "La Weped FS est une trottinette électrique sportive équipée de deux moteurs brushless dans les roues, annoncés à 30 000 W, et d'une batterie Samsung lithium-ion 72 V 50 Ah (3600 Wh) pour une autonomie annoncée de 130 km. Elle roule sur des pneus 11 pouces de type gokart racing, dispose de freins à disque hydrauliques avant et arrière et d'une suspension arrière à ressort ; la vitesse annoncée est de 130 km/h sur terrain privé, la vitesse étant bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped FS - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped FS : disque de frein 160 mm, plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped fs, pieces weped fs, disque frein weped fs, plaquettes weped fs, pneu weped fs"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedFS-PIETECHNOLOGIE-min.png?v=1665502409",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://pietechnologie.com/products/weped-fs",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://scooter.guide/weped-fs-review/",
+          "type": "site_test",
+          "url2": "https://www.videocorner.tv/trottinette-weped-fs-essai-avis/"
+        },
+        "tire_family": {
+          "url": "https://www.videocorner.tv/trottinette-weped-fs-essai-avis/",
+          "type": "site_test"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 54,
+          "url": "https://pietechnologie.com/products/weped-fs"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 54,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://savemybattery.fr/batteries-pour-weped-fs/276-batterie-72v-50ah-weped-fs-sst-ssr.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 50,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://www.wee-bot.com/products/batterie-72v-pour-trottinette-electrique-fs-weped-batterie-uniquement",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 30000,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://forum.madcharge.com/d/28-weped-fs-specifications",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 130,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 130,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://forum.madcharge.com/d/28-weped-fs-specifications",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://forum.madcharge.com/d/28-weped-fs-specifications",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension arrière à ressort",
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped FS est une trottinette électrique sportive équipée de deux moteurs brushless dans les roues, annoncés à 30 000 W, et d'une batterie Samsung lithium-ion 72 V 50 Ah (3600 Wh) pour une autonomie annoncée de 130 km. Elle roule sur des pneus 11 pouces de type gokart racing, dispose de freins à disque hydrauliques avant et arrière et d'une suspension arrière à ressort ; la vitesse annoncée est de 130 km/h sur terrain privé, la vitesse étant bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/weped-fs",
+            "https://pie-technologie.myshopify.com/en/products/weped-fs"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedFS-PIETECHNOLOGIE-min.png?v=1665502409",
+            "http://pie-technologie.myshopify.com/cdn/shop/products/TrottinetteelectriqueWepedFS-PIETECHNOLOGIE-min.png?v=1665502409"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://pietechnologie.com/products/weped-fs",
+            "source_url_2": "https://scooter.guide/weped-fs-review/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://scooter.guide/weped-fs-review/",
+            "source_url_2": "https://www.videocorner.tv/trottinette-weped-fs-essai-avis/",
+            "source_type": "site_test"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.videocorner.tv/trottinette-weped-fs-essai-avis/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Weped Fold Eco",
+        "slug": "weped-fold-eco",
+        "voltage": 60,
+        "amperage": 20,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 60,
+        "range_km": 70,
+        "max_speed_kmh": 25,
+        "suspension": "Ressort",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/79v_9d6ba931-3e8b-4341-949c-ee9d96651d64.jpg?v=1669347187"
+        ],
+        "brake_type": "drum",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Weped Fold Eco est une trottinette électrique pliable à double moteur Dual Hub de 2000 W, alimentée par une batterie Samsung 21700 de 60 V 20 Ah pour une autonomie annoncée de 70 km. Elle est équipée de pneus de 10 pouces à chambre à air, de freins à tambour + frein électrique et d'une suspension à ressort, pour environ 34 kg. Sa vitesse est bridée à 25 km/h (60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Weped Fold Eco - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Weped Fold Eco : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "weped fold eco, pieces weped fold eco, disque frein weped fold eco, plaquettes weped fold eco, pneu weped fold eco"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/79v_9d6ba931-3e8b-4341-949c-ee9d96651d64.jpg?v=1669347187",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://pietechnologie.com/products/weped-fold-eco",
+          "type": "distributeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 34,
+          "url": "https://pietechnologie.com/products/weped-fold-eco"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 34,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 20,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Ressort",
+            "source_url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://pietechnologie.com/collections/trottinette-electrique-weped",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Weped Fold Eco est une trottinette électrique pliable à double moteur Dual Hub de 2000 W, alimentée par une batterie Samsung 21700 de 60 V 20 Ah pour une autonomie annoncée de 70 km. Elle est équipée de pneus de 10 pouces à chambre à air, de freins à tambour + frein électrique et d'une suspension à ressort, pour environ 34 kg. Sa vitesse est bridée à 25 km/h (60 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://pietechnologie.com/products/weped-fold-eco",
+            "https://pietechnologie.com/fr-eu/products/weped-fold-eco"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/79v_9d6ba931-3e8b-4341-949c-ee9d96651d64.jpg?v=1669347187"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_type": "distributeur",
+            "source_url_2": null
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://pietechnologie.com/products/weped-fold-eco",
+            "source_type": "distributeur",
+            "source_url_2": null
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 4
+    }
+  }
 }

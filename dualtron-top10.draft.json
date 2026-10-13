@@ -1661,6 +1661,1095 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Dualtron Victor LTD",
+        "slug": "dualtron-victor-ltd",
+        "voltage": 60,
+        "amperage": 37.1,
+        "power_watts": 2600,
+        "max_speed_private_kmh": 80,
+        "range_km": 115,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 39.1,
+        "suspension": "Cartouches en caoutchouc interchangeables (avant et arrière)",
+        "ip_rating": "IPX5",
+        "tire_size": "10x3.0-6.5 tubeless",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BMMDUALTRONVICTORLTD60V37A2026_5D_20TROTTINETTE_20ELECTRIQUE_20DUALTRON_20VICTOR_20LTD_2060V_2037_2C1AH_202026-scaled.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "caliper_family": "nutt_vented",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Dualtron Victor LTD est équipée de deux moteurs de 1 300 W nominaux (jusqu'à 2 000 W chacun en pointe) alimentés par une batterie 60 V 37,1 Ah, pour une vitesse jusqu'à 80 km/h sur terrain privé et une vitesse bridée à 25 km/h sur voie publique. Elle est chaussée de pneus tubeless 10x3.0-6.5, dispose de freins hydrauliques NUTT, de suspensions à cartouches interchangeables et pèse environ 39,1 kg pour une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Dualtron Victor LTD - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Dualtron Victor LTD : disque de frein 140 mm 6 trous, plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "dualtron victor ltd, pieces dualtron victor ltd, disque frein dualtron victor ltd, plaquettes dualtron victor ltd, pneu dualtron victor ltd"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://freshlycharged.com/reviews/280/dualtron-victor-limited",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur",
+          "url2": "https://dualtron-shop.com/product/dualtron-victor-limited/"
+        },
+        "suspension": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://scooterrank.com/scooters/dualtron-victor-limited",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BMMDUALTRONVICTORLTD60V37A2026_5D_20TROTTINETTE_20ELECTRIQUE_20DUALTRON_20VICTOR_20LTD_2060V_2037_2C1AH_202026-scaled.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://dualtron.uk/fr/products/dualtron-victor-brake-disc",
+          "type": "distributeur",
+          "url2": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/"
+        },
+        "disc_pcd": {
+          "url": "https://fastride.fr/en/pieces-pour-dualtron/2594-disque-origine-dualtron-140mm.html",
+          "type": "revendeur",
+          "url2": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu"
+        },
+        "disc_holes": {
+          "url": "https://www.turnshop.fr/produit/disque-de-frein-140-mm-dualtron-victor-vsett-10-kukirin-g3-pro/",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/vtt/841-disque-frein-140-mm-6-trous-entraxe-48mm.html"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/fr/dualtron-victor-luxury-luxury-limited/4460-pneu-tubeless-10x3-65-ou-8050-65-dualtron-victor-limited-2025.html",
+          "type": "revendeur",
+          "url2": "https://turnshop.fr/products/pneu-80-50-6-5-tubeless-dualtron-victor-2025-10x3-6-5"
+        },
+        "caliper_family": {
+          "url": "https://fastride.fr/en/pieces-pour-dualtron/4731-nouvelles-plaquettes-de-frein-ventilees-etrier-nutt-2-pistons-origine-dualtron.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 39.1,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://freshlycharged.com/reviews/280/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 37.1,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 2600,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://freshlycharged.com/reviews/280/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 80,
+            "source_url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+            "source_url_2": "https://scooterrank.com/scooters/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 115,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+            "source_url_2": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://freshlycharged.com/reviews/280/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10x3.0-6.5 tubeless",
+            "source_url": "https://dualtron-shop.com/product/dualtron-victor-limited/",
+            "source_url_2": "https://www.rydology.com/products/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Cartouches en caoutchouc interchangeables (avant et arrière)",
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": "https://www.rydology.com/products/dualtron-victor-limited",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://scooterrank.com/scooters/dualtron-victor-limited",
+            "source_url_2": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://freshlycharged.com/reviews/280/dualtron-victor-limited",
+            "source_url_2": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Dualtron Victor LTD est équipée de deux moteurs de 1 300 W nominaux (jusqu'à 2 000 W chacun en pointe) alimentés par une batterie 60 V 37,1 Ah, pour une vitesse jusqu'à 80 km/h sur terrain privé et une vitesse bridée à 25 km/h sur voie publique. Elle est chaussée de pneus tubeless 10x3.0-6.5, dispose de freins hydrauliques NUTT, de suspensions à cartouches interchangeables et pèse environ 39,1 kg pour une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.veloshop-obernai.com/products/dualtron-victor-ltd-60v-37-1ah-2026",
+            "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "https://dualtron-shop.com/product/dualtron-victor-limited/"
+          ],
+          "_og_images": [
+            "https://www.veloshop-obernai.com/wp-content/uploads/2026/08/5BMMDUALTRONVICTORLTD60V37A2026_5D_20TROTTINETTE_20ELECTRIQUE_20DUALTRON_20VICTOR_20LTD_2060V_2037_2C1AH_202026-scaled.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://dualtron.uk/fr/products/dualtron-victor-brake-disc",
+            "source_url_2": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/en/pieces-pour-dualtron/2594-disque-origine-dualtron-140mm.html",
+            "source_url_2": "https://www.trotnation.com/products/disque-frein-140mm-6-trous-entraxe-44mm-bleu",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.turnshop.fr/produit/disque-de-frein-140-mm-dualtron-victor-vsett-10-kukirin-g3-pro/",
+            "source_url_2": "https://youvelo.fr/vtt/841-disque-frein-140-mm-6-trous-entraxe-48mm.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "nutt_vented",
+            "source_url": "https://fastride.fr/en/pieces-pour-dualtron/4731-nouvelles-plaquettes-de-frein-ventilees-etrier-nutt-2-pistons-origine-dualtron.html",
+            "source_url_2": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fastride.fr/fr/dualtron-victor-luxury-luxury-limited/4460-pneu-tubeless-10x3-65-ou-8050-65-dualtron-victor-limited-2025.html",
+            "source_url_2": "https://turnshop.fr/products/pneu-80-50-6-5-tubeless-dualtron-victor-2025-10x3-6-5",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://dualtron-store.com/index.php/produit/dualtron-victor-limited/",
+            "source_url_2": "https://fastride.fr/fr/dualtron-victor-luxury-luxury-limited/4460-pneu-tubeless-10x3-65-ou-8050-65-dualtron-victor-limited-2025.html",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Dualtron Aminia",
+        "slug": "dualtron-aminia",
+        "voltage": 52,
+        "amperage": 21,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 65,
+        "range_km": 65,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 30.5,
+        "suspension": "Ressorts avant + arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "70/50-6.1 (9x2) tubeless",
+        "foldable": true,
+        "wheel_inches": 9,
+        "source_image_urls": [
+          "https://latelierdebecky.com/wp-content/uploads/2025/04/amina-double-moteur.jpg",
+          "http://cadjeemobility.re/cdn/shop/files/MMDUALTRONAMINIA5221_ELECTRICSCOOTERDUALTRONAMINIADUALMOTOR52V21AhIPX5.jpg?v=1761721625"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "6.1",
+        "tire_family": "pneumatic",
+        "score_offroad": 30,
+        "description": "La Dualtron Aminia (version Long Body double moteur 52V 21Ah) embarque deux moteurs de 1000 W nominaux, une batterie 52V 21Ah pour jusqu'à 65 km d'autonomie et des pneus tubeless de 9 pouces avec suspensions à ressorts avant et arrière. Le freinage est assuré par des freins à tambour avant et arrière avec frein électrique, et la trottinette est certifiée IPX5. Elle est vendue bridée à 25 km/h pour la voie publique et débridable jusqu'à 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Dualtron Aminia - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Dualtron Aminia : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "dualtron aminia, pieces dualtron aminia, disque frein dualtron aminia, plaquettes dualtron aminia, pneu dualtron aminia"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur",
+          "url2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/"
+        },
+        "suspension": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://dualtronusa.com/products/dualtron-aminia-long-body-electric-scooter-52v21ah-samsung",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/dualtron/aminia-double-moteur",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://latelierdebecky.com/wp-content/uploads/2025/04/amina-double-moteur.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/dualtron/4072-trottinette-electrique-dualtron-aminia-.html",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+          "type": "revendeur",
+          "url2": "https://www.out-fun.com/pneus/4635-pneu-tubeless-85x3-70-50-61-dualtron-aminia-gel-anti-crevaison-3760351019645.html"
+        },
+        "tire_family": {
+          "url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 21,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://biketrottstore.com/product/electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 65,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://biketrottstore.com/product/electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 30.5,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://biketrottstore.com/product/electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://manuals.plus/m/8808ebf35d2040046f35f11fcc0398ace937a517ab42c595e67897272894cca3",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "70/50-6.1 (9x2) tubeless",
+            "source_url": "https://dualtronusa.com/products/dualtron-aminia-long-body-electric-scooter-52v21ah-samsung",
+            "source_url_2": "https://boostedusa.com/products/dualtron-aminia-long-body-52v21ah-samsung-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Ressorts avant + arrière",
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_url_2": "https://dualtronusa.com/products/dualtron-aminia-long-body-electric-scooter-52v21ah-samsung",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/dualtron/aminia-double-moteur",
+            "source_url_2": "https://www.hifi.lu/fr/p/43001196-minimotors-trottinette-electrique-dualtron-amina-longbody-21ah",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Dualtron Aminia (version Long Body double moteur 52V 21Ah) embarque deux moteurs de 1000 W nominaux, une batterie 52V 21Ah pour jusqu'à 65 km d'autonomie et des pneus tubeless de 9 pouces avec suspensions à ressorts avant et arrière. Le freinage est assuré par des freins à tambour avant et arrière avec frein électrique, et la trottinette est certifiée IPX5. Elle est vendue bridée à 25 km/h pour la voie publique et débridable jusqu'à 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.minimotors.fr/en/shop/mmdualtronaminia5221-electric-scooter-dualtron-aminia-dual-motor-52v-21ah-ipx5-10584",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://latelierdebecky.com/produit/trottinette-electrique-dualtron-aminia-double-moteur-52v-21ah-ipx5/",
+            "https://rooelec.com/trottinette-electrique/trottinettes-electriques/trottinettes-electriques-dualtron/trottinettes-electriques-dualtron-dualtron-aminia-double-moteur-52v-21ah-ipx5-dualtron",
+            "https://cadjeemobility.re/products/trottinette-electrique-dualtron-aminia-special-double-moteur-21ah"
+          ],
+          "_og_images": [
+            "https://latelierdebecky.com/wp-content/uploads/2025/04/amina-double-moteur.jpg",
+            "http://cadjeemobility.re/cdn/shop/files/MMDUALTRONAMINIA5221_ELECTRICSCOOTERDUALTRONAMINIADUALMOTOR52V21AhIPX5.jpg?v=1761721625"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://fastride.fr/fr/dualtron/4072-trottinette-electrique-dualtron-aminia-.html",
+            "source_url_2": "https://dualtron-store.com/index.php/produit/dualtron-mini/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.1",
+            "source_url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+            "source_url_2": "https://www.out-fun.com/pneus/4635-pneu-tubeless-85x3-70-50-61-dualtron-aminia-gel-anti-crevaison-3760351019645.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+            "source_url_2": "https://www.out-fun.com/pneus/4635-pneu-tubeless-85x3-70-50-61-dualtron-aminia-gel-anti-crevaison-3760351019645.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Dualtron Dolphin",
+        "slug": "dualtron-dolphin",
+        "voltage": 36,
+        "amperage": 15,
+        "power_watts": 450,
+        "max_speed_private_kmh": 35,
+        "range_km": 47,
+        "max_load_kg": 100,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 21,
+        "suspension": "Avant et arrière à ressorts",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": 9,
+        "source_image_urls": [
+          "https://funtrott.fr/5970-large_default/dualtron-dolphin-new-eye-1-ipx5.jpg",
+          "http://fixmytrott.com/cdn/shop/files/fixmytrott-dualtron-dolphin-1.jpg?v=1751375169"
+        ],
+        "brake_type": "drum",
+        "rim_diameter": "6.1",
+        "score_offroad": 30,
+        "description": "La Dualtron Dolphin est une trottinette électrique pliable et légère, équipée d'un moteur de 450 W et d'une batterie 36 V disponible en 7,8, 12 ou 15 Ah. Elle roule sur des pneus de 9 pouces (avant tubeless, arrière plein), avec suspensions à ressorts et freins à tambour avant et arrière complétés par un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 35 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Dualtron Dolphin - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Dualtron Dolphin : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "dualtron dolphin, pieces dualtron dolphin, disque frein dualtron dolphin, plaquettes dualtron dolphin, pneu dualtron dolphin"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "year": {
+          "url": "https://www.gyro-phare.com/1557-trottinette-electrique-dualtron-dolphin-2024-eye1-ipx5.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+          "type": "revendeur",
+          "url2": "https://voltee.co/products/dualtron-dolphin"
+        },
+        "suspension": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "https://funtrott.fr/5970-large_default/dualtron-dolphin-new-eye-1-ipx5.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/dualtron/dualtron-dolphin",
+          "type": "revendeur"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+          "type": "revendeur",
+          "url2": "https://moovrider.com/products/pneu-tubeless-dualtron-mini-pop-togo-aminia-dolphin-70-50-6-1"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 21,
+            "source_url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_url_2": "https://voltee.co/products/dualtron-dolphin",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 15,
+            "source_url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_url_2": "https://fixmytrott.com/products/trottinette-electrique-dualtron-dolphin-modele-compact-et-ultra-leger",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 450,
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-dolphin",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 47,
+            "source_url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_url_2": "https://voltee.co/products/dualtron-dolphin",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 9,
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière à ressorts",
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://fixmytrott.com/products/trottinette-electrique-dualtron-dolphin-modele-compact-et-ultra-leger",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_url_2": "https://mecatronice.com/produit/dualtron-dolphin/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.gyro-phare.com/1557-trottinette-electrique-dualtron-dolphin-2024-eye1-ipx5.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Dualtron Dolphin est une trottinette électrique pliable et légère, équipée d'un moteur de 450 W et d'une batterie 36 V disponible en 7,8, 12 ou 15 Ah. Elle roule sur des pneus de 9 pouces (avant tubeless, arrière plein), avec suspensions à ressorts et freins à tambour avant et arrière complétés par un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 35 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "source_url_2": "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.minimotors.fr/shop/mmdualtrondolphin36v7a-trottinette-electrique-dualtron-dolphin-36v-78a-9313",
+            "https://funtrott.fr/trottinette-electrique-minimotors-dualtron/2137-dualtron-dolphin-new-eye-1-ipx5.html",
+            "https://fixmytrott.com/products/trottinette-electrique-dualtron-dolphin-modele-compact-et-ultra-leger"
+          ],
+          "_og_images": [
+            "https://funtrott.fr/5970-large_default/dualtron-dolphin-new-eye-1-ipx5.jpg",
+            "http://fixmytrott.com/cdn/shop/files/fixmytrott-dualtron-dolphin-1.jpg?v=1751375169"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum",
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/dualtron/dualtron-dolphin",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-dualtron-dolphin",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.1",
+            "source_url": "https://fastride.fr/fr/dualtron/4310-pneu-tubeless-7050-61-85x3-avec-gel-anti-crevaison-pour-dualtron-aminia-dolphin.html",
+            "source_url_2": "https://moovrider.com/products/pneu-tubeless-dualtron-mini-pop-togo-aminia-dolphin-70-50-6-1",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Dualtron Storm LTD",
+        "slug": "dualtron-storm-ltd",
+        "voltage": 84,
+        "amperage": 45,
+        "power_watts": 11500,
+        "max_speed_private_kmh": 120,
+        "range_km": 180,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 55.6,
+        "suspension": "Avant et arrière : amortisseurs à cartouches caoutchouc remplaçables (5 types de cartouches), réglables en 3 niveaux",
+        "tire_size": "90/65-6.5 (11\" tubeless)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Dualtron Storm LTD est une trottinette électrique à double moteur développant jusqu'à 11 500 W, alimentée par une batterie LG 21700 84 V 45 Ah. Elle repose sur des pneus tubeless anti-crevaison 11 pouces, des freins hydrauliques NUTT à disques de 160 mm et une suspension à cartouches avant/arrière ; elle est livrée bridée à 25 km/h, pour une vitesse pouvant atteindre 120 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Dualtron Storm LTD - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Dualtron Storm LTD : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 84V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "dualtron storm ltd, pieces dualtron storm ltd, disque frein dualtron storm ltd, plaquettes dualtron storm ltd, pneu dualtron storm ltd"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://ulys.green/products/dualtron-storm-limited-45ah",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "year": {
+          "url": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur",
+          "url2": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html"
+        },
+        "suspension": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "tire_size": {
+          "url": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://ulys.green/products/dualtron-storm-limited-45ah",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+          "type": "distributeur"
+        },
+        "brake_type": {
+          "url": "https://dualtron-store.com/index.php/produit/dualtron-storm-ltd-limited-version/",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-thunder-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://www.trottnshop.com/produit/dualtron-storm-ltd/"
+        },
+        "disc_holes": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-thunder-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://dualtron.uk/products/dualtron-brake-disc-160mm"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/produit/pneu-increvable-dualtron-storm-limited/",
+          "type": "revendeur",
+          "url2": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-increvable-dualtron-storm-limited/",
+          "type": "revendeur",
+          "url2": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html"
+        },
+        "tire_family": {
+          "url": "https://dualtron-store.com/index.php/produit/dualtron-storm-ltd-limited-version/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 55.6,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 84,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 45,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 11500,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 120,
+            "source_url": "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "source_url_2": "https://www.zetrottchambourcy.fr/produit/dualtron-storm-ltd/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 180,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (11\" tubeless)",
+            "source_url": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html",
+            "source_url_2": "https://fastride.fr/en/104-dualtron-storm",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière : amortisseurs à cartouches caoutchouc remplaçables (5 types de cartouches), réglables en 3 niveaux",
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_url_2": "https://move-scooters.com/products/dualtron-new-storm-ltd-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "source_url_2": "https://voltride.com/dualtron-storm-ltd/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "source_url_2": "https://dualtron-france.com/trottinettes-electriques-dualtron/1549-trottinette-electrique-dualtron-storm-limited-2024.html",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Dualtron Storm LTD est une trottinette électrique à double moteur développant jusqu'à 11 500 W, alimentée par une batterie LG 21700 84 V 45 Ah. Elle repose sur des pneus tubeless anti-crevaison 11 pouces, des freins hydrauliques NUTT à disques de 160 mm et une suspension à cartouches avant/arrière ; elle est livrée bridée à 25 km/h, pour une vitesse pouvant atteindre 120 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://dualtronnordic.com/en/product/dualtron-storm-limited/",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://ulys.green/products/dualtron-storm-limited-45ah",
+            "https://www.green220.fr/trottinettes-electriques/1615-trottinette-electrique-dualtron-storm-limited-84v-45ah-2024-3701522010474.html",
+            "https://fastride.fr/fr/dualtron/1549-trottinette-electrique-dualtron-storm-limited-2026.html"
+          ],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://dualtron-store.com/index.php/produit/dualtron-storm-ltd-limited-version/",
+            "source_url_2": "https://www.trottnshop.com/produit/dualtron-storm-ltd/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-thunder-diametre-160mm",
+            "source_url_2": "https://www.trottnshop.com/produit/dualtron-storm-ltd/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-thunder-diametre-160mm",
+            "source_url_2": "https://dualtron.uk/products/dualtron-brake-disc-160mm",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://e-watts.fr/produit/pneu-increvable-dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/produit/pneu-increvable-dualtron-storm-limited/",
+            "source_url_2": "https://www.green220.com/fr/accueil/1791-pneu-tubeless-11-9065-65-dualtron-storm-limited.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://dualtron-store.com/index.php/produit/dualtron-storm-ltd-limited-version/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-storm-ltd",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 4
+    }
+  }
 }

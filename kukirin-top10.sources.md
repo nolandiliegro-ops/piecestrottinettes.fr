@@ -1,10 +1,10 @@
 # Extraction Kukirin — 2026-10-13
 
-**5 PRÊT / 6 modèles.** Modèle IA : claude-sonnet-5-5.
+**6 PRÊT / 9 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **4 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 804862 tokens entrée, 36180 sortie, 42 recherches web.
+Coût mesuré : 477790 tokens entrée, 20718 sortie, 26 recherches web.
 
 ## Kukirin G2 Pro — MANQUE
 - Manque : source_image_urls
@@ -152,3 +152,78 @@ Coût mesuré : 804862 tokens entrée, 36180 sortie, 42 recherches web.
 | rim_diameter | 6.5 | revendeur | https://www.amazon.com/10x2-75-6-5-Tubeless-Off-road-Kukirin-Electric/dp/B0H4LT4FPS | https://www.trottpneu.fr/products/pneu-10-2-75-6-5-city-road-tubeless |
 | tire_section | 10x2.75 | revendeur | https://www.amazon.com/10x2-75-6-5-Tubeless-Off-road-Kukirin-Electric/dp/B0H4LT4FPS | https://www.trottpneu.fr/products/pneu-10-2-75-6-5-city-road-tubeless |
 | tire_family | pneumatic | distributeur | https://www.kukirin-officiel.com/products/trottinette-electrique-kukirin-a1 |  |
+
+## Kukirin G2 — MANQUE
+- Manque : source_image_urls
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10x2.75-6.5 (tubeless) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+- Une seule source, NON importé : rim_diameter=6.5 (https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/) · disc_holes=6 (https://youvelo.fr/132-disque-frein-trottinette-electrique) · tire_section=10x2.75 (https://trott-en-provence.fr/pneu-tout-terrain-kukirin-g2/)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | revendeur | https://www.darty.com/nav/achat/ref/MC350591019.html |  |
+| amperage | 15.6 | revendeur | https://www.darty.com/nav/achat/ref/MC350591019.html |  |
+| power_watts | 800 | constructeur | https://kukirin-france.com/products/kukirin-g2-electric-scooter |  |
+| max_speed_private_kmh | 45 | revendeur | https://www.scooter-lab.com/scooterlab_en/trottinette-electrique-kukirin-g2 |  |
+| range_km | 55 | constructeur | https://kukirin-france.com/products/kukirin-g2-electric-scooter |  |
+| max_load_kg | 120 | revendeur | https://www.darty.com/nav/achat/ref/MC350591019.html |  |
+| year | 2026 | revendeur | https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4 |  |
+| weight_kg | 26 | revendeur | https://www.fnac.com/mp50591019/Trottinette-electrique-pliable-Kukirin-G2-Moteur-800W-Batterie-48V-15Ah-Vitesse-maximale-45km-h-Autonomie-55km-Ecran-tactile/w-4 | https://kukirin-france.com/products/kukirin-g2-electric-scooter |
+| suspension | Amortisseurs à ressort avant et arrière | revendeur | https://www.rueducommerce.fr/p/m24073946176.html |  |
+| ip_rating | IP54 | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/kukirin-g2-trottinette-electrique-version-2026/f-1214801-aaang22211.html |  |
+| tire_size | 10x2.75-6.5 (tubeless) | revendeur | https://fr.kukirin-escooter.com/products/kukirin-g2-rear-vacuum-tires |  |
+| foldable | true | revendeur | https://www.darty.com/nav/achat/ref/MC350591019.html |  |
+| wheel_inches | 10 | constructeur | https://kukirin-france.com/products/kukirin-g2-electric-scooter |  |
+| brake_type | disc_unknown_actuation | constructeur | https://kukirin-france.com/products/kukirin-g2-electric-scooter |  |
+| disc_diameter | 140 | constructeur | https://fr.kukirin-escooter.com/products/kukirin-g2-disc-brake-1-pc | https://youvelo.fr/132-disque-frein-trottinette-electrique |
+| tire_family | pneumatic | constructeur | https://kukirin-france.com/products/kukirin-g2-electric-scooter |  |
+
+## Kukirin G2 Max — MANQUE
+- Manque : source_image_urls
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| amperage | 20.8 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| power_watts | 1000 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| max_speed_private_kmh | 55 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| range_km | 70 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| max_load_kg | 120 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| year | 2025 | revendeur | https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee |  |
+| weight_kg | 31.7 | revendeur | https://www.fnac.com/mp52562817/Trottinette-electrique-Kukirin-G2-Max-nouvelle-edition-2025-moteur-1200-W-batterie-48-V-20-8-Ah-pneus-10-pouces-double-frein-a-disque-55-km-h-autonomie-70-km-noir/w-4?do=a1ca5972ee&w=8c9dd01d4082&oddbal=256773c5&p=20302dee | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |
+| suspension | Amortisseurs à ressort avant et arrière | constructeur | https://kukirin-us.com/products/kukirin-g2-max-electric-scooter |  |
+| ip_rating | IP54 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| tire_size | 255×80 mm (10 pouces, pneumatique tout-terrain) | constructeur | https://kukirin-us.com/products/kukirin-g2-max-electric-scooter |  |
+| foldable | true | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| wheel_inches | 10 | constructeur | https://www.kukirin-scooter.com/products/kukirin-g2-max-electric-scooter |  |
+| brake_type | disc_mechanical | revendeur | https://trottinetteexpress.fr/products/plaquette-de-frein-pour-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad |  |
+| disc_diameter | 140 | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html | https://trott-en-provence.fr/disque-de-frein-kukirin-g2-max-g2-pro/ |
+| disc_pcd | 44 | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html | https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K |
+| disc_holes | 6 | revendeur | https://www.cdiscount.com/le-sport/mobilite-urbaine/disque-de-frein-140-mm-pour/f-121480107-aaajg25596.html | https://www.amazon.fr/M365Lyon-Trottinette-%C3%A9lectrique-Dualtron-Urbanglide/dp/B0DC5D1X9K |
+| rim_diameter | 6 | revendeur | https://trott-en-provence.fr/pneu-kukirin-g2-max/ | https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2 |
+| tire_section | 80/65 | revendeur | https://trott-en-provence.fr/pneu-kukirin-g2-max/ | https://www.amazon.fr/pneu-kukirin-g2/s?k=pneu+kukirin+g2 |
+| caliper_family | togo_g2 | revendeur | https://piecestrottinettes.fr |  |
+| tire_family | pneumatic | site_test | https://planetenumerique.com/test-et-avis/tests-maison-et-plein-air/test-kukirin-g2-max-la-trottinette-electrique-des-champs-a-qui-on-refuse-la,5533.html |  |
+
+## Kukirin M4 Max — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10 pouces tubeless (section non confirmée) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| amperage | 18.2 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| power_watts | 800 | revendeur | https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v |  |
+| max_speed_private_kmh | 45 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| range_km | 64 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| max_load_kg | 120 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| year | 2025 | revendeur | https://vepace.com/products/kukirin-m4-max-electric-scooter-new-model-2025 |  |
+| weight_kg | 24 | revendeur | https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/ | https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v |
+| suspension | Avant et arrière (fourche avant double, amortisseurs arrière à ressorts) | revendeur | https://www.haloknights.com/en-us/products/kukirin-m4-max-electric-scooter-800w-48v |  |
+| ip_rating | IP54 | constructeur | https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max |  |
+| tire_size | 10 pouces tubeless (section non confirmée) | revendeur | https://www.boulanger.com/ref/9000952326 |  |
+| foldable | true | revendeur | https://www.boulanger.com/ref/9000921770 |  |
+| wheel_inches | 10 | revendeur | https://www.boulanger.com/ref/9000952326 |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://boulanger.scene7.com/is/image/Boulanger/9331187241018_h_f_l_0 |  |
+| brake_type | disc_unknown_actuation | revendeur | https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/ |  |
+| tire_family | pneumatic | revendeur | https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-m4-max/ |  |

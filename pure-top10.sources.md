@@ -1,10 +1,10 @@
 # Extraction Pure Electric — 2026-10-13
 
-**4 PRÊT / 6 modèles.** Modèle IA : claude-sonnet-5-5.
+**7 PRÊT / 10 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **4 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 785862 tokens entrée, 30410 sortie, 42 recherches web.
+Coût mesuré : 699039 tokens entrée, 21441 sortie, 32 recherches web.
 
 ## Pure Electric Advance — PRÊT
 
@@ -130,3 +130,86 @@ Coût mesuré : 785862 tokens entrée, 30410 sortie, 42 recherches web.
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://www.electricscooterslondon.com/cdn/shop/files/pure-electric-scooter-black-gunmetal-escape-pro-1195373254_1200x.webp?v=1759956811 |  |
 | brake_type | drum_front_ebs_rear | constructeur | https://pureelectric.fr/collections/electric-scooters/products/escape-pro |  |
 | tire_family | pneumatic | revendeur | https://www.electricscooterslondon.com/products/pure-escape-pro-electric-scooter |  |
+
+## Pure Electric Flex — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://ie.pureelectric.com/products/pure-advance-flex-electric-scooter |  |
+| amperage | 9.5 | constructeur | https://ie.pureelectric.com/products/pure-advance-flex-electric-scooter |  |
+| power_watts | 500 | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| max_speed_private_kmh | 25 | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| range_km | 40 | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| max_load_kg | 120 | constructeur | https://ie.pureelectric.com/products/pure-advance-flex-electric-scooter |  |
+| weight_kg | 16.2 | constructeur | https://ie.pureelectric.com/products/pure-advance-flex-electric-scooter | https://horizonmicromobility.com/collections/electric-scooters/products/pure-flex-e-scooter?variant=54891243700599 |
+| suspension | Aucune | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| ip_rating | IP65 | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| foldable | true | constructeur | https://ie.pureelectric.com/products/pure-advance-flex-electric-scooter |  |
+| wheel_inches | 10 | constructeur | https://pureelectric.fr/products/pure-advance-flex-electric-scooter |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://horizonmicromobility.com/cdn/shop/files/pure-scooter-platinum-flex-70991942549880.webp?v=1737301807 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://pureelectric.fr/fr-fr/products/pure-advance-flex-electric-scooter |  |
+| rim_diameter | 6.5 | revendeur | https://www.manfirth.com/products/chaoyang-10x2-5-6-5-escooter-tyre-tubeless | https://escooterclinic.co.uk/en/products/tyre-for-pure-air3-flex-advanced-3rd-gen-tubeless-5355 |
+| tire_family | pneumatic | constructeur | https://pureelectric.fr/fr-fr/products/pure-advance-flex-electric-scooter |  |
+
+## Pure Electric Air⁵ Ultra — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : range_km=93.8
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10x2.50-6.5 (tubeless) », non exploitable seul)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://pureelectric.be/en/products/air-ultra-suspension |  |
+| amperage | 13 | distributeur | https://pureelectricza.co.za/products/air5-ultra-suspension |  |
+| power_watts | 500 | constructeur | https://pureelectric.be/en/products/air-ultra-suspension |  |
+| max_load_kg | 120 | constructeur | https://pureelectric.be/en/products/air-ultra-suspension |  |
+| year | 2025 | revendeur | https://rapidscooter.co.uk/product/pure-air5-ultra-suspension-electric-scooter |  |
+| weight_kg | 22.6 | constructeur | https://pureelectric.be/en/products/air-ultra-suspension | https://pureelectricza.co.za/products/air5-ultra-suspension |
+| suspension | Double suspension (fourche télescopique avant + double amortisseur arrière), GlideMotion | revendeur | https://scooterhut.com.au/products/pure-electric-scooter-pure-air-5-ultra-suspension |  |
+| ip_rating | IP65 | constructeur | https://www.pureelectric.com/products/air5-ultra-suspension |  |
+| tire_size | 10x2.50-6.5 (tubeless) | revendeur | https://trott-en-provence.fr/pneu-trottinette-electrique-pure-air-5-ultra/ |  |
+| foldable | true | constructeur | https://pureelectricza.co.za/products/air5-ultra-suspension |  |
+| wheel_inches | 10 | constructeur | https://pureelectric.be/en/products/air-ultra-suspension |  |
+| source_image_urls | 3 photo(s) | og:image fiche produit | http://www.pureelectric.com/cdn/shop/files/pure-electric-scooter-air-ultra-suspension-1238469011.jpg?v=1778803545 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://www.pureelectric.com/pages/discover-air-5-suspension |  |
+| tire_family | pneumatic | site_test | https://scooterrank.com/scooters/pure-air5-ultra-suspension |  |
+
+## Pure Electric Escape — MANQUE
+- Manque : weight_kg
+- Valeur à virgule pour une colonne entière, NON importée : range_km=44.1
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section
+- Une seule source, NON importé : weight_kg=19 (https://www.pureelectric.com/products/escape)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://www.pureelectric.com/products/escape |  |
+| amperage | 10 | constructeur | https://www.pureelectric.com/products/escape |  |
+| power_watts | 350 | constructeur | https://www.pureelectric.com/products/escape |  |
+| max_load_kg | 120 | constructeur | https://www.pureelectric.com/products/escape |  |
+| ip_rating | IP65 | distributeur | https://www.e.leclerc/fp/trottinette-electrique-pure-electric-escape-350-w-noir-44-km-25-km-h-pneus-10-anti-crevaison-5060937158798 |  |
+| foldable | true | constructeur | https://www.pureelectric.com/products/escape-refurbished |  |
+| wheel_inches | 10 | distributeur | https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/pure_electric_escape.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | http://www.pureelectric.com/cdn/shop/files/pure-scooter-black-gunmetal-escape-1244805360.jpg?v=1781714082 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://www.pureelectric.com/collections/adult-electric-scooters/products/escape |  |
+| tire_family | pneumatic | constructeur | https://pureelectric.fr/products/escape-pro |  |
+
+## Pure Electric Escape Pro+ — PRÊT
+- Valeur à virgule pour une colonne entière, NON importée : range_km=65.8
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10" tubeless », non exploitable seul)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://pureelectric.be/en/products/escape-plus |  |
+| amperage | 12 | constructeur | https://pureelectric.be/en/products/escape-plus |  |
+| power_watts | 500 | revendeur | https://www.electricscooterslondon.com/products/pure-escape-pro-plus-electric-scooter |  |
+| max_speed_private_kmh | 25 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-pure-escape-plus |  |
+| max_load_kg | 120 | constructeur | https://pureelectric.fr/fr-fr/products/escape-plus-electric-scooter |  |
+| year | 2025 | revendeur | https://rapidscooter.co.uk/product/pure-escape-pro-plus-electric-scooter |  |
+| weight_kg | 19.2 | revendeur | https://electricscootersaleuk.co.uk/product/pure-escape-pro-plus/ | https://www.mobilityurban.fr/marque/trottinette-electrique-pure/trottinette-electrique-pure-escape.html |
+| suspension | Aucune | constructeur | https://pureelectricza.co.za/products/escape-plus-electric-scooter |  |
+| ip_rating | IP65 | constructeur | https://pureelectricza.co.za/products/escape-plus-electric-scooter |  |
+| tire_size | 10" tubeless | constructeur | https://pureelectricza.co.za/products/escape-plus-electric-scooter |  |
+| foldable | true | revendeur | https://www.halfords.com/scooters/electric-scooters/pure-escape-proplus-electric-scooter-420403.html |  |
+| wheel_inches | 10 | constructeur | https://pureelectricza.co.za/products/escape-plus-electric-scooter |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://cdn.media.halfords.com/i/washford/420403/Pure-Escape-Pro-Electric-Scooter?fmt=auto&qlt=default&$sfcc_tile$&w=340 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://pureelectric.be/en/products/escape-plus |  |
+| tire_family | pneumatic | constructeur | https://pureelectric.be/en/products/escape-plus |  |

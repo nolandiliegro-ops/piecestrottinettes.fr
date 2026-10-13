@@ -1,10 +1,10 @@
 # Extraction Inokim — 2026-10-13
 
-**4 PRÊT / 5 modèles.** Modèle IA : claude-sonnet-5-5.
+**5 PRÊT / 6 modèles.** Modèle IA : claude-sonnet-5-5.
 
 ⚠️ **3 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 797742 tokens entrée, 24778 sortie, 38 recherches web.
+Coût mesuré : 182161 tokens entrée, 6317 sortie, 10 recherches web.
 
 ## Inokim OX Super — MANQUE
 - Manque : source_image_urls
@@ -121,3 +121,26 @@ Coût mesuré : 797742 tokens entrée, 24778 sortie, 38 recherches web.
 | wheel_inches | 6 | revendeur | https://www.idealtek.fr/trottinette-electrique-inokim-mini-2 |  |
 | source_image_urls | 1 photo(s) | og:image fiche produit | https://www.maxblinker.com/103-panda_thickbox_default/inokim-mini-2.jpg |  |
 | brake_type | fender_foot_ebs | constructeur | https://inokim.com.au/download/electric_scooter/mini2/user_guide/mini2_user_guide_manual_australia.pdf |  |
+
+## Inokim Light 2 Max — PRÊT
+- Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| amperage | 12.8 | constructeur | https://inokim.com/products/light-2 |  |
+| power_watts | 350 | constructeur | https://inokim.com/products/light-2 |  |
+| max_speed_private_kmh | 35 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| range_km | 40 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| max_load_kg | 100 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| weight_kg | 14 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html | https://www.smartwheel.ca/inokim-light-2-max-490wh-electric-foldable-scooter/ |
+| suspension | Aucune | constructeur | https://inokim.com/products/light-2 |  |
+| ip_rating | IPX4 | revendeur | https://www.trottnscoot.com/produit/trottinette-electrique-inokim-light-2-max/ |  |
+| tire_size | 8.5x2.0-5.5 | revendeur | https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html |  |
+| foldable | true | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| wheel_inches | 8.5 | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://alternative.bike/3312-large_default/trottinette-electrique-inokim-light-2-max.jpg |  |
+| brake_type | drum | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |
+| rim_diameter | 5.5 | revendeur | https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/ | https://www.out-fun.com/pneus-et-chambres-a-air/2627-pneu-gonflable-85x20-55-cst-inokim-light-2-3760351010482.html |
+| tire_section | 8.5x2 | revendeur | https://www.amazon.ca/ZAITUO-Honeycomb-8-5-inch-Replacement-Electric/dp/B0CDW6P9ZW | https://www.wattiz.fr/trottinette/pneu-85x2-0-5-5-cst-inokim-light-2/ |
+| tire_family | pneumatic | revendeur | https://alternative.bike/857-trottinette-electrique-inokim-light-2-max.html |  |

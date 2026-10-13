@@ -554,6 +554,1153 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "Kugoo G3",
+        "slug": "kugoo-g3",
+        "voltage": 52,
+        "amperage": 18,
+        "power_watts": 1200,
+        "max_speed_private_kmh": 50,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 25,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "10x2.75-6.5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.franmarche.com/wp-content/uploads/2024/05/scooter-electrique-kugookirin-g3-puissance-936wh.jpg"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.75",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kugoo (Kirin) G3 est une trottinette électrique pliable équipée d'un moteur de 1200 W et d'une batterie 52 V 18 Ah annoncée pour environ 60 km d'autonomie. Elle roule sur des pneus tout-terrain de 10 pouces (10x2.75-6.5) avec freins à disque avant et arrière et suspensions ; sa vitesse maximale de 50 km/h sur terrain privé est bridée à 25 km/h sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kugoo G3 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kugoo G3 : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.75, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kugoo g3, pieces kugoo g3, disque frein kugoo g3, plaquettes kugoo g3, pneu kugoo g3"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-kugoo-g3/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur",
+          "url2": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric"
+        },
+        "suspension": {
+          "url": "https://techno-science.net/dossier/test-kugoo-kirin-g3-review-trottinette-electrique-hors-normes-D65-page-4.html",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://fr.kukirin-escooter.com/products/kukirin-g3-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.amazon.fr/10x2-75-6-5-Tubeless-Applicable-%C3%A9lectrique-accessoires/dp/B0CLG73WFV",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://trott-electrique.fr/trottinette-electrique-1200w-kugoo-kirin-g3/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.franmarche.com/wp-content/uploads/2024/05/scooter-electrique-kugookirin-g3-puissance-936wh.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.fredzone.org/test-de-la-trottinette-electrique-kugoo-kirin-g3-368067/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/MotuTech-Kukirin-Rechange-Accessoire-Inoxydable/dp/B0FRMKM42B"
+        },
+        "disc_holes": {
+          "url": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/MotuTech-Kukirin-Rechange-Accessoire-Inoxydable/dp/B0FRMKM42B"
+        },
+        "rim_diameter": {
+          "url": "https://www.amazon.co.uk/10x2-75-6-5-Kugoo-kirin-G3-kukirin/dp/B0CLD5T47M",
+          "type": "revendeur",
+          "url2": "https://www.aliexpress.us/item/3256807238363328.html?gatewayAdapt=fra2usa4itemAdapt"
+        },
+        "tire_section": {
+          "url": "https://www.amazon.co.uk/10x2-75-6-5-Kugoo-kirin-G3-kukirin/dp/B0CLD5T47M",
+          "type": "revendeur",
+          "url2": "https://www.aliexpress.us/item/3256807238363328.html?gatewayAdapt=fra2usa4itemAdapt"
+        },
+        "tire_family": {
+          "url": "https://wamoov.fr/produit/kukirin-g3-trottinette-electrique-1200w-50-km-h/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+            "https://biospeed.fr/produit/trottinette-electrique-kugoo-g3/",
+            "https://www.franmarche.com/product/trottinette-electrique-kugookirin-g3/"
+          ],
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC348657749.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1200,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.rueducommerce.fr/p/m24073947849.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-kugoo-g3/",
+            "source_url_2": "https://trott-electrique.fr/trottinette-electrique-1200w-kugoo-kirin-g3/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g3-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_url_2": "https://www.amazon.fr/10x2-75-6-5-Tubeless-Applicable-%C3%A9lectrique-accessoires/dp/B0CLG73WFV",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.75-6.5",
+            "source_url": "https://www.amazon.fr/10x2-75-6-5-Tubeless-Applicable-%C3%A9lectrique-accessoires/dp/B0CLG73WFV",
+            "source_url_2": "https://www.aliexpress.us/item/3256807238363328.html?gatewayAdapt=fra2usa4itemAdapt",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://techno-science.net/dossier/test-kugoo-kirin-g3-review-trottinette-electrique-hors-normes-D65-page-4.html",
+            "source_url_2": "https://www.fnac.com/mp48581568/Trottinette-electrique-kugoo-kirin-g3-1200w-moteur-vitesse-max-60-km-h-batterie-52-v-18-ah/w-4",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://fr.kukirin-escooter.com/products/kukirin-g3-electric-scooter",
+            "source_url_2": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://trott-electrique.fr/trottinette-electrique-1200w-kugoo-kirin-g3/",
+            "source_url_2": "https://www.darty.com/nav/achat/ref/MC348657749.html",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kugoo (Kirin) G3 est une trottinette électrique pliable équipée d'un moteur de 1200 W et d'une batterie 52 V 18 Ah annoncée pour environ 60 km d'autonomie. Elle roule sur des pneus tout-terrain de 10 pouces (10x2.75-6.5) avec freins à disque avant et arrière et suspensions ; sa vitesse maximale de 50 km/h sur terrain privé est bridée à 25 km/h sur la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kugookirineu.com/pages/specs-of-kugoo-kirin-g3",
+            "source_type": "constructeur"
+          },
+          "_og_images": [
+            "https://www.franmarche.com/wp-content/uploads/2024/05/scooter-electrique-kugookirin-g3-puissance-936wh.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.fredzone.org/test-de-la-trottinette-electrique-kugoo-kirin-g3-368067/",
+            "source_url_2": "https://www.techno-science.net/dossier/test-kugoo-kirin-g3-review-trottinette-electrique-hors-normes-D65.html",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+            "source_url_2": "https://www.amazon.fr/MotuTech-Kukirin-Rechange-Accessoire-Inoxydable/dp/B0FRMKM42B",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+            "source_url_2": "https://www.amazon.fr/MotuTech-Kukirin-Rechange-Accessoire-Inoxydable/dp/B0FRMKM42B",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.75",
+            "source_url": "https://www.amazon.co.uk/10x2-75-6-5-Kugoo-kirin-G3-kukirin/dp/B0CLD5T47M",
+            "source_url_2": "https://www.aliexpress.us/item/3256807238363328.html?gatewayAdapt=fra2usa4itemAdapt",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.amazon.co.uk/10x2-75-6-5-Kugoo-kirin-G3-kukirin/dp/B0CLD5T47M",
+            "source_url_2": "https://www.aliexpress.us/item/3256807238363328.html?gatewayAdapt=fra2usa4itemAdapt",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://wamoov.fr/produit/kukirin-g3-trottinette-electrique-1200w-50-km-h/",
+            "source_url_2": "https://www.fnac.com/mp48581568/Trottinette-electrique-kugoo-kirin-g3-1200w-moteur-vitesse-max-60-km-h-batterie-52-v-18-ah/w-4",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kugoo G4",
+        "slug": "kugoo-g4",
+        "voltage": 60,
+        "amperage": 20,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 70,
+        "range_km": 75,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 37,
+        "suspension": "Amortisseurs avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "90/65-6.5 (11 pouces, tubeless)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://www.kukirin-officiel.com/cdn/shop/files/p2026042015003055c4f.jpg?v=1778792626",
+          "https://i-phonik.fr/44402-large_default/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah.webp",
+          "https://www.franmarche.com/wp-content/uploads/2024/05/trottinette-electrique-kukirin-g4-2000w-batteri.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Kugoo KuKirin G4 est une trottinette électrique tout-terrain équipée d'un moteur de 2000 W et d'une batterie 60 V 20 Ah (1200 Wh), annoncée jusqu'à 75 km d'autonomie et 70 km/h sur terrain privé (vitesse bridée à 25 km/h sur la voie publique en France). Elle roule sur des pneus tubeless de 11 pouces (90/65-6.5), avec amortisseurs avant et arrière et double freinage à disque, pour un poids net de 37 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kugoo G4 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kugoo G4 : disque de frein 140 mm 6 trous, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kugoo g4, pieces kugoo g4, disque frein kugoo g4, plaquettes kugoo g4, pneu kugoo g4"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur",
+          "url2": "https://www.kugooscooterusa.com/pages/g4-specs"
+        },
+        "suspension": {
+          "url": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://labashop.com/produit/pneu-off-road-kukirin-g4-90-65-6-5/?v=82a9e4d26595",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.kukirin-officiel.com/cdn/shop/files/p2026042015003055c4f.jpg?v=1778792626",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://escootervision.eu/en/products/bremsbelag-hydraulisch-fur-kukirin-g4-2024-aftermarket",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g4",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/"
+        },
+        "disc_holes": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g4",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/"
+        },
+        "rim_diameter": {
+          "url": "https://trott-en-provence.fr/pneu-kukirin-g4/",
+          "type": "revendeur",
+          "url2": "https://monsieurtrottinettes.be/en/tubeless-tires/802-tubeless-gel-tire-90-65-65-city-cst-kukirin-g4-5430003160541.html"
+        },
+        "tire_section": {
+          "url": "https://trott-en-provence.fr/pneu-kukirin-g4/",
+          "type": "revendeur",
+          "url2": "https://monsieurtrottinettes.be/en/tubeless-tires/802-tubeless-gel-tire-90-65-65-city-cst-kukirin-g4-5430003160541.html"
+        },
+        "caliper_family": {
+          "url": "https://escootervision.eu/en/products/bremsbelag-hydraulisch-fur-kukirin-g4-2024-aftermarket",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-tout-terrain-kukirin-g4-mot/f-1214801-kuk1693472768995.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 37,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://www.kugooscooterusa.com/pages/g4-specs",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g4-electric-scooter?variant=43479010509007",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 20,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g4-electric-scooter?variant=43479010509007",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g4-electric-scooter?variant=43479010509007",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://www.kugooscooterusa.com/pages/g4-specs",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 75,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://www.kugooscooterusa.com/pages/g4-specs",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g4-electric-scooter?variant=43479010509007",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (11 pouces, tubeless)",
+            "source_url": "https://labashop.com/produit/pneu-off-road-kukirin-g4-90-65-6-5/?v=82a9e4d26595",
+            "source_url_2": "https://monsieurtrottinettes.be/en/tubeless-tires/800-tire-90-65-65-city-cst-kukirin-g4-5430003160398.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Amortisseurs avant et arrière",
+            "source_url": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "source_url_2": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kugoo KuKirin G4 est une trottinette électrique tout-terrain équipée d'un moteur de 2000 W et d'une batterie 60 V 20 Ah (1200 Wh), annoncée jusqu'à 75 km d'autonomie et 70 km/h sur terrain privé (vitesse bridée à 25 km/h sur la voie publique en France). Elle roule sur des pneus tubeless de 11 pouces (90/65-6.5), avec amortisseurs avant et arrière et double freinage à disque, pour un poids net de 37 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "source_url_2": "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-g4",
+            "https://i-phonik.fr/mobilite-electrique/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah",
+            "https://www.franmarche.com/product/trottinette-electrique-kukirin-g4/"
+          ],
+          "_og_images": [
+            "https://www.kukirin-officiel.com/cdn/shop/files/p2026042015003055c4f.jpg?v=1778792626",
+            "https://i-phonik.fr/44402-large_default/trottinette-electrique-kugoo-kukirin-g4-moteur-2000w-70-kmh-autonomie-75-km-pneus-11-batterie-60v20ah.webp",
+            "https://www.franmarche.com/wp-content/uploads/2024/05/trottinette-electrique-kukirin-g4-2000w-batteri.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://escootervision.eu/en/products/bremsbelag-hydraulisch-fur-kukirin-g4-2024-aftermarket",
+            "source_url_2": "https://monsieurtrottinettes.be/en/metal-brake-pads/1030-brake-pads-kukirin-g4.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g4",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g4",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-kukirin-g2-g3-g4/",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://escootervision.eu/en/products/bremsbelag-hydraulisch-fur-kukirin-g4-2024-aftermarket",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://trott-en-provence.fr/pneu-kukirin-g4/",
+            "source_url_2": "https://monsieurtrottinettes.be/en/tubeless-tires/802-tubeless-gel-tire-90-65-65-city-cst-kukirin-g4-5430003160541.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://trott-en-provence.fr/pneu-kukirin-g4/",
+            "source_url_2": "https://monsieurtrottinettes.be/en/tubeless-tires/802-tubeless-gel-tire-90-65-65-city-cst-kukirin-g4-5430003160541.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-tout-terrain-kukirin-g4-mot/f-1214801-kuk1693472768995.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-kukirin-g4/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kugoo G3 Pro",
+        "slug": "kugoo-g3-pro",
+        "voltage": 52,
+        "amperage": 23.2,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 65,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 43.6,
+        "suspension": "Absorption des chocs à quatre bras (avant et arrière)",
+        "ip_rating": "IP54",
+        "tire_size": "10x3.0 (255x80, 80/65-6)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://kukirin-france.com/cdn/shop/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp?v=1739178122"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kugoo (KuKirin) G3 Pro est une trottinette électrique tout-terrain pliable à double moteur de 1200 W (2400 W au total), alimentée par une batterie amovible 52 V 23,2 Ah annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces (10x3.0), avec suspension à quatre bras amortisseurs et freins à disque hydrauliques avant et arrière ; sa vitesse est bridée à 25 km/h sur route (jusqu'à 65 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kugoo G3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kugoo G3 Pro : disque de frein 140 mm 6 trous, plaquettes, pneus 80/65, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kugoo g3 pro, pieces kugoo g3 pro, disque frein kugoo g3 pro, plaquettes kugoo g3 pro, pneu kugoo g3 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://fr.kukirin-escooter.com/products/kukirin-g3-pro-off-road-electric-scooter",
+          "type": "distributeur",
+          "url2": "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://kukirin-france.com/cdn/shop/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp?v=1739178122",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://trott-en-provence.fr/etrier-de-frein-kukirin-g3-pro/",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g3-pro",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/clp/B0D9N6VCGZ"
+        },
+        "disc_holes": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g3-pro",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/clp/B0D9N6VCGZ"
+        },
+        "rim_diameter": {
+          "url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/"
+        },
+        "tire_section": {
+          "url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/"
+        },
+        "tire_family": {
+          "url": "https://www.kugoofrance.com/products/kukirin-g3-pro-pneu-de-10-pouces-pour-scooter-electrique-hors-route-moteur-1200w-2-batterie-amovible-52v-23-2ah-autonomie-maximale-de-80-km",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master"
+        }
+      ],
+      "unconfirmed": [
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://rooelec.com/kukirin-g3-pro"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 43.6,
+            "source_url": "https://fr.kukirin-escooter.com/products/kukirin-g3-pro-off-road-electric-scooter",
+            "source_url_2": "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 23.2,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://trott-electrique.fr/kugoo-g3-pro-avis-prix-et-guide-dachat-detaille/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter",
+            "source_url_2": "https://trott-electrique.fr/kugoo-g3-pro-avis-prix-et-guide-dachat-detaille/",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 65,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://fr.kukirin-escooter.com/products/kukirin-g3-pro-off-road-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://www.kugookirineu.com/pages/specs-of-g3-pro",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x3.0 (255x80, 80/65-6)",
+            "source_url": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-kukirin-g3-pro",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Absorption des chocs à quatre bras (avant et arrière)",
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://trott-electrique.fr/kugoo-g3-pro-avis-prix-et-guide-dachat-detaille/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://www.kugookirineu.com/pages/specs-of-g3-pro",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+            "source_url_2": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kugoo (KuKirin) G3 Pro est une trottinette électrique tout-terrain pliable à double moteur de 1200 W (2400 W au total), alimentée par une batterie amovible 52 V 23,2 Ah annoncée jusqu'à 80 km d'autonomie. Elle roule sur des pneus pneumatiques de 10 pouces (10x3.0), avec suspension à quatre bras amortisseurs et freins à disque hydrauliques avant et arrière ; sa vitesse est bridée à 25 km/h sur route (jusqu'à 65 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "source_url_2": "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.kugoo-officiel.com/products/kukirin-g3-pro-scooter-electrique-tout-terrain-pneus-10-pouces-avec-moteurs-1200w-2-batterie-amovible-52v-23-2ah-gamme-superieure-80km-vitesse-maximale-65km-h",
+            "https://atommotors.fr/products/trottinette-electrique-kugoo-kirin-g3-pro-dual-1200-w",
+            "https://kukirin-france.com/products/kukirin-g3-pro-electric-scooter"
+          ],
+          "_og_images": [
+            "http://kukirin-france.com/cdn/shop/files/05_1_8ce009e3-b3af-4f92-83e8-0c808fcc0d21.webp?v=1739178122"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://trott-en-provence.fr/etrier-de-frein-kukirin-g3-pro/",
+            "source_url_2": "https://france-coupon.fr/en/product/kukirin-g3-pro/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g3-pro",
+            "source_url_2": "https://www.amazon.com/clp/B0D9N6VCGZ",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://rooelec.com/kukirin-g3-pro",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-kukirin-g3-pro",
+            "source_url_2": "https://www.amazon.com/clp/B0D9N6VCGZ",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master",
+            "source_url_2": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master",
+            "source_url_2": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.kugoofrance.com/products/kukirin-g3-pro-pneu-de-10-pouces-pour-scooter-electrique-hors-route-moteur-1200w-2-batterie-amovible-52v-23-2ah-autonomie-maximale-de-80-km",
+            "source_url_2": "https://trott-en-provence.fr/pneu-kukirin-g3-pro/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://www.trotnation.com/products/pneu-plein-anti-crevaison-10x3-80-65-6-kukirin-g2-master",
+            "source_url_2": "https://trott-en-provence.fr/pneu-plein-kukirin-g3-pro/",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kugoo T3",
+        "slug": "kugoo-t3",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 800,
+        "max_speed_private_kmh": 45,
+        "range_km": 58,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "suspension": "Double suspension à ressort (avant et arrière)",
+        "ip_rating": "IP54",
+        "tire_size": "10'' tubeless (pneus tubeless 10 pouces, off-road)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://kugoo.eu/cdn/shop/files/T3.jpg?v=1790761618&width=2048",
+          "http://www.kugookirineu.com/cdn/shop/files/T3-1_61453255-f501-497d-ad1b-a60b65a64552.jpg?v=1789373199"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kugoo (KuKirin) T3 est une trottinette électrique pliable équipée d'un moteur brushless de 800 W, d'une batterie 48 V 15,6 Ah et de pneus tubeless de 10 pouces, avec double suspension à ressort. Elle freine avec deux freins à disque (avant et arrière) et atteint 45 km/h sur terrain privé, la vitesse étant bridée à 25 km/h en usage routier, pour une autonomie annoncée de 58 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kugoo T3 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kugoo T3 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kugoo t3, pieces kugoo t3, disque frein kugoo t3, plaquettes kugoo t3, pneu kugoo t3"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.kukirin-scooter.com/blogs/news/beyond-the-commute-unleashing-the-rugged-power-of-kukirin-t3",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://kugoo.eu/cdn/shop/files/T3.jpg?v=1790761618&width=2048",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.uae-scooters.com/products/kukirin-t3-disc-brake-pads",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://fr.newtechstore.eu/produit/kukirin-t3-trottinette-electrique-tout-terrain/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "weight_kg",
+          "value": 26,
+          "url": "https://kugoo.ma/produit/trottinette-electrique-kukirin-t3-2/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 26,
+            "source_url": "https://kugoo.ma/produit/trottinette-electrique-kukirin-t3-2/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kugoo.ma/produit/trottinette-electrique-kukirin-t3-2/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://www.kugookirineu.com/products/kukirin-t3-electric-scooter-800w-powerful-motor-45km-h-max-speed-new-release",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://www.kukirin-officiel.com/products/trottinette-electrique-kukirin-t3?logged_in_customer_id=&lang=en",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 58,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://www.kukirin-officiel.com/products/trottinette-electrique-kukirin-t3?logged_in_customer_id=&lang=en",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kugoo.ma/produit/trottinette-electrique-kukirin-t3-2/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10'' tubeless (pneus tubeless 10 pouces, off-road)",
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double suspension à ressort (avant et arrière)",
+            "source_url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "source_url_2": "https://www.kukirin-officiel.com/products/trottinette-electrique-kukirin-t3?logged_in_customer_id=&lang=en",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://www.kugookirineu.com/products/kukirin-t3-electric-scooter-800w-powerful-motor-45km-h-max-speed-new-release",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-urbain-kukirin-t3/",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://www.kukirin-scooter.com/blogs/news/beyond-the-commute-unleashing-the-rugged-power-of-kukirin-t3",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kugoo (KuKirin) T3 est une trottinette électrique pliable équipée d'un moteur brushless de 800 W, d'une batterie 48 V 15,6 Ah et de pneus tubeless de 10 pouces, avec double suspension à ressort. Elle freine avec deux freins à disque (avant et arrière) et atteint 45 km/h sur terrain privé, la vitesse étant bridée à 25 km/h en usage routier, pour une autonomie annoncée de 58 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://kugoo.eu/products/kukirin-t3-electric-scooter",
+            "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/",
+            "https://www.kugookirineu.com/products/kukirin-t3-electric-scooter-800w-powerful-motor-45km-h-max-speed-new-release"
+          ],
+          "_og_images": [
+            "http://kugoo.eu/cdn/shop/files/T3.jpg?v=1790761618&width=2048",
+            "http://www.kugookirineu.com/cdn/shop/files/T3-1_61453255-f501-497d-ad1b-a60b65a64552.jpg?v=1789373199"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.uae-scooters.com/products/kukirin-t3-disc-brake-pads",
+            "source_type": "revendeur",
+            "source_url_2": null
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fr.newtechstore.eu/produit/kukirin-t3-trottinette-electrique-tout-terrain/",
+            "source_type": "revendeur",
+            "source_url_2": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-t3/"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 4
+    }
+  }
 }

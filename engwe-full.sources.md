@@ -1,10 +1,10 @@
 # Extraction Engwe — 2026-10-13
 
-**1 PRÊT / 2 modèles.** Modèle IA : claude-sonnet-5-5.
+**2 PRÊT / 5 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **1 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 326582 tokens entrée, 12524 sortie, 16 recherches web.
+Coût mesuré : 408332 tokens entrée, 14950 sortie, 21 recherches web.
 
 ## Engwe Y400 — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10 x 2,75 pouces (pneus tubeless) », non exploitable seul)
@@ -52,3 +52,67 @@ Coût mesuré : 326582 tokens entrée, 12524 sortie, 16 recherches web.
 | disc_diameter | 140 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y1000 | https://www.ma-trottinette-electrique.com/test-trottinette-electrique-pliable-avec-batterie-52-v-225-ah-nfc-et-bluetooth-navigation-intelligente-autonomie-jusqua-100-km-freins-hydrauliques-systeme-de-suspension-tout-terrain-y1000 |
 | tire_section | 10x3.00 | constructeur | https://fr.engwe.com/products/e-scooter-for-adults-y1000 | https://www.conforama.fr/jardin-loisirs-sport/loisirs-exterieurs/glisse-urbaine-et-gyropode/trottinette-electrique-engwe-y1000-10-pouces-double-moteur-freins-hydrauliques-noire/p/V99122318 |
 | tire_family | solid | constructeur | https://engwe.com/fr/products/produits-e-scooter-pour-adultes-y1000 |  |
+
+## Engwe Y10 — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 10x3.0 », non exploitable seul)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 36 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| amperage | 13 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| power_watts | 350 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| max_speed_private_kmh | 32 | revendeur | https://www.usporter.com/us/1469-7-541/engwe-y10-electric-scooter-36v-13ah-battery-65km-range/ |  |
+| range_km | 65 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| max_load_kg | 120 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| year | 2024 | revendeur | https://www.pixmania.com/fr/fr/trottinette-electrique-engwe-y10-pneus-10-moteur-350w-batterie-36v-13ah-311584.html |  |
+| weight_kg | 17.2 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 | https://enwolt.net/shop/electric-bikes/engwe-y10/ |
+| suspension | Aucune (pneus larges 10x3.0 pour l'amortissement) | revendeur | https://vasikgo.com/product/engwe-y10-electric-scooter/ |  |
+| ip_rating | IPX4 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| tire_size | 10x3.0 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| foldable | true | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| wheel_inches | 10 | constructeur | https://engwe-bikes-eu.com/products/engwe-y10 |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/3bb71f7b-b965-464e-a727-de3b04c6ca00/public |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://engwe.com/products/engwe-y10/ |  |
+| tire_family | pneumatic | revendeur | https://fr.geekbuying.com/item/ENGWE-Y10-Electric-Scooter-350W-Motor-13Ah-Battery-522334.html |  |
+
+## Engwe S6 — MANQUE
+- Manque : source_image_urls
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Proposé, NON importé (à trancher par Nolan) : solid_conversion=yes (https://eagsbike.com/en/spare-parts/1232-10x275-65-inch-solid-rubber-tire-for-engwe-s6-scooter.html)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| amperage | 15.6 | constructeur | https://engwe.fr/shop/v%C3%A9los-%C3%A9lectriques/engwe-s6/ |  |
+| power_watts | 500 | constructeur | https://engwe.fr/shop/v%C3%A9los-%C3%A9lectriques/engwe-s6/ |  |
+| max_speed_private_kmh | 45 | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| range_km | 60 | constructeur | https://engwe.fr/shop/v%C3%A9los-%C3%A9lectriques/engwe-s6/ |  |
+| max_load_kg | 120 | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| weight_kg | 25 | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ | https://welgovelos.com/produit/engwe-s6-500w-10-trottinette-electrique/ |
+| suspension | Amortisseurs avant et arrière (+ selle suspendue) | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| ip_rating | IPX4 | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| tire_size | 10 x 2.75 | revendeur | https://elektra-bike.com/products/s6-best-electric-scooter-official |  |
+| foldable | true | constructeur | https://engwe.eu/produkt/engwe-s6-electric-scooter/ |  |
+| wheel_inches | 10 | constructeur | https://engwe.fr/shop/v%C3%A9los-%C3%A9lectriques/engwe-s6/ |  |
+| brake_type | disc_mechanical | constructeur | https://fr.engwe.eu/produit/trottinette-%C3%A9lectrique-engwe-s6/ |  |
+| rim_diameter | 6.5 | constructeur | https://fr.engwe.eu/produit/trottinette-%C3%A9lectrique-engwe-s6/ | https://eagsbike.com/en/spare-parts/1231-10x275-65-inch-tubeless-tire-for-engwe-s6-scooter.html |
+| tire_section | 10x2.75 | constructeur | https://fr.engwe.eu/produit/trottinette-%C3%A9lectrique-engwe-s6/ | https://eagsbike.com/en/spare-parts/1231-10x275-65-inch-tubeless-tire-for-engwe-s6-scooter.html |
+| tire_family | pneumatic | revendeur | https://eagsbike.com/en/spare-parts/1231-10x275-65-inch-tubeless-tire-for-engwe-s6-scooter.html |  |
+
+## Engwe EASE 2 Pro — MANQUE
+- Manque : brake_type
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8 x 3 pouces », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 24 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| amperage | 10 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| power_watts | 270 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| max_speed_private_kmh | 8 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| max_load_kg | 120 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| weight_kg | 19.6 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro | https://www.ebikeprosusa.com/product-page/engwe-ease-2-pro-270w-foldable-lightweight-mobility-scooter |
+| tire_size | 8 x 3 pouces | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| foldable | true | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| wheel_inches | 8 | constructeur | https://us.engwe.com/products/engwe-ease-2-pro |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://us.engwe.com/cdn/shop/files/13_44a36dcc-6c5e-4582-934e-4d8a32790d76.jpg?crop=center&height=1200&v=1730443318&width=1200 |  |

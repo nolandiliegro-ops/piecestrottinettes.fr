@@ -1,10 +1,10 @@
 # Extraction NIU — 2026-10-13
 
-**6 PRÊT / 6 modèles.** Modèle IA : claude-sonnet-5-5.
+**8 PRÊT / 8 modèles.** Modèle IA : claude-sonnet-5-5.
 
-⚠️ **6 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+⚠️ **8 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
 
-Coût mesuré : 750095 tokens entrée, 33815 sortie, 38 recherches web.
+Coût mesuré : 201167 tokens entrée, 10872 sortie, 12 recherches web.
 
 ## NIU KQi2 Pro — PRÊT
 - ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 254 mm x 58 mm (pneu tubeless 10 pouces) », non exploitable seul)
@@ -145,3 +145,46 @@ Coût mesuré : 750095 tokens entrée, 33815 sortie, 38 recherches web.
 | source_image_urls | 2 photo(s) | og:image fiche produit | https://trotz-ride.shop/wp-content/uploads/2024/04/4_93f5e71c-4315-4811-948f-4cc49febc121_1024x1024.webp |  |
 | brake_type | disc_mechanical | constructeur | https://niustore.com/products/kqi-air-x-lightest |  |
 | tire_family | pneumatic | distributeur | https://www.niuflorida.com/product/kqi-air/ |  |
+
+## NIU KQi 200P — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : tire_section (texte relevé : « 10 x 2.3 », non exploitable seul)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| amperage | 7.8 | constructeur | https://global.niu.com/fr/product/kqi-200 |  |
+| power_watts | 350 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| range_km | 54 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| max_load_kg | 120 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| year | 2025 | site_test | https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-200/ |  |
+| weight_kg | 19.7 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr | https://scooterrank.com/scooters/niu-kqi-200p |
+| suspension | Fourche avant à double tube avec ressort (course 32 mm) | constructeur | https://shopeu.niu.com/en-es/collections/entry-level-es/products/niu-kqi-200p-electric-scooter-es |  |
+| ip_rating | IPX5 | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| tire_size | 10 x 2.3 | revendeur | https://www.scooterworks.com/products/tire-tubeless-10-x-2-3-6-5-niu-kqi2-h0701002 |  |
+| foldable | true | constructeur | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |  |
+| wheel_inches | 10 | constructeur | https://global.niu.com/fr/product/kqi-200 |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | http://shopeu.niu.com/cdn/shop/files/KQi-200P_Basic-Render_Gray_Front-45.jpg?v=1763378878 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://global.niu.com/fr/product/kqi-200 |  |
+| rim_diameter | 10 | site_test | https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-200/ | https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr |
+| tire_family | pneumatic | constructeur | https://global.niu.com/fr/product/kqi-200 |  |
+
+## NIU KQi1 Sport — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 9,0 x 2,3 pouces (229 x 60 mm), pneumatique avec chambre à air », non exploitable seul)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 48 | constructeur | https://shopeu.niu.com/products/niu-kqi1-sport-elektrotretroller-reichweite-25km |  |
+| power_watts | 250 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| max_speed_private_kmh | 25 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| range_km | 25 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| max_load_kg | 100 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| year | 2023 | site_test | https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi1-sport/ |  |
+| weight_kg | 14.6 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km | https://www.serialdealer.fr/bons-plans/deal-93007.htm |
+| suspension | Aucune | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| ip_rating | IP54 | constructeur | https://shopeu.niu.com/fr-fr/products/niu-kqi1-sport-trottinette-electrique-autonomie-25km |  |
+| tire_size | 9,0 x 2,3 pouces (229 x 60 mm), pneumatique avec chambre à air | constructeur | https://shopeu.niu.com/products/niu-kqi1-sport-electric-kick-scooter-range-25km-eu-version |  |
+| foldable | false | constructeur | https://shop.niu.com/products/niu-kqi1-sport-for-adults |  |
+| wheel_inches | 9 | constructeur | https://shop.niu.com/products/niu-kqi1-sport-for-adults |  |
+| source_image_urls | 3 photo(s) | og:image fiche produit | http://shopeu.niu.com/cdn/shop/files/K1Progray-2.webp?v=1773625850 |  |
+| brake_type | drum_front_ebs_rear | constructeur | https://global.niu.com/fr/product/kqi1 |  |
+| tire_family | pneumatic | constructeur | https://global.niu.com/fr/product/kqi1 |  |

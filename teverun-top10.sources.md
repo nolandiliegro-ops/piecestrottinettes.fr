@@ -1,8 +1,10 @@
 # Extraction Teverun — 2026-10-13
 
-**4 PRÊT / 6 modèles.** Modèle IA : claude-sonnet-5-5.
+**8 PRÊT / 10 modèles.** Modèle IA : claude-sonnet-5-5.
 
-Coût mesuré : 812221 tokens entrée, 36411 sortie, 44 recherches web.
+⚠️ **2 PRÊT sans clé roue** : publiés tels quels, ils n'auront NI pneu NI chambre à air (chargeurs seulement). Cible de la passe pneus.
+
+Coût mesuré : 599306 tokens entrée, 25253 sortie, 33 recherches web.
 
 ## Teverun Fighter 11 — PRÊT
 - Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
@@ -156,3 +158,103 @@ Coût mesuré : 812221 tokens entrée, 36411 sortie, 44 recherches web.
 | tire_section | 90/65 | revendeur | https://www.trottnshop.com/produit/teverun-blade-gt2/ | https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2 |
 | caliper_family | zoom | revendeur | https://fr.aliexpress.com/item/1005008064484831.html |  |
 | tire_family | pneumatic | revendeur | https://www.liftyelectric.com/products/teverun-blade-gt-ii-1 |  |
+
+## Teverun Fighter 11 Plus — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 60 | distributeur | https://teverun-europe.com/product/fighter-eleven-3/ |  |
+| amperage | 37.1 | distributeur | https://teverun-europe.com/product/fighter-eleven-3/ |  |
+| power_watts | 5000 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus |  |
+| max_speed_private_kmh | 85 | constructeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus |  |
+| range_km | 120 | constructeur | https://teverun.com/product/fighter-eleven-plus/ |  |
+| max_load_kg | 150 | distributeur | https://teverun-europe.com/product/fighter-eleven-3/ |  |
+| year | 2026 | revendeur | https://www.minimotors.fr/en/shop/teverunelevenplus60v37a2026-trottinette-electrique-teverun-fighter-eleven-plus-60v-371-ah-2026-16263 |  |
+| weight_kg | 44 | constructeur | https://teverun.com/product/fighter-eleven-plus/ | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus |
+| suspension | Hydraulique réglable KKE, avant et arrière | distributeur | https://teverun-europe.com/product/fighter-eleven-3/ |  |
+| ip_rating | IPX6 | distributeur | https://www.teverunusa.com/products/fighter-eleven-plus |  |
+| tire_size | 11" tubeless anticrevaison CST 90/65-6.5 | distributeur | https://teverun-europe.com/product/fighter-eleven-3/ |  |
+| foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus |  |
+| wheel_inches | 11 | constructeur | https://teverun.com/product/fighter-eleven-plus/ |  |
+| source_image_urls | 3 photo(s) | og:image fiche produit | http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg?v=1781287748 |  |
+| brake_type | disc_hydraulic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus |  |
+| disc_diameter | 160 | distributeur | https://www.minimotors.fr/product/teverun-fighter-10-10-11-11-supreme-disque-de-frein-160mm/ | https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11 |
+| disc_holes | 6 | revendeur | https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11 | https://funtrott.fr/299-teverun |
+| rim_diameter | 6.5 | distributeur | https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html | https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/ |
+| tire_section | 90/65 | distributeur | https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html | https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/ |
+| caliper_family | zoom | revendeur | https://fr.aliexpress.com/item/1005008064484831.html |  |
+| tire_family | pneumatic | revendeur | https://www.trott-e-ride.fr/teverun-fighter-guide-complet-fiche-technique |  |
+
+## Teverun Fighter 7260R — PRÊT
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 72 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| amperage | 60 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| power_watts | 8000 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| max_speed_private_kmh | 110 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| range_km | 200 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| max_load_kg | 150 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-7260r |  |
+| year | 2026 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| weight_kg | 63 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 | https://www.teverun.fr/teverun-fighter-7260r/ |
+| suspension | Ressorts hydrauliques (avant et arrière) | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| ip_rating | IPX5 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| tire_size | 125/60-7 (CST tubeless, 13 pouces) | revendeur | https://citymobility.fr/products/sans-titre-20aout_15-09 |  |
+| foldable | true | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-7260r |  |
+| wheel_inches | 13 | distributeur | https://www.minimotors.fr/en/shop/teverunsupreme7260r2026-trottinette-electrique-teverun-fighter-7260r-v6-2026-17158 |  |
+| source_image_urls | 3 photo(s) | og:image fiche produit | https://www.minimotors.fr/web/image/product.template/17158/image_1024?unique=fb10355 |  |
+| brake_type | disc_hydraulic | constructeur | https://teverun.com/product/fighter-supreme-7260r/ |  |
+| disc_diameter | 180 | revendeur | https://fastride.fr/en/teverun-fighter-7260r/4037-disque-de-frein-180mm-teverun-7260r.html | https://www.voromotors.com/products/180mm-brake-disc-for-fighter-supreme-7260r |
+| rim_diameter | 7 | revendeur | https://e-watts.fr/produit/pneu-route-125-60-7-cst | https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/ |
+| tire_section | 125/60 | revendeur | https://e-watts.fr/produit/pneu-route-125-60-7-cst | https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/ |
+| tire_family | pneumatic | constructeur | https://teverun.com/product/fighter-supreme-7260r/ |  |
+
+## Teverun Fighter Supreme Ultra — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 11 x 4 pouces (tubeless autocicatrisant) », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+- Une seule source, NON importé : rim_diameter=6.5 (https://www.wilsonebikes.com/products/teverun-fighter-supreme-ultra-electric-scooter) · disc_diameter=160 (https://ghersonwheels.com/produit/teverun-fighter-supreme-ultra/) · tire_section=90/65 (https://www.wilsonebikes.com/products/teverun-fighter-supreme-ultra-electric-scooter)
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 72 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| amperage | 60 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| power_watts | 4000 | revendeur | https://www.gyro-phare.com/1656-trottinette-electrique-teverun-fighter-supreme-ultra.html |  |
+| max_speed_private_kmh | 105 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| range_km | 200 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| max_load_kg | 150 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| year | 2026 | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| weight_kg | 50 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra | https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-teverun-fighter-supreme-ultra-92671830 |
+| suspension | Ressort + hydraulique réglable AV/AR | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| ip_rating | IPX6 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| tire_size | 11 x 4 pouces (tubeless autocicatrisant) | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| foldable | true | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| wheel_inches | 11 | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| source_image_urls | 2 photo(s) | og:image fiche produit | https://cdn.shopify.com/s/files/1/0604/3477/6261/files/trottinette_electrique_teverun_fighter_ultra_supreme_pas_cher-211110.jpg?v=1760790109 |  |
+| brake_type | disc_hydraulic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| caliper_family | zoom | revendeur | https://www.steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+| tire_family | pneumatic | revendeur | https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme-ultra |  |
+
+## Teverun Fighter Mini Q — PRÊT
+- ⚠️ SANS CLÉ ROUE — aucun pneu ni chambre proposé — inconnu : rim_diameter, tire_section (texte relevé : « 8.5x3 », non exploitable seul)
+- Publiable SANS disques (règle du 10/10) — inconnu : disc_diameter, disc_pcd, disc_holes
+
+| Clé | Valeur | Type de source | Source | 2e source |
+|---|---|---|---|---|
+| voltage | 52 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| amperage | 13 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| power_watts | 1000 | revendeur | https://funtrott.fr/accueil/2386-teverun-fighter-mini-q-52v-13ah.html |  |
+| max_speed_private_kmh | 50 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| range_km | 40 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| max_load_kg | 120 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| year | 2025 | revendeur | https://fastride.fr/en/teverun/4491-trottinette-electrique-teverun-fighter-mini-q-52v-13ah.html |  |
+| weight_kg | 28.5 | revendeur | https://fastride.fr/en/teverun/4491-trottinette-electrique-teverun-fighter-mini-q-52v-13ah.html | https://www.boulanger.com/ref/1230173 |
+| suspension | Ressorts avant et arrière | revendeur | https://fastride.fr/en/teverun/4491-trottinette-electrique-teverun-fighter-mini-q-52v-13ah.html |  |
+| ip_rating | IPX5 | revendeur | https://www.out-fun.com/trottinettes-electriques/4888-teverun-fighter-mini-q-52v-13ah-trottinette-electrique.html |  |
+| tire_size | 8.5x3 | revendeur | https://vepace.com/products/teverun-fighter-mini-q-electric-scooter |  |
+| foldable | true | revendeur | https://www.boulanger.com/ref/1230173 |  |
+| wheel_inches | 8.5 | revendeur | https://www.out-fun.com/trottinettes-electriques/4888-teverun-fighter-mini-q-52v-13ah-trottinette-electrique.html |  |
+| source_image_urls | 1 photo(s) | og:image fiche produit | https://www.out-fun.com/22700-thickbox_default/teverun-fighter-mini-q-52v-13ah-trottinette-electrique.jpg |  |
+| brake_type | disc_unknown_actuation | revendeur | https://www.gyroroue-shop.fr/boutique/trottinette-electrique/teverun/teverun-fighter-mini-q |  |
+| tire_family | pneumatic | revendeur | https://points-ecomobilite.fr/produit/trottinettes-electriques/trottinette-electrique-teverun-fighter-q-13ah/ |  |

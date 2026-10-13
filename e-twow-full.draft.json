@@ -262,6 +262,775 @@
           }
         }
       }
+    },
+    {
+      "scooter": {
+        "name": "E-Twow Booster ES",
+        "slug": "e-twow-booster-es",
+        "voltage": 36,
+        "amperage": 7.8,
+        "power_watts": 500,
+        "max_speed_private_kmh": 30,
+        "range_km": 30,
+        "max_load_kg": 110,
+        "max_speed_kmh": 25,
+        "weight_kg": 11.6,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "https://mecatronice.com/app/uploads/2025/08/ETWOW-BOOSTER-ES-36V-78Ah-1.jpg"
+        ],
+        "brake_type": "fender_foot_ebs",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "L'E-Twow Booster ES est une trottinette électrique pliable de 11,6 kg équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium-ion 36 V 7,8 Ah, pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, et dispose d'un double freinage (frein électromagnétique et frein mécanique sur le garde-boue arrière). Sa vitesse est bridée à 25 km/h sur route en France (environ 30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow Booster ES - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow Booster ES : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow booster es, pieces e-twow booster es, disque frein e-twow booster es, plaquettes e-twow booster es, pneu e-twow booster es"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://mecatronice.com/produit/e-twow-booster-es/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://mecatronice.com/produit/e-twow-booster-es/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://zetrottstore-toulouse.com/produits/6913-17284-e-twow-booster-es.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur",
+          "url2": "https://mecatronice.com/produit/e-twow-booster-es/"
+        },
+        "suspension": {
+          "url": "https://wellbots.fr/products/e-twow-booster-es-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://mecatronice.com/produit/e-twow-booster-es/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://mecatronice.com/app/uploads/2025/08/ETWOW-BOOSTER-ES-36V-78Ah-1.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Noir/a17025841/w-4",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 11.6,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/e-twow-booster-es-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://zetrottstore-toulouse.com/produits/6913-17284-e-twow-booster-es.html",
+            "source_url_2": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 30,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://les-cyclistes-branches.com/produit/e-twow-booster-es-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 110,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://www.full-watt.fr/produit/e-twow-booster-s-plus/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://wellbots.fr/products/e-twow-booster-es-trottinette-electrique",
+            "source_url_2": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://wellbots.fr/products/e-twow-booster-es-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'E-Twow Booster ES est une trottinette électrique pliable de 11,6 kg équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium-ion 36 V 7,8 Ah, pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, et dispose d'un double freinage (frein électromagnétique et frein mécanique sur le garde-boue arrière). Sa vitesse est bridée à 25 km/h sur route en France (environ 30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://mecatronice.com/produit/e-twow-booster-es/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "https://mecatronice.com/produit/e-twow-booster-es/",
+            "https://zetrottstore-toulouse.com/produits/6913-17284-e-twow-booster-es.html"
+          ],
+          "_og_images": [
+            "https://mecatronice.com/app/uploads/2025/08/ETWOW-BOOSTER-ES-36V-78Ah-1.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "fender_foot_ebs",
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Gris/a17025845/w-4",
+            "source_url_2": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Noir/a17025841/w-4",
+            "source_url_2": "https://fastride.fr/en/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "E-Twow GTS",
+        "slug": "e-twow-gts",
+        "voltage": 48,
+        "amperage": 10.5,
+        "power_watts": 700,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 13,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "8 pouces, pneu plein en gomme tendre (section non précisée)",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "https://cdn.shopify.com/s/files/1/0604/3477/6261/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1760790010",
+          "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GTS_pas_cher_gris-499243.jpg?v=1772100372",
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1774327769"
+        ],
+        "brake_type": "ebs_front_drum_rear",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "L'E-Twow GTS est une trottinette électrique pliable de 13 kg, équipée d'un moteur de 700 W en crête et d'une batterie 48 V 10,5 Ah annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins de 8 pouces en gomme tendre, avec suspensions avant et arrière, frein électrique avant (KERS) et frein à tambour arrière ; sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow GTS - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow GTS : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow gts, pieces e-twow gts, disque frein e-twow gts, plaquettes e-twow gts, pneu e-twow gts"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur",
+          "url2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts"
+        },
+        "suspension": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://cdn.shopify.com/s/files/1/0604/3477/6261/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1760790010",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts/",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 13,
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+            "source_url_2": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 10.5,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gts",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 700,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/e-twow-trottinette-electrique-etwow-gts-noir.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.decathlon.fr/p/mp/trottinette-electrique-etwow-gts/f1b25226-8bf8-40f5-8a27-55dfc271da87/c9",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gts",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8 pouces, pneu plein en gomme tendre (section non précisée)",
+            "source_url": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://www.achatmoinscher.com/comparateur-de-prix-Trottinette-electrique/e-twow-trottinette-electrique-etwow-gts-noir.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'E-Twow GTS est une trottinette électrique pliable de 13 kg, équipée d'un moteur de 700 W en crête et d'une batterie 48 V 10,5 Ah annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins de 8 pouces en gomme tendre, avec suspensions avant et arrière, frein électrique avant (KERS) et frein à tambour arrière ; sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.steedytrott.com/products/trottinette-electrique-etwow-gts",
+            "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "https://www.wee-bot.com/products/trottinette-electrique-etwow-gts"
+          ],
+          "_og_images": [
+            "https://cdn.shopify.com/s/files/1/0604/3477/6261/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1760790010",
+            "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GTS_pas_cher_gris-499243.jpg?v=1772100372",
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1774327769"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_drum_rear",
+            "source_url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts/",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts/",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-etwow-gts",
+            "source_type": "distributeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "E-Twow TankTorq TK5",
+        "slug": "e-twow-tanktorq-tk5",
+        "voltage": 60,
+        "amperage": 21,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 50,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 34.5,
+        "suspension": "Avant et arrière, ressort + hydraulique réglable",
+        "ip_rating": "IPX7",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La E-Twow TankTorq TK5 est une trottinette électrique à double moteur (2 x 1000 W, 3000 W en crête) alimentée par une batterie lithium-ion 60 V 21 Ah, pour une autonomie annoncée jusqu'à 80 km. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière réglables et un freinage combinant double frein à disque hydraulique et frein magnétique. Sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 50 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "E-Twow TankTorq TK5 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées E-Twow TankTorq TK5 : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "e-twow tanktorq tk5, pieces e-twow tanktorq tk5, disque frein e-twow tanktorq tk5, plaquettes e-twow tanktorq tk5, pneu e-twow tanktorq tk5"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+          "type": "revendeur",
+          "url2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Orange/a21060857/w-4?zi=637500&lar=144554&dand=234756"
+        },
+        "suspension": {
+          "url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://e-twow.eu/product/tanktorq-tk5-electric-scooter/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://e-twow.com/fr/tanktorq-tk5/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 34.5,
+            "source_url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Orange/a21060857/w-4?zi=637500&lar=144554&dand=234756",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 21,
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_a.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-etwow-tanktorq-tk5",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+            "source_url_2": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://e-twow.eu/product/tanktorq-tk5-electric-scooter/",
+            "source_url_2": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière, ressort + hydraulique réglable",
+            "source_url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX7",
+            "source_url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4?yah=672389&jig=206341&s=k&ram=gobblede",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_a.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La E-Twow TankTorq TK5 est une trottinette électrique à double moteur (2 x 1000 W, 3000 W en crête) alimentée par une batterie lithium-ion 60 V 21 Ah, pour une autonomie annoncée jusqu'à 80 km. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière réglables et un freinage combinant double frein à disque hydraulique et frein magnétique. Sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 50 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+            "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+            "https://www.trottnshop.com/produit/trottinette-electrique-etwow-tanktorq-tk5/"
+          ],
+          "_og_images": [
+            "http://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.boulanger.com/ref/9000928119",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://e-twow.com/fr/tanktorq-tk5/",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "ajout": {
+    "2026-10-13": {
+      "demandes": 4,
+      "ajoutes": 3
+    }
+  }
 }
