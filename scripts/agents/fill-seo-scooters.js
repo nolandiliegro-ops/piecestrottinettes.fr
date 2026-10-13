@@ -52,7 +52,7 @@ async function claude({ system, prompt, tool }) {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 2500, system, messages: [{ role: 'user', content: prompt }], tools: [tool], tool_choice: { type: 'tool', name: tool.name } }),
+      body: JSON.stringify({ model: MODEL, max_tokens: 2500, system, messages: [{ role: 'user', content: prompt }], tools: [tool] }), // tool_choice forcé refusé par ce modèle (400 du 13/10) : consigne dans le système
     });
     if ([429, 500, 529].includes(res.status)) { await new Promise((r) => setTimeout(r, (Number(res.headers.get('retry-after')) || 30 * (retry + 1)) * 1000)); continue; }
     if (!res.ok) throw new Error(`Anthropic ${res.status}: ${(await res.text()).slice(0, 400)}`);
@@ -61,6 +61,8 @@ async function claude({ system, prompt, tool }) {
     usage.output_tokens += data.usage?.output_tokens || 0;
     const call = (data.content || []).find((c) => c.type === 'tool_use');
     if (call) return call.input;
+    const txt = (data.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('\n').trim();
+    if (txt.length > 400) return { description: txt }; // repli : texte brut rendu sans outil
     throw new Error('pas d\'appel outil');
   }
   throw new Error('Anthropic indisponible après 4 essais');
@@ -78,7 +80,8 @@ RÈGLES :
   2. Les pièces d'usure et LEURS COTES quand elles sont fournies : taille de pneu, type (gonflable/plein), disque de frein (diamètre, entraxe, trous), plaquettes, prise de charge et tension du chargeur (tension de charge fournie) ;
   3. Conseil d'entretien concret lié à CE modèle (pression/usure pneu, rodage plaquettes, charge) ;
   4. Une phrase qui renvoie vers les pièces compatibles listées sur la fiche, en citant 2 ou 3 familles réellement présentes dans la liste fournie.
-- Le nom complet du modèle apparaît 2 à 3 fois, naturellement.`;
+- Le nom complet du modèle apparaît 2 à 3 fois, naturellement.
+Réponds UNIQUEMENT en appelant l'outil submit_description.`;
 
 const tool = {
   name: 'submit_description',
