@@ -152,3 +152,9 @@
 - 2026-10-13T03:45:47.894Z · Pure Electric · OK · 3.8 min · 785862 in / 30410 out / 42 rech · +4 prêt (dont 1 sans clé roue) · cumul run 3740527 tokens
 - 2026-10-13T03:45:47.894Z · ARRÊT : plafond 3000000 tokens atteint (3740527)
 - 2026-10-13T04:00:05.173Z · PASSE PRISES · 57/83 trouvées dont 45 à 2 sources · 4.8 min · 8002469 in / 80983 out / 404 rech.
+- 2026-10-13T04:07:29.693Z · Segway-Ninebot · OK · 7.2 min · 1483209 in / 56592 out / 75 rech · +7 prêt (dont 4 sans clé roue) · cumul run 1539801 tokens
+- 2026-10-13T04:11:20.839Z · Dualtron · OK · 3.9 min · 717565 in / 31825 out / 40 rech · +6 prêt (dont 5 sans clé roue) · cumul run 2289191 tokens
+- 2026-10-13T04:15:40.560Z · Kukirin · OK · 4.3 min · 804862 in / 36180 out / 42 rech · +5 prêt (dont 3 sans clé roue) · cumul run 3130233 tokens
+- 2026-10-13T04:20:32.661Z · Teverun · OK · 4.9 min · 812221 in / 36411 out / 44 rech · +4 prêt (dont 0 sans clé roue) · cumul run 3978865 tokens
+- 2026-10-13T04:23:41.022Z · Inokim · OK · 3.1 min · 797742 in / 24778 out / 38 rech · +4 prêt (dont 3 sans clé roue) · cumul run 4801385 tokens
+- 2026-10-13T04:27:46.090Z · NIU · OK · 4.1 min · 750095 in / 33815 out / 38 rech · +6 prêt (dont 6 sans clé roue) · cumul run 5585295 tokens

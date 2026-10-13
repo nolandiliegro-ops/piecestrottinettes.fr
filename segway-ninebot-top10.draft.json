@@ -1,0 +1,2748 @@
+{
+  "brandName": "Segway-Ninebot",
+  "results": [
+    {
+      "scooter": {
+        "name": "Segway-Ninebot GT2",
+        "slug": "segway-ninebot-gt2",
+        "amperage": 30,
+        "power_watts": 3000,
+        "max_speed_private_kmh": 70,
+        "range_km": 90,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 52.6,
+        "suspension": "Avant et arrière, double bras, à amortissement hydraulique réglable",
+        "ip_rating": "IPX4",
+        "tire_size": "11 pouces (279 mm) tubeless autocicatrisant, bande de roulement 92 mm",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://citymobility.fr/cdn/shop/files/1_af14338f-aef0-46b7-b91a-5063f9b6d434.png?v=1695646526",
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2023/07/Segway-KickScooter-GT2P.png"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "disc_holes": 6,
+        "rim_diameter": "7",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Segway-Ninebot GT2 (GT2P) est une trottinette électrique double moteur (2 x 1500 W nominaux, jusqu'à 2 x 3000 W en crête) alimentée par une batterie de 1512 Wh (50,4 V / 30 Ah), pour une autonomie annoncée jusqu'à 90 km. Elle est équipée de pneus tubeless autocicatrisants de 11 pouces, d'une double suspension hydraulique réglable et de freins à disque hydrauliques avant et arrière associés à un freinage électronique. Elle atteint 70 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot GT2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot GT2 : disque de frein 140 mm 6 trous, plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot gt2, pieces segway-ninebot gt2, disque frein segway-ninebot gt2, plaquettes segway-ninebot gt2, pneu segway-ninebot gt2"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur",
+          "url2": "https://citymobility.fr/products/ninebot-gt2p"
+        },
+        "suspension": {
+          "url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://ch-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://ch-fr.segway.com/products/segway-kickscooter-gt2",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://citymobility.fr/cdn/shop/files/1_af14338f-aef0-46b7-b91a-5063f9b6d434.png?v=1695646526",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.segwayfrance.com/boutique/Etrier-de-Frein-hydraulique-&-durite-Avant-pour-Segway-GT2-p707387614",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/produit/disque-de-frein-ninebot-gt1-gt2",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/fr/343-segway-gt2"
+        },
+        "disc_holes": {
+          "url": "https://ulipstore.com/products/ulip-scooter-disc-brake-rotor-140mm-disc-brake-rotor-with-6-hole-for-segway-ninebot-gt1-gt2-scoter-stainless-steel-rotor",
+          "type": "revendeur",
+          "url2": "https://garmade.com/en-us/products/for-xiaomi-ninebot-electric-scooter-gt1-gt2-140mm-6-hole-disc-brake"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+          "type": "revendeur",
+          "url2": "https://www.ebay.de/itm/177433621525"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [
+        "voltage=50.4"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 52.6,
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://citymobility.fr/products/ninebot-gt2p",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 50.4,
+            "source_url": "https://parts2ride.com/en-us/products/segway-ninebot-gt2",
+            "source_url_2": "https://smartwheel.us/segway-gt2-electric-kick-scooter/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 30,
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://parts2ride.com/en-us/products/segway-ninebot-gt2",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 3000,
+            "source_url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+            "source_url_2": "https://www.fnac.com/Segway-KickScooter-GT2P-Trottinette-electrique-70-km-h/a18771928/w-4?ru=656777&sk=3d93800e26&wig=gobble",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://www.glisseurbaine.com/2736-trottinette-electrique-ninebot-kickscooter-gt2.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 90,
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://citymobility.fr/products/ninebot-gt2p",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://citymobility.fr/products/ninebot-gt2p",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://ch-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/ninebot-segway/segway-kickscooter-gt2p",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 pouces (279 mm) tubeless autocicatrisant, bande de roulement 92 mm",
+            "source_url": "https://ch-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://www.mobilityurban.fr/marque/trottinette-ninebot-segway/trottinette-electrique-segway-gt2-jusqu-a-6000w-en-crete.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière, double bras, à amortissement hydraulique réglable",
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-ninebot-gt2p-1",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+            "source_url_2": "https://citymobility.fr/products/ninebot-gt2p",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://fr-fr.segway.com/products/segway-kickscooter-gt2p",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/ninebot-segway/segway-kickscooter-gt2p",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot GT2 (GT2P) est une trottinette électrique double moteur (2 x 1500 W nominaux, jusqu'à 2 x 3000 W en crête) alimentée par une batterie de 1512 Wh (50,4 V / 30 Ah), pour une autonomie annoncée jusqu'à 90 km. Elle est équipée de pneus tubeless autocicatrisants de 11 pouces, d'une double suspension hydraulique réglable et de freins à disque hydrauliques avant et arrière associés à un freinage électronique. Elle atteint 70 km/h sur terrain privé et est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://ma-fr.segway.com/products/segway-kickscooter-gt2",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://citymobility.fr/products/ninebot-gt2p",
+            "https://www.eleqtron.fr/products/trottinette-electrique-ninebot-gt2p-1",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/ninebot-segway/segway-kickscooter-gt2p"
+          ],
+          "_og_images": [
+            "http://citymobility.fr/cdn/shop/files/1_af14338f-aef0-46b7-b91a-5063f9b6d434.png?v=1695646526",
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2023/07/Segway-KickScooter-GT2P.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.segwayfrance.com/boutique/Etrier-de-Frein-hydraulique-&-durite-Avant-pour-Segway-GT2-p707387614",
+            "source_url_2": "https://www.mobilityurban.fr/amp/marque/trottinette-ninebot-segway/trottinette-electrique-segway-gt2-jusqu-a-6000w-en-crete.html",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-ninebot-gt1-gt2",
+            "source_url_2": "https://fastride.fr/fr/343-segway-gt2",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://ulipstore.com/products/ulip-scooter-disc-brake-rotor-140mm-disc-brake-rotor-with-6-hole-for-segway-ninebot-gt1-gt2-scoter-stainless-steel-rotor",
+            "source_url_2": "https://garmade.com/en-us/products/for-xiaomi-ninebot-electric-scooter-gt1-gt2-140mm-6-hole-disc-brake",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "7",
+            "source_url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+            "source_url_2": "https://www.ebay.de/itm/177433621525",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+            "source_url_2": "https://www.mobilityurban.fr/amp/marque/trottinette-ninebot-segway/trottinette-electrique-segway-gt2-jusqu-a-6000w-en-crete.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot GT1",
+        "slug": "segway-ninebot-gt1",
+        "amperage": 20,
+        "power_watts": 1400,
+        "max_speed_private_kmh": 60,
+        "range_km": 70,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 47.6,
+        "suspension": "Avant double triangulation (double wishbone) et arrière bras oscillant, amortisseurs hydrauliques réglables",
+        "ip_rating": "IPX4",
+        "tire_size": "11 pouces (279 mm), tubeless auto-réparant",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.epicwheelz.com/cdn/shop/files/13.1gt1-2_600x600.png?v=1707638640",
+          "http://emmo.ca/cdn/shop/files/gt1-1.jpg?v=1743520372",
+          "https://www.canex.ca/media/catalog/product/s/e/segway-ninebot-kickscooter-gt1-ea1-841450000819_b-x2pd4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=265&width=265"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "7",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Segway-Ninebot GT1 (GT1P) embarque un moteur moyeu arrière refroidi par air de 1400 W nominaux (3000 W en pointe) et une batterie de 50,4 V / 20 Ah (1008 Wh) pour jusqu'à 70 km d'autonomie théorique. Elle roule sur des pneus tubeless auto-réparants de 11 pouces, avec double suspension hydraulique réglable et freins à disque hydrauliques avant et arrière. Sa vitesse maximale de 60 km/h est bridée à 25 km/h pour la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot GT1 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot GT1 : disque de frein 140 mm, plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot gt1, pieces segway-ninebot gt1, disque frein segway-ninebot gt1, plaquettes segway-ninebot gt1, pneu segway-ninebot gt1"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur",
+          "url2": "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter"
+        },
+        "suspension": {
+          "url": "https://emmo.ca/products/segway-gt1-superscooter",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://support.segway.com/support_product.php?segcatid=18",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.epicwheelz.com/cdn/shop/files/13.1gt1-2_600x600.png?v=1707638640",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+          "type": "distributeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/produit/disque-de-frein-ninebot-gt1-gt2",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/Fututech-Electrique-Trottinettes-D%C3%A9tach%C3%A9es-Rechange/dp/B0CB81TQM6"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+          "type": "revendeur",
+          "url2": "https://steedytrott.com/collections/10x2-50"
+        },
+        "tire_family": {
+          "url": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [
+        "voltage=50.4"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 47.6,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 50.4,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://emmo.ca/products/segway-gt1-superscooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 20,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1400,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://emmo.ca/products/segway-gt1-superscooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://www.segway.com/ekickscooter/products/series-gt.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter",
+            "source_url_2": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "11 pouces (279 mm), tubeless auto-réparant",
+            "source_url": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_url_2": "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant double triangulation (double wishbone) et arrière bras oscillant, amortisseurs hydrauliques réglables",
+            "source_url": "https://emmo.ca/products/segway-gt1-superscooter",
+            "source_url_2": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_url_2": "https://shop.panmi.com.au/products/segway-ninebot-gt1-superscooter",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot GT1 (GT1P) embarque un moteur moyeu arrière refroidi par air de 1400 W nominaux (3000 W en pointe) et une batterie de 50,4 V / 20 Ah (1008 Wh) pour jusqu'à 70 km d'autonomie théorique. Elle roule sur des pneus tubeless auto-réparants de 11 pouces, avec double suspension hydraulique réglable et freins à disque hydrauliques avant et arrière. Sa vitesse maximale de 60 km/h est bridée à 25 km/h pour la voie publique en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://support.segway.com/support_product.php?segcatid=18",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.epicwheelz.com/products/emmo-segway-gt1-super-escooter",
+            "https://emmo.ca/products/segway-gt1-superscooter",
+            "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819"
+          ],
+          "_og_images": [
+            "http://www.epicwheelz.com/cdn/shop/files/13.1gt1-2_600x600.png?v=1707638640",
+            "http://emmo.ca/cdn/shop/files/gt1-1.jpg?v=1743520372",
+            "https://www.canex.ca/media/catalog/product/s/e/segway-ninebot-kickscooter-gt1-ea1-841450000819_b-x2pd4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=265&width=265"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+            "source_url_2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-ninebot-segway/pieces-detachees-ninebot-gt1/",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-watts.fr/produit/disque-de-frein-ninebot-gt1-gt2",
+            "source_url_2": "https://www.amazon.fr/Fututech-Electrique-Trottinettes-D%C3%A9tach%C3%A9es-Rechange/dp/B0CB81TQM6",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "7",
+            "source_url": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+            "source_url_2": "https://steedytrott.com/collections/10x2-50",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+            "source_url_2": "https://www.wee-bot.com/products/pneu-cst-trottinette-electrique-ninebot-gt2-gt1-gt1e",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot ZT3 Pro",
+        "slug": "segway-ninebot-zt3-pro",
+        "amperage": 12.75,
+        "power_watts": 650,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 29.7,
+        "suspension": "Double suspension télescopique à l'avant, suspension à ressort à l'arrière",
+        "ip_rating": "IPX5 (IPX7 batterie)",
+        "tire_size": "70/60-7.5 (tubeless tout-terrain)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/8721008535449_h_f_l_0"
+        ],
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 120,
+        "disc_holes": 6,
+        "rim_diameter": "7.5",
+        "tire_section": "70/60",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Segway-Ninebot ZT3 Pro est une trottinette électrique tout-terrain équipée d'un moteur sur la roue arrière de 650 W nominaux (1 600 W en crête) et d'une batterie de 46,8 V / 12,75 Ah (597 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless tout-terrain de 11 pouces (70/60-7.5), avec double suspension (télescopique à l'avant, à ressort à l'arrière) et double frein à disque, pour un poids de 29,7 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot ZT3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot ZT3 Pro : disque de frein 120 mm 6 trous, plaquettes, pneus 70/60. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot zt3 pro, pieces segway-ninebot zt3 pro, disque frein segway-ninebot zt3 pro, plaquettes segway-ninebot zt3 pro, pneu segway-ninebot zt3 pro"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://garageotr.com/segway-ekickscooter-zt3-pro/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boulanger.com/ref/1211393",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.segway.com/explore/news/list-press-release/2024/9/segway-introduces-zt3-pro-all-terrain-electric-scooter.html",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+          "type": "revendeur",
+          "url2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-segway-ninebot-max-z3-pro"
+        },
+        "suspension": {
+          "url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.segway.com/explore/news/list-press-release/2024/9/segway-introduces-zt3-pro-all-terrain-electric-scooter.html",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.boulanger.com/ref/1211393",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/8721008535449_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.journaldugeek.com/test/essai-de-la-trottinette-electrique-segway-ninebot-zt3-pro-e-un-engin-qui-en-donne-presque-trop/",
+          "type": "site_test"
+        },
+        "disc_diameter": {
+          "url": "https://www.segwayfrance.com/boutique/Pieces-detachees-ZT3-Pro-c179000846",
+          "type": "constructeur",
+          "url2": "https://trott-en-provence.fr/disque-de-frein-ninebot-zt3-pro/"
+        },
+        "disc_holes": {
+          "url": "https://escootervision.eu/en/products/segway-ninebot-zt3-pro-bremsscheibe-120mm-6-loch-mit-schrauben",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/clp/B0F47ZF48V"
+        },
+        "rim_diameter": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+          "type": "constructeur",
+          "url2": "https://www.wee-bot.com/products/pneu-70-60-7-5-avec-gel-anticrevaison-pour-trottinette-electrique-ninebot-zt3-pro"
+        },
+        "tire_section": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+          "type": "constructeur",
+          "url2": "https://www.wee-bot.com/products/pneu-70-60-7-5-avec-gel-anticrevaison-pour-trottinette-electrique-ninebot-zt3-pro"
+        },
+        "tire_family": {
+          "url": "https://www.segwayfrance.com/segway-zt3-pro-e/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [
+        "voltage=46.8"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29.7,
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-segway-ninebot-max-z3-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://garageotr.com/segway-ekickscooter-zt3-pro/",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 12.75,
+            "source_url": "https://garageotr.com/segway-ekickscooter-zt3-pro/",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 650,
+            "source_url": "https://www.boulanger.com/ref/1211393",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+            "source_url_2": "https://www.boulanger.com/ref/1211393",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "70/60-7.5 (tubeless tout-terrain)",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+            "source_url_2": "https://www.urbanmoov.fr/boutique/Pneu-ZT3-ZT3-Pro-p722752941",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Double suspension télescopique à l'avant, suspension à ressort à l'arrière",
+            "source_url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5 (IPX7 batterie)",
+            "source_url": "https://www.segway.com/explore/news/list-press-release/2024/9/segway-introduces-zt3-pro-all-terrain-electric-scooter.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boulanger.com/ref/1211393",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.segway.com/explore/news/list-press-release/2024/9/segway-introduces-zt3-pro-all-terrain-electric-scooter.html",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/segway/segway-zt3-pro-e/",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot ZT3 Pro est une trottinette électrique tout-terrain équipée d'un moteur sur la roue arrière de 650 W nominaux (1 600 W en crête) et d'une batterie de 46,8 V / 12,75 Ah (597 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless tout-terrain de 11 pouces (70/60-7.5), avec double suspension (télescopique à l'avant, à ressort à l'arrière) et double frein à disque, pour un poids de 29,7 kg. Sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.feuvert.fr/trottinettes-electriques/segway-trottinette-electrique-zt3-pro-e-segway-ninebot/p615947.html",
+            "https://www.boulanger.com/ref/1211393",
+            "https://www.decathlon.fr/p/trottinette-electrique-ninebot-zt3-pro/372389/m8967702"
+          ],
+          "_og_images": [
+            "https://boulanger.scene7.com/is/image/Boulanger/8721008535449_h_f_l_0"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.journaldugeek.com/test/essai-de-la-trottinette-electrique-segway-ninebot-zt3-pro-e-un-engin-qui-en-donne-presque-trop/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": 120,
+            "source_url": "https://www.segwayfrance.com/boutique/Pieces-detachees-ZT3-Pro-c179000846",
+            "source_url_2": "https://trott-en-provence.fr/disque-de-frein-ninebot-zt3-pro/",
+            "source_type": "constructeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://escootervision.eu/en/products/segway-ninebot-zt3-pro-bremsscheibe-120mm-6-loch-mit-schrauben",
+            "source_url_2": "https://www.amazon.com/clp/B0F47ZF48V",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "7.5",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+            "source_url_2": "https://www.wee-bot.com/products/pneu-70-60-7-5-avec-gel-anticrevaison-pour-trottinette-electrique-ninebot-zt3-pro",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": "70/60",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133",
+            "source_url_2": "https://www.wee-bot.com/products/pneu-70-60-7-5-avec-gel-anticrevaison-pour-trottinette-electrique-ninebot-zt3-pro",
+            "source_type": "constructeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.segwayfrance.com/segway-zt3-pro-e/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-segway-zt3-pro",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot P65",
+        "slug": "segway-ninebot-p65",
+        "amperage": 12,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 65,
+        "max_load_kg": 120,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 28,
+        "suspension": "Aucune",
+        "ip_rating": "IPX5",
+        "tire_size": "10.5 pouces, pneu tubeless auto-obturant",
+        "foldable": true,
+        "wheel_inches": 10.5,
+        "source_image_urls": [
+          "https://cdn.webshopapp.com/shops/310069/files/394207570/ninebot-segway-ninebot-p65-e.jpg",
+          "https://cdn11.bigcommerce.com/s-r5k51kqrix/products/1626/images/7481/ninebot-segway-ninebot-p65-electric-kick-scooter__67833.1790543363.386.513.png?c=1"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "tire_section": "10.5x2.75",
+        "caliper_family": "xtech_zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot P65 est équipée d'un moteur brushless de 500 W (jusqu'à environ 1000 W en crête) placé dans la roue arrière, et d'une batterie de 46,8 V / 12 Ah (561 Wh) annoncée pour 65 km d'autonomie. Elle roule sur des pneus tubeless auto-obturants de 10,5 pouces, avec un frein à disque à double piston à l'avant et un frein électrique à l'arrière. Elle est bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot P65 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot P65 : disque de frein 140 mm 6 trous, plaquettes, pneus 10.5x2.75. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot p65, pieces segway-ninebot p65, disque frein segway-ninebot p65, plaquettes segway-ninebot p65, pneu segway-ninebot p65"
+      },
+      "sources": {
+        "amperage": {
+          "url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://support.segway.com/support_product.php?segcatid=5",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://support.segway.com/support_product.php?segcatid=5",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=5",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-p65e/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=5",
+          "type": "constructeur",
+          "url2": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html"
+        },
+        "suspension": {
+          "url": "https://www.escooteroo.com.au/products/segway-ninebot-kickscooter-p65a",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.bcescooter.com/product/segway-kickscooter-p65/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://cdn.webshopapp.com/shops/310069/files/394207570/ninebot-segway-ninebot-p65-e.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr-fr.segway.com/products/segway-kickscooter-p65e",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://monsieurtrottinettes.be/en/brake-disc/762-brake-disc-segway-ninebot-p65-p100s-7427251898683.html",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/fr/segway-p65/3239-disque-de-frein-140mm-ninebot-p65-p100-series.html"
+        },
+        "disc_pcd": {
+          "url": "https://fastride.fr/fr/segway-p65/3239-disque-de-frein-140mm-ninebot-p65-p100-series.html",
+          "type": "revendeur",
+          "url2": null,
+          "rule": "entraxe 1 source (fiche disque compatible)"
+        },
+        "disc_holes": {
+          "url": "https://escootervision.eu/fr-eu/products/segway-ninebot-p65-p100-140mm-bremsscheibe-6-loch",
+          "type": "revendeur",
+          "url2": "https://www.amazon.ca/-/fr/Rotor-frein-compatible-Segway-Ninebot/dp/B0D4QTRPNS"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/en/segway-p65-p100/3358-pneu-avec-gel-anti-crevaison-pour-segway-ninebot-p65-et-p100-series.html",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3"
+        },
+        "caliper_family": {
+          "url": "https://www.leboncoin.fr/ad/sport_plein_air/2932024921",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://lb-fr.segway.com/products/segway-kickscooter-p65e",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [
+        "voltage=46.8"
+      ],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 28,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=5",
+            "source_url_2": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 46.8,
+            "source_url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_url_2": "https://www.bcescooter.com/product/segway-kickscooter-p65/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 12,
+            "source_url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_url_2": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-p65e/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=5",
+            "source_url_2": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 65,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=5",
+            "source_url_2": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=5",
+            "source_url_2": "https://manuals.plus/segway/p65e-ninebot-electric-scooter-manual",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10.5,
+            "source_url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_url_2": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10.5 pouces, pneu tubeless auto-obturant",
+            "source_url": "https://www.bcescooter.com/product/segway-kickscooter-p65/",
+            "source_url_2": "https://www.best-cycling-equipment.com/product/segway-ninebot-p65-electric-kick-scooter/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://www.escooteroo.com.au/products/segway-ninebot-kickscooter-p65a",
+            "source_url_2": "https://www.mymobelity.be/en/electric-scooter-segway-ninebot-p65.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_url_2": "https://www.bcescooter.com/product/segway-kickscooter-p65/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_url_2": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-p65e/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot P65 est équipée d'un moteur brushless de 500 W (jusqu'à environ 1000 W en crête) placé dans la roue arrière, et d'une batterie de 46,8 V / 12 Ah (561 Wh) annoncée pour 65 km d'autonomie. Elle roule sur des pneus tubeless auto-obturants de 10,5 pouces, avec un frein à disque à double piston à l'avant et un frein électrique à l'arrière. Elle est bridée à 25 km/h pour la circulation en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "source_url_2": "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+            "https://www.mymobelity.be/fr/trottinette-electrique-segway-ninebot-p65.html",
+            "https://www.smartwheel.ca/segway-ninebot-p65-electric-kick-scooter/"
+          ],
+          "_og_images": [
+            "https://cdn.webshopapp.com/shops/310069/files/394207570/ninebot-segway-ninebot-p65-e.jpg",
+            "https://cdn11.bigcommerce.com/s-r5k51kqrix/products/1626/images/7481/ninebot-segway-ninebot-p65-electric-kick-scooter__67833.1790543363.386.513.png?c=1"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://fr-fr.segway.com/products/segway-kickscooter-p65e",
+            "source_url_2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-ninebot-segway/pieces-detachees-ninebot-p65/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://monsieurtrottinettes.be/en/brake-disc/762-brake-disc-segway-ninebot-p65-p100s-7427251898683.html",
+            "source_url_2": "https://fastride.fr/fr/segway-p65/3239-disque-de-frein-140mm-ninebot-p65-p100-series.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/fr/segway-p65/3239-disque-de-frein-140mm-ninebot-p65-p100-series.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://escootervision.eu/fr-eu/products/segway-ninebot-p65-p100-140mm-bremsscheibe-6-loch",
+            "source_url_2": "https://www.amazon.ca/-/fr/Rotor-frein-compatible-Segway-Ninebot/dp/B0D4QTRPNS",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "xtech_zoom",
+            "source_url": "https://www.leboncoin.fr/ad/sport_plein_air/2932024921",
+            "source_url_2": "https://fastride.fr/fr/segway-p65/3239-disque-de-frein-140mm-ninebot-p65-p100-series.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10.5x2.75",
+            "source_url": "https://fastride.fr/en/segway-p65-p100/3358-pneu-avec-gel-anti-crevaison-pour-segway-ninebot-p65-et-p100-series.html",
+            "source_url_2": "https://www.wee-bot.com/collections/pneus-trottinette-electrique?page=3",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://lb-fr.segway.com/products/segway-kickscooter-p65e",
+            "source_url_2": "https://www.modesdemploi.fr/segway/ninebot-kickscooter-p65i/mode-d-emploi",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot F2 Pro",
+        "slug": "segway-ninebot-f2-pro",
+        "voltage": 36,
+        "amperage": 12.8,
+        "power_watts": 900,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 18.5,
+        "suspension": "Suspension avant à ressort",
+        "ip_rating": "IPX5",
+        "tire_size": "10 pouces tubeless autocicatrisants (largeur 58 mm)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-PRO-E-Powered-by-Segway.png"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 110,
+        "disc_holes": 5,
+        "rim_diameter": "6.5",
+        "tire_section": "60/70",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot F2 Pro est une trottinette électrique pliable à moteur arrière brushless de 450 W nominal (900 W maximum), alimentée par une batterie 36 V 12,8 Ah (460 Wh) pour une autonomie constructeur allant jusqu'à 55 km. Elle est équipée de pneus tubeless autocicatrisants de 10 pouces avec couche de gel, d'une suspension avant à ressort, d'un frein à disque à l'avant et d'un frein électronique à l'arrière, avec une vitesse bridée à 25 km/h et une étanchéité IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot F2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot F2 Pro : disque de frein 110 mm 5 trous, plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot f2 pro, pieces segway-ninebot f2 pro, disque frein segway-ninebot f2 pro, plaquettes segway-ninebot f2 pro, pneu segway-ninebot f2 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur",
+          "url2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro"
+        },
+        "suspension": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-PRO-E-Powered-by-Segway.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.segwayfrance.com/grand-public/ninebot-kickscooter-f2-pro/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://escootervision.eu/en/products/bremsscheibe-110-mm-fur-ninebot-f2-f2-plus-f2-pro",
+          "type": "revendeur",
+          "url2": "https://monsieurtrottinettes.be/en/brake-disc/772-brake-disc-110mm-segway-ninebot-f2-e-pro-e-plus-e-5430003160749.html"
+        },
+        "disc_holes": {
+          "url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/MORICHS-Disc-Brake-Replacement-Accessories/dp/B0DB584M3M"
+        },
+        "rim_diameter": {
+          "url": "https://escootervision.eu/en/products/ninebot-segway-f2-f2-plus-f2-pro-reifen-tubeless-10x2-5-60-70-6-5",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/ANSENI-trottinette-electrique-Trottinette-increvable/dp/B0BKRF5G23"
+        },
+        "tire_section": {
+          "url": "https://escootervision.eu/en/products/ninebot-segway-f2-f2-plus-f2-pro-reifen-tubeless-10x2-5-60-70-6-5",
+          "type": "revendeur",
+          "url2": "https://www.amazon.fr/ANSENI-trottinette-electrique-Trottinette-increvable/dp/B0BKRF5G23"
+        },
+        "tire_family": {
+          "url": "https://se-en.segway.com/products/f2-pro-d",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18.5,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.avatacar.com/trottinette-electrique-homologuee-f2-pro-900w-20-km-h-segway-ninebot-2456476",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 12.8,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.avatacar.com/trottinette-electrique-homologuee-f2-pro-900w-20-km-h-segway-ninebot-2456476",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 900,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 pouces tubeless autocicatrisants (largeur 58 mm)",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_url_2": "https://www.segwayfrance.com/grand-public/ninebot-kickscooter-f2-pro/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension avant à ressort",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot F2 Pro est une trottinette électrique pliable à moteur arrière brushless de 450 W nominal (900 W maximum), alimentée par une batterie 36 V 12,8 Ah (460 Wh) pour une autonomie constructeur allant jusqu'à 55 km. Elle est équipée de pneus tubeless autocicatrisants de 10 pouces avec couche de gel, d'une suspension avant à ressort, d'un frein à disque à l'avant et d'un frein électronique à l'arrière, avec une vitesse bridée à 25 km/h et une étanchéité IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_f2_pro_e.html",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-pro",
+            "https://www.avatacar.com/trottinette-electrique-homologuee-f2-pro-900w-20-km-h-segway-ninebot-2456476"
+          ],
+          "_og_images": [
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-PRO-E-Powered-by-Segway.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.segwayfrance.com/grand-public/ninebot-kickscooter-f2-pro/",
+            "source_url_2": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-ninebot-segway/pieces-detachees-ninebot-f2-pro/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 110,
+            "source_url": "https://escootervision.eu/en/products/bremsscheibe-110-mm-fur-ninebot-f2-f2-plus-f2-pro",
+            "source_url_2": "https://monsieurtrottinettes.be/en/brake-disc/772-brake-disc-110mm-segway-ninebot-f2-e-pro-e-plus-e-5430003160749.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 5,
+            "source_url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/",
+            "source_url_2": "https://www.amazon.com/MORICHS-Disc-Brake-Replacement-Accessories/dp/B0DB584M3M",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "60/70",
+            "source_url": "https://escootervision.eu/en/products/ninebot-segway-f2-f2-plus-f2-pro-reifen-tubeless-10x2-5-60-70-6-5",
+            "source_url_2": "https://www.amazon.fr/ANSENI-trottinette-electrique-Trottinette-increvable/dp/B0BKRF5G23",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://escootervision.eu/en/products/ninebot-segway-f2-f2-plus-f2-pro-reifen-tubeless-10x2-5-60-70-6-5",
+            "source_url_2": "https://www.amazon.fr/ANSENI-trottinette-electrique-Trottinette-increvable/dp/B0BKRF5G23",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://se-en.segway.com/products/f2-pro-d",
+            "source_url_2": "https://lb-fr.segway.com/products/ninebot-kickscooter-f2-pro-powered-by-segway",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot F2",
+        "slug": "segway-ninebot-f2",
+        "voltage": 36,
+        "amperage": 10.2,
+        "power_watts": 400,
+        "max_speed_private_kmh": 25,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 17.5,
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://meilleuretrott.fr/wp-content/uploads/2025/09/segway-ninebot-kickscooter-f2-e.png"
+        ],
+        "disc_diameter": 110,
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.50",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot F2 (F2 E) est une trottinette électrique pliable à moteur brushless arrière de 400 W nominaux (800 W en pointe) alimentée par une batterie 36 V de 367 Wh, pour jusqu'à 40 km d'autonomie et 120 kg de charge maximale. Elle roule sur des pneus tubeless auto-cicatrisants de 10 pouces avec couche de gel, freine avec un disque à l'avant et un frein électronique à l'arrière, et sa vitesse est bridée à 25 km/h (IPX5). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot F2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot F2 : disque de frein 110 mm, plaquettes, pneus 10x2.50, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot f2, pieces segway-ninebot f2, disque frein segway-ninebot f2, plaquettes segway-ninebot f2, pneu segway-ninebot f2"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+          "type": "revendeur",
+          "url2": "https://meilleuretrott.fr/trottinettes/segway-ninebot-kickscooter-f2-e/"
+        },
+        "ip_rating": {
+          "url": "https://meilleuretrott.fr/trottinettes/segway-ninebot-kickscooter-f2-e/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-f2/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://meilleuretrott.fr/wp-content/uploads/2025/09/segway-ninebot-kickscooter-f2-e.png",
+          "type": "og:image fiche produit"
+        },
+        "disc_diameter": {
+          "url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/",
+          "type": "revendeur",
+          "url2": "https://escootervision.eu/en/collections/ninebot-segway"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/en/349-ninebot-f2-f2-et-f2-pro",
+          "type": "revendeur",
+          "url2": "https://scoot-motion.com/products/pneu-pour-trottinette-f2-90-65-6-5"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/en/349-ninebot-f2-f2-et-f2-pro",
+          "type": "revendeur",
+          "url2": "https://youvelo.fr/131-pneus-chambres-air-trottinette-electrique"
+        },
+        "tire_family": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-powered-by-segway",
+          "type": "constructeur"
+        }
+      },
+      "missing": [
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_holes",
+          "value": 5,
+          "url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17.5,
+            "source_url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/segway-ninebot-kickscooter-f2-e/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.2,
+            "source_url": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 400,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-f2/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-f2/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://meilleuretrott.fr/trottinettes/segway-ninebot-kickscooter-f2-e/",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-f2/",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot F2 (F2 E) est une trottinette électrique pliable à moteur brushless arrière de 400 W nominaux (800 W en pointe) alimentée par une batterie 36 V de 367 Wh, pour jusqu'à 40 km d'autonomie et 120 kg de charge maximale. Elle roule sur des pneus tubeless auto-cicatrisants de 10 pouces avec couche de gel, freine avec un disque à l'avant et un frein électronique à l'arrière, et sa vitesse est bridée à 25 km/h (IPX5). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.trottnshop.com/produit/ninebot-f2-e-by-segway/",
+            "https://meilleuretrott.fr/trottinettes/segway-ninebot-kickscooter-f2-e/",
+            "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-e-powered-by-segway"
+          ],
+          "_og_images": [
+            "https://meilleuretrott.fr/wp-content/uploads/2025/09/segway-ninebot-kickscooter-f2-e.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": 110,
+            "source_url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/",
+            "source_url_2": "https://escootervision.eu/en/collections/ninebot-segway",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 5,
+            "source_url": "https://trott-en-provence.fr/disque-de-frein-ninebot-f2-f2-pro-f2-plus/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://fastride.fr/en/349-ninebot-f2-f2-et-f2-pro",
+            "source_url_2": "https://scoot-motion.com/products/pneu-pour-trottinette-f2-90-65-6-5",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.50",
+            "source_url": "https://fastride.fr/en/349-ninebot-f2-f2-et-f2-pro",
+            "source_url_2": "https://youvelo.fr/131-pneus-chambres-air-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-f2-powered-by-segway",
+            "source_url_2": "https://shop.segway.com/be_fr/ninebot-kickscooter-f2e-powered-by-segway.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot E2 Pro",
+        "slug": "segway-ninebot-e2-pro",
+        "voltage": 36,
+        "amperage": 7.65,
+        "power_watts": 350,
+        "max_speed_private_kmh": 25,
+        "range_km": 35,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "suspension": "Aucune",
+        "ip_rating": "IPX4 (batterie IPX6)",
+        "tire_size": "60/70-6.5 tubeless (pneu avant)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P992159.jpg"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_section": "60/70",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot E2 Pro (E2 Pro E) est équipée d'un moteur arrière de 350 W nominal (750 W en crête) alimenté par une batterie 36 V de 275 Wh, pour une autonomie annoncée jusqu'à 35 km. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour à l'avant et un frein électronique à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot E2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot E2 Pro : plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot e2 pro, pieces segway-ninebot e2 pro, disque frein segway-ninebot e2 pro, plaquettes segway-ninebot e2 pro, pneu segway-ninebot e2 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-Avant-Tubeless-60-70-6-5-Ninebot-E3-p790889661",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P992159.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr-fr.segway.com/ekickscooter/products/e2-pro-e.html",
+          "type": "constructeur"
+        },
+        "tire_section": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661",
+          "type": "distributeur",
+          "url2": "https://www.wheelyshop.fr/products/roue-avant-ninebot-e2-pro"
+        },
+        "tire_family": {
+          "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 18.8,
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-e2-pro-e/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661",
+          "reason": "page de roue complète (fournit la jante)"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 18.8,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-e2-pro-e/",
+            "source_url_2": "https://www.intersport.fr/noir-trottinette_electrique_e2_pro_e_powered_by_segway-ninebot-p-8691883AKU/",
+            "source_type": "site_test"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 7.65,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-e2-pro-e/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://www.fnac.com/Trottinette-electrique-Ninebot-KickScooter-E2-Pro-750-W-Noir/a19054760/w-4",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "60/70-6.5 tubeless (pneu avant)",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-Avant-Tubeless-60-70-6-5-Ninebot-E3-p790889661",
+            "source_url_2": "https://trott-en-provence.fr/pneu-tubeless-renforce-ninebot-e2-pro/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+            "source_url_2": "https://www.intersport.fr/noir-trottinette_electrique_e2_pro_e_powered_by_segway-ninebot-p-8691883AKU/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4 (batterie IPX6)",
+            "source_url": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+            "source_url_2": "https://www.journaldugeek.com/test/test-ninebot-e2-pro-litteralement-faite-pour-se-rendre-au-travail-avec/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://www.intersport.fr/noir-trottinette_electrique_e2_pro_e_powered_by_segway-ninebot-p-8691883AKU/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot E2 Pro (E2 Pro E) est équipée d'un moteur arrière de 350 W nominal (750 W en crête) alimenté par une batterie 36 V de 275 Wh, pour une autonomie annoncée jusqu'à 35 km. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour à l'avant et un frein électronique à l'arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Pro-E-p601256344",
+            "source_url_2": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-e2-pro.html",
+            "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "https://www.carrefour.fr/p/trottinette-electrique-ninebot-kickscooter-e2-pro-segway-8720254406749"
+          ],
+          "_og_images": [
+            "https://www.electrodepot.fr/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/P992159.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://fr-fr.segway.com/ekickscooter/products/e2-pro-e.html",
+            "source_url_2": "https://www.feuvert.fr/trottinettes-electriques/ninebot-trottinette-electrique-e2-pro-e-segway-ninebot/p615449.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "60/70",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661",
+            "source_url_2": "https://www.wheelyshop.fr/products/roue-avant-ninebot-e2-pro",
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-dorigine-60-70-6-5-avant-pour-Ninebot-E3-p790889661",
+            "source_url_2": "https://www.wheelyshop.fr/products/roue-avant-ninebot-e2-pro",
+            "source_type": "distributeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ninebot_ninebot_e2_pro_e.html",
+            "source_url_2": "https://fr-fr.segway.com/ekickscooter/products/e2-pro-e.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot D38E",
+        "slug": "segway-ninebot-d38e",
+        "voltage": 36,
+        "amperage": 10.2,
+        "power_watts": 350,
+        "range_km": 38,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 16.3,
+        "suspension": "Aucune",
+        "ip_rating": "IPX5",
+        "tire_size": "10x2.125",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/4c8f4ba6-4fb8-4844-d29d-56af94afde00/public"
+        ],
+        "brake_type": "ebs_front_drum_rear",
+        "rim_diameter": "6.5",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot D38E est une trottinette électrique pliable à moteur de 350 W (500 W en pointe) dans la roue avant, alimentée par une batterie de 367 Wh (36 V, 10,2 Ah) pour une autonomie annoncée jusqu'à 38 km. Elle roule sur des pneus gonflables de 10 pouces (10x2.125) avec chambre à air, sans suspension, et freine avec un frein électronique à l'avant et un frein à tambour à l'arrière. Sa vitesse est bridée à 25 km/h, pour une charge maximale de 120 kg et un poids de 16,3 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot D38E - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot D38E : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot d38e, pieces segway-ninebot d38e, disque frein segway-ninebot d38e, plaquettes segway-ninebot d38e, pneu segway-ninebot d38e"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur",
+          "url2": "https://www.chango.fr/catalogue/produits/kickscooter-d38e"
+        },
+        "suspension": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.segwayfrance.com/boutique/Pneu-10-x-2-125-pour-Serie-D-F-p673549928",
+          "type": "distributeur"
+        },
+        "foldable": {
+          "url": "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/4c8f4ba6-4fb8-4844-d29d-56af94afde00/public",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-d18e-d28e-d38e",
+          "type": "revendeur",
+          "url2": "https://escootervision.eu/fr-eu/products/ninebot-d18-d28-d38-reifen-10x2-125-6-5-zoll"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-d18e-d28e-d38e",
+          "type": "revendeur",
+          "url2": "https://escootervision.eu/fr-eu/products/ninebot-d18-d28-d38-reifen-10x2-125-6-5-zoll"
+        },
+        "tire_family": {
+          "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-d-series",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://e-watts.fr/produit/pneu-plein-10x2-125-ninebot-f25-f30-f40-d18e-d28e-d38e"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16.3,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.chango.fr/catalogue/produits/kickscooter-d38e",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.gyro-phare.com/94-trottinette-electrique-ninebot-d38e.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.2,
+            "source_url": "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+            "source_url_2": "https://www.gyro-phare.com/94-trottinette-electrique-ninebot-d38e.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.but.fr/produits/8720254406039/Trottinette-electrique-NINEBOT-D38E-by-Segway.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 38,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.but.fr/produits/8720254406039/Trottinette-electrique-NINEBOT-D38E-by-Segway.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.pccomponentes.fr/segway-d38e-ninebot-kickscooter-scooter-electrique-adulte",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.pccomponentes.fr/segway-d38e-ninebot-kickscooter-scooter-electrique-adulte",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.125",
+            "source_url": "https://www.segwayfrance.com/boutique/Pneu-10-x-2-125-pour-Serie-D-F-p673549928",
+            "source_url_2": "https://e-watts.fr/produit/chambre-a-air-10x2-125-ninebot-f-et-d-series/",
+            "source_type": "distributeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://joeybabcock.me/wiki/Ninebot_D38E",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+            "source_url_2": "https://www.but.fr/produits/8720254406039/Trottinette-electrique-NINEBOT-D38E-by-Segway.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot D38E est une trottinette électrique pliable à moteur de 350 W (500 W en pointe) dans la roue avant, alimentée par une batterie de 367 Wh (36 V, 10,2 Ah) pour une autonomie annoncée jusqu'à 38 km. Elle roule sur des pneus gonflables de 10 pouces (10x2.125) avec chambre à air, sans suspension, et freine avec un frein électronique à l'avant et un frein à tambour à l'arrière. Sa vitesse est bridée à 25 km/h, pour une charge maximale de 120 kg et un poids de 16,3 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://eu-en.segway.com/products/ninebot-kickscooter-d-series",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.but.fr/produits/8720254406039/Trottinette-electrique-NINEBOT-D38E-by-Segway.html",
+            "https://www.pixmania.com/fr/fr/ninebot-by-segway-d38e-25-kmh-noir-rouge-102-ah-140590.html",
+            "https://www.pccomponentes.fr/segway-d38e-ninebot-kickscooter-scooter-electrique-adulte"
+          ],
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/4c8f4ba6-4fb8-4844-d29d-56af94afde00/public"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_drum_rear",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.chango.fr/catalogue/produits/kickscooter-d38e",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fr-fr.segway.com/products/ninebot-kickscooter-d-series",
+            "source_url_2": "https://www.chango.fr/catalogue/produits/kickscooter-d38e",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://e-watts.fr/produit/pneu-plein-10x2-125-ninebot-f25-f30-f40-d18e-d28e-d38e",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/pneu-plein-10x2-125-ninebot-f25-f30-f40-d18e-d/f-121480107-nin1737272811546.html",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-d18e-d28e-d38e",
+            "source_url_2": "https://escootervision.eu/fr-eu/products/ninebot-d18-d28-d38-reifen-10x2-125-6-5-zoll",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-d18e-d28e-d38e",
+            "source_url_2": "https://escootervision.eu/fr-eu/products/ninebot-d18-d28-d38-reifen-10x2-125-6-5-zoll",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot Max G30LP",
+        "slug": "segway-ninebot-max-g30lp",
+        "voltage": 36,
+        "amperage": 10.2,
+        "power_watts": 350,
+        "max_speed_private_kmh": 30,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "year": 2020,
+        "max_speed_kmh": 25,
+        "weight_kg": 17.5,
+        "suspension": "Aucune",
+        "ip_rating": "IPX5",
+        "tire_size": "60/70-6.5 (tubeless)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://stonebluehobbies.com/cdn/shop/products/G30LP1_1024x.jpg?v=1597865737",
+          "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30lp-1_2.png"
+        ],
+        "rim_diameter": "6.5",
+        "tire_section": "60/70",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Segway-Ninebot Max G30LP embarque un moteur arrière brushless de 350 W nominaux (700 W en crête) alimenté par une batterie 36 V de 10 200 mAh (367 Wh), pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus tubeless de 10 pouces (60/70-6.5), sans suspension, avec un frein à tambour avant et un frein électronique régénératif à l'arrière, et affiche un indice IPX5. Sa vitesse maximale constructeur est de 30 km/h, bridée à 25 km/h en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot Max G30LP - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot Max G30LP : plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot max g30lp, pieces segway-ninebot max g30lp, disque frein segway-ninebot max g30lp, plaquettes segway-ninebot max g30lp, pneu segway-ninebot max g30lp"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://support.segway.com/support_product.php?segcatid=8",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://support.segway.com/support_product.php?segcatid=8",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=8",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://freshlycharged.com/products/291/segway-max-g30lp",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://support.segway.com/support_product.php?segcatid=8",
+          "type": "constructeur",
+          "url2": "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter"
+        },
+        "suspension": {
+          "url": "https://stonebluehobbies.com/products/segway-ninebot-max-g30lp",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://support.segway.com/support_product.php?segcatid=8",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://stonebluehobbies.com/cdn/shop/products/G30LP1_1024x.jpg?v=1597865737",
+          "type": "og:image fiche produit"
+        },
+        "rim_diameter": {
+          "url": "https://www.kroxne.com/fr/pneus/155-pneu-tubeless-pour-ninebot-max-g30-g30p-g30d-et-g30lp-60-70-65.html",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/chambres-a-air/chambre-a-air-60-70-6-5-segway-ninebot-max-g30-g30e-g30lp-g30d-trottinette-electrique-pneu-10-pouces-avant-arriere/"
+        },
+        "tire_section": {
+          "url": "https://www.kroxne.com/fr/pneus/155-pneu-tubeless-pour-ninebot-max-g30-g30p-g30d-et-g30lp-60-70-65.html",
+          "type": "revendeur",
+          "url2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/chambres-a-air/chambre-a-air-60-70-6-5-segway-ninebot-max-g30-g30e-g30lp-g30d-trottinette-electrique-pneu-10-pouces-avant-arriere/"
+        },
+        "tire_family": {
+          "url": "https://trott-en-provence.fr/pneu-renforce-tubeless-10-pouces-original-cst-60-70-6-5ninebot-g30-max-g30d-g30le-g30lp-g30e-ii/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 17.5,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_url_2": "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.2,
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://www.trottnshop.com/produit/ninebot-max-g30-le/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://freshlycharged.com/products/291/segway-max-g30lp",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 30,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_url_2": "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_url_2": "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_url_2": "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://freshlycharged.com/products/291/segway-max-g30lp",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "60/70-6.5 (tubeless)",
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://www.imooving.com/pneus/472-pneu-ninebot-pourtrottinette-electrique-3701665900861.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Aucune",
+            "source_url": "https://stonebluehobbies.com/products/segway-ninebot-max-g30lp",
+            "source_url_2": "https://freshlycharged.com/reviews/291/segway-ninebot-max-g30lp",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://support.segway.com/support_product.php?segcatid=8",
+            "source_url_2": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_url_2": "https://freshlycharged.com/products/291/segway-max-g30lp",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2020,
+            "source_url": "https://freshlycharged.com/products/291/segway-max-g30lp",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot Max G30LP embarque un moteur arrière brushless de 350 W nominaux (700 W en crête) alimenté par une batterie 36 V de 10 200 mAh (367 Wh), pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus tubeless de 10 pouces (60/70-6.5), sans suspension, avec un frein à tambour avant et un frein électronique régénératif à l'arrière, et affiche un indice IPX5. Sa vitesse maximale constructeur est de 30 km/h, bridée à 25 km/h en France. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://ap-en.segway.com/ekickscooter/products/max-g30lp.html",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://trottitoir.com/products/ninebot-max-g30lp-30km-h-kickscooter",
+            "https://stonebluehobbies.com/products/segway-ninebot-max-g30lp",
+            "https://store.segway.com/ninebot-kickscooter-max-g30lp"
+          ],
+          "_og_images": [
+            "http://stonebluehobbies.com/cdn/shop/products/G30LP1_1024x.jpg?v=1597865737",
+            "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30lp-1_2.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "60/70",
+            "source_url": "https://www.kroxne.com/fr/pneus/155-pneu-tubeless-pour-ninebot-max-g30-g30p-g30d-et-g30lp-60-70-65.html",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/chambres-a-air/chambre-a-air-60-70-6-5-segway-ninebot-max-g30-g30e-g30lp-g30d-trottinette-electrique-pneu-10-pouces-avant-arriere/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.kroxne.com/fr/pneus/155-pneu-tubeless-pour-ninebot-max-g30-g30p-g30d-et-g30lp-60-70-65.html",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/chambres-a-air/chambre-a-air-60-70-6-5-segway-ninebot-max-g30-g30e-g30lp-g30d-trottinette-electrique-pneu-10-pouces-avant-arriere/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://trott-en-provence.fr/pneu-renforce-tubeless-10-pouces-original-cst-60-70-6-5ninebot-g30-max-g30d-g30le-g30lp-g30e-ii/",
+            "source_url_2": "https://kissmywheels.ch/pieces-detachees/pieces-detachees-trottinettes-electriques/chambres-a-air/chambre-a-air-60-70-6-5-segway-ninebot-max-g30-g30e-g30lp-g30d-trottinette-electrique-pneu-10-pouces-avant-arriere/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Segway-Ninebot ES2",
+        "slug": "segway-ninebot-es2",
+        "voltage": 36,
+        "amperage": 5.2,
+        "power_watts": 300,
+        "max_speed_private_kmh": 25,
+        "range_km": 25,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 12.5,
+        "suspension": "Avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "8 pouces (avant) / 7,5 pouces (arrière), pneus pleins",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "https://media.ldlc.com/r1600/ld/products/00/05/09/17/LD0005091716_2.jpg",
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2017/08/ninebot-kick-es2-2-e1529090094999.jpg"
+        ],
+        "brake_type": "fender_foot_ebs",
+        "tire_family": "solid",
+        "score_offroad": 23,
+        "description": "La Segway-Ninebot ES2 est une trottinette électrique pliable équipée d'un moteur de 300 W dans la roue avant et d'une batterie lithium 36 V / 187 Wh (5,2 Ah), pour une autonomie annoncée de 25 km. Elle roule sur des pneus pleins de 8 pouces à l'avant et 7,5 pouces à l'arrière, avec suspension avant et arrière, frein électrique et frein mécanique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Segway-Ninebot ES2 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Segway-Ninebot ES2 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "segway-ninebot es2, pieces segway-ninebot es2, disque frein segway-ninebot es2, plaquettes segway-ninebot es2, pneu segway-ninebot es2"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.ldlc.com/fiche/PB00259655.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.ldlc.com/fiche/PB00259655.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.ldlc.com/fiche/PB00259655.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+          "type": "revendeur",
+          "url2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html"
+        },
+        "suspension": {
+          "url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.ldlc.com/fiche/PB00259655.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.ldlc.com/fiche/PB00259655.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://media.ldlc.com/r1600/ld/products/00/05/09/17/LD0005091716_2.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.tomsguide.fr/test-ninebot-es2-que-vaut-la-nouvelle-trottinette-de-segway/",
+          "type": "site_test"
+        },
+        "tire_family": {
+          "url": "https://www.segwayfrance.com/grand-public/kickscooter-es1-es2/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 12.5,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+            "source_url_2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_url_2": "https://smash-ace.fr/segway-kickscooter-ninebot-es2-trottinette/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 5.2,
+            "source_url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_url_2": "https://www.phonandroid.com/test-segway-ninebot-es2.html",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 300,
+            "source_url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_url_2": "https://www.exellent.be/fr/pr/ninebot-segway-kickscooter-es2-dark-grey",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_url_2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_url_2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_url_2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+            "source_url_2": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "8 pouces (avant) / 7,5 pouces (arrière), pneus pleins",
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+            "source_url_2": "https://matrott.com/test-ninebot-es2-trottinette-electrique/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_url_2": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.ldlc.com/fiche/PB00259655.html",
+            "source_url_2": "https://www.phonandroid.com/test-segway-ninebot-es2.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Segway-Ninebot ES2 est une trottinette électrique pliable équipée d'un moteur de 300 W dans la roue avant et d'une batterie lithium 36 V / 187 Wh (5,2 Ah), pour une autonomie annoncée de 25 km. Elle roule sur des pneus pleins de 8 pouces à l'avant et 7,5 pouces à l'arrière, avec suspension avant et arrière, frein électrique et frein mécanique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://alternative.bike/629-trottinette-electrique-ninebot-segway-es2.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.ldlc.com/fiche/PB00259655.html",
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/trottinette-ninebot-by-segway-es2-kick-scooter",
+            "https://www.ubaldi.com/auto-moto-gps/mobilite-urbaine/mobilite-urbaine/ninebot/trottinette-electrique-ninebot--segway-kickscooter-es2-dark-grey--20517470.php"
+          ],
+          "_og_images": [
+            "https://media.ldlc.com/r1600/ld/products/00/05/09/17/LD0005091716_2.jpg",
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2017/08/ninebot-kick-es2-2-e1529090094999.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "fender_foot_ebs",
+            "source_url": "https://www.tomsguide.fr/test-ninebot-es2-que-vaut-la-nouvelle-trottinette-de-segway/",
+            "source_url_2": "https://www.phonandroid.com/test-segway-ninebot-es2.html",
+            "source_type": "site_test"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.segwayfrance.com/grand-public/kickscooter-es1-es2/",
+            "source_url_2": "https://www.tomsguide.fr/test-ninebot-es2-que-vaut-la-nouvelle-trottinette-de-segway/",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

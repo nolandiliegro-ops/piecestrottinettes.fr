@@ -1,0 +1,1717 @@
+{
+  "brandName": "Teverun",
+  "results": [
+    {
+      "scooter": {
+        "name": "Teverun Fighter 11",
+        "slug": "teverun-fighter-11",
+        "voltage": 60,
+        "amperage": 26,
+        "power_watts": 5000,
+        "max_speed_private_kmh": 85,
+        "range_km": 80,
+        "max_load_kg": 130,
+        "max_speed_kmh": 25,
+        "weight_kg": 35,
+        "suspension": "Suspension à ressorts avant et arrière (hydrauliques réglables sur la version 11+)",
+        "ip_rating": "IPX5",
+        "tire_size": "90/65-6 (CST, tubeless)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://over-watt.fr/cdn/shop/files/11-Plus-Teverun-8141842_1445x_75bb291d-64ed-465e-9a81-2f3d92ab5997.jpg?v=1736175863"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Teverun Fighter 11 embarque deux moteurs (5000 W en pointe au total) alimentés par une batterie LG 60V 26Ah, pour une vitesse bridée à 25 km/h sur voie publique et jusqu'à 85 km/h sur terrain privé. Elle est équipée de pneus tubeless CST 11 pouces (90/65-6) avec bande de gel anticrevaison, de suspensions à ressorts avant et arrière et de freins à disque hydrauliques. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter 11 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter 11 : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter 11, pieces teverun fighter 11, disque frein teverun fighter 11, plaquettes teverun fighter 11, pneu teverun fighter 11"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://www.gyro-phare.com/119-trottinette-electrique-teverun-fighter-eleven-eleven-plus-11-.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://voltee.co/products/trottinette-electrique-teverun-fighter-11",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/119-trottinette-electrique-teverun-fighter-eleven-eleven-plus-11-.html"
+        },
+        "suspension": {
+          "url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+          "type": "distributeur"
+        },
+        "ip_rating": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://over-watt.fr/cdn/shop/files/11-Plus-Teverun-8141842_1445x_75bb291d-64ed-465e-9a81-2f3d92ab5997.jpg?v=1736175863",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://funtrott.fr/accueil/1907-trottinette-electrique-teverun-fighter-11-et-11-by-minimotors-.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.minimotors.fr/product/teverun-fighter-10-10-11-11-supreme-disque-de-frein-160mm/",
+          "type": "distributeur",
+          "url2": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html"
+        },
+        "rim_diameter": {
+          "url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+          "type": "distributeur",
+          "url2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/"
+        },
+        "tire_section": {
+          "url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+          "type": "distributeur",
+          "url2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/"
+        },
+        "caliper_family": {
+          "url": "https://www.wee-bot.com/products/plaquettes-de-frein-rectangulaires-haute-performance-pour-trottinette-dualtron-victor-et-autres",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 35,
+            "source_url": "https://voltee.co/products/trottinette-electrique-teverun-fighter-11",
+            "source_url_2": "https://www.gyro-phare.com/119-trottinette-electrique-teverun-fighter-eleven-eleven-plus-11-.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_url_2": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 26,
+            "source_url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-11/",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 5000,
+            "source_url": "https://www.gyro-phare.com/119-trottinette-electrique-teverun-fighter-eleven-eleven-plus-11-.html",
+            "source_url_2": "https://voltee.co/products/trottinette-electrique-teverun-fighter-11",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 85,
+            "source_url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_url_2": "https://uraniumtrott.com/en/trottinette-electrique/6654-trottinette-electrique-teverun-fighter-11.html",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_url_2": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 130,
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://uraniumtrott.com/en/trottinette-electrique/6654-trottinette-electrique-teverun-fighter-11.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://uraniumtrott.com/en/trottinette-electrique/6654-trottinette-electrique-teverun-fighter-11.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "90/65-6 (CST, tubeless)",
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://uraniumtrott.com/en/trottinette-electrique/6654-trottinette-electrique-teverun-fighter-11.html",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspension à ressorts avant et arrière (hydrauliques réglables sur la version 11+)",
+            "source_url": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-teverun-fighter-11-et-11",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-teverun-fighter-11-et-11",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-teverun-fighter-11-et-11",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter 11 embarque deux moteurs (5000 W en pointe au total) alimentés par une batterie LG 60V 26Ah, pour une vitesse bridée à 25 km/h sur voie publique et jusqu'à 85 km/h sur terrain privé. Elle est équipée de pneus tubeless CST 11 pouces (90/65-6) avec bande de gel anticrevaison, de suspensions à ressorts avant et arrière et de freins à disque hydrauliques. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "source_url_2": "https://www.minimotors.fr/en/trottinette-electrique-teverun-fighter-eleven",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://biospeed.fr/produit/trottinette-electrique-teverun-fighter/",
+            "https://voltee.co/products/trottinette-electrique-teverun-fighter-11",
+            "https://over-watt.fr/products/trottinette-electrique-teverun-fighter-11-et-11"
+          ],
+          "_og_images": [
+            "https://over-watt.fr/cdn/shop/files/11-Plus-Teverun-8141842_1445x_75bb291d-64ed-465e-9a81-2f3d92ab5997.jpg?v=1736175863"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://funtrott.fr/accueil/1907-trottinette-electrique-teverun-fighter-11-et-11-by-minimotors-.html",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-11/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.minimotors.fr/product/teverun-fighter-10-10-11-11-supreme-disque-de-frein-160mm/",
+            "source_url_2": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_type": "distributeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://www.wee-bot.com/products/plaquettes-de-frein-rectangulaires-haute-performance-pour-trottinette-dualtron-victor-et-autres",
+            "source_url_2": "https://fr.aliexpress.com/item/1005008064484831.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Fighter 11+",
+        "slug": "teverun-fighter-11-plus",
+        "voltage": 60,
+        "amperage": 37.1,
+        "power_watts": 4900,
+        "max_speed_private_kmh": 85,
+        "range_km": 120,
+        "max_load_kg": 150,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 44,
+        "suspension": "Hydraulique réglable KKE avant et arrière",
+        "ip_rating": "IPX6",
+        "tire_size": "90/65-6",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg?v=1781287748",
+          "https://electrotraveller.com/wp-content/uploads/2025/02/Taverun-Fighter-11-Electric-Scooter-1.webp"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "nutt_4p",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Teverun Fighter 11+ (version 2026) embarque deux moteurs de 1600 W (4900 W en pointe) alimentés par une batterie 60V 37,1Ah à cellules Samsung. Elle roule sur des pneus tubeless CST 11 pouces (90/65-6), avec freins hydrauliques à 4 pistons et suspensions hydrauliques réglables. Sa vitesse est bridée à 25 km/h sur voie publique, débridable jusqu'à 85 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter 11+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter 11+ : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter 11+, pieces teverun fighter 11+, disque frein teverun fighter 11+, plaquettes teverun fighter 11+, pneu teverun fighter 11+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://teverun.com/product/fighter-eleven-plus/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://teverun.com/product/fighter-eleven-plus/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://teverun.com/product/fighter-eleven-plus/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://teverun.com/fighter-11plus-7260r-compare/",
+          "type": "constructeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/teverun-fighter-eleven-4-tft-display-2026"
+        },
+        "suspension": {
+          "url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=08a4415e9d59",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg?v=1781287748",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/teverun/pieces-detachees-teverun-fighter-11-11-plus/",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11",
+          "type": "revendeur",
+          "url2": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html"
+        },
+        "disc_holes": {
+          "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11",
+          "type": "revendeur",
+          "url2": "https://funtrott.fr/299-teverun"
+        },
+        "rim_diameter": {
+          "url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+          "type": "revendeur",
+          "url2": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html"
+        },
+        "tire_section": {
+          "url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-teverun-fighter-11"
+        },
+        "caliper_family": {
+          "url": "https://fastride.fr/en/286-accessoires-teverun-blade",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 44,
+            "source_url": "https://teverun.com/fighter-11plus-7260r-compare/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/teverun-fighter-eleven-4-tft-display-2026",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=08a4415e9d59",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 37.1,
+            "source_url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 4900,
+            "source_url": "https://teverun.com/product/fighter-eleven-plus/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/teverun-fighter-eleven-4-tft-display-2026",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 85,
+            "source_url": "https://teverun.com/product/fighter-eleven-plus/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 120,
+            "source_url": "https://teverun.com/product/fighter-eleven-plus/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "90/65-6",
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique réglable KKE avant et arrière",
+            "source_url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=82a9e4d26595",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=08a4415e9d59",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.teverunusa.com/products/fighter-eleven-plus",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter 11+ (version 2026) embarque deux moteurs de 1600 W (4900 W en pointe) alimentés par une batterie 60V 37,1Ah à cellules Samsung. Elle roule sur des pneus tubeless CST 11 pouces (90/65-6), avec freins hydrauliques à 4 pistons et suspensions hydrauliques réglables. Sa vitesse est bridée à 25 km/h sur voie publique, débridable jusqu'à 85 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wilsonebikes.com/products/teverun-fighter-eleven-plus-electric-scooter",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-11-plus",
+            "https://www.imooving.com/trottinettes-electriques/1689-trottinette-electrique-teverun-fighter-11plus-2026-.html",
+            "https://electrotraveller.com/electric-scooters/teverun-fighter-11-plus/?v=08a4415e9d59"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg?v=1781287748",
+            "https://electrotraveller.com/wp-content/uploads/2025/02/Taverun-Fighter-11-Electric-Scooter-1.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/teverun/pieces-detachees-teverun-fighter-11-11-plus/",
+            "source_url_2": "https://funtrott.fr/accueil/1907-trottinette-electrique-teverun-fighter-11-et-11-by-minimotors-.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11",
+            "source_url_2": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/freinage-trottinette-electrique/disque-de-frein-trottinette-electrique/disque-de-frein-teverun-fighter-11-11",
+            "source_url_2": "https://funtrott.fr/299-teverun",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "nutt_4p",
+            "source_url": "https://fastride.fr/en/286-accessoires-teverun-blade",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_url_2": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-teverun-fighter-11",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_url_2": "https://www.minimotors-shop.fr/pieces-detachees-teverun/258-pneu-tubeless-cst-9065-65-teverun-fighter-11-3701522010283.html",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_url_2": "https://funtrott.fr/accueil/1907-trottinette-electrique-teverun-fighter-11-et-11-by-minimotors-.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Fighter Supreme",
+        "slug": "teverun-fighter-supreme",
+        "voltage": 72,
+        "amperage": 33.6,
+        "power_watts": 8000,
+        "max_speed_private_kmh": 100,
+        "range_km": 120,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "suspension": "Hydraulique / ressort, réglable (avant et arrière)",
+        "ip_rating": "IPX5",
+        "tire_size": "90/65-6.5 (11 pouces, tubeless)",
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_Teverun_Fighter_Supreme_Plus_Pas_cher-227862.jpg?v=1754044866"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Teverun Fighter Supreme est une trottinette électrique double moteur (2 x 4000 W, soit 8000 W) alimentée par une batterie 72 V (33,6 à 35 Ah selon les fiches) annoncée jusqu'à 120 km d'autonomie. Elle roule sur des pneus tubeless de 11 pouces (90/65-6.5), avec suspensions hydrauliques/ressorts réglables et freins à disque hydrauliques. Elle est bridée à 25 km/h sur voie publique et débridable jusqu'à 100 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter Supreme - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter Supreme : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter supreme, pieces teverun fighter supreme, disque frein teverun fighter supreme, plaquettes teverun fighter supreme, pneu teverun fighter supreme"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "suspension": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_Teverun_Fighter_Supreme_Plus_Pas_cher-227862.jpg?v=1754044866",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html",
+          "type": "revendeur",
+          "url2": "https://dualtron-shop.com/product/brake-disc-teverun/"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron-thunder",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/"
+        },
+        "tire_section": {
+          "url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron-thunder",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/"
+        },
+        "caliper_family": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg"
+      ],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [
+        {
+          "key": "weight_kg",
+          "value": 45,
+          "url": "https://movelek.com/avis/teverun-fighter-supreme/"
+        }
+      ],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 45,
+            "source_url": "https://movelek.com/avis/teverun-fighter-supreme/",
+            "source_url_2": "https://www.gyro-phare.com/121-trottinette-electrique-teverun-fighter-supreme-supreme-plus.html",
+            "source_type": "site_test"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 33.6,
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://movelek.com/avis/teverun-fighter-supreme/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 8000,
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 100,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 120,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.gyro-phare.com/121-trottinette-electrique-teverun-fighter-supreme-supreme-plus.html",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (11 pouces, tubeless)",
+            "source_url": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_url_2": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron-thunder",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique / ressort, réglable (avant et arrière)",
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.gyro-phare.com/121-trottinette-electrique-teverun-fighter-supreme-supreme-plus.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter Supreme est une trottinette électrique double moteur (2 x 4000 W, soit 8000 W) alimentée par une batterie 72 V (33,6 à 35 Ah selon les fiches) annoncée jusqu'à 120 km d'autonomie. Elle roule sur des pneus tubeless de 11 pouces (90/65-6.5), avec suspensions hydrauliques/ressorts réglables et freins à disque hydrauliques. Elle est bridée à 25 km/h sur voie publique et débridable jusqu'à 100 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "https://www.gyro-phare.com/121-trottinette-electrique-teverun-fighter-supreme-supreme-plus.html"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_electrique_Teverun_Fighter_Supreme_Plus_Pas_cher-227862.jpg?v=1754044866"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": "https://www.glisseurbaine.com/2949-trottinette-electrique-teverun-fighter-supreme.html",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://fastride.fr/en/pieces-pour-teverun-teverun-blade/4113-disque-de-frein-160mm-teverun.html",
+            "source_url_2": "https://dualtron-shop.com/product/brake-disc-teverun/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": "https://trottinette-electrique-adulte.fr/produit/trottinette-electrique-teverun-fighter-supreme/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron-thunder",
+            "source_url_2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.wee-bot.com/products/pneu-trottinette-electrique-dualtron-thunder",
+            "source_url_2": "https://trott-en-provence.fr/pneu-avec-gel-anti-crevaison-teverun-fighter-11-11-supreme/",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme",
+            "source_url_2": "https://www.gyro-phare.com/121-trottinette-electrique-teverun-fighter-suprem.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Fighter Supreme 7260R",
+        "slug": "teverun-fighter-supreme-7260r",
+        "voltage": 72,
+        "amperage": 60,
+        "power_watts": 5000,
+        "max_speed_private_kmh": 120,
+        "range_km": 200,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 64,
+        "suspension": "Hydraulique réglable KKE avant et arrière, double amortisseur de direction",
+        "ip_rating": "IPX5",
+        "tire_size": "13 x 5 pouces (tubeless)",
+        "foldable": true,
+        "wheel_inches": 13,
+        "source_image_urls": [
+          "https://www.neverwheelup.com/wp-content/uploads/2023/08/copertina-4.jpg"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 180,
+        "rim_diameter": "7",
+        "tire_section": "125/60",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Teverun Fighter Supreme 7260R est une trottinette électrique à double moteur (2 x 2500 W, 15 000 W en crête) alimentée par une batterie SK 72 V 60 Ah (4320 Wh), annoncée jusqu'à 200 km d'autonomie. Elle est équipée de pneus tubeless de 13 pouces, de freins hydrauliques 4 pistons et d'une suspension hydraulique réglable KKE ; sa vitesse atteint jusqu'à 120 km/h sur terrain privé, bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Fighter Supreme 7260R - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Fighter Supreme 7260R : disque de frein 180 mm, plaquettes, pneus 125/60, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun fighter supreme 7260r, pieces teverun fighter supreme 7260r, disque frein teverun fighter supreme 7260r, plaquettes teverun fighter supreme 7260r, pneu teverun fighter supreme 7260r"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/?v=08a4415e9d59",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/?v=08a4415e9d59",
+          "type": "revendeur",
+          "url2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-supreme-7260r-v5/"
+        },
+        "suspension": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://turbokids.ca/en/products/teverun-fighter-supreme-7260r-trottinette-electrique-72-volts-60ah-2x2500-watts-2x7500-watts-peak",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://freshlycharged.com/reviews/223/teverun-fighter-supreme-7260r",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://teverun-europe.com/product/supreme-7260r/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.neverwheelup.com/wp-content/uploads/2023/08/copertina-4.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://teverun.com/product/fighter-supreme-7260r/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://fastride.fr/en/teverun-fighter-7260r/4037-disque-de-frein-180mm-teverun-7260r.html",
+          "type": "revendeur",
+          "url2": "https://www.voromotors.com/products/180mm-brake-disc-for-fighter-supreme-7260r"
+        },
+        "rim_diameter": {
+          "url": "https://www.green220.fr/accueil/1887-pneu-12560-7-teverun-fighter-supreme-7260r.html",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/"
+        },
+        "tire_section": {
+          "url": "https://www.green220.fr/accueil/1887-pneu-12560-7-teverun-fighter-supreme-7260r.html",
+          "type": "revendeur",
+          "url2": "https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/"
+        },
+        "tire_family": {
+          "url": "https://teverun.com/product/fighter-supreme-7260r/",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 64,
+            "source_url": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/?v=08a4415e9d59",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-supreme-7260r-v5/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://ezwheelusa.com/products/teverun-fighter-supreme-7260r",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 60,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/?v=08a4415e9d59",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 5000,
+            "source_url": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/?v=08a4415e9d59",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-supreme-7260r-v5/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 120,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://meilleuretrott.fr/trottinettes/teverun-fighter-supreme-7260r-v5/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 200,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://www.neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 13,
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://ezwheelusa.com/products/teverun-fighter-supreme-7260r",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "13 x 5 pouces (tubeless)",
+            "source_url": "https://turbokids.ca/en/products/teverun-fighter-supreme-7260r-trottinette-electrique-72-volts-60ah-2x2500-watts-2x7500-watts-peak",
+            "source_url_2": "https://freshlycharged.com/reviews/223/teverun-fighter-supreme-7260r",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique réglable KKE avant et arrière, double amortisseur de direction",
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://ezwheelusa.com/products/teverun-fighter-supreme-7260r",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+            "source_url_2": "https://ezwheelusa.com/products/teverun-fighter-supreme-7260r",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://freshlycharged.com/reviews/223/teverun-fighter-supreme-7260r",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Teverun Fighter Supreme 7260R est une trottinette électrique à double moteur (2 x 2500 W, 15 000 W en crête) alimentée par une batterie SK 72 V 60 Ah (4320 Wh), annoncée jusqu'à 200 km d'autonomie. Elle est équipée de pneus tubeless de 13 pouces, de freins hydrauliques 4 pistons et d'une suspension hydraulique réglable KKE ; sa vitesse atteint jusqu'à 120 km/h sur terrain privé, bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://teverun-europe.com/product/supreme-7260r/",
+            "source_url_2": "https://turbokids.ca/en/products/teverun-fighter-supreme-7260r-trottinette-electrique-72-volts-60ah-2x2500-watts-2x7500-watts-peak",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://teverun-europe.com/product/supreme-7260r/",
+            "https://www.neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+            "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-supreme-7260r/"
+          ],
+          "_og_images": [
+            "https://www.neverwheelup.com/wp-content/uploads/2023/08/copertina-4.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://teverun.com/product/fighter-supreme-7260r/",
+            "source_url_2": "https://www.neverwheelup.com/fr/product/teverun-fighter-supreme-7260r-2024/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 180,
+            "source_url": "https://fastride.fr/en/teverun-fighter-7260r/4037-disque-de-frein-180mm-teverun-7260r.html",
+            "source_url_2": "https://www.voromotors.com/products/180mm-brake-disc-for-fighter-supreme-7260r",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "125/60",
+            "source_url": "https://www.green220.fr/accueil/1887-pneu-12560-7-teverun-fighter-supreme-7260r.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "7",
+            "source_url": "https://www.green220.fr/accueil/1887-pneu-12560-7-teverun-fighter-supreme-7260r.html",
+            "source_url_2": "https://trott-en-provence.fr/pneu-teverun-fighter-supreme-7260r/",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://teverun.com/product/fighter-supreme-7260r/",
+            "source_url_2": "https://www.renovomotors.com/products/teverun-fighter-supreme-7260r",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Blade Mini Pro",
+        "slug": "teverun-blade-mini-pro",
+        "voltage": 48,
+        "amperage": 20.8,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 50,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "year": 2025,
+        "max_speed_kmh": 25,
+        "weight_kg": 29,
+        "suspension": "Suspension à ressorts avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10x3.0 (chambre à air)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "disc_mechanical",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "9x3.0",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Teverun Blade Mini Pro est une trottinette électrique urbaine pliable équipée de deux moteurs de 500 W (2400 W en crête) et d'une batterie 48 V 20,8 Ah. Elle roule sur des pneus de 10x3 pouces à chambre à air avec suspensions à ressorts avant et arrière et freins à double disque mécaniques, pour une vitesse de pointe de 50 km/h sur terrain privé (bridée à 25 km/h sur voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Blade Mini Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Blade Mini Pro : disque de frein 140 mm, plaquettes, pneus 9x3.0, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun blade mini pro, pieces teverun blade mini pro, disque frein teverun blade mini pro, plaquettes teverun blade mini pro, pneu teverun blade mini pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://riedis-electric.com/en/teverun-blade-mini/1493-teverun-blade-mini-pro-156ah-electric-scooter-new-2025-model--4774206029992.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+          "type": "revendeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/teverun-blade"
+        },
+        "suspension": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://teverun.com/blade-mini-pro/",
+          "type": "constructeur"
+        },
+        "brake_type": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-mini-pro",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.green220.fr/trottinettes-electriques/1071-trottinette-electrique-teverun-blade-mini-pro-48-v-234-ah-3701522002981.html",
+          "type": "distributeur",
+          "url2": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html"
+        },
+        "rim_diameter": {
+          "url": "https://fastride.fr/fr/teverun-blade-mini-/4131-pneu-9x300-6-teverun-blade-mini.html",
+          "type": "revendeur",
+          "url2": "https://funtrott.fr/accueil/2264-pneu-9x300-6-teverun-blade-mini.html"
+        },
+        "tire_section": {
+          "url": "https://fastride.fr/fr/teverun-blade-mini-/4131-pneu-9x300-6-teverun-blade-mini.html",
+          "type": "revendeur",
+          "url2": "https://funtrott.fr/accueil/2264-pneu-9x300-6-teverun-blade-mini.html"
+        },
+        "tire_family": {
+          "url": "https://fixwheel.fr/products/trottinette-electrique-teverun-blade-mini-pro",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29,
+            "source_url": "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/teverun-blade",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 20.8,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-black/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://www.rueducommerce.fr/p/m25129300744.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-black/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x3.0 (chambre à air)",
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension à ressorts avant et arrière",
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_url_2": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electricavenuesaguenay.ca/en/products/blade-mini-pro",
+            "source_url_2": "https://teverun-europe.com/product/blade-mini-pro-black/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2025,
+            "source_url": "https://riedis-electric.com/en/teverun-blade-mini/1493-teverun-blade-mini-pro-156ah-electric-scooter-new-2025-model--4774206029992.html",
+            "source_url_2": "https://www.eleqtron.fr/products/trottinette-electrique-teverun-fighter-mini-eco-mini-et-mini-pro-copie",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Teverun Blade Mini Pro est une trottinette électrique urbaine pliable équipée de deux moteurs de 500 W (2400 W en crête) et d'une batterie 48 V 20,8 Ah. Elle roule sur des pneus de 10x3 pouces à chambre à air avec suspensions à ressorts avant et arrière et freins à double disque mécaniques, pour une vitesse de pointe de 50 km/h sur terrain privé (bridée à 25 km/h sur voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://teverun.com/blade-mini-pro/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://teverun-europe.com/product/blade-mini-pro-black/",
+            "https://teverun-europe.com/product/blade-mini-pro-yellow/",
+            "https://electricavenuesaguenay.ca/en/products/blade-mini-pro"
+          ],
+          "_og_images": [
+            "https://cdn.shopify.com/s/files/1/0532/7876/9311/files/logo_EA_afb36f00-a4c7-47d7-a2d1-f23dee25d6b2.jpg?v=1627561050"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-mini-pro",
+            "source_url_2": "https://turbokids.ca/en/products/teverun-blade-mini-pro-red-trottinette-electrique-48-volts-15-6ah-2x500-watts-1200-watts-peak-1",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://www.green220.fr/trottinettes-electriques/1071-trottinette-electrique-teverun-blade-mini-pro-48-v-234-ah-3701522002981.html",
+            "source_url_2": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html",
+            "source_type": "distributeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/en/pieces-d-origine/3237-disque-de-frein-140mm-entraxe-44mm.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://fixwheel.fr/products/trottinette-electrique-teverun-blade-mini-pro",
+            "source_url_2": "https://over-watt.fr/products/trottinette-electrique-teverun-blade-mini-pro",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "9x3.0",
+            "source_url": "https://fastride.fr/fr/teverun-blade-mini-/4131-pneu-9x300-6-teverun-blade-mini.html",
+            "source_url_2": "https://funtrott.fr/accueil/2264-pneu-9x300-6-teverun-blade-mini.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://fastride.fr/fr/teverun-blade-mini-/4131-pneu-9x300-6-teverun-blade-mini.html",
+            "source_url_2": "https://funtrott.fr/accueil/2264-pneu-9x300-6-teverun-blade-mini.html",
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Teverun Blade GT II",
+        "slug": "teverun-blade-gt-ii",
+        "voltage": 60,
+        "amperage": 26,
+        "power_watts": 3200,
+        "max_speed_private_kmh": 85,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "year": 2026,
+        "max_speed_kmh": 25,
+        "weight_kg": 43,
+        "suspension": "Suspension à ressorts avant et arrière, amortisseur de direction",
+        "ip_rating": "IPX6",
+        "tire_size": "90/65-6.5 (11 pouces, tubeless anti-crevaison)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.wilsonebikes.com/cdn/shop/files/gt2-8_7c657dbd-2212-4fbd-aa1c-a17f1837c10c.jpg?v=1788899232",
+          "https://www.voromotors.com/cdn/shop/files/1_32cb7a07-5ca1-4627-bc03-f285bea41143.webp?v=1764264543"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Teverun Blade GT II embarque deux moteurs de 1600 W (4900 W en pointe) alimentés par une batterie 60V 26Ah à BMS intelligent, pour une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless anti-crevaison de 11 pouces (90/65-6.5), de freins hydrauliques à disque avant et arrière, d'une suspension à ressorts et d'un amortisseur de direction. Elle est livrée avec une vitesse bridée à 25 km/h pour la voie publique (jusqu'à 85 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Teverun Blade GT II - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Teverun Blade GT II : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "teverun blade gt ii, pieces teverun blade gt ii, disque frein teverun blade gt ii, plaquettes teverun blade gt ii, pneu teverun blade gt ii"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://riedis-electric.com/en/teverun-blade-mini/1125-teverun-blade-gt-ii-60v-26ah-electric-scooter-new-2025-model--4774206029942.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.teverunusa.com/products/blade-gt-ii",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur",
+          "url2": "https://wilsonebikes.com/product/blade-gt-ii-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://teverunshop.com/products/blade-gt-ii",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.teverunusa.com/products/blade-gt-ii",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://wilsonebikes.com/product/blade-gt-ii-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wilsonebikes.com/cdn/shop/files/gt2-8_7c657dbd-2212-4fbd-aa1c-a17f1837c10c.jpg?v=1788899232",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://teverun.com/product/blade-gt-ii/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://fr.aliexpress.com/s/video-ssr/detail/5000114264021",
+          "type": "revendeur",
+          "url2": "https://turbokids.ca/en/products/teverun-blade-gt-ii-trottinette-electrique-60-volts-26ah-2x1500-watts"
+        },
+        "rim_diameter": {
+          "url": "https://www.trottnshop.com/produit/teverun-blade-gt2/",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2"
+        },
+        "tire_section": {
+          "url": "https://www.trottnshop.com/produit/teverun-blade-gt2/",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2"
+        },
+        "caliper_family": {
+          "url": "https://fr.aliexpress.com/item/1005008064484831.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.liftyelectric.com/products/teverun-blade-gt-ii-1",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 43,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://wilsonebikes.com/product/blade-gt-ii-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 26,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 3200,
+            "source_url": "https://riedis-electric.com/en/teverun-blade-mini/1125-teverun-blade-gt-ii-60v-26ah-electric-scooter-new-2025-model--4774206029942.html",
+            "source_url_2": "https://www.teverunusa.com/products/blade-gt-ii",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 85,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://www.wilsonebikes.com/products/teverun-blade-gt-ii-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_url_2": "https://teverunshop.com/products/blade-gt-ii",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (11 pouces, tubeless anti-crevaison)",
+            "source_url": "https://www.teverunusa.com/products/blade-gt-ii",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension à ressorts avant et arrière, amortisseur de direction",
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX6",
+            "source_url": "https://teverunshop.com/products/blade-gt-ii",
+            "source_url_2": "https://www.voromotors.com/products/teverun-blade-gt-ii",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://wilsonebikes.com/product/blade-gt-ii-electric-scooter",
+            "source_url_2": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2026,
+            "source_url": "https://www.teverunusa.com/products/blade-gt-ii",
+            "source_url_2": "https://www.voromotors.com/products/teverun-blade-gt-ii",
+            "source_type": "constructeur"
+          },
+          "description_fr": {
+            "value": "La Teverun Blade GT II embarque deux moteurs de 1600 W (4900 W en pointe) alimentés par une batterie 60V 26Ah à BMS intelligent, pour une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless anti-crevaison de 11 pouces (90/65-6.5), de freins hydrauliques à disque avant et arrière, d'une suspension à ressorts et d'un amortisseur de direction. Elle est livrée avec une vitesse bridée à 25 km/h pour la voie publique (jusqu'à 85 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/",
+            "https://www.wilsonebikes.com/products/teverun-blade-gt-ii-electric-scooter",
+            "https://www.voromotors.com/products/teverun-blade-gt-ii"
+          ],
+          "_og_images": [
+            "http://www.wilsonebikes.com/cdn/shop/files/gt2-8_7c657dbd-2212-4fbd-aa1c-a17f1837c10c.jpg?v=1788899232",
+            "https://www.voromotors.com/cdn/shop/files/1_32cb7a07-5ca1-4627-bc03-f285bea41143.webp?v=1764264543"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://teverun.com/product/blade-gt-ii/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://fr.aliexpress.com/s/video-ssr/detail/5000114264021",
+            "source_url_2": "https://turbokids.ca/en/products/teverun-blade-gt-ii-trottinette-electrique-60-volts-26ah-2x1500-watts",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://fr.aliexpress.com/item/1005008064484831.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://www.trottnshop.com/produit/teverun-blade-gt2/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.trottnshop.com/produit/teverun-blade-gt2/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.liftyelectric.com/products/teverun-blade-gt-ii-1",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-teverun-blade-gt2",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
