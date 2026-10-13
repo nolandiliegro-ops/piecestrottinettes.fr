@@ -1,0 +1,37 @@
+{
+  "brandName": "Segway",
+  "scooters": [
+    {
+      "name": "Segway ZT3 Pro E",
+      "slug": "segway-zt3-pro-e",
+      "amperage": 12.75,
+      "power_watts": 1600,
+      "max_speed_private_kmh": 40,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 29.7,
+      "suspension": "Double suspension télescopique à l'avant et suspension à ressort à l'arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "70/60-7.5 (11 pouces, tubeless tout-terrain)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/693145799/4739316532.png"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 120,
+      "rim_diameter": "7.5",
+      "tire_section": "70/60",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Segway-Ninebot ZT3 Pro E est une trottinette électrique tout-terrain dotée d'un moteur sans balai arrière de 650 W nominaux (1600 W en crête), alimenté par une batterie de 46,8 V / 12,75 Ah (597 Wh) pour une autonomie annoncée jusqu'à 70 km. Elle roule sur des pneus tubeless tout-terrain de 11 pouces (70/60-7.5), avec double suspension télescopique à l'avant, suspension à ressort à l'arrière et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Segway-Ninebot ZT3 Pro E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Segway-Ninebot ZT3 Pro E : disque de frein 120 mm, plaquettes, pneus 70/60. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot zt3 pro e, pieces segway-ninebot zt3 pro e, disque frein segway-ninebot zt3 pro e, plaquettes segway-ninebot zt3 pro e, pneu segway-ninebot zt3 pro e",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    }
+  ]
+}

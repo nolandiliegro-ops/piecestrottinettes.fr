@@ -1,0 +1,60 @@
+{
+  "brandName": "Dualtron",
+  "scooters": [
+    {
+      "name": "Dualtron Aminia",
+      "slug": "dualtron-aminia",
+      "voltage": 52,
+      "amperage": 21,
+      "power_watts": 2000,
+      "max_speed_private_kmh": 65,
+      "range_km": 65,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 30.5,
+      "suspension": "Ressorts avant + arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "70/50-6.1 (9x2) tubeless",
+      "foldable": true,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "https://latelierdebecky.com/wp-content/uploads/2025/04/amina-double-moteur.jpg"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "6.1",
+      "tire_family": "pneumatic",
+      "score_offroad": 30,
+      "description": "La Dualtron Aminia (version Long Body double moteur 52V 21Ah) embarque deux moteurs de 1000 W nominaux, une batterie 52V 21Ah pour jusqu'à 65 km d'autonomie et des pneus tubeless de 9 pouces avec suspensions à ressorts avant et arrière. Le freinage est assuré par des freins à tambour avant et arrière avec frein électrique, et la trottinette est certifiée IPX5. Elle est vendue bridée à 25 km/h pour la voie publique et débridable jusqu'à 65 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Dualtron Aminia - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Dualtron Aminia : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dualtron aminia, pieces dualtron aminia, disque frein dualtron aminia, plaquettes dualtron aminia, pneu dualtron aminia"
+    },
+    {
+      "name": "Dualtron Dolphin",
+      "slug": "dualtron-dolphin",
+      "voltage": 36,
+      "amperage": 15,
+      "power_watts": 450,
+      "max_speed_private_kmh": 35,
+      "range_km": 47,
+      "max_load_kg": 100,
+      "year": 2024,
+      "max_speed_kmh": 25,
+      "weight_kg": 21,
+      "suspension": "Avant et arrière à ressorts",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "https://funtrott.fr/5970-large_default/dualtron-dolphin-new-eye-1-ipx5.jpg"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "6.1",
+      "score_offroad": 30,
+      "description": "La Dualtron Dolphin est une trottinette électrique pliable et légère, équipée d'un moteur de 450 W et d'une batterie 36 V disponible en 7,8, 12 ou 15 Ah. Elle roule sur des pneus de 9 pouces (avant tubeless, arrière plein), avec suspensions à ressorts et freins à tambour avant et arrière complétés par un frein électrique. Sa vitesse est bridée à 25 km/h sur voie publique et peut atteindre 35 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Dualtron Dolphin - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Dualtron Dolphin : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dualtron dolphin, pieces dualtron dolphin, disque frein dualtron dolphin, plaquettes dualtron dolphin, pneu dualtron dolphin"
+    }
+  ]
+}

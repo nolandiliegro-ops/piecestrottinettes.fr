@@ -1,0 +1,108 @@
+{
+  "brandName": "Xiaomi",
+  "scooters": [
+    {
+      "name": "Xiaomi Electric Scooter 6 Pro",
+      "slug": "xiaomi-electric-scooter-6-pro",
+      "voltage": 48,
+      "amperage": 10,
+      "power_watts": 1000,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "year": 2026,
+      "max_speed_kmh": 25,
+      "weight_kg": 27.3,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 12,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/6932554477349_h_f_l_0"
+      ],
+      "brake_type": "disc_mechanical",
+      "score_offroad": 50,
+      "description": "La Xiaomi Electric Scooter 6 Pro embarque un moteur arrière brushless de 400 W nominal (1 000 W en crête) alimenté par une batterie de 10 Ah / 468 Wh annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus tout-terrain tubeless de 12 pouces avec suspensions avant et arrière, un frein à disque à l'avant et un frein électronique E-ABS à l'arrière, pour une vitesse bridée à 25 km/h et une certification IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Xiaomi Electric Scooter 6 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Xiaomi Electric Scooter 6 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "xiaomi electric scooter 6 pro, pieces xiaomi electric scooter 6 pro, disque frein xiaomi electric scooter 6 pro, plaquettes xiaomi electric scooter 6 pro, pneu xiaomi electric scooter 6 pro"
+    },
+    {
+      "name": "Xiaomi Electric Scooter 6 Lite",
+      "slug": "xiaomi-electric-scooter-6-lite",
+      "amperage": 10,
+      "power_watts": 300,
+      "max_speed_private_kmh": 25,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "year": 2026,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.1,
+      "suspension": "Suspension avant à double ressort (course 25 mm)",
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/6932554477738_h_f_l_0",
+        "https://voltride.com/wp-content/uploads/2026/07/xiaomi-scooter-6-lite-front-side.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Xiaomi Electric Scooter 6 Lite est équipée d'un moteur brushless arrière de 300 W nominal (500 W en pointe), alimenté par une batterie de 216 Wh (10 Ah) pour jusqu'à 25 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces avec suspension avant à double ressort, et freine avec un frein à tambour avant et un E-ABS arrière ; sa vitesse maximale est de 25 km/h, pour un poids de 18,1 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Xiaomi Electric Scooter 6 Lite - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Xiaomi Electric Scooter 6 Lite : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "xiaomi electric scooter 6 lite, pieces xiaomi electric scooter 6 lite, disque frein xiaomi electric scooter 6 lite, plaquettes xiaomi electric scooter 6 lite, pneu xiaomi electric scooter 6 lite"
+    },
+    {
+      "name": "Xiaomi Electric Scooter 6",
+      "slug": "xiaomi-electric-scooter-6",
+      "amperage": 10,
+      "power_watts": 400,
+      "range_km": 45,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 26.3,
+      "suspension": "Avant à double ressort (30 mm) et arrière à ressort simple",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 12,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/6932554477752_h_f_l_0"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Xiaomi Electric Scooter 6 embarque un moteur brushless arrière de 400 W nominaux (800 W en pointe), une batterie de 360 Wh (10 Ah) pour jusqu'à 45 km d'autonomie et des pneus tubeless de 12 pouces avec suspension avant et arrière à ressort. Le freinage associe un frein à tambour à l'avant et un E-ABS électronique à l'arrière, pour une vitesse maximale bridée à 25 km/h, une charge maximale de 120 kg et un indice IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Xiaomi Electric Scooter 6 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Xiaomi Electric Scooter 6 : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "xiaomi electric scooter 6, pieces xiaomi electric scooter 6, disque frein xiaomi electric scooter 6, plaquettes xiaomi electric scooter 6, pneu xiaomi electric scooter 6"
+    },
+    {
+      "name": "Xiaomi Electric Scooter 6 Ultra",
+      "slug": "xiaomi-electric-scooter-6-ultra",
+      "amperage": 12.5,
+      "power_watts": 1200,
+      "range_km": 75,
+      "max_load_kg": 140,
+      "year": 2026,
+      "max_speed_kmh": 25,
+      "weight_kg": 33.7,
+      "suspension": "Double suspension à bras oscillant (avant et arrière, élastomère)",
+      "ip_rating": "IPX6",
+      "tire_size": "12 x 3 pouces (pneu tout-terrain tubeless)",
+      "foldable": true,
+      "wheel_inches": 12,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/6932554465735_h_f_l_0",
+        "https://voltride.com/wp-content/uploads/2026/10/xiaomi-electric-scooter-6ultra-left-side.jpg"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Xiaomi Electric Scooter 6 Ultra embarque un moteur dans la roue arrière de 500 W nominal (1 200 W en crête, 45 N·m) alimenté par une batterie de 585 Wh (12,5 Ah), pour une autonomie annoncée de 75 km. Elle roule sur des pneus tout-terrain tubeless de 12 pouces avec double suspension à bras oscillant, deux freins à disque et un indice IPX6. La vitesse est bridée à 25 km/h et le poids net est de 33,7 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Xiaomi Electric Scooter 6 Ultra - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Xiaomi Electric Scooter 6 Ultra : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "xiaomi electric scooter 6 ultra, pieces xiaomi electric scooter 6 ultra, disque frein xiaomi electric scooter 6 ultra, plaquettes xiaomi electric scooter 6 ultra, pneu xiaomi electric scooter 6 ultra"
+    }
+  ]
+}

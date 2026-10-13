@@ -1,0 +1,33 @@
+{
+  "brandName": "Kukirin",
+  "scooters": [
+    {
+      "name": "Kukirin M4 Max",
+      "slug": "kukirin-m4-max",
+      "voltage": 48,
+      "amperage": 18.2,
+      "power_watts": 800,
+      "max_speed_private_kmh": 45,
+      "range_km": 64,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "suspension": "Avant et arrière (fourche avant double, amortisseurs arrière à ressorts)",
+      "ip_rating": "IP54",
+      "tire_size": "10 pouces tubeless (section non confirmée)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://boulanger.scene7.com/is/image/Boulanger/9331187241018_h_f_l_0"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Kukirin M4 Max est une trottinette électrique pliable équipée d'un moteur brushless de 800 W (pic 1000 W) et d'une batterie lithium 18650 de 48 V 18,2 Ah, annoncée jusqu'à 64 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec double suspension, freins à disque avant et arrière et frein électronique ; sa vitesse maximale est de 45 km/h, bridable à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kukirin M4 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kukirin M4 Max : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kukirin m4 max, pieces kukirin m4 max, disque frein kukirin m4 max, plaquettes kukirin m4 max, pneu kukirin m4 max"
+    }
+  ]
+}

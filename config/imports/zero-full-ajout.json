@@ -1,0 +1,33 @@
+{
+  "brandName": "Zero",
+  "scooters": [
+    {
+      "name": "Zero 8",
+      "slug": "zero-8",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 17,
+      "suspension": "Avant à ressort, arrière hydraulique",
+      "tire_size": "Avant 8,5\" gonflable (chambre à air) / arrière 8\" plein",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://www.gyroroue-shop.fr/wp-content/uploads/2019/06/zero8.png"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "134mm",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Zero 8 (Z8) est une trottinette électrique urbaine pliable, équipée d'un moteur brushless 350 W et d'une batterie 36 V 10 Ah (autonomie annoncée d'environ 30 km). Elle roule sur un pneu gonflable 8,5\" à l'avant et un pneu plein 8\" à l'arrière, avec suspension à ressort à l'avant, suspension hydraulique à l'arrière, frein à tambour arrière et frein électromagnétique. Elle est livrée bridée à 25 km/h (30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Zero 8 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Zero 8 : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "zero 8, pieces zero 8, disque frein zero 8, plaquettes zero 8, pneu zero 8"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "brandName": "Pure Electric",
+  "scooters": [
+    {
+      "name": "Pure Electric Air⁵ Ultra",
+      "slug": "pure-electric-air-ultra",
+      "voltage": 48,
+      "amperage": 13,
+      "power_watts": 500,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 22.6,
+      "suspension": "Double suspension (fourche télescopique avant + double amortisseur arrière), GlideMotion",
+      "ip_rating": "IP65",
+      "tire_size": "10x2.50-6.5 (tubeless)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.ecraft-shop.de/media/10/a6/41/1756387780/Pure%20Air%205%20Ultra%20Suspension.webp?ts=1756387780",
+        "https://www.electricscooterslondon.com/cdn/shop/files/pure-electric-scooter-air-ultra-suspension-1230762445_1200x.webp?v=1776344618"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Pure Electric Air⁵ Ultra Suspension est équipée d'un moteur moyeu arrière de 500 W nominal (1201 W en pointe), d'une batterie 48 V 13 Ah annoncée jusqu'à 93,8 km d'autonomie et d'une double suspension avant/arrière. Elle roule sur des pneus tubeless 10 pouces, freine avec un frein à tambour avant et un frein électrique KERS arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Pure Electric Air⁵ Ultra - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Pure Electric Air⁵ Ultra : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "pure electric air⁵ ultra, pieces pure electric air⁵ ultra, disque frein pure electric air⁵ ultra, plaquettes pure electric air⁵ ultra, pneu pure electric air⁵ ultra"
+    }
+  ]
+}

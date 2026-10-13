@@ -1,0 +1,93 @@
+{
+  "brandName": "Ninebot",
+  "scooters": [
+    {
+      "name": "Ninebot E3 Pro E",
+      "slug": "ninebot-e3-pro-e",
+      "voltage": 36,
+      "amperage": 10.2,
+      "power_watts": 800,
+      "max_speed_private_kmh": 25,
+      "range_km": 55,
+      "max_load_kg": 100,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 17.9,
+      "suspension": "Avant et arrière, amortisseurs à élastomère",
+      "ip_rating": "IPX5 (IPX7 pour la batterie)",
+      "tire_size": "10\" tubeless – avant 60/70-6.5, arrière 60/65-6.9",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/719628545/4725933138.png"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Segway-Ninebot E3 Pro E embarque un moteur brushless arrière de 400 W nominal (800 W en pointe) alimenté par une batterie 36 V de 368 Wh (10,2 Ah), pour jusqu'à 55 km d'autonomie en mode Eco. Elle repose sur des pneus tubeless de 10 pouces, une suspension avant et arrière à élastomère, un frein à tambour avant et un frein électronique arrière, avec une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Segway-Ninebot E3 Pro E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Segway-Ninebot E3 Pro E : plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot e3 pro e, pieces segway-ninebot e3 pro e, disque frein segway-ninebot e3 pro e, plaquettes segway-ninebot e3 pro e, pneu segway-ninebot e3 pro e"
+    },
+    {
+      "name": "Ninebot F3 Pro E",
+      "slug": "ninebot-f3-pro-e",
+      "amperage": 10.1,
+      "power_watts": 1200,
+      "max_speed_private_kmh": 25,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 19.3,
+      "suspension": "Suspension hydraulique à l'avant et bras oscillant à l'arrière",
+      "ip_rating": "IPX6 (batterie IPX7)",
+      "tire_size": "Avant 60/70-6.5, arrière 60/65-6.9 (10 pouces, tubeless autocicatrisant)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://drole2roue.com/6950-large_default/segway-ninebot-f3-pro-e.jpg"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 120,
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Segway-Ninebot F3 Pro E est équipée d'un moteur arrière de 550 W nominal (1200 W max) et d'une batterie de 477 Wh (46,8 V) annoncée jusqu'à 70 km d'autonomie. Elle dispose de pneus tubeless autocicatrisants de 10 pouces, d'une double suspension (hydraulique à l'avant, bras oscillant à l'arrière) et de freins à disque avant et arrière, avec une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Segway-Ninebot F3 Pro E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Segway-Ninebot F3 Pro E : disque de frein 120 mm, plaquettes, pneus 60/70. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot f3 pro e, pieces segway-ninebot f3 pro e, disque frein segway-ninebot f3 pro e, plaquettes segway-ninebot f3 pro e, pneu segway-ninebot f3 pro e",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    },
+    {
+      "name": "Ninebot F3 E",
+      "slug": "ninebot-f3-e",
+      "amperage": 10.2,
+      "power_watts": 1000,
+      "range_km": 70,
+      "max_load_kg": 120,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.6,
+      "suspension": "Hydraulique à l'avant + élastomère à l'arrière",
+      "ip_rating": "IPX6",
+      "tire_size": "60/70-6.5 (10 pouces tubeless autocicatrisant)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/75531499/products/719635328/4726011183.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Segway Ninebot F3 E est équipée d'un moteur arrière de 1000 W en pointe (450 W nominale) et d'une batterie 46,8 V 10,2 Ah (477 Wh) annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus tubeless autocicatrisants de 10 pouces, avec suspension hydraulique à l'avant et élastomère à l'arrière, un frein à disque avant et un frein électronique arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Segway-Ninebot F3 E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Segway-Ninebot F3 E : plaquettes. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot f3 e, pieces segway-ninebot f3 e, disque frein segway-ninebot f3 e, plaquettes segway-ninebot f3 e, pneu segway-ninebot f3 e"
+    }
+  ]
+}

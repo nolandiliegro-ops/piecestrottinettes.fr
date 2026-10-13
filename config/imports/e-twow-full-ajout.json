@@ -1,0 +1,83 @@
+{
+  "brandName": "E-Twow",
+  "scooters": [
+    {
+      "name": "E-Twow Booster ES",
+      "slug": "e-twow-booster-es",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 500,
+      "max_speed_private_kmh": 30,
+      "range_km": 30,
+      "max_load_kg": 110,
+      "max_speed_kmh": 25,
+      "weight_kg": 11.6,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://mecatronice.com/app/uploads/2025/08/ETWOW-BOOSTER-ES-36V-78Ah-1.jpg"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "L'E-Twow Booster ES est une trottinette électrique pliable de 11,6 kg équipée d'un moteur brushless de 500 W dans la roue avant et d'une batterie lithium-ion 36 V 7,8 Ah, pour une autonomie annoncée jusqu'à 30 km. Elle roule sur des pneus pleins de 8 pouces avec suspensions avant et arrière, et dispose d'un double freinage (frein électromagnétique et frein mécanique sur le garde-boue arrière). Sa vitesse est bridée à 25 km/h sur route en France (environ 30 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "E-Twow Booster ES - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées E-Twow Booster ES : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "e-twow booster es, pieces e-twow booster es, disque frein e-twow booster es, plaquettes e-twow booster es, pneu e-twow booster es"
+    },
+    {
+      "name": "E-Twow GTS",
+      "slug": "e-twow-gts",
+      "voltage": 48,
+      "amperage": 10.5,
+      "power_watts": 700,
+      "max_speed_private_kmh": 35,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 13,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "8 pouces, pneu plein en gomme tendre (section non précisée)",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://cdn.shopify.com/s/files/1/0604/3477/6261/files/Trottinette_electrique_Etwow_GT_SL_pas_cher-245213.jpg?v=1760790010",
+        "https://over-watt.fr/cdn/shop/files/Trottinette_electrique_Etwow_GTS_pas_cher_gris-499243.jpg?v=1772100372"
+      ],
+      "brake_type": "ebs_front_drum_rear",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "L'E-Twow GTS est une trottinette électrique pliable de 13 kg, équipée d'un moteur de 700 W en crête et d'une batterie 48 V 10,5 Ah annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins de 8 pouces en gomme tendre, avec suspensions avant et arrière, frein électrique avant (KERS) et frein à tambour arrière ; sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "E-Twow GTS - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées E-Twow GTS : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "e-twow gts, pieces e-twow gts, disque frein e-twow gts, plaquettes e-twow gts, pneu e-twow gts"
+    },
+    {
+      "name": "E-Twow TankTorq TK5",
+      "slug": "e-twow-tanktorq-tk5",
+      "voltage": 60,
+      "amperage": 21,
+      "power_watts": 2000,
+      "max_speed_private_kmh": 50,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 34.5,
+      "suspension": "Avant et arrière, ressort + hydraulique réglable",
+      "ip_rating": "IPX7",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [],
+      "brake_type": "disc_hydraulic",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La E-Twow TankTorq TK5 est une trottinette électrique à double moteur (2 x 1000 W, 3000 W en crête) alimentée par une batterie lithium-ion 60 V 21 Ah, pour une autonomie annoncée jusqu'à 80 km. Elle roule sur des pneus tubeless de 10 pouces, avec suspensions avant et arrière réglables et un freinage combinant double frein à disque hydraulique et frein magnétique. Sa vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 50 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "E-Twow TankTorq TK5 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées E-Twow TankTorq TK5 : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "e-twow tanktorq tk5, pieces e-twow tanktorq tk5, disque frein e-twow tanktorq tk5, plaquettes e-twow tanktorq tk5, pneu e-twow tanktorq tk5"
+    }
+  ]
+}

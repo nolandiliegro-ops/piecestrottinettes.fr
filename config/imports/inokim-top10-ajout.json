@@ -1,0 +1,35 @@
+{
+  "brandName": "Inokim",
+  "scooters": [
+    {
+      "name": "Inokim Light 2 Max",
+      "slug": "inokim-light-2-max",
+      "voltage": 36,
+      "amperage": 12.8,
+      "power_watts": 350,
+      "max_speed_private_kmh": 35,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 14,
+      "suspension": "Aucune",
+      "ip_rating": "IPX4",
+      "tire_size": "8.5x2.0-5.5",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://alternative.bike/3312-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+        "https://media.cdnws.com/_i/21277/fb%7B630%7D-5962/1135/66/inokiml-light-max.png"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "5.5",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "L'Inokim Light 2 Max est une trottinette électrique pliable en aluminium, animée par un moteur brushless arrière de 350 W et une batterie lithium-ion 36 V 12,8 Ah. Elle roule sur des pneus de 8,5 pouces (avant gonflable), est équipée de deux freins à tambour et d'un éclairage LED avant/arrière, avec une vitesse bridée à 25 km/h en usage public (jusqu'à 35 km/h hors réglementation) et jusqu'à 40 km d'autonomie annoncée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inokim Light 2 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inokim Light 2 Max : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inokim light 2 max, pieces inokim light 2 max, disque frein inokim light 2 max, plaquettes inokim light 2 max, pneu inokim light 2 max"
+    }
+  ]
+}
