@@ -1,0 +1,2050 @@
+{
+  "beaster": {
+    "country": null,
+    "founded_year": null,
+    "website_url": null,
+    "tagline": "De l'urbaine au tout-terrain",
+    "editorial_verdict": "Côté atelier, Beaster couvre deux usages très différents au catalogue. La BS09 (36 V, pneus gonflables de 9 pouces, frein à tambour avant et EBS arrière) vise la ville : surveille l'usure des pneus, la chambre à air et le réglage du tambour. La Diablo (60 V, pneus 10 x 3 pouces, frein à disque hydraulique) demande plus de suivi : plaquettes, disques, purge du circuit et chargeur 60 V. Vérifie toujours la référence sur la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Beaster pour ma BS09 ou ma Diablo ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : pneus, chambres à air, freins et chargeurs pour la Beaster BS09 et la Beaster Diablo. Ouvre la fiche de ton modèle et compare la référence avec ta pièce d'origine avant de valider. Si tu hésites, l'atelier de Marseille peut t'aider à identifier la bonne pièce."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Beaster ?",
+        "a": "La BS09 roule en pneus gonflables de 9 pouces (23 cm) : cherche la chambre à air à cette dimension. La Diablo monte du 10 x 3 pouces (25,4 x 7,62 cm). Vérifie sur la fiche du modèle le type de valve et si ta Diablo utilise une chambre à air, puis compare avec le marquage sur le flanc du pneu."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Beaster Diablo ?",
+        "a": "La Diablo a un frein à disque hydraulique, donc des plaquettes de frein et un disque qui s'usent. Le format exact dépend de l'étrier monté : regarde la fiche du modèle sur piecestrottinettes.fr et compare avec tes plaquettes démontées. Change-les dès que la garniture est fine ou que le freinage devient bruyant."
+      },
+      {
+        "q": "Et les freins de la BS09, comment les entretenir ?",
+        "a": "La BS09 combine un frein à tambour à l'avant et un frein EBS à l'arrière, donc pas de plaquettes à l'avant. Surveille le réglage de la poignée et la course du câble, et écoute les bruits en freinage. Pour une pièce du tambour, vérifie la référence sur la fiche du modèle."
+      },
+      {
+        "q": "Quel chargeur choisir pour ma Beaster ?",
+        "a": "Le chargeur dépend de la tension de la batterie : 36 V pour la BS09, 60 V pour la Diablo. Ne les intervertis pas. Le connecteur et l'ampérage ne figurent pas dans nos données générales : vérifie-les sur la fiche du modèle sur piecestrottinettes.fr et sur l'étiquette de ton chargeur d'origine."
+      }
+    ],
+    "doutes": "Pays, année de création et site officiel non confirmés : les résultats trouvés concernent surtout la marque de vêtements BEASTER (Hangzhou, 2014) ou des profils PitchBook ambigus (2016, Hangzhou, beaster.cn) qui ne distinguent pas clairement la marque de trottinettes. Des revendeurs lituaniens/estoniens vendent des Beaster Scooter, mais aucune page officielle de la marque n'a été lue. Tout laissé à null. Type de valve, connecteur et ampérage des chargeurs, format des plaquettes de la Diablo : non fournis.",
+    "name": "Beaster",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "apollo": {
+    "country": "Canada",
+    "country_source": "https://ca.linkedin.com/company/apolloscooters (page entreprise Apollo Scooters : siège à Montréal, Québec ; confirmé par https://www.tracxn.com/d/companies/apollo-scooters/__LIzAKg8NHy-Ch7r7hV9Y-0TKWD_0nGlzGQyvpWVgjF0)",
+    "founded_year": 2019,
+    "founded_year_source": "https://ca.linkedin.com/company/apolloscooters (« Founded : 2019 ») ; concordant avec Tracxn, CB Insights et Salary.com",
+    "website_url": "https://apolloscooters.co",
+    "tagline": "Citadine confortable, performance bimoteur",
+    "editorial_verdict": "Côté atelier, Apollo est une marque montréalaise créée en 2019, et les deux modèles du catalogue n'ont pas les mêmes points d'usure. Le City Pro (48 V) roule en 10 x 2.7 tubeless auto-réparant avec un frein drum : surveille la gomme, pas de plaquettes à changer. L'Explore (52 V) a une chambre à air et un disque mécanique de 140 mm : contrôle pneu, plaquettes et disque. Côté charge, ne mélange rien : RCA en 48 V, GX16-3 en 52 V.",
+    "faq": "\n<parameter name=\"q\">Où trouver des pièces détachées Apollo ?",
+    "a": "Le chargeur dépend du modèle. L'Apollo City Pro fonctionne en 48 V avec une prise RCA. L'Apollo Explore est en 52 V avec une prise GX16-3. Ne les intervertis pas : la tension et la prise doivent correspondre. Vérifie la fiche du modèle avant de commander.",
+    "q": "Quel chargeur choisir pour une Apollo ?",
+    "doutes": "Pays et année viennent de la page LinkedIn officielle d'Apollo et de sites tiers (Tracxn, CB Insights), pas d'une page « À propos » du site officiel ni de Wikipédia (aucune page Wikipédia trouvée). Crunchbase indique Bedford, New Hampshire (États-Unis), ce qui contredit les autres sources ; je retiens Montréal. La section du pneu de l'Explore et les références exactes de chargeurs ne sont pas confirmées. Le site officiel liste « Apollo City » et « Apollo Explore 2.0 », pas « City Pro » en modèle actuel : vérifier la correspondance avec la fiche du catalogue.",
+    "name": "Apollo",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "aprilia": {
+    "country": "Italie",
+    "country_source": "https://en.wikipedia.org/wiki/Aprilia",
+    "founded_year": 1945,
+    "founded_year_source": "https://en.wikipedia.org/wiki/Aprilia",
+    "website_url": "https://www.aprilia.com",
+    "tagline": "Design Noale, sous licence, urbain",
+    "editorial_verdict": "Côté atelier, les Aprilia eSR sont des trottinettes produites sous licence par MT Distribution, pas par le constructeur moto lui-même. L'eSR1 roule en 10\" tubeless avec un frein arrière à disque : surveille pneus et disque. Les eSR2 et eSR2 Evo ont un frein à tambour avant et un frein électrique arrière : pas de plaquettes, donc l'usure se joue surtout côté pneus et chargeur. Attention à la tension : 36 V pour l'eSR1 et l'eSR2, 48 V pour l'Evo.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Aprilia eSR1, eSR2 ou eSR2 Evo ?",
+        "a": "Sur piecestrottinettes.fr, ouvre la fiche du modèle exact : eSR1, eSR2 ou eSR2 Evo. Ces trottinettes sont produites sous licence par MT Distribution, pas par le constructeur moto : cherche donc par modèle précis plutôt que par « pièce Aprilia » générique. En cas de doute sur une référence, l'atelier de Marseille peut t'aider."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour mon Aprilia eSR1 ?",
+        "a": "L'eSR1 est chaussée de pneus 10 pouces tubeless : elle n'a donc pas de chambre à air d'origine. La section n'est pas communiquée dans notre base, alors vérifie-la sur la fiche du modèle sur piecestrottinettes.fr ou sur le flanc du pneu monté. Fais la même vérification pour l'eSR2 et l'eSR2 Evo avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes ou quel disque pour une Aprilia eSR ?",
+        "a": "Sur l'eSR1, le frein avant est électronique et seul l'arrière a un disque : plaquettes et disque concernent donc l'arrière. Les eSR2 et eSR2 Evo ont un tambour à l'avant et un frein électrique à l'arrière, sans disque de série. Vérifie la référence exacte sur la fiche du modèle."
+      },
+      {
+        "q": "Quel chargeur pour mon Aprilia eSR1, eSR2 ou eSR2 Evo ?",
+        "a": "L'eSR1 et l'eSR2 fonctionnent en 36 V, l'eSR2 Evo en 48 V : ne mélange jamais les tensions. Les eSR2 et eSR2 Evo utilisent une prise DC 5,5 x 2,1 mm. Pour l'eSR1, la prise n'est pas renseignée dans notre base : vérifie la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Aprilia eSR ?",
+        "a": "Sur l'eSR1, contrôle la pression et l'usure des pneus tubeless, ainsi que l'état du disque arrière. Sur les eSR2 et Evo, surveille le tambour avant, le réglage du frein arrière électrique et les fixations de la suspension avant. Recharge uniquement avec le chargeur de la bonne tension pour ton modèle."
+      }
+    ],
+    "doutes": "Pays et année viennent de la page Wikipédia (en) d'Aprilia (siège à Noale, fondée en 1945), confirmés par plusieurs sites de presse/concessionnaires. Le site aprilia.com est indiqué dans l'infobox Wikipédia ; je n'ai pas ouvert le site directement, et il ne couvre peut-être pas la gamme de trottinettes sous licence MT Distribution. Les sources divergent sur les pneus de l'eSR1 (tubeless selon Le Repaire des Motards, pneus pleins selon la description Amazon) : j'ai suivi le catalogue (tubeless). Type de pneu et section des eSR2/Evo non confirmés (10 pouces seulement). Prise de charge de l'eSR1 non renseignée.",
+    "name": "Aprilia",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "bogist": {
+    "country": null,
+    "country_source": null,
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://bogistshop.com",
+    "tagline": "Trottinettes 48 V à siège, suspendues",
+    "editorial_verdict": "Côté atelier, Bogist, ce sont des trottinettes 500 W en 48 V, pliantes, avec siège et suspensions, orientées confort. La M5 Pro roule en 12 pouces avec frein à disque mécanique ; la C1 Pro en 10 pouces, tambour à l'avant et disque à l'arrière. Les pièces d'usure à surveiller : pneus et chambres à air, plaquettes et disques (réglage du câble sur la M5 Pro), état du tambour avant de la C1 Pro, et chargeur 48 V. Vérifie la référence sur la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Bogist ?",
+        "a": "Sur piecestrottinettes.fr, passe par la fiche de ton modèle, la Bogist M5 Pro ou la Bogist C1 Pro, pour ne voir que les pièces compatibles : pneus, chambres à air, freins, chargeur. Notre atelier de réparation est à Marseille. Si une référence te manque, demande-nous avant de commander plutôt que de deviner."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour ma Bogist ?",
+        "a": "D'après les fiches des revendeurs, la M5 Pro roule en 12 pouces et la C1 Pro en 10 pouces. Ne commande pas sur cette seule base : vérifie la dimension complète du pneu, la largeur et le type de valve sur la fiche de ton modèle sur piecestrottinettes.fr avant de choisir la chambre à air."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Bogist M5 Pro ou C1 Pro ?",
+        "a": "La M5 Pro a un frein à disque mécanique, donc plaquettes et disque, avec un câble à régler. La C1 Pro combine un tambour à l'avant et un disque à l'arrière : les plaquettes ne concernent que l'arrière. Contrôle la fiche de ton modèle pour la bonne référence."
+      },
+      {
+        "q": "Quel chargeur pour une Bogist en 48 V ?",
+        "a": "La M5 Pro et la C1 Pro sont toutes deux en 48 V. La C1 Pro utilise une prise DC5.5x2.1. Pour la M5 Pro, l'intensité et le type de prise ne sont pas dans nos données : vérifie-les sur la fiche du modèle avant de commander, et ne branche jamais un chargeur d'une autre tension."
+      },
+      {
+        "q": "Comment entretenir ma Bogist au quotidien ?",
+        "a": "Vérifie souvent la pression des pneus et l'état des chambres à air, puis le réglage des freins : câble et disque sur la M5 Pro, tambour avant et disque arrière sur la C1 Pro. Regarde aussi les amortisseurs et la prise de charge. En cas de doute, l'atelier de Marseille peut diagnostiquer."
+      }
+    ],
+    "doutes": "Pays et année de création non confirmés : aucune source ne les donne pour la marque. Trustpilot indique que la boutique Bogist appartient à une société de Shenzhen (Chine), et la page YouTube officielle présente Bogist comme sous-marque d'AOVO. Cela ne suffit pas pour fixer le siège de la marque, donc null. Boulanger indique « Fabriqué en Chine » pour la C1 Pro, ce qui concerne la fabrication et pas le siège. Site officiel : bogistshop.com, lié à la chaîne YouTube « Bogist Official ». Dimensions exactes des pneus, prise du chargeur M5 Pro et intensité non confirmées. La C1 Pro est décrite comme « frein à disque » chez certains revendeurs, alors que la base indique tambour avant + disque arrière : j'ai suivi la base.",
+    "name": "Bogist",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "dualtron": {
+    "country": "Corée du Sud",
+    "country_source": "https://dualtronnordic.com/en/about-us/",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": null,
+    "tagline": "Bimoteurs coréens, haute tension",
+    "editorial_verdict": "Côté atelier, la gamme Dualtron du catalogue couvre de la Mini en 52 V à la Storm LTD 2025 en 84 V, avec des prises GX16-3 ou LP16-3 selon le modèle : tension et connecteur se vérifient avant tout achat de chargeur. Les pneus sont pneumatiques, de 8 à 15 pouces, donc crevaisons et usure sont à surveiller. Presque tous les modèles ont des freins à disque hydrauliques : plaquettes et disques se contrôlent régulièrement. La Mini garde un frein à tambour.",
+    "faq": "\n<parameter name=\"q\">placeholder",
+    "doutes": "Année : Minimotors est fondé en 1999 à Busan (dual-tron.com/about.html, dualtronnordic.com), mais Dualtron est une gamme lancée en 2015 par ce constructeur, pas une société créée à cette date : je laisse null pour ne pas attribuer l'année du groupe. L'année 1999 en base est celle de Minimotors. Site officiel : dualtron-store.com n'a pas pu être confirmé. dual-tron.com (copyright Zhejiang Dualtron Escooter) a un contenu incohérent, et dualtron.uk, dualtronusa.com et minimotors.ph sont des distributeurs nationaux. Pas de site officiel retenu. Dimensions exactes des pneus/chambres et disques de la Victor et de la Storm non fournies : renvoyer vers les fiches.",
+    "name": "Dualtron",
+    "before": {
+      "country": "Corée du Sud",
+      "founded_year": 1999,
+      "website_url": "https://dualtron-store.com/",
+      "tagline": "Performance extrême sans compromis",
+      "had_verdict": true
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "cecotec": {
+    "country": "Espagne",
+    "country_source": "https://www.wikidata.org/wiki/Q120261504 (pays : Espagne, siège à Valence) ; https://ca.wikipedia.org/wiki/Cecotec",
+    "founded_year": 1995,
+    "founded_year_source": "https://ca.wikipedia.org/wiki/Cecotec (fondation de Cecotec Innovaciones SL en 1995 à Valence) ; Wikidata Q120261504 (inception : 1995)",
+    "website_url": "https://cecotec.es/",
+    "tagline": "Urbaine, pliable, tubeless 8,5 pouces",
+    "editorial_verdict": "Côté atelier, les Bongo Serie A sont des trottinettes urbaines 36 V, avec frein électronique EBS à l'avant et frein à disque de 120 mm à l'arrière. L'Advance Connected roule en pneus tubeless 8,5\" anti-éclatement : pas de chambre à air d'origine, mais un pneu à remplacer à l'usure. Surveille les plaquettes et le disque arrière, la pression des pneus, puis l'état du chargeur : prise DC5.5x2.1 et câble.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées pour ma Cecotec Bongo ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Bongo Serie A Connected et Bongo Serie A Advance Connected. Ouvre la fiche de ta trottinette pour voir les pneus, plaquettes, disques et chargeurs compatibles. Si tu préfères ne pas monter la pièce toi-même, notre atelier de Marseille peut s'en charger."
+      },
+      {
+        "q": "Quel pneu pour ma Bongo Serie A, et faut-il une chambre à air ?",
+        "a": "Les deux modèles du catalogue sont en 8,5 pouces. L'Advance Connected est équipée de pneus tubeless anti-éclatement, donc sans chambre à air d'origine. Pour la Serie A Connected, le type de pneu n'est pas précisé dans notre base : vérifie sa fiche sur piecestrottinettes.fr avant de commander un pneu ou une chambre."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Cecotec Bongo Serie A ?",
+        "a": "La Serie A Connected et l'Advance Connected combinent frein EBS à l'avant et frein à disque à l'arrière, avec un disque de 120 mm. Plaquettes et disque concernent donc la roue arrière. Pour la référence exacte de plaquette et l'épaisseur du disque, vérifie la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour ma Cecotec Bongo Serie A Connected ?",
+        "a": "Les deux modèles du catalogue fonctionnent en 36 V et ont une prise DC5.5x2.1. Il te faut donc un chargeur 36 V avec ce connecteur. L'intensité et la polarité ne sont pas dans notre base : compare avec l'étiquette de ton chargeur d'origine et vérifie la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Bongo Serie A Advance Connected ?",
+        "a": "Contrôle régulièrement la pression des pneus 8,5\" tubeless, l'usure des plaquettes et du disque arrière de 120 mm, puis la prise du chargeur et son câble. Une perte de pression est à vérifier vite : crevaison à réparer ou pneu à remplacer. En cas de doute, passe à l'atelier de Marseille."
+      }
+    ],
+    "doutes": "Année de création : Wikipédia (catalan) et Wikidata donnent 1995 pour Cecotec Innovaciones SL, mais d'autres sites annoncent 2004 ou 2013 (début de l'électroménager de cuisine), et un registre d'entreprises espagnol indique une constitution de la société en 2007. La source ne distingue pas clairement marque et société ; 1995 est à valider. Site officiel : https://cecotec.es/ tiré du champ « site web » de Wikidata, je n'ai pas ouvert le site lui-même ; une version française existe peut-être. Type de pneu de la Serie A Connected, dimensions des plaquettes et caractéristiques précises du chargeur (intensité, polarité) non confirmés.",
+    "name": "Cecotec",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "ducati": {
+    "country": "Italie",
+    "country_source": "https://fr.wikipedia.org/wiki/Ducati_Motor_Holding_S.p.A. (siège à Bologne, Italie)",
+    "founded_year": 1926,
+    "founded_year_source": "https://fr.wikipedia.org/wiki/Ducati_Motor_Holding_S.p.A. (création en 1926 ; confirmé par https://www.comitatoleonardo.it/en/soci/ducati-motor-holding/)",
+    "website_url": "https://www.ducati.com",
+    "tagline": "Style Ducati, trottinette sous licence",
+    "editorial_verdict": "Côté atelier, les trottinettes Ducati sont fabriquées sous licence par MT Distribution : le nom et le style viennent de Bologne, l'usage reste celui d'une urbaine 36 V. La Pro-II Evo roule en 10\" tubeless, frein électronique à l'avant, disque à l'arrière : surveille l'usure des pneus, de la plaquette arrière et du disque. Sur la Pro-III, contrôle le disque de 120 mm. Les deux partagent une prise de charge DC5.5x2.1 : vérifie le chargeur avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées pour ma trottinette Ducati ?",
+        "a": "Sur piecestrottinettes.fr, la page Ducati regroupe les pièces des deux modèles au catalogue : Pro-II Evo et Pro-III. Commence par identifier ton modèle exact, car les références diffèrent entre les deux. Notre atelier de Marseille répare ces trottinettes, et chaque fiche indique la compatibilité de la pièce."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Ducati Pro-II Evo ?",
+        "a": "La Pro-II Evo est équipée de pneus 10 pouces tubeless à l'avant et à l'arrière, donc sans chambre à air d'origine. Choisis un pneu de même dimension et de même type. Pour la Pro-III, la dimension et le type de pneu ne sont pas renseignés ici : vérifie sur la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Ducati ?",
+        "a": "La Pro-II Evo combine un frein électronique à l'avant et un disque à l'arrière : seules les plaquettes arrière s'usent. La Pro-III a un disque de 120 mm, mais le type d'actionnement n'est pas précisé dans nos données. Avant de commander, vérifie sur la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour une Ducati Pro-III ou Pro-II Evo ?",
+        "a": "Les deux modèles fonctionnent en 36 V et utilisent une prise de charge DC5.5x2.1. Un connecteur identique ne garantit pas un chargeur adapté : contrôle la tension et l'intensité de sortie sur la fiche du modèle sur piecestrottinettes.fr. N'utilise jamais un chargeur d'une autre tension."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Ducati ?",
+        "a": "Contrôle régulièrement l'état et l'usure des pneus, surtout sur la Pro-II Evo en tubeless. Vérifie aussi le disque et la plaquette arrière, ainsi que le disque de 120 mm de la Pro-III. Inspecte la prise DC5.5x2.1 : si elle joue ou chauffe, fais-la contrôler avant de recharger."
+      }
+    ],
+    "doutes": "Ducati est une marque italienne de motos (Ducati Motor Holding, Bologne, 1926) ; les trottinettes sont fabriquées sous licence par MT Distribution (Italie), donc 1926 est l'année de création de la marque Ducati, pas des trottinettes (gamme lancée en 2020). Le manuel de la Pro2 (2020) cite Maiway Industry comme fabricant, ce qui n'est pas confirmé pour la Pro-II Evo ni la Pro-III. Site officiel : ducati.com retenu ; le site e-mobility ducatiurbanemobility.com existe aussi. Les dimensions de pneu de la Pro-III, l'actionnement de son frein et l'ampérage des chargeurs ne sont pas dans les données : renvoi vers les fiches. La présentation actuelle mentionne des chambres à air, alors que la Pro-II Evo est en tubeless.",
+    "name": "Ducati",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "e-twow": {
+    "country": "Chine",
+    "country_source": "https://e-twow.com/fr/a-propos-de-nousabout-us/ (page « À propos » du site officiel : siège en Chine)",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://e-twow.com/",
+    "tagline": "Ultralégère, compacte, récupération d'énergie",
+    "editorial_verdict": "Côté atelier, l'E-Twow se reconnaît à son gabarit léger et compact, avec une récupération d'énergie au freinage (KERS) annoncée par la marque. Sur le catalogue, les GT Sport, GT SE et GT SL sont en 48 V avec frein électronique à l'avant et tambour à l'arrière, le Booster SE en 36 V. Les GT SE et GT SL roulent en 8 pouces à pneus pleins, donc sans chambre à air. Surveille l'usure des pneus, du frein arrière à tambour et le chargeur, dont la tension dépend du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées E-Twow ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : E-Twow GT Sport, GT SE, GT SL et Booster SE. Choisis ta trottinette, puis la pièce (pneu, frein, chargeur, accessoire). Si tu hésites sur une référence, notre atelier de Marseille peut t'aider à la vérifier avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour mon E-Twow ?",
+        "a": "Les GT SE et GT SL sont en 8 pouces avec pneus pleins (airless) : pas de chambre à air, seulement un pneu à remplacer quand il est usé. Pour le GT Sport et le Booster SE, la dimension et le type ne sont pas précisés ici : vérifie la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quelle plaquette ou quelle pièce de frein pour une E-Twow GT ?",
+        "a": "Les GT Sport, GT SE et GT SL combinent un frein électronique à l'avant et un frein à tambour à l'arrière : on ne parle donc pas de plaquettes classiques à l'arrière. Le Booster SE a un frein au garde-boue (pied) et un frein électronique. Consulte la fiche de ton modèle pour la pièce exacte."
+      },
+      {
+        "q": "Quel chargeur pour mon E-Twow ?",
+        "a": "Ça dépend de la tension : les GT Sport, GT SE et GT SL sont en 48 V, le Booster SE en 36 V. Ne branche jamais un chargeur de tension différente. Le connecteur et l'intensité ne sont pas indiqués ici : vérifie-les sur la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Que surveiller régulièrement sur une E-Twow ?",
+        "a": "Regarde l'usure des pneus (surtout les pneus pleins des GT SE et GT SL), le réglage et l'usure du frein arrière à tambour sur les GT, et l'état du câble et de la prise du chargeur. Sur un Booster SE, contrôle aussi le frein au garde-boue. Un contrôle visuel régulier évite la plupart des pannes."
+      }
+    ],
+    "doutes": "Année de création de la marque non confirmée : scooter.guide et riedis-electric.com parlent de 2013 mais pour la conception du premier scooter, et ni le site officiel ni Wikipédia ne donnent d'année de fondation de la marque. Je laisse donc null. Pays : le site officiel indique un siège en Chine, mais la société juridique est « E-TWOW ELECTRIC MOBILITY SA » (adresse non lue) ; les bureaux de vente sont en Allemagne et en Roumanie selon un revendeur. Type et dimension des pneus du GT Sport et du Booster SE, connecteurs de chargeur non confirmés. L'accroche en base était vide.",
+    "name": "E-Twow",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "dyu": {
+    "country": null,
+    "country_source": null,
+    "founded_year": 2016,
+    "founded_year_source": "https://www.youtube.com/@DYUcycle (chaîne officielle : « Since 2016 ») ; confirmé par https://dyubikes.com/about-dyu/ (« 2016 DYU brand established ») et https://www.theveloindex.com/spotlight/dyu-overview",
+    "website_url": "https://fr.dyucycle.com/fr",
+    "tagline": "Mini vélos électriques pliants 14 pouces",
+    "editorial_verdict": "Côté atelier, les DYU du catalogue sont des vélos électriques pliants à petites roues de 14 pouces, pas des trottinettes. Le D3F tourne en 36 V, avec pneus 14x2.125 et freins à disque mécaniques de 160 mm. À surveiller : pneus et chambres à air, plaquettes et disques, réglage des câbles de frein, et chargeur (prise DC5.5x2.1 sur le D3F). Pour le C4, on n'a pas toutes les dimensions : vérifie la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées DYU ?",
+        "a": "Commence par la fiche de ton modèle (D3F ou C4) sur piecestrottinettes.fr : tu y trouves les pièces référencées comme compatibles. Identifie bien ton modèle exact avant de commander, car DYU vend plusieurs gammes (C1, C5, C6, A5…) dont les pièces ne sont pas forcément interchangeables avec celles du D3F ou du C4."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour un DYU D3F ?",
+        "a": "Le D3F est chaussé en 14x2.125. Prends donc un pneu et une chambre à air à cette dimension, et contrôle le type de valve sur la fiche du modèle. Pour le DYU C4, la dimension n'est pas confirmée dans notre base : vérifie la fiche sur piecestrottinettes.fr plutôt que de supposer qu'elle est identique."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour mon DYU ?",
+        "a": "Le D3F a des freins à disque mécaniques, avec un disque de 160 mm. Choisis des plaquettes compatibles avec l'étrier de ton modèle. Sur le C4, on sait qu'il y a un frein à disque, mais pas si l'actionnement est mécanique ou hydraulique : vérifie la fiche avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour un DYU D3F ou C4 ?",
+        "a": "Les deux modèles fonctionnent en 36 V. Le D3F utilise une prise DC5.5x2.1 : le connecteur doit correspondre, en plus de la tension. Pour le C4, le connecteur n'est pas renseigné chez nous, donc contrôle la fiche du modèle. Ne branche jamais un chargeur d'une autre tension sur la batterie."
+      },
+      {
+        "q": "Quel entretien prévoir sur un DYU à petites roues ?",
+        "a": "Contrôle régulièrement la pression des pneus 14 pouces et l'état des chambres à air. Vérifie l'usure des plaquettes et du disque, et le réglage des câbles si le frein est mécanique, comme sur le D3F. Inspecte le câble et la prise du chargeur. Au moindre doute sur une pièce, regarde la fiche du modèle."
+      }
+    ],
+    "doutes": "Pays non confirmé : sources contradictoires. La chaîne YouTube de la marque et Newegg parlent des Pays-Bas (DYU Netherlands B.V.), Tracxn indique un siège à Hong Kong (Chine), Trustpilot indique une adresse à Dover (États-Unis), et des blogs parlent d'une marque chinoise. Aucune page officielle claire sur le siège n'a été lue, donc null. L'année 2016 est cohérente sur toutes les sources, mais dyubikes.com n'est pas clairement identifié comme le site officiel (le site retenu est dyucycle.com). Aucune donnée sur le C4 (pneus, chargeur, type de frein) n'a été confirmée. DYU fabrique des vélos électriques pliants, pas des trottinettes : la page actuelle (« entre vélo et trottinette ») est à nuancer.",
+    "name": "DYU",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "engwe": {
+    "country": "Chine",
+    "country_source": "https://www.theveloindex.com/spotlight/engwe-overview (ENGWE, fabricant basé à Shenzhen, Chine) ; https://www.cleanrider.com/essais/velo-electrique/test-engwe-l20-comment-ce-fat-bike-electrique-a-failli-nous-tuer/",
+    "founded_year": 2014,
+    "founded_year_source": "https://www.prnewswire.com/news-releases/engwe-presente-la-serie-o-des-velos-electriques-pliants-hautes-performances-concus-pour-une-mobilite-urbaine-sans-compromis-302783814.html (communiqué ENGWE, « Fondée en 2014 ») ; confirmé par https://www.theveloindex.com/spotlight/engwe-overview. Note : la société de Shenzhen a été enregistrée en 2019 selon mobilityinthecity.com, 2014 correspond au début du projet/de la marque.",
+    "website_url": "https://fr.engwe.com",
+    "tagline": "Mobilité électrique 48 V, freins à disque",
+    "editorial_verdict": "Côté atelier, Engwe est surtout connue pour ses vélos électriques, mais le catalogue compte trois trottinettes 48 V : Y600, Y600S et Y700. Toutes freinent avec des disques mécaniques : plaquettes et réglage du câble sont à contrôler régulièrement, disque de 140 mm sur le Y700. Les pneus changent d'un modèle à l'autre : 10 x 4.0 sur le Y600, 10x2.75 sur le Y600S, pneu urbain caoutchouc plein sur le Y700. Vérifie la dimension et le chargeur sur la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées pour ma trottinette Engwe ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Engwe Y600, Y600S et Y700. Choisis ton modèle, puis la catégorie (pneus, chambres à air, plaquettes, disques, chargeur). Si tu hésites sur une référence, notre atelier de Marseille peut t'aider à identifier la bonne pièce avant la commande."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Engwe Y600 ou Y600S ?",
+        "a": "L'Engwe Y600 est donnée en 10 x 4.0 et la Y600S en 10x2.75 : ce ne sont pas les mêmes dimensions, donc pas interchangeables. Contrôle le flanc de ton pneu et la fiche du modèle sur piecestrottinettes.fr avant de commander pneu ou chambre à air."
+      },
+      {
+        "q": "Mon Engwe Y700 a-t-elle une chambre à air ?",
+        "a": "Le catalogue indique pour l'Engwe Y700 un pneu 10 x 3,0\" urbain en caoutchouc plein. Un pneu plein ne se monte pas comme un pneu à chambre : ne commande pas de chambre à air sans avoir vérifié la fiche du modèle sur piecestrottinettes.fr. En cas de doute, demande à l'atelier."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Engwe ?",
+        "a": "Les Y600, Y600S et Y700 ont des freins à disque mécaniques. Le Y700 est donné avec un disque de 140 mm. Pour le Y600 et le Y600S, la taille du disque et le type de plaquettes ne sont pas précisés ici : consulte la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour une Engwe Y600, Y600S ou Y700 ?",
+        "a": "Ces trois modèles fonctionnent en 48 V, il te faut donc un chargeur adapté à cette tension. Vérifie aussi le connecteur et l'ampérage sur la fiche de ton modèle sur piecestrottinettes.fr : ces données ne sont pas détaillées ici, et un chargeur inadapté peut abîmer la batterie."
+      }
+    ],
+    "doutes": "Année 2014 = début de la marque selon le communiqué ENGWE et les sources secondaires ; la société de Shenzhen aurait été enregistrée en 2019 (mobilityinthecity.com, Baidu Baike). Le site fr.engwe.com a été lu via résultats de recherche (page « À propos »), pas la page d'accueil. Aucune donnée sourcée sur les trottinettes Y600/Y600S/Y700 hors catalogue : dimensions de disque Y600/Y600S, connecteur et ampérage chargeur non confirmés. Engwe est principalement connue pour les vélos électriques.",
+    "name": "Engwe",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "halo-knight": {
+    "country": "Chine",
+    "country_source": "https://www.haloknights.com/en-us/pages/our-story (adresse de l'entreprise : Guangzhou, Guangdong, Chine)",
+    "founded_year": 2016,
+    "founded_year_source": "https://www.haloknights.com/en-us/pages/our-story (« Founded in 2016, HALO KNIGHT… »), confirmé par https://www.haloknights.com/en-us",
+    "website_url": "https://www.haloknights.com",
+    "tagline": "Bimoteur, suspensions, grosses roues",
+    "editorial_verdict": "Côté atelier, Halo Knight, c'est du bimoteur chinois orienté puissance : le T108 Pro annonce 2 x 3000 W en 60 V, le T108 2 x 1200 W en 52 V. Cette puissance sollicite pneus, chambres à air et plaquettes. Sur le T104, les freins à disque mécaniques (disque 140 mm) demandent un réglage de câble régulier ; les T108 et T108 Pro passent à l'hydraulique. Côté chargeur, la prise est la GX16-3 sur les trois modèles, mais la tension change : 52 V ou 60 V. Contrôle toujours la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Halo Knight ?",
+        "a": "Le constructeur indique proposer la plupart des pièces d'origine sur son site officiel, haloknights.com. Chez nous, tu trouves les pièces compatibles avec les Halo Knight T104, T108 et T108 Pro : pneus, chambres à air, plaquettes, disques, chargeurs. Notre atelier de Marseille vérifie la compatibilité pièce par pièce."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour ma Halo Knight ?",
+        "a": "Le T108 roule en pneus pneumatiques route de 10 pouces. Le T108 Pro est référencé en 90/65-6.5. Pour le T104, la dimension n'est pas renseignée ici : ouvre la fiche du modèle sur piecestrottinettes.fr. Prends la chambre à air correspondant à la dimension du pneu, valve comprise, et vérifie-la sur la fiche."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour un T104, un T108 ou un T108 Pro ?",
+        "a": "Le T104 a des freins à disque mécaniques avec un disque de 140 mm. Les T108 et T108 Pro ont des freins à disque hydrauliques. Les plaquettes ne sont donc pas interchangeables d'office : choisis-les d'après la fiche de ton modèle sur piecestrottinettes.fr, pas d'après le seul nom de la marque."
+      },
+      {
+        "q": "Quel chargeur pour ma Halo Knight ?",
+        "a": "Le T104 et le T108 fonctionnent en 52 V, le T108 Pro en 60 V. Les trois utilisent une prise GX16-3. Ne branche jamais un chargeur de mauvaise tension : prends celui de ta tension et contrôle l'ampérage et le connecteur sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Halo Knight bimoteur ?",
+        "a": "Contrôle la pression des pneus et leur usure, car ces trottinettes sont lourdes et puissantes. Surveille l'épaisseur des plaquettes et l'état des disques. Sur le T104, règle le câble de frein ; sur les T108 et T108 Pro, fais vérifier le circuit hydraulique si le levier devient mou."
+      }
+    ],
+    "doutes": "Pays déduit de l'adresse du siège (Guangzhou, Chine) figurant sur la page « Our Story » du site officiel. Année 2016 donnée par le site officiel pour la marque. Le site officiel annonce le T108 Pro en pneus 11 pouces, alors que le catalogue indique 90/65-6.5 : j'ai gardé la valeur du catalogue sans la convertir. Dimensions de pneu et de chambre du T104 non confirmées. Les références de plaquettes ne sont pas confirmées.",
+    "name": "Halo Knight",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "hiboy": {
+    "country": "États-Unis",
+    "country_source": "https://www.hiboy.com/pages/about-us (siège indiqué en Californie, USA ; adresse San Francisco sur https://www.trustpilot.com/review/hiboy.com, fiche rédigée par l'entreprise)",
+    "founded_year": 2014,
+    "founded_year_source": "https://www.trustpilot.com/review/hiboy.com (texte « written by the company » : fondée en 2014) ; concordant avec https://ebikes.org/electric-bike-brands/hiboy-electric-bikes/ et le site officiel (« 10+ years experience »)",
+    "website_url": "https://www.hiboy.com",
+    "tagline": "Pneus pleins, gamme S2 urbaine",
+    "editorial_verdict": "Côté atelier, Hiboy mise sur le pneu plein : le S2 Lite roule en 6,5 pouces non gonflables et, d'après les fiches publiques, le S2 Pro en 10 pouces alvéolés. Donc peu de crevaisons et pas de chambre à air à changer. L'usure se déplace : bandages à surveiller, disque arrière de 120 mm du S2 Pro à contrôler et régler, frein au garde-boue du S2 Lite à vérifier. En cas de souci de charge, teste d'abord le chargeur 36 V, prise DC5.5x2.5.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Hiboy S2 Lite et S2 Pro ?",
+        "a": "Sur piecestrottinettes.fr, la page Hiboy regroupe les pièces compatibles avec le S2 Lite et le S2 Pro : pneus, plaquettes, disques, chargeurs. Ouvre la fiche de ton modèle pour ne voir que les références adaptées. Si tu hésites entre deux pièces, notre atelier de Marseille peut t'aider à identifier la bonne."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour mon Hiboy ?",
+        "a": "Le S2 Lite est équipé de pneus pleins de 6,5 pouces, donc non gonflables : aucune chambre à air à prévoir, c'est le pneu complet qu'on remplace. Pour le S2 Pro, les fiches publiques indiquent des pneus pleins alvéolés de 10 pouces. Vérifie la dimension exacte sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes ou quel disque pour le Hiboy S2 Pro ?",
+        "a": "Le S2 Pro combine un frein électronique (EBS) à l'avant et un frein à disque à l'arrière, avec un disque de 120 mm. Pour les plaquettes, vérifie la référence compatible sur la fiche du S2 Pro. Si le disque est voilé ou le freinage mou, change le disque avant de rouler."
+      },
+      {
+        "q": "Comment freine le Hiboy S2 Lite, y a-t-il des plaquettes ?",
+        "a": "Le S2 Lite freine avec un frein électronique (EBS) et un frein au pied sur le garde-boue arrière. Pas de disque ni de plaquettes sur ce modèle. Contrôle l'état et le contact du garde-boue, et vérifie sur la fiche du S2 Lite les pièces de freinage proposées."
+      },
+      {
+        "q": "Quel chargeur pour un Hiboy S2 Lite ou S2 Pro ?",
+        "a": "Les deux modèles fonctionnent en 36 V et utilisent une prise DC5.5x2.5. Prends un chargeur 36 V avec cette prise et vérifie l'ampérage et la polarité sur la fiche du modèle sur piecestrottinettes.fr. Un chargeur inadapté peut abîmer la batterie : en cas de doute, demande-nous avant de brancher."
+      }
+    ],
+    "doutes": "Pays : le site officiel et la fiche Trustpilot (rédigée par l'entreprise) indiquent un siège en Californie, mais Levy Electric, ebikes.org et Electric Wheelers décrivent une marque fondée en Chine (Shenzhen) ; j'ai retenu les États-Unis d'après le site officiel. Année : 2014 vient de la fiche rédigée par l'entreprise, Electric Wheelers donne 2018 (contradictoire). Aucune donnée web trouvée pour le S2 Lite. Le S2 Pro en pneus pleins 10 pouces vient de sources de presse et revendeurs, pas du catalogue. Le texte actuel de la page parle de chambres à air et de pneus de 10 pouces, ce qui est à corriger : les pneus pleins n'ont pas de chambre à air.",
+    "name": "Hiboy",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "hikerboy": {
+    "country": "Suisse",
+    "country_source": "https://hikerboyscooter.com/pages/about-us (Hikerboy adossée à AlpMars SA, siège à Genève) ; confirmé par https://hikerboys.com/about-us/",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://hikerboyscooter.com",
+    "tagline": "Urbaine suisse, batterie amovible",
+    "editorial_verdict": "Côté atelier, Hikerboy est une marque genevoise qui vise l'urbain : batterie amovible, cadre alu, pliage rapide sur la Foxtrot Plus. Sur nos deux modèles, le freinage associe tambour à l'avant et disque à l'arrière : seul l'arrière consomme des plaquettes, l'avant demande un contrôle des mâchoires. Les pneus 10 pouces à chambre à air de la Foxtrot Plus restent le premier poste d'usure et de crevaison. Côté charge, la Curtis est en 36 V et la Foxtrot Plus en 48 V : ne mélange jamais les chargeurs.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Hikerboy Curtis et Foxtrot Plus ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Hikerboy Curtis (36 V) et Hikerboy Foxtrot Plus (48 V). Ouvre la fiche de ton modèle pour voir les pièces compatibles : pneus, chambres à air, freins, chargeur. Notre atelier de Marseille connaît ces trottinettes, tu peux donc t'appuyer sur la compatibilité indiquée."
+      },
+      {
+        "q": "Quelle chambre à air et quel pneu pour la Foxtrot Plus ?",
+        "a": "La Foxtrot Plus roule en pneus 10 pouces avec chambre à air, à l'avant comme à l'arrière. Certains revendeurs parlent de tubeless : vu que la section n'est pas communiquée, vérifie la dimension exacte inscrite sur le flanc de ton pneu et sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Hikerboy Curtis ?",
+        "a": "La Curtis et la Foxtrot Plus ont un frein à tambour à l'avant et un frein à disque à l'arrière. Les plaquettes ne concernent donc que l'arrière, avec le disque. L'avant, à tambour, n'a pas de plaquettes. Contrôle la référence compatible sur la fiche de ton modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour ma Hikerboy ?",
+        "a": "La Curtis fonctionne en 36 V et la Foxtrot Plus en 48 V : un chargeur de la mauvaise tension est à proscrire. La Foxtrot Plus utilise une prise DC5.5x2.1. Pour la Curtis, le connecteur n'est pas communiqué : vérifie-le sur la fiche du modèle avant de choisir."
+      },
+      {
+        "q": "Quel entretien régulier sur une Hikerboy ?",
+        "a": "Contrôle la pression des pneus et l'état des chambres à air, car c'est là que ça use et crève le plus. Regarde le disque arrière et ses plaquettes, puis le réglage du frein à tambour avant. Avec la batterie amovible, charge-la avec le chargeur d'origine de la bonne tension (36 V ou 48 V)."
+      }
+    ],
+    "doutes": "Année de création non confirmée : la page française de hikerboyscooter.com (pages/a-propos-1) dit que Hikerboy s'est lancée en 2019 sur le marché de la mobilité douce, ce qui est un lancement commercial, pas une date de création de marque explicite, donc null. Pays : Suisse (siège AlpMars SA à Genève) ; fabrication par Yunyun IoT & Technology (Suzhou) en Chine, d'après le même site. Dimension de pneu de la Curtis, section de pneu et connecteur du chargeur Curtis non confirmés.",
+    "name": "Hikerboy",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "inmotion": {
+    "country": "Chine",
+    "country_source": "https://old.inmotionworld.com/company (page « About Us » officielle : siège à Shenzhen) ; confirmé par https://en.wikipedia.org/wiki/Inmotion_SCV (Inmotion Technologies, Shenzhen, Chine)",
+    "founded_year": 2012,
+    "founded_year_source": "https://old.inmotionworld.com/company (page « About Us » officielle : Inmotion fondée en 2012) ; concordant avec https://www.linkedin.com/company/inmotion-technologies",
+    "website_url": "https://inmotionworld.com/",
+    "tagline": "Robotique, gyroroues et trottinettes",
+    "editorial_verdict": "Côté atelier, Inmotion est un constructeur de Shenzhen issu de la robotique, et ton catalogue montre trois configurations de freinage différentes. Le Climber a un disque à l'arrière ; le S1F et l'Air Pro ont un tambour à l'avant, donc pas de plaquettes à ce niveau. Pneus et chambres à air restent les premières pièces d'usure à contrôler (10 pouces, arrière plein/tubeless sur l'Air Pro). Chargeur : ne mélange pas, RCA sur Climber et Air Pro (36 V), GX16-3 sur S1F (54 V).",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Inmotion pour mon Climber, S1F ou Air Pro ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont rattachées à chaque modèle : Inmotion Climber, S1F et Air Pro. Ouvre la fiche de ton modèle pour voir les pneus, chambres à air, freins et chargeurs compatibles. Si tu hésites entre deux références, passe par l'atelier de Marseille avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une trottinette Inmotion ?",
+        "a": "Le Climber se monte en 10x2.125-6.5 et le S1F en 10x2.50-6.5 tubeless. L'Air Pro est en 10 pouces, avec un avant pneumatique et un arrière plein/tubeless. Les dimensions diffèrent d'un modèle à l'autre : vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour mon Inmotion ?",
+        "a": "Seul le Climber du catalogue a un disque, à l'arrière, donc des plaquettes à prévoir. Le S1F et l'Air Pro ont un frein à tambour à l'avant et un frein EBS à l'arrière : pas de plaquettes sur ce système. Vérifie la fiche de ton modèle sur piecestrottinettes.fr pour la pièce exacte."
+      },
+      {
+        "q": "Quel chargeur pour Inmotion Climber, S1F ou Air Pro ?",
+        "a": "La tension et la prise changent. Le Climber et l'Air Pro sont en 36 V avec une prise RCA. Le S1F est en 54 V avec une prise GX16-3. Un chargeur 36 V ne convient pas au S1F : contrôle la tension et la prise sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel entretien régulier sur une trottinette Inmotion ?",
+        "a": "Regarde d'abord les pneus : usure, pression, état de la chambre à air ou du tubeless selon ton modèle. Contrôle ensuite les freins : disque et plaquettes arrière sur le Climber, tambour avant sur S1F et Air Pro. Vérifie aussi la prise de charge (RCA ou GX16-3) : si elle chauffe ou joue, fais-la contrôler."
+      }
+    ],
+    "doutes": "Site officiel : inmotionworld.com est le site global (lu via résultats de recherche, pas ouvert directement) ; il existe aussi myinmotion.com (filiale USA, qui indique « fondée en 2017 », ce qui concerne la structure américaine et non la marque). Année 2012 issue de la page officielle old.inmotionworld.com/company. Le détail des freins (tambour, EBS, disque) vient uniquement des données catalogue fournies, non vérifiées auprès du constructeur. L'affirmation « 10 pouces partout » repose sur les données catalogue.",
+    "editorial_verdict_note": null,
+    "name": "Inmotion",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "hitway": {
+    "country": "Chine",
+    "country_source": "https://b2b.hitway.us/contact/ (adresse de Dongguan HITWAY Vehicle Industry Co., Ltd., Dongguan, province du Guangdong) ; https://www.linkedin.com/in/hitway/ (Dongguan, Guangdong, China)",
+    "founded_year": 2020,
+    "founded_year_source": "https://b2b.hitway.us/contact/ : « Since 2020, Dongguan HITWAY Vehicle Industry Co., Ltd., under the HITWAY brand… » ; confirmé par le profil LinkedIn de l'entreprise (« Founded in 2020 »)",
+    "website_url": "https://hitways.com",
+    "tagline": "Pliante 48 V, double suspension",
+    "editorial_verdict": "Côté atelier, la Hitway est une trottinette pliante de constructeur chinois, vendue en 48 V avec double suspension à ressorts. Le H9 roule en pneus tubeless 10 pouces et freins à disque avant et arrière : surveille l'usure des plaquettes et des disques, et l'état des pneus. Le H6 monte des pneus gonflables 8,5 pouces et des freins à tambour : ce sont les mâchoires qui s'usent, pas des plaquettes. Côté charge, le H9 utilise une prise GX16-3 : vérifie la fiche avant de commander un chargeur.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Hitway H6 et H9 ?",
+        "a": "Sur piecestrottinettes.fr, le catalogue Hitway couvre le H9 et le H6 : pneus, chambres à air, freins, chargeurs. Ouvre la fiche de ton modèle pour voir les références compatibles. Notre atelier de Marseille répare aussi ces trottinettes, donc les pièces listées sont celles qu'on monte nous-mêmes en réparation."
+      },
+      {
+        "q": "Quel pneu pour une Hitway H9 ou H6 ?",
+        "a": "Le H9 est donné avec des pneus tubeless de 10 pouces, le H6 avec des pneus gonflables de 8,5 pouces. Ne mélange pas les deux dimensions. Pour la référence exacte (largeur, type de valve, avec ou sans chambre à air), vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Hitway ?",
+        "a": "Ça dépend du modèle. Le H9 a des freins à disque avant et arrière, donc des plaquettes. Le H6 est équipé de freins à tambour : il n'a ni plaquettes ni disques, mais des mâchoires. Le type d'actionnement du H9 n'est pas confirmé chez nous : consulte sa fiche sur piecestrottinettes.fr avant d'acheter."
+      },
+      {
+        "q": "Quel chargeur pour une Hitway H9 ou H6 ?",
+        "a": "Les deux modèles fonctionnent en 48 V, et le H9 utilise une prise GX16-3. Ne prends pas un chargeur au hasard : la tension et le connecteur doivent correspondre. Pour le H6, la prise n'est pas renseignée dans notre base, alors vérifie la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Hitway ?",
+        "a": "Contrôle régulièrement la pression des pneus, l'usure des freins et le serrage de la charnière de pliage et du guidon. Sur le H9, regarde l'épaisseur des plaquettes et l'état des disques ; sur le H6, le réglage des freins à tambour. Les deux ont une double suspension à ressorts : vérifie qu'elle ne prend pas de jeu."
+      }
+    ],
+    "doutes": "Pays (Chine) : la page b2b.hitway.us donne l'adresse à Dongguan (Guangdong) et LinkedIn écrit « China » explicitement ; je n'ai pas trouvé de page de la marque disant « siège en Chine » mot pour mot. Année 2020 : source = site B2B officiel de Dongguan HITWAY Vehicle Industry, qui parle de l'entreprise sous la marque HITWAY. Site officiel : hitways.com est listé comme site de l'entreprise sur LinkedIn ; hitway.eu (boutique européenne) et b2b.hitway.us existent aussi, à toi de choisir celui que tu veux afficher pour la France. Freins du H6 : le catalogue indique tambour (confirmé par b2b.hitway.us), mais la boutique hitway.eu parle de freins à disque pour le H6 ; à vérifier sur un exemplaire. Chambre à air du H6 et prise de charge du H6 : non confirmées. Actionnement des freins à disque du H9 : inconnu.",
+    "name": "Hitway",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "inokim": {
+    "country": "Israël",
+    "country_source": "https://inokim.com/pages/about (conception à Tel Aviv) ; https://inokimuk.com/about-us/ (société originaire d'Israël) ; https://www.prnewswire.com/il/news-releases/inokim-e-scooters-ride-towards-an-ipo-301289002.html (constructeur basé en Israël)",
+    "founded_year": 2009,
+    "founded_year_source": "https://inokim.com/pages/about — le site officiel dit que Inokim a démarré en 2009 comme projet de garage, d'abord sous le nom MyWay. Un communiqué PR Newswire de 2021 parle d'une société fondée en 2011 par Kfir et Dror Ben-Shooshan.",
+    "website_url": "https://inokim.com",
+    "tagline": "Pliable premium, conçue à Tel Aviv",
+    "editorial_verdict": "Côté atelier, Inokim se lit par modèle : OX et OXO en 60 V, Quick 4 en 52 V, Light 2 en 36 V. Les pneus et chambres à air s'usent en premier, et le diamètre change entre 10\" et 8,5\". Les freins aussi : tambour sur Light 2 et Quick 4, tambour avant et disque arrière sur OX, disque hydraulique sur OXO. Les plaquettes ne concernent donc pas tous les modèles. Pour le chargeur, la prise diffère (GX16-3, DC5.5x2.1, RCA) : contrôle-la avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Inokim ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Inokim OX, OXO, Quick 4 et Light 2. Choisis ton modèle, puis la pièce voulue (pneu, chambre à air, plaquettes, chargeur). Si tu hésites entre deux références, écris à l'atelier de Marseille avec ton modèle et une photo de la pièce d'origine."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Inokim ?",
+        "a": "Ça dépend du modèle : OX, OXO et Quick 4 roulent en pneus de 10 pouces, la Light 2 en 8,5 pouces. Ne commande pas sur le seul diamètre : la largeur et le type de valve comptent aussi. Vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de valider."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Inokim OX ou OXO ?",
+        "a": "L'OXO est équipée d'un frein à disque hydraulique, et l'OX d'un tambour à l'avant avec un disque à l'arrière. Les plaquettes concernent donc le disque de l'OXO et celui de l'OX. Les dimensions exactes figurent sur la fiche de chaque modèle sur piecestrottinettes.fr : vérifie-la avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour ma Inokim ?",
+        "a": "Regarde d'abord la tension et la prise. OX et OXO sont en 60 V avec une prise GX16-3, la Quick 4 en 52 V avec une prise RCA, la Light 2 en 36 V avec une prise DC5.5x2.1. L'intensité n'est pas indiquée ici : vérifie la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Que surveiller en entretien sur une Inokim ?",
+        "a": "Contrôle régulièrement l'état et la pression des pneus, puis le freinage. Sur Light 2 et Quick 4 (tambour), un frein qui perd en efficacité demande un passage à l'atelier. Sur OX et OXO, surveille l'usure des plaquettes et des disques. Vérifie aussi que la prise de charge n'est pas abîmée."
+      }
+    ],
+    "doutes": "Année : le site officiel (inokim.com/pages/about) dit 2009, sous le nom MyWay à l'origine, mais un communiqué PR Newswire de 2021 parle d'une société fondée en 2011 par les frères Ben-Shooshan, et Tracxn indique 2014 avec un siège en Chine (source peu fiable, non retenue). 2009 est donc la date de départ du projet plutôt que celle du nom Inokim. Le texte actuel de la page attribue la fondation au designer Nimrod Sapir : les sources le citent comme designer et fondateur du projet, mais je n'ai pas confirmé la formulation « fondée par ». Je n'ai pas non plus confirmé « châssis aluminium aviation » ni « suspensions brevetées » sur le site officiel (seulement sur des revendeurs). Les dimensions précises des pneus (largeur), les références de plaquettes et l'intensité des chargeurs ne sont pas dans les données fournies.",
+    "name": "Inokim",
+    "before": {
+      "country": "Israël",
+      "founded_year": 2009,
+      "website_url": "https://inokim.com",
+      "tagline": "L'exception, par design",
+      "had_verdict": true
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "iscooter": {
+    "country": null,
+    "country_source": "https://eu-iscooter.com/pages/about-us (adresse d'entreprise à Hong Kong pour ULTRAX INTERNATIONAL LIMITED, mais pas de mention explicite du siège de la marque : non retenu)",
+    "founded_year": 2015,
+    "founded_year_source": "https://iscooter.com/pages/about-us (site officiel : « Founded in 2015 »)",
+    "website_url": "https://iscooter.com",
+    "tagline": "Accessible, 36 V, pneus pleins",
+    "editorial_verdict": "Côté atelier, les iScooter i9 Max et i9Ultra du catalogue partagent la même base : 36 V, pneus pleins nid d'abeille de 10 pouces, frein électronique EBS à l'avant et disque de 110 mm à l'arrière. Pas de chambre à air à prévoir, mais des pneus pleins dont l'usure se surveille. Contrôle surtout les plaquettes et le disque arrière, seul frein mécanique, ainsi que le chargeur : l'i9 Max utilise une prise DC5.5x2.1. Vérifie toujours la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées iScooter i9 Max et i9Ultra ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : pneus, plaquettes, disques, chargeurs pour l'iScooter i9 Max et l'i9Ultra. Ouvre la fiche de ton modèle pour voir les références compatibles. Notre atelier de Marseille répare ces trottinettes, donc les compatibilités sont vérifiées sur du concret, pièce par pièce."
+      },
+      {
+        "q": "Quelle chambre à air pour une iScooter i9 Max ou i9Ultra ?",
+        "a": "Aucune : ces deux modèles roulent sur des pneus pleins nid d'abeille de 10 pouces (25,4 cm pour l'i9Ultra). Il n'y a donc pas de chambre à air à remplacer. Pour changer un pneu, la section de l'i9 Max n'est pas communiquée : vérifie la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une iScooter i9 Max ?",
+        "a": "L'i9 Max et l'i9Ultra combinent un frein électronique EBS à l'avant et un frein à disque de 110 mm à l'arrière. Les plaquettes et le disque concernent donc l'arrière. Choisis la référence compatible depuis la fiche de ton modèle sur piecestrottinettes.fr, et change disque et plaquettes ensemble si tous deux sont usés."
+      },
+      {
+        "q": "Quel chargeur pour une iScooter i9Ultra ou i9 Max ?",
+        "a": "Les deux modèles fonctionnent en 36 V. L'i9 Max a une prise DC5.5x2.1. Pour l'i9Ultra, la prise n'est pas indiquée dans nos données : consulte la fiche du modèle sur piecestrottinettes.fr avant d'acheter. Ne branche jamais un chargeur d'une autre tension sur ta batterie."
+      },
+      {
+        "q": "Quel entretien prévoir sur une iScooter i9 Max ?",
+        "a": "Regarde régulièrement l'usure des pneus pleins, l'état du disque et des plaquettes arrière, et la prise de charge. Le frein avant EBS est électronique : si le freinage te semble faible, fais contrôler l'ensemble. Pour un diagnostic, passe par notre atelier de Marseille ou vérifie les pièces sur la fiche du modèle."
+      }
+    ],
+    "doutes": "Pays non confirmé : le site EU (eu-iscooter.com) donne une adresse d'entreprise à Hong Kong (ULTRAX INTERNATIONAL LIMITED), mais aucune source lue n'indique clairement le siège de la marque ni ne la rattache à la Chine ; laissé à null. Année 2015 confirmée par le site officiel iscooter.com et reprise sur d'autres sites de la marque. Aucune donnée trouvée sur la prise de charge de l'i9Ultra ni sur la section des pneus de l'i9 Max. La présentation actuelle mentionne des chambres à air alors que les deux modèles ont des pneus pleins : à corriger.",
+    "name": "iScooter",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "isinwheel": {
+    "country": null,
+    "country_source": null,
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://www.isinwheel.com",
+    "tagline": "Urbaine S9 Pro, tout-terrain GT2",
+    "editorial_verdict": "Côté atelier, Isinwheel se résume ici à deux modèles : la S9 Pro 36 V, urbaine en pneus 8.5x2, et la GT2 48 V, tout-terrain en 11 pouces, annoncée avec un moteur de 1000 W par la marque. Sur la S9 Pro, le frein avant est électronique (EBS) : les plaquettes concernent le disque arrière. Sur la GT2, frein à disque mécanique : surveille plaquettes et disque. Dans les deux cas, pneus, chambres à air et chargeur sont les premières pièces à contrôler. Les prises diffèrent (DC5.5x2.1 contre GX16-3) : ne les mélange pas.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Isinwheel ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Isinwheel S9 Pro et Isinwheel GT2. Choisis ton modèle, puis la catégorie (pneus, chambres à air, plaquettes, disques, chargeurs). Notre atelier de Marseille vérifie la compatibilité pièce par pièce, pour éviter de commander une référence qui ne va pas sur ta trottinette."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma S9 Pro ou ma GT2 ?",
+        "a": "La S9 Pro roule en 8.5x2 ; la GT2 est équipée d'un pneu pneumatique tout-terrain de 11 pouces. Ce ne sont pas les mêmes pièces, donc pas d'échange possible entre les deux. Pour la largeur exacte du pneu GT2 et le type de valve, vérifie la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Isinwheel ?",
+        "a": "La GT2 a un frein à disque mécanique, donc des plaquettes et un disque à contrôler régulièrement. Sur la S9 Pro, le frein avant est électronique (EBS) et l'arrière est à disque : seul l'arrière use des plaquettes. Pour la référence exacte et le diamètre du disque, regarde la fiche de ton modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour une Isinwheel S9 Pro ou GT2 ?",
+        "a": "La S9 Pro fonctionne en 36 V avec une prise DC5.5x2.1 ; la GT2 est en 48 V avec une prise GX16-3. Un chargeur de l'une ne convient pas à l'autre, ni par la tension ni par la prise. Pour l'intensité de sortie, vérifie la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Comment entretenir une Isinwheel au quotidien ?",
+        "a": "Contrôle la pression des pneus (8.5x2 sur la S9 Pro, 11 pouces sur la GT2), l'état des plaquettes et du disque, et le réglage du frein mécanique sur la GT2. Sur la S9 Pro, regarde surtout le frein arrière. Si le chargeur chauffe anormalement ou que la prise joue, change-le sans attendre."
+      }
+    ],
+    "doutes": "Pays : aucune page officielle ne donne le siège. Un article tiers (zeusebikes.ca) indique une marque d'origine chinoise (marque déposée par une entité de Shenzhen), mais les boutiques officielles affichent une adresse à Chino, Californie. Pas de source fiable pour trancher, donc null. Année : sports.isinwheel.com et isinwheel.ca indiquent 2018, isinwheel.eu indique 2019, isinwheelbike.com indique 2023 : sources contradictoires, donc null. Site officiel : isinwheel.com (boutique principale, confirmé par ZoomInfo et les pages « about » du domaine ; je n'ai pas ouvert la page d'accueil elle-même). Le moteur 1000 W de la GT2 vient du site officiel. Le type exact de frein arrière de la S9 Pro est tiré des données du catalogue, pas vérifié ailleurs.",
+    "name": "Isinwheel",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "jeep": {
+    "country": "États-Unis",
+    "country_source": "https://en.wikipedia.org/wiki/Jeep (fiche : pays U.S., marque automobile détenue par Stellantis). Les trottinettes sont produites sous contrat de licence avec PLATUM : https://platum.com/fr/jeep-urban-e-mobility/",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://www.jeep.com",
+    "tagline": "Licence Jeep, suspensions, roues 10 pouces",
+    "editorial_verdict": "Côté atelier, les Jeep Adventurer et Urban Camou sont des trottinettes sous licence, développées avec PLATUM : c'est la marque automobile qui prête son nom. Les deux associent frein avant électronique et disque arrière de 120 mm : seules les plaquettes arrière et le disque s'usent. Sur l'Urban Camou, les pneus 10x2.5-6.5 sont tubeless : contrôle la pression et les crevaisons. Côté chargeur, ne mélange pas : 36 V sur l'Adventurer (prise DC5.5x2.1), 48 V sur l'Urban Camou. Vérifie toujours la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées pour ma trottinette Jeep ?",
+        "a": "Les trottinettes Jeep sont fabriquées sous licence, donc les pièces ne se trouvent pas chez le constructeur automobile. Sur piecestrottinettes.fr, tu retrouves les pièces compatibles avec la Jeep Adventurer et la Jeep Urban Camou. Choisis ton modèle, puis vérifie la compatibilité sur la fiche de chaque pièce avant de commander."
+      },
+      {
+        "q": "Quel pneu pour la Jeep Urban Camou ?",
+        "a": "Le catalogue indique un pneu 10x2.5-6.5 tubeless pour l'Urban Camou. Ne prends pas un 10 pouces au hasard : la largeur et le diamètre de jante comptent. Pour l'Adventurer, la dimension n'est pas renseignée ici : vérifie-la sur la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Faut-il une chambre à air sur une Jeep Urban Camou ?",
+        "a": "Les pneus de l'Urban Camou sont tubeless, donc montés sans chambre à air d'origine. En cas de crevaison, c'est la réparation du pneu ou son remplacement qui se pose. Pour l'Adventurer, contrôle le type de montage et la dimension sur la fiche du modèle avant d'acheter une chambre."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Jeep Adventurer ou Urban Camou ?",
+        "a": "Les deux modèles ont un frein avant électronique et un frein à disque à l'arrière, avec un disque de 120 mm. Les plaquettes concernent donc le seul étrier arrière. Compare la référence de l'étrier sur la fiche de ton modèle sur piecestrottinettes.fr, et change le disque s'il est voilé ou marqué."
+      },
+      {
+        "q": "Quel chargeur pour ma trottinette Jeep ?",
+        "a": "Tout dépend du modèle : l'Adventurer fonctionne en 36 V avec une prise DC5.5x2.1, l'Urban Camou en 48 V. Un chargeur de mauvaise tension abîme la batterie ou ne charge pas. Pour la prise de l'Urban Camou, vérifie la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      }
+    ],
+    "doutes": "Année de création non retenue : les sources divergent selon ce qu'on compte (1941 premier 4x4 selon Stellantis Media, 1943 dépôt de marque et 1945 premier produit de marque selon Wikipédia), donc null. Site : jeep.com tiré de la fiche Wikipédia, non ouvert directement ; jeep.fr apparaît chez Flotauto. Le fabricant des trottinettes (PLATUM, licence) vient de platum.com. Non confirmés : dimension de pneu et prise de charge de l'Adventurer (36 V seulement en base), prise de charge de l'Urban Camou.",
+    "name": "Jeep",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "joyor": {
+    "country": "Chine",
+    "country_source": "https://www.crunchbase.com/organization/jinhua-joyor-vehicle-co et https://www.linkedin.com/company/jinhua-joyor-vehicle-co-ltd (Jinhua Joyor Vehicle Co., Ltd, siège à Yongkang, Zhejiang, Chine)",
+    "founded_year": 2014,
+    "founded_year_source": "https://joyorescooter.com/pages/about-us (« JOYOR Vehicle Co., Ltd., founded in 2014 ») ; confirmé par la fiche LinkedIn https://www.linkedin.com/company/jinhua-joyor-vehicle-co-ltd",
+    "website_url": "https://joyorescooter.com",
+    "doutes": "Année : 2014 selon le site du constructeur (joyorescooter.com) et LinkedIn, mais ElectroTraveller (site tiers) parle de 2016 ; je retiens 2014 car source constructeur. Le site fr.joyorscooter.com / joyorscooter.com est celui de Joyor E-MOVING S.L. (Barcelone, distributeur européen), pas retenu comme site officiel de la marque. Joyorglobal.com apparaît aussi comme site du constructeur (non lu directement). Aucune donnée sourcée sur le chargeur d'origine ni sur les références de plaquettes : renvoi vers les fiches modèle.",
+    "tagline": "Trottinettes 48 V et 60 V, 10 pouces",
+    "editorial_verdict": "Côté atelier, Joyor, c'est deux profils au catalogue : la S10-S-Z en 60 V avec frein à disque hydraulique, et la T6 en 48 V avec disque mécanique. Les deux partagent un disque de 120 mm et une prise GX16-3, ce qui simplifie le stock. À surveiller en priorité : les pneus et chambres à air, dont les dimensions diffèrent d'un modèle à l'autre, l'usure des plaquettes, le réglage du câble de frein sur la T6, et le choix du chargeur selon la tension.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Joyor ?",
+        "a": "Sur piecestrottinettes.fr, tu trouves les pièces compatibles avec la Joyor S10-S-Z et la Joyor T6 : pneus, chambres à air, plaquettes, disques et chargeurs. Passe par la fiche de ton modèle pour vérifier la compatibilité avant de commander. Notre atelier de Marseille te conseille si tu hésites entre deux références."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Joyor ?",
+        "a": "Ça dépend du modèle : la S10-S-Z monte du 80/65-6 (10x3.0), la T6 du 10x2.50-6. Les deux sont des 10 pouces, mais ne sont pas interchangeables. Pour la chambre, vérifie la valve et la compatibilité sur la fiche de ton modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Joyor S10-S-Z ou T6 ?",
+        "a": "La S10-S-Z a un frein à disque hydraulique, la T6 un disque mécanique, et les deux utilisent un disque de 120 mm. Les plaquettes ne sont pas les mêmes d'un système à l'autre. Vérifie la référence exacte sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour ma Joyor ?",
+        "a": "Le chargeur dépend de la tension : 60 V pour la S10-S-Z, 48 V pour la T6. Les deux ont une prise GX16-3. Ne branche jamais un chargeur d'une autre tension sur la batterie. Contrôle la fiche de ton modèle sur piecestrottinettes.fr pour le chargeur compatible."
+      },
+      {
+        "q": "Comment entretenir ma Joyor pour éviter les pannes ?",
+        "a": "Contrôle régulièrement la pression des pneus et l'usure des plaquettes. Sur la T6, vérifie la tension du câble de frein mécanique ; sur la S10-S-Z, surveille le niveau d'efficacité du frein hydraulique et l'état du disque de 120 mm. Au moindre doute, une vérification à l'atelier évite de casser d'autres pièces."
+      }
+    ],
+    "name": "Joyor",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "kaabo": {
+    "country": "Chine",
+    "country_source": "https://www.linkedin.com/company/kaabo-electric-scooter (page de Ningbo Kaabo Technology Co., Ltd : siège à Ningbo, Zhejiang, Chine ; site déclaré www.kaabo.com)",
+    "founded_year": 2013,
+    "founded_year_source": "https://www.kaabo.com/about-us/ (l'histoire de Kaabo commence en 2013) ; confirmé par https://kaaboeurope.com/about-us/",
+    "website_url": "https://www.kaabo.com/",
+    "tagline": "Haute puissance, tout-terrain, 60 V",
+    "editorial_verdict": "Côté atelier, Kaabo mise sur la haute puissance, comme le montrent le Wolf Warrior (60 V, pneus 11\") et le Mantis Pro (60 V, pneus 10\"). Les deux partagent des freins à disque hydrauliques et une prise de charge GX16-3, ce qui simplifie le choix du chargeur. Sur ces trottinettes puissantes, surveille d'abord les pneus et chambres à air, puis les plaquettes et les disques, enfin l'état du chargeur 60 V. Contrôle toujours la référence sur la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Kaabo ?",
+        "a": "Sur piecestrottinettes.fr, tu trouves les pièces pour les Kaabo Wolf Warrior et Mantis Pro : pneus, chambres à air, plaquettes, disques et chargeurs. Pars de la fiche de ton modèle pour ne voir que les références compatibles. Si une pièce n'apparaît pas, passe par l'atelier de Marseille pour qu'on regarde ton cas."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Kaabo ?",
+        "a": "Le Wolf Warrior est équipé de pneus 11 pouces, le Mantis Pro de pneus 10 pouces. Ne mélange pas les deux dimensions. Vérifie aussi le type de valve et la largeur exacte sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander, car on ne la déduit pas de la seule taille en pouces."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour un Wolf Warrior ou un Mantis Pro ?",
+        "a": "Les deux modèles ont des freins à disque hydrauliques. La forme des plaquettes dépend de l'étrier monté sur ta trottinette, pas seulement du modèle. Consulte la fiche de ton Wolf Warrior ou Mantis Pro sur piecestrottinettes.fr pour la référence compatible, et change disque et plaquettes ensemble si le disque est marqué."
+      },
+      {
+        "q": "Quel chargeur pour une Kaabo 60 V ?",
+        "a": "Le Wolf Warrior et le Mantis Pro fonctionnent en 60 V et utilisent une prise GX16-3. Il te faut donc un chargeur 60 V avec ce connecteur. Vérifie l'ampérage et la tension de charge indiquée sur la fiche du modèle sur piecestrottinettes.fr, et ne branche jamais un chargeur dont tu n'es pas sûr."
+      },
+      {
+        "q": "Que contrôler régulièrement sur une Kaabo ?",
+        "a": "Regarde la pression et l'usure des pneus, l'épaisseur des plaquettes et l'état des disques, car les freins hydrauliques demandent un suivi régulier. Vérifie aussi la prise de charge GX16-3 et le câble du chargeur. Au moindre jeu ou bruit anormal, fais contrôler la trottinette avant de rouler."
+      }
+    ],
+    "doutes": "Pays : la page LinkedIn de la société indique un siège à Ningbo (Zhejiang, Chine) ; le site officiel kaabo.com ne le dit pas dans les extraits lus. Année : kaabo.com/about-us donne 2013 (début de l'histoire), mais LinkedIn affiche « Founded 2007 » dans sa fiche, et Tracxn/Micromobility.io donnent des localisations incohérentes (Philippines, USA) : sources écartées. Le terme « bimoteur » de la présentation actuelle n'est pas sourcé ni dans les données du catalogue, je ne l'ai pas repris. Dimensions exactes (largeur de pneu, valve), type d'étrier et ampérage du chargeur non confirmés.",
+    "name": "Kaabo",
+    "before": {
+      "country": "Chine",
+      "founded_year": 2013,
+      "website_url": "https://www.kaabo.com/",
+      "tagline": "Tout-terrain, sans limites",
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "kingsong": {
+    "country": "Chine",
+    "country_source": "https://www.kingsongpro.com/page/about-us (siège à Shenzhen, Guangming New District, 518132)",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://www.kingsong.com/",
+    "tagline": "Freins tambour, batteries 36 et 48 V",
+    "editorial_verdict": "Côté atelier, Kingsong est un fabricant de Shenzhen, connu d'abord pour ses gyroroues, qui propose aussi des trottinettes. Au catalogue, l'E1 (36 V, pneus 8,5 pouces) et la N14 Max (48 V) ont un frein tambour à l'avant : pas de plaquettes devant, mais des mâchoires. À l'arrière, l'E1 a un frein électronique EBS, la N14 Max un disque, donc des plaquettes à contrôler. Les pneus et chambres à air restent l'usure la plus fréquente. Pour le chargeur, vérifie la tension : 36 V ou 48 V selon le modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Kingsong pour une E1 ou une N14 Max ?",
+        "a": "Sur piecestrottinettes.fr, chaque modèle a sa fiche : Kingsong E1 et Kingsong N14 Max. Pars de ta fiche plutôt que d'une recherche générale, la compatibilité y est indiquée pièce par pièce. Si tu hésites sur une référence, passe par l'atelier de Marseille avant de commander : ça évite un retour."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Kingsong E1 ?",
+        "a": "La Kingsong E1 roule en pneus pneumatiques de 8,5 pouces, donc avec chambre à air. Prends la pièce listée sur la fiche de l'E1 et vérifie la dimension avant de commander. Pour la N14 Max, la taille de pneu n'est pas renseignée ici : contrôle la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quelles plaquettes de frein choisir pour une Kingsong N14 Max ?",
+        "a": "La N14 Max a un frein tambour à l'avant et un disque à l'arrière. Les plaquettes concernent donc le disque arrière ; devant, ce sont des mâchoires de tambour, qui ne se changent pas comme des plaquettes. Vérifie la référence exacte du disque et des plaquettes sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour une Kingsong E1 ou une N14 Max ?",
+        "a": "L'E1 fonctionne en 36 V et la N14 Max en 48 V : ne les intervertis pas. Un chargeur doit correspondre à la tension de la batterie. Vérifie aussi le connecteur et l'intensité sur la fiche de ton modèle sur piecestrottinettes.fr, ces données ne sont pas détaillées ici."
+      },
+      {
+        "q": "Que surveiller régulièrement sur une Kingsong ?",
+        "a": "Contrôle la pression et l'usure des pneus, l'état des chambres à air, puis le freinage. Sur la N14 Max, regarde le disque arrière et ses plaquettes. Sur l'E1, le frein arrière est électronique (EBS) : si le freinage faiblit, fais vérifier la trottinette à l'atelier avant de rouler."
+      }
+    ],
+    "doutes": "Année de création non tranchée : la page kingsongpro.com (présentée comme celle de King Song) indique une fondation en 2014 (enregistrement en septembre 2014), alors que plusieurs distributeurs et revendeurs avancent 2012 (activité de cartes de protection de batterie, avant les gyroroues). Je n'ai pas pu confirmer lequel correspond à la création de la marque, donc null. Le site kingsong.com est bien celui de la marque (boutique officielle). Dimension des pneus de la N14 Max, tension/connecteur précis du chargeur et nature exacte du modèle E1 non confirmés. Pas de page Wikipédia consultée. La mention « pneus 10 pouces » et « chargeurs 37 V » dans la présentation actuelle semble fausse ou non vérifiée (36 V pour l'E1 au catalogue).",
+    "name": "Kingsong",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "kugoo": {
+    "country": "Chine",
+    "country_source": "https://www.jlkugoo.com/ (site du fabricant Shenzhen Jilong Technology : « Kugoo was born in Zhejiang, China ») ; confirmé par https://en.kugookirin.com/About/2661.html",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://kugoo.eu/",
+    "tagline": "Trottinettes 10 pouces, 48 à 52 V",
+    "editorial_verdict": "Côté atelier, Kugoo est une marque d'origine chinoise dont les deux G2 du catalogue partagent la même base : pneus 10 pouces et freins à disque mécaniques de 140 mm. Le G2 Max tourne en 48 V avec des pneus 10 x 2.75, le G2 Master en 52 V avec des pneus tubeless. Les freins mécaniques demandent un réglage de câble régulier et un œil sur les plaquettes et le disque. Pour le chargeur, la prise change selon le modèle (RCA ou CQ) : vérifie-la avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Kugoo G2 Max et G2 Master ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont rangées par modèle : Kugoo G2 Max et Kugoo G2 Master ont chacun leur fiche. Pneus, chambres à air, plaquettes, disques et chargeurs y sont référencés. Pars toujours de ton modèle exact pour éviter de commander une pièce d'un autre G2."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour un Kugoo G2 Max ?",
+        "a": "Le G2 Max chausse des pneus 10 x 2.75 pouces. Cherche donc une chambre à air et un pneu à cette dimension, pas un simple « 10 pouces » générique. Compare avec le marquage sur le flanc de ton pneu actuel, puis confirme sur la fiche du G2 Max sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Le Kugoo G2 Master a-t-il une chambre à air ?",
+        "a": "Le G2 Master est équipé en 10 pouces tubeless, donc sans chambre à air d'origine. La section du pneu n'est pas communiquée dans notre base : relève-la sur le flanc de ton pneu et vérifie la compatibilité sur la fiche du G2 Master sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour un Kugoo G2 ?",
+        "a": "Le G2 Max comme le G2 Master utilisent des freins à disque mécaniques avec un disque de 140 mm. Prends des plaquettes adaptées à l'étrier de ton modèle : la forme exacte se contrôle sur la fiche du modèle sur piecestrottinettes.fr. Si le frein mord mal, règle d'abord le câble avant de changer les plaquettes."
+      },
+      {
+        "q": "Quel chargeur pour mon Kugoo G2 Max ou G2 Master ?",
+        "a": "Ça dépend du modèle. Le G2 Max est en 48 V avec une prise RCA ; le G2 Master est en 52 V avec une prise CQ. Ne mélange pas : tension et connecteur doivent correspondre. Regarde l'étiquette de ton chargeur actuel et vérifie la fiche du modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Année de création : sources contradictoires (2015 selon kugoo.eu-type sites revendeurs/Kugoo USA et sites tiers ; 2016 selon jlkugoo.com ; « KugooKirin » 2017 selon en.kugookirin.com) → null. Pays : un site tiers (maisonae.fr) parle d'origine russe, mais le fabricant indique Zhejiang/Shenzhen, Chine ; je retiens la Chine. Site officiel : plusieurs sites se disent officiels (kugoo.eu, kugooride.com, jlkugoo.com, kugoo.ca) ; kugoo.eu se déclare officiel pour l'UE, à valider par l'équipe. Kukirin/KugooKirin sont citées comme sous-marques ou gammes selon les sources, non vérifié.",
+    "name": "Kugoo",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "kuickwheel": {
+    "country": "Chine",
+    "country_source": "https://www.kuickwheel.com/about/ (site officiel : entreprise basée à Nanjing, province du Jiangsu) ; https://evtol.news/rictor-kuickwheel-skyrider-x6 (Nanjing, Jiangsu, Chine)",
+    "founded_year": 2014,
+    "founded_year_source": "https://www.kuickwheel.com/about/ (« Founded in 2014, Kuickwheel Technology »). La source désigne l'entreprise Kuickwheel Technology, qui porte la marque.",
+    "website_url": "https://www.kuickwheel.com/",
+    "tagline": "Urbaine, étanche, pensée pour le partage",
+    "editorial_verdict": "Côté atelier, les deux Kuickwheel du catalogue n'ont pas le même freinage ni la même prise de charge, donc on vérifie avant de commander. La S1-C Pro (pneus 10x2.5) combine frein à tambour avant et EBS arrière : pas de plaquettes à l'avant. La M16 Pro (10x2.125) a un EBS avant et un disque arrière : plaquettes et disque à surveiller. Les deux sont en 36 V, mais avec des prises différentes : DC5.5x2.1 d'un côté, RCA de l'autre. Pneus et chambres à air restent les premières pièces d'usure.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Kuickwheel ?",
+        "a": "Sur piecestrottinettes.fr, nous référençons des pièces pour la Kuickwheel S1-C Pro et la Kuickwheel M16 Pro : pneus, chambres à air, freins, chargeurs. Ouvre la fiche de ton modèle pour voir les références compatibles. Notre atelier de Marseille suit ces modèles, donc la compatibilité est vérifiée par modèle, pas au hasard."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Kuickwheel ?",
+        "a": "Les deux modèles roulent en 10 pouces, mais pas dans la même section : la S1-C Pro est en 10x2.5, la M16 Pro en 10x2.125. Ne les intervertis pas. Pour la chambre à air, vérifie le type de valve sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Kuickwheel M16 Pro ?",
+        "a": "La M16 Pro a un EBS à l'avant et un frein à disque à l'arrière : les plaquettes et le disque concernent donc la roue arrière. Les dimensions et le type d'étrier ne sont pas précisés ici, donc vérifie la fiche de la M16 Pro sur piecestrottinettes.fr avant de commander une référence."
+      },
+      {
+        "q": "Ma Kuickwheel S1-C Pro n'a pas de plaquettes à l'avant, c'est normal ?",
+        "a": "Oui. Selon notre catalogue, la S1-C Pro a un frein à tambour à l'avant et un EBS (freinage électronique) à l'arrière. Il n'y a donc pas de plaquettes ni de disque d'origine à changer. Si le freinage avant faiblit, consulte la fiche du modèle ou passe à l'atelier."
+      },
+      {
+        "q": "Quel chargeur pour une Kuickwheel S1-C Pro ou M16 Pro ?",
+        "a": "Les deux sont en 36 V, mais la prise change : DC5.5x2.1 sur la S1-C Pro, RCA sur la M16 Pro. Une même tension ne suffit donc pas : la fiche doit correspondre à ton modèle. Pour l'ampérage, vérifie la fiche du modèle sur piecestrottinettes.fr ou l'étiquette de ton chargeur d'origine."
+      }
+    ],
+    "doutes": "Pays et année viennent du site officiel (page « About »), qui parle de Nanjing/Jiangsu sans écrire « Chine » : la Chine est confirmée par evtol.news. Le site officiel kuickwheel.com est plutôt orienté B2B/partage ; le nom légal est Nanjing Kuailun Intelligent Technology (domaine kuailun.com cité par Crunchbase). Je n'ai pas trouvé de dimensions de valve, d'ampérage de chargeur ni de références de freins : renvoi aux fiches modèles.",
+    "editorial_verdict_note": "",
+    "name": "Kuickwheel",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "langfeite": {
+    "country": "Chine",
+    "country_source": "https://langfeite.com/abouts.html (page « About us » du site officiel : entreprise basée à Shanghai)",
+    "founded_year": 2015,
+    "founded_year_source": "https://langfeite.com/abouts.html (« Langfeite was founded in 2015 »)",
+    "website_url": "https://langfeite.com",
+    "tagline": "Bimoteur, tout-terrain, haute puissance",
+    "editorial_verdict": "Côté atelier, Langfeite, c'est du bimoteur costaud, de la GT2 Mini 52 V à la Coupé 48 V. La GT2 Mini a des freins hydrauliques avec disque de 140 mm et des pneus tubeless de 10 pouces : surveille l'usure des plaquettes et l'état des pneus. La Coupé, en frein à disque mécanique, demande des réglages de câble réguliers. Sur les deux, le chargeur doit correspondre à la tension de la batterie, 48 V ou 52 V : vérifie toujours la fiche du modèle avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Langfeite ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Langfeite GT2 Mini et Langfeite Coupé pour l'instant. Choisis ton modèle, puis la catégorie (pneus, chambres à air, plaquettes, disques, chargeurs). Notre atelier de Marseille vérifie la compatibilité pièce par pièce, donc tu évites de commander la mauvaise référence."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Langfeite Coupé ?",
+        "a": "Pour la Coupé, le catalogue référence des pneus et chambres à air en 9,5 pouces, et des références en 10 pouces pour la GT2 Mini. Ouvre la fiche de ton modèle pour la dimension exacte, la valve et le type de montage. Ne te fie pas à la seule taille affichée sur le flanc."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour la Langfeite GT2 Mini ?",
+        "a": "La GT2 Mini a un frein à disque hydraulique et un disque de 140 mm. Les plaquettes dépendent de l'étrier : prends celles de la fiche du modèle sur piecestrottinettes.fr. Remplace-les quand la garniture est fine ou que le freinage devient bruyant ou mou. Vérifie aussi l'état du disque."
+      },
+      {
+        "q": "Quel chargeur pour ma Langfeite : 48 V ou 52 V ?",
+        "a": "Le chargeur doit correspondre à la tension de la batterie. La Langfeite Coupé est en 48 V, la GT2 Mini en 52 V. Ne mélange pas les deux. Vérifie aussi le connecteur et l'ampérage sur la fiche du modèle avant de commander, pour éviter une charge incomplète ou un chargeur incompatible."
+      },
+      {
+        "q": "Comment entretenir une Langfeite ?",
+        "a": "Contrôle régulièrement la pression et l'usure des pneus, l'épaisseur des plaquettes et le jeu des leviers. Sur la Coupé, qui a des freins à disque mécaniques, règle la tension du câble quand la course du levier augmente. Sur la GT2 Mini, surveille l'état du disque et les fuites éventuelles du circuit hydraulique."
+      }
+    ],
+    "doutes": "Le site officiel indique « fondée en 2015 » mais précise aussi que l'histoire a commencé en 2013 ; j'ai retenu 2015 car c'est la date de fondation énoncée. Dimensions pneus : 9,5\" (Coupé) et 10\" tubeless (GT2 Mini) viennent de revendeurs (fastride.fr, minimotors.fr), pas du constructeur. Les références exactes de plaquettes et chargeurs (connecteur, ampérage) ne sont pas confirmées : renvoi aux fiches modèles. Frein de la Coupé et disque de la GT2 Mini repris du catalogue fourni.",
+    "name": "Langfeite",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "kukirin": {
+    "country": "Chine",
+    "country_source": "https://www.kukirinofficialstore.com/pages/about-us (propriétaire de la marque : Shenzhen KuKirin Technology Co., Ltd.) ; origine chinoise confirmée aussi par https://www.kukirin-fr.com/pages/a-propos-de-nous",
+    "founded_year": 2018,
+    "founded_year_source": "https://www.kukirinhu.com/pages/brand-story (fondée en 2018 sous le nom KugooKirin, renommée KuKirin en 2022) ; idem https://eu-kukirin.com/blogs/news-kukirin-official-website/kukirin-brand-story-from-factory-to-european-micro-mobility-leader et https://kukirin.co.uk/pages/about-us",
+    "website_url": null,
+    "tagline": "Puissance abordable, gammes G2 à G4",
+    "editorial_verdict": "Côté atelier, les Kukirin donnent beaucoup de puissance pour le budget, mais d'autres ateliers conseillent de contrôler freins, serrages et roulements dès la réception. Les freins varient selon le modèle : mécanique sur la G2 Master, hydraulique sur la G3 Pro et la G4 Max, donc plaquettes et entretien ne sont pas identiques. Surveille les pneus (10 pouces, 12 sur la G4 Max), les chambres à air et les disques de 140 ou 160 mm. Pour le chargeur, tension et prise changent d'un modèle à l'autre : vérifie avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Kukirin ?",
+        "a": "Sur piecestrottinettes.fr, le catalogue couvre sept modèles : G2 Master, G2 Max (2026), G2 Ultra, G3 Adventurers, G3 Pro, G4 (2026) et G4 Max. Choisis ton modèle exact, millésime compris, car une G2 Max ou une G4 de 2026 n'a pas forcément les mêmes pièces qu'une autre version. En cas de doute, vérifie la fiche du modèle."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Kukirin ?",
+        "a": "Les G2 Master, G2 Max (2026), G2 Ultra, G3 Pro et G4 (2026) roulent en 10 pouces. La G3 Adventurers a un 10 pouces tout-terrain, la G4 Max un 12 pouces. La largeur et le type de valve ne sont pas les mêmes partout : vérifie-les sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Kukirin ?",
+        "a": "Tous les modèles du catalogue ont des freins à disque. La G2 Master est en mécanique, la G3 Pro et la G4 Max en hydraulique. Disque de 140 mm sur G2 Master, G3 Pro, G3 Adventurers et G2 Max (2026), 160 mm sur la G4 (2026). Pour les autres, vérifie la fiche du modèle."
+      },
+      {
+        "q": "Quel chargeur pour ma Kukirin ?",
+        "a": "Il dépend de la tension : 48 V pour les G2 Ultra et G2 Max (2026), 52 V pour les G2 Master, G3 Pro et G3 Adventurers, 60 V pour les G4 et G4 Max. La prise varie aussi : CQ sur la G2 Master, CQ/RCA sur la G3 Pro, DC5.5x2.1 sur la G4 (2026) et la G3 Adventurers. Vérifie la fiche pour les autres."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Kukirin ?",
+        "a": "Contrôle régulièrement les serrages, les freins et les roulements, surtout sur une trottinette neuve. Regarde l'usure des plaquettes et des disques, l'état des pneus et des chambres à air. Sur les G3 Pro et G4 Max à freins hydrauliques, surveille la sensation du levier : un levier mou demande un passage à l'atelier."
+      }
+    ],
+    "doutes": "Site officiel non confirmé : plusieurs boutiques régionales (kukirinofficialstore.com, kukirin-fr.com, kukirinfrance.com, eu-kukirin.com, kukirin.co.uk) se présentent comme officielles ou autorisées, mais aucune page lue ne désigne clairement le site mondial du fabricant, donc null. Le pays s'appuie sur le propriétaire Shenzhen KuKirin Technology Co., Ltd. (Shenzhen, Chine) cité par des boutiques partenaires, pas sur une page du siège lui-même. Le site kugooescooters.com annonce 2015, mais il concerne Kugoo ; j'ai retenu 2018, cité par plusieurs sites de la marque. Le pays et l'année 2018 déjà en base sont donc confirmés. L'ancienne accroche « Gaming, vitesse, style » n'est étayée par aucune source lue. Les tensions, prises, disques et pneus viennent uniquement du catalogue fourni ; type de frein (mécanique ou hydraulique) non précisé pour G4 (2026), G2 Ultra, G3 Adventurers et G2 Max (2026) ; disque non renseigné pour G4 Max et G2 Ultra.",
+    "name": "Kukirin",
+    "before": {
+      "country": "Chine",
+      "founded_year": 2018,
+      "website_url": null,
+      "tagline": "Gaming, vitesse, style",
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "micro": {
+    "country": "Suisse",
+    "country_source": "https://en.wikipedia.org/wiki/Micro_Mobility_Systems (siège à Küsnacht, canton de Zurich ; confirmé par https://www.swiss.com/magazine/en/inside-swiss/sustainability/microlino)",
+    "founded_year": 1996,
+    "founded_year_source": "https://en.wikipedia.org/wiki/Micro_Mobility_Systems (fondée en 1996 par Wim Ouboter ; idem https://www.swiss.com/magazine/en/inside-swiss/sustainability/microlino et https://editions.fuorisalone.it/2020/en/events/305/Micro-Mobility-Systems)",
+    "website_url": "https://www.micro.ms",
+    "tagline": "Compacte suisse, pneus anti-crevaison",
+    "editorial_verdict": "Côté atelier, Micro mise sur la compacité et les pneus anti-crevaison : alvéolés sur la X21, plein caoutchouc Airless sur la Merlin II. Tu évites la crevaison, mais l'usure se reporte sur le pneu lui-même, à remplacer entier. Les deux modèles tournent en 36 V : vérifie le chargeur et son connecteur avant de commander. Le freinage diffère : disque arrière sur la X21 (disque et plaquettes à surveiller), tambour arrière sur la Merlin II, sans plaquettes classiques. Contrôle toujours la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Micro ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Micro X21 et Micro Merlin II. Ouvre la fiche de ton modèle pour voir les pneus, éléments de frein et chargeurs compatibles. Notre atelier de Marseille travaille sur ces trottinettes, ce qui permet de contrôler la compatibilité pièce par pièce."
+      },
+      {
+        "q": "Quel pneu pour ma Micro X21 ou ma Merlin II ?",
+        "a": "Les deux roulent en 200 mm (8 pouces). La X21 reçoit des pneus alvéolés anti-crevaison, la Merlin II un pneu plein caoutchouc Airless. Ce ne sont pas les mêmes pièces : choisis la référence depuis la fiche de ton modèle, sans partir sur un pneu 8 pouces générique."
+      },
+      {
+        "q": "Faut-il une chambre à air sur une Micro Merlin II ?",
+        "a": "Non, la Merlin II porte un pneu plein Airless anti-crevaison : il n'y a pas de chambre à air à changer. Quand il est usé, on remplace le pneu complet. Sur la X21, les pneus sont alvéolés anti-crevaison : vérifie sur la fiche du modèle quelle pièce s'applique."
+      },
+      {
+        "q": "Quelles plaquettes ou quel frein pour ma Micro ?",
+        "a": "La X21 combine un frein électronique (EBS) à l'avant et un disque à l'arrière : surveille l'épaisseur des plaquettes et l'état du disque. La Merlin II combine EBS avant et tambour arrière : pas de plaquettes classiques. Vérifie la pièce exacte sur la fiche du modèle."
+      },
+      {
+        "q": "Quel chargeur pour une Micro X21 ou Merlin II ?",
+        "a": "Les deux modèles du catalogue sont en 36 V. Cette tension ne suffit pas : le connecteur et l'ampérage doivent aussi correspondre à ta trottinette. Regarde la fiche de ton modèle sur piecestrottinettes.fr avant de commander, et n'utilise jamais un chargeur d'une autre tension."
+      }
+    ],
+    "doutes": "Année de création : Wikipédia, SWISS et Fuorisalone donnent 1996 pour Micro Mobility Systems AG ; MobLab dit 1999 et FOSTEC 2000. J'ai retenu 1996 (sources majoritaires) mais l'année du premier kickboard (1997) diffère. Site officiel micro.ms tiré de l'infobox Wikipédia, je n'ai pas ouvert le site lui-même. Dimensions exactes des pneus, tension/connecteur des chargeurs et références de freins non confirmés : renvoi aux fiches modèles. La présentation actuelle mentionne « chambres à air » et « plaquettes » : à revoir, car la Merlin II est en pneu plein et frein tambour arrière.",
+    "name": "Micro",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "laotie": {
+    "country": null,
+    "country_source": null,
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://www.laotie.zone/",
+    "tagline": "Bimoteurs 60 V tout-terrain",
+    "editorial_verdict": "Côté atelier, les Laotie Ti30 et SR10 sont des bimoteurs 60 V orientés tout-terrain et vitesse : ça sollicite pneus et freins. Le Ti30 roule en 11 pouces tubeless, le SR10 en 10x3.0 (80/65-6) : pas les mêmes pneus, donc ne mélange pas les références. Les deux ont des freins à disque hydrauliques avec disque de 140 mm : surveille l'épaisseur des plaquettes et l'état du disque. Côté charge, le SR10 utilise une prise GX16-3 : vérifie le connecteur avant de commander un chargeur 60 V.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Laotie ?",
+        "a": "Sur piecestrottinettes.fr, dans la page marque Laotie : on y référence les pièces compatibles avec le Laotie Ti30 et le Laotie SR10, comme les pneus, chambres à air, plaquettes, disques et chargeurs. Choisis ton modèle, puis contrôle la fiche de la pièce avant de commander. L'atelier est à Marseille."
+      },
+      {
+        "q": "Quel pneu pour un Laotie Ti30 ou un SR10 ?",
+        "a": "Le Ti30 monte un pneu 11 pouces tubeless, le SR10 un 10x3.0 (80/65-6). Ce ne sont pas les mêmes dimensions, donc les pneus ne sont pas interchangeables. Pour une chambre à air ou une valve, vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour ma Laotie ?",
+        "a": "Le Ti30 et le SR10 ont tous deux des freins à disque hydrauliques avec un disque de 140 mm. La plaquette dépend toutefois de l'étrier : ne commande pas au jugé et vérifie la référence sur la fiche de ton modèle. Change aussi le disque s'il est rayé, voilé ou trop usé."
+      },
+      {
+        "q": "Quel chargeur pour une Laotie SR10 ou Ti30 ?",
+        "a": "Les deux modèles sont en 60 V : un chargeur d'une autre tension ne convient pas. Le SR10 utilise une prise GX16-3. Pour le Ti30, le type de connecteur n'est pas indiqué dans nos données : vérifie la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Laotie bimoteur ?",
+        "a": "Contrôle régulièrement l'état des pneus et leur pression, l'épaisseur des plaquettes et la surface du disque, surtout si tu roules en tout-terrain. Vérifie aussi le connecteur de charge et le serrage des fixations. Si le levier de frein hydraulique devient spongieux, fais contrôler le circuit."
+      }
+    ],
+    "doutes": "Pays et année de création non confirmés par une source fiable : manuals.plus (agrégateur tiers, non officiel) attribue la marque à Shenzhen Yisi Technology Co., Ltd., « établie en 2017 », mais je n'ai trouvé ni confirmation sur le site officiel ni sur une page de presse ou Wikipédia, et la distinction entre l'année de la marque et celle de l'entreprise reste floue. J'ai donc laissé pays et année à null. Le site officiel laotie.zone est confirmé (page lue, lié depuis la chaîne YouTube officielle). Un site laotie.fr existe aussi, mais son statut officiel n'est pas établi. Aucune donnée sur le connecteur de charge du Ti30 dans le catalogue fourni.",
+    "name": "Laotie",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "nami": {
+    "country": "Chine",
+    "country_source": "https://stormrides.nz/collections/nami-brand-electric-scooters (siège à Shenzhen, Chine) ; https://electronics.alibaba.com/supplier/nami-burn-e-2-max-electric-scooter-producer (entité de fabrication Jinhua Klan, production à Jinhua, Chine). Sources de revendeurs, pas de site officiel lu.",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://nami-electric.com",
+    "tagline": "72 V, suspension réglable, freins hydrauliques",
+    "editorial_verdict": "Côté atelier, la Burn-E 3 et la Burn-E 3 Max partagent la même base au catalogue : 72 V, pneus tubeless 90/65-6.5, freins à disque hydrauliques de 160 mm, prise de charge NAMI-RGX16-2. Ce sont des trottinettes puissantes, donc les pneus, les plaquettes et les disques s'usent vite si tu roules fort. Contrôle l'épaisseur des plaquettes, le voile des disques et la course du levier, qui signale un circuit à purger. Pour le chargeur, vérifie la tension et la prise avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Nami Burn-E 3 ?",
+        "a": "Sur piecestrottinettes.fr, dans la page Nami, tu trouves les pièces référencées pour la Burn-E 3 et la Burn-E 3 Max : pneus, plaquettes, disques et chargeurs. Ouvre la fiche de ton modèle pour voir les pièces compatibles. Si une référence te manque, l'atelier de Marseille peut t'aider à l'identifier."
+      },
+      {
+        "q": "Quel pneu pour une Nami Burn-E 3 ou Burn-E 3 Max ?",
+        "a": "Le catalogue indique un pneu 90/65-6.5 en tubeless pour la Burn-E 3 comme pour la Burn-E 3 Max, cette dernière étant décrite en 11 pouces. Les deux modèles étant tubeless, ne commande pas une chambre à air au hasard : vérifie la fiche du modèle sur piecestrottinettes.fr avant de choisir."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Nami Burn-E 3 ?",
+        "a": "La Burn-E 3 et la Burn-E 3 Max sont équipées de freins à disque hydrauliques avec disques de 160 mm. Les plaquettes doivent correspondre à l'étrier monté sur ta trottinette. Regarde la fiche de ton modèle sur piecestrottinettes.fr pour la référence compatible plutôt que de te fier à la seule taille du disque."
+      },
+      {
+        "q": "Quel chargeur pour une Nami Burn-E 3 Max ?",
+        "a": "La Burn-E 3 Max fonctionne en 72 V et utilise la prise NAMI-RGX16-2, comme la Burn-E 3. Un chargeur doit correspondre à la tension de la batterie et à cette prise. Vérifie la tension de sortie et la référence sur la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Comment entretenir une Nami Burn-E 3 ?",
+        "a": "Contrôle régulièrement la pression et l'usure des pneus tubeless, l'épaisseur des plaquettes et l'état des disques de 160 mm. Si le levier de frein devient spongieux, fais purger le circuit hydraulique. Après une sortie sous la pluie, essuie la trottinette et vérifie que la prise de charge est bien sèche."
+      }
+    ],
+    "doutes": "Année de création non confirmée : deux revendeurs (stormrides.nz, tuksimaailm) indiquent 2019 (fin 2019), un autre (ebikescooter.com) parle de 2020 ; aucune source officielle, Wikipédia ou presse lue, donc null. Pays : Chine d'après des sources de revendeurs (Shenzhen d'un côté, Jinhua de l'autre) ; la présentation actuelle « marque coréenne » semble fausse et doit être corrigée. Site : nami-electric.com vient de la page Facebook officielle de la marque, je n'ai pas ouvert le site lui-même. Dimensions de chambre à air, références de plaquettes et références de chargeur : non fournies, à vérifier sur les fiches.",
+    "name": "Nami",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "navee": {
+    "country": "Chine",
+    "country_source": "https://www.cbinsights.com/company/navee-1 (siège à Suzhou, Jiangsu, Chine) ; confirmé par https://ifdesign.com/en/brands-creatives/company/brightway-innovation-intelligent-technology/157337 (adresse Suzhou, Chine)",
+    "founded_year": 2021,
+    "founded_year_source": "https://www.naveetech.com/about-us/ (site officiel : marque NAVEE née en avril 2021, premier scooter N65). Certaines sources tierces parlent de 2020 pour la société.",
+    "website_url": "https://www.naveetech.com",
+    "tagline": "Suspension, appli, 48 V",
+    "editorial_verdict": "Côté atelier, Navee est une marque chinoise née en 2021, et les quatre modèles du catalogue (GT5 Pro, GT5 Max, ST5 Pro, XT5 Pro) sont en 48 V. La GT5 Pro combine tambour avant et frein électronique EBS arrière : peu de plaquettes à prévoir. GT5 Max et XT5 Pro ont un disque arrière ou avant (130 mm sur la XT5 Pro). Les pneus 10 pouces étant tubeless, surveille l'usure et la pression. Le chargeur compte aussi : prise XIAOMI-2X sur trois modèles.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Navee ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Navee GT5 Pro, GT5 Max, ST5 Pro et XT5 Pro. Ouvre la fiche de ta trottinette pour voir les pneus, freins et chargeurs compatibles. Notre atelier de Marseille connaît ces modèles, donc en cas de doute sur une référence, vérifie la fiche avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Navee ?",
+        "a": "Les GT5 Pro, GT5 Max et ST5 Pro sont indiquées avec des pneus 10 pouces tubeless, donc sans chambre à air d'origine. La section n'est pas communiquée pour la GT5 Max et la ST5 Pro. Pour la XT5 Pro, la taille n'est pas renseignée : contrôle le flanc de ton pneu et la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quelles plaquettes ou quel disque pour une Navee ?",
+        "a": "Ça dépend du modèle. La XT5 Pro a un frein à disque mécanique avec un disque de 130 mm. La GT5 Max a un disque à l'arrière et un tambour à l'avant. La GT5 Pro a un tambour avant et un EBS arrière. La ST5 Pro a un disque, mais son type d'actionnement n'est pas précisé : vérifie sur la fiche."
+      },
+      {
+        "q": "Quel chargeur pour ma Navee ?",
+        "a": "Les quatre modèles du catalogue sont en 48 V. La GT5 Pro, la GT5 Max et la XT5 Pro sont indiquées avec une prise XIAOMI-2X. Pour la ST5 Pro, la prise n'est pas renseignée. Ne branche jamais un chargeur sans avoir vérifié la tension et le connecteur sur la fiche de ton modèle."
+      },
+      {
+        "q": "Quel entretien régulier sur une Navee ?",
+        "a": "Contrôle la pression et l'usure des pneus tubeless, l'état des disques et plaquettes sur la XT5 Pro et la GT5 Max (arrière), et le réglage du câble sur un frein mécanique comme celui de la XT5 Pro. Sur la GT5 Pro, le tambour avant demande moins d'attention qu'un disque, mais ne l'oublie pas pour autant."
+      }
+    ],
+    "doutes": "Année : le site officiel (naveetech.com/about-us, naveetech.de) indique 2021 pour la marque (avril 2021) ; iF Design, CB Insights, ELKO et des revendeurs indiquent 2020 pour la société. J'ai retenu 2021 (marque, site officiel). Pays : siège à Suzhou, Chine (CB Insights, iF Design), mais LinkedIn mentionne Rotterdam ; je retiens la Chine, source plus cohérente. Non confirmé : section des pneus de la GT5 Pro, taille des pneus de la XT5 Pro, prise de la ST5 Pro, type d'actionnement du frein de la ST5 Pro.",
+    "name": "Navee",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "ninebot": {
+    "country": "Chine",
+    "country_source": "https://fr-fr.segway.com/about-the-brand (page officielle Segway-Ninebot : Ninebot est une société privée basée à Beijing, en Chine)",
+    "founded_year": 2012,
+    "founded_year_source": "https://www.garantieinfo.com/marque/ninebot/ (Ninebot établi à Pékin en 2012, reprenant la présentation du groupe) ; confirmé par https://baike.baidu.com/en/item/Ninebot%20Limited/17286 et https://www.wee-bot.com/blogs/eco-mobilite/qui-fabrique-ninebot",
+    "website_url": "https://fr-fr.segway.com/",
+    "tagline": "Trottinettes urbaines 36 V, pneus 10 pouces",
+    "editorial_verdict": "Côté atelier, G30 Max et F40 partagent le 36 V et les pneus de 10 pouces : pneus et chambres à air sont les premières pièces d'usure à surveiller. Le freinage diffère. La G30 Max combine un tambour à l'avant et un frein électronique à l'arrière. La F40 associe frein électronique à l'avant et disque de 140 mm à l'arrière, donc plaquettes et disque à contrôler. Attention au chargeur : prise IEC sur la G30 Max, RCA sur la F40. Ne les mélange pas.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Ninebot G30 Max et F40 ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : G30 Max et F40 ont chacune leur fiche avec pneus, chambres à air, freins et chargeurs compatibles. Pars de ton modèle exact plutôt que de la marque seule, car le freinage et la prise de charge diffèrent d'une trottinette à l'autre."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Ninebot ?",
+        "a": "La G30 Max et la F40 roulent toutes deux en pneus de 10 pouces. Ça ne suffit pas pour commander : la largeur et le type de valve se vérifient sur la fiche de ton modèle sur piecestrottinettes.fr. Contrôle l'état de la bande de roulement et la pression régulièrement, car c'est la première usure."
+      },
+      {
+        "q": "Quelles plaquettes ou quel frein pour une Ninebot F40 ?",
+        "a": "La F40 a un frein électronique à l'avant et un disque de 140 mm à l'arrière. Les plaquettes et le disque de 140 mm sont donc les pièces à surveiller côté frein mécanique. Vérifie la référence de plaquette exacte sur la fiche F40 de piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Ma G30 Max a-t-elle des plaquettes de frein ?",
+        "a": "Selon nos données, la G30 Max a un frein à tambour à l'avant et un frein électronique à l'arrière, sans disque. Il n'y a donc pas de plaquettes comme sur la F40. Si ton frein avant faiblit, regarde la fiche G30 Max sur piecestrottinettes.fr pour les pièces de tambour, ou passe à l'atelier."
+      },
+      {
+        "q": "Quel chargeur choisir pour ma Ninebot ?",
+        "a": "G30 Max et F40 fonctionnent en 36 V, mais la prise de charge diffère : IEC pour la G30 Max, RCA pour la F40. Vérifie ce connecteur avant de commander, un chargeur 36 V avec la mauvaise prise ne se branchera pas. La tension et l'ampérage exacts figurent sur la fiche du modèle."
+      }
+    ],
+    "doutes": "Le site fr-fr.segway.com est le site officiel du groupe Segway-Ninebot, qui présente aussi les trottinettes Ninebot. Je n'ai pas confirmé de site propre à la marque Ninebot seule (la page Wikipédia mentionne ninebot.com sans plus de précision). L'année 2012 vient de sources secondaires ; la page officielle lue ne la donnait pas dans l'extrait. La présentation actuelle du site évoque des disques de frein pour la G30 Max, alors que la base indique un tambour à l'avant : à corriger. L'affirmation « l'une des plus vendues au monde » pour la G30 Max n'est pas sourcée, donc je ne la reprends pas. Dimensions de pneu, références de plaquettes et ampérage du chargeur absents des données : à vérifier sur les fiches.",
+    "name": "Ninebot",
+    "before": {
+      "country": "Chine",
+      "founded_year": 2012,
+      "website_url": null,
+      "tagline": "Compact, pratique, fiable",
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "niu": {
+    "country": "Chine",
+    "country_source": "https://en.wikipedia.org/wiki/Niu_Technologies (siège à Pékin, confirmé par https://niu.gcs-web.com/investor-resources/investor-faqs/)",
+    "founded_year": 2014,
+    "founded_year_source": "https://en.wikipedia.org/wiki/Niu_Technologies (fondée en 2014 ; la FAQ investisseurs indique une constitution de Niu Technologies en novembre 2014)",
+    "website_url": "https://www.niu.com",
+    "tagline": "Trottinettes connectées, 48 V, tubeless",
+    "editorial_verdict": "Côté atelier, les NIU KQi sont des trottinettes de ville connectées (appli Bluetooth), en 48 V, toutes montées en pneus tubeless avec freins à disque mécaniques. Le KQi 300X roule en 10,5 pouces auto-réparant, les KQi3 Max, KQi3 Pro et KQi Air en 9,5 pouces. Les pièces d'usure à surveiller : pneus, plaquettes, disques (120 mm sur Max et Pro) et chargeur à prise NIU. Un frein mécanique se règle au câble : contrôle-le à chaque révision.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées NIU pour ma KQi ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : KQi3 Max, KQi3 Pro, KQi Air et KQi 300X. Choisis ton modèle, puis vérifie la compatibilité sur la fiche de la pièce avant de commander. Si tu hésites entre deux références, passe par l'atelier de Marseille pour un avis."
+      },
+      {
+        "q": "Quels pneus pour une NIU KQi3 Max, KQi3 Pro ou KQi Air ?",
+        "a": "Ces trois modèles sont en 9,5 pouces tubeless : 9,5 x 2,5 pour les KQi3 Max et KQi3 Pro (241 x 64 mm sur la Pro), 9,5 x 2,3 (241 x 58 mm) pour la KQi Air. Ne les mélange pas : la largeur diffère. Contrôle la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Et pour la NIU KQi 300X : quel pneu, quelle chambre à air ?",
+        "a": "La KQi 300X est chaussée en 10,5 x 2,5 pouces (267 x 64 mm), tubeless auto-réparant. Elle n'a donc pas de chambre à air d'origine. Si tu veux en monter une, vérifie sur la fiche du modèle sur piecestrottinettes.fr ce qui est compatible avant d'acheter."
+      },
+      {
+        "q": "Quelles plaquettes et quels disques pour une NIU KQi ?",
+        "a": "Les quatre modèles du catalogue ont des freins à disque mécaniques. Les KQi3 Max et KQi3 Pro utilisent un disque de 120 mm. Pour la KQi Air et la KQi 300X, la dimension n'est pas confirmée ici : regarde la fiche du modèle sur piecestrottinettes.fr avant de choisir plaquettes ou disque."
+      },
+      {
+        "q": "Quel chargeur pour ma NIU KQi et comment l'entretenir ?",
+        "a": "Les KQi3 Max, KQi3 Pro, KQi Air et KQi 300X fonctionnent en 48 V avec une prise NIU. Vérifie la tension et le connecteur sur la fiche du modèle avant d'acheter un chargeur. Côté entretien, contrôle régulièrement la pression des pneus, l'usure des plaquettes et le réglage des câbles de frein."
+      }
+    ],
+    "doutes": "Marque = Niu Technologies (Pékin, 2014 ; FAQ investisseurs : constitution en novembre 2014), la source ne distingue pas marque et société, ce qui est cohérent ici. Site officiel www.niu.com tiré de Wikipédia/Yahoo Finance (global.niu.com/fr et shopeu.niu.com existent aussi). Non confirmé : diamètre du disque KQi Air et KQi 300X, ampérage des chargeurs, compatibilité d'une chambre à air sur les modèles tubeless. Les fiches NIU indiquent parfois 46,8 V nominal pour la batterie : j'ai suivi le catalogue (48 V). Aucun prix, délai ou garantie cité.",
+    "name": "NIU",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "ootd": {
+    "country": "Chine",
+    "country_source": "https://o-otd.com/pages/about-us (site officiel : « a scooter brand born in China »)",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://o-otd.com",
+    "tagline": "Tout-terrain 11 pouces, tubeless, suspendue",
+    "editorial_verdict": "Côté atelier, les Ootd T10 et T10 Pro sont des trottinettes tout-terrain à roues de 11 pouces, avec suspensions avant et arrière. Les deux roulent en pneus tubeless 90/65-6.5 : le pneu est la première pièce d'usure à surveiller. Les freins à disque de 140 mm s'usent aussi : mécanique sur le T10 (48 V), hydraulique sur le T10 Pro (52 V), donc plaquettes et réglage ne se traitent pas pareil. Le chargeur dépend de la tension : vérifie-la avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Ootd T10 et T10 Pro ?",
+        "a": "Sur piecestrottinettes.fr, la page Ootd référence les pièces compatibles avec l'Ootd T10 et l'Ootd T10 Pro : pneus, plaquettes, disques, chargeurs. Ouvre la fiche de ton modèle pour voir uniquement les références adaptées. Notre atelier de Marseille peut aussi monter les pièces si tu préfères ne pas t'en charger.",
+        "index": 0
+      },
+      {
+        "q": "Quel pneu pour une Ootd T10 ou T10 Pro ?",
+        "a": "Les deux modèles du catalogue sont donnés en pneus tubeless hybrides tout-terrain 90/65-6.5, soit du 11 pouces. Comme ils sont tubeless, ils ne fonctionnent pas avec une chambre à air d'origine : ne commande pas de chambre sans avoir contrôlé la fiche de ton modèle sur piecestrottinettes.fr. Pense aussi à vérifier la pression et l'usure des crampons.",
+        "index": 1
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Ootd T10 ?",
+        "a": "L'Ootd T10 a un frein à disque mécanique, le T10 Pro un frein à disque hydraulique, avec un disque de 140 mm sur les deux. Les plaquettes ne sont pas interchangeables d'office entre ces deux freins. Je ne peux pas confirmer la référence ici : choisis-la sur la fiche de ton modèle.",
+        "index": 2
+      },
+      {
+        "q": "Quel chargeur pour une Ootd T10 ou un T10 Pro ?",
+        "a": "L'Ootd T10 fonctionne en 48 V, l'Ootd T10 Pro en 52 V. Ne mélange pas ces tensions : un chargeur inadapté peut abîmer la batterie. Contrôle la tension et le connecteur sur l'étiquette de ton chargeur d'origine, puis compare avec la fiche du modèle sur piecestrottinettes.fr avant de commander.",
+        "index": 3
+      },
+      {
+        "q": "Comment entretenir une Ootd T10 ou T10 Pro ?",
+        "a": "Contrôle régulièrement l'état et la pression des pneus, l'épaisseur des plaquettes et l'état des disques de 140 mm. Sur le T10, vérifie le réglage du câble de frein mécanique ; sur le T10 Pro, surveille le niveau de réponse du frein hydraulique. Vérifie aussi le jeu du guidon et des fixations de suspension.",
+        "index": 4
+      }
+    ],
+    "doutes": "Année de création de la marque introuvable : aucune source lue ne la donne (null). Pays « Chine » repose sur la page À propos du site officiel (« born in China ») : le siège exact n'est pas précisé. Charger T10 en 48 V 3 A relevé uniquement chez des revendeurs, donc non repris. Dimensions des plaquettes et caractéristiques du chargeur 52 V non confirmées. Le site officiel présente plusieurs domaines régionaux (o-otd.com, us.o-otd.com, ootd.se).",
+    "editorial_verdict_note": "",
+    "name": "Ootd",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "oxelo": {
+    "country": "France",
+    "country_source": "https://fr-academic.com/dic.nsf/frwiki/2070210 (copie de la fiche Wikipédia : siège à Villeneuve-d'Ascq, France ; marque de Decathlon, groupe français)",
+    "founded_year": 2008,
+    "founded_year_source": "https://www.oxelo.fr/brand-alias/la-marque-tp_1935 (page officielle : née dans l'univers roller de Decathlon en 2008) ; confirmé par https://www.decathlon.com/blogs/inside-decathlon/meet-decathlons-skating-brand-oxelo",
+    "website_url": "https://www.oxelo.fr/brand-alias/la-marque-tp_1935",
+    "tagline": "Trottinette urbaine simple signée Decathlon",
+    "editorial_verdict": "Côté atelier, les Oxelo MD500E et SD500E sont des trottinettes 36 V pensées pour la ville, simples à entretenir. Le freinage combine un frein avant électronique (EBS) et un disque à l'arrière : seuls la plaquette et le disque arrière s'usent mécaniquement, à contrôler régulièrement. Garde aussi un œil sur les pneus et les chambres à air, puis sur le chargeur 36 V à prise RCA. Avant de commander, vérifie la dimension et la référence sur la fiche de ton modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Oxelo MD500E et SD500E ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont rangées par modèle : pneus, chambres à air, plaquettes, disques et chargeurs pour l'Oxelo MD500E et l'Oxelo SD500E. Ouvre la fiche de ton modèle pour voir uniquement les références compatibles, et contrôle la compatibilité avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour mon Oxelo MD500E ?",
+        "a": "Le catalogue référence des pneus et chambres à air 10 pouces pour les Oxelo MD500E et SD500E. Les dimensions exactes et le type de valve se confirment sur la fiche du modèle sur piecestrottinettes.fr. Relève aussi la taille inscrite sur le flanc de ton pneu avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Oxelo SD500E ?",
+        "a": "La SD500E, comme la MD500E, a un frein avant électronique (EBS) et un frein à disque à l'arrière. Les plaquettes et le disque concernent donc l'arrière. Vérifie la référence compatible sur la fiche du modèle sur piecestrottinettes.fr, sans te fier uniquement à l'aspect de la pièce."
+      },
+      {
+        "q": "Quel chargeur pour une Oxelo MD500E ?",
+        "a": "Les Oxelo MD500E et SD500E fonctionnent en 36 V et utilisent une prise RCA. Il te faut donc un chargeur 36 V avec ce connecteur. La tension ne suffit pas : contrôle la référence exacte sur la fiche du modèle sur piecestrottinettes.fr avant de brancher quoi que ce soit."
+      },
+      {
+        "q": "Que surveiller pour entretenir une Oxelo électrique ?",
+        "a": "Contrôle régulièrement l'état des pneus et des chambres à air, puis le disque et la plaquette arrière, seules pièces de freinage soumises à usure mécanique sur MD500E et SD500E. Vérifie aussi le chargeur 36 V et sa prise RCA. En cas de doute sur une pièce, consulte la fiche du modèle."
+      }
+    ],
+    "doutes": "Pays : déduit de la fiche Wikipédia (copie fr-academic, siège Villeneuve-d'Ascq) et d'une source secondaire ; la copie est ancienne (marque rattachée à Oxylane à l'époque), mais Decathlon est une entreprise française. Un registre cite aussi une entité juridique OXELO à Bletterans (Jura), sans changer le pays. Le site officiel est une page de marque hébergée sur oxelo.fr (Decathlon) : la marque n'a pas de site propre indépendant. Dimension exacte des pneus/chambres à air (10 pouces repris de la présentation existante), valve et référence chargeur non confirmées par une source externe.",
+    "name": "Oxelo",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "pure-electric": {
+    "country": "Royaume-Uni",
+    "country_source": "https://www.pureelectric.com/pages/support/terms-of-sale (Pure Electric Limited, société enregistrée en Angleterre et Pays de Galles, siège à Bristol) ; LinkedIn : siège à Bristol, Angleterre",
+    "founded_year": 2018,
+    "founded_year_source": "https://se.pureelectric.com/pages/our-founder-adam-norris (site officiel : fondée en 2018 par Adam Norris) ; confirmé par https://techfundingnews.com/pure-electric-an-e-scooter-company-founded-by-f1-drivers-father-launches-crowdfunding/",
+    "website_url": "https://www.pureelectric.com",
+    "tagline": "Freins tambour, 10 pouces, suspension",
+    "editorial_verdict": "Côté atelier, Pure Electric est une marque britannique, fondée en 2018 et basée à Bristol, dont les neuf modèles du catalogue roulent en pneus 10 pouces, en 36 V ou 48 V. Le frein avant est à tambour partout. À l'arrière, la plupart ont un frein électronique (EBS), seules les Ultra Max ont un disque. Résultat : peu de plaquettes à prévoir, mais pneus et chambres à air à surveiller. Pour le chargeur, vérifie la tension et la prise sur la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Pure Electric ?",
+        "a": "Sur piecestrottinettes.fr, via la page de ton modèle : Pure Air⁶ Suspension, Air⁶ Pro+, Air⁶ Ultra, Escape, Escape Pro+, Flex, Pure x McLaren ou les versions Ultra Max. Choisis le modèle exact : les versions 36 V et 48 V n'utilisent pas le même chargeur, et le frein arrière diffère selon les gammes."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Pure Electric ?",
+        "a": "Les neuf modèles du catalogue, de la Pure Flex à la Pure Air⁶ Ultra Max Suspension, sont annoncés en pneus 10 pouces. La dimension précise, le type de valve et la présence d'une chambre à air varient : vérifie-les sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Pure Electric ?",
+        "a": "Seules la Pure Air⁶ Ultra Max Suspension et la Pure Escape Ultra Max Suspension ont un disque à l'arrière, donc des plaquettes. Les autres modèles, comme la Pure Escape ou la Pure x McLaren, combinent un tambour à l'avant et un frein électronique (EBS) à l'arrière : pas de plaquette arrière. Vérifie la référence sur la fiche."
+      },
+      {
+        "q": "Quel chargeur choisir pour ma trottinette Pure ?",
+        "a": "Regarde d'abord la tension. En 48 V : Air⁶ Pro+ Suspension, Air⁶ Ultra, Air⁶ Ultra Max et Escape Ultra Max. En 36 V : Flex, Pure x McLaren, Escape, Escape Pro+ et Air⁶ Suspension. Flex et Air⁶ Suspension ont une prise RCA. Contrôle le connecteur sur la fiche du modèle."
+      },
+      {
+        "q": "Comment entretenir une Pure Electric au quotidien ?",
+        "a": "Contrôle l'usure des pneus 10 pouces, leur pression (indiquée sur le flanc) et l'absence de crevaison. Surveille aussi le frein à tambour avant, présent sur tous les modèles. Sur les Ultra Max, regarde en plus le disque et les plaquettes arrière. Branche le chargeur d'origine de la bonne tension."
+      }
+    ],
+    "doutes": "Pays et année confirmés par le site officiel et des sources tierces (Bristol, 2018). Non confirmé : type exact des pneus (chambre à air ou tubeless), dimensions précises, références de plaquettes, connecteurs de chargeur. La présentation actuelle parle de « tubeless » : non vérifié par les données fournies, donc évité. Le site officiel mentionne aussi des gammes (Advance) absentes du catalogue.",
+    "name": "Pure Electric",
+    "before": {
+      "country": "Royaume-Uni",
+      "founded_year": 2018,
+      "website_url": "https://www.pureelectric.com",
+      "tagline": "L'ingénierie britannique de la mobilité urbaine",
+      "had_verdict": true
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "punk": {
+    "country": null,
+    "country_source": null,
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://punkelectric.com/",
+    "tagline": "Rider urbaine, tubeless, frein tambour",
+    "editorial_verdict": "Côté atelier, la Punk Rider (48 V) et la Rider Pro (52 V) partagent la même base : pneus 10x3 tubeless, frein à tambour et prise LP16-3. Pas de disques ni de plaquettes à changer : l'usure se joue sur les pneus, les mâchoires, le tambour et le câble de frein. Le pneu auto-réparant de la Rider Pro limite les crevaisons, mais un pneu fatigué se remplace. Côté chargeur, la tension compte : 48 V ou 52 V, à ne jamais intervertir. Vérifie la référence sur la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Punk Rider et Rider Pro ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : pneus, freinage, chargeurs, accessoires. Choisis la Punk Rider (48 V) ou la Punk Rider Pro (52 V), puis compare la référence avec la fiche du modèle avant de commander. Notre atelier de Marseille peut aussi monter les pièces si tu préfères."
+      },
+      {
+        "q": "Quel pneu pour une Punk Rider ou une Rider Pro ?",
+        "a": "Les deux modèles du catalogue roulent en 10x3 pouces tubeless, et la Rider Pro est équipée d'un pneu auto-réparant. Comme il n'y a pas de chambre à air d'origine, vérifie sur la fiche du modèle sur piecestrottinettes.fr ce qui est compatible avant de commander un pneu ou une chambre."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Punk Rider ?",
+        "a": "Sur le catalogue, la Punk Rider et la Rider Pro ont un frein drum (à tambour) : il n'y a donc ni plaquettes ni disque, mais des mâchoires et un tambour. Certains revendeurs annoncent un freinage hydraulique sur des versions Pro récentes : contrôle ton frein avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour ma Punk Rider ?",
+        "a": "La Punk Rider fonctionne en 48 V et la Rider Pro en 52 V, toutes deux avec une prise LP16-3. Ne prends pas un chargeur au hasard : un chargeur de la mauvaise tension abîme la batterie. Vérifie la tension de sortie et le connecteur sur la fiche de ton modèle."
+      },
+      {
+        "q": "Comment entretenir une Punk Rider au quotidien ?",
+        "a": "Contrôle régulièrement l'état et la pression des pneus tubeless, le réglage du frein à tambour et l'usure du câble de frein. Garde la prise de charge LP16-3 propre et sèche. Le constructeur annonce une protection IPX6 : évite quand même le jet haute pression sur les connecteurs."
+      }
+    ],
+    "doutes": "Pays et année de création non confirmés : la page LinkedIn de Punk Electric indique un siège à New York et une création en 2023, mais la fiche Google Play du même nom renvoie à une société de Shenzhen (Chine, Shenzhen Vicont Hi-tech Electronics). Ces sources se contredisent, et aucune ne distingue clairement la marque de son exploitant, donc pays=null et année=null. Le site punkelectric.com vient de la page LinkedIn de la marque, et je n'ai pas pu l'ouvrir. punkelectric.eu existe aussi (fiches Rider et Rider Pro). Il faut confirmer le site officiel à la main. Les fiches techniques varient selon les revendeurs : freinage de la Rider Pro (tambour ou hydraulique selon version), tension de sortie du chargeur et présence d'une chambre à air. Les réponses renvoient donc à la fiche du modèle.",
+    "name": "Punk",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "segway": {
+    "country": "Chine",
+    "country_source": "https://en.wikipedia.org/wiki/Segway_Inc. (infobox : siège à Pékin, société sous contrôle chinois depuis le rachat par Ninebot en 2015 ; fondée à l'origine aux États-Unis par Dean Kamen)",
+    "founded_year": 1999,
+    "founded_year_source": "https://en.wikipedia.org/wiki/Segway_Inc. (fondée le 27 juillet 1999 par Dean Kamen) ; confirmé par Wikidata https://www.wikidata.org/wiki/Q7446425",
+    "website_url": "https://www.segway.com",
+    "tagline": "Ninebot urbain, Segway haut de gamme",
+    "editorial_verdict": "Côté atelier, deux profils Segway au catalogue : la Ninebot Max G2 (36 V, pneus 10\") et la P100S (48 V, pneus 10,5\"). Pneus et chambres à air diffèrent d'un modèle à l'autre, ne mélange pas les références. La P100S a un frein à disque mécanique de 140 mm : plaquettes et disque sont à surveiller. Sur la Max G2, le freinage combine tambour et frein électronique, donc pas de plaquettes. Pour le chargeur, tension et prise (IEC/RCA ou IEC) changent : vérifie la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Segway pour ma Ninebot Max G2 ou ma P100S ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Ninebot Max G2 et P100S ont chacune leur fiche. Passe par la fiche de ta trottinette pour ne voir que les références compatibles. Notre atelier de Marseille répare ces trottinettes, tu peux donc nous demander conseil en cas de doute."
+      },
+      {
+        "q": "Quels pneus et chambres à air pour une Ninebot Max G2 ou une P100S ?",
+        "a": "La Ninebot Max G2 roule en pneus de 10 pouces, la P100S en 10,5 pouces. Les deux tailles ne sont pas interchangeables. Pour la chambre à air, la valve et le type exact de pneu, vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une P100S ?",
+        "a": "La P100S utilise un frein à disque mécanique avec un disque de 140 mm. Ce sont donc des plaquettes pour étrier mécanique, à contrôler régulièrement avec le disque. La référence exacte de plaquette est indiquée sur la fiche du modèle sur piecestrottinettes.fr : vérifie-la avant de commander."
+      },
+      {
+        "q": "Ma Ninebot Max G2 a-t-elle des plaquettes à changer ?",
+        "a": "D'après notre catalogue, la Ninebot Max G2 combine un frein à tambour et un frein électronique (EBS) : il n'y a pas de plaquettes de disque à remplacer. L'usure se joue plutôt sur le tambour, ses mâchoires et le réglage du câble. Vérifie la fiche du modèle pour les pièces compatibles."
+      },
+      {
+        "q": "Quel chargeur choisir pour une Max G2 ou une P100S ?",
+        "a": "La Ninebot Max G2 fonctionne en 36 V avec une prise IEC/RCA, la P100S en 48 V avec une prise IEC. Ne branche jamais un chargeur d'une autre tension. Pour l'intensité et le connecteur exact, vérifie la fiche de ton modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Pays : Segway a été fondée aux États-Unis (Bedford, New Hampshire) ; Wikipedia en donne aujourd'hui le siège à Pékin et la décrit comme « Chinese-owned, formerly American », alors que Wikidata indique encore les États-Unis. J'ai retenu la Chine (propriétaire Ninebot, siège actuel), à valider. L'année 1999 est celle de Segway Inc. (la marque d'origine), pas de Ninebot. L'URL du site officiel vient de l'infobox Wikipedia ; je n'ai pas chargé la page segway.com elle-même, seulement store.segway.com et segwayfrance.com apparus dans les résultats. La Max G2 est de marque Ninebot, la P100S de marque Segway (même groupe) : à garder en tête pour la page. Le type de frein de la Max G2 (tambour avant / EBS arrière) vient du catalogue fourni, je ne l'ai pas recoupé en source externe. Dimensions de chambre à air, références de plaquettes et ampérage des chargeurs non fournis : renvoi aux fiches modèles.",
+    "editorial_verdict_placeholder": "",
+    "name": "Segway",
+    "before": {
+      "country": "Chine",
+      "founded_year": 1999,
+      "website_url": null,
+      "tagline": "Urbain intelligent",
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "smartgyro": {
+    "country": "Espagne",
+    "country_source": "https://smartgyro.es/content/sobre-nosotros (la marque s'y présente comme entreprise espagnole de mobilité électrique ; basée à Leganés, Madrid)",
+    "founded_year": 2015,
+    "founded_year_source": "https://smartgyro.es/blog/entradas/smartgyro-asi-es-la-marca-pionera-a-nivel-espana-en-movilidad-electrica (blog officiel : marque de mobilité électrique espagnole née en 2015)",
+    "website_url": "https://smartgyro.es/",
+    "tagline": "Espagnole, 48 V, double disque",
+    "editorial_verdict": "Côté atelier, les Smartgyro Speedway et Speedway Pro sont des trottinettes 48 V à double frein à disque de 140 mm, sur roues de 10 pouces. Les pièces d'usure à surveiller : les pneus (selon les versions, annoncés tubeless ou avec chambre à air, donc vérifie avant de commander), les plaquettes, les disques et le chargeur à prise GX16-3. Le type d'actionnement du frein n'est pas confirmé dans notre base : contrôle-le avant d'acheter des plaquettes.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Smartgyro Speedway ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Smartgyro Speedway et Smartgyro Speedway Pro. Ouvre la fiche de ton modèle pour voir les pneus, plaquettes, disques et chargeurs compatibles. Notre atelier de Marseille connaît ces trottinettes, tu peux donc vérifier une référence avec nous en cas de doute."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Speedway Pro ?",
+        "a": "Les deux modèles roulent en 10 pouces, mais les fiches des revendeurs divergent : certaines parlent de pneus tubeless, d'autres de roues pneumatiques. Regarde d'abord comment ton pneu est monté, puis vérifie la dimension exacte et le type sur la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Smartgyro Speedway ?",
+        "a": "La Speedway et la Speedway Pro ont toutes deux des disques de 140 mm. En revanche, le type d'actionnement (mécanique ou hydraulique) n'est pas confirmé dans notre base. Les plaquettes dépendent de l'étrier : contrôle la forme de l'ancienne plaquette et consulte la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour une Smartgyro Speedway ou Speedway Pro ?",
+        "a": "Les deux modèles du catalogue fonctionnent en 48 V et utilisent une prise GX16-3. Vérifie que le connecteur du chargeur correspond bien, puis contrôle la tension et l'intensité de sortie sur la fiche du modèle sur piecestrottinettes.fr. Ne branche jamais un chargeur dont tu n'as pas confirmé les caractéristiques."
+      },
+      {
+        "q": "Que contrôler régulièrement sur une Smartgyro Speedway ?",
+        "a": "Regarde l'usure et la pression des pneus, l'épaisseur des plaquettes et l'état des disques de 140 mm, surtout si tu freines fort. Vérifie aussi la prise GX16-3 du chargeur : une prise jouée ou humide cause des charges capricieuses. Au moindre doute, passe par notre atelier de Marseille."
+      }
+    ],
+    "doutes": "Année : 2015 d'après le blog officiel de Smartgyro ; la fiche El Referente indique 2007 comme année de fondation, source contradictoire non retenue (une fiche annuaire, sans précision). Pays : Espagne confirmé par le site officiel (entreprise espagnole) et des annuaires situant l'entreprise à Leganés/Madrid. Attention : il existe une société homonyme italienne (stabilisateurs gyroscopiques pour bateaux), sans lien avec les trottinettes. Type de pneu (tubeless ou chambre à air) et actionnement du frein non confirmés pour les deux modèles ; les revendeurs se contredisent.",
+    "name": "Smartgyro",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "speedway": {
+    "country": "Corée du Sud",
+    "country_source": "https://www.green-riders.fr/content/28-trottinette-speedway-minimotors-est-chez-green-riders (Speedway = gamme de Minimotors, siège à Busan, Corée du Sud ; confirmé par https://meilleur-velo-electrique.fr/test-avis-speedway-mini-5/)",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": null,
+    "tagline": "Compacte, coréenne, usage quotidien",
+    "editorial_verdict": "Côté atelier, la Speedway est la gamme compacte de Minimotors, pensée pour le quotidien. Sur la Mini 4 Pro et la Mini 4 Pro Lite, le frein est à tambour : pas de plaquettes à changer, mais l'arrière est un pneu plein et seul l'avant a une chambre à air. La Speedway 5 (60 V, 10 pouces) a un frein à disque de 140 mm : surveille plaquettes, disque et chambres à air. Les trois utilisent une prise GX16-3, donc vérifie bien la tension du chargeur.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Speedway ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Speedway 5, Speedway Mini 4 Pro et Speedway Mini 4 Pro Lite. Choisis ton modèle, puis pneus, chambres à air, freins ou chargeur. Si tu hésites sur une référence, passe par l'atelier de Marseille avant de commander plutôt que de deviner."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Speedway ?",
+        "a": "Ça dépend du modèle. La Speedway 5 roule en 10x2,70-6,5. La Mini 4 Pro Lite est en 200x50 (8x2\"). La Mini 4 Pro a une chambre à air à l'avant et un pneu plein à l'arrière, donc une seule chambre à prévoir. Contrôle la fiche de ton modèle avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Speedway ?",
+        "a": "Seule la Speedway 5 a un frein à disque (disque de 140 mm au catalogue) : c'est elle qui demande des plaquettes. La Mini 4 Pro et la Mini 4 Pro Lite ont un frein à tambour, sans plaquettes. Vérifie sur la fiche de la Speedway 5 la référence exacte avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour ma Speedway ?",
+        "a": "La tension change selon le modèle : 36 V pour la Mini 4 Pro Lite, 48 V pour la Mini 4 Pro, 60 V pour la Speedway 5. Les trois ont une prise GX16-3, mais un chargeur de mauvaise tension est dangereux pour la batterie. Vérifie la tension sur la fiche du modèle."
+      },
+      {
+        "q": "Comment entretenir ma Speedway ?",
+        "a": "Contrôle régulièrement la pression des pneus et l'état de la chambre à air, surtout sur la Speedway 5 en 10 pouces. Sur la Speedway 5, regarde l'usure des plaquettes et l'état du disque. Sur les Mini 4 Pro, vérifie le frein à tambour arrière. Si un réglage te bloque, l'atelier de Marseille peut t'aider."
+      }
+    ],
+    "doutes": "Aucun site officiel Speedway dédié n'a été lu (seuls des revendeurs et distributeurs sont remontés) : site=null. Année de création de la marque Speedway non établie : les sources donnent 1999 pour Minimotors (le groupe, à ne pas attribuer) et 2014 pour le premier modèle Speedway (revendeur gyro-phare.com), ce qui n'est pas la création de la marque, donc null. Diamètre du disque de la Speedway 5 : catalogue = 140 mm, un revendeur US indique des disques de 160 mm ; j'ai renvoyé à la fiche modèle.",
+    "name": "Speedway",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "soflow": {
+    "country": "Suisse",
+    "country_source": "https://www.blick.ch/digital/soflow-aus-flawil-sg-schweizer-start-up-expandiert-mit-elektro-scootern-id8576558.html (siège à Flawil, Saint-Gall ; confirmé par https://www.galaxus.ch/fr/brand/soflow-23457 et https://www.conda.ch/en/kampagne/soflow-a-company-in-a-growth-market-with-attractive-investment-prospects-round-2/)",
+    "founded_year": 2015,
+    "founded_year_source": "https://www.blick.ch/digital/soflow-aus-flawil-sg-schweizer-start-up-expandiert-mit-elektro-scootern-id8576558.html (entreprise fondée en 2015 par Manuel Hug, Martin Neuckel et Zi Fong Giang ; confirmé par https://www.leaderdigital.ch/hauptausgaben/november-dezember-2021-484/von-flawil-zu-flowil-6433.html et Conda, qui date SoFlow AG de 2015 et le holding MZM Group de 2022)",
+    "website_url": "https://soflow.com/",
+    "tagline": "Trottinette urbaine suisse en 48 V",
+    "editorial_verdict": "Côté atelier, SoFlow est une marque suisse dont les pièces de rechange passent pour faciles à obtenir, avec deux 48 V au catalogue. Le SO4 Pro (10 x 2.125) freine avec deux disques mécaniques à câble : surveille plaquettes, disques et tension du câble, un test a dû réajuster le frein avant après environ 40 km. Pneus et chambres à air s'usent normalement ; le manuel indique 2,5 bars. Le S05 combine tambour à l'avant et EBS à l'arrière, donc pas de plaquettes à l'avant. Chargeur du SO4 Pro : prise DC 5.5x2.5.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées SoFlow SO4 Pro et S05 ?",
+        "a": "Sur piecestrottinettes.fr, la page marque SoFlow regroupe les pièces compatibles avec le SO4 Pro et le S05 : pneus, chambres à air, plaquettes, disques et chargeurs. Passe par la fiche de ton modèle pour ne voir que les références adaptées. Si tu hésites entre deux références, appelle l'atelier de Marseille avant de commander."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour une SoFlow SO4 Pro ?",
+        "a": "Le catalogue indique 10 x 2.125 pour la SO4 Pro : prends une chambre à air de même dimension et contrôle la valve sur la fiche du modèle. Le manuel SoFlow préconise 2,5 bars de pression. Pour le S05, la dimension n'est pas confirmée ici : vérifie-la sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour ma SoFlow ?",
+        "a": "La SO4 Pro a deux freins à disque mécaniques, commandés par câble : choisis les plaquettes sur la fiche du modèle. Le S05 est différent, avec un frein à tambour à l'avant et un EBS à l'arrière, donc pas de plaquettes à l'avant. Vérifie la référence exacte sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour une SoFlow SO4 Pro ou S05 ?",
+        "a": "Les deux modèles du catalogue sont des 48 V. La SO4 Pro utilise une prise DC 5.5x2.5. Pour le S05, la prise n'est pas renseignée ici. Ne te fie pas à la seule tension : contrôle la prise et les caractéristiques indiquées sur la fiche du modèle, ou sur l'étiquette de ton chargeur d'origine."
+      },
+      {
+        "q": "Comment entretenir les freins d'une SoFlow SO4 Pro ?",
+        "a": "Ses freins à disque sont à câble : un frein qui devient mou se rattrape en jouant sur la vis de réglage du câble, comme le décrit le manuel. Regarde l'usure des plaquettes et l'état des disques, et vérifie la pression des pneus avant de rouler. Si le levier arrive en butée après réglage, change les plaquettes."
+      }
+    ],
+    "doutes": "Site officiel : soflow.com repéré via LinkedIn et Conda, mais la page d'accueil elle-même n'a pas été lue. Année 2015 confirmée par la presse suisse (Blick, LEADER) mais pas par une page « à propos » du site officiel. Aucune fiche technique du S05 trouvée : dimension des pneus, prise du chargeur et type exact du frein EBS non confirmés. La présentation actuelle parle de pneus de 9 pouces, non vérifié. Le catalogue dit « SO4 Pro » sans préciser Gen 1 ou Gen 2 ; les sources disponibles couvrent les deux.",
+    "name": "SoFlow",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "urbanglide": {
+    "country": "France",
+    "country_source": "https://www.boulanger.com/marque/urbanglide (marque française) ; https://www.facebook.com/urbanglide/ (Urbanglide, Paris). Les trottinettes sont assemblées en Asie (https://meilleur-trottinette-electrique.fr/trottinette-electrique-urbanglide/), le siège est à Paris.",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://urbanglide.com",
+    "tagline": "Française, abordable, grande distribution",
+    "editorial_verdict": "Côté atelier, Urbanglide, c'est de la trottinette urbaine simple, conçue en France et assemblée en Asie, qu'on croise partout en grande distribution. Sur les Ride 85 Evo et 100 Evo, le frein est un disque mécanique : réglage du câble et usure des plaquettes à contrôler régulièrement. Pneus et chambres à air sont les pièces qui partent en premier, surtout en ville. L'eCross One passe en 48 V avec une prise GX16-3 : vérifie bien le chargeur avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Urbanglide ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Urbanglide eCross One, Ride 85 Evo et 100 Evo. Pneus, chambres à air, plaquettes, disques et chargeurs sont triés par compatibilité. Choisis ton modèle, puis contrôle la fiche avant de commander. Notre atelier de Marseille teste ces pièces en réparation."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Urbanglide 100 Evo ou une Ride 85 Evo ?",
+        "a": "La 100 Evo est référencée avec des pneus de 10 pouces, la Ride 85 Evo avec du 8,5 pouces. Ne te fie pas qu'au nom du modèle : lis la dimension inscrite sur le flanc de ton pneu et vérifie la fiche du modèle sur piecestrottinettes.fr, notamment pour la valve de la chambre à air."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour mon Urbanglide ?",
+        "a": "Les Ride 85 Evo et 100 Evo ont un frein à disque mécanique, donc un étrier commandé par câble. Sur l'eCross One, le type d'actionnement du frein à disque n'est pas précisé dans notre base. Vérifie la fiche du modèle sur piecestrottinettes.fr, ou compare l'ancienne plaquette avec la nouvelle avant de monter."
+      },
+      {
+        "q": "Quel chargeur pour une Urbanglide eCross One ?",
+        "a": "L'eCross One fonctionne en 48 V et utilise une prise GX16-3. Il faut donc un chargeur 48 V avec ce connecteur : un chargeur de la mauvaise tension peut abîmer la batterie. Pour les Ride 85 Evo et 100 Evo, notre base indique 22 V : contrôle l'étiquette de ton chargeur d'origine et la fiche."
+      },
+      {
+        "q": "Comment entretenir une Urbanglide au quotidien ?",
+        "a": "Contrôle régulièrement la pression des pneus, l'état des plaquettes et le réglage du câble de frein sur les modèles à disque mécanique (Ride 85 Evo, 100 Evo). Vérifie aussi le chargeur et sa prise. Si le disque est voilé ou que la plaquette est usée, remplace-les sans attendre."
+      }
+    ],
+    "doutes": "Année de création non confirmée : Weebot (revendeur) indique 2015 et un site tiers indique 2018, sans source officielle, donc null. Pays = France (siège à Paris), mais les trottinettes sont assemblées en Asie. Le site urbanglide.com/index.html affichait un message de site hors ligne, alors que urbanglide.com/en/ répond. Tensions 22 V des Ride 85 Evo/100 Evo issues de la base, non vérifiées (le texte actuel parle de chargeurs 48 V). Dimensions de pneus 10 et 8,5 pouces reprises de la présentation actuelle, non attribuées avec certitude à chaque modèle.",
+    "name": "Urbanglide",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "teverun": {
+    "country": "Chine",
+    "country_source": "https://teverun.com/about-us/ (adresse du siège à Ningbo, Zhejiang, Chine ; confirmé par la fiche LinkedIn Ningbo Teverun Technology Co Ltd)",
+    "founded_year": 2022,
+    "founded_year_source": "https://teverun.com/about-us/ (frise historique officielle : 2017 usine OEM, 2022 lancement de la marque TEVERUN)",
+    "website_url": "https://teverun.com/",
+    "tagline": "Fighter compacte, 52 ou 60 V",
+    "editorial_verdict": "Côté atelier, la Fighter Mini se répare sans mauvaise surprise : les quatre versions du catalogue partagent pneus 10x3 tubeless, frein hydraulique à disque de 140 mm et prise de charge LP16-3, donc les pièces d'usure se comparent facilement. Surveille d'abord les pneus (CST 10x3.0 sur Mini et Mini V6), puis plaquettes et disques. Le vrai piège, c'est la tension : 52 V sur Mini et Mini V6, 60 V sur Pro et Pro V6. Un chargeur se choisit selon la version exacte, pas selon le nom de gamme.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Teverun Fighter Mini ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : Fighter Mini, Mini V6, Mini Pro et Mini Pro V6. Ouvre la fiche de ta version exacte avant de commander, car la tension (52 ou 60 V) et la génération changent certaines références. Notre atelier de Marseille teste ces pièces en réparation."
+      },
+      {
+        "q": "Quel pneu pour une Teverun Fighter Mini ?",
+        "a": "Les quatre versions du catalogue roulent en 10x3 tubeless. La Fighter Mini et la Mini V6 sont indiquées avec des pneus CST 10x3.0. Comme le montage est tubeless, une crevaison se traite d'abord par réparation du pneu. Vérifie la dimension sur la fiche de ton modèle avant d'acheter."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Fighter Mini Pro ?",
+        "a": "La Fighter Mini Pro, comme la Pro V6, la Mini et la Mini V6, a un frein hydraulique à disque de 140 mm. Pour les plaquettes, contrôle la fiche de ton modèle sur piecestrottinettes.fr afin de confirmer la référence compatible. Change disque et plaquettes ensemble si le disque est marqué."
+      },
+      {
+        "q": "Quel chargeur pour ma Teverun Fighter Mini ?",
+        "a": "Tout dépend de la version. La Fighter Mini et la Mini V6 sont en 52 V, la Mini Pro et la Mini Pro V6 en 60 V. Les quatre ont une prise LP16-3, mais la tension du chargeur doit correspondre à la batterie. Vérifie la fiche de ton modèle avant de commander."
+      },
+      {
+        "q": "Quel entretien prévoir sur une Teverun Fighter Mini ?",
+        "a": "Contrôle régulièrement la pression et l'usure des pneus tubeless, l'épaisseur des plaquettes et l'état du disque de 140 mm. Surveille aussi la prise de charge LP16-3 : elle doit rester propre et bien enfoncée. En cas de doute sur une pièce, regarde la fiche de ton modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Année : la source officielle distingue l'entreprise (2017, usine OEM, Ningbo Teverun Technology) et le lancement de la marque TEVERUN (2022) ; j'ai retenu 2022 pour la marque. Pays : le site officiel et LinkedIn indiquent un siège à Ningbo (Chine), mais la boutique Minimotors présente Teverun comme une marque du groupe coréen Minimotors ; je garde la Chine (siège de l'entité Teverun). Les caractéristiques techniques viennent uniquement du catalogue fourni : je n'ai pas de référence de plaquettes ni de dimension de chambre à air (modèles tubeless).",
+    "name": "Teverun",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "velity": {
+    "country": "Thaïlande",
+    "country_source": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html (revendeur, qui décrit Velity comme une marque thaïlandaise) ; cohérent avec https://velity.tech/series/ et https://www.thaikktech.co.th/news-activities/electric-super-scooter-velity (lancement en Thaïlande). Aucune source de type Wikipédia ou presse trouvée.",
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://velity.tech/",
+    "tagline": "Hyper trottinettes de circuit, 11 pouces",
+    "editorial_verdict": "Côté atelier, la Velity 511-Ss et la 511-Sx sont des machines de circuit : 16 800 W annoncés pour environ 47 kg, roues de 11 pouces, freins à disque hydrauliques. Avec ce niveau de puissance, pneus, plaquettes et disques sont les premières pièces à surveiller ; la Ss reçoit d'origine des pneus VRM217 de 11 pouces. Marque thaïlandaise récente : avant de commander un chargeur, vérifie la tension sur la fiche du modèle, car la Ss est en 72 V et la Sx en 79,2 V.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées pour ma Velity 511-Ss ou 511-Sx ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : pneus et chambres à air 11 pouces, plaquettes, disques de frein, chargeurs. Ouvre la fiche de ta 511-Ss ou de ta 511-Sx et commande la référence indiquée. En cas de doute, l'atelier de Marseille peut t'aider à identifier la bonne pièce."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Velity 511-Ss ?",
+        "a": "La 511-Ss est équipée d'origine de pneus VRM217 en 11 pouces, d'après les fiches revendeurs. La largeur exacte, la valve et le type de chambre à air ne sont pas confirmés : vérifie-les sur la fiche du modèle sur piecestrottinettes.fr. Pour la 511-Sx, contrôle aussi la fiche avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Velity 511-Sx ?",
+        "a": "La 511-Sx et la 511-Ss freinent avec des disques et des étriers hydrauliques. Selon une fiche revendeur, la Ss reçoit des étriers de marque Nutt. La forme de plaquette dépend de l'étrier monté sur ta machine : regarde-la sur la fiche du modèle sur piecestrottinettes.fr, ou compare avec ta plaquette usée."
+      },
+      {
+        "q": "Quel chargeur choisir : 72 V ou 79 V ?",
+        "a": "Ne mélange pas les chargeurs. La Velity 511-Ss a une batterie de 72 V (38 Ah), la 511-Sx une batterie de 79,2 V nominaux (45 Ah). Vérifie la tension et l'ampérage du chargeur sur la fiche de ton modèle sur piecestrottinettes.fr avant de commander. Un chargeur mal adapté peut abîmer la batterie."
+      },
+      {
+        "q": "Comment entretenir une Velity de 16 800 W ?",
+        "a": "Contrôle régulièrement l'usure des plaquettes et des disques, la pression et l'état des pneus de 11 pouces, et le serrage de la colonne et du système de pliage. Les suspensions à cartouche se règlent selon ton poids. Si tu roules sur circuit, raccourcis les intervalles de contrôle."
+      }
+    ],
+    "doutes": "Année de création de la marque : introuvable dans une source fiable, donc null. Pays (Thaïlande) : repose sur des fiches de revendeurs (Fastride, qui parle d'une « nouvelle marque thaïlandaise »), sur le site velity.tech (qui évoque l'artisanat thaïlandais) et sur un article thaïlandais sur le lancement. Je n'ai trouvé ni Wikipédia ni article de presse. Site officiel : velity.tech me semble être le site de la marque, mais velityglobal.com existe aussi, donc à confirmer. Les données techniques (VRM217, étriers Nutt, 72 V/38 Ah, 79,2 V/45 Ah, 16 800 W, 47 kg) viennent de revendeurs, pas de la marque. Je n'ai pas pu confirmer la dimension exacte des pneus, la valve, la référence des plaquettes ni la référence du chargeur.",
+    "name": "Velity",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "vsett": {
+    "country": "Chine",
+    "country_source": "http://www.vsett.com/ (site de la marque, localisation Ningbo, Zhejiang) ; confirmé par le pied de page de https://vsettscooters.com/ (Ningbo VSETT Intelligent Technology Co., Ltd.)",
+    "founded_year": null,
+    "founded_year_source": "Sources contradictoires : vsettscooters.com indique « Established in 2019 », mais ce site mélange du contenu de revendeur (pages GoPed Singapour) ; un revendeur (maxblinker.com) indique 2018 pour Ningbo VSETT Intelligent Technology. Non tranché.",
+    "website_url": "http://www.vsett.com/",
+    "tagline": "Bimoteur, double suspension, grosse autonomie",
+    "editorial_verdict": "Côté atelier, les Vsett sont des trottinettes bimoteur à double suspension, et les pièces d'usure se jouent sur trois gabarits. La 9+ (48 V, pneus 8,5\", disque 120 mm) est la plus légère ; la 10+ (60 V, 10\", disque 145 mm) et la 11+ (60 V, 11\", disque 160 mm) ont des freins hydrauliques. Surveille d'abord les pneus et chambres à air, puis les plaquettes et l'épaisseur des disques. Les trois modèles partagent une prise GX16-3, mais la tension du chargeur change : 48 V ou 60 V. Vérifie-la avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Vsett ?",
+        "a": "Sur piecestrottinettes.fr, on référence les pièces compatibles avec les Vsett 9+, 10+ et 11+ : disques, plaquettes, pneus, chambres à air et chargeurs. Notre atelier de Marseille répare ces modèles, donc les références sont testées en situation réelle. Ouvre la fiche de ton modèle pour voir ce qui lui correspond."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour ma Vsett ?",
+        "a": "Ça dépend du modèle : la Vsett 9+ roule en 8,5\", la 10+ en 10\" et la 11+ en 11\". Ne mélange pas les gabarits. Pour la largeur exacte, le type de valve et la chambre à air adaptée, vérifie la fiche de ton modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes et quel disque pour une Vsett ?",
+        "a": "Les disques font 120 mm sur la 9+, 145 mm sur la 10+ et 160 mm sur la 11+. Les 10+ et 11+ ont des freins hydrauliques. Pour la 9+, le type d'actionnement n'est pas confirmé : contrôle la fiche du modèle sur piecestrottinettes.fr pour choisir les bonnes plaquettes."
+      },
+      {
+        "q": "Quel chargeur pour ma Vsett 9+, 10+ ou 11+ ?",
+        "a": "La Vsett 9+ fonctionne en 48 V, les 10+ et 11+ en 60 V. Les trois ont une prise GX16-3, mais un chargeur 48 V ne convient pas à une batterie 60 V. Vérifie la tension et la fiche du modèle sur piecestrottinettes.fr avant de brancher quoi que ce soit."
+      },
+      {
+        "q": "Quel entretien régulier pour une Vsett ?",
+        "a": "Vérifie la pression et l'état des pneus, l'usure des plaquettes et l'épaisseur des disques, surtout sur les 10+ et 11+ qui ont des freins hydrauliques. Contrôle aussi le serrage de la charnière du pliage et le bon état de la prise GX16-3. En cas de doute, passe à l'atelier."
+      }
+    ],
+    "doutes": "Année de création non tranchée : 2019 selon vsettscooters.com (site qui mélange du contenu de revendeur, avec des pages GoPed Singapour), 2018 selon un revendeur (maxblinker.com). Le site officiel est probablement vsett.com (Ningbo) plutôt que vsettscooters.com, qui semble être un site revendeur ou un site mixte. L'actionnement du frein de la 9+ est inconnu. Les dimensions de pneu (largeur) et les types de valve ne sont pas fournis.",
+    "name": "Vsett",
+    "before": {
+      "country": "Chine",
+      "founded_year": 2019,
+      "website_url": "https://vsettscooters.com",
+      "tagline": "Bimoteur, suspension, endurance",
+      "had_verdict": true
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "weped": {
+    "country": "Corée du Sud",
+    "country_source": "https://weped-usa.com/ (site officiel Weped Global : société WEPED, adresse à Ansan-si, Gyeonggi-do, République de Corée)",
+    "founded_year": 2014,
+    "founded_year_source": "https://weped-usa.com/ (le site officiel parle de produits innovants créés « depuis 2014 » ; recoupé par un test de 2020 : trottinette-electrique-world.over-blog.com). Formulation « depuis 2014 », pas une date de fondation juridique explicite.",
+    "website_url": "https://weped-usa.com/",
+    "tagline": "Sud-coréenne, puissante, hydraulique, sur-mesure",
+    "editorial_verdict": "Côté atelier, Weped est une marque sud-coréenne active depuis 2014, orientée machines puissantes. Sur nos trois modèles (Fold 3, SS-T, SSGT), le freinage est à disque hydraulique et les pneus sont tubeless ou go-kart : surveille l'usure, les crevaisons, plaquettes et disques, qui encaissent beaucoup avec ce niveau de performance. Pour la charge, la prise WEPED-MS est spécifique et les tensions varient (60 ou 72 V) : ne branche jamais un chargeur au hasard, vérifie la compatibilité avant de commander.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Weped ?",
+        "a": "Sur piecestrottinettes.fr, tu trouves les pièces compatibles avec la Weped Fold 3, la Weped SS-T et la Weped SSGT : pneus, plaquettes, disques, chargeurs. Choisis d'abord ton modèle exact, puis ouvre la fiche de la pièce pour contrôler la compatibilité avant de commander. Un doute ? Notre atelier de Marseille peut t'aider."
+      },
+      {
+        "q": "Quel pneu pour ma Weped SS-T, SSGT ou Fold 3 ?",
+        "a": "Ça dépend du modèle : la SS-T monte du 130/40-6,5 tubeless, la SSGT un pneu go-kart de 130 mm, la Fold 3 un 11 pouces tubeless. Ne mélange pas les références. Vérifie la fiche de ton modèle sur piecestrottinettes.fr pour la dimension exacte et le type de montage."
+      },
+      {
+        "q": "Faut-il une chambre à air sur une Weped ?",
+        "a": "Les pneus de la Fold 3 et de la SS-T sont annoncés tubeless dans notre catalogue : en principe, pas de chambre à air, mais un pneu adapté et un bon montage sur la jante. Pour la SSGT (pneu go-kart), contrôle la fiche du modèle sur piecestrottinettes.fr avant tout achat."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Weped ?",
+        "a": "Les Weped SSGT, SS-T et Fold 3 sont équipées de freins à disque hydrauliques. La forme de plaquette dépend de l'étrier de ton modèle, donc ne commande pas au hasard. Consulte la fiche de ton modèle sur piecestrottinettes.fr pour la référence compatible, et contrôle aussi l'état des disques."
+      },
+      {
+        "q": "Quel chargeur pour ma Weped ?",
+        "a": "Nos trois modèles utilisent une prise WEPED-MS, mais pas la même tension : 60 V pour la SSGT et la Fold 3, 72 V pour la SS-T. Un chargeur de mauvaise tension peut abîmer la batterie. Vérifie la tension et le connecteur sur la fiche de ton modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Aucune page officielle n'indique une date de fondation juridique précise : « depuis 2014 » vient du site weped-usa.com (boutique officielle Weped Global, Corée) et d'un test de 2020. Le domaine wepedscooter.com / buywepedscooters.com sont des revendeurs US, non retenus. Cadre tubeless/chambre à air : la présentation actuelle mentionne des chambres à air 11 pouces alors que le catalogue indique du tubeless : à vérifier côté fiches. La présentation actuelle parle de chargeurs 60 et 72 V : cohérent avec le catalogue. Les mentions « parmi les plus puissantes et robustes du marché » ne sont pas reprises (superlatif non sourcé).",
+    "name": "Weped",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "wispeed": {
+    "country": "France",
+    "country_source": "https://www.wispeed.net/ (le site officiel se présente comme « une marque française, née en 2017 »)",
+    "founded_year": 2017,
+    "founded_year_source": "https://www.wispeed.net/ (site officiel : marque née en 2017 ; confirmé par la page LinkedIn de Logicom, marque lancée en 2017 sous le nom Wispeed)",
+    "website_url": "https://www.wispeed.net/",
+    "tagline": "Trottinettes urbaines grand public, signées Logicom",
+    "editorial_verdict": "Côté atelier, Wispeed est la marque mobilité de Logicom, lancée en 2017 : des trottinettes de ville faciles à entretenir. Sur les AIRO V6, V10 et V16, le frein est EBS à l'avant et à disque à l'arrière : surveille le disque et les plaquettes arrière. La SUVPILOT 150R monte un frein à tambour. Les pneus et chambres à air restent l'usure n°1 (V10 : 10x2.125). Toute la gamme est en 36 V : contrôle le chargeur et sa prise avant commande.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Wispeed ?",
+        "a": "Sur piecestrottinettes.fr, tu trouves des pièces compatibles avec les Wispeed AIRO V6, AIRO V10, AIRO V16 et SUVPILOT 150R : pneus, chambres à air, plaquettes, disques, chargeurs. Choisis ton modèle exact dans le catalogue et vérifie la fiche de la pièce avant de commander. Notre atelier de Marseille peut aussi t'aider en cas de doute."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour ma Wispeed AIRO V10 ?",
+        "a": "La Wispeed AIRO V10 est référencée en pneus 10x2.125, donc cherche une chambre à air de la même dimension. Pour les AIRO V6, AIRO V16 et la SUVPILOT 150R, la dimension n'est pas renseignée ici : vérifie-la sur la fiche du modèle sur piecestrottinettes.fr, ou sur le flanc de ton pneu."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Wispeed AIRO ?",
+        "a": "Les AIRO V6, V10 et V16 combinent un frein EBS à l'avant et un frein à disque à l'arrière. Les plaquettes et le disque concernent donc l'arrière. Contrôle l'épaisseur des plaquettes et l'état du disque, puis consulte la fiche de ton modèle sur piecestrottinettes.fr pour la référence compatible."
+      },
+      {
+        "q": "Ma SUVPILOT 150R a-t-elle des plaquettes ?",
+        "a": "Non, la Wispeed SUVPILOT 150R est équipée d'un frein à tambour, pas d'un frein à disque. Les plaquettes des modèles AIRO ne s'y montent donc pas. Si ton freinage faiblit, vérifie le réglage et l'usure du système à tambour, et regarde la fiche du modèle sur piecestrottinettes.fr pour les pièces compatibles."
+      },
+      {
+        "q": "Quel chargeur pour une trottinette Wispeed ?",
+        "a": "Les AIRO V6, V10, V16 et la SUVPILOT 150R sont toutes données en 36 V. Prends un chargeur 36 V, mais contrôle aussi la prise : la SUVPILOT 150R est notée avec une prise RCA. Pour les autres modèles, vérifie le connecteur sur la fiche du modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Aucune page lue ne détaille les dimensions de pneus des AIRO V6, V16 et SUVPILOT 150R, ni les tensions/connecteurs de chargeur hors données du catalogue. L'année 2017 est la création de la marque Wispeed (filiale/marque de Logicom, fondé en 1993), pas du groupe. Le pays (France) vient de l'auto-description du site officiel, non d'un registre.",
+    "editorial_verdict_note": "",
+    "name": "Wispeed",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "xiaomi": {
+    "country": "Chine",
+    "country_source": "https://en.wikipedia.org/wiki/Xiaomi (siège à Pékin, Chine)",
+    "founded_year": 2010,
+    "founded_year_source": "https://en.wikipedia.org/wiki/Xiaomi (fondée le 6 avril 2010, Xiaomi Corporation)",
+    "website_url": "https://www.mi.com/fr/",
+    "tagline": "Daily urbain, pneus 8,5 et 10 pouces",
+    "editorial_verdict": "Côté atelier, Xiaomi reste une base simple à dépanner. Les Mi Essential, Mi 3 et Mi Pro 2 roulent en pneus 8,5\" avec frein électronique à l'avant et disque à l'arrière (110 mm, ou 120 mm sur la Pro 2). Les Scooter 4 passent en 10\", disque de 140 mm, ou 130 mm sur la 4 Pro. À surveiller : pneus, plaquettes et disque arrière. Côté chargeur, ne confonds pas les prises : RCA, XIAOMI-MAG sur la 4 Pro, XIAOMI-2X sur la 4 Ultra 48 V.",
+    "faq": "\n<parameter name=\"q\">Où trouver des pièces détachées pour ma trottinette Xiaomi ?",
+    "a": "Contrôle régulièrement l'état et la pression des pneus, l'usure des plaquettes et du disque arrière, puis le câble et la prise de charge. Sur une Scooter 4 Ultra, pense aussi au tambour avant. Si le freinage devient mou ou irrégulier, change la pièce usée plutôt que de compenser au réglage.",
+    "q": "Quel entretien prévoir sur une Xiaomi ?",
+    "name": "Xiaomi",
+    "before": {
+      "country": "Chine",
+      "founded_year": 2010,
+      "website_url": null,
+      "tagline": "Le daily abordable",
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "yeep-me": {
+    "country": "France",
+    "country_source": "https://yeep.me/content/27-qui-sommes-nous- (yeep.me est une marque de la société française CIBOX, siège à Alfortville)",
+    "founded_year": 2019,
+    "founded_year_source": "https://www.ciboxcorp.com/corporate/ (dates clés : 2019, création de yeep.me) ; confirmé par https://www.relations-publiques.pro/133334/yeep-me-une-nouvelle-vision-de-la-mobilite-urbaine-en-france.html",
+    "website_url": "https://yeep.me",
+    "tagline": "Urbaine, connectée, étanche IPX6",
+    "editorial_verdict": "Côté atelier, les Yeep.me 100a et 100a start partagent la même base : moteur 36 V de 500 W, frein à disque à l'arrière plus frein électronique à l'avant, roues de 10 pouces, châssis acier certifié IPX6. La 100a annonce des pneus gonflables avec chambre à air : pression et crevaisons à surveiller. La 100a start est donnée avec des pneus increvables, à vérifier avant commande. Le disque arrière travaille beaucoup : contrôle plaquettes et voile. Chargeur 36 V : vérifie la fiche du modèle.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Yeep.me ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont référencées par modèle : Yeep.me 100a et Yeep.me 100a start. Choisis ton modèle, puis la catégorie (pneus, freins, chargeur). Notre atelier de Marseille vérifie la compatibilité pièce par pièce. En cas de doute, compare la référence avec la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour une Yeep.me 100a ?",
+        "a": "La 100a roule en 10 pouces avec des pneus gonflables à chambre à air, d'après la fiche constructeur. Pour la 100a start, la dimension au catalogue est 10'' x 2\", mais les pneus sont décrits comme increvables : vérifie sur la fiche du modèle sur piecestrottinettes.fr avant de commander une chambre à air."
+      },
+      {
+        "q": "Quelles plaquettes ou quel disque pour une Yeep.me 100a start ?",
+        "a": "La 100a start et la 100a ont le même freinage : un frein électronique à l'avant et un frein à disque à l'arrière. Le disque arrière est donc ta pièce d'usure principale. Consulte la fiche du modèle sur piecestrottinettes.fr pour la plaquette et le diamètre de disque compatibles, sans te fier à une cote approximative."
+      },
+      {
+        "q": "Quel chargeur pour une Yeep.me 100a ?",
+        "a": "Les deux modèles du catalogue, Yeep.me 100a et 100a start, fonctionnent en 36 V. Il faut un chargeur adapté à cette tension. Les batteries diffèrent selon le modèle : la 100a annonce 10,4 Ah, la 100a start 7,8 Ah. Contrôle connecteur et caractéristiques sur la fiche du modèle avant de commander."
+      },
+      {
+        "q": "Comment entretenir une Yeep.me 100a au quotidien ?",
+        "a": "Contrôle la pression des pneus si ta 100a a des chambres à air, l'usure de la plaquette et l'état du disque arrière. Le châssis est certifié IPX6, mais sèche la trottinette après la pluie. Utilise le bouton d'hivernage si tu ne roules pas pendant longtemps, et recharge régulièrement la batterie."
+      }
+    ],
+    "doutes": "Aucune page officielle ne donne la dimension exacte des plaquettes/disques ni la référence du chargeur : renvoi vers les fiches modèles. Les revendeurs divergent sur les pneus de la 100a start (increvables à intérieur alvéolé selon Leclerc, tubeless/gel selon Boulanger) : à vérifier sur le modèle. Année 2019 = création de la marque yeep.me (CIBOX, elle, date de 1995). Pays confirmé via la page « Qui sommes-nous » de yeep.me (société française CIBOX).",
+    "name": "Yeep.me",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "zero": {
+    "country": null,
+    "country_source": null,
+    "founded_year": null,
+    "founded_year_source": null,
+    "website_url": "https://zeroelectricscooter.com",
+    "tagline": "Gamme 9, 10 et 11 pouces",
+    "editorial_verdict": "Côté atelier, Zero se résume à trois références au catalogue : Zero 9 (48 V), Zero 10X (52 V) et Zero 11X (72 V). Les trois partagent la prise GX16-3, mais la tension change tout : vérifie-la avant de commander un chargeur. Les pièces d'usure à surveiller sont les pneus et chambres à air selon le diamètre, les plaquettes, les disques de 160 mm sur 10X et 11X, et le chargeur. Sur le Zero 9, le frein arrière à tambour ne s'entretient pas comme un disque.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Zero ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont rangées par modèle : Zero 9, Zero 10X et Zero 11X. Choisis ton modèle, puis la pièce (pneu, chambre à air, plaquettes, chargeur). Le site officiel de la marque, zeroelectricscooter.com, propose aussi des pièces, notamment pour la 10X. Au moindre doute, demande conseil à l'atelier de Marseille."
+      },
+      {
+        "q": "Quel pneu et quelle chambre à air pour ma Zero ?",
+        "a": "Ça dépend du modèle : pneus de 9 pouces sur la Zero 9, 10 pouces sur la Zero 10X, 11 pouces sur la Zero 11X. Pour la largeur et le type de valve, on ne devine pas : le site officiel mentionne des dimensions différentes selon les pages pour la 10X. Vérifie la fiche du modèle sur piecestrottinettes.fr et le marquage sur ton pneu."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour une Zero 11X ou une Zero 10X ?",
+        "a": "La Zero 11X a un frein à disque hydraulique avec disque de 160 mm. La Zero 10X a aussi un disque de 160 mm dans notre catalogue, mais le mode d'actionnement n'est pas confirmé. Contrôle l'étrier réel de ta trottinette avant de commander, puis compare avec la fiche du modèle sur piecestrottinettes.fr."
+      },
+      {
+        "q": "Quel chargeur pour ma Zero ?",
+        "a": "Le connecteur est une GX16-3 sur les trois modèles, mais la tension diffère : 48 V pour la Zero 9, 52 V pour la Zero 10X, 72 V pour la Zero 11X. Un chargeur doit correspondre à la tension de ta batterie, pas seulement à la prise. Vérifie la fiche de ton modèle et l'étiquette de ton chargeur d'origine."
+      },
+      {
+        "q": "Comment entretenir les freins d'une Zero 9 ?",
+        "a": "La Zero 9 combine un disque à l'avant et un tambour à l'arrière. Côté disque, surveille l'usure des plaquettes et l'état du disque. Le tambour s'use plus discrètement : si le freinage arrière faiblit ou grince, fais-le contrôler à l'atelier. Pour les références exactes de pièces, vérifie la fiche du modèle sur piecestrottinettes.fr."
+      }
+    ],
+    "doutes": "Pays : le site officiel (zeroelectricscooter.com) parle de Singapour pour la conformité et la vente, mais aucune page lue ne dit explicitement que le siège est à Singapour, donc null. Année : sources contradictoires sur le site officiel (« Established in 2018 » sur la page collection, « Established in 2012 » sur la page Products, et 2017 en base non sourcé) ; je laisse null. Le site officiel indique des disques de 140 mm sur la 10X (page d'accueil), alors que le catalogue dit 160 mm : à vérifier. Dimensions des pneus de la 10X incohérentes selon les pages (10x3 vs 10x2.5). La présentation actuelle contient des affirmations non sourcées (fondée en 2017, singapourienne, signature noir et rouge, bimoteurs surpuissants, livraison rapide) à retirer.",
+    "name": "Zero",
+    "before": {
+      "country": "Singapour",
+      "founded_year": 2017,
+      "website_url": "https://zeroelectricscooter.com",
+      "tagline": "La performance accessible",
+      "had_verdict": true
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  },
+  "zwheel": {
+    "country": "Espagne",
+    "country_source": "https://zamelux.com/en/about-us/ (Zamelux Green S.L., basée à Barcelone, propriétaire de la marque ZWHEEL)",
+    "founded_year": 2019,
+    "founded_year_source": "https://zamelux.com/en/about-us/ (la marque ZWHEEL y est indiquée comme née en 2019 ; l'entreprise Zamelux Green a été fondée en 2017)",
+    "website_url": "https://zwheel.com",
+    "tagline": "Suspension, roues 10 pouces, 48 V",
+    "editorial_verdict": "Côté atelier, Zwheel est une marque espagnole née en 2019, ici avec deux 48 V sur roues de 10 pouces : le ZCougar et le ZRino, orientés confort et petit tout-terrain. Le ZRino est en tubeless : pas de chambre à air, on répare la crevaison avec une mèche ou on change le pneu. Sur le ZCougar, le frein à disque est mécanique : surveille l'usure des plaquettes, l'état du disque et la tension du câble. Les deux ont une prise GX16-3 : contrôle-la avant de choisir un chargeur.",
+    "faq": [
+      {
+        "q": "Où trouver des pièces détachées Zwheel ZCougar et ZRino ?",
+        "a": "Sur piecestrottinettes.fr, les pièces sont classées par modèle : pneus, plaquettes, disques et chargeurs pour le Zwheel ZCougar et le Zwheel ZRino. Ouvre la fiche de ton modèle pour voir les références compatibles. En cas de doute sur une version (Plus, Duo, SE), demande-nous avant de commander."
+      },
+      {
+        "q": "Quel pneu ou quelle chambre à air pour un Zwheel ZRino ?",
+        "a": "Le ZRino du catalogue roule en 10 pouces tubeless, profil large : il n'a donc pas de chambre à air. Il te faut un pneu adapté à ce montage, ou un kit de réparation par mèche en cas de crevaison. Vérifie la dimension exacte sur la fiche du modèle sur piecestrottinettes.fr avant de commander."
+      },
+      {
+        "q": "Quelles plaquettes de frein pour un Zwheel ZCougar ?",
+        "a": "Le ZCougar du catalogue a un frein à disque mécanique, commandé par câble. Choisis des plaquettes compatibles avec l'étrier monté sur ta trottinette et contrôle aussi l'épaisseur du disque. La référence précise est sur la fiche du ZCougar sur piecestrottinettes.fr. Si l'étrier te paraît différent, vérifie avant de commander."
+      },
+      {
+        "q": "Quel chargeur pour un Zwheel ZCougar ou un ZRino ?",
+        "a": "Le ZCougar et le ZRino sont tous deux en 48 V, avec une prise GX16-3. Un chargeur doit correspondre à la tension de ta batterie et à cette prise. Pour l'ampérage et la compatibilité exacte, vérifie sur la fiche de ton modèle sur piecestrottinettes.fr plutôt que de te fier à la seule tension."
+      },
+      {
+        "q": "Quel entretien prévoir sur un Zwheel ZRino ?",
+        "a": "Contrôle régulièrement la pression et l'état des pneus tubeless, car une fuite lente passe vite inaperçue. Regarde aussi l'usure des plaquettes et du disque, car l'actionnement du frein du ZRino est à confirmer sur sa fiche. Vérifie enfin la prise GX16-3 : elle doit être propre et bien enfoncée."
+      }
+    ],
+    "doutes": "Le site officiel zwheel.com a été vu via des pages produit (zwheel.com/tienda, es.zwheel.com), pas via une page d'accueil. L'année 2019 vient de la page « à propos » de Zamelux (propriétaire de la marque), pas d'un site zwheel.com. Les dimensions de pneus du ZCougar, la référence de chargeur et l'actionnement du frein du ZRino ne sont pas confirmés dans le catalogue fourni.",
+    "name": "Zwheel",
+    "before": {
+      "country": null,
+      "founded_year": null,
+      "website_url": null,
+      "tagline": null,
+      "had_verdict": false
+    },
+    "model": "claude-sonnet-5-5",
+    "date": "2026-10-13"
+  }
+}
