@@ -1,0 +1,1991 @@
+{
+  "brandName": "Kaabo",
+  "results": [
+    {
+      "scooter": {
+        "name": "Kaabo Mantis 10 Elite",
+        "slug": "kaabo-mantis-10-elite",
+        "voltage": 60,
+        "amperage": 18.2,
+        "power_watts": 2000,
+        "max_speed_private_kmh": 60,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 30,
+        "suspension": "Double suspension à ressorts (avant et arrière)",
+        "tire_size": "10 x 2.5 pouces (pneumatique)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.boardstore.com.au/assets/full/9350759094593.jpg?20210929153324",
+          "https://136762933.cdn6.editmysite.com/uploads/1/3/6/7/136762933/SBOZHLZVQDVLHFEJZRRJWBRO.jpeg",
+          "http://www.electrickicks.com.au/cdn/shop/products/kaabo-mantis-elite-electric-scooter.jpg?v=1686747661"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "disc_diameter": 140,
+        "disc_pcd": 44,
+        "disc_holes": 6,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kaabo Mantis 10 Elite est une trottinette électrique tout-terrain à double moteur de 1000 W (un par roue), équipée de la double suspension et de pneus pneumatiques de 10 x 2,5 pouces. Sa batterie 60 V 18,2 Ah annonce jusqu'à 80 km d'autonomie, avec des freins à disque semi-hydrauliques avant et arrière ; la vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 60 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Mantis 10 Elite - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Mantis 10 Elite : disque de frein 140 mm 6 trous, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo mantis 10 elite, pieces kaabo mantis 10 elite, disque frein kaabo mantis 10 elite, plaquettes kaabo mantis 10 elite, pneu kaabo mantis 10 elite"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+          "type": "revendeur",
+          "url2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+        },
+        "suspension": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.boardstore.com.au/assets/full/9350759094593.jpg?20210929153324",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://ridenroll.square.site/product/kaabo-mantis-10-elite/44?si=true",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+          "type": "revendeur",
+          "url2": "https://fluidfreeride.com/products/mantis-brake-disc-rotor-140mm"
+        },
+        "disc_pcd": {
+          "url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+          "type": "revendeur",
+          "url2": "https://ebikescooter.com/product/kaabo-mantis-brake-disk-rotor-140mm/"
+        },
+        "disc_holes": {
+          "url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+          "type": "revendeur",
+          "url2": "https://scooterhut.com.au/products/kaabo-electric-scooter-parts-mantis-brake-rotor-140mm"
+        },
+        "rim_diameter": {
+          "url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis"
+        },
+        "tire_section": {
+          "url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis"
+        },
+        "tire_family": {
+          "url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "power_watts": {
+            "value": 2000,
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "max_speed_private_kmh": {
+            "value": 60,
+            "source_url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+            "source_type": "revendeur",
+            "source_url_2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor"
+          },
+          "weight_kg": {
+            "value": 30,
+            "source_url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+            "source_type": "revendeur",
+            "source_url_2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter",
+            "source_type": "revendeur",
+            "source_url_2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "tire_size": {
+            "value": "10 x 2.5 pouces (pneumatique)",
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "suspension": {
+            "value": "Double suspension à ressorts (avant et arrière)",
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://ridehub.com.au/blogs/electric-scooter-blog/ride-hub-australia-presents-fast-as-a-mantis-the-kaabo-mantis-10-series"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "description_fr": {
+            "value": "La Kaabo Mantis 10 Elite est une trottinette électrique tout-terrain à double moteur de 1000 W (un par roue), équipée de la double suspension et de pneus pneumatiques de 10 x 2,5 pouces. Sa batterie 60 V 18,2 Ah annonce jusqu'à 80 km d'autonomie, avec des freins à disque semi-hydrauliques avant et arrière ; la vitesse est bridée à 25 km/h sur voie publique et débridable jusqu'à 60 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "source_type": "revendeur",
+            "source_url_2": "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boardstore.com.au/kaabo-electric-scooter-mantis-10-elite-dual-motor",
+            "https://ridenroll.square.site/product/kaabo-mantis-10-elite/44",
+            "https://www.electrickicks.com.au/products/kaabo-mantis-elite-electric-scooter"
+          ],
+          "_og_images": [
+            "https://www.boardstore.com.au/assets/full/9350759094593.jpg?20210929153324",
+            "https://136762933.cdn6.editmysite.com/uploads/1/3/6/7/136762933/SBOZHLZVQDVLHFEJZRRJWBRO.jpeg",
+            "http://www.electrickicks.com.au/cdn/shop/products/kaabo-mantis-elite-electric-scooter.jpg?v=1686747661"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://ridenroll.square.site/product/kaabo-mantis-10-elite/44?si=true",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+            "source_url_2": "https://fluidfreeride.com/products/mantis-brake-disc-rotor-140mm",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+            "source_url_2": "https://ebikescooter.com/product/kaabo-mantis-brake-disk-rotor-140mm/",
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://escootnow.com.au/products/140mm-brake-disc-rotor-round-style-suit-mantis-10-warrior-x-vdm-10-dragon-raptor-and-select-zero-10x",
+            "source_url_2": "https://scooterhut.com.au/products/kaabo-electric-scooter-parts-mantis-brake-rotor-140mm",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+            "source_url_2": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+            "source_url_2": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://escootervision.eu/en/products/kaabo-mantis-10-elite-10x3-zoll-80-65-6-reifen-strassenreifen-tuovt",
+            "source_url_2": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Mantis King GT",
+        "slug": "kaabo-mantis-king-gt",
+        "voltage": 60,
+        "amperage": 24,
+        "power_watts": 2200,
+        "max_speed_private_kmh": 70,
+        "range_km": 90,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 33,
+        "suspension": "Hydraulique / ressort réglable avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10 x 3.0 pouces (pneumatique à chambre à air)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_kaabo_mantis_gt_pas_cher-950113.jpg?v=1754111933"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 140,
+        "rim_diameter": "6",
+        "tire_section": "80/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kaabo Mantis King GT est une trottinette électrique à double moteur de 1100 W (2200 W nominaux) alimentée par une batterie 60V 24Ah (1440 Wh), avec jusqu'à 90 km d'autonomie annoncée. Elle roule sur des pneus 10 x 3 pouces à chambre à air, avec suspensions hydrauliques avant/arrière et freins à disques hydrauliques de 140 mm associés à l'E-ABS. Elle est bridée à 25 km/h sur voie publique, débridable jusqu'à 70 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Mantis King GT - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Mantis King GT : disque de frein 140 mm, plaquettes, pneus 80/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo mantis king gt, pieces kaabo mantis king gt, disque frein kaabo mantis king gt, plaquettes kaabo mantis king gt, pneu kaabo mantis king gt"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kaabousa.com/products/mantis-king-gt",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kaabousa.com/products/mantis-king-gt",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+          "type": "revendeur",
+          "url2": "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt"
+        },
+        "suspension": {
+          "url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://fluidfreeride.com/products/mantis-king-gt",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.kaabousa.com/products/mantis-king-gt",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-Kaabo-Mantis-King-GT-p521680020",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kaabousa.com/products/mantis-king-gt",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_kaabo_mantis_gt_pas_cher-950113.jpg?v=1754111933",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/en/kaabo/4882-trottinette-electrique-kaabo-mantis-king-gt-avec-nouvel-ecran-2025.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://e-ride.fr/products/disque-de-frein-kaabo-mts-10-wolf-warrior-x-et-king-gt",
+          "type": "revendeur",
+          "url2": "https://www.trottnshop.com/produit/kaabo-mantis-king-gt/"
+        },
+        "rim_diameter": {
+          "url": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+          "type": "revendeur",
+          "url2": "https://www.trottpneu.fr/products/pneu-tout-terrain-10x3-6-255x80-80-65-6"
+        },
+        "tire_section": {
+          "url": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+          "type": "revendeur",
+          "url2": "https://www.trottpneu.fr/products/pneu-tout-terrain-10x3-6-255x80-80-65-6"
+        },
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.kaabousa.com/products/mantis-king-gt",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [
+        {
+          "key": "solid_conversion",
+          "value": "yes",
+          "url": "https://e-watts.fr/produit/pneu-plein-10x3-80-65-6"
+        }
+      ],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 33,
+            "source_url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.kaabousa.com/products/mantis-king-gt",
+            "source_url_2": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 24,
+            "source_url": "https://www.kaabousa.com/products/mantis-king-gt",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2200,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_url_2": "https://www.evolt.eu/products/electric-scooter-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_url_2": "https://velo-emeraude.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 90,
+            "source_url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_url_2": "https://smartwheel.us/kaabo-mantis-king-gt-1100w-dual-motor-electric-scooter/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.kaabousa.com/products/mantis-king-gt",
+            "source_url_2": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10 x 3.0 pouces (pneumatique à chambre à air)",
+            "source_url": "https://www.kaabousa.com/products/mantis-king-gt",
+            "source_url_2": "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Hydraulique / ressort réglable avant et arrière",
+            "source_url": "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://fluidfreeride.com/products/mantis-king-gt",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-Kaabo-Mantis-King-GT-p521680020",
+            "source_url_2": "https://www.voromotors.com/products/kaabo-mantis-king-gt-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kaabo Mantis King GT est une trottinette électrique à double moteur de 1100 W (2200 W nominaux) alimentée par une batterie 60V 24Ah (1440 Wh), avec jusqu'à 90 km d'autonomie annoncée. Elle roule sur des pneus 10 x 3 pouces à chambre à air, avec suspensions hydrauliques avant/arrière et freins à disques hydrauliques de 140 mm associés à l'E-ABS. Elle est bridée à 25 km/h sur voie publique, débridable jusqu'à 70 km/h sur terrain privé uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.gyro-phare.com/74-trottinette-electrique-kaabo-mantis-king-gt.html",
+            "https://e-watts.fr/produit/trottinette-electrique-kaabo-mantis-king-gt",
+            "https://www.wee-bot.com/products/trottinette-electrique-kaabo-mantis-king-gt"
+          ],
+          "_og_images": [
+            "https://e-watts.fr/logo-ewatts.avif",
+            "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_kaabo_mantis_gt_pas_cher-950113.jpg?v=1754111933"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://fastride.fr/en/kaabo/4882-trottinette-electrique-kaabo-mantis-king-gt-avec-nouvel-ecran-2025.html",
+            "source_url_2": "https://biospeed.fr/produit/kaabo-mantis-king-gt/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 140,
+            "source_url": "https://e-ride.fr/products/disque-de-frein-kaabo-mts-10-wolf-warrior-x-et-king-gt",
+            "source_url_2": "https://www.trottnshop.com/produit/kaabo-mantis-king-gt/",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "80/65",
+            "source_url": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+            "source_url_2": "https://www.trottpneu.fr/products/pneu-tout-terrain-10x3-6-255x80-80-65-6",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6",
+            "source_url": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis",
+            "source_url_2": "https://www.trottpneu.fr/products/pneu-tout-terrain-10x3-6-255x80-80-65-6",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_url_2": "https://www.wee-bot.com/products/plaquettes-de-frein-rectangulaires-haute-performance-pour-trottinette-dualtron-victor-et-autres",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.kaabousa.com/products/mantis-king-gt",
+            "source_url_2": "https://fastride.fr/en/kaabo/4882-trottinette-electrique-kaabo-mantis-king-gt-avec-nouvel-ecran-2025.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": "yes",
+            "source_url": "https://e-watts.fr/produit/pneu-plein-10x3-80-65-6",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Wolf King GT",
+        "slug": "kaabo-wolf-king-gt",
+        "voltage": 72,
+        "amperage": 35,
+        "power_watts": 4000,
+        "max_speed_private_kmh": 100,
+        "range_km": 180,
+        "max_load_kg": 150,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 52,
+        "suspension": "Fourche hydraulique inversée à l'avant + ressort (amortisseur en C) à l'arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "90/65-6.5 (11 pouces, tubeless)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Kaabo_Wolf_King_GT_PRO_Pas_cher-88948-c.jpg?v=1782421797",
+          "https://www.maxblinker.com/11417-panda_thickbox_default/kaabo-wolf-king-gt-pro.jpg",
+          "https://www.neverwheelup.com/wp-content/uploads/2023/08/WKGT-FullBodyHero_Black_2000x.webp"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Kaabo Wolf King GT est une trottinette électrique bimoteur (2 x 2000 W) alimentée par une batterie 72 V 35 Ah (2520 Wh) annoncée jusqu'à 180 km d'autonomie, avec des roues de 11 pouces à pneus tubeless et des freins hydrauliques à disque de 160 mm à l'avant et à l'arrière. Elle est bridée à 25 km/h sur voie publique et peut atteindre jusqu'à 100 km/h sur terrain privé, avec suspension hydraulique à l'avant et à ressort à l'arrière, pour un poids d'environ 52 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Wolf King GT - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Wolf King GT : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo wolf king gt, pieces kaabo wolf king gt, disque frein kaabo wolf king gt, plaquettes kaabo wolf king gt, pneu kaabo wolf king gt"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-king-gt-pro/",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro"
+        },
+        "suspension": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Kaabo_Wolf_King_GT_PRO_Pas_cher-88948-c.jpg?v=1782421797",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://samtrot.fr/trottinettes/336-wolf-king-gt-pro-kaabo-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://fluidfreeride.com/products/wolf-gt-pro-disc-brake-160",
+          "type": "revendeur",
+          "url2": "https://www.mobilax.com/brake-disc-kaabo-wolf-king-gt-pro-wolf-king-gtr-160mm-kb-16b"
+        },
+        "disc_holes": {
+          "url": "https://www.ebay.com/shop/kaabo-wolf-king-gt-pro?_nkw=kaabo+wolf+king+gt+pro",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/kaabo-wolf-king-gt-pro/s?k=kaabo+wolf+king+gt+pro"
+        },
+        "rim_diameter": {
+          "url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/Puncture-Tubeless-Electric-Off-Road-Accessories/dp/B0C2BZQLXV"
+        },
+        "tire_section": {
+          "url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+          "type": "revendeur",
+          "url2": "https://www.amazon.com/Puncture-Tubeless-Electric-Off-Road-Accessories/dp/B0C2BZQLXV"
+        },
+        "caliper_family": {
+          "url": "https://escootervision.eu/en/products/kaabo-wolf-warrior-king-black-zoom-bremsbelag-hydraulisch-original",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.voromotors.com/products/tubeless-tires-wolf-warrior",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 52,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 35,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.kaabousa.com/products/kaabo-king-gt-pro-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 4000,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-king-gt-pro/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 100,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.neverwheelup.com/product/kaabo-wolf-king-gt-pro/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 180,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.neverwheelup.com/product/kaabo-wolf-king-gt-pro/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "90/65-6.5 (11 pouces, tubeless)",
+            "source_url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+            "source_url_2": "https://www.amazon.com/kaabo-wolf-king-gt-pro/s?k=kaabo+wolf+king+gt+pro",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Fourche hydraulique inversée à l'avant + ressort (amortisseur en C) à l'arrière",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.neverwheelup.com/product/kaabo-wolf-king-gt-pro/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://riderguide.com/blog/kaabo-wolf-king-gt-what-makes-it-special/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_url_2": "https://www.mymobelity.be/en/electric-scooter-kaabo-wolf-king-gt-pro-72v-35ah.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-king-gt-pro/",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Kaabo Wolf King GT est une trottinette électrique bimoteur (2 x 2000 W) alimentée par une batterie 72 V 35 Ah (2520 Wh) annoncée jusqu'à 180 km d'autonomie, avec des roues de 11 pouces à pneus tubeless et des freins hydrauliques à disque de 160 mm à l'avant et à l'arrière. Elle est bridée à 25 km/h sur voie publique et peut atteindre jusqu'à 100 km/h sur terrain privé, avec suspension hydraulique à l'avant et à ressort à l'arrière, pour un poids d'environ 52 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+            "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gt-pro",
+            "https://www.neverwheelup.com/product/kaabo-wolf-king-gt-pro/"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Kaabo_Wolf_King_GT_PRO_Pas_cher-88948-c.jpg?v=1782421797",
+            "https://www.maxblinker.com/11417-panda_thickbox_default/kaabo-wolf-king-gt-pro.jpg",
+            "https://www.neverwheelup.com/wp-content/uploads/2023/08/WKGT-FullBodyHero_Black_2000x.webp"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://samtrot.fr/trottinettes/336-wolf-king-gt-pro-kaabo-trottinette-electrique.html",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro-plus",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://fluidfreeride.com/products/wolf-gt-pro-disc-brake-160",
+            "source_url_2": "https://www.mobilax.com/brake-disc-kaabo-wolf-king-gt-pro-wolf-king-gtr-160mm-kb-16b",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.ebay.com/shop/kaabo-wolf-king-gt-pro?_nkw=kaabo+wolf+king+gt+pro",
+            "source_url_2": "https://www.amazon.com/kaabo-wolf-king-gt-pro/s?k=kaabo+wolf+king+gt+pro",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://escootervision.eu/en/products/kaabo-wolf-warrior-king-black-zoom-bremsbelag-hydraulisch-original",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-kaabo-wolf-king-gt-pro-2/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+            "source_url_2": "https://www.amazon.com/Puncture-Tubeless-Electric-Off-Road-Accessories/dp/B0C2BZQLXV",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+            "source_url_2": "https://www.amazon.com/Puncture-Tubeless-Electric-Off-Road-Accessories/dp/B0C2BZQLXV",
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.voromotors.com/products/tubeless-tires-wolf-warrior",
+            "source_url_2": "https://voltnation.fr/fr/products/pneu-kaabo-wolf-king-gt-3535",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Wolf King GTR",
+        "slug": "kaabo-wolf-king-gtr",
+        "voltage": 72,
+        "amperage": 35,
+        "power_watts": 4000,
+        "max_speed_private_kmh": 105,
+        "range_km": 180,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 63,
+        "suspension": "Hydraulique avant (fourche double bras) + amortisseur arrière hydraulique à ressort réglable (18 niveaux)",
+        "ip_rating": "IPX5",
+        "tire_size": "100/55-7",
+        "foldable": true,
+        "wheel_inches": 12,
+        "source_image_urls": [
+          "https://epiccycles.ca/wp-content/uploads/2024/05/WOLF-KING-GTR-7.png"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "7",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "La Kaabo Wolf King GTR est équipée de deux moteurs de 2000 W (4000 W nominaux, 13 440 W en pointe) alimentés par une batterie amovible 72 V 35 Ah (environ 2419 Wh) annoncée jusqu'à 180 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain CST 12 pouces (100/55-7) auto-réparants, avec freins hydrauliques 160 mm et ABS électronique. Sa vitesse atteint 105 km/h sur terrain privé et peut être bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Wolf King GTR - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Wolf King GTR : disque de frein 160 mm 6 trous, plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo wolf king gtr, pieces kaabo wolf king gtr, disque frein kaabo wolf king gtr, plaquettes kaabo wolf king gtr, pneu kaabo wolf king gtr"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://smartwheel.us/kaabo-king-gtr-2000w-dual-motor-electric-scooter/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+          "type": "revendeur",
+          "url2": "https://wildvoie.com/products/kaabo-wolf-king-gtr"
+        },
+        "suspension": {
+          "url": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://escooternerds.com/kaabo-wolf-king-gtr-review/",
+          "type": "site_test"
+        },
+        "wheel_inches": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://epiccycles.ca/wp-content/uploads/2024/05/WOLF-KING-GTR-7.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-kaabo-wolf-king-gtr/",
+          "type": "revendeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.mobilax.com/brake-disc-kaabo-wolf-king-gt-pro-wolf-king-gtr-160mm-kb-16b",
+          "type": "revendeur",
+          "url2": "https://www.voromotors.com/products/160mm-zoom-brake-rotor"
+        },
+        "disc_holes": {
+          "url": "https://www.voromotors.com/products/160mm-zoom-brake-rotor",
+          "type": "distributeur",
+          "url2": "https://www.amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M"
+        },
+        "rim_diameter": {
+          "url": "https://www.wee-bot.com/products/pneu-tubeless-route-12-pouces-100-55-7-cst-pour-trottinette-electrique-kaabo-wolf-king-gtr",
+          "type": "revendeur",
+          "url2": "https://ebikescooter.com/product/12-inch-flat-proof-all-terrain-tires-for-tires-for-kaabo-wolf-king-gtr/"
+        },
+        "caliper_family": {
+          "url": "https://www.voromotors.com/collections/kaabo-king-gtr-parts-catalog",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://biospeed.fr/produit/trottinette-electrique-kaabo-wolf-king-gtr/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 63,
+            "source_url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_url_2": "https://wildvoie.com/products/kaabo-wolf-king-gtr",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 72,
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://wildvoie.com/products/kaabo-wolf-king-gtr",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 35,
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://wildvoie.com/products/kaabo-wolf-king-gtr",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 4000,
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://smartwheel.us/kaabo-king-gtr-2000w-dual-motor-electric-scooter/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 105,
+            "source_url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gtr",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 180,
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://smartwheel.us/kaabo-king-gtr-2000w-dual-motor-electric-scooter/",
+            "source_url_2": "https://escooterclinic.co.uk/en/products/kaabo-wolf-king-gtr-electric-scooter-13440w-power-65mph-speed-35ah-battery-112mi-range-6742",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 12,
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "100/55-7",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_url_2": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique avant (fourche double bras) + amortisseur arrière hydraulique à ressort réglable (18 niveaux)",
+            "source_url": "https://www.maxblinker.com/en/electric-scooters/kaabo-wolf-king-gtr",
+            "source_url_2": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_url_2": "https://jerungwheels.com/product/kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://escooternerds.com/kaabo-wolf-king-gtr-review/",
+            "source_url_2": "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "source_type": "site_test"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kaabo Wolf King GTR est équipée de deux moteurs de 2000 W (4000 W nominaux, 13 440 W en pointe) alimentés par une batterie amovible 72 V 35 Ah (environ 2419 Wh) annoncée jusqu'à 180 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain CST 12 pouces (100/55-7) auto-réparants, avec freins hydrauliques 160 mm et ABS électronique. Sa vitesse atteint 105 km/h sur terrain privé et peut être bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.evolt.eu/products/electric-scooter-kaabo-wolf-king-gtr",
+            "https://epiccycles.ca/product/kaabo-wolf-king-gtr/",
+            "https://wildvoie.com/products/kaabo-wolf-king-gtr"
+          ],
+          "_og_images": [
+            "https://epiccycles.ca/wp-content/uploads/2024/05/WOLF-KING-GTR-7.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-kaabo-wolf-king-gtr/",
+            "source_url_2": "https://escooternerds.com/kaabo-wolf-king-gtr-review/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.mobilax.com/brake-disc-kaabo-wolf-king-gt-pro-wolf-king-gtr-160mm-kb-16b",
+            "source_url_2": "https://www.voromotors.com/products/160mm-zoom-brake-rotor",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.voromotors.com/products/160mm-zoom-brake-rotor",
+            "source_url_2": "https://www.amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M",
+            "source_type": "distributeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://www.voromotors.com/collections/kaabo-king-gtr-parts-catalog",
+            "source_url_2": "https://escooternerds.com/kaabo-wolf-king-gtr-review/",
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": "7",
+            "source_url": "https://www.wee-bot.com/products/pneu-tubeless-route-12-pouces-100-55-7-cst-pour-trottinette-electrique-kaabo-wolf-king-gtr",
+            "source_url_2": "https://ebikescooter.com/product/12-inch-flat-proof-all-terrain-tires-for-tires-for-kaabo-wolf-king-gtr/",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://biospeed.fr/produit/trottinette-electrique-kaabo-wolf-king-gtr/",
+            "source_url_2": "https://smartwheel.us/kaabo-king-gtr-2000w-dual-motor-electric-scooter/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Wolf Warrior 11 Pro+",
+        "slug": "kaabo-wolf-warrior-11-pro-plus",
+        "voltage": 60,
+        "amperage": 35,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 80,
+        "range_km": 150,
+        "max_load_kg": 150,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "weight_kg": 46,
+        "suspension": "Hydraulique + ressort type C (avant et arrière)",
+        "tire_size": "11 pouces tubeless (version route ou off-road)",
+        "foldable": true,
+        "wheel_inches": 11,
+        "source_image_urls": [
+          "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/kaabo-gtr_smax.png",
+          "http://www.ecorecoscooter.com/cdn/shop/files/kaabousa-dual-motor-electric-scooters.jpg?v=1761191530",
+          "http://www.wee-bot.com/cdn/shop/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg?v=1723554339"
+        ],
+        "brake_type": "disc_hydraulic",
+        "disc_diameter": 160,
+        "disc_holes": 6,
+        "rim_diameter": "6.5",
+        "tire_section": "90/65",
+        "caliper_family": "zoom",
+        "tire_family": "pneumatic",
+        "score_offroad": 53,
+        "description": "La Kaabo Wolf Warrior 11 Pro+ embarque deux moteurs brushless de 1200 W (2400 W nominaux, 5400 W en crête) alimentés par une batterie 60V 35Ah, pour une vitesse bridée à 25 km/h sur voie publique et jusqu'à 80 km/h sur terrain privé. Elle est équipée de pneus tubeless de 11 pouces (route ou off-road), d'une suspension hydraulique avant et arrière et de freins à disque hydrauliques de 160 mm avec ABS, pour un poids d'environ 46 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Wolf Warrior 11 Pro+ - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Wolf Warrior 11 Pro+ : disque de frein 160 mm 6 trous, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo wolf warrior 11 pro+, pieces kaabo wolf warrior 11 pro+, disque frein kaabo wolf warrior 11 pro+, plaquettes kaabo wolf warrior 11 pro+, pneu kaabo wolf warrior 11 pro+"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://ridereview.com/products/kaabo-wolf-warrior-11-pro",
+          "type": "site_test"
+        },
+        "weight_kg": {
+          "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+          "type": "revendeur",
+          "url2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus"
+        },
+        "suspension": {
+          "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/kaabo-gtr_smax.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://kaabomantis.fr/shop/wolf-warrior-11-pro-plus/",
+          "type": "constructeur"
+        },
+        "disc_diameter": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M"
+        },
+        "disc_holes": {
+          "url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+          "type": "revendeur",
+          "url2": "https://amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M"
+        },
+        "rim_diameter": {
+          "url": "https://ok-trottinette.odoo.com/shop/pneu-90-65-6-5-cst-4522",
+          "type": "revendeur",
+          "url2": "https://7way.fr/1323-pneu-90-65-65-11.html"
+        },
+        "tire_section": {
+          "url": "https://ok-trottinette.odoo.com/shop/pneu-90-65-6-5-cst-4522",
+          "type": "revendeur",
+          "url2": "https://7way.fr/1323-pneu-90-65-65-11.html"
+        },
+        "caliper_family": {
+          "url": "https://youvelo.fr/vtt/742-plaquette-semi-metallique-kaabo-wolf-warrior-11-plus.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://meilleur-velo-electrique.fr/test-avis-kaabo-wolf-warrior-11-plus/",
+          "type": "site_test"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_pcd"
+      ],
+      "wheelMissing": [],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "disc_pcd",
+          "value": 44,
+          "url": "https://fastride.fr/en/accessoires-trottinette-electrique/3650-disque-de-frein-standard-160mm.html"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 46,
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 35,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 80,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 150,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 11,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "11 pouces tubeless (version route ou off-road)",
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Hydraulique + ressort type C (avant et arrière)",
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://ridereview.com/products/kaabo-wolf-warrior-11-pro",
+            "source_url_2": null,
+            "source_type": "site_test"
+          },
+          "description_fr": {
+            "value": "La Kaabo Wolf Warrior 11 Pro+ embarque deux moteurs brushless de 1200 W (2400 W nominaux, 5400 W en crête) alimentés par une batterie 60V 35Ah, pour une vitesse bridée à 25 km/h sur voie publique et jusqu'à 80 km/h sur terrain privé. Elle est équipée de pneus tubeless de 11 pouces (route ou off-road), d'une suspension hydraulique avant et arrière et de freins à disque hydrauliques de 160 mm avec ABS, pour un poids d'environ 46 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "source_url_2": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+            "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+            "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus"
+          ],
+          "_og_images": [
+            "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/kaabo-gtr_smax.png",
+            "http://www.ecorecoscooter.com/cdn/shop/files/kaabousa-dual-motor-electric-scooters.jpg?v=1761191530",
+            "http://www.wee-bot.com/cdn/shop/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg?v=1723554339"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://kaabomantis.fr/shop/wolf-warrior-11-pro-plus/",
+            "source_url_2": "https://www.e-wheels.fr/trotinette-electrique/kaabo-premium-escooters/kaabo-wolf-warrior--11/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": 160,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+            "source_url_2": "https://amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M",
+            "source_type": "revendeur"
+          },
+          "disc_pcd": {
+            "value": 44,
+            "source_url": "https://fastride.fr/en/accessoires-trottinette-electrique/3650-disque-de-frein-standard-160mm.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "disc_holes": {
+            "value": 6,
+            "source_url": "https://www.wee-bot.com/products/disque-de-frein-trottinette-electrique-dualtron-ultra-2-diametre-160mm",
+            "source_url_2": "https://amazon.com/stio-160mm-Scooter-Rounded-compatible/dp/B0CMZSK14M",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": "90/65",
+            "source_url": "https://ok-trottinette.odoo.com/shop/pneu-90-65-6-5-cst-4522",
+            "source_url_2": "https://7way.fr/1323-pneu-90-65-65-11.html",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://ok-trottinette.odoo.com/shop/pneu-90-65-6-5-cst-4522",
+            "source_url_2": "https://7way.fr/1323-pneu-90-65-65-11.html",
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": "zoom",
+            "source_url": "https://youvelo.fr/vtt/742-plaquette-semi-metallique-kaabo-wolf-warrior-11-plus.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://meilleur-velo-electrique.fr/test-avis-kaabo-wolf-warrior-11-plus/",
+            "source_url_2": "https://scooter.guide/kaabo-wolf-warrior-11-pro-electric-scooter-review/",
+            "source_type": "site_test"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Skywalker 10H",
+        "slug": "kaabo-skywalker-10h",
+        "voltage": 48,
+        "amperage": 15.6,
+        "power_watts": 800,
+        "max_speed_private_kmh": 40,
+        "range_km": 55,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 21.4,
+        "suspension": "Suspensions à ressorts avant et arrière",
+        "ip_rating": "IPX5",
+        "tire_size": "10 x 2,25 pouces",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_skywalker_10h_800w.jpg?v=1717663234"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kaabo Skywalker 10H est une trottinette électrique pliable équipée d'un moteur brushless de 800 W et d'une batterie lithium-ion 48 V 15,6 Ah, pour une autonomie annoncée d'environ 55 km. Elle roule sur des pneus gonflables de 10 x 2,25 pouces, avec suspensions à ressorts avant et arrière, freins à disque avant et arrière et frein électronique. Sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 40 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Skywalker 10H - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Skywalker 10H : plaquettes, pneus 10x2.125, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo skywalker 10h, pieces kaabo skywalker 10h, disque frein kaabo skywalker 10h, plaquettes kaabo skywalker 10h, pneu kaabo skywalker 10h"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur",
+          "url2": "https://elecmotion.fr/produit/kaabo-skywalker-10h-eco-48v-15-6ah/"
+        },
+        "suspension": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_skywalker_10h_800w.jpg?v=1717663234",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://sportguillet.com/produit/kaabo-skywalker-10h-48v-156ah/",
+          "type": "revendeur"
+        },
+        "tire_section": {
+          "url": "https://www.wattiz.fr/fr/chambres-a-air/57847-chambre-a-air-renforcee-10x2-125-90x90-3760351013698.html",
+          "type": "revendeur",
+          "url2": "https://www.gyro-phare.com/produit/chambre-a-air-10x2-2-125-valve-90x90-degres/"
+        },
+        "tire_family": {
+          "url": "https://sportguillet.com/produit/kaabo-skywalker-10h-48v-156ah/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "rim_diameter",
+          "value": "6.5",
+          "url": "https://www.wattiz.fr/fr/chambres-a-air/57847-chambre-a-air-renforcee-10x2-125-90x90-3760351013698.html",
+          "reason": "page de roue complète (fournit la jante)"
+        }
+      ],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 15.6,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 21.4,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://elecmotion.fr/produit/kaabo-skywalker-10h-eco-48v-15-6ah/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://elecmotion.fr/produit/kaabo-skywalker-10h-eco-48v-15-6ah/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10 x 2,25 pouces",
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://erunnerrunning.fr/products/kaabo%C2%AE-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Suspensions à ressorts avant et arrière",
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://erunnerrunning.fr/products/kaabo%C2%AE-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_url_2": "https://erunnerrunning.fr/products/kaabo%C2%AE-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kaabo Skywalker 10H est une trottinette électrique pliable équipée d'un moteur brushless de 800 W et d'une batterie lithium-ion 48 V 15,6 Ah, pour une autonomie annoncée d'environ 55 km. Elle roule sur des pneus gonflables de 10 x 2,25 pouces, avec suspensions à ressorts avant et arrière, freins à disque avant et arrière et frein électronique. Sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 40 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "https://www.wee-bot.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "https://elecmotion.fr/produit/kaabo-skywalker-10h-eco-48v-15-6ah/"
+          ],
+          "_og_images": [
+            "http://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_skywalker_10h_800w.jpg?v=1717663234"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://sportguillet.com/produit/kaabo-skywalker-10h-48v-156ah/",
+            "source_url_2": "https://erunnerrunning.fr/products/kaabo%C2%AE-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.wattiz.fr/fr/chambres-a-air/57847-chambre-a-air-renforcee-10x2-125-90x90-3760351013698.html",
+            "source_url_2": "https://www.gyro-phare.com/produit/chambre-a-air-10x2-2-125-valve-90x90-degres/",
+            "source_type": "revendeur"
+          },
+          "rim_diameter": {
+            "value": "6.5",
+            "source_url": "https://www.wattiz.fr/fr/chambres-a-air/57847-chambre-a-air-renforcee-10x2-125-90x90-3760351013698.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://sportguillet.com/produit/kaabo-skywalker-10h-48v-156ah/",
+            "source_url_2": "https://velos-patton.com/products/trottinette-electrique-kaabo-skywalker-10h",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kaabo Skywalker 8H",
+        "slug": "kaabo-skywalker-8h",
+        "voltage": 36,
+        "amperage": 18.2,
+        "power_watts": 350,
+        "max_speed_private_kmh": 35,
+        "range_km": 70,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 19.95,
+        "suspension": "Avant et arrière (à ressort)",
+        "tire_size": "8.0 x 2.0 (avant gonflable chambre à air, arrière plein)",
+        "foldable": true,
+        "wheel_inches": 8,
+        "source_image_urls": [
+          "http://pietechnologie.com/cdn/shop/products/kaabo-skywalker-8h.jpg?v=1669310309"
+        ],
+        "score_offroad": 23,
+        "description": "La Kaabo Skywalker 8H (version 36V 18,2 Ah) est équipée d'un moteur arrière de 350 W et d'une batterie 36V 18,2 Ah annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus de 8 pouces (gonflable à l'avant, plein à l'arrière), avec suspensions avant et arrière, frein à tambour arrière et frein électrique, et est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kaabo Skywalker 8H - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kaabo Skywalker 8H : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kaabo skywalker 8h, pieces kaabo skywalker 8h, disque frein kaabo skywalker 8h, plaquettes kaabo skywalker 8h, pneu kaabo skywalker 8h"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+          "type": "distributeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+          "type": "distributeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+          "type": "distributeur"
+        },
+        "weight_kg": {
+          "url": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+          "type": "revendeur",
+          "url2": "https://city-riders.fr/produit/kaabo-skywalker-8h/"
+        },
+        "suspension": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+          "type": "distributeur"
+        },
+        "tire_size": {
+          "url": "https://manuals.plus/m/45688f98415d05b93cd3ae304eb97f7d81322721daaeb6e3f0249eea27637e1f",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "http://pietechnologie.com/cdn/shop/products/kaabo-skywalker-8h.jpg?v=1669310309",
+          "type": "og:image fiche produit"
+        }
+      },
+      "missing": [
+        "brake_type"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [
+        {
+          "key": "tire_section",
+          "value": "8x2",
+          "url": "https://www.kaabomantis.fr/acheter/kaabo-skywalker-8h-%C3%A9co-350/"
+        }
+      ],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 19.95,
+            "source_url": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+            "source_url_2": "https://city-riders.fr/produit/kaabo-skywalker-8h/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "source_url_2": "https://samtrot.fr/trottinettes/331-skywalker-8h-182ah-kaabo-trottinette-electrique.html",
+            "source_type": "distributeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 70,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_url_2": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+            "source_type": "distributeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_url_2": "https://www.flywheels.be/Produit/kaabo-skywalker-8h-182ah/",
+            "source_type": "distributeur"
+          },
+          "wheel_inches": {
+            "value": 8,
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_url_2": "https://pietechnologie.com/products/kaabo-skywalker-8h",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "8.0 x 2.0 (avant gonflable chambre à air, arrière plein)",
+            "source_url": "https://manuals.plus/m/45688f98415d05b93cd3ae304eb97f7d81322721daaeb6e3f0249eea27637e1f",
+            "source_url_2": "https://kaabomantis.com/shop/kaabo-skywalker-8h-eco-350-plus/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière (à ressort)",
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_url_2": "https://www.flywheels.be/Produit/kaabo-skywalker-8h-182ah/",
+            "source_type": "distributeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "source_url_2": "https://alternative.bike/835-trottinette-electrique-kaabo-skywalker-8h.html",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kaabo Skywalker 8H (version 36V 18,2 Ah) est équipée d'un moteur arrière de 350 W et d'une batterie 36V 18,2 Ah annoncée jusqu'à 70 km d'autonomie. Elle roule sur des pneus de 8 pouces (gonflable à l'avant, plein à l'arrière), avec suspensions avant et arrière, frein à tambour arrière et frein électrique, et est livrée bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "source_url_2": "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.kaabofrance.fr/produit/kaabo-skywalker-8h-182ah/",
+            "https://www.gyro-phare.com/produit/trottinette-electrique-kaabo-skywalker-8h/",
+            "https://pietechnologie.com/products/kaabo-skywalker-8h"
+          ],
+          "_og_images": [
+            "http://pietechnologie.com/cdn/shop/products/kaabo-skywalker-8h.jpg?v=1669310309"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": "8x2",
+            "source_url": "https://www.kaabomantis.fr/acheter/kaabo-skywalker-8h-%C3%A9co-350/",
+            "source_url_2": null,
+            "source_type": "distributeur"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

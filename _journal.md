@@ -143,3 +143,11 @@
 - 2026-10-11T01:38:29.639Z · Bronco · OK · 1.2 min · 270011 in / 10147 out / 15 rech · +1 prêt (dont 0 sans clé roue) · cumul run 858539 tokens
 - 2026-10-11T02:12:29.255Z · Apollo · OK · 2.2 min · 485812 in / 17183 out / 27 rech · +2 prêt (dont 2 sans clé roue) · cumul run 502995 tokens
 - 2026-10-11T02:14:38.931Z · Cecotec · OK · 2.2 min · 464646 in / 17689 out / 23 rech · +3 prêt (dont 2 sans clé roue) · cumul run 985330 tokens
+- 2026-10-13T03:17:00.825Z · Xiaomi · OK · 5.1 min · 1191472 in / 40619 out / 57 rech · +6 prêt (dont 3 sans clé roue) · cumul run 1232091 tokens
+- 2026-10-13T03:24:15.091Z · Segway-Ninebot · ÉCHEC (code 1) · 7.2 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Segway-Ninebot","ref":"segway-ninebot-d38e","missing":["disc_diameter","disc_pcd","disc_holes"]},{"brandName":"Segway-Ninebot","ref":"segway-ninebot-es2","missing":["disc_diameter","disc_pcd","disc_holes"]}]
+- 2026-10-13T03:28:44.146Z · Dualtron · ÉCHEC (code 1) · 4.5 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Dualtron","ref":"dualtron-raptor-2","missing":["disc_diameter","disc_pcd","disc_holes"]}]
+- 2026-10-13T03:33:47.755Z · Kaabo · OK · 5.1 min · 951398 in / 42011 out / 52 rech · +6 prêt (dont 2 sans clé roue) · cumul run 2225500 tokens
+- 2026-10-13T03:37:31.228Z · Vsett · OK · 3.7 min · 670256 in / 28499 out / 33 rech · +2 prêt (dont 1 sans clé roue) · cumul run 2924255 tokens
+- 2026-10-13T03:41:58.678Z · Kukirin · ÉCHEC (code 1) · 4.5 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Kukirin","ref":"kukirin-s1-pro","missing":["disc_diameter","disc_pcd","disc_holes"]}]
+- 2026-10-13T03:45:47.894Z · Pure Electric · OK · 3.8 min · 785862 in / 30410 out / 42 rech · +4 prêt (dont 1 sans clé roue) · cumul run 3740527 tokens
+- 2026-10-13T03:45:47.894Z · ARRÊT : plafond 3000000 tokens atteint (3740527)
