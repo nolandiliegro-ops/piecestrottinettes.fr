@@ -1,10 +1,8 @@
 {
-  "_doc": "Passes ciblées sur les brouillons : passe = disques (fill-discs.js), pneus (fill-tires.js) ou photos (fill-photos.js). Modifier ce fichier sur main = lancer un run. go=false : rien ne part. · passe=prises (13/10) : fill-plugs.js, prises de charge des modèles PUBLIÉS sans prise, résultat dans prises/prises-ia.json, rien en base.",
+  "_doc": "Passes ciblées (run-passes.mjs). Modifier ce fichier sur main = lancer UN run qui enchaîne les passes de « passes », chacune avec son plafond. go=false : rien ne part. Passes : disques, pneus, photos, prises (rien en base), seo-marques (seo/marques-ia.json, rien en base), galerie (galerie/galerie-ia.json : URLs sources détourées+contrôlées dans le run, ajout au FIXE par scripts/add-gallery.js). 13/10 : SEO des 50 marques + galerie 3 photos/fiche, crédit offert à consommer avant le 20/10.",
   "go": true,
-  "model": "claude-sonnet-5-5",
-  "max_searches": 6,
-  "brands": [],
-  "max_brands": 1,
-  "plafond_tokens_run": 8000000,
-  "passe": "prises"
+  "passes": [
+    { "passe": "seo-marques", "model": "claude-sonnet-5-5", "max_searches": 3, "plafond_tokens_run": 2500000 },
+    { "passe": "galerie", "model": "claude-sonnet-5-5", "max_searches": 4, "plafond_tokens_run": 7000000, "args": ["--remplacer", "velity-511-sx,beaster-bs09", "--budget-minutes", "280"] }
+  ]
 }

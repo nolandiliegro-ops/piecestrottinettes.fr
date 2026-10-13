@@ -1,4 +1,4 @@
-name: Passes ciblées — disques ou pneus
+name: Passes ciblées — disques, pneus, prises, SEO marques, galerie
 
 # Relit les brouillons de donnees-extraction et ne cherche QUE les clés disque manquantes.
 # N'écrit RIEN en base, ne touche jamais main.
@@ -19,7 +19,7 @@ concurrency:
 jobs:
   disques:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,7 +28,10 @@ jobs:
       - name: Garde
         id: garde
         run: |
-          node -e "const c=require('./config/passe-disques.json');const o=require('fs').createWriteStream(process.env.GITHUB_OUTPUT,{flags:'a'});o.write('go='+(c.go===true&&c.max_brands>0)+'\n');o.write('script='+({pneus:'fill-tires',photos:'fill-photos',prises:'fill-plugs'}[c.passe]||'fill-discs')+'\n');o.write('args=--model '+c.model+' --max-searches '+c.max_searches+' --max-brands '+c.max_brands+' --plafond-tokens '+(c.plafond_tokens_run||0)+(c.brands?' --brands '+c.brands.join(','):'')+'\n')"
+          node -e "const c=require('./config/passe-disques.json');const l=Array.isArray(c.passes)?c.passes:[c];const go=c.go===true&&l.length>0&&(Array.isArray(c.passes)||c.max_brands>0);const g=l.some(p=>p.passe==='galerie');const o=require('fs').createWriteStream(process.env.GITHUB_OUTPUT,{flags:'a'});o.write('go='+go+'\\n');o.write('galerie='+g+'\\n')"
+      - name: Dépendances de détourage (passe galerie)
+        if: steps.garde.outputs.go == 'true' && steps.garde.outputs.galerie == 'true'
+        run: npm install --prefix scripts --no-audit --no-fund
       - name: Branche de données
         if: steps.garde.outputs.go == 'true'
         run: |
@@ -36,17 +39,17 @@ jobs:
           git config --global user.email "extracteur-pt@users.noreply.github.com"
           git fetch origin donnees-extraction
           git worktree add ../data -B donnees-extraction origin/donnees-extraction
-      - name: Passe disques
+      - name: Passes
         if: steps.garde.outputs.go == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        run: node scripts/agents/${{ steps.garde.outputs.script }}.js --data-dir ../data ${{ steps.garde.outputs.args }}
+        run: node scripts/agents/run-passes.mjs ../data
       - name: Publier
         if: always() && steps.garde.outputs.go == 'true'
         run: |
           cd ../data
-          git add -- '*.json' '*.md' 'prises/*.json' 2>/dev/null || true
+          git add -- '*.json' '*.md' 'prises/*.json' 'seo/*.json' 'galerie/*.json' 2>/dev/null || true
           if git diff --cached --quiet; then echo "Aucun fichier nouveau."; exit 0; fi
           git commit -m "passe ciblée : run ${{ github.run_id }}"
           git push origin donnees-extraction
