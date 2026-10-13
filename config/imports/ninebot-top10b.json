@@ -1,0 +1,91 @@
+{
+  "brandName": "Ninebot",
+  "scooters": [
+    {
+      "name": "Ninebot F2 Pro",
+      "slug": "ninebot-f2-pro",
+      "voltage": 36,
+      "amperage": 12.8,
+      "power_watts": 900,
+      "range_km": 55,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.5,
+      "suspension": "Suspension avant à ressort",
+      "ip_rating": "IPX5",
+      "tire_size": "10 pouces tubeless autocicatrisants (largeur 58 mm)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-PRO-E-Powered-by-Segway.png"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 110,
+      "disc_holes": 5,
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Ninebot F2 Pro est une trottinette électrique pliable à moteur arrière brushless de 450 W nominal (900 W maximum), alimentée par une batterie 36 V 12,8 Ah (460 Wh) pour une autonomie constructeur allant jusqu'à 55 km. Elle est équipée de pneus tubeless autocicatrisants de 10 pouces avec couche de gel, d'une suspension avant à ressort, d'un frein à disque à l'avant et d'un frein électronique à l'arrière, avec une vitesse bridée à 25 km/h et une étanchéité IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ninebot F2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ninebot F2 Pro : disque de frein 110 mm 5 trous, plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot f2 pro, pieces segway-ninebot f2 pro, disque frein segway-ninebot f2 pro, plaquettes segway-ninebot f2 pro, pneu segway-ninebot f2 pro"
+    },
+    {
+      "name": "Ninebot D38E",
+      "slug": "ninebot-d38e",
+      "voltage": 36,
+      "amperage": 10.2,
+      "power_watts": 350,
+      "range_km": 38,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 16.3,
+      "suspension": "Aucune",
+      "ip_rating": "IPX5",
+      "tire_size": "10x2.125",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/4c8f4ba6-4fb8-4844-d29d-56af94afde00/public"
+      ],
+      "brake_type": "ebs_front_drum_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.125",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Ninebot D38E est une trottinette électrique pliable à moteur de 350 W (500 W en pointe) dans la roue avant, alimentée par une batterie de 367 Wh (36 V, 10,2 Ah) pour une autonomie annoncée jusqu'à 38 km. Elle roule sur des pneus gonflables de 10 pouces (10x2.125) avec chambre à air, sans suspension, et freine avec un frein électronique à l'avant et un frein à tambour à l'arrière. Sa vitesse est bridée à 25 km/h, pour une charge maximale de 120 kg et un poids de 16,3 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ninebot D38E - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ninebot D38E : plaquettes, pneus 10x2.125, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot d38e, pieces segway-ninebot d38e, disque frein segway-ninebot d38e, plaquettes segway-ninebot d38e, pneu segway-ninebot d38e"
+    },
+    {
+      "name": "Ninebot ES2",
+      "slug": "ninebot-es2",
+      "voltage": 36,
+      "amperage": 5.2,
+      "power_watts": 300,
+      "max_speed_private_kmh": 25,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 12.5,
+      "suspension": "Avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "8 pouces (avant) / 7,5 pouces (arrière), pneus pleins",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://media.ldlc.com/r1600/ld/products/00/05/09/17/LD0005091716_2.jpg",
+        "https://www.gyroroue-shop.fr/wp-content/uploads/2017/08/ninebot-kick-es2-2-e1529090094999.jpg"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "La Ninebot ES2 est une trottinette électrique pliable équipée d'un moteur de 300 W dans la roue avant et d'une batterie lithium 36 V / 187 Wh (5,2 Ah), pour une autonomie annoncée de 25 km. Elle roule sur des pneus pleins de 8 pouces à l'avant et 7,5 pouces à l'arrière, avec suspension avant et arrière, frein électrique et frein mécanique, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ninebot ES2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ninebot ES2 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway-ninebot es2, pieces segway-ninebot es2, disque frein segway-ninebot es2, plaquettes segway-ninebot es2, pneu segway-ninebot es2"
+    }
+  ]
+}
