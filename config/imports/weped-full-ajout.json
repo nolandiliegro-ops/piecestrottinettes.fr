@@ -15,7 +15,10 @@
       "tire_size": "11 pouces tubeless",
       "foldable": true,
       "wheel_inches": 11,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://pietechnologie.com/cdn/shop/products/fold11.jpg?v=1632923311",
+        "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+      ],
       "brake_type": "disc_hydraulic",
       "tire_family": "pneumatic",
       "score_offroad": 45,
@@ -40,6 +43,7 @@
       "foldable": true,
       "wheel_inches": 11,
       "source_image_urls": [
+        "https://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
         "https://www.gyroroue-shop.fr/wp-content/uploads/2020/04/WEPED-GT-50E.png"
       ],
       "brake_type": "disc_hydraulic",

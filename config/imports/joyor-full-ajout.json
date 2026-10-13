@@ -46,6 +46,8 @@
       "foldable": true,
       "wheel_inches": 10,
       "source_image_urls": [
+        "https://joyor.online/cdn/shop/files/JoyorY8-SElectricScooter-main-2.webp?v=1782116723",
+        "https://buy-escooter.com/cdn/shop/files/joyor-y8-s-abe-main-image_1.webp?v=1751514157",
         "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/b3430783-1676-47e2-505f-0a3147f1da00/public"
       ],
       "brake_type": "disc_mechanical",
@@ -75,7 +77,9 @@
       "tire_size": "10x2.5",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://wellbots.fr/cdn/shop/files/y-series-y5s-y10-black-joyor-scooter-jpg_3f422f4d-0ad4-431f-af07-00d262baa53c.webp?v=1686912637"
+      ],
       "brake_type": "disc_unknown_actuation",
       "disc_diameter": 120,
       "disc_holes": 6,

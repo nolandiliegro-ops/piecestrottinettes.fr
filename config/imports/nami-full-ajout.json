@@ -51,7 +51,9 @@
       "tire_size": "9x2.5 tubeless",
       "foldable": true,
       "wheel_inches": 9,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://www.eleqtron.fr/cdn/shop/files/nami-superstellar.png?v=1712239642"
+      ],
       "brake_type": "disc_hydraulic",
       "disc_diameter": 140,
       "tire_family": "pneumatic",
@@ -81,6 +83,7 @@
       "foldable": true,
       "wheel_inches": 11,
       "source_image_urls": [
+        "https://www.eleqtron.fr/cdn/shop/products/nami-blast.png?v=1678806242",
         "https://e-ride.fr/wp-content/uploads/2026/08/eride-trottinette-electrique-ville-nuit-hero.webp"
       ],
       "brake_type": "disc_hydraulic",

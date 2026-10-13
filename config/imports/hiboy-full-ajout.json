@@ -14,7 +14,10 @@
       "ip_rating": "IPX4",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://www.hiboy.com/cdn/shop/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg?v=1744107171&width=2048",
+        "https://electricrideco.com/cdn/shop/products/electricscooter-12_1200x1200.jpg?v=1675834577"
+      ],
       "brake_type": "drum_front_ebs_rear",
       "tire_family": "pneumatic",
       "score_offroad": 35,
@@ -39,7 +42,11 @@
       "tire_size": "10 pouces, pneus pleins alvéolés (honeycomb), sans chambre à air",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://www.hiboy.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756&width=2048",
+        "https://electricrideco.com/cdn/shop/products/5_b88ded65-a37d-4209-a225-a8cc8bcf0cf0_1200x1200.jpg?v=1675752383",
+        "https://www.wilsonebikes.com/cdn/shop/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1788693606"
+      ],
       "brake_type": "ebs_front_disc_rear",
       "tire_family": "solid",
       "score_offroad": 35,

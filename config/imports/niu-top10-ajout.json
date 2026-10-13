@@ -17,7 +17,10 @@
       "tire_size": "10 x 2.3",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://shopeu.niu.com/cdn/shop/files/KQi-200P_Basic-Render_Gray_Front-45.jpg?v=1763378878",
+        "https://shop.niu.com/cdn/shop/files/EU_K200P.jpg?v=1766985443"
+      ],
       "brake_type": "drum_front_ebs_rear",
       "rim_diameter": "10",
       "tire_family": "pneumatic",
@@ -44,7 +47,9 @@
       "foldable": false,
       "wheel_inches": 9,
       "source_image_urls": [
-        "https://cache.tradeinn.com/web/web/inn.jpg"
+        "https://shopeu.niu.com/cdn/shop/files/K1Progray-2.webp?v=1773625850",
+        "https://cache.tradeinn.com/web/web/inn.jpg",
+        "https://shopeu.niu.com/cdn/shop/files/K1Progray-5.webp?v=1773625863"
       ],
       "brake_type": "drum_front_ebs_rear",
       "tire_family": "pneumatic",

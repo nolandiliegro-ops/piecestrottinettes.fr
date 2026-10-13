@@ -70,7 +70,9 @@
       "ip_rating": "IPX7",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720"
+      ],
       "brake_type": "disc_hydraulic",
       "tire_family": "pneumatic",
       "score_offroad": 40,

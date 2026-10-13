@@ -19,6 +19,7 @@
       "foldable": true,
       "wheel_inches": 10,
       "source_image_urls": [
+        "https://wellbots.fr/cdn/shop/files/Trottinette_electrique_Iscooter_patinete_France_Espa_a_Belgique_ix4_6_1200x_f5e96635-2b08-43cc-a12d-8a7b9af7d377.webp?v=1721736666",
         "https://www.neverwheelup.com/wp-content/uploads/2024/08/02-1.jpg"
       ],
       "brake_type": "disc_mechanical",
@@ -49,7 +50,9 @@
       "ip_rating": "IPX4",
       "foldable": true,
       "wheel_inches": 12,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://wellbots.fr/cdn/shop/files/Trottinetteelectriqueiscooterix83_1200x_1b9f5f25-15d9-4dd3-a548-cd2943c2c8ac.webp?v=1758882563"
+      ],
       "brake_type": "disc_hydraulic",
       "tire_family": "pneumatic",
       "score_offroad": 50,
@@ -74,7 +77,10 @@
       "tire_size": "8,5 pouces (pneu plein nid d'abeille)",
       "foldable": true,
       "wheel_inches": 8.5,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://iscooter.com/cdn/shop/files/1-1_be7c2727-60cd-478c-96fd-2ed7c92ea4a2.jpg?v=1790156239&width=2048",
+        "https://tdotwheels.com/cdn/shop/files/iScooter_i91.png?v=1743956771"
+      ],
       "brake_type": "ebs_front_disc_rear",
       "disc_diameter": 110,
       "disc_holes": 5,
@@ -101,7 +107,9 @@
       "ip_rating": "IP54",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://iscooter-france.com/cdn/shop/files/TrottinetteelectriquepatieneteIscooteri10Pro1_1024x1024.jpg?v=1725373071"
+      ],
       "brake_type": "ebs_front_drum_rear",
       "tire_family": "pneumatic",
       "score_offroad": 40,

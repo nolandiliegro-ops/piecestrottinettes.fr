@@ -17,7 +17,9 @@
       "tire_size": "10 x 3 pouces (pneumatiques)",
       "foldable": true,
       "wheel_inches": 10,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://www.eleqtron.fr/cdn/shop/files/1708431970VSETT10APEX1000x1000-05.webp?v=1709584857"
+      ],
       "brake_type": "disc_hydraulic",
       "disc_diameter": 145,
       "rim_diameter": "6",
@@ -48,6 +50,7 @@
       "foldable": true,
       "wheel_inches": 8.5,
       "source_image_urls": [
+        "https://www.eleqtron.fr/cdn/shop/files/1_5.png?v=1709583934",
         "https://www.gyroroue-shop.fr/wp-content/uploads/2024/04/vsett-9-apex-48v-156ah-batterie-amovible-.jpg"
       ],
       "brake_type": "disc_hydraulic",
@@ -76,7 +79,9 @@
       "tire_size": "8.5\" pneus pleins (diamètre ext. 21,5 cm, largeur 6,1 cm)",
       "foldable": true,
       "wheel_inches": 8.5,
-      "source_image_urls": [],
+      "source_image_urls": [
+        "https://www.eleqtron.fr/cdn/shop/files/1708421734VSETT8APEX-04.webp?v=1709584191"
+      ],
       "brake_type": "disc_mechanical",
       "tire_family": "solid",
       "score_offroad": 23,
