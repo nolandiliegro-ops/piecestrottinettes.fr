@@ -515,140 +515,21 @@
       "out": "niu-top10",
       "tier": "T10",
       "note": "13/10 : top 10 marques marché FR, tous les modèles manquants (demande Nolan, session 2 h)"
-    },
-    {
-      "brand": "Xiaomi",
-      "models": [
-        "Electric Scooter 5",
-        "Electric Scooter 5 Pro",
-        "Electric Scooter 5 Max",
-        "Electric Scooter 4 Pro 2nd Gen",
-        "M365",
-        "Mi 1S"
-      ],
-      "out": "xiaomi-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Segway-Ninebot",
-      "models": [
-        "F2 Pro",
-        "E2 Pro",
-        "ZT3 Pro",
-        "GT2",
-        "P65",
-        "Max G30"
-      ],
-      "out": "ninebot-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Dualtron",
-      "models": [
-        "Popular",
-        "Victor Luxury Plus",
-        "Raptor 2",
-        "Mini Special",
-        "Eagle"
-      ],
-      "out": "dualtron-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Kaabo",
-      "models": [
-        "Mantis 10",
-        "Wolf King GT",
-        "Wolf Warrior 11 Pro+",
-        "Skywalker 10H"
-      ],
-      "out": "kaabo-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Vsett",
-      "models": [
-        "8",
-        "8+",
-        "9",
-        "12"
-      ],
-      "out": "vsett-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Kukirin",
-      "models": [
-        "G2 Pro",
-        "G3",
-        "C1 Pro"
-      ],
-      "out": "kukirin-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Pure Electric",
-      "models": [
-        "Air 3 Pro",
-        "Advance+",
-        "Advance Flex"
-      ],
-      "out": "pure-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Navee",
-      "models": [
-        "N65",
-        "S65C",
-        "V50 Pro"
-      ],
-      "out": "navee-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Teverun",
-      "models": [
-        "Fighter 11+",
-        "Fighter Supreme",
-        "Blade Q"
-      ],
-      "out": "teverun-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
-    },
-    {
-      "brand": "Inokim",
-      "models": [
-        "Light 2 Super",
-        "OXO 2023"
-      ],
-      "out": "inokim-top",
-      "tier": "TOP",
-      "note": "13/10 : top 10 marques, modèles absents du catalogue (liste vérifiée contre la base le 13/10). Ne pas rapporter un modèle qui n'existe pas en France."
     }
   ],
   "ajout_modeles": 0,
-  "plafond_tokens_run": 2000000,
+  "plafond_tokens_run": 3000000,
   "arret_apres_marques_sans_gain": 3,
   "seulement": [
-    "xiaomi-top",
-    "ninebot-top",
-    "dualtron-top",
-    "kaabo-top",
-    "vsett-top",
-    "kukirin-top",
-    "pure-top",
-    "navee-top",
-    "teverun-top",
-    "inokim-top"
+    "xiaomi-top10",
+    "segway-ninebot-top10",
+    "dualtron-top10",
+    "kaabo-top10",
+    "vsett-top10",
+    "kukirin-top10",
+    "pure-top10",
+    "inokim-top10",
+    "teverun-top10",
+    "niu-top10"
   ]
 }
