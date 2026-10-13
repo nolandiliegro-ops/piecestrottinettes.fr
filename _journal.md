@@ -151,3 +151,4 @@
 - 2026-10-13T03:41:58.678Z · Kukirin · ÉCHEC (code 1) · 4.5 min · ❌ Incohérence interne : modèle PRÊT sans clés disque [{"brandName":"Kukirin","ref":"kukirin-s1-pro","missing":["disc_diameter","disc_pcd","disc_holes"]}]
 - 2026-10-13T03:45:47.894Z · Pure Electric · OK · 3.8 min · 785862 in / 30410 out / 42 rech · +4 prêt (dont 1 sans clé roue) · cumul run 3740527 tokens
 - 2026-10-13T03:45:47.894Z · ARRÊT : plafond 3000000 tokens atteint (3740527)
+- 2026-10-13T04:00:05.173Z · PASSE PRISES · 57/83 trouvées dont 45 à 2 sources · 4.8 min · 8002469 in / 80983 out / 404 rech.
