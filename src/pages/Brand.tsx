@@ -14,6 +14,7 @@ import BrandVideo from "@/components/brand/BrandVideo";
 import BrandTopParts from "@/components/brand/BrandTopParts";
 import BrandInfoBar from "@/components/brand/BrandInfoBar";
 import BrandCTA from "@/components/brand/BrandCTA";
+import BrandFAQ from "@/components/brand/BrandFAQ";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 
@@ -94,6 +95,7 @@ const Brand = () => {
     description: brand.description,
     foundedYear: brand.founded_year,
     websiteUrl: brand.website_url,
+    faq: brand.faq,
   });
 
   return (
@@ -130,6 +132,8 @@ const Brand = () => {
         {topParts.length > 0 && (
           <BrandTopParts parts={topParts} brandName={brand.name} brandSlug={brand.slug} />
         )}
+
+        {Array.isArray(brand.faq) && brand.faq.length > 0 && <BrandFAQ items={brand.faq} brandName={brand.name} />}
 
         <BrandInfoBar
           country={brand.country}

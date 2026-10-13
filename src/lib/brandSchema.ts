@@ -10,6 +10,7 @@ export interface BrandSchemaInput {
   description?: string | null;
   foundedYear?: number | null;
   websiteUrl?: string | null;
+  faq?: { q: string; a: string }[] | null;
 }
 
 export const buildBrandJsonLd = ({
@@ -19,6 +20,7 @@ export const buildBrandJsonLd = ({
   description,
   foundedYear,
   websiteUrl,
+  faq,
 }: BrandSchemaInput): object[] => {
   const url = `${SITE_URL}/marque/${slug}`;
 
@@ -43,5 +45,18 @@ export const buildBrandJsonLd = ({
     ],
   };
 
-  return [brand, breadcrumb];
+  const faqItems = (Array.isArray(faq) ? faq : []).filter((i) => i?.q?.trim() && i?.a?.trim());
+  if (faqItems.length === 0) return [brand, breadcrumb];
+
+  const faqPage = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((i) => ({
+      "@type": "Question",
+      name: i.q,
+      acceptedAnswer: { "@type": "Answer", text: i.a },
+    })),
+  };
+
+  return [brand, breadcrumb, faqPage];
 };

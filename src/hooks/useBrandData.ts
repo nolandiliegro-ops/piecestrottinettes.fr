@@ -20,6 +20,7 @@ export interface BrandData {
   accent_color: string | null;
   display_order: number;
   published: boolean;
+  faq: { q: string; a: string }[] | null;
 }
 
 // Lightweight model shape used by the brand models carousel.
@@ -41,7 +42,7 @@ export interface BrandNavItem {
 }
 
 const BRAND_COLUMNS =
-  "id, name, slug, logo_url, hero_image_url, tagline, description, editorial_verdict, country, founded_year, website_url, youtube_video_id, accent_color, display_order, published";
+  "id, name, slug, logo_url, hero_image_url, tagline, description, editorial_verdict, country, founded_year, website_url, youtube_video_id, accent_color, display_order, published, faq";
 
 // A. One published brand by slug.
 const useBrandBySlug = (slug?: string) =>
