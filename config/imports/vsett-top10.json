@@ -1,0 +1,67 @@
+{
+  "brandName": "Vsett",
+  "scooters": [
+    {
+      "name": "Vsett 8",
+      "slug": "vsett-8",
+      "voltage": 48,
+      "amperage": 21,
+      "power_watts": 600,
+      "max_speed_private_kmh": 42,
+      "range_km": 90,
+      "max_load_kg": 120,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 21,
+      "suspension": "Avant et arrière à ressort (Spring-R)",
+      "ip_rating": "IP54",
+      "tire_size": "Avant 8,5 x 3,0 pouces gonflable / arrière 8 pouces (200x60) plein",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "http://mazrider.com/cdn/shop/files/IMG-7410.jpg?v=1753915564"
+      ],
+      "brake_type": "drum",
+      "rim_diameter": "140mm",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 23,
+      "description": "La Vsett 8 est une trottinette électrique pliable équipée d'un moteur brushless de 600 W sur la roue arrière, alimenté par une batterie 48 V (15,6 à 21 Ah selon la version). Elle roule sur un pneu avant gonflable de 8,5 pouces et un pneu arrière plein de 8 pouces, avec des freins à tambour et une suspension avant/arrière ; sa vitesse est bridée à 25 km/h sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Vsett 8 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Vsett 8 : plaquettes, pneus 8.5x2, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "vsett 8, pieces vsett 8, disque frein vsett 8, plaquettes vsett 8, pneu vsett 8"
+    },
+    {
+      "name": "Vsett 11+ Super",
+      "slug": "vsett-11-plus-super",
+      "voltage": 72,
+      "amperage": 35,
+      "power_watts": 4000,
+      "max_speed_private_kmh": 105,
+      "range_km": 150,
+      "max_load_kg": 150,
+      "max_speed_kmh": 25,
+      "weight_kg": 58,
+      "suspension": "Hydraulique avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "11 x 4 pouces (pneumatique)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "http://rideelectric.com.au/cdn/shop/files/vsett11-plus-super-72-escooter-01_1200x1200.png?v=1682576497",
+        "http://pevmotors.com/cdn/shop/files/VSETT11_SUPER_7.jpg?v=1740533890"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "disc_pcd": 44,
+      "disc_holes": 6,
+      "caliper_family": "sram_avid",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Vsett 11+ Super est une trottinette électrique bimoteur (2 x 2000 W) alimentée par une batterie LG 72 V 35 Ah, avec freins hydrauliques avant et arrière, double suspension hydraulique et pneus pneumatiques de 11 x 4 pouces. Sa vitesse est bridée à 25 km/h pour la voie publique et peut dépasser 100 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Vsett 11+ Super - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Vsett 11+ Super : disque de frein 160 mm 6 trous, plaquettes, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "vsett 11+ super, pieces vsett 11+ super, disque frein vsett 11+ super, plaquettes vsett 11+ super, pneu vsett 11+ super"
+    }
+  ]
+}
