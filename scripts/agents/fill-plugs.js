@@ -112,7 +112,7 @@ async function main() {
   const codes = await rest('fitment_charge_connectors?select=code,label_client,note&order=code');
   if (codes.length < 10) throw new Error(`Référentiel prises lu avec ${codes.length} lignes — arrêt.`);
   const rows = await rest('scooter_models?select=slug,name,voltage,charge_connectors,published,brands(name),scooter_battery_configs(voltage,is_default)&published=eq.true&charge_connectors=is.null&order=slug');
-  if (!rows.length) { console.log('Aucun modèle publié sans prise (ou lecture refusée) — arrêt.'); return; }
+  if (!rows.length) { console.log('::error title=fill-plugs::0 modèle lu (lecture refusée ou filtre) — arrêt.'); process.exit(1); }
   const models = rows.map((r) => ({
     slug: r.slug, name: r.name.replace(new RegExp(`^${(r.brands?.name || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s+`, 'i'), ''),
     brand: r.brands?.name || '', voltage: (r.scooter_battery_configs || []).find((c) => c.is_default)?.voltage || r.voltage || null,
@@ -137,7 +137,7 @@ async function main() {
         done++; if (got.connector) found++; if (two) dbl++;
         console.log(`  ${two ? '✅' : got.connector ? '⚠️' : '·'} ${m.brand} ${m.name} → ${got.connector || 'introuvable'}${got.connector === 'AUTRE' ? ` (${got.connector_other})` : ''}${two ? ' · 2 sources' : ''}`);
         save();
-      } catch (e) { console.error(`  ✖ ${m.slug} : ${e.message}`); }
+      } catch (e) { console.error(`  ✖ ${m.slug} : ${e.message}`); console.log(`::warning title=fill-plugs ${m.slug}::${String(e.message).slice(0, 200)}`); }
     }
   }
   await Promise.all(Array.from({ length: CONC }, worker));
@@ -145,6 +145,7 @@ async function main() {
   const line = `- ${new Date().toISOString()} · PASSE PRISES · ${found}/${done} trouvées dont ${dbl} à 2 sources · ${((Date.now() - t0) / 60000).toFixed(1)} min · ${usage.input_tokens} in / ${usage.output_tokens} out / ${usage.web_searches} rech.\n`;
   appendFileSync(resolve(DATA, '_journal.md'), line);
   console.log(`Passe prises terminée : ${line}`);
+  console.log(`::notice title=fill-plugs::${line.trim()}`);
 }
 
-main().catch((e) => { console.error('❌', e.message); process.exit(1); });
+main().catch((e) => { console.error('❌', e.message); console.log(`::error title=fill-plugs::${String(e.message).slice(0, 300)}`); process.exit(1); });

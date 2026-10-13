@@ -323,7 +323,13 @@ async function main() {
   const ready = results.filter((r) => r.ready).map((r) => r.scooter);
   // Règle du 10/10 : un PRÊT peut manquer de clés disque (discMissing) ; seuls ceux qui les déclarent complètes sont contrôlés
   const faults = findMissingBrakeKeys([{ brandName: BRAND, scooters: results.filter((r) => r.ready && !r.discMissing?.length).map((r) => r.scooter).filter((s) => !/^drum/.test(s.brake_type || '')) }]);
-  if (faults.length) throw new Error(`Incohérence interne : modèle PRÊT sans clés disque ${JSON.stringify(faults)}`);
+  // 13/10 : ne plus jeter un run PAYÉ pour une incohérence de clés frein (4 marques perdues : Globber, Segway-Ninebot,
+  // Dualtron, Kukirin). Le modèle fautif est requalifié « discMissing » (publiable hors disques, règle du 10/10) et signalé.
+  for (const f of faults) {
+    const r = results.find((x) => x.scooter?.slug === f.ref || x.scooter?.name === f.ref);
+    if (r) { r.discMissing = f.missing; console.warn(`  ⚠️ ${f.ref} : clés disque manquantes (${f.missing.join(', ')}) — requalifié discMissing`); }
+    else console.warn(`  ⚠️ incohérence non rattachée : ${JSON.stringify(f)}`);
+  }
 
   const dir = OUT_DIR;
   mkdirSync(dir, { recursive: true });
