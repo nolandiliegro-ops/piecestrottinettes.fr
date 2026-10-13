@@ -81,8 +81,9 @@ const Brand = () => {
     );
   }
 
-  const seoTitle = `${brand.name} — Histoire, modèles & pièces`;
-  const seoDescription = `Découvre l'univers ${brand.name}${brand.tagline ? ` : ${brand.tagline}` : ""}. ${models.length} modèle${models.length > 1 ? "s" : ""}, pièces détachées compatibles et l'avis expert Steedy Trott.`;
+  // 13/10 : titre calé sur la requête « pièces détachées <marque> » (avant : « Histoire, modèles & pièces »).
+  const seoTitle = `Pièces détachées ${brand.name} : pneus, freins, chargeurs`;
+  const seoDescription = `Pièces détachées ${brand.name} compatibles : pneus, chambres à air, plaquettes, chargeurs pour ${models.length} modèle${models.length > 1 ? "s" : ""}${brand.tagline ? `. ${brand.tagline}` : ""}. L'avis expert Steedy Trott.`;
   const canonical = `https://piecestrottinettes.fr/marque/${brand.slug}`;
   const prevUrl = prev ? `https://piecestrottinettes.fr/marque/${prev.slug}` : undefined;
   const nextUrl = next ? `https://piecestrottinettes.fr/marque/${next.slug}` : undefined;

@@ -86,7 +86,8 @@ const ScooterDetail = () => {
     (s) => s.slug !== scooter.slug && brandName && s.brand_name === brandName
   );
 
-  const seoTitle = `${scooter.name} — Pièces compatibles`;
+  // 13/10 : titre calé sur « pièces <modèle> » + les familles qui vendent (avant : « — Pièces compatibles »).
+  const seoTitle = `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`;
   const seoDescription = `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
   const canonical = `${SITE}/scooter/${scooter.slug}`;
 
