@@ -1,0 +1,182 @@
+{
+  "adaptateur-charge-gx16-vers-dc5-5x2-1": {
+    "entity": "part",
+    "id": "3b9b2eef-e7d3-4a5c-9003-a978da773abc",
+    "name": "Adaptateur de charge GX16 vers Jack DC 5,5 x 2,1 mm",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108236-large_default_2x/adaptateur-gx16-3-pins-male-vers-dc-55-21mm-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108235-large_default_2x/adaptateur-gx16-3-pins-male-vers-dc-55-21mm-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-dc5-5x2-5": {
+    "entity": "part",
+    "id": "7efe26f0-d406-4f67-9a5d-0e900ee6fab9",
+    "name": "Adaptateur de charge GX16 vers Jack DC 5,5 x 2,5 mm",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108241-large_default_2x/adaptateur-gx16-3-pins-male-vers-dc-55-25mm-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108240-large_default_2x/adaptateur-gx16-3-pins-male-vers-dc-55-25mm-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-gx12-3": {
+    "entity": "part",
+    "id": "bf0e4cd1-04ec-4d3b-8213-9065e7b7e2bd",
+    "name": "Adaptateur de charge GX16 vers GX12 rond 3 broches",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108244-large_default_2x/adaptateur-gx16-3-pins-male-vers-gx12-3-pins-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108245-large_default_2x/adaptateur-gx16-3-pins-male-vers-gx12-3-pins-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-gx16-4": {
+    "entity": "part",
+    "id": "fc0db40c-7444-4168-a53d-9ccd6398caae",
+    "name": "Adaptateur de charge GX16 vers GX16 rond 4 broches",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108234-large_default_2x/adaptateur-gx16-3-pins-male-vers-gx16-4-pins-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108233-large_default_2x/adaptateur-gx16-3-pins-male-vers-gx16-4-pins-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-lp16-3": {
+    "entity": "part",
+    "id": "f00be3d0-1168-469f-aa92-f374662e9598",
+    "name": "Adaptateur de charge GX16 vers LP16 étanche 3 broches",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/109862-large_default_2x/adaptateur-gx16-3-pins-male-vers-lp16-3p-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/109861-large_default_2x/adaptateur-gx16-3-pins-male-vers-lp16-3p-femelle.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-xiaomi-mag": {
+    "entity": "part",
+    "id": "e7e121d5-1dc6-40e6-9a81-3a6d8832794c",
+    "name": "Adaptateur de charge GX16 vers Magnétique Xiaomi",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108229-large_default_2x/adaptateur-gx16-3-pins-male-vers-connecteur-magnetique-xiaomi-mi4.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108228-large_default_2x/adaptateur-gx16-3-pins-male-vers-connecteur-magnetique-xiaomi-mi4.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-rca": {
+    "entity": "part",
+    "id": "1e71a1e1-a388-4315-8d5d-18276867ad3d",
+    "name": "Adaptateur de charge GX16 vers Rond 8 mm type Xiaomi (dit RCA)",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108239-large_default_2x/adaptateur-gx16-3-pins-male-vers-connecteur-rca.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108237-large_default_2x/adaptateur-gx16-3-pins-male-vers-connecteur-rca.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-xlr-3": {
+    "entity": "part",
+    "id": "c22f763f-9270-4556-9961-a5159df76c6e",
+    "name": "Adaptateur de charge GX16 vers XLR 3 broches",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/109819-large_default_2x/adaptateur-gx16-3-pins-male-vers-xlr-male.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/109820-large_default_2x/adaptateur-gx16-3-pins-male-vers-xlr-male.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-nami-rgx16-2": {
+    "entity": "part",
+    "id": "2dfcb742-163c-4912-a5fa-3cbbc02a933c",
+    "name": "Adaptateur de charge GX16 vers Prise Nami GX16 inversé 2 broches",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108261-large_default_2x/adaptateur-gx16-3p-vers-gx16-2p-nami.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108224-large_default_2x/adaptateur-gx16-3p-vers-gx16-2p-nami.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  },
+  "adaptateur-charge-gx16-vers-cq": {
+    "entity": "part",
+    "id": "b736d4c6-5c20-42b8-9768-07aabf155623",
+    "name": "Adaptateur de charge GX16 vers Prise CQ (Kukirin récent)",
+    "replace": true,
+    "current": 0,
+    "need": 2,
+    "picks": [
+      {
+        "url": "https://www.wattiz.fr/108293-large_default_2x/adaptateur-chargeur-kukirin-julet.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      },
+      {
+        "url": "https://www.wattiz.fr/108294-large_default_2x/adaptateur-chargeur-kukirin-julet.jpg",
+        "page": "https://www.wattiz.fr/fr/5750-adapteurs-chargeurs"
+      }
+    ]
+  }
+}

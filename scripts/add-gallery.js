@@ -8,6 +8,7 @@
  *   - mode AJOUT (reset:false) : les photos existantes restent, la principale ne change pas ;
  *   - modèles marqués replace:true (photo principale ratée) : la 1re photo retenue repart d'un
  *     tableau vide (reset:true), les suivantes s'ajoutent.
+ * Champ optionnel entity:'part' → l'image va sur parts (bucket part-images) au lieu de scooter_models (13/10 : photos des adaptateurs Wattiz).
  * Garde : rien n'est écrit sans --go. Idempotent : chaque modèle traité est noté dans
  * <fichier>.applied.json et n'est jamais retraité.
  *
@@ -79,7 +80,7 @@ async function main() {
         const out = await fetch(URL_FN, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET },
-          body: JSON.stringify({ entity_type: 'scooter', entity_id: r.id, images_base64: [png.toString('base64')], alt_base: r.name, reset: Boolean(r.replace) && sent === 0 }),
+          body: JSON.stringify({ entity_type: r.entity === 'part' ? 'part' : 'scooter', entity_id: r.id, images_base64: [png.toString('base64')], alt_base: r.name, reset: Boolean(r.replace) && sent === 0 }),
         });
         const json = await out.json().catch(() => null);
         if (!out.ok || json?.success !== true || !(json.processed_count > 0)) throw new Error(json?.error || `HTTP ${out.status}`);
