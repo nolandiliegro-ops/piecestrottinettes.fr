@@ -1,0 +1,1587 @@
+{
+  "brandName": "Isinwheel",
+  "results": [
+    {
+      "scooter": {
+        "name": "Isinwheel GT1",
+        "slug": "isinwheel-gt1",
+        "voltage": 48,
+        "amperage": 10,
+        "power_watts": 800,
+        "max_speed_private_kmh": 45,
+        "range_km": 45,
+        "max_load_kg": 150,
+        "year": 2024,
+        "max_speed_kmh": 25,
+        "weight_kg": 23.7,
+        "suspension": "Double suspension avant et arrière à ressorts",
+        "ip_rating": "IPX4",
+        "tire_size": "Pneu tout-terrain gonflable 10 pouces (section non précisée)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.isinwheel.fr/cdn/shop/files/GT1_MIAN_NEW.jpg?v=1728376229",
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/fb7eb892-b5f3-44ed-e452-f136ca95e400/public",
+          "http://wellbots.fr/cdn/shop/files/0.1_1800x1800_c0e75edd-e479-4846-88ae-1e6528f4a806.webp?v=1732103231"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Isinwheel GT1 est une trottinette électrique tout-terrain équipée d'un moteur sans balais de 800 W et d'une batterie lithium 48 V 10 Ah annoncée pour 45 km d'autonomie. Elle roule sur des pneus gonflables tout-terrain de 10 pouces, avec double suspension avant/arrière et freins à disque avant et arrière associés à un frein électronique ; sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h après déverrouillage, hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel GT1 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel GT1 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel gt1, pieces isinwheel gt1, disque frein isinwheel gt1, plaquettes isinwheel gt1, pneu isinwheel gt1"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://trott-electrique.fr/isinwheel-gt1-800w/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+          "type": "revendeur",
+          "url2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html"
+        },
+        "suspension": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.isinwheel.fr/cdn/shop/files/GT1_MIAN_NEW.jpg?v=1728376229",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.isinwheel.fr/pages/gt1-faq",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 23.7,
+            "source_url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 800,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt1-800w-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://trott-electrique.fr/isinwheel-gt1-800w/",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt1-800w-trottinette-electrique-tout-terrain",
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 45,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt1-800w-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt1-800w-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "Pneu tout-terrain gonflable 10 pouces (section non précisée)",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière à ressorts",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_url_2": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaasb82149.html",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+            "source_url_2": "https://electrichouse.fr/accueil/220-trottinette-electrique-isinwheel-gt1.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2024,
+            "source_url": "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "L'Isinwheel GT1 est une trottinette électrique tout-terrain équipée d'un moteur sans balais de 800 W et d'une batterie lithium 48 V 10 Ah annoncée pour 45 km d'autonomie. Elle roule sur des pneus gonflables tout-terrain de 10 pouces, avec double suspension avant/arrière et freins à disque avant et arrière associés à un frein électronique ; sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h après déverrouillage, hors voie publique). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "https://www.pixmania.com/fr/fr/trottinette-electrique-isinwheel-gt1-800w-48v-10ah-batterie-scooter-pliable-toutterrain-10-pouces-controle-par-application-360946.html",
+            "https://wellbots.fr/products/isinwheel-gt1-800w-trottinette-electrique-tout-terrain"
+          ],
+          "_og_images": [
+            "http://www.isinwheel.fr/cdn/shop/files/GT1_MIAN_NEW.jpg?v=1728376229",
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/fb7eb892-b5f3-44ed-e452-f136ca95e400/public",
+            "http://wellbots.fr/cdn/shop/files/0.1_1800x1800_c0e75edd-e479-4846-88ae-1e6528f4a806.webp?v=1732103231"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.isinwheel.fr/pages/gt1-faq",
+            "source_url_2": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain",
+            "source_url_2": "https://www.neozone.org/tests/je-teste-la-trottinette-electrique-isinwheel-gt1-equipe-dun-moteur-de-800-w-45-km-h/",
+            "source_type": "constructeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Isinwheel S9 Max",
+        "slug": "isinwheel-s9-max",
+        "voltage": 36,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 16.5,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IP54",
+        "tire_size": "10x2.125 (pneu plein nid d'abeille)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://boulanger.scene7.com/is/image/Boulanger/9331187241063_h_f_l_0",
+          "https://electrichouse.fr/1352-large_default/trottinette-electrique-isinwheel-s9-max.jpg"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "solid",
+        "score_offroad": 40,
+        "description": "L'Isinwheel S9 Max est une trottinette électrique pliable équipée d'un moteur avant de 500 W et d'une batterie 36 V 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins nid d'abeille de 10 pouces, avec double suspension, frein électronique EABS à l'avant et frein à disque à l'arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 35 km/h sur terrain privé via l'application). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel S9 Max - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel S9 Max : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel s9 max, pieces isinwheel s9 max, disque frein isinwheel s9 max, plaquettes isinwheel s9 max, pneu isinwheel s9 max"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/isinwheel-s9-max"
+        },
+        "suspension": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.amazon.fr/Felixstory-Plein-75-6-1-10x2-125-pouces/dp/B0C3QWDL17",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/pages/s9max-spe",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187241063_h_f_l_0",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.isinwheel.co.uk/pages/s9max-specification",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.isinwheel.co.uk/pages/s9max-specification",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16.5,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/isinwheel-s9-max",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 36,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.boulanger.com/ref/9000921773",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.decathlon.fr/p/mp/trottinette-electrique-isinwheel-s9-max-moteur-500-w-batterie-36-v-10-4-ah/8f6fac9d-6789-475b-8499-c7d69ec3d649/c1",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.boulanger.com/ref/9000921773",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.circooter.fr/products/isinwheel-s9max-trottinette-electrique-500w-avec-app-control",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.circooter.fr/products/isinwheel-s9max-trottinette-electrique-500w-avec-app-control",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.isinwheel.ca/pages/s9max",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.boulanger.com/ref/9000921773",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10x2.125 (pneu plein nid d'abeille)",
+            "source_url": "https://www.amazon.fr/Felixstory-Plein-75-6-1-10x2-125-pouces/dp/B0C3QWDL17",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://electrichouse.fr/accueil/219-trottinette-electrique-isinwheel-s9-max.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_url_2": "https://www.boulanger.com/ref/9000921773",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Isinwheel S9 Max est une trottinette électrique pliable équipée d'un moteur avant de 500 W et d'une batterie 36 V 10,4 Ah (374 Wh) annoncée jusqu'à 40 km d'autonomie. Elle roule sur des pneus pleins nid d'abeille de 10 pouces, avec double suspension, frein électronique EABS à l'avant et frein à disque à l'arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 35 km/h sur terrain privé via l'application). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/pages/s9max-spe",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.boulanger.com/ref/9000921773",
+            "https://www.decathlon.fr/p/mp/trottinette-electrique-isinwheel-s9-max-moteur-500-w-batterie-36-v-10-4-ah/8f6fac9d-6789-475b-8499-c7d69ec3d649/c1",
+            "https://electrichouse.fr/accueil/219-trottinette-electrique-isinwheel-s9-max.html"
+          ],
+          "_og_images": [
+            "https://boulanger.scene7.com/is/image/Boulanger/9331187241063_h_f_l_0",
+            "https://electrichouse.fr/1352-large_default/trottinette-electrique-isinwheel-s9-max.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.isinwheel.co.uk/pages/s9max-specification",
+            "source_url_2": "https://www.boulanger.com/ref/9000921773",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "solid",
+            "source_url": "https://www.isinwheel.co.uk/pages/s9max-specification",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aabwi06575.html",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Isinwheel S-NOVA Pro",
+        "slug": "isinwheel-s-nova-pro",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 45,
+        "range_km": 60,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 27.4,
+        "suspension": "Avant bras oscillant + arrière ressort (double suspension)",
+        "ip_rating": "IPX4",
+        "tire_size": "10\" x 2.125\" pneumatique avec chambre à air",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.isinwheel.fr/cdn/shop/files/1_01ae3358-1c70-423f-863b-5048e22284cc.jpg?v=1762420923",
+          "http://www.finbike.com/cdn/shop/files/isinwheel_S-Nova-Pro-Electric-Scooter_8.webp?v=1765209469",
+          "http://www.wellbots.com/cdn/shop/files/1_15d8563d-a53b-42cc-8765-8da752642c91.jpg?v=1775124309"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_section": "10x2.125",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'isinwheel S-Nova Pro est une trottinette électrique pliable équipée d'un moteur de 1000 W (puissance max, 600 W nominale) et d'une batterie 48 V 13 Ah (624 Wh) annoncée pour 60 km d'autonomie. Elle roule sur des pneus pneumatiques de 10\" x 2.125\" avec double suspension (bras oscillant avant, ressorts arrière) et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h hors cadre légal, terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel S-NOVA Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel S-NOVA Pro : plaquettes, pneus 10x2.125, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel s-nova pro, pieces isinwheel s-nova pro, disque frein isinwheel s-nova pro, plaquettes isinwheel s-nova pro, pneu isinwheel s-nova pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://trott-electrique.fr/isinwheel-s-nova-pro-puissance-confort-et-mobilite-urbaine/"
+        },
+        "suspension": {
+          "url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.wellbots.com/products/isinwheel-s-nova-pro-commuting-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.isinwheel.fr/cdn/shop/files/1_01ae3358-1c70-423f-863b-5048e22284cc.jpg?v=1762420923",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://manuals.plus/isinwheel/s-nova-pro-electric-scooter-manual",
+          "type": "inconnu"
+        },
+        "tire_section": {
+          "url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://www.amazon.com/dp/B0H3VGQK8F"
+        },
+        "tire_family": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 27.4,
+            "source_url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_url_2": "https://trott-electrique.fr/isinwheel-s-nova-pro-puissance-confort-et-mobilite-urbaine/",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 60,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10\" x 2.125\" pneumatique avec chambre à air",
+            "source_url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_url_2": "https://www.amazon.com/dp/B0H3VGQK8F",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Avant bras oscillant + arrière ressort (double suspension)",
+            "source_url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_url_2": "https://www.isinwheel.com/products/s-nova-pro-commuting-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_url_2": "https://www.isinwheel.com/products/s-nova-pro-commuting-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.wellbots.com/products/isinwheel-s-nova-pro-commuting-electric-scooter",
+            "source_url_2": "https://www.amazon.com/dp/B0H3VGQK8F",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'isinwheel S-Nova Pro est une trottinette électrique pliable équipée d'un moteur de 1000 W (puissance max, 600 W nominale) et d'une batterie 48 V 13 Ah (624 Wh) annoncée pour 60 km d'autonomie. Elle roule sur des pneus pneumatiques de 10\" x 2.125\" avec double suspension (bras oscillant avant, ressorts arrière) et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h par défaut (jusqu'à 45 km/h hors cadre légal, terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "https://www.finbike.com/products/isinwheel-s-nova-pro-electric-scooter",
+            "https://www.wellbots.com/products/isinwheel-s-nova-pro-commuting-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.isinwheel.fr/cdn/shop/files/1_01ae3358-1c70-423f-863b-5048e22284cc.jpg?v=1762420923",
+            "http://www.finbike.com/cdn/shop/files/isinwheel_S-Nova-Pro-Electric-Scooter_8.webp?v=1765209469",
+            "http://www.wellbots.com/cdn/shop/files/1_15d8563d-a53b-42cc-8765-8da752642c91.jpg?v=1775124309"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://manuals.plus/isinwheel/s-nova-pro-electric-scooter-manual",
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_section": {
+            "value": "10x2.125",
+            "source_url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.amazon.com/dp/B0H3VGQK8F"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w",
+            "source_type": "constructeur",
+            "source_url_2": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Isinwheel GT1 Dual",
+        "slug": "isinwheel-gt1-dual",
+        "voltage": 48,
+        "amperage": 13,
+        "power_watts": 1600,
+        "max_speed_private_kmh": 50,
+        "range_km": 55,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 33,
+        "suspension": "Double bras oscillant à ressorts, avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "Pneu tout-terrain de 10 pouces (section non précisée par le constructeur)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.isinwheel.fr/cdn/shop/files/d_2.jpg?v=1776150811",
+          "http://www.isinwheel.com/cdn/shop/files/Frame_2147227098_1b05b70b-1294-4b9d-a4af-b798eacd6414.png?v=1791627933"
+        ],
+        "brake_type": "disc_mechanical",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "L'Isinwheel GT1 Dual est une trottinette électrique tout-terrain bimoteur (2 × 800 W, soit 1600 W) alimentée par une batterie 48 V 13 Ah (624 Wh), avec une autonomie annoncée de 55 km. Elle est équipée de pneus tout-terrain de 10 pouces, d'une double suspension à bras oscillants et d'un freinage combinant frein à disque et frein électronique EABS ; sa vitesse maximale constructeur est de 50 km/h, et elle est livrée bridée à 25 km/h pour l'usage sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel GT1 Dual - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel GT1 Dual : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel gt1 dual, pieces isinwheel gt1 dual, disque frein isinwheel gt1 dual, plaquettes isinwheel gt1 dual, pneu isinwheel gt1 dual"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+          "type": "constructeur",
+          "url2": "https://www.isinwheel.ca/products/gt1-dual-motor-off-road-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.isinwheel.fr/cdn/shop/files/d_2.jpg?v=1776150811",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.isinwheel.com/products/gt1-dual-motor-off-road-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 13,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1600,
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-isinwheel-gt1-dual/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.cdiscount.com/le-sport/r-isinwheel+gt1+dual.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 55,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "weight_kg": {
+            "value": 33,
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://www.isinwheel.ca/products/gt1-dual-motor-off-road-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "Pneu tout-terrain de 10 pouces (section non précisée par le constructeur)",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double bras oscillant à ressorts, avant et arrière",
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-isinwheel-gt1-dual/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "source_url_2": "https://www.isinwheel.com/blogs/news/gt1-dual-motor-review",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://www.isinwheel.com/blogs/news/gt1-dual-motor-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Isinwheel GT1 Dual est une trottinette électrique tout-terrain bimoteur (2 × 800 W, soit 1600 W) alimentée par une batterie 48 V 13 Ah (624 Wh), avec une autonomie annoncée de 55 km. Elle est équipée de pneus tout-terrain de 10 pouces, d'une double suspension à bras oscillants et d'un freinage combinant frein à disque et frein électronique EABS ; sa vitesse maximale constructeur est de 50 km/h, et elle est livrée bridée à 25 km/h pour l'usage sur voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-isinwheel-gt1-dual/",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w",
+            "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+            "https://www.isinwheel.com/products/gt1-dual-motor-off-road-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.isinwheel.fr/cdn/shop/files/d_2.jpg?v=1776150811",
+            "http://www.isinwheel.com/cdn/shop/files/Frame_2147227098_1b05b70b-1294-4b9d-a4af-b798eacd6414.png?v=1791627933"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_mechanical",
+            "source_url": "https://www.isinwheel.fr/blogs/news/comment-la-isinwheel-gt1-dual-transforme-une-trottinette-electrique-1600w-en-bete-de",
+            "source_url_2": "https://le-velo-urbain.com/test-avis-trottinette-electrique-isinwheel-gt1-dual/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.amazon.fr/isinwheel-Trottinette-%C3%89lectrique-Commutable-Clignotants/dp/B0GRHGG3TB",
+            "source_url_2": "https://moovrider.com/products/isinwheel%C2%AE-gt1-dual-trottinette-electrique",
+            "source_type": "revendeur"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Isinwheel D1",
+        "slug": "isinwheel-d1",
+        "voltage": 48,
+        "amperage": 10,
+        "power_watts": 1200,
+        "max_speed_private_kmh": 45,
+        "range_km": 40,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 25.8,
+        "suspension": "Suspension à bras oscillant avant et arrière",
+        "ip_rating": "IPX4",
+        "tire_size": "10'' (25,4 cm) tout-terrain",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.isinwheel.fr/cdn/shop/files/D1_e0d2bc46-dce5-44e4-afcb-a6224d9b712e.jpg?v=1786002711",
+          "http://www.finbike.com/cdn/shop/files/isinwheel-d1-electric-scooter_1.webp?v=1786754658",
+          "http://www.cybercart.com/cdn/shop/files/D1_1800x1800_3910ffdc-1cd8-4187-8066-76d58ddb0c6e.webp?v=1786098658"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "score_offroad": 40,
+        "description": "L'Isinwheel D1 est une trottinette électrique tout-terrain équipée d'un moteur de 1200 W et d'une batterie 48 V 10 Ah (autonomie annoncée jusqu'à 40 km), avec une vitesse bridée à 25 km/h d'origine et jusqu'à 45 km/h après débridage sur terrain privé. Elle dispose de pneus tout-terrain de 10 pouces, d'une suspension à bras oscillant avant et arrière, de freins à disque avant/arrière associés à un frein électronique, d'une charge maximale de 150 kg et d'un indice IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel D1 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel D1 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel d1, pieces isinwheel d1, disque frein isinwheel d1, plaquettes isinwheel d1, pneu isinwheel d1"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur",
+          "url2": "https://eng.eestipoisid.eu/products-without-category/isinwheel-d1-premium-electric-scooter-48v-10ah-1200w-50km-range-black-eu-only-box-damage/225391/2/p"
+        },
+        "suspension": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.isinwheel.fr/cdn/shop/files/D1_e0d2bc46-dce5-44e4-afcb-a6224d9b712e.jpg?v=1786002711",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 25.8,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://eng.eestipoisid.eu/products-without-category/isinwheel-d1-premium-electric-scooter-48v-10ah-1200w-50km-range-black-eu-only-box-damage/225391/2/p",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1200,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 45,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://eng.eestipoisid.eu/products-without-category/isinwheel-d1-premium-electric-scooter-48v-10ah-1200w-50km-range-black-eu-only-box-damage/225391/2/p",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.cybercart.com/products/d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "10'' (25,4 cm) tout-terrain",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.cybercart.com/products/d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension à bras oscillant avant et arrière",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "source_url_2": "https://www.cybercart.com/products/d1-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'Isinwheel D1 est une trottinette électrique tout-terrain équipée d'un moteur de 1200 W et d'une batterie 48 V 10 Ah (autonomie annoncée jusqu'à 40 km), avec une vitesse bridée à 25 km/h d'origine et jusqu'à 45 km/h après débridage sur terrain privé. Elle dispose de pneus tout-terrain de 10 pouces, d'une suspension à bras oscillant avant et arrière, de freins à disque avant/arrière associés à un frein électronique, d'une charge maximale de 150 kg et d'un indice IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "https://www.finbike.com/products/isinwheel-d1-electric-scooter",
+            "https://www.cybercart.com/products/d1-electric-scooter"
+          ],
+          "_og_images": [
+            "http://www.isinwheel.fr/cdn/shop/files/D1_e0d2bc46-dce5-44e4-afcb-a6224d9b712e.jpg?v=1786002711",
+            "http://www.finbike.com/cdn/shop/files/isinwheel-d1-electric-scooter_1.webp?v=1786754658",
+            "http://www.cybercart.com/cdn/shop/files/D1_1800x1800_3910ffdc-1cd8-4187-8066-76d58ddb0c6e.webp?v=1786098658"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Isinwheel GT4",
+        "slug": "isinwheel-gt4",
+        "voltage": 52,
+        "amperage": 18.2,
+        "power_watts": 2400,
+        "max_speed_private_kmh": 70,
+        "range_km": 80,
+        "max_load_kg": 150,
+        "max_speed_kmh": 25,
+        "weight_kg": 33.4,
+        "suspension": "Double bras oscillant avant et arrière (hydraulique)",
+        "ip_rating": "IPX4",
+        "tire_size": "12 x 2.75 pouces (tubeless tout-terrain)",
+        "foldable": true,
+        "wheel_inches": 12,
+        "source_image_urls": [
+          "http://wellbots.fr/cdn/shop/files/GT4-n_1080x_54437133-4965-4ad2-a11b-38bc9bd5bd7a.webp?v=1769699591",
+          "http://www.isinwheel.eu/cdn/shop/files/GT4-n_900x_19d8d182-98d8-41ea-b318-ff4b5e954b89.webp?v=1764142454"
+        ],
+        "brake_type": "disc_hydraulic",
+        "tire_family": "pneumatic",
+        "score_offroad": 50,
+        "description": "L'isinwheel GT4 est une trottinette électrique tout-terrain à double moteur (2 x 1200 W, 2400 W au total) alimentée par une batterie 52 V 18,2 Ah annoncée jusqu'à 80 km d'autonomie. Elle est équipée de pneus tout-terrain 12 x 2,75 pouces, d'une double suspension à bras oscillant et de freins à disque hydrauliques avant et arrière ; elle pèse 33,4 kg, supporte 150 kg et se plie. Sa vitesse est bridée à 25 km/h sur voie publique et atteint 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Isinwheel GT4 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Isinwheel GT4 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "isinwheel gt4, pieces isinwheel gt4, disque frein isinwheel gt4, plaquettes isinwheel gt4, pneu isinwheel gt4"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+          "type": "site_test"
+        },
+        "range_km": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter",
+          "type": "constructeur",
+          "url2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html"
+        },
+        "suspension": {
+          "url": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+          "type": "site_test"
+        },
+        "ip_rating": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "tire_size": {
+          "url": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://wellbots.fr/cdn/shop/files/GT4-n_1080x_54437133-4965-4ad2-a11b-38bc9bd5bd7a.webp?v=1769699591",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.isinwheel.fr/products/gt4-trottinette-electrique-tout-terrain-a-double-moteur-2400w",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.isinwheel.com/products/gt4-2400w-dual-motor-off-road-electric-scooter",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 33.4,
+            "source_url": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 52,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt4-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 18.2,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 2400,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 70,
+            "source_url": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt4-trottinette-electrique-tout-terrain",
+            "source_type": "site_test"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://wellbots.fr/products/isinwheel-gt4-trottinette-electrique-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 150,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 12,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": "12 x 2.75 pouces (tubeless tout-terrain)",
+            "source_url": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter",
+            "source_url_2": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Double bras oscillant avant et arrière (hydraulique)",
+            "source_url": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+            "source_url_2": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_type": "site_test"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_url_2": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "source_type": "constructeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "L'isinwheel GT4 est une trottinette électrique tout-terrain à double moteur (2 x 1200 W, 2400 W au total) alimentée par une batterie 52 V 18,2 Ah annoncée jusqu'à 80 km d'autonomie. Elle est équipée de pneus tout-terrain 12 x 2,75 pouces, d'une double suspension à bras oscillant et de freins à disque hydrauliques avant et arrière ; elle pèse 33,4 kg, supporte 150 kg et se plie. Sa vitesse est bridée à 25 km/h sur voie publique et atteint 70 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.isinwheel.fr/blogs/news/trottinette-electrique-grosses-roues-le-gt4-isinwheel-et-ses-pneus-12-pouces-tout-terrain",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://wellbots.fr/products/isinwheel-gt4-trottinette-electrique-tout-terrain",
+            "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aaclr96046.html",
+            "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter"
+          ],
+          "_og_images": [
+            "http://wellbots.fr/cdn/shop/files/GT4-n_1080x_54437133-4965-4ad2-a11b-38bc9bd5bd7a.webp?v=1769699591",
+            "https://i2.cdscdn.com/resources/RWD/header/nLogo.png",
+            "http://www.isinwheel.eu/cdn/shop/files/GT4-n_900x_19d8d182-98d8-41ea-b318-ff4b5e954b89.webp?v=1764142454"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_hydraulic",
+            "source_url": "https://www.isinwheel.fr/products/gt4-trottinette-electrique-tout-terrain-a-double-moteur-2400w",
+            "source_url_2": "https://www.neozone.org/tests/mon-test-de-la-isinwheel-gt4-une-trottinette-electrique-qui-file-a-70-km-h/",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.isinwheel.com/products/gt4-2400w-dual-motor-off-road-electric-scooter",
+            "source_url_2": "https://www.isinwheel.co.uk/products/isinwheel-gt4-2400w-dual-motor-electric-scooter",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

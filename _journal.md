@@ -203,3 +203,12 @@
 - 2026-10-13T05:56:49.846Z · PASSE DESCRIPTIONS TROTTINETTES · 0/146 · 0.1 min · 0 in / 0 out
 - 2026-10-13T06:38:45.016Z · PASSE GALERIE · 131 modèles · 159 photos retenues · 41.9 min · 3999095 in / 60401 out / 289 rech.
 - 2026-10-13T06:50:00.636Z · PASSE DESCRIPTIONS TROTTINETTES · 145/146 · 8.5 min · 284434 in / 252641 out
+- 2026-10-14T14:52:32.643Z · Isinwheel · OK · 4.4 min · 944054 in / 29757 out / 50 rech · +6 prêt (dont 6 sans clé roue) · cumul run 973811 tokens
+- 2026-10-14T14:55:50.692Z · Hitway · OK · 3.3 min · 723253 in / 23094 out / 35 rech · +0 prêt (dont 0 sans clé roue) · cumul run 1720158 tokens
+- 2026-10-14T14:57:56.781Z · Kuickwheel · OK · 2.1 min · 495178 in / 14740 out / 23 rech · +2 prêt (dont 2 sans clé roue) · cumul run 2230076 tokens
+- 2026-10-14T14:59:50.197Z · Hikerboy · OK · 1.9 min · 389665 in / 14403 out / 22 rech · +2 prêt (dont 2 sans clé roue) · cumul run 2634144 tokens
+- 2026-10-14T15:03:59.467Z · DYU · OK · 4.2 min · 610569 in / 27152 out / 34 rech · +5 prêt (dont 5 sans clé roue) · cumul run 3271865 tokens
+- 2026-10-14T15:07:36.855Z · Kingsong · OK · 3.6 min · 720109 in / 25948 out / 39 rech · +5 prêt (dont 5 sans clé roue) · cumul run 4017922 tokens
+- 2026-10-14T15:08:21.066Z · Laotie · OK · 0.7 min · 290035 in / 4065 out / 12 rech · +0 prêt (dont 0 sans clé roue) · cumul run 4312022 tokens
+- 2026-10-14T15:08:23.469Z · Langfeite · ÉCHEC (code 1) · 0.0 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Cg2Lfhzwoa58km6tex69q"}
+- 2026-10-14T15:08:26.719Z · Beaster · ÉCHEC (code 1) · 0.1 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Cg2Lfwhi8VysPx4mxRm4j"}

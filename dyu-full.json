@@ -1,0 +1,131 @@
+{
+  "brandName": "DYU",
+  "scooters": [
+    {
+      "name": "DYU A5",
+      "slug": "dyu-a5",
+      "voltage": 48,
+      "amperage": 7.5,
+      "power_watts": 250,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 22.4,
+      "suspension": "Fourche avant et amortisseur de selle",
+      "ip_rating": "IP54",
+      "foldable": true,
+      "wheel_inches": 14,
+      "source_image_urls": [
+        "http://dyucycle.com/cdn/shop/files/0DB626F8-5991-430e-ACE7-715EA5096A97.webp?v=1756883248",
+        "http://uni-trax.com/cdn/shop/files/2_b1dcfd87-f09c-48e6-875f-816e986d2025.webp?v=1731684964",
+        "https://trottinettepro.com/2157-large_default/velo-electrique-dyu-ebike-a5.jpg"
+      ],
+      "brake_type": "disc_mechanical",
+      "score_offroad": 45,
+      "description": "Le DYU A5 est un modèle pliant à roues de 14 pouces (un vélo électrique pliant, et non une trottinette), animé par un moteur brushless de 250 W et une batterie amovible 48V 7,5 Ah, avec une autonomie annoncée jusqu'à 60 km. Il est équipé de freins à disque avant et arrière, d'une fourche suspendue et d'un amortisseur de selle, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU A5 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU A5 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu a5, pieces dyu a5, disque frein dyu a5, plaquettes dyu a5, pneu dyu a5"
+    },
+    {
+      "name": "DYU C3",
+      "slug": "dyu-c3",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 250,
+      "range_km": 34,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 20,
+      "ip_rating": "IP54",
+      "tire_size": "14 x 2,125 pouces",
+      "foldable": true,
+      "wheel_inches": 14,
+      "source_image_urls": [
+        "http://fr.dyucycle.com/cdn/shop/files/3_dcb8840e-5f86-4e03-a50b-b474207e4d1a.jpg?v=1721723375",
+        "https://img.gkbcdn.com/p/2024-09-23/DYU-C3-Folding-Electric-Bike-250W-36V-7-5AH-10001697-0._w315_.jpg",
+        "https://voltbike.co.uk/wp-content/uploads/2025/04/3333.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "score_offroad": 45,
+      "description": "Le DYU C3 est un engin pliable de 14 pouces (pneus 14 x 2,125) équipé d'un moteur de 250 W (500 W en crête) et d'une batterie 36 V 7,5 Ah, annoncé à 25 km/h maximum et jusqu'à 34 km d'autonomie en assistance. Il dispose de freins à disque avant et arrière, d'un poids net de 20 kg et d'une charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU C3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU C3 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu c3, pieces dyu c3, disque frein dyu c3, plaquettes dyu c3, pneu dyu c3"
+    },
+    {
+      "name": "DYU T1",
+      "slug": "dyu-t1",
+      "voltage": 36,
+      "amperage": 10,
+      "power_watts": 250,
+      "range_km": 55,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 22.5,
+      "ip_rating": "IP54",
+      "tire_size": "20x2.125\"",
+      "foldable": true,
+      "wheel_inches": 20,
+      "source_image_urls": [
+        "https://alphascootz.eu/wp-content/uploads/2024/10/2_2d6cac0f-0f01-4b82-b229-22d4d79d7176.webp"
+      ],
+      "brake_type": "disc_mechanical",
+      "score_offroad": 45,
+      "description": "Le DYU T1 est en réalité un vélo électrique pliable (et non une trottinette) équipé d'un moteur moyeu de 250 W, d'une batterie amovible 36 V 10 Ah et d'un cadre en alliage de magnésium pesant 22,5 kg. Il roule sur des roues de 20 pouces, dispose de freins à disque mécaniques avant et arrière, d'un capteur de couple, d'un indice IP54 et d'une vitesse limitée à 25 km/h avec une autonomie annoncée jusqu'à 55 km. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU T1 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU T1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu t1, pieces dyu t1, disque frein dyu t1, plaquettes dyu t1, pneu dyu t1"
+    },
+    {
+      "name": "DYU Stroll 1",
+      "slug": "dyu-stroll-1",
+      "voltage": 36,
+      "amperage": 9,
+      "power_watts": 250,
+      "range_km": 100,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 19.5,
+      "suspension": "Aucune",
+      "ip_rating": "IP54",
+      "tire_size": "700x38C (28 x 1.5\")",
+      "foldable": false,
+      "wheel_inches": 28,
+      "source_image_urls": [
+        "http://uk.dyucycle.com/cdn/shop/files/STROLL1_28aee97d-97ba-435c-834a-cde808c73e85.jpg?v=1762937358",
+        "http://www.oolactive.com/cdn/shop/files/dyu-stroll-1-electric-like-bike_1.jpg?crop=center&height=1200&v=1752231633&width=1200",
+        "http://ebikesdiscount.com/cdn/shop/files/dyu-stroll-1-813470.webp?v=1738607349"
+      ],
+      "brake_type": "disc_hydraulic",
+      "score_offroad": 45,
+      "description": "Le DYU Stroll 1 est un vélo électrique urbain (roues 700x38C, cadre aluminium) équipé d'un moteur moyeu arrière de 250 W (500 W en pic) et d'une batterie amovible 36 V 9 Ah (324 Wh), pour une autonomie annoncée jusqu'à 100 km en assistance. Il roule sur des pneus CST anti-crevaison de 700x38C, freine avec des freins à disque hydrauliques avant et arrière et sa vitesse est limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU Stroll 1 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU Stroll 1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu stroll 1, pieces dyu stroll 1, disque frein dyu stroll 1, plaquettes dyu stroll 1, pneu dyu stroll 1"
+    },
+    {
+      "name": "DYU C6 Pro",
+      "slug": "dyu-c6-pro",
+      "voltage": 36,
+      "amperage": 15.6,
+      "power_watts": 250,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 33,
+      "suspension": "Fourche avant + suspension de selle",
+      "foldable": false,
+      "wheel_inches": 26,
+      "source_image_urls": [
+        "https://dyubikes.com/wp-content/uploads/2025/08/01_NEW.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "score_offroad": 45,
+      "description": "Le DYU C6 Pro est en réalité un vélo électrique de ville à roues de 26 pouces (et non une trottinette), équipé d'un moteur de 250 W (500 W en pointe) et d'une batterie amovible 36 V 15,6 Ah pour une autonomie annoncée jusqu'à 80 km. Il dispose de freins à disque avant et arrière, d'une fourche suspendue et d'une suspension de selle, avec une vitesse limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "DYU C6 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées DYU C6 Pro : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "dyu c6 pro, pieces dyu c6 pro, disque frein dyu c6 pro, plaquettes dyu c6 pro, pneu dyu c6 pro"
+    }
+  ]
+}

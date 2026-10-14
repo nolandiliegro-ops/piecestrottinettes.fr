@@ -1,0 +1,1290 @@
+{
+  "brandName": "Kingsong",
+  "results": [
+    {
+      "scooter": {
+        "name": "Kingsong KS-N12 Pro",
+        "slug": "kingsong-ks-n12-pro",
+        "voltage": 60,
+        "amperage": 14.5,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 50,
+        "range_km": 80,
+        "max_load_kg": 120,
+        "year": 2023,
+        "max_speed_kmh": 25,
+        "weight_kg": 29.3,
+        "suspension": "Suspension à ressort avant et arrière",
+        "ip_rating": "IP54",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.kingsong-store.com/1537-large_default/kingsong-ks-n12-pro-59-v-145-ah.jpg",
+          "https://hightems.eu/2224-large_default/ks-n12-pro.jpg"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kingsong KS-N12 Pro embarque un moteur brushless de 1000 W (1400 W en crête) alimenté par une batterie 60 V 14,5 Ah (858 Wh), pour une autonomie annoncée jusqu'à 80 km et une vitesse bridée à 25 km/h (50 km/h sur terrain privé). Elle roule sur des pneus gonflables de 10 pouces avec suspensions avant et arrière, un frein à tambour à l'avant et un frein à disque à l'arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kingsong KS-N12 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kingsong KS-N12 Pro : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kingsong ks-n12 pro, pieces kingsong ks-n12 pro, disque frein kingsong ks-n12 pro, plaquettes kingsong ks-n12 pro, pneu kingsong ks-n12 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kingsong-store.com/en/e-scooters/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+          "type": "distributeur"
+        },
+        "range_km": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "year": {
+          "url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://myewheel.com/kingsong-n12-pro/",
+          "type": "revendeur",
+          "url2": "https://www.maxblinker.com/en/electric-scooters/kingsong-n12-pro"
+        },
+        "suspension": {
+          "url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.kingsong-store.com/1537-large_default/kingsong-ks-n12-pro-59-v-145-ah.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://kingsong-europe.com/fr/trottinettes/938-ks-n12-pro.html",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.green220.com/en/e-scooters/454-electric-scooter-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 29.3,
+            "source_url": "https://myewheel.com/kingsong-n12-pro/",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kingsong-n12-pro",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 14.5,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "distributeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://www.kingsong-europe.com/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://www.kingsong-europe.com/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension à ressort avant et arrière",
+            "source_url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IP54",
+            "source_url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_url_2": "https://www.amazon.fr/Trottinette-%C3%A9lectrique-Kingsong-KS-N12-Pro/dp/B0BDFDQ5LQ",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2023,
+            "source_url": "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html",
+            "source_url_2": "https://www.trottnshop.com/produit/kingsong-n12-pro/",
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kingsong KS-N12 Pro embarque un moteur brushless de 1000 W (1400 W en crête) alimenté par une batterie 60 V 14,5 Ah (858 Wh), pour une autonomie annoncée jusqu'à 80 km et une vitesse bridée à 25 km/h (50 km/h sur terrain privé). Elle roule sur des pneus gonflables de 10 pouces avec suspensions avant et arrière, un frein à tambour à l'avant et un frein à disque à l'arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "source_url_2": "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.kingsong-store.com/en/e-scooters/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "https://hightems.eu/fr/trottinettes/938-ks-n12-pro-3770005635107.html",
+            "https://drole2roue.com/trottinette-electrique/3663-kingsong-ks-n12-pro.html"
+          ],
+          "_og_images": [
+            "https://www.kingsong-store.com/1537-large_default/kingsong-ks-n12-pro-59-v-145-ah.jpg",
+            "https://hightems.eu/2224-large_default/ks-n12-pro.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://kingsong-europe.com/fr/trottinettes/938-ks-n12-pro.html",
+            "source_url_2": "https://www.green220.com/en/e-scooters/454-electric-scooter-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.green220.com/en/e-scooters/454-electric-scooter-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html",
+            "source_url_2": "https://www.freemoov.com/shop/3701522001403-trottinette-electrique-kingsong-ks-n12-pro-21",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kingsong KS-N14",
+        "slug": "kingsong-ks-n14",
+        "voltage": 48,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 24,
+        "suspension": "Avant et arrière",
+        "tire_size": "10\" pneumatique CST (section non précisée)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/23ea6f17-cf99-4224-3118-e2042d2a6500/public",
+          "https://over-watt.fr/cdn/shop/files/61cbIZfHcrL._AC_UF1000_1000_QL80.jpg?v=1744570654"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "score_offroad": 40,
+        "description": "La Kingsong KS-N14 est équipée d'un moteur de 500 W et d'une batterie 48 V 10,4 Ah (500 Wh) pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus de 10 pouces avec double suspension, frein à tambour avant et frein à disque arrière avec E-ABS ; sa vitesse est bridée à 25 km/h en sortie d'usine (35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kingsong KS-N14 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kingsong KS-N14 : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kingsong ks-n14, pieces kingsong ks-n14, disque frein kingsong ks-n14, plaquettes kingsong ks-n14, pneu kingsong ks-n14"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur",
+          "url2": "https://over-watt.fr/products/kingsong-ks-n14"
+        },
+        "suspension": {
+          "url": "https://myewheel.com/fr/kingsong-n14-fr/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.evolt.eu/products/electric-scooter-kingsong-n14",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://myewheel.com/fr/kingsong-n14-fr/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/23ea6f17-cf99-4224-3118-e2042d2a6500/public",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "voltage": {
+            "value": 48,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://www.pixmania.com/fr/fr/trottinette-electrique-kingsong-ksn14-48-v-104-ah-341757.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "weight_kg": {
+            "value": 24,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://over-watt.fr/products/kingsong-ks-n14",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10\" pneumatique CST (section non précisée)",
+            "source_url": "https://www.evolt.eu/products/electric-scooter-kingsong-n14",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/kingsong-n14/",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Avant et arrière",
+            "source_url": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_url_2": "https://over-watt.fr/products/kingsong-ks-n14",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/50-kingsong-ks-n14-48-v-10-4-ah-3701522001427.html",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kingsong KS-N14 est équipée d'un moteur de 500 W et d'une batterie 48 V 10,4 Ah (500 Wh) pour une autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus de 10 pouces avec double suspension, frein à tambour avant et frein à disque arrière avec E-ABS ; sa vitesse est bridée à 25 km/h en sortie d'usine (35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://myewheel.com/fr/kingsong-n14-fr/",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "https://www.pixmania.com/fr/fr/trottinette-electrique-kingsong-ksn14-48-v-104-ah-341757.html",
+            "https://over-watt.fr/products/kingsong-ks-n14"
+          ],
+          "query": "Kingsong N14 IPX4 OR IPX5 indice protection",
+          "_og_images": [
+            "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/23ea6f17-cf99-4224-3118-e2042d2a6500/public",
+            "https://over-watt.fr/cdn/shop/files/61cbIZfHcrL._AC_UF1000_1000_QL80.jpg?v=1744570654"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://fastride.fr/fr/kingsong/4658-trottinette-electrique-kingsong-ks-n14-48-v-104-ah.html",
+            "source_url_2": "https://over-watt.fr/products/kingsong-ks-n14",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kingsong KS-E1",
+        "slug": "kingsong-ks-e1",
+        "voltage": 37,
+        "amperage": 7.8,
+        "power_watts": 350,
+        "max_speed_private_kmh": 25,
+        "range_km": 25,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 16.5,
+        "suspension": "Suspension avant (amortisseur)",
+        "tire_size": "8.5 x 2.0 (pneu Wanda A5001 50/75-6.1, chambre à air 8.5 x 2.0)",
+        "foldable": true,
+        "wheel_inches": 8.5,
+        "source_image_urls": [
+          "https://www.kingsong-store.com/1088-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+          "https://www.urban-elec.com/wp-content/uploads/2026/03/61zx4frS3GL._AC_SL1500_.jpg",
+          "https://www.green220.com/6916-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg"
+        ],
+        "brake_type": "drum_front_ebs_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 18,
+        "description": "La Kingsong KS-E1 est une trottinette électrique compacte équipée d'un moteur de 350 W (pointe 500 à 550 W) et d'une batterie de 37 V / 7,8 Ah (288 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus à chambre à air de 8,5 pouces avec amortisseur avant, et freine grâce à un frein à tambour combiné à un frein électronique E-ABS. Sa vitesse est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kingsong KS-E1 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kingsong KS-E1 : plaquettes, chargeurs 37V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kingsong ks-e1, pieces kingsong ks-e1, disque frein kingsong ks-e1, plaquettes kingsong ks-e1, pneu kingsong ks-e1"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+          "type": "revendeur",
+          "url2": "https://www.mobilityurban.fr/marque/trottinette-kingsong/trottinette-electrique-kingsong-e.html"
+        },
+        "suspension": {
+          "url": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://kingsongeurope.com/product/front-wheel-with-tyres-e1/",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+          "type": "distributeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.kingsong-store.com/1088-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://kingsongeurope.com/product/kingsong-e1/",
+          "type": "distributeur"
+        },
+        "tire_family": {
+          "url": "https://kingsongeurope.com/product/kingsong-e1/",
+          "type": "distributeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 16.5,
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_url_2": "https://www.mobilityurban.fr/marque/trottinette-kingsong/trottinette-electrique-kingsong-e.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 37,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 7.8,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 350,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 25,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_type": "constructeur"
+          },
+          "range_km": {
+            "value": 25,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_url_2": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 8.5,
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_url_2": "https://www.kingsong.com/products/e1kse?shpxid=1eb8d721-df29-4f8f-b74d-174df6e0e334",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": "8.5 x 2.0 (pneu Wanda A5001 50/75-6.1, chambre à air 8.5 x 2.0)",
+            "source_url": "https://kingsongeurope.com/product/front-wheel-with-tyres-e1/",
+            "source_url_2": null,
+            "source_type": "constructeur"
+          },
+          "suspension": {
+            "value": "Suspension avant (amortisseur)",
+            "source_url": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "source_url_2": "https://www.mobilityurban.fr/marque/trottinette-kingsong/trottinette-electrique-kingsong-e.html",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_url_2": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "source_type": "distributeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kingsong KS-E1 est une trottinette électrique compacte équipée d'un moteur de 350 W (pointe 500 à 550 W) et d'une batterie de 37 V / 7,8 Ah (288 Wh) pour une autonomie annoncée jusqu'à 25 km. Elle roule sur des pneus à chambre à air de 8,5 pouces avec amortisseur avant, et freine grâce à un frein à tambour combiné à un frein électronique E-ABS. Sa vitesse est bridée à 25 km/h pour la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "source_url_2": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.kingsong-store.com/en/e-scooters/327-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html",
+            "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "https://www.green220.com/en/e-scooters/1922-electric-scooter-kingsong-ks-e1-37-v-78-ah-3701522012881.html"
+          ],
+          "_og_images": [
+            "https://www.kingsong-store.com/1088-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+            "https://www.urban-elec.com/wp-content/uploads/2026/03/61zx4frS3GL._AC_SL1500_.jpg",
+            "https://www.green220.com/6916-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_ebs_rear",
+            "source_url": "https://kingsongeurope.com/product/kingsong-e1/",
+            "source_url_2": "https://mazrider.com/en/products/trottinette-electrique-king-song-e1",
+            "source_type": "distributeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://kingsongeurope.com/product/kingsong-e1/",
+            "source_url_2": "https://www.urban-elec.com/trottinette-electrique-kingsong-ks-e1-adulte-noir-batterie-37-v-78-ah-autonomie-jusqua-25-km-legere-pratique-et-pliable/",
+            "source_type": "distributeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kingsong KS-N15",
+        "slug": "kingsong-ks-n15",
+        "voltage": 37,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 35,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 22,
+        "suspension": "Double suspension avant et arrière",
+        "ip_rating": "IPX4",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.freemoov.com/web/image/product.template/2051/image_1024?unique=3e2bb57"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kingsong N15 est une trottinette électrique pliable équipée d'un moteur de 500 W (pic à 750 W), d'une batterie 37 V 10,4 Ah (384,8 Wh) et de roues de 10 pouces avec double suspension avant et arrière. Le freinage associe un frein à tambour avant, un frein à disque arrière et un EABS, pour une autonomie annoncée jusqu'à 35 km et une vitesse bridée à 25 km/h sur voie publique (jusqu'à 35 km/h en terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kingsong KS-N15 - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kingsong KS-N15 : plaquettes, chargeurs 37V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kingsong ks-n15, pieces kingsong ks-n15, disque frein kingsong ks-n15, plaquettes kingsong ks-n15, pneu kingsong ks-n15"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://kingsongeurope.com/product/kingsong-n15/",
+          "type": "distributeur"
+        },
+        "amperage": {
+          "url": "https://kingsongeurope.com/product/kingsong-n15/",
+          "type": "distributeur"
+        },
+        "power_watts": {
+          "url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+          "type": "constructeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://kingsongeurope.com/product/kingsong-n15/",
+          "type": "revendeur",
+          "url2": "https://liftyelectric.com/products/kingsong-n15-electric-scooter"
+        },
+        "suspension": {
+          "url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+          "type": "constructeur"
+        },
+        "ip_rating": {
+          "url": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://kingsongeurope.com/product/kingsong-n15/",
+          "type": "distributeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.freemoov.com/web/image/product.template/2051/image_1024?unique=3e2bb57",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.kingsong.com/pages/kingsong-n15",
+          "type": "constructeur"
+        },
+        "tire_family": {
+          "url": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 22,
+            "source_url": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_url_2": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 37,
+            "source_url": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_url_2": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+            "source_type": "distributeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_url_2": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_type": "distributeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_url_2": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kingsong-n15",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 35,
+            "source_url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_url_2": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_url_2": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_url_2": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+            "source_type": "distributeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_url_2": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_type": "constructeur"
+          },
+          "ip_rating": {
+            "value": "IPX4",
+            "source_url": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+            "source_url_2": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Kingsong N15 est une trottinette électrique pliable équipée d'un moteur de 500 W (pic à 750 W), d'une batterie 37 V 10,4 Ah (384,8 Wh) et de roues de 10 pouces avec double suspension avant et arrière. Le freinage associe un frein à tambour avant, un frein à disque arrière et un EABS, pour une autonomie annoncée jusqu'à 35 km et une vitesse bridée à 25 km/h sur voie publique (jusqu'à 35 km/h en terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://kingsongeurope.com/product/kingsong-n15/",
+            "source_type": "distributeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://kingsongeurope.com/product/kingsong-n15/",
+            "https://liftyelectric.com/products/kingsong-n15-electric-scooter",
+            "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051"
+          ],
+          "_og_images": [
+            "https://www.liftyelectric.com/cdn/shop/files/liftylogojuly.jpg?v=1740097250",
+            "https://www.freemoov.com/web/image/product.template/2051/image_1024?unique=3e2bb57"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://www.kingsong.com/pages/kingsong-n15",
+            "source_url_2": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+            "source_type": "constructeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.freemoov.com/shop/jfbn15cb40030541-trottinette-electrique-kingsong-n15-2051",
+            "source_url_2": "https://www.maxblinker.com/en/electric-scooters/kingsong-n15",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Kingsong S2 Pro",
+        "slug": "kingsong-s2-pro",
+        "voltage": 60,
+        "amperage": 14.5,
+        "power_watts": 1000,
+        "max_speed_private_kmh": 50,
+        "range_km": 80,
+        "max_load_kg": 125,
+        "year": 2022,
+        "max_speed_kmh": 25,
+        "weight_kg": 23,
+        "suspension": "Avant et arrière (amortisseurs à ressort)",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+          "https://www.trottnscoot.com/wp-content/uploads/2022/06/tropttinette-electrique-kingson-s2-pro-300x300.jpg",
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png"
+        ],
+        "brake_type": "disc_unknown_actuation",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Kingsong S2 Pro est une trottinette électrique pliable équipée d'un moteur brushless de 1000 W (1440 W en crête) alimenté par une batterie lithium-ion 60 V (960 Wh annoncés selon les revendeurs), avec une autonomie annoncée de 80 km. Elle roule sur deux pneus gonflables de 10 pouces, dispose d'amortisseurs avant et arrière et d'un double frein à disque, et est bridée à 25 km/h sur voie publique (jusqu'à 50 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Kingsong S2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Kingsong S2 Pro : plaquettes, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "kingsong s2 pro, pieces kingsong s2 pro, disque frein kingsong s2 pro, plaquettes kingsong s2 pro, pneu kingsong s2 pro"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "year": {
+          "url": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur",
+          "url2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/"
+        },
+        "suspension": {
+          "url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-kingsong-s2-pro-1000w-60v-16ah.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 23,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 60,
+            "source_url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 14.5,
+            "source_url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_url_2": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 1000,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 50,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 80,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 125,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Avant et arrière (amortisseurs à ressort)",
+            "source_url": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-kingsong-s2-pro-1000w-60v-16ah.html",
+            "source_url_2": "https://www.vrooomin.com/personal-electric-vehicles/electric-scooter/the-60v-30-mph-king-song-s2-pro-n-electric-scooter-is-here/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": 2022,
+            "source_url": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "source_url_2": null,
+            "source_type": "revendeur"
+          },
+          "description_fr": {
+            "value": "La Kingsong S2 Pro est une trottinette électrique pliable équipée d'un moteur brushless de 1000 W (1440 W en crête) alimenté par une batterie lithium-ion 60 V (960 Wh annoncés selon les revendeurs), avec une autonomie annoncée de 80 km. Elle roule sur deux pneus gonflables de 10 pouces, dispose d'amortisseurs avant et arrière et d'un double frein à disque, et est bridée à 25 km/h sur voie publique (jusqu'à 50 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-kingsong-s2-pro-1000w-60v-16ah.html"
+          ],
+          "_og_images": [
+            "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+            "https://www.trottnscoot.com/wp-content/uploads/2022/06/tropttinette-electrique-kingson-s2-pro-300x300.jpg",
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "disc_unknown_actuation",
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+            "source_url_2": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

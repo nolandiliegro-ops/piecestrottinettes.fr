@@ -1,0 +1,764 @@
+{
+  "brandName": "Hikerboy",
+  "results": [
+    {
+      "scooter": {
+        "name": "Hikerboy Curtis Plus",
+        "slug": "hikerboy-curtis-plus",
+        "voltage": 48,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 19,
+        "suspension": "Suspension avant",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "https://www.out-fun.com/22109-thickbox_default/hikerboy-curtis-plus-500w-trottinette-electrique.jpg",
+          "http://www.maisondelatrott.fr/cdn/shop/files/CurtisPlus_Grey_Hikerboy_3.png?v=1751549591",
+          "https://www.freemoov.com/web/image/product.template/1653/image_1024?unique=7363ee6"
+        ],
+        "brake_type": "drum_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Hikerboy Curtis Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 10,4 Ah, pour jusqu'à 40 km d'autonomie annoncée. Elle roule sur des pneus de 10 pouces à chambre à air avec suspension avant, et freine grâce à un frein à disque arrière associé à un E-ABS ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hikerboy Curtis Plus - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hikerboy Curtis Plus : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hikerboy curtis plus, pieces hikerboy curtis plus, disque frein hikerboy curtis plus, plaquettes hikerboy curtis plus, pneu hikerboy curtis plus"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "range_km": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur",
+          "url2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html"
+        },
+        "suspension": {
+          "url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-hikerboy-curtis-plus",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "https://www.out-fun.com/22109-thickbox_default/hikerboy-curtis-plus-500w-trottinette-electrique.jpg",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+          "type": "constructeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 19,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-plus-1653",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension avant",
+            "source_url": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-hikerboy-curtis-plus",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-plus-1653",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_url_2": "https://www.maisondelatrott.fr/en/products/trottinette-electrique-hikerboy-curtis-plus",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hikerboy Curtis Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 10,4 Ah, pour jusqu'à 40 km d'autonomie annoncée. Elle roule sur des pneus de 10 pouces à chambre à air avec suspension avant, et freine grâce à un frein à disque arrière associé à un E-ABS ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_type": "constructeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "https://www.maisondelatrott.fr/en/products/trottinette-electrique-hikerboy-curtis-plus",
+            "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-plus-1653"
+          ],
+          "_og_images": [
+            "https://www.out-fun.com/22109-thickbox_default/hikerboy-curtis-plus-500w-trottinette-electrique.jpg",
+            "http://www.maisondelatrott.fr/cdn/shop/files/CurtisPlus_Grey_Hikerboy_3.png?v=1751549591",
+            "https://www.freemoov.com/web/image/product.template/1653/image_1024?unique=7363ee6"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "drum_front_disc_rear",
+            "source_url": "https://www.out-fun.com/hikerboy/4824-hikerboy-curtis-plus-500w-trottinette-electrique.html",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-plus-1653",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_url_2": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://hikerboyscooter.com/fr/pages/curtis-plus-product-specifications",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-plus-1653",
+            "source_type": "constructeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hikerboy Curtis Dual",
+        "slug": "hikerboy-curtis-dual",
+        "voltage": 48,
+        "amperage": 10.4,
+        "power_watts": 500,
+        "max_speed_private_kmh": 35,
+        "range_km": 40,
+        "max_load_kg": 100,
+        "max_speed_kmh": 25,
+        "weight_kg": 20.5,
+        "suspension": "Suspension avant à ressorts",
+        "ip_rating": "IPX5",
+        "foldable": true,
+        "wheel_inches": 10,
+        "source_image_urls": [
+          "http://www.maisondelatrott.fr/cdn/shop/files/CurtisDual_Grey_Hikerboy_13.jpg?v=1751548715",
+          "https://www.out-fun.com/22079-thickbox_default/hikerboy-curtis-dual-bi-moteur-trottinette-electrique.jpg",
+          "https://media.cdnws.com/_i/21277/fb%7B630%7D-6632/697/33/trottinette-curtis-plus.jpeg"
+        ],
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 35,
+        "description": "La Hikerboy Curtis Dual est une trottinette électrique à double motorisation (2 x 250 W, 500 W nominaux) alimentée par une batterie 48 V 10,4 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle est équipée de roues de 10 pouces à chambre à air, d'une suspension avant, d'un frein à disque arrière avec E-ABS et de clignotants avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hikerboy Curtis Dual - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hikerboy Curtis Dual : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hikerboy curtis dual, pieces hikerboy curtis dual, disque frein hikerboy curtis dual, plaquettes hikerboy curtis dual, pneu hikerboy curtis dual"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "amperage": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "power_watts": {
+          "url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "max_load_kg": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "weight_kg": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur",
+          "url2": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html"
+        },
+        "suspension": {
+          "url": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+          "type": "revendeur"
+        },
+        "ip_rating": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "foldable": {
+          "url": "https://electrotraveller.com/electric-scooters/hikerboy-curtis-dual-red/",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://hikerboyscooter.com/products/curtis-dual",
+          "type": "constructeur"
+        },
+        "source_image_urls": {
+          "url": "http://www.maisondelatrott.fr/cdn/shop/files/CurtisDual_Grey_Hikerboy_13.jpg?v=1751548715",
+          "type": "og:image fiche produit"
+        },
+        "brake_type": {
+          "url": "https://stelfia.com/en/shop/vehicules/trottinettes/hikerboy-curtis-dual/",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html",
+          "type": "revendeur"
+        }
+      },
+      "missing": [],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": true,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 20.5,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html",
+            "source_type": "constructeur"
+          },
+          "amperage": {
+            "value": 10.4,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-dual-1652",
+            "source_type": "constructeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-dual-1652",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 35,
+            "source_url": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+            "source_url_2": "https://electrotraveller.com/electric-scooters/hikerboy-curtis-dual-red/",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+            "source_type": "constructeur"
+          },
+          "max_load_kg": {
+            "value": 100,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-dual-1652",
+            "source_type": "constructeur"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": "Suspension avant à ressorts",
+            "source_url": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "source_url_2": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": "IPX5",
+            "source_url": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "source_type": "constructeur"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://electrotraveller.com/electric-scooters/hikerboy-curtis-dual-red/",
+            "source_url_2": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hikerboy Curtis Dual est une trottinette électrique à double motorisation (2 x 250 W, 500 W nominaux) alimentée par une batterie 48 V 10,4 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle est équipée de roues de 10 pouces à chambre à air, d'une suspension avant, d'un frein à disque arrière avec E-ABS et de clignotants avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+            "source_url_2": "https://hikerboyscooter.com/products/curtis-dual",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://www.maisondelatrott.fr/products/trottinette-electrique-hikerboy-curtis-dual",
+            "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html"
+          ],
+          "_og_images": [
+            "http://www.maisondelatrott.fr/cdn/shop/files/CurtisDual_Grey_Hikerboy_13.jpg?v=1751548715",
+            "https://www.out-fun.com/22079-thickbox_default/hikerboy-curtis-dual-bi-moteur-trottinette-electrique.jpg",
+            "https://media.cdnws.com/_i/21277/fb%7B630%7D-6632/697/33/trottinette-curtis-plus.jpeg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://stelfia.com/en/shop/vehicules/trottinettes/hikerboy-curtis-dual/",
+            "source_url_2": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-curtis-dual-1652",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-curtis-double-moteur.html",
+            "source_url_2": "https://www.out-fun.com/hikerboy/4823-hikerboy-curtis-dual-bi-moteur-trottinette-electrique.html",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    },
+    {
+      "scooter": {
+        "name": "Hikerboy Off Road 3 roues",
+        "slug": "hikerboy-off-road-3-roues",
+        "voltage": 48,
+        "amperage": 18,
+        "power_watts": 500,
+        "max_speed_private_kmh": 40,
+        "range_km": 40,
+        "max_load_kg": 120,
+        "max_speed_kmh": 25,
+        "weight_kg": 27,
+        "suspension": "Double suspension avant et arrière",
+        "tire_size": "10\" à l'avant, 2 x 6\" à l'arrière",
+        "foldable": true,
+        "wheel_inches": 10,
+        "brake_type": "ebs_front_disc_rear",
+        "tire_family": "pneumatic",
+        "score_offroad": 40,
+        "description": "La Hikerboy Off Road 3 roues (Off Road 2) est équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 18 Ah, pour une autonomie annoncée d'environ 40 km. Elle roule sur un pneu de 10 pouces à l'avant et deux pneus de 6 pouces à l'arrière, avec double suspension et freins à disque avant et arrière avec eABS. Sa vitesse est limitée à 25 km/h et peut atteindre 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+        "meta_title": "Hikerboy Off Road 3 roues - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Hikerboy Off Road 3 roues : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "hikerboy off road 3 roues, pieces hikerboy off road 3 roues, disque frein hikerboy off road 3 roues, plaquettes hikerboy off road 3 roues, pneu hikerboy off road 3 roues"
+      },
+      "sources": {
+        "voltage": {
+          "url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+          "type": "revendeur"
+        },
+        "amperage": {
+          "url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+          "type": "revendeur"
+        },
+        "power_watts": {
+          "url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+          "type": "revendeur"
+        },
+        "max_speed_private_kmh": {
+          "url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+          "type": "revendeur"
+        },
+        "range_km": {
+          "url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+          "type": "revendeur"
+        },
+        "max_load_kg": {
+          "url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+          "type": "revendeur"
+        },
+        "weight_kg": {
+          "url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+          "type": "revendeur",
+          "url2": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html"
+        },
+        "suspension": {
+          "url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+          "type": "revendeur"
+        },
+        "tire_size": {
+          "url": "https://www.techni-contact.com/produits/6705-79142121-trottinette-electrique-hikerboy-tout-terrain-avec-siege-vitesse-5-a-40-km-h-autonomie-40-km.html",
+          "type": "revendeur"
+        },
+        "foldable": {
+          "url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+          "type": "revendeur"
+        },
+        "wheel_inches": {
+          "url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+          "type": "revendeur"
+        },
+        "brake_type": {
+          "url": "https://www.roule-coco.fr/products/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-avec-siege-tout-terrain-off-road-3-roues-hikerboy",
+          "type": "revendeur"
+        },
+        "tire_family": {
+          "url": "https://euromarketshop.com/produit/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-tout-terran-off-road-3-roues-hikerboys/",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": 27,
+            "source_url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "source_url_2": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_type": "revendeur"
+          },
+          "voltage": {
+            "value": 48,
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_url_2": "https://www.techni-contact.com/produits/6705-79142121-trottinette-electrique-hikerboy-tout-terrain-avec-siege-vitesse-5-a-40-km-h-autonomie-40-km.html",
+            "source_type": "revendeur"
+          },
+          "amperage": {
+            "value": 18,
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_url_2": "https://www.weeslide.ma/products/trottinette-electrique-hikerboy-off-road",
+            "source_type": "revendeur"
+          },
+          "power_watts": {
+            "value": 500,
+            "source_url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "source_url_2": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_type": "revendeur"
+          },
+          "max_speed_private_kmh": {
+            "value": 40,
+            "source_url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "source_url_2": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_type": "revendeur"
+          },
+          "range_km": {
+            "value": 40,
+            "source_url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "source_url_2": "https://www.weeslide.ma/products/trottinette-electrique-hikerboy-off-road",
+            "source_type": "revendeur"
+          },
+          "max_load_kg": {
+            "value": 120,
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_url_2": "https://www.pmr-france.com/trottinette-electrique-assis-hikerboy-3-roues-tout-terrain",
+            "source_type": "revendeur"
+          },
+          "wheel_inches": {
+            "value": 10,
+            "source_url": "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "source_url_2": "https://www.techni-contact.com/produits/6705-79142121-trottinette-electrique-hikerboy-tout-terrain-avec-siege-vitesse-5-a-40-km-h-autonomie-40-km.html",
+            "source_type": "revendeur"
+          },
+          "tire_size": {
+            "value": "10\" à l'avant, 2 x 6\" à l'arrière",
+            "source_url": "https://www.techni-contact.com/produits/6705-79142121-trottinette-electrique-hikerboy-tout-terrain-avec-siege-vitesse-5-a-40-km-h-autonomie-40-km.html",
+            "source_url_2": "https://www.roule-coco.fr/products/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-avec-siege-tout-terrain-off-road-3-roues-hikerboy-1",
+            "source_type": "revendeur"
+          },
+          "suspension": {
+            "value": "Double suspension avant et arrière",
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_url_2": "https://www.roule-coco.fr/products/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-avec-siege-tout-terrain-off-road-3-roues-hikerboy-1",
+            "source_type": "revendeur"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": true,
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_url_2": "https://www.gyro-phare.com/produit/trottinette-electrique-hikerboy-off-road-2/",
+            "source_type": "revendeur"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": "La Hikerboy Off Road 3 roues (Off Road 2) est équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 18 Ah, pour une autonomie annoncée d'environ 40 km. Elle roule sur un pneu de 10 pouces à l'avant et deux pneus de 6 pouces à l'arrière, avec double suspension et freins à disque avant et arrière avec eABS. Sa vitesse est limitée à 25 km/h et peut atteindre 40 km/h sur terrain privé. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+            "source_url": "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "source_type": "revendeur"
+          },
+          "image_urls": [],
+          "product_page_urls": [
+            "https://speedbikes.fr/produit/trottinette-a-3-roues-hikerboy-off-road-2/",
+            "https://zetrottstore.com/produits/5681-hikerboy-off-road-2-3-roues-2044837862644.html",
+            "https://www.gyro-phare.com/produit/trottinette-electrique-hikerboy-off-road-2/"
+          ],
+          "_og_images": [
+            "https://speedbikes.fr/wp-content/uploads/2022/06/logo-speedbikes.png",
+            "https://zetrottstore.com/produits/index_assets/images/spaceman-banner.jpg"
+          ]
+        },
+        "keys": {
+          "brake_type": {
+            "value": "ebs_front_disc_rear",
+            "source_url": "https://www.roule-coco.fr/products/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-avec-siege-tout-terrain-off-road-3-roues-hikerboy",
+            "source_url_2": "https://www.anibis.ch/fr/d-sant%C3%A9-beaut%C3%A9-wellness-~-bien-%C3%AAtre-appareils-m%C3%A9dicaux--2603/trottinette-%C3%A9lectrique-tout-terrain-offroad-3roues-hikerboy--25863275.aspx",
+            "source_type": "revendeur"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": "pneumatic",
+            "source_url": "https://euromarketshop.com/produit/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-tout-terran-off-road-3-roues-hikerboys/",
+            "source_url_2": "https://www.roule-coco.fr/products/trottinette-electrique-pour-personne-a-mobilite-reduite-pmr-avec-siege-tout-terrain-off-road-3-roues-hikerboy-1",
+            "source_type": "revendeur"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}

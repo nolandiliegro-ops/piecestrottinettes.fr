@@ -1,0 +1,174 @@
+{
+  "brandName": "Laotie",
+  "results": [
+    {
+      "scooter": {
+        "name": "Laotie ES19 Pro",
+        "slug": "laotie-es19-pro",
+        "max_speed_kmh": 25,
+        "caliper_family": "jak_5",
+        "score_offroad": 18,
+        "meta_title": "Laotie ES19 Pro - Pièces détachées | PiècesTrottinettes.fr",
+        "meta_description": "Pièces détachées Laotie ES19 Pro : plaquettes. Compatibilité vérifiée, livraison rapide.",
+        "search_terms": "laotie es19 pro, pieces laotie es19 pro, disque frein laotie es19 pro, plaquettes laotie es19 pro, pneu laotie es19 pro"
+      },
+      "sources": {
+        "caliper_family": {
+          "url": "https://piecestrottinettes.fr",
+          "type": "revendeur"
+        }
+      },
+      "missing": [
+        "weight_kg",
+        "brake_type",
+        "source_image_urls"
+      ],
+      "discMissing": [
+        "disc_diameter",
+        "disc_pcd",
+        "disc_holes"
+      ],
+      "wheelMissing": [
+        "rim_diameter",
+        "tire_section"
+      ],
+      "notInt": [],
+      "toValidate": [],
+      "offVocab": [],
+      "proposals": [],
+      "unconfirmed": [],
+      "ready": false,
+      "raw": {
+        "specs": {
+          "weight_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu",
+            "source_url_2": null
+          },
+          "voltage": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "amperage": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "power_watts": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "max_speed_private_kmh": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "range_km": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "max_load_kg": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "wheel_inches": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_size": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "suspension": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "ip_rating": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "foldable": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "year": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "description_fr": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "image_urls": [],
+          "product_page_urls": [],
+          "_og_images": []
+        },
+        "keys": {
+          "brake_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_pcd": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "disc_holes": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "caliper_family": {
+            "value": "jak_5",
+            "source_url": "https://piecestrottinettes.fr",
+            "source_type": "revendeur",
+            "source_url_2": null
+          },
+          "tire_section": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_diameter": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "rim_type": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "tire_family": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          },
+          "solid_conversion": {
+            "value": null,
+            "source_url": null,
+            "source_type": "inconnu"
+          }
+        }
+      }
+    }
+  ]
+}
