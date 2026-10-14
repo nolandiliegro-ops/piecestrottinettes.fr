@@ -2,35 +2,6 @@
   "brandName": "Apollo",
   "scooters": [
     {
-      "name": "Apollo Phantom 2.0",
-      "slug": "apollo-phantom-2-0",
-      "voltage": 52,
-      "amperage": 27,
-      "power_watts": 3500,
-      "max_speed_private_kmh": 70,
-      "range_km": 80,
-      "max_load_kg": 149.7,
-      "year": 2025,
-      "max_speed_kmh": 25,
-      "weight_kg": 46.3,
-      "suspension": "Double ressort (avant et arrière)",
-      "ip_rating": "IP66",
-      "tire_size": "11 x 4 pouces (tubeless auto-réparant PunctureGuard)",
-      "foldable": false,
-      "wheel_inches": 11,
-      "source_image_urls": [
-        "http://apolloscooters.ca/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1781350529&width=2048",
-        "https://www.ecraft-shop.de/media/65/12/dc/1748248571/Apollo%20Phantom%202.0.png?ts=1748248571"
-      ],
-      "brake_type": "disc_mechanical",
-      "tire_family": "pneumatic",
-      "score_offroad": 50,
-      "description": "L'Apollo Phantom 2.0 (version 52V) est une trottinette électrique à double moteur de 1 750 W (3 500 W de puissance crête cumulée), alimentée par une batterie 52V 27Ah d'environ 1 400 Wh pour une autonomie annoncée jusqu'à 80 km. Elle est équipée de pneus tubeless auto-réparants de 11 x 4 pouces, d'une suspension à double ressort et de freins à double disque avec freinage régénératif, avec une vitesse de pointe constructeur de 70 km/h sur terrain privé (bridée à 25 km/h sur voie publique en France). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
-      "meta_title": "Apollo Phantom 2.0 - Pièces détachées | PiècesTrottinettes.fr",
-      "meta_description": "Pièces détachées Apollo Phantom 2.0 : plaquettes, chargeurs 52V. Compatibilité vérifiée, livraison rapide.",
-      "search_terms": "apollo phantom 2.0, pieces apollo phantom 2.0, disque frein apollo phantom 2.0, plaquettes apollo phantom 2.0, pneu apollo phantom 2.0"
-    },
-    {
       "name": "Apollo Explore 2.0",
       "slug": "apollo-explore-2-0",
       "voltage": 48,
