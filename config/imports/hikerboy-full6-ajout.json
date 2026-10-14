@@ -1,0 +1,60 @@
+{
+  "brandName": "Hikerboy",
+  "scooters": [
+    {
+      "name": "Hikerboy Curtis Plus",
+      "slug": "hikerboy-curtis-plus",
+      "voltage": 48,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 19,
+      "suspension": "Suspension avant",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.out-fun.com/22109-thickbox_default/hikerboy-curtis-plus-500w-trottinette-electrique.jpg",
+        "https://www.maisondelatrott.fr/cdn/shop/files/CurtisPlus_Grey_Hikerboy_3.png?v=1751549591",
+        "https://www.freemoov.com/web/image/product.template/1653/image_1024?unique=7363ee6"
+      ],
+      "brake_type": "drum_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Hikerboy Curtis Plus est une trottinette électrique pliable équipée d'un moteur brushless de 500 W et d'une batterie lithium 48 V 10,4 Ah, pour jusqu'à 40 km d'autonomie annoncée. Elle roule sur des pneus de 10 pouces à chambre à air avec suspension avant, et freine grâce à un frein à disque arrière associé à un E-ABS ; sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hikerboy Curtis Plus - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hikerboy Curtis Plus : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hikerboy curtis plus, pieces hikerboy curtis plus, disque frein hikerboy curtis plus, plaquettes hikerboy curtis plus, pneu hikerboy curtis plus"
+    },
+    {
+      "name": "Hikerboy Curtis Dual",
+      "slug": "hikerboy-curtis-dual",
+      "voltage": 48,
+      "amperage": 10.4,
+      "power_watts": 500,
+      "max_speed_private_kmh": 35,
+      "range_km": 40,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 20.5,
+      "suspension": "Suspension avant à ressorts",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.maisondelatrott.fr/cdn/shop/files/CurtisDual_Grey_Hikerboy_13.jpg?v=1751548715",
+        "https://www.out-fun.com/22079-thickbox_default/hikerboy-curtis-dual-bi-moteur-trottinette-electrique.jpg",
+        "https://media.cdnws.com/_i/21277/fb%7B630%7D-6632/697/33/trottinette-curtis-plus.jpeg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Hikerboy Curtis Dual est une trottinette électrique à double motorisation (2 x 250 W, 500 W nominaux) alimentée par une batterie 48 V 10,4 Ah, pour une autonomie annoncée jusqu'à 40 km. Elle est équipée de roues de 10 pouces à chambre à air, d'une suspension avant, d'un frein à disque arrière avec E-ABS et de clignotants avant et arrière ; sa vitesse est bridée à 25 km/h sur voie publique (jusqu'à 35 km/h sur terrain privé). Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hikerboy Curtis Dual - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hikerboy Curtis Dual : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hikerboy curtis dual, pieces hikerboy curtis dual, disque frein hikerboy curtis dual, plaquettes hikerboy curtis dual, pneu hikerboy curtis dual"
+    }
+  ]
+}

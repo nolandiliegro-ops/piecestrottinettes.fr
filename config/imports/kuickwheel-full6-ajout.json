@@ -1,0 +1,60 @@
+{
+  "brandName": "Kuickwheel",
+  "scooters": [
+    {
+      "name": "Kuickwheel S9",
+      "slug": "kuickwheel-s9",
+      "voltage": 36,
+      "amperage": 15.6,
+      "power_watts": 500,
+      "max_speed_private_kmh": 25,
+      "range_km": 65,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 23,
+      "suspension": "Avant et arrière (fourche avant suspendue + double suspension arrière)",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.maisondelatrott.fr/cdn/shop/files/TeverunFighterSupreme.webp?v=1751538888",
+        "https://lecyclenantais.fr/wp-content/uploads/2024/10/KUICKWHEELS9-TROTTINETTE-KUICKWHEEL-S9-36V-156-Ah.jpg"
+      ],
+      "brake_type": "disc_front_drum_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Kuickwheel S9 est une trottinette électrique pliable équipée d'un moteur de 500 W nominal (750 W en pointe) et d'une batterie 36V 15,6Ah annoncée jusqu'à 65 km d'autonomie. Elle roule sur des pneus gonflables de 10 pouces, avec suspensions avant et arrière, freinage à disque à l'avant et à tambour à l'arrière, et une vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kuickwheel S9 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kuickwheel S9 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kuickwheel s9, pieces kuickwheel s9, disque frein kuickwheel s9, plaquettes kuickwheel s9, pneu kuickwheel s9"
+    },
+    {
+      "name": "Kuickwheel F1",
+      "slug": "kuickwheel-f1",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 350,
+      "max_speed_private_kmh": 25,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 16,
+      "suspension": "Suspension avant",
+      "ip_rating": "IPX5",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/5229782320.jpg",
+        "https://turnshop.fr/cdn/shop/files/kuickwheel-f1.jpg?v=1767362743",
+        "https://fixmytrott.com/cdn/shop/files/KUICKWHEELF1_TROTTINETTEKUICKWHEELF136V7_8Ah.jpg?v=1778323369"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Kuickwheel F1 est une trottinette électrique urbaine équipée d'un moteur de 350 W (650 W en pointe) et d'une batterie 36V 7,8Ah offrant jusqu'à 30 km d'autonomie. Elle roule sur des pneus de 10 pouces avec chambre à air, freine par tambour à l'avant et E-ABS à l'arrière, pèse 16 kg et supporte 120 kg, avec une vitesse bridée à 25 km/h et une étanchéité IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kuickwheel F1 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kuickwheel F1 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kuickwheel f1, pieces kuickwheel f1, disque frein kuickwheel f1, plaquettes kuickwheel f1, pneu kuickwheel f1"
+    }
+  ]
+}
