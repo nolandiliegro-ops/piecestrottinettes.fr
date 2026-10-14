@@ -39,18 +39,21 @@ jobs:
           umask 077
           printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
       - name: Import fichier par fichier
+        shell: bash
         run: |
+          set +e
           mkdir -p /tmp/imp
           while read -r f; do
             [ -z "$f" ] && continue
             node scripts/sync-scooters.js --file "config/imports/$f" --allow-missing-keys --publish > "/tmp/imp/$f.log" 2>&1; code=$?
-            ins=$(grep -oP 'Insérés : \K\d+' "/tmp/imp/$f.log" | paste -sd+ | bc 2>/dev/null || echo 0)
+            ins=$(grep -oP 'Insérés : \K\d+' "/tmp/imp/$f.log" | awk '{s+=$1} END{print s+0}')
             pub=$(grep -c ' : publié$' "/tmp/imp/$f.log")
             draft=$(grep -c 'reste brouillon' "/tmp/imp/$f.log")
-            imgerr=$(grep -oP 'Images : \d+ ok, \K\d+' "/tmp/imp/$f.log" | paste -sd+ | bc 2>/dev/null || echo 0)
+            imgerr=$(grep -oP 'Images : \d+ ok, \K\d+' "/tmp/imp/$f.log" | awk '{s+=$1} END{print s+0}')
             err=$(grep -c '✗' "/tmp/imp/$f.log")
             echo "::notice title=import $f::EXIT=$code · inseres=$ins · publies=$pub · brouillons=$draft · erreurs_image=$imgerr · lignes_erreur=$err"
             grep '✗' "/tmp/imp/$f.log" | head -15 | sed "s/^/::warning title=$f::/"
+            if [ "$code" != "0" ]; then tail -n 12 "/tmp/imp/$f.log" | grep -v -i 'secret\|bearer\|eyJ' | sed "s/^/::warning title=$f fin du log::/"; fi
           done < config/imports/_lot-auto.txt
       - name: Nettoyage
         if: always()
