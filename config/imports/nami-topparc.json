@@ -1,0 +1,70 @@
+{
+  "brandName": "Nami",
+  "scooters": [
+    {
+      "name": "Nami Burn-E 2",
+      "slug": "nami-burn-e-2",
+      "voltage": 72,
+      "amperage": 28,
+      "power_watts": 2000,
+      "max_speed_private_kmh": 25,
+      "range_km": 80,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 47,
+      "suspension": "hydraulique réglable avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "90/65-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://fluidfreeride.com/cdn/shop/files/11_c7185ba5-dde3-4968-aba3-cb9fb8729599_800x.jpg?v=1698854688",
+        "https://www.inrevolta.com/14001-home_default/electric-scooter-nami-burn-e-2.jpg"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "Trottinette électrique Nami Burn-E 2 : deux moteurs de 1000 W, batterie 72 V / 28 Ah pour jusqu'à 80 km d'autonomie, pneus 11\" tubeless 90/65-6.5, freins à disque hydrauliques 160 mm et suspensions hydrauliques réglables, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Nami Burn-E 2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Nami Burn-E 2 : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 72V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "nami burn-e 2, pieces nami burn-e 2, disque frein nami burn-e 2, plaquettes nami burn-e 2, pneu nami burn-e 2",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    },
+    {
+      "name": "Nami Klima Max",
+      "slug": "nami-klima-max",
+      "voltage": 60,
+      "amperage": 30,
+      "power_watts": 2000,
+      "max_speed_private_kmh": 25,
+      "range_km": 120,
+      "max_load_kg": 110,
+      "max_speed_kmh": 25,
+      "weight_kg": 38,
+      "suspension": "hydrauliques KKE réglables avant et arrière",
+      "ip_rating": "IPX5",
+      "tire_size": "10x3.00-6 tubeless",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.speedwayridersnyc.com/wp-content/uploads/2026/03/Nami_Klima_Max_003.webp"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 140,
+      "rim_diameter": "6",
+      "tire_section": "10x3.00",
+      "tire_family": "pneumatic",
+      "score_offroad": 43,
+      "description": "Trottinette électrique Nami Klima Max : deux moteurs de 1000 W, batterie 60 V / 30 Ah (1800 Wh) pour jusqu'à 120 km d'autonomie à 25 km/h, pneus tubeless, freins à disque hydrauliques Logan 140 mm et suspensions hydrauliques KKE réglables, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Nami Klima Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Nami Klima Max : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "nami klima max, pieces nami klima max, disque frein nami klima max, plaquettes nami klima max, pneu nami klima max",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "brandName": "NIU",
+  "scooters": [
+    {
+      "name": "NIU KQi1 Pro",
+      "slug": "niu-kqi1-pro",
+      "voltage": 48,
+      "amperage": 5.1,
+      "power_watts": 250,
+      "max_speed_private_kmh": 25,
+      "range_km": 25,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 15.4,
+      "suspension": "aucune",
+      "ip_rating": "IP54",
+      "tire_size": "9x2.3 (229x60 mm) pneumatique à chambre",
+      "foldable": true,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "https://shopeu.niu.com/cdn/shop/files/K1_Pro_gray-2.webp?v=1726026282",
+        "https://img.pccomponentes.com/articles/1073/10739092/1625-niu-kqi1-pro-patinete-electrico-9-250w-gris.jpg",
+        "https://thumb.pccomponentes.com/w-530-530/articles/1073/10739092/2315-niu-kqi1-pro-patinete-electrico-9-250w-gris-comprar.jpg"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 25,
+      "description": "La NIU KQi1 Pro (version européenne) est propulsée par un moteur arrière de 250 W (450 W en pointe) et une batterie 48 V de 243 Wh. Elle roule sur des pneus gonflables 9x2.3 à chambre à air, freine par tambour avant et frein régénératif arrière, et est limitée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "NIU KQi1 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées NIU KQi1 Pro : plaquettes, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "niu kqi1 pro, pieces niu kqi1 pro, disque frein niu kqi1 pro, plaquettes niu kqi1 pro, pneu niu kqi1 pro"
+    }
+  ]
+}

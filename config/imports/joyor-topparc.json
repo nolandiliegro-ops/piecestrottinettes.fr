@@ -1,0 +1,36 @@
+{
+  "brandName": "Joyor",
+  "scooters": [
+    {
+      "name": "Joyor S5",
+      "slug": "joyor-s5",
+      "voltage": 48,
+      "amperage": 13,
+      "power_watts": 500,
+      "max_speed_private_kmh": 25,
+      "range_km": 55,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 22.1,
+      "suspension": "avant et arrière",
+      "tire_size": "10x3 pneumatique (chambre à air)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://img.staticdj.com/5ba52d3a5222c18bb651d43390150de8.jpg",
+        "https://img.staticdj.com/010b5c7355a77cb25531e85910bd2918_650x.jpg"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 120,
+      "disc_holes": 6,
+      "tire_section": "10x3.00",
+      "tire_family": "pneumatic",
+      "score_offroad": 43,
+      "description": "La Joyor S5 dispose d'un moteur de 500 W et d'une batterie 48 V 13 Ah (624 Wh) annoncée jusqu'à 55 km d'autonomie. Elle roule sur des pneus gonflables tout-terrain de 10 pouces, freine par des disques avant et arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Joyor S5 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Joyor S5 : disque de frein 120 mm 6 trous, plaquettes, pneus 10x3.00, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "joyor s5, pieces joyor s5, disque frein joyor s5, plaquettes joyor s5, pneu joyor s5",
+      "disc_pcd": 44
+    }
+  ]
+}

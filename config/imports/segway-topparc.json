@@ -1,0 +1,35 @@
+{
+  "brandName": "Segway",
+  "scooters": [
+    {
+      "name": "Segway Ninebot Max G3",
+      "slug": "segway-ninebot-max-g3",
+      "amperage": 12.8,
+      "power_watts": 700,
+      "max_speed_private_kmh": 45,
+      "range_km": 80,
+      "max_load_kg": 130,
+      "max_speed_kmh": 25,
+      "weight_kg": 24.3,
+      "suspension": "hydraulique avant et arrière, réglable",
+      "ip_rating": "IPX6",
+      "tire_size": "11 pouces tubeless autocicatrisant (70/60-7.5)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://shop.segway.com/media/catalog/product/cache/7800bb778a954cb4c97ef3c76a1a4610/2/_/2_10_5.png",
+        "https://www.electricscooterguides.com/images/scooters/segway-ninebot-max-g3.png"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 120,
+      "rim_diameter": "7.5",
+      "tire_section": "70/60",
+      "tire_family": "pneumatic",
+      "score_offroad": 50,
+      "description": "La Segway Ninebot Max G3 associe un moteur arrière de 2000 W en crête à une batterie de 597 Wh annoncée pour 80 km d'autonomie. Elle roule sur des pneus tubeless autocicatrisants de 11 pouces, avec double suspension hydraulique et freins à disque avant et arrière. Sa vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Segway Ninebot Max G3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Segway Ninebot Max G3 : disque de frein 120 mm, plaquettes, pneus 70/60. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "segway ninebot max g3, pieces segway ninebot max g3, disque frein segway ninebot max g3, plaquettes segway ninebot max g3, pneu segway ninebot max g3"
+    }
+  ]
+}

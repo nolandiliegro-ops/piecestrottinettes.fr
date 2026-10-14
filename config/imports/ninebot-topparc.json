@@ -1,0 +1,66 @@
+{
+  "brandName": "Ninebot",
+  "scooters": [
+    {
+      "name": "Ninebot E2 Pro",
+      "slug": "ninebot-e2-pro",
+      "voltage": 36,
+      "amperage": 7.65,
+      "power_watts": 350,
+      "max_speed_private_kmh": 25,
+      "range_km": 35,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 18.8,
+      "suspension": "aucune",
+      "ip_rating": "IPX4",
+      "tire_size": "60/70-6.5 tubeless (10 pouces)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.segwayfrance.com/cdn/shop/files/4833311029.png?v=1780406092",
+        "https://www.segwayfrance.com/cdn/shop/files/3955375254.png?v=1780406093"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "La Ninebot E2 Pro est équipée d'un moteur arrière de 350 W (750 W en pointe) et d'une batterie 36 V de 275 Wh annoncée pour 35 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec un frein à tambour avant et un frein électronique arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ninebot E2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ninebot E2 Pro : plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ninebot e2 pro, pieces ninebot e2 pro, disque frein ninebot e2 pro, plaquettes ninebot e2 pro, pneu ninebot e2 pro"
+    },
+    {
+      "name": "Ninebot E3",
+      "slug": "ninebot-e3",
+      "voltage": 36,
+      "amperage": 7.65,
+      "power_watts": 400,
+      "max_speed_private_kmh": 25,
+      "range_km": 45,
+      "max_load_kg": 100,
+      "year": 2025,
+      "max_speed_kmh": 25,
+      "weight_kg": 17.5,
+      "suspension": "double bras oscillant avant et arrière à amortisseur élastomère",
+      "ip_rating": "IPX5",
+      "tire_size": "60/70-6.5 tubeless (10 pouces, avant)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.segwayfrance.com/cdn/shop/files/e3_-2_1copy.webp?v=1769001541",
+        "https://www.segwayfrance.com/cdn/shop/files/e3_-1-123copy.webp?v=1769001541"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "60/70",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "La Ninebot E3 est propulsée par un moteur arrière de 400 W (800 W en pointe) et une batterie 36 V de 276 Wh annoncée pour 45 km d'autonomie. Elle roule sur des pneus tubeless de 10 pouces, avec une double suspension, un frein à tambour avant et un frein électronique arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Ninebot E3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Ninebot E3 : plaquettes, pneus 60/70, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "ninebot e3, pieces ninebot e3, disque frein ninebot e3, plaquettes ninebot e3, pneu ninebot e3"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "brandName": "Micro",
+  "scooters": [
+    {
+      "name": "Micro Explorer",
+      "slug": "micro-explorer",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 500,
+      "max_speed_private_kmh": 25,
+      "range_km": 30,
+      "max_load_kg": 100,
+      "year": 2021,
+      "max_speed_kmh": 25,
+      "weight_kg": 13.5,
+      "suspension": "double suspension réglable avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "200 mm caoutchouc anti-crevaison",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://www.micro-mobility.com/resources/public/lava3/media/micro-explorer-sideview.jpg"
+      ],
+      "brake_type": "ebs_front_drum_rear",
+      "score_offroad": 23,
+      "description": "Trottinette électrique Micro Explorer : moteur avant 500 W en pointe, batterie 36 V / 7,8 Ah (280 Wh, cellules LG) pour jusqu'à 30 km d'autonomie, roues 200 mm anti-crevaison, frein à tambour arrière, frein moteur et frein au pied, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Micro Explorer - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Micro Explorer : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "micro explorer, pieces micro explorer, disque frein micro explorer, plaquettes micro explorer, pneu micro explorer"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "brandName": "Kukirin",
+  "scooters": [
+    {
+      "name": "Kukirin G2 Pro",
+      "slug": "kukirin-g2-pro",
+      "voltage": 48,
+      "amperage": 15.6,
+      "power_watts": 600,
+      "max_speed_private_kmh": 45,
+      "range_km": 58,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 25,
+      "suspension": "double ressort avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "9x3.0-5.5 tubeless tout-terrain",
+      "foldable": true,
+      "wheel_inches": 9,
+      "source_image_urls": [
+        "https://www.kukirin-scooter.com/cdn/shop/files/G2_PRO_0d1ef471-888b-4574-af8d-47510014e41f.jpg?v=1790762639&width=1920",
+        "https://www.kukirin-scooter.com/cdn/shop/files/G2_Pro-V3.jpg?v=1770203215&width=1920"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 120,
+      "tire_section": "9x3.0",
+      "tire_family": "pneumatic",
+      "score_offroad": 30,
+      "description": "La Kukirin G2 Pro est équipée d'un moteur arrière de 600 W et d'une batterie 48 V 15,6 Ah annoncée jusqu'à 58 km d'autonomie. Elle roule sur des pneus tubeless tout-terrain de 9 pouces avec double suspension, freine par deux disques mécaniques de 120 mm, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kukirin G2 Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kukirin G2 Pro : disque de frein 120 mm, plaquettes, pneus 9x3.0, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kukirin g2 pro, pieces kukirin g2 pro, disque frein kukirin g2 pro, plaquettes kukirin g2 pro, pneu kukirin g2 pro",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    },
+    {
+      "name": "Kukirin S1 Max",
+      "slug": "kukirin-s1-max",
+      "voltage": 36,
+      "amperage": 10.4,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 39,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 16,
+      "suspension": "arrière à ressort",
+      "ip_rating": "IP54",
+      "tire_size": "8 pouces plein alvéolé (honeycomb)",
+      "foldable": true,
+      "wheel_inches": 8,
+      "source_image_urls": [
+        "https://www.kukirin-scooter.com/cdn/shop/files/S1_Max_2e5d3a8c-c2e3-436d-b0e2-96a316cccee5.jpg?v=1789631494&width=1920",
+        "https://www.kukirin-scooter.com/cdn/shop/files/S1_Max.jpg?v=1770203238&width=1920"
+      ],
+      "brake_type": "fender_foot_ebs",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Kukirin S1 Max est équipée d'un moteur de 350 W et d'une batterie 36 V 10,4 Ah annoncée jusqu'à 39 km d'autonomie. Elle roule sur des pneus pleins alvéolés de 8 pouces avec suspension arrière, freine par un frein électronique avant et un frein mécanique au pied sur le garde-boue arrière, et sa vitesse est bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Kukirin S1 Max - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Kukirin S1 Max : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "kukirin s1 max, pieces kukirin s1 max, disque frein kukirin s1 max, plaquettes kukirin s1 max, pneu kukirin s1 max"
+    }
+  ]
+}

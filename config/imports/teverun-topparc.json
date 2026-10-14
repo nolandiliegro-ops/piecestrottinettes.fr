@@ -1,0 +1,69 @@
+{
+  "brandName": "Teverun",
+  "scooters": [
+    {
+      "name": "Teverun Blade Mini Pro",
+      "slug": "teverun-blade-mini-pro",
+      "voltage": 48,
+      "amperage": 20.8,
+      "power_watts": 1000,
+      "max_speed_private_kmh": 50,
+      "range_km": 60,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 29,
+      "suspension": "ressorts avant et arrière",
+      "ip_rating": "IP54",
+      "tire_size": "10 x 3.0 pneumatique",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.wilsonebikes.com/cdn/shop/files/Teverun_blade_mini_pro_260604.jpg?v=1788899206"
+      ],
+      "brake_type": "disc_mechanical",
+      "disc_diameter": 140,
+      "tire_section": "10x3.00",
+      "rim_type": "demi_jante",
+      "tire_family": "pneumatic",
+      "score_offroad": 43,
+      "description": "La Teverun Blade Mini Pro dispose de deux moteurs de 500 W et d'une batterie 48 V 20,8 Ah. Elle roule sur des pneus de 10 pouces, avec suspensions à ressort et freins à disque mécaniques avant et arrière. Sa vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Teverun Blade Mini Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Teverun Blade Mini Pro : disque de frein 140 mm, plaquettes, pneus 10x3.00, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "teverun blade mini pro, pieces teverun blade mini pro, disque frein teverun blade mini pro, plaquettes teverun blade mini pro, pneu teverun blade mini pro",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    },
+    {
+      "name": "Teverun Blade GT+ II",
+      "slug": "teverun-blade-gt-plus-ii",
+      "voltage": 60,
+      "amperage": 35,
+      "power_watts": 3000,
+      "max_speed_private_kmh": 85,
+      "range_km": 120,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 44,
+      "suspension": "hydraulique réglable KKE avant et arrière",
+      "ip_rating": "IP67",
+      "tire_size": "11 pouces tubeless anti-crevaison (90/65-6.5)",
+      "foldable": true,
+      "wheel_inches": 11,
+      "source_image_urls": [
+        "https://urbanmachina.com/cdn/shop/files/gt2-5.webp?v=1764197121"
+      ],
+      "brake_type": "disc_hydraulic",
+      "disc_diameter": 160,
+      "rim_diameter": "6.5",
+      "tire_section": "90/65",
+      "tire_family": "pneumatic",
+      "score_offroad": 53,
+      "description": "La Teverun Blade GT+ II associe deux moteurs de 1500 W à une batterie Samsung 60 V 35 Ah. Elle roule sur des pneus tubeless anti-crevaison de 11 pouces, avec suspensions hydrauliques réglables KKE et freins à disque hydrauliques. Sa vitesse est bridée à 25 km/h sur la voie publique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Teverun Blade GT+ II - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Teverun Blade GT+ II : disque de frein 160 mm, plaquettes, pneus 90/65, chargeurs 60V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "teverun blade gt+ ii, pieces teverun blade gt+ ii, disque frein teverun blade gt+ ii, plaquettes teverun blade gt+ ii, pneu teverun blade gt+ ii",
+      "disc_pcd": 44,
+      "disc_holes": 6
+    }
+  ]
+}

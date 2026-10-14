@@ -1,0 +1,64 @@
+{
+  "brandName": "Inmotion",
+  "scooters": [
+    {
+      "name": "Inmotion L9",
+      "slug": "inmotion-l9",
+      "voltage": 54,
+      "amperage": 12.5,
+      "power_watts": 500,
+      "max_speed_private_kmh": 30,
+      "range_km": 80,
+      "max_load_kg": 140,
+      "max_speed_kmh": 25,
+      "weight_kg": 24,
+      "suspension": "double fourche hydraulique avant, double amortisseur à ressort arrière",
+      "ip_rating": "IP55",
+      "tire_size": "10x2.50-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.inmotion-france.com/inmov2/417-large_default/trottinette-electrique-l9.jpg",
+        "https://www.maxblinker.fr/9895-panda_thickbox_default/inmotion-l9.jpg",
+        "https://www.maxblinker.fr/9901-panda_big_default/inmotion-l9.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "L'Inmotion L9 est équipée d'un moteur avant de 500 W et d'une batterie 54 V 12,5 Ah (675 Wh). Elle roule sur des pneus tubeless de 10 pouces, freine par disque arrière et frein électronique avant, et est bridée à 25 km/h en sortie d'usine. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inmotion L9 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inmotion L9 : plaquettes, pneus 10x2.50, chargeurs 54V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inmotion l9, pieces inmotion l9, disque frein inmotion l9, plaquettes inmotion l9, pneu inmotion l9"
+    },
+    {
+      "name": "Inmotion Air",
+      "slug": "inmotion-air",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 35,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 15.8,
+      "suspension": "aucune",
+      "tire_size": "10 pouces gonflable à chambre à air (avant et arrière)",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://www.freemoov.com/web/image/18805-94816a41/Trottinette%20e%CC%81lectrique%20Inmotion%20AIR.jpg",
+        "https://eu.inmotionworld.com/cdn/shop/files/203_f1ac125d-a04e-4c1d-95b6-01df5d5593ad.png?v=1787300425",
+        "https://eu.inmotionworld.com/cdn/shop/files/INMOTION_Air_2.jpg?v=1753257666"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "L'Inmotion Air est propulsée par un moteur arrière de 350 W et une batterie 36 V 7,8 Ah (280 Wh). Elle roule sur des pneus gonflables de 10 pouces à chambre à air, freine par tambour avant et frein électronique arrière, et est bridée à 25 km/h en sortie d'usine. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Inmotion Air - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Inmotion Air : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "inmotion air, pieces inmotion air, disque frein inmotion air, plaquettes inmotion air, pneu inmotion air"
+    }
+  ]
+}

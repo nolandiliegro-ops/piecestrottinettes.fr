@@ -1,0 +1,63 @@
+{
+  "brandName": "Hiboy",
+  "scooters": [
+    {
+      "name": "Hiboy S2",
+      "slug": "hiboy-s2",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 27,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 14.47,
+      "suspension": "double amortisseur arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "8.5x2 plein alvéolé (honeycomb)",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://www.hiboy.com/cdn/shop/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg?v=1750065050&width=1200",
+        "https://www.hiboy.com/cdn/shop/products/001-4.png?v=1774941762&width=1500"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "rim_diameter": "6.1",
+      "tire_section": "8.5x2",
+      "tire_family": "solid",
+      "score_offroad": 23,
+      "description": "La Hiboy S2 embarque un moteur de 350 W (500 W en pointe) et une batterie 36 V 7,5 Ah pour environ 27 km d'autonomie. Elle roule sur des pneus pleins alvéolés de 8,5 pouces, avec un frein à disque arrière et un frein électronique, et sa vitesse est bridée à 25 km/h en Europe. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy S2 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy S2 : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy s2, pieces hiboy s2, disque frein hiboy s2, plaquettes hiboy s2, pneu hiboy s2"
+    },
+    {
+      "name": "Hiboy KS4",
+      "slug": "hiboy-ks4",
+      "voltage": 36,
+      "amperage": 7.5,
+      "power_watts": 350,
+      "max_speed_private_kmh": 30,
+      "range_km": 27,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 14.8,
+      "suspension": "arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "8.5 pouces plein alvéolé (honeycomb)",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://electricrideco.com/cdn/shop/products/1_688c0f61-dc42-4b1d-be89-d3fa43e21673_1024x1024.jpg?v=1675038145",
+        "https://electricrideco.com/cdn/shop/products/2_929477ae-4ab1-4db0-9e82-8687c9debc1f_1024x1024.jpg?v=1675038145"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "tire_family": "solid",
+      "score_offroad": 18,
+      "description": "La Hiboy KS4 est équipée d'un moteur de 350 W (500 W en pointe) et d'une batterie 36 V 7,5 Ah pour environ 27 km d'autonomie. Elle roule sur des pneus pleins alvéolés de 8,5 pouces, avec un frein à disque arrière et un frein électronique avant, et sa vitesse est bridée à 25 km/h en Europe. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Hiboy KS4 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Hiboy KS4 : plaquettes, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "hiboy ks4, pieces hiboy ks4, disque frein hiboy ks4, plaquettes hiboy ks4, pneu hiboy ks4"
+    }
+  ]
+}

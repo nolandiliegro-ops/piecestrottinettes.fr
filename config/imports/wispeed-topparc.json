@@ -1,0 +1,35 @@
+{
+  "brandName": "Wispeed",
+  "scooters": [
+    {
+      "name": "Wispeed T855",
+      "slug": "wispeed-t855",
+      "voltage": 36,
+      "amperage": 7.8,
+      "power_watts": 300,
+      "max_speed_private_kmh": 25,
+      "range_km": 30,
+      "max_load_kg": 100,
+      "max_speed_kmh": 25,
+      "weight_kg": 14.5,
+      "ip_rating": "IPX4",
+      "tire_size": "8.5x2 (50/75-6.1) pneumatique",
+      "foldable": true,
+      "wheel_inches": 8.5,
+      "source_image_urls": [
+        "https://media.ldlc.com/r1600/ld/products/00/05/99/32/LD0005993218.jpg",
+        "https://shop.cyclecure.co/cdn/shop/files/wispeed-t855-electric-scooter-cyclecure-136842.jpg?v=1746019141",
+        "https://www.logicom-europe.com/5347-large_default/wispeed-t855-t855pro.jpg"
+      ],
+      "brake_type": "ebs_front_disc_rear",
+      "rim_diameter": "6.1",
+      "tire_section": "8.5x2",
+      "tire_family": "pneumatic",
+      "score_offroad": 18,
+      "description": "Trottinette électrique Wispeed T855 : moteur avant 300 W (500 W en pointe), batterie 36 V / 7,8 Ah pour jusqu'à 30 km d'autonomie, roues 8,5\" à chambre à air, frein moteur avant et frein à disque arrière, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Wispeed T855 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Wispeed T855 : plaquettes, pneus 8.5x2, chargeurs 36V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "wispeed t855, pieces wispeed t855, disque frein wispeed t855, plaquettes wispeed t855, pneu wispeed t855"
+    }
+  ]
+}

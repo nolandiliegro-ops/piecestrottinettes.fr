@@ -1,0 +1,35 @@
+{
+  "brandName": "Pure Electric",
+  "scooters": [
+    {
+      "name": "Pure Electric Air 3",
+      "slug": "pure-electric-air-3",
+      "voltage": 37,
+      "amperage": 7.2,
+      "power_watts": 550,
+      "max_speed_private_kmh": 25,
+      "range_km": 30,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 15.9,
+      "suspension": "aucune",
+      "ip_rating": "IP65",
+      "tire_size": "10x2.50-6.5 tubeless",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://shop.cyclecure.co/cdn/shop/files/pure-electric-air-3-electric-scooter-cyclecure-281010.webp?v=1758212192&width=1445",
+        "https://shop.cyclecure.co/cdn/shop/files/pure-electric-air-3-electric-scooter-cyclecure-484077.webp?v=1758212192&width=1445"
+      ],
+      "brake_type": "drum_front_ebs_rear",
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.50",
+      "tire_family": "pneumatic",
+      "score_offroad": 35,
+      "description": "Trottinette électrique Pure Air 3 : moteur arrière 550 W en pointe, batterie 37 V / 7,2 Ah pour jusqu'à 30 km d'autonomie, pneus 10\" tubeless, frein à tambour avant et frein régénératif KERS arrière, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Pure Electric Air 3 - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Pure Electric Air 3 : plaquettes, pneus 10x2.50, chargeurs 37V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "pure electric air 3, pieces pure electric air 3, disque frein pure electric air 3, plaquettes pure electric air 3, pneu pure electric air 3"
+    }
+  ]
+}

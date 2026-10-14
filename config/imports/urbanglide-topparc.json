@@ -1,0 +1,38 @@
+{
+  "brandName": "Urbanglide",
+  "scooters": [
+    {
+      "name": "Urbanglide eCross Pro",
+      "slug": "urbanglide-ecross-pro",
+      "voltage": 48,
+      "amperage": 13,
+      "power_watts": 600,
+      "max_speed_private_kmh": 25,
+      "range_km": 50,
+      "max_load_kg": 120,
+      "max_speed_kmh": 25,
+      "weight_kg": 23,
+      "suspension": "4 suspensions avant et arrière",
+      "ip_rating": "IPX4",
+      "tire_size": "10x2.70-6.5 pneumatique off-road",
+      "foldable": true,
+      "wheel_inches": 10,
+      "source_image_urls": [
+        "https://urbanglide.com/wp-content/uploads/2022/09/RIDE-ecross-pro.png",
+        "https://urbanglide.com/wp-content/uploads/2023/12/RIDE-ecross-pro-blue.png"
+      ],
+      "brake_type": "disc_unknown_actuation",
+      "disc_diameter": 140,
+      "disc_holes": 6,
+      "rim_diameter": "6.5",
+      "tire_section": "10x2.70",
+      "tire_family": "pneumatic",
+      "score_offroad": 40,
+      "description": "Trottinette électrique Urbanglide eCross Pro : moteur arrière 600 W (800 W en pointe), batterie 48 V pour jusqu'à 50 km d'autonomie, roues 10\" off-road, deux freins à disque et quatre suspensions, vitesse bridée à 25 km/h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+      "meta_title": "Urbanglide eCross Pro - Pièces détachées | PiècesTrottinettes.fr",
+      "meta_description": "Pièces détachées Urbanglide eCross Pro : disque de frein 140 mm 6 trous, plaquettes, pneus 10x2.70, chargeurs 48V. Compatibilité vérifiée, livraison rapide.",
+      "search_terms": "urbanglide ecross pro, pieces urbanglide ecross pro, disque frein urbanglide ecross pro, plaquettes urbanglide ecross pro, pneu urbanglide ecross pro",
+      "disc_pcd": 44
+    }
+  ]
+}
