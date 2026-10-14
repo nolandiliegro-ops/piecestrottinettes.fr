@@ -1,12 +1,12 @@
 {
-  "_doc": "Passes ciblées (run-passes.mjs). Modifier ce fichier sur main = lancer UN run qui enchaîne les passes de « passes », chacune avec son plafond. go=false : rien ne part. Passes : disques, pneus, photos, prises (rien en base), seo-marques (seo/marques-ia.json, rien en base), seo-trottinettes (seo/trottinettes-ia.json, descriptions depuis le catalogue seul, rien en base), galerie (galerie/galerie-ia.json : URLs sources détourées+contrôlées dans le run, ajout au FIXE par scripts/add-gallery.js). 13/10 : relance descriptions trottinettes seules (1er essai : tool_choice refusé, 0/146).",
+  "_doc": "Passes ciblées (run-passes.mjs). Modifier ce fichier sur main = lancer UN run qui enchaîne les passes de « passes », chacune avec son plafond. go=false : rien ne part. Passes : disques, pneus, photos, prises (rien en base), seo-marques (seo/marques-ia.json, rien en base), seo-trottinettes (seo/trottinettes-ia.json, descriptions depuis le catalogue seul, rien en base), galerie (galerie/galerie-ia.json : URLs sources détourées+contrôlées dans le run, ajout au FIXE par scripts/add-gallery.js). Passe gamme (14/10) : gamme/gamme-ia.json = gamme FR complète de chaque marque publiée, pour mesurer la couverture du catalogue (rien en base). 14/10 : passe gamme seule.",
   "go": true,
   "passes": [
     {
-      "passe": "seo-trottinettes",
+      "passe": "gamme",
       "model": "claude-sonnet-5-5",
-      "max_searches": 0,
-      "plafond_tokens_run": 1500000
+      "max_searches": 3,
+      "plafond_tokens_run": 3000000
     }
   ]
 }
