@@ -212,3 +212,4 @@
 - 2026-10-14T15:08:21.066Z · Laotie · OK · 0.7 min · 290035 in / 4065 out / 12 rech · +0 prêt (dont 0 sans clé roue) · cumul run 4312022 tokens
 - 2026-10-14T15:08:23.469Z · Langfeite · ÉCHEC (code 1) · 0.0 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Cg2Lfhzwoa58km6tex69q"}
 - 2026-10-14T15:08:26.719Z · Beaster · ÉCHEC (code 1) · 0.1 min · ❌ Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Cg2Lfwhi8VysPx4mxRm4j"}
+- 2026-10-14T15:08:46.604Z · PASSE GAMME · 0/50 · 0.0 min · 0 in / 0 out / 0 rech.
