@@ -1,0 +1,57 @@
+name: Import trottinettes (sans PC)
+
+# 14/10/2026 : l'import de modèles ne dépend plus du PC de Nolan.
+# Modifier config/imports/_lot-auto.txt = lancer UN run qui importe chaque fichier listé
+# (sync-scooters.js --allow-missing-keys --publish : détourage @imgly, photos, publication si complet, retrigger compat).
+# Le .env est écrit sur le runner à partir des secrets du dépôt, jamais commité, jamais affiché.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/imports/_lot-auto.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: import-scooters
+  cancel-in-progress: false
+
+jobs:
+  importer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances (détourage)
+        run: npm install --prefix scripts --no-audit --no-fund
+      - name: Fichier .env du runner
+        env:
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+        run: |
+          if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=import::secret SUPABASE_URL ou ADMIN_BULK_SECRET absent"; exit 1; fi
+          KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
+          umask 077
+          printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
+      - name: Import fichier par fichier
+        run: |
+          mkdir -p /tmp/imp
+          while read -r f; do
+            [ -z "$f" ] && continue
+            node scripts/sync-scooters.js --file "config/imports/$f" --allow-missing-keys --publish > "/tmp/imp/$f.log" 2>&1; code=$?
+            ins=$(grep -oP 'Insérés : \K\d+' "/tmp/imp/$f.log" | paste -sd+ | bc 2>/dev/null || echo 0)
+            pub=$(grep -c ' : publié$' "/tmp/imp/$f.log")
+            draft=$(grep -c 'reste brouillon' "/tmp/imp/$f.log")
+            imgerr=$(grep -oP 'Images : \d+ ok, \K\d+' "/tmp/imp/$f.log" | paste -sd+ | bc 2>/dev/null || echo 0)
+            err=$(grep -c '✗' "/tmp/imp/$f.log")
+            echo "::notice title=import $f::EXIT=$code · inseres=$ins · publies=$pub · brouillons=$draft · erreurs_image=$imgerr · lignes_erreur=$err"
+            grep '✗' "/tmp/imp/$f.log" | head -15 | sed "s/^/::warning title=$f::/"
+          done < config/imports/_lot-auto.txt
+      - name: Nettoyage
+        if: always()
+        run: rm -f .env
