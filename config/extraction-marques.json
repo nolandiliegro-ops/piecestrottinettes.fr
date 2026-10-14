@@ -623,225 +623,200 @@
     },
     {
       "brand": "Aprilia",
-      "max_models": 2,
+      "max_models": 6,
       "out": "aprilia-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Ducati",
-      "max_models": 2,
+      "max_models": 6,
       "out": "ducati-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Jeep",
-      "max_models": 2,
+      "max_models": 6,
       "out": "jeep-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Micro",
-      "max_models": 2,
+      "max_models": 6,
       "out": "micro-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Oxelo",
-      "max_models": 2,
+      "max_models": 6,
       "out": "oxelo-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "SoFlow",
-      "max_models": 2,
+      "max_models": 6,
       "out": "soflow-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Smartgyro",
-      "max_models": 2,
+      "max_models": 6,
       "out": "smartgyro-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Cecotec",
-      "max_models": 2,
+      "max_models": 6,
       "out": "cecotec-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Kingsong",
-      "max_models": 2,
+      "max_models": 6,
       "out": "kingsong-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Halo Knight",
-      "max_models": 2,
+      "max_models": 6,
       "out": "halo-knight-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Isinwheel",
-      "max_models": 2,
+      "max_models": 6,
       "out": "isinwheel-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Kuickwheel",
-      "max_models": 2,
+      "max_models": 6,
       "out": "kuickwheel-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Hitway",
-      "max_models": 2,
+      "max_models": 6,
       "out": "hitway-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Hikerboy",
-      "max_models": 2,
+      "max_models": 6,
       "out": "hikerboy-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Beaster",
-      "max_models": 2,
+      "max_models": 6,
       "out": "beaster-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Bogist",
-      "max_models": 2,
+      "max_models": 6,
       "out": "bogist-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "DYU",
-      "max_models": 2,
+      "max_models": 6,
       "out": "dyu-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Langfeite",
-      "max_models": 2,
+      "max_models": 6,
       "out": "langfeite-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Laotie",
-      "max_models": 2,
+      "max_models": 6,
       "out": "laotie-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Ootd",
-      "max_models": 2,
+      "max_models": 6,
       "out": "ootd-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Punk",
-      "max_models": 2,
+      "max_models": 6,
       "out": "punk-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Velity",
-      "max_models": 2,
+      "max_models": 6,
       "out": "velity-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Yeep.me",
-      "max_models": 2,
+      "max_models": 6,
       "out": "yeep-me-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     },
     {
       "brand": "Zwheel",
-      "max_models": 2,
+      "max_models": 6,
       "out": "zwheel-full",
       "tier": "FULL",
-      "note": "13/10 : vague « tous les modèles » — jusqu'à 4 modèles les plus vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+      "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
     }
   ],
-  "ajout_modeles": 4,
-  "plafond_tokens_run": 12000000,
-  "arret_apres_marques_sans_gain": 3,
+  "ajout_modeles": 0,
+  "plafond_tokens_run": 15000000,
+  "arret_apres_marques_sans_gain": 4,
   "seulement": [
-    "xiaomi-top10",
-    "segway-ninebot-top10",
-    "dualtron-top10",
-    "kaabo-top10",
-    "vsett-top10",
-    "kukirin-top10",
-    "pure-top10",
-    "inokim-top10",
-    "teverun-top10",
-    "niu-top10",
-    "navee-full",
-    "zero-full",
-    "inmotion-full",
-    "speedway-full",
-    "wispeed-full",
-    "urbanglide-full",
-    "e-twow-full",
-    "engwe-full",
-    "kugoo-full",
-    "hiboy-full",
-    "iscooter-full",
-    "joyor-full",
-    "weped-full",
-    "nami-full",
-    "apollo-full",
-    "aprilia-full",
-    "ducati-full",
-    "jeep-full",
-    "micro-full",
-    "oxelo-full",
-    "soflow-full",
-    "smartgyro-full",
-    "cecotec-full",
-    "kingsong-full",
-    "halo-knight-full",
     "isinwheel-full",
-    "kuickwheel-full",
     "hitway-full",
+    "kuickwheel-full",
     "hikerboy-full",
+    "dyu-full",
+    "kingsong-full",
+    "laotie-full",
+    "langfeite-full",
     "beaster-full",
     "bogist-full",
-    "dyu-full",
-    "langfeite-full",
-    "laotie-full",
     "ootd-full",
-    "punk-full",
+    "halo-knight-full",
     "velity-full",
+    "smartgyro-full",
+    "cecotec-full",
+    "zwheel-full",
     "yeep-me-full",
-    "zwheel-full"
+    "punk-full",
+    "micro-full",
+    "soflow-full",
+    "oxelo-full",
+    "aprilia-full",
+    "ducati-full",
+    "jeep-full"
   ]
 }
