@@ -42,6 +42,7 @@ jobs:
         shell: bash
         run: |
           set +e
+          export LC_ALL=C.UTF-8
           mkdir -p /tmp/imp
           while read -r f; do
             [ -z "$f" ] && continue
@@ -53,7 +54,7 @@ jobs:
             err=$(grep -c '✗' "/tmp/imp/$f.log")
             echo "::notice title=import $f::EXIT=$code · inseres=$ins · publies=$pub · brouillons=$draft · erreurs_image=$imgerr · lignes_erreur=$err"
             grep '✗' "/tmp/imp/$f.log" | head -15 | sed "s/^/::warning title=$f::/"
-            if [ "$code" != "0" ]; then tail -n 12 "/tmp/imp/$f.log" | grep -v -i 'secret\|bearer\|eyJ' | sed "s/^/::warning title=$f fin du log::/"; fi
+            tail -n 15 "/tmp/imp/$f.log" | grep -v -i 'secret\|bearer\|eyJ' | sed "s/^/::warning title=$f fin du log::/"
           done < config/imports/_lot-auto.txt
       - name: Nettoyage
         if: always()
