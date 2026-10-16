@@ -32,7 +32,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.062,
+   "vivid": 0.061,
    "fill": 0.57
   },
   "size": [
@@ -58,7 +58,7 @@
    "fill": 0.666
   },
   "size": [
-   504,
+   505,
    546
   ],
   "error": null
@@ -115,16 +115,16 @@
   "verdict": "FAIL",
   "reasons": [
    "détourage sale / résidu de décor",
-   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
   ],
   "plus": {
    "verdict": "FAIL",
    "reasons": [
-    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
    ],
-   "parts": 5,
-   "second": 0.184,
-   "vivid": 0.054,
+   "parts": 4,
+   "second": 0.236,
+   "vivid": 0.055,
    "fill": 0.73
   },
   "size": [
@@ -151,7 +151,7 @@
   },
   "size": [
    576,
-   789
+   790
   ],
   "error": null
  },
@@ -170,9 +170,9 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
    ],
    "parts": 5,
-   "second": 0.352,
+   "second": 0.351,
    "vivid": 0.051,
-   "fill": 0.629
+   "fill": 0.636
   },
   "size": [
    1404,
@@ -287,7 +287,7 @@
    "fill": 0.801
   },
   "size": [
-   1311,
+   1312,
    1748
   ],
   "error": null
@@ -303,7 +303,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.014,
+   "vivid": 0.015,
    "fill": 0.827
   },
   "size": [
@@ -323,7 +323,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.032,
+   "vivid": 0.031,
    "fill": 0.735
   },
   "size": [
@@ -507,11 +507,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.041,
-   "fill": 0.802
+   "vivid": 0.039,
+   "fill": 0.803
   },
   "size": [
-   1334,
+   1336,
    1752
   ],
   "error": null
@@ -527,12 +527,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.055,
-   "fill": 0.746
+   "vivid": 0.053,
+   "fill": 0.822
   },
   "size": [
-   1673,
-   1756
+   1625,
+   1750
   ],
   "error": null
  },
@@ -567,12 +567,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.023,
-   "fill": 0.529
+   "vivid": 0.022,
+   "fill": 0.658
   },
   "size": [
-   1760,
-   1760
+   1512,
+   1756
   ],
   "error": null
  },
@@ -711,12 +711,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.015,
-   "fill": 0.616
+   "vivid": 0.014,
+   "fill": 0.847
   },
   "size": [
-   972,
-   972
+   807,
+   857
   ],
   "error": null
  },
@@ -731,12 +731,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.016,
-   "fill": 0.823
+   "vivid": 0.015,
+   "fill": 0.822
   },
   "size": [
    645,
-   857
+   858
   ],
   "error": null
  },
@@ -754,7 +754,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.01,
+   "vivid": 0.011,
    "fill": 0.81
   },
   "size": [
@@ -776,7 +776,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.013,
+   "vivid": 0.014,
    "fill": 0.821
   },
   "size": [
@@ -843,12 +843,12 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
    ],
    "parts": 3,
-   "second": 0.113,
-   "vivid": 0.011,
-   "fill": 0.545
+   "second": 0.115,
+   "vivid": 0.012,
+   "fill": 0.364
   },
   "size": [
-   1402,
+   1404,
    980
   ],
   "error": null
@@ -893,8 +893,8 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
    ],
    "parts": 9,
-   "second": 0.081,
-   "vivid": 0.086,
+   "second": 0.08,
+   "vivid": 0.087,
    "fill": 0.757
   },
   "size": [
@@ -1021,10 +1021,10 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.013,
-   "fill": 0.849
+   "fill": 0.844
   },
   "size": [
-   853,
+   854,
    777
   ],
   "error": null
@@ -1079,19 +1079,21 @@
   "slug": "kingsong-n15",
   "i": 1,
   "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.1.jpg",
-  "verdict": "PASS",
-  "reasons": [],
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
   "plus": {
    "verdict": "PASS",
    "reasons": [],
    "parts": 1,
    "second": 0,
    "vivid": 0.014,
-   "fill": 0.566
+   "fill": 0.843
   },
   "size": [
-   648,
-   648
+   518,
+   545
   ],
   "error": null
  },
@@ -1106,7 +1108,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.012,
+   "vivid": 0.013,
    "fill": 0.398
   },
   "size": [
@@ -1128,7 +1130,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.014,
+   "vivid": 0.013,
    "fill": 0.816
   },
   "size": [
@@ -1173,12 +1175,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.011,
-   "fill": 0.813
+   "vivid": 0.01,
+   "fill": 0.806
   },
   "size": [
    546,
-   353
+   352
   ],
   "error": null
  },
@@ -1218,12 +1220,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.014,
+   "vivid": 0.013,
    "fill": 0.816
   },
   "size": [
    647,
-   911
+   912
   ],
   "error": null
  },
@@ -1322,12 +1324,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.112,
-   "fill": 0.723
+   "vivid": 0.111,
+   "fill": 0.651
   },
   "size": [
-   1710,
-   1754
+   1760,
+   1760
   ],
   "error": null
  },
@@ -1382,7 +1384,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.093,
+   "vivid": 0.094,
    "fill": 0.653
   },
   "size": [
@@ -1560,7 +1562,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.018,
+   "vivid": 0.019,
    "fill": 0.832
   },
   "size": [
@@ -1609,8 +1611,8 @@
    "fill": 0.823
   },
   "size": [
-   546,
-   719
+   544,
+   718
   ],
   "error": null
  },
@@ -1625,7 +1627,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.02,
+   "vivid": 0.021,
    "fill": 0.429
   },
   "size": [
@@ -1774,7 +1776,7 @@
    "fill": 0.595
   },
   "size": [
-   859,
+   858,
    933
   ],
   "error": null
@@ -1966,8 +1968,8 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.257,
-   "vivid": 0.243,
+   "second": 0.258,
+   "vivid": 0.242,
    "fill": 0.843
   },
   "size": [
@@ -2007,7 +2009,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.096,
+   "vivid": 0.095,
    "fill": 0.843
   },
   "size": [
@@ -2089,11 +2091,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.108,
+   "vivid": 0.109,
    "fill": 0.842
   },
   "size": [
-   825,
+   823,
    871
   ],
   "error": null
@@ -2149,12 +2151,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.172,
+   "vivid": 0.169,
    "fill": 0.841
   },
   "size": [
-   966,
-   1032
+   968,
+   1034
   ],
   "error": null
  },
@@ -2169,12 +2171,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.139,
-   "fill": 0.509
+   "vivid": 0.138,
+   "fill": 0.811
   },
   "size": [
-   1080,
-   1080
+   700,
+   1036
   ],
   "error": null
  },
@@ -2189,7 +2191,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.139,
+   "vivid": 0.138,
    "fill": 0.603
   },
   "size": [
@@ -2209,7 +2211,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.122,
+   "vivid": 0.123,
    "fill": 0.813
   },
   "size": [
@@ -2229,12 +2231,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.13,
-   "fill": 0.819
+   "vivid": 0.128,
+   "fill": 0.478
   },
   "size": [
-   665,
-   1037
+   1080,
+   1080
   ],
   "error": null
  },
@@ -2250,11 +2252,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.139,
-   "fill": 0.579
+   "fill": 0.823
   },
   "size": [
-   1080,
-   1080
+   788,
+   1045
   ],
   "error": null
  },
@@ -2269,7 +2271,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.071,
+   "vivid": 0.072,
    "fill": 0.383
   },
   "size": [
@@ -2313,7 +2315,7 @@
    ],
    "parts": 2,
    "second": 0.268,
-   "vivid": 0.288,
+   "vivid": 0.289,
    "fill": 0.758
   },
   "size": [
@@ -2336,12 +2338,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.042,
+   "vivid": 0.043,
    "fill": 0.787
   },
   "size": [
-   521,
-   854
+   520,
+   853
   ],
   "error": null
  },
@@ -2379,7 +2381,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.16,
+   "vivid": 0.161,
    "fill": 0.838
   },
   "size": [
@@ -2405,7 +2407,7 @@
    "fill": 0.839
   },
   "size": [
-   998,
+   999,
    910
   ],
   "error": null
@@ -2421,12 +2423,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.16,
-   "fill": 0.62
+   "vivid": 0.165,
+   "fill": 0.502
   },
   "size": [
-   1145,
-   1191
+   1296,
+   1296
   ],
   "error": null
  },
@@ -2467,8 +2469,8 @@
    "fill": 0.818
   },
   "size": [
-   1261,
-   908
+   1260,
+   907
   ],
   "error": null
  },
@@ -2547,13 +2549,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.154,
-   "vivid": 0.115,
+   "second": 0.159,
+   "vivid": 0.12,
    "fill": 0.707
   },
   "size": [
    1167,
-   1194
+   1189
   ],
   "error": null
  },
@@ -2568,7 +2570,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.034,
+   "vivid": 0.033,
    "fill": 0.746
   },
   "size": [
@@ -2581,19 +2583,22 @@
   "slug": "kugoo-g4",
   "i": 5,
   "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_27c47278-e160-4fad-beab-a70fe0646649.jpg",
-  "verdict": "PASS",
-  "reasons": [],
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
   "plus": {
    "verdict": "PASS",
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.008,
-   "fill": 0.604
+   "vivid": 0.007,
+   "fill": 0.798
   },
   "size": [
-   763,
-   952
+   577,
+   951
   ],
   "error": null
  },
@@ -2610,11 +2615,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0.002,
-   "vivid": 0.022,
-   "fill": 0.683
+   "vivid": 0.024,
+   "fill": 0.688
   },
   "size": [
-   1625,
+   1627,
    1273
   ],
   "error": null
@@ -2650,7 +2655,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.005,
+   "vivid": 0.004,
    "fill": 0.843
   },
   "size": [
@@ -2670,7 +2675,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.029,
+   "vivid": 0.028,
    "fill": 0.835
   },
   "size": [
@@ -2770,12 +2775,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.013,
-   "fill": 0.432
+   "vivid": 0.012,
+   "fill": 0.815
   },
   "size": [
-   1106,
-   1106
+   668,
+   957
   ],
   "error": null
  },
@@ -2791,11 +2796,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.005,
-   "fill": 0.566
+   "fill": 0.842
   },
   "size": [
-   1106,
-   1106
+   877,
+   929
   ],
   "error": null
  },
@@ -2810,7 +2815,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.017,
+   "vivid": 0.018,
    "fill": 0.824
   },
   "size": [
@@ -2836,7 +2841,7 @@
    "fill": 0.763
   },
   "size": [
-   1054,
+   1053,
    493
   ],
   "error": null
@@ -2956,11 +2961,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.004,
-   "fill": 0.831
+   "fill": 0.671
   },
   "size": [
-   818,
-   992
+   980,
+   1029
   ],
   "error": null
  },
@@ -3043,7 +3048,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.005,
+   "vivid": 0.004,
    "fill": 0.418
   },
   "size": [
@@ -3113,11 +3118,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.007,
-   "fill": 0.676
+   "fill": 0.565
   },
   "size": [
-   966,
-   1053
+   1106,
+   1106
   ],
   "error": null
  },
@@ -3178,7 +3183,7 @@
    "fill": 0.829
   },
   "size": [
-   988,
+   987,
    797
   ],
   "error": null
@@ -3244,7 +3249,7 @@
    "fill": 0.829
   },
   "size": [
-   988,
+   987,
    797
   ],
   "error": null
@@ -3381,19 +3386,21 @@
   "slug": "kuickwheel-s9",
   "i": 3,
   "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2024/02/trottinette-electrique-kuickwheel-s9-1.jpg",
-  "verdict": "PASS",
-  "reasons": [],
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
   "plus": {
    "verdict": "PASS",
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.009,
-   "fill": 0.456
+   "vivid": 0.008,
+   "fill": 0.833
   },
   "size": [
-   864,
-   864
+   589,
+   696
   ],
   "error": null
  },

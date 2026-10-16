@@ -3,7 +3,7 @@ kingsong-e1 #1 PASS ok
 kingsong-e1 #2 WARN basse définition
 kingsong-e1 #3 WARN basse définition · cadrage serré
 kingsong-e1 #4 WARN basse définition
-kingsong-e1 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+kingsong-e1 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
 kingsong-e1 #6 WARN basse définition
 kingsong-e1 #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
 kingsong-e1 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
@@ -48,7 +48,7 @@ kingsong-n14-max #6 PASS ok
 kingsong-n14-max #7 WARN cadrage serré
 kingsong-n14-max #8 WARN cadrage serré
 kingsong-n15 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
-kingsong-n15 #1 PASS ok
+kingsong-n15 #1 WARN basse définition
 kingsong-n15 #2 PASS ok
 kingsong-n15 #3 WARN basse définition
 kingsong-n15 #4 WARN basse définition
@@ -119,7 +119,7 @@ kugoo-g4 #1 PASS ok
 kugoo-g4 #2 PASS ok
 kugoo-g4 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
 kugoo-g4 #4 PASS ok
-kugoo-g4 #5 PASS ok
+kugoo-g4 #5 WARN basse définition · cadrage serré
 kugoo-g4 #6 FAIL détourage sale / résidu de décor
 kugoo-g4 #7 PASS ok
 kugoo-g4 #8 PASS ok
@@ -157,7 +157,7 @@ kuickwheel-s1-c-pro #9 WARN basse définition · cadrage serré
 kuickwheel-s9 #0 PASS ok
 kuickwheel-s9 #1 PASS ok
 kuickwheel-s9 #2 PASS ok
-kuickwheel-s9 #3 PASS ok
+kuickwheel-s9 #3 WARN basse définition
 kuickwheel-s9 #4 ERROR Input buffer contains unsupported image format
 kuickwheel-s9 #5 ERROR Input buffer contains unsupported image format
-::notice title=photos lot10 (dry)::162 candidates · PASS 91 · WARN 48 · FAIL 21 · ERREUR 2
+::notice title=photos lot10 (dry)::162 candidates · PASS 88 · WARN 51 · FAIL 21 · ERREUR 2

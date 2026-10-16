@@ -58,7 +58,7 @@ kukirin-g3 #7 WARN cadrage serré
 kukirin-g3 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
 kukirin-g3-adventurers #0 WARN basse définition
 kukirin-g3-adventurers #1 WARN basse définition
-kukirin-g3-adventurers #2 WARN basse définition
+kukirin-g3-adventurers #2 ERROR téléchargement vide
 kukirin-g3-adventurers #3 PASS ok
 kukirin-g3-adventurers #4 WARN basse définition
 kukirin-g3-adventurers #5 WARN cadrage serré
@@ -196,4 +196,4 @@ langfeite-roadster #5 PASS ok
 langfeite-roadster #6 WARN cadrage serré
 langfeite-roadster #7 PASS ok
 langfeite-roadster #8 WARN cadrage serré
-::notice title=photos lot11 (dry)::198 candidates · PASS 90 · WARN 76 · FAIL 32 · ERREUR 0
+::notice title=photos lot11 (dry)::198 candidates · PASS 90 · WARN 75 · FAIL 32 · ERREUR 1

@@ -40,7 +40,7 @@
    ],
    "parts": 3,
    "second": 0.216,
-   "vivid": 0.032,
+   "vivid": 0.033,
    "fill": 0.83
   },
   "size": [
@@ -61,11 +61,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.044,
-   "fill": 0.831
+   "fill": 0.683
   },
   "size": [
-   755,
-   1038
+   905,
+   1057
   ],
   "error": null
  },
@@ -100,7 +100,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.057,
+   "vivid": 0.058,
    "fill": 0.827
   },
   "size": [
@@ -144,11 +144,11 @@
    ],
    "parts": 3,
    "second": 0.263,
-   "vivid": 0.037,
+   "vivid": 0.036,
    "fill": 0.815
   },
   "size": [
-   1511,
+   1512,
    1754
   ],
   "error": null
@@ -229,12 +229,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.027,
-   "fill": 0.621
+   "vivid": 0.028,
+   "fill": 0.515
   },
   "size": [
-   920,
-   1055
+   1080,
+   1080
   ],
   "error": null
  },
@@ -269,11 +269,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.025,
+   "vivid": 0.024,
    "fill": 0.816
   },
   "size": [
-   730,
+   729,
    1036
   ],
   "error": null
@@ -292,7 +292,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.025,
+   "vivid": 0.024,
    "fill": 0.786
   },
   "size": [
@@ -315,10 +315,10 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.039,
-   "fill": 0.847
+   "fill": 0.856
   },
   "size": [
-   932,
+   931,
    988
   ],
   "error": null
@@ -334,12 +334,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.031,
-   "fill": 0.596
+   "vivid": 0.03,
+   "fill": 0.823
   },
   "size": [
-   1439,
-   1535
+   1098,
+   1454
   ],
   "error": null
  },
@@ -373,7 +373,6 @@
   "url": "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-0.jpg",
   "verdict": "FAIL",
   "reasons": [
-   "cadrage serré",
    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
   ],
   "plus": {
@@ -382,13 +381,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
    ],
    "parts": 3,
-   "second": 0.157,
-   "vivid": 0.035,
-   "fill": 0.829
+   "second": 0.159,
+   "vivid": 0.034,
+   "fill": 0.58
   },
   "size": [
-   788,
-   1035
+   1080,
+   1080
   ],
   "error": null
  },
@@ -403,12 +402,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.018,
-   "fill": 0.498
+   "vivid": 0.021,
+   "fill": 0.808
   },
   "size": [
-   1080,
-   1080
+   683,
+   1038
   ],
   "error": null
  },
@@ -440,7 +439,8 @@
   "url": "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-3.jpg",
   "verdict": "FAIL",
   "reasons": [
-   "détourage sale / résidu de décor"
+   "détourage sale / résidu de décor",
+   "cadrage serré"
   ],
   "plus": {
    "verdict": "PASS",
@@ -448,10 +448,10 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.026,
-   "fill": 0.708
+   "fill": 0.809
   },
   "size": [
-   1080,
+   945,
    1080
   ],
   "error": null
@@ -467,7 +467,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.017,
+   "vivid": 0.016,
    "fill": 0.844
   },
   "size": [
@@ -487,7 +487,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.025,
+   "vivid": 0.024,
    "fill": 0.821
   },
   "size": [
@@ -512,7 +512,7 @@
   },
   "size": [
    1852,
-   1007
+   1006
   ],
   "error": null
  },
@@ -571,12 +571,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.026,
+   "vivid": 0.025,
    "fill": 0.812
   },
   "size": [
    677,
-   995
+   996
   ],
   "error": null
  },
@@ -595,7 +595,7 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.156,
+   "second": 0.157,
    "vivid": 0.012,
    "fill": 0.459
   },
@@ -662,7 +662,7 @@
    ],
    "parts": 4,
    "second": 0.307,
-   "vivid": 0.24,
+   "vivid": 0.241,
    "fill": 0.813
   },
   "size": [
@@ -686,8 +686,8 @@
    "fill": 0.812
   },
   "size": [
-   676,
-   995
+   677,
+   996
   ],
   "error": null
  },
@@ -709,12 +709,12 @@
    ],
    "parts": 2,
    "second": 0.437,
-   "vivid": 0.467,
-   "fill": 0.613
+   "vivid": 0.466,
+   "fill": 0.587
   },
   "size": [
-   1758,
-   1732
+   1740,
+   1760
   ],
   "error": null
  },
@@ -880,7 +880,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.053,
+   "vivid": 0.052,
    "fill": 0.68
   },
   "size": [
@@ -902,12 +902,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.274,
-   "fill": 0.472
+   "vivid": 0.273,
+   "fill": 0.466
   },
   "size": [
    1728,
-   970
+   969
   ],
   "error": null
  },
@@ -925,7 +925,7 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
    ],
    "parts": 3,
-   "second": 0.248,
+   "second": 0.249,
    "vivid": 0.027,
    "fill": 0.643
   },
@@ -975,7 +975,7 @@
   },
   "size": [
    577,
-   1024
+   1023
   ],
   "error": null
  },
@@ -1054,7 +1054,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.035,
+   "vivid": 0.036,
    "fill": 0.766
   },
   "size": [
@@ -1100,8 +1100,8 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.019,
-   "fill": 0.851
+   "vivid": 0.018,
+   "fill": 0.846
   },
   "size": [
    1072,
@@ -1129,7 +1129,7 @@
   },
   "size": [
    1080,
-   1026
+   1027
   ],
   "error": null
  },
@@ -1140,18 +1140,18 @@
   "verdict": "FAIL",
   "reasons": [
    "détourage sale / résidu de décor",
-   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux",
    "couleurs vives 53 % (visuel marketing ?)"
   ],
   "plus": {
    "verdict": "FAIL",
    "reasons": [
-    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux",
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux",
     "couleurs vives 53 % (visuel marketing ?)"
    ],
-   "parts": 5,
-   "second": 0.235,
-   "vivid": 0.529,
+   "parts": 6,
+   "second": 0.237,
+   "vivid": 0.535,
    "fill": 0.164
   },
   "size": [
@@ -1222,7 +1222,7 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
    ],
    "parts": 3,
-   "second": 0.248,
+   "second": 0.249,
    "vivid": 0.027,
    "fill": 0.643
   },
@@ -1272,7 +1272,7 @@
   },
   "size": [
    577,
-   1024
+   1023
   ],
   "error": null
  },
@@ -1289,11 +1289,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.052,
+   "vivid": 0.051,
    "fill": 0.82
   },
   "size": [
-   967,
+   966,
    1080
   ],
   "error": null
@@ -1313,7 +1313,7 @@
    ],
    "parts": 3,
    "second": 0.248,
-   "vivid": 0.027,
+   "vivid": 0.028,
    "fill": 0.643
   },
   "size": [
@@ -1453,12 +1453,12 @@
    ],
    "parts": 2,
    "second": 0.208,
-   "vivid": 0.086,
-   "fill": 0.636
+   "vivid": 0.085,
+   "fill": 0.831
   },
   "size": [
-   1080,
-   1080
+   857,
+   1036
   ],
   "error": null
  },
@@ -1497,11 +1497,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.108,
-   "fill": 0.747
+   "vivid": 0.106,
+   "fill": 0.742
   },
   "size": [
-   758,
+   766,
    1019
   ],
   "error": null
@@ -1521,8 +1521,8 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
    ],
    "parts": 3,
-   "second": 0.132,
-   "vivid": 0.177,
+   "second": 0.133,
+   "vivid": 0.178,
    "fill": 0.726
   },
   "size": [
@@ -1545,7 +1545,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0.002,
-   "vivid": 0.047,
+   "vivid": 0.048,
    "fill": 0.624
   },
   "size": [
@@ -1568,13 +1568,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.199,
+   "second": 0.202,
    "vivid": 0.034,
-   "fill": 0.679
+   "fill": 0.584
   },
   "size": [
-   1525,
-   1700
+   1728,
+   1728
   ],
   "error": null
  },
@@ -1589,12 +1589,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.053,
-   "fill": 0.818
+   "vivid": 0.051,
+   "fill": 0.617
   },
   "size": [
-   1032,
-   1632
+   1325,
+   1668
   ],
   "error": null
  },
@@ -1613,7 +1613,7 @@
    ],
    "parts": 2,
    "second": 0.335,
-   "vivid": 0.037,
+   "vivid": 0.038,
    "fill": 0.82
   },
   "size": [
@@ -1723,8 +1723,8 @@
    "fill": 0.816
   },
   "size": [
-   1080,
-   765
+   1077,
+   764
   ],
   "error": null
  },
@@ -1740,11 +1740,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.012,
-   "fill": 0.432
+   "fill": 0.794
   },
   "size": [
-   1080,
-   1080
+   605,
+   1035
   ],
   "error": null
  },
@@ -1759,12 +1759,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.005,
-   "fill": 0.482
+   "vivid": 0.006,
+   "fill": 0.812
   },
   "size": [
-   1080,
-   1080
+   665,
+   1036
   ],
   "error": null
  },
@@ -1805,7 +1805,7 @@
    "fill": 0.836
   },
   "size": [
-   911,
+   910,
    1037
   ],
   "error": null
@@ -1824,7 +1824,7 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.402,
+   "second": 0.399,
    "vivid": 0.031,
    "fill": 0.519
   },
@@ -1929,12 +1929,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.059,
-   "fill": 0.584
+   "vivid": 0.062,
+   "fill": 0.824
   },
   "size": [
-   1080,
-   1080
+   791,
+   1035
   ],
   "error": null
  },
@@ -1949,7 +1949,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.035,
+   "vivid": 0.036,
    "fill": 0.442
   },
   "size": [
@@ -1971,7 +1971,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.049,
+   "vivid": 0.05,
    "fill": 0.85
   },
   "size": [
@@ -1993,11 +1993,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.059,
+   "vivid": 0.06,
    "fill": 0.838
   },
   "size": [
-   886,
+   887,
    1045
   ],
   "error": null
@@ -2013,12 +2013,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.119,
+   "vivid": 0.121,
    "fill": 0.824
   },
   "size": [
-   1148,
-   1502
+   1147,
+   1501
   ],
   "error": null
  },
@@ -2060,11 +2060,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.028,
-   "fill": 0.774
+   "fill": 0.785
   },
   "size": [
-   1085,
-   1746
+   1084,
+   1744
   ],
   "error": null
  },
@@ -2087,7 +2087,7 @@
    "fill": 0.812
   },
   "size": [
-   1538,
+   1537,
    1750
   ],
   "error": null
@@ -2107,7 +2107,7 @@
    ],
    "parts": 3,
    "second": 0.181,
-   "vivid": 0.079,
+   "vivid": 0.078,
    "fill": 0.836
   },
   "size": [
@@ -2127,7 +2127,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.028,
+   "vivid": 0.03,
    "fill": 0.843
   },
   "size": [
@@ -2172,7 +2172,7 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.022,
-   "fill": 0.844
+   "fill": 0.838
   },
   "size": [
    1032,
@@ -2215,7 +2215,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.082,
+   "vivid": 0.083,
    "fill": 0.819
   },
   "size": [
@@ -2239,7 +2239,7 @@
    ],
    "parts": 3,
    "second": 0.186,
-   "vivid": 0.079,
+   "vivid": 0.077,
    "fill": 0.812
   },
   "size": [
@@ -2328,11 +2328,11 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.078,
-   "fill": 0.473
+   "fill": 0.804
   },
   "size": [
-   1080,
-   1080
+   657,
+   1034
   ],
   "error": null
  },
@@ -2348,10 +2348,10 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.079,
-   "fill": 0.83
+   "fill": 0.824
   },
   "size": [
-   795,
+   794,
    1036
   ],
   "error": null
@@ -2413,7 +2413,7 @@
    "fill": 0.804
   },
   "size": [
-   1350,
+   1351,
    1754
   ],
   "error": null
@@ -2432,7 +2432,7 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.28,
+   "second": 0.284,
    "vivid": 0.115,
    "fill": 0.685
   },
@@ -2560,12 +2560,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.031,
-   "fill": 0.807
+   "vivid": 0.032,
+   "fill": 0.489
   },
   "size": [
-   673,
-   1037
+   1080,
+   1080
   ],
   "error": null
  },
@@ -2580,7 +2580,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.025,
+   "vivid": 0.026,
    "fill": 0.496
   },
   "size": [
@@ -2640,12 +2640,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.029,
-   "fill": 0.603
+   "vivid": 0.027,
+   "fill": 0.489
   },
   "size": [
-   891,
-   1058
+   1080,
+   1080
   ],
   "error": null
  },
@@ -2668,7 +2668,7 @@
   },
   "size": [
    903,
-   1003
+   1004
   ],
   "error": null
  },
@@ -2756,7 +2756,7 @@
    ],
    "parts": 3,
    "second": 0.183,
-   "vivid": 0.039,
+   "vivid": 0.04,
    "fill": 0.58
   },
   "size": [
@@ -2776,7 +2776,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.089,
+   "vivid": 0.09,
    "fill": 0.748
   },
   "size": [
@@ -2821,7 +2821,7 @@
    "parts": 1,
    "second": 0,
    "vivid": 0.054,
-   "fill": 0.805
+   "fill": 0.812
   },
   "size": [
    1024,
@@ -2891,12 +2891,12 @@
    ],
    "parts": 3,
    "second": 0.177,
-   "vivid": 0.045,
-   "fill": 0.839
+   "vivid": 0.043,
+   "fill": 0.843
   },
   "size": [
    783,
-   817
+   818
   ],
   "error": null
  },
@@ -3000,8 +3000,8 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
    ],
    "parts": 9,
-   "second": 0.078,
-   "vivid": 0.181,
+   "second": 0.077,
+   "vivid": 0.182,
    "fill": 0.674
   },
   "size": [
@@ -3024,7 +3024,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0.001,
-   "vivid": 0.197,
+   "vivid": 0.198,
    "fill": 0.606
   },
   "size": [
@@ -3048,7 +3048,7 @@
    ],
    "parts": 3,
    "second": 0.177,
-   "vivid": 0.022,
+   "vivid": 0.023,
    "fill": 0.83
   },
   "size": [
@@ -3114,12 +3114,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.09,
-   "fill": 0.567
+   "vivid": 0.088,
+   "fill": 0.818
   },
   "size": [
-   1080,
-   1080
+   762,
+   1053
   ],
   "error": null
  },
@@ -3206,7 +3206,7 @@
    "fill": 0.826
   },
   "size": [
-   807,
+   806,
    1033
   ],
   "error": null
@@ -3249,13 +3249,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.288,
+   "second": 0.289,
    "vivid": 0.005,
-   "fill": 0.658
+   "fill": 0.827
   },
   "size": [
-   1006,
-   1060
+   817,
+   1035
   ],
   "error": null
  },
@@ -3273,13 +3273,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.452,
-   "vivid": 0.03,
-   "fill": 0.615
+   "second": 0.45,
+   "vivid": 0.032,
+   "fill": 0.521
   },
   "size": [
-   927,
-   1058
+   1080,
+   1080
   ],
   "error": null
  },
@@ -3324,7 +3324,7 @@
    ],
    "parts": 4,
    "second": 0.094,
-   "vivid": 0.179,
+   "vivid": 0.178,
    "fill": 0.735
   },
   "size": [
@@ -3485,13 +3485,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.03,
-   "vivid": 0.265,
+   "second": 0.033,
+   "vivid": 0.264,
    "fill": 0.77
   },
   "size": [
-   1072,
-   982
+   1075,
+   984
   ],
   "error": null
  },
@@ -3511,7 +3511,7 @@
    ],
    "parts": 6,
    "second": 0.203,
-   "vivid": 0.151,
+   "vivid": 0.15,
    "fill": 0.694
   },
   "size": [
@@ -3556,7 +3556,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.031,
+   "vivid": 0.032,
    "fill": 0.865
   },
   "size": [
@@ -3580,7 +3580,7 @@
    "parts": 1,
    "second": 0,
    "vivid": 0,
-   "fill": 0.86
+   "fill": 0.865
   },
   "size": [
    1080,

@@ -590,13 +590,13 @@
    "verdict": "PASS",
    "reasons": [],
    "parts": 1,
-   "second": 0.001,
+   "second": 0.007,
    "vivid": 0.051,
-   "fill": 0.739
+   "fill": 0.71
   },
   "size": [
-   1086,
-   1132
+   1151,
+   1193
   ],
   "error": null
  },
@@ -740,13 +740,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.258,
-   "vivid": 0.242,
-   "fill": 0.843
+   "second": 0.259,
+   "vivid": 0.243,
+   "fill": 0.757
   },
   "size": [
-   1081,
-   1128
+   1146,
+   1188
   ],
   "error": null
  },
@@ -1060,12 +1060,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.16,
-   "fill": 0.702
+   "vivid": 0.168,
+   "fill": 0.623
   },
   "size": [
-   985,
-   1036
+   1080,
+   1080
   ],
   "error": null
  },
@@ -1082,12 +1082,12 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.121,
+   "vivid": 0.122,
    "fill": 0.79
   },
   "size": [
    544,
-   962
+   961
   ],
   "error": null
  },
@@ -1127,7 +1127,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.026,
+   "vivid": 0.025,
    "fill": 0.689
   },
   "size": [
@@ -1298,23 +1298,11 @@
   "slug": "kukirin-g3-adventurers",
   "i": 2,
   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_1.png",
-  "verdict": "WARN",
-  "reasons": [
-   "basse définition"
-  ],
-  "plus": {
-   "verdict": "PASS",
-   "reasons": [],
-   "parts": 1,
-   "second": 0,
-   "vivid": 0.178,
-   "fill": 0.846
-  },
-  "size": [
-   483,
-   516
-  ],
-  "error": null
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
  },
  {
   "slug": "kukirin-g3-adventurers",
@@ -1371,11 +1359,11 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.12,
+   "vivid": 0.119,
    "fill": 0.837
   },
   "size": [
-   944,
+   945,
    842
   ],
   "error": null
@@ -1394,7 +1382,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.026,
+   "vivid": 0.025,
    "fill": 0.689
   },
   "size": [
@@ -1573,8 +1561,8 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.269,
-   "vivid": 0.29,
+   "second": 0.268,
+   "vivid": 0.289,
    "fill": 0.758
   },
   "size": [
@@ -1979,13 +1967,13 @@
     "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
    ],
    "parts": 2,
-   "second": 0.159,
-   "vivid": 0.12,
-   "fill": 0.707
+   "second": 0.146,
+   "vivid": 0.112,
+   "fill": 0.708
   },
   "size": [
    1167,
-   1189
+   1187
   ],
   "error": null
  },
@@ -2340,12 +2328,12 @@
    ],
    "parts": 2,
    "second": 0.13,
-   "vivid": 0.12,
+   "vivid": 0.118,
    "fill": 0.732
   },
   "size": [
    1162,
-   1190
+   1189
   ],
   "error": null
  },
@@ -2767,7 +2755,7 @@
    "reasons": [],
    "parts": 1,
    "second": 0,
-   "vivid": 0.055,
+   "vivid": 0.057,
    "fill": 0.792
   },
   "size": [

@@ -15,10 +15,10 @@ iscooter-i10-max #5 WARN basse définition · cadrage serré
 iscooter-i10-max #6 WARN cadrage serré
 iscooter-i10-max #7 PASS ok
 iscooter-i10-max #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
-iscooter-i10-pro #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i10-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
 iscooter-i10-pro #1 PASS ok
 iscooter-i10-pro #2 WARN cadrage serré
-iscooter-i10-pro #3 FAIL détourage sale / résidu de décor
+iscooter-i10-pro #3 FAIL détourage sale / résidu de décor · cadrage serré
 iscooter-i10-pro #4 PASS ok
 iscooter-i10-pro #5 PASS ok
 iscooter-i10-pro #6 PASS ok
@@ -50,7 +50,7 @@ iscooter-i9-pro #2 PASS ok
 iscooter-i9-pro #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 41 % (visuel marketing ?)
 iscooter-i9-pro #4 PASS ok
 iscooter-i9-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
-iscooter-i9-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux · couleurs vives 53 % (visuel marketing ?)
+iscooter-i9-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux · couleurs vives 53 % (visuel marketing ?)
 iscooter-i9-pro #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
 iscooter-i9-pro #8 FAIL détourage sale / résidu de décor · cadrage serré
 iscooter-i9ultra #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
