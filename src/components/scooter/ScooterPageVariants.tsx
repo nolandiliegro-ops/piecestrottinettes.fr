@@ -14,7 +14,7 @@
  * 5 PIT-WALL  · onglets Fiche / Présentation / Gamme juste sous le titre : tout tient sans descendre
  */
 import { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Heart, Home, Wrench, ExternalLink, Check, Zap, Battery, Gauge, Route, CircleDot, Ruler, Bike, ChevronDown } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
@@ -129,8 +129,8 @@ const Title = ({ name, size = "text-4xl lg:text-6xl", color = CARBON, italic = f
 );
 
 // ─── Boutons racing (même logique que ShowroomActionButtons) ────────────────
-type Look = "slant" | "chevron" | "stripe" | "stand" | "pit";
-const RacingActions = ({ scooter, partsCount, look, accent, full = false }: { scooter: ScooterDetail; partsCount: number; look: Look; accent: string; full?: boolean }) => {
+type Look = "slant" | "chevron" | "stripe" | "stand" | "pit" | "livery" | "chamfer";
+const RacingActions = ({ scooter, partsCount, look, accent, full = false, onDark = false }: { scooter: ScooterDetail; partsCount: number; look: Look; accent: string; full?: boolean; onDark?: boolean }) => {
   const navigate = useNavigate();
   const { user } = useAuth();
   const { inGarage, isOwned, garageItem } = useIsInGarage(scooter.slug);
@@ -157,16 +157,24 @@ const RacingActions = ({ scooter, partsCount, look, accent, full = false }: { sc
     stripe: { cls: "px-6", style: { borderRadius: 2 } },
     stand: { cls: "px-5 w-full", style: { borderRadius: 10 } },
     pit: { cls: "px-5", style: { borderRadius: 999 } },
+    // Livrée : coin coupé en haut à droite, bande verte + filet blanc à gauche (déco de carrosserie)
+    livery: { cls: "pl-7 pr-6", style: { clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)", boxShadow: "inset 6px 0 0 #4A7C59, inset 9px 0 0 #fff" } },
+    // Chanfrein : deux coins opposés coupés, façon plaque de course
+    chamfer: { cls: "px-6", style: { clipPath: "polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)" } },
   };
   const sh = shape[look];
   const base = `relative inline-flex items-center justify-center gap-2 min-h-[48px] text-sm uppercase tracking-[0.12em] transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 ${sh.cls}`;
-  const font: React.CSSProperties = { fontFamily: look === "stand" ? FONT : UNB, fontWeight: look === "stand" ? 800 : 700, fontStyle: look === "slant" || look === "chevron" ? "italic" : "normal" };
+  const font: React.CSSProperties = { fontFamily: look === "stand" ? FONT : UNB, fontWeight: look === "stand" ? 800 : 700, fontStyle: look === "slant" || look === "chevron" || look === "livery" || look === "chamfer" ? "italic" : "normal" };
   const stripe = look === "stripe"
     ? { backgroundImage: `repeating-linear-gradient(115deg, ${GREEN} 0 18px, #3A6449 18px 22px)` }
+    : look === "livery"
+    ? { backgroundImage: `linear-gradient(90deg, ${GREEN} 0 calc(100% - 34px), ${CARBON} calc(100% - 34px) calc(100% - 26px), ${GREEN} calc(100% - 26px) calc(100% - 20px), ${CARBON} calc(100% - 20px) calc(100% - 12px), ${GREEN} calc(100% - 12px))`, boxShadow: "none", paddingRight: 48 }
+    : look === "chamfer"
+    ? { backgroundImage: `conic-gradient(from 0deg at 50% 50%, ${CARBON} 25%, #fff 0 50%, ${CARBON} 0 75%, #fff 0), linear-gradient(${GREEN}, ${GREEN})`, backgroundSize: "16px 16px, 100% 100%", backgroundRepeat: "repeat-y, no-repeat", backgroundPosition: "right top, 0 0", paddingRight: 34 }
     : {};
   const dark = { backgroundColor: CARBON, color: "#fff" };
   const ghost = look === "pit" ? { backgroundColor: "#fff", color: CARBON, border: "1.5px solid rgba(26,26,26,0.15)" }
-    : look === "chevron" ? { backgroundColor: "#fff", color: CARBON } : dark;
+    : onDark ? { backgroundColor: "#fff", color: CARBON } : dark;
 
   return (
     <div className={full ? "flex flex-col gap-2.5" : "flex flex-wrap gap-2.5"}>
@@ -396,7 +404,7 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount }: Props)
                 {small.map((s) => <span key={s.key} className="text-sm text-white/70" style={{ fontFamily: FONT }}><span className="uppercase text-sm tracking-wider text-white/40 mr-1.5">{s.label}</span><b className="text-white">{s.value}{s.unit ? ` ${s.unit}` : ""}</b></span>)}
               </div>
             )}
-            <div className="mt-7 flex justify-center"><RacingActions scooter={scooter} partsCount={partsCount} look="chevron" accent={accent} /></div>
+            <div className="mt-7 flex justify-center"><RacingActions scooter={scooter} partsCount={partsCount} look="chevron" accent={accent} onDark /></div>
             {gamme.length > 1 && <div className="mt-10"><GammeHeader brand={brand} count={gamme.length} accent={accent} dark /><GammeNumbered models={gamme} current={scooter.slug} accent={GREEN} /></div>}
           </div>
         </section>
@@ -491,6 +499,10 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
     ...(gamme.length > 1 && !gammeBelow ? [{ k: "gamme", label: `Gamme (${gamme.length})` }] : []),
   ];
   const [tab, setTab] = useState("fiche");
+  // Boutons à comparer (16/10) : &btn=1..5 — sans paramètre, pilules actuelles.
+  const [sp] = useSearchParams();
+  const BTN: Record<string, Look> = { "1": "slant", "2": "chevron", "3": "stripe", "4": "livery", "5": "chamfer" };
+  const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? "pit";
   return (
     <>
       {tag}
@@ -525,7 +537,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
               <div className={tab === "pres" ? "" : "hidden"}><Description text={scooter.description} clamp={false} /></div>
               {tab === "gamme" && <GammeThumbs models={gamme} current={scooter.slug} accent={accent} />}
             </div>
-            <div className="mt-6"><RacingActions scooter={scooter} partsCount={partsCount} look="pit" accent={accent} /></div>
+            <div className="mt-6"><RacingActions scooter={scooter} partsCount={partsCount} look={btnLook} accent={accent} /></div>
           </div>
         </div>
       </section>
