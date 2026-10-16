@@ -28,6 +28,7 @@ const ROOT = resolve(__dirname, '..');
 const args = process.argv.slice(2);
 const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const MODE = args.includes('--write') ? 'write' : 'dry';
+const APPEND = args.includes('--append'); // 17/10 : ajoute aux galeries existantes, jamais de remise à zéro
 const LOT_FILE = resolve(ROOT, arg('--file') || '');
 const lot = JSON.parse(readFileSync(LOT_FILE, 'utf-8'));
 const OUT = resolve(ROOT, 'out', lot.lot);
@@ -139,7 +140,7 @@ async function write() {
       try {
         const png = await cutout(url);
         const qc = await photoQcAll(png);
-        const j = judge(qc, bufs.length);
+        const j = judge(qc, APPEND ? 1 : bufs.length);
         if (!j.ok) { console.log(`::warning title=REFUSÉ ${m.slug} #${idx}::${j.why.join(' · ')}`); continue; }
         bufs.push(png);
       } catch (e) { console.log(`::warning title=ERREUR ${m.slug} #${idx}::${e.message.slice(0, 120)}`); }
@@ -150,7 +151,7 @@ async function write() {
       const res = await fetch(URL_, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET },
-        body: JSON.stringify({ entity_type: 'scooter', entity_id: m.id, images_base64: [bufs[k].toString('base64')], alt_base: m.name, reset: k === 0 }),
+        body: JSON.stringify({ entity_type: 'scooter', entity_id: m.id, images_base64: [bufs[k].toString('base64')], alt_base: m.name, reset: !APPEND && k === 0 }),
       });
       const t = await res.text();
       if (res.ok && /"success"\s*:\s*true/.test(t)) posted++;

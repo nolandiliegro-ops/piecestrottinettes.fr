@@ -1,0 +1,329 @@
+{
+ "lot": "r6b",
+ "models": [
+  {
+   "id": "52da403f-64c5-4f51-a3e9-e45c959f648e",
+   "slug": "cecotec-bongo-d20",
+   "name": "Cecotec Bongo D20",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/61YfJfq9JeL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/41xUA4BAtfL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61vv-BZPgGL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51PXTLOxaiL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51PZ0OgtrJL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31AH73taROL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "a92c68ee-06d4-4f4b-9852-d6562ea01551",
+   "slug": "cecotec-bongo-serie-m20",
+   "name": "Cecotec Bongo Serie M20",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/41DWgbxuhLL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31ZenHY1kTL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51c1gu+-6dL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61Rxa7Mq1mL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/611DbHfNrrL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31k9+mKjaHL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "e198481d-2a23-41bc-ae03-cebedf1c4b72",
+   "slug": "f40",
+   "name": "F40",
+   "candidates": [
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_F40D-F40E_Product-picture_360-side-view-30?fmt=png-alpha&wid=2000",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Dashboard-30?wid=2000",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Braking-system-30?wid=2000",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Folded-kickscooter-30?wid=2000",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Hero-picture2-30?wid=2000"
+   ]
+  },
+  {
+   "id": "8e751af1-240a-4f3f-8c61-0a8dff833feb",
+   "slug": "hiboy-s2",
+   "name": "Hiboy S2",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/51o57May9NL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51zM0NzeMlL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51G7Vrp+iBL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/512O1OyMmBL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51682uI+EaL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31cV-ga1ikL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb",
+   "slug": "hiboy-s2-pro",
+   "name": "Hiboy S2 Pro",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_d6bfd9f3-bfbe-423c-a571-7c40ed543d7d.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_95c96a5a-398d-4867-9562-4ebeea38d3ce.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_d124fdb7-6aae-41b9-947f-a7fd22ac1bf0.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_2bdb7d7c-3da0-407b-8711-e0e8a9365909.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_ab971018-5429-4720-a051-b648b69692d8.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_e2a11d30-83ae-49a0-b55a-c039912721cd.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_3e5fc5e5-fee0-416f-8ab3-99dfa39ed876.jpg",
+    "https://m.media-amazon.com/images/I/31noqcFimLL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/41at5hg91rL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51eGGfPH-QL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "20900c0e-d3b7-4838-8338-b21cf2f94f3d",
+   "slug": "hikerboy-brio",
+   "name": "Hikerboy Brio",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-1_55ddf6ea-3d07-416f-b6f2-263cff360d36.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-2.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-4.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-5.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-7.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-1.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-3.png",
+    "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-8.png"
+   ]
+  },
+  {
+   "id": "cb1a19b5-4e37-413c-8b3e-3b4b172b20fd",
+   "slug": "iscooter-ix3",
+   "name": "iScooter iX3",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1_f521b676-f06c-417e-82a3-14b3c8735835.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_3cb91afb-f199-4291-9240-15eb99d7ba19.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/6_8351bccc-cc2e-49df-8132-83761e0bc8e9.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/7_caa77574-e34f-4e09-9b74-881beae9bda9.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/8_b29d4985-29a7-4e84-8f18-d2cc85cba45f.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/9_e8dacd1e-2f8d-456f-a47a-829e529b404e.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_f091bb40-7657-4de1-a32e-0d3744747e95.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1_d4afe998-e45a-4264-a975-8916ed1a4d2b.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_0002583d-e928-4898-bcb5-383d6e27b374.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/3_80248d88-8275-42c0-bc3b-7f22c64d8f51.jpg"
+   ]
+  },
+  {
+   "id": "85908cbf-4635-4e84-88e0-6bf166bd7648",
+   "slug": "isinwheel-s9-max",
+   "name": "Isinwheel S9 Max",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/products/isinwheels9max500welectricscooterwithbluetooth8.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_12_1800x1800_df82c9fc-a3f5-499b-a94a-4b761f68332c.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_c8573ffa-aecf-488a-afa3-38ca505cbea8.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_2_1800x1800_5590f968-6130-434f-af52-96a319470f8a.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_3_1800x1800_be5aeaaa-bbe7-4cd3-ad0d-f300a777609d.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_5_1800x1800_234450d6-5e13-4981-b8ee-69a118ff2a99.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_8_1800x1800_80142ec8-b17c-4499-bb5f-daffe31db7ba.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_10_1800x1800_35613394-2609-4378-83c6-727b09be9128.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_11_1800x1800_c1d09499-f35b-46a0-9be5-8fb18aa90de7.webp"
+   ]
+  },
+  {
+   "id": "ebc8d22b-e958-4b34-b126-c0de7c7a92e8",
+   "slug": "kaabo-wolf-warrior-11-max",
+   "name": "Kaabo Wolf Warrior 11 Max",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter9.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter16.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter17.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter18.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter19.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter23_416fe0ef-8c3f-4fb5-87b2-0f2b1996f647.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter22_b9cdc58e-dd6f-44d5-b4cd-e7189abf53a7.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter26.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_11_max_high_performance_scooter_26072404.jpg"
+   ]
+  },
+  {
+   "id": "24ef8f19-d1f7-46d4-a281-469c99a23096",
+   "slug": "kuickwheel-m16-pro",
+   "name": "Kuickwheel M16 Pro",
+   "candidates": [
+    "https://elecbiz.fr/wp-content/uploads/2024/06/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+    "https://elecbiz.fr/wp-content/uploads/2024/06/TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah-1.jpg",
+    "https://elecbiz.fr/wp-content/uploads/2024/06/TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+    "https://elecbiz.fr/wp-content/uploads/2024/06/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah-1.jpg",
+    "https://www.scooterpassion.be/26137-large_default/trottinette-electrique-etanche-kuickwheel-m16-pro-105-a.jpg"
+   ]
+  },
+  {
+   "id": "ac87c3ac-d036-444c-abf8-1d0a4709142a",
+   "slug": "laotie-es10p",
+   "name": "Laotie ES10P",
+   "candidates": [
+    "https://icbimg3.chiccdn.com/images/EE/73/8332df23-7922-4d4c-9bed-315e51382491.jpg",
+    "https://icbimg3.chiccdn.com/images/0F/B8/6bae95dc-274f-49d8-8446-4164891123e1.jpg",
+    "https://icbimg3.chiccdn.com/images/25/1C/95ff8ae1-71d1-4aea-85a5-53965bc60cdb.jpg",
+    "https://icbimg3.chiccdn.com/images/CD/63/26c08b45-2f89-4504-b4f9-31e97c7e0d50.jpg"
+   ]
+  },
+  {
+   "id": "529da8e2-907a-40a4-8c25-d198197bd323",
+   "slug": "micro-explorer",
+   "name": "Micro Explorer",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-2/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-3/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-4/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-5/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-6/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-7/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-8/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-1/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg"
+   ]
+  },
+  {
+   "id": "9dee9001-4eaf-457c-9d61-b970c5e0a6aa",
+   "slug": "navee-s60",
+   "name": "Navee S60",
+   "candidates": [
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product47-product_image/assets/img/pd-image.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product48-product_image/assets/img/pd-image1.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product8-product_details/assets/img/pd-details1.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product10-product_details1/assets/img/pd-details2-img1.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product10-product_details1/assets/img/pd-details2-img2.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product16-product_details2/assets/img/pd-details3-img1.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product16-product_details2/assets/img/pd-details3-img2.jpg",
+    "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product12-product_intro/assets/img/pd-intro4-img.png",
+    "https://www.naveetech.com/wp-content/uploads/2025/07/S60-M_07.jpg",
+    "https://www.naveetech.com/wp-content/uploads/2025/07/S60-M_08-1.jpg"
+   ]
+  },
+  {
+   "id": "35d0ee7e-a760-4fe4-9960-98527f5fd8f4",
+   "slug": "ninebot-e2",
+   "name": "Ninebot E2",
+   "candidates": [
+    "https://segway.imgix.net/catalog/product/e/2/e2-side_1.png",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2024_04_Group-1000002002.png",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_wheel.png",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Tire.png",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-4.jpg",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-5.jpg",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-6.jpg",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-8.jpg",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-9.jpg"
+   ]
+  },
+  {
+   "id": "afbe548a-0542-41dc-8907-b79a3e01ea2c",
+   "slug": "niu-kqi2-pro",
+   "name": "NIU KQi2 Pro",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi2_Pro.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter12.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter11.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/5_e61d8fdc-88da-4884-9bef-a3674e0ece2d.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter5_bcb8f4b7-f706-46d5-964d-d38a8953d252.jpg"
+   ]
+  },
+  {
+   "id": "4cb7858e-23a6-474c-8f08-b5679619a4e1",
+   "slug": "ootd-sr1",
+   "name": "Ootd SR1",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_7.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_9.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_14.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_15.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_16.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_17.webp",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_20.webp"
+   ]
+  },
+  {
+   "id": "eae74e22-1b2b-4f34-9c10-0f0991f1e9d2",
+   "slug": "pure-air-6-suspension",
+   "name": "Pure Air⁶ Suspension",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805494.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805492.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805490.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805488.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805487.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805486.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805485.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805484.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805483.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805482.jpg"
+   ]
+  },
+  {
+   "id": "30f3ad35-23b5-47ef-8dcd-aec8977da8b2",
+   "slug": "pure-electric-escape-pro",
+   "name": "Pure Electric Escape Pro",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859381.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859380.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859379.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859378.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859377.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859375.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859374.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859373.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859371.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859370.jpg"
+   ]
+  },
+  {
+   "id": "a0a5078e-d910-4cdf-9f6c-02403d270006",
+   "slug": "urbanglide-ecross-go",
+   "name": "Urbanglide Ecross Go",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/31-hFC4935L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/314kt2nK+pL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31WKA7Hi1KL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51rFpfdQ3BL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/41nGW9xwkxL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31WT7l8+mPL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "8cd32a6d-175b-47f8-8843-0723d8298de3",
+   "slug": "urbanglide-ride-85-evo",
+   "name": "Urbanglide Ride 85 Evo",
+   "candidates": [
+    "https://www.cdiscount.com/pdt2/7/6/9/2/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/3/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/4/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/5/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/6/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/7/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/8/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/9/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+    "https://www.cdiscount.com/pdt2/7/6/9/1/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg"
+   ]
+  },
+  {
+   "id": "4a9133f9-3903-45d4-a3ba-0824f3cb4cde",
+   "slug": "wispeed-suvpilot-480",
+   "name": "Wispeed SUVPILOT 480",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/b7/86/8d/26052279/1540-1/tsp20260211092847/Trottinette-electrique-tout-terrain-Wispeed-Off-road-Suvpilot-480-18Ah-48V-500-W-Kaki.jpg",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/Fond%20noir.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/ff68d193-8551-4abc-b4bd-40241c39e0e2.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/hf_20260708_074804_0da660c2-6700-4a33-aca1-a358c7cb7533.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/hf_20260708_091536_07362153-57bb-415f-ad2c-a5f783461f19.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/width_1066.jpg",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/Design%20sans%20titre%20(1).png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/SUVPILOT%20R%20Off%20road-2.png"
+   ]
+  },
+  {
+   "id": "70da46ff-7b49-4173-b3aa-cf257ba46f0d",
+   "slug": "yeep-me-100a-start",
+   "name": "Yeep.me 100a start",
+   "candidates": [
+    "https://www.ravate.com/680591-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+    "https://www.ravate.com/680592-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+    "https://www.ravate.com/680593-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+    "https://www.ravate.com/680594-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+    "https://www.ravate.com/680595-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+    "https://www.ravate.com/1033813-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg"
+   ]
+  }
+ ]
+}
