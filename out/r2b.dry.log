@@ -1,0 +1,151 @@
+pure-electric-advance-flex #0 WARN basse définition
+pure-electric-advance-flex #1 WARN cadrage serré
+pure-electric-advance-flex #2 PASS ok
+pure-electric-advance-flex #3 PASS ok
+pure-electric-advance-flex #4 WARN cadrage serré
+pure-electric-advance-flex #5 WARN cadrage serré
+pure-electric-advance-flex #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-electric-advance-flex #7 PASS ok
+pure-electric-advance-flex #8 PASS ok
+pure-electric-advance-flex #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #0 PASS ok
+pure-electric-air-5 #1 PASS ok
+pure-electric-air-5 #2 WARN basse définition
+pure-electric-air-5 #3 FAIL détourage sale / résidu de décor · basse définition
+pure-electric-air-5 #4 PASS ok
+pure-electric-air-5 #5 PASS ok
+pure-electric-air-5 #6 WARN basse définition
+pure-electric-air-5 #7 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+pure-electric-air-5 #8 PASS ok
+pure-electric-air-5 #9 FAIL détourage sale / résidu de décor
+pure-flex #0 FAIL détourage sale / résidu de décor
+pure-flex #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 46 % (visuel marketing ?)
+pure-flex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #5 FAIL détourage sale / résidu de décor
+pure-flex #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-flex #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #0 PASS ok
+pure-x-mclaren #1 PASS ok
+pure-x-mclaren #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #6 WARN cadrage serré
+pure-x-mclaren #7 WARN cadrage serré
+pure-x-mclaren #8 WARN basse définition · cadrage serré
+velity-511-ss #0 PASS ok
+velity-511-ss #1 PASS ok
+velity-511-ss #2 ERROR Input buffer contains unsupported image format
+velity-511-ss #3 ERROR Input buffer contains unsupported image format
+velity-511-ss #4 ERROR Input buffer contains unsupported image format
+velity-511-ss #5 ERROR Input buffer contains unsupported image format
+velity-511-ss #6 ERROR Input buffer contains unsupported image format
+velity-511-ss #7 ERROR Input buffer contains unsupported image format
+velity-511-ss #8 PASS ok
+velity-511-ss #9 WARN basse définition · cadrage serré
+velity-511-ss #10 WARN basse définition
+velity-511-ss #11 FAIL détourage sale / résidu de décor
+velity-511-ss #12 PASS ok
+velity-511-sx #0 ERROR Input buffer contains unsupported image format
+velity-511-sx #1 ERROR Input buffer contains unsupported image format
+velity-511-sx #2 ERROR Input buffer contains unsupported image format
+velity-511-sx #3 ERROR Input buffer contains unsupported image format
+velity-511-sx #4 WARN basse définition
+velity-511-sx #5 FAIL détourage sale / résidu de décor
+velity-511-sx #6 PASS ok
+velity-511-sx #7 ERROR téléchargement vide
+velity-511-sx #8 ERROR téléchargement vide
+weped-fold-3 #0 WARN basse définition
+weped-fold-3 #1 ERROR Input buffer contains unsupported image format
+weped-fold-3 #2 ERROR Input buffer contains unsupported image format
+weped-fold-3 #3 ERROR Input buffer contains unsupported image format
+weped-fold-3 #4 ERROR Input buffer contains unsupported image format
+weped-fold-3 #5 ERROR Input buffer contains unsupported image format
+weped-fold-3 #6 ERROR Input buffer contains unsupported image format
+weped-fold-3 #7 ERROR Input buffer contains unsupported image format
+weped-fold-3 #8 ERROR Input buffer contains unsupported image format
+weped-fold-3 #9 FAIL détourage sale / résidu de décor
+weped-fold-3 #10 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-fold-3 #11 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+weped-fold-3 #12 PASS ok
+weped-fold-3 #13 PASS ok
+weped-ss-t #0 PASS ok
+weped-ss-t #1 PASS ok
+weped-ss-t #2 PASS ok
+weped-ss-t #3 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-ss-t #4 FAIL détourage sale / résidu de décor · basse définition
+weped-ss-t #5 WARN basse définition
+weped-ss-t #6 WARN basse définition · cadrage serré
+weped-ss-t #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+weped-ss-t #8 FAIL détourage sale / résidu de décor · cadrage serré
+weped-ssgt #0 ERROR Input buffer contains unsupported image format
+weped-ssgt #1 ERROR Input buffer contains unsupported image format
+weped-ssgt #2 ERROR Input buffer contains unsupported image format
+wispeed-c10-40-pro #0 PASS ok
+wispeed-c10-40-pro #1 PASS ok
+wispeed-c10-40-pro #2 PASS ok
+wispeed-c10-40-pro #3 PASS ok
+wispeed-c10-40-pro #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+wispeed-c10-40-pro #5 WARN basse définition
+wispeed-c10-40-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+wispeed-c10-40-pro #7 WARN petit élément détaché (2 morceaux)
+wispeed-c10-40-pro #8 PASS ok
+wispeed-c10-40-pro #9 PASS ok
+wispeed-c10-55-max #0 PASS ok
+wispeed-c10-55-max #1 ERROR téléchargement vide
+wispeed-c10-55-max #2 ERROR téléchargement vide
+wispeed-c10-55-max #3 ERROR téléchargement vide
+wispeed-c10-55-max #4 ERROR téléchargement vide
+wispeed-c10-55-max #5 PASS ok
+wispeed-c10-55-max #6 WARN basse définition · cadrage serré
+wispeed-c10-55-max #7 WARN cadrage serré
+wispeed-c10-55-max #8 WARN basse définition
+wispeed-c10-55-max #9 WARN basse définition · cadrage serré
+wispeed-c10-55-max #10 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-c10-55-max #11 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · produit minuscule dans le cadre
+wispeed-c10-55-max #12 ERROR Input buffer contains unsupported image format
+xiaomi-mi-m365 #0 ERROR téléchargement vide
+xiaomi-mi-m365 #1 ERROR Input buffer contains unsupported image format
+xiaomi-mi-m365 #2 PASS ok
+xiaomi-mi-m365 #3 WARN basse définition
+xiaomi-mi-m365 #4 ERROR Input buffer contains unsupported image format
+xiaomi-mi-m365 #5 PASS ok
+xiaomi-mi-m365 #6 PASS ok
+xiaomi-mi-m365 #7 WARN basse définition · cadrage serré
+xiaomi-mi-m365 #8 PASS ok
+xiaomi-mi-m365 #9 PASS ok
+yeep-me-100a #0 PASS ok
+yeep-me-100a #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-100a #2 FAIL détourage sale / résidu de décor · cadrage serré
+yeep-me-100a #3 ERROR Only 4-channel images are supported
+yeep-me-100a #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+yeep-me-100a #5 PASS ok
+yeep-me-100a #6 FAIL détourage sale / résidu de décor
+yeep-me-100a-start #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 31 % (visuel marketing ?)
+yeep-me-100a-start #1 FAIL détourage sale / résidu de décor · basse définition
+yeep-me-100a-start #2 WARN basse définition · cadrage serré
+yeep-me-100a-start #3 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+yeep-me-100a-start #4 WARN basse définition · cadrage serré
+yeep-me-80n-evo-plus #0 PASS ok
+yeep-me-80n-evo-plus #1 PASS ok
+yeep-me-80n-evo-plus #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-80n-evo-plus #3 FAIL détourage sale / résidu de décor
+yeep-me-80n-evo-plus #4 WARN basse définition · cadrage serré
+yeep-me-80n-evo-plus #5 WARN cadrage serré
+yeep-me-80n-evo-plus #6 PASS ok
+yeep-me-80n-evo-plus #7 PASS ok
+yeep-me-80n-evo-plus #8 WARN cadrage serré
+yeep-me-80n-evo-plus #9 WARN basse définition · cadrage serré
+yeep-me-85a-evo #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #1 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+yeep-me-85a-evo #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #3 WARN cadrage serré
+yeep-me-85a-evo #4 WARN basse définition · cadrage serré
+yeep-me-85a-evo #5 FAIL détourage sale / résidu de décor · cadrage serré
+yeep-me-85a-evo #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+zwheel-zrino #0 PASS ok
+zwheel-zrino #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+zwheel-zrino #2 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+::notice title=photos r2b (dry)::150 candidates · PASS 41 · WARN 31 · FAIL 46 · ERREUR 32
