@@ -1,3 +1,3 @@
-write lot18
-write lot19
-write lot20
+write lot21
+write lot22
+write lot23
