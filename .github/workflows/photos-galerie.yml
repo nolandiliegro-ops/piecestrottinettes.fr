@@ -16,9 +16,7 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: photos-galerie
-  cancel-in-progress: false
+# Pas de file d'attente : chaque push part tout de suite (lots en parallèle, résultats sur des dossiers distincts).
 
 jobs:
   photos:

@@ -1,0 +1,205 @@
+{
+ "lot": "lot17",
+ "models": [
+  {
+   "id": "e82571fe-6d82-442a-a038-d4cbcba76b3e",
+   "slug": "soflow-s05",
+   "name": "SoFlow S05",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791639515009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791997689345_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791997695796_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "cb91ab3a-d90d-4767-92ef-750121bac9f2",
+   "slug": "soflow-so-one-lite",
+   "name": "SoFlow SO ONE Lite",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cb91ab3a-d90d-4767-92ef-750121bac9f2/1792167611831_0.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/SO-ONE-LITE.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/7214.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/7223.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/7219.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/7227.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "a537c7b2-cb39-490f-af08-db97dff66917",
+   "slug": "soflow-so-one-pro",
+   "name": "SoFlow SO ONE Pro",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a537c7b2-cb39-490f-af08-db97dff66917/1792167594189_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a537c7b2-cb39-490f-af08-db97dff66917/1792167602626_0.png",
+    "https://m.media-amazon.com/images/I/31hTBl7ohgL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31FwqAuaGDL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31scwZemn5L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31rabaJAmCL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31mubPVpYEL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/21-EXvOWpJL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/21VIuZxcfHL._AC_SL1500_.jpg",
+    "https://www.soflow.com/wp-content/uploads/2025/04/SO-ONE-PRO-GEN2-ORIGINAL.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "7cc995a7-7779-452c-84e6-c6b7f1acf4f7",
+   "slug": "soflow-so4-pro",
+   "name": "SoFlow SO4 Pro",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cc995a7-7779-452c-84e6-c6b7f1acf4f7/1791639518632_0.png",
+    "https://m.media-amazon.com/images/I/511ebl+Gx7L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31kUr5IKdFL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/316OlF+ATVL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31OE-MNNVNL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31++L6vXcIL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31t9nbfG+oL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31isu6oVTQL._AC_SL1500_.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "c7cc4002-880b-47c4-a107-20b5088bfddb",
+   "slug": "soflow-so4-pro-gt-2",
+   "name": "SoFlow SO4 Pro GT 2",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c7cc4002-880b-47c4-a107-20b5088bfddb/1792167579559_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c7cc4002-880b-47c4-a107-20b5088bfddb/1792167585429_0.png",
+    "https://m.media-amazon.com/images/I/31ArwU4CqJL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31V3vG2y1bL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31hprm9GR3L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/21AaLDaG3TL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31RCkXGtx6L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/213WV3tgR8L._AC_SL1500_.jpg",
+    "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-GT.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "40d7a5dc-60de-4087-b723-6ec57075641e",
+   "slug": "soflow-so4-pro-max",
+   "name": "SoFlow SO4 Pro Max",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/40d7a5dc-60de-4087-b723-6ec57075641e/1792167572919_0.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-MAX.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9767.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9803.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9771-1.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9770.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9793.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9801.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9769.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "dcb8f373-a85a-4ae5-8a5f-445881f94915",
+   "slug": "speedway-5",
+   "name": "Speedway 5",
+   "brand": "Speedway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dcb8f373-a85a-4ae5-8a5f-445881f94915/1791637488996_0.png",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-main-product-image.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-white-side.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-folded.jpg",
+    "https://dualtron-store.com/wp-content/uploads/2018/12/Capture-decran-2025-01-23-a-12.14.17.png",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-front-wheel.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-rear-wheel.png",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-handlebar.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "8994b408-0ed6-4048-836a-6343c8d64923",
+   "slug": "speedway-leger",
+   "name": "Speedway Leger",
+   "brand": "Speedway",
+   "candidates": [
+    "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/8286/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__09053.1790543367.jpg?c=1",
+    "https://dualtron-store.com/wp-content/uploads/2021/10/trottinette-electrique-speedway-leger.jpg",
+    "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7875/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__60401.1790543367.jpg?c=1",
+    "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7777/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__97362.1790543367.jpg?c=1",
+    "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7999/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__91927.1790543367.jpg?c=1",
+    "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7863/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__76787.1790543367.jpg?c=1",
+    "https://dualtron-store.com/wp-content/uploads/2019/08/sw_leger-2-e1564928626259.jpg",
+    "https://dualtron-store.com/wp-content/uploads/2019/08/sw_leger-4-e1564929727813.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8994b408-0ed6-4048-836a-6343c8d64923/1791993830403_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8994b408-0ed6-4048-836a-6343c8d64923/1791993834043_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "de197848-12ad-43e3-94b4-d58cece91f52",
+   "slug": "speedway-leger-pro",
+   "name": "Speedway Leger Pro",
+   "brand": "Speedway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167623489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167628844_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167635099_0.png",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-main-product-image.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-white-side.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-front.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-rear.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-folded.jpg",
+    "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-handlebar.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "7b3292b6-d170-4e0b-96bb-cf405e93aef2",
+   "slug": "speedway-mini-4-pro",
+   "name": "Speedway Mini 4 Pro",
+   "brand": "Speedway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7b3292b6-d170-4e0b-96bb-cf405e93aef2/1791637052892_0.png",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Side_extremetoys.webp?v=1752116153",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_pro_front_right_1_1.webp?v=1753749818",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Rear_extremetoys.webp?v=1752116153",
+    "https://dualtron-store.com/wp-content/uploads/2018/07/mini4pro-1.png",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Front_Detail_extremetoys.webp?v=1752116153"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "36612275-ca14-4d62-97df-ba9cc2904302",
+   "slug": "speedway-mini-4-pro-lite",
+   "name": "Speedway Mini 4 Pro Lite",
+   "brand": "Speedway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1791637049134_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1791637050991_0.png",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Side_extremetoys.webp?v=1752116153",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_pro_front_right_1_1.webp?v=1753749818",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Rear_extremetoys.webp?v=1752116153",
+    "https://dualtron-store.com/wp-content/uploads/2018/07/mini4pro-1.png",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Front_Detail_extremetoys.webp?v=1752116153"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

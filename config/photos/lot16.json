@@ -1,0 +1,368 @@
+{
+ "lot": "lot16",
+ "models": [
+  {
+   "id": "4fb8c587-311c-4249-a091-eb08e9999bd2",
+   "slug": "ninebot-max-g2",
+   "name": "Ninebot Max G2",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fb8c587-311c-4249-a091-eb08e9999bd2/1789679660529_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fb8c587-311c-4249-a091-eb08e9999bd2/1791997233588_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fb8c587-311c-4249-a091-eb08e9999bd2/1791997238996_0.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-1_2.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-3_1.png",
+    "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/ninebot-kickscooter-max-g2/images/www_segway_com_wp-content_uploads_2023_06_Frame-1000001943.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "e47d2d83-bd81-41f9-b0b3-81d8238bce93",
+   "slug": "p100s",
+   "name": "P100S",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1782545288170_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1791997253929_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1791997267193_0.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.26.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.39.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.40.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.41.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.42.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.43.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.44.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "35fe7643-24d6-46e3-887e-181d794284c0",
+   "slug": "segway-gt1",
+   "name": "Segway GT1",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1791993528868_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1791993534506_0.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-6006793.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-6244251.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-6389476.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-4056752.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-7377194.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-8097485.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-3421539.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/refurbished-segway-gt1-3429607.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "3b885825-771d-4949-97fc-2317ce71b0c4",
+   "slug": "segway-gt2",
+   "name": "Segway GT2",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1791993521239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1791993525098_0.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/segway-superscooter-gt2-7924005.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/GT2kickscooter2.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/GT2-3..png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/segway-superscooter-gt2-7564047.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/12GT2.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/GT2kickscooter.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/GT2chargingport.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "0c8c9884-40dd-419b-867d-2f2229b6ca48",
+   "slug": "segway-gt3",
+   "name": "Segway GT3",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c8c9884-40dd-419b-867d-2f2229b6ca48/1792167447155_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c8c9884-40dd-419b-867d-2f2229b6ca48/1792167451759_0.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/g/t/gt3-v12.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/g/t/gt3-2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/g/t/gt3-3_1.png",
+    "https://www.powerplanetonline.com/cdnassets/products/111839/segway-patinete-electrico-gt3-e-negro-principal_l.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "de82fc27-dc83-4183-9d5f-2669fd62ac1e",
+   "slug": "segway-ninebot-max-g3",
+   "name": "Segway Ninebot Max G3",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792002493925_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792002502448_0.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g3-1_2.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g3-2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g3-3_1.png",
+    "https://www.powerplanetonline.com/cdnassets/products/111201/segway-ninebot-patinete-electrico-segway-ninebot-max-g3e-principal_l.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "3052f999-de22-49ef-ae65-92266b895003",
+   "slug": "segway-p65",
+   "name": "Segway P65",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1791993542394_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1791993546439_0.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-03.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-04.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-05.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-06.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-11.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-12.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-16.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "c886d269-9194-4363-952b-aa1fd1453dd7",
+   "slug": "segway-zt3-pro",
+   "name": "Segway ZT3 Pro",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1791993538618_0.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-1_1-2.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-2_2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-3.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-2017609.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-5174649.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-3544178.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-5982660.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-4431681.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "b762a3ec-8d3b-4ada-a3a9-72ae388f3721",
+   "slug": "segway-zt3-pro-e",
+   "name": "Segway ZT3 Pro E",
+   "brand": "Segway",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1791993238908_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/111191/segway-patinete-electrico-ninebot-zt3-pro-i-negro-gris-principal_l.webp",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-1_1-2.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-2_2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-3.png",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-2017609.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-kickscooter-zt3-pro-5174649.png",
+    "https://uk-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/zt3-pro/image.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "9c26318e-afb9-4e65-9d2e-91df22098dfa",
+   "slug": "smartgyro-crossover-dual-max-2",
+   "name": "Smartgyro Crossover Dual Max 2",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9c26318e-afb9-4e65-9d2e-91df22098dfa/1792167471439_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/112580/smartgyro-patinete-electrico-crossover-dual-max-2-lr-negro-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112580/smartgyro-patinete-electrico-crossover-dual-max-2-lr-negro-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112580/smartgyro-patinete-electrico-crossover-dual-max-2-lr-negro-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112580/smartgyro-patinete-electrico-crossover-dual-max-2-lr-negro-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112580/smartgyro-patinete-electrico-crossover-dual-max-2-lr-negro-vista-4_ad_l.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ae9c5d82-aaeb-41ca-a36b-44a81db4d6bb",
+   "slug": "smartgyro-k1",
+   "name": "Smartgyro K1",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ae9c5d82-aaeb-41ca-a36b-44a81db4d6bb/1792167538870_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ae9c5d82-aaeb-41ca-a36b-44a81db4d6bb/1792167544854_0.png",
+    "https://contents.mediadecathlon.com/p3139718/k$ab30e8025dc5b28dbefd9faedc069920/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139719/k$d480624dde3979b57cfb4a3af1c2a22d/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139720/k$7411ffb0189d9813047759f5d79c94f1/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139721/k$2c9feeedf528ab784cf03f68e814d351/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139722/k$6dc09060ddfeb1f03fdc327465f266ea/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139723/k$ab5d0e24efb73c847505772fcb48de24/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139725/k$053dcf60c5beaad6d9e5fee98deefea9/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139726/k$159360aec18f1eda873c268608839e65/picture.jpg?format=auto&f=2000x0"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e9618ab3-d6a6-437a-a7ec-e1cf8cfbb88d",
+   "slug": "smartgyro-k5-pro",
+   "name": "Smartgyro K5 Pro",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e9618ab3-d6a6-437a-a7ec-e1cf8cfbb88d/1792167489379_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-vista-4_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/114285/smartgyro-patinete-electrico-k5-pro-negro-azul-purpura-vista-5_ad_l.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "aa03d424-438b-4f72-b655-e85fd3c16163",
+   "slug": "smartgyro-raptor-evo",
+   "name": "Smartgyro Raptor EVO",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aa03d424-438b-4f72-b655-e85fd3c16163/1792167477026_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aa03d424-438b-4f72-b655-e85fd3c16163/1792167482439_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-4_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-5_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111109/smartgyro-patinete-electrico-raptor-evo-gris-vista-6_ad_l.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "1ef743e5-7dea-4bd8-a52c-1ecd52f796e4",
+   "slug": "smartgyro-rockway-gl",
+   "name": "Smartgyro Rockway GL",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://contents.mediadecathlon.com/p3139519/k$f6f9cda57b14101400e759c78e74cd42/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139521/k$9f996646403d77766234de67c7c76360/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139522/k$1e59eb38348f142f5f8744e21453ef38/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139523/k$cb18f7c697fb69d17a0c1d2fc0155877/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139524/k$887f8725cbff603556bfbd8d8f8d9987/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139525/k$6c45d5c5cd830847273c658f21b28892/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139526/k$9f09760dc060b90f61fcea65acbc607c/picture.jpg?format=auto&f=2000x0",
+    "https://contents.mediadecathlon.com/p3139527/k$0ac4b6bf6c190e40d91decf6e5e509d1/picture.jpg?format=auto&f=2000x0",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1ef743e5-7dea-4bd8-a52c-1ecd52f796e4/1792167511216_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1ef743e5-7dea-4bd8-a52c-1ecd52f796e4/1792167518765_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "4d9ba359-76b0-4529-91c6-9329e24fe526",
+   "slug": "smartgyro-rockway-gt",
+   "name": "Smartgyro Rockway GT",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d9ba359-76b0-4529-91c6-9329e24fe526/1792167494454_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d9ba359-76b0-4529-91c6-9329e24fe526/1792167499319_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/112345/smartgyro-patinete-electrico-rockway-gt-negro-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112345/smartgyro-patinete-electrico-rockway-gt-negro-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112345/smartgyro-patinete-electrico-rockway-gt-negro-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112345/smartgyro-patinete-electrico-rockway-gt-negro-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112345/smartgyro-patinete-electrico-rockway-gt-negro-vista-4_ad_l.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b864f8ae-b65f-4ac4-b33b-4145620d82a1",
+   "slug": "smartgyro-rockway-gt-dual",
+   "name": "Smartgyro Rockway GT Dual",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-vista-4_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/111862/smartgyro-patinete-electrico-rockway-gt-dual-autonomia-50km-vista-5_ad_l.webp",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b864f8ae-b65f-4ac4-b33b-4145620d82a1/1792167526640_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "bc003861-6ccc-45b3-8c8e-44c0f0cb3e01",
+   "slug": "smartgyro-rockway-gts",
+   "name": "Smartgyro Rockway GTS",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc003861-6ccc-45b3-8c8e-44c0f0cb3e01/1792167504510_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/112179/smartgyro-patinete-electrico-rockway-gts-autonomia-75km-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112179/smartgyro-patinete-electrico-rockway-gts-autonomia-75km-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112179/smartgyro-patinete-electrico-rockway-gts-autonomia-75km-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112179/smartgyro-patinete-electrico-rockway-gts-autonomia-75km-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112179/smartgyro-patinete-electrico-rockway-gts-autonomia-75km-vista-4_ad_l.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "12c2639f-a351-4cd0-8f88-7a672742700e",
+   "slug": "smartgyro-speedway",
+   "name": "Smartgyro Speedway",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12c2639f-a351-4cd0-8f88-7a672742700e/1791639332052_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12c2639f-a351-4cd0-8f88-7a672742700e/1791997655475_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12c2639f-a351-4cd0-8f88-7a672742700e/1791997662158_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/112995/smartgyro-patinete-electrico-speedway-v2-0-negro-azul-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112995/smartgyro-patinete-electrico-speedway-v2-0-negro-azul-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112995/smartgyro-patinete-electrico-speedway-v2-0-negro-azul-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112995/smartgyro-patinete-electrico-speedway-v2-0-negro-azul-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112995/smartgyro-patinete-electrico-speedway-v2-0-negro-azul-vista-4_ad_l.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "6cda1331-8b28-4e58-8e8c-ae37d3e36f04",
+   "slug": "smartgyro-speedway-pro",
+   "name": "Smartgyro Speedway Pro",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6cda1331-8b28-4e58-8e8c-ae37d3e36f04/1791639335878_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6cda1331-8b28-4e58-8e8c-ae37d3e36f04/1791997684193_0.png",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-principal_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-vista-1_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-vista-2_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-vista-3_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-vista-4_ad_l.webp",
+    "https://www.powerplanetonline.com/cdnassets/products/112671/smartgyro-patinete-electrico-speedway-pro-15-ah-negro-vista-5_ad_l.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "c91c9e6c-8404-452c-8bdb-08d0e444f648",
+   "slug": "smartgyro-z-one-2",
+   "name": "Smartgyro Z-One 2",
+   "brand": "Smartgyro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c91c9e6c-8404-452c-8bdb-08d0e444f648/1792167550962_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c91c9e6c-8404-452c-8bdb-08d0e444f648/1792167556174_0.png",
+    "https://www.imoveblue.es/8403-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://www.imoveblue.es/8402-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://www.imoveblue.es/8404-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://www.imoveblue.es/8405-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://www.imoveblue.es/8406-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://www.imoveblue.es/8407-thickbox_default/smartgyro-z-one-2.jpg",
+    "https://m.media-amazon.com/images/I/61ALCkaC1dL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71lvIHtkDHL._AC_SL1500_.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

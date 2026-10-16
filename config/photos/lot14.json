@@ -1,0 +1,425 @@
+{
+ "lot": "lot14",
+ "models": [
+  {
+   "id": "3b3e10ce-c312-4ba6-b535-58de53e96826",
+   "slug": "niu-kqi-100f",
+   "name": "NIU KQi 100F",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b3e10ce-c312-4ba6-b535-58de53e96826/1791992619780_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b3e10ce-c312-4ba6-b535-58de53e96826/1791992623447_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-45.jpg?v=1766985413",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi100F_G.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-90.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-90.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-45.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Front.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Black_Left-45.jpg?v=1776064677",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_100F_B.jpg?v=1776064677"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e574cb81-4611-4c33-a57f-4c5167e69f23",
+   "slug": "niu-kqi-100p",
+   "name": "NIU KQi 100P",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e574cb81-4611-4c33-a57f-4c5167e69f23/1791992615729_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Gray_Left-90.jpg?v=1766985396",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Gray_Right-45.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Black_Right-90.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Gray_Front.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Black_Left-45_6e4ca58d-1578-4dac-8340-cb9b7bfd9c6e.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Black_Left-90_9e19ae92-8465-486f-9007-893919dadb5b.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Black_Right-45_cd5a3e22-4e5e-4d4f-ac3b-e0db6a9224b5.jpg?v=1776064693",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100P_US_Basic-Render_Black_Right-90_1f2a4fb1-52b0-4678-ad28-0827365da738.jpg?v=1776064693"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "388c7abd-bdac-4280-852b-12f2f6c9ba4b",
+   "slug": "niu-kqi-200p",
+   "name": "NIU KQi 200P",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/388c7abd-bdac-4280-852b-12f2f6c9ba4b/1791992305798_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/388c7abd-bdac-4280-852b-12f2f6c9ba4b/1791992310639_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/EU_K200P.jpg?v=1766985443",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-200P_Basic-Render_Gray_Side.jpg?v=1776064635",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-200P_Basic-Render_Gray_Rear-45.jpg?v=1776064635",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-200P_Basic-Render_Gray_Rear.jpg?v=1776064635",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-200P_Basic-Render_Gray_Front.jpg?v=1776064635",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_200P.png?v=1776064635"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "68d5deb5-b279-45b8-9530-f8185b7c7caa",
+   "slug": "niu-kqi-300p",
+   "name": "NIU KQi 300P",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/68d5deb5-b279-45b8-9530-f8185b7c7caa/1791992628439_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-P.jpg?v=1768810614",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-P-_2_63012985-0312-42fa-83cf-4b050db3bb46.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300P_180__White.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300P_0__White.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-P-_2.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-P_2c6f1d46-92b5-4c8b-b988-10b79433b122.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300P_180__Black.jpg?v=1776064736",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300P_0__Black.jpg?v=1776064736"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "c51022c0-eb21-466d-bd25-4546bd6a9a3a",
+   "slug": "niu-kqi-300x",
+   "name": "NIU KQi 300X",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c51022c0-eb21-466d-bd25-4546bd6a9a3a/1791639115956_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c51022c0-eb21-466d-bd25-4546bd6a9a3a/1791639127064_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X.jpg?v=1768810569",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X-2.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_0__Space-Gray_8ff2aa47-42a2-4b3a-a76e-b5bcdb5eeaf8.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Space-Gray.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_45__Black_1024x1024_75228b52-6345-4444-805a-437d4d2bc4e5.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_90__Black_1024x1024_765409a5-4211-41d3-af25-49b818e43e8c.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_0__Black.jpg?v=1776064720",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Black_ae55504a-24f3-449f-aa20-f1371bd100b3.jpg?v=1776064720"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "ef9be1df-2097-4ae1-94e9-54b8f0175c7f",
+   "slug": "niu-kqi-air",
+   "name": "NIU KQi Air",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ef9be1df-2097-4ae1-94e9-54b8f0175c7f/1791639097038_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ef9be1df-2097-4ae1-94e9-54b8f0175c7f/1791639099462_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/3_e3c773b1-541a-4943-82fe-993e21d2a8da.jpg?v=1766985318",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/cf9297a0e939385ac9804f0d61d54fc6_27226fce-2c7a-4ab5-b93e-9f924e95c7b2.jpg?v=1776064749",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/2_380f82e6-5ef5-4e59-89dc-7ed817faab06.jpg?v=1776064749",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/6_a0ea3a32-0590-404b-a3d2-91f1bef0705e.jpg?v=1776064749",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-Air_Red_Let-45_1024x1024_84caabdf-495c-408a-abd8-e4ca0fea1825.jpg?v=1776064749",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-Air_Red_Left_1024x1024_886d7cf1-86ba-4d6c-9aa9-ac4aa37c5300.jpg?v=1776064749",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_Air_58a24e91-9d34-4154-8ce1-3eb8c14ed3af.png?v=1776064749"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "cec56777-c1d0-4a15-b830-36d9f02a80a3",
+   "slug": "niu-kqi-air-x",
+   "name": "NIU KQi Air X",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cec56777-c1d0-4a15-b830-36d9f02a80a3/1791992632365_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cec56777-c1d0-4a15-b830-36d9f02a80a3/1791992636679_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/4_7a4f979d-bbfb-4b73-b6c6-9ea7de61cf60.jpg?v=1766985385",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/3_cdc2850b-e13b-4d3b-b133-d8384b2b9a50.jpg?v=1776064707",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/cf9297a0e939385ac9804f0d61d54fc6_8f1a0054-f246-497d-afbb-cb48190eebc2.jpg?v=1776064707",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/2_d0b6e62b-6f7d-4792-bc5d-b1497e7c71c5.jpg?v=1776064707",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/6_f8bf6973-a459-47f2-ad97-cb3e018d383b.jpg?v=1776064707",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_Air_X.png?v=1776064707"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "84df766a-fa5a-4a06-b91d-a057b53b4432",
+   "slug": "niu-kqi1-pro",
+   "name": "NIU KQi1 Pro",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/84df766a-fa5a-4a06-b91d-a057b53b4432/1792001619703_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/84df766a-fa5a-4a06-b91d-a057b53b4432/1792001629424_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/84df766a-fa5a-4a06-b91d-a057b53b4432/1792001635168_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_gray-3.webp?v=1726026127",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_gray-2.webp?v=1766985969",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_gray-5.webp?v=1766985969",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_gray.webp?v=1766985969",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_White_-5.webp?v=1766985969",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_white-6.webp?v=1766985969",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_White-4.webp?v=1766985969"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "23a51d9c-7c9a-4f0d-a7b0-f79247c50f5c",
+   "slug": "niu-kqi1-sport",
+   "name": "NIU KQi1 Sport",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/23a51d9c-7c9a-4f0d-a7b0-f79247c50f5c/1791992314910_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/23a51d9c-7c9a-4f0d-a7b0-f79247c50f5c/1791992318010_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/23a51d9c-7c9a-4f0d-a7b0-f79247c50f5c/1791992321822_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1.jpg?v=1696230254",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_2.jpg?v=1752136539",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_3.jpg?v=1752136539",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_5.jpg?v=1752136539",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_4.jpg?v=1752136539",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/7_627cc0fc-4ce8-47a7-8b2a-a4646a2faf01.jpg?v=1752136539",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/2_461d8d3b-6a64-469b-b660-e988abda339e.jpg?v=1752136539"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "afbe548a-0542-41dc-8907-b79a3e01ea2c",
+   "slug": "niu-kqi2-pro",
+   "name": "NIU KQi2 Pro",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/afbe548a-0542-41dc-8907-b79a3e01ea2c/1791992604266_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-grey-4.jpg?v=1741076124",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-white-2.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-grey-3.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-white-1.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter6.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/2_1150dd74-b9ae-4d5f-843a-f01333e2cb9a.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/3_2735445b-a386-4eb6-9c8f-fa0081a379e5.jpg?v=1773998058",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter9.jpg?v=1773998058"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "29505040-1644-4b0e-8d2b-4c7186f301b3",
+   "slug": "niu-kqi3-max",
+   "name": "NIU KQi3 Max",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/29505040-1644-4b0e-8d2b-4c7186f301b3/1791639106734_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/29505040-1644-4b0e-8d2b-4c7186f301b3/1791639110567_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/1500.jpg?v=1741076118",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/1500_5.jpg?v=1773998080",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/1500_2.jpg?v=1773998080",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/1_461973f3-6211-4f47-8caa-ae36c2a8a7d2.jpg?v=1773998080",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/d2decab5bf0bee83fe3d9f3e4f722c7e.jpg?v=1773998080",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi3_Max.png?v=1773998080"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "5f9fd9d1-fe8d-46ce-b951-ec90550b618b",
+   "slug": "niu-kqi3-pro",
+   "name": "NIU KQi3 Pro",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f9fd9d1-fe8d-46ce-b951-ec90550b618b/1791639093328_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f9fd9d1-fe8d-46ce-b951-ec90550b618b/1791997394267_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3ProElectricKickScooterBlack1.jpg?v=1640830318",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu_Kqi3_Pro_Electric_Kick_Scooter_gold_1.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/2.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/3.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Pro-Electric-Kick-Scooter-Black-3.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Pro-Electric-Kick-Scooter-gold-2.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Pro-Electric-Kick-Scooter-Black-4.jpg?v=1773998070",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Pro-Electric-Kick-Scooter-Black-5.jpg?v=1773998070"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "20e42cdc-a6e9-4a54-a209-09aa72585345",
+   "slug": "niu-kqi3-sport",
+   "name": "NIU KQi3 Sport",
+   "brand": "NIU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20e42cdc-a6e9-4a54-a209-09aa72585345/1791992611960_0.png",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3SportElectricKickScooterwhite1.jpg?v=1640830366",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu_Kqi3_Sport_Electric_Kick_Scooter_blue_1.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu_Kqi3_Sport_Electric_Kick_Scooter_black_1.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu_Kqi3_Sport_Electric_Kick_Scooter_red_1.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Sport-Electric-Kick-Scooter-white-2.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Sport-Electric-Kick-Scooter-white-3.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Sport-Electric-Kick-Scooter-white-4.jpg?v=1775032421",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi3-Sport-Electric-Kick-Scooter-white-5.jpg?v=1775032421"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "6a443d72-bd85-4a3c-83a6-d3409299f57d",
+   "slug": "ootd-s10",
+   "name": "Ootd S10",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6a443d72-bd85-4a3c-83a6-d3409299f57d/1792166959970_0.png",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.7.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.2.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.11.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.10.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.4.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.1.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.16.jpg?v=1745413249",
+    "https://cdn.shopify.com/s/files/1/0910/6318/9797/files/S10.14.jpg?v=1745413249"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "44fb9c90-a8c7-4107-9318-7ec94fdd12ff",
+   "slug": "ootd-s30",
+   "name": "Ootd S30",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44fb9c90-a8c7-4107-9318-7ec94fdd12ff/1792166965035_0.png",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-main.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-cover.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-1.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-2.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-3.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-5.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-1.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-2.png.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4cb7858e-23a6-474c-8f08-b5679619a4e1",
+   "slug": "ootd-sr1",
+   "name": "Ootd SR1",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4cb7858e-23a6-474c-8f08-b5679619a4e1/1792166927561_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4cb7858e-23a6-474c-8f08-b5679619a4e1/1792166932863_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4cb7858e-23a6-474c-8f08-b5679619a4e1/1792166938246_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR1-SIDE-BYW.jpg?v=1778838118",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR1-FRONT-BYW.jpg?v=1778838118",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR1-BACK-BYW.jpg?v=1778838118",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR1-FOLD-BYW.jpg?v=1778838118",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_26.webp?v=1773021883",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_24.webp?v=1773021883",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_23.webp?v=1773021883"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "dcbabc60-efa3-484c-bd1f-ffba48094292",
+   "slug": "ootd-sr3",
+   "name": "Ootd SR3",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dcbabc60-efa3-484c-bd1f-ffba48094292/1792166943724_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dcbabc60-efa3-484c-bd1f-ffba48094292/1792166948961_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dcbabc60-efa3-484c-bd1f-ffba48094292/1792166954181_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR3-SIDE-BYW.jpg?v=1778313519",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR3-FRONT-BYW.jpg?v=1778313519",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR3-BACK-BYW.jpg?v=1778313519",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/SR3-FOLD-BYW.jpg?v=1778313519"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "6bd4e4a5-7203-4a9d-8d3d-ee340c46ffcc",
+   "slug": "ootd-t10",
+   "name": "Ootd T10",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6bd4e4a5-7203-4a9d-8d3d-ee340c46ffcc/1791661345490_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6bd4e4a5-7203-4a9d-8d3d-ee340c46ffcc/1791997635996_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10-SIDE-BYW.png?v=1775121330",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10-SIDE-BGY.jpg?v=1775880629",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10-FRONT-BGY.jpg?v=1775121146",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10-BACK-BGY.jpg?v=1775121146",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10-FOLD-BGY.jpg?v=1775121146",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t10-main-image_20.webp?v=1784103018",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t10-main-image_12.webp?v=1784103018",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t10-main-image_18.webp?v=1784103018"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "942cb028-31ee-4973-89bf-0084d40a94a9",
+   "slug": "ootd-t10-pro",
+   "name": "Ootd T10 Pro",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/942cb028-31ee-4973-89bf-0084d40a94a9/1791661363744_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/942cb028-31ee-4973-89bf-0084d40a94a9/1791997645266_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/942cb028-31ee-4973-89bf-0084d40a94a9/1791997650683_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10pro-SIDE-BYW26-8-15.jpg?v=1786784183",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10pro-FRONT-BYW.jpg?v=1776242821",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10pro-BACK-BYW26-8-15.jpg?v=1786784183",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T10pro-FOLD-BYW26-8-15.jpg?v=1786784183",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t0pro-main-image_24.webp?v=1769067659",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t0pro-main-image_26.webp?v=1769067659",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-t0pro-main-image_13.webp?v=1769067659"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "390cfe8b-5dc7-4d71-b323-a0601f9e5da0",
+   "slug": "ootd-t90",
+   "name": "Ootd T90",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/390cfe8b-5dc7-4d71-b323-a0601f9e5da0/1792166970305_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T90-1-1.jpg?v=1777434649",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T90-3.jpg?v=1777434649",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T90-30.jpg?v=1777434649",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T90-5.jpg?v=1777434649",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T90-ZD-82.jpg?v=1777434649",
+    "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/t90.png?v=1765158435"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "37ff3593-16f5-450a-9c96-6c302d90e549",
+   "slug": "oxelo-md500e",
+   "name": "Oxelo MD500E",
+   "brand": "Oxelo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1791664305974_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1791997640319_0.png",
+    "https://contents.mediadecathlon.com/p3235610/k$77cb8389bad28eb0bc80c09d1a13ab41/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235597/k$ae447e855f34c85e4c3ccc0ae551484f/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235603/k$54ae83baa86b28cc37378ac29668dbf1/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3233922/k$ac9fc1e9b00f2f597e98e596c5818757/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235608/k$3ec201e6996b2264d668a686307a6ef6/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235609/k$5f1de1a3bd47b5ffb23638cd918d81a5/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235599/k$62929778836d86524038808fc9eee311/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235612/k$54b90920b6e10baed214b3162a6eda9b/picture.jpg?format=auto&f=3000x0"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "1e9a0d8c-8850-41fa-b877-4708db1dd0a9",
+   "slug": "oxelo-sd500e",
+   "name": "Oxelo SD500E",
+   "brand": "Oxelo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1791664302808_0.png",
+    "https://contents.mediadecathlon.com/p3235602/k$dcc9772035013192f8555aa9a87e0746/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235601/k$9058e2bd3887d0b9edb89f9917bb8adf/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235606/k$92af11f9200597418864ab8dd8d43606/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235607/k$b28c24f6584075cb49f47284ab1a41bc/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235611/k$fabf673b67d054ab1426479f3c1408d2/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3235613/k$1ae68b3f94a777088138eb28f5aa8f76/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p3233924/k$769786b0192cf1b5784d4c0bd3b9c227/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/p2790581/k$e9c08e445637fc9352b74575d69cc4ba/defaut.jpg?format=auto&f=3000x0"
+   ],
+   "n_old": 1,
+   "bad": false
+  }
+ ]
+}

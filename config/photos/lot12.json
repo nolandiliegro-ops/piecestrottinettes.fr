@@ -1,0 +1,406 @@
+{
+ "lot": "lot12",
+ "models": [
+  {
+   "id": "ac87c3ac-d036-444c-abf8-1d0a4709142a",
+   "slug": "laotie-es10p",
+   "name": "Laotie ES10P",
+   "brand": "Laotie",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ac87c3ac-d036-444c-abf8-1d0a4709142a/1792166785043_0.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg",
+    "https://icbimg3.chiccdn.com/images/BA/59/4ae3e5af-1ef8-438f-a28e-474b9f977563.jpg",
+    "https://icbimg3.chiccdn.com/images/3A/9C/789bf8b4-207a-4cb0-a5b5-aea9e48321ad.jpg",
+    "https://icbimg3.chiccdn.com/images/34/91/3bf6ceda-45ce-44c7-a239-e23f7d4159f9.jpg",
+    "https://icbimg3.chiccdn.com/images/1C/07/a83c4bf5-3262-4f82-a32a-7b2b95c09a8a.jpg",
+    "https://icbimg3.chiccdn.com/images/1F/B9/9434392b-70b9-4338-b343-c65de53d6c5d.jpg",
+    "https://icbimg3.chiccdn.com/images/96/5D/31e0b755-8dd6-45d7-8a2d-bc5449f807a3.jpg",
+    "https://icbimg3.chiccdn.com/images/C5/54/5356b31a-ad89-4f4a-9f57-367367564ad8.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4",
+   "slug": "laotie-es19",
+   "name": "Laotie ES19",
+   "brand": "Laotie",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792166779668_0.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//7F/A2/112a8875-e6cc-4930-b939-b9003b4e491a.jpg",
+    "https://icbimg3.chiccdn.com/images/5E/BC/0a1b471b-b330-453e-a1a1-3a20bfeac9e5.jpg",
+    "https://icbimg3.chiccdn.com/images/CC/B3/7f602c9d-c3b0-422e-b79a-d0a9e45d18a6.jpg",
+    "https://icbimg3.chiccdn.com/images/04/6C/d98da709-ed3f-4f97-b974-485e94d08380.jpg",
+    "https://icbimg3.chiccdn.com/images/17/A8/5ae0e566-b431-4d46-a25e-cc27eddda4f7.jpg",
+    "https://icbimg3.chiccdn.com/images/9E/69/3c30c1ea-5d1c-4f91-aed8-93eec2e13dd0.jpg",
+    "https://icbimg3.chiccdn.com/images/7A/C1/4f424bb8-087d-4b0c-a4db-b8f8f2319628.jpg",
+    "https://icbimg3.chiccdn.com/images/3E/BC/63193c97-2b86-401e-9d0c-fe610673c23e.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048",
+   "slug": "laotie-h6-pro",
+   "name": "Laotie H6 Pro",
+   "brand": "Laotie",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048/1792166790476_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048/1792166795967_0.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//10/29/ad661e4e-003d-4a92-b618-13d0901350ed.jpg.webp",
+    "https://icbimg3.chiccdn.com/images/08/03/17e23897-74b2-4b3f-a86d-7736514eea3a.jpg",
+    "https://icbimg3.chiccdn.com/images/95/5C/054dbf1b-ae99-4179-9c60-7c14c5ccbe50.jpg",
+    "https://icbimg3.chiccdn.com/images/99/18/0acfeb4d-162a-4bfe-93b1-92acf6e3e4d2.jpg",
+    "https://icbimg3.chiccdn.com/images/5D/78/e39b2087-2f5a-4e4d-9c67-b2c4d7c5c92c.jpg",
+    "https://icbimg3.chiccdn.com/images/89/DB/1b47f46b-6392-4e94-a777-582af871e303.jpg",
+    "https://icbimg3.chiccdn.com/images/B8/91/efd94f61-a8bd-425b-a9cf-3c4814b8dec7.jpg",
+    "https://icbimg3.chiccdn.com/images/25/05/6b3a29c9-b1d6-40e7-a66c-21d1f9d2634a.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "436e7f75-6b6b-47da-a231-f9fd83ab43fd",
+   "slug": "laotie-sr10",
+   "name": "Laotie SR10",
+   "brand": "Laotie",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1791682693458_0.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+    "https://icbimg3.chiccdn.com/images/65/DD/ed680263-98dd-4fee-bc9d-e42c8a7f016a.jpg",
+    "https://icbimg3.chiccdn.com/images/03/A0/98f5da05-359e-4d0f-aecc-caca885cad5d.jpg",
+    "https://icbimg3.chiccdn.com/images/83/05/14d6751d-92e7-4b12-a510-94fcca64ebe0.jpg",
+    "https://icbimg3.chiccdn.com/images/FF/9B/10346fb6-e070-48e0-8fad-2b0f7b783055.jpg",
+    "https://icbimg3.chiccdn.com/images/E2/CF/ea5a8a1b-34c3-45b3-bdb9-253281cf7666.jpg",
+    "https://icbimg3.chiccdn.com/images/F3/83/6362b8c7-3793-4b13-bbe3-9f3483fe3a31.jpg",
+    "https://icbimg3.chiccdn.com/images/59/97/3ae797f6-a49d-4196-83c7-c9fab8e47565.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "643d4080-2214-41e7-926e-b0040b8f7529",
+   "slug": "laotie-ti30",
+   "name": "Laotie Ti30",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//89/4C/33860186-4ecb-4a02-8a1d-00af123fe214.jpg",
+    "https://icbimg3.chiccdn.com/images/B5/A9/1ae380d4-3047-4788-94e1-9487aef63bfb.jpg",
+    "https://icbimg3.chiccdn.com/images/74/9B/11b092cf-9fcb-49da-8e2c-26943770ae66.jpg",
+    "https://icbimg3.chiccdn.com/images/46/4B/c37996a4-d8c3-4732-8b7b-9726ef7a48db.jpg",
+    "https://icbimg3.chiccdn.com/images/0F/30/ec2510db-90a2-48a8-b0a6-f0b79cff892d.jpg",
+    "https://icbimg3.chiccdn.com/images/5F/64/9c854a5c-f743-423b-8b17-edaa5672c0ba.jpg",
+    "https://icbimg3.chiccdn.com/images/52/B6/9b3c7c68-071d-4ff7-b057-3776d143258e.jpg",
+    "https://icbimg3.chiccdn.com/images/D8/A2/08d26f9e-a888-4788-9f9f-1043091aaf5d.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1791682691456_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "529da8e2-907a-40a4-8c25-d198197bd323",
+   "slug": "micro-explorer",
+   "name": "Micro Explorer",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1791999901116_0.png",
+    "https://app.ridereview.com/storage/v1/object/public/airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/hero_image_attPihhQWs0bSD90x",
+    "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/additional_image_attSXo32S0XOoj1ar",
+    "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/additional_image_attiVLYEABCUlStNJ"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "863a9fc0-7fc3-435f-b1d7-8c4155ef9662",
+   "slug": "micro-explorer-ii",
+   "name": "Micro Explorer II",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792166822517_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792166827076_0.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-1-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-2-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-3-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-4-min.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "be6176d5-f7eb-43e5-8819-776e5e22470e",
+   "slug": "micro-merlin",
+   "name": "Micro Merlin",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792166808595_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792166816632_0.png",
+    "https://app.ridereview.com/storage/v1/object/public/airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/hero_image_att6o7B0iP6RtHXgN",
+    "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/additional_image_attvtj5frrFViobDm",
+    "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/additional_image_attEofczehJKUeGLT"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "bc51c93a-efbf-4654-ab04-302669583825",
+   "slug": "micro-merlin-ii",
+   "name": "Micro Merlin II",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791664110416_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791997630764_0.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-1-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-2-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-3-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-4-min.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "cd1d87f0-a856-40fa-b7f5-e79df6b407c3",
+   "slug": "micro-x21",
+   "name": "Micro X21",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cd1d87f0-a856-40fa-b7f5-e79df6b407c3/1791664114391_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cd1d87f0-a856-40fa-b7f5-e79df6b407c3/1791664117830_0.png",
+    "https://micro-mobility.fr/10072-product_main_2x/trottinette-electrique-micro-x21.jpg",
+    "https://micro-mobility.fr/9953-product_main_2x/trottinette-electrique-micro-x21.jpg",
+    "https://micro-mobility.fr/9954-product_main_2x/trottinette-electrique-micro-x21.jpg",
+    "https://micro-mobility.fr/9955-product_main_2x/trottinette-electrique-micro-x21.jpg",
+    "https://micro-mobility.fr/9956-product_main_2x/trottinette-electrique-micro-x21.jpg",
+    "https://micro-mobility.fr/10073-product_main_2x/trottinette-electrique-micro-x21.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e92dcc6a-d15e-4eb6-ad77-41dea0aa8193",
+   "slug": "nami-blast",
+   "name": "Nami Blast",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1791942894441_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1791942896300_0.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_1_.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_2_.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_3_.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/blast-1.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-14@2x.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b3ce1ce4-857f-4215-8334-84f275e10ce2",
+   "slug": "nami-blast-2-max",
+   "name": "Nami Blast 2 Max",
+   "brand": "Nami",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_01.png?v=1739392508",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_02.png?v=1739392516",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_03.png?v=1739392524",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_04.png?v=1739392531",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_05.png?v=1739392538",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_06.png?v=1739392546",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_07.png?v=1739392554",
+    "https://fastride.fr/18055-large_default/trottinette-electrique-nami-blast-2-max-by-fastride.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b3ce1ce4-857f-4215-8334-84f275e10ce2/1792166858393_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b3ce1ce4-857f-4215-8334-84f275e10ce2/1792166863664_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "2cad5810-c00a-470f-bc56-051a8d4b0f6a",
+   "slug": "nami-blast-max",
+   "name": "Nami Blast Max",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792166837793_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792166842519_0.png",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-1.jpg?v=1741099576",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-3.jpg?v=1741099576",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-4.jpg?v=1741099576",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-5.jpg?v=1741099576",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-6.jpg?v=1741099576",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-7.jpg?v=1741099576",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-14@2x-1.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Blast-Max-Hero-Shot.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "90784d31-a431-4f78-9937-2014139ba54b",
+   "slug": "nami-burn-e",
+   "name": "Nami Burn-E",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1791943173105_0.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2021/12/Nami-Burn-e-Viper.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/viper-2-2-3.jpg?v=1698854709",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/nami42.jpg?v=1699974391",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded.jpg?v=1728295617",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnErear.jpg?v=1728295647",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiRear.jpg?v=1728296037",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnFronttyre.jpg?v=1728295971"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "175d33ce-e14f-4f60-bf6a-495434a19ff9",
+   "slug": "nami-burn-e-2",
+   "name": "Nami Burn-E 2",
+   "brand": "Nami",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/viper-2-2-3_a5f20f0c-1fa4-440a-9d70-f73e4eab5682.jpg?v=1699974243",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded_1ca34a01-0981-474f-a1dd-5324e00c7f1f.jpg?v=1728296814",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/burne2rear_610496a6-dd9d-4f76-a186-902ca6fe4d52.jpg?v=1728296747",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnErear_83f0a09e-e7b3-4fb9-b743-e755ebf124be.jpg?v=1728296766",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiRear_ac5e1f17-05c2-45d8-bc1e-28f8a82ee4ed.jpg?v=1728296780",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/nami42_23c5a326-f014-4581-b2db-4f347532def0.jpg?v=1699974243",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnFronttyre_902f8ba3-9cc0-43e0-b6e9-0d1dead94ac9.jpg?v=1728296843",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiBoard_61c945c2-06a4-445f-b6c1-95c8f6ae0da2.jpg?v=1728296829",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792000276790_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "b8e4da68-45b3-4a69-85a5-3604f43001e8",
+   "slug": "nami-burn-e-3",
+   "name": "Nami Burn-E 3",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8e4da68-45b3-4a69-85a5-3604f43001e8/1791638656282_0.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-hero-Shot.jpg",
+    "https://nami-electric.com/wp-content/uploads/2025/07/burn-e-2-min.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-1.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-Front-Fork.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "36ace91c-484b-4a70-84b3-39a630e550f6",
+   "slug": "nami-burn-e-3-max",
+   "name": "Nami Burn-E 3 Max",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36ace91c-484b-4a70-84b3-39a630e550f6/1791638667017_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36ace91c-484b-4a70-84b3-39a630e550f6/1791638678338_0.png",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_01.png?v=1739391813",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_02.png?v=1739391820",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_03.png?v=1739391828",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_04.png?v=1739391834",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_05.png?v=1739391841",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_06.png?v=1739391849",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-6.png",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded.jpg?v=1728295617"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a6060534-e969-4e3f-a9d8-7f4a36f3f803",
+   "slug": "nami-klima",
+   "name": "Nami Klima",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1791943175291_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1791943177136_0.png",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/3_69b23ac8-4d53-4735-b112-f04c7114641e.jpg?v=1728297411",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/klimafolded.jpg?v=1728297399",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/NAMIKLIMAelectricscooter_13.jpg?v=1699974410",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/12.jpg?v=1728297550",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/4.jpg?v=1728297451",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Klima_2024_01.png?v=1739392651",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Klima_2024_02.png?v=1739392658",
+    "https://nami-electric.com/wp-content/uploads/2025/07/klima-2-min.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "aefced2e-d45d-4bd5-b538-69c05dab2360",
+   "slug": "nami-klima-max",
+   "name": "Nami Klima Max",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aefced2e-d45d-4bd5-b538-69c05dab2360/1792000288034_0.png",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_1.webp?v=1779455667",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_3.webp?v=1779455667",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_2.webp?v=1779455666",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-5.png",
+    "https://fastride.fr/18151-large_default/trottinette-electrique-nami-klima-max-by-fastride.jpg",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Klima-1.jpg?v=1741101661",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Klima-2.jpg?v=1741101661"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "8f413f11-fdde-4d20-bc78-0a6c8ad4e9b1",
+   "slug": "nami-klima-one",
+   "name": "Nami Klima One",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8f413f11-fdde-4d20-bc78-0a6c8ad4e9b1/1792166847880_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8f413f11-fdde-4d20-bc78-0a6c8ad4e9b1/1792166852780_0.png",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_1.png?v=1779711840",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_2.png?v=1727275899",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_3.png?v=1727275898",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_4.png?v=1727275899",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_5.png?v=1727275898",
+    "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_6.png?v=1727275898",
+    "https://nami-electric.com/wp-content/uploads/2025/07/klima-one-1-min.png",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2024/09/Nami-Klima-One-hero-Shot.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4987c7d4-d7da-483f-9517-bd645fe75f29",
+   "slug": "nami-stellar",
+   "name": "Nami Stellar",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4987c7d4-d7da-483f-9517-bd645fe75f29/1791942889631_0.png",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_01.png?v=1739391714",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_02.png?v=1739391722",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_03.png?v=1739391729",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_04.png?v=1739391736",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_05.png?v=1739391743",
+    "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_06.png?v=1739391752",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Stellar-1-min.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-3.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ebb1cf11-35ef-4d69-b2df-5278988547ff",
+   "slug": "nami-superstellar",
+   "name": "Nami Superstellar",
+   "brand": "Nami",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1791942892304_0.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/super-stellar-1-min.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-7.png",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-1.jpg?v=1741102617",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-2.jpg?v=1741102617",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-3.jpg?v=1741102617",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-4.jpg?v=1741102617",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-5.jpg?v=1741102617",
+    "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-6.jpg?v=1741102617"
+   ],
+   "n_old": 1,
+   "bad": false
+  }
+ ]
+}

@@ -1,0 +1,381 @@
+{
+ "lot": "lot15",
+ "models": [
+  {
+   "id": "d7030f71-4701-4a3c-9de6-051a65ee0897",
+   "slug": "punk-rebel",
+   "name": "Punk Rebel",
+   "brand": "Punk",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7030f71-4701-4a3c-9de6-051a65ee0897/1792167407930_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7030f71-4701-4a3c-9de6-051a65ee0897/1792167415722_0.png",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/fd11ecce25b7abcdac4b9053ce04f383d53e3cb1_1.png?v=1773300517",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5196_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5197_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5198_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5200_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5201_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5199_2.jpg?v=1775712393",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/fa9c94658c3fa21e15f55467791d2313b736b3b2.jpg?v=1775712062"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d7796d17-9beb-4612-a9ae-218c73c08bde",
+   "slug": "punk-rider",
+   "name": "Punk Rider",
+   "brand": "Punk",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1791639138389_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1791997668049_0.png",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-10.png?v=1773231981",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-9_1.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-1.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5194.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-11-07-08-24-10_2.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-10-14-13-26-50.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-10-14-13-26-50_2.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5174.jpg?v=1775711751"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d5eb0e25-9c73-4f0f-9d5c-b1233e156069",
+   "slug": "punk-rider-pro",
+   "name": "Punk Rider Pro",
+   "brand": "Punk",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1791639143383_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1791639146777_0.png",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-10.png?v=1773231981",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-9_1.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-1.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5193.jpg?v=1775711627",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5194.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5173.jpg?v=1775711627",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-10-14-13-26-48.jpg?v=1775711627",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-11-07-08-24-10_3.jpg?v=1775711627"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "2ec623f1-fc6b-42ae-83ee-c401e24a0c4f",
+   "slug": "pure-air-6-pro-suspension",
+   "name": "Pure Air⁶ Pro+ Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2ec623f1-fc6b-42ae-83ee-c401e24a0c4f/1782560516667_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2ec623f1-fc6b-42ae-83ee-c401e24a0c4f/1791997314755_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805481.jpg?v=1781712730",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805479.jpg?v=1781712674",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805478.jpg?v=1781712641",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805477.jpg?v=1781712614",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805476.jpg?v=1781712580",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805475.jpg?v=1781712552",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805474.jpg?v=1781712521",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805473.jpg?v=1781712496"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "eae74e22-1b2b-4f34-9c10-0f0991f1e9d2",
+   "slug": "pure-air-6-suspension",
+   "name": "Pure Air⁶ Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eae74e22-1b2b-4f34-9c10-0f0991f1e9d2/1782560514966_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eae74e22-1b2b-4f34-9c10-0f0991f1e9d2/1791997337542_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805503.jpg?v=1781713393",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805501.jpg?v=1781713337",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805500.jpg?v=1781713303",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805499.jpg?v=1781713274",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805498.jpg?v=1781713242",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805497.jpg?v=1781713213",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805496.jpg?v=1781713179",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805495.jpg?v=1781713151"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "bb229a42-838a-4c4a-9834-5af3b205f65b",
+   "slug": "pure-air-6-ultra-max-suspension",
+   "name": "Pure Air⁶ Ultra Max Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bb229a42-838a-4c4a-9834-5af3b205f65b/1782560520136_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bb229a42-838a-4c4a-9834-5af3b205f65b/1791997318693_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805436.jpg?v=1781711378",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1253735507.jpg?v=1786374672",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805433.jpg?v=1781711293",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805432.jpg?v=1781711260",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805431.jpg?v=1781711232",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805430.jpg?v=1781711202",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805429.jpg?v=1781711173",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805428.jpg?v=1781711140"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e6917b2f-64ee-4cf4-8800-8d22155a0026",
+   "slug": "pure-air-6-ultra-suspension",
+   "name": "Pure Air⁶ Ultra Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6917b2f-64ee-4cf4-8800-8d22155a0026/1782560518280_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6917b2f-64ee-4cf4-8800-8d22155a0026/1791997327704_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6917b2f-64ee-4cf4-8800-8d22155a0026/1791997331275_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805459.jpg?v=1781712072",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1253735508.jpg?v=1786374702",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805456.jpg?v=1781711979",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805455.jpg?v=1781711953",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805454.jpg?v=1781711918",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805453.jpg?v=1781711891",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805452.jpg?v=1781711859"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "4b3d9fe8-2b24-4672-81a2-6c9d5c349b30",
+   "slug": "pure-electric-advance",
+   "name": "Pure Electric Advance",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b3d9fe8-2b24-4672-81a2-6c9d5c349b30/1791992929092_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b3d9fe8-2b24-4672-81a2-6c9d5c349b30/1791992933690_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260360392.jpg?v=1790766580",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284680.jpg?v=1790702174",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284674.jpg?v=1790701994",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284673.jpg?v=1790701961",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284672.jpg?v=1790701934",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284671.jpg?v=1790701905",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284670.jpg?v=1790701876",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284669.jpg?v=1790701838"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a04145d7-179e-4889-a1e1-5a8529597377",
+   "slug": "pure-electric-advance-flex",
+   "name": "Pure Electric Advance Flex",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a04145d7-179e-4889-a1e1-5a8529597377/1791992945679_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1238469009.jpg?v=1778803399",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770271.jpg?v=1775006110",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770270.jpg?v=1775006078",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770269.jpg?v=1775006051",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1253735504.jpg?v=1786374759",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770267.jpg?v=1775005995",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770266.jpg?v=1775005958",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770265.jpg?v=1775005930"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "387a8089-21b2-4562-9c2e-79a7c7d3bb90",
+   "slug": "pure-electric-advance-plus",
+   "name": "Pure Electric Advance+",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/387a8089-21b2-4562-9c2e-79a7c7d3bb90/1791992938528_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/387a8089-21b2-4562-9c2e-79a7c7d3bb90/1791992940799_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/387a8089-21b2-4562-9c2e-79a7c7d3bb90/1791992943761_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-platinum-advance-33049019514968.jpg?v=1720747281",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-32930306588760.jpg?v=1720747284",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-32930313437272.jpg?v=1720747288",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-32930305441880.jpg?v=1720747470",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-mercury-grey-advance-33049019482200.jpg?v=1720751430",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-32930312093784.jpg?v=1720751587",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-32930315108440.jpg?v=1720751592"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "7f42445d-bfa8-41ed-b059-5525424e70a3",
+   "slug": "pure-electric-air-3",
+   "name": "Pure Electric Air 3",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f42445d-bfa8-41ed-b059-5525424e70a3/1792002037248_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f42445d-bfa8-41ed-b059-5525424e70a3/1792002043398_0.png",
+    "https://shop910.vip/productsimportimg/fc6778c5eb7567fc2e4c8847e6a46683.webp",
+    "https://shop910.vip/productsimportimg/6f0c21e0ef17b5bae36c5e514d79fedb.webp",
+    "https://shop910.vip/productsimportimg/8d9d9f2385cc2714290dcba897e22015.webp",
+    "https://shop910.vip/productsimportimg/84f3621cd5dbdbeef2fe5255ac3426ab.webp",
+    "https://shop910.vip/productsimportimg/949d5a28c1de4f1aee6376d0ff02ea86.webp",
+    "https://shop910.vip/productsimportimg/2afbc9b53f3853c873eca8d5c3186410.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "1af89d70-8ec4-4d92-98f3-4a420ed65f96",
+   "slug": "pure-electric-air-5",
+   "name": "Pure Electric Air⁵",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1af89d70-8ec4-4d92-98f3-4a420ed65f96/1792167425935_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1af89d70-8ec4-4d92-98f3-4a420ed65f96/1792167430993_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1af89d70-8ec4-4d92-98f3-4a420ed65f96/1792167437111_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1238469017.jpg?v=1778803728",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746285.jpg?v=1774999331",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746284.jpg?v=1774999273",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746283.jpg?v=1774999299",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746282.jpg?v=1774999238",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746281.jpg?v=1774999211",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1230746280.jpg?v=1774999151"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "d245caf3-f810-4bcd-b5b1-8281509c3720",
+   "slug": "pure-electric-air-ultra",
+   "name": "Pure Electric Air⁵ Ultra",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d245caf3-f810-4bcd-b5b1-8281509c3720/1791992918067_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d245caf3-f810-4bcd-b5b1-8281509c3720/1791992920787_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d245caf3-f810-4bcd-b5b1-8281509c3720/1791992923127_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1238469011.jpg?v=1778803545",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762442.jpg?v=1775007011",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762435.jpg?v=1775006951",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762440.jpg?v=1775006978",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762436.jpg?v=1775006893",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762443.jpg?v=1775006920",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1230762444.jpg?v=1775006834"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "30f3ad35-23b5-47ef-8dcd-aec8977da8b2",
+   "slug": "pure-electric-escape-pro",
+   "name": "Pure Electric Escape Pro",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/30f3ad35-23b5-47ef-8dcd-aec8977da8b2/1791992948063_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/30f3ad35-23b5-47ef-8dcd-aec8977da8b2/1791992951612_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1238462108.jpg?v=1778800600",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859388.jpg?v=1775057259",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859387.jpg?v=1775057233",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859386.jpg?v=1775057198",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859385.jpg?v=1775057170",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859384.jpg?v=1775057140",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859383.jpg?v=1775057111",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859382.jpg?v=1775057051"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "904b41de-dfc3-43a9-b05d-5fb8550479ef",
+   "slug": "pure-escape",
+   "name": "Pure Escape",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/904b41de-dfc3-43a9-b05d-5fb8550479ef/1782562733188_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/904b41de-dfc3-43a9-b05d-5fb8550479ef/1791997323381_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805360.jpg?v=1781714082",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805358.jpg?v=1781714021",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805357.jpg?v=1781713993",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805356.jpg?v=1781713961",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805355.jpg?v=1781713933",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805354.jpg?v=1781713900",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805353.jpg?v=1781713873",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805352.jpg?v=1781713839"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "fe8db1c2-4b37-4a62-b55d-b301abd88be3",
+   "slug": "pure-escape-pro-suspension",
+   "name": "Pure Escape Pro+ Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fe8db1c2-4b37-4a62-b55d-b301abd88be3/1782560522270_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fe8db1c2-4b37-4a62-b55d-b301abd88be3/1791997341744_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fe8db1c2-4b37-4a62-b55d-b301abd88be3/1791997345633_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805413.jpg?v=1781710694",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805411.jpg?v=1781710631",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805410.jpg?v=1781710598",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805409.jpg?v=1781710573",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1253735506.jpg?v=1786374641",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805407.jpg?v=1781710513",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805406.jpg?v=1781710479"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "43120a4d-893e-4fe6-b1af-8354d677451b",
+   "slug": "pure-escape-ultra-max-suspension",
+   "name": "Pure Escape Ultra Max Suspension",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43120a4d-893e-4fe6-b1af-8354d677451b/1782560524292_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43120a4d-893e-4fe6-b1af-8354d677451b/1791997349124_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43120a4d-893e-4fe6-b1af-8354d677451b/1791997353563_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805387.jpg?v=1781709912",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805385.jpg?v=1781709854",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805384.jpg?v=1781709820",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805383.jpg?v=1781709793",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1253735505.jpg?v=1786374615",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805381.jpg?v=1781709732",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-ultra-max-suspension-1244805380.jpg?v=1781709700"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "caf52fb6-d83e-4647-9b1b-d314ebc8589d",
+   "slug": "pure-flex",
+   "name": "Pure Flex",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1238469009.jpg?v=1778803399",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770271.jpg?v=1775006110",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770270.jpg?v=1775006078",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770269.jpg?v=1775006051",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-reboxed-1250933431.jpg?v=1784913552",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-reboxed-1250933419.jpg?v=1784913494",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-reboxed-1250933429.jpg?v=1784913461",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-reboxed-1250933428.jpg?v=1784913432",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/caf52fb6-d83e-4647-9b1b-d314ebc8589d/1782560526128_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "0a363475-44bd-49b3-8d21-6d2bd7c74dfc",
+   "slug": "pure-x-mclaren",
+   "name": "Pure x McLaren",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a363475-44bd-49b3-8d21-6d2bd7c74dfc/1790603574281_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a363475-44bd-49b3-8d21-6d2bd7c74dfc/1790603576017_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1240166089.jpg?v=1779470203",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1230822877.jpg?v=1775116347",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1230822876.jpg?v=1775116347",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1230822875.jpg?v=1775116347",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1238469006.jpg?v=1778803760",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798398.jpg?v=1775035540",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798392.jpg?v=1775116288",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798390.jpg?v=1775116288"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}
