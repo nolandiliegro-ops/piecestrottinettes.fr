@@ -1,0 +1,136 @@
+vsett-10-apex #0 PASS ok
+vsett-10-apex #1 PASS ok
+vsett-10-apex #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+vsett-10-apex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+vsett-10-apex #4 WARN cadrage serré
+vsett-10-apex #5 PASS ok
+vsett-10-apex #6 WARN basse définition
+vsett-10-apex #7 PASS ok
+vsett-10-apex #8 PASS ok
+vsett-10-lite #0 PASS ok
+vsett-10-lite #1 PASS ok
+vsett-10-lite #2 PASS ok
+vsett-10-lite #3 PASS ok
+vsett-10-lite #4 PASS ok
+vsett-10-lite #5 PASS ok
+vsett-10-lite #6 WARN basse définition · cadrage serré
+vsett-10-lite #7 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-10-lite #8 WARN cadrage serré
+vsett-10-lite #9 WARN cadrage serré
+vsett-10-plus #0 PASS ok
+vsett-10-plus #1 PASS ok
+vsett-10-plus #2 PASS ok
+vsett-10-plus #3 PASS ok
+vsett-10-plus #4 PASS ok
+vsett-10-plus #5 PASS ok
+vsett-10-plus #6 PASS ok
+vsett-10-plus #7 WARN cadrage serré
+vsett-10-plus #8 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-10-plus #9 WARN cadrage serré
+vsett-11-plus #0 PASS ok
+vsett-11-plus #1 PASS ok
+vsett-11-plus #2 PASS ok
+vsett-11-plus #3 PASS ok
+vsett-11-plus #4 PASS ok
+vsett-11-plus #5 PASS ok
+vsett-11-plus #6 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-11-plus #7 WARN cadrage serré
+vsett-11-plus #8 WARN cadrage serré
+vsett-11-plus #9 PASS ok
+vsett-11-plus-super #0 PASS ok
+vsett-11-plus-super #1 WARN basse définition
+vsett-11-plus-super #2 WARN basse définition
+vsett-11-plus-super #3 WARN basse définition
+vsett-11-plus-super #4 WARN basse définition · cadrage serré
+vsett-11-plus-super #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+vsett-8 #0 PASS ok
+vsett-8 #1 WARN basse définition
+vsett-8 #2 PASS ok
+vsett-8 #3 PASS ok
+vsett-8 #4 WARN basse définition
+vsett-8 #5 PASS ok
+vsett-8 #6 WARN cadrage serré
+vsett-8-apex #0 PASS ok
+vsett-8-apex #1 PASS ok
+vsett-8-apex #2 WARN cadrage serré
+vsett-8-apex #3 WARN cadrage serré
+vsett-8-apex #4 WARN cadrage serré
+vsett-8-apex #5 WARN basse définition
+vsett-8-apex #6 WARN cadrage serré
+vsett-8-apex #7 PASS ok
+vsett-8-apex #8 PASS ok
+vsett-8-lite #0 PASS ok
+vsett-8-lite #1 WARN cadrage serré
+vsett-8-lite #2 PASS ok
+vsett-8-lite #3 WARN basse définition
+vsett-8-lite #4 FAIL détourage sale / résidu de décor · basse définition
+vsett-8-lite #5 WARN basse définition
+vsett-8-lite #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+vsett-8-lite #7 FAIL détourage sale / résidu de décor · basse définition
+vsett-8-lite #8 FAIL détourage sale / résidu de décor · basse définition
+vsett-8-lite #9 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+vsett-8-plus #0 PASS ok
+vsett-8-plus #1 WARN cadrage serré
+vsett-8-plus #2 WARN basse définition
+vsett-8-plus #3 PASS ok
+vsett-8-plus #4 PASS ok
+vsett-8-plus #5 WARN basse définition
+vsett-8-plus #6 WARN cadrage serré
+vsett-8-plus #7 PASS ok
+vsett-9-apex #0 PASS ok
+vsett-9-apex #1 PASS ok
+vsett-9-apex #2 PASS ok
+vsett-9-apex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+vsett-9-apex #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+vsett-9-apex #5 WARN cadrage serré
+vsett-9-apex #6 PASS ok
+vsett-9-apex #7 PASS ok
+vsett-9-apex #8 PASS ok
+vsett-9-plus #0 PASS ok
+vsett-9-plus #1 PASS ok
+vsett-9-plus #2 PASS ok
+vsett-9-plus #3 WARN basse définition
+vsett-9-plus #4 PASS ok
+vsett-9-plus #5 PASS ok
+vsett-9-plus #6 WARN cadrage serré
+vsett-9-plus #7 WARN cadrage serré
+vsett-9-plus #8 WARN cadrage serré
+vsett-9-plus #9 PASS ok
+weped-ff #0 PASS ok
+weped-ff #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-ff #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-ff #3 PASS ok
+weped-ff #4 PASS ok
+weped-ff #5 FAIL détourage sale / résidu de décor
+weped-ff #6 FAIL détourage sale / résidu de décor · cadrage serré
+weped-ff #7 FAIL détourage sale / résidu de décor · cadrage serré
+weped-fold-11 #0 PASS ok
+weped-fold-11 #1 PASS ok
+weped-fold-11 #2 PASS ok
+weped-fold-11 #3 PASS ok
+weped-fold-3 #0 WARN basse définition
+weped-fold-3 #1 ERROR Input buffer contains unsupported image format
+weped-fold-3 #2 ERROR Input buffer contains unsupported image format
+weped-fold-3 #3 ERROR Input buffer contains unsupported image format
+weped-fold-3 #4 ERROR Input buffer contains unsupported image format
+weped-fold-3 #5 ERROR Input buffer contains unsupported image format
+weped-fold-3 #6 ERROR Input buffer contains unsupported image format
+weped-fold-3 #7 ERROR Input buffer contains unsupported image format
+weped-fold-3 #8 ERROR Input buffer contains unsupported image format
+weped-gts #0 PASS ok
+weped-gts #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-gts #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+weped-gts #3 PASS ok
+weped-gts #4 WARN basse définition · cadrage serré
+weped-gts #5 WARN basse définition
+weped-ss-t #0 PASS ok
+weped-ss-t #1 PASS ok
+weped-ss-t #2 PASS ok
+weped-ss-t #3 PASS ok
+weped-ssgt #0 ERROR Input buffer contains unsupported image format
+weped-ssgt #1 ERROR Input buffer contains unsupported image format
+weped-ssgt #2 ERROR Input buffer contains unsupported image format
+weped-ssgt #3 WARN cadrage serré
+weped-ssgt #4 WARN basse définition · cadrage serré
+weped-ssgt #5 WARN cadrage serré
+::notice title=photos lot20 (dry)::135 candidates · PASS 65 · WARN 39 · FAIL 20 · ERREUR 11

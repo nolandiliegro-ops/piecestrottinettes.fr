@@ -1,0 +1,146 @@
+urbanglide-100-evo #0 WARN basse définition
+urbanglide-100-evo #1 PASS ok
+urbanglide-100-evo #2 PASS ok
+urbanglide-100-evo #3 PASS ok
+urbanglide-100-evo #4 PASS ok
+urbanglide-100-evo #5 WARN basse définition · cadrage serré
+urbanglide-100-evo #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+urbanglide-100-evo #7 WARN cadrage serré
+urbanglide-100-evo #8 PASS ok
+urbanglide-100-evo #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+urbanglide-all-road-5 #0 PASS ok
+urbanglide-all-road-5 #1 WARN cadrage serré
+urbanglide-all-road-5 #2 PASS ok
+urbanglide-all-road-5 #3 WARN cadrage serré
+urbanglide-all-road-5 #4 WARN basse définition · cadrage serré
+urbanglide-all-road-5 #5 WARN basse définition · cadrage serré
+urbanglide-all-road-5 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+urbanglide-all-road-6-2x2 #0 PASS ok
+urbanglide-all-road-6-2x2 #1 WARN basse définition · cadrage serré
+urbanglide-all-road-6-2x2 #2 PASS ok
+urbanglide-all-road-6-2x2 #3 PASS ok
+urbanglide-all-road-6-2x2 #4 WARN basse définition · cadrage serré
+urbanglide-all-road-6-2x2 #5 WARN basse définition · cadrage serré
+urbanglide-all-road-6-2x2 #6 FAIL détourage sale / résidu de décor · couleurs vives 35 % (visuel marketing ?)
+urbanglide-all-road-6-2x2 #7 FAIL détourage sale / résidu de décor
+urbanglide-all-road-6-2x2 #8 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-all-road-6-2x2 #9 FAIL détourage sale / résidu de décor
+urbanglide-all-road-6-pro #0 PASS ok
+urbanglide-all-road-6-pro #1 WARN basse définition · cadrage serré
+urbanglide-all-road-6-pro #2 PASS ok
+urbanglide-all-road-6-pro #3 PASS ok
+urbanglide-all-road-6-pro #4 WARN basse définition · cadrage serré
+urbanglide-all-road-6-pro #5 FAIL détourage sale / résidu de décor
+urbanglide-all-road-6-pro #6 PASS ok
+urbanglide-all-road-6-pro #7 WARN cadrage serré
+urbanglide-all-road-6-pro #8 FAIL détourage sale / résidu de décor
+urbanglide-ecross-duo #0 PASS ok
+urbanglide-ecross-duo #1 PASS ok
+urbanglide-ecross-duo #2 WARN basse définition · cadrage serré
+urbanglide-ecross-duo #3 PASS ok
+urbanglide-ecross-duo #4 FAIL détourage sale / résidu de décor
+urbanglide-ecross-duo #5 WARN cadrage serré
+urbanglide-ecross-duo #6 WARN cadrage serré
+urbanglide-ecross-duo #7 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-ecross-duo #8 FAIL détourage sale / résidu de décor · basse définition · couleurs vives 63 % (visuel marketing ?)
+urbanglide-ecross-go #0 WARN basse définition
+urbanglide-ecross-go #1 PASS ok
+urbanglide-ecross-go #2 PASS ok
+urbanglide-ecross-go #3 PASS ok
+urbanglide-ecross-go #4 WARN basse définition · cadrage serré
+urbanglide-ecross-max-2x2-gen-2 #0 PASS ok
+urbanglide-ecross-max-2x2-gen-2 #1 WARN basse définition · cadrage serré
+urbanglide-ecross-max-2x2-gen-2 #2 PASS ok
+urbanglide-ecross-max-2x2-gen-2 #3 PASS ok
+urbanglide-ecross-max-2x2-gen-2 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+urbanglide-ecross-max-2x2-gen-2 #5 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-ecross-max-2x2-gen-2 #6 PASS ok
+urbanglide-ecross-max-2x2-gen-2 #7 WARN cadrage serré
+urbanglide-ecross-max-2x2-gen-2 #8 WARN basse définition · cadrage serré
+urbanglide-ecross-max-2x2-gen-2 #9 WARN cadrage serré
+urbanglide-ecross-one #0 WARN basse définition
+urbanglide-ecross-one #1 WARN basse définition
+urbanglide-ecross-one #2 PASS ok
+urbanglide-ecross-one #3 PASS ok
+urbanglide-ecross-one #4 PASS ok
+urbanglide-ecross-one #5 WARN basse définition · cadrage serré
+urbanglide-ecross-one #6 FAIL détourage sale / résidu de décor
+urbanglide-ecross-one #7 WARN couleurs vives 34 % (visuel marketing ?)
+urbanglide-ecross-one #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+urbanglide-ecross-one #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+urbanglide-ecross-pro #0 PASS ok
+urbanglide-ecross-pro #1 PASS ok
+urbanglide-ecross-pro #2 PASS ok
+urbanglide-ecross-pro #3 FAIL bandeau, pas un produit · basse définition · cadrage serré
+urbanglide-ecross-pro #4 FAIL détourage sale / résidu de décor
+urbanglide-ecross-pro #5 FAIL détourage sale / résidu de décor
+urbanglide-ecross-pro #6 FAIL détourage sale / résidu de décor
+urbanglide-ecross-pro-2 #0 WARN basse définition
+urbanglide-ecross-pro-2 #1 PASS ok
+urbanglide-ecross-pro-2 #2 WARN basse définition · cadrage serré
+urbanglide-ecross-pro-2 #3 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-ecross-pro-2 #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+urbanglide-ecross-pro-2 #5 PASS ok
+urbanglide-ecross-pro-2 #6 PASS ok
+urbanglide-ecross-pro-boost-2 #0 PASS ok
+urbanglide-ecross-pro-boost-2 #1 WARN basse définition · cadrage serré
+urbanglide-ecross-pro-boost-2 #2 PASS ok
+urbanglide-ecross-pro-boost-2 #3 PASS ok
+urbanglide-ecross-pro-boost-2 #4 PASS ok
+urbanglide-ecross-pro-boost-2 #5 WARN cadrage serré
+urbanglide-ecross-pro-boost-2 #6 WARN cadrage serré
+urbanglide-ecross-pro-boost-2 #7 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+urbanglide-ecross-pro-boost-2 #8 WARN basse définition · cadrage serré
+urbanglide-ecross-pro-boost-2 #9 PASS ok
+urbanglide-ride-100-max #0 PASS ok
+urbanglide-ride-100-max #1 PASS ok
+urbanglide-ride-100-max #2 PASS ok
+urbanglide-ride-100-max-2 #0 PASS ok
+urbanglide-ride-100-max-2 #1 WARN basse définition · cadrage serré
+urbanglide-ride-100-max-2 #2 PASS ok
+urbanglide-ride-100-max-2 #3 WARN basse définition · cadrage serré
+urbanglide-ride-100-max-2 #4 PASS ok
+urbanglide-ride-100-max-2 #5 PASS ok
+urbanglide-ride-100-max-2 #6 PASS ok
+urbanglide-ride-100-max-2 #7 PASS ok
+urbanglide-ride-85-evo #0 WARN basse définition
+urbanglide-ride-85-evo #1 PASS ok
+urbanglide-ride-85-evo #2 PASS ok
+urbanglide-ride-85-evo #3 FAIL détourage sale / résidu de décor
+urbanglide-ride-85-evo #4 FAIL détourage sale / résidu de décor
+urbanglide-ride-85-evo #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+urbanglide-ride-85-evo #6 PASS ok
+urbanglide-ride-85-evo #7 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+urbanglide-ride-85-evo #8 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+urbanglide-urbanride-100xs #0 PASS ok
+urbanglide-urbanride-100xs #1 WARN basse définition
+urbanglide-urbanride-100xs #2 PASS ok
+urbanglide-urbanride-100xs #3 PASS ok
+urbanglide-urbanride-100xs #4 PASS ok
+urbanglide-urbanride-100xs #5 WARN cadrage serré
+urbanglide-urbanride-100xs #6 WARN cadrage serré
+urbanglide-urbanride-100xs #7 WARN basse définition · cadrage serré
+urbanglide-urbanride-85-plus #0 PASS ok
+urbanglide-urbanride-85-plus #1 PASS ok
+urbanglide-urbanride-85-plus #2 PASS ok
+urbanglide-urbanride-85-plus #3 PASS ok
+urbanglide-urbanride-85-plus #4 WARN cadrage serré
+urbanglide-urbanride-85-plus #5 WARN cadrage serré
+urbanglide-urbanride-85-plus #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+urbanglide-urbanride-85-plus #7 PASS ok
+velity-511-ss #0 ERROR Input buffer contains unsupported image format
+velity-511-ss #1 ERROR Input buffer contains unsupported image format
+velity-511-ss #2 ERROR Input buffer contains unsupported image format
+velity-511-ss #3 ERROR Input buffer contains unsupported image format
+velity-511-ss #4 ERROR Input buffer contains unsupported image format
+velity-511-ss #5 ERROR Input buffer contains unsupported image format
+velity-511-ss #6 PASS ok
+velity-511-ss #7 PASS ok
+velity-511-sx #0 ERROR Input buffer contains unsupported image format
+velity-511-sx #1 ERROR Input buffer contains unsupported image format
+velity-511-sx #2 ERROR Input buffer contains unsupported image format
+velity-511-sx #3 ERROR Input buffer contains unsupported image format
+velity-511-sx #4 FAIL détourage sale / résidu de décor · cadrage serré
+velity-511-sx #5 WARN basse définition · cadrage serré
+velity-511-sx #6 FAIL détourage sale / résidu de décor · cadrage serré
+::notice title=photos lot19 (dry)::145 candidates · PASS 61 · WARN 42 · FAIL 32 · ERREUR 10

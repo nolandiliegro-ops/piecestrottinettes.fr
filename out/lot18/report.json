@@ -1,0 +1,3591 @@
+[
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/144a228d-db02-4d87-9c3d-4ba821332605/1791994412285_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.097,
+   "fill": 0.818
+  },
+  "size": [
+   1105,
+   1524
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/144a228d-db02-4d87-9c3d-4ba821332605/1791994416963_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.106,
+   "fill": 0.466
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/BLADE_GT_II_89893a7e-fb63-47b3-8f6c-c60f4d499b5e.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.036,
+   "vivid": 0.091,
+   "fill": 0.657
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-307469.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "couleurs vives 39 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 39 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.394,
+   "fill": 0.763
+  },
+  "size": [
+   1764,
+   1064
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-743228.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.163,
+   "fill": 0.836
+  },
+  "size": [
+   1535,
+   1177
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-770463.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.41
+  },
+  "size": [
+   889,
+   889
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Teverun_Blade_GT2_Pas_Cher-923946.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.077,
+   "fill": 0.447
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_bequille-683930.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.165,
+   "fill": 0.703
+  },
+  "size": [
+   1080,
+   906
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/DSC05320.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.586
+  },
+  "size": [
+   1982,
+   1412
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/DSC05313.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.401
+  },
+  "size": [
+   2080,
+   1547
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6792732b-ad5e-45dd-b50f-3ab16cd3b70f/1792167649096_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.803
+  },
+  "size": [
+   596,
+   947
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 1,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/e1c4e5de381fecb49641ffeea6552657-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.441
+  },
+  "size": [
+   1080,
+   967
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 2,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/3c8a83dc178a4ff2dee7182cdb8101a7-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.015,
+   "vivid": 0.044,
+   "fill": 0.799
+  },
+  "size": [
+   1043,
+   1071
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 3,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/42a3389fa667fe1f2d8b93e385dfbb07-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.797
+  },
+  "size": [
+   1080,
+   640
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 4,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/d926b0786612839f914846d5c381de0e-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 41 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 41 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.406,
+   "vivid": 0.406,
+   "fill": 0.195
+  },
+  "size": [
+   859,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 5,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/2ef5e6a005974c5d2063748f4261e00a-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.187,
+   "fill": 0.742
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 6,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/b592334323dc35a1ccb9b3b104dfb12f-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.132,
+   "fill": 0.754
+  },
+  "size": [
+   1059,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 7,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/b09fe315c22fd16e831fcf68250ab82f-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.076,
+   "fill": 0.386
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii-pro",
+  "i": 8,
+  "url": "https://teverun.sk/wp-content/uploads/2026/07/be1726e3c94ab5f21b1fc9436c456f2b-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.437
+  },
+  "size": [
+   1002,
+   718
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/61ee55c1-0ffc-4cc2-a201-5bb4b52b80b9/1792002527041_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.466
+  },
+  "size": [
+   1556,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Blade_GT2_PLUS_Pas_Cher-371413.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.077,
+   "fill": 0.447
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_GT2_PLUS_profil_bequille-670644.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.664
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette__lectrique_Teverun_Blade_GT2_puissante_et_sportive-663746.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.713
+  },
+  "size": [
+   905,
+   1045
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_minimotors_deck_large_confortable-281852.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.163,
+   "fill": 0.591
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_display_commodo-693252.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.823
+  },
+  "size": [
+   1079,
+   749
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_minimotors_etrier_frein-277148.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.159,
+   "fill": 0.86
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-plus-ii",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/teverun_blade_gt2_plus_roue_avant-312678.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.127,
+   "fill": 0.839
+  },
+  "size": [
+   1027,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4068f167-283b-4087-94a4-b24e7b16a188/1792002520177_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.782
+  },
+  "size": [
+   1027,
+   1017
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_min_pro_standard_yellow_7436124a-99fe-4f79-876d-3b461617808e.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.037,
+   "vivid": 0.079,
+   "fill": 0.689
+  },
+  "size": [
+   925,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_pro_standard_black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.036,
+   "vivid": 0.002,
+   "fill": 0.701
+  },
+  "size": [
+   925,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_blade_mini_pro_pas_cher.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.58
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_Blade_Mini_pro_profil_puissante.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.675
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_teverun_blade_mini_pro_jaune_puissante.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.571
+  },
+  "size": [
+   889,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_mini_pliable-373700.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.484
+  },
+  "size": [
+   737,
+   737
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_Blade_mini_pro_suspensions.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.187,
+   "fill": 0.813
+  },
+  "size": [
+   1043,
+   713
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_mini_pro_cale_pied-952474.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.713
+  },
+  "size": [
+   1105,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167659695_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.712
+  },
+  "size": [
+   493,
+   472
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167654761_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.044,
+   "vivid": 0.063,
+   "fill": 0.779
+  },
+  "size": [
+   493,
+   472
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167665637_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.302,
+   "vivid": 0.027,
+   "fill": 0.496
+  },
+  "size": [
+   1754,
+   1054
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_BOSCH_yellow.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.031,
+   "vivid": 0.092,
+   "fill": 0.717
+  },
+  "size": [
+   928,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_BOSCH_black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.035,
+   "vivid": 0.015,
+   "fill": 0.605
+  },
+  "size": [
+   1078,
+   1077
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_standard_yellow.png",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (4 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (4 morceaux)"
+   ],
+   "parts": 4,
+   "second": 0.024,
+   "vivid": 0.086,
+   "fill": 0.716
+  },
+  "size": [
+   924,
+   1050
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Blade_mini_ultra_standard_black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.035,
+   "vivid": 0.004,
+   "fill": 0.601
+  },
+  "size": [
+   1078,
+   1077
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_ebfa9edc-2e10-4441-8395-8f7cf18407f6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.177,
+   "fill": 0.551
+  },
+  "size": [
+   1842,
+   1670
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade-mini-ultra-624493.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.092,
+   "fill": 0.764
+  },
+  "size": [
+   1756,
+   986
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-mini-ultra",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade-mini-ultra-157574.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.134,
+   "fill": 0.673
+  },
+  "size": [
+   1319,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b60e349e-a227-4b33-a194-1cd36dc69c02/1791994397028_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.364
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.824
+  },
+  "size": [
+   936,
+   1224
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_11.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.463
+  },
+  "size": [
+   878,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_1_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.771
+  },
+  "size": [
+   1292,
+   640
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_2_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.774
+  },
+  "size": [
+   459,
+   936
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_9_1_-_copie.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.547
+  },
+  "size": [
+   663,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_23_1_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.05,
+   "vivid": 0.039,
+   "fill": 0.527
+  },
+  "size": [
+   1110,
+   925
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_5_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.851
+  },
+  "size": [
+   1211,
+   1133
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Teverun_fighter_11_deck-157296.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.829
+  },
+  "size": [
+   887,
+   653
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92039446-23d1-4d19-af55-4e9e36c82d59/1791994401690_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.68
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Teverun_Fighter_11.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.129,
+   "vivid": 0.041,
+   "fill": 0.56
+  },
+  "size": [
+   1382,
+   1382
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-11-plus-side-view.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.809
+  },
+  "size": [
+   1739,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-elsparkcykel-636915.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.583
+  },
+  "size": [
+   859,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-v4-elsparkcykel-5115468.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.838
+  },
+  "size": [
+   818,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-v4-elsparkcykel-8401002.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.8
+  },
+  "size": [
+   601,
+   981
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN9075_only_wann-min.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.842
+  },
+  "size": [
+   1296,
+   1027
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN9077_only_wann-min.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.753
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/11_9_1_-_copie_3076c5ab-28e6-460e-825c-44eec9933e87.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.652
+  },
+  "size": [
+   1296,
+   1295
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5939a25f-949e-40df-9360-be5dd512f1c7/1791994116270_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.602
+  },
+  "size": [
+   1511,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_1_-_copie_ba2980f7-86d4-48f9-ae8d-f2abba7ca888.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.356
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_2_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.842
+  },
+  "size": [
+   1097,
+   1236
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_3_-_copie.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.802
+  },
+  "size": [
+   781,
+   1252
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_10_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.865
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_9_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.7
+  },
+  "size": [
+   1078,
+   1295
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_7260R_version_2025-526426.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.062,
+   "vivid": 0.012,
+   "fill": 0.83
+  },
+  "size": [
+   1032,
+   844
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_7260_r_puissante.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.23,
+   "vivid": 0.084,
+   "fill": 0.761
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-7260r",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_fighter_Suprem_7260R.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.787
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791639718650_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.822
+  },
+  "size": [
+   1307,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791997359817_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.167,
+   "vivid": 0.06,
+   "fill": 0.554
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791997368801_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.446
+  },
+  "size": [
+   1810,
+   1415
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.824
+  },
+  "size": [
+   865,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_performante-732562.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.122,
+   "fill": 0.73
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Fighter_Mini.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.793
+  },
+  "size": [
+   613,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Mini_v4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.794
+  },
+  "size": [
+   544,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_minii.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.755
+  },
+  "size": [
+   309,
+   585
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.845
+  },
+  "size": [
+   1268,
+   1176
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.073,
+   "vivid": 0,
+   "fill": 0.665
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12766dbe-aba4-4adf-a810-c5c342af365f/1792167672211_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.822
+  },
+  "size": [
+   743,
+   990
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12766dbe-aba4-4adf-a810-c5c342af365f/1792167678524_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.521
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FMeco_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.038,
+   "vivid": 0.059,
+   "fill": 0.537
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.824
+  },
+  "size": [
+   865,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-teverun-fighter-mini-eco-serie-exclusive.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.375,
+   "vivid": 0.119,
+   "fill": 0.73
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_fighter_mini_eco_moteurs_Bosch_pneus_tubeless.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.013,
+   "fill": 0.841
+  },
+  "size": [
+   1156,
+   1161
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.845
+  },
+  "size": [
+   1268,
+   1176
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.073,
+   "vivid": 0,
+   "fill": 0.665
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/9_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.708
+  },
+  "size": [
+   1296,
+   868
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-eco",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/20_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.778
+  },
+  "size": [
+   1269,
+   661
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0d1a9f57-bdb6-4360-948f-03a9ae107632/1791639722398_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.813
+  },
+  "size": [
+   698,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0d1a9f57-bdb6-4360-948f-03a9ae107632/1791639725859_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.813
+  },
+  "size": [
+   203,
+   279
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_2026.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.132,
+   "vivid": 0.053,
+   "fill": 0.598
+  },
+  "size": [
+   1081,
+   1043
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.283
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.259
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_battery_60v25ah.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.136,
+   "vivid": 0.053,
+   "fill": 0.598
+  },
+  "size": [
+   1080,
+   1043
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_pro_2025.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.476
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/teverun-mini-fighter-pro-2025-Carbon-min.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.098,
+   "vivid": 0.001,
+   "fill": 0.83
+  },
+  "size": [
+   1296,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.472
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighte_mini_pro-display.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.67
+  },
+  "size": [
+   1834,
+   1040
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a36d4d3a-c6c4-43d1-ab61-7b09cc47c113/1791639697766_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.835
+  },
+  "size": [
+   1187,
+   1557
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a36d4d3a-c6c4-43d1-ab61-7b09cc47c113/1791639701978_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.813
+  },
+  "size": [
+   698,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.524
+  },
+  "size": [
+   1710,
+   1908
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.601
+  },
+  "size": [
+   1865,
+   1898
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.448
+  },
+  "size": [
+   1920,
+   1920
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.307
+  },
+  "size": [
+   1920,
+   1920
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.608
+  },
+  "size": [
+   1888,
+   1061
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.482
+  },
+  "size": [
+   1646,
+   1920
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.649
+  },
+  "size": [
+   1900,
+   1338
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_8.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.511
+  },
+  "size": [
+   1908,
+   1525
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e2bf27-1aa4-44c3-ae05-66925462d843/1791994124201_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.295
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_Pas_Cher-458604.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.408
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_lateral-773587.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.73
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_rapide-673701.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.835
+  },
+  "size": [
+   1066,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_robuste-485684.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.821
+  },
+  "size": [
+   782,
+   1060
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.585
+  },
+  "size": [
+   1265,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_freins_phare_avant-723771.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   1296,
+   1116
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.831
+  },
+  "size": [
+   1296,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5dcb8b35-a7c1-4ee8-b119-487284768ecf/1792167684801_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.461
+  },
+  "size": [
+   639,
+   616
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5dcb8b35-a7c1-4ee8-b119-487284768ecf/1792167692561_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.693
+  },
+  "size": [
+   587,
+   520
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUNFIGHTERQ_TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AH_Route.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.45
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.551
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_rapide-673701.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.835
+  },
+  "size": [
+   1066,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.736
+  },
+  "size": [
+   1016,
+   407
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.585
+  },
+  "size": [
+   1265,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.855
+  },
+  "size": [
+   980,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_freins_phare_avant-723771.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   1296,
+   1116
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.831
+  },
+  "size": [
+   1296,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0da85a7f-d5f3-49dc-ba52-ddfab8741615/1791639706136_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.824
+  },
+  "size": [
+   865,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0da85a7f-d5f3-49dc-ba52-ddfab8741615/1791639711821_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.44
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.824
+  },
+  "size": [
+   865,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Fighter_Mini.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.793
+  },
+  "size": [
+   613,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_performante-732562.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.122,
+   "fill": 0.73
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_minii.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.755
+  },
+  "size": [
+   309,
+   585
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.845
+  },
+  "size": [
+   1268,
+   1176
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.073,
+   "vivid": 0,
+   "fill": 0.665
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/21_-_copie.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   1296,
+   907
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/23_-_copie.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.813
+  },
+  "size": [
+   1227,
+   1139
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1791994407050_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.816
+  },
+  "size": [
+   1031,
+   1457
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_product_page_header_image.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.094,
+   "vivid": 0.044,
+   "fill": 0.525
+  },
+  "size": [
+   1811,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_left_front.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.389
+  },
+  "size": [
+   1826,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_right.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.585
+  },
+  "size": [
+   1826,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_left_rear.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.603
+  },
+  "size": [
+   1775,
+   1824
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-7260r-v4-forhandsbokning-elsparkcykel-588743.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.443
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-7260r-v4-forhandsbokning-elsparkcykel-555143.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.846
+  },
+  "size": [
+   894,
+   886
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_rear_motor_part.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.765
+  },
+  "size": [
+   1802,
+   1659
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-7260r",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_4.0inch_TFT_display_part.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.739
+  },
+  "size": [
+   1826,
+   1374
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1791994120071_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.835
+  },
+  "size": [
+   613,
+   750
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighter_SUPREME_ULTRA_2026.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 10 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 10 morceaux"
+   ],
+   "parts": 10,
+   "second": 0.072,
+   "vivid": 0.046,
+   "fill": 0.768
+  },
+  "size": [
+   950,
+   1048
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/b8909c0dac90838d4d9692be33af1cd1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.825
+  },
+  "size": [
+   1581,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/d4a55999bbf3c943fddba2853db2c368.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.635
+  },
+  "size": [
+   1790,
+   1389
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/367c47c62f77498e09e966fa4589798b.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.754
+  },
+  "size": [
+   1790,
+   1285
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-ultra-elsparkcykel-197754.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.572
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/18.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.65
+  },
+  "size": [
+   1868,
+   1112
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/23.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.067,
+   "vivid": 0.077,
+   "fill": 0.245
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-plus-elsparkcykel-117344.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.422
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ec8913a0-1e28-48e2-a373-2694f8b2bb04/1792167697786_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.839
+  },
+  "size": [
+   982,
+   1018
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ec8913a0-1e28-48e2-a373-2694f8b2bb04/1792167703336_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.826
+  },
+  "size": [
+   777,
+   997
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TrottinetteElectriqueTeverunSpacePratiqueetPerformante.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.833
+  },
+  "size": [
+   1036,
+   1222
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUNSPACE52V18A_TROTTINETTE_ELECTRIQUE_TEVERUN_SPACE_52V_18AH.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.844
+  },
+  "size": [
+   1148,
+   1185
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.865
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_2777fbb6-78df-4fc1-8cdb-0b53d07d0b6c.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.845
+  },
+  "size": [
+   1175,
+   1273
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_trott.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.764
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-space",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_electrique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.025,
+   "vivid": 0.003,
+   "fill": 0.837
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ }
+]

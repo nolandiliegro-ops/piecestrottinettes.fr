@@ -1,0 +1,2750 @@
+[
+ {
+  "slug": "vsett-10-apex",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/02a3b58d-ccfb-4ca3-b729-b67d5d9c5065/1791995024966_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.356
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/2_ce7f5326-b465-4c76-bffe-688c3d9ec42d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.464
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/5_12395449-0823-44c5-86db-af5becd481d9.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.137,
+   "vivid": 0,
+   "fill": 0.782
+  },
+  "size": [
+   1166,
+   1088
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/7_4acea8e9-3206-45eb-abdd-c040bf6c7b0f.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.472,
+   "vivid": 0,
+   "fill": 0.756
+  },
+  "size": [
+   992,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/6_4462c60e-f5a0-4534-a14f-2e01554bda80.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.83
+  },
+  "size": [
+   1050,
+   855
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/4_e70741e9-800c-4f3f-912d-7b58e8baafe4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.824
+  },
+  "size": [
+   801,
+   1109
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/3_b41ad7f0-7e5d-47ea-b8dd-c845266fa751.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.781
+  },
+  "size": [
+   589,
+   1110
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/1_befeca6c-e525-4f97-92d8-495ff6023947.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.842
+  },
+  "size": [
+   1013,
+   1072
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-apex",
+  "i": 8,
+  "url": "https://vsett-shop.com/wp-content/uploads/2024/07/VSETT-10-APEX-1.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.81
+  },
+  "size": [
+   731,
+   1090
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168262733_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.811
+  },
+  "size": [
+   617,
+   968
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168268362_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.844
+  },
+  "size": [
+   852,
+   883
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168273908_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.806
+  },
+  "size": [
+   674,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 3,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/v10-side-profile-small.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.128,
+   "fill": 0.843
+  },
+  "size": [
+   950,
+   1060
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 4,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/v10-angled-small.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.152,
+   "fill": 0.81
+  },
+  "size": [
+   712,
+   1126
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 5,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-bimoteur-vsett-10-60-v-208-ah-lite.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.404
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 6,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-bimoteur-vsett-10-60-v-208-ah-lite-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.092,
+   "fill": 0.823
+  },
+  "size": [
+   638,
+   483
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 7,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/v10-front-2-small.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.212,
+   "fill": 0.602
+  },
+  "size": [
+   1543,
+   1143
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 8,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/v10-rear-small.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.245,
+   "fill": 0.695
+  },
+  "size": [
+   1542,
+   1066
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-lite",
+  "i": 9,
+  "url": "https://full-mobility.com/wp-content/uploads/2023/03/v10-folded-small.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.761
+  },
+  "size": [
+   1730,
+   1241
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1790601747987_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.838
+  },
+  "size": [
+   888,
+   989
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1790601749819_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.528
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1791997306265_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.455
+  },
+  "size": [
+   803,
+   803
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/Vsett_10__NewDisplay.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.126,
+   "fill": 0.439
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT10_NewDisplay.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.714
+  },
+  "size": [
+   807,
+   841
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05485.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.714
+  },
+  "size": [
+   1155,
+   1812
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05505.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.771
+  },
+  "size": [
+   1376,
+   1778
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05530_6470951d-5c4f-4e75-8d52-a4e9ff88a33d.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.672
+  },
+  "size": [
+   1826,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-10-208ah-electric-scooter-vsett-268484.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.04,
+   "fill": 0.856
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05754-Edit_06903e01-e31f-49dc-a808-7adb963284da.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.611
+  },
+  "size": [
+   1934,
+   1326
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601751723_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.815
+  },
+  "size": [
+   696,
+   995
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601753751_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.841
+  },
+  "size": [
+   916,
+   981
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601756059_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.841
+  },
+  "size": [
+   928,
+   997
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 3,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-72v-yellow.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.451
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 4,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett11-transparent.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.141,
+   "fill": 0.764
+  },
+  "size": [
+   1002,
+   1031
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 5,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-scaled.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.758
+  },
+  "size": [
+   1560,
+   1804
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 6,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-front.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.845
+  },
+  "size": [
+   1176,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 7,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-back.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.751
+  },
+  "size": [
+   1122,
+   1066
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 8,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.132,
+   "fill": 0.837
+  },
+  "size": [
+   1188,
+   1004
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus",
+  "i": 9,
+  "url": "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-electric-scooter_7422-scaled.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.516
+  },
+  "size": [
+   1800,
+   1074
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1791995326256_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.838
+  },
+  "size": [
+   914,
+   1018
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1791995330259_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.101,
+   "fill": 0.81
+  },
+  "size": [
+   581,
+   835
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.81
+  },
+  "size": [
+   361,
+   521
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.652
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.824
+  },
+  "size": [
+   519,
+   398
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett11superpouch.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.025,
+   "vivid": 0.066,
+   "fill": 0.66
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7e0f9b4-087c-4b2a-9064-c99e0f4bf058/1791995321313_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.394
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-182720.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   577,
+   772
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT8.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.805
+  },
+  "size": [
+   807,
+   1034
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-806898.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.82
+  },
+  "size": [
+   631,
+   856
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-309575.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.836
+  },
+  "size": [
+   597,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-788702.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.581
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-197978.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.837
+  },
+  "size": [
+   780,
+   689
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71279c11-72e5-41b0-92b8-e646e96b81c4/1791995038868_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.808
+  },
+  "size": [
+   609,
+   926
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 1,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.482
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 2,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-REAR.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.803
+  },
+  "size": [
+   1022,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 3,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-FOLDED.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.831
+  },
+  "size": [
+   1157,
+   953
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 4,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-FOLDING.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.691
+  },
+  "size": [
+   945,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 5,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-HANDLEBAR.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.803
+  },
+  "size": [
+   979,
+   539
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 6,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-BATTERY.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.814
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 7,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-LEDS.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.213,
+   "fill": 0.817
+  },
+  "size": [
+   1168,
+   1264
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-apex",
+  "i": 8,
+  "url": "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-RFID.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.757
+  },
+  "size": [
+   1750,
+   986
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d90056ef-fdd3-47f3-8b12-4f0eb747f573/1792168251300_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.796
+  },
+  "size": [
+   762,
+   1286
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d90056ef-fdd3-47f3-8b12-4f0eb747f573/1792168257073_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.816
+  },
+  "size": [
+   1072,
+   917
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/51lJrkHuPOL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.627
+  },
+  "size": [
+   1054,
+   1520
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/319uwr3E4SL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.62
+  },
+  "size": [
+   354,
+   510
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31aR-Hf8CHL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.741
+  },
+  "size": [
+   252,
+   522
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31-qBB656fL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.817
+  },
+  "size": [
+   403,
+   456
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/41h5FE6XAlL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.808
+  },
+  "size": [
+   540,
+   515
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/31yilZNJyzL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.252
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 8,
+  "url": "https://m.media-amazon.com/images/I/41rBIy8eL+L._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.543
+  },
+  "size": [
+   540,
+   462
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-lite",
+  "i": 9,
+  "url": "https://m.media-amazon.com/images/I/4148n0fQtsL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.032,
+   "vivid": 0.011,
+   "fill": 0.777
+  },
+  "size": [
+   526,
+   538
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792168239515_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.833
+  },
+  "size": [
+   933,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792168245203_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   743,
+   1007
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-824589.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   577,
+   772
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT8_f41e6ad4-9f68-4780-90b1-cd38add0f098.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.805
+  },
+  "size": [
+   807,
+   1034
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-525012.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.581
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-958041.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.836
+  },
+  "size": [
+   597,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-185958.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.837
+  },
+  "size": [
+   780,
+   689
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-889305.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.82
+  },
+  "size": [
+   631,
+   856
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d02869fc-e185-458b-bbe2-6efac4f28f31/1791995030136_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.803
+  },
+  "size": [
+   623,
+   988
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d02869fc-e185-458b-bbe2-6efac4f28f31/1791995034683_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.314
+  },
+  "size": [
+   1744,
+   1211
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/2_0cfefe8d-2308-4cac-b338-f00c6d38ac36.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.806
+  },
+  "size": [
+   718,
+   1114
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/6_7e549a5f-9c93-4889-b234-e36a75cdad7d.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.348,
+   "vivid": 0,
+   "fill": 0.823
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/4_980b7e0a-d3c9-4edc-8f9a-8338dd945acc.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.204,
+   "vivid": 0.001,
+   "fill": 0.581
+  },
+  "size": [
+   1105,
+   1008
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/5_e059a6eb-b14c-4d93-978a-972b9a581b01.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.816
+  },
+  "size": [
+   1136,
+   758
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/3_b1b68f30-4958-4827-8bdf-a5e73fa639a0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.578
+  },
+  "size": [
+   919,
+   1154
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/1_2696d1e2-81da-4b01-8088-136820ddb56b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.844
+  },
+  "size": [
+   1096,
+   1131
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-apex",
+  "i": 8,
+  "url": "https://vsett-shop.com/wp-content/uploads/2023/10/VSETT-9-APEX-PROFILE.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.487
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603566430_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.083,
+   "fill": 0.815
+  },
+  "size": [
+   688,
+   984
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603568720_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.088,
+   "fill": 0.826
+  },
+  "size": [
+   833,
+   1004
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603570628_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.839
+  },
+  "size": [
+   883,
+   975
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 3,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603572393_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.778
+  },
+  "size": [
+   546,
+   1050
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-775415.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.416
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.811
+  },
+  "size": [
+   639,
+   925
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-198982.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.859
+  },
+  "size": [
+   851,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-990653.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.682
+  },
+  "size": [
+   864,
+   695
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-664099.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.686
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "vsett-9-plus",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-531098.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.658
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792168363717_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.332
+  },
+  "size": [
+   1620,
+   1074
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792168369422_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.204,
+   "fill": 0.732
+  },
+  "size": [
+   375,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 2,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/f98b90_9122a5faaec84ccf8933058d092b5e8d_mv2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.208,
+   "fill": 0.732
+  },
+  "size": [
+   375,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 3,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/weped-ff.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.332
+  },
+  "size": [
+   1620,
+   1074
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 4,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/20210415_212907.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.551
+  },
+  "size": [
+   730,
+   950
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 5,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/20210415_212913.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0,
+   "fill": 0.175
+  },
+  "size": [
+   718,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 6,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/20210415_213040.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.771
+  },
+  "size": [
+   730,
+   950
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 7,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/20210415_213113.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.833
+  },
+  "size": [
+   730,
+   950
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1791995613927_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.594
+  },
+  "size": [
+   1019,
+   1227
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1791995617707_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.84
+  },
+  "size": [
+   759,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/trottinette-electrique-weped-fold-11.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.84
+  },
+  "size": [
+   759,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/fold11.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.594
+  },
+  "size": [
+   1019,
+   1227
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1791646894227_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.837
+  },
+  "size": [
+   458,
+   489
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 1,
+  "url": "https://fastride.fr/11923-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 2,
+  "url": "https://fastride.fr/11914-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 3,
+  "url": "https://fastride.fr/11915-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 4,
+  "url": "https://fastride.fr/11916-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 5,
+  "url": "https://fastride.fr/11917-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 6,
+  "url": "https://fastride.fr/11918-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 7,
+  "url": "https://fastride.fr/11919-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 8,
+  "url": "https://fastride.fr/11920-large_default/trottinette-electrique-weped-fold-3-.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-gts",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1791995622092_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.836
+  },
+  "size": [
+   909,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1791995626377_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.774
+  },
+  "size": [
+   304,
+   463
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueWepedGTS18000W-60V30Ah-PIETECHNOLOGIE-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.277,
+   "vivid": 0.011,
+   "fill": 0.747
+  },
+  "size": [
+   1766,
+   1531
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.845
+  },
+  "size": [
+   906,
+   979
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Weped_GT_Electric_Scooter_Folded_2000x_f80e294b-f5bf-4c75-a0ca-7824da44b1ac.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.767
+  },
+  "size": [
+   1085,
+   519
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/WEPED-GT-50E.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.733
+  },
+  "size": [
+   303,
+   461
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ss-t",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1791646898609_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.855
+  },
+  "size": [
+   927,
+   920
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ss-t",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1791997706584_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.415
+  },
+  "size": [
+   1296,
+   1097
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ss-t",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueWepedSS-T30000w-72V45Ah-PIETECHNOLOGIE-min.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.399
+  },
+  "size": [
+   1766,
+   1502
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ss-t",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/weped-sst.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.597
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 0,
+  "url": "https://fastride.fr/19623-large_default/trottinette-electrique-weped-ssgt.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 1,
+  "url": "https://fastride.fr/19622-large_default/trottinette-electrique-weped-ssgt.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 2,
+  "url": "https://fastride.fr/19624-large_default/trottinette-electrique-weped-ssgt.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.523
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.802
+  },
+  "size": [
+   717,
+   546
+  ],
+  "error": null
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1791646896581_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.523
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ }
+]

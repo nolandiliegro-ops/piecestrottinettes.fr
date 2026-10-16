@@ -1,0 +1,3021 @@
+[
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2bbe4e55-291a-48d9-aa26-fad3902ae583/1791639750212_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.412
+  },
+  "size": [
+   287,
+   287
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2bbe4e55-291a-48d9-aa26-fad3902ae583/1791639753571_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.64
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-100EVO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.843
+  },
+  "size": [
+   824,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678527_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.212
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/51VVEVR-zYL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.798
+  },
+  "size": [
+   788,
+   1302
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-plie.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.773
+  },
+  "size": [
+   764,
+   381
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-pliee.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.765
+  },
+  "size": [
+   772,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-frein.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.15,
+   "fill": 0.845
+  },
+  "size": [
+   1178,
+   950
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-ecran-fd-violetpoignee.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.629
+  },
+  "size": [
+   1750,
+   814
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 9,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678527_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.05,
+   "vivid": 0.057,
+   "fill": 0.623
+  },
+  "size": [
+   1594,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792167768809_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.842
+  },
+  "size": [
+   770,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792167774550_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.767
+  },
+  "size": [
+   1403,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-AR5-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.455
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/11/AR5-2-pliee-copie.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.767
+  },
+  "size": [
+   1403,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/10/AR5-2-bloc1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.856
+  },
+  "size": [
+   524,
+   524
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/10/AR5-2-bloc1-2-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.837
+  },
+  "size": [
+   544,
+   456
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/11/AR5-lumieres.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.431,
+   "vivid": 0.02,
+   "fill": 0.677
+  },
+  "size": [
+   1754,
+   725
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e58e0eb-ed4a-40f3-8c9d-293d0463493e/1792167793055_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.214,
+   "fill": 0.837
+  },
+  "size": [
+   769,
+   865
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e58e0eb-ed4a-40f3-8c9d-293d0463493e/1792167798644_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.791
+  },
+  "size": [
+   690,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.214,
+   "fill": 0.837
+  },
+  "size": [
+   769,
+   865
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678473_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.256
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-pliee-1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.791
+  },
+  "size": [
+   787,
+   447
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR6-2x2-PLIEE-1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.791
+  },
+  "size": [
+   690,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-roue-frein-a-disque-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 35 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 35 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.352,
+   "fill": 0.335
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-cle-de-demarrage-2-copie.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.068,
+   "fill": 0.544
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-LED-RGB-V3.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.633
+  },
+  "size": [
+   1754,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 9,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-moteurs-2.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.253,
+   "fill": 0.395
+  },
+  "size": [
+   1754,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792167780499_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.474
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792167787377_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.79
+  },
+  "size": [
+   706,
+   400
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.474
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092679715_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.832
+  },
+  "size": [
+   710,
+   799
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR6-PRO-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.79
+  },
+  "size": [
+   705,
+   400
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO-pneu.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.013,
+   "vivid": 0.003,
+   "fill": 0.357
+  },
+  "size": [
+   1754,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/09/AR6PRO-ECRAN-2-copie.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.191
+  },
+  "size": [
+   1740,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/09/AR6PRO-suspension-en-C-2-copie.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.076,
+   "fill": 0.489
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO-batterie.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.19,
+   "fill": 0.499
+  },
+  "size": [
+   1754,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.474
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678503_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.403
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-DUO-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.808
+  },
+  "size": [
+   510,
+   335
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-pliee.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.476
+  },
+  "size": [
+   1062,
+   840
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-PNEUS.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.115,
+   "fill": 0.352
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-SUSPENSIONS.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.804
+  },
+  "size": [
+   1534,
+   883
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/E-CROSS-DUO-MOTEURS-copie.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.125,
+   "fill": 0.651
+  },
+  "size": [
+   1007,
+   736
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-POIGNEES-mobile-1.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.008,
+   "fill": 0.781
+  },
+  "size": [
+   1416,
+   747
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1791994704358_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "couleurs vives 63 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 63 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.628,
+   "fill": 0.814
+  },
+  "size": [
+   210,
+   210
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a0a5078e-d910-4cdf-9f6c-02403d270006/1791995018120_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.393
+  },
+  "size": [
+   287,
+   287
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092641941_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.493
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/614uho-+ScL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.785
+  },
+  "size": [
+   1049,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2026/04/E-CROSSGO-NEW-IN.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.823
+  },
+  "size": [
+   770,
+   872
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2026/04/E-CROSSGO-profil-pliee.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.738
+  },
+  "size": [
+   762,
+   308
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792167718530_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.126,
+   "fill": 0.836
+  },
+  "size": [
+   731,
+   831
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792167723859_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.751
+  },
+  "size": [
+   673,
+   294
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2026/02/UrbanGlide-E-CROSS-MAX-2x2-profil-TRAIL-copie-1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.128,
+   "fill": 0.611
+  },
+  "size": [
+   904,
+   920
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.068,
+   "fill": 0.485
+  },
+  "size": [
+   1546,
+   1577
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.058,
+   "vivid": 0.068,
+   "fill": 0.676
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.008,
+   "vivid": 0.086,
+   "fill": 0.668
+  },
+  "size": [
+   1744,
+   1474
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 6,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.091,
+   "fill": 0.717
+  },
+  "size": [
+   1736,
+   1718
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 7,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.842
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2026/02/Urbanglide-E-CROSS-MAX-2X2-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.751
+  },
+  "size": [
+   674,
+   294
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 9,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.842
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791639740792_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.801
+  },
+  "size": [
+   536,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791639744033_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.798
+  },
+  "size": [
+   260,
+   415
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791997451928_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.093,
+   "fill": 0.633
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSONE-1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.085,
+   "fill": 0.839
+  },
+  "size": [
+   779,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.594
+  },
+  "size": [
+   1460,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.806
+  },
+  "size": [
+   671,
+   433
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-suspension-frein-a-disque.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.077,
+   "fill": 0.453
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-batterie.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 34 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 34 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.335,
+   "fill": 0.246
+  },
+  "size": [
+   1766,
+   669
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/ECROSSONE-comingsoon.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.073,
+   "vivid": 0.013,
+   "fill": 0.839
+  },
+  "size": [
+   779,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 9,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.076,
+   "vivid": 0.075,
+   "fill": 0.686
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a976cae2-e39a-467c-a343-1c0bad67ca69/1792003009903_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.839
+  },
+  "size": [
+   785,
+   867
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a976cae2-e39a-467c-a343-1c0bad67ca69/1792003024471_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.837
+  },
+  "size": [
+   791,
+   889
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/09/RIDE-ecross-pro.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.839
+  },
+  "size": [
+   785,
+   867
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/06/plateau-large-ecross-copie-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "bandeau, pas un produit",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.064,
+   "fill": 0.628
+  },
+  "size": [
+   1414,
+   375
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/06/E-CROSS-PRO-lumieres-v2BIS-copie.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.458
+  },
+  "size": [
+   1131,
+   946
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/06/E-cross-max-pro-ecran-montage-.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.518
+  },
+  "size": [
+   1353,
+   749
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/06/montage-E-CROSS-PRO-copie.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.008,
+   "vivid": 0,
+   "fill": 0.434
+  },
+  "size": [
+   1766,
+   835
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1791994708056_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.063,
+   "fill": 0.731
+  },
+  "size": [
+   347,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-2-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.201,
+   "fill": 0.838
+  },
+  "size": [
+   752,
+   840
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSSPRO-2-pliee-1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.76
+  },
+  "size": [
+   773,
+   357
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/10/E-CROSS-PRO2-lumiere.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.231,
+   "fill": 0.783
+  },
+  "size": [
+   1294,
+   926
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/10/E-CROSS-PRO2-FREIN-A-DISQUE-copie.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.483,
+   "vivid": 0,
+   "fill": 0.793
+  },
+  "size": [
+   1583,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO2-ecran-copie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.62
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO2-BATTERIE-copie-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.206,
+   "fill": 0.305
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792167757075_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.167,
+   "fill": 0.832
+  },
+  "size": [
+   710,
+   800
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792167762805_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.758
+  },
+  "size": [
+   703,
+   319
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-BOOST-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.168,
+   "fill": 0.837
+  },
+  "size": [
+   709,
+   800
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 3,
+  "url": "https://www.cdiscount.com/pdt2/1/6/4/1/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.458
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 4,
+  "url": "https://www.cdiscount.com/pdt2/1/6/4/2/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.632
+  },
+  "size": [
+   712,
+   728
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 5,
+  "url": "https://www.cdiscount.com/pdt2/1/6/4/3/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.819
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 6,
+  "url": "https://www.cdiscount.com/pdt2/1/6/4/4/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.006,
+   "vivid": 0.016,
+   "fill": 0.813
+  },
+  "size": [
+   723,
+   739
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 7,
+  "url": "https://www.cdiscount.com/pdt2/1/6/4/5/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.42,
+   "vivid": 0.021,
+   "fill": 0.556
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 8,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSSPRO-BOOST-2-pliee.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.758
+  },
+  "size": [
+   703,
+   319
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 9,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/09/E-CROSS-PRO-BOOST2-ROUES.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.255
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/21a74579-f76b-491c-a84c-be7e33d48065/1792167729566_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.838
+  },
+  "size": [
+   824,
+   869
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/09/RIDE-100MAX-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/07/RIDE-100MAX_-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.685
+  },
+  "size": [
+   762,
+   1005
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb883e3b-ae53-4367-8f96-abfc304d03ec/1792167735490_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.645
+  },
+  "size": [
+   927,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb883e3b-ae53-4367-8f96-abfc304d03ec/1792167741196_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.79
+  },
+  "size": [
+   696,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.093,
+   "fill": 0.838
+  },
+  "size": [
+   783,
+   869
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/RIDE100MAX2-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.79
+  },
+  "size": [
+   696,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-moteur-copie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.611
+  },
+  "size": [
+   858,
+   906
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/100MAX2-FREIN-A-DISQUE-NEON-copie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.202,
+   "fill": 0.371
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-lumiere-copie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.443
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-100-max-2",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/100MAX2-ROUES-NEON-copie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.155,
+   "fill": 0.217
+  },
+  "size": [
+   1762,
+   845
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1791639733571_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.444
+  },
+  "size": [
+   281,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-85EVO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.843
+  },
+  "size": [
+   822,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.198
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_l_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.112,
+   "fill": 0.462
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_b_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.49
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_r_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.357,
+   "vivid": 0.031,
+   "fill": 0.566
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/51j1ARyAeZL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.767
+  },
+  "size": [
+   730,
+   1348
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/06/85EVO-pliee-copie.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.028,
+   "vivid": 0.011,
+   "fill": 0.771
+  },
+  "size": [
+   1183,
+   703
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 8,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.029,
+   "vivid": 0.036,
+   "fill": 0.379
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994711406_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.368
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994714740_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.822
+  },
+  "size": [
+   324,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994718101_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.222
+  },
+  "size": [
+   1298,
+   1328
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/10/RIDE-100XS.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.84
+  },
+  "size": [
+   791,
+   854
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2023/07/RIDE100XS_-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.666
+  },
+  "size": [
+   797,
+   1006
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-PLIAGE-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.768
+  },
+  "size": [
+   1295,
+   626
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-AUTONOMIE1-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.148,
+   "fill": 0.609
+  },
+  "size": [
+   1022,
+   1305
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-AUTONOMIE2-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.179,
+   "fill": 0.784
+  },
+  "size": [
+   481,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/651d6853-642a-46e7-a437-bbbc1bef898c/1791994721500_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.81
+  },
+  "size": [
+   689,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/651d6853-642a-46e7-a437-bbbc1bef898c/1791994724912_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.843
+  },
+  "size": [
+   838,
+   880
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.843
+  },
+  "size": [
+   838,
+   880
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/05/Ride-85-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.472
+  },
+  "size": [
+   884,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-ecran.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.665
+  },
+  "size": [
+   1329,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-roues.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.83
+  },
+  "size": [
+   691,
+   886
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-suspension.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.798
+  },
+  "size": [
+   940,
+   571
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 7,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/10/Ride-85-batterie.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.618
+  },
+  "size": [
+   1140,
+   1609
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 0,
+  "url": "https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 1,
+  "url": "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 2,
+  "url": "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 3,
+  "url": "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 4,
+  "url": "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 5,
+  "url": "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791661386391_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.641
+  },
+  "size": [
+   1090,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791997701100_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.779
+  },
+  "size": [
+   705,
+   907
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 0,
+  "url": "https://fastride.fr/15787-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 1,
+  "url": "https://fastride.fr/15785-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 2,
+  "url": "https://fastride.fr/15786-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 3,
+  "url": "https://fastride.fr/15788-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/417549105_3207571489546753_198445083813945148_n.jpg?v=1708692171",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.006,
+   "vivid": 0,
+   "fill": 0.782
+  },
+  "size": [
+   1364,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_1_58960a31-ff52-4bde-ace4-bafd6fa78067.jpg?v=1708692171",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.833
+  },
+  "size": [
+   558,
+   656
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6f4f87b2-c609-4785-a866-eb6154fc5123/1791661397952_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.865
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ }
+]
