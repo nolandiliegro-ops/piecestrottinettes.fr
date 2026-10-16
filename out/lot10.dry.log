@@ -1,0 +1,163 @@
+kingsong-e1 #0 WARN basse définition
+kingsong-e1 #1 PASS ok
+kingsong-e1 #2 WARN basse définition
+kingsong-e1 #3 WARN basse définition · cadrage serré
+kingsong-e1 #4 WARN basse définition
+kingsong-e1 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+kingsong-e1 #6 WARN basse définition
+kingsong-e1 #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+kingsong-e1 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+kingsong-e1 #9 WARN basse définition
+kingsong-n12-pro #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+kingsong-n12-pro #1 PASS ok
+kingsong-n12-pro #2 PASS ok
+kingsong-n12-pro #3 PASS ok
+kingsong-n12-pro #4 PASS ok
+kingsong-n12-pro #5 PASS ok
+kingsong-n12-pro #6 PASS ok
+kingsong-n12-pro #7 PASS ok
+kingsong-n12-pro #8 FAIL détourage sale / résidu de décor
+kingsong-n12-pro #9 FAIL détourage sale / résidu de décor
+kingsong-n12-t3 #0 PASS ok
+kingsong-n12-t3 #1 PASS ok
+kingsong-n12-t3 #2 PASS ok
+kingsong-n12-t3 #3 PASS ok
+kingsong-n12-t3 #4 PASS ok
+kingsong-n12-t3 #5 PASS ok
+kingsong-n12-t3 #6 PASS ok
+kingsong-n12-t3 #7 PASS ok
+kingsong-n12-t3 #8 PASS ok
+kingsong-n12-t3 #9 FAIL détourage sale / résidu de décor
+kingsong-n14 #0 PASS ok
+kingsong-n14 #1 PASS ok
+kingsong-n14 #2 WARN basse définition
+kingsong-n14 #3 PASS ok
+kingsong-n14 #4 PASS ok
+kingsong-n14 #5 WARN basse définition · cadrage serré
+kingsong-n14 #6 WARN basse définition
+kingsong-n14 #7 WARN basse définition
+kingsong-n14 #8 WARN basse définition
+kingsong-n14 #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+kingsong-n14-max #0 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+kingsong-n14-max #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+kingsong-n14-max #2 WARN basse définition
+kingsong-n14-max #3 WARN basse définition
+kingsong-n14-max #4 PASS ok
+kingsong-n14-max #5 PASS ok
+kingsong-n14-max #6 PASS ok
+kingsong-n14-max #7 WARN cadrage serré
+kingsong-n14-max #8 WARN cadrage serré
+kingsong-n15 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kingsong-n15 #1 PASS ok
+kingsong-n15 #2 PASS ok
+kingsong-n15 #3 WARN basse définition
+kingsong-n15 #4 WARN basse définition
+kingsong-n15 #5 WARN basse définition · cadrage serré
+kingsong-n15 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+kingsong-n15 #7 PASS ok
+kingsong-n15 #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kingsong-n16 #0 PASS ok
+kingsong-n16 #1 PASS ok
+kingsong-n16 #2 PASS ok
+kingsong-n16 #3 PASS ok
+kingsong-n16 #4 PASS ok
+kingsong-n16 #5 PASS ok
+kingsong-n16 #6 PASS ok
+kingsong-n16 #7 WARN cadrage serré
+kingsong-n16 #8 PASS ok
+kingsong-n16 #9 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+kingsong-s2-pro #0 WARN basse définition
+kingsong-s2-pro #1 WARN basse définition
+kingsong-s2-pro #2 WARN basse définition
+kingsong-s2-pro #3 WARN basse définition
+kingsong-s2-pro #4 WARN basse définition
+kingsong-s2-pro #5 WARN basse définition · cadrage serré
+kingsong-s2-pro #6 WARN basse définition
+kingsong-s2-pro #7 PASS ok
+kingsong-s2-pro #8 WARN basse définition · cadrage serré
+kingsong-s2-pro #9 WARN cadrage serré
+kugoo-g2-master #0 PASS ok
+kugoo-g2-master #1 PASS ok
+kugoo-g2-master #2 PASS ok
+kugoo-g2-master #3 PASS ok
+kugoo-g2-master #4 PASS ok
+kugoo-g2-master #5 WARN basse définition · cadrage serré
+kugoo-g2-master #6 PASS ok
+kugoo-g2-master #7 PASS ok
+kugoo-g2-master #8 WARN basse définition · cadrage serré
+kugoo-g2-master #9 PASS ok
+kugoo-g2-max #0 PASS ok
+kugoo-g2-max #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g2-max #2 WARN basse définition
+kugoo-g2-max #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g2-max #4 PASS ok
+kugoo-g2-max #5 PASS ok
+kugoo-g2-max #6 PASS ok
+kugoo-g2-max #7 PASS ok
+kugoo-g2-max #8 WARN cadrage serré
+kugoo-g2-max #9 PASS ok
+kugoo-g3 #0 PASS ok
+kugoo-g3 #1 PASS ok
+kugoo-g3 #2 PASS ok
+kugoo-g3 #3 PASS ok
+kugoo-g3 #4 PASS ok
+kugoo-g3 #5 PASS ok
+kugoo-g3 #6 PASS ok
+kugoo-g3 #7 PASS ok
+kugoo-g3 #8 PASS ok
+kugoo-g3-pro #0 PASS ok
+kugoo-g3-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g3-pro #2 WARN basse définition · cadrage serré
+kugoo-g3-pro #3 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g3-pro #4 PASS ok
+kugoo-g3-pro #5 WARN cadrage serré
+kugoo-g3-pro #6 PASS ok
+kugoo-g3-pro #7 WARN cadrage serré
+kugoo-g3-pro #8 PASS ok
+kugoo-g4 #0 PASS ok
+kugoo-g4 #1 PASS ok
+kugoo-g4 #2 PASS ok
+kugoo-g4 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g4 #4 PASS ok
+kugoo-g4 #5 PASS ok
+kugoo-g4 #6 FAIL détourage sale / résidu de décor
+kugoo-g4 #7 PASS ok
+kugoo-g4 #8 PASS ok
+kugoo-g4 #9 PASS ok
+kuickwheel-f1 #0 PASS ok
+kuickwheel-f1 #1 PASS ok
+kuickwheel-f1 #2 PASS ok
+kuickwheel-f1 #3 PASS ok
+kuickwheel-f1 #4 PASS ok
+kuickwheel-f1 #5 PASS ok
+kuickwheel-f1 #6 PASS ok
+kuickwheel-f1 #7 WARN basse définition
+kuickwheel-f1 #8 PASS ok
+kuickwheel-f1 #9 PASS ok
+kuickwheel-m16-pro #0 PASS ok
+kuickwheel-m16-pro #1 PASS ok
+kuickwheel-m16-pro #2 WARN basse définition · cadrage serré
+kuickwheel-m16-pro #3 PASS ok
+kuickwheel-m16-pro #4 WARN basse définition · cadrage serré
+kuickwheel-m16-pro #5 WARN basse définition · cadrage serré
+kuickwheel-m16-pro #6 PASS ok
+kuickwheel-m16-pro #7 WARN basse définition
+kuickwheel-m16-pro #8 FAIL basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kuickwheel-m16-pro #9 WARN basse définition · cadrage serré
+kuickwheel-s1-c-pro #0 PASS ok
+kuickwheel-s1-c-pro #1 PASS ok
+kuickwheel-s1-c-pro #2 PASS ok
+kuickwheel-s1-c-pro #3 WARN cadrage serré
+kuickwheel-s1-c-pro #4 WARN cadrage serré
+kuickwheel-s1-c-pro #5 WARN cadrage serré
+kuickwheel-s1-c-pro #6 WARN cadrage serré
+kuickwheel-s1-c-pro #7 WARN basse définition · cadrage serré
+kuickwheel-s1-c-pro #8 WARN cadrage serré
+kuickwheel-s1-c-pro #9 WARN basse définition · cadrage serré
+kuickwheel-s9 #0 PASS ok
+kuickwheel-s9 #1 PASS ok
+kuickwheel-s9 #2 PASS ok
+kuickwheel-s9 #3 PASS ok
+kuickwheel-s9 #4 ERROR Input buffer contains unsupported image format
+kuickwheel-s9 #5 ERROR Input buffer contains unsupported image format
+::notice title=photos lot10 (dry)::162 candidates · PASS 91 · WARN 48 · FAIL 21 · ERREUR 2

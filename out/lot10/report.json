@@ -1,0 +1,3420 @@
+[
+ {
+  "slug": "kingsong-e1",
+  "i": 0,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.819
+  },
+  "size": [
+   398,
+   546
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 1,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.57
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 2,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.666
+  },
+  "size": [
+   504,
+   546
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 3,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.808
+  },
+  "size": [
+   546,
+   360
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 4,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.849
+  },
+  "size": [
+   578,
+   589
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 5,
+  "url": "https://www.kingsong-store.com/1088-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.184,
+   "vivid": 0.054,
+   "fill": 0.73
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 6,
+  "url": "https://www.kingsong-store.com/1089-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.819
+  },
+  "size": [
+   576,
+   789
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 7,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/04/%D0%951_detail1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.352,
+   "vivid": 0.051,
+   "fill": 0.629
+  },
+  "size": [
+   1404,
+   985
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1791637973196_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.09,
+   "vivid": 0.056,
+   "fill": 0.73
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1791997612743_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.819
+  },
+  "size": [
+   398,
+   546
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fa4c32b-bf9b-4d7b-b339-6552542cf1b7/1792004298169_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.081,
+   "vivid": 0.1,
+   "fill": 0.744
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fa4c32b-bf9b-4d7b-b339-6552542cf1b7/1792004302211_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.846
+  },
+  "size": [
+   804,
+   804
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1214.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.801
+  },
+  "size": [
+   1311,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1212.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.827
+  },
+  "size": [
+   1729,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1213.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.735
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1215.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.573
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1216.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.71
+  },
+  "size": [
+   1572,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1222.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.703
+  },
+  "size": [
+   693,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1218.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.475
+  },
+  "size": [
+   1760,
+   1422
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1219.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.569
+  },
+  "size": [
+   1760,
+   1423
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166671928_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.802
+  },
+  "size": [
+   1335,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166678340_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.659
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166685674_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.676
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.802
+  },
+  "size": [
+   1334,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.746
+  },
+  "size": [
+   1673,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.697
+  },
+  "size": [
+   1760,
+   1705
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.529
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.802
+  },
+  "size": [
+   1327,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.47
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-7.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.51
+  },
+  "size": [
+   1760,
+   1410
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba79e360-928a-4a50-9bde-75542a00501c/1792004308489_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.391
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba79e360-928a-4a50-9bde-75542a00501c/1792004314145_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.822
+  },
+  "size": [
+   730,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 2,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.812
+  },
+  "size": [
+   582,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 3,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.616
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 4,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.823
+  },
+  "size": [
+   645,
+   857
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 5,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.81
+  },
+  "size": [
+   858,
+   504
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 6,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.821
+  },
+  "size": [
+   859,
+   599
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 7,
+  "url": "https://media.cdnws.com/_i/21277/6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.809
+  },
+  "size": [
+   386,
+   512
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 8,
+  "url": "https://media.cdnws.com/_i/21277/6477/3791/81/trottinette-electrique-kingsong-n14-5.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.72
+  },
+  "size": [
+   476,
+   614
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14",
+  "i": 9,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2024/08/N14_detail1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.113,
+   "vivid": 0.011,
+   "fill": 0.545
+  },
+  "size": [
+   1402,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1791637975526_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.021,
+   "vivid": 0.031,
+   "fill": 0.752
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 1,
+  "url": "https://www.kingsong-store.com/1536-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.081,
+   "vivid": 0.086,
+   "fill": 0.757
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 2,
+  "url": "https://media.cdnws.com/_i/21277/6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.809
+  },
+  "size": [
+   386,
+   512
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/6477/3791/81/trottinette-electrique-kingsong-n14-5.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.72
+  },
+  "size": [
+   476,
+   614
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 4,
+  "url": "https://media.cdnws.com/_i/21277/6270/2162/72/trottinette-n14-pliee.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.753
+  },
+  "size": [
+   1095,
+   603
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 5,
+  "url": "https://www.kingsong-store.com/1007-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.587
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 6,
+  "url": "https://www.kingsong-store.com/1008-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.832
+  },
+  "size": [
+   830,
+   691
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 7,
+  "url": "https://www.kingsong-store.com/1009-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.849
+  },
+  "size": [
+   853,
+   777
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 8,
+  "url": "https://media.cdnws.com/_i/21277/6271/126/73/afficheur-trottinette-n14.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.141,
+   "fill": 0.679
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792004335320_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.195,
+   "vivid": 0.166,
+   "fill": 0.585
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 1,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.566
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 2,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.398
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 3,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.816
+  },
+  "size": [
+   387,
+   546
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 4,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.853
+  },
+  "size": [
+   547,
+   529
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 5,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.14.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.813
+  },
+  "size": [
+   546,
+   353
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 6,
+  "url": "https://www.kingsong-store.com/1538-large_default/electric-scooter-kingsong-ks-n15-37v-104ah.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.053,
+   "vivid": 0.096,
+   "fill": 0.731
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 7,
+  "url": "https://www.kingsong-store.com/1554-large_default/electric-scooter-kingsong-ks-n15-37v-104ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.816
+  },
+  "size": [
+   647,
+   911
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 8,
+  "url": "https://kingsongeurope.com/wp-content/uploads/2025/05/kingsong-n15-details-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.272,
+   "vivid": 0.008,
+   "fill": 0.48
+  },
+  "size": [
+   1468,
+   749
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ee82470-5e81-4c73-88cf-f197acdef369/1792166652626_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.616
+  },
+  "size": [
+   1510,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ee82470-5e81-4c73-88cf-f197acdef369/1792166659216_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.651
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_3_a31bf5d7-d63c-42d7-974b-54976dc8c8ad.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.616
+  },
+  "size": [
+   1514,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.112,
+   "fill": 0.723
+  },
+  "size": [
+   1710,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.137,
+   "fill": 0.664
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n16-electric-scooter-01-main.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.583
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.093,
+   "fill": 0.653
+  },
+  "size": [
+   1596,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n16-electric-scooter-01-fold-1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.799
+  },
+  "size": [
+   1570,
+   956
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.496
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_8.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.015,
+   "vivid": 0.059,
+   "fill": 0.787
+  },
+  "size": [
+   1612,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004355878_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.837
+  },
+  "size": [
+   551,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004368299_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.813
+  },
+  "size": [
+   242,
+   319
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004381814_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.818
+  },
+  "size": [
+   508,
+   671
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.833
+  },
+  "size": [
+   477,
+   632
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 4,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.832
+  },
+  "size": [
+   551,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 5,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KINGSONG-KS-2-PRO-.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.786
+  },
+  "size": [
+   655,
+   359
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 6,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-KS-.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.823
+  },
+  "size": [
+   546,
+   719
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 7,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-Kingsong-.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.429
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 8,
+  "url": "https://media.cdnws.com/_i/21277/5226/1215/28/trottinette-kingsong-s2-moteur-1000w-roue-10-pouce.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.842
+  },
+  "size": [
+   648,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 9,
+  "url": "https://media.cdnws.com/_i/21277/5227/808/29/trottinette-kingsong-s2-pro-frein-disque-avant.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.865
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638181604_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.816
+  },
+  "size": [
+   1043,
+   1071
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638184450_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.826
+  },
+  "size": [
+   615,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638187022_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.791
+  },
+  "size": [
+   613,
+   957
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_99116dbe-284b-4708-b440-c2c6d3a29184.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.051,
+   "fill": 0.739
+  },
+  "size": [
+   1086,
+   1132
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-KuKirin.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.595
+  },
+  "size": [
+   859,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-V2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.772
+  },
+  "size": [
+   417,
+   895
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.479
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.348
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_4.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.771
+  },
+  "size": [
+   795,
+   395
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.286
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791638172492_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.084,
+   "fill": 0.423
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791638178129_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.202,
+   "vivid": 0.193,
+   "fill": 0.828
+  },
+  "size": [
+   1102,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791997790499_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.81
+  },
+  "size": [
+   585,
+   875
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-P.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.257,
+   "vivid": 0.243,
+   "fill": 0.843
+  },
+  "size": [
+   1081,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-V2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.788
+  },
+  "size": [
+   797,
+   935
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-11.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.843
+  },
+  "size": [
+   825,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.285
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.845
+  },
+  "size": [
+   768,
+   831
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.108,
+   "fill": 0.842
+  },
+  "size": [
+   825,
+   871
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c971be9-d05b-406e-b1eb-eae7c6531036/1791942289007_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.612
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-2623978.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.166,
+   "fill": 0.712
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8639952.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.172,
+   "fill": 0.841
+  },
+  "size": [
+   966,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1580539.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.509
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4987727.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.603
+  },
+  "size": [
+   929,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3663846.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.122,
+   "fill": 0.813
+  },
+  "size": [
+   706,
+   1031
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-5768834.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.13,
+   "fill": 0.819
+  },
+  "size": [
+   665,
+   1037
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-9142451.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.579
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4109246.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.383
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/81fdb78d-b392-4d9b-8b77-18abf2ad1c3e/1791942297437_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.639
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_a4444502-7da1-4881-a8ec-c95ff1b5d0fa.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.268,
+   "vivid": 0.288,
+   "fill": 0.758
+  },
+  "size": [
+   1138,
+   1215
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_be37e9ff-5caf-4a16-b99b-737766afe3c4.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.787
+  },
+  "size": [
+   521,
+   854
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.605
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.838
+  },
+  "size": [
+   928,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.131,
+   "fill": 0.839
+  },
+  "size": [
+   998,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG3Pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.62
+  },
+  "size": [
+   1145,
+   1191
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-12.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.155,
+   "fill": 0.718
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.818
+  },
+  "size": [
+   1261,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942291167_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.531
+  },
+  "size": [
+   748,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942292930_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.744
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942295235_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.845
+  },
+  "size": [
+   740,
+   720
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-P.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.154,
+   "vivid": 0.115,
+   "fill": 0.707
+  },
+  "size": [
+   1167,
+   1194
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_2e5459c8-c59b-4959-adbc-387cb7320868.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.746
+  },
+  "size": [
+   1101,
+   1123
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_27c47278-e160-4fad-beab-a70fe0646649.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.604
+  },
+  "size": [
+   763,
+   952
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_dd9cff65-b71b-4777-91dd-f799c984b0a8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.022,
+   "fill": 0.683
+  },
+  "size": [
+   1625,
+   1273
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.834
+  },
+  "size": [
+   1728,
+   1336
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_2d641ed3-0d70-4e99-aa18-aa5516a61460.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.843
+  },
+  "size": [
+   1395,
+   1456
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.835
+  },
+  "size": [
+   1219,
+   1398
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003950044_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.821
+  },
+  "size": [
+   717,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003954221_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   717,
+   978
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003958469_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   717,
+   978
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.497
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.432
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.566
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.824
+  },
+  "size": [
+   998,
+   671
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.763
+  },
+  "size": [
+   1054,
+   493
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELF1_TROTTINETTEKUICKWHEELF136V7_8Ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   717,
+   978
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-f1",
+  "i": 9,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/5229782320.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   717,
+   978
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791638375851_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.556
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791638377793_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.421
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791997795699_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.763
+  },
+  "size": [
+   996,
+   466
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_1_ca5f3e5f-0916-40bc-9b0d-17a4c6ea533d.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.831
+  },
+  "size": [
+   818,
+   992
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_2_02bd7c0c-c1e5-4bf7-be05-7b7d8bc58ef2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.785
+  },
+  "size": [
+   996,
+   528
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_3_63633cda-39fe-42cb-ace5-eeb4019a5acd.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.772
+  },
+  "size": [
+   996,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 6,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.421
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 7,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396960.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.418
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 8,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/5169433722.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.053,
+   "vivid": 0.065,
+   "fill": 0.759
+  },
+  "size": [
+   408,
+   211
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 9,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4300613892.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.742
+  },
+  "size": [
+   393,
+   186
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.676
+  },
+  "size": [
+   966,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.534
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.534
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.829
+  },
+  "size": [
+   988,
+   797
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.829
+  },
+  "size": [
+   1026,
+   731
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.829
+  },
+  "size": [
+   1026,
+   731
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.829
+  },
+  "size": [
+   988,
+   797
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.776
+  },
+  "size": [
+   998,
+   509
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bd356df9-d381-484e-800e-ce48490d73fd/1791638372603_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.178,
+   "fill": 0.523
+  },
+  "size": [
+   1786,
+   1546
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s1-c-pro",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bd356df9-d381-484e-800e-ce48490d73fd/1791997621438_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.814
+  },
+  "size": [
+   786,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d68b5703-975e-40e3-84a5-0c448a16fb8d/1792003942492_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.434
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d68b5703-975e-40e3-84a5-0c448a16fb8d/1792003946475_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.599
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 2,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2024/02/trottinette-electrique-kuickwheel-s9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.419
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 3,
+  "url": "https://www.gyroroue-shop.fr/wp-content/uploads/2024/02/trottinette-electrique-kuickwheel-s9-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.456
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 4,
+  "url": "https://fastride.fr/11251-large_default/trottinette-electrique-kuickwheel-s9.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "i": 5,
+  "url": "https://fastride.fr/11252-large_default/trottinette-electrique-kuickwheel-s9.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ }
+]
