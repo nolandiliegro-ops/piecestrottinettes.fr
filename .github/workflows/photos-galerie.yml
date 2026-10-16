@@ -48,6 +48,16 @@ jobs:
           mkdir -p out
           while read -r mode lot; do
             [ -z "$lot" ] && continue
+            if [ "$mode" = "fetch" ]; then
+              # Lecture seule : télécharge des images publiques (liste « nom url ») pour les rendus de maquettes.
+              mkdir -p "out/fetch-$lot"; n=0
+              while read -r name url; do
+                [ -z "$url" ] && continue
+                curl -s -L --max-time 30 -o "out/fetch-$lot/$name" "$url" && n=$((n+1))
+              done < "config/photos/$lot.txt"
+              echo "::notice title=$lot fetch::$n fichiers"
+              continue
+            fi
             if [ "$mode" = "write" ]; then
               node scripts/photos-galerie.mjs --write --file "config/photos/$lot.json" --accept "config/photos/$lot.accept.json" > "out/$lot.$mode.log" 2>&1
             else
