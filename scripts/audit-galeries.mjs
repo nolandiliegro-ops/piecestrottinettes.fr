@@ -11,7 +11,9 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { execFileSync } from 'child_process';
+import { execFile } from 'child_process';
+import { promisify } from 'util';
+const pexec = promisify(execFile);
 import sharp from 'sharp';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,7 +24,8 @@ const OUT = resolve(ROOT, 'out', lot.lot);
 mkdirSync(OUT, { recursive: true });
 
 const small = (u) => u.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + '?width=320&resize=contain&quality=80';
-const get = (u) => execFileSync('curl', ['-s', '-L', '--max-time', '30', small(u)], { maxBuffer: 32 * 1024 * 1024 });
+const get = async (u) => (await pexec('curl', ['-s', '-L', '--max-time', '30', small(u)], { encoding: 'buffer', maxBuffer: 32 * 1024 * 1024 })).stdout;
+mkdirSync(resolve(OUT, 'img'), { recursive: true });
 
 async function measure(buf) {
   const img = sharp(buf).ensureAlpha();
@@ -60,11 +63,13 @@ async function tile(buf, label, color) {
 }
 
 for (const m of lot.models) {
-  const items = [];
-  for (let i = 0; i < m.urls.length; i++) {
-    try { const buf = get(m.urls[i]); const me = await measure(buf); items.push({ i, buf, ...me }); }
-    catch (e) { items.push({ i, buf: null, error: e.message.slice(0, 80) }); }
-  }
+  const items = await Promise.all(m.urls.map(async (u, i) => {
+    try {
+      const buf = await get(u); const me = await measure(buf);
+      await sharp(buf).resize(200, 200, { fit: 'inside' }).png({ compressionLevel: 9, palette: true }).toFile(resolve(OUT, 'img', `${m.slug}__${i}.png`));
+      return { i, buf, ...me };
+    } catch (e) { return { i, buf: null, error: e.message.slice(0, 80) }; }
+  }));
   // doublons
   for (const it of items) {
     if (it.hash === undefined) continue;
