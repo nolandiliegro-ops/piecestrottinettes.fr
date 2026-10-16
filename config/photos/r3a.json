@@ -1,0 +1,120 @@
+{
+ "lot": "r3a",
+ "models": [
+  {
+   "id": "ac87c3ac-d036-444c-abf8-1d0a4709142a",
+   "slug": "laotie-es10p",
+   "name": "Laotie ES10P",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg"
+   ]
+  },
+  {
+   "id": "ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4",
+   "slug": "laotie-es19",
+   "name": "Laotie ES19",
+   "brand": "Laotie",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792166779668_0.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//7F/A2/112a8875-e6cc-4930-b939-b9003b4e491a.jpg",
+    "https://m.media-amazon.com/images/I/61+GVDwoheL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71yOdR2nWYL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81VbMEgcjdL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/811tMqAKwlL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71MftziHxcL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61997i--jjL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "436e7f75-6b6b-47da-a231-f9fd83ab43fd",
+   "slug": "laotie-sr10",
+   "name": "Laotie SR10",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1791682693458_0.png",
+    "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0B/81/65ce360c-7cfa-4796-95e4-fbebf58e5e6d.png",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/F5/2E/a3441b9e-c838-4c1c-8501-5c04aded36b8.png",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/3A/FB/2236692c-ed82-487d-b3bb-60682108c39e.jpg",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/5B/BF/71cc0292-027b-482e-a7d0-746f49baecd4.jpg",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/24/45/4b986fa8-3b12-43c0-b15d-6631b7a40655.png",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/54/69/f2dc3d02-3c62-4172-8ed9-96f4714ee4d0.jpg",
+    "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/4D/D6/46f8db60-a4c4-4dda-8a47-ee3d6ee38d01.jpg"
+   ]
+  },
+  {
+   "id": "643d4080-2214-41e7-926e-b0040b8f7529",
+   "slug": "laotie-ti30",
+   "name": "Laotie Ti30",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//89/4C/33860186-4ecb-4a02-8a1d-00af123fe214.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1791682691456_0.png",
+    "https://m.media-amazon.com/images/I/61Q9p+IJ9QL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81l2hyKzUlL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61f7M+ynSsL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81vYXqW1YcL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81pzDw3LSVL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/712z3iWm+XL._AC_SL1500_.jpg"
+   ]
+  },
+  {
+   "id": "bc51c93a-efbf-4654-ab04-302669583825",
+   "slug": "micro-merlin-ii",
+   "name": "Micro Merlin II",
+   "brand": "Micro",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791997630764_0.png",
+    "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/9ac113a1eba0d33fae43387eb120c2f406694620140ec37927ec8cfc/image/76029/600x900/111/98/e/m/em0086-em0092_1_.jpg",
+    "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/25d7871efba7f2bcc7d2b625c6374467d3e9dfbbeb12737aca91202b/image/363804/600x900/111/98/m/e/medium-_micro_merlin_ii_grey_-2.jpg",
+    "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/d0f4ea4289fc6c5af1d496637bd68d0ce4c9f6f156a54a38386b7402/image/64518/600x900/111/98/e/m/em0086-em0092_3_.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-1/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-2/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-3/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-4/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-5/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg"
+   ]
+  },
+  {
+   "id": "378b920e-2ed8-4cff-afc7-b878e6b39575",
+   "slug": "navee-n65i",
+   "name": "Navee N65i",
+   "brand": "Navee",
+   "candidates": [
+    "https://www.naveetech.com/wp-content/uploads/2025/07/N65i.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000720759_0.png",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/ff01157b-d4ad-49d3-9200-76b7b2917fbf.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/91488ab4-5f78-4c49-9ef4-222a56df6266.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/65e9044c-f6d4-4534-ac0d-bc6a74ad9279.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6fea8766-88be-4a16-a630-837e94c08735.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/d39265da-835b-4729-a0b4-43c5f2533752.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/11c5635d-76d7-4c1f-8408-ce2bf353bc4d.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/90de7aee-a2e0-4c88-8ede-a07c6729ca15.jpg;maxHeight=1920;maxWidth=900",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6fbc66d7-406a-469d-a638-68f5a1d911a8.jpg;maxHeight=1920;maxWidth=900"
+   ]
+  },
+  {
+   "id": "44fb9c90-a8c7-4107-9318-7ec94fdd12ff",
+   "slug": "ootd-s30",
+   "name": "Ootd S30",
+   "brand": "Ootd",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44fb9c90-a8c7-4107-9318-7ec94fdd12ff/1792166965035_0.png",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-main.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-cover.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-1.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-2.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-3.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-5.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-1.png.webp",
+    "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-2.png.webp",
+    "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_1.jpg",
+    "https://m.media-amazon.com/images/I/314u4TE18QL._AC_SL1500_.jpg",
+    "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_4.jpg"
+   ]
+  }
+ ]
+}
