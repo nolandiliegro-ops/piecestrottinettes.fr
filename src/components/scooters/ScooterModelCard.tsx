@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
-import { getPrimaryImage } from "@/lib/entityImage";
+import { getAllImages, getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
 
 interface ScooterModel {
@@ -25,6 +25,7 @@ interface ScooterModelCardProps {
 
 const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
   const displayImage = getPrimaryImage(scooter.images, scooter.image_url, "/placeholder.svg");
+  const hoverImage = getAllImages(scooter.images, scooter.image_url).find((i) => i.url !== displayImage)?.url;
 
   return (
     <motion.div
@@ -39,14 +40,30 @@ const ScooterModelCard = ({ scooter, index = 0 }: ScooterModelCardProps) => {
         {/* Image Container */}
         <div className="relative aspect-square bg-gradient-to-br from-muted/30 to-muted/10 overflow-hidden">
           {displayImage ? (
-            <motion.img
-              src={optimizedImage(displayImage, 400)}
-              alt={scooter.name}
-              loading={index < 8 ? "eager" : "lazy"}
-              decoding="async"
-              className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
-              whileHover={{ scale: 1.05 }}
-            />
+            <>
+              <img
+                src={optimizedImage(displayImage, 400)}
+                alt={scooter.name}
+                loading={index < 8 ? "eager" : "lazy"}
+                decoding="async"
+                className={`w-full h-full object-contain p-4 transition-all duration-500 ${
+                  hoverImage
+                    ? "[@media(hover:hover)]:group-hover:opacity-0 [@media(hover:hover)]:group-hover:scale-95"
+                    : "group-hover:scale-105"
+                }`}
+              />
+              {/* 2e photo au survol (souris uniquement : sur téléphone, pas de survol) */}
+              {hoverImage && (
+                <img
+                  src={optimizedImage(hoverImage, 400)}
+                  alt=""
+                  aria-hidden
+                  loading="lazy"
+                  decoding="async"
+                  className="hidden [@media(hover:hover)]:block absolute inset-0 w-full h-full object-contain p-4 opacity-0 scale-105 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100"
+                />
+              )}
+            </>
           ) : (
             <div className="w-full h-full flex items-center justify-center">
               <span className="text-6xl opacity-20">🛴</span>

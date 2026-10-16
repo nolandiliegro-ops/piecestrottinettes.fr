@@ -1,10 +1,14 @@
 import SEO from "@/components/SEO";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
+import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search } from "lucide-react";
 import Header from "@/components/Header";
 import BrandBentoGrid from "@/components/scooters/BrandBentoGrid";
 import ScooterModelCard from "@/components/scooters/ScooterModelCard";
+import BrandCarouselLooks, { type MarquesLook } from "@/components/scooters/BrandCarouselLooks";
+import ScooterFilters from "@/components/scooters/ScooterFilters";
+import { FILTER_GROUPS, applyFilters, readSelection, type Selection } from "@/lib/scooterFilters";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
@@ -40,13 +44,13 @@ const EmptyState = ({ onClear }: { onClear: () => void }) => (
       AUCUN MODÈLE TROUVÉ
     </h3>
     <p className="text-muted-foreground mb-6">
-      Aucune trottinette ne correspond à cette marque
+      Aucune trottinette ne correspond à ces critères
     </p>
     <Button
       onClick={onClear}
       className="rounded-full px-6 bg-mineral text-white hover:bg-mineral-dark"
     >
-      Afficher toutes les marques
+      Tout réafficher
     </Button>
   </motion.div>
 );
@@ -59,6 +63,25 @@ const Scooters = () => {
 
   const [query, setQuery] = useState("");
   const nq = normalize(query.trim());
+
+  // Filtres + tri dans l'URL (?puissance=1000,2000&tri=pieces) ; ?marques=1..5 = propositions de carrousel
+  const [params, setParams] = useSearchParams();
+  const selection: Selection = useMemo(() => readSelection(params), [params]);
+  const sort = params.get("tri") ?? "nom";
+  const lookParam = Number(params.get("marques"));
+  const look = (lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
+  const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
+    const next = new URLSearchParams(params);
+    mutate(next);
+    setParams(next, { replace: true });
+  }, [params, setParams]);
+  const toggleFilter = (group: string, value: string) => setParam((p) => {
+    const cur = new Set((p.get(group) ?? "").split(",").filter(Boolean));
+    if (cur.has(value)) cur.delete(value); else cur.add(value);
+    if (cur.size) p.set(group, [...cur].join(",")); else p.delete(group);
+  });
+  const clearFilters = () => setParam((p) => FILTER_GROUPS.forEach((g) => p.delete(g.key)));
+  const setSort = (v: string) => setParam((p) => { if (v === "nom") p.delete("tri"); else p.set("tri", v); });
 
   // Photo de couverture + nombre de modèles par marque, dérivés des modèles déjà chargés (0 requête en plus)
   const { covers, counts } = useMemo(() => {
@@ -74,6 +97,22 @@ const Scooters = () => {
       }
     });
     return { covers, counts };
+  }, [allScooters]);
+
+  // Propositions de carrousel : 3 photos par marque (modèles les plus fournis en pièces) + 3 marques pour « Toutes »
+  const { picks, allPicks } = useMemo(() => {
+    const byBrand: Record<string, typeof allScooters> = {};
+    allScooters.forEach((s) => { const k = s.brand?.slug; if (k) (byBrand[k] ??= []).push(s); });
+    const picks: Record<string, string[]> = {};
+    Object.entries(byBrand).forEach(([k, list]) => {
+      picks[k] = [...list]
+        .sort((a, b) => (b.compatible_parts_count ?? 0) - (a.compatible_parts_count ?? 0))
+        .map((s) => getPrimaryImage(s.images, s.image_url, ""))
+        .filter(Boolean)
+        .slice(0, 3);
+    });
+    const allPicks = ["xiaomi", "kaabo", "segway"].map((k) => picks[k]?.[0]).filter(Boolean) as string[];
+    return { picks, allPicks };
   }, [allScooters]);
 
   // Marques visibles : seulement celles qui ont au moins un modèle publié, filtrées par la recherche
@@ -97,6 +136,8 @@ const Scooters = () => {
     }
     return list;
   }, [allScooters, activeBrand, nq]);
+
+  const shownScooters = useMemo(() => applyFilters(filteredScooters, selection, sort), [filteredScooters, selection, sort]);
 
   // Get active brand name for display
   const activeBrandName = useMemo(() => {
@@ -122,7 +163,7 @@ const Scooters = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl text-carbon tracking-[0.2em] uppercase"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-carbon tracking-[0.1em] sm:tracking-[0.2em] uppercase"
           >
             TROTTINETTES
           </motion.h1>
@@ -142,7 +183,7 @@ const Scooters = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-mineral font-montserrat font-semibold mt-2"
           >
-            {scootersLoading ? "Chargement..." : `${filteredScooters.length} modèles${activeBrandName ? ` ${activeBrandName}` : ""}`}
+            {scootersLoading ? "Chargement..." : `${shownScooters.length} modèle${shownScooters.length > 1 ? "s" : ""}${activeBrandName ? ` ${activeBrandName}` : ""}`}
           </motion.div>
         </section>
 
@@ -164,18 +205,42 @@ const Scooters = () => {
               />
             </div>
           </div>
-          <BrandBentoGrid
-            brands={visibleBrands}
-            activeBrand={activeBrand}
-            onBrandChange={setActiveBrand}
-            isLoading={brandsLoading || scootersLoading}
-            covers={covers}
-            counts={counts}
-          />
+          {look && !(brandsLoading || scootersLoading) ? (
+            <BrandCarouselLooks
+              look={look}
+              brands={visibleBrands}
+              activeBrand={activeBrand}
+              onBrandChange={setActiveBrand}
+              picks={picks}
+              counts={counts}
+              allPicks={allPicks}
+              total={allScooters.length}
+            />
+          ) : (
+            <BrandBentoGrid
+              brands={visibleBrands}
+              activeBrand={activeBrand}
+              onBrandChange={setActiveBrand}
+              isLoading={brandsLoading || scootersLoading}
+              covers={covers}
+              counts={counts}
+            />
+          )}
         </section>
 
         {/* Scooter Models Grid */}
         <section className="container mx-auto px-4 py-6">
+          {!scootersLoading && (
+            <ScooterFilters
+              base={filteredScooters}
+              selection={selection}
+              onToggle={toggleFilter}
+              onClear={clearFilters}
+              sort={sort}
+              onSort={setSort}
+              resultCount={shownScooters.length}
+            />
+          )}
           <AnimatePresence mode="wait">
             {scootersLoading ? (
               <motion.div
@@ -186,21 +251,21 @@ const Scooters = () => {
               >
                 <SkeletonGrid />
               </motion.div>
-            ) : filteredScooters.length > 0 ? (
+            ) : shownScooters.length > 0 ? (
               <motion.div
-                key={activeBrand || "all"}
+                key={`${activeBrand || "all"}-${sort}-${params.toString()}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
                 className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
               >
-                {filteredScooters.map((scooter, index) => (
+                {shownScooters.map((scooter, index) => (
                   <ScooterModelCard key={scooter.id} scooter={scooter} index={index} />
                 ))}
               </motion.div>
             ) : (
-              <EmptyState onClear={() => { setActiveBrand(null); setQuery(""); }} />
+              <EmptyState onClear={() => { setActiveBrand(null); setQuery(""); clearFilters(); }} />
             )}
           </AnimatePresence>
         </section>

@@ -36,7 +36,7 @@ const Photo = ({ m, h, blend = true, big = false }: { m: ShowroomCarouselScooter
   </div>
 );
 
-export const GammeCarousel = ({ models, current, brand, style }: { models: ShowroomCarouselScooter[]; current: string; brand: string; style: GalStyle }) => {
+export const GammeCarousel = ({ models, current, brand, style, brandBar }: { models: ShowroomCarouselScooter[]; current: string; brand: string; style: GalStyle; brandBar?: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
   const [canPrev, setCanPrev] = useState(false);
@@ -68,7 +68,7 @@ export const GammeCarousel = ({ models, current, brand, style }: { models: Showr
     if (!el) return;
     const i = models.findIndex((m) => m.slug === current);
     const n = el.children[i] as HTMLElement | undefined;
-    if (n) el.scrollLeft = Math.max(0, n.offsetLeft - (el.clientWidth - n.offsetWidth) / 2);
+    el.scrollLeft = n ? Math.max(0, n.offsetLeft - (el.clientWidth - n.offsetWidth) / 2) : 0;
     update();
   }, [current, models, update]);
 
@@ -99,6 +99,7 @@ export const GammeCarousel = ({ models, current, brand, style }: { models: Showr
       <div className="flex gap-2.5 flex-shrink-0">{arrow(-1, canPrev)}{arrow(1, canNext)}</div>
     </div>
   );
+  const headerWithBar = brandBar ? <>{brandBar}{header}</> : header;
 
   const track = (children: React.ReactNode, extra = "") => (
     <div ref={ref} onScroll={update}
@@ -209,7 +210,7 @@ export const GammeCarousel = ({ models, current, brand, style }: { models: Showr
   return (
     <section className="px-4 py-10" style={{ backgroundColor: dark ? CARBON : "#F5F0E8" }}>
       <div className="mx-auto max-w-6xl">
-        {header}
+        {headerWithBar}
         {items}
         {bar}
       </div>
