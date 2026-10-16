@@ -69,6 +69,49 @@ const Fan = ({ srcs, h = "h-40", spread = 40 }: { srcs: string[]; h?: string; sp
   );
 };
 
+/**
+ * « Toutes » de Vitrine Air (16/10, demande de Nolan) : une seule trottinette à la fois, qui défile marque après marque
+ * (glisse depuis la droite, s'incline, repart à gauche) avec le logo de la marque en cours. Arrêt si l'utilisateur
+ * a demandé moins d'animations (prefers-reduced-motion) ; pause au survol.
+ */
+const SPIN_CSS = `
+@keyframes ptSpinIn { from { opacity: 0; transform: translateX(-50%) translateX(70px) rotate(4deg) scale(.9); } to { opacity: 1; transform: translateX(-50%) rotate(-12deg) scale(1); } }
+@keyframes ptSpinOut { from { opacity: 1; transform: translateX(-50%) rotate(-12deg) scale(1); } to { opacity: 0; transform: translateX(-50%) translateX(-80px) rotate(-22deg) scale(.88); } }
+@keyframes ptFade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+`;
+const AllSpinner = ({ items }: { items: { src: string; logo?: string | null; name: string }[] }) => {
+  const [i, setI] = useState(0);
+  const [paused, setPaused] = useState(false);
+  useEffect(() => {
+    if (items.length < 2 || paused) return;
+    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+    const t = window.setInterval(() => setI((v) => (v + 1) % items.length), 1700);
+    return () => window.clearInterval(t);
+  }, [items.length, paused]);
+  if (!items.length) return null;
+  const cur = items[i % items.length];
+  const prev = items[(i - 1 + items.length) % items.length];
+  const next = items[(i + 1) % items.length];
+  return (
+    <div className="absolute inset-0" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+      <style>{SPIN_CSS}</style>
+      {i > 0 && (
+        <img key={`o${i}`} src={optimizedImage(prev.src, 360)} alt="" aria-hidden draggable={false}
+          className="absolute left-1/2 -top-12 h-48 md:h-52 w-auto max-w-[86%] object-contain pointer-events-none"
+          style={{ animation: "ptSpinOut .6s ease-in forwards", filter: DROP }} />
+      )}
+      <img key={`i${i}`} src={optimizedImage(cur.src, 360)} alt="" aria-hidden draggable={false}
+        className="absolute left-1/2 -top-12 h-48 md:h-52 w-auto max-w-[86%] object-contain pointer-events-none"
+        style={{ animation: i > 0 ? "ptSpinIn .7s cubic-bezier(.22,1,.36,1) forwards" : undefined, transform: "translateX(-50%) rotate(-12deg)", filter: DROP }} />
+      {/* préchargement de la suivante */}
+      <img src={optimizedImage(next.src, 360)} alt="" aria-hidden className="hidden" />
+      <div key={`l${i}`} className="absolute right-4 top-4 h-7 px-2.5 rounded-full bg-white/90 shadow-sm flex items-center gap-1.5" style={{ animation: "ptFade .5s ease-out" }}>
+        {cur.logo ? <img src={cur.logo} alt={cur.name} className="h-4 w-auto max-w-[84px] object-contain" /> : <span className="text-sm font-bold uppercase text-carbon">{cur.name}</span>}
+      </div>
+    </div>
+  );
+};
+
 /** Bouton de la tuile « Toutes » */
 const AllButton = ({ total, active, light = false }: { total: number; active: boolean; light?: boolean }) => (
   <span className={cn("inline-flex items-center gap-2 h-11 pl-4 pr-1.5 rounded-full text-sm font-bold uppercase tracking-wide transition-colors")}
@@ -131,9 +174,24 @@ const BrandCarouselLooks = ({ look, brands, activeBrand, onBrandChange, picks, c
         </button>
       );
     }
+    if (look === 1) {
+      const items = brands.map((b) => ({ src: picks[b.slug]?.[0], logo: b.logo_url, name: b.name })).filter((x) => x.src) as { src: string; logo?: string | null; name: string }[];
+      return (
+        <button key="all" type="button" onClick={() => onBrandChange(null)} aria-pressed={allActive} className={cn(base, "w-60 md:w-64 pt-10")}>
+          <div className={cn("relative h-56 md:h-60 rounded-3xl transition-shadow", allActive ? "shadow-xl" : "shadow-md group-hover:shadow-xl")}
+            style={{ background: "linear-gradient(160deg, #1F2A22 0%, #2F4A37 55%, #4A7C59 100%)", ...(allActive ? { boxShadow: `0 0 0 2px ${GREEN}, 0 18px 40px -20px rgba(26,26,26,0.45)` } : {}) }}>
+            <div className="absolute inset-0 rounded-3xl overflow-hidden">
+              <span className="absolute -left-10 -bottom-16 w-56 h-56 rounded-full blur-3xl opacity-40" style={{ background: "#9BD3A8" }} />
+            </div>
+            <AllSpinner items={items} />
+            <div className="absolute left-4 bottom-4"><AllButton total={total} active={false} light /></div>
+          </div>
+        </button>
+      );
+    }
     return (
       <button key="all" type="button" onClick={() => onBrandChange(null)} aria-pressed={allActive}
-        className={cn(base, look === 4 ? "w-64 md:w-72 pt-10" : "w-64 md:w-72 pt-10")}>
+        className={cn(base, "w-64 md:w-72 pt-10")}>
         <div className={cn("relative h-56 md:h-60 rounded-3xl bg-white transition-shadow", allActive ? "shadow-xl" : "shadow-md group-hover:shadow-xl")}
           style={allActive ? { boxShadow: `0 0 0 2px ${GREEN}, 0 18px 40px -20px rgba(26,26,26,0.35)` } : undefined}>
           <div className="absolute inset-0 rounded-3xl" style={{ background: "linear-gradient(160deg, #F1ECE2 0%, #FFFFFF 65%)" }} />
@@ -162,7 +220,10 @@ const BrandCarouselLooks = ({ look, brands, activeBrand, onBrandChange, picks, c
             </div>
             <Img src={ph[0]} className="absolute left-1/2 -top-10 h-44 md:h-48 w-auto max-w-[96%] -translate-x-1/2 -rotate-[12deg] group-hover:-rotate-3 group-hover:-translate-y-1" style={{ filter: DROP }} />
             <div className="absolute left-4 right-4 bottom-4 flex items-end justify-between gap-2">
-              <span className="font-black uppercase text-[15px] leading-tight text-carbon truncate" style={{ fontFamily: UNB }}>{b.name}</span>
+              <span className="min-w-0 flex items-center gap-2">
+                {b.logo_url && <img src={b.logo_url} alt="" loading="lazy" className="h-5 w-auto max-w-[52px] shrink-0 object-contain" />}
+                <span className="font-black uppercase text-[15px] leading-tight text-carbon truncate" style={{ fontFamily: UNB }}>{b.name}</span>
+              </span>
               <span className="shrink-0 h-7 min-w-[28px] px-2 rounded-full text-sm font-bold flex items-center justify-center" style={active ? { background: GREEN, color: "#fff" } : { background: t.soft, color: t.deep }}>{n}</span>
             </div>
           </div>

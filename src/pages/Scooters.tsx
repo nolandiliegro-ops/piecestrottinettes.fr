@@ -69,7 +69,8 @@ const Scooters = () => {
   const selection: Selection = useMemo(() => readSelection(params), [params]);
   const sort = params.get("tri") ?? "nom";
   const lookParam = Number(params.get("marques"));
-  const look = (lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
+  // 16/10 : « Vitrine Air » (1) retenue par Nolan = défaut ; ?marques=0 = ancien carrousel, 2..5 = autres propositions
+  const look = (params.get("marques") === null ? 1 : lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
     const next = new URLSearchParams(params);
     mutate(next);
