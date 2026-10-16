@@ -58,6 +58,13 @@ jobs:
               echo "::notice title=$lot fetch::$n fichiers"
               continue
             fi
+            if [ "$mode" = "audit" ]; then
+              # Lecture seule : audit des galeries en ligne (doublons, gros plans, 2e photo proposée) + planches.
+              node scripts/audit-galeries.mjs --file "config/photos/$lot.json" > "out/$lot.$mode.log" 2>&1
+              echo "::notice title=$lot audit::EXIT=$?"
+              grep '^::' "out/$lot.$mode.log" | head -5
+              continue
+            fi
             if [ "$mode" = "write" ]; then
               node scripts/photos-galerie.mjs --write --file "config/photos/$lot.json" --accept "config/photos/$lot.accept.json" > "out/$lot.$mode.log" 2>&1
             else
