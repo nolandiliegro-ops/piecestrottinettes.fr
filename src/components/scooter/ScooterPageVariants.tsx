@@ -25,6 +25,8 @@ import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterDetail } from "@/hooks/useScooterDetail";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 import GammeCarousel, { type GalStyle } from "@/components/scooter/GammeCarousel";
+import BrandExplorer, { type ExploBrand, type ExploLook } from "@/components/scooter/BrandExplorer";
+import { useBrands } from "@/hooks/useScooterData";
 
 export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
 export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall", 6: "Pit-stand" };
@@ -336,47 +338,25 @@ const Gauge270 = ({ value, unit, label, max, accent }: { value: number; unit: st
 const GammePlayer = ({ all, brand, current, style }: { all: ShowroomCarouselScooter[]; brand: string; current: string; style: GalStyle }) => {
   const [view, setView] = useState(brand);
   useEffect(() => { setView(brand); }, [brand]);
+  const [sp] = useSearchParams();
+  const exploN = Number(sp.get("explo"));
+  const explo = (exploN >= 1 && exploN <= 5 ? exploN : 1) as ExploLook;
+  const { data: brandRows = [] } = useBrands();
   const brands = useMemo(() => {
-    const m = new Map<string, { name: string; n: number; img: string | null }>();
+    const logos = new Map<string, string | null>((brandRows as { name: string; logo_url: string | null }[]).map((b) => [b.name, b.logo_url]));
+    const m = new Map<string, ExploBrand>();
     all.forEach((s) => {
       if (!s.brand_name) return;
-      const e = m.get(s.brand_name) ?? { name: s.brand_name, n: 0, img: null };
+      const e = m.get(s.brand_name) ?? { name: s.brand_name, n: 0, img: null, logo: logos.get(s.brand_name) ?? null };
       e.n++;
       if (!e.img && s.image_url) e.img = s.image_url;
       m.set(s.brand_name, e);
     });
     return [...m.values()].sort((a, b) => a.name.localeCompare(b.name, "fr"));
-  }, [all]);
+  }, [all, brandRows]);
   const models = useMemo(() => all.filter((s) => s.brand_name === view).sort((a, b) => a.name.localeCompare(b.name, "fr")), [all, view]);
-  const rowRef = useRef<HTMLDivElement>(null);
-  // La marque choisie reste visible dans le bandeau.
-  useEffect(() => {
-    const row = rowRef.current;
-    const el = row?.querySelector<HTMLElement>(`[data-brand="${CSS.escape(view)}"]`);
-    if (row && el) row.scrollTo({ left: el.offsetLeft - (row.clientWidth - el.offsetWidth) / 2, behavior: "smooth" });
-  }, [view]);
   if (!models.length) return null;
-  const bar = (
-    <div className="mb-5">
-      <div className="mb-2 text-sm font-bold uppercase tracking-wider text-gray-500" style={{ fontFamily: FONT }}>Explorer par marque</div>
-      <div ref={rowRef} className="flex gap-2 overflow-x-auto snap-x pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        {brands.map((b) => {
-          const on = b.name === view;
-          return (
-            <button key={b.name} type="button" data-brand={b.name} onClick={() => setView(b.name)} aria-pressed={on}
-              className="snap-start flex-shrink-0 h-12 pl-1.5 pr-3 rounded-full inline-flex items-center gap-2 border transition-colors"
-              style={on ? { background: CARBON, borderColor: CARBON, color: "#fff" } : { background: "#fff", borderColor: "#E2DCCF", color: CARBON }}>
-              <span className="w-9 h-9 rounded-full flex items-center justify-center overflow-hidden" style={{ background: on ? "#fff" : "#F5F0E8" }}>
-                {b.img ? <img src={optimizedImage(b.img, 80)} alt="" loading="lazy" className="h-8 w-8 object-contain -rotate-12" /> : <Bike className="w-4 h-4 text-gray-400" />}
-              </span>
-              <span className="text-sm font-bold uppercase whitespace-nowrap" style={{ fontFamily: FONT }}>{b.name}</span>
-              <span className="text-sm tabular-nums" style={{ color: on ? "rgba(255,255,255,0.65)" : "#6B7280" }}>{b.n}</span>
-            </button>
-          );
-        })}
-      </div>
-    </div>
-  );
+  const bar = <BrandExplorer look={explo} brands={brands} view={view} onChange={setView} />;
   return <GammeCarousel models={models} current={current} brand={view} style={style} brandBar={bar} />;
 };
 
