@@ -1,0 +1,3422 @@
+[
+ {
+  "slug": "apollo-city-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/408dec87-c37b-4b69-953c-805bde5143f9/1791684743472_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.821
+  },
+  "size": [
+   792,
+   1064
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/408dec87-c37b-4b69-953c-805bde5143f9/1791684745623_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.805
+  },
+  "size": [
+   568,
+   887
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/CityPro-new2023_d522bb41-2bb8-4776-802b-8e3f587514ee.png?v=1738182303",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.589
+  },
+  "size": [
+   1083,
+   1111
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 3,
+  "url": "https://www.rideandglide.co.uk/wp-content/uploads/Copy-of-apo2022-01_scooter_anim_v2__00000-scaled.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.811
+  },
+  "size": [
+   858,
+   1268
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 4,
+  "url": "https://www.rideandglide.co.uk/wp-content/uploads/1500X1500_55.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.429,
+   "vivid": 0.173,
+   "fill": 0.831
+  },
+  "size": [
+   989,
+   966
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/IMGL1124.jpg?v=1738182303",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.846
+  },
+  "size": [
+   1151,
+   1007
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/IMGL1040.jpg?v=1738182303",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.063,
+   "fill": 0.646
+  },
+  "size": [
+   1170,
+   1170
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/IMGL0742.jpg?v=1738182303",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.769
+  },
+  "size": [
+   509,
+   833
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-city-pro",
+  "i": 8,
+  "url": "https://www.rideandglide.co.uk/wp-content/uploads/c646ca6486934363885a3b55ac26b344.thumbnail.0000000000.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.837
+  },
+  "size": [
+   693,
+   782
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_2.png?v=1765830120",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.822
+  },
+  "size": [
+   1640,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_3.png?v=1765830120",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.79
+  },
+  "size": [
+   1341,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/ApolloDash_A8__Regularshots_2_ec06de4c-a104-4c1b-875f-131dd96adfbb.png?v=1766361345",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.822
+  },
+  "size": [
+   1640,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/ApolloDash_A8__Regularshots_3_290c1f91-9b27-4e63-ab19-0432500df74a.png?v=1766361345",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.79
+  },
+  "size": [
+   1341,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 4,
+  "url": "https://apolloscooters.co/cdn/shop/files/preview_images/129ffea5017a464e9c7f76b802d8fff6.thumbnail.0000000000.jpg?v=1780698678&width=1080",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.822
+  },
+  "size": [
+   873,
+   1054
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 5,
+  "url": "https://apolloscooters.co/cdn/shop/files/preview_images/00f0e0b4bf004539b7f4d74d539234b8.thumbnail.0000000000.jpg?v=1780698659&width=1080",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.615
+  },
+  "size": [
+   732,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-dash",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Dash_Street.jpg?v=1787163255",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.794
+  },
+  "size": [
+   459,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20d3306b-b077-46e5-85b1-2163f149be12/1792165062518_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.784
+  },
+  "size": [
+   1135,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Renders_M06022024_2_1.png?v=1776450086",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   1143,
+   1762
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0674/6295/5181/files/Renders_M06022024_1_1_81eddc7a-3922-4c8c-ba04-71f688e412f3.png?v=1761850659",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.823
+  },
+  "size": [
+   1642,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0674/6295/5181/files/Renders_M06022024_4_1_cc623eee-1dc6-48b7-96cb-4843993751f9.png?v=1784746340",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.468
+  },
+  "size": [
+   1772,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 4,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/0df008a5-e104-4f00-be85-b39b2a225916.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.396
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 5,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/430ac0fd-fc8c-415c-83dc-d88eefd84fe8.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.717
+  },
+  "size": [
+   1679,
+   1734
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/71X+tbexCIL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.133,
+   "vivid": 0.279,
+   "fill": 0.845
+  },
+  "size": [
+   1487,
+   1459
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/71llSRikSOL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.622
+  },
+  "size": [
+   1244,
+   1354
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/7_5caf06fb-3919-419f-af48-40e79916a1db.png?v=1776450086",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.842
+  },
+  "size": [
+   938,
+   1000
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/8_cb0a2a7e-92eb-4173-8dc8-6336ba751360.png?v=1776450086",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1042,
+   1050
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c36cfb80-4e76-4005-a383-863173a490c4/1791649951887_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.807
+  },
+  "size": [
+   1396,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/71ssCPwadOL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.513
+  },
+  "size": [
+   1250,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteAPRILIAESR1-Pietechnologie.png?v=1666189846",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.284
+  },
+  "size": [
+   1574,
+   1052
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/APRILIAESR1trottinette.jpg?v=1666189846",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.307,
+   "vivid": 0.012,
+   "fill": 0.828
+  },
+  "size": [
+   1766,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueAPRILIAESR1-Pietechnologie.jpg?v=1666189846",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.612
+  },
+  "size": [
+   1766,
+   1597
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/APRILIAESR1electriquetrottinette-Pietechnologie.jpg?v=1666189846",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.807
+  },
+  "size": [
+   1396,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteAPRILIAelectrique.jpg?v=1666189858",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.133,
+   "fill": 0.764
+  },
+  "size": [
+   694,
+   1434
+  ],
+  "error": null
+ },
+ {
+  "slug": "aprilia-esr1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteAPRILIAESR1.jpg?v=1666189858",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.649
+  },
+  "size": [
+   1194,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 0,
+  "url": "https://krinona.lt/595767-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 1,
+  "url": "https://krinona.lt/787402-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 2,
+  "url": "https://krinona.lt/787403-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 3,
+  "url": "https://krinona.lt/787404-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 4,
+  "url": "https://krinona.lt/787405-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 5,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.086,
+   "vivid": 0.001,
+   "fill": 0.837
+  },
+  "size": [
+   629,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 6,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.817
+  },
+  "size": [
+   461,
+   736
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 7,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.465,
+   "vivid": 0.004,
+   "fill": 0.535
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 8,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.375,
+   "vivid": 0.001,
+   "fill": 0.554
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 9,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.415,
+   "vivid": 0.002,
+   "fill": 0.487
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 10,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.844
+  },
+  "size": [
+   837,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 0,
+  "url": "https://krinona.lt/595788-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 1,
+  "url": "https://krinona.lt/793393-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 2,
+  "url": "https://krinona.lt/793394-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 3,
+  "url": "https://krinona.lt/793395-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 4,
+  "url": "https://krinona.lt/793396-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 5,
+  "url": "https://lt2.pigugroup.eu/colours/413/979/58/41397958/elektrinis-paspirtukas-beaster-scooter-bs09-250-w_original.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.069,
+   "vivid": 0.001,
+   "fill": 0.832
+  },
+  "size": [
+   644,
+   772
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 6,
+  "url": "https://houstera.lt/wp-content/uploads/2021/05/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.07,
+   "vivid": 0.001,
+   "fill": 0.832
+  },
+  "size": [
+   644,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 7,
+  "url": "https://salasta.lt/image/data/El%20paspirtukai/elektrinis_paspirtukas_beaster_scooter_bs09_250w_36v_10ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.838
+  },
+  "size": [
+   682,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 8,
+  "url": "https://lt2.pigugroup.eu/colours/413/979/58/41397958/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-df707e8726cb716f69e77576758fa3b2_reference.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.85
+  },
+  "size": [
+   770,
+   782
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 9,
+  "url": "https://lt2.pigugroup.eu/colours/413/979/58/41397958/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-vertinimai_reference.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.846
+  },
+  "size": [
+   864,
+   719
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 10,
+  "url": "https://lt2.pigugroup.eu/colours/413/979/58/41397958/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-atsiliepimai_reference.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.371
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 11,
+  "url": "https://lt2.pigugroup.eu/colours/413/979/58/41397958/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-price_reference.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.844
+  },
+  "size": [
+   837,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 12,
+  "url": "https://www.erasportas.lt/image/cachewebp/catalog/xml-fotos/elektriniai-paspirtukai/2473757-15_BS09-475x475.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.462,
+   "vivid": 0.003,
+   "fill": 0.535
+  },
+  "size": [
+   513,
+   513
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3e1c5c6c-273d-4aa9-99a1-8978b111cbd4/1792165353664_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.695
+  },
+  "size": [
+   1020,
+   897
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-rear-view-black-background.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.035,
+   "fill": 0.62
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport.png?v=1748613087",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.854
+  },
+  "size": [
+   931,
+   954
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-1.jpg?v=1748613095",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.827
+  },
+  "size": [
+   752,
+   954
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-2.jpg?v=1748613097",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.813
+  },
+  "size": [
+   936,
+   640
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-3.jpg?v=1748613095",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.768
+  },
+  "size": [
+   947,
+   457
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-4.jpg?v=1748613095",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.809
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-5.jpg?v=1748613097",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.839
+  },
+  "size": [
+   1080,
+   1048
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-6.jpg?v=1748613087",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.682
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/Scrambler-Ducati-Cross-E-Sport-7.jpg?v=1748613087",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0,
+   "fill": 0.788
+  },
+  "size": [
+   1080,
+   836
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1791646888532_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.818
+  },
+  "size": [
+   665,
+   833
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/A_-content-Pro-II-EVO-4.jpg?v=1694547913",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.462,
+   "vivid": 0.01,
+   "fill": 0.75
+  },
+  "size": [
+   1218,
+   1762
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-1.jpg?v=1694547913",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.469
+  },
+  "size": [
+   1391,
+   1818
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-4.jpg?v=1694547913",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.488
+  },
+  "size": [
+   1391,
+   1818
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-2.jpg?v=1694547913",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.736
+  },
+  "size": [
+   1181,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-5.jpg?v=1694547913",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.657
+  },
+  "size": [
+   1352,
+   1788
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-6.jpg?v=1694547913",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.017,
+   "fill": 0.697
+  },
+  "size": [
+   1412,
+   1786
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0046/4191/4914/products/Images-3.jpg?v=1647591465",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.563
+  },
+  "size": [
+   1309,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-urban-commuter-lightweight-design-safety-features.png?v=1779559264",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.505
+  },
+  "size": [
+   1280,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 0,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/ETWOW-TankTorq-TK3-Dual-Motor-Electric-Scooter-Gray.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.205,
+   "vivid": 0,
+   "fill": 0.839
+  },
+  "size": [
+   1176,
+   1380
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 1,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/ETWOW-TankTorq-TK3-Dual-Motor-Electric-Scooter-Orange.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.207,
+   "vivid": 0.159,
+   "fill": 0.834
+  },
+  "size": [
+   736,
+   862
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 2,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/ETWOW-TankTorq-TK3-Dual-Motor-Electric-Scooter-Army-Green.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.204,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1176,
+   1379
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 3,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/ETWOW-TankTorq-TK3-Dual-Motor-Electric-Scooter-Miami-Blue.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.152,
+   "fill": 0.349
+  },
+  "size": [
+   898,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 4,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/ETWOW-TankTorq-TK3-Dual-Motor-Electric-Scooter-Royal-Purple-1024x765.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.202,
+   "vivid": 0.014,
+   "fill": 0.833
+  },
+  "size": [
+   617,
+   727
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 5,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/etwow-tanktorq-tk3-electric-scooter-14.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.813
+  },
+  "size": [
+   1637,
+   1122
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 6,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/etwow-tanktorq-tk3-electric-scooter-11.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.417,
+   "vivid": 0.02,
+   "fill": 0.56
+  },
+  "size": [
+   915,
+   655
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 7,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/etwow-tanktorq-tk3-electric-scooter-18.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.015,
+   "fill": 0.699
+  },
+  "size": [
+   1600,
+   1613
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/TK5Orange_be7ee1e3-e351-4369-8537-2792635338e3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.23,
+   "fill": 0.822
+  },
+  "size": [
+   628,
+   840
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1791938273805_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.713
+  },
+  "size": [
+   430,
+   525
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/TK5Orange_fa28022e-fae9-4169-ba33-9dc98601f99e.jpg?v=1791843511",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.229,
+   "fill": 0.368
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/tk5_photo4.jpg?v=1788904956",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.828
+  },
+  "size": [
+   1008,
+   952
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/tk5_photo5_3dde73be-a9f6-41c2-8b30-6655ab1a80c8.jpg?v=1788904956",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.184,
+   "fill": 0.833
+  },
+  "size": [
+   909,
+   1014
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/tk5_photo6.jpg?v=1788904956",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.736
+  },
+  "size": [
+   1052,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/tk_5_new_design1.jpg?v=1788904956",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.347,
+   "vivid": 0.049,
+   "fill": 0.836
+  },
+  "size": [
+   857,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/tk_5_new_design2_b0cb4a16-0a7b-4df3-8409-324d87d70ba1.jpg?v=1788904956",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.23,
+   "vivid": 0.063,
+   "fill": 0.838
+  },
+  "size": [
+   600,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0549/2201/8981/files/IMG_3330.jpg?v=1754245665",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.548
+  },
+  "size": [
+   752,
+   965
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0549/2201/8981/files/IMG_3331.jpg?v=1754245665",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.836
+  },
+  "size": [
+   1041,
+   844
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998713512_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.395
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.395
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/001-4.png?v=1774941762",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.156,
+   "fill": 0.284
+  },
+  "size": [
+   1115,
+   1419
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p1.jpg?v=1774941762",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.42
+  },
+  "size": [
+   1728,
+   1549
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600p2.jpg?v=1774941762",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.762
+  },
+  "size": [
+   1298,
+   1594
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/9_8066f230-1dba-4707-8546-258ae76bcd4b.jpg?v=1758441558",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 39 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 39 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.325,
+   "vivid": 0.388,
+   "fill": 0.564
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_29ee5b75-d2a6-48a8-bec5-8b1da7b7c2b9.jpg?v=1774941762",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.177,
+   "fill": 0.865
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/12_190b31fc-4110-4a76-9fb9-125b185666f4.jpg?v=1774941762",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.024,
+   "vivid": 0.147,
+   "fill": 0.601
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_40909272-efab-4eb8-af5f-7e3028715448.jpg?v=1774941762",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.116,
+   "fill": 0.572
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/13_545c4ea3-4e66-40e8-9d51-2e65a145413e.jpg?v=1774941762",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.623
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/78482e84-2479-4aee-8405-a8367048d048/1792165888279_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.541
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/b58ce7b99582c961375527c3c6b27ebb.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.811
+  },
+  "size": [
+   1152,
+   1707
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2R-Plus1600.png?v=1761115142",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.26,
+   "vivid": 0.052,
+   "fill": 0.648
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/845635525_1.jpg?v=1761115142",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.28,
+   "vivid": 0.189,
+   "fill": 0.517
+  },
+  "size": [
+   1726,
+   1381
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/3_06218252-da89-45fa-ab28-73a6435c9ac0.png?v=1684745872",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.558
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_2fca90b3-ce42-440b-b3a4-8d62dbd26a58.jpg?v=1761115142",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.02,
+   "vivid": 0.034,
+   "fill": 0.303
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_b4c65962-4481-4ac1-824f-752f4fea614a.jpg?v=1761115142",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.163,
+   "vivid": 0.323,
+   "fill": 0.754
+  },
+  "size": [
+   1537,
+   1439
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/24_a109738f-11c0-4806-9e49-cf0dbc8c2c2d.jpg?v=1761278902",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.158,
+   "vivid": 0.232,
+   "fill": 0.667
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p22.jpg?v=1761278902",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.169,
+   "fill": 0.711
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/2-_2.jpg?v=1684745872",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.026,
+   "vivid": 0.062,
+   "fill": 0.735
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0981dfe2-e775-4694-8f66-2f0764c35748/1791939304617_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.527
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.802
+  },
+  "size": [
+   1318,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/673524_3eeccda0-df20-4507-aac3-fcb5a3271388.webp?v=1780545303",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.608
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/11_6a4ce1c8-66c3-4a05-b609-f75b17ac22d8.webp?v=1780545199",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.843
+  },
+  "size": [
+   849,
+   892
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/12_70d897d2-82c5-4462-8d04-6ee38e249200.webp?v=1780545206",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.777
+  },
+  "size": [
+   891,
+   459
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/10_00d93216-ac31-491c-a8d2-d2c4530af99d.webp?v=1780545214",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.831
+  },
+  "size": [
+   751,
+   911
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/2.png746.webp?v=1780545110",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (3 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (3 morceaux)"
+   ],
+   "parts": 3,
+   "second": 0.022,
+   "vivid": 0.046,
+   "fill": 0.566
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/1_fb52a0bb-8c22-49c6-8583-4b40051e8ecf.webp?v=1780545221",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.802
+  },
+  "size": [
+   999,
+   899
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/2_ae384635-03bb-4ead-bc12-5d065ed56765.webp?v=1780545227",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.224,
+   "fill": 0.814
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0612/2546/8142/files/1_4a8caf7c-cfba-4be3-a574-da2508fc32e6.webp?v=1780545119",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.835
+  },
+  "size": [
+   751,
+   926
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792165980499_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.767
+  },
+  "size": [
+   536,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/71B2UrPAqEL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.278,
+   "vivid": 0.033,
+   "fill": 0.789
+  },
+  "size": [
+   1577,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 2,
+  "url": "https://i.ebayimg.com/images/g/AxQAAeSwUzRn-q4C/s-l1600.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.029,
+   "fill": 0.544
+  },
+  "size": [
+   1728,
+   1328
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 3,
+  "url": "https://i.ebayimg.com/images/g/WrYAAeSw6lln-q4D/s-l1600.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.052,
+   "vivid": 0.033,
+   "fill": 0.829
+  },
+  "size": [
+   1328,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 4,
+  "url": "https://i.ebayimg.com/images/g/7a4AAeSwliRn-q4D/s-l1600.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.129,
+   "vivid": 0.029,
+   "fill": 0.418
+  },
+  "size": [
+   1728,
+   1076
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/71gT6+bQBiL.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.66
+  },
+  "size": [
+   1416,
+   916
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/61I8i4lpWeL.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.723
+  },
+  "size": [
+   1750,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/615WqedS0WL.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.089,
+   "fill": 0.737
+  },
+  "size": [
+   1750,
+   1065
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1791998730503_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.845
+  },
+  "size": [
+   880,
+   866
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1791998732308_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.83
+  },
+  "size": [
+   575,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 2,
+  "url": "https://www.inmotion-france.com/inmov2/417-large_default/trottinette-electrique-l9.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 3,
+  "url": "https://www.maxblinker.fr/9895-panda_big_default/inmotion-l9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.845
+  },
+  "size": [
+   614,
+   604
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 4,
+  "url": "https://www.maxblinker.fr/9896-panda_big_default/inmotion-l9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.816
+  },
+  "size": [
+   614,
+   434
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 5,
+  "url": "https://www.maxblinker.fr/9897-panda_big_default/inmotion-l9.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.629
+  },
+  "size": [
+   458,
+   196
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 6,
+  "url": "https://www.maxblinker.fr/9898-panda_big_default/inmotion-l9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.758
+  },
+  "size": [
+   614,
+   278
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 7,
+  "url": "https://www.maxblinker.fr/9899-panda_big_default/inmotion-l9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.828
+  },
+  "size": [
+   532,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 8,
+  "url": "https://www.maxblinker.fr/9900-panda_big_default/inmotion-l9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.81
+  },
+  "size": [
+   614,
+   491
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 9,
+  "url": "https://www.maxblinker.fr/9901-panda_big_default/inmotion-l9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.83
+  },
+  "size": [
+   575,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 10,
+  "url": "https://images.squarespace-cdn.com/content/v1/5ebd34e8a6aa3058bb9673b4/1590617898528-A7QILVUR2LK8ASTQ87N7/ezgif.com-webp-to-png+%2842%29.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "couleurs vives 93 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 93 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.93,
+   "fill": 0.176
+  },
+  "size": [
+   108,
+   57
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7030f71-4701-4a3c-9de6-051a65ee0897/1792167407930_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.788
+  },
+  "size": [
+   1726,
+   1796
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/fd11ecce25b7abcdac4b9053ce04f383d53e3cb1_1.png?v=1773300517",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.784
+  },
+  "size": [
+   1726,
+   1796
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-2.webp?v=1780339452",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.389
+  },
+  "size": [
+   1080,
+   747
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-1.webp?v=1780339452",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.532
+  },
+  "size": [
+   826,
+   674
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-6.webp?v=1780339487",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.728
+  },
+  "size": [
+   297,
+   645
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-3.webp?v=1780339452",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.326
+  },
+  "size": [
+   1080,
+   747
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-4.webp?v=1780339452",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.838
+  },
+  "size": [
+   530,
+   592
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-8.webp?v=1780339487",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.75
+  },
+  "size": [
+   380,
+   834
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0653/4014/5884/files/punk-rebel-9.webp?v=1780339487",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.78
+  },
+  "size": [
+   836,
+   1592
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260360392.jpg?v=1790766580",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.819
+  },
+  "size": [
+   930,
+   1272
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b3d9fe8-2b24-4672-81a2-6c9d5c349b30/1791992929092_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.842
+  },
+  "size": [
+   535,
+   568
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 2,
+  "url": "https://www.pureelectric.com/cdn/shop/products/pure-scooter-advance-30263663067224.jpg?v=1720750526",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.224
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 3,
+  "url": "https://www.pureelectric.com/cdn/shop/files/pure-scooter-black-advance-33049038159960.jpg?v=1720750523",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.199,
+   "vivid": 0.009,
+   "fill": 0.67
+  },
+  "size": [
+   1754,
+   1726
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 4,
+  "url": "https://www.pureelectric.com/cdn/shop/products/pure-scooter-advance-30263663132760.jpg?v=1720749608",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.285,
+   "fill": 0.211
+  },
+  "size": [
+   1153,
+   1195
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 5,
+  "url": "https://www.pureelectric.com/cdn/shop/products/pure-scooter-advance-30263663099992.jpg?v=1720749612",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.584
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 6,
+  "url": "https://www.pureelectric.com/cdn/shop/files/pure-scooter-grey-advance-72686999929208.jpg?v=1738416585",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.82
+  },
+  "size": [
+   973,
+   1328
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260360393.jpg?v=1790766553",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.819
+  },
+  "size": [
+   931,
+   1274
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284668.jpg?v=1790701811",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.066,
+   "vivid": 0,
+   "fill": 0.654
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-advance",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-advance-1260284667.jpg?v=1790701780",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.017,
+   "fill": 0.556
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ }
+]

@@ -1,0 +1,164 @@
+apollo-city-pro #0 PASS ok
+apollo-city-pro #1 WARN basse définition
+apollo-city-pro #2 FAIL détourage sale / résidu de décor
+apollo-city-pro #3 PASS ok
+apollo-city-pro #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+apollo-city-pro #5 WARN cadrage serré
+apollo-city-pro #6 WARN cadrage serré
+apollo-city-pro #7 WARN basse définition
+apollo-city-pro #8 WARN cadrage serré
+apollo-dash #0 PASS ok
+apollo-dash #1 PASS ok
+apollo-dash #2 PASS ok
+apollo-dash #3 PASS ok
+apollo-dash #4 PASS ok
+apollo-dash #5 PASS ok
+apollo-dash #6 WARN basse définition
+apollo-go #0 PASS ok
+apollo-go #1 PASS ok
+apollo-go #2 PASS ok
+apollo-go #3 FAIL détourage sale / résidu de décor
+apollo-go #4 PASS ok
+apollo-go #5 PASS ok
+apollo-go #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+apollo-go #7 WARN cadrage serré
+apollo-go #8 PASS ok
+apollo-go #9 PASS ok
+aprilia-esr1 #0 PASS ok
+aprilia-esr1 #1 PASS ok
+aprilia-esr1 #2 PASS ok
+aprilia-esr1 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+aprilia-esr1 #4 PASS ok
+aprilia-esr1 #5 PASS ok
+aprilia-esr1 #6 PASS ok
+aprilia-esr1 #7 WARN cadrage serré
+beaster-bs08 #0 ERROR Input buffer contains unsupported image format
+beaster-bs08 #1 ERROR Input buffer contains unsupported image format
+beaster-bs08 #2 ERROR Input buffer contains unsupported image format
+beaster-bs08 #3 ERROR Input buffer contains unsupported image format
+beaster-bs08 #4 ERROR Input buffer contains unsupported image format
+beaster-bs08 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+beaster-bs08 #6 WARN basse définition
+beaster-bs08 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+beaster-bs08 #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+beaster-bs08 #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+beaster-bs08 #10 WARN cadrage serré
+beaster-bs09 #0 ERROR Input buffer contains unsupported image format
+beaster-bs09 #1 ERROR Input buffer contains unsupported image format
+beaster-bs09 #2 ERROR Input buffer contains unsupported image format
+beaster-bs09 #3 ERROR Input buffer contains unsupported image format
+beaster-bs09 #4 ERROR Input buffer contains unsupported image format
+beaster-bs09 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+beaster-bs09 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+beaster-bs09 #7 PASS ok
+beaster-bs09 #8 WARN cadrage serré
+beaster-bs09 #9 WARN cadrage serré
+beaster-bs09 #10 PASS ok
+beaster-bs09 #11 WARN cadrage serré
+beaster-bs09 #12 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-cross-e-sport #0 PASS ok
+ducati-cross-e-sport #1 WARN cadrage serré
+ducati-cross-e-sport #2 PASS ok
+ducati-cross-e-sport #3 PASS ok
+ducati-cross-e-sport #4 WARN cadrage serré
+ducati-cross-e-sport #5 WARN basse définition · cadrage serré
+ducati-cross-e-sport #6 FAIL détourage sale / résidu de décor · cadrage serré
+ducati-cross-e-sport #7 WARN cadrage serré
+ducati-cross-e-sport #8 WARN cadrage serré
+ducati-cross-e-sport #9 FAIL détourage sale / résidu de décor
+ducati-pro-ii-evo #0 PASS ok
+ducati-pro-ii-evo #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #2 PASS ok
+ducati-pro-ii-evo #3 PASS ok
+ducati-pro-ii-evo #4 PASS ok
+ducati-pro-ii-evo #5 PASS ok
+ducati-pro-ii-evo #6 PASS ok
+ducati-pro-ii-evo #7 PASS ok
+ducati-pro-ii-evo #8 PASS ok
+e-twow-tanktorq-tk3 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #3 PASS ok
+e-twow-tanktorq-tk3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #5 WARN cadrage serré
+e-twow-tanktorq-tk3 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #7 WARN cadrage serré
+e-twow-tanktorq-tk5 #0 PASS ok
+e-twow-tanktorq-tk5 #1 WARN basse définition
+e-twow-tanktorq-tk5 #2 PASS ok
+e-twow-tanktorq-tk5 #3 WARN cadrage serré
+e-twow-tanktorq-tk5 #4 WARN cadrage serré
+e-twow-tanktorq-tk5 #5 WARN cadrage serré
+e-twow-tanktorq-tk5 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk5 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk5 #8 PASS ok
+e-twow-tanktorq-tk5 #9 PASS ok
+hiboy-s2 #0 PASS ok
+hiboy-s2 #1 PASS ok
+hiboy-s2 #2 PASS ok
+hiboy-s2 #3 PASS ok
+hiboy-s2 #4 WARN cadrage serré
+hiboy-s2 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 39 % (visuel marketing ?)
+hiboy-s2 #6 WARN cadrage serré
+hiboy-s2 #7 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+hiboy-s2 #8 WARN cadrage serré
+hiboy-s2 #9 FAIL détourage sale / résidu de décor · cadrage serré
+hiboy-s2r-plus #0 PASS ok
+hiboy-s2r-plus #1 PASS ok
+hiboy-s2r-plus #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+hiboy-s2r-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-s2r-plus #4 PASS ok
+hiboy-s2r-plus #5 WARN petit élément détaché (2 morceaux)
+hiboy-s2r-plus #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+hiboy-s2r-plus #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+hiboy-s2r-plus #8 FAIL détourage sale / résidu de décor · cadrage serré
+hiboy-s2r-plus #9 WARN petit élément détaché (2 morceaux)
+hiboy-titan-pro #0 PASS ok
+hiboy-titan-pro #1 PASS ok
+hiboy-titan-pro #2 PASS ok
+hiboy-titan-pro #3 PASS ok
+hiboy-titan-pro #4 WARN basse définition · cadrage serré
+hiboy-titan-pro #5 PASS ok
+hiboy-titan-pro #6 FAIL détourage sale / résidu de décor · petit élément détaché (3 morceaux)
+hiboy-titan-pro #7 WARN cadrage serré
+hiboy-titan-pro #8 PASS ok
+hiboy-titan-pro #9 WARN cadrage serré
+hitway-h5-pro #0 WARN basse définition
+hitway-h5-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+hitway-h5-pro #2 FAIL détourage sale / résidu de décor · cadrage serré
+hitway-h5-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h5-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h5-pro #5 PASS ok
+hitway-h5-pro #6 FAIL détourage sale / résidu de décor
+hitway-h5-pro #7 FAIL détourage sale / résidu de décor
+inmotion-l9 #0 PASS ok
+inmotion-l9 #1 WARN basse définition
+inmotion-l9 #2 ERROR Input buffer contains unsupported image format
+inmotion-l9 #3 PASS ok
+inmotion-l9 #4 WARN basse définition
+inmotion-l9 #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+inmotion-l9 #6 WARN basse définition · cadrage serré
+inmotion-l9 #7 WARN basse définition
+inmotion-l9 #8 WARN basse définition · cadrage serré
+inmotion-l9 #9 WARN basse définition
+inmotion-l9 #10 WARN basse définition · couleurs vives 93 % (visuel marketing ?)
+punk-rebel #0 PASS ok
+punk-rebel #1 PASS ok
+punk-rebel #2 PASS ok
+punk-rebel #3 PASS ok
+punk-rebel #4 WARN basse définition · cadrage serré
+punk-rebel #5 PASS ok
+punk-rebel #6 WARN basse définition
+punk-rebel #7 WARN basse définition · cadrage serré
+punk-rebel #8 WARN cadrage serré
+pure-electric-advance #0 PASS ok
+pure-electric-advance #1 WARN basse définition
+pure-electric-advance #2 PASS ok
+pure-electric-advance #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-electric-advance #4 PASS ok
+pure-electric-advance #5 WARN cadrage serré
+pure-electric-advance #6 PASS ok
+pure-electric-advance #7 PASS ok
+pure-electric-advance #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #9 FAIL détourage sale / résidu de décor
+::notice title=photos r2a (dry)::163 candidates · PASS 65 · WARN 46 · FAIL 41 · ERREUR 11
