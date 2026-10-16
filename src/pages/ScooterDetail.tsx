@@ -30,10 +30,10 @@ const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { scooter, allScooters, compatibleParts, prevSlug, nextSlug, isLoading, isPartsLoading } =
     useShowroomData(slug);
-  // Propositions de mise en page (16/10) : ?style=1..5. Sans paramètre = page actuelle inchangée.
+  // Propositions de mise en page (16/10) : ?style=1..6. Sans paramètre = page actuelle inchangée.
   const [searchParams] = useSearchParams();
   const styleNum = Number(searchParams.get("style"));
-  const pageStyle = (styleNum >= 1 && styleNum <= 5 ? styleNum : null) as PageStyle | null;
+  const pageStyle = (styleNum >= 1 && styleNum <= 6 ? styleNum : null) as PageStyle | null;
 
   // Loading
   if (isLoading) {

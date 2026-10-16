@@ -25,8 +25,8 @@ import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterDetail } from "@/hooks/useScooterDetail";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 
-export type PageStyle = 1 | 2 | 3 | 4 | 5;
-export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall" };
+export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
+export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall", 6: "Pit-stand" };
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -481,14 +481,14 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount }: Props)
   }
 
   // 5 ─ PIT-WALL
-  return <PitWall scooter={scooter} specs={specs} gamme={gamme} accent={accent} brand={brand} partsCount={partsCount} tag={tag} />;
+  return <PitWall scooter={scooter} specs={specs} gamme={gamme} accent={accent} brand={brand} partsCount={partsCount} tag={tag} gammeBelow={style === 6} />;
 };
 
-const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element }) => {
+const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean }) => {
   const tabs = [
     { k: "fiche", label: "Fiche" },
     ...(scooter.description ? [{ k: "pres", label: "Présentation" }] : []),
-    ...(gamme.length > 1 ? [{ k: "gamme", label: `Gamme (${gamme.length})` }] : []),
+    ...(gamme.length > 1 && !gammeBelow ? [{ k: "gamme", label: `Gamme (${gamme.length})` }] : []),
   ];
   const [tab, setTab] = useState("fiche");
   return (
@@ -511,8 +511,8 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag }: { sc
               ))}
             </div>
             <div className="mt-5 min-h-[180px]">
-              {tab === "fiche" && (
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {(
+                <div className={tab === "fiche" ? "grid grid-cols-2 sm:grid-cols-3 gap-2" : "hidden"}>
                   {specs.map((s) => (
                     <div key={s.key} className="rounded-xl bg-white border border-[#ECE7DD] px-3 py-2.5 relative overflow-hidden">
                       <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: accent }} />
@@ -522,13 +522,18 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag }: { sc
                   ))}
                 </div>
               )}
-              {tab === "pres" && <Description text={scooter.description} clamp={false} />}
+              <div className={tab === "pres" ? "" : "hidden"}><Description text={scooter.description} clamp={false} /></div>
               {tab === "gamme" && <GammeThumbs models={gamme} current={scooter.slug} accent={accent} />}
             </div>
             <div className="mt-6"><RacingActions scooter={scooter} partsCount={partsCount} look="pit" accent={accent} /></div>
           </div>
         </div>
       </section>
+      {gammeBelow && gamme.length > 1 && (
+        <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
+          <div className="mx-auto max-w-6xl"><GammeHeader brand={brand} count={gamme.length} accent={accent} /><GammeSnap models={gamme} current={scooter.slug} accent={accent} /></div>
+        </section>
+      )}
     </>
   );
 };
