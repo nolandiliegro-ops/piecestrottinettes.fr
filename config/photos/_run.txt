@@ -1,2 +1,1 @@
-write r2a
-write r2b
+write lot02

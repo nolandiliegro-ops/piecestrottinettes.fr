@@ -1,0 +1,40 @@
+{
+ "lot": "fix1",
+ "models": [
+  {
+   "id": "d9dcd648-11c5-4c89-b5e2-3993670f4e98",
+   "slug": "apollo-dash",
+   "name": "Apollo Dash",
+   "brand": "Apollo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_2.png?v=1765830120",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_3.png?v=1765830120",
+    "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/ApolloDash_A8__Regularshots_2_ec06de4c-a104-4c1b-875f-131dd96adfbb.png?v=1766361345",
+    "https://cdn.shopify.com/s/files/1/0262/6732/0356/files/ApolloDash_A8__Regularshots_3_290c1f91-9b27-4e63-ab19-0432500df74a.png?v=1766361345",
+    "https://apolloscooters.co/cdn/shop/files/preview_images/129ffea5017a464e9c7f76b802d8fff6.thumbnail.0000000000.jpg?v=1780698678&width=1080",
+    "https://apolloscooters.co/cdn/shop/files/preview_images/00f0e0b4bf004539b7f4d74d539234b8.thumbnail.0000000000.jpg?v=1780698659&width=1080",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Dash_Street.jpg?v=1787163255"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "8e751af1-240a-4f3f-8c61-0a8dff833feb",
+   "slug": "hiboy-s2",
+   "name": "Hiboy S2",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998713512_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/001-4.png?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p1.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600p2.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/9_8066f230-1dba-4707-8546-258ae76bcd4b.jpg?v=1758441558",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_29ee5b75-d2a6-48a8-bec5-8b1da7b7c2b9.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/12_190b31fc-4110-4a76-9fb9-125b185666f4.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_40909272-efab-4eb8-af5f-7e3028715448.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/13_545c4ea3-4e66-40e8-9d51-2e65a145413e.jpg?v=1774941762"
+   ],
+   "keep": 2
+  }
+ ]
+}
