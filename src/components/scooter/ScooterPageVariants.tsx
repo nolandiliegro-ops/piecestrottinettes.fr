@@ -24,6 +24,7 @@ import { optimizedImage } from "@/lib/imageTransform";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterDetail } from "@/hooks/useScooterDetail";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
+import GammeCarousel, { type GalStyle } from "@/components/scooter/GammeCarousel";
 
 export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
 export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall", 6: "Pit-stand" };
@@ -504,6 +505,9 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
   // Boutons à comparer (16/10) : &btn=1..5 — sans paramètre : biseau sur Pit-stand (choix de Nolan), pilules sur Pit-wall.
   const [sp] = useSearchParams();
   const BTN: Record<string, Look> = { "1": "slant", "2": "chevron", "3": "stripe", "4": "livery", "5": "chamfer" };
+  // Carrousel gamme à comparer (16/10) : &gal=1..5 — sans paramètre, carrousel actuel.
+  const galN = Number(sp.get("gal"));
+  const galStyle = (galN >= 1 && galN <= 5 ? galN : null) as GalStyle | null;
   const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
   return (
     <>
@@ -552,7 +556,8 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           </div>
         </section>
       )}
-      {gammeBelow && gamme.length > 1 && (
+      {gammeBelow && gamme.length > 1 && galStyle && <GammeCarousel models={gamme} current={scooter.slug} brand={brand} style={galStyle} />}
+      {gammeBelow && gamme.length > 1 && !galStyle && (
         <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
           <div className="mx-auto max-w-6xl"><GammeHeader brand={brand} count={gamme.length} accent={accent} /><GammeSnap models={gamme} current={scooter.slug} accent={accent} /></div>
         </section>
