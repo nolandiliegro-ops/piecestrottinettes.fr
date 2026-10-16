@@ -1,0 +1,151 @@
+hitway-h11 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h11 #1 PASS ok
+hitway-h11 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h11 #3 PASS ok
+hitway-h11 #4 PASS ok
+hitway-h11 #5 PASS ok
+hitway-h11 #6 PASS ok
+hitway-h5-pro #0 WARN basse définition
+hitway-h5-pro #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+hitway-h6 #0 PASS ok
+hitway-h6 #1 PASS ok
+hitway-h6 #2 PASS ok
+hitway-h6 #3 PASS ok
+hitway-h6 #4 PASS ok
+hitway-h6 #5 FAIL détourage sale / résidu de décor
+hitway-h6 #6 PASS ok
+hitway-h9 #0 WARN cadrage serré
+hitway-h9 #1 PASS ok
+hitway-h9 #2 PASS ok
+hitway-h9 #3 PASS ok
+hitway-h9 #4 PASS ok
+hitway-h9 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h9 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h9 #7 WARN petit élément détaché (6 morceaux)
+hitway-h9 #8 PASS ok
+hitway-h9-pro #0 PASS ok
+hitway-h9-pro #1 PASS ok
+hitway-h9-pro #2 WARN cadrage serré
+hitway-h9-pro #3 PASS ok
+hitway-h9-pro #4 PASS ok
+hitway-h9-pro #5 PASS ok
+hitway-h9-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hitway-h9-pro #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux · couleurs vives 38 % (visuel marketing ?)
+inmotion-air #0 FAIL détourage sale / résidu de décor
+inmotion-air #1 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 46 % (visuel marketing ?)
+inmotion-air #2 WARN basse définition · cadrage serré
+inmotion-air #3 PASS ok
+inmotion-air #4 PASS ok
+inmotion-air #5 PASS ok
+inmotion-air #6 PASS ok
+inmotion-air #7 PASS ok
+inmotion-air-pro #0 PASS ok
+inmotion-air-pro #1 PASS ok
+inmotion-air-pro #2 PASS ok
+inmotion-air-pro #3 PASS ok
+inmotion-air-pro #4 PASS ok
+inmotion-air-pro #5 PASS ok
+inmotion-air-pro #6 PASS ok
+inmotion-c1-air-pro #0 WARN basse définition
+inmotion-c1-air-pro #1 WARN basse définition
+inmotion-c1-air-pro #2 WARN basse définition
+inmotion-c1-air-pro #3 WARN basse définition
+inmotion-c1-air-pro #4 WARN basse définition
+inmotion-climber #0 PASS ok
+inmotion-climber #1 WARN basse définition
+inmotion-climber #2 PASS ok
+inmotion-climber #3 PASS ok
+inmotion-climber #4 PASS ok
+inmotion-l9 #0 PASS ok
+inmotion-l9 #1 WARN basse définition
+inmotion-l9 #2 ERROR Input buffer contains unsupported image format
+inmotion-l9 #3 FAIL détourage sale / résidu de décor · bandeau, pas un produit · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-l9 #4 WARN basse définition · cadrage serré · couleurs vives 81 % (visuel marketing ?)
+inmotion-l9 #5 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 78 % (visuel marketing ?)
+inmotion-rs #0 PASS ok
+inmotion-rs #1 PASS ok
+inmotion-rs #2 PASS ok
+inmotion-rs #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-rs #4 PASS ok
+inmotion-rs-jet #0 PASS ok
+inmotion-rs-jet #1 PASS ok
+inmotion-rs-jet #2 PASS ok
+inmotion-rs-jet #3 PASS ok
+inmotion-rs-jet #4 PASS ok
+inmotion-rs-jet #5 PASS ok
+inmotion-rs-jet #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+inmotion-rs-jet #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+inmotion-rs-lite #0 PASS ok
+inmotion-rs-lite #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+inmotion-rs-lite #2 PASS ok
+inmotion-rs-lite #3 PASS ok
+inmotion-rs-lite #4 PASS ok
+inmotion-rs-lite #5 PASS ok
+inmotion-rs-lite #6 PASS ok
+inmotion-s1f #0 PASS ok
+inmotion-s1f #1 PASS ok
+inmotion-s1f #2 PASS ok
+inmotion-s1f #3 WARN basse définition
+inmotion-s1f #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+inmotion-s1f #5 WARN basse définition
+inokim-light-2 #0 WARN basse définition
+inokim-light-2 #1 PASS ok
+inokim-light-2 #2 PASS ok
+inokim-light-2 #3 FAIL détourage sale / résidu de décor
+inokim-light-2 #4 WARN basse définition
+inokim-light-2 #5 WARN basse définition
+inokim-light-2-max #0 WARN basse définition
+inokim-light-2-max #1 WARN basse définition
+inokim-light-2-max #2 PASS ok
+inokim-light-2-max #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inokim-light-2-max #4 WARN basse définition
+inokim-light-2-max #5 PASS ok
+inokim-light-2-super #0 WARN basse définition
+inokim-light-2-super #1 FAIL détourage sale / résidu de décor
+inokim-light-2-super #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+inokim-light-2-super #3 WARN basse définition
+inokim-light-2-super #4 FAIL détourage sale / résidu de décor · basse définition
+inokim-light-2-super #5 PASS ok
+inokim-mini-2 #0 PASS ok
+inokim-mini-2 #1 PASS ok
+inokim-mini-2 #2 WARN basse définition · cadrage serré
+inokim-mini-2 #3 WARN basse définition · cadrage serré
+inokim-mini-2 #4 WARN basse définition
+inokim-mini-2 #5 WARN basse définition
+inokim-mini-2 #6 WARN basse définition
+inokim-ox #0 PASS ok
+inokim-ox #1 FAIL détourage sale / résidu de décor · basse définition
+inokim-ox #2 PASS ok
+inokim-ox #3 PASS ok
+inokim-ox #4 PASS ok
+inokim-ox #5 PASS ok
+inokim-ox #6 PASS ok
+inokim-ox #7 WARN cadrage serré
+inokim-oxo #0 WARN basse définition
+inokim-oxo #1 PASS ok
+inokim-oxo #2 PASS ok
+inokim-oxo #3 PASS ok
+inokim-oxo #4 FAIL détourage sale / résidu de décor
+inokim-oxo #5 PASS ok
+inokim-oxo #6 PASS ok
+inokim-oxo #7 WARN cadrage serré
+inokim-oxo-super #0 WARN basse définition
+inokim-oxo-super #1 WARN basse définition
+inokim-oxo-super #2 PASS ok
+inokim-oxo-super #3 PASS ok
+inokim-oxo-super #4 PASS ok
+inokim-oxo-super #5 WARN cadrage serré
+inokim-quick-4 #0 WARN basse définition
+inokim-quick-4 #1 WARN basse définition
+inokim-quick-4 #2 PASS ok
+inokim-quick-4 #3 WARN basse définition
+inokim-quick-4 #4 PASS ok
+inokim-quick-4 #5 PASS ok
+inokim-quick-4 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+inokim-quick-4-super #0 PASS ok
+inokim-quick-4-super #1 PASS ok
+inokim-quick-4-super #2 FAIL détourage sale / résidu de décor
+inokim-quick-4-super #3 WARN cadrage serré
+inokim-quick-4-super #4 WARN cadrage serré
+inokim-quick-4-super #5 PASS ok
+::notice title=photos lot06 (dry)::150 candidates · PASS 84 · WARN 39 · FAIL 26 · ERREUR 1

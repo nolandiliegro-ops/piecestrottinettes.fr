@@ -1,0 +1,3186 @@
+[
+ {
+  "slug": "hitway-h11",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792166009727_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.224,
+   "vivid": 0.031,
+   "fill": 0.609
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.847
+  },
+  "size": [
+   1608,
+   1702
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.224,
+   "vivid": 0.032,
+   "fill": 0.609
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.84
+  },
+  "size": [
+   1557,
+   1690
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.837
+  },
+  "size": [
+   1317,
+   1686
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.494
+  },
+  "size": [
+   1332,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h11",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h11-abe-e-scooter-1600w-2-motor_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.8
+  },
+  "size": [
+   974,
+   1691
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792165980499_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.767
+  },
+  "size": [
+   536,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792165986535_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.34,
+   "vivid": 0.084,
+   "fill": 0.482
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/18a9b02c-4bc7-4fe8-bd44-6d1acba5c104/1791637552930_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.843
+  },
+  "size": [
+   735,
+   820
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 1,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.633
+  },
+  "size": [
+   1646,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 2,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.82
+  },
+  "size": [
+   1174,
+   1696
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 3,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/2-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.443
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 4,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.802
+  },
+  "size": [
+   1061,
+   1699
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 5,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.767
+  },
+  "size": [
+   1651,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h6",
+  "i": 6,
+  "url": "https://b2b.hitway.eu/wp-content/uploads/2024/11/5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.824
+  },
+  "size": [
+   1728,
+   1330
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-red-15.6ah_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.616
+  },
+  "size": [
+   1740,
+   1485
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-red-15.6ah_7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.512
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-red-15.6ah_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.51
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-red-15.6ah_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.659
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-red-15.6ah_6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.513
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/1_ff13f4d5-3aec-4a39-bcb3-b6ea9151679a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.373,
+   "vivid": 0.054,
+   "fill": 0.531
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/957d9276-930d-4ae2-bfee-fcd7ba99a184/1791637547584_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.374,
+   "vivid": 0.055,
+   "fill": 0.531
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/957d9276-930d-4ae2-bfee-fcd7ba99a184/1791997542578_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (6 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (6 morceaux)"
+   ],
+   "parts": 6,
+   "second": 0.029,
+   "vivid": 0.108,
+   "fill": 0.714
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/957d9276-930d-4ae2-bfee-fcd7ba99a184/1791997549701_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.811
+  },
+  "size": [
+   1178,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-orange-28ah_7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.628
+  },
+  "size": [
+   1480,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-20.8ah-grey_7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.49
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-orange-28ah_8.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.771
+  },
+  "size": [
+   1734,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-orange-28ah_9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.806
+  },
+  "size": [
+   1162,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-20.8ah-grey_8.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.667
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h9-pro-eu-orange-28ah_10.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.667
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1ac13d13-9a17-432e-b6b7-7136686ef078/1792165992850_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.369,
+   "vivid": 0.056,
+   "fill": 0.642
+  },
+  "size": [
+   1447,
+   1704
+  ],
+  "error": null
+ },
+ {
+  "slug": "hitway-h9-pro",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1ac13d13-9a17-432e-b6b7-7136686ef078/1792166002604_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux",
+   "couleurs vives 38 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux",
+    "couleurs vives 38 % (visuel marketing ?)"
+   ],
+   "parts": 5,
+   "second": 0.054,
+   "vivid": 0.384,
+   "fill": 0.726
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e0f02bcb-2d28-4593-9261-2a5f62ff43f3/1791998739099_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.346
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e0f02bcb-2d28-4593-9261-2a5f62ff43f3/1791998734763_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "couleurs vives 46 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 46 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.463,
+   "fill": 0.795
+  },
+  "size": [
+   738,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e0f02bcb-2d28-4593-9261-2a5f62ff43f3/1791998742813_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.743
+  },
+  "size": [
+   501,
+   1037
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/203_38160f67-142d-49ef-bd26-471c4bb362d2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.352
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/1_a3169e15-aea4-49d0-9eb7-efc88e6f0de3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.612
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/1_f76ee26a-97c3-4e71-b882-b30f0a72daf2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.478
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/1_2_7b9cf35e-9c2f-405b-8adf-426254bd6802.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.813
+  },
+  "size": [
+   721,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/1_2-2_baa5269f-3ae1-40ed-95d5-303846830d45.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.515
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/784c0fb9-a041-40c2-b1ad-e1fbd940c75d/1791637745082_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.493
+  },
+  "size": [
+   1267,
+   1267
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/784c0fb9-a041-40c2-b1ad-e1fbd940c75d/1791637747223_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.417
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/784c0fb9-a041-40c2-b1ad-e1fbd940c75d/1791997769197_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.656
+  },
+  "size": [
+   1262,
+   1234
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207_e24cdd45-67cd-4549-b4b3-68f5353cc07d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.428
+  },
+  "size": [
+   829,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_1_ce8e2545-1b59-42c2-b62a-846561d41d27.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.64
+  },
+  "size": [
+   1103,
+   1269
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_3_d4d99aa2-39b6-40f4-9458-d67e16db0009.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.65
+  },
+  "size": [
+   1180,
+   1285
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.704
+  },
+  "size": [
+   1260,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1791939309253_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0,
+   "fill": 0.427
+  },
+  "size": [
+   576,
+   597
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 1,
+  "url": "https://media.cdnws.com/_i/21277/5290/969/92/trottinette-electrique-inmotion-c1-air-pro-noir.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.819
+  },
+  "size": [
+   426,
+   626
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 2,
+  "url": "https://media.cdnws.com/_i/21277/5287/2849/89/trottinette-electrique-adulte-inmotion-c1-air-pro.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.427
+  },
+  "size": [
+   549,
+   568
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/5289/357/91/guidon-trottinette-c1-air-pro-inmotion.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.86
+  },
+  "size": [
+   630,
+   584
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 4,
+  "url": "https://media.cdnws.com/_i/21277/5288/2636/90/roue-10-c1-air-pro-inmotion-trottinette.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.712
+  },
+  "size": [
+   648,
+   470
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1791637750880_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.207
+  },
+  "size": [
+   1740,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/208_7e3b8ee1-09f8-4354-bf94-a2849e0a8d2f.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.813
+  },
+  "size": [
+   577,
+   842
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/208-01_2_71d67b1d-f6d4-4b33-ad9d-bc795c3ad88d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.708
+  },
+  "size": [
+   1264,
+   1156
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/208-01_3_e2aa9e8e-8341-41d8-9bbf-a6c9ece7304b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.671
+  },
+  "size": [
+   1051,
+   1281
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/208-01_4_1aa4a55f-07f6-4445-b2a2-a7fd8d701bcd.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.721
+  },
+  "size": [
+   1280,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1791998730503_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.845
+  },
+  "size": [
+   880,
+   866
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1791998732308_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.83
+  },
+  "size": [
+   575,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 2,
+  "url": "https://www.inmotion-france.com/inmov2/417-large_default/trottinette-electrique-l9.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 3,
+  "url": "https://images.squarespace-cdn.com/content/v1/5ebd34e8a6aa3058bb9673b4/1589459217738-DD4JOGHTA4J8F0251MQT/ezgif.com-webp-to-png+%283%29.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "bandeau, pas un produit",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.091,
+   "vivid": 0.065,
+   "fill": 0.57
+  },
+  "size": [
+   386,
+   81
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 4,
+  "url": "https://www.inmotion-france.fr/themes/inmotion/produits/l9/page-l9_00-t6-new.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "couleurs vives 81 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 81 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.807,
+   "fill": 0.698
+  },
+  "size": [
+   405,
+   141
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 5,
+  "url": "https://www.inmotion-france.fr/themes/inmotion/produits/l9/page-l9_00-t3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 78 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 78 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.324,
+   "vivid": 0.779,
+   "fill": 0.865
+  },
+  "size": [
+   248,
+   248
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1791939560409_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.125,
+   "fill": 0.528
+  },
+  "size": [
+   884,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.473
+  },
+  "size": [
+   945,
+   1001
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-02_e704ed32-1491-4dd8-9ac6-b43a6844d774.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.601
+  },
+  "size": [
+   1082,
+   1204
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-03_5425b724-0576-48a5-9689-0df2f543c4d9.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.052,
+   "vivid": 0.163,
+   "fill": 0.735
+  },
+  "size": [
+   1296,
+   1117
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-04_07ded73c-09ea-467f-9f58-a860a7143498.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.566
+  },
+  "size": [
+   1239,
+   1186
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/InMotion_RS_Jet_Electric_Scooter__72V_25Ah_Dual_2300W_Motors.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.829
+  },
+  "size": [
+   627,
+   775
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/DSC023232.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.829
+  },
+  "size": [
+   785,
+   969
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/FF7A00.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.008,
+   "vivid": 0.011,
+   "fill": 0.633
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/FF7A00_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0.015,
+   "fill": 0.589
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/DSC02320.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.844
+  },
+  "size": [
+   913,
+   887
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/b58ce7b99582c961375527c3c6b27ebb_6010a65a-e52b-419a-9c61-8a931097c424.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.354
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1791939311574_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.058,
+   "vivid": 0.106,
+   "fill": 0.722
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1791939313776_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.06,
+   "vivid": 0.11,
+   "fill": 0.722
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/40bdbd13-80ed-43ed-bc49-ac3b51a57141/1791939318112_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.137,
+   "fill": 0.402
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/40bdbd13-80ed-43ed-bc49-ac3b51a57141/1791939315810_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.044,
+   "vivid": 0.147,
+   "fill": 0.713
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/40bdbd13-80ed-43ed-bc49-ac3b51a57141/1791939321616_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.335
+  },
+  "size": [
+   1804,
+   1804
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/b58ce7b99582c961375527c3c6b27ebb_7ad409fa-edda-4975-9426-a78570f862b4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.466
+  },
+  "size": [
+   968,
+   1029
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RSlite-_-__01-02_75d91047-4b35-42bf-a977-0c133e82eda6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.514
+  },
+  "size": [
+   1172,
+   1161
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RSlite-_-__01-03_1914648a-bfe0-4895-83bc-e3da2b56b4e9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.177,
+   "fill": 0.739
+  },
+  "size": [
+   1296,
+   1055
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RSlite-_-__01-04_e99c9d5a-4a00-4100-8df1-13b60c807645.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.118,
+   "fill": 0.488
+  },
+  "size": [
+   1122,
+   1206
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/S1F_8e806b6b-fa28-4482-9e04-b58ea0d8e278.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.285
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/S1-_-__01-04_6ff8dced-7b43-4c37-891c-b39874b0472e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.777
+  },
+  "size": [
+   1270,
+   1265
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/2_daa732c0-948f-4ff8-9137-f0d8f3747cab.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.849
+  },
+  "size": [
+   1502,
+   1468
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/3_c44b5fc6-07f1-44f0-951d-6d3354e18c0f.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.403
+  },
+  "size": [
+   594,
+   1478
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 4,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c400f01e-12fc-47b8-b677-cd10f4cefdba/1791637742653_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.054,
+   "vivid": 0.088,
+   "fill": 0.774
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-s1f",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c400f01e-12fc-47b8-b677-cd10f4cefdba/1791997555767_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.403
+  },
+  "size": [
+   593,
+   1478
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bea5df5d-c3d0-4916-b2c7-7f65cb7c2fe0/1782551660298_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.231,
+   "fill": 0.813
+  },
+  "size": [
+   551,
+   915
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/4_b55b7888-a898-4df5-b950-fb5581fbb710.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.813
+  },
+  "size": [
+   953,
+   1392
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_cfa2760a-be06-47f1-97f9-af1ba0cc4add.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.797
+  },
+  "size": [
+   1402,
+   841
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/2_2cb2e51b-aa95-49c5-99f5-887653d352b8.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.77
+  },
+  "size": [
+   1408,
+   693
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 4,
+  "url": "https://media.cdnws.com/_i/21277/2648/2794/49/trottinette-electrique-inokim-light-2-verte.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.836
+  },
+  "size": [
+   492,
+   501
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2",
+  "i": 5,
+  "url": "https://media.cdnws.com/_i/21277/2651/545/52/trotitnette-electrique-inokim-light-2-blanche.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.845
+  },
+  "size": [
+   486,
+   495
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5913ac8b-2571-4f37-9288-6993f320a9ac/1791939807083_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.275
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5913ac8b-2571-4f37-9288-6993f320a9ac/1791939808960_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.653
+  },
+  "size": [
+   527,
+   647
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/INOKIM_Light_2_Max_2026_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.813
+  },
+  "size": [
+   953,
+   1393
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/light-product-green.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.478,
+   "vivid": 0.012,
+   "fill": 0.67
+  },
+  "size": [
+   748,
+   644
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/L_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.813
+  },
+  "size": [
+   551,
+   915
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/7_88dc3703-f1c0-4e0e-9070-b770d317bc0c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.333
+  },
+  "size": [
+   864,
+   664
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1791940155169_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.692
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 1,
+  "url": "https://media.cdnws.com/_i/21277/2615/2323/16/trottinette-electrique-nouvelle-inokim-light-2-black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.773
+  },
+  "size": [
+   600,
+   630
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 2,
+  "url": "https://media.cdnws.com/_i/21277/2617/1805/18/trottinette-electrique-nouvelle-inokim-light-2-black-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.806
+  },
+  "size": [
+   534,
+   489
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/2621/10/22/trottinette-electrique-nouvelle-inokim-light-2-black-mipliee.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.749
+  },
+  "size": [
+   648,
+   597
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 4,
+  "url": "https://media.cdnws.com/_i/21277/2620/553/21/trottinette-electrique-nouvelle-inokim-light-2-black-pliee.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.752
+  },
+  "size": [
+   648,
+   544
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/INOKIM_LIGHT_2_SUPER_D__22_28.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.699
+  },
+  "size": [
+   1902,
+   1817
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/18fa9f1a-9dab-4e2b-9416-501582545b69/1791940157283_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.486
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 1,
+  "url": "https://www.maxblinker.fr/103-panda_thickbox_default/inokim-mini-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.486
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 2,
+  "url": "https://www.maxblinker.fr/104-panda_big_default/inokim-mini-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.74
+  },
+  "size": [
+   224,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 3,
+  "url": "https://www.maxblinker.fr/105-panda_big_default/inokim-mini-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.813
+  },
+  "size": [
+   418,
+   611
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 4,
+  "url": "https://www.maxblinker.fr/106-panda_big_default/inokim-mini-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.387
+  },
+  "size": [
+   485,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 5,
+  "url": "https://www.maxblinker.fr/107-panda_big_default/inokim-mini-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.447
+  },
+  "size": [
+   614,
+   564
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-mini-2",
+  "i": 6,
+  "url": "https://www.maxblinker.fr/108-panda_big_default/inokim-mini-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.305
+  },
+  "size": [
+   614,
+   542
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64ef4bd4-bd2b-4361-a47f-592e410c718e/1782551656850_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.801
+  },
+  "size": [
+   646,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64ef4bd4-bd2b-4361-a47f-592e410c718e/1782551658623_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.767
+  },
+  "size": [
+   196,
+   297
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64ef4bd4-bd2b-4361-a47f-592e410c718e/1791997375445_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.376
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/OX_1_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.801
+  },
+  "size": [
+   646,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/3_ab846cbb-2213-4d43-8ad3-b4edb1f93097.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.801
+  },
+  "size": [
+   873,
+   1406
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_fc3e358e-93c7-4133-aad6-e6bc09ad768e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.093,
+   "fill": 0.832
+  },
+  "size": [
+   1407,
+   1173
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_9b6f46bd-2a44-4a88-9d0d-3f9b4c025f60.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.821
+  },
+  "size": [
+   1424,
+   1055
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-ox",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/2_0489ae57-c7c3-4fa2-95bf-c3107939be89.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.763
+  },
+  "size": [
+   1407,
+   661
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4daec1e9-e9c3-44a0-9f92-7660d7a7ef0d/1782551302121_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.063,
+   "fill": 0.797
+  },
+  "size": [
+   563,
+   935
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4daec1e9-e9c3-44a0-9f92-7660d7a7ef0d/1782551303769_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.523
+  },
+  "size": [
+   905,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4daec1e9-e9c3-44a0-9f92-7660d7a7ef0d/1791997381819_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.37
+  },
+  "size": [
+   1652,
+   1652
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/inokim-oxo-white.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.776
+  },
+  "size": [
+   810,
+   1584
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/17_8e6ce4b3-8e74-4d2c-810c-f2a9a6c8c5a7.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.776
+  },
+  "size": [
+   1397,
+   714
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/16_f69f2a2d-abf4-4a8e-928b-27caba94f271.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.306
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/26.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.3
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/OXO-Folded_2023_Orange.311.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.733
+  },
+  "size": [
+   1812,
+   1301
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1791940151088_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.798
+  },
+  "size": [
+   349,
+   579
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_01_d41db245-891a-4963-9d03-15ebaf02147a.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.797
+  },
+  "size": [
+   563,
+   935
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_red_03_1_819x_f0c43991-5dbe-4832-8f14-98e39d4223fd.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.523
+  },
+  "size": [
+   905,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_88ccb237-aee7-4b71-9950-8c1d2cf62e54.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.242
+  },
+  "size": [
+   1760,
+   1484
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/28.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.084,
+   "fill": 0.3
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-oxo-super",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/6_9a313447-0d22-4904-981c-cc8586981ef2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.845
+  },
+  "size": [
+   1584,
+   1455
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/818f5f7c-c28b-4c70-88c0-55c24a5deb76/1782551663493_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.802
+  },
+  "size": [
+   584,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/818f5f7c-c28b-4c70-88c0-55c24a5deb76/1782551665007_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.226
+  },
+  "size": [
+   518,
+   336
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/818f5f7c-c28b-4c70-88c0-55c24a5deb76/1791997386343_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.708
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/Q_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.81
+  },
+  "size": [
+   585,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_8fe6ec8e-f3ab-49f2-ba48-621a0a1265df.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.088,
+   "fill": 0.805
+  },
+  "size": [
+   1406,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/2_c4dfabd6-757a-47e3-a231-1cdc5e21f4f1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.826
+  },
+  "size": [
+   1116,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/3_c8df335c-9c98-4599-a2ec-dc316b2da191.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.35,
+   "vivid": 0.121,
+   "fill": 0.423
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/835592e9-438d-4032-abc1-fc052e33b161/1791940153505_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.834
+  },
+  "size": [
+   1100,
+   1286
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/7_341295b7-f41e-4c54-8538-97dd63e2087c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.803
+  },
+  "size": [
+   884,
+   1408
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/4_cdc2eb81-f3f0-48aa-a57b-7ff9b469f65d.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.483
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/5_1f5c93eb-7211-4ae8-8bdd-1cdc594122b3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.823
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/6_9bf46b75-f4e4-4868-86f0-67f5c62c3096.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.107,
+   "fill": 0.643
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inokim-quick-4-super",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/7_5e2b7142-0c34-48ce-bb5c-5272ff68eaf4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.092,
+   "fill": 0.384
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ }
+]

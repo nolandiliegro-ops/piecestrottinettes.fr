@@ -1,0 +1,105 @@
+apollo-city-2-0 #0 PASS ok
+apollo-city-2-0 #1 PASS ok
+apollo-city-2-0 #2 PASS ok
+apollo-city-2-0 #3 PASS ok
+apollo-city-pro #0 PASS ok
+apollo-city-pro #1 WARN basse définition
+apollo-city-pro #2 FAIL détourage sale / résidu de décor
+apollo-dash #0 PASS ok
+apollo-dash #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+apollo-dash #2 PASS ok
+apollo-dash #3 WARN basse définition · cadrage serré
+apollo-explore #0 PASS ok
+apollo-explore #1 PASS ok
+apollo-explore #2 PASS ok
+apollo-explore #3 PASS ok
+apollo-explore #4 PASS ok
+apollo-explore #5 PASS ok
+apollo-explore #6 WARN basse définition
+apollo-explore #7 PASS ok
+apollo-explore-2-0 #0 PASS ok
+apollo-explore-2-0 #1 PASS ok
+apollo-explore-2-0 #2 WARN basse définition
+apollo-explore-2-0 #3 PASS ok
+apollo-explore-2-0 #4 PASS ok
+apollo-explore-2-0 #5 PASS ok
+apollo-explore-2-0 #6 PASS ok
+apollo-go #0 PASS ok
+apollo-go #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+apollo-go #2 PASS ok
+aprilia-esr1 #0 PASS ok
+aprilia-esr1 #1 PASS ok
+aprilia-esr1 #2 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esr1 #3 FAIL détourage sale / résidu de décor
+aprilia-esr2 #0 PASS ok
+aprilia-esr2 #1 PASS ok
+aprilia-esr2 #2 PASS ok
+aprilia-esr2 #3 PASS ok
+aprilia-esr2 #4 PASS ok
+aprilia-esr2 #5 PASS ok
+aprilia-esr2 #6 PASS ok
+aprilia-esr2 #7 WARN basse définition · cadrage serré
+aprilia-esr2 #8 WARN cadrage serré
+aprilia-esr2-evo #0 PASS ok
+aprilia-esr2-evo #1 PASS ok
+aprilia-esr2-evo #2 PASS ok
+aprilia-esr2-evo #3 PASS ok
+aprilia-esr2-evo #4 PASS ok
+aprilia-esr2-evo #5 PASS ok
+aprilia-esr2-evo #6 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esrz #0 PASS ok
+aprilia-esrz #1 PASS ok
+aprilia-esrz #2 PASS ok
+aprilia-esrz #3 WARN basse définition
+aprilia-esrz #4 WARN basse définition · cadrage serré
+aprilia-esrz #5 WARN cadrage serré
+beaster-bs08 #0 ERROR Input buffer contains unsupported image format
+beaster-bs08 #1 ERROR Input buffer contains unsupported image format
+beaster-bs08 #2 ERROR Input buffer contains unsupported image format
+beaster-bs08 #3 ERROR Input buffer contains unsupported image format
+beaster-bs08 #4 ERROR Input buffer contains unsupported image format
+beaster-bs08 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+beaster-bs09 #0 ERROR Input buffer contains unsupported image format
+beaster-bs09 #1 ERROR Input buffer contains unsupported image format
+beaster-bs09 #2 ERROR Input buffer contains unsupported image format
+beaster-bs09 #3 ERROR Input buffer contains unsupported image format
+beaster-bs09 #4 ERROR Input buffer contains unsupported image format
+beaster-bs09 #5 WARN cadrage serré
+beaster-bs77 #0 PASS ok
+beaster-bs77 #1 WARN basse définition
+beaster-bs77 #2 WARN basse définition
+beaster-bs77 #3 WARN basse définition
+beaster-bs77 #4 WARN basse définition · cadrage serré
+beaster-bs77 #5 WARN basse définition · cadrage serré
+beaster-diablo #0 WARN basse définition
+beaster-diablo #1 WARN basse définition
+beaster-diablo #2 WARN basse définition · cadrage serré
+beaster-diablo #3 ERROR Input buffer contains unsupported image format
+beaster-diablo #4 ERROR Input buffer contains unsupported image format
+beaster-diablo #5 ERROR Input buffer contains unsupported image format
+beaster-diablo #6 ERROR Input buffer contains unsupported image format
+beaster-diablo #7 ERROR Input buffer contains unsupported image format
+bogist-c1-pro #0 WARN basse définition
+bogist-c1-pro #1 PASS ok
+bogist-c1-pro #2 WARN basse définition
+bogist-c1-pro #3 PASS ok
+bogist-c1-pro #4 PASS ok
+bogist-c1-pro #5 PASS ok
+bogist-c1-pro #6 PASS ok
+bogist-c1-pro #7 PASS ok
+bogist-c1-pro #8 PASS ok
+bogist-m1-elite #0 PASS ok
+bogist-m1-elite #1 PASS ok
+bogist-m1-elite #2 PASS ok
+bogist-m1-elite #3 PASS ok
+bogist-m1-elite #4 PASS ok
+bogist-m1-elite #5 PASS ok
+bogist-m1-elite #6 PASS ok
+bogist-m5-pro #0 PASS ok
+bogist-m5-pro #1 FAIL détourage sale / résidu de décor · cadrage serré
+bogist-m5-pro #2 PASS ok
+bogist-m5-pro #3 WARN cadrage serré
+bogist-m5-pro #4 WARN cadrage serré
+bogist-m5-pro #5 WARN cadrage serré
+bogist-m5-pro #6 PASS ok
+::notice title=photos lot01 (dry)::104 candidates · PASS 58 · WARN 23 · FAIL 8 · ERREUR 15

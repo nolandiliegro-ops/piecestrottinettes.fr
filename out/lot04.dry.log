@@ -1,0 +1,182 @@
+ducati-cross-e-sport #0 PASS ok
+ducati-cross-e-sport #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-cross-e-sport #2 FAIL détourage sale / résidu de décor
+ducati-cross-e-sport #3 WARN cadrage serré
+ducati-cross-e-sport #4 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 38 % (visuel marketing ?)
+ducati-cross-e-sport #5 WARN cadrage serré
+ducati-cross-e-sport #6 FAIL détourage sale / résidu de décor
+ducati-pro-i-evo #0 WARN basse définition
+ducati-pro-i-evo #1 ERROR téléchargement vide
+ducati-pro-i-evo #2 WARN basse définition
+ducati-pro-i-evo #3 WARN cadrage serré
+ducati-pro-i-evo #4 WARN cadrage serré
+ducati-pro-i-evo #5 PASS ok
+ducati-pro-i-evo #6 PASS ok
+ducati-pro-i-evo #7 PASS ok
+ducati-pro-ii-evo #0 PASS ok
+ducati-pro-ii-evo #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ducati-pro-ii-evo #6 FAIL détourage sale / résidu de décor
+ducati-pro-iii #0 PASS ok
+ducati-pro-iii #1 PASS ok
+ducati-pro-iii #2 PASS ok
+ducati-pro-iii #3 PASS ok
+ducati-pro-iii #4 PASS ok
+ducati-pro-iii #5 WARN cadrage serré
+ducati-pro-iii #6 PASS ok
+dyu-c4 #0 WARN basse définition · cadrage serré
+dyu-c4 #1 PASS ok
+dyu-c4 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dyu-c4 #3 WARN cadrage serré
+dyu-c4 #4 PASS ok
+dyu-c4 #5 PASS ok
+dyu-c4 #6 WARN cadrage serré
+dyu-c4 #7 PASS ok
+dyu-c4 #8 PASS ok
+dyu-d3f #0 PASS ok
+dyu-d3f #1 WARN cadrage serré
+dyu-d3f #2 WARN cadrage serré
+dyu-d3f #3 FAIL détourage sale / résidu de décor · cadrage serré
+dyu-d3f #4 FAIL détourage sale / résidu de décor
+dyu-d3f #5 PASS ok
+dyu-d3f #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+dyu-d3f #7 PASS ok
+dyu-d3f #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+e-twow-booster-es #0 WARN basse définition
+e-twow-booster-es #1 FAIL détourage sale / résidu de décor
+e-twow-booster-es #2 WARN basse définition
+e-twow-booster-es #3 WARN basse définition
+e-twow-booster-es #4 WARN basse définition
+e-twow-booster-es #5 PASS ok
+e-twow-booster-es #6 PASS ok
+e-twow-booster-se #0 WARN basse définition
+e-twow-booster-se #1 WARN basse définition
+e-twow-booster-se #2 WARN basse définition
+e-twow-booster-se #3 WARN cadrage serré
+e-twow-booster-se #4 PASS ok
+e-twow-booster-se #5 PASS ok
+e-twow-booster-se #6 PASS ok
+e-twow-booster-se #7 WARN cadrage serré
+e-twow-booster-v #0 WARN basse définition
+e-twow-booster-v #1 PASS ok
+e-twow-booster-v #2 PASS ok
+e-twow-booster-v #3 PASS ok
+e-twow-booster-v #4 PASS ok
+e-twow-booster-v #5 WARN basse définition · cadrage serré
+e-twow-booster-v #6 WARN cadrage serré
+e-twow-gt-se #0 PASS ok
+e-twow-gt-se #1 PASS ok
+e-twow-gt-se #2 WARN basse définition
+e-twow-gt-se #3 WARN basse définition
+e-twow-gt-se #4 FAIL détourage sale / résidu de décor · basse définition
+e-twow-gt-se #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+e-twow-gt-se #6 PASS ok
+e-twow-gt-sl #0 PASS ok
+e-twow-gt-sl #1 PASS ok
+e-twow-gt-sl #2 PASS ok
+e-twow-gt-sl #3 PASS ok
+e-twow-gt-sl #4 PASS ok
+e-twow-gt-sl #5 PASS ok
+e-twow-gt-sl #6 PASS ok
+e-twow-gt-sl #7 PASS ok
+e-twow-gt-sl #8 FAIL détourage sale / résidu de décor
+e-twow-gt-sport #0 PASS ok
+e-twow-gt-sport #1 PASS ok
+e-twow-gt-sport #2 WARN couleurs vives 32 % (visuel marketing ?)
+e-twow-gt-sport #3 PASS ok
+e-twow-gt-sport #4 PASS ok
+e-twow-gt-sport #5 WARN couleurs vives 31 % (visuel marketing ?)
+e-twow-gt-sport #6 PASS ok
+e-twow-gt-sport #7 WARN basse définition · cadrage serré
+e-twow-gt-sport #8 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gts #0 PASS ok
+e-twow-gts #1 PASS ok
+e-twow-gts #2 WARN cadrage serré
+e-twow-gts #3 PASS ok
+e-twow-gts #4 PASS ok
+e-twow-gts #5 PASS ok
+e-twow-gts #6 PASS ok
+e-twow-gts #7 PASS ok
+e-twow-tanktorq-tk2 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #2 PASS ok
+e-twow-tanktorq-tk2 #3 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk2 #4 WARN basse définition
+e-twow-tanktorq-tk2 #5 PASS ok
+e-twow-tanktorq-tk2 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2-lite #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+e-twow-tanktorq-tk2-lite #1 WARN cadrage serré
+e-twow-tanktorq-tk2-lite #2 WARN cadrage serré
+e-twow-tanktorq-tk2-lite #3 WARN cadrage serré
+e-twow-tanktorq-tk2-lite #4 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk2-lite #5 WARN cadrage serré
+e-twow-tanktorq-tk2-lite #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+e-twow-tanktorq-tk2-lite #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #4 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk5 #0 WARN basse définition
+e-twow-tanktorq-tk5 #1 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk5 #2 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk5 #3 PASS ok
+e-twow-tanktorq-tk5 #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk5 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk5 #6 WARN cadrage serré
+engwe-y10 #0 WARN basse définition
+engwe-y10 #1 WARN basse définition
+engwe-y10 #2 PASS ok
+engwe-y10 #3 PASS ok
+engwe-y10 #4 PASS ok
+engwe-y10 #5 PASS ok
+engwe-y10 #6 WARN cadrage serré
+engwe-y10 #7 PASS ok
+engwe-y1000 #0 PASS ok
+engwe-y1000 #1 PASS ok
+engwe-y1000 #2 PASS ok
+engwe-y1000 #3 PASS ok
+engwe-y1000 #4 PASS ok
+engwe-y1000 #5 WARN cadrage serré
+engwe-y1000 #6 PASS ok
+engwe-y1000 #7 PASS ok
+engwe-y400 #0 PASS ok
+engwe-y400 #1 PASS ok
+engwe-y400 #2 WARN cadrage serré
+engwe-y400 #3 WARN cadrage serré
+engwe-y400 #4 PASS ok
+engwe-y400 #5 PASS ok
+engwe-y400 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+engwe-y600 #0 PASS ok
+engwe-y600 #1 PASS ok
+engwe-y600 #2 PASS ok
+engwe-y600 #3 PASS ok
+engwe-y600 #4 PASS ok
+engwe-y600 #5 PASS ok
+engwe-y600 #6 PASS ok
+engwe-y600 #7 PASS ok
+engwe-y600 #8 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y600s #0 PASS ok
+engwe-y600s #1 PASS ok
+engwe-y600s #2 WARN basse définition · cadrage serré
+engwe-y600s #3 PASS ok
+engwe-y600s #4 WARN basse définition
+engwe-y600s #5 WARN basse définition
+engwe-y600s #6 WARN basse définition · cadrage serré
+engwe-y600s #7 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y600s #8 FAIL détourage sale / résidu de décor
+engwe-y700 #0 PASS ok
+engwe-y700 #1 PASS ok
+engwe-y700 #2 PASS ok
+engwe-y700 #3 PASS ok
+engwe-y700 #4 PASS ok
+engwe-y700 #5 WARN cadrage serré
+engwe-y700 #6 PASS ok
+engwe-y700 #7 PASS ok
+::notice title=photos lot04 (dry)::181 candidates · PASS 88 · WARN 48 · FAIL 44 · ERREUR 1

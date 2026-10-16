@@ -1,0 +1,125 @@
+halo-knight-t104 #0 PASS ok
+halo-knight-t104 #1 WARN basse définition
+halo-knight-t104 #2 PASS ok
+halo-knight-t104 #3 PASS ok
+halo-knight-t104 #4 PASS ok
+halo-knight-t104 #5 PASS ok
+halo-knight-t104 #6 WARN cadrage serré
+halo-knight-t104 #7 PASS ok
+halo-knight-t107-pro #0 PASS ok
+halo-knight-t107-pro #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+halo-knight-t107-pro #2 PASS ok
+halo-knight-t107-pro #3 PASS ok
+halo-knight-t107-pro #4 PASS ok
+halo-knight-t107-pro #5 PASS ok
+halo-knight-t108 #0 PASS ok
+halo-knight-t108 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+halo-knight-t108 #2 PASS ok
+halo-knight-t108 #3 PASS ok
+halo-knight-t108 #4 PASS ok
+halo-knight-t108 #5 PASS ok
+halo-knight-t108 #6 WARN cadrage serré
+halo-knight-t108-pro #0 PASS ok
+halo-knight-t108-pro #1 PASS ok
+halo-knight-t108-pro #2 PASS ok
+halo-knight-t108-pro #3 PASS ok
+halo-knight-t108-pro #4 WARN cadrage serré
+halo-knight-t108-pro #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+halo-knight-t108-pro #6 PASS ok
+halo-knight-t108-pro #7 PASS ok
+hiboy-ks4 #0 PASS ok
+hiboy-ks4 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #2 PASS ok
+hiboy-ks4 #3 PASS ok
+hiboy-ks4 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #0 PASS ok
+hiboy-ks4-pro #1 PASS ok
+hiboy-ks4-pro #2 PASS ok
+hiboy-ks4-pro #3 PASS ok
+hiboy-ks4-pro #4 PASS ok
+hiboy-ks4-pro #5 PASS ok
+hiboy-ks4-pro #6 PASS ok
+hiboy-s2 #0 PASS ok
+hiboy-s2 #1 PASS ok
+hiboy-s2 #2 PASS ok
+hiboy-s2-lite #0 PASS ok
+hiboy-s2-lite #1 PASS ok
+hiboy-s2-lite #2 PASS ok
+hiboy-s2-lite #3 PASS ok
+hiboy-s2-max #0 PASS ok
+hiboy-s2-max #1 PASS ok
+hiboy-s2-max #2 PASS ok
+hiboy-s2-nova #0 PASS ok
+hiboy-s2-nova #1 PASS ok
+hiboy-s2-nova #2 PASS ok
+hiboy-s2-nova #3 PASS ok
+hiboy-s2-nova #4 PASS ok
+hiboy-s2-nova #5 PASS ok
+hiboy-s2-pro #0 PASS ok
+hiboy-s2-pro #1 PASS ok
+hiboy-s2-pro #2 PASS ok
+hiboy-s2-pro #3 PASS ok
+hiboy-s2-pro #4 PASS ok
+hiboy-s2r-plus #0 PASS ok
+hiboy-s2r-plus #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+hiboy-s2r-plus #2 PASS ok
+hiboy-titan-pro #0 PASS ok
+hiboy-titan-pro #1 PASS ok
+hiboy-x300 #0 PASS ok
+hiboy-x300 #1 WARN couleurs vives 32 % (visuel marketing ?)
+hiboy-x300 #2 PASS ok
+hiboy-x300 #3 PASS ok
+hikerboy-brio #0 PASS ok
+hikerboy-brio #1 WARN basse définition
+hikerboy-brio #2 WARN basse définition
+hikerboy-brio #3 WARN basse définition
+hikerboy-brio #4 WARN basse définition
+hikerboy-brio #5 WARN basse définition
+hikerboy-curtis #0 PASS ok
+hikerboy-curtis #1 PASS ok
+hikerboy-curtis #2 PASS ok
+hikerboy-curtis #3 PASS ok
+hikerboy-curtis #4 PASS ok
+hikerboy-curtis #5 PASS ok
+hikerboy-curtis #6 PASS ok
+hikerboy-curtis-dual #0 PASS ok
+hikerboy-curtis-dual #1 PASS ok
+hikerboy-curtis-dual #2 WARN basse définition
+hikerboy-curtis-dual #3 PASS ok
+hikerboy-curtis-dual #4 PASS ok
+hikerboy-curtis-dual #5 PASS ok
+hikerboy-curtis-dual #6 PASS ok
+hikerboy-curtis-dual #7 PASS ok
+hikerboy-curtis-dual-pro #0 PASS ok
+hikerboy-curtis-dual-pro #1 PASS ok
+hikerboy-curtis-dual-pro #2 PASS ok
+hikerboy-curtis-dual-pro #3 PASS ok
+hikerboy-curtis-dual-pro #4 PASS ok
+hikerboy-curtis-dual-pro #5 PASS ok
+hikerboy-curtis-dual-pro #6 PASS ok
+hikerboy-curtis-dual-pro #7 PASS ok
+hikerboy-curtis-plus #0 PASS ok
+hikerboy-curtis-plus #1 PASS ok
+hikerboy-curtis-plus #2 PASS ok
+hikerboy-curtis-plus #3 PASS ok
+hikerboy-curtis-plus #4 PASS ok
+hikerboy-curtis-plus #5 PASS ok
+hikerboy-curtis-plus #6 PASS ok
+hikerboy-curtis-plus #7 PASS ok
+hikerboy-foxtrot-plus #0 PASS ok
+hikerboy-foxtrot-plus #1 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-foxtrot-plus #2 WARN basse définition
+hikerboy-foxtrot-plus #3 PASS ok
+hikerboy-foxtrot-plus #4 PASS ok
+hikerboy-foxtrot-plus #5 PASS ok
+hikerboy-foxtrot-plus #6 PASS ok
+hikerboy-foxtrot-plus #7 PASS ok
+hikerboy-off-road-2 #0 PASS ok
+hikerboy-off-road-2 #1 PASS ok
+hikerboy-off-road-2 #2 WARN cadrage serré
+hikerboy-off-road-2 #3 PASS ok
+hikerboy-off-road-2 #4 PASS ok
+hikerboy-off-road-2 #5 FAIL détourage sale / résidu de décor · cadrage serré
+hikerboy-off-road-2 #6 FAIL détourage sale / résidu de décor · cadrage serré
+::notice title=photos lot05 (dry)::124 candidates · PASS 101 · WARN 13 · FAIL 10 · ERREUR 0

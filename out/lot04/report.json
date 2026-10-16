@@ -1,0 +1,3867 @@
+[
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3e1c5c6c-273d-4aa9-99a1-8978b111cbd4/1792165353664_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.695
+  },
+  "size": [
+   1020,
+   897
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-electric-yellow-black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.05,
+   "vivid": 0.229,
+   "fill": 0.618
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-yellow-front-view-headlights.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.065,
+   "fill": 0.632
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-rear-view-black-background.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.035,
+   "fill": 0.62
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-yellow-black-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "couleurs vives 38 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 38 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.375,
+   "fill": 0.757
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-ergonomic-design-yellow-black.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.285,
+   "fill": 0.636
+  },
+  "size": [
+   945,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-cross-e-sport",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-handlebar-display-electric-vehicle.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0,
+   "fill": 0.758
+  },
+  "size": [
+   824,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/390a32c3-8fd4-4d16-82e8-1fc363ff4fd2/1792165343314_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.815
+  },
+  "size": [
+   188,
+   209
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/390a32c3-8fd4-4d16-82e8-1fc363ff4fd2/1792165348021_0.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.796
+  },
+  "size": [
+   575,
+   963
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.832
+  },
+  "size": [
+   859,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.823
+  },
+  "size": [
+   749,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.371
+  },
+  "size": [
+   1730,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.626
+  },
+  "size": [
+   1560,
+   1616
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-i-evo",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.529
+  },
+  "size": [
+   1730,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1791646888532_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.818
+  },
+  "size": [
+   665,
+   833
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-black-background.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.375,
+   "vivid": 0.021,
+   "fill": 0.74
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-style-italian-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.203,
+   "vivid": 0.016,
+   "fill": 0.692
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-black-magnesium-alloy-frame.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.126,
+   "vivid": 0.017,
+   "fill": 0.656
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-scooter-lightweight-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.165,
+   "vivid": 0.022,
+   "fill": 0.688
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-lightweight-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.376,
+   "vivid": 0.015,
+   "fill": 0.74
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-scooter-modern-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.818
+  },
+  "size": [
+   1379,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/61a2b888-5269-49cf-9179-70c0f6c4793c/1791646885658_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.558
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-lightweight-frame.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.81
+  },
+  "size": [
+   1322,
+   1734
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-lightweight-frame_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.192
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-25kmh-lightweight-durable.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.018,
+   "fill": 0.518
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-urban-commuting-fast-lightweight-350w-motor.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.305
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-front-wheel-brakes-lightweight-design-urban-commuting.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.817
+  },
+  "size": [
+   1404,
+   1131
+  ],
+  "error": null
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-handlebar-closeup-performance-350W-black-design.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.83
+  },
+  "size": [
+   1217,
+   989
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791661117156_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.83
+  },
+  "size": [
+   598,
+   730
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791997494554_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.829
+  },
+  "size": [
+   1348,
+   1090
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791997501031_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.187,
+   "vivid": 0.051,
+   "fill": 0.842
+  },
+  "size": [
+   1610,
+   1527
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI_4c5f98cd-4d64-4507-853d-166dbe4b3b3d.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.802
+  },
+  "size": [
+   1432,
+   1702
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-1_8451956d-d90d-4758-af06-3f94ec22c2b9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.703
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.838
+  },
+  "size": [
+   1653,
+   1481
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-3_505ea5f9-7f6b-4d43-952e-2b4f34750fbd.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.158,
+   "fill": 0.838
+  },
+  "size": [
+   1639,
+   1469
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINII-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.623
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/DYU-14MINI.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.838
+  },
+  "size": [
+   1614,
+   1445
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-1_fe54634a-7ea5-4dfe-ba56-89a2b5777f86.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.658
+  },
+  "size": [
+   1948,
+   1773
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI_8dc3d155-c293-452f-b04b-c3acd35ba879.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.838
+  },
+  "size": [
+   1656,
+   1488
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-1_6c406c7d-d9f9-474f-9aee-810cafa51915.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.815
+  },
+  "size": [
+   1657,
+   1087
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-2_42e81933-dd9c-4819-a987-d3c94b0aa2de.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.842
+  },
+  "size": [
+   1681,
+   1502
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI_d25a8490-6c21-4b70-a0d5-0f155402949b.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.006,
+   "fill": 0.596
+  },
+  "size": [
+   1727,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-1_cad998bb-7131-4b05-ba5d-e2d1b5a0d10a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.739
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791661110243_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.832
+  },
+  "size": [
+   441,
+   370
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791661114167_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.643
+  },
+  "size": [
+   1491,
+   1385
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-d3f",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791997717322_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.792
+  },
+  "size": [
+   930,
+   533
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1791938267434_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.808
+  },
+  "size": [
+   412,
+   623
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/booster-photo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.515
+  },
+  "size": [
+   654,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boosteresblack.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.815
+  },
+  "size": [
+   492,
+   704
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boosteresgrey.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.815
+  },
+  "size": [
+   492,
+   704
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostereswhite.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.815
+  },
+  "size": [
+   492,
+   704
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render__0001s_0000_Layer-555.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.502
+  },
+  "size": [
+   1924,
+   824
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render__0001s_0002_Layer-557.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.492
+  },
+  "size": [
+   1924,
+   824
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1791663917012_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.813
+  },
+  "size": [
+   495,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1791663920341_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.776
+  },
+  "size": [
+   542,
+   578
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.813
+  },
+  "size": [
+   495,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_gris_resistante-997796.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.797
+  },
+  "size": [
+   1184,
+   689
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_ultra_legere-641295.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.723
+  },
+  "size": [
+   1263,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_pliable-327829.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.84
+  },
+  "size": [
+   909,
+   990
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_Guidon_ecran-521310.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.447
+  },
+  "size": [
+   1026,
+   1150
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_pneus_8_pouces_gomme_tendre-304842.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.642
+  },
+  "size": [
+   1051,
+   1014
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7059bc46-5288-4ed6-a047-4f89ea34db7a/1791938511146_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.42
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervnegru2shop.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.846
+  },
+  "size": [
+   842,
+   837
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervgrishop.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.846
+  },
+  "size": [
+   841,
+   837
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervalbshop.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.846
+  },
+  "size": [
+   842,
+   837
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_V_Pas_cher-283657.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.828
+  },
+  "size": [
+   934,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_V_pliable-631108.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.768
+  },
+  "size": [
+   1107,
+   539
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-booster-v",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_Booster_V_guidon-209825.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.804
+  },
+  "size": [
+   1176,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6168d22e-a4d9-48c9-9107-2a9ecb6386e2/1791663924098_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.225
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_GT_SE_Pas_cher-317390.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.825
+  },
+  "size": [
+   619,
+   752
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 2,
+  "url": "https://www.maxblinker.fr/5949-panda_big_default/e-twow-booster-gt-se.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.845
+  },
+  "size": [
+   496,
+   483
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 3,
+  "url": "https://www.maxblinker.fr/5941-panda_big_default/e-twow-booster-gt-se.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.805
+  },
+  "size": [
+   309,
+   325
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 4,
+  "url": "https://www.maxblinker.fr/5942-panda_big_default/e-twow-booster-gt-se.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.561
+  },
+  "size": [
+   614,
+   366
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_GT_SE_blanc_pliable-717256.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.721
+  },
+  "size": [
+   1186,
+   438
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-se",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_GT_SE_legere-616584.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.429
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791663902724_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.821
+  },
+  "size": [
+   771,
+   1041
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791663906590_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.821
+  },
+  "size": [
+   771,
+   1043
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791997721830_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.273
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-SL_black.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.277
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-SL_gray.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.265
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Angle2_Black_Light.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.363
+  },
+  "size": [
+   2000,
+   2000
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Angle2_Gray_Light.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.699
+  },
+  "size": [
+   1877,
+   1906
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render_6_10.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.46
+  },
+  "size": [
+   1962,
+   865
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sl",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SL_handle_bar.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.844
+  },
+  "size": [
+   948,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791663910099_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.407
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791663913874_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.818
+  },
+  "size": [
+   658,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791997734503_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.315,
+   "fill": 0.255
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-black.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.579
+  },
+  "size": [
+   624,
+   816
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-gray.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.245
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-orange.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.312,
+   "fill": 0.255
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport_angle.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.628
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport_folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.714
+  },
+  "size": [
+   968,
+   366
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gt-sport",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/back_1a44ab9f-fb7c-40a8-8378-9f67202ebdad.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.581
+  },
+  "size": [
+   1296,
+   971
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e260ded-c11c-4f26-8721-133128c63678/1791938269740_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.396
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e260ded-c11c-4f26-8721-133128c63678/1791938271859_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.581
+  },
+  "size": [
+   701,
+   702
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SPORT_ruby_red_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.223,
+   "fill": 0.694
+  },
+  "size": [
+   1756,
+   699
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SPORT_ruby_red_4_57bc35b6-a96f-4949-813c-5f68171507eb.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.632
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-green.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.557
+  },
+  "size": [
+   641,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-red.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.084,
+   "fill": 0.237
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT_sport_limited_edition_blue.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.302
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-gts",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_etwow_GTS_pas_cher_noir-901566.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.396
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_tk2_main_escooter.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   736,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   1477,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.36
+  },
+  "size": [
+   898,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_rear.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.381
+  },
+  "size": [
+   1898,
+   1658
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/01_78d27457-fd59-4116-bacc-e55c5507f7b8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.203,
+   "fill": 0.822
+  },
+  "size": [
+   561,
+   747
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/IMG_0491.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.653
+  },
+  "size": [
+   1427,
+   1902
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792165801202_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   736,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792165807662_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   1479,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_electric_scooter_TK2_lite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.198,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1481,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folded_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.734
+  },
+  "size": [
+   1750,
+   815
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_rear_wheel_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.664
+  },
+  "size": [
+   1760,
+   1599
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_front_drum_brake_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.736
+  },
+  "size": [
+   1728,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folding_lock.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.655
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_charging_socket.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.696
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792165813881_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.199,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1480,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792165820447_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.2,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   1478,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/etwow_tk3_main_photo.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0.16,
+   "fill": 0.834
+  },
+  "size": [
+   736,
+   862
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_ELECTRIC_SCOOTER_gray.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1475,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_ELECTRIC_SCOOTER_green.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.207,
+   "vivid": 0.003,
+   "fill": 0.834
+  },
+  "size": [
+   1475,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/electric_scooter_e-twow_tk3_royal_purple.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.204,
+   "vivid": 0.044,
+   "fill": 0.833
+  },
+  "size": [
+   724,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_escooter.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.571
+  },
+  "size": [
+   1264,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45ad6555-d6d3-4213-8a44-9e5955647bef/1792165826734_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.207,
+   "vivid": 0.161,
+   "fill": 0.834
+  },
+  "size": [
+   736,
+   862
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45ad6555-d6d3-4213-8a44-9e5955647bef/1792165834557_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.206,
+   "vivid": 0.002,
+   "fill": 0.834
+  },
+  "size": [
+   1475,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1791938273805_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.713
+  },
+  "size": [
+   430,
+   525
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/TK5LightGray.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.637
+  },
+  "size": [
+   713,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK5_ELECTRIC_SCOOTER_army_green_1_b6071db0-e883-4b19-a6f3-1ec0c5233af8.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.006,
+   "vivid": 0,
+   "fill": 0.592
+  },
+  "size": [
+   1514,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/TK5Orange_be7ee1e3-e351-4369-8537-2792635338e3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.23,
+   "fill": 0.822
+  },
+  "size": [
+   628,
+   840
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo1_0cba806e-dbba-4b73-97f8-af1e07f813b0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.444,
+   "vivid": 0.14,
+   "fill": 0.807
+  },
+  "size": [
+   1071,
+   884
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo2_31b0df0d-e519-4f4a-af58-e301b8f39a04.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.23,
+   "vivid": 0.066,
+   "fill": 0.842
+  },
+  "size": [
+   796,
+   892
+  ],
+  "error": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.825
+  },
+  "size": [
+   857,
+   706
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1/1791938801907_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.8
+  },
+  "size": [
+   456,
+   791
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1/1791938805411_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.757
+  },
+  "size": [
+   341,
+   341
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y10.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.789
+  },
+  "size": [
+   1003,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y10_629fbfd2-2d76-48d0-8981-4f0097075768.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.789
+  },
+  "size": [
+   1003,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_85d2aefa-f74d-4885-a301-9bfb1560347a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.196
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_c2840e42-f324-4cdd-85f8-09249c9bb32d.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.844
+  },
+  "size": [
+   1589,
+   1647
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_ed39097f-5a1f-4ac7-950a-96fa56b1ee97.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.761
+  },
+  "size": [
+   1742,
+   906
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_df6fd3eb-a255-4d03-a11c-c1d0088b0ac6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.751
+  },
+  "size": [
+   1752,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792165848453_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.037,
+   "fill": 0.254
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792165855547_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.779
+  },
+  "size": [
+   1133,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWE_Y1000_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.036,
+   "fill": 0.254
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.779
+  },
+  "size": [
+   1133,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.843
+  },
+  "size": [
+   1642,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.762
+  },
+  "size": [
+   1681,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_b88f4ff5-1ced-4593-bdc0-04edbe726db6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.77
+  },
+  "size": [
+   1061,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y1000",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_c177786a-156f-4b6e-a844-2f7e4fdbe445.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.273
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc75e858-7731-4a9e-ae19-f2029cfa257d/1791939044457_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.824
+  },
+  "size": [
+   861,
+   1194
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_f688ba48-853b-455d-af9a-d9b34a173a25.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.797
+  },
+  "size": [
+   1269,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_0645175a-c195-47e2-82d3-a740a70be36e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.755
+  },
+  "size": [
+   1694,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_02b9d956-9e9d-47e5-8376-f954c4372b06.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.765
+  },
+  "size": [
+   1694,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_e76ddfbb-0794-462d-8f3b-33cad5dca04b.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.283
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/1_b2cc5b21-48fc-4186-bd49-1ef21deadf36.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.784
+  },
+  "size": [
+   1069,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/2_ee2aee2c-f472-497b-b677-51592b82b8c3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.471,
+   "vivid": 0.028,
+   "fill": 0.395
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791637510991_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.808
+  },
+  "size": [
+   669,
+   1085
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791637513164_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.757
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791997729932_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.8
+  },
+  "size": [
+   1066,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.801
+  },
+  "size": [
+   1075,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600_Black.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.776
+  },
+  "size": [
+   1061,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.801
+  },
+  "size": [
+   1075,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_da194579-b63e-494a-b37e-36479837d763.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.245
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_9cc1cba2-fdf2-422f-97b0-254fade1cef7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.836
+  },
+  "size": [
+   1715,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_febcfa69-d1f4-4a5e-b06d-b2d3d2c5879b.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.751
+  },
+  "size": [
+   1740,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791637517012_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.255
+  },
+  "size": [
+   1285,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791997505844_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.838
+  },
+  "size": [
+   994,
+   1110
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791997510299_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.756
+  },
+  "size": [
+   1105,
+   496
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/2_765080e2-223f-4e23-9676-ea005c42d878.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.749
+  },
+  "size": [
+   825,
+   822
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/1_2d6fca9a-4c5d-4d6e-922e-431b5b4c9c1d.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.79
+  },
+  "size": [
+   499,
+   883
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/3_75f963fb-38af-45b1-9e1a-59973b0fa04e.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.79
+  },
+  "size": [
+   490,
+   869
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600-s-electric-scooter-foldable-portable-830w-motor-urban-freedom-black.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.756
+  },
+  "size": [
+   1105,
+   498
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600s-electric-scooter-rear-wheel-suspension-design.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.429
+  },
+  "size": [
+   1512,
+   1512
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600s-electric-scooter-handlebar-display-features-red-black.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.116,
+   "fill": 0.695
+  },
+  "size": [
+   1489,
+   1312
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8432d1f9-6592-4aa7-91bf-01eaa27f68a3/1791637521754_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.413
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8432d1f9-6592-4aa7-91bf-01eaa27f68a3/1791997516627_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.26
+  },
+  "size": [
+   1362,
+   1814
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.768
+  },
+  "size": [
+   1041,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.757
+  },
+  "size": [
+   1738,
+   1679
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.782
+  },
+  "size": [
+   1120,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.77
+  },
+  "size": [
+   1681,
+   827
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/01_6f3fb1b7-784e-4d2e-875a-00e54ad13e31.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.768
+  },
+  "size": [
+   1041,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y700",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/02_b4984f13-2e65-42db-93aa-e6ad61bd0ef9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.757
+  },
+  "size": [
+   1738,
+   1679
+  ],
+  "error": null
+ }
+]

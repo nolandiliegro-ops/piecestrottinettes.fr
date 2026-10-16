@@ -1,0 +1,2556 @@
+[
+ {
+  "slug": "halo-knight-t104",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791647643393_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.644
+  },
+  "size": [
+   1563,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791647645183_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.528
+  },
+  "size": [
+   341,
+   341
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791997754713_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1740,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.816
+  },
+  "size": [
+   1458,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.846
+  },
+  "size": [
+   1740,
+   1722
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_1_04ae1d45-ae53-4d42-91dc-0bfbdc8ac722.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.806
+  },
+  "size": [
+   1378,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_7.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.758
+  },
+  "size": [
+   1750,
+   941
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t104",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104-7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.549
+  },
+  "size": [
+   1698,
+   1638
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5efb241-0474-4dfb-a311-1384c91713fe/1792165871444_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.806
+  },
+  "size": [
+   1385,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5efb241-0474-4dfb-a311-1384c91713fe/1792165876990_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.419,
+   "vivid": 0.03,
+   "fill": 0.694
+  },
+  "size": [
+   1514,
+   1689
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/06.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.806
+  },
+  "size": [
+   1384,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/03_3f51f660-57af-4e49-bb53-2255be7aa842.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.828
+  },
+  "size": [
+   1652,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/01_77a22a9f-9dc9-4759-8a39-0dacdd5910ec.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.803
+  },
+  "size": [
+   1345,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t107-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/04_40b81b80-399d-4156-a0e6-e5eb97421d10.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.808
+  },
+  "size": [
+   1323,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791647639911_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.553
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791997521426_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.045,
+   "vivid": 0.097,
+   "fill": 0.673
+  },
+  "size": [
+   1455,
+   1613
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791997528742_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.648
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/05_1f247c1f-9329-4860-b6a8-b82a95cbf48a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.119,
+   "fill": 0.84
+  },
+  "size": [
+   1529,
+   1491
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/04_13c6b441-bf69-48c2-a1ba-f9429a8f938c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.131,
+   "fill": 0.841
+  },
+  "size": [
+   1523,
+   1497
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/10_e7b2eb70-e7f8-4755-ab53-681ddd627cb8.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.71
+  },
+  "size": [
+   1438,
+   1490
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/08_bb141682-3a42-41d5-8238-99be15a15ae8.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.108,
+   "fill": 0.772
+  },
+  "size": [
+   1569,
+   875
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.811
+  },
+  "size": [
+   1445,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.127,
+   "fill": 0.826
+  },
+  "size": [
+   1719,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.804
+  },
+  "size": [
+   1359,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.093,
+   "fill": 0.807
+  },
+  "size": [
+   1393,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_7.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.758
+  },
+  "size": [
+   1754,
+   946
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791647635436_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.481,
+   "vivid": 0.077,
+   "fill": 0.655
+  },
+  "size": [
+   341,
+   341
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791647637632_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.505
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "halo-knight-t108-pro",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791997764080_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.123,
+   "fill": 0.74
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c105498-abf0-4a0e-ac55-9794c503610e/1791998719858_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.57
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c105498-abf0-4a0e-ac55-9794c503610e/1791998722487_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.292,
+   "vivid": 0.032,
+   "fill": 0.516
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 2,
+  "url": "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.57
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 3,
+  "url": "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.57
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 4,
+  "url": "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.15,
+   "vivid": 0.024,
+   "fill": 0.738
+  },
+  "size": [
+   1290,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 5,
+  "url": "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.233,
+   "vivid": 0.028,
+   "fill": 0.519
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939054658_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.475
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939057120_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.496
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939059867_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.475
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.604
+  },
+  "size": [
+   1053,
+   1264
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/ks4-pro_b9a36f49-6aa0-4fe4-aa82-360851d31039.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.532
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2-2_25a0c3c7-7a65-48dc-8855-5298ac639d56.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.408
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_0a44734d-9cd1-4203-affb-3affeb0eca42.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.604
+  },
+  "size": [
+   1053,
+   1264
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998713512_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.395
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998717039_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.153,
+   "fill": 0.284
+  },
+  "size": [
+   1115,
+   1419
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.395
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92122200-8046-4df1-a480-5301992e2683/1791661134528_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.472
+  },
+  "size": [
+   1426,
+   1644
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-lite",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Black-light_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.373
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-lite",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Pink-light_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.373
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-lite",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/6_3afdd083-708a-42b5-9233-220f1d064dfb.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.715
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8eb2620b-5650-46a3-be86-f94814fe742e/1791939049493_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.54
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8eb2620b-5650-46a3-be86-f94814fe742e/1791939052278_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.825
+  },
+  "size": [
+   928,
+   1278
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.652
+  },
+  "size": [
+   1442,
+   1718
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a7609ce-0137-4042-962d-dc7bdabe5a26/1792165900758_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.461
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a7609ce-0137-4042-962d-dc7bdabe5a26/1792165906405_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.477
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-1_2a128426-6c3d-4cc3-b018-0faa21276543.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.461
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Nova_74db17c7-6e58-4be0-a204-f4d15b9365e6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.461
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-2_329e6f81-39c9-424e-8d50-602ab992d4a7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.818
+  },
+  "size": [
+   1119,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-nova",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-3_db14f99d-a3f4-442d-a3ce-44c8f8d608ee.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.34
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661126541_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.42
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661129041_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.803
+  },
+  "size": [
+   740,
+   1178
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661131751_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.605
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-PRO_c6db97f7-8bce-44f9-afdb-db4ecfb161bc.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.54
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-PRO_2f7d95cf-6eb0-4c9f-ae94-5d52e3c6cf8d.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.647
+  },
+  "size": [
+   1435,
+   1722
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/78482e84-2479-4aee-8405-a8367048d048/1792165888279_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.541
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/78482e84-2479-4aee-8405-a8367048d048/1792165895186_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.267,
+   "vivid": 0.049,
+   "fill": 0.648
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/b58ce7b99582c961375527c3c6b27ebb.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.541
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0981dfe2-e775-4694-8f66-2f0764c35748/1791939304617_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.527
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-titan-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.512
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-x300",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7704f9c7-7a62-4c1b-8d17-0a869acd840a/1792165911747_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.51
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-x300",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7704f9c7-7a62-4c1b-8d17-0a869acd840a/1792165917977_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.322,
+   "fill": 0.697
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-x300",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-888.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.807
+  },
+  "size": [
+   1142,
+   1653
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-x300",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3_8c1fb908-d958-4e82-9d03-e7c7be26e2ee.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.726
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792165930082_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.168,
+   "fill": 0.842
+  },
+  "size": [
+   827,
+   781
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792165935515_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.165,
+   "fill": 0.197
+  },
+  "size": [
+   587,
+   487
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 2,
+  "url": "https://media.cdnws.com/_i/21277/5321/1221/24/trottinette-electrique-hikerboy-brio-jaune.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.162,
+   "fill": 0.813
+  },
+  "size": [
+   407,
+   643
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/5320/3836/23/trottinette-electique-hikerboy-brio-rouge-10-pouce.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.157,
+   "fill": 0.827
+  },
+  "size": [
+   390,
+   618
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 4,
+  "url": "https://speedbikes.fr/wp-content/uploads/2023/02/hikerboy-brio-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.157,
+   "fill": 0.827
+  },
+  "size": [
+   390,
+   618
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 5,
+  "url": "https://speedbikes.fr/wp-content/uploads/2023/02/trottinette-electrique-hikerboy-brio-bleu-pneu-10-pouces.png.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.156,
+   "fill": 0.818
+  },
+  "size": [
+   402,
+   636
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791637531712_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.499
+  },
+  "size": [
+   968,
+   1399
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791637536695_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.781
+  },
+  "size": [
+   737,
+   1392
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791997744993_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.108,
+   "fill": 0.434
+  },
+  "size": [
+   1828,
+   1771
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisRed_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.097,
+   "fill": 0.202
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisGrey_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.202
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/HikerboyScooter_CurtisRed_Updated_WEBP.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.113,
+   "fill": 0.248
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisGrey_HikerboyScooter_056d994f-0f6b-49de-9810-e0e6514be79b.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.202
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004280317_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.365
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004284601_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.815
+  },
+  "size": [
+   701,
+   1004
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004289100_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.746
+  },
+  "size": [
+   346,
+   643
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/1._Curtis_Dual_HikerboyScooter_2_1_e154bb13-e033-4228-a127-6c3b2576417e.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.323
+  },
+  "size": [
+   1876,
+   1529
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/2._Curtis_Dual_HikerboyScooter_1_1cd66646-470b-404d-8b29-621d90979a8c.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.484
+  },
+  "size": [
+   1862,
+   1751
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/4._Curtis_Dual_HikerboyScooter_3_d2303541-c92d-4cd8-a2e3-a5872d623ba1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.388
+  },
+  "size": [
+   1864,
+   1616
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/5._Curtis_Dual_HikerboyScooter_5_8ff808b0-7ba5-4c91-8612-e4b79bd535a6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.488
+  },
+  "size": [
+   1866,
+   1690
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/3._Curtis_Dual_HikerboyScooter_4_fe3179ca-a90f-4161-8014-edbd1aadc6c3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.408
+  },
+  "size": [
+   1868,
+   1561
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/470816ac-6d6f-4005-aa8c-874053c7c432/1792165964805_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.126,
+   "fill": 0.79
+  },
+  "size": [
+   1190,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/470816ac-6d6f-4005-aa8c-874053c7c432/1792165970054_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.422
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-5999450.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.79
+  },
+  "size": [
+   1190,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-7111111.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.162,
+   "fill": 0.664
+  },
+  "size": [
+   1708,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-4560548.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.133,
+   "fill": 0.567
+  },
+  "size": [
+   1553,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8134066.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.452
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8574430.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.301
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-5984519.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.452
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004255350_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.485
+  },
+  "size": [
+   965,
+   1301
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004268670_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.448
+  },
+  "size": [
+   1828,
+   1734
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004272889_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.326
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/1._Curtis_Plus_Grey_HikerboyScooter_2_6864fd89-821c-4a09-b5d7-74310558e329.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.323
+  },
+  "size": [
+   1870,
+   1515
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/2.CurtisPlus_Grey_HikerboyScooter_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.456
+  },
+  "size": [
+   1860,
+   1629
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/3.CurtisPlus_Grey_HikerboyScooter_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.424
+  },
+  "size": [
+   1846,
+   1558
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/4.CurtisPlus_Grey_HikerboyScooter_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.368
+  },
+  "size": [
+   1860,
+   1533
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/5.CurtisPlus_Grey_HikerboyScooter_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.463
+  },
+  "size": [
+   1856,
+   1648
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791637527807_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.146,
+   "fill": 0.716
+  },
+  "size": [
+   1072,
+   1072
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791637529503_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.495,
+   "vivid": 0.092,
+   "fill": 0.758
+  },
+  "size": [
+   315,
+   324
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791997774253_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.796
+  },
+  "size": [
+   462,
+   776
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrot_y_WEBP.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.353
+  },
+  "size": [
+   1836,
+   1801
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusred_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.32
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusblue_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.495
+  },
+  "size": [
+   1844,
+   1710
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusgrey_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.494
+  },
+  "size": [
+   1846,
+   1702
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplussilver_HikerboyScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.32
+  },
+  "size": [
+   1908,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165942733_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.518
+  },
+  "size": [
+   1842,
+   1842
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165949552_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.686
+  },
+  "size": [
+   985,
+   1812
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165958578_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.673
+  },
+  "size": [
+   1743,
+   1824
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-02.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.518
+  },
+  "size": [
+   1842,
+   1842
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-03.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.686
+  },
+  "size": [
+   985,
+   1812
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-09.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.669
+  },
+  "size": [
+   1744,
+   1824
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-off-road-2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-11.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.743
+  },
+  "size": [
+   1518,
+   1824
+  ],
+  "error": null
+ }
+]

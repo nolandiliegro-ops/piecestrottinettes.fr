@@ -1,0 +1,3298 @@
+[
+ {
+  "slug": "dualtron-aminia",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/53bd35b7-eb62-449a-a77c-e97f126298ee/1791937734136_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.49
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/53bd35b7-eb62-449a-a77c-e97f126298ee/1791937739057_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.476
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-1.jpg?v=1775404276",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.455
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-2.jpg?v=1775404276",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.794
+  },
+  "size": [
+   1227,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-3.jpg?v=1775404277",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.42
+  },
+  "size": [
+   1447,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-4.jpg?v=1775404277",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.726
+  },
+  "size": [
+   1740,
+   660
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-5.jpg?v=1775404276",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.628
+  },
+  "size": [
+   1618,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-6.jpg?v=1775404276",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.558
+  },
+  "size": [
+   1760,
+   1362
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541174396_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.474
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541176205_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.85
+  },
+  "size": [
+   913,
+   896
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541177638_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.435
+  },
+  "size": [
+   824,
+   1069
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 3,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541179163_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.837
+  },
+  "size": [
+   982,
+   763
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-1.jpg?v=1775404373",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.458
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-3.jpg?v=1775404373",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.834
+  },
+  "size": [
+   1738,
+   1671
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-2.jpg?v=1775404373",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.698
+  },
+  "size": [
+   1752,
+   1671
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-6.jpg?v=1775404373",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.79
+  },
+  "size": [
+   1754,
+   1201
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-4.jpg?v=1775404373",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.454
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-7.jpg?v=1775404373",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.827
+  },
+  "size": [
+   1728,
+   1362
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/28ff423c-fb48-410b-8681-b1c8e127275c/1791937742535_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.483
+  },
+  "size": [
+   424,
+   425
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/28ff423c-fb48-410b-8681-b1c8e127275c/1791937746471_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.795
+  },
+  "size": [
+   551,
+   999
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-1.jpg?v=1775417581",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.762
+  },
+  "size": [
+   968,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-2.jpg?v=1775417581",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.608
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-4.jpg?v=1775417581",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.78
+  },
+  "size": [
+   909,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-3.jpg?v=1775417582",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.799
+  },
+  "size": [
+   1290,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-6.jpg?v=1775417581",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.777
+  },
+  "size": [
+   1070,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-5.jpg?v=1775417581",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.322
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1778542854852_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.814
+  },
+  "size": [
+   391,
+   564
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1791997289578_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.535
+  },
+  "size": [
+   1454,
+   1456
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 2,
+  "url": "https://dualtron-minimotors.ma/wp-content/uploads/2025/10/dualtron-mini-long-body-double-moteur.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.594
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 3,
+  "url": "https://dualtron-minimotors.ma/wp-content/uploads/2024/05/trottinette-electrique-dualtron-mini-double-moteur-52v-15-6ah_659ebce4b0f8a.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.44
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 4,
+  "url": "https://dualtron-minimotors.ma/wp-content/uploads/2025/10/dualtron-long-body-double-moteur.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.738
+  },
+  "size": [
+   852,
+   344
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 5,
+  "url": "https://dualtron-minimotors.ma/wp-content/uploads/2024/05/trottinette-electrique-dualtron-mini-double-moteur-52v-15-6ah_659ebce700fae.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.799
+  },
+  "size": [
+   438,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/daac542d-a54c-43e1-919f-9c2816593065/1791938001862_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.415
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_minimotors_dualtron_mini.jpg?v=1764046813",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.836
+  },
+  "size": [
+   750,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_special_Long_body.jpg?v=1764046813",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_special_Long_body_phare_etanche.jpg?v=1764046813",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_Mini_Special_Puissante_et_Confortable-626924.jpg?v=1754114493",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.415
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_weebot_minimotors_special_suspensions_avant_zoom.jpg?v=1764046813",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.841
+  },
+  "size": [
+   976,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_weebot_minimotors_special_phare_avant.jpg?v=1764046813",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.85
+  },
+  "size": [
+   828,
+   816
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52165e10-62ef-45e3-bc3c-ffc599558ff6/1791937989603_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.305
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52165e10-62ef-45e3-bc3c-ffc599558ff6/1791937993072_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.387
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-double-moteur-pas-cher_1-938708.jpg?v=1754044912",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.387
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-double-moteur-profile-898943.jpg?v=1766446809",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.656
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-arriere-519428.jpg?v=1766446809",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.296
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_POP-959217.jpg?v=1766446809",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.768
+  },
+  "size": [
+   1210,
+   1210
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-roue-arriere-301362.jpg?v=1766446809",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.816
+  },
+  "size": [
+   879,
+   597
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-popular",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-display-776995.jpg?v=1766446809",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.816
+  },
+  "size": [
+   1080,
+   710
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc02182a-e809-4cea-8900-7a97c932bfdb/1791937996238_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.357
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_raptor2_pas_cher.jpg?v=1723647056",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.78
+  },
+  "size": [
+   557,
+   1062
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_puissante.jpg?v=1723647124",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.316
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_systeme_pliage.jpg?v=1717660648",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.84
+  },
+  "size": [
+   791,
+   728
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_led_potence.jpg?v=1717660635",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.777
+  },
+  "size": [
+   1102,
+   566
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_afficheur_lcd_ey3.jpg?v=1717660640",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.824
+  },
+  "size": [
+   934,
+   714
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-raptor-2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_frein_tambour.jpg?v=1717660643",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1791997272154_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.821
+  },
+  "size": [
+   371,
+   569
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1778555917447_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.837
+  },
+  "size": [
+   885,
+   746
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1791997275716_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.598
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 3,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Storm-2023-EDITION.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.068,
+   "fill": 0.381
+  },
+  "size": [
+   1350,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 4,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-NEW-STORM-PROFILE-2.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.061,
+   "fill": 0.649
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 5,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-NEW-STORM-REAR-2.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.326
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-2.jpg?v=1775402797",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.818
+  },
+  "size": [
+   1559,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-5.jpg?v=1775402797",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.813
+  },
+  "size": [
+   1329,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-8.jpg?v=1775402797",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.753
+  },
+  "size": [
+   1760,
+   1226
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.803
+  },
+  "size": [
+   722,
+   1146
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.01,
+   "vivid": 0.072,
+   "fill": 0.793
+  },
+  "size": [
+   480,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.076,
+   "fill": 0.838
+  },
+  "size": [
+   973,
+   1087
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_storm_limited_new_2025.jpg?v=1786545027",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.607
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_storm_limited_new.jpg?v=1766504392",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.801
+  },
+  "size": [
+   817,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_storm_ltd_limited_84v_45ah_bleu.jpg?v=1766504392",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.668
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN8492_only_wann-min-min.jpg?v=1766504392",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.865
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-storm-ltd-2025",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN8473_only_wann-min-min.jpg?v=1766504392",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.865
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1778555116751_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.815
+  },
+  "size": [
+   433,
+   618
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1778555116751_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.804
+  },
+  "size": [
+   805,
+   1270
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1791997284839_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.8
+  },
+  "size": [
+   360,
+   585
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-1.jpg?v=1775404228",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.778
+  },
+  "size": [
+   1077,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-2.jpg?v=1775404228",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.539
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-4.jpg?v=1775404229",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.8
+  },
+  "size": [
+   1068,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-5.jpg?v=1775404228",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.065,
+   "vivid": 0,
+   "fill": 0.647
+  },
+  "size": [
+   1750,
+   1089
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-7.jpg?v=1775404229",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.763
+  },
+  "size": [
+   866,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-8.jpg?v=1775404229",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.768
+  },
+  "size": [
+   1738,
+   944
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6177308c-701f-40e6-a503-98c233fe9901/1792165313528_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.583
+  },
+  "size": [
+   885,
+   1054
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6177308c-701f-40e6-a503-98c233fe9901/1792165318804_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.39
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max.png?v=1774327882",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.809
+  },
+  "size": [
+   401,
+   601
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_profil.png?v=1772709640",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.839
+  },
+  "size": [
+   545,
+   600
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_60V.png?v=1774327915",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.401
+  },
+  "size": [
+   655,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_pliable.png?v=1772709639",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.751
+  },
+  "size": [
+   601,
+   260
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_pneus.png?v=1772709639",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.818
+  },
+  "size": [
+   433,
+   599
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc56d779-e310-425b-98af-3946e95025ed/1792165298785_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.234
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc56d779-e310-425b-98af-3946e95025ed/1792165303769_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.807
+  },
+  "size": [
+   490,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 2,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-1.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.796
+  },
+  "size": [
+   571,
+   962
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 3,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-4.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.376
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 4,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-2.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.827
+  },
+  "size": [
+   756,
+   952
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 5,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-3.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.843
+  },
+  "size": [
+   845,
+   881
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792165308680_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.397
+  },
+  "size": [
+   658,
+   660
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_Pro_pas_cher.png?v=1772709638",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.397
+  },
+  "size": [
+   658,
+   660
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_Pro_fiable_securisante.png?v=1772709638",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.643
+  },
+  "size": [
+   658,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_pro_pneus_resistants.png?v=1772709639",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.843
+  },
+  "size": [
+   507,
+   484
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/849ccd36-c3ff-4fb6-8c7c-a447d5410771/1778555929472_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.829
+  },
+  "size": [
+   984,
+   1224
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_pas_cher-610157-858355.jpg?v=1735180393",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.78
+  },
+  "size": [
+   507,
+   969
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_Ultra_minimotors-372164.jpg?v=1734952722",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.504
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_pliee-953629.jpg?v=1734952722",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.818
+  },
+  "size": [
+   1296,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_large_deck-251125.jpg?v=1734952722",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.824
+  },
+  "size": [
+   1296,
+   912
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_noir_zoom_roue_avant-780514.jpg?v=1734952722",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.838
+  },
+  "size": [
+   1040,
+   1219
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_noir_zoom_frein_disque-464397.jpg?v=1734952722",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.703
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4cd80af-a231-485f-8b69-d3d9be161805/1778555125589_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.829
+  },
+  "size": [
+   984,
+   1224
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 1,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/dualtron-ultra-2-new-edition.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.829
+  },
+  "size": [
+   987,
+   1227
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 2,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-Upgrade-Profile.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.84
+  },
+  "size": [
+   705,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 3,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-Upgrade-Front.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.322
+  },
+  "size": [
+   778,
+   778
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 4,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-UPGRADE-EY4-Square.jpeg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.036,
+   "vivid": 0,
+   "fill": 0.382
+  },
+  "size": [
+   1104,
+   820
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 5,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-New-Edition-EY4-Display.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.311,
+   "fill": 0.822
+  },
+  "size": [
+   1296,
+   973
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792165330130_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.582
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792165324750_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.16,
+   "vivid": 0.048,
+   "fill": 0.683
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 2,
+  "url": "https://getscuti.com/wp-content/uploads/2026/09/dualtron-ultra-one-gallery-front.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.402
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 3,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567976.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.16,
+   "vivid": 0.048,
+   "fill": 0.683
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 4,
+  "url": "https://getscuti.com/wp-content/uploads/2026/09/dualtron-ultra-one-gallery-folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.779
+  },
+  "size": [
+   763,
+   375
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 5,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567979.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.838
+  },
+  "size": [
+   865,
+   960
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 6,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567980.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.82
+  },
+  "size": [
+   1106,
+   745
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-one",
+  "i": 7,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567982.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.847
+  },
+  "size": [
+   1033,
+   974
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1778555918887_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.768
+  },
+  "size": [
+   504,
+   1044
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualton_victor_minimotors-703651.jpg?v=1786545018",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.409
+  },
+  "size": [
+   1188,
+   1188
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors-950999.jpg?v=1769002398",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.231,
+   "vivid": 0.105,
+   "fill": 0.722
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_minimotors_IPX5_puissante_ecran_EY4.jpg?v=1769002398",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.306,
+   "fill": 0.796
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors_EY4-492104.jpg?v=1769002398",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.637
+  },
+  "size": [
+   1110,
+   1156
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors_EY4_pas_cher.jpg?v=1769002398",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.846
+  },
+  "size": [
+   915,
+   975
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/display_ey4_dualtron_victor_minimotors_2024-763370.jpg?v=1769002398",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.198,
+   "vivid": 0.01,
+   "fill": 0.599
+  },
+  "size": [
+   750,
+   531
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/82ad9437-6d81-435e-99b0-03be174c7556/1778555132477_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.768
+  },
+  "size": [
+   504,
+   1044
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/82ad9437-6d81-435e-99b0-03be174c7556/1791997280995_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.53
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-1.jpg?v=1775404303",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.49
+  },
+  "size": [
+   1386,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-2.jpg?v=1775404303",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.83
+  },
+  "size": [
+   1512,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-3.jpg?v=1775404303",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.291
+  },
+  "size": [
+   1760,
+   1759
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-7.jpg?v=1775404303",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.609
+  },
+  "size": [
+   1756,
+   1423
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-4.jpg?v=1775404303",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.829
+  },
+  "size": [
+   1451,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-limited-2025",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-6.jpg?v=1775404303",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.551
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/000b20eb-3e23-4dbf-9cdd-6790915c0d8c/1791938007395_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.496
+  },
+  "size": [
+   1766,
+   1604
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_victor_Luxury_pas_cher_edd971d3-af31-4c1c-ad2d-e873f2c5a463.jpg?v=1786545016",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.427
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_puissante_minimotors_f189276b-7c1d-47bd-a309-a5b45ed163be-749519.jpg?v=1766154779",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.231,
+   "vivid": 0.105,
+   "fill": 0.722
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_stable.jpg?v=1766154779",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.84
+  },
+  "size": [
+   1106,
+   1014
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury___60V_28_AH.jpg?v=1766154779",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.044,
+   "fill": 0.608
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_roue_avant.jpg?v=1766154779",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.846
+  },
+  "size": [
+   1035,
+   1236
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-luxury",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/files/Dualtron_Victor_luxury_plus_ecran-780673.jpg?v=1766154779",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.437
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.798
+  },
+  "size": [
+   751,
+   1242
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.845
+  },
+  "size": [
+   1215,
+   1246
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.803
+  },
+  "size": [
+   797,
+   1266
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 3,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-4.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.451
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 4,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-3.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.8
+  },
+  "size": [
+   1259,
+   1274
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 5,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-7.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.803
+  },
+  "size": [
+   800,
+   1269
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 6,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-1.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.804
+  },
+  "size": [
+   1296,
+   763
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-x2",
+  "i": 7,
+  "url": "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-X2-UP-folded.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.814
+  },
+  "size": [
+   854,
+   595
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/75c08b66-003c-4d75-a475-82fbcaf72f66/1778555148041_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.815
+  },
+  "size": [
+   433,
+   618
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/75c08b66-003c-4d75-a475-82fbcaf72f66/1791997293820_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.826
+  },
+  "size": [
+   576,
+   739
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_pas_cher.jpg?v=1764047384",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.768
+  },
+  "size": [
+   831,
+   401
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_france.jpg?v=1764047384",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.807
+  },
+  "size": [
+   754,
+   489
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_pliable.jpg?v=1764047384",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.813
+  },
+  "size": [
+   452,
+   381
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_roue_avant_631c4d91-3727-4c07-a0f1-d9b37c83221d.jpg?v=1734952961",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.781
+  },
+  "size": [
+   445,
+   841
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_roue_arriere.jpg?v=1764047384",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.534
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_plateau.jpg?v=1764047384",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.818
+  },
+  "size": [
+   399,
+   449
+  ],
+  "error": null
+ }
+]
