@@ -1,0 +1,12 @@
+cecotec-bongo-d20 #0 PASS ok
+cecotec-bongo-d20 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-a1 #0 FAIL détourage sale / résidu de décor
+kukirin-g2-master #0 WARN basse définition
+kukirin-g2-master #1 WARN basse définition · cadrage serré
+kukirin-g2-master #2 WARN basse définition
+kukirin-g4-ultra #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #1 WARN cadrage serré
+kukirin-g4-ultra #2 PASS ok
+yeep-me-85a-evo #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-85a-evo #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+::notice title=photos t01 (dry)::11 candidates · PASS 2 · WARN 4 · FAIL 5 · ERREUR 0

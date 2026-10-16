@@ -1,0 +1,250 @@
+[
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165145969_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.757
+  },
+  "size": [
+   988,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165139469_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.422,
+   "vivid": 0.02,
+   "fill": 0.807
+  },
+  "size": [
+   1235,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6aa5337c-30db-4f32-bc81-ff33cf6a9fe5/1791942611592_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.613
+  },
+  "size": [
+   833,
+   1215
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.804
+  },
+  "size": [
+   330,
+   518
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.771
+  },
+  "size": [
+   518,
+   257
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.767
+  },
+  "size": [
+   515,
+   246
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166697967_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.097,
+   "vivid": 0.098,
+   "fill": 0.728
+  },
+  "size": [
+   1162,
+   1190
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166705147_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.802
+  },
+  "size": [
+   1106,
+   1584
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166712451_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.381
+  },
+  "size": [
+   1748,
+   958
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168438076_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.351,
+   "vivid": 0.262,
+   "fill": 0.831
+  },
+  "size": [
+   830,
+   1008
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168444137_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.087,
+   "vivid": 0.011,
+   "fill": 0.494
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ }
+]
