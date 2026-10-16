@@ -1,0 +1,4092 @@
+[
+ {
+  "slug": "yeep-me-100a",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4cd051eb-a205-438c-aa8f-8b01b80002c4/1791650141325_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.558
+  },
+  "size": [
+   387,
+   344
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 1,
+  "url": "https://yeep.me/3798-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.415,
+   "vivid": 0.318,
+   "fill": 0.762
+  },
+  "size": [
+   903,
+   1076
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 2,
+  "url": "https://yeep.me/3799-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.137,
+   "fill": 0.314
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 3,
+  "url": "https://yeep.me/3800-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.352
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 4,
+  "url": "https://yeep.me/3801-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.048,
+   "vivid": 0.018,
+   "fill": 0.513
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 5,
+  "url": "https://yeep.me/3802-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.447,
+   "vivid": 0.096,
+   "fill": 0.598
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 6,
+  "url": "https://yeep.me/3803-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.229
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 7,
+  "url": "https://yeep.me/3804-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.84
+  },
+  "size": [
+   934,
+   1017
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a",
+  "i": 8,
+  "url": "https://yeep.me/3805-thickbox_default/trottinette-electrique-yeepme-100a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.115,
+   "vivid": 0.052,
+   "fill": 0.372
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 0,
+  "url": "https://yeep.me/3808-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.415,
+   "vivid": 0.317,
+   "fill": 0.762
+  },
+  "size": [
+   903,
+   1076
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 1,
+  "url": "https://yeep.me/3810-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.865
+  },
+  "size": [
+   270,
+   270
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 2,
+  "url": "https://yeep.me/3811-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.138,
+   "fill": 0.317
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 3,
+  "url": "https://yeep.me/3812-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.456,
+   "vivid": 0.091,
+   "fill": 0.598
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 4,
+  "url": "https://yeep.me/3813-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.229
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 5,
+  "url": "https://yeep.me/3814-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.845
+  },
+  "size": [
+   933,
+   1017
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 6,
+  "url": "https://yeep.me/3815-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.115,
+   "vivid": 0.052,
+   "fill": 0.372
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 7,
+  "url": "https://yeep.me/3816-thickbox_default/yeepme-100a-start.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.025,
+   "fill": 0.564
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1791650139665_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.309,
+   "fill": 0.83
+  },
+  "size": [
+   852,
+   1041
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792168485389_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.473
+  },
+  "size": [
+   421,
+   532
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792168479959_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.266,
+   "vivid": 0.203,
+   "fill": 0.822
+  },
+  "size": [
+   298,
+   375
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792168491038_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.686
+  },
+  "size": [
+   402,
+   344
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 3,
+  "url": "https://yeep.me/4370-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.292,
+   "vivid": 0.224,
+   "fill": 0.706
+  },
+  "size": [
+   948,
+   1091
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 4,
+  "url": "https://yeep.me/4366-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.115,
+   "vivid": 0.052,
+   "fill": 0.372
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 5,
+  "url": "https://yeep.me/4369-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.175,
+   "fill": 0.567
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 6,
+  "url": "https://yeep.me/4371-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   991,
+   1002
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 7,
+  "url": "https://yeep.me/4372-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.836
+  },
+  "size": [
+   747,
+   617
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 8,
+  "url": "https://yeep.me/4373-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.708
+  },
+  "size": [
+   1153,
+   787
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 9,
+  "url": "https://yeep.me/4374-thickbox_default/yeepme-120a-12-650w-40km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.791
+  },
+  "size": [
+   836,
+   1372
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792168501874_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.473
+  },
+  "size": [
+   421,
+   532
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792168496379_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.266,
+   "vivid": 0.203,
+   "fill": 0.822
+  },
+  "size": [
+   298,
+   375
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792168508183_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.686
+  },
+  "size": [
+   402,
+   344
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 3,
+  "url": "https://yeep.me/4380-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.292,
+   "vivid": 0.224,
+   "fill": 0.706
+  },
+  "size": [
+   948,
+   1091
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 4,
+  "url": "https://yeep.me/4378-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.115,
+   "vivid": 0.052,
+   "fill": 0.372
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 5,
+  "url": "https://yeep.me/4379-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.175,
+   "fill": 0.567
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 6,
+  "url": "https://yeep.me/4381-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   991,
+   1002
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 7,
+  "url": "https://yeep.me/4382-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.836
+  },
+  "size": [
+   747,
+   617
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 8,
+  "url": "https://yeep.me/4383-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.708
+  },
+  "size": [
+   1153,
+   787
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 9,
+  "url": "https://yeep.me/4384-thickbox_default/yeepme-120a-pro-12-800w-60km.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.791
+  },
+  "size": [
+   836,
+   1372
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 0,
+  "url": "https://yeep.me/4421-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 30 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 30 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.301,
+   "fill": 0.705
+  },
+  "size": [
+   872,
+   1056
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 1,
+  "url": "https://yeep.me/4412-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.856
+  },
+  "size": [
+   863,
+   862
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 2,
+  "url": "https://yeep.me/4413-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.852
+  },
+  "size": [
+   872,
+   919
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 3,
+  "url": "https://yeep.me/4414-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 30 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 30 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.301,
+   "fill": 0.705
+  },
+  "size": [
+   872,
+   1056
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 4,
+  "url": "https://yeep.me/4415-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.031,
+   "vivid": 0.016,
+   "fill": 0.625
+  },
+  "size": [
+   1138,
+   1366
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 5,
+  "url": "https://yeep.me/4416-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.016,
+   "vivid": 0.018,
+   "fill": 0.534
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 6,
+  "url": "https://yeep.me/4417-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.844
+  },
+  "size": [
+   906,
+   993
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 7,
+  "url": "https://yeep.me/4418-thickbox_default/yeepme-80n-evo.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.843
+  },
+  "size": [
+   812,
+   1008
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792168449913_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.348,
+   "vivid": 0.29,
+   "fill": 0.348
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-80n-evo-plus",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792168456553_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.346
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 0,
+  "url": "https://yeep.me/4221-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.368,
+   "vivid": 0.277,
+   "fill": 0.684
+  },
+  "size": [
+   974,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 1,
+  "url": "https://yeep.me/4222-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.087,
+   "vivid": 0.011,
+   "fill": 0.494
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 2,
+  "url": "https://yeep.me/4223-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.738
+  },
+  "size": [
+   1078,
+   428
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 3,
+  "url": "https://yeep.me/4224-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.021,
+   "vivid": 0.001,
+   "fill": 0.735
+  },
+  "size": [
+   1196,
+   1300
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 4,
+  "url": "https://yeep.me/4225-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.035,
+   "vivid": 0.002,
+   "fill": 0.504
+  },
+  "size": [
+   1212,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 5,
+  "url": "https://yeep.me/4226-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.004,
+   "fill": 0.444
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 6,
+  "url": "https://yeep.me/4227-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.843
+  },
+  "size": [
+   885,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 7,
+  "url": "https://yeep.me/4228-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.117,
+   "vivid": 0.057,
+   "fill": 0.386
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168438076_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.351,
+   "vivid": 0.262,
+   "fill": 0.831
+  },
+  "size": [
+   830,
+   1008
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168444137_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.087,
+   "vivid": 0.011,
+   "fill": 0.494
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/078eba16-259c-4561-b6b5-a2e0ca0d276f/1792168462221_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.203,
+   "vivid": 0.164,
+   "fill": 0.385
+  },
+  "size": [
+   421,
+   532
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/078eba16-259c-4561-b6b5-a2e0ca0d276f/1792168468168_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.079,
+   "vivid": 0.176,
+   "fill": 0.484
+  },
+  "size": [
+   421,
+   532
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/078eba16-259c-4561-b6b5-a2e0ca0d276f/1792168474345_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.066,
+   "vivid": 0.234,
+   "fill": 0.717
+  },
+  "size": [
+   411,
+   394
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 3,
+  "url": "https://yeep.me/4509-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.233,
+   "vivid": 0.176,
+   "fill": 0.7
+  },
+  "size": [
+   943,
+   1076
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 4,
+  "url": "https://yeep.me/4848-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.312,
+   "vivid": 0.22,
+   "fill": 0.522
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 5,
+  "url": "https://yeep.me/4510-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.822
+  },
+  "size": [
+   671,
+   1021
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 6,
+  "url": "https://yeep.me/4511-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.841
+  },
+  "size": [
+   1188,
+   995
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 7,
+  "url": "https://yeep.me/4512-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.468
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 8,
+  "url": "https://yeep.me/4513-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.585
+  },
+  "size": [
+   1188,
+   1168
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-dakar-110-pro",
+  "i": 9,
+  "url": "https://yeep.me/4514-thickbox_default/dakar-110-pro-by-yeepme-2026.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.286
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a34640da-9624-43ed-be1f-10aa2bcc23f1/1791996848966_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.325
+  },
+  "size": [
+   1296,
+   873
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.5
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Z10_single_motor.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.433
+  },
+  "size": [
+   1836,
+   1517
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-10-folded-black.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.81
+  },
+  "size": [
+   934,
+   586
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10-deck.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "image vide"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "image vide"
+   ],
+   "parts": 0,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0
+  },
+  "size": [
+   822,
+   444
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10-front-wheel.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.719
+  },
+  "size": [
+   864,
+   598
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10-rear-suspension.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.644
+  },
+  "size": [
+   864,
+   598
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10-rear-light.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.078,
+   "vivid": 0.111,
+   "fill": 0.199
+  },
+  "size": [
+   864,
+   598
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e785e6a-472f-4979-ada7-007c831c7e9c/1782554384249_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.843
+  },
+  "size": [
+   676,
+   706
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e785e6a-472f-4979-ada7-007c831c7e9c/1791997398199_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.091,
+   "fill": 0.821
+  },
+  "size": [
+   781,
+   1047
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e785e6a-472f-4979-ada7-007c831c7e9c/1791997402985_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.713
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10x_d9750b21-1a3b-4521-a407-10bbfe697fd3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.821
+  },
+  "size": [
+   781,
+   1047
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_13.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.713
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_15.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.517
+  },
+  "size": [
+   1966,
+   1029
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_18.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.01,
+   "vivid": 0.168,
+   "fill": 0.831
+  },
+  "size": [
+   869,
+   675
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_20.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.142,
+   "fill": 0.827
+  },
+  "size": [
+   804,
+   627
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_21.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.116,
+   "fill": 0.751
+  },
+  "size": [
+   577,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-10x",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_23.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.792
+  },
+  "size": [
+   1006,
+   557
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba5bd11f-43ac-47cb-8894-1ab023654c80/1782554390459_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.806
+  },
+  "size": [
+   616,
+   952
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba5bd11f-43ac-47cb-8894-1ab023654c80/1782554393455_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.367
+  },
+  "size": [
+   864,
+   514
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba5bd11f-43ac-47cb-8894-1ab023654c80/1791997407719_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.361
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-11X-Electric-Scooter_15a2cbde-974c-4ba9-92a7-f9e34318c3d7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.806
+  },
+  "size": [
+   616,
+   952
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-11X-Electric-Scooter-Standing_aa5b6410-edfb-47f2-8026-bb29293edbf6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.361
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/YIlwSXEcSuirRcrUtF8A_ZERO_11X_render_4_db613c51-4ef0-4cb8-9a9e-e6dc97c7f471.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.367
+  },
+  "size": [
+   864,
+   514
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/KS7pjfqJQMeufJGdN1ay_ZERO_11X_render_3_ffe69f7c-b19c-4091-8373-25775650ff71.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.15
+  },
+  "size": [
+   1884,
+   1184
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-11x",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/dua_1d872987-8a32-4183-b911-aec36fcfb750.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.709
+  },
+  "size": [
+   1750,
+   1616
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f8a38b40-8156-4d49-b9e5-30be32a90535/1791996558035_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.084,
+   "vivid": 0.049,
+   "fill": 0.558
+  },
+  "size": [
+   1766,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f8a38b40-8156-4d49-b9e5-30be32a90535/1791996561805_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.47
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero8_6fc3adcb-c8d2-4bf0-90cb-ea8718cb847a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.47
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_03.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.633
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_02_19c487a7-a190-4bec-b6b6-92a55bcfd3e3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.838
+  },
+  "size": [
+   627,
+   564
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_01_37a7ac62-14ec-49dc-a403-4e4a763eb883.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.77
+  },
+  "size": [
+   820,
+   401
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_07_a1ccfea4-2954-4027-859c-fa29bd695d0f.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.411
+  },
+  "size": [
+   1080,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_08_5770cdba-1612-4663-8b61-fe9cbda31689.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.61
+  },
+  "size": [
+   1025,
+   669
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/04f43e6a-99ec-4dfb-bf10-525881c10d88/1791996844363_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.499
+  },
+  "size": [
+   324,
+   324
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-8x-electric-scooter.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.812
+  },
+  "size": [
+   698,
+   1023
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/ZERO8XElectricScooterFolded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.802
+  },
+  "size": [
+   785,
+   512
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-8X--Electric-Scooter-Rear-Wheel.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.716
+  },
+  "size": [
+   994,
+   713
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-8X-Electric-Scooter-Deck.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.754
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-8x-electric-scooter-suspension.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.602
+  },
+  "size": [
+   1080,
+   711
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-8x-handlebar-folded.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.58
+  },
+  "size": [
+   926,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-8x",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-8X-Electric-Scooter-Rear-Suspension.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.078,
+   "vivid": 0.032,
+   "fill": 0.722
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1782554380831_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.81
+  },
+  "size": [
+   360,
+   481
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1782554382413_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.462
+  },
+  "size": [
+   614,
+   624
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1791997417036_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.489
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.816
+  },
+  "size": [
+   703,
+   998
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero9-folded-rear-view.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.782
+  },
+  "size": [
+   718,
+   404
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-folded.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.746
+  },
+  "size": [
+   783,
+   447
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-folding.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.86
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-fork.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.815
+  },
+  "size": [
+   773,
+   563
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-deck.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.731
+  },
+  "size": [
+   864,
+   598
+  ],
+  "error": null
+ },
+ {
+  "slug": "zero-9",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-l-c-d.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.143,
+   "fill": 0.773
+  },
+  "size": [
+   864,
+   525
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/822b5344-f59d-44d0-80b3-ffac880031ab/1791639762980_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.813
+  },
+  "size": [
+   839,
+   1221
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/822b5344-f59d-44d0-80b3-ffac880031ab/1791639766748_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.712
+  },
+  "size": [
+   101,
+   45
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.813
+  },
+  "size": [
+   1049,
+   1523
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.841
+  },
+  "size": [
+   1337,
+   1436
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.848
+  },
+  "size": [
+   1291,
+   1426
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.777
+  },
+  "size": [
+   1466,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.834
+  },
+  "size": [
+   1523,
+   1138
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar",
+  "i": 7,
+  "url": "https://es.zwheel.com/images/product/zcougar/zcougar/6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.588
+  },
+  "size": [
+   1952,
+   1241
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb596a08-05b8-4e2a-b0a7-75eb156a5dea/1792168599133_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.074,
+   "vivid": 0.147,
+   "fill": 0.234
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.174,
+   "fill": 0.818
+  },
+  "size": [
+   1099,
+   1517
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.205,
+   "fill": 0.84
+  },
+  "size": [
+   1300,
+   1496
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.165,
+   "fill": 0.76
+  },
+  "size": [
+   1496,
+   689
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.165,
+   "fill": 0.675
+  },
+  "size": [
+   1690,
+   1914
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/5.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.202,
+   "fill": 0.528
+  },
+  "size": [
+   1958,
+   1055
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zcougar-duo",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zcougar/duo/6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.654
+  },
+  "size": [
+   1942,
+   1684
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/012d9c43-6727-44d0-ad1d-d78b28edbd06/1792168530012_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.793
+  },
+  "size": [
+   1305,
+   1532
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/012d9c43-6727-44d0-ad1d-d78b28edbd06/1792168536217_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.008,
+   "fill": 0.789
+  },
+  "size": [
+   1375,
+   1514
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/012d9c43-6727-44d0-ad1d-d78b28edbd06/1792168545850_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.749
+  },
+  "size": [
+   1597,
+   1798
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zfox/max/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.827
+  },
+  "size": [
+   995,
+   1441
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zfox/max/2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.838
+  },
+  "size": [
+   1117,
+   1410
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zfox/max/3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.754
+  },
+  "size": [
+   1292,
+   1790
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zfox/max/4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.756
+  },
+  "size": [
+   1303,
+   1788
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 7,
+  "url": "https://es.zwheel.com/images/product/zfox/max/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.752
+  },
+  "size": [
+   1269,
+   1788
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 8,
+  "url": "https://es.zwheel.com/images/product/zfox/max/6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0.01,
+   "fill": 0.839
+  },
+  "size": [
+   1338,
+   1474
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zfox-max",
+  "i": 9,
+  "url": "https://es.zwheel.com/images/product/zfox/max/7.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.758
+  },
+  "size": [
+   1316,
+   1784
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0debaa11-8bf6-4367-a590-20adaf9c2a3c/1791639771320_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.274
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/81UX5e4CIAL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.159,
+   "fill": 0.599
+  },
+  "size": [
+   1620,
+   1245
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/81kg5EYZw4L._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.016,
+   "fill": 0.453
+  },
+  "size": [
+   1237,
+   1510
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/61qeAb6c-jL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.108,
+   "fill": 0.816
+  },
+  "size": [
+   964,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/91plqZ42ZZL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.38
+  },
+  "size": [
+   964,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/71rqpgGv+GL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.777
+  },
+  "size": [
+   1397,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/21091dbc-84c9-4017-82cb-c91a421842a8/1792168575521_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.366
+  },
+  "size": [
+   1536,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.816
+  },
+  "size": [
+   1061,
+   1503
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.836
+  },
+  "size": [
+   1223,
+   1401
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.842
+  },
+  "size": [
+   1377,
+   1541
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.825
+  },
+  "size": [
+   1490,
+   1101
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.843
+  },
+  "size": [
+   1566,
+   1230
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zrino/duo/6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.753
+  },
+  "size": [
+   1491,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 0,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.816
+  },
+  "size": [
+   1061,
+   1503
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.836
+  },
+  "size": [
+   1223,
+   1401
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.842
+  },
+  "size": [
+   1377,
+   1541
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.825
+  },
+  "size": [
+   1490,
+   1101
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.843
+  },
+  "size": [
+   1566,
+   1230
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zrino/duo-max/6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.753
+  },
+  "size": [
+   1491,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-duo-max",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/03bdba11-a4c8-416d-97e1-a76517882e8b/1792168581230_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.14,
+   "vivid": 0.131,
+   "fill": 0.468
+  },
+  "size": [
+   1536,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 0,
+  "url": "https://es.zwheel.com/images/product/zrino/se/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.823
+  },
+  "size": [
+   1090,
+   1520
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zrino/se/2.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.815
+  },
+  "size": [
+   1752,
+   1506
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zrino/se/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.808
+  },
+  "size": [
+   1419,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zrino/se/4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.805
+  },
+  "size": [
+   1752,
+   1299
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zrino/se/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.839
+  },
+  "size": [
+   1689,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1d674b38-bfd6-481d-9139-fdbe6e2c46ab/1792168552181_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.835
+  },
+  "size": [
+   1408,
+   1548
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1d674b38-bfd6-481d-9139-fdbe6e2c46ab/1792168560974_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.738
+  },
+  "size": [
+   1752,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino-se",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1d674b38-bfd6-481d-9139-fdbe6e2c46ab/1792168569038_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.803
+  },
+  "size": [
+   1422,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1b6609c7-dfed-4428-a4d1-2a34f9ef32ad/1792168587029_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.113,
+   "fill": 0.51
+  },
+  "size": [
+   1264,
+   1423
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.115,
+   "fill": 0.827
+  },
+  "size": [
+   1028,
+   1485
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/2.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.131,
+   "fill": 0.773
+  },
+  "size": [
+   1406,
+   701
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.147,
+   "fill": 0.847
+  },
+  "size": [
+   1246,
+   1490
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.204,
+   "fill": 0.821
+  },
+  "size": [
+   1524,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.814
+  },
+  "size": [
+   1620,
+   1075
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zwolf/zwolf/6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.135,
+   "fill": 0.844
+  },
+  "size": [
+   1337,
+   1474
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f6f856ea-9b29-4f01-a7c9-f523d4b8b425/1792168593517_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.546
+  },
+  "size": [
+   1299,
+   1470
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 1,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.816
+  },
+  "size": [
+   1066,
+   1506
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 2,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/2.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.771
+  },
+  "size": [
+   1453,
+   719
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 3,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.843
+  },
+  "size": [
+   1148,
+   1459
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 4,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.802
+  },
+  "size": [
+   1459,
+   873
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 5,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.826
+  },
+  "size": [
+   1595,
+   1194
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zwolf-plus",
+  "i": 6,
+  "url": "https://es.zwheel.com/images/product/zwolf/plus/6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.84
+  },
+  "size": [
+   1320,
+   1443
+  ],
+  "error": null
+ }
+]

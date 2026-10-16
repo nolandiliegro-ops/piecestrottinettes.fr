@@ -1,0 +1,80 @@
+wispeed-airo-v10 #0 WARN basse définition
+wispeed-airo-v10 #1 WARN basse définition
+wispeed-airo-v10 #2 PASS ok
+wispeed-airo-v10 #3 PASS ok
+wispeed-airo-v10 #4 WARN basse définition · cadrage serré
+wispeed-airo-v10 #5 PASS ok
+wispeed-airo-v10 #6 WARN basse définition
+wispeed-airo-v10 #7 PASS ok
+wispeed-airo-v16 #0 WARN basse définition
+wispeed-airo-v16 #1 PASS ok
+wispeed-airo-v16 #2 PASS ok
+wispeed-airo-v16 #3 WARN basse définition · cadrage serré
+wispeed-airo-v16 #4 PASS ok
+wispeed-airo-v16 #5 WARN basse définition
+wispeed-airo-v16 #6 PASS ok
+wispeed-airo-v6 #0 PASS ok
+wispeed-airo-v6 #1 PASS ok
+wispeed-airo-v6 #2 PASS ok
+wispeed-airo-v6 #3 WARN basse définition · cadrage serré
+wispeed-airo-v6 #4 PASS ok
+wispeed-airo-v6 #5 WARN basse définition
+wispeed-airo-v6 #6 PASS ok
+wispeed-c10-40-pro #0 FAIL détourage sale / résidu de décor · basse définition
+wispeed-c10-40-pro #1 PASS ok
+wispeed-c10-40-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-c10-40-pro #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+wispeed-c10-40-pro #4 PASS ok
+wispeed-c10-55-max #0 PASS ok
+wispeed-c10-55-max #1 ERROR téléchargement vide
+wispeed-c10-55-max #2 ERROR téléchargement vide
+wispeed-c10-55-max #3 ERROR téléchargement vide
+wispeed-c10-55-max #4 ERROR téléchargement vide
+wispeed-c10-55-max #5 PASS ok
+wispeed-suv1000 #0 PASS ok
+wispeed-suv1000 #1 PASS ok
+wispeed-suv1000 #2 PASS ok
+wispeed-suv1000 #3 PASS ok
+wispeed-suv1000 #4 WARN cadrage serré
+wispeed-suv1000 #5 PASS ok
+wispeed-suv1000 #6 PASS ok
+wispeed-suv1000 #7 FAIL détourage sale / résidu de décor
+wispeed-suvpilot-150r #0 PASS ok
+wispeed-suvpilot-150r #1 PASS ok
+wispeed-suvpilot-150r #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+wispeed-suvpilot-150r #3 WARN cadrage serré
+wispeed-suvpilot-150r #4 WARN cadrage serré
+wispeed-suvpilot-150r #5 PASS ok
+wispeed-suvpilot-150r #6 PASS ok
+wispeed-suvpilot-480 #0 PASS ok
+wispeed-suvpilot-480 #1 PASS ok
+wispeed-suvpilot-480 #2 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+wispeed-suvpilot-480 #3 FAIL détourage sale / résidu de décor
+wispeed-suvpilot-480 #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+wispeed-suvpilot-480 #5 PASS ok
+wispeed-suvpilot-480 #6 PASS ok
+wispeed-t855 #0 PASS ok
+wispeed-t855 #1 WARN basse définition
+wispeed-t855 #2 WARN basse définition
+wispeed-t855 #3 PASS ok
+wispeed-t855 #4 PASS ok
+wispeed-t855 #5 PASS ok
+wispeed-t855 #6 PASS ok
+wispeed-t855 #7 PASS ok
+wispeed-t855 #8 PASS ok
+wispeed-t855-pro #0 ERROR téléchargement vide
+wispeed-t855-pro #1 WARN basse définition
+wispeed-t855-pro #2 PASS ok
+wispeed-t855-pro #3 PASS ok
+wispeed-t855-pro #4 PASS ok
+wispeed-t855-pro #5 PASS ok
+wispeed-t855-pro #6 PASS ok
+wispeed-t855-pro #7 FAIL détourage sale / résidu de décor · cadrage serré
+wispeed-t855-pro #8 PASS ok
+wispeed-x1050-max #0 PASS ok
+wispeed-x1050-max #1 PASS ok
+wispeed-x1050-max #2 PASS ok
+wispeed-x1050-max #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+wispeed-x1050-max #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-x1050-max #5 PASS ok
+::notice title=photos lot21 (dry)::79 candidates · PASS 48 · WARN 15 · FAIL 11 · ERREUR 5

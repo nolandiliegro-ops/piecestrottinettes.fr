@@ -1,0 +1,1606 @@
+[
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/67d2f0b1-b78c-498c-a74e-01c41d9dd354/1791656718140_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.701
+  },
+  "size": [
+   262,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/67d2f0b1-b78c-498c-a74e-01c41d9dd354/1791656720669_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.8
+  },
+  "size": [
+   511,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.198
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.838
+  },
+  "size": [
+   1073,
+   1193
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.773
+  },
+  "size": [
+   1063,
+   531
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.807
+  },
+  "size": [
+   802,
+   1237
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 6,
+  "url": "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.795
+  },
+  "size": [
+   509,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 7,
+  "url": "https://www.wispeed.net/7843-large_default/trottinette-airo-v10.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.851
+  },
+  "size": [
+   765,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e36ebdda-6127-4b27-a2c1-0abbd9d36759/1791646700291_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.804
+  },
+  "size": [
+   511,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.378
+  },
+  "size": [
+   1331,
+   1600
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.838
+  },
+  "size": [
+   1073,
+   1193
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.773
+  },
+  "size": [
+   1063,
+   531
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.807
+  },
+  "size": [
+   802,
+   1237
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 5,
+  "url": "https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.795
+  },
+  "size": [
+   509,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 6,
+  "url": "https://www.wispeed.net/7845-large_default/trottinette-airo-v16.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.851
+  },
+  "size": [
+   765,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3408088c-1baa-484d-b855-f7920c7e57a1/1791646702151_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.499
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.213
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.835
+  },
+  "size": [
+   1046,
+   1209
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.764
+  },
+  "size": [
+   1034,
+   500
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.802
+  },
+  "size": [
+   770,
+   1233
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 5,
+  "url": "https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.81
+  },
+  "size": [
+   535,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 6,
+  "url": "https://www.wispeed.net/7841-large_default/trottinette-airo-v6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.838
+  },
+  "size": [
+   737,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-40-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ef3037fe-f72b-4b99-ae55-e4fd1c0adb01/1791995635397_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.801
+  },
+  "size": [
+   293,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-40-pro",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.335
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-40-pro",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.03,
+   "vivid": 0.021,
+   "fill": 0.479
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-40-pro",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.063,
+   "vivid": 0.023,
+   "fill": 0.49
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-40-pro",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.784
+  },
+  "size": [
+   1494,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b052121-6046-4f5a-af4b-4cc004739c3b/1791995631904_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.368
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 1,
+  "url": "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/1/e/3/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 2,
+  "url": "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/e/d/e/e/edee383bbda2492605469bca2cae5deb7b4cc93b_image20096.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 3,
+  "url": "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/2/d/f/6/2df62925bde7b85e5707b9431d39e5009223ebd0_image20097.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 4,
+  "url": "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/d/3/6/bd3692e3e527cff28b2e0b44507edbcd4f9eba37_image20098.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 5,
+  "url": "https://www.molecule.be/media/seo/2/product/600x600/b/1/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.376
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8a75aaf-d835-429f-8d12-23d204467b46/1792168390507_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.471
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8a75aaf-d835-429f-8d12-23d204467b46/1792168396034_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.555
+  },
+  "size": [
+   761,
+   761
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.467
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.389
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.838
+  },
+  "size": [
+   796,
+   882
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.293
+  },
+  "size": [
+   1395,
+   1489
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 6,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.419
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 7,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.062,
+   "fill": 0.599
+  },
+  "size": [
+   1744,
+   999
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d19aacb0-9a80-4acf-8e7b-091c2f2fe504/1791656729345_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.834
+  },
+  "size": [
+   628,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.813
+  },
+  "size": [
+   1260,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.034,
+   "vivid": 0.11,
+   "fill": 0.503
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.15,
+   "fill": 0.515
+  },
+  "size": [
+   1744,
+   1228
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.763
+  },
+  "size": [
+   1730,
+   810
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 5,
+  "url": "https://www.wispeed.net/7866-large_default/trottinette-suvpilot-150-r.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.835
+  },
+  "size": [
+   624,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-150r",
+  "i": 6,
+  "url": "https://www.wispeed.net/7874-large_default/trottinette-suvpilot-150-r.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.846
+  },
+  "size": [
+   775,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a9133f9-3903-45d4-a3ba-0824f3cb4cde/1791995921608_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.368
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 1,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.367
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.024,
+   "vivid": 0.006,
+   "fill": 0.743
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.015,
+   "vivid": 0.011,
+   "fill": 0.528
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.046,
+   "vivid": 0.008,
+   "fill": 0.774
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 5,
+  "url": "https://www.wispeed.net/7872-large_default/trottinette-suvpilot-480-r.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.859
+  },
+  "size": [
+   774,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 6,
+  "url": "https://www.wispeed.net/7873-large_default/trottinette-suvpilot-480-r.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.827
+  },
+  "size": [
+   613,
+   862
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003490165_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.185,
+   "fill": 0.502
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003492709_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.834
+  },
+  "size": [
+   332,
+   346
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003495229_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.809
+  },
+  "size": [
+   303,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.794
+  },
+  "size": [
+   1082,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.607
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.664
+  },
+  "size": [
+   1476,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 6,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.469
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 7,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.8
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855",
+  "i": 8,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.796
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f10f7de1-d10c-449e-b52e-31022b22892c/1792168379157_0.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f10f7de1-d10c-449e-b52e-31022b22892c/1792168384067_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.497
+  },
+  "size": [
+   368,
+   368
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.794
+  },
+  "size": [
+   1082,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.607
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.668
+  },
+  "size": [
+   1465,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.469
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 6,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.8
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 7,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.696
+  },
+  "size": [
+   1744,
+   964
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0641/2340/4541/products/T855PRO.jpg?v=1671406918",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.449
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1/1791995639094_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.368
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1/1791995647424_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.167
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 2,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.61
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.089,
+   "vivid": 0.084,
+   "fill": 0.497
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.075,
+   "vivid": 0.038,
+   "fill": 0.736
+  },
+  "size": [
+   1504,
+   1417
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.027,
+   "fill": 0.285
+  },
+  "size": [
+   1728,
+   1579
+  ],
+  "error": null
+ }
+]

@@ -1,0 +1,168 @@
+mi-3 #0 WARN basse définition
+mi-3 #1 WARN petit élément détaché (2 morceaux)
+mi-3 #2 PASS ok
+mi-3 #3 PASS ok
+mi-3 #4 PASS ok
+mi-3 #5 PASS ok
+mi-3 #6 WARN basse définition · cadrage serré
+mi-3 #7 PASS ok
+mi-3 #8 WARN cadrage serré
+mi-3 #9 PASS ok
+mi-essential #0 PASS ok
+mi-essential #1 WARN basse définition
+mi-essential #2 PASS ok
+mi-essential #3 WARN basse définition · cadrage serré
+mi-essential #4 WARN basse définition
+mi-essential #5 WARN basse définition
+mi-essential #6 PASS ok
+mi-essential #7 WARN cadrage serré
+mi-essential #8 PASS ok
+mi-essential #9 PASS ok
+mi-pro-2 #0 PASS ok
+mi-pro-2 #1 PASS ok
+mi-pro-2 #2 PASS ok
+mi-pro-2 #3 PASS ok
+mi-pro-2 #4 WARN cadrage serré
+mi-pro-2 #5 PASS ok
+mi-pro-2 #6 WARN basse définition
+mi-pro-2 #7 PASS ok
+mi-pro-2 #8 WARN cadrage serré
+mi-pro-2 #9 WARN basse définition
+xiaomi-electric-scooter-4 #0 WARN basse définition
+xiaomi-electric-scooter-4 #1 PASS ok
+xiaomi-electric-scooter-4 #2 WARN basse définition · cadrage serré
+xiaomi-electric-scooter-4 #3 PASS ok
+xiaomi-electric-scooter-4 #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 43 % (visuel marketing ?)
+xiaomi-electric-scooter-4 #5 PASS ok
+xiaomi-electric-scooter-4 #6 PASS ok
+xiaomi-electric-scooter-4 #7 PASS ok
+xiaomi-electric-scooter-4 #8 WARN cadrage serré
+xiaomi-electric-scooter-4 #9 WARN cadrage serré
+xiaomi-electric-scooter-4-lite-2nd-gen #0 PASS ok
+xiaomi-electric-scooter-4-lite-2nd-gen #1 PASS ok
+xiaomi-electric-scooter-4-lite-2nd-gen #2 PASS ok
+xiaomi-electric-scooter-4-lite-2nd-gen #3 PASS ok
+xiaomi-electric-scooter-4-lite-2nd-gen #4 WARN cadrage serré
+xiaomi-electric-scooter-4-lite-2nd-gen #5 WARN cadrage serré
+xiaomi-electric-scooter-4-lite-2nd-gen #6 PASS ok
+xiaomi-electric-scooter-4-lite-2nd-gen #7 WARN cadrage serré
+xiaomi-electric-scooter-4-lite-2nd-gen #8 WARN cadrage serré
+xiaomi-electric-scooter-4-lite-2nd-gen #9 WARN cadrage serré
+xiaomi-electric-scooter-4-pro #0 PASS ok
+xiaomi-electric-scooter-4-pro #1 PASS ok
+xiaomi-electric-scooter-4-pro #2 PASS ok
+xiaomi-electric-scooter-4-pro #3 WARN cadrage serré
+xiaomi-electric-scooter-4-pro #4 PASS ok
+xiaomi-electric-scooter-4-pro #5 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-4-pro #6 FAIL détourage sale / résidu de décor · cadrage serré
+xiaomi-electric-scooter-4-pro #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-4-pro #8 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #0 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #1 FAIL détourage sale / résidu de décor
+xiaomi-electric-scooter-4-pro-2nd-gen #2 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #3 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #4 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #5 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #6 WARN cadrage serré
+xiaomi-electric-scooter-4-pro-2nd-gen #7 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #8 PASS ok
+xiaomi-electric-scooter-4-pro-2nd-gen #9 PASS ok
+xiaomi-electric-scooter-4-ultra #0 PASS ok
+xiaomi-electric-scooter-4-ultra #1 PASS ok
+xiaomi-electric-scooter-4-ultra #2 PASS ok
+xiaomi-electric-scooter-4-ultra #3 PASS ok
+xiaomi-electric-scooter-4-ultra #4 PASS ok
+xiaomi-electric-scooter-4-ultra #5 PASS ok
+xiaomi-electric-scooter-4-ultra #6 PASS ok
+xiaomi-electric-scooter-4-ultra #7 PASS ok
+xiaomi-electric-scooter-4-ultra #8 PASS ok
+xiaomi-electric-scooter-4-ultra #9 WARN cadrage serré
+xiaomi-electric-scooter-5 #0 PASS ok
+xiaomi-electric-scooter-5 #1 PASS ok
+xiaomi-electric-scooter-5 #2 PASS ok
+xiaomi-electric-scooter-5 #3 PASS ok
+xiaomi-electric-scooter-5 #4 PASS ok
+xiaomi-electric-scooter-5 #5 WARN cadrage serré
+xiaomi-electric-scooter-5 #6 PASS ok
+xiaomi-electric-scooter-5 #7 PASS ok
+xiaomi-electric-scooter-5 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+xiaomi-electric-scooter-5-max #0 PASS ok
+xiaomi-electric-scooter-5-max #1 PASS ok
+xiaomi-electric-scooter-5-max #2 PASS ok
+xiaomi-electric-scooter-5-max #3 PASS ok
+xiaomi-electric-scooter-5-max #4 PASS ok
+xiaomi-electric-scooter-5-max #5 PASS ok
+xiaomi-electric-scooter-5-max #6 WARN cadrage serré
+xiaomi-electric-scooter-5-max #7 FAIL détourage sale / résidu de décor · couleurs vives 46 % (visuel marketing ?)
+xiaomi-electric-scooter-5-max #8 PASS ok
+xiaomi-electric-scooter-5-plus #0 PASS ok
+xiaomi-electric-scooter-5-plus #1 FAIL détourage sale / résidu de décor · bandeau, pas un produit · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+xiaomi-electric-scooter-5-plus #2 PASS ok
+xiaomi-electric-scooter-5-plus #3 PASS ok
+xiaomi-electric-scooter-5-plus #4 PASS ok
+xiaomi-electric-scooter-5-plus #5 PASS ok
+xiaomi-electric-scooter-5-plus #6 PASS ok
+xiaomi-electric-scooter-5-plus #7 PASS ok
+xiaomi-electric-scooter-5-plus #8 PASS ok
+xiaomi-electric-scooter-5-plus #9 PASS ok
+xiaomi-electric-scooter-5-pro #0 PASS ok
+xiaomi-electric-scooter-5-pro #1 PASS ok
+xiaomi-electric-scooter-5-pro #2 PASS ok
+xiaomi-electric-scooter-5-pro #3 PASS ok
+xiaomi-electric-scooter-5-pro #4 PASS ok
+xiaomi-electric-scooter-5-pro #5 PASS ok
+xiaomi-electric-scooter-5-pro #6 PASS ok
+xiaomi-electric-scooter-5-pro #7 PASS ok
+xiaomi-electric-scooter-5-pro #8 WARN cadrage serré
+xiaomi-electric-scooter-6 #0 WARN basse définition
+xiaomi-electric-scooter-6 #1 PASS ok
+xiaomi-electric-scooter-6 #2 PASS ok
+xiaomi-electric-scooter-6 #3 PASS ok
+xiaomi-electric-scooter-6 #4 PASS ok
+xiaomi-electric-scooter-6 #5 WARN cadrage serré
+xiaomi-electric-scooter-6 #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-6 #7 WARN cadrage serré
+xiaomi-electric-scooter-6 #8 PASS ok
+xiaomi-electric-scooter-6-lite #0 WARN basse définition
+xiaomi-electric-scooter-6-lite #1 PASS ok
+xiaomi-electric-scooter-6-lite #2 PASS ok
+xiaomi-electric-scooter-6-lite #3 PASS ok
+xiaomi-electric-scooter-6-lite #4 WARN cadrage serré
+xiaomi-electric-scooter-6-lite #5 PASS ok
+xiaomi-electric-scooter-6-lite #6 PASS ok
+xiaomi-electric-scooter-6-lite #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-6-lite #8 PASS ok
+xiaomi-electric-scooter-6-lite #9 PASS ok
+xiaomi-electric-scooter-6-pro #0 WARN basse définition
+xiaomi-electric-scooter-6-pro #1 PASS ok
+xiaomi-electric-scooter-6-pro #2 PASS ok
+xiaomi-electric-scooter-6-pro #3 PASS ok
+xiaomi-electric-scooter-6-pro #4 WARN cadrage serré
+xiaomi-electric-scooter-6-pro #5 WARN basse définition · cadrage serré
+xiaomi-electric-scooter-elite #0 ERROR téléchargement vide
+xiaomi-electric-scooter-elite #1 WARN basse définition
+xiaomi-electric-scooter-elite #2 PASS ok
+xiaomi-electric-scooter-elite #3 WARN cadrage serré
+xiaomi-electric-scooter-elite #4 PASS ok
+xiaomi-electric-scooter-elite #5 PASS ok
+xiaomi-electric-scooter-elite #6 PASS ok
+xiaomi-electric-scooter-elite #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-elite #8 PASS ok
+xiaomi-electric-scooter-elite #9 PASS ok
+xiaomi-mi-3-lite #0 PASS ok
+xiaomi-mi-3-lite #1 PASS ok
+xiaomi-mi-3-lite #2 FAIL détourage sale / résidu de décor
+xiaomi-mi-3-lite #3 FAIL détourage sale / résidu de décor
+xiaomi-mi-3-lite #4 WARN basse définition
+xiaomi-mi-electric-scooter-1s #0 PASS ok
+xiaomi-mi-electric-scooter-1s #1 PASS ok
+xiaomi-mi-electric-scooter-1s #2 WARN basse définition
+xiaomi-mi-electric-scooter-1s #3 PASS ok
+xiaomi-mi-electric-scooter-1s #4 WARN cadrage serré
+xiaomi-mi-electric-scooter-1s #5 PASS ok
+xiaomi-mi-electric-scooter-1s #6 PASS ok
+xiaomi-mi-electric-scooter-1s #7 WARN basse définition · cadrage serré
+xiaomi-mi-m365 #0 WARN basse définition
+xiaomi-mi-m365 #1 ERROR téléchargement vide
+xiaomi-mi-m365 #2 ERROR Input buffer contains unsupported image format
+::notice title=photos lot22 (dry)::167 candidates · PASS 108 · WARN 43 · FAIL 13 · ERREUR 3

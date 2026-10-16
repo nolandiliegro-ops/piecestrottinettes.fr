@@ -1,0 +1,188 @@
+yeep-me-100a #0 WARN basse définition
+yeep-me-100a #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+yeep-me-100a #2 FAIL détourage sale / résidu de décor
+yeep-me-100a #3 PASS ok
+yeep-me-100a #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-100a #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-100a #6 PASS ok
+yeep-me-100a #7 PASS ok
+yeep-me-100a #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-100a-start #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+yeep-me-100a-start #1 WARN basse définition · cadrage serré
+yeep-me-100a-start #2 FAIL détourage sale / résidu de décor
+yeep-me-100a-start #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-100a-start #4 PASS ok
+yeep-me-100a-start #5 PASS ok
+yeep-me-100a-start #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-100a-start #7 FAIL détourage sale / résidu de décor · cadrage serré
+yeep-me-100a-start #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 31 % (visuel marketing ?)
+yeep-me-120a #0 WARN basse définition
+yeep-me-120a #1 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-120a #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+yeep-me-120a #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-120a #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-120a #5 FAIL détourage sale / résidu de décor
+yeep-me-120a #6 PASS ok
+yeep-me-120a #7 WARN cadrage serré
+yeep-me-120a #8 PASS ok
+yeep-me-120a #9 PASS ok
+yeep-me-120a-pro #0 WARN basse définition
+yeep-me-120a-pro #1 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-120a-pro #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+yeep-me-120a-pro #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-120a-pro #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-120a-pro #5 FAIL détourage sale / résidu de décor
+yeep-me-120a-pro #6 PASS ok
+yeep-me-120a-pro #7 WARN cadrage serré
+yeep-me-120a-pro #8 PASS ok
+yeep-me-120a-pro #9 PASS ok
+yeep-me-80n-evo-plus #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 30 % (visuel marketing ?)
+yeep-me-80n-evo-plus #1 WARN cadrage serré
+yeep-me-80n-evo-plus #2 WARN cadrage serré
+yeep-me-80n-evo-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 30 % (visuel marketing ?)
+yeep-me-80n-evo-plus #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-80n-evo-plus #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+yeep-me-80n-evo-plus #6 PASS ok
+yeep-me-80n-evo-plus #7 PASS ok
+yeep-me-80n-evo-plus #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-80n-evo-plus #9 WARN cadrage serré
+yeep-me-85a-evo #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-85a-evo #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+yeep-me-85a-evo #3 WARN petit élément détaché (2 morceaux)
+yeep-me-85a-evo #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-85a-evo #5 FAIL détourage sale / résidu de décor
+yeep-me-85a-evo #6 PASS ok
+yeep-me-85a-evo #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-85a-evo #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-dakar-110-pro #0 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-dakar-110-pro #1 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-dakar-110-pro #2 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-dakar-110-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-dakar-110-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-dakar-110-pro #5 PASS ok
+yeep-me-dakar-110-pro #6 WARN cadrage serré
+yeep-me-dakar-110-pro #7 PASS ok
+yeep-me-dakar-110-pro #8 PASS ok
+yeep-me-dakar-110-pro #9 PASS ok
+zero-10 #0 PASS ok
+zero-10 #1 PASS ok
+zero-10 #2 PASS ok
+zero-10 #3 WARN basse définition · cadrage serré
+zero-10 #4 FAIL basse définition · image vide
+zero-10 #5 WARN basse définition · cadrage serré
+zero-10 #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+zero-10 #7 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+zero-10x #0 PASS ok
+zero-10x #1 PASS ok
+zero-10x #2 PASS ok
+zero-10x #3 PASS ok
+zero-10x #4 PASS ok
+zero-10x #5 PASS ok
+zero-10x #6 FAIL détourage sale / résidu de décor
+zero-10x #7 WARN cadrage serré
+zero-10x #8 WARN basse définition · cadrage serré
+zero-10x #9 WARN basse définition · cadrage serré
+zero-11x #0 PASS ok
+zero-11x #1 WARN basse définition
+zero-11x #2 PASS ok
+zero-11x #3 PASS ok
+zero-11x #4 PASS ok
+zero-11x #5 WARN basse définition
+zero-11x #6 PASS ok
+zero-11x #7 PASS ok
+zero-8 #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+zero-8 #1 PASS ok
+zero-8 #2 PASS ok
+zero-8 #3 PASS ok
+zero-8 #4 WARN basse définition
+zero-8 #5 WARN basse définition · cadrage serré
+zero-8 #6 PASS ok
+zero-8 #7 WARN cadrage serré
+zero-8x #0 WARN basse définition
+zero-8x #1 PASS ok
+zero-8x #2 WARN basse définition · cadrage serré
+zero-8x #3 WARN cadrage serré
+zero-8x #4 FAIL détourage sale / résidu de décor
+zero-8x #5 FAIL détourage sale / résidu de décor
+zero-8x #6 WARN cadrage serré
+zero-8x #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+zero-9 #0 WARN basse définition
+zero-9 #1 PASS ok
+zero-9 #2 PASS ok
+zero-9 #3 PASS ok
+zero-9 #4 WARN basse définition · cadrage serré
+zero-9 #5 WARN basse définition · cadrage serré
+zero-9 #6 FAIL détourage sale / résidu de décor · cadrage serré
+zero-9 #7 WARN basse définition · cadrage serré
+zero-9 #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+zero-9 #9 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+zwheel-zcougar #0 PASS ok
+zwheel-zcougar #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+zwheel-zcougar #2 PASS ok
+zwheel-zcougar #3 PASS ok
+zwheel-zcougar #4 WARN cadrage serré
+zwheel-zcougar #5 WARN cadrage serré
+zwheel-zcougar #6 PASS ok
+zwheel-zcougar #7 WARN cadrage serré
+zwheel-zcougar-duo #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+zwheel-zcougar-duo #1 PASS ok
+zwheel-zcougar-duo #2 PASS ok
+zwheel-zcougar-duo #3 WARN cadrage serré
+zwheel-zcougar-duo #4 PASS ok
+zwheel-zcougar-duo #5 WARN cadrage serré
+zwheel-zcougar-duo #6 PASS ok
+zwheel-zfox-max #0 PASS ok
+zwheel-zfox-max #1 PASS ok
+zwheel-zfox-max #2 PASS ok
+zwheel-zfox-max #3 PASS ok
+zwheel-zfox-max #4 PASS ok
+zwheel-zfox-max #5 PASS ok
+zwheel-zfox-max #6 PASS ok
+zwheel-zfox-max #7 PASS ok
+zwheel-zfox-max #8 PASS ok
+zwheel-zfox-max #9 PASS ok
+zwheel-zrino #0 PASS ok
+zwheel-zrino #1 FAIL détourage sale / résidu de décor
+zwheel-zrino #2 FAIL détourage sale / résidu de décor
+zwheel-zrino #3 FAIL détourage sale / résidu de décor
+zwheel-zrino #4 FAIL détourage sale / résidu de décor
+zwheel-zrino #5 FAIL détourage sale / résidu de décor · cadrage serré
+zwheel-zrino-duo #0 PASS ok
+zwheel-zrino-duo #1 PASS ok
+zwheel-zrino-duo #2 PASS ok
+zwheel-zrino-duo #3 WARN cadrage serré
+zwheel-zrino-duo #4 WARN cadrage serré
+zwheel-zrino-duo #5 PASS ok
+zwheel-zrino-duo #6 WARN cadrage serré
+zwheel-zrino-duo-max #0 PASS ok
+zwheel-zrino-duo-max #1 PASS ok
+zwheel-zrino-duo-max #2 WARN cadrage serré
+zwheel-zrino-duo-max #3 WARN cadrage serré
+zwheel-zrino-duo-max #4 PASS ok
+zwheel-zrino-duo-max #5 WARN cadrage serré
+zwheel-zrino-duo-max #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+zwheel-zrino-se #0 PASS ok
+zwheel-zrino-se #1 WARN cadrage serré
+zwheel-zrino-se #2 WARN cadrage serré
+zwheel-zrino-se #3 PASS ok
+zwheel-zrino-se #4 PASS ok
+zwheel-zrino-se #5 PASS ok
+zwheel-zrino-se #6 FAIL détourage sale / résidu de décor · cadrage serré
+zwheel-zrino-se #7 WARN cadrage serré
+zwheel-zwolf #0 PASS ok
+zwheel-zwolf #1 PASS ok
+zwheel-zwolf #2 WARN cadrage serré
+zwheel-zwolf #3 WARN cadrage serré
+zwheel-zwolf #4 WARN cadrage serré
+zwheel-zwolf #5 PASS ok
+zwheel-zwolf #6 PASS ok
+zwheel-zwolf-plus #0 PASS ok
+zwheel-zwolf-plus #1 PASS ok
+zwheel-zwolf-plus #2 WARN cadrage serré
+zwheel-zwolf-plus #3 WARN cadrage serré
+zwheel-zwolf-plus #4 WARN cadrage serré
+zwheel-zwolf-plus #5 PASS ok
+zwheel-zwolf-plus #6 PASS ok
+::notice title=photos lot23 (dry)::187 candidates · PASS 79 · WARN 49 · FAIL 59 · ERREUR 0
