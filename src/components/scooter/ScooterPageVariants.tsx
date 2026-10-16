@@ -507,7 +507,8 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
   const BTN: Record<string, Look> = { "1": "slant", "2": "chevron", "3": "stripe", "4": "livery", "5": "chamfer" };
   // Carrousel gamme à comparer (16/10) : &gal=1..5 — sans paramètre, carrousel actuel.
   const galN = Number(sp.get("gal"));
-  const galStyle = (galN >= 1 && galN <= 5 ? galN : null) as GalStyle | null;
+  // 16/10 : « Plaque » (4) choisi par Nolan = défaut ; ?gal=0 = ancien carrousel.
+  const galStyle = (sp.has("gal") ? (galN >= 1 && galN <= 5 ? galN : null) : 4) as GalStyle | null;
   const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
   return (
     <>
