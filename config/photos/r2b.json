@@ -1,0 +1,308 @@
+{
+ "lot": "r2b",
+ "models": [
+  {
+   "id": "a04145d7-179e-4889-a1e1-5a8529597377",
+   "slug": "pure-electric-advance-flex",
+   "name": "Pure Electric Advance Flex",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a04145d7-179e-4889-a1e1-5a8529597377/1791992945679_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1238469009.jpg?v=1778803399",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-advance-flex-electric-scooter-platinum.jpg?v=1752639066",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-advance-flex-electric-scooter-mercury-grey.webp?v=1774494707",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-advance-flex-electric-scooter-platinum-folded.jpg?v=1774494707",
+    "https://cdn.shopify.com/s/files/1/0459/8556/2792/files/pure-scooter-platinum-flex-70991942549880.webp?v=1737301807",
+    "https://cdn.shopify.com/s/files/1/0459/8556/2792/files/pure-scooter-mercury-grey-flex-33416332214360_bcf4390e-e9a5-4aab-99e5-76dbbee48eb8.webp?v=1737301861",
+    "https://cdn.shopify.com/s/files/1/0459/8556/2792/files/pure-scooter-flex-33486189527128_612dc1d4-5e21-491e-add0-663d1ed2c485.webp?v=1737301861",
+    "https://cdn.shopify.com/s/files/1/0459/8556/2792/files/pure-scooter-flex-33486185332824.webp?v=1737301861",
+    "https://cdn.shopify.com/s/files/1/0459/8556/2792/files/pure-scooter-flex-33486190411864.webp?v=1737301807"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "1af89d70-8ec4-4d92-98f3-4a420ed65f96",
+   "slug": "pure-electric-air-5",
+   "name": "Pure Electric Air⁵",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1af89d70-8ec4-4d92-98f3-4a420ed65f96/1792167425935_0.png",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-1238469017.jpg?v=1778803728",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-render-side.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-render-front-side.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-side-left.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-side-right.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-front-side.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-render-folded.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-render-top.jpg?v=1752637050",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-air-5-black-render-handlebar-top.jpg?v=1752637050"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "caf52fb6-d83e-4647-9b1b-d314ebc8589d",
+   "slug": "pure-flex",
+   "name": "Pure Flex",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770272.jpg?v=1775006139",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1253735504.jpg?v=1786374759",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770267.jpg?v=1775005995",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770266.jpg?v=1775005958",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770265.jpg?v=1775005930",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770264.jpg?v=1775005871",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770263.jpg?v=1775005899",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-1230770262.jpg?v=1775005811"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "0a363475-44bd-49b3-8d21-6d2bd7c74dfc",
+   "slug": "pure-x-mclaren",
+   "name": "Pure x McLaren",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a363475-44bd-49b3-8d21-6d2bd7c74dfc/1790603574281_0.png",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-black-product-side.jpg?v=1752648511",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-black-product.jpg?v=1752648511",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-chrome-product.jpg?v=1753403995",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-mp4-4-product.jpg?v=1753403995",
+    "https://cdn.shopify.com/s/files/1/0957/4216/5356/files/MclarrenBlack.png?v=1765283950",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-black-front.jpg?v=1753403995",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-black-rear.jpg?v=1753403995",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/pure-mclaren-electric-scooter-black-folding.jpg?v=1753403995"
+   ],
+   "keep": 1
+  },
+  {
+   "id": "4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a",
+   "slug": "velity-511-ss",
+   "name": "Velity 511-Ss",
+   "brand": "Velity",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791661386391_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791997701100_0.png",
+    "https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_f63cf259-2194-4bbc-9ec0-f9e7a92db5f4.jpg?v=1708691656",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_1_b17a9884-edef-46f7-b6da-380a3274d8f5.jpg?v=1708691656",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_2.jpg?v=1708691656",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_3.jpg?v=1708691656",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/406797494_863197979123191_5618743708706283166_n.jpg?v=1708691656"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "6f4f87b2-c609-4785-a866-eb6154fc5123",
+   "slug": "velity-511-sx",
+   "name": "Velity 511-Sx",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/15787-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15785-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15786-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15788-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_2_c0e693fb-8321-4f25-8dac-43d76ed8552c.jpg?v=1708692169",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_3_e44b75e8-3841-4b22-8cfc-ab27ddaa7d8e.jpg?v=1708692168",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/rn-image_picker_lib_temp_1c5ea582-9afd-4106-b956-01c18e3471ea.jpg?v=1731671233",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1139084774867842",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1139084771534509"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "315f588a-c846-4791-a8b8-2f0136074980",
+   "slug": "weped-fold-3",
+   "name": "Weped Fold 3",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1791646894227_0.png",
+    "https://fastride.fr/11923-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11914-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11915-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11916-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11917-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11918-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11919-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11920-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-fold-3-electric-scooter-1.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-fold-3-electric-scooter-2.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-fold-3-electric-scooter-3.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-fold-3-electric-scooter-4.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/weped-fold-3-electric-scooter-5.jpg"
+   ],
+   "keep": 1
+  },
+  {
+   "id": "49be692c-5729-4021-b3f3-a3928a3e4dc9",
+   "slug": "weped-ss-t",
+   "name": "Weped SS-T",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1791646898609_0.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/weped-sst.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/05/weped-sst.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/f98b90_9122a5faaec84ccf8933058d092b5e8d_mv2.jpg",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/weped-sst-high-perfomance-electric-scooter-front-min-416x416.jpg?v=1668528411",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/weped-sst-high-perfomance-electric-scooter-rear-light-min-416x416.jpg?v=1668528412",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/weped-sst-high-perfomance-electric-scooter-taillights-min-416x416.jpg?v=1668528411",
+    "https://scooter.guide/wp-content/uploads/2021/04/weped-scooterguide-1024x768.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_213040.jpg"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "slug": "weped-ssgt",
+   "name": "Weped SSGT",
+   "brand": "Weped",
+   "candidates": [
+    "https://fastride.fr/19623-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19622-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19624-large_default/trottinette-electrique-weped-ssgt.jpg"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "ef3037fe-f72b-4b99-ae55-e4fd1c0adb01",
+   "slug": "wispeed-c10-40-pro",
+   "name": "Wispeed C10-40 Pro",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://media.carrefour.fr/media/referential/media/fab990cf75f4403f837f9c9b22dad89b/p_1500x1500/3483074000928_0.png",
+    "https://media.carrefour.fr/media/referential/media/f122b5612e6847af991f016fd9ab101b/p_1500x1500/3483074000928_1.png",
+    "https://media.carrefour.fr/media/referential/media/a5e4844ff40b4977be807b9e14f54c49/p_1500x1500/3483074000928_4.png",
+    "https://media.carrefour.fr/media/referential/media/32c601c31ddd4f8a8c5220f833bce752/p_1500x1500/3483074000928_6.png",
+    "https://media.e.leclerc/3483074000928_2?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3483074000928_3?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3483074000928_5?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3483074000928_7?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "5b052121-6046-4f5a-af4b-4cc004739c3b",
+   "slug": "wispeed-c10-55-max",
+   "name": "Wispeed C10-55 Max",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.molecule.be/media/seo/2/product/600x600/b/1/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.jpg",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/1/e/3/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/e/d/e/e/edee383bbda2492605469bca2cae5deb7b4cc93b_image20096.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/2/d/f/6/2df62925bde7b85e5707b9431d39e5009223ebd0_image20097.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/d/3/6/bd3692e3e527cff28b2e0b44507edbcd4f9eba37_image20098.webp",
+    "https://media.e.leclerc/3483074000942_1?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_2?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_3?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_4?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_5?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_6?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://media.e.leclerc/3483074000942_7?fit=fit&fmt=jpg&qlt=90&wid=1200&hei=1200",
+    "https://api.technopolis.bg/medias/Product-details-main-304072.jpg?context=bWFzdGVyfHJvb3R8OTA5OTV8aW1hZ2UvanBlZ3xhRFJoTDJoaFppODBOemMxT0RBNU1qUXpOVFE0Tmk5UWNtOWtkV04wTFdSbGRHRnBiSE10YldGcGJsOHpNRFF3TnpJdWFuQm58MjZjZDUyNDY3MDQ1YmUzY2RkNmJlNzYxNDBjYjY3ZWM3ZTdlMzY5YTZmMTg5ZjUzZWFmYzA3ZmQxYTFjZjhlYw"
+   ],
+   "keep": 1
+  },
+  {
+   "id": "8060ae3d-dd7a-4d0a-ad85-7deb853e4db4",
+   "slug": "xiaomi-mi-m365",
+   "name": "Xiaomi Mi M365",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792003513387_0.png",
+    "https://ceno.lv/uploads/catalogue/product/xiaomi-mi-m365-electric-scooter-original-size-172.jpg",
+    "https://cdn.deporvillage.com/cdn-cgi/image/f=auto,q=75,fit=contain,background=white/product-vertical/xi-fbc4003gl.jpg",
+    "https://static2.nordic.pictures/30062370-thickbox_default/xiaomi-mi-electric-scooter-m365-white.jpg",
+    "https://www.buyitdirect.ie/Images/A304D-A46-F6A_1_6366280_Supersize.jpg?v=10",
+    "https://www.img-exellent.be/images/photolib/865x615/164182/39761790_1267223381.jpg",
+    "https://www.img-exellent.be/images/photolib/865x615/164183/39761790_5072143497.jpg",
+    "https://www.img-exellent.be/images/photolib/865x615/164184/39761790_4959615842.jpg",
+    "https://i0.wp.com/www.madcharge.com/wp-content/uploads/2020/04/buy-xiaomi-m365.jpg?fit=800%2C800&ssl=1",
+    "https://techgearlab.b-cdn.net/photos/32/65/447983_557_XL.jpg"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "4cd051eb-a205-438c-aa8f-8b01b80002c4",
+   "slug": "yeep-me-100a",
+   "name": "Yeep.me 100a",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://media.e.leclerc/3700293221089_1?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_2?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_3?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_4?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_5?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_6?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90",
+    "https://media.e.leclerc/3700293221089_7?fit=fit&wid=1500&hei=1500&fmt=jpg&qlt=90"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "70da46ff-7b49-4173-b3aa-cf257ba46f0d",
+   "slug": "yeep-me-100a-start",
+   "name": "Yeep.me 100a start",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://boulanger.scene7.com/is/image/Boulanger/3700293223403_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://yeep.me/2713-large_default/yeepme-100a-start.jpg",
+    "https://yeep.me/2714-large_default/yeepme-100a-start.jpg",
+    "https://yeep.me/2715-large_default/yeepme-100a-start.jpg",
+    "https://yeep.me/2717-large_default/yeepme-100a-start.jpg"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "d46f2abd-35f8-43dd-a8db-ebf3593d8d72",
+   "slug": "yeep-me-80n-evo-plus",
+   "name": "Yeep.me 80N Evo Plus",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://yeep.me/4417-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4418-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4422-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4423-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4419-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4420-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4424-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4425-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4426-thickbox_default/yeepme-80n-evo.jpg",
+    "https://yeep.me/4427-thickbox_default/yeepme-80n-evo.jpg"
+   ],
+   "keep": 2
+  },
+  {
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "slug": "yeep-me-85a-evo",
+   "name": "Yeep.me 85a Evo",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://contents.mediadecathlon.com/m28178020/k$7e4f319604ff34ac90f3bad150f29f60/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m28178021/k$1f729602d2fcefc5d28436832aa58552/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m28178022/k$ad1def2bc6201044b0de05bfc02e31c2/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m28178023/k$f3560c5eda6c4dabfb379753d61cd00c/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m28178026/k$5344cc9b9d9ee4769627102c07027cff/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m28178029/k$3633619a5253f27dd631db2c152161ac/picture.jpg?format=auto&f=3000x0",
+    "https://contents.mediadecathlon.com/m36510050/k$d8cbd0732e14607d33dd5fca039e8d60/picture.jpg?format=auto&f=3000x0"
+   ],
+   "keep": 0
+  },
+  {
+   "id": "0debaa11-8bf6-4367-a590-20adaf9c2a3c",
+   "slug": "zwheel-zrino",
+   "name": "Zwheel ZRino",
+   "brand": "Zwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0debaa11-8bf6-4367-a590-20adaf9c2a3c/1791639771320_0.png",
+    "https://es.zwheel.com/images/product/zrino/cover.png",
+    "https://www.hobbymacias.es/tienda/25029-large_default/patin-electrico-zwheel-t4-zrino-2022-con-app-homologado-dgt.jpg"
+   ],
+   "keep": 1
+  }
+ ]
+}
