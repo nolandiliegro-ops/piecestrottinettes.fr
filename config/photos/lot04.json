@@ -1,0 +1,416 @@
+{
+ "lot": "lot04",
+ "models": [
+  {
+   "id": "3e1c5c6c-273d-4aa9-99a1-8978b111cbd4",
+   "slug": "ducati-cross-e-sport",
+   "name": "Ducati CROSS-E Sport",
+   "brand": "Ducati",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3e1c5c6c-273d-4aa9-99a1-8978b111cbd4/1792165353664_0.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-electric-yellow-black.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-yellow-front-view-headlights.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-rear-view-black-background.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-yellow-black-design.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-ergonomic-design-yellow-black.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-scrambler-e-cross-scooter-handlebar-display-electric-vehicle.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "390a32c3-8fd4-4d16-82e8-1fc363ff4fd2",
+   "slug": "ducati-pro-i-evo",
+   "name": "Ducati PRO-I EVO",
+   "brand": "Ducati",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/390a32c3-8fd4-4d16-82e8-1fc363ff4fd2/1792165343314_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/390a32c3-8fd4-4d16-82e8-1fc363ff4fd2/1792165348021_0.png",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t7.jpg",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t6.jpg",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/products/DUCATI-PRO-I-EVO-BLACK.t5.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Ducati_3.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d8fed348-10ab-43a1-9555-527d1f86d4de",
+   "slug": "ducati-pro-ii-evo",
+   "name": "Ducati Pro-II Evo",
+   "brand": "Ducati",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1791646888532_0.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-black-background.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-style-italian-design.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-black-magnesium-alloy-frame.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-scooter-lightweight-design.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-lightweight-design.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-ii-evo-electric-scooter-premium-urban-commuter-scooter-modern-design.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "61a2b888-5269-49cf-9179-70c0f6c4793c",
+   "slug": "ducati-pro-iii",
+   "name": "Ducati Pro-III",
+   "brand": "Ducati",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/61a2b888-5269-49cf-9179-70c0f6c4793c/1791646885658_0.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-lightweight-frame.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-lightweight-frame_1.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-25kmh-lightweight-durable.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-urban-commuting-fast-lightweight-350w-motor.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-front-wheel-brakes-lightweight-design-urban-commuting.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-handlebar-closeup-performance-350W-black-design.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "3bb73238-08c0-41dc-9f9c-e640397f28dc",
+   "slug": "dyu-c4",
+   "name": "DYU C4",
+   "brand": "DYU",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791661117156_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791997494554_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bb73238-08c0-41dc-9f9c-e640397f28dc/1791997501031_0.png",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI_4c5f98cd-4d64-4507-853d-166dbe4b3b3d.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-1_8451956d-d90d-4758-af06-3f94ec22c2b9.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINI-3_505ea5f9-7f6b-4d43-952e-2b4f34750fbd.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/C4-MINII-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/DYU-14MINI.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "6814689c-bd7a-4f1c-9e1f-303b29fac4c1",
+   "slug": "dyu-d3f",
+   "name": "DYU D3F",
+   "brand": "DYU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-1_fe54634a-7ea5-4dfe-ba56-89a2b5777f86.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI_8dc3d155-c293-452f-b04b-c3acd35ba879.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-1_6c406c7d-d9f9-474f-9aee-810cafa51915.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-2_42e81933-dd9c-4819-a987-d3c94b0aa2de.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI_d25a8490-6c21-4b70-a0d5-0f155402949b.jpg",
+    "https://cdn.shopify.com/s/files/1/0637/6449/6616/files/D3F-MINI-1_cad998bb-7131-4b05-ba5d-e2d1b5a0d10a.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791661110243_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791661114167_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6814689c-bd7a-4f1c-9e1f-303b29fac4c1/1791997717322_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "d9e58b4e-75a9-4a66-b11d-d0ceff901321",
+   "slug": "e-twow-booster-es",
+   "name": "E-Twow Booster ES",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1791938267434_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/booster-photo.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boosteresblack.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boosteresgrey.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostereswhite.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render__0001s_0000_Layer-555.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render__0001s_0002_Layer-557.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "743fb217-4a3e-4a88-80dc-ea4188ee361b",
+   "slug": "e-twow-booster-se",
+   "name": "E-Twow Booster SE",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1791663917012_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1791663920341_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_gris_resistante-997796.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_ultra_legere-641295.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_pliable-327829.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_Guidon_ecran-521310.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_SE_pneus_8_pouces_gomme_tendre-304842.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "7059bc46-5288-4ed6-a047-4f89ea34db7a",
+   "slug": "e-twow-booster-v",
+   "name": "E-Twow Booster V",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7059bc46-5288-4ed6-a047-4f89ea34db7a/1791938511146_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervnegru2shop.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervgrishop.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/boostervalbshop.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_V_Pas_cher-283657.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_Booster_V_pliable-631108.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_Booster_V_guidon-209825.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "6168d22e-a4d9-48c9-9107-2a9ecb6386e2",
+   "slug": "e-twow-gt-se",
+   "name": "E-Twow GT SE",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6168d22e-a4d9-48c9-9107-2a9ecb6386e2/1791663924098_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Etwow_GT_SE_Pas_cher-317390.jpg",
+    "https://www.maxblinker.fr/5949-panda_big_default/e-twow-booster-gt-se.jpg",
+    "https://www.maxblinker.fr/5941-panda_big_default/e-twow-booster-gt-se.jpg",
+    "https://www.maxblinker.fr/5942-panda_big_default/e-twow-booster-gt-se.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_GT_SE_blanc_pliable-717256.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Etwow_GT_SE_legere-616584.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ead39c60-3a4e-4659-8bd6-e25786cc5ff3",
+   "slug": "e-twow-gt-sl",
+   "name": "E-Twow GT SL",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791663902724_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791663906590_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ead39c60-3a4e-4659-8bd6-e25786cc5ff3/1791997721830_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-SL_black.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-SL_gray.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Angle2_Black_Light.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Angle2_Gray_Light.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/Render_6_10.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SL_handle_bar.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "f584e488-9dfc-4069-9324-ea64382b5e14",
+   "slug": "e-twow-gt-sport",
+   "name": "E-Twow GT Sport",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791663910099_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791663913874_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f584e488-9dfc-4069-9324-ea64382b5e14/1791997734503_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-black.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-gray.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-orange.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport_angle.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport_folded.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/back_1a44ab9f-fb7c-40a8-8378-9f67202ebdad.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "7e260ded-c11c-4f26-8721-133128c63678",
+   "slug": "e-twow-gts",
+   "name": "E-Twow GTS",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e260ded-c11c-4f26-8721-133128c63678/1791938269740_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e260ded-c11c-4f26-8721-133128c63678/1791938271859_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SPORT_ruby_red_2.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_GT_SPORT_ruby_red_4_57bc35b6-a96f-4949-813c-5f68171507eb.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-green.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT-sport-red.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/GT_sport_limited_edition_blue.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_etwow_GTS_pas_cher_noir-901566.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "5ce5a58e-d4f7-4916-a51e-4bf16c824109",
+   "slug": "e-twow-tanktorq-tk2",
+   "name": "E-Twow TankTorq TK2",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_tk2_main_escooter.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray1.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_rear.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/01_78d27457-fd59-4116-bacc-e55c5507f7b8.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/IMG_0491.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792165801202_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792165807662_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "52cf2a00-db4e-4418-a7be-a48db1fe8e71",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "name": "E-Twow TankTorq TK2 Lite",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_electric_scooter_TK2_lite.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folded_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_rear_wheel_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_front_drum_brake_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folding_lock.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_charging_socket.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792165813881_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792165820447_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "45ad6555-d6d3-4213-8a44-9e5955647bef",
+   "slug": "e-twow-tanktorq-tk3",
+   "name": "E-Twow TankTorq TK3",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/etwow_tk3_main_photo.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_ELECTRIC_SCOOTER_gray.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_ELECTRIC_SCOOTER_green.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/electric_scooter_e-twow_tk3_royal_purple.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_escooter.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45ad6555-d6d3-4213-8a44-9e5955647bef/1792165826734_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45ad6555-d6d3-4213-8a44-9e5955647bef/1792165834557_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "f76f19df-e126-4546-961f-f3477da208d8",
+   "slug": "e-twow-tanktorq-tk5",
+   "name": "E-Twow TankTorq TK5",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1791938273805_0.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/TK5LightGray.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK5_ELECTRIC_SCOOTER_army_green_1_b6071db0-e883-4b19-a6f3-1ec0c5233af8.png",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/TK5Orange_be7ee1e3-e351-4369-8537-2792635338e3.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo1_0cba806e-dbba-4b73-97f8-af1e07f813b0.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo2_31b0df0d-e519-4f4a-af58-e301b8f39a04.jpg",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/tk5_photo3.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1",
+   "slug": "engwe-y10",
+   "name": "Engwe Y10",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1/1791938801907_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1/1791938805411_0.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y10.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y10_629fbfd2-2d76-48d0-8981-4f0097075768.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_85d2aefa-f74d-4885-a301-9bfb1560347a.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_c2840e42-f324-4cdd-85f8-09249c9bb32d.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_ed39097f-5a1f-4ac7-950a-96fa56b1ee97.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_df6fd3eb-a255-4d03-a11c-c1d0088b0ac6.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "aaf64e45-cba2-482a-856f-d13a7f64e944",
+   "slug": "engwe-y1000",
+   "name": "Engwe Y1000",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792165848453_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792165855547_0.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWE_Y1000_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWEY1000_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_b88f4ff5-1ced-4593-bdc0-04edbe726db6.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_c177786a-156f-4b6e-a844-2f7e4fdbe445.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "fc75e858-7731-4a9e-ae19-f2029cfa257d",
+   "slug": "engwe-y400",
+   "name": "Engwe Y400",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc75e858-7731-4a9e-ae19-f2029cfa257d/1791939044457_0.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_f688ba48-853b-455d-af9a-d9b34a173a25.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_0645175a-c195-47e2-82d3-a740a70be36e.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_02b9d956-9e9d-47e5-8376-f954c4372b06.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_e76ddfbb-0794-462d-8f3b-33cad5dca04b.jpg",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/1_b2cc5b21-48fc-4186-bd49-1ef21deadf36.jpg",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/2_ee2aee2c-f472-497b-b677-51592b82b8c3.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "58709fac-dfd0-40be-bedc-c09125a74b41",
+   "slug": "engwe-y600",
+   "name": "Engwe Y600",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791637510991_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791637513164_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/58709fac-dfd0-40be-bedc-c09125a74b41/1791997729932_0.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600_Black.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_da194579-b63e-494a-b37e-36479837d763.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_9cc1cba2-fdf2-422f-97b0-254fade1cef7.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_febcfa69-d1f4-4a5e-b06d-b2d3d2c5879b.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "046f0790-d0ff-4105-ae03-3a049d6aa48a",
+   "slug": "engwe-y600s",
+   "name": "Engwe Y600S",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791637517012_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791997505844_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/046f0790-d0ff-4105-ae03-3a049d6aa48a/1791997510299_0.png",
+    "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/2_765080e2-223f-4e23-9676-ea005c42d878.webp",
+    "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/1_2d6fca9a-4c5d-4d6e-922e-431b5b4c9c1d.webp",
+    "https://cdn.shopify.com/s/files/1/0657/6026/4416/files/3_75f963fb-38af-45b1-9e1a-59973b0fa04e.webp",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600-s-electric-scooter-foldable-portable-830w-motor-urban-freedom-black.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600s-electric-scooter-rear-wheel-suspension-design.png",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/engwe-y600s-electric-scooter-handlebar-display-features-red-black.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "8432d1f9-6592-4aa7-91bf-01eaa27f68a3",
+   "slug": "engwe-y700",
+   "name": "Engwe Y700",
+   "brand": "Engwe",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8432d1f9-6592-4aa7-91bf-01eaa27f68a3/1791637521754_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8432d1f9-6592-4aa7-91bf-01eaa27f68a3/1791997516627_0.png",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Y700_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/01_6f3fb1b7-784e-4d2e-875a-00e54ad13e31.jpg",
+    "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/02_b4984f13-2e65-42db-93aa-e6ad61bd0ef9.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

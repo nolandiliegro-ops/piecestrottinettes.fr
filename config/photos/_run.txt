@@ -1,1 +1,5 @@
-dry t01
+dry lot01
+dry lot03
+dry lot04
+dry lot05
+dry lot06

@@ -1,0 +1,339 @@
+{
+ "lot": "lot05",
+ "models": [
+  {
+   "id": "71777b91-6ef3-4a3a-b5c2-ac84bd153d9e",
+   "slug": "halo-knight-t104",
+   "name": "Halo Knight T104",
+   "brand": "Halo Knight",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791647643393_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791647645183_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71777b91-6ef3-4a3a-b5c2-ac84bd153d9e/1791997754713_0.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_5.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_3.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_1_04ae1d45-ae53-4d42-91dc-0bfbdc8ac722.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104_7.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T104-7.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "a5efb241-0474-4dfb-a311-1384c91713fe",
+   "slug": "halo-knight-t107-pro",
+   "name": "Halo Knight T107 Pro",
+   "brand": "Halo Knight",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5efb241-0474-4dfb-a311-1384c91713fe/1792165871444_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5efb241-0474-4dfb-a311-1384c91713fe/1792165876990_0.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/06.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/03_3f51f660-57af-4e49-bb53-2255be7aa842.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/01_77a22a9f-9dc9-4759-8a39-0dacdd5910ec.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/04_40b81b80-399d-4156-a0e6-e5eb97421d10.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "66db2853-9729-4090-a423-abb08143c120",
+   "slug": "halo-knight-t108",
+   "name": "Halo Knight T108",
+   "brand": "Halo Knight",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791647639911_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791997521426_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66db2853-9729-4090-a423-abb08143c120/1791997528742_0.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/05_1f247c1f-9329-4860-b6a8-b82a95cbf48a.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/04_13c6b441-bf69-48c2-a1ba-f9429a8f938c.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/10_e7b2eb70-e7f8-4755-ab53-681ddd627cb8.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/08_bb141682-3a42-41d5-8238-99be15a15ae8.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "c6051e5c-894b-4dac-8d3a-2c5d68e921b7",
+   "slug": "halo-knight-t108-pro",
+   "name": "Halo Knight T108 Pro",
+   "brand": "Halo Knight",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_5.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_3.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_2.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_6.png",
+    "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/T108Pro_7.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791647635436_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791647637632_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c6051e5c-894b-4dac-8d3a-2c5d68e921b7/1791997764080_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "0c105498-abf0-4a0e-ac55-9794c503610e",
+   "slug": "hiboy-ks4",
+   "name": "Hiboy KS4",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c105498-abf0-4a0e-ac55-9794c503610e/1791998719858_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c105498-abf0-4a0e-ac55-9794c503610e/1791998722487_0.png",
+    "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter.jpg",
+    "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-1.jpg",
+    "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-2.jpg",
+    "https://minibikesstore.co/wp-content/uploads/2026/04/hiboy-ks4-36v-75ah-350w-electric-scooter-3.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "64b4d7b0-3863-486e-9d90-4077bafdc0ad",
+   "slug": "hiboy-ks4-pro",
+   "name": "Hiboy KS4 Pro",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939054658_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939057120_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/64b4d7b0-3863-486e-9d90-4077bafdc0ad/1791939059867_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/ks4-pro_b9a36f49-6aa0-4fe4-aa82-360851d31039.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2-2_25a0c3c7-7a65-48dc-8855-5298ac639d56.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_0a44734d-9cd1-4203-affb-3affeb0eca42.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "8e751af1-240a-4f3f-8c61-0a8dff833feb",
+   "slug": "hiboy-s2",
+   "name": "Hiboy S2",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998713512_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8e751af1-240a-4f3f-8c61-0a8dff833feb/1791998717039_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "92122200-8046-4df1-a480-5301992e2683",
+   "slug": "hiboy-s2-lite",
+   "name": "Hiboy S2 Lite",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92122200-8046-4df1-a480-5301992e2683/1791661134528_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Black-light_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Pink-light_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/6_3afdd083-708a-42b5-9233-220f1d064dfb.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "8eb2620b-5650-46a3-be86-f94814fe742e",
+   "slug": "hiboy-s2-max",
+   "name": "Hiboy S2 MAX",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8eb2620b-5650-46a3-be86-f94814fe742e/1791939049493_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8eb2620b-5650-46a3-be86-f94814fe742e/1791939052278_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4a7609ce-0137-4042-962d-dc7bdabe5a26",
+   "slug": "hiboy-s2-nova",
+   "name": "Hiboy S2 Nova",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a7609ce-0137-4042-962d-dc7bdabe5a26/1792165900758_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a7609ce-0137-4042-962d-dc7bdabe5a26/1792165906405_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-1_2a128426-6c3d-4cc3-b018-0faa21276543.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Nova_74db17c7-6e58-4be0-a204-f4d15b9365e6.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-2_329e6f81-39c9-424e-8d50-602ab992d4a7.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-3_db14f99d-a3f4-442d-a3ce-44c8f8d608ee.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb",
+   "slug": "hiboy-s2-pro",
+   "name": "Hiboy S2 Pro",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661126541_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661129041_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb/1791661131751_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-PRO_c6db97f7-8bce-44f9-afdb-db4ecfb161bc.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-PRO_2f7d95cf-6eb0-4c9f-ae94-5d52e3c6cf8d.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "78482e84-2479-4aee-8405-a8367048d048",
+   "slug": "hiboy-s2r-plus",
+   "name": "Hiboy S2R Plus",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/78482e84-2479-4aee-8405-a8367048d048/1792165888279_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/78482e84-2479-4aee-8405-a8367048d048/1792165895186_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/b58ce7b99582c961375527c3c6b27ebb.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "0981dfe2-e775-4694-8f66-2f0764c35748",
+   "slug": "hiboy-titan-pro",
+   "name": "Hiboy Titan Pro",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0981dfe2-e775-4694-8f66-2f0764c35748/1791939304617_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "7704f9c7-7a62-4c1b-8d17-0a869acd840a",
+   "slug": "hiboy-x300",
+   "name": "Hiboy X300",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7704f9c7-7a62-4c1b-8d17-0a869acd840a/1792165911747_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7704f9c7-7a62-4c1b-8d17-0a869acd840a/1792165917977_0.png",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-888.jpg",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3_8c1fb908-d958-4e82-9d03-e7c7be26e2ee.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "20900c0e-d3b7-4838-8338-b21cf2f94f3d",
+   "slug": "hikerboy-brio",
+   "name": "Hikerboy Brio",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792165930082_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792165935515_0.png",
+    "https://media.cdnws.com/_i/21277/5321/1221/24/trottinette-electrique-hikerboy-brio-jaune.png",
+    "https://media.cdnws.com/_i/21277/5320/3836/23/trottinette-electique-hikerboy-brio-rouge-10-pouce.png",
+    "https://speedbikes.fr/wp-content/uploads/2023/02/hikerboy-brio-1.png",
+    "https://speedbikes.fr/wp-content/uploads/2023/02/trottinette-electrique-hikerboy-brio-bleu-pneu-10-pouces.png.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "8418e9e6-ab05-4aea-b43b-39b7b8644303",
+   "slug": "hikerboy-curtis",
+   "name": "Hikerboy Curtis",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791637531712_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791637536695_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8418e9e6-ab05-4aea-b43b-39b7b8644303/1791997744993_0.png",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisRed_HikerboyScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisGrey_HikerboyScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/HikerboyScooter_CurtisRed_Updated_WEBP.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/CurtisGrey_HikerboyScooter_056d994f-0f6b-49de-9810-e0e6514be79b.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "ab62a280-5876-4e20-9423-4a3426856114",
+   "slug": "hikerboy-curtis-dual",
+   "name": "Hikerboy Curtis Dual",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004280317_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004284601_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ab62a280-5876-4e20-9423-4a3426856114/1792004289100_0.png",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/1._Curtis_Dual_HikerboyScooter_2_1_e154bb13-e033-4228-a127-6c3b2576417e.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/2._Curtis_Dual_HikerboyScooter_1_1cd66646-470b-404d-8b29-621d90979a8c.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/4._Curtis_Dual_HikerboyScooter_3_d2303541-c92d-4cd8-a2e3-a5872d623ba1.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/5._Curtis_Dual_HikerboyScooter_5_8ff808b0-7ba5-4c91-8612-e4b79bd535a6.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/3._Curtis_Dual_HikerboyScooter_4_fe3179ca-a90f-4161-8014-edbd1aadc6c3.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "470816ac-6d6f-4005-aa8c-874053c7c432",
+   "slug": "hikerboy-curtis-dual-pro",
+   "name": "Hikerboy Curtis Dual Pro",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/470816ac-6d6f-4005-aa8c-874053c7c432/1792165964805_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/470816ac-6d6f-4005-aa8c-874053c7c432/1792165970054_0.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-5999450.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-7111111.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-4560548.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8134066.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8574430.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-5984519.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "609dc353-fc81-420d-9c59-a4e18bd9aa15",
+   "slug": "hikerboy-curtis-plus",
+   "name": "Hikerboy Curtis Plus",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004255350_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004268670_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/609dc353-fc81-420d-9c59-a4e18bd9aa15/1792004272889_0.png",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/1._Curtis_Plus_Grey_HikerboyScooter_2_6864fd89-821c-4a09-b5d7-74310558e329.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/2.CurtisPlus_Grey_HikerboyScooter_1.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/3.CurtisPlus_Grey_HikerboyScooter_3.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/4.CurtisPlus_Grey_HikerboyScooter_4.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/5.CurtisPlus_Grey_HikerboyScooter_5.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "24bcc9be-d1ce-4d3f-84a7-716ca81b4836",
+   "slug": "hikerboy-foxtrot-plus",
+   "name": "Hikerboy Foxtrot Plus",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791637527807_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791637529503_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24bcc9be-d1ce-4d3f-84a7-716ca81b4836/1791997774253_0.png",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrot_y_WEBP.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusred_HikerboyScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusblue_HikerboyScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplusgrey_HikerboyScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/foxtrotplussilver_HikerboyScooter.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "a82f502d-c28f-4785-8214-91275d167726",
+   "slug": "hikerboy-off-road-2",
+   "name": "Hikerboy Off-Road 2",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165942733_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165949552_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792165958578_0.png",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-02.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-03.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-09.webp",
+    "https://cdn.shopify.com/s/files/1/0286/7750/5155/files/Off-road-v2-11.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  }
+ ]
+}

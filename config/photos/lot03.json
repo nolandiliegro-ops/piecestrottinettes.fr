@@ -1,0 +1,371 @@
+{
+ "lot": "lot03",
+ "models": [
+  {
+   "id": "53bd35b7-eb62-449a-a77c-e97f126298ee",
+   "slug": "dualtron-aminia",
+   "name": "Dualtron Aminia",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/53bd35b7-eb62-449a-a77c-e97f126298ee/1791937734136_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/53bd35b7-eb62-449a-a77c-e97f126298ee/1791937739057_0.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-1.jpg?v=1775404276",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-2.jpg?v=1775404276",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-3.jpg?v=1775404277",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-4.jpg?v=1775404277",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-5.jpg?v=1775404276",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-6.jpg?v=1775404276"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a533cd48-4574-4d08-b072-759602b7effe",
+   "slug": "dualtron-city-2025",
+   "name": "Dualtron City 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541174396_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541176205_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541177638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a533cd48-4574-4d08-b072-759602b7effe/1782541179163_0.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-1.jpg?v=1775404373",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-3.jpg?v=1775404373",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-2.jpg?v=1775404373",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-6.jpg?v=1775404373",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-4.jpg?v=1775404373",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-7.jpg?v=1775404373"
+   ],
+   "n_old": 4,
+   "bad": false
+  },
+  {
+   "id": "28ff423c-fb48-410b-8681-b1c8e127275c",
+   "slug": "dualtron-dolphin",
+   "name": "Dualtron Dolphin",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/28ff423c-fb48-410b-8681-b1c8e127275c/1791937742535_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/28ff423c-fb48-410b-8681-b1c8e127275c/1791937746471_0.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-1.jpg?v=1775417581",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-2.jpg?v=1775417581",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-4.jpg?v=1775417581",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-3.jpg?v=1775417582",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-6.jpg?v=1775417581",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-5.jpg?v=1775417581"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+   "slug": "dualtron-mini",
+   "name": "Dualtron Mini",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1778542854852_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1791997289578_0.png",
+    "https://dualtron-minimotors.ma/wp-content/uploads/2025/10/dualtron-mini-long-body-double-moteur.jpg",
+    "https://dualtron-minimotors.ma/wp-content/uploads/2024/05/trottinette-electrique-dualtron-mini-double-moteur-52v-15-6ah_659ebce4b0f8a.jpeg",
+    "https://dualtron-minimotors.ma/wp-content/uploads/2025/10/dualtron-long-body-double-moteur.jpg",
+    "https://dualtron-minimotors.ma/wp-content/uploads/2024/05/trottinette-electrique-dualtron-mini-double-moteur-52v-15-6ah_659ebce700fae.jpeg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "daac542d-a54c-43e1-919f-9c2816593065",
+   "slug": "dualtron-mini-special",
+   "name": "Dualtron Mini Special",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/daac542d-a54c-43e1-919f-9c2816593065/1791938001862_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_minimotors_dualtron_mini.jpg?v=1764046813",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_special_Long_body.jpg?v=1764046813",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_special_Long_body_phare_etanche.jpg?v=1764046813",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_Mini_Special_Puissante_et_Confortable-626924.jpg?v=1754114493",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_weebot_minimotors_special_suspensions_avant_zoom.jpg?v=1764046813",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_mini_weebot_minimotors_special_phare_avant.jpg?v=1764046813"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "52165e10-62ef-45e3-bc3c-ffc599558ff6",
+   "slug": "dualtron-popular",
+   "name": "Dualtron Popular",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52165e10-62ef-45e3-bc3c-ffc599558ff6/1791937989603_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52165e10-62ef-45e3-bc3c-ffc599558ff6/1791937993072_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-double-moteur-pas-cher_1-938708.jpg?v=1754044912",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-double-moteur-profile-898943.jpg?v=1766446809",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-arriere-519428.jpg?v=1766446809",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_POP-959217.jpg?v=1766446809",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-roue-arriere-301362.jpg?v=1766446809",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-dualtron-popular-display-776995.jpg?v=1766446809"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "cc02182a-e809-4cea-8900-7a97c932bfdb",
+   "slug": "dualtron-raptor-2",
+   "name": "Dualtron Raptor 2",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc02182a-e809-4cea-8900-7a97c932bfdb/1791937996238_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_raptor2_pas_cher.jpg?v=1723647056",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_puissante.jpg?v=1723647124",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_systeme_pliage.jpg?v=1717660648",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_led_potence.jpg?v=1717660635",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_afficheur_lcd_ey3.jpg?v=1717660640",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/dualtron_raptor2_trottinette_electrique_frein_tambour.jpg?v=1717660643"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "728f0d18-1135-4567-a575-190039b4cef6",
+   "slug": "dualtron-storm",
+   "name": "Dualtron Storm",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1791997272154_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1778555917447_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/728f0d18-1135-4567-a575-190039b4cef6/1791997275716_0.png",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Storm-2023-EDITION.jpg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-NEW-STORM-PROFILE-2.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-NEW-STORM-REAR-2.jpeg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-2.jpg?v=1775402797",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-5.jpg?v=1775402797",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-New-Storm-Image-8.jpg?v=1775402797"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "8d2f299c-521c-42df-a5af-6e8f496dd21c",
+   "slug": "dualtron-storm-ltd-2025",
+   "name": "Dualtron Storm LTD 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1778555907406_2.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_storm_limited_new_2025.jpg?v=1786545027",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_storm_limited_new.jpg?v=1766504392",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_storm_ltd_limited_84v_45ah_bleu.jpg?v=1766504392",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN8492_only_wann-min-min.jpg?v=1766504392",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN8473_only_wann-min-min.jpg?v=1766504392"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "ce420bc8-eb01-4f1d-9953-09c4b27571e6",
+   "slug": "dualtron-thunder-3",
+   "name": "Dualtron Thunder 3",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1778555116751_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1778555116751_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1791997284839_0.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-1.jpg?v=1775404228",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-2.jpg?v=1775404228",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-4.jpg?v=1775404229",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-5.jpg?v=1775404228",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-7.jpg?v=1775404229",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-8.jpg?v=1775404229"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "6177308c-701f-40e6-a503-98c233fe9901",
+   "slug": "dualtron-togo-max",
+   "name": "Dualtron Togo Max",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6177308c-701f-40e6-a503-98c233fe9901/1792165313528_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6177308c-701f-40e6-a503-98c233fe9901/1792165318804_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max.png?v=1774327882",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_profil.png?v=1772709640",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_60V.png?v=1774327915",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_pliable.png?v=1772709639",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_togo_max_pneus.png?v=1772709639"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "fc56d779-e310-425b-98af-3946e95025ed",
+   "slug": "dualtron-togo-plus",
+   "name": "Dualtron Togo Plus",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc56d779-e310-425b-98af-3946e95025ed/1792165298785_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fc56d779-e310-425b-98af-3946e95025ed/1792165303769_0.png",
+    "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-1.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-4.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-2.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2023/09/Dualtron-Togo-E-Scooter-3.jpeg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6ed88a51-1208-4a7f-a5f1-5eb3584d97db",
+   "slug": "dualtron-togo-pro",
+   "name": "Dualtron Togo Pro",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792165308680_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_Pro_pas_cher.png?v=1772709638",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_Pro_fiable_securisante.png?v=1772709638",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Dualtron_Togo_pro_pneus_resistants.png?v=1772709639"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "849ccd36-c3ff-4fb6-8c7c-a447d5410771",
+   "slug": "dualtron-ultra",
+   "name": "Dualtron Ultra",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/849ccd36-c3ff-4fb6-8c7c-a447d5410771/1778555929472_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_pas_cher-610157-858355.jpg?v=1735180393",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_Ultra_minimotors-372164.jpg?v=1734952722",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_pliee-953629.jpg?v=1734952722",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_large_deck-251125.jpg?v=1734952722",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_noir_zoom_roue_avant-780514.jpg?v=1734952722",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_ultra_minimotors_noir_zoom_frein_disque-464397.jpg?v=1734952722"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "d4cd80af-a231-485f-8b69-d3d9be161805",
+   "slug": "dualtron-ultra-2",
+   "name": "Dualtron Ultra 2",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4cd80af-a231-485f-8b69-d3d9be161805/1778555125589_0.png",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/dualtron-ultra-2-new-edition.jpg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-Upgrade-Profile.jpg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-Upgrade-Front.jpg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-UPGRADE-EY4-Square.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-Ultra-2-New-Edition-EY4-Display.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "2de827d0-236d-4a96-beb1-729c33724e7b",
+   "slug": "dualtron-ultra-one",
+   "name": "Dualtron Ultra One",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792165330130_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792165324750_0.png",
+    "https://getscuti.com/wp-content/uploads/2026/09/dualtron-ultra-one-gallery-front.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567976.jpg",
+    "https://getscuti.com/wp-content/uploads/2026/09/dualtron-ultra-one-gallery-folded.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567979.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567980.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/ab9b64c9-1b3a-449e-8d9c-1df3474ec87f/1789662567982.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7",
+   "slug": "dualtron-victor-2025",
+   "name": "Dualtron Victor 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1778555918887_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualton_victor_minimotors-703651.jpg?v=1786545018",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors-950999.jpg?v=1769002398",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_minimotors_IPX5_puissante_ecran_EY4.jpg?v=1769002398",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors_EY4-492104.jpg?v=1769002398",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_puissante_minimotors_EY4_pas_cher.jpg?v=1769002398",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/display_ey4_dualtron_victor_minimotors_2024-763370.jpg?v=1769002398"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "82ad9437-6d81-435e-99b0-03be174c7556",
+   "slug": "dualtron-victor-limited-2025",
+   "name": "Dualtron Victor Limited 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/82ad9437-6d81-435e-99b0-03be174c7556/1778555132477_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/82ad9437-6d81-435e-99b0-03be174c7556/1791997280995_0.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-1.jpg?v=1775404303",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-2.jpg?v=1775404303",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-3.jpg?v=1775404303",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-7.jpg?v=1775404303",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-4.jpg?v=1775404303",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Victor-Limited-Image-6.jpg?v=1775404303"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "000b20eb-3e23-4dbf-9cdd-6790915c0d8c",
+   "slug": "dualtron-victor-luxury",
+   "name": "Dualtron Victor Luxury",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/000b20eb-3e23-4dbf-9cdd-6790915c0d8c/1791938007395_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Dualtron_victor_Luxury_pas_cher_edd971d3-af31-4c1c-ad2d-e873f2c5a463.jpg?v=1786545016",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_puissante_minimotors_f189276b-7c1d-47bd-a309-a5b45ed163be-749519.jpg?v=1766154779",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_stable.jpg?v=1766154779",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury___60V_28_AH.jpg?v=1766154779",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_dualtron_victor_luxury_plus_roue_avant.jpg?v=1766154779",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Dualtron_Victor_luxury_plus_ecran-780673.jpg?v=1766154779"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "c8a82b2d-ea35-469f-8db7-67e7a02af237",
+   "slug": "dualtron-x2",
+   "name": "Dualtron X2",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c8a82b2d-ea35-469f-8db7-67e7a02af237/1778555913142_2.png",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-4.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-3.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-7.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/DUALTRON-X2-UP-1.jpeg",
+    "https://dualtron-shop.com/wp-content/uploads/2020/05/Dualtron-X2-UP-folded.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "75c08b66-003c-4d75-a475-82fbcaf72f66",
+   "slug": "thunder",
+   "name": "Thunder",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/75c08b66-003c-4d75-a475-82fbcaf72f66/1778555148041_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/75c08b66-003c-4d75-a475-82fbcaf72f66/1791997293820_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_pas_cher.jpg?v=1764047384",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_france.jpg?v=1764047384",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_pliable.jpg?v=1764047384",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_roue_avant_631c4d91-3727-4c07-a0f1-d9b37c83221d.jpg?v=1734952961",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_roue_arriere.jpg?v=1764047384",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_dualtron_thunder_plateau.jpg?v=1764047384"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

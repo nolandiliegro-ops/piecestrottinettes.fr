@@ -1,0 +1,279 @@
+{
+ "lot": "lot01",
+ "models": [
+  {
+   "id": "bf542ba1-d0c7-4cb1-aed3-4e81091d5737",
+   "slug": "apollo-city-2-0",
+   "name": "Apollo City 2.0",
+   "brand": "Apollo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bf542ba1-d0c7-4cb1-aed3-4e81091d5737/1792165056369_0.png",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloCity_LG9__Regularshots_1.png?v=1765830139",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloCity_LG9__Regularshots_2.png?v=1765830139",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloCity_LG9__Regularshots_3.png?v=1765830139"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "408dec87-c37b-4b69-953c-805bde5143f9",
+   "slug": "apollo-city-pro",
+   "name": "Apollo City Pro",
+   "brand": "Apollo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/408dec87-c37b-4b69-953c-805bde5143f9/1791684743472_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/408dec87-c37b-4b69-953c-805bde5143f9/1791684745623_0.png",
+    "https://www.rideandglide.co.uk/wp-content/uploads/apollo-city-pro-2024.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d9dcd648-11c5-4c89-b5e2-3993670f4e98",
+   "slug": "apollo-dash",
+   "name": "Apollo Dash",
+   "brand": "Apollo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_2.png?v=1765830120",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/BESTE-SCOOTERSOF2026_3.png?v=1778291357",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/ApolloDash_A8__Regularshots_3.png?v=1765830120",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9dcd648-11c5-4c89-b5e2-3993670f4e98/1792165068653_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "d526a407-6a21-42fe-9219-fb6420eff198",
+   "slug": "apollo-explore",
+   "name": "Apollo Explore",
+   "brand": "Apollo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d526a407-6a21-42fe-9219-fb6420eff198/1791685638884_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d526a407-6a21-42fe-9219-fb6420eff198/1791997459702_0.png",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021-side.jpg?v=1686744300",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021.jpg?v=1686744298",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021-front-right.jpg?v=1686744304",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021-back-full.jpg?v=1686744307",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021-front.jpg?v=1686744302",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/apollo-explore-electric-scooter-2021-handlebars.jpg?v=1686744318"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a3fdb0ac-6105-4245-a1bf-97122c4dd6fe",
+   "slug": "apollo-explore-2-0",
+   "name": "Apollo Explore 2.0",
+   "brand": "Apollo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3fdb0ac-6105-4245-a1bf-97122c4dd6fe/1791937482852_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3fdb0ac-6105-4245-a1bf-97122c4dd6fe/1791937484797_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3fdb0ac-6105-4245-a1bf-97122c4dd6fe/1791937487434_0.png",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Apollo_Explore_PC10__Website_Standard_1.png?v=1761843123",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Apollo_Explore_PC10__Website_Standard_3.png?v=1755612989",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Apollo_Explore_PC10__Website_Standard_4.png?v=1761843123",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Apollo_Explore_PC10__Website_Standard_2.png?v=1761843123"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "20d3306b-b077-46e5-85b1-2163f149be12",
+   "slug": "apollo-go",
+   "name": "Apollo Go",
+   "brand": "Apollo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20d3306b-b077-46e5-85b1-2163f149be12/1792165062518_0.png",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/BEST_E-SCOOTERS_OF_2026_1.png?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Renders_M06022024_2_1.png?v=1776450086"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "c36cfb80-4e76-4005-a383-863173a490c4",
+   "slug": "aprilia-esr1",
+   "name": "Aprilia eSR1",
+   "brand": "Aprilia",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c36cfb80-4e76-4005-a383-863173a490c4/1791649951887_0.png",
+    "https://m.media-amazon.com/images/I/71ssCPwadOL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71uopPgaA3L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71amFxR+m3L._AC_SL1500_.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "2e1821cd-ad01-4217-8c1a-97a1ae108cfd",
+   "slug": "aprilia-esr2",
+   "name": "Aprilia eSR2",
+   "brand": "Aprilia",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2e1821cd-ad01-4217-8c1a-97a1ae108cfd/1791649954324_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2e1821cd-ad01-4217-8c1a-97a1ae108cfd/1791997467675_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2e1821cd-ad01-4217-8c1a-97a1ae108cfd/1791997473031_0.png",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/MT-APR-ES-ESR2-WTS.png?v=1685453563",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/3-9.png?v=1685453563",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/2-9.png?v=1685453563",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/4-9.png?v=1685453563",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/5-7.png?v=1685453563",
+    "https://cdn.shopify.com/s/files/1/0275/5411/9798/files/6-1.png?v=1685453563"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "90380480-0ee5-4e9a-92c6-ce6e060a34d1",
+   "slug": "aprilia-esr2-evo",
+   "name": "Aprilia eSR2 Evo",
+   "brand": "Aprilia",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1791649956672_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1791997477393_0.png",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/APRILIAESR2EVOEletricScooter_a3774953-6bb2-41c1-8e35-89a36915d7dc.png?v=1671174032",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/APRILIAESR2EVOEletricScooter.png?v=1671174033",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/eSR2-EVO_gallery-1.jpg?v=1671174034",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/eSR2-EVO_gallery-2.jpg?v=1671174035",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/eSR2-EVO_gallery-3.jpg?v=1671174037"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "3757f188-44f5-4cb9-ac0c-5dd0d91fee9c",
+   "slug": "aprilia-esrz",
+   "name": "Aprilia eSRZ",
+   "brand": "Aprilia",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3757f188-44f5-4cb9-ac0c-5dd0d91fee9c/1792165083522_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3757f188-44f5-4cb9-ac0c-5dd0d91fee9c/1792165089036_0.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/ApriliaESRZtrottinette-Pietechnologie.webp?v=1666271658",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteApriliaeSRZ-pieTechnologie.webp?v=1666271658",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/PieTechnologie-ApriliaeSRZ.webp?v=1666271658",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/ApriliaESRZ-Pietechnologie.webp?v=1666271658"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d46e8689-f6c6-461f-b6fc-8f696f2ce5bb",
+   "slug": "beaster-bs08",
+   "name": "Beaster BS08",
+   "brand": "Beaster",
+   "candidates": [
+    "https://krinona.lt/595767-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+    "https://krinona.lt/787402-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+    "https://krinona.lt/787403-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+    "https://krinona.lt/787404-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+    "https://krinona.lt/787405-large_default/elektrinis-paspirtukas-beaster-scooter-bs08-250-w-36-v-75-ah.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792165102113_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "24091119-b9b6-4edb-ab5c-a0676b35120b",
+   "slug": "beaster-bs09",
+   "name": "Beaster BS09",
+   "brand": "Beaster",
+   "candidates": [
+    "https://krinona.lt/595788-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+    "https://krinona.lt/793393-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+    "https://krinona.lt/793394-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+    "https://krinona.lt/793395-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+    "https://krinona.lt/793396-large_default/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1791663690606_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "27b0390b-c1dd-4bca-ae69-1cae035031d7",
+   "slug": "beaster-bs77",
+   "name": "Beaster BS77",
+   "brand": "Beaster",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792165108587_0.png",
+    "https://media.powersport.lt/8936123-thickbox_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://media.powersport.lt/8936124-large_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://media.powersport.lt/8936125-large_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://media.powersport.lt/8936126-large_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://media.powersport.lt/8936127-large_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "38dd43b9-958d-4846-b974-0af6dc95da07",
+   "slug": "beaster-diablo",
+   "name": "Beaster Diablo",
+   "brand": "Beaster",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1791663692806_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1791663695253_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1791997711032_0.png",
+    "https://media.powersport.lv/8936171-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://media.powersport.lv/8936172-large_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://media.powersport.lv/8936173-large_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://media.powersport.lv/8936174-large_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://media.powersport.lv/8936175-large_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "2c7cb21b-baa5-4f6c-adfd-c9112408b52f",
+   "slug": "bogist-c1-pro",
+   "name": "Bogist C1 Pro",
+   "brand": "Bogist",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2c7cb21b-baa5-4f6c-adfd-c9112408b52f/1791663885068_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2c7cb21b-baa5-4f6c-adfd-c9112408b52f/1791663888878_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2c7cb21b-baa5-4f6c-adfd-c9112408b52f/1791663892350_0.png",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-c1pro-main-image_1.webp?v=1752578949",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-c1pro-main-image_2.webp?v=1756019526",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-c1pro-main-image_3.webp?v=1756019526",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-c1pro-main-image_4.webp?v=1756019526",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/image_8089.png?v=1772683028",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/BOGIST-C1-pro-20AH3.jpg?v=1772683028"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "8441f66a-e766-465c-a1de-f32365a8d6d1",
+   "slug": "bogist-m1-elite",
+   "name": "Bogist M1 Elite",
+   "brand": "Bogist",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8441f66a-e766-465c-a1de-f32365a8d6d1/1792165123354_0.png",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m1elite-main-image_1.webp?v=1752628292",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m1elite-main-image_2.webp?v=1752628292",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m1elite-main-image_3.webp?v=1752628292",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/1-3.jpg?v=1772700372",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/2-4.jpg?v=1772700371",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/3-2.jpg?v=1772700371"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "19e9e09e-520e-4acc-915e-f7c9da4f878e",
+   "slug": "bogist-m5-pro",
+   "name": "Bogist M5 Pro",
+   "brand": "Bogist",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19e9e09e-520e-4acc-915e-f7c9da4f878e/1791663880903_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19e9e09e-520e-4acc-915e-f7c9da4f878e/1791997484047_0.png",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m5pro-main-image_3_a8d504be-33ef-4d9d-adb2-1b5ea28f43a3.webp?v=1752714858",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m5pro-main-image_1.webp?v=1752714889",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m5pro-main-image_2.webp?v=1752714889",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m5pro-main-image_4.webp?v=1752714889",
+    "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/Bogist-m5pro-main-image_5.webp?v=1752714889"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}
