@@ -1,0 +1,235 @@
+isinwheel-d1 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-d1 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-d1 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-d1 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-d1 #4 PASS ok
+isinwheel-d1 #5 PASS ok
+isinwheel-d1 #6 PASS ok
+isinwheel-d1 #7 PASS ok
+isinwheel-d1 #8 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-d1 #9 FAIL détourage sale / résidu de décor
+isinwheel-gt1 #0 PASS ok
+isinwheel-gt1 #1 WARN cadrage serré
+isinwheel-gt1 #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt1 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt1 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1 #5 PASS ok
+isinwheel-gt1 #6 PASS ok
+isinwheel-gt1 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt1 #8 PASS ok
+isinwheel-gt1 #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt1-dual #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #2 FAIL détourage sale / résidu de décor · cadrage serré
+isinwheel-gt1-dual #3 FAIL détourage sale / résidu de décor · couleurs vives 34 % (visuel marketing ?)
+isinwheel-gt1-dual #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #6 WARN cadrage serré
+isinwheel-gt1-dual #7 WARN cadrage serré
+isinwheel-gt1-dual #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt1-dual #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt2 #0 PASS ok
+isinwheel-gt2 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt2 #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt2 #3 PASS ok
+isinwheel-gt2 #4 PASS ok
+isinwheel-gt2 #5 WARN cadrage serré
+isinwheel-gt2 #6 PASS ok
+isinwheel-gt2 #7 FAIL détourage sale / résidu de décor
+isinwheel-gt2 #8 PASS ok
+isinwheel-gt2-pro #0 PASS ok
+isinwheel-gt2-pro #1 PASS ok
+isinwheel-gt2-pro #2 PASS ok
+isinwheel-gt2-pro #3 PASS ok
+isinwheel-gt2-pro #4 PASS ok
+isinwheel-gt2-pro #5 WARN cadrage serré
+isinwheel-gt2-pro #6 PASS ok
+isinwheel-gt2-pro #7 PASS ok
+isinwheel-gt2-pro #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt2-pro #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 33 % (visuel marketing ?)
+isinwheel-gt4 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt4 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt4 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt4 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt4 #4 PASS ok
+isinwheel-gt4 #5 WARN basse définition · cadrage serré
+isinwheel-gt4 #6 PASS ok
+isinwheel-gt4 #7 WARN cadrage serré
+isinwheel-gt4 #8 WARN cadrage serré
+isinwheel-gt4 #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+isinwheel-s-nova-pro #0 PASS ok
+isinwheel-s-nova-pro #1 PASS ok
+isinwheel-s-nova-pro #2 PASS ok
+isinwheel-s-nova-pro #3 PASS ok
+isinwheel-s-nova-pro #4 PASS ok
+isinwheel-s-nova-pro #5 WARN cadrage serré
+isinwheel-s-nova-pro #6 WARN cadrage serré
+isinwheel-s-nova-pro #7 WARN cadrage serré
+isinwheel-s-nova-pro #8 WARN cadrage serré
+isinwheel-s-nova-pro #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s10-max #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s10-max #1 PASS ok
+isinwheel-s10-max #2 PASS ok
+isinwheel-s10-max #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s10-max #4 WARN cadrage serré
+isinwheel-s10-max #5 PASS ok
+isinwheel-s10-max #6 PASS ok
+isinwheel-s10-max #7 PASS ok
+isinwheel-s10-max #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s10-max #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #0 WARN basse définition
+isinwheel-s9-max #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #4 WARN cadrage serré
+isinwheel-s9-max #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+isinwheel-s9-max #6 FAIL détourage sale / résidu de décor
+isinwheel-s9-max #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 39 % (visuel marketing ?)
+isinwheel-s9-max #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+isinwheel-s9-max #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-s9-pro #0 WARN basse définition
+isinwheel-s9-pro #1 PASS ok
+isinwheel-s9-pro #2 PASS ok
+isinwheel-s9-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-s9-pro #4 PASS ok
+isinwheel-s9-pro #5 PASS ok
+isinwheel-s9-pro #6 WARN basse définition · cadrage serré
+isinwheel-s9-pro #7 FAIL détourage sale / résidu de décor
+isinwheel-s9-pro #8 PASS ok
+isinwheel-s9-pro #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+isinwheel-x3-pro #0 WARN cadrage serré
+isinwheel-x3-pro #1 PASS ok
+isinwheel-x3-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-x3-pro #4 FAIL détourage sale / résidu de décor
+isinwheel-x3-pro #5 WARN cadrage serré
+isinwheel-x3-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #9 FAIL détourage sale / résidu de décor
+jeep-adventurer #0 PASS ok
+jeep-adventurer #1 PASS ok
+jeep-adventurer #2 PASS ok
+jeep-adventurer #3 WARN cadrage serré
+jeep-adventurer #4 WARN cadrage serré
+jeep-adventurer #5 PASS ok
+jeep-adventurer #6 PASS ok
+jeep-adventurer #7 PASS ok
+jeep-adventurer #8 WARN basse définition
+jeep-adventurer #9 WARN basse définition
+jeep-urban-camou #0 PASS ok
+jeep-urban-camou #1 PASS ok
+jeep-urban-camou #2 PASS ok
+jeep-urban-camou #3 PASS ok
+jeep-urban-camou #4 WARN basse définition
+jeep-urban-camou #5 WARN basse définition · cadrage serré
+jeep-urban-camou #6 WARN basse définition
+jeep-urban-camou #7 PASS ok
+jeep-urban-camou #8 PASS ok
+joyor-c10 #0 PASS ok
+joyor-c10 #1 WARN basse définition
+joyor-c10 #2 PASS ok
+joyor-c10 #3 PASS ok
+joyor-c10 #4 PASS ok
+joyor-c10 #5 PASS ok
+joyor-c10 #6 PASS ok
+joyor-c10 #7 PASS ok
+joyor-c10 #8 PASS ok
+joyor-c10 #9 PASS ok
+joyor-f5s-plus #0 PASS ok
+joyor-f5s-plus #1 WARN cadrage serré
+joyor-f5s-plus #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-f5s-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-f5s-plus #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-f5s-plus #5 PASS ok
+joyor-f5s-plus #6 PASS ok
+joyor-f5s-plus #7 PASS ok
+joyor-f5s-plus #8 PASS ok
+joyor-f5s-plus #9 PASS ok
+joyor-s10-s-z #0 WARN basse définition
+joyor-s10-s-z #1 PASS ok
+joyor-s10-s-z #2 WARN basse définition
+joyor-s10-s-z #3 PASS ok
+joyor-s10-s-z #4 PASS ok
+joyor-s10-s-z #5 PASS ok
+joyor-s10-s-z #6 PASS ok
+joyor-s10-s-z #7 PASS ok
+joyor-s10-s-z #8 PASS ok
+joyor-s10-s-z #9 PASS ok
+joyor-s5 #0 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s5 #1 WARN basse définition
+joyor-s5 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s5 #3 PASS ok
+joyor-s5 #4 PASS ok
+joyor-s5 #5 PASS ok
+joyor-s5 #6 PASS ok
+joyor-s5 #7 PASS ok
+joyor-s5 #8 PASS ok
+joyor-s5 #9 PASS ok
+joyor-s5-pro #0 WARN basse définition
+joyor-s5-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s5-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s5-pro #3 PASS ok
+joyor-s5-pro #4 PASS ok
+joyor-s5-pro #5 PASS ok
+joyor-s5-pro #6 PASS ok
+joyor-s5-pro #7 PASS ok
+joyor-s5-pro #8 PASS ok
+joyor-s5-pro #9 PASS ok
+joyor-s8-e #0 WARN basse définition
+joyor-s8-e #1 PASS ok
+joyor-s8-e #2 PASS ok
+joyor-s8-e #3 PASS ok
+joyor-s8-e #4 PASS ok
+joyor-s8-e #5 PASS ok
+joyor-s8-e #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #8 PASS ok
+joyor-s8-e #9 PASS ok
+joyor-t10 #0 PASS ok
+joyor-t10 #1 PASS ok
+joyor-t10 #2 PASS ok
+joyor-t10 #3 PASS ok
+joyor-t10 #4 WARN cadrage serré
+joyor-t10 #5 WARN cadrage serré
+joyor-t10 #6 PASS ok
+joyor-t10 #7 PASS ok
+joyor-t10 #8 PASS ok
+joyor-t6 #0 WARN basse définition
+joyor-t6 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+joyor-t6 #2 PASS ok
+joyor-t6 #3 PASS ok
+joyor-t6 #4 PASS ok
+joyor-t6 #5 PASS ok
+joyor-t6 #6 PASS ok
+joyor-t6 #7 WARN cadrage serré
+joyor-t6 #8 WARN cadrage serré
+joyor-t6 #9 PASS ok
+joyor-y10 #0 PASS ok
+joyor-y10 #1 PASS ok
+joyor-y10 #2 WARN cadrage serré
+joyor-y10 #3 PASS ok
+joyor-y10 #4 WARN cadrage serré
+joyor-y10 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-y10 #6 WARN cadrage serré
+joyor-y10 #7 WARN cadrage serré
+joyor-y6-s #0 WARN basse définition
+joyor-y6-s #1 PASS ok
+joyor-y6-s #2 PASS ok
+joyor-y6-s #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-y6-s #4 PASS ok
+joyor-y6-s #5 PASS ok
+joyor-y6-s #6 PASS ok
+joyor-y6-s #7 PASS ok
+joyor-y6-s #8 PASS ok
+joyor-y8-s #0 PASS ok
+joyor-y8-s #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-y8-s #2 PASS ok
+joyor-y8-s #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-y8-s #4 PASS ok
+joyor-y8-s #5 PASS ok
+joyor-y8-s #6 PASS ok
+joyor-y8-s #7 PASS ok
+joyor-y8-s #8 PASS ok
+joyor-y8-s #9 PASS ok
+::notice title=photos lot08 (dry)::234 candidates · PASS 125 · WARN 43 · FAIL 66 · ERREUR 0

@@ -1,0 +1,5054 @@
+[
+ {
+  "slug": "isinwheel-d1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003908478_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.228,
+   "vivid": 0.071,
+   "fill": 0.804
+  },
+  "size": [
+   1612,
+   1593
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003915496_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.23,
+   "vivid": 0.064,
+   "fill": 0.809
+  },
+  "size": [
+   1611,
+   1593
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003923199_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.228,
+   "vivid": 0.07,
+   "fill": 0.804
+  },
+  "size": [
+   1612,
+   1593
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1_e0d2bc46-dce5-44e4-afcb-a6224d9b712e.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.228,
+   "vivid": 0.071,
+   "fill": 0.804
+  },
+  "size": [
+   1612,
+   1594
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.74
+  },
+  "size": [
+   1284,
+   1252
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.816
+  },
+  "size": [
+   838,
+   1190
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.829
+  },
+  "size": [
+   1284,
+   969
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.471
+  },
+  "size": [
+   741,
+   1002
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_9.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.046,
+   "vivid": 0.117,
+   "fill": 0.783
+  },
+  "size": [
+   1320,
+   1163
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-d1",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_10.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.224
+  },
+  "size": [
+   1354,
+   1354
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/3_e09e24f7-5d93-4e44-adef-dfd952114220.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.808
+  },
+  "size": [
+   965,
+   1459
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-B.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.837
+  },
+  "size": [
+   1629,
+   1442
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-C.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.088,
+   "vivid": 0.232,
+   "fill": 0.783
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-D.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.397,
+   "vivid": 0.064,
+   "fill": 0.59
+  },
+  "size": [
+   1688,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-F.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.31,
+   "vivid": 0.007,
+   "fill": 0.656
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/2_49d3d5b5-637b-4374-91cd-1c7c14ebff5c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.106,
+   "fill": 0.832
+  },
+  "size": [
+   1157,
+   1380
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/4_feef5760-bb8a-40ed-9556-5c10a0bd4726.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.832
+  },
+  "size": [
+   1037,
+   1416
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-2.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.268,
+   "vivid": 0.039,
+   "fill": 0.836
+  },
+  "size": [
+   1467,
+   1679
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44d19aef-9276-4970-9577-536efc42f7ff/1792003835809_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.471
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44d19aef-9276-4970-9577-536efc42f7ff/1792003841115_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.194,
+   "vivid": 0.064,
+   "fill": 0.538
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_36.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.149,
+   "vivid": 0.084,
+   "fill": 0.693
+  },
+  "size": [
+   1600,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_26.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.048,
+   "vivid": 0.109,
+   "fill": 0.731
+  },
+  "size": [
+   1726,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_22.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.245,
+   "fill": 0.729
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_25.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 34 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 34 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.338,
+   "fill": 0.552
+  },
+  "size": [
+   1728,
+   1342
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_32.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.28,
+   "vivid": 0.093,
+   "fill": 0.716
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Frame_2147227098_1b05b70b-1294-4b9d-a4af-b798eacd6414.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.233,
+   "vivid": 0.131,
+   "fill": 0.842
+  },
+  "size": [
+   1667,
+   1469
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/PC_1_f4740d15-3222-497a-a9a1-2d2d57ac36d9.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.19,
+   "fill": 0.821
+  },
+  "size": [
+   967,
+   1297
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_33.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.185,
+   "fill": 0.837
+  },
+  "size": [
+   1728,
+   1551
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b25ad4ec-3fe8-402d-ae66-aeafca2f9709/1792003891771_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.151,
+   "vivid": 0.122,
+   "fill": 0.699
+  },
+  "size": [
+   1572,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b25ad4ec-3fe8-402d-ae66-aeafca2f9709/1792003901618_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.239,
+   "vivid": 0.132,
+   "fill": 0.675
+  },
+  "size": [
+   1738,
+   1533
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a13cf842-3c46-43bc-bc48-bcb09782acc9/1791637964812_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.56
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1600.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.181,
+   "vivid": 0.072,
+   "fill": 0.795
+  },
+  "size": [
+   1372,
+   1659
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.179,
+   "vivid": 0.071,
+   "fill": 0.829
+  },
+  "size": [
+   1367,
+   1590
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/isinwheel_GT2_2_6eb14939-ab02-4eeb-b67c-5707643f4d69.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.516
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2_1_da2ae137-005f-4814-84ba-f9db4ca5037b.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.516
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_9.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.772
+  },
+  "size": [
+   867,
+   1403
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_11.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.826
+  },
+  "size": [
+   1143,
+   1551
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1_9.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.006,
+   "vivid": 0.24,
+   "fill": 0.691
+  },
+  "size": [
+   1728,
+   1653
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/products/isinwheelgt2800Woffroadelectricscooter1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.49
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b68e1f6b-88ea-49e4-bf96-be98c015ff3c/1792166037685_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.437
+  },
+  "size": [
+   1805,
+   1832
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b68e1f6b-88ea-49e4-bf96-be98c015ff3c/1792166045388_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.411
+  },
+  "size": [
+   1920,
+   1520
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/27_5b6ebd27-b054-4397-b7db-1f21f50b8f4a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.716
+  },
+  "size": [
+   1218,
+   1822
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ISINWHEEL_1_3f9be6e9-2ace-4c5e-bb26-508a8c630a9d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.835
+  },
+  "size": [
+   1210,
+   1483
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/39.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.749
+  },
+  "size": [
+   1711,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/36.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.738
+  },
+  "size": [
+   1828,
+   1560
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/35.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.736
+  },
+  "size": [
+   1395,
+   1824
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/31_bdcabce1-cf31-4273-a2cb-f8819919d2b4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.657
+  },
+  "size": [
+   971,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1773736931157_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.163,
+   "vivid": 0.073,
+   "fill": 0.728
+  },
+  "size": [
+   1760,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1773969398086_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 33 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 33 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.477,
+   "vivid": 0.326,
+   "fill": 0.24
+  },
+  "size": [
+   1732,
+   1582
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792003929045_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.278,
+   "vivid": 0.082,
+   "fill": 0.845
+  },
+  "size": [
+   1063,
+   1040
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792003934358_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.278,
+   "vivid": 0.081,
+   "fill": 0.845
+  },
+  "size": [
+   887,
+   869
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Frame_2147227095.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.235,
+   "vivid": 0.038,
+   "fill": 0.679
+  },
+  "size": [
+   1746,
+   1395
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Group_2023316992.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.126,
+   "vivid": 0.004,
+   "fill": 0.625
+  },
+  "size": [
+   1760,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC6941_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.596
+  },
+  "size": [
+   1738,
+   1476
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/393c7b20c3b45bfe45d6b3671a621ae2331aa748a021f97dcf72063136e5af62_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.718
+  },
+  "size": [
+   449,
+   1235
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/22_5960810a-f1fd-40ce-94c0-cfb1cb9bfcca.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.848
+  },
+  "size": [
+   1421,
+   1485
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/21_5a236a79-2a45-4f20-ae74-e4ab761f31ed.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.838
+  },
+  "size": [
+   1544,
+   1389
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/23_08f3789f-6514-44f0-af56-2618fb21aac2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.838
+  },
+  "size": [
+   1540,
+   1383
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt4",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ae869b5bf55fd504f1d6cda4eaeaafe8.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.372,
+   "vivid": 0.251,
+   "fill": 0.6
+  },
+  "size": [
+   1564,
+   1202
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003866336_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.534
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003873255_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.534
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003882307_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.534
+  },
+  "size": [
+   1754,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/13_d8ae9f7b-5620-4687-8145-abcaa2ebedac.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.736
+  },
+  "size": [
+   1334,
+   1816
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/14_657975d1-2610-4c39-a9db-6a3d18d8c8fc.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.736
+  },
+  "size": [
+   1334,
+   1816
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/15_bdbd7fa6-2b05-4f07-9f99-a2c7ef426dfc.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.672
+  },
+  "size": [
+   1856,
+   1187
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/16_da9b6b11-553e-4517-84a1-dbc4101ecb12.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.71
+  },
+  "size": [
+   1834,
+   1289
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/17.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.783
+  },
+  "size": [
+   1802,
+   1806
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/18_b8df7b72-f48a-4bf6-8825-21e77d3c0a8b.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.783
+  },
+  "size": [
+   1802,
+   1806
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1775541273589_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.283,
+   "vivid": 0.245,
+   "fill": 0.8
+  },
+  "size": [
+   1760,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/s10max-bb_1800x1800_4a68878a-02a8-4b98-8d78-2f862abbf903.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.252,
+   "vivid": 0.032,
+   "fill": 0.831
+  },
+  "size": [
+   1643,
+   1689
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/21_295455da-632a-4b69-bcdb-a6471e5360ac.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.808
+  },
+  "size": [
+   903,
+   1435
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/22_ff0972e8-d41d-4063-b02a-569e153f27b7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.843
+  },
+  "size": [
+   1312,
+   1377
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/0.1_adb1c459-591b-44cc-b4fe-3e72aaa799af.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.232,
+   "vivid": 0.102,
+   "fill": 0.846
+  },
+  "size": [
+   1671,
+   1686
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_656cf0c7-73b4-4567-8adb-3994171b714a.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.559
+  },
+  "size": [
+   1314,
+   831
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC0606_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.837
+  },
+  "size": [
+   1146,
+   1150
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC5056_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.444
+  },
+  "size": [
+   1676,
+   1448
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/2_3e115e48-0196-42c4-8c91-06f34ee925c6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.273
+  },
+  "size": [
+   1728,
+   1641
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a8005ee-297a-4c34-b307-262781e1f62d/1792166023376_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.252,
+   "vivid": 0.031,
+   "fill": 0.831
+  },
+  "size": [
+   1643,
+   1689
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s10-max",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a8005ee-297a-4c34-b307-262781e1f62d/1792166030028_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.232,
+   "vivid": 0.102,
+   "fill": 0.846
+  },
+  "size": [
+   1672,
+   1686
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003855612_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   316,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003859942_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.209,
+   "vivid": 0.004,
+   "fill": 0.496
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.182,
+   "vivid": 0.052,
+   "fill": 0.69
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.181,
+   "vivid": 0.05,
+   "fill": 0.69
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.763
+  },
+  "size": [
+   1728,
+   1341
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_11.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.083,
+   "vivid": 0.189,
+   "fill": 0.648
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.096,
+   "fill": 0.69
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 39 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 39 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.069,
+   "vivid": 0.388,
+   "fill": 0.332
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.086,
+   "vivid": 0.126,
+   "fill": 0.507
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.045,
+   "vivid": 0.212,
+   "fill": 0.471
+  },
+  "size": [
+   1674,
+   1120
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791637966941_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.81
+  },
+  "size": [
+   511,
+   816
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791997566377_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.836
+  },
+  "size": [
+   1286,
+   1466
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791997584827_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.732
+  },
+  "size": [
+   1300,
+   1816
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_cda59e42-b402-49b3-8bf7-ec976e7c15e0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.198,
+   "vivid": 0.07,
+   "fill": 0.669
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.217
+  },
+  "size": [
+   1677,
+   1568
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.438
+  },
+  "size": [
+   1313,
+   1378
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.743
+  },
+  "size": [
+   532,
+   1250
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-4.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.781
+  },
+  "size": [
+   664,
+   1258
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ISINWHEEL_2_555e8a1e-c6a6-489d-a476-387fa74c16b5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.819
+  },
+  "size": [
+   1138,
+   1562
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/2_4fa696c2-9eb0-4970-8e8d-3eb407c7f717.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.066,
+   "vivid": 0.203,
+   "fill": 0.726
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/71WTN4-43QL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.845
+  },
+  "size": [
+   1288,
+   1200
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/71Y50tSOWIL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.57
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 2,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/x3p_50e7399b-0630-441e-b3ec-bc5da9e6d22e.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.003,
+   "fill": 0.518
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 3,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/X3pro_B4_2210251_3d79b0ac-378c-4ca2-9ea8-51502edd4523.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.388,
+   "vivid": 0.001,
+   "fill": 0.774
+  },
+  "size": [
+   651,
+   749
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 4,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/031500x1500_b90f05e0-b7c7-4e0a-97b2-f40c86f43341.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.507
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 5,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/041500x1500_613e3b01-2f87-421b-8672-ba5602db45e2.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.122,
+   "fill": 0.56
+  },
+  "size": [
+   750,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 6,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/051500x1500_f13e964d-0d4d-40ef-9f6b-cccce44f8122.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.427,
+   "vivid": 0.02,
+   "fill": 0.842
+  },
+  "size": [
+   771,
+   683
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 7,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/061500x1500_92a1821c-5790-47c4-9137-126cbf4465ef.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.478,
+   "vivid": 0.131,
+   "fill": 0.835
+  },
+  "size": [
+   771,
+   712
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5a943837-6252-4526-9954-5c937936b032/1792166051190_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.003,
+   "fill": 0.518
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5a943837-6252-4526-9954-5c937936b032/1792166056198_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.368
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791650131081_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.815
+  },
+  "size": [
+   641,
+   873
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791997589489_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.188
+  },
+  "size": [
+   1166,
+   806
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791997593841_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.135
+  },
+  "size": [
+   1166,
+   831
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8866_modif_bianco.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.633
+  },
+  "size": [
+   1166,
+   806
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8933_modif_vers2_bianco.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.826
+  },
+  "size": [
+   866,
+   644
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8813_modif_bianco.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.811
+  },
+  "size": [
+   626,
+   963
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteJEEP2xeADVENTURER-PieTechnologie.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.188
+  },
+  "size": [
+   1166,
+   806
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueJEEP2xeADVENTURER-PieTechnologie.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.252
+  },
+  "size": [
+   704,
+   739
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteJEEPADVENTURER-PieTechnologie.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.834
+  },
+  "size": [
+   530,
+   616
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/PieTechnologie-TrottinetteJEEP2xeADVENTURER.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.845
+  },
+  "size": [
+   613,
+   598
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6a430a0a-665e-4b10-8170-53f84d2b1a50/1791650134706_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.814
+  },
+  "size": [
+   734,
+   741
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.819
+  },
+  "size": [
+   664,
+   912
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_15.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.544
+  },
+  "size": [
+   1004,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.839
+  },
+  "size": [
+   833,
+   913
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_16.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.753
+  },
+  "size": [
+   416,
+   943
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.79
+  },
+  "size": [
+   929,
+   523
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_8.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.817
+  },
+  "size": [
+   571,
+   948
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.61
+  },
+  "size": [
+   806,
+   624
+  ],
+  "error": null
+ },
+ {
+  "slug": "jeep-urban-camou",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.348
+  },
+  "size": [
+   1106,
+   780
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8f3a214-de13-475e-a804-112b4bbb611f/1791941096256_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.818
+  },
+  "size": [
+   895,
+   1237
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8f3a214-de13-475e-a804-112b4bbb611f/1791941098196_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.787
+  },
+  "size": [
+   318,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_C10_DGT.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.355
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.546
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.816
+  },
+  "size": [
+   835,
+   1075
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.826
+  },
+  "size": [
+   780,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.721
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.84
+  },
+  "size": [
+   963,
+   1049
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.653
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-c10",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_C10_DGT_Rear.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.412
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1a355d6d-8ea3-4526-97b5-cfba31f065de/1792166068008_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.425
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1a355d6d-8ea3-4526-97b5-cfba31f065de/1792166073437_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.845
+  },
+  "size": [
+   886,
+   903
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/7177mmvbySL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.349,
+   "vivid": 0.007,
+   "fill": 0.838
+  },
+  "size": [
+   1242,
+   1381
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 3,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/carr%C3%A9/F5S%2B%20Joyor-noir-pos000-carr%C3%A91024.jpg?etag=%22476c0-66f56d6c%22&sourceContentType=image%2Fjpeg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.058,
+   "vivid": 0.007,
+   "fill": 0.829
+  },
+  "size": [
+   793,
+   982
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 4,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos000-web%201024x768.jpg?etag=%2220192-66f56d59%22&sourceContentType=image%2Fjpeg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.096,
+   "vivid": 0.007,
+   "fill": 0.844
+  },
+  "size": [
+   735,
+   761
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 5,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos001-web%201024x768.jpg?etag=%221d45d-66f56d59%22&sourceContentType=image%2Fjpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.408
+  },
+  "size": [
+   1106,
+   850
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 6,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos002-web%201024x768.jpg?etag=%221d2d4-66f56d5a%22&sourceContentType=image%2Fjpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.85
+  },
+  "size": [
+   754,
+   760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 7,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos003-web%201024x768.jpg?etag=%221fab3-66f56d5a%22&sourceContentType=image%2Fjpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.854
+  },
+  "size": [
+   774,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 8,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos005-web%201024x768.jpg?etag=%221acd6-66f56d5a%22&sourceContentType=image%2Fjpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.826
+  },
+  "size": [
+   605,
+   775
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-f5s-plus",
+  "i": 9,
+  "url": "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos006-web%201024x768.jpg?etag=%221dc1e-66f56d5b%22&sourceContentType=image%2Fjpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.817
+  },
+  "size": [
+   607,
+   760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791646707466_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.064,
+   "fill": 0.802
+  },
+  "size": [
+   296,
+   424
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791997604007_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.747
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791997608415_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.787
+  },
+  "size": [
+   1048,
+   580
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.837
+  },
+  "size": [
+   1052,
+   823
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.489
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.813
+  },
+  "size": [
+   726,
+   1056
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.468
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.747
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.747
+  },
+  "size": [
+   1005,
+   1064
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s10-s-z",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_7.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.383
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/adfed31f-f281-48f6-913d-a867ae5df166/1791999044727_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.076,
+   "vivid": 0.055,
+   "fill": 0.83
+  },
+  "size": [
+   573,
+   704
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/adfed31f-f281-48f6-913d-a867ae5df166/1791999047144_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.789
+  },
+  "size": [
+   672,
+   376
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.281,
+   "vivid": 0.139,
+   "fill": 0.369
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.478
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.729
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.813
+  },
+  "size": [
+   717,
+   1050
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.387
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.501
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE-chasis1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.84
+  },
+  "size": [
+   1736,
+   1604
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE-screen.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.84
+  },
+  "size": [
+   1736,
+   1586
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2970f52e-703f-44ad-8969-3f8880b3f38e/1792166079352_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.488
+  },
+  "size": [
+   577,
+   577
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2970f52e-703f-44ad-8969-3f8880b3f38e/1792166091743_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.055,
+   "vivid": 0.02,
+   "fill": 0.585
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-PRO-ABE.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.281,
+   "vivid": 0.139,
+   "fill": 0.369
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_1_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.699
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.636
+  },
+  "size": [
+   890,
+   1068
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.809
+  },
+  "size": [
+   701,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.54
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.813
+  },
+  "size": [
+   723,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.805
+  },
+  "size": [
+   674,
+   1056
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s5-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_S5-PRO_ABE_Side_Rear_Tyre.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.84
+  },
+  "size": [
+   1736,
+   1604
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792166097574_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.557
+  },
+  "size": [
+   577,
+   577
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792166106740_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.598
+  },
+  "size": [
+   1788,
+   1916
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.336
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.5
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.519
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.832
+  },
+  "size": [
+   875,
+   1049
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_4.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.08,
+   "vivid": 0.043,
+   "fill": 0.68
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-2_be507a3f-2b0f-4be4-81c7-9400cf46328d.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.314,
+   "vivid": 0.034,
+   "fill": 0.841
+  },
+  "size": [
+   1704,
+   1718
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-3_a9014b3f-5c76-4442-a990-2b669432ef03.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.415
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-4_a43f8d16-0ad6-489d-9a01-a0474d7f9c0d.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.836
+  },
+  "size": [
+   1738,
+   1625
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f532b24-e4e1-457c-9224-2f10243237fc/1791941396751_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.811
+  },
+  "size": [
+   670,
+   994
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.46
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.738
+  },
+  "size": [
+   1758,
+   839
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.761
+  },
+  "size": [
+   1758,
+   969
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.775
+  },
+  "size": [
+   1758,
+   1657
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_5.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.689
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_6.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.357
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_7.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.35
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t10",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_8.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.821
+  },
+  "size": [
+   1623,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56c1e523-d200-44a4-a3de-bcd4792dbc5a/1791646709782_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.809
+  },
+  "size": [
+   583,
+   937
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56c1e523-d200-44a4-a3de-bcd4792dbc5a/1791997599849_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.075,
+   "vivid": 0.057,
+   "fill": 0.412
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.494
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.725
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.076,
+   "fill": 0.84
+  },
+  "size": [
+   966,
+   1046
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.392
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.374
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.647
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_7.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.845
+  },
+  "size": [
+   900,
+   826
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-t6",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_8.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.477
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce65544d-b71a-4663-aa17-c75ec6a523db/1791941108495_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.298
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.794
+  },
+  "size": [
+   1639,
+   1588
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.667
+  },
+  "size": [
+   1747,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.803
+  },
+  "size": [
+   1694,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.727
+  },
+  "size": [
+   1746,
+   982
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Joyor_Y10_Electric_Scooter_DGT_Helmet_1e25098d-5ca6-4dd7-bb26-9604d39dce97.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.173,
+   "vivid": 0.16,
+   "fill": 0.362
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/y-series-joyor-y10-dgt-front-tire.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.834
+  },
+  "size": [
+   1744,
+   1673
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/y-series-joyor-y10-dgt-rear-tire.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.806
+  },
+  "size": [
+   1740,
+   1168
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1791941394151_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.816
+  },
+  "size": [
+   547,
+   776
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.51
+  },
+  "size": [
+   1508,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Lateral.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.508
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Unfolded_Folded.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.335,
+   "vivid": 0.008,
+   "fill": 0.839
+  },
+  "size": [
+   1535,
+   1696
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.828
+  },
+  "size": [
+   857,
+   1069
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.837
+  },
+  "size": [
+   1029,
+   1027
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_3.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.618
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_4.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.761
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y6-s",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_5.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.659
+  },
+  "size": [
+   934,
+   1070
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941103416_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.562
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941100817_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.195,
+   "vivid": 0.079,
+   "fill": 0.419
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941105690_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.837
+  },
+  "size": [
+   731,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.27,
+   "vivid": 0.111,
+   "fill": 0.362
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.508
+  },
+  "size": [
+   1501,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe_lateral.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.794
+  },
+  "size": [
+   1639,
+   1588
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_1_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.605
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_2_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.761
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_3_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.752
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "joyor-y8-s",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_4_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.537
+  },
+  "size": [
+   769,
+   1068
+  ],
+  "error": null
+ }
+]
