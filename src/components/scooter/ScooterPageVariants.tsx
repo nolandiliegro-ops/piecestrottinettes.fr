@@ -39,6 +39,8 @@ interface Props {
   scooter: ScooterDetail;
   allScooters: ShowroomCarouselScooter[];
   partsCount: number;
+  /** Pastille « Proposition N » : seulement quand la page est ouverte avec ?style= (comparaison). */
+  showTag?: boolean;
 }
 
 // ─── Données ────────────────────────────────────────────────────────────────
@@ -328,12 +330,12 @@ const Gauge270 = ({ value, unit, label, max, accent }: { value: number; unit: st
 };
 
 // ─── Composition ────────────────────────────────────────────────────────────
-const ScooterPageVariants = ({ style, scooter, allScooters, partsCount }: Props) => {
+const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag = false }: Props) => {
   const accent = getBrandColors(scooter.brand?.name).accent;
   const brand = scooter.brand?.name ?? "";
   const specs = useSpecs(scooter);
   const gamme = allScooters.filter((s) => brand && s.brand_name === brand);
-  const tag = (
+  const tag = !showTag ? <></> : (
     <div className="fixed bottom-3 left-3 z-[60] rounded-md px-2 py-1 text-sm font-bold uppercase tracking-wider text-white pointer-events-none" style={{ backgroundColor: "rgba(26,26,26,0.75)", fontFamily: FONT }}>
       Proposition {style} · {STYLE_NAMES[style]}
     </div>
@@ -499,10 +501,10 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
     ...(gamme.length > 1 && !gammeBelow ? [{ k: "gamme", label: `Gamme (${gamme.length})` }] : []),
   ];
   const [tab, setTab] = useState("fiche");
-  // Boutons à comparer (16/10) : &btn=1..5 — sans paramètre, pilules actuelles.
+  // Boutons à comparer (16/10) : &btn=1..5 — sans paramètre : biseau sur Pit-stand (choix de Nolan), pilules sur Pit-wall.
   const [sp] = useSearchParams();
   const BTN: Record<string, Look> = { "1": "slant", "2": "chevron", "3": "stripe", "4": "livery", "5": "chamfer" };
-  const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? "pit";
+  const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
   return (
     <>
       {tag}

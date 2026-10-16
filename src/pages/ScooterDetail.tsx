@@ -30,10 +30,12 @@ const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { scooter, allScooters, compatibleParts, prevSlug, nextSlug, isLoading, isPartsLoading } =
     useShowroomData(slug);
-  // Propositions de mise en page (16/10) : ?style=1..6. Sans paramètre = page actuelle inchangée.
+  // Mise en page (16/10) : sans paramètre = Pit-stand (6). ?style=0 ancienne page, ?style=1..5 autres propositions.
   const [searchParams] = useSearchParams();
   const styleNum = Number(searchParams.get("style"));
-  const pageStyle = (styleNum >= 1 && styleNum <= 6 ? styleNum : null) as PageStyle | null;
+  // 16/10 : Pit-stand (6) validée par Nolan = page par défaut. ?style=0 = ancienne page (référence), ?style=1..5 = autres propositions.
+  const hasStyleParam = searchParams.has("style");
+  const pageStyle = (hasStyleParam ? (styleNum >= 1 && styleNum <= 6 ? styleNum : null) : 6) as PageStyle | null;
 
   // Loading
   if (isLoading) {
@@ -155,7 +157,7 @@ const ScooterDetail = () => {
         className="flex-1"
       >
         {pageStyle ? (
-          <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} />
+          <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} showTag={hasStyleParam} />
         ) : (
         <>
         <ShowroomHero
