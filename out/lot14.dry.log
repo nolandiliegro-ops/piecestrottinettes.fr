@@ -1,0 +1,201 @@
+niu-kqi-100f #0 PASS ok
+niu-kqi-100f #1 WARN basse définition
+niu-kqi-100f #2 PASS ok
+niu-kqi-100f #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi-100f #4 PASS ok
+niu-kqi-100f #5 PASS ok
+niu-kqi-100f #6 PASS ok
+niu-kqi-100f #7 PASS ok
+niu-kqi-100f #8 PASS ok
+niu-kqi-100f #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi-100p #0 PASS ok
+niu-kqi-100p #1 PASS ok
+niu-kqi-100p #2 PASS ok
+niu-kqi-100p #3 PASS ok
+niu-kqi-100p #4 PASS ok
+niu-kqi-100p #5 PASS ok
+niu-kqi-100p #6 PASS ok
+niu-kqi-100p #7 PASS ok
+niu-kqi-100p #8 PASS ok
+niu-kqi-200p #0 PASS ok
+niu-kqi-200p #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi-200p #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi-200p #3 PASS ok
+niu-kqi-200p #4 PASS ok
+niu-kqi-200p #5 PASS ok
+niu-kqi-200p #6 PASS ok
+niu-kqi-200p #7 PASS ok
+niu-kqi-300p #0 PASS ok
+niu-kqi-300p #1 PASS ok
+niu-kqi-300p #2 PASS ok
+niu-kqi-300p #3 PASS ok
+niu-kqi-300p #4 PASS ok
+niu-kqi-300p #5 PASS ok
+niu-kqi-300p #6 PASS ok
+niu-kqi-300p #7 PASS ok
+niu-kqi-300p #8 PASS ok
+niu-kqi-300x #0 PASS ok
+niu-kqi-300x #1 WARN basse définition
+niu-kqi-300x #2 PASS ok
+niu-kqi-300x #3 PASS ok
+niu-kqi-300x #4 PASS ok
+niu-kqi-300x #5 PASS ok
+niu-kqi-300x #6 PASS ok
+niu-kqi-300x #7 PASS ok
+niu-kqi-300x #8 PASS ok
+niu-kqi-300x #9 PASS ok
+niu-kqi-air #0 PASS ok
+niu-kqi-air #1 PASS ok
+niu-kqi-air #2 PASS ok
+niu-kqi-air #3 PASS ok
+niu-kqi-air #4 PASS ok
+niu-kqi-air #5 PASS ok
+niu-kqi-air #6 PASS ok
+niu-kqi-air #7 PASS ok
+niu-kqi-air #8 PASS ok
+niu-kqi-air-x #0 PASS ok
+niu-kqi-air-x #1 PASS ok
+niu-kqi-air-x #2 PASS ok
+niu-kqi-air-x #3 PASS ok
+niu-kqi-air-x #4 PASS ok
+niu-kqi-air-x #5 PASS ok
+niu-kqi-air-x #6 PASS ok
+niu-kqi-air-x #7 PASS ok
+niu-kqi1-pro #0 PASS ok
+niu-kqi1-pro #1 PASS ok
+niu-kqi1-pro #2 WARN basse définition
+niu-kqi1-pro #3 PASS ok
+niu-kqi1-pro #4 PASS ok
+niu-kqi1-pro #5 PASS ok
+niu-kqi1-pro #6 PASS ok
+niu-kqi1-pro #7 PASS ok
+niu-kqi1-pro #8 PASS ok
+niu-kqi1-pro #9 PASS ok
+niu-kqi1-sport #0 PASS ok
+niu-kqi1-sport #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+niu-kqi1-sport #2 PASS ok
+niu-kqi1-sport #3 PASS ok
+niu-kqi1-sport #4 PASS ok
+niu-kqi1-sport #5 PASS ok
+niu-kqi1-sport #6 PASS ok
+niu-kqi1-sport #7 PASS ok
+niu-kqi1-sport #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+niu-kqi1-sport #9 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi2-pro #0 WARN basse définition · cadrage serré
+niu-kqi2-pro #1 PASS ok
+niu-kqi2-pro #2 PASS ok
+niu-kqi2-pro #3 PASS ok
+niu-kqi2-pro #4 PASS ok
+niu-kqi2-pro #5 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 33 % (visuel marketing ?)
+niu-kqi2-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux · couleurs vives 79 % (visuel marketing ?)
+niu-kqi2-pro #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi2-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi3-max #0 PASS ok
+niu-kqi3-max #1 PASS ok
+niu-kqi3-max #2 PASS ok
+niu-kqi3-max #3 PASS ok
+niu-kqi3-max #4 PASS ok
+niu-kqi3-max #5 FAIL détourage sale / résidu de décor · cadrage serré
+niu-kqi3-max #6 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi3-max #7 PASS ok
+niu-kqi3-pro #0 PASS ok
+niu-kqi3-pro #1 PASS ok
+niu-kqi3-pro #2 PASS ok
+niu-kqi3-pro #3 PASS ok
+niu-kqi3-pro #4 PASS ok
+niu-kqi3-pro #5 PASS ok
+niu-kqi3-pro #6 PASS ok
+niu-kqi3-pro #7 PASS ok
+niu-kqi3-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 40 % (visuel marketing ?)
+niu-kqi3-pro #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi3-sport #0 PASS ok
+niu-kqi3-sport #1 PASS ok
+niu-kqi3-sport #2 PASS ok
+niu-kqi3-sport #3 PASS ok
+niu-kqi3-sport #4 PASS ok
+niu-kqi3-sport #5 WARN cadrage serré
+niu-kqi3-sport #6 WARN petit élément détaché (3 morceaux)
+niu-kqi3-sport #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 39 % (visuel marketing ?)
+niu-kqi3-sport #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ootd-s10 #0 PASS ok
+ootd-s10 #1 PASS ok
+ootd-s10 #2 PASS ok
+ootd-s10 #3 PASS ok
+ootd-s10 #4 PASS ok
+ootd-s10 #5 PASS ok
+ootd-s10 #6 PASS ok
+ootd-s10 #7 PASS ok
+ootd-s10 #8 PASS ok
+ootd-s30 #0 PASS ok
+ootd-s30 #1 ERROR téléchargement vide
+ootd-s30 #2 ERROR téléchargement vide
+ootd-s30 #3 ERROR téléchargement vide
+ootd-s30 #4 ERROR téléchargement vide
+ootd-s30 #5 ERROR téléchargement vide
+ootd-s30 #6 ERROR téléchargement vide
+ootd-s30 #7 ERROR téléchargement vide
+ootd-s30 #8 ERROR téléchargement vide
+ootd-sr1 #0 PASS ok
+ootd-sr1 #1 PASS ok
+ootd-sr1 #2 PASS ok
+ootd-sr1 #3 PASS ok
+ootd-sr1 #4 PASS ok
+ootd-sr1 #5 PASS ok
+ootd-sr1 #6 WARN basse définition · cadrage serré
+ootd-sr1 #7 PASS ok
+ootd-sr1 #8 PASS ok
+ootd-sr1 #9 PASS ok
+ootd-sr3 #0 PASS ok
+ootd-sr3 #1 PASS ok
+ootd-sr3 #2 PASS ok
+ootd-sr3 #3 PASS ok
+ootd-sr3 #4 PASS ok
+ootd-sr3 #5 PASS ok
+ootd-sr3 #6 WARN basse définition · cadrage serré
+ootd-t10 #0 PASS ok
+ootd-t10 #1 PASS ok
+ootd-t10 #2 PASS ok
+ootd-t10 #3 PASS ok
+ootd-t10 #4 PASS ok
+ootd-t10 #5 PASS ok
+ootd-t10 #6 WARN basse définition · cadrage serré
+ootd-t10 #7 PASS ok
+ootd-t10 #8 PASS ok
+ootd-t10 #9 PASS ok
+ootd-t10-pro #0 PASS ok
+ootd-t10-pro #1 PASS ok
+ootd-t10-pro #2 PASS ok
+ootd-t10-pro #3 PASS ok
+ootd-t10-pro #4 PASS ok
+ootd-t10-pro #5 PASS ok
+ootd-t10-pro #6 WARN basse définition · cadrage serré
+ootd-t10-pro #7 PASS ok
+ootd-t10-pro #8 PASS ok
+ootd-t10-pro #9 WARN cadrage serré
+ootd-t90 #0 PASS ok
+ootd-t90 #1 PASS ok
+ootd-t90 #2 PASS ok
+ootd-t90 #3 PASS ok
+ootd-t90 #4 PASS ok
+ootd-t90 #5 WARN cadrage serré
+ootd-t90 #6 WARN basse définition
+oxelo-md500e #0 WARN basse définition
+oxelo-md500e #1 PASS ok
+oxelo-md500e #2 PASS ok
+oxelo-md500e #3 PASS ok
+oxelo-md500e #4 PASS ok
+oxelo-md500e #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+oxelo-md500e #6 WARN cadrage serré
+oxelo-md500e #7 PASS ok
+oxelo-md500e #8 WARN cadrage serré
+oxelo-md500e #9 PASS ok
+oxelo-sd500e #0 PASS ok
+oxelo-sd500e #1 WARN cadrage serré
+oxelo-sd500e #2 PASS ok
+oxelo-sd500e #3 WARN cadrage serré
+oxelo-sd500e #4 PASS ok
+oxelo-sd500e #5 PASS ok
+oxelo-sd500e #6 WARN cadrage serré
+oxelo-sd500e #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+oxelo-sd500e #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+::notice title=photos lot14 (dry)::200 candidates · PASS 153 · WARN 19 · FAIL 20 · ERREUR 8

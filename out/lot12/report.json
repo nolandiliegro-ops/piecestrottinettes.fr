@@ -1,0 +1,3928 @@
+[
+ {
+  "slug": "laotie-es10p",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ac87c3ac-d036-444c-abf8-1d0a4709142a/1792166785043_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.832
+  },
+  "size": [
+   485,
+   544
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 1,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.818
+  },
+  "size": [
+   542,
+   755
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 2,
+  "url": "https://icbimg3.chiccdn.com/images/BA/59/4ae3e5af-1ef8-438f-a28e-474b9f977563.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.466,
+   "vivid": 0.006,
+   "fill": 0.644
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/3A/9C/789bf8b4-207a-4cb0-a5b5-aea9e48321ad.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.336,
+   "vivid": 0.061,
+   "fill": 0.767
+  },
+  "size": [
+   515,
+   1073
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 4,
+  "url": "https://icbimg3.chiccdn.com/images/34/91/3bf6ceda-45ce-44c7-a239-e23f7d4159f9.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.454,
+   "vivid": 0.006,
+   "fill": 0.71
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 5,
+  "url": "https://icbimg3.chiccdn.com/images/1C/07/a83c4bf5-3262-4f82-a32a-7b2b95c09a8a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.061,
+   "vivid": 0.035,
+   "fill": 0.838
+  },
+  "size": [
+   917,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 6,
+  "url": "https://icbimg3.chiccdn.com/images/1F/B9/9434392b-70b9-4338-b343-c65de53d6c5d.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.061,
+   "vivid": 0,
+   "fill": 0.814
+  },
+  "size": [
+   730,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 7,
+  "url": "https://icbimg3.chiccdn.com/images/96/5D/31e0b755-8dd6-45d7-8a2d-bc5449f807a3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.403,
+   "vivid": 0.007,
+   "fill": 0.637
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 8,
+  "url": "https://icbimg3.chiccdn.com/images/C5/54/5356b31a-ad89-4f4a-9f57-367367564ad8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.088,
+   "vivid": 0.022,
+   "fill": 0.691
+  },
+  "size": [
+   1080,
+   1083
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792166779668_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.398
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 1,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//7F/A2/112a8875-e6cc-4930-b939-b9003b4e491a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.398
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 2,
+  "url": "https://icbimg3.chiccdn.com/images/5E/BC/0a1b471b-b330-453e-a1a1-3a20bfeac9e5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.097,
+   "vivid": 0.04,
+   "fill": 0.525
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/CC/B3/7f602c9d-c3b0-422e-b79a-d0a9e45d18a6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.089,
+   "fill": 0.803
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 4,
+  "url": "https://icbimg3.chiccdn.com/images/04/6C/d98da709-ed3f-4f97-b974-485e94d08380.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.01,
+   "vivid": 0.047,
+   "fill": 0.767
+  },
+  "size": [
+   875,
+   610
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 5,
+  "url": "https://icbimg3.chiccdn.com/images/17/A8/5ae0e566-b431-4d46-a25e-cc27eddda4f7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.178,
+   "fill": 0.634
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 6,
+  "url": "https://icbimg3.chiccdn.com/images/9E/69/3c30c1ea-5d1c-4f91-aed8-93eec2e13dd0.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.815
+  },
+  "size": [
+   396,
+   604
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 7,
+  "url": "https://icbimg3.chiccdn.com/images/7A/C1/4f424bb8-087d-4b0c-a4db-b8f8f2319628.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.446
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 8,
+  "url": "https://icbimg3.chiccdn.com/images/3E/BC/63193c97-2b86-401e-9d0c-fe610673c23e.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.125,
+   "vivid": 0.277,
+   "fill": 0.764
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048/1792166790476_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.816
+  },
+  "size": [
+   1216,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048/1792166795967_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.727
+  },
+  "size": [
+   1694,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 2,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//10/29/ad661e4e-003d-4a92-b618-13d0901350ed.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.816
+  },
+  "size": [
+   581,
+   827
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/08/03/17e23897-74b2-4b3f-a86d-7736514eea3a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.077,
+   "vivid": 0.03,
+   "fill": 0.774
+  },
+  "size": [
+   1053,
+   1341
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 4,
+  "url": "https://icbimg3.chiccdn.com/images/95/5C/054dbf1b-ae99-4179-9c60-7c14c5ccbe50.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.47,
+   "vivid": 0.113,
+   "fill": 0.832
+  },
+  "size": [
+   1100,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 5,
+  "url": "https://icbimg3.chiccdn.com/images/99/18/0acfeb4d-162a-4bfe-93b1-92acf6e3e4d2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.266,
+   "fill": 0.737
+  },
+  "size": [
+   1100,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 6,
+  "url": "https://icbimg3.chiccdn.com/images/5D/78/e39b2087-2f5a-4e4d-9c67-b2c4d7c5c92c.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.034,
+   "vivid": 0.217,
+   "fill": 0.63
+  },
+  "size": [
+   1100,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 7,
+  "url": "https://icbimg3.chiccdn.com/images/89/DB/1b47f46b-6392-4e94-a777-582af871e303.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.122,
+   "vivid": 0.04,
+   "fill": 0.739
+  },
+  "size": [
+   1005,
+   1243
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 8,
+  "url": "https://icbimg3.chiccdn.com/images/B8/91/efd94f61-a8bd-425b-a9cf-3c4814b8dec7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.711
+  },
+  "size": [
+   914,
+   1185
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-h6-pro",
+  "i": 9,
+  "url": "https://icbimg3.chiccdn.com/images/25/05/6b3a29c9-b1d6-40e7-a66c-21d1f9d2634a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.236,
+   "vivid": 0.256,
+   "fill": 0.491
+  },
+  "size": [
+   1100,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1791682693458_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.812
+  },
+  "size": [
+   566,
+   835
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 1,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.516
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 2,
+  "url": "https://icbimg3.chiccdn.com/images/65/DD/ed680263-98dd-4fee-bc9d-e42c8a7f016a.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.013,
+   "vivid": 0.122,
+   "fill": 0.656
+  },
+  "size": [
+   1052,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/03/A0/98f5da05-359e-4d0f-aecc-caca885cad5d.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.395,
+   "vivid": 0.128,
+   "fill": 0.525
+  },
+  "size": [
+   921,
+   1247
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 4,
+  "url": "https://icbimg3.chiccdn.com/images/83/05/14d6751d-92e7-4b12-a510-94fcca64ebe0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.041,
+   "vivid": 0.146,
+   "fill": 0.582
+  },
+  "size": [
+   977,
+   1243
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 5,
+  "url": "https://icbimg3.chiccdn.com/images/FF/9B/10346fb6-e070-48e0-8fad-2b0f7b783055.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.669
+  },
+  "size": [
+   1070,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 6,
+  "url": "https://icbimg3.chiccdn.com/images/E2/CF/ea5a8a1b-34c3-45b3-bdb9-253281cf7666.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (4 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (4 morceaux)"
+   ],
+   "parts": 4,
+   "second": 0.021,
+   "vivid": 0.122,
+   "fill": 0.565
+  },
+  "size": [
+   961,
+   1221
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 7,
+  "url": "https://icbimg3.chiccdn.com/images/F3/83/6362b8c7-3793-4b13-bbe3-9f3483fe3a31.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.116,
+   "vivid": 0.076,
+   "fill": 0.762
+  },
+  "size": [
+   788,
+   1152
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 8,
+  "url": "https://icbimg3.chiccdn.com/images/59/97/3ae797f6-a49d-4196-83c7-c9fab8e47565.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.674
+  },
+  "size": [
+   1053,
+   1350
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 0,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//89/4C/33860186-4ecb-4a02-8a1d-00af123fe214.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.474
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 1,
+  "url": "https://icbimg3.chiccdn.com/images/B5/A9/1ae380d4-3047-4788-94e1-9487aef63bfb.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.071,
+   "vivid": 0.034,
+   "fill": 0.766
+  },
+  "size": [
+   1048,
+   678
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 2,
+  "url": "https://icbimg3.chiccdn.com/images/74/9B/11b092cf-9fcb-49da-8e2c-26943770ae66.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.762
+  },
+  "size": [
+   322,
+   621
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/46/4B/c37996a4-d8c3-4732-8b7b-9726ef7a48db.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.534
+  },
+  "size": [
+   836,
+   605
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 4,
+  "url": "https://icbimg3.chiccdn.com/images/0F/30/ec2510db-90a2-48a8-b0a6-f0b79cff892d.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.031,
+   "vivid": 0.072,
+   "fill": 0.749
+  },
+  "size": [
+   1048,
+   646
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 5,
+  "url": "https://icbimg3.chiccdn.com/images/5F/64/9c854a5c-f743-423b-8b17-edaa5672c0ba.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.191,
+   "vivid": 0.085,
+   "fill": 0.51
+  },
+  "size": [
+   1048,
+   378
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 6,
+  "url": "https://icbimg3.chiccdn.com/images/52/B6/9b3c7c68-071d-4ff7-b057-3776d143258e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.462
+  },
+  "size": [
+   626,
+   589
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 7,
+  "url": "https://icbimg3.chiccdn.com/images/D8/A2/08d26f9e-a888-4788-9f9f-1043091aaf5d.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.796
+  },
+  "size": [
+   413,
+   584
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1791682691456_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.474
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1791999901116_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.832
+  },
+  "size": [
+   730,
+   827
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 1,
+  "url": "https://app.ridereview.com/storage/v1/object/public/airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/hero_image_attPihhQWs0bSD90x",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.336
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 2,
+  "url": "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/additional_image_attSXo32S0XOoj1ar",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.228
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 3,
+  "url": "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/recdImyQ602cnMpaQ/additional_image_attiVLYEABCUlStNJ",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.212
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792166822517_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.8
+  },
+  "size": [
+   495,
+   807
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792166827076_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.837
+  },
+  "size": [
+   548,
+   618
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 2,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-1-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.664
+  },
+  "size": [
+   701,
+   1028
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 3,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-2-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.773
+  },
+  "size": [
+   816,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 4,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-3-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.681
+  },
+  "size": [
+   433,
+   923
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 5,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-4-min.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.771
+  },
+  "size": [
+   666,
+   990
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792166808595_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.72
+  },
+  "size": [
+   514,
+   811
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792166816632_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.006,
+   "vivid": 0.029,
+   "fill": 0.528
+  },
+  "size": [
+   1448,
+   1848
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 2,
+  "url": "https://app.ridereview.com/storage/v1/object/public/airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/hero_image_att6o7B0iP6RtHXgN",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.37
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 3,
+  "url": "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/additional_image_attvtj5frrFViobDm",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.233
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 4,
+  "url": "https://app.ridereview.com/storage/v1/object/public//airtable-image-import/airtable_product_import/reciAnLq7YdTi403X/additional_image_attEofczehJKUeGLT",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.204
+  },
+  "size": [
+   1296,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791664110416_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.228,
+   "vivid": 0.002,
+   "fill": 0.364
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791997630764_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.81
+  },
+  "size": [
+   700,
+   1118
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 2,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-1-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.724
+  },
+  "size": [
+   661,
+   1008
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 3,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-2-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.828
+  },
+  "size": [
+   843,
+   893
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 4,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-3-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.785
+  },
+  "size": [
+   549,
+   975
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 5,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/merlinii-4-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.667
+  },
+  "size": [
+   418,
+   982
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cd1d87f0-a856-40fa-b7f5-e79df6b407c3/1791664114391_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.319
+  },
+  "size": [
+   1556,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cd1d87f0-a856-40fa-b7f5-e79df6b407c3/1791664117830_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.784
+  },
+  "size": [
+   201,
+   318
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 2,
+  "url": "https://micro-mobility.fr/10072-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.319
+  },
+  "size": [
+   1556,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 3,
+  "url": "https://micro-mobility.fr/9953-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.804
+  },
+  "size": [
+   821,
+   1294
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 4,
+  "url": "https://micro-mobility.fr/9954-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.47
+  },
+  "size": [
+   1556,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 5,
+  "url": "https://micro-mobility.fr/9955-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.819
+  },
+  "size": [
+   933,
+   1278
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 6,
+  "url": "https://micro-mobility.fr/9956-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.785
+  },
+  "size": [
+   1079,
+   586
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-x21",
+  "i": 7,
+  "url": "https://micro-mobility.fr/10073-product_main_2x/trottinette-electrique-micro-x21.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.156,
+   "fill": 0.615
+  },
+  "size": [
+   1556,
+   1556
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1791942894441_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   532,
+   720
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1791942896300_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.285
+  },
+  "size": [
+   938,
+   1022
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 2,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   891,
+   900
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 3,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_1_.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.78
+  },
+  "size": [
+   520,
+   987
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 4,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_2_.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.781
+  },
+  "size": [
+   508,
+   960
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 5,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2023/08/nami_blast_3_.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.764
+  },
+  "size": [
+   960,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 6,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/blast-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.818
+  },
+  "size": [
+   561,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 7,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-14@2x.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.724
+  },
+  "size": [
+   841,
+   820
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_01.png?v=1739392508",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.442
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_02.png?v=1739392516",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.796
+  },
+  "size": [
+   541,
+   912
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_03.png?v=1739392524",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.839
+  },
+  "size": [
+   750,
+   783
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_04.png?v=1739392531",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.799
+  },
+  "size": [
+   709,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_05.png?v=1739392538",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.779
+  },
+  "size": [
+   1064,
+   520
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_06.png?v=1739392546",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.827
+  },
+  "size": [
+   1019,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Blast_Max_2.0_72V_40Ah_with_PMT_Tire_07.png?v=1739392554",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.845
+  },
+  "size": [
+   858,
+   924
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 7,
+  "url": "https://fastride.fr/18055-large_default/trottinette-electrique-nami-blast-2-max-by-fastride.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b3ce1ce4-857f-4215-8334-84f275e10ce2/1792166858393_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.357,
+   "vivid": 0.132,
+   "fill": 0.614
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-2-max",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b3ce1ce4-857f-4215-8334-84f275e10ce2/1792166863664_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.837
+  },
+  "size": [
+   882,
+   989
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792166837793_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   624,
+   630
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792166842519_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.827
+  },
+  "size": [
+   289,
+   293
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-1.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.845
+  },
+  "size": [
+   423,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-3.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.747
+  },
+  "size": [
+   350,
+   447
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-4.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.792
+  },
+  "size": [
+   427,
+   255
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-5.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.274
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-6.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.682
+  },
+  "size": [
+   426,
+   441
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Blast-Max-Electric-Scooter-7.jpg?v=1741099576",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.797
+  },
+  "size": [
+   423,
+   254
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 8,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-14@2x-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.724
+  },
+  "size": [
+   841,
+   820
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 9,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Blast-Max-Hero-Shot.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   832,
+   1127
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1791943173105_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.535
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 1,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2021/12/Nami-Burn-e-Viper.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.823
+  },
+  "size": [
+   500,
+   663
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/viper-2-2-3.jpg?v=1698854709",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.772
+  },
+  "size": [
+   333,
+   481
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/nami42.jpg?v=1699974391",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.851
+  },
+  "size": [
+   654,
+   654
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded.jpg?v=1728295617",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.819
+  },
+  "size": [
+   1058,
+   737
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnErear.jpg?v=1728295647",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.815
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiRear.jpg?v=1728296037",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.763
+  },
+  "size": [
+   1000,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnFronttyre.jpg?v=1728295971",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.825
+  },
+  "size": [
+   879,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/viper-2-2-3_a5f20f0c-1fa4-440a-9d70-f73e4eab5682.jpg?v=1699974243",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.497
+  },
+  "size": [
+   430,
+   578
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded_1ca34a01-0981-474f-a1dd-5324e00c7f1f.jpg?v=1728296814",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.819
+  },
+  "size": [
+   1058,
+   737
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/burne2rear_610496a6-dd9d-4f76-a186-902ca6fe4d52.jpg?v=1728296747",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.441
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnErear_83f0a09e-e7b3-4fb9-b743-e755ebf124be.jpg?v=1728296766",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.815
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiRear_ac5e1f17-05c2-45d8-bc1e-28f8a82ee4ed.jpg?v=1728296780",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.683
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/nami42_23c5a326-f014-4581-b2db-4f347532def0.jpg?v=1699974243",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.851
+  },
+  "size": [
+   654,
+   654
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnFronttyre_902f8ba3-9cc0-43e0-b6e9-0d1dead94ac9.jpg?v=1728296843",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.825
+  },
+  "size": [
+   879,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiBoard_61c945c2-06a4-445f-b6c1-95c8f6ae0da2.jpg?v=1728296829",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.823
+  },
+  "size": [
+   1080,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792000276790_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.02,
+   "vivid": 0,
+   "fill": 0.819
+  },
+  "size": [
+   863,
+   724
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8e4da68-45b3-4a69-85a5-3604f43001e8/1791638656282_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.547
+  },
+  "size": [
+   623,
+   704
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 1,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-hero-Shot.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.587
+  },
+  "size": [
+   991,
+   1083
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 2,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/burn-e-2-min.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.829
+  },
+  "size": [
+   619,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 3,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.689
+  },
+  "size": [
+   835,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 4,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-Front-Fork.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.811
+  },
+  "size": [
+   765,
+   1136
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36ace91c-484b-4a70-84b3-39a630e550f6/1791638667017_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.821
+  },
+  "size": [
+   880,
+   1180
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36ace91c-484b-4a70-84b3-39a630e550f6/1791638678338_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.128,
+   "fill": 0.774
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_01.png?v=1739391813",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.663
+  },
+  "size": [
+   977,
+   982
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_02.png?v=1739391820",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.335
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_03.png?v=1739391828",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   887,
+   887
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_04.png?v=1739391834",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.409
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_05.png?v=1739391841",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.837
+  },
+  "size": [
+   860,
+   765
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Burn-E_3_Max_2024_06.png?v=1739391849",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.776
+  },
+  "size": [
+   900,
+   458
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 8,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-6.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.689
+  },
+  "size": [
+   835,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/BurnEFolded.jpg?v=1728295617",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.819
+  },
+  "size": [
+   1058,
+   737
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1791943175291_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.815
+  },
+  "size": [
+   499,
+   713
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1791943177136_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.461,
+   "vivid": 0.127,
+   "fill": 0.757
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/3_69b23ac8-4d53-4735-b112-f04c7114641e.jpg?v=1728297411",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.837
+  },
+  "size": [
+   953,
+   1016
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/klimafolded.jpg?v=1728297399",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.806
+  },
+  "size": [
+   1035,
+   668
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/NAMIKLIMAelectricscooter_13.jpg?v=1699974410",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.8
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/12.jpg?v=1728297550",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.442
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/4.jpg?v=1728297451",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.76
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Klima_2024_01.png?v=1739392651",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.584
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Klima_2024_02.png?v=1739392658",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.42
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima",
+  "i": 9,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/klima-2-min.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.755
+  },
+  "size": [
+   519,
+   836
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aefced2e-d45d-4bd5-b538-69c05dab2360/1792000288034_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.841
+  },
+  "size": [
+   876,
+   940
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_1.webp?v=1779455667",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.7
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_3.webp?v=1779455667",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.831
+  },
+  "size": [
+   1130,
+   1217
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/KLIMA_CARBON_2.webp?v=1779455666",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.774
+  },
+  "size": [
+   1128,
+   588
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 4,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-5.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.704
+  },
+  "size": [
+   813,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 5,
+  "url": "https://fastride.fr/18151-large_default/trottinette-electrique-nami-klima-max-by-fastride.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Klima-1.jpg?v=1741101661",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.841
+  },
+  "size": [
+   406,
+   437
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Klima-2.jpg?v=1741101661",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.482
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8f413f11-fdde-4d20-bc78-0a6c8ad4e9b1/1792166847880_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.827
+  },
+  "size": [
+   722,
+   777
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8f413f11-fdde-4d20-bc78-0a6c8ad4e9b1/1792166852780_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.765
+  },
+  "size": [
+   518,
+   849
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_1.png?v=1779711840",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.805
+  },
+  "size": [
+   705,
+   1102
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_2.png?v=1727275899",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.846
+  },
+  "size": [
+   1014,
+   1089
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_3.png?v=1727275898",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.837
+  },
+  "size": [
+   1045,
+   1110
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_4.png?v=1727275899",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.807
+  },
+  "size": [
+   667,
+   1089
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_5.png?v=1727275898",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.837
+  },
+  "size": [
+   989,
+   1111
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1787/7949/files/KlimaONE_6.png?v=1727275898",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.771
+  },
+  "size": [
+   553,
+   1116
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 8,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/klima-one-1-min.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.738
+  },
+  "size": [
+   514,
+   848
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-klima-one",
+  "i": 9,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2024/09/Nami-Klima-One-hero-Shot.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.55
+  },
+  "size": [
+   1166,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4987c7d4-d7da-483f-9517-bd645fe75f29/1791942889631_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.509
+  },
+  "size": [
+   324,
+   324
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_01.png?v=1739391714",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.584
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_02.png?v=1739391722",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.409
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_03.png?v=1739391729",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.207
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_04.png?v=1739391736",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.408
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_05.png?v=1739391743",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.634
+  },
+  "size": [
+   969,
+   850
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0898/0683/1889/files/Nami_Canada_Nami_Stellar_2024_06.png?v=1739391752",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.551
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 7,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Stellar-1-min.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.817
+  },
+  "size": [
+   603,
+   828
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-stellar",
+  "i": 8,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.697
+  },
+  "size": [
+   835,
+   810
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1791942892304_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.282
+  },
+  "size": [
+   770,
+   939
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 1,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/super-stellar-1-min.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.821
+  },
+  "size": [
+   540,
+   811
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 2,
+  "url": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-7.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.685
+  },
+  "size": [
+   835,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-1.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.51
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-2.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.771
+  },
+  "size": [
+   424,
+   223
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-3.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.313
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-4.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.263
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-5.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.325
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0584/2252/6150/files/Nami-Super-Stellar-6.jpg?v=1741102617",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.84
+  },
+  "size": [
+   393,
+   430
+  ],
+  "error": null
+ }
+]

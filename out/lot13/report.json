@@ -1,0 +1,3803 @@
+[
+ {
+  "slug": "navee-gt3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/31a7b5be-4cc1-41a4-8b61-413e838552dd/1792000748493_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.655
+  },
+  "size": [
+   1772,
+   1772
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/31a7b5be-4cc1-41a4-8b61-413e838552dd/1792000759382_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.793
+  },
+  "size": [
+   438,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT3_eaaa1604-507f-4f02-9ab5-05086aa66866.png?v=1788424243",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.142,
+   "fill": 0.793
+  },
+  "size": [
+   438,
+   755
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/13_2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.822
+  },
+  "size": [
+   1645,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT3_2.jpg?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.23,
+   "vivid": 0.039,
+   "fill": 0.685
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/21_3.webp?v=1780056017",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.741
+  },
+  "size": [
+   1746,
+   847
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/jimeng-2026-04-18-8382_1.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.813
+  },
+  "size": [
+   1190,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/4_27.webp?v=1780302419",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.762
+  },
+  "size": [
+   546,
+   981
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/8_19.webp?v=1780309451",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.015,
+   "vivid": 0.001,
+   "fill": 0.752
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame2_ccf7acfa-dfdd-4660-a4d9-b58ddbf222a0.webp?v=1780301737",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.128,
+   "fill": 0.713
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cffb867e-cb1d-426b-bbc2-079659977d66/1791991422690_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.815
+  },
+  "size": [
+   302,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cffb867e-cb1d-426b-bbc2-079659977d66/1791991425297_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.342
+  },
+  "size": [
+   1404,
+   1104
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT3_Max_c1d2a854-85d0-4f88-93f7-033878c7b355.png?v=1788424246",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.76
+  },
+  "size": [
+   357,
+   773
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT3_MAX_2.jpg?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.23,
+   "vivid": 0.039,
+   "fill": 0.685
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/13_2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.822
+  },
+  "size": [
+   1645,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/20_4.webp?v=1780056017",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.741
+  },
+  "size": [
+   1746,
+   847
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/5_c901ea22-b19e-4893-8221-eb4dff00b626.webp?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.061,
+   "vivid": 0.006,
+   "fill": 0.675
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/jimeng-2026-04-17-1780_1.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.841
+  },
+  "size": [
+   1618,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/jimeng-2026-04-17-6448_1.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.813
+  },
+  "size": [
+   1191,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt3-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame2_24db3e0a-e828-4b6f-933d-1289e800bd05.webp?v=1780301176",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.128,
+   "fill": 0.713
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4350d0f5-1109-4ec6-883e-f9e251e6f92a/1791638872335_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.687
+  },
+  "size": [
+   1739,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4350d0f5-1109-4ec6-883e-f9e251e6f92a/1791638881381_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.816
+  },
+  "size": [
+   1691,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4350d0f5-1109-4ec6-883e-f9e251e6f92a/1791997447177_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.317
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT5_Max.png?v=1788424246",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.329
+  },
+  "size": [
+   640,
+   730
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Navee_GT5_Max.png?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.649
+  },
+  "size": [
+   1784,
+   1723
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NaveeGT5Max-1.png?v=1780056013",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.427
+  },
+  "size": [
+   1488,
+   1501
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NaveeGT5Max-2.png?v=1780056013",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.578
+  },
+  "size": [
+   1782,
+   889
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NaveeGT5Max-3.png?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.688
+  },
+  "size": [
+   1818,
+   1001
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NaveeGT5Max-4.png?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.32
+  },
+  "size": [
+   1734,
+   1574
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Navee_GT5_Max_Smart_LED_Display.jpg?v=1780056013",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.067,
+   "vivid": 0.035,
+   "fill": 0.476
+  },
+  "size": [
+   1790,
+   735
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3d1fc80b-431f-458d-bc02-70db5d62b26f/1791638885244_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.627
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3d1fc80b-431f-458d-bc02-70db5d62b26f/1791638890199_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.447
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/GT5_Pro.png?v=1788424244",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.699
+  },
+  "size": [
+   498,
+   798
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEGT5ProEScooter.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.69
+  },
+  "size": [
+   1670,
+   1596
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEGT5ProEScooter-1.webp?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.442
+  },
+  "size": [
+   1430,
+   1501
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEGT5ProEScooter-2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.344
+  },
+  "size": [
+   1728,
+   1636
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEGT5ProEScooter-3.webp?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.643
+  },
+  "size": [
+   1637,
+   795
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEGT5ProEScooter-4.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.797
+  },
+  "size": [
+   1485,
+   783
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-gt5-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Navee_GT5_Pro_Spacious_Footboard_for_Stable_Stance.webp?v=1780056017",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.458,
+   "vivid": 0.01,
+   "fill": 0.833
+  },
+  "size": [
+   1205,
+   1017
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-k100-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/39f83610-c1f1-4a52-8949-96a1e557d573/1791991420954_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 36 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 36 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.358,
+   "fill": 0.616
+  },
+  "size": [
+   830,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-k100-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/K100_Pro.png?v=1788424247",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 33 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 33 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.328,
+   "fill": 0.712
+  },
+  "size": [
+   632,
+   799
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-k100-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEK100Pro.webp?v=1781251892",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 40 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 40 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.4,
+   "fill": 0.803
+  },
+  "size": [
+   1637,
+   1774
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-k100-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEK100Pro-1.webp?v=1781251890",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 37 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 37 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.37,
+   "fill": 0.781
+  },
+  "size": [
+   1343,
+   1778
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-k100-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/NAVEEK100Pro-2.webp?v=1781251886",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 37 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 37 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.372,
+   "fill": 0.781
+  },
+  "size": [
+   1334,
+   1770
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e749451-41c9-466a-8032-6f0b6f6f2687/1792000698544_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.824
+  },
+  "size": [
+   558,
+   764
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e749451-41c9-466a-8032-6f0b6f6f2687/1792000705514_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.76
+  },
+  "size": [
+   750,
+   324
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e749451-41c9-466a-8032-6f0b6f6f2687/1792000712090_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.739
+  },
+  "size": [
+   194,
+   194
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-4920097.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.552
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-1230945.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.818
+  },
+  "size": [
+   755,
+   1042
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-6546991.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.739
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-2400096.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.816
+  },
+  "size": [
+   729,
+   1037
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-7222894.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.317
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0310/0855/5140/products/navee-n65-scooter-electrique-pliable-10-pouces-moteur-500w-25kmh-batterie-48v-125ah-portee-maximale-65km-frein-a-disque-ipx4-etanche-bluetooth-app-4376958.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.292
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000720759_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.809
+  },
+  "size": [
+   583,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000728848_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.769
+  },
+  "size": [
+   411,
+   674
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000733584_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.817
+  },
+  "size": [
+   566,
+   761
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 3,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/N65i.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.843
+  },
+  "size": [
+   612,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bf99aac-e2f4-4d85-96ab-7189e8f01e04/1792166874592_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.842
+  },
+  "size": [
+   611,
+   651
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bf99aac-e2f4-4d85-96ab-7189e8f01e04/1792166880168_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.771
+  },
+  "size": [
+   1037,
+   514
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3bf99aac-e2f4-4d85-96ab-7189e8f01e04/1792166885085_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.564
+  },
+  "size": [
+   368,
+   368
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1087398226_41934345-1928-40e9-a412-18fe1fee0b7c.png?v=1778852290",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.682
+  },
+  "size": [
+   1332,
+   1872
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1082662219.webp?v=1778852288",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.851
+  },
+  "size": [
+   729,
+   779
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1082662225_9cb486b0-fa48-41f3-ac9a-ae580c1bc50f.png?v=1778852287",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.798
+  },
+  "size": [
+   399,
+   779
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1082662229_008431c9-41b9-48d0-a7d3-9c462015f059.png?v=1778852288",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.785
+  },
+  "size": [
+   397,
+   779
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1082662210.webp?v=1778852288",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.798
+  },
+  "size": [
+   778,
+   414
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/navee-electric-scooter-s40-1082662230_f4a14546-0c88-44d0-8f56-66356863fd5c.png?v=1778852288",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.796
+  },
+  "size": [
+   446,
+   778
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s40",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/NaveeS40_012.webp?v=1778852288",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.632
+  },
+  "size": [
+   1440,
+   1440
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dee9001-4eaf-457c-9d61-b970c5e0a6aa/1792166890725_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.497
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 1,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/S60.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.846
+  },
+  "size": [
+   599,
+   639
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 2,
+  "url": "https://www.fust.ch/_next/image?url=http%3A%2F%2Fapi-nettoshop-prod-external.coop.ch%2Fmedias%2F10790747-1.jpg%3Fcontext%3DbWFzdGVyfGNvbW1vbl9wcm9kdWN0fDEyNjk1MDl8aW1hZ2UvanBlZ3xhRGcwTDJneU1DOHhNREV3TXpnNE16UXpNVGsyTmk4eE1EYzVNRGMwTjE4eExtcHdad3w5ZGJlZmJjYmM1MmFjY2I2MmE5YTIyNjc4ODljNDExMzA3ODZlNGNiZGE3OTRlZTg5ZGZmNjUxMjAwZDMwNGIw&w=2048&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.792
+  },
+  "size": [
+   1222,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 3,
+  "url": "https://www.fust.ch/_next/image?url=http%3A%2F%2Fapi-nettoshop-prod-external.coop.ch%2Fmedias%2F10790747-2.jpg%3Fcontext%3DbWFzdGVyfGNvbW1vbl9wcm9kdWN0fDEzNDQ1MTd8aW1hZ2UvanBlZ3xhRGRpTDJoaVl5OHhNREV3TXpnMk1EUXlPRGd6TUM4eE1EYzVNRGMwTjE4eUxtcHdad3w0NTBkYzFmYjljYzJkMTFjMDdkYTg3ZTQ1MWFmMmIwNmRlYTY4Mzk5YjcxNWFmZTQzYjNhMjkwOWEyNjlkNTQw&w=2048&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.8
+  },
+  "size": [
+   1368,
+   1762
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 4,
+  "url": "https://www.fust.ch/_next/image?url=http%3A%2F%2Fapi-nettoshop-prod-external.coop.ch%2Fmedias%2F10790747-3.jpg%3Fcontext%3DbWFzdGVyfGNvbW1vbl9wcm9kdWN0fDEyNDQxMTZ8aW1hZ2UvanBlZ3xhR1ZtTDJobE5DOHhNREV3TXpnME9EQTBNalV5Tmk4eE1EYzVNRGMwTjE4ekxtcHdad3xlNTY5MWYyNDFkMjQyNDZhZDhmOTlkYmJkYzc4ZWU3NmIzZWRjNTgwNGI5ZjY2YjIyZTQyYmRiMGEzMGI5NmVi&w=2048&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.822
+  },
+  "size": [
+   1643,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 5,
+  "url": "https://www.fust.ch/_next/image?url=http%3A%2F%2Fapi-nettoshop-prod-external.coop.ch%2Fmedias%2F10790747-4.jpg%3Fcontext%3DbWFzdGVyfGNvbW1vbl9wcm9kdWN0fDQ4MjA1NTJ8aW1hZ2UvanBlZ3xhREV4TDJoak9DOHhNREV3TXpneE5UQXhNak00TWk4eE1EYzVNRGMwTjE4MExtcHdad3xlZDllN2Q2YTI5YjEyZWMzODQ5ODVlZTkyODZlOTNlNDNlYzdkOTk5NTAxZjkwZTBhYzYyZjIyYTlhNmY5YjVh&w=2048&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.765
+  },
+  "size": [
+   1764,
+   1331
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 6,
+  "url": "https://www.fust.ch/_next/image?url=http%3A%2F%2Fapi-nettoshop-prod-external.coop.ch%2Fmedias%2F10790747-5.jpg%3Fcontext%3DbWFzdGVyfGNvbW1vbl9wcm9kdWN0fDQyMzU0OTl8aW1hZ2UvanBlZ3xhRGc1TDJoa09TOHhNREV3TXpnd01UYzNOREV4TUM4eE1EYzVNRGMwTjE4MUxtcHdad3xmODgxZDQxYmQ4NTVjMGVhMTdiY2QxZDNjODQ5YTdiYWNjYWJmNjI5ZTQzYjIyYWMwYzM4ZGNjNGRmMzk2OTM3&w=2048&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.208,
+   "fill": 0.827
+  },
+  "size": [
+   1632,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/967beb75-ad8a-4f28-852c-57286f3b32d1/1792166899625_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.696
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/967beb75-ad8a-4f28-852c-57286f3b32d1/1792166905507_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.734
+  },
+  "size": [
+   281,
+   713
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/ST3_b79ad728-e6b9-4212-9f7e-2a9def8bc4c1.png?v=1788424244",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.734
+  },
+  "size": [
+   281,
+   713
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/14_2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.803
+  },
+  "size": [
+   1638,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/22_2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.806
+  },
+  "size": [
+   1386,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame4_a7258083-8cc0-4b3b-9a8f-b36f83c9afca.webp?v=1780301716",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.565
+  },
+  "size": [
+   1365,
+   1077
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame2_ccf7acfa-dfdd-4660-a4d9-b58ddbf222a0.webp?v=1780301737",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.128,
+   "fill": 0.713
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f699eb1-fc51-4fa9-adae-c41798fa93e7/1791991713402_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.717
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/ST3_Pro_c1b57cff-f283-4fc2-9847-3b1c7f4cb5c2.png?v=1788424245",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.18,
+   "fill": 0.784
+  },
+  "size": [
+   392,
+   604
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/23_1.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.806
+  },
+  "size": [
+   1386,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/14_2.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.803
+  },
+  "size": [
+   1638,
+   1766
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/jimeng-2026-04-18-9225_1.webp?v=1780056017",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.84
+  },
+  "size": [
+   1604,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame2.webp?v=1780300537",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.278,
+   "vivid": 0.128,
+   "fill": 0.713
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/5_28.webp?v=1780302680",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.432,
+   "vivid": 0,
+   "fill": 0.675
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st3-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/Frame4.webp?v=1780300551",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.565
+  },
+  "size": [
+   1365,
+   1077
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14dacaf7-d749-4a6b-a775-fc1e8b24f709/1791638894940_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.833
+  },
+  "size": [
+   1644,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14dacaf7-d749-4a6b-a775-fc1e8b24f709/1791997432058_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.382
+  },
+  "size": [
+   1472,
+   1856
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14dacaf7-d749-4a6b-a775-fc1e8b24f709/1791997442001_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.675
+  },
+  "size": [
+   1834,
+   1060
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/ST5_Pro.png?v=1788424244",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.013,
+   "vivid": 0.063,
+   "fill": 0.847
+  },
+  "size": [
+   669,
+   710
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/20251219-1531481_1.webp?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.751
+  },
+  "size": [
+   1740,
+   1836
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/sisi1_1.webp?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.661
+  },
+  "size": [
+   990,
+   1836
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/syisi1_1.webp?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.673
+  },
+  "size": [
+   1832,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-st5-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/WGE1_1.webp?v=1780056013",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.751
+  },
+  "size": [
+   1740,
+   1836
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d0438397-2f1d-4809-a2fa-67d5722df24d/1791656710651_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.819
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d0438397-2f1d-4809-a2fa-67d5722df24d/1791997423799_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.78
+  },
+  "size": [
+   1570,
+   1627
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/XT5_Pro.png?v=1788424244",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.008,
+   "fill": 0.668
+  },
+  "size": [
+   808,
+   783
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/img_v3_02q0_ede75a49-0326-46d6-ba63-6a038dc2d4dg_1_1.webp?v=1781162048",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.845
+  },
+  "size": [
+   1497,
+   1539
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/xt5pro_45_1.webp?v=1781162056",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.826
+  },
+  "size": [
+   1140,
+   1535
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/pro1.webp?v=1781162063",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.778
+  },
+  "size": [
+   1573,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-xt5-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0750/2063/2220/files/pro_1_1.webp?v=1781162089",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.786
+  },
+  "size": [
+   1597,
+   823
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e198481d-2a23-41bc-ae03-cebedf1c4b72/1782545284817_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.064,
+   "fill": 0.842
+  },
+  "size": [
+   505,
+   537
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/51gSg++3ftL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.825
+  },
+  "size": [
+   1175,
+   1517
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/41REnQmAJyL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.206
+  },
+  "size": [
+   374,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/31BE7yBFulL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.825
+  },
+  "size": [
+   418,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31-FmuFzc2L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.842
+  },
+  "size": [
+   509,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76a7291f-df89-4621-aab0-f201450cff92/1782545286696_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.022,
+   "fill": 0.732
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/71MwBeFui9L._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.322
+  },
+  "size": [
+   1620,
+   964
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/51deLeCJMBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.415
+  },
+  "size": [
+   497,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/31RY-coIopL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.052,
+   "vivid": 0.01,
+   "fill": 0.845
+  },
+  "size": [
+   517,
+   529
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/510XqUOF1NL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.476,
+   "vivid": 0.004,
+   "fill": 0.782
+  },
+  "size": [
+   229,
+   291
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/51LKWsCEPKL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.739
+  },
+  "size": [
+   179,
+   354
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/51NJYyz4XoL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.815
+  },
+  "size": [
+   698,
+   955
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7acaec54-9819-4363-a355-04b90106c8bb/1791992020450_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.156,
+   "fill": 0.613
+  },
+  "size": [
+   634,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 1,
+  "url": "https://www.xn--tuksimaailm-ffb.ee/wp-content/uploads/2022/12/Segway-eKickScooter-D38E-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.147,
+   "fill": 0.842
+  },
+  "size": [
+   770,
+   815
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 2,
+  "url": "https://www.xn--tuksimaailm-ffb.ee/wp-content/uploads/2022/12/Segway-eKickScooter-D38E-elektritoukeratas-elektriline-toukeratas-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.83
+  },
+  "size": [
+   815,
+   991
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 3,
+  "url": "https://www.xn--tuksimaailm-ffb.ee/wp-content/uploads/2022/12/Segway-eKickScooter-D38E-elektritoukeratas-elektriline-toukeratas-3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.724
+  },
+  "size": [
+   1027,
+   943
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 4,
+  "url": "https://www.xn--tuksimaailm-ffb.ee/wp-content/uploads/2022/12/Segway-eKickScooter-D38E-elektritoukeratas-elektriline-toukeratas-4.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.365
+  },
+  "size": [
+   1102,
+   1102
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-d38e",
+  "i": 5,
+  "url": "https://www.xn--tuksimaailm-ffb.ee/wp-content/uploads/2022/12/Segway-eKickScooter-D38E-elektritoukeratas-elektriline-toukeratas-3.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.734
+  },
+  "size": [
+   967,
+   948
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792166916512_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.693
+  },
+  "size": [
+   857,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/51l0TlXcQhL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.62
+  },
+  "size": [
+   1458,
+   1578
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/2186u-fjQqL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.746
+  },
+  "size": [
+   238,
+   125
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/214tO711RBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.814
+  },
+  "size": [
+   193,
+   247
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31EF2KG8swL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.021,
+   "fill": 0.692
+  },
+  "size": [
+   416,
+   264
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31SDVUCrjoL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.8
+  },
+  "size": [
+   399,
+   281
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/21yrxI6g8gL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.609
+  },
+  "size": [
+   346,
+   371
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6fbce5a9-6a58-48b7-8e1f-3b705f95d1e8/1792001179896_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.843
+  },
+  "size": [
+   482,
+   501
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6fbce5a9-6a58-48b7-8e1f-3b705f95d1e8/1792001190729_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.693
+  },
+  "size": [
+   1102,
+   1102
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-6755205.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.843
+  },
+  "size": [
+   998,
+   1046
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-8635411.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.816
+  },
+  "size": [
+   667,
+   1171
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-2959279.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.831
+  },
+  "size": [
+   872,
+   1124
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-3808801.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   830,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/3955375254.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.693
+  },
+  "size": [
+   1102,
+   1102
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/3955367800.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.612
+  },
+  "size": [
+   1469,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-9370164.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.85
+  },
+  "size": [
+   1296,
+   1134
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-e2-pro-6923590.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.735
+  },
+  "size": [
+   1241,
+   1239
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-2_1copy.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.764
+  },
+  "size": [
+   653,
+   655
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-1-123copy.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.729
+  },
+  "size": [
+   466,
+   656
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-3_1copy.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.727
+  },
+  "size": [
+   479,
+   655
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Ninebot_E3.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.803
+  },
+  "size": [
+   590,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/8721008534046_h_f_l_1_9b67aa96-15ce-4281-b0bc-3ddfb4430cb0.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.275,
+   "vivid": 0.032,
+   "fill": 0.796
+  },
+  "size": [
+   1462,
+   1462
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/E3-Block-7-Imagecopy.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.845
+  },
+  "size": [
+   1285,
+   1177
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35600319-a72d-44bb-8bf0-b80ea98e0099/1792001196509_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.835
+  },
+  "size": [
+   779,
+   680
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35600319-a72d-44bb-8bf0-b80ea98e0099/1792001205236_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.025,
+   "vivid": 0.01,
+   "fill": 0.775
+  },
+  "size": [
+   669,
+   695
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1791991728483_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.641
+  },
+  "size": [
+   648,
+   603
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette_electrique_Segway_Ninebot_E3_Pro_E_02_copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.286,
+   "vivid": 0.031,
+   "fill": 0.697
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE06copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.014,
+   "vivid": 0.053,
+   "fill": 0.601
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE13copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.331,
+   "vivid": 0.06,
+   "fill": 0.732
+  },
+  "size": [
+   1782,
+   1304
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE11copy.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.402
+  },
+  "size": [
+   1781,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE12copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.187,
+   "vivid": 0.077,
+   "fill": 0.676
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE10copy.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.181,
+   "fill": 0.184
+  },
+  "size": [
+   1800,
+   1800
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-9125908.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.824
+  },
+  "size": [
+   1662,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-8522257.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.842
+  },
+  "size": [
+   1646,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/483c2f36-e376-44ee-9e14-87d68fda0f3d/1791992024533_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.52
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/483c2f36-e376-44ee-9e14-87d68fda0f3d/1791992028049_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.839
+  },
+  "size": [
+   740,
+   812
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 2,
+  "url": "https://alternative.bike/2649-large_default/trottinette-electrique-ninebot-segway-es2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   187,
+   206
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 3,
+  "url": "https://alternative.bike/2648-large_default/trottinette-electrique-ninebot-segway-es2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.789
+  },
+  "size": [
+   143,
+   178
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 4,
+  "url": "https://alternative.bike/2650-large_default/trottinette-electrique-ninebot-segway-es2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.713
+  },
+  "size": [
+   238,
+   92
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-es2",
+  "i": 5,
+  "url": "https://alternative.bike/2651-large_default/trottinette-electrique-ninebot-segway-es2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.682
+  },
+  "size": [
+   290,
+   195
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f2-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1d44d005-9274-445d-9522-591fcf9808f2/1791992015476_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.721
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f2-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-f2-pro-1752980.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.833
+  },
+  "size": [
+   923,
+   976
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f2-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-f2-pro-5274892.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.811
+  },
+  "size": [
+   779,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-f2-pro-9732443.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.791
+  },
+  "size": [
+   760,
+   1089
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/ninebot-kickscooter-f2-pro-9962266.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.805
+  },
+  "size": [
+   865,
+   553
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_main-123.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.736
+  },
+  "size": [
+   455,
+   654
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/trottinette-electrique-segway-f3-pro-e_2_copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.522
+  },
+  "size": [
+   1165,
+   1191
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/trottinette-electrique-segway-f3-pro-ecopy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.098,
+   "vivid": 0.022,
+   "fill": 0.744
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-2_1_1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.781
+  },
+  "size": [
+   622,
+   652
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-3_1_1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.746
+  },
+  "size": [
+   446,
+   653
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_copy.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.823
+  },
+  "size": [
+   842,
+   1112
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-Pro-E-550-W-Gris-et-Noir_1_copy.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.074,
+   "vivid": 0.007,
+   "fill": 0.761
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotF3E14_1500xcopy.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.821
+  },
+  "size": [
+   1334,
+   1518
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1791991730527_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.012,
+   "vivid": 0.04,
+   "fill": 0.708
+  },
+  "size": [
+   576,
+   630
+  ],
+  "error": null
+ }
+]

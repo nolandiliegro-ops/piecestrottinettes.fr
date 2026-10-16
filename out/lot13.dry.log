@@ -1,0 +1,177 @@
+navee-gt3 #0 PASS ok
+navee-gt3 #1 WARN basse définition · cadrage serré
+navee-gt3 #2 WARN basse définition · cadrage serré
+navee-gt3 #3 PASS ok
+navee-gt3 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+navee-gt3 #5 WARN cadrage serré
+navee-gt3 #6 PASS ok
+navee-gt3 #7 WARN basse définition · cadrage serré
+navee-gt3 #8 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+navee-gt3 #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+navee-gt3-max #0 WARN basse définition
+navee-gt3-max #1 PASS ok
+navee-gt3-max #2 WARN basse définition · cadrage serré
+navee-gt3-max #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+navee-gt3-max #4 PASS ok
+navee-gt3-max #5 WARN cadrage serré
+navee-gt3-max #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-gt3-max #7 PASS ok
+navee-gt3-max #8 PASS ok
+navee-gt3-max #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+navee-gt5-max #0 PASS ok
+navee-gt5-max #1 PASS ok
+navee-gt5-max #2 PASS ok
+navee-gt5-max #3 PASS ok
+navee-gt5-max #4 PASS ok
+navee-gt5-max #5 FAIL détourage sale / résidu de décor
+navee-gt5-max #6 FAIL détourage sale / résidu de décor
+navee-gt5-max #7 PASS ok
+navee-gt5-max #8 PASS ok
+navee-gt5-max #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-gt5-pro #0 PASS ok
+navee-gt5-pro #1 PASS ok
+navee-gt5-pro #2 WARN basse définition · cadrage serré
+navee-gt5-pro #3 PASS ok
+navee-gt5-pro #4 FAIL détourage sale / résidu de décor
+navee-gt5-pro #5 PASS ok
+navee-gt5-pro #6 FAIL détourage sale / résidu de décor
+navee-gt5-pro #7 PASS ok
+navee-gt5-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-k100-pro #0 WARN couleurs vives 36 % (visuel marketing ?)
+navee-k100-pro #1 WARN couleurs vives 33 % (visuel marketing ?)
+navee-k100-pro #2 WARN couleurs vives 40 % (visuel marketing ?)
+navee-k100-pro #3 WARN couleurs vives 37 % (visuel marketing ?)
+navee-k100-pro #4 WARN couleurs vives 37 % (visuel marketing ?)
+navee-n65 #0 WARN basse définition
+navee-n65 #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+navee-n65 #2 WARN basse définition
+navee-n65 #3 PASS ok
+navee-n65 #4 PASS ok
+navee-n65 #5 PASS ok
+navee-n65 #6 PASS ok
+navee-n65 #7 PASS ok
+navee-n65 #8 PASS ok
+navee-n65i #0 WARN basse définition
+navee-n65i #1 WARN basse définition · cadrage serré
+navee-n65i #2 WARN basse définition · cadrage serré
+navee-n65i #3 PASS ok
+navee-s40 #0 PASS ok
+navee-s40 #1 WARN basse définition · cadrage serré
+navee-s40 #2 FAIL détourage sale / résidu de décor · basse définition
+navee-s40 #3 PASS ok
+navee-s40 #4 PASS ok
+navee-s40 #5 WARN basse définition
+navee-s40 #6 WARN basse définition
+navee-s40 #7 WARN basse définition · cadrage serré
+navee-s40 #8 WARN basse définition
+navee-s40 #9 WARN cadrage serré
+navee-s60 #0 PASS ok
+navee-s60 #1 WARN basse définition
+navee-s60 #2 PASS ok
+navee-s60 #3 PASS ok
+navee-s60 #4 PASS ok
+navee-s60 #5 PASS ok
+navee-s60 #6 PASS ok
+navee-st3 #0 PASS ok
+navee-st3 #1 WARN basse définition · cadrage serré
+navee-st3 #2 WARN basse définition · cadrage serré
+navee-st3 #3 PASS ok
+navee-st3 #4 PASS ok
+navee-st3 #5 WARN cadrage serré
+navee-st3 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+navee-st3-pro #0 PASS ok
+navee-st3-pro #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+navee-st3-pro #2 PASS ok
+navee-st3-pro #3 PASS ok
+navee-st3-pro #4 PASS ok
+navee-st3-pro #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+navee-st3-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+navee-st3-pro #7 WARN cadrage serré
+navee-st5-pro #0 PASS ok
+navee-st5-pro #1 PASS ok
+navee-st5-pro #2 PASS ok
+navee-st5-pro #3 FAIL détourage sale / résidu de décor
+navee-st5-pro #4 PASS ok
+navee-st5-pro #5 PASS ok
+navee-st5-pro #6 PASS ok
+navee-st5-pro #7 PASS ok
+navee-xt5-pro #0 PASS ok
+navee-xt5-pro #1 PASS ok
+navee-xt5-pro #2 PASS ok
+navee-xt5-pro #3 PASS ok
+navee-xt5-pro #4 PASS ok
+navee-xt5-pro #5 WARN cadrage serré
+navee-xt5-pro #6 WARN cadrage serré
+f40 #0 WARN basse définition
+f40 #1 PASS ok
+f40 #2 WARN basse définition
+f40 #3 WARN basse définition
+f40 #4 WARN basse définition
+g30-max #0 PASS ok
+g30-max #1 PASS ok
+g30-max #2 FAIL détourage sale / résidu de décor · basse définition
+g30-max #3 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+g30-max #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+g30-max #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+g30-max #6 PASS ok
+ninebot-d38e #0 PASS ok
+ninebot-d38e #1 PASS ok
+ninebot-d38e #2 PASS ok
+ninebot-d38e #3 WARN cadrage serré
+ninebot-d38e #4 FAIL détourage sale / résidu de décor
+ninebot-d38e #5 WARN cadrage serré
+ninebot-e2 #0 PASS ok
+ninebot-e2 #1 PASS ok
+ninebot-e2 #2 FAIL détourage sale / résidu de décor · basse définition
+ninebot-e2 #3 FAIL détourage sale / résidu de décor · basse définition
+ninebot-e2 #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-e2 #5 WARN basse définition
+ninebot-e2 #6 WARN basse définition
+ninebot-e2-pro #0 WARN basse définition
+ninebot-e2-pro #1 PASS ok
+ninebot-e2-pro #2 PASS ok
+ninebot-e2-pro #3 PASS ok
+ninebot-e2-pro #4 PASS ok
+ninebot-e2-pro #5 PASS ok
+ninebot-e2-pro #6 PASS ok
+ninebot-e2-pro #7 PASS ok
+ninebot-e2-pro #8 WARN cadrage serré
+ninebot-e2-pro #9 PASS ok
+ninebot-e3 #0 PASS ok
+ninebot-e3 #1 WARN basse définition
+ninebot-e3 #2 WARN basse définition
+ninebot-e3 #3 WARN basse définition · cadrage serré
+ninebot-e3 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+ninebot-e3 #5 WARN cadrage serré
+ninebot-e3 #6 FAIL détourage sale / résidu de décor
+ninebot-e3 #7 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+ninebot-e3-pro-e #0 PASS ok
+ninebot-e3-pro-e #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+ninebot-e3-pro-e #2 FAIL détourage sale / résidu de décor
+ninebot-e3-pro-e #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-e3-pro-e #4 PASS ok
+ninebot-e3-pro-e #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+ninebot-e3-pro-e #6 PASS ok
+ninebot-e3-pro-e #7 PASS ok
+ninebot-e3-pro-e #8 PASS ok
+ninebot-es2 #0 PASS ok
+ninebot-es2 #1 PASS ok
+ninebot-es2 #2 WARN basse définition
+ninebot-es2 #3 WARN basse définition
+ninebot-es2 #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-es2 #5 FAIL détourage sale / résidu de décor · basse définition
+ninebot-f2-pro #0 PASS ok
+ninebot-f2-pro #1 PASS ok
+ninebot-f2-pro #2 PASS ok
+ninebot-f2-pro #3 PASS ok
+ninebot-f2-pro #4 WARN basse définition
+ninebot-f3-pro-e #0 WARN basse définition
+ninebot-f3-pro-e #1 FAIL détourage sale / résidu de décor
+ninebot-f3-pro-e #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+ninebot-f3-pro-e #3 PASS ok
+ninebot-f3-pro-e #4 WARN basse définition
+ninebot-f3-pro-e #5 WARN cadrage serré
+ninebot-f3-pro-e #6 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+ninebot-f3-pro-e #7 PASS ok
+ninebot-f3-pro-e #8 FAIL détourage sale / résidu de décor · basse définition
+::notice title=photos lot13 (dry)::176 candidates · PASS 85 · WARN 51 · FAIL 40 · ERREUR 0
