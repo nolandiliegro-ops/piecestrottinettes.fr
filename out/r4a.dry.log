@@ -1,0 +1,90 @@
+beaster-bs08 #0 WARN basse définition
+beaster-bs08 #1 WARN cadrage serré
+beaster-bs08 #2 ERROR Input buffer contains unsupported image format
+beaster-bs08 #3 ERROR Input buffer contains unsupported image format
+beaster-bs08 #4 ERROR Input buffer contains unsupported image format
+beaster-bs08 #5 ERROR Input buffer contains unsupported image format
+beaster-bs08 #6 ERROR Input buffer contains unsupported image format
+beaster-bs08 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+beaster-bs08 #8 PASS ok
+beaster-bs08 #9 PASS ok
+beaster-bs08 #10 WARN cadrage serré
+beaster-bs08 #11 WARN basse définition · cadrage serré
+beaster-bs08 #12 WARN basse définition
+beaster-bs08 #13 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #0 PASS ok
+e-twow-tanktorq-tk3 #1 WARN cadrage serré
+e-twow-tanktorq-tk3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #6 PASS ok
+e-twow-tanktorq-tk3 #7 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #9 PASS ok
+hitway-h5-pro #0 PASS ok
+hitway-h5-pro #1 WARN basse définition
+hitway-h5-pro #2 PASS ok
+hitway-h5-pro #3 WARN cadrage serré
+hitway-h5-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+hitway-h5-pro #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+hitway-h5-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+hitway-h5-pro #7 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+hitway-h5-pro #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux
+pure-flex #0 WARN cadrage serré
+pure-flex #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-flex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #4 PASS ok
+pure-flex #5 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 31 % (visuel marketing ?)
+pure-flex #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-flex #7 WARN cadrage serré
+velity-511-sx #0 PASS ok
+velity-511-sx #1 WARN basse définition
+velity-511-sx #2 ERROR Input buffer contains unsupported image format
+velity-511-sx #3 ERROR Input buffer contains unsupported image format
+velity-511-sx #4 ERROR Input buffer contains unsupported image format
+velity-511-sx #5 ERROR Input buffer contains unsupported image format
+velity-511-sx #6 ERROR téléchargement vide
+velity-511-sx #7 ERROR téléchargement vide
+velity-511-sx #8 WARN basse définition · cadrage serré
+velity-511-sx #9 FAIL détourage sale / résidu de décor · cadrage serré
+weped-fold-3 #0 PASS ok
+weped-fold-3 #1 WARN basse définition
+weped-fold-3 #2 ERROR Input buffer contains unsupported image format
+weped-fold-3 #3 ERROR Input buffer contains unsupported image format
+weped-fold-3 #4 ERROR Input buffer contains unsupported image format
+weped-fold-3 #5 ERROR Input buffer contains unsupported image format
+weped-fold-3 #6 ERROR Input buffer contains unsupported image format
+weped-fold-3 #7 ERROR Input buffer contains unsupported image format
+weped-fold-3 #8 ERROR Input buffer contains unsupported image format
+weped-fold-3 #9 ERROR Input buffer contains unsupported image format
+weped-fold-3 #10 PASS ok
+weped-fold-3 #11 FAIL détourage sale / résidu de décor
+weped-fold-3 #12 PASS ok
+weped-fold-3 #13 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-ssgt #0 ERROR Input buffer contains unsupported image format
+weped-ssgt #1 ERROR Input buffer contains unsupported image format
+weped-ssgt #2 ERROR Input buffer contains unsupported image format
+weped-ssgt #3 WARN cadrage serré
+weped-ssgt #4 WARN basse définition · cadrage serré
+yeep-me-100a #0 PASS ok
+yeep-me-100a #1 PASS ok
+yeep-me-100a #2 ERROR Only 4-channel images are supported
+yeep-me-100a #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+yeep-me-100a #4 FAIL détourage sale / résidu de décor · basse définition
+yeep-me-100a #5 WARN basse définition
+yeep-me-100a #6 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · produit minuscule dans le cadre
+yeep-me-100a #7 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-100a #8 WARN basse définition
+yeep-me-100a #9 WARN basse définition
+yeep-me-100a #10 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+yeep-me-100a-start #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+yeep-me-100a-start #1 WARN basse définition · cadrage serré
+yeep-me-100a-start #2 FAIL détourage sale / résidu de décor · basse définition
+yeep-me-100a-start #3 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-100a-start #4 WARN basse définition
+yeep-me-100a-start #5 WARN basse définition
+yeep-me-100a-start #6 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+yeep-me-100a-start #7 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+::notice title=photos r4a (dry)::89 candidates · PASS 14 · WARN 21 · FAIL 31 · ERREUR 23
