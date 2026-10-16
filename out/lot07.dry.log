@@ -1,0 +1,163 @@
+iscooter-i10 #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i10 #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i10 #2 PASS ok
+iscooter-i10 #3 PASS ok
+iscooter-i10 #4 PASS ok
+iscooter-i10 #5 PASS ok
+iscooter-i10 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i10 #7 PASS ok
+iscooter-i10-max #0 PASS ok
+iscooter-i10-max #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-i10-max #2 PASS ok
+iscooter-i10-max #3 PASS ok
+iscooter-i10-max #4 PASS ok
+iscooter-i10-max #5 WARN basse définition · cadrage serré
+iscooter-i10-max #6 WARN cadrage serré
+iscooter-i10-max #7 PASS ok
+iscooter-i10-max #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-i10-pro #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i10-pro #1 PASS ok
+iscooter-i10-pro #2 WARN cadrage serré
+iscooter-i10-pro #3 FAIL détourage sale / résidu de décor
+iscooter-i10-pro #4 PASS ok
+iscooter-i10-pro #5 PASS ok
+iscooter-i10-pro #6 PASS ok
+iscooter-i10-pro #7 PASS ok
+iscooter-i10-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9 #0 PASS ok
+iscooter-i9 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-i9 #2 PASS ok
+iscooter-i9 #3 PASS ok
+iscooter-i9 #4 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-i9 #5 PASS ok
+iscooter-i9 #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 47 % (visuel marketing ?)
+iscooter-i9 #7 WARN cadrage serré
+iscooter-i9 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-i9 #9 PASS ok
+iscooter-i9-max #0 PASS ok
+iscooter-i9-max #1 PASS ok
+iscooter-i9-max #2 FAIL détourage sale / résidu de décor
+iscooter-i9-max #3 FAIL détourage sale / résidu de décor
+iscooter-i9-max #4 PASS ok
+iscooter-i9-max #5 FAIL détourage sale / résidu de décor
+iscooter-i9-max #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9-max #7 WARN cadrage serré
+iscooter-i9-max #8 WARN basse définition
+iscooter-i9-max #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-i9-pro #0 PASS ok
+iscooter-i9-pro #1 PASS ok
+iscooter-i9-pro #2 PASS ok
+iscooter-i9-pro #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 41 % (visuel marketing ?)
+iscooter-i9-pro #4 PASS ok
+iscooter-i9-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-i9-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux · couleurs vives 53 % (visuel marketing ?)
+iscooter-i9-pro #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-i9-pro #8 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-i9ultra #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9ultra #1 WARN cadrage serré
+iscooter-i9ultra #2 WARN basse définition
+iscooter-i9ultra #3 WARN cadrage serré
+iscooter-i9ultra #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9ultra #5 WARN cadrage serré
+iscooter-i9ultra #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-i9ultra #7 WARN cadrage serré
+iscooter-i9ultra #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9ultra #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #2 PASS ok
+iscooter-ix3 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #4 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-ix3 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #6 PASS ok
+iscooter-ix3 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #8 FAIL détourage sale / résidu de décor
+iscooter-ix3 #9 PASS ok
+iscooter-ix4 #0 WARN cadrage serré
+iscooter-ix4 #1 PASS ok
+iscooter-ix4 #2 WARN cadrage serré
+iscooter-ix4 #3 PASS ok
+iscooter-ix4 #4 PASS ok
+iscooter-ix4 #5 WARN cadrage serré
+iscooter-ix4 #6 PASS ok
+iscooter-ix4 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix4 #8 PASS ok
+iscooter-ix5s #0 PASS ok
+iscooter-ix5s #1 WARN cadrage serré
+iscooter-ix5s #2 WARN cadrage serré
+iscooter-ix5s #3 PASS ok
+iscooter-ix5s #4 PASS ok
+iscooter-ix5s #5 WARN cadrage serré
+iscooter-ix5s #6 WARN cadrage serré
+iscooter-ix5s #7 PASS ok
+iscooter-ix5s #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix5s #9 WARN cadrage serré
+iscooter-ix7-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #2 PASS ok
+iscooter-ix7-pro #3 WARN cadrage serré
+iscooter-ix7-pro #4 WARN cadrage serré
+iscooter-ix7-pro #5 WARN cadrage serré
+iscooter-ix7-pro #6 WARN basse définition
+iscooter-ix7-pro #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix8 #0 PASS ok
+iscooter-ix8 #1 PASS ok
+iscooter-ix8 #2 PASS ok
+iscooter-ix8 #3 PASS ok
+iscooter-ix8 #4 PASS ok
+iscooter-ix8 #5 FAIL détourage sale / résidu de décor
+iscooter-ix8 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix8 #7 FAIL détourage sale / résidu de décor
+iscooter-w6 #0 PASS ok
+iscooter-w6 #1 WARN cadrage serré
+iscooter-w6 #2 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w6 #3 PASS ok
+iscooter-w6 #4 PASS ok
+iscooter-w6 #5 PASS ok
+iscooter-w6 #6 PASS ok
+iscooter-w6 #7 PASS ok
+iscooter-w6 #8 PASS ok
+iscooter-w6 #9 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w7 #0 PASS ok
+iscooter-w7 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #4 PASS ok
+iscooter-w7 #5 WARN cadrage serré
+iscooter-w7 #6 WARN cadrage serré
+iscooter-w7 #7 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w7 #8 WARN cadrage serré
+iscooter-w7 #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w8 #0 PASS ok
+iscooter-w8 #1 PASS ok
+iscooter-w8 #2 PASS ok
+iscooter-w8 #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w8 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+iscooter-w8 #5 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w8 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w8 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w8 #8 FAIL détourage sale / résidu de décor
+iscooter-w8 #9 PASS ok
+iscooter-w9 #0 PASS ok
+iscooter-w9 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9 #2 PASS ok
+iscooter-w9 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9 #8 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-w9 #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #0 PASS ok
+iscooter-w9-air #1 PASS ok
+iscooter-w9-air #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #5 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+iscooter-w9-air #7 WARN cadrage serré
+iscooter-w9-air #8 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #9 FAIL détourage sale / résidu de décor · cadrage serré
+::notice title=photos lot07 (dry)::162 candidates · PASS 62 · WARN 28 · FAIL 72 · ERREUR 0
