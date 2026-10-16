@@ -1,0 +1,1146 @@
+[
+ {
+  "slug": "laotie-es10p",
+  "i": 0,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.818
+  },
+  "size": [
+   542,
+   755
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792166779668_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.398
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 1,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//7F/A2/112a8875-e6cc-4930-b939-b9003b4e491a.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.398
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/61+GVDwoheL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.762
+  },
+  "size": [
+   928,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/71yOdR2nWYL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.253,
+   "vivid": 0.037,
+   "fill": 0.845
+  },
+  "size": [
+   1358,
+   1394
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/81VbMEgcjdL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.214,
+   "fill": 0.774
+  },
+  "size": [
+   1620,
+   1618
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/811tMqAKwlL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.265,
+   "fill": 0.479
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/71MftziHxcL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.372,
+   "vivid": 0.223,
+   "fill": 0.487
+  },
+  "size": [
+   1611,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/61997i--jjL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.111,
+   "vivid": 0.164,
+   "fill": 0.752
+  },
+  "size": [
+   1502,
+   1496
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 0,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.516
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1791682693458_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.812
+  },
+  "size": [
+   566,
+   835
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 2,
+  "url": "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0B/81/65ce360c-7cfa-4796-95e4-fbebf58e5e6d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.812
+  },
+  "size": [
+   801,
+   1178
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 3,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/F5/2E/a3441b9e-c838-4c1c-8501-5c04aded36b8.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.516
+  },
+  "size": [
+   1220,
+   1220
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 4,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/3A/FB/2236692c-ed82-487d-b3bb-60682108c39e.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.58
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 5,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/5B/BF/71cc0292-027b-482e-a7d0-746f49baecd4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.837
+  },
+  "size": [
+   1488,
+   1322
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 6,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/24/45/4b986fa8-3b12-43c0-b15d-6631b7a40655.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Only 4-channel images are supported"
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 7,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/54/69/f2dc3d02-3c62-4172-8ed9-96f4714ee4d0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.162,
+   "vivid": 0.011,
+   "fill": 0.613
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 8,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/4D/D6/46f8db60-a4c4-4dda-8a47-ee3d6ee38d01.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.454,
+   "vivid": 0,
+   "fill": 0.739
+  },
+  "size": [
+   1748,
+   881
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 0,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//89/4C/33860186-4ecb-4a02-8a1d-00af123fe214.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.474
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1791682691456_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.474
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/61Q9p+IJ9QL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.729
+  },
+  "size": [
+   928,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/81l2hyKzUlL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0.192,
+   "fill": 0.689
+  },
+  "size": [
+   1620,
+   1618
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/61f7M+ynSsL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.132,
+   "vivid": 0.152,
+   "fill": 0.635
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/81vYXqW1YcL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.281,
+   "vivid": 0.012,
+   "fill": 0.48
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/81pzDw3LSVL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.123,
+   "fill": 0.616
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/712z3iWm+XL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.089,
+   "vivid": 0.268,
+   "fill": 0.713
+  },
+  "size": [
+   1618,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc51c93a-efbf-4654-ab04-302669583825/1791997630764_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.81
+  },
+  "size": [
+   700,
+   1118
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 1,
+  "url": "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/9ac113a1eba0d33fae43387eb120c2f406694620140ec37927ec8cfc/image/76029/600x900/111/98/e/m/em0086-em0092_1_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.81
+  },
+  "size": [
+   526,
+   839
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 2,
+  "url": "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/25d7871efba7f2bcc7d2b625c6374467d3e9dfbbeb12737aca91202b/image/363804/600x900/111/98/m/e/medium-_micro_merlin_ii_grey_-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.57
+  },
+  "size": [
+   574,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 3,
+  "url": "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/d0f4ea4289fc6c5af1d496637bd68d0ce4c9f6f156a54a38386b7402/image/64518/600x900/111/98/e/m/em0086-em0092_3_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.805
+  },
+  "size": [
+   529,
+   827
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-1/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-2/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-3/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 7,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-4/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-merlin-ii",
+  "i": 8,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3e/41/fe/16662846/1543-5/tsp20240918020321/Trottinette-electrique-Micro-Merlin-II-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 0,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/N65i.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.843
+  },
+  "size": [
+   612,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000720759_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.809
+  },
+  "size": [
+   583,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 2,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/ff01157b-d4ad-49d3-9200-76b7b2917fbf.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.346,
+   "vivid": 0.092,
+   "fill": 0.475
+  },
+  "size": [
+   753,
+   400
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 3,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/91488ab4-5f78-4c49-9ef4-222a56df6266.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.087,
+   "fill": 0.629
+  },
+  "size": [
+   854,
+   836
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 4,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/65e9044c-f6d4-4534-ac0d-bc6a74ad9279.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.358,
+   "vivid": 0.149,
+   "fill": 0.708
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 5,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6fea8766-88be-4a16-a630-837e94c08735.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.007,
+   "fill": 0.46
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 6,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/d39265da-835b-4729-a0b4-43c5f2533752.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (4 morceaux)",
+   "couleurs vives 76 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (4 morceaux)",
+    "couleurs vives 76 % (visuel marketing ?)"
+   ],
+   "parts": 4,
+   "second": 0.03,
+   "vivid": 0.763,
+   "fill": 0.462
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 7,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/11c5635d-76d7-4c1f-8408-ce2bf353bc4d.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.435,
+   "vivid": 0.015,
+   "fill": 0.562
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 8,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/90de7aee-a2e0-4c88-8ede-a07c6729ca15.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)",
+   "couleurs vives 59 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)",
+    "couleurs vives 59 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.019,
+   "vivid": 0.587,
+   "fill": 0.571
+  },
+  "size": [
+   625,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 9,
+  "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6fbc66d7-406a-469d-a638-68f5a1d911a8.jpg;maxHeight=1920;maxWidth=900",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.068,
+   "vivid": 0.006,
+   "fill": 0.535
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44fb9c90-a8c7-4107-9318-7ec94fdd12ff/1792166965035_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.097,
+   "fill": 0.823
+  },
+  "size": [
+   779,
+   1033
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 1,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-main.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 2,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-cover.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 3,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-1.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 4,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-2.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 5,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-3.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 6,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-5.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 7,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-1.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 8,
+  "url": "https://vasikgo.com/wp-content/smush-webp/2025/07/ootd-s30-electric-scooter-2.png.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   775,
+   1038
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 10,
+  "url": "https://m.media-amazon.com/images/I/314u4TE18QL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.806
+  },
+  "size": [
+   345,
+   468
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 11,
+  "url": "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.788
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 12,
+  "url": "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.779
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-s30",
+  "i": 13,
+  "url": "https://cdn.shopify.com/s/files/1/0633/9297/3021/files/ootd-s30-electric-dual-motor-scooter_4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.574
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ }
+]

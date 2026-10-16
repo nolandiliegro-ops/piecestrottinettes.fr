@@ -1,0 +1,60 @@
+laotie-es10p #0 WARN basse définition
+laotie-es19 #0 PASS ok
+laotie-es19 #1 PASS ok
+laotie-es19 #2 PASS ok
+laotie-es19 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-es19 #4 FAIL détourage sale / résidu de décor · cadrage serré
+laotie-es19 #5 WARN cadrage serré
+laotie-es19 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-es19 #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+laotie-sr10 #0 PASS ok
+laotie-sr10 #1 WARN basse définition
+laotie-sr10 #2 PASS ok
+laotie-sr10 #3 PASS ok
+laotie-sr10 #4 PASS ok
+laotie-sr10 #5 WARN cadrage serré
+laotie-sr10 #6 ERROR Only 4-channel images are supported
+laotie-sr10 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+laotie-sr10 #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-ti30 #0 PASS ok
+laotie-ti30 #1 PASS ok
+laotie-ti30 #2 PASS ok
+laotie-ti30 #3 FAIL détourage sale / résidu de décor
+laotie-ti30 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+laotie-ti30 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+laotie-ti30 #6 FAIL détourage sale / résidu de décor · cadrage serré
+laotie-ti30 #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+micro-merlin-ii #0 PASS ok
+micro-merlin-ii #1 WARN basse définition
+micro-merlin-ii #2 WARN basse définition
+micro-merlin-ii #3 WARN basse définition
+micro-merlin-ii #4 ERROR téléchargement vide
+micro-merlin-ii #5 ERROR téléchargement vide
+micro-merlin-ii #6 ERROR téléchargement vide
+micro-merlin-ii #7 ERROR téléchargement vide
+micro-merlin-ii #8 ERROR téléchargement vide
+navee-n65i #0 PASS ok
+navee-n65i #1 WARN basse définition
+navee-n65i #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-n65i #3 FAIL détourage sale / résidu de décor
+navee-n65i #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-n65i #5 PASS ok
+navee-n65i #6 FAIL détourage sale / résidu de décor · petit élément détaché (4 morceaux) · couleurs vives 76 % (visuel marketing ?)
+navee-n65i #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-n65i #8 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux) · couleurs vives 59 % (visuel marketing ?)
+navee-n65i #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ootd-s30 #0 PASS ok
+ootd-s30 #1 ERROR téléchargement vide
+ootd-s30 #2 ERROR téléchargement vide
+ootd-s30 #3 ERROR téléchargement vide
+ootd-s30 #4 ERROR téléchargement vide
+ootd-s30 #5 ERROR téléchargement vide
+ootd-s30 #6 ERROR téléchargement vide
+ootd-s30 #7 ERROR téléchargement vide
+ootd-s30 #8 ERROR téléchargement vide
+ootd-s30 #9 PASS ok
+ootd-s30 #10 FAIL détourage sale / résidu de décor · basse définition
+ootd-s30 #11 PASS ok
+ootd-s30 #12 PASS ok
+ootd-s30 #13 PASS ok
+::notice title=photos r3a (dry)::59 candidates · PASS 18 · WARN 8 · FAIL 19 · ERREUR 14
