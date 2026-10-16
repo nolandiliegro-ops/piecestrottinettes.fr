@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -10,6 +10,7 @@ import ScooterDescription from "@/components/scooter/ScooterDescription";
 import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
+import ScooterPageVariants, { type PageStyle } from "@/components/scooter/ScooterPageVariants";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { solidConversionState } from "@/lib/compatibilityStatus";
@@ -29,6 +30,10 @@ const ScooterDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { scooter, allScooters, compatibleParts, prevSlug, nextSlug, isLoading, isPartsLoading } =
     useShowroomData(slug);
+  // Propositions de mise en page (16/10) : ?style=1..5. Sans paramètre = page actuelle inchangée.
+  const [searchParams] = useSearchParams();
+  const styleNum = Number(searchParams.get("style"));
+  const pageStyle = (styleNum >= 1 && styleNum <= 5 ? styleNum : null) as PageStyle | null;
 
   // Loading
   if (isLoading) {
@@ -149,6 +154,10 @@ const ScooterDetail = () => {
         transition={{ duration: 0.2 }}
         className="flex-1"
       >
+        {pageStyle ? (
+          <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} />
+        ) : (
+        <>
         <ShowroomHero
           scooter={scooter}
           allScooters={allScooters}
@@ -225,6 +234,8 @@ const ScooterDetail = () => {
 
         {/* Description */}
         <ScooterDescription description={scooter.description} accentColor={brand.accent} />
+        </>
+        )}
 
         {/* Vidéo YouTube */}
         <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />
@@ -240,8 +251,8 @@ const ScooterDetail = () => {
           />
         </div>
 
-        {/* Autres modèles — segmented control 3 onglets */}
-        <RelatedScootersTabs
+        {/* Autres modèles — segmented control 3 onglets (masqué dans les propositions ?style=) */}
+        {!pageStyle && <RelatedScootersTabs
           current={{
             id: scooter.id,
             brand_id: scooter.brand?.id ?? null,
@@ -250,7 +261,8 @@ const ScooterDetail = () => {
             max_speed_kmh: scooter.max_speed_kmh,
             range_km: scooter.range_km,
           }}
-        />
+        />}
+        {pageStyle === 4 && <div className="h-20 lg:hidden" aria-hidden />}
       </motion.main>
 
       <Footer />
