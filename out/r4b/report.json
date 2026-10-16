@@ -1,0 +1,1637 @@
+[
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 0,
+  "url": "https://yeep.me/4221-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.368,
+   "vivid": 0.277,
+   "fill": 0.684
+  },
+  "size": [
+   974,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 1,
+  "url": "https://yeep.me/4222-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.087,
+   "vivid": 0.011,
+   "fill": 0.494
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 2,
+  "url": "https://yeep.me/4224-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.021,
+   "vivid": 0.001,
+   "fill": 0.735
+  },
+  "size": [
+   1196,
+   1300
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 3,
+  "url": "https://yeep.me/4226-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.004,
+   "fill": 0.444
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 4,
+  "url": "https://yeep.me/4227-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.843
+  },
+  "size": [
+   885,
+   1051
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 5,
+  "url": "https://yeep.me/4228-thickbox_default/yeepme-85a-evo.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.117,
+   "vivid": 0.057,
+   "fill": 0.386
+  },
+  "size": [
+   1214,
+   1536
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 6,
+  "url": "https://www.ravate.com/654828-large_default/trottinette-electrique-urbaine-85a-evo-350w-noir-yeep-me-trotyeep173.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.808
+  },
+  "size": [
+   498,
+   754
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 7,
+  "url": "https://www.ravate.com/654823-large_default/trottinette-electrique-urbaine-85a-evo-350w-noir-yeep-me-trotyeep173.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.676
+  },
+  "size": [
+   773,
+   845
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0debaa11-8bf6-4367-a590-20adaf9c2a3c/1791639771320_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.274
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0903/5137/0587/files/Patinete-electrico-zwheel-ZRino.jpg?v=1734612642",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.274
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0903/5137/0587/files/Patinete-electrico-zwheel-ZRino-1.jpg?v=1734612834",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.024,
+   "vivid": 0.061,
+   "fill": 0.627
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0903/5137/0587/files/Patinete-electrico-zwheel-ZRino-2.jpg?v=1734612845",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.744
+  },
+  "size": [
+   1424,
+   1548
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/51CE5+UOdjL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 38 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 38 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.377,
+   "fill": 0.439
+  },
+  "size": [
+   814,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/71WxQGVhquL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.026,
+   "vivid": 0.07,
+   "fill": 0.661
+  },
+  "size": [
+   695,
+   1581
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/61X4wpcz9aL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.621
+  },
+  "size": [
+   1305,
+   1193
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/71ayYCbf9cL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.529
+  },
+  "size": [
+   792,
+   1340
+  ],
+  "error": null
+ },
+ {
+  "slug": "zwheel-zrino",
+  "i": 8,
+  "url": "https://m.media-amazon.com/images/I/71fXqk+p14L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.329
+  },
+  "size": [
+   1620,
+   963
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d/1791685878034_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.806
+  },
+  "size": [
+   361,
+   558
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/51BDt-Q1YCL.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.369
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/51bcgQVCgyL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.31,
+   "vivid": 0.019,
+   "fill": 0.798
+  },
+  "size": [
+   754,
+   1057
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/61e+0veJufL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.29
+  },
+  "size": [
+   1061,
+   1033
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/71ee5tERXBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.072,
+   "vivid": 0.021,
+   "fill": 0.339
+  },
+  "size": [
+   1204,
+   1448
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/81H-VplW1fL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.13,
+   "vivid": 0.119,
+   "fill": 0.501
+  },
+  "size": [
+   1620,
+   1245
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/81k3ZJflY3L._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.417
+  },
+  "size": [
+   1245,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/81OLJ2aBrOL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+   "produit minuscule dans le cadre"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+    "produit minuscule dans le cadre"
+   ],
+   "parts": 4,
+   "second": 0.264,
+   "vivid": 0.003,
+   "fill": 0.101
+  },
+  "size": [
+   777,
+   1558
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 8,
+  "url": "https://i.ebayimg.com/images/g/fj4AAOSwIIpgExKG/s-l1600.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.369
+  },
+  "size": [
+   692,
+   692
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_238swc_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.369
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_01.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.586
+  },
+  "size": [
+   878,
+   1365
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_02.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.301
+  },
+  "size": [
+   1280,
+   658
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_03.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.116,
+   "vivid": 0,
+   "fill": 0.586
+  },
+  "size": [
+   1374,
+   1266
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_04.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.616
+  },
+  "size": [
+   880,
+   1212
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_05.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.767
+  },
+  "size": [
+   675,
+   1220
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0080/2635/7796/files/070263_06.png",
+  "verdict": "WARN",
+  "reasons": [
+   "produit minuscule dans le cadre"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "produit minuscule dans le cadre"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.105
+  },
+  "size": [
+   1370,
+   1368
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/41qfltHDT5L.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.773
+  },
+  "size": [
+   526,
+   1057
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 8,
+  "url": "https://m.media-amazon.com/images/I/61QqY5UmowL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.673
+  },
+  "size": [
+   476,
+   441
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_2doaza_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.829
+  },
+  "size": [
+   1672,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/41tDUqOX5tL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.805
+  },
+  "size": [
+   603,
+   940
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/510NksCXnUL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.848
+  },
+  "size": [
+   928,
+   968
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 3,
+  "url": "https://pcbox.vtexassets.com/arquivos/ids/2994816/07105_IMG_DEF.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.67
+  },
+  "size": [
+   468,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 4,
+  "url": "https://pcbox.vtexassets.com/arquivos/ids/2994817/07105_GAL_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.805
+  },
+  "size": [
+   421,
+   656
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 5,
+  "url": "https://cdn.webshopapp.com/shops/210536/files/428458316/1652x1652x2/cecotec-cecotec-bongo-serie-m20.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.302,
+   "vivid": 0.011,
+   "fill": 0.762
+  },
+  "size": [
+   1216,
+   1550
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 6,
+  "url": "https://cdn.webshopapp.com/shops/210536/files/428458309/1652x1652x2/cecotec-cecotec-bongo-serie-m20.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.009,
+   "vivid": 0.045,
+   "fill": 0.832
+  },
+  "size": [
+   1732,
+   1532
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 7,
+  "url": "https://cdn.webshopapp.com/shops/210536/files/428458312/1652x1652x2/cecotec-cecotec-bongo-serie-m20.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.155,
+   "fill": 0.838
+  },
+  "size": [
+   1557,
+   1480
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 8,
+  "url": "https://cdn.webshopapp.com/shops/210536/files/428458314/1652x1652x2/cecotec-cecotec-bongo-serie-m20.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.264,
+   "fill": 0.206
+  },
+  "size": [
+   1732,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 0,
+  "url": "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.818
+  },
+  "size": [
+   542,
+   755
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 1,
+  "url": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/88/55/fe865a58-70b4-411e-b3fa-c6516ef50962.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.066,
+   "vivid": 0.005,
+   "fill": 0.672
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 2,
+  "url": "https://imgaz.staticbg.com/images/oaupload/banggood/images/AE/64/41ae4e66-1c21-4527-9f12-b125aa677459.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.064,
+   "vivid": 0.012,
+   "fill": 0.631
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 3,
+  "url": "https://imgaz.staticbg.com/images/oaupload/banggood/images/BB/E2/d3d240e8-d3ae-4d84-beff-85c19e3ef982.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.048,
+   "vivid": 0.037,
+   "fill": 0.482
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 4,
+  "url": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/23/07/9d0ffba9-7b4e-47bf-89b9-d21c69027707.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.096,
+   "fill": 0.459
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 5,
+  "url": "https://s13emagst.akamaized.net/products/46077/46076566/images/res_6d4e1bfc2771ca76819b31c3a0660673.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.147,
+   "vivid": 0.011,
+   "fill": 0.648
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 6,
+  "url": "https://imgmgr.banggood.com/images/oaupload/banggood/images/C9/BC/cf13f216-8c02-4bb2-9784-bed0a0655a43.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.823
+  },
+  "size": [
+   811,
+   1132
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 7,
+  "url": "https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/0A/04/d2b6bf08-dc45-41f9-bb52-41521b2a02c7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.118,
+   "vivid": 0,
+   "fill": 0.624
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 8,
+  "url": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/9F/E9/37c82652-a818-414c-abac-42ae799fe388.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.823
+  },
+  "size": [
+   811,
+   1132
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 0,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/N65i.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.843
+  },
+  "size": [
+   612,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/378b920e-2ed8-4cff-afc7-b878e6b39575/1792000720759_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.809
+  },
+  "size": [
+   583,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/2185_all_1203-1749670442008.png?v=1749670444",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.691
+  },
+  "size": [
+   1248,
+   1842
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-5-1749670639920..jpg?v=1749670672",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (4 morceaux)",
+   "couleurs vives 78 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (4 morceaux)",
+    "couleurs vives 78 % (visuel marketing ?)"
+   ],
+   "parts": 4,
+   "second": 0.024,
+   "vivid": 0.784,
+   "fill": 0.47
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-4-1749670639361..jpg?v=1749670763",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 60 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 60 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.598,
+   "fill": 0.414
+  },
+  "size": [
+   1364,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-2-1749670639711..jpg?v=1749670763",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.061,
+   "vivid": 0.006,
+   "fill": 0.449
+  },
+  "size": [
+   1682,
+   1607
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-3-1749670639599..jpg?v=1749670763",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.4,
+   "vivid": 0.07,
+   "fill": 0.573
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-9-1749670639516..jpg?v=1749670763",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.127,
+   "vivid": 0.019,
+   "fill": 0.643
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-8-1749670639220..jpg?v=1749670769",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.369,
+   "vivid": 0.159,
+   "fill": 0.708
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-n65i",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1163/1976/files/N65i-6-1749670639826..jpg?v=1749670769",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.031,
+   "vivid": 0.006,
+   "fill": 0.691
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e67c3312-c685-4571-b229-58a8a4a18f0c/1792168691555_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.726
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e67c3312-c685-4571-b229-58a8a4a18f0c/1792168702623_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.816
+  },
+  "size": [
+   747,
+   1062
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_33.jpg?v=1775140244",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.816
+  },
+  "size": [
+   808,
+   1145
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_R.jpg?v=1775140244",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.115,
+   "fill": 0.528
+  },
+  "size": [
+   915,
+   1016
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_K.jpg?v=1775140244",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "petit élément détaché (3 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (3 morceaux)"
+   ],
+   "parts": 3,
+   "second": 0.029,
+   "vivid": 0.201,
+   "fill": 0.849
+  },
+  "size": [
+   988,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_Y.jpg?v=1775140244",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.24,
+   "vivid": 0.105,
+   "fill": 0.756
+  },
+  "size": [
+   1080,
+   1076
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_F.jpg?v=1775140244",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.278,
+   "vivid": 0.052,
+   "fill": 0.769
+  },
+  "size": [
+   970,
+   1026
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_H.jpg?v=1775140244",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.277,
+   "vivid": 0.005,
+   "fill": 0.73
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0157/4967/7104/files/iScooter_W9_E.jpg?v=1775140244",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (5 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (5 morceaux)"
+   ],
+   "parts": 5,
+   "second": 0.028,
+   "vivid": 0.001,
+   "fill": 0.581
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9",
+  "i": 9,
+  "url": "https://img.joomcdn.net/ea7a7b7f81becfd92b19a231aeae85325abf61ca_original.jpeg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.79
+  },
+  "size": [
+   974,
+   548
+  ],
+  "error": null
+ }
+]

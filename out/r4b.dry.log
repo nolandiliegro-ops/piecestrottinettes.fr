@@ -1,0 +1,74 @@
+yeep-me-85a-evo #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+yeep-me-85a-evo #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #2 WARN petit élément détaché (2 morceaux)
+yeep-me-85a-evo #3 FAIL détourage sale / résidu de décor
+yeep-me-85a-evo #4 PASS ok
+yeep-me-85a-evo #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+yeep-me-85a-evo #6 WARN basse définition
+yeep-me-85a-evo #7 PASS ok
+zwheel-zrino #0 PASS ok
+zwheel-zrino #1 PASS ok
+zwheel-zrino #2 WARN petit élément détaché (2 morceaux)
+zwheel-zrino #3 PASS ok
+zwheel-zrino #4 FAIL détourage sale / résidu de décor · couleurs vives 38 % (visuel marketing ?)
+zwheel-zrino #5 WARN petit élément détaché (2 morceaux)
+zwheel-zrino #6 PASS ok
+zwheel-zrino #7 PASS ok
+zwheel-zrino #8 WARN cadrage serré
+cecotec-bongo-serie-a-advance-connected #0 WARN basse définition
+cecotec-bongo-serie-a-advance-connected #1 PASS ok
+cecotec-bongo-serie-a-advance-connected #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-advance-connected #3 PASS ok
+cecotec-bongo-serie-a-advance-connected #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+cecotec-bongo-serie-a-advance-connected #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-advance-connected #6 PASS ok
+cecotec-bongo-serie-a-advance-connected #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · produit minuscule dans le cadre
+cecotec-bongo-serie-a-advance-connected #8 PASS ok
+cecotec-bongo-serie-a-connected #0 PASS ok
+cecotec-bongo-serie-a-connected #1 PASS ok
+cecotec-bongo-serie-a-connected #2 PASS ok
+cecotec-bongo-serie-a-connected #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-connected #4 PASS ok
+cecotec-bongo-serie-a-connected #5 WARN cadrage serré
+cecotec-bongo-serie-a-connected #6 WARN produit minuscule dans le cadre
+cecotec-bongo-serie-a-connected #7 WARN basse définition
+cecotec-bongo-serie-a-connected #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+cecotec-bongo-serie-m20 #0 PASS ok
+cecotec-bongo-serie-m20 #1 PASS ok
+cecotec-bongo-serie-m20 #2 PASS ok
+cecotec-bongo-serie-m20 #3 WARN basse définition
+cecotec-bongo-serie-m20 #4 WARN basse définition
+cecotec-bongo-serie-m20 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m20 #6 FAIL détourage sale / résidu de décor
+cecotec-bongo-serie-m20 #7 WARN cadrage serré
+cecotec-bongo-serie-m20 #8 PASS ok
+laotie-es10p #0 WARN basse définition
+laotie-es10p #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-es10p #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-es10p #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+laotie-es10p #4 PASS ok
+laotie-es10p #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+laotie-es10p #6 PASS ok
+laotie-es10p #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+laotie-es10p #8 PASS ok
+navee-n65i #0 PASS ok
+navee-n65i #1 WARN basse définition
+navee-n65i #2 PASS ok
+navee-n65i #3 FAIL détourage sale / résidu de décor · petit élément détaché (4 morceaux) · couleurs vives 78 % (visuel marketing ?)
+navee-n65i #4 FAIL détourage sale / résidu de décor · couleurs vives 60 % (visuel marketing ?)
+navee-n65i #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+navee-n65i #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+navee-n65i #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+navee-n65i #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-n65i #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9 #0 PASS ok
+iscooter-w9 #1 PASS ok
+iscooter-w9 #2 PASS ok
+iscooter-w9 #3 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9 #4 WARN cadrage serré · petit élément détaché (3 morceaux)
+iscooter-w9 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-w9 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+iscooter-w9 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-w9 #8 WARN petit élément détaché (5 morceaux)
+iscooter-w9 #9 WARN basse définition · cadrage serré
+::notice title=photos r4b (dry)::73 candidates · PASS 27 · WARN 17 · FAIL 29 · ERREUR 0
