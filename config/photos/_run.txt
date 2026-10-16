@@ -1,1 +1,2 @@
-write fix1
+write lot08
+write lot11
