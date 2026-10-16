@@ -1,0 +1,413 @@
+{
+ "lot": "lot11",
+ "models": [
+  {
+   "id": "6aa5337c-30db-4f32-bc81-ff33cf6a9fe5",
+   "slug": "kukirin-a1",
+   "name": "Kukirin A1",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1.jpg?v=1771818109",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A101.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11101.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11102.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11103.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A103.jpg?v=1771929077",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A110.jpg?v=1771929077",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6aa5337c-30db-4f32-bc81-ff33cf6a9fe5/1791942611592_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "3f7fec50-e518-4966-9a4d-00340adf2207",
+   "slug": "kukirin-c1-pro",
+   "name": "Kukirin C1 Pro",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3f7fec50-e518-4966-9a4d-00340adf2207/1791942595641_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3f7fec50-e518-4966-9a4d-00340adf2207/1791942599896_0.png",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_2.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_3.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_4.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_1.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_5.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_6.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_10.jpg?v=1751364478",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_9.jpg?v=1751364478"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b24fdfb8-6136-4158-88cd-ff1cf18b22b3",
+   "slug": "kukirin-g2-master",
+   "name": "Kukirin G2 Master",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_2.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master.png?v=1773716042",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_2.png?v=1773716042",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_New_Version-A.png?v=1773716042",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_New_Version-B.png?v=1773716042",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-V2.jpg?v=1773716042",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_99116dbe-284b-4708-b440-c2c6d3a29184.jpg?v=1789631422",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-KuKirin.jpg?v=1790741053"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "778234b9-1683-4ee3-9621-e2ecba899431",
+   "slug": "kukirin-g2-max-2026",
+   "name": "Kukirin G2 Max (2026)",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_2.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-V2.jpg?v=1770203217",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-2.jpg?v=1770203217",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-P.jpg?v=1790762475",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-11.jpg?v=1770203217",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-1.jpg?v=1770203217",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-4.jpg?v=1770203217",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-10.jpg?v=1770203217"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "bfb35e80-b24b-4cac-a178-c97915a4425d",
+   "slug": "kukirin-g2-ultra",
+   "name": "Kukirin G2 Ultra",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_2.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2-ultra.jpg?v=1790762512",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/19_1.jpg?v=1770203330",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/29_2.png?v=1770203330",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/15.jpg?v=1770203330",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/14.jpg?v=1770203330",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/11.png?v=1770203330",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/20.png?v=1770203330"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "e90f97e5-85fc-4005-8ad6-9bfbbfea0df8",
+   "slug": "kukirin-g3",
+   "name": "Kukirin G3",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_5.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_7.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_9.jpg?v=1751364094",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e90f97e5-85fc-4005-8ad6-9bfbbfea0df8/1791942588575_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "7c4d516d-3386-4b59-ba37-5bd40aa51480",
+   "slug": "kukirin-g3-adventurers",
+   "name": "Kukirin G3 Adventurers",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_2.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_1.png",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_5.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_7.jpg?v=1751364094",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg?v=1751364094"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "57da2084-1759-4216-b2ed-e4d7098ffa76",
+   "slug": "kukirin-g3-pro",
+   "name": "Kukirin G3 Pro",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_2.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_be37e9ff-5caf-4a16-b99b-737766afe3c4.png?v=1770203218",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_a4444502-7da1-4881-a8ec-c95ff1b5d0fa.jpg?v=1790762506",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-2.jpg?v=1786699050",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-4.jpg?v=1786699029",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-3.jpg?v=1786699040",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-5.jpg?v=1786699021",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG3Pro.jpg?v=1786698980"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "c07a843e-9725-48f0-8500-eee5e4b2748c",
+   "slug": "kukirin-g4",
+   "name": "Kukirin G4",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c07a843e-9725-48f0-8500-eee5e4b2748c/1791942590962_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c07a843e-9725-48f0-8500-eee5e4b2748c/1791942593450_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_27c47278-e160-4fad-beab-a70fe0646649.jpg?v=1773716102",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_2e5459c8-c59b-4959-adbc-387cb7320868.jpg?v=1789631914",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_dd9cff65-b71b-4777-91dd-f799c984b0a8.jpg?v=1790738979",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4-2.jpg?v=1790738979",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_2d641ed3-0d70-4e99-aa18-aa5516a61460.jpg?v=1790738979",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_-2.jpg?v=1790738978"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4086540e-8b9d-43c9-bf8c-fe2803c381aa",
+   "slug": "kukirin-g4-2026",
+   "name": "Kukirin G4 (2026)",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1778550878947_0.png",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_1_70c62286-69d2-4220-befd-04734f0194e1.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_2_2c4fd62a-a020-4aee-89ad-873d0a6db0e1.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-2026_Version.jpg?v=1775817666",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-P.jpg?v=1790762468",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-2026_6.jpg?v=1777451385",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_6.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/g4_4.jpg?v=1786094742"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "7cd4904d-a282-4f4e-aab1-501be0a7b8e3",
+   "slug": "kukirin-g4-max",
+   "name": "Kukirin G4 Max",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_2.png",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN_G4_MAX_123.jpg?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_9.png?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_2.png?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_3.png?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_4.png?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_1.png?v=1774334970",
+    "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_5.png?v=1774334970"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "f2059424-c4c6-44e8-8628-136555a8120b",
+   "slug": "kukirin-g4-ultra",
+   "name": "Kukirin G4 Ultra",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra_3.jpg?v=1790042525",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra_4.jpg?v=1790042526",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_25_ac097d01-b973-4993-800a-2219d3b05f0d.jpg?v=1789979098",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra-2026.jpg?v=1790762450",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_8_96fb2e20-e92a-4bf7-92bb-f69283f33ab8.jpg?v=1789979098",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_13_fbff1eea-5681-4ad9-9451-0ee82a3166b5.jpg?v=1789979098",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_20_5f4f942c-3d24-402a-aea5-718f80e69451.jpg?v=1789979098",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_21_fdc57e2e-8919-4c7e-8577-965309df7a14.jpg?v=1789979098",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166697967_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166705147_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "13496721-8661-4f36-9671-c314a159fd7b",
+   "slug": "kukirin-m4-max",
+   "name": "Kukirin M4 Max",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1791942581370_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/M4_MAX_c8ca8a69-53de-4d9e-a502-2ab8498ac40c.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/M4_Max.jpg?v=1789631486",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04662.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04640.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04626.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04630.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04838.png?v=1770203327",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04703.png?v=1770203327"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "550ba86f-6141-41dd-bd81-14562593d4c9",
+   "slug": "kukirin-s1-pro",
+   "name": "Kukirin S1 Pro",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942602197_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942604887_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942607118_0.png",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_1.jpg?v=1712806166",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_0.jpg?v=1712806166",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_2.jpg?v=1712806163",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_3.jpg?v=1712806163",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_4.jpg?v=1712806162",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_10.jpg?v=1712806163"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "9b0c8e44-4293-446d-bfc3-9218bd371806",
+   "slug": "langfeite-c1",
+   "name": "Langfeite C1",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9b0c8e44-4293-446d-bfc3-9218bd371806/1792166729657_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9b0c8e44-4293-446d-bfc3-9218bd371806/1792166734635_0.png",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-1_c1-002.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-2_c1-003.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-3_c1-004.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-4_c1-005.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-5_c1-006.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-6_c1-007.jpg?v=1782988232",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-7_c1-008.jpg?v=1782988231",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-8_c1-009.jpg?v=1782988232"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "91214a2e-16e0-42d9-92ab-0f40a84c657b",
+   "slug": "langfeite-c5",
+   "name": "Langfeite C5",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/91214a2e-16e0-42d9-92ab-0f40a84c657b/1792166750459_0.png",
+    "https://langfeite.com/static/upfile/202405140834318531.jpg",
+    "https://langfeite.com/static/upfile/202405140834416893.jpg",
+    "https://langfeite.com/static/upfile/202405140836012655.jpg",
+    "https://langfeite.com/static/upfile/202405140836227798.jpg",
+    "https://langfeite.com/static/upfile/202405140836277600.jpg",
+    "https://langfeite.com/static/upfile/202405140836514217.jpg",
+    "https://langfeite.com/static/upfile/202405140837119202.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "2928c22d-9a7a-4039-8201-86446555b8fb",
+   "slug": "langfeite-coupe",
+   "name": "Langfeite Coupé",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2928c22d-9a7a-4039-8201-86446555b8fb/1791638604975_0.png",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-5_coupe-06.jpg?v=1782987808",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-3_coupe-04.jpg?v=1782987809",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594_coupe-01.jpg?v=1782987808",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-1_coupe-02.jpg?v=1782987808",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-2_coupe-03.jpg?v=1782987808",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-4_coupe-05.jpg?v=1782987808",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/Coupe_04-37aff8ae.jpg?v=1786024657",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/Coupe_06-64972fa5.jpg?v=1786024657"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "1e607937-03b5-4fa8-9368-102f4606ded8",
+   "slug": "langfeite-gt2-mini",
+   "name": "Langfeite GT2 Mini",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e607937-03b5-4fa8-9368-102f4606ded8/1791638619415_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e607937-03b5-4fa8-9368-102f4606ded8/1791638632117_0.png",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_01-a96c04ca.jpg?v=1786025168",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_09-f2a1e2dc.jpg?v=1786024675",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_03-33e1020a.jpg?v=1786024675",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_11-a8a6ead4.jpg?v=1786024674",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_06-c8485cdc.jpg?v=1786025168",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_02-98944a42.jpg?v=1786024674",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_05-d9264ab3.jpg?v=1786024674",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1597_elektrokolobezka-langfeite-gt2-mini.png?v=1782988234"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821",
+   "slug": "langfeite-gt2-rs",
+   "name": "Langfeite GT2 RS",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821/1792166739981_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821/1792166744678_0.png",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-2_elektrokolobezka-langfeite-gt2-rs.jpg?v=1782988235",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-1_elektrokolobezka-langfeite-gt2-rs.png?v=1782988236",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600_elektrokolobezka-langfeite-gt2-rs.png?v=1782988235",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-2_elektrokolobezka-langfeite-gt2-rs.png?v=1782988235",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_01-93a85bae.jpg?v=1786024736",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_02-8ebd45ee.jpg?v=1786024736",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_03-28275aaa.jpg?v=1786024736",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_04-7e60e4eb.jpg?v=1786024736"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4f6d920b-57e6-45f1-9a98-0ff51863b08a",
+   "slug": "langfeite-h1",
+   "name": "Langfeite H1",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4f6d920b-57e6-45f1-9a98-0ff51863b08a/1792166757244_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4f6d920b-57e6-45f1-9a98-0ff51863b08a/1792166762707_0.png",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1.png?v=1782988236",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1-aaca773f.jpg?v=1786024863",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1-d421763f.jpg?v=1786024863",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-1_elektrokolobezka-langfeite-h1-35d7c881.jpg?v=1786024856",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-2_elektrokolobezka-langfeite-h1-f8542904.jpg?v=1786024856",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-3_elektrokolobezka-langfeite-h1-9b49b8d4.jpg?v=1786024856",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-4_elektrokolobezka-langfeite-h1-e04b9b0a.jpg?v=1786024863"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b7387153-d431-4404-a350-77f92d42b4f7",
+   "slug": "langfeite-roadster",
+   "name": "Langfeite Roadster",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792166767978_0.png",
+    "https://langfeite.com/static/upfile/202510150846468856.jpg",
+    "https://langfeite.com/static/upfile/202510150854475571.jpg",
+    "https://langfeite.com/static/upfile/202510150903263691.jpg",
+    "https://langfeite.com/static/upfile/202510150903419065.jpg",
+    "https://langfeite.com/static/upfile/202510150905093805.jpg",
+    "https://langfeite.com/static/upfile/202510150907002508.jpg",
+    "https://langfeite.com/static/upfile/202510150927577712.jpg",
+    "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/rg-03_dcecd8aa-4c2d-4134-8766-93cf2e7c3d5e.jpg?v=1785505444"
+   ],
+   "n_old": 1,
+   "bad": false
+  }
+ ]
+}

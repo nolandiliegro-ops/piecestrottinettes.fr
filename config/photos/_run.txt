@@ -1,5 +1,6 @@
-dry lot01
-dry lot03
-dry lot04
-dry lot05
-dry lot06
+dry lot02
+dry lot07
+dry lot08
+dry lot09
+dry lot10
+dry lot11

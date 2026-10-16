@@ -1,0 +1,479 @@
+{
+ "lot": "lot08",
+ "models": [
+  {
+   "id": "f34c8bab-31f2-44a9-a743-4f54bfce61f8",
+   "slug": "isinwheel-d1",
+   "name": "Isinwheel D1",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003908478_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003915496_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f34c8bab-31f2-44a9-a743-4f54bfce61f8/1792003923199_0.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1_e0d2bc46-dce5-44e4-afcb-a6224d9b712e.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_1.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_3.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/D1MAINPIC_4.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_2.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_9.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-d1-d1plus-e-scooter_10.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "44d19aef-9276-4970-9577-536efc42f7ff",
+   "slug": "isinwheel-gt1",
+   "name": "Isinwheel GT1",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/3_e09e24f7-5d93-4e44-adef-dfd952114220.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-B.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-C.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-D.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-F.webp",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/2_49d3d5b5-637b-4374-91cd-1c7c14ebff5c.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/4_feef5760-bb8a-40ed-9556-5c10a0bd4726.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT1-2.webp",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44d19aef-9276-4970-9577-536efc42f7ff/1792003835809_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44d19aef-9276-4970-9577-536efc42f7ff/1792003841115_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "b25ad4ec-3fe8-402d-ae66-aeafca2f9709",
+   "slug": "isinwheel-gt1-dual",
+   "name": "Isinwheel GT1 Dual",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_36.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_26.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_22.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_25.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_32.webp",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Frame_2147227098_1b05b70b-1294-4b9d-a4af-b798eacd6414.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/PC_1_f4740d15-3222-497a-a9a1-2d2d57ac36d9.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt1-dual-electric-scooter_33.webp",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b25ad4ec-3fe8-402d-ae66-aeafca2f9709/1792003891771_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b25ad4ec-3fe8-402d-ae66-aeafca2f9709/1792003901618_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "a13cf842-3c46-43bc-bc48-bcb09782acc9",
+   "slug": "isinwheel-gt2",
+   "name": "Isinwheel GT2",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a13cf842-3c46-43bc-bc48-bcb09782acc9/1791637964812_0.png",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1600.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2-1.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/isinwheel_GT2_2_6eb14939-ab02-4eeb-b67c-5707643f4d69.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2_1_da2ae137-005f-4814-84ba-f9db4ca5037b.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_9.webp",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_11.webp",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/products/isinwheelgt2800Woffroadelectricscooter1.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "b68e1f6b-88ea-49e4-bf96-be98c015ff3c",
+   "slug": "isinwheel-gt2-pro",
+   "name": "Isinwheel GT2 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b68e1f6b-88ea-49e4-bf96-be98c015ff3c/1792166037685_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b68e1f6b-88ea-49e4-bf96-be98c015ff3c/1792166045388_0.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/27_5b6ebd27-b054-4397-b7db-1f21f50b8f4a.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ISINWHEEL_1_3f9be6e9-2ace-4c5e-bb26-508a8c630a9d.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/39.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/36.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/35.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/31_bdcabce1-cf31-4273-a2cb-f8819919d2b4.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1773736931157_1.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1773969398086_1.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "dda8d5a4-ad34-40d8-95c1-69dda60b9064",
+   "slug": "isinwheel-gt4",
+   "name": "Isinwheel GT4",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792003929045_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792003934358_0.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Frame_2147227095.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Group_2023316992.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC6941_1.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/393c7b20c3b45bfe45d6b3671a621ae2331aa748a021f97dcf72063136e5af62_1.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/22_5960810a-f1fd-40ce-94c0-cfb1cb9bfcca.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/21_5a236a79-2a45-4f20-ae74-e4ab761f31ed.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/23_08f3789f-6514-44f0-af56-2618fb21aac2.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ae869b5bf55fd504f1d6cda4eaeaafe8.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "54f29042-c5aa-460a-9a92-fd34fc962792",
+   "slug": "isinwheel-s-nova-pro",
+   "name": "Isinwheel S-NOVA Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003866336_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003873255_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792003882307_0.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/13_d8ae9f7b-5620-4687-8145-abcaa2ebedac.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/14_657975d1-2610-4c39-a9db-6a3d18d8c8fc.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/15_bdbd7fa6-2b05-4f07-9f99-a2c7ef426dfc.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/16_da9b6b11-553e-4517-84a1-dbc4101ecb12.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/17.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/18_b8df7b72-f48a-4bf6-8825-21e77d3c0a8b.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/1775541273589_1.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "0a8005ee-297a-4c34-b307-262781e1f62d",
+   "slug": "isinwheel-s10-max",
+   "name": "Isinwheel S10 Max",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/s10max-bb_1800x1800_4a68878a-02a8-4b98-8d78-2f862abbf903.webp",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/21_295455da-632a-4b69-bcdb-a6471e5360ac.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/22_ff0972e8-d41d-4063-b02a-569e153f27b7.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/0.1_adb1c459-591b-44cc-b4fe-3e72aaa799af.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_656cf0c7-73b4-4567-8adb-3994171b714a.jpg",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC0606_1.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/DSC5056_1.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/2_3e115e48-0196-42c4-8c91-06f34ee925c6.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a8005ee-297a-4c34-b307-262781e1f62d/1792166023376_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a8005ee-297a-4c34-b307-262781e1f62d/1792166030028_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "85908cbf-4635-4e84-88e0-6bf166bd7648",
+   "slug": "isinwheel-s9-max",
+   "name": "Isinwheel S9 Max",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003855612_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003859942_0.png",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_7.jpg",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX.webp",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_10.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_11.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_4.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "76474606-db65-4d08-8248-0dfb2b828227",
+   "slug": "isinwheel-s9-pro",
+   "name": "Isinwheel S9 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791637966941_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791997566377_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76474606-db65-4d08-8248-0dfb2b828227/1791997584827_0.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_cda59e42-b402-49b3-8bf7-ec976e7c15e0.jpg",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-1.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-2.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-3.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/S9Pro-4.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/ISINWHEEL_2_555e8a1e-c6a6-489d-a476-387fa74c16b5.png",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/2_4fa696c2-9eb0-4970-8e8d-3eb407c7f717.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "5a943837-6252-4526-9954-5c937936b032",
+   "slug": "isinwheel-x3-pro",
+   "name": "Isinwheel X3 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/71WTN4-43QL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71Y50tSOWIL._AC_SL1500_.jpg",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/x3p_50e7399b-0630-441e-b3ec-bc5da9e6d22e.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/X3pro_B4_2210251_3d79b0ac-378c-4ca2-9ea8-51502edd4523.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/031500x1500_b90f05e0-b7c7-4e0a-97b2-f40c86f43341.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/041500x1500_613e3b01-2f87-421b-8672-ba5602db45e2.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/051500x1500_f13e964d-0d4d-40ef-9f6b-cccce44f8122.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/061500x1500_92a1821c-5790-47c4-9137-126cbf4465ef.webp",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5a943837-6252-4526-9954-5c937936b032/1792166051190_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5a943837-6252-4526-9954-5c937936b032/1792166056198_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e",
+   "slug": "jeep-adventurer",
+   "name": "Jeep Adventurer",
+   "brand": "Jeep",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791650131081_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791997589489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1791997593841_0.png",
+    "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8866_modif_bianco.jpg",
+    "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8933_modif_vers2_bianco.jpg",
+    "https://cdn.shopify.com/s/files/1/0553/0494/5802/files/JEEP-Verde-Versione_A8813_modif_bianco.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteJEEP2xeADVENTURER-PieTechnologie.webp",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueJEEP2xeADVENTURER-PieTechnologie.webp",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteJEEPADVENTURER-PieTechnologie.webp",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/PieTechnologie-TrottinetteJEEP2xeADVENTURER.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "6a430a0a-665e-4b10-8170-53f84d2b1a50",
+   "slug": "jeep-urban-camou",
+   "name": "Jeep Urban Camou",
+   "brand": "Jeep",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6a430a0a-665e-4b10-8170-53f84d2b1a50/1791650134706_0.png",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_15.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_4.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_16.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_6.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_8.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_5.webp",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/Jeep2XEUrbanCamouElectricScooter_2.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "b8f3a214-de13-475e-a804-112b4bbb611f",
+   "slug": "joyor-c10",
+   "name": "Joyor C10",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8f3a214-de13-475e-a804-112b4bbb611f/1791941096256_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b8f3a214-de13-475e-a804-112b4bbb611f/1791941098196_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_C10_DGT.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-c10-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_C10_DGT_Rear.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "1a355d6d-8ea3-4526-97b5-cfba31f065de",
+   "slug": "joyor-f5s-plus",
+   "name": "Joyor F5S+",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1a355d6d-8ea3-4526-97b5-cfba31f065de/1792166068008_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1a355d6d-8ea3-4526-97b5-cfba31f065de/1792166073437_0.png",
+    "https://m.media-amazon.com/images/I/7177mmvbySL._AC_SL1500_.jpg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/carr%C3%A9/F5S%2B%20Joyor-noir-pos000-carr%C3%A91024.jpg?etag=%22476c0-66f56d6c%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos000-web%201024x768.jpg?etag=%2220192-66f56d59%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos001-web%201024x768.jpg?etag=%221d45d-66f56d59%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos002-web%201024x768.jpg?etag=%221d2d4-66f56d5a%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos003-web%201024x768.jpg?etag=%221fab3-66f56d5a%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos005-web%201024x768.jpg?etag=%221acd6-66f56d5a%22&sourceContentType=image%2Fjpeg",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/bescooter.com/media/bescooter.com/BES%2025/013-TROTTINETTES/F5S%2B%20Joyor/web%201024/F5S%2B%20Joyor-noir-pos006-web%201024x768.jpg?etag=%221dc1e-66f56d5b%22&sourceContentType=image%2Fjpeg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "250b8a58-b06b-41ab-8034-2c54d48d43f8",
+   "slug": "joyor-s10-s-z",
+   "name": "Joyor S10-S-Z",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791646707466_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791997604007_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/250b8a58-b06b-41ab-8034-2c54d48d43f8/1791997608415_0.png",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s10-s-z-main-image_7.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "adfed31f-f281-48f6-913d-a867ae5df166",
+   "slug": "joyor-s5",
+   "name": "Joyor S5",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/adfed31f-f281-48f6-913d-a867ae5df166/1791999044727_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/adfed31f-f281-48f6-913d-a867ae5df166/1791999047144_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE-chasis1.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE-screen.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "2970f52e-703f-44ad-8969-3f8880b3f38e",
+   "slug": "joyor-s5-pro",
+   "name": "Joyor S5 Pro",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2970f52e-703f-44ad-8969-3f8880b3f38e/1792166079352_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2970f52e-703f-44ad-8969-3f8880b3f38e/1792166091743_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-PRO-ABE.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_1_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s5pro-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_S5-PRO_ABE_Side_Rear_Tyre.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d4b90d85-dbce-4ec2-82da-2fabc6af822c",
+   "slug": "joyor-s8-e",
+   "name": "Joyor S8-E",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792166097574_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792166106740_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-s8e-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-2_be507a3f-2b0f-4be4-81c7-9400cf46328d.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-3_a9014b3f-5c76-4442-a990-2b669432ef03.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-4_a43f8d16-0ad6-489d-9a01-a0474d7f9c0d.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "1f532b24-e4e1-457c-9224-2f10243237fc",
+   "slug": "joyor-t10",
+   "name": "Joyor T10",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f532b24-e4e1-457c-9224-2f10243237fc/1791941396751_0.png",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_7.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t10-nfc-main-image_8.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "56c1e523-d200-44a4-a3de-bcd4792dbc5a",
+   "slug": "joyor-t6",
+   "name": "Joyor T6",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56c1e523-d200-44a4-a3de-bcd4792dbc5a/1791646709782_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56c1e523-d200-44a4-a3de-bcd4792dbc5a/1791997599849_0.png",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_5.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_6.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_7.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-t6-main-image_8.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "ce65544d-b71a-4663-aa17-c75ec6a523db",
+   "slug": "joyor-y10",
+   "name": "Joyor Y10",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce65544d-b71a-4663-aa17-c75ec6a523db/1791941108495_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-1.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric-scooter-joyor-y-series-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Joyor_Y10_Electric_Scooter_DGT_Helmet_1e25098d-5ca6-4dd7-bb26-9604d39dce97.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/y-series-joyor-y10-dgt-front-tire.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/y-series-joyor-y10-dgt-rear-tire.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "b7f7509c-2b4e-4ce9-ae94-91ef6a467d49",
+   "slug": "joyor-y6-s",
+   "name": "Joyor Y6-S",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1791941394151_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Lateral.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Unfolded_Folded.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_2.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_3.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_4.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y6-s-main-image_5.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "7ffb12e1-47d4-4317-aab4-bdbb6df45388",
+   "slug": "joyor-y8-s",
+   "name": "Joyor Y8-S",
+   "brand": "Joyor",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941103416_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941100817_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7ffb12e1-47d4-4317-aab4-bdbb6df45388/1791941105690_0.png",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s.jpg",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe_lateral.jpg",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_1_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_2_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_3_1.webp",
+    "https://cdn.shopify.com/s/files/1/0992/4906/2201/files/joyor-y8-s-main-image_4_1.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  }
+ ]
+}

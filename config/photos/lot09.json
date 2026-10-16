@@ -1,0 +1,369 @@
+{
+ "lot": "lot09",
+ "models": [
+  {
+   "id": "0328acad-fec5-42b4-b491-d406665f9337",
+   "slug": "kaabo-mantis-10-elite",
+   "name": "Kaabo Mantis 10 Elite",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0328acad-fec5-42b4-b491-d406665f9337/1791941977304_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0328acad-fec5-42b4-b491-d406665f9337/1791941980095_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0328acad-fec5-42b4-b491-d406665f9337/1791941982392_0.png",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/products/Kaabo-Mantis-10-Elite.jpg",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/products/9350759094593_KAABO_Mantis_10_Elite_Silver-Black_03__19720.1607660836.jpg",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/products/9350759094593_KAABO_Mantis_10_Elite_Silver-Black_07__73748.1607660836.jpg",
+    "https://cdn.shopify.com/s/files/1/0631/0523/7240/products/9350759094593_KAABO_Mantis_10_Elite_Silver-Black_05__51632.1607660836.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "a5cc5405-0d62-474d-a6fc-d83ce870ec04",
+   "slug": "kaabo-mantis-10-plus",
+   "name": "Kaabo Mantis 10 Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5cc5405-0d62-474d-a6fc-d83ce870ec04/1791941680610_0.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-side-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-front-side-left-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-front-side-right-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-front-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-front-side-right-tilt-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-silver-electric-scooter-front-side-left-1080.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-10-plus-v2-black-electric-scooter-folded-side-left-1080.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/211A8846.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "3689556f-67ee-4f56-8ea0-d865974aa239",
+   "slug": "kaabo-skywalker-10c",
+   "name": "Kaabo Skywalker 10C",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_face_avant.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_Skywalker_10c.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_Skywalker_10c_1.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_legere-972010.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_deck_large_0a44b3cc-73b8-4ee9-a910-17aca4a6f9e4.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_roue_avant.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_skywalker_10c_suspensions_avant.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3689556f-67ee-4f56-8ea0-d865974aa239/1791999506016_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "a622ba79-7c26-4987-af71-cce6d3c795a9",
+   "slug": "kaabo-urban",
+   "name": "Kaabo Urban",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a622ba79-7c26-4987-af71-cce6d3c795a9/1792166209692_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a622ba79-7c26-4987-af71-cce6d3c795a9/1792166216118_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a622ba79-7c26-4987-af71-cce6d3c795a9/1792166222853_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Urban_black_260703.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Urban_green_260703.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Urban_yellow_260703.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Urban_blue_260703.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-urban-electric-scooter-front-view-full.webp",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-urban-black-side.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-mantis-urban-black-front-side-left.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "a3fd27cd-cfc9-4a9d-820a-24c245f6827e",
+   "slug": "kaabo-wolf-king-gt",
+   "name": "Kaabo Wolf King GT",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3fd27cd-cfc9-4a9d-820a-24c245f6827e/1791941984395_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3fd27cd-cfc9-4a9d-820a-24c245f6827e/1791941986520_0.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_1.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_2.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_3.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_4.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_5.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_7.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/iScoot_Kaabo_WolfKingGT_6.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "f9fd3fe7-1fd4-4b13-b853-817b4347fab0",
+   "slug": "kaabo-wolf-king-gt-pro",
+   "name": "Kaabo Wolf King GT Pro",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9fd3fe7-1fd4-4b13-b853-817b4347fab0/1791941684840_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9fd3fe7-1fd4-4b13-b853-817b4347fab0/1791941686644_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-king-gt-pro-electric-scooter-black-front-view_png.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-king-gt-pro-electric-scooter-gold-full-view_png.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Wolf-King-GT-Pro-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Wolf-King-GT-Pro-02-270724.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Wolf-King-GT-Pro-03-270724.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_King_GT_PRO_Pas_cher-88948-c.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Puissante_Kaabo_Wolf_King_GT_Pro_Coloris_Doree-856410.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_king-gt-pro-gold-Plie-690050.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "56e66c1d-5812-4912-8c13-c7f81b5e0f90",
+   "slug": "kaabo-wolf-king-gt-pro-plus",
+   "name": "Kaabo Wolf King GT Pro Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792166185108_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792166190837_0.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_king_gt_pro_plus_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_kaabo_wolf_king_gt_pro_profil_cote-468631.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Kaabo_wolf_king_GT_Pro_Trottinette_electrique_puissante.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/arriere_trottinette_electrique_kaabo_wolf_king_gt_pro_plus-529196.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette__lectrique_Kaabo_Wolf_King_Gt_Pro_plus_pliable-527260.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/potence_guidon_trottinette_kaabo_wolf_king_gt_pro_plus-606984.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/deck_trottinette_electrique_kaabo_wolf_king_gt_pro_stable-779823.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/ecran_comodo_kaabo_wolf_king_gt_pro_plus-674114.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b580c9a0-90bc-4090-956b-16eee20978cf",
+   "slug": "kaabo-wolf-king-gtr",
+   "name": "Kaabo Wolf King GTR",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b580c9a0-90bc-4090-956b-16eee20978cf/1791941988903_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo_king_gtr_scooter.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/1_fedecb04-a41b-4368-ae5c-50768d643008.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/2_f425ca9a-0a0a-43f8-adef-422ff03d0314.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/3_a639e04c-69af-485a-bb5f-37651556b60b.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/4_9e2253e9-eb2e-4b56-b7af-d12e23c92830.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/5_ac502cff-0627-441d-bc38-8f3b70838583.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-king-gtr-front-suspension-frame-electric-scooter.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-king-gtr-rear-suspension-dual-shock.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ebc8d22b-e958-4b34-b126-c0de7c7a92e8",
+   "slug": "kaabo-wolf-warrior-11-max",
+   "name": "Kaabo Wolf Warrior 11 Max",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebc8d22b-e958-4b34-b126-c0de7c7a92e8/1792166143749_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebc8d22b-e958-4b34-b126-c0de7c7a92e8/1792166150121_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo_warrio-11_max_high_performance_dual_motor_electric_scooter-260702-black.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo_warrio-11_max_high_performance_dual_motor_electric_scooter-260702-gold.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/11-MAX-GOLD-01-270724.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/11-MAX-GOLD-02-270724.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_11_max_high_performance_scooter_26072401.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_11_max_high_performance_scooter_26072402.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_11_max_high_performance_scooter_26072403.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/211A7307.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "8381d05a-0bdd-44d4-ada0-a150d69c495d",
+   "slug": "kaabo-wolf-warrior-11-plus",
+   "name": "Kaabo Wolf Warrior 11 Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1791999481783_0.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_Plus_robuste-398651.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_design_moderne.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_structure.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_roue_11_pouces.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_frein_disque.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_batterie.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "9179ec43-f88f-4a74-a0e3-4540f50eae9b",
+   "slug": "kaabo-wolf-warrior-gt-pro",
+   "name": "Kaabo Wolf Warrior GT Pro",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9179ec43-f88f-4a74-a0e3-4540f50eae9b/1792166131829_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9179ec43-f88f-4a74-a0e3-4540f50eae9b/1792166137146_0.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_Warrior_GT_Pro.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Puissante_Kaabo_Wolf_Warrior_GT_Pro.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Grand_Ecran_Trottinette_Electrique_Kaabo_Wolf_Warrior_GT_Pro.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Led_Trottinette_Electrique_Kaabo_Wolf_Warrior-gt-pro-noir-905167.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Grand_Ecran_Trottinette_Electrique_Kaabo_Wolf_Warrior-gt-pro-noir-624529.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "200a92b6-a6e3-4f7f-8a53-94f8537c4ea9",
+   "slug": "kaabo-wolf-warrior-gt-pro-plus",
+   "name": "Kaabo Wolf Warrior GT Pro Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_electrique_Kaabo_Wolf_Warrior_GT_Pro_Plus_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_gt_pro_plus_grande_autonomie-125919.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/deck_trottinette_electrique_kaabo_warrior_gt_pro_plus-733078.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_gt_pro_plus_pneus_11pouces.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_gt_pro_plus_chargeurs_deck-718938.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_Warrior_GT_Pro_Plus_pneus-288600.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/200a92b6-a6e3-4f7f-8a53-94f8537c4ea9/1792166167960_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/200a92b6-a6e3-4f7f-8a53-94f8537c4ea9/1792166173801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/200a92b6-a6e3-4f7f-8a53-94f8537c4ea9/1792166179435_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "44c32bd6-e2a4-491b-a253-818f691cf98c",
+   "slug": "kaabo-wolf-warrior-king-gtr-max",
+   "name": "Kaabo Wolf Warrior King GTR Max",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44c32bd6-e2a4-491b-a253-818f691cf98c/1792166196807_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44c32bd6-e2a4-491b-a253-818f691cf98c/1792166203571_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-wolf-king-gtr-max-dual-motor-high-performance-electric-scooter-front-view-260702-black.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-wolf-king-gtr-max-dual-motor-high-performance-electric-scooter-front-view-260702-gold.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_king_gtr_max_high_performance_scooter_26072401.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_king_gtr_max_high_performance_scooter_26072402.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Gold_Wolf_warrior_king_gtr_max_high_performance_scooter_26072401.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-wolf-king-gtr-max-black-front-side-left.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-wolf-king-gtr-max-gold-side-left.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/kaabo-wolf-king-gtr-max-gold-folded.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6e797074-e8fb-48c2-9c63-80a751870d2f",
+   "slug": "kaabo-wolf-warrior-x-gt",
+   "name": "Kaabo Wolf Warrior X GT",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792166155411_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792166160094_0.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/1_f9c5a08a-b84e-437f-b64b-488836ffdfc9.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/2_819dad66-a423-41af-a856-d2688c610d13.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/3_15e0246e-02ab-4cfc-b035-03992797bd62.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/4_ed174211-d61b-40d8-8f7f-cd16ad1965bf.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/5_15ab8f0f-dcc8-4225-9382-c95db860126f.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_Warrior_X_GT_pas_cher_e30dc9bc-6dbc-4779-acc3-cece6f5739a0-546629.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/wolf-warrior-x-gt-black-60v28ah-638340624de15_300x300_5ec877ea-a8fd-4eb4-a4e1-282aa5ff6a1f-765298.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/wolf_warrior_x_gt_black_ecran-284787.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "fe2ca11f-cf96-4b9d-a1dd-1176662581f1",
+   "slug": "kaabo-wolf-warrior-x-max",
+   "name": "Kaabo Wolf Warrior X Max",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fe2ca11f-cf96-4b9d-a1dd-1176662581f1/1791941688982_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fe2ca11f-cf96-4b9d-a1dd-1176662581f1/1791941691300_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaabo_Warrior_X_MAX-Gold-260702-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaabo_Warrior_X_MAX-Black-260702-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/WolfWarriorXMax_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/WolfWarriorXMax.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/WolfWarriorXMax_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/WolfWarriorXMax_2.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_electrique_Kaabo_Wolf_Warrior_X_Max_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Kaabo_Wolf_Warrior_X_Max_pliable.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d2c676c5-a135-412f-92a7-ba303b258759",
+   "slug": "kaabo-wolf-warrior-x-plus",
+   "name": "Kaabo Wolf Warrior X Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d2c676c5-a135-412f-92a7-ba303b258759/1791999490537_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d2c676c5-a135-412f-92a7-ba303b258759/1791999497810_0.png",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Warrior_X_Plus_260707.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-wolf-warrior-x-plus-scooters.jpg",
+    "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaabo-warrior-x-plus-03_1800x1800_064a7584-39b8-4e93-b6ee-eceb3ace0bf2.png",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/211A7948.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/211A7946.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/211A7949.jpg",
+    "https://cdn.shopify.com/s/files/1/0987/5898/3976/files/211A7950.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wol-816597.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a2a46136-4e88-4baa-97a6-36a215b2fc70",
+   "slug": "kaabo-wolf-warrior-x-pro-plus",
+   "name": "Kaabo Wolf Warrior X Pro Plus",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2a46136-4e88-4baa-97a6-36a215b2fc70/1792166120338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2a46136-4e88-4baa-97a6-36a215b2fc70/1792166126101_0.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/Trottinette_Electrique_Kaabo_Wolf_Warrior_X_Pro_Plus_pas_cher-834156.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_x_pro_robuste-195630.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_x_pro_pliable-432717.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_x_pro_plus_compacte-678725.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_x_pro_pneu-855728.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_x_pro_freins_hydrauliquess-851216.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6d75a43c-e939-4115-91f0-851b9e3a47e8",
+   "slug": "mantis-pro",
+   "name": "Mantis Pro",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1782545544430_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1791997310807_0.png",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2hero_electric_scooter.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2side.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2front.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2rear.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2foldedside.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2foldedtop.jpg",
+    "https://cdn.shopify.com/s/files/1/0020/6077/9589/products/MantisProV2handlebar.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "b53ecebf-f55e-46fe-8d19-e4461d65ed33",
+   "slug": "wolf-warrior",
+   "name": "Wolf Warrior",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1782545546927_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1791997298221_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1791997301965_0.png",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_Wolf_Warrior_11_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/kaabo_wolf_warrior_11_trottinette_electrique_off_road-180267.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_plateau_resistant.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_systeme_pliage.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_moteur_avant.jpg",
+    "https://cdn.shopify.com/s/files/1/1012/5541/4104/files/trottinette_electrique_kaabo_wolf_warrior_11_frein_hydraulique.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  }
+ ]
+}

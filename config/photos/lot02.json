@@ -1,0 +1,243 @@
+{
+ "lot": "lot02",
+ "models": [
+  {
+   "id": "52da403f-64c5-4f51-a3e9-e45c959f648e",
+   "slug": "cecotec-bongo-d20",
+   "name": "Cecotec Bongo D20",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165145969_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165139469_0.png",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_xbi1hu_1.png",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_njwdj9_1.png",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_7ri7od_2.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_tykotl_3.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_ovbrzb_4.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_6vbvl6_5.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_r58kgf_7.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_0f890u_8.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "45239d1f-2327-4fde-9a8b-672f592bc07e",
+   "slug": "cecotec-bongo-d20-xl-connected",
+   "name": "Cecotec Bongo D20 XL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45239d1f-2327-4fde-9a8b-672f592bc07e/1792165194159_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45239d1f-2327-4fde-9a8b-672f592bc07e/1792165188562_0.png",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_lnqnon_1.png",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_6f4ssc_2.png",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_nqy7k6_3.png",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_bndq2q_4.png",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_m5bx0i_5.jpg",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_a132f6_6.jpg",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_bqebyv_7.jpg",
+    "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_rhqo8a_8.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "44b140cb-0ec8-48e5-89db-cfc3518d3ac6",
+   "slug": "cecotec-bongo-d20e-connected",
+   "name": "Cecotec Bongo D20E Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165176424_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165170575_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165182579_0.png",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_3y3lmb_1.png",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_fxxkmk_2.png",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_01gzsv_3.png",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_4gemgc_4.png",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_jac5i3_5.jpg",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_q1nb2o_6.jpg",
+    "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_el3tpo_7.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "621c268c-9adc-46a9-a8f4-388cbc7a1559",
+   "slug": "cecotec-bongo-d30",
+   "name": "Cecotec Bongo D30",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165157816_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165151552_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165164794_0.png",
+    "https://media.cecotec.cloud/07311/bongo-d30_tox5sf_1.png",
+    "https://media.cecotec.cloud/07311/bongo-d30_8pvn4f_2.png",
+    "https://media.cecotec.cloud/07311/bongo-d30_61fwbg_3.png",
+    "https://media.cecotec.cloud/07311/bongo-d30_9xecjc_4.png",
+    "https://media.cecotec.cloud/07311/bongo-d30_c1xnhr_5.jpg",
+    "https://media.cecotec.cloud/07311/bongo-d30_z7l3qi_6.jpg",
+    "https://media.cecotec.cloud/07311/bongo-d30_nhrd71_7.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "580e8751-4a9d-4a12-b441-4646806251be",
+   "slug": "cecotec-bongo-d30-xl-connected",
+   "name": "Cecotec Bongo D30 XL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_khqvxa_1.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_7kwwsz_2.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_cucgov_3.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_sv1074_4.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_l59q01_5.jpg",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_78cij6_6.jpg",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_g9f0jd_7.jpg",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_wtjxg0_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/580e8751-4a9d-4a12-b441-4646806251be/1792165200509_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/580e8751-4a9d-4a12-b441-4646806251be/1792165206408_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "66a99376-6188-4c90-9c11-5cc93a7d65d3",
+   "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+   "name": "Cecotec Bongo Doble Y85 2x2 XXL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_2e457r_1.png",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0xk2yj_2.png",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_fx0f0q_3.png",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0r7tcq_4.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_xs8fve_5.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_ht91u9_6.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_1awp69_7.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_bd5vqv_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66a99376-6188-4c90-9c11-5cc93a7d65d3/1792165237166_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66a99376-6188-4c90-9c11-5cc93a7d65d3/1792165243072_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d",
+   "slug": "cecotec-bongo-serie-a-advance-connected",
+   "name": "Cecotec Bongo Serie A Advance Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d/1791685878034_0.png",
+    "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-1.jpg",
+    "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-2.jpg",
+    "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-3.jpg",
+    "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-4.jpg",
+    "https://m.media-amazon.com/images/I/91wzn6KFNiL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/91EF0Z1lloL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/C1KJ5Z50C8S._AC_SL1500_.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4d34a97a-ae05-4c2b-8cbe-04ae616ba069",
+   "slug": "cecotec-bongo-serie-a-connected",
+   "name": "Cecotec Bongo Serie A Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d34a97a-ae05-4c2b-8cbe-04ae616ba069/1791684998118_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d34a97a-ae05-4c2b-8cbe-04ae616ba069/1791997488817_0.png",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_xohdhm_1.png",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_238swc_1.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_fifeuu_19.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_55ef7q_20.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_pwe4e3_20.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_fptp30_21.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_p9vlla_21.jpg",
+    "https://media.cecotec.cloud/07026/bongo-serie-a-connected_oizals_22.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a92c68ee-06d4-4f4b-9852-d6562ea01551",
+   "slug": "cecotec-bongo-serie-m20",
+   "name": "Cecotec Bongo Serie M20",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_srk00z_1.png",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_2doaza_2.png",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_7hww4b_3.png",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_4rwoya_4.jpg",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_khi00x_5.jpg",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_1nl8at_6.jpg",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_78zwib_7.jpg",
+    "https://media.cecotec.cloud/07105/bongo-serie-m20_kg0k04_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a92c68ee-06d4-4f4b-9852-d6562ea01551/1792165212308_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a92c68ee-06d4-4f4b-9852-d6562ea01551/1792165218699_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "623b64ff-6779-4823-8442-682dcdf0e729",
+   "slug": "cecotec-bongo-serie-m30-connected",
+   "name": "Cecotec Bongo Serie M30 Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_bzicv0_1.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_kbx8mo_2.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_rb3d1p_3.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xfbuu2_4.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_7qhz5t_5.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_dxbe3o_6.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uguts9_7.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xq250f_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/623b64ff-6779-4823-8442-682dcdf0e729/1792165224984_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/623b64ff-6779-4823-8442-682dcdf0e729/1792165231376_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "2b76d7a0-a50e-4944-9af6-6b6cae213b59",
+   "slug": "cecotec-bongo-v55-2x2-connected",
+   "name": "Cecotec Bongo V55 2x2 Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_lrrz8w_1.png",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_5d5c1i_2.png",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_et1c55_3.png",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_6uf9q6_4.png",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_700s3k_5.jpg",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_8gjukk_6.jpg",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_u6rypp_7.jpg",
+    "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_j64y1u_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2b76d7a0-a50e-4944-9af6-6b6cae213b59/1792165255329_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2b76d7a0-a50e-4944-9af6-6b6cae213b59/1792165267007_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "067d9097-1e37-4dd4-a941-108f6d5af16f",
+   "slug": "cecotec-bongo-v70-connected",
+   "name": "Cecotec Bongo V70 Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_vvu9ss_1.png",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_oo4rqh_2.png",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_kfugbx_3.png",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_9bhxg6_4.jpg",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_drpzla_5.jpg",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_b7vjl5_6.jpg",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_jmpzep_7.jpg",
+    "https://media.cecotec.cloud/07362/bongo-v70-connected_y16cri_8.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/067d9097-1e37-4dd4-a941-108f6d5af16f/1792165274280_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/067d9097-1e37-4dd4-a941-108f6d5af16f/1792165280475_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  }
+ ]
+}

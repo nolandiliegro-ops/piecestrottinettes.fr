@@ -1,0 +1,337 @@
+{
+ "lot": "lot10",
+ "models": [
+  {
+   "id": "6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b",
+   "slug": "kingsong-e1",
+   "name": "Kingsong E1",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-1.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-2.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-3.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-4.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/kingsong-e1-6.jpg",
+    "https://www.kingsong-store.com/1088-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+    "https://www.kingsong-store.com/1089-large_default/electric-scooter-kingsong-ks-e1-37-v-78-ah.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/04/%D0%951_detail1.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1791637973196_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1791997612743_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "4fa4c32b-bf9b-4d7b-b339-6552542cf1b7",
+   "slug": "kingsong-n12-pro",
+   "name": "Kingsong N12 Pro",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fa4c32b-bf9b-4d7b-b339-6552542cf1b7/1792004298169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4fa4c32b-bf9b-4d7b-b339-6552542cf1b7/1792004302211_0.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1214.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1212.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1213.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1215.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1216.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1222.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1218.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/KINGSONG-N12_PRO-_.1219.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "f62d2ec1-47b9-4475-8b76-49c8856be045",
+   "slug": "kingsong-n12-t3",
+   "name": "Kingsong N12 T3",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166671928_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166678340_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f62d2ec1-47b9-4475-8b76-49c8856be045/1792166685674_0.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-3.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-1.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-2.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-4.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-5.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-6.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n12T3-dual-motor-escooter-7.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "ba79e360-928a-4a50-9bde-75542a00501c",
+   "slug": "kingsong-n14",
+   "name": "Kingsong N14",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba79e360-928a-4a50-9bde-75542a00501c/1792004308489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ba79e360-928a-4a50-9bde-75542a00501c/1792004314145_0.png",
+    "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-1.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-2.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-3.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2024/07/kingsong-n14-4.jpg",
+    "https://media.cdnws.com/_i/21277/6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+    "https://media.cdnws.com/_i/21277/6477/3791/81/trottinette-electrique-kingsong-n14-5.jpeg",
+    "https://kingsongeurope.com/wp-content/uploads/2024/08/N14_detail1.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "100160d6-bde3-448e-9f99-4a200ffe7b39",
+   "slug": "kingsong-n14-max",
+   "name": "Kingsong N14 Max",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1791637975526_0.png",
+    "https://www.kingsong-store.com/1536-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+    "https://media.cdnws.com/_i/21277/6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+    "https://media.cdnws.com/_i/21277/6477/3791/81/trottinette-electrique-kingsong-n14-5.jpeg",
+    "https://media.cdnws.com/_i/21277/6270/2162/72/trottinette-n14-pliee.png",
+    "https://www.kingsong-store.com/1007-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+    "https://www.kingsong-store.com/1008-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+    "https://www.kingsong-store.com/1009-large_default/kingsong-ks-n14-48-v-10-4-ah.jpg",
+    "https://media.cdnws.com/_i/21277/6271/126/73/afficheur-trottinette-n14.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "a8c86274-cbdc-42e5-a334-05a9e7711ced",
+   "slug": "kingsong-n15",
+   "name": "Kingsong N15",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792004335320_0.png",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.1.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.3.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.8.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.9.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.14.jpg",
+    "https://www.kingsong-store.com/1538-large_default/electric-scooter-kingsong-ks-n15-37v-104ah.jpg",
+    "https://www.kingsong-store.com/1554-large_default/electric-scooter-kingsong-ks-n15-37v-104ah.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/kingsong-n15-details-1.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "5ee82470-5e81-4c73-88cf-f197acdef369",
+   "slug": "kingsong-n16",
+   "name": "Kingsong N16",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ee82470-5e81-4c73-88cf-f197acdef369/1792166652626_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ee82470-5e81-4c73-88cf-f197acdef369/1792166659216_0.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_3_a31bf5d7-d63c-42d7-974b-54976dc8c8ad.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_1.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_2.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n16-electric-scooter-01-main.webp",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_5.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-n16-electric-scooter-01-fold-1.webp",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_6.png",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong_n16_dual_motor_escooter_8.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "7f0619e1-3f14-4843-a998-0eea4534f403",
+   "slug": "kingsong-s2-pro",
+   "name": "Kingsong S2 Pro",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004355878_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004368299_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792004381814_0.png",
+    "https://media.cdnws.com/_i/21277/5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KINGSONG-KS-2-PRO-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-KS-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-Kingsong-.png",
+    "https://media.cdnws.com/_i/21277/5226/1215/28/trottinette-kingsong-s2-moteur-1000w-roue-10-pouce.png",
+    "https://media.cdnws.com/_i/21277/5227/808/29/trottinette-kingsong-s2-pro-frein-disque-avant.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "faf61b40-125e-4ad7-b5e8-f155d5166014",
+   "slug": "kugoo-g2-master",
+   "name": "Kugoo G2 Master",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638181604_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638184450_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1791638187022_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_99116dbe-284b-4708-b440-c2c6d3a29184.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-KuKirin.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-V2.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_2.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_4.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_3.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "3fefe1e1-ece6-4334-9302-29089eb6cb33",
+   "slug": "kugoo-g2-max",
+   "name": "Kugoo G2 Max",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791638172492_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791638178129_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1791997790499_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-P.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-V2.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-11.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-1.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-10.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-4.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "7c971be9-d05b-406e-b1eb-eae7c6531036",
+   "slug": "kugoo-g3",
+   "name": "Kugoo G3",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c971be9-d05b-406e-b1eb-eae7c6531036/1791942289007_0.png",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-2623978.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8639952.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1580539.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4987727.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3663846.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-5768834.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-9142451.webp",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4109246.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "81fdb78d-b392-4d9b-8b77-18abf2ad1c3e",
+   "slug": "kugoo-g3-pro",
+   "name": "Kugoo G3 Pro",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/81fdb78d-b392-4d9b-8b77-18abf2ad1c3e/1791942297437_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_a4444502-7da1-4881-a8ec-c95ff1b5d0fa.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_be37e9ff-5caf-4a16-b99b-737766afe3c4.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG3Pro.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-12.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-9.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "0407d71e-df03-4cac-a6ee-22f435e243db",
+   "slug": "kugoo-g4",
+   "name": "Kugoo G4",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942291167_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942292930_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1791942295235_0.png",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-P.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_2e5459c8-c59b-4959-adbc-387cb7320868.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_27c47278-e160-4fad-beab-a70fe0646649.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_dd9cff65-b71b-4777-91dd-f799c984b0a8.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_2d641ed3-0d70-4e99-aa18-aa5516a61460.jpg",
+    "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_-2.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "cc99c820-15c6-40f1-bd29-1be9adbe2963",
+   "slug": "kuickwheel-f1",
+   "name": "Kuickwheel F1",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003950044_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003954221_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cc99c820-15c6-40f1-bd29-1be9adbe2963/1792003958469_0.png",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/TROTTINETTEKUICKWHEELF136V7_8Ah-5.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELF1_TROTTINETTEKUICKWHEELF136V7_8Ah.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/5229782320.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "24ef8f19-d1f7-46d4-a281-469c99a23096",
+   "slug": "kuickwheel-m16-pro",
+   "name": "Kuickwheel M16 Pro",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791638375851_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791638377793_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24ef8f19-d1f7-46d4-a281-469c99a23096/1791997795699_0.png",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_1_ca5f3e5f-0916-40bc-9b0d-17a4c6ea533d.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_2_02bd7c0c-c1e5-4bf7-be05-7b7d8bc58ef2.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELM16PRO36V10_4Ah_3_63633cda-39fe-42cb-ace5-eeb4019a5acd.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396958.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3928396960.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/5169433722.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4300613892.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "bd356df9-d381-484e-800e-ce48490d73fd",
+   "slug": "kuickwheel-s1-c-pro",
+   "name": "Kuickwheel S1-C Pro",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0903/2899/0082/files/KUICKWHEELS1-CPRO36V13Ah_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_4.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bd356df9-d381-484e-800e-ce48490d73fd/1791638372603_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bd356df9-d381-484e-800e-ce48490d73fd/1791997621438_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "d68b5703-975e-40e3-84a5-0c448a16fb8d",
+   "slug": "kuickwheel-s9",
+   "name": "Kuickwheel S9",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d68b5703-975e-40e3-84a5-0c448a16fb8d/1792003942492_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d68b5703-975e-40e3-84a5-0c448a16fb8d/1792003946475_0.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2024/02/trottinette-electrique-kuickwheel-s9.jpg",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2024/02/trottinette-electrique-kuickwheel-s9-1.jpg",
+    "https://fastride.fr/11251-large_default/trottinette-electrique-kuickwheel-s9.jpg",
+    "https://fastride.fr/11252-large_default/trottinette-electrique-kuickwheel-s9.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

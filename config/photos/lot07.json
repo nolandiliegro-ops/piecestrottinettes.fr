@@ -1,0 +1,337 @@
+{
+ "lot": "lot07",
+ "models": [
+  {
+   "id": "8a52e127-964b-4523-a253-0715e764635a",
+   "slug": "iscooter-i10",
+   "name": "iScooter i10",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8a52e127-964b-4523-a253-0715e764635a/1791940773421_0.png",
+    "https://img.gkbcdn.com/s3/p/2024-05-16/iScooter-i10-Electric-Scooter-650W-36V-15Ah-524547-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-05-16/iScooter-i10-Electric-Scooter-650W-36V-15Ah-524547-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-05-16/iScooter-i10-Electric-Scooter-650W-36V-15Ah-524547-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-05-16/iScooter-i10-Electric-Scooter-650W-36V-15Ah-524547-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png?v=1755568268",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/02348c7340ee7ef967447a0b142b9268.jpg?v=1776048059",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/12_07c18c7e-0b11-4aff-a437-edd1e400f864.jpg?v=1776048059"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4e10954e-74e1-468b-b46d-d746c2fdf5c1",
+   "slug": "iscooter-i10-max",
+   "name": "iScooter i10 Max",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4e10954e-74e1-468b-b46d-d746c2fdf5c1/1792168725177_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4e10954e-74e1-468b-b46d-d746c2fdf5c1/1792168735035_0.png",
+    "https://img.gkbcdn.com/s3/p/2024-04-11/iScooter-i10Max-Electric-Scooter-524169-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-04-11/iScooter-i10Max-Electric-Scooter-524169-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-04-11/iScooter-i10Max-Electric-Scooter-524169-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-04-11/iScooter-i10Max-Electric-Scooter-524169-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-04-11/iScooter-i10Max-Electric-Scooter-524169-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10max_9fd33e16-3dda-4a05-bbc2-cf04a13aefed.png?v=1732898590",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/12_306328a9-e15f-48b7-bdaf-fa172ee91a27.jpg?v=1768985590"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e1b66508-c2ac-4bb9-90e0-b172a11afc91",
+   "slug": "iscooter-i10-pro",
+   "name": "iScooter i10 Pro",
+   "brand": "iScooter",
+   "candidates": [
+    "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-08-23/iScooter-i10-Pro-Electric-Scooter-800W-48V-15Ah-525542-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/Untitled_3800x1600px_1464x600px_800x1067px_1500x1500px_1000x1000_750x1000px.png?v=1786670594",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_i10_Pro_2.jpg?v=1776231551",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_i10_Pro.jpg?v=1776231551",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e1b66508-c2ac-4bb9-90e0-b172a11afc91/1791940451119_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "1f983426-74b6-4e90-a421-91252f8e98aa",
+   "slug": "iscooter-i9",
+   "name": "iScooter i9",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_ef2a5519-416a-4c79-be9e-052aba6c63b3.jpg?v=1718359849",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1-1_34fe60d4-e420-45b2-a966-fda4c29d527e.jpg?v=1762251640",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i9_c2719413-c9a7-47a9-892a-400c5f109ffa.jpg?v=1762251640",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/16789612316983_e5d07788-4c0f-4e29-b948-ecaf741e61eb.png?v=1762251640",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/16789612114387_ddfd2c00-1cba-457e-ae83-d3dd2fd13982.png?v=1762251640",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/4.jpg?v=1735198690",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/2_2_7da1bb0b-ee21-48b6-b051-d6bd2285b17d.png?v=1744683314",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/13.jpg?v=1744683314",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f983426-74b6-4e90-a421-91252f8e98aa/1791940445956_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f983426-74b6-4e90-a421-91252f8e98aa/1791940448350_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "544581e7-0e91-4c53-beda-baf4c74a0c2c",
+   "slug": "iscooter-i9-max",
+   "name": "iScooter i9 Max",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/544581e7-0e91-4c53-beda-baf4c74a0c2c/1791637945136_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/544581e7-0e91-4c53-beda-baf4c74a0c2c/1791637948597_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/544581e7-0e91-4c53-beda-baf4c74a0c2c/1791997779530_0.png",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iscooter_i9_Max.webp?v=1788660976",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/4_7f9a0d2b-eee2-461d-8cb0-a8ca0318d62a.jpg?v=1773991366",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/15_97c91777-8ab7-4a3e-be1c-0e244a98d59b.jpg?v=1773991366",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_3.jpg?v=1774608528",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_2.jpg?v=1759115304",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_5.jpg?v=1774608528",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_i9_Max_VMP-16.webp?v=1788785729"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "eb4c99de-95ed-43bf-8a91-737b8c8dd774",
+   "slug": "iscooter-i9-pro",
+   "name": "iScooter i9 Pro",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb4c99de-95ed-43bf-8a91-737b8c8dd774/1792168614259_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb4c99de-95ed-43bf-8a91-737b8c8dd774/1792168619674_0.png",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-4.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-5.jpg",
+    "https://img.gkbcdn.com/s3/p/2022-07-09/iScooter-i9-Pro-Electric-Scooter-7-5Ah-Battery-350W-Motor-507639-6.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "16ecee1d-8c33-40ba-bb88-df02da2cce2e",
+   "slug": "iscooter-i9ultra",
+   "name": "iScooter i9Ultra",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_3.jpg?v=1774608528",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_2.jpg?v=1759115304",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_5.jpg?v=1774608528",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_8.jpg?v=1759115304",
+    "https://cdn.shopify.com/s/files/1/0568/8701/7517/files/iScooteri9MaxElectricScooter_3.jpg?v=1759996136",
+    "https://cdn.shopify.com/s/files/1/0568/8701/7517/files/iScooteri9MaxElectricScooter_2.jpg?v=1759996137",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_4.jpg?v=1759115304",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/i9ultra-dgt.png?v=1774608528",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/16ecee1d-8c33-40ba-bb88-df02da2cce2e/1791637951407_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/16ecee1d-8c33-40ba-bb88-df02da2cce2e/1791637955652_0.png"
+   ],
+   "n_old": 3,
+   "bad": true
+  },
+  {
+   "id": "cb1a19b5-4e37-413c-8b3e-3b4b172b20fd",
+   "slug": "iscooter-ix3",
+   "name": "iScooter iX3",
+   "brand": "iScooter",
+   "candidates": [
+    "https://img.gkbcdn.com/s3/p/2025-10-08/iscooter-ix3-10--800w-motor-electric-scooter-10ah-battery-40km-range-c3e56c-1759905474943.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-10-08/iscooter-ix3-10--800w-motor-electric-scooter-10ah-battery-40km-range-e1c1cd-1759905474943.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-10-08/iscooter-ix3-10--800w-motor-electric-scooter-10ah-battery-40km-range-f0d6d8-1759905475177.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-10-08/iscooter-ix3-10--800w-motor-electric-scooter-10ah-battery-40km-range-514aa9-1759905475177.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-10-08/iscooter-ix3-10--800w-motor-electric-scooter-10ah-battery-40km-range-2a112e-1759905475365.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/iX3_L.jpg?v=1757397964",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_968f4c42-8896-42d3-a16e-6423082210df.jpg?v=1757397964",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooterix3-21.webp?v=1768362975",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cb1a19b5-4e37-413c-8b3e-3b4b172b20fd/1791940768883_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cb1a19b5-4e37-413c-8b3e-3b4b172b20fd/1791940771190_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "92733863-7073-43cf-afbf-aa1d854e3017",
+   "slug": "iscooter-ix4",
+   "name": "iScooter iX4",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92733863-7073-43cf-afbf-aa1d854e3017/1791940438308_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92733863-7073-43cf-afbf-aa1d854e3017/1791940441313_0.png",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_iX4-_A1.jpg?v=1768359301",
+    "https://img.gkbcdn.com/s3/p/2023-03-21/iScooter-IX4-Electric-Scooter-10---Honeycomb-Tires-519918-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2023-03-21/iScooter-IX4-Electric-Scooter-10---Honeycomb-Tires-519918-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2023-03-21/iScooter-IX4-Electric-Scooter-10---Honeycomb-Tires-519918-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2023-03-21/iScooter-IX4-Electric-Scooter-10---Honeycomb-Tires-519918-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_iX4-_A3.jpg?v=1768359301",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_iX4-_A4.jpg?v=1768359301"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "56fefb16-7824-46a4-a5d1-78952f001722",
+   "slug": "iscooter-ix5s",
+   "name": "iScooter iX5S",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56fefb16-7824-46a4-a5d1-78952f001722/1792168625737_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56fefb16-7824-46a4-a5d1-78952f001722/1792168631422_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56fefb16-7824-46a4-a5d1-78952f001722/1792168637073_0.png",
+    "https://img.gkbcdn.com/s3/p/2024-11-20/iScooter-iX5S-1000W-48V-15Ah-Electric-Scooter-526603-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-11-20/iScooter-iX5S-1000W-48V-15Ah-Electric-Scooter-526603-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-11-20/iScooter-iX5S-1000W-48V-15Ah-Electric-Scooter-526603-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-11-20/iScooter-iX5S-1000W-48V-15Ah-Electric-Scooter-526603-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/11-2.jpg?v=1737022335",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix5s_1a45cad2-0e57-436d-9258-0ea925785464.png?v=1765960150",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteriX5SElectricScooter_1.jpg?v=1765528070"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "0586772c-9e2b-4285-a3df-409f18a6056f",
+   "slug": "iscooter-ix7-pro",
+   "name": "iScooter iX7 Pro",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix7proWhitebackground_0.jpg?v=1759902943",
+    "https://img.gkbcdn.com/s3/p/2024-07-29/iScooter-iX7-Pro-Electric-Scooter-525254-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-07-29/iScooter-iX7-Pro-Electric-Scooter-525254-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-07-29/iScooter-iX7-Pro-Electric-Scooter-525254-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-07-29/iScooter-iX7-Pro-Electric-Scooter-525254-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-07-29/iScooter-iX7-Pro-Electric-Scooter-525254-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/ix7.jpg?v=1775722768",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_ix7_Pro_31.webp?v=1765338399",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792168741732_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792168748233_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "13b82bb6-ca86-4c9d-9890-1f73ca95f065",
+   "slug": "iscooter-ix8",
+   "name": "iScooter iX8",
+   "brand": "iScooter",
+   "candidates": [
+    "https://img.gkbcdn.com/s3/p/2024-10-26/iScooter-iX8-Electric-Scooter-2-1200W-48V-20AH-526179-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-10-26/iScooter-iX8-Electric-Scooter-2-1200W-48V-20AH-526179-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-10-26/iScooter-iX8-Electric-Scooter-2-1200W-48V-20AH-526179-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2024-10-26/iScooter-iX8-Electric-Scooter-2-1200W-48V-20AH-526179-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/ix8_95aac4ce-6788-4bf9-aa93-22666e3ce253.png?v=1731996954",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-e-scooter_2.jpg?v=1767582108",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_ix8_32.webp?v=1765338283",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13b82bb6-ca86-4c9d-9890-1f73ca95f065/1791940444015_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "6c8f0c29-a8ea-41d5-96ae-7030bf145140",
+   "slug": "iscooter-w6",
+   "name": "iScooter W6",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6c8f0c29-a8ea-41d5-96ae-7030bf145140/1792168658991_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6c8f0c29-a8ea-41d5-96ae-7030bf145140/1792168663979_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6c8f0c29-a8ea-41d5-96ae-7030bf145140/1792168669938_0.png",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iscooter_w6_m.jpg?v=1776224641",
+    "https://img.gkbcdn.com/s3/p/2025-04-10/iScooter-W6-Folding-Electric-Scooter-500W-36V-7-8Ah-528417-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-04-10/iScooter-W6-Folding-Electric-Scooter-500W-36V-7-8Ah-528417-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-04-10/iScooter-W6-Folding-Electric-Scooter-500W-36V-7-8Ah-528417-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-04-10/iScooter-W6-Folding-Electric-Scooter-500W-36V-7-8Ah-528417-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6_1.jpg?v=1767603651",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iscooter_w6_x.jpg?v=1776224641"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "80273a52-9e70-4b8a-8068-335c98dc36ef",
+   "slug": "iscooter-w7",
+   "name": "iScooter W7",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/80273a52-9e70-4b8a-8068-335c98dc36ef/1792168642427_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/80273a52-9e70-4b8a-8068-335c98dc36ef/1792168648228_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/80273a52-9e70-4b8a-8068-335c98dc36ef/1792168653758_0.png",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-4.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W7-Electric-Scooter-350W-42V-7-8AH-529433-5.jpg",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/cb60eeb7e4477bd95964ff0b1405560e.webp?v=1770191088"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "3841fb15-9983-4d37-b8e0-4d799ebfdca9",
+   "slug": "iscooter-w8",
+   "name": "iScooter W8",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3841fb15-9983-4d37-b8e0-4d799ebfdca9/1792168675108_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3841fb15-9983-4d37-b8e0-4d799ebfdca9/1792168680775_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3841fb15-9983-4d37-b8e0-4d799ebfdca9/1792168686333_0.png",
+    "https://m.media-amazon.com/images/I/61ELUiV0mML._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71yORE5BawL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71bOEvifLuL._AC_SL1500_.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_1.jpg?v=1761549318",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_6.jpg?v=1761904856",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-tire-main_bd07c76d-71ea-46b5-b5d6-5d2cf3c1e870.jpg?v=1761904856",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/1.webp?v=1776224396"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "e67c3312-c685-4571-b229-58a8a4a18f0c",
+   "slug": "iscooter-w9",
+   "name": "iScooter W9",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e67c3312-c685-4571-b229-58a8a4a18f0c/1792168691555_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e67c3312-c685-4571-b229-58a8a4a18f0c/1792168697005_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e67c3312-c685-4571-b229-58a8a4a18f0c/1792168702623_0.png",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W9-Electric-Scooter-1000W-48V-13Ah-529423-0.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W9-Electric-Scooter-1000W-48V-13Ah-529423-1.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W9-Electric-Scooter-1000W-48V-13Ah-529423-2.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W9-Electric-Scooter-1000W-48V-13Ah-529423-3.jpg",
+    "https://img.gkbcdn.com/s3/p/2025-06-30/iScooter-W9-Electric-Scooter-1000W-48V-13Ah-529423-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9_2.jpg?v=1760615116",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9_1.jpg?v=1760615116"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "c179efbc-c143-4b69-9e74-8cf63177ac40",
+   "slug": "iscooter-w9-air",
+   "name": "iScooter W9 Air",
+   "brand": "iScooter",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c179efbc-c143-4b69-9e74-8cf63177ac40/1792168708015_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c179efbc-c143-4b69-9e74-8cf63177ac40/1792168714040_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c179efbc-c143-4b69-9e74-8cf63177ac40/1792168719833_0.png",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W9_Air-A4.webp?v=1773830932",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/3iScooter_W9_Air-A.webp?v=1773830932",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W9_Air-A18.webp?v=1773830932",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W9_Air-A24.webp?v=1773830932",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airlcdscreen.png?v=1780305322",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airfrontsuspension.png?v=1780305322",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrake.png?v=1780305322"
+   ],
+   "n_old": 3,
+   "bad": false
+  }
+ ]
+}
