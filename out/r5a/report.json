@@ -1,0 +1,759 @@
+[
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/71MilUJyCBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.048,
+   "vivid": 0.11,
+   "fill": 0.801
+  },
+  "size": [
+   1545,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/GT1_DUAL_2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.182,
+   "vivid": 0.181,
+   "fill": 0.597
+  },
+  "size": [
+   1354,
+   1354
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/29_a6289eff-4cfc-46f0-a341-805e2887b215.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.149,
+   "fill": 0.76
+  },
+  "size": [
+   1666,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/33_eda88a5d-0b06-4e7c-8d47-fa6674cee37d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.656
+  },
+  "size": [
+   1848,
+   1086
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/41.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.088,
+   "fill": 0.702
+  },
+  "size": [
+   1860,
+   1414
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/37.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.097,
+   "fill": 0.639
+  },
+  "size": [
+   893,
+   1826
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1_8cb31b05-2aa0-4dd4-860d-f255e59a7494.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.817
+  },
+  "size": [
+   1164,
+   1628
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt1-dual",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/2_5b56e13d-9b5b-4635-9eeb-2600b0ceb888.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.147,
+   "fill": 0.844
+  },
+  "size": [
+   1472,
+   1624
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003855612_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   316,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 1,
+  "url": "https://www.maxblinker.com/14013-panda_thickbox_default/isinwheel-s9-max.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.752
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 2,
+  "url": "https://www.maxblinker.com/14004-panda_thickbox_default/isinwheel-s9-max.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.063,
+   "vivid": 0.068,
+   "fill": 0.8
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 3,
+  "url": "https://www.maxblinker.com/14005-panda_thickbox_default/isinwheel-s9-max.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.066,
+   "fill": 0.849
+  },
+  "size": [
+   1655,
+   1602
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 4,
+  "url": "https://www.maxblinker.com/14006-panda_thickbox_default/isinwheel-s9-max.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.306,
+   "fill": 0.381
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 5,
+  "url": "https://www.maxblinker.com/14007-panda_thickbox_default/isinwheel-s9-max.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.188,
+   "vivid": 0.012,
+   "fill": 0.691
+  },
+  "size": [
+   1603,
+   1578
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.661
+  },
+  "size": [
+   1511,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.069,
+   "vivid": 0.018,
+   "fill": 0.713
+  },
+  "size": [
+   1672,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.202,
+   "vivid": 0.018,
+   "fill": 0.816
+  },
+  "size": [
+   1175,
+   1565
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/71Y50tSOWIL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.71
+  },
+  "size": [
+   1336,
+   1561
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/71WTN4-43QL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.845
+  },
+  "size": [
+   1287,
+   1199
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/514sqxZTNiL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.813
+  },
+  "size": [
+   1045,
+   1436
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 3,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/071500x1500_5f35394c-856b-438f-ab4f-0d3cf406acc1.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.048,
+   "vivid": 0.045,
+   "fill": 0.821
+  },
+  "size": [
+   749,
+   725
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 4,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/081500x1500_a75adba8-7470-46f8-b708-fae060fed1f6.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.808
+  },
+  "size": [
+   442,
+   647
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 5,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/01.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.21,
+   "vivid": 0.017,
+   "fill": 0.546
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 6,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/b76b6ca94dbc1d747bc05b3a5635fdec_a73ff6ac-6c16-43d9-bab0-89f830428c31.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.252,
+   "vivid": 0.003,
+   "fill": 0.591
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 7,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/ba0f051733a6565eb2b06b86904175ef_afc10487-4813-422a-80ba-dc2082d9af2e.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.54
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 8,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/1_1_6312fb6a-98f4-4e52-8c54-becd696a59ad.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.19,
+   "vivid": 0.065,
+   "fill": 0.81
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 9,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/1_9_516d5e51-84c2-4fbe-b2c1-5b9e96fbcef3.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.3,
+   "vivid": 0.029,
+   "fill": 0.58
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/91214a2e-16e0-42d9-92ab-0f40a84c657b/1792166750459_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.826
+  },
+  "size": [
+   876,
+   1119
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 1,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507230.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.833
+  },
+  "size": [
+   739,
+   928
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 2,
+  "url": "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/Langfeite-C5_01.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 3,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507232.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.771
+  },
+  "size": [
+   953,
+   473
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 4,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507234.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.795
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 5,
+  "url": "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507235.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.856
+  },
+  "size": [
+   1026,
+   1026
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 6,
+  "url": "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_002-scaled.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 7,
+  "url": "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_003.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 8,
+  "url": "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_004.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ }
+]

@@ -1,0 +1,37 @@
+isinwheel-gt1-dual #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt1-dual #2 PASS ok
+isinwheel-gt1-dual #3 PASS ok
+isinwheel-gt1-dual #4 PASS ok
+isinwheel-gt1-dual #5 PASS ok
+isinwheel-gt1-dual #6 PASS ok
+isinwheel-gt1-dual #7 PASS ok
+isinwheel-s9-max #0 WARN basse définition
+isinwheel-s9-max #1 PASS ok
+isinwheel-s9-max #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-s9-max #3 PASS ok
+isinwheel-s9-max #4 FAIL détourage sale / résidu de décor · couleurs vives 31 % (visuel marketing ?)
+isinwheel-s9-max #5 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-s9-max #6 FAIL détourage sale / résidu de décor · cadrage serré
+isinwheel-s9-max #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-x3-pro #0 PASS ok
+isinwheel-x3-pro #1 WARN cadrage serré
+isinwheel-x3-pro #2 PASS ok
+isinwheel-x3-pro #3 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+isinwheel-x3-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-x3-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #7 PASS ok
+isinwheel-x3-pro #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-x3-pro #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+langfeite-c5 #0 PASS ok
+langfeite-c5 #1 PASS ok
+langfeite-c5 #2 ERROR téléchargement vide
+langfeite-c5 #3 WARN basse définition · cadrage serré
+langfeite-c5 #4 WARN cadrage serré
+langfeite-c5 #5 WARN cadrage serré
+langfeite-c5 #6 ERROR téléchargement vide
+langfeite-c5 #7 ERROR téléchargement vide
+langfeite-c5 #8 ERROR téléchargement vide
+::notice title=photos r5a (dry)::36 candidates · PASS 13 · WARN 5 · FAIL 14 · ERREUR 4
