@@ -1,0 +1,194 @@
+{
+ "lot": "lot21",
+ "models": [
+  {
+   "id": "67d2f0b1-b78c-498c-a74e-01c41d9dd354",
+   "slug": "wispeed-airo-v10",
+   "name": "Wispeed AIRO V10",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/67d2f0b1-b78c-498c-a74e-01c41d9dd354/1791656718140_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/67d2f0b1-b78c-498c-a74e-01c41d9dd354/1791656720669_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027608_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg",
+    "https://www.wispeed.net/7843-large_default/trottinette-airo-v10.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e36ebdda-6127-4b27-a2c1-0abbd9d36759",
+   "slug": "wispeed-airo-v16",
+   "name": "Wispeed AIRO V16",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e36ebdda-6127-4b27-a2c1-0abbd9d36759/1791646700291_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027622_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg",
+    "https://www.wispeed.net/7845-large_default/trottinette-airo-v16.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "3408088c-1baa-484d-b855-f7920c7e57a1",
+   "slug": "wispeed-airo-v6",
+   "name": "Wispeed AIRO V6",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3408088c-1baa-484d-b855-f7920c7e57a1/1791646702151_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027585_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg",
+    "https://www.wispeed.net/7841-large_default/trottinette-airo-v6.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ef3037fe-f72b-4b99-ae55-e4fd1c0adb01",
+   "slug": "wispeed-c10-40-pro",
+   "name": "Wispeed C10-40 Pro",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ef3037fe-f72b-4b99-ae55-e4fd1c0adb01/1791995635397_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000928_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "5b052121-6046-4f5a-af4b-4cc004739c3b",
+   "slug": "wispeed-c10-55-max",
+   "name": "Wispeed C10-55 Max",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b052121-6046-4f5a-af4b-4cc004739c3b/1791995631904_0.png",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/1/e/3/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/e/d/e/e/edee383bbda2492605469bca2cae5deb7b4cc93b_image20096.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/2/d/f/6/2df62925bde7b85e5707b9431d39e5009223ebd0_image20097.webp",
+    "https://www.molecule.be/media/catalog/product/cache/e5539d31624745edf9f02a9b0481aa2d/akeneo/b/d/3/6/bd3692e3e527cff28b2e0b44507edbcd4f9eba37_image20098.webp",
+    "https://www.molecule.be/media/seo/2/product/600x600/b/1/b1e31a5a5a81abba1dcb0d0bfa587fdea68537fd_image20095.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "a8a75aaf-d835-429f-8d12-23d204467b46",
+   "slug": "wispeed-suv1000",
+   "name": "Wispeed SUV1000",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8a75aaf-d835-429f-8d12-23d204467b46/1792168390507_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8a75aaf-d835-429f-8d12-23d204467b46/1792168396034_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079816524_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d19aacb0-9a80-4acf-8e7b-091c2f2fe504",
+   "slug": "wispeed-suvpilot-150r",
+   "name": "Wispeed SUVPILOT 150R",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d19aacb0-9a80-4acf-8e7b-091c2f2fe504/1791656729345_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483070027400_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://www.wispeed.net/7866-large_default/trottinette-suvpilot-150-r.jpg",
+    "https://www.wispeed.net/7874-large_default/trottinette-suvpilot-150-r.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4a9133f9-3903-45d4-a3ba-0824f3cb4cde",
+   "slug": "wispeed-suvpilot-480",
+   "name": "Wispeed SUVPILOT 480",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a9133f9-3903-45d4-a3ba-0824f3cb4cde/1791995921608_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000997_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://www.wispeed.net/7872-large_default/trottinette-suvpilot-480-r.jpg",
+    "https://www.wispeed.net/7873-large_default/trottinette-suvpilot-480-r.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "fa220ec7-8d94-41d0-a775-b906e7c7b9f4",
+   "slug": "wispeed-t855",
+   "name": "Wispeed T855",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003490165_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003492709_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fa220ec7-8d94-41d0-a775-b906e7c7b9f4/1792003495229_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079706528_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "f10f7de1-d10c-449e-b52e-31022b22892c",
+   "slug": "wispeed-t855-pro",
+   "name": "Wispeed T855 Pro",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f10f7de1-d10c-449e-b52e-31022b22892c/1792168379157_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f10f7de1-d10c-449e-b52e-31022b22892c/1792168384067_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483079716527_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://cdn.shopify.com/s/files/1/0641/2340/4541/products/T855PRO.jpg?v=1671406918"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1",
+   "slug": "wispeed-x1050-max",
+   "name": "Wispeed X1050 Max",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1/1791995639094_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1/1791995647424_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3483074000768_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

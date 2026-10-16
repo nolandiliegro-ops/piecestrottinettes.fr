@@ -1,0 +1,330 @@
+{
+ "lot": "lot19",
+ "models": [
+  {
+   "id": "2bbe4e55-291a-48d9-aa26-fad3902ae583",
+   "slug": "urbanglide-100-evo",
+   "name": "Urbanglide 100 Evo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2bbe4e55-291a-48d9-aa26-fad3902ae583/1791639750212_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2bbe4e55-291a-48d9-aa26-fad3902ae583/1791639753571_0.png",
+    "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-100EVO.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678527_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://m.media-amazon.com/images/I/51VVEVR-zYL._AC_SL1500_.jpg",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-plie.png",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-frein.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-ecran-fd-violetpoignee.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678527_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7",
+   "slug": "urbanglide-all-road-5",
+   "name": "Urbanglide All Road 5",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792167768809_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792167774550_0.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-AR5-2.png",
+    "https://urbanglide.com/wp-content/uploads/2023/11/AR5-2-pliee-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2023/10/AR5-2-bloc1.png",
+    "https://urbanglide.com/wp-content/uploads/2023/10/AR5-2-bloc1-2-1.png",
+    "https://urbanglide.com/wp-content/uploads/2023/11/AR5-lumieres.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6e58e0eb-ed4a-40f3-8c9d-293d0463493e",
+   "slug": "urbanglide-all-road-6-2x2",
+   "name": "Urbanglide All Road 6 2x2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e58e0eb-ed4a-40f3-8c9d-293d0463493e/1792167793055_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e58e0eb-ed4a-40f3-8c9d-293d0463493e/1792167798644_0.png",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-2.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678473_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-pliee-1.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6-2x2-PLIEE-1.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-roue-frein-a-disque-2.png",
+    "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-cle-de-demarrage-2-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/09/AR62x2-LED-RGB-V3.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-moteurs-2.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "8498fb4c-37d3-4308-9cf2-08b786c2c080",
+   "slug": "urbanglide-all-road-6-pro",
+   "name": "Urbanglide All Road 6 Pro",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792167780499_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792167787377_0.png",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092679715_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6-PRO-PLIEE.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO-pneu.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/09/AR6PRO-ECRAN-2-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/09/AR6PRO-suspension-en-C-2-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO-batterie.webp"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "slug": "urbanglide-ecross-duo",
+   "name": "Urbanglide eCross Duo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678503_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-DUO-PLIEE.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-PNEUS.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-SUSPENSIONS.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/E-CROSS-DUO-MOTEURS-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-POIGNEES-mobile-1.webp",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1791994704358_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  },
+  {
+   "id": "a0a5078e-d910-4cdf-9f6c-02403d270006",
+   "slug": "urbanglide-ecross-go",
+   "name": "Urbanglide Ecross Go",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a0a5078e-d910-4cdf-9f6c-02403d270006/1791995018120_0.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092641941_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://m.media-amazon.com/images/I/614uho-+ScL._AC_SL1500_.jpg",
+    "https://urbanglide.com/wp-content/uploads/2026/04/E-CROSSGO-NEW-IN.webp",
+    "https://urbanglide.com/wp-content/uploads/2026/04/E-CROSSGO-profil-pliee.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "63c093b4-a59c-484e-9fc5-14cd414bc1cd",
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "name": "Urbanglide eCross Max 2x2 Gen 2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792167718530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792167723859_0.png",
+    "https://urbanglide.com/wp-content/uploads/2026/02/UrbanGlide-E-CROSS-MAX-2x2-profil-TRAIL-copie-1.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://urbanglide.com/wp-content/uploads/2026/02/Urbanglide-E-CROSS-MAX-2X2-PLIEE.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092644874_h_f_l_5?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "7e78e4a5-4159-48b9-9671-dbea2e18cb04",
+   "slug": "urbanglide-ecross-one",
+   "name": "Urbanglide eCross One",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791639740792_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791639744033_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1791997451928_0.png",
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSONE-1.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-PLIEE.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-suspension-frein-a-disque.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-batterie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/ECROSSONE-comingsoon.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092681404_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "a976cae2-e39a-467c-a343-1c0bad67ca69",
+   "slug": "urbanglide-ecross-pro",
+   "name": "Urbanglide eCross Pro",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a976cae2-e39a-467c-a343-1c0bad67ca69/1792003009903_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a976cae2-e39a-467c-a343-1c0bad67ca69/1792003024471_0.png",
+    "https://urbanglide.com/wp-content/uploads/2022/09/RIDE-ecross-pro.png",
+    "https://urbanglide.com/wp-content/uploads/2024/06/plateau-large-ecross-copie-2.png",
+    "https://urbanglide.com/wp-content/uploads/2024/06/E-CROSS-PRO-lumieres-v2BIS-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2024/06/E-cross-max-pro-ecran-montage-.png",
+    "https://urbanglide.com/wp-content/uploads/2024/06/montage-E-CROSS-PRO-copie.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6deef498-eb2e-4766-8a12-cf4085a059f9",
+   "slug": "urbanglide-ecross-pro-2",
+   "name": "Urbanglide eCross Pro 2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1791994708056_0.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-2-1.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSSPRO-2-pliee-1.webp",
+    "https://urbanglide.com/wp-content/uploads/2024/10/E-CROSS-PRO2-lumiere.webp",
+    "https://urbanglide.com/wp-content/uploads/2024/10/E-CROSS-PRO2-FREIN-A-DISQUE-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO2-ecran-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO2-BATTERIE-copie-1.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5",
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "name": "Urbanglide eCross Pro Boost 2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792167757075_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792167762805_0.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-BOOST-2.png",
+    "https://www.cdiscount.com/pdt2/1/6/4/1/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/4/2/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/4/3/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/4/4/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/4/5/700x700/urb3700092657164/rw/trottinette-electrique-tout-terrain-urbanglide.jpg",
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSSPRO-BOOST-2-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2024/09/E-CROSS-PRO-BOOST2-ROUES.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "21a74579-f76b-491c-a84c-be7e33d48065",
+   "slug": "urbanglide-ride-100-max",
+   "name": "Urbanglide Ride 100 Max",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/21a74579-f76b-491c-a84c-be7e33d48065/1792167729566_0.png",
+    "https://urbanglide.com/wp-content/uploads/2022/09/RIDE-100MAX-2.png",
+    "https://urbanglide.com/wp-content/uploads/2023/07/RIDE-100MAX_-1.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "fb883e3b-ae53-4367-8f96-abfc304d03ec",
+   "slug": "urbanglide-ride-100-max-2",
+   "name": "Urbanglide Ride 100 Max 2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb883e3b-ae53-4367-8f96-abfc304d03ec/1792167735490_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb883e3b-ae53-4367-8f96-abfc304d03ec/1792167741196_0.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-1.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/RIDE100MAX2-PLIEE.webp",
+    "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-moteur-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/100MAX2-FREIN-A-DISQUE-NEON-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/RIDE-100MAX2-lumiere-copie.png",
+    "https://urbanglide.com/wp-content/uploads/2024/08/100MAX2-ROUES-NEON-copie.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "8cd32a6d-175b-47f8-8843-0723d8298de3",
+   "slug": "urbanglide-ride-85-evo",
+   "name": "Urbanglide Ride 85 Evo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1791639733571_0.png",
+    "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-85EVO.png",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_l_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_b_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_r_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+    "https://m.media-amazon.com/images/I/51j1ARyAeZL._AC_SL1500_.jpg",
+    "https://urbanglide.com/wp-content/uploads/2025/06/85EVO-pliee-copie.webp",
+    "https://boulanger.scene7.com/is/image/Boulanger/3700092678510_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "25687bdd-669c-4128-88ed-dcd5acc13863",
+   "slug": "urbanglide-urbanride-100xs",
+   "name": "Urbanglide Urbanride 100XS",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994711406_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994714740_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1791994718101_0.png",
+    "https://urbanglide.com/wp-content/uploads/2022/10/RIDE-100XS.png",
+    "https://urbanglide.com/wp-content/uploads/2023/07/RIDE100XS_-1.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-PLIAGE-1.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-AUTONOMIE1-1.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-100XS-AUTONOMIE2-1.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "651d6853-642a-46e7-a437-bbbc1bef898c",
+   "slug": "urbanglide-urbanride-85-plus",
+   "name": "Urbanglide Urbanride 85+",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/651d6853-642a-46e7-a437-bbbc1bef898c/1791994721500_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/651d6853-642a-46e7-a437-bbbc1bef898c/1791994724912_0.png",
+    "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png",
+    "https://urbanglide.com/wp-content/uploads/2022/05/Ride-85-1.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-ecran.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-roues.png",
+    "https://urbanglide.com/wp-content/uploads/2022/06/Ride-85-suspension.png",
+    "https://urbanglide.com/wp-content/uploads/2022/10/Ride-85-batterie.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a",
+   "slug": "velity-511-ss",
+   "name": "Velity 511-Ss",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791661386391_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1791997701100_0.png"
+   ],
+   "n_old": 2,
+   "bad": true
+  },
+  {
+   "id": "6f4f87b2-c609-4785-a866-eb6154fc5123",
+   "slug": "velity-511-sx",
+   "name": "Velity 511-Sx",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/15787-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15785-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15786-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15788-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/417549105_3207571489546753_198445083813945148_n.jpg?v=1708692171",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_1_58960a31-ff52-4bde-ace4-bafd6fa78067.jpg?v=1708692171",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6f4f87b2-c609-4785-a866-eb6154fc5123/1791661397952_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  }
+ ]
+}

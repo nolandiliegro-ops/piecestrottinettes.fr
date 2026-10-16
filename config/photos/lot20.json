@@ -1,0 +1,310 @@
+{
+ "lot": "lot20",
+ "models": [
+  {
+   "id": "02a3b58d-ccfb-4ca3-b729-b67d5d9c5065",
+   "slug": "vsett-10-apex",
+   "name": "Vsett 10 Apex",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/02a3b58d-ccfb-4ca3-b729-b67d5d9c5065/1791995024966_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/2_ce7f5326-b465-4c76-bffe-688c3d9ec42d.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/5_12395449-0823-44c5-86db-af5becd481d9.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/7_4acea8e9-3206-45eb-abdd-c040bf6c7b0f.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/6_4462c60e-f5a0-4534-a14f-2e01554bda80.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/4_e70741e9-800c-4f3f-912d-7b58e8baafe4.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/3_b41ad7f0-7e5d-47ea-b8dd-c845266fa751.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/1_befeca6c-e525-4f97-92d8-495ff6023947.png",
+    "https://vsett-shop.com/wp-content/uploads/2024/07/VSETT-10-APEX-1.jpeg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4",
+   "slug": "vsett-10-lite",
+   "name": "Vsett 10 Lite",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168262733_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168268362_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bae2c31f-cc1f-4008-9132-6ee0bd4e7ca4/1792168273908_0.png",
+    "https://full-mobility.com/wp-content/uploads/2023/03/v10-side-profile-small.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/v10-angled-small.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-bimoteur-vsett-10-60-v-208-ah-lite.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-bimoteur-vsett-10-60-v-208-ah-lite-1.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/v10-front-2-small.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/v10-rear-small.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/v10-folded-small.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "de8f0438-2398-4eee-8c02-ab4bfa9040b6",
+   "slug": "vsett-10-plus",
+   "name": "Vsett 10+",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1790601747987_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1790601749819_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1791997306265_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/Vsett_10__NewDisplay.webp",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT10_NewDisplay.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05485.webp",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05505.webp",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05530_6470951d-5c4f-4e75-8d52-a4e9ff88a33d.webp",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-10-208ah-electric-scooter-vsett-268484.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05754-Edit_06903e01-e31f-49dc-a808-7adb963284da.webp"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "219fc643-289d-4670-b724-947b44b6c3de",
+   "slug": "vsett-11-plus",
+   "name": "Vsett 11+",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601751723_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601753751_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/219fc643-289d-4670-b724-947b44b6c3de/1790601756059_0.png",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-72v-yellow.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett11-transparent.png",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-scaled.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-front.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-back.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-folded.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/vsett-11-electric-scooter_7422-scaled.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "b03c6a4d-8fb9-4d27-ac62-2bac410169cc",
+   "slug": "vsett-11-plus-super",
+   "name": "Vsett 11+ Super",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1791995326256_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1791995330259_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/V11SuperCropped-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett11superpouch.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d7e0f9b4-087c-4b2a-9064-c99e0f4bf058",
+   "slug": "vsett-8",
+   "name": "Vsett 8",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7e0f9b4-087c-4b2a-9064-c99e0f4bf058/1791995321313_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-182720.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT8.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-806898.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-309575.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-788702.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-156ah-electric-scooter-vsett-197978.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "71279c11-72e5-41b0-92b8-e646e96b81c4",
+   "slug": "vsett-8-apex",
+   "name": "Vsett 8 Apex",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/71279c11-72e5-41b0-92b8-e646e96b81c4/1791995038868_0.png",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX.jpeg",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-REAR.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-FOLDED.webp",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-FOLDING.jpeg",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-HANDLEBAR.jpeg",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-BATTERY.webp",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-LEDS.webp",
+    "https://vsett-shop.com/wp-content/uploads/2025/04/VSETT-8-APEX-RFID.webp"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "d90056ef-fdd3-47f3-8b12-4f0eb747f573",
+   "slug": "vsett-8-lite",
+   "name": "Vsett 8 Lite",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d90056ef-fdd3-47f3-8b12-4f0eb747f573/1792168251300_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d90056ef-fdd3-47f3-8b12-4f0eb747f573/1792168257073_0.png",
+    "https://m.media-amazon.com/images/I/51lJrkHuPOL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/319uwr3E4SL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31aR-Hf8CHL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31-qBB656fL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/41h5FE6XAlL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31yilZNJyzL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/41rBIy8eL+L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/4148n0fQtsL._AC_SL1500_.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "05e0fbf2-d779-4747-85cf-f03f6b1ae9aa",
+   "slug": "vsett-8-plus",
+   "name": "Vsett 8+",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792168239515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792168245203_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-824589.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT8_f41e6ad4-9f68-4780-90b1-cd38add0f098.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-525012.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-958041.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-185958.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-8-electric-scooter-vsett-889305.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d02869fc-e185-458b-bbe2-6efac4f28f31",
+   "slug": "vsett-9-apex",
+   "name": "Vsett 9 Apex",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d02869fc-e185-458b-bbe2-6efac4f28f31/1791995030136_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d02869fc-e185-458b-bbe2-6efac4f28f31/1791995034683_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/2_0cfefe8d-2308-4cac-b338-f00c6d38ac36.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/6_7e549a5f-9c93-4889-b234-e36a75cdad7d.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/4_980b7e0a-d3c9-4edc-8f9a-8338dd945acc.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/5_e059a6eb-b14c-4d93-978a-972b9a581b01.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/3_b1b68f30-4958-4827-8bdf-a5e73fa639a0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/1_2696d1e2-81da-4b01-8088-136820ddb56b.png",
+    "https://vsett-shop.com/wp-content/uploads/2023/10/VSETT-9-APEX-PROFILE.jpeg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "588f9783-c903-44aa-800a-17c90b0984cf",
+   "slug": "vsett-9-plus",
+   "name": "Vsett 9+",
+   "brand": "Vsett",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603566430_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603568720_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603570628_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/588f9783-c903-44aa-800a-17c90b0984cf/1790603572393_0.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-775415.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/VSETT9.png",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-198982.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-990653.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-664099.jpg",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/products/vsett-9-156ah-electric-scooter-vsett-531098.jpg"
+   ],
+   "n_old": 4,
+   "bad": false
+  },
+  {
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "slug": "weped-ff",
+   "name": "Weped FF",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792168363717_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792168369422_0.png",
+    "https://scooter.guide/wp-content/uploads/2021/04/f98b90_9122a5faaec84ccf8933058d092b5e8d_mv2.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/weped-ff.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_212907.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_212913.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_213040.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_213113.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "slug": "weped-fold-11",
+   "name": "Weped Fold 11",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1791995613927_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1791995617707_0.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/trottinette-electrique-weped-fold-11.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/fold11.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "315f588a-c846-4791-a8b8-2f0136074980",
+   "slug": "weped-fold-3",
+   "name": "Weped Fold 3",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1791646894227_0.png",
+    "https://fastride.fr/11923-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11914-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11915-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11916-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11917-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11918-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11919-large_default/trottinette-electrique-weped-fold-3-.jpg",
+    "https://fastride.fr/11920-large_default/trottinette-electrique-weped-fold-3-.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "425d5692-fd61-4d52-9ea5-34ec534e576b",
+   "slug": "weped-gts",
+   "name": "Weped GTS",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1791995622092_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1791995626377_0.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueWepedGTS18000W-60V30Ah-PIETECHNOLOGIE-min.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Weped_GT_Electric_Scooter_Folded_2000x_f80e294b-f5bf-4c75-a0ca-7824da44b1ac.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/WEPED-GT-50E.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "49be692c-5729-4021-b3f3-a3928a3e4dc9",
+   "slug": "weped-ss-t",
+   "name": "Weped SS-T",
+   "brand": "Weped",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1791646898609_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1791997706584_0.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueWepedSS-T30000w-72V45Ah-PIETECHNOLOGIE-min.png",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/weped-sst.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "slug": "weped-ssgt",
+   "name": "Weped SSGT",
+   "brand": "Weped",
+   "candidates": [
+    "https://fastride.fr/19623-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19622-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19624-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt1.jpg",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt2.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1791646896581_0.png"
+   ],
+   "n_old": 1,
+   "bad": true
+  }
+ ]
+}

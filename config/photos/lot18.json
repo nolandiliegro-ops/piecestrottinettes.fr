@@ -1,0 +1,352 @@
+{
+ "lot": "lot18",
+ "models": [
+  {
+   "id": "144a228d-db02-4d87-9c3d-4ba821332605",
+   "slug": "teverun-blade-gt-ii",
+   "name": "Teverun Blade GT II",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/144a228d-db02-4d87-9c3d-4ba821332605/1791994412285_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/144a228d-db02-4d87-9c3d-4ba821332605/1791994416963_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/BLADE_GT_II_89893a7e-fb63-47b3-8f6c-c60f4d499b5e.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-307469.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-743228.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-blade-gt-ii-elsparkcykel-770463.webp",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Teverun_Blade_GT2_Pas_Cher-923946.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_bequille-683930.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/DSC05320.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/DSC05313.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "6792732b-ad5e-45dd-b50f-3ab16cd3b70f",
+   "slug": "teverun-blade-gt-ii-pro",
+   "name": "Teverun Blade GT II Pro",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6792732b-ad5e-45dd-b50f-3ab16cd3b70f/1792167649096_0.png",
+    "https://teverun.sk/wp-content/uploads/2026/07/e1c4e5de381fecb49641ffeea6552657-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/3c8a83dc178a4ff2dee7182cdb8101a7-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/42a3389fa667fe1f2d8b93e385dfbb07-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/d926b0786612839f914846d5c381de0e-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/2ef5e6a005974c5d2063748f4261e00a-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/b592334323dc35a1ccb9b3b104dfb12f-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/b09fe315c22fd16e831fcf68250ab82f-1.jpg",
+    "https://teverun.sk/wp-content/uploads/2026/07/be1726e3c94ab5f21b1fc9436c456f2b-1.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "61ee55c1-0ffc-4cc2-a201-5bb4b52b80b9",
+   "slug": "teverun-blade-gt-plus-ii",
+   "name": "Teverun Blade GT+ II",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/61ee55c1-0ffc-4cc2-a201-5bb4b52b80b9/1792002527041_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Blade_GT2_PLUS_Pas_Cher-371413.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_GT2_PLUS_profil_bequille-670644.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette__lectrique_Teverun_Blade_GT2_puissante_et_sportive-663746.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_minimotors_deck_large_confortable-281852.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_display_commodo-693252.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_gt2_plus_minimotors_etrier_frein-277148.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/teverun_blade_gt2_plus_roue_avant-312678.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4068f167-283b-4087-94a4-b24e7b16a188",
+   "slug": "teverun-blade-mini-pro",
+   "name": "Teverun Blade Mini Pro",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4068f167-283b-4087-94a4-b24e7b16a188/1792002520177_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_min_pro_standard_yellow_7436124a-99fe-4f79-876d-3b461617808e.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_pro_standard_black.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_blade_mini_pro_pas_cher.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_Blade_Mini_pro_profil_puissante.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_teverun_blade_mini_pro_jaune_puissante.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_mini_pliable-373700.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/trottinette_electrique_Teverun_Blade_mini_pro_suspensions.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_blade_mini_pro_cale_pied-952474.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "8b6d7ee1-9de4-44ae-b43f-640c628aacce",
+   "slug": "teverun-blade-mini-ultra",
+   "name": "Teverun Blade Mini Ultra",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167659695_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167654761_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792167665637_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_BOSCH_yellow.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_BOSCH_black.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_standard_yellow.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Blade_mini_ultra_standard_black.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade_mini_ultra_ebfa9edc-2e10-4441-8395-8f7cf18407f6.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade-mini-ultra-624493.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/blade-mini-ultra-157574.png"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "b60e349e-a227-4b33-a194-1cd36dc69c02",
+   "slug": "teverun-fighter-11",
+   "name": "Teverun Fighter 11",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b60e349e-a227-4b33-a194-1cd36dc69c02/1791994397028_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_11_V.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_11.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_1_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_2_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_9_1_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_23_1_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_5_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Teverun_fighter_11_deck-157296.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "92039446-23d1-4d19-af55-4e9e36c82d59",
+   "slug": "teverun-fighter-11-plus",
+   "name": "Teverun Fighter 11+",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92039446-23d1-4d19-af55-4e9e36c82d59/1791994401690_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Teverun_Fighter_11.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-11-plus-side-view.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-elsparkcykel-636915.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-v4-elsparkcykel-5115468.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-eleven-v4-elsparkcykel-8401002.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN9075_only_wann-min.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/WAN9077_only_wann-min.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/11_9_1_-_copie_3076c5ab-28e6-460e-825c-44eec9933e87.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "5939a25f-949e-40df-9360-be5dd512f1c7",
+   "slug": "teverun-fighter-7260r",
+   "name": "Teverun Fighter 7260R",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5939a25f-949e-40df-9360-be5dd512f1c7/1791994116270_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_1_-_copie_ba2980f7-86d4-48f9-ae8d-f2abba7ca888.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_2_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_3_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_10_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/7260R_9_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_7260R_version_2025-526426.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_7260_r_puissante.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_teverun_fighter_Suprem_7260R.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "77546a96-f1b5-4558-b36f-ef3204f7f3ef",
+   "slug": "teverun-fighter-mini",
+   "name": "Teverun Fighter Mini",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791639718650_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791997359817_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/77546a96-f1b5-4558-b36f-ef3204f7f3ef/1791997368801_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_performante-732562.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Fighter_Mini.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Mini_v4.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_minii.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "12766dbe-aba4-4adf-a810-c5c342af365f",
+   "slug": "teverun-fighter-mini-eco",
+   "name": "Teverun Fighter Mini Eco",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12766dbe-aba4-4adf-a810-c5c342af365f/1792167672211_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/12766dbe-aba4-4adf-a810-c5c342af365f/1792167678524_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FMeco_1.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette-electrique-teverun-fighter-mini-eco-serie-exclusive.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_fighter_mini_eco_moteurs_Bosch_pneus_tubeless.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/9_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/20_-_copie.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "0d1a9f57-bdb6-4360-948f-03a9ae107632",
+   "slug": "teverun-fighter-mini-pro",
+   "name": "Teverun Fighter Mini Pro",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0d1a9f57-bdb6-4360-948f-03a9ae107632/1791639722398_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0d1a9f57-bdb6-4360-948f-03a9ae107632/1791639725859_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_2026.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_battery_60v25ah.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_pro_2025.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/teverun-mini-fighter-pro-2025-Carbon-min.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighte_mini_pro-display.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "a36d4d3a-c6c4-43d1-ab61-7b09cc47c113",
+   "slug": "teverun-fighter-mini-pro-v6",
+   "name": "Teverun Fighter Mini Pro V6",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a36d4d3a-c6c4-43d1-ab61-7b09cc47c113/1791639697766_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a36d4d3a-c6c4-43d1-ab61-7b09cc47c113/1791639701978_0.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_1.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_2.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_3.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_4.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_5.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_6.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_7.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/TEVERUN-FIGHTER-MINI-PRO-V6_8.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "56e2bf27-1aa4-44c3-ae05-66925462d843",
+   "slug": "teverun-fighter-mini-q",
+   "name": "Teverun Fighter Mini Q",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e2bf27-1aa4-44c3-ae05-66925462d843/1791994124201_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_Pas_Cher-458604.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_lateral-773587.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_rapide-673701.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_robuste-485684.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_freins_phare_avant-723771.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "5dcb8b35-a7c1-4ee8-b119-487284768ecf",
+   "slug": "teverun-fighter-mini-q-pro",
+   "name": "Teverun Fighter Mini Q Pro",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5dcb8b35-a7c1-4ee8-b119-487284768ecf/1792167684801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5dcb8b35-a7c1-4ee8-b119-487284768ecf/1792167692561_0.png",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUNFIGHTERQ_TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AH_Route.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_rapide-673701.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_freins_phare_avant-723771.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "0da85a7f-d5f3-49dc-ba52-ddfab8741615",
+   "slug": "teverun-fighter-mini-v6",
+   "name": "Teverun Fighter Mini V6",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0da85a7f-d5f3-49dc-ba52-ddfab8741615/1791639706136_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0da85a7f-d5f3-49dc-ba52-ddfab8741615/1791639711821_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Fighter_Mini.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/trottinette_electrique_Teverun_fighter_mini_performante-732562.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_Electrique_Teverun_Fighter_minii.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/2_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/3_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/21_-_copie.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/23_-_copie.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "e269b16b-bcb5-4371-b02d-2279e66b781f",
+   "slug": "teverun-fighter-supreme-7260r",
+   "name": "Teverun Fighter Supreme 7260R",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1791994407050_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_product_page_header_image.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_left_front.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_right.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_angle_left_rear.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-7260r-v4-forhandsbokning-elsparkcykel-588743.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-7260r-v4-forhandsbokning-elsparkcykel-555143.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_rear_motor_part.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/FIGHTER_SUPREME_7260R_4.0inch_TFT_display_part.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "43d0ceac-fac2-438d-9acf-da8bb1bff9ea",
+   "slug": "teverun-fighter-supreme-ultra",
+   "name": "Teverun Fighter Supreme Ultra",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1791994120071_0.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighter_SUPREME_ULTRA_2026.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/b8909c0dac90838d4d9692be33af1cd1.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/d4a55999bbf3c943fddba2853db2c368.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/367c47c62f77498e09e966fa4589798b.png",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-ultra-elsparkcykel-197754.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/18.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/23.jpg",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/teverun-fighter-supreme-plus-elsparkcykel-117344.png"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ec8913a0-1e28-48e2-a373-2694f8b2bb04",
+   "slug": "teverun-space",
+   "name": "Teverun Space",
+   "brand": "Teverun",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ec8913a0-1e28-48e2-a373-2694f8b2bb04/1792167697786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ec8913a0-1e28-48e2-a373-2694f8b2bb04/1792167703336_0.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TrottinetteElectriqueTeverunSpacePratiqueetPerformante.jpg",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUNSPACE52V18A_TROTTINETTE_ELECTRIQUE_TEVERUN_SPACE_52V_18AH.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_2777fbb6-78df-4fc1-8cdb-0b53d07d0b6c.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_trott.png",
+    "https://cdn.shopify.com/s/files/1/0968/8318/files/TEVERUN_SPACE_52V_18AH_electrique.png"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}

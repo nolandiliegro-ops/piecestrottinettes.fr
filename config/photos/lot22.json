@@ -1,0 +1,362 @@
+{
+ "lot": "lot22",
+ "models": [
+  {
+   "id": "a08b4192-9ce4-4a04-867e-d2faf2224142",
+   "slug": "mi-3",
+   "name": "Mi 3",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a08b4192-9ce4-4a04-867e-d2faf2224142/1783927073289-XIAOMI_MI3.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a08b4192-9ce4-4a04-867e-d2faf2224142/1791997225228_0.png",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_3.jpg?v=1640070115",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_8.jpg?v=1640070116",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_5.jpg?v=1640070117",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_4.jpg?v=1640070118",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3.jpg?v=1640070119",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_9.jpg?v=1640070120",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_7.jpg?v=1640070122",
+    "https://cdn.shopify.com/s/files/1/0044/9377/0822/products/XiaomiMiElectricScooter3_6.jpg?v=1640070123"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "37afb3ca-3f93-4adc-9417-107af7d03f7c",
+   "slug": "mi-essential",
+   "name": "Mi Essential",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37afb3ca-3f93-4adc-9417-107af7d03f7c/1789679655560_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37afb3ca-3f93-4adc-9417-107af7d03f7c/1789679657078_0.png",
+    "https://www.maxblinker.com/9873-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9867-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9868-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9869-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9870-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9871-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9872-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg",
+    "https://www.maxblinker.com/9874-panda_thickbox_default/xiaomi-mi-electric-scooter-essential.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "8ac84c3d-5813-472c-83f0-8b2604e44d79",
+   "slug": "mi-pro-2",
+   "name": "Mi Pro 2",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8ac84c3d-5813-472c-83f0-8b2604e44d79/1782545726325_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8ac84c3d-5813-472c-83f0-8b2604e44d79/1791997229625_0.png",
+    "https://www.maxblinker.com/9883-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9877-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9878-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9879-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9880-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9881-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9882-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg",
+    "https://www.maxblinker.com/9884-panda_thickbox_default/xiaomi-mi-electric-scooter-pro-2.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "f53277fa-ff92-4616-99f7-9948997056bb",
+   "slug": "xiaomi-electric-scooter-4",
+   "name": "Xiaomi Electric Scooter 4",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1782567064735_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1782567066819_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1782567068794_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-20000_5328c67a-7069-4704-a410-ea5be15681af.png?v=1773201885",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/46443-K.png?v=1773202199",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-10000_679ce73b-6ce1-4cb5-aed5-85b021c4eef2.png?v=1761286428",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-30000_e4b9b716-b3b2-4953-80c8-7f2644bb053a.jpg?v=1761286428",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-40000_870c0daf-f30b-400e-b74d-142bf0b1fded.jpg?v=1761286428",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-60000_1d108014-1e6a-4297-9ca7-19071bcdf867.jpg?v=1761286428",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4teur-100000.jpg?v=1761286428"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "1762a427-6e30-4bbf-b441-1bcb2414f0f7",
+   "slug": "xiaomi-electric-scooter-4-lite-2nd-gen",
+   "name": "Xiaomi Electric Scooter 4 Lite 2nd Gen",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1762a427-6e30-4bbf-b441-1bcb2414f0f7/1791996264115_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1762a427-6e30-4bbf-b441-1bcb2414f0f7/1791996267886_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/20250226141744.png?v=1773818211",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_fd3848ad-41c0-4e06-80d1-e5718c541abb.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_5d5c7024-d73a-45ed-ba37-692510ecf7ca.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_15d8caeb-f1e1-4c0f-a75b-db46df7fc7d8.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/7_eb01f2e0-b568-4107-be60-25124c758182.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/8_9e57599b-8ddb-42c7-9498-0c321a6a41df.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/9_54ad6b96-ea5b-4247-a47c-02cf5c169453.png?v=1773817198",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/10_9e5f01fa-92a2-4fff-95a8-4819c841e074.png?v=1773817198"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d363af03-a87a-491e-8967-7d82bf0b5dc8",
+   "slug": "xiaomi-electric-scooter-4-pro",
+   "name": "Xiaomi Electric Scooter 4 Pro",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d363af03-a87a-491e-8967-7d82bf0b5dc8/1789679653651_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191_9e21856e-c272-4804-9eba-4d683ab5dbbf.png?v=1791441474",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_3.png?v=1787032626",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_2.png?v=1787032626",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_1.png?v=1787032627",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_5.jpg?v=1787032630",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_3.jpg?v=1787032629",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_8.jpg?v=1787032630",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/38191-Xiaomi_Electric_Scooter_4_Pro_1.jpg?v=1787032628"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "68f825bc-0d4b-4e61-849d-9a90fd0f74b6",
+   "slug": "xiaomi-electric-scooter-4-pro-2nd-gen",
+   "name": "Xiaomi Electric Scooter 4 Pro 2nd Gen",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/68f825bc-0d4b-4e61-849d-9a90fd0f74b6/1791996235369_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/68f825bc-0d4b-4e61-849d-9a90fd0f74b6/1791996237726_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_bf7a1a8d-1e51-473b-a2c8-caab8dba1039.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/2_3079ae0b-a54c-47d2-96e7-b315b58dd8de.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/18_e0caf36c-9474-4fcc-849c-2df8b1e08eef.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/5_14206276-0338-4631-ae84-01d1c240f440.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_867e367a-7cda-44ef-b54f-4f7744f05b20.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4_f4d81f13-fd64-43cf-ab3b-3b0ccfbfda60.png?v=1773818175",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/7_d230c3ff-8e90-4d85-a494-698570c5a42f.png?v=1773818175"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "5f93e9ca-ff5f-4ef9-93e4-742feab481ff",
+   "slug": "xiaomi-electric-scooter-4-ultra",
+   "name": "Xiaomi Electric Scooter 4 Ultra",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f93e9ca-ff5f-4ef9-93e4-742feab481ff/1789679646371_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f93e9ca-ff5f-4ef9-93e4-742feab481ff/1789679649112_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5f93e9ca-ff5f-4ef9-93e4-742feab481ff/1791997242790_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6-10000_1.png?v=1773202189",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/110000_1_fc72e477-d7e4-45f8-81ff-ff8862a87ad7.png?v=1761286658",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6-1-10000_1_8fa825d4-9ada-48cb-a8c3-548258c3c7a1.png?v=1761286658",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6-2-10000_1_e205cdd0-ed72-49e0-b074-89ebd8d2a350.png?v=1761286658",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6-20000_2_e35c87ae-f735-4ac9-900a-685717934e32.png?v=1761286658",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6-3-10000_1_09ef1af8-01d2-4fbb-b8d8-8dc788f33c4b.png?v=1761286658",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/c-50080-1_eaafa8df-c99a-4760-8726-d2ab687bdb7b.png?v=1761286658"
+   ],
+   "n_old": 3,
+   "bad": false
+  },
+  {
+   "id": "bc732223-83e4-42ae-a179-aade0668772d",
+   "slug": "xiaomi-electric-scooter-5",
+   "name": "Xiaomi Electric Scooter 5",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bc732223-83e4-42ae-a179-aade0668772d/1791996226946_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_6.png?v=1791959185",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_7.png?v=1791959185",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_3.png?v=1791959235",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_8.png?v=1791959184",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552_8_29d8575b-fec1-4bbe-a770-fa4260bda004.png?v=1791958966",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_EU_-4.jpg?v=1791958861",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_EU_-1_b90433d3-437c-4fb1-b596-c0e103e3081c.jpg?v=1785704635",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60552-Xiaomi_Electric_Scooter_5_EU_-3.jpg?v=1791958861"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "ce9556b5-b090-4437-968e-5e77d538e57e",
+   "slug": "xiaomi-electric-scooter-5-max",
+   "name": "Xiaomi Electric Scooter 5 Max",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce9556b5-b090-4437-968e-5e77d538e57e/1791996233104_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60558-02.png?v=1791442181",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/8_581ce0f2-874d-43fc-8d6f-aa392cc0cca8.png?v=1773817873",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_2b73c01c-d930-4a93-b00c-39c801a3a530.png?v=1773817873",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/2_d66b41fc-2304-43c9-a14b-090782c9c97a.png?v=1773817873",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_adef6a03-c7d0-4730-b70f-bc0e7d2c2f8f.png?v=1773817873",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60558-Xiaomi_Electric_Scooter_5_Max_2.jpg?v=1787194750",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60558-Xiaomi_Electric_Scooter_5_Max_1.jpg?v=1787194750",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_67eef315-2058-46e2-bd78-782ee24c3ec4.png?v=1773817873"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "3717eb2b-de58-4552-b250-1e6fdfb60dcb",
+   "slug": "xiaomi-electric-scooter-5-plus",
+   "name": "Xiaomi Electric Scooter 5 Plus",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3717eb2b-de58-4552-b250-1e6fdfb60dcb/1792003523516_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3717eb2b-de58-4552-b250-1e6fdfb60dcb/1792003525648_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/4_ef9d459b-d069-477b-ac13-17a78624cdc4.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/2_86845162-ea1e-446f-a94a-7262bee384f1.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_5bf8a248-827f-48a4-a275-67818a6c1bf3.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_722b0de4-d781-47c9-9d0a-247d5350f295.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/8_c089976a-158e-4bbb-bbfb-59555cd62d58.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/7_5b463901-a697-4b17-b474-f2962e33089a.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_00a71f20-4bae-4a34-bd94-67a741a1e931.png?v=1773818033",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/5_43a57b7e-30bc-4bba-8b6f-bc5b29d82b79.png?v=1773818033"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "449e181c-7d29-402a-ae13-23d9f70080bc",
+   "slug": "xiaomi-electric-scooter-5-pro",
+   "name": "Xiaomi Electric Scooter 5 Pro",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/449e181c-7d29-402a-ae13-23d9f70080bc/1791996230033_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_2.png?v=1787196546",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_7.png?v=1787196545",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_1.png?v=1787196549",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_3.png?v=1787196549",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_4.png?v=1787196547",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_1.jpg?v=1787195482",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_2.jpg?v=1787195480",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/60556-Xiaomi_Electric_Scooter_5_Pro_6.png?v=1787196547"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "d4df9b63-797b-4d65-aa0c-fbc5a521e46b",
+   "slug": "xiaomi-electric-scooter-6",
+   "name": "Xiaomi Electric Scooter 6",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4df9b63-797b-4d65-aa0c-fbc5a521e46b/1791995944234_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_c16acdbb-a0e0-4f4f-b371-bf0e0dc8c471.png?v=1773992245",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-XiaomiElectricScooter6EU_4.png?v=1787024453",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-XiaomiElectricScooter6EU.png?v=1787024453",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-XiaomiElectricScooter6EU_1.png?v=1787024453",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-XiaomiElectricScooter6EU_2.png?v=1787024453",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-Xiaomi_Electric_Scooter_6_10.jpg?v=1787045604",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-Xiaomi_Electric_Scooter_6_1.jpg?v=1787045603",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72361-XiaomiElectricScooter6EU_5.png?v=1787024453"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "b1ca8fce-41c1-41b4-b678-26de0130212a",
+   "slug": "xiaomi-electric-scooter-6-lite",
+   "name": "Xiaomi Electric Scooter 6 Lite",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b1ca8fce-41c1-41b4-b678-26de0130212a/1791995937596_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b1ca8fce-41c1-41b4-b678-26de0130212a/1791995940973_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_4608b266-7825-4ef1-9f7f-5f673457e1aa.png?v=1773990948",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_e4bc8d8c-df8e-4deb-9921-19b9670084c3.png?v=1773990812",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_57850126-8de6-49e7-89b1-83a822dd6042.png?v=1773990948",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/2_c32354c5-a6c8-4de5-91a1-4b0ca2a3ea90.png?v=1773990811",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/7_7a308d01-a299-406d-80e1-d593efbb3b35.png?v=1773990948",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72365-Xiaomi_Electric_Scooter_6_Lite_1.jpg?v=1787195788",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72365-Xiaomi_Electric_Scooter_6_Lite_2.jpg?v=1787195788",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/8_3a2a87ad-48ef-40e7-91b0-cf60afbfb3f4.png?v=1773990948"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "d92aa7d2-7f6f-4499-b72a-b366381b3df5",
+   "slug": "xiaomi-electric-scooter-6-pro",
+   "name": "Xiaomi Electric Scooter 6 Pro",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d92aa7d2-7f6f-4499-b72a-b366381b3df5/1791995934856_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_c708a052-93ef-4cc0-8789-5cebb3e5a693.png?v=1773993582",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/6_9c0b6e6e-243d-456f-804e-db3201715294.png?v=1773568859",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72303-Xiaomi_Electric_Scooter_6_Pro_GL_-01.jpg?v=1787044855",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72303-Xiaomi_Electric_Scooter_6_Pro_GL_-02.jpg?v=1787044856",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/72303-Xiaomi_Electric_Scooter_6_Pro_GL_-03.jpg?v=1787044856"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "4a90ba47-7899-4215-a749-c8dfc0251eca",
+   "slug": "xiaomi-electric-scooter-elite",
+   "name": "Xiaomi Electric Scooter Elite",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a90ba47-7899-4215-a749-c8dfc0251eca/1792168405270_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4a90ba47-7899-4215-a749-c8dfc0251eca/1792168410332_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/2_533298ae-113e-4489-92a2-a9ea3bea5986.png?v=1773820045",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/7_c70f70ac-a68e-443f-a439-d76fdceb8a16.png?v=1773820045",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/1_6de5b881-3e19-4c37-a63b-8f85ea9dbece.png?v=1773820045",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/3_bc557435-73ef-4f02-8f5b-006855d9ff75.png?v=1773820045",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/8_c1f66189-1010-4db5-85a4-0a9f5ae7816a.png?v=1773820045",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/50546-Xiaomi_Electric_Scooter_Elite_EU_-4.jpg?v=1780889998",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/50546-Xiaomi_Electric_Scooter_Elite_EU_-1.jpg?v=1780889990",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/5_c8b8dd96-4cd8-43f7-b100-650b26ed8058.png?v=1773820045"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "fb8e9abb-714d-4738-a283-55132421eeb7",
+   "slug": "xiaomi-mi-3-lite",
+   "name": "Xiaomi Mi 3 Lite",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb8e9abb-714d-4738-a283-55132421eeb7/1792003517210_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/fb8e9abb-714d-4738-a283-55132421eeb7/1792003519626_0.png",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/Untitled-2copy_ceefba33-e925-4092-8c05-52580b0d5af2.png?v=1742285418",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/Untitled-1_e24e9b0e-86ea-4ad8-94d9-de9aab4b97f2.png?v=1742285418",
+    "https://cdn.shopify.com/s/files/1/0540/1762/2189/files/Untitled-3.png?v=1742285418"
+   ],
+   "n_old": 2,
+   "bad": false
+  },
+  {
+   "id": "9f84797a-4b5a-416e-97f2-fbfce1898b7c",
+   "slug": "xiaomi-mi-electric-scooter-1s",
+   "name": "Xiaomi Mi Electric Scooter 1S",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9f84797a-4b5a-416e-97f2-fbfce1898b7c/1791996272676_0.png",
+    "https://www.maxblinker.com/9863-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9859-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9860-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9861-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9862-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9864-panda_thickbox_default/xiaomi-1s.jpg",
+    "https://www.maxblinker.com/9865-panda_thickbox_default/xiaomi-1s.jpg"
+   ],
+   "n_old": 1,
+   "bad": false
+  },
+  {
+   "id": "8060ae3d-dd7a-4d0a-ad85-7deb853e4db4",
+   "slug": "xiaomi-mi-m365",
+   "name": "Xiaomi Mi M365",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792003511756_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792003513387_0.png",
+    "https://ceno.lv/uploads/catalogue/product/xiaomi-mi-m365-electric-scooter-original-size-172.jpg"
+   ],
+   "n_old": 2,
+   "bad": false
+  }
+ ]
+}
