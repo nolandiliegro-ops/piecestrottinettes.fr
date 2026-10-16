@@ -1,0 +1,4255 @@
+[
+ {
+  "slug": "kukirin-a1",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1.jpg?v=1771818109",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.8
+  },
+  "size": [
+   831,
+   993
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A101.jpg?v=1771929077",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.679
+  },
+  "size": [
+   977,
+   1024
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11.jpg?v=1771929077",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.791
+  },
+  "size": [
+   875,
+   499
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11101.jpg?v=1771929077",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.838
+  },
+  "size": [
+   1026,
+   921
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11102.jpg?v=1771929077",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.838
+  },
+  "size": [
+   1070,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A1-11103.jpg?v=1771929077",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.61
+  },
+  "size": [
+   1023,
+   719
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A103.jpg?v=1771929077",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.24
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN-A110.jpg?v=1771929077",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.813
+  },
+  "size": [
+   657,
+   953
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-a1",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6aa5337c-30db-4f32-bc81-ff33cf6a9fe5/1791942611592_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.613
+  },
+  "size": [
+   833,
+   1215
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3f7fec50-e518-4966-9a4d-00340adf2207/1791942595641_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.846
+  },
+  "size": [
+   737,
+   732
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3f7fec50-e518-4966-9a4d-00340adf2207/1791942599896_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.613
+  },
+  "size": [
+   833,
+   1215
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_2.jpg?v=1751364487",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.839
+  },
+  "size": [
+   964,
+   876
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_3.jpg?v=1751364487",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.841
+  },
+  "size": [
+   849,
+   909
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_4.jpg?v=1751364487",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.549
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_1.jpg?v=1751364487",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.792
+  },
+  "size": [
+   542,
+   976
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_5.jpg?v=1751364487",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.731
+  },
+  "size": [
+   998,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_6.jpg?v=1751364487",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   903,
+   919
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_10.jpg?v=1751364478",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "couleurs vives 54 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 54 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.539,
+   "fill": 0.825
+  },
+  "size": [
+   1080,
+   768
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_9.jpg?v=1751364478",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.825
+  },
+  "size": [
+   948,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.804
+  },
+  "size": [
+   330,
+   518
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.771
+  },
+  "size": [
+   518,
+   257
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.767
+  },
+  "size": [
+   515,
+   246
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master.png?v=1773716042",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.479
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G2_Master_2.png?v=1773716042",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.348
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_New_Version-A.png?v=1773716042",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.206,
+   "vivid": 0.004,
+   "fill": 0.623
+  },
+  "size": [
+   1018,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_New_Version-B.png?v=1773716042",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.204,
+   "vivid": 0.038,
+   "fill": 0.75
+  },
+  "size": [
+   1021,
+   955
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-V2.jpg?v=1773716042",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.772
+  },
+  "size": [
+   417,
+   895
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master_99116dbe-284b-4708-b440-c2c6d3a29184.jpg?v=1789631422",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.051,
+   "fill": 0.739
+  },
+  "size": [
+   1086,
+   1132
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Master-KuKirin.jpg?v=1790741053",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.595
+  },
+  "size": [
+   858,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.78
+  },
+  "size": [
+   286,
+   512
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.068,
+   "fill": 0.802
+  },
+  "size": [
+   229,
+   367
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/778234b9-1683-4ee3-9621-e2ecba899431/1778550888435_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.791
+  },
+  "size": [
+   292,
+   511
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-V2.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.788
+  },
+  "size": [
+   797,
+   935
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-2.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.285
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_MAX-P.jpg?v=1790762475",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.258,
+   "vivid": 0.242,
+   "fill": 0.843
+  },
+  "size": [
+   1081,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-11.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.843
+  },
+  "size": [
+   825,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-1.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-4.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.109,
+   "fill": 0.842
+  },
+  "size": [
+   823,
+   871
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2_Max-10.jpg?v=1770203217",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.845
+  },
+  "size": [
+   768,
+   831
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.068,
+   "fill": 0.804
+  },
+  "size": [
+   329,
+   517
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.84
+  },
+  "size": [
+   481,
+   519
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/bfb35e80-b24b-4cac-a178-c97915a4425d/1778550884616_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.841
+  },
+  "size": [
+   484,
+   518
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G2-ultra.jpg?v=1790762512",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.129,
+   "vivid": 0.111,
+   "fill": 0.73
+  },
+  "size": [
+   1137,
+   1188
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/19_1.jpg?v=1770203330",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.157,
+   "fill": 0.656
+  },
+  "size": [
+   956,
+   838
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/29_2.png?v=1770203330",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.837
+  },
+  "size": [
+   870,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/15.jpg?v=1770203330",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.294
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/14.jpg?v=1770203330",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.142,
+   "fill": 0.834
+  },
+  "size": [
+   955,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/11.png?v=1770203330",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.223
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-ultra",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/20.png?v=1770203330",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.768
+  },
+  "size": [
+   1031,
+   501
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg?v=1751364094",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.702
+  },
+  "size": [
+   985,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.79
+  },
+  "size": [
+   544,
+   962
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.837
+  },
+  "size": [
+   944,
+   842
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_5.jpg?v=1751364094",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.689
+  },
+  "size": [
+   1080,
+   816
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.843
+  },
+  "size": [
+   1080,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_7.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.802
+  },
+  "size": [
+   964,
+   578
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.733
+  },
+  "size": [
+   1079,
+   418
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_9.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.176,
+   "fill": 0.487
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e90f97e5-85fc-4005-8ad6-9bfbbfea0df8/1791942588575_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.125,
+   "vivid": 0.253,
+   "fill": 0.839
+  },
+  "size": [
+   1083,
+   1195
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.811
+  },
+  "size": [
+   349,
+   517
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.171,
+   "fill": 0.839
+  },
+  "size": [
+   472,
+   520
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7c4d516d-3386-4b59-ba37-5bd40aa51480/1778550892473_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.178,
+   "fill": 0.846
+  },
+  "size": [
+   483,
+   516
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg?v=1751364094",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.702
+  },
+  "size": [
+   985,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.121,
+   "fill": 0.79
+  },
+  "size": [
+   544,
+   962
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.837
+  },
+  "size": [
+   944,
+   842
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_5.jpg?v=1751364094",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.689
+  },
+  "size": [
+   1080,
+   816
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.843
+  },
+  "size": [
+   1080,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_7.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.802
+  },
+  "size": [
+   964,
+   578
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg?v=1751364094",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.733
+  },
+  "size": [
+   1079,
+   418
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.812
+  },
+  "size": [
+   355,
+   522
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.145,
+   "fill": 0.837
+  },
+  "size": [
+   430,
+   514
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/57da2084-1759-4216-b2ed-e4d7098ffa76/1778550875522_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.127,
+   "fill": 0.836
+  },
+  "size": [
+   401,
+   430
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_be37e9ff-5caf-4a16-b99b-737766afe3c4.png?v=1770203218",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.787
+  },
+  "size": [
+   520,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G3_Pro_a4444502-7da1-4881-a8ec-c95ff1b5d0fa.jpg?v=1790762506",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.269,
+   "vivid": 0.29,
+   "fill": 0.758
+  },
+  "size": [
+   1138,
+   1215
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-2.jpg?v=1786699050",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.605
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-4.jpg?v=1786699029",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.161,
+   "fill": 0.838
+  },
+  "size": [
+   928,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-3.jpg?v=1786699040",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.131,
+   "fill": 0.839
+  },
+  "size": [
+   999,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/products/KuKirinG3Pro-5.jpg?v=1786699021",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.178,
+   "fill": 0.474
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG3Pro.jpg?v=1786698980",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.165,
+   "fill": 0.502
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c07a843e-9725-48f0-8500-eee5e4b2748c/1791942590962_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.838
+  },
+  "size": [
+   1113,
+   1243
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c07a843e-9725-48f0-8500-eee5e4b2748c/1791942593450_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.845
+  },
+  "size": [
+   740,
+   720
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_27c47278-e160-4fad-beab-a70fe0646649.jpg?v=1773716102",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.798
+  },
+  "size": [
+   577,
+   951
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4_2e5459c8-c59b-4959-adbc-387cb7320868.jpg?v=1789631914",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.746
+  },
+  "size": [
+   1101,
+   1123
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_dd9cff65-b71b-4777-91dd-f799c984b0a8.jpg?v=1790738979",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.024,
+   "fill": 0.688
+  },
+  "size": [
+   1627,
+   1273
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4-2.jpg?v=1790738979",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.834
+  },
+  "size": [
+   1728,
+   1336
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_2d641ed3-0d70-4e99-aa18-aa5516a61460.jpg?v=1790738979",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.843
+  },
+  "size": [
+   1395,
+   1456
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_-2.jpg?v=1790738978",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.835
+  },
+  "size": [
+   1219,
+   1398
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1778550878947_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.824
+  },
+  "size": [
+   358,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?v=1786094742",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.845
+  },
+  "size": [
+   569,
+   556
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_1_70c62286-69d2-4220-befd-04734f0194e1.jpg?v=1786094742",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.823
+  },
+  "size": [
+   455,
+   600
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_2_2c4fd62a-a020-4aee-89ad-873d0a6db0e1.jpg?v=1786094742",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.24
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-2026_Version.jpg?v=1775817666",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.318,
+   "vivid": 0.161,
+   "fill": 0.554
+  },
+  "size": [
+   1058,
+   1014
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-P.jpg?v=1790762468",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.159,
+   "vivid": 0.12,
+   "fill": 0.707
+  },
+  "size": [
+   1167,
+   1189
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/G4-2026_6.jpg?v=1777451385",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.521
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_6.jpg?v=1786094742",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.818
+  },
+  "size": [
+   398,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/g4_4.jpg?v=1786094742",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.795
+  },
+  "size": [
+   383,
+   650
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.824
+  },
+  "size": [
+   393,
+   515
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.838
+  },
+  "size": [
+   465,
+   516
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1778550871946_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.845
+  },
+  "size": [
+   519,
+   506
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/KUKIRIN_G4_MAX_123.jpg?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.677
+  },
+  "size": [
+   1080,
+   984
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_9.png?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.846
+  },
+  "size": [
+   895,
+   896
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_2.png?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.824
+  },
+  "size": [
+   680,
+   888
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_3.png?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.389
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_4.png?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.845
+  },
+  "size": [
+   913,
+   890
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_1.png?v=1774334970",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.767
+  },
+  "size": [
+   411,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0668/5812/3307/files/G4MAX_5.png?v=1774334970",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.842
+  },
+  "size": [
+   796,
+   893
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra_3.jpg?v=1790042525",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.802
+  },
+  "size": [
+   1106,
+   1584
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra_4.jpg?v=1790042526",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.154,
+   "fill": 0.647
+  },
+  "size": [
+   1350,
+   1567
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_25_ac097d01-b973-4993-800a-2219d3b05f0d.jpg?v=1789979098",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.185,
+   "fill": 0.828
+  },
+  "size": [
+   753,
+   983
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirin_G4_Ultra-2026.jpg?v=1790762450",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.13,
+   "vivid": 0.12,
+   "fill": 0.732
+  },
+  "size": [
+   1162,
+   1190
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_8_96fb2e20-e92a-4bf7-92bb-f69283f33ab8.jpg?v=1789979098",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.846
+  },
+  "size": [
+   834,
+   829
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_13_fbff1eea-5681-4ad9-9451-0ee82a3166b5.jpg?v=1789979098",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.836
+  },
+  "size": [
+   775,
+   886
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_20_5f4f942c-3d24-402a-aea5-718f80e69451.jpg?v=1789979098",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.651
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/KuKirinG4UltraElectricScooter_21_fdc57e2e-8919-4c7e-8577-965309df7a14.jpg?v=1789979098",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.653
+  },
+  "size": [
+   1078,
+   1063
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166697967_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.097,
+   "vivid": 0.098,
+   "fill": 0.728
+  },
+  "size": [
+   1162,
+   1190
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-ultra",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166705147_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.802
+  },
+  "size": [
+   1106,
+   1584
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1791942581370_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.829
+  },
+  "size": [
+   314,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/M4_MAX_c8ca8a69-53de-4d9e-a502-2ab8498ac40c.png?v=1770203327",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.178,
+   "fill": 0.845
+  },
+  "size": [
+   821,
+   896
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/M4_Max.jpg?v=1789631486",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.044,
+   "vivid": 0.049,
+   "fill": 0.72
+  },
+  "size": [
+   1135,
+   1200
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04662.png?v=1770203327",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.389
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04640.png?v=1770203327",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.81
+  },
+  "size": [
+   581,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04626.png?v=1770203327",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.842
+  },
+  "size": [
+   789,
+   838
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04630.png?v=1770203327",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.824
+  },
+  "size": [
+   915,
+   667
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04838.png?v=1770203327",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.085,
+   "fill": 0.702
+  },
+  "size": [
+   1032,
+   1001
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0625/8704/4046/files/DSC04703.png?v=1770203327",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.833
+  },
+  "size": [
+   939,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942602197_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.516
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942604887_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.415
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/550ba86f-6141-41dd-bd81-14562593d4c9/1791942607118_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.792
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_1.jpg?v=1712806166",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.516
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_0.jpg?v=1712806166",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.792
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_2.jpg?v=1712806163",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.485
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_3.jpg?v=1712806163",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.507
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_4.jpg?v=1712806162",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.729
+  },
+  "size": [
+   1043,
+   401
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-s1-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/477237_10.jpg?v=1712806163",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.361,
+   "vivid": 0.022,
+   "fill": 0.428
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9b0c8e44-4293-446d-bfc3-9218bd371806/1792166729657_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.709
+  },
+  "size": [
+   570,
+   707
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9b0c8e44-4293-446d-bfc3-9218bd371806/1792166734635_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.816
+  },
+  "size": [
+   338,
+   404
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-1_c1-002.jpg?v=1782988232",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.487
+  },
+  "size": [
+   1936,
+   1838
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-2_c1-003.jpg?v=1782988232",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.411
+  },
+  "size": [
+   1731,
+   1930
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-3_c1-004.jpg?v=1782988232",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.561
+  },
+  "size": [
+   1926,
+   1696
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-4_c1-005.jpg?v=1782988232",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.602
+  },
+  "size": [
+   1892,
+   1067
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-5_c1-006.jpg?v=1782988232",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.672
+  },
+  "size": [
+   1872,
+   1483
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-6_c1-007.jpg?v=1782988232",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.582
+  },
+  "size": [
+   1966,
+   1394
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-7_c1-008.jpg?v=1782988231",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.738
+  },
+  "size": [
+   1800,
+   1507
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c1",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1585-8_c1-009.jpg?v=1782988232",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.697
+  },
+  "size": [
+   1882,
+   1613
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/91214a2e-16e0-42d9-92ab-0f40a84c657b/1792166750459_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.826
+  },
+  "size": [
+   876,
+   1119
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 1,
+  "url": "https://langfeite.com/static/upfile/202405140834318531.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.018,
+   "vivid": 0.037,
+   "fill": 0.827
+  },
+  "size": [
+   1101,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 2,
+  "url": "https://langfeite.com/static/upfile/202405140834416893.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.831
+  },
+  "size": [
+   570,
+   613
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 3,
+  "url": "https://langfeite.com/static/upfile/202405140836012655.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.806
+  },
+  "size": [
+   398,
+   533
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 4,
+  "url": "https://langfeite.com/static/upfile/202405140836227798.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.609
+  },
+  "size": [
+   415,
+   425
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 5,
+  "url": "https://langfeite.com/static/upfile/202405140836277600.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.828
+  },
+  "size": [
+   303,
+   341
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 6,
+  "url": "https://langfeite.com/static/upfile/202405140836514217.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.816
+  },
+  "size": [
+   549,
+   364
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-c5",
+  "i": 7,
+  "url": "https://langfeite.com/static/upfile/202405140837119202.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.791
+  },
+  "size": [
+   338,
+   462
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2928c22d-9a7a-4039-8201-86446555b8fb/1791638604975_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.609
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-5_coupe-06.jpg?v=1782987808",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.347
+  },
+  "size": [
+   1878,
+   1878
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-3_coupe-04.jpg?v=1782987809",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.551
+  },
+  "size": [
+   1914,
+   966
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594_coupe-01.jpg?v=1782987808",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.752
+  },
+  "size": [
+   1494,
+   1808
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-1_coupe-02.jpg?v=1782987808",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.768
+  },
+  "size": [
+   1780,
+   1818
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-2_coupe-03.jpg?v=1782987808",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.756
+  },
+  "size": [
+   1830,
+   1818
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1594-4_coupe-05.jpg?v=1782987808",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.743
+  },
+  "size": [
+   1642,
+   1840
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/Coupe_04-37aff8ae.jpg?v=1786024657",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.551
+  },
+  "size": [
+   1914,
+   966
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-coupe",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/Coupe_06-64972fa5.jpg?v=1786024657",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.347
+  },
+  "size": [
+   1878,
+   1878
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e607937-03b5-4fa8-9368-102f4606ded8/1791638619415_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.46
+  },
+  "size": [
+   1298,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e607937-03b5-4fa8-9368-102f4606ded8/1791638632117_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.613
+  },
+  "size": [
+   582,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_01-a96c04ca.jpg?v=1786025168",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.569
+  },
+  "size": [
+   1758,
+   1610
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_09-f2a1e2dc.jpg?v=1786024675",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.32
+  },
+  "size": [
+   1782,
+   1571
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_03-33e1020a.jpg?v=1786024675",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.428
+  },
+  "size": [
+   1864,
+   1876
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_11-a8a6ead4.jpg?v=1786024674",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.803
+  },
+  "size": [
+   1020,
+   1625
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_06-c8485cdc.jpg?v=1786025168",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.647
+  },
+  "size": [
+   1878,
+   1240
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_02-98944a42.jpg?v=1786024674",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.609
+  },
+  "size": [
+   1936,
+   1351
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2mini_05-d9264ab3.jpg?v=1786024674",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.33
+  },
+  "size": [
+   1870,
+   1870
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1597_elektrokolobezka-langfeite-gt2-mini.png?v=1782988234",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.009,
+   "fill": 0.672
+  },
+  "size": [
+   540,
+   583
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821/1792166739981_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.49
+  },
+  "size": [
+   691,
+   642
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821/1792166744678_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.809
+  },
+  "size": [
+   288,
+   372
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-2_elektrokolobezka-langfeite-gt2-rs.jpg?v=1782988235",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.506
+  },
+  "size": [
+   1632,
+   1804
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-1_elektrokolobezka-langfeite-gt2-rs.png?v=1782988236",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.522
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600_elektrokolobezka-langfeite-gt2-rs.png?v=1782988235",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.822
+  },
+  "size": [
+   702,
+   452
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1600-2_elektrokolobezka-langfeite-gt2-rs.png?v=1782988235",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.032,
+   "vivid": 0.05,
+   "fill": 0.755
+  },
+  "size": [
+   535,
+   601
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_01-93a85bae.jpg?v=1786024736",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.458
+  },
+  "size": [
+   2046,
+   1344
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_02-8ebd45ee.jpg?v=1786024736",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.841
+  },
+  "size": [
+   1563,
+   1372
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_03-28275aaa.jpg?v=1786024736",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.698
+  },
+  "size": [
+   1576,
+   1872
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/GT2RS_04-7e60e4eb.jpg?v=1786024736",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.454
+  },
+  "size": [
+   1960,
+   1549
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4f6d920b-57e6-45f1-9a98-0ff51863b08a/1792166757244_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.82
+  },
+  "size": [
+   1359,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4f6d920b-57e6-45f1-9a98-0ff51863b08a/1792166762707_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.467
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1.png?v=1782988236",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.013,
+   "fill": 0.733
+  },
+  "size": [
+   472,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1-aaca773f.jpg?v=1786024863",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.232
+  },
+  "size": [
+   1106,
+   850
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606_elektrokolobezka-langfeite-h1-d421763f.jpg?v=1786024863",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.757
+  },
+  "size": [
+   405,
+   565
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-1_elektrokolobezka-langfeite-h1-35d7c881.jpg?v=1786024856",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.491
+  },
+  "size": [
+   377,
+   486
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-2_elektrokolobezka-langfeite-h1-f8542904.jpg?v=1786024856",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.797
+  },
+  "size": [
+   335,
+   361
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-3_elektrokolobezka-langfeite-h1-9b49b8d4.jpg?v=1786024856",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.816
+  },
+  "size": [
+   646,
+   488
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-h1",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/1606-4_elektrokolobezka-langfeite-h1-e04b9b0a.jpg?v=1786024863",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.626
+  },
+  "size": [
+   650,
+   507
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792166767978_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.506
+  },
+  "size": [
+   867,
+   933
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 1,
+  "url": "https://langfeite.com/static/upfile/202510150846468856.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.424
+  },
+  "size": [
+   1736,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 2,
+  "url": "https://langfeite.com/static/upfile/202510150854475571.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.823
+  },
+  "size": [
+   680,
+   899
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 3,
+  "url": "https://langfeite.com/static/upfile/202510150903263691.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.846
+  },
+  "size": [
+   485,
+   520
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 4,
+  "url": "https://langfeite.com/static/upfile/202510150903419065.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.842
+  },
+  "size": [
+   577,
+   544
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 5,
+  "url": "https://langfeite.com/static/upfile/202510150905093805.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.808
+  },
+  "size": [
+   1135,
+   747
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 6,
+  "url": "https://langfeite.com/static/upfile/202510150907002508.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.784
+  },
+  "size": [
+   1224,
+   626
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 7,
+  "url": "https://langfeite.com/static/upfile/202510150927577712.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.186
+  },
+  "size": [
+   1756,
+   757
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/1028/1680/9303/files/rg-03_dcecd8aa-4c2d-4134-8766-93cf2e7c3d5e.jpg?v=1785505444",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.8
+  },
+  "size": [
+   1728,
+   1067
+  ],
+  "error": null
+ }
+]

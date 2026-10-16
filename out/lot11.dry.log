@@ -1,0 +1,199 @@
+kukirin-a1 #0 PASS ok
+kukirin-a1 #1 PASS ok
+kukirin-a1 #2 WARN basse définition · cadrage serré
+kukirin-a1 #3 PASS ok
+kukirin-a1 #4 WARN cadrage serré
+kukirin-a1 #5 PASS ok
+kukirin-a1 #6 PASS ok
+kukirin-a1 #7 PASS ok
+kukirin-a1 #8 FAIL détourage sale / résidu de décor
+kukirin-c1-pro #0 PASS ok
+kukirin-c1-pro #1 FAIL détourage sale / résidu de décor
+kukirin-c1-pro #2 PASS ok
+kukirin-c1-pro #3 PASS ok
+kukirin-c1-pro #4 PASS ok
+kukirin-c1-pro #5 WARN basse définition · cadrage serré
+kukirin-c1-pro #6 WARN cadrage serré
+kukirin-c1-pro #7 PASS ok
+kukirin-c1-pro #8 WARN cadrage serré · couleurs vives 54 % (visuel marketing ?)
+kukirin-c1-pro #9 WARN cadrage serré
+kukirin-g2-master #0 WARN basse définition
+kukirin-g2-master #1 WARN basse définition · cadrage serré
+kukirin-g2-master #2 WARN basse définition
+kukirin-g2-master #3 PASS ok
+kukirin-g2-master #4 PASS ok
+kukirin-g2-master #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+kukirin-g2-master #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+kukirin-g2-master #7 WARN basse définition · cadrage serré
+kukirin-g2-master #8 PASS ok
+kukirin-g2-master #9 PASS ok
+kukirin-g2-max-2026 #0 WARN basse définition
+kukirin-g2-max-2026 #1 WARN basse définition
+kukirin-g2-max-2026 #2 WARN basse définition
+kukirin-g2-max-2026 #3 PASS ok
+kukirin-g2-max-2026 #4 PASS ok
+kukirin-g2-max-2026 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g2-max-2026 #6 PASS ok
+kukirin-g2-max-2026 #7 PASS ok
+kukirin-g2-max-2026 #8 PASS ok
+kukirin-g2-max-2026 #9 WARN cadrage serré
+kukirin-g2-ultra #0 WARN basse définition
+kukirin-g2-ultra #1 WARN basse définition
+kukirin-g2-ultra #2 WARN basse définition
+kukirin-g2-ultra #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g2-ultra #4 FAIL détourage sale / résidu de décor
+kukirin-g2-ultra #5 WARN cadrage serré
+kukirin-g2-ultra #6 PASS ok
+kukirin-g2-ultra #7 PASS ok
+kukirin-g2-ultra #8 PASS ok
+kukirin-g2-ultra #9 WARN basse définition
+kukirin-g3 #0 PASS ok
+kukirin-g3 #1 WARN basse définition
+kukirin-g3 #2 WARN cadrage serré
+kukirin-g3 #3 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g3 #4 WARN cadrage serré
+kukirin-g3 #5 WARN basse définition
+kukirin-g3 #6 WARN basse définition · cadrage serré
+kukirin-g3 #7 WARN cadrage serré
+kukirin-g3 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g3-adventurers #0 WARN basse définition
+kukirin-g3-adventurers #1 WARN basse définition
+kukirin-g3-adventurers #2 WARN basse définition
+kukirin-g3-adventurers #3 PASS ok
+kukirin-g3-adventurers #4 WARN basse définition
+kukirin-g3-adventurers #5 WARN cadrage serré
+kukirin-g3-adventurers #6 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g3-adventurers #7 WARN cadrage serré
+kukirin-g3-adventurers #8 WARN basse définition
+kukirin-g3-adventurers #9 WARN basse définition · cadrage serré
+kukirin-g3-pro #0 WARN basse définition
+kukirin-g3-pro #1 WARN basse définition
+kukirin-g3-pro #2 WARN basse définition
+kukirin-g3-pro #3 WARN basse définition · cadrage serré
+kukirin-g3-pro #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g3-pro #5 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g3-pro #6 PASS ok
+kukirin-g3-pro #7 WARN cadrage serré
+kukirin-g3-pro #8 PASS ok
+kukirin-g3-pro #9 PASS ok
+kukirin-g4 #0 PASS ok
+kukirin-g4 #1 PASS ok
+kukirin-g4 #2 WARN basse définition · cadrage serré
+kukirin-g4 #3 PASS ok
+kukirin-g4 #4 FAIL détourage sale / résidu de décor
+kukirin-g4 #5 PASS ok
+kukirin-g4 #6 PASS ok
+kukirin-g4 #7 PASS ok
+kukirin-g4-2026 #0 WARN basse définition
+kukirin-g4-2026 #1 WARN basse définition
+kukirin-g4-2026 #2 WARN basse définition
+kukirin-g4-2026 #3 PASS ok
+kukirin-g4-2026 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+kukirin-g4-2026 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-2026 #6 PASS ok
+kukirin-g4-2026 #7 WARN basse définition
+kukirin-g4-2026 #8 WARN basse définition · cadrage serré
+kukirin-g4-max #0 WARN basse définition
+kukirin-g4-max #1 WARN basse définition
+kukirin-g4-max #2 WARN basse définition
+kukirin-g4-max #3 PASS ok
+kukirin-g4-max #4 PASS ok
+kukirin-g4-max #5 PASS ok
+kukirin-g4-max #6 PASS ok
+kukirin-g4-max #7 PASS ok
+kukirin-g4-max #8 WARN basse définition
+kukirin-g4-max #9 PASS ok
+kukirin-g4-ultra #0 WARN cadrage serré
+kukirin-g4-ultra #1 PASS ok
+kukirin-g4-ultra #2 PASS ok
+kukirin-g4-ultra #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #4 PASS ok
+kukirin-g4-ultra #5 PASS ok
+kukirin-g4-ultra #6 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g4-ultra #7 WARN cadrage serré
+kukirin-g4-ultra #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #9 WARN cadrage serré
+kukirin-m4-max #0 WARN basse définition
+kukirin-m4-max #1 WARN cadrage serré
+kukirin-m4-max #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-m4-max #3 PASS ok
+kukirin-m4-max #4 WARN basse définition
+kukirin-m4-max #5 PASS ok
+kukirin-m4-max #6 WARN cadrage serré
+kukirin-m4-max #7 FAIL détourage sale / résidu de décor
+kukirin-m4-max #8 PASS ok
+kukirin-s1-pro #0 PASS ok
+kukirin-s1-pro #1 PASS ok
+kukirin-s1-pro #2 PASS ok
+kukirin-s1-pro #3 PASS ok
+kukirin-s1-pro #4 PASS ok
+kukirin-s1-pro #5 PASS ok
+kukirin-s1-pro #6 PASS ok
+kukirin-s1-pro #7 WARN basse définition · cadrage serré
+kukirin-s1-pro #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+langfeite-c1 #0 FAIL détourage sale / résidu de décor · basse définition
+langfeite-c1 #1 WARN basse définition
+langfeite-c1 #2 PASS ok
+langfeite-c1 #3 PASS ok
+langfeite-c1 #4 PASS ok
+langfeite-c1 #5 WARN cadrage serré
+langfeite-c1 #6 PASS ok
+langfeite-c1 #7 PASS ok
+langfeite-c1 #8 PASS ok
+langfeite-c1 #9 WARN cadrage serré
+langfeite-c5 #0 PASS ok
+langfeite-c5 #1 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+langfeite-c5 #2 FAIL détourage sale / résidu de décor · basse définition
+langfeite-c5 #3 WARN basse définition
+langfeite-c5 #4 FAIL détourage sale / résidu de décor · basse définition
+langfeite-c5 #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-c5 #6 WARN basse définition · cadrage serré
+langfeite-c5 #7 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-coupe #0 PASS ok
+langfeite-coupe #1 PASS ok
+langfeite-coupe #2 PASS ok
+langfeite-coupe #3 PASS ok
+langfeite-coupe #4 PASS ok
+langfeite-coupe #5 PASS ok
+langfeite-coupe #6 PASS ok
+langfeite-coupe #7 PASS ok
+langfeite-coupe #8 PASS ok
+langfeite-gt2-mini #0 PASS ok
+langfeite-gt2-mini #1 WARN basse définition
+langfeite-gt2-mini #2 PASS ok
+langfeite-gt2-mini #3 PASS ok
+langfeite-gt2-mini #4 PASS ok
+langfeite-gt2-mini #5 WARN cadrage serré
+langfeite-gt2-mini #6 PASS ok
+langfeite-gt2-mini #7 PASS ok
+langfeite-gt2-mini #8 PASS ok
+langfeite-gt2-mini #9 WARN basse définition
+langfeite-gt2-rs #0 PASS ok
+langfeite-gt2-rs #1 WARN basse définition · cadrage serré
+langfeite-gt2-rs #2 PASS ok
+langfeite-gt2-rs #3 WARN cadrage serré
+langfeite-gt2-rs #4 WARN basse définition
+langfeite-gt2-rs #5 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+langfeite-gt2-rs #6 PASS ok
+langfeite-gt2-rs #7 WARN cadrage serré
+langfeite-gt2-rs #8 WARN cadrage serré
+langfeite-gt2-rs #9 WARN cadrage serré
+langfeite-h1 #0 PASS ok
+langfeite-h1 #1 PASS ok
+langfeite-h1 #2 WARN basse définition
+langfeite-h1 #3 PASS ok
+langfeite-h1 #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-h1 #5 FAIL détourage sale / résidu de décor · basse définition
+langfeite-h1 #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-h1 #7 WARN basse définition · cadrage serré
+langfeite-h1 #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-roadster #0 PASS ok
+langfeite-roadster #1 PASS ok
+langfeite-roadster #2 PASS ok
+langfeite-roadster #3 WARN basse définition · cadrage serré
+langfeite-roadster #4 WARN basse définition · cadrage serré
+langfeite-roadster #5 PASS ok
+langfeite-roadster #6 WARN cadrage serré
+langfeite-roadster #7 PASS ok
+langfeite-roadster #8 WARN cadrage serré
+::notice title=photos lot11 (dry)::198 candidates · PASS 90 · WARN 76 · FAIL 32 · ERREUR 0
