@@ -1,0 +1,73 @@
+{
+ "lot": "r5a",
+ "models": [
+  {
+   "id": "b25ad4ec-3fe8-402d-ae66-aeafca2f9709",
+   "slug": "isinwheel-gt1-dual",
+   "name": "Isinwheel GT1 Dual",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/71MilUJyCBL._AC_SL1500_.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/GT1_DUAL_2.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/29_a6289eff-4cfc-46f0-a341-805e2887b215.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/33_eda88a5d-0b06-4e7c-8d47-fa6674cee37d.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/41.png",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/37.png",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/1_8cb31b05-2aa0-4dd4-860d-f255e59a7494.png",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/2_5b56e13d-9b5b-4635-9eeb-2600b0ceb888.png"
+   ]
+  },
+  {
+   "id": "85908cbf-4635-4e84-88e0-6bf166bd7648",
+   "slug": "isinwheel-s9-max",
+   "name": "Isinwheel S9 Max",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792003855612_0.png",
+    "https://www.maxblinker.com/14013-panda_thickbox_default/isinwheel-s9-max.jpg",
+    "https://www.maxblinker.com/14004-panda_thickbox_default/isinwheel-s9-max.jpg",
+    "https://www.maxblinker.com/14005-panda_thickbox_default/isinwheel-s9-max.jpg",
+    "https://www.maxblinker.com/14006-panda_thickbox_default/isinwheel-s9-max.jpg",
+    "https://www.maxblinker.com/14007-panda_thickbox_default/isinwheel-s9-max.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_8.jpg"
+   ]
+  },
+  {
+   "id": "5a943837-6252-4526-9954-5c937936b032",
+   "slug": "isinwheel-x3-pro",
+   "name": "Isinwheel X3 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/71Y50tSOWIL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71WTN4-43QL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/514sqxZTNiL._AC_SL1500_.jpg",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/071500x1500_5f35394c-856b-438f-ab4f-0d3cf406acc1.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/081500x1500_a75adba8-7470-46f8-b708-fae060fed1f6.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/01.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/b76b6ca94dbc1d747bc05b3a5635fdec_a73ff6ac-6c16-43d9-bab0-89f830428c31.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/ba0f051733a6565eb2b06b86904175ef_afc10487-4813-422a-80ba-dc2082d9af2e.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/1_1_6312fb6a-98f4-4e52-8c54-becd696a59ad.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/1_9_516d5e51-84c2-4fbe-b2c1-5b9e96fbcef3.webp"
+   ]
+  },
+  {
+   "id": "91214a2e-16e0-42d9-92ab-0f40a84c657b",
+   "slug": "langfeite-c5",
+   "name": "Langfeite C5",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/91214a2e-16e0-42d9-92ab-0f40a84c657b/1792166750459_0.png",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507230.jpg",
+    "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/Langfeite-C5_01.png",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507232.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507234.jpg",
+    "https://storage.googleapis.com/fohzshop.appspot.com/products/d24aaa8a-be38-494b-a0cd-feb646ed1dae/1770988507235.jpg",
+    "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_002-scaled.jpg",
+    "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_003.jpg",
+    "https://kiwihoverboard.co.nz/wp-content/uploads/2025/07/C5_004.jpg"
+   ]
+  }
+ ]
+}

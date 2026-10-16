@@ -1,2 +1,1 @@
-write lot08
-write lot11
+dry r5a
