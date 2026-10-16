@@ -37,7 +37,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const CLOSEUP_OK = new Set(['produit coupé / gros plan', 'cadrage serré']);
 
 function download(url) {
-  const buf = execFileSync('curl', ['-s', '-L', '--max-time', '40', '-A', UA, '-H', 'Accept: image/avif,image/webp,image/*,*/*', url], { maxBuffer: 64 * 1024 * 1024 });
+  const buf = execFileSync('curl', ['-s', '-L', '--max-time', '40', '-A', UA, '-H', 'Accept: image/webp,image/jpeg,image/png,image/*;q=0.8,*/*;q=0.5', url], { maxBuffer: 64 * 1024 * 1024 });
   if (!buf || buf.length < 2000) throw new Error('téléchargement vide');
   return buf;
 }

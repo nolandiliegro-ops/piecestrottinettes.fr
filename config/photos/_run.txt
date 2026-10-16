@@ -1,3 +1,1 @@
-dry lot21
-dry lot22
-dry lot23
+write lot01
