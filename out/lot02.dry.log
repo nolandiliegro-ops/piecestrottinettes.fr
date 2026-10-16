@@ -1,0 +1,119 @@
+cecotec-bongo-d20 #0 PASS ok
+cecotec-bongo-d20 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d20 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d20 #3 PASS ok
+cecotec-bongo-d20 #4 FAIL détourage sale / résidu de décor · basse définition
+cecotec-bongo-d20 #5 FAIL détourage sale / résidu de décor
+cecotec-bongo-d20 #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+cecotec-bongo-d20 #7 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+cecotec-bongo-d20 #8 WARN cadrage serré
+cecotec-bongo-d20 #9 WARN cadrage serré
+cecotec-bongo-d20-xl-connected #0 PASS ok
+cecotec-bongo-d20-xl-connected #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d20-xl-connected #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d20-xl-connected #3 PASS ok
+cecotec-bongo-d20-xl-connected #4 WARN cadrage serré
+cecotec-bongo-d20-xl-connected #5 PASS ok
+cecotec-bongo-d20-xl-connected #6 PASS ok
+cecotec-bongo-d20-xl-connected #7 WARN basse définition · cadrage serré
+cecotec-bongo-d20-xl-connected #8 WARN cadrage serré
+cecotec-bongo-d20-xl-connected #9 WARN cadrage serré
+cecotec-bongo-d20e-connected #0 PASS ok
+cecotec-bongo-d20e-connected #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d20e-connected #2 WARN cadrage serré
+cecotec-bongo-d20e-connected #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d20e-connected #4 PASS ok
+cecotec-bongo-d20e-connected #5 WARN cadrage serré
+cecotec-bongo-d20e-connected #6 PASS ok
+cecotec-bongo-d20e-connected #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d20e-connected #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d20e-connected #9 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d30 #0 PASS ok
+cecotec-bongo-d30 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d30 #2 WARN cadrage serré
+cecotec-bongo-d30 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d30 #4 PASS ok
+cecotec-bongo-d30 #5 WARN cadrage serré
+cecotec-bongo-d30 #6 PASS ok
+cecotec-bongo-d30 #7 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-d30 #8 WARN basse définition · cadrage serré
+cecotec-bongo-d30 #9 WARN basse définition · cadrage serré
+cecotec-bongo-d30-xl-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d30-xl-connected #1 PASS ok
+cecotec-bongo-d30-xl-connected #2 WARN cadrage serré
+cecotec-bongo-d30-xl-connected #3 PASS ok
+cecotec-bongo-d30-xl-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-d30-xl-connected #5 PASS ok
+cecotec-bongo-d30-xl-connected #6 WARN cadrage serré
+cecotec-bongo-d30-xl-connected #7 WARN basse définition · cadrage serré
+cecotec-bongo-d30-xl-connected #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-d30-xl-connected #9 PASS ok
+cecotec-bongo-doble-y85-2x2-xxl-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-doble-y85-2x2-xxl-connected #1 PASS ok
+cecotec-bongo-doble-y85-2x2-xxl-connected #2 PASS ok
+cecotec-bongo-doble-y85-2x2-xxl-connected #3 WARN cadrage serré
+cecotec-bongo-doble-y85-2x2-xxl-connected #4 WARN basse définition
+cecotec-bongo-doble-y85-2x2-xxl-connected #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-doble-y85-2x2-xxl-connected #6 WARN basse définition
+cecotec-bongo-doble-y85-2x2-xxl-connected #7 WARN basse définition · cadrage serré
+cecotec-bongo-doble-y85-2x2-xxl-connected #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-doble-y85-2x2-xxl-connected #9 PASS ok
+cecotec-bongo-serie-a-advance-connected #0 WARN basse définition
+cecotec-bongo-serie-a-advance-connected #1 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-advance-connected #2 WARN basse définition
+cecotec-bongo-serie-a-advance-connected #3 FAIL détourage sale / résidu de décor · basse définition
+cecotec-bongo-serie-a-advance-connected #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+cecotec-bongo-serie-a-advance-connected #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+cecotec-bongo-serie-a-advance-connected #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-advance-connected #7 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+cecotec-bongo-serie-a-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-connected #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-connected #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-connected #3 PASS ok
+cecotec-bongo-serie-a-connected #4 WARN basse définition
+cecotec-bongo-serie-a-connected #5 PASS ok
+cecotec-bongo-serie-a-connected #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-serie-a-connected #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-connected #8 PASS ok
+cecotec-bongo-serie-a-connected #9 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m20 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m20 #1 PASS ok
+cecotec-bongo-serie-m20 #2 FAIL détourage sale / résidu de décor
+cecotec-bongo-serie-m20 #3 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m20 #4 PASS ok
+cecotec-bongo-serie-m20 #5 PASS ok
+cecotec-bongo-serie-m20 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-serie-m20 #7 WARN couleurs vives 30 % (visuel marketing ?)
+cecotec-bongo-serie-m20 #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m20 #9 PASS ok
+cecotec-bongo-serie-m30-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m30-connected #1 PASS ok
+cecotec-bongo-serie-m30-connected #2 PASS ok
+cecotec-bongo-serie-m30-connected #3 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m30-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m30-connected #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m30-connected #6 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m30-connected #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-m30-connected #8 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+cecotec-bongo-serie-m30-connected #9 PASS ok
+cecotec-bongo-v55-2x2-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-v55-2x2-connected #1 PASS ok
+cecotec-bongo-v55-2x2-connected #2 PASS ok
+cecotec-bongo-v55-2x2-connected #3 PASS ok
+cecotec-bongo-v55-2x2-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-v55-2x2-connected #5 WARN basse définition · cadrage serré
+cecotec-bongo-v55-2x2-connected #6 WARN basse définition · cadrage serré
+cecotec-bongo-v55-2x2-connected #7 PASS ok
+cecotec-bongo-v55-2x2-connected #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-v55-2x2-connected #9 PASS ok
+cecotec-bongo-v70-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-v70-connected #1 PASS ok
+cecotec-bongo-v70-connected #2 PASS ok
+cecotec-bongo-v70-connected #3 PASS ok
+cecotec-bongo-v70-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-v70-connected #5 WARN basse définition · cadrage serré
+cecotec-bongo-v70-connected #6 PASS ok
+cecotec-bongo-v70-connected #7 WARN cadrage serré
+cecotec-bongo-v70-connected #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-v70-connected #9 WARN cadrage serré
+::notice title=photos lot02 (dry)::118 candidates · PASS 38 · WARN 36 · FAIL 44 · ERREUR 0

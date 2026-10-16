@@ -1,0 +1,2636 @@
+[
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165145969_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.757
+  },
+  "size": [
+   988,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165139469_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.422,
+   "vivid": 0.02,
+   "fill": 0.807
+  },
+  "size": [
+   1235,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_xbi1hu_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.383,
+   "vivid": 0.019,
+   "fill": 0.794
+  },
+  "size": [
+   1234,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_njwdj9_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.764
+  },
+  "size": [
+   986,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_7ri7od_2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.777
+  },
+  "size": [
+   1080,
+   524
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_tykotl_3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.618
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_ovbrzb_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.248,
+   "fill": 0.725
+  },
+  "size": [
+   196,
+   461
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_6vbvl6_5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.023,
+   "vivid": 0.025,
+   "fill": 0.794
+  },
+  "size": [
+   785,
+   968
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 8,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_r58kgf_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.802
+  },
+  "size": [
+   994,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 9,
+  "url": "https://media.cecotec.cloud/07104/bongo-serie-d20_0f890u_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.716
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45239d1f-2327-4fde-9a8b-672f592bc07e/1792165194159_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.772
+  },
+  "size": [
+   1754,
+   1716
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45239d1f-2327-4fde-9a8b-672f592bc07e/1792165188562_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.29,
+   "vivid": 0.033,
+   "fill": 0.804
+  },
+  "size": [
+   1357,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_lnqnon_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.261,
+   "vivid": 0.042,
+   "fill": 0.781
+  },
+  "size": [
+   1357,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_6f4ssc_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.825
+  },
+  "size": [
+   1682,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_nqy7k6_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.814
+  },
+  "size": [
+   1758,
+   1495
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_bndq2q_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.757
+  },
+  "size": [
+   933,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_m5bx0i_5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.223
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_a132f6_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.481
+  },
+  "size": [
+   497,
+   927
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 8,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_bqebyv_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.814
+  },
+  "size": [
+   724,
+   1021
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20-xl-connected",
+  "i": 9,
+  "url": "https://media.cecotec.cloud/07356/bongo-d20-xl-connected_rhqo8a_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.671
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165176424_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.826
+  },
+  "size": [
+   1686,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165170575_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.332,
+   "vivid": 0.012,
+   "fill": 0.812
+  },
+  "size": [
+   1461,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/44b140cb-0ec8-48e5-89db-cfc3518d3ac6/1792165182579_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.827
+  },
+  "size": [
+   1537,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_3y3lmb_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.299,
+   "vivid": 0.012,
+   "fill": 0.812
+  },
+  "size": [
+   1462,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_fxxkmk_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.839
+  },
+  "size": [
+   1682,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_01gzsv_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.831
+  },
+  "size": [
+   1534,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_4gemgc_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.78
+  },
+  "size": [
+   1042,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_jac5i3_5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.174,
+   "vivid": 0.245,
+   "fill": 0.754
+  },
+  "size": [
+   937,
+   1129
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 8,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_q1nb2o_6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.357,
+   "vivid": 0.282,
+   "fill": 0.844
+  },
+  "size": [
+   1088,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20e-connected",
+  "i": 9,
+  "url": "https://media.cecotec.cloud/a01_eu01_101738/bongo-d20e-connected_el3tpo_7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.293,
+   "vivid": 0.269,
+   "fill": 0.845
+  },
+  "size": [
+   1140,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165157816_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.845
+  },
+  "size": [
+   1692,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165151552_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.419,
+   "vivid": 0.013,
+   "fill": 0.591
+  },
+  "size": [
+   1504,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/621c268c-9adc-46a9-a8f4-388cbc7a1559/1792165164794_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.813
+  },
+  "size": [
+   1756,
+   1478
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_tox5sf_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.385,
+   "vivid": 0.017,
+   "fill": 0.79
+  },
+  "size": [
+   1283,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_8pvn4f_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.835
+  },
+  "size": [
+   1691,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_61fwbg_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.813
+  },
+  "size": [
+   1756,
+   1479
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_9xecjc_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.771
+  },
+  "size": [
+   992,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_c1xnhr_5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.138,
+   "vivid": 0.047,
+   "fill": 0.466
+  },
+  "size": [
+   1080,
+   552
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 8,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_z7l3qi_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.753
+  },
+  "size": [
+   352,
+   803
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30",
+  "i": 9,
+  "url": "https://media.cecotec.cloud/07311/bongo-d30_nhrd71_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.729
+  },
+  "size": [
+   243,
+   590
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_khqvxa_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.255,
+   "vivid": 0.048,
+   "fill": 0.779
+  },
+  "size": [
+   1340,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_7kwwsz_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.827
+  },
+  "size": [
+   1728,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_cucgov_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.814
+  },
+  "size": [
+   1758,
+   1494
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_sv1074_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.765
+  },
+  "size": [
+   995,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_l59q01_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.783
+  },
+  "size": [
+   428,
+   772
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_78cij6_6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.326
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_g9f0jd_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.552
+  },
+  "size": [
+   1006,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_wtjxg0_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.171,
+   "fill": 0.738
+  },
+  "size": [
+   402,
+   913
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/580e8751-4a9d-4a12-b441-4646806251be/1792165200509_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.283,
+   "vivid": 0.039,
+   "fill": 0.803
+  },
+  "size": [
+   1345,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d30-xl-connected",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/580e8751-4a9d-4a12-b441-4646806251be/1792165206408_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.827
+  },
+  "size": [
+   1727,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_2e457r_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.288,
+   "vivid": 0.034,
+   "fill": 0.796
+  },
+  "size": [
+   1267,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0xk2yj_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.835
+  },
+  "size": [
+   1750,
+   1701
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_fx0f0q_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.797
+  },
+  "size": [
+   1268,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0r7tcq_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.123,
+   "fill": 0.815
+  },
+  "size": [
+   608,
+   868
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_xs8fve_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.187,
+   "fill": 0.81
+  },
+  "size": [
+   450,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_ht91u9_6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.32,
+   "vivid": 0.124,
+   "fill": 0.688
+  },
+  "size": [
+   977,
+   1004
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_1awp69_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.114,
+   "fill": 0.807
+  },
+  "size": [
+   519,
+   767
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_bd5vqv_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.094,
+   "fill": 0.741
+  },
+  "size": [
+   394,
+   763
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66a99376-6188-4c90-9c11-5cc93a7d65d3/1792165237166_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.299,
+   "vivid": 0.032,
+   "fill": 0.796
+  },
+  "size": [
+   1267,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/66a99376-6188-4c90-9c11-5cc93a7d65d3/1792165243072_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.826
+  },
+  "size": [
+   1750,
+   1705
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d/1791685878034_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.806
+  },
+  "size": [
+   361,
+   558
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 1,
+  "url": "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.313,
+   "vivid": 0.026,
+   "fill": 0.799
+  },
+  "size": [
+   370,
+   529
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 2,
+  "url": "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.517
+  },
+  "size": [
+   572,
+   572
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 3,
+  "url": "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.701
+  },
+  "size": [
+   417,
+   572
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 4,
+  "url": "https://www.lacasadeloutlet.es/wp-content/uploads/2021/01/Cecotec-Bongo-A-Advance-Connected-Patinete-Electrico-4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.663
+  },
+  "size": [
+   572,
+   572
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/91wzn6KFNiL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.315,
+   "vivid": 0,
+   "fill": 0.411
+  },
+  "size": [
+   1620,
+   1245
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/91EF0Z1lloL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.094,
+   "vivid": 0.132,
+   "fill": 0.728
+  },
+  "size": [
+   1504,
+   1061
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/C1KJ5Z50C8S._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.02,
+   "vivid": 0.001,
+   "fill": 0.809
+  },
+  "size": [
+   1033,
+   1240
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d34a97a-ae05-4c2b-8cbe-04ae616ba069/1791684998118_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.345,
+   "vivid": 0.009,
+   "fill": 0.719
+  },
+  "size": [
+   1376,
+   1762
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4d34a97a-ae05-4c2b-8cbe-04ae616ba069/1791997488817_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.327,
+   "vivid": 0.034,
+   "fill": 0.788
+  },
+  "size": [
+   754,
+   1065
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_xohdhm_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.328,
+   "vivid": 0.012,
+   "fill": 0.76
+  },
+  "size": [
+   1282,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_238swc_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.369
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_fifeuu_19.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.266
+  },
+  "size": [
+   1003,
+   596
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_55ef7q_20.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.619
+  },
+  "size": [
+   691,
+   954
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_pwe4e3_20.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.122,
+   "vivid": 0,
+   "fill": 0.535
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_fptp30_21.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.147,
+   "vivid": 0.052,
+   "fill": 0.384
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 8,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_p9vlla_21.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.724
+  },
+  "size": [
+   609,
+   995
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-connected",
+  "i": 9,
+  "url": "https://media.cecotec.cloud/07026/bongo-serie-a-connected_oizals_22.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.786
+  },
+  "size": [
+   504,
+   914
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_srk00z_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.377,
+   "vivid": 0.011,
+   "fill": 0.809
+  },
+  "size": [
+   1296,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_2doaza_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.829
+  },
+  "size": [
+   1672,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_7hww4b_3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.638
+  },
+  "size": [
+   1764,
+   1272
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_4rwoya_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.265,
+   "fill": 0.571
+  },
+  "size": [
+   424,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_khi00x_5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.135
+  },
+  "size": [
+   691,
+   799
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_1nl8at_6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.262,
+   "fill": 0.189
+  },
+  "size": [
+   1056,
+   1018
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_78zwib_7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.34,
+   "vivid": 0.298,
+   "fill": 0.719
+  },
+  "size": [
+   1043,
+   623
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07105/bongo-serie-m20_kg0k04_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 30 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 30 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.305,
+   "fill": 0.366
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a92c68ee-06d4-4f4b-9852-d6562ea01551/1792165212308_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.417,
+   "vivid": 0.009,
+   "fill": 0.821
+  },
+  "size": [
+   1300,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a92c68ee-06d4-4f4b-9852-d6562ea01551/1792165218699_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.829
+  },
+  "size": [
+   1674,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_bzicv0_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.244,
+   "vivid": 0.073,
+   "fill": 0.789
+  },
+  "size": [
+   1378,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_kbx8mo_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.825
+  },
+  "size": [
+   1683,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_rb3d1p_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.802
+  },
+  "size": [
+   1764,
+   1336
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xfbuu2_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.738
+  },
+  "size": [
+   316,
+   738
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_7qhz5t_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.118,
+   "fill": 0.782
+  },
+  "size": [
+   411,
+   663
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_dxbe3o_6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.303,
+   "vivid": 0.15,
+   "fill": 0.754
+  },
+  "size": [
+   848,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uguts9_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.688
+  },
+  "size": [
+   136,
+   399
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xq250f_8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.035,
+   "vivid": 0.069,
+   "fill": 0.382
+  },
+  "size": [
+   1764,
+   1763
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/623b64ff-6779-4823-8442-682dcdf0e729/1792165224984_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.022,
+   "vivid": 0.093,
+   "fill": 0.689
+  },
+  "size": [
+   1459,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/623b64ff-6779-4823-8442-682dcdf0e729/1792165231376_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.825
+  },
+  "size": [
+   1684,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_lrrz8w_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.244,
+   "vivid": 0.08,
+   "fill": 0.796
+  },
+  "size": [
+   1475,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_5d5c1i_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.189,
+   "fill": 0.83
+  },
+  "size": [
+   1695,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_et1c55_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.769
+  },
+  "size": [
+   1746,
+   962
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_6uf9q6_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.137,
+   "fill": 0.784
+  },
+  "size": [
+   1137,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_700s3k_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.166,
+   "fill": 0.786
+  },
+  "size": [
+   391,
+   667
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_8gjukk_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.166,
+   "fill": 0.799
+  },
+  "size": [
+   577,
+   945
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_u6rypp_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.716
+  },
+  "size": [
+   326,
+   901
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07363/bongo-v55-2x2-connected_j64y1u_8.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.281
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2b76d7a0-a50e-4944-9af6-6b6cae213b59/1792165255329_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.269,
+   "vivid": 0.072,
+   "fill": 0.813
+  },
+  "size": [
+   1478,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v55-2x2-connected",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2b76d7a0-a50e-4944-9af6-6b6cae213b59/1792165267007_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.176,
+   "fill": 0.84
+  },
+  "size": [
+   1695,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_vvu9ss_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.243,
+   "vivid": 0.09,
+   "fill": 0.791
+  },
+  "size": [
+   1400,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_oo4rqh_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.155,
+   "fill": 0.761
+  },
+  "size": [
+   1746,
+   962
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_kfugbx_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.155,
+   "fill": 0.784
+  },
+  "size": [
+   1134,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_9bhxg6_4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.358
+  },
+  "size": [
+   1049,
+   1026
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_drpzla_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.168,
+   "fill": 0.691
+  },
+  "size": [
+   454,
+   977
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_b7vjl5_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.725
+  },
+  "size": [
+   283,
+   731
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_jmpzep_7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.131,
+   "fill": 0.179
+  },
+  "size": [
+   1008,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 7,
+  "url": "https://media.cecotec.cloud/07362/bongo-v70-connected_y16cri_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.608
+  },
+  "size": [
+   813,
+   923
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/067d9097-1e37-4dd4-a941-108f6d5af16f/1792165274280_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.27,
+   "vivid": 0.081,
+   "fill": 0.692
+  },
+  "size": [
+   1503,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-v70-connected",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/067d9097-1e37-4dd4-a941-108f6d5af16f/1792165280475_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.145,
+   "fill": 0.762
+  },
+  "size": [
+   1748,
+   968
+  ],
+  "error": null
+ }
+]
