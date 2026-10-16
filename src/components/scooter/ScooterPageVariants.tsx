@@ -515,7 +515,8 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           <div>
             <BrandLock scooter={scooter} accent={accent} />
             <div className="mt-2"><Title name={scooter.name} italic /></div>
-            <div className="mt-5 inline-flex rounded-full p-1 bg-white border border-[#ECE7DD]" role="tablist">
+            {/* 16/10 : sur Pit-stand, plus d'onglets — Nolan ne trouvait pas la description cachée derrière « Présentation ». */}
+            {!gammeBelow && <div className="mt-5 inline-flex rounded-full p-1 bg-white border border-[#ECE7DD]" role="tablist">
               {tabs.map((t) => (
                 <button key={t.k} type="button" role="tab" aria-selected={tab === t.k} onClick={() => setTab(t.k)}
                   className="min-h-[44px] px-4 rounded-full text-sm font-bold uppercase tracking-wider transition-colors"
@@ -523,10 +524,10 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
                   {t.label}
                 </button>
               ))}
-            </div>
-            <div className="mt-5 min-h-[180px]">
+            </div>}
+            <div className={gammeBelow ? "mt-5" : "mt-5 min-h-[180px]"}>
               {(
-                <div className={tab === "fiche" ? "grid grid-cols-2 sm:grid-cols-3 gap-2" : "hidden"}>
+                <div className={tab === "fiche" || gammeBelow ? "grid grid-cols-2 sm:grid-cols-3 gap-2" : "hidden"}>
                   {specs.map((s) => (
                     <div key={s.key} className="rounded-xl bg-white border border-[#ECE7DD] px-3 py-2.5 relative overflow-hidden">
                       <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: accent }} />
@@ -536,13 +537,21 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
                   ))}
                 </div>
               )}
-              <div className={tab === "pres" ? "" : "hidden"}><Description text={scooter.description} clamp={false} /></div>
+              {!gammeBelow && <div className={tab === "pres" ? "" : "hidden"}><Description text={scooter.description} clamp={false} /></div>}
               {tab === "gamme" && <GammeThumbs models={gamme} current={scooter.slug} accent={accent} />}
             </div>
             <div className="mt-6"><RacingActions scooter={scooter} partsCount={partsCount} look={btnLook} accent={accent} /></div>
           </div>
         </div>
       </section>
+      {gammeBelow && scooter.description && (
+        <section className="px-4 py-8" style={{ backgroundColor: "#FAFAF8" }}>
+          <div className="mx-auto max-w-6xl grid lg:grid-cols-[260px_1fr] gap-3 lg:gap-10 border-t-2 pt-6" style={{ borderColor: CARBON }}>
+            <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>Présentation</h2>
+            <div className="max-w-3xl"><Description text={scooter.description} /></div>
+          </div>
+        </section>
+      )}
       {gammeBelow && gamme.length > 1 && (
         <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
           <div className="mx-auto max-w-6xl"><GammeHeader brand={brand} count={gamme.length} accent={accent} /><GammeSnap models={gamme} current={scooter.slug} accent={accent} /></div>
