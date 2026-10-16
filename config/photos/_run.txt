@@ -1,3 +1,1 @@
-write lot21
-write lot22
-write lot23
+dry r2a
