@@ -1,1 +1,2 @@
-write lot01
+write lot03
+write lot04
