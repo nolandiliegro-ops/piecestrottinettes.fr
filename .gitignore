@@ -49,3 +49,4 @@ dist-ssr
 scripts/session/
 scripts/data/_preview/
 .vscode/tasks.json
+out/

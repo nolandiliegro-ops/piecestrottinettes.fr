@@ -1,0 +1,56 @@
+{
+ "lot": "t01",
+ "models": [
+  {
+   "id": "52da403f-64c5-4f51-a3e9-e45c959f648e",
+   "slug": "cecotec-bongo-d20",
+   "name": "Cecotec Bongo D20",
+   "brand": "",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165145969_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52da403f-64c5-4f51-a3e9-e45c959f648e/1792165139469_0.png"
+   ]
+  },
+  {
+   "id": "6aa5337c-30db-4f32-bc81-ff33cf6a9fe5",
+   "slug": "kukirin-a1",
+   "name": "Kukirin A1",
+   "brand": "",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6aa5337c-30db-4f32-bc81-ff33cf6a9fe5/1791942611592_0.png"
+   ]
+  },
+  {
+   "id": "b24fdfb8-6136-4158-88cd-ff1cf18b22b3",
+   "slug": "kukirin-g2-master",
+   "name": "Kukirin G2 Master",
+   "brand": "",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1778550882038_2.png"
+   ]
+  },
+  {
+   "id": "f2059424-c4c6-44e8-8628-136555a8120b",
+   "slug": "kukirin-g4-ultra",
+   "name": "Kukirin G4 Ultra",
+   "brand": "",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166697967_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166705147_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792166712451_0.png"
+   ]
+  },
+  {
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "slug": "yeep-me-85a-evo",
+   "name": "Yeep.me 85a Evo",
+   "brand": "",
+   "candidates": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168438076_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792168444137_0.png"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+name: Photos galerie (détourage + garde-fou)
+
+# 16/10/2026 : galeries de 3+ photos détourées par trottinette, sans PC.
+# Modifier config/photos/_run.txt = UN run. Une ligne par lot : « dry lot01 » ou « write lot01 ».
+#  - dry   : détourage + contrôle de chaque candidate → planches JPEG + report.json sur la branche donnees-photos
+#            (out/<lot>/), AUCUNE écriture en base. Claude relit les planches avant tout write.
+#  - write : n'envoie que les photos choisies dans config/photos/<lot>.accept.json, après un 2e passage du garde-fou.
+# Le .env est écrit sur le runner à partir des secrets, jamais commité, jamais affiché.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/photos/_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photos-galerie
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances (détourage)
+        run: npm install --prefix scripts --no-audit --no-fund
+      - name: Fichier .env du runner (mode write seulement)
+        env:
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+        run: |
+          if grep -q '^write ' config/photos/_run.txt; then
+            if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=photos::secret absent"; exit 1; fi
+            KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
+            umask 077
+            printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
+          fi
+      - name: Lots
+        shell: bash
+        run: |
+          set +e
+          export LC_ALL=C.UTF-8
+          mkdir -p out
+          while read -r mode lot; do
+            [ -z "$lot" ] && continue
+            if [ "$mode" = "write" ]; then
+              node scripts/photos-galerie.mjs --write --file "config/photos/$lot.json" --accept "config/photos/$lot.accept.json" > "out/$lot.$mode.log" 2>&1
+            else
+              node scripts/photos-galerie.mjs --dry --file "config/photos/$lot.json" > "out/$lot.$mode.log" 2>&1
+            fi
+            echo "::notice title=$lot $mode::EXIT=$?"
+            grep '^::' "out/$lot.$mode.log" | grep -v -i 'secret\|bearer\|eyJ' | head -60
+            tail -n 3 "out/$lot.$mode.log" | grep -v -i 'secret\|bearer\|eyJ' | sed "s/^/::warning title=$lot fin::/"
+          done < config/photos/_run.txt
+      - name: Nettoyage du secret
+        if: always()
+        run: rm -f .env
+      - name: Résultats → branche donnees-photos
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "photos-bot"
+          git config user.email "photos-bot@users.noreply.github.com"
+          mv out /tmp/out
+          git fetch origin donnees-photos || true
+          if git show-ref --quiet refs/remotes/origin/donnees-photos; then git checkout -B donnees-photos origin/donnees-photos; else git checkout --orphan donnees-photos && git rm -rf -q . ; fi
+          mkdir -p out && cp -r /tmp/out/. out/
+          git add out
+          git commit -q -m "photos : $(tr '\n' ' ' < /dev/null)$(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-photos && break; git pull --rebase origin donnees-photos; done

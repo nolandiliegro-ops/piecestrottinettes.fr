@@ -15,7 +15,7 @@ import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
 import sharp from 'sharp';
 import { detoure } from './lib/detoure.js';
-import { photoQc } from './lib/photo-qc.js';
+import { photoQcAll } from './lib/photo-qc.js';
 
 // minimotors (Odoo) bloque node/undici au niveau WAF (403 sur l'endpoint image).
 // On pre-telecharge la source via curl (qui passe le WAF) puis on passe le Buffer
@@ -77,7 +77,7 @@ function loadEnv() {
 // reset:true sur la 1ère image réellement postée (repart d'un tableau vide),
 // reset:false ensuite (append). Une image qui échoue est comptée en erreur et la
 // boucle continue. Aucun fallback Remove.bg, aucun envoi de source_urls.
-// Le verdict photoQc est affiché avant chaque POST, à titre d'information (aucun blocage).
+// Le verdict photoQcAll est affiché avant chaque POST ; depuis le 16/10 un FAIL BLOQUE l'envoi (garde-fou).
 // DRY_RUN : détoure + QC + PNG dans _preview/, lignes dans `report`, AUCUN fetch.
 //
 // Retour : { ok, processed:perImgOk, failed:perImgErr, errors:[...] }
@@ -93,8 +93,17 @@ async function processImages(entityId, sourceUrls, altBase, secret, url, slug, r
     try {
       const srcBuf = await curlDownload(srcUrl); // curl passe le WAF minimotors → Buffer source
       const buf = await detoure(srcBuf);   // LOCAL @imgly détoure les bytes (aucun fetch interne)
-      const qc = await photoQc(buf);
+      const qc = await photoQcAll(buf);
       console.log(`      ${slug} #${i} ${qc.verdict}${qc.reasons.length ? ' ' + qc.reasons.join(', ') : ''}`);
+      // 16/10 GARDE-FOU : une photo FAIL n'est plus envoyée. Seule exception : un gros plan
+      // (« produit coupé », « cadrage serré ») en 2e position ou plus.
+      if (!DRY_RUN && qc.verdict === 'FAIL') {
+        const closeupOnly = qc.reasons.every((r) => r === 'produit coupé / gros plan' || r === 'cadrage serré' || r.startsWith('petit élément') || r.startsWith('couleurs') || r.startsWith('basse') || r.startsWith('produit minuscule'));
+        if (perImgOk === 0 || !closeupOnly || qc.plus.verdict === 'FAIL') {
+          perImgErr++; errors.push(`img ${i}: REFUSÉE par le garde-fou (${qc.reasons.join(', ')})`);
+          continue;
+        }
+      }
 
       if (DRY_RUN) {
         writeFileSync(resolve(PREVIEW_DIR, `${slug}__${i}.png`), buf);
