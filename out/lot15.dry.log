@@ -1,0 +1,187 @@
+punk-rebel #0 PASS ok
+punk-rebel #1 PASS ok
+punk-rebel #2 PASS ok
+punk-rebel #3 WARN cadrage serré
+punk-rebel #4 WARN cadrage serré
+punk-rebel #5 WARN cadrage serré
+punk-rebel #6 PASS ok
+punk-rebel #7 WARN cadrage serré
+punk-rebel #8 PASS ok
+punk-rebel #9 FAIL détourage sale / résidu de décor
+punk-rider #0 PASS ok
+punk-rider #1 WARN basse définition
+punk-rider #2 PASS ok
+punk-rider #3 PASS ok
+punk-rider #4 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rider #5 WARN basse définition
+punk-rider #6 FAIL détourage sale / résidu de décor
+punk-rider #7 WARN cadrage serré
+punk-rider #8 PASS ok
+punk-rider #9 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rider-pro #0 PASS ok
+punk-rider-pro #1 PASS ok
+punk-rider-pro #2 PASS ok
+punk-rider-pro #3 PASS ok
+punk-rider-pro #4 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rider-pro #5 WARN cadrage serré
+punk-rider-pro #6 WARN basse définition
+punk-rider-pro #7 WARN cadrage serré
+punk-rider-pro #8 WARN cadrage serré
+punk-rider-pro #9 FAIL détourage sale / résidu de décor · couleurs vives 31 % (visuel marketing ?)
+pure-air-6-pro-suspension #0 PASS ok
+pure-air-6-pro-suspension #1 PASS ok
+pure-air-6-pro-suspension #2 PASS ok
+pure-air-6-pro-suspension #3 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 33 % (visuel marketing ?)
+pure-air-6-pro-suspension #4 PASS ok
+pure-air-6-pro-suspension #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 32 % (visuel marketing ?)
+pure-air-6-pro-suspension #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-pro-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-pro-suspension #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-air-6-pro-suspension #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 44 % (visuel marketing ?)
+pure-air-6-suspension #0 PASS ok
+pure-air-6-suspension #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+pure-air-6-suspension #2 PASS ok
+pure-air-6-suspension #3 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 33 % (visuel marketing ?)
+pure-air-6-suspension #4 PASS ok
+pure-air-6-suspension #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 32 % (visuel marketing ?)
+pure-air-6-suspension #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-suspension #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-air-6-suspension #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 44 % (visuel marketing ?)
+pure-air-6-ultra-max-suspension #0 PASS ok
+pure-air-6-ultra-max-suspension #1 PASS ok
+pure-air-6-ultra-max-suspension #2 PASS ok
+pure-air-6-ultra-max-suspension #3 FAIL détourage sale / résidu de décor
+pure-air-6-ultra-max-suspension #4 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 58 % (visuel marketing ?)
+pure-air-6-ultra-max-suspension #5 PASS ok
+pure-air-6-ultra-max-suspension #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 31 % (visuel marketing ?)
+pure-air-6-ultra-max-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-ultra-max-suspension #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-ultra-max-suspension #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-air-6-ultra-suspension #0 PASS ok
+pure-air-6-ultra-suspension #1 PASS ok
+pure-air-6-ultra-suspension #2 WARN basse définition
+pure-air-6-ultra-suspension #3 PASS ok
+pure-air-6-ultra-suspension #4 FAIL détourage sale / résidu de décor
+pure-air-6-ultra-suspension #5 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 33 % (visuel marketing ?)
+pure-air-6-ultra-suspension #6 PASS ok
+pure-air-6-ultra-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 32 % (visuel marketing ?)
+pure-air-6-ultra-suspension #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-air-6-ultra-suspension #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #0 WARN basse définition
+pure-electric-advance #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-electric-advance #2 PASS ok
+pure-electric-advance #3 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+pure-electric-advance #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-electric-advance #6 FAIL détourage sale / résidu de décor · cadrage serré
+pure-electric-advance #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 46 % (visuel marketing ?)
+pure-electric-advance #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-flex #0 WARN basse définition
+pure-electric-advance-flex #1 WARN cadrage serré
+pure-electric-advance-flex #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-flex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-electric-advance-flex #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-flex #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-flex #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 46 % (visuel marketing ?)
+pure-electric-advance-flex #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-flex #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-plus #0 PASS ok
+pure-electric-advance-plus #1 WARN basse définition
+pure-electric-advance-plus #2 PASS ok
+pure-electric-advance-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-electric-advance-plus #4 WARN produit minuscule dans le cadre
+pure-electric-advance-plus #5 WARN cadrage serré
+pure-electric-advance-plus #6 FAIL détourage sale / résidu de décor · produit minuscule dans le cadre
+pure-electric-advance-plus #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-electric-advance-plus #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance-plus #9 FAIL détourage sale / résidu de décor · produit minuscule dans le cadre
+pure-electric-air-3 #0 PASS ok
+pure-electric-air-3 #1 WARN basse définition
+pure-electric-air-3 #2 PASS ok
+pure-electric-air-3 #3 WARN cadrage serré
+pure-electric-air-3 #4 PASS ok
+pure-electric-air-3 #5 WARN cadrage serré
+pure-electric-air-3 #6 PASS ok
+pure-electric-air-3 #7 PASS ok
+pure-electric-air-5 #0 PASS ok
+pure-electric-air-5 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-electric-air-5 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-air-5 #3 PASS ok
+pure-electric-air-5 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 34 % (visuel marketing ?)
+pure-electric-air-5 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-air-5 #7 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-electric-air-5 #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-air-ultra #0 PASS ok
+pure-electric-air-ultra #1 PASS ok
+pure-electric-air-ultra #2 PASS ok
+pure-electric-air-ultra #3 PASS ok
+pure-electric-air-ultra #4 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+pure-electric-air-ultra #5 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 38 % (visuel marketing ?)
+pure-electric-air-ultra #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-ultra #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-air-ultra #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-ultra #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-escape-pro #0 WARN basse définition
+pure-electric-escape-pro #1 PASS ok
+pure-electric-escape-pro #2 PASS ok
+pure-electric-escape-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-escape-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-electric-escape-pro #5 FAIL détourage sale / résidu de décor · petit élément détaché (3 morceaux)
+pure-electric-escape-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-electric-escape-pro #7 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 43 % (visuel marketing ?)
+pure-electric-escape-pro #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-escape-pro #9 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-escape #0 WARN basse définition
+pure-escape #1 PASS ok
+pure-escape #2 PASS ok
+pure-escape #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-escape #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+pure-escape #6 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux) · couleurs vives 36 % (visuel marketing ?)
+pure-escape #7 PASS ok
+pure-escape #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-escape #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-escape-pro-suspension #0 PASS ok
+pure-escape-pro-suspension #1 WARN basse définition
+pure-escape-pro-suspension #2 PASS ok
+pure-escape-pro-suspension #3 PASS ok
+pure-escape-pro-suspension #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 30 % (visuel marketing ?)
+pure-escape-pro-suspension #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-escape-pro-suspension #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape-pro-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape-pro-suspension #8 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 37 % (visuel marketing ?)
+pure-escape-pro-suspension #9 PASS ok
+pure-escape-ultra-max-suspension #0 PASS ok
+pure-escape-ultra-max-suspension #1 PASS ok
+pure-escape-ultra-max-suspension #2 WARN basse définition
+pure-escape-ultra-max-suspension #3 PASS ok
+pure-escape-ultra-max-suspension #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 30 % (visuel marketing ?)
+pure-escape-ultra-max-suspension #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-escape-ultra-max-suspension #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape-ultra-max-suspension #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape-ultra-max-suspension #8 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (3 morceaux) · couleurs vives 54 % (visuel marketing ?)
+pure-escape-ultra-max-suspension #9 PASS ok
+pure-flex #0 WARN cadrage serré
+pure-flex #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-flex #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-flex #5 PASS ok
+pure-flex #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-flex #8 WARN cadrage serré
+pure-x-mclaren #0 PASS ok
+pure-x-mclaren #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #3 FAIL détourage sale / résidu de décor
+pure-x-mclaren #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-x-mclaren #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-x-mclaren #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-x-mclaren #7 WARN couleurs vives 42 % (visuel marketing ?)
+pure-x-mclaren #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+pure-x-mclaren #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+::notice title=photos lot15 (dry)::186 candidates · PASS 57 · WARN 28 · FAIL 101 · ERREUR 0

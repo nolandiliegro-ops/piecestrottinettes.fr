@@ -1,0 +1,164 @@
+ninebot-max-g2 #0 PASS ok
+ninebot-max-g2 #1 WARN basse définition
+ninebot-max-g2 #2 PASS ok
+ninebot-max-g2 #3 WARN basse définition
+ninebot-max-g2 #4 PASS ok
+ninebot-max-g2 #5 FAIL détourage sale / résidu de décor · basse définition
+ninebot-max-g2 #6 FAIL détourage sale / résidu de décor · bandeau, pas un produit · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 92 % (visuel marketing ?)
+p100s #0 PASS ok
+p100s #1 PASS ok
+p100s #2 PASS ok
+p100s #3 PASS ok
+p100s #4 PASS ok
+p100s #5 PASS ok
+p100s #6 PASS ok
+p100s #7 PASS ok
+p100s #8 PASS ok
+p100s #9 PASS ok
+segway-gt1 #0 WARN basse définition
+segway-gt1 #1 PASS ok
+segway-gt1 #2 PASS ok
+segway-gt1 #3 PASS ok
+segway-gt1 #4 PASS ok
+segway-gt1 #5 PASS ok
+segway-gt1 #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-gt1 #7 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+segway-gt1 #8 FAIL détourage sale / résidu de décor
+segway-gt1 #9 WARN basse définition
+segway-gt2 #0 PASS ok
+segway-gt2 #1 PASS ok
+segway-gt2 #2 PASS ok
+segway-gt2 #3 PASS ok
+segway-gt2 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-gt2 #5 PASS ok
+segway-gt2 #6 FAIL détourage sale / résidu de décor
+segway-gt2 #7 WARN basse définition
+segway-gt2 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 36 % (visuel marketing ?)
+segway-gt3 #0 WARN basse définition
+segway-gt3 #1 WARN basse définition
+segway-gt3 #2 FAIL détourage sale / résidu de décor · basse définition
+segway-gt3 #3 PASS ok
+segway-gt3 #4 WARN basse définition
+segway-gt3 #5 PASS ok
+segway-ninebot-max-g3 #0 WARN basse définition
+segway-ninebot-max-g3 #1 WARN basse définition
+segway-ninebot-max-g3 #2 WARN basse définition
+segway-ninebot-max-g3 #3 PASS ok
+segway-ninebot-max-g3 #4 WARN basse définition
+segway-ninebot-max-g3 #5 PASS ok
+segway-p65 #0 FAIL détourage sale / résidu de décor · basse définition
+segway-p65 #1 WARN basse définition
+segway-p65 #2 PASS ok
+segway-p65 #3 PASS ok
+segway-p65 #4 WARN cadrage serré
+segway-p65 #5 PASS ok
+segway-p65 #6 PASS ok
+segway-p65 #7 PASS ok
+segway-p65 #8 PASS ok
+segway-p65 #9 WARN cadrage serré
+segway-zt3-pro #0 WARN basse définition
+segway-zt3-pro #1 WARN basse définition
+segway-zt3-pro #2 PASS ok
+segway-zt3-pro #3 WARN basse définition
+segway-zt3-pro #4 PASS ok
+segway-zt3-pro #5 PASS ok
+segway-zt3-pro #6 FAIL détourage sale / résidu de décor · cadrage serré
+segway-zt3-pro #7 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-zt3-pro #8 FAIL détourage sale / résidu de décor
+segway-zt3-pro-e #0 PASS ok
+segway-zt3-pro-e #1 WARN basse définition
+segway-zt3-pro-e #2 WARN basse définition
+segway-zt3-pro-e #3 PASS ok
+segway-zt3-pro-e #4 WARN basse définition
+segway-zt3-pro-e #5 PASS ok
+segway-zt3-pro-e #6 PASS ok
+segway-zt3-pro-e #7 FAIL détourage sale / résidu de décor · basse définition
+smartgyro-crossover-dual-max-2 #0 PASS ok
+smartgyro-crossover-dual-max-2 #1 WARN basse définition
+smartgyro-crossover-dual-max-2 #2 PASS ok
+smartgyro-crossover-dual-max-2 #3 WARN basse définition
+smartgyro-crossover-dual-max-2 #4 WARN basse définition · cadrage serré
+smartgyro-crossover-dual-max-2 #5 WARN cadrage serré
+smartgyro-k1 #0 PASS ok
+smartgyro-k1 #1 PASS ok
+smartgyro-k1 #2 FAIL détourage sale / résidu de décor
+smartgyro-k1 #3 PASS ok
+smartgyro-k1 #4 WARN produit minuscule dans le cadre
+smartgyro-k1 #5 WARN cadrage serré
+smartgyro-k1 #6 FAIL détourage sale / résidu de décor
+smartgyro-k1 #7 PASS ok
+smartgyro-k1 #8 WARN cadrage serré
+smartgyro-k1 #9 PASS ok
+smartgyro-k5-pro #0 PASS ok
+smartgyro-k5-pro #1 PASS ok
+smartgyro-k5-pro #2 WARN basse définition
+smartgyro-k5-pro #3 PASS ok
+smartgyro-k5-pro #4 PASS ok
+smartgyro-k5-pro #5 PASS ok
+smartgyro-k5-pro #6 WARN basse définition · cadrage serré
+smartgyro-raptor-evo #0 WARN basse définition
+smartgyro-raptor-evo #1 PASS ok
+smartgyro-raptor-evo #2 PASS ok
+smartgyro-raptor-evo #3 WARN cadrage serré
+smartgyro-raptor-evo #4 WARN basse définition · cadrage serré
+smartgyro-raptor-evo #5 WARN basse définition
+smartgyro-raptor-evo #6 WARN basse définition · cadrage serré
+smartgyro-raptor-evo #7 PASS ok
+smartgyro-raptor-evo #8 PASS ok
+smartgyro-rockway-gl #0 PASS ok
+smartgyro-rockway-gl #1 WARN cadrage serré
+smartgyro-rockway-gl #2 WARN cadrage serré
+smartgyro-rockway-gl #3 WARN cadrage serré
+smartgyro-rockway-gl #4 PASS ok
+smartgyro-rockway-gl #5 WARN cadrage serré
+smartgyro-rockway-gl #6 PASS ok
+smartgyro-rockway-gl #7 FAIL détourage sale / résidu de décor · cadrage serré
+smartgyro-rockway-gl #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+smartgyro-rockway-gl #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+smartgyro-rockway-gt #0 WARN basse définition
+smartgyro-rockway-gt #1 PASS ok
+smartgyro-rockway-gt #2 PASS ok
+smartgyro-rockway-gt #3 WARN basse définition · cadrage serré
+smartgyro-rockway-gt #4 PASS ok
+smartgyro-rockway-gt #5 WARN cadrage serré
+smartgyro-rockway-gt #6 WARN basse définition · cadrage serré
+smartgyro-rockway-gt-dual #0 PASS ok
+smartgyro-rockway-gt-dual #1 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (3 morceaux)
+smartgyro-rockway-gt-dual #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+smartgyro-rockway-gt-dual #3 WARN basse définition
+smartgyro-rockway-gt-dual #4 WARN cadrage serré
+smartgyro-rockway-gt-dual #5 WARN cadrage serré
+smartgyro-rockway-gt-dual #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+smartgyro-rockway-gts #0 PASS ok
+smartgyro-rockway-gts #1 PASS ok
+smartgyro-rockway-gts #2 PASS ok
+smartgyro-rockway-gts #3 WARN basse définition · cadrage serré
+smartgyro-rockway-gts #4 WARN cadrage serré
+smartgyro-rockway-gts #5 WARN cadrage serré
+smartgyro-speedway #0 WARN basse définition
+smartgyro-speedway #1 PASS ok
+smartgyro-speedway #2 PASS ok
+smartgyro-speedway #3 PASS ok
+smartgyro-speedway #4 WARN basse définition · cadrage serré
+smartgyro-speedway #5 PASS ok
+smartgyro-speedway #6 WARN cadrage serré
+smartgyro-speedway #7 WARN cadrage serré
+smartgyro-speedway-pro #0 WARN basse définition
+smartgyro-speedway-pro #1 PASS ok
+smartgyro-speedway-pro #2 PASS ok
+smartgyro-speedway-pro #3 WARN basse définition
+smartgyro-speedway-pro #4 PASS ok
+smartgyro-speedway-pro #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+smartgyro-speedway-pro #6 WARN basse définition · cadrage serré
+smartgyro-speedway-pro #7 FAIL bandeau, pas un produit · basse définition
+smartgyro-z-one-2 #0 WARN basse définition
+smartgyro-z-one-2 #1 WARN basse définition
+smartgyro-z-one-2 #2 PASS ok
+smartgyro-z-one-2 #3 WARN cadrage serré
+smartgyro-z-one-2 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+smartgyro-z-one-2 #5 PASS ok
+smartgyro-z-one-2 #6 PASS ok
+smartgyro-z-one-2 #7 FAIL détourage sale / résidu de décor
+smartgyro-z-one-2 #8 PASS ok
+smartgyro-z-one-2 #9 PASS ok
+::notice title=photos lot16 (dry)::163 candidates · PASS 78 · WARN 59 · FAIL 26 · ERREUR 0

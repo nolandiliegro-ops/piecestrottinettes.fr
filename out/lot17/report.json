@@ -1,0 +1,1929 @@
+[
+ {
+  "slug": "soflow-s05",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791639515009_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.339
+  },
+  "size": [
+   1360,
+   1531
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791997689345_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.175
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82571fe-6d82-442a-a038-d4cbcba76b3e/1791997695796_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.773
+  },
+  "size": [
+   1312,
+   659
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 3,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_0?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.818
+  },
+  "size": [
+   1268,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 4,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_1?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.782
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 5,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_2?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.819
+  },
+  "size": [
+   947,
+   690
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 6,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_3?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.761
+  },
+  "size": [
+   1744,
+   905
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-s05",
+  "i": 7,
+  "url": "https://boulanger.scene7.com/is/image/Boulanger/9331187242091_h_f_l_4?wid=1800&hei=1800&resMode=sharp2&op_usm=1.75",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.813
+  },
+  "size": [
+   1085,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cb91ab3a-d90d-4767-92ef-750121bac9f2/1792167611831_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.308
+  },
+  "size": [
+   1948,
+   1948
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 1,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/SO-ONE-LITE.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.645
+  },
+  "size": [
+   1310,
+   1898
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 2,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/7214.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.696
+  },
+  "size": [
+   1779,
+   1906
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 3,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/7223.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.672
+  },
+  "size": [
+   1517,
+   1902
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 4,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/7219.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.59
+  },
+  "size": [
+   1158,
+   1916
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-lite",
+  "i": 5,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/7227.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.472
+  },
+  "size": [
+   2072,
+   1235
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a537c7b2-cb39-490f-af08-db97dff66917/1792167594189_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 49 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 49 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.489,
+   "fill": 0.472
+  },
+  "size": [
+   2056,
+   1182
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a537c7b2-cb39-490f-af08-db97dff66917/1792167602626_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.248,
+   "fill": 0.301
+  },
+  "size": [
+   1962,
+   1905
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/31hTBl7ohgL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.795
+  },
+  "size": [
+   272,
+   367
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/31FwqAuaGDL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.729
+  },
+  "size": [
+   251,
+   480
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31scwZemn5L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.792
+  },
+  "size": [
+   264,
+   367
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31rabaJAmCL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0,
+   "fill": 0.775
+  },
+  "size": [
+   482,
+   267
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/31mubPVpYEL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.762
+  },
+  "size": [
+   468,
+   246
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/21-EXvOWpJL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.2
+  },
+  "size": [
+   178,
+   382
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 8,
+  "url": "https://m.media-amazon.com/images/I/21VIuZxcfHL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.013,
+   "vivid": 0.042,
+   "fill": 0.241
+  },
+  "size": [
+   183,
+   394
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so-one-pro",
+  "i": 9,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/04/SO-ONE-PRO-GEN2-ORIGINAL.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 48 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 48 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.479,
+   "fill": 0.482
+  },
+  "size": [
+   2054,
+   1179
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cc995a7-7779-452c-84e6-c6b7f1acf4f7/1791639518632_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.158,
+   "fill": 0.355
+  },
+  "size": [
+   732,
+   830
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/511ebl+Gx7L._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.257,
+   "vivid": 0.052,
+   "fill": 0.8
+  },
+  "size": [
+   651,
+   375
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/31kUr5IKdFL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.805
+  },
+  "size": [
+   283,
+   385
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/316OlF+ATVL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.768
+  },
+  "size": [
+   241,
+   420
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31OE-MNNVNL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.771
+  },
+  "size": [
+   252,
+   480
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31++L6vXcIL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.081,
+   "fill": 0.8
+  },
+  "size": [
+   262,
+   357
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/31t9nbfG+oL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.743
+  },
+  "size": [
+   437,
+   220
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/31isu6oVTQL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.803
+  },
+  "size": [
+   524,
+   318
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c7cc4002-880b-47c4-a107-20b5088bfddb/1792167579559_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.388
+  },
+  "size": [
+   1740,
+   1629
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c7cc4002-880b-47c4-a107-20b5088bfddb/1792167585429_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.819
+  },
+  "size": [
+   843,
+   1237
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/31ArwU4CqJL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.792
+  },
+  "size": [
+   291,
+   462
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/31V3vG2y1bL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.807
+  },
+  "size": [
+   422,
+   322
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/31hprm9GR3L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.824
+  },
+  "size": [
+   353,
+   457
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/21AaLDaG3TL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.774
+  },
+  "size": [
+   465,
+   234
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 6,
+  "url": "https://m.media-amazon.com/images/I/31RCkXGtx6L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.828
+  },
+  "size": [
+   380,
+   429
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/213WV3tgR8L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.788
+  },
+  "size": [
+   406,
+   328
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-gt-2",
+  "i": 8,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-GT.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.636
+  },
+  "size": [
+   1261,
+   1908
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/40d7a5dc-60de-4087-b723-6ec57075641e/1792167572919_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.281
+  },
+  "size": [
+   1948,
+   1948
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 1,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-MAX.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.623
+  },
+  "size": [
+   1181,
+   1904
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 2,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9767.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.84
+  },
+  "size": [
+   1123,
+   1467
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 3,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9803.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.798
+  },
+  "size": [
+   1748,
+   1275
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 4,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9771-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.84
+  },
+  "size": [
+   1350,
+   1547
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 5,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9770.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.818
+  },
+  "size": [
+   1087,
+   1508
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 6,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9793.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.032,
+   "vivid": 0,
+   "fill": 0.321
+  },
+  "size": [
+   1800,
+   1267
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 7,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9801.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.568
+  },
+  "size": [
+   1760,
+   1498
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 8,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9769.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.408
+  },
+  "size": [
+   1800,
+   1172
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dcb8f373-a85a-4ae5-8a5f-445881f94915/1791637488996_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.51
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 1,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-main-product-image.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.51
+  },
+  "size": [
+   964,
+   1234
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 2,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-white-side.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.681
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 3,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.736
+  },
+  "size": [
+   1168,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 4,
+  "url": "https://dualtron-store.com/wp-content/uploads/2018/12/Capture-decran-2025-01-23-a-12.14.17.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.002,
+   "fill": 0.648
+  },
+  "size": [
+   1744,
+   1740
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 5,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-front-wheel.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   1232,
+   1235
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 6,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-rear-wheel.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.839
+  },
+  "size": [
+   1226,
+   1004
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-5",
+  "i": 7,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-5-handlebar.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.531
+  },
+  "size": [
+   1168,
+   828
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 0,
+  "url": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/8286/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__09053.1790543367.jpg?c=1",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.391
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 1,
+  "url": "https://dualtron-store.com/wp-content/uploads/2021/10/trottinette-electrique-speedway-leger.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.51
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 2,
+  "url": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7875/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__60401.1790543367.jpg?c=1",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.751
+  },
+  "size": [
+   1050,
+   458
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 3,
+  "url": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7777/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__97362.1790543367.jpg?c=1",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.777
+  },
+  "size": [
+   1382,
+   1382
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 4,
+  "url": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7999/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__91927.1790543367.jpg?c=1",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.292
+  },
+  "size": [
+   1349,
+   976
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 5,
+  "url": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/2560w/products/1008/7863/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery__76787.1790543367.jpg?c=1",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.582
+  },
+  "size": [
+   1382,
+   1382
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 6,
+  "url": "https://dualtron-store.com/wp-content/uploads/2019/08/sw_leger-2-e1564928626259.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.463
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 7,
+  "url": "https://dualtron-store.com/wp-content/uploads/2019/08/sw_leger-4-e1564929727813.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.744
+  },
+  "size": [
+   540,
+   257
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 8,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8994b408-0ed6-4048-836a-6343c8d64923/1791993830403_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.815
+  },
+  "size": [
+   475,
+   388
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger",
+  "i": 9,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8994b408-0ed6-4048-836a-6343c8d64923/1791993834043_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.425
+  },
+  "size": [
+   883,
+   688
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167623489_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.813
+  },
+  "size": [
+   800,
+   1164
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167628844_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.818
+  },
+  "size": [
+   842,
+   1164
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 2,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de197848-12ad-43e3-94b4-d58cece91f52/1792167635099_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.82
+  },
+  "size": [
+   1233,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 3,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-main-product-image.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.813
+  },
+  "size": [
+   800,
+   1164
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 4,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-white-side.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.818
+  },
+  "size": [
+   842,
+   1164
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 5,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-front.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.82
+  },
+  "size": [
+   1233,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 6,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-rear.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.509
+  },
+  "size": [
+   1231,
+   1156
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 7,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.758
+  },
+  "size": [
+   1171,
+   500
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-leger-pro",
+  "i": 8,
+  "url": "https://voltride.com/wp-content/uploads/2025/04/electric-scooter-speedway-leger-pro-handlebar.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.305
+  },
+  "size": [
+   1149,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7b3292b6-d170-4e0b-96bb-cf405e93aef2/1791637052892_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.414
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Side_extremetoys.webp?v=1752116153",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.706
+  },
+  "size": [
+   1521,
+   1628
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_pro_front_right_1_1.webp?v=1753749818",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.39
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Rear_extremetoys.webp?v=1752116153",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.807
+  },
+  "size": [
+   1515,
+   946
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 4,
+  "url": "https://dualtron-store.com/wp-content/uploads/2018/07/mini4pro-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.801
+  },
+  "size": [
+   368,
+   679
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Front_Detail_extremetoys.webp?v=1752116153",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1524,
+   1627
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 0,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1791637049134_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.32
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 1,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1791637050991_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.32
+  },
+  "size": [
+   494,
+   494
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Side_extremetoys.webp?v=1752116153",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.706
+  },
+  "size": [
+   1521,
+   1628
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_pro_front_right_1_1.webp?v=1753749818",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.39
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Rear_extremetoys.webp?v=1752116153",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.807
+  },
+  "size": [
+   1515,
+   946
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 5,
+  "url": "https://dualtron-store.com/wp-content/uploads/2018/07/mini4pro-1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.801
+  },
+  "size": [
+   368,
+   679
+  ],
+  "error": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0631/0523/7240/files/Speedway_Mini_4_Pro_Front_Detail_extremetoys.webp?v=1752116153",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1524,
+   1627
+  ],
+  "error": null
+ }
+]

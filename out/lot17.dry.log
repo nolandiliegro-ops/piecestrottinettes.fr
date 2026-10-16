@@ -1,0 +1,91 @@
+soflow-s05 #0 PASS ok
+soflow-s05 #1 PASS ok
+soflow-s05 #2 WARN cadrage serré
+soflow-s05 #3 PASS ok
+soflow-s05 #4 PASS ok
+soflow-s05 #5 WARN cadrage serré
+soflow-s05 #6 WARN cadrage serré
+soflow-s05 #7 FAIL détourage sale / résidu de décor · cadrage serré
+soflow-so-one-lite #0 PASS ok
+soflow-so-one-lite #1 PASS ok
+soflow-so-one-lite #2 PASS ok
+soflow-so-one-lite #3 PASS ok
+soflow-so-one-lite #4 PASS ok
+soflow-so-one-lite #5 PASS ok
+soflow-so-one-pro #0 WARN couleurs vives 49 % (visuel marketing ?)
+soflow-so-one-pro #1 PASS ok
+soflow-so-one-pro #2 WARN basse définition
+soflow-so-one-pro #3 WARN basse définition
+soflow-so-one-pro #4 WARN basse définition
+soflow-so-one-pro #5 FAIL détourage sale / résidu de décor · basse définition
+soflow-so-one-pro #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+soflow-so-one-pro #7 WARN basse définition
+soflow-so-one-pro #8 FAIL détourage sale / résidu de décor · basse définition
+soflow-so-one-pro #9 WARN couleurs vives 48 % (visuel marketing ?)
+soflow-so4-pro #0 PASS ok
+soflow-so4-pro #1 FAIL basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+soflow-so4-pro #2 WARN basse définition
+soflow-so4-pro #3 WARN basse définition · cadrage serré
+soflow-so4-pro #4 WARN basse définition
+soflow-so4-pro #5 WARN basse définition
+soflow-so4-pro #6 WARN basse définition · cadrage serré
+soflow-so4-pro #7 WARN basse définition · cadrage serré
+soflow-so4-pro-gt-2 #0 PASS ok
+soflow-so4-pro-gt-2 #1 PASS ok
+soflow-so4-pro-gt-2 #2 WARN basse définition
+soflow-so4-pro-gt-2 #3 WARN basse définition · cadrage serré
+soflow-so4-pro-gt-2 #4 WARN basse définition
+soflow-so4-pro-gt-2 #5 WARN basse définition
+soflow-so4-pro-gt-2 #6 WARN basse définition
+soflow-so4-pro-gt-2 #7 WARN basse définition
+soflow-so4-pro-gt-2 #8 PASS ok
+soflow-so4-pro-max #0 PASS ok
+soflow-so4-pro-max #1 PASS ok
+soflow-so4-pro-max #2 PASS ok
+soflow-so4-pro-max #3 WARN cadrage serré
+soflow-so4-pro-max #4 PASS ok
+soflow-so4-pro-max #5 PASS ok
+soflow-so4-pro-max #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+soflow-so4-pro-max #7 WARN cadrage serré
+soflow-so4-pro-max #8 FAIL détourage sale / résidu de décor
+speedway-5 #0 PASS ok
+speedway-5 #1 PASS ok
+speedway-5 #2 PASS ok
+speedway-5 #3 WARN basse définition · cadrage serré
+speedway-5 #4 PASS ok
+speedway-5 #5 FAIL détourage sale / résidu de décor · cadrage serré
+speedway-5 #6 WARN cadrage serré
+speedway-5 #7 PASS ok
+speedway-leger #0 PASS ok
+speedway-leger #1 PASS ok
+speedway-leger #2 WARN basse définition · cadrage serré
+speedway-leger #3 PASS ok
+speedway-leger #4 FAIL détourage sale / résidu de décor
+speedway-leger #5 PASS ok
+speedway-leger #6 WARN basse définition
+speedway-leger #7 WARN basse définition · cadrage serré
+speedway-leger #8 WARN basse définition · cadrage serré
+speedway-leger #9 PASS ok
+speedway-leger-pro #0 PASS ok
+speedway-leger-pro #1 PASS ok
+speedway-leger-pro #2 WARN cadrage serré
+speedway-leger-pro #3 PASS ok
+speedway-leger-pro #4 PASS ok
+speedway-leger-pro #5 WARN cadrage serré
+speedway-leger-pro #6 FAIL détourage sale / résidu de décor · cadrage serré
+speedway-leger-pro #7 WARN basse définition · cadrage serré
+speedway-leger-pro #8 PASS ok
+speedway-mini-4-pro #0 PASS ok
+speedway-mini-4-pro #1 PASS ok
+speedway-mini-4-pro #2 PASS ok
+speedway-mini-4-pro #3 WARN cadrage serré
+speedway-mini-4-pro #4 WARN basse définition
+speedway-mini-4-pro #5 WARN cadrage serré
+speedway-mini-4-pro-lite #0 WARN basse définition
+speedway-mini-4-pro-lite #1 WARN basse définition
+speedway-mini-4-pro-lite #2 PASS ok
+speedway-mini-4-pro-lite #3 PASS ok
+speedway-mini-4-pro-lite #4 WARN cadrage serré
+speedway-mini-4-pro-lite #5 WARN basse définition
+speedway-mini-4-pro-lite #6 WARN cadrage serré
+::notice title=photos lot17 (dry)::90 candidates · PASS 40 · WARN 40 · FAIL 10 · ERREUR 0
