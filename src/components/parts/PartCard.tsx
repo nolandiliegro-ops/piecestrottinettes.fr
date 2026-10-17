@@ -429,7 +429,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
 
         {/* Ligne prix + stock — prix Bebas split à GAUCHE, indicateur stock discret à DROITE */}
         {priceParts && (
-          <div className="flex items-baseline justify-between gap-2">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-1">
             <motion.div
               whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.2 }}

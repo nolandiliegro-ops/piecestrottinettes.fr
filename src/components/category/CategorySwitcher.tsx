@@ -31,12 +31,14 @@ const CategorySwitcher = ({ currentSlug }: CategorySwitcherProps) => {
           const isActive = cat.slug === currentSlug;
 
           const base =
-            "inline-flex items-center gap-2 min-h-[44px] shrink-0 rounded-full px-4 text-sm font-semibold whitespace-nowrap transition-colors";
+            "inline-flex items-center gap-2 min-h-[44px] shrink-0 pl-3.5 pr-4 text-sm font-extrabold whitespace-nowrap transition-colors";
+  // 17/10 : plaques à coin coupé (identité du site), plus de pilules rondes.
+  const CHAMFER = "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)";
 
           if (isActive) {
             return (
               <li key={cat.id} style={{ scrollSnapAlign: "start" }}>
-                <span aria-current="page" className={base} style={{ backgroundColor: "#1A1A1A", color: "#FFFFFF" }}>
+                <span aria-current="page" className={base} style={{ backgroundColor: "#1A1A1A", color: "#FFFFFF", clipPath: CHAMFER }}>
                   <Icon className="h-4 w-4 shrink-0" strokeWidth={1.5} aria-hidden />
                   {cat.name}
                 </span>
@@ -49,8 +51,8 @@ const CategorySwitcher = ({ currentSlug }: CategorySwitcherProps) => {
               <Link
                 to={`/categorie/${cat.slug}`}
                 aria-label={`Voir la catégorie ${cat.name}`}
-                className={`${base} border bg-white hover:bg-[#1A1A1A]/[0.04]`}
-                style={{ borderColor: "rgba(26,26,26,0.15)", color: "#1A1A1A" }}
+                className={`${base} bg-white hover:bg-[#1A1A1A]/[0.04]`}
+                style={{ boxShadow: "inset 0 0 0 1px #E2DCD0", color: "#1A1A1A", clipPath: CHAMFER }}
               >
                 <Icon className="h-4 w-4 shrink-0" strokeWidth={1.5} aria-hidden />
                 {cat.name}

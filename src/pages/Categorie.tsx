@@ -1,16 +1,15 @@
-import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Loader2, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PartCard from "@/components/parts/PartCard";
 import { useCategoryData } from "@/hooks/useCategoryData";
 import { resolveCategoryIcon } from "@/lib/categoryIcons";
 import { buildCategoryJsonLd } from "@/lib/categorySchema";
 import { optimizedImage } from "@/lib/imageTransform";
 import CategorySwitcher from "@/components/category/CategorySwitcher";
+import CategoryExplorer from "@/components/category/CategoryExplorer";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const HEAD = "'Anton', sans-serif";
@@ -24,10 +23,6 @@ const Categorie = () => {
   const { slug } = useParams<{ slug: string }>();
   const { category, parts, isLoading } = useCategoryData(slug);
 
-  // Pagination "Voir plus" côté client (toutes les pièces sont déjà chargées).
-  const [visibleCount, setVisibleCount] = useState(12);
-  // Reset au changement de catégorie (le composant ne remonte pas entre 2 slugs).
-  useEffect(() => setVisibleCount(12), [category?.id]);
 
   // Loading — until we know whether the category exists.
   if (isLoading) {
@@ -171,7 +166,7 @@ const Categorie = () => {
               {/* H1 = seo_name || name */}
               <h1
                 className="uppercase text-white"
-                style={{ fontFamily: HEAD, fontSize: "clamp(2rem,7vw,4rem)", lineHeight: 1, letterSpacing: "-0.01em" }}
+                style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "clamp(2rem,7vw,4rem)", lineHeight: 1, letterSpacing: "-0.03em" }}
               >
                 {heading}
               </h1>
@@ -187,9 +182,9 @@ const Categorie = () => {
           </p>
         </section>
 
-        {/* 4. Grille produits (déjà triée dispo-first par le hook) */}
-        <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
-          {parts.length === 0 ? (
+        {/* 4. 17/10 : comment choisir + filtres (marque de trottinette, taille, recherche) + grille */}
+        {parts.length === 0 ? (
+          <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
             <div className="mx-auto max-w-md rounded-[2rem] p-1.5 ring-1 ring-black/5" style={{ background: "rgba(0,0,0,0.035)" }}>
               <div
                 className="rounded-[calc(2rem-0.375rem)] bg-white px-6 py-12 text-center"
@@ -213,29 +208,10 @@ const Categorie = () => {
                 </Link>
               </div>
             </div>
-          ) : (
-            <>
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
-                {parts.slice(0, visibleCount).map((p, i) => (
-                  <PartCard key={p.id} part={p} index={i} />
-                ))}
-              </div>
-
-              {visibleCount < parts.length && (
-                <div className="mt-10 flex justify-center">
-                  <button
-                    type="button"
-                    onClick={() => setVisibleCount((c) => c + 12)}
-                    className="inline-flex items-center gap-2 min-h-[48px] px-8 rounded-xl border bg-white text-sm font-bold uppercase tracking-wider transition-transform hover:bg-[#1A1A1A]/[0.03] active:scale-[0.98]"
-                    style={{ borderColor: "#1A1A1A", color: "#1A1A1A", fontFamily: FONT, transitionTimingFunction: EASE }}
-                  >
-                    Voir plus ({parts.length - visibleCount} restantes)
-                  </button>
-                </div>
-              )}
-            </>
-          )}
-        </section>
+          </section>
+        ) : (
+          <CategoryExplorer slug={category.slug} name={category.name} parts={parts} />
+        )}
       </main>
 
       <Footer />

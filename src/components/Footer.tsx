@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-8 md:gap-8 mb-10 [&>*]:min-w-0 break-words">
           <div>
             <h4 className="font-display text-sm tracking-wider text-white/90 mb-4">CATALOGUE</h4>
             <nav className="flex flex-col gap-2">
