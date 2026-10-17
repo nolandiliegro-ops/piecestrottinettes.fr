@@ -66,7 +66,7 @@ const Categorie = () => {
   const Icon = resolveCategoryIcon(category.lucide_icon, category.slug);
 
   // Fallback indexable : compte LIVE (parts.length), aucune promesse non vérifiable.
-  const fallbackText = `Toutes les pièces ${category.name} pour trottinette électrique : ${parts.length} références compatibles, sélectionnées par Steedy Trott.`;
+  const fallbackText = `Toutes les pièces ${category.name} pour trottinette électrique : ${parts.length} références compatibles, sélectionnées par piecestrottinettes.fr.`;
   const bodyText = category.description?.trim() || fallbackText;
 
   const seoTitle = category.meta_title || `${category.name} — Pièces détachées trottinette`;

@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
@@ -12,6 +12,7 @@ import BrandStory from "@/components/brand/BrandStory";
 import BrandModelsCarousel from "@/components/brand/BrandModelsCarousel";
 import BrandVideo from "@/components/brand/BrandVideo";
 import BrandPartsExplorer from "@/components/brand/BrandPartsExplorer";
+import BrandPageVariants, { type BrandLook } from "@/components/brand/BrandPageVariants";
 import BrandInfoBar from "@/components/brand/BrandInfoBar";
 import BrandCTA from "@/components/brand/BrandCTA";
 import BrandFAQ from "@/components/brand/BrandFAQ";
@@ -26,6 +27,10 @@ const Brand = () => {
   const { slug } = useParams<{ slug: string }>();
   const { brand, models, isLoading } = useBrandData(slug);
   const { prev, next } = useBrandsNavigation(slug);
+  // 17/10 : 5 propositions de page marque, UNIQUEMENT avec ?vue=1..5 (sans paramètre : page actuelle).
+  const [sp] = useSearchParams();
+  const vueN = Number(sp.get("vue"));
+  const vue = (vueN >= 1 && vueN <= 5 ? vueN : null) as BrandLook | null;
 
   // Loading — until we know whether the (published) brand exists.
   if (isLoading) {
@@ -83,7 +88,7 @@ const Brand = () => {
 
   // 13/10 : titre calé sur la requête « pièces détachées <marque> » (avant : « Histoire, modèles & pièces »).
   const seoTitle = `Pièces détachées ${brand.name} : pneus, freins, chargeurs`;
-  const seoDescription = `Pièces détachées ${brand.name} compatibles : pneus, chambres à air, plaquettes, chargeurs pour ${models.length} modèle${models.length > 1 ? "s" : ""}${brand.tagline ? `. ${brand.tagline}` : ""}. L'avis expert Steedy Trott.`;
+  const seoDescription = `Pièces détachées ${brand.name} compatibles : pneus, chambres à air, plaquettes, chargeurs pour ${models.length} modèle${models.length > 1 ? "s" : ""}${brand.tagline ? `. ${brand.tagline}` : ""}. L'avis expert piecestrottinettes.fr.`;
   const canonical = `https://piecestrottinettes.fr/marque/${brand.slug}`;
   const prevUrl = prev ? `https://piecestrottinettes.fr/marque/${prev.slug}` : undefined;
   const nextUrl = next ? `https://piecestrottinettes.fr/marque/${next.slug}` : undefined;
@@ -110,6 +115,9 @@ const Brand = () => {
         style={{ backgroundImage: GRAIN_BG }}
       />
 
+      {vue ? (
+        <BrandPageVariants look={vue} brand={brand} models={models} prev={prev ?? null} next={next ?? null} showTag />
+      ) : (<>
       <BrandHeader />
 
       <main className="flex-1">
@@ -144,6 +152,7 @@ const Brand = () => {
 
         <BrandCTA brandName={brand.name} brandSlug={brand.slug} accentColor={brand.accent_color} />
       </main>
+      </>)}
 
       <Footer />
     </div>

@@ -38,7 +38,7 @@ const BrandExpertNote = ({ note, brandName, accentColor }: Props) => {
                 className="rounded-full px-3 py-1 text-[10px] uppercase tracking-[0.2em] font-bold text-white"
                 style={{ backgroundColor: accent, fontFamily: FONT }}
               >
-                L'avis Steedy Trott
+                L'avis piecestrottinettes.fr
               </span>
             </div>
 
@@ -61,7 +61,7 @@ const BrandExpertNote = ({ note, brandName, accentColor }: Props) => {
               </div>
               <div className="text-left">
                 <p className="text-sm font-bold" style={{ color: "#1A1A1A", fontFamily: FONT }}>Nolan</p>
-                <p className="text-xs" style={{ color: "#6B7280", fontFamily: FONT }}>Steedy Trott · Marseille</p>
+                <p className="text-xs" style={{ color: "#6B7280", fontFamily: FONT }}>piecestrottinettes.fr · Marseille</p>
               </div>
             </div>
           </div>

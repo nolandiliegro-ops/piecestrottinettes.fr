@@ -68,6 +68,8 @@ const Header = () => {
     { label: "Accueil", href: "/" },
     { label: "Pièces Détachées", href: "/catalogue" },
     { label: "Trottinettes", href: "/trottinettes" },
+    // 17/10 : les pages marque n'étaient reliées que depuis l'accueil et les fiches trottinette.
+    { label: "Marques", href: "/marques" },
     { label: "Les Pépites", href: "/pepites" },
     { label: "Tutos", href: "/tutos" },
   ];

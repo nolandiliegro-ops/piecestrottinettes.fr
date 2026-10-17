@@ -1,6 +1,6 @@
 import SEO from "@/components/SEO";
 import { useState, useMemo, useCallback } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search } from "lucide-react";
 import Header from "@/components/Header";
@@ -238,6 +238,20 @@ const Scooters = () => {
             />
           )}
         </section>
+
+        {/* 17/10 : marque choisie → accès visible à sa page (avis, gamme, toutes les pièces). */}
+        {activeBrand && activeBrandName && (
+          <section className="container mx-auto px-4 -mt-2 pb-2">
+            <Link to={`/marque/${activeBrand}`} className="flex items-center gap-3 min-h-[52px] pl-4 pr-3 bg-white max-w-2xl transition-transform hover:-translate-y-0.5"
+              style={{ clipPath: "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)", boxShadow: "inset 4px 0 0 #4A7C59, inset 0 0 0 1px #E2DCD0" }}>
+              <span className="flex-1 min-w-0">
+                <span className="block text-sm font-extrabold uppercase tracking-wide truncate text-carbon">Tout sur {activeBrandName}</span>
+                <span className="block text-sm text-gray-500 truncate">L'avis de l'atelier, la gamme et toutes les pièces</span>
+              </span>
+              <span aria-hidden className="text-xl text-carbon">→</span>
+            </Link>
+          </section>
+        )}
 
         {/* Scooter Models Grid */}
         <section className="container mx-auto px-4 py-6">
