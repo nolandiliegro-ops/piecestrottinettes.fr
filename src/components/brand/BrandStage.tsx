@@ -14,7 +14,7 @@
 import { Link } from "react-router-dom";
 import type { BrandData, BrandModel } from "@/hooks/useBrandData";
 import { optimizedImage } from "@/lib/imageTransform";
-import { brandIdentity, flagshipOf } from "@/config/brandIdentity";
+import { brandIdentity, flagshipOf, BRAND_PHOTOS } from "@/config/brandIdentity";
 
 export type StageScene = 1 | 2 | 3 | 4 | 5;
 export const STAGE_NAMES: Record<StageScene, string> = { 1: "Studio", 2: "Affiche", 3: "Livrée", 4: "Gros plan", 5: "Fiche tech" };
@@ -50,10 +50,11 @@ const BrandStage = ({ brand, models, scene }: Props) => {
   const frame = "relative w-full overflow-hidden h-[300px] sm:h-[380px] lg:h-[460px]";
 
   // Marque avec photo : on garde la photo, ENTIÈRE (retour Nolan 17/10 : le logo piecestrottinettes était rogné sur Kaabo).
-  if (brand.hero_image_url) {
+  const photo = brand.hero_image_url || BRAND_PHOTOS[brand.slug];
+  if (photo) {
     return (
       <div className="relative w-full overflow-hidden" style={{ clipPath: CHAMFER, background: CARBON }}>
-        <img src={optimizedImage(brand.hero_image_url, 1400)} alt={brand.name} className="block w-full h-auto max-h-[560px] object-contain" />
+        <img src={optimizedImage(photo, 1400)} alt={`${brand.name} — ${hero?.name ?? "trottinette"}`} className="block w-full h-auto max-h-[560px] object-contain" />
         <span aria-hidden className="absolute left-0 right-0 bottom-0 h-1.5" style={{ background: id.accent }} />
       </div>
     );

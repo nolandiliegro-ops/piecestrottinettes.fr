@@ -30,6 +30,20 @@ export const BRAND_COLORS: Record<string, string> = {
   wispeed: "#3FBF88",
 };
 
+/**
+ * Photos de marque générées (17/10/2026, Higgsfield, vraie photo du modèle phare en référence,
+ * décors marseillais, cadrages variés). Servies depuis public/brand-heroes.
+ * Priorité : brands.hero_image_url (photo posée en admin) > cette table > mise en scène automatique.
+ */
+export const BRAND_PHOTOS: Record<string, string> = {
+  xiaomi: "/brand-heroes/xiaomi.webp",
+  teverun: "/brand-heroes/teverun.webp",
+  navee: "/brand-heroes/navee.webp",
+  niu: "/brand-heroes/niu.webp",
+  urbanglide: "/brand-heroes/urbanglide.webp",
+  iscooter: "/brand-heroes/iscooter.webp",
+};
+
 export const NEUTRAL = "#4A7C59";
 
 export interface BrandIdentity {
