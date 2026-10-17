@@ -1,1 +1,1 @@
-fetch gen5
+fetch gen6
