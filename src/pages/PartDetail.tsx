@@ -36,7 +36,9 @@ const PartDetail = () => {
   // 17/10 : 5 propositions de mise en page, UNIQUEMENT avec ?style=1..5 (sans paramètre : page actuelle).
   const [searchParams] = useSearchParams();
   const styleNum = Number(searchParams.get("style"));
-  const pageStyle = (styleNum >= 1 && styleNum <= 5 ? styleNum : null) as PartStyle | null;
+  // 17/10 : Pit-stand (1) validée par Nolan = page par défaut. ?style=0 = ancienne page, ?style=2..5 = autres propositions.
+  const pageStyle = (searchParams.has("style") ? (styleNum >= 1 && styleNum <= 5 ? styleNum : null) : 1) as PartStyle | null;
+  const showStyleTag = searchParams.has("style");
   const { data: part, isLoading: partLoading, error } = usePartBySlug(slug);
   const { data: scooters = [], isLoading: scootersLoading } = useCompatibleScooters(
     part?.id ?? null
@@ -187,7 +189,7 @@ const PartDetail = () => {
           scootersLoading={scootersLoading}
           related={relatedParts}
           relatedLoading={relatedLoading}
-          showTag
+          showTag={showStyleTag}
         />
       ) : (
       <div className="pt-20 pb-16">

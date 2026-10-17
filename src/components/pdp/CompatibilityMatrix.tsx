@@ -26,6 +26,8 @@ interface CompatibilityMatrixProps {
   partId?: string;
   /** Slug de catégorie : l'état « ne passe pas en plein » ne concerne que pneus-pleins. */
   categorySlug?: string | null;
+  /** Sans carte ni titre propre : la page fournit déjà la section « Compatibilité » (fiche Pit-stand, 17/10). */
+  bare?: boolean;
 }
 
 const TUBES_CATEGORY = "chambres-a-air";
@@ -127,7 +129,7 @@ function SolidBlockedNotice({
 
 const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>(
   function CompatibilityMatrixInner(
-    { scooters, isLoading, partSlug, partName, partId, categorySlug },
+    { scooters, isLoading, partSlug, partName, partId, categorySlug, bare = false },
     ref,
   ) {
     // LOT 3 — ventilation via la règle unique (déjà classée par le hook) :
@@ -194,9 +196,9 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-6 flex flex-col"
+        className={bare ? "flex flex-col" : "h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-6 flex flex-col"}
       >
-        <div className="flex items-center gap-3 mb-4 pb-3 border-b border-white/20">
+        <div className={bare ? "hidden" : "flex items-center gap-3 mb-4 pb-3 border-b border-white/20"}>
           <Zap className="w-5 h-5 text-mineral" />
           <h2 className="font-display text-lg uppercase tracking-wide text-carbon">
             Compatibilité

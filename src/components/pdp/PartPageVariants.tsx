@@ -148,7 +148,7 @@ const BuyButton = ({ part, look = "slant", full = false }: { part: PartDetail; l
 const StockLine = ({ part }: { part: PartDetail }) => {
   const inStock = part.stock_quantity !== null && part.stock_quantity > 0;
   return inStock ? (
-    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700" style={{ fontFamily: FONT }}><Check className="w-4 h-4" /> En stock — expédié sous 48 h</span>
+    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700" style={{ fontFamily: FONT }}><Check className="w-4 h-4" /> En stock</span>
   ) : (
     <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700" style={{ fontFamily: FONT }}><AlertCircle className="w-4 h-4" /> Rupture de stock</span>
   );
@@ -325,9 +325,27 @@ const Crumbs = ({ part, dark = false }: { part: PartDetail; dark?: boolean }) =>
   </nav>
 );
 
+const verifiedCount = (list: CompatibleScooter[]) => list.filter((s) => s.status === "verified").length;
+
+const CompatIntro = ({ scooters }: { scooters: CompatibleScooter[] }) => {
+  const n = verifiedCount(scooters);
+  return (
+    <p className="mb-4 max-w-3xl text-base text-[#374151] leading-relaxed" style={{ fontFamily: FONT }}>
+      {n > 0
+        ? <>Cette pièce va sur <strong>{n} trottinette{n > 1 ? "s" : ""}</strong>, vérifiées sur la cote de montage. Cherche ton modèle ou ouvre ta marque : si elle n'y est pas, écris-nous, on vérifie pour toi.</>
+        : <>On n'a pas encore relié cette pièce à un modèle. Dis-nous ta trottinette, on vérifie pour toi.</>}
+    </p>
+  );
+};
+
 const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => (
   <>
-    {!p.skipCompat && <Rule id="pdp-compat" title="Tous les modèles" num={p.numbered ? "01" : undefined}><CompatFull {...p} /></Rule>}
+    {!p.skipCompat && (
+      <Rule id="pdp-compat" title="Compatibilité" num={p.numbered ? "01" : undefined}>
+        <CompatIntro scooters={p.scooters} />
+        <CompatibilityMatrix scooters={p.scooters} isLoading={p.scootersLoading} partSlug={p.part.slug} partName={p.part.name} partId={p.part.id} categorySlug={p.part.category?.slug ?? null} bare />
+      </Rule>
+    )}
     {p.part.description?.trim() && <Rule title="Présentation"><Description part={p.part} /></Rule>}
     <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
@@ -347,13 +365,14 @@ const PitStand = (p: Props) => (
             <CatLabel part={p.part} />
             <div className="mt-1"><Title name={p.part.name} /></div>
             <div className="mt-4 flex items-end gap-4 flex-wrap"><Price value={p.part.price} /><StockLine part={p.part} /></div>
-            <div className="mt-5 rounded-xl bg-white border px-4 py-3" style={{ borderColor: LINE }}><CompatCheck scooters={p.scooters} /></div>
-            <div className="mt-4"><Tiles part={p.part} /></div>
+            <div className="mt-5"><Tiles part={p.part} /></div>
             <div className="mt-6 flex flex-wrap gap-2.5">
               <BuyButton part={p.part} />
-              <button type="button" onClick={scrollToCompat} className="inline-flex items-center justify-center min-h-[52px] px-6 -skew-x-12 text-sm uppercase tracking-[0.12em] text-white" style={{ borderRadius: 4, backgroundColor: CARBON, fontFamily: UNB, fontWeight: 700, fontStyle: "italic" }}>
-                <span style={{ transform: "skewX(12deg)" }}>Liste complète</span>
-              </button>
+              {verifiedCount(p.scooters) > 0 && (
+                <button type="button" onClick={scrollToCompat} className="inline-flex items-center justify-center min-h-[52px] px-6 -skew-x-12 text-sm uppercase tracking-[0.12em] text-white" style={{ borderRadius: 4, backgroundColor: CARBON, fontFamily: UNB, fontWeight: 700, fontStyle: "italic" }}>
+                  <span style={{ transform: "skewX(12deg)" }}>Compatible avec ma trott ?</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
