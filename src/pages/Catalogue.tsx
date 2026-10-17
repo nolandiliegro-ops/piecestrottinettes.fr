@@ -530,7 +530,7 @@ const Catalogue = () => {
                     className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
                   >
                     {shownExact.map((part, index) => (
-                      <PartCard key={part.id} part={part} index={index} />
+                      <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
                     ))}
                   </div>
                 ) : (
@@ -541,7 +541,7 @@ const Catalogue = () => {
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
                       {shownRelated.map((part, index) => (
-                        <PartCard key={part.id} part={part} index={index} />
+                        <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
                       ))}
                     </div>
                   </div>
@@ -559,7 +559,7 @@ const Catalogue = () => {
                   )}
                 >
                   {shownParts.slice(0, visibleCount).map((part, index) => (
-                    <PartCard key={part.id} part={part} index={index} />
+                    <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
                   ))}
                 </motion.div>
               )

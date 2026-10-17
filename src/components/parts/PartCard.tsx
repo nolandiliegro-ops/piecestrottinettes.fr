@@ -31,14 +31,15 @@ interface PartCardProps {
 }
 
 // 18/10 — propositions pour la marque « Compatible » hors fiche trottinette (?compat=0..5, cinq-propositions).
+// Défaut : 1 Coin coché à la couleur de la marque (choix Nolan 18/10 : « trop imposant et vert »). Masquée aussi quand le catalogue est déjà filtré sur la trott.
 // 0 = ancien badge néon · 1 Coin coché · 2 Ligne sous le prix · 3 Bandeau bas de photo · 4 Liseré · 5 Tampon chanfrein.
 const compatStyle = (): number => {
   try {
     const v = new URLSearchParams(window.location.search).get("compat");
-    if (v === null) return 5;
+    if (v === null) return 1;
     const n = Number(v);
-    return n >= 0 && n <= 5 ? n : 5;
-  } catch { return 5; }
+    return n >= 0 && n <= 5 ? n : 1;
+  } catch { return 1; }
 };
 const GREEN = "#4A7C59";
 const CHAMFER = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
@@ -377,9 +378,10 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         </div>
 
         {showCompat && cs === 1 && (
+          // 18/10 (Nolan) : discret, à la couleur de la marque de SA trottinette (pas le vert du site).
           <span title={`Compatible ${shortName}`} aria-label={`Compatible avec ta ${shortName}`}
-            className="absolute bottom-3 right-3 z-10 w-8 h-8 rounded-full flex items-center justify-center text-white shadow-sm" style={{ background: GREEN }}>
-            <Check className="w-4 h-4" strokeWidth={3} />
+            className="absolute bottom-3 right-3 z-10 w-6 h-6 rounded-full flex items-center justify-center text-white" style={{ background: selectedBrandColors.accent, boxShadow: "0 0 0 2px #fff" }}>
+            <Check className="w-3.5 h-3.5" strokeWidth={3} />
           </span>
         )}
         {showCompat && cs === 3 && (
