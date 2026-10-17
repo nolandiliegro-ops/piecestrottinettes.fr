@@ -6,6 +6,7 @@
  *    + filtre « Taille » lu dans le nom (140 mm, 10x2.50, 36 V…).
  * 3. Grille des pièces, filtrée.
  */
+import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Search, X, ChevronLeft } from "lucide-react";
@@ -164,14 +165,15 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   }, [parts, slug, model, modelMap]);
 
   const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/,/g, ".");
+  const compatIds = useSelectedCompatIds();
   const shown = useMemo(() => {
     let list = parts;
     if (model && modelMap[model]) list = list.filter((p) => modelMap[model].parts.has(p.id));
     if (size) list = list.filter((p) => sizeOf(slug, p.name) === size);
     const nq = norm(q.trim());
     if (nq) list = list.filter((p) => norm(p.name).includes(nq));
-    return list;
-  }, [parts, model, modelMap, size, q, slug]);
+    return model ? list : compatFirst(list, compatIds, (p) => p.id);
+  }, [parts, model, modelMap, size, q, slug, compatIds]);
 
   const brandList = allBrands ? brands : brands.slice(0, 10);
 

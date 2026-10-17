@@ -4,6 +4,7 @@
  * (compatibilités ✅ de tous les modèles publiés de la marque), filtrable par catégorie,
  * par modèle et par recherche — même langage visuel que /catalogue et /categorie.
  */
+import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Search, X, ChevronDown } from "lucide-react";
@@ -85,13 +86,14 @@ const BrandPartsExplorer = ({ brandName, models }: Props) => {
   }, [rows]);
 
   const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/,/g, ".");
+  const compatIds = useSelectedCompatIds();
   const shown = useMemo(() => {
     let list = pool;
     if (cat) list = list.filter((r) => r.part.category?.id === cat);
     const nq = norm(q.trim());
     if (nq) list = list.filter((r) => norm(r.part.name).includes(nq));
-    return list.map((r) => r.part);
-  }, [pool, cat, q]);
+    return compatFirst(list.map((r) => r.part), compatIds, (p) => p.id);
+  }, [pool, cat, q, compatIds]);
 
   if (!isLoading && rows.length === 0) return null;
   const sortedModels = [...models].filter((m) => modelCounts.get(m.id)).sort((a, b) => (modelCounts.get(b.id) ?? 0) - (modelCounts.get(a.id) ?? 0));

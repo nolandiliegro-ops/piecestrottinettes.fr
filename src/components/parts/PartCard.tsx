@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useSelectedCompatIds } from "@/hooks/useSelectedCompatIds";
 import { Link } from "react-router-dom";
 import { ShoppingCart, Check, Star, Shield, Sparkles } from "lucide-react";
 import { forwardRef, MouseEvent, useId } from "react";
@@ -13,7 +14,6 @@ import { pickBadge, STAMP_META, hexToRgba } from "@/lib/partStamps";
 import { resolveCategoryColor } from "@/lib/categoryColors";
 import type { FitmentPosition } from "@/lib/compatibilityStatus";
 import { toast } from "sonner";
-import { useIsCompatibleWithSelected } from "@/hooks/useIsCompatibleWithSelected";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
 
@@ -136,7 +136,10 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const displayImage = optimizedImage(primaryImage, 400);
   
   // Compatibility check with selected scooter
-  const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(hideCompat ? undefined : part.id);
+  // 18/10 : une seule requête par page (useSelectedCompatIds) au lieu d'une par carte.
+  const { selectedScooter } = useSelectedScooter();
+  const compatIds = useSelectedCompatIds();
+  const isCompatible = !!compatIds?.has(part.id);
   const showCompat = !hideCompat && !!selectedScooter && !!isCompatible;
   const cs = compatStyle();
   const shortName = selectedScooter?.name ?? "";

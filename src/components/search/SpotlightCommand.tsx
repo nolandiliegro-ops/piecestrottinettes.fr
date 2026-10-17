@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -16,6 +16,7 @@ import { useUnifiedSearch, SearchFilter } from '@/hooks/useUnifiedSearch';
 import { useSearchHistory, SearchHistoryItem } from '@/hooks/useSearchHistory';
 import { formatPrice } from '@/lib/formatPrice';
 import { cn } from '@/lib/utils';
+import { useSelectedCompatSlugs, compatFirst } from '@/hooks/useSelectedCompatIds';
 
 // Quick actions when search is empty
 const quickActions = [
@@ -81,7 +82,13 @@ const SpotlightCommand = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
   
-  const { data: searchResults, isLoading } = useUnifiedSearch(searchQuery);
+  const { data: rawResults, isLoading } = useUnifiedSearch(searchQuery);
+  // 18/10 : trottinette choisie → ses pièces compatibles remontent en tête des résultats.
+  const compatSlugs = useSelectedCompatSlugs();
+  const searchResults = useMemo(
+    () => (rawResults ? { ...rawResults, parts: compatFirst(rawResults.parts, compatSlugs, (p) => p.slug) } : rawResults),
+    [rawResults, compatSlugs],
+  );
   const { history, addToHistory, clearHistory, removeFromHistory } = useSearchHistory();
   
   const activeFilter = searchResults?.activeFilter || null;

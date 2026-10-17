@@ -18,6 +18,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import CatalogueTop, { EtabliSidebar, PRICE_OPTS, type CatalogueLook } from "@/components/catalogue/CatalogueTop";
 import { useCategoryImages } from "@/hooks/useCategoryImages";
+import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 
 // Skeleton grid for loading state
@@ -165,6 +166,7 @@ const Catalogue = () => {
     staleTime: 5 * 60 * 1000,
   });
   const { selectedScooter } = useSelectedScooter();
+  const compatIds = useSelectedCompatIds();
   const { data: categoryImages = {} } = useCategoryImages();
 
   const { data: categories = [], isLoading: categoriesLoading } = useCategories();
@@ -299,15 +301,17 @@ const Catalogue = () => {
     if (partSort === "prix") out = [...out].sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
     else if (partSort === "prix-desc") out = [...out].sort((a, b) => (b.price ?? -1) - (a.price ?? -1));
     else if (partSort === "nom") out = [...out].sort((a, b) => a.name.localeCompare(b.name, "fr"));
+    // 18/10 : trottinette choisie en haut → ses pièces compatibles d'abord (inutile si le filtre « Ma trott » est actif).
+    if (!scooterIdFilter) out = compatFirst(out, compatIds, (pt) => pt.id);
     return out;
   };
   const isSearchQ = !!searchQuery;
   const shownParts = useMemo(() => applyTopFilters(parts), // eslint-disable-line react-hooks/exhaustive-deps
-    [parts, vue, scooterIdFilter, scooterPartIds, priceSel.join(), stockOnly, partSort]);
+    [parts, vue, scooterIdFilter, scooterPartIds, priceSel.join(), stockOnly, partSort, compatIds]);
   const shownExact = useMemo(() => applyTopFilters(searchExact), // eslint-disable-line react-hooks/exhaustive-deps
-    [searchExact, vue, priceSel.join(), stockOnly, partSort]);
+    [searchExact, vue, priceSel.join(), stockOnly, partSort, compatIds]);
   const shownRelated = useMemo(() => applyTopFilters(searchRelated), // eslint-disable-line react-hooks/exhaustive-deps
-    [searchRelated, vue, priceSel.join(), stockOnly, partSort]);
+    [searchRelated, vue, priceSel.join(), stockOnly, partSort, compatIds]);
 
   // Reset sous-catégorie quand on change de catégorie parente
   const handleCategoryChange = (categoryId: string | null) => {
