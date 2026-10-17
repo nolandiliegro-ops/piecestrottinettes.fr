@@ -17,6 +17,7 @@
 // aussi tout fitment_specs malformé, y compris hors catégories à clés requises.
 
 import { slugify } from './slugify.js';
+import { ALLOWED_MISSING_KEYS_PNEUS_17_10 } from './allowed-missing-keys-pneus-17-10.js';
 
 /** Clés requises par slug canonique de catégorie. Hors mapping → aucune clé requise. */
 export const REQUIRED_KEYS_BY_CATEGORY = {
@@ -66,6 +67,8 @@ export const ALLOWED_MISSING_KEYS_SKUS = [
   'SP-59', // disque — codes fitment source VIDES chez le fournisseur (justifié)
   // plaquette — forme d'etrier non sourcee (28/09), VIDE justifie
   'PF-07', 'PF-25', 'PF-41', 'PF-91', 'PF-97', 'PF-98', 'PF-99', 'PF-100', 'PL-01', 'SP-58',
+  // import pneus Wattiz + eWheel 17/10 — cle roue hors referentiel ou jante non sourcee (cf. fichier)
+  ...ALLOWED_MISSING_KEYS_PNEUS_17_10,
 ];
 
 /** Slug canonique — même logique NFD que canonicalSlug (bulk-insert-parts). */

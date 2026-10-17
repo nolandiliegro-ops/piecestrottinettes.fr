@@ -1,0 +1,73 @@
+name: Import pièces (sans PC)
+
+# 17/10/2026 : import de pièces neuves sans le PC de Nolan (miroir de import-scooters.yml).
+# Modifier config/imports-pieces/_lot-auto.txt = lancer UN run : sync-parts.js --allow-missing-keys
+# sur chaque fichier listé (insertion en brouillon via bulk-insert-parts, détourage @imgly, process-images).
+# Ne publie RIEN : la publication se fait ensuite en SQL, fiche complète par fiche complète.
+# Le .env est écrit sur le runner à partir des secrets du dépôt, jamais commité, jamais affiché.
+# Le log (filtré) est déposé sur la branche donnees-extraction, dossier imports-pieces/, pour relecture.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/imports-pieces/_lot-auto.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-pieces
+  cancel-in-progress: false
+
+jobs:
+  importer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances (détourage)
+        run: npm install --prefix scripts --no-audit --no-fund
+      - name: Fichier .env du runner
+        env:
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+        run: |
+          if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=import::secret SUPABASE_URL ou ADMIN_BULK_SECRET absent"; exit 1; fi
+          KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
+          umask 077
+          printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
+      - name: Import fichier par fichier
+        shell: bash
+        run: |
+          set +e
+          export LC_ALL=C.UTF-8
+          mkdir -p /tmp/imp
+          while read -r f; do
+            [ -z "$f" ] && continue
+            node scripts/sync-parts.js --file "config/imports-pieces/$f" --allow-missing-keys > "/tmp/imp/$f.log" 2>&1; code=$?
+            echo "EXIT=$code" >> "/tmp/imp/$f.log"
+            ins=$(grep -oP 'Insérées : \K\d+' "/tmp/imp/$f.log" | awk '{s+=$1} END{print s+0}')
+            upd=$(grep -oP 'Mises à jour : \K\d+' "/tmp/imp/$f.log" | awk '{s+=$1} END{print s+0}')
+            err=$(grep -c '✗\|❌' "/tmp/imp/$f.log")
+            echo "::notice title=import $f::EXIT=$code · inserees=$ins · maj=$upd · lignes_erreur=$err"
+          done < config/imports-pieces/_lot-auto.txt
+      - name: Nettoyage
+        if: always()
+        run: rm -f .env
+      - name: Log → branche donnees-extraction
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "import-bot"
+          git config user.email "import-bot@users.noreply.github.com"
+          git fetch origin donnees-extraction
+          git checkout -B donnees-extraction origin/donnees-extraction
+          mkdir -p imports-pieces
+          for l in /tmp/imp/*.log; do grep -v -i 'secret\|bearer\|eyJ' "$l" > "imports-pieces/$(basename "$l")"; done
+          git add imports-pieces
+          git commit -q -m "import pièces : run ${{ github.run_id }}" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-extraction && break; git pull --rebase origin donnees-extraction; done
