@@ -216,24 +216,6 @@ const useAllBrands = () =>
     },
   });
 
-const Ghost = ({ item, side }: { item: { slug: string; name: string } | null; side: "left" | "right" }) =>
-  item ? (
-    <Link to={`/marque/${item.slug}`} aria-label={`Marque ${side === "left" ? "précédente" : "suivante"} : ${item.name}`}
-      className={`group hidden lg:block absolute top-1/2 -translate-y-1/2 z-0 select-none whitespace-nowrap leading-none transition-transform duration-500 ${side === "left" ? "left-0 -translate-x-[45%] hover:-translate-x-[38%]" : "right-0 translate-x-[45%] hover:translate-x-[38%] text-right"}`}
-      style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(120px, 13vw, 220px)", letterSpacing: "-0.05em", color: "transparent", WebkitTextStroke: "2px rgba(26,26,26,0.13)" }}>
-      <span className="transition-[-webkit-text-stroke] group-hover:[-webkit-text-stroke:2px_rgba(74,124,89,0.55)]">{item.name.toUpperCase()}</span>
-    </Link>
-  ) : null;
-
-const Chevron = ({ item, side }: { item: { slug: string; name: string } | null; side: "left" | "right" }) =>
-  item ? (
-    <Link to={`/marque/${item.slug}`} aria-label={`${side === "left" ? "Précédente" : "Suivante"} : ${item.name}`}
-      className="inline-flex items-center gap-2 min-h-[44px] pl-2 pr-3 bg-white text-sm font-extrabold uppercase tracking-wide"
-      style={{ fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
-      {side === "left" && <ChevronLeft className="w-4 h-4" />}{item.name}{side === "right" && <ChevronRight className="w-4 h-4" />}
-    </Link>
-  ) : <span />;
-
 const BrandRail = ({ current }: { current: string }) => {
   const { data: all = [] } = useAllBrands();
   const ref = useRef<HTMLDivElement>(null);
@@ -298,11 +280,13 @@ const PitStand = (p: Props) => {
   return (
     <>
       <section className="relative overflow-hidden px-4 pt-24 lg:pt-28 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-        <Ghost item={p.prev} side="left" />
-        <Ghost item={p.next} side="right" />
+        {/* Retour Nolan 17/10 : pas les marques voisines en haut à gauche / à droite, le nom de LA marque répété d'un bord à l'autre. */}
+        <div aria-hidden className="absolute inset-x-0 top-[45%] -translate-y-1/2 z-0 select-none overflow-hidden whitespace-nowrap leading-none"
+          style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(90px, 12vw, 200px)", letterSpacing: "-0.05em", color: "transparent", WebkitTextStroke: "2px rgba(26,26,26,0.09)" }}>
+          {Array.from({ length: 8 }, () => p.brand.name.toUpperCase()).join("  ")}
+        </div>
         <div className="relative z-10 mx-auto max-w-6xl">
-          <div className="flex items-center justify-between gap-2"><Chevron item={p.prev} side="left" /><Chevron item={p.next} side="right" /></div>
-          <div className="mt-4 grid lg:grid-cols-[1fr_1.2fr] gap-8 items-center">
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 items-center">
             <div>
               <div className="flex items-center gap-4"><Logo brand={p.brand} size={64} /><span className="text-sm font-bold uppercase tracking-[0.18em]" style={{ fontFamily: FONT, color: GREEN }}>Marque</span></div>
               <div className="mt-3"><Name brand={p.brand} size="text-5xl md:text-7xl" /></div>
