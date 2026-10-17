@@ -31,7 +31,7 @@ interface CompatiblePartsGridProps {
 }
 
 // Familles qui vendent (forte marge) d'abord, puis les autres par nombre de pièces.
-const FAMILY_ORDER = ["pneus", "chambres-a-air", "plaquettes-de-frein", "chargeurs", "disques-de-frein", "pneus-pleins"];
+const FAMILY_ORDER = ["pneus", "chambres-a-air", "plaquettes", "plaquettes-de-frein", "chargeurs", "pneus-pleins", "disques", "disques-de-frein", "disques-plaquettes"];
 type Fam = { slug: string; name: string; parts: ScooterCompatiblePart[]; from: number | null; img: string | null };
 const familiesOf = (parts: ScooterCompatiblePart[]): Fam[] => {
   const m = new Map<string, Fam>();
