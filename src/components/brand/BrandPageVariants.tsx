@@ -109,24 +109,51 @@ const topModels = (models: BrandModel[], n: number) => models.filter((m) => m.im
 // ─── Corps commun ───
 const Rule = ({ id, title, children, bg = "#FAFAF8" }: { id?: string; title: string; children: React.ReactNode; bg?: string }) => (
   <section id={id} className="px-4 py-10 lg:px-8 scroll-mt-20" style={{ backgroundColor: bg }}>
-    <div className="mx-auto max-w-7xl grid lg:grid-cols-[280px_1fr] gap-3 lg:gap-10 border-t-2 pt-6" style={{ borderColor: CARBON }}>
+    <div className="mx-auto max-w-7xl grid lg:grid-cols-[280px_1fr] gap-3 lg:gap-10 border-t pt-8" style={{ borderColor: LINE }}>
       <h2 className="text-2xl lg:text-3xl uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: CARBON }}>{title}</h2>
       <div className="min-w-0">{children}</div>
     </div>
   </section>
 );
 
-const Verdict = ({ text }: { text: string }) => (
-  <div className="relative bg-white p-5 md:p-7 max-w-3xl" style={{ clipPath: CHAMFER, boxShadow: `inset 5px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>
-    <Quote className="w-7 h-7 mb-3" style={{ color: GREEN }} />
-    <p className="text-lg md:text-xl leading-relaxed" style={{ fontFamily: FONT, color: CARBON, fontWeight: 500 }}>{text}</p>
-    <p className="mt-4 text-sm font-bold uppercase tracking-[0.16em] text-gray-500" style={{ fontFamily: FONT }}>Nolan · atelier de Marseille</p>
-  </div>
-);
+// Retour Nolan 17/10 : pas un « avis », une vraie présentation (SEO) — histoire de la marque, puis ce qu'il faut
+// savoir pour l'entretien (tailles de pneus, freins, chargeurs), puis les repères chiffrés.
+const Presentation = ({ brand, models }: { brand: BrandData; models: BrandModel[] }) => {
+  // Fourchettes de la gamme (les repères pays / année / modèles sont déjà dans le haut de page).
+  const range = (vals: (number | null)[], unit: string) => {
+    const v = vals.filter((x): x is number => !!x);
+    if (!v.length) return null;
+    const lo = Math.min(...v), hi = Math.max(...v);
+    return lo === hi ? `${lo.toLocaleString("fr-FR")} ${unit}` : `${lo.toLocaleString("fr-FR")} à ${hi.toLocaleString("fr-FR")} ${unit}`;
+  };
+  const facts = [
+    ["Puissance", range(models.map((m) => m.power_watts), "W")],
+    ["Vitesse max", range(models.map((m) => m.max_speed_kmh), "km/h")],
+    ["Autonomie", range(models.map((m) => m.range_km), "km")],
+  ].filter(([, v]) => v) as [string, string][];
+  return (
+    <div className="grid lg:grid-cols-[1fr_260px] gap-8">
+      <div className="max-w-3xl space-y-5 text-base md:text-lg text-[#374151] leading-relaxed" style={{ fontFamily: FONT }}>
+        {brand.description && <p>{brand.description}</p>}
+        {brand.editorial_verdict && (
+          <>
+            <h3 className="text-base font-extrabold uppercase tracking-[0.12em]" style={{ color: CARBON }}>Entretien et pièces {brand.name}</h3>
+            <p>{brand.editorial_verdict}</p>
+          </>
+        )}
+      </div>
+      <dl className="self-start divide-y" style={{ borderColor: LINE }}>
+        {facts.map(([k, v]) => (
+          <div key={k} className="flex items-baseline justify-between gap-4 py-3" style={{ borderColor: LINE }}>
+            <dt className="text-sm uppercase tracking-wider text-gray-500" style={{ fontFamily: FONT }}>{k}</dt>
+            <dd className="text-base text-right" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{v}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+};
 
-// Gamme (retour Nolan 17/10 : « ça va pas du tout, c'est pas très joli ») : les plus puissantes d'abord,
-// grande photo sur fond d'atelier avec ombre au sol, nom en italique racing, cotes en chiffres,
-// filet à la couleur de la marque.
 const Gamme = ({ models, accent }: { models: BrandModel[]; accent: string }) => {
   const [all, setAll] = useState(false);
   const sorted = [...models].sort((a, b) => (b.power_watts ?? 0) - (a.power_watts ?? 0));
@@ -183,10 +210,9 @@ const Faq = ({ items }: { items: { q: string; a: string }[] }) => {
 
 const Body = ({ brand, models }: { brand: BrandData; models: BrandModel[] }) => (
   <>
-    {brand.editorial_verdict && <Rule id="avis" title="L'avis de l'atelier"><Verdict text={brand.editorial_verdict} /></Rule>}
+    {(brand.description || brand.editorial_verdict) && <Rule id="presentation" title={`${brand.name}, la marque`}><Presentation brand={brand} models={models} /></Rule>}
     <Rule id="gamme" title={`La gamme ${brand.name}`}><Gamme models={models} accent={brandIdentity(brand.slug, brand.accent_color).accent} /></Rule>
     <BrandPartsExplorer brandName={brand.name} models={models} />
-    {brand.description && <Rule id="histoire" title="L'histoire"><p className="max-w-3xl text-base md:text-lg text-[#374151] leading-relaxed" style={{ fontFamily: FONT }}>{brand.description}</p></Rule>}
     {brand.youtube_video_id && <BrandVideo videoId={brand.youtube_video_id} brandName={brand.name} accentColor={GREEN} />}
     {Array.isArray(brand.faq) && brand.faq.length > 0 && <Rule id="faq" title="Questions fréquentes"><Faq items={brand.faq} /></Rule>}
     {brand.website_url && (
@@ -231,7 +257,7 @@ const BrandRail = ({ current }: { current: string }) => {
   const onClickCapture = (e: React.MouseEvent) => { if (drag.current?.moved) { e.preventDefault(); e.stopPropagation(); } };
   if (all.length < 2) return null;
   return (
-    <div className="border-y-2" style={{ borderColor: CARBON, background: "#F3EFE7" }}>
+    <div className="border-t" style={{ borderColor: LINE, background: "#F3EFE7" }}>
       <div className="mx-auto max-w-7xl px-4 lg:px-8 pt-3 flex items-baseline justify-between gap-3">
         <span className="text-sm font-bold uppercase tracking-[0.18em] text-gray-500" style={{ fontFamily: FONT }}>Les {all.length} marques</span>
         <Link to="/marques" className="text-sm font-bold underline min-h-[44px] inline-flex items-center" style={{ fontFamily: FONT, color: CARBON }}>Toutes les voir</Link>
@@ -296,15 +322,6 @@ const PitStand = (p: Props) => {
           <p className="mt-6 lg:hidden text-center text-sm text-gray-500" style={{ fontFamily: FONT }}>Glisse pour passer à la marque suivante</p>
         </div>
       </section>
-      {/* Retour Nolan 17/10 : le nom en contour posé au milieu du haut de page passait derrière le titre et la photo
-          (« brouillon »). Il devient un bandeau à part, net : nom de la marque répété, coupé proprement en bas. */}
-      <div aria-hidden className="relative overflow-hidden select-none h-[64px] md:h-[104px]" style={{ backgroundColor: "#FAFAF8" }}>
-        <div className="absolute left-0 top-1 whitespace-nowrap leading-none pl-4 lg:pl-8"
-          style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(72px, 9vw, 132px)", letterSpacing: "-0.04em", color: "transparent", WebkitTextStroke: "1.5px rgba(26,26,26,0.16)" }}>
-          {Array.from({ length: 8 }, () => p.brand.name.toUpperCase()).join("   ")}
-        </div>
-      </div>
-      <BrandRail current={p.brand.slug} />
     </>
   );
 };
@@ -427,6 +444,8 @@ const BrandPageVariants = (p: Props) => {
       <main className="flex-1">
         <Hero {...p} />
         <Body brand={p.brand} models={p.models} />
+        {/* 17/10 : le bandeau des 50 marques descend en bas de page — entre la photo et le contenu il chargeait l'écran. */}
+        {p.look === 1 && <BrandRail current={p.brand.slug} />}
       </main>
     </>
   );
