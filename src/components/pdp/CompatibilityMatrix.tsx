@@ -198,12 +198,14 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
         transition={{ duration: 0.5, delay: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
         className={bare ? "flex flex-col" : "h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-6 flex flex-col"}
       >
-        <div className={bare ? "hidden" : "flex items-center gap-3 mb-4 pb-3 border-b border-white/20"}>
-          <Zap className="w-5 h-5 text-mineral" />
-          <h2 className="font-display text-lg uppercase tracking-wide text-carbon">
-            Compatibilité
-          </h2>
-        </div>
+        {!bare && (
+          <div className="flex items-center gap-3 mb-4 pb-3 border-b border-white/20">
+            <Zap className="w-5 h-5 text-mineral" />
+            <h2 className="font-display text-lg uppercase tracking-wide text-carbon">
+              Compatibilité
+            </h2>
+          </div>
+        )}
 
         <div className="flex-1 overflow-y-auto">
           {isLoading ? (
