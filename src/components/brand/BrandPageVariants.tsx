@@ -24,6 +24,8 @@ import type { BrandData, BrandModel } from "@/hooks/useBrandData";
 import BrandPartsExplorer from "@/components/brand/BrandPartsExplorer";
 import BrandVideo from "@/components/brand/BrandVideo";
 import { optimizedImage } from "@/lib/imageTransform";
+import BrandStage, { STAGE_NAMES, type StageScene } from "@/components/brand/BrandStage";
+import { brandIdentity } from "@/config/brandIdentity";
 
 export type BrandLook = 1 | 2 | 3 | 4 | 5;
 export const BRAND_LOOK_NAMES: Record<BrandLook, string> = { 1: "Pit-stand", 2: "Carbone", 3: "Affiche", 4: "Vitrine", 5: "Sommaire" };
@@ -42,6 +44,7 @@ interface Props {
   prev: { slug: string; name: string } | null;
   next: { slug: string; name: string } | null;
   showTag?: boolean;
+  scene?: StageScene;
 }
 
 // ─── Petits éléments ───
@@ -121,22 +124,33 @@ const Verdict = ({ text }: { text: string }) => (
   </div>
 );
 
-const Gamme = ({ models }: { models: BrandModel[] }) => {
+// Gamme (retour Nolan 17/10 : « ça va pas du tout, c'est pas très joli ») : les plus puissantes d'abord,
+// grande photo sur fond d'atelier avec ombre au sol, nom en italique racing, cotes en chiffres,
+// filet à la couleur de la marque.
+const Gamme = ({ models, accent }: { models: BrandModel[]; accent: string }) => {
   const [all, setAll] = useState(false);
-  const list = all ? models : models.slice(0, 8);
+  const sorted = [...models].sort((a, b) => (b.power_watts ?? 0) - (a.power_watts ?? 0));
+  const list = all ? sorted : sorted.slice(0, 8);
   if (models.length === 0) return <p className="text-base text-gray-600" style={{ fontFamily: FONT }}>La gamme arrive bientôt.</p>;
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {list.map((m) => (
-          <Link key={m.id} to={`/scooter/${m.slug}`} className="group relative bg-white p-3 transition-transform hover:-translate-y-0.5" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
-            <div className="aspect-[4/3] flex items-center justify-center">
-              {modelImg(m, 400) ? <img src={modelImg(m, 400)!} alt={m.name} loading="lazy" className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" /> : <Bike className="w-10 h-10 text-gray-300" />}
+          <Link key={m.id} to={`/scooter/${m.slug}`} className="group relative flex flex-col bg-white transition-transform hover:-translate-y-1" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+            <div className="relative aspect-square sm:aspect-[5/4] overflow-hidden" style={{ background: "linear-gradient(180deg, #EFEAE0 0%, #FAF8F3 70%, #FFFFFF 100%)" }}>
+              <span aria-hidden className="absolute left-1/2 bottom-[9%] -translate-x-1/2 w-[70%] h-[7%] rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,0.22), transparent)" }} />
+              {modelImg(m, 500) ? (
+                <img src={modelImg(m, 500)!} alt={m.name} loading="lazy" className="absolute inset-x-[6%] top-[5%] bottom-[10%] m-auto h-[85%] w-[88%] object-contain transition-transform duration-300 group-hover:scale-[1.06]" />
+              ) : <Bike className="absolute inset-0 m-auto w-10 h-10 text-gray-300" />}
             </div>
-            <div className="mt-2 text-sm leading-tight line-clamp-2" style={{ fontFamily: FONT, fontWeight: 800, color: CARBON }}>{m.name}</div>
-            <div className="mt-1 text-sm text-gray-500" style={{ fontFamily: FONT }}>
-              {[m.power_watts ? `${m.power_watts} W` : null, m.range_km ? `${m.range_km} km` : null].filter(Boolean).join(" · ")}
+            <div className="flex-1 flex flex-col px-3 pt-3 pb-3.5">
+              <div className="text-sm uppercase leading-tight line-clamp-2" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>{m.name}</div>
+              <div className="mt-auto pt-2.5 flex items-baseline gap-3 flex-wrap" style={{ fontFamily: FONT }}>
+                {m.power_watts ? <span className="text-sm text-gray-500"><b className="text-base" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: CARBON }}>{m.power_watts.toLocaleString("fr-FR")}</b> W</span> : null}
+                {m.range_km ? <span className="text-sm text-gray-500"><b className="text-base" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: CARBON }}>{m.range_km}</b> km</span> : null}
+              </div>
             </div>
+            <span aria-hidden className="absolute left-0 right-0 bottom-0 h-1 transition-all group-hover:h-1.5" style={{ background: accent }} />
           </Link>
         ))}
       </div>
@@ -170,7 +184,7 @@ const Faq = ({ items }: { items: { q: string; a: string }[] }) => {
 const Body = ({ brand, models }: { brand: BrandData; models: BrandModel[] }) => (
   <>
     {brand.editorial_verdict && <Rule id="avis" title="L'avis de l'atelier"><Verdict text={brand.editorial_verdict} /></Rule>}
-    <Rule id="gamme" title={`La gamme ${brand.name}`}><Gamme models={models} /></Rule>
+    <Rule id="gamme" title={`La gamme ${brand.name}`}><Gamme models={models} accent={brandIdentity(brand.slug, brand.accent_color).accent} /></Rule>
     <BrandPartsExplorer brandName={brand.name} models={models} />
     {brand.description && <Rule id="histoire" title="L'histoire"><p className="max-w-3xl text-base md:text-lg text-[#374151] leading-relaxed" style={{ fontFamily: FONT }}>{brand.description}</p></Rule>}
     {brand.youtube_video_id && <BrandVideo videoId={brand.youtube_video_id} brandName={brand.name} accentColor={GREEN} />}
@@ -186,23 +200,6 @@ const Body = ({ brand, models }: { brand: BrandData; models: BrandModel[] }) => 
     )}
   </>
 );
-
-// ─── Visuel de droite : photo de marque si elle existe, sinon trio de modèles ───
-const Visual = ({ brand, models, height }: { brand: BrandData; models: BrandModel[]; height: string }) => {
-  if (brand.hero_image_url) {
-    return <div className="overflow-hidden" style={{ height, clipPath: CHAMFER }}><img src={optimizedImage(brand.hero_image_url, 1200)} alt={brand.name} className="w-full h-full object-cover" /></div>;
-  }
-  const trio = topModels(models, 3);
-  return (
-    <div className="relative flex items-end justify-center gap-1" style={{ height }}>
-      {trio.map((m, i) => (
-        <img key={m.id} src={modelImg(m, 600)!} alt={m.name} loading="eager"
-          className="object-contain drop-shadow-[0_18px_24px_rgba(0,0,0,0.18)]"
-          style={{ height: i === 1 ? "100%" : "82%", width: i === 1 ? "40%" : "30%", zIndex: i === 1 ? 2 : 1 }} />
-      ))}
-    </div>
-  );
-};
 
 // ─── 1 · PIT-STAND (retour Nolan 17/10 : garder le carrousel de marques de l'ancienne page) ───
 // Marques voisines en filigrane à gauche / à droite (cliquables, glisser au doigt sur téléphone),
@@ -244,6 +241,12 @@ const BrandRail = ({ current }: { current: string }) => {
     const el = ref.current?.querySelector<HTMLElement>(`[data-slug="${current}"]`);
     if (el && ref.current) ref.current.scrollTo({ left: el.offsetLeft - ref.current.clientWidth / 2 + el.clientWidth / 2, behavior: "instant" as ScrollBehavior });
   }, [all.length, current]);
+  const slide = (dir: number) => ref.current?.scrollBy({ left: dir * ref.current.clientWidth * 0.8, behavior: "smooth" });
+  const drag = useRef<{ x: number; left: number; moved: boolean } | null>(null);
+  const onDown = (e: React.PointerEvent) => { if (e.pointerType === "mouse" && ref.current) drag.current = { x: e.clientX, left: ref.current.scrollLeft, moved: false }; };
+  const onMove = (e: React.PointerEvent) => { const d = drag.current; if (!d || !ref.current) return; const dx = e.clientX - d.x; if (Math.abs(dx) > 5) d.moved = true; ref.current.scrollLeft = d.left - dx; };
+  const onUp = () => { setTimeout(() => { drag.current = null; }, 0); };
+  const onClickCapture = (e: React.MouseEvent) => { if (drag.current?.moved) { e.preventDefault(); e.stopPropagation(); } };
   if (all.length < 2) return null;
   return (
     <div className="border-y-2" style={{ borderColor: CARBON, background: "#F3EFE7" }}>
@@ -251,20 +254,33 @@ const BrandRail = ({ current }: { current: string }) => {
         <span className="text-sm font-bold uppercase tracking-[0.18em] text-gray-500" style={{ fontFamily: FONT }}>Les {all.length} marques</span>
         <Link to="/marques" className="text-sm font-bold underline min-h-[44px] inline-flex items-center" style={{ fontFamily: FONT, color: CARBON }}>Toutes les voir</Link>
       </div>
-      <div ref={ref} className="flex gap-2 overflow-x-auto px-4 lg:px-8 pb-4 pt-1 snap-x" style={{ scrollbarWidth: "none" }}>
+      <div className="relative">
+      {/* Ordinateur (retour Nolan 17/10 : « on peut pas naviguer sur l'ordinateur ») : flèches, glisser à la souris. */}
+      {(["left", "right"] as const).map((side) => (
+        <button key={side} type="button" onClick={() => slide(side === "left" ? -1 : 1)} aria-label={side === "left" ? "Marques précédentes" : "Marques suivantes"}
+          className={`hidden md:flex absolute top-1 bottom-4 z-10 w-12 items-center justify-center ${side === "left" ? "left-0" : "right-0"}`}
+          style={{ background: `linear-gradient(${side === "left" ? "90deg" : "270deg"}, #F3EFE7 55%, rgba(243,239,231,0))` }}>
+          <span className="w-11 h-11 flex items-center justify-center text-white" style={{ background: CARBON, clipPath: CHAMFER }}>
+            {side === "left" ? <ChevronLeft className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+          </span>
+        </button>
+      ))}
+      <div ref={ref} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerLeave={onUp} onClickCapture={onClickCapture}
+        className="flex gap-2 overflow-x-auto px-4 md:px-14 pb-4 pt-1 snap-x md:snap-none md:cursor-grab select-none" style={{ scrollbarWidth: "none" }}>
         {all.map((b) => {
           const on = b.slug === current;
           return (
-            <Link key={b.slug} data-slug={b.slug} to={`/marque/${b.slug}`} aria-current={on ? "page" : undefined}
+            <Link key={b.slug} data-slug={b.slug} to={`/marque/${b.slug}`} draggable={false} aria-current={on ? "page" : undefined}
               className="snap-center shrink-0 w-[104px] h-[92px] flex flex-col items-center justify-center gap-1.5 px-2 transition-transform hover:-translate-y-0.5"
               style={{ clipPath: CHAMFER, background: on ? CARBON : "#fff", boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
               <span className="w-12 h-10 flex items-center justify-center" style={on ? { background: "#fff", padding: 4 } : undefined}>
-                {b.logo_url ? <img src={b.logo_url} alt="" loading="lazy" className="max-w-full max-h-full object-contain" /> : <span className="text-lg" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: on ? "#fff" : CARBON }}>{b.name.slice(0, 2)}</span>}
+                {b.logo_url ? <img src={b.logo_url} alt="" loading="lazy" draggable={false} className="max-w-full max-h-full object-contain" /> : <span className="text-lg" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: on ? "#fff" : CARBON }}>{b.name.slice(0, 2)}</span>}
               </span>
               <span className="text-sm font-extrabold truncate max-w-full" style={{ fontFamily: FONT, color: on ? "#fff" : CARBON }}>{b.name}</span>
             </Link>
           );
         })}
+      </div>
       </div>
     </div>
   );
@@ -286,15 +302,17 @@ const PitStand = (p: Props) => {
         <Ghost item={p.next} side="right" />
         <div className="relative z-10 mx-auto max-w-6xl">
           <div className="flex items-center justify-between gap-2"><Chevron item={p.prev} side="left" /><Chevron item={p.next} side="right" /></div>
-          <div className="mt-4 grid lg:grid-cols-2 gap-8 items-center">
+          <div className="mt-4 grid lg:grid-cols-[1fr_1.2fr] gap-8 items-center">
             <div>
               <div className="flex items-center gap-4"><Logo brand={p.brand} size={64} /><span className="text-sm font-bold uppercase tracking-[0.18em]" style={{ fontFamily: FONT, color: GREEN }}>Marque</span></div>
               <div className="mt-3"><Name brand={p.brand} size="text-5xl md:text-7xl" /></div>
               {p.brand.tagline && <p className="mt-3 text-lg text-[#374151]" style={{ fontFamily: FONT }}>{p.brand.tagline}</p>}
+              {/* Téléphone : le visuel juste sous le nom, pas sous la ligne de flottaison. */}
+              <div className="mt-5 lg:hidden"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 3} /></div>
               <div className="mt-5"><Facts brand={p.brand} models={p.models} /></div>
               <div className="mt-6"><Actions brand={p.brand} /></div>
             </div>
-            <Visual brand={p.brand} models={p.models} height="clamp(240px, 32vw, 420px)" />
+            <div className="hidden lg:block"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 3} /></div>
           </div>
           <p className="mt-6 lg:hidden text-center text-sm text-gray-500" style={{ fontFamily: FONT }}>Glisse pour passer à la marque suivante</p>
         </div>
@@ -416,7 +434,7 @@ const BrandPageVariants = (p: Props) => {
       <Header />
       {p.showTag && (
         <div className="fixed top-20 right-3 z-40 rounded-full px-3 py-1.5 text-sm font-bold text-white shadow" style={{ backgroundColor: CARBON, fontFamily: FONT }}>
-          Proposition {p.look} · {BRAND_LOOK_NAMES[p.look]}
+          {p.scene && p.scene > 0 ? `Scène ${p.scene} · ${STAGE_NAMES[p.scene]}` : `Proposition ${p.look} · ${BRAND_LOOK_NAMES[p.look]}`}
         </div>
       )}
       <main className="flex-1">
