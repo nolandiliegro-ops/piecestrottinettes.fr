@@ -1,0 +1,38 @@
+name: Catalogue collections (pièces rangées par modèle)
+
+# 17/10/2026 : lecture seule. Collections Shopify / catégories WooCommerce = modèles équipés par chaque pneu, chambre, disque.
+# Modifier config/catalogue/_collections_run.txt = UN run. Sorties : branche donnees-extraction, dossier collections/.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/catalogue/_collections_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collections:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Aspiration
+        run: node scripts/catalogue-collections.mjs
+      - name: Résultats → branche donnees-extraction
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "catalogue-bot"
+          git config user.email "catalogue-bot@users.noreply.github.com"
+          mv out/collections /tmp/collections
+          git fetch origin donnees-extraction
+          git checkout -B donnees-extraction origin/donnees-extraction
+          mkdir -p collections && cp -r /tmp/collections/. collections/
+          git add collections
+          git commit -q -m "collections : $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-extraction && break; git pull --rebase origin donnees-extraction; done

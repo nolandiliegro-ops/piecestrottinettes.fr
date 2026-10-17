@@ -1,0 +1,24 @@
+# Boutiques à collections / catégories par modèle (17/10/2026) — domaines repris de scripts/suppliers/plug-crawl.mjs + catalogue revendeurs
+www.trotnation.com
+www.wee-bot.com
+escootervision.eu
+france-gyrotrot.com
+ewheel.es
+garagetrott.fr
+mrtrottinette.fr
+trottwheelshop.fr
+voltride.com
+www.luckyster.fr
+dualtron-shop.com
+escootparts.com
+goemotion.eu
+solution-trottinette.fr
+trottipieces.fr
+www.evolt.eu
+wegoboard.com
+www.isinwheel.fr
+www.hiboy.com
+iscooterglobal.com
+jump-way.ma
+urbanglide.com
+e-watts.fr
