@@ -1,0 +1,163 @@
+[
+ {
+  "d": "www.trotnation.com",
+  "kind": "shopify",
+  "collections_marque": 97,
+  "lignes": 1350,
+  "err": null
+ },
+ {
+  "d": "www.wee-bot.com",
+  "kind": "shopify",
+  "collections_marque": 456,
+  "lignes": 5007,
+  "err": null
+ },
+ {
+  "d": "escootervision.eu",
+  "kind": "shopify",
+  "collections_marque": 10,
+  "lignes": 271,
+  "err": null
+ },
+ {
+  "d": "france-gyrotrot.com",
+  "kind": "shopify",
+  "collections_marque": 30,
+  "lignes": 55,
+  "err": null
+ },
+ {
+  "d": "ewheel.es",
+  "kind": "shopify",
+  "collections_marque": 369,
+  "lignes": 3436,
+  "err": null
+ },
+ {
+  "d": "garagetrott.fr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "mrtrottinette.fr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 62,
+  "err": null
+ },
+ {
+  "d": "trottwheelshop.fr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 4,
+  "err": null
+ },
+ {
+  "d": "voltride.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "www.luckyster.fr",
+  "kind": "shopify",
+  "collections_marque": 5,
+  "lignes": 44,
+  "err": null
+ },
+ {
+  "d": "dualtron-shop.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "escootparts.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 88,
+  "err": null
+ },
+ {
+  "d": "goemotion.eu",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON woo:500"
+ },
+ {
+  "d": "solution-trottinette.fr",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:410"
+ },
+ {
+  "d": "trottipieces.fr",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:404"
+ },
+ {
+  "d": "www.evolt.eu",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:403 woo:403"
+ },
+ {
+  "d": "wegoboard.com",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.isinwheel.fr",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "www.hiboy.com",
+  "kind": "shopify",
+  "collections_marque": 3,
+  "lignes": 49,
+  "err": null
+ },
+ {
+  "d": "iscooterglobal.com",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "jump-way.ma",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 90,
+  "err": null
+ },
+ {
+  "d": "urbanglide.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "e-watts.fr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 6671,
+  "err": null
+ }
+]
