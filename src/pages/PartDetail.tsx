@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/usePartDetail";
@@ -16,6 +16,7 @@ import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
 import WorkshopSection from "@/components/pdp/WorkshopSection";
 import VideoInstallation from "@/components/pdp/VideoInstallation";
 import RelatedProducts from "@/components/pdp/RelatedProducts";
+import PartPageVariants, { type PartStyle } from "@/components/pdp/PartPageVariants";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 
@@ -32,6 +33,10 @@ const sectionVariants = {
 
 const PartDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  // 17/10 : 5 propositions de mise en page, UNIQUEMENT avec ?style=1..5 (sans paramètre : page actuelle).
+  const [searchParams] = useSearchParams();
+  const styleNum = Number(searchParams.get("style"));
+  const pageStyle = (styleNum >= 1 && styleNum <= 5 ? styleNum : null) as PartStyle | null;
   const { data: part, isLoading: partLoading, error } = usePartBySlug(slug);
   const { data: scooters = [], isLoading: scootersLoading } = useCompatibleScooters(
     part?.id ?? null
@@ -174,6 +179,17 @@ const PartDetail = () => {
       />
       <Header />
 
+      {pageStyle ? (
+        <PartPageVariants
+          style={pageStyle}
+          part={part}
+          scooters={compatScooters}
+          scootersLoading={scootersLoading}
+          related={relatedParts}
+          relatedLoading={relatedLoading}
+          showTag
+        />
+      ) : (
       <div className="pt-20 pb-16">
         {/* Breadcrumb (matche le BreadcrumbList JSON-LD) */}
         <motion.div
@@ -365,6 +381,7 @@ const PartDetail = () => {
           <RelatedProducts parts={relatedParts} isLoading={relatedLoading} />
         </motion.section>
       </div>
+      )}
     </div>
   );
 };
