@@ -11,7 +11,7 @@ import BrandExpertNote from "@/components/brand/BrandExpertNote";
 import BrandStory from "@/components/brand/BrandStory";
 import BrandModelsCarousel from "@/components/brand/BrandModelsCarousel";
 import BrandVideo from "@/components/brand/BrandVideo";
-import BrandTopParts from "@/components/brand/BrandTopParts";
+import BrandPartsExplorer from "@/components/brand/BrandPartsExplorer";
 import BrandInfoBar from "@/components/brand/BrandInfoBar";
 import BrandCTA from "@/components/brand/BrandCTA";
 import BrandFAQ from "@/components/brand/BrandFAQ";
@@ -24,7 +24,7 @@ const GRAIN_BG =
 
 const Brand = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { brand, models, topParts, isLoading } = useBrandData(slug);
+  const { brand, models, isLoading } = useBrandData(slug);
   const { prev, next } = useBrandsNavigation(slug);
 
   // Loading — until we know whether the (published) brand exists.
@@ -130,9 +130,8 @@ const Brand = () => {
           <BrandVideo videoId={brand.youtube_video_id} brandName={brand.name} accentColor={brand.accent_color} />
         )}
 
-        {topParts.length > 0 && (
-          <BrandTopParts parts={topParts} brandName={brand.name} brandSlug={brand.slug} />
-        )}
+        {/* 17/10 : toutes les pièces de la marque (catégorie / modèle / recherche) au lieu des 8 « plus demandées ». */}
+        <BrandPartsExplorer brandName={brand.name} models={models} />
 
         {Array.isArray(brand.faq) && brand.faq.length > 0 && <BrandFAQ items={brand.faq} brandName={brand.name} />}
 
