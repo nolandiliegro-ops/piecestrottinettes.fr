@@ -16,6 +16,9 @@ import { useAllParts, type CataloguePart } from "@/hooks/useCatalogueData";
 import { useProductSearch, type ProductSearchRow } from "@/hooks/useProductSearch";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
+import CatalogueTop, { EtabliSidebar, PRICE_OPTS, type CatalogueLook } from "@/components/catalogue/CatalogueTop";
+import { useCategoryImages } from "@/hooks/useCategoryImages";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -87,6 +90,17 @@ const Catalogue = () => {
   // Home redirections — read but never mutate URL except via clear handlers
   const searchQuery = searchParams.get("search")?.trim() || null;
   const brandFilter = searchParams.get("brand") || null;
+  // 17/10 : nouvelle tête de page (recherche + catégories + filtres), 5 propositions via ?vue=1..5
+  const vueN = Number(searchParams.get("vue"));
+  const vue = (vueN >= 1 && vueN <= 5 ? vueN : null) as CatalogueLook | null;
+  const priceSel = (searchParams.get("prix") ?? "").split(",").filter(Boolean);
+  const stockOnly = searchParams.get("stock") === "1";
+  const partSort = searchParams.get("tri") ?? "";
+  const setP = (mutate: (p: URLSearchParams) => void) => {
+    const next = new URLSearchParams(searchParams);
+    mutate(next);
+    setSearchParams(next, { replace: true });
+  };
 
   // Resolve brand slug → display name (for banner)
   const { data: brandDisplayName } = useQuery({
@@ -135,6 +149,22 @@ const Catalogue = () => {
     enabled: !!brandFilter,
     staleTime: 5 * 60 * 1000,
   });
+
+  // ?scooter= : pièces compatibles (✅ seulement) — appliqué aussi hors recherche (17/10 : avant, seul le bandeau s'affichait).
+  const { data: scooterPartIds = null } = useQuery({
+    queryKey: ["catalogue_scooter_part_ids", scooterIdFilter],
+    queryFn: async (): Promise<Set<string>> => {
+      const { data } = await supabase
+        .from("part_compatibility")
+        .select("part_id, confidence_level, suggestion_reason")
+        .eq("scooter_model_id", scooterIdFilter!);
+      return new Set((data || []).filter((r) => classifyCompat(r) === "verified").map((r) => r.part_id as string));
+    },
+    enabled: !!scooterIdFilter && vue !== null,
+    staleTime: 5 * 60 * 1000,
+  });
+  const { selectedScooter } = useSelectedScooter();
+  const { data: categoryImages = {} } = useCategoryImages();
 
   const { data: categories = [], isLoading: categoriesLoading } = useCategories();
   const { data: scooterModels = [] } = useScooterModels();
@@ -238,6 +268,46 @@ const Catalogue = () => {
     return filtered;
   }, [allParts, activeCategory, activeSubCategory, subCategories, searchQuery, searchExact, searchRelated, brandFilter, brandPartIds]);
 
+  // Toutes les pièces publiées (cache partagé) → nombre de pièces par catégorie parente.
+  const { data: everyPart = [] } = useAllParts(null);
+  const catCounts = useMemo(() => {
+    const parentOf: Record<string, string> = {};
+    categories.forEach((c) => { parentOf[c.id] = c.parent_id ?? c.id; });
+    const out: Record<string, number> = {};
+    everyPart.forEach((pt) => { const k = pt.category_id ? parentOf[pt.category_id] ?? pt.category_id : null; if (k) out[k] = (out[k] ?? 0) + 1; });
+    return out;
+  }, [everyPart, categories]);
+  const catImages = useMemo(() => {
+    const out: Record<string, string | undefined> = {};
+    Object.entries(categoryImages as Record<string, unknown>).forEach(([k, v]) => {
+      out[k] = typeof v === "string" ? v : (v as { image_url?: string } | null)?.image_url;
+    });
+    return out;
+  }, [categoryImages]);
+
+  // Filtres de la nouvelle tête (prix, stock, ma trottinette, tri) — appliqués aux deux chemins (grille et recherche).
+  const applyTopFilters = (list: CataloguePart[]) => {
+    if (!vue) return list;
+    let out = list;
+    if (scooterIdFilter && scooterPartIds && !isSearchQ) out = out.filter((pt) => scooterPartIds.has(pt.id));
+    if (priceSel.length) {
+      const ranges = PRICE_OPTS.filter((o) => priceSel.includes(o.value));
+      out = out.filter((pt) => pt.price != null && ranges.some((r) => pt.price! >= r.min && pt.price! < r.max));
+    }
+    if (stockOnly) out = out.filter((pt) => (pt.stock_quantity ?? 0) > 0);
+    if (partSort === "prix") out = [...out].sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+    else if (partSort === "prix-desc") out = [...out].sort((a, b) => (b.price ?? -1) - (a.price ?? -1));
+    else if (partSort === "nom") out = [...out].sort((a, b) => a.name.localeCompare(b.name, "fr"));
+    return out;
+  };
+  const isSearchQ = !!searchQuery;
+  const shownParts = useMemo(() => applyTopFilters(parts), // eslint-disable-line react-hooks/exhaustive-deps
+    [parts, vue, scooterIdFilter, scooterPartIds, priceSel.join(), stockOnly, partSort]);
+  const shownExact = useMemo(() => applyTopFilters(searchExact), // eslint-disable-line react-hooks/exhaustive-deps
+    [searchExact, vue, priceSel.join(), stockOnly, partSort]);
+  const shownRelated = useMemo(() => applyTopFilters(searchRelated), // eslint-disable-line react-hooks/exhaustive-deps
+    [searchRelated, vue, priceSel.join(), stockOnly, partSort]);
+
   // Reset sous-catégorie quand on change de catégorie parente
   const handleCategoryChange = (categoryId: string | null) => {
     setActiveCategory(categoryId);
@@ -278,7 +348,31 @@ const Catalogue = () => {
       {/* Main content area */}
       <main className="pt-16 lg:pt-20">
         {/* Title Section - COMPACT for above the fold */}
-        <section className="container mx-auto px-4 py-6 lg:py-8 text-center">
+        {vue && (
+          <CatalogueTop
+            look={vue}
+            total={everyPart.length}
+            resultCount={isSearch ? shownExact.length + (shownExact.length ? 0 : shownRelated.length) : shownParts.length}
+            categories={parentCategories}
+            images={catImages}
+            counts={catCounts}
+            activeCategory={activeCategory}
+            onCategory={handleCategoryChange}
+            query={searchQuery ?? ""}
+            onQuery={(q) => setP((sp) => { if (q.trim()) sp.set("search", q.trim()); else sp.delete("search"); })}
+            prices={priceSel}
+            onTogglePrice={(v) => setP((sp) => { const cur = new Set(priceSel); if (cur.has(v)) cur.delete(v); else cur.add(v); if (cur.size) sp.set("prix", [...cur].join(",")); else sp.delete("prix"); })}
+            inStock={stockOnly}
+            onStock={(on) => setP((sp) => { if (on) sp.set("stock", "1"); else sp.delete("stock"); })}
+            sort={partSort}
+            onSort={(v) => setP((sp) => { if (v) sp.set("tri", v); else sp.delete("tri"); })}
+            myScooter={selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
+            scooterOn={!!selectedScooter && scooterIdFilter === selectedScooter.id}
+            onScooter={(on) => setP((sp) => { if (on && selectedScooter) sp.set("scooter", selectedScooter.id); else sp.delete("scooter"); })}
+          />
+        )}
+        <section className={vue ? "container mx-auto px-4 text-center" : "container mx-auto px-4 py-6 lg:py-8 text-center"}>
+          {!vue && <>
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -310,9 +404,10 @@ const Catalogue = () => {
             {displayLoading ? "Chargement..." : `${parts.length} pièces disponibles`}
             {isSwitching && <Loader2 className="inline-block w-4 h-4 ml-2 animate-spin align-[-2px]" />}
           </motion.div>
+          </>}
 
           {/* Scooter Filter Banner */}
-          {filteredScooterModel && (
+          {filteredScooterModel && !(vue && selectedScooter?.id === scooterIdFilter) && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -332,7 +427,7 @@ const Catalogue = () => {
             </motion.div>
           )}
 
-          {searchQuery && (
+          {searchQuery && !vue && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -374,7 +469,7 @@ const Catalogue = () => {
         </section>
 
         {/* Category Bento Grid - Only parent categories - Centered */}
-        <section className="container mx-auto px-4 pb-4 flex justify-center">
+        {!vue && <section className="container mx-auto px-4 pb-4 flex justify-center">
           <div className="w-full max-w-5xl">
             <CategoryBentoGrid
               categories={parentCategories}
@@ -383,7 +478,7 @@ const Catalogue = () => {
               isLoading={categoriesLoading}
             />
           </div>
-        </section>
+        </section>}
 
         {/* Sub-Category Bar - Appears when parent has children */}
         <section className="container mx-auto px-4">
@@ -400,7 +495,21 @@ const Catalogue = () => {
         </section>
 
         {/* Product Grid - visible above the fold */}
-        <section className="container mx-auto px-4 py-6">
+        <div className={vue === 5 ? "container mx-auto px-4 lg:grid lg:grid-cols-[260px_1fr] lg:gap-8" : undefined}>
+        {vue === 5 && (
+          <EtabliSidebar
+            look={5} total={everyPart.length} resultCount={shownParts.length} categories={parentCategories} images={catImages} counts={catCounts}
+            activeCategory={activeCategory} onCategory={handleCategoryChange} query={searchQuery ?? ""} onQuery={() => undefined}
+            prices={priceSel}
+            onTogglePrice={(v) => setP((sp) => { const cur = new Set(priceSel); if (cur.has(v)) cur.delete(v); else cur.add(v); if (cur.size) sp.set("prix", [...cur].join(",")); else sp.delete("prix"); })}
+            inStock={stockOnly} onStock={(on) => setP((sp) => { if (on) sp.set("stock", "1"); else sp.delete("stock"); })}
+            sort={partSort} onSort={(v) => setP((sp) => { if (v) sp.set("tri", v); else sp.delete("tri"); })}
+            myScooter={selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
+            scooterOn={!!selectedScooter && scooterIdFilter === selectedScooter.id}
+            onScooter={(on) => setP((sp) => { if (on && selectedScooter) sp.set("scooter", selectedScooter.id); else sp.delete("scooter"); })}
+          />
+        )}
+        <section className={vue === 5 ? "py-6 min-w-0" : "container mx-auto px-4 py-6"}>
           <AnimatePresence mode="wait">
             {displayLoading ? (
               <motion.div
@@ -411,15 +520,15 @@ const Catalogue = () => {
               >
                 <SkeletonGrid />
               </motion.div>
-            ) : parts.length > 0 ? (
+            ) : shownParts.length > 0 ? (
               isSearch ? (
-                searchExact.length > 0 ? (
+                shownExact.length > 0 ? (
                   // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
                   <div
                     key="search-exact"
                     className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
                   >
-                    {searchExact.map((part, index) => (
+                    {shownExact.map((part, index) => (
                       <PartCard key={part.id} part={part} index={index} />
                     ))}
                   </div>
@@ -430,7 +539,7 @@ const Catalogue = () => {
                       Aucun résultat exact, voici des suggestions
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
-                      {searchRelated.map((part, index) => (
+                      {shownRelated.map((part, index) => (
                         <PartCard key={part.id} part={part} index={index} />
                       ))}
                     </div>
@@ -448,7 +557,7 @@ const Catalogue = () => {
                     isSwitching && "opacity-60 pointer-events-none"
                   )}
                 >
-                  {parts.slice(0, visibleCount).map((part, index) => (
+                  {shownParts.slice(0, visibleCount).map((part, index) => (
                     <PartCard key={part.id} part={part} index={index} />
                   ))}
                 </motion.div>
@@ -475,7 +584,7 @@ const Catalogue = () => {
           </AnimatePresence>
 
           {/* Pagination "Voir plus" — grille standard uniquement (hors recherche, hors chargement initial). */}
-          {!isSearch && !displayLoading && visibleCount < parts.length && (
+          {!isSearch && !displayLoading && visibleCount < shownParts.length && (
             <div className="mt-10 flex justify-center">
               <button
                 type="button"
@@ -483,11 +592,12 @@ const Catalogue = () => {
                 className="inline-flex items-center gap-2 min-h-[48px] px-8 rounded-xl border bg-white text-sm font-bold uppercase tracking-wider transition-transform hover:bg-[#1A1A1A]/[0.03] active:scale-[0.98]"
                 style={{ borderColor: "#1A1A1A", color: "#1A1A1A", transitionTimingFunction: "cubic-bezier(0.32,0.72,0,1)" }}
               >
-                Voir plus ({parts.length - visibleCount} restantes)
+                Voir plus ({shownParts.length - visibleCount} restantes)
               </button>
             </div>
           )}
         </section>
+        </div>
       </main>
     </div>
   );
