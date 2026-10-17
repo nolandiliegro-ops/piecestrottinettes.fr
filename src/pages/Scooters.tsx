@@ -77,7 +77,7 @@ const Scooters = () => {
   // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
   const fl = Number(params.get("filtres"));
   // 17/10 : « Plaques » (1) retenue par Nolan = défaut ; ?filtres=0 = ancienne barre, 2..5 = autres propositions
-  const atelier = params.get("vue") === "atelier";
+  const atelier = params.get("vue") !== "0"; // 17/10 : « Atelier » par défaut (choix Nolan), ancienne page sur ?vue=0
   const filterLook = (params.get("filtres") === null ? 1 : fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
     const next = new URLSearchParams(params);

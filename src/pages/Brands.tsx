@@ -6,9 +6,9 @@ import BrandWallSection from "@/components/home/BrandWallSection";
 import AtelierBrands from "@/components/listing/AtelierBrands";
 
 const Brands = () => {
-  // 17/10 : maquette « Atelier » (même squelette que /catalogue) sur ?vue=atelier ; sans paramètre, page actuelle.
+  // 17/10 : « Atelier » (même squelette que /catalogue) par défaut, choix Nolan 17/10 ; ancienne page sur ?vue=0.
   const [sp] = useSearchParams();
-  const atelier = sp.get("vue") === "atelier";
+  const atelier = sp.get("vue") !== "0";
   return (
     <div className="min-h-screen" style={{ backgroundColor: atelier ? "#FAFAF8" : "#F5F0E8" }}>
       <SEO
