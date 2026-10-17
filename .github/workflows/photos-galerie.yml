@@ -34,7 +34,7 @@ jobs:
           SB_URL: ${{ secrets.SUPABASE_URL }}
           ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
         run: |
-          if grep -qE '^(write|append) ' config/photos/_run.txt; then
+          if grep -qE '^(write|append|compat) ' config/photos/_run.txt; then
             if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=photos::secret absent"; exit 1; fi
             KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
             umask 077
@@ -56,6 +56,13 @@ jobs:
                 curl -s -L --max-time 30 -o "out/fetch-$lot/$name" "$url" && n=$((n+1))
               done < "config/photos/$lot.txt"
               echo "::notice title=$lot fetch::$n fichiers"
+              continue
+            fi
+            if [ "$mode" = "compat" ]; then
+              # Relance du moteur de compatibilité (toutes catégories à clés) sur toutes les pièces publiées.
+              node scripts/_retrigger-by-category.mjs > "out/compat-$lot.log" 2>&1
+              echo "::notice title=compat::EXIT=$?"
+              tail -n 40 "out/compat-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | sed 's/^/::notice title=compat::/'
               continue
             fi
             if [ "$mode" = "audit" ]; then

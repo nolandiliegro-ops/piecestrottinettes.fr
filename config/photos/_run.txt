@@ -1,3 +1,1 @@
-append r6a
-append r6b
-append r6c
+compat all
