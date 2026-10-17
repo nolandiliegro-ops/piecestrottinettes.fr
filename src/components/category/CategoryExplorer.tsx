@@ -8,8 +8,9 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Search, X } from "lucide-react";
+import { Search, X, ChevronLeft } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { classifyCompat } from "@/lib/compatibilityStatus";
 import PartCard from "@/components/parts/PartCard";
 import type { CataloguePart } from "@/hooks/useCatalogueData";
@@ -110,53 +111,67 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   const guide = GUIDES[slug];
   const ids = useMemo(() => parts.map((p) => p.id), [parts]);
 
-  // Marques de trottinette compatibles (✅ seulement) par pièce.
-  const { data: brandMap = {} } = useQuery({
-    queryKey: ["category-brand-map", slug, ids.length],
+  // 17/10 (retour Nolan) : filtrer par MARQUE mélange des modèles de tailles différentes
+  // (« Xiaomi 19 » = 8,5" + 10" + 10x2.50…) et se lit comme « pièces de marque Xiaomi ».
+  // On filtre donc par MODÈLE exact : marque → modèle → seules ses pièces (compatibilités ✅).
+  type ModelInfo = { name: string; slug: string; brand: string; brandName: string; parts: Set<string> };
+  const { data: modelMap = {} } = useQuery({
+    queryKey: ["category-model-map", slug, ids.length],
     enabled: ids.length > 0,
     staleTime: 10 * 60 * 1000,
     queryFn: async () => {
-      const out: Record<string, { name: string; parts: Set<string> }> = {};
+      const out: Record<string, ModelInfo> = {};
       for (let i = 0; i < ids.length; i += 150) {
         const { data } = await supabase
           .from("part_compatibility")
-          .select("part_id, confidence_level, suggestion_reason, scooter_models(brands!scooter_models_brand_id_fkey(name, slug))")
+          .select("part_id, confidence_level, suggestion_reason, scooter_models(id, name, slug, brands!scooter_models_brand_id_fkey(name, slug))")
           .in("part_id", ids.slice(i, i + 150));
         (data || []).forEach((r) => {
           if (classifyCompat(r) !== "verified") return;
-          const b = (r.scooter_models as unknown as { brands: { name: string; slug: string } | null } | null)?.brands;
-          if (!b) return;
-          (out[b.slug] ??= { name: b.name, parts: new Set() }).parts.add(r.part_id as string);
+          const m = r.scooter_models as unknown as { id: string; name: string; slug: string; brands: { name: string; slug: string } | null } | null;
+          if (!m || !m.brands) return;
+          (out[m.id] ??= { name: m.name, slug: m.slug, brand: m.brands.slug, brandName: m.brands.name, parts: new Set() }).parts.add(r.part_id as string);
         });
       }
       return out;
     },
   });
+  const { selectedScooter } = useSelectedScooter();
 
   const [q, setQ] = useState("");
-  const [brand, setBrand] = useState<string | null>(null);
+  const [brand, setBrand] = useState<string | null>(null); // marque ouverte (étape 1), ne filtre pas
+  const [model, setModel] = useState<string | null>(null); // modèle choisi (étape 2), filtre
   const [size, setSize] = useState<string | null>(null);
   const [allBrands, setAllBrands] = useState(false);
   const [visible, setVisible] = useState(12);
-  useEffect(() => { setQ(""); setBrand(null); setSize(null); setVisible(12); }, [slug]);
-  useEffect(() => setVisible(12), [q, brand, size]);
+  useEffect(() => { setQ(""); setBrand(null); setModel(null); setSize(null); setVisible(12); }, [slug]);
+  useEffect(() => setVisible(12), [q, model, size]);
+  // Trottinette du garage / sélecteur : présélectionnée si elle a des pièces ici.
+  useEffect(() => { if (selectedScooter && modelMap[selectedScooter.id] && !model) { setModel(selectedScooter.id); setBrand(modelMap[selectedScooter.id].brand); } }, [selectedScooter, modelMap]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const brands = useMemo(() => Object.entries(brandMap).map(([s, v]) => ({ slug: s, name: v.name, n: v.parts.size })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "fr")), [brandMap]);
+  const brands = useMemo(() => {
+    const m = new Map<string, { name: string; models: number }>();
+    Object.values(modelMap).forEach((mi) => m.set(mi.brand, { name: mi.brandName, models: (m.get(mi.brand)?.models ?? 0) + 1 }));
+    return [...m.entries()].map(([s2, v]) => ({ slug: s2, name: v.name, n: v.models })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "fr"));
+  }, [modelMap]);
+  const brandModels = useMemo(() => Object.entries(modelMap).filter(([, mi]) => mi.brand === brand).map(([id, mi]) => ({ id, ...mi })).sort((a, b) => a.name.localeCompare(b.name, "fr")), [modelMap, brand]);
   const sizes = useMemo(() => {
     const m = new Map<string, number>();
-    parts.forEach((p) => { const s = sizeOf(slug, p.name); if (s) m.set(s, (m.get(s) ?? 0) + 1); });
+    // Tailles du modèle choisi seulement (sinon on proposerait des tailles qui ne vont pas sur sa trottinette).
+    const base = model && modelMap[model] ? parts.filter((p) => modelMap[model].parts.has(p.id)) : parts;
+    base.forEach((p) => { const s = sizeOf(slug, p.name); if (s) m.set(s, (m.get(s) ?? 0) + 1); });
     return [...m.entries()].sort((a, b) => sizeNum(a[0]) - sizeNum(b[0]));
-  }, [parts, slug]);
+  }, [parts, slug, model, modelMap]);
 
   const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/,/g, ".");
   const shown = useMemo(() => {
     let list = parts;
-    if (brand && brandMap[brand]) list = list.filter((p) => brandMap[brand].parts.has(p.id));
+    if (model && modelMap[model]) list = list.filter((p) => modelMap[model].parts.has(p.id));
     if (size) list = list.filter((p) => sizeOf(slug, p.name) === size);
     const nq = norm(q.trim());
     if (nq) list = list.filter((p) => norm(p.name).includes(nq));
     return list;
-  }, [parts, brand, brandMap, size, q, slug]);
+  }, [parts, model, modelMap, size, q, slug]);
 
   const brandList = allBrands ? brands : brands.slice(0, 10);
 
@@ -203,22 +218,41 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
 
           {brands.length > 0 && (
             <div className="mt-5">
-              <Label>Par marque de trottinette</Label>
-              <div className="flex flex-wrap gap-2">
-                <Plate on={brand === null} onClick={() => setBrand(null)}>Toutes <Num n={parts.length} on={brand === null} /></Plate>
-                {brandList.map((b) => (
-                  <Plate key={b.slug} on={brand === b.slug} onClick={() => setBrand(brand === b.slug ? null : b.slug)}>{b.name} <Num n={b.n} on={brand === b.slug} /></Plate>
-                ))}
-                {brands.length > 10 && (
-                  <button type="button" onClick={() => setAllBrands(!allBrands)} className="h-11 px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
-                    {allBrands ? "Moins" : `+ ${brands.length - 10} marques`}
-                  </button>
-                )}
-              </div>
+              <Label>Ta trottinette</Label>
+              {model && modelMap[model] ? (
+                <div className="flex flex-wrap items-center gap-2">
+                  <Plate on onClick={() => { setModel(null); setSize(null); }}>{modelMap[model].brandName} {modelMap[model].name.replace(new RegExp(`^${modelMap[model].brandName}\\s+`, "i"), "")} <Num n={modelMap[model].parts.size} on /> <X className="w-4 h-4" /></Plate>
+                  <span className="text-sm text-gray-600" style={{ fontFamily: FONT }}>Seules les pièces vérifiées pour ce modèle sont affichées.</span>
+                </div>
+              ) : brand ? (
+                <>
+                  <div className="flex flex-wrap gap-2">
+                    <button type="button" onClick={() => setBrand(null)} className="inline-flex items-center gap-1 h-11 pl-2 pr-3 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}><ChevronLeft className="w-4 h-4" />{brands.find((x) => x.slug === brand)?.name}</button>
+                    {brandModels.map((m) => (
+                      <Plate key={m.id} on={false} onClick={() => { setModel(m.id); setSize(null); }}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")} <Num n={m.parts.size} on={false} /></Plate>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ton modèle : chaque modèle a ses propres tailles.</p>
+                </>
+              ) : (
+                <>
+                  <div className="flex flex-wrap gap-2">
+                    {brandList.map((b) => (
+                      <Plate key={b.slug} on={false} onClick={() => setBrand(b.slug)}>{b.name} <span className="text-sm font-semibold text-gray-500">{b.n} modèle{b.n > 1 ? "s" : ""}</span></Plate>
+                    ))}
+                    {brands.length > 10 && (
+                      <button type="button" onClick={() => setAllBrands(!allBrands)} className="h-11 px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
+                        {allBrands ? "Moins" : `+ ${brands.length - 10} marques`}
+                      </button>
+                    )}
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ta marque, puis ton modèle.</p>
+                </>
+              )}
             </div>
           )}
 
-          {sizes.length > 1 && (
+          {(sizes.length > 1 || (size && sizes.length > 0)) && (
             <div className="mt-5">
               <Label>Par taille</Label>
               <div className="flex gap-2 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap pb-1" style={{ scrollbarWidth: "none" }}>
@@ -233,7 +267,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
 
       <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
         {shown.length === 0 ? (
-          <p className="py-10 text-base text-gray-600" style={{ fontFamily: FONT }}>Aucune pièce avec ces critères. <button type="button" onClick={() => { setQ(""); setBrand(null); setSize(null); }} className="font-bold underline min-h-[44px]" style={{ color: CARBON }}>Tout réafficher</button></p>
+          <p className="py-10 text-base text-gray-600" style={{ fontFamily: FONT }}>Aucune pièce avec ces critères. <button type="button" onClick={() => { setQ(""); setBrand(null); setModel(null); setSize(null); }} className="font-bold underline min-h-[44px]" style={{ color: CARBON }}>Tout réafficher</button></p>
         ) : (
           <>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
