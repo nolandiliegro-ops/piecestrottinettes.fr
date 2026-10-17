@@ -188,7 +188,15 @@ const ScooterDetail = () => {
         schema={seoFiche ? [productSchema, breadcrumbSchema, {
           "@context": "https://schema.org", "@type": "FAQPage",
           mainEntity: seoFiche.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
-        }] : [productSchema, breadcrumbSchema]}
+        }, ...(seoFiche.video ? [{
+          "@context": "https://schema.org", "@type": "VideoObject",
+          name: seoFiche.video.title,
+          description: `${seoFiche.displayName} en vidéo (${seoFiche.video.channel}).`,
+          thumbnailUrl: `https://i.ytimg.com/vi/${seoFiche.video.id}/hqdefault.jpg`,
+          uploadDate: seoFiche.video.uploadDate,
+          embedUrl: `https://www.youtube-nocookie.com/embed/${seoFiche.video.id}`,
+          contentUrl: `https://www.youtube.com/watch?v=${seoFiche.video.id}`,
+        }] : [])] : [productSchema, breadcrumbSchema]}
       />
       <ShowroomHeader />
 

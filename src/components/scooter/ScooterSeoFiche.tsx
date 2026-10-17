@@ -9,7 +9,8 @@
  */
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Check, ChevronDown, Minus } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Minus, Play, ShieldCheck } from "lucide-react";
+import { partnerOf } from "@/config/partners";
 import type { ScooterSeo } from "@/data/scooterSeo";
 
 const UNB = "'Unbounded', sans-serif";
@@ -30,9 +31,59 @@ const Block = ({ id, title, children }: { id?: string; title: string; children: 
 
 type Mode = "tabs" | "long";
 
+/** Vidéo légère : vignette + bouton lecture, l'iframe YouTube ne se charge qu'au clic (page rapide). */
+const Video = ({ v, name }: { v: NonNullable<ScooterSeo["video"]>; name: string }) => {
+  const [play, setPlay] = useState(false);
+  return (
+    <figure className="w-full">
+      <div className="relative w-full aspect-video bg-[#1A1A1A] overflow-hidden" style={{ clipPath: CHAMFER }}>
+        {play ? (
+          <iframe className="absolute inset-0 w-full h-full" src={`https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0`}
+            title={v.title} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        ) : (
+          <button type="button" onClick={() => setPlay(true)} className="group absolute inset-0 w-full h-full" aria-label={`Lire la vidéo : ${v.title}`}>
+            <img src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`} alt={`Vidéo ${name}`} loading="lazy" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+            <span className="absolute inset-0 flex items-center justify-center">
+              <span className="w-16 h-16 rounded-full flex items-center justify-center bg-white/95 shadow-xl group-hover:scale-105 transition-transform">
+                <Play className="w-7 h-7 ml-1" style={{ color: CARBON }} fill={CARBON} />
+              </span>
+            </span>
+          </button>
+        )}
+      </div>
+      <figcaption className="mt-2 text-sm text-gray-500" style={{ fontFamily: FONT }}>Vidéo : {v.channel}</figcaption>
+    </figure>
+  );
+};
+
+/** « Où l'acheter » : le partenaire présenté comme un choix de l'atelier, lien partenaire assumé. */
+const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
+  const p = partnerOf(url);
+  if (!p) return null;
+  return (
+    <div className="mt-8 bg-white p-5 lg:p-6 grid lg:grid-cols-[1fr_auto] gap-4 lg:gap-8 items-center" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+      <div>
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <p className="mt-1 text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
+        <p className="mt-2 text-base text-[#374151] leading-relaxed max-w-2xl">
+          On ne vend pas de trottinettes, on vend leurs pièces. Pour la machine, on recommande seulement les vendeurs que notre atelier connaît.
+        </p>
+        <p className="mt-2 flex items-start gap-2 text-sm text-gray-500">
+          <ShieldCheck className="w-4 h-4 mt-0.5 shrink-0" />
+          <span>Lien partenaire : si tu achètes par ce lien, on touche une petite commission, sans surcoût pour toi.</span>
+        </p>
+      </div>
+      <a href={url} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center justify-center gap-2 min-h-[52px] px-6 text-sm font-extrabold uppercase tracking-wider text-white"
+        style={{ background: CARBON, clipPath: CHAMFER }}>
+        Voir l'offre chez {p.name} <ArrowRight className="w-4 h-4" />
+      </a>
+    </div>
+  );
+};
+
 const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string | null }) => {
   const name = seo.displayName;
-  const hasPrice = !!(seo.price || affiliateLink);
+  const hasPrice = !!seo.price;
   const tabs = [
     { k: "pres", label: "Présentation" },
     { k: "tech", label: "Fiche technique" },
@@ -62,10 +113,15 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
           ))}
         </div>
 
-        <div className="mt-6 min-h-[220px] max-w-4xl" style={{ fontFamily: FONT }}>
+        <div className="mt-6 min-h-[220px] max-w-5xl" style={{ fontFamily: FONT }}>
           <div id="ts-pres" role="tabpanel" className={panel("pres")}>
-            <h3 className={h3} style={{ color: GREEN }}>{name} : présentation</h3>
-            <div className="space-y-4 text-base md:text-lg text-[#374151] leading-relaxed">{seo.intro.map((p, i) => <p key={i}>{p}</p>)}</div>
+            <div className={seo.video ? "grid lg:grid-cols-[1fr_minmax(0,420px)] gap-6 lg:gap-10 items-start" : ""}>
+              <div>
+                <h3 className={h3} style={{ color: GREEN }}>{name} : présentation</h3>
+                <div className="space-y-4 text-base md:text-lg text-[#374151] leading-relaxed">{seo.intro.map((p, i) => <p key={i}>{p}</p>)}</div>
+              </div>
+              {seo.video && <Video v={seo.video} name={name} />}
+            </div>
           </div>
 
           <div id="ts-tech" role="tabpanel" className={panel("tech")}>
@@ -128,11 +184,6 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
             <div id="ts-prix" role="tabpanel" className={`${panel("prix")} space-y-3`}>
               <h3 className={h3} style={{ color: GREEN }}>Prix et où l'acheter</h3>
               {seo.price && <p className="text-base text-[#374151]">{seo.price.text} <span className="text-sm text-gray-500">Source : {seo.price.source}.</span></p>}
-              {affiliateLink && (
-                <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-2 min-h-[48px] px-6 text-sm font-extrabold uppercase tracking-wider text-white" style={{ background: CARBON, clipPath: CHAMFER }}>
-                  Voir l'offre <ArrowRight className="w-4 h-4" />
-                </a>
-              )}
             </div>
           )}
 
@@ -148,6 +199,8 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
             ))}
           </div>
         </div>
+
+        {affiliateLink && <PartnerBlock url={affiliateLink} name={name} />}
 
         <p className="mt-8 text-sm text-gray-500" style={{ fontFamily: FONT }}>
           Sources :{" "}
