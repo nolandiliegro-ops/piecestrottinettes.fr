@@ -92,7 +92,8 @@ const Catalogue = () => {
   const brandFilter = searchParams.get("brand") || null;
   // 17/10 : nouvelle tête de page (recherche + catégories + filtres), 5 propositions via ?vue=1..5
   const vueN = Number(searchParams.get("vue"));
-  const vue = (vueN >= 1 && vueN <= 5 ? vueN : null) as CatalogueLook | null;
+  // 17/10 : « Vitrine » (1) retenue par Nolan = défaut ; ?vue=0 = ancienne page, 2..5 = autres propositions
+  const vue = (searchParams.get("vue") === null ? 1 : vueN >= 1 && vueN <= 5 ? vueN : null) as CatalogueLook | null;
   const priceSel = (searchParams.get("prix") ?? "").split(",").filter(Boolean);
   const stockOnly = searchParams.get("stock") === "1";
   const partSort = searchParams.get("tri") ?? "";
