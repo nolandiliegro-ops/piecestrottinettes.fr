@@ -1,0 +1,31 @@
+{
+ "date": "2026-10-17T21:47:04.382Z",
+ "uniques": 367,
+ "collections": [
+  {
+   "collection": "rueda-neumatico-patinete",
+   "produits": 196,
+   "err": null
+  },
+  {
+   "collection": "rueda-camara-patinete",
+   "produits": 36,
+   "err": null
+  },
+  {
+   "collection": "rueda-rueda-maciza-patinete",
+   "produits": 72,
+   "err": null
+  },
+  {
+   "collection": "rueda-neumatico-ebike",
+   "produits": 38,
+   "err": null
+  },
+  {
+   "collection": "rueda-camara-ebike",
+   "produits": 25,
+   "err": null
+  }
+ ]
+}
