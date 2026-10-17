@@ -37,6 +37,10 @@ const ScooterDetail = () => {
   // 16/10 : Pit-stand (6) validée par Nolan = page par défaut. ?style=0 = ancienne page (référence), ?style=1..5 = autres propositions.
   const hasStyleParam = searchParams.has("style");
   const pageStyle = (hasStyleParam ? (styleNum >= 1 && styleNum <= 6 ? styleNum : null) : 6) as PageStyle | null;
+  // 17/10 (soir) : pièces compatibles juste sous le hero sur Pit-stand — Nolan : « on voit moins les pièces ».
+  // ?ordre=0 = ancien ordre (fiche et gamme avant les pièces). ?fiche=long = fiche SEO en sections empilées.
+  const partsFirst = pageStyle === 6 && searchParams.get("ordre") !== "0";
+  const ficheMode = searchParams.get("fiche") === "long" ? "long" : "tabs";
 
   // Loading
   if (isLoading) {
@@ -141,6 +145,23 @@ const ScooterDetail = () => {
     })),
   };
 
+  const partsBlock = (
+    <>
+      {/* Pièces compatibles (ancre scroll du bouton "Pièces") */}
+      <div id="showroom-parts" style={{ scrollMarginTop: "80px" }}>
+        <CompatiblePartsGrid
+          parts={compatibleParts}
+          isLoading={isPartsLoading}
+          scooterName={scooter.name}
+          scooterId={scooter.id}
+          solidBlocked={solidConversionState(scooter) === "blocked"}
+        />
+      </div>
+      {/* Vidéo YouTube */}
+      <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />
+    </>
+  );
+
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
       <SEO
@@ -162,7 +183,8 @@ const ScooterDetail = () => {
         className="flex-1"
       >
         {pageStyle ? (
-          <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} showTag={hasStyleParam} />
+          <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} showTag={hasStyleParam}
+            ficheMode={ficheMode} afterHero={partsFirst ? partsBlock : undefined} />
         ) : (
         <>
         <ShowroomHero
@@ -244,19 +266,7 @@ const ScooterDetail = () => {
         </>
         )}
 
-        {/* Vidéo YouTube */}
-        <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />
-
-        {/* Pièces compatibles (ancre scroll du bouton "Pièces") */}
-        <div id="showroom-parts" style={{ scrollMarginTop: "80px" }}>
-          <CompatiblePartsGrid
-            parts={compatibleParts}
-            isLoading={isPartsLoading}
-            scooterName={scooter.name}
-            scooterId={scooter.id}
-            solidBlocked={solidConversionState(scooter) === "blocked"}
-          />
-        </div>
+        {!partsFirst && partsBlock}
 
         {/* Autres modèles — segmented control 3 onglets (masqué dans les propositions ?style=) */}
         {!pageStyle && <RelatedScootersTabs

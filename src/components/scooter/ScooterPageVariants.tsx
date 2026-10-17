@@ -15,7 +15,7 @@
  */
 import ScooterSeoFiche from "@/components/scooter/ScooterSeoFiche";
 import { SCOOTER_SEO } from "@/data/scooterSeo";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Heart, Home, Wrench, ExternalLink, Check, Zap, Battery, Gauge, Route, CircleDot, Ruler, Bike, ChevronDown } from "lucide-react";
 import { toast } from "sonner";
@@ -44,6 +44,10 @@ interface Props {
   scooter: ScooterDetail;
   allScooters: ShowroomCarouselScooter[];
   partsCount: number;
+  /** 17/10 : pièces compatibles posées juste sous le hero (avant la fiche et la gamme). */
+  afterHero?: ReactNode;
+  /** 17/10 : fiche SEO en onglets (défaut) ou version longue (?fiche=long). */
+  ficheMode?: "tabs" | "long";
   /** Pastille « Proposition N » : seulement quand la page est ouverte avec ?style= (comparaison). */
   showTag?: boolean;
 }
@@ -363,7 +367,7 @@ const GammePlayer = ({ all, brand, current, style }: { all: ShowroomCarouselScoo
 };
 
 // ─── Composition ────────────────────────────────────────────────────────────
-const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag = false }: Props) => {
+const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag = false, afterHero, ficheMode = "tabs" }: Props) => {
   const accent = getBrandColors(scooter.brand?.name).accent;
   const brand = scooter.brand?.name ?? "";
   const specs = useSpecs(scooter);
@@ -524,10 +528,10 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag 
   }
 
   // 5 ─ PIT-WALL
-  return <PitWall scooter={scooter} specs={specs} gamme={gamme} accent={accent} brand={brand} partsCount={partsCount} tag={tag} gammeBelow={style === 6} all={allScooters} />;
+  return <PitWall scooter={scooter} specs={specs} gamme={gamme} accent={accent} brand={brand} partsCount={partsCount} tag={tag} gammeBelow={style === 6} all={allScooters} afterHero={afterHero} ficheMode={ficheMode} />;
 };
 
-const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false, all = [] }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean; all?: ShowroomCarouselScooter[] }) => {
+const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false, all = [], afterHero, ficheMode = "tabs" }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean; all?: ShowroomCarouselScooter[]; afterHero?: ReactNode; ficheMode?: "tabs" | "long" }) => {
   const tabs = [
     { k: "fiche", label: "Fiche" },
     ...(scooter.description ? [{ k: "pres", label: "Présentation" }] : []),
@@ -581,8 +585,9 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           </div>
         </div>
       </section>
+      {afterHero}
       {/* 17/10 (pilote SEO) : fiche complète quand le modèle en a une, sinon l'ancien paragraphe. */}
-      {gammeBelow && SCOOTER_SEO[scooter.slug] && <ScooterSeoFiche name={scooter.name} seo={SCOOTER_SEO[scooter.slug]} affiliateLink={scooter.affiliate_link} />}
+      {gammeBelow && SCOOTER_SEO[scooter.slug] && <ScooterSeoFiche seo={SCOOTER_SEO[scooter.slug]} affiliateLink={scooter.affiliate_link} mode={ficheMode} />}
       {gammeBelow && !SCOOTER_SEO[scooter.slug] && scooter.description && (
         <section className="px-4 py-8" style={{ backgroundColor: "#FAFAF8" }}>
           <div className="mx-auto max-w-6xl grid lg:grid-cols-[260px_1fr] gap-3 lg:gap-10 border-t-2 pt-6" style={{ borderColor: CARBON }}>
