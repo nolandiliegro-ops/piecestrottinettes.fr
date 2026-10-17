@@ -1,0 +1,3719 @@
+[
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/61YfJfq9JeL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0.02,
+   "fill": 0.714
+  },
+  "size": [
+   540,
+   272
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/41xUA4BAtfL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.637
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/61vv-BZPgGL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.226,
+   "fill": 0.707
+  },
+  "size": [
+   99,
+   233
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/51PXTLOxaiL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.44,
+   "vivid": 0.019,
+   "fill": 0.781
+  },
+  "size": [
+   398,
+   485
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/51PZ0OgtrJL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.784
+  },
+  "size": [
+   497,
+   422
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31AH73taROL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.783
+  },
+  "size": [
+   287,
+   515
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/41DWgbxuhLL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.002,
+   "fill": 0.839
+  },
+  "size": [
+   466,
+   485
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/31ZenHY1kTL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.82
+  },
+  "size": [
+   540,
+   388
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/51c1gu+-6dL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.254,
+   "fill": 0.206
+  },
+  "size": [
+   540,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/61Rxa7Mq1mL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.129,
+   "fill": 0.671
+  },
+  "size": [
+   103,
+   270
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/611DbHfNrrL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "bandeau, pas un produit",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.227,
+   "fill": 0.676
+  },
+  "size": [
+   159,
+   480
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-m20",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31k9+mKjaHL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.792
+  },
+  "size": [
+   303,
+   471
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 0,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_F40D-F40E_Product-picture_360-side-view-30?fmt=png-alpha&wid=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.428
+  },
+  "size": [
+   648,
+   577
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 1,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Dashboard-30?wid=2000",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "f40",
+  "i": 2,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Braking-system-30?wid=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.199,
+   "vivid": 0.096,
+   "fill": 0.549
+  },
+  "size": [
+   464,
+   468
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 3,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Folded-kickscooter-30?wid=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.337
+  },
+  "size": [
+   1728,
+   1400
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 4,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Hero-picture2-30?wid=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.077,
+   "fill": 0.523
+  },
+  "size": [
+   1689,
+   1404
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/51o57May9NL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.23
+  },
+  "size": [
+   496,
+   472
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/51zM0NzeMlL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.267,
+   "vivid": 0.028,
+   "fill": 0.741
+  },
+  "size": [
+   436,
+   540
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/51G7Vrp+iBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.45,
+   "vivid": 0.004,
+   "fill": 0.409
+  },
+  "size": [
+   325,
+   211
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/512O1OyMmBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.781
+  },
+  "size": [
+   169,
+   234
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/51682uI+EaL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.462,
+   "vivid": 0.004,
+   "fill": 0.809
+  },
+  "size": [
+   393,
+   397
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31cV-ga1ikL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.783
+  },
+  "size": [
+   516,
+   535
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_d6bfd9f3-bfbe-423c-a571-7c40ed543d7d.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.819
+  },
+  "size": [
+   1159,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_95c96a5a-398d-4867-9562-4ebeea38d3ce.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.267
+  },
+  "size": [
+   1118,
+   1480
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_d124fdb7-6aae-41b9-947f-a7fd22ac1bf0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.219,
+   "fill": 0.814
+  },
+  "size": [
+   1565,
+   1567
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_2bdb7d7c-3da0-407b-8711-e0e8a9365909.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.214,
+   "fill": 0.835
+  },
+  "size": [
+   1319,
+   1516
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_ab971018-5429-4720-a051-b648b69692d8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.012,
+   "vivid": 0.219,
+   "fill": 0.786
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_e2a11d30-83ae-49a0-b55a-c039912721cd.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.174,
+   "vivid": 0.118,
+   "fill": 0.565
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_3e5fc5e5-fee0-416f-8ab3-99dfa39ed876.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.264
+  },
+  "size": [
+   1553,
+   1582
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 7,
+  "url": "https://m.media-amazon.com/images/I/31noqcFimLL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.822
+  },
+  "size": [
+   403,
+   537
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 8,
+  "url": "https://m.media-amazon.com/images/I/41at5hg91rL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.048,
+   "vivid": 0.085,
+   "fill": 0.463
+  },
+  "size": [
+   510,
+   521
+  ],
+  "error": null
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "i": 9,
+  "url": "https://m.media-amazon.com/images/I/51eGGfPH-QL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.323
+  },
+  "size": [
+   363,
+   449
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-1_55ddf6ea-3d07-416f-b6f2-263cff360d36.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.156,
+   "fill": 0.451
+  },
+  "size": [
+   844,
+   752
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.002,
+   "fill": 0.663
+  },
+  "size": [
+   854,
+   610
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.147,
+   "fill": 0.335
+  },
+  "size": [
+   749,
+   898
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-5.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.207,
+   "fill": 0.777
+  },
+  "size": [
+   803,
+   414
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-7.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.284,
+   "fill": 0.665
+  },
+  "size": [
+   852,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.156,
+   "fill": 0.454
+  },
+  "size": [
+   846,
+   853
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.159,
+   "fill": 0.603
+  },
+  "size": [
+   822,
+   653
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0866/6939/4227/files/brio-8.png",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 35 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 35 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.351,
+   "fill": 0.496
+  },
+  "size": [
+   857,
+   721
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1_f521b676-f06c-417e-82a3-14b3c8735835.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.794
+  },
+  "size": [
+   956,
+   1637
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_3cb91afb-f199-4291-9240-15eb99d7ba19.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.428,
+   "vivid": 0.013,
+   "fill": 0.674
+  },
+  "size": [
+   1489,
+   1698
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/6_8351bccc-cc2e-49df-8132-83761e0bc8e9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.843
+  },
+  "size": [
+   1526,
+   1599
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/7_caa77574-e34f-4e09-9b74-881beae9bda9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.843
+  },
+  "size": [
+   1644,
+   1571
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/8_b29d4985-29a7-4e84-8f18-d2cc85cba45f.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.798
+  },
+  "size": [
+   1648,
+   993
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/9_e8dacd1e-2f8d-456f-a47a-829e529b404e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.845
+  },
+  "size": [
+   1604,
+   1568
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_f091bb40-7657-4de1-a32e-0d3744747e95.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.84
+  },
+  "size": [
+   1512,
+   1657
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1_d4afe998-e45a-4264-a975-8916ed1a4d2b.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.652
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_0002583d-e928-4898-bcb5-383d6e27b374.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.184,
+   "vivid": 0.046,
+   "fill": 0.712
+  },
+  "size": [
+   1669,
+   1641
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/3_80248d88-8275-42c0-bc3b-7f22c64d8f51.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.216,
+   "vivid": 0.039,
+   "fill": 0.807
+  },
+  "size": [
+   1059,
+   1632
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/products/isinwheels9max500welectricscooterwithbluetooth8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.147,
+   "vivid": 0,
+   "fill": 0.565
+  },
+  "size": [
+   1481,
+   1648
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0603/5075/9103/files/S9MAX_MAIN_PIC_NEW_9.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.065,
+   "vivid": 0.146,
+   "fill": 0.681
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_12_1800x1800_df82c9fc-a3f5-499b-a94a-4b761f68332c.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.143,
+   "vivid": 0.06,
+   "fill": 0.553
+  },
+  "size": [
+   1728,
+   1606
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/1_c8573ffa-aecf-488a-afa3-38ca505cbea8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.28,
+   "vivid": 0.032,
+   "fill": 0.669
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_2_1800x1800_5590f968-6130-434f-af52-96a319470f8a.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)",
+   "couleurs vives 39 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)",
+    "couleurs vives 39 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.028,
+   "vivid": 0.387,
+   "fill": 0.312
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_3_1800x1800_be5aeaaa-bbe7-4cd3-ad0d-f300a777609d.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.064,
+   "vivid": 0.122,
+   "fill": 0.507
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_5_1800x1800_234450d6-5e13-4981-b8ee-69a118ff2a99.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.815
+  },
+  "size": [
+   1302,
+   1628
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_8_1800x1800_80142ec8-b17c-4499-bb5f-daffe31db7ba.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.202,
+   "vivid": 0.016,
+   "fill": 0.816
+  },
+  "size": [
+   1175,
+   1564
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_10_1800x1800_35613394-2609-4378-83c6-727b09be9128.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.763
+  },
+  "size": [
+   1728,
+   1341
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/S9MAX_MAIN_PIC_NEW_11_1800x1800_c1d09499-f35b-46a0-9be5-8fb18aa90de7.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.085,
+   "vivid": 0.194,
+   "fill": 0.84
+  },
+  "size": [
+   1501,
+   1534
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.581
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter16.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.814
+  },
+  "size": [
+   1752,
+   1494
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter17.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.846
+  },
+  "size": [
+   1736,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter18.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.776
+  },
+  "size": [
+   1752,
+   1073
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter19.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.788
+  },
+  "size": [
+   1754,
+   1173
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter23_416fe0ef-8c3f-4fb5-87b2-0f2b1996f647.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 71 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 71 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.715,
+   "fill": 0.183
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter22_b9cdc58e-dd6f-44d5-b4cd-e7189abf53a7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.736
+  },
+  "size": [
+   1760,
+   1609
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboWarrior11MaxScooter26.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.812
+  },
+  "size": [
+   1752,
+   1460
+  ],
+  "error": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Kaboo_Black_Wolf_warrior_11_max_high_performance_scooter_26072404.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.774
+  },
+  "size": [
+   908,
+   1705
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 0,
+  "url": "https://elecbiz.fr/wp-content/uploads/2024/06/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.556
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 1,
+  "url": "https://elecbiz.fr/wp-content/uploads/2024/06/TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.772
+  },
+  "size": [
+   996,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 2,
+  "url": "https://elecbiz.fr/wp-content/uploads/2024/06/TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.785
+  },
+  "size": [
+   996,
+   529
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 3,
+  "url": "https://elecbiz.fr/wp-content/uploads/2024/06/KUICKWHEELM16PRO-TROTTINETTE-KUICKWHEEL-M16-PRO-36V-104Ah-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.556
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "kuickwheel-m16-pro",
+  "i": 4,
+  "url": "https://www.scooterpassion.be/26137-large_default/trottinette-electrique-etanche-kuickwheel-m16-pro-105-a.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.859
+  },
+  "size": [
+   737,
+   801
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 0,
+  "url": "https://icbimg3.chiccdn.com/images/EE/73/8332df23-7922-4d4c-9bed-315e51382491.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.046,
+   "vivid": 0.052,
+   "fill": 0.482
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 1,
+  "url": "https://icbimg3.chiccdn.com/images/0F/B8/6bae95dc-274f-49d8-8446-4164891123e1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.021,
+   "vivid": 0.012,
+   "fill": 0.726
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 2,
+  "url": "https://icbimg3.chiccdn.com/images/25/1C/95ff8ae1-71d1-4aea-85a5-53965bc60cdb.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.389,
+   "vivid": 0.048,
+   "fill": 0.634
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "laotie-es10p",
+  "i": 3,
+  "url": "https://icbimg3.chiccdn.com/images/CD/63/26c08b45-2f89-4504-b4f9-31e97c7e0d50.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.064,
+   "vivid": 0.012,
+   "fill": 0.631
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-2/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 1,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-3/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 2,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-4/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 3,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-5/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-6/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-7/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-8/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 7,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-1/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "navee-s60",
+  "i": 0,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product47-product_image/assets/img/pd-image.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 41 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 41 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.412,
+   "fill": 0.549
+  },
+  "size": [
+   1754,
+   1234
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 1,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product48-product_image/assets/img/pd-image1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.125,
+   "fill": 0.268
+  },
+  "size": [
+   1754,
+   1025
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 2,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product8-product_details/assets/img/pd-details1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 33 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 33 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.327,
+   "fill": 0.284
+  },
+  "size": [
+   1457,
+   628
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 3,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product10-product_details1/assets/img/pd-details2-img1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.838
+  },
+  "size": [
+   643,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 4,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product10-product_details1/assets/img/pd-details2-img2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.838
+  },
+  "size": [
+   629,
+   539
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 5,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product16-product_details2/assets/img/pd-details3-img1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.433
+  },
+  "size": [
+   597,
+   516
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 6,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product16-product_details2/assets/img/pd-details3-img2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.723
+  },
+  "size": [
+   533,
+   465
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 7,
+  "url": "https://www.naveetech.com/wp-content/plugins/sytech-fronteditor/sytpl/product12-product_intro/assets/img/pd-intro4-img.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "bandeau, pas un produit",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.212,
+   "vivid": 0.006,
+   "fill": 0.628
+  },
+  "size": [
+   423,
+   108
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 8,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/S60-M_07.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.258,
+   "fill": 0.74
+  },
+  "size": [
+   995,
+   1277
+  ],
+  "error": null
+ },
+ {
+  "slug": "navee-s60",
+  "i": 9,
+  "url": "https://www.naveetech.com/wp-content/uploads/2025/07/S60-M_08-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.628
+  },
+  "size": [
+   1090,
+   812
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 0,
+  "url": "https://segway.imgix.net/catalog/product/e/2/e2-side_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.842
+  },
+  "size": [
+   867,
+   922
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 1,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2024_04_Group-1000002002.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 22 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 22 morceaux"
+   ],
+   "parts": 22,
+   "second": 0.07,
+   "vivid": 0.012,
+   "fill": 0.731
+  },
+  "size": [
+   804,
+   1365
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 2,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_wheel.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 3,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Tire.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.555
+  },
+  "size": [
+   84,
+   70
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 4,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.709
+  },
+  "size": [
+   629,
+   720
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 5,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-5.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.448,
+   "vivid": 0.024,
+   "fill": 0.752
+  },
+  "size": [
+   616,
+   517
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 6,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.181,
+   "fill": 0.661
+  },
+  "size": [
+   602,
+   515
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 7,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 47 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 47 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.47,
+   "fill": 0.27
+  },
+  "size": [
+   702,
+   804
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 8,
+  "url": "https://www.segway.com/content/dam/segway-ninebot/us/en/migrated/product-site/e2-kickscooter/images/www_segway_com_wp-content_uploads_2023_06_Mask-group-9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.216,
+   "fill": 0.262
+  },
+  "size": [
+   703,
+   779
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi2-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi2_Pro.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.812
+  },
+  "size": [
+   973,
+   1433
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi2-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter12.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.058,
+   "fill": 0.627
+  },
+  "size": [
+   1840,
+   1379
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi2-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter11.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.496
+  },
+  "size": [
+   1840,
+   1840
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi2-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/5_e61d8fdc-88da-4884-9bef-a3674e0ece2d.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.028,
+   "fill": 0.568
+  },
+  "size": [
+   1840,
+   1788
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi2-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi2ProElectricKickScooter5_bcb8f4b7-f706-46d5-964d-d38a8953d252.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.771
+  },
+  "size": [
+   1026,
+   506
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_4.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.865
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_6.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.091,
+   "fill": 0.79
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_7.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0,
+   "fill": 0.683
+  },
+  "size": [
+   1024,
+   743
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_9.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.784
+  },
+  "size": [
+   1003,
+   527
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_14.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.427
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_15.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.674
+  },
+  "size": [
+   904,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_16.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.549
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_17.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.732
+  },
+  "size": [
+   932,
+   1027
+  ],
+  "error": null
+ },
+ {
+  "slug": "ootd-sr1",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0951/6367/9061/files/ootd-sr1-main-image_20.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.828
+  },
+  "size": [
+   1028,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805494.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.133,
+   "vivid": 0.185,
+   "fill": 0.566
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805492.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.843
+  },
+  "size": [
+   1665,
+   1498
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805490.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.844
+  },
+  "size": [
+   1195,
+   1234
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805488.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.808
+  },
+  "size": [
+   1744,
+   1251
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805487.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.821
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805486.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.747
+  },
+  "size": [
+   981,
+   1426
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805485.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.335
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805484.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.713
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805483.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.769
+  },
+  "size": [
+   1628,
+   1561
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-air-6-suspension",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-suspension-1244805482.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.843
+  },
+  "size": [
+   1276,
+   1334
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859381.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.226,
+   "vivid": 0.002,
+   "fill": 0.644
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859380.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.346,
+   "vivid": 0.112,
+   "fill": 0.494
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859379.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.827
+  },
+  "size": [
+   1326,
+   1494
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859378.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.77
+  },
+  "size": [
+   1645,
+   1477
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859377.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.838
+  },
+  "size": [
+   1251,
+   1387
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859375.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.836
+  },
+  "size": [
+   1308,
+   1484
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859374.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.848
+  },
+  "size": [
+   1529,
+   1464
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859373.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   1260,
+   1384
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859371.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 35 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 35 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.352,
+   "fill": 0.512
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "pure-electric-escape-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1230859370.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.22,
+   "fill": 0.609
+  },
+  "size": [
+   1744,
+   1421
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/31-hFC4935L._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.688
+  },
+  "size": [
+   466,
+   460
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/314kt2nK+pL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.757
+  },
+  "size": [
+   223,
+   453
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/31WKA7Hi1KL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.71
+  },
+  "size": [
+   459,
+   175
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/51rFpfdQ3BL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.818
+  },
+  "size": [
+   448,
+   504
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/41nGW9xwkxL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.363
+  },
+  "size": [
+   511,
+   367
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-go",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/31WT7l8+mPL._AC_SL1500_.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.785
+  },
+  "size": [
+   304,
+   467
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 0,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/2/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.381
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 1,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/3/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.016,
+   "fill": 0.653
+  },
+  "size": [
+   662,
+   740
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 2,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/4/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.02,
+   "vivid": 0.038,
+   "fill": 0.736
+  },
+  "size": [
+   699,
+   536
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 3,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/5/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.038,
+   "vivid": 0.004,
+   "fill": 0.853
+  },
+  "size": [
+   756,
+   680
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 4,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/6/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.14,
+   "vivid": 0,
+   "fill": 0.611
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 5,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/7/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.308,
+   "vivid": 0.026,
+   "fill": 0.842
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 6,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/8/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.083,
+   "vivid": 0.078,
+   "fill": 0.718
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 7,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/9/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.029,
+   "vivid": 0.14,
+   "fill": 0.501
+  },
+  "size": [
+   756,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 8,
+  "url": "https://www.cdiscount.com/pdt2/7/6/9/1/700x700/urb1745881795769/rw/trottinette-electrique-urbanglide-85-evo-300.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.787
+  },
+  "size": [
+   390,
+   703
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/b7/86/8d/26052279/1540-1/tsp20260211092847/Trottinette-electrique-tout-terrain-Wispeed-Off-road-Suvpilot-480-18Ah-48V-500-W-Kaki.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.463
+  },
+  "size": [
+   368,
+   368
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 1,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/Fond%20noir.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.44
+  },
+  "size": [
+   737,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 2,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/ff68d193-8551-4abc-b4bd-40241c39e0e2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.403,
+   "vivid": 0.008,
+   "fill": 0.836
+  },
+  "size": [
+   1048,
+   766
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 3,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/hf_20260708_074804_0da660c2-6700-4a33-aca1-a358c7cb7533.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.08,
+   "vivid": 0,
+   "fill": 0.74
+  },
+  "size": [
+   770,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 4,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/hf_20260708_091536_07362153-57bb-415f-ad2c-a5f783461f19.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.818
+  },
+  "size": [
+   704,
+   979
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 5,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/width_1066.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.548
+  },
+  "size": [
+   1194,
+   1727
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 6,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/Design%20sans%20titre%20(1).png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.032,
+   "vivid": 0.084,
+   "fill": 0.428
+  },
+  "size": [
+   936,
+   758
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suvpilot-480",
+  "i": 7,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/SUVPILOT%20480%20R/SUVPILOT%20R%20Off%20road-2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.101,
+   "fill": 0.696
+  },
+  "size": [
+   1185,
+   1820
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 0,
+  "url": "https://www.ravate.com/680591-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.818
+  },
+  "size": [
+   497,
+   819
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 1,
+  "url": "https://www.ravate.com/680592-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.416
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 2,
+  "url": "https://www.ravate.com/680593-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.058,
+   "vivid": 0.068,
+   "fill": 0.575
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 3,
+  "url": "https://www.ravate.com/680594-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.033,
+   "vivid": 0,
+   "fill": 0.578
+  },
+  "size": [
+   719,
+   587
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 4,
+  "url": "https://www.ravate.com/680595-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.5
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 5,
+  "url": "https://www.ravate.com/1033813-large_default/trottinette-electrique-100a-start-noir-yeep-me-trotyeep106.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "couleurs vives 81 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 81 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.812,
+   "fill": 0.837
+  },
+  "size": [
+   618,
+   699
+  ],
+  "error": null
+ }
+]
