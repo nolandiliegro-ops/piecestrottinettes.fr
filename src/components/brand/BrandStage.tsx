@@ -49,11 +49,11 @@ const BrandStage = ({ brand, models, scene }: Props) => {
   const hero = flagshipOf(models);
   const frame = "relative w-full overflow-hidden h-[300px] sm:h-[380px] lg:h-[460px]";
 
-  // Marque avec photo : on garde la photo, cadrée dans la même plaque.
+  // Marque avec photo : on garde la photo, ENTIÈRE (retour Nolan 17/10 : le logo piecestrottinettes était rogné sur Kaabo).
   if (brand.hero_image_url) {
     return (
-      <div className={frame} style={{ clipPath: CHAMFER, background: CARBON }}>
-        <img src={optimizedImage(brand.hero_image_url, 1400)} alt={brand.name} className="w-full h-full object-cover" />
+      <div className="relative w-full overflow-hidden" style={{ clipPath: CHAMFER, background: CARBON }}>
+        <img src={optimizedImage(brand.hero_image_url, 1400)} alt={brand.name} className="block w-full h-auto max-h-[560px] object-contain" />
         <span aria-hidden className="absolute left-0 right-0 bottom-0 h-1.5" style={{ background: id.accent }} />
       </div>
     );
