@@ -118,7 +118,7 @@ const Brand = () => {
       />
 
       {vue ? (
-        <BrandPageVariants look={vue} brand={brand} models={models} prev={prev ?? null} next={next ?? null} showTag={sp.has("vue") || sp.has("scene")} scene={(Number(sp.get("scene")) >= 1 && Number(sp.get("scene")) <= 5 ? Number(sp.get("scene")) : 3) as StageScene} />
+        <BrandPageVariants look={vue} brand={brand} models={models} prev={prev ?? null} next={next ?? null} showTag={sp.has("vue") || sp.has("scene")} scene={(Number(sp.get("scene")) >= 1 && Number(sp.get("scene")) <= 5 ? Number(sp.get("scene")) : 4) as StageScene} />
       ) : (<>
       <BrandHeader />
 

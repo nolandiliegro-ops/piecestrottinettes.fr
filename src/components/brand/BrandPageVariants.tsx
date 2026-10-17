@@ -308,11 +308,11 @@ const PitStand = (p: Props) => {
               <div className="mt-3"><Name brand={p.brand} size="text-5xl md:text-7xl" /></div>
               {p.brand.tagline && <p className="mt-3 text-lg text-[#374151]" style={{ fontFamily: FONT }}>{p.brand.tagline}</p>}
               {/* Téléphone : le visuel juste sous le nom, pas sous la ligne de flottaison. */}
-              <div className="mt-5 lg:hidden"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 3} /></div>
+              <div className="mt-5 lg:hidden"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 4} /></div>
               <div className="mt-5"><Facts brand={p.brand} models={p.models} /></div>
               <div className="mt-6"><Actions brand={p.brand} /></div>
             </div>
-            <div className="hidden lg:block"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 3} /></div>
+            <div className="hidden lg:block"><BrandStage brand={p.brand} models={p.models} scene={p.scene ?? 4} /></div>
           </div>
           <p className="mt-6 lg:hidden text-center text-sm text-gray-500" style={{ fontFamily: FONT }}>Glisse pour passer à la marque suivante</p>
         </div>
