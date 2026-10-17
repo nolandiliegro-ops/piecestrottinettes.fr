@@ -1,4 +1,5 @@
 import { useParams, Link, useSearchParams } from "react-router-dom";
+import { SCOOTER_SEO } from "@/data/scooterSeo";
 import { motion } from "framer-motion";
 import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -94,8 +95,9 @@ const ScooterDetail = () => {
   );
 
   // 13/10 : titre calé sur « pièces <modèle> » + les familles qui vendent (avant : « — Pièces compatibles »).
-  const seoTitle = `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`;
-  const seoDescription = `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
+  const seoFiche = SCOOTER_SEO[scooter.slug];
+  const seoTitle = seoFiche?.metaTitle ?? `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`;
+  const seoDescription = seoFiche?.metaDescription ?? `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
   const canonical = `${SITE}/scooter/${scooter.slug}`;
 
   // JSON-LD Product + AggregateOffer (prix réel issu des pièces compatibles)
@@ -146,7 +148,10 @@ const ScooterDetail = () => {
         description={seoDescription}
         image={scooter.image_url ?? undefined}
         canonical={canonical}
-        schema={[productSchema, breadcrumbSchema]}
+        schema={seoFiche ? [productSchema, breadcrumbSchema, {
+          "@context": "https://schema.org", "@type": "FAQPage",
+          mainEntity: seoFiche.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+        }] : [productSchema, breadcrumbSchema]}
       />
       <ShowroomHeader />
 

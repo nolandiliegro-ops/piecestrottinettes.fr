@@ -13,6 +13,8 @@
  * 4 STAND     · panneau fixe à droite (desktop) + barre d'action collée en bas (mobile), gamme en carrousel photo
  * 5 PIT-WALL  · onglets Fiche / Présentation / Gamme juste sous le titre : tout tient sans descendre
  */
+import ScooterSeoFiche from "@/components/scooter/ScooterSeoFiche";
+import { SCOOTER_SEO } from "@/data/scooterSeo";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Heart, Home, Wrench, ExternalLink, Check, Zap, Battery, Gauge, Route, CircleDot, Ruler, Bike, ChevronDown } from "lucide-react";
@@ -579,7 +581,9 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           </div>
         </div>
       </section>
-      {gammeBelow && scooter.description && (
+      {/* 17/10 (pilote SEO) : fiche complète quand le modèle en a une, sinon l'ancien paragraphe. */}
+      {gammeBelow && SCOOTER_SEO[scooter.slug] && <ScooterSeoFiche name={scooter.name} seo={SCOOTER_SEO[scooter.slug]} affiliateLink={scooter.affiliate_link} />}
+      {gammeBelow && !SCOOTER_SEO[scooter.slug] && scooter.description && (
         <section className="px-4 py-8" style={{ backgroundColor: "#FAFAF8" }}>
           <div className="mx-auto max-w-6xl grid lg:grid-cols-[260px_1fr] gap-3 lg:gap-10 border-t-2 pt-6" style={{ borderColor: CARBON }}>
             <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>Présentation</h2>
