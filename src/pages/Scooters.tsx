@@ -75,7 +75,8 @@ const Scooters = () => {
   const look = (params.get("marques") === null ? 1 : lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
   // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
   const fl = Number(params.get("filtres"));
-  const filterLook = (fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
+  // 17/10 : « Plaques » (1) retenue par Nolan = défaut ; ?filtres=0 = ancienne barre, 2..5 = autres propositions
+  const filterLook = (params.get("filtres") === null ? 1 : fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
     const next = new URLSearchParams(params);
     mutate(next);
