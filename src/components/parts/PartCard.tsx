@@ -26,7 +26,22 @@ interface PartCardProps {
    * portent AUCUN badge : on ne signale que ce qui restreint le montage.
    */
   position?: FitmentPosition | null;
+  /** 18/10 (Nolan) : sur la fiche d'une trottinette, tout est compatible par définition → aucune marque « Compatible ». */
+  hideCompat?: boolean;
 }
+
+// 18/10 — propositions pour la marque « Compatible » hors fiche trottinette (?compat=0..5, cinq-propositions).
+// 0 = ancien badge néon · 1 Coin coché · 2 Ligne sous le prix · 3 Bandeau bas de photo · 4 Liseré · 5 Tampon chanfrein.
+const compatStyle = (): number => {
+  try {
+    const v = new URLSearchParams(window.location.search).get("compat");
+    if (v === null) return 5;
+    const n = Number(v);
+    return n >= 0 && n <= 5 ? n : 5;
+  } catch { return 5; }
+};
+const GREEN = "#4A7C59";
+const CHAMFER = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
 
 const POSITION_LABEL: Partial<Record<FitmentPosition, string>> = {
   avant: "AVANT",
@@ -95,7 +110,7 @@ function DifficultyKey({ level }: { level: number | null }) {
 }
 
 const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
-  function PartCardInner({ part, index, className, position }, ref) {
+  function PartCardInner({ part, index, className, position, hideCompat = false }, ref) {
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
   const isOutOfStock = part.stock_quantity !== null && part.stock_quantity === 0;
@@ -120,7 +135,10 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const displayImage = optimizedImage(primaryImage, 400);
   
   // Compatibility check with selected scooter
-  const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(part.id);
+  const { isCompatible, selectedScooter } = useIsCompatibleWithSelected(hideCompat ? undefined : part.id);
+  const showCompat = !hideCompat && !!selectedScooter && !!isCompatible;
+  const cs = compatStyle();
+  const shortName = selectedScooter?.name ?? "";
   
   // Get dynamic brand colors
   const { selectedBrandColors } = useSelectedScooter();
@@ -199,7 +217,13 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         "transition-all duration-300 ease-out",
         className
       )}
+      style={showCompat && cs === 4 ? { boxShadow: `inset 0 0 0 2px ${GREEN}` } : undefined}
     >
+      {showCompat && cs === 4 && (
+        <span className="absolute -top-px left-5 z-20 inline-flex items-center gap-1 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-white rounded-b-md" style={{ background: GREEN }}>
+          <Check className="w-3 h-3" strokeWidth={3} /> Compatible
+        </span>
+      )}
       {/* Stretched link : navigation pleine carte via overlay cliquable SOUS les contrôles
           (favori/CTA en z-10, badges en z-10/z-20). Évite d'imbriquer le form email dans un
           <a> — cause du bug de navigation à l'autofill (SB4d). */}
@@ -215,7 +239,7 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
       <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-mineral/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       {/* COMPATIBLE Badge - Dynamic Neon LED Effect */}
-      {selectedScooter && isCompatible && (
+      {showCompat && cs === 0 && (
         <motion.div
           initial={{ opacity: 0, scale: 0.8, y: -10 }}
           animate={{ 
@@ -352,6 +376,23 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
           )}
         </div>
 
+        {showCompat && cs === 1 && (
+          <span title={`Compatible ${shortName}`} aria-label={`Compatible avec ta ${shortName}`}
+            className="absolute bottom-3 right-3 z-10 w-8 h-8 rounded-full flex items-center justify-center text-white shadow-sm" style={{ background: GREEN }}>
+            <Check className="w-4 h-4" strokeWidth={3} />
+          </span>
+        )}
+        {showCompat && cs === 3 && (
+          <span className="absolute left-0 right-0 bottom-0 z-10 flex items-center justify-center gap-1.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-white" style={{ background: GREEN }}>
+            <Check className="w-3.5 h-3.5" strokeWidth={3} /> Compatible
+          </span>
+        )}
+        {showCompat && cs === 5 && (
+          <span className="absolute bottom-3 left-3 z-10 inline-flex items-center gap-1 px-2 py-1 text-[11px] font-extrabold uppercase tracking-wider text-white" style={{ background: GREEN, clipPath: CHAMFER }}>
+            <Check className="w-3.5 h-3.5" strokeWidth={3} /> Compatible
+          </span>
+        )}
+
         {/* Halo studio PERMANENT — lumière douce derrière le produit (amplifiée au hover) */}
         <div
           aria-hidden
@@ -455,6 +496,12 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
               </span>
             )}
           </div>
+        )}
+
+        {showCompat && cs === 2 && (
+          <p className="flex items-center gap-1.5 text-[13px] font-semibold leading-tight" style={{ color: GREEN, fontFamily: "'Inter', sans-serif" }}>
+            <Check className="w-4 h-4 shrink-0 self-start mt-px" strokeWidth={3} /> <span className="line-clamp-2">Compatible avec ta {shortName}</span>
+          </p>
         )}
 
         {/* Ligne specs — GAUCHE : jusqu'à 3 chips attributs (Direction B). DROITE : clé difficulté.

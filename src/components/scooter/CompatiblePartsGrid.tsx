@@ -69,7 +69,7 @@ const Rail = ({ parts, scooterName }: { parts: ScooterCompatiblePart[]; scooterN
       <div ref={ref} className="-mx-4 px-4 lg:mx-0 lg:px-0 flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-3 [scrollbar-width:none]">
         {parts.map((part, i) => (
           <div key={part.id} className="snap-start shrink-0 w-[46%] sm:w-[31%] lg:w-[calc(25%-15px)]">
-            <PartCard part={{ ...part, description: null }} index={i} position={part.position} />
+            <PartCard hideCompat part={{ ...part, description: null }} index={i} position={part.position} />
             {part.status === "unverified" && <p className="text-sm text-muted-foreground mt-2 px-1">{unverifiedLabel(part.reason)}</p>}
           </div>
         ))}
@@ -203,6 +203,7 @@ const CompatiblePartsGrid = ({
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
                 {(layout === "courte" && !expanded ? verified.slice(0, 8) : verified).map((part, index) => (
                   <PartCard
+                    hideCompat
                     key={part.id}
                     part={{ ...part, description: null }}
                     index={index}
@@ -224,6 +225,7 @@ const CompatiblePartsGrid = ({
                   {unverified.map((part, index) => (
                     <div key={part.id}>
                       <PartCard
+                        hideCompat
                         part={{ ...part, description: null }}
                         index={index}
                         position={part.position}
