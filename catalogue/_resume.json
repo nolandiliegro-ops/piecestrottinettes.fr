@@ -1,0 +1,198 @@
+[
+ {
+  "d": "www.trotnation.com",
+  "kind": "shopify",
+  "total": 4957,
+  "gardes": 810,
+  "err": null
+ },
+ {
+  "d": "e-watts.fr",
+  "kind": "woo",
+  "total": 1456,
+  "gardes": 503,
+  "err": null
+ },
+ {
+  "d": "electrotraveller.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON woo:Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+ },
+ {
+  "d": "france-gyrotrot.com",
+  "kind": "shopify",
+  "total": 1553,
+  "gardes": 379,
+  "err": null
+ },
+ {
+  "d": "www.wee-bot.com",
+  "kind": "shopify",
+  "total": 7371,
+  "gardes": 719,
+  "err": null
+ },
+ {
+  "d": "escootervision.eu",
+  "kind": "shopify",
+  "total": 2935,
+  "gardes": 337,
+  "err": null
+ },
+ {
+  "d": "shop.happytec.it",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:403 woo:403"
+ },
+ {
+  "d": "urbanglide.com",
+  "kind": "woo",
+  "total": 1169,
+  "gardes": 158,
+  "err": null
+ },
+ {
+  "d": "www.isinwheel.fr",
+  "kind": "shopify",
+  "total": 319,
+  "gardes": 88,
+  "err": null
+ },
+ {
+  "d": "www.hiboy.com",
+  "kind": "shopify",
+  "total": 409,
+  "gardes": 82,
+  "err": null
+ },
+ {
+  "d": "naveetech.fr",
+  "kind": "shopify",
+  "total": 40,
+  "gardes": 0,
+  "err": null
+ },
+ {
+  "d": "www.urbanmoov.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.fastride.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.wattiz.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "jump-way.ma",
+  "kind": "woo",
+  "total": 1562,
+  "gardes": 203,
+  "err": null
+ },
+ {
+  "d": "www.iscooter.fr",
+  "kind": "shopify",
+  "total": 124,
+  "gardes": 17,
+  "err": null
+ },
+ {
+  "d": "iscooterglobal.com",
+  "kind": "shopify",
+  "total": 547,
+  "gardes": 107,
+  "err": null
+ },
+ {
+  "d": "www.kukirin-france.com",
+  "kind": "shopify",
+  "total": 17,
+  "gardes": 0,
+  "err": null
+ },
+ {
+  "d": "www.teverun.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:403 woo:403"
+ },
+ {
+  "d": "www.smartgyro.es",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.zwheel.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.yeep.me",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "fr.inmotionworld.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.vsett.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.joyor.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.kaabo.fr",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:400"
+ },
+ {
+  "d": "www.niu.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "store.segway.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ }
+]
