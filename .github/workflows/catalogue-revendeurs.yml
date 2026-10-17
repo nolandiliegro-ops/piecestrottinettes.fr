@@ -1,0 +1,39 @@
+name: Catalogue revendeurs (pneus, chambres, disques)
+
+# 17/10/2026 : lecture seule des catalogues publics de revendeurs de pièces, pour lire les tailles exactes
+# (jante, section, disque) des trottinettes nommées dans les titres. Aucune clé, aucune écriture en base.
+# Modifier config/catalogue/_run.txt = UN run. Sorties sur la branche donnees-extraction, dossier catalogue/.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/catalogue/_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  catalogue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Aspiration
+        run: node scripts/catalogue-revendeurs.mjs
+      - name: Résultats → branche donnees-extraction
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "catalogue-bot"
+          git config user.email "catalogue-bot@users.noreply.github.com"
+          mv out/catalogue /tmp/catalogue
+          git fetch origin donnees-extraction
+          git checkout -B donnees-extraction origin/donnees-extraction
+          mkdir -p catalogue && cp -r /tmp/catalogue/. catalogue/
+          git add catalogue
+          git commit -q -m "catalogue revendeurs : $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-extraction && break; git pull --rebase origin donnees-extraction; done
