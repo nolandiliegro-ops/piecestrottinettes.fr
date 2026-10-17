@@ -32,16 +32,52 @@ export const BRAND_COLORS: Record<string, string> = {
 
 /**
  * Photos de marque générées (17/10/2026, Higgsfield, vraie photo du modèle phare en référence,
- * décors marseillais, cadrages variés). Servies depuis public/brand-heroes.
+ * décors variés dont Marseille, cadrages variés, échelle réaliste ; contrôlées une à une contre la photo
+ * du modèle). Servies depuis public/brand-heroes.
  * Priorité : brands.hero_image_url (photo posée en admin) > cette table > mise en scène automatique.
  */
 export const BRAND_PHOTOS: Record<string, string> = {
-  xiaomi: "/brand-heroes/xiaomi.webp",
-  teverun: "/brand-heroes/teverun.webp",
-  navee: "/brand-heroes/navee.webp",
-  niu: "/brand-heroes/niu.webp",
-  urbanglide: "/brand-heroes/urbanglide.webp",
-  iscooter: "/brand-heroes/iscooter.webp",
+  "apollo": "/brand-heroes/apollo.webp",
+  "aprilia": "/brand-heroes/aprilia.webp",
+  "beaster": "/brand-heroes/beaster.webp",
+  "bogist": "/brand-heroes/bogist.webp",
+  "cecotec": "/brand-heroes/cecotec.webp",
+  "ducati": "/brand-heroes/ducati.webp",
+  "dyu": "/brand-heroes/dyu.webp",
+  "e-twow": "/brand-heroes/e-twow.webp",
+  "engwe": "/brand-heroes/engwe.webp",
+  "halo-knight": "/brand-heroes/halo-knight.webp",
+  "hiboy": "/brand-heroes/hiboy.webp",
+  "hikerboy": "/brand-heroes/hikerboy.webp",
+  "hitway": "/brand-heroes/hitway.webp",
+  "inmotion": "/brand-heroes/inmotion.webp",
+  "iscooter": "/brand-heroes/iscooter.webp",
+  "isinwheel": "/brand-heroes/isinwheel.webp",
+  "jeep": "/brand-heroes/jeep.webp",
+  "joyor": "/brand-heroes/joyor.webp",
+  "kingsong": "/brand-heroes/kingsong.webp",
+  "kugoo": "/brand-heroes/kugoo.webp",
+  "kuickwheel": "/brand-heroes/kuickwheel.webp",
+  "langfeite": "/brand-heroes/langfeite.webp",
+  "laotie": "/brand-heroes/laotie.webp",
+  "micro": "/brand-heroes/micro.webp",
+  "nami": "/brand-heroes/nami.webp",
+  "navee": "/brand-heroes/navee.webp",
+  "niu": "/brand-heroes/niu.webp",
+  "ootd": "/brand-heroes/ootd.webp",
+  "oxelo": "/brand-heroes/oxelo.webp",
+  "punk": "/brand-heroes/punk.webp",
+  "smartgyro": "/brand-heroes/smartgyro.webp",
+  "soflow": "/brand-heroes/soflow.webp",
+  "speedway": "/brand-heroes/speedway.webp",
+  "teverun": "/brand-heroes/teverun.webp",
+  "urbanglide": "/brand-heroes/urbanglide.webp",
+  "velity": "/brand-heroes/velity.webp",
+  "weped": "/brand-heroes/weped.webp",
+  "wispeed": "/brand-heroes/wispeed.webp",
+  "xiaomi": "/brand-heroes/xiaomi.webp",
+  "yeep-me": "/brand-heroes/yeep-me.webp",
+  "zwheel": "/brand-heroes/zwheel.webp",
 };
 
 export const NEUTRAL = "#4A7C59";
