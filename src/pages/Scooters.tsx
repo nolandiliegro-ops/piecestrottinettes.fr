@@ -8,6 +8,8 @@ import BrandBentoGrid from "@/components/scooters/BrandBentoGrid";
 import ScooterModelCard from "@/components/scooters/ScooterModelCard";
 import BrandCarouselLooks, { type MarquesLook } from "@/components/scooters/BrandCarouselLooks";
 import ScooterFilters from "@/components/scooters/ScooterFilters";
+import RacingSearch from "@/components/scooters/RacingSearch";
+import type { FilterLook } from "@/components/scooters/filterSkins";
 import { FILTER_GROUPS, applyFilters, readSelection, type Selection } from "@/lib/scooterFilters";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -71,6 +73,9 @@ const Scooters = () => {
   const lookParam = Number(params.get("marques"));
   // 16/10 : « Vitrine Air » (1) retenue par Nolan = défaut ; ?marques=0 = ancien carrousel, 2..5 = autres propositions
   const look = (params.get("marques") === null ? 1 : lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
+  // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
+  const fl = Number(params.get("filtres"));
+  const filterLook = (fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
     const next = new URLSearchParams(params);
     mutate(next);
@@ -190,6 +195,9 @@ const Scooters = () => {
 
         {/* Brand Bento Grid */}
         <section className="container mx-auto px-4 pb-6">
+          {filterLook ? (
+            <div className="max-w-xl mx-auto mb-6"><RacingSearch look={filterLook} value={query} onChange={setQuery} /></div>
+          ) : (
           <div className="max-w-md mx-auto mb-5">
             <label htmlFor="scooter-search" className="sr-only">
               Rechercher une marque ou un modèle
@@ -206,6 +214,7 @@ const Scooters = () => {
               />
             </div>
           </div>
+          )}
           {look && !(brandsLoading || scootersLoading) ? (
             <BrandCarouselLooks
               look={look}
@@ -240,6 +249,7 @@ const Scooters = () => {
               sort={sort}
               onSort={setSort}
               resultCount={shownScooters.length}
+              look={filterLook}
             />
           )}
           <AnimatePresence mode="wait">
