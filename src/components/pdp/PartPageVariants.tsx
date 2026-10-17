@@ -15,7 +15,7 @@
  * 5 COMPAT D'ABORD · la question « ça va sur ma trottinette ? » avant tout le reste
  */
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ShoppingCart, Check, AlertCircle, Search, CheckCircle2, ChevronRight, Wrench, Clock, Package, ImageOff } from "lucide-react";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
@@ -28,6 +28,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
 import RelatedProducts from "@/components/pdp/RelatedProducts";
+import CompatCompact, { type CompatLook } from "@/components/pdp/CompatCompact";
 
 export type PartStyle = 1 | 2 | 3 | 4 | 5;
 export const PART_STYLE_NAMES: Record<PartStyle, string> = { 1: "Pit-stand", 2: "Étiquette", 3: "Atelier", 4: "Vitrine", 5: "Compat d'abord" };
@@ -338,20 +339,31 @@ const CompatIntro = ({ scooters }: { scooters: CompatibleScooter[] }) => {
   );
 };
 
-const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => (
-  <>
-    {!p.skipCompat && (
-      <Rule id="pdp-compat" title="Compatibilité" num={p.numbered ? "01" : undefined}>
-        <CompatIntro scooters={p.scooters} />
-        <CompatibilityMatrix scooters={p.scooters} isLoading={p.scootersLoading} partSlug={p.part.slug} partName={p.part.name} partId={p.part.id} categorySlug={p.part.category?.slug ?? null} bare />
-      </Rule>
-    )}
-    {p.part.description?.trim() && <Rule title="Présentation"><Description part={p.part} /></Rule>}
-    <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
-      <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
-    </section>
-  </>
-);
+const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
+  // 17/10 : bloc compat compact, 5 formes à comparer via &compat=1..5 (défaut 1 · Pastilles).
+  const [sp] = useSearchParams();
+  const cn = Number(sp.get("compat"));
+  const look = (cn >= 1 && cn <= 5 ? cn : 1) as CompatLook;
+  // Pneus pleins : on garde la matrice d'origine (état « ne passe pas en plein » lu sur la trotte du garage).
+  const solid = p.part.category?.slug === "pneus-pleins";
+  return (
+    <>
+      {p.part.description?.trim() && <Rule title="Présentation"><Description part={p.part} /></Rule>}
+      {!p.skipCompat && (
+        <Rule id="pdp-compat" title="Compatibilité" num={p.numbered ? "01" : undefined}>
+          <div className="max-w-2xl">
+            {solid
+              ? <><CompatIntro scooters={p.scooters} /><CompatibilityMatrix scooters={p.scooters} isLoading={p.scootersLoading} partSlug={p.part.slug} partName={p.part.name} partId={p.part.id} categorySlug="pneus-pleins" bare /></>
+              : <CompatCompact look={look} scooters={p.scooters} partSlug={p.part.slug} partName={p.part.name} />}
+          </div>
+        </Rule>
+      )}
+      <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
+        <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
+      </section>
+    </>
+  );
+};
 
 // ─── 1 · PIT-STAND ──────────────────────────────────────────────────────────
 const PitStand = (p: Props) => (
