@@ -12,6 +12,7 @@ import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
 import ScooterPageVariants, { type PageStyle } from "@/components/scooter/ScooterPageVariants";
+import ScooterSeoFiche from "@/components/scooter/ScooterSeoFiche";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { solidConversionState } from "@/lib/compatibilityStatus";
@@ -41,6 +42,10 @@ const ScooterDetail = () => {
   // ?ordre=0 = ancien ordre (fiche et gamme avant les pièces). ?fiche=long = fiche SEO en sections empilées.
   const partsFirst = pageStyle === 6 && searchParams.get("ordre") !== "0";
   const ficheMode = searchParams.get("fiche") === "long" ? "long" : "tabs";
+  // 17/10 (soir) — pièces vs fiche « Tout savoir » (Nolan : sur la Thunder 3, 27 pièces repoussent la fiche tout en bas).
+  // ?pieces=1 carrousel · 2 familles · 3 fiche d'abord · 4 grille courte · sans paramètre = grille complète puis fiche.
+  const piecesN = Number(searchParams.get("pieces"));
+  const piecesStyle = piecesN >= 1 && piecesN <= 4 ? piecesN : 0;
 
   // Loading
   if (isLoading) {
@@ -145,20 +150,31 @@ const ScooterDetail = () => {
     })),
   };
 
+  const grid = (layout: "grid" | "rail" | "familles" | "courte", id = "showroom-parts", title?: string) => (
+    <div id={id} style={{ scrollMarginTop: "80px" }}>
+      <CompatiblePartsGrid
+        parts={compatibleParts}
+        isLoading={isPartsLoading}
+        scooterName={scooter.name}
+        scooterId={scooter.id}
+        solidBlocked={solidConversionState(scooter) === "blocked"}
+        layout={layout}
+        fullGridId="toutes-les-pieces"
+        title={title}
+      />
+    </div>
+  );
+  const video = <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />;
+  const fiche = seoFiche ? <ScooterSeoFiche seo={seoFiche} affiliateLink={scooter.affiliate_link} mode={ficheMode} /> : null;
+  // Sans fiche « Tout savoir », la grille complète reste la règle (les propositions ne concernent que les pages longues).
+  const ps = seoFiche ? piecesStyle : 0;
   const partsBlock = (
     <>
-      {/* Pièces compatibles (ancre scroll du bouton "Pièces") */}
-      <div id="showroom-parts" style={{ scrollMarginTop: "80px" }}>
-        <CompatiblePartsGrid
-          parts={compatibleParts}
-          isLoading={isPartsLoading}
-          scooterName={scooter.name}
-          scooterId={scooter.id}
-          solidBlocked={solidConversionState(scooter) === "blocked"}
-        />
-      </div>
-      {/* Vidéo YouTube */}
-      <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />
+      {ps === 3 && fiche}
+      {grid(ps === 1 ? "rail" : ps === 2 ? "familles" : ps === 4 ? "courte" : "grid")}
+      {ps !== 3 && fiche}
+      {ps === 2 && grid("grid", "toutes-les-pieces", `TOUTES LES PIÈCES ${scooter.name.toUpperCase()}`)}
+      {video}
     </>
   );
 
@@ -184,7 +200,7 @@ const ScooterDetail = () => {
       >
         {pageStyle ? (
           <ScooterPageVariants style={pageStyle} scooter={scooter} allScooters={allScooters} partsCount={count} showTag={hasStyleParam}
-            ficheMode={ficheMode} afterHero={partsFirst ? partsBlock : undefined} />
+            ficheMode={partsFirst ? "slot" : ficheMode} afterHero={partsFirst ? partsBlock : undefined} />
         ) : (
         <>
         <ShowroomHero
@@ -266,7 +282,7 @@ const ScooterDetail = () => {
         </>
         )}
 
-        {!partsFirst && partsBlock}
+        {!partsFirst && <>{grid("grid")}{video}</>}
 
         {/* Autres modèles — segmented control 3 onglets (masqué dans les propositions ?style=) */}
         {!pageStyle && <RelatedScootersTabs

@@ -47,7 +47,7 @@ interface Props {
   /** 17/10 : pièces compatibles posées juste sous le hero (avant la fiche et la gamme). */
   afterHero?: ReactNode;
   /** 17/10 : fiche SEO en onglets (défaut) ou version longue (?fiche=long). */
-  ficheMode?: "tabs" | "long";
+  ficheMode?: "tabs" | "long" | "slot";
   /** Pastille « Proposition N » : seulement quand la page est ouverte avec ?style= (comparaison). */
   showTag?: boolean;
 }
@@ -531,7 +531,7 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag 
   return <PitWall scooter={scooter} specs={specs} gamme={gamme} accent={accent} brand={brand} partsCount={partsCount} tag={tag} gammeBelow={style === 6} all={allScooters} afterHero={afterHero} ficheMode={ficheMode} />;
 };
 
-const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false, all = [], afterHero, ficheMode = "tabs" }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean; all?: ShowroomCarouselScooter[]; afterHero?: ReactNode; ficheMode?: "tabs" | "long" }) => {
+const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false, all = [], afterHero, ficheMode = "tabs" }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean; all?: ShowroomCarouselScooter[]; afterHero?: ReactNode; ficheMode?: "tabs" | "long" | "slot" }) => {
   const tabs = [
     { k: "fiche", label: "Fiche" },
     ...(scooter.description ? [{ k: "pres", label: "Présentation" }] : []),
@@ -587,7 +587,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
       </section>
       {afterHero}
       {/* 17/10 (pilote SEO) : fiche complète quand le modèle en a une, sinon l'ancien paragraphe. */}
-      {gammeBelow && SCOOTER_SEO[scooter.slug] && <ScooterSeoFiche seo={SCOOTER_SEO[scooter.slug]} affiliateLink={scooter.affiliate_link} mode={ficheMode} />}
+      {gammeBelow && ficheMode !== "slot" && SCOOTER_SEO[scooter.slug] && <ScooterSeoFiche seo={SCOOTER_SEO[scooter.slug]} affiliateLink={scooter.affiliate_link} mode={ficheMode} />}
       {gammeBelow && !SCOOTER_SEO[scooter.slug] && scooter.description && (
         <section className="px-4 py-8" style={{ backgroundColor: "#FAFAF8" }}>
           <div className="mx-auto max-w-6xl grid lg:grid-cols-[260px_1fr] gap-3 lg:gap-10 border-t-2 pt-6" style={{ borderColor: CARBON }}>
