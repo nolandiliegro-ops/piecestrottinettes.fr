@@ -57,20 +57,20 @@ const Video = ({ v, name }: { v: NonNullable<ScooterSeo["video"]>; name: string 
 };
 
 /** « Où l'acheter » : le partenaire présenté comme un choix de l'atelier, lien partenaire assumé. */
-const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
+export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
   const p = partnerOf(url);
   if (!p) return null;
   return (
-    <div className="mt-8 bg-white p-5 lg:p-6 grid lg:grid-cols-[1fr_auto] gap-4 lg:gap-8 items-center" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+    <div id="ou-acheter" className="mt-8 scroll-mt-24 bg-white p-5 lg:p-6 grid lg:grid-cols-[1fr_auto] gap-4 lg:gap-8 items-center" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
       <div>
         <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
         <p className="mt-1 text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
         <p className="mt-2 text-base text-[#374151] leading-relaxed max-w-2xl">
-          On ne vend pas de trottinettes, on vend leurs pièces. Pour la machine, on recommande seulement les vendeurs que notre atelier connaît.
+          On vend les pièces, pas les trottinettes. Pour la machine, on te conseille un vendeur que notre atelier connaît.
         </p>
         <p className="mt-2 flex items-start gap-2 text-sm text-gray-500">
           <ShieldCheck className="w-4 h-4 mt-0.5 shrink-0" />
-          <span>Lien partenaire : si tu achètes par ce lien, on touche une petite commission, sans surcoût pour toi.</span>
+          <span>Lien partenaire : une petite commission pour nous, aucun surcoût pour toi.</span>
         </p>
       </div>
       <a href={url} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center justify-center gap-2 min-h-[52px] px-6 text-sm font-extrabold uppercase tracking-wider text-white"
@@ -202,12 +202,15 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
 
         {affiliateLink && <PartnerBlock url={affiliateLink} name={name} />}
 
-        <p className="mt-8 text-sm text-gray-500" style={{ fontFamily: FONT }}>
-          Sources :{" "}
-          {seo.sources.map((s, i) => (
-            <span key={s.url}>{i > 0 && " · "}<a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="underline">{s.label}</a></span>
-          ))}
-        </p>
+        {/* 18/10 (Nolan) : sources repliées — discrètes à l'écran, toujours dans la page pour Google. */}
+        <details className="mt-6 text-sm text-gray-500" style={{ fontFamily: FONT }}>
+          <summary className="cursor-pointer select-none inline-flex items-center min-h-[44px] underline-offset-2 hover:underline">Sources ({seo.sources.length})</summary>
+          <ul className="mt-1 space-y-1">
+            {seo.sources.map((s) => (
+              <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="underline">{s.label}</a></li>
+            ))}
+          </ul>
+        </details>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ import ScooterVideo from "@/components/scooter/ScooterVideo";
 import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
 import ScooterPageVariants, { type PageStyle } from "@/components/scooter/ScooterPageVariants";
-import ScooterSeoFiche from "@/components/scooter/ScooterSeoFiche";
+import ScooterSeoFiche, { PartnerBlock } from "@/components/scooter/ScooterSeoFiche";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { solidConversionState } from "@/lib/compatibilityStatus";
@@ -165,7 +165,13 @@ const ScooterDetail = () => {
     </div>
   );
   const video = <ScooterVideo youtubeVideoId={scooter.youtube_video_id} scooterName={scooter.name} />;
-  const fiche = seoFiche ? <ScooterSeoFiche seo={seoFiche} affiliateLink={scooter.affiliate_link} mode={ficheMode} /> : null;
+  // Sans fiche « Tout savoir », le bloc partenaire s'affiche seul (cible du bouton « Où l'acheter »).
+  const fiche = seoFiche ? <ScooterSeoFiche seo={seoFiche} affiliateLink={scooter.affiliate_link} mode={ficheMode} />
+    : scooter.affiliate_link ? (
+      <section className="px-4 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }}>
+        <div className="mx-auto max-w-6xl"><PartnerBlock url={scooter.affiliate_link} name={scooter.name} /></div>
+      </section>
+    ) : null;
   // Sans fiche « Tout savoir », la grille complète reste la règle (les propositions ne concernent que les pages longues).
   const ps = seoFiche ? piecesStyle : 0;
   const partsBlock = (

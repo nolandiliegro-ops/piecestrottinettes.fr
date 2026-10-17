@@ -211,9 +211,12 @@ const RacingActions = ({ scooter, partsCount, look, accent, full = false, onDark
         </button>
       </div>
       {scooter.affiliate_link && (
-        <a href={scooter.affiliate_link} target="_blank" rel="noopener noreferrer sponsored" className={base}
-          style={{ ...sh.style, ...font, backgroundColor: ORANGE, color: "#fff" }}>
-          <span className="inline-flex items-center gap-2" style={sh.inner}><ExternalLink className="w-4 h-4" strokeWidth={2.5} /> Acheter</span>
+        // 18/10 (Nolan) : plus de saut direct chez le partenaire — rebond sur le bloc « Où l'acheter » qui explique
+        // le partenariat. Carbone, pas orange : l'orange reste réservé à l'achat de NOS pièces.
+        <a href="#ou-acheter" className={base}
+          onClick={(e) => { const el = document.getElementById("ou-acheter"); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: "smooth", block: "center" }); } }}
+          style={{ ...sh.style, ...font, backgroundColor: CARBON, color: "#fff" }}>
+          <span className="inline-flex items-center gap-2" style={sh.inner}><ExternalLink className="w-4 h-4" strokeWidth={2.5} /> Où l'acheter</span>
         </a>
       )}
       {/* accent marque discret sous les boutons (variante slant) */}

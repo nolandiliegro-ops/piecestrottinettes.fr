@@ -154,28 +154,22 @@ const CompatiblePartsGrid = ({
           </Link>
         </motion.div>
 
+        {/* 18/10 (Nolan : « trop texte, intrusif ») : une ligne discrète, l'explication s'ouvre au clic. */}
         {solidBlocked && (
-          <div className="mb-8 rounded-2xl border border-border bg-card p-4 md:p-5 flex flex-col sm:flex-row sm:items-center gap-4">
-            <div className="flex items-start gap-3 flex-1">
-              <Ban className="w-5 h-5 text-foreground flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="text-base font-bold text-foreground leading-snug">
-                  Cette trottinette ne passe pas en pneus pleins
-                </p>
-                <p className="text-sm text-muted-foreground leading-snug mt-1">
-                  D'après notre atelier, un pneu plein n'est pas adapté à ce modèle. Contre les
-                  crevaisons, passe sur une chambre renforcée ou anti-crevaison.
-                </p>
-              </div>
+          <details className="group mb-5 inline-block max-w-full">
+            <summary className="list-none cursor-pointer inline-flex items-center gap-2 min-h-[44px] px-3 rounded-full bg-white border border-border text-sm font-semibold text-foreground">
+              <Ban className="w-4 h-4 flex-shrink-0" /> Pas de pneus pleins sur ce modèle
+              <span className="text-muted-foreground font-normal underline underline-offset-2">Pourquoi ?</span>
+            </summary>
+            <div className="mt-2 max-w-md rounded-xl border border-border bg-white p-4 shadow-md">
+              <p className="text-sm text-muted-foreground leading-snug">
+                D'après notre atelier, un pneu plein n'est pas adapté à ce modèle. Contre les crevaisons, passe sur une chambre renforcée ou anti-crevaison.
+              </p>
+              <Link to={tubesCatalogueUrl(tubesCategoryId, scooterId)} className="mt-3 inline-flex items-center gap-2 min-h-[44px] text-sm font-semibold text-foreground underline underline-offset-2">
+                Voir les chambres anti-crevaison <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
-            <Link
-              to={tubesCatalogueUrl(tubesCategoryId, scooterId)}
-              className="inline-flex items-center justify-center gap-2 min-h-[48px] px-5 rounded-xl bg-carbon text-white text-sm font-semibold hover:bg-black active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-carbon focus-visible:ring-offset-2"
-            >
-              Voir les chambres anti-crevaison
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          </details>
         )}
 
         {/* 17/10 (soir) : mises en page compactes, la grille complète reste un clic plus loin */}
