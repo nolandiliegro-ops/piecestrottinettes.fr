@@ -1,0 +1,81 @@
+{
+ "cecotec-bongo-d20": [
+  5
+ ],
+ "cecotec-bongo-serie-m20": [
+  1,
+  5
+ ],
+ "hiboy-s2": [
+  5
+ ],
+ "hiboy-s2-pro": [
+  3
+ ],
+ "hikerboy-brio": [
+  6,
+  2,
+  4
+ ],
+ "iscooter-ix3": [
+  6,
+  3,
+  0
+ ],
+ "isinwheel-s9-max": [
+  8
+ ],
+ "kaabo-wolf-warrior-11-max": [
+  6,
+  4,
+  1
+ ],
+ "kuickwheel-m16-pro": [
+  2,
+  1,
+  3
+ ],
+ "navee-s60": [
+  3
+ ],
+ "ninebot-e2": [
+  4,
+  0
+ ],
+ "niu-kqi2-pro": [
+  2,
+  3,
+  0
+ ],
+ "ootd-sr1": [
+  1,
+  3,
+  9
+ ],
+ "pure-air-6-suspension": [
+  4,
+  1,
+  3
+ ],
+ "pure-electric-escape-pro": [
+  2,
+  3,
+  4
+ ],
+ "urbanglide-ecross-go": [
+  4,
+  5
+ ],
+ "urbanglide-ride-85-evo": [
+  0,
+  8
+ ],
+ "wispeed-suvpilot-480": [
+  4,
+  0
+ ],
+ "yeep-me-100a-start": [
+  1,
+  0
+ ]
+}
