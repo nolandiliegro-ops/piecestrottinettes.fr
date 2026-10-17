@@ -143,6 +143,9 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   const showCompat = !hideCompat && !!selectedScooter && !!isCompatible;
   const cs = compatStyle();
   const shortName = selectedScooter?.name ?? "";
+  // Sur téléphone, sans le nom de marque répété (« Dualtron City 2025 » → « City 2025 ») pour tenir sur la carte.
+  const brandPrefix = (selectedScooter?.brandName ?? "").trim();
+  const modelOnly = brandPrefix && shortName.toLowerCase().startsWith(brandPrefix.toLowerCase() + " ") ? shortName.slice(brandPrefix.length + 1) : shortName;
   
   // Get dynamic brand colors
   const { selectedBrandColors } = useSelectedScooter();
@@ -381,10 +384,14 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
         </div>
 
         {showCompat && cs === 1 && (
-          // 18/10 (Nolan) : discret, à la couleur de la marque de SA trottinette (pas le vert du site).
-          <span title={`Compatible ${shortName}`} aria-label={`Compatible avec ta ${shortName}`}
-            className="absolute bottom-3 right-3 z-10 w-6 h-6 rounded-full flex items-center justify-center text-white" style={{ background: selectedBrandColors.accent, boxShadow: "0 0 0 2px #fff" }}>
-            <Check className="w-3.5 h-3.5" strokeWidth={3} />
+          // 18/10 (Nolan) : on doit comprendre que c'est la trott choisie en haut → nom du modèle, couleur de sa marque.
+          <span title={`Compatible avec ta ${shortName}`}
+            className="absolute bottom-2 left-2 right-2 z-10 flex justify-start pointer-events-none">
+            <span className="inline-flex items-center gap-1 max-w-full min-w-0 rounded-full pl-1.5 pr-2.5 py-1 text-sm font-bold leading-none text-white shadow-sm"
+              style={{ background: selectedBrandColors.accent }}>
+              <Check className="w-3.5 h-3.5 shrink-0" strokeWidth={3} />
+              <span className="truncate"><span className="hidden sm:inline">Compatible {shortName}</span><span className="sm:hidden">{modelOnly}</span></span>
+            </span>
           </span>
         )}
         {showCompat && cs === 3 && (
