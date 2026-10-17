@@ -108,7 +108,11 @@ const TireSizeFinder = ({ scooterId, scooterName }: TireSizeFinderProps) => {
         }
       }
     }
-    for (const g of map.values()) g.label = g.aliases.map((a) => `${a}${rimLabel(g.rim)}`).join(" · ");
+    // Convention maison : les pneus 8" (200x50, 200x60, 200x90, 8x2…) portent la jante « 8 » = la taille du pneu,
+    // pas le Ø de jante → on n'affiche pas « -8 », on écrit la taille telle qu'elle est sur le flanc.
+    const sizeLabel = (sec: string, rim: string) =>
+      rim === "8" && /^(8x|200x)/.test(sec) ? (sec === "8x2" ? "8x2 (200x50)" : sec) : `${sec}${rimLabel(rim)}`;
+    for (const g of map.values()) g.label = g.aliases.map((a) => sizeLabel(a, g.rim)).join(" · ");
     return [...map.values()].sort((a, b) => b.parts.length - a.parts.length);
   }, [parts]);
 
