@@ -43,9 +43,9 @@ const ScooterDetail = () => {
   const partsFirst = pageStyle === 6 && searchParams.get("ordre") !== "0";
   const ficheMode = searchParams.get("fiche") === "long" ? "long" : "tabs";
   // 17/10 (soir) — pièces vs fiche « Tout savoir » (Nolan : sur la Thunder 3, 27 pièces repoussent la fiche tout en bas).
-  // ?pieces=1 carrousel · 2 familles · 3 fiche d'abord · 4 grille courte · sans paramètre = grille complète puis fiche.
+  // 17/10 : Carrousel (1) choisi par Nolan = défaut. ?pieces=0 grille complète · 2 familles · 3 fiche d'abord · 4 grille courte.
   const piecesN = Number(searchParams.get("pieces"));
-  const piecesStyle = piecesN >= 1 && piecesN <= 4 ? piecesN : 0;
+  const piecesStyle = searchParams.has("pieces") ? (piecesN >= 0 && piecesN <= 4 ? piecesN : 1) : 1;
 
   // Loading
   if (isLoading) {
