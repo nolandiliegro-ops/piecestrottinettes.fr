@@ -1,1 +1,1 @@
-compat roue1710
+compat pneuswattiz1710
