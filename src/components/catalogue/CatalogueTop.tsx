@@ -13,7 +13,8 @@
  * 5 ÉTABLI       · colonne de gauche (catégories + filtres) sur ordinateur, grille à droite
  */
 import { useEffect, useState } from "react";
-import { Check, ChevronDown, LayoutGrid, Search, ArrowRight, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Check, ChevronDown, LayoutGrid, Search, ArrowRight, X, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { trigger, badge, sortCls, UNB, FONT, CARBON, GREEN, LINE } from "@/components/scooters/filterSkins";
@@ -161,6 +162,21 @@ const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | nul
   </button>
 );
 
+/** 17/10 : accès visible à la page de la catégorie (/categorie/:slug : présentation + toutes les références).
+ *  Avant, seul un petit bouton au survol des anciennes cartes y menait — invisible sur téléphone. */
+const GuideLink = ({ cat, n }: { cat: CatCategory | undefined; n: number }) =>
+  cat ? (
+    <Link to={`/categorie/${cat.slug}`} className="mt-3 flex items-center gap-3 min-h-[52px] pl-4 pr-3 bg-white transition-transform hover:-translate-y-0.5"
+      style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>
+      <BookOpen className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
+      <span className="flex-1 min-w-0">
+        <span className="block text-sm font-extrabold uppercase tracking-wide truncate" style={{ fontFamily: FONT, color: CARBON }}>Tout sur les {cat.name.toLowerCase()}</span>
+        <span className="block text-sm text-gray-500 truncate" style={{ fontFamily: FONT }}>Les {n} références et comment choisir</span>
+      </span>
+      <ArrowRight className="w-5 h-5 shrink-0" style={{ color: CARBON }} />
+    </Link>
+  ) : null;
+
 const CatalogueTop = (p: Props) => {
   const all = p.categories.reduce((n, c) => n + (p.counts[c.id] ?? 0), 0);
   const tiles = (size: "sm" | "md" = "md") => [
@@ -175,6 +191,7 @@ const CatalogueTop = (p: Props) => {
         <div className="flex items-end justify-between gap-4 flex-wrap"><Title /><Count n={p.resultCount} total={p.total} /></div>
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
         <div className="mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2">{tiles()}</div>
+        {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} /></div>}
         <div className="mt-4"><Filters {...p} /></div>
       </section>
     );
