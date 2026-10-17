@@ -20,8 +20,8 @@ const GREEN = "#4A7C59";
 const LINE = "#E2DCD0";
 const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
 
-/** Photo de marque : photo posée en admin, sinon photo générée, sinon null. */
-export const brandPhoto = (b: { slug: string; hero_image_url?: string | null }) => b.hero_image_url || BRAND_PHOTOS[b.slug] || null;
+/** Photo de marque : photo générée (prime, retour Nolan 17/10), sinon photo posée en admin, sinon null. */
+export const brandPhoto = (b: { slug: string; hero_image_url?: string | null }) => BRAND_PHOTOS[b.slug] || b.hero_image_url || null;
 
 export const AtelierHead = ({ title, n, unit, query, onQuery, placeholder }: {
   title: string; n: number | null; unit: string; query: string; onQuery: (v: string) => void; placeholder: string;

@@ -34,7 +34,7 @@ export const BRAND_COLORS: Record<string, string> = {
  * Photos de marque générées (17/10/2026, Higgsfield, vraie photo du modèle phare en référence,
  * décors variés dont Marseille, cadrages variés, échelle réaliste ; contrôlées une à une contre la photo
  * du modèle). Servies depuis public/brand-heroes.
- * Priorité : brands.hero_image_url (photo posée en admin) > cette table > mise en scène automatique.
+ * Priorité (17/10) : cette table > brands.hero_image_url > mise en scène automatique.
  */
 export const BRAND_PHOTOS: Record<string, string> = {
   "apollo": "/brand-heroes/apollo.webp",

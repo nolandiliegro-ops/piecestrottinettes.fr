@@ -279,12 +279,7 @@ const PitStand = (p: Props) => {
   };
   return (
     <>
-      <section className="relative overflow-hidden px-4 pt-24 lg:pt-28 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-        {/* Retour Nolan 17/10 : pas les marques voisines en haut à gauche / à droite, le nom de LA marque répété d'un bord à l'autre. */}
-        <div aria-hidden className="absolute inset-x-0 top-[45%] -translate-y-1/2 z-0 select-none overflow-hidden whitespace-nowrap leading-none"
-          style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(90px, 12vw, 200px)", letterSpacing: "-0.05em", color: "transparent", WebkitTextStroke: "2px rgba(26,26,26,0.09)" }}>
-          {Array.from({ length: 8 }, () => p.brand.name.toUpperCase()).join("  ")}
-        </div>
+      <section className="relative overflow-hidden px-4 pt-24 lg:pt-28 pb-6 lg:px-8" style={{ backgroundColor: "#FAFAF8" }} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         <div className="relative z-10 mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 items-center">
             <div>
@@ -301,6 +296,14 @@ const PitStand = (p: Props) => {
           <p className="mt-6 lg:hidden text-center text-sm text-gray-500" style={{ fontFamily: FONT }}>Glisse pour passer à la marque suivante</p>
         </div>
       </section>
+      {/* Retour Nolan 17/10 : le nom en contour posé au milieu du haut de page passait derrière le titre et la photo
+          (« brouillon »). Il devient un bandeau à part, net : nom de la marque répété, coupé proprement en bas. */}
+      <div aria-hidden className="relative overflow-hidden select-none h-[64px] md:h-[104px]" style={{ backgroundColor: "#FAFAF8" }}>
+        <div className="absolute left-0 top-1 whitespace-nowrap leading-none pl-4 lg:pl-8"
+          style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(72px, 9vw, 132px)", letterSpacing: "-0.04em", color: "transparent", WebkitTextStroke: "1.5px rgba(26,26,26,0.16)" }}>
+          {Array.from({ length: 8 }, () => p.brand.name.toUpperCase()).join("   ")}
+        </div>
+      </div>
       <BrandRail current={p.brand.slug} />
     </>
   );

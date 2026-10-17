@@ -50,7 +50,7 @@ const BrandStage = ({ brand, models, scene }: Props) => {
   const frame = "relative w-full overflow-hidden h-[300px] sm:h-[380px] lg:h-[460px]";
 
   // Marque avec photo : on garde la photo, ENTIÈRE (retour Nolan 17/10 : le logo piecestrottinettes était rogné sur Kaabo).
-  const photo = brand.hero_image_url || BRAND_PHOTOS[brand.slug];
+  const photo = BRAND_PHOTOS[brand.slug] || brand.hero_image_url; // 17/10 : nos photos priment sur les anciennes (retour Nolan)
   if (photo) {
     return (
       <div className="relative w-full overflow-hidden" style={{ clipPath: CHAMFER, background: CARBON }}>
