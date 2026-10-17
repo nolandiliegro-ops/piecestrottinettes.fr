@@ -14,9 +14,11 @@
  * 4 VITRINE     · mosaïque de 4 modèles, titre et fiche par-dessus
  * 5 SOMMAIRE    · en-tête compact + raccourcis (Avis · Gamme · Pièces · FAQ) : le contenu d'abord
  */
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight, ChevronDown, Globe, Calendar, Bike, Quote } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Globe, Calendar, Bike, Quote } from "lucide-react";
 import Header from "@/components/Header";
 import type { BrandData, BrandModel } from "@/hooks/useBrandData";
 import BrandPartsExplorer from "@/components/brand/BrandPartsExplorer";
@@ -70,7 +72,7 @@ const Facts = ({ brand, models, dark = false }: { brand: BrandData; models: Bran
         <div key={it.k} className="relative px-3 py-2.5 overflow-hidden" style={{ background: dark ? "rgba(255,255,255,0.07)" : "#fff", boxShadow: dark ? "none" : `inset 0 0 0 1px ${LINE}`, clipPath: CHAMFER }}>
           <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ background: GREEN }} />
           <div className={`text-sm uppercase tracking-wider ${dark ? "text-white/60" : "text-gray-500"}`} style={{ fontFamily: FONT }}>{it.k}</div>
-          <div className="text-base md:text-lg truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: dark ? "#fff" : CARBON }}>{it.v}</div>
+          <div className="text-sm md:text-lg leading-tight break-words" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: dark ? "#fff" : CARBON }}>{it.v}</div>
         </div>
       ))}
     </div>
@@ -202,24 +204,105 @@ const Visual = ({ brand, models, height }: { brand: BrandData; models: BrandMode
   );
 };
 
-// ─── 1 · PIT-STAND ───
-const PitStand = (p: Props) => (
-  <section className="px-4 pt-24 lg:pt-28 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }}>
-    <div className="mx-auto max-w-7xl">
-      <PrevNext prev={p.prev} next={p.next} />
-      <div className="mt-2 grid lg:grid-cols-2 gap-8 items-center">
-        <div>
-          <div className="flex items-center gap-4"><Logo brand={p.brand} /><span className="text-sm font-bold uppercase tracking-[0.18em]" style={{ fontFamily: FONT, color: GREEN }}>Marque</span></div>
-          <div className="mt-3"><Name brand={p.brand} /></div>
-          {p.brand.tagline && <p className="mt-3 text-lg text-[#374151]" style={{ fontFamily: FONT }}>{p.brand.tagline}</p>}
-          <div className="mt-5"><Facts brand={p.brand} models={p.models} /></div>
-          <div className="mt-6"><Actions brand={p.brand} /></div>
-        </div>
-        <Visual brand={p.brand} models={p.models} height="clamp(240px, 32vw, 420px)" />
+// ─── 1 · PIT-STAND (retour Nolan 17/10 : garder le carrousel de marques de l'ancienne page) ───
+// Marques voisines en filigrane à gauche / à droite (cliquables, glisser au doigt sur téléphone),
+// chevrons en plaques, puis un bandeau défilant avec les logos de TOUTES les marques.
+type RailBrand = { slug: string; name: string; logo_url: string | null };
+const useAllBrands = () =>
+  useQuery({
+    queryKey: ["brands-rail"],
+    staleTime: 10 * 60 * 1000,
+    queryFn: async (): Promise<RailBrand[]> => {
+      const { data, error } = await supabase.from("brands").select("slug, name, logo_url").eq("published", true).order("display_order", { ascending: true }).order("name", { ascending: true });
+      if (error) throw error;
+      return (data as unknown as RailBrand[]) ?? [];
+    },
+  });
+
+const Ghost = ({ item, side }: { item: { slug: string; name: string } | null; side: "left" | "right" }) =>
+  item ? (
+    <Link to={`/marque/${item.slug}`} aria-label={`Marque ${side === "left" ? "précédente" : "suivante"} : ${item.name}`}
+      className={`group hidden lg:block absolute top-1/2 -translate-y-1/2 z-0 select-none whitespace-nowrap leading-none transition-transform duration-500 ${side === "left" ? "left-0 -translate-x-[45%] hover:-translate-x-[38%]" : "right-0 translate-x-[45%] hover:translate-x-[38%] text-right"}`}
+      style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: "clamp(120px, 13vw, 220px)", letterSpacing: "-0.05em", color: "transparent", WebkitTextStroke: "2px rgba(26,26,26,0.13)" }}>
+      <span className="transition-[-webkit-text-stroke] group-hover:[-webkit-text-stroke:2px_rgba(74,124,89,0.55)]">{item.name.toUpperCase()}</span>
+    </Link>
+  ) : null;
+
+const Chevron = ({ item, side }: { item: { slug: string; name: string } | null; side: "left" | "right" }) =>
+  item ? (
+    <Link to={`/marque/${item.slug}`} aria-label={`${side === "left" ? "Précédente" : "Suivante"} : ${item.name}`}
+      className="inline-flex items-center gap-2 min-h-[44px] pl-2 pr-3 bg-white text-sm font-extrabold uppercase tracking-wide"
+      style={{ fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+      {side === "left" && <ChevronLeft className="w-4 h-4" />}{item.name}{side === "right" && <ChevronRight className="w-4 h-4" />}
+    </Link>
+  ) : <span />;
+
+const BrandRail = ({ current }: { current: string }) => {
+  const { data: all = [] } = useAllBrands();
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current?.querySelector<HTMLElement>(`[data-slug="${current}"]`);
+    if (el && ref.current) ref.current.scrollTo({ left: el.offsetLeft - ref.current.clientWidth / 2 + el.clientWidth / 2, behavior: "instant" as ScrollBehavior });
+  }, [all.length, current]);
+  if (all.length < 2) return null;
+  return (
+    <div className="border-y-2" style={{ borderColor: CARBON, background: "#F3EFE7" }}>
+      <div className="mx-auto max-w-7xl px-4 lg:px-8 pt-3 flex items-baseline justify-between gap-3">
+        <span className="text-sm font-bold uppercase tracking-[0.18em] text-gray-500" style={{ fontFamily: FONT }}>Les {all.length} marques</span>
+        <Link to="/marques" className="text-sm font-bold underline min-h-[44px] inline-flex items-center" style={{ fontFamily: FONT, color: CARBON }}>Toutes les voir</Link>
+      </div>
+      <div ref={ref} className="flex gap-2 overflow-x-auto px-4 lg:px-8 pb-4 pt-1 snap-x" style={{ scrollbarWidth: "none" }}>
+        {all.map((b) => {
+          const on = b.slug === current;
+          return (
+            <Link key={b.slug} data-slug={b.slug} to={`/marque/${b.slug}`} aria-current={on ? "page" : undefined}
+              className="snap-center shrink-0 w-[104px] h-[92px] flex flex-col items-center justify-center gap-1.5 px-2 transition-transform hover:-translate-y-0.5"
+              style={{ clipPath: CHAMFER, background: on ? CARBON : "#fff", boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+              <span className="w-12 h-10 flex items-center justify-center" style={on ? { background: "#fff", padding: 4 } : undefined}>
+                {b.logo_url ? <img src={b.logo_url} alt="" loading="lazy" className="max-w-full max-h-full object-contain" /> : <span className="text-lg" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: on ? "#fff" : CARBON }}>{b.name.slice(0, 2)}</span>}
+              </span>
+              <span className="text-sm font-extrabold truncate max-w-full" style={{ fontFamily: FONT, color: on ? "#fff" : CARBON }}>{b.name}</span>
+            </Link>
+          );
+        })}
       </div>
     </div>
-  </section>
-);
+  );
+};
+
+const PitStand = (p: Props) => {
+  const navigate = useNavigate();
+  const touch = useRef<{ x: number; y: number } | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY }; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (!touch.current) return;
+    const t = e.changedTouches[0]; const dx = t.clientX - touch.current.x; const dy = t.clientY - touch.current.y; touch.current = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) { if (dx < 0 && p.next) navigate(`/marque/${p.next.slug}`); else if (dx > 0 && p.prev) navigate(`/marque/${p.prev.slug}`); }
+  };
+  return (
+    <>
+      <section className="relative overflow-hidden px-4 pt-24 lg:pt-28 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+        <Ghost item={p.prev} side="left" />
+        <Ghost item={p.next} side="right" />
+        <div className="relative z-10 mx-auto max-w-6xl">
+          <div className="flex items-center justify-between gap-2"><Chevron item={p.prev} side="left" /><Chevron item={p.next} side="right" /></div>
+          <div className="mt-4 grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-4"><Logo brand={p.brand} size={64} /><span className="text-sm font-bold uppercase tracking-[0.18em]" style={{ fontFamily: FONT, color: GREEN }}>Marque</span></div>
+              <div className="mt-3"><Name brand={p.brand} size="text-5xl md:text-7xl" /></div>
+              {p.brand.tagline && <p className="mt-3 text-lg text-[#374151]" style={{ fontFamily: FONT }}>{p.brand.tagline}</p>}
+              <div className="mt-5"><Facts brand={p.brand} models={p.models} /></div>
+              <div className="mt-6"><Actions brand={p.brand} /></div>
+            </div>
+            <Visual brand={p.brand} models={p.models} height="clamp(240px, 32vw, 420px)" />
+          </div>
+          <p className="mt-6 lg:hidden text-center text-sm text-gray-500" style={{ fontFamily: FONT }}>Glisse pour passer à la marque suivante</p>
+        </div>
+      </section>
+      <BrandRail current={p.brand.slug} />
+    </>
+  );
+};
 
 // ─── 2 · CARBONE ───
 const Carbone = (p: Props) => {

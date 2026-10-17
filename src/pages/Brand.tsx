@@ -30,7 +30,8 @@ const Brand = () => {
   // 17/10 : 5 propositions de page marque, UNIQUEMENT avec ?vue=1..5 (sans paramètre : page actuelle).
   const [sp] = useSearchParams();
   const vueN = Number(sp.get("vue"));
-  const vue = (vueN >= 1 && vueN <= 5 ? vueN : null) as BrandLook | null;
+  // 17/10 : Pit-stand (1) + carrousel de marques retenue par Nolan = défaut ; ?vue=0 = ancienne page, 2..5 = autres propositions.
+  const vue = (sp.get("vue") === null ? 1 : vueN >= 1 && vueN <= 5 ? vueN : null) as BrandLook | null;
 
   // Loading — until we know whether the (published) brand exists.
   if (isLoading) {
@@ -116,7 +117,7 @@ const Brand = () => {
       />
 
       {vue ? (
-        <BrandPageVariants look={vue} brand={brand} models={models} prev={prev ?? null} next={next ?? null} showTag />
+        <BrandPageVariants look={vue} brand={brand} models={models} prev={prev ?? null} next={next ?? null} showTag={sp.has("vue")} />
       ) : (<>
       <BrandHeader />
 
